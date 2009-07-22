@@ -23,10 +23,11 @@
 
 #include <QPrinter>
 #include <QPainter>
+#include "koreport_export.h"
 
 class ORODocument;
 
-class ORPrintRender
+class KOREPORT_EXPORT ORPrintRender
 {
 public:
     ORPrintRender();

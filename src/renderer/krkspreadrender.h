@@ -21,13 +21,13 @@
 #define KRKSPREADRENDERER_H
 
 #include "renderobjects.h"
-
+#include "koreport_export.h"
 #include <kurl.h>
 
 /**
  @author Adam Pigg <adam@piggz.co.uk>
 */
-class KRKSpreadRender
+class KOREPORT_EXPORT KRKSpreadRender
 {
 public:
     KRKSpreadRender();

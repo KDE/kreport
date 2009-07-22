@@ -25,6 +25,7 @@
 #include <QRectF>
 #include <QString>
 #include <QFont>
+#include "koreport_export.h"
 
 class ORPreRenderPrivate;
 class ParameterList;
@@ -40,7 +41,7 @@ class Connection;
 // This class takes a report definition and prerenders the result to
 // an ORODocument that can be used to pass to any number of renderers.
 //
-class ORPreRender
+class KOREPORT_EXPORT ORPreRender
 {
 public:
 //    ORPreRender(KexiDB::Connection*c = 0);

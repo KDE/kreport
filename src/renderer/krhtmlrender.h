@@ -27,6 +27,7 @@
 #include <QFont>
 
 #include <kurl.h>
+#include "koreport_export.h"
 
 class ORODocument;
 namespace KexiDB
@@ -36,7 +37,7 @@ class Connection;
 //
 // KRHtmlRender
 //
-class KRHtmlRender
+class KOREPORT_EXPORT KRHtmlRender
 {
 public:
     KRHtmlRender();
