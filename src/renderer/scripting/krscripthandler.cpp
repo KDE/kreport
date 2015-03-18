@@ -26,13 +26,13 @@
 
 #include <kdebug.h>
 #include <kmessagebox.h>
-#include <kross/core/manager.h>
+//TODO #include <kross/core/manager.h>
 
-#include <krsectiondata.h>
-#include <KoReportItemBase.h>
-#include <krreportdata.h>
-#include <krdetailsectiondata.h>
-#include <renderobjects.h>
+#include "krsectiondata.h"
+#include "KoReportItemBase.h"
+#include "krreportdata.h"
+#include "krdetailsectiondata.h"
+#include "renderobjects.h"
 
 
 KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData* d)
@@ -53,14 +53,14 @@ KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData*
     // if the qtscript interpreter is available, load that instead.
     // we do this instead of hiding the javascript interpreter incase a
     // user has a database using that interpreter.
-    
+
     QStringList interpreters = Kross::Manager::self().interpreters();
     QString interpreter = d->interpreter();
 
     if (interpreter.toLower() == "javascript" && interpreters.contains("qtscript")) {
         interpreter = "qtscript";
     }
-    
+
     m_action->setInterpreter(interpreter);
 
     //Add constants object

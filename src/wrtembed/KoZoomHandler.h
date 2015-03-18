@@ -21,9 +21,9 @@
 #ifndef KOZOOMHANDLER_H
 #define KOZOOMHANDLER_H
 
-#include "kowidgets_export.h"
-#include <KoZoomMode.h>
-#include <KoViewConverter.h>
+#include "koreport_export.h"
+#include "KoZoomMode.h"
+#include "KoViewConverter.h"
 
 /**
  * This class handles the zooming and DPI stuff (conversions between
@@ -34,13 +34,13 @@
  * An instance of KoZoomHandler operates at a given zoom  and resolution
  * so there is usually one instance of KoZoomHandler per view.
  */
-class KOWIDGETS_EXPORT KoZoomHandler : public KoViewConverter
+class KOREPORT_EXPORT KoZoomHandler : public KoViewConverter
 {
 public:
 
     KoZoomHandler();
     virtual ~KoZoomHandler();
-    
+
     /**
      * @return the conversion factor between document and view, that
      * includes the zoom and also the DPI setting.

@@ -21,17 +21,17 @@
 #include "KoReportTextPlugin.h"
 #include "KoReportItemText.h"
 #include "KoReportDesignerItemText.h"
-#include "KoReportPluginInfo.h"
+#include "common/KoReportPluginInfo.h"
 #include "krscripttext.h"
-#include <KoIcon.h>
+#include <QIcon>
 
 KoReportTextPlugin::KoReportTextPlugin(QObject *parent, const QVariantList &args) : KoReportPluginInterface(parent)
 {
     Q_UNUSED(args)
     KoReportPluginInfo *info = new KoReportPluginInfo();
     info->setClassName("text");
-    info->setIcon(koIcon("insert-text"));
-    info->setName(i18n("Text"));
+    info->setIcon(QIcon::fromTheme("insert-text"));
+    info->setName(tr("Text"));
     info->setPriority(3);
     setInfo(info);
 }

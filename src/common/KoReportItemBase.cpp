@@ -20,7 +20,7 @@
 #include "krpos.h"
 #include "krsize.h"
 #include "krutils.h"
-#include <koproperty/Set.h>
+#include <kproperty/Set.h>
 
 KoReportItemBase::KoReportItemBase()
 {

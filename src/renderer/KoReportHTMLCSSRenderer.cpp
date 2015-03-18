@@ -18,7 +18,8 @@
  */
 
 #include "KoReportHTMLCSSRenderer.h"
-#include "renderobjects.h"
+#include "common/renderobjects.h"
+
 #include <kdebug.h>
 #include <QDir>
 #include <QPainter>
@@ -28,7 +29,7 @@
 #include <QFont>
 
 #include <ktemporaryfile.h>
-#include <kio/netaccess.h>
+
 //
 // KRHtmlRender
 //
@@ -70,10 +71,10 @@ bool KoReportHTMLCSSRenderer::render(const KoReportRendererContext& context, ORO
     out.flush();
     tempHtmlFile.close();
 
-    bool status = false;
-    if (KIO::NetAccess::upload(tempFileName, context.destinationUrl, 0) && KIO::NetAccess::dircopy(KUrl(m_tempDirName),  KUrl(context.destinationUrl.url() + dirSuffix), 0)) {
-        status = true;
-    }
+    bool status = true; //TODO KIO
+//    if (KIO::NetAccess::upload(tempFileName, context.destinationUrl, 0) && KIO::NetAccess::dircopy(KUrl(m_tempDirName),  KUrl(context.destinationUrl.url() + dirSuffix), 0)) {
+//        status = true;
+//    }
 
     // cleanup the temporary directory
     tempDir.setPath(m_tempDirName);
@@ -129,7 +130,7 @@ QString KoReportHTMLCSSRenderer::renderCSS(ORODocument *document)
                 //kDebug() << "Got object type" << prim->type();
                 if (prim->type() == OROTextBox::TextBox) {
                     OROTextBox * tb = (OROTextBox*) prim;
-                    
+
                     QColor bg = tb->textStyle().backgroundColor;
                     style = "position: absolute; "
                             "background-color: " + QString("rgba(%1,%2,%3,%4)")

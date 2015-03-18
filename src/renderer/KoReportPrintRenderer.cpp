@@ -18,11 +18,14 @@
  */
 
 #include "KoReportPrintRenderer.h"
-#include "renderobjects.h"
-#include <KoPageFormat.h>
-#include <KoDpi.h>
-#include <kdebug.h>
+#include "common/renderobjects.h"
+#include "calligra/KoPageFormat.h"
+#include <QPageSize>
+#include <QScreen>
+#include <QApplication>
+#include <QDebug>
 #include <QPainter>
+#include <QPrinter>
 
 KoReportPrintRenderer::KoReportPrintRenderer()
 {
@@ -74,9 +77,11 @@ bool KoReportPrintRenderer::render(const KoReportRendererContext &context, ORODo
     int toPage = context.printer->toPage();
     if (toPage == 0 || toPage > document->pages())
         toPage = document->pages();
-         
-    qreal scale = context.printer->resolution() / qreal(KoDpi::dpiX());
-    
+
+    QScreen *srn = QApplication::screens().at(0);
+
+    qreal scale = context.printer->resolution() / qreal(srn->logicalDotsPerInchX());
+
     for (int copy = 0; copy < context.printer->numCopies(); copy++) {
         for (int page = fromPage; page < toPage; page++) {
             if (page > fromPage)
@@ -89,8 +94,8 @@ bool KoReportPrintRenderer::render(const KoReportRendererContext &context, ORODo
             // Render Page Objects
             for (int i = 0; i < p->primitives(); i++) {
                 OROPrimitive * prim = p->primitive(i);
-                
-                
+
+
                 prim->setPosition(prim->position() * scale);
                 prim->setSize(prim->size() * scale);
                 //kDebug() << "Rendering object" << i << "type" << prim->type();
@@ -240,7 +245,7 @@ bool KoReportPrintRenderer::render(const KoReportRendererContext &context, ORODo
                         }
                     }
                     context.painter->restore();
-                } 
+                }
             }
         }
     }

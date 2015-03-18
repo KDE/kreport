@@ -21,6 +21,8 @@
 
 #include "KoReportDesignerItemBase.h"
 #include "KoReportDesigner.h"
+#include "reportscene.h"
+#include "common/krutils.h"
 
 #include <QDomDocument>
 #include <QPainter>
@@ -28,10 +30,7 @@
 #include <klocalizedstring.h>
 #include <QGraphicsScene>
 #include <QGraphicsSceneMouseEvent>
-
-#include <koproperty/EditorView.h>
-#include "reportscene.h"
-#include "krutils.h"
+#include <kproperty/EditorView.h>
 
 //
 // class ReportEntityLine
@@ -49,7 +48,7 @@ void KoReportDesignerItemLine::init(QGraphicsScene* s, KoReportDesigner *r)
 #endif
 
     setPen(QPen(Qt::black, 5));
-    setAcceptsHoverEvents(true);
+    setAcceptHoverEvents(true);
 
     if (s)
         s->addItem(this);

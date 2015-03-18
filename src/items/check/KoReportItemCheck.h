@@ -19,12 +19,13 @@
 #ifndef KOREPORTITEMCHECK_H
 #define KOREPORTITEMCHECK_H
 
-#include <KoReportItemBase.h>
+#include "common/KoReportItemBase.h"
+#include "common/krpos.h"
+#include "common/krsize.h"
+
 #include <QRect>
 #include <QPainter>
 #include <QDomDocument>
-#include "krpos.h"
-#include "krsize.h"
 
 namespace Scripting
 {
@@ -56,10 +57,10 @@ protected:
     bool value();
     void setValue(bool);
     KRLineStyleData lineStyle();
-    
+
 private:
     virtual void createProperties();
-    
+
     friend class Scripting::Check;
 };
 

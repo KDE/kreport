@@ -23,12 +23,12 @@
 
 #include <QString>
 #include <QFlags>
-#include "kowidgets_export.h"
+#include "koreport_export.h"
 
 /**
  * The ZoomMode container
  */
-class KOWIDGETS_EXPORT KoZoomMode
+class KOREPORT_EXPORT KoZoomMode
 {
 public:
     enum Mode
@@ -78,23 +78,23 @@ public:
 
     /**
      * Set the minimum zoom possible for documents.
-     * 
+     *
      * Note that after calling this, any existing KoZoomAction instances
      * should be recreated.
-     * 
+     *
      * \param zoom The minimum zoom to use.
      */
     static void setMinimumZoom(qreal zoom);
     /**
      * Set the maximum zoom possible for documents.
-     * 
+     *
      * Note that after calling this, any existing KoZoomAction instances
      * should be recreated.
      *
      * \param zoom The maximum zoom to use.
      */
     static void setMaximumZoom(qreal zoom);
-    
+
 private:
     static const char * const modes[];
     static qreal minimumZoomValue;

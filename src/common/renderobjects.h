@@ -29,7 +29,7 @@
 #include <QBrush>
 #include <QPicture>
 
-#include <reportpageoptions.h>
+#include "reportpageoptions.h"
 #include "krreportdata.h"
 #include "KoReportItemBase.h"
 #include "koreport_export.h"
@@ -49,7 +49,7 @@ class OROSection;
 class KOREPORT_EXPORT ORODocument : public QObject
 {
     Q_OBJECT
-    
+
     friend class OROPage;
     friend class OROSection;
 
@@ -78,7 +78,7 @@ public:
     ReportPageOptions pageOptions() const {
         return m_pageOptions;
     };
-    
+
     void notifyChange(int pageNo);
 
 protected:
@@ -86,7 +86,7 @@ protected:
     QList<OROPage*> m_pages;
     QList<OROSection*> m_sections;
     ReportPageOptions m_pageOptions;
-    
+
 Q_SIGNALS:
     void updated(int pageNo);
 };
@@ -208,7 +208,7 @@ public:
     void setSize(const QSizeF &s);
 
     virtual OROPrimitive* clone() = 0;
-    
+
 protected:
     OROPrimitive(int);
 
@@ -258,10 +258,10 @@ public:
 
     bool requiresPostProcessing(){return m_requiresPostProcessing;}
     void setRequiresPostProcessing(bool pp = true){m_requiresPostProcessing = pp;}
-    
+
     bool wordWrap() const {return m_wordWrap;}
     void setWordWrap(bool ww){m_wordWrap = ww;}
-    
+
     bool canGrow() const {return m_canGrow;}
     void setCanGrow(bool cg){m_canGrow = cg;}
 

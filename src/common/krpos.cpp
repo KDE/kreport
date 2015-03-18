@@ -18,7 +18,8 @@
  */
 #include "krpos.h"
 #include <klocale.h>
-#include <KoDpi.h>
+#include <QScreen>
+#include <QApplication>
 
 KRPos::KRPos(const KoUnit& unit)
 {
@@ -38,8 +39,10 @@ KRPos::~KRPos()
 
 void KRPos::setScenePos(const QPointF& pos, UpdatePropertyFlag update)
 {
-    const qreal x = INCH_TO_POINT(pos.x() / KoDpi::dpiX());
-    const qreal y = INCH_TO_POINT(pos.y() / KoDpi::dpiY());
+    QScreen *srn = QApplication::screens().at(0);
+
+    const qreal x = INCH_TO_POINT(pos.x() / srn->logicalDotsPerInchX());
+    const qreal y = INCH_TO_POINT(pos.y() / srn->logicalDotsPerInchY());
 
     m_pointPos.setX(x);
     m_pointPos.setY(y);
@@ -82,8 +85,10 @@ QPointF KRPos::toPoint() const
 
 QPointF KRPos::toScene() const
 {
-    const qreal x = POINT_TO_INCH(m_pointPos.x()) * KoDpi::dpiX();
-    const qreal y = POINT_TO_INCH(m_pointPos.y()) * KoDpi::dpiY();
+    QScreen *srn = QApplication::screens().at(0);
+
+    const qreal x = POINT_TO_INCH(m_pointPos.x()) * srn->logicalDotsPerInchX();
+    const qreal y = POINT_TO_INCH(m_pointPos.y()) * srn->logicalDotsPerInchY();
 
     return QPointF(x, y);
 }

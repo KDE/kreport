@@ -23,11 +23,13 @@
 #include "reportsceneview.h"
 #include "KoReportDesigner.h"
 #include "KoReportDesignerItemBase.h"
-#include "krutils.h"
-#include "KoReportPluginInterface.h"
-#include "KoReportPluginManager.h"
+#include "common/krutils.h"
+#include "common/KoReportPluginInterface.h"
+#include "common/KoReportPluginManager.h"
 #include "KoReportDesignerItemRectBase.h"
 #include "KoReportDesignerItemLine.h"
+#include <calligra/KoRuler.h>
+#include <calligra/KoZoomHandler.h>
 
 // qt
 #include <QLabel>
@@ -36,11 +38,9 @@
 #include <QGridLayout>
 #include <QMouseEvent>
 #include <QApplication>
-
-#include <KoDpi.h>
-#include <KoRuler.h>
-#include <KoZoomHandler.h>
-#include <KoIcon.h>
+#include <QScreen>
+#include <QApplication>
+#include <QIcon>
 
 #include <klocalizedstring.h>
 #include <kdebug.h>
@@ -55,7 +55,8 @@ ReportSection::ReportSection(KoReportDesigner * rptdes)
     m_sectionData = new KRSectionData(this);
     connect(m_sectionData->propertySet(), SIGNAL(propertyChanged(KoProperty::Set&,KoProperty::Property&)),
             this, SLOT(slotPropertyChanged(KoProperty::Set&,KoProperty::Property&)));
-    int dpiY = KoDpi::dpiY();
+    QScreen *srn = QApplication::screens().at(0);
+    m_dpiY = srn->logicalDotsPerInchY();
 
     m_reportDesigner = rptdes;
     setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
@@ -74,7 +75,7 @@ ReportSection::ReportSection(KoReportDesigner * rptdes)
 
     m_sectionRuler = new KoRuler(this, Qt::Vertical, m_reportDesigner->zoomHandler());
     m_sectionRuler->setUnit(m_reportDesigner->pageUnit());
-    m_scene = new ReportScene(m_reportDesigner->pageWidthPx(), dpiY, rptdes);
+    m_scene = new ReportScene(m_reportDesigner->pageWidthPx(), m_dpiY, rptdes);
     m_sceneView = new ReportSceneView(rptdes, m_scene, this);
     m_sceneView->setObjectName("scene view");
     m_sceneView->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
@@ -120,7 +121,7 @@ void ReportSection::slotResizeBarDragged(int delta)
     if (h < 1) h = 1;
 
     h = m_scene->gridPoint(QPointF(0, h)).y();
-    m_sectionData->m_height->setValue(INCH_TO_POINT(h/KoDpi::dpiY()));
+    m_sectionData->m_height->setValue(INCH_TO_POINT(h/m_dpiY));
     m_sectionRuler->setRulerLength(h);
 
     m_scene->setSceneRect(0, 0, m_scene->width(), h);
@@ -151,7 +152,7 @@ void ReportSection::initFromXML(QDomNode & section)
     qreal h = KoUnit::parseValue(section.toElement().attribute("svg:height", "2.0cm"));
     m_sectionData->m_height->setValue(h);
 
-    h  = POINT_TO_INCH(h) * KoDpi::dpiY();
+    h  = POINT_TO_INCH(h) * m_dpiY;;
     //kDebug() << "Section Height: " << h;
     m_scene->setSceneRect(0, 0, m_scene->width(), h);
     slotResizeBarDragged(0);
@@ -238,7 +239,7 @@ void ReportSection::slotPropertyChanged(KoProperty::Set &s, KoProperty::Property
     }
 
     if (p.name() == "height") {
-	m_scene->setSceneRect(0, 0, m_scene->width(), POINT_TO_INCH(p.value().toDouble()) * KoDpi::dpiY());
+	m_scene->setSceneRect(0, 0, m_scene->width(), POINT_TO_INCH(p.value().toDouble()) * m_dpiY);
 	slotResizeBarDragged(0);
     }
 
@@ -280,7 +281,7 @@ QGraphicsItemList ReportSection::items() const
 //
 // class ReportResizeBar
 //
-ReportResizeBar::ReportResizeBar(QWidget * parent, Qt::WFlags f)
+ReportResizeBar::ReportResizeBar(QWidget * parent, Qt::WindowFlags f)
         : QFrame(parent, f)
 {
     setCursor(QCursor(Qt::SizeVerCursor));
@@ -300,7 +301,7 @@ ReportSectionTitle::ReportSectionTitle(QWidget*parent) : QLabel(parent)
 {
     setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     setAlignment(Qt::AlignLeft | Qt::AlignTop);
-    setMinimumHeight(qMax(fontMetrics().lineSpacing(), IconSize(KIconLoader::Small) + 2));
+    setMinimumHeight(qMax(fontMetrics().lineSpacing(),16 + 2)); //16 = Small icon size
 }
 
 ReportSectionTitle::~ReportSectionTitle()
@@ -347,7 +348,7 @@ void ReportSectionTitle::paintEvent(QPaintEvent * event)
         painter.fillRect(rect(), palette().brush(cg, QPalette::Highlight));
     }
     painter.setPen(palette().color(cg, current ? QPalette::HighlightedText : QPalette::WindowText));
-    QPixmap pixmap(koSmallIcon("arrow-down"));
+    QPixmap pixmap(QIcon::fromTheme("arrow-down").pixmap(16,16));
     replaceColors(&pixmap, painter.pen().color());
     const int left = 25;
     painter.drawPixmap(QPoint(left, (height() - pixmap.height()) / 2), pixmap);

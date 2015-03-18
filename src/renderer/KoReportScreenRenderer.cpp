@@ -18,10 +18,10 @@
  */
 
 #include "KoReportScreenRenderer.h"
-#include "renderobjects.h"
-#include <KoPageFormat.h>
+#include "common/renderobjects.h"
+#include "calligra/KoPageFormat.h"
 #include <kdebug.h>
-#include <KoUnit.h>
+#include "calligra/KoUnit.h"
 
 KoReportScreenRenderer::KoReportScreenRenderer()
 {
@@ -62,7 +62,7 @@ bool KoReportScreenRenderer::render(const KoReportRendererContext& context, OROD
             //Background
 
             context.painter->setBackgroundMode(Qt::TransparentMode);
-            
+
             QColor bg = tb->textStyle().backgroundColor;
             bg.setAlphaF(0.01 * tb->textStyle().backgroundOpacity);
 

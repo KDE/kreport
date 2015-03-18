@@ -17,14 +17,12 @@
  */
 
 #include "KoReportDesignerItemCheck.h"
-#include <KoReportDesignerItemRectBase.h>
-#include <KoReportDesigner.h>
+#include "wrtembed/KoReportDesignerItemRectBase.h"
+#include "wrtembed/KoReportDesigner.h"
 
 #include <QDomDocument>
 #include <QPainter>
-#include <kdebug.h>
-#include <klocalizedstring.h>
-#include <koproperty/EditorView.h>
+#include <kproperty/EditorView.h>
 #include <QGraphicsScene>
 #include <QGraphicsSceneMouseEvent>
 

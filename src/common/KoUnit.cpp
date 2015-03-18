@@ -26,8 +26,6 @@
 #include <QTransform>
 
 #include <klocale.h>
-#include <kglobal.h>
-#include <kdebug.h>
 
 // ensure the same order as in KoUnit::Unit
 static const char* const unitNameList[KoUnit::TypeCount] =
@@ -182,7 +180,7 @@ qreal KoUnit::ptToUnit(const qreal ptValue, const KoUnit &unit)
 
 QString KoUnit::toUserStringValue(qreal ptValue) const
 {
-    return KGlobal::locale()->formatNumber(toUserValue(ptValue));
+    return QLocale::system().toString(toUserValue(ptValue));
 }
 
 qreal KoUnit::fromUserValue(qreal value) const
@@ -210,7 +208,7 @@ qreal KoUnit::fromUserValue(qreal value) const
 
 qreal KoUnit::fromUserValue(const QString &value, bool *ok) const
 {
-    return fromUserValue(KGlobal::locale()->readNumber(value, ok));
+    return fromUserValue(QLocale::system().toDouble(value, ok));
 }
 
 qreal KoUnit::parseValue(const QString& _value, qreal defaultVal)
@@ -250,7 +248,7 @@ qreal KoUnit::parseValue(const QString& _value, qreal defaultVal)
         return DM_TO_POINT(val * 10.0);
     else if (symbol == QLatin1String("km"))
         return DM_TO_POINT(val * 10000.0);
-    kWarning() << "KoUnit::parseValue: Unit " << symbol << " is not supported, please report.";
+    qWarning() << "KoUnit::parseValue: Unit" << symbol << "is not supported, please report.";
 
     // TODO : add support for mi/ft ?
     return defaultVal;

@@ -17,13 +17,13 @@
  */
 #include "KoReportItemField.h"
 
-#include <kdebug.h>
-#include <klocalizedstring.h>
-#include <kglobalsettings.h>
-#include <koproperty/Set.h>
-#include <renderobjects.h>
-
+#include "common/renderobjects.h"
 #include "renderer/scripting/krscripthandler.h"
+
+#include <kproperty/Set.h>
+#include <QPalette>
+#include <QFontMetrics>
+#include <QApplication>
 
 KoReportItemField::KoReportItemField()
 {
@@ -46,7 +46,7 @@ KoReportItemField::KoReportItemField(QDomNode & element)
 
     m_canGrow->setValue(element.toElement().attribute("report:can-grow"));
     m_wordWrap->setValue(element.toElement().attribute("report:word-wrap"));
-    
+
     parseReportRect(element.toElement(), &m_pos, &m_size);
 
     for (int i = 0; i < nl.count(); i++) {
@@ -67,10 +67,10 @@ KoReportItemField::KoReportItemField(QDomNode & element)
             if (parseReportLineStyleData(node.toElement(), ls)) {
                 m_lineWeight->setValue(ls.weight);
                 m_lineColor->setValue(ls.lineColor);
-                m_lineStyle->setValue(ls.style);
+                m_lineStyle->setValue(QPen(ls.style));
             }
         } else {
-            kWarning() << "while parsing field element encountered unknow element: " << n;
+            qWarning() << "while parsing field element encountered unknow element: " << n;
         }
     }
 }
@@ -86,39 +86,39 @@ void KoReportItemField::createProperties()
 
     QStringList keys, strings;
 
-    m_controlSource = new KoProperty::Property("item-data-source", QStringList(), QStringList(), QString(), i18n("Data Source"));
+    m_controlSource = new KoProperty::Property("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
     m_controlSource->setOption("extraValueAllowed", "true");
-    
-    m_itemValue = new KoProperty::Property("value", QString(), i18n("Value"), i18n("Value used if not bound to a field"));
+
+    m_itemValue = new KoProperty::Property("value", QString(), tr("Value"), tr("Value used if not bound to a field"));
 
     keys << "left" << "center" << "right";
-    strings << i18n("Left") << i18n("Center") << i18n("Right");
-    m_horizontalAlignment = new KoProperty::Property("horizontal-align", keys, strings, "left", i18n("Horizontal Alignment"));
+    strings << tr("Left") << tr("Center") << tr("Right");
+    m_horizontalAlignment = new KoProperty::Property("horizontal-align", keys, strings, "left", tr("Horizontal Alignment"));
 
     keys.clear();
     strings.clear();
     keys << "top" << "center" << "bottom";
-    strings << i18n("Top") << i18n("Center") << i18n("Bottom");
-    m_verticalAlignment = new KoProperty::Property("vertical-align", keys, strings, "center", i18n("Vertical Alignment"));
+    strings << tr("Top") << tr("Center") << tr("Bottom");
+    m_verticalAlignment = new KoProperty::Property("vertical-align", keys, strings, "center", tr("Vertical Alignment"));
 
-    m_font = new KoProperty::Property("Font", KGlobalSettings::generalFont(), "Font", i18n("Font"));
+    m_font = new KoProperty::Property("Font", QApplication::font(), "Font", tr("Font"));
 
-    
-    m_backgroundColor = new KoProperty::Property("background-color", Qt::white, i18n("Background Color"));
-    m_foregroundColor = new KoProperty::Property("foreground-color", QPalette().color(QPalette::Foreground), i18n("Foreground Color"));
 
-    m_backgroundOpacity = new KoProperty::Property("background-opacity", QVariant(0), i18n("Background Opacity"));
+    m_backgroundColor = new KoProperty::Property("background-color", QColor(Qt::white), tr("Background Color"));
+    m_foregroundColor = new KoProperty::Property("foreground-color", QPalette().color(QPalette::Foreground), tr("Foreground Color"));
+
+    m_backgroundOpacity = new KoProperty::Property("background-opacity", QVariant(0), tr("Background Opacity"));
     m_backgroundOpacity->setOption("max", 100);
     m_backgroundOpacity->setOption("min", 0);
     m_backgroundOpacity->setOption("unit", "%");
 
-    m_lineWeight = new KoProperty::Property("line-weight", 1, i18n("Line Weight"));
-    m_lineColor = new KoProperty::Property("line-color", Qt::black, i18n("Line Color"));
-    m_lineStyle = new KoProperty::Property("line-style", Qt::NoPen, i18n("Line Style"), i18n("Line Style"), KoProperty::LineStyle);
+    m_lineWeight = new KoProperty::Property("line-weight", 1, tr("Line Weight"));
+    m_lineColor = new KoProperty::Property("line-color", QColor(Qt::black), tr("Line Color"));
+    m_lineStyle = new KoProperty::Property("line-style", QPen(Qt::NoPen), tr("Line Style"), tr("Line Style"), KoProperty::LineStyle);
 
-    m_wordWrap = new KoProperty::Property("word-wrap", QVariant(false), i18n("Word Wrap"));
-    m_canGrow = new KoProperty::Property("can-grow", QVariant(false), i18n("Can Grow"));
-    
+    m_wordWrap = new KoProperty::Property("word-wrap", QVariant(false), tr("Word Wrap"));
+    m_canGrow = new KoProperty::Property("can-grow", QVariant(false), tr("Can Grow"));
+
 #if 0 //Field Totals
     //TODO I do not think we need these
     m_trackTotal = new KoProperty::Property("TrackTotal", QVariant(false), futureI18n("Track Total"));
@@ -141,7 +141,7 @@ void KoReportItemField::createProperties()
     m_set->addProperty(m_lineStyle);
     m_set->addProperty(m_wordWrap);
     m_set->addProperty(m_canGrow);
-    
+
     //_set->addProperty ( _trackTotal );
     //_set->addProperty ( _trackBuiltinFormat );
     //_set->addProperty ( _useSubTotal );
@@ -224,9 +224,9 @@ int KoReportItemField::renderSimpleData(OROPage *page, OROSection *section, cons
     tb->setLineStyle(lineStyle());
     tb->setCanGrow(m_canGrow->value().toBool());
     tb->setWordWrap(m_wordWrap->value().toBool());
-    
+
     QString str;
-    
+
     QString ids = itemDataSource();
     if (!ids.isEmpty()) {
         if (ids.left(1) == "=" && script) { //Everything after = is treated as code
@@ -247,7 +247,7 @@ int KoReportItemField::renderSimpleData(OROPage *page, OROSection *section, cons
     }
 
     tb->setText(str);
-    
+
     //Work out the size of the text
     if (tb->canGrow()) {
         QRect r;
@@ -264,11 +264,11 @@ int KoReportItemField::renderSimpleData(OROPage *page, OROSection *section, cons
         }
         tb->setSize(r.size() + QSize(4,4));
     }
-    
+
     if (page) {
         page->addPrimitive(tb);
     }
-        
+
     if (section) {
         OROPrimitive *clone = tb->clone();
         clone->setPosition(m_pos.toScene());

@@ -19,14 +19,12 @@
 
 #include "KoReportDesignerItemField.h"
 #include "KoReportItemField.h"
-#include "KoReportDesigner.h"
+#include "wrtembed/KoReportDesigner.h"
 
 #include <QDomDocument>
 #include <QPainter>
-#include <kdebug.h>
-#include <klocalizedstring.h>
 #include <QGraphicsScene>
-#include <koproperty/EditorView.h>
+#include <kproperty/EditorView.h>
 #include <QGraphicsSceneMouseEvent>
 
 //
@@ -39,12 +37,12 @@ void KoReportDesignerItemField::init(QGraphicsScene * scene, KoReportDesigner * 
         scene->addItem(this);
 
     KoReportDesignerItemRectBase::init(&m_pos, &m_size, m_set, d);
-    
+
     connect(m_set, SIGNAL(propertyChanged(KoProperty::Set&,KoProperty::Property&)),
             this, SLOT(slotPropertyChanged(KoProperty::Set&,KoProperty::Property&)));
 
     setZValue(Z);
-    
+
     updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(), "field");
 }
 
@@ -94,7 +92,7 @@ void KoReportDesignerItemField::paint(QPainter* painter, const QStyleOptionGraph
     // store any values we plan on changing so we can restore them
     QFont f = painter->font();
     QPen  p = painter->pen();
-    
+
 
     painter->setFont(font());
     painter->setBackgroundMode(Qt::TransparentMode);
@@ -136,7 +134,7 @@ void KoReportDesignerItemField::buildXML(QDomDocument & doc, QDomElement & paren
     addPropertyAsAttribute(&entity, m_wordWrap);
     addPropertyAsAttribute(&entity, m_canGrow);
     addPropertyAsAttribute(&entity, m_itemValue);
-    
+
     entity.setAttribute("report:z-index", zValue());
 
     // bounding rect
@@ -175,8 +173,8 @@ void KoReportDesignerItemField::slotPropertyChanged(KoProperty::Set &s, KoProper
         } else {
             m_oldName = p.value().toString();
         }
-    } 
-    
+    }
+
     updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(), "field");
 
     KoReportDesignerItemRectBase::propertyChanged(s, p);

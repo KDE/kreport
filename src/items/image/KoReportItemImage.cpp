@@ -16,14 +16,12 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "KoReportItemImage.h"
+#include "common/renderobjects.h"
 
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
-#include <kdebug.h>
-#include <klocalizedstring.h>
+#include <kproperty/Property.h>
+#include <kproperty/Set.h>
 #include <QBuffer>
 #include <kcodecs.h>
-#include <renderobjects.h>
 
 KoReportItemImage::KoReportItemImage()
 {
@@ -176,17 +174,17 @@ int KoReportItemImage::renderSimpleData(OROPage *page, OROSection *section, cons
     if (page) {
         page->addPrimitive(id);
     }
-    
+
     if (section) {
         OROImage *i2 = dynamic_cast<OROImage*>(id->clone());
         i2->setPosition(m_pos.toPoint());
         section->addPrimitive(i2);
     }
-    
+
     if (!page) {
         delete id;
     }
-    
+
     return 0; //Item doesn't stretch the section height
 }
 

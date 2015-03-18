@@ -18,11 +18,10 @@
 
 #include "KoReportItemLine.h"
 
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
-#include <kdebug.h>
-#include <klocalizedstring.h>
-#include <renderobjects.h>
+#include <kproperty/Property.h>
+#include <kproperty/Set.h>
+#include <QDebug>
+#include "renderobjects.h"
 
 KoReportItemLine::KoReportItemLine()
 {
@@ -56,10 +55,10 @@ KoReportItemLine::KoReportItemLine(QDomNode & element)
             if (parseReportLineStyleData(node.toElement(), ls)) {
                 m_lineWeight->setValue(ls.weight);
                 m_lineColor->setValue(ls.lineColor);
-                m_lineStyle->setValue(ls.style);
+                m_lineStyle->setValue(QPen(ls.style));
             }
         } else {
-            kWarning() << "while parsing line element encountered unknow element: " << n;
+            qWarning() << "while parsing line element encountered unknow element: " << n;
         }
     }
 }
@@ -73,9 +72,9 @@ void KoReportItemLine::createProperties()
 {
     m_set = new KoProperty::Set(0, "Line");
 
-    m_lineWeight = new KoProperty::Property("line-weight", 1, i18n("Line Weight"));
-    m_lineColor = new KoProperty::Property("line-color", Qt::black, i18n("Line Color"));
-    m_lineStyle = new KoProperty::Property("line-style", Qt::SolidLine, i18n("Line Style"), i18n("Line Style"), KoProperty::LineStyle);
+    m_lineWeight = new KoProperty::Property("line-weight", 1, tr("Line Weight"));
+    m_lineColor = new KoProperty::Property("line-color", QColor(Qt::black), tr("Line Color"));
+    m_lineStyle = new KoProperty::Property("line-style", QPen(Qt::SolidLine), tr("Line Style"), tr("Line Style"), KoProperty::LineStyle);
     m_start.setName("Start");
     m_end.setName("End");
 
@@ -115,7 +114,7 @@ int KoReportItemLine::renderSimpleData(OROPage *page, OROSection *section, const
 {
     Q_UNUSED(script)
     Q_UNUSED(data)
-    
+
     OROLine * ln = new OROLine();
     QPointF s = m_start.toScene();
     QPointF e = m_end.toScene();

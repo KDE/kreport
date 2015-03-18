@@ -21,7 +21,7 @@
 #ifndef KOREPORTFIELDPLUGIN_H
 #define KOREPORTFIELDPLUGIN_H
 
-#include <KoReportPluginInterface.h>
+#include "common/KoReportPluginInterface.h"
 
 
 class KoReportFieldPlugin : public KoReportPluginInterface
@@ -29,7 +29,7 @@ class KoReportFieldPlugin : public KoReportPluginInterface
     public:
     explicit KoReportFieldPlugin(QObject *parent, const QVariantList &args = QVariantList());
     virtual ~KoReportFieldPlugin();
-    
+
     virtual QObject* createRendererInstance(QDomNode& element);
     virtual QObject* createDesignerInstance(QDomNode& element, KoReportDesigner* , QGraphicsScene* scene);
     virtual QObject* createDesignerInstance(KoReportDesigner* , QGraphicsScene* scene, const QPointF& pos);

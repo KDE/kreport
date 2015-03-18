@@ -21,7 +21,7 @@
 #ifndef KOREPORTCHECKPLUGIN_H
 #define KOREPORTCHECKPLUGIN_H
 
-#include <KoReportPluginInterface.h>
+#include "common/KoReportPluginInterface.h"
 
 
 class KoReportCheckPlugin : public KoReportPluginInterface

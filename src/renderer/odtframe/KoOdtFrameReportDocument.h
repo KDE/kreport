@@ -22,7 +22,7 @@
 #ifndef KOODTFRAMEREPORTDOCUMENT_H
 #define KOODTFRAMEREPORTDOCUMENT_H
 
-#include "reportpageoptions.h"
+#include "common/reportpageoptions.h"
 
 #include <QFile>
 #include <QMap>

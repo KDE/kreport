@@ -27,7 +27,8 @@
 #define __REPORTSCENE_H__
 
 #include <QGraphicsScene>
-#include <KoUnit.h>
+#include "calligra/KoUnit.h"
+
 typedef QList<QGraphicsItem*> QGraphicsItemList;
 class KoReportDesigner;
 class QGraphicsSceneContextMenuEvent;
@@ -74,7 +75,8 @@ private:
     qreal m_majorY;
     qreal m_pixelIncrementX;
     qreal m_pixelIncrementY;
-
+    int m_dpiX;
+    int m_dpiY;
 };
 
 #endif

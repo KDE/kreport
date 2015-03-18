@@ -24,7 +24,7 @@
 #include "odtframe/KoOdtFrameReportPicture.h"
 #include "odtframe/KoOdtFrameReportLine.h"
 #include "odtframe/KoOdtFrameReportCheckBox.h"
-#include "renderobjects.h"
+#include "common/renderobjects.h"
 
 #include <kdebug.h>
 

@@ -29,12 +29,12 @@
 
 #include <kdebug.h>
 
-#include <krreportdata.h>
-#include <koproperty/Set.h>
-#include <koproperty/Property.h>
-#include <KoReportItemBase.h>
+#include "common/krreportdata.h"
+#include <kproperty/Set.h>
+#include <kproperty/Property.h>
+#include "common/KoReportItemBase.h"
 #include "koreport_export.h"
-#include "KoReportData.h"
+#include "common/KoReportData.h"
 
 class ReportGridOptions;
 class QDomDocument;
@@ -161,7 +161,7 @@ public:
     @return a list of field names in the selected KoReportData
     */
     QStringList fieldNames() const;
-    
+
     /**
     @return a list of field keys in the selected KoReportData
     The keys can be used to reference the names
@@ -300,7 +300,7 @@ public Q_SLOTS:
 
     void slotRaiseSelected();
     void slotLowerSelected();
-    
+
 protected:
 
     ReportSection *m_reportHeader;
@@ -336,7 +336,7 @@ private:
     @brief Deletes the detail section
     */
     void deleteDetail();
-        
+
     virtual void resizeEvent(QResizeEvent * event);
 
     //Properties

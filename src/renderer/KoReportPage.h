@@ -18,7 +18,7 @@
 #ifndef KOREPORTPAGE_H
 #define KOREPORTPAGE_H
 
-#include <KoReportRendererBase.h>
+#include "KoReportRendererBase.h"
 #include <QGraphicsRectItem>
 
 class QTimer;
@@ -56,7 +56,7 @@ private:
     QPixmap *m_pixmap;
     KoReportRendererFactory m_factory;
     KoReportRendererBase *m_renderer;
-    
+
     QTimer *m_renderTimer;
 };
 

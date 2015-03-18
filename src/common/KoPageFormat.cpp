@@ -24,7 +24,7 @@
 
 #include <klocale.h>
 #include <kdebug.h>
-#include <kglobal.h>
+//#include <kglobal.h>
 // paper formats ( mm )
 #define PG_A3_WIDTH             297.0
 #define PG_A3_HEIGHT            420.0
@@ -150,11 +150,12 @@ KoPageFormat::Format KoPageFormat::formatFromString(const QString & string)
 
 KoPageFormat::Format KoPageFormat::defaultFormat()
 {
-    int qprinter = KGlobal::locale()->pageSize();
-    for (int i = 0; pageFormatInfo[i].format != -1 ;i++) {
-        if (pageFormatInfo[ i ].qprinter == qprinter)
-            return static_cast<Format>(i);
-    }
+    //! @todo KGlobal
+    //int qprinter = KGlobal::locale()->pageSize();
+    //for (int i = 0; pageFormatInfo[i].format != -1 ;i++) {
+    //    if (pageFormatInfo[ i ].qprinter == qprinter)
+    //        return static_cast<Format>(i);
+    //}
     return IsoA4Size;
 }
 

@@ -17,8 +17,9 @@
  */
 #include "krreportdata.h"
 #include <kdebug.h>
-#include <KoUnit.h>
-#include <KoDpi.h>
+#include "calligra/KoUnit.h"
+#include <QScreen>
+#include <QApplication>
 #include "krdetailsectiondata.h"
 #include "KoReportItemBase.h"
 
@@ -49,6 +50,11 @@ KoReportReportData::KoReportReportData(const QDomElement & elemSource, QObject *
                    << elemSource.text();
         return;
     }
+        QScreen *srn = QApplication::screens().at(0);
+
+    const qreal dpiX = srn->logicalDotsPerInchX();
+    const qreal dpiY = srn->logicalDotsPerInchY();
+
 
     QDomNodeList sections = elemSource.childNodes();
     for (int nodeCounter = 0; nodeCounter < sections.count(); nodeCounter++) {
@@ -64,17 +70,17 @@ KoReportReportData::KoReportReportData(const QDomElement & elemSource, QObject *
             if (pagetype == "predefined") {
                 page.setPageSize(elemThis.attribute("report:page-size", "A4"));
             } else if (pagetype == "custom") {
-                page.setCustomWidth(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute("report:custom-page-width", ""))) * KoDpi::dpiX());
-                page.setCustomHeight(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute("report:custom-page-height", ""))) * KoDpi::dpiY());
+                page.setCustomWidth(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute("report:custom-page-width", ""))) * dpiX);
+                page.setCustomHeight(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute("report:custom-page-height", ""))) * dpiY);
                 page.setPageSize("Custom");
             } else if (pagetype == "label") {
                 page.setLabelType(elemThis.firstChild().nodeValue());
             }
             //@todo add config for default margins or add within templates support
-            page.setMarginBottom(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute("fo:margin-bottom", "1.0cm"))) * KoDpi::dpiY());
-            page.setMarginTop(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute("fo:margin-top", "1.0cm"))) * KoDpi::dpiY());
-            page.setMarginLeft(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute("fo:margin-left", "1.0cm"))) * KoDpi::dpiX());
-            page.setMarginRight(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute("fo:margin-right", "1.0cm"))) * KoDpi::dpiX());
+            page.setMarginBottom(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute("fo:margin-bottom", "1.0cm"))) * dpiY);
+            page.setMarginTop(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute("fo:margin-top", "1.0cm"))) * dpiY);
+            page.setMarginLeft(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute("fo:margin-left", "1.0cm"))) * dpiX);
+            page.setMarginRight(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute("fo:margin-right", "1.0cm"))) * dpiX);
 
             page.setPortrait(elemThis.attribute("report:print-orientation", "portrait") == "portrait");
 

@@ -16,15 +16,13 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "KoReportItemText.h"
+#include "common/renderobjects.h"
 
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
-#include <klocale.h>
-#include <kdebug.h>
-#include <klocalizedstring.h>
-#include <kglobalsettings.h>
+#include <kproperty/Property.h>
+#include <kproperty/Set.h>
 #include <QPrinter>
-#include <renderobjects.h>
+#include <QApplication>
+#include <QPalette>
 
 KoReportItemText::KoReportItemText()
 {
@@ -66,10 +64,10 @@ KoReportItemText::KoReportItemText(QDomNode & element) : m_bottomPadding(0.0)
             if (parseReportLineStyleData(node.toElement(), ls)) {
                 m_lineWeight->setValue(ls.weight);
                 m_lineColor->setValue(ls.lineColor);
-                m_lineStyle->setValue(ls.style);
+                m_lineStyle->setValue(QPen(ls.style));
             }
         } else {
-            kWarning() << "while parsing field element encountered unknow element: " << n;
+            qWarning() << "while parsing field element encountered unknow element: " << n;
         }
     }
 
@@ -112,29 +110,29 @@ void KoReportItemText::createProperties()
     QStringList keys, strings;
 
     //_query = new KoProperty::Property ( "Query", QStringList(), QStringList(), "Data Source", "Query" );
-    m_controlSource = new KoProperty::Property("item-data-source", QStringList(), QStringList(), QString(), i18n("Data Source"));
-    
-    m_itemValue = new KoProperty::Property("value", QString(), i18n("Value"), i18n("Value used if not bound to a field"));
+    m_controlSource = new KoProperty::Property("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
+
+    m_itemValue = new KoProperty::Property("value", QString(), tr("Value"), tr("Value used if not bound to a field"));
 
     keys << "left" << "center" << "right";
-    strings << i18n("Left") << i18n("Center") << i18n("Right");
-    m_horizontalAlignment = new KoProperty::Property("horizontal-align", keys, strings, "left", i18n("Horizontal Alignment"));
+    strings << tr("Left") << tr("Center") << tr("Right");
+    m_horizontalAlignment = new KoProperty::Property("horizontal-align", keys, strings, "left", tr("Horizontal Alignment"));
 
     keys.clear();
     strings.clear();
     keys << "top" << "center" << "bottom";
-    strings << i18n("Top") << i18n("Center") << i18n("Bottom");
-    m_verticalAlignment = new KoProperty::Property("vertical-align", keys, strings, "center", i18n("Vertical Alignment"));
+    strings << tr("Top") << tr("Center") << tr("Bottom");
+    m_verticalAlignment = new KoProperty::Property("vertical-align", keys, strings, "center", tr("Vertical Alignment"));
 
-    m_font = new KoProperty::Property("Font", KGlobalSettings::generalFont(), "Font", i18n("Font"));
+    m_font = new KoProperty::Property("Font", QApplication::font(), "Font", tr("Font"));
 
-    m_backgroundColor = new KoProperty::Property("background-color", Qt::white, i18n("Background Color"));
-    m_foregroundColor = new KoProperty::Property("foreground-color", QPalette().color(QPalette::Foreground), i18n("Foreground Color"));
+    m_backgroundColor = new KoProperty::Property("background-color", QColor(Qt::white), tr("Background Color"));
+    m_foregroundColor = new KoProperty::Property("foreground-color", QPalette().color(QPalette::Foreground), tr("Foreground Color"));
 
-    m_lineWeight = new KoProperty::Property("line-weight", 1, i18n("Line Weight"));
-    m_lineColor = new KoProperty::Property("line-color", Qt::black, i18n("Line Color"));
-    m_lineStyle = new KoProperty::Property("line-style", Qt::NoPen, i18n("Line Style"), i18n("Line Style"), KoProperty::LineStyle);
-    m_backgroundOpacity = new KoProperty::Property("background-opacity", QVariant(0), i18n("Background Opacity"));
+    m_lineWeight = new KoProperty::Property("line-weight", 1, tr("Line Weight"));
+    m_lineColor = new KoProperty::Property("line-color", QColor(Qt::black), tr("Line Color"));
+    m_lineStyle = new KoProperty::Property("line-style", QPen(Qt::NoPen), tr("Line Style"), tr("Line Style"), KoProperty::LineStyle);
+    m_backgroundOpacity = new KoProperty::Property("background-opacity", QVariant(0), tr("Background Opacity"));
     m_backgroundOpacity->setOption("max", 100);
     m_backgroundOpacity->setOption("min", 0);
     m_backgroundOpacity->setOption("unit", "%");
@@ -266,21 +264,21 @@ int KoReportItemText::renderSimpleData(OROPage *page, OROSection *section, const
                     tb->setFlags(textFlags());
                     tb->setTextStyle(textStyle());
                     tb->setLineStyle(lineStyle());
-                    
+
                     if (page) {
                         page->addPrimitive(tb);
                     }
-                    
+
                     if (section) {
                         OROTextBox *tb2 = dynamic_cast<OROTextBox*>(tb->clone());
                         tb2->setPosition(m_pos.toPoint());
                         section->addPrimitive(tb2);
                     }
-                    
+
                     if (!page) {
                         delete tb;
                     }
-    
+
                     intStretch += intRectHeight;
                     intLineCounter++;
                 }
@@ -309,6 +307,6 @@ int KoReportItemText::renderSimpleData(OROPage *page, OROSection *section, const
 
         intStretch += (m_bottomPadding / 100.0);
     }
-    
+
     return intStretch; //Item returns its required section height
 }

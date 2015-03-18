@@ -20,9 +20,9 @@
 
 #include "krsectiondata.h"
 
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
-#include <kdebug.h>
+#include <kproperty/Property.h>
+#include <kproperty/Set.h>
+#include <QDebug>
 #include <QColor>
 
 #include "KoReportPluginInterface.h"
@@ -55,7 +55,7 @@ KRSectionData::KRSectionData(const QDomElement & elemSource, KoReportReportData*
     m_backgroundColor->setValue(QColor(elemSource.attribute("fo:background-color")));
 
     KoReportPluginManager* manager = KoReportPluginManager::self();
-    
+
     QDomNodeList section = elemSource.childNodes();
     for (int nodeCounter = 0; nodeCounter < section.count(); nodeCounter++) {
         QDomElement elemThis = section.item(nodeCounter).toElement();
@@ -105,8 +105,8 @@ void KRSectionData::createProperties(const QDomElement & elemSource)
 {
     m_set = new KoProperty::Set(this, "Section");
 
-    m_height = new KoProperty::Property("height", KoUnit(KoUnit::Centimeter).fromUserValue(2.0), i18n("Height"));
-    m_backgroundColor = new KoProperty::Property("background-color", Qt::white, i18n("Background Color"));
+    m_height = new KoProperty::Property("height", KoUnit(KoUnit::Centimeter).fromUserValue(2.0), tr("Height"));
+    m_backgroundColor = new KoProperty::Property("background-color", QColor(Qt::white), tr("Background Color"));
     m_height->setOption("unit", "cm");
     if (!elemSource.isNull())
         m_height->setValue(KoUnit::parseValue(elemSource.attribute("svg:height", "2.0cm")));

@@ -24,8 +24,6 @@
 #include "KoRuler.h"
 
 #include "KoRuler_p.h"
-#include <KoToolBase.h>
-#include <KoToolManager.h>
 
 #include <klocale.h>
 #include <kdebug.h>
@@ -36,7 +34,7 @@
 #include <QMenu>
 #include <QMouseEvent>
 
-#include <KoViewConverter.h>
+#include "KoViewConverter.h"
 
 // the distance in pixels of a mouse position considered outside the rule
 static const int OutsideRulerThreshold = 20;
@@ -1325,16 +1323,4 @@ bool KoRuler::removeHotSpot(int id)
         }
     }
     return false;
-}
-
-void KoRuler::createGuideToolConnection(KoCanvasBase *canvas)
-{
-    Q_ASSERT(canvas);
-    KoToolBase *tool = KoToolManager::instance()->toolById(canvas, QLatin1String("GuidesTool_ID"));
-    if (tool == 0) {
-        kWarning(30003) << "No guides tool found, skipping connection";
-        return;
-    }
-    connect(this, SIGNAL(guideLineCreated(Qt::Orientation,qreal)),
-        tool, SLOT(createGuideLine(Qt::Orientation,qreal)));
 }

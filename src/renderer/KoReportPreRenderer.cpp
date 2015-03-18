@@ -19,21 +19,22 @@
 
 #include "KoReportPreRenderer.h"
 #include "KoReportPreRenderer_p.h"
-#include "renderobjects.h"
-#include "KoReportData.h"
+#include "KoReportASyncItemManager.h"
+
+#include "common/renderobjects.h"
+#include "common/KoReportData.h"
+#include "common/KoReportItemBase.h"
+#include "common/krreportdata.h"
+#include "common/krdetailsectiondata.h"
+#include "common/labelsizeinfo.h"
+#include "scripting/krscripthandler.h"
+#include "calligra/KoPageFormat.h"
+
+#include <kdebug.h>
 
 #include <QFontMetrics>
-#include <labelsizeinfo.h>
-#include <KoPageFormat.h>
-#include <kdebug.h>
-#include <KoDpi.h>
-
-#include <KoReportItemBase.h>
-
-#include "scripting/krscripthandler.h"
-#include <krreportdata.h>
-#include <krdetailsectiondata.h>
-#include "KoReportASyncItemManager.h"
+#include <QScreen>
+#include <QApplication>
 
 KoReportPreRendererPrivate::KoReportPreRendererPrivate()
 {
@@ -48,7 +49,7 @@ KoReportPreRendererPrivate::KoReportPreRendererPrivate()
     m_maxHeight = m_maxWidth = 0.0;
     m_kodata = 0;
     asyncManager = new KoReportASyncItemManager(this);
-    
+
     connect(asyncManager, SIGNAL(finished()), this, SLOT(asyncItemsFinished()));
 }
 
@@ -240,7 +241,7 @@ void KoReportPreRendererPrivate::renderDetailSection(KRDetailSectionData & detai
                                             createNewPage();
                                             m_kodata->moveNext();
                                         }
-                                        
+
                                         if (!keys[i].isEmpty())
                                             keyValues[i] = m_kodata->value(m_kodata->fieldNumber(keys[i])).toString();
 
@@ -278,10 +279,11 @@ void KoReportPreRendererPrivate::renderDetailSection(KRDetailSectionData & detai
 
 qreal KoReportPreRendererPrivate::renderSectionSize(const KRSectionData & sectionData)
 {
-    qreal intHeight = POINT_TO_INCH(sectionData.height()) * KoDpi::dpiY();
+    QScreen *srn = QApplication::screens().at(0);
+    qreal intHeight = POINT_TO_INCH(sectionData.height()) * srn->logicalDotsPerInchX();
 
     int itemHeight = 0;
-    
+
     if (sectionData.objects().count() == 0)
         return intHeight;
 
@@ -289,13 +291,13 @@ qreal KoReportPreRendererPrivate::renderSectionSize(const KRSectionData & sectio
     foreach(KoReportItemBase *ob, objects) {
         QPointF offset(m_leftMargin, m_yOffset);
         QVariant itemData = m_kodata->value(ob->itemDataSource());
-        
+
         //ASync objects cannot alter the section height
         KoReportASyncItemBase *async_ob = qobject_cast<KoReportASyncItemBase*>(ob);
-        
-        if (!async_ob) { 
+
+        if (!async_ob) {
             itemHeight = ob->renderSimpleData(0, 0, offset, itemData, m_scriptHandler);
-           
+
             if (itemHeight > intHeight) {
                 intHeight = itemHeight;
             }
@@ -307,7 +309,9 @@ qreal KoReportPreRendererPrivate::renderSectionSize(const KRSectionData & sectio
 
 qreal KoReportPreRendererPrivate::renderSection(const KRSectionData & sectionData)
 {
-    qreal sectionHeight = POINT_TO_INCH(sectionData.height()) * KoDpi::dpiY();
+    QScreen *srn = QApplication::screens().at(0);
+    qreal sectionHeight = POINT_TO_INCH(sectionData.height()) * srn->logicalDotsPerInchX();
+
     int itemHeight = 0;
     //kDebug() << "Name: " << sectionData.name() << " Height: " << sectionHeight
     //         << "Objects: " << sectionData.objects().count();
@@ -402,7 +406,10 @@ void KoReportPreRenderer::setName(const QString &n)
 
 ORODocument* KoReportPreRenderer::generate()
 {
-    //kDebug();
+    QScreen *srn = QApplication::screens().at(0);
+    int dpiX = srn->logicalDotsPerInchX();
+    int dpiY = srn->logicalDotsPerInchY();
+
     if (d == 0 || !d->m_valid || d->m_reportData == 0 || d->m_kodata == 0)
         return 0;
 
@@ -458,8 +465,8 @@ ORODocument* KoReportPreRenderer::generate()
             d->m_maxHeight = KoPageFormat::height(KoPageFormat::formatFromString(d->m_reportData->page.getPageSize()), KoPageFormat::Portrait);
 
             KoUnit pageUnit(KoUnit::Millimeter);
-            d->m_maxWidth = KoUnit::toInch(pageUnit.fromUserValue(d->m_maxWidth)) * KoDpi::dpiX();
-            d->m_maxHeight = KoUnit::toInch(pageUnit.fromUserValue(d->m_maxHeight)) * KoDpi::dpiY();
+            d->m_maxWidth = KoUnit::toInch(pageUnit.fromUserValue(d->m_maxWidth)) * dpiX;
+            d->m_maxHeight = KoUnit::toInch(pageUnit.fromUserValue(d->m_maxHeight)) * dpiY;
         }
     }
 
@@ -579,7 +586,7 @@ ORODocument* KoReportPreRenderer::generate()
 
         tb->setText(d->m_scriptHandler->evaluate(tb->text()).toString());
     }
-    
+
     d->asyncManager->startRendering();
 
     d->m_scriptHandler->displayErrors();

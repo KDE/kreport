@@ -20,11 +20,11 @@
 #ifndef DETAILGROUPSECTIONDIALOG_H
 #define DETAILGROUPSECTIONDIALOG_H
 
-#include <kdialog.h>
+#include <QDialog>
 
 #include <ui_detailgroupsectiondialog.h>
 
-class DetailGroupSectionDialog : public KDialog, public Ui::DetailGroupSectionDialog
+class DetailGroupSectionDialog : public QDialog, public Ui::DetailGroupSectionDialog
 {
     Q_OBJECT
 

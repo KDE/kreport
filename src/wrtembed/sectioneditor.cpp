@@ -24,15 +24,15 @@
 #include "reportsectiondetail.h"
 #include "detailgroupsectiondialog.h"
 #include "reportsectiondetailgroup.h"
-#include <KoIcon.h>
-// KDE
-#include <kpushbutton.h>
-#include <klocalizedstring.h>
+#include <QIcon>
 // Qt
 #include <QVariant>
 #include <QComboBox>
 #include <QLineEdit>
 #include <QMessageBox>
+#include <QDialogButtonBox>
+#include <QVBoxLayout>
+#include <QPushButton>
 
 enum {
     KeyRole = Qt::UserRole
@@ -53,25 +53,38 @@ static inline bool isEditorHelperField(const QString &key)
  *  true to construct a modal dialog.
  */
 SectionEditor::SectionEditor(QWidget* parent)
-  : KDialog(parent)
+  : QDialog(parent)
 {
-    setButtons(Close);
-    setCaption(i18n("Section Editor"));
+    //TODO check section editor
+    //setButtons(Close);
+    //setCaption(i18n("Section Editor"));
+
+    auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Close);
+    auto mainLayout = new QVBoxLayout(this);
+    auto closeButton = buttonBox->button(QDialogButtonBox::Close);
+
+    closeButton->setDefault(true);
+    closeButton->setShortcut(Qt::CTRL | Qt::Key_Return);
+    connect(buttonBox, SIGNAL(accepted()), this, SLOT(accept()));
 
     QWidget *widget = new QWidget(this);
     m_ui.setupUi(widget);
-    m_btnAdd = new KPushButton(koIcon("list-add"), i18n("Add..."), this);
+    m_btnAdd = new QPushButton(QIcon::fromTheme("list-add"), tr("Add..."), this);
     m_ui.lGroupSectionsButtons->addWidget(m_btnAdd);
-    m_btnEdit = new KPushButton(koIcon("document-edit"), i18n("Edit..."), this);
+    m_btnEdit = new QPushButton(QIcon::fromTheme("document-edit"), tr("Edit..."), this);
     m_ui.lGroupSectionsButtons->addWidget(m_btnEdit);
-    m_btnRemove = new KPushButton(koIcon("list-remove"), i18n("Delete"), this);
+    m_btnRemove = new QPushButton(QIcon::fromTheme("list-remove"), tr("Delete"), this);
     m_ui.lGroupSectionsButtons->addWidget(m_btnRemove);
-    m_btnMoveUp = new KPushButton(koIcon("arrow-up"), i18n("Move Up"), this);
+    m_btnMoveUp = new QPushButton(QIcon::fromTheme("arrow-up"), tr("Move Up"), this);
     m_ui.lGroupSectionsButtons->addWidget(m_btnMoveUp);
-    m_btnMoveDown = new KPushButton(koIcon("arrow-down"), i18n("Move Down"), this);
+    m_btnMoveDown = new QPushButton(QIcon::fromTheme("arrow-down"), tr("Move Down"), this);
     m_ui.lGroupSectionsButtons->addWidget(m_btnMoveDown);
     m_ui.lGroupSectionsButtons->addStretch();
-    setMainWidget(widget);
+
+    mainLayout->addWidget(widget);
+    mainLayout->addWidget(buttonBox);
+
+    //setMainWidget(widget);
 
     // signals and slots connections
     connect(m_ui.cbReportHeader, SIGNAL(toggled(bool)), this, SLOT(cbReportHeader_toggled(bool)));
@@ -303,8 +316,8 @@ bool SectionEditor::editDetailGroup(ReportSectionDetailGroup * rsdg)
     }
     dgsd->cbColumn->setCurrentIndex(indexOfCurrentColumn);
 
-    dgsd->cbSort->addItem(i18n("Ascending"), Qt::AscendingOrder);
-    dgsd->cbSort->addItem(i18n("Descending"), Qt::DescendingOrder);
+    dgsd->cbSort->addItem(tr("Ascending"), Qt::AscendingOrder);
+    dgsd->cbSort->addItem(tr("Descending"), Qt::DescendingOrder);
     dgsd->cbSort->setCurrentIndex(dgsd->cbSort->findData(rsdg->sort()));
 
     dgsd->breakAfterFooter->setChecked(rsdg->pageBreak() == ReportSectionDetailGroup::BreakAfterGroupFooter);

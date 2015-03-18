@@ -21,9 +21,10 @@
 #ifndef __KOREPORTDESIGNERITEMTEXT_H__
 #define __KOREPORTDESIGNERITEMTEXT_H__
 
-#include <KoReportDesignerItemRectBase.h>
-#include <koproperty/Property.h>
+#include "wrtembed/KoReportDesignerItemRectBase.h"
 #include "KoReportItemText.h"
+
+#include <kproperty/Property.h>
 
 class KoReportDesignerItemBase;
 
@@ -48,7 +49,7 @@ protected:
 private:
     QRect getTextRect() const;
     void init(QGraphicsScene*, KoReportDesigner*);
-    
+
 private Q_SLOTS:
     void slotPropertyChanged(KoProperty::Set &, KoProperty::Property &);
 };

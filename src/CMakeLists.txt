@@ -1,23 +1,21 @@
-#make it a project so cmake spits out a codeblocks project
-#project(reports)
+cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
+project(KReport)
 
-if(KDE4_BUILD_TESTS)
-    # only with this definition will the KOREPORT_TEST_EXPORT macro do something
-    add_definitions(-DCOMPILING_TESTS)
-endif(KDE4_BUILD_TESTS)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+list(APPEND CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
 
-add_subdirectory(pics)
-add_subdirectory(tests)
+find_package(Qt5Widgets REQUIRED)
+find_package(Qt5Xml REQUIRED)
+find_package(Qt5PrintSupport REQUIRED)
+find_package(KF5WidgetsAddons REQUIRED)
+find_package(KF5Kross REQUIRED)
 
-include_directories(
-    ${CMAKE_SOURCE_DIR}/libs/widgets
-    ${FLAKE_INCLUDES}
-    ${KOREPORT_INCLUDES}
-    ${QT_INCLUDES}
-)
+#add_subdirectory(pics)
+#add_subdirectory(tests)
 
 #build a shared library
-set(koreport_LIB_SRCS
+set(kreport_LIB_SRCS
     common/krutils.cpp
     common/krpos.cpp
     common/krsize.cpp
@@ -31,9 +29,11 @@ set(koreport_LIB_SRCS
     common/KoReportPluginInterface.cpp
     common/KoReportItemLine.cpp
     common/renderobjects.cpp
-    common/KoReportPluginManager.cpp
-    common/KoReportPluginInfo.cpp
+    #common/KoReportPluginManager.cpp
+    #common/KoReportPluginInfo.cpp
     common/KoReportData.cpp
+    common/KoPageFormat.cpp
+    common/KoUnit.cpp
 
     renderer/KoReportPrintRenderer.cpp
     renderer/KoReportPreRenderer.cpp
@@ -47,25 +47,25 @@ set(koreport_LIB_SRCS
     renderer/KoReportRendererBase.cpp
     renderer/KoReportPage.cpp
 
-    renderer/scripting/krscripthandler.cpp
-    renderer/scripting/krscriptconstants.cpp
-    renderer/scripting/krscriptdebug.cpp
-    renderer/scripting/krscriptdraw.cpp
-    renderer/scripting/krscriptreport.cpp
-    renderer/scripting/krscriptsection.cpp
-    renderer/scripting/krscriptline.cpp
+    #renderer/scripting/krscripthandler.cpp
+    #renderer/scripting/krscriptconstants.cpp
+    #renderer/scripting/krscriptdebug.cpp
+    #renderer/scripting/krscriptdraw.cpp
+    #renderer/scripting/krscriptreport.cpp
+    #renderer/scripting/krscriptsection.cpp
+    #renderer/scripting/krscriptline.cpp
 
-    renderer/odtframe/KoOdtFrameReportDocument.cpp
-    renderer/odtframe/KoOdtFrameReportCheckBox.cpp
-    renderer/odtframe/KoOdtFrameReportImage.cpp
-    renderer/odtframe/KoOdtFrameReportTextBox.cpp
-    renderer/odtframe/KoOdtFrameReportLine.cpp
-    renderer/odtframe/KoOdtFrameReportPicture.cpp
-    renderer/odtframe/KoOdtFrameReportPrimitive.cpp
+    #renderer/odtframe/KoOdtFrameReportDocument.cpp
+    #renderer/odtframe/KoOdtFrameReportCheckBox.cpp
+    #renderer/odtframe/KoOdtFrameReportImage.cpp
+    #renderer/odtframe/KoOdtFrameReportTextBox.cpp
+    #renderer/odtframe/KoOdtFrameReportLine.cpp
+    #renderer/odtframe/KoOdtFrameReportPicture.cpp
+    #renderer/odtframe/KoOdtFrameReportPrimitive.cpp
 
-    renderer/ods/KoSimpleOdsDocument.cpp
-    renderer/ods/KoSimpleOdsSheet.cpp
-    renderer/ods/KoSimpleOdsCell.cpp
+    #renderer/ods/KoSimpleOdsDocument.cpp
+    #renderer/ods/KoSimpleOdsSheet.cpp
+    #renderer/ods/KoSimpleOdsCell.cpp
 
     wrtembed/detailgroupsectiondialog.cpp
     wrtembed/KoReportDesignerItemBase.cpp
@@ -79,12 +79,17 @@ set(koreport_LIB_SRCS
     wrtembed/KoReportDesigner.cpp
     wrtembed/reportpropertiesbutton.cpp
     wrtembed/sectioneditor.cpp
+    wrtembed/KoDpi.cpp
+    wrtembed/KoRuler.cpp
+    wrtembed/KoZoomHandler.cpp
+    wrtembed/KoViewConverter.cpp
+    wrtembed/KoZoomMode.cpp
 
     items/label/KoReportItemLabel.cpp
     items/label/KoReportDesignerItemLabel.cpp
     items/label/krscriptlabel.cpp
     items/label/KoReportLabelPlugin.cpp
-    items/label/BoundedTextItem.cpp 
+    items/label/BoundedTextItem.cpp
 
     items/check/KoReportItemCheck.cpp
     items/check/KoReportDesignerItemCheck.cpp
@@ -105,23 +110,28 @@ set(koreport_LIB_SRCS
     items/text/KoReportDesignerItemText.cpp
     items/text/krscripttext.cpp
     items/text/KoReportTextPlugin.cpp
-    )
+)
 
-kde4_add_ui_files(koreport_LIB_SRCS wrtembed/detailgroupsectiondialog.ui wrtembed/sectioneditor.ui )
+qt5_wrap_ui(kreport_UI_HEADERS wrtembed/detailgroupsectiondialog.ui wrtembed/sectioneditor.ui)
 
-kde4_add_library(koreport SHARED ${koreport_LIB_SRCS})
+add_library(kreport SHARED ${kreport_LIB_SRCS} ${kreport_UI_HEADERS})
 
-target_link_libraries(koreport
+qt5_use_modules(kreport Widgets Xml PrintSupport)
+
+target_link_libraries(kreport
   ${KOPROPERTY_LIBS}
   ${CALLIGRADB_LIBS} # ONLY FOR KexiPluginLoader, TODO: remove
   ${KDE4_KROSSCORE_LIBS}
+  KF5::WidgetsAddons
+  KF5::KrossCore KF5::KrossUi
+  KF5::KIOCore KF5::KIOFileWidgets KF5::KIOWidgets KF5::KIONTLM
 )
 
-target_link_libraries(koreport LINK_INTERFACE_LIBRARIES
-  ${KOPROPERTY_LIBS} ${KDE4_KROSSCORE_LIBS} kowidgets)
+#target_link_libraries(koreport LINK_INTERFACE_LIBRARIES
+#  ${KOPROPERTY_LIBS} ${KDE4_KROSSCORE_LIBS} kowidgets)
 
-set_target_properties(koreport PROPERTIES VERSION ${GENERIC_CALLIGRA_LIB_VERSION} SOVERSION ${GENERIC_CALLIGRA_LIB_SOVERSION} )
-install(TARGETS koreport  ${INSTALL_TARGETS_DEFAULT_ARGS})
+set_target_properties(kreport PROPERTIES VERSION ${GENERIC_CALLIGRA_LIB_VERSION} SOVERSION ${GENERIC_CALLIGRA_LIB_SOVERSION})
+install(TARGETS kreport LIBRARY DESTINATION lib)
 
-install(FILES  koreport_itemplugin.desktop  DESTINATION ${SERVICETYPES_INSTALL_DIR})
-
+#TODO
+#install(FILES  koreport_itemplugin.desktop  DESTINATION ${SERVICETYPES_INSTALL_DIR})

@@ -21,12 +21,10 @@
 #ifndef KOREPORTPLUGININTERFACE_H
 #define KOREPORTPLUGININTERFACE_H
 
-#include <db/pluginloader.h>
+//#include <db/pluginloader.h>
 
-#include <KoReportDesigner.h>
+#include "wrtembed/KoReportDesigner.h"
 #include <QGraphicsScene>
-#include <klocalizedstring.h>
-#include <kpluginfactory.h>
 
 class KoReportPluginInfo;
 
@@ -35,9 +33,9 @@ class KOREPORT_EXPORT KoReportPluginInterface : public QObject
     Q_OBJECT
     public:
         explicit KoReportPluginInterface(QObject *parent = 0, const QVariantList &args = QVariantList());
-    
+
         virtual ~KoReportPluginInterface();
-        
+
         virtual QObject* createDesignerInstance(KoReportDesigner *, QGraphicsScene * scene, const QPointF &pos) = 0;
         virtual QObject* createDesignerInstance(QDomNode & element, KoReportDesigner *, QGraphicsScene * scene) = 0;
         virtual QObject* createRendererInstance(QDomNode & element) = 0;
@@ -48,12 +46,12 @@ class KOREPORT_EXPORT KoReportPluginInterface : public QObject
 
     private:
         KoReportPluginInfo *m_pluginInfo;
-        
+
 };
 
 //! Implementation of driver's static version information and plugin entry point.
 //! @todo better versioning
-#define K_EXPORT_KOREPORT_ITEMPLUGIN( class_name, internal_name ) \
-    KEXI_EXPORT_PLUGIN( "koreport", class_name, internal_name, 0, 0, 1 )
+//#define K_EXPORT_KOREPORT_ITEMPLUGIN( class_name, internal_name ) \
+//    KEXI_EXPORT_PLUGIN( "koreport", class_name, internal_name, 0, 0, 1 )
 
 #endif // KOREPORTPLUGININTERFACE_H

@@ -18,8 +18,8 @@
  */
 
 #include "KoReportDesignerItemImage.h"
-#include <KoReportDesignerItemBase.h>
-#include <KoReportDesigner.h>
+#include "wrtembed/KoReportDesignerItemBase.h"
+#include "wrtembed/KoReportDesigner.h"
 
 #include <QImageWriter>
 #include <QGraphicsScene>
@@ -27,12 +27,10 @@
 #include <QBuffer>
 #include <QDomDocument>
 #include <QPainter>
-#include <kdebug.h>
-#include <klocalizedstring.h>
 
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
-#include <koproperty/EditorView.h>
+#include <kproperty/Property.h>
+#include <kproperty/Set.h>
+#include <kproperty/EditorView.h>
 
 //
 // ReportEntitiesImage

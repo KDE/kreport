@@ -19,10 +19,10 @@
 #define KRSCRIPTHANDLER_H
 #include <QObject>
 #include <QString>
-#include <krsectiondata.h>
-#include <kross/core/action.h>
+#include "common/krsectiondata.h"
+//TODO Scripting
 #include "krscriptconstants.h"
-#include "KoReportData.h"
+#include "common/KoReportData.h"
 
 class KRScriptFunctions;
 class KRScriptDebug;
@@ -75,7 +75,7 @@ private:
     QString m_source;
     KoReportReportData  *m_reportData;
 
-    Kross::Action* m_action;
+    //TODO IKross::Action* m_action;
 
     QMap<QString, QVariant> m_groups;
     QMap<KRSectionData*, Scripting::Section*> m_sectionMap;

@@ -18,7 +18,8 @@
 
 #include "krsize.h"
 #include <klocale.h>
-#include <KoDpi.h>
+#include <QScreen>
+#include <QApplication>
 
 KRSize::KRSize(const KoUnit& unit)
 {
@@ -35,8 +36,10 @@ void KRSize::setSceneSize(const QSizeF& s, UpdatePropertyFlag update)
 {
     qreal w, h;
 
-    w = INCH_TO_POINT(s.width() / KoDpi::dpiX());
-    h = INCH_TO_POINT(s.height() / KoDpi::dpiY());
+    QScreen *srn = QApplication::screens().at(0);
+
+    w = INCH_TO_POINT(s.width() / srn->logicalDotsPerInchX());
+    h = INCH_TO_POINT(s.height() / srn->logicalDotsPerInchY());
     m_pointSize.setWidth(w);
     m_pointSize.setHeight(h);
 
@@ -51,7 +54,7 @@ void KRSize::setUnitSize(const QSizeF& s, UpdatePropertyFlag update)
     h = m_unit.fromUserValue(s.height());
     m_pointSize.setWidth(w);
     m_pointSize.setHeight(h);
-    
+
     if (update == UpdateProperty)
         m_property->setValue(toUnit());
 }
@@ -79,8 +82,9 @@ QSizeF KRSize::toPoint() const
 QSizeF KRSize::toScene() const
 {
     qreal w, h;
-    w = POINT_TO_INCH(m_pointSize.width()) * KoDpi::dpiX();
-    h = POINT_TO_INCH(m_pointSize.height()) * KoDpi::dpiY();
+    QScreen *srn = QApplication::screens().at(0);
+    w = POINT_TO_INCH(m_pointSize.width()) * srn->logicalDotsPerInchX();
+    h = POINT_TO_INCH(m_pointSize.height()) * srn->logicalDotsPerInchY();
     return QSizeF(w, h);
 }
 

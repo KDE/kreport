@@ -218,7 +218,7 @@
      </property>
      <layout class="QHBoxLayout">
       <item>
-       <widget class="KListWidget" name="lbGroups"/>
+       <widget class="QListWidget" name="lbGroups"/>
       </item>
       <item>
        <layout class="QVBoxLayout" name="lGroupSectionsButtons">
@@ -232,13 +232,6 @@
    </item>
   </layout>
  </widget>
-  <customwidgets>
-  <customwidget>
-   <class>KListWidget</class>
-   <extends>QListWidget</extends>
-   <header>KListWidget</header>
-  </customwidget>
- </customwidgets>
  <tabstops>
   <tabstop>cbReportHeader</tabstop>
   <tabstop>cbReportFooter</tabstop>

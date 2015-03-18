@@ -21,15 +21,14 @@
 #ifndef KOREPORTTEXTPLUGIN_H
 #define KOREPORTTEXTPLUGIN_H
 
-#include <KoReportPluginInterface.h>
-
+#include "common/KoReportPluginInterface.h"
 
 class KoReportTextPlugin : public KoReportPluginInterface
 {
     public:
     explicit KoReportTextPlugin(QObject *parent, const QVariantList &args = QVariantList());
     virtual ~KoReportTextPlugin();
-    
+
     virtual QObject* createRendererInstance(QDomNode& element);
     virtual QObject* createDesignerInstance(QDomNode& element, KoReportDesigner* , QGraphicsScene* scene);
     virtual QObject* createDesignerInstance(KoReportDesigner* , QGraphicsScene* scene, const QPointF& pos);

@@ -23,9 +23,8 @@
 #ifndef koRuler_h
 #define koRuler_h
 
-
-#include "kowidgets_export.h"
-#include <KoUnit.h>
+#include "koreport_export.h"
+#include "KoUnit.h"
 
 #include <QWidget>
 #include <QTextOption>
@@ -39,7 +38,7 @@ class KoRulerPrivate;
 /**
  * Decorator widget to draw a single ruler around a canvas.
  */
-class KOWIDGETS_EXPORT KoRuler : public QWidget
+class KOREPORT_EXPORT KoRuler : public QWidget
 {
 Q_OBJECT
 public:

@@ -18,10 +18,11 @@
 
 #include "KoReportKSpreadRenderer.h"
 
-#include <ods/KoSimpleOdsDocument.h>
-#include <ods/KoSimpleOdsCell.h>
-#include <ods/KoSimpleOdsSheet.h>
-#include "renderobjects.h"
+#include "ods/KoSimpleOdsDocument.h"
+#include "ods/KoSimpleOdsCell.h"
+#include "ods/KoSimpleOdsSheet.h"
+#include "common/renderobjects.h"
+
 #include <kdebug.h>
 
 KoReportKSpreadRenderer::KoReportKSpreadRenderer()

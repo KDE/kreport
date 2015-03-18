@@ -23,18 +23,18 @@
 //
 
 #include "reportscene.h"
-#include <reportpageoptions.h>
+#include "common/reportpageoptions.h"
 #include "KoReportDesignerItemRectBase.h"
 #include "KoReportDesigner.h"
+#include "common/labelsizeinfo.h"
+#include "calligra/KoPageFormat.h"
 
-#include <labelsizeinfo.h>
 #include <QPainter>
-#include <KoDpi.h>
+#include <QScreen>
+#include <QApplication>
 #include <kdebug.h>
-#include <KoPageFormat.h>
 #include <QGraphicsItem>
 #include <QGraphicsSceneMouseEvent>
-
 
 ReportScene::ReportScene(qreal w, qreal h, KoReportDesigner *rd)
         : QGraphicsScene(0, 0, w, h, rd)
@@ -42,19 +42,24 @@ ReportScene::ReportScene(qreal w, qreal h, KoReportDesigner *rd)
     m_rd = rd;
     m_minorSteps = 0;
 
+    QScreen *srn = QApplication::screens().at(0);
+
+    m_dpiX = srn->logicalDotsPerInchX();
+    m_dpiY = srn->logicalDotsPerInchY();
+
     if (m_unit.type() != m_rd->pageUnit().type()) {
         m_unit = m_rd->pageUnit();
         if (m_unit.type() == KoUnit::Cicero ||
             m_unit.type() == KoUnit::Pica ||
             m_unit.type() == KoUnit::Millimeter) {
-            m_majorX = POINT_TO_INCH(m_unit.fromUserValue(10)) * KoDpi::dpiX();
-            m_majorY = POINT_TO_INCH(m_unit.fromUserValue(10)) * KoDpi::dpiY();
+            m_majorX = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiX;
+            m_majorY = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiY;
         } else if (m_unit.type() == KoUnit::Point) {
-            m_majorX = POINT_TO_INCH(m_unit.fromUserValue(100)) * KoDpi::dpiX();
-            m_majorY = POINT_TO_INCH(m_unit.fromUserValue(100)) * KoDpi::dpiY();
+            m_majorX = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiX;
+            m_majorY = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiY;
         } else {
-            m_majorX = POINT_TO_INCH(m_unit.fromUserValue(1)) * KoDpi::dpiX();
-            m_majorY = POINT_TO_INCH(m_unit.fromUserValue(1)) * KoDpi::dpiY();
+            m_majorX = POINT_TO_INCH(m_unit.fromUserValue(1)) * m_dpiX;
+            m_majorY = POINT_TO_INCH(m_unit.fromUserValue(1)) * m_dpiY;
         }
     }
 }
@@ -75,14 +80,14 @@ void ReportScene::drawBackground(QPainter* painter, const QRectF & clip)
             if (m_unit.type() == KoUnit::Cicero ||
                 m_unit.type() == KoUnit::Pica ||
                 m_unit.type() == KoUnit::Millimeter) {
-                m_majorX = POINT_TO_INCH(m_unit.fromUserValue(10)) * KoDpi::dpiX();
-                m_majorY = POINT_TO_INCH(m_unit.fromUserValue(10)) * KoDpi::dpiY();
+                m_majorX = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiX;
+                m_majorY = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiY;
             } else if (m_unit.type() == KoUnit::Point) {
-                m_majorX = POINT_TO_INCH(m_unit.fromUserValue(100)) * KoDpi::dpiX();
-                m_majorY = POINT_TO_INCH(m_unit.fromUserValue(100)) * KoDpi::dpiY();
+                m_majorX = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiX;
+                m_majorY = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiY;
             } else {
-                m_majorX = POINT_TO_INCH(m_unit.fromUserValue(1)) * KoDpi::dpiX();
-                m_majorY = POINT_TO_INCH(m_unit.fromUserValue(1)) * KoDpi::dpiY();
+                m_majorX = POINT_TO_INCH(m_unit.fromUserValue(1)) * m_dpiX;
+                m_majorY = POINT_TO_INCH(m_unit.fromUserValue(1)) * m_dpiY;
             }
 
         }
@@ -131,15 +136,15 @@ void ReportScene::mousePressEvent(QGraphicsSceneMouseEvent * e)
     // clear the selection if Shift Key has not been pressed and it's a left mouse button   and
     // if the right mouse button has been pressed over an item which is not part of selected items
     if (((e->modifiers() & Qt::ShiftModifier) == 0 && e->button() == Qt::LeftButton)   ||
-            (!(selectedItems().contains(itemAt(e->scenePos()))) && e->button() == Qt::RightButton))
+            (!(selectedItems().contains(itemAt(e->scenePos(), QTransform()))) && e->button() == Qt::RightButton))
         clearSelection();
 
     //This will be caught by the section to display its properties, if an item is under the cursor then they will display their properties
-    QGraphicsItem* itemUnderCursor = itemAt(e->scenePos());
+    QGraphicsItem* itemUnderCursor = itemAt(e->scenePos(), QTransform());
     if (!itemUnderCursor) {
         emit clicked();
     }
-    
+
     KoReportDesignerItemRectBase *rectUnderCursor = qgraphicsitem_cast< KoReportDesignerItemRectBase* >(itemUnderCursor);
     if (itemUnderCursor && !rectUnderCursor) {
         rectUnderCursor = qgraphicsitem_cast< KoReportDesignerItemRectBase* >(itemUnderCursor->parentItem());
@@ -168,14 +173,14 @@ QPointF ReportScene::gridPoint(const QPointF& p)
             if (m_unit.type() == KoUnit::Cicero ||
                 m_unit.type() == KoUnit::Pica ||
                 m_unit.type() == KoUnit::Millimeter) {
-                m_majorX = POINT_TO_INCH(m_unit.fromUserValue(10)) * KoDpi::dpiX();
-                m_majorY = POINT_TO_INCH(m_unit.fromUserValue(10)) * KoDpi::dpiY();
+                m_majorX = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiX;
+                m_majorY = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiY;
             } else if (m_unit.type() == KoUnit::Point) {
-                m_majorX = POINT_TO_INCH(m_unit.fromUserValue(100)) * KoDpi::dpiX();
-                m_majorY = POINT_TO_INCH(m_unit.fromUserValue(100)) * KoDpi::dpiY();
+                m_majorX = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiX;
+                m_majorY = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiY;
             } else {
-                m_majorX = POINT_TO_INCH(m_unit.fromUserValue(1)) * KoDpi::dpiX();
-                m_majorY = POINT_TO_INCH(m_unit.fromUserValue(1)) * KoDpi::dpiY();
+                m_majorX = POINT_TO_INCH(m_unit.fromUserValue(1)) * m_dpiX;
+                m_majorY = POINT_TO_INCH(m_unit.fromUserValue(1)) * m_dpiY;
             }
 
         }
@@ -190,7 +195,7 @@ QPointF ReportScene::gridPoint(const QPointF& p)
 void ReportScene::focusOutEvent(QFocusEvent * focusEvent)
 {
     exitInlineEditingModeInItems(0);
-    
+
     emit lostFocus();
     QGraphicsScene::focusOutEvent(focusEvent);
 }

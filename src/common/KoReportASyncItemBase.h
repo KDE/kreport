@@ -21,7 +21,7 @@
 #ifndef KOREPORTASYNCITEMBASE_H
 #define KOREPORTASYNCITEMBASE_H
 
-#include <KoReportItemBase.h>
+#include "KoReportItemBase.h"
 
 class KOREPORT_EXPORT KoReportASyncItemBase : public KoReportItemBase
 {

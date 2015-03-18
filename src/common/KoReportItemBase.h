@@ -19,7 +19,7 @@
 #ifndef KOREPORTITEMBASE_H
 #define KOREPORTITEMBASE_H
 
-#include <koproperty/Property.h>
+#include <kproperty/Property.h>
 #include <QObject>
 
 #include <QDomElement>
@@ -73,7 +73,7 @@ public:
 
     KoReportItemBase();
     virtual ~KoReportItemBase();
-    
+
     /**
     @brief Return the item type as a string.  Required by all items
     @return Item type
@@ -122,13 +122,13 @@ protected:
     KoProperty::Property *m_name;
     KRPos m_pos;
     KRSize m_size;
-    
+
     QString m_oldName;
 
     void addDefaultProperties();
 
     virtual void createProperties() = 0;
-    
+
     static bool parseReportRect(const QDomElement &, KRPos *pos, KRSize *siz);
     static bool parseReportTextStyleData(const QDomElement &, KRTextStyleData &);
     static bool parseReportLineStyleData(const QDomElement &, KRLineStyleData &);

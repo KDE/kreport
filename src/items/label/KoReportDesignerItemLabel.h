@@ -20,14 +20,15 @@
 #ifndef __KOREPORTDESIGNERITEMLABEL_H__
 #define __KOREPORTDESIGNERITEMLABEL_H__
 
-#include <QGraphicsRectItem>
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
 #include "KoReportItemLabel.h"
-#include <KoReportDesignerItemRectBase.h>
+#include "wrtembed/KoReportDesignerItemRectBase.h"
+#include "BoundedTextItem.h"
+
+#include <kproperty/Property.h>
+#include <kproperty/Set.h>
+#include <QGraphicsRectItem>
 #include <QGraphicsItem>
 #include <QGraphicsItemGroup>
-#include "BoundedTextItem.h"
 
 //
 // ReportEntityLabel
@@ -43,15 +44,15 @@ public:
     virtual void buildXML(QDomDocument & doc, QDomElement & parent);
     virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = 0);
     virtual KoReportDesignerItemLabel* clone();
-    
+
 public Q_SLOTS:
     virtual void enterInlineEditingMode();
     virtual void exitInlineEditingMode();
-    
+
 protected:
     virtual void mouseDoubleClickEvent ( QGraphicsSceneMouseEvent * event );
     virtual void keyReleaseEvent ( QKeyEvent * event );
-  
+
 private:
     void init(QGraphicsScene*, KoReportDesigner*);
     QRectF getTextRect() const;

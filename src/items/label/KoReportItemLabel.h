@@ -18,13 +18,13 @@
 #ifndef KOREPORTITEMLABEL_H
 #define KOREPORTITEMLABEL_H
 
-#include <KoReportItemBase.h>
+#include "common/KoReportItemBase.h"
+#include "common/krpos.h"
+#include "common/krsize.h"
+
 #include <QRect>
 #include <QPainter>
 #include <QDomDocument>
-#include <krpos.h>
-#include <krsize.h>
-
 
 namespace Scripting
 {
@@ -64,10 +64,10 @@ protected:
     void setText(const QString&);
     KRTextStyleData textStyle();
     KRLineStyleData lineStyle();
-    
+
 private:
     virtual void createProperties();
-    
+
     friend class Scripting::Label;
 };
 #endif

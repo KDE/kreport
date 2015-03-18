@@ -21,13 +21,13 @@
 #ifndef KOREPORTLABELPLUGIN_H
 #define KOREPORTLABELPLUGIN_H
 
-#include <KoReportPluginInterface.h>
+#include "common/KoReportPluginInterface.h"
 
 class KoReportLabelPlugin : public KoReportPluginInterface
 {
     public:
     explicit KoReportLabelPlugin(QObject *parent, const QVariantList &args = QVariantList());
-    
+
     virtual ~KoReportLabelPlugin();
 
     virtual QObject* createRendererInstance(QDomNode&);

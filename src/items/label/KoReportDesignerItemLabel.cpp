@@ -18,15 +18,13 @@
  */
 
 #include "KoReportDesignerItemLabel.h"
-#include <KoReportDesignerItemBase.h>
-#include <KoReportDesigner.h>
-#include "reportscene.h"
+#include "wrtembed/KoReportDesignerItemBase.h"
+#include "wrtembed/KoReportDesigner.h"
+#include "wrtembed/reportscene.h"
 
 #include <QDomDocument>
 #include <QPainter>
-#include <kdebug.h>
-#include <klocalizedstring.h>
-#include <koproperty/EditorView.h>
+#include <kproperty/EditorView.h>
 #include <QGraphicsScene>
 #include <QGraphicsSceneMouseEvent>
 #include <QTextCursor>
@@ -48,7 +46,7 @@ void KoReportDesignerItemLabel::init(QGraphicsScene *scene, KoReportDesigner *d)
 
     setZValue(Z);
     setFlag(ItemIsFocusable);
-    
+
     m_inlineEdit = new BoundedTextItem(this);
     m_inlineEdit->setVisible(false);
     m_inlineEdit->setFlag(ItemIsFocusable);
@@ -57,7 +55,7 @@ void KoReportDesignerItemLabel::init(QGraphicsScene *scene, KoReportDesigner *d)
     doc->setDocumentMargin(0);
     doc->setPlainText(text());
     m_inlineEdit->setDocument(doc);
-    
+
     connect(m_inlineEdit, SIGNAL(exitEditMode()), this, SLOT(exitInlineEditingMode()));
 }
 
@@ -69,7 +67,7 @@ KoReportDesignerItemLabel::KoReportDesignerItemLabel(KoReportDesigner* d, QGraph
     init(scene, d);
     setSceneRect(properRect(*d, getTextRect().width(), getTextRect().height()));
     m_name->setValue(m_reportDesigner->suggestEntityName(typeName()));
-    
+
     enterInlineEditingMode();
 }
 
@@ -107,11 +105,11 @@ void KoReportDesignerItemLabel::paint(QPainter* painter, const QStyleOptionGraph
     if (m_inlineEdit->isVisible()) {
         return;
     }
-    
+
     // store any values we plan on changing so we can restore them
     QFont f = painter->font();
     QPen  p = painter->pen();
-    
+
     painter->setFont(font());
     painter->setBackgroundMode(Qt::TransparentMode);
 
@@ -189,25 +187,25 @@ void KoReportDesignerItemLabel::enterInlineEditingMode()
         m_inlineEdit->setVisible(true);
         m_inlineEdit->setPlainText(text());
         m_inlineEdit->setFocus();
-        
+
         QTextCursor c = m_inlineEdit->textCursor();
         c.select(QTextCursor::Document);
         m_inlineEdit->setTextCursor(c);
-        
+
         m_inlineEdit->setFont(m_font->value().value<QFont>());
         m_inlineEdit->setDefaultTextColor(m_foregroundColor->value().value<QColor>());
         m_inlineEdit->setBackgroudColor(m_backgroundColor->value().value<QColor>());
         m_inlineEdit->setBackgroudOpacity(m_backgroundOpacity->value().toInt());
         m_inlineEdit->setForegroundColor(m_foregroundColor->value().value<QColor>());
         m_inlineEdit->setFont(m_font->value().value<QFont>());
-        
+
         update();
     }
 }
 
 void KoReportDesignerItemLabel::exitInlineEditingMode()
 {
-    if (m_inlineEdit->isVisible()) {        
+    if (m_inlineEdit->isVisible()) {
         m_inlineEdit->setVisible(false);
         setText(m_inlineEdit->toPlainText());
     }

@@ -21,11 +21,11 @@
 #ifndef KOREPORTPLUGINMANAGER_H
 #define KOREPORTPLUGINMANAGER_H
 
-#include <KoReportPluginInterface.h>
+#include "KoReportPluginInterface.h"
 #include <QAction>
 
 class KoReportPluginManagerPrivate;
- 
+
 class KoReportPluginManager : public QObject
 {
     Q_OBJECT
@@ -34,14 +34,14 @@ class KoReportPluginManager : public QObject
 
         KoReportPluginInterface* plugin(const QString& p) const;
         QList<QAction*> actions();
-        
+
     private:
         KoReportPluginManagerPrivate *const d;
 
         KoReportPluginManager();
         ~KoReportPluginManager();
         KoReportPluginManager(const KoReportPluginManager &);
-        KoReportPluginManager & operator=(const KoReportPluginManager &); 
+        KoReportPluginManager & operator=(const KoReportPluginManager &);
 };
 
 #endif // KOREPORTPLUGINMANAGER_H

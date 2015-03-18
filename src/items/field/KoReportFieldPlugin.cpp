@@ -21,18 +21,19 @@
 #include "KoReportFieldPlugin.h"
 #include "KoReportItemField.h"
 #include "KoReportDesignerItemField.h"
-#include "KoReportPluginInfo.h"
+#include "common/KoReportPluginInfo.h"
 #include "krscriptfield.h"
-#include <KoIcon.h>
+
+#include <QIcon>
 
 KoReportFieldPlugin::KoReportFieldPlugin(QObject *parent, const QVariantList &args) : KoReportPluginInterface(parent)
 {
     Q_UNUSED(args)
-    
+
     KoReportPluginInfo *info = new KoReportPluginInfo();
     info->setClassName("field");
-    info->setIcon(koIcon("edit-rename"));
-    info->setName(i18n("Field"));
+    info->setIcon(QIcon::fromTheme("edit-rename"));
+    info->setName(tr("Field"));
     info->setPriority(2);
     setInfo(info);
 }

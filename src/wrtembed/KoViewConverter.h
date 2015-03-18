@@ -20,7 +20,7 @@
 #ifndef KOVIEWCONVERTER_H
 #define KOVIEWCONVERTER_H
 
-#include "flake_export.h"
+#include "koreport_export.h"
 
 class QPointF;
 class QRectF;
@@ -37,7 +37,7 @@ class QSizeF;
  * The zoom level is expressed on a scale of 0.0 to 1.0 to infinite, where 1.0 is
  * 100%
  */
-class FLAKE_EXPORT KoViewConverter
+class KOREPORT_EXPORT KoViewConverter
 {
 public:
     KoViewConverter();

@@ -17,9 +17,9 @@
  */
 #ifndef KRSIZE_H
 #define KRSIZE_H
-#include <KoUnit.h>
+#include "calligra/KoUnit.h"
 #include <QSizeF>
-#include <koproperty/Property.h>
+#include <kproperty/Property.h>
 #include "koreport_export.h"
 
 /**

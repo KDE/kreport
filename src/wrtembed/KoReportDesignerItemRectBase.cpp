@@ -19,27 +19,31 @@
 
 #include "KoReportDesignerItemRectBase.h"
 #include "reportsceneview.h"
-#include <koproperty/Set.h>
-#include <koproperty/Property.h>
-#include <koproperty/EditorView.h>
-#include <QGraphicsSceneMouseEvent>
 #include "KoReportDesigner.h"
-#include <KoDpi.h>
-#include <kdebug.h>
-#include <krpos.h>
-#include <krsize.h>
+#include "common/krpos.h"
+#include "common/krsize.h"
 #include "reportscene.h"
+
+#include <kproperty/Set.h>
+#include <kproperty/Property.h>
+#include <kproperty/EditorView.h>
+#include <QGraphicsSceneMouseEvent>
+#include <QScreen>
+#include <QApplication>
+#include <kdebug.h>
 
 KoReportDesignerItemRectBase::KoReportDesignerItemRectBase(KoReportDesigner *r)
         : QGraphicsRectItem(), KoReportDesignerItemBase(r)
 {
-    m_dpiX = KoDpi::dpiX();
-    m_dpiY = KoDpi::dpiY();
+    QScreen *srn = QApplication::screens().at(0);
+
+    m_dpiX = srn->logicalDotsPerInchX();
+    m_dpiY = srn->logicalDotsPerInchY();
 
     m_ppos = 0;
     m_psize = 0;
     m_grabAction = 0;
-    setAcceptsHoverEvents(true);
+    setAcceptHoverEvents(true);
 
 #if QT_VERSION >= 0x040600
     setFlags(ItemIsSelectable | ItemIsMovable | ItemSendsGeometryChanges);
@@ -384,5 +388,5 @@ void KoReportDesignerItemBase::updateRenderText(const QString &itemDataSource, c
         } else {
             m_renderText = dataSourceAndObjectTypeName(itemDataSource, itemType);
         }
-    }  
+    }
 }

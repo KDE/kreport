@@ -22,7 +22,7 @@
 #define KOREPORTASYNCITEMMANAGER_H
 
 #include <QObject>
-#include "KoReportASyncItemBase.h"
+#include "common/KoReportASyncItemBase.h"
 #include <QQueue>
 
 class RenderData {
@@ -38,22 +38,21 @@ public:
 class KoReportASyncItemManager : public QObject
 {
     Q_OBJECT
-    
+
 public:
     explicit KoReportASyncItemManager(QObject *parent);
     virtual ~KoReportASyncItemManager();
-    
+
     void addItem(KoReportASyncItemBase *item, OROPage *page, OROSection *section, QPointF offset, QVariant data, KRScriptHandler *script);
-    
+
     void startRendering();
-    
+
 Q_SIGNALS:
     void finished();
-   
+
 private Q_SLOTS:
     void itemFinished();
-    
-   
+
 private:
     QQueue<RenderData*> m_renderList;
     QList<KoReportASyncItemBase*> m_itemList;

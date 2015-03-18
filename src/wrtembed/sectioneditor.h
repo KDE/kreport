@@ -23,7 +23,7 @@
 
 #include <ui_sectioneditor.h>
 // KDE
-#include <kdialog.h>
+#include <QDialog>
 // Qt
 #include <QSet>
 
@@ -32,7 +32,7 @@ class ReportSectionDetail;
 class ReportSectionDetailGroup;
 
 
-class SectionEditor : public KDialog
+class SectionEditor : public QDialog
 {
     Q_OBJECT
 
@@ -75,11 +75,11 @@ private:
 
 private:
     Ui::SectionEditor m_ui;
-    KPushButton *m_btnAdd;
-    KPushButton *m_btnEdit;
-    KPushButton *m_btnRemove;
-    KPushButton *m_btnMoveUp;
-    KPushButton *m_btnMoveDown;
+    QPushButton *m_btnAdd;
+    QPushButton *m_btnEdit;
+    QPushButton *m_btnRemove;
+    QPushButton *m_btnMoveUp;
+    QPushButton *m_btnMoveDown;
 
     KoReportDesigner *m_reportDesigner;
     ReportSectionDetail *m_reportSectionDetail;

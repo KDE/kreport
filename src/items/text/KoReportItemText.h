@@ -18,12 +18,13 @@
 #ifndef KOREPORTITEMTEXT_H
 #define KOREPORTITEMTEXT_H
 
-#include <KoReportItemBase.h>
+#include "common/KoReportItemBase.h"
+#include "common/krpos.h"
+#include "common/krsize.h"
+
 #include <QRect>
 #include <QPainter>
 #include <QDomDocument>
-#include <krpos.h>
-#include <krsize.h>
 
 namespace Scripting
 {
@@ -70,10 +71,10 @@ protected:
     void setBottomPadding(qreal bp);
     qreal bottomPadding() const;
 
-    
+
     KRTextStyleData textStyle();
     KRLineStyleData lineStyle();
-    
+
 private:
     virtual void createProperties();
 

@@ -21,10 +21,10 @@
 #define __KOREPORTDESIGNERITEMLINE_H__
 
 #include <QGraphicsLineItem>
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
+#include <kproperty/Property.h>
+#include <kproperty/Set.h>
 #include "KoReportDesignerItemBase.h"
-#include "KoReportItemLine.h"
+#include "common/KoReportItemLine.h"
 
 class KoReportDesigner;
 
@@ -44,7 +44,7 @@ public:
     virtual KoReportDesignerItemLine* clone();
 
     void setLineScene(QLineF);
-    
+
     virtual void move(const QPointF&);
 
 private:

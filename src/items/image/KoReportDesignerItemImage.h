@@ -20,11 +20,12 @@
 #ifndef __KOREPORTDESIGNERITEMIMAGE_H__
 #define __KOREPORTDESIGNERITEMIMAGE_H__
 
-#include <KoReportDesignerItemRectBase.h>
-#include <QImage>
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
+#include "wrtembed/KoReportDesignerItemRectBase.h"
 #include "KoReportItemImage.h"
+
+#include <QImage>
+#include <kproperty/Property.h>
+#include <kproperty/Set.h>
 
 //
 // ReportEntityImage

@@ -21,17 +21,17 @@
 #ifndef __REPORTSECTION_H__
 #define __REPORTSECTION_H__
 
+#include "common/krsectiondata.h"
+#include "reportscene.h"
+
 #include <QFrame>
 #include <QLabel>
 #include <QVBoxLayout>
 #include <QMouseEvent>
-#include <koproperty/Set.h>
-#include <koproperty/Property.h>
-#include <krsectiondata.h>
 #include <QGraphicsScene>
 
-#include "koreport_export.h"
-#include "reportscene.h"
++#include <kproperty/Set.h>
++#include <kproperty/Property.h>
 
 typedef QList<QGraphicsItem*> QGraphicsItemList;
 
@@ -97,6 +97,7 @@ protected:
 
 private:
     KRSectionData *m_sectionData;
+    int m_dpiY;
 
     friend class ReportSectionTitle;
 };
@@ -105,7 +106,7 @@ class ReportResizeBar : public QFrame
 {
     Q_OBJECT
 public:
-    explicit ReportResizeBar(QWidget * parent = 0, Qt::WFlags f = 0);
+    explicit ReportResizeBar(QWidget * parent = 0, Qt::WindowFlags f = 0);
 
 Q_SIGNALS:
     void barDragged(int delta);

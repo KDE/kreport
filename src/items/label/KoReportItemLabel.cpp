@@ -17,12 +17,12 @@
  */
 #include "KoReportItemLabel.h"
 
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
+#include <kproperty/Property.h>
+#include <kproperty/Set.h>
 #include <kdebug.h>
 #include <klocalizedstring.h>
 #include <kglobalsettings.h>
-#include "renderobjects.h"
+#include "common/renderobjects.h"
 
 KoReportItemLabel::KoReportItemLabel()
 {
@@ -43,7 +43,7 @@ KoReportItemLabel::KoReportItemLabel(QDomNode & element)
     m_verticalAlignment->setValue(element.toElement().attribute("report:vertical-align"));
 
     parseReportRect(element.toElement(), &m_pos, &m_size);
-    
+
     for (int i = 0; i < nl.count(); i++) {
         node = nl.item(i);
         n = node.nodeName();
@@ -62,7 +62,7 @@ KoReportItemLabel::KoReportItemLabel(QDomNode & element)
             if (parseReportLineStyleData(node.toElement(), ls)) {
                 m_lineWeight->setValue(ls.weight);
                 m_lineColor->setValue(ls.lineColor);
-                m_lineStyle->setValue(ls.style);
+                m_lineStyle->setValue(QPen(ls.style));
             }
         } else {
             kWarning() << "while parsing label element encountered unknow element: " << n;
@@ -104,7 +104,7 @@ void KoReportItemLabel::createProperties()
 
     m_font = new KoProperty::Property("Font", KGlobalSettings::generalFont(), i18n("Font"), i18n("Font"));
 
-    m_backgroundColor = new KoProperty::Property("background-color", Qt::white, i18n("Background Color"));
+    m_backgroundColor = new KoProperty::Property("background-color", QColor(Qt::white), i18n("Background Color"));
     m_foregroundColor = new KoProperty::Property("foreground-color", QPalette().color(QPalette::Foreground), i18n("Foreground Color"));
 
     m_backgroundOpacity = new KoProperty::Property("background-opacity", QVariant(0), i18n("Background Opacity"));
@@ -113,8 +113,8 @@ void KoReportItemLabel::createProperties()
     m_backgroundOpacity->setOption("unit", "%");
 
     m_lineWeight = new KoProperty::Property("line-weight", 1, i18n("Line Weight"));
-    m_lineColor = new KoProperty::Property("line-color", Qt::black, i18n("Line Color"));
-    m_lineStyle = new KoProperty::Property("line-style", Qt::NoPen, i18n("Line Style"), i18n("Line Style"), KoProperty::LineStyle);
+    m_lineColor = new KoProperty::Property("line-color", QColor(Qt::black), i18n("Line Color"));
+    m_lineStyle = new KoProperty::Property("line-style", QPen(Qt::NoPen), i18n("Line Style"), i18n("Line Style"), KoProperty::LineStyle);
 
     addDefaultProperties();
     m_set->addProperty(m_text);
@@ -182,7 +182,7 @@ int KoReportItemLabel::renderSimpleData(OROPage *page, OROSection *section, cons
 {
     Q_UNUSED(data)
     Q_UNUSED(script)
-    
+
     OROTextBox * tb = new OROTextBox();
     tb->setPosition(m_pos.toScene() + offset);
     tb->setSize(m_size.toScene());
@@ -191,21 +191,21 @@ int KoReportItemLabel::renderSimpleData(OROPage *page, OROSection *section, cons
     tb->setFlags(textFlags());
     tb->setTextStyle(textStyle());
     tb->setLineStyle(lineStyle());
-    
+
     if (page) {
         page->addPrimitive(tb);
     }
-    
+
     if (section) {
         OROPrimitive *clone = tb->clone();
         clone->setPosition(m_pos.toScene());
         section->addPrimitive(clone);
     }
-    
+
     if (!page) {
         delete tb;
     }
-    
+
     return 0; //Item doesn't stretch the section height
 }
 

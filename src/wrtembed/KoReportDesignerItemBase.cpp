@@ -33,12 +33,11 @@
 #include <QSettings>
 #include <kdebug.h>
 
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
-#include <koproperty/EditorView.h>
-#include "KoReportItemBase.h"
-#include <krutils.h>
-#include <klocalizedstring.h>
+#include <kproperty/Property.h>
+#include <kproperty/Set.h>
+#include <kproperty/EditorView.h>
+#include "common/KoReportItemBase.h"
+#include <common/krutils.h>
 
 //
 // ReportEntity
@@ -77,7 +76,7 @@ void KoReportDesignerItemBase::buildXMLLineStyle(QDomDocument & doc, QDomElement
 
 QString KoReportDesignerItemBase::dataSourceAndObjectTypeName(const QString& dataSource, const QString& objectTypeName) const
 {
-    return i18nc("<data-source>: <object>", "%1: %2", dataSource, objectTypeName);
+    return QString("%1: %2").arg(dataSource).arg(objectTypeName);
 }
 
 // static

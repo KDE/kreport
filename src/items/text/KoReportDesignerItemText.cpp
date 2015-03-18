@@ -18,19 +18,17 @@
  */
 
 #include "KoReportDesignerItemText.h"
-#include <KoReportDesignerItemBase.h>
-#include <KoReportDesigner.h>
+#include "wrtembed/KoReportDesignerItemBase.h"
+#include "wrtembed/KoReportDesigner.h"
 
 #include <QDomDocument>
 #include <QPainter>
-#include <kdebug.h>
-#include <klocalizedstring.h>
 #include <QGraphicsScene>
 #include <QGraphicsSceneMouseEvent>
 
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
-#include <koproperty/EditorView.h>
+#include <kproperty/Property.h>
+#include <kproperty/Set.h>
+#include <kproperty/EditorView.h>
 //
 // class ReportEntityText
 //
@@ -49,7 +47,7 @@ void KoReportDesignerItemText::init(QGraphicsScene *scene, KoReportDesigner *d)
 
     m_controlSource->setListData(m_reportDesigner->fieldKeys(), m_reportDesigner->fieldNames());
     setZValue(Z);
-    
+
     updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(), "textarea");
 }
 
@@ -180,6 +178,6 @@ void KoReportDesignerItemText::slotPropertyChanged(KoProperty::Set &s, KoPropert
         m_reportDesigner->setModified(true);
     if (scene())
         scene()->update();
-    
+
     updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(), "textarea");
 }

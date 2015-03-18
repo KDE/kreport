@@ -19,8 +19,6 @@
 
 #include "detailgroupsectiondialog.h"
 
-#include <klocalizedstring.h>
-
 /*
  *  Constructs a DetailGroupSectionDialog as a child of 'parent'.
  *
@@ -28,14 +26,14 @@
  *  true to construct a modal dialog.
  */
 DetailGroupSectionDialog::DetailGroupSectionDialog(QWidget* parent)
-  : KDialog(parent)
+  : QDialog(parent)
 {
     QWidget *widget = new QWidget(this);
     setupUi(widget);
-    setMainWidget(widget);
+   //TODO  setMainWidget(widget);
 
-    setButtons(Ok | Cancel);
-    setCaption(i18n("Group Section Editor"));
+    //TODO setButtons(Ok | Cancel);
+    //TODO setCaption(tr("Group Section Editor"));
 }
 
 /*

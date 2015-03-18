@@ -19,10 +19,11 @@
 #ifndef KOREPORTITEMFIELD_H
 #define KOREPORTITEMFIELD_H
 
-#include <KoReportItemBase.h>
+#include "common/KoReportItemBase.h"
+#include "common/krsize.h"
+
 #include <QRect>
 #include <QDomDocument>
-#include <krsize.h>
 
 /**
  @author
@@ -64,7 +65,7 @@ protected:
     KoProperty::Property* m_wordWrap;
     KoProperty::Property* m_canGrow;
     KoProperty::Property* m_itemValue;
-    
+
     //bool builtinFormat;
     //QString format;
 
@@ -81,12 +82,12 @@ protected:
     QFont font() const {
         return m_font->value().value<QFont>();
     }
-    
+
     void setItemDataSource(const QString&);
-    
+
 private:
     virtual void createProperties();
-    
+
     friend class Scripting::Field;
 };
 

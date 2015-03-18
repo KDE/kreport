@@ -20,7 +20,7 @@
 #ifndef KOODTFRAMEREPORTRENDERER_H
 #define KOODTFRAMEREPORTRENDERER_H
 
-#include <KoReportRendererBase.h>
+#include "KoReportRendererBase.h"
 
 class QTextDocument;
 

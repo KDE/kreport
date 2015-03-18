@@ -22,8 +22,6 @@
 #include "KoReportPluginManagerPrivate.h"
 #include "KoReportPluginInfo.h"
 
-#include <db/pluginloader.h>
-
 #include <kicon.h>
 #include <kservice.h>
 #include <kiconloader.h>
@@ -80,7 +78,7 @@ QList<QAction*> KoReportPluginManager::actions()
             actList << act;
         }
     }
-    
+
     return actList;
 }
 
@@ -95,7 +93,7 @@ KoReportPluginManagerPrivate::KoReportPluginManagerPrivate()
 
     plugin = new KoReportLabelPlugin(this);
     m_plugins.insert(plugin->info()->className(), plugin);
-    
+
     plugin = new KoReportCheckPlugin(this);
     m_plugins.insert(plugin->info()->className(), plugin);
 

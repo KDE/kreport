@@ -19,7 +19,7 @@
 #ifndef KOREPORTODTRENDERER_H
 #define KOREPORTODTRENDERER_H
 
-#include <KoReportRendererBase.h>
+#include "KoReportRendererBase.h"
 #include <QTextCursor>
 
 class QTextDocument;
@@ -34,7 +34,7 @@ public:
     private:
         QTextDocument * const m_document;
         QTextCursor m_cursor;
-        
+
 };
 
 #endif // KOREPORTODTRENDERER_H

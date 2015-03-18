@@ -26,12 +26,12 @@
 #include <QFont>
 #include <QMap>
 
-#include "kowidgets_export.h"
+#include "koreport_export.h"
 
 /**
  * Singleton to store user-overwritten DPI information.
  */
-class KOWIDGETS_EXPORT KoDpi
+class KOREPORT_EXPORT KoDpi
 {
 public:
     /// For KoApplication

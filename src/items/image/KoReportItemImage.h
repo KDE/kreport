@@ -19,14 +19,15 @@
 #ifndef KOREPORTITEMIMAGE_H
 #define KOREPORTITEMIMAGE_H
 
-#include <KoReportItemBase.h>
+#include "common/KoReportItemBase.h"
+#include "common/krpos.h"
+#include "common/krsize.h"
+
 #include <QRect>
 #include <QPainter>
 #include <QDomDocument>
-#include "krpos.h"
-#include "krsize.h"
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
+#include <kproperty/Property.h>
+#include <kproperty/Set.h>
 
 #include <kdebug.h>
 #include <klocalizedstring.h>
@@ -62,7 +63,7 @@ protected:
     QString mode() const;
     bool isInline() const;
     QByteArray inlineImageData() const;
-    
+
 private:
     virtual void createProperties();
 

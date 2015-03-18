@@ -18,9 +18,10 @@
  */
 
 #include "reportpageoptions.h"
-#include <KoPageFormat.h>
-#include <KoUnit.h>
-#include <KoDpi.h>
+#include "common/KoPageFormat.h"
+#include "calligra/KoUnit.h"
+#include <QApplication>
+#include <QScreen>
 
 ReportPageOptions::ReportPageOptions()
         : QObject(), m_pageSize("Letter")
@@ -210,7 +211,9 @@ qreal ReportPageOptions::widthPx()
     }
 
     KoUnit pageUnit(KoUnit::Millimeter);
-    pageWidth = KoUnit::toInch(pageUnit.fromUserValue(pageWidth)) * KoDpi::dpiX();
+    QScreen *srn = QApplication::screens().at(0);
+
+    pageWidth = KoUnit::toInch(pageUnit.fromUserValue(pageWidth)) * srn->logicalDotsPerInchX();
 
     return pageWidth;
 }
@@ -226,7 +229,9 @@ qreal ReportPageOptions::heightPx()
     }
 
     KoUnit pageUnit(KoUnit::Millimeter);
-    pageHeight = KoUnit::toInch(pageUnit.fromUserValue(pageHeight)) * KoDpi::dpiY();
+    QScreen *srn = QApplication::screens().at(0);
+
+    pageHeight = KoUnit::toInch(pageUnit.fromUserValue(pageHeight)) * srn->logicalDotsPerInchY();
 
     return pageHeight;
 }

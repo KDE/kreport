@@ -21,9 +21,10 @@
 #define KOREPORTDESIGNERITEMRECTBASE_H
 
 #include <QGraphicsRectItem>
+#include <kproperty/Set.h>
+
 #include "KoReportDesignerItemBase.h"
-#include <koproperty/Set.h>
-#include <KoUnit.h>
+#include "calligra/KoUnit.h"
 #include "koreport_export.h"
 
 class KoReportDesigner;
@@ -47,7 +48,7 @@ public:
 
     virtual void enterInlineEditingMode();
     virtual void exitInlineEditingMode();
-    
+
 protected:
     void init(KRPos*, KRSize*, KoProperty::Set*, KoReportDesigner *r);
 
@@ -73,7 +74,7 @@ protected:
     virtual void mouseMoveEvent(QGraphicsSceneMouseEvent * event);
     virtual void hoverMoveEvent(QGraphicsSceneHoverEvent * event);
     virtual QVariant itemChange(GraphicsItemChange change, const QVariant &value);
-    
+
     void propertyChanged(const KoProperty::Set &s, const KoProperty::Property &p);
 
     virtual void move(const QPointF&);

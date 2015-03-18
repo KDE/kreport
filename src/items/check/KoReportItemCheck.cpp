@@ -17,13 +17,12 @@
  */
 
 #include "KoReportItemCheck.h"
-
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
-#include <kdebug.h>
-#include <klocalizedstring.h>
-#include <renderobjects.h>
+#include "common/renderobjects.h"
 #include "renderer/scripting/krscripthandler.h"
+
+#include <kproperty/Property.h>
+#include <kproperty/Set.h>
+#include <QPalette>
 
 KoReportItemCheck::KoReportItemCheck()
 {
@@ -55,10 +54,10 @@ KoReportItemCheck::KoReportItemCheck(QDomNode &element)
             if (parseReportLineStyleData(node.toElement(), ls)) {
                 m_lineWeight->setValue(ls.weight);
                 m_lineColor->setValue(ls.lineColor);
-                m_lineStyle->setValue(ls.style);
+                m_lineStyle->setValue(QPen(ls.style));
             }
         } else {
-            kWarning() << "while parsing check element encountered unknow element: " << n;
+            qWarning() << "while parsing check element encountered unknow element: " << n;
         }
     }
 
@@ -76,19 +75,19 @@ void KoReportItemCheck::createProperties()
     QStringList keys, strings;
 
     keys << "Cross" << "Tick" << "Dot";
-    strings << i18n("Cross") << i18n("Tick") << i18n("Dot");
-    m_checkStyle = new KoProperty::Property("check-style", keys, strings, "Cross", i18n("Style"));
+    strings << tr("Cross") << tr("Tick") << tr("Dot");
+    m_checkStyle = new KoProperty::Property("check-style", keys, strings, "Cross", tr("Style"));
 
-    m_controlSource = new KoProperty::Property("item-data-source", QStringList(), QStringList(), QString(), i18n("Data Source"));
+    m_controlSource = new KoProperty::Property("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
     m_controlSource->setOption("extraValueAllowed", "true");
-    
-    m_foregroundColor = new KoProperty::Property("foreground-color", QPalette().color(QPalette::Foreground), i18n("Foreground Color"));
 
-    m_lineWeight = new KoProperty::Property("line-weight", 1, i18n("Line Weight"));
-    m_lineColor = new KoProperty::Property("line-color", Qt::black, i18n("Line Color"));
-    m_lineStyle = new KoProperty::Property("line-style", Qt::SolidLine, i18n("Line Style"), i18n("Line Style"), KoProperty::LineStyle);
-    m_staticValue = new KoProperty::Property("value", QVariant(false), i18n("Value"), i18n("Value used if not bound to a field"));
-    
+    m_foregroundColor = new KoProperty::Property("foreground-color", QPalette().color(QPalette::Foreground), tr("Foreground Color"));
+
+    m_lineWeight = new KoProperty::Property("line-weight", 1, tr("Line Weight"));
+    m_lineColor = new KoProperty::Property("line-color", QColor(Qt::black), tr("Line Color"));
+    m_lineStyle = new KoProperty::Property("line-style", QPen(Qt::SolidLine), tr("Line Style"), tr("Line Style"), KoProperty::LineStyle);
+    m_staticValue = new KoProperty::Property("value", QVariant(false), tr("Value"), tr("Value used if not bound to a field"));
+
     addDefaultProperties();
     m_set->addProperty(m_controlSource);
     m_set->addProperty(m_staticValue);
@@ -158,17 +157,17 @@ int KoReportItemCheck::renderSimpleData(OROPage *page, OROSection *section, cons
     if (page) {
         page->addPrimitive(chk);
     }
-    
+
     if (section) {
         OROCheck *chk2 = dynamic_cast<OROCheck*>(chk->clone());
         chk2->setPosition(m_pos.toPoint());
         section->addPrimitive(chk2);
     }
-    
+
     if (!page) {
         delete chk;
     }
-        
+
     return 0; //Item doesn't stretch the section height
 }
 

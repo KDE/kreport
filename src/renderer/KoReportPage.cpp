@@ -22,12 +22,12 @@
 #include <kdebug.h>
 #include <QColor>
 #include <QPixmap>
-#include <KoPageFormat.h>
-#include <KoUnit.h>
-
-#include <renderobjects.h>
 #include <QPainter>
 #include <QTimer>
+
+#include "calligra/KoPageFormat.h"
+#include "calligra/KoUnit.h"
+#include "common/renderobjects.h"
 
 KoReportPage::KoReportPage(QWidget *parent, ORODocument *document)
         : QObject(parent), QGraphicsRectItem()
@@ -62,7 +62,7 @@ KoReportPage::KoReportPage(QWidget *parent, ORODocument *document)
     m_renderTimer = new QTimer();
     m_renderTimer->setSingleShot(true);
     connect(m_renderTimer, SIGNAL(timeout()), this, SLOT(renderCurrentPage()));
-    
+
     renderPage(1);
 }
 

@@ -18,7 +18,8 @@
  */
 
 #include "KoReportHTMLTableRenderer.h"
-#include "renderobjects.h"
+#include "common/renderobjects.h"
+
 #include <kdebug.h>
 #include <QDir>
 #include <QPainter>
@@ -28,7 +29,6 @@
 #include <QFont>
 
 #include <ktemporaryfile.h>
-#include <kio/netaccess.h>
 
 //
 // KRHtmlRender
@@ -71,10 +71,10 @@ bool KoReportHTMLTableRenderer::render(const KoReportRendererContext& context, O
     out.flush();
     tempHtmlFile.close();
 
-    bool status = false;
-    if (KIO::NetAccess::upload(tempFileName, context.destinationUrl, 0) && KIO::NetAccess::dircopy(KUrl(m_tempDirName),  KUrl(context.destinationUrl.url() + dirSuffix), 0)) {
-        status = true;
-    }
+    bool status = true; //TODO port KIO;
+//    if (KIO::NetAccess::upload(tempFileName, context.destinationUrl, 0) && KIO::NetAccess::dircopy(KUrl(m_tempDirName),  KUrl(context.destinationUrl.url() + dirSuffix), 0)) {
+//        status = true;
+//    }
 
     // cleanup the temporary directory
     tempDir.setPath(m_tempDirName);

@@ -17,12 +17,13 @@
  */
 
 #include "KoReportODTRenderer.h"
+#include "common/renderobjects.h"
+
 #include <QTextDocument>
 #include <QTextTable>
 #include <QTextTableFormat>
 #include <QPainter>
 #include <QTextDocumentWriter>
-#include "renderobjects.h"
 #include <kdebug.h>
 
 KoReportODTRenderer::KoReportODTRenderer() : m_document(new QTextDocument()), m_cursor(m_document)
