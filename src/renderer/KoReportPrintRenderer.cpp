@@ -19,7 +19,7 @@
 
 #include "KoReportPrintRenderer.h"
 #include "common/renderobjects.h"
-#include "calligra/KoPageFormat.h"
+#include "common/KoPageFormat.h"
 #include <QPageSize>
 #include <QScreen>
 #include <QApplication>

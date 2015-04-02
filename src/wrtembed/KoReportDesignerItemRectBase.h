@@ -21,10 +21,10 @@
 #define KOREPORTDESIGNERITEMRECTBASE_H
 
 #include <QGraphicsRectItem>
-#include <kproperty/Set.h>
+#include <KProperty/Set.h>
 
 #include "KoReportDesignerItemBase.h"
-#include "calligra/KoUnit.h"
+#include "common/KoUnit.h"
 #include "koreport_export.h"
 
 class KoReportDesigner;

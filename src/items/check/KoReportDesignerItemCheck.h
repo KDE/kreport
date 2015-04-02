@@ -22,9 +22,9 @@
 #include "wrtembed/KoReportDesignerItemRectBase.h"
 #include "KoReportItemCheck.h"
 
+#include <KProperty/Set.h>
+
 #include <QGraphicsRectItem>
-#include <kproperty/Property.h>
-#include <kproperty/Set.h>
 
 const int KOREPORT_ITEM_CHECK_DEFAULT_WIDTH = 15;
 const int KOREPORT_ITEM_CHECK_DEFAULT_HEIGHT = 15;

@@ -21,10 +21,11 @@
 #include "KoReportItemField.h"
 #include "wrtembed/KoReportDesigner.h"
 
+#include <KProperty/EditorView.h>
+
 #include <QDomDocument>
 #include <QPainter>
 #include <QGraphicsScene>
-#include <kproperty/EditorView.h>
 #include <QGraphicsSceneMouseEvent>
 
 //

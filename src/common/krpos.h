@@ -18,9 +18,9 @@
  */
 #ifndef KRPOS_H
 #define KRPOS_H
-#include "calligra/KoUnit.h"
+#include "KoUnit.h"
 #include <QPointF>
-#include <kproperty/Property.h>
+#include <KProperty/Property.h>
 #include "koreport_export.h"
 /**
  @author

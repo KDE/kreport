@@ -19,9 +19,9 @@
 
 #include "KoReportScreenRenderer.h"
 #include "common/renderobjects.h"
-#include "calligra/KoPageFormat.h"
+#include "common/KoPageFormat.h"
+#include "common/KoUnit.h"
 #include <kdebug.h>
-#include "calligra/KoUnit.h"
 
 KoReportScreenRenderer::KoReportScreenRenderer()
 {

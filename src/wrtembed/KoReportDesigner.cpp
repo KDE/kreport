@@ -27,14 +27,14 @@
 #include "reportpropertiesbutton.h"
 #include "sectioneditor.h"
 #include "reportsectiondetail.h"
+#include "KoReportDesignerItemLine.h"
+#include "KoRuler.h"
+#include "KoZoomHandler.h"
+#include "KoPageFormat.h"
+#include "KoDpi.h"
 #include "common/krutils.h"
 #include "common/KoReportPluginInterface.h"
-#include "wrtembed/KoReportDesignerItemLine.h"
 #include "common/KoReportPluginManager.h"
-#include "calligra/KoRuler.h"
-#include "calligra/KoZoomHandler.h"
-#include "calligra/KoPageFormat.h"
-#include "calligra/KoDpi.h"
 
 //Qt Includes
 #include <QLayout>
@@ -56,8 +56,7 @@
 //#include <kdebug.h>
 #include <ktoggleaction.h>
 
-//Calligra Includes
-#include <kproperty/EditorView.h>
+#include <KProperty/EditorView.h>
 #include <kross/core/manager.h>
 
 //! Also add public method for runtime?

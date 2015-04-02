@@ -25,8 +25,8 @@
 #include <QPainter>
 #include <QTimer>
 
-#include "calligra/KoPageFormat.h"
-#include "calligra/KoUnit.h"
+#include "common/KoPageFormat.h"
+#include "common/KoUnit.h"
 #include "common/renderobjects.h"
 
 KoReportPage::KoReportPage(QWidget *parent, ORODocument *document)

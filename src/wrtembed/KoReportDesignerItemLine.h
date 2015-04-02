@@ -21,8 +21,9 @@
 #define __KOREPORTDESIGNERITEMLINE_H__
 
 #include <QGraphicsLineItem>
-#include <kproperty/Property.h>
-#include <kproperty/Set.h>
+
+#include <KProperty/Set.h>
+
 #include "KoReportDesignerItemBase.h"
 #include "common/KoReportItemLine.h"
 

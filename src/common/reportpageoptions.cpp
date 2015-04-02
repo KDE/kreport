@@ -19,7 +19,7 @@
 
 #include "reportpageoptions.h"
 #include "common/KoPageFormat.h"
-#include "calligra/KoUnit.h"
+#include "KoUnit.h"
 #include <QApplication>
 #include <QScreen>
 

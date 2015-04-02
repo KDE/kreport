@@ -24,8 +24,8 @@
 #include "wrtembed/KoReportDesignerItemRectBase.h"
 #include "BoundedTextItem.h"
 
-#include <kproperty/Property.h>
-#include <kproperty/Set.h>
+#include <KProperty/Set.h>
+
 #include <QGraphicsRectItem>
 #include <QGraphicsItem>
 #include <QGraphicsItemGroup>

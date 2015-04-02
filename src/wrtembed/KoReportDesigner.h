@@ -29,9 +29,9 @@
 
 #include <kdebug.h>
 
+#include <KProperty/Set.h>
+
 #include "common/krreportdata.h"
-#include <kproperty/Set.h>
-#include <kproperty/Property.h>
 #include "common/KoReportItemBase.h"
 #include "koreport_export.h"
 #include "common/KoReportData.h"

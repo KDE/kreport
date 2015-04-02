@@ -19,7 +19,7 @@
 #ifndef KOREPORTITEMBASE_H
 #define KOREPORTITEMBASE_H
 
-#include <kproperty/Property.h>
+#include <KProperty/Property.h>
 #include <QObject>
 
 #include <QDomElement>

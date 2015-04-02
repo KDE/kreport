@@ -24,9 +24,9 @@
 #include "KoReportItemField.h"
 #include "wrtembed/KoReportDesignerItemRectBase.h"
 
+#include <KProperty/Set.h>
+
 #include <QGraphicsRectItem>
-#include <kproperty/Property.h>
-#include <kproperty/Set.h>
 
 //
 // ReportEntityField

@@ -18,9 +18,7 @@
 
 #include "KoReportItemLine.h"
 
-#include <kproperty/Property.h>
-#include <kproperty/Set.h>
-#include <QDebug>
+#include <KProperty/Set.h>
 #include "renderobjects.h"
 
 KoReportItemLine::KoReportItemLine()

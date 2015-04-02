@@ -10,6 +10,7 @@ find_package(Qt5Xml REQUIRED)
 find_package(Qt5PrintSupport REQUIRED)
 find_package(KF5WidgetsAddons REQUIRED)
 find_package(KF5Kross REQUIRED)
+find_package(KProperty REQUIRED)
 
 #add_subdirectory(pics)
 #add_subdirectory(tests)
@@ -119,9 +120,8 @@ add_library(kreport SHARED ${kreport_LIB_SRCS} ${kreport_UI_HEADERS})
 qt5_use_modules(kreport Widgets Xml PrintSupport)
 
 target_link_libraries(kreport
-  ${KOPROPERTY_LIBS}
   ${CALLIGRADB_LIBS} # ONLY FOR KexiPluginLoader, TODO: remove
-  ${KDE4_KROSSCORE_LIBS}
+  KProperty
   KF5::WidgetsAddons
   KF5::KrossCore KF5::KrossUi
   KF5::KIOCore KF5::KIOFileWidgets KF5::KIOWidgets KF5::KIONTLM

@@ -24,13 +24,14 @@
 #include "reportscene.h"
 #include "common/krutils.h"
 
+#include <KProperty/EditorView.h>
+
+#include <klocalizedstring.h>
+
 #include <QDomDocument>
 #include <QPainter>
-#include <kdebug.h>
-#include <klocalizedstring.h>
 #include <QGraphicsScene>
 #include <QGraphicsSceneMouseEvent>
-#include <kproperty/EditorView.h>
 
 //
 // class ReportEntityLine

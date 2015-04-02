@@ -21,16 +21,15 @@
 #include "wrtembed/KoReportDesignerItemBase.h"
 #include "wrtembed/KoReportDesigner.h"
 
+#include <KProperty/Set.h>
+#include <KProperty/EditorView.h>
+
 #include <QImageWriter>
 #include <QGraphicsScene>
 #include <QGraphicsSceneMouseEvent>
 #include <QBuffer>
 #include <QDomDocument>
 #include <QPainter>
-
-#include <kproperty/Property.h>
-#include <kproperty/Set.h>
-#include <kproperty/EditorView.h>
 
 //
 // ReportEntitiesImage

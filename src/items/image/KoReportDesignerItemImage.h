@@ -23,9 +23,9 @@
 #include "wrtembed/KoReportDesignerItemRectBase.h"
 #include "KoReportItemImage.h"
 
+#include <KProperty/Set.h>
+
 #include <QImage>
-#include <kproperty/Property.h>
-#include <kproperty/Set.h>
 
 //
 // ReportEntityImage

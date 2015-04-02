@@ -17,7 +17,7 @@
  */
 #include "krreportdata.h"
 #include <kdebug.h>
-#include "calligra/KoUnit.h"
+#include "KoUnit.h"
 #include <QScreen>
 #include <QApplication>
 #include "krdetailsectiondata.h"

@@ -17,10 +17,10 @@
  */
 #ifndef KRSIZE_H
 #define KRSIZE_H
-#include "calligra/KoUnit.h"
+#include "KoUnit.h"
 #include <QSizeF>
-#include <kproperty/Property.h>
-#include "koreport_export.h"
+#include <KProperty/Property.h>
+#include "kreport_export.h"
 
 /**
  @author

@@ -23,7 +23,7 @@
 #include "krsize.h"
 #include "KoReportItemBase.h"
 
-#include "kproperty/Property.h"
+#include <KProperty/Property.h>
 
 #include <QColor>
 #include <QFont>

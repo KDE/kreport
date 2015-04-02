@@ -22,9 +22,10 @@
 #include "wrtembed/KoReportDesigner.h"
 #include "wrtembed/reportscene.h"
 
+#include <KProperty/EditorView.h>
+
 #include <QDomDocument>
 #include <QPainter>
-#include <kproperty/EditorView.h>
 #include <QGraphicsScene>
 #include <QGraphicsSceneMouseEvent>
 #include <QTextCursor>

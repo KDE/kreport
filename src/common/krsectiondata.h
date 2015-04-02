@@ -35,8 +35,7 @@
 class KoReportItemBase;
 class KoReportReportData;
 
-#include <kproperty/Property.h>
-#include <kproperty/Set.h>
+#include <KProperty/Set.h>
 #include <QColor>
 
 namespace Scripting

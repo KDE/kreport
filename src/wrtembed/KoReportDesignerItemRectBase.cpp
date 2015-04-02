@@ -24,13 +24,11 @@
 #include "common/krsize.h"
 #include "reportscene.h"
 
-#include <kproperty/Set.h>
-#include <kproperty/Property.h>
-#include <kproperty/EditorView.h>
+#include <KProperty/Set.h>
+#include <KProperty/EditorView.h>
 #include <QGraphicsSceneMouseEvent>
 #include <QScreen>
 #include <QApplication>
-#include <kdebug.h>
 
 KoReportDesignerItemRectBase::KoReportDesignerItemRectBase(KoReportDesigner *r)
         : QGraphicsRectItem(), KoReportDesignerItemBase(r)

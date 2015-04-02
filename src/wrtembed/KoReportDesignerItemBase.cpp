@@ -33,9 +33,9 @@
 #include <QSettings>
 #include <kdebug.h>
 
-#include <kproperty/Property.h>
-#include <kproperty/Set.h>
-#include <kproperty/EditorView.h>
+#include <KProperty/Set.h>
+#include <KProperty/EditorView.h>
+
 #include "common/KoReportItemBase.h"
 #include <common/krutils.h>
 

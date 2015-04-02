@@ -23,11 +23,11 @@
 #include "common/krpos.h"
 #include "common/krsize.h"
 
+#include <KProperty/Set.h>
+
 #include <QRect>
 #include <QPainter>
 #include <QDomDocument>
-#include <kproperty/Property.h>
-#include <kproperty/Set.h>
 
 #include <kdebug.h>
 #include <klocalizedstring.h>

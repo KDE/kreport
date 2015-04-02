@@ -17,8 +17,8 @@
  */
 #include "KoReportItemLabel.h"
 
-#include <kproperty/Property.h>
-#include <kproperty/Set.h>
+#include <KProperty/Set.h>
+
 #include <kdebug.h>
 #include <klocalizedstring.h>
 #include <kglobalsettings.h>

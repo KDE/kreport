@@ -20,7 +20,8 @@
 #include "common/renderobjects.h"
 #include "renderer/scripting/krscripthandler.h"
 
-#include <kproperty/Set.h>
+#include <KProperty/Set.h>
+
 #include <QPalette>
 #include <QFontMetrics>
 #include <QApplication>

@@ -20,9 +20,7 @@
 
 #include "krsectiondata.h"
 
-#include <kproperty/Property.h>
-#include <kproperty/Set.h>
-#include <QDebug>
+#include <KProperty/Set.h>
 #include <QColor>
 
 #include "KoReportPluginInterface.h"

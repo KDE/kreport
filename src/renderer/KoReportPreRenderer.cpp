@@ -27,8 +27,8 @@
 #include "common/krreportdata.h"
 #include "common/krdetailsectiondata.h"
 #include "common/labelsizeinfo.h"
+#include "common/KoPageFormat.h"
 #include "scripting/krscripthandler.h"
-#include "calligra/KoPageFormat.h"
 
 #include <kdebug.h>
 
