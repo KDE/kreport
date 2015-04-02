@@ -81,10 +81,10 @@ public:
     
     KoReportASyncItemManager* asyncManager;
     
-private slots:
+private Q_SLOTS:
     void asyncItemsFinished();
 
-signals:
+Q_SIGNALS:
     void enteredGroup(const QString&, const QVariant&);
     void exitedGroup(const QString&, const QVariant&);
     void renderingSection(KRSectionData*, OROPage*, QPointF);
