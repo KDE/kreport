@@ -107,6 +107,3 @@ void KoReportPage::renderCurrentPage()
 {
     renderPage(m_page + 1);
 }
-
-
-#include "KoReportPage.moc"

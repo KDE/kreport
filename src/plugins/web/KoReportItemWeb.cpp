@@ -143,6 +143,3 @@ QString KoReportItemWeb::itemDataSource() const
 {
     return m_controlSource->value().toString();
 }
-
-
-#include "KoReportItemWeb.moc"

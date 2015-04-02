@@ -130,5 +130,3 @@ void KoReportDesignerItemWeb::mousePressEvent(QGraphicsSceneMouseEvent *event)
     m_controlSource->setListData(m_reportDesigner->fieldKeys(), m_reportDesigner->fieldNames());
     KoReportDesignerItemRectBase::mousePressEvent(event);
 }
-
-#include "KoReportDesignerItemWeb.moc"

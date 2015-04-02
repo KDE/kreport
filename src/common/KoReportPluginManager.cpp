@@ -135,6 +135,3 @@ KoReportPluginManagerPrivate::~KoReportPluginManagerPrivate()
 {
 
 }
-
-#include "moc_KoReportPluginManager.cpp"
-#include "moc_KoReportPluginManagerPrivate.cpp"

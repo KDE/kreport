@@ -41,6 +41,3 @@ KoReportPluginInfo* KoReportPluginInterface::info() const
 {
     return m_pluginInfo;
 }
-
-
-#include "moc_KoReportPluginInterface.cpp"

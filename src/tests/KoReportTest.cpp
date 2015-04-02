@@ -184,5 +184,3 @@ void KoReportTest::rectItem()
 }
 
 QTEST_KDEMAIN(KoReportTest, GUI)
-
-#include "moc_KoReportTest.cpp"

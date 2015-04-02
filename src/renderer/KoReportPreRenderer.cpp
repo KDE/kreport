@@ -18,6 +18,7 @@
  */
 
 #include "KoReportPreRenderer.h"
+#include "KoReportPreRenderer_p.h"
 #include "renderobjects.h"
 #include "KoReportData.h"
 
@@ -33,62 +34,6 @@
 #include <krreportdata.h>
 #include <krdetailsectiondata.h>
 #include "KoReportASyncItemManager.h"
-
-//
-// KoReportPreRendererPrivate
-// This class is the private class that houses all the internal
-// variables so we can provide a cleaner interface to the user
-// without presenting to them things that they don't need to see
-// and may change over time.
-//
-class KoReportPreRendererPrivate : public QObject
-{
-    Q_OBJECT
-public:
-    KoReportPreRendererPrivate();
-    virtual ~KoReportPreRendererPrivate();
-
-    bool m_valid;
-
-    ORODocument* m_document;
-    OROPage*     m_page;
-    KoReportReportData* m_reportData;
-
-    qreal m_yOffset;      // how far down the current page are we
-    qreal m_topMargin;    // value stored in the correct units
-    qreal m_bottomMargin; // -- same as above --
-    qreal m_leftMargin;   // -- same as above --
-    qreal m_rightMargin;  // -- same as above --
-    qreal m_maxHeight;    // -- same as above --
-    qreal m_maxWidth;     // -- same as above --
-    int m_pageCounter;    // what page are we currently on?
-    int m_recordCount;
-
-    KoReportData* m_kodata;
-    QList<OROTextBox*> m_postProcText;
-
-    void createNewPage();
-    qreal finishCurPage(bool = false);
-    qreal finishCurPageSize(bool = false);
-
-    void renderDetailSection(KRDetailSectionData &);
-    qreal renderSection(const KRSectionData &);
-    qreal renderSectionSize(const KRSectionData &);
-
-    ///Scripting Stuff
-    KRScriptHandler *m_scriptHandler;
-    void initEngine();
-    
-    KoReportASyncItemManager* asyncManager;
-    
-private Q_SLOTS:
-    void asyncItemsFinished();
-
-Q_SIGNALS:
-    void enteredGroup(const QString&, const QVariant&);
-    void exitedGroup(const QString&, const QVariant&);
-    void renderingSection(KRSectionData*, OROPage*, QPointF);
-};
 
 KoReportPreRendererPrivate::KoReportPreRendererPrivate()
 {
@@ -688,5 +633,3 @@ const KoReportReportData* KoReportPreRenderer::reportData() const
 {
     return d->m_reportData;
 }
-
-#include "KoReportPreRenderer.moc"

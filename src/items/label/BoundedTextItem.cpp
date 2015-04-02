@@ -84,5 +84,3 @@ void BoundedTextItem::keyReleaseEvent(QKeyEvent* event)
         QGraphicsTextItem::keyReleaseEvent(event);
     }
 }
-
-#include "BoundedTextItem.moc"
