@@ -1,10 +1,3 @@
-cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
-project(KReport)
-
-set(CMAKE_AUTOMOC ON)
-set(CMAKE_INCLUDE_CURRENT_DIR ON)
-list(APPEND CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
-
 find_package(Qt5Widgets REQUIRED)
 find_package(Qt5Xml REQUIRED)
 find_package(Qt5PrintSupport REQUIRED)
@@ -13,9 +6,7 @@ find_package(KF5Kross REQUIRED)
 find_package(KProperty REQUIRED)
 
 #add_subdirectory(pics)
-#add_subdirectory(tests)
 
-#build a shared library
 set(kreport_LIB_SRCS
     common/krutils.cpp
     common/krpos.cpp
@@ -113,25 +104,105 @@ set(kreport_LIB_SRCS
     items/text/KoReportTextPlugin.cpp
 )
 
-qt5_wrap_ui(kreport_UI_HEADERS wrtembed/detailgroupsectiondialog.ui wrtembed/sectioneditor.ui)
+#qt5_wrap_ui(kreport_UI_HEADERS wrtembed/detailgroupsectiondialog.ui wrtembed/sectioneditor.ui)
 
-add_library(kreport SHARED ${kreport_LIB_SRCS} ${kreport_UI_HEADERS})
+add_library(KReport SHARED ${kreport_LIB_SRCS})
 
-qt5_use_modules(kreport Widgets Xml PrintSupport)
+generate_export_header(KReport)
 
-target_link_libraries(kreport
-  ${CALLIGRADB_LIBS} # ONLY FOR KexiPluginLoader, TODO: remove
-  KProperty
-  KF5::WidgetsAddons
-  KF5::KrossCore KF5::KrossUi
-  KF5::KIOCore KF5::KIOFileWidgets KF5::KIOWidgets KF5::KIONTLM
+#qt5_use_modules(KReport Widgets Xml PrintSupport)
+
+target_include_directories(KReport INTERFACE "$<INSTALL_INTERFACE:${INCLUDE_INSTALL_DIR}/KReport>")
+
+target_link_libraries(KReport
+    KF5::WidgetsAddons
+    KF5::KrossCore KF5::KrossUi
+    KF5::KIOCore KF5::KIOFileWidgets KF5::KIOWidgets KF5::KIONTLM
+    KProperty
+    ${CALLIGRADB_LIBS} # ONLY FOR KexiPluginLoader, TODO: remove
 )
 
-#target_link_libraries(koreport LINK_INTERFACE_LIBRARIES
+#target_link_libraries(kreport LINK_INTERFACE_LIBRARIES
 #  ${KOPROPERTY_LIBS} ${KDE4_KROSSCORE_LIBS} kowidgets)
 
-set_target_properties(kreport PROPERTIES VERSION ${GENERIC_CALLIGRA_LIB_VERSION} SOVERSION ${GENERIC_CALLIGRA_LIB_SOVERSION})
-install(TARGETS kreport LIBRARY DESTINATION lib)
+set_target_properties(KReport
+    PROPERTIES VERSION 1.0
+               SOVERSION 1.0.0
+               EXPORT_NAME KReport
+)
+
+# Create a Config.cmake and a ConfigVersion.cmake file and install them
+set(CMAKECONFIG_INSTALL_DIR "${CMAKECONFIG_INSTALL_PREFIX}/KReport")
+
+ecm_setup_version(${KREPORT_VERSION}
+    VARIABLE_PREFIX KREPORT
+    VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/kreport_version.h"
+    PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KReportConfigVersion.cmake"
+)
+
+ecm_configure_package_config_file(
+    "${CMAKE_CURRENT_SOURCE_DIR}/KReportConfig.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/KReportConfig.cmake"
+    INSTALL_DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+)
+
+install(FILES
+        "${CMAKE_CURRENT_BINARY_DIR}/KReportConfig.cmake"
+        "${CMAKE_CURRENT_BINARY_DIR}/KReportConfigVersion.cmake"
+        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+        COMPONENT Devel)
+
+#install(TARGETS KReport
+#        EXPORT KReportTargets
+#        "${INSTALL_TARGETS_DEFAULT_ARGS}")
+
+#install(EXPORT KReportTargets
+#        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+#        FILE KReportTargets.cmake)
+
+ecm_generate_pri_file(
+    BASE_NAME KReport
+    LIB_NAME KReport
+    DEPS "widgets"
+    FILENAME_VAR PRI_FILENAME
+    INCLUDE_INSTALL_DIR ${INCLUDE_INSTALL_DIR}/KReport
+)
+
+install(FILES ${PRI_FILENAME}
+        DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
 
 #TODO
 #install(FILES  koreport_itemplugin.desktop  DESTINATION ${SERVICETYPES_INSTALL_DIR})
+
+install(FILES "${CMAKE_CURRENT_BINARY_DIR}/kreport_version.h"
+        DESTINATION "${INCLUDE_INSTALL_DIR}"
+        COMPONENT Devel)
+
+ecm_generate_headers(kreport_FORWARDING_HEADERS
+    ORIGINAL CAMELCASE
+    PREFIX kreport
+    HEADER_NAMES
+        common/KoPageFormat
+        common/KoReportData
+        common/KoReportItemBase
+        common/KoReportItemLine
+        common/KoReportPluginInfo
+        common/KoUnit
+    REQUIRED_HEADERS kreport_HEADERS
+)
+
+install(
+    FILES
+        ${kreport_HEADERS}
+        ${PROJECT_BINARY_DIR}/src/kreport_export.h
+    DESTINATION ${INCLUDE_INSTALL_DIR}/KReport/kreport
+    COMPONENT Devel
+)
+
+install(
+    FILES
+        ${kreport_FORWARDING_HEADERS}
+    DESTINATION ${INCLUDE_INSTALL_DIR}/KReport/KReport
+    COMPONENT Devel
+)
+

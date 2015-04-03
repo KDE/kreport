@@ -20,7 +20,7 @@
 
 #ifndef KOREPORTRENDERERBASE_H
 #define KOREPORTRENDERERBASE_H
-#include "koreport_export.h"
+#include "kreport_export.h"
 #include <kurl.h>
 
 class QPainter;
@@ -28,7 +28,7 @@ class QPrinter;
 class ORODocument;
 
 //! Context for executing rendering.
-class KOREPORT_EXPORT KoReportRendererContext
+class KREPORT_EXPORT KoReportRendererContext
 {
     public:
         KoReportRendererContext();
@@ -38,7 +38,7 @@ class KOREPORT_EXPORT KoReportRendererContext
 };
 
 //! Base class for report renderers.
-class KOREPORT_EXPORT KoReportRendererBase
+class KREPORT_EXPORT KoReportRendererBase
 {
     public:
         KoReportRendererBase();
@@ -52,7 +52,7 @@ class KOREPORT_EXPORT KoReportRendererBase
 
 //! Factory for creating renderers
 //! @todo make it use plugins
-class KOREPORT_EXPORT KoReportRendererFactory
+class KREPORT_EXPORT KoReportRendererFactory
 {
     public:
         KoReportRendererFactory();

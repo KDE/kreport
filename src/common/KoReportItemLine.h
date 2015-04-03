@@ -26,7 +26,7 @@
 #include "krpos.h"
 #include "krsize.h"
 
-#include "koreport_export.h"
+#include "kreport_export.h"
 
 namespace Scripting
 {
@@ -36,7 +36,7 @@ class Line;
 /**
  @author
 */
-class KOREPORT_EXPORT  KoReportItemLine : public KoReportItemBase
+class KREPORT_EXPORT  KoReportItemLine : public KoReportItemBase
 {
 public:
     KoReportItemLine();

@@ -22,7 +22,7 @@
 
 #include <QObject>
 
-#include "koreport_export.h"
+#include "kreport_export.h"
 
 class ReportSection;
 class ReportSectionDetail;
@@ -33,7 +33,7 @@ class QDomDocument;
 /**
  @author
 */
-class KOREPORT_EXPORT ReportSectionDetailGroup : public QObject
+class KREPORT_EXPORT ReportSectionDetailGroup : public QObject
 {
     Q_OBJECT
 public:

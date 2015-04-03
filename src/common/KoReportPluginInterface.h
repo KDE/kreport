@@ -28,7 +28,7 @@
 
 class KoReportPluginInfo;
 
-class KOREPORT_EXPORT KoReportPluginInterface : public QObject
+class KREPORT_EXPORT KoReportPluginInterface : public QObject
 {
     Q_OBJECT
     public:

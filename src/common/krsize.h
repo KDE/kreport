@@ -19,13 +19,13 @@
 #define KRSIZE_H
 #include "KoUnit.h"
 #include <QSizeF>
-#include <KProperty/Property.h>
+#include <KProperty/Property>
 #include "kreport_export.h"
 
 /**
  @author
 */
-class KOREPORT_EXPORT KRSize
+class KREPORT_EXPORT KRSize
 {
 public:
     enum UpdatePropertyFlag {

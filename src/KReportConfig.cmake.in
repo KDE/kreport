@@ -1,0 +1,21 @@
+# KReportConfig.cmake provides information about the installed KReport library.
+# It can be used directly from CMake via find_package(KReport NO_MODULE)
+#
+# The following CMake variables are provided:
+#   KReport_VERSION_MAJOR - the major version number of KReport
+#   KReport_VERSION_MINOR - the minor version number of KReport
+#   KReport_VERSION_PATCH - the patch version number of KReport
+#   KReport_INCLUDE_DIRS  - the include directories to use
+#
+# Additionally, the following imported library targets are created, which may be used directly
+# with target_link_libraries():
+#   KReport - the KReport library
+
+@PACKAGE_INIT@
+
+find_dependency(Qt5Core @REQUIRED_QT_VERSION@)
+
+include("${CMAKE_CURRENT_LIST_DIR}/KReportTargets.cmake")
+
+# "public" variables:
+# TODO

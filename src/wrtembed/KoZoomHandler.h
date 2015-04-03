@@ -21,7 +21,7 @@
 #ifndef KOZOOMHANDLER_H
 #define KOZOOMHANDLER_H
 
-#include "koreport_export.h"
+#include "kreport_export.h"
 #include "KoZoomMode.h"
 #include "KoViewConverter.h"
 
@@ -34,7 +34,7 @@
  * An instance of KoZoomHandler operates at a given zoom  and resolution
  * so there is usually one instance of KoZoomHandler per view.
  */
-class KOREPORT_EXPORT KoZoomHandler : public KoViewConverter
+class KREPORT_EXPORT KoZoomHandler : public KoViewConverter
 {
 public:
 

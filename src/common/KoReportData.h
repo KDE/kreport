@@ -17,13 +17,13 @@
 #ifndef __KOREPORTDATA_H__
 #define __KOREPORTDATA_H__
 
-#include "koreport_export.h"
+#include "kreport_export.h"
 #include <QStringList>
 
 /**
 
 */
-class KOREPORT_EXPORT KoReportData
+class KREPORT_EXPORT KoReportData
 {
 
 public:
@@ -31,7 +31,7 @@ public:
 
     //! Describes sorting for single field
     /*! By default the order is ascending. */
-    class KOREPORT_EXPORT SortedField
+    class KREPORT_EXPORT SortedField
     {
     public:
         SortedField();

@@ -24,7 +24,7 @@
 #ifndef KOUNIT_H
 #define KOUNIT_H
 
-#include "koreport_export.h"
+#include "kreport_export.h"
 
 // Qt
 #include <QString>
@@ -67,7 +67,7 @@ class QVariant;
  * bound to the order in the enum (so ABI-compatible extension is possible) and
  * with the order and scope of listed types controlled by the @c ListOptions parameter.
  */
-class KOREPORT_EXPORT KoUnit
+class KREPORT_EXPORT KoUnit
 {
 public:
     /** Length units supported by Calligra. */
@@ -268,7 +268,7 @@ private:
 };
 
 #ifndef QT_NO_DEBUG_STREAM
-KOREPORT_EXPORT QDebug operator<<(QDebug, const KoUnit &);
+KREPORT_EXPORT QDebug operator<<(QDebug, const KoUnit &);
 #endif
 
 Q_DECLARE_METATYPE(KoUnit)

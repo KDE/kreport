@@ -19,13 +19,13 @@
 #ifndef KOREPORTITEMBASE_H
 #define KOREPORTITEMBASE_H
 
-#include <KProperty/Property.h>
+#include <KProperty/Property>
 #include <QObject>
 
 #include <QDomElement>
 #include <QFont>
 #include <QColor>
-#include "koreport_export.h"
+#include "kreport_export.h"
 
 #include "krpos.h"
 #include "krsize.h"
@@ -66,7 +66,7 @@ public:
 /**
  @author
 */
-class KOREPORT_EXPORT KoReportItemBase : public QObject
+class KREPORT_EXPORT KoReportItemBase : public QObject
 {
     Q_OBJECT
 public:

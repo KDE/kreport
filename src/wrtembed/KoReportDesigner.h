@@ -33,7 +33,7 @@
 
 #include "common/krreportdata.h"
 #include "common/KoReportItemBase.h"
-#include "koreport_export.h"
+#include "kreport_export.h"
 #include "common/KoReportData.h"
 
 class ReportGridOptions;
@@ -58,7 +58,7 @@ class KoReportPluginManager;
 // Class ReportDesigner
 //     The ReportDesigner is the main widget for designing a report
 //
-class KOREPORT_EXPORT KoReportDesigner : public QWidget
+class KREPORT_EXPORT KoReportDesigner : public QWidget
 {
     Q_OBJECT
 public:

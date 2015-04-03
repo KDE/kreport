@@ -21,7 +21,7 @@
 #ifndef KRREPORTDATA_H
 #define KRREPORTDATA_H
 
-#include "koreport_export.h"
+#include "kreport_export.h"
 
 #include <QObject>
 #include <QDomDocument>
@@ -38,7 +38,7 @@ class Report;
 /**
  @author Adam Pigg <adam@piggz.co.uk>
 */
-class KOREPORT_EXPORT KoReportReportData : public QObject
+class KREPORT_EXPORT KoReportReportData : public QObject
 {
     Q_OBJECT
 

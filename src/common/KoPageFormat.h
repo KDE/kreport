@@ -23,7 +23,7 @@
 #ifndef KOPAGEFORMAT_H
 #define KOPAGEFORMAT_H
 
-#include "koreport_export.h"
+#include "kreport_export.h"
 
 #include <QPrinter>
 
@@ -85,58 +85,58 @@ enum Orientation {
  * (you may want to take care of those cases separately).
  * Usually passed to KPrinter::setPageSize().
  */
-KOREPORT_EXPORT QPrinter::PageSize printerPageSize(Format format);
+KREPORT_EXPORT QPrinter::PageSize printerPageSize(Format format);
 
 /**
  * Returns the width (in mm) for a given page format and orientation
  * 'Custom' isn't supported by this function, obviously.
  */
-KOREPORT_EXPORT qreal width(Format format, Orientation orientation = Landscape);
+KREPORT_EXPORT qreal width(Format format, Orientation orientation = Landscape);
 
 /**
  * Returns the height (in mm) for a given page format and orientation
  * 'Custom' isn't supported by this function, obviously.
  */
-KOREPORT_EXPORT qreal height(Format format, Orientation orientation  = Landscape);
+KREPORT_EXPORT qreal height(Format format, Orientation orientation  = Landscape);
 
 /**
  * Returns the internal name of the given page format.
  * Use for saving.
  */
-KOREPORT_EXPORT QString formatString(Format format);
+KREPORT_EXPORT QString formatString(Format format);
 
 /**
  * Convert a format string (internal name) to a page format value.
  * Use for loading.
  */
-KOREPORT_EXPORT Format formatFromString(const QString &string);
+KREPORT_EXPORT Format formatFromString(const QString &string);
 
 /**
  * Returns the default format (based on the KControl settings)
  */
-KOREPORT_EXPORT Format defaultFormat();
+KREPORT_EXPORT Format defaultFormat();
 
 /**
  * Returns the translated name of the given page format.
  * Use for showing the user.
  */
-KOREPORT_EXPORT QString name(Format format);
+KREPORT_EXPORT QString name(Format format);
 
 /**
  * Lists the translated names of all the available formats
  */
-KOREPORT_EXPORT QStringList localizedPageFormatNames();
+KREPORT_EXPORT QStringList localizedPageFormatNames();
 
 /**
  * Lists the non-translated names of all the available formats
  */
-KOREPORT_EXPORT QStringList pageFormatNames();
+KREPORT_EXPORT QStringList pageFormatNames();
 
 /**
  * Try to find the paper format for the given width and height (in mm).
  * Useful to some import filters.
  */
-KOREPORT_EXPORT Format guessFormat(qreal width, qreal height);
+KREPORT_EXPORT Format guessFormat(qreal width, qreal height);
 }
 
 #endif

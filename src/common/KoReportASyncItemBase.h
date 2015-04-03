@@ -23,7 +23,7 @@
 
 #include "KoReportItemBase.h"
 
-class KOREPORT_EXPORT KoReportASyncItemBase : public KoReportItemBase
+class KREPORT_EXPORT KoReportASyncItemBase : public KoReportItemBase
 {
     Q_OBJECT
 public:

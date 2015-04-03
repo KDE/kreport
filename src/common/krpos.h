@@ -20,12 +20,12 @@
 #define KRPOS_H
 #include "KoUnit.h"
 #include <QPointF>
-#include <KProperty/Property.h>
-#include "koreport_export.h"
+#include <KProperty/Property>
+#include "kreport_export.h"
 /**
  @author
 */
-class KOREPORT_EXPORT KRPos
+class KREPORT_EXPORT KRPos
 {
 public:
     enum UpdatePropertyFlag {

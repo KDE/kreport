@@ -24,7 +24,7 @@
 #include <QString>
 #include <QFont>
 #include <QMap>
-#include "koreport_export.h"
+#include "kreport_export.h"
 #include "scripting/krscripthandler.h"
 
 class KoReportPreRendererPrivate;
@@ -37,7 +37,7 @@ class KoReportData;
 // This class takes a report definition and prerenders the result to
 // an ORODocument that can be used to pass to any number of renderers.
 //
-class KOREPORT_EXPORT KoReportPreRenderer : public QObject
+class KREPORT_EXPORT KoReportPreRenderer : public QObject
 {
 public:
     explicit KoReportPreRenderer(const QDomElement&);

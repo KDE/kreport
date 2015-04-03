@@ -22,9 +22,9 @@
 
 #include <QObject>
 #include <QString>
-#include "koreport_export.h"
+#include "kreport_export.h"
 
-class KOREPORT_EXPORT ReportPageOptions : public QObject
+class KREPORT_EXPORT ReportPageOptions : public QObject
 {
     Q_OBJECT
 public:

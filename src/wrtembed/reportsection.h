@@ -53,7 +53,7 @@ class ReportSectionTitle;
 //     This class is the base to all Report Section's visual representation.
 // It contains the basic data and interface that all the sections need to work.
 //
-class KOREPORT_EXPORT ReportSection : public QWidget
+class KREPORT_EXPORT ReportSection : public QWidget
 {
     Q_OBJECT
 public:

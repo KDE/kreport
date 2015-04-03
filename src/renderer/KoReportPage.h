@@ -31,7 +31,7 @@ class ORODocument;
  and ORODocument
  The widget is sized to the document size in pixels.
 */
-class KOREPORT_EXPORT KoReportPage : public QObject, public QGraphicsRectItem
+class KREPORT_EXPORT KoReportPage : public QObject, public QGraphicsRectItem
 {
     Q_OBJECT
 public:

@@ -23,12 +23,12 @@
 
 #include <QString>
 #include <QFlags>
-#include "koreport_export.h"
+#include "kreport_export.h"
 
 /**
  * The ZoomMode container
  */
-class KOREPORT_EXPORT KoZoomMode
+class KREPORT_EXPORT KoZoomMode
 {
 public:
     enum Mode
