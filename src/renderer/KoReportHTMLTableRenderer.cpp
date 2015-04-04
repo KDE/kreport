@@ -55,7 +55,7 @@ bool KoReportHTMLTableRenderer::render(const KoReportRendererContext& context, O
 
     QTextStream out(&tempHtmlFile);
 
-    QString dirSuffix = ".files";
+    QString dirSuffix = QLatin1String(".files");
     QDir tempDir;
     QFileInfo fi(tempHtmlFile);
 
@@ -99,7 +99,7 @@ QString KoReportHTMLTableRenderer::renderTable(ORODocument *document)
     QDir d(m_tempDirName);
 
     // Render Each Section
-    body = "<table>\n";
+    body = QLatin1String("<table>\n");
     for (long s = 0; s < document->sections(); s++) {
         OROSection *section = document->section(s);
         section->sortPrimatives(OROSection::SortX);
@@ -117,7 +117,7 @@ QString KoReportHTMLTableRenderer::renderTable(ORODocument *document)
             if (section->type() == KRSectionData::PageFooterAny)
                 renderedPageFooter = true;
 
-            tr = "<tr style=\"background-color: " + section->backgroundColor().name() + "\">\n";
+            tr = QLatin1String("<tr style=\"background-color: ") + section->backgroundColor().name() + QLatin1String("\">\n");
             //Render the objects in each section
             for (int i = 0; i < section->primitives(); i++) {
                 OROPrimitive * prim = section->primitive(i);
@@ -125,39 +125,39 @@ QString KoReportHTMLTableRenderer::renderTable(ORODocument *document)
                 if (prim->type() == OROTextBox::TextBox) {
                     OROTextBox * tb = (OROTextBox*) prim;
 
-                    tr += "<td>" +
+                    tr += QLatin1String("<td>") +
                           tb->text() +
-                          "</td>\n";
+                          QLatin1String("</td>\n");
                 } else if (prim->type() == OROImage::Image) {
                     //kDebug() << "Saving an image";
                     OROImage * im = (OROImage*) prim;
-                    tr += "<td>"
-                          "<img src=\"./" + m_actualDirName + "/object" + QString::number(s) + QString::number(i) + ".png\"></img>"
-                          "</td>\n";
-                    im->image().save(m_tempDirName + "/object" + QString::number(s) + QString::number(i) + ".png");
+                    tr += QLatin1String("<td>"
+                          "<img src=\"./") + m_actualDirName + QLatin1String("/object") + QString::number(s) + QString::number(i) + QLatin1String(".png\"></img>"
+                          "</td>\n");
+                    im->image().save(m_tempDirName + QLatin1String("/object") + QString::number(s) + QString::number(i) + QLatin1String(".png"));
                 } else if (prim->type() == OROPicture::Picture) {
                     //kDebug() << "Saving a picture";
                     OROPicture * im = (OROPicture*) prim;
 
-                    tr += "<td>"
-                          "<img src=\"./" + m_actualDirName + "/object" + QString::number(s) + QString::number(i) + ".png\"></img>"
-                          "</td>\n";
+                    tr += QLatin1String("<td>"
+                          "<img src=\"./") + m_actualDirName + QLatin1String("/object") + QString::number(s) + QString::number(i) + QLatin1String(".png\"></img>"
+                          "</td>\n");
                     QImage image(im->size().toSize(), QImage::Format_RGB32);
                     QPainter painter(&image);
                     im->picture()->play(&painter);
-                    image.save(m_tempDirName + "/object" + QString::number(s) + QString::number(i) + ".png");
+                    image.save(m_tempDirName + QLatin1String("/object") + QString::number(s) + QString::number(i) + QLatin1String(".png"));
                 } else {
                     kWarning() << "unhandled primitive type";
                 }
             }
-            tr += "</tr>\n";
+            tr += QLatin1String("</tr>\n");
 
-            if (tr.contains("<td>")) {
+            if (tr.contains(QLatin1String("<td>"))) {
                 body += tr;
             }
         }
     }
-    body += "</table>\n";
+    body += QLatin1String("</table>\n");
     html = QLatin1String("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n"
         "<html>\n"
         "<head>\n"

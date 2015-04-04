@@ -45,8 +45,8 @@ KoReportReportData::KoReportReportData(const QDomElement & elemSource, QObject *
     m_valid = false;
     init();
     //kDebug();
-    if (elemSource.tagName() != "report:content") {
-        kWarning() << "QDomElement passed to parseReport() was not <report:content> tag"
+    if (elemSource.tagName() != QLatin1String("report:content")) {
+        kWarning() << "QDomElement is not <report:content> tag"
                    << elemSource.text();
         return;
     }
@@ -59,32 +59,32 @@ KoReportReportData::KoReportReportData(const QDomElement & elemSource, QObject *
     QDomNodeList sections = elemSource.childNodes();
     for (int nodeCounter = 0; nodeCounter < sections.count(); nodeCounter++) {
         QDomElement elemThis = sections.item(nodeCounter).toElement();
-        if (elemThis.tagName() == "report:title") {
+        if (elemThis.tagName() == QLatin1String("report:title")) {
             m_title = elemThis.text();
-        } else if (elemThis.tagName() == "report:script") {
+        } else if (elemThis.tagName() == QLatin1String("report:script")) {
             m_script = elemThis.text();
-            m_interpreter = elemThis.attribute("report:script-interpreter");
-        } else if (elemThis.tagName() == "report:page-style") {
+            m_interpreter = elemThis.attribute(QLatin1String("report:script-interpreter"));
+        } else if (elemThis.tagName() == QLatin1String("report:page-style")) {
             QString pagetype = elemThis.firstChild().nodeValue();
 
-            if (pagetype == "predefined") {
-                page.setPageSize(elemThis.attribute("report:page-size", "A4"));
-            } else if (pagetype == "custom") {
-                page.setCustomWidth(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute("report:custom-page-width", ""))) * dpiX);
-                page.setCustomHeight(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute("report:custom-page-height", ""))) * dpiY);
-                page.setPageSize("Custom");
-            } else if (pagetype == "label") {
+            if (pagetype == QLatin1String("predefined")) {
+                page.setPageSize(elemThis.attribute(QLatin1String("report:page-size"), QLatin1String("A4")));
+            } else if (pagetype == QLatin1String("custom")) {
+                page.setCustomWidth(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute(QLatin1String("report:custom-page-width"), QString()))) * dpiX);
+                page.setCustomHeight(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute(QLatin1String("report:custom-page-height"), QString()))) * dpiY);
+                page.setPageSize(QLatin1String("Custom"));
+            } else if (pagetype == QLatin1String("label")) {
                 page.setLabelType(elemThis.firstChild().nodeValue());
             }
             //@todo add config for default margins or add within templates support
-            page.setMarginBottom(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute("fo:margin-bottom", "1.0cm"))) * dpiY);
-            page.setMarginTop(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute("fo:margin-top", "1.0cm"))) * dpiY);
-            page.setMarginLeft(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute("fo:margin-left", "1.0cm"))) * dpiX);
-            page.setMarginRight(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute("fo:margin-right", "1.0cm"))) * dpiX);
+            page.setMarginBottom(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-bottom"), QLatin1String("1.0cm")))) * dpiY);
+            page.setMarginTop(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-top"), QLatin1String("1.0cm")))) * dpiY);
+            page.setMarginLeft(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-left"), QLatin1String("1.0cm")))) * dpiX);
+            page.setMarginRight(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-right"), QLatin1String("1.0cm")))) * dpiX);
 
-            page.setPortrait(elemThis.attribute("report:print-orientation", "portrait") == "portrait");
+            page.setPortrait(elemThis.attribute(QLatin1String("report:print-orientation"), QLatin1String("portrait")) == QLatin1String("portrait"));
 
-        } else if (elemThis.tagName() == "report:body") {
+        } else if (elemThis.tagName() == QLatin1String("report:body")) {
             QDomNodeList sectionlist = elemThis.childNodes();
             QDomNode sec;
 
@@ -93,7 +93,7 @@ KoReportReportData::KoReportReportData(const QDomElement & elemSource, QObject *
                 if (sec.isElement()) {
                     QString sn = sec.nodeName().toLower();
                     //kDebug() << sn;
-                    if (sn == "report:section") {
+                    if (sn == QLatin1String("report:section")) {
                         KRSectionData * sd = new KRSectionData(sec.toElement(), this);
                         if (!sd->isValid()) {
                             kDebug() << "Invalid section";
@@ -142,7 +142,7 @@ KoReportReportData::KoReportReportData(const QDomElement & elemSource, QObject *
                             }
                         }
 
-                    } else if (sn == "report:detail") {
+                    } else if (sn == QLatin1String("report:detail")) {
                         KRDetailSectionData * dsd = new KRDetailSectionData(sec.toElement(), this);
 
                         if (dsd->isValid()) {

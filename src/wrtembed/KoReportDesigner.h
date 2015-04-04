@@ -29,7 +29,7 @@
 
 #include <kdebug.h>
 
-#include <KProperty/Set.h>
+#include <KProperty/Set>
 
 #include "common/krreportdata.h"
 #include "common/KoReportItemBase.h"

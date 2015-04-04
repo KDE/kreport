@@ -166,7 +166,7 @@ bool KoReportScreenRenderer::render(const KoReportRendererContext& context, OROD
             qreal oy = sz.height() / 5;
 
             //Checkbox Style
-            if (chk->checkType() == "Cross") {
+            if (chk->checkType() == QLatin1String("Cross")) {
                 context.painter->drawRoundedRect(rc, sz.width() / 10 , sz.height() / 10);
 
                 if (chk->value()) {
@@ -178,7 +178,7 @@ bool KoReportScreenRenderer::render(const KoReportRendererContext& context, OROD
                     context.painter->drawLine(QPointF(ox, sz.height() - oy) + ps, QPoint(sz.width() - ox, oy) + ps);
                 }
             }
-            else if (chk->checkType() == "Dot") {
+            else if (chk->checkType() == QLatin1String("Dot")) {
                 //Radio Style
                 context.painter->drawEllipse(rc);
 

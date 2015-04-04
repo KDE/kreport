@@ -24,7 +24,7 @@
 #include <QScreen>
 
 ReportPageOptions::ReportPageOptions()
-        : QObject(), m_pageSize("Letter")
+        : QObject(), m_pageSize(QLatin1String("Letter"))
 {
     m_marginTop = m_marginBottom = 1.0;
     m_marginLeft = m_marginRight = 1.0;

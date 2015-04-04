@@ -44,12 +44,12 @@ QStringList LabelSizeInfo::labelNames()
     return l;
 }
 
-LabelSizeInfo::LabelSizeInfo(const QString & n, const QString & p, int c,
+LabelSizeInfo::LabelSizeInfo(const char *n, const char *p, int c,
                              int r, int w, int h, int sx, int sy, int xg,
                              int yg)
 {
-    m_name = n;
-    m_paper = p;
+    m_name = QLatin1String(n);
+    m_paper = QLatin1String(p);
 
     m_columns = c;
     m_rows = r;

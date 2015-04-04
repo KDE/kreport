@@ -20,7 +20,8 @@
 #ifndef __KOREPORTPRERENDERER_P_H__
 #define __KOREPORTPRERENDERER_P_H__
 
-#include <QObject>
+#include "common/renderobjects.h"
+#include "KoReportASyncItemManager.h"
 
 /*! This class is the private class that houses all the internal
   variables so we can provide a cleaner interface to the user

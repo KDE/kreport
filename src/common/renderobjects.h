@@ -442,10 +442,10 @@ public:
     static const int Check;
 
     void setCheckType(const QString& t) {
-        if (t == "Cross" || t == "Tick" || t == "Dot") {
+        if (t == QLatin1String("Cross") || t == QLatin1String("Tick") || t == QLatin1String("Dot")) {
             m_checkType = t;
         } else {
-            m_checkType = "Cross";
+            m_checkType = QLatin1String("Cross");
         }
     }
 

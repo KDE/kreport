@@ -18,7 +18,7 @@
 
 #include "KoReportItemLine.h"
 
-#include <KProperty/Set.h>
+#include <KProperty/Set>
 #include "renderobjects.h"
 
 KoReportItemLine::KoReportItemLine()
@@ -34,13 +34,13 @@ KoReportItemLine::KoReportItemLine(QDomNode & element)
     QDomNode node;
     QPointF _s, _e;
 
-    m_name->setValue(element.toElement().attribute("report:name"));
-    Z = element.toElement().attribute("report:z-index").toDouble();
+    m_name->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    Z = element.toElement().attribute(QLatin1String("report:z-index")).toDouble();
 
-    _s.setX(KoUnit::parseValue(element.toElement().attribute("svg:x1", "1cm")));
-    _s.setY(KoUnit::parseValue(element.toElement().attribute("svg:y1", "1cm")));
-    _e.setX(KoUnit::parseValue(element.toElement().attribute("svg:x2", "1cm")));
-    _e.setY(KoUnit::parseValue(element.toElement().attribute("svg:y2", "2cm")));
+    _s.setX(KoUnit::parseValue(element.toElement().attribute(QLatin1String("svg:x1"), QLatin1String("1cm"))));
+    _s.setY(KoUnit::parseValue(element.toElement().attribute(QLatin1String("svg:y1"), QLatin1String("1cm"))));
+    _e.setX(KoUnit::parseValue(element.toElement().attribute(QLatin1String("svg:x2"), QLatin1String("1cm"))));
+    _e.setY(KoUnit::parseValue(element.toElement().attribute(QLatin1String("svg:y2"), QLatin1String("2cm"))));
     m_start.setPointPos(_s);
     m_end.setPointPos(_e);
 
@@ -48,7 +48,7 @@ KoReportItemLine::KoReportItemLine(QDomNode & element)
         node = nl.item(i);
         n = node.nodeName();
 
-        if (n == "report:line-style") {
+        if (n == QLatin1String("report:line-style")) {
             KRLineStyleData ls;
             if (parseReportLineStyleData(node.toElement(), ls)) {
                 m_lineWeight->setValue(ls.weight);
@@ -68,13 +68,13 @@ KoReportItemLine::~KoReportItemLine()
 
 void KoReportItemLine::createProperties()
 {
-    m_set = new KoProperty::Set(0, "Line");
+    m_set = new KoProperty::Set(0, QLatin1String("Line"));
 
     m_lineWeight = new KoProperty::Property("line-weight", 1, tr("Line Weight"));
     m_lineColor = new KoProperty::Property("line-color", QColor(Qt::black), tr("Line Color"));
     m_lineStyle = new KoProperty::Property("line-style", QPen(Qt::SolidLine), tr("Line Style"), tr("Line Style"), KoProperty::LineStyle);
-    m_start.setName("Start");
-    m_end.setName("End");
+    m_start.setName(QLatin1String("Start"));
+    m_end.setName(QLatin1String("End"));
 
     m_set->addProperty(m_name);
     m_set->addProperty(m_start.property());
@@ -104,7 +104,7 @@ void KoReportItemLine::setWeight(int w)
 
 QString KoReportItemLine::typeName() const
 {
-    return "line";
+    return QLatin1String("line");
 }
 
 int KoReportItemLine::renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset,

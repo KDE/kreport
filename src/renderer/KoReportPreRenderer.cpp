@@ -415,7 +415,7 @@ ORODocument* KoReportPreRenderer::generate()
 
     // Do this check now so we don't have to undo a lot of work later if it fails
     LabelSizeInfo label;
-    if (d->m_reportData->page.getPageSize() == "Labels") {
+    if (d->m_reportData->page.getPageSize() == QLatin1String("Labels")) {
         label = LabelSizeInfo::find(d->m_reportData->page.getLabelType());
         if (label.isNull())
             return 0;
@@ -451,7 +451,7 @@ ORODocument* KoReportPreRenderer::generate()
     //kDebug() << "Calculating Page Size";
     ReportPageOptions rpo(d->m_reportData->page);
     // This should reflect the information of the report page size
-    if (d->m_reportData->page.getPageSize() == "Custom") {
+    if (d->m_reportData->page.getPageSize() == QLatin1String("Custom")) {
         d->m_maxWidth = d->m_reportData->page.getCustomWidth();
         d->m_maxHeight = d->m_reportData->page.getCustomHeight();
     } else {
@@ -491,7 +491,7 @@ ORODocument* KoReportPreRenderer::generate()
             d->m_scriptHandler->registerScriptObject(i.value(), i.key());
 
             //!TODO This is a hack
-            if (i.key() == "field")
+            if (i.key() == QLatin1String("field"))
                 QObject::connect(d->m_scriptHandler, SIGNAL(groupChanged(QString)), i.value(), SLOT(setWhere(QString)));
         }
     }
@@ -612,7 +612,7 @@ bool KoReportPreRenderer::setDom(const QDomElement &docReport)
         delete d->m_reportData;
         d->m_valid = false;
 
-        if (docReport.tagName() != "report:content") {
+        if (docReport.tagName() != QLatin1String("report:content")) {
             kWarning() << "report schema is invalid";
             return false;
         }

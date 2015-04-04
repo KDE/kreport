@@ -20,7 +20,7 @@
 
 #include "krsectiondata.h"
 
-#include <KProperty/Set.h>
+#include <KProperty/Set>
 #include <QColor>
 
 #include "KoReportPluginInterface.h"
@@ -43,14 +43,14 @@ KRSectionData::KRSectionData(const QDomElement & elemSource, KoReportReportData*
         return;
     }
 
-    m_type = sectionTypeFromString(elemSource.attribute("report:section-type"));
+    m_type = sectionTypeFromString(elemSource.attribute(QLatin1String("report:section-type")));
     if (m_type == KRSectionData::None) {
         m_valid = false;
         return;
     }
     createProperties(elemSource);
 
-    m_backgroundColor->setValue(QColor(elemSource.attribute("fo:background-color")));
+    m_backgroundColor->setValue(QColor(elemSource.attribute(QLatin1String("fo:background-color"))));
 
     KoReportPluginManager* manager = KoReportPluginManager::self();
 
@@ -58,9 +58,9 @@ KRSectionData::KRSectionData(const QDomElement & elemSource, KoReportReportData*
     for (int nodeCounter = 0; nodeCounter < section.count(); nodeCounter++) {
         QDomElement elemThis = section.item(nodeCounter).toElement();
         QString n = elemThis.tagName();
-        if (n.startsWith("report:")) {
+        if (n.startsWith(QLatin1String("report:"))) {
             QString reportItemName = n.mid(qstrlen("report:"));
-            if (reportItemName == "line") {
+            if (reportItemName == QLatin1String("line")) {
                 KoReportItemLine * line = new KoReportItemLine(elemThis);
                 m_objects.append(line);
                 continue;
@@ -101,13 +101,13 @@ bool KRSectionData::xLessThan(KoReportItemBase* s1, KoReportItemBase* s2)
 
 void KRSectionData::createProperties(const QDomElement & elemSource)
 {
-    m_set = new KoProperty::Set(this, "Section");
+    m_set = new KoProperty::Set(this, QLatin1String("Section"));
 
     m_height = new KoProperty::Property("height", KoUnit(KoUnit::Centimeter).fromUserValue(2.0), tr("Height"));
     m_backgroundColor = new KoProperty::Property("background-color", QColor(Qt::white), tr("Background Color"));
-    m_height->setOption("unit", "cm");
+    m_height->setOption("unit", QLatin1String("cm"));
     if (!elemSource.isNull())
-        m_height->setValue(KoUnit::parseValue(elemSource.attribute("svg:height", "2.0cm")));
+        m_height->setValue(KoUnit::parseValue(elemSource.attribute(QLatin1String("svg:height"), QLatin1String("2.0cm"))));
 
     m_set->addProperty(m_height);
     m_set->addProperty(m_backgroundColor);
@@ -115,7 +115,7 @@ void KRSectionData::createProperties(const QDomElement & elemSource)
 
 QString KRSectionData::name() const
 {
-    return (objectName() + '-' + sectionTypeString(m_type));
+    return (objectName() + QLatin1Char('-') + sectionTypeString(m_type));
 }
 
 QString KRSectionData::sectionTypeString(KRSectionData::Section s)
@@ -124,49 +124,49 @@ QString KRSectionData::sectionTypeString(KRSectionData::Section s)
     QString sectiontype;
     switch (s) {
     case KRSectionData::PageHeaderAny:
-        sectiontype = "header-page-any";
+        sectiontype = QLatin1String("header-page-any");
         break;
     case KRSectionData::PageHeaderEven:
-        sectiontype = "header-page-even";
+        sectiontype = QLatin1String("header-page-even");
         break;
     case KRSectionData::PageHeaderOdd:
-        sectiontype = "header-page-odd";
+        sectiontype = QLatin1String("header-page-odd");
         break;
     case KRSectionData::PageHeaderFirst:
-        sectiontype = "header-page-first";
+        sectiontype = QLatin1String("header-page-first");
         break;
     case KRSectionData::PageHeaderLast:
-        sectiontype = "header-page-last";
+        sectiontype = QLatin1String("header-page-last");
         break;
     case KRSectionData::PageFooterAny:
-        sectiontype = "footer-page-any";
+        sectiontype = QLatin1String("footer-page-any");
         break;
     case KRSectionData::PageFooterEven:
-        sectiontype = "footer-page-even";
+        sectiontype = QLatin1String("footer-page-even");
         break;
     case KRSectionData::PageFooterOdd:
-        sectiontype = "footer-page-odd";
+        sectiontype = QLatin1String("footer-page-odd");
         break;
     case KRSectionData::PageFooterFirst:
-        sectiontype = "footer-page-first";
+        sectiontype = QLatin1String("footer-page-first");
         break;
     case KRSectionData::PageFooterLast:
-        sectiontype = "footer-page-last";
+        sectiontype = QLatin1String("footer-page-last");
         break;
     case KRSectionData::ReportHeader:
-        sectiontype = "header-report";
+        sectiontype = QLatin1String("header-report");
         break;
     case KRSectionData::ReportFooter:
-        sectiontype = "footer-report";
+        sectiontype = QLatin1String("footer-report");
         break;
     case KRSectionData::GroupHeader:
-        sectiontype = "group-header";
+        sectiontype = QLatin1String("group-header");
         break;
     case KRSectionData::GroupFooter:
-        sectiontype = "group-footer";
+        sectiontype = QLatin1String("group-footer");
         break;
     case KRSectionData::Detail:
-        sectiontype = "detail";
+        sectiontype = QLatin1String("detail");
         break;
     default:
         ;
@@ -180,35 +180,35 @@ KRSectionData::Section KRSectionData::sectionTypeFromString(const QString& s)
 //! @todo use QMap
     KRSectionData::Section sec;
     //kDebug() << "Determining section type for " << s;
-    if (s == "header-page-any")
+    if (s == QLatin1String("header-page-any"))
         sec = KRSectionData::PageHeaderAny;
-    else if (s == "header-page-even")
+    else if (s == QLatin1String("header-page-even"))
         sec = KRSectionData::PageHeaderEven;
-    else if (s == "header-page-odd")
+    else if (s == QLatin1String("header-page-odd"))
         sec = KRSectionData::PageHeaderOdd;
-    else if (s == "header-page-first")
+    else if (s == QLatin1String("header-page-first"))
         sec = KRSectionData::PageHeaderFirst;
-    else if (s == "header-page-last")
+    else if (s == QLatin1String("header-page-last"))
         sec = KRSectionData::PageHeaderLast;
-    else if (s == "header-report")
+    else if (s == QLatin1String("header-report"))
         sec = KRSectionData::ReportHeader;
-    else if (s == "footer-page-any")
+    else if (s == QLatin1String("footer-page-any"))
         sec = KRSectionData::PageFooterAny;
-    else if (s == "footer-page-even")
+    else if (s == QLatin1String("footer-page-even"))
         sec = KRSectionData::PageFooterEven;
-    else if (s == "footer-page-odd")
+    else if (s == QLatin1String("footer-page-odd"))
         sec = KRSectionData::PageFooterOdd;
-    else if (s == "footer-page-first")
+    else if (s == QLatin1String("footer-page-first"))
         sec = KRSectionData::PageFooterFirst;
-    else if (s == "footer-page-last")
+    else if (s == QLatin1String("footer-page-last"))
         sec = KRSectionData::PageFooterLast;
-    else if (s == "footer-report")
+    else if (s == QLatin1String("footer-report"))
         sec = KRSectionData::ReportFooter;
-    else if (s == "group-header")
+    else if (s == QLatin1String("group-header"))
         sec = KRSectionData::GroupHeader;
-    else if (s == "group-footer")
+    else if (s == QLatin1String("group-footer"))
         sec = KRSectionData::GroupFooter;
-    else if (s == "detail")
+    else if (s == QLatin1String("detail"))
         sec = KRSectionData::Detail;
     else
         sec = KRSectionData::None;

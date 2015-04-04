@@ -51,7 +51,6 @@ class KREPORT_EXPORT KoReportPluginInterface : public QObject
 
 //! Implementation of driver's static version information and plugin entry point.
 //! @todo better versioning
-//#define K_EXPORT_KOREPORT_ITEMPLUGIN( class_name, internal_name ) \
-//    KEXI_EXPORT_PLUGIN( "koreport", class_name, internal_name, 0, 0, 1 )
+//#define K_EXPORT_KOREPORT_ITEMPLUGIN( class_name, internal_name ) KEXI_EXPORT_PLUGIN( "koreport", class_name, internal_name, 0, 0, 1 )
 
 #endif // KOREPORTPLUGININTERFACE_H

@@ -40,7 +40,7 @@ bool KoReportPrintRenderer::setupPrinter( ORODocument * document, QPrinter * pPr
     if (document == 0 || pPrinter == 0)
         return false;
 
-    pPrinter->setCreator("KoReport Print Renderer");
+    pPrinter->setCreator(QLatin1String("KoReport Print Renderer"));
     pPrinter->setDocName(document->title());
     pPrinter->setFullPage(true);
     pPrinter->setOrientation((document->pageOptions().isPortrait() ? QPrinter::Portrait : QPrinter::Landscape));
@@ -210,7 +210,7 @@ bool KoReportPrintRenderer::render(const KoReportRendererContext &context, ORODo
                     qreal oy = sz.height() / 5;
 
                     //Checkbox Style
-                    if (chk->checkType() == "Cross") {
+                    if (chk->checkType() == QLatin1String("Cross")) {
                         context.painter->drawRoundedRect(rc, sz.width() / 10 , sz.height() / 10);
 
                         if (chk->value()) {
@@ -221,7 +221,7 @@ bool KoReportPrintRenderer::render(const KoReportRendererContext &context, ORODo
                             context.painter->drawLine(QPointF(ox, oy) + ps, QPointF(sz.width() - ox, sz.height() - oy) + ps);
                             context.painter->drawLine(QPointF(ox, sz.height() - oy) + ps, QPoint(sz.width() - ox, oy) + ps);
                         }
-                    } else if (chk->checkType() == "Dot") {
+                    } else if (chk->checkType() == QLatin1String("Dot")) {
                         //Radio Style
                         context.painter->drawEllipse(rc);
 

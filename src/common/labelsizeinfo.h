@@ -26,7 +26,7 @@
 class LabelSizeInfo
 {
 public:
-    LabelSizeInfo(const QString&, const QString&, int, int, int, int, int, int, int, int);
+    LabelSizeInfo(const char *n, const char *p, int c, int r, int w, int h, int sx, int sy, int xg, int yg);
     LabelSizeInfo();
     virtual ~LabelSizeInfo();
 

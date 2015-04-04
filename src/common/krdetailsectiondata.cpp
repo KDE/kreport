@@ -39,7 +39,7 @@ KRDetailSectionData::KRDetailSectionData(const QDomElement &elemSource, KoReport
     m_detailSection = 0;
     m_valid = false;
     //kDebug() << elemSource.tagName();
-    if (elemSource.tagName() != "report:detail") {
+    if (elemSource.tagName() != QLatin1String("report:detail")) {
         return;
     }
 
@@ -48,40 +48,40 @@ KRDetailSectionData::KRDetailSectionData(const QDomElement &elemSource, KoReport
     for (int nodeCounter = 0; nodeCounter < sections.count(); nodeCounter++) {
         QDomElement elemThis = sections.item(nodeCounter).toElement();
 
-        if (elemThis.tagName() == "report:group") {
+        if (elemThis.tagName() == QLatin1String("report:group")) {
             ORDetailGroupSectionData * dgsd = new ORDetailGroupSectionData();
 
-            if ( elemThis.hasAttribute( "report:group-column" ) ) {
-                dgsd->m_column = elemThis.attribute( "report:group-column" );
+            if ( elemThis.hasAttribute( QLatin1String("report:group-column") ) ) {
+                dgsd->m_column = elemThis.attribute( QLatin1String("report:group-column") );
             }
 
-            if ( elemThis.hasAttribute( "report:group-page-break" ) ) {
-                QString s = elemThis.attribute( "report:group-page-break" );
-                if ( s == "after-footer" ) {
+            if ( elemThis.hasAttribute( QLatin1String("report:group-page-break") ) ) {
+                QString s = elemThis.attribute( QLatin1String("report:group-page-break") );
+                if ( s == QLatin1String("after-footer") ) {
                     dgsd->m_pagebreak = ORDetailGroupSectionData::BreakAfterGroupFooter;
-                } else if ( s == "before-header" ) {
+                } else if ( s == QLatin1String("before-header") ) {
                     dgsd->m_pagebreak = ORDetailGroupSectionData::BreakBeforeGroupHeader;
                 } else {
                     dgsd->m_pagebreak = ORDetailGroupSectionData::BreakNone;
                 }
             }
 
-            if (elemThis.attribute("report:group-sort", "ascending") == "ascending") {
+            if (elemThis.attribute(QLatin1String("report:group-sort"), QLatin1String("ascending")) == QLatin1String("ascending")) {
                 dgsd->m_sort = Qt::AscendingOrder;
             } else {
                 dgsd->m_sort = Qt::DescendingOrder;
             }
             
-            for ( QDomElement e = elemThis.firstChildElement( "report:section" ); ! e.isNull(); e = e.nextSiblingElement( "report:section" ) ) {
-                QString s = e.attribute( "report:section-type" );
-                if ( s == "group-header" ) {
+            for ( QDomElement e = elemThis.firstChildElement( QLatin1String("report:section") ); ! e.isNull(); e = e.nextSiblingElement( QLatin1String("report:section") ) ) {
+                QString s = e.attribute( QLatin1String("report:section-type") );
+                if ( s == QLatin1String("group-header") ) {
                     KRSectionData * sd = new KRSectionData(e, report);
                     if (sd->isValid()) {
                         dgsd->m_groupHeader = sd;
                     } else {
                         delete sd;
                     }
-                } else if ( s == "group-footer" ) {
+                } else if ( s == QLatin1String("group-footer") ) {
                     KRSectionData * sd = new KRSectionData(e, report);
                     if (sd->isValid()) {
                         dgsd->m_groupFooter = sd;
@@ -96,7 +96,7 @@ KRDetailSectionData::KRDetailSectionData(const QDomElement &elemSource, KoReport
             s.order = dgsd->m_sort;
             m_sortedFields.append(s);
 	    
-        } else if (elemThis.tagName() == "report:section" && elemThis.attribute("report:section-type") == "detail") {
+        } else if (elemThis.tagName() == QLatin1String("report:section") && elemThis.attribute(QLatin1String("report:section-type")) == QLatin1String("detail")) {
             KRSectionData * sd = new KRSectionData(elemThis, report);
             if (sd->isValid()) {
                 m_detailSection = sd;
