@@ -115,11 +115,18 @@ generate_export_header(KReport)
 target_include_directories(KReport INTERFACE "$<INSTALL_INTERFACE:${INCLUDE_INSTALL_DIR}/KReport>")
 
 target_link_libraries(KReport
-    KF5::WidgetsAddons
-    KF5::KrossCore KF5::KrossUi
-    KF5::KIOCore KF5::KIOFileWidgets KF5::KIOWidgets KF5::KIONTLM
-    KProperty
-    ${CALLIGRADB_LIBS} # ONLY FOR KexiPluginLoader, TODO: remove
+    PUBLIC
+        Qt5::PrintSupport
+        KF5::WidgetsAddons
+        KF5::KrossCore
+        KF5::KrossUi
+        #KF5::KIOCore
+        #KF5::KIOFileWidgets
+        #KF5::KIOWidgets
+        #KF5::KIONTLM
+        KProperty
+        ${CALLIGRADB_LIBS} # ONLY FOR KexiPluginLoader, TODO: remove
+    PRIVATE
 )
 
 #target_link_libraries(kreport LINK_INTERFACE_LIBRARIES
