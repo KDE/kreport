@@ -129,9 +129,6 @@ target_link_libraries(KReport
     PRIVATE
 )
 
-#target_link_libraries(kreport LINK_INTERFACE_LIBRARIES
-#  ${KOPROPERTY_LIBS} ${KDE4_KROSSCORE_LIBS} kowidgets)
-
 set_target_properties(KReport
     PROPERTIES VERSION 1.0
                SOVERSION 1.0.0

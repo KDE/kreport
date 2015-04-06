@@ -1,9 +1,5 @@
-
-set(MAPS_PLUG koreport_mapsplugin)
-
 include_directories(
     ${MARBLE_INCLUDE_DIR}
-    ${KOPROPERTY_INCLUDES}
     ${KOREPORT_INCLUDES}
 )
 
@@ -16,13 +12,16 @@ set(koreport_mapsplugin_LIB_SRCS
     MapRenderer.cpp
 )
 
-kde4_add_plugin(${MAPS_PLUG} ${koreport_mapsplugin_LIB_SRCS})
+kde4_add_plugin(koreport_mapsplugin ${koreport_mapsplugin_LIB_SRCS})
 
-target_link_libraries(${MAPS_PLUG} ${KDE4_KDECORE_LIBS} ${KOREPORT_LIBS} ${KOPROPERTY_LIBS} ${MARBLE_LIBRARIES})
-
+target_link_libraries(koreport_mapsplugin
+    ${KOREPORT_LIBS}
+    ${MARBLE_LIBRARIES}
+    KProperty
+)
 
 ########### install files ###############
 
-install(TARGETS ${MAPS_PLUG}  DESTINATION ${PLUGIN_INSTALL_DIR})
+install(TARGETS koreport_mapsplugin DESTINATION ${PLUGIN_INSTALL_DIR})
 install( FILES  koreport_mapsplugin.desktop  DESTINATION ${SERVICES_INSTALL_DIR}/calligra)
-kde4_install_icons(${DATA_INSTALL_DIR}/calligra/icons)
+ecm_install_icons(${DATA_INSTALL_DIR}/calligra/icons)
