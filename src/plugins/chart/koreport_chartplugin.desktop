@@ -1,6 +1,17 @@
 [Desktop Entry]
 Name=Chart Report Plugin
+Name[fr]=Module externe de panneaux pour Chart
+Name[nl]=Plug-in voor grafiekrapport
+Name[pt]='Plugin' Web de Relatórios de Gráficos
+Name[sv]=Insticksprogram för diagramrapport
+Name[uk]=Додаток діаграм звіту
+Name[x-test]=xxChart Report Pluginxx
 Comment=Calligra Reports Chart Plugin
+Comment[nl]=Plug-in voor Calligra Reports Chart
+Comment[pt]='Plugin' de Gráficos dos Relatórios do Calligra
+Comment[sv]=Calligra-insticksprogram för diagramrapport
+Comment[uk]=Додаток діаграм у звітах Calligra
+Comment[x-test]=xxCalligra Reports Chart Pluginxx
 X-KDE-Library=koreport_chartplugin
 X-KDE-ServiceTypes=KoReport/ItemPlugin
 Type=Service

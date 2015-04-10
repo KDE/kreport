@@ -1,6 +1,18 @@
 [Desktop Entry]
 Name=Barcode Report Plugin
+Name[fr]=Module externe de rapport Barcode
+Name[nl]=Plug-in voor Barcoderapport
+Name[pt]='Plugin' de Relatório de Códigos de Barras
+Name[sv]=Insticksprogram för streckkodsrapport
+Name[uk]=Додаток штрихкодів звіту
+Name[x-test]=xxBarcode Report Pluginxx
 Comment=KoReport Barcode Plugin
+Comment[fr]=Module externe de code barres KoReport
+Comment[nl]=Plug-in voor KoReport-barcode
+Comment[pt]='Plugin' de Códigos de Barras do KoReport
+Comment[sv]=Insticksprogram för Koffice streckkodsrapport
+Comment[uk]=Додаток штрихкодів KoReport
+Comment[x-test]=xxKoReport Barcode Pluginxx
 X-KDE-Library=koreport_barcodeplugin
 X-KDE-ServiceTypes=KoReport/ItemPlugin
 Type=Service

@@ -1,6 +1,18 @@
 [Desktop Entry]
 Name=Maps Report Plugin
+Name[fr]=Module externe de rapports Maps
+Name[nl]=Plug-in voor Maps Report
+Name[pt]='Plugin' de Relatório de Mapas
+Name[sv]=Insticksprogram för kartrapport
+Name[uk]=Додаток карт звіту
+Name[x-test]=xxMaps Report Pluginxx
 Comment=Calligra Reports Maps Plugin
+Comment[fr]=Module externe de panneaux pour Calligra
+Comment[nl]=Plug-in voor Calligra Reports Maps
+Comment[pt]='Plugin' de Mapas dos Relatórios do Calligra
+Comment[sv]=Calligra-insticksprogram för kartrapport
+Comment[uk]=Додаток карт у звітах Calligra
+Comment[x-test]=xxCalligra Reports Maps Pluginxx
 X-KDE-Library=koreport_mapsplugin
 X-KDE-ServiceTypes=KoReport/ItemPlugin
 Type=Service

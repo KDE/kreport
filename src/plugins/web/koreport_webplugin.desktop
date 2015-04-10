@@ -1,6 +1,17 @@
 [Desktop Entry]
 Name=Web Report Plugin
+Name[fr]=Module externe de rapports web
+Name[nl]=Plug-in voor Webrapport
+Name[pt]='Plugin' de Relatório Web
+Name[sv]=Insticksprogram för webbrapport
+Name[uk]=Додаток перегляду інтернету у звіті
+Name[x-test]=xxWeb Report Pluginxx
 Comment=Calligra Reports Web Plugin
+Comment[nl]=Plug-in voor Calligra Reports Web
+Comment[pt]='Plugin' Web de Relatórios do Calligra
+Comment[sv]=Calligra-insticksprogram för webbrapport
+Comment[uk]=Інтернет-додаток звітів Calligra
+Comment[x-test]=xxCalligra Reports Web Pluginxx
 X-KDE-Library=koreport_webplugin
 X-KDE-ServiceTypes=KoReport/ItemPlugin
 Type=Service
