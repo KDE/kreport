@@ -100,7 +100,7 @@ void KoReportItemChart::createProperties()
 
     m_dataSource->setOption("extraValueAllowed", "true");
 
-    m_font = new KProperty("Font", KGlobalSettings::generalFont(), i18n("Font"), i18n("Field Font"));
+    m_font = new KProperty("font", KGlobalSettings::generalFont(), i18n("Font"), i18n("Field Font"));
 
     keys << 1 << 2 << 3 << 4 << 5;
     strings << i18n("Bar") << i18n("Line") << i18n("Pie") << i18n("Ring") << i18n("Polar");

@@ -25,7 +25,7 @@
 KoReportItemBase::KoReportItemBase()
 {
     Z = 0;
-    m_name = new KProperty("Name", QString(), i18n("Name"), i18n("Object Name"));
+    m_name = new KProperty("name", QString(), i18n("Name"), i18n("Object Name"));
     m_name->setAutoSync(0);
 }
 

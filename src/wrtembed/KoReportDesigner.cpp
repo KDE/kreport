@@ -617,7 +617,7 @@ void KoReportDesigner::createProperties()
     connect(m_set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
-    m_title = new KProperty("Title", QLatin1String("Report"), tr("Title"), tr("Report Title"));
+    m_title = new KProperty("title", QLatin1String("Report"), tr("Title"), tr("Report Title"));
 
     keys.clear();
     keys =  KoPageFormat::pageFormatNames();

@@ -24,7 +24,7 @@
 KRPos::KRPos(const KoUnit& unit)
 {
     m_unit = unit;
-    m_property = new KProperty("Position", toScene(), i18n("Position"));
+    m_property = new KProperty("position", toScene(), i18n("Position"));
 }
 
 void KRPos::setName(const QString& name)

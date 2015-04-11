@@ -124,7 +124,7 @@ void KoReportItemText::createProperties()
     strings << tr("Top") << tr("Center") << tr("Bottom");
     m_verticalAlignment = new KProperty("vertical-align", keys, strings, "center", tr("Vertical Alignment"));
 
-    m_font = new KProperty("Font", QApplication::font(), "Font", tr("Font"));
+    m_font = new KProperty("font", QApplication::font(), tr("Font"));
 
     m_backgroundColor = new KProperty("background-color", QColor(Qt::white), tr("Background Color"));
     m_foregroundColor = new KProperty("foreground-color", QPalette().color(QPalette::Foreground), tr("Foreground Color"));

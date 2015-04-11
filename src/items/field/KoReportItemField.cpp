@@ -102,8 +102,7 @@ void KoReportItemField::createProperties()
     strings << tr("Top") << tr("Center") << tr("Bottom");
     m_verticalAlignment = new KProperty("vertical-align", keys, strings, QLatin1String("center"), tr("Vertical Alignment"));
 
-    m_font = new KProperty("Font", QApplication::font(), QLatin1String("Font"), tr("Font"));
-
+    m_font = new KProperty("font", QApplication::font(), tr("Font"));
 
     m_backgroundColor = new KProperty("background-color", QColor(Qt::white), tr("Background Color"));
     m_foregroundColor = new KProperty("foreground-color", QPalette().color(QPalette::Foreground), tr("Foreground Color"));
@@ -122,10 +121,10 @@ void KoReportItemField::createProperties()
 
 #if 0 //Field Totals
     //TODO I do not think we need these
-    m_trackTotal = new KProperty("TrackTotal", QVariant(false), futureI18n("Track Total"));
-    m_trackBuiltinFormat = new KProperty("TrackBuiltinFormat", QVariant(false), futureI18n("Track Builtin Format"));
-    _useSubTotal = new KProperty("UseSubTotal", QVariant(false), futureI18n("Use Sub Total"_);
-    _trackTotalFormat = new KProperty("TrackTotalFormat", QString(), futureI18n("Track Total Format"));
+    m_trackTotal = new KProperty("trackTotal", QVariant(false), futureI18n("Track Total"));
+    m_trackBuiltinFormat = new KProperty("trackBuiltinFormat", QVariant(false), futureI18n("Track Builtin Format"));
+    _useSubTotal = new KProperty("useSubTotal", QVariant(false), futureI18n("Use Sub Total"_);
+    _trackTotalFormat = new KProperty("trackTotalFormat", QString(), futureI18n("Track Total Format"));
 #endif
 
     addDefaultProperties();

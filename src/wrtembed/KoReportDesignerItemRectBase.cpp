@@ -312,9 +312,9 @@ void KoReportDesignerItemRectBase::propertyChanged(const KPropertySet &s, const 
 {
     Q_UNUSED(s)
 
-    if (p.name() == "Position") {
+    if (p.name() == "position") {
         m_ppos->setUnitPos(p.value().toPointF(), KRPos::DontUpdateProperty);
-    } else if (p.name() == "Size") {
+    } else if (p.name() == "size") {
         m_psize->setUnitSize(p.value().toSizeF(), KRSize::DontUpdateProperty);
     }
 

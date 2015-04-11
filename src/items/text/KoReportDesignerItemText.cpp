@@ -160,11 +160,11 @@ void KoReportDesignerItemText::slotPropertyChanged(KPropertySet &s, KProperty &p
 {
     Q_UNUSED(s);
 
-    if (p.name() == "Position") {
+    if (p.name() == "position") {
         m_pos.setUnitPos(p.value().toPointF(), KRPos::DontUpdateProperty);
-    } else if (p.name() == "Size") {
+    } else if (p.name() == "size") {
         m_size.setUnitSize(p.value().toSizeF(), KRSize::DontUpdateProperty);
-    } else if (p.name() == "Name") {
+    } else if (p.name() == "name") {
         //For some reason p.oldValue returns an empty string
         if (!m_reportDesigner->isEntityNameUnique(p.value().toString(), this)) {
             p.setValue(m_oldName);
