@@ -97,7 +97,7 @@ void Label::setVerticalAlignment(int a)
         m_label->m_verticalAlignment->setValue(QLatin1String("middle"));
         break;
     case 1:
-        m_label->m_verticalAlignment->setValue(QLatin1String("mottom"));
+        m_label->m_verticalAlignment->setValue(QLatin1String("bottom"));
         break;
     default:
         m_label->m_verticalAlignment->setValue(QLatin1String("middle"));
