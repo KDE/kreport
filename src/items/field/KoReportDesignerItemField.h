@@ -24,7 +24,7 @@
 #include "KoReportItemField.h"
 #include "wrtembed/KoReportDesignerItemRectBase.h"
 
-#include <KProperty/Set>
+#include <KPropertySet>
 
 #include <QGraphicsRectItem>
 
@@ -53,7 +53,7 @@ private:
     QRect getTextRect() const;
 
 private Q_SLOTS:
-    void slotPropertyChanged(KoProperty::Set &, KoProperty::Property &);
+    void slotPropertyChanged(KPropertySet &, KProperty &);
 };
 
 #endif

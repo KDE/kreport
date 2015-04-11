@@ -48,17 +48,17 @@ public:
 
 protected:
 
-    KoProperty::Property* m_controlSource;
-    KoProperty::Property* m_horizontalAlignment;
-    KoProperty::Property* m_verticalAlignment;
-    KoProperty::Property* m_font;
-    KoProperty::Property* m_foregroundColor;
-    KoProperty::Property* m_backgroundColor;
-    KoProperty::Property* m_backgroundOpacity;
-    KoProperty::Property* m_lineColor;
-    KoProperty::Property* m_lineWeight;
-    KoProperty::Property* m_lineStyle;
-    KoProperty::Property* m_itemValue;
+    KProperty* m_controlSource;
+    KProperty* m_horizontalAlignment;
+    KProperty* m_verticalAlignment;
+    KProperty* m_font;
+    KProperty* m_foregroundColor;
+    KProperty* m_backgroundColor;
+    KProperty* m_backgroundOpacity;
+    KProperty* m_lineColor;
+    KProperty* m_lineWeight;
+    KProperty* m_lineStyle;
+    KProperty* m_itemValue;
 
 
     qreal m_bottomPadding;

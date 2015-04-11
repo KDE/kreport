@@ -22,7 +22,7 @@
 #include "wrtembed/KoReportDesignerItemRectBase.h"
 #include "KoReportItemCheck.h"
 
-#include <KProperty/Set>
+#include <KPropertySet>
 
 #include <QGraphicsRectItem>
 
@@ -48,7 +48,7 @@ private:
     void init(QGraphicsScene*, KoReportDesigner*);
 
 private Q_SLOTS:
-    void slotPropertyChanged(KoProperty::Set &, KoProperty::Property &);
+    void slotPropertyChanged(KPropertySet &, KProperty &);
 
 protected:
     virtual void mousePressEvent(QGraphicsSceneMouseEvent * event);

@@ -16,8 +16,8 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "KoReportItemMaps.h"
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
+#include <KProperty>
+#include <KPropertySet>
 #include <kdebug.h>
 #include <klocalizedstring.h>
 #include <QBuffer>
@@ -65,24 +65,24 @@ KoReportItemMaps::~KoReportItemMaps()
 
 void KoReportItemMaps::createProperties()
 {
-    m_set = new KoProperty::Set(0, "Maps");
+    m_set = new KPropertySet(0, "Maps");
 
-    m_controlSource = new KoProperty::Property("item-data-source", QStringList(), QStringList(), QString(), i18n("Data Source"));
+    m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), i18n("Data Source"));
 
-    m_latitudeProperty = new KoProperty::Property("latitude", 0.0, i18n("Latitude"), i18n("Latitude") );
+    m_latitudeProperty = new KProperty("latitude", 0.0, i18n("Latitude"), i18n("Latitude") );
     m_latitudeProperty->setOption("min", -90);
     m_latitudeProperty->setOption("max", 90);
     m_latitudeProperty->setOption("unit", "°");
 
-    m_longitudeProperty = new KoProperty::Property("longitude", 0.0, i18n("longitude"), i18n("longitude") );
+    m_longitudeProperty = new KProperty("longitude", 0.0, i18n("longitude"), i18n("longitude") );
     m_longitudeProperty->setOption("min", -180);
     m_longitudeProperty->setOption("max", 180);
     m_longitudeProperty->setOption("unit", "°");
 
-    m_zoomProperty     = new KoProperty::Property("zoom", 1000, i18n("Zoom"), i18n("Zoom") );
+    m_zoomProperty     = new KProperty("zoom", 1000, i18n("Zoom"), i18n("Zoom") );
 
     QStringList mapThemIds(m_themeManager.mapThemeIds());
-    m_themeProperty = new KoProperty::Property("theme",
+    m_themeProperty = new KProperty("theme",
                                                     mapThemIds,
                                                     mapThemIds,
                                                     mapThemIds[1]);

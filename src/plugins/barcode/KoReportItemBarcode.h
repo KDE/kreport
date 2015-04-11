@@ -45,11 +45,11 @@ public:
 
 protected:
 
-    KoProperty::Property * m_controlSource;
-    KoProperty::Property * m_horizontalAlignment;
-    KoProperty::Property * m_format;
-    KoProperty::Property * m_maxLength;
-    KoProperty::Property* m_itemValue;
+    KProperty * m_controlSource;
+    KProperty * m_horizontalAlignment;
+    KProperty * m_format;
+    KProperty * m_maxLength;
+    KProperty* m_itemValue;
 
 
     int alignment();

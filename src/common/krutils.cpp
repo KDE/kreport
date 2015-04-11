@@ -23,7 +23,7 @@
 #include "krsize.h"
 #include "KoReportItemBase.h"
 
-#include <KProperty/Property>
+#include <KProperty>
 
 #include <QColor>
 #include <QFont>
@@ -293,7 +293,7 @@ void KRUtils::buildXMLLineStyle(QDomDocument & doc, QDomElement & entity, KRLine
     entity.appendChild(element);
 }
 
-void KRUtils::addPropertyAsAttribute(QDomElement* e, KoProperty::Property* p)
+void KRUtils::addPropertyAsAttribute(QDomElement* e, KProperty* p)
 {
     const QString name = QLatin1String("report:") + QLatin1String(p->name().toLower());
 

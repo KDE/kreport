@@ -23,7 +23,7 @@
 #include "common/krpos.h"
 #include "common/krsize.h"
 
-#include <KProperty/Set>
+#include <KPropertySet>
 
 #include <QRect>
 #include <QPainter>
@@ -53,9 +53,9 @@ public:
     virtual QString itemDataSource() const;
 
 protected:
-    KoProperty::Property * m_controlSource;
-    KoProperty::Property* m_resizeMode;
-    KoProperty::Property* m_staticImage;
+    KProperty * m_controlSource;
+    KProperty* m_resizeMode;
+    KProperty* m_staticImage;
 
     void setMode(const QString&);
     void setInlineImageData(QByteArray, const QString& = QString());

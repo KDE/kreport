@@ -29,7 +29,7 @@
 
 #include <kdebug.h>
 
-#include <KProperty/Set>
+#include <KPropertySet>
 
 #include "common/krreportdata.h"
 #include "common/KoReportItemBase.h"
@@ -188,7 +188,7 @@ public:
     /**
     @return the property set for the general report properties
     */
-    KoProperty::Set* propertySet() const {
+    KPropertySet* propertySet() const {
         return m_set;
     }
 
@@ -224,12 +224,12 @@ public:
     @brief Sets the property set for the currently selected item
     @param set Property set of item
     */
-    void changeSet(KoProperty::Set *);
+    void changeSet(KPropertySet *);
 
     /**
     @brief Return the property set for the curently selected item
     */
-    KoProperty::Set* itemPropertySet() const {
+    KPropertySet* itemPropertySet() const {
         return m_itmset;
     }
 
@@ -341,24 +341,24 @@ private:
 
     //Properties
     void createProperties();
-    KoProperty::Set* m_set;
-    KoProperty::Set* m_itmset;
-    KoProperty::Property* m_title;
-    KoProperty::Property* m_pageSize;
-    KoProperty::Property* m_orientation;
-    KoProperty::Property* m_unit;
-    KoProperty::Property* m_customHeight;
-    KoProperty::Property* m_customWidth;
-    KoProperty::Property* m_leftMargin;
-    KoProperty::Property* m_rightMargin;
-    KoProperty::Property* m_topMargin;
-    KoProperty::Property* m_bottomMargin;
-    KoProperty::Property* m_showGrid;
-    KoProperty::Property* m_gridDivisions;
-    KoProperty::Property* m_gridSnap;
-    KoProperty::Property* m_labelType;
-    KoProperty::Property* m_interpreter;
-    KoProperty::Property* m_script;
+    KPropertySet* m_set;
+    KPropertySet* m_itmset;
+    KProperty* m_title;
+    KProperty* m_pageSize;
+    KProperty* m_orientation;
+    KProperty* m_unit;
+    KProperty* m_customHeight;
+    KProperty* m_customWidth;
+    KProperty* m_leftMargin;
+    KProperty* m_rightMargin;
+    KProperty* m_topMargin;
+    KProperty* m_bottomMargin;
+    KProperty* m_showGrid;
+    KProperty* m_gridDivisions;
+    KProperty* m_gridSnap;
+    KProperty* m_labelType;
+    KProperty* m_interpreter;
+    KProperty* m_script;
 
     ReportWriterSectionData *m_sectionData;
     unsigned int selectionCount() const;
@@ -367,7 +367,7 @@ private:
     void unsetSectionCursor();
 
 private Q_SLOTS:
-    void slotPropertyChanged(KoProperty::Set &s, KoProperty::Property &p);
+    void slotPropertyChanged(KPropertySet &s, KProperty &p);
 
     /**
     @brief When the 'page' button in the top left is pressed, change the property set to the reports properties.
@@ -375,7 +375,7 @@ private Q_SLOTS:
     void slotPageButton_Pressed();
 
 Q_SIGNALS:
-    void pagePropertyChanged(KoProperty::Set &s);
+    void pagePropertyChanged(KPropertySet &s);
     void propertySetChanged();
     void dirty();
     void reportDataChanged();

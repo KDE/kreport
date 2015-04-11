@@ -18,7 +18,7 @@
 
 #include "KoReportItemLine.h"
 
-#include <KProperty/Set>
+#include <KPropertySet>
 #include "renderobjects.h"
 
 KoReportItemLine::KoReportItemLine()
@@ -68,11 +68,11 @@ KoReportItemLine::~KoReportItemLine()
 
 void KoReportItemLine::createProperties()
 {
-    m_set = new KoProperty::Set(0, QLatin1String("Line"));
+    m_set = new KPropertySet(0, QLatin1String("Line"));
 
-    m_lineWeight = new KoProperty::Property("line-weight", 1, tr("Line Weight"));
-    m_lineColor = new KoProperty::Property("line-color", QColor(Qt::black), tr("Line Color"));
-    m_lineStyle = new KoProperty::Property("line-style", QPen(Qt::SolidLine), tr("Line Style"), tr("Line Style"), KoProperty::LineStyle);
+    m_lineWeight = new KProperty("line-weight", 1, tr("Line Weight"));
+    m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
+    m_lineStyle = new KProperty("line-style", QPen(Qt::SolidLine), tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
     m_start.setName(QLatin1String("Start"));
     m_end.setName(QLatin1String("End"));
 

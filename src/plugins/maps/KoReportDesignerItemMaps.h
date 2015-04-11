@@ -22,8 +22,8 @@
 
 #include <KoReportDesignerItemRectBase.h>
 #include <QImage>
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
+#include <KProperty>
+#include <KPropertySet>
 #include "KoReportItemMaps.h"
 
 //
@@ -48,7 +48,7 @@ private:
     void init(QGraphicsScene*, KoReportDesigner*);
 
 private Q_SLOTS:
-    void slotPropertyChanged(KoProperty::Set &, KoProperty::Property &);
+    void slotPropertyChanged(KPropertySet &, KProperty &);
 
 };
 

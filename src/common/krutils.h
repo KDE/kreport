@@ -30,10 +30,7 @@ class KRPos;
 class KRSize;
 class KRTextStyleData;
 class KRLineStyleData;
-
-namespace KoProperty {
-    class Property;
-}
+class KProperty;
 
 namespace KRUtils
 {
@@ -56,7 +53,7 @@ namespace KRUtils
     //! Writes attributes for line style @p ls
     void buildXMLLineStyle(QDomDocument & doc, QDomElement & entity, KRLineStyleData ls);
     //! Writes attributes for the property @p p
-    void addPropertyAsAttribute(QDomElement* e, KoProperty::Property* p);
+    void addPropertyAsAttribute(QDomElement* e, KProperty* p);
     //! Writes @p attribute to element @p e, @p value is stored in points with unit 'pt'
     void setAttribute(QDomElement &e, const QString &attribute, double value);
     //! Writes point @p value as attributes to element @p e

@@ -18,7 +18,7 @@
 #include "KoReportItemText.h"
 #include "common/renderobjects.h"
 
-#include <KProperty/Set>
+#include <KPropertySet>
 
 #include <QPrinter>
 #include <QApplication>
@@ -103,36 +103,36 @@ Qt::Alignment KoReportItemText::textFlags() const
 
 void KoReportItemText::createProperties()
 {
-    m_set = new KoProperty::Set(0, "Text");
+    m_set = new KPropertySet(0, "Text");
 
-    //connect ( set, SIGNAL ( propertyChanged ( KoProperty::Set &, KoProperty::Property & ) ), this, SLOT ( propertyChanged ( KoProperty::Set &, KoProperty::Property & ) ) );
+    //connect ( set, SIGNAL ( propertyChanged ( KPropertySet &, KProperty & ) ), this, SLOT ( propertyChanged ( KPropertySet &, KProperty & ) ) );
 
     QStringList keys, strings;
 
-    //_query = new KoProperty::Property ( "Query", QStringList(), QStringList(), "Data Source", "Query" );
-    m_controlSource = new KoProperty::Property("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
+    //_query = new KProperty ( "Query", QStringList(), QStringList(), "Data Source", "Query" );
+    m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
 
-    m_itemValue = new KoProperty::Property("value", QString(), tr("Value"), tr("Value used if not bound to a field"));
+    m_itemValue = new KProperty("value", QString(), tr("Value"), tr("Value used if not bound to a field"));
 
     keys << "left" << "center" << "right";
     strings << tr("Left") << tr("Center") << tr("Right");
-    m_horizontalAlignment = new KoProperty::Property("horizontal-align", keys, strings, "left", tr("Horizontal Alignment"));
+    m_horizontalAlignment = new KProperty("horizontal-align", keys, strings, "left", tr("Horizontal Alignment"));
 
     keys.clear();
     strings.clear();
     keys << "top" << "center" << "bottom";
     strings << tr("Top") << tr("Center") << tr("Bottom");
-    m_verticalAlignment = new KoProperty::Property("vertical-align", keys, strings, "center", tr("Vertical Alignment"));
+    m_verticalAlignment = new KProperty("vertical-align", keys, strings, "center", tr("Vertical Alignment"));
 
-    m_font = new KoProperty::Property("Font", QApplication::font(), "Font", tr("Font"));
+    m_font = new KProperty("Font", QApplication::font(), "Font", tr("Font"));
 
-    m_backgroundColor = new KoProperty::Property("background-color", QColor(Qt::white), tr("Background Color"));
-    m_foregroundColor = new KoProperty::Property("foreground-color", QPalette().color(QPalette::Foreground), tr("Foreground Color"));
+    m_backgroundColor = new KProperty("background-color", QColor(Qt::white), tr("Background Color"));
+    m_foregroundColor = new KProperty("foreground-color", QPalette().color(QPalette::Foreground), tr("Foreground Color"));
 
-    m_lineWeight = new KoProperty::Property("line-weight", 1, tr("Line Weight"));
-    m_lineColor = new KoProperty::Property("line-color", QColor(Qt::black), tr("Line Color"));
-    m_lineStyle = new KoProperty::Property("line-style", QPen(Qt::NoPen), tr("Line Style"), tr("Line Style"), KoProperty::LineStyle);
-    m_backgroundOpacity = new KoProperty::Property("background-opacity", QVariant(0), tr("Background Opacity"));
+    m_lineWeight = new KProperty("line-weight", 1, tr("Line Weight"));
+    m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
+    m_lineStyle = new KProperty("line-style", QPen(Qt::NoPen), tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
+    m_backgroundOpacity = new KProperty("background-opacity", QVariant(0), tr("Background Opacity"));
     m_backgroundOpacity->setOption("max", 100);
     m_backgroundOpacity->setOption("min", 0);
     m_backgroundOpacity->setOption("unit", "%");

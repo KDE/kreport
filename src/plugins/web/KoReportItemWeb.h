@@ -26,8 +26,8 @@
 #include "krsize.h"
 #include "KoReportData.h"
 
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
+#include <KProperty>
+#include <KPropertySet>
 #include <kdebug.h>
 #include <QRect>
 #include <QGraphicsScene>
@@ -75,7 +75,7 @@ private:
 protected:
     virtual void createProperties();
     
-    KoProperty::Property *m_controlSource;
+    KProperty *m_controlSource;
     QWebPage *m_webPage;
 
     friend class Scripting::Web;

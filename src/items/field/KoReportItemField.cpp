@@ -20,7 +20,7 @@
 #include "common/renderobjects.h"
 #include "renderer/scripting/krscripthandler.h"
 
-#include <KProperty/Set>
+#include <KPropertySet>
 
 #include <QPalette>
 #include <QFontMetrics>
@@ -83,49 +83,49 @@ KoReportItemField::~KoReportItemField()
 
 void KoReportItemField::createProperties()
 {
-    m_set = new KoProperty::Set(0, QLatin1String("Field"));
+    m_set = new KPropertySet(0, QLatin1String("Field"));
 
     QStringList keys, strings;
 
-    m_controlSource = new KoProperty::Property("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
+    m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
     m_controlSource->setOption("extraValueAllowed", QLatin1String("true"));
 
-    m_itemValue = new KoProperty::Property("value", QString(), tr("Value"), tr("Value used if not bound to a field"));
+    m_itemValue = new KProperty("value", QString(), tr("Value"), tr("Value used if not bound to a field"));
 
     keys << QLatin1String("left") << QLatin1String("center") << QLatin1String("right");
     strings << tr("Left") << tr("Center") << tr("Right");
-    m_horizontalAlignment = new KoProperty::Property("horizontal-align", keys, strings, QLatin1String("left"), tr("Horizontal Alignment"));
+    m_horizontalAlignment = new KProperty("horizontal-align", keys, strings, QLatin1String("left"), tr("Horizontal Alignment"));
 
     keys.clear();
     strings.clear();
     keys << QLatin1String("top") << QLatin1String("center") << QLatin1String("bottom");
     strings << tr("Top") << tr("Center") << tr("Bottom");
-    m_verticalAlignment = new KoProperty::Property("vertical-align", keys, strings, QLatin1String("center"), tr("Vertical Alignment"));
+    m_verticalAlignment = new KProperty("vertical-align", keys, strings, QLatin1String("center"), tr("Vertical Alignment"));
 
-    m_font = new KoProperty::Property("Font", QApplication::font(), QLatin1String("Font"), tr("Font"));
+    m_font = new KProperty("Font", QApplication::font(), QLatin1String("Font"), tr("Font"));
 
 
-    m_backgroundColor = new KoProperty::Property("background-color", QColor(Qt::white), tr("Background Color"));
-    m_foregroundColor = new KoProperty::Property("foreground-color", QPalette().color(QPalette::Foreground), tr("Foreground Color"));
+    m_backgroundColor = new KProperty("background-color", QColor(Qt::white), tr("Background Color"));
+    m_foregroundColor = new KProperty("foreground-color", QPalette().color(QPalette::Foreground), tr("Foreground Color"));
 
-    m_backgroundOpacity = new KoProperty::Property("background-opacity", QVariant(0), tr("Background Opacity"));
+    m_backgroundOpacity = new KProperty("background-opacity", QVariant(0), tr("Background Opacity"));
     m_backgroundOpacity->setOption("max", 100);
     m_backgroundOpacity->setOption("min", 0);
     m_backgroundOpacity->setOption("unit", QLatin1String("%"));
 
-    m_lineWeight = new KoProperty::Property("line-weight", 1, tr("Line Weight"));
-    m_lineColor = new KoProperty::Property("line-color", QColor(Qt::black), tr("Line Color"));
-    m_lineStyle = new KoProperty::Property("line-style", QPen(Qt::NoPen), tr("Line Style"), tr("Line Style"), KoProperty::LineStyle);
+    m_lineWeight = new KProperty("line-weight", 1, tr("Line Weight"));
+    m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
+    m_lineStyle = new KProperty("line-style", QPen(Qt::NoPen), tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
 
-    m_wordWrap = new KoProperty::Property("word-wrap", QVariant(false), tr("Word Wrap"));
-    m_canGrow = new KoProperty::Property("can-grow", QVariant(false), tr("Can Grow"));
+    m_wordWrap = new KProperty("word-wrap", QVariant(false), tr("Word Wrap"));
+    m_canGrow = new KProperty("can-grow", QVariant(false), tr("Can Grow"));
 
 #if 0 //Field Totals
     //TODO I do not think we need these
-    m_trackTotal = new KoProperty::Property("TrackTotal", QVariant(false), futureI18n("Track Total"));
-    m_trackBuiltinFormat = new KoProperty::Property("TrackBuiltinFormat", QVariant(false), futureI18n("Track Builtin Format"));
-    _useSubTotal = new KoProperty::Property("UseSubTotal", QVariant(false), futureI18n("Use Sub Total"_);
-    _trackTotalFormat = new KoProperty::Property("TrackTotalFormat", QString(), futureI18n("Track Total Format"));
+    m_trackTotal = new KProperty("TrackTotal", QVariant(false), futureI18n("Track Total"));
+    m_trackBuiltinFormat = new KProperty("TrackBuiltinFormat", QVariant(false), futureI18n("Track Builtin Format"));
+    _useSubTotal = new KProperty("UseSubTotal", QVariant(false), futureI18n("Use Sub Total"_);
+    _trackTotalFormat = new KProperty("TrackTotalFormat", QString(), futureI18n("Track Total Format"));
 #endif
 
     addDefaultProperties();

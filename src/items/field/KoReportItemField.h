@@ -48,23 +48,23 @@ public:
 
 protected:
 
-    KoProperty::Property * m_controlSource;
-    KoProperty::Property * m_horizontalAlignment;
-    KoProperty::Property * m_verticalAlignment;
-    KoProperty::Property * m_font;
-    //KoProperty::Property * m_trackTotal;
-    //KoProperty::Property * m_trackBuiltinFormat;
-    //KoProperty::Property * _useSubTotal;
-    //KoProperty::Property * _trackTotalFormat;
-    KoProperty::Property * m_foregroundColor;
-    KoProperty::Property * m_backgroundColor;
-    KoProperty::Property* m_backgroundOpacity;
-    KoProperty::Property* m_lineColor;
-    KoProperty::Property* m_lineWeight;
-    KoProperty::Property* m_lineStyle;
-    KoProperty::Property* m_wordWrap;
-    KoProperty::Property* m_canGrow;
-    KoProperty::Property* m_itemValue;
+    KProperty * m_controlSource;
+    KProperty * m_horizontalAlignment;
+    KProperty * m_verticalAlignment;
+    KProperty * m_font;
+    //KProperty * m_trackTotal;
+    //KProperty * m_trackBuiltinFormat;
+    //KProperty * _useSubTotal;
+    //KProperty * _trackTotalFormat;
+    KProperty * m_foregroundColor;
+    KProperty * m_backgroundColor;
+    KProperty* m_backgroundOpacity;
+    KProperty* m_lineColor;
+    KProperty* m_lineWeight;
+    KProperty* m_lineStyle;
+    KProperty* m_wordWrap;
+    KProperty* m_canGrow;
+    KProperty* m_itemValue;
 
     //bool builtinFormat;
     //QString format;

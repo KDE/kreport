@@ -21,8 +21,8 @@
 #include "wrtembed/KoReportDesignerItemBase.h"
 #include "wrtembed/KoReportDesigner.h"
 
-#include <KProperty/Set>
-#include <KProperty/EditorView>
+#include <KPropertySet>
+#include <KPropertyEditorView>
 
 #include <QImageWriter>
 #include <QGraphicsScene>
@@ -44,8 +44,8 @@ void KoReportDesignerItemImage::init(QGraphicsScene *scene, KoReportDesigner *d)
 
     KoReportDesignerItemRectBase::init(&m_pos, &m_size, m_set, d);
 
-    connect(m_set, SIGNAL(propertyChanged(KoProperty::Set&,KoProperty::Property&)),
-            this, SLOT(slotPropertyChanged(KoProperty::Set&,KoProperty::Property&)));
+    connect(m_set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
+            this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
     m_controlSource->setListData(m_reportDesigner->fieldKeys(), m_reportDesigner->fieldNames());
     setZValue(Z);
@@ -135,7 +135,7 @@ void KoReportDesignerItemImage::buildXML(QDomDocument & doc, QDomElement & paren
     parent.appendChild(entity);
 }
 
-void KoReportDesignerItemImage::slotPropertyChanged(KoProperty::Set &s, KoProperty::Property &p)
+void KoReportDesignerItemImage::slotPropertyChanged(KPropertySet &s, KProperty &p)
 {
     if (p.name() == "Name") {
         //For some reason p.oldValue returns an empty string

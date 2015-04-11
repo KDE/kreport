@@ -22,7 +22,7 @@
 
 #include <QGraphicsLineItem>
 
-#include <KProperty/Set>
+#include <KPropertySet>
 
 #include "KoReportDesignerItemBase.h"
 #include "common/KoReportItemLine.h"
@@ -63,7 +63,7 @@ protected:
     virtual QVariant itemChange(GraphicsItemChange change, const QVariant &value);
 
 private Q_SLOTS:
-    void slotPropertyChanged(KoProperty::Set &, KoProperty::Property &);
+    void slotPropertyChanged(KPropertySet &, KProperty &);
 };
 
 #endif

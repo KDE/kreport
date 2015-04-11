@@ -23,7 +23,7 @@
 #include "wrtembed/KoReportDesignerItemRectBase.h"
 #include "KoReportItemImage.h"
 
-#include <KProperty/Set>
+#include <KPropertySet>
 
 #include <QImage>
 
@@ -49,7 +49,7 @@ private:
     void init(QGraphicsScene*, KoReportDesigner*);;
 
 private Q_SLOTS:
-    void slotPropertyChanged(KoProperty::Set &, KoProperty::Property &);
+    void slotPropertyChanged(KPropertySet &, KProperty &);
 
 };
 

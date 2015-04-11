@@ -30,9 +30,9 @@
 #include <kdebug.h>
 #include <klocalizedstring.h>
 
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
-#include <koproperty/EditorView.h>
+#include <KProperty>
+#include <KPropertySet>
+#include <KPropertyEditorView>
 
 //
 // ReportEntitiesImage
@@ -48,8 +48,8 @@ void KoReportDesignerItemMaps::init(QGraphicsScene *scene, KoReportDesigner *d)
 
     KoReportDesignerItemRectBase::init(&m_pos, &m_size, m_set, d);
 
-    connect(m_set, SIGNAL(propertyChanged(KoProperty::Set&,KoProperty::Property&)),
-            this, SLOT(slotPropertyChanged(KoProperty::Set&,KoProperty::Property&)));
+    connect(m_set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
+            this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 	    
     m_controlSource->setListData(m_reportDesigner->fieldKeys(), m_reportDesigner->fieldNames());
     setZValue(Z);
@@ -128,7 +128,7 @@ void KoReportDesignerItemMaps::buildXML(QDomDocument & doc, QDomElement & parent
     parent.appendChild(entity);
 }
 
-void KoReportDesignerItemMaps::slotPropertyChanged(KoProperty::Set &s, KoProperty::Property &p)
+void KoReportDesignerItemMaps::slotPropertyChanged(KPropertySet &s, KProperty &p)
 {
     myDebug() << p.name() << ":" << p.value();
     if (p.name() == "Name") {

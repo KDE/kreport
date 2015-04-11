@@ -20,7 +20,7 @@
 
 #include "krsectiondata.h"
 
-#include <KProperty/Set>
+#include <KPropertySet>
 #include <QColor>
 
 #include "KoReportPluginInterface.h"
@@ -101,10 +101,10 @@ bool KRSectionData::xLessThan(KoReportItemBase* s1, KoReportItemBase* s2)
 
 void KRSectionData::createProperties(const QDomElement & elemSource)
 {
-    m_set = new KoProperty::Set(this, QLatin1String("Section"));
+    m_set = new KPropertySet(this, QLatin1String("Section"));
 
-    m_height = new KoProperty::Property("height", KoUnit(KoUnit::Centimeter).fromUserValue(2.0), tr("Height"));
-    m_backgroundColor = new KoProperty::Property("background-color", QColor(Qt::white), tr("Background Color"));
+    m_height = new KProperty("height", KoUnit(KoUnit::Centimeter).fromUserValue(2.0), tr("Height"));
+    m_backgroundColor = new KProperty("background-color", QColor(Qt::white), tr("Background Color"));
     m_height->setOption("unit", QLatin1String("cm"));
     if (!elemSource.isNull())
         m_height->setValue(KoUnit::parseValue(elemSource.attribute(QLatin1String("svg:height"), QLatin1String("2.0cm"))));

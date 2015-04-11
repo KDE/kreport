@@ -20,8 +20,8 @@
 
 #include "KoReportItemWeb.h"
 
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
+#include <KProperty>
+#include <KPropertySet>
 
 #include <kdebug.h>
 #include <klocalizedstring.h>
@@ -68,10 +68,10 @@ void KoReportItemWeb::init()
 
 void KoReportItemWeb::createProperties()
 {
-    m_set = new KoProperty::Set(0, "web");
+    m_set = new KPropertySet(0, "web");
 
-    m_controlSource = new KoProperty::Property("item-data-source", QStringList(), 
-                                               QStringList(), QString(), i18n("Data Source"));
+    m_controlSource = new KProperty("item-data-source", QStringList(),
+                                    QStringList(), QString(), i18n("Data Source"));
     m_set->addProperty(m_controlSource);
     addDefaultProperties();
 }

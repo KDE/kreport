@@ -53,8 +53,8 @@ ReportSection::ReportSection(KoReportDesigner * rptdes)
         : QWidget(rptdes)
 {
     m_sectionData = new KRSectionData(this);
-    connect(m_sectionData->propertySet(), SIGNAL(propertyChanged(KoProperty::Set&,KoProperty::Property&)),
-            this, SLOT(slotPropertyChanged(KoProperty::Set&,KoProperty::Property&)));
+    connect(m_sectionData->propertySet(), SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
+            this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
     QScreen *srn = QApplication::screens().at(0);
     m_dpiY = srn->logicalDotsPerInchY();
 
@@ -83,8 +83,8 @@ ReportSection::ReportSection(KoReportDesigner * rptdes)
     m_resizeBar = new ReportResizeBar(this);
 
     connect(m_resizeBar, SIGNAL(barDragged(int)), this, SLOT(slotResizeBarDragged(int)));
-    connect(m_reportDesigner, SIGNAL(pagePropertyChanged(KoProperty::Set&)),
-        this, SLOT(slotPageOptionsChanged(KoProperty::Set&)));
+    connect(m_reportDesigner, SIGNAL(pagePropertyChanged(KPropertySet&)),
+        this, SLOT(slotPageOptionsChanged(KPropertySet&)));
     connect(m_scene, SIGNAL(clicked()), this, (SLOT(slotSceneClicked())));
     connect(m_scene, SIGNAL(lostFocus()), m_title, SLOT(update()));
     connect(m_title, SIGNAL(clicked()), this, (SLOT(slotSceneClicked())));
@@ -192,7 +192,7 @@ QSize ReportSection::sizeHint() const
     return QSize(m_scene->width()  + m_sectionRuler->frameSize().width(), m_title->frameSize().height() + m_sceneView->sizeHint().height() + m_resizeBar->frameSize().height());
 }
 
-void ReportSection::slotPageOptionsChanged(KoProperty::Set &set)
+void ReportSection::slotPageOptionsChanged(KPropertySet &set)
 {
     Q_UNUSED(set)
 
@@ -228,7 +228,7 @@ void ReportSection::slotSceneClicked()
     m_reportDesigner->changeSet(m_sectionData->propertySet());
 }
 
-void ReportSection::slotPropertyChanged(KoProperty::Set &s, KoProperty::Property &p)
+void ReportSection::slotPropertyChanged(KPropertySet &s, KProperty &p)
 {
     Q_UNUSED(s)
     //kDebug() << p.name();

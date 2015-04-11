@@ -24,8 +24,8 @@
 #include "common/krsize.h"
 #include "reportscene.h"
 
-#include <KProperty/Set>
-#include <KProperty/EditorView>
+#include <KPropertySet>
+#include <KPropertyEditorView>
 #include <QGraphicsSceneMouseEvent>
 #include <QScreen>
 #include <QApplication>
@@ -50,7 +50,7 @@ KoReportDesignerItemRectBase::KoReportDesignerItemRectBase(KoReportDesigner *r)
 #endif
 }
 
-void KoReportDesignerItemRectBase::init(KRPos* p, KRSize* s, KoProperty::Set* se, KoReportDesigner *d)
+void KoReportDesignerItemRectBase::init(KRPos* p, KRSize* s, KPropertySet* se, KoReportDesigner *d)
 {
     Q_UNUSED(d);
     m_ppos = p;
@@ -308,7 +308,7 @@ QVariant KoReportDesignerItemRectBase::itemChange(GraphicsItemChange change, con
     return QGraphicsItem::itemChange(change, value);
 }
 
-void KoReportDesignerItemRectBase::propertyChanged(const KoProperty::Set &s, const KoProperty::Property &p)
+void KoReportDesignerItemRectBase::propertyChanged(const KPropertySet &s, const KProperty &p)
 {
     Q_UNUSED(s)
 

@@ -21,8 +21,8 @@
 #ifndef __REPORTENTITYBARCODE_H__
 #define __REPORTENTITYBARCODE_H__
 
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
+#include <KProperty>
+#include <KPropertySet>
 
 #include "KoReportDesignerItemRectBase.h"
 #include "KoReportItemBarcode.h"
@@ -53,7 +53,7 @@ private:
     QRect getTextRect();
 
 private Q_SLOTS:
-    void slotPropertyChanged(KoProperty::Set &, KoProperty::Property &);
+    void slotPropertyChanged(KPropertySet &, KProperty &);
 };
 
 #endif

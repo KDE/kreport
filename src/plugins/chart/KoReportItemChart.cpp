@@ -31,8 +31,8 @@
 #include <KDChartLegend>
 #include <KDChartCartesianAxis>
 
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
+#include <KProperty>
+#include <KPropertySet>
 #include <QMotifStyle>
 
 #include <KDChartChart>
@@ -90,46 +90,46 @@ KoReportItemChart::~KoReportItemChart()
 void KoReportItemChart::createProperties()
 {
     m_chartWidget = 0;
-    m_set = new KoProperty::Set(0, "Chart");
+    m_set = new KPropertySet(0, "Chart");
 
     QStringList strings;
     QList<QVariant> keys;
     QStringList stringkeys;
 
-    m_dataSource = new KoProperty::Property("data-source", QStringList(), QStringList(), QString(), i18n("Data Source"));
+    m_dataSource = new KProperty("data-source", QStringList(), QStringList(), QString(), i18n("Data Source"));
 
     m_dataSource->setOption("extraValueAllowed", "true");
 
-    m_font = new KoProperty::Property("Font", KGlobalSettings::generalFont(), i18n("Font"), i18n("Field Font"));
+    m_font = new KProperty("Font", KGlobalSettings::generalFont(), i18n("Font"), i18n("Field Font"));
 
     keys << 1 << 2 << 3 << 4 << 5;
     strings << i18n("Bar") << i18n("Line") << i18n("Pie") << i18n("Ring") << i18n("Polar");
-    KoProperty::Property::ListData *typeData = new KoProperty::Property::ListData(keys, strings);
-    m_chartType = new KoProperty::Property("chart-type", typeData, 1, i18n("Chart Type"));
+    KProperty::ListData *typeData = new KProperty::ListData(keys, strings);
+    m_chartType = new KProperty("chart-type", typeData, 1, i18n("Chart Type"));
 
     keys.clear();
     strings.clear();
     keys << 0 << 1 << 2 << 3;
     strings << i18n("Normal") << i18n("Stacked") << i18n("Percent") << i18n("Rows");
 
-    KoProperty::Property::ListData *subData = new KoProperty::Property::ListData(keys, strings);
+    KProperty::ListData *subData = new KProperty::ListData(keys, strings);
 
-    m_chartSubType = new KoProperty::Property("chart-sub-type", subData, 0, i18n("Chart Sub Type"));
+    m_chartSubType = new KProperty("chart-sub-type", subData, 0, i18n("Chart Sub Type"));
 
     keys.clear();
     strings.clear();
     stringkeys << "default" << "rainbow" << "subdued";
     strings << i18n("Default") << i18n("Rainbow") << i18n("Subdued");
-    m_colorScheme = new KoProperty::Property("chart-color-scheme", stringkeys, strings, "default", i18n("Color Scheme"));
+    m_colorScheme = new KProperty("chart-color-scheme", stringkeys, strings, "default", i18n("Color Scheme"));
 
-    m_threeD = new KoProperty::Property("three-dimensions", QVariant(false),
+    m_threeD = new KProperty("three-dimensions", QVariant(false),
         i18nc("Three dimensions", "3D"));
-    m_aa = new KoProperty::Property("antialiased", QVariant(false), i18n("Antialiased"));
+    m_aa = new KProperty("antialiased", QVariant(false), i18n("Antialiased"));
 
-    m_xTitle = new KoProperty::Property("title-x-axis", QString(), i18n("X Axis Title"), i18n("X Axis Title"));
-    m_yTitle = new KoProperty::Property("title-y-axis", QString(), i18n("Y Axis Title"), i18n("Y Axis Title"));
+    m_xTitle = new KProperty("title-x-axis", QString(), i18n("X Axis Title"), i18n("X Axis Title"));
+    m_yTitle = new KProperty("title-y-axis", QString(), i18n("Y Axis Title"), i18n("Y Axis Title"));
 
-    m_displayLegend = new KoProperty::Property("display-legend", true, i18n("Display Legend"), i18n("Display Legend"));
+    m_displayLegend = new KProperty("display-legend", true, i18n("Display Legend"), i18n("Display Legend"));
 
     keys.clear();
     strings.clear();
@@ -141,22 +141,22 @@ void KoReportItemChart::createProperties()
     foreach (const QVariant &pos, keys) {
         strings << names[pos.toInt()-1];
     }
-    subData = new KoProperty::Property::ListData(keys, strings);
-    m_legendPosition = new KoProperty::Property("legend-position", subData, (int)KDChartEnums::PositionEast, i18n("Legend Position"));
+    subData = new KProperty::ListData(keys, strings);
+    m_legendPosition = new KProperty("legend-position", subData, (int)KDChartEnums::PositionEast, i18n("Legend Position"));
 
     keys.clear();
     strings.clear();
     keys << Qt::Horizontal << Qt::Vertical;
     strings << i18n("Horizontal") << i18n("Vertical");
-    subData = new KoProperty::Property::ListData(keys, strings);
-    m_legendOrientation = new KoProperty::Property("legend-orientation", subData, Qt::Vertical, i18n("Legend Orientation"));
+    subData = new KProperty::ListData(keys, strings);
+    m_legendOrientation = new KProperty("legend-orientation", subData, Qt::Vertical, i18n("Legend Orientation"));
 
-    m_backgroundColor = new KoProperty::Property("background-color", Qt::white,
+    m_backgroundColor = new KProperty("background-color", Qt::white,
         i18n("Background Color"), i18n("Background Color"));
 
-    m_linkMaster = new KoProperty::Property("link-master", QString(), i18n("Link Master"),
+    m_linkMaster = new KProperty("link-master", QString(), i18n("Link Master"),
         i18n("Fields from master data source"));
-    m_linkChild = new KoProperty::Property("link-child", QString(), i18n("Link Child"),
+    m_linkChild = new KProperty("link-child", QString(), i18n("Link Child"),
         i18n("Fields from child data source"));
 
     addDefaultProperties();

@@ -20,7 +20,7 @@
 #define KRPOS_H
 #include "KoUnit.h"
 #include <QPointF>
-#include <KProperty/Property>
+#include <KProperty>
 #include "kreport_export.h"
 /**
  @author
@@ -46,13 +46,13 @@ public:
     void setName(const QString& name);
     KoUnit unit() const { return m_unit; }
 
-    KoProperty::Property* property() const {
+    KProperty* property() const {
         return m_property;
     }
 private:
     QPointF m_pointPos;
     KoUnit m_unit;
-    KoProperty::Property* m_property;
+    KProperty* m_property;
 };
 
 #endif

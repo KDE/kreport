@@ -41,11 +41,6 @@ class KoReportDesigner;
 class KRPos;
 class KRSize;
 
-namespace KoProperty
-{
-class Editor;
-}
-
 //
 // ReportEntity
 //
@@ -73,7 +68,7 @@ public:
     }
     virtual ~KoReportDesignerItemBase() {};
 
-    static void addPropertyAsAttribute(QDomElement* e, KoProperty::Property* p);
+    static void addPropertyAsAttribute(QDomElement* e, KProperty* p);
 
 protected:
     explicit KoReportDesignerItemBase(KoReportDesigner*);

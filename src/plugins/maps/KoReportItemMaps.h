@@ -23,8 +23,8 @@
 #include <QDomDocument>
 #include "krpos.h"
 #include "krsize.h"
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
+#include <KProperty>
+#include <KPropertySet>
 #include <kdebug.h>
 #include <klocalizedstring.h>
 #include <marble/MarbleWidget.h>
@@ -70,13 +70,13 @@ public:
     OROPicture* oroImage();
 
 protected:
-    KoProperty::Property * m_controlSource;
-    KoProperty::Property* m_resizeMode;
-    KoProperty::Property* m_staticImage;
-    KoProperty::Property* m_latitudeProperty;
-    KoProperty::Property* m_longitudeProperty;
-    KoProperty::Property* m_zoomProperty;
-    KoProperty::Property* m_themeProperty;
+    KProperty * m_controlSource;
+    KProperty* m_resizeMode;
+    KProperty* m_staticImage;
+    KProperty* m_latitudeProperty;
+    KProperty* m_longitudeProperty;
+    KProperty* m_zoomProperty;
+    KProperty* m_themeProperty;
 
     void setMode(const QString&);
     void setInlineImageData(QByteArray, const QString& = QString());

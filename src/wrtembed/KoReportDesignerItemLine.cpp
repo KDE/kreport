@@ -24,7 +24,7 @@
 #include "reportscene.h"
 #include "common/krutils.h"
 
-#include <KProperty/EditorView>
+#include <KPropertyEditorView>
 
 #include <klocalizedstring.h>
 
@@ -54,8 +54,8 @@ void KoReportDesignerItemLine::init(QGraphicsScene* s, KoReportDesigner *r)
     if (s)
         s->addItem(this);
 
-    connect(m_set, SIGNAL(propertyChanged(KoProperty::Set&,KoProperty::Property&)),
-            this, SLOT(slotPropertyChanged(KoProperty::Set&,KoProperty::Property&)));
+    connect(m_set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
+            this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
     setZValue(Z);
 }
@@ -132,7 +132,7 @@ void KoReportDesignerItemLine::buildXML(QDomDocument & doc, QDomElement & parent
     parent.appendChild(entity);
 }
 
-void KoReportDesignerItemLine::slotPropertyChanged(KoProperty::Set &s, KoProperty::Property &p)
+void KoReportDesignerItemLine::slotPropertyChanged(KPropertySet &s, KProperty &p)
 {
     Q_UNUSED(s);
 

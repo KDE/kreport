@@ -18,7 +18,7 @@
 #include "KoReportItemImage.h"
 #include "common/renderobjects.h"
 
-#include <KProperty/Set>
+#include <KPropertySet>
 
 #include <QBuffer>
 #include <kcodecs.h>
@@ -112,16 +112,16 @@ void KoReportItemImage::setMode(const QString &m)
 
 void KoReportItemImage::createProperties()
 {
-    m_set = new KoProperty::Set(0, QLatin1String("Image"));
+    m_set = new KPropertySet(0, QLatin1String("Image"));
 
-    m_controlSource = new KoProperty::Property("item-data-source", QStringList(), QStringList(), QString(), i18n("Data Source"));
+    m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), i18n("Data Source"));
 
     QStringList keys, strings;
     keys << QLatin1String("clip") << QLatin1String("stretch");
     strings << i18n("Clip") << i18n("Stretch");
-    m_resizeMode = new KoProperty::Property("resize-mode", keys, strings, QLatin1String("clip"), i18n("Resize Mode"));
+    m_resizeMode = new KProperty("resize-mode", keys, strings, QLatin1String("clip"), i18n("Resize Mode"));
 
-    m_staticImage = new KoProperty::Property("static-image", QPixmap(), i18n("Value"), i18n("Value used if not bound to a field"));
+    m_staticImage = new KProperty("static-image", QPixmap(), i18n("Value"), i18n("Value used if not bound to a field"));
 
     addDefaultProperties();
     m_set->addProperty(m_controlSource);

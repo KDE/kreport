@@ -33,8 +33,8 @@
 #include <QSettings>
 #include <kdebug.h>
 
-#include <KProperty/Set>
-#include <KProperty/EditorView>
+#include <KPropertySet>
+#include <KPropertyEditorView>
 
 #include "common/KoReportItemBase.h"
 #include <common/krutils.h>
@@ -80,7 +80,7 @@ QString KoReportDesignerItemBase::dataSourceAndObjectTypeName(const QString& dat
 }
 
 // static
-void KoReportDesignerItemBase::addPropertyAsAttribute(QDomElement* e, KoProperty::Property* p)
+void KoReportDesignerItemBase::addPropertyAsAttribute(QDomElement* e, KProperty* p)
 {
     KRUtils::addPropertyAsAttribute(e, p);
 }

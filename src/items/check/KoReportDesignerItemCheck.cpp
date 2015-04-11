@@ -20,7 +20,7 @@
 #include "wrtembed/KoReportDesignerItemRectBase.h"
 #include "wrtembed/KoReportDesigner.h"
 
-#include <KProperty/EditorView>
+#include <KPropertyEditorView>
 
 #include <QDomDocument>
 #include <QPainter>
@@ -38,8 +38,8 @@ void KoReportDesignerItemCheck::init(QGraphicsScene *scene, KoReportDesigner *d)
 
     KoReportDesignerItemRectBase::init(&m_pos, &m_size, m_set, d);
 
-    connect(propertySet(), SIGNAL(propertyChanged(KoProperty::Set&,KoProperty::Property&)),
-            this, SLOT(slotPropertyChanged(KoProperty::Set&,KoProperty::Property&)));
+    connect(propertySet(), SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
+            this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
     setZValue(Z);
 }
@@ -162,7 +162,7 @@ void KoReportDesignerItemCheck::buildXML(QDomDocument & doc, QDomElement & paren
     parent.appendChild(entity);
 }
 
-void KoReportDesignerItemCheck::slotPropertyChanged(KoProperty::Set &s, KoProperty::Property &p)
+void KoReportDesignerItemCheck::slotPropertyChanged(KPropertySet &s, KProperty &p)
 {
     Q_UNUSED(s)
 

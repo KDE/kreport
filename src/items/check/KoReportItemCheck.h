@@ -46,13 +46,13 @@ public:
 
 protected:
 
-    KoProperty::Property * m_controlSource;
-    KoProperty::Property* m_checkStyle;
-    KoProperty::Property* m_foregroundColor;
-    KoProperty::Property* m_lineColor;
-    KoProperty::Property* m_lineWeight;
-    KoProperty::Property* m_lineStyle;
-    KoProperty::Property* m_staticValue;
+    KProperty * m_controlSource;
+    KProperty* m_checkStyle;
+    KProperty* m_foregroundColor;
+    KProperty* m_lineColor;
+    KProperty* m_lineWeight;
+    KProperty* m_lineStyle;
+    KProperty* m_staticValue;
 
     bool value();
     void setValue(bool);

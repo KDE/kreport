@@ -22,9 +22,9 @@
 
 #include <KoReportDesignerItemBase.h>
 #include <KoReportDesigner.h>
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
-#include <koproperty/EditorView.h>
+#include <KProperty>
+#include <KPropertySet>
+#include <KPropertyEditorView>
 
 #include <klocalizedstring.h>
 
@@ -44,7 +44,7 @@ void KoReportDesignerItemWeb::init(QGraphicsScene *scene, KoReportDesigner *d) /
     if (scene)
         scene->addItem(this);
 
-    connect(m_set, SIGNAL(propertyChanged(KoProperty::Set&,KoProperty::Property&)), this, SLOT(slotPropertyChanged(KoProperty::Set&,KoProperty::Property&)));
+    connect(m_set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)), this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
     KoReportDesignerItemRectBase::init(&m_pos, &m_size, m_set, d);
     setZValue(Z);
 }
@@ -108,7 +108,7 @@ void KoReportDesignerItemWeb::buildXML(QDomDocument &doc, QDomElement &parent)
     parent.appendChild(entity);
 }
 
-void KoReportDesignerItemWeb::slotPropertyChanged(KoProperty::Set &s, KoProperty::Property &p)
+void KoReportDesignerItemWeb::slotPropertyChanged(KPropertySet &s, KProperty &p)
 {
     if (p.name() == "Name") {
         if (!m_reportDesigner->isEntityNameUnique(p.value().toString(), this)) {

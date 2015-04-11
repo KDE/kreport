@@ -44,7 +44,7 @@ private:
     void init(QGraphicsScene*, KoReportDesigner *d);
 
 private Q_SLOTS:
-    void slotPropertyChanged(KoProperty::Set &, KoProperty::Property &);
+    void slotPropertyChanged(KPropertySet &, KProperty &);
     void slotReportDataChanged();
 
 };

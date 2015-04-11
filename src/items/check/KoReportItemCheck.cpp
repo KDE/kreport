@@ -20,7 +20,7 @@
 #include "common/renderobjects.h"
 #include "renderer/scripting/krscripthandler.h"
 
-#include <KProperty/Set>
+#include <KPropertySet>
 
 #include <QPalette>
 
@@ -70,23 +70,23 @@ KoReportItemCheck::~KoReportItemCheck()
 
 void KoReportItemCheck::createProperties()
 {
-    m_set = new KoProperty::Set(0, QLatin1String("Check"));
+    m_set = new KPropertySet(0, QLatin1String("Check"));
 
     QStringList keys, strings;
 
     keys << QLatin1String("Cross") << QLatin1String("Tick") << QLatin1String("Dot");
     strings << tr("Cross") << tr("Tick") << tr("Dot");
-    m_checkStyle = new KoProperty::Property("check-style", keys, strings, QLatin1String("Cross"), tr("Style"));
+    m_checkStyle = new KProperty("check-style", keys, strings, QLatin1String("Cross"), tr("Style"));
 
-    m_controlSource = new KoProperty::Property("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
+    m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
     m_controlSource->setOption("extraValueAllowed", QLatin1String("true"));
 
-    m_foregroundColor = new KoProperty::Property("foreground-color", QPalette().color(QPalette::Foreground), tr("Foreground Color"));
+    m_foregroundColor = new KProperty("foreground-color", QPalette().color(QPalette::Foreground), tr("Foreground Color"));
 
-    m_lineWeight = new KoProperty::Property("line-weight", 1, tr("Line Weight"));
-    m_lineColor = new KoProperty::Property("line-color", QColor(Qt::black), tr("Line Color"));
-    m_lineStyle = new KoProperty::Property("line-style", QPen(Qt::SolidLine), tr("Line Style"), tr("Line Style"), KoProperty::LineStyle);
-    m_staticValue = new KoProperty::Property("value", QVariant(false), tr("Value"), tr("Value used if not bound to a field"));
+    m_lineWeight = new KProperty("line-weight", 1, tr("Line Weight"));
+    m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
+    m_lineStyle = new KProperty("line-style", QPen(Qt::SolidLine), tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
+    m_staticValue = new KProperty("value", QVariant(false), tr("Value"), tr("Value used if not bound to a field"));
 
     addDefaultProperties();
     m_set->addProperty(m_controlSource);

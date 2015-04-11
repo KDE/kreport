@@ -30,9 +30,9 @@
 #include <QGraphicsSceneMouseEvent>
 #include "barcodepaint.h"
 
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
-#include <koproperty/EditorView.h>
+#include <KProperty>
+#include <KPropertySet>
+#include <KPropertyEditorView>
 //
 // class ReportEntityBarcode
 //
@@ -42,8 +42,8 @@ void KoReportDesignerItemBarcode::init(QGraphicsScene *scene, KoReportDesigner *
     if (scene)
         scene->addItem(this);
 
-    connect(m_set, SIGNAL(propertyChanged(KoProperty::Set&,KoProperty::Property&)),
-            this, SLOT(slotPropertyChanged(KoProperty::Set&,KoProperty::Property&)));
+    connect(m_set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
+            this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
     KoReportDesignerItemRectBase::init(&m_pos, &m_size, m_set, d);
     setMaxLength(5);
@@ -149,7 +149,7 @@ void KoReportDesignerItemBarcode::buildXML(QDomDocument & doc, QDomElement & par
     parent.appendChild(entity);
 }
 
-void KoReportDesignerItemBarcode::slotPropertyChanged(KoProperty::Set &s, KoProperty::Property &p)
+void KoReportDesignerItemBarcode::slotPropertyChanged(KPropertySet &s, KProperty &p)
 {
     if (p.name() == "Name") {
         //For some reason p.oldValue returns an empty string

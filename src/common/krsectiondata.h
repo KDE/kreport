@@ -35,7 +35,7 @@
 class KoReportItemBase;
 class KoReportReportData;
 
-#include <KProperty/Set>
+#include <KPropertySet>
 #include <QColor>
 
 namespace Scripting
@@ -68,7 +68,7 @@ public:
     explicit KRSectionData(QObject* parent = 0);
     KRSectionData(const QDomElement &, KoReportReportData* report);
     ~KRSectionData();
-    KoProperty::Set* propertySet() const {
+    KPropertySet* propertySet() const {
         return m_set;
     }
 
@@ -97,9 +97,9 @@ public:
     static KRSectionData::Section sectionTypeFromString(const QString& s);
     static QString sectionTypeString(KRSectionData::Section s);
 protected:
-    KoProperty::Set *m_set;
-    KoProperty::Property *m_height;
-    KoProperty::Property *m_backgroundColor;
+    KPropertySet *m_set;
+    KProperty *m_height;
+    KProperty *m_backgroundColor;
 
 private:
     void createProperties(const QDomElement & elemSource);

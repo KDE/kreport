@@ -17,8 +17,8 @@
  */
 
 #include "KoReportItemBarcode.h"
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
+#include <KProperty>
+#include <KPropertySet>
 #include <kdebug.h>
 #include <klocalizedstring.h>
 
@@ -112,25 +112,25 @@ void KoReportItemBarcode::setMaxLength(int i)
 
 void KoReportItemBarcode::createProperties()
 {
-    m_set = new KoProperty::Set(0, "Barcode");
+    m_set = new KPropertySet(0, "Barcode");
 
     QStringList keys, strings;
 
-    m_controlSource = new KoProperty::Property("item-data-source", QStringList(), QStringList(), QString(), i18n("Data Source"));
+    m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), i18n("Data Source"));
 
-    m_itemValue = new KoProperty::Property("value", QString(), i18n("Value"), i18n("Value used if not bound to a field"));
+    m_itemValue = new KProperty("value", QString(), i18n("Value"), i18n("Value used if not bound to a field"));
 
     keys << "left" << "center" << "right";
     strings << i18n("Left") << i18n("Center") << i18n("Right");
-    m_horizontalAlignment = new KoProperty::Property("horizontal-align", keys, strings, "left", i18n("Horizontal Alignment"));
+    m_horizontalAlignment = new KProperty("horizontal-align", keys, strings, "left", i18n("Horizontal Alignment"));
 
     keys.clear();
     strings.clear();
     keys << "3of9" << "3of9+" << "128" << "ean8" << "ean13" << "i2of5" << "upc-a" << "upc-e";
     strings << i18nc("Barcode symbology, keep short", "Code 3 of 9") << i18nc("Barcode symbology, keep short", "Code 3 of 9 Ext.") << i18nc("Barcode symbology, keep short", "Code 128") << i18nc("Barcode symbology, keep short", "EAN-8") << i18nc("Barcode symbology, keep short", "EAN-13") << i18nc("Barcode symbology, keep short", "Interleaved 2 of 5") << i18nc("Barcode symbology, keep short", "UPC-A") << i18nc("Barcode symbology, keep short", "UPC-E");
-    m_format = new KoProperty::Property("barcode-format", keys, strings, "3of9", i18n("Barcode Format"));
+    m_format = new KProperty("barcode-format", keys, strings, "3of9", i18n("Barcode Format"));
 
-    m_maxLength = new KoProperty::Property("barcode-max-length", 5, i18n("Max Length"), i18n("Maximum Barcode Length"));
+    m_maxLength = new KProperty("barcode-max-length", 5, i18n("Max Length"), i18n("Maximum Barcode Length"));
 
     addDefaultProperties();
     m_set->addProperty(m_controlSource);

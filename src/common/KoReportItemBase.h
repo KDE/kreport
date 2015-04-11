@@ -19,7 +19,7 @@
 #ifndef KOREPORTITEMBASE_H
 #define KOREPORTITEMBASE_H
 
-#include <KProperty/Property>
+#include <KProperty>
 #include <QObject>
 
 #include <QDomElement>
@@ -37,11 +37,8 @@ class KRSize;
 class KRScriptHandler;
 class KoReportData;
 
-namespace KoProperty
-{
-class Set;
-class Property;
-}
+class KProperty;
+class KPropertySet;
 
 class KRTextStyleData
 {
@@ -104,7 +101,7 @@ public:
     */
     virtual bool supportsSubQuery();
 
-    KoProperty::Set* propertySet() const;
+    KPropertySet* propertySet() const;
 
     KRPos position();
 
@@ -118,8 +115,8 @@ public:
 
     qreal Z;
 protected:
-    KoProperty::Set *m_set;
-    KoProperty::Property *m_name;
+    KPropertySet *m_set;
+    KProperty *m_name;
     KRPos m_pos;
     KRSize m_size;
 

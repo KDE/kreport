@@ -30,7 +30,7 @@
 #include <QMouseEvent>
 #include <QGraphicsScene>
 
-#include <KProperty/Set>
+#include <KPropertySet>
 
 typedef QList<QGraphicsItem*> QGraphicsItemList;
 
@@ -82,9 +82,9 @@ protected Q_SLOTS:
     void slotResizeBarDragged(int delta);
 
 private Q_SLOTS:
-    void slotPageOptionsChanged(KoProperty::Set &);
+    void slotPageOptionsChanged(KPropertySet &);
     void slotSceneClicked();
-    void slotPropertyChanged(KoProperty::Set &, KoProperty::Property &);
+    void slotPropertyChanged(KPropertySet &, KProperty &);
 
 protected:
     ReportSectionTitle * m_title;

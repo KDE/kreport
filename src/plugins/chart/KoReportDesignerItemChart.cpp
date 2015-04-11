@@ -28,9 +28,9 @@
 #include <kdebug.h>
 #include <klocalizedstring.h>
 
-#include <koproperty/Property.h>
-#include <koproperty/Set.h>
-#include <koproperty/EditorView.h>
+#include <KProperty>
+#include <KPropertySet>
+#include <KPropertyEditorView>
 
 void KoReportDesignerItemChart::init(QGraphicsScene* scene, KoReportDesigner *d)
 {
@@ -39,8 +39,8 @@ void KoReportDesignerItemChart::init(QGraphicsScene* scene, KoReportDesigner *d)
     if (scene)
         scene->addItem(this);
 
-    connect(m_set, SIGNAL(propertyChanged(KoProperty::Set&,KoProperty::Property&)),
-            this, SLOT(slotPropertyChanged(KoProperty::Set&,KoProperty::Property&)));
+    connect(m_set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
+            this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
     KoReportDesignerItemRectBase::init(&m_pos, &m_size, m_set, d);
     setZValue(Z);
@@ -142,7 +142,7 @@ void KoReportDesignerItemChart::buildXML(QDomDocument & doc, QDomElement & paren
     parent.appendChild(entity);
 }
 
-void KoReportDesignerItemChart::slotPropertyChanged(KoProperty::Set &s, KoProperty::Property &p)
+void KoReportDesignerItemChart::slotPropertyChanged(KPropertySet &s, KProperty &p)
 {       
     if (p.name() == "Name") {
         //For some reason p.oldValue returns an empty string

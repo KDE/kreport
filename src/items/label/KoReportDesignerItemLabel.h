@@ -24,7 +24,7 @@
 #include "wrtembed/KoReportDesignerItemRectBase.h"
 #include "BoundedTextItem.h"
 
-#include <KProperty/Set>
+#include <KPropertySet>
 
 #include <QGraphicsRectItem>
 #include <QGraphicsItem>
@@ -59,7 +59,7 @@ private:
     BoundedTextItem *m_inlineEdit;
 
 private Q_SLOTS:
-    void slotPropertyChanged(KoProperty::Set &, KoProperty::Property &);
+    void slotPropertyChanged(KPropertySet &, KProperty &);
 
 };
 

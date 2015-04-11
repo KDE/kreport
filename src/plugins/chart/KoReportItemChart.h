@@ -78,23 +78,23 @@ public:
 
 protected:
 
-    KoProperty::Property * m_dataSource;
-    KoProperty::Property * m_font;
-    KoProperty::Property * m_chartType;
-    KoProperty::Property * m_chartSubType;
-    KoProperty::Property * m_threeD;
-    KoProperty::Property * m_colorScheme;
-    KoProperty::Property * m_aa;
-    KoProperty::Property * m_xTitle;
-    KoProperty::Property * m_yTitle;
+    KProperty * m_dataSource;
+    KProperty * m_font;
+    KProperty * m_chartType;
+    KProperty * m_chartSubType;
+    KProperty * m_threeD;
+    KProperty * m_colorScheme;
+    KProperty * m_aa;
+    KProperty * m_xTitle;
+    KProperty * m_yTitle;
 
-    KoProperty::Property *m_backgroundColor;
-    KoProperty::Property *m_displayLegend;
-    KoProperty::Property *m_legendPosition;
-    KoProperty::Property *m_legendOrientation;
+    KProperty *m_backgroundColor;
+    KProperty *m_displayLegend;
+    KProperty *m_legendPosition;
+    KProperty *m_legendOrientation;
 
-    KoProperty::Property *m_linkMaster;
-    KoProperty::Property *m_linkChild;
+    KProperty *m_linkMaster;
+    KProperty *m_linkChild;
 
     KDChart::Widget *m_chartWidget;
 

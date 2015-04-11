@@ -54,9 +54,9 @@ public:
 protected:
     KRPos m_start;
     KRPos m_end;
-    KoProperty::Property *m_lineColor;
-    KoProperty::Property *m_lineWeight;
-    KoProperty::Property *m_lineStyle;
+    KProperty *m_lineColor;
+    KProperty *m_lineWeight;
+    KProperty *m_lineStyle;
 
     KRLineStyleData lineStyle();
     unsigned int weight() const;

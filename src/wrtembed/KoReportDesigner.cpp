@@ -56,13 +56,13 @@
 //#include <kdebug.h>
 #include <ktoggleaction.h>
 
-#include <KProperty/EditorView>
+#include <KPropertyEditorView>
 #include <kross/core/manager.h>
 
 //! Also add public method for runtime?
 const char ns[] = "http://kexi-project.org/report/2.0";
 
-static QDomElement propertyToElement(QDomDocument* d, KoProperty::Property* p)
+static QDomElement propertyToElement(QDomDocument* d, KProperty* p)
 {
     QDomElement e = d->createElement(QLatin1String("report:" + p->name().toLower()));
     e.appendChild(d->createTextNode(p->value().toString()));
@@ -185,8 +185,8 @@ void KoReportDesigner::init()
     connect(d->pageButton, SIGNAL(released()), this, SLOT(slotPageButton_Pressed()));
     emit pagePropertyChanged(*m_set);
 
-    connect(m_set, SIGNAL(propertyChanged(KoProperty::Set&,KoProperty::Property&)),
-            this, SLOT(slotPropertyChanged(KoProperty::Set&,KoProperty::Property&)));
+    connect(m_set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
+            this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
     changeSet(m_set);
 
@@ -612,23 +612,23 @@ QStringList KoReportDesigner::fieldKeys() const
 void KoReportDesigner::createProperties()
 {
     QStringList keys, strings;
-    m_set = new KoProperty::Set(0, QLatin1String("Report"));
+    m_set = new KPropertySet(0, QLatin1String("Report"));
 
-    connect(m_set, SIGNAL(propertyChanged(KoProperty::Set&,KoProperty::Property&)),
-            this, SLOT(slotPropertyChanged(KoProperty::Set&,KoProperty::Property&)));
+    connect(m_set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
+            this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
-    m_title = new KoProperty::Property("Title", QLatin1String("Report"), tr("Title"), tr("Report Title"));
+    m_title = new KProperty("Title", QLatin1String("Report"), tr("Title"), tr("Report Title"));
 
     keys.clear();
     keys =  KoPageFormat::pageFormatNames();
     strings = KoPageFormat::localizedPageFormatNames();
     QString defaultKey = KoPageFormat::formatString(KoPageFormat::defaultFormat());
-    m_pageSize = new KoProperty::Property("page-size", keys, strings, defaultKey, tr("Page Size"));
+    m_pageSize = new KProperty("page-size", keys, strings, defaultKey, tr("Page Size"));
 
     keys.clear(); strings.clear();
     keys << QLatin1String("portrait") << QLatin1String("landscape");
     strings << tr("Portrait") << tr("Landscape");
-    m_orientation = new KoProperty::Property("print-orientation", keys, strings, QLatin1String("portrait"), tr("Page Orientation"));
+    m_orientation = new KProperty("print-orientation", keys, strings, QLatin1String("portrait"), tr("Page Orientation"));
 
     keys.clear(); strings.clear();
 
@@ -639,29 +639,29 @@ void KoReportDesigner::createProperties()
         keys << unit;
     }
 
-    m_unit = new KoProperty::Property("page-unit", keys, strings, QLatin1String("cm"), tr("Page Unit"));
+    m_unit = new KProperty("page-unit", keys, strings, QLatin1String("cm"), tr("Page Unit"));
 
-    m_showGrid = new KoProperty::Property("grid-visible", true, tr("Show Grid"));
-    m_gridSnap = new KoProperty::Property("grid-snap", true, tr("Snap to Grid"));
-    m_gridDivisions = new KoProperty::Property("grid-divisions", 4, tr("Grid Divisions"));
+    m_showGrid = new KProperty("grid-visible", true, tr("Show Grid"));
+    m_gridSnap = new KProperty("grid-snap", true, tr("Snap to Grid"));
+    m_gridDivisions = new KProperty("grid-divisions", 4, tr("Grid Divisions"));
 
-    m_leftMargin = new KoProperty::Property("margin-left", KoUnit(KoUnit::Centimeter).fromUserValue(1.0),
-        tr("Left Margin"), tr("Left Margin"), KoProperty::Double);
-    m_rightMargin = new KoProperty::Property("margin-right", KoUnit(KoUnit::Centimeter).fromUserValue(1.0),
-        tr("Right Margin"), tr("Right Margin"), KoProperty::Double);
-    m_topMargin = new KoProperty::Property("margin-top", KoUnit(KoUnit::Centimeter).fromUserValue(1.0),
-        tr("Top Margin"), tr("Top Margin"), KoProperty::Double);
-    m_bottomMargin = new KoProperty::Property("margin-bottom", KoUnit(KoUnit::Centimeter).fromUserValue(1.0),
-        tr("Bottom Margin"), tr("Bottom Margin"), KoProperty::Double);
+    m_leftMargin = new KProperty("margin-left", KoUnit(KoUnit::Centimeter).fromUserValue(1.0),
+        tr("Left Margin"), tr("Left Margin"), KProperty::Double);
+    m_rightMargin = new KProperty("margin-right", KoUnit(KoUnit::Centimeter).fromUserValue(1.0),
+        tr("Right Margin"), tr("Right Margin"), KProperty::Double);
+    m_topMargin = new KProperty("margin-top", KoUnit(KoUnit::Centimeter).fromUserValue(1.0),
+        tr("Top Margin"), tr("Top Margin"), KProperty::Double);
+    m_bottomMargin = new KProperty("margin-bottom", KoUnit(KoUnit::Centimeter).fromUserValue(1.0),
+        tr("Bottom Margin"), tr("Bottom Margin"), KProperty::Double);
     m_leftMargin->setOption("unit", QLatin1String("cm"));
     m_rightMargin->setOption("unit", QLatin1String("cm"));
     m_topMargin->setOption("unit", QLatin1String("cm"));
     m_bottomMargin->setOption("unit", QLatin1String("cm"));
 
     keys = Kross::Manager::self().interpreters();
-    m_interpreter = new KoProperty::Property("script-interpreter", keys, keys, keys[0], tr("Script Interpreter"));
+    m_interpreter = new KProperty("script-interpreter", keys, keys, keys[0], tr("Script Interpreter"));
 
-    m_script = new KoProperty::Property("script", keys, keys, QString(), tr("Object Script"));
+    m_script = new KProperty("script", keys, keys, QString(), tr("Object Script"));
 
     m_set->addProperty(m_title);
     m_set->addProperty(m_pageSize);
@@ -677,15 +677,15 @@ void KoReportDesigner::createProperties()
     m_set->addProperty(m_interpreter);
     m_set->addProperty(m_script);
 
-//    KoProperty::Property* _customHeight;
-//    KoProperty::Property* _customWidth;
+//    KProperty* _customHeight;
+//    KProperty* _customWidth;
 
 }
 
 /**
 @brief Handle property changes
 */
-void KoReportDesigner::slotPropertyChanged(KoProperty::Set &s, KoProperty::Property &p)
+void KoReportDesigner::slotPropertyChanged(KPropertySet &s, KProperty &p)
 {
     setModified(true);
     emit pagePropertyChanged(s);
@@ -936,7 +936,7 @@ unsigned int KoReportDesigner::selectionCount() const
         return 0;
 }
 
-void KoReportDesigner::changeSet(KoProperty::Set *s)
+void KoReportDesigner::changeSet(KPropertySet *s)
 {
     //Set the checked state of the report properties button
     if (s == m_set)

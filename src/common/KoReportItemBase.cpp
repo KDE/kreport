@@ -20,12 +20,12 @@
 #include "krpos.h"
 #include "krsize.h"
 #include "krutils.h"
-#include <KProperty/Set>
+#include <KPropertySet>
 
 KoReportItemBase::KoReportItemBase()
 {
     Z = 0;
-    m_name = new KoProperty::Property("Name", QString(), i18n("Name"), i18n("Object Name"));
+    m_name = new KProperty("Name", QString(), i18n("Name"), i18n("Object Name"));
     m_name->setAutoSync(0);
 }
 
@@ -92,7 +92,7 @@ KRPos KoReportItemBase::position()
     return m_pos;
 }
 
-KoProperty::Set* KoReportItemBase::propertySet() const
+KPropertySet* KoReportItemBase::propertySet() const
 {
  return m_set;
 }

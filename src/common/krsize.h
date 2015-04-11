@@ -19,7 +19,7 @@
 #define KRSIZE_H
 #include "KoUnit.h"
 #include <QSizeF>
-#include <KProperty/Property>
+#include <KProperty>
 #include "kreport_export.h"
 
 /**
@@ -43,13 +43,13 @@ public:
     void setPointSize(const QSizeF&, UpdatePropertyFlag update = UpdateProperty);
     void setUnit(KoUnit);
 
-    KoProperty::Property* property() const {
+    KProperty* property() const {
         return m_property;
     }
 private:
     QSizeF m_pointSize;
     KoUnit m_unit;
-    KoProperty::Property* m_property;
+    KProperty* m_property;
 };
 
 #endif
