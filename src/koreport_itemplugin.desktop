@@ -2,9 +2,12 @@
 Type=ServiceType
 X-KDE-ServiceType=KoReport/ItemPlugin
 Comment=KoReport Item Plugin
+Comment[ca]=Connector de l'ítem KoReport
 Comment[fr]=Module externe d'élément KoReport
+Comment[gl]=Complemento de elementos de KoReport
 Comment[nl]=Plug-in voor KoReport-item
 Comment[pt]='Plugin' de Itens do KoReport
+Comment[pt_BR]=Plugin de itens do KoReport
 Comment[sv]=Insticksprogram för Koffice objektrapport
 Comment[uk]=Додаток елементів KoReport
 Comment[x-test]=xxKoReport Item Pluginxx
