@@ -24,8 +24,8 @@
 #include "common/krsize.h"
 #include "reportscene.h"
 
-#include <KProperty/Set.h>
-#include <KProperty/EditorView.h>
+#include <KProperty/Set>
+#include <KProperty/EditorView>
 #include <QGraphicsSceneMouseEvent>
 #include <QScreen>
 #include <QApplication>

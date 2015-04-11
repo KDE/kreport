@@ -24,7 +24,7 @@
 #define koRuler_h
 
 #include "kreport_export.h"
-#include "KoUnit.h"
+#include "common/KoUnit.h"
 
 #include <QWidget>
 #include <QTextOption>

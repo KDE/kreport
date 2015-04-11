@@ -28,8 +28,8 @@
 #include "common/KoReportPluginManager.h"
 #include "KoReportDesignerItemRectBase.h"
 #include "KoReportDesignerItemLine.h"
-#include <calligra/KoRuler.h>
-#include <calligra/KoZoomHandler.h>
+#include "KoRuler.h"
+#include "KoZoomHandler.h"
 
 // qt
 #include <QLabel>
@@ -70,14 +70,14 @@ ReportSection::ReportSection(KoReportDesigner * rptdes)
 
     // ok create the base interface
     m_title = new ReportSectionTitle(this);
-    m_title->setObjectName("detail");
+    m_title->setObjectName(QLatin1String("detail"));
     m_title->setText(i18n("Detail"));
 
     m_sectionRuler = new KoRuler(this, Qt::Vertical, m_reportDesigner->zoomHandler());
     m_sectionRuler->setUnit(m_reportDesigner->pageUnit());
     m_scene = new ReportScene(m_reportDesigner->pageWidthPx(), m_dpiY, rptdes);
     m_sceneView = new ReportSceneView(rptdes, m_scene, this);
-    m_sceneView->setObjectName("scene view");
+    m_sceneView->setObjectName(QLatin1String("scene view"));
     m_sceneView->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
 
     m_resizeBar = new ReportResizeBar(this);
@@ -111,7 +111,7 @@ void ReportSection::setTitle(const QString & s)
 
 void ReportSection::slotResizeBarDragged(int delta)
 {
-    if (m_sceneView->designer() && m_sceneView->designer()->propertySet()->property("page-size").value().toString() == "Labels") {
+    if (m_sceneView->designer() && m_sceneView->designer()->propertySet()->property("page-size").value().toString() == QLatin1String("Labels")) {
         return; // we don't want to allow this on reports that are for labels
     }
     slotSceneClicked(); // switches property set to this section
@@ -132,8 +132,8 @@ void ReportSection::slotResizeBarDragged(int delta)
 
 void ReportSection::buildXML(QDomDocument &doc, QDomElement &section)
 {
-    KRUtils::setAttribute(section, "svg:height", m_sectionData->m_height->value().toDouble());
-    section.setAttribute("fo:background-color", m_sectionData->backgroundColor().name());
+    KRUtils::setAttribute(section, QLatin1String("svg:height"), m_sectionData->m_height->value().toDouble());
+    section.setAttribute(QLatin1String("fo:background-color"), m_sectionData->backgroundColor().name());
 
     // now get a list of all the QGraphicsItems on this scene and output them.
     QGraphicsItemList list = m_scene->items();
@@ -149,7 +149,7 @@ void ReportSection::initFromXML(QDomNode & section)
     QDomNode node;
     QString n;
 
-    qreal h = KoUnit::parseValue(section.toElement().attribute("svg:height", "2.0cm"));
+    qreal h = KoUnit::parseValue(section.toElement().attribute(QLatin1String("svg:height"), QLatin1String("2.0cm")));
     m_sectionData->m_height->setValue(h);
 
     h  = POINT_TO_INCH(h) * m_dpiY;;
@@ -157,16 +157,16 @@ void ReportSection::initFromXML(QDomNode & section)
     m_scene->setSceneRect(0, 0, m_scene->width(), h);
     slotResizeBarDragged(0);
 
-    m_sectionData->m_backgroundColor->setValue(QColor(section.toElement().attribute("fo:background-color", "#ffffff")));
+    m_sectionData->m_backgroundColor->setValue(QColor(section.toElement().attribute(QLatin1String("fo:background-color"), QLatin1String("#ffffff"))));
 
     for (int i = 0; i < nl.count(); ++i) {
         node = nl.item(i);
         n = node.nodeName();
-        if (n.startsWith("report:")) {
+        if (n.startsWith(QLatin1String("report:"))) {
             //Load objects
             //report:line is a special case as it is not a plugin
             QString reportItemName = n.mid(qstrlen("report:"));
-            if (reportItemName == "line") {
+            if (reportItemName == QLatin1String("line")) {
                 (new KoReportDesignerItemLine(node, m_sceneView->designer(), m_scene))->setVisible(true);
                 continue;
             }
@@ -348,7 +348,7 @@ void ReportSectionTitle::paintEvent(QPaintEvent * event)
         painter.fillRect(rect(), palette().brush(cg, QPalette::Highlight));
     }
     painter.setPen(palette().color(cg, current ? QPalette::HighlightedText : QPalette::WindowText));
-    QPixmap pixmap(QIcon::fromTheme("arrow-down").pixmap(16,16));
+    QPixmap pixmap(QIcon::fromTheme(QLatin1String("arrow-down")).pixmap(16,16));
     replaceColors(&pixmap, painter.pen().color());
     const int left = 25;
     painter.drawPixmap(QPoint(left, (height() - pixmap.height()) / 2), pixmap);

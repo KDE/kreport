@@ -23,7 +23,7 @@
 #include "common/krpos.h"
 #include "common/krsize.h"
 
-#include <KProperty/Set.h>
+#include <KProperty/Set>
 
 #include <QRect>
 #include <QPainter>

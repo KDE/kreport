@@ -20,7 +20,7 @@
 #include "common/renderobjects.h"
 #include "renderer/scripting/krscripthandler.h"
 
-#include <KProperty/Set.h>
+#include <KProperty/Set>
 
 #include <QPalette>
 
@@ -36,12 +36,12 @@ KoReportItemCheck::KoReportItemCheck(QDomNode &element)
     QString n;
     QDomNode node;
 
-    m_name->setValue(element.toElement().attribute("report:name"));
-    m_controlSource->setValue(element.toElement().attribute("report:item-data-source"));
-    Z = element.toElement().attribute("report:z-index").toDouble();
-    m_foregroundColor->setValue(QColor(element.toElement().attribute("fo:foreground-color")));
-    m_checkStyle->setValue(element.toElement().attribute("report:check-style"));
-    m_staticValue->setValue(QVariant(element.toElement().attribute("report:value")).toBool());
+    m_name->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
+    Z = element.toElement().attribute(QLatin1String("report:z-index")).toDouble();
+    m_foregroundColor->setValue(QColor(element.toElement().attribute(QLatin1String("fo:foreground-color"))));
+    m_checkStyle->setValue(element.toElement().attribute(QLatin1String("report:check-style")));
+    m_staticValue->setValue(QVariant(element.toElement().attribute(QLatin1String("report:value"))).toBool());
 
     parseReportRect(element.toElement(), &m_pos, &m_size);
 
@@ -49,7 +49,7 @@ KoReportItemCheck::KoReportItemCheck(QDomNode &element)
         node = nl.item(i);
         n = node.nodeName();
 
-        if (n == "report:line-style") {
+        if (n == QLatin1String("report:line-style")) {
             KRLineStyleData ls;
             if (parseReportLineStyleData(node.toElement(), ls)) {
                 m_lineWeight->setValue(ls.weight);
@@ -70,16 +70,16 @@ KoReportItemCheck::~KoReportItemCheck()
 
 void KoReportItemCheck::createProperties()
 {
-    m_set = new KoProperty::Set(0, "Check");
+    m_set = new KoProperty::Set(0, QLatin1String("Check"));
 
     QStringList keys, strings;
 
-    keys << "Cross" << "Tick" << "Dot";
+    keys << QLatin1String("Cross") << QLatin1String("Tick") << QLatin1String("Dot");
     strings << tr("Cross") << tr("Tick") << tr("Dot");
-    m_checkStyle = new KoProperty::Property("check-style", keys, strings, "Cross", tr("Style"));
+    m_checkStyle = new KoProperty::Property("check-style", keys, strings, QLatin1String("Cross"), tr("Style"));
 
     m_controlSource = new KoProperty::Property("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
-    m_controlSource->setOption("extraValueAllowed", "true");
+    m_controlSource->setOption("extraValueAllowed", QLatin1String("true"));
 
     m_foregroundColor = new KoProperty::Property("foreground-color", QPalette().color(QPalette::Foreground), tr("Foreground Color"));
 
@@ -115,7 +115,7 @@ QString KoReportItemCheck::itemDataSource() const
 // RTTI
 QString KoReportItemCheck::typeName() const
 {
-    return "check";
+    return QLatin1String("check");
 }
 
 int KoReportItemCheck::renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset,
@@ -136,7 +136,7 @@ int KoReportItemCheck::renderSimpleData(OROPage *page, OROSection *section, cons
 
     //kDebug() << "ControlSource:" << cs;
     if (!cs.isEmpty()) {
-        if (cs.left(1) == "=" && script) {
+        if (cs.left(1) == QLatin1String("=") && script) {
             str = script->evaluate(cs.mid(1)).toString();
         } else {
             str = data.toString();
@@ -145,7 +145,7 @@ int KoReportItemCheck::renderSimpleData(OROPage *page, OROSection *section, cons
         str = str.toLower();
 
         //kDebug() << "Check Value:" << str;
-        if (str == "t" || str == "y" || str == "true" || str == "1")
+        if (str == QLatin1String("t") || str == QLatin1String("y") || str == QLatin1String("true") || str == QLatin1String("1"))
             v = true;
 
     } else {

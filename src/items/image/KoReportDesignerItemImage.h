@@ -23,7 +23,7 @@
 #include "wrtembed/KoReportDesignerItemRectBase.h"
 #include "KoReportItemImage.h"
 
-#include <KProperty/Set.h>
+#include <KProperty/Set>
 
 #include <QImage>
 

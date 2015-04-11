@@ -21,7 +21,7 @@
 #define KOREPORTDESIGNERITEMRECTBASE_H
 
 #include <QGraphicsRectItem>
-#include <KProperty/Set.h>
+#include <KProperty/Set>
 
 #include "KoReportDesignerItemBase.h"
 #include "common/KoUnit.h"

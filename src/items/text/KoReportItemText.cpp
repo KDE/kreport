@@ -18,7 +18,7 @@
 #include "KoReportItemText.h"
 #include "common/renderobjects.h"
 
-#include <KProperty/Set.h>
+#include <KProperty/Set>
 
 #include <QPrinter>
 #include <QApplication>

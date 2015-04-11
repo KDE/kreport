@@ -62,9 +62,9 @@ ReportSection * ReportSectionDetail::detailSection() const
 void ReportSectionDetail::buildXML(QDomDocument & doc, QDomElement & section)
 {
     if (pageBreak() != ReportSectionDetail::BreakNone) {
-        QDomElement spagebreak = doc.createElement("pagebreak");
+        QDomElement spagebreak = doc.createElement(QLatin1String("pagebreak"));
         if (pageBreak() == ReportSectionDetail::BreakAtEnd)
-            spagebreak.setAttribute("when", "at end");
+            spagebreak.setAttribute(QLatin1String("when"), QLatin1String("at end"));
         section.appendChild(spagebreak);
     }
 
@@ -73,8 +73,8 @@ void ReportSectionDetail::buildXML(QDomDocument & doc, QDomElement & section)
     }
 
     // detail section
-    QDomElement gdetail = doc.createElement("report:section");
-    gdetail.setAttribute("report:section-type", "detail");
+    QDomElement gdetail = doc.createElement(QLatin1String("report:section"));
+    gdetail.setAttribute(QLatin1String("report:section-type"), QLatin1String("detail"));
     m_detail->buildXML(doc, gdetail);
     section.appendChild(gdetail);
 }
@@ -89,15 +89,15 @@ void ReportSectionDetail::initFromXML(QDomNode & section)
         node = nl.item(i);
         n = node.nodeName();
         //kDebug() << n;
-        if (n == "pagebreak") {
+        if (n == QLatin1String("pagebreak")) {
             QDomElement eThis = node.toElement();
-            if (eThis.attribute("when") == "at end")
+            if (eThis.attribute(QLatin1String("when")) == QLatin1String("at end"))
                 setPageBreak(BreakAtEnd);
-        } else if (n == "report:group") {
-            ReportSectionDetailGroup * rsdg = new ReportSectionDetailGroup("unnamed", this, this);
+        } else if (n == QLatin1String("report:group")) {
+            ReportSectionDetailGroup * rsdg = new ReportSectionDetailGroup(QLatin1String("unnamed"), this, this);
             rsdg->initFromXML( node.toElement() );
             insertGroupSection(groupSectionCount(), rsdg);
-        } else if (n == "report:section" && node.toElement().attribute("report:section-type") == "detail") {
+        } else if (n == QLatin1String("report:section") && node.toElement().attribute(QLatin1String("report:section-type")) == QLatin1String("detail")) {
             //kDebug() << "Creating detail section";
             m_detail->initFromXML(node);
         } else {

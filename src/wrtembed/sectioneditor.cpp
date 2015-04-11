@@ -69,15 +69,15 @@ SectionEditor::SectionEditor(QWidget* parent)
 
     QWidget *widget = new QWidget(this);
     m_ui.setupUi(widget);
-    m_btnAdd = new QPushButton(QIcon::fromTheme("list-add"), tr("Add..."), this);
+    m_btnAdd = new QPushButton(QIcon::fromTheme(QLatin1String("list-add")), tr("Add..."), this);
     m_ui.lGroupSectionsButtons->addWidget(m_btnAdd);
-    m_btnEdit = new QPushButton(QIcon::fromTheme("document-edit"), tr("Edit..."), this);
+    m_btnEdit = new QPushButton(QIcon::fromTheme(QLatin1String("document-edit")), tr("Edit..."), this);
     m_ui.lGroupSectionsButtons->addWidget(m_btnEdit);
-    m_btnRemove = new QPushButton(QIcon::fromTheme("list-remove"), tr("Delete"), this);
+    m_btnRemove = new QPushButton(QIcon::fromTheme(QLatin1String("list-remove")), tr("Delete"), this);
     m_ui.lGroupSectionsButtons->addWidget(m_btnRemove);
-    m_btnMoveUp = new QPushButton(QIcon::fromTheme("arrow-up"), tr("Move Up"), this);
+    m_btnMoveUp = new QPushButton(QIcon::fromTheme(QLatin1String("arrow-up")), tr("Move Up"), this);
     m_ui.lGroupSectionsButtons->addWidget(m_btnMoveUp);
-    m_btnMoveDown = new QPushButton(QIcon::fromTheme("arrow-down"), tr("Move Down"), this);
+    m_btnMoveDown = new QPushButton(QIcon::fromTheme(QLatin1String("arrow-down")), tr("Move Down"), this);
     m_ui.lGroupSectionsButtons->addWidget(m_btnMoveDown);
     m_ui.lGroupSectionsButtons->addStretch();
 

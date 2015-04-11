@@ -21,7 +21,7 @@
 
 #include "KoZoomHandler.h"
 #include <kdebug.h>
-#include "KoUnit.h" // for POINT_TO_INCH
+#include "common/KoUnit.h" // for POINT_TO_INCH
 #include "KoDpi.h"
 #include <QPointF>
 #include <QRectF>

@@ -20,7 +20,7 @@
 #include "common/renderobjects.h"
 #include "renderer/scripting/krscripthandler.h"
 
-#include <KProperty/Set.h>
+#include <KProperty/Set>
 
 #include <QPalette>
 #include <QFontMetrics>
@@ -38,15 +38,15 @@ KoReportItemField::KoReportItemField(QDomNode & element)
     QString n;
     QDomNode node;
 
-    m_name->setValue(element.toElement().attribute("report:name"));
-    m_controlSource->setValue(element.toElement().attribute("report:item-data-source"));
-    m_itemValue->setValue(element.toElement().attribute("report:value"));
-    Z = element.toElement().attribute("report:z-index").toDouble();
-    m_horizontalAlignment->setValue(element.toElement().attribute("report:horizontal-align"));
-    m_verticalAlignment->setValue(element.toElement().attribute("report:vertical-align"));
+    m_name->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
+    m_itemValue->setValue(element.toElement().attribute(QLatin1String("report:value")));
+    Z = element.toElement().attribute(QLatin1String("report:z-index")).toDouble();
+    m_horizontalAlignment->setValue(element.toElement().attribute(QLatin1String("report:horizontal-align")));
+    m_verticalAlignment->setValue(element.toElement().attribute(QLatin1String("report:vertical-align")));
 
-    m_canGrow->setValue(element.toElement().attribute("report:can-grow"));
-    m_wordWrap->setValue(element.toElement().attribute("report:word-wrap"));
+    m_canGrow->setValue(element.toElement().attribute(QLatin1String("report:can-grow")));
+    m_wordWrap->setValue(element.toElement().attribute(QLatin1String("report:word-wrap")));
 
     parseReportRect(element.toElement(), &m_pos, &m_size);
 
@@ -54,7 +54,7 @@ KoReportItemField::KoReportItemField(QDomNode & element)
         node = nl.item(i);
         n = node.nodeName();
 
-        if (n == "report:text-style") {
+        if (n == QLatin1String("report:text-style")) {
             KRTextStyleData ts;
             if (parseReportTextStyleData(node.toElement(), ts)) {
                 m_backgroundColor->setValue(ts.backgroundColor);
@@ -63,7 +63,7 @@ KoReportItemField::KoReportItemField(QDomNode & element)
                 m_font->setValue(ts.font);
 
             }
-        } else if (n == "report:line-style") {
+        } else if (n == QLatin1String("report:line-style")) {
             KRLineStyleData ls;
             if (parseReportLineStyleData(node.toElement(), ls)) {
                 m_lineWeight->setValue(ls.weight);
@@ -83,26 +83,26 @@ KoReportItemField::~KoReportItemField()
 
 void KoReportItemField::createProperties()
 {
-    m_set = new KoProperty::Set(0, "Field");
+    m_set = new KoProperty::Set(0, QLatin1String("Field"));
 
     QStringList keys, strings;
 
     m_controlSource = new KoProperty::Property("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
-    m_controlSource->setOption("extraValueAllowed", "true");
+    m_controlSource->setOption("extraValueAllowed", QLatin1String("true"));
 
     m_itemValue = new KoProperty::Property("value", QString(), tr("Value"), tr("Value used if not bound to a field"));
 
-    keys << "left" << "center" << "right";
+    keys << QLatin1String("left") << QLatin1String("center") << QLatin1String("right");
     strings << tr("Left") << tr("Center") << tr("Right");
-    m_horizontalAlignment = new KoProperty::Property("horizontal-align", keys, strings, "left", tr("Horizontal Alignment"));
+    m_horizontalAlignment = new KoProperty::Property("horizontal-align", keys, strings, QLatin1String("left"), tr("Horizontal Alignment"));
 
     keys.clear();
     strings.clear();
-    keys << "top" << "center" << "bottom";
+    keys << QLatin1String("top") << QLatin1String("center") << QLatin1String("bottom");
     strings << tr("Top") << tr("Center") << tr("Bottom");
-    m_verticalAlignment = new KoProperty::Property("vertical-align", keys, strings, "center", tr("Vertical Alignment"));
+    m_verticalAlignment = new KoProperty::Property("vertical-align", keys, strings, QLatin1String("center"), tr("Vertical Alignment"));
 
-    m_font = new KoProperty::Property("Font", QApplication::font(), "Font", tr("Font"));
+    m_font = new KoProperty::Property("Font", QApplication::font(), QLatin1String("Font"), tr("Font"));
 
 
     m_backgroundColor = new KoProperty::Property("background-color", QColor(Qt::white), tr("Background Color"));
@@ -111,7 +111,7 @@ void KoReportItemField::createProperties()
     m_backgroundOpacity = new KoProperty::Property("background-opacity", QVariant(0), tr("Background Opacity"));
     m_backgroundOpacity->setOption("max", 100);
     m_backgroundOpacity->setOption("min", 0);
-    m_backgroundOpacity->setOption("unit", "%");
+    m_backgroundOpacity->setOption("unit", QLatin1String("%"));
 
     m_lineWeight = new KoProperty::Property("line-weight", 1, tr("Line Weight"));
     m_lineColor = new KoProperty::Property("line-color", QColor(Qt::black), tr("Line Color"));
@@ -154,17 +154,17 @@ int KoReportItemField::textFlags() const
     int flags;
     QString t;
     t = m_horizontalAlignment->value().toString();
-    if (t == "center")
+    if (t == QLatin1String("center"))
         flags = Qt::AlignHCenter;
-    else if (t == "right")
+    else if (t == QLatin1String("right"))
         flags = Qt::AlignRight;
     else
         flags = Qt::AlignLeft;
 
     t = m_verticalAlignment->value().toString();
-    if (t == "center")
+    if (t == QLatin1String("center"))
         flags |= Qt::AlignVCenter;
-    else if (t == "bottom")
+    else if (t == QLatin1String("bottom"))
         flags |= Qt::AlignBottom;
     else
         flags |= Qt::AlignTop;
@@ -210,7 +210,7 @@ KRLineStyleData KoReportItemField::lineStyle()
 // RTTI
 QString KoReportItemField::typeName() const
 {
-    return "field";
+    return QLatin1String("field");
 }
 
 int KoReportItemField::renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset,
@@ -230,15 +230,15 @@ int KoReportItemField::renderSimpleData(OROPage *page, OROSection *section, cons
 
     QString ids = itemDataSource();
     if (!ids.isEmpty()) {
-        if (ids.left(1) == "=" && script) { //Everything after = is treated as code
-            if (!ids.contains("PageTotal()")) {
+        if (ids.left(1) == QLatin1String("=") && script) { //Everything after = is treated as code
+            if (!ids.contains(QLatin1String("PageTotal()"))) {
                 QVariant v = script->evaluate(ids.mid(1));
                 str = v.toString();
             } else {
                 str = ids.mid(1);
                 tb->setRequiresPostProcessing();
             }
-        } else if (ids.left(1) == "$") { //Everything past $ is treated as a string
+        } else if (ids.left(1) == QLatin1String("$")) { //Everything past $ is treated as a string
             str = ids.mid(1);
         } else {
             str = data.toString();

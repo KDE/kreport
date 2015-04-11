@@ -33,8 +33,8 @@
 #include <QSettings>
 #include <kdebug.h>
 
-#include <KProperty/Set.h>
-#include <KProperty/EditorView.h>
+#include <KProperty/Set>
+#include <KProperty/EditorView>
 
 #include "common/KoReportItemBase.h"
 #include <common/krutils.h>
@@ -76,7 +76,7 @@ void KoReportDesignerItemBase::buildXMLLineStyle(QDomDocument & doc, QDomElement
 
 QString KoReportDesignerItemBase::dataSourceAndObjectTypeName(const QString& dataSource, const QString& objectTypeName) const
 {
-    return QString("%1: %2").arg(dataSource).arg(objectTypeName);
+    return QString::fromLatin1("%1: %2").arg(dataSource).arg(objectTypeName);
 }
 
 // static

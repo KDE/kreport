@@ -21,8 +21,8 @@
 #include "wrtembed/KoReportDesignerItemBase.h"
 #include "wrtembed/KoReportDesigner.h"
 
-#include <KProperty/Set.h>
-#include <KProperty/EditorView.h>
+#include <KProperty/Set>
+#include <KProperty/EditorView>
 
 #include <QImageWriter>
 #include <QGraphicsScene>
@@ -71,7 +71,7 @@ KoReportDesignerItemImage::KoReportDesignerItemImage(QDomNode & element, KoRepor
 KoReportDesignerItemImage* KoReportDesignerItemImage::clone()
 {
     QDomDocument d;
-    QDomElement e = d.createElement("clone");;
+    QDomElement e = d.createElement(QLatin1String("clone"));;
     QDomNode n;
     buildXML(d, e);
     n = e.firstChild();
@@ -94,12 +94,12 @@ void KoReportDesignerItemImage::paint(QPainter* painter, const QStyleOptionGraph
     if (isInline()) {
         //QImage t_img = _image;
         QImage t_img = m_staticImage->value().value<QPixmap>().toImage();
-        if (mode() == "stretch") {
+        if (mode() == QLatin1String("stretch")) {
             t_img = t_img.scaled(rect().width(), rect().height(), Qt::KeepAspectRatio);
         }
         painter->drawImage(rect().left(), rect().top(), t_img, 0, 0, rect().width(), rect().height());
     } else {
-        painter->drawText(rect(), 0, dataSourceAndObjectTypeName(itemDataSource(), "image"));
+        painter->drawText(rect(), 0, dataSourceAndObjectTypeName(itemDataSource(), QLatin1String("image")));
     }
 
     //Draw a border so user knows the object edge
@@ -120,13 +120,13 @@ void KoReportDesignerItemImage::buildXML(QDomDocument & doc, QDomElement & paren
     // properties
     addPropertyAsAttribute(&entity, m_name);
     addPropertyAsAttribute(&entity, m_resizeMode);
-    entity.setAttribute("report:z-index", zValue());
+    entity.setAttribute(QLatin1String("report:z-index"), zValue());
     buildXMLRect(doc, entity, &m_pos, &m_size);
 
 
     if (isInline()) {
-        QDomElement map = doc.createElement("report:inline-image-data");
-        map.appendChild(doc.createTextNode(inlineImageData()));
+        QDomElement map = doc.createElement(QLatin1String("report:inline-image-data"));
+        map.appendChild(doc.createTextNode(QLatin1String(inlineImageData())));
         entity.appendChild(map);
     } else {
         addPropertyAsAttribute(&entity, m_controlSource);

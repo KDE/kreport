@@ -24,7 +24,7 @@
 #include "reportscene.h"
 #include "common/krutils.h"
 
-#include <KProperty/EditorView.h>
+#include <KProperty/EditorView>
 
 #include <klocalizedstring.h>
 
@@ -85,7 +85,7 @@ KoReportDesignerItemLine::KoReportDesignerItemLine(QDomNode & entity, KoReportDe
 KoReportDesignerItemLine* KoReportDesignerItemLine::clone()
 {
     QDomDocument d;
-    QDomElement e = d.createElement("clone");
+    QDomElement e = d.createElement(QLatin1String("clone"));
     QDomNode n;
     buildXML(d, e);
     n = e.firstChild();
@@ -121,11 +121,11 @@ void KoReportDesignerItemLine::buildXML(QDomDocument & doc, QDomElement & parent
 
     // properties
     addPropertyAsAttribute(&entity, m_name);
-    entity.setAttribute("report:z-index", zValue());
-    KRUtils::setAttribute(entity, "svg:x1", m_start.toPoint().x());
-    KRUtils::setAttribute(entity, "svg:y1", m_start.toPoint().y());
-    KRUtils::setAttribute(entity, "svg:x2", m_end.toPoint().x());
-    KRUtils::setAttribute(entity, "svg:y2", m_end.toPoint().y());
+    entity.setAttribute(QLatin1String("report:z-index"), zValue());
+    KRUtils::setAttribute(entity, QLatin1String("svg:x1"), m_start.toPoint().x());
+    KRUtils::setAttribute(entity, QLatin1String("svg:y1"), m_start.toPoint().y());
+    KRUtils::setAttribute(entity, QLatin1String("svg:x2"), m_end.toPoint().x());
+    KRUtils::setAttribute(entity, QLatin1String("svg:y2"), m_end.toPoint().y());
 
     buildXMLLineStyle(doc, entity, lineStyle());
 

@@ -31,7 +31,7 @@ KoReportLabelPlugin::KoReportLabelPlugin(QObject *parent, const QVariantList &ar
 {
     KoReportPluginInfo *info = new KoReportPluginInfo();
     info->setClassName("label");
-    info->setIcon(QIcon::fromTheme("label"));
+    info->setIcon(QIcon::fromTheme(QLatin1String("label")));
     info->setName(tr("Label"));
     info->setPriority(1);
 

@@ -58,16 +58,16 @@ void Label::setHorizonalAlignment(int a)
 {
     switch (a) {
     case -1:
-        m_label->m_horizontalAlignment->setValue("left");
+        m_label->m_horizontalAlignment->setValue(QLatin1String("left"));
         break;
     case 0:
-        m_label->m_horizontalAlignment->setValue("center");
+        m_label->m_horizontalAlignment->setValue(QLatin1String("center"));
         break;
     case 1:
-        m_label->m_horizontalAlignment->setValue("right");
+        m_label->m_horizontalAlignment->setValue(QLatin1String("right"));
         break;
     default:
-        m_label->m_horizontalAlignment->setValue("left");
+        m_label->m_horizontalAlignment->setValue(QLatin1String("left"));
         break;
     }
 }
@@ -91,16 +91,16 @@ void Label::setVerticalAlignment(int a)
 {
     switch (a) {
     case -1:
-        m_label->m_verticalAlignment->setValue("top");
+        m_label->m_verticalAlignment->setValue(QLatin1String("top"));
         break;
     case 0:
-        m_label->m_verticalAlignment->setValue("middle");
+        m_label->m_verticalAlignment->setValue(QLatin1String("middle"));
         break;
     case 1:
-        m_label->m_verticalAlignment->setValue("mottom");
+        m_label->m_verticalAlignment->setValue(QLatin1String("mottom"));
         break;
     default:
-        m_label->m_verticalAlignment->setValue("middle");
+        m_label->m_verticalAlignment->setValue(QLatin1String("middle"));
         break;
     }
 }

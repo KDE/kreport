@@ -104,7 +104,10 @@ set(kreport_LIB_SRCS
     items/text/KoReportTextPlugin.cpp
 )
 
-#qt5_wrap_ui(kreport_UI_HEADERS wrtembed/detailgroupsectiondialog.ui wrtembed/sectioneditor.ui)
+qt5_wrap_ui(kreport_LIB_SRCS
+    wrtembed/detailgroupsectiondialog.ui
+    wrtembed/sectioneditor.ui
+)
 
 add_library(KReport SHARED ${kreport_LIB_SRCS})
 

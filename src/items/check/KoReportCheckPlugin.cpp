@@ -32,7 +32,7 @@ KoReportCheckPlugin::KoReportCheckPlugin(QObject *parent, const QVariantList &ar
 
     KoReportPluginInfo *info = new KoReportPluginInfo();
     info->setClassName("check");
-    info->setIcon(QIcon::fromTheme("checkbox"));
+    info->setIcon(QIcon::fromTheme(QLatin1String("checkbox")));
     info->setName(tr("Check Box"));
     info->setPriority(5);
     setInfo(info);

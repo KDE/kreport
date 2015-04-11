@@ -18,7 +18,7 @@
 #include "KoReportItemImage.h"
 #include "common/renderobjects.h"
 
-#include <KProperty/Set.h>
+#include <KProperty/Set>
 
 #include <QBuffer>
 #include <kcodecs.h>
@@ -35,10 +35,10 @@ KoReportItemImage::KoReportItemImage(QDomNode & element)
     QString n;
     QDomNode node;
 
-    m_name->setValue(element.toElement().attribute("report:name"));
-    m_controlSource->setValue(element.toElement().attribute("report:item-data-source"));
-    m_resizeMode->setValue(element.toElement().attribute("report:resize-mode", "stretch"));
-    Z = element.toElement().attribute("report:z-index").toDouble();
+    m_name->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
+    m_resizeMode->setValue(element.toElement().attribute(QLatin1String("report:resize-mode"), QLatin1String("stretch")));
+    Z = element.toElement().attribute(QLatin1String("report:z-index")).toDouble();
 
     parseReportRect(element.toElement(), &m_pos, &m_size);
 
@@ -46,7 +46,7 @@ KoReportItemImage::KoReportItemImage(QDomNode & element)
         node = nl.item(i);
         n = node.nodeName();
 
-        if (n == "report:inline-image-data") {
+        if (n == QLatin1String("report:inline-image-data")) {
 
             setInlineImageData(node.firstChild().nodeValue().toLatin1());
         } else {
@@ -112,14 +112,14 @@ void KoReportItemImage::setMode(const QString &m)
 
 void KoReportItemImage::createProperties()
 {
-    m_set = new KoProperty::Set(0, "Image");
+    m_set = new KoProperty::Set(0, QLatin1String("Image"));
 
     m_controlSource = new KoProperty::Property("item-data-source", QStringList(), QStringList(), QString(), i18n("Data Source"));
 
     QStringList keys, strings;
-    keys << "clip" << "stretch";
+    keys << QLatin1String("clip") << QLatin1String("stretch");
     strings << i18n("Clip") << i18n("Stretch");
-    m_resizeMode = new KoProperty::Property("resize-mode", keys, strings, "clip", i18n("Resize Mode"));
+    m_resizeMode = new KoProperty::Property("resize-mode", keys, strings, QLatin1String("clip"), i18n("Resize Mode"));
 
     m_staticImage = new KoProperty::Property("static-image", QPixmap(), i18n("Value"), i18n("Value used if not bound to a field"));
 
@@ -142,7 +142,7 @@ QString KoReportItemImage::itemDataSource() const
 
 QString KoReportItemImage::typeName() const
 {
-    return "image";
+    return QLatin1String("image");
 }
 
 int KoReportItemImage::renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset,
@@ -150,20 +150,20 @@ int KoReportItemImage::renderSimpleData(OROPage *page, OROSection *section, cons
 {
     Q_UNUSED(script)
 
-    QString uudata;
+    QByteArray uudata;
     QByteArray imgdata;
     if (!isInline()) {
         imgdata = data.toByteArray();
     } else {
         uudata = inlineImageData();
-        imgdata = KCodecs::base64Decode(uudata.toLatin1());
+        imgdata = KCodecs::base64Decode(uudata);
     }
 
     QImage img;
     img.loadFromData(imgdata);
     OROImage * id = new OROImage();
     id->setImage(img);
-    if (mode().toLower() == "stretch") {
+    if (mode().toLower() == QLatin1String("stretch")) {
         id->setScaled(true);
         id->setAspectRatioMode(Qt::KeepAspectRatio);
         id->setTransformationMode(Qt::SmoothTransformation);

@@ -22,7 +22,7 @@
 #include "wrtembed/KoReportDesignerItemRectBase.h"
 #include "KoReportItemCheck.h"
 
-#include <KProperty/Set.h>
+#include <KProperty/Set>
 
 #include <QGraphicsRectItem>
 

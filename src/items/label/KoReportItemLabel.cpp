@@ -17,7 +17,7 @@
  */
 #include "KoReportItemLabel.h"
 
-#include <KProperty/Set.h>
+#include <KProperty/Set>
 
 #include <kdebug.h>
 #include <klocalizedstring.h>
@@ -36,11 +36,11 @@ KoReportItemLabel::KoReportItemLabel(QDomNode & element)
     QString n;
     QDomNode node;
 
-    m_name->setValue(element.toElement().attribute("report:name"));
-    m_text->setValue(element.toElement().attribute("report:caption"));
-    Z = element.toElement().attribute("report:z-index").toDouble();
-    m_horizontalAlignment->setValue(element.toElement().attribute("report:horizontal-align"));
-    m_verticalAlignment->setValue(element.toElement().attribute("report:vertical-align"));
+    m_name->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    m_text->setValue(element.toElement().attribute(QLatin1String("report:caption")));
+    Z = element.toElement().attribute(QLatin1String("report:z-index")).toDouble();
+    m_horizontalAlignment->setValue(element.toElement().attribute(QLatin1String("report:horizontal-align")));
+    m_verticalAlignment->setValue(element.toElement().attribute(QLatin1String("report:vertical-align")));
 
     parseReportRect(element.toElement(), &m_pos, &m_size);
 
@@ -48,7 +48,7 @@ KoReportItemLabel::KoReportItemLabel(QDomNode & element)
         node = nl.item(i);
         n = node.nodeName();
 
-        if (n == "report:text-style") {
+        if (n == QLatin1String("report:text-style")) {
             KRTextStyleData ts;
             if (parseReportTextStyleData(node.toElement(), ts)) {
                 m_backgroundColor->setValue(ts.backgroundColor);
@@ -57,7 +57,7 @@ KoReportItemLabel::KoReportItemLabel(QDomNode & element)
                 m_font->setValue(ts.font);
 
             }
-        } else if (n == "report:line-style") {
+        } else if (n == QLatin1String("report:line-style")) {
             KRLineStyleData ls;
             if (parseReportLineStyleData(node.toElement(), ls)) {
                 m_lineWeight->setValue(ls.weight);
@@ -87,20 +87,20 @@ void KoReportItemLabel::setText(const QString& t)
 
 void KoReportItemLabel::createProperties()
 {
-    m_set = new KoProperty::Set(0, "Label");
+    m_set = new KoProperty::Set(0, QLatin1String("Label"));
 
-    m_text = new KoProperty::Property("caption", "Label", i18n("Caption"));
+    m_text = new KoProperty::Property("caption", QLatin1String("Label"), i18n("Caption"));
     QStringList keys, strings;
 
-    keys << "left" << "center" << "right";
+    keys << QLatin1String("left") << QLatin1String("center") << QLatin1String("right");
     strings << i18n("Left") << i18n("Center") << i18n("Right");
-    m_horizontalAlignment = new KoProperty::Property("horizontal-align", keys, strings, "left", i18n("Horizontal Alignment"));
+    m_horizontalAlignment = new KoProperty::Property("horizontal-align", keys, strings, QLatin1String("left"), i18n("Horizontal Alignment"));
 
     keys.clear();
     strings.clear();
-    keys << "top" << "center" << "bottom";
+    keys << QLatin1String("top") << QLatin1String("center") << QLatin1String("bottom");
     strings << i18n("Top") << i18n("Center") << i18n("Bottom");
-    m_verticalAlignment = new KoProperty::Property("vertical-align", keys, strings, "center", i18n("Vertical Alignment"));
+    m_verticalAlignment = new KoProperty::Property("vertical-align", keys, strings, QLatin1String("center"), i18n("Vertical Alignment"));
 
     m_font = new KoProperty::Property("Font", KGlobalSettings::generalFont(), i18n("Font"), i18n("Font"));
 
@@ -110,7 +110,7 @@ void KoReportItemLabel::createProperties()
     m_backgroundOpacity = new KoProperty::Property("background-opacity", QVariant(0), i18n("Background Opacity"));
     m_backgroundOpacity->setOption("max", 100);
     m_backgroundOpacity->setOption("min", 0);
-    m_backgroundOpacity->setOption("unit", "%");
+    m_backgroundOpacity->setOption("unit", QLatin1String("%"));
 
     m_lineWeight = new KoProperty::Property("line-weight", 1, i18n("Line Weight"));
     m_lineColor = new KoProperty::Property("line-color", QColor(Qt::black), i18n("Line Color"));
@@ -134,17 +134,17 @@ Qt::Alignment KoReportItemLabel::textFlags() const
     Qt::Alignment align;
     QString t;
     t = m_horizontalAlignment->value().toString();
-    if (t == "center")
+    if (t == QLatin1String("center"))
         align = Qt::AlignHCenter;
-    else if (t == "right")
+    else if (t == QLatin1String("right"))
         align = Qt::AlignRight;
     else
         align = Qt::AlignLeft;
 
     t = m_verticalAlignment->value().toString();
-    if (t == "center")
+    if (t == QLatin1String("center"))
         align |= Qt::AlignVCenter;
-    else if (t == "bottom")
+    else if (t == QLatin1String("bottom"))
         align |= Qt::AlignBottom;
     else
         align |= Qt::AlignTop;
@@ -174,7 +174,7 @@ KRLineStyleData KoReportItemLabel::lineStyle()
 // RTTI
 QString KoReportItemLabel::typeName() const
 {
-    return "label";
+    return QLatin1String("label");
 }
 
 int KoReportItemLabel::renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset,

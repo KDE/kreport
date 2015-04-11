@@ -20,7 +20,7 @@
 #include "wrtembed/KoReportDesignerItemRectBase.h"
 #include "wrtembed/KoReportDesigner.h"
 
-#include <KProperty/EditorView.h>
+#include <KProperty/EditorView>
 
 #include <QDomDocument>
 #include <QPainter>
@@ -64,7 +64,7 @@ KoReportDesignerItemCheck::KoReportDesignerItemCheck(QDomNode & element, KoRepor
 KoReportDesignerItemCheck* KoReportDesignerItemCheck::clone()
 {
     QDomDocument d;
-    QDomElement e = d.createElement("clone");;
+    QDomElement e = d.createElement(QLatin1String("clone"));;
     QDomNode n;
     buildXML(d, e);
     n = e.firstChild();
@@ -100,7 +100,7 @@ void KoReportDesignerItemCheck::paint(QPainter* painter, const QStyleOptionGraph
     qreal oy = m_size.toScene().height() / 5;
 
     //Checkbox Style
-    if (m_checkStyle->value().toString() == "Cross") {
+    if (m_checkStyle->value().toString() == QLatin1String("Cross")) {
         painter->drawRoundedRect(QGraphicsRectItem::rect(), m_size.toScene().width() / 10 , m_size.toScene().height() / 10);
 
         QPen lp;
@@ -109,7 +109,7 @@ void KoReportDesignerItemCheck::paint(QPainter* painter, const QStyleOptionGraph
         painter->setPen(lp);
         painter->drawLine(ox, oy, m_size.toScene().width() - ox, m_size.toScene().height() - oy);
         painter->drawLine(ox, m_size.toScene().height() - oy, m_size.toScene().width() - ox, oy);
-    } else if (m_checkStyle->value().toString() == "Dot") {
+    } else if (m_checkStyle->value().toString() == QLatin1String("Dot")) {
         //Radio Style
         painter->drawEllipse(QGraphicsRectItem::rect());
 
@@ -149,7 +149,7 @@ void KoReportDesignerItemCheck::buildXML(QDomDocument & doc, QDomElement & paren
     //properties
     addPropertyAsAttribute(&entity, m_name);
     addPropertyAsAttribute(&entity, m_controlSource);
-    entity.setAttribute("fo:foreground-color", m_foregroundColor->value().toString());
+    entity.setAttribute(QLatin1String("fo:foreground-color"), m_foregroundColor->value().toString());
     addPropertyAsAttribute(&entity, m_checkStyle);
     addPropertyAsAttribute(&entity, m_staticValue);
 

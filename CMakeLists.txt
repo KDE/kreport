@@ -29,10 +29,6 @@ find_package(Qt5Widgets REQUIRED)
 find_package(KF5WidgetsAddons REQUIRED)
 find_package(KF5GuiAddons REQUIRED)
 
-#set(CMAKE_AUTOMOC ON)
-#set(CMAKE_INCLUDE_CURRENT_DIR ON)
-#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-
 add_subdirectory(src)
 #add_subdirectory(examples)
 #add_subdirectory(tests)

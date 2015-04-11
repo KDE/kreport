@@ -55,7 +55,7 @@ bool KoReportHTMLCSSRenderer::render(const KoReportRendererContext& context, ORO
 
     QTextStream out(&tempHtmlFile);
 
-    QString dirSuffix = ".files";
+    QString dirSuffix = QLatin1String(".files");
     QDir tempDir;
     QFileInfo fi(tempHtmlFile);
 
@@ -116,14 +116,14 @@ QString KoReportHTMLCSSRenderer::renderCSS(ORODocument *document)
             if (section->type() == KRSectionData::PageFooterAny)
                 renderedPageFoot = true;
 
-            style = "position: relative; top: 0pt; left: 0pt; background-color: " + section->backgroundColor().name() + "; height: " + QString::number(section->height()) + "pt;";
+            style = QLatin1String("position: relative; top: 0pt; left: 0pt; background-color: ") + section->backgroundColor().name() + QLatin1String("; height: ") + QString::number(section->height()) + QLatin1String("pt;");
 
             if (!styles.contains(style)) {
                 styles << style;
             }
             styleindex = styles.indexOf(style);
 
-            body += "<div class=\"style" + QString::number(styleindex) + "\">\n";
+            body += QLatin1String("<div class=\"style") + QString::number(styleindex) + QLatin1String("\">\n");
             //Render the objects in each section
             for (int i = 0; i < section->primitives(); i++) {
                 OROPrimitive * prim = section->primitive(i);
@@ -132,18 +132,18 @@ QString KoReportHTMLCSSRenderer::renderCSS(ORODocument *document)
                     OROTextBox * tb = (OROTextBox*) prim;
 
                     QColor bg = tb->textStyle().backgroundColor;
-                    style = "position: absolute; "
-                            "background-color: " + QString("rgba(%1,%2,%3,%4)")
+                    style = QLatin1String("position: absolute; ") +
+                            QLatin1String("background-color: ") + QString::fromLatin1("rgba(%1,%2,%3,%4)")
                                                             .arg(bg.red())
                                                             .arg(bg.green())
                                                             .arg(bg.blue())
-                                                            .arg(0.01 * tb->textStyle().backgroundOpacity) + "; "
-                            "top: " + QString::number(tb->position().y()) + "pt; "
-                            "left: " + QString::number(tb->position().x()) + "pt; "
-                            "font-size: " + QString::number(tb->textStyle().font.pointSize()) + "pt; "
-                            "color: " + tb->textStyle().foregroundColor.name() + "; "
-                            "width: " + QString::number(tb->size().width()) + "px;"
-                            "height: " + QString::number(tb->size().height()) + "px;" ;
+                                                            .arg(0.01 * tb->textStyle().backgroundOpacity) +QLatin1String( "; ") +
+                            QLatin1String("top: ") + QString::number(tb->position().y()) + QLatin1String("pt; ") +
+                            QLatin1String("left: ") + QString::number(tb->position().x()) + QLatin1String("pt; ") +
+                            QLatin1String("font-size: ") + QString::number(tb->textStyle().font.pointSize()) + QLatin1String("pt; ") +
+                            QLatin1String("color: ") + tb->textStyle().foregroundColor.name() + QLatin1String("; ") +
+                            QLatin1String("width: ") + QString::number(tb->size().width()) + QLatin1String("px;") +
+                            QLatin1String("height: ") + QString::number(tb->size().height()) + QLatin1String("px;") ;
                     //TODO opaque text + translucent background
                     //it looks a pain to implement
                     //http://developer.mozilla.org/en/docs/Useful_CSS_tips:Color_and_Background
@@ -155,72 +155,72 @@ QString KoReportHTMLCSSRenderer::renderCSS(ORODocument *document)
                     }
                     styleindex = styles.indexOf(style);
 
-                    body += "<div class=\"style" + QString::number(styleindex) + "\">" +
+                    body += QLatin1String("<div class=\"style") + QString::number(styleindex) + QLatin1String("\">") +
                             tb->text() +
-                            "</div>\n";
+                            QLatin1String("</div>\n");
                 } else if (prim->type() == OROImage::Image) {
                     //kDebug() << "Saving an image";
                     OROImage * im = (OROImage*) prim;
-                    style = "position: absolute; "
-                            "top: " + QString::number(im->position().y()) + "pt; "
-                            "left: " + QString::number(im->position().x()) + "pt; ";
+                    style = QLatin1String("position: absolute; ") +
+                            QLatin1String("top: ") + QString::number(im->position().y()) + QLatin1String("pt; ") +
+                            QLatin1String("left: ") + QString::number(im->position().x()) + QLatin1String("pt; ");
                     if (!styles.contains(style)) {
                         styles << style;
                     }
                     styleindex = styles.indexOf(style);
 
-                    body += "<div class=\"style" + QString::number(styleindex) + "\">"
-                            "<img width=\"" + QString::number(im->size().width()) + "px" + "\" height=\"" + QString::number(im->size().height()) + "px" + "\" src=\"./" + m_actualDirName + "/object" + QString::number(s) + QString::number(i) + ".png\"></img>"
-                            "</div>\n";
+                    body += QLatin1String("<div class=\"style") + QString::number(styleindex) + QLatin1String("\">") +
+                            QLatin1String("<img width=\"") + QString::number(im->size().width()) + QLatin1String("px") + QLatin1String("\" height=\"") + QString::number(im->size().height()) + QLatin1String("px") + QLatin1String("\" src=\"./") + m_actualDirName + QLatin1String("/object") + QString::number(s) + QString::number(i) + QLatin1String(".png\"></img>") +
+                            QLatin1String("</div>\n");
 
 
-                    im->image().save(m_tempDirName + "/object" + QString::number(s) + QString::number(i) + ".png");
+                    im->image().save(m_tempDirName + QLatin1String("/object") + QString::number(s) + QString::number(i) + QLatin1String(".png"));
                 } else if (prim->type() == OROPicture::Picture) {
                     //kDebug() << "Saving a picture";
                     OROPicture * im = (OROPicture*) prim;
-                    style = "position: absolute; "
-                            "top: " + QString::number(im->position().y()) + "pt; "
-                            "left: " + QString::number(im->position().x()) + "pt; ";
+                    style = QLatin1String("position: absolute; ") +
+                            QLatin1String("top: ") + QString::number(im->position().y()) + QLatin1String("pt; ") +
+                            QLatin1String("left: ") + QString::number(im->position().x()) + QLatin1String("pt; ");
                     if (!styles.contains(style)) {
                         styles << style;
                     }
                     styleindex = styles.indexOf(style);
 
-                    body += "<div class=\"style" + QString::number(styleindex) + "\">"
-                            "<img width=\"" + QString::number(im->size().width()) + "px" + "\" height=\"" + QString::number(im->size().height()) + "px" + "\" src=\"./" + m_actualDirName + "/object" + QString::number(s) + QString::number(i) + ".png\"></img>"
-                            "</div>\n";
+                    body += QLatin1String("<div class=\"style") + QString::number(styleindex) + QLatin1String("\">") +
+                            QLatin1String("<img width=\"") + QString::number(im->size().width()) + QLatin1String("px") + QLatin1String("\" height=\"") + QString::number(im->size().height()) + QLatin1String("px") + QLatin1String("\" src=\"./") + m_actualDirName + QLatin1String("/object") + QString::number(s) + QString::number(i) + QLatin1String(".png\"></img>") +
+                            QLatin1String("</div>\n");
 
                     QImage image(im->size().toSize(), QImage::Format_RGB32);
                     QPainter painter(&image);
                     im->picture()->play(&painter);
-                    image.save(m_tempDirName + "/object" + QString::number(s) + QString::number(i) + ".png");
+                    image.save(m_tempDirName + QLatin1String("/object") + QString::number(s) + QString::number(i) + QLatin1String(".png"));
                 } else {
                     kWarning() << "unrecognized primitive type" << prim->type();
                 }
             }
-            body += "</div>\n";
+            body += QLatin1String("</div>\n");
         }
     }
 
     //! @todo add option for creating separate css file
-    html = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n"
+    html = QLatin1String("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n"
         "<html>\n"
         "<head>\n"
-        "<style type=\"text/css\">\n";
+        "<style type=\"text/css\">\n");
 
     for (int i = 0; i < styles.count(); ++i) {
-        html += ".style" + QString::number(i) + '{' + styles[i] + "}\n";
+        html += QLatin1String(".style") + QString::number(i) + QLatin1String("{") + styles[i] + QLatin1String("}\n");
     }
 
-    html += "</style>\n"
-        "<title>" + document->title() + "</title>\n"
-        "<meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n"
-        "<meta name=\"generator\" content=\"Kexi\">\n"
-        "</head>\n"
-        "<body>\n"
-      + body
-      + "\n</body>\n"
-        "</html>\n";
+    html += QLatin1String("</style>\n") +
+        QLatin1String("<title>") + document->title() + QLatin1String("</title>\n") +
+        QLatin1String("<meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n") +
+        QLatin1String("<meta name=\"generator\" content=\"Kexi\">\n") +
+        QLatin1String("</head>\n") +
+        QLatin1String("<body>\n") +
+        body +
+        QLatin1String("\n</body>\n") +
+        QLatin1String("</html>\n");
 
     return html;
 }

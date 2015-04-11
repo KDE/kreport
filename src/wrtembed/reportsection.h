@@ -30,7 +30,7 @@
 #include <QMouseEvent>
 #include <QGraphicsScene>
 
-#include <KProperty/Set.h>
+#include <KProperty/Set>
 
 typedef QList<QGraphicsItem*> QGraphicsItemList;
 

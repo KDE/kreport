@@ -24,7 +24,7 @@
 #include "wrtembed/KoReportDesignerItemRectBase.h"
 #include "KoReportItemText.h"
 
-#include <KProperty/Property.h>
+#include <KProperty/Property>
 
 class KoReportDesignerItemBase;
 

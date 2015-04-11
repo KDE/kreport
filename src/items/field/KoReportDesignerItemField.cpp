@@ -21,7 +21,7 @@
 #include "KoReportItemField.h"
 #include "wrtembed/KoReportDesigner.h"
 
-#include <KProperty/EditorView.h>
+#include <KProperty/EditorView>
 
 #include <QDomDocument>
 #include <QPainter>
@@ -44,7 +44,7 @@ void KoReportDesignerItemField::init(QGraphicsScene * scene, KoReportDesigner * 
 
     setZValue(Z);
 
-    updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(), "field");
+    updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(), QLatin1String("field"));
 }
 
 // methods (constructors)
@@ -67,7 +67,7 @@ KoReportDesignerItemField::KoReportDesignerItemField(QDomNode & element, KoRepor
 KoReportDesignerItemField* KoReportDesignerItemField::clone()
 {
     QDomDocument d;
-    QDomElement e = d.createElement("clone");;
+    QDomElement e = d.createElement(QLatin1String("clone"));;
     QDomNode n;
     buildXML(d, e);
     n = e.firstChild();
@@ -136,7 +136,7 @@ void KoReportDesignerItemField::buildXML(QDomDocument & doc, QDomElement & paren
     addPropertyAsAttribute(&entity, m_canGrow);
     addPropertyAsAttribute(&entity, m_itemValue);
 
-    entity.setAttribute("report:z-index", zValue());
+    entity.setAttribute(QLatin1String("report:z-index"), zValue());
 
     // bounding rect
     buildXMLRect(doc, entity, &m_pos, &m_size);
@@ -176,7 +176,7 @@ void KoReportDesignerItemField::slotPropertyChanged(KoProperty::Set &s, KoProper
         }
     }
 
-    updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(), "field");
+    updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(), QLatin1String("field"));
 
     KoReportDesignerItemRectBase::propertyChanged(s, p);
     if (m_reportDesigner)m_reportDesigner->setModified(true);

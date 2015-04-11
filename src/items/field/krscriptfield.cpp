@@ -59,16 +59,16 @@ void Field::setHorizonalAlignment(int a)
 {
     switch (a) {
     case -1:
-        m_field->m_horizontalAlignment->setValue("left");
+        m_field->m_horizontalAlignment->setValue(QLatin1String("left"));
         break;
     case 0:
-        m_field->m_horizontalAlignment->setValue("center");
+        m_field->m_horizontalAlignment->setValue(QLatin1String("center"));
         break;
     case 1:
-        m_field->m_horizontalAlignment->setValue("right");
+        m_field->m_horizontalAlignment->setValue(QLatin1String("right"));
         break;
     default:
-        m_field->m_horizontalAlignment->setValue("left");
+        m_field->m_horizontalAlignment->setValue(QLatin1String("left"));
         break;
     }
 }
@@ -92,16 +92,16 @@ void Field::setVerticalAlignment(int a)
 {
     switch (a) {
     case -1:
-        m_field->m_verticalAlignment->setValue("top");
+        m_field->m_verticalAlignment->setValue(QLatin1String("top"));
         break;
     case 0:
-        m_field->m_verticalAlignment->setValue("middle");
+        m_field->m_verticalAlignment->setValue(QLatin1String("middle"));
         break;
     case 1:
-        m_field->m_verticalAlignment->setValue("bottom");
+        m_field->m_verticalAlignment->setValue(QLatin1String("bottom"));
         break;
     default:
-        m_field->m_verticalAlignment->setValue("middle");
+        m_field->m_verticalAlignment->setValue(QLatin1String("middle"));
         break;
     }
 }
@@ -180,5 +180,5 @@ void Field::setSize(const QSizeF &s)
 {
     m_field->m_size.setPointSize(s);
 }
-     
+
 }

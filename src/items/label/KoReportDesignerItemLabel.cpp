@@ -22,7 +22,7 @@
 #include "wrtembed/KoReportDesigner.h"
 #include "wrtembed/reportscene.h"
 
-#include <KProperty/EditorView.h>
+#include <KProperty/EditorView>
 
 #include <QDomDocument>
 #include <QPainter>
@@ -82,7 +82,7 @@ KoReportDesignerItemLabel::KoReportDesignerItemLabel(QDomNode & element, KoRepor
 KoReportDesignerItemLabel* KoReportDesignerItemLabel::clone()
 {
     QDomDocument d;
-    QDomElement e = d.createElement("clone");;
+    QDomElement e = d.createElement(QLatin1String("clone"));;
     QDomNode n;
     buildXML(d, e);
     n = e.firstChild();
@@ -148,7 +148,7 @@ void KoReportDesignerItemLabel::buildXML(QDomDocument & doc, QDomElement & paren
     addPropertyAsAttribute(&entity, m_text);
     addPropertyAsAttribute(&entity, m_verticalAlignment);
     addPropertyAsAttribute(&entity, m_horizontalAlignment);
-    entity.setAttribute("report:z-index", zValue());
+    entity.setAttribute(QLatin1String("report:z-index"), zValue());
 
     // bounding rect
     buildXMLRect(doc, entity, &m_pos, &m_size);

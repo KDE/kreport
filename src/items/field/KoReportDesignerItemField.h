@@ -24,7 +24,7 @@
 #include "KoReportItemField.h"
 #include "wrtembed/KoReportDesignerItemRectBase.h"
 
-#include <KProperty/Set.h>
+#include <KProperty/Set>
 
 #include <QGraphicsRectItem>
 

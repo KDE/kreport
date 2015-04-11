@@ -41,7 +41,7 @@ public:
 
     OROPicture *picture() const;
     //NOTE: Store as png atm
-    QString pictureName() const { return QString("Picture_%1.png").arg(m_uid); }
+    QString pictureName() const { return QString::fromLatin1("Picture_%1.png").arg(m_uid); }
 };
 
 #endif // KOODTFRAMEREPORTPICTURE_H

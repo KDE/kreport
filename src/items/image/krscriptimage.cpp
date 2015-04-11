@@ -58,10 +58,10 @@ QString Image::resizeMode()
 
 void Image::setResizeMode(const QString &rm)
 {
-    if (rm == "Stretch") {
-        m_image->m_resizeMode->setValue("Stretch");
+    if (rm == QLatin1String("Stretch")) {
+        m_image->m_resizeMode->setValue(QLatin1String("Stretch"));
     } else {
-        m_image->m_resizeMode->setValue("Clip");
+        m_image->m_resizeMode->setValue(QLatin1String("Clip"));
     }
 }
 

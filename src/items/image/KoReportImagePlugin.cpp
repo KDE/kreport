@@ -32,7 +32,7 @@ KoReportImagePlugin::KoReportImagePlugin(QObject *parent, const QVariantList &ar
 
     KoReportPluginInfo *info = new KoReportPluginInfo();
     info->setClassName("image");
-    info->setIcon(QIcon::fromTheme("insert-image"));
+    info->setIcon(QIcon::fromTheme(QLatin1String("insert-image")));
     info->setName(tr("Image"));
     info->setPriority(4);
     setInfo(info);

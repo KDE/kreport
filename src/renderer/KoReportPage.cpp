@@ -43,7 +43,7 @@ KoReportPage::KoReportPage(QWidget *parent, ORODocument *document)
         QString pageSize = m_reportDocument->pageOptions().getPageSize();
 
 
-        if (pageSize == "Custom") {
+        if (pageSize == QLatin1String("Custom")) {
             // if this is custom sized sheet of paper we will just use those values
             pageWidth = (int)(m_reportDocument->pageOptions().getCustomWidth());
             pageHeight = (int)(m_reportDocument->pageOptions().getCustomHeight());
@@ -56,7 +56,7 @@ KoReportPage::KoReportPage(QWidget *parent, ORODocument *document)
     setRect(0,0,pageWidth, pageHeight);
     //kDebug() << "PAGE IS " << pageWidth << "x" << pageHeight;
     m_pixmap = new QPixmap(pageWidth, pageHeight);
-    m_renderer = m_factory.createInstance("screen");
+    m_renderer = m_factory.createInstance(QLatin1String("screen"));
     connect(m_reportDocument, SIGNAL(updated(int)), this, SLOT(pageUpdated(int)));
 
     m_renderTimer = new QTimer();
