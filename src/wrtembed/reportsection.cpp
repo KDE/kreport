@@ -152,7 +152,7 @@ void ReportSection::initFromXML(QDomNode & section)
     qreal h = KoUnit::parseValue(section.toElement().attribute(QLatin1String("svg:height"), QLatin1String("2.0cm")));
     m_sectionData->m_height->setValue(h);
 
-    h  = POINT_TO_INCH(h) * m_dpiY;;
+    h  = POINT_TO_INCH(h) * m_dpiY;
     //kDebug() << "Section Height: " << h;
     m_scene->setSceneRect(0, 0, m_scene->width(), h);
     slotResizeBarDragged(0);

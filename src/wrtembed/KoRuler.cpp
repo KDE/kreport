@@ -1188,7 +1188,7 @@ void KoRuler::mouseMoveEvent ( QMouseEvent* ev )
         }
 
         if (d->paragraphIndent + d->endIndent > activeLength)
-            d->paragraphIndent = activeLength - d->endIndent;;
+            d->paragraphIndent = activeLength - d->endIndent;
         emit indentsChanged(false);
         break;
     case KoRulerPrivate::EndIndent:
@@ -1207,7 +1207,7 @@ void KoRuler::mouseMoveEvent ( QMouseEvent* ev )
         }
 
         if (d->paragraphIndent + d->endIndent > activeLength)
-            d->endIndent = activeLength - d->paragraphIndent;;
+            d->endIndent = activeLength - d->paragraphIndent;
         emit indentsChanged(false);
         break;
     case KoRulerPrivate::Tab:

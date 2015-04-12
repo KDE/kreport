@@ -210,7 +210,7 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
 
     if (data.tagName() != QLatin1String("report:content")) {
         // arg we got an xml file but not one i know of
-        kWarning() << "root element was not <report:content>";;
+        kWarning() << "root element was not <report:content>";
     }
     //kDebug() << data.text();
     deleteDetail();

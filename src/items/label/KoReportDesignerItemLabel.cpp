@@ -82,7 +82,7 @@ KoReportDesignerItemLabel::KoReportDesignerItemLabel(QDomNode & element, KoRepor
 KoReportDesignerItemLabel* KoReportDesignerItemLabel::clone()
 {
     QDomDocument d;
-    QDomElement e = d.createElement(QLatin1String("clone"));;
+    QDomElement e = d.createElement(QLatin1String("clone"));
     QDomNode n;
     buildXML(d, e);
     n = e.firstChild();
