@@ -20,16 +20,13 @@
 #ifndef __KOREPORTDESIGNERITEMIMAGE_H__
 #define __KOREPORTDESIGNERITEMIMAGE_H__
 
-#include "wrtembed/KoReportDesignerItemRectBase.h"
-#include "KoReportItemImage.h"
+#include <QImage>
 
 #include <KPropertySet>
 
-#include <QImage>
+#include "KoReportDesignerItemRectBase.h"
+#include "KoReportItemImage.h"
 
-//
-// ReportEntityImage
-//
 class KoReportDesignerItemImage : public KoReportItemImage, public KoReportDesignerItemRectBase
 {
   Q_OBJECT

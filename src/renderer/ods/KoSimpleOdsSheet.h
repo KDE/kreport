@@ -21,7 +21,6 @@
 #ifndef KOSIMPLEODSSHEET_H
 #define KOSIMPLEODSSHEET_H
 
-#include <QString>
 #include <QStandardItemModel>
 
 #include "KoSimpleOdsCell.h"

@@ -18,23 +18,23 @@
 #ifndef KRCHARTDATA_H
 #define KRCHARTDATA_H
 
-#include "KoReportItemBase.h"
 #include <QRect>
 #include <QDomDocument>
+
+#include <KDChartWidget>
+
+#include "KoReportItemBase.h"
 #include "krsize.h"
 #include "krpos.h"
-#include <KDChartWidget>
 #include "KoReportData.h"
-
-/**
- @author Adam Pigg <adam@piggz.co.uk>
-*/
 
 namespace Scripting
 {
 class Chart;
 }
 
+/**
+*/
 class KoReportItemChart : public KoReportItemBase
 {
 public:

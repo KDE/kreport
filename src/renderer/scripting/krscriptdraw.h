@@ -24,7 +24,6 @@
 class OROPage;
 
 /**
- @author Adam Pigg <adam@piggz.co.uk>
 */
 class KRScriptDraw : public QObject
 {

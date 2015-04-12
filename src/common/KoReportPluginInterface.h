@@ -21,10 +21,9 @@
 #ifndef KOREPORTPLUGININTERFACE_H
 #define KOREPORTPLUGININTERFACE_H
 
-//#include <db/pluginloader.h>
+#include <QGraphicsScene>
 
 #include "wrtembed/KoReportDesigner.h"
-#include <QGraphicsScene>
 
 class KoReportPluginInfo;
 

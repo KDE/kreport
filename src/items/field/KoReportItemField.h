@@ -19,15 +19,11 @@
 #ifndef KOREPORTITEMFIELD_H
 #define KOREPORTITEMFIELD_H
 
-#include "common/KoReportItemBase.h"
-#include "common/krsize.h"
-
 #include <QRect>
 #include <QDomDocument>
 
-/**
- @author
-*/
+#include "KoReportItemBase.h"
+#include "krsize.h"
 
 namespace Scripting
 {

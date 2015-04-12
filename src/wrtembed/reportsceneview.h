@@ -21,6 +21,7 @@
 #define __REPORTSCENEVIEW_H__
 
 #include <QGraphicsView>
+
 class KoReportDesigner;
 
 class ReportSceneView : public QGraphicsView

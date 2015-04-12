@@ -23,8 +23,6 @@
 
 #include "KoOdtFrameReportPrimitive.h"
 
-#include <QString>
-
 class KoGenStyles;
 class KoXmlWriter;
 class OROLine;

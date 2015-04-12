@@ -21,22 +21,22 @@
 #define KOREPORTDESIGNERITEMRECTBASE_H
 
 #include <QGraphicsRectItem>
+
 #include <KPropertySet>
 
 #include "KoReportDesignerItemBase.h"
-#include "common/KoUnit.h"
+#include "KoUnit.h"
 #include "kreport_export.h"
 
 class KoReportDesigner;
 class KRPos;
 class KRSize;
 
-/**
- @author
-*/
 const int KOREPORT_ITEM_RECT_DEFAULT_WIDTH = 100;
 const int KOREPORT_ITEM_RECT_DEFAULT_HEIGHT = 100;
 
+/**
+*/
 class KREPORT_EXPORT KoReportDesignerItemRectBase : public QGraphicsRectItem, public KoReportDesignerItemBase
 {
 public:

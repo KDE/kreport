@@ -22,6 +22,7 @@
 
 #include <QObject>
 #include <QDomDocument>
+
 #include "KoReportData.h"
 
 class KRSectionData;
@@ -29,7 +30,6 @@ class ORDetailGroupSectionData;
 class KoReportReportData;
 
 /**
- @author Adam Pigg <adam@piggz.co.uk>
 */
 class KRDetailSectionData : public QObject
 {

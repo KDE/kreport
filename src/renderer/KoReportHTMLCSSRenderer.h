@@ -23,9 +23,6 @@
 
 class ORODocument;
 
-//
-// KRHtmlRender
-//
 class KoReportHTMLCSSRenderer : public KoReportRendererBase
 {
 public:

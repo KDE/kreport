@@ -20,7 +20,6 @@
 #include <QObject>
 
 #include <marble/MarbleGlobal.h>
-#include <marble/marble_export.h>
 
 class QUrl;
 
@@ -32,15 +31,12 @@ class DownloadQueueSet;
 class StoragePolicy;
 
 /**
- * @Short This class manages scheduled downloads. 
+ * @short This class manages scheduled downloads.
 
  * The downloadmanager offers a maximum number of active jobs and a
  * limit for pending jobs.  it also takes care that the job queue
  * won't be polluted by jobs that timed out already.
- *
- * @author Torsten Rahn
  */
-
 class MARBLE_EXPORT HttpDownloadManager : public QObject 
 {
     Q_OBJECT

@@ -24,8 +24,9 @@
 #include <QString>
 #include <QFont>
 #include <QMap>
+
 #include "kreport_export.h"
-#include "scripting/krscripthandler.h"
+#include "krscripthandler.h"
 
 class KoReportPreRendererPrivate;
 class ParameterList;

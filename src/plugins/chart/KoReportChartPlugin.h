@@ -23,7 +23,6 @@
 
 #include <KoReportPluginInterface.h>
 
-
 class KoReportChartPlugin : public KoReportPluginInterface
 {
     public:

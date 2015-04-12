@@ -21,16 +21,14 @@
 #ifndef SECTIONEDITOR_H
 #define SECTIONEDITOR_H
 
-#include <ui_sectioneditor.h>
-// KDE
 #include <QDialog>
-// Qt
 #include <QSet>
+
+#include <ui_sectioneditor.h>
 
 class KoReportDesigner;
 class ReportSectionDetail;
 class ReportSectionDetailGroup;
-
 
 class SectionEditor : public QDialog
 {

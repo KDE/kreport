@@ -21,8 +21,9 @@
 #ifndef KOREPORTPLUGINMANAGER_H
 #define KOREPORTPLUGINMANAGER_H
 
-#include "KoReportPluginInterface.h"
 #include <QAction>
+
+#include "KoReportPluginInterface.h"
 
 class KoReportPluginManagerPrivate;
 

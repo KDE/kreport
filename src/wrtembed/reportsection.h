@@ -21,9 +21,6 @@
 #ifndef __REPORTSECTION_H__
 #define __REPORTSECTION_H__
 
-#include "common/krsectiondata.h"
-#include "reportscene.h"
-
 #include <QFrame>
 #include <QLabel>
 #include <QVBoxLayout>
@@ -31,6 +28,9 @@
 #include <QGraphicsScene>
 
 #include <KPropertySet>
+
+#include "krsectiondata.h"
+#include "reportscene.h"
 
 typedef QList<QGraphicsItem*> QGraphicsItemList;
 

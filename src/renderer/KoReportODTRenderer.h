@@ -19,8 +19,9 @@
 #ifndef KOREPORTODTRENDERER_H
 #define KOREPORTODTRENDERER_H
 
-#include "KoReportRendererBase.h"
 #include <QTextCursor>
+
+#include "KoReportRendererBase.h"
 
 class QTextDocument;
 

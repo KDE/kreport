@@ -18,12 +18,15 @@
  */
 #ifndef KRPOS_H
 #define KRPOS_H
-#include "KoUnit.h"
+
 #include <QPointF>
+
 #include <KProperty>
+
 #include "kreport_export.h"
+#include "KoUnit.h"
+
 /**
- @author
 */
 class KREPORT_EXPORT KRPos
 {

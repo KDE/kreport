@@ -26,11 +26,13 @@ class QFont;
 class QPointF;
 class QSizeF;
 class QString;
+
+class KProperty;
+
 class KRPos;
 class KRSize;
 class KRTextStyleData;
 class KRLineStyleData;
-class KProperty;
 
 namespace KRUtils
 {

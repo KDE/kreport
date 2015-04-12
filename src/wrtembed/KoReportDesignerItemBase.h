@@ -25,18 +25,15 @@
 #ifndef __KOREPORTDESIGNERITEMBASE_H__
 #define __KOREPORTDESIGNERITEMBASE_H__
 
-// qt
 #include <QGraphicsItem>
-// common
-#include "common/KoReportItemBase.h"
-#include "kreport_export.h"
 
-// forward declarations
-class ReportWindow;
+#include "KoReportItemBase.h"
 
 class QDomNode;
 class QDomDocument;
 class QDomElement;
+
+class ReportWindow;
 class KoReportDesigner;
 class KRPos;
 class KRSize;

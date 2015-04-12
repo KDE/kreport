@@ -19,11 +19,11 @@
 #define REPORTENTITYCHART_H
 
 #include <QObject>
+
 #include "KoReportItemChart.h"
-#include <KoReportDesignerItemRectBase.h>
+#include "KoReportDesignerItemRectBase.h"
 
 /**
- @author Adam Pigg <adam@piggz.co.uk>
 */
 class KoReportDesignerItemChart : public KoReportItemChart, public KoReportDesignerItemRectBase
 {

@@ -18,20 +18,20 @@
 #ifndef KOREPORTITEMLABEL_H
 #define KOREPORTITEMLABEL_H
 
-#include "common/KoReportItemBase.h"
-#include "common/krpos.h"
-#include "common/krsize.h"
-
 #include <QRect>
 #include <QPainter>
 #include <QDomDocument>
+
+#include "KoReportItemBase.h"
+#include "krpos.h"
+#include "krsize.h"
 
 namespace Scripting
 {
 class Label;
 }
+
 /**
- @author
 */
 class KoReportItemLabel : public KoReportItemBase
 {

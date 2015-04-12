@@ -23,7 +23,6 @@
 #include <QObject>
 
 /**
- @author Adam Pigg <adam@piggz.co.uk>
 */
 class KRScriptConstants : public QObject
 {

@@ -19,12 +19,12 @@
 #ifndef KOREPORTDESIGNERITEMCHECK_H
 #define KOREPORTDESIGNERITEMCHECK_H
 
-#include "wrtembed/KoReportDesignerItemRectBase.h"
-#include "KoReportItemCheck.h"
+#include <QGraphicsRectItem>
 
 #include <KPropertySet>
 
-#include <QGraphicsRectItem>
+#include "KoReportDesignerItemRectBase.h"
+#include "KoReportItemCheck.h"
 
 const int KOREPORT_ITEM_CHECK_DEFAULT_WIDTH = 15;
 const int KOREPORT_ITEM_CHECK_DEFAULT_HEIGHT = 15;

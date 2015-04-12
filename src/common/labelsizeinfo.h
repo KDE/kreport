@@ -20,7 +20,6 @@
 #ifndef __LABELSIZEINFO_H__
 #define __LABELSIZEINFO_H__
 
-#include <QString>
 #include <QStringList>
 
 class LabelSizeInfo

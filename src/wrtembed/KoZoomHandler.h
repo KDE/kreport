@@ -21,7 +21,6 @@
 #ifndef KOZOOMHANDLER_H
 #define KOZOOMHANDLER_H
 
-#include "kreport_export.h"
 #include "KoZoomMode.h"
 #include "KoViewConverter.h"
 

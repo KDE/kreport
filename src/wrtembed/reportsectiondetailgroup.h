@@ -24,14 +24,13 @@
 
 #include "kreport_export.h"
 
-class ReportSection;
-class ReportSectionDetail;
-
 class QDomElement;
 class QDomDocument;
 
+class ReportSection;
+class ReportSectionDetail;
+
 /**
- @author
 */
 class KREPORT_EXPORT ReportSectionDetailGroup : public QObject
 {

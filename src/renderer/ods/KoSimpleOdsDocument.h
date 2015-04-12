@@ -21,9 +21,9 @@
 #ifndef KOSIMPLEODSDOCUMENT_H
 #define KOSIMPLEODSDOCUMENT_H
 
-#include "KoSimpleOdsSheet.h"
-
 #include <QFile>
+
+#include "KoSimpleOdsSheet.h"
 
 class KoOdfWriteStore;
 class KoStore;

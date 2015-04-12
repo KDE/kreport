@@ -17,12 +17,12 @@
  */
 #ifndef KRSCRIPTHANDLER_H
 #define KRSCRIPTHANDLER_H
-#include <QObject>
-#include <QString>
-#include "common/krsectiondata.h"
-//TODO Scripting
+
+#include "krsectiondata.h"
 #include "krscriptconstants.h"
-#include "common/KoReportData.h"
+#include "KoReportData.h"
+
+//TODO Scripting
 
 class KRScriptFunctions;
 class KRScriptDebug;

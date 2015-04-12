@@ -21,10 +21,10 @@
 #ifndef KRREPORTDATA_H
 #define KRREPORTDATA_H
 
-#include "kreport_export.h"
-
 #include <QObject>
 #include <QDomDocument>
+
+#include "kreport_export.h"
 #include "krsectiondata.h"
 #include "reportpageoptions.h"
 
@@ -35,8 +35,8 @@ namespace Scripting
 {
 class Report;
 }
+
 /**
- @author Adam Pigg <adam@piggz.co.uk>
 */
 class KREPORT_EXPORT KoReportReportData : public QObject
 {

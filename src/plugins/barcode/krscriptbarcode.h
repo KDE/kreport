@@ -19,13 +19,13 @@
 #define SCRIPTINGKRSCRIPTBARCODE_H
 
 #include <QObject>
+
 #include "KoReportItemBarcode.h"
 
 namespace Scripting
 {
 
 /**
- @author Adam Pigg <adam@piggz.co.uk>
 */
 class Barcode : public QObject
 {

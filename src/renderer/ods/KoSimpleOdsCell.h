@@ -21,7 +21,6 @@
 #ifndef KOSIMPLEODSCELL_H
 #define KOSIMPLEODSCELL_H
 
-#include <QString>
 #include <QStandardItem>
 
 class KoXmlWriter;

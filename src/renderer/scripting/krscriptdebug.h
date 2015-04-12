@@ -21,7 +21,6 @@
 #include <QObject>
 
 /**
- @author Adam Pigg <adam@piggz.co.uk>
 */
 class KRScriptDebug : public QObject
 {

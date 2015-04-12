@@ -22,8 +22,9 @@
 #define KOREPORTASYNCITEMMANAGER_H
 
 #include <QObject>
-#include "common/KoReportASyncItemBase.h"
 #include <QQueue>
+
+#include "KoReportASyncItemBase.h"
 
 class RenderData {
 public:

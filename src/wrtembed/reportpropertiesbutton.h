@@ -23,7 +23,6 @@
 
 #include <QCheckBox>
 
-
 class ReportPropertiesButton : public QCheckBox
 {
 public:

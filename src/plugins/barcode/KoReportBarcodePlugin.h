@@ -23,7 +23,6 @@
 
 #include <KoReportPluginInterface.h>
 
-
 class KoReportBarcodePlugin : public KoReportPluginInterface
 {
     public:

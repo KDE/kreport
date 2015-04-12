@@ -20,19 +20,16 @@
 #ifndef __KOREPORTDESIGNERITEMLABEL_H__
 #define __KOREPORTDESIGNERITEMLABEL_H__
 
-#include "KoReportItemLabel.h"
-#include "wrtembed/KoReportDesignerItemRectBase.h"
-#include "BoundedTextItem.h"
-
-#include <KPropertySet>
-
 #include <QGraphicsRectItem>
 #include <QGraphicsItem>
 #include <QGraphicsItemGroup>
 
-//
-// ReportEntityLabel
-//
+#include <KPropertySet>
+
+#include "KoReportItemLabel.h"
+#include "KoReportDesignerItemRectBase.h"
+#include "BoundedTextItem.h"
+
 class KoReportDesignerItemLabel : public KoReportItemLabel, public KoReportDesignerItemRectBase
 {
   Q_OBJECT

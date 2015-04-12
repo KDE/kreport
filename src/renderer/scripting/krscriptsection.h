@@ -19,11 +19,11 @@
 #define KRSCRIPTSECTION_H
 
 #include <QObject>
+
 #include <krsectiondata.h>
 #include <kross/core/object.h>
 
 /**
- @author Adam Pigg <adam@piggz.co.uk>
 */
 namespace Scripting
 {

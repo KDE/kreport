@@ -20,7 +20,6 @@
 
 #include <QtTest>
 
-
 class KoReportTest : public QObject
 {
     Q_OBJECT

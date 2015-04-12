@@ -31,7 +31,6 @@
  * we want it to size to the parent item.
  * 
  */
-
 class BoundedTextItem : public QGraphicsTextItem
 {
     Q_OBJECT

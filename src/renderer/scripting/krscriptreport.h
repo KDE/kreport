@@ -19,15 +19,16 @@
 #define SCRIPTINGKRSCRIPTREPORT_H
 
 #include <QObject>
+
 #include <kross/core/object.h>
 
 class KoReportReportData;
 class KoReportItemBase;
+
 namespace Scripting
 {
 
 /**
- @author Adam Pigg <adam@piggz.co.uk>
 */
 class Report : public QObject
 {

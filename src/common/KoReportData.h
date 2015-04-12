@@ -17,8 +17,9 @@
 #ifndef __KOREPORTDATA_H__
 #define __KOREPORTDATA_H__
 
-#include "kreport_export.h"
 #include <QStringList>
+
+#include "kreport_export.h"
 
 /**
 

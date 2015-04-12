@@ -21,7 +21,7 @@
 #ifndef KOREPORTIMAGEPLUGIN_H
 #define KOREPORTIMAGEPLUGIN_H
 
-#include "common/KoReportPluginInterface.h"
+#include "KoReportPluginInterface.h"
 
 class KoReportImagePlugin : public KoReportPluginInterface
 {

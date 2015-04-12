@@ -27,7 +27,8 @@
 #define __REPORTSCENE_H__
 
 #include <QGraphicsScene>
-#include "common/KoUnit.h"
+
+#include "KoUnit.h"
 
 typedef QList<QGraphicsItem*> QGraphicsItemList;
 class KoReportDesigner;

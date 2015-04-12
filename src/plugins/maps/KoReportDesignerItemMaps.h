@@ -20,15 +20,13 @@
 #ifndef __REPORTENTITYIMAGE_H__
 #define __REPORTENTITYIMAGE_H__
 
-#include <KoReportDesignerItemRectBase.h>
 #include <QImage>
-#include <KProperty>
+
 #include <KPropertySet>
+
+#include "KoReportDesignerItemRectBase.h"
 #include "KoReportItemMaps.h"
 
-//
-// ReportEntityImage
-//
 class KoReportDesignerItemMaps : public KoReportItemMaps, public KoReportDesignerItemRectBase
 {
   Q_OBJECT

@@ -23,6 +23,7 @@
 
 #include <QString>
 #include <QFlags>
+
 #include "kreport_export.h"
 
 /**

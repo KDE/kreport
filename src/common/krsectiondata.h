@@ -29,14 +29,14 @@
 #ifndef KRSECTIONDATA_H
 #define KRSECTIONDATA_H
 
+#include <QColor>
 #include <QObject>
 #include <QDomDocument>
 
+#include <KPropertySet>
+
 class KoReportItemBase;
 class KoReportReportData;
-
-#include <KPropertySet>
-#include <QColor>
 
 namespace Scripting
 {

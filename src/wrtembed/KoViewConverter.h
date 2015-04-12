@@ -20,9 +20,9 @@
 #ifndef KOVIEWCONVERTER_H
 #define KOVIEWCONVERTER_H
 
-#include "kreport_export.h"
-
 #include <QtGlobal>
+
+#include "kreport_export.h"
 
 class QPointF;
 class QRectF;

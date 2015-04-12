@@ -21,10 +21,10 @@
 #ifndef __KOREPORTDESIGNERITEMTEXT_H__
 #define __KOREPORTDESIGNERITEMTEXT_H__
 
-#include "wrtembed/KoReportDesignerItemRectBase.h"
-#include "KoReportItemText.h"
-
 #include <KProperty>
+
+#include "KoReportDesignerItemRectBase.h"
+#include "KoReportItemText.h"
 
 class KoReportDesignerItemBase;
 

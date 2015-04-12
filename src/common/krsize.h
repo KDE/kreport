@@ -17,13 +17,15 @@
  */
 #ifndef KRSIZE_H
 #define KRSIZE_H
-#include "KoUnit.h"
+
 #include <QSizeF>
+
 #include <KProperty>
+
+#include "KoUnit.h"
 #include "kreport_export.h"
 
 /**
- @author
 */
 class KREPORT_EXPORT KRSize
 {

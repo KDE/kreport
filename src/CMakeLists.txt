@@ -115,7 +115,10 @@ generate_export_header(KReport)
 
 #qt5_use_modules(KReport Widgets Xml PrintSupport)
 
-target_include_directories(KReport INTERFACE "$<INSTALL_INTERFACE:${INCLUDE_INSTALL_DIR}/KReport>")
+target_include_directories(KReport
+    INTERFACE "$<INSTALL_INTERFACE:${INCLUDE_INSTALL_DIR}/KReport>"
+    PRIVATE common renderer renderer/scripting wrtembed
+)
 
 target_link_libraries(KReport
     PUBLIC

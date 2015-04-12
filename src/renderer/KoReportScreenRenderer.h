@@ -20,7 +20,7 @@
 #define __KOREPORTSCREENRENDERER_H__
 
 #include <QPainter>
-#include "kreport_export.h"
+
 #include "KoReportRendererBase.h"
 
 class ORODocument;

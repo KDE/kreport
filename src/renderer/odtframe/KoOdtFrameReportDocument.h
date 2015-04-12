@@ -22,11 +22,11 @@
 #ifndef KOODTFRAMEREPORTDOCUMENT_H
 #define KOODTFRAMEREPORTDOCUMENT_H
 
-#include "common/reportpageoptions.h"
-
 #include <QFile>
 #include <QMap>
 #include <QList>
+
+#include "reportpageoptions.h"
 
 class KoOdfWriteStore;
 class KoXmlWriter;

@@ -28,7 +28,6 @@ namespace Scripting
 {
 
 /**
- @author Adam Pigg <adam@piggz.co.uk>
 */
 class Image : public QObject
 {

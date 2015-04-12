@@ -20,6 +20,7 @@
 #define KOREPORTSCRIPTCHECK_H
 
 #include <QObject>
+
 #include "KoReportItemCheck.h"
 
 namespace Scripting

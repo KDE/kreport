@@ -21,16 +21,13 @@
 #ifndef __KOREPORTDESIGNERITEMFIELD_H__
 #define __KOREPORTDESIGNERITEMFIELD_H__
 
-#include "KoReportItemField.h"
-#include "wrtembed/KoReportDesignerItemRectBase.h"
+#include <QGraphicsRectItem>
 
 #include <KPropertySet>
 
-#include <QGraphicsRectItem>
+#include "KoReportItemField.h"
+#include "KoReportDesignerItemRectBase.h"
 
-//
-// ReportEntityField
-//
 class KoReportDesignerItemField : public KoReportItemField, public KoReportDesignerItemRectBase
 {
   Q_OBJECT

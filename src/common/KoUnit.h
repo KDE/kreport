@@ -24,14 +24,13 @@
 #ifndef KOUNIT_H
 #define KOUNIT_H
 
-#include "kreport_export.h"
+#include <math.h> // for floor
 
-// Qt
 #include <QString>
 #include <QDebug>
 #include <QMetaType>
-// std
-#include <math.h> // for floor
+
+#include "kreport_export.h"
 
 class QStringList;
 class QVariant;

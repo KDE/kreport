@@ -23,8 +23,6 @@
 
 #include "KoOdtFrameReportPrimitive.h"
 
-#include <QString>
-
 class KoXmlWriter;
 class OROImage;
 class OROPrimitive;

@@ -21,8 +21,7 @@
 #ifndef KOREPORTMAPSPLUGIN_H
 #define KOREPORTMAPSPLUGIN_H
 
-#include <KoReportPluginInterface.h>
-
+#include "KoReportPluginInterface.h"
 
 class KoReportMapsPlugin : public KoReportPluginInterface
 {

@@ -18,15 +18,15 @@
 #ifndef KOREPORTPAGE_H
 #define KOREPORTPAGE_H
 
-#include "KoReportRendererBase.h"
 #include <QGraphicsRectItem>
+
+#include "KoReportRendererBase.h"
 
 class QTimer;
 class QPixmap;
 class ORODocument;
 
 /**
- @author Adam Pigg <adam@piggz.co.uk>
  Provides a widget that renders a specific page of
  and ORODocument
  The widget is sized to the document size in pixels.

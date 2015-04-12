@@ -19,13 +19,13 @@
 #ifndef KOREPORTITEMLINE_H
 #define KOREPORTITEMLINE_H
 
-#include "KoReportItemBase.h"
 #include <QRect>
 #include <QPainter>
 #include <QDomDocument>
+
+#include "KoReportItemBase.h"
 #include "krpos.h"
 #include "krsize.h"
-
 #include "kreport_export.h"
 
 namespace Scripting
@@ -34,7 +34,6 @@ class Line;
 }
 
 /**
- @author
 */
 class KREPORT_EXPORT  KoReportItemLine : public KoReportItemBase
 {

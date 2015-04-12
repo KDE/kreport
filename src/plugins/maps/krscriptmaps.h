@@ -28,8 +28,6 @@ namespace Scripting
 {
 
 /**
- @author Adam Pigg <adam@piggz.co.uk>
- @author Radoslaw Wicik <rockford@wicik.pl>
 */
 class Maps : public QObject
 {

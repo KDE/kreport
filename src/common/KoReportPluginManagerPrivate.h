@@ -26,7 +26,8 @@
 
 class KoReportPluginInterface;
 
-class KoReportPluginManagerPrivate : public QObject {
+class KoReportPluginManagerPrivate : public QObject
+{
     Q_OBJECT
     public:
         KoReportPluginManagerPrivate();

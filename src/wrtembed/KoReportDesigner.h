@@ -31,24 +31,24 @@
 
 #include <KPropertySet>
 
-#include "common/krreportdata.h"
-#include "common/KoReportItemBase.h"
-#include "kreport_export.h"
-#include "common/KoReportData.h"
+#include "krreportdata.h"
+#include "KoReportItemBase.h"
+#include "KoReportData.h"
 
-class ReportGridOptions;
 class QDomDocument;
 class QGraphicsScene;
 class QActionGroup;
+class QGridLayout;
+class QGraphicsSceneMouseEvent;
+class QGraphicsSceneContextMenuEvent;
+
+class ReportGridOptions;
 class KoRuler;
 class KoZoomHandler;
-class QGridLayout;
 class ReportSectionDetail;
 class ReportSection;
 class KoUnit;
 class ReportScene;
-class QGraphicsSceneMouseEvent;
-class QGraphicsSceneContextMenuEvent;
 class ReportSceneView;
 class ReportWriterSectionData;
 class KoReportPluginInterface;

@@ -21,7 +21,6 @@
 #ifndef __REPORTENTITYBARCODE_H__
 #define __REPORTENTITYBARCODE_H__
 
-#include <KProperty>
 #include <KPropertySet>
 
 #include "KoReportDesignerItemRectBase.h"

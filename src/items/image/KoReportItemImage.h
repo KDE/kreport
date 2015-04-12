@@ -19,27 +19,24 @@
 #ifndef KOREPORTITEMIMAGE_H
 #define KOREPORTITEMIMAGE_H
 
-#include "common/KoReportItemBase.h"
-#include "common/krpos.h"
-#include "common/krsize.h"
-
-#include <KPropertySet>
+#include <kdebug.h>
+#include <klocalizedstring.h>
 
 #include <QRect>
 #include <QPainter>
 #include <QDomDocument>
 
-#include <kdebug.h>
-#include <klocalizedstring.h>
+#include <KPropertySet>
+
+#include "KoReportItemBase.h"
+#include "krpos.h"
+#include "krsize.h"
 
 namespace Scripting
 {
 class Image;
 }
 
-/**
- @author
-*/
 class KoReportItemImage : public KoReportItemBase
 {
 public:

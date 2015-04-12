@@ -19,10 +19,10 @@
 #define KRSCRIPTLABEL_H
 
 #include <QObject>
+
 #include "KoReportItemLabel.h"
 
 /**
- @author Adam Pigg <adam@piggz.co.uk>
 */
 namespace Scripting
 {

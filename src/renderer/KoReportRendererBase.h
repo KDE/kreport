@@ -20,8 +20,10 @@
 
 #ifndef KOREPORTRENDERERBASE_H
 #define KOREPORTRENDERERBASE_H
-#include "kreport_export.h"
+
 #include <kurl.h>
+
+#include "kreport_export.h"
 
 class QPainter;
 class QPrinter;

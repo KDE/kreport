@@ -23,9 +23,9 @@
 #ifndef KOPAGEFORMAT_H
 #define KOPAGEFORMAT_H
 
-#include "kreport_export.h"
-
 #include <QPrinter>
+
+#include "kreport_export.h"
 
 /// The page formats calligra supports
 namespace KoPageFormat

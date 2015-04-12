@@ -20,7 +20,7 @@
 #ifndef KOREPORTWEBPLUGIN_H
 #define KOREPORTWEBPLUGIN_H
 
-#include <KoReportPluginInterface.h>
+#include "KoReportPluginInterface.h"
 
 class KoReportWebPlugin : public KoReportPluginInterface
 {

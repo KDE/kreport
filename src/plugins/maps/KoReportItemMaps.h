@@ -17,20 +17,24 @@
  */
 #ifndef KRIMAGEDATA_H
 #define KRIMAGEDATA_H
-#include <KoReportASyncItemBase.h>
+
 #include <QRect>
 #include <QPainter>
 #include <QDomDocument>
-#include "krpos.h"
-#include "krsize.h"
-#include <KProperty>
-#include <KPropertySet>
+#include <QMap>
+
 #include <kdebug.h>
 #include <klocalizedstring.h>
+
+#include <KPropertySet>
+
 #include <marble/MarbleWidget.h>
-#include <QMap>
-#include "MapRenderer.h"
 #include <marble/MapThemeManager.h>
+
+#include "KoReportASyncItemBase.h"
+#include "krpos.h"
+#include "krsize.h"
+#include "MapRenderer.h"
 
 class OROImage;
 class OROPicture;
@@ -43,7 +47,6 @@ class Maps;
 }
 
 /**
- @author
 */
 class KoReportItemMaps : public KoReportASyncItemBase
 {

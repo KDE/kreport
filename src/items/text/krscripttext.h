@@ -19,13 +19,13 @@
 #define SCRIPTINGKRSCRIPTTEXT_H
 
 #include <QObject>
+
 #include "KoReportItemText.h"
 
 namespace Scripting
 {
 
 /**
- @author Adam Pigg <adam@piggz.co.uk>
 */
 class Text : public QObject
 {

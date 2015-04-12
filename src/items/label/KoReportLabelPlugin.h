@@ -21,7 +21,7 @@
 #ifndef KOREPORTLABELPLUGIN_H
 #define KOREPORTLABELPLUGIN_H
 
-#include "common/KoReportPluginInterface.h"
+#include "KoReportPluginInterface.h"
 
 class KoReportLabelPlugin : public KoReportPluginInterface
 {

@@ -22,6 +22,7 @@
 
 #include <QObject>
 #include <QString>
+
 #include "kreport_export.h"
 
 class KREPORT_EXPORT ReportPageOptions : public QObject

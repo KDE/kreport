@@ -32,7 +32,6 @@
 #include "reportpageoptions.h"
 #include "krreportdata.h"
 #include "KoReportItemBase.h"
-#include "kreport_export.h"
 
 class ORODocument;
 class OROPage;

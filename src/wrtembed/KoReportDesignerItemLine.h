@@ -25,13 +25,10 @@
 #include <KPropertySet>
 
 #include "KoReportDesignerItemBase.h"
-#include "common/KoReportItemLine.h"
+#include "KoReportItemLine.h"
 
 class KoReportDesigner;
 
-//
-// ReportEntityLine
-//
 class KoReportDesignerItemLine : public KoReportItemLine, public QGraphicsLineItem, public KoReportDesignerItemBase
 {
     Q_OBJECT

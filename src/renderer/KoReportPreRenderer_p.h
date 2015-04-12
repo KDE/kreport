@@ -20,7 +20,7 @@
 #ifndef __KOREPORTPRERENDERER_P_H__
 #define __KOREPORTPRERENDERER_P_H__
 
-#include "common/renderobjects.h"
+#include "renderobjects.h"
 #include "KoReportASyncItemManager.h"
 
 /*! This class is the private class that houses all the internal

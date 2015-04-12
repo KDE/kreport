@@ -19,10 +19,10 @@
 #define KRSCRIPTFIELD_H
 
 #include <QObject>
+
 #include "KoReportItemField.h"
 
 /**
- @author Adam Pigg <adam@piggz.co.uk>
 */
 namespace Scripting
 {

@@ -18,10 +18,12 @@
 
 #ifndef KRBARCODEDATA_H
 #define KRBARCODEDATA_H
-#include <KoReportItemBase.h>
+
 #include <QRect>
 #include <QPainter>
 #include <QDomDocument>
+
+#include <KoReportItemBase.h>
 #include <krpos.h>
 #include <krsize.h>
 
@@ -29,8 +31,8 @@ namespace Scripting
 {
 class Barcode;
 }
+
 /**
- @author
 */
 class KoReportItemBarcode : public KoReportItemBase
 {

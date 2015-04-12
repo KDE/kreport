@@ -21,10 +21,11 @@
 
 #include <QObject>
 
+#include <kdebug.h>
+
 #include <marble/MarbleGlobal.h>
 #include <marble/MarbleWidget.h>
 #include <marble/RenderState.h>
-#include <kdebug.h>
 
 //#include "KoReportItemMaps.h"
 

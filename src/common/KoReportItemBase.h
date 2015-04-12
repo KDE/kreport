@@ -19,17 +19,14 @@
 #ifndef KOREPORTITEMBASE_H
 #define KOREPORTITEMBASE_H
 
-#include <KProperty>
 #include <QObject>
-
 #include <QDomElement>
 #include <QFont>
 #include <QColor>
-#include "kreport_export.h"
 
+#include "kreport_export.h"
 #include "krpos.h"
 #include "krsize.h"
-
 
 class OROPage;
 class OROSection;
@@ -61,7 +58,6 @@ public:
 
 
 /**
- @author
 */
 class KREPORT_EXPORT KoReportItemBase : public QObject
 {

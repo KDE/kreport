@@ -21,8 +21,7 @@
 #ifndef KOREPORTFIELDPLUGIN_H
 #define KOREPORTFIELDPLUGIN_H
 
-#include "common/KoReportPluginInterface.h"
-
+#include "KoReportPluginInterface.h"
 
 class KoReportFieldPlugin : public KoReportPluginInterface
 {

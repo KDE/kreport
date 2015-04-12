@@ -21,18 +21,19 @@
 #ifndef KOREPORTITEMWEB_H
 #define KOREPORTITEMWEB_H
 
-#include <KoReportASyncItemBase.h>
-#include "krpos.h"
-#include "krsize.h"
-#include "KoReportData.h"
-
-#include <KProperty>
-#include <KPropertySet>
-#include <kdebug.h>
 #include <QRect>
 #include <QGraphicsScene>
 #include <QWidget>
 #include <QUrl>
+
+#include <kdebug.h>
+
+#include <KPropertySet>
+
+#include "KoReportASyncItemBase.h"
+#include "krpos.h"
+#include "krsize.h"
+#include "KoReportData.h"
 
 class QAction;
 class QWebHistory;
@@ -47,7 +48,6 @@ class Web;
 }
 
 /**
- @author Shreya Pandit
 */
 class KoReportItemWeb : public KoReportASyncItemBase
 {

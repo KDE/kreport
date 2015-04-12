@@ -21,13 +21,12 @@
 #ifndef KOREPORTDESIGNERITEMWEB_H
 #define KOREPORTDESIGNERITEMWEB_H
 
-#include <KoReportDesignerItemRectBase.h>
+#include "KoReportDesignerItemRectBase.h"
 #include "KoReportItemWeb.h"
 
 class QGraphicsScene;
 
 /**
- @author Shreya Pandit <shreya@shreyapandit.com>
 */
 class KoReportDesignerItemWeb : public KoReportItemWeb, public KoReportDesignerItemRectBase
 {

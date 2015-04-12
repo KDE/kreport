@@ -21,7 +21,6 @@
 #include "KoReportRendererBase.h"
 
 /**
- @author Adam Pigg <adam@piggz.co.uk>
 */
 class KoReportKSpreadRenderer : public KoReportRendererBase
 {

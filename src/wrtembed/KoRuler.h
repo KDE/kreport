@@ -23,11 +23,10 @@
 #ifndef koRuler_h
 #define koRuler_h
 
-#include "kreport_export.h"
-#include "common/KoUnit.h"
-
 #include <QWidget>
 #include <QTextOption>
+
+#include "KoUnit.h"
 
 class QPaintEvent;
 
