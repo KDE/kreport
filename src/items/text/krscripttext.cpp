@@ -47,13 +47,13 @@ int Text::horizontalAlignment()
 {
     const QString a = m_text->m_horizontalAlignment->value().toString().toLower();
 
-    if (a == "left") {
+    if (a == QLatin1String("left")) {
         return -1;
     }
-    if (a == "center") {
+    if (a == QLatin1String("center")) {
         return 0;
     }
-    if (a == "right") {
+    if (a == QLatin1String("right")) {
         return 1;
     }
     return -1;
@@ -62,16 +62,16 @@ void Text::setHorizonalAlignment(int a)
 {
     switch (a) {
     case -1:
-        m_text->m_horizontalAlignment->setValue("left");
+        m_text->m_horizontalAlignment->setValue(QLatin1String("left"));
         break;
     case 0:
-        m_text->m_horizontalAlignment->setValue("center");
+        m_text->m_horizontalAlignment->setValue(QLatin1String("center"));
         break;
     case 1:
-        m_text->m_horizontalAlignment->setValue("right");
+        m_text->m_horizontalAlignment->setValue(QLatin1String("right"));
         break;
     default:
-        m_text->m_horizontalAlignment->setValue("left");
+        m_text->m_horizontalAlignment->setValue(QLatin1String("left"));
         break;
     }
 }
@@ -80,13 +80,13 @@ int Text::verticalAlignment()
 {
     const QString a = m_text->m_horizontalAlignment->value().toString().toLower();
 
-    if (a == "top") {
+    if (a == QLatin1String("top")) {
         return -1;
     }
-    if (a == "middle") {
+    if (a == QLatin1String("middle")) {
         return 0;
     }
-    if (a == "bottom") {
+    if (a == QLatin1String("bottom")) {
         return 1;
     }
     return -1;
@@ -95,16 +95,16 @@ void Text::setVerticalAlignment(int a)
 {
     switch (a) {
     case -1:
-        m_text->m_verticalAlignment->setValue("top");
+        m_text->m_verticalAlignment->setValue(QLatin1String("top"));
         break;
     case 0:
-        m_text->m_verticalAlignment->setValue("middle");
+        m_text->m_verticalAlignment->setValue(QLatin1String("middle"));
         break;
     case 1:
-        m_text->m_verticalAlignment->setValue("bottom");
+        m_text->m_verticalAlignment->setValue(QLatin1String("bottom"));
         break;
     default:
-        m_text->m_verticalAlignment->setValue("middle");
+        m_text->m_verticalAlignment->setValue(QLatin1String("middle"));
         break;
     }
 }
@@ -189,7 +189,7 @@ void Text::loadFromFile(const QString &fn)
     QFile file(fn);
     //kDebug() << "Loading from" << fn;
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        m_text->m_controlSource->setValue(QVariant("$Unable to read " + fn));
+        m_text->m_controlSource->setValue(tr("$Unable to read %1").arg(fn));
         return;
     }
     QTextStream in(&file);
@@ -199,7 +199,7 @@ void Text::loadFromFile(const QString &fn)
       QString line = in.readLine();
       process_line(line);
     }*/
-    m_text->m_controlSource->setValue(QVariant('$' + data));
+    m_text->m_controlSource->setValue(QVariant(QLatin1String("$") + data));
 }
 
 }

@@ -36,13 +36,13 @@ KoReportItemText::KoReportItemText(QDomNode & element) : m_bottomPadding(0.0)
     QDomNode node;
 
     createProperties();
-    m_name->setValue(element.toElement().attribute("report:name"));
-    m_controlSource->setValue(element.toElement().attribute("report:item-data-source"));
-    m_itemValue->setValue(element.toElement().attribute("report:value"));
-    Z = element.toElement().attribute("report:z-index").toDouble();
-    m_horizontalAlignment->setValue(element.toElement().attribute("report:horizontal-align"));
-    m_verticalAlignment->setValue(element.toElement().attribute("report:vertical-align"));
-    m_bottomPadding = element.toElement().attribute("report:bottom-padding").toDouble();
+    m_name->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
+    m_itemValue->setValue(element.toElement().attribute(QLatin1String("report:value")));
+    Z = element.toElement().attribute(QLatin1String("report:z-index")).toDouble();
+    m_horizontalAlignment->setValue(element.toElement().attribute(QLatin1String("report:horizontal-align")));
+    m_verticalAlignment->setValue(element.toElement().attribute(QLatin1String("report:vertical-align")));
+    m_bottomPadding = element.toElement().attribute(QLatin1String("report:bottom-padding")).toDouble();
 
     parseReportRect(element.toElement(), &m_pos, &m_size);
 
@@ -50,7 +50,7 @@ KoReportItemText::KoReportItemText(QDomNode & element) : m_bottomPadding(0.0)
         node = nl.item(i);
         n = node.nodeName();
 
-        if (n == "report:text-style") {
+        if (n == QLatin1String("report:text-style")) {
             KRTextStyleData ts;
             if (parseReportTextStyleData(node.toElement(), ts)) {
                 m_backgroundColor->setValue(ts.backgroundColor);
@@ -59,7 +59,7 @@ KoReportItemText::KoReportItemText(QDomNode & element) : m_bottomPadding(0.0)
                 m_font->setValue(ts.font);
 
             }
-        } else if (n == "report:line-style") {
+        } else if (n == QLatin1String("report:line-style")) {
             KRLineStyleData ls;
             if (parseReportLineStyleData(node.toElement(), ls)) {
                 m_lineWeight->setValue(ls.weight);
@@ -83,17 +83,17 @@ Qt::Alignment KoReportItemText::textFlags() const
     Qt::Alignment align;
     QString t;
     t = m_horizontalAlignment->value().toString();
-    if (t == "center")
+    if (t == QLatin1String("center"))
         align = Qt::AlignHCenter;
-    else if (t == "right")
+    else if (t == QLatin1String("right"))
         align = Qt::AlignRight;
     else
         align = Qt::AlignLeft;
 
     t = m_verticalAlignment->value().toString();
-    if (t == "center")
+    if (t == QLatin1String("center"))
         align |= Qt::AlignVCenter;
-    else if (t == "bottom")
+    else if (t == QLatin1String("bottom"))
         align |= Qt::AlignBottom;
     else
         align |= Qt::AlignTop;
@@ -103,7 +103,7 @@ Qt::Alignment KoReportItemText::textFlags() const
 
 void KoReportItemText::createProperties()
 {
-    m_set = new KPropertySet(0, "Text");
+    m_set = new KPropertySet(0, QLatin1String("Text"));
 
     //connect ( set, SIGNAL ( propertyChanged ( KPropertySet &, KProperty & ) ), this, SLOT ( propertyChanged ( KPropertySet &, KProperty & ) ) );
 
@@ -114,15 +114,15 @@ void KoReportItemText::createProperties()
 
     m_itemValue = new KProperty("value", QString(), tr("Value"), tr("Value used if not bound to a field"));
 
-    keys << "left" << "center" << "right";
+    keys << QLatin1String("left") << QLatin1String("center") << QLatin1String("right");
     strings << tr("Left") << tr("Center") << tr("Right");
-    m_horizontalAlignment = new KProperty("horizontal-align", keys, strings, "left", tr("Horizontal Alignment"));
+    m_horizontalAlignment = new KProperty("horizontal-align", keys, strings, QLatin1String("left"), tr("Horizontal Alignment"));
 
     keys.clear();
     strings.clear();
-    keys << "top" << "center" << "bottom";
+    keys << QLatin1String("top") << QLatin1String("center") << QLatin1String("bottom");
     strings << tr("Top") << tr("Center") << tr("Bottom");
-    m_verticalAlignment = new KProperty("vertical-align", keys, strings, "center", tr("Vertical Alignment"));
+    m_verticalAlignment = new KProperty("vertical-align", keys, strings, QLatin1String("center"), tr("Vertical Alignment"));
 
     m_font = new KProperty("font", QApplication::font(), tr("Font"));
 
@@ -135,7 +135,7 @@ void KoReportItemText::createProperties()
     m_backgroundOpacity = new KProperty("background-opacity", QVariant(0), tr("Background Opacity"));
     m_backgroundOpacity->setOption("max", 100);
     m_backgroundOpacity->setOption("min", 0);
-    m_backgroundOpacity->setOption("unit", "%");
+    m_backgroundOpacity->setOption("unit", QLatin1String("%"));
 
     addDefaultProperties();
     m_set->addProperty(m_controlSource);
@@ -191,7 +191,7 @@ KRLineStyleData KoReportItemText::lineStyle()
 // RTTI
 QString KoReportItemText::typeName() const
 {
-    return "text";
+    return QLatin1String("text");
 }
 
 int KoReportItemText::renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset,
@@ -205,7 +205,7 @@ int KoReportItemText::renderSimpleData(OROPage *page, OROSection *section, const
     QString cs = itemDataSource();
 
     if (!cs.isEmpty()) {
-        if (cs.left(1) == "$") { //Everything past $ is treated as a string
+        if (cs.left(1) == QLatin1String("$")) { //Everything past $ is treated as a string
             qstrValue = cs.mid(1);
         } else {
             qstrValue = data.toString();
@@ -226,7 +226,7 @@ int KoReportItemText::renderSimpleData(OROPage *page, OROSection *section, const
 
         int pos = 0;
         QChar separator;
-        QRegExp re("\\s");
+        QRegExp re(QLatin1String("\\s"));
         QPrinter prnt(QPrinter::HighResolution);
         QFontMetrics fm(font(), &prnt);
 
@@ -240,13 +240,13 @@ int KoReportItemText::renderSimpleData(OROPage *page, OROSection *section, const
             int idx = re.indexIn(qstrValue, pos);
             if (idx == -1) {
                 idx = qstrValue.length();
-                separator = QChar('\n');
+                separator = QLatin1Char('\n');
             } else
                 separator = qstrValue.at(idx);
 
             if (fm.boundingRect(qstrValue.left(idx)).width() < intRectWidth || pos == 0) {
                 pos = idx + 1;
-                if (separator == '\n') {
+                if (separator == QLatin1Char('\n')) {
                     QString line = qstrValue.left(idx);
 
                     qstrValue.remove(0, idx + 1);

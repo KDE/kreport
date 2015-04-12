@@ -48,7 +48,8 @@ void KoReportDesignerItemText::init(QGraphicsScene *scene, KoReportDesigner *d)
     m_controlSource->setListData(m_reportDesigner->fieldKeys(), m_reportDesigner->fieldNames());
     setZValue(Z);
 
-    updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(), "textarea");
+    updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(),
+                     QLatin1String("textarea"));
 }
 
 KoReportDesignerItemText::KoReportDesignerItemText(KoReportDesigner * rw, QGraphicsScene * scene, const QPointF &pos)
@@ -70,7 +71,7 @@ KoReportDesignerItemText::KoReportDesignerItemText(QDomNode & element, KoReportD
 KoReportDesignerItemText* KoReportDesignerItemText::clone()
 {
     QDomDocument d;
-    QDomElement e = d.createElement("clone");;
+    QDomElement e = d.createElement(QLatin1String("clone"));
     QDomNode n;
     buildXML(d, e);
     n = e.firstChild();
@@ -133,8 +134,8 @@ void KoReportDesignerItemText::buildXML(QDomDocument & doc, QDomElement & parent
     addPropertyAsAttribute(&entity, m_controlSource);
     addPropertyAsAttribute(&entity, m_verticalAlignment);
     addPropertyAsAttribute(&entity, m_horizontalAlignment);
-    entity.setAttribute("report:bottom-padding", m_bottomPadding);
-    entity.setAttribute("report:z-index", zValue());
+    entity.setAttribute(QLatin1String("report:bottom-padding"), m_bottomPadding);
+    entity.setAttribute(QLatin1String("report:z-index"), zValue());
     addPropertyAsAttribute(&entity, m_itemValue);
 
     // bounding rect
@@ -179,5 +180,6 @@ void KoReportDesignerItemText::slotPropertyChanged(KPropertySet &s, KProperty &p
     if (scene())
         scene()->update();
 
-    updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(), "textarea");
+    updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(),
+                     QLatin1String("textarea"));
 }
