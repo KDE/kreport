@@ -1,5 +1,4 @@
-/*
- * OpenRPT report writer and rendering engine
+/* This file is part of the KDE project
  * Copyright (C) 2001-2012 by OpenMFG, LLC
  *
  * This library is free software; you can redistribute it and/or

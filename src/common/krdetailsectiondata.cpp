@@ -1,6 +1,4 @@
-/*
- * Kexi Report Plugin /
- * OpenRPT report writer and rendering engine
+/* This file is part of the KDE project
  * Copyright (C) 2001-2007 by OpenMFG, LLC (info@openmfg.com)
  * Copyright (C) 2007-2008 by Adam Pigg (adam@piggz.co.uk)
  *
