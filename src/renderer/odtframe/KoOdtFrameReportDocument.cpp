@@ -1,5 +1,4 @@
-/*
-   Calligra Report Engine
+/* This file is part of the KDE project
    Copyright (C) 2012 by Dag Andersen (danders@get2net.dk)
 
    This library is free software; you can redistribute it and/or

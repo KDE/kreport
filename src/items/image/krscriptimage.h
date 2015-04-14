@@ -1,5 +1,4 @@
-/*
- * Kexi Report Plugin
+/* This file is part of the KDE project
  * Copyright (C) 2007-2008 by Adam Pigg (adam@piggz.co.uk)
  *
  * This library is free software; you can redistribute it and/or

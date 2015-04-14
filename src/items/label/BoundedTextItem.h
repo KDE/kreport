@@ -1,5 +1,4 @@
-/*
-  KoReport report rendering library
+/* This file is part of the KDE project
   Copyright (C) 2014 Adam Pigg <adam@piggz.co.uk>
  
   This library is free software; you can redistribute it and/or
