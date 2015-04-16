@@ -5,6 +5,10 @@ find_package(KF5WidgetsAddons REQUIRED)
 find_package(KF5Kross REQUIRED)
 find_package(KProperty REQUIRED)
 
+# Options
+option(KREPORT_SCRIPTING "Enable scripting" OFF)
+configure_file(config-kreport.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kreport.h)
+
 #add_subdirectory(pics)
 
 set(kreport_LIB_SRCS
@@ -204,6 +208,7 @@ install(
     FILES
         ${kreport_HEADERS}
         ${PROJECT_BINARY_DIR}/src/kreport_export.h
+        ${PROJECT_BINARY_DIR}/src/config-kreport.h
     DESTINATION ${INCLUDE_INSTALL_DIR}/KReport/kreport
     COMPONENT Devel
 )
