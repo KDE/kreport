@@ -131,7 +131,6 @@ target_link_libraries(KReport
         #KF5::KIOWidgets
         #KF5::KIONTLM
         KProperty
-        ${CALLIGRADB_LIBS} # ONLY FOR KexiPluginLoader, TODO: remove
     PRIVATE
 )
 
