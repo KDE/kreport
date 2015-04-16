@@ -17,6 +17,12 @@
 #ifndef KRSCRIPTHANDLER_H
 #define KRSCRIPTHANDLER_H
 
+#include "config-kreport.h"
+
+class KoReportReportData;
+class OROPage;
+
+#ifdef KREPORT_SCRIPTING
 #include "krsectiondata.h"
 #include "krscriptconstants.h"
 #include "KoReportData.h"
@@ -25,8 +31,6 @@
 
 class KRScriptFunctions;
 class KRScriptDebug;
-class KoReportReportData;
-class OROPage;
 class KRScriptDraw;
 
 namespace Scripting
@@ -80,6 +84,10 @@ private:
     QMap<KRSectionData*, Scripting::Section*> m_sectionMap;
     QString where();
 };
+
+#else // !KREPORT_SCRIPTING
+#define KRScriptHandler void
+#endif
 
 #endif
 

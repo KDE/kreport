@@ -17,7 +17,9 @@
 
 #include "KoReportItemCheck.h"
 #include "common/renderobjects.h"
+#ifdef KREPORT_SCRIPTING
 #include "renderer/scripting/krscripthandler.h"
+#endif
 
 #include <KPropertySet>
 
@@ -135,9 +137,14 @@ int KoReportItemCheck::renderSimpleData(OROPage *page, OROSection *section, cons
 
     //qDebug() << "ControlSource:" << cs;
     if (!cs.isEmpty()) {
+#ifdef KREPORT_SCRIPTING
         if (cs.left(1) == QLatin1String("=") && script) {
             str = script->evaluate(cs.mid(1)).toString();
-        } else {
+        } else
+#else
+        Q_UNUSED(script);
+#endif
+        {
             str = data.toString();
         }
 

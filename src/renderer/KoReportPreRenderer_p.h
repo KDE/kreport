@@ -19,6 +19,8 @@
 #ifndef __KOREPORTPRERENDERER_P_H__
 #define __KOREPORTPRERENDERER_P_H__
 
+#include "config-kreport.h"
+
 #include "renderobjects.h"
 #include "KoReportASyncItemManager.h"
 
@@ -62,7 +64,9 @@ public:
 
     ///Scripting Stuff
     KRScriptHandler *m_scriptHandler;
+#ifdef KREPORT_SCRIPTING
     void initEngine();
+#endif
     
     KoReportASyncItemManager* asyncManager;
     

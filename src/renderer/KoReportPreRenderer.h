@@ -45,8 +45,11 @@ public:
     virtual ~KoReportPreRenderer();
 
     void setSourceData(KoReportData*);
+
+#ifdef KREPORT_SCRIPTING
     void registerScriptObject(QObject*, const QString&);
-    
+#endif
+
     ORODocument * generate();
 
     /**

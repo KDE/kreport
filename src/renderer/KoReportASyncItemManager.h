@@ -20,6 +20,8 @@
 #ifndef KOREPORTASYNCITEMMANAGER_H
 #define KOREPORTASYNCITEMMANAGER_H
 
+#include "config-kreport.h"
+
 #include <QObject>
 #include <QQueue>
 

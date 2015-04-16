@@ -27,7 +27,10 @@
 #include "common/krdetailsectiondata.h"
 #include "common/labelsizeinfo.h"
 #include "common/KoPageFormat.h"
+
+#ifdef KREPORT_SCRIPTING
 #include "scripting/krscripthandler.h"
+#endif
 
 #include <QFontMetrics>
 #include <QScreen>
@@ -67,9 +70,11 @@ void KoReportPreRendererPrivate::createNewPage()
 
     m_pageCounter++;
 
+#ifdef KREPORT_SCRIPTING
     //Update the page count script value
     m_scriptHandler->setPageNumber(m_pageCounter);
     m_scriptHandler->newPage();
+#endif
 
     m_page = new OROPage(0);
     m_document->addPage(m_page);
@@ -367,6 +372,7 @@ qreal KoReportPreRendererPrivate::renderSection(const KRSectionData & sectionDat
     return sectionHeight;
 }
 
+#ifdef KREPORT_SCRIPTING
 void KoReportPreRendererPrivate::initEngine()
 {
     m_scriptHandler = new KRScriptHandler(m_kodata, m_reportData);
@@ -377,6 +383,7 @@ void KoReportPreRendererPrivate::initEngine()
 
     connect(this, SIGNAL(renderingSection(KRSectionData*,OROPage*,QPointF)), m_scriptHandler, SLOT(slotEnteredSection(KRSectionData*,OROPage*,QPointF)));
 }
+#endif
 
 void KoReportPreRendererPrivate::asyncItemsFinished()
 {
@@ -479,6 +486,8 @@ ORODocument* KoReportPreRenderer::generate()
     d->m_document->setPageOptions(rpo);
     d->m_kodata->setSorting(d->m_reportData->m_detailSection->m_sortedFields);
     d->m_kodata->open();
+
+#ifdef KREPORT_SCRIPTING
     d->initEngine();
 
     //Loop through all abjects that have been registered, and register them with the script handler
@@ -496,6 +505,7 @@ ORODocument* KoReportPreRenderer::generate()
 
     //execute the script
     d->m_scriptHandler->trigger();
+#endif
 
     d->createNewPage();
     if (!label.isNull()) {
@@ -573,6 +583,7 @@ ORODocument* KoReportPreRenderer::generate()
     }
     d->finishCurPage(true);
 
+#ifdef KREPORT_SCRIPTING
     // _postProcText contains those text boxes that need to be updated
     // with information that wasn't available at the time it was added to the document
     d->m_scriptHandler->setPageTotal(d->m_document->pages());
@@ -584,13 +595,18 @@ ORODocument* KoReportPreRenderer::generate()
 
         tb->setText(d->m_scriptHandler->evaluate(tb->text()).toString());
     }
+#endif
 
     d->asyncManager->startRendering();
 
+#ifdef KREPORT_SCRIPTING
     d->m_scriptHandler->displayErrors();
+#endif
 
     d->m_kodata->close();
+#ifdef KREPORT_SCRIPTING
     delete d->m_scriptHandler;
+#endif
     delete d->m_kodata;
     d->m_postProcText.clear();
 
@@ -628,11 +644,13 @@ bool KoReportPreRenderer::isValid() const
     return false;
 }
 
+#ifdef KREPORT_SCRIPTING
 void KoReportPreRenderer::registerScriptObject(QObject* obj, const QString& name)
 {
     //qDebug() << name;
     m_scriptObjects[name] = obj;
 }
+#endif
 
 const KoReportReportData* KoReportPreRenderer::reportData() const
 {

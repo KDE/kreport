@@ -30,8 +30,13 @@
 class OROPage;
 class OROSection;
 class KRSize;
-class KRScriptHandler;
 class KoReportData;
+
+#ifdef KREPORT_SCRIPTING
+class KRScriptHandler;
+#else
+#define KRScriptHandler void
+#endif
 
 class KProperty;
 class KPropertySet;

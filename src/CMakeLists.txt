@@ -43,26 +43,6 @@ set(kreport_LIB_SRCS
     renderer/KoReportRendererBase.cpp
     renderer/KoReportPage.cpp
 
-    #renderer/scripting/krscripthandler.cpp
-    #renderer/scripting/krscriptconstants.cpp
-    #renderer/scripting/krscriptdebug.cpp
-    #renderer/scripting/krscriptdraw.cpp
-    #renderer/scripting/krscriptreport.cpp
-    #renderer/scripting/krscriptsection.cpp
-    #renderer/scripting/krscriptline.cpp
-
-    #renderer/odtframe/KoOdtFrameReportDocument.cpp
-    #renderer/odtframe/KoOdtFrameReportCheckBox.cpp
-    #renderer/odtframe/KoOdtFrameReportImage.cpp
-    #renderer/odtframe/KoOdtFrameReportTextBox.cpp
-    #renderer/odtframe/KoOdtFrameReportLine.cpp
-    #renderer/odtframe/KoOdtFrameReportPicture.cpp
-    #renderer/odtframe/KoOdtFrameReportPrimitive.cpp
-
-    #renderer/ods/KoSimpleOdsDocument.cpp
-    #renderer/ods/KoSimpleOdsSheet.cpp
-    #renderer/ods/KoSimpleOdsCell.cpp
-
     wrtembed/detailgroupsectiondialog.cpp
     wrtembed/KoReportDesignerItemBase.cpp
     wrtembed/KoReportDesignerItemRectBase.cpp
@@ -83,30 +63,55 @@ set(kreport_LIB_SRCS
 
     items/label/KoReportItemLabel.cpp
     items/label/KoReportDesignerItemLabel.cpp
-    items/label/krscriptlabel.cpp
     items/label/KoReportLabelPlugin.cpp
     items/label/BoundedTextItem.cpp
 
     items/check/KoReportItemCheck.cpp
     items/check/KoReportDesignerItemCheck.cpp
-    items/check/KoReportScriptCheck.cpp
     items/check/KoReportCheckPlugin.cpp
 
     items/field/KoReportItemField.cpp
     items/field/KoReportDesignerItemField.cpp
-    items/field/krscriptfield.cpp
     items/field/KoReportFieldPlugin.cpp
 
     items/image/KoReportItemImage.cpp
     items/image/KoReportDesignerItemImage.cpp
-    items/image/krscriptimage.cpp
     items/image/KoReportImagePlugin.cpp
 
     items/text/KoReportItemText.cpp
     items/text/KoReportDesignerItemText.cpp
-    items/text/krscripttext.cpp
     items/text/KoReportTextPlugin.cpp
 )
+
+if(KREPORT_SCRIPTING)
+    list(ADD kreport_LIB_SRCS
+        #renderer/scripting/krscripthandler.cpp
+        #renderer/scripting/krscriptconstants.cpp
+        #renderer/scripting/krscriptdebug.cpp
+        #renderer/scripting/krscriptdraw.cpp
+        #renderer/scripting/krscriptreport.cpp
+        #renderer/scripting/krscriptsection.cpp
+        #renderer/scripting/krscriptline.cpp
+
+        #renderer/odtframe/KoOdtFrameReportDocument.cpp
+        #renderer/odtframe/KoOdtFrameReportCheckBox.cpp
+        #renderer/odtframe/KoOdtFrameReportImage.cpp
+        #renderer/odtframe/KoOdtFrameReportTextBox.cpp
+        #renderer/odtframe/KoOdtFrameReportLine.cpp
+        #renderer/odtframe/KoOdtFrameReportPicture.cpp
+        #renderer/odtframe/KoOdtFrameReportPrimitive.cpp
+
+        #renderer/ods/KoSimpleOdsDocument.cpp
+        #renderer/ods/KoSimpleOdsSheet.cpp
+        #renderer/ods/KoSimpleOdsCell.cpp
+
+        items/label/krscriptlabel.cpp
+        items/check/KoReportScriptCheck.cpp
+        items/field/krscriptfield.cpp
+        items/image/krscriptimage.cpp
+        items/text/krscripttext.cpp
+    )
+endif(KREPORT_SCRIPTING)
 
 qt5_wrap_ui(kreport_LIB_SRCS
     wrtembed/detailgroupsectiondialog.ui

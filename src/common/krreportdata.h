@@ -19,6 +19,8 @@
 #ifndef KRREPORTDATA_H
 #define KRREPORTDATA_H
 
+#include "config-kreport.h"
+
 #include <QDomDocument>
 
 #include "kreport_export.h"
@@ -133,8 +135,10 @@ private:
 
     friend class KoReportPreRendererPrivate;
     friend class KoReportPreRenderer;
+#ifdef KREPORT_SCRIPTING
     friend class KRScriptHandler;
     friend class Scripting::Report;
+#endif
 };
 
 #endif

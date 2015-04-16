@@ -17,7 +17,9 @@
 #include "KoReportItemField.h"
 
 #include "common/renderobjects.h"
+#ifdef KREPORT_SCRIPTING
 #include "renderer/scripting/krscripthandler.h"
+#endif
 
 #include <KPropertySet>
 
@@ -228,6 +230,7 @@ int KoReportItemField::renderSimpleData(OROPage *page, OROSection *section, cons
 
     QString ids = itemDataSource();
     if (!ids.isEmpty()) {
+#ifdef KREPORT_SCRIPTING
         if (ids.left(1) == QLatin1String("=") && script) { //Everything after = is treated as code
             if (!ids.contains(QLatin1String("PageTotal()"))) {
                 QVariant v = script->evaluate(ids.mid(1));
@@ -236,7 +239,11 @@ int KoReportItemField::renderSimpleData(OROPage *page, OROSection *section, cons
                 str = ids.mid(1);
                 tb->setRequiresPostProcessing();
             }
-        } else if (ids.left(1) == QLatin1String("$")) { //Everything past $ is treated as a string
+        } else
+#else
+        Q_UNUSED(script);
+#endif
+        if (ids.left(1) == QLatin1String("$")) { //Everything past $ is treated as a string
             str = ids.mid(1);
         } else {
             str = data.toString();
