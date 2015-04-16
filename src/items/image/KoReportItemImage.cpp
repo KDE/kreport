@@ -19,8 +19,11 @@
 
 #include <KPropertySet>
 
-#include <QBuffer>
 #include <kcodecs.h>
+#include <klocalizedstring.h>
+
+#include <QBuffer>
+
 
 KoReportItemImage::KoReportItemImage()
 {
