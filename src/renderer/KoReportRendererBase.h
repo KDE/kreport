@@ -20,7 +20,7 @@
 #ifndef KOREPORTRENDERERBASE_H
 #define KOREPORTRENDERERBASE_H
 
-#include <kurl.h>
+#include <QUrl>
 
 #include "kreport_export.h"
 
@@ -33,7 +33,7 @@ class KREPORT_EXPORT KoReportRendererContext
 {
     public:
         KoReportRendererContext();
-        KUrl destinationUrl;
+        QUrl destinationUrl;
         QPainter *painter;
         QPrinter *printer;
 };

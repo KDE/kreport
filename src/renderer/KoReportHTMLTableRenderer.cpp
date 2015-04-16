@@ -71,7 +71,7 @@ bool KoReportHTMLTableRenderer::render(const KoReportRendererContext& context, O
     tempHtmlFile.close();
 
     bool status = true; //TODO port KIO;
-//    if (KIO::NetAccess::upload(tempFileName, context.destinationUrl, 0) && KIO::NetAccess::dircopy(KUrl(m_tempDirName),  KUrl(context.destinationUrl.url() + dirSuffix), 0)) {
+//    if (KIO::NetAccess::upload(tempFileName, context.destinationUrl, 0) && KIO::NetAccess::dircopy(QUrl(m_tempDirName),  QUrl(context.destinationUrl.url() + dirSuffix), 0)) {
 //        status = true;
 //    }
 
