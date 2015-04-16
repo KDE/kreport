@@ -18,12 +18,6 @@
 #ifndef KOREPORTITEMIMAGE_H
 #define KOREPORTITEMIMAGE_H
 
-#include <QRect>
-#include <QPainter>
-#include <QDomDocument>
-
-#include <KPropertySet>
-
 #include "KoReportItemBase.h"
 #include "krpos.h"
 #include "krsize.h"

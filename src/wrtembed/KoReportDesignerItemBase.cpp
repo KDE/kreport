@@ -18,20 +18,10 @@
 
 #include "KoReportDesignerItemBase.h"
 
-#include <QPainter>
 #include <QString>
-#include <QLabel>
-#include <QLineEdit>
 #include <QDomDocument>
-#include <QInputDialog>
-#include <QSlider>
-#include <QDataStream>
 #include <QCheckBox>
-#include <QRadioButton>
-#include <QSettings>
 
-#include <KPropertySet>
-#include <KPropertyEditorView>
 
 #include "common/KoReportItemBase.h"
 #include <common/krutils.h>

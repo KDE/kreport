@@ -25,10 +25,6 @@
 #include "reportsectiondetailgroup.h"
 #include <QIcon>
 // Qt
-#include <QVariant>
-#include <QComboBox>
-#include <QLineEdit>
-#include <QMessageBox>
 #include <QDialogButtonBox>
 #include <QVBoxLayout>
 #include <QPushButton>

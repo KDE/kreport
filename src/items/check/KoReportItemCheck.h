@@ -18,10 +18,6 @@
 #ifndef KOREPORTITEMCHECK_H
 #define KOREPORTITEMCHECK_H
 
-#include <QRect>
-#include <QPainter>
-#include <QDomDocument>
-
 #include "KoReportItemBase.h"
 #include "krpos.h"
 #include "krsize.h"

@@ -20,7 +20,6 @@
 #include "KoReportItemField.h"
 #include "wrtembed/KoReportDesigner.h"
 
-#include <KPropertyEditorView>
 
 #include <QDomDocument>
 #include <QPainter>

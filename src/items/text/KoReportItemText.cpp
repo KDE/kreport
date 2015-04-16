@@ -14,6 +14,7 @@
  * You should have received a copy of the GNU Lesser General Public
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 #include "KoReportItemText.h"
 #include "common/renderobjects.h"
 
@@ -22,6 +23,7 @@
 #include <QPrinter>
 #include <QApplication>
 #include <QPalette>
+#include <QFontMetrics>
 
 KoReportItemText::KoReportItemText()
 {

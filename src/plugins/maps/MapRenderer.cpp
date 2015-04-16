@@ -26,9 +26,6 @@
 #include "marble/HttpDownloadManager.h"
 #include <marble/AbstractFloatItem.h>
 
-#include <QPainter>
-#include <QSize>
-#include <QImage>
 #include <QDebug>
 
 MapRenderer::MapRenderer(QObject* parent)

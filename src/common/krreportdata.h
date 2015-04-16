@@ -21,7 +21,6 @@
 
 #include "config-kreport.h"
 
-#include <QDomDocument>
 
 #include "kreport_export.h"
 #include "krsectiondata.h"

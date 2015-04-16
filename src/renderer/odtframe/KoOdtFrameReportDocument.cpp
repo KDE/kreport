@@ -29,7 +29,6 @@
 #include <KoGenStyle.h>
 #include <KoDpi.h>
 
-#include <QLayout>
 #include <QVarLengthArray>
 #include <QDebug>
 

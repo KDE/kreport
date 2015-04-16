@@ -30,7 +30,6 @@
 
 #include <kmimetype.h>
 
-#include <QColor>
 #include <QPainter>
 #include <QPen>
 #include <QImage>

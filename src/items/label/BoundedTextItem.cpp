@@ -21,7 +21,6 @@
 #include <QPainter>
 #include <QStyleOptionGraphicsItem>
 #include <QKeyEvent>
-#include <QDebug>
 
 BoundedTextItem::BoundedTextItem(QGraphicsItem* parent): QGraphicsTextItem(parent)
 {

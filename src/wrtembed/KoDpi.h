@@ -22,9 +22,6 @@
 #ifndef KO_DPI_h
 #define KO_DPI_h
 
-#include <QStringList>
-#include <QFont>
-#include <QMap>
 
 #include "kreport_export.h"
 

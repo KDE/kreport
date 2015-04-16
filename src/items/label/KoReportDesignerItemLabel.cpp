@@ -21,18 +21,13 @@
 #include "wrtembed/KoReportDesigner.h"
 #include "wrtembed/reportscene.h"
 
-#include <KPropertyEditorView>
-
+#include <QKeyEvent>
 #include <QDomDocument>
 #include <QPainter>
 #include <QGraphicsScene>
 #include <QGraphicsSceneMouseEvent>
 #include <QTextCursor>
 #include <QTextDocument>
-
-//
-// class ReportEntityLabel
-//
 
 void KoReportDesignerItemLabel::init(QGraphicsScene *scene, KoReportDesigner *d)
 {

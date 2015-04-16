@@ -30,8 +30,6 @@
 #include "KoReportItemLine.h"
 #include "KoReportDesignerItemRectBase.h"
 
-#include <KPropertySet>
-#include <KProperty>
 
 #include "KoUnit.h"
 #include "KoDpi.h"

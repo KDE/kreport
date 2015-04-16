@@ -22,7 +22,6 @@
  */
 
 #include <QString>
-#include <QRectF>
 #include <QPainter>
 #include <QPen>
 #include <QBrush>

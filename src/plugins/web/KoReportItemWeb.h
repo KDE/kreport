@@ -26,11 +26,7 @@
 #include "krsize.h"
 #include "KoReportData.h"
 
-#include <KPropertySet>
-
-#include <QRect>
 #include <QGraphicsScene>
-#include <QWidget>
 #include <QUrl>
 
 class QUrl;

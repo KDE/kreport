@@ -17,7 +17,6 @@
 #ifndef REPORTENTITYCHART_H
 #define REPORTENTITYCHART_H
 
-#include <QObject>
 
 #include "KoReportItemChart.h"
 #include "KoReportDesignerItemRectBase.h"

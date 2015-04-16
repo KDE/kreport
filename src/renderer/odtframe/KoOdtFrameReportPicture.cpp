@@ -31,7 +31,6 @@
 #include <kmimetype.h>
 
 #include <QPainter>
-#include <QPicture>
 #include <QDebug>
 
 KoOdtFrameReportPicture::KoOdtFrameReportPicture(OROPrimitive *primitive)

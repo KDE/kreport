@@ -20,7 +20,6 @@
 #ifndef __REPORTENTITYIMAGE_H__
 #define __REPORTENTITYIMAGE_H__
 
-#include <QImage>
 
 #include <KPropertySet>
 

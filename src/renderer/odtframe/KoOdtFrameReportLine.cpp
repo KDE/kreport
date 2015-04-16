@@ -27,11 +27,7 @@
 #include <KoGenStyles.h>
 #include <KoUnit.h>
 
-#include <QColor>
-#include <QFont>
-#include <QPainter>
 #include <QPen>
-#include <QImage>
 #include <QDebug>
 
 KoOdtFrameReportLine::KoOdtFrameReportLine(OROLine *primitive)

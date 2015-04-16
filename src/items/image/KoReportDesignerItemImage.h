@@ -19,7 +19,6 @@
 #ifndef __KOREPORTDESIGNERITEMIMAGE_H__
 #define __KOREPORTDESIGNERITEMIMAGE_H__
 
-#include <QImage>
 
 #include <KPropertySet>
 

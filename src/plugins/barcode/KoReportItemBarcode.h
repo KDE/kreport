@@ -18,10 +18,6 @@
 #ifndef KRBARCODEDATA_H
 #define KRBARCODEDATA_H
 
-#include <QRect>
-#include <QPainter>
-#include <QDomDocument>
-
 #include <KoReportItemBase.h>
 #include <krpos.h>
 #include <krsize.h>

@@ -21,7 +21,6 @@
 
 #include "KoDpi.h"
 
-#include <QFontInfo>
 #ifdef Q_WS_X11
 #include <QX11Info>
 #else

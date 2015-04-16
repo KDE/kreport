@@ -22,7 +22,6 @@
 #define _KOZOOMMODE_H_
 
 #include <QString>
-#include <QFlags>
 
 #include "kreport_export.h"
 

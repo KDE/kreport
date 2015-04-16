@@ -34,7 +34,6 @@
 #include "common/KoReportPluginInterface.h"
 #include "common/KoReportPluginManager.h"
 
-#include <KPropertyEditorView>
 
 #include <kross/core/manager.h>
 
@@ -46,7 +45,6 @@
 #include <QGridLayout>
 #include <QGraphicsSceneMouseEvent>
 #include <QMenu>
-#include <QMessageBox>
 #include <QPointer>
 #include <QIcon>
 #include <QAction>

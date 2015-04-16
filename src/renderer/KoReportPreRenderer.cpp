@@ -32,7 +32,6 @@
 #include "scripting/krscripthandler.h"
 #endif
 
-#include <QFontMetrics>
 #include <QScreen>
 #include <QApplication>
 #include <QDebug>

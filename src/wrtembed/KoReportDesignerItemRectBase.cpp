@@ -24,7 +24,6 @@
 #include "reportscene.h"
 
 #include <KPropertySet>
-#include <KPropertyEditorView>
 #include <QGraphicsSceneMouseEvent>
 #include <QScreen>
 #include <QApplication>

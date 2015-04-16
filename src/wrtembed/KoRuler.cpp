@@ -29,7 +29,6 @@
 #include <kglobalsettings.h>
 
 #include <QPainter>
-#include <QResizeEvent>
 #include <QMenu>
 #include <QMouseEvent>
 

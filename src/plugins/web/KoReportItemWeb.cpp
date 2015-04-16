@@ -27,12 +27,8 @@
 #include <klocalizedstring.h>
 
 #include <QGraphicsRectItem>
-#include <QtWebKit>
 #include <QUrl>
 #include <QWebPage>
-#include <QAction>
-#include <QWidget>
-#include <QApplication>
 #include <QDebug>
 
 KoReportItemWeb::KoReportItemWeb(): m_rendering(false)

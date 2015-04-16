@@ -23,7 +23,6 @@
  */
 
 #include <QString>
-#include <QVector>
 #include <QRect>
 #include <QPainter>
 #include <QPen>

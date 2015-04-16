@@ -29,7 +29,7 @@
 #define KRSECTIONDATA_H
 
 #include <QColor>
-#include <QDomDocument>
+#include <QDomElement>
 
 #include <KPropertySet>
 

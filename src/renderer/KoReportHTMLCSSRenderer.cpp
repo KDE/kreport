@@ -23,15 +23,8 @@
 
 #include <QDir>
 #include <QPainter>
-#include <QDomDocument>
-#include <QRectF>
 #include <QString>
-#include <QFont>
 #include <QDebug>
-
-//
-// KRHtmlRender
-//
 
 KoReportHTMLCSSRenderer::KoReportHTMLCSSRenderer()
 {

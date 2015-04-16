@@ -25,7 +25,6 @@
 #include <KoGenStyle.h>
 #include <KoGenStyles.h>
 
-#include <QColor>
 #include <QFont>
 #include <QPen>
 

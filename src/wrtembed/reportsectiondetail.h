@@ -25,6 +25,7 @@
 #include "kreport_export.h"
 
 class QDomNode;
+class QVBoxLayout;
 class ReportSectionDetailGroup;
 
 /**

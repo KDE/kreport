@@ -23,7 +23,6 @@
 
 #include <QWidget>
 #include <QDebug>
-#include <QColor>
 #include <QPixmap>
 #include <QPainter>
 #include <QTimer>

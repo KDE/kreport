@@ -21,7 +21,6 @@
 #include "wrtembed/KoReportDesigner.h"
 
 #include <KPropertySet>
-#include <KPropertyEditorView>
 
 #include <QDomDocument>
 #include <QPainter>

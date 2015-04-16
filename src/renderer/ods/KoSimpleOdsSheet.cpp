@@ -20,8 +20,6 @@
 #include "KoSimpleOdsSheet.h"
 #include <KoXmlWriter.h>
 
-#include <QDebug>
-
 KoSimpleOdsSheet::KoSimpleOdsSheet()
 {
 

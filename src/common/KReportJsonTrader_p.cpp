@@ -26,7 +26,6 @@
 #include <QList>
 #include <QPluginLoader>
 #include <QJsonObject>
-#include <QJsonArray>
 #include <QDirIterator>
 #include <QDir>
 

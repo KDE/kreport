@@ -19,7 +19,6 @@
 #include "KoReportPrintRenderer.h"
 #include "common/renderobjects.h"
 #include "common/KoPageFormat.h"
-#include <QPageSize>
 #include <QScreen>
 #include <QApplication>
 #include <QDebug>

@@ -14,11 +14,9 @@
  * You should have received a copy of the GNU Lesser General Public
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 #include "krscriptimage.h"
-
 #include "KoReportItemImage.h"
-
-#include <QBuffer>
 
 namespace Scripting
 {
@@ -72,8 +70,6 @@ void Image::setInlineImage(const QByteArray &ba)
 
 void Image::loadFromFile(const QVariant &pth)
 {
-    QPixmap img;
-
     QString str = pth.toString();
     m_image->setInlineImageData(QByteArray(), str);
 }

@@ -21,6 +21,7 @@
 #include "krreportdata.h"
 
 #include <QDebug>
+#include <QDomElement>
 
 KRDetailSectionData::KRDetailSectionData(QObject *parent)
  : QObject(parent)

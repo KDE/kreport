@@ -19,7 +19,6 @@
 #include "wrtembed/KoReportDesignerItemRectBase.h"
 #include "wrtembed/KoReportDesigner.h"
 
-#include <KPropertyEditorView>
 
 #include <QDomDocument>
 #include <QPainter>

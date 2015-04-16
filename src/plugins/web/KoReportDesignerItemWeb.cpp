@@ -24,16 +24,11 @@
 
 #include <KProperty>
 #include <KPropertySet>
-#include <KPropertyEditorView>
 
 #include <klocalizedstring.h>
 
-#include <QWebFrame>
-#include <QWebPage>
-#include <QImageWriter>
 #include <QGraphicsScene>
 #include <QGraphicsSceneMouseEvent>
-#include <QBuffer>
 #include <QDomDocument>
 #include <QPainter>
 #include <QDebug>

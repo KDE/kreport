@@ -23,7 +23,6 @@
 #include "reportscene.h"
 #include "common/krutils.h"
 
-#include <KPropertyEditorView>
 
 #include <klocalizedstring.h>
 

@@ -24,7 +24,6 @@
 
 #include <KProperty>
 #include <KPropertySet>
-#include <KPropertyEditorView>
 
 #include <klocalizedstring.h>
 

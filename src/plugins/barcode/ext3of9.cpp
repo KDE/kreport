@@ -24,7 +24,6 @@
 
 #include <QString>
 #include <QRect>
-#include <QPainter>
 
 #include "barcodes.h"
 

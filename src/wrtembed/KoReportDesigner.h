@@ -21,10 +21,6 @@
 
 #include <QWidget>
 #include <QString>
-#include <QColor>
-#include <QMap>
-#include <QVBoxLayout>
-#include <QCloseEvent>
 
 #include <KPropertySet>
 

@@ -18,9 +18,6 @@
 #ifndef KOREPORTITEMFIELD_H
 #define KOREPORTITEMFIELD_H
 
-#include <QRect>
-#include <QDomDocument>
-
 #include "KoReportItemBase.h"
 #include "krsize.h"
 

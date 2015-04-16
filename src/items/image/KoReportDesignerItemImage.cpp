@@ -21,12 +21,9 @@
 #include "wrtembed/KoReportDesigner.h"
 
 #include <KPropertySet>
-#include <KPropertyEditorView>
 
-#include <QImageWriter>
 #include <QGraphicsScene>
 #include <QGraphicsSceneMouseEvent>
-#include <QBuffer>
 #include <QDomDocument>
 #include <QPainter>
 
