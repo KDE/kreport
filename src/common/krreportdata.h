@@ -28,7 +28,6 @@
 #include "reportpageoptions.h"
 
 class KRDetailSectionData;
-class KoReportPluginInterface;
 
 namespace Scripting
 {

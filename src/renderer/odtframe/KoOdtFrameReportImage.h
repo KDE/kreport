@@ -24,7 +24,6 @@
 
 class KoXmlWriter;
 class OROImage;
-class OROPrimitive;
 
 class KoOdtFrameReportImage : public KoOdtFrameReportPrimitive
 {

@@ -21,9 +21,7 @@
 
 #include "KoReportRendererBase.h"
 
-class QTextDocument;
 
-class OROTextBox;
 
 class KoOdtFrameReportRenderer : public KoReportRendererBase
 {

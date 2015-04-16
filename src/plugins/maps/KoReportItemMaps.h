@@ -32,7 +32,6 @@
 
 #include <marble/MapThemeManager.h>
 
-class OROImage;
 class OROPicture;
 class OROPage;
 class OROSection;

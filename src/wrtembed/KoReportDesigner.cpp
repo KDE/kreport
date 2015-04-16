@@ -72,11 +72,9 @@ public:
     ReportWriterSectionData() {
         selected_x_offset = 0;
         selected_y_offset = 0;
-        selected_items_rw = 0;
         mouseAction = ReportWriterSectionData::MA_None;
     }
     virtual ~ReportWriterSectionData() {
-        selected_items_rw = 0;
     }
 
     enum MouseAction {
@@ -97,8 +95,6 @@ public:
 
     int selected_x_offset;
     int selected_y_offset;
-
-    ReportWindow * selected_items_rw;
 
     MouseAction mouseAction;
     QString insertItem;
@@ -967,7 +963,6 @@ void KoReportDesigner::slotEditDelete()
         }
     }
     activeScene()->selectedItems().clear();
-    m_sectionData->selected_items_rw = 0;
 
     //TODO temporary
     //clears cut and copy lists to make sure we do not crash

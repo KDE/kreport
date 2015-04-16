@@ -33,12 +33,8 @@
 #include <QWidget>
 #include <QUrl>
 
-class QAction;
-class QWebHistory;
 class QUrl;
-class QGraphicsItem;
 class QWebPage;
-class QImage;
 
 namespace Scripting
 {

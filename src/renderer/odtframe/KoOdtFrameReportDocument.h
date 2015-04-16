@@ -29,9 +29,7 @@
 
 class KoOdfWriteStore;
 class KoXmlWriter;
-class KoStoreDevice;
 class KoOdtFrameReportPrimitive;
-class KoStore;
 class KoGenStyles;
 
 class OROSection;

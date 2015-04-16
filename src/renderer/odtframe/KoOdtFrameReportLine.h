@@ -25,7 +25,6 @@
 class KoGenStyles;
 class KoXmlWriter;
 class OROLine;
-class OROPrimitive;
 
 // FIXME:
 // This implementation is a hack because neither words nor libre writer

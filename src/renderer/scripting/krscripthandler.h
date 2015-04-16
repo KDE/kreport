@@ -29,7 +29,6 @@ class OROPage;
 
 //TODO Scripting
 
-class KRScriptFunctions;
 class KRScriptDebug;
 class KRScriptDraw;
 

@@ -25,7 +25,6 @@
 class KoGenStyles;
 class KoXmlWriter;
 class OROTextBox;
-class OROPrimitive;
 
 class KoOdtFrameReportTextBox : public KoOdtFrameReportPrimitive
 {

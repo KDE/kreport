@@ -28,7 +28,6 @@
 #include "krscripthandler.h"
 
 class KoReportPreRendererPrivate;
-class ParameterList;
 class ORODocument;
 class KoReportData;
 

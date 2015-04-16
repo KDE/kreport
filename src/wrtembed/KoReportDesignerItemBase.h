@@ -28,11 +28,9 @@
 
 #include "KoReportItemBase.h"
 
-class QDomNode;
 class QDomDocument;
 class QDomElement;
 
-class ReportWindow;
 class KoReportDesigner;
 class KRPos;
 class KRSize;

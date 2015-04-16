@@ -33,7 +33,6 @@
 #include "kreport_export.h"
 
 class QStringList;
-class QVariant;
 
 // 1 inch ^= 72 pt
 // 1 inch ^= 25.399956 mm (-pedantic ;p)

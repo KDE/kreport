@@ -25,7 +25,6 @@
 class KoGenStyles;
 class KoXmlWriter;
 class OROCheck;
-class OROPrimitive;
 
 class KoOdtFrameReportCheckBox : public KoOdtFrameReportPrimitive
 {

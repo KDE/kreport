@@ -22,7 +22,6 @@
 #include <kross/core/object.h>
 
 class KoReportReportData;
-class KoReportItemBase;
 
 namespace Scripting
 {

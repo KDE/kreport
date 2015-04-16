@@ -25,7 +25,6 @@
 #include "KoReportDesignerItemRectBase.h"
 #include "KoReportItemText.h"
 
-class KoReportDesignerItemBase;
 
 //
 // ReportEntityText

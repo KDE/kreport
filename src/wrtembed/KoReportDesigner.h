@@ -32,15 +32,10 @@
 #include "KoReportItemBase.h"
 #include "KoReportData.h"
 
-class QDomDocument;
 class QGraphicsScene;
 class QActionGroup;
-class QGridLayout;
-class QGraphicsSceneMouseEvent;
 class QGraphicsSceneContextMenuEvent;
 
-class ReportGridOptions;
-class KoRuler;
 class KoZoomHandler;
 class ReportSectionDetail;
 class ReportSection;
@@ -48,8 +43,6 @@ class KoUnit;
 class ReportScene;
 class ReportSceneView;
 class ReportWriterSectionData;
-class KoReportPluginInterface;
-class KoReportPluginManager;
 
 //
 // Class ReportDesigner
