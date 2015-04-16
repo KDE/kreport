@@ -18,7 +18,7 @@
 */
 
 #include "KoSimpleOdsDocument.h"
-#include <kdebug.h>
+
 #include <QCoreApplication>
 #include <QDir>
 

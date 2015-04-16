@@ -15,10 +15,7 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "KoReportItemChart.h"
-#include <klocale.h>
-#include <kdebug.h>
-#include <kglobalsettings.h>
-#include <klocalizedstring.h>
+
 #include "renderobjects.h"
 
 #include <KDChartBarDiagram>
@@ -29,16 +26,20 @@
 #include <KDChartThreeDPieAttributes>
 #include <KDChartLegend>
 #include <KDChartCartesianAxis>
-
-#include <KProperty>
-#include <KPropertySet>
-#include <QMotifStyle>
-
 #include <KDChartChart>
 #include <KDChartBackgroundAttributes>
 #include <KDChartAbstractDiagram>
 #include <KDChartAbstractCoordinatePlane>
 #include <KDChartPosition>
+
+#include <KProperty>
+#include <KPropertySet>
+
+#include <klocale.h>
+#include <kglobalsettings.h>
+#include <klocalizedstring.h>
+
+#include <QDebug>
 
 typedef QVector<double> datalist;
 
@@ -240,7 +241,7 @@ void KoReportItemChart::populateData()
             if (curs) {
                 const QStringList keys = m_links.keys();
                 foreach(const QString& field, keys) {
-                    kDebug() << "Adding Expression:" << field << m_links[field];
+                    qDebug() << "Adding Expression:" << field << m_links[field];
                     curs->addExpression(field, m_links[field], '=');
                 }
             }
@@ -253,8 +254,6 @@ void KoReportItemChart::populateData()
                 }
 
                 m_chartWidget = new KDChart::Widget();
-                //_chartWidget->setStyle ( new QMotifStyle() );
-
                 m_chartWidget->setType((KDChart::Widget::ChartType) m_chartType->value().toInt());
                 m_chartWidget->setSubType((KDChart::Widget::SubType) m_chartSubType->value().toInt());
                 set3D(m_threeD->value().toBool());
@@ -290,15 +289,15 @@ void KoReportItemChart::populateData()
                     }
                 }
             } else {
-                kDebug() << "Unable to open data set";
+                qDebug() << "Unable to open data set";
             }
             delete curs;
             curs = 0;
         } else {
-            kDebug() << "No source set";
+            qDebug() << "No source set";
         }
     } else {
-        kDebug() << "No connection!";
+        qDebug() << "No connection!";
     }
 }
 
@@ -309,7 +308,7 @@ QStringList KoReportItemChart::masterFields()
 
 void KoReportItemChart::setLinkData(QString fld, QVariant val)
 {
-    kDebug() << "Field: " << fld << "is" << val;
+    qDebug() << "Field: " << fld << "is" << val;
     m_links[fld] = val;
 }
 

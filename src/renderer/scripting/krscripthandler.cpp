@@ -23,16 +23,16 @@
 #include "krscriptdraw.h"
 #include "krscriptconstants.h"
 
-#include <kdebug.h>
-#include <kmessagebox.h>
-//TODO #include <kross/core/manager.h>
-
 #include "krsectiondata.h"
 #include "KoReportItemBase.h"
 #include "krreportdata.h"
 #include "krdetailsectiondata.h"
 #include "renderobjects.h"
 
+#include <kmessagebox.h>
+//TODO #include <kross/core/manager.h>
+
+#include <QDebug>
 
 KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData* d)
 {
@@ -83,11 +83,11 @@ KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData*
         m_sectionMap[sec] = new Scripting::Section(sec);
         m_sectionMap[sec]->setParent(m_report);
         m_sectionMap[sec]->setObjectName(sec->name().replace('-', '_').remove("report:"));
-        //kDebug() << "Added" << m_sectionMap[sec]->objectName() << "to report" << m_reportData->name();
+        //qDebug() << "Added" << m_sectionMap[sec]->objectName() << "to report" << m_reportData->name();
     }
 
     m_action->addObject(m_report, m_reportData->name());
-    //kDebug() << "Report name is" << m_reportData->name();
+    //qDebug() << "Report name is" << m_reportData->name();
 
     QString code = m_koreportData->scriptCode(m_reportData->script(), m_reportData->interpreter());
     m_action->setCode(code.toUtf8());
@@ -95,12 +95,12 @@ KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData*
 
 void KRScriptHandler::trigger()
 {
-    //kDebug() << m_action->code();
+    //qDebug() << m_action->code();
     m_action->trigger();
     if (m_action->hadError()) {
         KMessageBox::error(0, m_action->errorMessage());
     } else {
-        kDebug() << "Function Names:" << m_action->functionNames();
+        qDebug() << "Function Names:" << m_action->functionNames();
     }
     m_report->eventOnOpen();
 }
@@ -123,14 +123,14 @@ void KRScriptHandler::newPage()
 
 void KRScriptHandler::slotEnteredGroup(const QString &key, const QVariant &value)
 {
-    //kDebug() << key << value;
+    //qDebug() << key << value;
     m_groups[key] = value;
     emit(groupChanged(where()));
 }
 void KRScriptHandler::slotExitedGroup(const QString &key, const QVariant &value)
 {
     Q_UNUSED(value);
-    //kDebug() << key << value;
+    //qDebug() << key << value;
     m_groups.remove(key);
     emit(groupChanged(where()));
 }
@@ -173,13 +173,13 @@ QString KRScriptHandler::where()
         ++i;
     }
     w.chop(4);
-    //kDebug() << w;
+    //qDebug() << w;
     return w;
 }
 
 void KRScriptHandler::registerScriptObject(QObject* obj, const QString& name)
 {
-    //kDebug();
+    //qDebug();
     if (m_action)
         m_action->addObject(obj, name);
 }

@@ -23,19 +23,15 @@
 #include "KoReportDesignerItemMaps.h"
 #include "KoReportPluginInfo.h"
 #include "krscriptmaps.h"
-#include <KoIcon.h>
-#include <kdebug.h>
 
+#include <KoIcon.h>
 
 K_EXPORT_KOREPORT_ITEMPLUGIN(KoReportMapsPlugin, mapsplugin)
-
-#define myDebug() kDebug(44021) << "\e[35m=="
 
 KoReportMapsPlugin::KoReportMapsPlugin(QObject *parent, const QVariantList &args) : KoReportPluginInterface(parent)
 {
     Q_UNUSED(args)
     
-    myDebug() << "\e[35m======\e[0m";
     KoReportPluginInfo *info = new KoReportPluginInfo();
     info->setClassName("maps");
     info->setIcon(koIcon("report_map_element"));
@@ -46,30 +42,25 @@ KoReportMapsPlugin::KoReportMapsPlugin(QObject *parent, const QVariantList &args
 
 KoReportMapsPlugin::~KoReportMapsPlugin()
 {
-  myDebug() << "\e[35m======\e[0m";
 }
 
 QObject* KoReportMapsPlugin::createRendererInstance(QDomNode& element)
 {
-    myDebug() << "\e[35m======\e[0m";
     return new KoReportItemMaps(element);
 }
 
 QObject* KoReportMapsPlugin::createDesignerInstance(QDomNode& element, KoReportDesigner* designer, QGraphicsScene* scene)
 {
-    myDebug() << "\e[35m======QDomNode, KoReportDesigner, QGraphicsScene\e[0m";
     return new KoReportDesignerItemMaps(element, designer, scene);
 }
 
 QObject* KoReportMapsPlugin::createDesignerInstance(KoReportDesigner* designer, QGraphicsScene* scene, const QPointF& pos)
 {
-    myDebug() << "\e[35m======KoReportDesigner, QGraphicsScene,QPoint\e[0m";
     return new KoReportDesignerItemMaps(designer, scene, pos);
 }
 
 QObject* KoReportMapsPlugin::createScriptInstance(KoReportItemBase* /*item*/)
 {
-    myDebug() << "\e[35m======\e[0m";
     /*KoReportItemMaps *image = dynamic_cast<KoReportItemMaps*>(item);
     if (image) {
         return new Scripting::Maps(image);

@@ -21,19 +21,17 @@
 #ifndef KOREPORTITEMWEB_H
 #define KOREPORTITEMWEB_H
 
-#include <QRect>
-#include <QGraphicsScene>
-#include <QWidget>
-#include <QUrl>
-
-#include <kdebug.h>
-
-#include <KPropertySet>
-
 #include "KoReportASyncItemBase.h"
 #include "krpos.h"
 #include "krsize.h"
 #include "KoReportData.h"
+
+#include <KPropertySet>
+
+#include <QRect>
+#include <QGraphicsScene>
+#include <QWidget>
+#include <QUrl>
 
 class QAction;
 class QWebHistory;

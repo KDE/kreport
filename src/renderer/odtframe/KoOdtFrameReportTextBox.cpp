@@ -18,18 +18,16 @@
 */
 
 #include "KoOdtFrameReportTextBox.h"
+#include "renderobjects.h"
+
 #include <KoXmlWriter.h>
 #include <KoOdfGraphicStyles.h>
 #include <KoGenStyle.h>
 #include <KoGenStyles.h>
 
-#include "renderobjects.h"
-
 #include <QColor>
 #include <QFont>
 #include <QPen>
-
-#include <kdebug.h>
 
 KoOdtFrameReportTextBox::KoOdtFrameReportTextBox(OROTextBox *primitive)
     : KoOdtFrameReportPrimitive(primitive)

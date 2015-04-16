@@ -63,7 +63,7 @@ KoDpi::~KoDpi()
 
 void KoDpi::setDPI(int x, int y)
 {
-    //kDebug(30006) << x <<"," << y;
+    //qDebug(30006) << x <<"," << y;
     KoDpi* s = self();
     s->m_dpiX = x;
     s->m_dpiY = y;

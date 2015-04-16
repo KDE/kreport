@@ -19,15 +19,11 @@
 #ifndef MAPRENDERER_H
 #define MAPRENDERER_H
 
-#include <QObject>
-
-#include <kdebug.h>
-
 #include <marble/MarbleGlobal.h>
 #include <marble/MarbleWidget.h>
 #include <marble/RenderState.h>
 
-//#include "KoReportItemMaps.h"
+#include <QDebug>
 
 class KoReportItemMaps;
 namespace Marble{
@@ -52,11 +48,11 @@ namespace Marble{
         }
     public Q_SLOTS:
         void onRenderStatusChange(RenderStatus renderStatus){
-            kDebug(44021) << "!!!!!!!!!!!!!!!!  STATUS change";
+            qDebug() << "!!!!!!!!!!!!!!!!  STATUS change";
             emit renderStatusChanged(static_cast<int>(renderStatus));
         };
         void onRenderStateChange(const RenderState &state){
-            kDebug(44021) << "################  STATE change";
+            qDebug() << "################  STATE change";
             emit renderStatusChanged(static_cast<int>(state.status()));
         };
     Q_SIGNALS:

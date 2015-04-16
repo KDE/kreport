@@ -18,8 +18,14 @@
  */
 
 #include "KoReportDesignerItemMaps.h"
-#include <KoReportDesignerItemBase.h>
-#include <KoReportDesigner.h>
+#include "KoReportDesignerItemBase.h"
+#include "KoReportDesigner.h"
+
+#include <KProperty>
+#include <KPropertySet>
+#include <KPropertyEditorView>
+
+#include <klocalizedstring.h>
 
 #include <QImageWriter>
 #include <QGraphicsScene>
@@ -27,19 +33,7 @@
 #include <QBuffer>
 #include <QDomDocument>
 #include <QPainter>
-#include <kdebug.h>
-#include <klocalizedstring.h>
-
-#include <KProperty>
-#include <KPropertySet>
-#include <KPropertyEditorView>
-
-//
-// ReportEntitiesImage
-//
-// contructors/deconstructors
-//#define KDE_DEFAULT_DEBUG_AREA 44021
-#define myDebug() kDebug(44021) << "\e[35m=="
+#include <QDebug>
 
 void KoReportDesignerItemMaps::init(QGraphicsScene *scene, KoReportDesigner *d)
 {
@@ -50,7 +44,7 @@ void KoReportDesignerItemMaps::init(QGraphicsScene *scene, KoReportDesigner *d)
 
     connect(m_set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
-	    
+
     m_controlSource->setListData(m_reportDesigner->fieldKeys(), m_reportDesigner->fieldNames());
     setZValue(Z);
 }
@@ -59,7 +53,6 @@ KoReportDesignerItemMaps::KoReportDesignerItemMaps(KoReportDesigner * rw, QGraph
         : KoReportDesignerItemRectBase(rw)
 {
     Q_UNUSED(pos);
-    myDebug() << "\e[35m======KoReportDesigner\e[0m";
     init(scene, rw);
     setSceneRect(properRect(*rw, KOREPORT_ITEM_RECT_DEFAULT_WIDTH, KOREPORT_ITEM_RECT_DEFAULT_WIDTH));
     m_name->setValue(m_reportDesigner->suggestEntityName(typeName()));
@@ -68,7 +61,6 @@ KoReportDesignerItemMaps::KoReportDesignerItemMaps(KoReportDesigner * rw, QGraph
 KoReportDesignerItemMaps::KoReportDesignerItemMaps(QDomNode & element, KoReportDesigner * rw, QGraphicsScene* scene)
         : KoReportItemMaps(element), KoReportDesignerItemRectBase(rw)
 {
-    myDebug() << "\e[35m======QDomNode\e[0m";
     init(scene, rw);
     setSceneRect(m_pos.toScene(), m_size.toScene());
 }
@@ -92,7 +84,6 @@ void KoReportDesignerItemMaps::paint(QPainter* painter, const QStyleOptionGraphi
 {
     Q_UNUSED(option);
     Q_UNUSED(widget);
-    myDebug() << "\e[35m======Paint\e[0m";
     // store any values we plan on changing so we can restore them
     QPen  p = painter->pen();
     painter->fillRect(rect(), QColor(0xc2, 0xfc, 0xc7));//C2FCC7
@@ -111,7 +102,6 @@ void KoReportDesignerItemMaps::paint(QPainter* painter, const QStyleOptionGraphi
 
 void KoReportDesignerItemMaps::buildXML(QDomDocument & doc, QDomElement & parent)
 {
-    myDebug() << "\e[35m====== BUILDING XML \e[0m";
     QDomElement entity = doc.createElement(QLatin1String("report:") + typeName());
 
     // properties
@@ -130,8 +120,8 @@ void KoReportDesignerItemMaps::buildXML(QDomDocument & doc, QDomElement & parent
 
 void KoReportDesignerItemMaps::slotPropertyChanged(KPropertySet &s, KProperty &p)
 {
-    myDebug() << p.name() << ":" << p.value();
-    if (p.name() == "Name") {
+    qDebug() << p.name() << ":" << p.value();
+    if (p.name().toLower() == "name") {
         //For some reason p.oldValue returns an empty string
         if (!m_reportDesigner->isEntityNameUnique(p.value().toString(), this)) {
             p.setValue(m_oldName);

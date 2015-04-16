@@ -23,7 +23,7 @@
 #include <QTextTableFormat>
 #include <QPainter>
 #include <QTextDocumentWriter>
-#include <kdebug.h>
+#include <QDebug>
 
 KoReportODTRenderer::KoReportODTRenderer() : m_document(new QTextDocument()), m_cursor(m_document)
 {
@@ -95,7 +95,7 @@ bool KoReportODTRenderer::render(const KoReportRendererContext& context, ORODocu
 
                     m_cursor.insertImage(image);
                 } else {
-                    kWarning() << "unhandled primitive type";
+                    qWarning() << "unhandled primitive type";
                 }
                 m_cursor.movePosition(QTextCursor::NextCell);
 

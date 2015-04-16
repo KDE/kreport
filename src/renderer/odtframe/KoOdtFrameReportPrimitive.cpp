@@ -18,14 +18,12 @@
 */
 
 #include "KoOdtFrameReportPrimitive.h"
+#include "renderobjects.h"
+
 #include <KoXmlWriter.h>
 #include <KoDpi.h>
 #include <KoGenStyle.h>
 #include <KoGenStyles.h>
-
-#include "renderobjects.h"
-
-#include <kdebug.h>
 
 KoOdtFrameReportPrimitive::KoOdtFrameReportPrimitive(OROPrimitive *primitive)
     : m_primitive(primitive)

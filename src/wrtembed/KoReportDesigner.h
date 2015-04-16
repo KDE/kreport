@@ -26,8 +26,6 @@
 #include <QVBoxLayout>
 #include <QCloseEvent>
 
-#include <kdebug.h>
-
 #include <KPropertySet>
 
 #include "krreportdata.h"
@@ -70,7 +68,7 @@ public:
     @brief Constructor that create a blank designer
     @param widget QWidget parent
     */
-    explicit KoReportDesigner(QWidget *);
+    explicit KoReportDesigner(QWidget *parent = 0);
 
     /**
     @brief Constructor that create a designer, and loads the report described in the QDomElement

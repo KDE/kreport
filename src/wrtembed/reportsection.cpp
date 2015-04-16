@@ -30,7 +30,9 @@
 #include "KoRuler.h"
 #include "KoZoomHandler.h"
 
-// qt
+#include <klocalizedstring.h>
+
+#include <QDebug>
 #include <QLabel>
 #include <QDomDocument>
 #include <QLayout>
@@ -40,13 +42,6 @@
 #include <QScreen>
 #include <QApplication>
 #include <QIcon>
-
-#include <klocalizedstring.h>
-#include <kdebug.h>
-
-//
-// ReportSection method implementations
-//
 
 ReportSection::ReportSection(KoReportDesigner * rptdes)
         : QWidget(rptdes)
@@ -152,7 +147,7 @@ void ReportSection::initFromXML(QDomNode & section)
     m_sectionData->m_height->setValue(h);
 
     h  = POINT_TO_INCH(h) * m_dpiY;
-    //kDebug() << "Section Height: " << h;
+    //qDebug() << "Section Height: " << h;
     m_scene->setSceneRect(0, 0, m_scene->width(), h);
     slotResizeBarDragged(0);
 
@@ -182,7 +177,7 @@ void ReportSection::initFromXML(QDomNode & section)
                 }
             }
         }
-        kWarning() << "Encountered unknown node while parsing section: " << n;
+        qWarning() << "Encountered unknown node while parsing section: " << n;
     }
 }
 
@@ -230,7 +225,7 @@ void ReportSection::slotSceneClicked()
 void ReportSection::slotPropertyChanged(KPropertySet &s, KProperty &p)
 {
     Q_UNUSED(s)
-    //kDebug() << p.name();
+    //qDebug() << p.name();
 
     //Handle Background Color
     if (p.name() == "background-color") {

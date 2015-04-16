@@ -23,18 +23,14 @@
 #include <QDomDocument>
 #include <QMap>
 
-#include <kdebug.h>
-#include <klocalizedstring.h>
-
 #include <KPropertySet>
-
-#include <marble/MarbleWidget.h>
-#include <marble/MapThemeManager.h>
 
 #include "KoReportASyncItemBase.h"
 #include "krpos.h"
 #include "krsize.h"
 #include "MapRenderer.h"
+
+#include <marble/MapThemeManager.h>
 
 class OROImage;
 class OROPicture;

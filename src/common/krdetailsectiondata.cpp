@@ -20,7 +20,7 @@
 #include "krsectiondata.h"
 #include "krreportdata.h"
 
-#include <kdebug.h>
+#include <QDebug>
 
 KRDetailSectionData::KRDetailSectionData(QObject *parent)
  : QObject(parent)
@@ -36,7 +36,7 @@ KRDetailSectionData::KRDetailSectionData(const QDomElement &elemSource, KoReport
     m_pageBreak = BreakNone;
     m_detailSection = 0;
     m_valid = false;
-    //kDebug() << elemSource.tagName();
+    //qDebug() << elemSource.tagName();
     if (elemSource.tagName() != QLatin1String("report:detail")) {
         return;
     }
@@ -101,7 +101,7 @@ KRDetailSectionData::KRDetailSectionData(const QDomElement &elemSource, KoReport
             } else
                 delete sd;
         } else {
-            kWarning() << "While parsing detail section encountered an unknown element: " << elemThis.tagName();
+            qWarning() << "While parsing detail section encountered an unknown element: " << elemThis.tagName();
         }
     }
     

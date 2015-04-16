@@ -22,7 +22,7 @@
 #include "reportsceneview.h"
 #include "KoReportDesigner.h"
 
-#include <kdebug.h>
+#include <QDebug>
 
 ReportSceneView::ReportSceneView(KoReportDesigner * designer, QGraphicsScene *scene, QWidget * parent)
  : QGraphicsView(scene, parent)
@@ -72,7 +72,7 @@ void ReportSceneView::mouseReleaseEvent(QMouseEvent * e)
 
 QSize ReportSceneView::sizeHint() const
 {
-    //kDebug() <<  scene()->width() << "x" << scene()->height();
+    //qDebug() <<  scene()->width() << "x" << scene()->height();
     return QSize(scene()->width(), scene()->height());
 }
 

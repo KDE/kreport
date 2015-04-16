@@ -18,6 +18,8 @@
 */
 
 #include "KoOdtFrameReportPicture.h"
+#include "renderobjects.h"
+
 #include <KoXmlWriter.h>
 #include <KoOdfGraphicStyles.h>
 #include <KoGenStyle.h>
@@ -26,14 +28,11 @@
 #include <KoStore.h>
 #include <KoStoreDevice.h>
 
-#include "renderobjects.h"
-
 #include <kmimetype.h>
-#include <kdebug.h>
 
 #include <QPainter>
 #include <QPicture>
-
+#include <QDebug>
 
 KoOdtFrameReportPicture::KoOdtFrameReportPicture(OROPrimitive *primitive)
     : KoOdtFrameReportPrimitive(primitive)
@@ -85,7 +84,7 @@ bool KoOdtFrameReportPicture::saveData(KoStore* store, KoXmlWriter* manifestWrit
     painter.setRenderHint(QPainter::Antialiasing);
     painter.drawPicture(0, 0, *(picture()->picture()));
     painter.end();
-    kDebug()<<image.format();
+    qDebug()<<image.format();
     bool ok = image.save(&device, "PNG");
     if (ok) {
         const QString mimetype(KMimeType::findByPath(name, 0 , true)->name());

@@ -20,7 +20,6 @@
 #include "common/renderobjects.h"
 #include "common/KoPageFormat.h"
 #include "common/KoUnit.h"
-#include <kdebug.h>
 
 KoReportScreenRenderer::KoReportScreenRenderer()
 {
@@ -209,7 +208,7 @@ bool KoReportScreenRenderer::render(const KoReportRendererContext& context, OROD
             context.painter->restore();
         }
         else {
-            kWarning() << "unrecognized primitive type";
+            qWarning() << "unrecognized primitive type";
         }
     }
 

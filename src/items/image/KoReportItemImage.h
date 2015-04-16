@@ -18,9 +18,6 @@
 #ifndef KOREPORTITEMIMAGE_H
 #define KOREPORTITEMIMAGE_H
 
-#include <kdebug.h>
-#include <klocalizedstring.h>
-
 #include <QRect>
 #include <QPainter>
 #include <QDomDocument>

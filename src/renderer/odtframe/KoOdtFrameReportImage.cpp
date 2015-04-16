@@ -25,7 +25,6 @@
 #include "renderobjects.h"
 
 #include <kmimetype.h>
-#include <kdebug.h>
 
 KoOdtFrameReportImage::KoOdtFrameReportImage(OROImage *primitive)
     : KoOdtFrameReportPrimitive(primitive)

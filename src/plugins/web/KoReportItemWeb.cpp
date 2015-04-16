@@ -19,13 +19,12 @@
 */
 
 #include "KoReportItemWeb.h"
+#include <renderobjects.h>
 
 #include <KProperty>
 #include <KPropertySet>
 
-#include <kdebug.h>
 #include <klocalizedstring.h>
-#include <renderobjects.h>
 
 #include <QGraphicsRectItem>
 #include <QtWebKit>
@@ -34,6 +33,7 @@
 #include <QAction>
 #include <QWidget>
 #include <QApplication>
+#include <QDebug>
 
 KoReportItemWeb::KoReportItemWeb(): m_rendering(false)
 {
@@ -86,8 +86,8 @@ QString KoReportItemWeb::typeName() const
 }
 
 void KoReportItemWeb::loadFinished(bool)
-{       
-    kDebug () << m_rendering;
+{
+    qDebug () << m_rendering;
     if (m_rendering) {
         OROPicture * pic = new OROPicture();
         m_webPage->setViewportSize(m_size.toScene().toSize());
@@ -120,11 +120,11 @@ int KoReportItemWeb::renderSimpleData(OROPage *page, OROSection *section, const 
                                       const QVariant &data, KRScriptHandler *script)
 {
     Q_UNUSED(script);
- 
+
     m_rendering = true;
-    
-    kDebug() << data;
-    
+
+    qDebug() << data;
+
     m_targetPage = page;
     m_targetSection = section;
     m_targetOffset = offset;
@@ -135,7 +135,7 @@ int KoReportItemWeb::renderSimpleData(OROPage *page, OROSection *section, const 
     } else {
         m_webPage->mainFrame()->setHtml(data.toString());
     }
-    
+
     return 0; //Item doesn't stretch the section height
 }
 

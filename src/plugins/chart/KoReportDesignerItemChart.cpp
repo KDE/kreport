@@ -16,20 +16,19 @@
  */
 #include "KoReportDesignerItemChart.h"
 
-#include <QGraphicsScene>
-#include <QGraphicsSceneMouseEvent>
-
 #include <KoReportDesignerItemBase.h>
 #include "KoReportDesigner.h"
-
-#include <QDomDocument>
-#include <QPainter>
-#include <kdebug.h>
-#include <klocalizedstring.h>
 
 #include <KProperty>
 #include <KPropertySet>
 #include <KPropertyEditorView>
+
+#include <klocalizedstring.h>
+
+#include <QGraphicsScene>
+#include <QGraphicsSceneMouseEvent>
+#include <QDomDocument>
+#include <QPainter>
 
 void KoReportDesignerItemChart::init(QGraphicsScene* scene, KoReportDesigner *d)
 {

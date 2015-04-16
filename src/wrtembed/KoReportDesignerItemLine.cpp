@@ -178,7 +178,7 @@ void KoReportDesignerItemLine::mouseMoveEvent(QGraphicsSceneMouseEvent * event)
     int y;
 
     QPointF p = dynamic_cast<ReportScene*>(scene())->gridPoint(event->scenePos());
-    //kDebug() << p;
+    //qDebug() << p;
     x = p.x();
     y = p.y();
 

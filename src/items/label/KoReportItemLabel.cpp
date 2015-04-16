@@ -16,12 +16,12 @@
  */
 #include "KoReportItemLabel.h"
 
+#include "common/renderobjects.h"
+
 #include <KPropertySet>
 
-#include <kdebug.h>
-#include <klocalizedstring.h>
 #include <kglobalsettings.h>
-#include "common/renderobjects.h"
+#include <klocalizedstring.h>
 
 KoReportItemLabel::KoReportItemLabel()
 {
@@ -64,7 +64,7 @@ KoReportItemLabel::KoReportItemLabel(QDomNode & element)
                 m_lineStyle->setValue(QPen(ls.style));
             }
         } else {
-            kWarning() << "while parsing label element encountered unknow element: " << n;
+            qWarning() << "while parsing label element encountered unknow element: " << n;
         }
     }
 }

@@ -15,15 +15,14 @@
  * You should have received a copy of the GNU Lesser General Public
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 #include "reportsectiondetail.h"
 #include "reportsectiondetailgroup.h"
 #include "reportsection.h"
-#include <QDomDocument>
-#include <kdebug.h>
 
-//
-// ReportSectionDetail
-//
+#include <QDomDocument>
+#include <QDebug>
+
 ReportSectionDetail::ReportSectionDetail(KoReportDesigner * rptdes)
         : QWidget(rptdes)
 {
@@ -87,7 +86,7 @@ void ReportSectionDetail::initFromXML(QDomNode & section)
     for (int i = 0; i < nl.count(); i++) {
         node = nl.item(i);
         n = node.nodeName();
-        //kDebug() << n;
+        //qDebug() << n;
         if (n == QLatin1String("pagebreak")) {
             QDomElement eThis = node.toElement();
             if (eThis.attribute(QLatin1String("when")) == QLatin1String("at end"))
@@ -97,11 +96,11 @@ void ReportSectionDetail::initFromXML(QDomNode & section)
             rsdg->initFromXML( node.toElement() );
             insertGroupSection(groupSectionCount(), rsdg);
         } else if (n == QLatin1String("report:section") && node.toElement().attribute(QLatin1String("report:section-type")) == QLatin1String("detail")) {
-            //kDebug() << "Creating detail section";
+            //qDebug() << "Creating detail section";
             m_detail->initFromXML(node);
         } else {
             // unknown element
-            kWarning() << "while parsing section encountered and unknown element: " <<  n;
+            qWarning() << "while parsing section encountered and unknown element: " <<  n;
         }
     }
 

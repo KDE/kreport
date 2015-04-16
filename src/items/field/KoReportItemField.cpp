@@ -194,7 +194,7 @@ void KoReportItemField::setItemDataSource(const QString& t)
     if (m_controlSource->value() != t) {
         m_controlSource->setValue(t);
     }
-    //kDebug() << "Field: " << entityName() << "is" << itemDataSource();
+    //qDebug() << "Field: " << entityName() << "is" << itemDataSource();
 }
 
 KRLineStyleData KoReportItemField::lineStyle()

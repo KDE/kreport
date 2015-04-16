@@ -15,8 +15,10 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "krscriptdebug.h"
-#include <kdebug.h>
+
 #include <kmessagebox.h>
+
+#include <QDebug>
 
 KRScriptDebug::KRScriptDebug(QObject *parent)
         : QObject(parent)
@@ -30,7 +32,7 @@ KRScriptDebug::~KRScriptDebug()
 
 void KRScriptDebug::print(const QString& s)
 {
-    kDebug() << s;
+    qDebug() << s;
 }
 
 void KRScriptDebug::message(const QString &t, const QString &m)

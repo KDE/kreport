@@ -16,25 +16,22 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-
-#include "KoReportDesignerItemBase.h"
 #include "KoReportDesignerItemBarcode.h"
+#include "KoReportDesignerItemBase.h"
 #include "KoReportDesigner.h"
 
-#include <QDomDocument>
-#include <QPainter>
-#include <kdebug.h>
-#include <klocalizedstring.h>
-#include <QGraphicsScene>
-#include <QGraphicsSceneMouseEvent>
 #include "barcodepaint.h"
 
 #include <KProperty>
 #include <KPropertySet>
 #include <KPropertyEditorView>
-//
-// class ReportEntityBarcode
-//
+
+#include <klocalizedstring.h>
+
+#include <QGraphicsScene>
+#include <QGraphicsSceneMouseEvent>
+#include <QDomDocument>
+#include <QPainter>
 
 void KoReportDesignerItemBarcode::init(QGraphicsScene *scene, KoReportDesigner *d)
 {

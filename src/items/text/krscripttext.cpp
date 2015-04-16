@@ -15,9 +15,10 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "krscripttext.h"
+
 #include <QFile>
 #include <QTextStream>
-#include <kdebug.h>
+#include <QDebug>
 
 namespace Scripting
 {
@@ -186,7 +187,7 @@ void Text::setSize(const QSizeF& s)
 void Text::loadFromFile(const QString &fn)
 {
     QFile file(fn);
-    //kDebug() << "Loading from" << fn;
+    //qDebug() << "Loading from" << fn;
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         m_text->m_controlSource->setValue(tr("$Unable to read %1").arg(fn));
         return;

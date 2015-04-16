@@ -16,11 +16,6 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-
-//
-// ReportScene method implementations
-//
-
 #include "reportscene.h"
 #include "common/reportpageoptions.h"
 #include "KoReportDesignerItemRectBase.h"
@@ -31,7 +26,7 @@
 #include <QPainter>
 #include <QScreen>
 #include <QApplication>
-#include <kdebug.h>
+#include <QDebug>
 #include <QGraphicsItem>
 #include <QGraphicsSceneMouseEvent>
 
@@ -97,7 +92,7 @@ void ReportScene::drawBackground(QPainter* painter, const QRectF & clip)
         QPen pen = painter->pen();
         painter->setPen(Qt::lightGray);
 
-        //kDebug() << "dpix" << KoDpi::dpiX() << "dpiy" << KoDpi::dpiY() << "mayorx:" << majorx << "majory" << majory << "pix:" << pixel_incrementx << "piy:" << pixel_incrementy;
+        //qDebug() << "dpix" << KoDpi::dpiX() << "dpiy" << KoDpi::dpiY() << "mayorx:" << majorx << "majory" << majory << "pix:" << pixel_incrementx << "piy:" << pixel_incrementy;
 
         QVector<QLine> lines;
         QVector<QPoint> points;

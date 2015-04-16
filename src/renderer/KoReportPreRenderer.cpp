@@ -29,11 +29,10 @@
 #include "common/KoPageFormat.h"
 #include "scripting/krscripthandler.h"
 
-#include <kdebug.h>
-
 #include <QFontMetrics>
 #include <QScreen>
 #include <QApplication>
+#include <QDebug>
 
 KoReportPreRendererPrivate::KoReportPreRendererPrivate()
 {
@@ -62,7 +61,7 @@ KoReportPreRendererPrivate::~KoReportPreRendererPrivate()
 
 void KoReportPreRendererPrivate::createNewPage()
 {
-    //kDebug();
+    //qDebug();
     if (m_pageCounter > 0)
         finishCurPage();
 
@@ -107,7 +106,7 @@ qreal KoReportPreRendererPrivate::finishCurPageSize(bool lastPage)
     else if (m_reportData->m_pageFooterAny)
         retval = renderSectionSize(* (m_reportData->m_pageFooterAny));
 
-    //kDebug() << retval;
+    //qDebug() << retval;
     return retval;
 }
 
@@ -116,26 +115,26 @@ qreal KoReportPreRendererPrivate::finishCurPage(bool lastPage)
 
     qreal offset = m_maxHeight - m_bottomMargin;
     qreal retval = 0.0;
-    //kDebug() << offset;
+    //qDebug() << offset;
 
     if (lastPage && m_reportData->m_pageFooterLast) {
-        //kDebug() << "Last Footer";
+        //qDebug() << "Last Footer";
         m_yOffset = offset - renderSectionSize(* (m_reportData->m_pageFooterLast));
         retval = renderSection(* (m_reportData->m_pageFooterLast));
     } else if (m_pageCounter == 1 && m_reportData->m_pageFooterFirst) {
-        //kDebug() << "First Footer";
+        //qDebug() << "First Footer";
         m_yOffset = offset - renderSectionSize(* (m_reportData->m_pageFooterFirst));
         retval = renderSection(* (m_reportData->m_pageFooterFirst));
     } else if ((m_pageCounter % 2) == 1 && m_reportData->m_pageFooterOdd) {
-        //kDebug() << "Odd Footer";
+        //qDebug() << "Odd Footer";
         m_yOffset = offset - renderSectionSize(* (m_reportData->m_pageFooterOdd));
         retval = renderSection(* (m_reportData->m_pageFooterOdd));
     } else if ((m_pageCounter % 2) == 0 && m_reportData->m_pageFooterEven) {
-        //kDebug() << "Even Footer";
+        //qDebug() << "Even Footer";
         m_yOffset = offset - renderSectionSize(* (m_reportData->m_pageFooterEven));
         retval = renderSection(* (m_reportData->m_pageFooterEven));
     } else if (m_reportData->m_pageFooterAny) {
-        //kDebug() << "Any Footer";
+        //qDebug() << "Any Footer";
         m_yOffset = offset - renderSectionSize(* (m_reportData->m_pageFooterAny));
         retval = renderSection(* (m_reportData->m_pageFooterAny));
     }
@@ -155,7 +154,7 @@ void KoReportPreRendererPrivate::renderDetailSection(KRDetailSectionData & detai
             bool status = m_kodata->moveFirst();
             m_recordCount = m_kodata->recordCount();
 
-            //kDebug() << "Record Count:" << m_recordCount;
+            //qDebug() << "Record Count:" << m_recordCount;
 
             for (int i = 0; i < (int) detailData.m_groupList.count(); ++i) {
                 grp = detailData.m_groupList[i];
@@ -178,9 +177,9 @@ void KoReportPreRendererPrivate::renderDetailSection(KRDetailSectionData & detai
 
             while (status) {
                 long l = m_kodata->at();
-                //kDebug() << "At:" << l << "Y:" << m_yOffset << "Max Height:" << m_maxHeight;
+                //qDebug() << "At:" << l << "Y:" << m_yOffset << "Max Height:" << m_maxHeight;
                 if (renderSectionSize(*(detailData.m_detailSection)) + finishCurPageSize((l + 1 == m_recordCount)) + m_bottomMargin + m_yOffset >= m_maxHeight) {
-                    //kDebug() << "Next section is too big for this page";
+                    //qDebug() << "Next section is too big for this page";
                     if (l > 0) {
                         m_kodata->movePrevious();
                         createNewPage();
@@ -312,7 +311,7 @@ qreal KoReportPreRendererPrivate::renderSection(const KRSectionData & sectionDat
     qreal sectionHeight = POINT_TO_INCH(sectionData.height()) * srn->logicalDotsPerInchX();
 
     int itemHeight = 0;
-    //kDebug() << "Name: " << sectionData.name() << " Height: " << sectionHeight
+    //qDebug() << "Name: " << sectionData.name() << " Height: " << sectionHeight
     //         << "Objects: " << sectionData.objects().count();
     emit(renderingSection(const_cast<KRSectionData*>(&sectionData), m_page, QPointF(m_leftMargin, m_yOffset)));
 
@@ -342,10 +341,10 @@ qreal KoReportPreRendererPrivate::renderSection(const KRSectionData & sectionDat
         } else {
             KoReportASyncItemBase *async_ob = qobject_cast<KoReportASyncItemBase*>(ob);
             if (async_ob){
-                //kDebug() << "async object";
+                //qDebug() << "async object";
                 asyncManager->addItem(async_ob, m_page, sec, offset, itemData, m_scriptHandler);
             } else {
-                //kDebug() << "sync object";
+                //qDebug() << "sync object";
                 itemHeight = ob->renderSimpleData(m_page, sec, offset, itemData, m_scriptHandler);
             }
         }
@@ -381,7 +380,7 @@ void KoReportPreRendererPrivate::initEngine()
 
 void KoReportPreRendererPrivate::asyncItemsFinished()
 {
-    //kDebug() << "Finished rendering async items";
+    //qDebug() << "Finished rendering async items";
     delete asyncManager;
 }
 
@@ -420,13 +419,13 @@ ORODocument* KoReportPreRenderer::generate()
             return 0;
     }
 
-    //kDebug() << "Creating Document";
+    //qDebug() << "Creating Document";
     d->m_document = new ORODocument(d->m_reportData->m_title);
 
     d->m_pageCounter  = 0;
     d->m_yOffset      = 0.0;
 
-    //kDebug() << "Calculating Margins";
+    //qDebug() << "Calculating Margins";
     if (!label.isNull()) {
         if (d->m_reportData->page.isPortrait()) {
             d->m_topMargin = (label.startY() / 100.0);
@@ -444,10 +443,10 @@ ORODocument* KoReportPreRenderer::generate()
         d->m_bottomMargin = d->m_reportData->page.getMarginBottom();
         d->m_rightMargin  = d->m_reportData->page.getMarginRight();
         d->m_leftMargin   = d->m_reportData->page.getMarginLeft();
-        //kDebug() << "Margins:" << d->m_topMargin << d->m_bottomMargin << d->m_rightMargin << d->m_leftMargin;
+        //qDebug() << "Margins:" << d->m_topMargin << d->m_bottomMargin << d->m_rightMargin << d->m_leftMargin;
     }
 
-    //kDebug() << "Calculating Page Size";
+    //qDebug() << "Calculating Page Size";
     ReportPageOptions rpo(d->m_reportData->page);
     // This should reflect the information of the report page size
     if (d->m_reportData->page.getPageSize() == QLatin1String("Custom")) {
@@ -475,7 +474,7 @@ ORODocument* KoReportPreRenderer::generate()
         d->m_maxHeight = tmp;
     }
 
-    //kDebug() << "Page Size:" << d->m_maxWidth << d->m_maxHeight;
+    //qDebug() << "Page Size:" << d->m_maxWidth << d->m_maxHeight;
 
     d->m_document->setPageOptions(rpo);
     d->m_kodata->setSorting(d->m_reportData->m_detailSection->m_sortedFields);
@@ -612,7 +611,7 @@ bool KoReportPreRenderer::setDom(const QDomElement &docReport)
         d->m_valid = false;
 
         if (docReport.tagName() != QLatin1String("report:content")) {
-            kWarning() << "report schema is invalid";
+            qWarning() << "report schema is invalid";
             return false;
         }
 
@@ -631,7 +630,7 @@ bool KoReportPreRenderer::isValid() const
 
 void KoReportPreRenderer::registerScriptObject(QObject* obj, const QString& name)
 {
-    //kDebug() << name;
+    //qDebug() << name;
     m_scriptObjects[name] = obj;
 }
 

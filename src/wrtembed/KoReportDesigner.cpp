@@ -17,7 +17,6 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-//KReport Includes
 #include "KoReportDesigner.h"
 #include "reportsection.h"
 #include "reportscene.h"
@@ -35,7 +34,12 @@
 #include "common/KoReportPluginInterface.h"
 #include "common/KoReportPluginManager.h"
 
-//Qt Includes
+#include <KPropertyEditorView>
+
+#include <kross/core/manager.h>
+
+#include <ktoggleaction.h>
+
 #include <QLayout>
 #include <QDomDocument>
 #include <QVBoxLayout>
@@ -46,17 +50,7 @@
 #include <QPointer>
 #include <QIcon>
 #include <QAction>
-
-//KDE includes
-//#include <kstandardguiitem.h>
-//#include <kguiitem.h>
-//#include <kstandardaction.h>
-//#include <klocale.h>
-//#include <kdebug.h>
-#include <ktoggleaction.h>
-
-#include <KPropertyEditorView>
-#include <kross/core/manager.h>
+#include <QDebug>
 
 //! Also add public method for runtime?
 const char ns[] = "http://kexi-project.org/report/2.0";
@@ -209,9 +203,9 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
 
     if (data.tagName() != QLatin1String("report:content")) {
         // arg we got an xml file but not one i know of
-        kWarning() << "root element was not <report:content>";
+        qWarning() << "root element was not <report:content>";
     }
-    //kDebug() << data.text();
+    //qDebug() << data.text();
     deleteDetail();
 
     QDomNodeList nlist = data.childNodes();
@@ -222,7 +216,7 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
         // at this level all the children we get should be Elements
         if (it.isElement()) {
             QString n = it.nodeName().toLower();
-            //kDebug() << n;
+            //qDebug() << n;
             if (n == QLatin1String("report:title")) {
                 setReportTitle(it.firstChild().nodeValue());
             } else if (n == QLatin1String("report:script")) {
@@ -264,7 +258,7 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
                     sec = sectionlist.item(s);
                     if (sec.isElement()) {
                         QString sn = sec.nodeName().toLower();
-                        //kDebug() << sn;
+                        //qDebug() << sn;
                         if (sn == QLatin1String("report:section")) {
                             QString sectiontype = sec.toElement().attribute(QLatin1String("report:section-type"));
                             if (section(KRSectionData::sectionTypeFromString(sectiontype)) == 0) {
@@ -277,12 +271,12 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
                             setDetail(rsd);
                         }
                     } else {
-                        kWarning() << "Encountered an unknown Element: "  << n;
+                        qWarning() << "Encountered an unknown Element: "  << n;
                     }
                 }
             }
         } else {
-            kWarning() << "Encountered a child node of root that is not an Element";
+            qWarning() << "Encountered a child node of root that is not an Element";
         }
     }
     this->slotPageButton_Pressed();
@@ -377,7 +371,7 @@ void KoReportDesigner::slotSectionEditor()
 
 void KoReportDesigner::setReportData(KoReportData* kodata)
 {
-    //kDebug();
+    //qDebug();
     if (kodata) {
         m_kordata = kodata;
         slotPageButton_Pressed();
@@ -494,7 +488,7 @@ void KoReportDesigner::insertSection(KRSectionData::Section s)
         }
         if (s > KRSectionData::ReportHeader)
             idx++;
-        //kDebug() << idx;
+        //qDebug() << idx;
         ReportSection *rs = new ReportSection(this);
         d->vboxlayout->insertWidget(idx, rs);
 
@@ -904,7 +898,7 @@ void KoReportDesigner::sectionMouseReleaseEvent(ReportSceneView * v, QMouseEvent
                     }
                 }
                 else {
-                    kWarning() << "attempted to insert an unknown item";
+                    qWarning() << "attempted to insert an unknown item";
                 }
             }
             if (item) {
@@ -1063,7 +1057,7 @@ void KoReportDesigner::slotEditPaste(QGraphicsScene * canvas)
         for (int i = 0; i < m_sectionData->copy_list.count(); i++) {
             KoReportItemBase *obj = dynamic_cast<KoReportItemBase*>(m_sectionData->copy_list[i]);
             const QString type = obj ? obj->typeName() : QLatin1String("object");
-            //kDebug() << type;
+            //qDebug() << type;
             KoReportDesignerItemBase *ent = (m_sectionData->copy_list[i])->clone();
             KoReportItemBase *new_obj = dynamic_cast<KoReportItemBase*>(ent);
             new_obj->setEntityName(suggestEntityName(type));

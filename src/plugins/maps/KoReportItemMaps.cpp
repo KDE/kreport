@@ -16,23 +16,17 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "KoReportItemMaps.h"
+#include <renderobjects.h>
+
 #include <KProperty>
 #include <KPropertySet>
-#include <kdebug.h>
+
 #include <klocalizedstring.h>
-#include <QBuffer>
 #include <kcodecs.h>
-#include <renderobjects.h>
+
 #include <QPixmap>
-#include <sys/socket.h>
 #include <QLabel>
 #include <QStringList>
-
-
-
-
-#define myDebug() if (0) kDebug(44021)
-
 
 KoReportItemMaps::KoReportItemMaps(QDomNode & element)
     : m_longtitude(0)

@@ -15,12 +15,13 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "krreportdata.h"
-#include <kdebug.h>
 #include "KoUnit.h"
-#include <QScreen>
-#include <QApplication>
 #include "krdetailsectiondata.h"
 #include "KoReportItemBase.h"
+
+#include <QApplication>
+#include <QScreen>
+#include <QDebug>
 
 void KoReportReportData::init()
 {
@@ -43,9 +44,9 @@ KoReportReportData::KoReportReportData(const QDomElement & elemSource, QObject *
 {
     m_valid = false;
     init();
-    //kDebug();
+    //qDebug();
     if (elemSource.tagName() != QLatin1String("report:content")) {
-        kWarning() << "QDomElement is not <report:content> tag"
+        qWarning() << "QDomElement is not <report:content> tag"
                    << elemSource.text();
         return;
     }
@@ -91,14 +92,14 @@ KoReportReportData::KoReportReportData(const QDomElement & elemSource, QObject *
                 sec = sectionlist.item(s);
                 if (sec.isElement()) {
                     QString sn = sec.nodeName().toLower();
-                    //kDebug() << sn;
+                    //qDebug() << sn;
                     if (sn == QLatin1String("report:section")) {
                         KRSectionData * sd = new KRSectionData(sec.toElement(), this);
                         if (!sd->isValid()) {
-                            kDebug() << "Invalid section";
+                            qDebug() << "Invalid section";
                             delete sd;
                         } else {
-                            //kDebug() << "Adding section of type " << sd->type();
+                            //qDebug() << "Adding section of type " << sd->type();
                             switch (sd->type()) {
                             case KRSectionData::PageHeaderFirst:
                                 m_pageHeaderFirst = sd;
@@ -147,12 +148,12 @@ KoReportReportData::KoReportReportData(const QDomElement & elemSource, QObject *
                         if (dsd->isValid()) {
                             m_detailSection = dsd;
                         } else {
-                            kDebug() << "Invalid detail section";
+                            qDebug() << "Invalid detail section";
                             delete dsd;
                         }
                     }
                 } else {
-                    kWarning() << "Encountered an unknown Element: "  << elemThis.tagName();
+                    qWarning() << "Encountered an unknown Element: "  << elemThis.tagName();
                 }
             }
         }
@@ -177,7 +178,7 @@ QList<KoReportItemBase*> KoReportReportData::objects() const
     }
 
     if (m_detailSection) {
-        //kDebug() << "Number of groups: " << m_detailSection->m_groupList.count();
+        //qDebug() << "Number of groups: " << m_detailSection->m_groupList.count();
         foreach(ORDetailGroupSectionData* g, m_detailSection->m_groupList) {
             if (g->m_groupHeader) {
                 obs << g->m_groupHeader->objects();
@@ -190,9 +191,9 @@ QList<KoReportItemBase*> KoReportReportData::objects() const
             obs << m_detailSection->m_detailSection->objects();
     }
 
-    /*kDebug() << "Object List:";
+    /*qDebug() << "Object List:";
     foreach(KoReportItemBase* o, obs) {
-        kDebug() << o->entityName();
+        qDebug() << o->entityName();
     }*/
     return obs;
 }
@@ -220,7 +221,7 @@ QList<KRSectionData*> KoReportReportData::sections() const
     }
 
     if (m_detailSection) {
-        //kDebug() << "Number of groups: " << m_detailSection->m_groupList.count();
+        //qDebug() << "Number of groups: " << m_detailSection->m_groupList.count();
         foreach(ORDetailGroupSectionData* g, m_detailSection->m_groupList) {
             if (g->m_groupHeader) {
                 secs << g->m_groupHeader;

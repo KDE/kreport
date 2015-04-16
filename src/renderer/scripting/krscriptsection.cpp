@@ -21,7 +21,7 @@
 #include "KoReportPluginManager.h"
 #include "KoReportItemLine.h"
 
-#include <kdebug.h>
+#include <QDebug>
 
 namespace Scripting
 {
@@ -43,7 +43,7 @@ QColor Section::backgroundColor()
 
 void   Section::setBackgroundColor(const QColor &c)
 {
-    //kDebug() << c.name();
+    //qDebug() << c.name();
     m_section->m_backgroundColor->setValue(c);
 }
 
@@ -77,7 +77,7 @@ QObject* Section::objectByNumber(int i)
             }
         }
         else {
-            kWarning() << "Encountered unknown node while parsing section: " << m_section->m_objects[i]->typeName();
+            qWarning() << "Encountered unknown node while parsing section: " << m_section->m_objects[i]->typeName();
         }
     }
 

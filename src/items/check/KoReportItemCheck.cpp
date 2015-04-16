@@ -133,7 +133,7 @@ int KoReportItemCheck::renderSimpleData(OROPage *page, OROSection *section, cons
     bool v = false;
     QString cs = itemDataSource();
 
-    //kDebug() << "ControlSource:" << cs;
+    //qDebug() << "ControlSource:" << cs;
     if (!cs.isEmpty()) {
         if (cs.left(1) == QLatin1String("=") && script) {
             str = script->evaluate(cs.mid(1)).toString();
@@ -143,7 +143,7 @@ int KoReportItemCheck::renderSimpleData(OROPage *page, OROSection *section, cons
 
         str = str.toLower();
 
-        //kDebug() << "Check Value:" << str;
+        //qDebug() << "Check Value:" << str;
         if (str == QLatin1String("t") || str == QLatin1String("y") || str == QLatin1String("true") || str == QLatin1String("1"))
             v = true;
 

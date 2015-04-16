@@ -49,7 +49,7 @@ KoReportItemImage::KoReportItemImage(QDomNode & element)
 
             setInlineImageData(node.firstChild().nodeValue().toLatin1());
         } else {
-            kWarning() << "while parsing image element encountered unknow element: " << n;
+            qWarning() << "while parsing image element encountered unknow element: " << n;
         }
     }
 

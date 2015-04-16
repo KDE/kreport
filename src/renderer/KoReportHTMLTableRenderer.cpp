@@ -19,15 +19,15 @@
 #include "KoReportHTMLTableRenderer.h"
 #include "common/renderobjects.h"
 
-#include <kdebug.h>
+#include <ktemporaryfile.h>
+
+#include <QDebug>
 #include <QDir>
 #include <QPainter>
 #include <QDomDocument>
 #include <QRectF>
 #include <QString>
 #include <QFont>
-
-#include <ktemporaryfile.h>
 
 //
 // KRHtmlRender
@@ -48,7 +48,7 @@ bool KoReportHTMLTableRenderer::render(const KoReportRendererContext& context, O
     Q_UNUSED(page);
     KTemporaryFile tempHtmlFile; // auto removed by default on destruction
     if (!tempHtmlFile.open()) {
-        kWarning() << "Couldn't create temporary file to write into";
+        qWarning() << "Couldn't create temporary file to write into";
         return false;
     }
 
@@ -128,14 +128,14 @@ QString KoReportHTMLTableRenderer::renderTable(ORODocument *document)
                           tb->text() +
                           QLatin1String("</td>\n");
                 } else if (prim->type() == OROImage::Image) {
-                    //kDebug() << "Saving an image";
+                    //qDebug() << "Saving an image";
                     OROImage * im = (OROImage*) prim;
                     tr += QLatin1String("<td>"
                           "<img src=\"./") + m_actualDirName + QLatin1String("/object") + QString::number(s) + QString::number(i) + QLatin1String(".png\"></img>"
                           "</td>\n");
                     im->image().save(m_tempDirName + QLatin1String("/object") + QString::number(s) + QString::number(i) + QLatin1String(".png"));
                 } else if (prim->type() == OROPicture::Picture) {
-                    //kDebug() << "Saving a picture";
+                    //qDebug() << "Saving a picture";
                     OROPicture * im = (OROPicture*) prim;
 
                     tr += QLatin1String("<td>"
@@ -146,7 +146,7 @@ QString KoReportHTMLTableRenderer::renderTable(ORODocument *document)
                     im->picture()->play(&painter);
                     image.save(m_tempDirName + QLatin1String("/object") + QString::number(s) + QString::number(i) + QLatin1String(".png"));
                 } else {
-                    kWarning() << "unhandled primitive type";
+                    qWarning() << "unhandled primitive type";
                 }
             }
             tr += QLatin1String("</tr>\n");

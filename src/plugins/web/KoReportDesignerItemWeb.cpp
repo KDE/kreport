@@ -19,9 +19,9 @@
 */
 
 #include "KoReportDesignerItemWeb.h"
-
 #include <KoReportDesignerItemBase.h>
 #include <KoReportDesigner.h>
+
 #include <KProperty>
 #include <KPropertySet>
 #include <KPropertyEditorView>
@@ -36,11 +36,11 @@
 #include <QBuffer>
 #include <QDomDocument>
 #include <QPainter>
-#include <kdebug.h>
+#include <QDebug>
 
 void KoReportDesignerItemWeb::init(QGraphicsScene *scene, KoReportDesigner *d) //done,compared,add function if necessary
 {
-    kDebug();
+    qDebug();
     if (scene)
         scene->addItem(this);
 

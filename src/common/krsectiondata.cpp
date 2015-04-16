@@ -19,12 +19,13 @@
 
 #include "krsectiondata.h"
 
-#include <KPropertySet>
-#include <QColor>
-
 #include "KoReportPluginInterface.h"
 #include "KoReportPluginManager.h"
 #include "KoReportItemLine.h"
+
+#include <KPropertySet>
+
+#include <QColor>
 
 KRSectionData::KRSectionData(QObject* parent)
  : QObject(parent)
@@ -76,7 +77,7 @@ KRSectionData::KRSectionData(const QDomElement & elemSource, KoReportReportData*
                 }
             }
         }
-        kWarning() << "While parsing section encountered an unknown element: " << n;
+        qWarning() << "While parsing section encountered an unknown element: " << n;
     }
     qSort(m_objects.begin(), m_objects.end(), zLessThan);
     m_valid = true;
@@ -178,7 +179,7 @@ KRSectionData::Section KRSectionData::sectionTypeFromString(const QString& s)
 {
 //! @todo use QMap
     KRSectionData::Section sec;
-    //kDebug() << "Determining section type for " << s;
+    //qDebug() << "Determining section type for " << s;
     if (s == QLatin1String("header-page-any"))
         sec = KRSectionData::PageHeaderAny;
     else if (s == QLatin1String("header-page-even"))

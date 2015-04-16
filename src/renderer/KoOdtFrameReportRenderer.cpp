@@ -25,8 +25,6 @@
 #include "odtframe/KoOdtFrameReportCheckBox.h"
 #include "common/renderobjects.h"
 
-#include <kdebug.h>
-
 KoOdtFrameReportRenderer::KoOdtFrameReportRenderer()
 {
 
@@ -66,7 +64,7 @@ bool KoOdtFrameReportRenderer::render(const KoReportRendererContext& context, OR
                 sp->setUID(uid++);
                 doc.addPrimitive(sp);
             } else {
-                kWarning() << "unhandled primitive type" << prim->type();
+                qWarning() << "unhandled primitive type" << prim->type();
             }
         }
     }

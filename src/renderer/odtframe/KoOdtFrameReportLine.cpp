@@ -18,6 +18,8 @@
 */
 
 #include "KoOdtFrameReportLine.h"
+#include "renderobjects.h"
+
 #include <KoXmlWriter.h>
 #include <KoDpi.h>
 #include <KoOdfGraphicStyles.h>
@@ -25,15 +27,12 @@
 #include <KoGenStyles.h>
 #include <KoUnit.h>
 
-#include "renderobjects.h"
-
 #include <QColor>
 #include <QFont>
 #include <QPainter>
 #include <QPen>
 #include <QImage>
-
-#include <kdebug.h>
+#include <QDebug>
 
 KoOdtFrameReportLine::KoOdtFrameReportLine(OROLine *primitive)
     : KoOdtFrameReportPrimitive(primitive)
@@ -75,7 +74,7 @@ void KoOdtFrameReportLine::createStyle(KoGenStyles &coll)
     KoOdfGraphicStyles::saveOdfStrokeStyle(gs, coll, pen);
 
     m_frameStyleName = coll.insert(gs, "F");
-    //kDebug()<<coll;
+    //qDebug()<<coll;
 }
 
 void KoOdtFrameReportLine::createBody(KoXmlWriter *bodyWriter) const
@@ -88,7 +87,7 @@ void KoOdtFrameReportLine::createBody(KoXmlWriter *bodyWriter) const
     qreal width = ex - sx;
     qreal height = ey - sy;
 
-    //kDebug()<<line()->startPoint()<<line()->endPoint();
+    //qDebug()<<line()->startPoint()<<line()->endPoint();
 
     bodyWriter->startElement("draw:rect");
     bodyWriter->addAttribute("draw:id", itemName());

@@ -18,7 +18,6 @@
 
 #include "KoReportDesignerItemBase.h"
 
-// qt
 #include <QPainter>
 #include <QString>
 #include <QLabel>
@@ -30,7 +29,6 @@
 #include <QCheckBox>
 #include <QRadioButton>
 #include <QSettings>
-#include <kdebug.h>
 
 #include <KPropertySet>
 #include <KPropertyEditorView>

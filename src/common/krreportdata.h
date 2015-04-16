@@ -19,7 +19,6 @@
 #ifndef KRREPORTDATA_H
 #define KRREPORTDATA_H
 
-#include <QObject>
 #include <QDomDocument>
 
 #include "kreport_export.h"

@@ -72,7 +72,7 @@ QObject* Report::objectByName(const QString &n)
                     }
                 }
                 else {
-                    kWarning() << "Encountered unknown node while parsing section: " << o->typeName();
+                    qWarning() << "Encountered unknown node while parsing section: " << o->typeName();
                 }
             }
         }

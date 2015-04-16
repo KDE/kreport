@@ -22,7 +22,7 @@
 #include "ods/KoSimpleOdsSheet.h"
 #include "common/renderobjects.h"
 
-#include <kdebug.h>
+#include <QDebug>
 
 KoReportKSpreadRenderer::KoReportKSpreadRenderer()
 {
@@ -39,7 +39,7 @@ bool KoReportKSpreadRenderer::render(const KoReportRendererContext& context, ORO
     KoSimpleOdsDocument *doc = new KoSimpleOdsDocument();
     KoSimpleOdsSheet *sht = new KoSimpleOdsSheet();
 
-    //kDebug() << "Setting name to:" << document->title();
+    //qDebug() << "Setting name to:" << document->title();
     sht->setName(document->title());
 
     bool renderedPageHeader = false;
@@ -75,7 +75,7 @@ bool KoReportKSpreadRenderer::render(const KoReportRendererContext& context, ORO
                 /*
                 else if (prim->type() == OROImage::Image)
                 {
-                 kDebug() << "Saving an image";
+                 qDebug() << "Saving an image";
                  OROImage * im = ( OROImage* ) prim;
                  tr += "<td>"
                        "<img src=\"./" + fi.fileName() + "/object" + QString::number(s) + QString::number(i) + ".png\"></img>"
@@ -84,7 +84,7 @@ bool KoReportKSpreadRenderer::render(const KoReportRendererContext& context, ORO
                 }
                 else if (prim->type() == OROPicture::Picture)
                 {
-                 kDebug() << "Saving a picture";
+                 qDebug() << "Saving a picture";
                  OROPicture * im = ( OROPicture* ) prim;
 
                  tr += "<td>"
@@ -96,7 +96,7 @@ bool KoReportKSpreadRenderer::render(const KoReportRendererContext& context, ORO
                  image.save(saveDir + "/object" + QString::number(s) + QString::number(i) + ".png");
                 }*/
                 else {
-                    kWarning() << "unhandled primitive type";
+                    qWarning() << "unhandled primitive type";
                 }
             }
         }

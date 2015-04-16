@@ -28,14 +28,13 @@
 
 #include "renderobjects.h"
 
+#include <kmimetype.h>
+
 #include <QColor>
 #include <QPainter>
 #include <QPen>
 #include <QImage>
-
-#include <kmimetype.h>
-
-#include <kdebug.h>
+#include <QDebug>
 
 KoOdtFrameReportCheckBox::KoOdtFrameReportCheckBox(OROCheck *primitive)
     : KoOdtFrameReportPrimitive(primitive)
@@ -173,9 +172,9 @@ bool KoOdtFrameReportCheckBox::saveData(KoStore* store, KoXmlWriter* manifestWri
     if (ok) {
         const QString mimetype(KMimeType::findByPath(name, 0 , true)->name());
         manifestWriter->addManifestEntry(name,  mimetype);
-        //kDebug() << "manifest:" << mimetype;
+        //qDebug() << "manifest:" << mimetype;
     }
     bool cl = store->close();
-    //kDebug()<<ok<<cl;
+    //qDebug()<<ok<<cl;
     return ok && cl;
 }

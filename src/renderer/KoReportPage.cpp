@@ -17,22 +17,22 @@
 
 #include "KoReportPage.h"
 
+#include "common/KoPageFormat.h"
+#include "common/KoUnit.h"
+#include "common/renderobjects.h"
+
 #include <QWidget>
-#include <kdebug.h>
+#include <QDebug>
 #include <QColor>
 #include <QPixmap>
 #include <QPainter>
 #include <QTimer>
 
-#include "common/KoPageFormat.h"
-#include "common/KoUnit.h"
-#include "common/renderobjects.h"
-
 KoReportPage::KoReportPage(QWidget *parent, ORODocument *document)
         : QObject(parent), QGraphicsRectItem()
 {
     //TODO setAttribute(Qt::WA_NoBackground);
-    //kDebug() << "CREATED PAGE";
+    //qDebug() << "CREATED PAGE";
     m_reportDocument = document;
     m_page = 0;
     int pageWidth = 0;
@@ -53,7 +53,7 @@ KoReportPage::KoReportPage(QWidget *parent, ORODocument *document)
         }
     }
     setRect(0,0,pageWidth, pageHeight);
-    //kDebug() << "PAGE IS " << pageWidth << "x" << pageHeight;
+    //qDebug() << "PAGE IS " << pageWidth << "x" << pageHeight;
     m_pixmap = new QPixmap(pageWidth, pageHeight);
     m_renderer = m_factory.createInstance(QLatin1String("screen"));
     connect(m_reportDocument, SIGNAL(updated(int)), this, SLOT(pageUpdated(int)));
@@ -94,10 +94,10 @@ void KoReportPage::renderPage(int page)
 
 void KoReportPage::pageUpdated(int pageNo)
 {
-    //kDebug() << pageNo << m_page;
+    //qDebug() << pageNo << m_page;
     //Refresh this page if it changes
     if (pageNo == m_page) {
-        //kDebug() << "Current page updated";
+        //qDebug() << "Current page updated";
         m_renderTimer->start(100);
     }
 }

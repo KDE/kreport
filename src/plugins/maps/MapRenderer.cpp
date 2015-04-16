@@ -15,24 +15,21 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
-#include <QObject>
-#include <QPainter>
+
+#include "MapRenderer.h"
+#include "KoReportItemMaps.h"
+#include <renderobjects.h>
 
 #include <marble/MarbleWidget.h>
 #include <marble/MarbleGlobal.h>
 #include <marble/MarbleModel.h>
 #include "marble/HttpDownloadManager.h"
 #include <marble/AbstractFloatItem.h>
-#include <libs/koreport/common/renderobjects.h>
 
-#include "MapRenderer.h"
-#include "KoReportItemMaps.h"
+#include <QPainter>
 #include <QSize>
 #include <QImage>
-
-#define myDebug() kDebug(44021)
-
-
+#include <QDebug>
 
 MapRenderer::MapRenderer(QObject* parent)
     : QObject(parent)
@@ -78,9 +75,9 @@ void MapRenderer::renderJob(KoReportItemMaps* reportItemMaps)
 void MapRenderer::onRenderStatusChange(int renderStatus)
 {
     if(m_currentJob){
-        myDebug() << m_marble.renderStatus() << "|" << renderStatus;
+        qDebug() << m_marble.renderStatus() << "|" << renderStatus;
         Marble::RenderStatus status = static_cast<Marble::RenderStatus>(renderStatus);
-        myDebug()
+        qDebug()
             << this
             << m_currentJob
             << m_currentJob->longtitude()
@@ -96,14 +93,14 @@ void MapRenderer::onRenderStatusChange(int renderStatus)
 
 void MapRenderer::downloadFinished()
 {
-    myDebug() << "job:" << m_currentJob
+    qDebug() << "job:" << m_currentJob
     << "(" << m_currentJob->latitude() << "," << m_currentJob->longtitude() << ")";
 }
 
 void MapRenderer::downloadProgres(int active, int queued)
 {
     if(m_currentJob){
-        myDebug() << "job:" << m_currentJob
+        qDebug() << "job:" << m_currentJob
         << "(" << m_currentJob->latitude() << "," << m_currentJob->longtitude() << ")"
         << "active/queued:" << active << "/" << queued;
     }

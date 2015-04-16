@@ -19,21 +19,19 @@
 
 #include "KoOdtFrameReportDocument.h"
 #include "KoOdtFrameReportPrimitive.h"
+#include "renderobjects.h"
+
 #include <KoOdfWriteStore.h>
 #include <KoXmlWriter.h>
 #include <KoStore.h>
 #include <KoOdfGraphicStyles.h>
 #include <KoGenStyles.h>
 #include <KoGenStyle.h>
-
 #include <KoDpi.h>
-
-#include "renderobjects.h"
 
 #include <QLayout>
 #include <QVarLengthArray>
-
-#include <kdebug.h>
+#include <QDebug>
 
 KoOdtFrameReportDocument::KoOdtFrameReportDocument()
     : manifestWriter(0)
@@ -70,7 +68,7 @@ QFile::FileError KoOdtFrameReportDocument::saveDocument(const QString& path)
     KoStore *store = KoStore::createStore(path, KoStore::Write,
                                     "application/vnd.oasis.opendocument.text", KoStore::Zip);
     if (!store) {
-        kWarning() << "Couldn't open the requested file.";
+        qWarning() << "Couldn't open the requested file.";
         return QFile::OpenError;
     }
 
@@ -85,7 +83,7 @@ QFile::FileError KoOdtFrameReportDocument::saveDocument(const QString& path)
             p->saveData(store, manifestWriter);
         }
     }
-    //kDebug()<<"data saved";
+    //qDebug()<<"data saved";
     KoGenStyles coll;
     createStyles(coll); // create basic styles
     bool ok = createContent(&oasisStore, coll);
@@ -110,8 +108,8 @@ void KoOdtFrameReportDocument::createStyles(KoGenStyles &coll)
     qreal rightMargin = m_pageOptions.getMarginRight() / KoDpi::dpiX();
     QString orientation = m_pageOptions.isPortrait() ? "portrait" : "landscape";
 
-    //kDebug()<<"Page:"<<pw<<ph<<orientation;
-    //kDebug()<<"Margin:"<<topMargin<<bottomMargin<<leftMargin<<rightMargin;
+    //qDebug()<<"Page:"<<pw<<ph<<orientation;
+    //qDebug()<<"Margin:"<<topMargin<<bottomMargin<<leftMargin<<rightMargin;
     KoGenStyle page(KoGenStyle::PageLayoutStyle, "page-layout");
     page.addProperty("style:num-format", "1");
     page.addProperty("style:print-orientation", orientation);
@@ -150,7 +148,7 @@ bool KoOdtFrameReportDocument::createContent(KoOdfWriteStore* store, KoGenStyles
     KoXmlWriter* contentWriter = store->contentWriter();
 
     if (!bodyWriter || !contentWriter || !manifestWriter) {
-        kWarning()<<"Failed to created odt writer";
+        qWarning()<<"Failed to created odt writer";
         return false;
     }
 

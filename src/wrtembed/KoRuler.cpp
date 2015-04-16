@@ -22,19 +22,16 @@
 */
 
 #include "KoRuler.h"
-
 #include "KoRuler_p.h"
+#include "KoViewConverter.h"
 
 #include <klocale.h>
-#include <kdebug.h>
 #include <kglobalsettings.h>
 
 #include <QPainter>
 #include <QResizeEvent>
 #include <QMenu>
 #include <QMouseEvent>
-
-#include "KoViewConverter.h"
 
 // the distance in pixels of a mouse position considered outside the rule
 static const int OutsideRulerThreshold = 20;

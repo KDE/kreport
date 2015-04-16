@@ -16,8 +16,8 @@
  */
 #include "krscriptmaps.h"
 #include "KoReportItemMaps.h"
+
 #include <QBuffer>
-#include <kdebug.h>
 
 namespace Scripting
 {
