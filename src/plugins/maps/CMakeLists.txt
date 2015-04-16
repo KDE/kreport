@@ -12,7 +12,7 @@ set(koreport_mapsplugin_LIB_SRCS
     MapRenderer.cpp
 )
 
-kde4_add_plugin(koreport_mapsplugin ${koreport_mapsplugin_LIB_SRCS})
+add_library(koreport_mapsplugin MODULE ${koreport_mapsplugin_LIB_SRCS})
 
 target_link_libraries(koreport_mapsplugin
     ${KOREPORT_LIBS}

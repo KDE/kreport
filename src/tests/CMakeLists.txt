@@ -1,23 +1,12 @@
-set( EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR} )
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR})
 
-include_directories(
-    ${CMAKE_SOURCE_DIR}/libs/widgets
-    ${FLAKE_INCLUDES}
-    ${KOREPORT_INCLUDES}
-    ${QT_INCLUDES}
-)
+set(KReportTest_SRCS KReportTest.cpp)
 
+add_executable(KoReportTestNAME KReportTest ${KoReportTest_SRCS})
+add_test(KReportTest KReportTest)
+ecm_mark_as_test(KReportTest)
 
-########## next target ###############
-
-set(KoReportTest_SRCS KoReportTest.cpp)
-
-kde4_add_unit_test(KoReportTest TESTNAME KoReportTest  ${KoReportTest_SRCS})
-
-target_link_libraries(KoReportTest
-    ${KOREPORT_LIBS}
-    ${KDE4_KDEUI_LIBS}
+target_link_libraries(KReportTest
+    KReport
     Qt5::Test
 )
-
-########## next target ###############
