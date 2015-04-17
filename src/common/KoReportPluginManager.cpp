@@ -27,6 +27,7 @@
 #include <ktoggleaction.h>
 
 #include <KoServiceLocator.h>
+#include <QDebug>
 
 //Include the static items
 #include "../items/label/KoReportLabelPlugin.h"
@@ -111,7 +112,7 @@ KoReportPluginManagerPrivate::KoReportPluginManagerPrivate()
 
 void KoReportPluginManagerPrivate::loadPlugins()
 {
-    //kDebug() << "Load all plugins";
+    //qDebug() << "Load all plugins";
     const KService::List offers = KoServiceLocator::instance()->entries("KoReport/ItemPlugin");
     foreach(KService::Ptr service, offers) {
         //! @todo check version
@@ -120,7 +121,7 @@ void KoReportPluginManagerPrivate::loadPlugins()
 
         KoReportPluginInterface *plugin = loader.createPlugin<KoReportPluginInterface>(this);
         if (!plugin) {
-            kWarning() << "KPluginFactory could not load the plugin:" << service->library();
+            qWarning() << "KPluginFactory could not load the plugin:" << service->library();
             continue;
         }
         plugin->info()->setPriority(plugin->info()->priority() + 10); //Ensure plugins always have a higher prioroty than built-in types

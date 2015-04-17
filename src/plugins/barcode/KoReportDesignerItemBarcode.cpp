@@ -31,6 +31,7 @@
 #include <QGraphicsSceneMouseEvent>
 #include <QDomDocument>
 #include <QPainter>
+#include <QDebug>
 
 void KoReportDesignerItemBarcode::init(QGraphicsScene *scene, KoReportDesigner *d)
 {
@@ -126,7 +127,7 @@ void KoReportDesignerItemBarcode::paint(QPainter* painter, const QStyleOptionGra
 
 void KoReportDesignerItemBarcode::buildXML(QDomDocument & doc, QDomElement & parent)
 {
-    //kdDebug() << "ReportEntityField::buildXML()");
+    //qDebug();
     QDomElement entity = doc.createElement(QLatin1String("report:") + typeName());
 
     // properties
@@ -166,4 +167,3 @@ void KoReportDesignerItemBarcode::mousePressEvent(QGraphicsSceneMouseEvent * eve
     m_controlSource->setListData(m_reportDesigner->fieldKeys(), m_reportDesigner->fieldNames());
     KoReportDesignerItemRectBase::mousePressEvent(event);
 }
-
