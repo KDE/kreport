@@ -23,6 +23,8 @@
 #include "KoPageFormat.h"
 
 #include <QDebug>
+#include <QPageSize>
+#include <QPrinterInfo>
 
 // paper formats ( mm )
 #define PG_A3_WIDTH             297.0
@@ -149,12 +151,16 @@ KoPageFormat::Format KoPageFormat::formatFromString(const QString & string)
 
 KoPageFormat::Format KoPageFormat::defaultFormat()
 {
-    //! @todo KGlobal
-    //int qprinter = KGlobal::locale()->pageSize();
-    //for (int i = 0; pageFormatInfo[i].format != -1 ;i++) {
-    //    if (pageFormatInfo[ i ].qprinter == qprinter)
-    //        return static_cast<Format>(i);
-    //}
+    QPrinterInfo printerInfo = QPrinterInfo::defaultPrinter();
+    QPageSize size = printerInfo.defaultPageSize();
+    if (size.isValid()) {
+        const QPageSize::PageSizeId qprinter = size.id();
+        for (int i = 0; pageFormatInfo[i].format != -1 ;i++) {
+            if (pageFormatInfo[ i ].qprinter == static_cast<QPrinter::PageSize>(qprinter)){
+                return static_cast<Format>(i);
+            }
+        }
+    }
     return IsoA4Size;
 }
 
