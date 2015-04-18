@@ -19,7 +19,7 @@
 #include "KoReportHTMLTableRenderer.h"
 #include "common/renderobjects.h"
 
-#include <ktemporaryfile.h>
+#include <QTemporaryFile>
 
 #include <QDebug>
 #include <QDir>
@@ -38,7 +38,7 @@ KoReportHTMLTableRenderer::~KoReportHTMLTableRenderer()
 bool KoReportHTMLTableRenderer::render(const KoReportRendererContext& context, ORODocument *document, int page)
 {
     Q_UNUSED(page);
-    KTemporaryFile tempHtmlFile; // auto removed by default on destruction
+    QTemporaryFile tempHtmlFile; // auto removed by default on destruction
     if (!tempHtmlFile.open()) {
         qWarning() << "Couldn't create temporary file to write into";
         return false;
