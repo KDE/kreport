@@ -132,6 +132,8 @@ target_include_directories(KReport
 target_link_libraries(KReport
     PUBLIC
         Qt5::PrintSupport
+        KProperty
+    PRIVATE
         KF5::WidgetsAddons
         KF5::KrossCore
         KF5::KrossUi
@@ -139,8 +141,6 @@ target_link_libraries(KReport
         #KF5::KIOFileWidgets
         #KF5::KIOWidgets
         #KF5::KIONTLM
-        KProperty
-    PRIVATE
 )
 
 set_target_properties(KReport
