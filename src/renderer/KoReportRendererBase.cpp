@@ -23,8 +23,8 @@
 #include "KoReportKSpreadRenderer.h"
 #include "KoReportHTMLTableRenderer.h"
 #include "KoReportHTMLCSSRenderer.h"
-#include "KoReportODTRenderer.h"
-#include "KoOdtFrameReportRenderer.h"
+//! @todo port #include "KoReportODTRenderer.h"
+//! @todo port #include "KoOdtFrameReportRenderer.h"
 
 KoReportRendererContext::KoReportRendererContext()
  : painter(0), printer(0)
@@ -51,21 +51,27 @@ KoReportRendererBase* KoReportRendererFactory::createInstance(const QString& key
     }
     if (lowerKey == QLatin1String("print")) {
         return new KoReportPrintRenderer();
-    }  
+    }
+//! @todo port
+#if 0
     if (lowerKey == QLatin1String("ods")) {
         return new KoReportKSpreadRenderer();
     } 
+#endif
     if (lowerKey == QLatin1String("htmltable")) {
         return new KoReportHTMLTableRenderer();
     }
     if (lowerKey == QLatin1String("htmlcss")) {
         return new KoReportHTMLCSSRenderer();
     }
+//! @todo port
+#if 0
     if (lowerKey == QLatin1String("odttable") || lowerKey == QLatin1String("odt")) {
         return new KoReportODTRenderer();
     }
     if (lowerKey == QLatin1String("odtframes")) {
         return new KoOdtFrameReportRenderer();
-}
-return 0;
+    }
+#endif
+    return 0;
 }

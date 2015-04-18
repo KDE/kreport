@@ -37,9 +37,9 @@ set(kreport_LIB_SRCS
     renderer/KoReportScreenRenderer.cpp
     renderer/KoReportHTMLTableRenderer.cpp
     renderer/KoReportHTMLCSSRenderer.cpp
-    renderer/KoReportKSpreadRenderer.cpp
-    renderer/KoReportODTRenderer.cpp
-    renderer/KoOdtFrameReportRenderer.cpp
+    #TODO renderer/KoReportKSpreadRenderer.cpp
+    #TODO renderer/KoReportODTRenderer.cpp
+    #TODO renderer/KoOdtFrameReportRenderer.cpp
     renderer/KoReportRendererBase.cpp
     renderer/KoReportPage.cpp
 
