@@ -21,7 +21,10 @@
 #include "KoReportItemText.h"
 #include "KoReportDesignerItemText.h"
 #include "common/KoReportPluginInfo.h"
+#ifdef KREPORT_SCRIPTING
 #include "krscripttext.h"
+#endif
+
 #include <QIcon>
 
 KoReportTextPlugin::KoReportTextPlugin(QObject *parent, const QVariantList &args) : KoReportPluginInterface(parent)
@@ -55,6 +58,7 @@ QObject* KoReportTextPlugin::createDesignerInstance(KoReportDesigner* designer, 
     return new KoReportDesignerItemText(designer, scene, pos);
 }
 
+#ifdef KREPORT_SCRIPTING
 QObject* KoReportTextPlugin::createScriptInstance(KoReportItemBase* item)
 {
     KoReportItemText *text = dynamic_cast<KoReportItemText*>(item);
@@ -63,4 +67,4 @@ QObject* KoReportTextPlugin::createScriptInstance(KoReportItemBase* item)
     }
     return 0;
 }
-
+#endif

@@ -57,6 +57,7 @@ QObject* KoReportCheckPlugin::createDesignerInstance(KoReportDesigner* designer,
     return new KoReportDesignerItemCheck(designer, scene, pos);
 }
 
+#ifdef KREPORT_SCRIPTING
 QObject* KoReportCheckPlugin::createScriptInstance(KoReportItemBase* item)
 {
     KoReportItemCheck *check = dynamic_cast<KoReportItemCheck*>(item);
@@ -65,3 +66,4 @@ QObject* KoReportCheckPlugin::createScriptInstance(KoReportItemBase* item)
     }
     return 0;
 }
+#endif

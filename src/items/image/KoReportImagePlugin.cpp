@@ -21,7 +21,9 @@
 #include "KoReportItemImage.h"
 #include "KoReportDesignerItemImage.h"
 #include "common/KoReportPluginInfo.h"
+#ifdef KREPORT_SCRIPTING
 #include "krscriptimage.h"
+#endif
 
 #include <QIcon>
 
@@ -57,6 +59,7 @@ QObject* KoReportImagePlugin::createDesignerInstance(KoReportDesigner* designer,
     return new KoReportDesignerItemImage(designer, scene, pos);
 }
 
+#ifdef KREPORT_SCRIPTING
 QObject* KoReportImagePlugin::createScriptInstance(KoReportItemBase* item)
 {
     KoReportItemImage *image = dynamic_cast<KoReportItemImage*>(item);
@@ -65,3 +68,4 @@ QObject* KoReportImagePlugin::createScriptInstance(KoReportItemBase* item)
     }
     return 0;
 }
+#endif

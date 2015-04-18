@@ -22,7 +22,9 @@
 #include "KoReportItemMaps.h"
 #include "KoReportDesignerItemMaps.h"
 #include "KoReportPluginInfo.h"
+#ifdef KREPORT_SCRIPTING
 #include "krscriptmaps.h"
+#endif
 
 #include <KoIcon.h>
 
@@ -59,6 +61,7 @@ QObject* KoReportMapsPlugin::createDesignerInstance(KoReportDesigner* designer, 
     return new KoReportDesignerItemMaps(designer, scene, pos);
 }
 
+#ifdef KREPORT_SCRIPTING
 QObject* KoReportMapsPlugin::createScriptInstance(KoReportItemBase* /*item*/)
 {
     /*KoReportItemMaps *image = dynamic_cast<KoReportItemMaps*>(item);
@@ -67,3 +70,4 @@ QObject* KoReportMapsPlugin::createScriptInstance(KoReportItemBase* /*item*/)
     }*/
     return 0;
 }
+#endif

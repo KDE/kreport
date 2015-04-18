@@ -21,7 +21,9 @@
 #include "KoReportItemBarcode.h"
 #include "KoReportDesignerItemBarcode.h"
 #include "KoReportPluginInfo.h"
+#ifdef KREPORT_SCRIPTING
 #include "krscriptbarcode.h"
+#endif
 
 #include <KoIcon.h>
 
@@ -57,6 +59,7 @@ QObject* KoReportBarcodePlugin::createDesignerInstance(KoReportDesigner* designe
     return new KoReportDesignerItemBarcode(designer, scene, pos);
 }
 
+#ifdef KREPORT_SCRIPTING
 QObject* KoReportBarcodePlugin::createScriptInstance(KoReportItemBase* item)
 {
     KoReportItemBarcode *barcode = dynamic_cast<KoReportItemBarcode*>(item);
@@ -65,3 +68,4 @@ QObject* KoReportBarcodePlugin::createScriptInstance(KoReportItemBase* item)
     }
     return 0;
 }
+#endif

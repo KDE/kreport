@@ -28,10 +28,12 @@
 
 class KRDetailSectionData;
 
+#ifdef KREPORT_SCRIPTING
 namespace Scripting
 {
 class Report;
 }
+#endif
 
 /**
 */

@@ -58,6 +58,7 @@ QObject *KoReportWebPlugin::createDesignerInstance(KoReportDesigner *designer,
     return new KoReportDesignerItemWeb(designer, scene, pos);
 }
 
+#ifdef KREPORT_SCRIPTING
 QObject *KoReportWebPlugin::createScriptInstance(KoReportItemBase *item)
 {
     Q_UNUSED(item);
@@ -66,3 +67,4 @@ QObject *KoReportWebPlugin::createScriptInstance(KoReportItemBase *item)
     //   return new Scripting::Web(image);
     return 0;
 }
+#endif

@@ -33,7 +33,9 @@ public:
                                             QGraphicsScene *scene);
     virtual QObject *createDesignerInstance(KoReportDesigner *designer,
                                             QGraphicsScene *scene,const QPointF &pos);
+#ifdef KREPORT_SCRIPTING
     virtual QObject *createScriptInstance(KoReportItemBase *item);
+#endif
 };
 
 #endif // KOREPORTWEBPLUGIN_H

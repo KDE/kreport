@@ -22,7 +22,9 @@
 #include "KoReportDesignerItemLabel.h"
 #include "wrtembed/KoReportDesigner.h"
 #include "common/KoReportPluginInfo.h"
+#ifdef KREPORT_SCRIPTING
 #include "krscriptlabel.h"
+#endif
 
 #include <QIcon>
 
@@ -57,6 +59,7 @@ QObject* KoReportLabelPlugin::createDesignerInstance(QDomNode & element, KoRepor
     return new KoReportDesignerItemLabel(element, designer, scene);
 }
 
+#ifdef KREPORT_SCRIPTING
 QObject* KoReportLabelPlugin::createScriptInstance(KoReportItemBase *item)
 {
     KoReportItemLabel *label = dynamic_cast<KoReportItemLabel*>(item);
@@ -65,4 +68,5 @@ QObject* KoReportLabelPlugin::createScriptInstance(KoReportItemBase *item)
     }
     return 0;
 }
+#endif
 
