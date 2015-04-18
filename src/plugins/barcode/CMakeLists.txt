@@ -21,6 +21,7 @@ set(koreport_barcodeplugin_LIB_SRCS
 )
 
 add_library(koreport_barcodeplugin MODULE ${koreport_barcodeplugin_LIB_SRCS})
+kcoreaddons_desktop_to_json(koreport_barcodeplugin koreport_barcodeplugin.desktop)
 
 target_link_libraries(koreport_barcodeplugin
     KProperty
@@ -31,5 +32,4 @@ target_link_libraries(koreport_barcodeplugin
 ########### install files ###############
 
 install(TARGETS koreport_barcodeplugin  DESTINATION ${PLUGIN_INSTALL_DIR})
-install( FILES  koreport_barcodeplugin.desktop  DESTINATION ${SERVICES_INSTALL_DIR}/calligra)
 ecm_install_icons(${DATA_INSTALL_DIR}/calligra/icons)

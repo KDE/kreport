@@ -288,5 +288,3 @@ int KoReportItemField::renderSimpleData(OROPage *page, OROSection *section, cons
     }
     return height;
 }
-
-

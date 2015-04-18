@@ -369,4 +369,3 @@ Q_SIGNALS:
 };
 
 #endif
-

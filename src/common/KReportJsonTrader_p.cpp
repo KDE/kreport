@@ -18,32 +18,32 @@
  * Boston, MA 02110-1301, USA.
 */
 
-#include "KoJsonTrader.h"
+#include "KReportJsonTrader_p.h"
 
 #include <QDebug>
-
 #include <QApplication>
 #include <QList>
 #include <QPluginLoader>
 #include <QJsonObject>
+#include <QJsonArray>
 #include <QDirIterator>
 #include <QDir>
+#include <QGlobalStatic>
 
-KoJsonTrader::KoJsonTrader()
+Q_GLOBAL_STATIC(KReportJsonTrader, KReportJsonTrader_instance)
+
+KReportJsonTrader::KReportJsonTrader()
 {
+    Q_ASSERT(!KReportJsonTrader_instance.exists());
 }
 
-KoJsonTrader* KoJsonTrader::self()
+KReportJsonTrader* KReportJsonTrader::self()
 {
-    static KoJsonTrader *s_instance = 0;
-    if (!s_instance)
-        s_instance = new KoJsonTrader();
-    return s_instance;
+    return KReportJsonTrader_instance;
 }
 
-QList<QPluginLoader *> KoJsonTrader::query(const QString &servicetype, const QString &mimetype)
+QList<QPluginLoader *> KReportJsonTrader::query(const QString &servicetype, const QString &mimetype)
 {
-
     if (m_pluginPath.isEmpty()) {
 
         QList<QDir> searchDirs;
@@ -59,22 +59,23 @@ QList<QPluginLoader *> KoJsonTrader::query(const QString &servicetype, const QSt
         foreach(const QDir& dir, searchDirs) {
             foreach(QString entry, dir.entryList()) {
                 QFileInfo info(dir, entry);
-                if (info.isDir() && info.fileName().contains("lib")) {
+                if (info.isDir() && info.fileName().contains(QLatin1String("lib"))) {
                     QDir libDir(info.absoluteFilePath());
 
-                    // on many systems this will be the actual lib dir (and calligra subdir contains plugins)
-                    if (libDir.entryList(QStringList() << "calligra").size() > 0) {
-                        m_pluginPath = info.absoluteFilePath() + "/calligra";
+                    QString pluginSubdir(QLatin1String("kreport"));
+                    // on many systems this will be the actual lib dir (and a subdir that contains plugins)
+                    if (!libDir.entryList(QStringList() << pluginSubdir).isEmpty()) {
+                        m_pluginPath = info.absoluteFilePath() + QLatin1Char('/') + pluginSubdir;
                         break;
                     }
 
                     // on debian at least the actual libdir is a subdir named like "lib/x86_64-linux-gnu"
-                    // so search there for the calligra subdir which will contain our plugins
-                    foreach(QString subEntry, libDir.entryList()) {
+                    // so search there for the subdir which will contain our plugins
+                    foreach(const QString &subEntry, libDir.entryList()) {
                         QFileInfo subInfo(libDir, subEntry);
                         if (subInfo.isDir()) {
-                            if (QDir(subInfo.absoluteFilePath()).entryList(QStringList() << "calligra").size() > 0) {
-                                m_pluginPath = subInfo.absoluteFilePath() + "/calligra";
+                            if (!QDir(subInfo.absoluteFilePath()).entryList(QStringList() << pluginSubdir).isEmpty()) {
+                                m_pluginPath = subInfo.absoluteFilePath() + QLatin1Char('/') + pluginSubdir;
                                 break; // will only break inner loop so we need the extra check below
                             }
                         }
@@ -90,7 +91,7 @@ QList<QPluginLoader *> KoJsonTrader::query(const QString &servicetype, const QSt
                 break;
             }
         }
-        //qDebug() << "KoJsonTrader will load its plugins from" << m_pluginPath;
+        //qDebug() << "KReportJsonTrader will load its plugins from" << m_pluginPath;
 
     }
 
@@ -100,21 +101,24 @@ QList<QPluginLoader *> KoJsonTrader::query(const QString &servicetype, const QSt
         dirIter.next();
         if (dirIter.fileInfo().isFile()) {
             QPluginLoader *loader = new QPluginLoader(dirIter.filePath());
-            QJsonObject json = loader->metaData().value("MetaData").toObject();
+            QJsonObject json = loader->metaData().value(QLatin1String("MetaData")).toObject();
 
             if (json.isEmpty()) {
                 qDebug() << dirIter.filePath() << "has no json!";
             }
             if (!json.isEmpty()) {
-                QJsonObject pluginData = json.value("KPlugin").toObject();
-                if (!pluginData.value("ServiceTypes").toArray().contains(QJsonValue(servicetype))) {
+                QJsonObject pluginData = json.value(QLatin1String("KPlugin")).toObject();
+                if (!pluginData.value(QLatin1String("ServiceTypes")).toArray()
+                        .contains(QJsonValue(servicetype)))
+                {
                     continue;
                 }
 
                 if (!mimetype.isEmpty()) {
-                    QStringList mimeTypes = json.value("X-KDE-ExtraNativeMimeTypes").toString().split(',');
-                    mimeTypes += json.value("MimeType").toString().split(';');
-                    mimeTypes += json.value("X-KDE-NativeMimeType").toString();
+                    QStringList mimeTypes = json.value(QLatin1String("X-KDE-ExtraNativeMimeTypes"))
+                            .toString().split(QLatin1Char(','));
+                    mimeTypes += json.value(QLatin1String("MimeType")).toString().split(QLatin1Char(';'));
+                    mimeTypes += json.value(QLatin1String("X-KDE-NativeMimeType")).toString();
                     if (! mimeTypes.contains(mimetype)) {
                         continue;
                     }

@@ -18,29 +18,25 @@
  * Boston, MA 02110-1301, USA.
 */
 
-#ifndef KOJSONTRADER_H
-#define KOJSONTRADER_H
+#ifndef KREPORTJSONTRADER_P_H
+#define KREPORTJSONTRADER_P_H
 
 #include <QList>
 #include <QString>
-#include "koplugin_export.h"
 
 class QPluginLoader;
 
 /**
  *  Support class to fetch a list of relevant plugins
  */
-class KOPLUGIN_EXPORT KoJsonTrader
+class KReportJsonTrader
 {
-
-private:
-    explicit KoJsonTrader();
-
 public:
-    static KoJsonTrader *self();
+    KReportJsonTrader();
+    static KReportJsonTrader *self();
 
     /**
-     * The main function in the KoJsonTrader class.
+     * The main function in the KReportJsonTrader class.
      *
      * It will return a list of QPluginLoader that match your
      * specifications.  The only required parameter is the service
@@ -65,10 +61,10 @@ public:
      * @return A list of QPluginLoader that satisfy the query
      * @see http://techbase.kde.org/Development/Tutorials/Services/Traders#The_KTrader_Query_Language
      */
-     QList<QPluginLoader *> query(const QString &servicetype, const QString &constraint);
+     QList<QPluginLoader *> query(const QString &servicetype, const QString &constraint = QString());
 
 private:
-     KoJsonTrader *m_service;
+     Q_DISABLE_COPY(KReportJsonTrader)
      QString m_pluginPath;
 };
 

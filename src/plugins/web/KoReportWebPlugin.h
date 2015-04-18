@@ -20,9 +20,9 @@
 #ifndef KOREPORTWEBPLUGIN_H
 #define KOREPORTWEBPLUGIN_H
 
-#include "KReportPluginInterface.h"
+#include "KoReportPluginInterface.h"
 
-class KoReportWebPlugin : public KReportPluginInterface
+class KoReportWebPlugin : public KoReportPluginInterface
 {
 public:
     explicit KoReportWebPlugin(QObject *parent, const QVariantList &args = QVariantList());

@@ -20,14 +20,15 @@
 #include "KoReportPluginManager.h"
 #include "KoReportPluginManagerPrivate.h"
 #include "KoReportPluginInfo.h"
+#include "KReportJsonTrader_p.h"
 
 #include <kicon.h>
 #include <kservice.h>
 #include <kiconloader.h>
 #include <ktoggleaction.h>
 
-#include <KoServiceLocator.h>
 #include <QDebug>
+#include <QPluginLoader>
 
 //Include the static items
 #include "../items/label/KoReportLabelPlugin.h"
@@ -44,7 +45,6 @@ KoReportPluginManager* KoReportPluginManager::self()
 
 KoReportPluginManager::KoReportPluginManager() : d(new KoReportPluginManagerPrivate())
 {
-    KIconLoader::global()->addAppDir("calligra");
 }
 
 KoReportPluginManager::~KoReportPluginManager()
@@ -54,31 +54,32 @@ KoReportPluginManager::~KoReportPluginManager()
 
 KoReportPluginInterface* KoReportPluginManager::plugin(const QString& p) const
 {
-    if (d->m_plugins.contains(p)) {
-        return d->m_plugins[p];
+    ReportPluginEntry *entry = d->plugins.value(p);
+    if (!entry) {
+        return 0;
     }
-    return 0;
+    return entry->plugin();
 }
 
 QList<QAction*> KoReportPluginManager::actions()
 {
     QList<QAction*> actList;
-
-    KoReportDesigner designer(0);
-    const QMap<QString, KoReportPluginInterface*> plugins = d->m_plugins;
+#if 0 //todo
+    KoReportDesigner designer;
+    const QMap<QString, KoReportPluginInterface*> plugins = d->plugins;
 
     foreach(KoReportPluginInterface* plugin, plugins) {
         KoReportPluginInfo *info = plugin->info();
         if (info) {
             KToggleAction *act = new KToggleAction(KIcon(info->icon()), info->name(), this);
-            act->setObjectName(info->className());
+            act->setObjectName(QLatin1String(info->className()));
 
             //Store the order priority in the user data field
             act->setData(info->priority());
             actList << act;
         }
     }
-
+#endif
     return actList;
 }
 
@@ -86,50 +87,90 @@ QList<QAction*> KoReportPluginManager::actions()
 //===============================Private========================================
 
 KoReportPluginManagerPrivate::KoReportPluginManagerPrivate()
+    : m_parent(new QObject)
 {
-    //Create the static items here
+    addBuiltInPlugin<KoReportLabelPlugin>();
+    addBuiltInPlugin<KoReportCheckPlugin>();
+    addBuiltInPlugin<KoReportFieldPlugin>();
+    addBuiltInPlugin<KoReportImagePlugin>();
+    addBuiltInPlugin<KoReportTextPlugin>();
 
-    KoReportPluginInterface *plugin = 0;
-
-    plugin = new KoReportLabelPlugin(this);
-    m_plugins.insert(plugin->info()->className(), plugin);
-
-    plugin = new KoReportCheckPlugin(this);
-    m_plugins.insert(plugin->info()->className(), plugin);
-
-    plugin = new KoReportFieldPlugin(this);
-    m_plugins.insert(plugin->info()->className(), plugin);
-
-    plugin = new KoReportImagePlugin(this);
-    m_plugins.insert(plugin->info()->className(), plugin);
-
-    plugin = new KoReportTextPlugin(this);
-    m_plugins.insert(plugin->info()->className(), plugin);
-
-    //And then load the plugins
-    loadPlugins();
-}
-
-void KoReportPluginManagerPrivate::loadPlugins()
-{
-    //qDebug() << "Load all plugins";
-    const KService::List offers = KoServiceLocator::instance()->entries("KoReport/ItemPlugin");
-    foreach(KService::Ptr service, offers) {
-        //! @todo check version
-        //! @todo add pluginNameProperty
-        KexiPluginLoader loader(service, "");
-
-        KoReportPluginInterface *plugin = loader.createPlugin<KoReportPluginInterface>(this);
-        if (!plugin) {
-            qWarning() << "KPluginFactory could not load the plugin:" << service->library();
-            continue;
-        }
-        plugin->info()->setPriority(plugin->info()->priority() + 10); //Ensure plugins always have a higher prioroty than built-in types
-        m_plugins.insert(plugin->info()->className(), plugin);
-    }
+    findPlugins();
 }
 
 KoReportPluginManagerPrivate::~KoReportPluginManagerPrivate()
 {
+    delete m_parent;
+}
 
+template<class PluginClass>
+void KoReportPluginManagerPrivate::addBuiltInPlugin()
+{
+    ReportPluginEntry *entry = new ReportPluginEntry;
+    entry->interface = new PluginClass(m_parent);
+    plugins.insert(QLatin1String(entry->interface->info()->className()), entry);
+}
+
+#if 0
+//! Typedef of plugin version matching the one exported by KEXI_EXPORT_PLUGIN.
+typedef quint32 (*plugin_version_t)();
+
+loadPlugin(KService::Ptr service)
+{
+    if (service.isNull()) {
+        qWarning() << "No service specified";
+        return;
+    }
+    qDebug() << "library:" << service->library();
+    QPluginLoader loader(service->library());
+    QLibrary lib(loader.fileName());
+    plugin_version_t plugin_version_function = (plugin_version_t)lib.resolve("plugin_version");
+    if (!plugin_version_function) {
+        qWarning() << "Plugin version not found for" << service->name();
+        return;
+    }
+    quint32 foundVersion = plugin_version_function();
+    qDebug() << "foundVersion:" << d->foundVersion;
+    QPointer<QPluginFactory> factory = loader.factory();
+    if (!d->factory) {
+        qWarning() << "Failed to create instance of factory for plugin" << ptr->name();
+        return;
+    }
+    QString pluginName;
+    if (!pluginNameProperty.isEmpty()) {
+        pluginName = ptr->property(pluginNameProperty).toString();
+    }
+
+    if (!factory())
+        return 0;
+    KoReportPluginInterface* plugin = factory()->create<KoReportPluginInterface>(parent);
+    if (plugin) {
+        plugin->setObjectName(pluginName());
+    }
+    return plugin;
+#endif
+
+void KoReportPluginManagerPrivate::findPlugins()
+{
+    //qDebug() << "Load all plugins";
+    const QList<QPluginLoader*> offers = KReportJsonTrader::self()->query(QLatin1String("KReport/Element"));
+    foreach(QPluginLoader *loader, offers) {
+        QJsonObject json = loader->metaData().value(QLatin1String("MetaData")).toObject();
+        json = json.value(QLatin1String("KPlugin")).toObject();
+        const QString pluginName = json.value(QLatin1String("Id")).toString();
+            //! @todo check version
+            //! @todo add pluginNameProperty
+            //KexiPluginLoader loader(service, "");
+
+//        KoReportPluginInterface *plugin = loader.createPlugin<KoReportPluginInterface>(this);
+//        if (!plugin) {
+//            qWarning() << "KPluginFactory could not load the plugin:" << service->library();
+//            continue;
+//        }
+//        plugin->info()->setPriority(plugin->info()->priority() + 10); //Ensure plugins always have a higher prioroty than built-in types
+//        m_plugins.insert(plugin->info()->className(), plugin);
+        ReportPluginEntry *entry = new ReportPluginEntry;
+        entry->loader = loader;
+        plugins.insert(pluginName, entry);
+    }
 }

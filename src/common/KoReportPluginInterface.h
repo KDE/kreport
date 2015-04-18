@@ -1,5 +1,4 @@
-/*
-   KoReport Library
+/* This file is part of the KDE project
    Copyright (C) 2010 by Adam Pigg (adam@piggz.co.uk)
 
    This library is free software; you can redistribute it and/or
@@ -18,11 +17,12 @@
    Boston, MA 02110-1301, USA.
 */
 
-#ifndef KOREPORTPLUGININTERFACE_H
-#define KOREPORTPLUGININTERFACE_H
+#ifndef KoReportPluginInterface_H
+#define KoReportPluginInterface_H
 
 #include <QGraphicsScene>
 
+#include "config-kreport.h"
 #include "wrtembed/KoReportDesigner.h"
 
 class KoReportPluginInfo;
@@ -38,7 +38,9 @@ class KREPORT_EXPORT KoReportPluginInterface : public QObject
         virtual QObject* createDesignerInstance(KoReportDesigner *, QGraphicsScene * scene, const QPointF &pos) = 0;
         virtual QObject* createDesignerInstance(QDomNode & element, KoReportDesigner *, QGraphicsScene * scene) = 0;
         virtual QObject* createRendererInstance(QDomNode & element) = 0;
+#ifdef KREPORT_SCRIPTING
         virtual QObject* createScriptInstance(KoReportItemBase* item) = 0;
+#endif
 
         void setInfo(KoReportPluginInfo *);
         KoReportPluginInfo* info() const;
@@ -52,4 +54,4 @@ class KREPORT_EXPORT KoReportPluginInterface : public QObject
 //! @todo better versioning
 //#define K_EXPORT_KOREPORT_ITEMPLUGIN( class_name, internal_name ) KEXI_EXPORT_PLUGIN( "koreport", class_name, internal_name, 0, 0, 1 )
 
-#endif // KOREPORTPLUGININTERFACE_H
+#endif // KoReportPluginInterface_H

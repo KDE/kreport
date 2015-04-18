@@ -20,8 +20,9 @@ set(kreport_LIB_SRCS
     common/KoReportPluginInterface.cpp
     common/KoReportItemLine.cpp
     common/renderobjects.cpp
-    #common/KoReportPluginManager.cpp
-    #common/KoReportPluginInfo.cpp
+    common/KoReportPluginManager.cpp
+    common/KReportJsonTrader_p.cpp
+    common/KoReportPluginInfo.cpp
     common/KoReportData.cpp
     common/KoPageFormat.cpp
     common/KoUnit.cpp

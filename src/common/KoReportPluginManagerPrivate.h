@@ -20,21 +20,66 @@
 #ifndef KOREPORTPLUGINMANAGERP_H
 #define KOREPORTPLUGINMANAGERP_H
 
-#include <QObject>
 #include <QMap>
+#include <QPluginLoader>
 
 class KoReportPluginInterface;
 
-class KoReportPluginManagerPrivate : public QObject
+//! A single entry for a built-in or dynamic item plugin
+class ReportPluginEntry
 {
-    Q_OBJECT
-    public:
-        KoReportPluginManagerPrivate();
-        ~KoReportPluginManagerPrivate();
-        void loadPlugins();
-        //!Map of name -> plugin instances
-        QMap<QString, KoReportPluginInterface*> m_plugins;
+public:
+    ReportPluginEntry();
+    KoReportPluginInterface* plugin();
+
+    KoReportPluginInterface *interface;
+    QPluginLoader *loader;
 };
 
+ReportPluginEntry::ReportPluginEntry()
+    : interface(0), loader(0)
+{
+}
+
+KoReportPluginInterface* ReportPluginEntry::plugin()
+{
+    if (interface) {
+        return interface;
+    }
+    if (!loader) {
+        qWarning() << "No such plugin";
+        return 0;
+    }
+    if (!loader->load()) {
+        qWarning() << "Could not load plugin" << loader->fileName();
+        return 0;
+    }
+    interface = qobject_cast<KoReportPluginInterface*>(loader->instance());
+    if (!interface) {
+        qWarning() << "Could not create instance of plugin" << loader->fileName();
+        return 0;
+    }
+    return interface;
+}
+
+
+class KoReportPluginManagerPrivate
+{
+public:
+    KoReportPluginManagerPrivate();
+    ~KoReportPluginManagerPrivate();
+
+    void findPlugins();
+
+    // add A built-in element plugins
+    template<class PluginClass>
+    void addBuiltInPlugin();
+
+    //! Map of name -> plugin instances
+    QMap<QString, ReportPluginEntry*> plugins;
+
+private:
+    QObject *m_parent;
+};
 
 #endif
