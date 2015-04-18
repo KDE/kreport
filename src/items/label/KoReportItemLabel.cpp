@@ -20,8 +20,10 @@
 
 #include <KPropertySet>
 
-#include <kglobalsettings.h>
 #include <klocalizedstring.h>
+
+#include <QFontDatabase>
+#include <QPalette>
 
 KoReportItemLabel::KoReportItemLabel()
 {
@@ -101,7 +103,7 @@ void KoReportItemLabel::createProperties()
     strings << i18n("Top") << i18n("Center") << i18n("Bottom");
     m_verticalAlignment = new KProperty("vertical-align", keys, strings, QLatin1String("center"), i18n("Vertical Alignment"));
 
-    m_font = new KProperty("font", KGlobalSettings::generalFont(), i18n("Font"), i18n("Font"));
+    m_font = new KProperty("font", QFontDatabase::systemFont(QFontDatabase::GeneralFont), i18n("Font"), i18n("Font"));
 
     m_backgroundColor = new KProperty("background-color", QColor(Qt::white), i18n("Background Color"));
     m_foregroundColor = new KProperty("foreground-color", QPalette().color(QPalette::Foreground), i18n("Foreground Color"));
