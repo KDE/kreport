@@ -32,8 +32,16 @@ find_package(KF5WidgetsAddons REQUIRED)
 find_package(KF5GuiAddons REQUIRED)
 find_package(KProperty REQUIRED)
 
+if(BUILD_TESTING)
+    add_subdirectory( autotests )
+    #add_subdirectory( tests )
+endif()
+
+option(BUILD_EXAMPLES "Build example applications" FALSE)
+if (BUILD_EXAMPLES)
+    #add_subdirectory(examples)
+endif(BUILD_EXAMPLES)
+
 add_subdirectory(src)
-#add_subdirectory(examples)
-#add_subdirectory(tests)
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
