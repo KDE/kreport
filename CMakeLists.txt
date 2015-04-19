@@ -26,8 +26,11 @@ set(REQUIRED_QT_VERSION "5.2.0")
 # Required Qt5 components to build this framework
 find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Core)
 find_package(Qt5Widgets REQUIRED)
+find_package(Qt5Xml REQUIRED)
+find_package(Qt5PrintSupport REQUIRED)
 find_package(KF5WidgetsAddons REQUIRED)
 find_package(KF5GuiAddons REQUIRED)
+find_package(KProperty REQUIRED)
 
 add_subdirectory(src)
 #add_subdirectory(examples)

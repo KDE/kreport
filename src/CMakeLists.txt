@@ -1,9 +1,4 @@
-find_package(Qt5Widgets REQUIRED)
-find_package(Qt5Xml REQUIRED)
-find_package(Qt5PrintSupport REQUIRED)
-find_package(KF5WidgetsAddons REQUIRED)
 find_package(KF5Kross REQUIRED)
-find_package(KProperty REQUIRED)
 
 # Options
 option(KREPORT_SCRIPTING "Enable scripting" OFF)
