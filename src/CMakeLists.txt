@@ -200,6 +200,7 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
         common/KoReportItemBase
         common/KoReportItemLine
         common/KoReportPluginInfo
+        common/KoReportPluginManager
         common/KoUnit
     REQUIRED_HEADERS kreport_HEADERS
 )
