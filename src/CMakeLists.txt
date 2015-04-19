@@ -127,6 +127,7 @@ target_include_directories(KReport
 target_link_libraries(KReport
     PUBLIC
         Qt5::PrintSupport
+        Qt5::Xml
         KProperty
     PRIVATE
         KF5::WidgetsAddons
