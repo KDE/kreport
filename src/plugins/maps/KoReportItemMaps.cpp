@@ -62,17 +62,17 @@ void KoReportItemMaps::createProperties()
 
     m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), i18n("Data Source"));
 
-    m_latitudeProperty = new KProperty("latitude", 0.0, i18n("Latitude"), i18n("Latitude") );
+    m_latitudeProperty = new KProperty("latitude", 0.0, i18n("Latitude"), QString(), KProperty::Double);
     m_latitudeProperty->setOption("min", -90);
     m_latitudeProperty->setOption("max", 90);
     m_latitudeProperty->setOption("unit", "°");
 
-    m_longitudeProperty = new KProperty("longitude", 0.0, i18n("longitude"), i18n("longitude") );
+    m_longitudeProperty = new KProperty("longitude", 0.0, i18n("Longitude"), QString(), KProperty::Double);
     m_longitudeProperty->setOption("min", -180);
     m_longitudeProperty->setOption("max", 180);
     m_longitudeProperty->setOption("unit", "°");
 
-    m_zoomProperty     = new KProperty("zoom", 1000, i18n("Zoom"), i18n("Zoom") );
+    m_zoomProperty     = new KProperty("zoom", 1000, i18n("Zoom"));
 
     QStringList mapThemIds(m_themeManager.mapThemeIds());
     m_themeProperty = new KProperty("theme",
