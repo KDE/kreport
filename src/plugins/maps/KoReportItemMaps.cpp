@@ -65,12 +65,12 @@ void KoReportItemMaps::createProperties()
     m_latitudeProperty = new KProperty("latitude", 0.0, i18n("Latitude"), QString(), KProperty::Double);
     m_latitudeProperty->setOption("min", -90);
     m_latitudeProperty->setOption("max", 90);
-    m_latitudeProperty->setOption("unit", "°");
+    m_latitudeProperty->setOption("unit", QString::fromUtf8("°"));
 
     m_longitudeProperty = new KProperty("longitude", 0.0, i18n("Longitude"), QString(), KProperty::Double);
     m_longitudeProperty->setOption("min", -180);
     m_longitudeProperty->setOption("max", 180);
-    m_longitudeProperty->setOption("unit", "°");
+    m_longitudeProperty->setOption("unit", QString::fromUtf8("°"));
 
     m_zoomProperty     = new KProperty("zoom", 1000, i18n("Zoom"));
 
