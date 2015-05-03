@@ -52,6 +52,11 @@ KoReportPluginManager::~KoReportPluginManager()
     delete d;
 }
 
+QStringList KoReportPluginManager::pluginNames() const
+{
+    return d->plugins.keys();
+}
+
 KoReportPluginInterface* KoReportPluginManager::plugin(const QString& p) const
 {
     ReportPluginEntry *entry = d->plugins.value(p);

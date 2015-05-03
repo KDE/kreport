@@ -26,12 +26,13 @@
 
 class KoReportPluginManagerPrivate;
 
-class KoReportPluginManager : public QObject
+class KREPORT_EXPORT KoReportPluginManager : public QObject
 {
     Q_OBJECT
     public:
         static KoReportPluginManager* self();
 
+        QStringList pluginNames() const;
         KoReportPluginInterface* plugin(const QString& p) const;
         QList<QAction*> actions();
 
