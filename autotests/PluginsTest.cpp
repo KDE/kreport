@@ -18,19 +18,31 @@
 #include "PluginsTest.h"
 
 #include <KoReportPluginManager>
+#include <KoReportPluginInfo>
 
 #include <QtTest/QTest>
 #include <QDebug>
+#include <QSet>
 
 QTEST_MAIN(PluginsTest)
 
-void PluginTest::initTestCase()
+void PluginsTest::initTestCase()
 {
     //QCoreApplication::setLibraryPaths(QStringList() << QDir::currentPath());
 }
 
-void PluginTest::listPlugins()
+void PluginsTest::listPlugins()
 {
+    KoReportPluginManager* manager = KoReportPluginManager::self();
+    QStringList pluginNames = manager->pluginNames();
+    QCOMPARE(pluginNames.toSet().count(), pluginNames.count());
+    foreach(const QString &pluginName, pluginNames) {
+        KoReportPluginInterface* iface = manager->plugin(pluginName);
+        QVERIFY(iface);
+        QVERIFY(!iface->info()->className().isEmpty());
+        //QVERIFY(!iface->info()->icon().isNull());
+        QVERIFY(!iface->info()->name().isEmpty());
+    }
 }
 
 #include "PluginsTest.moc"
