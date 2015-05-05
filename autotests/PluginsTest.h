@@ -23,9 +23,6 @@
 class PluginsTest : public QObject
 {
     Q_OBJECT
-public:
-    PluginsTest() {}
-
 private Q_SLOTS:
     void initTestCase();
     void listPlugins();

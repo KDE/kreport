@@ -35,6 +35,7 @@ void PluginsTest::listPlugins()
 {
     KoReportPluginManager* manager = KoReportPluginManager::self();
     QStringList pluginNames = manager->pluginNames();
+    qDebug() << pluginNames;
     QCOMPARE(pluginNames.toSet().count(), pluginNames.count());
     foreach(const QString &pluginName, pluginNames) {
         KoReportPluginInterface* iface = manager->plugin(pluginName);
@@ -44,5 +45,3 @@ void PluginsTest::listPlugins()
         QVERIFY(!iface->info()->name().isEmpty());
     }
 }
-
-#include "PluginsTest.moc"
