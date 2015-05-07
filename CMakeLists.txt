@@ -39,7 +39,7 @@ endif()
 
 option(BUILD_EXAMPLES "Build example applications" FALSE)
 if (BUILD_EXAMPLES)
-    #add_subdirectory(examples)
+    add_subdirectory(examples)
 endif(BUILD_EXAMPLES)
 
 add_subdirectory(src)
