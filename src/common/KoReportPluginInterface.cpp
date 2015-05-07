@@ -1,5 +1,6 @@
 /* This file is part of the KDE project
    Copyright (C) 2010 by Adam Pigg (adam@piggz.co.uk)
+   Copyright (C) 2015 Jarosław Staniek <staniek@kde.org>
 
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
@@ -20,23 +21,46 @@
 #include "KoReportPluginInterface.h"
 #include "KoReportPluginInfo.h"
 
-KoReportPluginInterface::KoReportPluginInterface(QObject* parent, const QVariantList& args)
- : QObject(parent), m_pluginInfo(0)
+class KoReportPluginInterface::Private
 {
-    Q_UNUSED(args)
+public:
+    Private() : pluginInfo(0), isBuiltIn(false) {}
+    ~Private() {
+        delete pluginInfo;
+    }
+
+    KoReportPluginInfo *pluginInfo;
+    bool isBuiltIn;
+};
+
+// ---
+
+KoReportPluginInterface::KoReportPluginInterface(QObject* parent, const QVariantList& args)
+ : QObject(parent), d(new Private)
+{
 }
 
 KoReportPluginInterface::~KoReportPluginInterface()
 {
-    delete m_pluginInfo;
+    delete d;
 }
 
 void KoReportPluginInterface::setInfo(KoReportPluginInfo* p)
 {
-    m_pluginInfo = p;
+    d->pluginInfo = p;
 }
 
 KoReportPluginInfo* KoReportPluginInterface::info() const
 {
-    return m_pluginInfo;
+    return d->pluginInfo;
+}
+
+bool KoReportPluginInterface::isBuiltIn() const
+{
+    return d->isBuiltIn;
+}
+
+void KoReportPluginInterface::setBuiltIn(bool set)
+{
+    d->isBuiltIn = set;
 }

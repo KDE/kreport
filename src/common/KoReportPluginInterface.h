@@ -1,5 +1,6 @@
 /* This file is part of the KDE project
    Copyright (C) 2010 by Adam Pigg (adam@piggz.co.uk)
+   Copyright (C) 2015 Jarosław Staniek <staniek@kde.org>
 
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
@@ -17,14 +18,13 @@
    Boston, MA 02110-1301, USA.
 */
 
-#ifndef KoReportPluginInterface_H
-#define KoReportPluginInterface_H
-
-#include <QGraphicsScene>
+#ifndef KREPORTPLUGININTERFACE_H
+#define KREPORTPLUGININTERFACE_H
 
 #include "config-kreport.h"
 #include "wrtembed/KoReportDesigner.h"
 
+class QGraphicsScene;
 class KoReportPluginInfo;
 
 class KREPORT_EXPORT KoReportPluginInterface : public QObject
@@ -45,13 +45,22 @@ class KREPORT_EXPORT KoReportPluginInterface : public QObject
         void setInfo(KoReportPluginInfo *);
         KoReportPluginInfo* info() const;
 
-    private:
-        KoReportPluginInfo *m_pluginInfo;
+        //! @return true if this plugin is built-in, i.e. has been provided by the KReport
+        //! framework itself, not by a dynamic extension.
+        bool isBuiltIn() const;
 
+    protected:
+        friend class KoReportPluginManager;
+        void setBuiltIn(bool set);
+
+    private:
+        Q_DISABLE_COPY(KoReportPluginInterface)
+        class Private;
+        Private * const d;
 };
 
 //! Implementation of driver's static version information and plugin entry point.
 //! @todo better versioning
 //#define K_EXPORT_KOREPORT_ITEMPLUGIN( class_name, internal_name ) KEXI_EXPORT_PLUGIN( "koreport", class_name, internal_name, 0, 0, 1 )
 
-#endif // KoReportPluginInterface_H
+#endif // KREPORTPLUGININTERFACE_H

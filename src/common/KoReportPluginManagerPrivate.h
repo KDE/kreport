@@ -1,5 +1,6 @@
 /* This file is part of the KDE project
    Copyright (C) 2010 by Adam Pigg (adam@piggz.co.uk)
+   Copyright (C) 2015 Jarosław Staniek <staniek@kde.org>
  
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
@@ -24,6 +25,7 @@
 #include <QPluginLoader>
 
 class KoReportPluginInterface;
+class KoReportPluginManager;
 
 //! A single entry for a built-in or dynamic item plugin
 class ReportPluginEntry
@@ -36,42 +38,16 @@ public:
     QPluginLoader *loader;
 };
 
-ReportPluginEntry::ReportPluginEntry()
-    : interface(0), loader(0)
-{
-}
-
-KoReportPluginInterface* ReportPluginEntry::plugin()
-{
-    if (interface) {
-        return interface;
-    }
-    if (!loader) {
-        qWarning() << "No such plugin";
-        return 0;
-    }
-    if (!loader->load()) {
-        qWarning() << "Could not load plugin" << loader->fileName();
-        return 0;
-    }
-    interface = qobject_cast<KoReportPluginInterface*>(loader->instance());
-    if (!interface) {
-        qWarning() << "Could not create instance of plugin" << loader->fileName();
-        return 0;
-    }
-    return interface;
-}
-
-
-class KoReportPluginManagerPrivate
+//! @internal
+class KoReportPluginManager::Private
 {
 public:
-    KoReportPluginManagerPrivate();
-    ~KoReportPluginManagerPrivate();
+    explicit Private(KoReportPluginManager *qq);
+    ~Private();
 
     void findPlugins();
 
-    // add A built-in element plugins
+    //! Add a built-in element plugins
     template<class PluginClass>
     void addBuiltInPlugin();
 
@@ -79,6 +55,7 @@ public:
     QMap<QString, ReportPluginEntry*> plugins;
 
 private:
+    KoReportPluginManager *q;
     QObject *m_parent;
 };
 

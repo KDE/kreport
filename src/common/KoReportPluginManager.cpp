@@ -1,5 +1,6 @@
 /* This file is part of the KDE project
    Copyright (C) 2010 by Adam Pigg (adam@piggz.co.uk)
+   Copyright (C) 2015 Jarosław Staniek <staniek@kde.org>
 
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
@@ -37,62 +38,8 @@
 #include "../items/image/KoReportImagePlugin.h"
 #include "../items/text/KoReportTextPlugin.h"
 
-KoReportPluginManager* KoReportPluginManager::self()
-{
-    K_GLOBAL_STATIC(KoReportPluginManager, instance) // only instantiated when self() is called
-    return instance;
-}
-
-KoReportPluginManager::KoReportPluginManager() : d(new KoReportPluginManagerPrivate())
-{
-}
-
-KoReportPluginManager::~KoReportPluginManager()
-{
-    delete d;
-}
-
-QStringList KoReportPluginManager::pluginNames() const
-{
-    return d->plugins.keys();
-}
-
-KoReportPluginInterface* KoReportPluginManager::plugin(const QString& p) const
-{
-    ReportPluginEntry *entry = d->plugins.value(p);
-    if (!entry) {
-        return 0;
-    }
-    return entry->plugin();
-}
-
-QList<QAction*> KoReportPluginManager::actions()
-{
-    QList<QAction*> actList;
-#if 0 //todo
-    KoReportDesigner designer;
-    const QMap<QString, KoReportPluginInterface*> plugins = d->plugins;
-
-    foreach(KoReportPluginInterface* plugin, plugins) {
-        KoReportPluginInfo *info = plugin->info();
-        if (info) {
-            KToggleAction *act = new KToggleAction(KIcon(info->icon()), info->name(), this);
-            act->setObjectName(QLatin1String(info->className()));
-
-            //Store the order priority in the user data field
-            act->setData(info->priority());
-            actList << act;
-        }
-    }
-#endif
-    return actList;
-}
-
-
-//===============================Private========================================
-
-KoReportPluginManagerPrivate::KoReportPluginManagerPrivate()
-    : m_parent(new QObject)
+KoReportPluginManager::Private::Private(KoReportPluginManager *qq)
+    : q(qq), m_parent(new QObject)
 {
     addBuiltInPlugin<KoReportLabelPlugin>();
     addBuiltInPlugin<KoReportCheckPlugin>();
@@ -103,16 +50,47 @@ KoReportPluginManagerPrivate::KoReportPluginManagerPrivate()
     findPlugins();
 }
 
-KoReportPluginManagerPrivate::~KoReportPluginManagerPrivate()
+// ---
+
+ReportPluginEntry::ReportPluginEntry()
+    : interface(0), loader(0)
+{
+}
+
+KoReportPluginInterface* ReportPluginEntry::plugin()
+{
+    if (interface) {
+        return interface;
+    }
+    if (!loader) {
+        qWarning() << "No such plugin";
+        return 0;
+    }
+    if (!loader->load()) {
+        qWarning() << "Could not load plugin" << loader->fileName();
+        return 0;
+    }
+    interface = qobject_cast<KoReportPluginInterface*>(loader->instance());
+    if (!interface) {
+        qWarning() << "Could not create instance of plugin" << loader->fileName();
+        return 0;
+    }
+    return interface;
+}
+
+// ---
+
+KoReportPluginManager::Private::~Private()
 {
     delete m_parent;
 }
 
 template<class PluginClass>
-void KoReportPluginManagerPrivate::addBuiltInPlugin()
+void KoReportPluginManager::Private::addBuiltInPlugin()
 {
     ReportPluginEntry *entry = new ReportPluginEntry;
     entry->interface = new PluginClass(m_parent);
+    q->setBuiltIn(entry->interface, true);
     plugins.insert(QLatin1String(entry->interface->info()->className()), entry);
 }
 
@@ -155,7 +133,7 @@ loadPlugin(KService::Ptr service)
     return plugin;
 #endif
 
-void KoReportPluginManagerPrivate::findPlugins()
+void KoReportPluginManager::Private::findPlugins()
 {
     //qDebug() << "Load all plugins";
     const QList<QPluginLoader*> offers = KReportJsonTrader::self()->query(QLatin1String("KReport/Element"));
@@ -178,4 +156,63 @@ void KoReportPluginManagerPrivate::findPlugins()
         entry->loader = loader;
         plugins.insert(pluginName, entry);
     }
+}
+
+// ---
+
+KoReportPluginManager::KoReportPluginManager()
+    : d(new Private(this))
+{
+}
+
+KoReportPluginManager::~KoReportPluginManager()
+{
+    delete d;
+}
+
+KoReportPluginManager* KoReportPluginManager::self()
+{
+    K_GLOBAL_STATIC(KoReportPluginManager, instance) // only instantiated when self() is called
+    return instance;
+}
+
+QStringList KoReportPluginManager::pluginNames() const
+{
+    return d->plugins.keys();
+}
+
+KoReportPluginInterface* KoReportPluginManager::plugin(const QString& p) const
+{
+    ReportPluginEntry *entry = d->plugins.value(p);
+    if (!entry) {
+        return 0;
+    }
+    return entry->plugin();
+}
+
+QList<QAction*> KoReportPluginManager::actions()
+{
+    QList<QAction*> actList;
+#if 0 //todo
+    KoReportDesigner designer;
+    const QMap<QString, KoReportPluginInterface*> plugins = d->plugins;
+
+    foreach(KoReportPluginInterface* plugin, plugins) {
+        KoReportPluginInfo *info = plugin->info();
+        if (info) {
+            KToggleAction *act = new KToggleAction(KIcon(info->icon()), info->name(), this);
+            act->setObjectName(QLatin1String(info->className()));
+
+            //Store the order priority in the user data field
+            act->setData(info->priority());
+            actList << act;
+        }
+    }
+#endif
+    return actList;
+}
+
+void KoReportPluginManager::setBuiltIn(KoReportPluginInterface* interface, bool set)
+{
+    interface->setBuiltIn(set);
 }

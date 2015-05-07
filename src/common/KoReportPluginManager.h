@@ -1,5 +1,6 @@
 /* This file is part of the KDE project
    Copyright (C) 2010 by Adam Pigg (adam@piggz.co.uk)
+   Copyright (C) 2015 Jarosław Staniek <staniek@kde.org>
 
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
@@ -24,8 +25,6 @@
 
 #include "KoReportPluginInterface.h"
 
-class KoReportPluginManagerPrivate;
-
 class KREPORT_EXPORT KoReportPluginManager : public QObject
 {
     Q_OBJECT
@@ -33,15 +32,21 @@ class KREPORT_EXPORT KoReportPluginManager : public QObject
         static KoReportPluginManager* self();
 
         QStringList pluginNames() const;
+
         KoReportPluginInterface* plugin(const QString& p) const;
+
         QList<QAction*> actions();
 
     private:
-        Q_DISABLE_COPY(KoReportPluginManager)
-        KoReportPluginManagerPrivate *const d;
-
         KoReportPluginManager();
+
         ~KoReportPluginManager();
+
+        void setBuiltIn(KoReportPluginInterface* interface, bool set);
+
+        Q_DISABLE_COPY(KoReportPluginManager)
+        class Private;
+        Private *const d;
 };
 
 #endif // KOREPORTPLUGINMANAGER_H
