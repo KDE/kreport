@@ -38,6 +38,7 @@ public:
 KoReportPluginInterface::KoReportPluginInterface(QObject* parent, const QVariantList& args)
  : QObject(parent), d(new Private)
 {
+    Q_UNUSED(args);
 }
 
 KoReportPluginInterface::~KoReportPluginInterface()

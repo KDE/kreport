@@ -38,13 +38,13 @@ KoReportItemBarcode::KoReportItemBarcode(QDomNode & element)
     QString n;
     QDomNode node;
 
-    m_name->setValue(element.toElement().attribute("report:name"));
-    m_controlSource->setValue(element.toElement().attribute("report:item-data-source"));
-    m_itemValue->setValue(element.toElement().attribute("report:value"));
-    Z = element.toElement().attribute("report:z-index").toDouble();
-    m_horizontalAlignment->setValue(element.toElement().attribute("report:horizontal-align"));
-    m_maxLength->setValue(element.toElement().attribute("report:barcode-max-length"));
-    m_format->setValue(element.toElement().attribute("report:barcode-format"));
+    m_name->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
+    m_itemValue->setValue(element.toElement().attribute(QLatin1String("report:value")));
+    Z = element.toElement().attribute(QLatin1String("report:z-index")).toDouble();
+    m_horizontalAlignment->setValue(element.toElement().attribute(QLatin1String("report:horizontal-align")));
+    m_maxLength->setValue(element.toElement().attribute(QLatin1String("report:barcode-max-length")));
+    m_format->setValue(element.toElement().attribute(QLatin1String("report:barcode-format")));
     parseReportRect(element.toElement(), &m_pos, &m_size);
 
 }
@@ -55,7 +55,7 @@ void KoReportItemBarcode::setMaxLength(int i)
         if (m_maxLength->value().toInt() != i) {
             m_maxLength->setValue(i);
         }
-        if (m_format->value().toString() == "3of9") {
+        if (m_format->value().toString() == QLatin1String("3of9")) {
             int C = i; // number of characters
             int N = 2; // narrow mult for wide line
             int X = 1; // narrow line width
@@ -65,7 +65,7 @@ void KoReportItemBarcode::setMaxLength(int i)
             /*if(min_height < 0.25)*/ m_minHeight = 0.25;
             m_minWidthTotal = m_minWidthData + 0.22; // added a little buffer to make sure we don't loose any
             // of our required quiet zone in conversions
-        } else if (m_format->value().toString() == "3of9+") {
+        } else if (m_format->value().toString() == QLatin1String("3of9+")) {
             int C = i * 2; // number of characters
             int N = 2; // narrow mult for wide line
             int X = 1; // 1px narrow line
@@ -75,14 +75,14 @@ void KoReportItemBarcode::setMaxLength(int i)
             /*if(min_height < 0.25)*/ m_minHeight = 0.25;
             m_minWidthTotal = m_minWidthData + 0.22; // added a little buffer to make sure we don't loose any
             // of our required quiet zone in conversions
-        } else if (m_format->value().toString() == "i2of5") {
+        } else if (m_format->value().toString() == QLatin1String("i2of5")) {
             int C = i * 2; // number of characters
             int N = 2; // narrow mult for wide line
             int X = 1; // 1px narrow line
             m_minWidthTotal = ((C * (2.0*N + 3.0) + 6.0 + N) * X);
             m_minHeight = 0.25;
             m_minWidthTotal = m_minWidthData + 0.22;
-        } else if (m_format->value().toString() == "128") {
+        } else if (m_format->value().toString() == QLatin1String("128")) {
             int C = i; // assuming 1:1 ratio of data passed in to data actually used in encoding
             int X = 1; // 1px wide
             m_minWidthData = (((11 * C) + 35) * X) / 100.0;       // assuming CODE A or CODE B
@@ -90,19 +90,19 @@ void KoReportItemBarcode::setMaxLength(int i)
             /*if(min_height < 0.25)*/ m_minHeight = 0.25;
             m_minWidthTotal = m_minWidthData + 0.22; // added a little bugger to make sure we don't loose any
             // of our required quiet zone in conversions
-        } else if (m_format->value().toString() == "upc-a") {
+        } else if (m_format->value().toString() == QLatin1String("upc-a")) {
             m_minWidthData = 0.95;
             m_minWidthTotal = 1.15;
             m_minHeight = 0.25;
-        } else if (m_format->value().toString() == "upc-e") {
+        } else if (m_format->value().toString() == QLatin1String("upc-e")) {
             m_minWidthData = 0.52;
             m_minWidthTotal = 0.70;
             m_minHeight = 0.25;
-        } else if (m_format->value().toString() == "ean13") {
+        } else if (m_format->value().toString() == QLatin1String("ean13")) {
             m_minWidthData = 0.95;
             m_minWidthTotal = 1.15;
             m_minHeight = 0.25;
-        } else if (m_format->value().toString() == "ean8") {
+        } else if (m_format->value().toString() == QLatin1String("ean8")) {
             m_minWidthData = 0.67;
             m_minWidthTotal = 0.90;
             m_minHeight = 0.25;
@@ -114,25 +114,39 @@ void KoReportItemBarcode::setMaxLength(int i)
 
 void KoReportItemBarcode::createProperties()
 {
-    m_set = new KPropertySet(0, "Barcode");
+    m_set = new KPropertySet(0, QLatin1String("Barcode"));
 
     QStringList keys, strings;
 
-    m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), i18n("Data Source"));
+    m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(),
+                                    QString(), tr("Data Source"));
 
-    m_itemValue = new KProperty("value", QString(), i18n("Value"), i18n("Value used if not bound to a field"));
+    m_itemValue = new KProperty("value", QString(), tr("Value"),
+                                tr("Value used if not bound to a field"));
 
-    keys << "left" << "center" << "right";
-    strings << i18n("Left") << i18n("Center") << i18n("Right");
-    m_horizontalAlignment = new KProperty("horizontal-align", keys, strings, "left", i18n("Horizontal Alignment"));
+    keys << QLatin1String("left") << QLatin1String("center") << QLatin1String("right");
+    strings << tr("Left") << tr("Center") << tr("Right");
+    m_horizontalAlignment = new KProperty("horizontal-align", keys, strings,
+                                          QLatin1String("left"), tr("Horizontal Alignment"));
 
     keys.clear();
     strings.clear();
-    keys << "3of9" << "3of9+" << "128" << "ean8" << "ean13" << "i2of5" << "upc-a" << "upc-e";
-    strings << i18nc("Barcode symbology, keep short", "Code 3 of 9") << i18nc("Barcode symbology, keep short", "Code 3 of 9 Ext.") << i18nc("Barcode symbology, keep short", "Code 128") << i18nc("Barcode symbology, keep short", "EAN-8") << i18nc("Barcode symbology, keep short", "EAN-13") << i18nc("Barcode symbology, keep short", "Interleaved 2 of 5") << i18nc("Barcode symbology, keep short", "UPC-A") << i18nc("Barcode symbology, keep short", "UPC-E");
-    m_format = new KProperty("barcode-format", keys, strings, "3of9", i18n("Barcode Format"));
+    keys << QLatin1String("3of9") << QLatin1String("3of9+") << QLatin1String("128")
+         << QLatin1String("ean8") << QLatin1String("ean13") << QLatin1String("i2of5")
+         << QLatin1String("upc-a") << QLatin1String("upc-e");
+    strings << tr("Code 3 of 9", "Barcode symbology, keep short")
+            << tr("Code 3 of 9 Ext.", "Barcode symbology, keep short")
+            << tr("Code 128", "Barcode symbology, keep short")
+            << tr("EAN-8", "Barcode symbology, keep short")
+            << tr("EAN-13", "Barcode symbology, keep short")
+            << tr("Interleaved 2 of 5", "Barcode symbology, keep short")
+            << tr("UPC-A", "Barcode symbology, keep short")
+            << tr("UPC-E", "Barcode symbology, keep short");
+    m_format = new KProperty("barcode-format", keys, strings, QLatin1String("3of9"),
+                             tr("Barcode Format"));
 
-    m_maxLength = new KProperty("barcode-max-length", 5, i18n("Max Length"), i18n("Maximum Barcode Length"));
+    m_maxLength = new KProperty("barcode-max-length", 5, tr("Max Length"),
+                                tr("Maximum Barcode Length"));
 
     addDefaultProperties();
     m_set->addProperty(m_controlSource);
@@ -149,7 +163,7 @@ KoReportItemBarcode::~KoReportItemBarcode()
 
 int KoReportItemBarcode::alignment()
 {
-    QString a = m_horizontalAlignment->value().toString();
+    QByteArray a = m_horizontalAlignment->value().toByteArray();
 
     if (a == "left")
         return 0;
@@ -189,7 +203,7 @@ void KoReportItemBarcode::setAlignment(int)
 //RTTI
 QString KoReportItemBarcode::typeName() const
 {
-    return "barcode";
+    return QLatin1String("barcode");
 }
 
 int KoReportItemBarcode::renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset,
@@ -213,7 +227,7 @@ int KoReportItemBarcode::renderSimpleData(OROPage *page, OROSection *section, co
     }
     
     if (page) {
-        QString fmt = m_format->value().toString();
+        QByteArray fmt = m_format->value().toByteArray();
         int align = alignment();
         if (fmt == "3of9")
             render3of9(page, rect, val, align);

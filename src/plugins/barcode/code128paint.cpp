@@ -199,7 +199,7 @@ void renderCode128(const QRect & r, const QString & _str, int align, QPainter * 
             c = _str.at(i);
             rank_a += (code128IndexP(c, SETA) != -1 ? 1 : 0);
             rank_b += (code128IndexP(c, SETB) != -1 ? 1 : 0);
-            rank_c += (c >= '0' && c <= '9' ? 1 : 0);
+            rank_c += (c >= QLatin1Char('0') && c <= QLatin1Char('9') ? 1 : 0);
         }
         if (rank_c == _str.length() && ((rank_c % 2) == 0 || rank_c > 4)) {
             // every value in the is a digit so we are going to go with mode C

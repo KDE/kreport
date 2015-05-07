@@ -205,12 +205,12 @@ void renderCodeEAN13(const QRect & r, const QString & _str, int align, QPainter 
         pos += 2;
         pPainter->fillRect(pos, top, 1, draw_height, pPainter->pen().color());
 
-        QString parstr = QString("%1").arg(val[0]);
+        QString parstr = QString::number(val[0]);
         QString leftstr = QString().sprintf("%d%d%d%d%d%d",
                                             val[1], val[2], val[3], val[4], val[5], val[6]);
         QString rightstr = QString().sprintf("%d%d%d%d%d%d",
                                              val[7], val[8], val[9], val[10], val[11], val[12]);
-        pPainter->setFont(QFont("Arial", 6));
+        pPainter->setFont(QFont(QLatin1String("Arial"), 6));
         pPainter->drawText(r.left(), r.top() + draw_height - 12,
                            quiet_zone - 2, 12, Qt::AlignRight | Qt::AlignTop,
                            parstr);
@@ -354,13 +354,13 @@ void renderCodeUPCA(const QRect & r, const QString & _str, int align, QPainter *
         pos += 2;
         pPainter->fillRect(pos, top, 1, draw_height, pPainter->pen().color());
 
-        QString parstr = QString("%1").arg(val[1]);
-        QString chkstr = QString("%1").arg(val[12]);
+        QString parstr = QString::number(val[1]);
+        QString chkstr = QString::number(val[12]);
         QString leftstr = QString().sprintf("%d%d%d%d%d",
                                             val[2], val[3], val[4], val[5], val[6]);
         QString rightstr = QString().sprintf("%d%d%d%d%d",
                                              val[7], val[8], val[9], val[10], val[11]);
-        pPainter->setFont(QFont("Arial", 6));
+        pPainter->setFont(QFont(QLatin1String("Arial"), 6));
         pPainter->drawText(r.left(), r.top() + draw_height - 12,
                            quiet_zone - 2, 12, Qt::AlignRight | Qt::AlignTop,
                            parstr);
@@ -510,7 +510,7 @@ void renderCodeEAN8(const QRect & r, const QString & _str, int align, QPainter *
                                             val[0], val[1], val[2], val[3]);
         QString rightstr = QString().sprintf("%d%d%d%d",
                                              val[4], val[5], val[6], val[7]);
-        pPainter->setFont(QFont("Arial", 6));
+        pPainter->setFont(QFont(QLatin1String("Arial"), 6));
         pPainter->drawText(r.left() + quiet_zone + 3,
                            (r.top() + draw_height) - 6,
                            28, 10, Qt::AlignHCenter | Qt::AlignTop,
@@ -629,11 +629,11 @@ void renderCodeUPCE(const QRect & r, const QString & _str, int align, QPainter *
         // render close guard
         pPainter->fillRect(pos, top, 1, draw_height, pPainter->pen().color());
 
-        QString parstr = QString("%1").arg(val[0]);
-        QString chkstr = QString("%1").arg(val[7]);
+        QString parstr = QString::number(val[0]);
+        QString chkstr = QString::number(val[7]);
         QString leftstr = QString().sprintf("%d%d%d%d%d%d",
                                             val[1], val[2], val[3], val[4], val[5], val[6]);
-        pPainter->setFont(QFont("Arial", 6));
+        pPainter->setFont(QFont(QLatin1String("Arial"), 6));
         pPainter->drawText(r.left(), r.top() + draw_height - 12,
                            quiet_zone - 2, 12, Qt::AlignRight | Qt::AlignTop,
                            parstr);

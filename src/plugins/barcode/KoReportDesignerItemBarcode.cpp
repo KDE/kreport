@@ -68,7 +68,7 @@ KoReportDesignerItemBarcode::KoReportDesignerItemBarcode(QDomNode & element, KoR
 KoReportDesignerItemBarcode* KoReportDesignerItemBarcode::clone()
 {
     QDomDocument d;
-    QDomElement e = d.createElement("clone");
+    QDomElement e = d.createElement(QLatin1String("clone"));
     QDomNode n;
     buildXML(d, e);
     n = e.firstChild();
@@ -82,10 +82,14 @@ KoReportDesignerItemBarcode::~KoReportDesignerItemBarcode()
 QRect KoReportDesignerItemBarcode::getTextRect()
 {
     QFont fnt = QFont();
-    return QFontMetrics(fnt).boundingRect(int (x()), int (y()), 0, 0, 0, dataSourceAndObjectTypeName(itemDataSource(), "barcode"));
+    return QFontMetrics(fnt)
+            .boundingRect(int (x()), int (y()), 0, 0, 0,
+                          dataSourceAndObjectTypeName(itemDataSource(), QLatin1String("barcode")));
 }
 
-void KoReportDesignerItemBarcode::paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget)
+void KoReportDesignerItemBarcode::paint(QPainter* painter,
+                                        const QStyleOptionGraphicsItem* option,
+                                        QWidget* widget)
 {
     Q_UNUSED(option);
     Q_UNUSED(widget);
@@ -101,25 +105,28 @@ void KoReportDesignerItemBarcode::paint(QPainter* painter, const QStyleOptionGra
 
     drawHandles(painter);
 
-    if (m_format->value().toString() == "i2of5")
+    QByteArray fmt = m_format->value().toByteArray();
+    if (fmt == "i2of5") {
         renderI2of5(rect().toRect(), m_renderText, alignment(), painter);
-    else if (m_format->value().toString() == "3of9")
+    } else if (fmt == "3of9") {
         render3of9(rect().toRect(), m_renderText, alignment(), painter);
-    else if (m_format->value().toString() == "3of9+")
+    } else if (fmt == "3of9+") {
         renderExtended3of9(rect().toRect(), m_renderText, alignment(), painter);
-    else if (m_format->value().toString() == "128")
+    } else if (fmt == "128") {
         renderCode128(rect().toRect(), m_renderText, alignment(), painter);
-    else if (m_format->value().toString() == "upc-a")
+    } else if (fmt == "upc-a") {
         renderCodeUPCA(rect().toRect(), m_renderText, alignment(), painter);
-    else if (m_format->value().toString() == "upc-e")
+    } else if (fmt == "upc-e") {
         renderCodeUPCE(rect().toRect(), m_renderText, alignment(), painter);
-    else if (m_format->value().toString() == "ean13")
+    } else if (fmt == "ean13") {
         renderCodeEAN13(rect().toRect(), m_renderText, alignment(), painter);
-    else if (m_format->value().toString() == "ean8")
+    } else if (fmt == "ean8") {
         renderCodeEAN8(rect().toRect(), m_renderText, alignment(), painter);
+    }
 
     painter->setPen(Qt::black);
-    painter->drawText(rect(), 0, dataSourceAndObjectTypeName(itemDataSource(), "barcode"));
+    painter->drawText(rect(), 0, dataSourceAndObjectTypeName(itemDataSource(),
+                                                             QLatin1String("barcode")));
 
     // restore an values before we started just in case
     painter->setPen(p);
@@ -136,7 +143,7 @@ void KoReportDesignerItemBarcode::buildXML(QDomDocument & doc, QDomElement & par
     addPropertyAsAttribute(&entity, m_horizontalAlignment);
     addPropertyAsAttribute(&entity, m_format);
     addPropertyAsAttribute(&entity, m_maxLength);
-    entity.setAttribute("report:z-index", zValue());
+    entity.setAttribute(QLatin1String("report:z-index"), zValue());
     addPropertyAsAttribute(&entity, m_itemValue);
 
     // bounding rect

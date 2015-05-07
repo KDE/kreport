@@ -25,23 +25,24 @@
 #include "krscriptbarcode.h"
 #endif
 
-#include <KoIcon.h>
+#include <QIcon>
 
-K_EXPORT_KOREPORT_ITEMPLUGIN(KoReportBarcodePlugin, barcodeplugin)
+KREPORT_PLUGIN_FACTORY(KoReportBarcodePlugin, "kreport_barcodeplugin.json")
 
-KoReportBarcodePlugin::KoReportBarcodePlugin(QObject *parent, const QVariantList &/*args */) : KoReportPluginInterface(parent)
+KoReportBarcodePlugin::KoReportBarcodePlugin(QObject *parent, const QVariantList &args)
+    : KoReportPluginInterface(parent)
 {
+    Q_UNUSED(args);
     KoReportPluginInfo *info = new KoReportPluginInfo();
     info->setClassName("barcode");
-    info->setIcon(koIcon("report_barcode_element"));
-    info->setName(i18n("Barcode"));
+    info->setIcon(QIcon::fromTheme(QLatin1String("report_barcode_element")));
+    info->setName(tr("Barcode"));
     info->setPriority(50);
     setInfo(info);
 }
 
 KoReportBarcodePlugin::~KoReportBarcodePlugin()
 {
-
 }
 
 QObject* KoReportBarcodePlugin::createRendererInstance(QDomNode& element)
@@ -69,3 +70,5 @@ QObject* KoReportBarcodePlugin::createScriptInstance(KoReportItemBase* item)
     return 0;
 }
 #endif
+
+#include "KoReportBarcodePlugin.moc"

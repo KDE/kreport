@@ -69,7 +69,7 @@ void renderI2of5(const QRectF &r, const QString & _str, int align, QPainter * pP
     int wide_bar = narrow_bar * bar_width_mult;
 
     if (str.length() % 2) {
-        str = "0" + str; // padding zero if number of characters is not even
+        str = QLatin1Char('0')+ str; // padding zero if number of characters is not even
     }
 
     // this is our mandatory minimum quiet zone

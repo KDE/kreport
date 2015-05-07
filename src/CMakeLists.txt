@@ -4,6 +4,7 @@ find_package(KF5Kross REQUIRED)
 option(KREPORT_SCRIPTING "Enable scripting" OFF)
 configure_file(config-kreport.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kreport.h)
 
+add_subdirectory(plugins)
 #add_subdirectory(pics)
 
 set(kreport_LIB_SRCS

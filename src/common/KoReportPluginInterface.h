@@ -24,6 +24,8 @@
 #include "config-kreport.h"
 #include "wrtembed/KoReportDesigner.h"
 
+#include <KPluginFactory>
+
 class QGraphicsScene;
 class KoReportPluginInfo;
 
@@ -59,8 +61,7 @@ class KREPORT_EXPORT KoReportPluginInterface : public QObject
         Private * const d;
 };
 
-//! Implementation of driver's static version information and plugin entry point.
-//! @todo better versioning
-//#define K_EXPORT_KOREPORT_ITEMPLUGIN( class_name, internal_name ) KEXI_EXPORT_PLUGIN( "koreport", class_name, internal_name, 0, 0, 1 )
+#define KREPORT_PLUGIN_FACTORY(class_name, name) \
+    K_PLUGIN_FACTORY_WITH_JSON(class_name ## Factory, name, registerPlugin<class_name>();)
 
 #endif // KREPORTPLUGININTERFACE_H

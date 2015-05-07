@@ -247,12 +247,12 @@ void renderCodeEAN13(OROPage * page, const QRectF & r, const QString & _str, int
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
     page->addPrimitive(rect);
 
-    QString parstr = QString("%1").arg(val[0]);
+    QString parstr = QString::fromLatin1("%1").arg(val[0]);
     QString leftstr = QString().sprintf("%d%d%d%d%d%d",
                                         val[1], val[2], val[3], val[4], val[5], val[6]);
     QString rightstr = QString().sprintf("%d%d%d%d%d%d",
                                          val[7], val[8], val[9], val[10], val[11], val[12]);
-    QFont font("Arial", 6);
+    QFont font(QLatin1String("Arial"), 6);
 
     OROTextBox * tb = new OROTextBox();
     tb->setPosition(QPointF(r.left(), r.top() + draw_height - 0.12));
@@ -441,14 +441,14 @@ void renderCodeUPCA(OROPage * page, const QRectF & r, const QString & _str, int 
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
     page->addPrimitive(rect);
 
-    QString parstr = QString("%1").arg(val[1]);
-    QString chkstr = QString("%1").arg(val[12]);
+    QString parstr = QString::number(val[1]);
+    QString chkstr = QString::number(val[12]);
     QString leftstr = QString().sprintf("%d%d%d%d%d",
                                         val[2], val[3], val[4], val[5], val[6]);
     QString rightstr = QString().sprintf("%d%d%d%d%d",
                                          val[7], val[8], val[9], val[10], val[11]);
 
-    QFont font("Arial", 6);
+    QFont font(QLatin1String("Arial"), 6);
     KRTextStyleData ts;
     ts.backgroundColor = Qt::white;
     ts.font = font;
@@ -654,7 +654,7 @@ void renderCodeEAN8(OROPage * page, const QRectF & r, const QString & _str, int 
                                         val[0], val[1], val[2], val[3]);
     QString rightstr = QString().sprintf("%d%d%d%d",
                                          val[4], val[5], val[6], val[7]);
-    QFont font("Arial", 6);
+    QFont font(QLatin1String("Arial"), 6);
     OROTextBox * tb = new OROTextBox();
 
     tb->setPosition(QPointF(r.left() + quiet_zone + 0.03, (r.top() + draw_height) - 0.06));
@@ -807,11 +807,11 @@ void renderCodeUPCE(OROPage * page, const QRectF & r, const QString & _str, int 
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
     page->addPrimitive(rect);
 
-    QString parstr = QString("%1").arg(val[0]);
-    QString chkstr = QString("%1").arg(val[7]);
+    QString parstr = QString::number(val[0]);
+    QString chkstr = QString::number(val[7]);
     QString leftstr = QString().sprintf("%d%d%d%d%d%d",
                                         val[1], val[2], val[3], val[4], val[5], val[6]);
-    QFont font("Arial", 6);
+    QFont font(QLatin1String("Arial"), 6);
     KRTextStyleData ts;
     ts.backgroundColor = Qt::white;
     ts.font = font;

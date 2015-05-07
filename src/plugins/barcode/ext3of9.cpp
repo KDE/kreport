@@ -1,6 +1,7 @@
 /* This file is part of the KDE project
  * Copyright (C) 2001-2007 by OpenMFG, LLC (info@openmfg.com)
  * Copyright (C) 2007-2008 by Adam Pigg (adam@piggz.co.uk)
+ * Copyright (C) 2015 Jarosław Staniek <staniek@kde.org>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -30,11 +31,12 @@
 class _ext3of9map
 {
 public:
-    _ext3of9map(const char c, const QString & s) {
-        code = c; conversion = s;
+    _ext3of9map(const char c, const char *s)
+        : code(c), conversion(QLatin1String(s))
+    {
     }
-    char code;
-    QString conversion;
+    const char code;
+    const QString conversion;
 };
 const _ext3of9map ext3of9map[] = {
     _ext3of9map('\0' , "%U"),   // NUL
@@ -169,25 +171,24 @@ const _ext3of9map ext3of9map[] = {
     _ext3of9map(-1 , 0)
 };
 
-QString convertTo3of9(QChar c)
+inline QString convertTo3of9(char code)
 {
-    const char code = c.toLatin1();
     for (int i = 0; !ext3of9map[i].conversion.isEmpty(); i++)
         if (ext3of9map[i].code == code)
             return ext3of9map[i].conversion;
     return QString();
 }
 
+QString convertTo3of9(const QString &str)
+{
+    QString result;
+    for (int i = 0; i < str.length(); i++) {
+        result += convertTo3of9(str.at(i).toLatin1());
+    }
+    return result;
+}
 
 void renderExtended3of9(OROPage * page, const QRectF & r, const QString & str, int align)
 {
-    QString new_str;
-    QChar c;
-
-    for (int i = 0; i < str.length(); i++) {
-        c = str.at(i);
-        new_str += convertTo3of9(c);
-    }
-
-    render3of9(page, r, new_str, align);
+    render3of9(page, r, convertTo3of9(str), align);
 }

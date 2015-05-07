@@ -18,7 +18,7 @@
 #ifndef KRBARCODEDATA_H
 #define KRBARCODEDATA_H
 
-#include <KoReportItemBase.h>
+#include "KoReportItemBase.h"
 #include <krpos.h>
 #include <krsize.h>
 
