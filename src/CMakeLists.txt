@@ -129,6 +129,7 @@ target_link_libraries(KReport
     PUBLIC
         Qt5::PrintSupport
         Qt5::Xml
+        KF5::CoreAddons
         KProperty
     PRIVATE
         KF5::WidgetsAddons
