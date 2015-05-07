@@ -146,14 +146,18 @@ set_target_properties(KReport
                EXPORT_NAME KReport
 )
 
-# Create a Config.cmake and a ConfigVersion.cmake file and install them
-set(CMAKECONFIG_INSTALL_DIR "${CMAKECONFIG_INSTALL_PREFIX}/KReport")
-
 ecm_setup_version(${KREPORT_VERSION}
     VARIABLE_PREFIX KREPORT
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/kreport_version.h"
     PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KReportConfigVersion.cmake"
 )
+
+install(TARGETS KReport
+        EXPORT KReportTargets
+        ${INSTALL_TARGETS_DEFAULT_ARGS})
+
+# Create a Config.cmake and a ConfigVersion.cmake file and install them
+set(CMAKECONFIG_INSTALL_DIR "${CMAKECONFIG_INSTALL_PREFIX}/KReport")
 
 ecm_configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KReportConfig.cmake.in"
@@ -167,13 +171,9 @@ install(FILES
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
         COMPONENT Devel)
 
-#install(TARGETS KReport
-#        EXPORT KReportTargets
-#        "${INSTALL_TARGETS_DEFAULT_ARGS}")
-
-#install(EXPORT KReportTargets
-#        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
-#        FILE KReportTargets.cmake)
+install(EXPORT KReportTargets
+        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+        FILE KReportTargets.cmake)
 
 ecm_generate_pri_file(
     BASE_NAME KReport
@@ -222,4 +222,3 @@ install(
     DESTINATION ${INCLUDE_INSTALL_DIR}/KReport/KReport
     COMPONENT Devel
 )
-
