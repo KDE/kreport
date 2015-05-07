@@ -37,12 +37,11 @@ class KREPORT_EXPORT KoReportPluginManager : public QObject
         QList<QAction*> actions();
 
     private:
+        Q_DISABLE_COPY(KoReportPluginManager)
         KoReportPluginManagerPrivate *const d;
 
         KoReportPluginManager();
         ~KoReportPluginManager();
-        KoReportPluginManager(const KoReportPluginManager &);
-        KoReportPluginManager & operator=(const KoReportPluginManager &);
 };
 
 #endif // KOREPORTPLUGINMANAGER_H
