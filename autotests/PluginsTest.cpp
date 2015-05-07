@@ -23,6 +23,7 @@
 #include <QtTest/QTest>
 #include <QDebug>
 #include <QSet>
+#include <QList>
 
 QTEST_MAIN(PluginsTest)
 
@@ -44,4 +45,79 @@ void PluginsTest::listPlugins()
         //QVERIFY(!iface->info()->icon().isNull());
         QVERIFY(!iface->info()->name().isEmpty());
     }
+}
+
+//! Compares @a actual and @a expected set, fails when not equal
+//! On failure, all elements are displayed.
+#define QCOMPARE_SET(type, actual, expected) \
+do { \
+    if (actual == expected) { \
+        break; \
+    } \
+    QTest::qFail(#actual " != " #expected, __FILE__, __LINE__); \
+    QList<type> actualList = actual.toList(); \
+    QList<type> expectedList = expected.toList(); \
+    qSort(actualList); \
+    qSort(expectedList); \
+    QList<type>::ConstIterator actualListIt = actualList.constBegin(); \
+    QList<type>::ConstIterator expectedListIt = expectedList.constBegin(); \
+    const int count = qMax(actualList.count(), expectedList.count()); \
+    int i = 0; \
+    bool stop; \
+    forever { \
+        stop = true; \
+        QByteArray sign = "!="; \
+        QString v1; \
+        if (actualListIt == actualList.constEnd()) { \
+            v1 = "<none>"; \
+        } \
+        else { \
+            v1 = QVariant(*actualListIt).toString(); \
+            stop = false; \
+        } \
+        QString v2; \
+        if (expectedListIt == expectedList.constEnd()) { \
+            v2 = "<none>"; \
+        } \
+        else { \
+            v2 = QVariant(*expectedListIt).toString(); \
+            stop = false; \
+            if (actualListIt != actualList.constEnd()) { \
+                if (*actualListIt == *expectedListIt) { \
+                    sign = "=="; \
+                } \
+            } \
+        } \
+        if (stop) { \
+            break; \
+        } \
+        qDebug() << QString("Actual/expected item %1 of %2: %3 %4 %5").arg(i + 1).arg(count) \
+                    .arg(v1).arg(sign.constData()).arg(v2).toUtf8().constData(); \
+        if (actualListIt != actualList.constEnd()) { \
+            ++actualListIt; \
+        } \
+        if (expectedListIt != expectedList.constEnd()) { \
+            ++expectedListIt; \
+        } \
+        ++i; \
+    } \
+    return; \
+} while (0)
+
+void PluginsTest::checkBuiltInPlugins()
+{
+    KoReportPluginManager* manager = KoReportPluginManager::self();
+    QStringList pluginNames = manager->pluginNames();
+    QCOMPARE(pluginNames.toSet().count(), pluginNames.count());
+    QSet<QString> builtInPlugins(
+        QSet<QString>() << "check" << "field" << "image" << "label" << "text");
+    QSet<QString> foundBuiltInPlugins;
+    foreach(const QString &pluginName, pluginNames) {
+        KoReportPluginInterface* iface = manager->plugin(pluginName);
+        QVERIFY(iface);
+        if (iface->isBuiltIn()) {
+            foundBuiltInPlugins.insert(pluginName);
+        }
+    }
+    QCOMPARE_SET(QString, builtInPlugins, foundBuiltInPlugins);
 }

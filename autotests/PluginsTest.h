@@ -26,6 +26,7 @@ class PluginsTest : public QObject
 private Q_SLOTS:
     void initTestCase();
     void listPlugins();
+    void checkBuiltInPlugins();
 };
 
 #endif
