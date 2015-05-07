@@ -1,12 +1,5 @@
 include_directories(
-    ${PROJECT_BINARY_DIR}/src/kreport/common
-    ${PROJECT_BINARY_DIR}/src/kreport/wrtembed
-    ${PROJECT_BINARY_DIR}/src/kreport/renderer
-    ${PROJECT_BINARY_DIR}/src/kreport/renderer/scripting
-    ${PROJECT_SOURCE_DIR}/src/common
-    ${PROJECT_SOURCE_DIR}/src/wrtembed
-    ${PROJECT_SOURCE_DIR}/src/renderer
-    ${PROJECT_SOURCE_DIR}/src/renderer/scripting
+    ${KREPORT_INTERNAL_INCLUDE_DIRS}
 )
 
 remove_definitions(

@@ -32,6 +32,17 @@ find_package(KF5WidgetsAddons REQUIRED)
 find_package(KF5GuiAddons REQUIRED)
 find_package(KProperty REQUIRED)
 
+set(KREPORT_INTERNAL_INCLUDE_DIRS
+    ${PROJECT_BINARY_DIR}/src/kreport/common
+    ${PROJECT_BINARY_DIR}/src/kreport/wrtembed
+    ${PROJECT_BINARY_DIR}/src/kreport/renderer
+    ${PROJECT_BINARY_DIR}/src/kreport/renderer/scripting
+    ${PROJECT_SOURCE_DIR}/src/common
+    ${PROJECT_SOURCE_DIR}/src/wrtembed
+    ${PROJECT_SOURCE_DIR}/src/renderer
+    ${PROJECT_SOURCE_DIR}/src/renderer/scripting
+)
+
 if(BUILD_TESTING)
     add_subdirectory( autotests )
     #add_subdirectory( tests )

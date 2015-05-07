@@ -1,5 +1,5 @@
 include_directories(
-    ${KOREPORT_INCLUDES}
+    ${KREPORT_INTERNAL_INCLUDE_DIRS}
 )
 
 set(kreport_barcodeplugin_LIB_SRCS
