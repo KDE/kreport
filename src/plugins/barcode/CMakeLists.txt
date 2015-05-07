@@ -2,8 +2,7 @@ include_directories(
     ${KOREPORT_INCLUDES}
 )
 
-#build a shared library
-set(koreport_barcodeplugin_LIB_SRCS
+set(kreport_barcodeplugin_LIB_SRCS
     KoReportItemBarcode.cpp
     KoReportDesignerItemBarcode.cpp
     krscriptbarcode.cpp
@@ -20,16 +19,13 @@ set(koreport_barcodeplugin_LIB_SRCS
     KoReportBarcodePlugin.cpp
 )
 
-add_library(koreport_barcodeplugin MODULE ${koreport_barcodeplugin_LIB_SRCS})
-kcoreaddons_desktop_to_json(koreport_barcodeplugin koreport_barcodeplugin.desktop)
+add_library(kreport_barcodeplugin MODULE ${kreport_barcodeplugin_LIB_SRCS})
+kcoreaddons_desktop_to_json(kreport_barcodeplugin kreport_barcodeplugin.desktop)
 
-target_link_libraries(koreport_barcodeplugin
-    KProperty
-    ${KOREPORT_LIBS}
+target_link_libraries(kreport_barcodeplugin
+    PUBLIC
+        KReport
 )
 
-
-########### install files ###############
-
-install(TARGETS koreport_barcodeplugin  DESTINATION ${PLUGIN_INSTALL_DIR})
-ecm_install_icons(${DATA_INSTALL_DIR}/calligra/icons)
+#install(TARGETS kreport_barcodeplugin  DESTINATION ${PLUGIN_INSTALL_DIR})
+#ecm_install_icons(${DATA_INSTALL_DIR}/calligra/icons)
