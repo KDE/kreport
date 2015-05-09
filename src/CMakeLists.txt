@@ -121,7 +121,19 @@ generate_export_header(KReport)
 
 #qt5_use_modules(KReport Widgets Xml PrintSupport)
 
+set(kreport_INCLUDE_DIRS
+    ${CMAKE_CURRENT_BINARY_DIR}/kreport/common
+    ${CMAKE_CURRENT_BINARY_DIR}/kreport/wrtembed
+    ${CMAKE_CURRENT_BINARY_DIR}/kreport/renderer
+    ${CMAKE_CURRENT_BINARY_DIR}/kreport/renderer/scripting
+    ${CMAKE_CURRENT_SOURCE_DIR}/common
+    ${CMAKE_CURRENT_SOURCE_DIR}/wrtembed
+    ${CMAKE_CURRENT_SOURCE_DIR}/renderer
+    ${CMAKE_CURRENT_SOURCE_DIR}/renderer/scripting
+)
+
 target_include_directories(KReport
+    PUBLIC "$<BUILD_INTERFACE:${kreport_INCLUDE_DIRS}>"
     INTERFACE "$<INSTALL_INTERFACE:${INCLUDE_INSTALL_DIR}/KReport>"
     PRIVATE common renderer renderer/scripting wrtembed
 )
@@ -205,7 +217,30 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
         common/KoReportItemLine
         common/KoReportPluginInfo
         common/KoReportPluginManager
+        common/KoReportPluginInterface
         common/KoUnit
+        common/krsize
+        common/krpos
+        common/krreportdata
+        common/reportpageoptions
+        common/renderobjects
+        common/KoReportASyncItemBase
+
+        renderer/KoReportPage
+        renderer/KoReportRendererBase
+        renderer/KoReportPreRenderer
+
+        wrtembed/KoZoomMode
+        wrtembed/reportsectiondetail
+        wrtembed/reportsection
+        wrtembed/KoDpi
+        wrtembed/KoZoomHandler
+        wrtembed/KoReportDesignerItemBase
+        wrtembed/reportsectiondetailgroup
+        wrtembed/KoRuler
+        wrtembed/KoViewConverter
+        wrtembed/KoReportDesignerItemRectBase
+        wrtembed/KoReportDesigner
     REQUIRED_HEADERS kreport_HEADERS
 )
 

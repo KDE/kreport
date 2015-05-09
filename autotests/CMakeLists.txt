@@ -1,7 +1,3 @@
-include_directories(
-    ${KREPORT_INTERNAL_INCLUDE_DIRS}
-)
-
 remove_definitions(
     -DQT_NO_KEYWORDS
     -DQT_NO_SIGNALS_SLOTS_KEYWORDS
