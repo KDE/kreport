@@ -1,5 +1,5 @@
 /* This file is part of the KDE project
-   Copyright (C) 2015 Jarosław Staniek <staniek@kde.org>
+   Copyright (C) 2015 by Adam Pigg <adam@piggz.co.uk>
 
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
@@ -17,26 +17,31 @@
    Boston, MA 02110-1301, USA.
 */
 
-#include <QApplication>
+#ifndef DESIGNERWINDOW_H
+#define DESIGNERWINDOW_H
 
-#include "window.h"
-#include "designerwindow.h"
+#include <qt5/QtWidgets/QMainWindow>
 
-static const char description[] = "An example application for the KReport library";
-static const char version[] = "0.2";
+class QScrollArea;
+class KoReportDesigner;
 
-int main(int argc, char **argv)
+#include <kproperty/KPropertySet.h>
+
+class DesignerWindow : public QMainWindow
 {
-    QApplication app(argc, argv);
+    Q_OBJECT
 
-    QCoreApplication::setApplicationName("KReportExample");
-    QCoreApplication::setApplicationVersion(version);
+public:
+    DesignerWindow();
+    ~DesignerWindow();
 
-    Window window;
-    window.show();
+private:
+    QScrollArea * m_scrollArea;
+    KoReportDesigner *m_reportDesigner;
+    KPropertySet *m_propertySet;
 
-    DesignerWindow dWindow;
-    dWindow.show();
-    
-    return app.exec();
-}
+    QToolBar *m_mainToolbar;
+    QToolBar *m_itemToolbar;
+};
+
+#endif // DESIGNERWINDOW_H
