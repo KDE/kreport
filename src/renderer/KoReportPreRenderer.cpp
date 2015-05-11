@@ -393,9 +393,10 @@ void KoReportPreRendererPrivate::asyncItemsFinished()
 
 //===========================KoReportPreRenderer===============================
 
-KoReportPreRenderer::KoReportPreRenderer(const QDomElement & pDocument) : d(new KoReportPreRendererPrivate())
+KoReportPreRenderer::KoReportPreRenderer(const QDomElement & document)
+    : d(new KoReportPreRendererPrivate())
 {
-    setDom(pDocument);
+    setDocument(document);
 }
 
 KoReportPreRenderer::~KoReportPreRenderer()
@@ -619,20 +620,18 @@ void KoReportPreRenderer::setSourceData(KoReportData *data)
     }
 }
 
-bool KoReportPreRenderer::setDom(const QDomElement &docReport)
+bool KoReportPreRenderer::setDocument(const QDomElement &document)
 {
-    if (d) {
-        delete d->m_reportData;
-        d->m_valid = false;
+    delete d->m_reportData;
+    d->m_valid = false;
 
-        if (docReport.tagName() != QLatin1String("report:content")) {
-            qWarning() << "report schema is invalid";
-            return false;
-        }
-
-        d->m_reportData = new KoReportReportData(docReport, this);
-        d->m_valid = d->m_reportData->isValid();
+    if (document.tagName() != QLatin1String("report:content")) {
+        qWarning() << "report schema is invalid";
+        return false;
     }
+
+    d->m_reportData = new KoReportReportData(document);
+    d->m_valid = d->m_reportData->isValid();
     return isValid();
 }
 

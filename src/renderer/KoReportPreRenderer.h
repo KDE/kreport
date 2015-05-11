@@ -36,10 +36,10 @@ class QDomElement;
 // This class takes a report definition and prerenders the result to
 // an ORODocument that can be used to pass to any number of renderers.
 //
-class KREPORT_EXPORT KoReportPreRenderer : public QObject
+class KREPORT_EXPORT KoReportPreRenderer
 {
 public:
-    explicit KoReportPreRenderer(const QDomElement&);
+    explicit KoReportPreRenderer(const QDomElement& document);
 
     virtual ~KoReportPreRenderer();
 
@@ -64,7 +64,7 @@ protected:
 
 private:
     KoReportPreRendererPrivate *const d;
-    bool setDom(const QDomElement &);
+    bool setDocument(const QDomElement &document);
     QMap<QString, QObject*> m_scriptObjects;
 };
 
