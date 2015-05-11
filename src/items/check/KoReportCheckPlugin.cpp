@@ -20,21 +20,14 @@
 #include "KoReportCheckPlugin.h"
 #include "KoReportItemCheck.h"
 #include "KoReportDesignerItemCheck.h"
-#include "common/KoReportPluginInfo.h"
+#include "common/KReportPluginMetaData.h"
 #include "KoReportScriptCheck.h"
 
-#include <QIcon>
+KREPORT_PLUGIN_FACTORY(KoReportCheckPlugin, "check.json")
 
-KoReportCheckPlugin::KoReportCheckPlugin(QObject *parent, const QVariantList &args) : KoReportPluginInterface(parent)
+KoReportCheckPlugin::KoReportCheckPlugin(QObject *parent, const QVariantList &args)
+    : KoReportPluginInterface(parent, args)
 {
-    Q_UNUSED(args)
-
-    KoReportPluginInfo *info = new KoReportPluginInfo();
-    info->setClassName("check");
-    info->setIcon(QIcon::fromTheme(QLatin1String("checkbox")));
-    info->setName(tr("Check Box"));
-    info->setPriority(5);
-    setInfo(info);
 }
 
 KoReportCheckPlugin::~KoReportCheckPlugin()
@@ -67,3 +60,5 @@ QObject* KoReportCheckPlugin::createScriptInstance(KoReportItemBase* item)
     return 0;
 }
 #endif
+
+#include "KoReportCheckPlugin.moc"

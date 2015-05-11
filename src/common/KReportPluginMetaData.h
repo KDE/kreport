@@ -18,42 +18,39 @@
    Boston, MA 02110-1301, USA.
 */
 
-#ifndef KOREPORTPLUGINMANAGER_H
-#define KOREPORTPLUGINMANAGER_H
+#ifndef KOREPORTPLUGININFO_H
+#define KOREPORTPLUGININFO_H
 
-#include "config-kreport.h"
+#include <KPluginMetaData>
+
 #include "kreport_export.h"
 
-#include <QAction>
-
-class KReportPluginMetaData;
-class KoReportPluginInterface;
-
-class KREPORT_EXPORT KoReportPluginManager : public QObject
+//! Information about a KReport plugin.
+class KREPORT_EXPORT KReportPluginMetaData : public KPluginMetaData
 {
-    Q_OBJECT
-    public:
-        static KoReportPluginManager* self();
+public:
+    explicit KReportPluginMetaData(const QJsonObject &metaData);
+    explicit KReportPluginMetaData(const QPluginLoader &loader);
+    ~KReportPluginMetaData();
 
-        QStringList pluginIds() const;
+    int priority() const;
 
-        const KReportPluginMetaData *pluginMetaData(const QString& id) const;
+    //! @return true if this plugin is built-in, i.e. has been provided by the KReport
+    //! framework itself, not by a plugin file.
+    bool isBuiltIn() const;
 
-        KoReportPluginInterface* plugin(const QString& id) const;
+    //! @return true if this plugin is static, i.e. is compiled-in.
+    bool isStatic() const;
 
-        QList<QAction*> actions();
+protected:
+    friend class KReportPluginEntry;
+    void setBuiltIn(bool set);
+    void setStatic(bool set);
 
-    private:
-        // class for access to the constructor
-        friend class KReportPluginManagerSingleton;
-
-        KoReportPluginManager();
-
-        ~KoReportPluginManager();
-
-        Q_DISABLE_COPY(KoReportPluginManager)
-        class Private;
-        Private *const d;
+private:
+    Q_DISABLE_COPY(KReportPluginMetaData)
+    class Private;
+    Private * const d;
 };
 
-#endif // KOREPORTPLUGINMANAGER_H
+#endif // KOREPORTPLUGININFO_H

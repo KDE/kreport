@@ -18,7 +18,10 @@
 #include "PluginsTest.h"
 
 #include <KoReportPluginManager>
-#include <KoReportPluginInfo>
+#include <KoReportPluginInterface>
+#include <KReportPluginMetaData>
+
+#include <KAboutData>
 
 #include <QtTest/QTest>
 #include <QDebug>
@@ -35,15 +38,30 @@ void PluginsTest::initTestCase()
 void PluginsTest::listPlugins()
 {
     KoReportPluginManager* manager = KoReportPluginManager::self();
-    QStringList pluginNames = manager->pluginNames();
-    qDebug() << pluginNames;
-    QCOMPARE(pluginNames.toSet().count(), pluginNames.count());
-    foreach(const QString &pluginName, pluginNames) {
-        KoReportPluginInterface* iface = manager->plugin(pluginName);
-        QVERIFY(iface);
-        QVERIFY(!iface->info()->className().isEmpty());
-        //QVERIFY(!iface->info()->icon().isNull());
-        QVERIFY(!iface->info()->name().isEmpty());
+    QStringList pluginIds = manager->pluginIds();
+    qDebug() << pluginIds;
+    QCOMPARE(pluginIds.toSet().count(), pluginIds.count());
+    foreach(const QString &pluginId, pluginIds) {
+        qDebug() << "Checking" << pluginId;
+        QVERIFY2(!pluginId.isEmpty(), "Plugin id not empty");
+        KoReportPluginInterface* iface = manager->plugin(pluginId);
+        QVERIFY2(iface, "Plugin interface");
+        const KReportPluginMetaData *metaData = manager->pluginMetaData(pluginId);
+        //! @todo info->priority()
+        QVERIFY2(metaData, "Plugin metadata");
+        QCOMPARE(metaData, iface->metaData());
+        QVERIFY2(metaData->isValid(), "Plugin is valid");
+        QVERIFY(!metaData->pluginId().isEmpty());
+        QCOMPARE(metaData->pluginId(), pluginId);
+        QVERIFY(!metaData->name().isEmpty());
+        QVERIFY(!metaData->description().isEmpty());
+        QVERIFY(!metaData->iconName().isEmpty());
+        QVERIFY(!metaData->authors().isEmpty());
+        QVERIFY(!metaData->version().isEmpty());
+        QVERIFY(!metaData->website().isEmpty());
+        QVERIFY(!metaData->license().isEmpty());
+        QVERIFY(!metaData->serviceTypes().isEmpty());
+        QCOMPARE(metaData->isStatic(), metaData->fileName().isEmpty());
     }
 }
 
@@ -107,16 +125,20 @@ do { \
 void PluginsTest::checkBuiltInPlugins()
 {
     KoReportPluginManager* manager = KoReportPluginManager::self();
-    QStringList pluginNames = manager->pluginNames();
-    QCOMPARE(pluginNames.toSet().count(), pluginNames.count());
+    QStringList pluginIds = manager->pluginIds();
+    QCOMPARE(pluginIds.toSet().count(), pluginIds.count());
     QSet<QString> builtInPlugins(
-        QSet<QString>() << "check" << "field" << "image" << "label" << "text");
+        QSet<QString>() << "org.kde.kreport.checkbox"
+                        << "org.kde.kreport.field"
+                        << "org.kde.kreport.image"
+                        << "org.kde.kreport.label"
+                        << "org.kde.kreport.text");
     QSet<QString> foundBuiltInPlugins;
-    foreach(const QString &pluginName, pluginNames) {
-        KoReportPluginInterface* iface = manager->plugin(pluginName);
+    foreach(const QString &pluginId, pluginIds) {
+        KoReportPluginInterface* iface = manager->plugin(pluginId);
         QVERIFY(iface);
-        if (iface->isBuiltIn()) {
-            foundBuiltInPlugins.insert(pluginName);
+        if (iface->metaData()->isBuiltIn()) {
+            foundBuiltInPlugins.insert(pluginId);
         }
     }
     QCOMPARE_SET(QString, builtInPlugins, foundBuiltInPlugins);

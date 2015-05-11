@@ -27,41 +27,43 @@
 #include <KPluginFactory>
 
 class QGraphicsScene;
-class KoReportPluginInfo;
-
-class KREPORT_EXPORT KoReportPluginInterface : public QObject
-{
-    Q_OBJECT
-    public:
-        explicit KoReportPluginInterface(QObject *parent = 0, const QVariantList &args = QVariantList());
-
-        virtual ~KoReportPluginInterface();
-
-        virtual QObject* createDesignerInstance(KoReportDesigner *, QGraphicsScene * scene, const QPointF &pos) = 0;
-        virtual QObject* createDesignerInstance(QDomNode & element, KoReportDesigner *, QGraphicsScene * scene) = 0;
-        virtual QObject* createRendererInstance(QDomNode & element) = 0;
-#ifdef KREPORT_SCRIPTING
-        virtual QObject* createScriptInstance(KoReportItemBase* item) = 0;
-#endif
-
-        void setInfo(KoReportPluginInfo *);
-        KoReportPluginInfo* info() const;
-
-        //! @return true if this plugin is built-in, i.e. has been provided by the KReport
-        //! framework itself, not by a dynamic extension.
-        bool isBuiltIn() const;
-
-    protected:
-        friend class KoReportPluginManager;
-        void setBuiltIn(bool set);
-
-    private:
-        Q_DISABLE_COPY(KoReportPluginInterface)
-        class Private;
-        Private * const d;
-};
+class KReportPluginMetaData;
 
 #define KREPORT_PLUGIN_FACTORY(class_name, name) \
     K_PLUGIN_FACTORY_WITH_JSON(class_name ## Factory, name, registerPlugin<class_name>();)
+
+//! An interface for plugins delivering KReport elements
+class KREPORT_EXPORT KoReportPluginInterface : public QObject
+{
+    Q_OBJECT
+public:
+    explicit KoReportPluginInterface(QObject *parent = 0,
+                                     const QVariantList &args = QVariantList());
+
+    virtual ~KoReportPluginInterface();
+
+    virtual QObject* createDesignerInstance(KoReportDesigner *designer, QGraphicsScene * scene,
+                                            const QPointF &pos) = 0;
+
+    virtual QObject* createDesignerInstance(QDomNode &element, KoReportDesigner *designer,
+                                            QGraphicsScene *scene) = 0;
+
+    virtual QObject* createRendererInstance(QDomNode &element) = 0;
+
+#ifdef KREPORT_SCRIPTING
+    virtual QObject* createScriptInstance(KoReportItemBase* item) = 0;
+#endif
+
+    //! @return information about the plugin
+    const KReportPluginMetaData* metaData() const;
+
+private:
+    friend class KReportPluginEntry;
+    void setMetaData(KReportPluginMetaData* metaData);
+
+    Q_DISABLE_COPY(KoReportPluginInterface)
+    class Private;
+    Private * const d;
+};
 
 #endif // KREPORTPLUGININTERFACE_H

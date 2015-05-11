@@ -20,12 +20,15 @@
 #ifndef KOREPORTLABELPLUGIN_H
 #define KOREPORTLABELPLUGIN_H
 
-#include "KoReportPluginInterface.h"
+#include "KoReportStaticPluginInterface.h"
+
+KREPORT_DECLARE_STATIC_PLUGIN(KoReportLabelPlugin)
 
 class KoReportLabelPlugin : public KoReportPluginInterface
 {
-    public:
-    explicit KoReportLabelPlugin(QObject *parent, const QVariantList &args = QVariantList());
+    Q_OBJECT
+public:
+    explicit KoReportLabelPlugin(QObject *parent = 0, const QVariantList &args = QVariantList());
 
     virtual ~KoReportLabelPlugin();
 

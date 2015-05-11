@@ -20,7 +20,9 @@
 #ifndef KOREPORTIMAGEPLUGIN_H
 #define KOREPORTIMAGEPLUGIN_H
 
-#include "KoReportPluginInterface.h"
+#include "KoReportStaticPluginInterface.h"
+
+KREPORT_DECLARE_STATIC_PLUGIN(KoReportImagePlugin)
 
 class KoReportImagePlugin : public KoReportPluginInterface
 {

@@ -1,6 +1,7 @@
 /* This file is part of the KDE project
    Copyright (C) 1998, 1999 Torben Weis <weis@kde.org>
    Copyright     2007       David Faure <faure@kde.org>
+   Copyright (C) 2015 Jarosław Staniek <staniek@kde.org>
 
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
@@ -32,9 +33,27 @@
 
 Q_GLOBAL_STATIC(KReportJsonTrader, KReportJsonTrader_instance)
 
+class KReportJsonTrader::Private
+{
+public:
+    Private() : pluginPathFound(false)
+    {
+    }
+    bool pluginPathFound;
+    QStringList pluginPaths;
+};
+
+// ---
+
 KReportJsonTrader::KReportJsonTrader()
+    : d(new Private)
 {
     Q_ASSERT(!KReportJsonTrader_instance.exists());
+}
+
+KReportJsonTrader::~KReportJsonTrader()
+{
+    delete d;
 }
 
 KReportJsonTrader* KReportJsonTrader::self()
@@ -42,61 +61,10 @@ KReportJsonTrader* KReportJsonTrader::self()
     return KReportJsonTrader_instance;
 }
 
-QList<QPluginLoader *> KReportJsonTrader::query(const QString &servicetype, const QString &mimetype)
+static QList<QPluginLoader *> findPlugins(const QString &path, const QString &servicetype, const QString &mimetype)
 {
-    if (m_pluginPath.isEmpty()) {
-
-        QList<QDir> searchDirs;
-
-        QDir appDir(qApp->applicationDirPath());
-        appDir.cdUp();
-
-        searchDirs << appDir;
-#ifdef CMAKE_INSTALL_PREFIX
-        searchDirs << QDir{CMAKE_INSTALL_PREFIX};
-#endif
-
-        foreach(const QDir& dir, searchDirs) {
-            foreach(QString entry, dir.entryList()) {
-                QFileInfo info(dir, entry);
-                if (info.isDir() && info.fileName().contains(QLatin1String("lib"))) {
-                    QDir libDir(info.absoluteFilePath());
-
-                    QString pluginSubdir(QLatin1String("kreport"));
-                    // on many systems this will be the actual lib dir (and a subdir that contains plugins)
-                    if (!libDir.entryList(QStringList() << pluginSubdir).isEmpty()) {
-                        m_pluginPath = info.absoluteFilePath() + QLatin1Char('/') + pluginSubdir;
-                        break;
-                    }
-
-                    // on debian at least the actual libdir is a subdir named like "lib/x86_64-linux-gnu"
-                    // so search there for the subdir which will contain our plugins
-                    foreach(const QString &subEntry, libDir.entryList()) {
-                        QFileInfo subInfo(libDir, subEntry);
-                        if (subInfo.isDir()) {
-                            if (!QDir(subInfo.absoluteFilePath()).entryList(QStringList() << pluginSubdir).isEmpty()) {
-                                m_pluginPath = subInfo.absoluteFilePath() + QLatin1Char('/') + pluginSubdir;
-                                break; // will only break inner loop so we need the extra check below
-                            }
-                        }
-                    }
-
-                    if (!m_pluginPath.isEmpty()) {
-                        break;
-                    }
-                }
-            }
-
-            if(!m_pluginPath.isEmpty()) {
-                break;
-            }
-        }
-        //qDebug() << "KReportJsonTrader will load its plugins from" << m_pluginPath;
-
-    }
-
-    QList<QPluginLoader *>list;
-    QDirIterator dirIter(m_pluginPath, QDirIterator::Subdirectories);
+    QList<QPluginLoader*> list;
+    QDirIterator dirIter(path, QDirIterator::Subdirectories | QDirIterator::FollowSymlinks);
     while (dirIter.hasNext()) {
         dirIter.next();
         if (dirIter.fileInfo().isFile()) {
@@ -126,8 +94,28 @@ QList<QPluginLoader *> KReportJsonTrader::query(const QString &servicetype, cons
                 list.append(loader);
             }
         }
+    }
+    return list;
+}
 
+QList<QPluginLoader *> KReportJsonTrader::query(const QString &servicetype, const QString &mimetype)
+{
+    if (!d->pluginPathFound) {
+        QStringList searchDirs;
+        searchDirs += QCoreApplication::libraryPaths();
+        foreach(const QString &dir, searchDirs) {
+            qDebug() << dir;
+            QString possiblePath = dir + QLatin1String("/kreport");
+            if (QDir(possiblePath).exists()) {
+                d->pluginPaths += possiblePath;
+            }
+        }
+        d->pluginPathFound = true;
     }
 
+    QList<QPluginLoader *> list;
+    foreach(const QString &path, d->pluginPaths) {
+        list += findPlugins(path, servicetype, mimetype);
+    }
     return list;
 }

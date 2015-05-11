@@ -1,5 +1,5 @@
 /* This file is part of the KDE project
-   Copyright (C) 2010 by Adam Pigg (adam@piggz.co.uk)
+   Copyright (C) 2015 Jarosław Staniek <staniek@kde.org>
 
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
@@ -17,35 +17,20 @@
    Boston, MA 02110-1301, USA.
 */
 
-#ifndef KOREPORTPLUGININFO_H
-#define KOREPORTPLUGININFO_H
+#ifndef KREPORTSTATICPLUGININTERFACE_H
+#define KREPORTSTATICPLUGININTERFACE_H
 
-#include <QIcon>
-#include <QString>
+#define QT_STATICPLUGIN
 
-#include "kreport_export.h"
+#include <QtPlugin>
+#include "KoReportPluginInterface.h"
 
-class KREPORT_EXPORT KoReportPluginInfo
-{
-    public:
-        KoReportPluginInfo();
-        ~KoReportPluginInfo();
+//! Declaration to put in all static plugin headers
+#define KREPORT_DECLARE_STATIC_PLUGIN(name) \
+    extern const QStaticPlugin qt_static_plugin_ ## name ## Factory(); \
 
-        QByteArray className() const;
-        QIcon icon() const;
-        QString name() const;
-        int priority() const;
-        
-        void setClassName(QByteArray);
-        void setIcon(const QIcon&);
-        void setName(const QString&);
-        void setPriority(int);
-    private:
-        QByteArray m_className;
-        QIcon m_icon;
-        QString m_name;
-        int m_priority;
-    
-};
+//! Used by manager to access metadata
+#define KREPORT_STATIC_PLUGIN_METADATA(name) \
+    qt_static_plugin_ ## name ## Factory().metaData()
 
-#endif // KOREPORTPLUGININFO_H
+#endif // KREPORTSTATICPLUGININTERFACE_H

@@ -20,7 +20,9 @@
 #ifndef KOREPORTTEXTPLUGIN_H
 #define KOREPORTTEXTPLUGIN_H
 
-#include "KoReportPluginInterface.h"
+#include "KoReportStaticPluginInterface.h"
+
+KREPORT_DECLARE_STATIC_PLUGIN(KoReportTextPlugin)
 
 class KoReportTextPlugin : public KoReportPluginInterface
 {

@@ -19,18 +19,15 @@
 */
 
 #include "KoReportPluginInterface.h"
-#include "KoReportPluginInfo.h"
+#include "KReportPluginMetaData.h"
 
 class KoReportPluginInterface::Private
 {
 public:
-    Private() : pluginInfo(0), isBuiltIn(false) {}
-    ~Private() {
-        delete pluginInfo;
-    }
+    Private() : metaData(0) {}
+    ~Private() {}
 
-    KoReportPluginInfo *pluginInfo;
-    bool isBuiltIn;
+    const KReportPluginMetaData *metaData;
 };
 
 // ---
@@ -46,22 +43,12 @@ KoReportPluginInterface::~KoReportPluginInterface()
     delete d;
 }
 
-void KoReportPluginInterface::setInfo(KoReportPluginInfo* p)
+const KReportPluginMetaData* KoReportPluginInterface::metaData() const
 {
-    d->pluginInfo = p;
+    return d->metaData;
 }
 
-KoReportPluginInfo* KoReportPluginInterface::info() const
+void KoReportPluginInterface::setMetaData(KReportPluginMetaData* metaData)
 {
-    return d->pluginInfo;
-}
-
-bool KoReportPluginInterface::isBuiltIn() const
-{
-    return d->isBuiltIn;
-}
-
-void KoReportPluginInterface::setBuiltIn(bool set)
-{
-    d->isBuiltIn = set;
+    d->metaData = metaData;
 }

@@ -20,23 +20,17 @@
 #include "KoReportImagePlugin.h"
 #include "KoReportItemImage.h"
 #include "KoReportDesignerItemImage.h"
-#include "common/KoReportPluginInfo.h"
+#include "common/KReportPluginMetaData.h"
 #ifdef KREPORT_SCRIPTING
 #include "krscriptimage.h"
 #endif
 
-#include <QIcon>
+KREPORT_PLUGIN_FACTORY(KoReportImagePlugin, "image.json")
 
-KoReportImagePlugin::KoReportImagePlugin(QObject *parent, const QVariantList &args) : KoReportPluginInterface(parent)
+KoReportImagePlugin::KoReportImagePlugin(QObject *parent, const QVariantList &args)
+    : KoReportPluginInterface(parent, args)
 {
     Q_UNUSED(args)
-
-    KoReportPluginInfo *info = new KoReportPluginInfo();
-    info->setClassName("image");
-    info->setIcon(QIcon::fromTheme(QLatin1String("insert-image")));
-    info->setName(tr("Image"));
-    info->setPriority(4);
-    setInfo(info);
 }
 
 KoReportImagePlugin::~KoReportImagePlugin()
@@ -69,3 +63,5 @@ QObject* KoReportImagePlugin::createScriptInstance(KoReportItemBase* item)
     return 0;
 }
 #endif
+
+#include "KoReportImagePlugin.moc"

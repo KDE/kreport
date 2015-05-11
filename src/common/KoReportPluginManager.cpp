@@ -20,16 +20,12 @@
 
 #include "KoReportPluginManager.h"
 #include "KoReportPluginManagerPrivate.h"
-#include "KoReportPluginInfo.h"
+#include "KReportPluginMetaData.h"
 #include "KReportJsonTrader_p.h"
-
-#include <kicon.h>
-#include <kservice.h>
-#include <kiconloader.h>
-#include <ktoggleaction.h>
 
 #include <QDebug>
 #include <QPluginLoader>
+#include <QFileInfo>
 
 //Include the static items
 #include "../items/label/KoReportLabelPlugin.h"
@@ -38,29 +34,43 @@
 #include "../items/image/KoReportImagePlugin.h"
 #include "../items/text/KoReportTextPlugin.h"
 
+#define KREPORT_ADD_BUILTIN_PLUGIN(name) \
+    addBuiltInPlugin<name>(KREPORT_STATIC_PLUGIN_METADATA(name))
+
 KoReportPluginManager::Private::Private(KoReportPluginManager *qq)
     : q(qq), m_parent(new QObject)
 {
-    addBuiltInPlugin<KoReportLabelPlugin>();
-    addBuiltInPlugin<KoReportCheckPlugin>();
-    addBuiltInPlugin<KoReportFieldPlugin>();
-    addBuiltInPlugin<KoReportImagePlugin>();
-    addBuiltInPlugin<KoReportTextPlugin>();
+    KREPORT_ADD_BUILTIN_PLUGIN(KoReportLabelPlugin);
+    KREPORT_ADD_BUILTIN_PLUGIN(KoReportCheckPlugin);
+    KREPORT_ADD_BUILTIN_PLUGIN(KoReportFieldPlugin);
+    KREPORT_ADD_BUILTIN_PLUGIN(KoReportImagePlugin);
+    KREPORT_ADD_BUILTIN_PLUGIN(KoReportTextPlugin);
 
     findPlugins();
 }
 
 // ---
 
-ReportPluginEntry::ReportPluginEntry()
-    : interface(0), loader(0)
+KReportPluginEntry::KReportPluginEntry()
+    : loader(0), m_interface(0), m_metaData(0)
 {
 }
 
-KoReportPluginInterface* ReportPluginEntry::plugin()
+KReportPluginEntry::KReportPluginEntry(KoReportPluginInterface *staticInterface)
+    : loader(0), m_interface(staticInterface), m_metaData(0)
 {
-    if (interface) {
-        return interface;
+}
+
+KReportPluginEntry::~KReportPluginEntry()
+{
+    delete m_metaData;
+    delete m_interface;
+}
+
+KoReportPluginInterface* KReportPluginEntry::plugin()
+{
+    if (m_interface) {
+        return m_interface;
     }
     if (!loader) {
         qWarning() << "No such plugin";
@@ -70,12 +80,41 @@ KoReportPluginInterface* ReportPluginEntry::plugin()
         qWarning() << "Could not load plugin" << loader->fileName();
         return 0;
     }
-    interface = qobject_cast<KoReportPluginInterface*>(loader->instance());
-    if (!interface) {
-        qWarning() << "Could not create instance of plugin" << loader->fileName();
+    KPluginFactory *factory = qobject_cast<KPluginFactory*>(loader->instance());
+    if (!factory) {
+        qWarning() << "Could not factory for plugin" << loader->fileName();
         return 0;
     }
-    return interface;
+    m_interface = factory->create<KoReportPluginInterface>();
+    if (!m_interface) {
+        qWarning() << "Could not create instance of plugin" << loader->fileName();
+    }
+    m_interface->setMetaData(m_metaData);
+    return m_interface;
+}
+
+void KReportPluginEntry::setBuiltIn(bool set)
+{
+    m_metaData->setBuiltIn(set);
+}
+
+void KReportPluginEntry::setStatic(bool set)
+{
+    m_metaData->setStatic(set);
+}
+
+const KReportPluginMetaData *KReportPluginEntry::metaData() const
+{
+    return m_metaData;
+}
+
+void KReportPluginEntry::setMetaData(KReportPluginMetaData *metaData)
+{
+    delete m_metaData;
+    m_metaData = metaData;
+    if (m_interface) {
+        m_interface->setMetaData(m_metaData);
+    }
 }
 
 // ---
@@ -86,12 +125,20 @@ KoReportPluginManager::Private::~Private()
 }
 
 template<class PluginClass>
-void KoReportPluginManager::Private::addBuiltInPlugin()
+void KoReportPluginManager::Private::addBuiltInPlugin(const QJsonObject &json)
 {
-    ReportPluginEntry *entry = new ReportPluginEntry;
-    entry->interface = new PluginClass(m_parent);
-    q->setBuiltIn(entry->interface, true);
-    plugins.insert(QLatin1String(entry->interface->info()->className()), entry);
+    KReportPluginEntry *entry = new KReportPluginEntry(new PluginClass(m_parent));
+    QJsonObject j = json.value(QLatin1String("MetaData")).toObject();
+    qDebug() << j;
+    entry->setMetaData(new KReportPluginMetaData(j));
+    entry->setBuiltIn(true);
+    if (entry->metaData()->pluginId().isEmpty()) {
+        qWarning() << "Plugin" << entry->metaData()->name() << "has no identifier so won't be added to manager";
+        delete entry;
+        return;
+    }
+    entry->setStatic(true);
+    plugins.insert(entry->metaData()->pluginId(), entry);
 }
 
 #if 0
@@ -138,27 +185,25 @@ void KoReportPluginManager::Private::findPlugins()
     //qDebug() << "Load all plugins";
     const QList<QPluginLoader*> offers = KReportJsonTrader::self()->query(QLatin1String("KReport/Element"));
     foreach(QPluginLoader *loader, offers) {
-        QJsonObject json = loader->metaData().value(QLatin1String("MetaData")).toObject();
-        json = json.value(QLatin1String("KPlugin")).toObject();
-        const QString pluginName = json.value(QLatin1String("Id")).toString();
-            //! @todo check version
-            //! @todo add pluginNameProperty
-            //KexiPluginLoader loader(service, "");
-
-//        KoReportPluginInterface *plugin = loader.createPlugin<KoReportPluginInterface>(this);
-//        if (!plugin) {
-//            qWarning() << "KPluginFactory could not load the plugin:" << service->library();
-//            continue;
-//        }
-//        plugin->info()->setPriority(plugin->info()->priority() + 10); //Ensure plugins always have a higher prioroty than built-in types
-//        m_plugins.insert(plugin->info()->className(), plugin);
-        ReportPluginEntry *entry = new ReportPluginEntry;
+        //QJsonObject json = loader->metaData();
+        //qDebug() << json;
+        //! @todo check version
+        KReportPluginEntry *entry = new KReportPluginEntry;
         entry->loader = loader;
-        plugins.insert(pluginName, entry);
+        entry->setMetaData(new KReportPluginMetaData(*loader));
+        plugins.insert(entry->metaData()->pluginId(), entry);
     }
 }
 
 // ---
+
+//! Class for access to KoReportPluginManager constructor
+class KReportPluginManagerSingleton
+{
+public:
+    KoReportPluginManager object;
+};
+
 
 KoReportPluginManager::KoReportPluginManager()
     : d(new Private(this))
@@ -170,20 +215,30 @@ KoReportPluginManager::~KoReportPluginManager()
     delete d;
 }
 
+Q_GLOBAL_STATIC(KReportPluginManagerSingleton, s_self)
+
 KoReportPluginManager* KoReportPluginManager::self()
 {
-    K_GLOBAL_STATIC(KoReportPluginManager, instance) // only instantiated when self() is called
-    return instance;
+    return &s_self->object;
 }
 
-QStringList KoReportPluginManager::pluginNames() const
+QStringList KoReportPluginManager::pluginIds() const
 {
     return d->plugins.keys();
 }
 
-KoReportPluginInterface* KoReportPluginManager::plugin(const QString& p) const
+const KReportPluginMetaData *KoReportPluginManager::pluginMetaData(const QString& id) const
 {
-    ReportPluginEntry *entry = d->plugins.value(p);
+    KReportPluginEntry *entry = d->plugins.value(id);
+    if (!entry) {
+        return 0;
+    }
+    return entry->metaData();
+}
+
+KoReportPluginInterface* KoReportPluginManager::plugin(const QString& id) const
+{
+    KReportPluginEntry *entry = d->plugins.value(id);
     if (!entry) {
         return 0;
     }
@@ -198,7 +253,7 @@ QList<QAction*> KoReportPluginManager::actions()
     const QMap<QString, KoReportPluginInterface*> plugins = d->plugins;
 
     foreach(KoReportPluginInterface* plugin, plugins) {
-        KoReportPluginInfo *info = plugin->info();
+        KReportPluginMetaData *info = plugin->info();
         if (info) {
             KToggleAction *act = new KToggleAction(KIcon(info->icon()), info->name(), this);
             act->setObjectName(QLatin1String(info->className()));
@@ -210,9 +265,4 @@ QList<QAction*> KoReportPluginManager::actions()
     }
 #endif
     return actList;
-}
-
-void KoReportPluginManager::setBuiltIn(KoReportPluginInterface* interface, bool set)
-{
-    interface->setBuiltIn(set);
 }

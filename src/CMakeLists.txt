@@ -23,7 +23,7 @@ set(kreport_LIB_SRCS
     common/renderobjects.cpp
     common/KoReportPluginManager.cpp
     common/KReportJsonTrader_p.cpp
-    common/KoReportPluginInfo.cpp
+    common/KReportPluginMetaData.cpp
     common/KoReportData.cpp
     common/KoPageFormat.cpp
     common/KoUnit.cpp
@@ -200,6 +200,12 @@ ecm_generate_pri_file(
 install(FILES ${PRI_FILENAME}
         DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
 
+kcoreaddons_desktop_to_json(KReport items/check/check.desktop)
+kcoreaddons_desktop_to_json(KReport items/field/field.desktop)
+kcoreaddons_desktop_to_json(KReport items/image/image.desktop)
+kcoreaddons_desktop_to_json(KReport items/label/label.desktop)
+kcoreaddons_desktop_to_json(KReport items/text/text.desktop)
+
 #TODO
 #install(FILES  koreport_itemplugin.desktop  DESTINATION ${SERVICETYPES_INSTALL_DIR})
 
@@ -215,7 +221,7 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
         common/KoReportData
         common/KoReportItemBase
         common/KoReportItemLine
-        common/KoReportPluginInfo
+        common/KReportPluginMetaData
         common/KoReportPluginManager
         common/KoReportPluginInterface
         common/KoUnit

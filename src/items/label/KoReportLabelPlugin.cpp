@@ -21,22 +21,16 @@
 #include "KoReportItemLabel.h"
 #include "KoReportDesignerItemLabel.h"
 #include "wrtembed/KoReportDesigner.h"
-#include "common/KoReportPluginInfo.h"
+#include "common/KReportPluginMetaData.h"
 #ifdef KREPORT_SCRIPTING
 #include "krscriptlabel.h"
 #endif
 
-#include <QIcon>
+KREPORT_PLUGIN_FACTORY(KoReportLabelPlugin, "label.json")
 
-KoReportLabelPlugin::KoReportLabelPlugin(QObject *parent, const QVariantList &args) : KoReportPluginInterface(parent, args)
+KoReportLabelPlugin::KoReportLabelPlugin(QObject *parent, const QVariantList &args)
+    : KoReportPluginInterface(parent, args)
 {
-    KoReportPluginInfo *info = new KoReportPluginInfo();
-    info->setClassName("label");
-    info->setIcon(QIcon::fromTheme(QLatin1String("label")));
-    info->setName(tr("Label"));
-    info->setPriority(1);
-
-    setInfo(info);
 }
 
 KoReportLabelPlugin::~KoReportLabelPlugin()
@@ -70,3 +64,4 @@ QObject* KoReportLabelPlugin::createScriptInstance(KoReportItemBase *item)
 }
 #endif
 
+#include "KoReportLabelPlugin.moc"

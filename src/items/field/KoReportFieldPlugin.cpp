@@ -20,23 +20,16 @@
 #include "KoReportFieldPlugin.h"
 #include "KoReportItemField.h"
 #include "KoReportDesignerItemField.h"
-#include "common/KoReportPluginInfo.h"
+#include "common/KReportPluginMetaData.h"
 #ifdef KREPORT_SCRIPTING
 #include "krscriptfield.h"
 #endif
 
-#include <QIcon>
+KREPORT_PLUGIN_FACTORY(KoReportFieldPlugin, "field.json")
 
-KoReportFieldPlugin::KoReportFieldPlugin(QObject *parent, const QVariantList &args) : KoReportPluginInterface(parent)
+KoReportFieldPlugin::KoReportFieldPlugin(QObject *parent, const QVariantList &args)
+    : KoReportPluginInterface(parent, args)
 {
-    Q_UNUSED(args)
-
-    KoReportPluginInfo *info = new KoReportPluginInfo();
-    info->setClassName("field");
-    info->setIcon(QIcon::fromTheme(QLatin1String("edit-rename")));
-    info->setName(tr("Field"));
-    info->setPriority(2);
-    setInfo(info);
 }
 
 KoReportFieldPlugin::~KoReportFieldPlugin()
@@ -69,3 +62,5 @@ QObject* KoReportFieldPlugin::createScriptInstance(KoReportItemBase* item)
     return 0;
 }
 #endif
+
+#include "KoReportFieldPlugin.moc"

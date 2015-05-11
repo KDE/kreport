@@ -26,16 +26,37 @@
 
 class KoReportPluginInterface;
 class KoReportPluginManager;
+class KReportPluginMetaData;
 
-//! A single entry for a built-in or dynamic item plugin
-class ReportPluginEntry
+//! @internal A single entry for a built-in or dynamic item plugin
+class KReportPluginEntry
 {
 public:
-    ReportPluginEntry();
+    //! Used for dynamic plugins.
+    KReportPluginEntry();
+
+    //! Used for static plugins.
+    KReportPluginEntry(KoReportPluginInterface *staticInterface);
+
+    ~KReportPluginEntry();
+
     KoReportPluginInterface* plugin();
 
-    KoReportPluginInterface *interface;
+    void setBuiltIn(bool set);
+
+    void setStatic(bool set);
+
+    const KReportPluginMetaData *metaData() const;
+
+    void setMetaData(KReportPluginMetaData *metaData);
+
     QPluginLoader *loader;
+
+private:
+    KoReportPluginInterface *m_interface;
+
+    //! Plugin info, owned.
+    KReportPluginMetaData *m_metaData;
 };
 
 //! @internal
@@ -49,10 +70,10 @@ public:
 
     //! Add a built-in element plugins
     template<class PluginClass>
-    void addBuiltInPlugin();
+    void addBuiltInPlugin(const QJsonObject &json);
 
     //! Map of name -> plugin instances
-    QMap<QString, ReportPluginEntry*> plugins;
+    QMap<QString, KReportPluginEntry*> plugins;
 
 private:
     KoReportPluginManager *q;

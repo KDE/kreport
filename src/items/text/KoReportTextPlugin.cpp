@@ -20,22 +20,16 @@
 #include "KoReportTextPlugin.h"
 #include "KoReportItemText.h"
 #include "KoReportDesignerItemText.h"
-#include "common/KoReportPluginInfo.h"
+#include "common/KReportPluginMetaData.h"
 #ifdef KREPORT_SCRIPTING
 #include "krscripttext.h"
 #endif
 
-#include <QIcon>
+KREPORT_PLUGIN_FACTORY(KoReportTextPlugin, "text.json")
 
-KoReportTextPlugin::KoReportTextPlugin(QObject *parent, const QVariantList &args) : KoReportPluginInterface(parent)
+KoReportTextPlugin::KoReportTextPlugin(QObject *parent, const QVariantList &args)
+    : KoReportPluginInterface(parent, args)
 {
-    Q_UNUSED(args)
-    KoReportPluginInfo *info = new KoReportPluginInfo();
-    info->setClassName("text");
-    info->setIcon(QIcon::fromTheme(QLatin1String("insert-text")));
-    info->setName(tr("Text"));
-    info->setPriority(3);
-    setInfo(info);
 }
 
 KoReportTextPlugin::~KoReportTextPlugin()
@@ -68,3 +62,5 @@ QObject* KoReportTextPlugin::createScriptInstance(KoReportItemBase* item)
     return 0;
 }
 #endif
+
+#include "KoReportTextPlugin.moc"

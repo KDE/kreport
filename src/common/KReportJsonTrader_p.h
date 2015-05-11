@@ -1,6 +1,7 @@
 /* This file is part of the KDE project
    Copyright (C) 1998, 1999 Torben Weis <weis@kde.org>
    Copyright     2007       David Faure <faure@kde.org>
+   Copyright (C) 2015 Jarosław Staniek <staniek@kde.org>
 
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
@@ -33,6 +34,7 @@ class KReportJsonTrader
 {
 public:
     KReportJsonTrader();
+    ~KReportJsonTrader();
     static KReportJsonTrader *self();
 
     /**
@@ -65,7 +67,8 @@ public:
 
 private:
      Q_DISABLE_COPY(KReportJsonTrader)
-     QString m_pluginPath;
+     class Private;
+     Private * const d;
 };
 
 #endif

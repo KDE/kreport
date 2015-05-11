@@ -20,7 +20,7 @@
 #include "KoReportBarcodePlugin.h"
 #include "KoReportItemBarcode.h"
 #include "KoReportDesignerItemBarcode.h"
-#include "KoReportPluginInfo.h"
+#include "KReportPluginMetaData.h"
 #ifdef KREPORT_SCRIPTING
 #include "krscriptbarcode.h"
 #endif
@@ -33,12 +33,6 @@ KoReportBarcodePlugin::KoReportBarcodePlugin(QObject *parent, const QVariantList
     : KoReportPluginInterface(parent)
 {
     Q_UNUSED(args);
-    KoReportPluginInfo *info = new KoReportPluginInfo();
-    info->setClassName("barcode");
-    info->setIcon(QIcon::fromTheme(QLatin1String("report_barcode_element")));
-    info->setName(tr("Barcode"));
-    info->setPriority(50);
-    setInfo(info);
 }
 
 KoReportBarcodePlugin::~KoReportBarcodePlugin()
