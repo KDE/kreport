@@ -26,6 +26,7 @@
 #include <QDebug>
 #include <QPluginLoader>
 #include <QFileInfo>
+#include <KToggleAction>
 
 //Include the static items
 #include "../items/label/KoReportLabelPlugin.h"
@@ -248,21 +249,21 @@ KoReportPluginInterface* KoReportPluginManager::plugin(const QString& id) const
 QList<QAction*> KoReportPluginManager::actions()
 {
     QList<QAction*> actList;
-#if 0 //todo
-    KoReportDesigner designer;
-    const QMap<QString, KoReportPluginInterface*> plugins = d->plugins;
 
-    foreach(KoReportPluginInterface* plugin, plugins) {
-        KReportPluginMetaData *info = plugin->info();
+    KoReportDesigner designer;
+    const QMap<QString, KReportPluginEntry*> plugins = d->plugins;
+
+    foreach(KReportPluginEntry* plugin, plugins) {
+        const KReportPluginMetaData *info = plugin->metaData();
         if (info) {
-            KToggleAction *act = new KToggleAction(KIcon(info->icon()), info->name(), this);
-            act->setObjectName(QLatin1String(info->className()));
+            KToggleAction *act = new KToggleAction(QIcon::fromTheme(info->iconName()), info->name(), this);
+            act->setObjectName(info->name());
 
             //Store the order priority in the user data field
             act->setData(info->priority());
             actList << act;
         }
     }
-#endif
+
     return actList;
 }
