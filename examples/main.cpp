@@ -35,8 +35,8 @@ int main(int argc, char **argv)
     Window window;
     window.show();
 
-    DesignerWindow dWindow;
-    dWindow.show();
-    
+    DesignerWindow designerWindow;
+    designerWindow.show();
+
     return app.exec();
 }

@@ -37,18 +37,13 @@ DesignerWindow::DesignerWindow()
     m_itemToolbar = addToolBar(tr("items"));
 
     QActionGroup *group = new QActionGroup(this);
-    QList<QAction*> reportActions = KoReportDesigner::actions(group);
-
-    foreach(QAction* action, reportActions) {
+    QList<QAction*> itemActions = KoReportDesigner::itemActions(group);
+    foreach(QAction* action, itemActions) {
         connect(action, SIGNAL(triggered(bool)), this, SLOT(slotToolboxActionTriggered(bool)));
-        qDebug() << "adding action" << action;
         m_itemToolbar->addAction(action);
-        //d->toolboxActionsByName.insert(action->objectName(), action);
     }
 }
 
 DesignerWindow::~DesignerWindow()
 {
 }
-
-#include "designerwindow.moc"
