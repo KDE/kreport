@@ -133,6 +133,7 @@ void KoReportDesigner::init()
 
     m_sectionData = new ReportWriterSectionData();
     createProperties();
+    createActions();
 
     m_reportHeader = m_reportFooter = 0;
     m_pageHeaderFirst = m_pageHeaderOdd = m_pageHeaderEven = m_pageHeaderLast = m_pageHeaderAny = 0;
@@ -1251,6 +1252,17 @@ QList<QAction*> KoReportDesigner::itemActions(QActionGroup* group)
 
 QList< QAction* > KoReportDesigner::designerActions()
 {
+    QList<QAction*> al;
+    QAction *sep = new QAction(QString(), this);
+    sep->setSeparator(true);
+
+    al << m_editCutAction << m_editCopyAction << m_editPasteAction << m_editDeleteAction << sep << m_sectionEdit << sep << m_itemLowerAction << m_itemRaiseAction;
+
+    return al;
+}
+
+void KoReportDesigner::createActions()
+{
     m_editCutAction = KStandardAction::cut(this);
     m_editCutAction->setProperty("iconOnly", true);
     m_editCopyAction = KStandardAction::copy(this);
@@ -1271,13 +1283,18 @@ QList< QAction* > KoReportDesigner::designerActions()
     m_itemRaiseAction->setObjectName(QLatin1String("itemraise"));
     m_itemLowerAction = new QAction(QIcon::fromTheme(QLatin1String("arrow-down")), tr("Lower"), this);
     m_itemLowerAction->setObjectName(QLatin1String("itemlower"));
-    QList<QAction*> al;
-    QAction *sep = new QAction(QString(), this);
-    sep->setSeparator(true);
 
-    al << m_editCutAction << m_editCopyAction << m_editPasteAction << m_editDeleteAction << sep << m_sectionEdit << sep << m_itemLowerAction << m_itemRaiseAction;
+    //Edit Actions
+    connect(m_editCutAction, SIGNAL(triggered(bool)), this, SLOT(slotEditCut()));
+    connect(m_editCopyAction, SIGNAL(triggered(bool)), this, SLOT(slotEditCopy()));
+    connect(m_editPasteAction, SIGNAL(triggered(bool)), this, SLOT(slotEditPaste()));
+    connect(m_editDeleteAction, SIGNAL(triggered(bool)), this, SLOT(slotEditDelete()));
 
-    return al;
+    connect(m_sectionEdit, SIGNAL(triggered(bool)), this, SLOT(slotSectionEditor()));
+
+    //Raise/Lower
+    connect(m_itemRaiseAction, SIGNAL(triggered(bool)), this, SLOT(slotRaiseSelected()));
+    connect(m_itemLowerAction, SIGNAL(triggered(bool)), this, SLOT(slotLowerSelected()));
 }
 
 void KoReportDesigner::setSectionCursor(const QCursor& c)

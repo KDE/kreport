@@ -369,6 +369,8 @@ private:
     QAction *m_itemRaiseAction;
     QAction *m_itemLowerAction;
 
+    void createActions();
+
 
 private Q_SLOTS:
     void slotPropertyChanged(KPropertySet &s, KProperty &p);
