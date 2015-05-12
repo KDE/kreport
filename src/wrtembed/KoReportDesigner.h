@@ -39,6 +39,7 @@ class KoUnit;
 class ReportScene;
 class ReportSceneView;
 class ReportWriterSectionData;
+class QAction;
 
 //
 // Class ReportDesigner
@@ -240,7 +241,13 @@ public:
     @brief Returns a list of actions that represent the entities that can be inserted into the report.
     Actions are created as children of @a group and belong to the group.
     @return list of actions */
-    static QList<QAction*> actions(QActionGroup* group);
+    static QList<QAction*> itemActions(QActionGroup* group);
+
+    /**
+    @brief Populates the toolbar with actions that can be applied to the report
+    Actions are created as children of @a group and belong to the group.
+    @return list of actions */
+    QList<QAction*> designerActions();
 
     /**
     @return X position of mouse when mouse press occurs
@@ -351,6 +358,17 @@ private:
 
     void setSectionCursor(const QCursor&);
     void unsetSectionCursor();
+
+    //Actions
+    QAction *m_editCutAction;
+    QAction *m_editCopyAction;
+    QAction *m_editPasteAction;
+    QAction *m_editDeleteAction;
+    QAction *m_sectionEdit;
+    QAction *m_parameterEdit;
+    QAction *m_itemRaiseAction;
+    QAction *m_itemLowerAction;
+
 
 private Q_SLOTS:
     void slotPropertyChanged(KPropertySet &s, KProperty &p);

@@ -38,7 +38,8 @@
 #include <kross/core/manager.h>
 
 #include <ktoggleaction.h>
-
+#include <kstandardaction.h>
+#include <KStandardGuiItem>
 #include <QLayout>
 #include <QDomDocument>
 #include <QVBoxLayout>
@@ -1216,7 +1217,7 @@ static bool actionPriortyLessThan(QAction* act1, QAction* act2)
     return false;
 }
 
-QList<QAction*> KoReportDesigner::actions(QActionGroup* group)
+QList<QAction*> KoReportDesigner::itemActions(QActionGroup* group)
 {
     KoReportPluginManager* manager = KoReportPluginManager::self();
     QList<QAction*> actList = manager->actions();
@@ -1246,6 +1247,37 @@ QList<QAction*> KoReportDesigner::actions(QActionGroup* group)
     }
 
     return actList;
+}
+
+QList< QAction* > KoReportDesigner::designerActions()
+{
+    m_editCutAction = KStandardAction::cut(this);
+    m_editCutAction->setProperty("iconOnly", true);
+    m_editCopyAction = KStandardAction::copy(this);
+    m_editCopyAction->setProperty("iconOnly", true);
+    m_editPasteAction = KStandardAction::paste(this);
+    m_editPasteAction->setProperty("iconOnly", true);
+    const KGuiItem del = KStandardGuiItem::del();
+    m_editDeleteAction = new QAction(del.icon(), del.text(), this);
+    m_editDeleteAction->setObjectName(QLatin1String("editdelete"));
+    m_editDeleteAction->setToolTip(del.toolTip());
+    m_editDeleteAction->setWhatsThis(del.whatsThis());
+    m_editDeleteAction->setProperty("iconOnly", true);
+
+    m_sectionEdit = new QAction(tr("Edit Sections"), this);
+    m_sectionEdit->setObjectName(QLatin1String("sectionedit"));
+
+    m_itemRaiseAction = new QAction(QIcon::fromTheme(QLatin1String("arrow-up")), tr("Raise"), this);
+    m_itemRaiseAction->setObjectName(QLatin1String("itemraise"));
+    m_itemLowerAction = new QAction(QIcon::fromTheme(QLatin1String("arrow-down")), tr("Lower"), this);
+    m_itemLowerAction->setObjectName(QLatin1String("itemlower"));
+    QList<QAction*> al;
+    QAction *sep = new QAction(QString(), this);
+    sep->setSeparator(true);
+
+    al << m_editCutAction << m_editCopyAction << m_editPasteAction << m_editDeleteAction << sep << m_sectionEdit << sep << m_itemLowerAction << m_itemRaiseAction;
+
+    return al;
 }
 
 void KoReportDesigner::setSectionCursor(const QCursor& c)
