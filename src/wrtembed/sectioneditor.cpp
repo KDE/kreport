@@ -54,9 +54,9 @@ SectionEditor::SectionEditor(QWidget* parent)
     //setButtons(Close);
     //setCaption(i18n("Section Editor"));
 
-    auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Close);
-    auto mainLayout = new QVBoxLayout(this);
-    auto closeButton = buttonBox->button(QDialogButtonBox::Close);
+    QDialogButtonBox* buttonBox = new QDialogButtonBox(QDialogButtonBox::Close);
+    QVBoxLayout* mainLayout = new QVBoxLayout(this);
+    QPushButton* closeButton = buttonBox->button(QDialogButtonBox::Close);
 
     closeButton->setDefault(true);
     closeButton->setShortcut(Qt::CTRL | Qt::Key_Return);
