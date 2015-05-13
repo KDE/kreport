@@ -1392,29 +1392,21 @@ QPointF KoReportDesigner::getReleasePoint() const
     return QPointF(m_releaseX, m_releaseY);
 }
 
-void KoReportDesigner::plugItemActions(QList<QAction*> actList)
+void KoReportDesigner::plugItemActions(const QList<QAction*> &actList)
 {
-    qDebug() << "PLuugin actions";
-
-    qDebug() << actList;
-
     foreach(QAction *a, actList) {
-            connect(a, SIGNAL(triggered(bool)), this, SLOT(slotItemTriggered(bool)));
+        connect(a, SIGNAL(triggered(bool)), this, SLOT(slotItemTriggered(bool)));
     }
 }
 
-
 void KoReportDesigner::slotItemTriggered(bool checked)
 {
-    qDebug() << "item triggered";
-if (!checked)
+    if (!checked) {
         return;
+    }
     QObject *theSender = sender();
-    if (!theSender)
+    if (!theSender) {
         return;
-
-    QString senderName = sender()->objectName();
-
-    slotItem(senderName);
-
+    }
+    slotItem(theSender->objectName());
 }

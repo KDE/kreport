@@ -279,7 +279,7 @@ public:
     */
     QPointF getReleasePoint() const;
 
-    void plugItemActions(QList<QAction*> actList);
+    void plugItemActions(const QList<QAction*> &actList);
 
 public Q_SLOTS:
 
@@ -380,7 +380,8 @@ private Q_SLOTS:
     @brief When the 'page' button in the top left is pressed, change the property set to the reports properties.
     */
     void slotPageButton_Pressed();
-    void slotItemTriggered(bool);
+
+    void slotItemTriggered(bool checked);
 
 Q_SIGNALS:
     void pagePropertyChanged(KPropertySet &s);
