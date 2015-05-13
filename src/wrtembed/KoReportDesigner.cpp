@@ -37,7 +37,6 @@
 
 #include <kross/core/manager.h>
 
-#include <ktoggleaction.h>
 #include <kstandardaction.h>
 #include <KStandardGuiItem>
 #include <QLayout>
@@ -943,6 +942,7 @@ void KoReportDesigner::changeSet(KPropertySet *s)
 
 void KoReportDesigner::slotItem(const QString &entity)
 {
+    qDebug() << entity;
     m_sectionData->mouseAction = ReportWriterSectionData::MA_Insert;
     m_sectionData->insertItem = entity;
     setSectionCursor(QCursor(Qt::CrossCursor));
@@ -1223,9 +1223,10 @@ QList<QAction*> KoReportDesigner::itemActions(QActionGroup* group)
     KoReportPluginManager* manager = KoReportPluginManager::self();
     QList<QAction*> actList = manager->actions();
 
-    KToggleAction *act = new KToggleAction(QIcon::fromTheme(QLatin1String("line")), tr("Line"), group);
+    QAction *act = new QAction(QIcon::fromTheme(QLatin1String("line")), tr("Line"), group);
     act->setObjectName(QLatin1String("report:line"));
     act->setData(9);
+    act->setCheckable(true);
     actList << act;
 
     qSort(actList.begin(), actList.end(), actionPriortyLessThan);
@@ -1244,7 +1245,9 @@ QList<QAction*> KoReportDesigner::itemActions(QActionGroup* group)
             actList.insert(i-1, sep);
             sepInserted = true;
         }
-        group->addAction(a);
+        if (group) {
+            group->addAction(a);
+        }
     }
 
     return actList;
@@ -1387,4 +1390,31 @@ QPointF KoReportDesigner::getPressPoint() const
 QPointF KoReportDesigner::getReleasePoint() const
 {
     return QPointF(m_releaseX, m_releaseY);
+}
+
+void KoReportDesigner::plugItemActions(QList<QAction*> actList)
+{
+    qDebug() << "PLuugin actions";
+
+    qDebug() << actList;
+
+    foreach(QAction *a, actList) {
+            connect(a, SIGNAL(triggered(bool)), this, SLOT(slotItemTriggered(bool)));
+    }
+}
+
+
+void KoReportDesigner::slotItemTriggered(bool checked)
+{
+    qDebug() << "item triggered";
+if (!checked)
+        return;
+    QObject *theSender = sender();
+    if (!theSender)
+        return;
+
+    QString senderName = sender()->objectName();
+
+    slotItem(senderName);
+
 }

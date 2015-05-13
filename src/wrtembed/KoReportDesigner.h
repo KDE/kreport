@@ -241,7 +241,7 @@ public:
     @brief Returns a list of actions that represent the entities that can be inserted into the report.
     Actions are created as children of @a group and belong to the group.
     @return list of actions */
-    static QList<QAction*> itemActions(QActionGroup* group);
+    static QList<QAction*> itemActions(QActionGroup* group = 0);
 
     /**
     @brief Populates the toolbar with actions that can be applied to the report
@@ -278,6 +278,8 @@ public:
     @return point that contains X,Y coordinates of mouse press
     */
     QPointF getReleasePoint() const;
+
+    void plugItemActions(QList<QAction*> actList);
 
 public Q_SLOTS:
 
@@ -371,7 +373,6 @@ private:
 
     void createActions();
 
-
 private Q_SLOTS:
     void slotPropertyChanged(KPropertySet &s, KProperty &p);
 
@@ -379,6 +380,7 @@ private Q_SLOTS:
     @brief When the 'page' button in the top left is pressed, change the property set to the reports properties.
     */
     void slotPageButton_Pressed();
+    void slotItemTriggered(bool);
 
 Q_SIGNALS:
     void pagePropertyChanged(KPropertySet &s);

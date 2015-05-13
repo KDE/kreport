@@ -42,6 +42,8 @@ DesignerWindow::DesignerWindow()
         connect(action, SIGNAL(triggered(bool)), this, SLOT(slotToolboxActionTriggered(bool)));
         m_itemToolbar->addAction(action);
     }
+
+    m_reportDesigner->plugItemActions(itemActions);
 }
 
 DesignerWindow::~DesignerWindow()
