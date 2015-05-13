@@ -81,14 +81,14 @@ set(kreport_LIB_SRCS
 )
 
 if(KREPORT_SCRIPTING)
-    list(ADD kreport_LIB_SRCS
-        #renderer/scripting/krscripthandler.cpp
-        #renderer/scripting/krscriptconstants.cpp
-        #renderer/scripting/krscriptdebug.cpp
-        #renderer/scripting/krscriptdraw.cpp
-        #renderer/scripting/krscriptreport.cpp
-        #renderer/scripting/krscriptsection.cpp
-        #renderer/scripting/krscriptline.cpp
+    list(APPEND kreport_LIB_SRCS
+        renderer/scripting/krscripthandler.cpp
+        renderer/scripting/krscriptconstants.cpp
+        renderer/scripting/krscriptdebug.cpp
+        renderer/scripting/krscriptdraw.cpp
+        renderer/scripting/krscriptreport.cpp
+        renderer/scripting/krscriptsection.cpp
+        renderer/scripting/krscriptline.cpp
 
         #renderer/odtframe/KoOdtFrameReportDocument.cpp
         #renderer/odtframe/KoOdtFrameReportCheckBox.cpp

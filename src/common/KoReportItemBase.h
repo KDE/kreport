@@ -18,14 +18,15 @@
 #ifndef KOREPORTITEMBASE_H
 #define KOREPORTITEMBASE_H
 
+#include "config-kreport.h"
+#include "kreport_export.h"
+#include "krpos.h"
+#include "krsize.h"
+
 #include <QObject>
 #include <QDomElement>
 #include <QFont>
 #include <QColor>
-
-#include "kreport_export.h"
-#include "krpos.h"
-#include "krsize.h"
 
 class OROPage;
 class OROSection;

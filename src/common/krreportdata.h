@@ -20,8 +20,6 @@
 #define KRREPORTDATA_H
 
 #include "config-kreport.h"
-
-
 #include "kreport_export.h"
 #include "krsectiondata.h"
 #include "reportpageoptions.h"

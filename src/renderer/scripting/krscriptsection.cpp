@@ -19,6 +19,7 @@
 #include "krscriptline.h"
 #include "KoReportItemBase.h"
 #include "KoReportPluginManager.h"
+#include "KoReportPluginInterface.h"
 #include "KoReportItemLine.h"
 
 #include <QDebug>
@@ -64,7 +65,7 @@ QString Section::name()
 
 QObject* Section::objectByNumber(int i)
 {
-    if (m_section->m_objects[i]->typeName() == "line") {
+    if (m_section->m_objects[i]->typeName() == QLatin1String("line")) {
                 return new Scripting::Line(dynamic_cast<KoReportItemLine*>(m_section->m_objects[i]));
     }
     else {
@@ -102,6 +103,6 @@ void Section::initialize(Kross::Object::Ptr p)
 void Section::eventOnRender()
 {
     if (m_scriptObject)
-        m_scriptObject->callMethod("OnRender");
+        m_scriptObject->callMethod(QLatin1String("OnRender"));
 }
 }

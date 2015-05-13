@@ -46,7 +46,7 @@ KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData*
     m_draw = 0;
 
     // Create the Kross::Action instance .
-    m_action = new Kross::Action(this, "ReportScript");
+    m_action = new Kross::Action(this, QLatin1String("ReportScript"));
 
     //TODO - The kjsembed interpreter is buggy, and crashes on expressions
     // involving QVariant, which happens often.  So, as a workaground
@@ -57,19 +57,19 @@ KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData*
     QStringList interpreters = Kross::Manager::self().interpreters();
     QString interpreter = d->interpreter();
 
-    if (interpreter.toLower() == "javascript" && interpreters.contains("qtscript")) {
-        interpreter = "qtscript";
+    if (interpreter.toLower() == QLatin1String("javascript") && interpreters.contains(QLatin1String("qtscript"))) {
+        interpreter = QLatin1String("qtscript");
     }
 
     m_action->setInterpreter(interpreter);
 
     //Add constants object
     m_constants = new KRScriptConstants();
-    m_action->addObject(m_constants, "constants");
+    m_action->addObject(m_constants, QLatin1String("constants"));
 
     //A simple debug function to allow printing from functions
     m_debug = new KRScriptDebug();
-    m_action->addObject(m_debug, "debug");
+    m_action->addObject(m_debug, QLatin1String("debug"));
 
     //A simple drawing object
     m_draw = new KRScriptDraw();
@@ -83,7 +83,8 @@ KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData*
     foreach(KRSectionData *sec, secs) {
         m_sectionMap[sec] = new Scripting::Section(sec);
         m_sectionMap[sec]->setParent(m_report);
-        m_sectionMap[sec]->setObjectName(sec->name().replace('-', '_').remove("report:"));
+        m_sectionMap[sec]->setObjectName(sec->name().replace(QLatin1Char('-'), QLatin1Char('_'))
+                                         .remove(QLatin1String("report:")));
         //qDebug() << "Added" << m_sectionMap[sec]->objectName() << "to report" << m_reportData->name();
     }
 
@@ -170,7 +171,7 @@ QString KRScriptHandler::where()
     QString w;
     QMap<QString, QVariant>::const_iterator i = m_groups.constBegin();
     while (i != m_groups.constEnd()) {
-        w += '(' + i.key() + " = '" + i.value().toString() + "') AND ";
+        w += QLatin1Char('(') + i.key() + QLatin1String(" = '") + i.value().toString() + QLatin1Char("') AND ");
         ++i;
     }
     w.chop(4);

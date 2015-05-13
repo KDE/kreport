@@ -84,7 +84,9 @@ public Q_SLOTS:
     \param lw Line width
     \param o Opacity (0=transparent, 100=opaque)
     */
-    void text(qreal, qreal, const QString &, const QString &fnt = "Helvetica", int pt = 12, const QString &fc = "#000000", const QString &bc = "#ffffff", const QString &lc = "#ffffff", qreal lw = 0, int o = 0);
+    void text(qreal, qreal, const QString &, const QString &fnt = QLatin1String("Helvetica"),
+              int pt = 12, const QString &fc = QLatin1String("#000000"), const QString &bc = QLatin1String("#ffffff"),
+              const QString &lc = QLatin1String("#ffffff"), qreal lw = 0, int o = 0);
 private:
     OROPage *m_curPage;
     QPointF m_curOffset;

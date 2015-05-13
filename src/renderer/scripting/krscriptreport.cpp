@@ -19,6 +19,7 @@
 #include "krreportdata.h"
 #include "KoReportItemBase.h"
 #include "KoReportPluginManager.h"
+#include "KoReportPluginInterface.h"
 #include "krscriptline.h"
 #include "krscriptsection.h"
 #include "KoReportItemLine.h"
@@ -59,7 +60,7 @@ QObject* Report::objectByName(const QString &n)
     foreach(KoReportItemBase *o, obs) {
         if (o->entityName() == n) {
                     
-            if (o->typeName() == "line") {
+            if (o->typeName() == QLatin1String("line")) {
                         return new Scripting::Line(dynamic_cast<KoReportItemLine*>(o));
             }
             else {
@@ -98,19 +99,19 @@ void Report::initialize(Kross::Object::Ptr ptr)
 void Report::eventOnOpen()
 {
     if (m_scriptObject)
-        m_scriptObject->callMethod("OnOpen");
+        m_scriptObject->callMethod(QLatin1String("OnOpen"));
 }
 
 void Report::eventOnComplete()
 {
     if (m_scriptObject)
-        m_scriptObject->callMethod("OnComplete");
+        m_scriptObject->callMethod(QLatin1String("OnComplete"));
 }
 
 void Report::eventOnNewPage()
 {
     if (m_scriptObject)
-        m_scriptObject->callMethod("OnNewPage");
+        m_scriptObject->callMethod(QLatin1String("OnNewPage"));
 }
 
 }
