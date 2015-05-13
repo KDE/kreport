@@ -60,7 +60,7 @@ SectionEditor::SectionEditor(QWidget* parent)
 
     closeButton->setDefault(true);
     closeButton->setShortcut(Qt::CTRL | Qt::Key_Return);
-    connect(buttonBox, SIGNAL(accepted()), this, SLOT(accept()));
+    connect(buttonBox, SIGNAL(rejected()), this, SLOT(accept()));
 
     QWidget *widget = new QWidget(this);
     m_ui.setupUi(widget);
