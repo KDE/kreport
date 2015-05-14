@@ -250,7 +250,6 @@ QList<QAction*> KoReportPluginManager::actions()
 {
     QList<QAction*> actList;
 
-    KoReportDesigner designer;
     const QMap<QString, KReportPluginEntry*> plugins = d->plugins;
 
     foreach(KReportPluginEntry* plugin, plugins) {
