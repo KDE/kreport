@@ -23,6 +23,7 @@
 #include <QLayout>
 #include <qactiongroup.h>
 #include <QToolBar>
+#include <QAction>
 #include <QDebug>
 
 DesignerWindow::DesignerWindow()
@@ -39,13 +40,26 @@ DesignerWindow::DesignerWindow()
     QActionGroup *group = new QActionGroup(this);
     QList<QAction*> itemActions = KoReportDesigner::itemActions(group);
     foreach(QAction* action, itemActions) {
-        connect(action, SIGNAL(triggered(bool)), this, SLOT(slotToolboxActionTriggered(bool)));
         m_itemToolbar->addAction(action);
     }
 
     m_reportDesigner->plugItemActions(itemActions);
+
+    connect(m_reportDesigner, SIGNAL(itemInserted(QString)), this, SLOT(slotItemInserted(QString)));
 }
 
 DesignerWindow::~DesignerWindow()
 {
 }
+
+void DesignerWindow::slotItemInserted(const QString &itemId)
+{
+    QList<QAction*> itemActions = m_itemToolbar->actions();
+    foreach(QAction* action, itemActions) {
+        if (action->objectName() == itemId) {
+            action->setChecked(false);
+        }
+    }
+}
+
+#include "designerwindow.moc"

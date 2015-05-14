@@ -35,6 +35,9 @@ public:
     DesignerWindow();
     ~DesignerWindow();
 
+private slots:
+    void slotItemInserted(const QString &itemId);
+
 private:
     QScrollArea * m_scrollArea;
     KoReportDesigner *m_reportDesigner;
@@ -42,6 +45,7 @@ private:
 
     QToolBar *m_mainToolbar;
     QToolBar *m_itemToolbar;
+
 };
 
 #endif // DESIGNERWINDOW_H
