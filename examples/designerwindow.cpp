@@ -25,6 +25,7 @@
 #include <QToolBar>
 #include <QAction>
 #include <QDebug>
+#include <QDockWidget>
 
 DesignerWindow::DesignerWindow()
 {
@@ -46,6 +47,17 @@ DesignerWindow::DesignerWindow()
     m_reportDesigner->plugItemActions(itemActions);
 
     connect(m_reportDesigner, SIGNAL(itemInserted(QString)), this, SLOT(slotItemInserted(QString)));
+
+    // Set up the property editor
+    m_propertyDock = new QDockWidget(tr("Property Editor"), this);
+    m_propertyEditor = new KPropertyEditorView(this);
+    m_propertyDock->setWidget(m_propertyEditor);
+
+    addDockWidget(Qt::RightDockWidgetArea, m_propertyDock);
+    m_propertyEditor->changeSet(m_reportDesigner->propertySet());
+
+    connect(m_reportDesigner, SIGNAL(propertySetChanged()),
+            this, SLOT(slotDesignerPropertySetChanged()));
 }
 
 DesignerWindow::~DesignerWindow()
@@ -60,6 +72,11 @@ void DesignerWindow::slotItemInserted(const QString &itemId)
             action->setChecked(false);
         }
     }
+}
+
+void DesignerWindow::slotDesignerPropertySetChanged()
+{
+    m_propertyEditor->changeSet(m_reportDesigner->itemPropertySet());
 }
 
 #include "designerwindow.moc"

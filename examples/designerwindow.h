@@ -21,11 +21,11 @@
 #define DESIGNERWINDOW_H
 
 #include <qt5/QtWidgets/QMainWindow>
+#include <KPropertyEditorView>
+#include <KPropertySet>
 
 class QScrollArea;
 class KoReportDesigner;
-
-#include <kproperty/KPropertySet.h>
 
 class DesignerWindow : public QMainWindow
 {
@@ -37,6 +37,7 @@ public:
 
 private slots:
     void slotItemInserted(const QString &itemId);
+    void slotDesignerPropertySetChanged();
 
 private:
     QScrollArea * m_scrollArea;
@@ -46,6 +47,8 @@ private:
     QToolBar *m_mainToolbar;
     QToolBar *m_itemToolbar;
 
+    QDockWidget *m_propertyDock;
+    KPropertyEditorView *m_propertyEditor;
 };
 
 #endif // DESIGNERWINDOW_H
