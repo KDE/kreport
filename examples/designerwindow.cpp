@@ -78,5 +78,3 @@ void DesignerWindow::slotDesignerPropertySetChanged()
 {
     m_propertyEditor->changeSet(m_reportDesigner->itemPropertySet());
 }
-
-#include "designerwindow.moc"
