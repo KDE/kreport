@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Web Report Plugin
 Name[ca]=Connector d'informes web
+Name[de]=Webbericht-Modul
 Name[fi]=Raportoinnin WWW-liitännäinen
 Name[fr]=Module externe de rapports web
 Name[gl]=Complemento de informes web
@@ -17,6 +18,7 @@ Name[uk]=Додаток перегляду інтернету у звіті
 Name[x-test]=xxWeb Report Pluginxx
 Comment=Calligra Reports Web Plugin
 Comment[ca]=Connector d'informes web del Calligra
+Comment[de]=Webbericht-Modul für Calligra
 Comment[fi]=Calligra Reports -WWW-liitännäinen
 Comment[gl]=Complemento para Calligra de informes web.
 Comment[it]=Estensione web dei rapporti di Calligra

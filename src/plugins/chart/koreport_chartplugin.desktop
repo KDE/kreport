@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Chart Report Plugin
 Name[ca]=Connector d'informes de diagrames
+Name[de]=Diagramm-Reportmodul
 Name[fi]=Raportoinnin kaavioliitännäinen
 Name[fr]=Module externe de panneaux pour Chart
 Name[gl]=Complemento de informes de gráficos
@@ -17,6 +18,7 @@ Name[uk]=Додаток діаграм звіту
 Name[x-test]=xxChart Report Pluginxx
 Comment=Calligra Reports Chart Plugin
 Comment[ca]=Connector d'informes de diagrames del Calligra
+Comment[de]=Diagrammberichtmodul für Calligra
 Comment[fi]=Calligra Reportsin kaavioliitännäinen
 Comment[gl]=Complemento para Calligra de gráficas web.
 Comment[it]=Estensione per grafici dei rapporti di Calligra

@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Barcode Report Plugin
 Name[ca]=Connector d'informes de codi de barres
+Name[de]=Strichcode-Berichtmodul
 Name[fi]=Raportoinnin viivakoodiliitännäinen
 Name[fr]=Module externe de rapport Barcode
 Name[gl]=Complemento de informes de códigos de barras
@@ -17,6 +18,7 @@ Name[uk]=Додаток штрихкодів звіту
 Name[x-test]=xxBarcode Report Pluginxx
 Comment=KoReport Barcode Plugin
 Comment[ca]=Connector de codi de barres KoReport
+Comment[de]=KoReport-Strichcodemodul
 Comment[fi]=KoReportin viivakoodiliitännäinen
 Comment[fr]=Module externe de code barres KoReport
 Comment[gl]=Complemento de códigos de barras de KoReport.
