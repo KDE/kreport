@@ -647,7 +647,7 @@ void KoReportDesigner::createProperties()
     m_bottomMargin->setOption("unit", QLatin1String("cm"));
 
     keys = Kross::Manager::self().interpreters();
-    m_interpreter = new KProperty("script-interpreter", keys, keys, keys[0], tr("Script Interpreter"));
+    m_interpreter = new KProperty("script-interpreter", keys, keys, keys.value(0), tr("Script Interpreter"));
 
     m_script = new KProperty("script", keys, keys, QString(), tr("Object Script"));
 
@@ -953,7 +953,7 @@ void KoReportDesigner::slotEditDelete()
     QGraphicsItem * item = 0;
     bool modified = false;
     while (selectionCount() > 0) {
-        item = activeScene()->selectedItems()[0];
+        item = activeScene()->selectedItems().value(0);
         if (item) {
             QGraphicsScene * scene = item->scene();
             delete item;
