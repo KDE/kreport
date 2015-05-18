@@ -37,8 +37,8 @@ DesignerWindow::DesignerWindow()
     m_reportDesigner = new KoReportDesigner(this);
     m_scrollArea->setWidget(m_reportDesigner);
 
-    m_mainToolbar = addToolBar(tr("main"));
-    m_itemToolbar = addToolBar(tr("items"));
+    m_mainToolbar = addToolBar(tr("Main"));
+    m_itemToolbar = addToolBar(tr("Items"));
 
     QActionGroup *group = new QActionGroup(this);
     QList<QAction*> itemActions = KoReportDesigner::itemActions(group);
