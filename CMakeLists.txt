@@ -36,6 +36,7 @@ find_package(KProperty REQUIRED)
 set(KREPORT_PLUGIN_INSTALL_DIR ${LIB_INSTALL_DIR}/plugins/kreport)
 
 if(BUILD_TESTING)
+    add_definitions(-DBUILD_TESTING)
     add_subdirectory( autotests )
     #add_subdirectory( tests )
 endif()
