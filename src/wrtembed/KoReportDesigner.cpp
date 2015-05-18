@@ -988,16 +988,12 @@ void KoReportDesigner::slotEditCut()
         bool modified = false;
         if (item) {
             m_sectionData->copy_list.clear();
-
-            for (int i = 0; i < activeScene()->selectedItems().count(); i++) {
-                QGraphicsItem *itm = activeScene()->selectedItems()[i];
-                m_sectionData->cut_list.append(dynamic_cast<KoReportDesignerItemBase*>(itm));
-                m_sectionData->copy_list.append(dynamic_cast<KoReportDesignerItemBase*>(itm));
+            foreach(QGraphicsItem *item, activeScene()->selectedItems()) {
+                m_sectionData->cut_list.append(dynamic_cast<KoReportDesignerItemBase*>(item));
+                m_sectionData->copy_list.append(dynamic_cast<KoReportDesignerItemBase*>(item));
             }
-            int c = activeScene()->selectedItems().count();
-            for (int i = 0; i < c; i++) {
-                QGraphicsItem *itm = activeScene()->selectedItems()[0];
-                activeScene()->removeItem(itm);
+            foreach(QGraphicsItem *item, activeScene()->selectedItems()) {
+                activeScene()->removeItem(item);
                 activeScene()->update();
                 modified = true;
             }
@@ -1018,9 +1014,8 @@ void KoReportDesigner::slotEditCopy()
     QGraphicsItem * item = activeScene()->selectedItems().first();
     if (item) {
         m_sectionData->copy_list.clear();
-
-        for (int i = 0; i < activeScene()->selectedItems().count(); i++) {
-            m_sectionData->copy_list.append(dynamic_cast<KoReportDesignerItemBase*>(activeScene()->selectedItems()[i]));
+        foreach(QGraphicsItem *item, activeScene()->selectedItems()) {
+            m_sectionData->copy_list.append(dynamic_cast<KoReportDesignerItemBase*>(item));
         }
         m_sectionData->selected_x_offset = 10;
         m_sectionData->selected_y_offset = 10;
@@ -1049,11 +1044,11 @@ void KoReportDesigner::slotEditPaste(QGraphicsScene * canvas)
         //!TODO this code sucks :)
         //!The setPos calls only work AFTER the name has been set ?!?!?
 
-        for (int i = 0; i < m_sectionData->copy_list.count(); i++) {
-            KoReportItemBase *obj = dynamic_cast<KoReportItemBase*>(m_sectionData->copy_list[i]);
+        foreach(KoReportDesignerItemBase *item, m_sectionData->copy_list) {
+            KoReportItemBase *obj = dynamic_cast<KoReportItemBase*>(item);
             const QString type = obj ? obj->typeName() : QLatin1String("object");
             //qDebug() << type;
-            KoReportDesignerItemBase *ent = (m_sectionData->copy_list[i])->clone();
+            KoReportDesignerItemBase *ent = item->clone();
             KoReportItemBase *new_obj = dynamic_cast<KoReportItemBase*>(ent);
             new_obj->setEntityName(suggestEntityName(type));
             if (activeItem) {
