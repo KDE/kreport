@@ -19,6 +19,7 @@
 
 #include "window.h"
 
+#include <QApplication>
 #include <QDomElement>
 #include <QFile>
 #include <QDebug>
@@ -80,6 +81,6 @@ void Window::createMenus()
     m_fileMenu = menuBar()->addMenu(tr("&File"));
     m_exitAction = new QAction(tr("E&xit"), this);
     m_exitAction->setShortcuts(QKeySequence::Quit);
-    connect(m_exitAction, SIGNAL(triggered()), this, SLOT(close()));
+    connect(m_exitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
     m_fileMenu->addAction(m_exitAction);
 }
