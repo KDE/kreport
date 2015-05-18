@@ -28,7 +28,7 @@
 #include <QSet>
 #include <QList>
 
-QTEST_MAIN(PluginsTest)
+QTEST_GUILESS_MAIN(PluginsTest)
 
 void PluginsTest::initTestCase()
 {
