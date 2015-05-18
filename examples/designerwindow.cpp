@@ -18,10 +18,12 @@
 */
 
 #include "designerwindow.h"
-#include <QScrollArea>
+
 #include <KoReportDesigner.h>
+
 #include <QLayout>
-#include <qactiongroup.h>
+#include <QActionGroup>
+#include <QScrollArea>
 #include <QToolBar>
 #include <QAction>
 #include <QDebug>

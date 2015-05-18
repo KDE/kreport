@@ -20,13 +20,14 @@
 #ifndef DESIGNERWINDOW_H
 #define DESIGNERWINDOW_H
 
-#include <qt5/QtWidgets/QMainWindow>
+#include <QMainWindow>
 #include <KPropertyEditorView>
 #include <KPropertySet>
 
 class QScrollArea;
 class KoReportDesigner;
 
+/*! @short KReportExample application's design window */
 class DesignerWindow : public QMainWindow
 {
     Q_OBJECT

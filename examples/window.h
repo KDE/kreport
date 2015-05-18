@@ -28,8 +28,7 @@
 
 #include <KoReportPreRenderer>
 
-/*! @internal
- * @short KreportExample application's main window */
+/*! @short KReportExample application's main window */
 class Window : public QMainWindow
 {
     Q_OBJECT
