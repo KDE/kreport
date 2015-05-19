@@ -40,6 +40,11 @@ DesignerWindow::DesignerWindow()
     m_mainToolbar = addToolBar(tr("Main"));
     m_itemToolbar = addToolBar(tr("Items"));
 
+    QList<QAction*> designerActions = m_reportDesigner->designerActions();
+    foreach(QAction* action, designerActions) {
+        m_mainToolbar->addAction(action);
+    }
+
     QActionGroup *group = new QActionGroup(this);
     QList<QAction*> itemActions = KoReportDesigner::itemActions(group);
     foreach(QAction* action, itemActions) {
