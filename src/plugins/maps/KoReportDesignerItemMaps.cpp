@@ -65,7 +65,7 @@ KoReportDesignerItemMaps::KoReportDesignerItemMaps(QDomNode & element, KoReportD
 KoReportDesignerItemMaps* KoReportDesignerItemMaps::clone()
 {
     QDomDocument d;
-    QDomElement e = d.createElement("clone");
+    QDomElement e = d.createElement(QLatin1String("clone"));
     QDomNode n;
     buildXML(d, e);
     n = e.firstChild();
@@ -84,13 +84,13 @@ void KoReportDesignerItemMaps::paint(QPainter* painter, const QStyleOptionGraphi
     // store any values we plan on changing so we can restore them
     QPen  p = painter->pen();
     painter->fillRect(rect(), QColor(0xc2, 0xfc, 0xc7));//C2FCC7
-    
+
     //Draw a border so user knows the object edge
     painter->setPen(QPen(QColor(224, 224, 224)));
     painter->drawRect(rect());
     painter->setPen(Qt::black);
-    painter->drawText(rect(), 0, dataSourceAndObjectTypeName(itemDataSource(), "map"));
-    
+    painter->drawText(rect(), 0, dataSourceAndObjectTypeName(itemDataSource(), QLatin1String("map")));
+
     drawHandles(painter);
 
     // restore an values before we started just in case
@@ -109,7 +109,7 @@ void KoReportDesignerItemMaps::buildXML(QDomDocument & doc, QDomElement & parent
     addPropertyAsAttribute(&entity, m_zoomProperty);
     addPropertyAsAttribute(&entity, m_themeProperty);
     //addPropertyAsAttribute(&entity, m_resizeMode);
-    entity.setAttribute("report:z-index", zValue());
+    entity.setAttribute(QLatin1String("report:z-index"), zValue());
     buildXMLRect(doc, entity, &m_pos, &m_size);
 
     parent.appendChild(entity);

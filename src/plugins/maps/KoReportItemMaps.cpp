@@ -15,41 +15,46 @@
  * You should have received a copy of the GNU Lesser General Public
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
-
 #include "KoReportItemMaps.h"
-#include <renderobjects.h>
 
-#include <KProperty>
 #include <KPropertySet>
 
-#include <klocalizedstring.h>
-#include <kcodecs.h>
-
+#include <QBuffer>
+#include <QPixmap>
+#include <QLabel>
 #include <QStringList>
+
+#include <renderobjects.h>
+
+#include <sys/socket.h>
+
+#define myDebug() if (0) kDebug(44021)
 
 KoReportItemMaps::KoReportItemMaps(QDomNode & element)
     : m_longtitude(0)
     , m_latitude(0)
-    , m_zoom(0)
+    , m_zoom(1200)
     , m_pageId(0)
     , m_sectionId(0)
     , m_oroPicture(0)
+    , m_longDataSetFromScript(false)
+    , m_latitudeProperty(false)
+    , m_zoomDataSetFromScript(false)
 {
     createProperties();
 
-    m_name->setValue(element.toElement().attribute("report:name"));
-    m_controlSource->setValue(element.toElement().attribute("report:item-data-source"));
-    Z = element.toElement().attribute("report:z-index").toDouble();
-    m_latitudeProperty->setValue(element.toElement().attribute("report:latitude").toDouble());
-    m_longitudeProperty->setValue(element.toElement().attribute("report:longitude").toDouble());
-    m_zoomProperty->setValue(element.toElement().attribute("report:zoom").toInt());
-    QString themeId(element.toElement().attribute("report:theme"));
+    m_name->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
+    Z = element.toElement().attribute(QLatin1String("report:z-index")).toDouble();
+    m_latitudeProperty->setValue(element.toElement().attribute(QLatin1String("report:latitude")).toDouble());
+    m_longitudeProperty->setValue(element.toElement().attribute(QLatin1String("report:longitude")).toDouble());
+    m_zoomProperty->setValue(element.toElement().attribute(QLatin1String("report:zoom")).toInt());
+    QString themeId(element.toElement().attribute(QLatin1String("report:theme")));
     themeId = themeId.isEmpty() ? m_themeManager.mapThemeIds()[0] : themeId;
     m_themeProperty->setValue(themeId);
 
     parseReportRect(element.toElement(), &m_pos, &m_size);
 }
-
 
 KoReportItemMaps::~KoReportItemMaps()
 {
@@ -58,29 +63,36 @@ KoReportItemMaps::~KoReportItemMaps()
 
 void KoReportItemMaps::createProperties()
 {
-    m_set = new KPropertySet(0, "Maps");
+    m_set = new KPropertySet(0, QLatin1String("Maps"));
 
-    m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), i18n("Data Source"));
+    m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
 
-    m_latitudeProperty = new KProperty("latitude", 0.0, i18n("Latitude"), QString(), KProperty::Double);
+    m_latitudeProperty = new KProperty("latitude", 0.0, tr("Latitude"), tr("Latitude"), KProperty::Double);
     m_latitudeProperty->setOption("min", -90);
     m_latitudeProperty->setOption("max", 90);
     m_latitudeProperty->setOption("unit", QString::fromUtf8("°"));
+    m_latitudeProperty->setOption("precision", 7);
 
-    m_longitudeProperty = new KProperty("longitude", 0.0, i18n("Longitude"), QString(), KProperty::Double);
+    m_longitudeProperty = new KProperty("longitude", 0.0, tr("Longitude"), tr("Longitude"), KProperty::Double);
     m_longitudeProperty->setOption("min", -180);
     m_longitudeProperty->setOption("max", 180);
     m_longitudeProperty->setOption("unit", QString::fromUtf8("°"));
+    m_longitudeProperty->setOption("precision", 7);
 
-    m_zoomProperty     = new KProperty("zoom", 1000, i18n("Zoom"));
+    m_zoomProperty     = new KProperty("zoom", 1000, tr("Zoom"), tr("Zoom") );
+    m_zoomProperty->setOption("min", 0);
+    m_zoomProperty->setOption("max", 4000);
+    m_zoomProperty->setOption("step", 100);
+    m_zoomProperty->setOption("slider", true);
 
     QStringList mapThemIds(m_themeManager.mapThemeIds());
     m_themeProperty = new KProperty("theme",
                                                     mapThemIds,
                                                     mapThemIds,
                                                     mapThemIds[1]);
-    if (!mapThemIds.isEmpty()) {
-        m_themeProperty->setValue(mapThemIds[0], false);
+
+    if (mapThemIds.contains(QLatin1String("earth/srtm/srtm.dgml"))) {
+        m_themeProperty->setValue(QLatin1String("earth/srtm/srtm.dgml"), false);
     }
 
     addDefaultProperties();
@@ -104,14 +116,14 @@ QString KoReportItemMaps::itemDataSource() const
 
 QString KoReportItemMaps::typeName() const
 {
-    return "maps";
+    return QLatin1String("maps");
 }
 
 int KoReportItemMaps::renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset,
                                        const QVariant &data, KRScriptHandler *script)
 {
     Q_UNUSED(script)
-    
+
     deserializeData(data);
     m_pageId = page;
     m_sectionId = section;
@@ -183,4 +195,37 @@ QSize KoReportItemMaps::size() const
 QString KoReportItemMaps::themeId() const
 {
     return m_themeProperty->value().toString();
+}
+
+QVariant KoReportItemMaps::realItemData(const QVariant& itemData) const
+{
+    double lat, lon;
+    int zoom;
+
+    QStringList dataList = itemData.toString().split(QLatin1Char(';'));
+
+    if (dataList.size() == 3) {
+        lat = dataList[0].toDouble();
+        lon = dataList[1].toDouble();
+        zoom = dataList[2].toInt();
+    } else if (dataList.size() == 2) {
+        lat = dataList[0].toDouble();
+        lon = dataList[1].toDouble();
+        zoom = m_zoomProperty->value().toInt();
+    } else {
+        lat = m_latitudeProperty->value().toReal();
+        lon = m_longitudeProperty->value().toReal();
+        zoom = m_zoomProperty->value().toInt();
+    }
+
+    if (m_longDataSetFromScript) {
+        lon = m_longtitude;
+    }
+    if (m_latDataSetFromScript) {
+        lat = m_latitude;
+    }
+    if (m_zoomDataSetFromScript) {
+        zoom = m_zoom;
+    }
+    return QString(QLatin1String("%1;%2;%3")).arg(lat).arg(lon).arg(zoom);
 }

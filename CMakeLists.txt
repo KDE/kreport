@@ -10,6 +10,7 @@ include(ECMGeneratePriFile)
 include(ECMPackageConfigHelpers)
 include(ECMPoQmTools)
 include(ECMSetupVersion)
+include(ECMInstallIcons)
 include(ECMOptionalAddSubdirectory)
 
 include(KDEInstallDirs)

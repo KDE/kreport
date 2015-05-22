@@ -27,72 +27,47 @@ class KoReportItemMaps;
 namespace Scripting
 {
 
-/**
-*/
 class Maps : public QObject
 {
     Q_OBJECT
 public:
-    explicit Maps(KoReportItemMaps *);
+    explicit Maps(KoReportItemMaps *i);
 
     ~Maps();
+
 public Q_SLOTS:
-
-
     /**
     * Get the position of the map
     * @return position in points
      */
-    QPointF position();
-
+    QPointF position() const;
 
     /**
      * Sets the position of the map in points
      * @param Position
      */
-    void setPosition(const QPointF&);
+    void setPosition(const QPointF &p);
 
     /**
      * Get the size of the map
      * @return size in points
      */
-    QSizeF size();
+    QSizeF size() const;
 
     /**
      * Set the size of the map in points
      * @param Size
      */
-    void setSize(const QSizeF&);
+    void setSize(const QSizeF &s);
 
-    /**
-     * Get the resize mode for the image
-     * @return resizeMode Clip or Stretch
-     */
-    QString resizeMode();
+    void setLatitude(qreal latitude);
 
-    /**
-     * Sets the resize mode for the image
-     * @param ResizeMode "Stretch" or "Clip" default is to clip
-     */
-    void setResizeMode(const QString &);
+    void setLongitude(qreal longitude);
 
-    /**
-     * Sets the data for the static image
-     * the data should be base64 encoded
-     * @param RawImageData
-     */
-    void setInlineImage(const QByteArray&);
+    void setZoom(int zoom);
 
-    /**
-     * Get the data from a file (expected to be an image)
-     * the returned data will be base64 encoded
-     * @param Path location of file
-     * @return File data enoded in base64
-     */
-    void loadFromFile(const QVariant &);
 private:
     KoReportItemMaps *m_map;
-
 };
 
 }

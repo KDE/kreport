@@ -23,7 +23,7 @@
 
 #include <KPropertySet>
 
-#include "KoReportDesignerItemRectBase.h"
+#include "wrtembed/KoReportDesignerItemRectBase.h"
 #include "KoReportItemMaps.h"
 
 class KoReportDesignerItemMaps : public KoReportItemMaps, public KoReportDesignerItemRectBase

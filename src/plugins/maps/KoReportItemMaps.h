@@ -16,16 +16,27 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef KRIMAGEDATA_H
-#define KRIMAGEDATA_H
+#ifndef KREPORTITEMMAPS_H
+#define KREPORTITEMMAPS_H
 
-#include "KoReportASyncItemBase.h"
+#include "common/KoReportASyncItemBase.h"
+
+#include <marble/MarbleWidget.h>
+#include <marble/MapThemeManager.h>
+
+#include <KProperty>
+#include <KPropertySet>
+
+#include <QRect>
+#include <QPainter>
+#include <QDomDocument>
+#include <QMap>
+
 #include "krpos.h"
 #include "krsize.h"
 #include "MapRenderer.h"
 
-#include <marble/MapThemeManager.h>
-
+class OROImage;
 class OROPicture;
 class OROPage;
 class OROSection;
@@ -35,8 +46,6 @@ namespace Scripting
 class Maps;
 }
 
-/**
-*/
 class KoReportItemMaps : public KoReportASyncItemBase
 {
     Q_OBJECT
@@ -51,6 +60,8 @@ public:
     virtual int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset, const QVariant &data, KRScriptHandler *script);
 
     virtual QString itemDataSource() const;
+    virtual QVariant realItemData(const QVariant &itemData) const;
+
     void renderFinished();
 
     qreal longtitude() const;
@@ -62,20 +73,13 @@ public:
     OROPicture* oroImage();
 
 protected:
-    KProperty * m_controlSource;
-    KProperty* m_resizeMode;
-    KProperty* m_staticImage;
+    KProperty* m_controlSource;
     KProperty* m_latitudeProperty;
     KProperty* m_longitudeProperty;
     KProperty* m_zoomProperty;
     KProperty* m_themeProperty;
 
-    void setMode(const QString&);
-    void setInlineImageData(QByteArray, const QString& = QString());
     void setColumn(const QString&);
-    QString mode() const;
-    bool isInline() const;
-    QByteArray inlineImageData() const;
 
     qreal m_longtitude;
     qreal m_latitude;
@@ -90,6 +94,10 @@ protected:
 private:
     virtual void createProperties();
     void deserializeData(const QVariant& serialized);
+
+    bool m_longDataSetFromScript;
+    bool m_latDataSetFromScript;
+    bool m_zoomDataSetFromScript;
 
     friend class Scripting::Maps;
 };

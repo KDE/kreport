@@ -33,13 +33,13 @@ MapRenderer::MapRenderer(QObject* parent)
     , m_currentJob(0)
     , m_renderStatusProxy(this)
 {
-    m_marble.setMapThemeId("earth/openstreetmap/openstreetmap.dgml");
+    m_marble.setMapThemeId(QLatin1String("earth/openstreetmap/openstreetmap.dgml"));
     m_marble.setShowOverviewMap(false);
     m_marble.setMapQualityForViewContext(Marble::PrintQuality, Marble::Still);
     m_marble.setShowCrosshairs(true);
 
     foreach(Marble::AbstractFloatItem* floatItem, m_marble.floatItems()){
-        if(floatItem->nameId() == QString("navigation")){
+        if(floatItem->nameId() == QString(QLatin1String("navigation"))){
             floatItem->setVisible(false);
         }
     }

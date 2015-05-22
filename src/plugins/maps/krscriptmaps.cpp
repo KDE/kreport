@@ -16,7 +16,10 @@
  */
 
 #include "krscriptmaps.h"
+
 #include "KoReportItemMaps.h"
+
+#include <QBuffer>
 
 namespace Scripting
 {
@@ -24,55 +27,51 @@ namespace Scripting
 Maps::Maps(KoReportItemMaps *i)
 {
     m_map = i;
+    m_map->m_latDataSetFromScript = false;
+    m_map->m_longDataSetFromScript = false;
+    m_map->m_zoomDataSetFromScript = false;
 }
-
 
 Maps::~Maps()
 {
 }
 
-QPointF Maps::position()
+QPointF Maps::position() const
 {
     return m_map->m_pos.toPoint();
 }
+
 void Maps::setPosition(const QPointF& p)
 {
     m_map->m_pos.setPointPos(p);
 }
 
-QSizeF Maps::size()
+QSizeF Maps::size() const
 {
     return m_map->m_size.toPoint();
 }
+
 void Maps::setSize(const QSizeF& s)
 {
     m_map->m_size.setPointSize(s);
 }
 
-QString Maps::resizeMode()
+void Maps::setLatitude(qreal latitude)
 {
-    return m_map->m_resizeMode->value().toString();
+    m_map->m_latitude = latitude;
+    m_map->m_latDataSetFromScript = true;
 }
 
-void Maps::setResizeMode(const QString &rm)
+void Maps::setLongitude(qreal longitude)
 {
-    if (rm == "Stretch") {
-        m_map->m_resizeMode->setValue("Stretch");
-    } else {
-        m_map->m_resizeMode->setValue("Clip");
-    }
+    m_map->m_longtitude = longitude;
+    m_map->m_longDataSetFromScript = true;
 }
 
-void Maps::setInlineImage(const QByteArray &/*ba*/)
+void Maps::setZoom(int zoom)
 {
-    //m_map->setInlineImageData(ba);
+    m_map->m_zoom = zoom;
+    m_map->m_zoomDataSetFromScript = true;
 }
 
-void Maps::loadFromFile(const QVariant &pth)
-{
-    QPixmap img;
-
-    QString str = pth.toString();
-    //m_map->setInlineImageData(QByteArray(), str);
-}
 }

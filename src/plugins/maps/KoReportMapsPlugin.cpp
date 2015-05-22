@@ -21,25 +21,18 @@
 #include "KoReportMapsPlugin.h"
 #include "KoReportItemMaps.h"
 #include "KoReportDesignerItemMaps.h"
-#include "KoReportPluginInfo.h"
+#include <KoReportPluginInterface.h>
 #ifdef KREPORT_SCRIPTING
 #include "krscriptmaps.h"
 #endif
 
-#include <KoIcon.h>
+#include <QIcon>
 
-K_EXPORT_KOREPORT_ITEMPLUGIN(KoReportMapsPlugin, mapsplugin)
+KREPORT_PLUGIN_FACTORY(KoReportMapsPlugin, "kreport_mapsplugin.json")
 
 KoReportMapsPlugin::KoReportMapsPlugin(QObject *parent, const QVariantList &args) : KoReportPluginInterface(parent)
 {
     Q_UNUSED(args)
-    
-    KoReportPluginInfo *info = new KoReportPluginInfo();
-    info->setClassName("maps");
-    info->setIcon(koIcon("report_map_element"));
-    info->setName(i18n("Map"));
-    info->setPriority(40);
-    setInfo(info);
 }
 
 KoReportMapsPlugin::~KoReportMapsPlugin()
@@ -71,3 +64,5 @@ QObject* KoReportMapsPlugin::createScriptInstance(KoReportItemBase* /*item*/)
     return 0;
 }
 #endif
+
+#include "KoReportMapsPlugin.moc"
