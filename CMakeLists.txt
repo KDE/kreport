@@ -10,6 +10,7 @@ include(ECMGeneratePriFile)
 include(ECMPackageConfigHelpers)
 include(ECMPoQmTools)
 include(ECMSetupVersion)
+include(ECMOptionalAddSubdirectory)
 
 include(KDEInstallDirs)
 include(KDEFrameworkCompilerSettings)

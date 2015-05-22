@@ -1,7 +1,7 @@
-add_subdirectory(barcode)
+ecm_optional_add_subdirectory(barcode)
 
 if(NOT WIN32)
-#  add_subdirectory(chart)
+#todo  ecm_optional_add_subdirectory(chart)
 endif(NOT WIN32)
 
 if(MARBLE_FOUND)
@@ -9,5 +9,5 @@ if(MARBLE_FOUND)
 endif(MARBLE_FOUND)
 
 if(QT_QTWEBKIT_FOUND)
-#  add_subdirectory(web)
+#todo  ecm_optional_add_subdirectory(web)
 endif(QT_QTWEBKIT_FOUND)
