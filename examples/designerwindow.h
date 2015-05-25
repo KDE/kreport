@@ -36,7 +36,7 @@ public:
     DesignerWindow();
     ~DesignerWindow();
 
-private slots:
+private Q_SLOTS:
     void slotItemInserted(const QString &itemId);
     void slotDesignerPropertySetChanged();
 
