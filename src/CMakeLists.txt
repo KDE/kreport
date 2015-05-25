@@ -108,7 +108,7 @@ if(KREPORT_SCRIPTING)
         items/image/krscriptimage.cpp
         items/text/krscripttext.cpp
     )
-endif(KREPORT_SCRIPTING)
+endif()
 
 qt5_wrap_ui(kreport_LIB_SRCS
     wrtembed/detailgroupsectiondialog.ui

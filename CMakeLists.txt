@@ -46,13 +46,13 @@ endif()
 option(BUILD_EXAMPLES "Build example applications" FALSE)
 if (BUILD_EXAMPLES)
     add_subdirectory(examples)
-endif(BUILD_EXAMPLES)
+endif()
 
 add_subdirectory(src)
 
 if (NOT WIN32)
   configure_file(${KReport_SOURCE_DIR}/kreport.pc.cmake ${KReport_BINARY_DIR}/kreport.pc @ONLY)
   install(FILES ${KReport_BINARY_DIR}/kreport.pc DESTINATION ${LIB_INSTALL_DIR}/pkgconfig)
-endif (NOT WIN32)
+endif ()
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
