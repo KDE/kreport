@@ -23,7 +23,7 @@
 
 #include <KAboutData>
 
-#include <QtTest/QTest>
+#include <QTest>
 #include <QDebug>
 #include <QSet>
 #include <QList>
