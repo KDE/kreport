@@ -25,12 +25,7 @@
 #include <marble/MapThemeManager.h>
 
 #include <KProperty>
-#include <KPropertySet>
 
-#include <QRect>
-#include <QPainter>
-#include <QDomDocument>
-#include <QMap>
 
 #include "krpos.h"
 #include "krsize.h"

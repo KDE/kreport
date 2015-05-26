@@ -18,7 +18,7 @@
 #ifndef KREPORTPLUGINSTEST_H
 #define KREPORTPLUGINSTEST_H
 
-#include <QCoreApplication>
+#include <QObject>
 
 class PluginsTest : public QObject
 {

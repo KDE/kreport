@@ -20,7 +20,6 @@
 #include "window.h"
 
 #include <QApplication>
-#include <QDomElement>
 #include <QFile>
 #include <QDebug>
 

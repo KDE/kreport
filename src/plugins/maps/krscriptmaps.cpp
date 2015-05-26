@@ -19,7 +19,6 @@
 
 #include "KoReportItemMaps.h"
 
-#include <QBuffer>
 
 namespace Scripting
 {

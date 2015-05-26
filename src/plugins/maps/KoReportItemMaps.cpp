@@ -19,9 +19,6 @@
 
 #include <KPropertySet>
 
-#include <QBuffer>
-#include <QPixmap>
-#include <QLabel>
 #include <QStringList>
 
 #include <renderobjects.h>

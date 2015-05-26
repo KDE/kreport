@@ -23,7 +23,6 @@
 #include <QGraphicsView>
 #include <QMainWindow>
 #include <QDomDocument>
-#include <QMenuBar>
 #include <QAction>
 
 #include <KoReportPreRenderer>

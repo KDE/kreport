@@ -22,7 +22,6 @@
 
 #define QT_STATICPLUGIN
 
-#include <QtPlugin>
 #include "KoReportPluginInterface.h"
 
 //! Declaration to put in all static plugin headers

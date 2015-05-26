@@ -22,14 +22,13 @@
 #include "KReportJsonTrader_p.h"
 
 #include <QDebug>
-#include <QApplication>
 #include <QList>
 #include <QPluginLoader>
 #include <QJsonObject>
 #include <QJsonArray>
 #include <QDirIterator>
 #include <QDir>
-#include <QGlobalStatic>
+#include <QCoreApplication>
 
 Q_GLOBAL_STATIC(KReportJsonTrader, KReportJsonTrader_instance)
 

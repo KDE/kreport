@@ -25,7 +25,6 @@
 
 #include <QDebug>
 #include <QPluginLoader>
-#include <QFileInfo>
 #include <QAction>
 
 //Include the static items

@@ -26,7 +26,6 @@
 #include "krscriptmaps.h"
 #endif
 
-#include <QIcon>
 
 KREPORT_PLUGIN_FACTORY(KoReportMapsPlugin, "kreport_mapsplugin.json")
 

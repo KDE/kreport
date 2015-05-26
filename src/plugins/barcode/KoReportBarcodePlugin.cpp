@@ -25,7 +25,6 @@
 #include "krscriptbarcode.h"
 #endif
 
-#include <QIcon>
 
 KREPORT_PLUGIN_FACTORY(KoReportBarcodePlugin, "kreport_barcodeplugin.json")
 

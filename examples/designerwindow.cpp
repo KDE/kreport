@@ -21,12 +21,9 @@
 
 #include <KoReportDesigner.h>
 
-#include <QLayout>
 #include <QActionGroup>
 #include <QScrollArea>
-#include <QToolBar>
 #include <QAction>
-#include <QDebug>
 #include <QDockWidget>
 
 DesignerWindow::DesignerWindow()
