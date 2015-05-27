@@ -25,7 +25,8 @@ set(KREPORT_VERSION "2.96.0") # Update this
 # Dependencies
 set(REQUIRED_QT_VERSION "5.2.0")
 
-# Required Qt5 components to build this framework
+# Required components to build this framework
+# TODO move Widgets/KF5WidgetsAddons-dependent part to a libKReportDesigner
 find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Core)
 find_package(Qt5Widgets REQUIRED)
 find_package(Qt5Xml REQUIRED)
