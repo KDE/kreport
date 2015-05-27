@@ -60,7 +60,8 @@ KReportJsonTrader* KReportJsonTrader::self()
     return KReportJsonTrader_instance;
 }
 
-static QList<QPluginLoader *> findPlugins(const QString &path, const QString &servicetype, const QString &mimetype)
+static QList<QPluginLoader *> findPlugins(const QString &path, const QString &servicetype,
+                                          const QString &mimetype)
 {
     QList<QPluginLoader*> list;
     QDirIterator dirIter(path, QDirIterator::Subdirectories | QDirIterator::FollowSymlinks);
@@ -97,7 +98,8 @@ static QList<QPluginLoader *> findPlugins(const QString &path, const QString &se
     return list;
 }
 
-QList<QPluginLoader *> KReportJsonTrader::query(const QString &servicetype, const QString &mimetype)
+QList<QPluginLoader *> KReportJsonTrader::query(const QString &servicetype,
+                                                const QString &mimetype)
 {
     if (!d->pluginPathFound) {
         QStringList searchDirs;

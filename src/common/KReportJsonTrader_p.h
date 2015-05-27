@@ -40,30 +40,22 @@ public:
     /**
      * The main function in the KReportJsonTrader class.
      *
-     * It will return a list of QPluginLoader that match your
-     * specifications.  The only required parameter is the service
-     * type.  This is something like 'text/plain' or 'text/html'.  The
-     * constraint parameter is used to limit the possible choices
+     * It will return a list of QPluginLoader objects that match your
+     * specifications.  The only required parameter is the @a servicetype.
+     * The @a mimetype parameter is used to limit the possible choices
      * returned based on the constraints you give it.
-     *
-     * The @p constraint language is rather full.  The most common
-     * keywords are AND, OR, NOT, IN, and EXIST, all used in an
-     * almost spoken-word form.  An example is:
-     * \code
-     * (Type == 'Service') and (('KParts/ReadOnlyPart' in ServiceTypes) or (exist Exec))
-     * \endcode
      *
      * The keys used in the query (Type, ServiceType, Exec) are all
      * fields found in the .desktop files.
      *
      * @param servicetype A service type like 'KMyApp/Plugin' or 'KFilePlugin'.
-     * @param constraint  A constraint to limit the choices returned, QString() to
-     *                    get all services of the given @p servicetype
+     * @param mimetype    A mimetype constraint to limit the choices returned, QString() to
+     *                    get all services of the given @p servicetype.
      *
      * @return A list of QPluginLoader that satisfy the query
      * @see http://techbase.kde.org/Development/Tutorials/Services/Traders#The_KTrader_Query_Language
      */
-     QList<QPluginLoader *> query(const QString &servicetype, const QString &constraint = QString());
+     QList<QPluginLoader *> query(const QString &servicetype, const QString &mimetype = QString());
 
 private:
      Q_DISABLE_COPY(KReportJsonTrader)
