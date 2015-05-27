@@ -29,8 +29,6 @@
 class KREPORT_EXPORT KReportPluginMetaData : public KPluginMetaData
 {
 public:
-    explicit KReportPluginMetaData(const QJsonObject &metaData);
-    explicit KReportPluginMetaData(const QPluginLoader &loader);
     ~KReportPluginMetaData();
 
     int priority() const;
@@ -43,9 +41,13 @@ public:
     bool isStatic() const;
 
 protected:
-    friend class KReportPluginEntry;
+    explicit KReportPluginMetaData(const QJsonObject &metaData);
+    explicit KReportPluginMetaData(const QPluginLoader &loader);
+
     void setBuiltIn(bool set);
     void setStatic(bool set);
+
+    friend class KReportPluginEntry;
 
 private:
     Q_DISABLE_COPY(KReportPluginMetaData)

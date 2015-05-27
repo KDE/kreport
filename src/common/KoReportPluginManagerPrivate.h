@@ -24,6 +24,7 @@
 #include <QMap>
 #include <QPluginLoader>
 
+class QJsonObject;
 class KoReportPluginInterface;
 class KoReportPluginManager;
 class KReportPluginMetaData;
@@ -48,11 +49,15 @@ public:
 
     const KReportPluginMetaData *metaData() const;
 
-    void setMetaData(KReportPluginMetaData *metaData);
+    void setMetaData(const QJsonObject &metaData);
 
-    QPluginLoader *loader;
+    void setMetaData(QPluginLoader *loader);
 
 private:
+    void setMetaData(KReportPluginMetaData *metaData);
+
+    QPluginLoader *m_loader;
+
     KoReportPluginInterface *m_interface;
 
     //! Plugin info, owned.

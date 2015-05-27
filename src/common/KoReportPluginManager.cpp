@@ -24,7 +24,6 @@
 #include "KReportJsonTrader_p.h"
 
 #include <QDebug>
-#include <QPluginLoader>
 #include <QAction>
 
 //Include the static items
@@ -52,12 +51,12 @@ KoReportPluginManager::Private::Private(KoReportPluginManager *qq)
 // ---
 
 KReportPluginEntry::KReportPluginEntry()
-    : loader(0), m_interface(0), m_metaData(0)
+    : m_loader(0), m_interface(0), m_metaData(0)
 {
 }
 
 KReportPluginEntry::KReportPluginEntry(KoReportPluginInterface *staticInterface)
-    : loader(0), m_interface(staticInterface), m_metaData(0)
+    : m_loader(0), m_interface(staticInterface), m_metaData(0)
 {
 }
 
@@ -72,22 +71,22 @@ KoReportPluginInterface* KReportPluginEntry::plugin()
     if (m_interface) {
         return m_interface;
     }
-    if (!loader) {
+    if (!m_loader) {
         qWarning() << "No such plugin";
         return 0;
     }
-    if (!loader->load()) {
-        qWarning() << "Could not load plugin" << loader->fileName();
+    if (!m_loader->load()) {
+        qWarning() << "Could not load plugin" << m_loader->fileName();
         return 0;
     }
-    KPluginFactory *factory = qobject_cast<KPluginFactory*>(loader->instance());
+    KPluginFactory *factory = qobject_cast<KPluginFactory*>(m_loader->instance());
     if (!factory) {
-        qWarning() << "Could not factory for plugin" << loader->fileName();
+        qWarning() << "Could not factory for plugin" << m_loader->fileName();
         return 0;
     }
     m_interface = factory->create<KoReportPluginInterface>();
     if (!m_interface) {
-        qWarning() << "Could not create instance of plugin" << loader->fileName();
+        qWarning() << "Could not create instance of plugin" << m_loader->fileName();
     }
     m_interface->setMetaData(m_metaData);
     return m_interface;
@@ -117,6 +116,17 @@ void KReportPluginEntry::setMetaData(KReportPluginMetaData *metaData)
     }
 }
 
+void KReportPluginEntry::setMetaData(const QJsonObject &metaData)
+{
+    setMetaData(new KReportPluginMetaData(metaData));
+}
+
+void KReportPluginEntry::setMetaData(QPluginLoader *loader)
+{
+    m_loader = loader;
+    setMetaData(new KReportPluginMetaData(*m_loader));
+}
+
 // ---
 
 KoReportPluginManager::Private::~Private()
@@ -130,7 +140,7 @@ void KoReportPluginManager::Private::addBuiltInPlugin(const QJsonObject &json)
     KReportPluginEntry *entry = new KReportPluginEntry(new PluginClass(m_parent));
     QJsonObject j = json.value(QLatin1String("MetaData")).toObject();
     qDebug() << j;
-    entry->setMetaData(new KReportPluginMetaData(j));
+    entry->setMetaData(j);
     entry->setBuiltIn(true);
     if (entry->metaData()->pluginId().isEmpty()) {
         qWarning() << "Plugin" << entry->metaData()->name() << "has no identifier so won't be added to manager";
@@ -189,8 +199,7 @@ void KoReportPluginManager::Private::findPlugins()
         //qDebug() << json;
         //! @todo check version
         KReportPluginEntry *entry = new KReportPluginEntry;
-        entry->loader = loader;
-        entry->setMetaData(new KReportPluginMetaData(*loader));
+        entry->setMetaData(loader);
         plugins.insert(entry->metaData()->pluginId(), entry);
     }
 }
