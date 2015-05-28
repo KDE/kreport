@@ -5,7 +5,7 @@ Type=Service
 Icon=report_barcode_element
 Encoding=UTF-8
 
-X-KDE-Library=barcode
+X-KDE-Library=kreport_barcodeplugin
 X-KDE-ServiceTypes=KReport/Element
 X-KDE-PluginInfo-Author=Kexi Team
 X-KDE-PluginInfo-Email=kexi@kde.org

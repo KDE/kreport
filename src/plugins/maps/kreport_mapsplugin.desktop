@@ -5,7 +5,7 @@ Type=Service
 Icon=report_maps_element
 Encoding=UTF-8
 
-X-KDE-Library=maps
+X-KDE-Library=kreport_mapsplugin
 X-KDE-ServiceTypes=KReport/Element
 X-KDE-PluginInfo-Author=Kexi Team
 X-KDE-PluginInfo-Email=kexi@kde.org

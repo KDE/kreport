@@ -32,6 +32,6 @@ Comment[sk]=Grafový plugin Calligra Reports
 Comment[sv]=Calligra-insticksprogram för diagramrapport
 Comment[uk]=Додаток діаграм у звітах Calligra
 Comment[x-test]=xxCalligra Reports Chart Pluginxx
-X-KDE-Library=koreport_chartplugin
+X-KDE-Library=kreport_chartplugin
 X-KDE-ServiceTypes=KoReport/ItemPlugin
 Type=Service

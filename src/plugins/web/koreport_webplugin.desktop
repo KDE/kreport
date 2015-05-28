@@ -32,6 +32,6 @@ Comment[sk]=Webový plugin Calligra Reports
 Comment[sv]=Calligra-insticksprogram för webbrapport
 Comment[uk]=Інтернет-додаток звітів Calligra
 Comment[x-test]=xxCalligra Reports Web Pluginxx
-X-KDE-Library=koreport_webplugin
+X-KDE-Library=kreport_webplugin
 X-KDE-ServiceTypes=KoReport/ItemPlugin
 Type=Service
