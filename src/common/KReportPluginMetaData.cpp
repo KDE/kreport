@@ -60,6 +60,11 @@ KReportPluginMetaData::~KReportPluginMetaData()
     delete d;
 }
 
+QString KReportPluginMetaData::id() const
+{
+    return pluginId();
+}
+
 int KReportPluginMetaData::priority() const
 {
     return d->priority;

@@ -31,6 +31,9 @@ class KREPORT_EXPORT KReportPluginMetaData : public KPluginMetaData
 public:
     ~KReportPluginMetaData();
 
+    //! @return internal name of the plugin, a shortcut of pluginId()
+    QString id() const;
+
     int priority() const;
 
     //! @return true if this plugin is built-in, i.e. has been provided by the KReport

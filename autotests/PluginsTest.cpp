@@ -51,8 +51,8 @@ void PluginsTest::listPlugins()
         QVERIFY2(metaData, "Plugin metadata");
         QCOMPARE(metaData, iface->metaData());
         QVERIFY2(metaData->isValid(), "Plugin is valid");
-        QVERIFY(!metaData->pluginId().isEmpty());
-        QCOMPARE(metaData->pluginId(), pluginId);
+        QVERIFY(!metaData->id().isEmpty());
+        QCOMPARE(metaData->id(), pluginId);
         QVERIFY(!metaData->name().isEmpty());
         QVERIFY(!metaData->description().isEmpty());
         QVERIFY(!metaData->iconName().isEmpty());
