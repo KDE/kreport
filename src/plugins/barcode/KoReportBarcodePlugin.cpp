@@ -29,9 +29,8 @@
 KREPORT_PLUGIN_FACTORY(KoReportBarcodePlugin, "kreport_barcodeplugin.json")
 
 KoReportBarcodePlugin::KoReportBarcodePlugin(QObject *parent, const QVariantList &args)
-    : KoReportPluginInterface(parent)
+    : KoReportPluginInterface(parent, args)
 {
-    Q_UNUSED(args);
 }
 
 KoReportBarcodePlugin::~KoReportBarcodePlugin()
