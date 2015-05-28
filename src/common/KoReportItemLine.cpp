@@ -71,7 +71,7 @@ void KoReportItemLine::createProperties()
 
     m_lineWeight = new KProperty("line-weight", 1, tr("Line Weight"));
     m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
-    m_lineStyle = new KProperty("line-style", QPen(Qt::SolidLine), tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
+    m_lineStyle = new KProperty("line-style", (int)Qt::SolidLine, tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
     m_start.setName(QLatin1String("Start"));
     m_end.setName(QLatin1String("End"));
 

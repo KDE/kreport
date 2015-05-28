@@ -71,6 +71,8 @@ KoReportDesignerItemLine::KoReportDesignerItemLine(KoReportDesigner * d, QGraphi
 {
     init(scene, d);
     setLineScene(QLineF(startPos, endPos));
+    m_name->setValue(m_reportDesigner->suggestEntityName(typeName()));
+
 }
 
 KoReportDesignerItemLine::KoReportDesignerItemLine(QDomNode & entity, KoReportDesigner * d, QGraphicsScene * scene)
@@ -152,6 +154,8 @@ void KoReportDesignerItemLine::slotPropertyChanged(KPropertySet &s, KProperty &p
     }
     if (m_reportDesigner)
         m_reportDesigner->setModified(true);
+
+    update();
 }
 
 void KoReportDesignerItemLine::mousePressEvent(QGraphicsSceneMouseEvent * event)

@@ -22,6 +22,8 @@
 #include <QApplication>
 #include <QFile>
 #include <QDebug>
+#include <QMenu>
+#include <QMenuBar>
 
 #include <KoReportPluginManager>
 

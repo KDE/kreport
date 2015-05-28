@@ -1218,7 +1218,7 @@ QList<QAction*> KoReportDesigner::itemActions(QActionGroup* group)
     KoReportPluginManager* manager = KoReportPluginManager::self();
     QList<QAction*> actList = manager->actions();
 
-    QAction *act = new QAction(QIcon::fromTheme(QLatin1String("line")), tr("Line"), group);
+    QAction *act = new QAction(QIcon::fromTheme(QLatin1String("draw-line")), tr("Line"), group);
     act->setObjectName(QLatin1String("report:line"));
     act->setData(9);
     act->setCheckable(true);

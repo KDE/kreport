@@ -25,6 +25,7 @@
 #include <QScrollArea>
 #include <QAction>
 #include <QDockWidget>
+#include <QToolBar>
 
 DesignerWindow::DesignerWindow()
 {
