@@ -34,6 +34,8 @@ public:
     //! @return internal name of the plugin, a shortcut of pluginId()
     QString id() const;
 
+    //! @return priority of the plugin
+    //! Useful for user interfaces such as tool boxes.
     int priority() const;
 
     //! @return true if this plugin is built-in, i.e. has been provided by the KReport

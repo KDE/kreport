@@ -71,18 +71,19 @@ public:
     explicit Private(KoReportPluginManager *qq);
     ~Private();
 
-    void findPlugins();
+    QMap<QString, KReportPluginEntry*> *plugins();
 
     //! Add a built-in element plugins
     template<class PluginClass>
     void addBuiltInPlugin(const QJsonObject &json);
 
-    //! Map of name -> plugin instances
-    QMap<QString, KReportPluginEntry*> plugins;
-
 private:
     KoReportPluginManager *q;
     QObject *m_parent;
+    bool m_findPlugins;
+
+    //! A map of name -> plugin instances
+    QMap<QString, KReportPluginEntry*> m_plugins;
 };
 
 #endif

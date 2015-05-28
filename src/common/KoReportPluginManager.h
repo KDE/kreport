@@ -35,11 +35,11 @@ class KREPORT_EXPORT KoReportPluginManager : public QObject
     public:
         static KoReportPluginManager* self();
 
-        QStringList pluginIds() const;
+        QStringList pluginIds();
 
-        const KReportPluginMetaData *pluginMetaData(const QString& id) const;
+        const KReportPluginMetaData *pluginMetaData(const QString& id);
 
-        KoReportPluginInterface* plugin(const QString& id) const;
+        KoReportPluginInterface* plugin(const QString& id);
 
         QList<QAction*> actions();
 
