@@ -18,6 +18,7 @@
 */
 
 #include "window.h"
+#include <renderobjects.h>
 
 #include <QApplication>
 #include <QFile>
@@ -26,27 +27,26 @@
 #include <QMenuBar>
 
 #include <KoReportPluginManager>
+#include <KoReportRendererBase.h>
 
 Window::Window()
     : QMainWindow()
 {
     createMenus();
 
-    m_view = new QGraphicsView(this);
-    setCentralWidget(m_view);
+    m_reportView = new KReportView(this);
+    setCentralWidget(m_reportView);
 
-    // For now based on KexiReportView
-    m_scene = new QGraphicsScene(this);
-    m_scene->setSceneRect(0, 0, 1000, 2000);
-    m_view->setScene(m_scene);
-
+#if 0
     if (loadDocument()) {
         m_preRenderer = new KoReportPreRenderer(m_document.documentElement());
         if (!m_preRenderer->isValid()) {
             return;
         }
     }
+#endif
 
+    m_testData = new KReportExampleData();
     KoReportPluginManager* manager = KoReportPluginManager::self();
     // TODO
 }
@@ -84,4 +84,22 @@ void Window::createMenus()
     m_exitAction->setShortcuts(QKeySequence::Quit);
     connect(m_exitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
     m_fileMenu->addAction(m_exitAction);
+}
+
+void Window::showDesign(QDomElement d)
+{
+    qDebug() << "Show design";
+    m_preRenderer = new KoReportPreRenderer(d);
+    if (!m_preRenderer->isValid()) {
+        return;
+    }
+
+    m_preRenderer->setSourceData(m_testData);
+    m_oDocument = m_preRenderer->generate();
+
+    m_reportView->setDocument(m_oDocument);
+    m_reportView->moveToFirstPage();
+    
+    delete m_preRenderer;
+    m_preRenderer = 0;
 }

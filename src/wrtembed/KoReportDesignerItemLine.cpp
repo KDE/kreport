@@ -40,11 +40,7 @@ void KoReportDesignerItemLine::init(QGraphicsScene* s, KoReportDesigner *r)
     setPos(0, 0);
     setUnit(r->pageUnit());
 
-#if QT_VERSION >= 0x040600
     setFlags(ItemIsSelectable | ItemIsMovable | ItemSendsGeometryChanges);
-#else
-    setFlags(ItemIsSelectable | ItemIsMovable);
-#endif
 
     setPen(QPen(Qt::black, 5));
     setAcceptHoverEvents(true);

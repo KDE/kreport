@@ -18,6 +18,7 @@
 */
 
 #include "designerwindow.h"
+#include "kreportexampledata.h"
 
 #include <KoReportDesigner.h>
 
@@ -63,6 +64,12 @@ DesignerWindow::DesignerWindow()
 
     connect(m_reportDesigner, SIGNAL(propertySetChanged()),
             this, SLOT(slotDesignerPropertySetChanged()));
+
+    connect(m_reportDesigner, SIGNAL(dirty()), this, SLOT(designDirty()));
+
+    m_reportDesigner->setReportData(new KReportExampleData());
+
+
 }
 
 DesignerWindow::~DesignerWindow()
@@ -83,3 +90,9 @@ void DesignerWindow::slotDesignerPropertySetChanged()
 {
     m_propertyEditor->changeSet(m_reportDesigner->itemPropertySet());
 }
+
+void DesignerWindow::designDirty()
+{
+    emit(newDesign(m_reportDesigner->document()));
+}
+

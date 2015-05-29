@@ -20,12 +20,15 @@
 #ifndef KREPORTEXAMPLE_WINDOW_H
 #define KREPORTEXAMPLE_WINDOW_H
 
-#include <QGraphicsView>
+#include "kreportexampledata.h"
+
 #include <QMainWindow>
 #include <QDomDocument>
 #include <QAction>
 
 #include <KoReportPreRenderer>
+#include <KoReportPage.h>
+#include <kreportview.h>
 
 /*! @short KReportExample application's main window */
 class Window : public QMainWindow
@@ -35,6 +38,9 @@ public:
     Window();
     virtual ~Window();
 
+public Q_SLOTS:
+    void showDesign(QDomElement d);
+
 private:
     void createMenus();
     bool loadDocument();
@@ -42,10 +48,14 @@ private:
     QMenu *m_fileMenu;
     QAction *m_exitAction;
 
-    QGraphicsView *m_view;
-    QGraphicsScene *m_scene;
+    KReportView *m_reportView;
     KoReportPreRenderer *m_preRenderer;
     QDomDocument m_document;
+    ORODocument *m_oDocument;
+
+    uint m_currentPage;
+
+    KReportExampleData *m_testData;
 };
 
 #endif

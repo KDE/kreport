@@ -253,7 +253,12 @@ const KReportPluginMetaData *KoReportPluginManager::pluginMetaData(const QString
 
 KoReportPluginInterface* KoReportPluginManager::plugin(const QString& id)
 {
-    KReportPluginEntry *entry = d->plugins()->value(id);
+    QString i = id;
+    if (!id.startsWith(QLatin1String("org.kde.kreport"))) {
+        i = QLatin1String("org.kde.kreport.") + id;
+    }
+
+    KReportPluginEntry *entry = d->plugins()->value(i);
     if (!entry) {
         return 0;
     }

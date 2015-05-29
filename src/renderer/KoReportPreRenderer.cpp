@@ -607,7 +607,7 @@ ORODocument* KoReportPreRenderer::generate()
 #ifdef KREPORT_SCRIPTING
     delete d->m_scriptHandler;
 #endif
-    delete d->m_kodata;
+    //TODO check ownership delete d->m_kodata;
     d->m_postProcText.clear();
 
     return d->m_document;

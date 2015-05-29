@@ -10,6 +10,10 @@ remove_definitions(
 
 add_definitions(-DKREPORTEXAMPLE_DATA_DIR="${CMAKE_CURRENT_SOURCE_DIR}")
 
-set(kreportexample_SRCS main.cpp window.cpp designerwindow.cpp)
+set(kreportexample_SRCS main.cpp
+        window.cpp
+        designerwindow.cpp
+        kreportexampledata.cpp
+)
 add_executable(kreportexample ${kreportexample_SRCS})
 target_link_libraries(kreportexample Qt5::Widgets KReport)
