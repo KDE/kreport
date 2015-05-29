@@ -1,6 +1,23 @@
 [Desktop Entry]
 Name=Check box
+Name[ca]=Casella de selecció
+Name[de]=Ankreuzfeld
+Name[gl]=Caixa de verificación
+Name[nl]=Keuzevakje
+Name[pt]=Opção de marcação
+Name[pt_BR]=Caixa de verificação
+Name[sv]=Kryssruta
+Name[uk]=Пункт позначки
+Name[x-test]=xxCheck boxxx
 Comment=Check box element for Reports
+Comment[ca]=Element de casella de selecció per informes
+Comment[gl]=Caixa de verificación para informes.
+Comment[nl]=Keuzevakje-element voor rapporten
+Comment[pt]=Elemento de marcação dos Relatórios
+Comment[pt_BR]=Elemento Caixa de verificação para Relatórios
+Comment[sv]=Element med kryssruta för rapporter
+Comment[uk]=Елемент пункту позначки для звітів
+Comment[x-test]=xxCheck box element for Reportsxx
 Type=Service
 Icon=checkbox
 Encoding=UTF-8

@@ -1,6 +1,23 @@
 [Desktop Entry]
 Name=Image
+Name[ca]=Imatge
+Name[de]=Bild
+Name[gl]=Imaxe
+Name[nl]=Afbeelding
+Name[pt]=Imagem
+Name[pt_BR]=Imagem
+Name[sv]=Bild
+Name[uk]=Зображення
+Name[x-test]=xxImagexx
 Comment=Image element for Reports
+Comment[ca]=Element d'imatge per informes
+Comment[gl]=Imaxe para informes.
+Comment[nl]=Afbeeldingselement voor rapporten
+Comment[pt]=Elemento de Imagem dos Relatórios
+Comment[pt_BR]=Elemento Imagem para Relatórios
+Comment[sv]=Bildelement för rapporter
+Comment[uk]=Елемент зображення для звітів
+Comment[x-test]=xxImage element for Reportsxx
 Type=Service
 Icon=image
 Encoding=UTF-8

@@ -1,6 +1,22 @@
 [Desktop Entry]
 Name=Label
+Name[ca]=Etiqueta
+Name[gl]=Etiqueta
+Name[nl]=Label
+Name[pt]=Legenda
+Name[pt_BR]=Legenda
+Name[sv]=Etikett
+Name[uk]=Мітка
+Name[x-test]=xxLabelxx
 Comment=Label element for Reports
+Comment[ca]=Element d'etiqueta per informes
+Comment[gl]=Etiqueta para informes.
+Comment[nl]=Labelelement voor rapporten
+Comment[pt]=Elemento de Legenda dos Relatórios
+Comment[pt_BR]=Elemento Legenda para Relatórios
+Comment[sv]=Etikettelement för rapporter
+Comment[uk]=Елемент мітки для звітів
+Comment[x-test]=xxLabel element for Reportsxx
 Type=Service
 Icon=label
 Encoding=UTF-8

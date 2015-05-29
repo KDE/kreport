@@ -1,6 +1,23 @@
 [Desktop Entry]
 Name=Barcode
+Name[ca]=Codi de barres
+Name[de]=Strichcode
+Name[gl]=Código de barras
+Name[nl]=Barcode
+Name[pt]=Código de Barras
+Name[pt_BR]=Código de barras
+Name[sv]=Streckkod
+Name[uk]=Штрихкод
+Name[x-test]=xxBarcodexx
 Comment=Barcode element for Reports
+Comment[ca]=Element de codi de barres per informes
+Comment[gl]=Código de barras para informes.
+Comment[nl]=Barcode-element voor rapporten
+Comment[pt]=Elemento de Código de Barras dos Relatórios
+Comment[pt_BR]=Elemento Código de barras para Relatórios
+Comment[sv]=Streckkodselement för rapporter
+Comment[uk]=Елемент штрихкоду для звітів
+Comment[x-test]=xxBarcode element for Reportsxx
 Type=Service
 Icon=report_barcode_element
 Encoding=UTF-8

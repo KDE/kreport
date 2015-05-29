@@ -1,6 +1,23 @@
 [Desktop Entry]
 Name=Field
+Name[ca]=Camp
+Name[de]=Feld
+Name[gl]=Campo
+Name[nl]=Veld
+Name[pt]=Campo
+Name[pt_BR]=Campo
+Name[sv]=Fält
+Name[uk]=Поле
+Name[x-test]=xxFieldxx
 Comment=Field element for Reports
+Comment[ca]=Element de camp per informes
+Comment[gl]=Campo para informes.
+Comment[nl]=Veld-element voor rapporten
+Comment[pt]=Elemento de Campo dos Relatórios
+Comment[pt_BR]=Elemento Campo para Relatórios
+Comment[sv]=Fältelement för rapporter
+Comment[uk]=Елемент поля для звітів
+Comment[x-test]=xxField element for Reportsxx
 Type=Service
 Icon=edit-rename
 Encoding=UTF-8

@@ -1,6 +1,23 @@
 [Desktop Entry]
 Name=Maps
+Name[ca]=Mapes
+Name[de]=Karten
+Name[gl]=Mapas
+Name[nl]=Kaarten
+Name[pt]=Mapas
+Name[pt_BR]=Mapas
+Name[sv]=Kartor
+Name[uk]=Карти
+Name[x-test]=xxMapsxx
 Comment=Maps element for Reports
+Comment[ca]=Element de mapes per informes
+Comment[gl]=Elemento de mapas para informes.
+Comment[nl]=Kaartelement voor rapporten
+Comment[pt]=Elemento de Mapas dos Relatórios
+Comment[pt_BR]=Elemento Mapas para Relatórios
+Comment[sv]=Kartelement för rapporter
+Comment[uk]=Елемент карти для звітів
+Comment[x-test]=xxMaps element for Reportsxx
 Type=Service
 Icon=report_maps_element
 Encoding=UTF-8
