@@ -1,17 +1,22 @@
 [Desktop Entry]
 Name=Label
 Name[ca]=Etiqueta
+Name[de]=Beschriftung
 Name[gl]=Etiqueta
 Name[nl]=Label
+Name[pl]=Etykieta
 Name[pt]=Legenda
 Name[pt_BR]=Legenda
+Name[sk]=Štítok
 Name[sv]=Etikett
 Name[uk]=Мітка
 Name[x-test]=xxLabelxx
 Comment=Label element for Reports
 Comment[ca]=Element d'etiqueta per informes
+Comment[de]=Beschriftungs-Element für Berichte
 Comment[gl]=Etiqueta para informes.
 Comment[nl]=Labelelement voor rapporten
+Comment[pl]=Element etykietydla raportów
 Comment[pt]=Elemento de Legenda dos Relatórios
 Comment[pt_BR]=Elemento Legenda para Relatórios
 Comment[sv]=Etikettelement för rapporter
