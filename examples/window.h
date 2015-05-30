@@ -20,7 +20,7 @@
 #ifndef KREPORTEXAMPLE_WINDOW_H
 #define KREPORTEXAMPLE_WINDOW_H
 
-#include "kreportexampledata.h"
+#include "KReportExampleData.h"
 
 #include <QMainWindow>
 #include <QDomDocument>
@@ -28,7 +28,7 @@
 
 #include <KoReportPreRenderer>
 #include <KoReportPage.h>
-#include <kreportview.h>
+#include <KReportView.h>
 
 /*! @short KReportExample application's main window */
 class Window : public QMainWindow

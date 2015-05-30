@@ -18,7 +18,7 @@
 */
 
 #include "designerwindow.h"
-#include "kreportexampledata.h"
+#include "KReportExampleData.h"
 
 #include <KoReportDesigner.h>
 
