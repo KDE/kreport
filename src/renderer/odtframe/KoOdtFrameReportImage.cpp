@@ -22,9 +22,10 @@
 #include <KoStore.h>
 #include <KoStoreDevice.h>
 
-#include "renderobjects.h"
+#include <QMimeDatabase>
+#include <QMimeType>
 
-#include <kmimetype.h>
+#include "renderobjects.h"
 
 KoOdtFrameReportImage::KoOdtFrameReportImage(OROImage *primitive)
     : KoOdtFrameReportPrimitive(primitive)
@@ -76,7 +77,8 @@ bool KoOdtFrameReportImage::saveData(KoStore* store, KoXmlWriter* manifestWriter
     KoStoreDevice device(store);
     bool ok = image()->image().save(&device, "PNG");
     if (ok) {
-        const QString mimetype(KMimeType::findByPath(name, 0 , true)->name());
+        QMimeDatabase db;
+        const QString mimetype(db.mimeTypeForFile(name, QMimeDatabase::MatchExtension).name());
         manifestWriter->addManifestEntry(name,  mimetype);
     }
     ok = store->close() && ok;
