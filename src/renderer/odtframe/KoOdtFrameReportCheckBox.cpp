@@ -31,7 +31,7 @@
 #include <QPainter>
 #include <QPen>
 #include <QImage>
-#include <QDebug>
+#include "kreport_debug.h"
 #include <QMimeDatabase>
 #include <QMimeType>
 
@@ -172,9 +172,9 @@ bool KoOdtFrameReportCheckBox::saveData(KoStore* store, KoXmlWriter* manifestWri
         QMimeDatabase db;
         const QString mimetype(db.mimeTypeForFile(name, QMimeDatabase::MatchExtension).name());
         manifestWriter->addManifestEntry(name,  mimetype);
-        //qDebug() << "manifest:" << mimetype;
+        //kreportDebug() << "manifest:" << mimetype;
     }
     bool cl = store->close();
-    //qDebug()<<ok<<cl;
+    //kreportDebug()<<ok<<cl;
     return ok && cl;
 }

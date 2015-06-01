@@ -64,7 +64,7 @@ bool KoOdtFrameReportRenderer::render(const KoReportRendererContext& context, OR
                 sp->setUID(uid++);
                 doc.addPrimitive(sp);
             } else {
-                qWarning() << "unhandled primitive type" << prim->type();
+                kreportWarning() << "unhandled primitive type" << prim->type();
             }
         }
     }

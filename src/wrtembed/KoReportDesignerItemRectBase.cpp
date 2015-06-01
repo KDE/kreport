@@ -111,7 +111,7 @@ void KoReportDesignerItemRectBase::mouseReleaseEvent(QGraphicsSceneMouseEvent * 
 
 void KoReportDesignerItemRectBase::mouseMoveEvent(QGraphicsSceneMouseEvent * event)
 {
-    //qDebug() << m_grabAction;
+    //kreportDebug() << m_grabAction;
 
     qreal w, h;
 
@@ -194,7 +194,7 @@ void KoReportDesignerItemRectBase::hoverMoveEvent(QGraphicsSceneHoverEvent * eve
             unsetCursor();
         }
     }
-    //qDebug() << m_grabAction;
+    //kreportDebug() << m_grabAction;
 }
 
 void KoReportDesignerItemRectBase::drawHandles(QPainter *painter)

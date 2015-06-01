@@ -20,6 +20,7 @@
 */
 
 #include "KoUnit.h"
+#include "kreport_debug.h"
 
 #include <cmath>
 
@@ -248,7 +249,7 @@ qreal KoUnit::parseValue(const QString& _value, qreal defaultVal)
         return DM_TO_POINT(val * 10.0);
     else if (symbol == QLatin1String("km"))
         return DM_TO_POINT(val * 10000.0);
-    qWarning() << "KoUnit::parseValue: Unit" << symbol << "is not supported, please report.";
+    kreportWarning() << "KoUnit::parseValue: Unit" << symbol << "is not supported, please report.";
 
     // TODO : add support for mi/ft ?
     return defaultVal;

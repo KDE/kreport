@@ -8,6 +8,8 @@ add_subdirectory(plugins)
 #add_subdirectory(pics)
 
 set(kreport_LIB_SRCS
+    common/kreport_debug.cpp
+    common/kreportplugin_debug.cpp
     common/krutils.cpp
     common/krpos.cpp
     common/krsize.cpp

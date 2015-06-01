@@ -17,6 +17,7 @@
 
 #include "KoReportItemImage.h"
 #include "common/renderobjects.h"
+#include "kreportplugin_debug.h"
 
 #include <KPropertySet>
 
@@ -53,7 +54,7 @@ KoReportItemImage::KoReportItemImage(QDomNode & element)
 
             setInlineImageData(node.firstChild().nodeValue().toLatin1());
         } else {
-            qWarning() << "while parsing image element encountered unknow element: " << n;
+            kreportpluginWarning() << "while parsing image element encountered unknow element: " << n;
         }
     }
 

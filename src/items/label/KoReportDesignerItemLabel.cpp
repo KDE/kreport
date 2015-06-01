@@ -134,7 +134,7 @@ void KoReportDesignerItemLabel::paint(QPainter* painter, const QStyleOptionGraph
 
 void KoReportDesignerItemLabel::buildXML(QDomDocument & doc, QDomElement & parent)
 {
-    //qDebug();
+    //kreportpluginDebug();
     QDomElement entity = doc.createElement(QLatin1String("report:") + typeName());
 
     // properties

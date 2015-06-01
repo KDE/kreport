@@ -1,5 +1,6 @@
 #build a shared library
 set(kreport_mapsplugin_LIB_SRCS
+    ${PROJECT_SOURCE_DIR}/src/common/kreportplugin_debug.cpp
     KoReportDesignerItemMaps.cpp
     KoReportItemMaps.cpp
     KoReportMapsPlugin.cpp

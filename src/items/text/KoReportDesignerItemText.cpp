@@ -26,7 +26,7 @@
 #include <QPainter>
 #include <QGraphicsScene>
 #include <QGraphicsSceneMouseEvent>
-#include <QDebug>
+#include "kreportplugin_debug.h"
 
 //
 // class ReportEntityText
@@ -125,7 +125,7 @@ void KoReportDesignerItemText::paint(QPainter* painter, const QStyleOptionGraphi
 
 void KoReportDesignerItemText::buildXML(QDomDocument & doc, QDomElement & parent)
 {
-    //qDebug();
+    //kreportpluginDebug();
     QDomElement entity = doc.createElement(QLatin1String("report:") + typeName());
 
     // properties

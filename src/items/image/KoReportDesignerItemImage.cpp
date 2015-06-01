@@ -34,7 +34,7 @@
 
 void KoReportDesignerItemImage::init(QGraphicsScene *scene, KoReportDesigner *d)
 {
-    //qDebug();
+    //kreportpluginDebug();
     if (scene)
         scene->addItem(this);
 
@@ -51,7 +51,7 @@ KoReportDesignerItemImage::KoReportDesignerItemImage(KoReportDesigner * rw, QGra
         : KoReportDesignerItemRectBase(rw)
 {
     Q_UNUSED(pos);
-    //qDebug();
+    //kreportpluginDebug();
     init(scene, rw);
     setSceneRect(properRect(*rw, KOREPORT_ITEM_RECT_DEFAULT_WIDTH, KOREPORT_ITEM_RECT_DEFAULT_WIDTH));
     m_name->setValue(m_reportDesigner->suggestEntityName(typeName()));

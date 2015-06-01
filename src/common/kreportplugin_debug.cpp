@@ -1,5 +1,5 @@
 /* This file is part of the KDE project
- * Copyright (C) 2007-2008 by Adam Pigg (adam@piggz.co.uk)
+ * Copyright (C) 2015 Laurent Montel <montel@kde.org>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -15,28 +15,5 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "krscriptdebug.h"
-
-#include <kmessagebox.h>
-
-#include "kreport_debug.h"
-
-KRScriptDebug::KRScriptDebug(QObject *parent)
-        : QObject(parent)
-{
-}
-
-
-KRScriptDebug::~KRScriptDebug()
-{
-}
-
-void KRScriptDebug::print(const QString& s)
-{
-    kreportDebug() << s;
-}
-
-void KRScriptDebug::message(const QString &t, const QString &m)
-{
-    KMessageBox::information(0, m, t);
-}
+#include "kreportplugin_debug.h"
+Q_LOGGING_CATEGORY(KREPORTPLUGIN_LOG, "org.kde.kreport.plugin")

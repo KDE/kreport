@@ -39,7 +39,7 @@
 #include <klocale.h>
 #include <klocalizedstring.h>
 
-#include <QDebug>
+#include "kreportplugin_debug.h"
 #include <QFontDatabase>
 
 typedef QVector<double> datalist;
@@ -242,7 +242,7 @@ void KoReportItemChart::populateData()
             if (curs) {
                 const QStringList keys = m_links.keys();
                 foreach(const QString& field, keys) {
-                    qDebug() << "Adding Expression:" << field << m_links[field];
+                    kreportpluginDebug() << "Adding Expression:" << field << m_links[field];
                     curs->addExpression(field, m_links[field], '=');
                 }
             }
@@ -290,15 +290,15 @@ void KoReportItemChart::populateData()
                     }
                 }
             } else {
-                qDebug() << "Unable to open data set";
+                kreportpluginDebug() << "Unable to open data set";
             }
             delete curs;
             curs = 0;
         } else {
-            qDebug() << "No source set";
+            kreportpluginDebug() << "No source set";
         }
     } else {
-        qDebug() << "No connection!";
+        kreportpluginDebug() << "No connection!";
     }
 }
 
@@ -309,7 +309,7 @@ QStringList KoReportItemChart::masterFields()
 
 void KoReportItemChart::setLinkData(QString fld, QVariant val)
 {
-    qDebug() << "Field: " << fld << "is" << val;
+    kreportpluginDebug() << "Field: " << fld << "is" << val;
     m_links[fld] = val;
 }
 

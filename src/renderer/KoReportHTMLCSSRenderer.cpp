@@ -24,7 +24,7 @@
 #include <QDir>
 #include <QPainter>
 #include <QString>
-#include <QDebug>
+#include "kreport_debug.h"
 
 KoReportHTMLCSSRenderer::KoReportHTMLCSSRenderer()
 {
@@ -41,7 +41,7 @@ bool KoReportHTMLCSSRenderer::render(const KoReportRendererContext& context, ORO
     Q_UNUSED(page);
     QTemporaryFile tempHtmlFile; // auto removed by default on destruction
     if (!tempHtmlFile.open()) {
-        qWarning() << "Couldn't create temporary file to write into";
+        kreportWarning() << "Couldn't create temporary file to write into";
         return false;
     }
 
@@ -119,7 +119,7 @@ QString KoReportHTMLCSSRenderer::renderCSS(ORODocument *document)
             //Render the objects in each section
             for (int i = 0; i < section->primitives(); i++) {
                 OROPrimitive * prim = section->primitive(i);
-                //qDebug() << "Got object type" << prim->type();
+                //kreportDebug() << "Got object type" << prim->type();
                 if (prim->type() == OROTextBox::TextBox) {
                     OROTextBox * tb = (OROTextBox*) prim;
 
@@ -151,7 +151,7 @@ QString KoReportHTMLCSSRenderer::renderCSS(ORODocument *document)
                             tb->text() +
                             QLatin1String("</div>\n");
                 } else if (prim->type() == OROImage::Image) {
-                    //qDebug() << "Saving an image";
+                    //kreportDebug() << "Saving an image";
                     OROImage * im = (OROImage*) prim;
                     style = QLatin1String("position: absolute; ") +
                             QLatin1String("top: ") + QString::number(im->position().y()) + QLatin1String("pt; ") +
@@ -168,7 +168,7 @@ QString KoReportHTMLCSSRenderer::renderCSS(ORODocument *document)
 
                     im->image().save(m_tempDirName + QLatin1String("/object") + QString::number(s) + QString::number(i) + QLatin1String(".png"));
                 } else if (prim->type() == OROPicture::Picture) {
-                    //qDebug() << "Saving a picture";
+                    //kreportDebug() << "Saving a picture";
                     OROPicture * im = (OROPicture*) prim;
                     style = QLatin1String("position: absolute; ") +
                             QLatin1String("top: ") + QString::number(im->position().y()) + QLatin1String("pt; ") +
@@ -187,7 +187,7 @@ QString KoReportHTMLCSSRenderer::renderCSS(ORODocument *document)
                     im->picture()->play(&painter);
                     image.save(m_tempDirName + QLatin1String("/object") + QString::number(s) + QString::number(i) + QLatin1String(".png"));
                 } else {
-                    qWarning() << "unrecognized primitive type" << prim->type();
+                    kreportWarning() << "unrecognized primitive type" << prim->type();
                 }
             }
             body += QLatin1String("</div>\n");

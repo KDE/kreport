@@ -29,7 +29,7 @@
 #include <QGraphicsRectItem>
 #include <QUrl>
 #include <QWebPage>
-#include <QDebug>
+#include "kreportplugin_debug.h"
 
 KoReportItemWeb::KoReportItemWeb(): m_rendering(false)
 {
@@ -83,7 +83,7 @@ QString KoReportItemWeb::typeName() const
 
 void KoReportItemWeb::loadFinished(bool)
 {
-    qDebug () << m_rendering;
+    kreportpluginDebug() << m_rendering;
     if (m_rendering) {
         OROPicture * pic = new OROPicture();
         m_webPage->setViewportSize(m_size.toScene().toSize());
@@ -119,7 +119,7 @@ int KoReportItemWeb::renderSimpleData(OROPage *page, OROSection *section, const 
 
     m_rendering = true;
 
-    qDebug() << data;
+    kreportpluginDebug() << data;
 
     m_targetPage = page;
     m_targetSection = section;

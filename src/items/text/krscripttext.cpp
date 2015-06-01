@@ -18,7 +18,7 @@
 
 #include <QFile>
 #include <QTextStream>
-#include <QDebug>
+#include "kreportplugin_debug.h"
 
 namespace Scripting
 {
@@ -187,7 +187,7 @@ void Text::setSize(const QSizeF& s)
 void Text::loadFromFile(const QString &fn)
 {
     QFile file(fn);
-    //qDebug() << "Loading from" << fn;
+    //kreportpluginDebug() << "Loading from" << fn;
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         m_text->m_controlSource->setValue(tr("$Unable to read %1").arg(fn));
         return;

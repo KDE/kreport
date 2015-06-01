@@ -21,7 +21,7 @@
 #include "common/KoPageFormat.h"
 #include <QScreen>
 #include <QApplication>
-#include <QDebug>
+#include "kreport_debug.h"
 #include <QPainter>
 #include <QPrinter>
 
@@ -96,9 +96,9 @@ bool KoReportPrintRenderer::render(const KoReportRendererContext &context, ORODo
 
                 prim->setPosition(prim->position() * scale);
                 prim->setSize(prim->size() * scale);
-                //qDebug() << "Rendering object" << i << "type" << prim->type();
+                //kreportDebug() << "Rendering object" << i << "type" << prim->type();
                 if (prim->type() == OROTextBox::TextBox) {
-                    //qDebug() << "Text Box";
+                    //kreportDebug() << "Text Box";
                     OROTextBox * tb = (OROTextBox*) prim;
 
                     QPointF ps = tb->position();
@@ -128,7 +128,7 @@ bool KoReportPrintRenderer::render(const KoReportRendererContext &context, ORODo
                     context.painter->restore();
 
                 } else if (prim->type() == OROLine::Line) {
-                    //qDebug() << "Line";
+                    //kreportDebug() << "Line";
                     OROLine * ln = (OROLine*) prim;
                     QPointF s = ln->startPoint();
                     QPointF e = ln->endPoint() * scale;
@@ -142,7 +142,7 @@ bool KoReportPrintRenderer::render(const KoReportRendererContext &context, ORODo
                     context.painter->setRenderHint(QPainter::Antialiasing, false);
                     context.painter->restore();
                 } else if (prim->type() == OROImage::Image) {
-                    //qDebug() << "Image";
+                    //kreportDebug() << "Image";
                     OROImage * im = (OROImage*) prim;
                     QPointF ps = im->position();
                     QSizeF sz = im->size();
@@ -155,7 +155,7 @@ bool KoReportPrintRenderer::render(const KoReportRendererContext &context, ORODo
                     QRectF sr = QRectF(QPointF(0.0, 0.0), rc.size().boundedTo(img.size()));
                     context.painter->drawImage(rc.topLeft(), img, sr);
                 } else if (prim->type() == ORORect::Rect) {
-                    //qDebug() << "Rect";
+                    //kreportDebug() << "Rect";
                     ORORect * re = (ORORect*) prim;
 
                     QPointF ps = re->position();

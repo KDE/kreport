@@ -31,7 +31,7 @@
 #include <QGraphicsSceneMouseEvent>
 #include <QDomDocument>
 #include <QPainter>
-#include <QDebug>
+#include "kreportplugin_debug.h"
 
 void KoReportDesignerItemBarcode::init(QGraphicsScene *scene, KoReportDesigner *d)
 {
@@ -134,7 +134,7 @@ void KoReportDesignerItemBarcode::paint(QPainter* painter,
 
 void KoReportDesignerItemBarcode::buildXML(QDomDocument & doc, QDomElement & parent)
 {
-    //qDebug();
+    //kreportpluginDebug();
     QDomElement entity = doc.createElement(QLatin1String("report:") + typeName());
 
     // properties

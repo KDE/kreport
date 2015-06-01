@@ -17,6 +17,7 @@
 
 #include "KoReportItemLabel.h"
 #include "common/renderobjects.h"
+#include "kreportplugin_debug.h"
 
 #include <KPropertySet>
 
@@ -66,7 +67,7 @@ KoReportItemLabel::KoReportItemLabel(QDomNode & element)
                 m_lineStyle->setValue(QPen(ls.style));
             }
         } else {
-            qWarning() << "while parsing label element encountered unknow element: " << n;
+            kreportpluginWarning() << "while parsing label element encountered unknow element: " << n;
         }
     }
 }

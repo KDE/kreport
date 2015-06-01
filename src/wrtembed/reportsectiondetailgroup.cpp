@@ -20,6 +20,7 @@
 #include "KoReportDesigner.h"
 #include "reportsection.h"
 #include "reportsectiondetail.h"
+#include "kreport_debug.h"
 
 #include <QDomElement>
 #include <QDomDocument>
@@ -35,7 +36,7 @@ ReportSectionDetailGroup::ReportSectionDetailGroup(const QString & column, Repor
     if (m_reportSectionDetail) {
         rd = rsd->reportDesigner();
     } else {
-        qWarning() << "Error: ReportSectionDetail is null";
+        kreportWarning() << "Error: ReportSectionDetail is null";
     }
     m_groupHeader = new ReportSection(rd /*, _rsd*/);
     m_groupFooter = new ReportSection(rd /*, _rsd*/);

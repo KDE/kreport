@@ -26,7 +26,7 @@
 #include <QPainter>
 #include <QScreen>
 #include <QApplication>
-#include <QDebug>
+#include "kreport_debug.h"
 #include <QGraphicsItem>
 #include <QGraphicsSceneMouseEvent>
 
@@ -92,7 +92,7 @@ void ReportScene::drawBackground(QPainter* painter, const QRectF & clip)
         QPen pen = painter->pen();
         painter->setPen(Qt::lightGray);
 
-        //qDebug() << "dpix" << KoDpi::dpiX() << "dpiy" << KoDpi::dpiY() << "mayorx:" << majorx << "majory" << majory << "pix:" << pixel_incrementx << "piy:" << pixel_incrementy;
+        //kreportDebug() << "dpix" << KoDpi::dpiX() << "dpiy" << KoDpi::dpiY() << "mayorx:" << majorx << "majory" << majory << "pix:" << pixel_incrementx << "piy:" << pixel_incrementy;
 
         QVector<QLine> lines;
         QVector<QPoint> points;

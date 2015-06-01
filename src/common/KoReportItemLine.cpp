@@ -16,9 +16,10 @@
  */
 
 #include "KoReportItemLine.h"
+#include "renderobjects.h"
+#include "kreport_debug.h"
 
 #include <KPropertySet>
-#include "renderobjects.h"
 
 KoReportItemLine::KoReportItemLine()
 {
@@ -55,7 +56,7 @@ KoReportItemLine::KoReportItemLine(QDomNode & element)
                 m_lineStyle->setValue(int(ls.style));
             }
         } else {
-            qWarning() << "while parsing line element encountered unknow element: " << n;
+            kreportWarning() << "while parsing line element encountered unknow element: " << n;
         }
     }
 }

@@ -21,7 +21,7 @@
 
 #include "KReportJsonTrader_p.h"
 
-#include <QDebug>
+#include "kreport_debug.h"
 #include <QList>
 #include <QPluginLoader>
 #include <QJsonObject>
@@ -72,7 +72,7 @@ static QList<QPluginLoader *> findPlugins(const QString &path, const QString &se
             QJsonObject json = loader->metaData().value(QLatin1String("MetaData")).toObject();
 
             if (json.isEmpty()) {
-                qDebug() << dirIter.filePath() << "has no json!";
+                kreportDebug() << dirIter.filePath() << "has no json!";
             }
             if (!json.isEmpty()) {
                 QJsonObject pluginData = json.value(QLatin1String("KPlugin")).toObject();
@@ -105,7 +105,7 @@ QList<QPluginLoader *> KReportJsonTrader::query(const QString &servicetype,
         QStringList searchDirs;
         searchDirs += QCoreApplication::libraryPaths();
         foreach(const QString &dir, searchDirs) {
-            qDebug() << dir;
+            kreportDebug() << dir;
             QString possiblePath = dir + QLatin1String("/kreport");
             if (QDir(possiblePath).exists()) {
                 d->pluginPaths += possiblePath;

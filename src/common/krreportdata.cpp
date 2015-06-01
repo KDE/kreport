@@ -22,7 +22,7 @@
 
 #include <QApplication>
 #include <QScreen>
-#include <QDebug>
+#include "kreport_debug.h"
 
 void KoReportReportData::init()
 {
@@ -45,9 +45,9 @@ KoReportReportData::KoReportReportData(const QDomElement & elemSource, QObject *
 {
     m_valid = false;
     init();
-    //qDebug();
+    //kreportDebug();
     if (elemSource.tagName() != QLatin1String("report:content")) {
-        qWarning() << "QDomElement is not <report:content> tag"
+        kreportWarning() << "QDomElement is not <report:content> tag"
                    << elemSource.text();
         return;
     }
@@ -93,14 +93,14 @@ KoReportReportData::KoReportReportData(const QDomElement & elemSource, QObject *
                 sec = sectionlist.item(s);
                 if (sec.isElement()) {
                     QString sn = sec.nodeName().toLower();
-                    //qDebug() << sn;
+                    //kreportDebug() << sn;
                     if (sn == QLatin1String("report:section")) {
                         KRSectionData * sd = new KRSectionData(sec.toElement(), this);
                         if (!sd->isValid()) {
-                            qDebug() << "Invalid section";
+                            kreportDebug() << "Invalid section";
                             delete sd;
                         } else {
-                            //qDebug() << "Adding section of type " << sd->type();
+                            //kreportDebug() << "Adding section of type " << sd->type();
                             switch (sd->type()) {
                             case KRSectionData::PageHeaderFirst:
                                 m_pageHeaderFirst = sd;
@@ -149,12 +149,12 @@ KoReportReportData::KoReportReportData(const QDomElement & elemSource, QObject *
                         if (dsd->isValid()) {
                             m_detailSection = dsd;
                         } else {
-                            qDebug() << "Invalid detail section";
+                            kreportDebug() << "Invalid detail section";
                             delete dsd;
                         }
                     }
                 } else {
-                    qWarning() << "Encountered an unknown Element: "  << elemThis.tagName();
+                    kreportWarning() << "Encountered an unknown Element: "  << elemThis.tagName();
                 }
             }
         }
@@ -179,7 +179,7 @@ QList<KoReportItemBase*> KoReportReportData::objects() const
     }
 
     if (m_detailSection) {
-        //qDebug() << "Number of groups: " << m_detailSection->m_groupList.count();
+        //kreportDebug() << "Number of groups: " << m_detailSection->m_groupList.count();
         foreach(ORDetailGroupSectionData* g, m_detailSection->m_groupList) {
             if (g->m_groupHeader) {
                 obs << g->m_groupHeader->objects();
@@ -192,9 +192,9 @@ QList<KoReportItemBase*> KoReportReportData::objects() const
             obs << m_detailSection->m_detailSection->objects();
     }
 
-    /*qDebug() << "Object List:";
+    /*kreportDebug() << "Object List:";
     foreach(KoReportItemBase* o, obs) {
-        qDebug() << o->entityName();
+        kreportDebug() << o->entityName();
     }*/
     return obs;
 }
@@ -222,7 +222,7 @@ QList<KRSectionData*> KoReportReportData::sections() const
     }
 
     if (m_detailSection) {
-        //qDebug() << "Number of groups: " << m_detailSection->m_groupList.count();
+        //kreportDebug() << "Number of groups: " << m_detailSection->m_groupList.count();
         foreach(ORDetailGroupSectionData* g, m_detailSection->m_groupList) {
             if (g->m_groupHeader) {
                 secs << g->m_groupHeader;

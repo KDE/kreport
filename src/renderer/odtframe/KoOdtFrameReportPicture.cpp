@@ -29,7 +29,7 @@
 #include <KoStoreDevice.h>
 
 #include <QPainter>
-#include <QDebug>
+#include "kreport_debug.h"
 #include <QMimeDatabase>
 #include <QMimeType>
 
@@ -83,7 +83,7 @@ bool KoOdtFrameReportPicture::saveData(KoStore* store, KoXmlWriter* manifestWrit
     painter.setRenderHint(QPainter::Antialiasing);
     painter.drawPicture(0, 0, *(picture()->picture()));
     painter.end();
-    qDebug()<<image.format();
+    kreportDebug()<<image.format();
     bool ok = image.save(&device, "PNG");
     if (ok) {
         QMimeDatabase db;

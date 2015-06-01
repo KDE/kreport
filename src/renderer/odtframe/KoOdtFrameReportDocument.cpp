@@ -30,7 +30,7 @@
 #include <KoDpi.h>
 
 #include <QVarLengthArray>
-#include <QDebug>
+#include "kreport_debug.h"
 
 KoOdtFrameReportDocument::KoOdtFrameReportDocument()
     : manifestWriter(0)
@@ -67,7 +67,7 @@ QFile::FileError KoOdtFrameReportDocument::saveDocument(const QString& path)
     KoStore *store = KoStore::createStore(path, KoStore::Write,
                                     "application/vnd.oasis.opendocument.text", KoStore::Zip);
     if (!store) {
-        qWarning() << "Couldn't open the requested file.";
+        kreportWarning() << "Couldn't open the requested file.";
         return QFile::OpenError;
     }
 
@@ -82,7 +82,7 @@ QFile::FileError KoOdtFrameReportDocument::saveDocument(const QString& path)
             p->saveData(store, manifestWriter);
         }
     }
-    //qDebug()<<"data saved";
+    //kreportDebug()<<"data saved";
     KoGenStyles coll;
     createStyles(coll); // create basic styles
     bool ok = createContent(&oasisStore, coll);
@@ -107,8 +107,8 @@ void KoOdtFrameReportDocument::createStyles(KoGenStyles &coll)
     qreal rightMargin = m_pageOptions.getMarginRight() / KoDpi::dpiX();
     QString orientation = m_pageOptions.isPortrait() ? "portrait" : "landscape";
 
-    //qDebug()<<"Page:"<<pw<<ph<<orientation;
-    //qDebug()<<"Margin:"<<topMargin<<bottomMargin<<leftMargin<<rightMargin;
+    //kreportDebug()<<"Page:"<<pw<<ph<<orientation;
+    //kreportDebug()<<"Margin:"<<topMargin<<bottomMargin<<leftMargin<<rightMargin;
     KoGenStyle page(KoGenStyle::PageLayoutStyle, "page-layout");
     page.addProperty("style:num-format", "1");
     page.addProperty("style:print-orientation", orientation);
@@ -147,7 +147,7 @@ bool KoOdtFrameReportDocument::createContent(KoOdfWriteStore* store, KoGenStyles
     KoXmlWriter* contentWriter = store->contentWriter();
 
     if (!bodyWriter || !contentWriter || !manifestWriter) {
-        qWarning()<<"Failed to created odt writer";
+        kreportWarning()<<"Failed to created odt writer";
         return false;
     }
 

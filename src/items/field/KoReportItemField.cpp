@@ -16,8 +16,8 @@
  */
 
 #include "KoReportItemField.h"
-
 #include "common/renderobjects.h"
+#include "kreportplugin_debug.h"
 #ifdef KREPORT_SCRIPTING
 #include "renderer/scripting/krscripthandler.h"
 #endif
@@ -73,7 +73,7 @@ KoReportItemField::KoReportItemField(QDomNode & element)
                 m_lineStyle->setValue(QPen(ls.style));
             }
         } else {
-            qWarning() << "while parsing field element encountered unknow element: " << n;
+            kreportpluginWarning() << "while parsing field element encountered unknow element: " << n;
         }
     }
 }
@@ -197,7 +197,7 @@ void KoReportItemField::setItemDataSource(const QString& t)
     if (m_controlSource->value() != t) {
         m_controlSource->setValue(t);
     }
-    //qDebug() << "Field: " << entityName() << "is" << itemDataSource();
+    //kreportpluginDebug() << "Field: " << entityName() << "is" << itemDataSource();
 }
 
 KRLineStyleData KoReportItemField::lineStyle()

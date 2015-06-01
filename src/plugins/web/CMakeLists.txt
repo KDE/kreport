@@ -4,6 +4,7 @@ include_directories(
 
 #build a shared library
 set(koreport_webplugin_LIB_SRCS
+    ${PROJECT_SOURCE_DIR}/src/common/kreportplugin_debug.cpp
     KoReportDesignerItemWeb.cpp
     KoReportItemWeb.cpp
     KoReportWebPlugin.cpp

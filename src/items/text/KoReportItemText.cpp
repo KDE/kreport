@@ -17,6 +17,7 @@
 
 #include "KoReportItemText.h"
 #include "common/renderobjects.h"
+#include "kreportplugin_debug.h"
 
 #include <KPropertySet>
 
@@ -68,7 +69,7 @@ KoReportItemText::KoReportItemText(QDomNode & element) : m_bottomPadding(0.0)
                 m_lineStyle->setValue(QPen(ls.style));
             }
         } else {
-            qWarning() << "while parsing field element encountered unknow element: " << n;
+            kreportpluginWarning() << "while parsing field element encountered unknow element: " << n;
         }
     }
 

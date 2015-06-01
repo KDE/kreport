@@ -31,11 +31,11 @@
 #include <QGraphicsSceneMouseEvent>
 #include <QDomDocument>
 #include <QPainter>
-#include <QDebug>
+#include "kreportplugin_debug.h"
 
 void KoReportDesignerItemWeb::init(QGraphicsScene *scene, KoReportDesigner *d) //done,compared,add function if necessary
 {
-    qDebug();
+    kreportpluginDebug();
     if (scene)
         scene->addItem(this);
 

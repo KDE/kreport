@@ -26,7 +26,7 @@
 #include "marble/HttpDownloadManager.h"
 #include <marble/AbstractFloatItem.h>
 
-#include <QDebug>
+#include "kreportplugin_debug.h"
 
 MapRenderer::MapRenderer(QObject* parent)
     : QObject(parent)
@@ -72,9 +72,9 @@ void MapRenderer::renderJob(KoReportItemMaps* reportItemMaps)
 void MapRenderer::onRenderStatusChange(int renderStatus)
 {
     if(m_currentJob){
-        qDebug() << m_marble.renderStatus() << "|" << renderStatus;
+        kreportpluginDebug() << m_marble.renderStatus() << "|" << renderStatus;
         Marble::RenderStatus status = static_cast<Marble::RenderStatus>(renderStatus);
-        qDebug()
+        kreportpluginDebug()
             << this
             << m_currentJob
             << m_currentJob->longtitude()
@@ -90,14 +90,14 @@ void MapRenderer::onRenderStatusChange(int renderStatus)
 
 void MapRenderer::downloadFinished()
 {
-    qDebug() << "job:" << m_currentJob
+    kreportpluginDebug() << "job:" << m_currentJob
     << "(" << m_currentJob->latitude() << "," << m_currentJob->longtitude() << ")";
 }
 
 void MapRenderer::downloadProgres(int active, int queued)
 {
     if(m_currentJob){
-        qDebug() << "job:" << m_currentJob
+        kreportpluginDebug() << "job:" << m_currentJob
         << "(" << m_currentJob->latitude() << "," << m_currentJob->longtitude() << ")"
         << "active/queued:" << active << "/" << queued;
     }

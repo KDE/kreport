@@ -32,7 +32,7 @@
 
 #include <klocalizedstring.h>
 
-#include <QDebug>
+#include "kreport_debug.h"
 #include <QLabel>
 #include <QDomDocument>
 #include <QLayout>
@@ -147,7 +147,7 @@ void ReportSection::initFromXML(QDomNode & section)
     m_sectionData->m_height->setValue(h);
 
     h  = POINT_TO_INCH(h) * m_dpiY;
-    //qDebug() << "Section Height: " << h;
+    //kreportDebug() << "Section Height: " << h;
     m_scene->setSceneRect(0, 0, m_scene->width(), h);
     slotResizeBarDragged(0);
 
@@ -177,7 +177,7 @@ void ReportSection::initFromXML(QDomNode & section)
                 }
             }
         }
-        qWarning() << "Encountered unknown node while parsing section: " << n;
+        kreportWarning() << "Encountered unknown node while parsing section: " << n;
     }
 }
 
@@ -225,7 +225,7 @@ void ReportSection::slotSceneClicked()
 void ReportSection::slotPropertyChanged(KPropertySet &s, KProperty &p)
 {
     Q_UNUSED(s)
-    //qDebug() << p.name();
+    //kreportDebug() << p.name();
 
     //Handle Background Color
     if (p.name() == "background-color") {

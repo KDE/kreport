@@ -22,7 +22,7 @@
 
 #include <klocalizedstring.h>
 
-#include <QDebug>
+#include "kreportplugin_debug.h"
 
 #include "barcodes.h"
 
@@ -107,7 +107,7 @@ void KoReportItemBarcode::setMaxLength(int i)
             m_minWidthTotal = 0.90;
             m_minHeight = 0.25;
         } else {
-            qDebug() << "Unknown format encountered: " << m_format->value().toString();
+            kreportpluginDebug() << "Unknown format encountered: " << m_format->value().toString();
         }
     }
 }
@@ -246,7 +246,7 @@ int KoReportItemBarcode::renderSimpleData(OROPage *page, OROSection *section, co
         else if (fmt == "upc-e")
             renderCodeUPCE(page, rect, val, align);
         else {
-            qDebug() << "Unknown barcode format:" << fmt;
+            kreportpluginDebug() << "Unknown barcode format:" << fmt;
         }
     }
     return 0;

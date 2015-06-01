@@ -4,6 +4,7 @@ include_directories(
 
 #build a shared library
 set(koreport_chartplugin_LIB_SRCS
+    ${PROJECT_SOURCE_DIR}/src/common/kreportplugin_debug.cpp
     KoReportItemChart.cpp
     KoReportDesignerItemChart.cpp
     krscriptchart.cpp

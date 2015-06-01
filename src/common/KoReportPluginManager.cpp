@@ -23,7 +23,7 @@
 #include "KReportPluginMetaData.h"
 #include "KReportJsonTrader_p.h"
 
-#include <QDebug>
+#include "kreport_debug.h"
 #include <QAction>
 
 //Include the static items
@@ -62,21 +62,21 @@ KoReportPluginInterface* KReportPluginEntry::plugin()
         return m_interface;
     }
     if (!m_loader) {
-        qWarning() << "No such plugin";
+        kreportWarning() << "No such plugin";
         return 0;
     }
     if (!m_loader->load()) {
-        qWarning() << "Could not load plugin" << m_loader->fileName();
+        kreportWarning() << "Could not load plugin" << m_loader->fileName();
         return 0;
     }
     KPluginFactory *factory = qobject_cast<KPluginFactory*>(m_loader->instance());
     if (!factory) {
-        qWarning() << "Could not create factory for plugin" << m_loader->fileName();
+        kreportWarning() << "Could not create factory for plugin" << m_loader->fileName();
         return 0;
     }
     m_interface = factory->create<KoReportPluginInterface>();
     if (!m_interface) {
-        qWarning() << "Could not create instance of plugin" << m_loader->fileName();
+        kreportWarning() << "Could not create instance of plugin" << m_loader->fileName();
         return 0;
     }
     m_interface->setMetaData(m_metaData);
@@ -130,11 +130,11 @@ void KoReportPluginManager::Private::addBuiltInPlugin(const QJsonObject &json)
 {
     KReportPluginEntry *entry = new KReportPluginEntry(new PluginClass(m_parent));
     QJsonObject j = json.value(QLatin1String("MetaData")).toObject();
-    qDebug() << j;
+    kreportDebug() << j;
     entry->setMetaData(j);
     entry->setBuiltIn(true);
     if (entry->metaData()->id().isEmpty()) {
-        qWarning() << "Plugin" << entry->metaData()->name() << "has no identifier so won't be added to manager";
+        kreportWarning() << "Plugin" << entry->metaData()->name() << "has no identifier so won't be added to manager";
         delete entry;
         return;
     }
@@ -150,22 +150,22 @@ typedef quint32 (*plugin_version_t)();
 loadPlugin(KService::Ptr service)
 {
     if (service.isNull()) {
-        qWarning() << "No service specified";
+        kreportWarning() << "No service specified";
         return;
     }
-    qDebug() << "library:" << service->library();
+    kreportDebug() << "library:" << service->library();
     QPluginLoader loader(service->library());
     QLibrary lib(loader.fileName());
     plugin_version_t plugin_version_function = (plugin_version_t)lib.resolve("plugin_version");
     if (!plugin_version_function) {
-        qWarning() << "Plugin version not found for" << service->name();
+        kreportWarning() << "Plugin version not found for" << service->name();
         return;
     }
     quint32 foundVersion = plugin_version_function();
-    qDebug() << "foundVersion:" << d->foundVersion;
+    kreportDebug() << "foundVersion:" << d->foundVersion;
     QPointer<QPluginFactory> factory = loader.factory();
     if (!d->factory) {
-        qWarning() << "Failed to create instance of factory for plugin" << ptr->name();
+        kreportWarning() << "Failed to create instance of factory for plugin" << ptr->name();
         return;
     }
     QString pluginName;
@@ -209,11 +209,11 @@ void KoReportPluginManager::Private::findPlugins()
     KREPORT_ADD_BUILTIN_PLUGIN(KoReportImagePlugin);
     KREPORT_ADD_BUILTIN_PLUGIN(KoReportTextPlugin);
 
-    //qDebug() << "Load all plugins";
+    //kreportDebug() << "Load all plugins";
     const QList<QPluginLoader*> offers = KReportJsonTrader::self()->query(QLatin1String("KReport/Element"));
     foreach(QPluginLoader *loader, offers) {
         //QJsonObject json = loader->metaData();
-        //qDebug() << json;
+        //kreportDebug() << json;
         //! @todo check version
         KReportPluginEntry *entry = new KReportPluginEntry;
         entry->setMetaData(loader);

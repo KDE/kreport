@@ -1,4 +1,5 @@
 set(kreport_barcodeplugin_LIB_SRCS
+    ${PROJECT_SOURCE_DIR}/src/common/kreportplugin_debug.cpp
     KoReportItemBarcode.cpp
     KoReportDesignerItemBarcode.cpp
     krscriptbarcode.cpp

@@ -23,7 +23,7 @@
 #include <marble/MarbleWidget.h>
 #include <marble/RenderState.h>
 
-#include <QDebug>
+#include "kreportplugin_debug.h"
 
 class KoReportItemMaps;
 namespace Marble{
@@ -48,11 +48,11 @@ namespace Marble{
         }
     public Q_SLOTS:
         void onRenderStatusChange(RenderStatus renderStatus){
-            qDebug() << "!!!!!!!!!!!!!!!!  STATUS change";
+            kreportpluginDebug() << "!!!!!!!!!!!!!!!!  STATUS change";
             emit renderStatusChanged(static_cast<int>(renderStatus));
         };
         void onRenderStateChange(const RenderState &state){
-            qDebug() << "################  STATE change";
+            kreportpluginDebug() << "################  STATE change";
             emit renderStatusChanged(static_cast<int>(state.status()));
         };
     Q_SIGNALS:

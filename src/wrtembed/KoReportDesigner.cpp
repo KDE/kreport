@@ -48,7 +48,7 @@
 #include <QPointer>
 #include <QIcon>
 #include <QAction>
-#include <QDebug>
+#include "kreport_debug.h"
 
 //! Also add public method for runtime?
 const char ns[] = "http://kexi-project.org/report/2.0";
@@ -198,9 +198,9 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
 
     if (data.tagName() != QLatin1String("report:content")) {
         // arg we got an xml file but not one i know of
-        qWarning() << "root element was not <report:content>";
+        kreportWarning() << "root element was not <report:content>";
     }
-    //qDebug() << data.text();
+    //kreportDebug() << data.text();
     deleteDetail();
 
     QDomNodeList nlist = data.childNodes();
@@ -211,7 +211,7 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
         // at this level all the children we get should be Elements
         if (it.isElement()) {
             QString n = it.nodeName().toLower();
-            //qDebug() << n;
+            //kreportDebug() << n;
             if (n == QLatin1String("report:title")) {
                 setReportTitle(it.firstChild().nodeValue());
             } else if (n == QLatin1String("report:script")) {
@@ -253,7 +253,7 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
                     sec = sectionlist.item(s);
                     if (sec.isElement()) {
                         QString sn = sec.nodeName().toLower();
-                        //qDebug() << sn;
+                        //kreportDebug() << sn;
                         if (sn == QLatin1String("report:section")) {
                             QString sectiontype = sec.toElement().attribute(QLatin1String("report:section-type"));
                             if (section(KRSectionData::sectionTypeFromString(sectiontype)) == 0) {
@@ -266,12 +266,12 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
                             setDetail(rsd);
                         }
                     } else {
-                        qWarning() << "Encountered an unknown Element: "  << n;
+                        kreportWarning() << "Encountered an unknown Element: "  << n;
                     }
                 }
             }
         } else {
-            qWarning() << "Encountered a child node of root that is not an Element";
+            kreportWarning() << "Encountered a child node of root that is not an Element";
         }
     }
     this->slotPageButton_Pressed();
@@ -366,7 +366,7 @@ void KoReportDesigner::slotSectionEditor()
 
 void KoReportDesigner::setReportData(KoReportData* kodata)
 {
-    //qDebug();
+    //kreportDebug();
     if (kodata) {
         m_kordata = kodata;
         slotPageButton_Pressed();
@@ -483,7 +483,7 @@ void KoReportDesigner::insertSection(KRSectionData::Section s)
         }
         if (s > KRSectionData::ReportHeader)
             idx++;
-        //qDebug() << idx;
+        //kreportDebug() << idx;
         ReportSection *rs = new ReportSection(this);
         d->vboxlayout->insertWidget(idx, rs);
 
@@ -893,7 +893,7 @@ void KoReportDesigner::sectionMouseReleaseEvent(ReportSceneView * v, QMouseEvent
                     }
                 }
                 else {
-                    qWarning() << "attempted to insert an unknown item";
+                    kreportWarning() << "attempted to insert an unknown item";
                 }
             }
             if (item) {
@@ -942,7 +942,7 @@ void KoReportDesigner::changeSet(KPropertySet *s)
 
 void KoReportDesigner::slotItem(const QString &entity)
 {
-    qDebug() << entity;
+    kreportDebug() << entity;
     m_sectionData->mouseAction = ReportWriterSectionData::MA_Insert;
     m_sectionData->insertItem = entity;
     setSectionCursor(QCursor(Qt::CrossCursor));
@@ -1047,7 +1047,7 @@ void KoReportDesigner::slotEditPaste(QGraphicsScene * canvas)
         foreach(KoReportDesignerItemBase *item, m_sectionData->copy_list) {
             KoReportItemBase *obj = dynamic_cast<KoReportItemBase*>(item);
             const QString type = obj ? obj->typeName() : QLatin1String("object");
-            //qDebug() << type;
+            //kreportDebug() << type;
             KoReportDesignerItemBase *ent = item->clone();
             KoReportItemBase *new_obj = dynamic_cast<KoReportItemBase*>(ent);
             new_obj->setEntityName(suggestEntityName(type));

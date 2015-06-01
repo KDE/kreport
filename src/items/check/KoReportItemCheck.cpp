@@ -17,6 +17,7 @@
 
 #include "KoReportItemCheck.h"
 #include "common/renderobjects.h"
+#include "kreportplugin_debug.h"
 #ifdef KREPORT_SCRIPTING
 #include "renderer/scripting/krscripthandler.h"
 #endif
@@ -58,7 +59,7 @@ KoReportItemCheck::KoReportItemCheck(QDomNode &element)
                 m_lineStyle->setValue(QPen(ls.style));
             }
         } else {
-            qWarning() << "while parsing check element encountered unknow element: " << n;
+            kreportpluginWarning() << "while parsing check element encountered unknow element: " << n;
         }
     }
 
@@ -135,7 +136,7 @@ int KoReportItemCheck::renderSimpleData(OROPage *page, OROSection *section, cons
     bool v = false;
     QString cs = itemDataSource();
 
-    //qDebug() << "ControlSource:" << cs;
+    //kreportpluginDebug() << "ControlSource:" << cs;
     if (!cs.isEmpty()) {
 #ifdef KREPORT_SCRIPTING
         if (cs.left(1) == QLatin1String("=") && script) {
@@ -150,7 +151,7 @@ int KoReportItemCheck::renderSimpleData(OROPage *page, OROSection *section, cons
 
         str = str.toLower();
 
-        //qDebug() << "Check Value:" << str;
+        //kreportpluginDebug() << "Check Value:" << str;
         if (str == QLatin1String("t") || str == QLatin1String("y") || str == QLatin1String("true") || str == QLatin1String("1"))
             v = true;
 

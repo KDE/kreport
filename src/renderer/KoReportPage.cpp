@@ -22,7 +22,7 @@
 #include "common/renderobjects.h"
 
 #include <QWidget>
-#include <QDebug>
+#include "kreport_debug.h"
 #include <QPixmap>
 #include <QPainter>
 #include <QTimer>
@@ -31,7 +31,7 @@ KoReportPage::KoReportPage(QWidget *parent, ORODocument *document)
         : QObject(parent), QGraphicsRectItem()
 {
     //TODO setAttribute(Qt::WA_NoBackground);
-    //qDebug() << "CREATED PAGE";
+    //kreportDebug() << "CREATED PAGE";
     m_reportDocument = document;
     m_page = 0;
     int pageWidth = 0;
@@ -52,7 +52,7 @@ KoReportPage::KoReportPage(QWidget *parent, ORODocument *document)
         }
     }
     setRect(0,0,pageWidth, pageHeight);
-    //qDebug() << "PAGE IS " << pageWidth << "x" << pageHeight;
+    //kreportDebug() << "PAGE IS " << pageWidth << "x" << pageHeight;
     m_pixmap = new QPixmap(pageWidth, pageHeight);
     m_renderer = m_factory.createInstance(QLatin1String("screen"));
     connect(m_reportDocument, SIGNAL(updated(int)), this, SLOT(pageUpdated(int)));
@@ -93,10 +93,10 @@ void KoReportPage::renderPage(int page)
 
 void KoReportPage::pageUpdated(int pageNo)
 {
-    //qDebug() << pageNo << m_page;
+    //kreportDebug() << pageNo << m_page;
     //Refresh this page if it changes
     if (pageNo == m_page) {
-        //qDebug() << "Current page updated";
+        //kreportDebug() << "Current page updated";
         m_renderTimer->start(100);
     }
 }
