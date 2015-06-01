@@ -86,20 +86,17 @@ void Window::createMenus()
     m_fileMenu->addAction(m_exitAction);
 }
 
-void Window::showDesign(QDomElement d)
+void Window::showDesign(const QDomElement &design)
 {
     qDebug() << "Show design";
-    m_preRenderer = new KoReportPreRenderer(d);
-    if (!m_preRenderer->isValid()) {
+    KoReportPreRenderer preRenderer(design);
+    if (!preRenderer.isValid()) {
         return;
     }
 
-    m_preRenderer->setSourceData(m_testData);
-    m_oDocument = m_preRenderer->generate();
+    preRenderer.setSourceData(m_testData);
+    m_oDocument = preRenderer.generate();
 
     m_reportView->setDocument(m_oDocument);
     m_reportView->moveToFirstPage();
-    
-    delete m_preRenderer;
-    m_preRenderer = 0;
 }

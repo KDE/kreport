@@ -187,19 +187,17 @@ loadPlugin(KService::Ptr service)
 
 QMap<QString, KReportPluginEntry*>* KoReportPluginManager::Private::plugins()
 {
-    if (!m_findPlugins) {
-        return &m_plugins;
+    if (m_findPlugins) {
+        findPlugins();
     }
-    findPlugins();
     return &m_plugins;
 }
 
 QMap<QString, KReportPluginEntry*>* KoReportPluginManager::Private::pluginsByLegacyName()
 {
-    if (!m_findPlugins) {
-        return &m_pluginsByLegacyName;
+    if (m_findPlugins) {
+        findPlugins();
     }
-    findPlugins();
     return &m_pluginsByLegacyName;
 }
 
@@ -219,9 +217,10 @@ void KoReportPluginManager::Private::findPlugins()
         //! @todo check version
         KReportPluginEntry *entry = new KReportPluginEntry;
         entry->setMetaData(loader);
-        qDebug() << entry->metaData()->id() << entry->metaData()->value(QLatin1String("X-KDE-PluginInfo-LegacyName"), QLatin1String("blah"));
         m_plugins.insert(entry->metaData()->id(), entry);
-        m_pluginsByLegacyName.insert(entry->metaData()->value(QLatin1String("X-KDE-PluginInfo-LegacyName"), entry->metaData()->id()), entry);
+        if (entry->metaData()->id().startsWith(QLatin1String("org.kde.kreport"))) {
+            m_pluginsByLegacyName.insert(entry->metaData()->value(QLatin1String("X-KDE-PluginInfo-LegacyName"), entry->metaData()->id()), entry);
+        }
     }
     m_findPlugins = false;
 }
@@ -271,10 +270,10 @@ KoReportPluginInterface* KoReportPluginManager::plugin(const QString& id)
 {
     KReportPluginEntry *entry;
 
-    if (!id.startsWith(QLatin1String("org.kde.kreport"))) {
+    entry = d->plugins()->value(id);
+
+    if (!entry) {
         entry = d->pluginsByLegacyName()->value(id);
-    } else {
-        entry = d->plugins()->value(id);
     }
 
     if (!entry) {

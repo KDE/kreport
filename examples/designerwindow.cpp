@@ -93,6 +93,6 @@ void DesignerWindow::slotDesignerPropertySetChanged()
 
 void DesignerWindow::designDirty()
 {
-    emit(newDesign(m_reportDesigner->document()));
+    emit designChanged(m_reportDesigner->document());
 }
 

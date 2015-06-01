@@ -39,7 +39,7 @@ public:
     ~DesignerWindow();
 
 Q_SIGNALS:
-    void newDesign(QDomElement);
+    void designChanged(const QDomElement&);
 
 private Q_SLOTS:
     void slotItemInserted(const QString &itemId);

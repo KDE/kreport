@@ -39,7 +39,7 @@ public:
     virtual ~Window();
 
 public Q_SLOTS:
-    void showDesign(QDomElement d);
+    void showDesign(const QDomElement &design);
 
 private:
     void createMenus();
@@ -49,7 +49,6 @@ private:
     QAction *m_exitAction;
 
     KReportView *m_reportView;
-    KoReportPreRenderer *m_preRenderer;
     QDomDocument m_document;
     ORODocument *m_oDocument;
 

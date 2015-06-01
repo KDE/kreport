@@ -158,7 +158,7 @@ void KoReportPreRendererPrivate::renderDetailSection(KRDetailSectionData & detai
             bool status = m_kodata->moveFirst();
             m_recordCount = m_kodata->recordCount();
 
-            //qDebug() << "Record Count:" << m_recordCount;
+            qDebug() << "Record Count:" << m_recordCount;
 
             for (int i = 0; i < (int) detailData.m_groupList.count(); ++i) {
                 grp = detailData.m_groupList[i];
