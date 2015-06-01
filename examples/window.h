@@ -50,7 +50,6 @@ private:
 
     KReportView *m_reportView;
     QDomDocument m_document;
-    ORODocument *m_oDocument;
 
     uint m_currentPage;
 

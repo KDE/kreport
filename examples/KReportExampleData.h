@@ -58,9 +58,9 @@ private:
         bool projectLead;
     };
 
-    QList<Data> m_TestData;
-    QStringList m_FieldNames;
-    int m_CurrentRecord;
+    QList<Data> m_testData;
+    QStringList m_fieldNames;
+    int m_currentRecord;
 };
 
 #endif // KREPORTEXAMPLEDATA_H

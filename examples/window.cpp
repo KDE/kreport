@@ -95,8 +95,7 @@ void Window::showDesign(const QDomElement &design)
     }
 
     preRenderer.setSourceData(m_testData);
-    m_oDocument = preRenderer.generate();
 
-    m_reportView->setDocument(m_oDocument);
+    m_reportView->setDocument(preRenderer.generate());
     m_reportView->moveToFirstPage();
 }
