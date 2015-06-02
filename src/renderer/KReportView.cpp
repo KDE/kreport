@@ -34,7 +34,7 @@
 #include <KoReportPreRenderer.h>
 
 KReportView::KReportView(QWidget *parent)
-        : QWidget(parent), m_preRenderer(0), m_reportDocument(0), m_currentPage(0), m_pageCount(0), m_reportPage(0)
+        : QWidget(parent), m_reportDocument(0), m_reportPage(0), m_currentPage(0), m_pageCount(0)
 {
     setObjectName(QLatin1String("KReportView"));
 

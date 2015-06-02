@@ -51,7 +51,6 @@ public:
     void setDocument(ORODocument* doc);
 
 private:
-    KoReportPreRenderer *m_preRenderer;
     ORODocument *m_reportDocument;
     QGraphicsView *m_reportView;
     QGraphicsScene *m_reportScene;
