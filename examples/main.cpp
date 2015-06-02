@@ -38,5 +38,6 @@ int main(int argc, char **argv)
     DesignerWindow designerWindow;
     designerWindow.show();
 
+    QObject::connect(&designerWindow, SIGNAL(designChanged(QDomElement)), &window, SLOT(showDesign(QDomElement)));
     return app.exec();
 }

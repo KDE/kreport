@@ -140,6 +140,7 @@ void KoReportPluginManager::Private::addBuiltInPlugin(const QJsonObject &json)
     }
     entry->setStatic(true);
     m_plugins.insert(entry->metaData()->id(), entry);
+    m_pluginsByLegacyName.insert(entry->metaData()->value(QLatin1String("X-KDE-PluginInfo-LegacyName"), entry->metaData()->id()), entry);
 }
 
 #if 0
@@ -186,11 +187,22 @@ loadPlugin(KService::Ptr service)
 
 QMap<QString, KReportPluginEntry*>* KoReportPluginManager::Private::plugins()
 {
-    if (!m_findPlugins) {
-        return &m_plugins;
+    if (m_findPlugins) {
+        findPlugins();
     }
-    m_findPlugins = false;
+    return &m_plugins;
+}
 
+QMap<QString, KReportPluginEntry*>* KoReportPluginManager::Private::pluginsByLegacyName()
+{
+    if (m_findPlugins) {
+        findPlugins();
+    }
+    return &m_pluginsByLegacyName;
+}
+
+void KoReportPluginManager::Private::findPlugins()
+{
     KREPORT_ADD_BUILTIN_PLUGIN(KoReportLabelPlugin);
     KREPORT_ADD_BUILTIN_PLUGIN(KoReportCheckPlugin);
     KREPORT_ADD_BUILTIN_PLUGIN(KoReportFieldPlugin);
@@ -206,8 +218,11 @@ QMap<QString, KReportPluginEntry*>* KoReportPluginManager::Private::plugins()
         KReportPluginEntry *entry = new KReportPluginEntry;
         entry->setMetaData(loader);
         m_plugins.insert(entry->metaData()->id(), entry);
+        if (entry->metaData()->id().startsWith(QLatin1String("org.kde.kreport"))) {
+            m_pluginsByLegacyName.insert(entry->metaData()->value(QLatin1String("X-KDE-PluginInfo-LegacyName"), entry->metaData()->id()), entry);
+        }
     }
-    return &m_plugins;
+    m_findPlugins = false;
 }
 
 // ---
@@ -253,7 +268,14 @@ const KReportPluginMetaData *KoReportPluginManager::pluginMetaData(const QString
 
 KoReportPluginInterface* KoReportPluginManager::plugin(const QString& id)
 {
-    KReportPluginEntry *entry = d->plugins()->value(id);
+    KReportPluginEntry *entry;
+
+    entry = d->plugins()->value(id);
+
+    if (!entry) {
+        entry = d->pluginsByLegacyName()->value(id);
+    }
+
     if (!entry) {
         return 0;
     }

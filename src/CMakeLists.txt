@@ -39,6 +39,7 @@ set(kreport_LIB_SRCS
     #TODO renderer/KoOdtFrameReportRenderer.cpp
     renderer/KoReportRendererBase.cpp
     renderer/KoReportPage.cpp
+    renderer/KReportView.cpp
 
     wrtembed/detailgroupsectiondialog.cpp
     wrtembed/KoReportDesignerItemBase.cpp

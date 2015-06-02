@@ -21,6 +21,8 @@
 #define DESIGNERWINDOW_H
 
 #include <QMainWindow>
+#include <QDomElement>
+
 #include <KPropertyEditorView>
 #include <KPropertySet>
 
@@ -36,9 +38,13 @@ public:
     DesignerWindow();
     ~DesignerWindow();
 
+Q_SIGNALS:
+    void designChanged(const QDomElement&);
+
 private Q_SLOTS:
     void slotItemInserted(const QString &itemId);
     void slotDesignerPropertySetChanged();
+    void designDirty();
 
 private:
     QScrollArea * m_scrollArea;

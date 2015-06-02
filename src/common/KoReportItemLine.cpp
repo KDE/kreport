@@ -52,7 +52,7 @@ KoReportItemLine::KoReportItemLine(QDomNode & element)
             if (parseReportLineStyleData(node.toElement(), ls)) {
                 m_lineWeight->setValue(ls.weight);
                 m_lineColor->setValue(ls.lineColor);
-                m_lineStyle->setValue(QPen(ls.style));
+                m_lineStyle->setValue(int(ls.style));
             }
         } else {
             qWarning() << "while parsing line element encountered unknow element: " << n;

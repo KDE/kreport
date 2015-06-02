@@ -182,6 +182,7 @@ void KoReportDesignerItemField::slotPropertyChanged(KPropertySet &s, KProperty &
 
 void KoReportDesignerItemField::mousePressEvent(QGraphicsSceneMouseEvent * event)
 {
+    qDebug() << m_reportDesigner->fieldKeys() <<  m_reportDesigner->fieldNames();
     m_controlSource->setListData(m_reportDesigner->fieldKeys(), m_reportDesigner->fieldNames());
     KoReportDesignerItemRectBase::mousePressEvent(event);
 }

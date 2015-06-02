@@ -158,7 +158,7 @@ void KoReportPreRendererPrivate::renderDetailSection(KRDetailSectionData & detai
             bool status = m_kodata->moveFirst();
             m_recordCount = m_kodata->recordCount();
 
-            //qDebug() << "Record Count:" << m_recordCount;
+            qDebug() << "Record Count:" << m_recordCount;
 
             for (int i = 0; i < (int) detailData.m_groupList.count(); ++i) {
                 grp = detailData.m_groupList[i];
@@ -607,7 +607,7 @@ ORODocument* KoReportPreRenderer::generate()
 #ifdef KREPORT_SCRIPTING
     delete d->m_scriptHandler;
 #endif
-    delete d->m_kodata;
+    //TODO check ownership delete d->m_kodata;
     d->m_postProcText.clear();
 
     return d->m_document;
