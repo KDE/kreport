@@ -119,7 +119,7 @@ void renderI2of5(const QRectF &r, const QString & _str, int align, QPainter * pP
 
         QPen oneWide(pPainter->pen());
         oneWide.setWidth(1);
-#ifndef Q_WS_WIN32
+#ifndef Q_OS_WIN32
         oneWide.setJoinStyle(Qt::MiterJoin);
 #endif
         pPainter->setPen(oneWide);
