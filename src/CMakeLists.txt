@@ -1,5 +1,3 @@
-find_package(KF5Kross REQUIRED)
-
 # Options
 option(KREPORT_SCRIPTING "Enable scripting" OFF)
 configure_file(config-kreport.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kreport.h)
