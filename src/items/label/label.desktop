@@ -2,6 +2,7 @@
 Name=Label
 Name[ca]=Etiqueta
 Name[de]=Beschriftung
+Name[es]=Etiqueta
 Name[gl]=Etiqueta
 Name[nl]=Label
 Name[pl]=Etykieta
@@ -14,6 +15,7 @@ Name[x-test]=xxLabelxx
 Comment=Label element for Reports
 Comment[ca]=Element d'etiqueta per informes
 Comment[de]=Beschriftungs-Element für Berichte
+Comment[es]=Elemento de etiqueta para informes
 Comment[gl]=Etiqueta para informes.
 Comment[nl]=Labelelement voor rapporten
 Comment[pl]=Element etykietydla raportów

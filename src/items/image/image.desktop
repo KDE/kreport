@@ -2,6 +2,7 @@
 Name=Image
 Name[ca]=Imatge
 Name[de]=Bild
+Name[es]=Imagen
 Name[gl]=Imaxe
 Name[nl]=Afbeelding
 Name[pl]=Obraz
@@ -14,6 +15,7 @@ Name[x-test]=xxImagexx
 Comment=Image element for Reports
 Comment[ca]=Element d'imatge per informes
 Comment[de]=Bildelement für Berichte
+Comment[es]=Elemento de imagen para informes
 Comment[gl]=Imaxe para informes.
 Comment[nl]=Afbeeldingselement voor rapporten
 Comment[pl]=Element obrazu dla raportów

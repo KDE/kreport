@@ -2,6 +2,7 @@
 Name=Check box
 Name[ca]=Casella de selecció
 Name[de]=Ankreuzfeld
+Name[es]=Casilla de verificación
 Name[gl]=Caixa de verificación
 Name[nl]=Keuzevakje
 Name[pl]=Pole wyboru
@@ -14,6 +15,7 @@ Name[x-test]=xxCheck boxxx
 Comment=Check box element for Reports
 Comment[ca]=Element de casella de selecció per informes
 Comment[de]=Ankreuzelement für Berichte
+Comment[es]=Elemento de casilla de verificación para informes
 Comment[gl]=Caixa de verificación para informes.
 Comment[nl]=Keuzevakje-element voor rapporten
 Comment[pl]=Element pora wyboru dla raportów

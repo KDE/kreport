@@ -2,6 +2,7 @@
 Name=Text
 Name[ca]=Text
 Name[de]=Text
+Name[es]=Texto
 Name[gl]=Texto
 Name[nb]=Tekst
 Name[nl]=Tekst
@@ -15,6 +16,7 @@ Name[x-test]=xxTextxx
 Comment=Text element for Reports
 Comment[ca]=Element de text per informes
 Comment[de]=Textelement für Berichte
+Comment[es]=Elemento de texto para informes
 Comment[gl]=Texto para informes.
 Comment[nl]=Tekstelement voor rapporten
 Comment[pl]=Element tekstowy dla raportów

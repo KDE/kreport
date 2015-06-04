@@ -2,6 +2,7 @@
 Name=Field
 Name[ca]=Camp
 Name[de]=Feld
+Name[es]=Campo
 Name[gl]=Campo
 Name[nl]=Veld
 Name[pl]=Pole
@@ -14,6 +15,7 @@ Name[x-test]=xxFieldxx
 Comment=Field element for Reports
 Comment[ca]=Element de camp per informes
 Comment[de]=Feldelement für Berichte
+Comment[es]=Elemento de campo para informes
 Comment[gl]=Campo para informes.
 Comment[nl]=Veld-element voor rapporten
 Comment[pl]=Element pola dla raportów

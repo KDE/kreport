@@ -2,6 +2,7 @@
 Name=Maps
 Name[ca]=Mapes
 Name[de]=Karten
+Name[es]=Mapas
 Name[gl]=Mapas
 Name[nl]=Kaarten
 Name[pl]=Mapy
@@ -14,6 +15,7 @@ Name[x-test]=xxMapsxx
 Comment=Maps element for Reports
 Comment[ca]=Element de mapes per informes
 Comment[de]=Kartenelement für Berichte
+Comment[es]=Elemento de mapas para informes
 Comment[gl]=Elemento de mapas para informes.
 Comment[nl]=Kaartelement voor rapporten
 Comment[pl]=Element mapy dla raportów
