@@ -49,6 +49,7 @@ Window::Window()
     m_testData = new KReportExampleData();
     KoReportPluginManager* manager = KoReportPluginManager::self();
     // TODO
+    Q_UNUSED(manager);
 }
 
 Window::~Window()
