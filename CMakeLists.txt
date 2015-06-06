@@ -31,7 +31,7 @@ find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Core Widgets Xml Prin
 find_package(KF5 5.7.0 REQUIRED CoreAddons WidgetsAddons GuiAddons Kross)
 find_package(KProperty 2.96.0 REQUIRED)
 
-set(KREPORT_PLUGIN_INSTALL_DIR ${LIB_INSTALL_DIR}/plugins/kreport)
+set(KREPORT_PLUGIN_INSTALL_DIR ${PLUGIN_INSTALL_DIR}/kreport)
 
 if(BUILD_TESTING)
     add_definitions(-DBUILD_TESTING)

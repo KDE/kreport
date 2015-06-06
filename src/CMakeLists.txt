@@ -169,7 +169,7 @@ ecm_setup_version(${KREPORT_VERSION}
 
 install(TARGETS KReport
         EXPORT KReportTargets
-        ${INSTALL_TARGETS_DEFAULT_ARGS})
+        ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 # Create a Config.cmake and a ConfigVersion.cmake file and install them
 set(CMAKECONFIG_INSTALL_DIR "${CMAKECONFIG_INSTALL_PREFIX}/KReport")
