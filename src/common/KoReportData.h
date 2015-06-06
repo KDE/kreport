@@ -40,77 +40,76 @@ public:
         Qt::SortOrder order;
     };
 
-    //!Open the dataset
+    //! Open the dataset
     virtual bool open() = 0;
 
-    //!Close the dataset
+    //! Close the dataset
     virtual bool close() = 0;
 
-    //!Move to the next record
+    //! Move to the next record
     virtual bool moveNext() = 0;
 
-    //!Move to the previous record
+    //! Move to the previous record
     virtual bool movePrevious() = 0;
 
-    //!Move to the first record
+    //! Move to the first record
     virtual bool moveFirst() = 0;
 
-    //!Move to the last record
+    //! Move to the last record
     virtual bool moveLast() = 0;
 
-    //!Return the current position in the dataset
+    //! Return the current position in the dataset
     virtual qint64 at() const = 0;
 
-    //!Return the total number of records
+    //! Return the total number of records
     virtual qint64 recordCount() const = 0;
 
-    //!Return the index number of the field given by nane field
+    //! Return the index number of the field given by nane field
     virtual int fieldNumber(const QString &field) const = 0;
 
-    //!Return the list of field names
+    //! Return the list of field names
     virtual QStringList fieldNames() const = 0;
 
-    //!Return the list of field keys. Returns fieldNames() by default
+    //! Return the list of field keys. Returns fieldNames() by default
     virtual QStringList fieldKeys() const;
 
-    //!Return the value of the field at the given position for the current record
+    //! Return the value of the field at the given position for the current record
     virtual QVariant value(unsigned int) const = 0;
 
-    //!Return the value of the field fir the given name for the current record
+    //! Return the value of the field fir the given name for the current record
     virtual QVariant value(const QString &field) const = 0;
 
-    //!Return the name of this source
+    //! Return the name of this source
     virtual QString sourceName() const;
 
-    //!Sets the sorting for the data
-    //!Should be called before open() so that the data source can be edited accordingly
-    //!Default impl does nothing
+    //! Sets the sorting for the data
+    //! Should be called before open() so that the data source can be edited accordingly
+    //! Default impl does nothing
     virtual void setSorting(const QList<SortedField> &sorting);
 
-    /**
-    @brief Adds an expression to the data source
-    */
+    //! Adds an expression to the data source
     virtual void addExpression(const QString &field, const QVariant &value, int relation = '=');
 
-    //!Utility Functions
-    //!TODO These are probably eligable to be moved into a new class
+    //! Utility Functions
+    //! @todo These are probably eligable to be moved into a new class
 
-    //!Allow the reportdata implementation to return a list of possible scripts for a given language
+    //! Allow the reportdata implementation to return a list of possible scripts for a given language
     virtual QStringList scriptList(const QString& language) const;
 
-    //!Allow the reportdata implementation to return some script code based on a specific script name
-    //!and a language, as set in the report
+    //! Allow the reportdata implementation to return some script code based on a specific script name
+    //! and a language, as set in the report
     virtual QString scriptCode(const QString& script, const QString& language) const;
 
-    //!Return a list of data sources possible for advanced controls
+    //! Return a list of data sources possible for advanced controls
     virtual QStringList dataSources() const;
-    //!Return a list of data source names possible for advanced controls.
-    //!Returns dataSources() by default
+
+    //! Return a list of data source names possible for advanced controls.
+    //! Returns dataSources() by default
     virtual QStringList dataSourceNames() const;
 
-    //!Allow a driver to create a new instance with a new data source
-    //!source is a driver specific identifier
-    //!Owner of the returned pointer is the caller
+    //! Allow a driver to create a new instance with a new data source
+    //! source is a driver specific identifier
+    //! Owner of the returned pointer is the caller
     virtual KoReportData* data(const QString &source);
 };
 

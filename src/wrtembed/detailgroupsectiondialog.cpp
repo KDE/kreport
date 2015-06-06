@@ -29,10 +29,10 @@ DetailGroupSectionDialog::DetailGroupSectionDialog(QWidget* parent)
 {
     QWidget *widget = new QWidget(this);
     setupUi(widget);
-   //TODO  setMainWidget(widget);
+   //! @todo  setMainWidget(widget);
 
-    //TODO setButtons(Ok | Cancel);
-    //TODO setCaption(tr("Group Section Editor"));
+    //! @todo setButtons(Ok | Cancel);
+    //! @todo setCaption(tr("Group Section Editor"));
 }
 
 /*

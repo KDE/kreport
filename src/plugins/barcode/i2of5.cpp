@@ -53,7 +53,7 @@ static QPointF addElement(OROPage * page, const QRectF &r, QPointF startPos, qre
         rect->setPen(pen);
         rect->setBrush(brush);
         rect->setRect(QRectF(startPos.x(),startPos.y(), width, r.height()));
-        //rect->setRotationAxis(bc->rect.topLeft()); //todo: check this
+        //rect->setRotationAxis(bc->rect.topLeft()); //!< @todo check this
         page->addPrimitive(rect);
     }
     return QPointF(startPos.x() + width, startPos.y());

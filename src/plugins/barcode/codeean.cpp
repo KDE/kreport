@@ -80,7 +80,7 @@ static const int _upcparenc[10][2][6] = {
 
 
 //
-// TODO: New Renderer Functions
+//! @todo New Renderer Functions
 ////////////////////////////////////////////////////////
 
 void renderCodeEAN13(OROPage * page, const QRectF & r, const QString & _str, int align)

@@ -46,7 +46,7 @@ ReportSceneView::~ReportSceneView()
     viewport()->setMouseTracking(false);
 }
 
-//TODO check
+//! @todo check
 void ReportSceneView::resizeContents(QSize s)
 {
     setMinimumSize(s);

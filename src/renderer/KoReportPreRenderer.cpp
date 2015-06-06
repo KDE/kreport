@@ -78,7 +78,7 @@ void KoReportPreRendererPrivate::createNewPage()
     m_page = new OROPage(0);
     m_document->addPage(m_page);
 
-    //TODO calculate past page
+    //! @todo calculate past page
     bool lastPage = false;
 
     m_yOffset = m_topMargin;
@@ -497,7 +497,7 @@ ORODocument* KoReportPreRenderer::generate()
             i.next();
             d->m_scriptHandler->registerScriptObject(i.value(), i.key());
 
-            //!TODO This is a hack
+            //! @todo This is a hack
             if (i.key() == QLatin1String("field"))
                 QObject::connect(d->m_scriptHandler, SIGNAL(groupChanged(QString)), i.value(), SLOT(setWhere(QString)));
         }
@@ -607,7 +607,7 @@ ORODocument* KoReportPreRenderer::generate()
 #ifdef KREPORT_SCRIPTING
     delete d->m_scriptHandler;
 #endif
-    //TODO check ownership delete d->m_kodata;
+    //! @todo check ownership delete d->m_kodata;
     d->m_postProcText.clear();
 
     return d->m_document;

@@ -26,10 +26,8 @@ class KoGenStyles;
 class KoXmlWriter;
 class OROLine;
 
-// FIXME:
-// This implementation is a hack because neither words nor libre writer
-// implements lines in a good way.
-
+//! @todo This implementation is a hack because neither words nor libre writer
+//! implements lines in a good way.
 class KoOdtFrameReportLine : public KoOdtFrameReportPrimitive
 {
 public:

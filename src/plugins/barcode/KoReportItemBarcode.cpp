@@ -197,7 +197,7 @@ void KoReportItemBarcode::setFormat(const QString& f)
 
 void KoReportItemBarcode::setAlignment(int)
 {
-    //TODO Barcode alignment
+    //! @todo Barcode alignment
 }
 
 //RTTI

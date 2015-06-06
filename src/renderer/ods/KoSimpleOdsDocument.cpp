@@ -83,7 +83,7 @@ bool KoSimpleOdsDocument::createContent(KoOdfWriteStore* store)
         // OpenDocument spec requires the manifest to include a list of the files in this package
         manifestWriter->addManifestEntry("content.xml",  "text/xml");
 
-        // FIXME this is dummy and hardcoded, replace with real font names
+        //! @todo this is dummy and hardcoded, replace with real font names
         contentWriter->startElement("office:font-face-decls");
         contentWriter->startElement("style:font-face");
         contentWriter->addAttribute("style:name", "Arial");

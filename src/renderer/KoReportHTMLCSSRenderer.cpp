@@ -63,7 +63,7 @@ bool KoReportHTMLCSSRenderer::render(const KoReportRendererContext& context, ORO
     out.flush();
     tempHtmlFile.close();
 
-    bool status = true; //TODO KIO
+    bool status = true; //!< @todo KIO
 //    if (KIO::NetAccess::upload(tempFileName, context.destinationUrl, 0) && KIO::NetAccess::dircopy(QUrl(m_tempDirName),  QUrl(context.destinationUrl.url() + dirSuffix), 0)) {
 //        status = true;
 //    }
@@ -136,7 +136,7 @@ QString KoReportHTMLCSSRenderer::renderCSS(ORODocument *document)
                             QLatin1String("color: ") + tb->textStyle().foregroundColor.name() + QLatin1String("; ") +
                             QLatin1String("width: ") + QString::number(tb->size().width()) + QLatin1String("px;") +
                             QLatin1String("height: ") + QString::number(tb->size().height()) + QLatin1String("px;") ;
-                    //TODO opaque text + translucent background
+                    //! @todo opaque text + translucent background
                     //it looks a pain to implement
                     //http://developer.mozilla.org/en/docs/Useful_CSS_tips:Color_and_Background
                     //style += "filter:alpha(opacity=" + QString::number((tb->textStyle().bgOpacity / 255) * 100) + ");"; //ie opacity

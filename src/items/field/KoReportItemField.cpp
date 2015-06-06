@@ -121,8 +121,8 @@ void KoReportItemField::createProperties()
     m_wordWrap = new KProperty("word-wrap", QVariant(false), tr("Word Wrap"));
     m_canGrow = new KProperty("can-grow", QVariant(false), tr("Can Grow"));
 
+    //! @todo I do not think we need these
 #if 0 //Field Totals
-    //TODO I do not think we need these
     m_trackTotal = new KProperty("trackTotal", QVariant(false), futureI18n("Track Total"));
     m_trackBuiltinFormat = new KProperty("trackBuiltinFormat", QVariant(false), futureI18n("Track Builtin Format"));
     _useSubTotal = new KProperty("useSubTotal", QVariant(false), futureI18n("Use Sub Total"_);

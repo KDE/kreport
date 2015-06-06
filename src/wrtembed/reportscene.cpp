@@ -161,7 +161,7 @@ QPointF ReportScene::gridPoint(const QPointF& p)
 
     if (m_unit.type() != m_rd->pageUnit().type()) {
         m_unit = m_rd->pageUnit();
-        // TODO: Again? Copy&Paste error?
+        //! @todo Again? Copy&Paste error?
         if (m_unit.type() != m_rd->pageUnit().type()) {
             m_unit = m_rd->pageUnit();
             if (m_unit.type() == KoUnit::Cicero ||

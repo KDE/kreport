@@ -119,7 +119,7 @@ void KoReportDesignerItemRectBase::mouseMoveEvent(QGraphicsSceneMouseEvent * eve
     w = p.x() - scenePos().x();
     h = p.y() - scenePos().y();
 
-    //TODO use an enum for the directions
+    //! @todo use an enum for the directions
 
     switch (m_grabAction) {
     case 1:
@@ -321,7 +321,7 @@ void KoReportDesignerItemRectBase::propertyChanged(const KPropertySet &s, const 
 
 void KoReportDesignerItemRectBase::move(const QPointF& /*m*/)
 {
-//! TODO
+//! @todo
 }
 
 QPointF KoReportDesignerItemRectBase::properPressPoint(const KoReportDesigner &d) const

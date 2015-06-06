@@ -50,7 +50,7 @@ static inline bool isEditorHelperField(const QString &key)
 SectionEditor::SectionEditor(QWidget* parent)
   : QDialog(parent)
 {
-    //TODO check section editor
+    //! @todo check section editor
     //setButtons(Close);
     //setCaption(i18n("Section Editor"));
 

@@ -30,7 +30,7 @@
 KoReportPage::KoReportPage(QWidget *parent, ORODocument *document)
         : QObject(parent), QGraphicsRectItem()
 {
-    //TODO setAttribute(Qt::WA_NoBackground);
+    //! @todo setAttribute(Qt::WA_NoBackground);
     //kreportDebug() << "CREATED PAGE";
     m_reportDocument = document;
     m_page = 0;

@@ -224,7 +224,7 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
                 m_unit->setValue(it.toElement().attribute(QLatin1String("report:page-unit"), QLatin1String("cm")));
             }
 
-            //TODO Load page options
+            //! @todo Load page options
             else if (n == QLatin1String("report:page-style")) {
                 QString pagetype = it.firstChild().nodeValue();
 
@@ -235,7 +235,7 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
                     m_customHeight->setValue(KoUnit::parseValue(it.toElement().attribute(QLatin1String("report:custom-page-height"), QLatin1String(""))));
                     m_customWidth->setValue(KoUnit::parseValue(it.toElement().attribute(QLatin1String("report:custom-page-widtht"), QLatin1String(""))));
                 } else if (pagetype == QLatin1String("label")) {
-                    //TODO
+                    //! @todo
                 }
 
                 m_rightMargin->setValue(KoUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-right"), QLatin1String("1.0cm"))));
@@ -964,11 +964,10 @@ void KoReportDesigner::slotEditDelete()
     }
     activeScene()->selectedItems().clear();
 
-    //TODO temporary
-    //clears cut and copy lists to make sure we do not crash
-    //if weve deleted something in the list
-    //should really check if an item is in the list first
-    //and remove it.
+    /*! @todo temporary: clears cut and copy lists to make sure we do not crash
+     if weve deleted something in the list
+     should really check if an item is in the list first
+     and remove it. */
     m_sectionData->cut_list.clear();
     m_sectionData->copy_list.clear();
     if (modified) {
@@ -1041,8 +1040,8 @@ void KoReportDesigner::slotEditPaste(QGraphicsScene * canvas)
         canvas->clearSelection();
         m_sectionData->mouseAction = ReportWriterSectionData::MA_None;
 
-        //!TODO this code sucks :)
-        //!The setPos calls only work AFTER the name has been set ?!?!?
+        //! @todo this code sucks :)
+        //! The setPos calls only work AFTER the name has been set ?!?!?
 
         foreach(KoReportDesignerItemBase *item, m_sectionData->copy_list) {
             KoReportItemBase *obj = dynamic_cast<KoReportItemBase*>(item);
@@ -1227,10 +1226,10 @@ QList<QAction*> KoReportDesigner::itemActions(QActionGroup* group)
     qSort(actList.begin(), actList.end(), actionPriortyLessThan);
     int i = 0;
 
-    //TODO maybe this is a bit hackish
-    //It finds the first plugin based on the priority in userdata
-    //The lowest oriority a plugin can have is 10
-    //And inserts a separator before it.
+    /*! @todo maybe this is a bit hackish
+     It finds the first plugin based on the priority in userdata
+     The lowest oriority a plugin can have is 10
+     And inserts a separator before it. */
     bool sepInserted = false;
     foreach(QAction *a, actList) {
         ++i;

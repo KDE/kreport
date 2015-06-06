@@ -77,7 +77,7 @@ QByteArray KoReportItemImage::inlineImageData() const
     QBuffer buffer(&ba);
     buffer.open(QIODevice::ReadWrite);
     pixmap.save(&buffer, "PNG");   // writes pixmap into ba in PNG format,
-    //TODO should i remember the format used, or save as PNG as its lossless?
+    //! @todo should I remember the format used, or save as PNG as its lossless?
 
     QByteArray imageEncoded;
     KCodecs::base64Encode(buffer.buffer(), imageEncoded, true);

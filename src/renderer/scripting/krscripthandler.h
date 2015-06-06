@@ -28,7 +28,7 @@ class OROPage;
 #include "krscriptconstants.h"
 #include "KoReportData.h"
 
-//TODO Scripting
+//! @todo Scripting
 
 class KRScriptDebug;
 class KRScriptDraw;
@@ -78,7 +78,7 @@ private:
     QString m_source;
     KoReportReportData  *m_reportData;
 
-    //TODO IKross::Action* m_action;
+    //! @todo IKross::Action* m_action;
 
     QMap<QString, QVariant> m_groups;
     QMap<KRSectionData*, Scripting::Section*> m_sectionMap;

@@ -77,7 +77,7 @@ KoReportReportData::KoReportReportData(const QDomElement & elemSource, QObject *
             } else if (pagetype == QLatin1String("label")) {
                 page.setLabelType(elemThis.firstChild().nodeValue());
             }
-            //@todo add config for default margins or add within templates support
+            //! @todo add config for default margins or add within templates support
             page.setMarginBottom(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-bottom"), QLatin1String("1.0cm")))) * dpiY);
             page.setMarginTop(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-top"), QLatin1String("1.0cm")))) * dpiY);
             page.setMarginLeft(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-left"), QLatin1String("1.0cm")))) * dpiX);
