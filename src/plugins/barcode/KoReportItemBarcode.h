@@ -61,7 +61,7 @@ protected:
     qreal m_minWidthData;
     qreal m_minWidthTotal;
     qreal m_minHeight;
-    
+
 private:
     virtual void createProperties();
 

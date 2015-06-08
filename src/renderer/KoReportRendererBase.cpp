@@ -56,7 +56,7 @@ KoReportRendererBase* KoReportRendererFactory::createInstance(const QString& key
 #if 0
     if (lowerKey == QLatin1String("ods")) {
         return new KoReportKSpreadRenderer();
-    } 
+    }
 #endif
     if (lowerKey == QLatin1String("htmltable")) {
         return new KoReportHTMLTableRenderer();

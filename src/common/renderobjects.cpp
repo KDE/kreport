@@ -133,7 +133,7 @@ void OROPage::addPrimitive(OROPrimitive* p, bool atBeginning, bool notify)
     } else {
         m_primitives.append(p);
     }
-    
+
     if (notify) {
         document()->notifyChange(page());
     }
@@ -244,8 +244,8 @@ OROTextBox::OROTextBox()
     m_lineStyle.lineColor = Qt::black;
     m_lineStyle.weight = 0;
     m_lineStyle.style = Qt::NoPen;
-    
-    m_requiresPostProcessing = false; 
+
+    m_requiresPostProcessing = false;
 
     m_wordWrap = false;
     m_canGrow = false;

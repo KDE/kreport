@@ -44,7 +44,7 @@ void KoReportDesignerItemBarcode::init(QGraphicsScene *scene, KoReportDesigner *
     KoReportDesignerItemRectBase::init(&m_pos, &m_size, m_set, d);
     setMaxLength(5);
     setZValue(Z);
-    
+
     updateRenderText(m_itemValue->value().toString().isEmpty() ?  m_format->value().toString() : QString(), m_itemValue->value().toString(), QString());
 
 }
@@ -162,7 +162,7 @@ void KoReportDesignerItemBarcode::slotPropertyChanged(KPropertySet &s, KProperty
             m_oldName = p.value().toString();
         }
     }
-    
+
     updateRenderText(m_itemValue->value().toString().isEmpty() ?  m_format->value().toString() : QString(), m_itemValue->value().toString(), QString());
 
     KoReportDesignerItemRectBase::propertyChanged(s, p);

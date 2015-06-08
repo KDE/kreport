@@ -55,7 +55,7 @@ protected:
     KRLineStyleData lineStyle();
     unsigned int weight() const;
     void setWeight(int w);
-    
+
 private:
     virtual void createProperties();
 

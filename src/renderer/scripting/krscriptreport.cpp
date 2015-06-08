@@ -59,7 +59,7 @@ QObject* Report::objectByName(const QString &n)
     QList<KoReportItemBase *>obs = m_reportData->objects();
     foreach(KoReportItemBase *o, obs) {
         if (o->entityName() == n) {
-                    
+
             if (o->typeName() == QLatin1String("line")) {
                         return new Scripting::Line(dynamic_cast<KoReportItemLine*>(o));
             }

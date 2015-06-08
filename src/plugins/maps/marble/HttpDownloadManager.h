@@ -37,7 +37,7 @@ class StoragePolicy;
  * limit for pending jobs.  it also takes care that the job queue
  * won't be polluted by jobs that timed out already.
  */
-class MARBLE_EXPORT HttpDownloadManager : public QObject 
+class MARBLE_EXPORT HttpDownloadManager : public QObject
 {
     Q_OBJECT
 
@@ -99,7 +99,7 @@ class MARBLE_EXPORT HttpDownloadManager : public QObject
 
  private Q_SLOTS:
     void finishJob( const QByteArray& data, const QString& destinationFileName,
-		    const QString& id );
+            const QString& id );
     void requeue();
     void startRetryTimer();
 

@@ -140,7 +140,7 @@ void KoReportDesignerItemChart::buildXML(QDomDocument & doc, QDomElement & paren
 }
 
 void KoReportDesignerItemChart::slotPropertyChanged(KPropertySet &s, KProperty &p)
-{       
+{
     if (p.name() == "Name") {
         //For some reason p.oldValue returns an empty string
         if (!m_reportDesigner->isEntityNameUnique(p.value().toString(), this)) {
@@ -174,7 +174,7 @@ void KoReportDesignerItemChart::slotPropertyChanged(KPropertySet &s, KProperty &
         }
     } else if (p.name() == "chart-type") {
         if (m_chartWidget) {
-	    populateData();
+        populateData();
             //m_chartWidget->setType((KDChart::Widget::ChartType) m_chartType->value().toInt());
         }
     } else if (p.name() == "chart-sub-type") {

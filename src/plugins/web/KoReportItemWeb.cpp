@@ -1,7 +1,7 @@
 /* This file is part of the KDE project
    Copyright Shreya Pandit <shreya@shreyapandit.com>
    Copyright 2011 Adam Pigg <adam@piggz.co.uk>
-   
+
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
    License as published by the Free Software Foundation; either
@@ -89,24 +89,24 @@ void KoReportItemWeb::loadFinished(bool)
         m_webPage->setViewportSize(m_size.toScene().toSize());
         m_webPage->mainFrame()->setScrollBarPolicy(Qt::Horizontal, Qt::ScrollBarAlwaysOff);
         m_webPage->mainFrame()->setScrollBarPolicy(Qt::Vertical, Qt::ScrollBarAlwaysOff);
-        
+
         QPainter p(pic->picture());
-        
+
         m_webPage->mainFrame()->render(&p);
-        
+
         QPointF pos = m_pos.toScene();
         QSizeF size = m_size.toScene();
-        
+
         pos += m_targetOffset;
-        
+
         pic->setPosition(pos);
         pic->setSize(size);
         if (m_targetPage) m_targetPage->addPrimitive(pic, false, true);
-        
+
         OROPicture *p2 = dynamic_cast<OROPicture*>(pic->clone());
         p2->setPosition(m_pos.toPoint());
         if (m_targetSection) m_targetSection->addPrimitive(p2);
-    
+
         m_rendering = false;
         emit(finishedRendering());
     }
@@ -124,7 +124,7 @@ int KoReportItemWeb::renderSimpleData(OROPage *page, OROSection *section, const 
     m_targetPage = page;
     m_targetSection = section;
     m_targetOffset = offset;
-    
+
     QUrl url = QUrl::fromUserInput(data.toString());
     if (url.isValid()) {
         m_webPage->mainFrame()->load(url);

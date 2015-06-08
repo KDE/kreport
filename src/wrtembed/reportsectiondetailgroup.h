@@ -64,7 +64,7 @@ public:
 
     void buildXML(QDomDocument & doc, QDomElement & section) const;
     void initFromXML( const QDomElement &element );
-    
+
 protected:
     QString m_column;
 

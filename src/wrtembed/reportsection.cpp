@@ -233,8 +233,8 @@ void ReportSection::slotPropertyChanged(KPropertySet &s, KProperty &p)
     }
 
     if (p.name() == "height") {
-	m_scene->setSceneRect(0, 0, m_scene->width(), POINT_TO_INCH(p.value().toDouble()) * m_dpiY);
-	slotResizeBarDragged(0);
+    m_scene->setSceneRect(0, 0, m_scene->width(), POINT_TO_INCH(p.value().toDouble()) * m_dpiY);
+    slotResizeBarDragged(0);
     }
 
     if (m_reportDesigner)

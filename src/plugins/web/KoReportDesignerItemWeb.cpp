@@ -1,7 +1,7 @@
 /* This file is part of the KDE project
    Copyright Shreya Pandit <shreya@shreyapandit.com>
    Copyright 2011 Adam Pigg <adam@piggz.co.uk>
-   
+
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
    License as published by the Free Software Foundation; either
@@ -81,12 +81,12 @@ void KoReportDesignerItemWeb::paint(QPainter* painter, const QStyleOptionGraphic
 {
     Q_UNUSED(option);
     Q_UNUSED(widget);
-    
+
     painter->drawRect(QGraphicsRectItem::rect());
     painter->drawText(rect(), 0, dataSourceAndObjectTypeName(itemDataSource(), "web-view"));
-    
+
     painter->setBackgroundMode(Qt::TransparentMode);
-    
+
     drawHandles(painter);
 }
 

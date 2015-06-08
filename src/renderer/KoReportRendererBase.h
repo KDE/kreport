@@ -43,9 +43,9 @@ class KREPORT_EXPORT KoReportRendererBase
 {
     public:
         KoReportRendererBase();
-        
+
         virtual ~KoReportRendererBase();
-        
+
         //! Render the page of the given document within the given context.
         //! If page == -1, renders the entire document.
         virtual bool render(const KoReportRendererContext& context, ORODocument *document, int page = -1) = 0;

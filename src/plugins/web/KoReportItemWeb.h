@@ -1,7 +1,7 @@
 /* This file is part of the KDE project
    Copyright Shreya Pandit <shreya@shreyapandit.com>
    Copyright 2011 Adam Pigg <adam@piggz.co.uk>
-   
+
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
    License as published by the Free Software Foundation; either
@@ -64,7 +64,7 @@ private:
 
 protected:
     virtual void createProperties();
-    
+
     KProperty *m_controlSource;
     QWebPage *m_webPage;
 

@@ -1,6 +1,6 @@
 /* This file is part of the KDE project
   Copyright (C) 2014 Adam Pigg <adam@piggz.co.uk>
- 
+
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Library General Public
   License as published by the Free Software Foundation; either
@@ -33,25 +33,25 @@ QRectF BoundedTextItem::boundingRect() const
     if (parentItem()) {
         return parentItem()->boundingRect();
     }
-    
+
     return QGraphicsTextItem::boundingRect();
 }
 
-void BoundedTextItem::paint( QPainter *painter, const QStyleOptionGraphicsItem *o, QWidget *w) 
+void BoundedTextItem::paint( QPainter *painter, const QStyleOptionGraphicsItem *o, QWidget *w)
 {
     QColor bg = m_backgroundColor.isValid() ? m_backgroundColor : o->palette.base().color();
     bg.setAlphaF(m_backgroundOpacity * 0.01);
-    
+
     QColor fc = m_foregroundColor.isValid() ? m_foregroundColor : o->palette.text().color();
     painter->setBrush(bg);
     painter->setPen(fc);
 
     painter->drawRect(boundingRect());
-    
+
     QStyleOptionGraphicsItem opt(*o);
     opt.state &= ~QStyle::State_HasFocus;
     QGraphicsTextItem::paint(painter, &opt, w);
-}  
+}
 
 void BoundedTextItem::setBackgroudColor(const QColor& bc)
 {

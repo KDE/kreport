@@ -58,7 +58,7 @@ QFile::FileError KoSimpleOdsDocument::saveDocument(const QString& path)
 
     if (!createContent(&oasisStore)) {
         delete m_store;
-	m_store = 0;
+    m_store = 0;
         return QFile::WriteError;
     }
 

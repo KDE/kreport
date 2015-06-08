@@ -37,7 +37,7 @@ class KoSimpleOdsSheet
         void setName(const QString &name);
 
         void saveSheet(KoXmlWriter *);
-        
+
     private:
         QString m_name;
         QStandardItemModel m_model;

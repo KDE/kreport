@@ -67,9 +67,9 @@ public:
 #ifdef KREPORT_SCRIPTING
     void initEngine();
 #endif
-    
+
     KoReportASyncItemManager* asyncManager;
-    
+
 private Q_SLOTS:
     void asyncItemsFinished();
 

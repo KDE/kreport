@@ -64,7 +64,7 @@ public Q_SLOTS:
     void newPage();
 
 Q_SIGNALS:
-    void groupChanged(const QString& whereCondition);    
+    void groupChanged(const QString& whereCondition);
 
 private:
     KRScriptConstants *m_constants;

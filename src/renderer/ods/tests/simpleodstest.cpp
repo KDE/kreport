@@ -39,9 +39,9 @@ int main(int argc, char** argv)
     sheet->addCell(1,4,new KoSimpleOdsCell("1"));
     sheet->addCell(2,5,new KoSimpleOdsCell("10"));
     sheet->addCell(3,6,new KoSimpleOdsCell("100"));
-    
+
     ods.addSheet(sheet);
-    
+
     ods.saveDocument(QDir::homePath() + "/simpleodstestfile.ods");
     return 0;
 }

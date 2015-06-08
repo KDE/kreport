@@ -225,7 +225,7 @@ int KoReportItemBarcode::renderSimpleData(OROPage *page, OROSection *section, co
     } else {
         val = data.toString();
     }
-    
+
     if (page) {
         QByteArray fmt = m_format->value().toByteArray();
         int align = alignment();

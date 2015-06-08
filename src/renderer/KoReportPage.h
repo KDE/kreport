@@ -43,12 +43,12 @@ public:
 
 public Q_SLOTS:
     virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = 0);
-    
+
     void pageUpdated(int pageNo);
 
 private Q_SLOTS:
     void renderCurrentPage();
-    
+
 private:
     ORODocument *m_reportDocument;
     int m_page;

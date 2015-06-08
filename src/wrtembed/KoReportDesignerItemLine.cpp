@@ -188,10 +188,10 @@ void KoReportDesignerItemLine::mouseMoveEvent(QGraphicsSceneMouseEvent * event)
 
     switch (m_grabAction) {
     case 1:
-	m_start.setScenePos(QPointF(x,y));
+    m_start.setScenePos(QPointF(x,y));
         break;
     case 2:
-	m_end.setScenePos(QPointF(x,y));
+    m_end.setScenePos(QPointF(x,y));
         break;
     default:
         QPointF d = mapToItem(this, dynamic_cast<ReportScene*>(scene())->gridPoint(event->scenePos())) - mapToItem(this, dynamic_cast<ReportScene*>(scene())->gridPoint(event->lastScenePos()));

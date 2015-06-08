@@ -41,14 +41,14 @@ void KoReportASyncItemManager::addItem(KoReportASyncItemBase* item, OROPage* pag
     rdata->offset = offset;
     rdata->data = data;
     rdata->script = script;
-    
+
     m_renderList.enqueue(rdata);
-    
+
     //Just connect the first instance
     if (!m_itemList.contains(item)) {
         m_itemList.append(item);
         connect(item, SIGNAL(finishedRendering()), this, SLOT(itemFinished()));
-    }    
+    }
     //kreportDebug() << m_renderList.count();
 }
 

@@ -35,9 +35,9 @@ public:
     KoReportDesignerItemWeb(KoReportDesigner *rw, QGraphicsScene *scene, const QPointF &pos);
     KoReportDesignerItemWeb(QDomNode &element, KoReportDesigner *rw, QGraphicsScene *scene);
     virtual ~KoReportDesignerItemWeb();
-    
+
     void init(QGraphicsScene *scene);
-    
+
     virtual void buildXML(QDomDocument &doc, QDomElement &parent);
     virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget);
     virtual KoReportDesignerItemWeb *clone();

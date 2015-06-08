@@ -61,7 +61,7 @@ public:
 
     void setSectionCursor(const QCursor&);
     void unsetSectionCursor();
-    
+
 protected:
     QString m_query;
 

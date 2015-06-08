@@ -69,7 +69,7 @@ public Q_SLOTS:
 
     QSizeF size();
     void setSize(const QSizeF&);
-    
+
 private:
     KoReportItemField *m_field;
 

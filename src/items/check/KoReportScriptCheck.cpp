@@ -20,7 +20,7 @@
 
 namespace Scripting
 {
-    
+
 Check::Check(KoReportItemCheck *c)
 {
     m_check = c;
