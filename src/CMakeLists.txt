@@ -215,47 +215,60 @@ install(FILES "${CMAKE_CURRENT_BINARY_DIR}/kreport_version.h"
         COMPONENT Devel)
 
 ecm_generate_headers(kreport_FORWARDING_HEADERS
+    REQUIRED_HEADERS kreport_HEADERS
     ORIGINAL CAMELCASE
     PREFIX kreport
+    RELATIVE common
     HEADER_NAMES
-        common/KoPageFormat
-        common/KoReportData
-        common/KoReportItemBase
-        common/KoReportItemLine
-        common/KReportPluginMetaData
-        common/KoReportPluginManager
-        common/KoReportPluginInterface
-        common/KoUnit
-        common/krsize
-        common/krpos
-        common/krreportdata
-        common/reportpageoptions
-        common/renderobjects
-        common/KoReportASyncItemBase
+        KoPageFormat
+        KoReportData
+        KoReportItemBase
+        KoReportItemLine
+        KReportPluginMetaData
+        KoReportPluginManager
+        KoReportPluginInterface
+        KoUnit
+        krsize
+        krpos
+        krreportdata
+        reportpageoptions
+        renderobjects
+        KoReportASyncItemBase
+)
 
-        renderer/KoReportPage
-        renderer/KoReportRendererBase
-        renderer/KoReportPreRenderer
-
-        wrtembed/KoZoomMode
-        wrtembed/reportsectiondetail
-        wrtembed/reportsection
-        wrtembed/KoDpi
-        wrtembed/KoZoomHandler
-        wrtembed/KoReportDesignerItemBase
-        wrtembed/reportsectiondetailgroup
-        wrtembed/KoRuler
-        wrtembed/KoViewConverter
-        wrtembed/KoReportDesignerItemRectBase
-        wrtembed/KoReportDesigner
+ecm_generate_headers(kreport_FORWARDING_HEADERS
     REQUIRED_HEADERS kreport_HEADERS
+    ORIGINAL CAMELCASE
+    PREFIX kreport
+    RELATIVE renderer
+    HEADER_NAMES
+        KoReportPage
+        KoReportRendererBase
+        KoReportPreRenderer
+)
+
+ecm_generate_headers(kreport_FORWARDING_HEADERS
+    REQUIRED_HEADERS kreport_HEADERS
+    ORIGINAL CAMELCASE
+    PREFIX kreport
+    RELATIVE wrtembed
+    HEADER_NAMES
+        KoZoomMode
+        reportsectiondetail
+        reportsection
+        KoDpi
+        KoZoomHandler
+        KoReportDesignerItemBase
+        reportsectiondetailgroup
+        KoRuler
+        KoViewConverter
+        KoReportDesignerItemRectBase
+        KoReportDesigner
 )
 
 install(
     FILES
         ${kreport_HEADERS}
-        ${PROJECT_BINARY_DIR}/src/kreport_export.h
-        ${PROJECT_BINARY_DIR}/src/config-kreport.h
     DESTINATION ${INCLUDE_INSTALL_DIR}/KReport/kreport
     COMPONENT Devel
 )
@@ -263,6 +276,8 @@ install(
 install(
     FILES
         ${kreport_FORWARDING_HEADERS}
-    DESTINATION ${INCLUDE_INSTALL_DIR}/KReport/KReport
+        ${PROJECT_BINARY_DIR}/src/kreport_export.h
+        ${PROJECT_BINARY_DIR}/src/config-kreport.h
+    DESTINATION ${INCLUDE_INSTALL_DIR}/KReport
     COMPONENT Devel
 )
