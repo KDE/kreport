@@ -49,6 +49,7 @@ private Q_SLOTS:
     void renderCurrentPage();
 
 private:
+    Q_DISABLE_COPY(KoReportPage)
     class Private;
     Private * const d;
 };
