@@ -38,7 +38,10 @@ public:
         , page(0)
     {}
 
-    ~Private() {}
+    ~Private()
+    {
+        delete renderer;
+    }
 
     ORODocument *reportDocument;
     int page;
@@ -87,7 +90,6 @@ KoReportPage::KoReportPage(QWidget *parent, ORODocument *document)
 
 KoReportPage::~KoReportPage()
 {
-    delete d->renderer;
     delete d;
 }
 
