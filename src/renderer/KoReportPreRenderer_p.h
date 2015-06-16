@@ -24,6 +24,8 @@
 #include "renderobjects.h"
 #include "KoReportASyncItemManager.h"
 
+#include <QMap>
+
 /*! This class is the private class that houses all the internal
   variables so we can provide a cleaner interface to the user
   without presenting to them things that they don't need to see
@@ -53,6 +55,10 @@ public:
 
     KoReportData* m_kodata;
     QList<OROTextBox*> m_postProcText;
+
+#ifdef KREPORT_SCRIPTING
+    QMap<QString, QObject*> m_scriptObjects;
+#endif
 
     void createNewPage();
     qreal finishCurPage(bool = false);

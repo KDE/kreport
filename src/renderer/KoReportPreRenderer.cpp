@@ -493,7 +493,7 @@ ORODocument* KoReportPreRenderer::generate()
 
     //Loop through all abjects that have been registered, and register them with the script handler
     if (d->m_scriptHandler) {
-        QMapIterator<QString, QObject*> i(m_scriptObjects);
+        QMapIterator<QString, QObject*> i(d->m_scriptObjects);
         while (i.hasNext()) {
             i.next();
             d->m_scriptHandler->registerScriptObject(i.value(), i.key());
@@ -647,7 +647,7 @@ bool KoReportPreRenderer::isValid() const
 void KoReportPreRenderer::registerScriptObject(QObject* obj, const QString& name)
 {
     //kreportDebug() << name;
-    m_scriptObjects[name] = obj;
+    d->m_scriptObjects[name] = obj;
 }
 #endif
 

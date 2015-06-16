@@ -19,9 +19,6 @@
 #ifndef __KOREPORTPRERENDERER_H__
 #define __KOREPORTPRERENDERER_H__
 
-#include <QString>
-#include <QMap>
-
 #include "kreport_export.h"
 #include "krscripthandler.h"
 
@@ -30,6 +27,7 @@ class ORODocument;
 class KoReportData;
 class QDomElement;
 class QObject;
+class QString;
 
 //
 // ORPreRender
@@ -60,12 +58,11 @@ public:
 
     const KoReportReportData *reportData() const;
 
-protected:
+private:
+    bool setDocument(const QDomElement &document);
 
 private:
     KoReportPreRendererPrivate *const d;
-    bool setDocument(const QDomElement &document);
-    QMap<QString, QObject*> m_scriptObjects;
 };
 
 #endif // __KOREPORTPRERENDERER_H__
