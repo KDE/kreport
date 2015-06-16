@@ -233,6 +233,7 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
         krsize
         krpos
         krreportdata
+        krsectiondata
         reportpageoptions
         renderobjects
         KoReportASyncItemBase
