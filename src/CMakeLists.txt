@@ -251,6 +251,16 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
     REQUIRED_HEADERS kreport_HEADERS
     ORIGINAL CAMELCASE
     PREFIX kreport
+    RELATIVE renderer/scripting
+    HEADER_NAMES
+        krscripthandler
+        krscriptdraw
+)
+
+ecm_generate_headers(kreport_FORWARDING_HEADERS
+    REQUIRED_HEADERS kreport_HEADERS
+    ORIGINAL CAMELCASE
+    PREFIX kreport
     RELATIVE wrtembed
     HEADER_NAMES
         KoZoomMode
