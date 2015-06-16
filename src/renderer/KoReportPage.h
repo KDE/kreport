@@ -18,12 +18,11 @@
 #ifndef KOREPORTPAGE_H
 #define KOREPORTPAGE_H
 
+#include "kreport_export.h"
+
 #include <QGraphicsRectItem>
+#include <QObject>
 
-#include "KoReportRendererBase.h"
-
-class QTimer;
-class QPixmap;
 class ORODocument;
 
 /**
@@ -50,14 +49,8 @@ private Q_SLOTS:
     void renderCurrentPage();
 
 private:
-    ORODocument *m_reportDocument;
-    int m_page;
-    bool m_repaint;
-    QPixmap *m_pixmap;
-    KoReportRendererFactory m_factory;
-    KoReportRendererBase *m_renderer;
-
-    QTimer *m_renderTimer;
+    class Private;
+    Private * const d;
 };
 
 #endif
