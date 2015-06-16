@@ -1,0 +1,1 @@
+#include <config-kreport.h>

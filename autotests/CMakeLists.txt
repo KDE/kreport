@@ -19,3 +19,5 @@ endmacro(KREPORT_UNIT_TESTS)
 kreport_unit_tests(
     PluginsTest
 )
+
+add_subdirectory(headers)

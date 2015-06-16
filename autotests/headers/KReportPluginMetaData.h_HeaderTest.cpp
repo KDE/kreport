@@ -1,0 +1,1 @@
+#include <kreport/KReportPluginMetaData.h>
