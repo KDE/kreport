@@ -17,6 +17,8 @@
 
 #include "KoReportPage.h"
 
+#include <KoReportRendererBase.h>
+
 #include "common/KoPageFormat.h"
 #include "common/KoUnit.h"
 #include "common/renderobjects.h"
@@ -27,81 +29,101 @@
 #include <QPainter>
 #include <QTimer>
 
+//! @internal
+class KoReportPage::Private
+{
+public:
+    explicit Private(ORODocument *document)
+        : reportDocument(document)
+        , page(0)
+    {}
+
+    ~Private()
+    {
+        delete renderer;
+    }
+
+    ORODocument *reportDocument;
+    int page;
+    QPixmap pixmap;
+    KoReportRendererFactory factory;
+    KoReportRendererBase *renderer;
+
+    QTimer renderTimer;
+};
+
+
 KoReportPage::KoReportPage(QWidget *parent, ORODocument *document)
         : QObject(parent), QGraphicsRectItem()
+        , d(new Private(document))
 {
     //! @todo setAttribute(Qt::WA_NoBackground);
     //kreportDebug() << "CREATED PAGE";
-    m_reportDocument = document;
-    m_page = 0;
     int pageWidth = 0;
     int pageHeight = 0;
 
-    if (m_reportDocument) {
-        QString pageSize = m_reportDocument->pageOptions().getPageSize();
+    if (d->reportDocument) {
+        QString pageSize = d->reportDocument->pageOptions().getPageSize();
 
 
         if (pageSize == QLatin1String("Custom")) {
             // if this is custom sized sheet of paper we will just use those values
-            pageWidth = (int)(m_reportDocument->pageOptions().getCustomWidth());
-            pageHeight = (int)(m_reportDocument->pageOptions().getCustomHeight());
+            pageWidth = (int)(d->reportDocument->pageOptions().getCustomWidth());
+            pageHeight = (int)(d->reportDocument->pageOptions().getCustomHeight());
         } else {
             // lookup the correct size information for the specified size paper
-            pageWidth = m_reportDocument->pageOptions().widthPx();
-            pageHeight = m_reportDocument->pageOptions().heightPx();
+            pageWidth = d->reportDocument->pageOptions().widthPx();
+            pageHeight = d->reportDocument->pageOptions().heightPx();
         }
     }
     setRect(0,0,pageWidth, pageHeight);
     //kreportDebug() << "PAGE IS " << pageWidth << "x" << pageHeight;
-    m_pixmap = new QPixmap(pageWidth, pageHeight);
-    m_renderer = m_factory.createInstance(QLatin1String("screen"));
-    connect(m_reportDocument, SIGNAL(updated(int)), this, SLOT(pageUpdated(int)));
+    d->pixmap = QPixmap(pageWidth, pageHeight);
+    d->renderer = d->factory.createInstance(QLatin1String("screen"));
+    connect(d->reportDocument, SIGNAL(updated(int)), this, SLOT(pageUpdated(int)));
 
-    m_renderTimer = new QTimer();
-    m_renderTimer->setSingleShot(true);
-    connect(m_renderTimer, SIGNAL(timeout()), this, SLOT(renderCurrentPage()));
+    d->renderTimer.setSingleShot(true);
+    connect(&d->renderTimer, SIGNAL(timeout()), this, SLOT(renderCurrentPage()));
 
     renderPage(1);
 }
 
 KoReportPage::~KoReportPage()
 {
-    delete m_renderer;
-    delete m_pixmap;
-    delete m_renderTimer;
+    delete d;
 }
 
 void KoReportPage::paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget)
 {
     Q_UNUSED(option);
     Q_UNUSED(widget);
-    painter->drawPixmap(QPoint(0, 0), *m_pixmap);
+    painter->drawPixmap(QPoint(0, 0), d->pixmap);
 }
 
 void KoReportPage::renderPage(int page)
 {
-    m_page = page - 1;
-    m_pixmap->fill();
-    QPainter qp(m_pixmap);
-    if (m_reportDocument) {
+    d->page = page - 1;
+    d->pixmap.fill();
+    QPainter qp(&d->pixmap);
+    if (d->reportDocument) {
         KoReportRendererContext cxt;
         cxt.painter = &qp;
-        m_renderer->render(cxt, m_reportDocument, m_page);
+        d->renderer->render(cxt, d->reportDocument, d->page);
     }
     update();
 }
 
 void KoReportPage::pageUpdated(int pageNo)
 {
-    //kreportDebug() << pageNo << m_page;
+    //kreportDebug() << pageNo << d->page;
     //Refresh this page if it changes
-    if (pageNo == m_page) {
+    if (pageNo == d->page) {
         //kreportDebug() << "Current page updated";
-        m_renderTimer->start(100);
+        d->renderTimer.start(100);
     }
 }
 
 void KoReportPage::renderCurrentPage()
 {
-    renderPage(m_page + 1);
+    renderPage(d->page + 1);
 }
