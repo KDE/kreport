@@ -22,15 +22,14 @@
 
 #include <QGraphicsRectItem>
 
-#include <KPropertySet>
-
 #include "KoReportDesignerItemBase.h"
-#include "KoUnit.h"
 #include "kreport_export.h"
 
 class KoReportDesigner;
 class KRPos;
 class KRSize;
+
+class KPropertySet;
 
 const int KOREPORT_ITEM_RECT_DEFAULT_WIDTH = 100;
 const int KOREPORT_ITEM_RECT_DEFAULT_HEIGHT = 100;

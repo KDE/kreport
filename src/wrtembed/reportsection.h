@@ -22,29 +22,26 @@
 
 #include <QFrame>
 #include <QLabel>
-#include <QVBoxLayout>
-#include <QMouseEvent>
-#include <QGraphicsScene>
 
-#include <KPropertySet>
-
+#include "kreport_export.h"
 #include "krsectiondata.h"
-#include "reportscene.h"
-
-typedef QList<QGraphicsItem*> QGraphicsItemList;
 
 // forward declarations
-class QLabel;
 class QDomNode;
 class QDomDocument;
 class QDomElement;
+class QGraphicsItem;
+class QMouseEvent;
+typedef QList<QGraphicsItem*> QGraphicsItemList;
+
+class KPropertySet;
 
 class KoReportDesigner;
 class ReportSceneView;
-class QVBoxLayout;
 class ReportResizeBar;
 class KoRuler;
 class ReportSectionTitle;
+class ReportScene;
 
 //
 // Class ReportSection

@@ -22,12 +22,14 @@
 #define KREPORTPLUGININTERFACE_H
 
 #include "config-kreport.h"
-#include "wrtembed/KoReportDesigner.h"
+#include "kreport_export.h"
 
 #include <KPluginFactory>
 
 class QGraphicsScene;
+class QDomNode;
 class KReportPluginMetaData;
+class KoReportDesigner;
 
 //! Implementation of report plugin's entry point
 #define KREPORT_PLUGIN_FACTORY(class_name, name) \

@@ -19,6 +19,9 @@
 #ifndef KORULER_P_H
 #define KORULER_P_H
 
+#include "KoUnit.h"
+#include <QWidget>
+
 class RulerTabChooser : public QWidget
 {
 public:

@@ -21,6 +21,8 @@
 
 #include <KPropertySet>
 
+#include <QDomNode>
+
 KoReportItemLine::KoReportItemLine()
 {
     createProperties();

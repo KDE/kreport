@@ -32,6 +32,7 @@
 #include "scripting/krscripthandler.h"
 #endif
 
+#include <QDomElement>
 #include <QScreen>
 #include <QApplication>
 #include "kreport_debug.h"

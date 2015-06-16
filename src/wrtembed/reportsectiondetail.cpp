@@ -20,6 +20,9 @@
 #include "reportsectiondetailgroup.h"
 #include "reportsection.h"
 
+#include "KoReportDesigner.h"
+
+#include <QVBoxLayout>
 #include <QDomDocument>
 #include "kreport_debug.h"
 

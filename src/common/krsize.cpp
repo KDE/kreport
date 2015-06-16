@@ -16,6 +16,9 @@
  */
 
 #include "krsize.h"
+
+#include <KProperty>
+
 #include <klocale.h>
 #include <QScreen>
 #include <QApplication>

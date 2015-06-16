@@ -17,6 +17,8 @@
 
 #include "krscriptbarcode.h"
 
+#include <KProperty>
+
 namespace Scripting
 {
 

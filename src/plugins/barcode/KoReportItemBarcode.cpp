@@ -22,6 +22,8 @@
 
 #include <klocalizedstring.h>
 
+#include <QDomNode>
+
 #include "kreportplugin_debug.h"
 
 #include "barcodes.h"

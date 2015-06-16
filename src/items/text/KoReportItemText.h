@@ -22,6 +22,10 @@
 #include "krpos.h"
 #include "krsize.h"
 
+#include <KProperty>
+
+class QDomNode;
+
 namespace Scripting
 {
 class Text;

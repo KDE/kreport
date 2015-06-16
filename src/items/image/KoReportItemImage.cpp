@@ -25,6 +25,7 @@
 #include <klocalizedstring.h>
 
 #include <QBuffer>
+#include <QDomNodeList>
 
 
 KoReportItemImage::KoReportItemImage()

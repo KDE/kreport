@@ -24,10 +24,15 @@
 #include "config-kreport.h"
 #include "kreport_export.h"
 
-#include <QAction>
+#include <QList>
+#include <QObject>
 
 class KReportPluginMetaData;
 class KoReportPluginInterface;
+
+class QStringList;
+class QAction;
+class QString;
 
 class KREPORT_EXPORT KoReportPluginManager : public QObject
 {

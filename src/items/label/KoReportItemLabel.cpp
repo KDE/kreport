@@ -25,6 +25,7 @@
 
 #include <QFontDatabase>
 #include <QPalette>
+#include <QDomNodeList>
 
 KoReportItemLabel::KoReportItemLabel()
 {

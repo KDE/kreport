@@ -23,16 +23,13 @@
 #ifndef koRuler_h
 #define koRuler_h
 
+#include "kreport_export.h"
 #include <QWidget>
 #include <QTextOption>
 
-#include "KoUnit.h"
-
-class QPaintEvent;
-
 class KoViewConverter;
-class KoCanvasBase;
 class KoRulerPrivate;
+class KoUnit;
 
 /**
  * Decorator widget to draw a single ruler around a canvas.

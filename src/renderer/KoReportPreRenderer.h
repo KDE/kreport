@@ -19,7 +19,6 @@
 #ifndef __KOREPORTPRERENDERER_H__
 #define __KOREPORTPRERENDERER_H__
 
-#include <QObject>
 #include <QString>
 #include <QMap>
 
@@ -30,6 +29,7 @@ class KoReportPreRendererPrivate;
 class ORODocument;
 class KoReportData;
 class QDomElement;
+class QObject;
 
 //
 // ORPreRender

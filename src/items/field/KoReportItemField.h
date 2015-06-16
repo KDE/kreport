@@ -21,6 +21,10 @@
 #include "KoReportItemBase.h"
 #include "krsize.h"
 
+#include <KProperty>
+
+class QDomNode;
+
 namespace Scripting
 {
 class Field;

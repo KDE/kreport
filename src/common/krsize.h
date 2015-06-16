@@ -19,10 +19,10 @@
 
 #include <QSizeF>
 
-#include <KProperty>
-
 #include "KoUnit.h"
 #include "kreport_export.h"
+
+class KProperty;
 
 /**
 */

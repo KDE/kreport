@@ -20,15 +20,17 @@
 #ifndef KREPORTVIEW_H
 #define KREPORTVIEW_H
 
-#include <QDomDocument>
 #include <KoReportRendererBase.h>
-#include <QGraphicsView>
+#include <QWidget>
 
 #include "kreport_export.h"
 
 class KoReportPreRenderer;
 class ORODocument;
 class KoReportPage;
+
+class QGraphicsView;
+class QGraphicsScene;
 
 /**
  * @brief Provides a simple widget for viewing a rendered report on screen

@@ -20,13 +20,14 @@
 #define KRDETAILSECTIONDATA_H
 
 #include <QObject>
-#include <QDomElement>
 
 #include "KoReportData.h"
 
 class KRSectionData;
 class ORDetailGroupSectionData;
 class KoReportReportData;
+
+class QDomElement;
 
 /**
 */

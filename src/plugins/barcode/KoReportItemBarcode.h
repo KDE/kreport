@@ -22,6 +22,8 @@
 #include <krpos.h>
 #include <krsize.h>
 
+class QDomNode;
+
 namespace Scripting
 {
 class Barcode;

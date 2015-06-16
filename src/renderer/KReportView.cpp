@@ -27,6 +27,7 @@
 #include <QPainter>
 #include <QPrintDialog>
 #include <QPrinter>
+#include <QGraphicsView>
 #include <QGraphicsScene>
 #include <QScrollBar>
 

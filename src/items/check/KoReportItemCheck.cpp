@@ -25,6 +25,7 @@
 #include <KPropertySet>
 
 #include <QPalette>
+#include <QDomNodeList>
 
 KoReportItemCheck::KoReportItemCheck()
 {

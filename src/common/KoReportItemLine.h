@@ -23,6 +23,8 @@
 #include "krsize.h"
 #include "kreport_export.h"
 
+class QDomNode;
+
 namespace Scripting
 {
 class Line;

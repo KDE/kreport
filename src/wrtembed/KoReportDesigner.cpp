@@ -48,6 +48,7 @@
 #include <QPointer>
 #include <QIcon>
 #include <QAction>
+#include <QMouseEvent>
 #include "kreport_debug.h"
 
 //! Also add public method for runtime?

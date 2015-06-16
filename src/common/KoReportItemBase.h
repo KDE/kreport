@@ -24,7 +24,6 @@
 #include "krsize.h"
 
 #include <QObject>
-#include <QDomElement>
 #include <QFont>
 #include <QColor>
 
@@ -41,6 +40,8 @@ class KRScriptHandler;
 
 class KProperty;
 class KPropertySet;
+
+class QDomElement;
 
 class KRTextStyleData
 {

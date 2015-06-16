@@ -21,12 +21,12 @@
 
 #include <QGraphicsLineItem>
 
-#include <KPropertySet>
-
 #include "KoReportDesignerItemBase.h"
 #include "KoReportItemLine.h"
 
 class KoReportDesigner;
+
+class KPropertySet;
 
 class KoReportDesignerItemLine : public KoReportItemLine, public QGraphicsLineItem, public KoReportDesignerItemBase
 {

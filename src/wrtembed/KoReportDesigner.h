@@ -20,17 +20,19 @@
 #define REPORTDESIGNER_H
 
 #include <QWidget>
-#include <QString>
-
-#include <KPropertySet>
 
 #include "krreportdata.h"
-#include "KoReportItemBase.h"
 #include "KoReportData.h"
+
+class KProperty;
+class KPropertySet;
+
+class KoReportItemBase;
 
 class QGraphicsScene;
 class QActionGroup;
 class QGraphicsSceneContextMenuEvent;
+class QString;
 
 class KoZoomHandler;
 class ReportSectionDetail;

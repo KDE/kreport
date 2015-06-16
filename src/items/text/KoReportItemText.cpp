@@ -25,6 +25,7 @@
 #include <QApplication>
 #include <QPalette>
 #include <QFontMetrics>
+#include <QDomNodeList>
 
 KoReportItemText::KoReportItemText()
 {

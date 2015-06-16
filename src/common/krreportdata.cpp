@@ -20,6 +20,7 @@
 #include "krdetailsectiondata.h"
 #include "KoReportItemBase.h"
 
+#include <QDomElement>
 #include <QApplication>
 #include <QScreen>
 #include "kreport_debug.h"

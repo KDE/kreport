@@ -21,11 +21,15 @@
 
 #include <QWidget>
 
-#include "KoReportDesigner.h"
 #include "kreport_export.h"
 
 class QDomNode;
+class QDomElement;
+class QDomDocument;
 class QVBoxLayout;
+
+class ReportSection;
+class KoReportDesigner;
 class ReportSectionDetailGroup;
 
 /**

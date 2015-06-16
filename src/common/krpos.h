@@ -21,10 +21,10 @@
 
 #include <QPointF>
 
-#include <KProperty>
-
 #include "kreport_export.h"
 #include "KoUnit.h"
+
+class KProperty;
 
 /**
 */

@@ -19,6 +19,8 @@
 
 #include "krsectiondata.h"
 
+#include "krreportdata.h"
+
 #include "KoReportPluginInterface.h"
 #include "KoReportPluginManager.h"
 #include "KoReportItemLine.h"
@@ -26,7 +28,7 @@
 
 #include <KPropertySet>
 
-#include <QColor>
+#include <QDomElement>
 
 KRSectionData::KRSectionData(QObject* parent)
  : QObject(parent)
