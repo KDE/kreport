@@ -28,7 +28,7 @@
 #include "KoReportDesignerItemRectBase.h"
 #include "KoReportDesignerItemLine.h"
 #include "KoRuler.h"
-#include "KoZoomHandler.h"
+#include "KReportZoomHandler.h"
 
 #include <klocalizedstring.h>
 

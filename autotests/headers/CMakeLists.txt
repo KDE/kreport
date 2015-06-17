@@ -22,7 +22,7 @@ add_executable(
     KoReportItemLine_HeaderTest.cpp
     reportsectiondetail_HeaderTest.cpp
     reportsection_HeaderTest.cpp
-    KoZoomHandler_HeaderTest.cpp
+    KReportZoomHandler_HeaderTest.cpp
     KReportUnit_HeaderTest.cpp
     KReportPageFormat_HeaderTest.cpp
     KoReportItemBase_HeaderTest.cpp
@@ -32,7 +32,7 @@ add_executable(
     KoReportPage_HeaderTest.cpp
     reportsectiondetail_HeaderTest.cpp
     reportsection_HeaderTest.cpp
-    KoZoomHandler_HeaderTest.cpp
+    KReportZoomHandler_HeaderTest.cpp
     KoRuler_HeaderTest.cpp
     KoReportDesignerItemRectBase_HeaderTest.cpp
     KoReportDesigner_HeaderTest.cpp
@@ -89,7 +89,7 @@ add_executable(
     reportsectiondetail.h_HeaderTest.cpp
     reportsection.h_HeaderTest.cpp
     KReportDpi.h_HeaderTest.cpp
-    KoZoomHandler.h_HeaderTest.cpp
+    KReportZoomHandler.h_HeaderTest.cpp
     KoReportDesignerItemBase.h_HeaderTest.cpp
     reportsectiondetailgroup.h_HeaderTest.cpp
     KoRuler.h_HeaderTest.cpp
@@ -116,7 +116,7 @@ add_executable(
     reportsection.h_HeaderTest.cpp
     KReportDpi.h_HeaderTest.cpp
     KReportUnit.h_HeaderTest.cpp
-    KoZoomHandler.h_HeaderTest.cpp
+    KReportZoomHandler.h_HeaderTest.cpp
     KoReportDesignerItemBase.h_HeaderTest.cpp
     KoReportRendererBase.h_HeaderTest.cpp
     reportsectiondetailgroup.h_HeaderTest.cpp

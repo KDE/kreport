@@ -27,7 +27,7 @@
 #include <QWidget>
 #include <QTextOption>
 
-class KoZoomHandler;
+class KReportZoomHandler;
 class KoRulerPrivate;
 class KReportUnit;
 
@@ -44,7 +44,7 @@ public:
      * @param orientation the orientation of the ruler
      * @param viewConverter the view converter used to convert from point to pixel
      */
-    KoRuler(QWidget* parent, Qt::Orientation orientation, const KoZoomHandler* viewConverter);
+    KoRuler(QWidget* parent, Qt::Orientation orientation, const KReportZoomHandler* viewConverter);
     ~KoRuler();
 
     /// For paragraphs each tab definition is represented by this struct.

@@ -19,14 +19,14 @@
    Boston, MA 02110-1301, USA.
 */
 
-#include "KoZoomHandler.h"
+#include "KReportZoomHandler.h"
 #include "KReportUnit.h" // for POINT_TO_INCH
 #include "KReportDpi.h"
 
 #include <QPointF>
 #include <QRectF>
 
-KoZoomHandler::KoZoomHandler()
+KReportZoomHandler::KReportZoomHandler()
     : m_zoomMode(KReportZoomMode::ZOOM_CONSTANT)
     , m_resolutionX(0)
     , m_resolutionY(0)
@@ -39,22 +39,22 @@ KoZoomHandler::KoZoomHandler()
     setDpi(KReportDpi::dpiX(), KReportDpi::dpiY());
 }
 
-KoZoomHandler::~KoZoomHandler()
+KReportZoomHandler::~KReportZoomHandler()
 {
 }
 
-void KoZoomHandler::setResolutionToStandard()
+void KReportZoomHandler::setResolutionToStandard()
 {
     setDpi(KReportDpi::dpiX(), KReportDpi::dpiY());
 }
 
-void KoZoomHandler::setDpi(int dpiX, int dpiY)
+void KReportZoomHandler::setDpi(int dpiX, int dpiY)
 {
     setResolution(POINT_TO_INCH(static_cast<qreal>(dpiX)),
                   POINT_TO_INCH(static_cast<qreal>(dpiY)));
 }
 
-void KoZoomHandler::setResolution( qreal resolutionX, qreal resolutionY )
+void KReportZoomHandler::setResolution( qreal resolutionX, qreal resolutionY )
 {
 
     m_resolutionX = resolutionX;
@@ -69,7 +69,7 @@ void KoZoomHandler::setResolution( qreal resolutionX, qreal resolutionY )
     m_zoomedResolutionY = zoom() * resolutionY;
 }
 
-void KoZoomHandler::setZoomedResolution( qreal zoomedResolutionX, qreal zoomedResolutionY )
+void KReportZoomHandler::setZoomedResolution( qreal zoomedResolutionX, qreal zoomedResolutionY )
 {
     // zoom() doesn't matter, it's only used in setZoom() to calculated the zoomed resolutions
     // Here we know them. The whole point of this method is to allow a different zoom factor
@@ -78,7 +78,7 @@ void KoZoomHandler::setZoomedResolution( qreal zoomedResolutionX, qreal zoomedRe
     m_zoomedResolutionY = zoomedResolutionY;
 }
 
-void KoZoomHandler::setZoom( qreal zoom )
+void KReportZoomHandler::setZoom( qreal zoom )
 {
     if (qFuzzyCompare(zoom, qreal(0.0)) || qFuzzyCompare(zoom, qreal(1.0))) {
         zoom = 1.0;
@@ -95,19 +95,19 @@ void KoZoomHandler::setZoom( qreal zoom )
     }
 }
 
-QPointF KoZoomHandler::documentToView( const QPointF &documentPoint )  const
+QPointF KReportZoomHandler::documentToView( const QPointF &documentPoint )  const
 {
     return QPointF( zoomItX( documentPoint.x() ),
                     zoomItY( documentPoint.y() ));
 }
 
-QPointF KoZoomHandler::viewToDocument( const QPointF &viewPoint )  const
+QPointF KReportZoomHandler::viewToDocument( const QPointF &viewPoint )  const
 {
     return QPointF( unzoomItX( viewPoint.x() ),
                     unzoomItY( viewPoint.y() ) );
 }
 
-QRectF KoZoomHandler::documentToView( const QRectF &documentRect )  const
+QRectF KReportZoomHandler::documentToView( const QRectF &documentRect )  const
 {
     QRectF r (zoomItX( documentRect.x() ),
               zoomItY( documentRect.y() ),
@@ -116,7 +116,7 @@ QRectF KoZoomHandler::documentToView( const QRectF &documentRect )  const
     return r;
 }
 
-QRectF KoZoomHandler::viewToDocument( const QRectF &viewRect )  const
+QRectF KReportZoomHandler::viewToDocument( const QRectF &viewRect )  const
 {
     QRectF r (  unzoomItX( viewRect.x() ),
                 unzoomItY( viewRect.y()),
@@ -125,45 +125,45 @@ QRectF KoZoomHandler::viewToDocument( const QRectF &viewRect )  const
     return r;
 }
 
-QSizeF KoZoomHandler::documentToView( const QSizeF &documentSize ) const
+QSizeF KReportZoomHandler::documentToView( const QSizeF &documentSize ) const
 {
     return QSizeF( zoomItX( documentSize.width() ),
                    zoomItY( documentSize.height() ) );
 }
 
-QSizeF KoZoomHandler::viewToDocument( const QSizeF &viewSize ) const
+QSizeF KReportZoomHandler::viewToDocument( const QSizeF &viewSize ) const
 {
     return QSizeF( unzoomItX( viewSize.width() ),
                    unzoomItY( viewSize.height() ) );
 }
 
-qreal KoZoomHandler::documentToViewX( qreal documentX ) const
+qreal KReportZoomHandler::documentToViewX( qreal documentX ) const
 {
     return zoomItX( documentX );
 }
 
-qreal KoZoomHandler::documentToViewY( qreal documentY ) const
+qreal KReportZoomHandler::documentToViewY( qreal documentY ) const
 {
     return zoomItY( documentY );
 }
 
-qreal KoZoomHandler::viewToDocumentX( qreal viewX ) const
+qreal KReportZoomHandler::viewToDocumentX( qreal viewX ) const
 {
     return unzoomItX( viewX );
 }
 
-qreal KoZoomHandler::viewToDocumentY( qreal viewY ) const
+qreal KReportZoomHandler::viewToDocumentY( qreal viewY ) const
 {
     return unzoomItY( viewY );
 }
 
-void KoZoomHandler::zoom(qreal *zoomX, qreal *zoomY) const
+void KReportZoomHandler::zoom(qreal *zoomX, qreal *zoomY) const
 {
     *zoomX = zoomItX(100.0) / 100.0;
     *zoomY = zoomItY(100.0) / 100.0;
 }
 
-qreal KoZoomHandler::zoom() const
+qreal KReportZoomHandler::zoom() const
 {
     return m_zoomLevel;
 }

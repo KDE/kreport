@@ -18,8 +18,8 @@
    Boston, MA 02110-1301, USA.
 */
 
-#ifndef KOZOOMHANDLER_H
-#define KOZOOMHANDLER_H
+#ifndef KREPORTZOOMHANDLER_H
+#define KREPORTZOOMHANDLER_H
 
 #include "KReportZoomMode.h"
 
@@ -34,15 +34,15 @@ class QSizeF;
  * document does not work with postscript points (for instance raster
  * image pixels), you need to some additional converting yourself.
  *
- * An instance of KoZoomHandler operates at a given zoom  and resolution
- * so there is usually one instance of KoZoomHandler per view.
+ * An instance of KReportZoomHandler operates at a given zoom  and resolution
+ * so there is usually one instance of KReportZoomHandler per view.
  */
-class KREPORT_EXPORT KoZoomHandler
+class KREPORT_EXPORT KReportZoomHandler
 {
 public:
 
-    KoZoomHandler();
-    ~KoZoomHandler();
+    KReportZoomHandler();
+    ~KReportZoomHandler();
 
     /**
      * @return the conversion factor between document and view, that

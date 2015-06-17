@@ -34,7 +34,7 @@ class QActionGroup;
 class QGraphicsSceneContextMenuEvent;
 class QString;
 
-class KoZoomHandler;
+class KReportZoomHandler;
 class ReportSectionDetail;
 class ReportSection;
 class KReportUnit;
@@ -189,7 +189,7 @@ public:
     /**
     @brief Return a pointer to the zoom handler
     */
-    KoZoomHandler* zoomHandler() const;
+    KReportZoomHandler* zoomHandler() const;
 
     /**
     @brief Return the current unit assigned to the report
