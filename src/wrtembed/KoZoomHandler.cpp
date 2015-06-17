@@ -27,12 +27,12 @@
 #include <QRectF>
 
 KoZoomHandler::KoZoomHandler()
-    : KoViewConverter()
-    , m_zoomMode(KReportZoomMode::ZOOM_CONSTANT)
+    : m_zoomMode(KReportZoomMode::ZOOM_CONSTANT)
     , m_resolutionX(0)
     , m_resolutionY(0)
     , m_zoomedResolutionX(0)
     , m_zoomedResolutionY(0)
+    , m_zoomLevel(1.0)
 {
     setZoom(1.0);
     setZoomMode( KReportZoomMode::ZOOM_CONSTANT );
@@ -80,11 +80,12 @@ void KoZoomHandler::setZoomedResolution( qreal zoomedResolutionX, qreal zoomedRe
 
 void KoZoomHandler::setZoom( qreal zoom )
 {
-    if (qFuzzyCompare(zoom, qreal(1.0))) {
+    if (qFuzzyCompare(zoom, qreal(0.0)) || qFuzzyCompare(zoom, qreal(1.0))) {
         zoom = 1.0;
     }
 
-    KoViewConverter::setZoom(zoom);
+    m_zoomLevel = zoom;
+
     if( zoom == 1.0 ) {
         m_zoomedResolutionX = m_resolutionX;
         m_zoomedResolutionY = m_resolutionY;
@@ -160,4 +161,9 @@ void KoZoomHandler::zoom(qreal *zoomX, qreal *zoomY) const
 {
     *zoomX = zoomItX(100.0) / 100.0;
     *zoomY = zoomItY(100.0) / 100.0;
+}
+
+qreal KoZoomHandler::zoom() const
+{
+    return m_zoomLevel;
 }

@@ -23,7 +23,7 @@
 
 #include "KoRuler.h"
 #include "KoRuler_p.h"
-#include "KoViewConverter.h"
+#include "KoZoomHandler.h"
 
 #include <klocale.h>
 
@@ -662,7 +662,7 @@ void HorizontalDistancesPaintingStrategy::drawMeasurements(const KoRulerPrivate 
     }
 }
 
-KoRulerPrivate::KoRulerPrivate(KoRuler *parent, const KoViewConverter *vc, Qt::Orientation o)
+KoRulerPrivate::KoRulerPrivate(KoRuler *parent, const KoZoomHandler *vc, Qt::Orientation o)
     : unit(KReportUnit(KReportUnit::Point)),
     orientation(o),
     viewConverter(vc),
@@ -820,7 +820,7 @@ void KoRulerPrivate::emitTabChanged()
 }
 
 
-KoRuler::KoRuler(QWidget* parent, Qt::Orientation orientation, const KoViewConverter* viewConverter)
+KoRuler::KoRuler(QWidget* parent, Qt::Orientation orientation, const KoZoomHandler* viewConverter)
   : QWidget(parent)
   , d( new KoRulerPrivate( this, viewConverter, orientation) )
 {

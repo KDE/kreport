@@ -22,7 +22,11 @@
 #define KOZOOMHANDLER_H
 
 #include "KReportZoomMode.h"
-#include "KoViewConverter.h"
+
+class QPointF;
+class QRectF;
+class QSizeF;
+
 
 /**
  * This class handles the zooming and DPI stuff (conversions between
@@ -33,12 +37,12 @@
  * An instance of KoZoomHandler operates at a given zoom  and resolution
  * so there is usually one instance of KoZoomHandler per view.
  */
-class KREPORT_EXPORT KoZoomHandler : public KoViewConverter
+class KREPORT_EXPORT KoZoomHandler
 {
 public:
 
     KoZoomHandler();
-    virtual ~KoZoomHandler();
+    ~KoZoomHandler();
 
     /**
      * @return the conversion factor between document and view, that
@@ -91,7 +95,7 @@ public:
      * Compared to the setZoom... methods, this allows to set a different
      * zoom factor for X and for Y.
      */
-    virtual void setZoomedResolution(qreal zoomedResolutionX, qreal zoomedResolutionY);
+    void setZoomedResolution(qreal zoomedResolutionX, qreal zoomedResolutionY);
 
     /**
      * Change the zoom level, keeping the resolution unchanged.
@@ -108,7 +112,7 @@ public:
      * @return the global zoom factor (e.g. 100 for 100%).
      * Only use this to display to the user, don't use in calculations
      */
-    inline int zoomInPercent() const { return qRound(KoViewConverter::zoom() * 100); }
+    inline int zoomInPercent() const { return qRound(zoom() * 100); }
     /**
      * @return the global zoom mode (e.g. KReportZoomMode::ZOOM_WIDTH).
      * use this to determine how to zoom
@@ -138,91 +142,93 @@ public:
             return  y / m_zoomedResolutionY;
         }
 
-    // KoViewConverter-interface methods
-
     /**
      * Convert a coordinate in pt to pixels.
      * @param documentPoint the point in the document coordinate system of a KoShape.
      */
-    virtual QPointF documentToView(const QPointF &documentPoint) const;
+    QPointF documentToView(const QPointF &documentPoint) const;
 
     /**
      * Convert a coordinate in pixels to pt.
      * @param viewPoint the point in the coordinate system of the widget, or window.
      */
-    virtual QPointF viewToDocument(const QPointF &viewPoint) const;
+    QPointF viewToDocument(const QPointF &viewPoint) const;
 
     /**
      * Convert a rectangle in pt to pixels.
      * @param documentRect the rect in the document coordinate system of a KoShape.
      */
-    virtual QRectF documentToView(const QRectF &documentRect) const;
+    QRectF documentToView(const QRectF &documentRect) const;
 
     /**
      * Convert a rectangle in pixels to pt.
      * @param viewRect the rect in the coordinate system of the widget, or window.
      */
-    virtual QRectF viewToDocument(const QRectF &viewRect) const;
+    QRectF viewToDocument(const QRectF &viewRect) const;
 
     /**
      * Convert a size in pt to pixels.
      * @param documentSize the size in pt.
      * @return the size in pixels.
      */
-    virtual QSizeF documentToView(const QSizeF &documentSize) const;
+    QSizeF documentToView(const QSizeF &documentSize) const;
 
     /**
      * Convert a size in pixels to pt.
      * @param viewSize the size in pixels.
      * @return the size in pt.
      */
-    virtual QSizeF viewToDocument(const QSizeF &viewSize) const;
+    QSizeF viewToDocument(const QSizeF &viewSize) const;
 
     /**
      * Convert a single x coordinate in pt to pixels.
      * @param documentX the x coordinate in pt.
      * @return the x coordinate in pixels.
      */
-    virtual qreal documentToViewX(qreal documentX) const;
+    qreal documentToViewX(qreal documentX) const;
 
     /**
      * Convert a single y coordinate in pt to pixels.
      * @param documentY the y coordinate in pt.
      * @return the y coordinate in pixels.
      */
-    virtual qreal documentToViewY(qreal documentY) const;
+    qreal documentToViewY(qreal documentY) const;
 
     /**
      * Convert a single x coordinate in pixels to pt.
      * @param viewX the x coordinate in pixels.
      * @return the x coordinate in pt.
      */
-    virtual qreal viewToDocumentX(qreal viewX) const;
+    qreal viewToDocumentX(qreal viewX) const;
 
     /**
      * Convert a single y coordinate in pixels to pt.
      * @param viewY the y coordinate in pixels.
      * @return the y coordinate in pt.
      */
-    virtual qreal viewToDocumentY(qreal viewY) const;
+    qreal viewToDocumentY(qreal viewY) const;
 
     /**
      * Get the zoom levels of the individual x and y axis. Copy them to the pointer parameters.
      * @param zoomX a pointer to a qreal which will be modified to set the horizontal zoom.
      * @param zoomY a pointer to a qreal which will be modified to set the vertical zoom.
      */
-    virtual void zoom(qreal *zoomX, qreal *zoomY) const;
+    void zoom(qreal *zoomX, qreal *zoomY) const;
 
-    using KoViewConverter::zoom;
+    /**
+     * Return the current zoom level. 1.0 is 100%.
+     */
+    qreal zoom() const;
 
-protected:
-
+private:
     KReportZoomMode::Mode m_zoomMode;
 
     qreal m_resolutionX;
     qreal m_resolutionY;
     qreal m_zoomedResolutionX;
     qreal m_zoomedResolutionY;
+
+    qreal m_zoomLevel; // 1.0 is 100%
 };
 
 #endif
