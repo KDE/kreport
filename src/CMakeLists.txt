@@ -54,7 +54,7 @@ set(kreport_LIB_SRCS
     wrtembed/reportpropertiesbutton.cpp
     wrtembed/sectioneditor.cpp
     wrtembed/KReportDpi.cpp
-    wrtembed/KoRuler.cpp
+    wrtembed/KReportRuler.cpp
     wrtembed/KReportZoomHandler.cpp
     wrtembed/KReportZoomMode.cpp
 

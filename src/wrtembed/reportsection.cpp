@@ -27,7 +27,7 @@
 #include "common/KoReportPluginManager.h"
 #include "KoReportDesignerItemRectBase.h"
 #include "KoReportDesignerItemLine.h"
-#include "KoRuler_p.h"
+#include "KReportRuler_p.h"
 #include "KReportZoomHandler.h"
 
 #include <klocalizedstring.h>
@@ -90,7 +90,7 @@ public:
     ReportResizeBar *resizeBar;
     ReportSceneView *sceneView;
     KoReportDesigner*reportDesigner;
-    KoRuler *sectionRuler;
+    KReportRuler *sectionRuler;
 
     KRSectionData *sectionData;
     int dpiY;
@@ -122,7 +122,7 @@ ReportSection::ReportSection(KoReportDesigner * rptdes)
     d->title->setObjectName(QLatin1String("detail"));
     d->title->setText(i18n("Detail"));
 
-    d->sectionRuler = new KoRuler(this, Qt::Vertical, d->reportDesigner->zoomHandler());
+    d->sectionRuler = new KReportRuler(this, Qt::Vertical, d->reportDesigner->zoomHandler());
     d->sectionRuler->setUnit(d->reportDesigner->pageUnit());
     d->scene = new ReportScene(d->reportDesigner->pageWidthPx(), d->dpiY, rptdes);
     d->sceneView = new ReportSceneView(rptdes, d->scene, this);

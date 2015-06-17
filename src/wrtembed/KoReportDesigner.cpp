@@ -26,7 +26,7 @@
 #include "sectioneditor.h"
 #include "reportsectiondetail.h"
 #include "KoReportDesignerItemLine.h"
-#include "KoRuler_p.h"
+#include "KReportRuler_p.h"
 #include "KReportZoomHandler.h"
 #include "common/KReportPageFormat.h"
 #include "KReportDpi.h"
@@ -108,7 +108,7 @@ class KoReportDesigner::Private
 public:
     QGridLayout *grid;
     QGraphicsScene *activeScene;
-    KoRuler *hruler;
+    KReportRuler *hruler;
     KReportZoomHandler *zoom;
     QVBoxLayout *vboxlayout;
     ReportPropertiesButton *pageButton;
@@ -153,7 +153,7 @@ void KoReportDesigner::init()
 
     //Create nice rulers
     d->zoom = new KReportZoomHandler();
-    d->hruler = new KoRuler(this, Qt::Horizontal, d->zoom);
+    d->hruler = new KReportRuler(this, Qt::Horizontal, d->zoom);
 
     d->pageButton = new ReportPropertiesButton(this);
 

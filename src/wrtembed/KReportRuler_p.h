@@ -20,15 +20,15 @@
  * Boston, MA 02110-1301, USA.
 */
 
-#ifndef KORULER_P_H
-#define KORULER_P_H
+#ifndef KREPORTRULER_P_H
+#define KREPORTRULER_P_H
 
 #include "KReportUnit.h"
 #include <QWidget>
 #include <QTextOption>
 
 class KReportZoomHandler;
-class KoRulerPrivate;
+class KReportRulerPrivate;
 
 class RulerTabChooser : public QWidget
 {
@@ -60,14 +60,14 @@ public:
      * @param ruler the ruler to draw on.
      * @param painter the painter we can paint with.
      */
-    virtual QRectF drawBackground(const KoRulerPrivate *ruler, QPainter &painter) = 0;
+    virtual QRectF drawBackground(const KReportRulerPrivate *ruler, QPainter &painter) = 0;
 
     /**
      * Draw the indicators for text-tabs.
      * @param ruler the ruler to draw on.
      * @param painter the painter we can paint with.
      */
-    virtual void drawTabs(const KoRulerPrivate *ruler, QPainter &painter) = 0;
+    virtual void drawTabs(const KReportRulerPrivate *ruler, QPainter &painter) = 0;
 
     /**
      * Draw the indicators for the measurements which typically are drawn every [unit].
@@ -75,14 +75,14 @@ public:
      * @param painter the painter we can paint with.
      * @param rectangle
      */
-    virtual void drawMeasurements(const KoRulerPrivate *ruler, QPainter &painter, const QRectF &rectangle) = 0;
+    virtual void drawMeasurements(const KReportRulerPrivate *ruler, QPainter &painter, const QRectF &rectangle) = 0;
 
     /**
      * Draw the indicators for the indents of a text paragraph
      * @param ruler the ruler to draw on.
      * @param painter the painter we can paint with.
      */
-    virtual void drawIndents(const KoRulerPrivate *ruler, QPainter &painter) = 0;
+    virtual void drawIndents(const KReportRulerPrivate *ruler, QPainter &painter) = 0;
 
     /**
      *returns the size suggestion for a ruler with this strategy.
@@ -95,10 +95,10 @@ class HorizontalPaintingStrategy : public PaintingStrategy
 public:
     HorizontalPaintingStrategy() : lengthInPixel(1) {}
 
-    virtual QRectF drawBackground(const KoRulerPrivate *ruler, QPainter &painter);
-    virtual void drawTabs(const KoRulerPrivate *ruler, QPainter &painter);
-    virtual void drawMeasurements(const KoRulerPrivate *ruler, QPainter &painter, const QRectF &rectangle);
-    virtual void drawIndents(const KoRulerPrivate *ruler, QPainter &painter);
+    virtual QRectF drawBackground(const KReportRulerPrivate *ruler, QPainter &painter);
+    virtual void drawTabs(const KReportRulerPrivate *ruler, QPainter &painter);
+    virtual void drawMeasurements(const KReportRulerPrivate *ruler, QPainter &painter, const QRectF &rectangle);
+    virtual void drawIndents(const KReportRulerPrivate *ruler, QPainter &painter);
     virtual QSize sizeHint();
 
 private:
@@ -110,10 +110,10 @@ class VerticalPaintingStrategy : public PaintingStrategy
 public:
     VerticalPaintingStrategy() : lengthInPixel(1) {}
 
-    virtual QRectF drawBackground(const KoRulerPrivate *ruler, QPainter &painter);
-    virtual void drawTabs(const KoRulerPrivate *, QPainter &) {}
-    virtual void drawMeasurements(const KoRulerPrivate *ruler, QPainter &painter, const QRectF &rectangle);
-    virtual void drawIndents(const KoRulerPrivate *, QPainter &) { }
+    virtual QRectF drawBackground(const KReportRulerPrivate *ruler, QPainter &painter);
+    virtual void drawTabs(const KReportRulerPrivate *, QPainter &) {}
+    virtual void drawMeasurements(const KReportRulerPrivate *ruler, QPainter &painter, const QRectF &rectangle);
+    virtual void drawIndents(const KReportRulerPrivate *, QPainter &) { }
     virtual QSize sizeHint();
 
 private:
@@ -125,16 +125,16 @@ class HorizontalDistancesPaintingStrategy : public HorizontalPaintingStrategy
 public:
     HorizontalDistancesPaintingStrategy() {}
 
-    virtual void drawMeasurements(const KoRulerPrivate *ruler, QPainter &painter, const QRectF &rectangle);
+    virtual void drawMeasurements(const KReportRulerPrivate *ruler, QPainter &painter, const QRectF &rectangle);
 
 private:
-    void drawDistanceLine(const KoRulerPrivate *d, QPainter &painter, const qreal start, const qreal end);
+    void drawDistanceLine(const KReportRulerPrivate *d, QPainter &painter, const qreal start, const qreal end);
 };
 
 /**
  * Decorator widget to draw a single ruler around a canvas.
  */
-class KoRuler : public QWidget
+class KReportRuler : public QWidget
 {
 Q_OBJECT
 public:
@@ -144,8 +144,8 @@ public:
      * @param orientation the orientation of the ruler
      * @param viewConverter the view converter used to convert from point to pixel
      */
-    KoRuler(QWidget* parent, Qt::Orientation orientation, const KReportZoomHandler* viewConverter);
-    ~KoRuler();
+    KReportRuler(QWidget* parent, Qt::Orientation orientation, const KReportZoomHandler* viewConverter);
+    ~KReportRuler();
 
     /// For paragraphs each tab definition is represented by this struct.
     struct Tab {
@@ -334,7 +334,7 @@ Q_SIGNALS:
      *          started, or -1 if this is a new tab
      * @param tab the new tab, or zero when the tab has been removed.
      */
-    void tabChanged(int originalTabIndex, KoRuler::Tab *tab);
+    void tabChanged(int originalTabIndex, KReportRuler::Tab *tab);
 
     /// emitted when there the user is about to change a tab or hotspot
     void aboutToChange();
@@ -355,16 +355,16 @@ protected:
     virtual void mouseMoveEvent(QMouseEvent *ev);
 
 private:
-    KoRulerPrivate * const d;
-    friend class KoRulerPrivate;
+    KReportRulerPrivate * const d;
+    friend class KReportRulerPrivate;
 };
 
 
-class KoRulerPrivate
+class KReportRulerPrivate
 {
 public:
-    KoRulerPrivate(KoRuler *parent, const KReportZoomHandler *vc, Qt::Orientation orientation);
-    ~KoRulerPrivate();
+    KReportRulerPrivate(KReportRuler *parent, const KReportZoomHandler *vc, Qt::Orientation orientation);
+    ~KReportRulerPrivate();
 
     void emitTabChanged();
 
@@ -394,10 +394,10 @@ public:
     bool showTabs;
     bool relativeTabs;
     bool tabMoved; // set to true on first move of a selected tab
-    QList<KoRuler::Tab> tabs;
+    QList<KReportRuler::Tab> tabs;
     int originalIndex; //index of selected tab before we started dragging it.
     int currentIndex; //index of selected tab or selected HotSpot - only valid when selected indicates tab or hotspot
-    KoRuler::Tab deletedTab;
+    KReportRuler::Tab deletedTab;
     qreal tabDistance;
 
     struct HotSpotData {
@@ -429,7 +429,7 @@ public:
     // Current painting strategy
     PaintingStrategy * paintingStrategy;
 
-    KoRuler *ruler;
+    KReportRuler *ruler;
 
     qreal numberStepForUnit() const;
     /// @return The rounding of value to the nearest multiple of stepValue
