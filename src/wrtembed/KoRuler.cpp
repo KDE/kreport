@@ -21,7 +21,6 @@
    Boston, MA 02110-1301, USA.
 */
 
-#include "KoRuler.h"
 #include "KoRuler_p.h"
 #include "KReportZoomHandler.h"
 

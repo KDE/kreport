@@ -27,7 +27,7 @@
 #include "common/KoReportPluginManager.h"
 #include "KoReportDesignerItemRectBase.h"
 #include "KoReportDesignerItemLine.h"
-#include "KoRuler.h"
+#include "KoRuler_p.h"
 #include "KReportZoomHandler.h"
 
 #include <klocalizedstring.h>

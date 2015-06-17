@@ -26,7 +26,7 @@
 #include "sectioneditor.h"
 #include "reportsectiondetail.h"
 #include "KoReportDesignerItemLine.h"
-#include "KoRuler.h"
+#include "KoRuler_p.h"
 #include "KReportZoomHandler.h"
 #include "common/KReportPageFormat.h"
 #include "KReportDpi.h"

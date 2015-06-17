@@ -272,7 +272,6 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
         KReportZoomHandler
         KoReportDesignerItemBase
         reportsectiondetailgroup
-        KoRuler
         KoReportDesignerItemRectBase
         KoReportDesigner
 )
