@@ -36,7 +36,7 @@ add_executable(
     KoRuler_HeaderTest.cpp
     KoReportDesignerItemRectBase_HeaderTest.cpp
     KoReportDesigner_HeaderTest.cpp
-    KoZoomMode_HeaderTest.cpp
+    KReportZoomMode_HeaderTest.cpp
     KReportDpi_HeaderTest.cpp
     KoReportDesignerItemBase_HeaderTest.cpp
     KoViewConverter_HeaderTest.cpp
@@ -62,7 +62,7 @@ add_executable(
     KoReportPluginManager_HeaderTest.cpp
     KoReportDesigner_HeaderTest.cpp
     KoReportData_HeaderTest.cpp
-    KoZoomMode_HeaderTest.cpp
+    KReportZoomMode_HeaderTest.cpp
     reportpageoptions_HeaderTest.cpp
     KoReportRendererBase_HeaderTest.cpp
     KReportDpi_HeaderTest.cpp
@@ -78,7 +78,7 @@ add_executable(
     kreport_version.h_HeaderTest.cpp
     config-kreport.h_HeaderTest.cpp
     KReportPageFormat.h_HeaderTest.cpp
-    KoZoomMode.h_HeaderTest.cpp
+    KReportZoomMode.h_HeaderTest.cpp
     KReportPluginMetaData.h_HeaderTest.cpp
     KoReportItemBase.h_HeaderTest.cpp
     KoReportData.h_HeaderTest.cpp
@@ -87,7 +87,7 @@ add_executable(
     KoReportPage.h_HeaderTest.cpp
     KoReportRendererBase.h_HeaderTest.cpp
     KoReportPreRenderer.h_HeaderTest.cpp
-    KoZoomMode.h_HeaderTest.cpp
+    KReportZoomMode.h_HeaderTest.cpp
     reportsectiondetail.h_HeaderTest.cpp
     reportsection.h_HeaderTest.cpp
     KReportDpi.h_HeaderTest.cpp

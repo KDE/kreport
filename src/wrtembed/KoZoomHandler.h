@@ -21,7 +21,7 @@
 #ifndef KOZOOMHANDLER_H
 #define KOZOOMHANDLER_H
 
-#include "KoZoomMode.h"
+#include "KReportZoomMode.h"
 #include "KoViewConverter.h"
 
 /**
@@ -103,17 +103,17 @@ public:
      * Change the zoom mode
      * @param zoomMode the zoom mode.
      */
-    inline void setZoomMode(KoZoomMode::Mode zoomMode) { m_zoomMode = zoomMode; }
+    inline void setZoomMode(KReportZoomMode::Mode zoomMode) { m_zoomMode = zoomMode; }
     /**
      * @return the global zoom factor (e.g. 100 for 100%).
      * Only use this to display to the user, don't use in calculations
      */
     inline int zoomInPercent() const { return qRound(KoViewConverter::zoom() * 100); }
     /**
-     * @return the global zoom mode (e.g. KoZoomMode::ZOOM_WIDTH).
+     * @return the global zoom mode (e.g. KReportZoomMode::ZOOM_WIDTH).
      * use this to determine how to zoom
      */
-    KoZoomMode::Mode zoomMode() const { return m_zoomMode; }
+    KReportZoomMode::Mode zoomMode() const { return m_zoomMode; }
 
     // Input: pt. Output: pixels. Resolution and zoom are applied.
 
@@ -217,7 +217,7 @@ public:
 
 protected:
 
-    KoZoomMode::Mode m_zoomMode;
+    KReportZoomMode::Mode m_zoomMode;
 
     qreal m_resolutionX;
     qreal m_resolutionY;

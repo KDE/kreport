@@ -18,10 +18,10 @@
  * Boston, MA 02110-1301, USA.
 */
 
-#include "KoZoomMode.h"
+#include "KReportZoomMode.h"
 #include <klocale.h>
 
-const char* const KoZoomMode::modes[] =
+const char* const KReportZoomMode::modes[] =
 {
     I18N_NOOP("%1%"),
     I18N_NOOP("Fit Page Width"),
@@ -34,15 +34,15 @@ const char* const KoZoomMode::modes[] =
     I18N_NOOP("Fit Text Width")
 };
 
-qreal KoZoomMode::minimumZoomValue = 0.2;
-qreal KoZoomMode::maximumZoomValue = 5.0;
+qreal KReportZoomMode::minimumZoomValue = 0.2;
+qreal KReportZoomMode::maximumZoomValue = 5.0;
 
-QString KoZoomMode::toString(Mode mode)
+QString KReportZoomMode::toString(Mode mode)
 {
     return i18n(modes[mode]);
 }
 
-KoZoomMode::Mode KoZoomMode::toMode(const QString& mode)
+KReportZoomMode::Mode KReportZoomMode::toMode(const QString& mode)
 {
     if(mode == i18n(modes[ZOOM_WIDTH]))
         return ZOOM_WIDTH;
@@ -64,28 +64,28 @@ KoZoomMode::Mode KoZoomMode::toMode(const QString& mode)
     // to windowsize, hence the term 'non-constant'
 }
 
-qreal KoZoomMode::minimumZoom()
+qreal KReportZoomMode::minimumZoom()
 {
     return minimumZoomValue;
 }
 
-qreal KoZoomMode::maximumZoom()
+qreal KReportZoomMode::maximumZoom()
 {
     return maximumZoomValue;
 }
 
-qreal KoZoomMode::clampZoom(qreal zoom)
+qreal KReportZoomMode::clampZoom(qreal zoom)
 {
     return qMin(maximumZoomValue, qMax(minimumZoomValue, zoom));
 }
 
-void KoZoomMode::setMinimumZoom(qreal zoom)
+void KReportZoomMode::setMinimumZoom(qreal zoom)
 {
     Q_ASSERT(zoom > 0.0f);
     minimumZoomValue = zoom;
 }
 
-void KoZoomMode::setMaximumZoom(qreal zoom)
+void KReportZoomMode::setMaximumZoom(qreal zoom)
 {
     Q_ASSERT(zoom > 0.0f);
     maximumZoomValue = zoom;

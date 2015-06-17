@@ -28,14 +28,14 @@
 
 KoZoomHandler::KoZoomHandler()
     : KoViewConverter()
-    , m_zoomMode(KoZoomMode::ZOOM_CONSTANT)
+    , m_zoomMode(KReportZoomMode::ZOOM_CONSTANT)
     , m_resolutionX(0)
     , m_resolutionY(0)
     , m_zoomedResolutionX(0)
     , m_zoomedResolutionY(0)
 {
     setZoom(1.0);
-    setZoomMode( KoZoomMode::ZOOM_CONSTANT );
+    setZoomMode( KReportZoomMode::ZOOM_CONSTANT );
     setDpi(KReportDpi::dpiX(), KReportDpi::dpiY());
 }
 

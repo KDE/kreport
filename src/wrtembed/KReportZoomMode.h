@@ -18,8 +18,8 @@
  * Boston, MA 02110-1301, USA.
 */
 
-#ifndef _KOZOOMMODE_H_
-#define _KOZOOMMODE_H_
+#ifndef _KREPORTZOOMMODE_H_
+#define _KREPORTZOOMMODE_H_
 
 #include <QString>
 
@@ -28,7 +28,7 @@
 /**
  * The ZoomMode container
  */
-class KREPORT_EXPORT KoZoomMode
+class KREPORT_EXPORT KReportZoomMode
 {
 public:
     enum Mode
@@ -101,6 +101,6 @@ private:
     static qreal maximumZoomValue;
 };
 
-Q_DECLARE_OPERATORS_FOR_FLAGS(KoZoomMode::Modes)
+Q_DECLARE_OPERATORS_FOR_FLAGS(KReportZoomMode::Modes)
 
 #endif

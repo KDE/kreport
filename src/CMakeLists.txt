@@ -57,7 +57,7 @@ set(kreport_LIB_SRCS
     wrtembed/KoRuler.cpp
     wrtembed/KoZoomHandler.cpp
     wrtembed/KoViewConverter.cpp
-    wrtembed/KoZoomMode.cpp
+    wrtembed/KReportZoomMode.cpp
 
     items/label/KoReportItemLabel.cpp
     items/label/KoReportDesignerItemLabel.cpp
@@ -266,7 +266,7 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
     PREFIX kreport
     RELATIVE wrtembed
     HEADER_NAMES
-        KoZoomMode
+        KReportZoomMode
         reportsectiondetail
         reportsection
         KReportDpi
