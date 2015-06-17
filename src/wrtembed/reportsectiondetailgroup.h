@@ -25,6 +25,8 @@
 
 class QDomElement;
 class QDomDocument;
+class QString;
+class QWidget;
 
 class ReportSection;
 class ReportSectionDetail;
@@ -65,16 +67,10 @@ public:
     void buildXML(QDomDocument & doc, QDomElement & section) const;
     void initFromXML( const QDomElement &element );
 
-protected:
-    QString m_column;
-
-    ReportSection * m_groupHeader;
-    ReportSection * m_groupFooter;
-
-    ReportSectionDetail * m_reportSectionDetail;
-
-    PageBreak m_pageBreak;
-    Qt::SortOrder m_sort;
+private:
+    Q_DISABLE_COPY(ReportSectionDetailGroup)
+    class Private;
+    Private * const d;
 };
 
 

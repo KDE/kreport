@@ -25,21 +25,48 @@
 #include <QDomElement>
 #include <QDomDocument>
 
+//! @internal
+class ReportSectionDetailGroup::Private
+{
+public:
+    explicit Private()
+        : pageBreak(ReportSectionDetailGroup::BreakNone)
+        , sort(Qt::AscendingOrder)
+    {}
+
+    ~Private()
+    {
+        // I delete these here so that there are no widgets
+        //left floating around
+        delete groupHeader;
+        delete groupFooter;
+    }
+
+    QString column;
+
+    ReportSection *groupHeader;
+    ReportSection *groupFooter;
+
+    ReportSectionDetail * reportSectionDetail;
+
+    PageBreak pageBreak;
+    Qt::SortOrder sort;
+};
+
 ReportSectionDetailGroup::ReportSectionDetailGroup(const QString & column, ReportSectionDetail * rsd,
                                                    QWidget * parent)
         : QObject(parent)
+        , d(new Private())
 {
-    m_pageBreak = BreakNone;
-    m_sort = Qt::AscendingOrder;
     KoReportDesigner * rd = 0;
-    m_reportSectionDetail = rsd;
-    if (m_reportSectionDetail) {
+    d->reportSectionDetail = rsd;
+    if (d->reportSectionDetail) {
         rd = rsd->reportDesigner();
     } else {
         kreportWarning() << "Error: ReportSectionDetail is null";
     }
-    m_groupHeader = new ReportSection(rd /*, _rsd*/);
-    m_groupFooter = new ReportSection(rd /*, _rsd*/);
+    d->groupHeader = new ReportSection(rd /*, _rsd*/);
+    d->groupFooter = new ReportSection(rd /*, _rsd*/);
     setGroupHeaderVisible(false);
     setGroupFooterVisible(false);
 
@@ -48,10 +75,7 @@ ReportSectionDetailGroup::ReportSectionDetailGroup(const QString & column, Repor
 
 ReportSectionDetailGroup::~ReportSectionDetailGroup()
 {
-    // I delete these here so that there are no widgets
-    //left floating around
-    delete m_groupHeader;
-    delete m_groupFooter;
+    delete d;
 }
 
 void ReportSectionDetailGroup::buildXML(QDomDocument & doc, QDomElement & section) const
@@ -65,7 +89,7 @@ void ReportSectionDetailGroup::buildXML(QDomDocument & doc, QDomElement & sectio
         grp.setAttribute(QLatin1String("report:group-page-break"), QLatin1String("before-header"));
     }
 
-    if (m_sort == Qt::AscendingOrder) {
+    if (d->sort == Qt::AscendingOrder) {
         grp.setAttribute(QLatin1String("report:group-sort"), QLatin1String("ascending"));
     }
     else {
@@ -115,10 +139,10 @@ void ReportSectionDetailGroup::initFromXML( const QDomElement &element )
         QString s = e.attribute( QLatin1String("report:section-type") );
         if ( s == QLatin1String("group-header") ) {
             setGroupHeaderVisible( true );
-            m_groupHeader->initFromXML( e );
+            d->groupHeader->initFromXML( e );
         } else if ( s == QLatin1String("group-footer") ) {
             setGroupFooterVisible( true );
-            m_groupFooter->initFromXML( e );
+            d->groupFooter->initFromXML( e );
         }
     }
 }
@@ -126,76 +150,76 @@ void ReportSectionDetailGroup::initFromXML( const QDomElement &element )
 void ReportSectionDetailGroup::setGroupHeaderVisible(bool yes)
 {
     if (groupHeaderVisible() != yes) {
-        if (m_reportSectionDetail && m_reportSectionDetail->reportDesigner()) m_reportSectionDetail->reportDesigner()->setModified(true);
+        if (d->reportSectionDetail && d->reportSectionDetail->reportDesigner()) d->reportSectionDetail->reportDesigner()->setModified(true);
     }
-    if (yes) m_groupHeader->show();
-    else m_groupHeader->hide();
-    m_reportSectionDetail->adjustSize();
+    if (yes) d->groupHeader->show();
+    else d->groupHeader->hide();
+    d->reportSectionDetail->adjustSize();
 }
 
 void ReportSectionDetailGroup::setGroupFooterVisible(bool yes)
 {
     if (groupFooterVisible() != yes) {
-        if (m_reportSectionDetail && m_reportSectionDetail->reportDesigner()) m_reportSectionDetail->reportDesigner()->setModified(true);
+        if (d->reportSectionDetail && d->reportSectionDetail->reportDesigner()) d->reportSectionDetail->reportDesigner()->setModified(true);
     }
-    if (yes) m_groupFooter->show();
-    else m_groupFooter->hide();
-    m_reportSectionDetail->adjustSize();
+    if (yes) d->groupFooter->show();
+    else d->groupFooter->hide();
+    d->reportSectionDetail->adjustSize();
 }
 
 void ReportSectionDetailGroup::setPageBreak(ReportSectionDetailGroup::PageBreak pb)
 {
-    m_pageBreak = pb;
+    d->pageBreak = pb;
 }
 
 void ReportSectionDetailGroup::setSort(Qt::SortOrder s)
 {
-    m_sort = s;
+    d->sort = s;
 }
 
 Qt::SortOrder ReportSectionDetailGroup::sort()
 {
-    return m_sort;
+    return d->sort;
 }
 
 
 bool ReportSectionDetailGroup::groupHeaderVisible() const
 {
     // Check *explicitly* hidden
-    return ! m_groupHeader->isHidden();
+    return ! d->groupHeader->isHidden();
 }
 bool ReportSectionDetailGroup::groupFooterVisible() const
 {
     // Check *explicitly* hidden
-    return ! m_groupFooter->isHidden();
+    return ! d->groupFooter->isHidden();
 }
 ReportSectionDetailGroup::PageBreak ReportSectionDetailGroup::pageBreak() const
 {
-    return m_pageBreak;
+    return d->pageBreak;
 }
 
 QString ReportSectionDetailGroup::column() const
 {
-    return m_column;
+    return d->column;
 }
 void ReportSectionDetailGroup::setColumn(const QString & s)
 {
-    if (m_column != s) {
-        m_column = s;
-        if (m_reportSectionDetail && m_reportSectionDetail->reportDesigner()) m_reportSectionDetail->reportDesigner()->setModified(true);
+    if (d->column != s) {
+        d->column = s;
+        if (d->reportSectionDetail && d->reportSectionDetail->reportDesigner()) d->reportSectionDetail->reportDesigner()->setModified(true);
     }
 
-    m_groupHeader->setTitle(m_column + QLatin1String(" Group Header"));
-    m_groupFooter->setTitle(m_column + QLatin1String(" Group Footer"));
+    d->groupHeader->setTitle(d->column + QLatin1String(" Group Header"));
+    d->groupFooter->setTitle(d->column + QLatin1String(" Group Footer"));
 }
 
 ReportSection * ReportSectionDetailGroup::groupHeader() const
 {
-    return m_groupHeader;
+    return d->groupHeader;
 }
 ReportSection * ReportSectionDetailGroup::groupFooter() const
 {
-    return m_groupFooter;
+    return d->groupFooter;
 }
 
 
