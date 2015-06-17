@@ -21,7 +21,7 @@
 #include "renderobjects.h"
 
 #include <KoXmlWriter.h>
-#include <KoDpi.h>
+#include <KReportDpi.h>
 #include <KoOdfGraphicStyles.h>
 #include <KoGenStyle.h>
 #include <KoGenStyles.h>
@@ -76,10 +76,10 @@ void KoOdtFrameReportLine::createStyle(KoGenStyles &coll)
 void KoOdtFrameReportLine::createBody(KoXmlWriter *bodyWriter) const
 {
     // convert to inches
-    qreal sx = INCH_TO_POINT(line()->startPoint().x() / KoDpi::dpiX());
-    qreal sy = INCH_TO_POINT(line()->startPoint().y() / KoDpi::dpiY());
-    qreal ex = INCH_TO_POINT(line()->endPoint().x() / KoDpi::dpiX());
-    qreal ey = INCH_TO_POINT(line()->endPoint().y() / KoDpi::dpiY());
+    qreal sx = INCH_TO_POINT(line()->startPoint().x() / KReportDpi::dpiX());
+    qreal sy = INCH_TO_POINT(line()->startPoint().y() / KReportDpi::dpiY());
+    qreal ex = INCH_TO_POINT(line()->endPoint().x() / KReportDpi::dpiX());
+    qreal ey = INCH_TO_POINT(line()->endPoint().y() / KReportDpi::dpiY());
     qreal width = ex - sx;
     qreal height = ey - sy;
 

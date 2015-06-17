@@ -19,8 +19,8 @@
  * Boston, MA 02110-1301, USA.
 */
 
-#ifndef KO_DPI_h
-#define KO_DPI_h
+#ifndef KREPORT_DPI_h
+#define KREPORT_DPI_h
 
 
 #include "kreport_export.h"
@@ -28,12 +28,12 @@
 /**
  * Singleton to store user-overwritten DPI information.
  */
-class KREPORT_EXPORT KoDpi
+class KREPORT_EXPORT KReportDpi
 {
 public:
     /// For KoApplication
     static void initialize()  {
-        (void)self(); // I don't want to make KoDpi instances public, so self() is private
+        (void)self(); // I don't want to make KReportDpi instances public, so self() is private
     }
 
     static int dpiX() {
@@ -47,14 +47,14 @@ public:
     /// @internal, for KoApplication
     static void setDPI(int x, int y);
 
-    ~KoDpi();
+    ~KReportDpi();
 
 private:
-    static KoDpi* self();
-    KoDpi();
+    static KReportDpi* self();
+    KReportDpi();
 
     int m_dpiX;
     int m_dpiY;
 };
 
-#endif // KO_DPI
+#endif // KREPORT_DPI_h

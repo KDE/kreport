@@ -27,7 +27,7 @@
 #include <KoOdfGraphicStyles.h>
 #include <KoGenStyles.h>
 #include <KoGenStyle.h>
-#include <KoDpi.h>
+#include <KReportDpi.h>
 
 #include <QVarLengthArray>
 #include "kreport_debug.h"
@@ -99,12 +99,12 @@ QFile::FileError KoOdtFrameReportDocument::saveDocument(const QString& path)
 void KoOdtFrameReportDocument::createStyles(KoGenStyles &coll)
 {
     // convert to inches
-    qreal pw = m_pageOptions.widthPx() / KoDpi::dpiX();
-    qreal ph = m_pageOptions.heightPx() / KoDpi::dpiY();
-    qreal topMargin = m_pageOptions.getMarginTop() / KoDpi::dpiY();
-    qreal bottomMargin = m_pageOptions.getMarginBottom() / KoDpi::dpiY();
-    qreal leftMargin = m_pageOptions.getMarginLeft() / KoDpi::dpiX();
-    qreal rightMargin = m_pageOptions.getMarginRight() / KoDpi::dpiX();
+    qreal pw = m_pageOptions.widthPx() / KReportDpi::dpiX();
+    qreal ph = m_pageOptions.heightPx() / KReportDpi::dpiY();
+    qreal topMargin = m_pageOptions.getMarginTop() / KReportDpi::dpiY();
+    qreal bottomMargin = m_pageOptions.getMarginBottom() / KReportDpi::dpiY();
+    qreal leftMargin = m_pageOptions.getMarginLeft() / KReportDpi::dpiX();
+    qreal rightMargin = m_pageOptions.getMarginRight() / KReportDpi::dpiX();
     QString orientation = m_pageOptions.isPortrait() ? "portrait" : "landscape";
 
     //kreportDebug()<<"Page:"<<pw<<ph<<orientation;

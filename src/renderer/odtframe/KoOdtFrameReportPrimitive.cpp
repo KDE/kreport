@@ -21,7 +21,7 @@
 #include "renderobjects.h"
 
 #include <KoXmlWriter.h>
-#include <KoDpi.h>
+#include <KReportDpi.h>
 #include <KoGenStyle.h>
 #include <KoGenStyles.h>
 
@@ -88,10 +88,10 @@ void KoOdtFrameReportPrimitive::createBody(KoXmlWriter *bodyWriter) const
 void KoOdtFrameReportPrimitive::commonAttributes(KoXmlWriter *bodyWriter) const
 {
     // convert to inches
-    qreal x = m_primitive->position().x() / KoDpi::dpiX();
-    qreal y = m_primitive->position().y() / KoDpi::dpiX();
-    qreal w = m_primitive->size().width() / KoDpi::dpiX();
-    qreal h = m_primitive->size().height() / KoDpi::dpiY();
+    qreal x = m_primitive->position().x() / KReportDpi::dpiX();
+    qreal y = m_primitive->position().y() / KReportDpi::dpiX();
+    qreal w = m_primitive->size().width() / KReportDpi::dpiX();
+    qreal h = m_primitive->size().height() / KReportDpi::dpiY();
 
     bodyWriter->addAttribute("svg:x", QString("%1in").arg(x));
     bodyWriter->addAttribute("svg:y", QString("%1in").arg(y));

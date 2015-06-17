@@ -32,7 +32,7 @@
 
 
 #include "KoUnit.h"
-#include "KoDpi.h"
+#include "KReportDpi.h"
 
 #include <QPointF>
 #include <QSizeF>
@@ -70,10 +70,10 @@ void KoReportTest::pageOptions()
     ReportPageOptions opt = renderer.reportData()->pageOptions();
 
     QCOMPARE(opt.getPageSize(), QString("A5"));
-    QCOMPARE(QString::number(INCH_TO_POINT(opt.getMarginBottom()) / KoDpi::dpiY()), QString::number(KoUnit::parseValue("1.5cm")));
-    QCOMPARE(QString::number(INCH_TO_POINT(opt.getMarginTop()) / KoDpi::dpiY()), QString::number(KoUnit::parseValue("2.0cm")));
-    QCOMPARE(QString::number(INCH_TO_POINT(opt.getMarginLeft()) / KoDpi::dpiY()), QString::number(KoUnit::parseValue("3.0cm")));
-    QCOMPARE(QString::number(INCH_TO_POINT(opt.getMarginRight()) / KoDpi::dpiY()), QString::number(KoUnit::parseValue("4.0cm")));
+    QCOMPARE(QString::number(INCH_TO_POINT(opt.getMarginBottom()) / KReportDpi::dpiY()), QString::number(KoUnit::parseValue("1.5cm")));
+    QCOMPARE(QString::number(INCH_TO_POINT(opt.getMarginTop()) / KReportDpi::dpiY()), QString::number(KoUnit::parseValue("2.0cm")));
+    QCOMPARE(QString::number(INCH_TO_POINT(opt.getMarginLeft()) / KReportDpi::dpiY()), QString::number(KoUnit::parseValue("3.0cm")));
+    QCOMPARE(QString::number(INCH_TO_POINT(opt.getMarginRight()) / KReportDpi::dpiY()), QString::number(KoUnit::parseValue("4.0cm")));
 }
 
 void KoReportTest::lineItem()

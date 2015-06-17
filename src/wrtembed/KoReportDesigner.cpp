@@ -29,7 +29,7 @@
 #include "KoRuler.h"
 #include "KoZoomHandler.h"
 #include "common/KoPageFormat.h"
-#include "KoDpi.h"
+#include "KReportDpi.h"
 #include "common/krutils.h"
 #include "common/KoReportPluginInterface.h"
 #include "common/KoReportPluginManager.h"
@@ -750,14 +750,14 @@ int KoReportDesigner::pageWidthPx() const
 
     KoPageFormat::Format pf = KoPageFormat::formatFromString(m_set->property("page-size").value().toString());
 
-    cw = POINT_TO_INCH(MM_TO_POINT(KoPageFormat::width(pf, KoPageFormat::Portrait))) * KoDpi::dpiX();
+    cw = POINT_TO_INCH(MM_TO_POINT(KoPageFormat::width(pf, KoPageFormat::Portrait))) * KReportDpi::dpiX();
 
-    ch = POINT_TO_INCH(MM_TO_POINT(KoPageFormat::height(pf, KoPageFormat::Portrait))) * KoDpi::dpiY();
+    ch = POINT_TO_INCH(MM_TO_POINT(KoPageFormat::height(pf, KoPageFormat::Portrait))) * KReportDpi::dpiY();
 
     width = (m_set->property("print-orientation").value().toString() == QLatin1String("portrait") ? cw : ch);
 
-    width = width - POINT_TO_INCH(m_set->property("margin-left").value().toDouble()) * KoDpi::dpiX();
-    width = width - POINT_TO_INCH(m_set->property("margin-right").value().toDouble()) * KoDpi::dpiX();
+    width = width - POINT_TO_INCH(m_set->property("margin-left").value().toDouble()) * KReportDpi::dpiX();
+    width = width - POINT_TO_INCH(m_set->property("margin-right").value().toDouble()) * KReportDpi::dpiX();
 
     return width;
 }

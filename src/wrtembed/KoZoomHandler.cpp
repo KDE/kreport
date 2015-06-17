@@ -21,7 +21,7 @@
 
 #include "KoZoomHandler.h"
 #include "KoUnit.h" // for POINT_TO_INCH
-#include "KoDpi.h"
+#include "KReportDpi.h"
 
 #include <QPointF>
 #include <QRectF>
@@ -36,7 +36,7 @@ KoZoomHandler::KoZoomHandler()
 {
     setZoom(1.0);
     setZoomMode( KoZoomMode::ZOOM_CONSTANT );
-    setDpi(KoDpi::dpiX(), KoDpi::dpiY());
+    setDpi(KReportDpi::dpiX(), KReportDpi::dpiY());
 }
 
 KoZoomHandler::~KoZoomHandler()
@@ -45,7 +45,7 @@ KoZoomHandler::~KoZoomHandler()
 
 void KoZoomHandler::setResolutionToStandard()
 {
-    setDpi(KoDpi::dpiX(), KoDpi::dpiY());
+    setDpi(KReportDpi::dpiX(), KReportDpi::dpiY());
 }
 
 void KoZoomHandler::setDpi(int dpiX, int dpiY)

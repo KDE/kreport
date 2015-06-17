@@ -19,7 +19,7 @@
  * Boston, MA 02110-1301, USA.
 */
 
-#include "KoDpi.h"
+#include "KReportDpi.h"
 
 #ifdef Q_WS_X11
 #include <QX11Info>
@@ -30,13 +30,13 @@
 
 #include <kglobal.h>
 
-KoDpi* KoDpi::self()
+KReportDpi* KReportDpi::self()
 {
-    K_GLOBAL_STATIC(KoDpi, s_instance)
+    K_GLOBAL_STATIC(KReportDpi, s_instance)
     return s_instance;
 }
 
-KoDpi::KoDpi()
+KReportDpi::KReportDpi()
 {
     // Another way to get the DPI of the display would be QPaintDeviceMetrics,
     // but we have no widget here (and moving this to KoView wouldn't allow
@@ -56,14 +56,14 @@ KoDpi::KoDpi()
 #endif
 }
 
-KoDpi::~KoDpi()
+KReportDpi::~KReportDpi()
 {
 }
 
-void KoDpi::setDPI(int x, int y)
+void KReportDpi::setDPI(int x, int y)
 {
     //qDebug(30006) << x <<"," << y;
-    KoDpi* s = self();
+    KReportDpi* s = self();
     s->m_dpiX = x;
     s->m_dpiY = y;
 }

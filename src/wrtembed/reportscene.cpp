@@ -92,7 +92,7 @@ void ReportScene::drawBackground(QPainter* painter, const QRectF & clip)
         QPen pen = painter->pen();
         painter->setPen(Qt::lightGray);
 
-        //kreportDebug() << "dpix" << KoDpi::dpiX() << "dpiy" << KoDpi::dpiY() << "mayorx:" << majorx << "majory" << majory << "pix:" << pixel_incrementx << "piy:" << pixel_incrementy;
+        //kreportDebug() << "dpix" << KReportDpi::dpiX() << "dpiy" << KReportDpi::dpiY() << "mayorx:" << majorx << "majory" << majory << "pix:" << pixel_incrementx << "piy:" << pixel_incrementy;
 
         QVector<QLine> lines;
         QVector<QPoint> points;
