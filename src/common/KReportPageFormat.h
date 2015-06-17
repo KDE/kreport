@@ -20,21 +20,21 @@
  * Boston, MA 02110-1301, USA.
 */
 
-#ifndef KOPAGEFORMAT_H
-#define KOPAGEFORMAT_H
+#ifndef KREPORTPAGEFORMAT_H
+#define KREPORTPAGEFORMAT_H
 
 #include <QPrinter>
 
 #include "kreport_export.h"
 
-/// The page formats calligra supports
-namespace KoPageFormat
+/// The page formats KReport supports
+namespace KReportPageFormat
 {
 /**
  * @brief Represents the paper format a document shall be printed on.
  *
  * For compatibility reasons, and because of screen and custom,
- * this enum doesn't map to QPrinter::PageSize but KoPageFormat::printerPageSize
+ * this enum doesn't map to QPrinter::PageSize but KReportPageFormat::printerPageSize
  * does the conversion.
  */
 enum Format {
@@ -140,4 +140,3 @@ KREPORT_EXPORT Format guessFormat(qreal width, qreal height);
 }
 
 #endif
-

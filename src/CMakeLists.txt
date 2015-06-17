@@ -25,7 +25,7 @@ set(kreport_LIB_SRCS
     common/KReportJsonTrader_p.cpp
     common/KReportPluginMetaData.cpp
     common/KoReportData.cpp
-    common/KoPageFormat.cpp
+    common/KReportPageFormat.cpp
     common/KoUnit.cpp
 
     renderer/KoReportPrintRenderer.cpp
@@ -222,7 +222,7 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
     PREFIX kreport
     RELATIVE common
     HEADER_NAMES
-        KoPageFormat
+        KReportPageFormat
         KoReportData
         KoReportItemBase
         KoReportItemLine

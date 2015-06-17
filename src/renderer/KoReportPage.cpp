@@ -19,7 +19,7 @@
 
 #include <KoReportRendererBase.h>
 
-#include "common/KoPageFormat.h"
+#include "common/KReportPageFormat.h"
 #include "common/KoUnit.h"
 #include "common/renderobjects.h"
 

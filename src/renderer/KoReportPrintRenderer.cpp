@@ -18,7 +18,7 @@
 
 #include "KoReportPrintRenderer.h"
 #include "common/renderobjects.h"
-#include "common/KoPageFormat.h"
+#include "common/KReportPageFormat.h"
 #include <QScreen>
 #include <QApplication>
 #include "kreport_debug.h"
@@ -47,7 +47,7 @@ bool KoReportPrintRenderer::setupPrinter( ORODocument * document, QPrinter * pPr
     if (document->pageOptions().getPageSize().isEmpty())
         pPrinter->setPageSize(QPrinter::Custom);
     else
-        pPrinter->setPageSize(KoPageFormat::printerPageSize(KoPageFormat::formatFromString(document->pageOptions().getPageSize())));
+        pPrinter->setPageSize(KReportPageFormat::printerPageSize(KReportPageFormat::formatFromString(document->pageOptions().getPageSize())));
 
     return true;
 }

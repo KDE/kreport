@@ -17,7 +17,7 @@
  */
 
 #include "reportpageoptions.h"
-#include "common/KoPageFormat.h"
+#include "common/KReportPageFormat.h"
 #include "KoUnit.h"
 #include <QApplication>
 #include <QScreen>
@@ -204,9 +204,9 @@ qreal ReportPageOptions::widthPx()
     int pageWidth;
 
     if (isPortrait()) {
-        pageWidth = KoPageFormat::width(KoPageFormat::formatFromString(getPageSize()), KoPageFormat::Portrait);
+        pageWidth = KReportPageFormat::width(KReportPageFormat::formatFromString(getPageSize()), KReportPageFormat::Portrait);
     } else {
-        pageWidth = KoPageFormat::width(KoPageFormat::formatFromString(getPageSize()), KoPageFormat::Landscape);
+        pageWidth = KReportPageFormat::width(KReportPageFormat::formatFromString(getPageSize()), KReportPageFormat::Landscape);
     }
 
     KoUnit pageUnit(KoUnit::Millimeter);
@@ -222,9 +222,9 @@ qreal ReportPageOptions::heightPx()
     int pageHeight;
 
     if (isPortrait()) {
-        pageHeight = KoPageFormat::height(KoPageFormat::formatFromString(getPageSize()), KoPageFormat::Portrait);
+        pageHeight = KReportPageFormat::height(KReportPageFormat::formatFromString(getPageSize()), KReportPageFormat::Portrait);
     } else {
-        pageHeight = KoPageFormat::height(KoPageFormat::formatFromString(getPageSize()), KoPageFormat::Landscape);
+        pageHeight = KReportPageFormat::height(KReportPageFormat::formatFromString(getPageSize()), KReportPageFormat::Landscape);
     }
 
     KoUnit pageUnit(KoUnit::Millimeter);

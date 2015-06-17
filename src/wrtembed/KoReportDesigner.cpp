@@ -28,7 +28,7 @@
 #include "KoReportDesignerItemLine.h"
 #include "KoRuler.h"
 #include "KoZoomHandler.h"
-#include "common/KoPageFormat.h"
+#include "common/KReportPageFormat.h"
 #include "KReportDpi.h"
 #include "common/krutils.h"
 #include "common/KoReportPluginInterface.h"
@@ -609,9 +609,9 @@ void KoReportDesigner::createProperties()
     m_title = new KProperty("title", QLatin1String("Report"), tr("Title"), tr("Report Title"));
 
     keys.clear();
-    keys =  KoPageFormat::pageFormatNames();
-    strings = KoPageFormat::localizedPageFormatNames();
-    QString defaultKey = KoPageFormat::formatString(KoPageFormat::defaultFormat());
+    keys =  KReportPageFormat::pageFormatNames();
+    strings = KReportPageFormat::localizedPageFormatNames();
+    QString defaultKey = KReportPageFormat::formatString(KReportPageFormat::defaultFormat());
     m_pageSize = new KProperty("page-size", keys, strings, defaultKey, tr("Page Size"));
 
     keys.clear(); strings.clear();
@@ -748,11 +748,11 @@ int KoReportDesigner::pageWidthPx() const
     int ch = 0;
     int width = 0;
 
-    KoPageFormat::Format pf = KoPageFormat::formatFromString(m_set->property("page-size").value().toString());
+    KReportPageFormat::Format pf = KReportPageFormat::formatFromString(m_set->property("page-size").value().toString());
 
-    cw = POINT_TO_INCH(MM_TO_POINT(KoPageFormat::width(pf, KoPageFormat::Portrait))) * KReportDpi::dpiX();
+    cw = POINT_TO_INCH(MM_TO_POINT(KReportPageFormat::width(pf, KReportPageFormat::Portrait))) * KReportDpi::dpiX();
 
-    ch = POINT_TO_INCH(MM_TO_POINT(KoPageFormat::height(pf, KoPageFormat::Portrait))) * KReportDpi::dpiY();
+    ch = POINT_TO_INCH(MM_TO_POINT(KReportPageFormat::height(pf, KReportPageFormat::Portrait))) * KReportDpi::dpiY();
 
     width = (m_set->property("print-orientation").value().toString() == QLatin1String("portrait") ? cw : ch);
 

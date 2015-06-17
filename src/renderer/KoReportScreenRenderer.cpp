@@ -18,7 +18,7 @@
 
 #include "KoReportScreenRenderer.h"
 #include "common/renderobjects.h"
-#include "common/KoPageFormat.h"
+#include "common/KReportPageFormat.h"
 #include "common/KoUnit.h"
 #include "kreport_debug.h"
 

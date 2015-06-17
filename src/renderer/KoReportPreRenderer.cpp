@@ -26,7 +26,7 @@
 #include "common/krreportdata.h"
 #include "common/krdetailsectiondata.h"
 #include "common/labelsizeinfo.h"
-#include "common/KoPageFormat.h"
+#include "common/KReportPageFormat.h"
 
 #ifdef KREPORT_SCRIPTING
 #include "scripting/krscripthandler.h"
@@ -467,8 +467,8 @@ ORODocument* KoReportPreRenderer::generate()
             rpo.setPageSize(label.paper());
         } else {
             // lookup the correct size information for the specified size paper
-            d->m_maxWidth = KoPageFormat::width(KoPageFormat::formatFromString(d->m_reportData->page.getPageSize()), KoPageFormat::Portrait);
-            d->m_maxHeight = KoPageFormat::height(KoPageFormat::formatFromString(d->m_reportData->page.getPageSize()), KoPageFormat::Portrait);
+            d->m_maxWidth = KReportPageFormat::width(KReportPageFormat::formatFromString(d->m_reportData->page.getPageSize()), KReportPageFormat::Portrait);
+            d->m_maxHeight = KReportPageFormat::height(KReportPageFormat::formatFromString(d->m_reportData->page.getPageSize()), KReportPageFormat::Portrait);
 
             KoUnit pageUnit(KoUnit::Millimeter);
             d->m_maxWidth = KoUnit::toInch(pageUnit.fromUserValue(d->m_maxWidth)) * dpiX;

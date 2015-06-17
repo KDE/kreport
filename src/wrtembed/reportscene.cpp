@@ -21,7 +21,7 @@
 #include "KoReportDesignerItemRectBase.h"
 #include "KoReportDesigner.h"
 #include "common/labelsizeinfo.h"
-#include "common/KoPageFormat.h"
+#include "common/KReportPageFormat.h"
 
 #include <QPainter>
 #include <QScreen>
