@@ -26,38 +26,61 @@
 #include <QDomDocument>
 #include "kreport_debug.h"
 
+//! @internal
+class ReportSectionDetail::Private
+{
+public:
+    explicit Private()
+        : pageBreak(ReportSectionDetail::BreakNone)
+    {}
+
+    ~Private()
+    {
+    }
+
+    QString name;
+    ReportSection *detail;
+    KoReportDesigner *reportDesigner;
+
+    QList<ReportSectionDetailGroup*> groupList;
+
+    QVBoxLayout *vboxlayout;
+
+    int pageBreak;
+};
+
 ReportSectionDetail::ReportSectionDetail(KoReportDesigner * rptdes)
         : QWidget(rptdes)
+        , d(new Private())
 {
     setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
-    m_pageBreak = BreakNone;
-    m_vboxlayout = new QVBoxLayout(this);
-    m_vboxlayout->setSpacing(0);
-    m_vboxlayout->setMargin(0);
-    m_reportDesigner = rptdes;
-    m_detail = new ReportSection(rptdes /*, this*/);
-    m_vboxlayout->addWidget(m_detail);
+    d->vboxlayout = new QVBoxLayout(this);
+    d->vboxlayout->setSpacing(0);
+    d->vboxlayout->setMargin(0);
+    d->reportDesigner = rptdes;
+    d->detail = new ReportSection(rptdes /*, this*/);
+    d->vboxlayout->addWidget(d->detail);
 
-    this->setLayout(m_vboxlayout);
+    this->setLayout(d->vboxlayout);
 }
+
 ReportSectionDetail::~ReportSectionDetail()
 {
-    // Qt should be handling everything for us
-    m_reportDesigner = 0;
+    delete d;
 }
 
 int ReportSectionDetail::pageBreak() const
 {
-    return m_pageBreak;
+    return d->pageBreak;
 }
 void ReportSectionDetail::setPageBreak(int pb)
 {
-    m_pageBreak = pb;
+    d->pageBreak = pb;
 }
 
 ReportSection * ReportSectionDetail::detailSection() const
 {
-    return m_detail;
+    return d->detail;
 }
 
 void ReportSectionDetail::buildXML(QDomDocument & doc, QDomElement & section)
@@ -69,14 +92,14 @@ void ReportSectionDetail::buildXML(QDomDocument & doc, QDomElement & section)
         section.appendChild(spagebreak);
     }
 
-    foreach(ReportSectionDetailGroup* rsdg, groupList) {
+    foreach(ReportSectionDetailGroup* rsdg, d->groupList) {
         rsdg->buildXML(doc, section);
     }
 
     // detail section
     QDomElement gdetail = doc.createElement(QLatin1String("report:section"));
     gdetail.setAttribute(QLatin1String("report:section-type"), QLatin1String("detail"));
-    m_detail->buildXML(doc, gdetail);
+    d->detail->buildXML(doc, gdetail);
     section.appendChild(gdetail);
 }
 
@@ -100,7 +123,7 @@ void ReportSectionDetail::initFromXML(QDomNode & section)
             insertGroupSection(groupSectionCount(), rsdg);
         } else if (n == QLatin1String("report:section") && node.toElement().attribute(QLatin1String("report:section-type")) == QLatin1String("detail")) {
             //kreportDebug() << "Creating detail section";
-            m_detail->initFromXML(node);
+            d->detail->initFromXML(node);
         } else {
             // unknown element
             kreportWarning() << "while parsing section encountered and unknown element: " <<  n;
@@ -111,53 +134,53 @@ void ReportSectionDetail::initFromXML(QDomNode & section)
 
 KoReportDesigner * ReportSectionDetail::reportDesigner() const
 {
-    return m_reportDesigner;
+    return d->reportDesigner;
 }
 
 int ReportSectionDetail::groupSectionCount() const
 {
-    return groupList.count();
+    return d->groupList.count();
 }
 
 ReportSectionDetailGroup * ReportSectionDetail::groupSection(int i) const
 {
-    return groupList.at(i);
+    return d->groupList.at(i);
 }
 
 void ReportSectionDetail::insertGroupSection(int idx, ReportSectionDetailGroup * rsd)
 {
-    groupList.insert(idx, rsd);
+    d->groupList.insert(idx, rsd);
 
     rsd->groupHeader()->setParent(this);
     rsd->groupFooter()->setParent(this);
 
     idx = 0;
     int gi = 0;
-    for (gi = 0; gi < (int) groupList.count(); gi++) {
-        rsd = groupList.at(gi);
-        m_vboxlayout->removeWidget(rsd->groupHeader());
-        m_vboxlayout->insertWidget(idx, rsd->groupHeader());
+    for (gi = 0; gi < (int) d->groupList.count(); gi++) {
+        rsd = d->groupList.at(gi);
+        d->vboxlayout->removeWidget(rsd->groupHeader());
+        d->vboxlayout->insertWidget(idx, rsd->groupHeader());
         idx++;
     }
-    m_vboxlayout->removeWidget(m_detail);
-    m_vboxlayout->insertWidget(idx, m_detail);
+    d->vboxlayout->removeWidget(d->detail);
+    d->vboxlayout->insertWidget(idx, d->detail);
     idx++;
-    for (gi = ((int) groupList.count() - 1); gi >= 0; --gi) {
-        rsd = groupList.at(gi);
-        m_vboxlayout->removeWidget(rsd->groupFooter());
-        m_vboxlayout->insertWidget(idx, rsd->groupFooter());
+    for (gi = ((int) d->groupList.count() - 1); gi >= 0; --gi) {
+        rsd = d->groupList.at(gi);
+        d->vboxlayout->removeWidget(rsd->groupFooter());
+        d->vboxlayout->insertWidget(idx, rsd->groupFooter());
         idx++;
     }
 
-    if (m_reportDesigner) m_reportDesigner->setModified(true);
+    if (d->reportDesigner) d->reportDesigner->setModified(true);
     adjustSize();
 }
 
 int ReportSectionDetail::indexOfGroupSection(const QString & column) const
 {
     // find the item by its name
-    for (uint i = 0; i < (uint)groupList.count(); i++) {
-        ReportSectionDetailGroup * rsd = groupList.at(i);
+    for (uint i = 0; i < (uint)d->groupList.count(); i++) {
+        ReportSectionDetailGroup * rsd = d->groupList.at(i);
         if (column == rsd->column()) return i;
     }
     return -1;
@@ -165,14 +188,14 @@ int ReportSectionDetail::indexOfGroupSection(const QString & column) const
 
 void ReportSectionDetail::removeGroupSection(int idx, bool del)
 {
-    ReportSectionDetailGroup * rsd = groupList.at(idx);
+    ReportSectionDetailGroup * rsd = d->groupList.at(idx);
 
-    m_vboxlayout->removeWidget(rsd->groupHeader());
-    m_vboxlayout->removeWidget(rsd->groupFooter());
+    d->vboxlayout->removeWidget(rsd->groupHeader());
+    d->vboxlayout->removeWidget(rsd->groupFooter());
 
-    groupList.removeAt(idx);
+    d->groupList.removeAt(idx);
 
-    if (m_reportDesigner) m_reportDesigner->setModified(true);
+    if (d->reportDesigner) d->reportDesigner->setModified(true);
     if (del) delete rsd;
     adjustSize();
 }
@@ -180,18 +203,18 @@ void ReportSectionDetail::removeGroupSection(int idx, bool del)
 QSize ReportSectionDetail::sizeHint() const
 {
     QSize s;
-    foreach(ReportSectionDetailGroup* rsdg, groupList) {
+    foreach(ReportSectionDetailGroup* rsdg, d->groupList) {
         if (rsdg->groupHeaderVisible()) s += rsdg->groupHeader()->size();
         if (rsdg->groupFooterVisible()) s += rsdg->groupFooter()->size();
     }
-    return s += m_detail->size();
+    return s += d->detail->size();
 }
 
 void ReportSectionDetail::setSectionCursor(const QCursor& c)
 {
-    if (m_detail)
-        m_detail->setSectionCursor(c);
-    foreach(ReportSectionDetailGroup* rsdg, groupList) {
+    if (d->detail)
+        d->detail->setSectionCursor(c);
+    foreach(ReportSectionDetailGroup* rsdg, d->groupList) {
         if (rsdg->groupHeader())
             rsdg->groupHeader()->setSectionCursor(c);
         if (rsdg->groupFooter())
@@ -201,10 +224,10 @@ void ReportSectionDetail::setSectionCursor(const QCursor& c)
 
 void ReportSectionDetail::unsetSectionCursor()
 {
-    if (m_detail)
-        m_detail->unsetSectionCursor();
+    if (d->detail)
+        d->detail->unsetSectionCursor();
 
-    foreach(ReportSectionDetailGroup* rsdg, groupList) {
+    foreach(ReportSectionDetailGroup* rsdg, d->groupList) {
         if (rsdg->groupHeader())
             rsdg->groupHeader()->unsetSectionCursor();
         if (rsdg->groupFooter())

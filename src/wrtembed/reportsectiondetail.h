@@ -26,7 +26,6 @@
 class QDomNode;
 class QDomElement;
 class QDomDocument;
-class QVBoxLayout;
 
 class ReportSection;
 class KoReportDesigner;
@@ -66,18 +65,10 @@ public:
     void setSectionCursor(const QCursor&);
     void unsetSectionCursor();
 
-protected:
-    QString m_query;
-
-    QString m_name;
-    ReportSection * m_detail;
-    KoReportDesigner * m_reportDesigner;
-
-    QList<ReportSectionDetailGroup*> groupList;
-
-    QVBoxLayout * m_vboxlayout;
-
-    int m_pageBreak;
+private:
+    Q_DISABLE_COPY(ReportSectionDetail)
+    class Private;
+    Private * const d;
 };
 
 #endif
