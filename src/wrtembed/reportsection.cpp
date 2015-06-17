@@ -34,6 +34,7 @@
 
 #include "kreport_debug.h"
 #include <QLabel>
+#include <QFrame>
 #include <QDomDocument>
 #include <QLayout>
 #include <QGridLayout>
@@ -43,16 +44,70 @@
 #include <QApplication>
 #include <QIcon>
 
+
+//! @internal
+class ReportResizeBar : public QFrame
+{
+    Q_OBJECT
+public:
+    explicit ReportResizeBar(QWidget * parent = 0, Qt::WindowFlags f = 0);
+
+Q_SIGNALS:
+    void barDragged(int delta);
+
+protected:
+    void mouseMoveEvent(QMouseEvent * e);
+};
+
+//! @internal
+class ReportSectionTitle : public QLabel
+{
+    Q_OBJECT
+public:
+    explicit ReportSectionTitle(QWidget *parent = 0);
+    ~ReportSectionTitle();
+
+Q_SIGNALS:
+    void clicked();
+
+protected:
+    virtual void paintEvent(QPaintEvent* event);
+    virtual void mousePressEvent(QMouseEvent *event);
+};
+
+//! @internal
+class ReportSection::Private
+{
+public:
+    explicit Private()
+    {}
+
+    ~Private()
+    {}
+
+    ReportSectionTitle *title;
+    ReportScene *scene;
+    ReportResizeBar *resizeBar;
+    ReportSceneView *sceneView;
+    KoReportDesigner*reportDesigner;
+    KoRuler *sectionRuler;
+
+    KRSectionData *sectionData;
+    int dpiY;
+};
+
+
 ReportSection::ReportSection(KoReportDesigner * rptdes)
         : QWidget(rptdes)
+        , d(new Private())
 {
-    m_sectionData = new KRSectionData(this);
-    connect(m_sectionData->propertySet(), SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
+    d->sectionData = new KRSectionData(this);
+    connect(d->sectionData->propertySet(), SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
     QScreen *srn = QApplication::screens().at(0);
-    m_dpiY = srn->logicalDotsPerInchY();
+    d->dpiY = srn->logicalDotsPerInchY();
 
-    m_reportDesigner = rptdes;
+    d->reportDesigner = rptdes;
     setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
 
     QGridLayout * glayout = new QGridLayout(this);
@@ -63,31 +118,31 @@ ReportSection::ReportSection(KoReportDesigner * rptdes)
     glayout->setSizeConstraint(QLayout::SetFixedSize);
 
     // ok create the base interface
-    m_title = new ReportSectionTitle(this);
-    m_title->setObjectName(QLatin1String("detail"));
-    m_title->setText(i18n("Detail"));
+    d->title = new ReportSectionTitle(this);
+    d->title->setObjectName(QLatin1String("detail"));
+    d->title->setText(i18n("Detail"));
 
-    m_sectionRuler = new KoRuler(this, Qt::Vertical, m_reportDesigner->zoomHandler());
-    m_sectionRuler->setUnit(m_reportDesigner->pageUnit());
-    m_scene = new ReportScene(m_reportDesigner->pageWidthPx(), m_dpiY, rptdes);
-    m_sceneView = new ReportSceneView(rptdes, m_scene, this);
-    m_sceneView->setObjectName(QLatin1String("scene view"));
-    m_sceneView->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+    d->sectionRuler = new KoRuler(this, Qt::Vertical, d->reportDesigner->zoomHandler());
+    d->sectionRuler->setUnit(d->reportDesigner->pageUnit());
+    d->scene = new ReportScene(d->reportDesigner->pageWidthPx(), d->dpiY, rptdes);
+    d->sceneView = new ReportSceneView(rptdes, d->scene, this);
+    d->sceneView->setObjectName(QLatin1String("scene view"));
+    d->sceneView->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
 
-    m_resizeBar = new ReportResizeBar(this);
+    d->resizeBar = new ReportResizeBar(this);
 
-    connect(m_resizeBar, SIGNAL(barDragged(int)), this, SLOT(slotResizeBarDragged(int)));
-    connect(m_reportDesigner, SIGNAL(pagePropertyChanged(KPropertySet&)),
+    connect(d->resizeBar, SIGNAL(barDragged(int)), this, SLOT(slotResizeBarDragged(int)));
+    connect(d->reportDesigner, SIGNAL(pagePropertyChanged(KPropertySet&)),
         this, SLOT(slotPageOptionsChanged(KPropertySet&)));
-    connect(m_scene, SIGNAL(clicked()), this, (SLOT(slotSceneClicked())));
-    connect(m_scene, SIGNAL(lostFocus()), m_title, SLOT(update()));
-    connect(m_title, SIGNAL(clicked()), this, (SLOT(slotSceneClicked())));
+    connect(d->scene, SIGNAL(clicked()), this, (SLOT(slotSceneClicked())));
+    connect(d->scene, SIGNAL(lostFocus()), d->title, SLOT(update()));
+    connect(d->title, SIGNAL(clicked()), this, (SLOT(slotSceneClicked())));
 
-    glayout->addWidget(m_title, 0, 0, 1, 2);
-    glayout->addWidget(m_sectionRuler, 1, 0);
-    glayout->addWidget(m_sceneView , 1, 1);
-    glayout->addWidget(m_resizeBar, 2, 0, 1, 2);
-    m_sectionRuler->setFixedWidth(m_sectionRuler->sizeHint().width());
+    glayout->addWidget(d->title, 0, 0, 1, 2);
+    glayout->addWidget(d->sectionRuler, 1, 0);
+    glayout->addWidget(d->sceneView , 1, 1);
+    glayout->addWidget(d->resizeBar, 2, 0, 1, 2);
+    d->sectionRuler->setFixedWidth(d->sectionRuler->sizeHint().width());
 
     setLayout(glayout);
     slotResizeBarDragged(0);
@@ -95,42 +150,42 @@ ReportSection::ReportSection(KoReportDesigner * rptdes)
 
 ReportSection::~ReportSection()
 {
-    // Qt should be handling everything for us
+    delete d;
 }
 
 void ReportSection::setTitle(const QString & s)
 {
-    m_title->setText(s);
+    d->title->setText(s);
 }
 
 void ReportSection::slotResizeBarDragged(int delta)
 {
-    if (m_sceneView->designer() && m_sceneView->designer()->propertySet()->property("page-size").value().toString() == QLatin1String("Labels")) {
+    if (d->sceneView->designer() && d->sceneView->designer()->propertySet()->property("page-size").value().toString() == QLatin1String("Labels")) {
         return; // we don't want to allow this on reports that are for labels
     }
     slotSceneClicked(); // switches property set to this section
 
-    qreal h = m_scene->height() + delta;
+    qreal h = d->scene->height() + delta;
 
     if (h < 1) h = 1;
 
-    h = m_scene->gridPoint(QPointF(0, h)).y();
-    m_sectionData->m_height->setValue(INCH_TO_POINT(h/m_dpiY));
-    m_sectionRuler->setRulerLength(h);
+    h = d->scene->gridPoint(QPointF(0, h)).y();
+    d->sectionData->m_height->setValue(INCH_TO_POINT(h/d->dpiY));
+    d->sectionRuler->setRulerLength(h);
 
-    m_scene->setSceneRect(0, 0, m_scene->width(), h);
-    m_sceneView->resizeContents(QSize(m_scene->width(), h));
+    d->scene->setSceneRect(0, 0, d->scene->width(), h);
+    d->sceneView->resizeContents(QSize(d->scene->width(), h));
 
-    m_reportDesigner->setModified(true);
+    d->reportDesigner->setModified(true);
 }
 
 void ReportSection::buildXML(QDomDocument &doc, QDomElement &section)
 {
-    KRUtils::setAttribute(section, QLatin1String("svg:height"), m_sectionData->m_height->value().toDouble());
-    section.setAttribute(QLatin1String("fo:background-color"), m_sectionData->backgroundColor().name());
+    KRUtils::setAttribute(section, QLatin1String("svg:height"), d->sectionData->m_height->value().toDouble());
+    section.setAttribute(QLatin1String("fo:background-color"), d->sectionData->backgroundColor().name());
 
     // now get a list of all the QGraphicsItems on this scene and output them.
-    QGraphicsItemList list = m_scene->items();
+    QGraphicsItemList list = d->scene->items();
     for (QGraphicsItemList::iterator it = list.begin();
             it != list.end(); ++it) {
         KoReportDesignerItemBase::buildXML((*it), doc, section);
@@ -144,14 +199,14 @@ void ReportSection::initFromXML(QDomNode & section)
     QString n;
 
     qreal h = KoUnit::parseValue(section.toElement().attribute(QLatin1String("svg:height"), QLatin1String("2.0cm")));
-    m_sectionData->m_height->setValue(h);
+    d->sectionData->m_height->setValue(h);
 
-    h  = POINT_TO_INCH(h) * m_dpiY;
+    h  = POINT_TO_INCH(h) * d->dpiY;
     //kreportDebug() << "Section Height: " << h;
-    m_scene->setSceneRect(0, 0, m_scene->width(), h);
+    d->scene->setSceneRect(0, 0, d->scene->width(), h);
     slotResizeBarDragged(0);
 
-    m_sectionData->m_backgroundColor->setValue(QColor(section.toElement().attribute(QLatin1String("fo:background-color"), QLatin1String("#ffffff"))));
+    d->sectionData->m_backgroundColor->setValue(QColor(section.toElement().attribute(QLatin1String("fo:background-color"), QLatin1String("#ffffff"))));
 
     for (int i = 0; i < nl.count(); ++i) {
         node = nl.item(i);
@@ -161,13 +216,13 @@ void ReportSection::initFromXML(QDomNode & section)
             //report:line is a special case as it is not a plugin
             QString reportItemName = n.mid(qstrlen("report:"));
             if (reportItemName == QLatin1String("line")) {
-                (new KoReportDesignerItemLine(node, m_sceneView->designer(), m_scene))->setVisible(true);
+                (new KoReportDesignerItemLine(node, d->sceneView->designer(), d->scene))->setVisible(true);
                 continue;
             }
             KoReportPluginManager* manager = KoReportPluginManager::self();
             KoReportPluginInterface *plugin = manager->plugin(reportItemName);
             if (plugin) {
-                QObject *obj = plugin->createDesignerInstance(node, m_reportDesigner, m_scene);
+                QObject *obj = plugin->createDesignerInstance(node, d->reportDesigner, d->scene);
                 if (obj) {
                     KoReportDesignerItemRectBase *entity = dynamic_cast<KoReportDesignerItemRectBase*>(obj);
                     if (entity) {
@@ -183,19 +238,19 @@ void ReportSection::initFromXML(QDomNode & section)
 
 QSize ReportSection::sizeHint() const
 {
-    return QSize(m_scene->width()  + m_sectionRuler->frameSize().width(), m_title->frameSize().height() + m_sceneView->sizeHint().height() + m_resizeBar->frameSize().height());
+    return QSize(d->scene->width()  + d->sectionRuler->frameSize().width(), d->title->frameSize().height() + d->sceneView->sizeHint().height() + d->resizeBar->frameSize().height());
 }
 
 void ReportSection::slotPageOptionsChanged(KPropertySet &set)
 {
     Q_UNUSED(set)
 
-    KoUnit unit = m_reportDesigner->pageUnit();
+    KoUnit unit = d->reportDesigner->pageUnit();
 
-    m_sectionData->m_height->setOption("unit", unit.symbol());
+    d->sectionData->m_height->setOption("unit", unit.symbol());
 
     //update items position with unit
-    QList<QGraphicsItem*> itms = m_scene->items();
+    QList<QGraphicsItem*> itms = d->scene->items();
     for (int i = 0; i < itms.size(); ++i) {
         KoReportItemBase *obj = dynamic_cast<KoReportItemBase*>(itms[i]);
         if (obj) {
@@ -203,23 +258,23 @@ void ReportSection::slotPageOptionsChanged(KPropertySet &set)
         }
     }
 
-    m_scene->setSceneRect(0, 0, m_reportDesigner->pageWidthPx(), m_scene->height());
-    m_title->setMinimumWidth(m_reportDesigner->pageWidthPx() + m_sectionRuler->frameSize().width());
-    m_sectionRuler->setUnit(m_reportDesigner->pageUnit());
+    d->scene->setSceneRect(0, 0, d->reportDesigner->pageWidthPx(), d->scene->height());
+    d->title->setMinimumWidth(d->reportDesigner->pageWidthPx() + d->sectionRuler->frameSize().width());
+    d->sectionRuler->setUnit(d->reportDesigner->pageUnit());
 
     //Trigger a redraw of the background
-    m_sceneView->resetCachedContent();
+    d->sceneView->resetCachedContent();
 
-    m_reportDesigner->adjustSize();
-    m_reportDesigner->repaint();
+    d->reportDesigner->adjustSize();
+    d->reportDesigner->repaint();
 
     slotResizeBarDragged(0);
 }
 
 void ReportSection::slotSceneClicked()
 {
-    m_reportDesigner->setActiveScene(m_scene);
-    m_reportDesigner->changeSet(m_sectionData->propertySet());
+    d->reportDesigner->setActiveScene(d->scene);
+    d->reportDesigner->changeSet(d->sectionData->propertySet());
 }
 
 void ReportSection::slotPropertyChanged(KPropertySet &s, KProperty &p)
@@ -229,39 +284,39 @@ void ReportSection::slotPropertyChanged(KPropertySet &s, KProperty &p)
 
     //Handle Background Color
     if (p.name() == "background-color") {
-        m_scene->setBackgroundBrush(p.value().value<QColor>());
+        d->scene->setBackgroundBrush(p.value().value<QColor>());
     }
 
     if (p.name() == "height") {
-    m_scene->setSceneRect(0, 0, m_scene->width(), POINT_TO_INCH(p.value().toDouble()) * m_dpiY);
+    d->scene->setSceneRect(0, 0, d->scene->width(), POINT_TO_INCH(p.value().toDouble()) * d->dpiY);
     slotResizeBarDragged(0);
     }
 
-    if (m_reportDesigner)
-        m_reportDesigner->setModified(true);
+    if (d->reportDesigner)
+        d->reportDesigner->setModified(true);
 
-    m_sceneView->resetCachedContent();
-    m_scene->update();
+    d->sceneView->resetCachedContent();
+    d->scene->update();
 }
 
 void ReportSection::setSectionCursor(const QCursor& c)
 {
-    if (m_sceneView)
-        m_sceneView->setCursor(c);
+    if (d->sceneView)
+        d->sceneView->setCursor(c);
 }
 
 void ReportSection::unsetSectionCursor()
 {
-    if (m_sceneView)
-        m_sceneView->unsetCursor();
+    if (d->sceneView)
+        d->sceneView->unsetCursor();
 }
 
 QGraphicsItemList ReportSection::items() const
 {
     QGraphicsItemList items;
 
-    if (m_scene) {
-        foreach (QGraphicsItem *itm, m_scene->items()) {
+    if (d->scene) {
+        foreach (QGraphicsItem *itm, d->scene->items()) {
             if (itm->parentItem() == 0) {
                 items << itm;
             }
@@ -326,7 +381,7 @@ void ReportSectionTitle::paintEvent(QPaintEvent * event)
     QPainter painter(this);
     ReportSection* _section = dynamic_cast<ReportSection*>(parent());
 
-    const bool current = _section->m_scene == _section->m_reportDesigner->activeScene();
+    const bool current = _section->d->scene == _section->d->reportDesigner->activeScene();
     QPalette::ColorGroup cg = QPalette::Inactive;
     QWidget *activeWindow = QApplication::activeWindow();
     if (activeWindow) {
@@ -358,3 +413,5 @@ void ReportSectionTitle::mousePressEvent(QMouseEvent *event)
         emit clicked();
     }
 }
+
+#include "reportsection.moc"

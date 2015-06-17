@@ -20,8 +20,7 @@
 #ifndef __REPORTSECTION_H__
 #define __REPORTSECTION_H__
 
-#include <QFrame>
-#include <QLabel>
+#include <QWidget>
 
 #include "kreport_export.h"
 #include "krsectiondata.h"
@@ -31,17 +30,11 @@ class QDomNode;
 class QDomDocument;
 class QDomElement;
 class QGraphicsItem;
-class QMouseEvent;
 typedef QList<QGraphicsItem*> QGraphicsItemList;
 
 class KPropertySet;
 
 class KoReportDesigner;
-class ReportSceneView;
-class ReportResizeBar;
-class KoRuler;
-class ReportSectionTitle;
-class ReportScene;
 
 //
 // Class ReportSection
@@ -82,47 +75,11 @@ private Q_SLOTS:
     void slotSceneClicked();
     void slotPropertyChanged(KPropertySet &, KProperty &);
 
-protected:
-    ReportSectionTitle * m_title;
-    ReportScene * m_scene;
-    ReportResizeBar * m_resizeBar;
-    ReportSceneView * m_sceneView;
-    KoReportDesigner* m_reportDesigner;
-    KoRuler* m_sectionRuler;
-
 private:
-    KRSectionData *m_sectionData;
-    int m_dpiY;
-
+    Q_DISABLE_COPY(ReportSection)
+    class Private;
+    Private * const d;
     friend class ReportSectionTitle;
-};
-
-class ReportResizeBar : public QFrame
-{
-    Q_OBJECT
-public:
-    explicit ReportResizeBar(QWidget * parent = 0, Qt::WindowFlags f = 0);
-
-Q_SIGNALS:
-    void barDragged(int delta);
-
-protected:
-    void mouseMoveEvent(QMouseEvent * e);
-};
-
-class ReportSectionTitle : public QLabel
-{
-    Q_OBJECT
-public:
-    explicit ReportSectionTitle(QWidget *parent = 0);
-    ~ReportSectionTitle();
-
-Q_SIGNALS:
-    void clicked();
-
-protected:
-    virtual void paintEvent(QPaintEvent* event);
-    virtual void mousePressEvent(QMouseEvent *event);
 };
 
 #endif
