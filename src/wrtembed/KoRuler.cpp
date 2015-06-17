@@ -249,7 +249,7 @@ void HorizontalPaintingStrategy::drawMeasurements(const KoRulerPrivate *d, QPain
     qreal numberStep = d->numberStepForUnit(); // number step in unit
 //    QRectF activeRangeRectangle;
     int numberStepPixel = qRound(d->viewConverter->documentToViewX(d->unit.fromUserValue(numberStep)));
-//    const bool adjustMillimeters = (d->unit.type() == KoUnit::Millimeter);
+//    const bool adjustMillimeters = (d->unit.type() == KReportUnit::Millimeter);
 
     const QFont font = QFontDatabase::systemFont(QFontDatabase::SmallestReadableFont);
     const QFontMetrics fontMetrics(font);
@@ -663,7 +663,7 @@ void HorizontalDistancesPaintingStrategy::drawMeasurements(const KoRulerPrivate 
 }
 
 KoRulerPrivate::KoRulerPrivate(KoRuler *parent, const KoViewConverter *vc, Qt::Orientation o)
-    : unit(KoUnit(KoUnit::Point)),
+    : unit(KReportUnit(KReportUnit::Point)),
     orientation(o),
     viewConverter(vc),
     offset(0),
@@ -707,15 +707,15 @@ KoRulerPrivate::~KoRulerPrivate()
 qreal KoRulerPrivate::numberStepForUnit() const
 {
     switch(unit.type()) {
-        case KoUnit::Inch:
-        case KoUnit::Centimeter:
-        case KoUnit::Decimeter:
-        case KoUnit::Millimeter:
+        case KReportUnit::Inch:
+        case KReportUnit::Centimeter:
+        case KReportUnit::Decimeter:
+        case KReportUnit::Millimeter:
             return 1.0;
-        case KoUnit::Pica:
-        case KoUnit::Cicero:
+        case KReportUnit::Pica:
+        case KReportUnit::Cicero:
             return 10.0;
-        case KoUnit::Point:
+        case KReportUnit::Point:
         default:
             return 100.0;
     }
@@ -832,12 +832,12 @@ KoRuler::~KoRuler()
     delete d;
 }
 
-KoUnit KoRuler::unit() const
+KReportUnit KoRuler::unit() const
 {
     return d->unit;
 }
 
-void KoRuler::setUnit(const KoUnit &unit)
+void KoRuler::setUnit(const KReportUnit &unit)
 {
     d->unit = unit;
     update();

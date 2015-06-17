@@ -54,7 +54,7 @@ bool KoReportItemBase::parseReportRect(const QDomElement & elemSource, KRPos *po
     return KRUtils::parseReportRect(elemSource, pos, siz);
 }
 
-void KoReportItemBase::setUnit(const KoUnit& u)
+void KoReportItemBase::setUnit(const KReportUnit& u)
 {
     m_pos.setUnit(u);
     m_size.setUnit(u);

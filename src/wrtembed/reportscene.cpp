@@ -43,12 +43,12 @@ ReportScene::ReportScene(qreal w, qreal h, KoReportDesigner *rd)
 
     if (m_unit.type() != m_rd->pageUnit().type()) {
         m_unit = m_rd->pageUnit();
-        if (m_unit.type() == KoUnit::Cicero ||
-            m_unit.type() == KoUnit::Pica ||
-            m_unit.type() == KoUnit::Millimeter) {
+        if (m_unit.type() == KReportUnit::Cicero ||
+            m_unit.type() == KReportUnit::Pica ||
+            m_unit.type() == KReportUnit::Millimeter) {
             m_majorX = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiX;
             m_majorY = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiY;
-        } else if (m_unit.type() == KoUnit::Point) {
+        } else if (m_unit.type() == KReportUnit::Point) {
             m_majorX = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiX;
             m_majorY = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiY;
         } else {
@@ -71,12 +71,12 @@ void ReportScene::drawBackground(QPainter* painter, const QRectF & clip)
     if (m_rd->propertySet()->property("grid-visible").value().toBool()) {
         if (m_unit.type() != m_rd->pageUnit().type()) {
             m_unit = m_rd->pageUnit();
-            if (m_unit.type() == KoUnit::Cicero ||
-                m_unit.type() == KoUnit::Pica ||
-                m_unit.type() == KoUnit::Millimeter) {
+            if (m_unit.type() == KReportUnit::Cicero ||
+                m_unit.type() == KReportUnit::Pica ||
+                m_unit.type() == KReportUnit::Millimeter) {
                 m_majorX = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiX;
                 m_majorY = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiY;
-            } else if (m_unit.type() == KoUnit::Point) {
+            } else if (m_unit.type() == KReportUnit::Point) {
                 m_majorX = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiX;
                 m_majorY = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiY;
             } else {
@@ -164,12 +164,12 @@ QPointF ReportScene::gridPoint(const QPointF& p)
         //! @todo Again? Copy&Paste error?
         if (m_unit.type() != m_rd->pageUnit().type()) {
             m_unit = m_rd->pageUnit();
-            if (m_unit.type() == KoUnit::Cicero ||
-                m_unit.type() == KoUnit::Pica ||
-                m_unit.type() == KoUnit::Millimeter) {
+            if (m_unit.type() == KReportUnit::Cicero ||
+                m_unit.type() == KReportUnit::Pica ||
+                m_unit.type() == KReportUnit::Millimeter) {
                 m_majorX = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiX;
                 m_majorY = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiY;
-            } else if (m_unit.type() == KoUnit::Point) {
+            } else if (m_unit.type() == KReportUnit::Point) {
                 m_majorX = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiX;
                 m_majorY = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiY;
             } else {

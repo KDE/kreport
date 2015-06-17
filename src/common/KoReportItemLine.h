@@ -42,7 +42,7 @@ public:
     virtual QString typeName() const;
     virtual int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset, const QVariant &data, KRScriptHandler *script);
 
-    virtual void setUnit(const KoUnit&);
+    virtual void setUnit(const KReportUnit&);
 
     KRPos startPosition() const;
     KRPos endPosition() const;

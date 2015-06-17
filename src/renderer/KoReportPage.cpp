@@ -20,7 +20,7 @@
 #include <KoReportRendererBase.h>
 
 #include "common/KReportPageFormat.h"
-#include "common/KoUnit.h"
+#include "common/KReportUnit.h"
 #include "common/renderobjects.h"
 
 #include <QWidget>

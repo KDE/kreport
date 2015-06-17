@@ -19,7 +19,7 @@
 #ifndef KORULER_P_H
 #define KORULER_P_H
 
-#include "KoUnit.h"
+#include "KReportUnit.h"
 #include <QWidget>
 
 class RulerTabChooser : public QWidget
@@ -131,7 +131,7 @@ public:
 
     void emitTabChanged();
 
-    KoUnit unit;
+    KReportUnit unit;
     const Qt::Orientation orientation;
     const KoViewConverter * const viewConverter;
 

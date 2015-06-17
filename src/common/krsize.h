@@ -19,7 +19,7 @@
 
 #include <QSizeF>
 
-#include "KoUnit.h"
+#include "KReportUnit.h"
 #include "kreport_export.h"
 
 class KProperty;
@@ -33,7 +33,7 @@ public:
         UpdateProperty,
         DontUpdateProperty
     };
-    explicit KRSize(const KoUnit& unit = KoUnit(KoUnit::Centimeter));
+    explicit KRSize(const KReportUnit& unit = KReportUnit(KReportUnit::Centimeter));
 
     ~KRSize();
     QSizeF toUnit() const;
@@ -42,14 +42,14 @@ public:
     void setSceneSize(const QSizeF&, UpdatePropertyFlag update = UpdateProperty);
     void setUnitSize(const QSizeF&, UpdatePropertyFlag update = UpdateProperty);
     void setPointSize(const QSizeF&, UpdatePropertyFlag update = UpdateProperty);
-    void setUnit(KoUnit);
+    void setUnit(KReportUnit);
 
     KProperty* property() const {
         return m_property;
     }
 private:
     QSizeF m_pointSize;
-    KoUnit m_unit;
+    KReportUnit m_unit;
     KProperty* m_property;
 };
 

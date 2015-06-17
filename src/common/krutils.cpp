@@ -385,10 +385,10 @@ bool KRUtils::parseReportRect(const QDomElement & elemSource, KRPos *pos, KRSize
     QPointF _pos;
     QSizeF _siz;
 
-    _pos.setX(KoUnit::parseValue(elemSource.attribute(QLatin1String("svg:x"), QLatin1String("1cm"))));
-    _pos.setY(KoUnit::parseValue(elemSource.attribute(QLatin1String("svg:y"), QLatin1String("1cm"))));
-    _siz.setWidth(KoUnit::parseValue(elemSource.attribute(QLatin1String("svg:width"), QLatin1String("1cm"))));
-    _siz.setHeight(KoUnit::parseValue(elemSource.attribute(QLatin1String("svg:height"), QLatin1String("1cm"))));
+    _pos.setX(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:x"), QLatin1String("1cm"))));
+    _pos.setY(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:y"), QLatin1String("1cm"))));
+    _siz.setWidth(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:width"), QLatin1String("1cm"))));
+    _siz.setHeight(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:height"), QLatin1String("1cm"))));
 
     pos->setPointPos(_pos);
     siz->setPointSize(_siz);

@@ -19,7 +19,7 @@
 #include "KoReportScreenRenderer.h"
 #include "common/renderobjects.h"
 #include "common/KReportPageFormat.h"
-#include "common/KoUnit.h"
+#include "common/KReportUnit.h"
 #include "kreport_debug.h"
 
 KoReportScreenRenderer::KoReportScreenRenderer()

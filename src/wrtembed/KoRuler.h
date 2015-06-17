@@ -29,7 +29,7 @@
 
 class KoViewConverter;
 class KoRulerPrivate;
-class KoUnit;
+class KReportUnit;
 
 /**
  * Decorator widget to draw a single ruler around a canvas.
@@ -54,7 +54,7 @@ public:
     };
 
     /// The ruler's unit
-    KoUnit unit() const;
+    KReportUnit unit() const;
 
     /// The length of the ruler in points (pt)
     qreal rulerLength() const;
@@ -95,7 +95,7 @@ public:
 
 public Q_SLOTS:
     /// Set the unit of the ruler
-    void setUnit(const KoUnit &unit);
+    void setUnit(const KReportUnit &unit);
 
     /** Set the offset. Use this function to sync the ruler with
       * the canvas' position on screen

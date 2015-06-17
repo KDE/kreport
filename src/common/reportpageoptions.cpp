@@ -18,7 +18,7 @@
 
 #include "reportpageoptions.h"
 #include "common/KReportPageFormat.h"
-#include "KoUnit.h"
+#include "KReportUnit.h"
 #include <QApplication>
 #include <QScreen>
 
@@ -209,10 +209,10 @@ qreal ReportPageOptions::widthPx()
         pageWidth = KReportPageFormat::width(KReportPageFormat::formatFromString(getPageSize()), KReportPageFormat::Landscape);
     }
 
-    KoUnit pageUnit(KoUnit::Millimeter);
+    KReportUnit pageUnit(KReportUnit::Millimeter);
     QScreen *srn = QApplication::screens().at(0);
 
-    pageWidth = KoUnit::toInch(pageUnit.fromUserValue(pageWidth)) * srn->logicalDotsPerInchX();
+    pageWidth = KReportUnit::toInch(pageUnit.fromUserValue(pageWidth)) * srn->logicalDotsPerInchX();
 
     return pageWidth;
 }
@@ -227,10 +227,10 @@ qreal ReportPageOptions::heightPx()
         pageHeight = KReportPageFormat::height(KReportPageFormat::formatFromString(getPageSize()), KReportPageFormat::Landscape);
     }
 
-    KoUnit pageUnit(KoUnit::Millimeter);
+    KReportUnit pageUnit(KReportUnit::Millimeter);
     QScreen *srn = QApplication::screens().at(0);
 
-    pageHeight = KoUnit::toInch(pageUnit.fromUserValue(pageHeight)) * srn->logicalDotsPerInchY();
+    pageHeight = KReportUnit::toInch(pageUnit.fromUserValue(pageHeight)) * srn->logicalDotsPerInchY();
 
     return pageHeight;
 }

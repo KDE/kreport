@@ -24,7 +24,7 @@
 #include <KoOdfGraphicStyles.h>
 #include <KoGenStyle.h>
 #include <KoGenStyles.h>
-#include <KoUnit.h>
+#include <KReportUnit.h>
 #include <KoStore.h>
 #include <KoStoreDevice.h>
 

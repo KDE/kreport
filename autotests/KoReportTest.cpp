@@ -31,7 +31,7 @@
 #include "KoReportDesignerItemRectBase.h"
 
 
-#include "KoUnit.h"
+#include "KReportUnit.h"
 #include "KReportDpi.h"
 
 #include <QPointF>
@@ -60,20 +60,20 @@ void KoReportTest::pageOptions()
     doc.setContent( s );
     KoReportDesigner designer(0, doc.documentElement());
     QCOMPARE(designer.propertySet()->property("page-size").value().toString(), QString("A5"));
-    QCOMPARE(designer.propertySet()->property("margin-bottom").value().toDouble(), KoUnit::parseValue("1.5cm"));
-    QCOMPARE(designer.propertySet()->property("margin-top").value().toDouble(), KoUnit::parseValue("2.0cm"));
-    QCOMPARE(designer.propertySet()->property("margin-left").value().toDouble(), KoUnit::parseValue("3.0cm"));
-    QCOMPARE(designer.propertySet()->property("margin-right").value().toDouble(), KoUnit::parseValue("4.0cm"));
+    QCOMPARE(designer.propertySet()->property("margin-bottom").value().toDouble(), KReportUnit::parseValue("1.5cm"));
+    QCOMPARE(designer.propertySet()->property("margin-top").value().toDouble(), KReportUnit::parseValue("2.0cm"));
+    QCOMPARE(designer.propertySet()->property("margin-left").value().toDouble(), KReportUnit::parseValue("3.0cm"));
+    QCOMPARE(designer.propertySet()->property("margin-right").value().toDouble(), KReportUnit::parseValue("4.0cm"));
 
     KoReportPreRenderer renderer( designer.document() );
     renderer.generate();
     ReportPageOptions opt = renderer.reportData()->pageOptions();
 
     QCOMPARE(opt.getPageSize(), QString("A5"));
-    QCOMPARE(QString::number(INCH_TO_POINT(opt.getMarginBottom()) / KReportDpi::dpiY()), QString::number(KoUnit::parseValue("1.5cm")));
-    QCOMPARE(QString::number(INCH_TO_POINT(opt.getMarginTop()) / KReportDpi::dpiY()), QString::number(KoUnit::parseValue("2.0cm")));
-    QCOMPARE(QString::number(INCH_TO_POINT(opt.getMarginLeft()) / KReportDpi::dpiY()), QString::number(KoUnit::parseValue("3.0cm")));
-    QCOMPARE(QString::number(INCH_TO_POINT(opt.getMarginRight()) / KReportDpi::dpiY()), QString::number(KoUnit::parseValue("4.0cm")));
+    QCOMPARE(QString::number(INCH_TO_POINT(opt.getMarginBottom()) / KReportDpi::dpiY()), QString::number(KReportUnit::parseValue("1.5cm")));
+    QCOMPARE(QString::number(INCH_TO_POINT(opt.getMarginTop()) / KReportDpi::dpiY()), QString::number(KReportUnit::parseValue("2.0cm")));
+    QCOMPARE(QString::number(INCH_TO_POINT(opt.getMarginLeft()) / KReportDpi::dpiY()), QString::number(KReportUnit::parseValue("3.0cm")));
+    QCOMPARE(QString::number(INCH_TO_POINT(opt.getMarginRight()) / KReportDpi::dpiY()), QString::number(KReportUnit::parseValue("4.0cm")));
 }
 
 void KoReportTest::lineItem()
@@ -111,8 +111,8 @@ void KoReportTest::lineItem()
     QCOMPARE(l->Z, 1.5);
     KRPos start = l->startPosition();
     KRPos end = l->endPosition();
-    QCOMPARE(start.toPoint(), QPointF(KoUnit::parseValue("1.5cm"), KoUnit::parseValue("0.5cm")));
-    QCOMPARE(end.toPoint(), QPointF(KoUnit::parseValue("4.5cm"), KoUnit::parseValue("2.5cm")));
+    QCOMPARE(start.toPoint(), QPointF(KReportUnit::parseValue("1.5cm"), KReportUnit::parseValue("0.5cm")));
+    QCOMPARE(end.toPoint(), QPointF(KReportUnit::parseValue("4.5cm"), KReportUnit::parseValue("2.5cm")));
 
     KoReportPreRenderer renderer( designer.document() );
     renderer.generate();
@@ -122,8 +122,8 @@ void KoReportTest::lineItem()
     QCOMPARE(l->Z, 1.5);
     start = l->startPosition();
     end = l->endPosition();
-    QCOMPARE(start.toPoint(), QPointF(KoUnit::parseValue("1.5cm"), KoUnit::parseValue("0.5cm")));
-    QCOMPARE(end.toPoint(), QPointF(KoUnit::parseValue("4.5cm"), KoUnit::parseValue("2.5cm")));
+    QCOMPARE(start.toPoint(), QPointF(KReportUnit::parseValue("1.5cm"), KReportUnit::parseValue("0.5cm")));
+    QCOMPARE(end.toPoint(), QPointF(KReportUnit::parseValue("4.5cm"), KReportUnit::parseValue("2.5cm")));
 }
 
 void KoReportTest::rectItem()
@@ -164,7 +164,7 @@ void KoReportTest::rectItem()
     KoReportDesignerItemRectBase *rect = dynamic_cast<KoReportDesignerItemRectBase*>(sec->items().first());
 
     QVERIFY(rect != 0);
-    QRectF expected( QPointF(KoUnit::parseValue("1.5cm"), KoUnit::parseValue("0.5cm")), QSizeF(KoUnit::parseValue("4.5cm"), KoUnit::parseValue("0.75cm")));
+    QRectF expected( QPointF(KReportUnit::parseValue("1.5cm"), KReportUnit::parseValue("0.5cm")), QSizeF(KReportUnit::parseValue("4.5cm"), KReportUnit::parseValue("0.75cm")));
     QCOMPARE(rect->pointRect(), expected);
 
     KoReportPreRenderer renderer( designer.document() );
@@ -174,10 +174,10 @@ void KoReportTest::rectItem()
     QVERIFY(item != 0);
     KRPos pos = item->position();
     KRSize size = item->size();
-    QCOMPARE(pos.toPoint().x(), KoUnit::parseValue("1.5cm"));
-    QCOMPARE(pos.toPoint().y(), KoUnit::parseValue("0.5cm"));
-    QCOMPARE(size.toPoint(), QSizeF(KoUnit::parseValue("4.5cm"), KoUnit::parseValue("0.75cm")));
-    QCOMPARE(size.toPoint(), QSizeF(KoUnit::parseValue("4.5cm"), KoUnit::parseValue("0.75cm")));
+    QCOMPARE(pos.toPoint().x(), KReportUnit::parseValue("1.5cm"));
+    QCOMPARE(pos.toPoint().y(), KReportUnit::parseValue("0.5cm"));
+    QCOMPARE(size.toPoint(), QSizeF(KReportUnit::parseValue("4.5cm"), KReportUnit::parseValue("0.75cm")));
+    QCOMPARE(size.toPoint(), QSizeF(KReportUnit::parseValue("4.5cm"), KReportUnit::parseValue("0.75cm")));
 }
 
 QTEST_KDEMAIN(KoReportTest, GUI)

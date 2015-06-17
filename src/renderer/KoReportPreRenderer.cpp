@@ -470,9 +470,9 @@ ORODocument* KoReportPreRenderer::generate()
             d->m_maxWidth = KReportPageFormat::width(KReportPageFormat::formatFromString(d->m_reportData->page.getPageSize()), KReportPageFormat::Portrait);
             d->m_maxHeight = KReportPageFormat::height(KReportPageFormat::formatFromString(d->m_reportData->page.getPageSize()), KReportPageFormat::Portrait);
 
-            KoUnit pageUnit(KoUnit::Millimeter);
-            d->m_maxWidth = KoUnit::toInch(pageUnit.fromUserValue(d->m_maxWidth)) * dpiX;
-            d->m_maxHeight = KoUnit::toInch(pageUnit.fromUserValue(d->m_maxHeight)) * dpiY;
+            KReportUnit pageUnit(KReportUnit::Millimeter);
+            d->m_maxWidth = KReportUnit::toInch(pageUnit.fromUserValue(d->m_maxWidth)) * dpiX;
+            d->m_maxHeight = KReportUnit::toInch(pageUnit.fromUserValue(d->m_maxHeight)) * dpiY;
         }
     }
 

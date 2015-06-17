@@ -21,8 +21,8 @@
  * Boston, MA 02110-1301, USA.
 */
 
-#ifndef KOUNIT_H
-#define KOUNIT_H
+#ifndef KREPORTUNIT_H
+#define KREPORTUNIT_H
 
 #include <math.h> // for floor
 
@@ -56,7 +56,7 @@ class QStringList;
 #define PI_TO_POINT(pi) qreal((pi)*12)
 #define CC_TO_POINT(cc) qreal((cc)*12.840103)
 /**
- * %Calligra stores everything in pt (using "qreal") internally.
+ * %KReport stores everything in pt (using "qreal") internally.
  * When displaying a value to the user, the value is converted to the user's unit
  * of choice, and rounded to a reasonable precision to avoid 0.999999
  *
@@ -65,10 +65,10 @@ class QStringList;
  * bound to the order in the enum (so ABI-compatible extension is possible) and
  * with the order and scope of listed types controlled by the @c ListOptions parameter.
  */
-class KREPORT_EXPORT KoUnit
+class KREPORT_EXPORT KReportUnit
 {
 public:
-    /** Length units supported by Calligra. */
+    /** Length units supported by KReport. */
     enum Type {
         Millimeter = 0,
         Point,  ///< Postscript point, 1/72th of an Inco
@@ -89,35 +89,35 @@ public:
     };
      Q_DECLARE_FLAGS(ListOptions, ListOption)
 
-    /** Returns a KoUnit instance with the type at the @p index of the UI list with the given @p listOptions. */
-    static KoUnit fromListForUi(int index, ListOptions listOptions = ListAll, qreal factor = 1.0);
+    /** Returns a KReportUnit instance with the type at the @p index of the UI list with the given @p listOptions. */
+    static KReportUnit fromListForUi(int index, ListOptions listOptions = ListAll, qreal factor = 1.0);
 
-    /// Convert a unit symbol string into a KoUnit
+    /// Convert a unit symbol string into a KReportUnit
     /// @param symbol symbol to convert
     /// @param ok if set, it will be true if the unit was known, false if unknown
-    static KoUnit fromSymbol(const QString &symbol, bool *ok = 0);
+    static KReportUnit fromSymbol(const QString &symbol, bool *ok = 0);
 
     /** Construction requires initialization. The factor is for variable factor units like pixel */
-    explicit KoUnit(Type unit = Point, qreal factor = 1.0) {
+    explicit KReportUnit(Type unit = Point, qreal factor = 1.0) {
         m_type = unit;
         m_pixelConversion = factor;
     }
 
-    KoUnit& operator=(Type unit) {
+    KReportUnit& operator=(Type unit) {
         m_type = unit; m_pixelConversion = 1.0; return *this;
     }
 
-    bool operator!=(const KoUnit &other) const {
+    bool operator!=(const KReportUnit &other) const {
         return !operator==(other);
     }
 
-    bool operator==(const KoUnit &other) const {
+    bool operator==(const KReportUnit &other) const {
         return m_type == other.m_type &&
             (m_type != Pixel ||
              qFuzzyCompare(m_pixelConversion, other.m_pixelConversion));
     }
 
-    KoUnit::Type type() const {
+    KReportUnit::Type type() const {
         return m_type;
     }
 
@@ -188,7 +188,7 @@ public:
     /**
      * convert the given value directly from one unit to another
      */
-    static qreal convertFromUnitToUnit(const qreal value, const KoUnit &fromUnit, const KoUnit &toUnit, qreal factor = 1.0);
+    static qreal convertFromUnitToUnit(const qreal value, const KReportUnit &fromUnit, const KReportUnit &toUnit, qreal factor = 1.0);
 
 
     /**
@@ -199,10 +199,10 @@ public:
 
     /**
      * Convert the value @p ptValue to a given unit @p unit
-     * Unlike KoUnit::ptToUnit the return value remains unrounded, so that it can be used in complex calculation
+     * Unlike KReportUnit::ptToUnit the return value remains unrounded, so that it can be used in complex calculation
      * \return the converted value
      */
-    static qreal ptToUnit(const qreal ptValue, const KoUnit &unit);
+    static qreal ptToUnit(const qreal ptValue, const KReportUnit &unit);
 
     /// This method is the one to use to display a value in a dialog
     /// @return the value @p ptValue converted the unit and rounded, ready to be displayed
@@ -220,7 +220,7 @@ public:
     qreal fromUserValue(const QString &value, bool *ok = 0) const;
 
     /// Get the description string of the given unit
-    static QString unitDescription(KoUnit::Type type);
+    static QString unitDescription(KReportUnit::Type type);
 
     /// Get the symbol string of the unit
     QString symbol() const;
@@ -232,7 +232,7 @@ public:
     /// if it is controlled with the given @p listOptions.
     int indexInListForUi(ListOptions listOptions = ListAll) const;
 
-    /// parse common %Calligra and Odf values, like "10cm", "5mm" to pt
+    /// parse common %KReport and Odf values, like "10cm", "5mm" to pt
     static qreal parseValue(const QString &value, qreal defaultVal = 0.0);
 
     /// parse an angle to its value in degrees
@@ -266,10 +266,10 @@ private:
 };
 
 #ifndef QT_NO_DEBUG_STREAM
-KREPORT_EXPORT QDebug operator<<(QDebug, const KoUnit &);
+KREPORT_EXPORT QDebug operator<<(QDebug, const KReportUnit &);
 #endif
 
-Q_DECLARE_METATYPE(KoUnit)
-Q_DECLARE_OPERATORS_FOR_FLAGS(KoUnit::ListOptions)
+Q_DECLARE_METATYPE(KReportUnit)
+Q_DECLARE_OPERATORS_FOR_FLAGS(KReportUnit::ListOptions)
 
 #endif

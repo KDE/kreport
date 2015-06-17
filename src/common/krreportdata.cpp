@@ -16,7 +16,7 @@
  */
 
 #include "krreportdata.h"
-#include "KoUnit.h"
+#include "KReportUnit.h"
 #include "krdetailsectiondata.h"
 #include "KoReportItemBase.h"
 
@@ -72,17 +72,17 @@ KoReportReportData::KoReportReportData(const QDomElement & elemSource, QObject *
             if (pagetype == QLatin1String("predefined")) {
                 page.setPageSize(elemThis.attribute(QLatin1String("report:page-size"), QLatin1String("A4")));
             } else if (pagetype == QLatin1String("custom")) {
-                page.setCustomWidth(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute(QLatin1String("report:custom-page-width"), QString()))) * dpiX);
-                page.setCustomHeight(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute(QLatin1String("report:custom-page-height"), QString()))) * dpiY);
+                page.setCustomWidth(POINT_TO_INCH(KReportUnit::parseValue(elemThis.attribute(QLatin1String("report:custom-page-width"), QString()))) * dpiX);
+                page.setCustomHeight(POINT_TO_INCH(KReportUnit::parseValue(elemThis.attribute(QLatin1String("report:custom-page-height"), QString()))) * dpiY);
                 page.setPageSize(QLatin1String("Custom"));
             } else if (pagetype == QLatin1String("label")) {
                 page.setLabelType(elemThis.firstChild().nodeValue());
             }
             //! @todo add config for default margins or add within templates support
-            page.setMarginBottom(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-bottom"), QLatin1String("1.0cm")))) * dpiY);
-            page.setMarginTop(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-top"), QLatin1String("1.0cm")))) * dpiY);
-            page.setMarginLeft(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-left"), QLatin1String("1.0cm")))) * dpiX);
-            page.setMarginRight(POINT_TO_INCH(KoUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-right"), QLatin1String("1.0cm")))) * dpiX);
+            page.setMarginBottom(POINT_TO_INCH(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-bottom"), QLatin1String("1.0cm")))) * dpiY);
+            page.setMarginTop(POINT_TO_INCH(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-top"), QLatin1String("1.0cm")))) * dpiY);
+            page.setMarginLeft(POINT_TO_INCH(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-left"), QLatin1String("1.0cm")))) * dpiX);
+            page.setMarginRight(POINT_TO_INCH(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-right"), QLatin1String("1.0cm")))) * dpiX);
 
             page.setPortrait(elemThis.attribute(QLatin1String("report:print-orientation"), QLatin1String("portrait")) == QLatin1String("portrait"));
 

@@ -39,10 +39,10 @@ KoReportItemLine::KoReportItemLine(QDomNode & element)
     m_name->setValue(element.toElement().attribute(QLatin1String("report:name")));
     Z = element.toElement().attribute(QLatin1String("report:z-index")).toDouble();
 
-    _s.setX(KoUnit::parseValue(element.toElement().attribute(QLatin1String("svg:x1"), QLatin1String("1cm"))));
-    _s.setY(KoUnit::parseValue(element.toElement().attribute(QLatin1String("svg:y1"), QLatin1String("1cm"))));
-    _e.setX(KoUnit::parseValue(element.toElement().attribute(QLatin1String("svg:x2"), QLatin1String("1cm"))));
-    _e.setY(KoUnit::parseValue(element.toElement().attribute(QLatin1String("svg:y2"), QLatin1String("2cm"))));
+    _s.setX(KReportUnit::parseValue(element.toElement().attribute(QLatin1String("svg:x1"), QLatin1String("1cm"))));
+    _s.setY(KReportUnit::parseValue(element.toElement().attribute(QLatin1String("svg:y1"), QLatin1String("1cm"))));
+    _e.setX(KReportUnit::parseValue(element.toElement().attribute(QLatin1String("svg:x2"), QLatin1String("1cm"))));
+    _e.setY(KReportUnit::parseValue(element.toElement().attribute(QLatin1String("svg:y2"), QLatin1String("2cm"))));
     m_start.setPointPos(_s);
     m_end.setPointPos(_e);
 
@@ -135,7 +135,7 @@ int KoReportItemLine::renderSimpleData(OROPage *page, OROSection *section, const
     return 0;
 }
 
-void KoReportItemLine::setUnit(const KoUnit &u)
+void KoReportItemLine::setUnit(const KReportUnit &u)
 {
     m_start.setUnit(u);
     m_end.setUnit(u);

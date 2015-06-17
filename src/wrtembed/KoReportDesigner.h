@@ -37,7 +37,7 @@ class QString;
 class KoZoomHandler;
 class ReportSectionDetail;
 class ReportSection;
-class KoUnit;
+class KReportUnit;
 class ReportScene;
 class ReportSceneView;
 class ReportWriterSectionData;
@@ -194,7 +194,7 @@ public:
     /**
     @brief Return the current unit assigned to the report
     */
-    KoUnit pageUnit() const;
+    KReportUnit pageUnit() const;
 
     /**
     @brief Handle the context menu event for a report section

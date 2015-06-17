@@ -23,7 +23,7 @@
 #include <QScreen>
 #include <QApplication>
 
-KRSize::KRSize(const KoUnit& unit)
+KRSize::KRSize(const KReportUnit& unit)
 {
     m_unit = unit;
     m_property = new KProperty("size", toScene(), i18n("Size"));
@@ -70,7 +70,7 @@ void KRSize::setPointSize(const QSizeF& s, UpdatePropertyFlag update)
         m_property->setValue(toUnit());
 }
 
-void KRSize::setUnit(KoUnit u)
+void KRSize::setUnit(KReportUnit u)
 {
     m_unit = u;
     m_property->setValue(toUnit());

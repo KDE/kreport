@@ -26,7 +26,7 @@ set(kreport_LIB_SRCS
     common/KReportPluginMetaData.cpp
     common/KoReportData.cpp
     common/KReportPageFormat.cpp
-    common/KoUnit.cpp
+    common/KReportUnit.cpp
 
     renderer/KoReportPrintRenderer.cpp
     renderer/KoReportPreRenderer.cpp
@@ -229,7 +229,7 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
         KReportPluginMetaData
         KoReportPluginManager
         KoReportPluginInterface
-        KoUnit
+        KReportUnit
         krsize
         krpos
         krreportdata

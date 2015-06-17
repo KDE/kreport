@@ -198,7 +198,7 @@ void ReportSection::initFromXML(QDomNode & section)
     QDomNode node;
     QString n;
 
-    qreal h = KoUnit::parseValue(section.toElement().attribute(QLatin1String("svg:height"), QLatin1String("2.0cm")));
+    qreal h = KReportUnit::parseValue(section.toElement().attribute(QLatin1String("svg:height"), QLatin1String("2.0cm")));
     d->sectionData->m_height->setValue(h);
 
     h  = POINT_TO_INCH(h) * d->dpiY;
@@ -245,7 +245,7 @@ void ReportSection::slotPageOptionsChanged(KPropertySet &set)
 {
     Q_UNUSED(set)
 
-    KoUnit unit = d->reportDesigner->pageUnit();
+    KReportUnit unit = d->reportDesigner->pageUnit();
 
     d->sectionData->m_height->setOption("unit", unit.symbol());
 

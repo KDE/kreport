@@ -24,7 +24,7 @@
 #include <QScreen>
 #include <QApplication>
 
-KRPos::KRPos(const KoUnit& unit)
+KRPos::KRPos(const KReportUnit& unit)
 {
     m_unit = unit;
     m_property = new KProperty("position", toScene(), i18n("Position"));
@@ -75,7 +75,7 @@ void KRPos::setPointPos(const QPointF& pos, UpdatePropertyFlag update)
         m_property->setValue(toUnit());
 }
 
-void KRPos::setUnit(const KoUnit& u)
+void KRPos::setUnit(const KReportUnit& u)
 {
     m_unit = u;
     m_property->setValue(toUnit());

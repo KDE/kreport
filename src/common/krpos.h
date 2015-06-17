@@ -22,7 +22,7 @@
 #include <QPointF>
 
 #include "kreport_export.h"
-#include "KoUnit.h"
+#include "KReportUnit.h"
 
 class KProperty;
 
@@ -36,7 +36,7 @@ public:
         DontUpdateProperty
     };
 
-    explicit KRPos(const KoUnit& unit = KoUnit(KoUnit::Centimeter));
+    explicit KRPos(const KReportUnit& unit = KReportUnit(KReportUnit::Centimeter));
 
     ~KRPos();
     QPointF toUnit() const;
@@ -45,16 +45,16 @@ public:
     void setScenePos(const QPointF&, UpdatePropertyFlag update = UpdateProperty);
     void setUnitPos(const QPointF&, UpdatePropertyFlag update = UpdateProperty);
     void setPointPos(const QPointF&, UpdatePropertyFlag update = UpdateProperty);
-    void setUnit(const KoUnit& unit);
+    void setUnit(const KReportUnit& unit);
     void setName(const QString& name);
-    KoUnit unit() const { return m_unit; }
+    KReportUnit unit() const { return m_unit; }
 
     KProperty* property() const {
         return m_property;
     }
 private:
     QPointF m_pointPos;
-    KoUnit m_unit;
+    KReportUnit m_unit;
     KProperty* m_property;
 };
 

@@ -106,11 +106,11 @@ void KRSectionData::createProperties(const QDomElement & elemSource)
 {
     m_set = new KPropertySet(this, QLatin1String("Section"));
 
-    m_height = new KProperty("height", KoUnit(KoUnit::Centimeter).fromUserValue(2.0), tr("Height"));
+    m_height = new KProperty("height", KReportUnit(KReportUnit::Centimeter).fromUserValue(2.0), tr("Height"));
     m_backgroundColor = new KProperty("background-color", QColor(Qt::white), tr("Background Color"));
     m_height->setOption("unit", QLatin1String("cm"));
     if (!elemSource.isNull())
-        m_height->setValue(KoUnit::parseValue(elemSource.attribute(QLatin1String("svg:height"), QLatin1String("2.0cm"))));
+        m_height->setValue(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:height"), QLatin1String("2.0cm"))));
 
     m_set->addProperty(m_height);
     m_set->addProperty(m_backgroundColor);

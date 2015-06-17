@@ -25,7 +25,7 @@
 #include <KoOdfGraphicStyles.h>
 #include <KoGenStyle.h>
 #include <KoGenStyles.h>
-#include <KoUnit.h>
+#include <KReportUnit.h>
 
 #include <QPen>
 #include "kreport_debug.h"

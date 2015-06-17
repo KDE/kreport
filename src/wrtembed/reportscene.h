@@ -27,7 +27,7 @@
 
 #include <QGraphicsScene>
 
-#include "KoUnit.h"
+#include "KReportUnit.h"
 
 typedef QList<QGraphicsItem*> QGraphicsItemList;
 class KoReportDesigner;
@@ -69,7 +69,7 @@ private:
 
     KoReportDesigner * m_rd;
 
-    KoUnit m_unit;
+    KReportUnit m_unit;
     int m_minorSteps;
     qreal m_majorX;
     qreal m_majorY;

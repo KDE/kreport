@@ -110,7 +110,7 @@ public:
     void setEntityName(const QString& n);
     QString entityName();
 
-    virtual void setUnit(const KoUnit& u);
+    virtual void setUnit(const KReportUnit& u);
 
     KRPos position() const;
     KRSize size() const;

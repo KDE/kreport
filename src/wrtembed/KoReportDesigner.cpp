@@ -157,7 +157,7 @@ void KoReportDesigner::init()
 
     d->pageButton = new ReportPropertiesButton(this);
 
-    d->hruler->setUnit(KoUnit(KoUnit::Centimeter));
+    d->hruler->setUnit(KReportUnit(KReportUnit::Centimeter));
 
     d->grid->addWidget(d->pageButton, 0, 0);
     d->grid->addWidget(d->hruler, 0, 1);
@@ -233,16 +233,16 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
                     m_pageSize->setValue(it.toElement().attribute(QLatin1String("report:page-size"), QLatin1String("A4")));
                 } else if (pagetype == QLatin1String("custom")) {
                     m_pageSize->setValue(QLatin1String("custom"));
-                    m_customHeight->setValue(KoUnit::parseValue(it.toElement().attribute(QLatin1String("report:custom-page-height"), QLatin1String(""))));
-                    m_customWidth->setValue(KoUnit::parseValue(it.toElement().attribute(QLatin1String("report:custom-page-widtht"), QLatin1String(""))));
+                    m_customHeight->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("report:custom-page-height"), QLatin1String(""))));
+                    m_customWidth->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("report:custom-page-widtht"), QLatin1String(""))));
                 } else if (pagetype == QLatin1String("label")) {
                     //! @todo
                 }
 
-                m_rightMargin->setValue(KoUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-right"), QLatin1String("1.0cm"))));
-                m_leftMargin->setValue(KoUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-left"), QLatin1String("1.0cm"))));
-                m_topMargin->setValue(KoUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-top"), QLatin1String("1.0cm"))));
-                m_bottomMargin->setValue(KoUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-bottom"), QLatin1String("1.0cm"))));
+                m_rightMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-right"), QLatin1String("1.0cm"))));
+                m_leftMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-left"), QLatin1String("1.0cm"))));
+                m_topMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-top"), QLatin1String("1.0cm"))));
+                m_bottomMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-bottom"), QLatin1String("1.0cm"))));
 
                 m_orientation->setValue(it.toElement().attribute(QLatin1String("report:print-orientation"), QLatin1String("portrait")));
 
@@ -621,7 +621,7 @@ void KoReportDesigner::createProperties()
 
     keys.clear(); strings.clear();
 
-    strings = KoUnit::listOfUnitNameForUi(KoUnit::HidePixel);
+    strings = KReportUnit::listOfUnitNameForUi(KReportUnit::HidePixel);
     QString unit;
     foreach(const QString &un, strings) {
         unit = un.mid(un.indexOf(QLatin1String("(")) + 1, 2);
@@ -634,13 +634,13 @@ void KoReportDesigner::createProperties()
     m_gridSnap = new KProperty("grid-snap", true, tr("Snap to Grid"));
     m_gridDivisions = new KProperty("grid-divisions", 4, tr("Grid Divisions"));
 
-    m_leftMargin = new KProperty("margin-left", KoUnit(KoUnit::Centimeter).fromUserValue(1.0),
+    m_leftMargin = new KProperty("margin-left", KReportUnit(KReportUnit::Centimeter).fromUserValue(1.0),
         tr("Left Margin"), tr("Left Margin"), KProperty::Double);
-    m_rightMargin = new KProperty("margin-right", KoUnit(KoUnit::Centimeter).fromUserValue(1.0),
+    m_rightMargin = new KProperty("margin-right", KReportUnit(KReportUnit::Centimeter).fromUserValue(1.0),
         tr("Right Margin"), tr("Right Margin"), KProperty::Double);
-    m_topMargin = new KProperty("margin-top", KoUnit(KoUnit::Centimeter).fromUserValue(1.0),
+    m_topMargin = new KProperty("margin-top", KReportUnit(KReportUnit::Centimeter).fromUserValue(1.0),
         tr("Top Margin"), tr("Top Margin"), KProperty::Double);
-    m_bottomMargin = new KProperty("margin-bottom", KoUnit(KoUnit::Centimeter).fromUserValue(1.0),
+    m_bottomMargin = new KProperty("margin-bottom", KReportUnit(KReportUnit::Centimeter).fromUserValue(1.0),
         tr("Bottom Margin"), tr("Bottom Margin"), KProperty::Double);
     m_leftMargin->setOption("unit", QLatin1String("cm"));
     m_rightMargin->setOption("unit", QLatin1String("cm"));
@@ -789,16 +789,16 @@ void KoReportDesigner::deleteDetail()
     m_detail = 0;
 }
 
-KoUnit KoReportDesigner::pageUnit() const
+KReportUnit KoReportDesigner::pageUnit() const
 {
     QString u;
     bool found;
 
     u = m_unit->value().toString();
 
-    KoUnit unit = KoUnit::fromSymbol(u, &found);
+    KReportUnit unit = KReportUnit::fromSymbol(u, &found);
     if (!found) {
-        unit = KoUnit(KoUnit::Centimeter);
+        unit = KReportUnit(KReportUnit::Centimeter);
     }
 
     return unit;
