@@ -19,8 +19,9 @@
 
 #include <QObject>
 
-#include <krsectiondata.h>
 #include <kross/core/object.h>
+
+class KRSectionData;
 
 /**
 */

@@ -23,7 +23,6 @@
 #include <QWidget>
 
 #include "kreport_export.h"
-#include "krsectiondata.h"
 
 // forward declarations
 class QDomNode;
@@ -33,6 +32,7 @@ class QGraphicsItem;
 typedef QList<QGraphicsItem*> QGraphicsItemList;
 
 class KPropertySet;
+class KProperty;
 
 class KoReportDesigner;
 

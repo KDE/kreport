@@ -20,7 +20,6 @@
 
 #include "KoReportItemBase.h"
 #include "krpos.h"
-#include "krsize.h"
 #include "kreport_export.h"
 
 class QDomNode;

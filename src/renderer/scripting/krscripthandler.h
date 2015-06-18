@@ -24,7 +24,6 @@ class KoReportReportData;
 class OROPage;
 
 #ifdef KREPORT_SCRIPTING
-#include "krsectiondata.h"
 #include "krscriptconstants.h"
 #include "KoReportData.h"
 
@@ -32,6 +31,7 @@ class OROPage;
 
 class KRScriptDebug;
 class KRScriptDraw;
+class KRSectionData;
 
 namespace Scripting
 {
