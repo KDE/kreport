@@ -20,17 +20,11 @@
 #ifndef KREPORTVIEW_H
 #define KREPORTVIEW_H
 
-#include <KoReportRendererBase.h>
 #include <QWidget>
 
 #include "kreport_export.h"
 
-class KoReportPreRenderer;
 class ORODocument;
-class KoReportPage;
-
-class QGraphicsView;
-class QGraphicsScene;
 
 /**
  * @brief Provides a simple widget for viewing a rendered report on screen
@@ -53,16 +47,9 @@ public:
     void setDocument(ORODocument* doc);
 
 private:
-    ORODocument *m_reportDocument;
-    QGraphicsView *m_reportView;
-    QGraphicsScene *m_reportScene;
-    KoReportPage *m_reportPage;
-
-    int m_currentPage;
-    int m_pageCount;
-
-    KoReportRendererFactory m_factory;
-
+    Q_DISABLE_COPY(KReportView)
+    class Private;
+    Private * const d;
 };
 
 #endif

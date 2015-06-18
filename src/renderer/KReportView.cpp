@@ -33,89 +33,117 @@
 
 #include <renderobjects.h>
 #include <KoReportPreRenderer.h>
+#include <KoReportRendererBase.h>
+
+//! @internal
+class KReportView::Private
+{
+public:
+    explicit Private()
+        : reportDocument(0)
+        , reportPage(0)
+        , currentPage(0)
+        , pageCount(0)
+    {}
+
+    ~Private()
+    {}
+
+    ORODocument *reportDocument;
+    QGraphicsView *reportView;
+    QGraphicsScene *reportScene;
+    KoReportPage *reportPage;
+
+    int currentPage;
+    int pageCount;
+
+    KoReportRendererFactory factory;
+};
+
 
 KReportView::KReportView(QWidget *parent)
-        : QWidget(parent), m_reportDocument(0), m_reportPage(0), m_currentPage(0), m_pageCount(0)
+        : QWidget(parent), d(new Private())
 {
     setObjectName(QLatin1String("KReportView"));
 
-    m_reportView = new QGraphicsView(this);
+    d->reportView = new QGraphicsView(this);
     // page selector should be always visible:
-    m_reportView->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+    d->reportView->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
 
     QVBoxLayout *l = new QVBoxLayout;
     setLayout(l);
 
-    layout()->addWidget(m_reportView);
+    layout()->addWidget(d->reportView);
 
-    m_reportScene = new QGraphicsScene(this);
-    m_reportScene->setSceneRect(0,0,1000,2000);
-    m_reportView->setScene(m_reportScene);
+    d->reportScene = new QGraphicsScene(this);
+    d->reportScene->setSceneRect(0,0,1000,2000);
+    d->reportView->setScene(d->reportScene);
 
-    m_reportScene->setBackgroundBrush(palette().brush(QPalette::Dark));
+    d->reportScene->setBackgroundBrush(palette().brush(QPalette::Dark));
 }
 
 KReportView::~KReportView()
 {
     qDebug();
+    delete d;
 }
 
 void KReportView::moveToFirstPage()
 {
-        if (m_currentPage != 1) {
-                m_currentPage = 1;
-                m_reportPage->renderPage(m_currentPage);
+        if (d->currentPage != 1) {
+                d->currentPage = 1;
+                d->reportPage->renderPage(d->currentPage);
         }
 }
 
 void KReportView::moveToLastPage()
 {
-        if (m_currentPage != m_pageCount) {
-                m_currentPage = m_pageCount;
-                m_reportPage->renderPage(m_currentPage);
+        if (d->currentPage != d->pageCount) {
+                d->currentPage = d->pageCount;
+                d->reportPage->renderPage(d->currentPage);
         }
 }
 
 void KReportView::moveToNextPage()
 {
-        if (m_currentPage < m_pageCount) {
-                m_currentPage++;
-                m_reportPage->renderPage(m_currentPage);
+        if (d->currentPage < d->pageCount) {
+                d->currentPage++;
+                d->reportPage->renderPage(d->currentPage);
         }
 }
 
 void KReportView::moveToPreviousPage()
 {
-        if (m_currentPage > 1) {
-                m_currentPage--;
-                m_reportPage->renderPage(m_currentPage);
+        if (d->currentPage > 1) {
+                d->currentPage--;
+                d->reportPage->renderPage(d->currentPage);
         }
 }
 
 int KReportView::currentPage() const
 {
-    return m_currentPage;
+    return d->currentPage;
 }
 
 int KReportView::pageCount() const
 {
-    return m_pageCount;
+    return d->pageCount;
 }
 
 void KReportView::setDocument(ORODocument* doc)
 {
-    m_reportDocument = doc;
+    d->reportDocument = doc;
 
-    if (m_reportPage) {
-        delete m_reportPage;
+    if (d->reportPage) {
+        delete d->reportPage;
     }
 
-    m_reportPage = new KoReportPage(this, m_reportDocument);
-    m_reportPage->setObjectName(QLatin1String("KReportPage"));
+    d->reportPage = new KoReportPage(this, d->reportDocument);
+    d->reportPage->setObjectName(QLatin1String("KReportPage"));
 
-    m_reportScene->setSceneRect(0,0,m_reportPage->rect().width() + 40, m_reportPage->rect().height() + 40);
-    m_reportScene->addItem(m_reportPage);
-    m_reportPage->setPos(20,20);
-    m_reportView->centerOn(0,0);
+    d->reportScene->setSceneRect(0,0,d->reportPage->rect().width() + 40, d->reportPage->rect().height() + 40);
+    d->reportScene->addItem(d->reportPage);
+    d->reportPage->setPos(20,20);
+    d->reportView->centerOn(0,0);
 
 }
