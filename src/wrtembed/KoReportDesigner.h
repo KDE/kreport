@@ -40,7 +40,6 @@ class ReportSection;
 class KReportUnit;
 class ReportScene;
 class ReportSceneView;
-class ReportWriterSectionData;
 class QAction;
 
 //
@@ -51,11 +50,6 @@ class KREPORT_EXPORT KoReportDesigner : public QWidget
 {
     Q_OBJECT
 public:
-    qreal m_pressX;
-    qreal m_pressY;
-    qreal m_releaseX;
-    qreal m_releaseY;
-
     /**
     @brief Constructor that create a blank designer
     @param widget QWidget parent
@@ -86,7 +80,7 @@ public:
     @brief Return a pointer to the reports data
     @return Pointer to report data
     */
-    KoReportData *reportData(){return m_kordata;}
+    KoReportData *reportData() const;
 
     /**
     @brief Return a pointer to the section specified
@@ -112,9 +106,7 @@ public:
     The detail section contains the actual detail section and related group sections
     @return Pointer to detail section
     */
-    ReportSectionDetail* detailSection() const {
-        return m_detail;
-    }
+    ReportSectionDetail* detailSection() const;
 
     /**
     @brief Sets the title of the reportData
@@ -177,9 +169,7 @@ public:
     /**
     @return the property set for the general report properties
     */
-    KPropertySet* propertySet() const {
-        return m_set;
-    }
+    KPropertySet* propertySet() const;
 
     /**
     @brief Give a hint on the size of the widget
@@ -218,9 +208,7 @@ public:
     /**
     @brief Return the property set for the curently selected item
     */
-    KPropertySet* itemPropertySet() const {
-        return m_itmset;
-    }
+    KPropertySet* itemPropertySet() const;
 
     /**
     @brief Sets the modified status, defaulting to true for modified
@@ -298,31 +286,8 @@ public Q_SLOTS:
     void slotRaiseSelected();
     void slotLowerSelected();
 
-protected:
-
-    ReportSection *m_reportHeader;
-    ReportSection *m_pageHeaderFirst;
-    ReportSection *m_pageHeaderOdd;
-    ReportSection *m_pageHeaderEven;
-    ReportSection *m_pageHeaderLast;
-    ReportSection *m_pageHeaderAny;
-
-    ReportSection *m_pageFooterFirst;
-    ReportSection *m_pageFooterOdd;
-    ReportSection *m_pageFooterEven;
-    ReportSection *m_pageFooterLast;
-    ReportSection *m_pageFooterAny;
-    ReportSection *m_reportFooter;
-    ReportSectionDetail *m_detail;
-
 private:
-    class Private;
-    Private * const d;
-
     void init();
-    bool m_modified; // true if this document has been modified, false otherwise
-
-    KoReportData *m_kordata;
 
     /**
     @brief Sets the detail section to the given section
@@ -338,40 +303,11 @@ private:
 
     //Properties
     void createProperties();
-    KPropertySet* m_set;
-    KPropertySet* m_itmset;
-    KProperty* m_title;
-    KProperty* m_pageSize;
-    KProperty* m_orientation;
-    KProperty* m_unit;
-    KProperty* m_customHeight;
-    KProperty* m_customWidth;
-    KProperty* m_leftMargin;
-    KProperty* m_rightMargin;
-    KProperty* m_topMargin;
-    KProperty* m_bottomMargin;
-    KProperty* m_showGrid;
-    KProperty* m_gridDivisions;
-    KProperty* m_gridSnap;
-    KProperty* m_labelType;
-    KProperty* m_interpreter;
-    KProperty* m_script;
 
-    ReportWriterSectionData *m_sectionData;
     unsigned int selectionCount() const;
 
     void setSectionCursor(const QCursor&);
     void unsetSectionCursor();
-
-    //Actions
-    QAction *m_editCutAction;
-    QAction *m_editCopyAction;
-    QAction *m_editPasteAction;
-    QAction *m_editDeleteAction;
-    QAction *m_sectionEdit;
-    QAction *m_parameterEdit;
-    QAction *m_itemRaiseAction;
-    QAction *m_itemLowerAction;
 
     void createActions();
 
@@ -391,6 +327,11 @@ Q_SIGNALS:
     void dirty();
     void reportDataChanged();
     void itemInserted(const QString& entity);
+
+private:
+    Q_DISABLE_COPY(KoReportDesigner)
+    class Private;
+    Private * const d;
 };
 
 #endif

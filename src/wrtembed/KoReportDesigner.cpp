@@ -106,38 +106,112 @@ public:
 class KoReportDesigner::Private
 {
 public:
+    Private()
+        : activeScene(0)
+        , reportHeader(0)
+        , pageHeaderFirst(0)
+        , pageHeaderOdd(0)
+        , pageHeaderEven(0)
+        , pageHeaderLast(0)
+        , pageHeaderAny(0)
+        , pageFooterFirst(0)
+        , pageFooterOdd(0)
+        , pageFooterEven(0)
+        , pageFooterLast(0)
+        , pageFooterAny(0)
+        , reportFooter(0)
+        , detail(0)
+        , pressX(-1)
+        , pressY(-1)
+        , releaseX(-1)
+        , releaseY(-1)
+        , modified(false)
+        , kordata(0)
+    {}
+
+    ~Private()
+    {
+        delete zoom;
+        delete sectionData;
+        delete set;
+    }
+
     QGridLayout *grid;
-    QGraphicsScene *activeScene;
     KReportRuler *hruler;
     KReportZoomHandler *zoom;
     QVBoxLayout *vboxlayout;
     ReportPropertiesButton *pageButton;
+
+    QGraphicsScene *activeScene;
+
+    ReportWriterSectionData *sectionData;
+
+    ReportSection *reportHeader;
+    ReportSection *pageHeaderFirst;
+    ReportSection *pageHeaderOdd;
+    ReportSection *pageHeaderEven;
+    ReportSection *pageHeaderLast;
+    ReportSection *pageHeaderAny;
+
+    ReportSection *pageFooterFirst;
+    ReportSection *pageFooterOdd;
+    ReportSection *pageFooterEven;
+    ReportSection *pageFooterLast;
+    ReportSection *pageFooterAny;
+    ReportSection *reportFooter;
+    ReportSectionDetail *detail;
+
+    //Properties
+    KPropertySet *set;
+    KPropertySet *itmset;
+    KProperty *title;
+    KProperty *pageSize;
+    KProperty *orientation;
+    KProperty *unit;
+    KProperty *customHeight;
+    KProperty *customWidth;
+    KProperty *leftMargin;
+    KProperty *rightMargin;
+    KProperty *topMargin;
+    KProperty *bottomMargin;
+    KProperty *showGrid;
+    KProperty *gridDivisions;
+    KProperty *gridSnap;
+    KProperty *labelType;
+    KProperty *interpreter;
+    KProperty *script;
+
+    //Actions
+    QAction *editCutAction;
+    QAction *editCopyAction;
+    QAction *editPasteAction;
+    QAction *editDeleteAction;
+    QAction *sectionEdit;
+    QAction *parameterEdit;
+    QAction *itemRaiseAction;
+    QAction *itemLowerAction;
+
+    qreal pressX;
+    qreal pressY;
+    qreal releaseX;
+    qreal releaseY;
+
+    bool modified; // true if this document has been modified, false otherwise
+
+    KoReportData *kordata;
 };
 
 KoReportDesigner::KoReportDesigner(QWidget * parent)
         : QWidget(parent), d(new Private())
 {
-    m_pressX = -1;
-    m_pressY = -1;
-    m_releaseX = -1;
-    m_releaseY = -1;
-    m_kordata = 0;
     init();
 }
 
 void KoReportDesigner::init()
 {
-    m_modified = false;
-    m_detail = 0;
-    d->hruler = 0;
-
-    m_sectionData = new ReportWriterSectionData();
+    d->sectionData = new ReportWriterSectionData();
     createProperties();
     createActions();
-
-    m_reportHeader = m_reportFooter = 0;
-    m_pageHeaderFirst = m_pageHeaderOdd = m_pageHeaderEven = m_pageHeaderLast = m_pageHeaderAny = 0;
-    m_pageFooterFirst = m_pageFooterOdd = m_pageFooterEven = m_pageFooterLast = m_pageFooterAny = 0;
 
     d->grid = new QGridLayout(this);
     d->grid->setSpacing(0);
@@ -166,35 +240,28 @@ void KoReportDesigner::init()
     d->pageButton->setMaximumSize(QSize(19, 22));
     d->pageButton->setMinimumSize(QSize(19, 22));
 
-    m_detail = new ReportSectionDetail(this);
-    d->vboxlayout->insertWidget(0, m_detail);
+    d->detail = new ReportSectionDetail(this);
+    d->vboxlayout->insertWidget(0, d->detail);
 
     setLayout(d->grid);
 
     connect(d->pageButton, SIGNAL(released()), this, SLOT(slotPageButton_Pressed()));
-    emit pagePropertyChanged(*m_set);
+    emit pagePropertyChanged(*d->set);
 
-    connect(m_set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
+    connect(d->set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
-    changeSet(m_set);
-
-
+    changeSet(d->set);
 }
 
 KoReportDesigner::~KoReportDesigner()
 {
-    delete d->zoom;
     delete d;
-    delete m_sectionData;
-    delete m_set;
 }
 
 ///The loading Code
 KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : QWidget(parent), d(new Private())
 {
-    m_kordata = 0;
-
     init();
 
     if (data.tagName() != QLatin1String("report:content")) {
@@ -216,13 +283,13 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
             if (n == QLatin1String("report:title")) {
                 setReportTitle(it.firstChild().nodeValue());
             } else if (n == QLatin1String("report:script")) {
-                m_interpreter->setValue(it.toElement().attribute(QLatin1String("report:script-interpreter")));
-                m_script->setValue(it.firstChild().nodeValue());
+                d->interpreter->setValue(it.toElement().attribute(QLatin1String("report:script-interpreter")));
+                d->script->setValue(it.firstChild().nodeValue());
             } else if (n == QLatin1String("report:grid")) {
-                m_showGrid->setValue(it.toElement().attribute(QLatin1String("report:grid-visible"), QString::number(1)).toInt() != 0);
-                m_gridSnap->setValue(it.toElement().attribute(QLatin1String("report:grid-snap"), QString::number(1)).toInt() != 0);
-                m_gridDivisions->setValue(it.toElement().attribute(QLatin1String("report:grid-divisions"), QString::number(4)).toInt());
-                m_unit->setValue(it.toElement().attribute(QLatin1String("report:page-unit"), QLatin1String("cm")));
+                d->showGrid->setValue(it.toElement().attribute(QLatin1String("report:grid-visible"), QString::number(1)).toInt() != 0);
+                d->gridSnap->setValue(it.toElement().attribute(QLatin1String("report:grid-snap"), QString::number(1)).toInt() != 0);
+                d->gridDivisions->setValue(it.toElement().attribute(QLatin1String("report:grid-divisions"), QString::number(4)).toInt());
+                d->unit->setValue(it.toElement().attribute(QLatin1String("report:page-unit"), QLatin1String("cm")));
             }
 
             //! @todo Load page options
@@ -230,21 +297,21 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
                 QString pagetype = it.firstChild().nodeValue();
 
                 if (pagetype == QLatin1String("predefined")) {
-                    m_pageSize->setValue(it.toElement().attribute(QLatin1String("report:page-size"), QLatin1String("A4")));
+                    d->pageSize->setValue(it.toElement().attribute(QLatin1String("report:page-size"), QLatin1String("A4")));
                 } else if (pagetype == QLatin1String("custom")) {
-                    m_pageSize->setValue(QLatin1String("custom"));
-                    m_customHeight->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("report:custom-page-height"), QLatin1String(""))));
-                    m_customWidth->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("report:custom-page-widtht"), QLatin1String(""))));
+                    d->pageSize->setValue(QLatin1String("custom"));
+                    d->customHeight->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("report:custom-page-height"), QLatin1String(""))));
+                    d->customWidth->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("report:custom-page-widtht"), QLatin1String(""))));
                 } else if (pagetype == QLatin1String("label")) {
                     //! @todo
                 }
 
-                m_rightMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-right"), QLatin1String("1.0cm"))));
-                m_leftMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-left"), QLatin1String("1.0cm"))));
-                m_topMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-top"), QLatin1String("1.0cm"))));
-                m_bottomMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-bottom"), QLatin1String("1.0cm"))));
+                d->rightMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-right"), QLatin1String("1.0cm"))));
+                d->leftMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-left"), QLatin1String("1.0cm"))));
+                d->topMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-top"), QLatin1String("1.0cm"))));
+                d->bottomMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-bottom"), QLatin1String("1.0cm"))));
 
-                m_orientation->setValue(it.toElement().attribute(QLatin1String("report:print-orientation"), QLatin1String("portrait")));
+                d->orientation->setValue(it.toElement().attribute(QLatin1String("report:print-orientation"), QLatin1String("portrait")));
 
             } else if (n == QLatin1String("report:body")) {
                 QDomNodeList sectionlist = it.childNodes();
@@ -277,7 +344,7 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
     }
     this->slotPageButton_Pressed();
     emit reportDataChanged();
-    slotPropertyChanged(*m_set, *m_unit); // set unit for all items
+    slotPropertyChanged(*d->set, *d->unit); // set unit for all items
     setModified(false);
 }
 
@@ -294,45 +361,45 @@ QDomElement KoReportDesigner::document() const
     doc.appendChild(content);
 
     //title
-    content.appendChild(propertyToElement(&doc, m_title));
+    content.appendChild(propertyToElement(&doc, d->title));
 
-    QDomElement scr = propertyToElement(&doc, m_script);
-    KRUtils::addPropertyAsAttribute(&scr, m_interpreter);
+    QDomElement scr = propertyToElement(&doc, d->script);
+    KRUtils::addPropertyAsAttribute(&scr, d->interpreter);
     content.appendChild(scr);
 
     QDomElement grd = doc.createElement(QLatin1String("report:grid"));
-    KRUtils::addPropertyAsAttribute(&grd, m_showGrid);
-    KRUtils::addPropertyAsAttribute(&grd, m_gridDivisions);
-    KRUtils::addPropertyAsAttribute(&grd, m_gridSnap);
-    KRUtils::addPropertyAsAttribute(&grd, m_unit);
+    KRUtils::addPropertyAsAttribute(&grd, d->showGrid);
+    KRUtils::addPropertyAsAttribute(&grd, d->gridDivisions);
+    KRUtils::addPropertyAsAttribute(&grd, d->gridSnap);
+    KRUtils::addPropertyAsAttribute(&grd, d->unit);
     content.appendChild(grd);
 
     // pageOptions
     // -- size
     QDomElement pagestyle = doc.createElement(QLatin1String("report:page-style"));
 
-    if (m_pageSize->value().toString() == QLatin1String("Custom")) {
+    if (d->pageSize->value().toString() == QLatin1String("Custom")) {
         pagestyle.appendChild(doc.createTextNode(QLatin1String("custom")));
-        KRUtils::setAttribute(pagestyle, QLatin1String("report:custom-page-width"), m_customWidth->value().toDouble());
-        KRUtils::setAttribute(pagestyle, QLatin1String("report:custom-page-height"), m_customHeight->value().toDouble());
+        KRUtils::setAttribute(pagestyle, QLatin1String("report:custom-page-width"), d->customWidth->value().toDouble());
+        KRUtils::setAttribute(pagestyle, QLatin1String("report:custom-page-height"), d->customHeight->value().toDouble());
 
-    } else if (m_pageSize->value().toString() == QLatin1String("Label")) {
+    } else if (d->pageSize->value().toString() == QLatin1String("Label")) {
         pagestyle.appendChild(doc.createTextNode(QLatin1String("label")));
-        pagestyle.setAttribute(QLatin1String("report:page-label-type"), m_labelType->value().toString());
+        pagestyle.setAttribute(QLatin1String("report:page-label-type"), d->labelType->value().toString());
     } else {
         pagestyle.appendChild(doc.createTextNode(QLatin1String("predefined")));
-        KRUtils::addPropertyAsAttribute(&pagestyle, m_pageSize);
-        //pagestyle.setAttribute("report:page-size", m_pageSize->value().toString());
+        KRUtils::addPropertyAsAttribute(&pagestyle, d->pageSize);
+        //pagestyle.setAttribute("report:page-size", d->pageSize->value().toString());
     }
 
     // -- orientation
-    KRUtils::addPropertyAsAttribute(&pagestyle, m_orientation);
+    KRUtils::addPropertyAsAttribute(&pagestyle, d->orientation);
 
     // -- margins: save as points, and not localized
-    KRUtils::setAttribute(pagestyle, QLatin1String("fo:margin-top"), m_topMargin->value().toDouble());
-    KRUtils::setAttribute(pagestyle, QLatin1String("fo:margin-bottom"), m_bottomMargin->value().toDouble());
-    KRUtils::setAttribute(pagestyle, QLatin1String("fo:margin-right"), m_rightMargin->value().toDouble());
-    KRUtils::setAttribute(pagestyle, QLatin1String("fo:margin-left"), m_leftMargin->value().toDouble());
+    KRUtils::setAttribute(pagestyle, QLatin1String("fo:margin-top"), d->topMargin->value().toDouble());
+    KRUtils::setAttribute(pagestyle, QLatin1String("fo:margin-bottom"), d->bottomMargin->value().toDouble());
+    KRUtils::setAttribute(pagestyle, QLatin1String("fo:margin-right"), d->rightMargin->value().toDouble());
+    KRUtils::setAttribute(pagestyle, QLatin1String("fo:margin-left"), d->leftMargin->value().toDouble());
 
     content.appendChild(pagestyle);
 
@@ -350,7 +417,7 @@ QDomElement KoReportDesigner::document() const
     }
 
     QDomElement detail = doc.createElement(QLatin1String("report:detail"));
-    m_detail->buildXML(doc, detail);
+    d->detail->buildXML(doc, detail);
     body.appendChild(detail);
 
     content.appendChild(body);
@@ -369,7 +436,7 @@ void KoReportDesigner::setReportData(KoReportData* kodata)
 {
     //kreportDebug();
     if (kodata) {
-        m_kordata = kodata;
+        d->kordata = kodata;
         slotPageButton_Pressed();
         setModified(true);
         emit reportDataChanged();
@@ -381,40 +448,40 @@ ReportSection * KoReportDesigner::section(KRSectionData::Section s) const
     ReportSection *sec;
     switch (s) {
     case KRSectionData::PageHeaderAny:
-        sec = m_pageHeaderAny;
+        sec = d->pageHeaderAny;
         break;
     case KRSectionData::PageHeaderEven:
-        sec = m_pageHeaderEven;
+        sec = d->pageHeaderEven;
         break;
     case KRSectionData::PageHeaderOdd:
-        sec = m_pageHeaderOdd;
+        sec = d->pageHeaderOdd;
         break;
     case KRSectionData::PageHeaderFirst:
-        sec = m_pageHeaderFirst;
+        sec = d->pageHeaderFirst;
         break;
     case KRSectionData::PageHeaderLast:
-        sec = m_pageHeaderLast;
+        sec = d->pageHeaderLast;
         break;
     case KRSectionData::PageFooterAny:
-        sec = m_pageFooterAny;
+        sec = d->pageFooterAny;
         break;
     case KRSectionData::PageFooterEven:
-        sec = m_pageFooterEven;
+        sec = d->pageFooterEven;
         break;
     case KRSectionData::PageFooterOdd:
-        sec = m_pageFooterOdd;
+        sec = d->pageFooterOdd;
         break;
     case KRSectionData::PageFooterFirst:
-        sec = m_pageFooterFirst;
+        sec = d->pageFooterFirst;
         break;
     case KRSectionData::PageFooterLast:
-        sec = m_pageFooterLast;
+        sec = d->pageFooterLast;
         break;
     case KRSectionData::ReportHeader:
-        sec = m_reportHeader;
+        sec = d->reportHeader;
         break;
     case KRSectionData::ReportFooter:
-        sec = m_reportFooter;
+        sec = d->reportFooter;
         break;
     default:
         sec = 0;
@@ -429,40 +496,40 @@ void KoReportDesigner::removeSection(KRSectionData::Section s)
 
         switch (s) {
         case KRSectionData::PageHeaderAny:
-            m_pageHeaderAny = 0;
+            d->pageHeaderAny = 0;
             break;
         case KRSectionData::PageHeaderEven:
-            sec = m_pageHeaderEven = 0;
+            sec = d->pageHeaderEven = 0;
             break;
         case KRSectionData::PageHeaderOdd:
-            m_pageHeaderOdd = 0;
+            d->pageHeaderOdd = 0;
             break;
         case KRSectionData::PageHeaderFirst:
-            m_pageHeaderFirst = 0;
+            d->pageHeaderFirst = 0;
             break;
         case KRSectionData::PageHeaderLast:
-            m_pageHeaderLast = 0;
+            d->pageHeaderLast = 0;
             break;
         case KRSectionData::PageFooterAny:
-            m_pageFooterAny = 0;
+            d->pageFooterAny = 0;
             break;
         case KRSectionData::PageFooterEven:
-            m_pageFooterEven = 0;
+            d->pageFooterEven = 0;
             break;
         case KRSectionData::PageFooterOdd:
-            m_pageFooterOdd = 0;
+            d->pageFooterOdd = 0;
             break;
         case KRSectionData::PageFooterFirst:
-            m_pageFooterFirst = 0;
+            d->pageFooterFirst = 0;
             break;
         case KRSectionData::PageFooterLast:
-            m_pageFooterLast = 0;
+            d->pageFooterLast = 0;
             break;
         case KRSectionData::ReportHeader:
-            m_reportHeader = 0;
+            d->reportHeader = 0;
             break;
         case KRSectionData::ReportFooter:
-            m_reportFooter = 0;
+            d->reportFooter = 0;
             break;
         default:
             sec = 0;
@@ -491,51 +558,51 @@ void KoReportDesigner::insertSection(KRSectionData::Section s)
         switch (s) {
         case KRSectionData::PageHeaderAny:
             rs->setTitle(tr("Page Header (Any)"));
-            m_pageHeaderAny = rs;
+            d->pageHeaderAny = rs;
             break;
         case KRSectionData::PageHeaderEven:
             rs->setTitle(tr("Page Header (Even)"));
-            m_pageHeaderEven = rs;
+            d->pageHeaderEven = rs;
             break;
         case KRSectionData::PageHeaderOdd:
             rs->setTitle(tr("Page Header (Odd)"));
-            m_pageHeaderOdd = rs;
+            d->pageHeaderOdd = rs;
             break;
         case KRSectionData::PageHeaderFirst:
             rs->setTitle(tr("Page Header (First)"));
-            m_pageHeaderFirst = rs;
+            d->pageHeaderFirst = rs;
             break;
         case KRSectionData::PageHeaderLast:
             rs->setTitle(tr("Page Header (Last)"));
-            m_pageHeaderLast = rs;
+            d->pageHeaderLast = rs;
             break;
         case KRSectionData::PageFooterAny:
             rs->setTitle(tr("Page Footer (Any)"));
-            m_pageFooterAny = rs;
+            d->pageFooterAny = rs;
             break;
         case KRSectionData::PageFooterEven:
             rs->setTitle(tr("Page Footer (Even)"));
-            m_pageFooterEven = rs;
+            d->pageFooterEven = rs;
             break;
         case KRSectionData::PageFooterOdd:
             rs->setTitle(tr("Page Footer (Odd)"));
-            m_pageFooterOdd = rs;
+            d->pageFooterOdd = rs;
             break;
         case KRSectionData::PageFooterFirst:
             rs->setTitle(tr("Page Footer (First)"));
-            m_pageFooterFirst = rs;
+            d->pageFooterFirst = rs;
             break;
         case KRSectionData::PageFooterLast:
             rs->setTitle(tr("Page Footer (Last)"));
-            m_pageFooterLast = rs;
+            d->pageFooterLast = rs;
             break;
         case KRSectionData::ReportHeader:
             rs->setTitle(tr("Report Header"));
-            m_reportHeader = rs;
+            d->reportHeader = rs;
             break;
         case KRSectionData::ReportFooter:
             rs->setTitle(tr("Report Footer"));
-            m_reportFooter = rs;
+            d->reportFooter = rs;
             break;
             //These sections cannot be inserted this way
         case KRSectionData::None:
@@ -548,32 +615,53 @@ void KoReportDesigner::insertSection(KRSectionData::Section s)
         rs->show();
         setModified(true);
         adjustSize();
-        emit pagePropertyChanged(*m_set);
+        emit pagePropertyChanged(*d->set);
     }
 }
 
 void KoReportDesigner::setReportTitle(const QString & str)
 {
     if (reportTitle() != str) {
-        m_title->setValue(str);
+        d->title->setValue(str);
         setModified(true);
     }
 }
+
+KPropertySet * KoReportDesigner::propertySet() const
+{
+    return d->set;
+}
+
+KPropertySet* KoReportDesigner::itemPropertySet() const
+{
+    return d->itmset;
+}
+
+KoReportData *KoReportDesigner::reportData() const
+{
+    return d->kordata;
+}
+
+ReportSectionDetail * KoReportDesigner::detailSection() const
+{
+    return d->detail;
+}
+
 QString KoReportDesigner::reportTitle() const
 {
-    return m_title->value().toString();
+    return d->title->value().toString();
 }
 
 bool KoReportDesigner::isModified() const
 {
-    return m_modified;
+    return d->modified;
 }
 
 void KoReportDesigner::setModified(bool mod)
 {
-    m_modified = mod;
+    d->modified = mod;
 
-    if (m_modified) {
+    if (d->modified) {
         emit dirty();
     }
 }
@@ -582,8 +670,8 @@ QStringList KoReportDesigner::fieldNames() const
 {
     QStringList qs;
     qs << QString();
-    if (m_kordata)
-        qs << m_kordata->fieldNames();
+    if (d->kordata)
+        qs << d->kordata->fieldNames();
 
     return qs;
 }
@@ -592,8 +680,8 @@ QStringList KoReportDesigner::fieldKeys() const
 {
     QStringList qs;
     qs << QString();
-    if (m_kordata)
-        qs << m_kordata->fieldKeys();
+    if (d->kordata)
+        qs << d->kordata->fieldKeys();
 
     return qs;
 }
@@ -601,23 +689,23 @@ QStringList KoReportDesigner::fieldKeys() const
 void KoReportDesigner::createProperties()
 {
     QStringList keys, strings;
-    m_set = new KPropertySet(0, QLatin1String("Report"));
+    d->set = new KPropertySet(0, QLatin1String("Report"));
 
-    connect(m_set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
+    connect(d->set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
-    m_title = new KProperty("title", QLatin1String("Report"), tr("Title"), tr("Report Title"));
+    d->title = new KProperty("title", QLatin1String("Report"), tr("Title"), tr("Report Title"));
 
     keys.clear();
     keys =  KReportPageFormat::pageFormatNames();
     strings = KReportPageFormat::localizedPageFormatNames();
     QString defaultKey = KReportPageFormat::formatString(KReportPageFormat::defaultFormat());
-    m_pageSize = new KProperty("page-size", keys, strings, defaultKey, tr("Page Size"));
+    d->pageSize = new KProperty("page-size", keys, strings, defaultKey, tr("Page Size"));
 
     keys.clear(); strings.clear();
     keys << QLatin1String("portrait") << QLatin1String("landscape");
     strings << tr("Portrait") << tr("Landscape");
-    m_orientation = new KProperty("print-orientation", keys, strings, QLatin1String("portrait"), tr("Page Orientation"));
+    d->orientation = new KProperty("print-orientation", keys, strings, QLatin1String("portrait"), tr("Page Orientation"));
 
     keys.clear(); strings.clear();
 
@@ -628,43 +716,43 @@ void KoReportDesigner::createProperties()
         keys << unit;
     }
 
-    m_unit = new KProperty("page-unit", keys, strings, QLatin1String("cm"), tr("Page Unit"));
+    d->unit = new KProperty("page-unit", keys, strings, QLatin1String("cm"), tr("Page Unit"));
 
-    m_showGrid = new KProperty("grid-visible", true, tr("Show Grid"));
-    m_gridSnap = new KProperty("grid-snap", true, tr("Snap to Grid"));
-    m_gridDivisions = new KProperty("grid-divisions", 4, tr("Grid Divisions"));
+    d->showGrid = new KProperty("grid-visible", true, tr("Show Grid"));
+    d->gridSnap = new KProperty("grid-snap", true, tr("Snap to Grid"));
+    d->gridDivisions = new KProperty("grid-divisions", 4, tr("Grid Divisions"));
 
-    m_leftMargin = new KProperty("margin-left", KReportUnit(KReportUnit::Centimeter).fromUserValue(1.0),
+    d->leftMargin = new KProperty("margin-left", KReportUnit(KReportUnit::Centimeter).fromUserValue(1.0),
         tr("Left Margin"), tr("Left Margin"), KProperty::Double);
-    m_rightMargin = new KProperty("margin-right", KReportUnit(KReportUnit::Centimeter).fromUserValue(1.0),
+    d->rightMargin = new KProperty("margin-right", KReportUnit(KReportUnit::Centimeter).fromUserValue(1.0),
         tr("Right Margin"), tr("Right Margin"), KProperty::Double);
-    m_topMargin = new KProperty("margin-top", KReportUnit(KReportUnit::Centimeter).fromUserValue(1.0),
+    d->topMargin = new KProperty("margin-top", KReportUnit(KReportUnit::Centimeter).fromUserValue(1.0),
         tr("Top Margin"), tr("Top Margin"), KProperty::Double);
-    m_bottomMargin = new KProperty("margin-bottom", KReportUnit(KReportUnit::Centimeter).fromUserValue(1.0),
+    d->bottomMargin = new KProperty("margin-bottom", KReportUnit(KReportUnit::Centimeter).fromUserValue(1.0),
         tr("Bottom Margin"), tr("Bottom Margin"), KProperty::Double);
-    m_leftMargin->setOption("unit", QLatin1String("cm"));
-    m_rightMargin->setOption("unit", QLatin1String("cm"));
-    m_topMargin->setOption("unit", QLatin1String("cm"));
-    m_bottomMargin->setOption("unit", QLatin1String("cm"));
+    d->leftMargin->setOption("unit", QLatin1String("cm"));
+    d->rightMargin->setOption("unit", QLatin1String("cm"));
+    d->topMargin->setOption("unit", QLatin1String("cm"));
+    d->bottomMargin->setOption("unit", QLatin1String("cm"));
 
     keys = Kross::Manager::self().interpreters();
-    m_interpreter = new KProperty("script-interpreter", keys, keys, keys.value(0), tr("Script Interpreter"));
+    d->interpreter = new KProperty("script-interpreter", keys, keys, keys.value(0), tr("Script Interpreter"));
 
-    m_script = new KProperty("script", keys, keys, QString(), tr("Object Script"));
+    d->script = new KProperty("script", keys, keys, QString(), tr("Object Script"));
 
-    m_set->addProperty(m_title);
-    m_set->addProperty(m_pageSize);
-    m_set->addProperty(m_orientation);
-    m_set->addProperty(m_unit);
-    m_set->addProperty(m_gridSnap);
-    m_set->addProperty(m_showGrid);
-    m_set->addProperty(m_gridDivisions);
-    m_set->addProperty(m_leftMargin);
-    m_set->addProperty(m_rightMargin);
-    m_set->addProperty(m_topMargin);
-    m_set->addProperty(m_bottomMargin);
-    m_set->addProperty(m_interpreter);
-    m_set->addProperty(m_script);
+    d->set->addProperty(d->title);
+    d->set->addProperty(d->pageSize);
+    d->set->addProperty(d->orientation);
+    d->set->addProperty(d->unit);
+    d->set->addProperty(d->gridSnap);
+    d->set->addProperty(d->showGrid);
+    d->set->addProperty(d->gridDivisions);
+    d->set->addProperty(d->leftMargin);
+    d->set->addProperty(d->rightMargin);
+    d->set->addProperty(d->topMargin);
+    d->set->addProperty(d->bottomMargin);
+    d->set->addProperty(d->interpreter);
+    d->set->addProperty(d->script);
 
 //    KProperty* _customHeight;
 //    KProperty* _customWidth;
@@ -681,24 +769,24 @@ void KoReportDesigner::slotPropertyChanged(KPropertySet &s, KProperty &p)
 
     if (p.name() == "page-unit") {
         d->hruler->setUnit(pageUnit());
-        QString newstr = m_set->property("page-unit").value().toString();
+        QString newstr = d->set->property("page-unit").value().toString();
 
-        m_set->property("margin-left").setOption("unit", newstr);
-        m_set->property("margin-right").setOption("unit", newstr);
-        m_set->property("margin-top").setOption("unit", newstr);
-        m_set->property("margin-bottom").setOption("unit", newstr);
+        d->set->property("margin-left").setOption("unit", newstr);
+        d->set->property("margin-right").setOption("unit", newstr);
+        d->set->property("margin-top").setOption("unit", newstr);
+        d->set->property("margin-bottom").setOption("unit", newstr);
     }
 }
 
 void KoReportDesigner::slotPageButton_Pressed()
 {
-    if (m_kordata) {
-        QStringList sl = m_kordata->scriptList(m_interpreter->value().toString());
+    if (d->kordata) {
+        QStringList sl = d->kordata->scriptList(d->interpreter->value().toString());
 
-        m_script->setListData(sl, sl);
+        d->script->setListData(sl, sl);
 
     }
-    changeSet(m_set);
+    changeSet(d->set);
 }
 
 QSize KoReportDesigner::sizeHint() const
@@ -706,35 +794,35 @@ QSize KoReportDesigner::sizeHint() const
     int w = 0;
     int h = 0;
 
-    if (m_pageFooterAny)
-        h += m_pageFooterAny->sizeHint().height();
-    if (m_pageFooterEven)
-        h += m_pageFooterEven->sizeHint().height();
-    if (m_pageFooterFirst)
-        h += m_pageFooterFirst->sizeHint().height();
-    if (m_pageFooterLast)
-        h += m_pageFooterLast->sizeHint().height();
-    if (m_pageFooterOdd)
-        h += m_pageFooterOdd->sizeHint().height();
-    if (m_pageHeaderAny)
-        h += m_pageHeaderAny->sizeHint().height();
-    if (m_pageHeaderEven)
-        h += m_pageHeaderEven->sizeHint().height();
-    if (m_pageHeaderFirst)
-        h += m_pageHeaderFirst->sizeHint().height();
-    if (m_pageHeaderLast)
-        h += m_pageHeaderLast->sizeHint().height();
-    if (m_pageHeaderOdd)
-        h += m_pageHeaderOdd->sizeHint().height();
-    if (m_reportHeader)
-        h += m_reportHeader->sizeHint().height();
-    if (m_reportFooter) {
-        h += m_reportFooter->sizeHint().height();
+    if (d->pageFooterAny)
+        h += d->pageFooterAny->sizeHint().height();
+    if (d->pageFooterEven)
+        h += d->pageFooterEven->sizeHint().height();
+    if (d->pageFooterFirst)
+        h += d->pageFooterFirst->sizeHint().height();
+    if (d->pageFooterLast)
+        h += d->pageFooterLast->sizeHint().height();
+    if (d->pageFooterOdd)
+        h += d->pageFooterOdd->sizeHint().height();
+    if (d->pageHeaderAny)
+        h += d->pageHeaderAny->sizeHint().height();
+    if (d->pageHeaderEven)
+        h += d->pageHeaderEven->sizeHint().height();
+    if (d->pageHeaderFirst)
+        h += d->pageHeaderFirst->sizeHint().height();
+    if (d->pageHeaderLast)
+        h += d->pageHeaderLast->sizeHint().height();
+    if (d->pageHeaderOdd)
+        h += d->pageHeaderOdd->sizeHint().height();
+    if (d->reportHeader)
+        h += d->reportHeader->sizeHint().height();
+    if (d->reportFooter) {
+        h += d->reportFooter->sizeHint().height();
 
     }
-    if (m_detail) {
-        h += m_detail->sizeHint().height();
-        w += m_detail->sizeHint().width();
+    if (d->detail) {
+        h += d->detail->sizeHint().height();
+        w += d->detail->sizeHint().width();
     }
 
     h += d->hruler->height();
@@ -748,16 +836,16 @@ int KoReportDesigner::pageWidthPx() const
     int ch = 0;
     int width = 0;
 
-    KReportPageFormat::Format pf = KReportPageFormat::formatFromString(m_set->property("page-size").value().toString());
+    KReportPageFormat::Format pf = KReportPageFormat::formatFromString(d->set->property("page-size").value().toString());
 
     cw = POINT_TO_INCH(MM_TO_POINT(KReportPageFormat::width(pf, KReportPageFormat::Portrait))) * KReportDpi::dpiX();
 
     ch = POINT_TO_INCH(MM_TO_POINT(KReportPageFormat::height(pf, KReportPageFormat::Portrait))) * KReportDpi::dpiY();
 
-    width = (m_set->property("print-orientation").value().toString() == QLatin1String("portrait") ? cw : ch);
+    width = (d->set->property("print-orientation").value().toString() == QLatin1String("portrait") ? cw : ch);
 
-    width = width - POINT_TO_INCH(m_set->property("margin-left").value().toDouble()) * KReportDpi::dpiX();
-    width = width - POINT_TO_INCH(m_set->property("margin-right").value().toDouble()) * KReportDpi::dpiX();
+    width = width - POINT_TO_INCH(d->set->property("margin-left").value().toDouble()) * KReportDpi::dpiX();
+    width = width - POINT_TO_INCH(d->set->property("margin-right").value().toDouble()) * KReportDpi::dpiX();
 
     return width;
 }
@@ -771,22 +859,22 @@ void KoReportDesigner::resizeEvent(QResizeEvent * event)
 
 void KoReportDesigner::setDetail(ReportSectionDetail *rsd)
 {
-    if (!m_detail) {
+    if (!d->detail) {
         int idx = 0;
-        if (m_pageHeaderFirst) idx++;
-        if (m_pageHeaderOdd) idx++;
-        if (m_pageHeaderEven) idx++;
-        if (m_pageHeaderLast) idx++;
-        if (m_pageHeaderAny) idx++;
-        if (m_reportHeader) idx++;
-        m_detail = rsd;
-        d->vboxlayout->insertWidget(idx, m_detail);
+        if (d->pageHeaderFirst) idx++;
+        if (d->pageHeaderOdd) idx++;
+        if (d->pageHeaderEven) idx++;
+        if (d->pageHeaderLast) idx++;
+        if (d->pageHeaderAny) idx++;
+        if (d->reportHeader) idx++;
+        d->detail = rsd;
+        d->vboxlayout->insertWidget(idx, d->detail);
     }
 }
 void KoReportDesigner::deleteDetail()
 {
-    delete m_detail;
-    m_detail = 0;
+    delete d->detail;
+    d->detail = 0;
 }
 
 KReportUnit KoReportDesigner::pageUnit() const
@@ -794,7 +882,7 @@ KReportUnit KoReportDesigner::pageUnit() const
     QString u;
     bool found;
 
-    u = m_unit->value().toString();
+    u = d->unit->value().toString();
 
     KReportUnit unit = KReportUnit::fromSymbol(u, &found);
     if (!found) {
@@ -806,8 +894,8 @@ KReportUnit KoReportDesigner::pageUnit() const
 
 void KoReportDesigner::setGridOptions(bool vis, int div)
 {
-    m_showGrid->setValue(QVariant(vis));
-    m_gridDivisions->setValue(div);
+    d->showGrid->setValue(QVariant(vis));
+    d->gridDivisions->setValue(div);
 }
 
 //
@@ -830,7 +918,7 @@ void KoReportDesigner::sectionContextMenuEvent(ReportScene * s, QGraphicsSceneCo
         connect(a, SIGNAL(triggered()), this, SLOT(slotEditCopy()));
         pop.addAction(a);
     }
-    if (!m_sectionData->copy_list.isEmpty()) {
+    if (!d->sectionData->copy_list.isEmpty()) {
         QAction *a = new QAction(QIcon::fromTheme(QLatin1String("edit-paste")), tr("Paste"), this);
         connect(a, SIGNAL(triggered()), this, SLOT(slotEditPaste()));
         pop.addAction(a);
@@ -854,39 +942,39 @@ void KoReportDesigner::sectionContextMenuEvent(ReportScene * s, QGraphicsSceneCo
 void KoReportDesigner::sectionMousePressEvent(ReportSceneView * v, QMouseEvent * e)
 {
     Q_UNUSED(v);
-    m_pressX = e->pos().x();
-    m_pressY = e->pos().y();
+    d->pressX = e->pos().x();
+    d->pressY = e->pos().y();
 }
 
 void KoReportDesigner::sectionMouseReleaseEvent(ReportSceneView * v, QMouseEvent * e)
 {
     e->accept();
 
-    m_releaseX = e->pos().x();
-    m_releaseY = e->pos().y();
+    d->releaseX = e->pos().x();
+    d->releaseY = e->pos().y();
 
     if (e->button() == Qt::LeftButton) {
-        QPointF pos(m_pressX, m_pressY);
-        QPointF end(m_releaseX, m_releaseY);
-        if (m_releaseY >= v->scene()->height()) {
-            m_releaseY = v->scene()->height();
+        QPointF pos(d->pressX, d->pressY);
+        QPointF end(d->releaseX, d->releaseY);
+        if (d->releaseY >= v->scene()->height()) {
+            d->releaseY = v->scene()->height();
             end.setY(v->scene()->height());
         }
 
-        if (m_releaseX >= v->scene()->width()) {
-            m_releaseX = v->scene()->width();
+        if (d->releaseX >= v->scene()->width()) {
+            d->releaseX = v->scene()->width();
             end.setX(v->scene()->width());
         }
 
-        if (m_sectionData->mouseAction == ReportWriterSectionData::MA_Insert) {
+        if (d->sectionData->mouseAction == ReportWriterSectionData::MA_Insert) {
             QGraphicsItem * item = 0;
-            if (m_sectionData->insertItem == QLatin1String("report:line")) {
+            if (d->sectionData->insertItem == QLatin1String("report:line")) {
                 item = new KoReportDesignerItemLine(v->designer(), v->scene(), pos, end);
 
             }
             else {
                 KoReportPluginManager* pluginManager = KoReportPluginManager::self();
-                KoReportPluginInterface *plug = pluginManager->plugin(m_sectionData->insertItem);
+                KoReportPluginInterface *plug = pluginManager->plugin(d->sectionData->insertItem);
                 if (plug) {
                     QObject *obj = plug->createDesignerInstance(v->designer(), v->scene(), pos);
                     if (obj) {
@@ -906,12 +994,12 @@ void KoReportDesigner::sectionMouseReleaseEvent(ReportSceneView * v, QMouseEvent
                     if (v && v->designer()) {
                         v->designer()->setModified(true);
                     }
-                    emit itemInserted(m_sectionData->insertItem);
+                    emit itemInserted(d->sectionData->insertItem);
                 }
             }
 
-            m_sectionData->mouseAction = ReportWriterSectionData::MA_None;
-            m_sectionData->insertItem.clear();
+            d->sectionData->mouseAction = ReportWriterSectionData::MA_None;
+            d->sectionData->insertItem.clear();
             unsetSectionCursor();
         }
     }
@@ -928,12 +1016,12 @@ unsigned int KoReportDesigner::selectionCount() const
 void KoReportDesigner::changeSet(KPropertySet *s)
 {
     //Set the checked state of the report properties button
-    if (s == m_set)
+    if (s == d->set)
         d->pageButton->setCheckState(Qt::Checked);
     else
         d->pageButton->setCheckState(Qt::Unchecked);
 
-    m_itmset = s;
+    d->itmset = s;
     emit propertySetChanged();
 }
 
@@ -944,8 +1032,8 @@ void KoReportDesigner::changeSet(KPropertySet *s)
 void KoReportDesigner::slotItem(const QString &entity)
 {
     kreportDebug() << entity;
-    m_sectionData->mouseAction = ReportWriterSectionData::MA_Insert;
-    m_sectionData->insertItem = entity;
+    d->sectionData->mouseAction = ReportWriterSectionData::MA_Insert;
+    d->sectionData->insertItem = entity;
     setSectionCursor(QCursor(Qt::CrossCursor));
 }
 
@@ -959,7 +1047,7 @@ void KoReportDesigner::slotEditDelete()
             QGraphicsScene * scene = item->scene();
             delete item;
             scene->update();
-            m_sectionData->mouseAction = ReportWriterSectionData::MA_None;
+            d->sectionData->mouseAction = ReportWriterSectionData::MA_None;
             modified = true;
         }
     }
@@ -969,8 +1057,8 @@ void KoReportDesigner::slotEditDelete()
      if weve deleted something in the list
      should really check if an item is in the list first
      and remove it. */
-    m_sectionData->cut_list.clear();
-    m_sectionData->copy_list.clear();
+    d->sectionData->cut_list.clear();
+    d->sectionData->copy_list.clear();
     if (modified) {
         setModified(true);
     }
@@ -981,24 +1069,24 @@ void KoReportDesigner::slotEditCut()
     if (selectionCount() > 0) {
         //First delete any items that are curerntly in the list
         //so as not to leak memory
-        qDeleteAll(m_sectionData->cut_list);
-        m_sectionData->cut_list.clear();
+        qDeleteAll(d->sectionData->cut_list);
+        d->sectionData->cut_list.clear();
 
         QGraphicsItem * item = activeScene()->selectedItems().first();
         bool modified = false;
         if (item) {
-            m_sectionData->copy_list.clear();
+            d->sectionData->copy_list.clear();
             foreach(QGraphicsItem *item, activeScene()->selectedItems()) {
-                m_sectionData->cut_list.append(dynamic_cast<KoReportDesignerItemBase*>(item));
-                m_sectionData->copy_list.append(dynamic_cast<KoReportDesignerItemBase*>(item));
+                d->sectionData->cut_list.append(dynamic_cast<KoReportDesignerItemBase*>(item));
+                d->sectionData->copy_list.append(dynamic_cast<KoReportDesignerItemBase*>(item));
             }
             foreach(QGraphicsItem *item, activeScene()->selectedItems()) {
                 activeScene()->removeItem(item);
                 activeScene()->update();
                 modified = true;
             }
-            m_sectionData->selected_x_offset = 10;
-            m_sectionData->selected_y_offset = 10;
+            d->sectionData->selected_x_offset = 10;
+            d->sectionData->selected_y_offset = 10;
         }
         if (modified) {
             setModified(true);
@@ -1013,12 +1101,12 @@ void KoReportDesigner::slotEditCopy()
 
     QGraphicsItem * item = activeScene()->selectedItems().first();
     if (item) {
-        m_sectionData->copy_list.clear();
+        d->sectionData->copy_list.clear();
         foreach(QGraphicsItem *item, activeScene()->selectedItems()) {
-            m_sectionData->copy_list.append(dynamic_cast<KoReportDesignerItemBase*>(item));
+            d->sectionData->copy_list.append(dynamic_cast<KoReportDesignerItemBase*>(item));
         }
-        m_sectionData->selected_x_offset = 10;
-        m_sectionData->selected_y_offset = 10;
+        d->sectionData->selected_x_offset = 10;
+        d->sectionData->selected_y_offset = 10;
     }
 }
 
@@ -1032,19 +1120,19 @@ void KoReportDesigner::slotEditPaste(QGraphicsScene * canvas)
 {
 
     // paste a new item of the copy we have in the specified location
-    if (!m_sectionData->copy_list.isEmpty()) {
+    if (!d->sectionData->copy_list.isEmpty()) {
         QList<QGraphicsItem*> activeItems = canvas->selectedItems();
         QGraphicsItem *activeItem = 0;
         if (activeItems.count() == 1) {
             activeItem = activeItems.first();
         }
         canvas->clearSelection();
-        m_sectionData->mouseAction = ReportWriterSectionData::MA_None;
+        d->sectionData->mouseAction = ReportWriterSectionData::MA_None;
 
         //! @todo this code sucks :)
         //! The setPos calls only work AFTER the name has been set ?!?!?
 
-        foreach(KoReportDesignerItemBase *item, m_sectionData->copy_list) {
+        foreach(KoReportDesignerItemBase *item, d->sectionData->copy_list) {
             KoReportItemBase *obj = dynamic_cast<KoReportItemBase*>(item);
             const QString type = obj ? obj->typeName() : QLatin1String("object");
             //kreportDebug() << type;
@@ -1062,7 +1150,7 @@ void KoReportDesigner::slotEditPaste(QGraphicsScene * canvas)
                 pasted_ent->setSelected(true);
                 canvas->addItem(pasted_ent);
                 pasted_ent->show();
-                m_sectionData->mouseAction = ReportWriterSectionData::MA_Grab;
+                d->sectionData->mouseAction = ReportWriterSectionData::MA_Grab;
                 setModified(true);
             }
         }
@@ -1111,22 +1199,22 @@ QString KoReportDesigner::suggestEntityName(const QString &n) const
         }
     }
 
-    if (m_detail) {
+    if (d->detail) {
         //Count items in the group headers/footers
-        for (int i = 0; i < m_detail->groupSectionCount(); i++) {
-            sec = m_detail->groupSection(i)->groupHeader();
+        for (int i = 0; i < d->detail->groupSectionCount(); i++) {
+            sec = d->detail->groupSection(i)->groupHeader();
             if (sec) {
                 const QGraphicsItemList l = sec->items();
                 itemCount += l.count();
             }
-            sec = m_detail->groupSection(i)->groupFooter();
+            sec = d->detail->groupSection(i)->groupFooter();
             if (sec) {
                 const QGraphicsItemList l = sec->items();
                 itemCount += l.count();
             }
         }
 
-        sec = m_detail->detailSection();
+        sec = d->detail->detailSection();
         if (sec) {
             const QGraphicsItemList l = sec->items();
             itemCount += l.count();
@@ -1161,9 +1249,9 @@ bool KoReportDesigner::isEntityNameUnique(const QString &n, KoReportItemBase* ig
     }
 
     //Count items in the group headers/footers
-    if (unique && m_detail) {
-        for (int i = 0; i < m_detail->groupSectionCount(); ++i) {
-            sec = m_detail->groupSection(i)->groupHeader();
+    if (unique && d->detail) {
+        for (int i = 0; i < d->detail->groupSectionCount(); ++i) {
+            sec = d->detail->groupSection(i)->groupHeader();
             if (sec) {
                 const QGraphicsItemList l = sec->items();
                 for (QGraphicsItemList::const_iterator it = l.constBegin(); it != l.constEnd(); ++it) {
@@ -1175,7 +1263,7 @@ bool KoReportDesigner::isEntityNameUnique(const QString &n, KoReportItemBase* ig
                 }
 
             }
-            sec = m_detail->groupSection(i)->groupFooter();
+            sec = d->detail->groupSection(i)->groupFooter();
             if (unique && sec) {
                 const QGraphicsItemList l = sec->items();
                 for (QGraphicsItemList::const_iterator it = l.constBegin(); it != l.constEnd(); ++it) {
@@ -1188,8 +1276,8 @@ bool KoReportDesigner::isEntityNameUnique(const QString &n, KoReportItemBase* ig
             }
         }
     }
-    if (unique && m_detail) {
-        sec = m_detail->detailSection();
+    if (unique && d->detail) {
+        sec = d->detail->detailSection();
         if (sec) {
             const QGraphicsItemList l = sec->items();
             for (QGraphicsItemList::const_iterator it = l.constBegin(); it != l.constEnd(); ++it) {
@@ -1254,137 +1342,137 @@ QList< QAction* > KoReportDesigner::designerActions()
     QAction *sep = new QAction(QString(), this);
     sep->setSeparator(true);
 
-    al << m_editCutAction << m_editCopyAction << m_editPasteAction << m_editDeleteAction << sep << m_sectionEdit << sep << m_itemLowerAction << m_itemRaiseAction;
+    al << d->editCutAction << d->editCopyAction << d->editPasteAction << d->editDeleteAction << sep << d->sectionEdit << sep << d->itemLowerAction << d->itemRaiseAction;
 
     return al;
 }
 
 void KoReportDesigner::createActions()
 {
-    m_editCutAction = KStandardAction::cut(this);
-    m_editCutAction->setProperty("iconOnly", true);
-    m_editCopyAction = KStandardAction::copy(this);
-    m_editCopyAction->setProperty("iconOnly", true);
-    m_editPasteAction = KStandardAction::paste(this);
-    m_editPasteAction->setProperty("iconOnly", true);
+    d->editCutAction = KStandardAction::cut(this);
+    d->editCutAction->setProperty("iconOnly", true);
+    d->editCopyAction = KStandardAction::copy(this);
+    d->editCopyAction->setProperty("iconOnly", true);
+    d->editPasteAction = KStandardAction::paste(this);
+    d->editPasteAction->setProperty("iconOnly", true);
     const KGuiItem del = KStandardGuiItem::del();
-    m_editDeleteAction = new QAction(del.icon(), del.text(), this);
-    m_editDeleteAction->setObjectName(QLatin1String("editdelete"));
-    m_editDeleteAction->setToolTip(del.toolTip());
-    m_editDeleteAction->setWhatsThis(del.whatsThis());
-    m_editDeleteAction->setProperty("iconOnly", true);
+    d->editDeleteAction = new QAction(del.icon(), del.text(), this);
+    d->editDeleteAction->setObjectName(QLatin1String("editdelete"));
+    d->editDeleteAction->setToolTip(del.toolTip());
+    d->editDeleteAction->setWhatsThis(del.whatsThis());
+    d->editDeleteAction->setProperty("iconOnly", true);
 
-    m_sectionEdit = new QAction(tr("Edit Sections"), this);
-    m_sectionEdit->setObjectName(QLatin1String("sectionedit"));
+    d->sectionEdit = new QAction(tr("Edit Sections"), this);
+    d->sectionEdit->setObjectName(QLatin1String("sectionedit"));
 
-    m_itemRaiseAction = new QAction(QIcon::fromTheme(QLatin1String("arrow-up")), tr("Raise"), this);
-    m_itemRaiseAction->setObjectName(QLatin1String("itemraise"));
-    m_itemLowerAction = new QAction(QIcon::fromTheme(QLatin1String("arrow-down")), tr("Lower"), this);
-    m_itemLowerAction->setObjectName(QLatin1String("itemlower"));
+    d->itemRaiseAction = new QAction(QIcon::fromTheme(QLatin1String("arrow-up")), tr("Raise"), this);
+    d->itemRaiseAction->setObjectName(QLatin1String("itemraise"));
+    d->itemLowerAction = new QAction(QIcon::fromTheme(QLatin1String("arrow-down")), tr("Lower"), this);
+    d->itemLowerAction->setObjectName(QLatin1String("itemlower"));
 
     //Edit Actions
-    connect(m_editCutAction, SIGNAL(triggered(bool)), this, SLOT(slotEditCut()));
-    connect(m_editCopyAction, SIGNAL(triggered(bool)), this, SLOT(slotEditCopy()));
-    connect(m_editPasteAction, SIGNAL(triggered(bool)), this, SLOT(slotEditPaste()));
-    connect(m_editDeleteAction, SIGNAL(triggered(bool)), this, SLOT(slotEditDelete()));
+    connect(d->editCutAction, SIGNAL(triggered(bool)), this, SLOT(slotEditCut()));
+    connect(d->editCopyAction, SIGNAL(triggered(bool)), this, SLOT(slotEditCopy()));
+    connect(d->editPasteAction, SIGNAL(triggered(bool)), this, SLOT(slotEditPaste()));
+    connect(d->editDeleteAction, SIGNAL(triggered(bool)), this, SLOT(slotEditDelete()));
 
-    connect(m_sectionEdit, SIGNAL(triggered(bool)), this, SLOT(slotSectionEditor()));
+    connect(d->sectionEdit, SIGNAL(triggered(bool)), this, SLOT(slotSectionEditor()));
 
     //Raise/Lower
-    connect(m_itemRaiseAction, SIGNAL(triggered(bool)), this, SLOT(slotRaiseSelected()));
-    connect(m_itemLowerAction, SIGNAL(triggered(bool)), this, SLOT(slotLowerSelected()));
+    connect(d->itemRaiseAction, SIGNAL(triggered(bool)), this, SLOT(slotRaiseSelected()));
+    connect(d->itemLowerAction, SIGNAL(triggered(bool)), this, SLOT(slotLowerSelected()));
 }
 
 void KoReportDesigner::setSectionCursor(const QCursor& c)
 {
-    if (m_pageFooterAny)
-        m_pageFooterAny->setSectionCursor(c);
-    if (m_pageFooterEven)
-        m_pageFooterEven->setSectionCursor(c);
-    if (m_pageFooterFirst)
-        m_pageFooterFirst->setSectionCursor(c);
-    if (m_pageFooterLast)
-        m_pageFooterLast->setSectionCursor(c);
-    if (m_pageFooterOdd)
-        m_pageFooterOdd->setSectionCursor(c);
+    if (d->pageFooterAny)
+        d->pageFooterAny->setSectionCursor(c);
+    if (d->pageFooterEven)
+        d->pageFooterEven->setSectionCursor(c);
+    if (d->pageFooterFirst)
+        d->pageFooterFirst->setSectionCursor(c);
+    if (d->pageFooterLast)
+        d->pageFooterLast->setSectionCursor(c);
+    if (d->pageFooterOdd)
+        d->pageFooterOdd->setSectionCursor(c);
 
-    if (m_pageHeaderAny)
-        m_pageHeaderAny->setSectionCursor(c);
-    if (m_pageHeaderEven)
-        m_pageHeaderEven->setSectionCursor(c);
-    if (m_pageHeaderFirst)
-        m_pageHeaderFirst->setSectionCursor(c);
-    if (m_pageHeaderLast)
-        m_pageHeaderLast->setSectionCursor(c);
-    if (m_pageHeaderOdd)
-        m_pageHeaderOdd->setSectionCursor(c);
+    if (d->pageHeaderAny)
+        d->pageHeaderAny->setSectionCursor(c);
+    if (d->pageHeaderEven)
+        d->pageHeaderEven->setSectionCursor(c);
+    if (d->pageHeaderFirst)
+        d->pageHeaderFirst->setSectionCursor(c);
+    if (d->pageHeaderLast)
+        d->pageHeaderLast->setSectionCursor(c);
+    if (d->pageHeaderOdd)
+        d->pageHeaderOdd->setSectionCursor(c);
 
-    if (m_detail)
-        m_detail->setSectionCursor(c);
+    if (d->detail)
+        d->detail->setSectionCursor(c);
 }
 
 void KoReportDesigner::unsetSectionCursor()
 {
-    if (m_pageFooterAny)
-        m_pageFooterAny->unsetSectionCursor();
-    if (m_pageFooterEven)
-        m_pageFooterEven->unsetSectionCursor();
-    if (m_pageFooterFirst)
-        m_pageFooterFirst->unsetSectionCursor();
-    if (m_pageFooterLast)
-        m_pageFooterLast->unsetSectionCursor();
-    if (m_pageFooterOdd)
-        m_pageFooterOdd->unsetSectionCursor();
+    if (d->pageFooterAny)
+        d->pageFooterAny->unsetSectionCursor();
+    if (d->pageFooterEven)
+        d->pageFooterEven->unsetSectionCursor();
+    if (d->pageFooterFirst)
+        d->pageFooterFirst->unsetSectionCursor();
+    if (d->pageFooterLast)
+        d->pageFooterLast->unsetSectionCursor();
+    if (d->pageFooterOdd)
+        d->pageFooterOdd->unsetSectionCursor();
 
-    if (m_pageHeaderAny)
-        m_pageHeaderAny->unsetSectionCursor();
-    if (m_pageHeaderEven)
-        m_pageHeaderEven->unsetSectionCursor();
-    if (m_pageHeaderFirst)
-        m_pageHeaderFirst->unsetSectionCursor();
-    if (m_pageHeaderLast)
-        m_pageHeaderLast->unsetSectionCursor();
-    if (m_pageHeaderOdd)
-        m_pageHeaderOdd->unsetSectionCursor();
+    if (d->pageHeaderAny)
+        d->pageHeaderAny->unsetSectionCursor();
+    if (d->pageHeaderEven)
+        d->pageHeaderEven->unsetSectionCursor();
+    if (d->pageHeaderFirst)
+        d->pageHeaderFirst->unsetSectionCursor();
+    if (d->pageHeaderLast)
+        d->pageHeaderLast->unsetSectionCursor();
+    if (d->pageHeaderOdd)
+        d->pageHeaderOdd->unsetSectionCursor();
 
-    if (m_detail)
-        m_detail->unsetSectionCursor();
+    if (d->detail)
+        d->detail->unsetSectionCursor();
 }
 
 qreal KoReportDesigner::countSelectionHeight() const
 {
-    if (m_releaseY == -1 || m_pressY == -1) {
+    if (d->releaseY == -1 || d->pressY == -1) {
         return -1;
     }
-    return qAbs(m_releaseY - m_pressY);
+    return qAbs(d->releaseY - d->pressY);
 }
 
 qreal KoReportDesigner::countSelectionWidth() const
 {
-    if (m_releaseX == -1 || m_pressX == -1) {
+    if (d->releaseX == -1 || d->pressX == -1) {
         return -1;
     }
-    return qAbs(m_releaseX - m_pressX);
+    return qAbs(d->releaseX - d->pressX);
 }
 
 qreal KoReportDesigner::getSelectionPressX() const
 {
-    return m_pressX;
+    return d->pressX;
 }
 
 qreal KoReportDesigner::getSelectionPressY() const
 {
-    return m_pressY;
+    return d->pressY;
 }
 
 QPointF KoReportDesigner::getPressPoint() const
 {
-    return QPointF(m_pressX, m_pressY);
+    return QPointF(d->pressX, d->pressY);
 }
 
 QPointF KoReportDesigner::getReleasePoint() const
 {
-    return QPointF(m_releaseX, m_releaseY);
+    return QPointF(d->releaseX, d->releaseY);
 }
 
 void KoReportDesigner::plugItemActions(const QList<QAction*> &actList)
