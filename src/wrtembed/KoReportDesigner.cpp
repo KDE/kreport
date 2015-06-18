@@ -968,7 +968,7 @@ void KoReportDesigner::sectionMouseReleaseEvent(ReportSceneView * v, QMouseEvent
 
         if (d->sectionData->mouseAction == ReportWriterSectionData::MA_Insert) {
             QGraphicsItem * item = 0;
-            if (d->sectionData->insertItem == QLatin1String("report:line")) {
+            if (d->sectionData->insertItem == QLatin1String("org.kde.kreport.line")) {
                 item = new KoReportDesignerItemLine(v->designer(), v->scene(), pos, end);
 
             }
@@ -1307,7 +1307,7 @@ QList<QAction*> KoReportDesigner::itemActions(QActionGroup* group)
     QList<QAction*> actList = manager->actions();
 
     QAction *act = new QAction(QIcon::fromTheme(QLatin1String("draw-line")), tr("Line"), group);
-    act->setObjectName(QLatin1String("report:line"));
+    act->setObjectName(QLatin1String("org.kde.kreport.line"));
     act->setData(9);
     act->setCheckable(true);
     actList << act;
