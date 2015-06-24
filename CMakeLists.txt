@@ -47,8 +47,8 @@ endif()
 add_subdirectory(src)
 
 if (NOT WIN32)
-  configure_file(${KReport_SOURCE_DIR}/kreport.pc.cmake ${KReport_BINARY_DIR}/kreport.pc @ONLY)
-  install(FILES ${KReport_BINARY_DIR}/kreport.pc DESTINATION ${LIB_INSTALL_DIR}/pkgconfig)
+  configure_file(${KReport_SOURCE_DIR}/KReport.pc.cmake ${KReport_BINARY_DIR}/KReport.pc @ONLY)
+  install(FILES ${KReport_BINARY_DIR}/KReport.pc DESTINATION ${LIB_INSTALL_DIR}/pkgconfig)
 endif ()
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
