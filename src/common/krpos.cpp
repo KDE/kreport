@@ -20,7 +20,7 @@
 
 #include <KProperty>
 
-#include <klocale.h>
+#include <klocalizedstring.h>
 #include <QScreen>
 #include <QApplication>
 

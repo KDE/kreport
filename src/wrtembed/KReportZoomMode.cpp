@@ -19,7 +19,7 @@
 */
 
 #include "KReportZoomMode.h"
-#include <klocale.h>
+#include <klocalizedstring.h>
 
 const char* const KReportZoomMode::modes[] =
 {

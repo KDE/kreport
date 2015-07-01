@@ -16,7 +16,7 @@
  */
 
 #include "KoReportItemBase.h"
-#include <klocale.h>
+#include <klocalizedstring.h>
 #include "krpos.h"
 #include "krsize.h"
 #include "krutils.h"

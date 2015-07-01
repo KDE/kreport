@@ -22,6 +22,8 @@ kcoreaddons_desktop_to_json(kreport_barcodeplugin kreport_barcodeplugin.desktop)
 target_link_libraries(kreport_barcodeplugin
     PUBLIC
         KReport
+    PRIVATE
+        KF5::I18n
 )
 
 install(TARGETS kreport_barcodeplugin DESTINATION ${KREPORT_PLUGIN_INSTALL_DIR})

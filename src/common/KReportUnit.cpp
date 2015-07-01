@@ -26,7 +26,7 @@
 
 #include <QTransform>
 
-#include <klocale.h>
+#include <klocalizedstring.h>
 
 // ensure the same order as in KReportUnit::Unit
 static const char* const unitNameList[KReportUnit::TypeCount] =

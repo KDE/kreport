@@ -24,7 +24,7 @@
 #include "KReportRuler_p.h"
 #include "KReportZoomHandler.h"
 
-#include <klocale.h>
+#include <klocalizedstring.h>
 
 #include <QPainter>
 #include <QMenu>
