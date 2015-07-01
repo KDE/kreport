@@ -18,6 +18,7 @@
 #define __KOREPORTDATA_H__
 
 #include <QStringList>
+#include <QVariant>
 
 #include "kreport_export.h"
 
