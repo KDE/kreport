@@ -25,8 +25,7 @@
 #include <cmath>
 
 #include <QTransform>
-
-#include <klocalizedstring.h>
+#include <QCoreApplication>
 
 // ensure the same order as in KReportUnit::Unit
 static const char* const unitNameList[KReportUnit::TypeCount] =
@@ -45,23 +44,23 @@ QString KReportUnit::unitDescription(KReportUnit::Type type)
 {
     switch (type) {
     case KReportUnit::Millimeter:
-        return i18n("Millimeters (mm)");
+        return QCoreApplication::translate("KReportUnit", "Millimeters (mm)");
     case KReportUnit::Centimeter:
-        return i18n("Centimeters (cm)");
+        return QCoreApplication::translate("KReportUnit", "Centimeters (cm)");
     case KReportUnit::Decimeter:
-        return i18n("Decimeters (dm)");
+        return QCoreApplication::translate("KReportUnit", "Decimeters (dm)");
     case KReportUnit::Inch:
-        return i18n("Inches (in)");
+        return QCoreApplication::translate("KReportUnit", "Inches (in)");
     case KReportUnit::Pica:
-        return i18n("Pica (pi)");
+        return QCoreApplication::translate("KReportUnit", "Pica (pi)");
     case KReportUnit::Cicero:
-        return i18n("Cicero (cc)");
+        return QCoreApplication::translate("KReportUnit", "Cicero (cc)");
     case KReportUnit::Point:
-        return i18n("Points (pt)");
+        return QCoreApplication::translate("KReportUnit", "Points (pt)");
     case KReportUnit::Pixel:
-        return i18n("Pixels (px)");
+        return QCoreApplication::translate("KReportUnit", "Pixels (px)");
     default:
-        return i18n("Unsupported unit");
+        return QCoreApplication::translate("KReportUnit", "Unsupported unit");
     }
 }
 

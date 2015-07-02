@@ -24,6 +24,7 @@
 
 class KoReportWebPlugin : public KoReportPluginInterface
 {
+    Q_OBJECT
 public:
     explicit KoReportWebPlugin(QObject *parent, const QVariantList &args = QVariantList());
     virtual ~KoReportWebPlugin();

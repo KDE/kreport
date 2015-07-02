@@ -20,8 +20,6 @@
 #include <KProperty>
 #include <KPropertySet>
 
-#include <klocalizedstring.h>
-
 #include <QDomNode>
 
 #include "kreportplugin_debug.h"

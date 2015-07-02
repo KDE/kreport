@@ -2,6 +2,8 @@ include_directories(
     ${KOREPORT_INCLUDES}
 )
 
+ecm_create_qm_loader(koreport_chartplugin_QM_LOADER kreport_chartplugin_qt)
+
 #build a shared library
 set(koreport_chartplugin_LIB_SRCS
     ${PROJECT_SOURCE_DIR}/src/common/kreportplugin_debug.cpp
@@ -9,6 +11,7 @@ set(koreport_chartplugin_LIB_SRCS
     KoReportDesignerItemChart.cpp
     krscriptchart.cpp
     KoReportChartPlugin.cpp
+    ${koreport_chartplugin_QM_LOADER}
 )
 
 add_library(koreport_chartplugin MODULE ${koreport_chartplugin_LIB_SRCS})

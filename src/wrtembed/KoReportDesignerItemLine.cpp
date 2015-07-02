@@ -24,8 +24,6 @@
 #include "common/krutils.h"
 
 
-#include <klocalizedstring.h>
-
 #include <QDomDocument>
 #include <QPainter>
 #include <QGraphicsScene>

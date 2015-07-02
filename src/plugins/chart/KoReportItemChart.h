@@ -34,6 +34,7 @@ class Chart;
 */
 class KoReportItemChart : public KoReportItemBase
 {
+    Q_OBJECT
 public:
     KoReportItemChart();
     explicit KoReportItemChart(QDomNode &element);

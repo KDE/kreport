@@ -115,6 +115,8 @@ qt5_wrap_ui(kreport_LIB_SRCS
     wrtembed/sectioneditor.ui
 )
 
+ecm_create_qm_loader(kreport_LIB_SRCS kreport_qt)
+
 add_library(KReport SHARED ${kreport_LIB_SRCS})
 
 generate_export_header(KReport)

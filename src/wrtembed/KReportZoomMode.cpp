@@ -19,19 +19,20 @@
 */
 
 #include "KReportZoomMode.h"
-#include <klocalizedstring.h>
+
+#include <QCoreApplication>
 
 const char* const KReportZoomMode::modes[] =
 {
-    I18N_NOOP("%1%"),
-    I18N_NOOP("Fit Page Width"),
-    I18N_NOOP("Fit Page"),
+    QT_TRANSLATE_NOOP("KReportZoomMode", "%1%"),
+    QT_TRANSLATE_NOOP("KReportZoomMode", "Fit Page Width"),
+    QT_TRANSLATE_NOOP("KReportZoomMode", "Fit Page"),
     0,
-    I18N_NOOP("Actual Pixels"),
+    QT_TRANSLATE_NOOP("KReportZoomMode", "Actual Pixels"),
     0,
     0,
     0,
-    I18N_NOOP("Fit Text Width")
+    QT_TRANSLATE_NOOP("KReportZoomMode", "Fit Text Width")
 };
 
 qreal KReportZoomMode::minimumZoomValue = 0.2;
@@ -39,21 +40,21 @@ qreal KReportZoomMode::maximumZoomValue = 5.0;
 
 QString KReportZoomMode::toString(Mode mode)
 {
-    return i18n(modes[mode]);
+    return QCoreApplication::translate("KReportZoomMode", modes[mode]);
 }
 
 KReportZoomMode::Mode KReportZoomMode::toMode(const QString& mode)
 {
-    if(mode == i18n(modes[ZOOM_WIDTH]))
+    if(mode == QCoreApplication::translate("KReportZoomMode", modes[ZOOM_WIDTH]))
         return ZOOM_WIDTH;
     else
-    if(mode == i18n(modes[ZOOM_PAGE]))
+    if(mode == QCoreApplication::translate("KReportZoomMode", modes[ZOOM_PAGE]))
         return ZOOM_PAGE;
     else
-     if(mode == i18n(modes[ZOOM_PIXELS]))
+     if(mode == QCoreApplication::translate("KReportZoomMode", modes[ZOOM_PIXELS]))
         return ZOOM_PIXELS;
     else
-     if(mode == i18n(modes[ZOOM_TEXT]))
+     if(mode == QCoreApplication::translate("KReportZoomMode", modes[ZOOM_TEXT]))
         return ZOOM_TEXT;
     else
        return ZOOM_CONSTANT;

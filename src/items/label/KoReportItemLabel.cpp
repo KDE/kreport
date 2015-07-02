@@ -21,8 +21,6 @@
 
 #include <KPropertySet>
 
-#include <klocalizedstring.h>
-
 #include <QFontDatabase>
 #include <QPalette>
 #include <QDomNodeList>
@@ -92,32 +90,32 @@ void KoReportItemLabel::createProperties()
 {
     m_set = new KPropertySet(0, QLatin1String("Label"));
 
-    m_text = new KProperty("caption", QLatin1String("Label"), i18n("Caption"));
+    m_text = new KProperty("caption", QLatin1String("Label"), tr("Caption"));
     QStringList keys, strings;
 
     keys << QLatin1String("left") << QLatin1String("center") << QLatin1String("right");
-    strings << i18n("Left") << i18n("Center") << i18n("Right");
-    m_horizontalAlignment = new KProperty("horizontal-align", keys, strings, QLatin1String("left"), i18n("Horizontal Alignment"));
+    strings << tr("Left") << tr("Center") << tr("Right");
+    m_horizontalAlignment = new KProperty("horizontal-align", keys, strings, QLatin1String("left"), tr("Horizontal Alignment"));
 
     keys.clear();
     strings.clear();
     keys << QLatin1String("top") << QLatin1String("center") << QLatin1String("bottom");
-    strings << i18n("Top") << i18n("Center") << i18n("Bottom");
-    m_verticalAlignment = new KProperty("vertical-align", keys, strings, QLatin1String("center"), i18n("Vertical Alignment"));
+    strings << tr("Top") << tr("Center") << tr("Bottom");
+    m_verticalAlignment = new KProperty("vertical-align", keys, strings, QLatin1String("center"), tr("Vertical Alignment"));
 
-    m_font = new KProperty("font", QFontDatabase::systemFont(QFontDatabase::GeneralFont), i18n("Font"), i18n("Font"));
+    m_font = new KProperty("font", QFontDatabase::systemFont(QFontDatabase::GeneralFont), tr("Font"), tr("Font"));
 
-    m_backgroundColor = new KProperty("background-color", QColor(Qt::white), i18n("Background Color"));
-    m_foregroundColor = new KProperty("foreground-color", QPalette().color(QPalette::Foreground), i18n("Foreground Color"));
+    m_backgroundColor = new KProperty("background-color", QColor(Qt::white), tr("Background Color"));
+    m_foregroundColor = new KProperty("foreground-color", QPalette().color(QPalette::Foreground), tr("Foreground Color"));
 
-    m_backgroundOpacity = new KProperty("background-opacity", QVariant(0), i18n("Background Opacity"));
+    m_backgroundOpacity = new KProperty("background-opacity", QVariant(0), tr("Background Opacity"));
     m_backgroundOpacity->setOption("max", 100);
     m_backgroundOpacity->setOption("min", 0);
     m_backgroundOpacity->setOption("unit", QLatin1String("%"));
 
-    m_lineWeight = new KProperty("line-weight", 1, i18n("Line Weight"));
-    m_lineColor = new KProperty("line-color", QColor(Qt::black), i18n("Line Color"));
-    m_lineStyle = new KProperty("line-style", QPen(Qt::NoPen), i18n("Line Style"), i18n("Line Style"), KProperty::LineStyle);
+    m_lineWeight = new KProperty("line-weight", 1, tr("Line Weight"));
+    m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
+    m_lineStyle = new KProperty("line-style", QPen(Qt::NoPen), tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
 
     addDefaultProperties();
     m_set->addProperty(m_text);

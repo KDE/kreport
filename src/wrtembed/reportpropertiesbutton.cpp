@@ -18,13 +18,13 @@
 */
 
 #include "reportpropertiesbutton.h"
+
 #include <QPainter>
-#include <klocalizedstring.h>
 
 ReportPropertiesButton::ReportPropertiesButton(QWidget* parent) :  QCheckBox(parent)
 {
-    setToolTip(i18n("Select entire report"));
-    setWhatsThis(i18n("A button that allows a report's surface to be selected, allowing its properties to be seen."));
+    setToolTip(tr("Select entire report"));
+    setWhatsThis(tr("A button that allows a report's surface to be selected, allowing its properties to be seen."));
 }
 
 void ReportPropertiesButton::paintEvent(QPaintEvent* event)

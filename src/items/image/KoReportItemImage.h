@@ -31,6 +31,7 @@ class Image;
 
 class KoReportItemImage : public KoReportItemBase
 {
+    Q_OBJECT
 public:
     KoReportItemImage();
     explicit KoReportItemImage(QDomNode & element);

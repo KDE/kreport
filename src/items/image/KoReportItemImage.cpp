@@ -22,7 +22,6 @@
 #include <KPropertySet>
 
 #include <kcodecs.h>
-#include <klocalizedstring.h>
 
 #include <QBuffer>
 #include <QDomNodeList>
@@ -120,14 +119,14 @@ void KoReportItemImage::createProperties()
 {
     m_set = new KPropertySet(0, QLatin1String("Image"));
 
-    m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), i18n("Data Source"));
+    m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
 
     QStringList keys, strings;
     keys << QLatin1String("clip") << QLatin1String("stretch");
-    strings << i18n("Clip") << i18n("Stretch");
-    m_resizeMode = new KProperty("resize-mode", keys, strings, QLatin1String("clip"), i18n("Resize Mode"));
+    strings << tr("Clip") << tr("Stretch");
+    m_resizeMode = new KProperty("resize-mode", keys, strings, QLatin1String("clip"), tr("Resize Mode"));
 
-    m_staticImage = new KProperty("static-image", QPixmap(), i18n("Value"), i18n("Value used if not bound to a field"));
+    m_staticImage = new KProperty("static-image", QPixmap(), tr("Value"), tr("Value used if not bound to a field"));
 
     addDefaultProperties();
     m_set->addProperty(m_controlSource);

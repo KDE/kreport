@@ -20,14 +20,13 @@
 
 #include <KProperty>
 
-#include <klocalizedstring.h>
 #include <QScreen>
 #include <QApplication>
 
 KRPos::KRPos(const KReportUnit& unit)
 {
     m_unit = unit;
-    m_property = new KProperty("position", toScene(), i18n("Position"));
+    m_property = new KProperty("position", toScene(), QCoreApplication::translate("KRPos", "Position"));
 }
 
 void KRPos::setName(const QString& name)

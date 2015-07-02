@@ -4,4 +4,4 @@
 # EXTRACT_TR_STRINGS extracts strings with lupdate and convert them to .pot with
 # lconvert.
 $EXTRACT_TR_STRINGS `find . -not -path ./plugins/\* \( -name \*.cpp -o -name \*.h -o -name \*.ui -o -name \*.qml \) -type f` \
-    -o $podir/kreport.pot
+    -o $podir/kreport_qt.pot

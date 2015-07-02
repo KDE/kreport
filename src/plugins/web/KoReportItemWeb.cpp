@@ -24,8 +24,6 @@
 #include <KProperty>
 #include <KPropertySet>
 
-#include <klocalizedstring.h>
-
 #include <QGraphicsRectItem>
 #include <QUrl>
 #include <QWebPage>
@@ -67,7 +65,7 @@ void KoReportItemWeb::createProperties()
     m_set = new KPropertySet(0, "web");
 
     m_controlSource = new KProperty("item-data-source", QStringList(),
-                                    QStringList(), QString(), i18n("Data Source"));
+                                    QStringList(), QString(), tr("Data Source"));
     m_set->addProperty(m_controlSource);
     addDefaultProperties();
 }

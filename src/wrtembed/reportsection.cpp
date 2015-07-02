@@ -18,6 +18,7 @@
  */
 
 #include "reportsection.h"
+
 #include "reportscene.h"
 #include "reportsceneview.h"
 #include "KoReportDesigner.h"
@@ -29,8 +30,6 @@
 #include "KoReportDesignerItemLine.h"
 #include "KReportRuler_p.h"
 #include "KReportZoomHandler.h"
-
-#include <klocalizedstring.h>
 
 #include "kreport_debug.h"
 #include <QLabel>
@@ -120,7 +119,7 @@ ReportSection::ReportSection(KoReportDesigner * rptdes)
     // ok create the base interface
     d->title = new ReportSectionTitle(this);
     d->title->setObjectName(QLatin1String("detail"));
-    d->title->setText(i18n("Detail"));
+    d->title->setText(tr("Detail"));
 
     d->sectionRuler = new KReportRuler(this, Qt::Vertical, d->reportDesigner->zoomHandler());
     d->sectionRuler->setUnit(d->reportDesigner->pageUnit());

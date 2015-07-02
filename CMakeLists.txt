@@ -28,7 +28,7 @@ set(REQUIRED_QT_VERSION "5.2.0")
 # Required components to build this framework
 # TODO move Widgets/KF5WidgetsAddons-dependent part to a libKReportDesigner
 find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Core Widgets Xml PrintSupport)
-find_package(KF5 5.7.0 REQUIRED CoreAddons WidgetsAddons GuiAddons I18n Kross)
+find_package(KF5 5.7.0 REQUIRED CoreAddons WidgetsAddons GuiAddons Kross)
 find_package(KProperty 2.96.0 REQUIRED)
 
 set(KREPORT_PLUGIN_INSTALL_DIR ${PLUGIN_INSTALL_DIR}/kreport)

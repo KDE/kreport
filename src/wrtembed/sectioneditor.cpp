@@ -18,6 +18,7 @@
  */
 
 #include "sectioneditor.h"
+
 #include "KoReportDesigner.h"
 #include "reportsection.h"
 #include "reportsectiondetail.h"
@@ -52,7 +53,7 @@ SectionEditor::SectionEditor(QWidget* parent)
 {
     //! @todo check section editor
     //setButtons(Close);
-    //setCaption(i18n("Section Editor"));
+    //setCaption(tr("Section Editor"));
 
     QDialogButtonBox* buttonBox = new QDialogButtonBox(QDialogButtonBox::Close);
     QVBoxLayout* mainLayout = new QVBoxLayout(this);

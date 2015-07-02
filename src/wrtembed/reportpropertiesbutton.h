@@ -24,6 +24,7 @@
 
 class ReportPropertiesButton : public QCheckBox
 {
+    Q_OBJECT
 public:
     explicit ReportPropertiesButton(QWidget*);
 protected:

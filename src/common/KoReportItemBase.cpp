@@ -16,7 +16,7 @@
  */
 
 #include "KoReportItemBase.h"
-#include <klocalizedstring.h>
+
 #include "krpos.h"
 #include "krsize.h"
 #include "krutils.h"
@@ -25,7 +25,7 @@
 KoReportItemBase::KoReportItemBase()
 {
     Z = 0;
-    m_name = new KProperty("name", QString(), i18n("Name"), i18n("Object Name"));
+    m_name = new KProperty("name", QString(), tr("Name"), tr("Object Name"));
     m_name->setAutoSync(0);
 }
 

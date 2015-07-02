@@ -24,8 +24,6 @@
 #include <KProperty>
 #include <KPropertySet>
 
-#include <klocalizedstring.h>
-
 #include <QGraphicsScene>
 #include <QGraphicsSceneMouseEvent>
 #include <QDomDocument>

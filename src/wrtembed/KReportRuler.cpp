@@ -24,8 +24,6 @@
 #include "KReportRuler_p.h"
 #include "KReportZoomHandler.h"
 
-#include <klocalizedstring.h>
-
 #include <QPainter>
 #include <QMenu>
 #include <QMouseEvent>
@@ -1262,9 +1260,9 @@ void KReportRuler::mouseMoveEvent ( QMouseEvent* ev )
         KReportRulerPrivate::Selection selection = d->selectionAtPosition(pos);
         QString text;
         switch(selection) {
-        case KReportRulerPrivate::FirstLineIndent: text = i18n("First line indent"); break;
-        case KReportRulerPrivate::ParagraphIndent: text = i18n("Left indent"); break;
-        case KReportRulerPrivate::EndIndent: text = i18n("Right indent"); break;
+        case KReportRulerPrivate::FirstLineIndent: text = tr("First line indent"); break;
+        case KReportRulerPrivate::ParagraphIndent: text = tr("Left indent"); break;
+        case KReportRulerPrivate::EndIndent: text = tr("Right indent"); break;
         case KReportRulerPrivate::None:
             if (ev->buttons() & Qt::LeftButton) {
                 if (d->orientation == Qt::Horizontal && ev->pos().y() > height() + OutsideRulerThreshold)
