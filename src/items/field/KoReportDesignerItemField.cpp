@@ -55,7 +55,7 @@ KoReportDesignerItemField::KoReportDesignerItemField(KoReportDesigner * rw, QGra
     m_name->setValue(m_reportDesigner->suggestEntityName(typeName()));
 }
 
-KoReportDesignerItemField::KoReportDesignerItemField(QDomNode & element, KoReportDesigner * d, QGraphicsScene * s)
+KoReportDesignerItemField::KoReportDesignerItemField(const QDomNode & element, KoReportDesigner * d, QGraphicsScene * s)
         : KoReportItemField(element), KoReportDesignerItemRectBase(d)
 {
     init(s, d);

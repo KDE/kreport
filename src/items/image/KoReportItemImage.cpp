@@ -32,7 +32,7 @@ KoReportItemImage::KoReportItemImage()
     createProperties();
 }
 
-KoReportItemImage::KoReportItemImage(QDomNode & element)
+KoReportItemImage::KoReportItemImage(const QDomNode & element)
 {
     createProperties();
     QDomNodeList nl = element.childNodes();
@@ -84,7 +84,7 @@ QByteArray KoReportItemImage::inlineImageData() const
     return imageEncoded;
 }
 
-void KoReportItemImage::setInlineImageData(QByteArray dat, const QString &fn)
+void KoReportItemImage::setInlineImageData(const QByteArray &dat, const QString &fn)
 {
     if (!fn.isEmpty()) {
         QPixmap pix(fn);

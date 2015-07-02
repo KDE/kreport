@@ -35,7 +35,7 @@ class KREPORT_EXPORT  KoReportItemLine : public KoReportItemBase
 {
 public:
     KoReportItemLine();
-    explicit KoReportItemLine(QDomNode & element);
+    explicit KoReportItemLine(const QDomNode & element);
     ~KoReportItemLine();
 
     virtual QString typeName() const;

@@ -30,7 +30,7 @@ KoReportItemLabel::KoReportItemLabel()
     createProperties();
 }
 
-KoReportItemLabel::KoReportItemLabel(QDomNode & element)
+KoReportItemLabel::KoReportItemLabel(const QDomNode & element)
 {
     createProperties();
     QDomNodeList nl = element.childNodes();
@@ -153,7 +153,7 @@ Qt::Alignment KoReportItemLabel::textFlags() const
     return align;
 }
 
-KRTextStyleData KoReportItemLabel::textStyle()
+KRTextStyleData KoReportItemLabel::textStyle() const
 {
     KRTextStyleData d;
     d.backgroundColor = m_backgroundColor->value().value<QColor>();
@@ -163,7 +163,7 @@ KRTextStyleData KoReportItemLabel::textStyle()
     return d;
 }
 
-KRLineStyleData KoReportItemLabel::lineStyle()
+KRLineStyleData KoReportItemLabel::lineStyle() const
 {
     KRLineStyleData ls;
     ls.weight = m_lineWeight->value().toInt();

@@ -37,7 +37,7 @@ class KoReportItemText : public KoReportItemBase
 {
 public:
     KoReportItemText();
-    explicit KoReportItemText(QDomNode & element);
+    explicit KoReportItemText(const QDomNode & element);
     virtual ~KoReportItemText();
 
     virtual QString typeName() const;
@@ -71,8 +71,8 @@ protected:
     qreal bottomPadding() const;
 
 
-    KRTextStyleData textStyle();
-    KRLineStyleData lineStyle();
+    KRTextStyleData textStyle() const;
+    KRLineStyleData lineStyle() const;
 
 private:
     virtual void createProperties();

@@ -33,7 +33,7 @@ class KoReportItemCheck : public KoReportItemBase
 {
 public:
     KoReportItemCheck();
-    explicit KoReportItemCheck(QDomNode &element);
+    explicit KoReportItemCheck(const QDomNode &element);
     virtual ~KoReportItemCheck();
 
     virtual QString typeName() const;
@@ -51,7 +51,7 @@ protected:
     KProperty* m_lineStyle;
     KProperty* m_staticValue;
 
-    bool value();
+    bool value() const;
     void setValue(bool);
     KRLineStyleData lineStyle();
 

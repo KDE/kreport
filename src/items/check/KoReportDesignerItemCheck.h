@@ -33,7 +33,7 @@ class KoReportDesignerItemCheck : public KoReportItemCheck, public KoReportDesig
     Q_OBJECT
 public:
     KoReportDesignerItemCheck(KoReportDesigner *, QGraphicsScene * scene, const QPointF &pos);
-    KoReportDesignerItemCheck(QDomNode & element, KoReportDesigner *, QGraphicsScene * scene);
+    KoReportDesignerItemCheck(const QDomNode & element, KoReportDesigner *, QGraphicsScene * scene);
 
     virtual ~KoReportDesignerItemCheck();
 

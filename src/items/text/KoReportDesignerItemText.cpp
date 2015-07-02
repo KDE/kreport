@@ -60,7 +60,7 @@ KoReportDesignerItemText::KoReportDesignerItemText(KoReportDesigner * rw, QGraph
     m_name->setValue(m_reportDesigner->suggestEntityName(typeName()));
 }
 
-KoReportDesignerItemText::KoReportDesignerItemText(QDomNode & element, KoReportDesigner * d, QGraphicsScene * s)
+KoReportDesignerItemText::KoReportDesignerItemText(const QDomNode & element, KoReportDesigner * d, QGraphicsScene * s)
         : KoReportItemText(element), KoReportDesignerItemRectBase(d)
 {
     init(s, d);

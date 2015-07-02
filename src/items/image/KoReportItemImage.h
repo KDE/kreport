@@ -34,7 +34,7 @@ class KoReportItemImage : public KoReportItemBase
     Q_OBJECT
 public:
     KoReportItemImage();
-    explicit KoReportItemImage(QDomNode & element);
+    explicit KoReportItemImage(const QDomNode & element);
     virtual ~KoReportItemImage();
 
     virtual QString typeName() const;
@@ -48,7 +48,7 @@ protected:
     KProperty* m_staticImage;
 
     void setMode(const QString&);
-    void setInlineImageData(QByteArray, const QString& = QString());
+    void setInlineImageData(const QByteArray &dat, const QString& = QString());
     void setColumn(const QString&);
     QString mode() const;
     bool isInline() const;

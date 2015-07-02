@@ -34,7 +34,7 @@ class KoReportItemField : public KoReportItemBase
 {
 public:
     KoReportItemField();
-    explicit KoReportItemField(QDomNode & element);
+    explicit KoReportItemField(const QDomNode & element);
     virtual ~KoReportItemField();
 
     virtual QString typeName() const;
@@ -67,8 +67,8 @@ protected:
 
     QStringList fieldNames(const QString &);
 
-    KRLineStyleData lineStyle();
-    KRTextStyleData textStyle();
+    KRLineStyleData lineStyle() const;
+    KRTextStyleData textStyle() const;
 
     void setTrackTotal(bool);
     void setTrackTotalFormat(const QString &, bool = false);

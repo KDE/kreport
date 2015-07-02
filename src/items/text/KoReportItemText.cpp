@@ -32,7 +32,7 @@ KoReportItemText::KoReportItemText()
     createProperties();
 }
 
-KoReportItemText::KoReportItemText(QDomNode & element) : m_bottomPadding(0.0)
+KoReportItemText::KoReportItemText(const QDomNode & element) : m_bottomPadding(0.0)
 {
     QDomNodeList nl = element.childNodes();
     QString n;
@@ -172,7 +172,7 @@ void KoReportItemText::setBottomPadding(qreal bp)
     }
 }
 
-KRTextStyleData KoReportItemText::textStyle()
+KRTextStyleData KoReportItemText::textStyle() const
 {
     KRTextStyleData d;
     d.backgroundColor = m_backgroundColor->value().value<QColor>();
@@ -182,7 +182,7 @@ KRTextStyleData KoReportItemText::textStyle()
     return d;
 }
 
-KRLineStyleData KoReportItemText::lineStyle()
+KRLineStyleData KoReportItemText::lineStyle() const
 {
     KRLineStyleData ls;
     ls.weight = m_lineWeight->value().toInt();

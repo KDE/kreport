@@ -243,7 +243,7 @@ void ReportScene::raiseSelected()
     }
 }
 
-QGraphicsItemList ReportScene::itemsOrdered()
+QGraphicsItemList ReportScene::itemsOrdered() const
 {
     QGraphicsItemList r;
     QGraphicsItemList list = items();

@@ -34,7 +34,7 @@ class KoReportDesignerItemText : public KoReportItemText, public KoReportDesigne
   Q_OBJECT
 public:
     KoReportDesignerItemText(KoReportDesigner *, QGraphicsScene * scene, const QPointF &pos);
-    KoReportDesignerItemText(QDomNode & element, KoReportDesigner *, QGraphicsScene * scene);
+    KoReportDesignerItemText(const QDomNode & element, KoReportDesigner *, QGraphicsScene * scene);
     virtual ~KoReportDesignerItemText();
 
     virtual void buildXML(QDomDocument & doc, QDomElement & parent);

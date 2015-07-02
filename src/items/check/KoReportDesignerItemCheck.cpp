@@ -52,7 +52,7 @@ KoReportDesignerItemCheck::KoReportDesignerItemCheck(KoReportDesigner* d, QGraph
     m_name->setValue(m_reportDesigner->suggestEntityName(typeName()));
 }
 
-KoReportDesignerItemCheck::KoReportDesignerItemCheck(QDomNode & element, KoReportDesigner * d, QGraphicsScene * s)
+KoReportDesignerItemCheck::KoReportDesignerItemCheck(const QDomNode & element, KoReportDesigner * d, QGraphicsScene * s)
         : KoReportItemCheck(element), KoReportDesignerItemRectBase(d)
 {
     init(s, d);

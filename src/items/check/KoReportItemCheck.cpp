@@ -32,7 +32,7 @@ KoReportItemCheck::KoReportItemCheck()
     createProperties();
 }
 
-KoReportItemCheck::KoReportItemCheck(QDomNode &element)
+KoReportItemCheck::KoReportItemCheck(const QDomNode &element)
 {
     createProperties();
     QDomNodeList nl = element.childNodes();
@@ -179,7 +179,7 @@ int KoReportItemCheck::renderSimpleData(OROPage *page, OROSection *section, cons
     return 0; //Item doesn't stretch the section height
 }
 
-bool KoReportItemCheck::value()
+bool KoReportItemCheck::value() const
 {
     return m_staticValue->value().toBool();
 }

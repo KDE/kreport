@@ -47,13 +47,13 @@ ReportSceneView::~ReportSceneView()
 }
 
 //! @todo check
-void ReportSceneView::resizeContents(QSize s)
+void ReportSceneView::resizeContents(const QSize &s)
 {
     setMinimumSize(s);
     setMaximumSize(s);
 }
 
-KoReportDesigner * ReportSceneView::designer()
+KoReportDesigner * ReportSceneView::designer() const
 {
     return m_reportDesigner;
 }

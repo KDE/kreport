@@ -101,12 +101,12 @@ public:
     @brief Override if the item uses a sub query and linked fields, such as a chart or sub-report
     @return True if uses a sub query
     */
-    virtual bool supportsSubQuery();
+    virtual bool supportsSubQuery() const;
 
     KPropertySet* propertySet() const;
 
     void setEntityName(const QString& n);
-    QString entityName();
+    QString entityName() const;
 
     virtual void setUnit(const KReportUnit& u);
 

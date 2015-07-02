@@ -52,7 +52,7 @@ public:
 
     QList<ORDetailGroupSectionData*> m_groupList;
 
-    bool isValid() {
+    bool isValid() const {
         return m_valid;
     }
 

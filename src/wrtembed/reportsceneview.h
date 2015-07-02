@@ -30,10 +30,10 @@ public:
     ReportSceneView(KoReportDesigner *, QGraphicsScene * scene, QWidget * parent = 0);
     virtual ~ReportSceneView();
 
-    KoReportDesigner * designer();
+    KoReportDesigner * designer() const;
     virtual QSize sizeHint() const;
 public Q_SLOTS:
-    void resizeContents(QSize);
+    void resizeContents(const QSize&);
 
 protected:
     void mousePressEvent(QMouseEvent * e);

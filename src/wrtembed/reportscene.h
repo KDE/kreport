@@ -41,14 +41,14 @@ class ReportScene : public QGraphicsScene
 public:
     ReportScene(qreal w, qreal h, KoReportDesigner* rd);
     virtual ~ReportScene();
-    KoReportDesigner* document() {
+    KoReportDesigner* document() const {
         return m_rd;
     }
     QPointF gridPoint(const QPointF&);
     void raiseSelected();
     void lowerSelected();
-    QGraphicsItemList itemsOrdered();
-    qreal gridSize() {
+    QGraphicsItemList itemsOrdered() const;
+    qreal gridSize() const {
         return m_pixelIncrementX;
     }
 

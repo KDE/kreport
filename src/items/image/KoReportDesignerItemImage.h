@@ -30,7 +30,7 @@ class KoReportDesignerItemImage : public KoReportItemImage, public KoReportDesig
   Q_OBJECT
 public:
     KoReportDesignerItemImage(KoReportDesigner *, QGraphicsScene* scene, const QPointF &pos);
-    KoReportDesignerItemImage(QDomNode & element, KoReportDesigner *, QGraphicsScene* scene);
+    KoReportDesignerItemImage(const QDomNode & element, KoReportDesigner *, QGraphicsScene* scene);
 
     virtual ~KoReportDesignerItemImage();
     virtual void buildXML(QDomDocument & doc, QDomElement & parent);

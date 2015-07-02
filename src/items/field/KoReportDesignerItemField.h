@@ -34,7 +34,7 @@ public:
     //Used when creating new basic field
     KoReportDesignerItemField(KoReportDesigner *, QGraphicsScene * scene, const QPointF &pos);
     //Used when loading from file
-    KoReportDesignerItemField(QDomNode & element, KoReportDesigner *, QGraphicsScene * scene);
+    KoReportDesignerItemField(const QDomNode & element, KoReportDesigner *, QGraphicsScene * scene);
     virtual ~KoReportDesignerItemField();
     virtual void buildXML(QDomDocument & doc, QDomElement & parent);
 

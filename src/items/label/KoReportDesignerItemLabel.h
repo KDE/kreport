@@ -34,7 +34,7 @@ class KoReportDesignerItemLabel : public KoReportItemLabel, public KoReportDesig
   Q_OBJECT
 public:
     KoReportDesignerItemLabel(KoReportDesigner *, QGraphicsScene * scene, const QPointF &pos);
-    KoReportDesignerItemLabel(QDomNode & element, KoReportDesigner *, QGraphicsScene * scene);
+    KoReportDesignerItemLabel(const QDomNode & element, KoReportDesigner *, QGraphicsScene * scene);
     virtual ~KoReportDesignerItemLabel();
 
     virtual void buildXML(QDomDocument & doc, QDomElement & parent);

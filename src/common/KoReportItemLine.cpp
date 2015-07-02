@@ -28,7 +28,7 @@ KoReportItemLine::KoReportItemLine()
     createProperties();
 }
 
-KoReportItemLine::KoReportItemLine(QDomNode & element)
+KoReportItemLine::KoReportItemLine(const QDomNode & element)
 {
     createProperties();
     QDomNodeList nl = element.childNodes();

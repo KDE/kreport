@@ -252,12 +252,12 @@ KoReportPluginManager* KoReportPluginManager::self()
     return &s_self->object;
 }
 
-QStringList KoReportPluginManager::pluginIds()
+QStringList KoReportPluginManager::pluginIds() const
 {
     return d->plugins()->keys();
 }
 
-const KReportPluginMetaData *KoReportPluginManager::pluginMetaData(const QString& id)
+const KReportPluginMetaData *KoReportPluginManager::pluginMetaData(const QString& id) const
 {
     KReportPluginEntry *entry = d->plugins()->value(id);
     if (!entry) {
@@ -266,7 +266,7 @@ const KReportPluginMetaData *KoReportPluginManager::pluginMetaData(const QString
     return entry->metaData();
 }
 
-KoReportPluginInterface* KoReportPluginManager::plugin(const QString& id)
+KoReportPluginInterface* KoReportPluginManager::plugin(const QString& id) const
 {
     KReportPluginEntry *entry;
 

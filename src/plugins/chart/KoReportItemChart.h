@@ -72,7 +72,7 @@ public:
     @brief The chart object is a complex object that uses its own data source
     @return true
     */
-    virtual bool supportsSubQuery() { return true; }
+    virtual bool supportsSubQuery() const { return true; }
 
 protected:
 

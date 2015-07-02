@@ -92,12 +92,12 @@ KPropertySet* KoReportItemBase::propertySet() const
  return m_set;
 }
 
-bool KoReportItemBase::supportsSubQuery()
+bool KoReportItemBase::supportsSubQuery() const
 {
     return false;
 }
 
-QString KoReportItemBase::entityName()
+QString KoReportItemBase::entityName() const
 {
     return m_name->value().toString();
 }

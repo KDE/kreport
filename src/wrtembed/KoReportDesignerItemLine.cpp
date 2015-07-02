@@ -69,7 +69,7 @@ KoReportDesignerItemLine::KoReportDesignerItemLine(KoReportDesigner * d, QGraphi
 
 }
 
-KoReportDesignerItemLine::KoReportDesignerItemLine(QDomNode & entity, KoReportDesigner * d, QGraphicsScene * scene)
+KoReportDesignerItemLine::KoReportDesignerItemLine(const QDomNode & entity, KoReportDesigner * d, QGraphicsScene * scene)
         : KoReportItemLine(entity), KoReportDesignerItemBase(d)
 {
     init(scene, d);

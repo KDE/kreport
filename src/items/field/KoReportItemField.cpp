@@ -34,7 +34,7 @@ KoReportItemField::KoReportItemField()
     createProperties();
 }
 
-KoReportItemField::KoReportItemField(QDomNode & element)
+KoReportItemField::KoReportItemField(const QDomNode & element)
 {
     createProperties();
     QDomNodeList nl = element.childNodes();
@@ -177,7 +177,7 @@ int KoReportItemField::textFlags() const
     return flags;
 }
 
-KRTextStyleData KoReportItemField::textStyle()
+KRTextStyleData KoReportItemField::textStyle() const
 {
     KRTextStyleData d;
     d.backgroundColor = m_backgroundColor->value().value<QColor>();
@@ -201,7 +201,7 @@ void KoReportItemField::setItemDataSource(const QString& t)
     //kreportpluginDebug() << "Field: " << entityName() << "is" << itemDataSource();
 }
 
-KRLineStyleData KoReportItemField::lineStyle()
+KRLineStyleData KoReportItemField::lineStyle() const
 {
     KRLineStyleData ls;
     ls.weight = m_lineWeight->value().toInt();

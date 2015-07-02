@@ -51,7 +51,7 @@ public:
 
     void setTitle(const QString & s);
     void buildXML(QDomDocument & doc, QDomElement & section);
-    void initFromXML(QDomNode & section);
+    void initFromXML(const QDomNode & section);
     virtual QSize sizeHint() const;
 
     /**

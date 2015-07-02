@@ -447,14 +447,14 @@ public:
         }
     }
 
-    QString checkType() {
+    QString checkType() const {
         return m_checkType;
     };
 
     void setValue(bool v) {
         m_value = v;
     }
-    bool value() {
+    bool value() const {
         return m_value;
     }
 
@@ -462,13 +462,13 @@ public:
         m_lineStyle = ls;
     }
 
-    KRLineStyleData lineStyle() {
+    KRLineStyleData lineStyle() const {
         return m_lineStyle;
     }
     void setForegroundColor(const QColor& fg) {
         m_fgColor = fg;
     }
-    QColor foregroundColor() {
+    QColor foregroundColor() const {
         return m_fgColor;
     }
 

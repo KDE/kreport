@@ -66,7 +66,7 @@ KoReportDesignerItemLabel::KoReportDesignerItemLabel(KoReportDesigner* d, QGraph
     enterInlineEditingMode();
 }
 
-KoReportDesignerItemLabel::KoReportDesignerItemLabel(QDomNode & element, KoReportDesigner * d, QGraphicsScene * s)
+KoReportDesignerItemLabel::KoReportDesignerItemLabel(const QDomNode & element, KoReportDesigner * d, QGraphicsScene * s)
         : KoReportItemLabel(element), KoReportDesignerItemRectBase(d), m_inlineEdit(0)
 {
     init(s, d);

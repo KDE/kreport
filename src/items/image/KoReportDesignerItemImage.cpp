@@ -57,7 +57,7 @@ KoReportDesignerItemImage::KoReportDesignerItemImage(KoReportDesigner * rw, QGra
     m_name->setValue(m_reportDesigner->suggestEntityName(typeName()));
 }
 
-KoReportDesignerItemImage::KoReportDesignerItemImage(QDomNode & element, KoReportDesigner * rw, QGraphicsScene* scene)
+KoReportDesignerItemImage::KoReportDesignerItemImage(const QDomNode & element, KoReportDesigner * rw, QGraphicsScene* scene)
         : KoReportItemImage(element), KoReportDesignerItemRectBase(rw)
 {
     init(scene, rw);

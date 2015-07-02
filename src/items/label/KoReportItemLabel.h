@@ -37,7 +37,7 @@ class KoReportItemLabel : public KoReportItemBase
 {
 public:
     KoReportItemLabel();
-    explicit KoReportItemLabel(QDomNode & element);
+    explicit KoReportItemLabel(const QDomNode & element);
     virtual ~KoReportItemLabel();
 
     virtual QString typeName() const;
@@ -62,8 +62,8 @@ protected:
     }
     Qt::Alignment textFlags() const;
     void setText(const QString&);
-    KRTextStyleData textStyle();
-    KRLineStyleData lineStyle();
+    KRTextStyleData textStyle() const;
+    KRLineStyleData lineStyle() const;
 
 private:
     virtual void createProperties();

@@ -191,7 +191,7 @@ void ReportSection::buildXML(QDomDocument &doc, QDomElement &section)
     }
 }
 
-void ReportSection::initFromXML(QDomNode & section)
+void ReportSection::initFromXML(const QDomNode & section)
 {
     QDomNodeList nl = section.childNodes();
     QDomNode node;
