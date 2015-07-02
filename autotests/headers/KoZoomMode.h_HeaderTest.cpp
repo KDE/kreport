@@ -1,0 +1,1 @@
+#include <kreport/KoZoomMode.h>
