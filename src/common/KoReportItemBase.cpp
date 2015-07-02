@@ -87,11 +87,6 @@ QString KoReportItemBase::itemDataSource() const
     return QString();
 }
 
-KRPos KoReportItemBase::position()
-{
-    return m_pos;
-}
-
 KPropertySet* KoReportItemBase::propertySet() const
 {
  return m_set;

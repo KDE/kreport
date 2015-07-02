@@ -105,8 +105,6 @@ public:
 
     KPropertySet* propertySet() const;
 
-    KRPos position();
-
     void setEntityName(const QString& n);
     QString entityName();
 
