@@ -56,7 +56,7 @@ KoReportDesignerItemBarcode::KoReportDesignerItemBarcode(KoReportDesigner * rw, 
     m_name->setValue(m_reportDesigner->suggestEntityName(typeName()));
 }
 
-KoReportDesignerItemBarcode::KoReportDesignerItemBarcode(QDomNode & element, KoReportDesigner * rw, QGraphicsScene* scene)
+KoReportDesignerItemBarcode::KoReportDesignerItemBarcode(const QDomNode & element, KoReportDesigner * rw, QGraphicsScene* scene)
         : KoReportItemBarcode(element), KoReportDesignerItemRectBase(rw)
 {
     init(scene, rw);

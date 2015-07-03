@@ -35,7 +35,7 @@ class KoReportItemBarcode : public KoReportItemBase
 {
 public:
     KoReportItemBarcode();
-    explicit KoReportItemBarcode(QDomNode &element);
+    explicit KoReportItemBarcode(const QDomNode &element);
     ~KoReportItemBarcode();
 
     virtual QString typeName() const;

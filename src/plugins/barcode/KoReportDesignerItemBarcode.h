@@ -33,7 +33,7 @@ class KoReportDesignerItemBarcode : public KoReportItemBarcode, public KoReportD
     Q_OBJECT
 public:
     KoReportDesignerItemBarcode(KoReportDesigner *, QGraphicsScene* scene, const QPointF &pos);
-    KoReportDesignerItemBarcode(QDomNode & element, KoReportDesigner *, QGraphicsScene* scene);
+    KoReportDesignerItemBarcode(const QDomNode & element, KoReportDesigner *, QGraphicsScene* scene);
 
     virtual ~KoReportDesignerItemBarcode();
     virtual void buildXML(QDomDocument & doc, QDomElement & parent);

@@ -31,7 +31,7 @@ KoReportItemBarcode::KoReportItemBarcode()
     createProperties();
 }
 
-KoReportItemBarcode::KoReportItemBarcode(QDomNode & element)
+KoReportItemBarcode::KoReportItemBarcode(const QDomNode & element)
 {
     createProperties();
     QDomNodeList nl = element.childNodes();
