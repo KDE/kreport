@@ -21,8 +21,6 @@
 
 #include <KPropertySet>
 
-#include <kcodecs.h>
-
 #include <QBuffer>
 #include <QDomNodeList>
 
@@ -79,9 +77,7 @@ QByteArray KoReportItemImage::inlineImageData() const
     pixmap.save(&buffer, "PNG");   // writes pixmap into ba in PNG format,
     //! @todo should I remember the format used, or save as PNG as its lossless?
 
-    QByteArray imageEncoded;
-    KCodecs::base64Encode(buffer.buffer(), imageEncoded, true);
-    return imageEncoded;
+    return buffer.buffer().toBase64();
 }
 
 void KoReportItemImage::setInlineImageData(const QByteArray &dat, const QString &fn)
@@ -96,7 +92,7 @@ void KoReportItemImage::setInlineImageData(const QByteArray &dat, const QString 
             m_staticImage->setValue(blank);
         }
     } else {
-        const QByteArray binaryStream(KCodecs::base64Decode(dat));
+        const QByteArray binaryStream(QByteArray::fromBase64(dat));
         const QPixmap pix(QPixmap::fromImage(QImage::fromData(binaryStream), Qt::ColorOnly));
         m_staticImage->setValue(pix);
     }
@@ -161,7 +157,7 @@ int KoReportItemImage::renderSimpleData(OROPage *page, OROSection *section, cons
         imgdata = data.toByteArray();
     } else {
         uudata = inlineImageData();
-        imgdata = KCodecs::base64Decode(uudata);
+        imgdata = QByteArray::fromBase64(uudata);
     }
 
     QImage img;
