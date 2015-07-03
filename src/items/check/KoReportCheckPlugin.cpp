@@ -35,12 +35,12 @@ KoReportCheckPlugin::~KoReportCheckPlugin()
 
 }
 
-QObject* KoReportCheckPlugin::createRendererInstance(QDomNode& element)
+QObject* KoReportCheckPlugin::createRendererInstance(const QDomNode& element)
 {
     return new KoReportItemCheck(element);
 }
 
-QObject* KoReportCheckPlugin::createDesignerInstance(QDomNode& element, KoReportDesigner* designer, QGraphicsScene* scene)
+QObject* KoReportCheckPlugin::createDesignerInstance(const QDomNode& element, KoReportDesigner* designer, QGraphicsScene* scene)
 {
     return new KoReportDesignerItemCheck(element, designer, scene);
 }

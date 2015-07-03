@@ -29,8 +29,8 @@ class KoReportMapsPlugin : public KoReportPluginInterface
     explicit KoReportMapsPlugin(QObject *parent, const QVariantList &args = QVariantList());
     virtual ~KoReportMapsPlugin();
 
-    virtual QObject* createRendererInstance(QDomNode& element);
-    virtual QObject* createDesignerInstance(QDomNode& element, KoReportDesigner* , QGraphicsScene* scene);
+    virtual QObject* createRendererInstance(const QDomNode& element);
+    virtual QObject* createDesignerInstance(const QDomNode& element, KoReportDesigner* , QGraphicsScene* scene);
     virtual QObject* createDesignerInstance(KoReportDesigner* , QGraphicsScene* scene, const QPointF& pos);
 #ifdef KREPORT_SCRIPTING
     virtual QObject* createScriptInstance(KoReportItemBase* item);

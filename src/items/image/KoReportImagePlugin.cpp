@@ -38,12 +38,12 @@ KoReportImagePlugin::~KoReportImagePlugin()
 
 }
 
-QObject* KoReportImagePlugin::createRendererInstance(QDomNode& element)
+QObject* KoReportImagePlugin::createRendererInstance(const QDomNode& element)
 {
     return new KoReportItemImage(element);
 }
 
-QObject* KoReportImagePlugin::createDesignerInstance(QDomNode& element, KoReportDesigner* designer, QGraphicsScene* scene)
+QObject* KoReportImagePlugin::createDesignerInstance(const QDomNode& element, KoReportDesigner* designer, QGraphicsScene* scene)
 {
     return new KoReportDesignerItemImage(element, designer, scene);
 }

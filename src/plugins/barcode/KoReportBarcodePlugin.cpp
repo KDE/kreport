@@ -37,12 +37,12 @@ KoReportBarcodePlugin::~KoReportBarcodePlugin()
 {
 }
 
-QObject* KoReportBarcodePlugin::createRendererInstance(QDomNode& element)
+QObject* KoReportBarcodePlugin::createRendererInstance(const QDomNode& element)
 {
     return new KoReportItemBarcode(element);
 }
 
-QObject* KoReportBarcodePlugin::createDesignerInstance(QDomNode& element, KoReportDesigner* designer , QGraphicsScene* scene)
+QObject* KoReportBarcodePlugin::createDesignerInstance(const QDomNode& element, KoReportDesigner* designer , QGraphicsScene* scene)
 {
     return new KoReportDesignerItemBarcode(element, designer, scene);
 }

@@ -38,7 +38,7 @@ KoReportLabelPlugin::~KoReportLabelPlugin()
 
 }
 
-QObject* KoReportLabelPlugin::createRendererInstance(QDomNode &elem)
+QObject* KoReportLabelPlugin::createRendererInstance(const QDomNode &elem)
 {
     return new KoReportItemLabel(elem);
 }
@@ -48,7 +48,7 @@ QObject* KoReportLabelPlugin::createDesignerInstance(KoReportDesigner* designer,
     return new KoReportDesignerItemLabel(designer, scene, pos);
 }
 
-QObject* KoReportLabelPlugin::createDesignerInstance(QDomNode & element, KoReportDesigner *designer, QGraphicsScene * scene)
+QObject* KoReportLabelPlugin::createDesignerInstance(const QDomNode & element, KoReportDesigner *designer, QGraphicsScene * scene)
 {
     return new KoReportDesignerItemLabel(element, designer, scene);
 }

@@ -38,12 +38,12 @@ KoReportMapsPlugin::~KoReportMapsPlugin()
 {
 }
 
-QObject* KoReportMapsPlugin::createRendererInstance(QDomNode& element)
+QObject* KoReportMapsPlugin::createRendererInstance(const QDomNode& element)
 {
     return new KoReportItemMaps(element);
 }
 
-QObject* KoReportMapsPlugin::createDesignerInstance(QDomNode& element, KoReportDesigner* designer, QGraphicsScene* scene)
+QObject* KoReportMapsPlugin::createDesignerInstance(const QDomNode& element, KoReportDesigner* designer, QGraphicsScene* scene)
 {
     return new KoReportDesignerItemMaps(element, designer, scene);
 }

@@ -46,12 +46,12 @@ KoReportChartPlugin::~KoReportChartPlugin()
 
 }
 
-QObject* KoReportChartPlugin::createRendererInstance(QDomNode& element)
+QObject* KoReportChartPlugin::createRendererInstance(const QDomNode& element)
 {
     return new KoReportItemChart(element);
 }
 
-QObject* KoReportChartPlugin::createDesignerInstance(QDomNode& element, KoReportDesigner* designer, QGraphicsScene* scene)
+QObject* KoReportChartPlugin::createDesignerInstance(const QDomNode& element, KoReportDesigner* designer, QGraphicsScene* scene)
 {
     return new KoReportDesignerItemChart(element, designer, scene);
 }

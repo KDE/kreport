@@ -32,9 +32,9 @@ public:
 
     virtual ~KoReportLabelPlugin();
 
-    virtual QObject* createRendererInstance(QDomNode&);
+    virtual QObject* createRendererInstance(const QDomNode&);
     virtual QObject* createDesignerInstance(KoReportDesigner* , QGraphicsScene* scene, const QPointF&);
-    virtual QObject* createDesignerInstance(QDomNode & element, KoReportDesigner *, QGraphicsScene * scene);
+    virtual QObject* createDesignerInstance(const QDomNode & element, KoReportDesigner *, QGraphicsScene * scene);
 #ifdef KREPORT_SCRIPTING
     virtual QObject* createScriptInstance(KoReportItemBase* item);
 #endif

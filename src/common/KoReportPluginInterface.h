@@ -48,10 +48,10 @@ public:
     virtual QObject* createDesignerInstance(KoReportDesigner *designer, QGraphicsScene * scene,
                                             const QPointF &pos) = 0;
 
-    virtual QObject* createDesignerInstance(QDomNode &element, KoReportDesigner *designer,
+    virtual QObject* createDesignerInstance(const QDomNode &element, KoReportDesigner *designer,
                                             QGraphicsScene *scene) = 0;
 
-    virtual QObject* createRendererInstance(QDomNode &element) = 0;
+    virtual QObject* createRendererInstance(const QDomNode &element) = 0;
 
 #ifdef KREPORT_SCRIPTING
     virtual QObject* createScriptInstance(KoReportItemBase* item) = 0;

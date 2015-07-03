@@ -41,12 +41,12 @@ KoReportWebPlugin::~KoReportWebPlugin()
 {
 }
 
-QObject *KoReportWebPlugin::createRendererInstance(QDomNode &element)
+QObject *KoReportWebPlugin::createRendererInstance(const QDomNode &element)
 {
     return new KoReportItemWeb(element);
 }
 
-QObject *KoReportWebPlugin::createDesignerInstance(QDomNode &element, KoReportDesigner *designer,
+QObject *KoReportWebPlugin::createDesignerInstance(const QDomNode &element, KoReportDesigner *designer,
                                                    QGraphicsScene *scene)
 {
     return new KoReportDesignerItemWeb(element, designer, scene);

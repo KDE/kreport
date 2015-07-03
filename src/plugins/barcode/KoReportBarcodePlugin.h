@@ -28,8 +28,8 @@ class KoReportBarcodePlugin : public KoReportPluginInterface
     explicit KoReportBarcodePlugin(QObject *parent, const QVariantList &args = QVariantList());
     virtual ~KoReportBarcodePlugin();
 
-    virtual QObject* createRendererInstance(QDomNode& element);
-    virtual QObject* createDesignerInstance(QDomNode& element, KoReportDesigner* , QGraphicsScene* scene);
+    virtual QObject* createRendererInstance(const QDomNode& element);
+    virtual QObject* createDesignerInstance(const QDomNode& element, KoReportDesigner* , QGraphicsScene* scene);
     virtual QObject* createDesignerInstance(KoReportDesigner* , QGraphicsScene* scene, const QPointF& pos);
 #ifdef KREPORT_SCRIPTING
     virtual QObject* createScriptInstance(KoReportItemBase* item);

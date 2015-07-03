@@ -29,8 +29,8 @@ public:
     explicit KoReportWebPlugin(QObject *parent, const QVariantList &args = QVariantList());
     virtual ~KoReportWebPlugin();
 
-    virtual QObject *createRendererInstance(QDomNode &element);
-    virtual QObject *createDesignerInstance(QDomNode &element, KoReportDesigner *designer,
+    virtual QObject *createRendererInstance(const QDomNode &element);
+    virtual QObject *createDesignerInstance(const QDomNode &element, KoReportDesigner *designer,
                                             QGraphicsScene *scene);
     virtual QObject *createDesignerInstance(KoReportDesigner *designer,
                                             QGraphicsScene *scene,const QPointF &pos);

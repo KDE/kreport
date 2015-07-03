@@ -37,12 +37,12 @@ KoReportTextPlugin::~KoReportTextPlugin()
 
 }
 
-QObject* KoReportTextPlugin::createRendererInstance(QDomNode& element)
+QObject* KoReportTextPlugin::createRendererInstance(const QDomNode& element)
 {
     return new KoReportItemText(element);
 }
 
-QObject* KoReportTextPlugin::createDesignerInstance(QDomNode& element, KoReportDesigner* designer, QGraphicsScene* scene)
+QObject* KoReportTextPlugin::createDesignerInstance(const QDomNode& element, KoReportDesigner* designer, QGraphicsScene* scene)
 {
     return new KoReportDesignerItemText(element, designer, scene);
 }

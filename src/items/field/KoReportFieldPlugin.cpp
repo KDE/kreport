@@ -37,12 +37,12 @@ KoReportFieldPlugin::~KoReportFieldPlugin()
 
 }
 
-QObject* KoReportFieldPlugin::createRendererInstance(QDomNode& element)
+QObject* KoReportFieldPlugin::createRendererInstance(const QDomNode& element)
 {
     return new KoReportItemField(element);
 }
 
-QObject* KoReportFieldPlugin::createDesignerInstance(QDomNode& element, KoReportDesigner* designer, QGraphicsScene* scene)
+QObject* KoReportFieldPlugin::createDesignerInstance(const QDomNode& element, KoReportDesigner* designer, QGraphicsScene* scene)
 {
     return new KoReportDesignerItemField(element, designer, scene);
 }
