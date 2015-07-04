@@ -109,8 +109,8 @@ do { \
         if (stop) { \
             break; \
         } \
-        qDebug() << QString("Actual/expected item %1 of %2: %3 %4 %5").arg(i + 1).arg(count) \
-                    .arg(v1).arg(sign.constData()).arg(v2).toUtf8().constData(); \
+        qDebug() << qPrintable(QString::fromLatin1("Actual/expected item %1 of %2: %3 %4 %5") \
+                    .arg(i + 1).arg(count).arg(v1).arg(sign.constData()).arg(v2)); \
         if (actualListIt != actualList.constEnd()) { \
             ++actualListIt; \
         } \
