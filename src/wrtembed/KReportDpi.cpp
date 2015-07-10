@@ -27,16 +27,19 @@
 #include <QApplication>
 #include <QDesktopWidget>
 #endif
+#include <QGlobalStatic>
 
-#include <kglobal.h>
 
-KReportDpi* KReportDpi::self()
+class KReportDpiSingleton
 {
-    K_GLOBAL_STATIC(KReportDpi, s_instance)
-    return s_instance;
-}
+public:
+    KReportDpiSingleton();
 
-KReportDpi::KReportDpi()
+    int m_dpiX;
+    int m_dpiY;
+};
+
+KReportDpiSingleton::KReportDpiSingleton()
 {
     // Another way to get the DPI of the display would be QPaintDeviceMetrics,
     // but we have no widget here (and moving this to KoView wouldn't allow
@@ -56,14 +59,25 @@ KReportDpi::KReportDpi()
 #endif
 }
 
-KReportDpi::~KReportDpi()
+Q_GLOBAL_STATIC(KReportDpiSingleton, s_instance)
+
+namespace KReportDpi
 {
+
+int dpiX()
+{
+    return s_instance->m_dpiX;
 }
 
-void KReportDpi::setDPI(int x, int y)
+int dpiY()
 {
-    //qDebug(30006) << x <<"," << y;
-    KReportDpi* s = self();
-    s->m_dpiX = x;
-    s->m_dpiY = y;
+    return s_instance->m_dpiY;
+}
+
+void setDPI(int x, int y)
+{
+    s_instance->m_dpiX = x;
+    s_instance->m_dpiY = y;
+}
+
 }

@@ -28,33 +28,14 @@
 /**
  * Singleton to store user-overwritten DPI information.
  */
-class KREPORT_EXPORT KReportDpi
+namespace KReportDpi
 {
-public:
-    /// For KoApplication
-    static void initialize()  {
-        (void)self(); // I don't want to make KReportDpi instances public, so self() is private
-    }
+    KREPORT_EXPORT int dpiX();
 
-    static int dpiX() {
-        return self()->m_dpiX;
-    }
-
-    static int dpiY() {
-        return self()->m_dpiY;
-    }
+    KREPORT_EXPORT int dpiY();
 
     /// @internal, for KoApplication
-    static void setDPI(int x, int y);
-
-    ~KReportDpi();
-
-private:
-    static KReportDpi* self();
-    KReportDpi();
-
-    int m_dpiX;
-    int m_dpiY;
-};
+    KREPORT_EXPORT void setDPI(int x, int y);
+}
 
 #endif // KREPORT_DPI_h
