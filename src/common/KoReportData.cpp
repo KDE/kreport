@@ -43,7 +43,7 @@ void KoReportData::setSorting(const QList<SortedField> &sorting)
     Q_UNUSED(sorting);
 }
 
-void KoReportData::addExpression(const QString &field, const QVariant &value, int relation)
+void KoReportData::addExpression(const QString &field, const QVariant &value, char relation)
 {
     Q_UNUSED(field);
     Q_UNUSED(value);

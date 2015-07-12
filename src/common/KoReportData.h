@@ -89,7 +89,7 @@ public:
     virtual void setSorting(const QList<SortedField> &sorting);
 
     //! Adds an expression to the data source
-    virtual void addExpression(const QString &field, const QVariant &value, int relation = '=');
+    virtual void addExpression(const QString &field, const QVariant &value, char relation = '=');
 
     //! Utility Functions
     //! @todo These are probably eligable to be moved into a new class
