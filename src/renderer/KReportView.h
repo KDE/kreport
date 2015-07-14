@@ -25,6 +25,7 @@
 #include "kreport_export.h"
 
 class ORODocument;
+class QAbstractScrollArea;
 
 /**
  * @brief Provides a simple widget for viewing a rendered report on screen
@@ -45,6 +46,8 @@ public:
     int currentPage() const;
     int pageCount() const;
     void setDocument(ORODocument* doc);
+
+    QAbstractScrollArea* scrollArea();
 
 private:
     Q_DISABLE_COPY(KReportView)

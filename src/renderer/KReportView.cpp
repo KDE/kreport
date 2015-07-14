@@ -138,6 +138,8 @@ void KReportView::setDocument(ORODocument* doc)
         delete d->reportPage;
     }
 
+    d->pageCount = doc->pages();
+
     d->reportPage = new KoReportPage(this, d->reportDocument);
     d->reportPage->setObjectName(QLatin1String("KReportPage"));
 
@@ -147,3 +149,9 @@ void KReportView::setDocument(ORODocument* doc)
     d->reportView->centerOn(0,0);
 
 }
+
+QAbstractScrollArea* KReportView::scrollArea()
+{
+    return d->reportView;
+}
+
