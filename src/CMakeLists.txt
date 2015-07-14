@@ -249,6 +249,7 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
         KoReportPage
         KoReportRendererBase
         KoReportPreRenderer
+        KReportView
 )
 
 ecm_generate_headers(kreport_FORWARDING_HEADERS
