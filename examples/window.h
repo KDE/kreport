@@ -51,7 +51,7 @@ private:
     KReportView *m_reportView;
     QDomDocument m_document;
 
-    uint m_currentPage;
+    int m_currentPage;
 
     KReportExampleData *m_testData;
 };

@@ -372,7 +372,7 @@ void KoReportItemChart::setLegend(bool le, const QStringList &legends)
             m_chartWidget->addLegend(KDChart::Position((KDChartEnums::PositionValue)m_legendPosition->value().toInt()));
             m_chartWidget->legend()->setOrientation((Qt::Orientation) m_legendOrientation->value().toInt());
             m_chartWidget->legend()->setTitleText("Legend");
-            for (uint i = 1; i < (uint)legends.count(); ++i) {
+            for (int i = 1; i < legends.count(); ++i) {
                 m_chartWidget->legend()->setText(i - 1, legends[i]);
             }
 

@@ -1289,8 +1289,8 @@ void KReportRuler::clearHotSpots()
 
 void KReportRuler::setHotSpot(qreal position, int id)
 {
-    uint hotspotCount = d->hotspots.count();
-    for( uint i = 0; i < hotspotCount; ++i ) {
+    int hotspotCount = d->hotspots.count();
+    for (int i = 0; i < hotspotCount; ++i) {
         KReportRulerPrivate::HotSpotData & hs = d->hotspots[i];
         if (hs.id == id) {
             hs.position = position;
