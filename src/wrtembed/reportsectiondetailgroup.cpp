@@ -78,9 +78,9 @@ ReportSectionDetailGroup::~ReportSectionDetailGroup()
     delete d;
 }
 
-void ReportSectionDetailGroup::buildXML(QDomDocument & doc, QDomElement & section) const
+void ReportSectionDetailGroup::buildXML(QDomDocument *doc, QDomElement *section) const
 {
-    QDomElement grp = doc.createElement(QLatin1String("report:group"));
+    QDomElement grp = doc->createElement(QLatin1String("report:group"));
 
     grp.setAttribute(QLatin1String("report:group-column"), column());
     if (pageBreak() == ReportSectionDetailGroup::BreakAfterGroupFooter) {
@@ -98,19 +98,19 @@ void ReportSectionDetailGroup::buildXML(QDomDocument & doc, QDomElement & sectio
 
     //group head
     if (groupHeaderVisible()) {
-        QDomElement gheader = doc.createElement(QLatin1String("report:section"));
+        QDomElement gheader = doc->createElement(QLatin1String("report:section"));
         gheader.setAttribute(QLatin1String("report:section-type"), QLatin1String("group-header"));
-        groupHeader()->buildXML(doc, gheader);
+        groupHeader()->buildXML(doc, &gheader);
         grp.appendChild(gheader);
     }
     // group foot
     if (groupFooterVisible()) {
-        QDomElement gfooter = doc.createElement(QLatin1String("report:section"));
+        QDomElement gfooter = doc->createElement(QLatin1String("report:section"));
         gfooter.setAttribute(QLatin1String("report:section-type"), QLatin1String("group-footer"));
-        groupFooter()->buildXML(doc, gfooter);
+        groupFooter()->buildXML(doc, &gfooter);
         grp.appendChild(gfooter);
     }
-    section.appendChild(grp);
+    section->appendChild(grp);
 }
 
 void ReportSectionDetailGroup::initFromXML( const QDomElement &element )

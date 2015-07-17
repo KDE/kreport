@@ -29,12 +29,16 @@
 //
 // ReportEntity
 //
+KoReportDesignerItemBase::~KoReportDesignerItemBase()
+{
+}
+
 KoReportDesignerItemBase::KoReportDesignerItemBase(KoReportDesigner* r)
 {
     m_reportDesigner = r;
 }
 
-void KoReportDesignerItemBase::buildXML(QGraphicsItem * item, QDomDocument & doc, QDomElement & parent)
+void KoReportDesignerItemBase::buildXML(QGraphicsItem * item, QDomDocument *doc, QDomElement *parent)
 {
     KoReportDesignerItemBase *re = 0;
     re = dynamic_cast<KoReportDesignerItemBase*>(item);
@@ -45,18 +49,18 @@ void KoReportDesignerItemBase::buildXML(QGraphicsItem * item, QDomDocument & doc
 
 }
 
-void KoReportDesignerItemBase::buildXMLRect(QDomDocument & doc, QDomElement & entity, KRPos *pos, KRSize *siz)
+void KoReportDesignerItemBase::buildXMLRect(QDomDocument *doc, QDomElement *entity, KRPos *pos, KRSize *size)
 {
     Q_UNUSED(doc);
-    KRUtils::buildXMLRect(entity, pos, siz);
+    KRUtils::buildXMLRect(entity, pos, size);
 }
 
-void KoReportDesignerItemBase::buildXMLTextStyle(QDomDocument & doc, QDomElement & entity, KRTextStyleData ts)
+void KoReportDesignerItemBase::buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KRTextStyleData &ts)
 {
     KRUtils::buildXMLTextStyle(doc, entity, ts);
 }
 
-void KoReportDesignerItemBase::buildXMLLineStyle(QDomDocument & doc, QDomElement & entity, KRLineStyleData ls)
+void KoReportDesignerItemBase::buildXMLLineStyle(QDomDocument *doc, QDomElement *entity, const KRLineStyleData &ls)
 {
     KRUtils::buildXMLLineStyle(doc, entity, ls);
 }

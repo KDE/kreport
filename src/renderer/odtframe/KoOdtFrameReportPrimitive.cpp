@@ -65,7 +65,7 @@ QString KoOdtFrameReportPrimitive::itemName() const
     return QString("Item_%1").arg(m_uid);
 }
 
-void KoOdtFrameReportPrimitive::createStyle(KoGenStyles &coll)
+void KoOdtFrameReportPrimitive::createStyle(KoGenStyles *coll)
 {
     KoGenStyle gs(KoGenStyle::GraphicStyle, "graphic");
     gs.addProperty("draw:fill", "none");
@@ -77,7 +77,7 @@ void KoOdtFrameReportPrimitive::createStyle(KoGenStyles &coll)
     gs.addProperty("style:wrap", "dynamic");
     gs.addPropertyPt("style:wrap-dynamic-threshold", 0);
 
-    m_frameStyleName = coll.insert(gs, "F");
+    m_frameStyleName = coll->insert(gs, "F");
 }
 
 void KoOdtFrameReportPrimitive::createBody(KoXmlWriter *bodyWriter) const

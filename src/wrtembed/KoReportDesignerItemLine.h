@@ -36,7 +36,7 @@ public:
     KoReportDesignerItemLine(KoReportDesigner * d, QGraphicsScene * scene, const QPointF &startPos, const QPointF &endPos);
     KoReportDesignerItemLine(const QDomNode & element, KoReportDesigner *, QGraphicsScene * scene);
 
-    virtual void buildXML(QDomDocument & doc, QDomElement & parent);
+    virtual void buildXML(QDomDocument *doc, QDomElement *parent);
     virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget *widget = 0);
     virtual KoReportDesignerItemLine* clone();
 

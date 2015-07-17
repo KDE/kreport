@@ -40,7 +40,7 @@ public:
     void setUID(int uid);
     int uid() const;
 
-    virtual void createStyle(KoGenStyles&);
+    virtual void createStyle(KoGenStyles*);
     virtual void createBody(KoXmlWriter *bodyWriter) const;
     virtual bool saveData(KoStore *store, KoXmlWriter*) const;
 

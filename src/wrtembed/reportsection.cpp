@@ -178,10 +178,10 @@ void ReportSection::slotResizeBarDragged(int delta)
     d->reportDesigner->setModified(true);
 }
 
-void ReportSection::buildXML(QDomDocument &doc, QDomElement &section)
+void ReportSection::buildXML(QDomDocument *doc, QDomElement *section)
 {
     KRUtils::setAttribute(section, QLatin1String("svg:height"), d->sectionData->m_height->value().toDouble());
-    section.setAttribute(QLatin1String("fo:background-color"), d->sectionData->backgroundColor().name());
+    section->setAttribute(QLatin1String("fo:background-color"), d->sectionData->backgroundColor().name());
 
     // now get a list of all the QGraphicsItems on this scene and output them.
     QGraphicsItemList list = d->scene->items();

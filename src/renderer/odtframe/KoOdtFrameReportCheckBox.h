@@ -32,7 +32,7 @@ public:
     explicit KoOdtFrameReportCheckBox(OROCheck *primitive);
     virtual ~KoOdtFrameReportCheckBox();
 
-    virtual void createStyle(KoGenStyles &coll);
+    virtual void createStyle(KoGenStyles *coll);
     virtual void createBody(KoXmlWriter *bodyWriter) const;
     virtual bool saveData(KoStore *store, KoXmlWriter *manifestWriter) const;
 

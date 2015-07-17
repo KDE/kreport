@@ -84,7 +84,7 @@ QFile::FileError KoOdtFrameReportDocument::saveDocument(const QString& path)
     }
     //kreportDebug()<<"data saved";
     KoGenStyles coll;
-    createStyles(coll); // create basic styles
+    createStyles(&coll); // create basic styles
     bool ok = createContent(&oasisStore, coll);
     if (ok) {
         // save styles to styles.xml
@@ -96,7 +96,7 @@ QFile::FileError KoOdtFrameReportDocument::saveDocument(const QString& path)
 
 }
 
-void KoOdtFrameReportDocument::createStyles(KoGenStyles &coll)
+void KoOdtFrameReportDocument::createStyles(KoGenStyles *coll)
 {
     // convert to inches
     qreal pw = m_pageOptions.widthPx() / KReportDpi::dpiX();
@@ -122,26 +122,25 @@ void KoOdtFrameReportDocument::createStyles(KoGenStyles &coll)
     page.addProperty("fo:margin-left", QString("%1in").arg(leftMargin));
     page.addProperty("fo:margin-right", QString("%1in").arg(rightMargin));
     page.setAutoStyleInStylesDotXml(true);
-    QString pagename = coll.insert(page, "pm");
+    QString pagename = coll->insert(page, "pm");
 
     KoGenStyle master(KoGenStyle::MasterPageStyle, "master-page");
     master.addAttribute("style:page-layout-name", pagename);
-    coll.insert(master, "Standard", KoGenStyles::DontAddNumberToName);
+    coll->insert(master, "Standard", KoGenStyles::DontAddNumberToName);
 
     KoGenStyle fs(KoGenStyle::GraphicStyle, "graphic");
     fs.addProperty("vertical-pos", "from-top");
     fs.addProperty("vertical-rel", "page");
     fs.addProperty("horizontal-pos", "from-left");
     fs.addProperty("horizontal-rel", "page");
-    coll.insert(fs, "Frame", KoGenStyles::DontAddNumberToName);
+    coll->insert(fs, "Frame", KoGenStyles::DontAddNumberToName);
 
     KoGenStyle ps(KoGenStyle::ParagraphStyle, "paragraph");
     ps.addAttribute("style:parent-style-name", "Standard");
-    coll.insert(ps, "P1", KoGenStyles::DontAddNumberToName);
-
+    coll->insert(ps, "P1", KoGenStyles::DontAddNumberToName);
 }
 
-bool KoOdtFrameReportDocument::createContent(KoOdfWriteStore* store, KoGenStyles &coll)
+bool KoOdtFrameReportDocument::createContent(KoOdfWriteStore* store, KoGenStyles *coll)
 {
     KoXmlWriter* bodyWriter = store->bodyWriter();
     KoXmlWriter* contentWriter = store->contentWriter();
@@ -200,7 +199,7 @@ bool KoOdtFrameReportDocument::createContent(KoOdfWriteStore* store, KoGenStyles
     return store->closeContentWriter();
 }
 
-void KoOdtFrameReportDocument::createPages(KoXmlWriter* bodyWriter, KoGenStyles &coll)
+void KoOdtFrameReportDocument::createPages(KoXmlWriter* bodyWriter, KoGenStyles *coll)
 {
     QMap<int, QList<KoOdtFrameReportPrimitive*> >::const_iterator it;
     for (it = m_pagemap.constBegin(); it != m_pagemap.constEnd(); ++it) {

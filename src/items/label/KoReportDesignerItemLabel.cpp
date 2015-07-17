@@ -78,7 +78,7 @@ KoReportDesignerItemLabel* KoReportDesignerItemLabel::clone()
     QDomDocument d;
     QDomElement e = d.createElement(QLatin1String("clone"));
     QDomNode n;
-    buildXML(d, e);
+    buildXML(&d, &e);
     n = e.firstChild();
     return new KoReportDesignerItemLabel(n, designer(), 0);
 }
@@ -132,10 +132,10 @@ void KoReportDesignerItemLabel::paint(QPainter* painter, const QStyleOptionGraph
     painter->setPen(p);
 }
 
-void KoReportDesignerItemLabel::buildXML(QDomDocument & doc, QDomElement & parent)
+void KoReportDesignerItemLabel::buildXML(QDomDocument *doc, QDomElement *parent)
 {
     //kreportpluginDebug();
-    QDomElement entity = doc.createElement(QLatin1String("report:") + typeName());
+    QDomElement entity = doc->createElement(QLatin1String("report:") + typeName());
 
     // properties
     addPropertyAsAttribute(&entity, m_name);
@@ -145,15 +145,15 @@ void KoReportDesignerItemLabel::buildXML(QDomDocument & doc, QDomElement & paren
     entity.setAttribute(QLatin1String("report:z-index"), zValue());
 
     // bounding rect
-    buildXMLRect(doc, entity, &m_pos, &m_size);
+    buildXMLRect(doc, &entity, &m_pos, &m_size);
 
     //text style info
-    buildXMLTextStyle(doc, entity, textStyle());
+    buildXMLTextStyle(doc, &entity, textStyle());
 
     //Line Style
-    buildXMLLineStyle(doc, entity, lineStyle());
+    buildXMLLineStyle(doc, &entity, lineStyle());
 
-    parent.appendChild(entity);
+    parent->appendChild(entity);
 }
 
 void KoReportDesignerItemLabel::slotPropertyChanged(KPropertySet &s, KProperty &p)

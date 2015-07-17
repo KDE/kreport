@@ -50,7 +50,7 @@ public:
     virtual ~ReportSection();
 
     void setTitle(const QString & s);
-    void buildXML(QDomDocument & doc, QDomElement & section);
+    void buildXML(QDomDocument *doc, QDomElement *section);
     void initFromXML(const QDomNode & section);
     virtual QSize sizeHint() const;
 

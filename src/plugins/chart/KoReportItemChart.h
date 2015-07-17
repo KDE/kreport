@@ -37,7 +37,7 @@ class KoReportItemChart : public KoReportItemBase
     Q_OBJECT
 public:
     KoReportItemChart();
-    explicit KoReportItemChart(QDomNode &element);
+    explicit KoReportItemChart(QDomNode *element);
     ~KoReportItemChart();
 
     virtual QString typeName() const;

@@ -34,7 +34,7 @@ public:
     explicit KoOdtFrameReportLine(OROLine *primitive);
     virtual ~KoOdtFrameReportLine();
 
-    virtual void createStyle(KoGenStyles &coll);
+    virtual void createStyle(KoGenStyles *coll);
     virtual void createBody(KoXmlWriter *bodyWriter) const;
 
     OROLine *line() const;

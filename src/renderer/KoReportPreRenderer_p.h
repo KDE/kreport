@@ -64,7 +64,7 @@ public:
     qreal finishCurPage(bool = false);
     qreal finishCurPageSize(bool = false);
 
-    void renderDetailSection(KRDetailSectionData &);
+    void renderDetailSection(KRDetailSectionData *detailData);
     qreal renderSection(const KRSectionData &);
     qreal renderSectionSize(const KRSectionData &);
 

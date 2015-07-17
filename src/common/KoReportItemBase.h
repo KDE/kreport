@@ -126,9 +126,9 @@ protected:
 
     virtual void createProperties() = 0;
 
-    static bool parseReportRect(const QDomElement &, KRPos *pos, KRSize *siz);
-    static bool parseReportTextStyleData(const QDomElement &, KRTextStyleData &);
-    static bool parseReportLineStyleData(const QDomElement &, KRLineStyleData &);
+    static bool parseReportRect(const QDomElement &, KRPos *pos, KRSize *size);
+    static bool parseReportTextStyleData(const QDomElement &, KRTextStyleData*);
+    static bool parseReportLineStyleData(const QDomElement &, KRLineStyleData*);
 
 
 };

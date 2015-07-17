@@ -155,7 +155,7 @@ qreal KReportUnit::toUserValue(qreal ptValue) const
     }
 }
 
-qreal KReportUnit::ptToUnit(const qreal ptValue, const KReportUnit &unit)
+qreal KReportUnit::ptToUnit(qreal ptValue, const KReportUnit &unit)
 {
     switch (unit.m_type) {
     case Millimeter:
@@ -278,7 +278,7 @@ KReportUnit KReportUnit::fromSymbol(const QString &symbol, bool *ok)
     return KReportUnit(result);
 }
 
-qreal KReportUnit::convertFromUnitToUnit(const qreal value, const KReportUnit &fromUnit, const KReportUnit &toUnit, qreal factor)
+qreal KReportUnit::convertFromUnitToUnit(qreal value, const KReportUnit &fromUnit, const KReportUnit &toUnit, qreal factor)
 {
     qreal pt;
     switch (fromUnit.type()) {

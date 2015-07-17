@@ -28,10 +28,10 @@ class KoReportDesignerItemChart : public KoReportItemChart, public KoReportDesig
     Q_OBJECT
 public:
     KoReportDesignerItemChart(KoReportDesigner *, QGraphicsScene* scene, const QPointF &pos);
-    KoReportDesignerItemChart(QDomNode & element, KoReportDesigner *, QGraphicsScene* scene);
+    KoReportDesignerItemChart(QDomNode *element, KoReportDesigner *, QGraphicsScene* scene);
 
     virtual ~KoReportDesignerItemChart();
-    virtual void buildXML(QDomDocument & doc, QDomElement & parent);
+    virtual void buildXML(QDomDocument *doc, QDomElement *parent);
     virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = 0);
     virtual KoReportDesignerItemChart* clone();
 

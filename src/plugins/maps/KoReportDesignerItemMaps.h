@@ -31,10 +31,10 @@ class KoReportDesignerItemMaps : public KoReportItemMaps, public KoReportDesigne
   Q_OBJECT
 public:
     KoReportDesignerItemMaps(KoReportDesigner *, QGraphicsScene* scene, const QPointF &pos);
-    KoReportDesignerItemMaps(QDomNode & element, KoReportDesigner *, QGraphicsScene* scene);
+    KoReportDesignerItemMaps(QDomNode *element, KoReportDesigner *, QGraphicsScene* scene);
 
     virtual ~KoReportDesignerItemMaps();
-    virtual void buildXML(QDomDocument & doc, QDomElement & parent);
+    virtual void buildXML(QDomDocument *doc, QDomElement *parent);
     virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = 0);
     virtual KoReportDesignerItemMaps* clone();
 

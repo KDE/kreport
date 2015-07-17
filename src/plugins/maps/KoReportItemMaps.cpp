@@ -27,7 +27,7 @@
 
 #define myDebug() if (0) kDebug(44021)
 
-KoReportItemMaps::KoReportItemMaps(QDomNode & element)
+KoReportItemMaps::KoReportItemMaps(QDomNode *element)
     : m_longtitude(0)
     , m_latitude(0)
     , m_zoom(1200)
@@ -40,17 +40,17 @@ KoReportItemMaps::KoReportItemMaps(QDomNode & element)
 {
     createProperties();
 
-    m_name->setValue(element.toElement().attribute(QLatin1String("report:name")));
-    m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
-    Z = element.toElement().attribute(QLatin1String("report:z-index")).toDouble();
-    m_latitudeProperty->setValue(element.toElement().attribute(QLatin1String("report:latitude")).toDouble());
-    m_longitudeProperty->setValue(element.toElement().attribute(QLatin1String("report:longitude")).toDouble());
-    m_zoomProperty->setValue(element.toElement().attribute(QLatin1String("report:zoom")).toInt());
-    QString themeId(element.toElement().attribute(QLatin1String("report:theme")));
+    m_name->setValue(element->toElement().attribute(QLatin1String("report:name")));
+    m_controlSource->setValue(element->toElement().attribute(QLatin1String("report:item-data-source")));
+    Z = element->toElement().attribute(QLatin1String("report:z-index")).toDouble();
+    m_latitudeProperty->setValue(element->toElement().attribute(QLatin1String("report:latitude")).toDouble());
+    m_longitudeProperty->setValue(element->toElement().attribute(QLatin1String("report:longitude")).toDouble());
+    m_zoomProperty->setValue(element->toElement().attribute(QLatin1String("report:zoom")).toInt());
+    QString themeId(element->toElement().attribute(QLatin1String("report:theme")));
     themeId = themeId.isEmpty() ? m_themeManager.mapThemeIds()[0] : themeId;
     m_themeProperty->setValue(themeId);
 
-    parseReportRect(element.toElement(), &m_pos, &m_size);
+    parseReportRect(element->toElement(), &m_pos, &m_size);
 }
 
 KoReportItemMaps::~KoReportItemMaps()

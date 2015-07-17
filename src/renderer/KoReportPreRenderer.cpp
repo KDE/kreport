@@ -147,9 +147,9 @@ qreal KoReportPreRendererPrivate::finishCurPage(bool lastPage)
     return retval;
 }
 
-void KoReportPreRendererPrivate::renderDetailSection(KRDetailSectionData & detailData)
+void KoReportPreRendererPrivate::renderDetailSection(KRDetailSectionData *detailData)
 {
-    if (detailData.m_detailSection) {
+    if (detailData->m_detailSection) {
         if (m_kodata/* && !curs->eof()*/) {
             QStringList keys;
             QStringList keyValues;
@@ -161,8 +161,8 @@ void KoReportPreRendererPrivate::renderDetailSection(KRDetailSectionData & detai
 
             //kreportDebug() << "Record Count:" << m_recordCount;
 
-            for (int i = 0; i < (int) detailData.m_groupList.count(); ++i) {
-                grp = detailData.m_groupList[i];
+            for (int i = 0; i < (int) detailData->m_groupList.count(); ++i) {
+                grp = detailData->m_groupList[i];
                 //If the group has a header or footer, then emit a change of group value
                 if(grp->m_groupFooter || grp->m_groupHeader) {
                     // we get here only if group is *shown*
@@ -183,7 +183,7 @@ void KoReportPreRendererPrivate::renderDetailSection(KRDetailSectionData & detai
             while (status) {
                 long l = m_kodata->at();
                 //kreportDebug() << "At:" << l << "Y:" << m_yOffset << "Max Height:" << m_maxHeight;
-                if (renderSectionSize(*(detailData.m_detailSection)) + finishCurPageSize((l + 1 == m_recordCount)) + m_bottomMargin + m_yOffset >= m_maxHeight) {
+                if (renderSectionSize(*(detailData->m_detailSection)) + finishCurPageSize((l + 1 == m_recordCount)) + m_bottomMargin + m_yOffset >= m_maxHeight) {
                     //kreportDebug() << "Next section is too big for this page";
                     if (l > 0) {
                         m_kodata->movePrevious();
@@ -192,7 +192,7 @@ void KoReportPreRendererPrivate::renderDetailSection(KRDetailSectionData & detai
                     }
                 }
 
-                renderSection(*(detailData.m_detailSection));
+                renderSection(*(detailData->m_detailSection));
                 if (m_kodata)
                     status = m_kodata->moveNext();
 
@@ -218,7 +218,7 @@ void KoReportPreRendererPrivate::renderDetailSection(KRDetailSectionData & detai
                                 if (do_break)
                                     createNewPage();
                                 do_break = false;
-                                grp = detailData.m_groupList[shownGroups.at(i)];
+                                grp = detailData->m_groupList[shownGroups.at(i)];
 
                                 if (grp->m_groupFooter) {
                                     if (renderSectionSize(*(grp->m_groupFooter)) + finishCurPageSize() + m_bottomMargin + m_yOffset >= m_maxHeight)
@@ -236,7 +236,7 @@ void KoReportPreRendererPrivate::renderDetailSection(KRDetailSectionData & detai
                                 createNewPage();
                             if (status == true) {
                                 for (int i = 0; i < shownGroups.count(); ++i) {
-                                    grp = detailData.m_groupList[shownGroups.at(i)];
+                                    grp = detailData->m_groupList[shownGroups.at(i)];
 
                                     if (grp->m_groupHeader) {
                                         if (renderSectionSize(*(grp->m_groupHeader)) + finishCurPageSize() + m_bottomMargin + m_yOffset >= m_maxHeight) {
@@ -264,7 +264,7 @@ void KoReportPreRendererPrivate::renderDetailSection(KRDetailSectionData & detai
                 // finish footers
                 // duplicated changes from above here
                 for (int i = shownGroups.count() - 1; i >= 0; i--) {
-                    grp = detailData.m_groupList[shownGroups.at(i)];
+                    grp = detailData->m_groupList[shownGroups.at(i)];
 
                     if (grp->m_groupFooter) {
                         if (renderSectionSize(*(grp->m_groupFooter)) + finishCurPageSize() + m_bottomMargin + m_yOffset >= m_maxHeight)
@@ -275,7 +275,7 @@ void KoReportPreRendererPrivate::renderDetailSection(KRDetailSectionData & detai
                 }
             }
         }
-        if (KRDetailSectionData::BreakAtEnd == detailData.m_pageBreak)
+        if (KRDetailSectionData::BreakAtEnd == detailData->m_pageBreak)
             createNewPage();
     }
 }
@@ -572,7 +572,7 @@ ORODocument* KoReportPreRenderer::generate()
         }
 
         if (d->m_reportData->m_detailSection) {
-            d->renderDetailSection(*(d->m_reportData->m_detailSection));
+            d->renderDetailSection(d->m_reportData->m_detailSection);
         }
 
         if (d->m_reportData->m_reportFooter) {

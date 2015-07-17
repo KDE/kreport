@@ -32,7 +32,7 @@ public:
     explicit KoOdtFrameReportTextBox(OROTextBox *primitive);
     virtual ~KoOdtFrameReportTextBox();
 
-    virtual void createStyle(KoGenStyles &coll);
+    virtual void createStyle(KoGenStyles *coll);
     virtual void createBody(KoXmlWriter *bodyWriter) const;
 
     OROTextBox *textBox() const;

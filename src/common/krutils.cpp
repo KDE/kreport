@@ -36,6 +36,7 @@
 
 int KRUtils::readPercent(const QDomElement& el, const char* name, int defaultPercentValue, bool *ok)
 {
+    Q_ASSERT(name);
     QString percent(el.attribute(QLatin1String(name)));
     if (percent.isEmpty()) {
         if (ok)
@@ -77,13 +78,14 @@ static QFont::Capitalization readFontCapitalization(const QByteArray& fontVarian
     return QFont::MixedCase;
 }
 
-bool KRUtils::readFontAttributes(const QDomElement& el, QFont& font)
+bool KRUtils::readFontAttributes(const QDomElement& el, QFont *font)
 {
+    Q_ASSERT(font);
     bool ok;
     const QFont::Capitalization cap = readFontCapitalization(
         el.attribute(QLatin1String("fo:font-variant")).toLatin1(),
         el.attribute(QLatin1String("fo:text-transform")).toLatin1());
-    font.setCapitalization(cap);
+    font->setCapitalization(cap);
 
     // weight
     const QByteArray fontWeight(el.attribute(QLatin1String("fo:font-weight"), QLatin1String("normal")).toLatin1());
@@ -105,35 +107,35 @@ bool KRUtils::readFontAttributes(const QDomElement& el, QFont& font)
             return false;
     }
     if (weight >= 0)
-        font.setWeight(weight);
+        font->setWeight(weight);
 
     // italic
     const QByteArray fontStyle(el.attribute(QLatin1String("fo:font-style")).toLatin1());
-    font.setItalic(fontStyle == "italic");
+    font->setItalic(fontStyle == "italic");
 
     // pitch
     const QByteArray fontPitch(el.attribute(QLatin1String("style:font-pitch")).toLatin1());
-    font.setFixedPitch(fontPitch == "fixed");
+    font->setFixedPitch(fontPitch == "fixed");
 
-    font.setFamily(el.attribute(QLatin1String("fo:font-family")));
+    font->setFamily(el.attribute(QLatin1String("fo:font-family")));
 
     // kerning
-    font.setKerning(QVariant(el.attribute(QLatin1String("style:letter-kerning"))).toBool());
+    font->setKerning(QVariant(el.attribute(QLatin1String("style:letter-kerning"))).toBool());
 
     // underline
     const QByteArray underlineType(el.attribute(QLatin1String("style:text-underline-type")).toLatin1());
-    font.setUnderline(!underlineType.isEmpty() && underlineType != "none");
+    font->setUnderline(!underlineType.isEmpty() && underlineType != "none");
 
     // stricken-out
     const QByteArray strikeOutType(el.attribute(QLatin1String("style:text-line-through-type")).toLatin1());
-    font.setStrikeOut(!strikeOutType.isEmpty() && strikeOutType != "none");
+    font->setStrikeOut(!strikeOutType.isEmpty() && strikeOutType != "none");
 
 //! @todo support fo:font-size-rel?
 //! @todo support fo:font-size in px
     const QByteArray pointSize(el.attribute(QLatin1String("fo:font-size")).toLatin1());
     const int pointSizeInt = pointSize.toUInt(&ok);
     if (ok)
-        font.setPointSize(pointSizeInt);
+        font->setPointSize(pointSizeInt);
     else
         return false;
 
@@ -144,37 +146,38 @@ bool KRUtils::readFontAttributes(const QDomElement& el, QFont& font)
         letterSpacing.chop(1);
         const qreal letterSpacingReal = letterSpacing.toDouble(&ok);
         if (ok)
-            font.setLetterSpacing(QFont::PercentageSpacing, letterSpacingReal);
+            font->setLetterSpacing(QFont::PercentageSpacing, letterSpacingReal);
         else
             return false;
     }
     else if (!letterSpacing.isEmpty()) {
         const qreal letterSpacingReal = letterSpacing.toDouble(&ok);
         if (ok)
-            font.setLetterSpacing(QFont::AbsoluteSpacing, letterSpacingReal);
+            font->setLetterSpacing(QFont::AbsoluteSpacing, letterSpacingReal);
         else
             return false;
     }
     return true;
 }
 
-void KRUtils::writeFontAttributes(QDomElement& el, const QFont &font)
+void KRUtils::writeFontAttributes(QDomElement *el, const QFont &font)
 {
+    Q_ASSERT(el);
     switch (font.capitalization()) {
     case QFont::SmallCaps:
-        el.setAttribute(QLatin1String("fo:font-variant"), QLatin1String("small-caps"));
+        el->setAttribute(QLatin1String("fo:font-variant"), QLatin1String("small-caps"));
         break;
     case QFont::MixedCase:
         // default: "normal", do not save
         break;
     case QFont::AllUppercase:
-        el.setAttribute(QLatin1String("fo:text-transform"), QLatin1String("uppercase"));
+        el->setAttribute(QLatin1String("fo:text-transform"), QLatin1String("uppercase"));
         break;
     case QFont::AllLowercase:
-        el.setAttribute(QLatin1String("fo:text-transform"), QLatin1String("lowercase"));
+        el->setAttribute(QLatin1String("fo:text-transform"), QLatin1String("lowercase"));
         break;
     case QFont::Capitalize:
-        el.setAttribute(QLatin1String("fo:text-transform"), QLatin1String("capitalize"));
+        el->setAttribute(QLatin1String("fo:text-transform"), QLatin1String("capitalize"));
         break;
     }
 
@@ -182,46 +185,46 @@ void KRUtils::writeFontAttributes(QDomElement& el, const QFont &font)
     // See http://www.w3.org/TR/2001/REC-xsl-20011015/slice7.html#font-weight
     // and http://www.w3.org/TR/CSS2/fonts.html#font-boldness
     if (font.weight() == QFont::Light) {
-        el.setAttribute(QLatin1String("fo:font-weight"), 200);
+        el->setAttribute(QLatin1String("fo:font-weight"), 200);
     }
     else if (font.weight() == QFont::Normal) {
         // Default
-        //el.setAttribute("fo:font-weight", "normal"); // 400
+        //el->setAttribute("fo:font-weight", "normal"); // 400
     }
     else if (font.weight() == QFont::DemiBold) {
-        el.setAttribute(QLatin1String("fo:font-weight"), 600);
+        el->setAttribute(QLatin1String("fo:font-weight"), 600);
     }
     else if (font.weight() == QFont::Bold) {
-        el.setAttribute(QLatin1String("fo:font-weight"), QLatin1String("bold")); // 700
+        el->setAttribute(QLatin1String("fo:font-weight"), QLatin1String("bold")); // 700
     }
     else if (font.weight() == QFont::Black) {
-        el.setAttribute(QLatin1String("fo:font-weight"), 900);
+        el->setAttribute(QLatin1String("fo:font-weight"), 900);
     }
     else {
-        el.setAttribute(QLatin1String("fo:font-weight"), qBound(10, font.weight(), 90) * 10);
+        el->setAttribute(QLatin1String("fo:font-weight"), qBound(10, font.weight(), 90) * 10);
     }
     // italic, default is "normal"
     if (font.italic()) {
-        el.setAttribute(QLatin1String("fo:font-style"), QLatin1String("italic"));
+        el->setAttribute(QLatin1String("fo:font-style"), QLatin1String("italic"));
     }
     // pitch, default is "variable"
     if (font.fixedPitch()) {
-        el.setAttribute(QLatin1String("style:font-pitch"), QLatin1String("fixed"));
+        el->setAttribute(QLatin1String("style:font-pitch"), QLatin1String("fixed"));
     }
     if (!font.family().isEmpty()) {
-        el.setAttribute(QLatin1String("fo:font-family"), font.family());
+        el->setAttribute(QLatin1String("fo:font-family"), font.family());
     }
     // kerning, default is "true"
-    el.setAttribute(QLatin1String("style:letter-kerning"), QLatin1String(font.kerning() ? "true" : "false"));
+    el->setAttribute(QLatin1String("style:letter-kerning"), QLatin1String(font.kerning() ? "true" : "false"));
     // underline, default is "none"
     if (font.underline()) {
-        el.setAttribute(QLatin1String("style:text-underline-type"), QLatin1String("single"));
+        el->setAttribute(QLatin1String("style:text-underline-type"), QLatin1String("single"));
     }
     // stricken-out, default is "none"
     if (font.strikeOut()) {
-        el.setAttribute(QLatin1String("style:text-line-through-type"), QLatin1String("single"));
+        el->setAttribute(QLatin1String("style:text-line-through-type"), QLatin1String("single"));
     }
-    el.setAttribute(QLatin1String("fo:font-size"), font.pointSize());
+    el->setAttribute(QLatin1String("fo:font-size"), font.pointSize());
 
     // letter spacing, default is "normal"
     // §7.16.2 of [XSL] http://www.w3.org/TR/xsl11/#letter-spacing
@@ -229,38 +232,45 @@ void KRUtils::writeFontAttributes(QDomElement& el, const QFont &font)
         // A value of 100 will keep the spacing unchanged; a value of 200 will enlarge
         // the spacing after a character by the width of the character itself.
         if (font.letterSpacing() != 100.0) {
-            el.setAttribute(QLatin1String("fo:letter-spacing"), roundValueToString(font.letterSpacing()) + QLatin1Char('%'));
+            el->setAttribute(QLatin1String("fo:letter-spacing"), roundValueToString(font.letterSpacing()) + QLatin1Char('%'));
         }
     }
     else {
         // QFont::AbsoluteSpacing
         // A positive value increases the letter spacing by the corresponding pixels; a negative value decreases the spacing.
-        el.setAttribute(QLatin1String("fo:letter-spacing"), roundValueToString(font.letterSpacing()));
+        el->setAttribute(QLatin1String("fo:letter-spacing"), roundValueToString(font.letterSpacing()));
     }
 }
 
 
-void KRUtils::buildXMLRect(QDomElement & entity, KRPos *pos, KRSize *siz)
+void KRUtils::buildXMLRect(QDomElement *entity, KRPos *pos, KRSize *size)
 {
+    Q_ASSERT(entity);
+    Q_ASSERT(pos);
+    Q_ASSERT(size);
     KRUtils::setAttribute(entity, pos->toPoint() );
-    KRUtils::setAttribute(entity, siz->toPoint() );
+    KRUtils::setAttribute(entity, size->toPoint() );
 }
 
-void KRUtils::buildXMLTextStyle(QDomDocument & doc, QDomElement & entity, KRTextStyleData ts)
+void KRUtils::buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KRTextStyleData &ts)
 {
-    QDomElement element = doc.createElement(QLatin1String("report:text-style"));
+    Q_ASSERT(doc);
+    Q_ASSERT(entity);
+    QDomElement element = doc->createElement(QLatin1String("report:text-style"));
 
     element.setAttribute(QLatin1String("fo:background-color"), ts.backgroundColor.name());
     element.setAttribute(QLatin1String("fo:foreground-color"), ts.foregroundColor.name());
     element.setAttribute(QLatin1String("fo:background-opacity"), QString::number(ts.backgroundOpacity) + QLatin1Char('%'));
-    KRUtils::writeFontAttributes(element, ts.font);
+    KRUtils::writeFontAttributes(&element, ts.font);
 
-    entity.appendChild(element);
+    entity->appendChild(element);
 }
 
-void KRUtils::buildXMLLineStyle(QDomDocument & doc, QDomElement & entity, KRLineStyleData ls)
+void KRUtils::buildXMLLineStyle(QDomDocument *doc, QDomElement *entity, const KRLineStyleData &ls)
 {
-    QDomElement element = doc.createElement(QLatin1String("report:line-style"));
+    Q_ASSERT(doc);
+    Q_ASSERT(entity);
+    QDomElement element = doc->createElement(QLatin1String("report:line-style"));
 
     element.setAttribute(QLatin1String("report:line-color"), ls.lineColor.name());
     element.setAttribute(QLatin1String("report:line-weight"), ls.weight);
@@ -290,11 +300,13 @@ void KRUtils::buildXMLLineStyle(QDomDocument & doc, QDomElement & entity, KRLine
     }
     element.setAttribute(QLatin1String("report:line-style"), l);
 
-    entity.appendChild(element);
+    entity->appendChild(element);
 }
 
 void KRUtils::addPropertyAsAttribute(QDomElement* e, KProperty* p)
 {
+    Q_ASSERT(e);
+    Q_ASSERT(p);
     const QString name = QLatin1String("report:") + QLatin1String(p->name().toLower());
 
     switch (p->value().type()) {
@@ -313,70 +325,77 @@ void KRUtils::addPropertyAsAttribute(QDomElement* e, KProperty* p)
     }
 }
 
-void KRUtils::setAttribute(QDomElement &e, const QString &attribute, double value)
+void KRUtils::setAttribute(QDomElement *e, const QString &attribute, double value)
 {
+    Q_ASSERT(e);
     QString s;
     s.setNum(value, 'f', DBL_DIG);
-    e.setAttribute(attribute, s + QLatin1String("pt"));
+    e->setAttribute(attribute, s + QLatin1String("pt"));
 }
 
-void KRUtils::setAttribute(QDomElement &e, const QPointF &value)
+void KRUtils::setAttribute(QDomElement *e, const QPointF &value)
 {
+    Q_ASSERT(e);
     KRUtils::setAttribute(e, QLatin1String("svg:x"), value.x());
     KRUtils::setAttribute(e, QLatin1String("svg:y"), value.y());
 }
 
-void KRUtils::setAttribute(QDomElement &e, const QSizeF &value)
+void KRUtils::setAttribute(QDomElement *e, const QSizeF &value)
 {
+    Q_ASSERT(e);
     KRUtils::setAttribute(e, QLatin1String("svg:width"), value.width());
     KRUtils::setAttribute(e, QLatin1String("svg:height"), value.height());
 }
 
-bool KRUtils::parseReportTextStyleData(const QDomElement & elemSource, KRTextStyleData & ts)
+bool KRUtils::parseReportTextStyleData(const QDomElement & elemSource, KRTextStyleData *ts)
 {
+    Q_ASSERT(ts);
     if (elemSource.tagName() != QLatin1String("report:text-style"))
         return false;
-    ts.backgroundColor = QColor(elemSource.attribute(QLatin1String("fo:background-color"), QLatin1String("#ffffff")));
-    ts.foregroundColor = QColor(elemSource.attribute(QLatin1String("fo:foreground-color"), QLatin1String("#000000")));
+    ts->backgroundColor = QColor(elemSource.attribute(QLatin1String("fo:background-color"), QLatin1String("#ffffff")));
+    ts->foregroundColor = QColor(elemSource.attribute(QLatin1String("fo:foreground-color"), QLatin1String("#000000")));
 
     bool ok;
-    ts.backgroundOpacity = KRUtils::readPercent(elemSource, "fo:background-opacity", 100, &ok);
+    ts->backgroundOpacity = KRUtils::readPercent(elemSource, "fo:background-opacity", 100, &ok);
     if (!ok) {
         return false;
     }
-    if (!KRUtils::readFontAttributes(elemSource, ts.font)) {
+    if (!KRUtils::readFontAttributes(elemSource, &ts->font)) {
         return false;
     }
     return true;
 }
 
-bool KRUtils::parseReportLineStyleData(const QDomElement & elemSource, KRLineStyleData & ls)
+bool KRUtils::parseReportLineStyleData(const QDomElement & elemSource, KRLineStyleData *ls)
 {
+    Q_ASSERT(ls);
     if (elemSource.tagName() == QLatin1String("report:line-style")) {
-        ls.lineColor = QColor(elemSource.attribute(QLatin1String("report:line-color"), QLatin1String("#ffffff")));
-        ls.weight = elemSource.attribute(QLatin1String("report:line-weight"), QLatin1String("0")).toInt();
+        ls->lineColor = QColor(elemSource.attribute(QLatin1String("report:line-color"), QLatin1String("#ffffff")));
+        ls->weight = elemSource.attribute(QLatin1String("report:line-weight"), QLatin1String("0")).toInt();
 
         QString l = elemSource.attribute(QLatin1String("report:line-style"), QLatin1String("nopen"));
         if (l == QLatin1String("nopen")) {
-            ls.style = Qt::NoPen;
+            ls->style = Qt::NoPen;
         } else if (l == QLatin1String("solid")) {
-            ls.style = Qt::SolidLine;
+            ls->style = Qt::SolidLine;
         } else if (l == QLatin1String("dash")) {
-            ls.style = Qt::DashLine;
+            ls->style = Qt::DashLine;
         } else if (l == QLatin1String("dot")) {
-            ls.style = Qt::DotLine;
+            ls->style = Qt::DotLine;
         } else if (l == QLatin1String("dashdot")) {
-            ls.style = Qt::DashDotLine;
+            ls->style = Qt::DashDotLine;
         } else if (l == QLatin1String("dashdotdot")) {
-            ls.style = Qt::DashDotDotLine;
+            ls->style = Qt::DashDotDotLine;
         }
         return true;
     }
     return false;
 }
 
-bool KRUtils::parseReportRect(const QDomElement & elemSource, KRPos *pos, KRSize *siz)
+bool KRUtils::parseReportRect(const QDomElement & elemSource, KRPos *pos, KRSize *size)
 {
+    Q_ASSERT(pos);
+    Q_ASSERT(size);
     QStringList sl;
     QDomNamedNodeMap map = elemSource.attributes();
     for (int i=0; i < map.count(); ++i ) {
@@ -391,6 +410,6 @@ bool KRUtils::parseReportRect(const QDomElement & elemSource, KRPos *pos, KRSize
     _siz.setHeight(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:height"), QLatin1String("1cm"))));
 
     pos->setPointPos(_pos);
-    siz->setPointSize(_siz);
+    size->setPointSize(_siz);
     return true;
 }

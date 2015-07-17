@@ -83,13 +83,13 @@ ReportSection * ReportSectionDetail::detailSection() const
     return d->detail;
 }
 
-void ReportSectionDetail::buildXML(QDomDocument & doc, QDomElement & section)
+void ReportSectionDetail::buildXML(QDomDocument *doc, QDomElement *section)
 {
     if (pageBreak() != ReportSectionDetail::BreakNone) {
-        QDomElement spagebreak = doc.createElement(QLatin1String("pagebreak"));
+        QDomElement spagebreak = doc->createElement(QLatin1String("pagebreak"));
         if (pageBreak() == ReportSectionDetail::BreakAtEnd)
             spagebreak.setAttribute(QLatin1String("when"), QLatin1String("at end"));
-        section.appendChild(spagebreak);
+        section->appendChild(spagebreak);
     }
 
     foreach(ReportSectionDetailGroup* rsdg, d->groupList) {
@@ -97,15 +97,15 @@ void ReportSectionDetail::buildXML(QDomDocument & doc, QDomElement & section)
     }
 
     // detail section
-    QDomElement gdetail = doc.createElement(QLatin1String("report:section"));
+    QDomElement gdetail = doc->createElement(QLatin1String("report:section"));
     gdetail.setAttribute(QLatin1String("report:section-type"), QLatin1String("detail"));
-    d->detail->buildXML(doc, gdetail);
-    section.appendChild(gdetail);
+    d->detail->buildXML(doc, &gdetail);
+    section->appendChild(gdetail);
 }
 
-void ReportSectionDetail::initFromXML(QDomNode & section)
+void ReportSectionDetail::initFromXML(QDomNode *section)
 {
-    QDomNodeList nl = section.childNodes();
+    QDomNodeList nl = section->childNodes();
     QDomNode node;
     QString n;
 

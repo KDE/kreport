@@ -67,7 +67,7 @@ KoReportDesignerItemField* KoReportDesignerItemField::clone()
     QDomDocument d;
     QDomElement e = d.createElement(QLatin1String("clone"));
     QDomNode n;
-    buildXML(d, e);
+    buildXML(&d, &e);
     n = e.firstChild();
     return new KoReportDesignerItemField(n, designer(), 0);
 }
@@ -121,9 +121,9 @@ void KoReportDesignerItemField::paint(QPainter* painter, const QStyleOptionGraph
     painter->setPen(p);
 }
 
-void KoReportDesignerItemField::buildXML(QDomDocument & doc, QDomElement & parent)
+void KoReportDesignerItemField::buildXML(QDomDocument *doc, QDomElement *parent)
 {
-    QDomElement entity = doc.createElement(QLatin1String("report:") + typeName());
+    QDomElement entity = doc->createElement(QLatin1String("report:") + typeName());
 
     // properties
     addPropertyAsAttribute(&entity, m_name);
@@ -137,18 +137,18 @@ void KoReportDesignerItemField::buildXML(QDomDocument & doc, QDomElement & paren
     entity.setAttribute(QLatin1String("report:z-index"), zValue());
 
     // bounding rect
-    buildXMLRect(doc, entity, &m_pos, &m_size);
+    buildXMLRect(doc, &entity, &m_pos, &m_size);
 
     //text style info
-    buildXMLTextStyle(doc, entity, textStyle());
+    buildXMLTextStyle(doc, &entity, textStyle());
 
     //Line Style
-    buildXMLLineStyle(doc, entity, lineStyle());
+    buildXMLLineStyle(doc, &entity, lineStyle());
 
 
 #if 0 //Field Totals
     if (m_trackTotal) {
-        QDomElement tracktotal = doc.createElement("tracktotal");
+        QDomElement tracktotal = doc->createElement("tracktotal");
         if (m_trackBuiltinFormat)
             tracktotal.setAttribute("builtin", "true");
         if (_useSubTotal)
@@ -158,7 +158,7 @@ void KoReportDesignerItemField::buildXML(QDomDocument & doc, QDomElement & paren
     }
 #endif
 
-    parent.appendChild(entity);
+    parent->appendChild(entity);
 }
 
 void KoReportDesignerItemField::slotPropertyChanged(KPropertySet &s, KProperty &p)

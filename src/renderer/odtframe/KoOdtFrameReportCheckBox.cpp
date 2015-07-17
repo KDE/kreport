@@ -49,7 +49,7 @@ OROCheck *KoOdtFrameReportCheckBox::checkBox() const
     return static_cast<OROCheck*>(m_primitive);
 }
 
-void KoOdtFrameReportCheckBox::createStyle(KoGenStyles &coll)
+void KoOdtFrameReportCheckBox::createStyle(KoGenStyles *coll)
 {
     KoGenStyle gs(KoGenStyle::GraphicStyle, "graphic");
     gs.addProperty("draw:fill", "none");
@@ -71,7 +71,7 @@ void KoOdtFrameReportCheckBox::createStyle(KoGenStyles &coll)
     pen.setStyle(checkBox()->lineStyle().style);
     KoOdfGraphicStyles::saveOdfStrokeStyle(gs, coll, pen);
 
-    m_frameStyleName = coll.insert(gs, "F");
+    m_frameStyleName = coll->insert(gs, "F");
 }
 
 void KoOdtFrameReportCheckBox::createBody(KoXmlWriter *bodyWriter) const

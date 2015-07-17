@@ -41,12 +41,14 @@ class KRSize;
 class KREPORT_EXPORT KoReportDesignerItemBase
 {
 public:
-    static void buildXML(QGraphicsItem * item, QDomDocument & doc, QDomElement & parent);
-    virtual void buildXML(QDomDocument & doc, QDomElement & parent) = 0;
+    virtual ~KoReportDesignerItemBase();
 
-    static void buildXMLRect(QDomDocument & doc, QDomElement & entity, KRPos *pos, KRSize *siz);
-    static void buildXMLTextStyle(QDomDocument & doc, QDomElement & entity, KRTextStyleData ts);
-    static void buildXMLLineStyle(QDomDocument & doc, QDomElement & entity, KRLineStyleData ls);
+    static void buildXML(QGraphicsItem * item, QDomDocument *doc, QDomElement *parent);
+    virtual void buildXML(QDomDocument *doc, QDomElement *parent) = 0;
+
+    static void buildXMLRect(QDomDocument *doc, QDomElement *entity, KRPos *pos, KRSize *size);
+    static void buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KRTextStyleData &ts);
+    static void buildXMLLineStyle(QDomDocument *doc, QDomElement *entity, const KRLineStyleData &ls);
 
     static QFont getDefaultEntityFont();
     static void  setDefaultEntityFont(const QFont &);
@@ -60,7 +62,6 @@ public:
     void setDesigner(KoReportDesigner* rd) {
         m_reportDesigner = rd;
     }
-    virtual ~KoReportDesignerItemBase() {};
 
     static void addPropertyAsAttribute(QDomElement* e, KProperty* p);
 

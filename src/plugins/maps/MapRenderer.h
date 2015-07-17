@@ -38,13 +38,13 @@ namespace Marble{
         Q_OBJECT
     public:
         explicit RenderStatusSignalProxy(QObject* parent):QObject(parent){};
-        void setConnection(MarbleWidget& marble){
-            connect(&marble,SIGNAL(renderStatusChanged(RenderStatus)),this,SLOT(onRenderStatusChange(RenderStatus)));
-            connect(&marble,SIGNAL(renderStateChanged(RenderState)),this,SLOT(onRenderStateChange(RenderState)));
+        void setConnection(MarbleWidget* marble){
+            connect(marble,SIGNAL(renderStatusChanged(RenderStatus)),this,SLOT(onRenderStatusChange(RenderStatus)));
+            connect(marble,SIGNAL(renderStateChanged(RenderState)),this,SLOT(onRenderStateChange(RenderState)));
         };
-        void unconnect(MarbleWidget& marble){
-            disconnect(&marble,SIGNAL(renderStatusChanged(RenderStatus)),this,SLOT(onRenderStatusChange(RenderStatus)));
-            disconnect(&marble,SIGNAL(renderStateChanged(RenderState)),this,SLOT(onRenderStateChange(RenderState)));
+        void disconnect(MarbleWidget* marble){
+            disconnect(marble,SIGNAL(renderStatusChanged(RenderStatus)),this,SLOT(onRenderStatusChange(RenderStatus)));
+            disconnect(marble,SIGNAL(renderStateChanged(RenderState)),this,SLOT(onRenderStateChange(RenderState)));
         }
     public Q_SLOTS:
         void onRenderStatusChange(RenderStatus renderStatus){

@@ -68,7 +68,7 @@ KoReportDesignerItemBarcode* KoReportDesignerItemBarcode::clone()
     QDomDocument d;
     QDomElement e = d.createElement(QLatin1String("clone"));
     QDomNode n;
-    buildXML(d, e);
+    buildXML(&d, &e);
     n = e.firstChild();
     return new KoReportDesignerItemBarcode(n, designer(), 0);
 }
@@ -130,10 +130,10 @@ void KoReportDesignerItemBarcode::paint(QPainter* painter,
     painter->setPen(p);
 }
 
-void KoReportDesignerItemBarcode::buildXML(QDomDocument & doc, QDomElement & parent)
+void KoReportDesignerItemBarcode::buildXML(QDomDocument *doc, QDomElement *parent)
 {
     //kreportpluginDebug();
-    QDomElement entity = doc.createElement(QLatin1String("report:") + typeName());
+    QDomElement entity = doc->createElement(QLatin1String("report:") + typeName());
 
     // properties
     addPropertyAsAttribute(&entity, m_name);
@@ -145,9 +145,9 @@ void KoReportDesignerItemBarcode::buildXML(QDomDocument & doc, QDomElement & par
     addPropertyAsAttribute(&entity, m_itemValue);
 
     // bounding rect
-    buildXMLRect(doc, entity, &m_pos, &m_size);
+    buildXMLRect(doc, &entity, &m_pos, &m_size);
 
-    parent.appendChild(entity);
+    parent->appendChild(entity);
 }
 
 void KoReportDesignerItemBarcode::slotPropertyChanged(KPropertySet &s, KProperty &p)

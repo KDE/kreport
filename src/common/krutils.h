@@ -42,32 +42,32 @@ namespace KRUtils
 
     //! Reads all font attributes for element @a el into @a font.
     //! @todo add unit tests
-    bool readFontAttributes(const QDomElement& el, QFont& font);
+    bool readFontAttributes(const QDomElement& el, QFont* font);
 
     //! Writes all attributes of font @a font into element @a el.
     //! @todo add unit tests
-    void writeFontAttributes(QDomElement& el, const QFont &font);
+    void writeFontAttributes(QDomElement *el, const QFont &font);
 
     //! Writes attributes for the rect position @p pos, @p siz
-    void buildXMLRect(QDomElement &entity, KRPos *pos, KRSize *siz);
+    void buildXMLRect(QDomElement *entity, KRPos *pos, KRSize *size);
     //! Writes attributes for text style @p ts
-    void buildXMLTextStyle(QDomDocument & doc, QDomElement & entity, KRTextStyleData ts);
+    void buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KRTextStyleData &ts);
     //! Writes attributes for line style @p ls
-    void buildXMLLineStyle(QDomDocument & doc, QDomElement & entity, KRLineStyleData ls);
+    void buildXMLLineStyle(QDomDocument *doc, QDomElement *entity, const KRLineStyleData &ls);
     //! Writes attributes for the property @p p
     void addPropertyAsAttribute(QDomElement* e, KProperty* p);
     //! Writes @p attribute to element @p e, @p value is stored in points with unit 'pt'
-    void setAttribute(QDomElement &e, const QString &attribute, double value);
+    void setAttribute(QDomElement *e, const QString &attribute, double value);
     //! Writes point @p value as attributes to element @p e
-    void setAttribute(QDomElement &e, const QPointF &value);
+    void setAttribute(QDomElement *e, const QPointF &value);
     //! Writes size @p value as attributes to element @p e
-    void setAttribute(QDomElement &e, const QSizeF &value);
+    void setAttribute(QDomElement *e, const QSizeF &value);
     //! Reads attributes from @p elemSource into text style @p ts
-    bool parseReportTextStyleData(const QDomElement & elemSource, KRTextStyleData & ts);
+    bool parseReportTextStyleData(const QDomElement & elemSource, KRTextStyleData *ts);
     //! Reads attributes from @p elemSource into line style @p ls
-    bool parseReportLineStyleData(const QDomElement & elemSource, KRLineStyleData & ls);
+    bool parseReportLineStyleData(const QDomElement & elemSource, KRLineStyleData *ls);
     //! Reads attributes from @p elemSource into rect @p pos, @p siz
-    bool parseReportRect(const QDomElement & elemSource, KRPos *pos, KRSize *siz);
+    bool parseReportRect(const QDomElement & elemSource, KRPos *pos, KRSize *size);
 }
 
 #endif

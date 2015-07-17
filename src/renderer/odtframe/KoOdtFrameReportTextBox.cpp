@@ -42,12 +42,12 @@ OROTextBox *KoOdtFrameReportTextBox::textBox() const
     return dynamic_cast<OROTextBox*>(m_primitive);
 }
 
-void KoOdtFrameReportTextBox::createStyle(KoGenStyles &coll)
+void KoOdtFrameReportTextBox::createStyle(KoGenStyles *coll)
 {
     QFont font = textBox()->textStyle().font;
 
     KoGenStyle ps(KoGenStyle::ParagraphStyle, "paragraph");
-    m_paragraphStyleName = coll.insert(ps, "P");
+    m_paragraphStyleName = coll->insert(ps, "P");
 
     // text style
     KoGenStyle ts(KoGenStyle::TextStyle, "text");
@@ -62,7 +62,7 @@ void KoOdtFrameReportTextBox::createStyle(KoGenStyles &coll)
         case QFont::StyleOblique: fs = "oblique"; break;
     }
     ts.addProperty("fo:font-style", fs);
-    m_textStyleName = coll.insert(ts, "T");
+    m_textStyleName = coll->insert(ts, "T");
 
     KoGenStyle gs(KoGenStyle::GraphicStyle, "graphic");
     QPen pen;
@@ -75,7 +75,7 @@ void KoOdtFrameReportTextBox::createStyle(KoGenStyles &coll)
     gs.addProperty("style:vertical-pos", "from-top");
     gs.addProperty("style:vertical-rel", "page");
     gs.addProperty("fo:background-color", textBox()->textStyle().backgroundColor.name());
-    m_frameStyleName = coll.insert(gs, "F");
+    m_frameStyleName = coll->insert(gs, "F");
 }
 
 void KoOdtFrameReportTextBox::createBody(KoXmlWriter *bodyWriter) const

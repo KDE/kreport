@@ -72,7 +72,7 @@ KoReportDesignerItemText* KoReportDesignerItemText::clone()
     QDomDocument d;
     QDomElement e = d.createElement(QLatin1String("clone"));
     QDomNode n;
-    buildXML(d, e);
+    buildXML(&d, &e);
     n = e.firstChild();
     return new KoReportDesignerItemText(n, designer(), 0);
 }
@@ -123,10 +123,10 @@ void KoReportDesignerItemText::paint(QPainter* painter, const QStyleOptionGraphi
     painter->setPen(p);
 }
 
-void KoReportDesignerItemText::buildXML(QDomDocument & doc, QDomElement & parent)
+void KoReportDesignerItemText::buildXML(QDomDocument *doc, QDomElement *parent)
 {
     //kreportpluginDebug();
-    QDomElement entity = doc.createElement(QLatin1String("report:") + typeName());
+    QDomElement entity = doc->createElement(QLatin1String("report:") + typeName());
 
     // properties
     addPropertyAsAttribute(&entity, m_name);
@@ -138,15 +138,15 @@ void KoReportDesignerItemText::buildXML(QDomDocument & doc, QDomElement & parent
     addPropertyAsAttribute(&entity, m_itemValue);
 
     // bounding rect
-    buildXMLRect(doc, entity, &m_pos, &m_size);
+    buildXMLRect(doc, &entity, &m_pos, &m_size);
 
     //text style info
-    buildXMLTextStyle(doc, entity, textStyle());
+    buildXMLTextStyle(doc, &entity, textStyle());
 
     //Line Style
-    buildXMLLineStyle(doc, entity, lineStyle());
+    buildXMLLineStyle(doc, &entity, lineStyle());
 
-    parent.appendChild(entity);
+    parent->appendChild(entity);
 }
 
 void KoReportDesignerItemText::mousePressEvent(QGraphicsSceneMouseEvent * event)

@@ -60,14 +60,14 @@ public:
      * @param ruler the ruler to draw on.
      * @param painter the painter we can paint with.
      */
-    virtual QRectF drawBackground(const KReportRulerPrivate *ruler, QPainter &painter) = 0;
+    virtual QRectF drawBackground(const KReportRulerPrivate *ruler, QPainter *painter) = 0;
 
     /**
      * Draw the indicators for text-tabs.
      * @param ruler the ruler to draw on.
      * @param painter the painter we can paint with.
      */
-    virtual void drawTabs(const KReportRulerPrivate *ruler, QPainter &painter) = 0;
+    virtual void drawTabs(const KReportRulerPrivate *ruler, QPainter *painter) = 0;
 
     /**
      * Draw the indicators for the measurements which typically are drawn every [unit].
@@ -75,14 +75,14 @@ public:
      * @param painter the painter we can paint with.
      * @param rectangle
      */
-    virtual void drawMeasurements(const KReportRulerPrivate *ruler, QPainter &painter, const QRectF &rectangle) = 0;
+    virtual void drawMeasurements(const KReportRulerPrivate *ruler, QPainter *painter, const QRectF &rectangle) = 0;
 
     /**
      * Draw the indicators for the indents of a text paragraph
      * @param ruler the ruler to draw on.
      * @param painter the painter we can paint with.
      */
-    virtual void drawIndents(const KReportRulerPrivate *ruler, QPainter &painter) = 0;
+    virtual void drawIndents(const KReportRulerPrivate *ruler, QPainter *painter) = 0;
 
     /**
      *returns the size suggestion for a ruler with this strategy.
@@ -95,10 +95,10 @@ class HorizontalPaintingStrategy : public PaintingStrategy
 public:
     HorizontalPaintingStrategy() : lengthInPixel(1) {}
 
-    virtual QRectF drawBackground(const KReportRulerPrivate *ruler, QPainter &painter);
-    virtual void drawTabs(const KReportRulerPrivate *ruler, QPainter &painter);
-    virtual void drawMeasurements(const KReportRulerPrivate *ruler, QPainter &painter, const QRectF &rectangle);
-    virtual void drawIndents(const KReportRulerPrivate *ruler, QPainter &painter);
+    virtual QRectF drawBackground(const KReportRulerPrivate *ruler, QPainter *painter);
+    virtual void drawTabs(const KReportRulerPrivate *ruler, QPainter *painter);
+    virtual void drawMeasurements(const KReportRulerPrivate *ruler, QPainter *painter, const QRectF &rectangle);
+    virtual void drawIndents(const KReportRulerPrivate *ruler, QPainter *painter);
     virtual QSize sizeHint();
 
 private:
@@ -110,10 +110,10 @@ class VerticalPaintingStrategy : public PaintingStrategy
 public:
     VerticalPaintingStrategy() : lengthInPixel(1) {}
 
-    virtual QRectF drawBackground(const KReportRulerPrivate *ruler, QPainter &painter);
-    virtual void drawTabs(const KReportRulerPrivate *, QPainter &) {}
-    virtual void drawMeasurements(const KReportRulerPrivate *ruler, QPainter &painter, const QRectF &rectangle);
-    virtual void drawIndents(const KReportRulerPrivate *, QPainter &) { }
+    virtual QRectF drawBackground(const KReportRulerPrivate *ruler, QPainter *painter);
+    virtual void drawTabs(const KReportRulerPrivate *, QPainter *) {}
+    virtual void drawMeasurements(const KReportRulerPrivate *ruler, QPainter *painter, const QRectF &rectangle);
+    virtual void drawIndents(const KReportRulerPrivate *, QPainter *) { }
     virtual QSize sizeHint();
 
 private:
@@ -125,10 +125,10 @@ class HorizontalDistancesPaintingStrategy : public HorizontalPaintingStrategy
 public:
     HorizontalDistancesPaintingStrategy() {}
 
-    virtual void drawMeasurements(const KReportRulerPrivate *ruler, QPainter &painter, const QRectF &rectangle);
+    virtual void drawMeasurements(const KReportRulerPrivate *ruler, QPainter *painter, const QRectF &rectangle);
 
 private:
-    void drawDistanceLine(const KReportRulerPrivate *d, QPainter &painter, const qreal start, const qreal end);
+    void drawDistanceLine(const KReportRulerPrivate *d, QPainter *painter, qreal start, qreal end);
 };
 
 /**
@@ -433,7 +433,7 @@ public:
 
     qreal numberStepForUnit() const;
     /// @return The rounding of value to the nearest multiple of stepValue
-    qreal doSnapping(const qreal value) const;
+    qreal doSnapping(qreal value) const;
     Selection selectionAtPosition(const QPoint & pos, int *selectOffset = 0);
     int hotSpotIndex(const QPoint & pos);
     qreal effectiveActiveRangeStart() const;

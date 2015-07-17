@@ -38,20 +38,20 @@ void KoReportItemBase::addDefaultProperties()
     m_set->addProperty(m_size.property());
 }
 
-bool KoReportItemBase::parseReportTextStyleData(const QDomElement & elemSource, KRTextStyleData & ts)
+bool KoReportItemBase::parseReportTextStyleData(const QDomElement & elemSource, KRTextStyleData *ts)
 {
     return KRUtils::parseReportTextStyleData(elemSource, ts);
 }
 
-bool KoReportItemBase::parseReportLineStyleData(const QDomElement & elemSource, KRLineStyleData & ls)
+bool KoReportItemBase::parseReportLineStyleData(const QDomElement & elemSource, KRLineStyleData *ls)
 {
     return KRUtils::parseReportLineStyleData(elemSource, ls);
 }
 
 
-bool KoReportItemBase::parseReportRect(const QDomElement & elemSource, KRPos *pos, KRSize *siz)
+bool KoReportItemBase::parseReportRect(const QDomElement & elemSource, KRPos *pos, KRSize *size)
 {
-    return KRUtils::parseReportRect(elemSource, pos, siz);
+    return KRUtils::parseReportRect(elemSource, pos, size);
 }
 
 void KoReportItemBase::setUnit(const KReportUnit& u)

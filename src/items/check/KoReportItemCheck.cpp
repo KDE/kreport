@@ -54,7 +54,7 @@ KoReportItemCheck::KoReportItemCheck(const QDomNode &element)
 
         if (n == QLatin1String("report:line-style")) {
             KRLineStyleData ls;
-            if (parseReportLineStyleData(node.toElement(), ls)) {
+            if (parseReportLineStyleData(node.toElement(), &ls)) {
                 m_lineWeight->setValue(ls.weight);
                 m_lineColor->setValue(ls.lineColor);
                 m_lineStyle->setValue(QPen(ls.style));

@@ -64,7 +64,7 @@ KoReportDesignerItemCheck* KoReportDesignerItemCheck::clone()
     QDomDocument d;
     QDomElement e = d.createElement(QLatin1String("clone"));
     QDomNode n;
-    buildXML(d, e);
+    buildXML(&d, &e);
     n = e.firstChild();
     return new KoReportDesignerItemCheck(n, designer(), 0);
 }
@@ -139,10 +139,10 @@ void KoReportDesignerItemCheck::paint(QPainter* painter, const QStyleOptionGraph
     drawHandles(painter);
 }
 
-void KoReportDesignerItemCheck::buildXML(QDomDocument & doc, QDomElement & parent)
+void KoReportDesignerItemCheck::buildXML(QDomDocument *doc, QDomElement *parent)
 {
     //kreportpluginDebug();
-    QDomElement entity = doc.createElement(QLatin1String("report:") + typeName());
+    QDomElement entity = doc->createElement(QLatin1String("report:") + typeName());
 
     //properties
     addPropertyAsAttribute(&entity, m_name);
@@ -152,12 +152,12 @@ void KoReportDesignerItemCheck::buildXML(QDomDocument & doc, QDomElement & paren
     addPropertyAsAttribute(&entity, m_staticValue);
 
     // bounding rect
-    buildXMLRect(doc, entity, &m_pos, &m_size);
+    buildXMLRect(doc, &entity, &m_pos, &m_size);
 
     //Line Style
-    buildXMLLineStyle(doc, entity, lineStyle());
+    buildXMLLineStyle(doc, &entity, lineStyle());
 
-    parent.appendChild(entity);
+    parent->appendChild(entity);
 }
 
 void KoReportDesignerItemCheck::slotPropertyChanged(KPropertySet &s, KProperty &p)

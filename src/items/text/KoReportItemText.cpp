@@ -55,7 +55,7 @@ KoReportItemText::KoReportItemText(const QDomNode & element) : m_bottomPadding(0
 
         if (n == QLatin1String("report:text-style")) {
             KRTextStyleData ts;
-            if (parseReportTextStyleData(node.toElement(), ts)) {
+            if (parseReportTextStyleData(node.toElement(), &ts)) {
                 m_backgroundColor->setValue(ts.backgroundColor);
                 m_foregroundColor->setValue(ts.foregroundColor);
                 m_backgroundOpacity->setValue(ts.backgroundOpacity);
@@ -64,7 +64,7 @@ KoReportItemText::KoReportItemText(const QDomNode & element) : m_bottomPadding(0
             }
         } else if (n == QLatin1String("report:line-style")) {
             KRLineStyleData ls;
-            if (parseReportLineStyleData(node.toElement(), ls)) {
+            if (parseReportLineStyleData(node.toElement(), &ls)) {
                 m_lineWeight->setValue(ls.weight);
                 m_lineColor->setValue(ls.lineColor);
                 m_lineStyle->setValue(QPen(ls.style));

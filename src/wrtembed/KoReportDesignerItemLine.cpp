@@ -81,7 +81,7 @@ KoReportDesignerItemLine* KoReportDesignerItemLine::clone()
     QDomDocument d;
     QDomElement e = d.createElement(QLatin1String("clone"));
     QDomNode n;
-    buildXML(d, e);
+    buildXML(&d, &e);
     n = e.firstChild();
     return new KoReportDesignerItemLine(n, designer(), 0);
 }
@@ -109,21 +109,21 @@ void KoReportDesignerItemLine::paint(QPainter* painter, const QStyleOptionGraphi
     }
 }
 
-void KoReportDesignerItemLine::buildXML(QDomDocument & doc, QDomElement & parent)
+void KoReportDesignerItemLine::buildXML(QDomDocument *doc, QDomElement *parent)
 {
-    QDomElement entity = doc.createElement(QLatin1String("report:") + typeName());
+    QDomElement entity = doc->createElement(QLatin1String("report:") + typeName());
 
     // properties
     addPropertyAsAttribute(&entity, m_name);
     entity.setAttribute(QLatin1String("report:z-index"), zValue());
-    KRUtils::setAttribute(entity, QLatin1String("svg:x1"), m_start.toPoint().x());
-    KRUtils::setAttribute(entity, QLatin1String("svg:y1"), m_start.toPoint().y());
-    KRUtils::setAttribute(entity, QLatin1String("svg:x2"), m_end.toPoint().x());
-    KRUtils::setAttribute(entity, QLatin1String("svg:y2"), m_end.toPoint().y());
+    KRUtils::setAttribute(&entity, QLatin1String("svg:x1"), m_start.toPoint().x());
+    KRUtils::setAttribute(&entity, QLatin1String("svg:y1"), m_start.toPoint().y());
+    KRUtils::setAttribute(&entity, QLatin1String("svg:x2"), m_end.toPoint().x());
+    KRUtils::setAttribute(&entity, QLatin1String("svg:y2"), m_end.toPoint().y());
 
-    buildXMLLineStyle(doc, entity, lineStyle());
+    buildXMLLineStyle(doc, &entity, lineStyle());
 
-    parent.appendChild(entity);
+    parent->appendChild(entity);
 }
 
 void KoReportDesignerItemLine::slotPropertyChanged(KPropertySet &s, KProperty &p)

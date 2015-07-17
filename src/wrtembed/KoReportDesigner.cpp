@@ -335,7 +335,7 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
                             }
                         } else if (sn == QLatin1String("report:detail")) {
                             ReportSectionDetail * rsd = new ReportSectionDetail(this);
-                            rsd->initFromXML(sec);
+                            rsd->initFromXML(&sec);
                             setDetail(rsd);
                         }
                     } else {
@@ -387,8 +387,8 @@ QDomElement KoReportDesigner::document() const
 
     if (d->pageSize->value().toString() == QLatin1String("Custom")) {
         pagestyle.appendChild(doc.createTextNode(QLatin1String("custom")));
-        KRUtils::setAttribute(pagestyle, QLatin1String("report:custom-page-width"), d->customWidth->value().toDouble());
-        KRUtils::setAttribute(pagestyle, QLatin1String("report:custom-page-height"), d->customHeight->value().toDouble());
+        KRUtils::setAttribute(&pagestyle, QLatin1String("report:custom-page-width"), d->customWidth->value().toDouble());
+        KRUtils::setAttribute(&pagestyle, QLatin1String("report:custom-page-height"), d->customHeight->value().toDouble());
 
     } else if (d->pageSize->value().toString() == QLatin1String("Label")) {
         pagestyle.appendChild(doc.createTextNode(QLatin1String("label")));
@@ -403,10 +403,10 @@ QDomElement KoReportDesigner::document() const
     KRUtils::addPropertyAsAttribute(&pagestyle, d->orientation);
 
     // -- margins: save as points, and not localized
-    KRUtils::setAttribute(pagestyle, QLatin1String("fo:margin-top"), d->topMargin->value().toDouble());
-    KRUtils::setAttribute(pagestyle, QLatin1String("fo:margin-bottom"), d->bottomMargin->value().toDouble());
-    KRUtils::setAttribute(pagestyle, QLatin1String("fo:margin-right"), d->rightMargin->value().toDouble());
-    KRUtils::setAttribute(pagestyle, QLatin1String("fo:margin-left"), d->leftMargin->value().toDouble());
+    KRUtils::setAttribute(&pagestyle, QLatin1String("fo:margin-top"), d->topMargin->value().toDouble());
+    KRUtils::setAttribute(&pagestyle, QLatin1String("fo:margin-bottom"), d->bottomMargin->value().toDouble());
+    KRUtils::setAttribute(&pagestyle, QLatin1String("fo:margin-right"), d->rightMargin->value().toDouble());
+    KRUtils::setAttribute(&pagestyle, QLatin1String("fo:margin-left"), d->leftMargin->value().toDouble());
 
     content.appendChild(pagestyle);
 
@@ -418,13 +418,13 @@ QDomElement KoReportDesigner::document() const
         if (sec) {
             domsection = doc.createElement(QLatin1String("report:section"));
             domsection.setAttribute(QLatin1String("report:section-type"), KRSectionData::sectionTypeString(KRSectionData::Section(i)));
-            sec->buildXML(doc, domsection);
+            sec->buildXML(&doc, &domsection);
             body.appendChild(domsection);
         }
     }
 
     QDomElement detail = doc.createElement(QLatin1String("report:detail"));
-    d->detail->buildXML(doc, detail);
+    d->detail->buildXML(&doc, &detail);
     body.appendChild(detail);
 
     content.appendChild(body);

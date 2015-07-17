@@ -44,7 +44,7 @@ class KoReportItemWeb : public KoReportASyncItemBase
     Q_OBJECT
 public:
     KoReportItemWeb();
-    explicit KoReportItemWeb(QDomNode &element);
+    explicit KoReportItemWeb(QDomNode *element);
     virtual ~KoReportItemWeb();
 
     virtual QString typeName() const;

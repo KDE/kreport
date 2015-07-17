@@ -53,7 +53,7 @@ KoReportDesignerItemMaps::KoReportDesignerItemMaps(KoReportDesigner * rw, QGraph
     m_name->setValue(m_reportDesigner->suggestEntityName(typeName()));
 }
 
-KoReportDesignerItemMaps::KoReportDesignerItemMaps(QDomNode & element, KoReportDesigner * rw, QGraphicsScene* scene)
+KoReportDesignerItemMaps::KoReportDesignerItemMaps(QDomNode *element, KoReportDesigner * rw, QGraphicsScene* scene)
         : KoReportItemMaps(element), KoReportDesignerItemRectBase(rw)
 {
     init(scene, rw);
@@ -65,7 +65,7 @@ KoReportDesignerItemMaps* KoReportDesignerItemMaps::clone()
     QDomDocument d;
     QDomElement e = d.createElement(QLatin1String("clone"));
     QDomNode n;
-    buildXML(d, e);
+    buildXML(&d, &e);
     n = e.firstChild();
     return new KoReportDesignerItemMaps(n, designer(), 0);
 }
@@ -95,9 +95,9 @@ void KoReportDesignerItemMaps::paint(QPainter* painter, const QStyleOptionGraphi
     painter->setPen(p);
 }
 
-void KoReportDesignerItemMaps::buildXML(QDomDocument & doc, QDomElement & parent)
+void KoReportDesignerItemMaps::buildXML(QDomDocument *doc, QDomElement *parent)
 {
-    QDomElement entity = doc.createElement(QLatin1String("report:") + typeName());
+    QDomElement entity = doc->createElement(QLatin1String("report:") + typeName());
 
     // properties
     addPropertyAsAttribute(&entity, m_name);
@@ -108,9 +108,9 @@ void KoReportDesignerItemMaps::buildXML(QDomDocument & doc, QDomElement & parent
     addPropertyAsAttribute(&entity, m_themeProperty);
     //addPropertyAsAttribute(&entity, m_resizeMode);
     entity.setAttribute(QLatin1String("report:z-index"), zValue());
-    buildXMLRect(doc, entity, &m_pos, &m_size);
+    buildXMLRect(doc, &entity, &m_pos, &m_size);
 
-    parent.appendChild(entity);
+    parent->appendChild(entity);
 }
 
 void KoReportDesignerItemMaps::slotPropertyChanged(KPropertySet &s, KProperty &p)

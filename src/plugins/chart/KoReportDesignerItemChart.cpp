@@ -52,7 +52,7 @@ KoReportDesignerItemChart::KoReportDesignerItemChart(KoReportDesigner * rd, QGra
     m_name->setValue(m_reportDesigner->suggestEntityName(typeName()));
 }
 
-KoReportDesignerItemChart::KoReportDesignerItemChart(QDomNode & element, KoReportDesigner * rd, QGraphicsScene* scene) :
+KoReportDesignerItemChart::KoReportDesignerItemChart(QDomNode *element, KoReportDesigner * rd, QGraphicsScene* scene) :
        KoReportItemChart(element),  KoReportDesignerItemRectBase(rd)
 {
     init(scene, rd);
@@ -104,14 +104,14 @@ KoReportDesignerItemChart* KoReportDesignerItemChart::clone()
     QDomDocument d;
     QDomElement e = d.createElement("clone");
     QDomNode n;
-    buildXML(d, e);
+    buildXML(&d, &e);
     n = e.firstChild();
     return new KoReportDesignerItemChart(n, designer(), 0);
 }
 
-void KoReportDesignerItemChart::buildXML(QDomDocument & doc, QDomElement & parent)
+void KoReportDesignerItemChart::buildXML(QDomDocument *doc, QDomElement *parent)
 {
-    QDomElement entity = doc.createElement(QLatin1String("report:") + typeName());
+    QDomElement entity = doc->createElement(QLatin1String("report:") + typeName());
 
     // properties
     addPropertyAsAttribute(&entity, m_name);
@@ -132,9 +132,9 @@ void KoReportDesignerItemChart::buildXML(QDomDocument & doc, QDomElement & paren
     entity.setAttribute("report:z-index", zValue());
 
     // bounding rect
-    buildXMLRect(doc, entity, &m_pos, &m_size);
+    buildXMLRect(doc, &entity, &m_pos, &m_size);
 
-    parent.appendChild(entity);
+    parent->appendChild(entity);
 }
 
 void KoReportDesignerItemChart::slotPropertyChanged(KPropertySet &s, KProperty &p)

@@ -36,7 +36,7 @@ public:
     //Used when loading from file
     KoReportDesignerItemField(const QDomNode & element, KoReportDesigner *, QGraphicsScene * scene);
     virtual ~KoReportDesignerItemField();
-    virtual void buildXML(QDomDocument & doc, QDomElement & parent);
+    virtual void buildXML(QDomDocument *doc, QDomElement *parent);
 
     virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget *widget = 0);
     virtual KoReportDesignerItemField* clone();

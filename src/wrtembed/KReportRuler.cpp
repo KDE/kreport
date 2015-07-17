@@ -109,12 +109,12 @@ void RulerTabChooser::paintEvent(QPaintEvent *)
     }
 }
 
-static int compareTabs(KReportRuler::Tab &tab1, KReportRuler::Tab &tab2)
+static int compareTabs(const KReportRuler::Tab &tab1, const KReportRuler::Tab &tab2)
 {
     return tab1.position < tab2.position;
 }
 
-QRectF HorizontalPaintingStrategy::drawBackground(const KReportRulerPrivate *d, QPainter &painter)
+QRectF HorizontalPaintingStrategy::drawBackground(const KReportRulerPrivate *d, QPainter *painter)
 {
     lengthInPixel = d->viewConverter->documentToViewX(d->rulerLength);
     QRectF rectangle;
@@ -131,38 +131,38 @@ QRectF HorizontalPaintingStrategy::drawBackground(const KReportRulerPrivate *d, 
           d->viewConverter->documentToViewX(d->effectiveActiveRangeEnd()) + d->offset));
     activeRangeRectangle.setHeight(rectangle.height() - 2);
 
-    painter.setPen(d->ruler->palette().color(QPalette::Mid));
-    painter.drawRect(rectangle);
+    painter->setPen(d->ruler->palette().color(QPalette::Mid));
+    painter->drawRect(rectangle);
 
     if(d->effectiveActiveRangeStart() != d->effectiveActiveRangeEnd())
-        painter.fillRect(activeRangeRectangle, d->ruler->palette().brush(QPalette::Base));
+        painter->fillRect(activeRangeRectangle, d->ruler->palette().brush(QPalette::Base));
 
     if(d->showSelectionBorders) {
         // Draw first selection border
         if(d->firstSelectionBorder > 0) {
             qreal border = d->viewConverter->documentToViewX(d->firstSelectionBorder) + d->offset;
-            painter.drawLine(QPointF(border, rectangle.y() + 1), QPointF(border, rectangle.bottom() - 1));
+            painter->drawLine(QPointF(border, rectangle.y() + 1), QPointF(border, rectangle.bottom() - 1));
         }
         // Draw second selection border
         if(d->secondSelectionBorder > 0) {
             qreal border = d->viewConverter->documentToViewX(d->secondSelectionBorder) + d->offset;
-            painter.drawLine(QPointF(border, rectangle.y() + 1), QPointF(border, rectangle.bottom() - 1));
+            painter->drawLine(QPointF(border, rectangle.y() + 1), QPointF(border, rectangle.bottom() - 1));
         }
     }
 
     return rectangle;
 }
 
-void HorizontalPaintingStrategy::drawTabs(const KReportRulerPrivate *d, QPainter &painter)
+void HorizontalPaintingStrategy::drawTabs(const KReportRulerPrivate *d, QPainter *painter)
 {
     if (! d->showTabs)
         return;
     QPolygonF polygon;
 
     const QColor tabColor = d->ruler->palette().color(QPalette::Text);
-    painter.setPen(tabColor);
-    painter.setBrush(tabColor);
-    painter.setRenderHint( QPainter::Antialiasing );
+    painter->setPen(tabColor);
+    painter->setBrush(tabColor);
+    painter->setRenderHint( QPainter::Antialiasing );
 
     qreal position = -10000;
 
@@ -183,27 +183,27 @@ void HorizontalPaintingStrategy::drawTabs(const KReportRulerPrivate *d, QPainter
             polygon << QPointF(x+0.5, d->ruler->height() - 6.5)
                 << QPointF(x+6.5, d->ruler->height() - 0.5)
                 << QPointF(x+0.5, d->ruler->height() - 0.5);
-            painter.drawPolygon(polygon);
+            painter->drawPolygon(polygon);
             break;
         case QTextOption::RightTab:
             polygon << QPointF(x+0.5, d->ruler->height() - 6.5)
                 << QPointF(x-5.5, d->ruler->height() - 0.5)
                 << QPointF(x+0.5, d->ruler->height() - 0.5);
-            painter.drawPolygon(polygon);
+            painter->drawPolygon(polygon);
             break;
         case QTextOption::CenterTab:
             polygon << QPointF(x+0.5, d->ruler->height() - 6.5)
                 << QPointF(x-5.5, d->ruler->height() - 0.5)
                 << QPointF(x+6.5, d->ruler->height() - 0.5);
-            painter.drawPolygon(polygon);
+            painter->drawPolygon(polygon);
             break;
         case QTextOption::DelimiterTab:
             polygon << QPointF(x-5.5, d->ruler->height() - 0.5)
                 << QPointF(x+6.5, d->ruler->height() - 0.5);
-            painter.drawPolyline(polygon);
+            painter->drawPolyline(polygon);
             polygon << QPointF(x+0.5, d->ruler->height() - 0.5)
                 << QPointF(x+0.5, d->ruler->height() - 6.5);
-            painter.drawPolyline(polygon);
+            painter->drawPolyline(polygon);
             break;
         default:
             break;
@@ -234,14 +234,14 @@ void HorizontalPaintingStrategy::drawTabs(const KReportRulerPrivate *d, QPainter
             polygon << QPointF(x+0.5, d->ruler->height() - 3.5)
                 << QPointF(x+4.5, d->ruler->height() - 0.5)
                 << QPointF(x+0.5, d->ruler->height() - 0.5);
-            painter.drawPolygon(polygon);
+            painter->drawPolygon(polygon);
 
             position += d->tabDistance;
         }
     }
 }
 
-void HorizontalPaintingStrategy::drawMeasurements(const KReportRulerPrivate *d, QPainter &painter, const QRectF &rectangle)
+void HorizontalPaintingStrategy::drawMeasurements(const KReportRulerPrivate *d, QPainter *painter, const QRectF &rectangle)
 {
     qreal numberStep = d->numberStepForUnit(); // number step in unit
 //    QRectF activeRangeRectangle;
@@ -250,7 +250,7 @@ void HorizontalPaintingStrategy::drawMeasurements(const KReportRulerPrivate *d, 
 
     const QFont font = QFontDatabase::systemFont(QFontDatabase::SmallestReadableFont);
     const QFontMetrics fontMetrics(font);
-    painter.setFont(font);
+    painter->setFont(font);
 
     if (numberStepPixel == 0 || numberStep == 0)
         return;
@@ -290,10 +290,10 @@ void HorizontalPaintingStrategy::drawMeasurements(const KReportRulerPrivate *d, 
     int pos = 0;
     const QPen numberPen(d->ruler->palette().color(QPalette::Text));
     const QPen markerPen(d->ruler->palette().color(QPalette::Inactive, QPalette::Text));
-    painter.setPen(markerPen);
+    painter->setPen(markerPen);
 
     if(d->offset > 0)
-        painter.translate(d->offset, 0);
+        painter->translate(d->offset, 0);
 
     const int len = qRound(rectangle.width()) + start;
     int nextStep = qRound(d->viewConverter->documentToViewX(
@@ -308,7 +308,7 @@ void HorizontalPaintingStrategy::drawMeasurements(const KReportRulerPrivate *d, 
 
         if(i == nextStep) {
             if(pos != 0)
-                painter.drawLine(QPointF(pos, rectangle.bottom()-1),
+                painter->drawLine(QPointF(pos, rectangle.bottom()-1),
                                  QPointF(pos, rectangle.bottom() - fullStepMarkerLength));
 
             int number = qRound(stepCount * numberStep);
@@ -318,11 +318,11 @@ void HorizontalPaintingStrategy::drawMeasurements(const KReportRulerPrivate *d, 
             if (d->rightToLeft) { // this is done in a hacky way with the fine tuning done above
                 numberText = QString::number(hackyLength - stepCount * numberStep);
             }
-            painter.setPen(numberPen);
-            painter.drawText(QPointF(x-fontMetrics.width(numberText)/2.0,
+            painter->setPen(numberPen);
+            painter->drawText(QPointF(x-fontMetrics.width(numberText)/2.0,
                                      rectangle.bottom() -fullStepMarkerLength -measurementTextAboveBelowMargin),
                              numberText);
-            painter.setPen(markerPen);
+            painter->setPen(markerPen);
 
             ++stepCount;
             nextStep = qRound(d->viewConverter->documentToViewX(
@@ -336,7 +336,7 @@ void HorizontalPaintingStrategy::drawMeasurements(const KReportRulerPrivate *d, 
         }
         else if(i == nextHalfStep) {
             if(pos != 0)
-                painter.drawLine(QPointF(pos, rectangle.bottom()-1),
+                painter->drawLine(QPointF(pos, rectangle.bottom()-1),
                                  QPointF(pos, rectangle.bottom() - halfStepMarkerLength));
 
             ++halfStepCount;
@@ -348,7 +348,7 @@ void HorizontalPaintingStrategy::drawMeasurements(const KReportRulerPrivate *d, 
         }
         else if(i == nextQuarterStep) {
             if(pos != 0)
-                painter.drawLine(QPointF(pos, rectangle.bottom()-1),
+                painter->drawLine(QPointF(pos, rectangle.bottom()-1),
                                  QPointF(pos, rectangle.bottom() - quarterStepMarkerLength));
 
             ++quarterStepCount;
@@ -363,20 +363,20 @@ void HorizontalPaintingStrategy::drawMeasurements(const KReportRulerPrivate *d, 
         const qreal top = rectangle.y() + 1;
         const qreal bottom = rectangle.bottom() -1;
         if (d->selected == KReportRulerPrivate::None && d->showMousePosition && mouseCoord > 0 && mouseCoord < rectangle.width() )
-            painter.drawLine(QPointF(mouseCoord, top), QPointF(mouseCoord, bottom));
+            painter->drawLine(QPointF(mouseCoord, top), QPointF(mouseCoord, bottom));
         foreach (const KReportRulerPrivate::HotSpotData & hp, d->hotspots) {
             const qreal x = d->viewConverter->documentToViewX(hp.position) + d->offset;
-            painter.drawLine(QPointF(x, top), QPointF(x, bottom));
+            painter->drawLine(QPointF(x, top), QPointF(x, bottom));
         }
     }
 }
 
-void HorizontalPaintingStrategy::drawIndents(const KReportRulerPrivate *d, QPainter &painter)
+void HorizontalPaintingStrategy::drawIndents(const KReportRulerPrivate *d, QPainter *painter)
 {
     QPolygonF polygon;
 
-    painter.setBrush(d->ruler->palette().brush(QPalette::Base));
-    painter.setRenderHint( QPainter::Antialiasing );
+    painter->setBrush(d->ruler->palette().brush(QPalette::Base));
+    painter->setRenderHint( QPainter::Antialiasing );
 
     qreal x;
     // Draw first line start indent
@@ -390,7 +390,7 @@ void HorizontalPaintingStrategy::drawIndents(const KReportRulerPrivate *d, QPain
         << QPointF(x+0.5, 8.5)
         << QPointF(x-5.5, 0.5)
         << QPointF(x+5.5, 0.5);
-    painter.drawPolygon(polygon);
+    painter->drawPolygon(polygon);
 
     // draw the hanging indent.
     if (d->rightToLeft)
@@ -405,7 +405,7 @@ void HorizontalPaintingStrategy::drawIndents(const KReportRulerPrivate *d, QPain
         << QPointF(x+0.5, bottom - 8.5)
         << QPointF(x-5.5, bottom - 0.5)
         << QPointF(x+5.5, bottom - 0.5);
-    painter.drawPolygon(polygon);
+    painter->drawPolygon(polygon);
 
     // Draw end-indent or paragraph indent if mode is rightToLeft
     qreal diff;
@@ -416,7 +416,7 @@ void HorizontalPaintingStrategy::drawIndents(const KReportRulerPrivate *d, QPain
         diff = d->viewConverter->documentToViewX(d->effectiveActiveRangeEnd() - d->endIndent)
                 + d->offset - x;
     polygon.translate(diff, 0);
-    painter.drawPolygon(polygon);
+    painter->drawPolygon(polygon);
 }
 
 QSize HorizontalPaintingStrategy::sizeHint()
@@ -429,7 +429,7 @@ QSize HorizontalPaintingStrategy::sizeHint()
     return QSize(0, minimum);
 }
 
-QRectF VerticalPaintingStrategy::drawBackground(const KReportRulerPrivate *d, QPainter &painter)
+QRectF VerticalPaintingStrategy::drawBackground(const KReportRulerPrivate *d, QPainter *painter)
 {
     lengthInPixel = d->viewConverter->documentToViewY(d->rulerLength);
     QRectF rectangle;
@@ -447,29 +447,29 @@ QRectF VerticalPaintingStrategy::drawBackground(const KReportRulerPrivate *d, QP
     activeRangeRectangle.setBottom(qMin(rectangle.bottom() - 1,
         d->viewConverter->documentToViewY(d->effectiveActiveRangeEnd()) + d->offset));
 
-    painter.setPen(d->ruler->palette().color(QPalette::Mid));
-    painter.drawRect(rectangle);
+    painter->setPen(d->ruler->palette().color(QPalette::Mid));
+    painter->drawRect(rectangle);
 
     if(d->effectiveActiveRangeStart() != d->effectiveActiveRangeEnd())
-        painter.fillRect(activeRangeRectangle, d->ruler->palette().brush(QPalette::Base));
+        painter->fillRect(activeRangeRectangle, d->ruler->palette().brush(QPalette::Base));
 
     if(d->showSelectionBorders) {
         // Draw first selection border
         if(d->firstSelectionBorder > 0) {
             qreal border = d->viewConverter->documentToViewY(d->firstSelectionBorder) + d->offset;
-            painter.drawLine(QPointF(rectangle.x() + 1, border), QPointF(rectangle.right() - 1, border));
+            painter->drawLine(QPointF(rectangle.x() + 1, border), QPointF(rectangle.right() - 1, border));
         }
         // Draw second selection border
         if(d->secondSelectionBorder > 0) {
             qreal border = d->viewConverter->documentToViewY(d->secondSelectionBorder) + d->offset;
-            painter.drawLine(QPointF(rectangle.x() + 1, border), QPointF(rectangle.right() - 1, border));
+            painter->drawLine(QPointF(rectangle.x() + 1, border), QPointF(rectangle.right() - 1, border));
         }
     }
 
     return rectangle;
 }
 
-void VerticalPaintingStrategy::drawMeasurements(const KReportRulerPrivate *d, QPainter &painter, const QRectF &rectangle)
+void VerticalPaintingStrategy::drawMeasurements(const KReportRulerPrivate *d, QPainter *painter, const QRectF &rectangle)
 {
     qreal numberStep = d->numberStepForUnit(); // number step in unit
     int numberStepPixel = qRound(d->viewConverter->documentToViewY( d->unit.fromUserValue(numberStep)));
@@ -478,7 +478,7 @@ void VerticalPaintingStrategy::drawMeasurements(const KReportRulerPrivate *d, QP
 
     const QFont font = QFontDatabase::systemFont(QFontDatabase::SmallestReadableFont);
     const QFontMetrics fontMetrics(font);
-    painter.setFont(font);
+    painter->setFont(font);
 
     // Calc the longest text length
     int textLength = 0;
@@ -507,10 +507,10 @@ void VerticalPaintingStrategy::drawMeasurements(const KReportRulerPrivate *d, QP
 
     const QPen numberPen(d->ruler->palette().color(QPalette::Text));
     const QPen markerPen(d->ruler->palette().color(QPalette::Inactive, QPalette::Text));
-    painter.setPen(markerPen);
+    painter->setPen(markerPen);
 
     if(d->offset > 0)
-        painter.translate(0, d->offset);
+        painter->translate(0, d->offset);
 
     const int len = qRound(rectangle.height()) + start;
     int nextStep = qRound(d->viewConverter->documentToViewY(
@@ -525,17 +525,17 @@ void VerticalPaintingStrategy::drawMeasurements(const KReportRulerPrivate *d, QP
         pos = i - start;
 
         if(i == nextStep) {
-            painter.save();
-            painter.translate(rectangle.right()-fullStepMarkerLength, pos);
+            painter->save();
+            painter->translate(rectangle.right()-fullStepMarkerLength, pos);
             if(pos != 0)
-                painter.drawLine(QPointF(0, 0), QPointF(fullStepMarkerLength-1, 0));
+                painter->drawLine(QPointF(0, 0), QPointF(fullStepMarkerLength-1, 0));
 
-            painter.rotate(-90);
+            painter->rotate(-90);
             int number = qRound(stepCount * numberStep);
             QString numberText = QString::number(number);
-            painter.setPen(numberPen);
-            painter.drawText(QPointF(-fontMetrics.width(numberText) / 2.0, -measurementTextAboveBelowMargin), numberText);
-            painter.restore();
+            painter->setPen(numberPen);
+            painter->drawText(QPointF(-fontMetrics.width(numberText) / 2.0, -measurementTextAboveBelowMargin), numberText);
+            painter->restore();
 
             ++stepCount;
             nextStep = qRound(d->viewConverter->documentToViewY(
@@ -548,7 +548,7 @@ void VerticalPaintingStrategy::drawMeasurements(const KReportRulerPrivate *d, QP
                 numberStep * 0.25 * quarterStepCount)));
         } else if(i == nextHalfStep) {
             if(pos != 0)
-                painter.drawLine(QPointF(rectangle.right() - halfStepMarkerLength, pos),
+                painter->drawLine(QPointF(rectangle.right() - halfStepMarkerLength, pos),
                                  QPointF(rectangle.right() - 1, pos));
 
             ++halfStepCount;
@@ -559,7 +559,7 @@ void VerticalPaintingStrategy::drawMeasurements(const KReportRulerPrivate *d, QP
                 numberStep * 0.25 * quarterStepCount)));
         } else if(i == nextQuarterStep) {
             if(pos != 0)
-                painter.drawLine(QPointF(rectangle.right() - quarterStepMarkerLength, pos),
+                painter->drawLine(QPointF(rectangle.right() - quarterStepMarkerLength, pos),
                                  QPointF(rectangle.right() - 1, pos));
 
             ++quarterStepCount;
@@ -574,10 +574,10 @@ void VerticalPaintingStrategy::drawMeasurements(const KReportRulerPrivate *d, QP
         const qreal left = rectangle.left() + 1;
         const qreal right = rectangle.right() -1;
         if (d->selected == KReportRulerPrivate::None && d->showMousePosition && mouseCoord > 0 && mouseCoord < rectangle.height() )
-            painter.drawLine(QPointF(left, mouseCoord), QPointF(right, mouseCoord));
+            painter->drawLine(QPointF(left, mouseCoord), QPointF(right, mouseCoord));
         foreach (const KReportRulerPrivate::HotSpotData & hp, d->hotspots) {
             const qreal y = d->viewConverter->documentToViewY(hp.position) + d->offset;
-            painter.drawLine(QPointF(left, y), QPointF(right, y));
+            painter->drawLine(QPointF(left, y), QPointF(right, y));
         }
     }
 }
@@ -593,17 +593,19 @@ QSize VerticalPaintingStrategy::sizeHint()
 }
 
 
-void HorizontalDistancesPaintingStrategy::drawDistanceLine(const KReportRulerPrivate *d, QPainter &painter, const qreal start, const qreal end)
+void HorizontalDistancesPaintingStrategy::drawDistanceLine(const KReportRulerPrivate *d,
+                                                           QPainter *painter, qreal start,
+                                                           qreal end)
 {
 
     // Don't draw too short lines
     if (qMax(start, end) - qMin(start, end) < 1)
         return;
 
-    painter.save();
-    painter.translate(d->offset, d->ruler->height() / 2);
-    painter.setPen(d->ruler->palette().color(QPalette::Text));
-    painter.setBrush(d->ruler->palette().color(QPalette::Text));
+    painter->save();
+    painter->translate(d->offset, d->ruler->height() / 2);
+    painter->setPen(d->ruler->palette().color(QPalette::Text));
+    painter->setBrush(d->ruler->palette().color(QPalette::Text));
 
     QLineF line(QPointF(d->viewConverter->documentToViewX(start), 0),
             QPointF(d->viewConverter->documentToViewX(end), 0));
@@ -616,31 +618,32 @@ void HorizontalDistancesPaintingStrategy::drawDistanceLine(const KReportRulerPri
             d->viewConverter->viewToDocumentX(line.length())) + QLatin1String("") + d->unit.symbol();
     QPointF labelPosition = QPointF(midPoint.x() - fontMetrics.width(label)/2,
             midPoint.y() + fontMetrics.ascent()/2);
-    painter.setFont(font);
-    painter.drawText(labelPosition, label);
+    painter->setFont(font);
+    painter->drawText(labelPosition, label);
 
     // Draw the arrow lines
     qreal arrowLength = (line.length() - fontMetrics.width(label)) / 2 - 2;
     arrowLength = qMax(qreal(0.0), arrowLength);
     QLineF startArrow(line.p1(), line.pointAt(arrowLength / line.length()));
     QLineF endArrow(line.p2(), line.pointAt(1.0 - arrowLength / line.length()));
-    painter.drawLine(startArrow);
-    painter.drawLine(endArrow);
+    painter->drawLine(startArrow);
+    painter->drawLine(endArrow);
 
     // Draw the arrow heads
     QPolygonF arrowHead;
     arrowHead << line.p1() << QPointF(line.x1()+3, line.y1()-3)
         << QPointF(line.x1()+3, line.y1()+3);
-    painter.drawPolygon(arrowHead);
+    painter->drawPolygon(arrowHead);
     arrowHead.clear();
     arrowHead << line.p2() << QPointF(line.x2()-3, line.y2()-3)
         << QPointF(line.x2()-3, line.y2()+3);
-    painter.drawPolygon(arrowHead);
+    painter->drawPolygon(arrowHead);
 
-    painter.restore();
+    painter->restore();
 }
 
-void HorizontalDistancesPaintingStrategy::drawMeasurements(const KReportRulerPrivate *d, QPainter &painter, const QRectF&)
+void HorizontalDistancesPaintingStrategy::drawMeasurements(const KReportRulerPrivate *d,
+                                                           QPainter *painter, const QRectF&)
 {
     QList<qreal> points;
     points << 0.0;
@@ -718,7 +721,7 @@ qreal KReportRulerPrivate::numberStepForUnit() const
     }
 }
 
-qreal KReportRulerPrivate::doSnapping(const qreal value) const
+qreal KReportRulerPrivate::doSnapping(qreal value) const
 {
     qreal numberStep = unit.fromUserValue(numberStepForUnit()/4.0);
     return numberStep * qRound(value / numberStep);
@@ -867,17 +870,17 @@ void KReportRuler::paintEvent(QPaintEvent* event)
     QPainter painter(this);
     painter.setClipRegion(event->region());
     painter.save();
-    QRectF rectangle = d->paintingStrategy->drawBackground(d, painter);
+    QRectF rectangle = d->paintingStrategy->drawBackground(d, &painter);
     painter.restore();
     painter.save();
-    d->paintingStrategy->drawMeasurements(d, painter, rectangle);
+    d->paintingStrategy->drawMeasurements(d, &painter, rectangle);
     painter.restore();
     if (d->showIndents) {
         painter.save();
-        d->paintingStrategy->drawIndents(d, painter);
+        d->paintingStrategy->drawIndents(d, &painter);
         painter.restore();
     }
-    d->paintingStrategy->drawTabs(d, painter);
+    d->paintingStrategy->drawTabs(d, &painter);
 }
 
 QSize KReportRuler::minimumSizeHint() const

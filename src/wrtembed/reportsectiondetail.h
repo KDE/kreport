@@ -50,8 +50,8 @@ public:
 
     ReportSection * detailSection() const;
 
-    void buildXML(QDomDocument & doc, QDomElement & section);
-    void initFromXML(QDomNode & node);
+    void buildXML(QDomDocument *doc, QDomElement *section);
+    void initFromXML(QDomNode *node);
 
     KoReportDesigner * reportDesigner() const;
 

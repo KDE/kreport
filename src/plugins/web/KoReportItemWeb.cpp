@@ -35,19 +35,19 @@ KoReportItemWeb::KoReportItemWeb(): m_rendering(false)
     init();
 }
 
-KoReportItemWeb::KoReportItemWeb(QDomNode &element)
+KoReportItemWeb::KoReportItemWeb(QDomNode *element)
 {
     createProperties();
     init();
-    QDomNodeList nl = element.childNodes();
+    QDomNodeList nl = element->childNodes();
     QString n;
     QDomNode node;
-    QDomElement e = element.toElement();
+    QDomElement e = element->toElement();
 
-    m_controlSource->setValue(element.toElement().attribute("report:item-data-source"));
-    m_name->setValue(element.toElement().attribute("report:name"));
-    Z = element.toElement().attribute("report:z-index").toDouble();
-    parseReportRect(element.toElement(), &m_pos, &m_size);
+    m_controlSource->setValue(element->toElement().attribute("report:item-data-source"));
+    m_name->setValue(element->toElement().attribute("report:name"));
+    Z = element->toElement().attribute("report:z-index").toDouble();
+    parseReportRect(element->toElement(), &m_pos, &m_size);
     for (int i = 0; i < nl.count(); i++) {
         node = nl.item(i);
         n = node.nodeName();

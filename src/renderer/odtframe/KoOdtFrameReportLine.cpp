@@ -44,10 +44,10 @@ OROLine *KoOdtFrameReportLine::line() const
     return static_cast<OROLine*>(m_primitive);
 }
 
-void KoOdtFrameReportLine::createStyle(KoGenStyles &coll)
+void KoOdtFrameReportLine::createStyle(KoGenStyles *coll)
 {
     KoGenStyle ps(KoGenStyle::ParagraphStyle, "paragraph");
-    m_paragraphStyleName = coll.insert(ps, "P");
+    m_paragraphStyleName = coll->insert(ps, "P");
 
     KoGenStyle gs(KoGenStyle::GraphicStyle, "graphic");
     gs.addProperty("draw:fill", "none");
@@ -69,8 +69,8 @@ void KoOdtFrameReportLine::createStyle(KoGenStyles &coll)
     pen.setStyle(line()->lineStyle().style);
     KoOdfGraphicStyles::saveOdfStrokeStyle(gs, coll, pen);
 
-    m_frameStyleName = coll.insert(gs, "F");
-    //kreportDebug()<<coll;
+    m_frameStyleName = coll->insert(gs, "F");
+    //kreportDebug()<<*coll;
 }
 
 void KoOdtFrameReportLine::createBody(KoXmlWriter *bodyWriter) const

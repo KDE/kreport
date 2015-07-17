@@ -46,9 +46,9 @@ public:
     QFile::FileError saveDocument(const QString&);
 
 private:
-    void createStyles(KoGenStyles &coll);
-    bool createContent(KoOdfWriteStore* odfStore, KoGenStyles &coll);
-    void createPages(KoXmlWriter* bodyWriter, KoGenStyles &coll);
+    void createStyles(KoGenStyles *coll);
+    bool createContent(KoOdfWriteStore* odfStore, KoGenStyles *coll);
+    void createPages(KoXmlWriter* bodyWriter, KoGenStyles *coll);
 
     KoXmlWriter* manifestWriter;
     ReportPageOptions m_pageOptions;

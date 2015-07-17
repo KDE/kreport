@@ -47,16 +47,16 @@ KoReportItemChart::KoReportItemChart()
     createProperties();
 }
 
-KoReportItemChart::KoReportItemChart(QDomNode & element)
+KoReportItemChart::KoReportItemChart(QDomNode *element)
 {
     m_reportData = 0;
     createProperties();
 
-    QDomNodeList nl = element.childNodes();
+    QDomNodeList nl = element->childNodes();
 
     QString n;
     QDomNode node;
-    QDomElement e = element.toElement();
+    QDomElement e = element->toElement();
     m_name->setValue(e.attribute("report:name"));
     m_dataSource->setValue(e.attribute("report:data-source"));
     Z = e.attribute("report:z-index").toDouble();

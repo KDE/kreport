@@ -64,7 +64,7 @@ public:
     ReportSection * groupHeader() const;
     ReportSection * groupFooter() const;
 
-    void buildXML(QDomDocument & doc, QDomElement & section) const;
+    void buildXML(QDomDocument *doc, QDomElement *section) const;
     void initFromXML( const QDomElement &element );
 
 private:

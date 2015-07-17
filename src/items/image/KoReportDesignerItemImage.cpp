@@ -69,7 +69,7 @@ KoReportDesignerItemImage* KoReportDesignerItemImage::clone()
     QDomDocument d;
     QDomElement e = d.createElement(QLatin1String("clone"));
     QDomNode n;
-    buildXML(d, e);
+    buildXML(&d, &e);
     n = e.firstChild();
     return new KoReportDesignerItemImage(n, designer(), 0);
 }
@@ -109,26 +109,26 @@ void KoReportDesignerItemImage::paint(QPainter* painter, const QStyleOptionGraph
     painter->setPen(p);
 }
 
-void KoReportDesignerItemImage::buildXML(QDomDocument & doc, QDomElement & parent)
+void KoReportDesignerItemImage::buildXML(QDomDocument *doc, QDomElement *parent)
 {
-    QDomElement entity = doc.createElement(QLatin1String("report:") + typeName());
+    QDomElement entity = doc->createElement(QLatin1String("report:") + typeName());
 
     // properties
     addPropertyAsAttribute(&entity, m_name);
     addPropertyAsAttribute(&entity, m_resizeMode);
     entity.setAttribute(QLatin1String("report:z-index"), zValue());
-    buildXMLRect(doc, entity, &m_pos, &m_size);
+    buildXMLRect(doc, &entity, &m_pos, &m_size);
 
 
     if (isInline()) {
-        QDomElement map = doc.createElement(QLatin1String("report:inline-image-data"));
-        map.appendChild(doc.createTextNode(QLatin1String(inlineImageData())));
+        QDomElement map = doc->createElement(QLatin1String("report:inline-image-data"));
+        map.appendChild(doc->createTextNode(QLatin1String(inlineImageData())));
         entity.appendChild(map);
     } else {
         addPropertyAsAttribute(&entity, m_controlSource);
     }
 
-    parent.appendChild(entity);
+    parent->appendChild(entity);
 }
 
 void KoReportDesignerItemImage::slotPropertyChanged(KPropertySet &s, KProperty &p)
