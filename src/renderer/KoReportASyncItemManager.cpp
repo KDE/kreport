@@ -40,8 +40,11 @@ void KoReportASyncItemManager::addItem(KoReportASyncItemBase* item, OROPage* pag
     rdata->section = section;
     rdata->offset = offset;
     rdata->data = data;
+#ifdef KREPORT_SCRIPTING
     rdata->script = script;
-
+#else
+    Q_UNUSED(script);
+#endif
     m_renderList.enqueue(rdata);
 
     //Just connect the first instance

@@ -76,12 +76,14 @@ public:
     QString query() const {
         return m_query;
     }
+#ifdef KREPORT_SCRIPTING
     QString script() const {
         return m_script;
     };
     QString interpreter() const {
         return m_interpreter;
     }
+#endif
 
     bool externalData() const {
         return m_externalData;
@@ -104,8 +106,10 @@ protected:
     QString m_title;
     QString m_name;
     QString m_query;
+#ifdef KREPORT_SCRIPTING
     QString m_script;
     QString m_interpreter;
+#endif
     bool m_externalData;
 
     ReportPageOptions page;

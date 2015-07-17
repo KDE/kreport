@@ -63,9 +63,11 @@ KoReportReportData::KoReportReportData(const QDomElement & elemSource, QObject *
         QDomElement elemThis = sections.item(nodeCounter).toElement();
         if (elemThis.tagName() == QLatin1String("report:title")) {
             m_title = elemThis.text();
+#ifdef KREPORT_SCRIPTING
         } else if (elemThis.tagName() == QLatin1String("report:script")) {
             m_script = elemThis.text();
             m_interpreter = elemThis.attribute(QLatin1String("report:script-interpreter"));
+#endif
         } else if (elemThis.tagName() == QLatin1String("report:page-style")) {
             QString pagetype = elemThis.firstChild().nodeValue();
 

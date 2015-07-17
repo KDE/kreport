@@ -34,8 +34,9 @@
 #include "common/KoReportPluginInterface.h"
 #include "common/KoReportPluginManager.h"
 
-
+#ifdef KREPORT_SCRIPTING
 #include <kross/core/manager.h>
+#endif
 
 #include <kstandardaction.h>
 #include <KStandardGuiItem>
@@ -179,7 +180,9 @@ public:
     KProperty *gridSnap;
     KProperty *labelType;
     KProperty *interpreter;
+#ifdef KREPORT_SCRIPTING
     KProperty *script;
+#endif
 
     //Actions
     QAction *editCutAction;
@@ -282,9 +285,11 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
             //kreportDebug() << n;
             if (n == QLatin1String("report:title")) {
                 setReportTitle(it.firstChild().nodeValue());
+#ifdef KREPORT_SCRIPTING
             } else if (n == QLatin1String("report:script")) {
                 d->interpreter->setValue(it.toElement().attribute(QLatin1String("report:script-interpreter")));
                 d->script->setValue(it.firstChild().nodeValue());
+#endif
             } else if (n == QLatin1String("report:grid")) {
                 d->showGrid->setValue(it.toElement().attribute(QLatin1String("report:grid-visible"), QString::number(1)).toInt() != 0);
                 d->gridSnap->setValue(it.toElement().attribute(QLatin1String("report:grid-snap"), QString::number(1)).toInt() != 0);
@@ -363,9 +368,11 @@ QDomElement KoReportDesigner::document() const
     //title
     content.appendChild(propertyToElement(&doc, d->title));
 
+#ifdef KREPORT_SCRIPTING
     QDomElement scr = propertyToElement(&doc, d->script);
     KRUtils::addPropertyAsAttribute(&scr, d->interpreter);
     content.appendChild(scr);
+#endif
 
     QDomElement grd = doc.createElement(QLatin1String("report:grid"));
     KRUtils::addPropertyAsAttribute(&grd, d->showGrid);
@@ -735,11 +742,6 @@ void KoReportDesigner::createProperties()
     d->topMargin->setOption("unit", QLatin1String("cm"));
     d->bottomMargin->setOption("unit", QLatin1String("cm"));
 
-    keys = Kross::Manager::self().interpreters();
-    d->interpreter = new KProperty("script-interpreter", keys, keys, keys.value(0), tr("Script Interpreter"));
-
-    d->script = new KProperty("script", keys, keys, QString(), tr("Object Script"));
-
     d->set->addProperty(d->title);
     d->set->addProperty(d->pageSize);
     d->set->addProperty(d->orientation);
@@ -752,7 +754,13 @@ void KoReportDesigner::createProperties()
     d->set->addProperty(d->topMargin);
     d->set->addProperty(d->bottomMargin);
     d->set->addProperty(d->interpreter);
+
+#ifdef KREPORT_SCRIPTING
+    keys = Kross::Manager::self().interpreters();
+    d->interpreter = new KProperty("script-interpreter", keys, keys, keys.value(0), tr("Script Interpreter"));
+    d->script = new KProperty("script", keys, keys, QString(), tr("Object Script"));
     d->set->addProperty(d->script);
+#endif
 
 //    KProperty* _customHeight;
 //    KProperty* _customWidth;
@@ -780,13 +788,13 @@ void KoReportDesigner::slotPropertyChanged(KPropertySet &s, KProperty &p)
 
 void KoReportDesigner::slotPageButton_Pressed()
 {
+#ifdef KREPORT_SCRIPTING
     if (d->kordata) {
         QStringList sl = d->kordata->scriptList(d->interpreter->value().toString());
-
         d->script->setListData(sl, sl);
-
     }
     changeSet(d->set);
+#endif
 }
 
 QSize KoReportDesigner::sizeHint() const
