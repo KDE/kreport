@@ -179,8 +179,8 @@ public:
     KProperty *gridDivisions;
     KProperty *gridSnap;
     KProperty *labelType;
-    KProperty *interpreter;
 #ifdef KREPORT_SCRIPTING
+    KProperty *interpreter;
     KProperty *script;
 #endif
 
@@ -753,11 +753,11 @@ void KoReportDesigner::createProperties()
     d->set->addProperty(d->rightMargin);
     d->set->addProperty(d->topMargin);
     d->set->addProperty(d->bottomMargin);
-    d->set->addProperty(d->interpreter);
 
 #ifdef KREPORT_SCRIPTING
     keys = Kross::Manager::self().interpreters();
     d->interpreter = new KProperty("script-interpreter", keys, keys, keys.value(0), tr("Script Interpreter"));
+    d->set->addProperty(d->interpreter);
     d->script = new KProperty("script", keys, keys, QString(), tr("Object Script"));
     d->set->addProperty(d->script);
 #endif
