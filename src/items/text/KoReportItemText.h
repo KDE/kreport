@@ -35,6 +35,7 @@ class Text;
 */
 class KoReportItemText : public KoReportItemBase
 {
+Q_OBJECT
 public:
     KoReportItemText();
     explicit KoReportItemText(const QDomNode & element);

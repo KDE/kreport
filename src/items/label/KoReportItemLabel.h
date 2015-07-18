@@ -35,6 +35,7 @@ class Label;
 */
 class KoReportItemLabel : public KoReportItemBase
 {
+Q_OBJECT
 public:
     KoReportItemLabel();
     explicit KoReportItemLabel(const QDomNode & element);

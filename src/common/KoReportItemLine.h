@@ -33,6 +33,7 @@ class Line;
 */
 class KREPORT_EXPORT  KoReportItemLine : public KoReportItemBase
 {
+Q_OBJECT
 public:
     KoReportItemLine();
     explicit KoReportItemLine(const QDomNode & element);

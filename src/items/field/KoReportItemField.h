@@ -32,6 +32,7 @@ class Field;
 
 class KoReportItemField : public KoReportItemBase
 {
+Q_OBJECT
 public:
     KoReportItemField();
     explicit KoReportItemField(const QDomNode & element);

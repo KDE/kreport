@@ -33,6 +33,7 @@ class Barcode;
 */
 class KoReportItemBarcode : public KoReportItemBase
 {
+Q_OBJECT
 public:
     KoReportItemBarcode();
     explicit KoReportItemBarcode(const QDomNode &element);

@@ -31,6 +31,7 @@ class Check;
 
 class KoReportItemCheck : public KoReportItemBase
 {
+Q_OBJECT
 public:
     KoReportItemCheck();
     explicit KoReportItemCheck(const QDomNode &element);
