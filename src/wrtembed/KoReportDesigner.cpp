@@ -38,7 +38,7 @@
 #include <kross/core/manager.h>
 #endif
 
-#include <KStandardAction>
+#include <KStandardShortcut>
 #include <KStandardGuiItem>
 #include <QLayout>
 #include <QDomDocument>
@@ -1357,26 +1357,38 @@ QList< QAction* > KoReportDesigner::designerActions()
 
 void KoReportDesigner::createActions()
 {
-    d->editCutAction = KStandardAction::cut(this);
+    d->editCutAction = new QAction(QIcon::fromTheme(QLatin1String("edit-cut")), tr("Cu&t"), this);
+    d->editCutAction->setObjectName(QLatin1String("edit_cut"));
+    d->editCutAction->setToolTip(tr("Cut selection to clipboard"));
+    d->editCutAction->setShortcuts(KStandardShortcut::cut());
     d->editCutAction->setProperty("iconOnly", true);
-    d->editCopyAction = KStandardAction::copy(this);
+
+    d->editCopyAction = new QAction(QIcon::fromTheme(QLatin1String("edit-copy")), tr("&Copy"), this);
+    d->editCopyAction->setObjectName(QLatin1String("edit_copy"));
+    d->editCopyAction->setToolTip(tr("Copy selection to clipboard"));
+    d->editCopyAction->setShortcuts(KStandardShortcut::copy());
     d->editCopyAction->setProperty("iconOnly", true);
-    d->editPasteAction = KStandardAction::paste(this);
+
+    d->editPasteAction = new QAction(QIcon::fromTheme(QLatin1String("edit-paste")), tr("&Paste"), this);
+    d->editPasteAction->setObjectName(QLatin1String("edit_paste"));
+    d->editPasteAction->setToolTip(tr("Paste clipboard content"));
+    d->editPasteAction->setShortcuts(KStandardShortcut::paste());
     d->editPasteAction->setProperty("iconOnly", true);
+
     const KGuiItem del = KStandardGuiItem::del();
     d->editDeleteAction = new QAction(del.icon(), del.text(), this);
-    d->editDeleteAction->setObjectName(QLatin1String("editdelete"));
+    d->editDeleteAction->setObjectName(QLatin1String("edit_delete"));
     d->editDeleteAction->setToolTip(del.toolTip());
     d->editDeleteAction->setWhatsThis(del.whatsThis());
     d->editDeleteAction->setProperty("iconOnly", true);
 
     d->sectionEdit = new QAction(tr("Edit Sections"), this);
-    d->sectionEdit->setObjectName(QLatin1String("sectionedit"));
+    d->sectionEdit->setObjectName(QLatin1String("section_edit"));
 
     d->itemRaiseAction = new QAction(QIcon::fromTheme(QLatin1String("arrow-up")), tr("Raise"), this);
-    d->itemRaiseAction->setObjectName(QLatin1String("itemraise"));
+    d->itemRaiseAction->setObjectName(QLatin1String("item_raise"));
     d->itemLowerAction = new QAction(QIcon::fromTheme(QLatin1String("arrow-down")), tr("Lower"), this);
-    d->itemLowerAction->setObjectName(QLatin1String("itemlower"));
+    d->itemLowerAction->setObjectName(QLatin1String("item_lower"));
 
     //Edit Actions
     connect(d->editCutAction, SIGNAL(triggered(bool)), this, SLOT(slotEditCut()));

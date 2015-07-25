@@ -155,7 +155,8 @@ target_link_libraries(KReport
         KProperty
     PRIVATE
         KF5::WidgetsAddons
-		${SCRIPTING_LIBS}
+        KF5::ConfigGui     # KStandardShortcut
+        ${SCRIPTING_LIBS}
         #KF5::KIOCore
         #KF5::KIOFileWidgets
         #KF5::KIOWidgets
