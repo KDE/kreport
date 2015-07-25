@@ -38,7 +38,7 @@
 #include <kross/core/manager.h>
 #endif
 
-#include <kstandardaction.h>
+#include <KStandardAction>
 #include <KStandardGuiItem>
 #include <QLayout>
 #include <QDomDocument>

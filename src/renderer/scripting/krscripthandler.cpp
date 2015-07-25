@@ -30,7 +30,8 @@
 #include "krdetailsectiondata.h"
 #include "renderobjects.h"
 
-#include <kmessagebox.h>
+#include <KMessageBox>
+
 //! @todo #include <kross/core/manager.h>
 
 #include "kreport_debug.h"

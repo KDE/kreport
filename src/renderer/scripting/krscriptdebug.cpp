@@ -17,7 +17,7 @@
 
 #include "krscriptdebug.h"
 
-#include <kmessagebox.h>
+#include <KMessageBox>
 
 #include "kreport_debug.h"
 
