@@ -2,6 +2,11 @@
 option(KREPORT_SCRIPTING "Enable scripting" OFF)
 configure_file(config-kreport.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kreport.h)
 
+if(KREPORT_SCRIPTING)
+    find_package(KF5 5.7.0 REQUIRED Kross)
+    set(SCRIPTING_LIBS KF5::KrossCore KF5::KrossUi)
+endif()
+
 add_subdirectory(plugins)
 #add_subdirectory(pics)
 
@@ -150,8 +155,7 @@ target_link_libraries(KReport
         KProperty
     PRIVATE
         KF5::WidgetsAddons
-        KF5::KrossCore
-        KF5::KrossUi
+		${SCRIPTING_LIBS}
         #KF5::KIOCore
         #KF5::KIOFileWidgets
         #KF5::KIOWidgets
