@@ -19,6 +19,7 @@
 #include "KoReportPreRenderer.h"
 #include "KoReportPreRenderer_p.h"
 #include "KoReportASyncItemManager.h"
+#include "KReportOneRecordData.h"
 
 #include "common/renderobjects.h"
 #include "common/KoReportData.h"
@@ -48,7 +49,7 @@ KoReportPreRendererPrivate::KoReportPreRendererPrivate()
     m_leftMargin = m_rightMargin = 0.0;
     m_pageCounter = 0;
     m_maxHeight = m_maxWidth = 0.0;
-    m_kodata = 0;
+    m_kodata = new KReportOneRecordData();
     asyncManager = new KoReportASyncItemManager(this);
 
     connect(asyncManager, SIGNAL(finished()), this, SLOT(asyncItemsFinished()));
@@ -57,7 +58,7 @@ KoReportPreRendererPrivate::KoReportPreRendererPrivate()
 KoReportPreRendererPrivate::~KoReportPreRendererPrivate()
 {
     delete m_reportData;
-    m_reportData = 0;
+    delete m_kodata;
 
     m_postProcText.clear();
 }
@@ -616,7 +617,10 @@ ORODocument* KoReportPreRenderer::generate()
 
 void KoReportPreRenderer::setSourceData(KoReportData *data)
 {
-    if (d && data) {
+    if (data) {
+        if (d->m_kodata) {
+            delete d->m_kodata;
+        }
         d->m_kodata = data;
     }
 }

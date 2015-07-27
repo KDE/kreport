@@ -30,6 +30,7 @@ class QGraphicsScene;
 class QDomNode;
 class KReportPluginMetaData;
 class KoReportDesigner;
+class KoReportItemBase;
 
 //! Implementation of report plugin's entry point
 #define KREPORT_PLUGIN_FACTORY(class_name, name) \

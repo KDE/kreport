@@ -45,6 +45,7 @@ set(kreport_LIB_SRCS
     renderer/KoReportRendererBase.cpp
     renderer/KoReportPage.cpp
     renderer/KReportView.cpp
+    renderer/KReportOneRecordData.cpp
 
     wrtembed/detailgroupsectiondialog.cpp
     wrtembed/KoReportDesignerItemBase.cpp
