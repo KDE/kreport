@@ -759,7 +759,6 @@ void KoReportDesigner::createProperties()
     d->interpreter = new KProperty("script-interpreter", keys, keys, keys.value(0), tr("Script Interpreter"));
     d->set->addProperty(d->interpreter);
     d->script = new KProperty("script", keys, keys, QString(), tr("Object Script"));
-    d->set->addProperty(d->interpreter);
     d->set->addProperty(d->script);
 #endif
 
