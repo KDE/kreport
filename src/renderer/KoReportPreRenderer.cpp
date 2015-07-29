@@ -503,10 +503,9 @@ ORODocument* KoReportPreRenderer::generate()
             if (i.key() == QLatin1String("field"))
                 QObject::connect(d->m_scriptHandler, SIGNAL(groupChanged(QString)), i.value(), SLOT(setWhere(QString)));
         }
+        //execute the script
+        d->m_scriptHandler->trigger();
     }
-
-    //execute the script
-    d->m_scriptHandler->trigger();
 #endif
 
     d->createNewPage();

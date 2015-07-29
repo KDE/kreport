@@ -30,24 +30,24 @@
 #include "krdetailsectiondata.h"
 #include "renderobjects.h"
 
-#include <KMessageBox>
-
-//! @todo #include <kross/core/manager.h>
+#include <QtGui/QMessageBox>
 
 #include "kreport_debug.h"
+#include <QtQml/QJSEngine>
+#include <QtQml/QJSValue>
 
 KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData* d)
 {
     m_reportData = d;
     m_koreportData = kodata;
 
-    m_action = 0;
+    m_engine = 0;
     m_constants = 0;
     m_debug = 0;
     m_draw = 0;
 
-    // Create the Kross::Action instance .
-    m_action = new Kross::Action(this, QLatin1String("ReportScript"));
+    // Create the script engine instance .
+    m_engine = new QJSEngine(this);
 
     /*! @todo The kjsembed interpreter is buggy, and crashes on expressions
      involving QVariant, which happens often.  So, as a workaground
@@ -55,26 +55,29 @@ KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData*
      we do this instead of hiding the javascript interpreter incase a
      user has a database using that interpreter. */
 
-    QStringList interpreters = Kross::Manager::self().interpreters();
-    QString interpreter = d->interpreter();
+    //!TODO QStringList interpreters = Kross::Manager::self().interpreters();
+    //!TODO QString interpreter = d->interpreter();
 
-    if (interpreter.toLower() == QLatin1String("javascript") && interpreters.contains(QLatin1String("qtscript"))) {
-        interpreter = QLatin1String("qtscript");
-    }
+    //!TODO if (interpreter.toLower() == QLatin1String("javascript") && interpreters.contains(QLatin1String("qtscript"))) {
+    //!TODO     interpreter = QLatin1String("qtscript");
+    //!TODO }
 
-    m_action->setInterpreter(interpreter);
+    //!TODO m_engine->setInterpreter(interpreter);
 
     //Add constants object
     m_constants = new KRScriptConstants();
-    m_action->addObject(m_constants, QLatin1String("constants"));
+    m_constants->setObjectName(QLatin1String("constants"));
+    m_engine->newQObject(m_constants/*, QLatin1String("constants")*/);
 
     //A simple debug function to allow printing from functions
     m_debug = new KRScriptDebug();
-    m_action->addObject(m_debug, QLatin1String("debug"));
+    m_debug->setObjectName(QLatin1String("debug"));
+    m_engine->newQObject(m_debug/*, QLatin1String("debug")*/);
 
     //A simple drawing object
     m_draw = new KRScriptDraw();
-    m_action->addObject(m_draw, "draw");
+    m_draw->setObjectName(QLatin1String("draw"));
+    m_engine->newQObject(m_draw/*, "draw"*/);
 
     //Add a general report object
     m_report = new Scripting::Report(m_reportData);
@@ -89,22 +92,22 @@ KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData*
         //kreportDebug() << "Added" << m_sectionMap[sec]->objectName() << "to report" << m_reportData->name();
     }
 
-    m_action->addObject(m_report, m_reportData->name());
+    m_report->setObjectName(m_reportData->name());
+    m_engine->newQObject(m_report/*, m_reportData->name()*/);
     //kreportDebug() << "Report name is" << m_reportData->name();
-
-    QString code = m_koreportData->scriptCode(m_reportData->script(), m_reportData->interpreter());
-    m_action->setCode(code.toUtf8());
 }
 
 void KRScriptHandler::trigger()
 {
-    //kreportDebug() << m_action->code();
-    m_action->trigger();
-    if (m_action->hadError()) {
-        KMessageBox::error(0, m_action->errorMessage());
-    } else {
-        kreportDebug() << "Function Names:" << m_action->functionNames();
-    }
+    //kreportDebug() << m_engine->code();
+    QString code = m_koreportData->scriptCode(m_reportData->script(), QLatin1String(""));
+    m_scriptValue = m_engine->evaluate(code);
+
+    if (m_scriptValue.isError()) {
+        QMessageBox::warning(0, tr("Script Error"), m_scriptValue.toString());
+    }/*TODO else {
+        kreportDebug() << "Function Names:" << m_engine->functionNames();
+    }*/
     m_report->eventOnOpen();
 }
 
@@ -114,7 +117,7 @@ KRScriptHandler::~KRScriptHandler()
     delete m_constants;
     delete m_debug;
     delete m_draw;
-    delete m_action;
+    delete m_engine;
 }
 
 void KRScriptHandler::newPage()
@@ -152,9 +155,9 @@ void KRScriptHandler::slotEnteredSection(KRSectionData *section, OROPage* cp, QP
 
 QVariant KRScriptHandler::evaluate(const QString &code)
 {
-    if (!m_action->hadError()) {
-        QVariant result = m_action->evaluate(code.toUtf8());
-        return QString::fromUtf8(result.toByteArray());
+    if (!m_scriptValue.isError()) {
+        QJSValue result = m_engine->evaluate(code);
+        return result.toVariant();
     } else {
         return QVariant();
     }
@@ -162,8 +165,8 @@ QVariant KRScriptHandler::evaluate(const QString &code)
 
 void KRScriptHandler::displayErrors()
 {
-    if (m_action->hadError()) {
-        KMessageBox::error(0, m_action->errorMessage());
+    if (m_scriptValue.isError()) {
+        QMessageBox::warning(0, tr("Script Error"), m_scriptValue.toString());
     }
 }
 
@@ -172,7 +175,7 @@ QString KRScriptHandler::where()
     QString w;
     QMap<QString, QVariant>::const_iterator i = m_groups.constBegin();
     while (i != m_groups.constEnd()) {
-        w += QLatin1Char('(') + i.key() + QLatin1String(" = '") + i.value().toString() + QLatin1Char("') AND ");
+        w += QLatin1Char('(') + i.key() + QLatin1String(" = '") + i.value().toString() + QLatin1String("') AND ");
         ++i;
     }
     w.chop(4);
@@ -183,7 +186,9 @@ QString KRScriptHandler::where()
 void KRScriptHandler::registerScriptObject(QObject* obj, const QString& name)
 {
     //kreportDebug();
-    if (m_action)
-        m_action->addObject(obj, name);
+    if (m_engine) {
+        obj->setObjectName(name);
+        m_engine->newQObject(obj);
+    }
 }
 

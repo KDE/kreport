@@ -16,7 +16,7 @@
  */
 
 #include "KoReportData.h"
-
+#include <QDebug>
 #include <QVariant>
 
 KoReportData::~KoReportData()
@@ -72,6 +72,7 @@ QStringList KoReportData::dataSources() const
 
 QStringList KoReportData::dataSourceNames() const
 {
+    qDebug() << "Returning data sources";
     return dataSources();
 }
 

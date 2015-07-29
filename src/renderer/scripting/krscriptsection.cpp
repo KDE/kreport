@@ -21,8 +21,8 @@
 #include "KoReportPluginManager.h"
 #include "KoReportPluginInterface.h"
 #include "KoReportItemLine.h"
-
 #include "kreport_debug.h"
+#include "krsectiondata.h"
 
 namespace Scripting
 {

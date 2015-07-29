@@ -180,7 +180,7 @@ public:
     KProperty *gridSnap;
     KProperty *labelType;
 #ifdef KREPORT_SCRIPTING
-    KProperty *interpreter;
+//!TODO    KProperty *interpreter;
     KProperty *script;
 #endif
 
@@ -287,7 +287,7 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
                 setReportTitle(it.firstChild().nodeValue());
 #ifdef KREPORT_SCRIPTING
             } else if (n == QLatin1String("report:script")) {
-                d->interpreter->setValue(it.toElement().attribute(QLatin1String("report:script-interpreter")));
+//!TODO                d->interpreter->setValue(it.toElement().attribute(QLatin1String("report:script-interpreter")));
                 d->script->setValue(it.firstChild().nodeValue());
 #endif
             } else if (n == QLatin1String("report:grid")) {
@@ -370,8 +370,8 @@ QDomElement KoReportDesigner::document() const
 
 #ifdef KREPORT_SCRIPTING
     QDomElement scr = propertyToElement(&doc, d->script);
-    KRUtils::addPropertyAsAttribute(&scr, d->interpreter);
-    content.appendChild(scr);
+//!TODO    KRUtils::addPropertyAsAttribute(&scr, d->interpreter);
+//    content.appendChild(scr);
 #endif
 
     QDomElement grd = doc.createElement(QLatin1String("report:grid"));
@@ -755,11 +755,11 @@ void KoReportDesigner::createProperties()
     d->set->addProperty(d->bottomMargin);
 
 #ifdef KREPORT_SCRIPTING
-    keys = Kross::Manager::self().interpreters();
-    d->interpreter = new KProperty("script-interpreter", keys, keys, keys.value(0), tr("Script Interpreter"));
-    d->set->addProperty(d->interpreter);
+//!TODO    keys = Kross::Manager::self().interpreters();
+//    d->interpreter = new KProperty("script-interpreter", keys, keys, keys.value(0), tr("Script Interpreter"));
+//    d->set->addProperty(d->interpreter);
     d->script = new KProperty("script", keys, keys, QString(), tr("Object Script"));
-    d->set->addProperty(d->interpreter);
+//    d->set->addProperty(d->interpreter);
     d->set->addProperty(d->script);
 #endif
 
@@ -791,7 +791,7 @@ void KoReportDesigner::slotPageButton_Pressed()
 {
 #ifdef KREPORT_SCRIPTING
     if (d->kordata) {
-        QStringList sl = d->kordata->scriptList(d->interpreter->value().toString());
+        QStringList sl = d->kordata->scriptList(QLatin1String(""));
         d->script->setListData(sl, sl);
     }
     changeSet(d->set);

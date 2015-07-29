@@ -23,6 +23,7 @@
 #include "krscriptline.h"
 #include "krscriptsection.h"
 #include "KoReportItemLine.h"
+#include "kreport_debug.h"
 
 namespace Scripting
 {

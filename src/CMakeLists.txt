@@ -3,8 +3,7 @@ option(KREPORT_SCRIPTING "Enable scripting" OFF)
 configure_file(config-kreport.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kreport.h)
 
 if(KREPORT_SCRIPTING)
-    find_package(KF5 5.7.0 REQUIRED Kross)
-    set(SCRIPTING_LIBS KF5::KrossCore KF5::KrossUi)
+    set(SCRIPTING_LIBS Qt5Qml)
 endif()
 
 add_subdirectory(plugins)
@@ -266,6 +265,7 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
     HEADER_NAMES
         krscripthandler
         krscriptdraw
+        krscriptconstants
 )
 
 ecm_generate_headers(kreport_FORWARDING_HEADERS
