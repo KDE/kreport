@@ -288,7 +288,7 @@ def try_read_member_docs(comment):
             result += line
     return None
 
-""" makes setter out of name or returns forceSetter is specified """
+""" makes setter out of name or returns forceSetter if specified """
 def makeSetter(name, forceSetter):
     if forceSetter:
         return forceSetter
@@ -306,11 +306,17 @@ def update_data_accesors():
         getter = member['getter']
         if not getter:
             getter = member['name']
-        val = """
-    %s %s() const {
+        invokable = 'Q_INVOKABLE ' if member['invokable'] else ''
+        if member['custom_getter']:
+            val = """
+    %s%s %s() const;
+""" % (invokable, member['type'], getter)
+        else:
+            val = """
+    %s%s %s() const {
         return d->%s;
     }
-""" % (member['type'], getter, member['name'])
+""" % (invokable, member['type'], getter, member['name'])
         if member['access'] == 'public':
             data_accesors += val
         else: # protected
@@ -327,19 +333,18 @@ def update_data_accesors():
         if arg_type.lower() != arg_type and not member['simple_type']:
             arg_type = 'const %s&' % arg_type
         setter = makeSetter(member['name'], member['setter'])
-        default_setter = ''
-        if member['default_setter']:
-            default_setter = ' = ' + member['default_setter']
+        default_setter = (' = ' + member['default_setter']) if member['default_setter'] else ''
+        invokable = 'Q_INVOKABLE ' if member['invokable'] else ''
         if member['custom_setter']:
             val = """
-    void %s(%s %s%s);
-""" % (setter, arg_type, member['name'], default_setter)
+    %svoid %s(%s %s%s);
+""" % (invokable, setter, arg_type, member['name'], default_setter)
         else:
             val = """
-    void %s(%s %s%s) {
+    %svoid %s(%s %s%s) {
         d->%s = %s;
     }
-""" % (setter, arg_type, member['name'], default_setter, member['name'], member['name'])
+""" % (invokable, setter, arg_type, member['name'], default_setter, member['name'], member['name'])
         if member['access'] == 'public':
             data_accesors += val
         else: # protected
@@ -598,7 +603,15 @@ def process():
             if lst[-1].endswith(';'):
                 lst[-1] = lst[-1][:-1]
             #print lst
-            # syntax: data_member <TYPE> <NAME> [default=<DEFAULT_VAL>] [default_setter=<DEFAULT_SETTER_VAL>]
+            # syntax: data_member TYPE NAME [default=DEFAULT_VALUE]
+            #                               [no_getter] [getter=CUSTOM_GETTER_NAME]
+            #                               [custom]
+            #                               [custom_getter]
+            #                               [default_setter=DEFAULT_SETTER'S_PARAM]
+            #                               [no_setter] [setter=CUSTOM_SETTER_NAME]
+            #                               [custom_setter]
+            #                               [mutable] [simple_type]
+            #                               [invokable]
             # output: getter, setter methods, data memeber
             if lst[0] == 'data_method':
                 #if member.has_key('docs'):
@@ -620,9 +633,12 @@ def process():
             member['getter'] = param(lst, 'getter')
             member['no_setter'] = param_exists(lst, 'no_setter')
             member['setter'] = param(lst, 'setter')
-            member['custom_setter'] = param_exists(lst, 'custom_setter')
+            member['custom'] = param_exists(lst, 'custom')
+            member['custom_getter'] = param_exists(lst, 'custom_getter') or member['custom']
+            member['custom_setter'] = param_exists(lst, 'custom_setter') or member['custom']
             member['mutable'] = param_exists(lst, 'mutable')
             member['simple_type'] = param_exists(lst, 'simple_type')
+            member['invokable'] = param_exists(lst, 'invokable')
             #print member
             if not data_class_ctor_changed:
                 data_class_ctor = """    //! Internal data class used to implement implicitly shared class %s.\n    //! Provides thread-safe reference counting.
@@ -666,7 +682,8 @@ def process():
                 setter = makeSetter(member['name'], member['setter'])
                 data_class_members += "%s::%s()" % (shared_class_name, setter)
             data_class_members += "\n"
-            data_class_members += "        %s%s %s;\n" % (('mutable ' if member['mutable'] else ''), member['type'], member['name'])
+            mutable = 'mutable ' if member['mutable'] else ''
+            data_class_members += "        %s%s %s;\n" % (mutable, member['type'], member['name'])
             if shared_class_options['with_from_to_map']:
                 toMap_impl += '    map[QLatin1String(\"%s\")] = %s;\n' % (member['name'], generate_toString_conversion(member['name'], member['type']))
                 fromMap_impl += '    %s\n' % generate_fromString_conversion(member['name'], member['type'])
