@@ -21,7 +21,6 @@
 
 #include "kreport_export.h"
 
-#include <QString>
 #include <QCoreApplication>
 
 class QPageSize;
@@ -89,7 +88,8 @@ public:
         - pageSize: by default equal to default page size of the default printer
                      (QPrinterInfo::defaultPrinter().defaultPageSize()).
                      If there is no default printer, A4 size is used.
-                        Passing invalid page size restores defaults explained in documentation of QPageLayout defaultPageLayout().
+                     Passing invalid page size restores defaults explained in
+                     documentation of QPageLayout defaultPageLayout().
                      @todo For KDE Plasma use information from the Locale by using
                            readConfigNumEntry("PageSize", QPrinter::A4, m_pageSize, QPrinter::PageSize)
                            from KLocalePrivate::initFormat() (klocale_kde.cpp)

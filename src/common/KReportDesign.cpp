@@ -19,7 +19,6 @@
 
 #include "KReportDesign.h"
 #include "KReportDesign_p.h"
-#include "KReportSection.h"
 #include "KReportUnit.h"
 #include "krutils.h"
 
