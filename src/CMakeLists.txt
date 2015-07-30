@@ -134,6 +134,11 @@ kdb_create_shared_data_classes(
     common/KReportSection.shared.h
 )
 
+kdb_remove_extensions(
+    kreport_GENERATED_SHARED_DATA_CLASS_BASENAMES
+    ${kreport_GENERATED_SHARED_DATA_CLASS_HEADERS}
+)
+
 generate_export_header(KReport)
 
 #qt5_use_modules(KReport Widgets Xml PrintSupport)
@@ -295,9 +300,18 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
         KoReportDesigner
 )
 
+ecm_generate_headers(kreport_FORWARDING_HEADERS_FROM_BUILDDIR
+    REQUIRED_HEADERS kreport_HEADERS_FROM_BUILDDIR
+    ORIGINAL CAMELCASE
+    SOURCE_DIR ${PROJECT_BINARY_DIR}/src
+    HEADER_NAMES
+        ${kreport_GENERATED_SHARED_DATA_CLASS_BASENAMES}
+)
+
 install(
     FILES
         ${kreport_HEADERS}
+        ${kreport_HEADERS_FROM_BUILDDIR}
     DESTINATION ${INCLUDE_INSTALL_DIR}/KReport/kreport
     COMPONENT Devel
 )
@@ -305,6 +319,7 @@ install(
 install(
     FILES
         ${kreport_FORWARDING_HEADERS}
+        ${kreport_FORWARDING_HEADERS_FROM_BUILDDIR}
         ${PROJECT_BINARY_DIR}/src/kreport_export.h
         ${PROJECT_BINARY_DIR}/src/config-kreport.h
     DESTINATION ${INCLUDE_INSTALL_DIR}/KReport

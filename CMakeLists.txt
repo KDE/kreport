@@ -5,7 +5,6 @@ project(KReport)
 find_package(ECM 1.8.0 REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/modules ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
 
-include(ECMGenerateHeaders)
 include(ECMGeneratePriFile)
 include(ECMPackageConfigHelpers)
 include(ECMPoQmTools)
@@ -20,6 +19,7 @@ include(KDECMakeSettings)
 include(FeatureSummary)
 include(GenerateExportHeader)
 
+include(KDbGenerateHeaders) # from KDb, adds support for generated headers to ECMGenerateHeaders
 include(KDbCreateSharedDataClasses) # from KDb
 
 set(KREPORT_VERSION "2.96.0") # Update this
