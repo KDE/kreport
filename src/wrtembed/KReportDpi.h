@@ -35,7 +35,7 @@ namespace KReportDpi
     KREPORT_EXPORT int dpiY();
 
     /// @internal, for KoApplication
-    KREPORT_EXPORT void setDPI(int x, int y);
+    KREPORT_EXPORT void setDpi(int x, int y);
 }
 
 #endif // KREPORT_DPI_h

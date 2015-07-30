@@ -3,7 +3,7 @@ project(KReport)
 
 # ECM setup
 find_package(ECM 1.8.0 REQUIRED NO_MODULE)
-set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
+set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/modules ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
 
 include(ECMGenerateHeaders)
 include(ECMGeneratePriFile)
@@ -20,10 +20,12 @@ include(KDECMakeSettings)
 include(FeatureSummary)
 include(GenerateExportHeader)
 
+include(KDbCreateSharedDataClasses) # from KDb
+
 set(KREPORT_VERSION "2.96.0") # Update this
 
 # Dependencies
-set(REQUIRED_QT_VERSION "5.2.0")
+set(REQUIRED_QT_VERSION "5.3.0")
 
 # Required components to build this framework
 # TODO move Widgets/KF5WidgetsAddons-dependent part to a libKReportDesigner
