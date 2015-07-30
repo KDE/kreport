@@ -391,7 +391,7 @@ bool KReportDesign::Private::processDocument(const QDomDocument &doc,
                                              KReportDesignReadingStatus *status)
 {
     const QDomElement rootEl = doc.documentElement();
-    const QLatin1String rootElName("kexireport");
+    const QLatin1String rootElName("kexireport"); // legacy name kept for compatibility
     if (doc.doctype().name() != rootElName) {
         setStatus(status, QString::fromLatin1("Document type should be \"%1\"").arg(rootElName), rootEl);
         return false;
