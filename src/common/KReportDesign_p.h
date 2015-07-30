@@ -23,13 +23,12 @@
 #include "KReportDesign.h"
 #include "KReportSection.h"
 #include "KReportUnit.h"
-#include "krutils.h"
 
-#include <QDebug>
-#include <QDomDocument>
-#include <QDomElement>
-#include <QPrinter>
-#include <QPrinterInfo>
+#include <QPageSize>
+#include <QPageLayout>
+
+class QDomDocument;
+class QDomElement;
 
 static const bool DEFAULT_SHOW_GRID = true;
 static const bool DEFAULT_SNAP_TO_GRID = true;

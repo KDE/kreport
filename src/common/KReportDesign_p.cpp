@@ -23,8 +23,7 @@
 #include <QDebug>
 #include <QDomDocument>
 #include <QDomElement>
-#include <QPrinter>
-#include <QPrinterInfo>
+#include <QSizeF>
 
 KReportDesign::Private::Private()
  : showGrid(DEFAULT_SHOW_GRID)
@@ -95,7 +94,8 @@ KReportDesignGlobal* KReportDesignGlobal::self()
     return s_global;
 }
 
-static void setStatus(KReportDesignReadingStatus *status, const QString& details, const QDomNode &node)
+static void setStatus(KReportDesignReadingStatus *status, const QString& details,
+                      const QDomNode &node)
 {
     if (status) {
         status->errorDetails = details;
@@ -104,16 +104,19 @@ static void setStatus(KReportDesignReadingStatus *status, const QString& details
     }
 }
 
-static bool checkElement(const QDomNode &node, const QDomElement &parent, KReportDesignReadingStatus *status)
+static bool checkElement(const QDomNode &node, const QDomElement &parent,
+                         KReportDesignReadingStatus *status)
 {
     if (node.isElement()) {
         return true;
     }
-    setStatus(status, QString::fromLatin1("Element expected inside of <%1>").arg(parent.tagName()), node);
+    setStatus(status, QString::fromLatin1("Element expected inside of <%1>")
+              .arg(parent.tagName()), node);
     return false;
 }
 
-inline static QString attr(const QDomElement &el, const char *attrName, QString defaultValue = QString())
+inline static QString attr(const QDomElement &el, const char *attrName,
+                           QString defaultValue = QString())
 {
     const QString val = el.attribute(QLatin1String(attrName));
     return val.isEmpty() ? defaultValue : val;
@@ -142,13 +145,15 @@ inline static qreal attr(const QDomElement &el, const char *attrName, qreal defa
     return KReportUnit::parseValue(val, defaultValue);
 }
 
-bool KReportDesign::Private::processSectionElement(const QDomElement &el, KReportDesignReadingStatus *status)
+bool KReportDesign::Private::processSectionElement(const QDomElement &el,
+                                                   KReportDesignReadingStatus *status)
 {
     const QString sectionTypeName = attr(el, "report:section-type", QString());
     KReportSection::Type sectionType = s_global->sectionType(sectionTypeName);
     if (sectionType == KReportSection::InvalidType) {
-        setStatus(status, QString::fromLatin1("Invalid value of report:section-type=\"%1\" in element <%2>")
-              .arg(sectionTypeName).arg(el.tagName()), el);
+        setStatus(status,
+            QString::fromLatin1("Invalid value of report:section-type=\"%1\" in element <%2>")
+                                .arg(sectionTypeName).arg(el.tagName()), el);
         return false;
     }
     KReportSection *section = new KReportSection;
@@ -169,7 +174,8 @@ bool KReportDesign::Private::processSectionElement(const QDomElement &el, KRepor
     return true;
 }
 
-bool KReportDesign::Private::processSectionElementChild(const QDomElement &el, KReportDesignReadingStatus *status)
+bool KReportDesign::Private::processSectionElementChild(const QDomElement &el,
+                                                        KReportDesignReadingStatus *status)
 {
     const QByteArray name = el.tagName().toLatin1();
     const char* elNamespace = "report:";
@@ -203,14 +209,16 @@ bool KReportDesign::Private::processSectionElementChild(const QDomElement &el, K
     return true;
 }
 
-bool KReportDesign::Private::processGroupElement(const QDomElement &el, KReportDesignReadingStatus *status)
+bool KReportDesign::Private::processGroupElement(const QDomElement &el,
+                                                 KReportDesignReadingStatus *status)
 {
     return true;
 }
 
 //! The report:detail element contains a single report:section child of type 'detail'
 //! and 0 or more report:group children.
-bool KReportDesign::Private::processDetailElement(const QDomElement &el, KReportDesignReadingStatus *status)
+bool KReportDesign::Private::processDetailElement(const QDomElement &el,
+                                                  KReportDesignReadingStatus *status)
 {
     QDomElement sectionEl;
     for (QDomNode node = el.firstChild(); !node.isNull(); node = node.nextSibling()) {
@@ -256,7 +264,8 @@ bool KReportDesign::Private::processDetailElement(const QDomElement &el, KReport
        <report:body>
     <pre>
 */
-bool KReportDesign::Private::processBodyElementChild(const QDomElement &el, KReportDesignReadingStatus *status)
+bool KReportDesign::Private::processBodyElementChild(const QDomElement &el,
+                                                     KReportDesignReadingStatus *status)
 {
     const QByteArray name = el.tagName().toLatin1();
     //kreportDebug() << name;
@@ -285,7 +294,8 @@ bool KReportDesign::Private::processBodyElementChild(const QDomElement &el, KRep
 
 /* NOTE: don't translate these extremely detailed messages. */
 //! @todo Load page options
-bool KReportDesign::Private::processContentElementChild(const QDomElement &el, KReportDesignReadingStatus *status)
+bool KReportDesign::Private::processContentElementChild(const QDomElement &el,
+                                                        KReportDesignReadingStatus *status)
 {
     const QByteArray name = el.tagName().toLatin1();
     QPageLayout defaultPageLayout = KReportDesign::defaultPageLayout();
@@ -316,7 +326,9 @@ bool KReportDesign::Private::processContentElementChild(const QDomElement &el, K
     else if (name == "report:page-style") { // see https://git.reviewboard.kde.org/r/115314
         const QByteArray pagetype = el.text().toLatin1();
         if (pagetype == "predefined") {
-            pageLayout.setPageSize(KRUtils::pageSize(attr(el, "report:page-size", QPageSize(DEFAULT_PAGE_SIZE).key())));
+            pageLayout.setPageSize(
+                        KRUtils::pageSize(attr(el, "report:page-size",
+                                               QPageSize(DEFAULT_PAGE_SIZE).key())));
         } else if (pagetype.isEmpty() || pagetype == "custom") {
             QSizeF size(attr(el, "fo:page-width", -1.0), attr(el, "fo:page-height", -1.0));
             if (size.isValid()) {
@@ -375,7 +387,8 @@ QDomElement KReportDesign::Private::requiredChildElement(const QDomElement &pare
 }
 
 /* NOTE: don't translate these extremely detailed messages. */
-bool KReportDesign::Private::processDocument(const QDomDocument &doc, KReportDesignReadingStatus *status)
+bool KReportDesign::Private::processDocument(const QDomDocument &doc,
+                                             KReportDesignReadingStatus *status)
 {
     const QDomElement rootEl = doc.documentElement();
     const QLatin1String rootElName("kexireport");
@@ -391,7 +404,10 @@ bool KReportDesign::Private::processDocument(const QDomDocument &doc, KReportDes
     if (status->isError()) {
         return false;
     }
-    //! @todo check namespaces as in: <report:content xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:report="http://kexi-project.org/report/2.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0">
+    //! @todo check namespaces as in:
+    //! <report:content xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0"
+    //!     xmlns:report="http://kexi-project.org/report/2.0"
+    //!     xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0">
 
 //    deleteDetail();
 
