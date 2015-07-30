@@ -71,32 +71,26 @@ public:
     data_member KReportSection::Type type default=KReportSection::InvalidType simple_type;
 
     /*!
+    @getter
+    @return section height measured in points
+    It is equal to KReportSection::defaultHeight() unless setHeight()
+    is called with value > 0.
     @setter
     Sets section height measured in points.
     Set negative value to reset to the default height.
     */
-    data_member qreal height default=-1 no_getter;
+    data_member qreal height default=-1 custom_getter;
 
     /*!
+    @getter
+    @return section background color
+    It is equal to KReportSection::defaultBackgroundColor() unless setBackgroundColor()
+    is called with a valid color.
     @setter
     Sets section background color.
     Set invalid color (QColor()) to reset to the default background color.
     */
-    data_member QColor backgroundColor no_getter;
-
-    /*!
-    @return section height measured in points
-    It is equal to KReportSection::defaultHeight() unless setHeight()
-    is called with value > 0.
-    */
-    qreal height() const;
-
-    /*!
-    @return section background color
-    It is equal to KReportSection::defaultBackgroundColor() unless setBackgroundColor()
-    is called with a valid color.
-    */
-    QColor backgroundColor() const;
+    data_member QColor backgroundColor custom_getter;
 
     //! @return default height for report sections. The standard is 2cm (converted to points).
     static qreal defaultHeight();
