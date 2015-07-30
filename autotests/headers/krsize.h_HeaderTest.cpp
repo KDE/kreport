@@ -1,1 +1,1 @@
-#include <kreport/krsize.h>
+#include <krsize.h>

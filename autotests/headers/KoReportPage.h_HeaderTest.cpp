@@ -1,1 +1,1 @@
-#include <kreport/KoReportPage.h>
+#include <KoReportPage.h>

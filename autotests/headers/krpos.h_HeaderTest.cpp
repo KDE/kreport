@@ -1,1 +1,1 @@
-#include <kreport/krpos.h>
+#include <krpos.h>

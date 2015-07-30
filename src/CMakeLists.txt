@@ -240,7 +240,6 @@ install(FILES "${CMAKE_CURRENT_BINARY_DIR}/kreport_version.h"
 ecm_generate_headers(kreport_FORWARDING_HEADERS
     REQUIRED_HEADERS kreport_HEADERS
     ORIGINAL CAMELCASE
-    PREFIX kreport
     RELATIVE common
     HEADER_NAMES
         KReportPageFormat
@@ -264,7 +263,6 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
 ecm_generate_headers(kreport_FORWARDING_HEADERS
     REQUIRED_HEADERS kreport_HEADERS
     ORIGINAL CAMELCASE
-    PREFIX kreport
     RELATIVE renderer
     HEADER_NAMES
         KoReportPage
@@ -276,7 +274,6 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
 ecm_generate_headers(kreport_FORWARDING_HEADERS
     REQUIRED_HEADERS kreport_HEADERS
     ORIGINAL CAMELCASE
-    PREFIX kreport
     RELATIVE renderer/scripting
     HEADER_NAMES
         krscripthandler
@@ -287,7 +284,6 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
 ecm_generate_headers(kreport_FORWARDING_HEADERS
     REQUIRED_HEADERS kreport_HEADERS
     ORIGINAL CAMELCASE
-    PREFIX kreport
     RELATIVE wrtembed
     HEADER_NAMES
         KReportZoomMode
@@ -313,7 +309,7 @@ install(
     FILES
         ${kreport_HEADERS}
         ${kreport_HEADERS_FROM_BUILDDIR}
-    DESTINATION ${INCLUDE_INSTALL_DIR}/KReport/kreport
+    DESTINATION ${INCLUDE_INSTALL_DIR}/KReport
     COMPONENT Devel
 )
 

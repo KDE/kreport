@@ -1,1 +1,1 @@
-#include <kreport/krsectiondata.h>
+#include <krsectiondata.h>

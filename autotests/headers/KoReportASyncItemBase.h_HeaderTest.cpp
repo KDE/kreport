@@ -1,1 +1,1 @@
-#include <kreport/KoReportASyncItemBase.h>
+#include <KoReportASyncItemBase.h>

@@ -1,1 +1,1 @@
-#include <kreport/KoReportPluginInterface.h>
+#include <KoReportPluginInterface.h>

@@ -1,1 +1,1 @@
-#include <kreport/KoReportDesignerItemRectBase.h>
+#include <KoReportDesignerItemRectBase.h>

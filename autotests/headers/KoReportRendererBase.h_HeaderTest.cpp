@@ -1,1 +1,1 @@
-#include <kreport/KoReportRendererBase.h>
+#include <KoReportRendererBase.h>
