@@ -21,3 +21,4 @@ kreport_unit_tests(
 )
 
 add_subdirectory(headers)
+add_subdirectory(format)

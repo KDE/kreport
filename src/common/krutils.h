@@ -1,5 +1,5 @@
 /* This file is part of the KDE project
-   Copyright (C) 2010 Jarosław Staniek <staniek@kde.org>
+   Copyright (C) 2010-2015 Jarosław Staniek <staniek@kde.org>
 
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
@@ -20,12 +20,12 @@
 #ifndef KRUTILS_H
 #define KRUTILS_H
 
+#include <QPageSize>
+
 class QDomDocument;
 class QDomElement;
 class QFont;
 class QPointF;
-class QSizeF;
-class QString;
 
 class KProperty;
 
@@ -68,7 +68,13 @@ namespace KRUtils
     bool parseReportLineStyleData(const QDomElement & elemSource, KRLineStyleData *ls);
     //! Reads attributes from @p elemSource into rect @p pos, @p siz
     bool parseReportRect(const QDomElement & elemSource, KRPos *pos, KRSize *size);
+
+    //! @return page size ID for page key (the PPD standard mediaOption keyword, e.g. "A4")
+    //! @note It's an efficient workaround because QPageSize misses this function.
+    QPageSize::PageSizeId pageSizeId(const QString &key);
+
+    //! Like QPageSize::PageSizeId pageSizeId(const QString &key) but returns entire QPageSize object.
+    QPageSize pageSize(const QString &key);
 }
 
 #endif
-

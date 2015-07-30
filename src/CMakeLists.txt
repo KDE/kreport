@@ -32,6 +32,9 @@ set(kreport_LIB_SRCS
     common/KoReportData.cpp
     common/KReportPageFormat.cpp
     common/KReportUnit.cpp
+    common/KReportDesign.cpp
+    common/KReportDesign_p.cpp
+    common/KReportSection.cpp
 
     renderer/KoReportPrintRenderer.cpp
     renderer/KoReportPreRenderer.cpp
@@ -124,6 +127,12 @@ qt5_wrap_ui(kreport_LIB_SRCS
 ecm_create_qm_loader(kreport_LIB_SRCS kreport_qt)
 
 add_library(KReport SHARED ${kreport_LIB_SRCS})
+
+kdb_create_shared_data_classes(
+    kreport_GENERATED_SHARED_DATA_CLASS_HEADERS # output variable with list of headers
+    NO_PREFIX # subdirectory in which the headers should be generated
+    common/KReportSection.shared.h
+)
 
 generate_export_header(KReport)
 
@@ -237,6 +246,7 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
         KoReportPluginManager
         KoReportPluginInterface
         KReportUnit
+        KReportDesign
         krsize
         krpos
         krreportdata

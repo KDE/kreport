@@ -21,6 +21,7 @@ include(KDEInstallDirs)
 include(KDEFrameworkCompilerSettings)
 include(KDECMakeSettings)
 
+include(KDbCreateSharedDataClasses) # from KDb
 include(GenerateExportHeader)
 include(MacroLogFeature)
 include(KReportMacros)
@@ -28,7 +29,7 @@ include(KReportMacros)
 set(KREPORT_VERSION "2.96.0") # Update this
 
 # Dependencies
-set(REQUIRED_QT_VERSION "5.2.0")
+set(REQUIRED_QT_VERSION "5.3.0")
 
 # Required components to build this framework
 # TODO move Widgets/KF5WidgetsAddons-dependent part to a libKReportDesigner

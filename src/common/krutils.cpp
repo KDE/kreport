@@ -1,5 +1,5 @@
 /* This file is part of the KDE project
-   Copyright (C) 2010 Jarosław Staniek <staniek@kde.org>
+   Copyright (C) 2010-2015 Jarosław Staniek <staniek@kde.org>
 
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
@@ -30,7 +30,6 @@
 #include <QDomDocument>
 #include <QDomElement>
 #include <QVariant>
-#include <QString>
 
 #include <float.h>
 
@@ -412,4 +411,34 @@ bool KRUtils::parseReportRect(const QDomElement & elemSource, KRPos *pos, KRSize
     pos->setPointPos(_pos);
     size->setPointSize(_siz);
     return true;
+}
+
+class PageIds : private QHash<QString, QPageSize::PageSizeId>
+{
+public:
+    PageIds() {}
+    QPageSize::PageSizeId id(const QString &key) {
+        if (isEmpty()) {
+            for (int i = 0; i < QPageSize::LastPageSize; ++i) {
+                QString key(QPageSize::key(static_cast<QPageSize::PageSizeId>(i)));
+                if (key.isEmpty()) {
+                    break;
+                }
+                insert(key, static_cast<QPageSize::PageSizeId>(i));
+            }
+        }
+        return value(key);
+    }
+};
+
+Q_GLOBAL_STATIC(PageIds, s_pageIds)
+
+QPageSize::PageSizeId KRUtils::pageSizeId(const QString &key)
+{
+    return s_pageIds->id(key);
+}
+
+QPageSize KRUtils::pageSize(const QString &key)
+{
+    return QPageSize(s_pageIds->id(key));
 }
