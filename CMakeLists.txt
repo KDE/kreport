@@ -9,7 +9,6 @@ if(POLICY CMP0063) # Honor visibility properties for all target types (since cma
     cmake_policy(SET CMP0063 OLD)
 endif()
 
-include(ECMGenerateHeaders)
 include(ECMGeneratePriFile)
 include(ECMPackageConfigHelpers)
 include(ECMPoQmTools)
@@ -21,6 +20,10 @@ include(KDEInstallDirs)
 include(KDEFrameworkCompilerSettings)
 include(KDECMakeSettings)
 
+include(FeatureSummary)
+include(GenerateExportHeader)
+
+include(KDbGenerateHeaders) # from KDb, adds support for generated headers to ECMGenerateHeaders
 include(KDbCreateSharedDataClasses) # from KDb
 include(GenerateExportHeader)
 include(MacroLogFeature)
