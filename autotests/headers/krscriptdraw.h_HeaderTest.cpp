@@ -1,1 +1,1 @@
-#include <kreport/krscriptdraw.h>
+#include <krscriptdraw.h>

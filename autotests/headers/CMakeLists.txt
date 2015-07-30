@@ -32,10 +32,12 @@ add_executable(
     KoReportPluginManager_HeaderTest.cpp
     KoReportPreRenderer_HeaderTest.cpp
     KoReportRendererBase_HeaderTest.cpp
+    KReportDesign_HeaderTest.cpp
     KReportDpi_HeaderTest.cpp
     KReportPageFormat_HeaderTest.cpp
     KReportPluginMetaData_HeaderTest.cpp
     KReportUnit_HeaderTest.cpp
+    KReportView_HeaderTest.cpp
     KReportZoomHandler_HeaderTest.cpp
     KReportZoomMode_HeaderTest.cpp
     krpos_HeaderTest.cpp
@@ -64,10 +66,12 @@ add_executable(
     KoReportPluginManager.h_HeaderTest.cpp
     KoReportPreRenderer.h_HeaderTest.cpp
     KoReportRendererBase.h_HeaderTest.cpp
+    KReportDesign.h_HeaderTest.cpp
     KReportDpi.h_HeaderTest.cpp
     KReportPageFormat.h_HeaderTest.cpp
     KReportPluginMetaData.h_HeaderTest.cpp
     KReportUnit.h_HeaderTest.cpp
+    KReportView.h_HeaderTest.cpp
     KReportZoomHandler.h_HeaderTest.cpp
     KReportZoomMode.h_HeaderTest.cpp
     krpos.h_HeaderTest.cpp

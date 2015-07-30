@@ -1,1 +1,1 @@
-#include <kreport/krscripthandler.h>
+#include <krscripthandler.h>

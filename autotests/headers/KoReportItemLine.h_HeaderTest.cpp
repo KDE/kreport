@@ -1,1 +1,1 @@
-#include <kreport/KoReportItemLine.h>
+#include <KoReportItemLine.h>
