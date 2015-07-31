@@ -123,6 +123,16 @@ QColor KReportSection::backgroundColor() const
     return d->backgroundColor.isValid() ? d->backgroundColor : KReportSection::defaultBackgroundColor();
 }
 
+QList<KReportElement> KReportSection::elements() const
+{
+    return d->elements;
+}
+
+void KReportSection::addElement(const KReportElement &element)
+{
+    d->elements.append(element);
+}
+
 //static
 qreal KReportSection::defaultHeight()
 {

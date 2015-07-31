@@ -20,26 +20,13 @@
 #ifndef KREPORTSECTION_H
 #define KREPORTSECTION_H
 
-#include "kreport_export.h"
+#include <KReportElement>
 
-#include <QColor>
-
-class KoReportItemBase;
-class KoReportReportData;
-
-class QDomElement;
-
-namespace Scripting
-{
-class Section;
-}
-
-//! @brief The KReportSection class represents a section of report design in .kreport format
+//! @brief The KReportSection class represents a section of a report design
 /*! A section has optional report header, report footer, page header, page footer,
- * group header, group footer and detail.
- * In the case of page header and page footer it is possible to define (firstpage, odd, even or lastpage).
- */
-shared class export=KREPORT_EXPORT operator== KReportSection
+    group header, group footer and detail.
+    In the case of page header and page footer it is possible to define (firstpage, odd, even or lastpage). */
+shared class export=KREPORT_EXPORT explicit operator== KReportSection
 {
 public:
     enum Type {
@@ -92,6 +79,15 @@ public:
     */
     data_member QColor backgroundColor custom_getter;
 
+    /*!
+    @getter
+    @return all elements of this section
+    */
+    data_member QList<KReportElement> elements custom_getter no_setter;
+
+    //! Adds element to this section
+    void addElement(const KReportElement &element);
+
     //! @return default height for report sections. The standard is 2cm (converted to points).
     static qreal defaultHeight();
 
@@ -103,10 +99,6 @@ public:
 
     //! Sets default background color for report sections.
     static void setDefaultBackgroundColor(const QColor &color);
-
-//private:
-//    static bool zLessThan(KoReportItemBase* s1, KoReportItemBase* s2);
-//    static bool xLessThan(KoReportItemBase* s1, KoReportItemBase* s2);
 };
 
 #endif // KREPORTSECTION_H

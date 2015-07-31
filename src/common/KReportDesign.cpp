@@ -19,10 +19,10 @@
 
 #include "KReportDesign.h"
 #include "KReportDesign_p.h"
+#include "KReportElement.h"
 #include "KReportUnit.h"
 #include "krutils.h"
 
-#include <QDebug>
 #include <QDomDocument>
 #include <QDomElement>
 #include <QPrinter>
@@ -55,7 +55,7 @@ QDebug operator<<(QDebug dbg, const KReportDesignReadingStatus& status)
 //-----------------------------------
 
 KReportDesign::KReportDesign()
-    : d(new Private)
+    : d(new Private(this))
 {
 }
 
@@ -90,10 +90,62 @@ QPageLayout KReportDesign::pageLayout() const
     return d->pageLayout;
 }
 
+QString KReportDesign::title() const
+{
+    return d->title;
+}
+
+void KReportDesign::setTitle(const QString &title)
+{
+    d->title = title;
+}
+
 void KReportDesign::setPageLayout(const QPageLayout &pageLayout)
 {
     d->pageLayout = pageLayout;
     d->pageLayout.setUnits(QPageLayout::Point);
+}
+
+KReportElement KReportDesign::createElement(const QString &typeName, QString *errorMessage)
+{
+    KReportElement element;
+    if (errorMessage) {
+        errorMessage->clear();
+    }
+    return element;
+}
+
+bool KReportDesign::hasSection(KReportSection::Type type) const
+{
+    const int index = type - 1;
+    if (0 <= index && index < d->sections.length()) {
+        return d->sections[index];
+    }
+    return false;
+}
+
+KReportSection KReportDesign::section(KReportSection::Type type) const
+{
+    const int index = type - 1;
+    if (0 <= index && index < d->sections.length()) {
+        KReportSection *section = d->sections[index];
+        if (section) {
+            return *section;
+        }
+    }
+    return KReportSection();
+}
+
+void KReportDesign::addSection(const KReportSection &section)
+{
+    const int index = section.type() - 1;
+    if (0 <= index && index < d->sections.length()) {
+        if (d->sections[index]) {
+            *d->sections[index] = section;
+        } else {
+            d->sections[index] = new KReportSection(section);
+        }
+    }
 }
 
 // static
