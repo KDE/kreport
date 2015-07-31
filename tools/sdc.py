@@ -25,7 +25,7 @@
 
 import os, sys, shlex
 
-version = '0.1'
+version = '0.2'
 line = ''
 
 def usage():
@@ -148,11 +148,24 @@ QMap<QString, QString> %s::Data::toMap() const
     Inserts generated operator==() code for shared class into the output.
 """
 def insert_operator_eq():
-    global outfile, shared_class_name
-    outfile.write("""    bool operator==(const %s& other) const {
-        return *d == *other.d;
+    global outfile, shared_class_name, superclass
+    outfile.write("""    //! @return true if this object is equal to @a other; otherwise returns false.
+    bool operator==(const %s& other) const {
+        return *%s == *other.%s;
     }
-""" % shared_class_name)
+
+""" % (shared_class_name, 'data()' if superclass else 'd', 'data()' if superclass else 'd'))
+
+"""
+    Inserts generated clone() method (makes sense for explicitly shared class).
+"""
+def insert_clone():
+    global outfile, shared_class_name
+    outfile.write("""    //! Clones the object with all attributes; the copy isn't shared with the original.
+    %s clone() {
+        return %s(d->clone());
+    }
+""" % (shared_class_name, shared_class_name))
 
 """
     Inserts generated Data::operator==() code into the output.
@@ -179,7 +192,7 @@ def insert_data_operator_eq():
     Inserts generated code into the output.
 """
 def insert_generated_code(context):
-    global infile, outfile, generated_code_inserted, data_class_ctor, data_class_copy_ctor
+    global infile, outfile, generated_code_inserted, data_class_ctor, data_class_copy_ctor, superclass
     global data_class_members, data_accesors, protected_data_accesors, main_ctor, shared_class_name, shared_class_options
     global prev_line
     if generated_code_inserted:
@@ -197,6 +210,12 @@ def insert_generated_code(context):
         }
 
 """)
+    outfile.write("""        virtual ~Data() {}
+
+        virtual %sData* clone() const { return new Data(*this); }
+
+""" % ((superclass + '::') if superclass else ''))
+
     if shared_class_options['with_from_to_map']:
         outfile.write("""        /*! Constructor for Data object, takes attributes saved to map @a map.
         If @a ok is not 0, *ok is set to true on success and to false on failure. @see toMap(). */
@@ -216,6 +235,8 @@ def insert_generated_code(context):
         insert_fromMap_toMap_methods()
     if shared_class_options['operator==']:
         insert_operator_eq()
+    if shared_class_options['explicit'] and not superclass:
+        insert_clone()
     if protected_data_accesors:
         outfile.write("protected:")
         outfile.write(protected_data_accesors)
@@ -314,9 +335,9 @@ def update_data_accesors():
         else:
             val = """
     %s%s %s() const {
-        return d->%s;
+        return %s->%s;
     }
-""" % (invokable, member['type'], getter, member['name'])
+""" % (invokable, member['type'], getter, 'data()' if superclass else 'd', member['name'])
         if member['access'] == 'public':
             data_accesors += val
         else: # protected
@@ -342,9 +363,9 @@ def update_data_accesors():
         else:
             val = """
     %svoid %s(%s %s%s) {
-        d->%s = %s;
+        %s->%s = %s;
     }
-""" % (invokable, setter, arg_type, member['name'], default_setter, member['name'], member['name'])
+""" % (invokable, setter, arg_type, member['name'], default_setter, 'data()' if superclass else 'd', member['name'], member['name'])
         if member['access'] == 'public':
             data_accesors += val
         else: # protected
@@ -367,7 +388,7 @@ def get_shared_class_option(lst, option_name):
         lst.remove(option_name)
     return lst
 
-# like get_shared_class_option() but also gets value (not just checks for existence)
+""" like get_shared_class_option() but also gets value (not just checks for existence) """
 def get_shared_class_option_with_value(lst, option_name):
     global shared_class_options
     for item in lst:
@@ -381,7 +402,7 @@ def get_shared_class_option_with_value(lst, option_name):
 
 def warningHeader():
     return """/****************************************************************************
-** Implicitly Shared Class code from reading file '%s'
+** Shared Class code from reading file '%s'
 **
 ** Created
 **      by: The Shared Data Compiler version %s
@@ -391,8 +412,8 @@ def warningHeader():
 
 """ % (get_file(in_fname), version)
 
-# generates conversion code to string from many types, used by Data::toMap()
-# @todo more types
+""" generates conversion code to string from many types, used by Data::toMap()
+    @todo more types """
 def generate_toString_conversion(name, _type):
     if _type == 'QString' or _type == 'QByteArray':
         return name
@@ -400,8 +421,8 @@ def generate_toString_conversion(name, _type):
         return 'QString::number((int)%s)' % name # 0 or 1
     return 'QVariant(%s).toString()' % name
 
-# generates conversion code from string to many types, used by Data(QMap<..>)
-# @todo more types
+""" generates conversion code from string to many types, used by Data(QMap<..>)
+    @todo more types """
 def generate_fromString_conversion(name, _type):
     s = 'map[QLatin1String(\"%s\")]' % name
     if _type == 'bool': # 0 or 1
@@ -442,6 +463,8 @@ def get_pos_for_QSharedData_h():
 
 # replaces "Foo<ABC<DEF>>" with "Foo< ABC< DEF > >" to avoid build errors
 def fix_templates(s):
+    if s.count('<') < 2:
+        return s
     result=''
     for c in s:
         if c == '>':
@@ -458,9 +481,16 @@ def other_comment(line):
       or ln .startswith('//!') \
       or ln.startswith('///')
 
+""" @return name of shared class, possibly with full 'inheriting' section name and superclass """
+def get_shared_class_name_and_inheritance(lst):
+    if lst[-2] == 'public' and lst[-3] == ':': # <name> : public <inherited>
+        return (lst[-4], ' ' + lst[-3] + ' ' + lst[-2] + ' ' + lst[-1], lst[-1])
+    else:
+        return (lst[-1], '', '') # <name>
+
 def process():
     global infile, outfile, generated_code_inserted, data_class_ctor, data_class_copy_ctor
-    global shared_class_name, shared_class_options, shared_class_inserted, data_class_members
+    global shared_class_name, superclass, shared_class_options, shared_class_inserted, data_class_members
     global members_list, data_accesors, member, main_ctor, toMap_impl, fromMap_impl
     global prev_line, line
     outfile.write(warningHeader())
@@ -512,23 +542,37 @@ def process():
             # output: class <EXPORT> <NAME>
             export = param(lst, 'export')
             inherits = param(lst, 'inherits')
+            lst = get_shared_class_option(lst, 'explicit')
             lst = get_shared_class_option(lst, 'operator==')
             lst = get_shared_class_option(lst, 'with_from_to_map')
             lst = get_shared_class_option(lst, 'virtual_dtor')
             lst = get_shared_class_option_with_value(lst, 'namespace')
-            shared_class_name = lst[-1]
+            (shared_class_name, shared_class_inheritance, superclass) = get_shared_class_name_and_inheritance(lst)
+            if superclass:
+                shared_class_options['virtual_dtor'] = True # inheritance implies this
             main_ctor = """    };
 
     %s()
-     : d(new Data)
+     : %s(new Data)
     {
     }
 
     %s(const %s& other)
-     : d(other.d)
+     : %s
     {
     }
-""" % (shared_class_name, shared_class_name, shared_class_name)
+""" % (shared_class_name, superclass if superclass else 'd', shared_class_name, shared_class_name, (superclass + '(other)') if superclass else 'd(other.d)')
+            if superclass:
+                main_ctor += """
+    %s(const %s& other)
+     : %s(other)
+    {
+        if (!data()) { // '@a 'other' does not store suitable data, create a new one and copy what we have
+            d = new Data(*d.data());
+        }
+    }
+""" % (shared_class_name, superclass, superclass)
+
             if shared_class_options['with_from_to_map']:
                 main_ctor += """
     /*! Constructor for %s object, takes attributes saved to map @a map.
@@ -542,9 +586,23 @@ def process():
     %s~%s();
 """ % (('virtual ' if shared_class_options['virtual_dtor'] else ''), shared_class_name)
             if export:
-                name = export + ' ' + shared_class_name
+                name = export + ' ' + shared_class_name + shared_class_inheritance
             if inherits:
                 inherits = ' : ' + inherits
+            if shared_class_options['explicit']:
+                outfile.write("""//! @note objects of this class are explicitly shared, what means they behave like regular
+//!       C++ pointers, except that by doing reference counting and not deleting the shared
+//!       data object until the reference count is 0, they avoid the dangling pointer problem.
+//!       See <a href="http://doc.qt.io/qt-5/qexplicitlyshareddatapointer.html#details">Qt documentation</a>.
+//!
+""")
+            else:
+                outfile.write("""//! @note objects of this class are implicitly shared, what means they have value semantics
+//! by offering copy-on-write behaviour to maximize resource usage and minimize copying.
+//! Only a pointer to the data is passed around. See <a href="http://doc.qt.io/qt-5/qshareddatapointer.html#details">Qt documentation</a>.
+//!
+""")
+
             outfile.write("class %s%s\n" % (name, inherits))
             while True:
                 prev_line = line
@@ -603,16 +661,16 @@ def process():
             if lst[-1].endswith(';'):
                 lst[-1] = lst[-1][:-1]
             #print lst
-            # syntax: data_member TYPE NAME [default=DEFAULT_VALUE]
-            #                               [no_getter] [getter=CUSTOM_GETTER_NAME]
-            #                               [custom]
-            #                               [custom_getter]
-            #                               [default_setter=DEFAULT_SETTER'S_PARAM]
-            #                               [no_setter] [setter=CUSTOM_SETTER_NAME]
-            #                               [custom_setter]
-            #                               [mutable] [simple_type]
-            #                               [invokable]
-            # output: getter, setter methods, data memeber
+            """ syntax: data_member TYPE NAME [default=DEFAULT_VALUE]
+                                              [no_getter] [getter=CUSTOM_GETTER_NAME]
+                                              [custom]
+                                              [custom_getter]
+                                              [default_setter=DEFAULT_SETTER'S_PARAM]
+                                              [no_setter] [setter=CUSTOM_SETTER_NAME]
+                                              [custom_setter]
+                                              [mutable] [simple_type]
+                                              [invokable] [explicit]
+            output: getter, setter methods, data memeber """
             if lst[0] == 'data_method':
                 #if member.has_key('docs'):
                 #    data_class_members += member['docs'] + '\n'
@@ -641,17 +699,26 @@ def process():
             member['invokable'] = param_exists(lst, 'invokable')
             #print member
             if not data_class_ctor_changed:
-                data_class_ctor = """    //! Internal data class used to implement implicitly shared class %s.\n    //! Provides thread-safe reference counting.
-    class Data : public QSharedData
+                data_class_ctor = """    //! Internal data class used to implement %s shared class %s.
+    //! Provides thread-safe reference counting.
+    class Data : public %s
     {
     public:
         Data()
-""" % shared_class_name
+""" % ('explicitly' if shared_class_options['explicit'] else 'implicitly', shared_class_name, (superclass + '::Data') if superclass else 'QSharedData')
             if not data_class_copy_ctor_changed:
-                data_class_copy_ctor = """
+                data_class_copy_ctor = ''
+                if superclass:
+                    data_class_copy_ctor += """
+        Data(const %s::Data& other)
+         : %s::Data(other)
+        {
+        }
+""" % (superclass, superclass)
+                data_class_copy_ctor += """
         Data(const Data& other)
-        : QSharedData(other)
-"""
+         : %s(other)
+""" % ((superclass + '::Data') if superclass else 'QSharedData')
                 data_class_copy_ctor_changed = True
             if member['default']:
                 data_class_ctor += '        '
@@ -662,15 +729,18 @@ def process():
                     data_class_ctor_changed = True
                 data_class_ctor += member['name'] + '(' + member['default'] + ')\n'
 #            print data_class_ctor
-            data_class_copy_ctor += '        , %s(other.%s)\n' % (member['name'], member['name'])
+            data_class_copy_ctor += '         , %s(other.%s)\n' % (member['name'], member['name'])
             if member.has_key('docs'):
                 data_class_members += member['docs']
 
             isInternalMember = member['no_getter'] and member['no_setter']
+            mutable = 'mutable ' if member['mutable'] else ''
+            data_class_members += "        %s%s %s;" % (mutable, member['type'], member['name'])
+            # add doc for shared data member
             if isInternalMember:
-                data_class_members += "        //! @internal"
+                data_class_members += " //!< @internal"
             else:
-                data_class_members += "        //! @see "
+                data_class_members += " //!< @see "
             if not member['no_getter']:
                 getter = member['getter']
                 if not getter:
@@ -682,8 +752,7 @@ def process():
                 setter = makeSetter(member['name'], member['setter'])
                 data_class_members += "%s::%s()" % (shared_class_name, setter)
             data_class_members += "\n"
-            mutable = 'mutable ' if member['mutable'] else ''
-            data_class_members += "        %s%s %s;\n" % (mutable, member['type'], member['name'])
+
             if shared_class_options['with_from_to_map']:
                 toMap_impl += '    map[QLatin1String(\"%s\")] = %s;\n' % (member['name'], generate_toString_conversion(member['name'], member['type']))
                 fromMap_impl += '    %s\n' % generate_fromString_conversion(member['name'], member['type'])
@@ -696,8 +765,41 @@ def process():
             insert_generated_code(5)
 #            outfile.write('\nprivate:\n');
             outfile.write('\nprotected:\n');
-            outfile.write('    QSharedDataPointer<Data> d;\n');
+            if shared_class_options['explicit']:
+                if superclass:
+                    outfile.write("""    virtual const Data* data() const { return dynamic_cast<const Data*>(%s::d.constData()); }
+    virtual Data* data() { return dynamic_cast<Data*>(%s::d.data()); }
+""" % (superclass, superclass))
+                else:
+                    outfile.write("""    %s(Data *data)
+     : d(data)
+    {
+    }
+
+    %s(QExplicitlySharedDataPointer<%s::Data> &data)
+     : d(data)
+    {
+    }
+
+    QExplicitlySharedDataPointer<Data> d;
+""" % (shared_class_name, shared_class_name, shared_class_name))
+            else:
+                outfile.write('    QSharedDataPointer<Data> d;\n');
             outfile.write(line)
+
+            if shared_class_options['explicit']:
+                outfile.write("""
+template<>
+%s %s::Data *QSharedDataPointer<%s::Data>::clone();
+""" % (export, shared_class_name, shared_class_name))
+                open_sdc()
+                outfile_sdc.write("""template<>
+%s %s::Data *QSharedDataPointer<%s::Data>::clone()
+{
+    return d->clone();
+}
+""" % (export, shared_class_name, shared_class_name))
+
         else:
             #outfile.write('____ELSE____\n');
             if False and other_comment(line):
