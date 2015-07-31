@@ -590,17 +590,17 @@ def process():
             if inherits:
                 inherits = ' : ' + inherits
             if shared_class_options['explicit']:
-                outfile.write("""//! @note objects of this class are explicitly shared, what means they behave like regular
-//!       C++ pointers, except that by doing reference counting and not deleting the shared
-//!       data object until the reference count is 0, they avoid the dangling pointer problem.
-//!       See <a href="http://doc.qt.io/qt-5/qexplicitlyshareddatapointer.html#details">Qt documentation</a>.
-//!
+                outfile.write("""/*! @note objects of this class are explicitly shared, what means they behave like regular
+          C++ pointers, except that by doing reference counting and not deleting the shared
+          data object until the reference count is 0, they avoid the dangling pointer problem.
+          See <a href="http://doc.qt.io/qt-5/qexplicitlyshareddatapointer.html#details">Qt documentation</a>.
+ */
 """)
             else:
-                outfile.write("""//! @note objects of this class are implicitly shared, what means they have value semantics
-//! by offering copy-on-write behaviour to maximize resource usage and minimize copying.
-//! Only a pointer to the data is passed around. See <a href="http://doc.qt.io/qt-5/qshareddatapointer.html#details">Qt documentation</a>.
-//!
+                outfile.write("""/*! @note objects of this class are implicitly shared, what means they have value semantics
+          by offering copy-on-write behaviour to maximize resource usage and minimize copying.
+          Only a pointer to the data is passed around. See <a href="http://doc.qt.io/qt-5/qshareddatapointer.html#details">Qt documentation</a>.
+ */
 """)
 
             outfile.write("class %s%s\n" % (name, inherits))
@@ -699,7 +699,7 @@ def process():
             member['invokable'] = param_exists(lst, 'invokable')
             #print member
             if not data_class_ctor_changed:
-                data_class_ctor = """    //! Internal data class used to implement %s shared class %s.
+                data_class_ctor = """    //! @internal data class used to implement %s shared class %s.
     //! Provides thread-safe reference counting.
     class Data : public %s
     {

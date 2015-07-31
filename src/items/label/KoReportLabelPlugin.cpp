@@ -22,6 +22,7 @@
 #include "KoReportDesignerItemLabel.h"
 #include "wrtembed/KoReportDesigner.h"
 #include "common/KReportPluginMetaData.h"
+#include "KReportLabelElement.h"
 #ifdef KREPORT_SCRIPTING
 #include "krscriptlabel.h"
 #endif
@@ -51,6 +52,11 @@ QObject* KoReportLabelPlugin::createDesignerInstance(KoReportDesigner* designer,
 QObject* KoReportLabelPlugin::createDesignerInstance(const QDomNode & element, KoReportDesigner *designer, QGraphicsScene * scene)
 {
     return new KoReportDesignerItemLabel(element, designer, scene);
+}
+
+KReportElement KoReportLabelPlugin::createElement()
+{
+    return KReportLabelElement();
 }
 
 #ifdef KREPORT_SCRIPTING

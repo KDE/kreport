@@ -21,11 +21,11 @@
 #define KREPORTDESIGN_P_H
 
 #include "KReportDesign.h"
-#include "KReportSection.h"
 #include "KReportUnit.h"
 
 #include <QPageSize>
 #include <QPageLayout>
+#include <QVarLengthArray>
 
 class QDomDocument;
 class QDomElement;
@@ -41,7 +41,9 @@ static const QPageLayout::Orientation DEFAULT_PAGE_ORIENTATION = QPageLayout::La
 class KReportDesign::Private
 {
 public:
-    Private();
+    explicit Private(KReportDesign *design);
+
+    ~Private();
 
     QDomElement requiredChildElement(const QDomElement &parent,
                                      const char* childElementName,
@@ -60,20 +62,22 @@ public:
     bool processBodyElementChild(const QDomElement &el, KReportDesignReadingStatus *status);
 
     //! Processes @a el, a /report:content/report:body/report:section element and sets status @a status
-    bool processSectionElement(const QDomElement &el, KReportDesignReadingStatus *status);
+    KReportSection processSectionElement(const QDomElement &el, KReportDesignReadingStatus *status);
 
     //! Processes @a el,
     //! a child of /report:content/report:body/report:section element
     //! or a child of /report:content/report:body/report:detail/report:section element
     //! and sets status @a status.
     //! It is probably the lowest level in hierarchy and @a el refers to a single report element.
-    bool processSectionElementChild(const QDomElement &el, KReportDesignReadingStatus *status);
+    KReportElement processSectionElementChild(const QDomElement &el, KReportDesignReadingStatus *status);
 
     //! Processes @a el, a child of /report:content/report:body/report:detail element and sets status @a status
     bool processDetailElement(const QDomElement &el, KReportDesignReadingStatus *status);
 
     //! Processes @a el, a /report:content/report:body/report:detail/report:group element and sets status @a status
     bool processGroupElement(const QDomElement &el, KReportDesignReadingStatus *status);
+
+    KReportDesign * const q;
 
     // Visual settings only
     bool showGrid;
@@ -83,6 +87,7 @@ public:
     // END OF: Visual settings only
     QString title;
     QPageLayout pageLayout;
+    QVarLengthArray<KReportSection*, KReportSection::Detail> sections;
 };
 
 class KReportDesignGlobal
@@ -99,7 +104,7 @@ public:
 
     KReportSection::Type sectionType(const QString& typeName);
 
-    QString setionTypeName(KReportSection::Type sectionType);
+    QString sectionTypeName(KReportSection::Type sectionType);
 
     QPageLayout defaultPageLayout;
     qreal defaultSectionHeight;

@@ -20,12 +20,14 @@
 #define KREPORTDESIGN_H
 
 #include "kreport_export.h"
+#include "KReportSection.h"
 
 #include <QCoreApplication>
 
 class QPageSize;
 class QMarginsF;
 class QPageLayout;
+class KReportElement;
 
 //! The KReportDesignReadStatus represents status of reading a report design in .kreport format.
 /*! It is used by KReportDesign::setContent(). */
@@ -73,12 +75,31 @@ public:
     //! Converts the report document back to its textual representation.
     QString toString(int indent = 1) const;
 
+    //! @return title for this design
+    QString title() const;
+
+    //! Sets title for this design to @a title
+    void setTitle(const QString &title);
+
     //! @return page layout for this design
     QPageLayout pageLayout() const;
 
     //! Sets the page layout to @a pageLayout
     //! @note Calling this method does not alter page layouts of existing KReportDesign objects.
     void setPageLayout(const QPageLayout &pageLayout);
+
+    //! @return true if this design has section defined of type @a type
+    bool hasSection(KReportSection::Type type) const;
+
+    //! @return section of type @a type
+    KReportSection section(KReportSection::Type type) const;
+
+    //! Add section @a section. Previous section of the same type is removed from this design.
+    void addSection(const KReportSection &section);
+
+    //! Creates and returns report element of type @a typeName
+    //! On success @a errorMessage is cleared, on failure it is set to a nonempty value.
+    KReportElement createElement(const QString &typeName, QString *errorMessage);
 
     //! @return default page layout that is used for creating new report designs
     /*! Attributes that are specified in the design format:

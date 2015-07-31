@@ -23,6 +23,7 @@
 
 #include "config-kreport.h"
 #include "kreport_export.h"
+#include "KReportElement.h"
 
 #include <KPluginFactory>
 
@@ -53,6 +54,8 @@ public:
                                             QGraphicsScene *scene) = 0;
 
     virtual QObject* createRendererInstance(const QDomNode &element) = 0;
+
+    virtual KReportElement createElement() { return KReportElement(); } // TODO remove {}
 
 #ifdef KREPORT_SCRIPTING
     virtual QObject* createScriptInstance(KoReportItemBase* item) = 0;

@@ -22,6 +22,7 @@
 #include "FormatTest.h"
 #include "KoReportPreRenderer.h"
 #include "KoReportDesigner.h"
+#include "KReportLabelElement.h"
 #include "krreportdata.h"
 #include "reportpageoptions.h"
 #include "reportsectiondetail.h"
@@ -41,6 +42,7 @@
 #include <QScreen>
 #include <QDir>
 #include <QTest>
+#include <QPageLayout>
 
 QTEST_MAIN(FormatTest)
 
@@ -176,6 +178,56 @@ void FormatTest::testRectItem()
         QDebug(&message) << status;
         QFAIL(qPrintable(QLatin1String("Failed to load content. ") + message));
     }
+    QCOMPARE(design.title(), QLatin1String("RectItem Test Report"));
+
+    qDebug()<<design.pageLayout();
+    const QPageLayout pageLayout = design.pageLayout();
+    QVERIFY(pageLayout.isValid());
+    QCOMPARE(pageLayout.pageSize().id(), QPageSize::A5);
+    QCOMPARE(pageLayout.pageSize().sizePoints(), QPageSize(QPageSize::A5).sizePoints());
+    QCOMPARE(pageLayout.orientation(), QPageLayout::Portrait);
+    QCOMPARE(pageLayout.margins(QPageLayout::Millimeter), QMarginsF(30.0, 20.0, 40.0, 15.0));
+
+    QVERIFY(design.hasSection(KReportSection::Detail));
+    KReportSection detailSection = design.section(KReportSection::Detail);
+    QCOMPARE(detailSection.type(), KReportSection::Detail);
+    QCOMPARE(detailSection.height(), CM_TO_POINT(5.0));
+    QCOMPARE(detailSection.backgroundColor(), QColor("#eeeeee"));
+
+    QList<KReportElement> elements = detailSection.elements();
+    QCOMPARE(elements.count(), 1);
+    KReportElement element = elements.first();
+    QCOMPARE(element.name(), QLatin1String("label1"));
+
+    //TODO: move to an elements API test
+    KReportElement e;
+    e.setName("foo");
+
+    KReportElement e2 = e;
+    qDebug() << e2.name();
+    e.setName("");
+    qDebug() << e2.name();
+    KReportLabelElement l1, l2;
+    l1.setText("text");
+    l2 = l1.clone();
+    l1.setText("");
+    qDebug() << "cloned:" << l2.text();
+    e = l2;
+    l2.setText("text");
+    KReportLabelElement l3(e);
+    qDebug() << l3.text() << KReportLabelElement(e).text() << KReportLabelElement(e2).text();
+    KReportElement ee = e.clone();
+    qDebug() << "KReportLabelElement(e).text():" << KReportLabelElement(e).text();
+
+    qDebug() << element.name();
+    detailSection.elements().first().setName("new_label_name");
+
+    detailSection.addElement(e);
+    qDebug() << KReportLabelElement(detailSection.elements().at(1)).text();
+    qDebug() << detailSection.elements().at(0).name() << element.name();
+    // end of TODO
+
+    //TODO: move this renderer test to a separate place
     KoReportDesigner designer(0);//, doc.documentElement());
     ReportSectionDetail *ds = designer.detailSection();
     ReportSection *sec = ds->detailSection();

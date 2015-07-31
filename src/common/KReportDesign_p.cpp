@@ -18,6 +18,7 @@
  */
 
 #include "KReportDesign_p.h"
+#include "KReportElement.h"
 #include "krutils.h"
 
 #include <QDebug>
@@ -25,12 +26,21 @@
 #include <QDomElement>
 #include <QSizeF>
 
-KReportDesign::Private::Private()
- : showGrid(DEFAULT_SHOW_GRID)
+KReportDesign::Private::Private(KReportDesign *design)
+ : q(design)
+ , showGrid(DEFAULT_SHOW_GRID)
  , snapToGrid(DEFAULT_SNAP_TO_GRID)
  , gridDivisions(DEFAULT_GRID_DIVISIONS)
  , pageUnit(DEFAULT_UNIT)
+ , sections(KReportSection::Detail)
 {
+    memset(static_cast<void*>(sections.data()), 0, sizeof(void*) * sections.length());
+    pageLayout.setUnits(QPageLayout::Point); // initializate because of https://bugreports.qt.io/browse/QTBUG-47551
+}
+
+KReportDesign::Private::~Private()
+{
+    qDeleteAll(sections);
 }
 
 KReportDesignGlobal::KReportDesignGlobal()
@@ -51,7 +61,7 @@ KReportSection::Type KReportDesignGlobal::sectionType(const QString& typeName) {
     return sectionTypesForName.value(typeName); // returns InvalidType for invalid name
 }
 
-QString KReportDesignGlobal::setionTypeName(KReportSection::Type sectionType) {
+QString KReportDesignGlobal::sectionTypeName(KReportSection::Type sectionType) {
     initSectionTypes();
     return sectionTypeNames.value(sectionType);
 }
@@ -104,16 +114,32 @@ static void setStatus(KReportDesignReadingStatus *status, const QString& details
     }
 }
 
-static bool checkElement(const QDomNode &node, const QDomElement &parent,
-                         KReportDesignReadingStatus *status)
+static bool checkElement(const QDomNode &node, KReportDesignReadingStatus *status)
 {
     if (node.isElement()) {
         return true;
     }
     setStatus(status, QString::fromLatin1("Element expected inside of <%1>")
-              .arg(parent.tagName()), node);
+              .arg(node.parentNode().toElement().tagName()), node);
     return false;
 }
+
+static void setNoAttributeStatus(const QDomElement &el, const char *attrName, KReportDesignReadingStatus *status)
+{
+    setStatus(status, QString::fromLatin1("Attribute \"%1\" expected inside of <%1>")
+              .arg(QLatin1String(attrName)).arg(el.tagName()), el);
+}
+
+#if 0 // TODO unused for now
+static bool checkAttribute(const QDomElement &el, const char *attrName, KReportDesignReadingStatus *status)
+{
+    if (el.hasAttribute(QLatin1String(attrName))) {
+        return true;
+    }
+    setNoAttributeStatus(el, attrName, status);
+    return false;
+}
+#endif
 
 inline static QString attr(const QDomElement &el, const char *attrName,
                            QString defaultValue = QString())
@@ -145,8 +171,8 @@ inline static qreal attr(const QDomElement &el, const char *attrName, qreal defa
     return KReportUnit::parseValue(val, defaultValue);
 }
 
-bool KReportDesign::Private::processSectionElement(const QDomElement &el,
-                                                   KReportDesignReadingStatus *status)
+KReportSection KReportDesign::Private::processSectionElement(const QDomElement &el,
+                                                             KReportDesignReadingStatus *status)
 {
     const QString sectionTypeName = attr(el, "report:section-type", QString());
     KReportSection::Type sectionType = s_global->sectionType(sectionTypeName);
@@ -154,27 +180,30 @@ bool KReportDesign::Private::processSectionElement(const QDomElement &el,
         setStatus(status,
             QString::fromLatin1("Invalid value of report:section-type=\"%1\" in element <%2>")
                                 .arg(sectionTypeName).arg(el.tagName()), el);
-        return false;
+        return KReportSection();
     }
-    KReportSection *section = new KReportSection;
-    section->setType(sectionType);
+    KReportSection section;
+    section.setType(sectionType);
     qreal height = attr(el, "svg:height", -1.0);
     if (height >= 0.0) {
-        section->setHeight(height);
+        section.setHeight(height);
     }
-    section->setBackgroundColor(QColor(attr(el, "fo:background-color", QString())));
+    section.setBackgroundColor(QColor(attr(el, "fo:background-color", QString())));
     for (QDomNode node = el.firstChild(); !node.isNull(); node = node.nextSibling()) {
-        if (!checkElement(node, el, status)) {
-            return false;
+        if (!checkElement(node, status)) {
+            return KReportSection();
         }
-        if (!processSectionElementChild(node.toElement(), status)) {
-            return false;
+        KReportElement element = processSectionElementChild(node.toElement(), status);
+        if (status->isError()) {
+            return KReportSection();
         }
+        section.addElement(element);
     }
-    return true;
+    return section;
 }
 
-bool KReportDesign::Private::processSectionElementChild(const QDomElement &el,
+KReportElement KReportDesign::Private::processSectionElementChild(
+                                                        const QDomElement &el,
                                                         KReportDesignReadingStatus *status)
 {
     const QByteArray name = el.tagName().toLatin1();
@@ -182,36 +211,28 @@ bool KReportDesign::Private::processSectionElementChild(const QDomElement &el,
 
     if (!name.startsWith(elNamespace)) {
         unexpectedElement(el, status);
-        return false;
+        return KReportElement();
     }
     const QByteArray reportElementName = name.mid(qstrlen(elNamespace));
     qDebug() << "Found Report Element:" << reportElementName;
-#if 0
-
-
-        if (reportItemName == QLatin1String("line")) {
-            KoReportItemLine * line = new KoReportItemLine(elemThis);
-            m_objects.append(line);
-            continue;
-        }
-        KoReportPluginInterface *plugin = manager->plugin(reportItemName);
-        if (plugin) {
-            QObject *obj = plugin->createRendererInstance(elemThis);
-            if (obj) {
-                KoReportItemBase *krobj = dynamic_cast<KoReportItemBase*>(obj);
-                if (krobj) {
-                    m_objects.append(krobj);
-                }
-                continue;
-            }
-        }
-#endif
-    return true;
+    QString errorMessage;
+    KReportElement element = q->createElement(QLatin1String(reportElementName), &errorMessage);
+    if (!errorMessage.isEmpty()) {
+        setStatus(status, errorMessage, el);
+        return KReportElement();
+    }
+    element.setName(attr(el, "report:name", QString()));
+    if (element.name().isEmpty()) {
+        setNoAttributeStatus(el, "report:name", status);
+        return KReportElement();
+    }
+    return element;
 }
 
 bool KReportDesign::Private::processGroupElement(const QDomElement &el,
                                                  KReportDesignReadingStatus *status)
 {
+    //! @todo
     return true;
 }
 
@@ -222,7 +243,7 @@ bool KReportDesign::Private::processDetailElement(const QDomElement &el,
 {
     QDomElement sectionEl;
     for (QDomNode node = el.firstChild(); !node.isNull(); node = node.nextSibling()) {
-        if (!checkElement(node, el, status)) {
+        if (!checkElement(node, status)) {
             return false;
         }
         QDomElement childEl = node.toElement();
@@ -231,9 +252,16 @@ bool KReportDesign::Private::processDetailElement(const QDomElement &el,
             if (!sectionEl.isNull()) {
                 return false;
             }
-            if (!processSectionElement(childEl, status)) {
+            KReportSection section = processSectionElement(childEl, status);
+            if (status->isError()) {
                 return false;
             }
+            if (section.type() != KReportSection::Detail) {
+                setStatus(status,
+                    QString::fromLatin1("Only section of type \"detail\" allowed in <report:detail>"), el);
+                return false;
+            }
+            q->addSection(section);
         }
         else if (name == "report:group") {
             if (!processGroupElement(childEl, status)) {
@@ -270,9 +298,22 @@ bool KReportDesign::Private::processBodyElementChild(const QDomElement &el,
     const QByteArray name = el.tagName().toLatin1();
     //kreportDebug() << name;
     if (name == "report:section") {
-        if (!processSectionElement(el, status)) {
+        KReportSection section = processSectionElement(el, status);
+        if (status->isError()) {
             return false;
         }
+        if (q->hasSection(section.type())) {
+            setStatus(status, QString::fromLatin1("Could not add two sections of type \"%1\" "
+                                                  "to the same report design")
+                                .arg(s_global->sectionTypeName(section.type())), el);
+            return false;
+        }
+        if (section.type() == KReportSection::Detail) {
+            setStatus(status,
+                QString::fromLatin1("Section of type \"detail\" not allowed in <report:body>"), el);
+            return false;
+        }
+        q->addSection(section);
 #if 0 //TODO
         if (section(KRSectionData::sectionTypeFromString(sectiontype)) == 0) {
             insertSection(KRSectionData::sectionTypeFromString(sectiontype));
@@ -340,11 +381,14 @@ bool KReportDesign::Private::processContentElementChild(const QDomElement &el,
             //! @todo?
             pageLayout.setPageSize(defaultPageLayout.pageSize());
         }
-        pageLayout.setMargins(
-                   QMarginsF(attr(el, "fo:margin-left", defaultPageLayout.margins().left()),
-                            attr(el, "fo:margin-top", defaultPageLayout.margins().top()),
-                            attr(el, "fo:margin-right", defaultPageLayout.margins().right()),
-                            attr(el, "fo:margin-bottom", defaultPageLayout.margins().bottom())));
+        QMarginsF margins(attr(el, "fo:margin-left", defaultPageLayout.margins().left()),
+                 attr(el, "fo:margin-top", defaultPageLayout.margins().top()),
+                 attr(el, "fo:margin-right", defaultPageLayout.margins().right()),
+                 attr(el, "fo:margin-bottom", defaultPageLayout.margins().bottom()));
+        bool b = pageLayout.setMargins(margins);
+        if (!b) {
+            qWarning() << "Failed to set page margins to" << margins;
+        }
         const QString s = attr(el, "report:print-orientation", QString());
         if (s == QLatin1String("portrait")) {
             pageLayout.setOrientation(QPageLayout::Portrait);
@@ -356,7 +400,7 @@ bool KReportDesign::Private::processContentElementChild(const QDomElement &el,
         }
     } else if (name == "report:body") {
         for (QDomNode node = el.firstChild(); !node.isNull(); node = node.nextSibling()) {
-            if (!checkElement(node, el, status)) {
+            if (!checkElement(node, status)) {
                 return false;
             }
             if (!processBodyElementChild(node.toElement(), status)) {
@@ -412,7 +456,7 @@ bool KReportDesign::Private::processDocument(const QDomDocument &doc,
 //    deleteDetail();
 
     for (QDomNode node = contentEl.firstChild(); !node.isNull(); node = node.nextSibling()) {
-        if (!checkElement(node, contentEl, status)) {
+        if (!checkElement(node, status)) {
             return false;
         }
         if (!processContentElementChild(node.toElement(), status)) {

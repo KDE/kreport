@@ -34,6 +34,8 @@ set(kreport_LIB_SRCS
     common/KReportUnit.cpp
     common/KReportDesign.cpp
     common/KReportDesign_p.cpp
+    common/KReportElement.cpp
+    ${PROJECT_BINARY_DIR}/src/KReportElement_sdc.cpp
     common/KReportSection.cpp
 
     renderer/KoReportPrintRenderer.cpp
@@ -71,6 +73,7 @@ set(kreport_LIB_SRCS
     items/label/KoReportDesignerItemLabel.cpp
     items/label/KoReportLabelPlugin.cpp
     items/label/BoundedTextItem.cpp
+    items/label/KReportLabelElement.cpp
 
     items/check/KoReportItemCheck.cpp
     items/check/KoReportDesignerItemCheck.cpp
@@ -131,7 +134,9 @@ add_library(KReport SHARED ${kreport_LIB_SRCS})
 kdb_create_shared_data_classes(
     kreport_GENERATED_SHARED_DATA_CLASS_HEADERS # output variable with list of headers
     NO_PREFIX # subdirectory in which the headers should be generated
+    common/KReportElement.shared.h
     common/KReportSection.shared.h
+    items/label/KReportLabelElement.shared.h
 )
 
 kdb_remove_extensions(
