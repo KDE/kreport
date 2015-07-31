@@ -2,12 +2,12 @@
 <!DOCTYPE kexireport>
 <kexireport>
  <report:content xmlns:report="http://kexi-project.org/report/2.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:styles="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0">
-  <report:title>Report</report:title>
+  <report:title>RectItem Test Report</report:title>
   <report:grid report:grid-divisions="4" report:grid-snap="1" report:page-unit="cm" report:grid-visible="1"/>
   <report:page-style report:print-orientation="portrait" fo:margin-bottom="1.5cm" fo:margin-top="2.0cm" fo:margin-left="3.0cm" fo:margin-right="4.0cm" report:page-size="A5">predefined</report:page-style>
   <report:body>
    <report:detail>
-    <report:section svg:height="5.0cm" fo:background-color="#ffffff" report:section-type="detail">
+    <report:section svg:height="5.0cm" fo:background-color="#eeeeee" report:section-type="detail">
      <report:label report:name="label1" report:horizontal-align="left" report:caption="Label" report:vertical-align="center" report:z-index="2.5" svg:x="1.5cm" svg:y="0.5cm" svg:width="4.5cm" svg:height="0.75cm">
       <report:text-style fo:letter-spacing="0%" letter-kerning="true" fo:font-size="9" fo:foreground-color="#000000" fo:font-family="Ubuntu" fo:background-color="#ffffff" fo:background-opacity="100%"/>
       <report:line-style report:line-style="nopen" report:line-weight="1" report:line-color="#000000"/>
