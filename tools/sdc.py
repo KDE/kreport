@@ -113,6 +113,16 @@ def param_exists(lst, name):
             pass
     return False
 
+def find_index(list, elem):
+    try:
+        i = list.index(elem)
+    except ValueError:
+        i = -1
+    return i
+
+def find_last_index(list, elem):
+    i = find_index(list[::-1], elem) #reverted
+    return -1 if i == -1 else len(list) - i - 1
 
 # --- process ---
 shared_class_name = ''
@@ -203,7 +213,7 @@ def insert_operator_eq():
     Inserts generated clone() method (makes sense for explicitly shared class).
 """
 def insert_clone():
-    global outfile, shared_class_name
+    global outfile, shared_class_name, superclass
     outfile.write("""    //! Clones the object with all attributes; the copy isn't shared with the original.
     %s clone() {
         return %s(d->clone());
@@ -214,18 +224,20 @@ def insert_clone():
     Inserts generated Data::operator==() code into the output.
 """
 def insert_data_operator_eq():
-    global outfile, members_list
+    global outfile, members_list, superclass
     outfile.write("""        bool operator==(const Data& other) const {
 """)
     outfile.write("            return ")
     first = True;
-    space = ""
+    space = """
+                   && """
+    if superclass:
+        outfile.write('%s::Data::operator==(other)' % superclass)
+        first = False;
     for member in members_list:
-        outfile.write("""%s%s == other.%s""" % (space, member, member))
+        outfile.write("""%s%s == other.%s""" % ('' if first else space, member, member))
         if first:
             first = False
-            space = """
-                && """
     outfile.write(""";
         }
 
@@ -415,13 +427,7 @@ def update_data_accesors():
             protected_data_accesors += val
 
 def data_member_found(lst):
-    if len(lst) > 1 and lst[0] == 'data_member':
-        return True
-    if len(lst) > 2 and lst[0] == 'protected' and lst[1] == 'data_member':
-        return True
-    if len(lst) > 1 and lst[0] == 'data_method':
-        return True
-    return False
+    return len(lst) > 2 and lst[0] != 'class' and find_index(lst, '//SDC:') >= 2
 
 # sets shared_class_options[option_name] to proper value; returns lst with removed element option_name if exists
 def get_shared_class_option(lst, option_name):
@@ -442,6 +448,17 @@ def get_shared_class_option_with_value(lst, option_name):
             return lst
     shared_class_options[option_name] = False
     return lst
+
+def enabled_shared_class_options():
+    global shared_class_options
+    result = []
+    for opt in shared_class_options:
+        if shared_class_options[opt]:
+            result.append(opt)
+    # add some defaults
+    if find_index(result, 'explicit') == -1:
+        result.append('implicit')
+    return result
 
 def warningHeader():
     return """/****************************************************************************
@@ -524,12 +541,39 @@ def other_comment(line):
       or ln .startswith('//!') \
       or ln.startswith('///')
 
-""" @return name of shared class, possibly with full 'inheriting' section name and superclass """
-def get_shared_class_name_and_inheritance(lst):
-    if lst[-2] == 'public' and lst[-3] == ':': # <name> : public <inherited>
-        return (lst[-4], ' ' + lst[-3] + ' ' + lst[-2] + ' ' + lst[-1], lst[-1])
+""" @return (shared_class_name, export_macro, superclass) """
+def get_shared_class_name_export_and_superclass(lst):
+    # if 'lst' contains ':' and then 'public', we have inheritance
+    i = find_last_index(lst, 'public') # last index because there can be multiple 'public/protected' and most likely we want the last
+    #print i
+    if i >= 3:
+        inheritance_type = 'public'
     else:
-        return (lst[-1], '', '') # <name>
+        i = find_last_index(lst, 'protected')
+        inheritance_type = 'protected' if i >= 3 else ''
+    # - if there's inheritance and export_macro exists, lst has at least 6 elements:
+    # ['class', export_macro, shared_class_name, ':', 'public/protected', superclass, ...]:
+    # - if export_macro exists, lst has at least 3 elements:
+    # ['class', export_macro, shared_class_name, ...]:
+    expected_len = 6 if inheritance_type else 3
+    if len(lst) >= expected_len:
+        _shared_class_name = lst[2]
+        _export_macro = lst[1]
+    else: # no export_macro
+        _shared_class_name = lst[1]
+        _export_macro = ''
+    _superclass = lst[i + 1] if inheritance_type else ''
+    return (_shared_class_name, _export_macro, _superclass)
+
+""" Strips the C++ comment //: @return lst with removed first found element that starts
+    with '//' and all following """
+def remove_cpp_comment(lst):
+    result = []
+    for el in lst:
+        if el.startswith('//'):
+            break
+        result.append(el)
+    return result
 
 def process():
     global infile, outfile, generated_code_inserted, data_class_ctor, data_class_copy_ctor
@@ -556,15 +600,16 @@ def process():
             break
 #        print line,
         lst = line.split()
-#        print lst
+        #print lst, find_index(lst, '//SDC:')
         if line_number == position_for_include_QSharedData_h:
             outfile.write("""#include <QSharedData>
 """)
             position_for_include_QSharedData_h = -1
-        if line.startswith('class'):
+        line_starts_with_class = len(lst) > 0 and lst[0] == 'class'
+        if line_starts_with_class and find_index(lst, '//SDC:') < 0:
             shared_class_inserted = False # required because otherwise QSharedDataPointer<Data> d will be added to all classes
             outfile.write(line)
-        elif line.startswith('shared class'):
+        elif line_starts_with_class and find_index(lst, '//SDC:') > 0:
             # re-init variables, needed if there are more than one shared class per file
             shared_class_inserted = False
             generated_code_inserted = False
@@ -580,17 +625,15 @@ def process():
             data_class_ctor_changed = False
             data_class_copy_ctor_changed = False
             lst = shlex.split(line) # better than default split()
-            # syntax: shared class export=<EXPORT> inherits=<INHERITANCE> <NAME>
-            # INHERITANCE is e.g. inherits="public Foo" - use quotes
-            # output: class <EXPORT> <NAME>
-            export = param(lst, 'export')
-            inherits = param(lst, 'inherits')
+            # Syntax: shared class [EXPORT_MACRO] [CLASS_OPTIONS] MyClass [: public SuperClass]
+            # Any unrecognized bits are left out, this lets to use EXPORT_MACRO=MYLIB_EXPORT for example.
+            # output: class [EXPORT_MACRO] MyClass [: public SuperClass]
             lst = get_shared_class_option(lst, 'explicit')
             lst = get_shared_class_option(lst, 'operator==')
             lst = get_shared_class_option(lst, 'with_from_to_map')
             lst = get_shared_class_option(lst, 'virtual_dtor')
             lst = get_shared_class_option_with_value(lst, 'namespace')
-            (shared_class_name, shared_class_inheritance, superclass) = get_shared_class_name_and_inheritance(lst)
+            (shared_class_name, export_macro, superclass) = get_shared_class_name_export_and_superclass(lst)
             if superclass:
                 shared_class_options['virtual_dtor'] = True # inheritance implies this
             main_ctor = """    };
@@ -628,10 +671,6 @@ def process():
             main_ctor += """
     %s~%s();
 """ % (('virtual ' if shared_class_options['virtual_dtor'] else ''), shared_class_name)
-            if export:
-                name = export + ' ' + shared_class_name + shared_class_inheritance
-            if inherits:
-                inherits = ' : ' + inherits
             if shared_class_options['explicit']:
                 outfile.write("""/*! @note objects of this class are explicitly shared, what means they behave like regular
           C++ pointers, except that by doing reference counting and not deleting the shared
@@ -646,7 +685,11 @@ def process():
  */
 """)
 
-            outfile.write("class %s%s\n" % (name, inherits))
+            # Finally output the class name: use all remaining elements of 'lst' except
+            # the 0th (which is the 'shared' keyword):
+            outfile.write('//! @note This class has been generated using the following SDC class options: '
+                          + ', '.join(enabled_shared_class_options()) + '\n')
+            outfile.write(' '.join(remove_cpp_comment(lst)) + '\n')
             while True:
                 prev_line = line
                 line = infile.readline() # output everything until 'public:'
@@ -701,35 +744,30 @@ def process():
                     break
                 outfile.write(line)
         elif data_member_found(lst):
-            if lst[-1].endswith(';'):
-                lst[-1] = lst[-1][:-1]
+            """ for syntax see top of the file """
+            if lst[1].endswith(';'):
+                lst[1] = lst[1][:-1] # strip ';' from member name
+            sdc_index = find_index(lst, '//SDC:')
+            options_list = lst[sdc_index+1:]
             #print lst
-            if lst[0] == 'data_method':
-                #if member.has_key('docs'):
-                #    data_class_members += member['docs'] + '\n'
-                #    del member['docs']
-                data_class_members += "        %s;\n" % (' '.join(lst[1:]))
-                continue
-            elif lst[0] == 'protected':
-                member['access'] = 'protected'
-                lst = lst[1:]
-            else:
-                member['access'] = 'public'
-            member['type'] = fix_templates(lst[1])
-            member['name'] = lst[2]
-            members_list.append(member['name']);
-            member['default'] = param(lst, 'default')
-            member['default_setter'] = param(lst, 'default_setter')
-            member['no_getter'] = param_exists(lst, 'no_getter')
-            member['getter'] = param(lst, 'getter')
-            member['no_setter'] = param_exists(lst, 'no_setter')
-            member['setter'] = param(lst, 'setter')
-            member['custom'] = param_exists(lst, 'custom')
-            member['custom_getter'] = param_exists(lst, 'custom_getter') or member['custom']
-            member['custom_setter'] = param_exists(lst, 'custom_setter') or member['custom']
-            member['mutable'] = param_exists(lst, 'mutable')
-            member['simple_type'] = param_exists(lst, 'simple_type')
-            member['invokable'] = param_exists(lst, 'invokable')
+            member['name'] = lst[1]
+            member['type'] = fix_templates(lst[0])
+            member['access'] = 'protected' if (find_index(options_list, 'protected') >= 0) else 'public'
+            member['default'] = param(options_list, 'default')
+            member['default_setter'] = param(options_list, 'default_setter')
+            member['no_getter'] = param_exists(options_list, 'no_getter')
+            member['getter'] = param(options_list, 'getter')
+            member['no_setter'] = param_exists(options_list, 'no_setter')
+            member['setter'] = param(options_list, 'setter')
+            member['custom'] = param_exists(options_list, 'custom')
+            member['custom_getter'] = param_exists(options_list, 'custom_getter') or member['custom']
+            member['custom_setter'] = param_exists(options_list, 'custom_setter') or member['custom']
+            member['mutable'] = param_exists(options_list, 'mutable')
+            member['simple_type'] = param_exists(options_list, 'simple_type')
+            member['invokable'] = param_exists(options_list, 'invokable')
+            # '(' found in name so it's a method declaration -> just add it to the data class
+            isMethodDeclaration = find_index(member['name'], '(') >= 0
+            isInternalMember = member['no_getter'] and member['no_setter']
             #print member
             if not data_class_ctor_changed:
                 data_class_ctor = """    //! @internal data class used to implement %s shared class %s.
@@ -753,43 +791,48 @@ def process():
          : %s(other)
 """ % ((superclass + '::Data') if superclass else 'QSharedData')
                 data_class_copy_ctor_changed = True
-            if member['default']:
-                data_class_ctor += '        '
-                if data_class_ctor_changed:
-                    data_class_ctor += ', '
-                else:
-                    data_class_ctor += ': '
-                    data_class_ctor_changed = True
-                data_class_ctor += member['name'] + '(' + member['default'] + ')\n'
-#            print data_class_ctor
-            data_class_copy_ctor += '         , %s(other.%s)\n' % (member['name'], member['name'])
+            if not isMethodDeclaration:
+                members_list.append(member['name']);
+                if member['default']:
+                    data_class_ctor += '        '
+                    if data_class_ctor_changed:
+                        data_class_ctor += ', '
+                    else:
+                        data_class_ctor += ': '
+                        data_class_ctor_changed = True
+                    data_class_ctor += member['name'] + '(' + member['default'] + ')\n'
+    #            print data_class_ctor
+                data_class_copy_ctor += '         , %s(other.%s)\n' % (member['name'], member['name'])
             if member.has_key('docs'):
                 data_class_members += member['docs']
 
-            isInternalMember = member['no_getter'] and member['no_setter']
             mutable = 'mutable ' if member['mutable'] else ''
-            data_class_members += "        %s%s %s;" % (mutable, member['type'], member['name'])
+            data_class_members += "        %s%s;" % (mutable, ' '.join(lst[:sdc_index]))
             # add doc for shared data member
-            if isInternalMember:
-                data_class_members += " //!< @internal"
-            else:
-                data_class_members += " //!< @see "
-            if not member['no_getter']:
-                getter = member['getter']
-                if not getter:
-                    getter = member['name']
-                data_class_members += "%s::%s()" % (shared_class_name, getter)
-            if not member['no_setter']:
+            if not isMethodDeclaration:
+                if isInternalMember:
+                    data_class_members += ' //!< @internal'
+                else:
+                    data_class_members += ' //!< @see '
                 if not member['no_getter']:
-                    data_class_members += ", "
-                setter = makeSetter(member['name'], member['setter'])
-                data_class_members += "%s::%s()" % (shared_class_name, setter)
-            data_class_members += "\n"
+                    getter = member['getter']
+                    if not getter:
+                        getter = member['name']
+                    data_class_members += "%s::%s()" % (shared_class_name, getter)
+                if not member['no_setter']:
+                    if not member['no_getter']:
+                        data_class_members += ", "
+                    setter = makeSetter(member['name'], member['setter'])
+                    data_class_members += "%s::%s()" % (shared_class_name, setter)
 
-            if shared_class_options['with_from_to_map']:
-                toMap_impl += '    map[QLatin1String(\"%s\")] = %s;\n' % (member['name'], generate_toString_conversion(member['name'], member['type']))
-                fromMap_impl += '    %s\n' % generate_fromString_conversion(member['name'], member['type'])
-            update_data_accesors()
+            data_class_members += '\n'
+
+            if not isMethodDeclaration:
+                if shared_class_options['with_from_to_map']:
+                    toMap_impl += '    map[QLatin1String(\"%s\")] = %s;\n' % (member['name'], generate_toString_conversion(member['name'], member['type']))
+                    fromMap_impl += '    %s\n' % generate_fromString_conversion(member['name'], member['type'])
+                update_data_accesors()
+
             member = {}
             if len(prev_line.split()) == 0: # remove current line because it's not going to the output now; this helps to remove duplicated empty lines
                 line = ''
@@ -824,14 +867,14 @@ def process():
                 outfile.write("""
 template<>
 %s %s::Data *QSharedDataPointer<%s::Data>::clone();
-""" % (export, shared_class_name, shared_class_name))
+""" % (export_macro, shared_class_name, shared_class_name))
                 open_sdc()
                 outfile_sdc.write("""template<>
 %s %s::Data *QSharedDataPointer<%s::Data>::clone()
 {
     return d->clone();
 }
-""" % (export, shared_class_name, shared_class_name))
+""" % (export_macro, shared_class_name, shared_class_name))
 
         else:
             #outfile.write('____ELSE____\n');
