@@ -26,7 +26,7 @@
 #include <QRect>
 
 //! @brief The KReportElement class represents a functional visual element of a report design
-shared class export=KREPORT_EXPORT explicit operator== virtual_dtor KReportElement
+class KREPORT_EXPORT KReportElement //SDC: explicit operator== virtual_dtor
 {
 public:
     /*!
@@ -35,7 +35,7 @@ public:
     @setter
     Sets the element's name to @a name.
     */
-    data_member QString name;
+    QString name; //SDC:
 
     /*!
     @getter
@@ -43,7 +43,7 @@ public:
     @setter
     Sets the element's rectangle to @a rect.
     */
-    data_member QRect rect;
+    QRect rect; //SDC:
 
     /*!
     @getter
@@ -57,7 +57,31 @@ public:
     @setter
     Sets the element's Z-value to @a z.
     */
-    data_member qreal z;
+    qreal z; //SDC:
+
+    /*!
+    @getter
+    @return element's foreground color.
+    @setter
+    Sets the element's foreground color to @a foregroundColor.
+    */
+    QColor foregroundColor; //SDC:
+
+    /*!
+    @getter
+    @return element's background color.
+    @setter
+    Sets the element's background color to @a backgroundColor.
+    */
+    QColor backgroundColor; //SDC:
+
+    /*!
+    @getter
+    @return element's background opacity.
+    @setter
+    Sets the element's background opacity to @a backgroundOpacity.
+    */
+    QColor backgroundOpacity; //SDC:
 };
 
 #endif // KREPORTELEMENT_H

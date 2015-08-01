@@ -23,7 +23,7 @@
 #include "KReportElement.h"
 
 //! @brief The KReportLabelElement class represents a label element of a report design
-shared class export=KREPORT_EXPORT explicit operator== KReportLabelElement : public KReportElement
+class KREPORT_EXPORT KReportLabelElement : public KReportElement //SDC: explicit operator== virtual_dtor
 {
 public:
     /*!
@@ -32,7 +32,7 @@ public:
     @setter
     Sets the element's name to @a name.
     */
-    data_member QString text;
+    QString text; //SDC:
 };
 
 #endif // KREPORTLABELELEMENT_H

@@ -26,7 +26,7 @@
 /*! A section has optional report header, report footer, page header, page footer,
     group header, group footer and detail.
     In the case of page header and page footer it is possible to define (firstpage, odd, even or lastpage). */
-shared class export=KREPORT_EXPORT explicit operator== KReportSection
+class KREPORT_EXPORT KReportSection //SDC: explicit operator== virtual_dtor
 {
 public:
     enum Type {
@@ -55,7 +55,7 @@ public:
     @setter
     Sets section type.
     */
-    data_member KReportSection::Type type default=KReportSection::InvalidType simple_type;
+    KReportSection::Type type;  //SDC: default=KReportSection::InvalidType simple_type
 
     /*!
     @getter
@@ -66,7 +66,7 @@ public:
     Sets section height measured in points.
     Set negative value to reset to the default height.
     */
-    data_member qreal height default=-1 custom_getter;
+    qreal height; //SDC: default=-1 custom_getter
 
     /*!
     @getter
@@ -77,13 +77,13 @@ public:
     Sets section background color.
     Set invalid color (QColor()) to reset to the default background color.
     */
-    data_member QColor backgroundColor custom_getter;
+    QColor backgroundColor;  //SDC: custom_getter
 
     /*!
     @getter
     @return all elements of this section
     */
-    data_member QList<KReportElement> elements custom_getter no_setter;
+    QList<KReportElement> elements;  //SDC: custom_getter no_setter
 
     //! Adds element to this section
     void addElement(const KReportElement &element);
