@@ -182,7 +182,7 @@ def insert_fromMap_toMap_methods():
 
 """ % (shared_class_name, shared_class_name))
     open_sdc()
-    outfile_sdc.write("""%s::Data::Data(const QMap<QString, QString>& map, bool *ok)
+    outfile_sdc.write("""%s::Data::Data(const QMap<QString, QString> &map, bool *ok)
 {
 %s
     if (ok)
@@ -226,7 +226,7 @@ def insert_clone():
 """
 def insert_data_operator_eq():
     global outfile, members_list, superclass
-    outfile.write("""        bool operator==(const Data& other) const {
+    outfile.write("""        bool operator==(const Data &other) const {
 """)
     outfile.write("            return ")
     first = True;
@@ -277,7 +277,7 @@ def insert_generated_code(context):
     if shared_class_options['with_from_to_map']:
         outfile.write("""        /*! Constructor for Data object, takes attributes saved to map @a map.
         If @a ok is not 0, *ok is set to true on success and to false on failure. @see toMap(). */
-        Data(const QMap<QString, QString>& map, bool *ok);
+        Data(const QMap<QString, QString> &map, bool *ok);
 
         QMap<QString, QString> toMap() const;
 
@@ -410,7 +410,7 @@ def update_data_accesors():
         # heuristics to check if the const & should be used:
         arg_type = member['type']
         if arg_type.lower() != arg_type and not member['simple_type']:
-            arg_type = 'const %s&' % arg_type
+            arg_type = 'const %s &' % arg_type
         setter = makeSetter(member['name'], member['setter'])
         default_setter = (' = ' + member['default_setter']) if member['default_setter'] else ''
         invokable = 'Q_INVOKABLE ' if member['invokable'] else ''
@@ -646,14 +646,14 @@ def process():
     {
     }
 
-    %s(const %s& other)
+    %s(const %s &other)
      : %s
     {
     }
 """ % (shared_class_name, superclass if superclass else 'd', shared_class_name, shared_class_name, (superclass + '(other)') if superclass else 'd(other.d)')
             if superclass:
                 main_ctor += """
-    %s(const %s& other)
+    %s(const %s &other)
      : %s(other)
     {
         if (!data()) { // '@a 'other' does not store suitable data, create a new one and copy what we have
@@ -666,7 +666,7 @@ def process():
                 main_ctor += """
     /*! Constructor for %s object, takes attributes saved to map @a map.
          If @a ok is not 0, sets *ok to true on success and to false on failure. @see toMap(). */
-    %s(const QMap<QString, QString>& map, bool *ok)
+    %s(const QMap<QString, QString> &map, bool *ok)
      : d(new Data(map, ok))
     {
     }
@@ -785,13 +785,13 @@ def process():
                 data_class_copy_ctor = ''
                 if superclass:
                     data_class_copy_ctor += """
-        Data(const %s::Data& other)
+        Data(const %s::Data &other)
          : %s::Data(other)
         {
         }
 """ % (superclass, superclass)
                 data_class_copy_ctor += """
-        Data(const Data& other)
+        Data(const Data &other)
          : %s(other)
 """ % ((superclass + '::Data') if superclass else 'QSharedData')
                 data_class_copy_ctor_changed = True
