@@ -77,11 +77,11 @@ public:
 
     /*!
     @getter
-    @return element's background opacity.
+    @return element's background opacity, which is between 0.0 (transparent) and 1.0 (opaque).
     @setter
     Sets the element's background opacity to @a backgroundOpacity.
     */
-    QColor backgroundOpacity; //SDC:
+    qreal backgroundOpacity; //SDC:
 };
 
 #endif // KREPORTELEMENT_H
