@@ -65,6 +65,34 @@ do {\
         return;\
 } while (0)
 
+static bool openDesignFile(KReportDesign *design, QString *errorMessage)
+{
+    const QString dir(QFile::decodeName(FILES_DATA_DIR));
+    const QString fname(QLatin1String(QTest::currentTestFunction()) + QLatin1String(".kreport"));
+    QFile file(dir + QDir::separator() + fname);
+    bool ok = file.open(QFile::ReadOnly | QFile::Text);
+    if (!ok) {
+        *errorMessage = QString::fromLatin1("Could not open file %1: ").arg(file.fileName()) + file.errorString();
+        return false;
+    }
+
+    QString content = file.readAll();
+    if (file.error() != QFileDevice::NoError) {
+        *errorMessage = QString::fromLatin1("Error reading file %1: ").arg(file.fileName()) + file.errorString();
+        return false;
+    }
+
+    KReportDesignReadingStatus status;
+    if (!design->setContent(content, &status)) {
+        QString message;
+        QDebug(&message) << status;
+        *errorMessage = QLatin1String("Failed to load content. ") + message;
+        return false;
+    }
+    errorMessage->clear();
+    return true;
+}
+
 void FormatTest::testPageOptions()
 {
     return;
@@ -159,25 +187,12 @@ void FormatTest::testLineItem()
 
 void FormatTest::testRectItem()
 {
-    const QString dir(QFile::decodeName(FILES_DATA_DIR));
-    const QString fname(QLatin1String(QTest::currentTestFunction()) + QLatin1String(".kreport"));
-    QFile file(dir + QDir::separator() + fname);
-    bool ok = file.open(QFile::ReadOnly | QFile::Text);
-    if (!ok) {
-        QFAIL(qPrintable(QString::fromLatin1("Could not open file %1: ").arg(file.fileName()) + file.errorString()));
-    }
-
-    QString content = file.readAll();
-    QVERIFY2(file.error() == QFileDevice::NoError,
-        qPrintable(QString::fromLatin1("Error reading file %1: ").arg(file.fileName()) + file.errorString()));
-
     KReportDesign design;
-    KReportDesignReadingStatus status;
-    if (!design.setContent(content, &status)) {
-        QString message;
-        QDebug(&message) << status;
-        QFAIL(qPrintable(QLatin1String("Failed to load content. ") + message));
+    QString errorMessage;
+    if (!openDesignFile(&design, &errorMessage)) {
+        QFAIL(qPrintable(errorMessage));
     }
+
     QCOMPARE(design.title(), QLatin1String("RectItem Test Report"));
 
     qDebug()<<design.pageLayout();
