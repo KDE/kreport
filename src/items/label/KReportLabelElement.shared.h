@@ -33,6 +33,13 @@ public:
     Sets the element's name to @a name.
     */
     QString text; //SDC:
+
+    //! Constructs a label with text @a text.
+    explicit KReportLabelElement(const QString &text)
+        : KReportElement(new Data)
+    {
+        setText(text);
+    }
 };
 
 #endif // KREPORTLABELELEMENT_H
