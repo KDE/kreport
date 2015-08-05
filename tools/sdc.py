@@ -202,13 +202,30 @@ QMap<QString, QString> %s::Data::toMap() const
     Inserts generated operator==() code for shared class into the output.
 """
 def insert_operator_eq():
-    global outfile, shared_class_name, superclass
+    global outfile, shared_class_name, shared_class_options, superclass
+    data = 'data()' if superclass else 'd'
+    otherData = 'other.' + data
+    if not shared_class_options['explicit']: # deep comparison only for implicitly shared data
+        data = '*' + data
+        otherData = '*' + otherData
     outfile.write("""    //! @return true if this object is equal to @a other; otherwise returns false.
-    bool operator==(const %s& other) const {
-        return *%s == *other.%s;
+    bool operator==(const %s &other) const {
+        return %s == %s;
     }
 
-""" % (shared_class_name, 'data()' if superclass else 'd', 'data()' if superclass else 'd'))
+""" % (shared_class_name, data, otherData))
+
+"""
+    Inserts generated operator!=() code for shared class into the output.
+"""
+def insert_operator_neq():
+    global outfile, shared_class_name, shared_class_options, superclass
+    outfile.write("""    //! @return true if this object is not equal to @a other; otherwise returns false.
+    bool operator!=(const %s &other) const {
+        return !operator==(other);
+    }
+
+""" % (shared_class_name))
 
 """
     Inserts generated clone() method (makes sense for explicitly shared class).
@@ -282,7 +299,7 @@ def insert_generated_code(context):
         QMap<QString, QString> toMap() const;
 
 """)
-    if shared_class_options['operator==']:
+    if shared_class_options['operator=='] and not shared_class_options['explicit']:
         insert_data_operator_eq()
 
     outfile.write(data_class_members)
@@ -293,6 +310,7 @@ def insert_generated_code(context):
         insert_fromMap_toMap_methods()
     if shared_class_options['operator==']:
         insert_operator_eq()
+        insert_operator_neq()
     if shared_class_options['explicit'] and not superclass:
         insert_clone()
     if protected_data_accesors:
