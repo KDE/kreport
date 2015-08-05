@@ -31,7 +31,8 @@ version = '0.2'
 #                                   setter=CUSTOM_SETTER_NAME,
 #                                   custom, custom_getter, custom_setter,
 #                                   default_setter=DEFAULT_SETTER_PARAM,
-#                                   mutable, simple_type, invokable
+#                                   mutable, simple_type, invokable,
+#                                   internal
 #    If NAME contains '(' then 'TYPE NAME;' is added to the shared data class
 #    as a method declaration.
 #
@@ -235,7 +236,9 @@ def insert_data_operator_eq():
         outfile.write('%s::Data::operator==(other)' % superclass)
         first = False;
     for member in members_list:
-        outfile.write("""%s%s == other.%s""" % ('' if first else space, member, member))
+        if member['internal']:
+            continue
+        outfile.write("""%s%s == other.%s""" % ('' if first else space, member['name'], member['name']))
         if first:
             first = False
     outfile.write(""";
@@ -755,9 +758,10 @@ def process():
             member['access'] = 'protected' if (find_index(options_list, 'protected') >= 0) else 'public'
             member['default'] = param(options_list, 'default')
             member['default_setter'] = param(options_list, 'default_setter')
-            member['no_getter'] = param_exists(options_list, 'no_getter')
+            member['internal'] = param_exists(options_list, 'internal'); # skip Data::operators and setter/getter
+            member['no_getter'] = param_exists(options_list, 'no_getter') or member['internal']
             member['getter'] = param(options_list, 'getter')
-            member['no_setter'] = param_exists(options_list, 'no_setter')
+            member['no_setter'] = param_exists(options_list, 'no_setter') or member['internal']
             member['setter'] = param(options_list, 'setter')
             member['custom'] = param_exists(options_list, 'custom')
             member['custom_getter'] = param_exists(options_list, 'custom_getter') or member['custom']
