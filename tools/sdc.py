@@ -578,6 +578,41 @@ def remove_cpp_comment(lst):
         result.append(el)
     return result
 
+""" Simplifies a multi-line doc like this:
+/*!
+Foo
+*/
+to:
+/*! Foo */ """
+def simplify_multiline_doc(doc):
+    lines = doc.split('\n')
+    result = []
+    if lines[0].strip() == '':
+        result += '\n'
+        lines.pop(0)
+    if len(lines) < 2:
+        return doc
+    indentation = '';
+    i = 0;
+    for c in lines[0]:
+        if c == ' ' or c == '\t':
+            indentation += c
+        else:
+            break
+    line0 = lines[0].strip()
+    line1 = lines[1].strip()
+    if line0 == '/*!' and not line1.startswith('/*') and not line1.startswith('/*'):
+        result += indentation + '/*! ' + line1 + '\n'
+        lines = lines[2:] # because line 0 and 1 already processed
+    for line in lines:
+        if line.strip() == '*/': # add to prev line
+            last = result.pop()
+            result += last[:-1] + ' */\n'
+        else:
+            result += line + '\n'
+    result[-1] = result[-1][:-1] # remove last \n
+    return ''.join(result)
+
 def process():
     global infile, outfile, generated_code_inserted, data_class_ctor, data_class_copy_ctor
     global shared_class_name, superclass, shared_class_options, shared_class_inserted, data_class_members
@@ -796,7 +831,7 @@ def process():
 """ % ((superclass + '::Data') if superclass else 'QSharedData')
                 data_class_copy_ctor_changed = True
             if not isMethodDeclaration:
-                members_list.append(member['name']);
+                members_list.append(member);
                 if member['default']:
                     data_class_ctor += '        '
                     if data_class_ctor_changed:
@@ -808,7 +843,7 @@ def process():
     #            print data_class_ctor
                 data_class_copy_ctor += '         , %s(other.%s)\n' % (member['name'], member['name'])
             if member.has_key('docs'):
-                data_class_members += member['docs']
+                data_class_members += simplify_multiline_doc(member['docs']) + '\n';
 
             mutable = 'mutable ' if member['mutable'] else ''
             data_class_members += "        %s%s;" % (mutable, ' '.join(lst[:sdc_index]))
