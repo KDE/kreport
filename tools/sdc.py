@@ -885,7 +885,8 @@ def process():
                         data_class_ctor_changed = True
                     data_class_ctor += member['name'] + '(' + member['default'] + ')\n'
     #            print data_class_ctor
-                data_class_copy_ctor += '         , %s(other.%s)\n' % (member['name'], member['name'])
+                if not member['internal']:
+                    data_class_copy_ctor += '         , %s(other.%s)\n' % (member['name'], member['name'])
             if member.has_key('docs'):
                 data_class_members += simplify_multiline_doc(member['docs']) + '\n';
 
