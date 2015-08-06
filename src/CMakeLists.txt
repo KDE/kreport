@@ -34,6 +34,7 @@ set(kreport_LIB_SRCS
     common/KReportUnit.cpp
     common/KReportDesign.cpp
     common/KReportDesign_p.cpp
+    common/KReportLineStyle.cpp
     common/KReportElement.cpp
     ${PROJECT_BINARY_DIR}/src/KReportElement_sdc.cpp
     common/KReportSection.cpp
@@ -134,6 +135,7 @@ add_library(KReport SHARED ${kreport_LIB_SRCS})
 kdb_create_shared_data_classes(
     kreport_GENERATED_SHARED_DATA_CLASS_HEADERS # output variable with list of headers
     NO_PREFIX # subdirectory in which the headers should be generated
+    common/KReportLineStyle.shared.h
     common/KReportElement.shared.h
     common/KReportSection.shared.h
     items/label/KReportLabelElement.shared.h

@@ -23,9 +23,13 @@
 #include "wrtembed/KoReportDesigner.h"
 #include "common/KReportPluginMetaData.h"
 #include "KReportLabelElement.h"
+#include "KReportLineStyle.h"
+#include "KReportUtils.h"
 #ifdef KREPORT_SCRIPTING
 #include "krscriptlabel.h"
 #endif
+
+#include <QDomElement>
 
 KREPORT_PLUGIN_FACTORY(KoReportLabelPlugin, "label.json")
 
@@ -57,6 +61,33 @@ QObject* KoReportLabelPlugin::createDesignerInstance(const QDomNode & element, K
 KReportElement KoReportLabelPlugin::createElement()
 {
     return KReportLabelElement();
+}
+
+bool KoReportLabelPlugin::loadElement(KReportElement *el, const QDomElement &dom, KReportDesignReadingStatus *status)
+{
+    if (!KoReportPluginInterface::loadElement(el, dom, status)) {
+        return false;
+    }
+    KReportLabelElement label(*el);
+    label.setText(KReportUtils::attr(dom, "report:caption", QString()));
+
+    const QDomElement textStyleDom = dom.firstChildElement(QLatin1String("report:text-style"));
+    QFont font;
+    font.setLetterSpacing(QFont::PercentageSpacing,
+                          100.0 * KReportUtils::attrPercent(textStyleDom, "fo:letter-spacing", font.letterSpacing()));
+    font.setKerning(KReportUtils::attr(textStyleDom, "style:letter-kerning", font.kerning()));
+    font.setPointSizeF(KReportUtils::attr(textStyleDom, "fo:font-size", font.pointSizeF()));
+    font.setFamily(KReportUtils::attr(textStyleDom, "fo:font-family", font.family()));
+    label.setFont(font);
+
+    const QDomElement lineStyleDom = dom.firstChildElement(QLatin1String("report:line-style"));
+    KReportLineStyle borderStyle(label.borderStyle());
+    borderStyle.setPenStyle(KReportUtils::attr(lineStyleDom, "report:line-style", borderStyle.penStyle()));
+    borderStyle.setColor(KReportUtils::attr(lineStyleDom, "report:line-color", borderStyle.color()));
+    // border-line-width could be better name but it's too late...
+    borderStyle.setWidth(KReportUtils::attr(lineStyleDom, "report:line-weight", borderStyle.width()));
+    label.setBorderStyle(borderStyle);
+    return true;
 }
 
 #ifdef KREPORT_SCRIPTING

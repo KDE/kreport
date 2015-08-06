@@ -21,6 +21,9 @@
 #define KREPORTLABELELEMENT_H
 
 #include "KReportElement.h"
+#include "KReportLineStyle.h"
+
+#include <QFont>
 
 //! @brief The KReportLabelElement class represents a label element of a report design
 class KREPORT_EXPORT KReportLabelElement : public KReportElement //SDC: explicit operator== virtual_dtor
@@ -33,6 +36,30 @@ public:
     Sets the element's name to @a name.
     */
     QString text; //SDC:
+
+    /*!
+    @getter
+    @return element's font.
+    @setter
+    Sets the element's font to @a font.
+    */
+    QFont font; //SDC:
+
+    /*!
+    @getter
+    @return element's text alignment.
+    @setter
+    Sets the element's text alignment to @a alignment.
+    */
+    Qt::Alignment alignment; //SDC: default=Qt::AlignLeft|Qt::AlignVCenter
+
+    /*!
+    @getter
+    @return element's border style.
+    @setter
+    Sets the element's border style to @a borderStyle.
+    */
+    KReportLineStyle borderStyle; //SDC:
 
     //! Constructs a label with text @a text.
     explicit KReportLabelElement(const QString &text)
