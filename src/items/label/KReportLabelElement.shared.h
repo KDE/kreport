@@ -47,7 +47,7 @@ public:
 
     /*!
     @getter
-    @return element's text alignment.
+    @return element's text alignment. Default value is Qt::AlignLeft|Qt::AlignVCenter.
     @setter
     Sets the element's text alignment to @a alignment.
     */
