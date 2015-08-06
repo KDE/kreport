@@ -26,6 +26,11 @@ KReportElement::~KReportElement()
 {
 }
 
+void KReportElement::setBackgroundOpacity(qreal backgroundOpacity)
+{
+    d->backgroundOpacity = qMax(qMin(backgroundOpacity, 1.0), 0.0);
+}
+
 KREPORT_EXPORT QDebug operator<<(QDebug dbg, const KReportElement& element)
 {
     dbg.nospace() << qPrintable(

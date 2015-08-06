@@ -86,7 +86,7 @@ public:
     @setter
     Sets the element's background opacity to @a backgroundOpacity.
     */
-    qreal backgroundOpacity; //SDC: default=0.0
+    qreal backgroundOpacity; //SDC: default=0.0 custom_setter
 };
 
 //! Sends information about the element @a element to debug output @a dbg.
