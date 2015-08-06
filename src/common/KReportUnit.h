@@ -232,7 +232,8 @@ public:
     /// if it is controlled with the given @p listOptions.
     int indexInListForUi(ListOptions listOptions = ListAll) const;
 
-    /// parse common %KReport and Odf values, like "10cm", "5mm" to pt
+    /// Parses common %KReport and ODF values, like "10cm", "5mm" to pt.
+    /// If no unit is specifies, pt is assumed.
     static qreal parseValue(const QString &value, qreal defaultVal = 0.0);
 
     /// parse an angle to its value in degrees
