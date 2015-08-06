@@ -9,8 +9,8 @@
    <report:detail>
     <report:section svg:height="5.0cm" fo:background-color="#eeeeee" report:section-type="detail">
      <report:label report:name="label1" report:horizontal-align="left" report:caption="Label" report:vertical-align="center" report:z-index="2.5" svg:x="1.5cm" svg:y="0.5cm" svg:width="4.5cm" svg:height="0.75cm">
-      <report:text-style fo:letter-spacing="0%" letter-kerning="true" fo:font-size="9" fo:foreground-color="#101010" fo:font-family="Ubuntu" fo:background-color="#eeeeee" fo:background-opacity="90%"/>
-      <report:line-style report:line-style="nopen" report:line-weight="1" report:line-color="#000000"/>
+      <report:text-style fo:letter-spacing="110%" style:letter-kerning="true" fo:font-size="9" fo:foreground-color="#101010" fo:font-family="Ubuntu" fo:background-color="#dddddd" fo:background-opacity="90%"/>
+      <report:line-style report:line-style="dash" report:line-weight="1" report:line-color="#400000"/>
      </report:label>
     </report:section>
    </report:detail>
