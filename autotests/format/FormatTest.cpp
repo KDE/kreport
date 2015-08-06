@@ -20,6 +20,7 @@
  */
 
 #include "FormatTest.h"
+#include "KReportTestUtils.h"
 #include "KoReportPreRenderer.h"
 #include "KoReportDesigner.h"
 #include "KReportLabelElement.h"
@@ -45,25 +46,6 @@
 #include <QPageLayout>
 
 QTEST_MAIN(FormatTest)
-
-namespace QTest
-{
-bool qCompare(qreal val1, qreal val2, qreal epsilon, const char *actual, const char *expected,
-              const char *file, int line)
-{
-    return (qAbs( val1 - val2 ) < epsilon)
-        ? compare_helper(true, "COMPARE()", toString(val1), toString(val2), actual,
-                         expected, file, line)
-        : compare_helper(false, "Compared qreals are not the same", toString(val1),
-                         toString( val2 ), actual, expected, file, line);
-}
-}
-
-#define QFUZZYCOMPARE(actual, expected, epsilon) \
-do {\
-    if (!QTest::qCompare(actual, expected, epsilon, #actual, #expected, __FILE__, __LINE__))\
-        return;\
-} while (0)
 
 static bool openDesignFile(KReportDesign *design, QString *errorMessage)
 {
@@ -93,27 +75,24 @@ static bool openDesignFile(KReportDesign *design, QString *errorMessage)
     return true;
 }
 
-void FormatTest::testPageOptions()
+void FormatTest::testPageLayout()
 {
-    return;
-    QString s;
-    s += "<!DOCTYPE kexireport>\n";
-    s += "<kexireport>\n";
-    s += "<report:content xmlns:report=\"http://kexi-project.org/report/2.0\" xmlns:fo=\"urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0\" xmlns:svg=\"urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0\" >\n";
-    s += "<report:title>Report</report:title>\n";
-    s += "<report:grid report:grid-divisions=\"4\" report:grid-snap=\"1\" report:page-unit=\"cm\" report:grid-visible=\"1\" />\n";
-    s += "<report:page-style report:print-orientation=\"portrait\" fo:margin-bottom=\"1.5cm\" fo:margin-top=\"2.0cm\" fo:margin-left=\"3.0cm\" fo:margin-right=\"4.0cm\" report:page-size=\"A5\" >predefined</report:page-style>\n";
-    // needs detail section, or else designer crash
-    s += "<report:body>\n";
-    s += "<report:detail>\n";
-    s += "<report:section svg:height=\"5.0cm\" fo:background-color=\"#ffffff\" report:section-type=\"detail\"/>\n";
-    s += "</report:detail>\n";
-    s += "</report:body>\n";
-    s += "</kexireport>\n";
+    KReportDesign design;
+    QString errorMessage;
+    if (!openDesignFile(&design, &errorMessage)) {
+        QFAIL(qPrintable(errorMessage));
+    }
 
-    QDomDocument doc;
-    doc.setContent( s );
-    KoReportDesigner designer(0, doc.documentElement());
+    const QPageLayout pageLayout = design.pageLayout();
+    QVERIFY(pageLayout.isValid());
+    QCOMPARE(pageLayout.pageSize().id(), QPageSize::A5);
+    QCOMPARE(pageLayout.pageSize().sizePoints(), QPageSize(QPageSize::A5).sizePoints());
+    QCOMPARE(pageLayout.orientation(), QPageLayout::Portrait);
+    QCOMPARE(pageLayout.margins(QPageLayout::Millimeter), QMarginsF(30.0, 20.0, 40.0, 15.0));
+
+    //! @todo move this renderer test to a separate place
+#if 0
+    KoReportDesigner designer;
     QCOMPARE(designer.propertySet()->property("page-size").value().toString(), QLatin1String("A5"));
     QCOMPARE(designer.propertySet()->property("margin-bottom").value().toDouble(), KReportUnit::parseValue("1.5cm"));
     QCOMPARE(designer.propertySet()->property("margin-top").value().toDouble(), KReportUnit::parseValue("2.0cm"));
@@ -124,7 +103,6 @@ void FormatTest::testPageOptions()
     renderer.generate();
     ReportPageOptions opt = renderer.reportData()->pageOptions();
 
-
     QCOMPARE(opt.getPageSize(), QString("A5"));
     QScreen *srn = QApplication::screens().at(0);
     const qreal dpiY = srn->logicalDotsPerInchY();
@@ -133,35 +111,19 @@ void FormatTest::testPageOptions()
     QFUZZYCOMPARE(INCH_TO_POINT(opt.getMarginTop()) / KReportDpi::dpiY(), KReportUnit::parseValue("2.0cm"), 0.2);
     QFUZZYCOMPARE(INCH_TO_POINT(opt.getMarginLeft()) / KReportDpi::dpiX(), KReportUnit::parseValue("3.0cm"), 0.2);
     QFUZZYCOMPARE(INCH_TO_POINT(opt.getMarginRight()) / KReportDpi::dpiX(), KReportUnit::parseValue("4.0cm"), 0.3);
+#endif
 }
 
-void FormatTest::testLineItem()
+void FormatTest::testLineElement()
 {
-    QString s;
-    s += "<report:content xmlns:report=\"http://kexi-project.org/report/2.0\"";
-    s += " xmlns:fo=\"urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0\"";
-    s += " xmlns:svg=\"urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0\" >";
-    s += "<report:title>Report</report:title>";
-    s += "<report:grid report:grid-divisions=\"4\" report:grid-snap=\"1\" report:page-unit=\"cm\" report:grid-visible=\"1\" />";
-    s += "<report:page-style report:print-orientation=\"portrait\"";
-    s += " fo:margin-bottom=\"1.5cm\" fo:margin-top=\"2.0cm\"";
-    s += " fo:margin-left=\"3.0cm\" fo:margin-right=\"4.0cm\"";
-    s += " report:page-size=\"A5\" >predefined</report:page-style>";
+    KReportDesign design;
+    QString errorMessage;
+    if (!openDesignFile(&design, &errorMessage)) {
+        QFAIL(qPrintable(errorMessage));
+    }
 
-    s += "<report:body>";
-    s += "<report:detail>";
-    s += "<report:section svg:height=\"5.0cm\" fo:background-color=\"#ffffff\" report:section-type=\"detail\">";
-    s += "<report:line report:name=\"line1\" ";
-    s += "svg:y1=\"0.5cm\" svg:x1=\"1.5cm\" svg:y2=\"2.5cm\" svg:x2=\"4.5cm\" report:z-index=\"1.5\">";
-    s += "<report:line-style report:line-style=\"solid\" report:line-weight=\"2\" report:line-color=\"#000000\"/>";
-    s += "</report:line>";
-    s += "</report:section>";
-    s += "</report:detail>";
-    s += "</report:body>";
-
-    QDomDocument doc;
-    doc.setContent( s );
-    KoReportDesigner designer(0, doc.documentElement());
+    //! @todo move this renderer test to a separate place
+    KoReportDesigner designer;
     ReportSectionDetail *ds = designer.detailSection();
     ReportSection *sec = ds->detailSection();
     KoReportItemLine *l = dynamic_cast<KoReportItemLine*>(sec->items().first());
@@ -185,7 +147,7 @@ void FormatTest::testLineItem()
     QCOMPARE(end.toPoint(), QPointF(KReportUnit::parseValue("4.5cm"), KReportUnit::parseValue("2.5cm")));
 }
 
-void FormatTest::testRectItem()
+void FormatTest::testLabelElement()
 {
     KReportDesign design;
     QString errorMessage;
@@ -193,15 +155,7 @@ void FormatTest::testRectItem()
         QFAIL(qPrintable(errorMessage));
     }
 
-    QCOMPARE(design.title(), QLatin1String("RectItem Test Report"));
-
-    qDebug()<<design.pageLayout();
-    const QPageLayout pageLayout = design.pageLayout();
-    QVERIFY(pageLayout.isValid());
-    QCOMPARE(pageLayout.pageSize().id(), QPageSize::A5);
-    QCOMPARE(pageLayout.pageSize().sizePoints(), QPageSize(QPageSize::A5).sizePoints());
-    QCOMPARE(pageLayout.orientation(), QPageLayout::Portrait);
-    QCOMPARE(pageLayout.margins(QPageLayout::Millimeter), QMarginsF(30.0, 20.0, 40.0, 15.0));
+    QCOMPARE(design.title(), QLatin1String("Label Element Test Report"));
 
     QVERIFY(design.hasSection(KReportSection::Detail));
     KReportSection detailSection = design.section(KReportSection::Detail);
@@ -213,37 +167,18 @@ void FormatTest::testRectItem()
     QCOMPARE(elements.count(), 1);
     KReportElement element = elements.first();
     QCOMPARE(element.name(), QLatin1String("label1"));
+    KReportLabelElement label1(elements.first());
+    QCOMPARE(label1.text(), "Label");
+    QCOMPARE(label1.z(), 2.5);
+    const QRectF rect(CM_TO_POINT(1.5), CM_TO_POINT(0.5), CM_TO_POINT(4.5), CM_TO_POINT(0.75));
+    QCOMPARE(label1.rect(), rect);
+    QCOMPARE(label1.backgroundColor(), QColor("#eeeeee"));
+    QCOMPARE(label1.foregroundColor(), QColor("#101010"));
+    QCOMPARE(label1.backgroundOpacity(), 0.9);
 
-    //TODO: move to an elements API test
-    KReportElement e;
-    e.setName("foo");
-
-    KReportElement e2 = e;
-    qDebug() << e2.name();
-    e.setName("");
-    qDebug() << e2.name();
-    KReportLabelElement l1, l2;
-    l1.setText("text");
-    l2 = l1.clone();
-    l1.setText("");
-    qDebug() << "cloned:" << l2.text();
-    e = l2;
-    l2.setText("text");
-    KReportLabelElement l3(e);
-    qDebug() << l3.text() << KReportLabelElement(e).text() << KReportLabelElement(e2).text();
-    KReportElement ee = e.clone();
-    qDebug() << "KReportLabelElement(e).text():" << KReportLabelElement(e).text();
-
-    qDebug() << element.name();
-    detailSection.elements().first().setName("new_label_name");
-
-    detailSection.addElement(e);
-    qDebug() << KReportLabelElement(detailSection.elements().at(1)).text();
-    qDebug() << detailSection.elements().at(0).name() << element.name();
-    // end of TODO
-
-    //TODO: move this renderer test to a separate place
-    KoReportDesigner designer(0);//, doc.documentElement());
+    //! @todo move this renderer test to a separate place
+#if 0
+    KoReportDesigner designer;//, doc.documentElement());
     ReportSectionDetail *ds = designer.detailSection();
     ReportSection *sec = ds->detailSection();
     QVERIFY(sec->items().count() == 1);
@@ -264,4 +199,5 @@ void FormatTest::testRectItem()
     QCOMPARE(pos.toPoint().y(), KReportUnit::parseValue("0.5cm"));
     QCOMPARE(size.toPoint(), QSizeF(KReportUnit::parseValue("4.5cm"), KReportUnit::parseValue("0.75cm")));
     QCOMPARE(size.toPoint(), QSizeF(KReportUnit::parseValue("4.5cm"), KReportUnit::parseValue("0.75cm")));
+#endif
 }

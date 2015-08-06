@@ -19,6 +19,31 @@
 
 #include "KReportElement.h"
 
+#include <QDebug>
+#include <QHash>
+
 KReportElement::~KReportElement()
 {
+}
+
+KREPORT_EXPORT QDebug operator<<(QDebug dbg, const KReportElement& element)
+{
+    dbg.nospace() << qPrintable(
+        QString::fromLatin1("KReportElement: name=\"%1\" rect=%2 z=%3 foregroundColor=%4 "
+                            "backgroundColor=%5 backgroundOpacity=%6")
+                         .arg(element.name()).arg(QVariant(element.rect()).toString())
+                         .arg(element.z()).arg(QVariant(element.foregroundColor()).toString())
+                         .arg(QVariant(element.backgroundColor()).toString())
+                         .arg(element.backgroundOpacity()));
+    return dbg.space();
+}
+
+KREPORT_EXPORT uint qHash(const KReportElement &element, uint seed)
+{
+    return qHash(element.name(), seed)
+            ^ qHash(element.z(), seed)
+            ^ qHash(element.rect().x(), seed)
+            ^ qHash(element.foregroundColor().name(), seed)
+            ^ qHash(element.backgroundColor().name(), seed)
+            ^ qHash(qRound64(element.backgroundOpacity() * 1000.0), seed);
 }

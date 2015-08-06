@@ -20,13 +20,14 @@
 #ifndef KREPORTSECTION_H
 #define KREPORTSECTION_H
 
+#include <QSet>
 #include <KReportElement>
 
 //! @brief The KReportSection class represents a section of a report design
 /*! A section has optional report header, report footer, page header, page footer,
     group header, group footer and detail.
     In the case of page header and page footer it is possible to define (firstpage, odd, even or lastpage). */
-class KREPORT_EXPORT KReportSection //SDC: explicit operator== virtual_dtor
+class KREPORT_EXPORT KReportSection //SDC: explicit operator== virtual_dtor custom_clone
 {
 public:
     enum Type {
@@ -85,8 +86,33 @@ public:
     */
     QList<KReportElement> elements;  //SDC: custom_getter no_setter
 
-    //! Adds element to this section
-    void addElement(const KReportElement &element);
+    /*!
+    @internal A set that helps to quickly check if element is part of the section.
+    */
+    QSet<KReportElement> elementsSet; //SDC: internal
+
+    //! Adds element @a element to this section.
+    //! @return true on success.
+    //! Adding fails if element is already added to this or other section.
+    //! Use KReportElement::clone() to add a copy.
+    bool addElement(const KReportElement &element);
+
+    //! Adds element @a element to this section at index position @a i.
+    //! @return true on success.
+    //! Adding fails if element is already added to this or other section or if
+    //! position @a i is out of bounds.
+    //! Use KReportElement::clone() to add a copy.
+    bool insertElement(int i, const KReportElement &element);
+
+    //! Removes element @a element from this section.
+    //! @return true on success.
+    //! Removing fails if element @a element is not added in this section.
+    bool removeElement(const KReportElement &element);
+
+    //! Removes element from index position @a i from this section.
+    //! @return true on success.
+    //! Removing fails position @a i is out of bounds.
+    bool removeElementAt(int i);
 
     //! @return default height for report sections. The standard is 2cm (converted to points).
     static qreal defaultHeight();

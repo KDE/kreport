@@ -128,9 +128,70 @@ QList<KReportElement> KReportSection::elements() const
     return d->elements;
 }
 
-void KReportSection::addElement(const KReportElement &element)
+bool KReportSection::addElement(const KReportElement &element)
 {
+    if (d->elementsSet.contains(element)) {
+        kreportWarning() << "Section already contains element" << element;
+        return false;
+    }
     d->elements.append(element);
+    d->elementsSet.insert(element);
+    return true;
+}
+
+bool KReportSection::insertElement(int i, const KReportElement &element)
+{
+    if (i < 0 || i > d->elements.count()) {
+        kreportWarning() << "Could not insert element at index" << i << "into section";
+        return false;
+    }
+    if (d->elementsSet.contains(element)) {
+        kreportWarning() << "Section already contains element" << element;
+        return false;
+    }
+    d->elements.insert(i, element);
+    d->elementsSet.insert(element);
+    return true;
+}
+
+bool KReportSection::removeElement(const KReportElement &element)
+{
+    if (!d->elementsSet.remove(element)) {
+        kreportWarning() << "Could not find element" << element << "in section";
+        return false;
+    }
+    if (!d->elements.removeOne(element)) {
+        kreportCritical() << "Could not find element" << element << "in section's list but found in section's set";
+        return false;
+    }
+    return true;
+}
+
+bool KReportSection::removeElementAt(int i)
+{
+    if (i < 0 || i > (d->elements.count() - 1)) {
+        kreportWarning() << "Could not find element at index" << i << "in section";
+        return false;
+    }
+    KReportElement e = d->elements.takeAt(i);
+    if (!d->elementsSet.remove(e)) {
+        kreportWarning() << "Could not find element" << e << "in section";
+        return false;
+    }
+    return true;
+}
+
+KReportSection::Data* KReportSection::Data::clone() const
+{
+    Data *data = new Data(*this);
+    data->elements.clear();
+    KReportElement eClone;
+    foreach(const KReportElement &el, elements) {
+        eClone = el.clone();
+        data->elements.append(eClone);
+        data->elementsSet.insert(eClone);
+    }
+    return data;
 }
 
 //static

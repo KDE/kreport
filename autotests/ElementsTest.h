@@ -1,5 +1,4 @@
 /* This file is part of the KDE project
- * Copyright (C) 2012 Dag Andersen <danders@get2net.dk>
  * Copyright (C) 2015 Jarosław Staniek <staniek@kde.org>
  *
  * This library is free software; you can redistribute it and/or
@@ -16,19 +15,19 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef FORMATTEST_H
-#define FORMATTEST_H
+#ifndef ELEMENTSTEST_H
+#define ELEMENTSTEST_H
 
 #include <QObject>
 
-//! Tests for the .kreport format
-class FormatTest : public QObject
+//! Tests for the KReport elements API
+class ElementsTest : public QObject
 {
     Q_OBJECT
 private Q_SLOTS:
-    void testPageLayout();
-    void testLineElement();
-    void testLabelElement();
+    void testElements();
+    void testElementCloning();
+    void testSections();
 };
 
-#endif // FORMATTEST_H
+#endif // ELEMENTSTEST_H
