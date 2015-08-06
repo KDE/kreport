@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 #
 #   This file is part of the KDE project
 #   Copyright (C) 2010-2015 Jarosław Staniek <staniek@kde.org>
@@ -18,7 +19,7 @@ version = '0.2'
 #        class MYLIB_EXPORT MyClass [: public SuperClass] //SDC: [CLASS_OPTIONS]
 #
 #    supported CLASS_OPTIONS: namespace=NAMESPACE, with_from_to_map,
-#                             operator==, explicit, virtual_dtor
+#                             operator==, explicit, virtual_dtor, custom_clone
 #
 #    TODO: explain details in README-SDC.md
 #
@@ -32,7 +33,7 @@ version = '0.2'
 #                                   custom, custom_getter, custom_setter,
 #                                   default_setter=DEFAULT_SETTER_PARAM,
 #                                   mutable, simple_type, invokable,
-#                                   internal
+#                                   internal, custom_clone
 #    If NAME contains '(' then 'TYPE NAME;' is added to the shared data class
 #    as a method declaration.
 #
@@ -72,14 +73,19 @@ import os, sys, shlex
 
 line = ''
 
+APPNAME = "Shared Data Compiler"
+
 def usage():
-    print '''Usage: %s [INPUT] [OUTPUT]
-Shared Data Compiler version %s
-''' % (sys.argv[0], version)
+    print('''Usage: %s [INPUT] [OUTPUT]
+%s version %s
+''' % (sys.argv[0], APPNAME, version))
 
 def syntax_error(msg):
-    print "Syntax error in %s: %s" % (in_fname, msg)
+    print(APPNAME, "Syntax error in %s: %s" % (in_fname, msg), file=sys.stderr)
     sys.exit(1)
+
+def warning(*objs):
+    print(APPNAME, "WARNING:", *objs, file=sys.stderr)
 
 if len(sys.argv) < 3:
     usage()
@@ -93,7 +99,7 @@ try:
     infile = open(in_fname, "rb") # binary mode needed for Windows
     outfile = open(out_fname, "w")
 except Exception, inst:
-    print inst
+    print(inst)
     sys.exit(1)
 
 outfile_sdc = None
@@ -153,7 +159,7 @@ def open_sdc():
         try:
             outfile_sdc = open(sdc_fname, "w")
         except Exception, inst:
-            print inst
+            print(inst)
             sys.exit(1)
     outfile_sdc.write(warningHeader())
     outfile_sdc.write("""#include "%s"
@@ -231,12 +237,19 @@ def insert_operator_neq():
     Inserts generated clone() method (makes sense for explicitly shared class).
 """
 def insert_clone():
-    global outfile, shared_class_name, superclass
-    outfile.write("""    //! Clones the object with all attributes; the copy isn't shared with the original.
-    %s clone() {
+    global outfile, shared_class_name, shared_class_options, superclass
+    line = """    //! Clones the object with all attributes; the copy isn't shared with the original.
+    virtual %s clone() const%s""" % (shared_class_name, 'Q_DECL_OVERRIDE ' if superclass else '')
+    custom_clone = False; # not needed I guess: shared_class_options['custom_clone']
+    if custom_clone:
+        line += """;
+"""
+    else:
+        line += """ {
         return %s(d->clone());
     }
-""" % (shared_class_name, shared_class_name))
+""" % (shared_class_name)
+    outfile.write(line)
 
 """
     Inserts generated Data::operator==() code into the output.
@@ -287,9 +300,18 @@ def insert_generated_code(context):
 """)
     outfile.write("""        virtual ~Data() {}
 
-        virtual %sData* clone() const { return new Data(*this); }
+        //! Clones the object with all attributes; the copy isn't shared with the original.
+        virtual %sData* clone() const""" % ((superclass + '::') if superclass else ''))
+    if superclass:
+        outfile.write(' Q_DECL_OVERRIDE')
+    if shared_class_options['custom_clone']:
+        outfile.write(""";
 
-""" % ((superclass + '::') if superclass else ''))
+""")
+    else:
+        outfile.write(""" { return new Data(*this); }
+
+""")
 
     if shared_class_options['with_from_to_map']:
         outfile.write("""        /*! Constructor for Data object, takes attributes saved to map @a map.
@@ -311,7 +333,7 @@ def insert_generated_code(context):
     if shared_class_options['operator==']:
         insert_operator_eq()
         insert_operator_neq()
-    if shared_class_options['explicit'] and not superclass:
+    if shared_class_options['explicit'] and (not superclass or shared_class_options['custom_clone']):
         insert_clone()
     if protected_data_accesors:
         outfile.write("protected:")
@@ -688,10 +710,14 @@ def process():
             lst = get_shared_class_option(lst, 'operator==')
             lst = get_shared_class_option(lst, 'with_from_to_map')
             lst = get_shared_class_option(lst, 'virtual_dtor')
+            lst = get_shared_class_option(lst, 'custom_clone') # only insert declaration of clone()
             lst = get_shared_class_option_with_value(lst, 'namespace')
             (shared_class_name, export_macro, superclass) = get_shared_class_name_export_and_superclass(lst)
             if superclass:
                 shared_class_options['virtual_dtor'] = True # inheritance implies this
+            if shared_class_options['custom_clone'] and not shared_class_options['explicit']:
+                warning('\'custom_clone\' class option only supported with \'explicit\' class option')
+                shared_class_options['custom_clone'] = False
             main_ctor = """    };
 
     %s()
@@ -940,7 +966,7 @@ template<>
                 prev_line_number = line_number
                 ln = line[:-1].strip(' ')
                 result = ''
-                print "'" + ln + "'"
+                print("'" + ln + "'")
                 if ln.startswith('/**') or ln.startswith('/*!'):
                     while True:
                         result += line
@@ -951,9 +977,7 @@ template<>
                         line = infile.readline()
                         line_number += 1
                         ln = line[:-1].strip(' ')
-                    print "!!"
-                    print result
-                    print "!!"
+                    print(result)
                 if result:
                     member['docs'] = result
                 infile.seek(prev_pos)
