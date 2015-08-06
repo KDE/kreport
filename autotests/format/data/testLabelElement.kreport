@@ -8,8 +8,8 @@
   <report:body>
    <report:detail>
     <report:section svg:height="5.0cm" fo:background-color="#eeeeee" report:section-type="detail">
-     <report:label report:name="label1" report:horizontal-align="left" report:caption="Label" report:vertical-align="center" report:z-index="2.5" svg:x="1.5cm" svg:y="0.5cm" svg:width="4.5cm" svg:height="0.75cm">
-      <report:text-style fo:letter-spacing="110%" style:letter-kerning="true" fo:font-size="9" fo:foreground-color="#101010" fo:font-family="Ubuntu" fo:background-color="#dddddd" fo:background-opacity="90%"/>
+     <report:label report:name="label1" report:horizontal-align="right" report:caption="Label" report:vertical-align="bottom" report:z-index="2.5" svg:x="1.5cm" svg:y="0.5cm" svg:width="4.5cm" svg:height="0.75cm">
+      <report:text-style fo:letter-spacing="110%" style:letter-kerning="true" fo:font-size="9" fo:foreground-color="#101010" fo:font-family="Ubuntu" fo:background-color="#dddddd" fo:background-opacity="90%" fo:text-transform="lowercase" fo:font-weight="900" fo:font-style="italic" style:font-pitch="fixed" style:text-underline-type="single" style:text-line-through-type="single" fo:letter-spacing="110%"/>
       <report:line-style report:line-style="dash" report:line-weight="1" report:line-color="#400000"/>
      </report:label>
     </report:section>

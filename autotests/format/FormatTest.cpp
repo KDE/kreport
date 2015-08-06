@@ -178,17 +178,22 @@ void FormatTest::testLabelElement()
     QCOMPARE(label1.backgroundColor(), QColor("#dddddd"));
     QCOMPARE(label1.foregroundColor(), QColor("#101010"));
     QCOMPARE(label1.backgroundOpacity(), 0.9);
-    QCOMPARE(label1.alignment(), Qt::AlignLeft | Qt::AlignVCenter);
+    QCOMPARE(label1.alignment(), Qt::AlignRight | Qt::AlignBottom);
+    QCOMPARE(label1.font().capitalization(), QFont::AllLowercase);
+    QCOMPARE(label1.font().bold(), true);
+    QCOMPARE(label1.font().weight(), 99);
+    QCOMPARE(label1.font().italic(), true);
+    QCOMPARE(label1.font().fixedPitch(), true);
     QCOMPARE(label1.font().family(), "Ubuntu");
-    QCOMPARE(label1.font().bold(), false);
+    QCOMPARE(label1.font().kerning(), true);
+    QCOMPARE(label1.font().underline(), true);
+    QCOMPARE(label1.font().strikeOut(), true);
     QCOMPARE(label1.font().pointSizeF(), 9.0);
     QCOMPARE(label1.font().letterSpacing(), 110.0);
     QCOMPARE(label1.font().letterSpacingType(), QFont::PercentageSpacing);
-    QCOMPARE(label1.font().family(), "Ubuntu");
     QCOMPARE(label1.borderStyle().width(), 1.0);
     QCOMPARE(label1.borderStyle().color(), QColor("#400000"));
     QCOMPARE(label1.borderStyle().penStyle(), Qt::DashLine);
-
 
     //! @todo move this renderer test to a separate place
 #if 0
