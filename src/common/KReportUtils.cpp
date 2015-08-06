@@ -31,9 +31,16 @@
 #include <float.h>
 
 QString KReportUtils::attr(const QDomElement &el, const char *attrName,
-                           QString defaultValue)
+                           const QString &defaultValue)
 {
     const QString val = el.attribute(QLatin1String(attrName));
+    return val.isEmpty() ? defaultValue : val;
+}
+
+QByteArray KReportUtils::attr(const QDomElement &el, const char *attrName,
+                           const QByteArray &defaultValue)
+{
+    const QByteArray val = el.attribute(QLatin1String(attrName)).toLatin1();
     return val.isEmpty() ? defaultValue : val;
 }
 
@@ -84,27 +91,78 @@ qreal KReportUtils::attrPercent(const QDomElement& el, const char* attrName, qre
     return result;
 }
 
-Qt::PenStyle KReportUtils::attr(const QDomElement& el, const char* attrName, Qt::PenStyle defaultValue)
+Qt::PenStyle KReportUtils::penStyle(const QString& str, Qt::PenStyle defaultValue)
 {
-    const QByteArray str(el.attribute(QLatin1String(attrName)).toLatin1());
-    if (str == "nopen" || str == "none") {
+    const QByteArray s(str.toLatin1());
+    if (s == "nopen" || s == "none") {
         return Qt::NoPen;
-    } else if (str == "solid") {
+    } else if (s == "solid") {
         return Qt::SolidLine;
-    } else if (str == "dash" || str == "wave" /*we have nothing better for now*/) {
+    } else if (s == "dash" || s == "wave" /*we have nothing better for now*/) {
         return Qt::DashLine;
-    } else if (str == "dot" || str == "dotted") {
+    } else if (s == "dot" || s == "dotted") {
         return Qt::DotLine;
-    } else if (str == "dashdot" || str == "dot-dash") {
+    } else if (s == "dashdot" || s == "dot-dash") {
         return Qt::DashDotLine;
-    } else if (str == "dashdotdot" || str == "dot-dot-dash") {
+    } else if (s == "dashdotdot" || s == "dot-dot-dash") {
         return Qt::DashDotDotLine;
     } else {
         return defaultValue;
     }
 }
 
-QRectF KReportUtils::readRectF(const QDomElement &el, const QRectF &defaultValue)
+Qt::Alignment KReportUtils::verticalAlignment(const QString &str, Qt::Alignment defaultValue)
+{
+    const QByteArray s(str.toLatin1());
+    if (s == "center") {
+        return Qt::AlignVCenter;
+    } else if (s == "top") {
+        return Qt::AlignTop;
+    } else if (s == "bottom") {
+        return Qt::AlignBottom;
+    } else {
+        return defaultValue;
+    }
+}
+
+Qt::Alignment KReportUtils::horizontalAlignment(const QString &str, Qt::Alignment defaultValue)
+{
+    const QByteArray s(str.toLatin1());
+    if (s == "center") {
+        return Qt::AlignHCenter;
+    } else if (s == "right") {
+        return Qt::AlignRight;
+    } else if (s == "left") {
+        return Qt::AlignLeft;
+    } else {
+        return defaultValue;
+    }
+}
+
+QString KReportUtils::verticalToString(Qt::Alignment alignment)
+{
+    if (alignment.testFlag(Qt::AlignVCenter)) {
+        return QLatin1String("center");
+    } else if (alignment.testFlag(Qt::AlignTop)) {
+        return QLatin1String("top");
+    } else if (alignment.testFlag(Qt::AlignBottom)) {
+        return QLatin1String("bottom");
+    }
+    return QString();
+}
+
+QString KReportUtils::horizontalToString(Qt::Alignment alignment)
+{
+    if (alignment.testFlag(Qt::AlignHCenter)) {
+        return QLatin1String("center");
+    } else if (alignment.testFlag(Qt::AlignLeft)) {
+        return QLatin1String("left");
+    } else if (alignment.testFlag(Qt::AlignRight)) {
+        return QLatin1String("right");
+    }
+    return QString();
+}
+
 QRectF KReportUtils::readRectAttributes(const QDomElement &el, const QRectF &defaultValue)
 {
     QRectF val;
@@ -159,86 +217,59 @@ static QFont::Capitalization readFontCapitalization(const QByteArray& fontVarian
     return QFont::MixedCase;
 }
 
-bool KReportUtils::readFontAttributes(const QDomElement& el, QFont *font)
+void KReportUtils::readFontAttributes(const QDomElement& el, QFont *font)
 {
     Q_ASSERT(font);
-    bool ok;
     const QFont::Capitalization cap = readFontCapitalization(
-        el.attribute(QLatin1String("fo:font-variant")).toLatin1(),
-        el.attribute(QLatin1String("fo:text-transform")).toLatin1());
+        attr(el, "fo:font-variant", QByteArray()), attr(el, "fo:text-transform", QByteArray()));
     font->setCapitalization(cap);
 
     // weight
-    const QByteArray fontWeight(el.attribute(QLatin1String("fo:font-weight"), QLatin1String("normal")).toLatin1());
+    const QByteArray fontWeight(attr(el, "fo:font-weight", QByteArray()));
     int weight = -1;
     if (fontWeight == "bold") {
         weight = QFont::Bold;
     }
-    else if (fontWeight == "normal") {
+    if (fontWeight == "normal") {
         weight = QFont::Normal;
     }
     else if (!fontWeight.isEmpty()) {
         // Remember : Qt and CSS/XSL doesn't have the same scale. It's 100-900 instead of Qt's 0-100
         // See http://www.w3.org/TR/2001/REC-xsl-20011015/slice7.html#font-weight
         // and http://www.w3.org/TR/CSS2/fonts.html#font-boldness
-        int boldness = fontWeight.toInt(&ok);
-        if (ok)
-            weight = (boldness - 100) / 8; // 0..100
-        else
-            return false;
+        bool ok;
+        qreal boldness = fontWeight.toUInt(&ok);
+        if (ok) {
+            boldness = qMin(boldness, 900.0);
+            boldness = qMax(boldness, 100.0);
+            weight = (boldness - 100.0) * 0.12375 /*== 99/800*/; // 0..99
+        }
     }
-    if (weight >= 0)
+    if (weight >= 0) {
         font->setWeight(weight);
+    }
 
-    // italic
-    const QByteArray fontStyle(el.attribute(QLatin1String("fo:font-style")).toLatin1());
-    font->setItalic(fontStyle == "italic");
-
-    // pitch
-    const QByteArray fontPitch(el.attribute(QLatin1String("style:font-pitch")).toLatin1());
-    font->setFixedPitch(fontPitch == "fixed");
-
-    font->setFamily(el.attribute(QLatin1String("fo:font-family")));
-
-    // kerning
-    font->setKerning(QVariant(el.attribute(QLatin1String("style:letter-kerning"))).toBool());
+    font->setItalic(attr(el, "fo:font-style", QByteArray()) == "italic");
+    font->setFixedPitch(attr(el, "style:font-pitch", QByteArray()) == "fixed");
+    font->setFamily(attr(el, "fo:font-family", font->family()));
+    font->setKerning(attr(el, "style:letter-kerning", font->kerning()));
 
     // underline
-    const QByteArray underlineType(el.attribute(QLatin1String("style:text-underline-type")).toLatin1());
-    font->setUnderline(!underlineType.isEmpty() && underlineType != "none");
+    const QByteArray underlineType(attr(el, "style:text-underline-type", QByteArray()));
+    font->setUnderline(!underlineType.isEmpty() && underlineType != "none"); // double or single (we don't recognize them)
 
     // stricken-out
-    const QByteArray strikeOutType(el.attribute(QLatin1String("style:text-line-through-type")).toLatin1());
-    font->setStrikeOut(!strikeOutType.isEmpty() && strikeOutType != "none");
+    const QByteArray strikeOutType(attr(el, "style:text-line-through-type", QByteArray()));
+    font->setStrikeOut(!strikeOutType.isEmpty() && strikeOutType != "none"); // double or single (we don't recognize them)
 
 //! @todo support fo:font-size-rel?
 //! @todo support fo:font-size in px
-    const QByteArray pointSize(el.attribute(QLatin1String("fo:font-size")).toLatin1());
-    const int pointSizeInt = pointSize.toUInt(&ok);
-    if (ok)
-        font->setPointSize(pointSizeInt);
-    else
-        return false;
+    font->setPointSizeF(KReportUtils::attr(el, "fo:font-size", font->pointSizeF()));
 
     // letter spacing
     // §7.16.2 of [XSL] http://www.w3.org/TR/xsl11/#letter-spacing
-    QByteArray letterSpacing(el.attribute(QLatin1String("fo:letter-spacing")).toLatin1());
-    if (letterSpacing.endsWith('%')) {
-        letterSpacing.chop(1);
-        const qreal letterSpacingReal = letterSpacing.toDouble(&ok);
-        if (ok)
-            font->setLetterSpacing(QFont::PercentageSpacing, letterSpacingReal);
-        else
-            return false;
-    }
-    else if (!letterSpacing.isEmpty()) {
-        const qreal letterSpacingReal = letterSpacing.toDouble(&ok);
-        if (ok)
-            font->setLetterSpacing(QFont::AbsoluteSpacing, letterSpacingReal);
-        else
-            return false;
-    }
-    return true;
+    font->setLetterSpacing(QFont::PercentageSpacing,
+                          100.0 * KReportUtils::attrPercent(el, "fo:letter-spacing", font->letterSpacing()));
 }
 
 void KReportUtils::writeFontAttributes(QDomElement *el, const QFont &font)
@@ -441,9 +472,7 @@ bool KReportUtils::parseReportTextStyleData(const QDomElement & elemSource, KRTe
     if (!ok) {
         return false;
     }
-    if (!KReportUtils::readFontAttributes(elemSource, &ts->font)) {
-        return false;
-    }
+    KReportUtils::readFontAttributes(elemSource, &ts->font);
     return true;
 }
 

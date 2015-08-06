@@ -40,7 +40,10 @@ class KRLineStyleData;
 namespace KReportUtils
 {
     KREPORT_EXPORT QString attr(const QDomElement &el, const char *attrName,
-                                QString defaultValue = QString());
+                                const QString &defaultValue = QString());
+
+    KREPORT_EXPORT QByteArray attr(const QDomElement &el, const char *attrName,
+                                   const QByteArray &defaultValue = QByteArray());
 
     KREPORT_EXPORT bool attr(const QDomElement &el, const char *attrName, bool defaultValue = false);
 
@@ -48,15 +51,27 @@ namespace KReportUtils
 
     KREPORT_EXPORT qreal attr(const QDomElement &el, const char *attrName, qreal defaultValue = 0.0);
 
-    KREPORT_EXPORT QColor attr(const QDomElement &el, const char *attrName, const QColor &defaultValue);
+    KREPORT_EXPORT QColor attr(const QDomElement &el, const char *attrName, const QColor &defaultValue = QColor());
 
     //! @return percent value converted to qreal, e.g. 1.0 for "100%", 0.505 for "50.5%".
     //! @a defaultValue is returned if there is not "%" suffix or no proper number.
-    KREPORT_EXPORT qreal attrPercent(const QDomElement& el, const char* attrName, qreal defaultValue);
+    KREPORT_EXPORT qreal attrPercent(const QDomElement& el, const char* attrName, qreal defaultValue = 0.0);
 
-    //! @return pen style from attribute @a attrname or @a defaultValue
+    //! @return pen style from @a str or @a defaultValue
     //! Values from ODF 1.2 19.493 style:line-style are also recognized.
-    KREPORT_EXPORT Qt::PenStyle attr(const QDomElement& el, const char* attrName, Qt::PenStyle defaultValue);
+    KREPORT_EXPORT Qt::PenStyle penStyle(const QString &str, Qt::PenStyle defaultValue);
+
+    //! @return vertical alignment flag from @a str or @a defaultValue
+    KREPORT_EXPORT Qt::Alignment verticalAlignment(const QString &str, Qt::Alignment defaultValue);
+
+    //! @return horizontal alignment flag from @a str or @a defaultValue
+    KREPORT_EXPORT Qt::Alignment horizontalAlignment(const QString &str, Qt::Alignment defaultValue);
+
+    //! @return vertical alignment flag name from @a alignment
+    KREPORT_EXPORT QString verticalToString(Qt::Alignment alignment);
+
+    //! @return horizontal alignment flag from @a alignment
+    KREPORT_EXPORT QString horizontalToString(Qt::Alignment alignment);
 
     //! @return rectangle value read from svg:x, svg:y, svg:width, svg:height attributes of @a el.
     //! If any of the arguments are missing, @a defaultValue is returned.
@@ -68,7 +83,7 @@ namespace KReportUtils
 
     //! Reads all font attributes for element @a el into @a font.
     //! @todo add unit tests
-    KREPORT_EXPORT bool readFontAttributes(const QDomElement& el, QFont* font);
+    KREPORT_EXPORT void readFontAttributes(const QDomElement& el, QFont* font);
 
     //! Writes all attributes of font @a font into element @a el.
     //! @todo add unit tests

@@ -70,19 +70,21 @@ bool KoReportLabelPlugin::loadElement(KReportElement *el, const QDomElement &dom
     }
     KReportLabelElement label(*el);
     label.setText(KReportUtils::attr(dom, "report:caption", QString()));
+    QString s = KReportUtils::attr(dom, "report:horizontal-align", QString());
+    Qt::Alignment alignment = KReportUtils::horizontalAlignment(s, label.alignment() & Qt::AlignHorizontal_Mask);
+    s = KReportUtils::attr(dom, "report:vertical-align", QString());
+    alignment |= KReportUtils::verticalAlignment(s, label.alignment() & Qt::AlignVertical_Mask);
+    label.setAlignment(alignment);
 
     const QDomElement textStyleDom = dom.firstChildElement(QLatin1String("report:text-style"));
-    QFont font;
-    font.setLetterSpacing(QFont::PercentageSpacing,
-                          100.0 * KReportUtils::attrPercent(textStyleDom, "fo:letter-spacing", font.letterSpacing()));
-    font.setKerning(KReportUtils::attr(textStyleDom, "style:letter-kerning", font.kerning()));
-    font.setPointSizeF(KReportUtils::attr(textStyleDom, "fo:font-size", font.pointSizeF()));
-    font.setFamily(KReportUtils::attr(textStyleDom, "fo:font-family", font.family()));
+    QFont font(label.font());
+    KReportUtils::readFontAttributes(textStyleDom, &font);
     label.setFont(font);
 
     const QDomElement lineStyleDom = dom.firstChildElement(QLatin1String("report:line-style"));
     KReportLineStyle borderStyle(label.borderStyle());
-    borderStyle.setPenStyle(KReportUtils::attr(lineStyleDom, "report:line-style", borderStyle.penStyle()));
+    s = KReportUtils::attr(lineStyleDom, "report:line-style", QString());
+    borderStyle.setPenStyle(KReportUtils::penStyle(s, borderStyle.penStyle()));
     borderStyle.setColor(KReportUtils::attr(lineStyleDom, "report:line-color", borderStyle.color()));
     // border-line-width could be better name but it's too late...
     borderStyle.setWidth(KReportUtils::attr(lineStyleDom, "report:line-weight", borderStyle.width()));
