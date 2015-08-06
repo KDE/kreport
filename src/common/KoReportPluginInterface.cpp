@@ -62,7 +62,7 @@ bool KoReportPluginInterface::loadElement(KReportElement *el, const QDomElement 
     Q_ASSERT(el);
     Q_UNUSED(status);
     el->setName(KReportUtils::attr(dom, "report:name", QString()));
-    el->setRect(KReportUtils::readRectF(dom, el->rect()));
+    el->setRect(KReportUtils::readRectAttributes(dom, el->rect()));
     el->setZ(KReportUtils::attr(dom, "report:z-index", el->z()));
 
     const QDomElement textStyleDom = dom.firstChildElement(QLatin1String("report:text-style"));

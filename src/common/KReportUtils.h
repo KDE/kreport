@@ -23,6 +23,9 @@
 #include "kreport_export.h"
 
 #include <QPageSize>
+#include <QRectF>
+#include <QColor>
+#include <QFont>
 
 class QDomDocument;
 class QDomElement;
@@ -57,7 +60,7 @@ namespace KReportUtils
 
     //! @return rectangle value read from svg:x, svg:y, svg:width, svg:height attributes of @a el.
     //! If any of the arguments are missing, @a defaultValue is returned.
-    KREPORT_EXPORT QRectF readRectF(const QDomElement &el, const QRectF &defaultValue);
+    KREPORT_EXPORT QRectF readRectAttributes(const QDomElement &el, const QRectF &defaultValue = QRectF());
 
     //! @return percent value for element @a name. If the element is missing, returns @a defaultPercentValue.
     //! If @a ok is not 0, *ok is set to the result.

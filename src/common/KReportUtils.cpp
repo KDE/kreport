@@ -27,8 +27,6 @@
 
 #include <QDomDocument>
 #include <QDomElement>
-#include <QFont>
-#include <QRectF>
 
 #include <float.h>
 
@@ -107,6 +105,7 @@ Qt::PenStyle KReportUtils::attr(const QDomElement& el, const char* attrName, Qt:
 }
 
 QRectF KReportUtils::readRectF(const QDomElement &el, const QRectF &defaultValue)
+QRectF KReportUtils::readRectAttributes(const QDomElement &el, const QRectF &defaultValue)
 {
     QRectF val;
     val.setX(attr(el, "svg:x", defaultValue.x()));
