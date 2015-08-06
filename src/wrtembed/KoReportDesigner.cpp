@@ -30,7 +30,7 @@
 #include "KReportZoomHandler.h"
 #include "common/KReportPageFormat.h"
 #include "KReportDpi.h"
-#include "common/krutils.h"
+#include "KReportUtils.h"
 #include "common/KoReportPluginInterface.h"
 #include "common/KoReportPluginManager.h"
 #include "kreport_debug.h"
@@ -393,10 +393,10 @@ QDomElement KoReportDesigner::document() const
 #endif
 
     QDomElement grd = doc.createElement(QLatin1String("report:grid"));
-    KRUtils::addPropertyAsAttribute(&grd, d->showGrid);
-    KRUtils::addPropertyAsAttribute(&grd, d->gridDivisions);
-    KRUtils::addPropertyAsAttribute(&grd, d->gridSnap);
-    KRUtils::addPropertyAsAttribute(&grd, d->unit);
+    KReportUtils::addPropertyAsAttribute(&grd, d->showGrid);
+    KReportUtils::addPropertyAsAttribute(&grd, d->gridDivisions);
+    KReportUtils::addPropertyAsAttribute(&grd, d->gridSnap);
+    KReportUtils::addPropertyAsAttribute(&grd, d->unit);
     content.appendChild(grd);
 
     // pageOptions
@@ -405,26 +405,26 @@ QDomElement KoReportDesigner::document() const
 
     if (d->pageSize->value().toString() == QLatin1String("Custom")) {
         pagestyle.appendChild(doc.createTextNode(QLatin1String("custom")));
-        KRUtils::setAttribute(&pagestyle, QLatin1String("report:custom-page-width"), d->customWidth->value().toDouble());
-        KRUtils::setAttribute(&pagestyle, QLatin1String("report:custom-page-height"), d->customHeight->value().toDouble());
+        KReportUtils::setAttribute(&pagestyle, QLatin1String("report:custom-page-width"), d->customWidth->value().toDouble());
+        KReportUtils::setAttribute(&pagestyle, QLatin1String("report:custom-page-height"), d->customHeight->value().toDouble());
 
     } else if (d->pageSize->value().toString() == QLatin1String("Label")) {
         pagestyle.appendChild(doc.createTextNode(QLatin1String("label")));
         pagestyle.setAttribute(QLatin1String("report:page-label-type"), d->labelType->value().toString());
     } else {
         pagestyle.appendChild(doc.createTextNode(QLatin1String("predefined")));
-        KRUtils::addPropertyAsAttribute(&pagestyle, d->pageSize);
+        KReportUtils::addPropertyAsAttribute(&pagestyle, d->pageSize);
         //pagestyle.setAttribute("report:page-size", d->pageSize->value().toString());
     }
 
     // -- orientation
-    KRUtils::addPropertyAsAttribute(&pagestyle, d->orientation);
+    KReportUtils::addPropertyAsAttribute(&pagestyle, d->orientation);
 
     // -- margins: save as points, and not localized
-    KRUtils::setAttribute(&pagestyle, QLatin1String("fo:margin-top"), d->topMargin->value().toDouble());
-    KRUtils::setAttribute(&pagestyle, QLatin1String("fo:margin-bottom"), d->bottomMargin->value().toDouble());
-    KRUtils::setAttribute(&pagestyle, QLatin1String("fo:margin-right"), d->rightMargin->value().toDouble());
-    KRUtils::setAttribute(&pagestyle, QLatin1String("fo:margin-left"), d->leftMargin->value().toDouble());
+    KReportUtils::setAttribute(&pagestyle, QLatin1String("fo:margin-top"), d->topMargin->value().toDouble());
+    KReportUtils::setAttribute(&pagestyle, QLatin1String("fo:margin-bottom"), d->bottomMargin->value().toDouble());
+    KReportUtils::setAttribute(&pagestyle, QLatin1String("fo:margin-right"), d->rightMargin->value().toDouble());
+    KReportUtils::setAttribute(&pagestyle, QLatin1String("fo:margin-left"), d->leftMargin->value().toDouble());
 
     content.appendChild(pagestyle);
 

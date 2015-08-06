@@ -17,23 +17,106 @@
  * Boston, MA 02110-1301, USA.
 */
 
-#include "krutils.h"
-
+#include "KReportUtils.h"
+#include "KReportUnit.h"
 #include "krpos.h"
 #include "krsize.h"
 #include "KoReportItemBase.h"
 
 #include <KProperty>
 
-#include <QColor>
-#include <QFont>
 #include <QDomDocument>
 #include <QDomElement>
-#include <QVariant>
+#include <QFont>
+#include <QRectF>
 
 #include <float.h>
 
-int KRUtils::readPercent(const QDomElement& el, const char* name, int defaultPercentValue, bool *ok)
+QString KReportUtils::attr(const QDomElement &el, const char *attrName,
+                           QString defaultValue)
+{
+    const QString val = el.attribute(QLatin1String(attrName));
+    return val.isEmpty() ? defaultValue : val;
+}
+
+bool KReportUtils::attr(const QDomElement &el, const char *attrName, bool defaultValue)
+{
+    const QString val = el.attribute(QLatin1String(attrName));
+    return val.isEmpty() ? defaultValue : QVariant(val).toBool();
+}
+
+int KReportUtils::attr(const QDomElement &el, const char *attrName, int defaultValue)
+{
+    const QString val = el.attribute(QLatin1String(attrName));
+    if (val.isEmpty()) {
+        return defaultValue;
+    }
+    bool ok;
+    const int result = QVariant(val).toInt(&ok);
+    return ok ? result : defaultValue;
+}
+
+qreal KReportUtils::attr(const QDomElement &el, const char *attrName, qreal defaultValue)
+{
+    const QString val = el.attribute(QLatin1String(attrName));
+    return KReportUnit::parseValue(val, defaultValue);
+}
+
+QColor KReportUtils::attr(const QDomElement &el, const char *attrName, const QColor &defaultValue)
+{
+    const QString val = el.attribute(QLatin1String(attrName));
+    if (val.isEmpty()) {
+        return defaultValue;
+    }
+    return QColor(val);
+}
+
+qreal KReportUtils::attrPercent(const QDomElement& el, const char* attrName, qreal defaultValue)
+{
+    QString str(el.attribute(QLatin1String(attrName)));
+    if (str.isEmpty() || !str.endsWith(QLatin1Char('%'))) {
+        return defaultValue;
+    }
+    str.chop(1);
+    bool ok;
+    const qreal result = QVariant(str).toReal(&ok) / 100.0;
+    if (!ok) {
+        return defaultValue;
+    }
+    return result;
+}
+
+Qt::PenStyle KReportUtils::attr(const QDomElement& el, const char* attrName, Qt::PenStyle defaultValue)
+{
+    const QByteArray str(el.attribute(QLatin1String(attrName)).toLatin1());
+    if (str == "nopen" || str == "none") {
+        return Qt::NoPen;
+    } else if (str == "solid") {
+        return Qt::SolidLine;
+    } else if (str == "dash" || str == "wave" /*we have nothing better for now*/) {
+        return Qt::DashLine;
+    } else if (str == "dot" || str == "dotted") {
+        return Qt::DotLine;
+    } else if (str == "dashdot" || str == "dot-dash") {
+        return Qt::DashDotLine;
+    } else if (str == "dashdotdot" || str == "dot-dot-dash") {
+        return Qt::DashDotDotLine;
+    } else {
+        return defaultValue;
+    }
+}
+
+QRectF KReportUtils::readRectF(const QDomElement &el, const QRectF &defaultValue)
+{
+    QRectF val;
+    val.setX(attr(el, "svg:x", defaultValue.x()));
+    val.setY(attr(el, "svg:y", defaultValue.y()));
+    val.setWidth(attr(el, "svg:width", defaultValue.width()));
+    val.setHeight(attr(el, "svg:height", defaultValue.height()));
+    return val;
+}
+
+int KReportUtils::readPercent(const QDomElement& el, const char* name, int defaultPercentValue, bool *ok)
 {
     Q_ASSERT(name);
     QString percent(el.attribute(QLatin1String(name)));
@@ -77,7 +160,7 @@ static QFont::Capitalization readFontCapitalization(const QByteArray& fontVarian
     return QFont::MixedCase;
 }
 
-bool KRUtils::readFontAttributes(const QDomElement& el, QFont *font)
+bool KReportUtils::readFontAttributes(const QDomElement& el, QFont *font)
 {
     Q_ASSERT(font);
     bool ok;
@@ -159,7 +242,7 @@ bool KRUtils::readFontAttributes(const QDomElement& el, QFont *font)
     return true;
 }
 
-void KRUtils::writeFontAttributes(QDomElement *el, const QFont &font)
+void KReportUtils::writeFontAttributes(QDomElement *el, const QFont &font)
 {
     Q_ASSERT(el);
     switch (font.capitalization()) {
@@ -242,16 +325,16 @@ void KRUtils::writeFontAttributes(QDomElement *el, const QFont &font)
 }
 
 
-void KRUtils::buildXMLRect(QDomElement *entity, KRPos *pos, KRSize *size)
+void KReportUtils::buildXMLRect(QDomElement *entity, KRPos *pos, KRSize *size)
 {
     Q_ASSERT(entity);
     Q_ASSERT(pos);
     Q_ASSERT(size);
-    KRUtils::setAttribute(entity, pos->toPoint() );
-    KRUtils::setAttribute(entity, size->toPoint() );
+    KReportUtils::setAttribute(entity, pos->toPoint() );
+    KReportUtils::setAttribute(entity, size->toPoint() );
 }
 
-void KRUtils::buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KRTextStyleData &ts)
+void KReportUtils::buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KRTextStyleData &ts)
 {
     Q_ASSERT(doc);
     Q_ASSERT(entity);
@@ -260,12 +343,12 @@ void KRUtils::buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KR
     element.setAttribute(QLatin1String("fo:background-color"), ts.backgroundColor.name());
     element.setAttribute(QLatin1String("fo:foreground-color"), ts.foregroundColor.name());
     element.setAttribute(QLatin1String("fo:background-opacity"), QString::number(ts.backgroundOpacity) + QLatin1Char('%'));
-    KRUtils::writeFontAttributes(&element, ts.font);
+    KReportUtils::writeFontAttributes(&element, ts.font);
 
     entity->appendChild(element);
 }
 
-void KRUtils::buildXMLLineStyle(QDomDocument *doc, QDomElement *entity, const KRLineStyleData &ls)
+void KReportUtils::buildXMLLineStyle(QDomDocument *doc, QDomElement *entity, const KRLineStyleData &ls)
 {
     Q_ASSERT(doc);
     Q_ASSERT(entity);
@@ -302,7 +385,7 @@ void KRUtils::buildXMLLineStyle(QDomDocument *doc, QDomElement *entity, const KR
     entity->appendChild(element);
 }
 
-void KRUtils::addPropertyAsAttribute(QDomElement* e, KProperty* p)
+void KReportUtils::addPropertyAsAttribute(QDomElement* e, KProperty* p)
 {
     Q_ASSERT(e);
     Q_ASSERT(p);
@@ -324,7 +407,7 @@ void KRUtils::addPropertyAsAttribute(QDomElement* e, KProperty* p)
     }
 }
 
-void KRUtils::setAttribute(QDomElement *e, const QString &attribute, double value)
+void KReportUtils::setAttribute(QDomElement *e, const QString &attribute, double value)
 {
     Q_ASSERT(e);
     QString s;
@@ -332,21 +415,21 @@ void KRUtils::setAttribute(QDomElement *e, const QString &attribute, double valu
     e->setAttribute(attribute, s + QLatin1String("pt"));
 }
 
-void KRUtils::setAttribute(QDomElement *e, const QPointF &value)
+void KReportUtils::setAttribute(QDomElement *e, const QPointF &value)
 {
     Q_ASSERT(e);
-    KRUtils::setAttribute(e, QLatin1String("svg:x"), value.x());
-    KRUtils::setAttribute(e, QLatin1String("svg:y"), value.y());
+    KReportUtils::setAttribute(e, QLatin1String("svg:x"), value.x());
+    KReportUtils::setAttribute(e, QLatin1String("svg:y"), value.y());
 }
 
-void KRUtils::setAttribute(QDomElement *e, const QSizeF &value)
+void KReportUtils::setAttribute(QDomElement *e, const QSizeF &value)
 {
     Q_ASSERT(e);
-    KRUtils::setAttribute(e, QLatin1String("svg:width"), value.width());
-    KRUtils::setAttribute(e, QLatin1String("svg:height"), value.height());
+    KReportUtils::setAttribute(e, QLatin1String("svg:width"), value.width());
+    KReportUtils::setAttribute(e, QLatin1String("svg:height"), value.height());
 }
 
-bool KRUtils::parseReportTextStyleData(const QDomElement & elemSource, KRTextStyleData *ts)
+bool KReportUtils::parseReportTextStyleData(const QDomElement & elemSource, KRTextStyleData *ts)
 {
     Q_ASSERT(ts);
     if (elemSource.tagName() != QLatin1String("report:text-style"))
@@ -355,17 +438,17 @@ bool KRUtils::parseReportTextStyleData(const QDomElement & elemSource, KRTextSty
     ts->foregroundColor = QColor(elemSource.attribute(QLatin1String("fo:foreground-color"), QLatin1String("#000000")));
 
     bool ok;
-    ts->backgroundOpacity = KRUtils::readPercent(elemSource, "fo:background-opacity", 100, &ok);
+    ts->backgroundOpacity = KReportUtils::readPercent(elemSource, "fo:background-opacity", 100, &ok);
     if (!ok) {
         return false;
     }
-    if (!KRUtils::readFontAttributes(elemSource, &ts->font)) {
+    if (!KReportUtils::readFontAttributes(elemSource, &ts->font)) {
         return false;
     }
     return true;
 }
 
-bool KRUtils::parseReportLineStyleData(const QDomElement & elemSource, KRLineStyleData *ls)
+bool KReportUtils::parseReportLineStyleData(const QDomElement & elemSource, KRLineStyleData *ls)
 {
     Q_ASSERT(ls);
     if (elemSource.tagName() == QLatin1String("report:line-style")) {
@@ -391,15 +474,15 @@ bool KRUtils::parseReportLineStyleData(const QDomElement & elemSource, KRLineSty
     return false;
 }
 
-bool KRUtils::parseReportRect(const QDomElement & elemSource, KRPos *pos, KRSize *size)
+bool KReportUtils::parseReportRect(const QDomElement & elemSource, KRPos *pos, KRSize *size)
 {
     Q_ASSERT(pos);
     Q_ASSERT(size);
-    QStringList sl;
-    QDomNamedNodeMap map = elemSource.attributes();
-    for (int i=0; i < map.count(); ++i ) {
-        sl << map.item(i).nodeName();
-    }
+//    QStringList sl;
+//    QDomNamedNodeMap map = elemSource.attributes();
+//    for (int i=0; i < map.count(); ++i ) {
+//        sl << map.item(i).nodeName();
+//    }
     QPointF _pos;
     QSizeF _siz;
 
@@ -433,12 +516,12 @@ public:
 
 Q_GLOBAL_STATIC(PageIds, s_pageIds)
 
-QPageSize::PageSizeId KRUtils::pageSizeId(const QString &key)
+QPageSize::PageSizeId KReportUtils::pageSizeId(const QString &key)
 {
     return s_pageIds->id(key);
 }
 
-QPageSize KRUtils::pageSize(const QString &key)
+QPageSize KReportUtils::pageSize(const QString &key)
 {
     return QPageSize(s_pageIds->id(key));
 }

@@ -22,9 +22,8 @@
 #include <QDomDocument>
 #include <QCheckBox>
 
-
 #include "common/KoReportItemBase.h"
-#include <common/krutils.h>
+#include "KReportUtils.h"
 
 //
 // ReportEntity
@@ -52,17 +51,17 @@ void KoReportDesignerItemBase::buildXML(QGraphicsItem * item, QDomDocument *doc,
 void KoReportDesignerItemBase::buildXMLRect(QDomDocument *doc, QDomElement *entity, KRPos *pos, KRSize *size)
 {
     Q_UNUSED(doc);
-    KRUtils::buildXMLRect(entity, pos, size);
+    KReportUtils::buildXMLRect(entity, pos, size);
 }
 
 void KoReportDesignerItemBase::buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KRTextStyleData &ts)
 {
-    KRUtils::buildXMLTextStyle(doc, entity, ts);
+    KReportUtils::buildXMLTextStyle(doc, entity, ts);
 }
 
 void KoReportDesignerItemBase::buildXMLLineStyle(QDomDocument *doc, QDomElement *entity, const KRLineStyleData &ls)
 {
-    KRUtils::buildXMLLineStyle(doc, entity, ls);
+    KReportUtils::buildXMLLineStyle(doc, entity, ls);
 }
 
 QString KoReportDesignerItemBase::dataSourceAndObjectTypeName(const QString& dataSource, const QString& objectTypeName) const
@@ -73,5 +72,5 @@ QString KoReportDesignerItemBase::dataSourceAndObjectTypeName(const QString& dat
 // static
 void KoReportDesignerItemBase::addPropertyAsAttribute(QDomElement* e, KProperty* p)
 {
-    KRUtils::addPropertyAsAttribute(e, p);
+    KReportUtils::addPropertyAsAttribute(e, p);
 }

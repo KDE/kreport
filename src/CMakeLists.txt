@@ -13,7 +13,6 @@ add_subdirectory(plugins)
 set(kreport_LIB_SRCS
     common/kreport_debug.cpp
     common/kreportplugin_debug.cpp
-    common/krutils.cpp
     common/krpos.cpp
     common/krsize.cpp
     common/KoReportItemBase.cpp
@@ -30,6 +29,7 @@ set(kreport_LIB_SRCS
     common/KReportJsonTrader_p.cpp
     common/KReportPluginMetaData.cpp
     common/KoReportData.cpp
+    common/KReportUtils.cpp
     common/KReportPageFormat.cpp
     common/KReportUnit.cpp
     common/KReportDesign.cpp
@@ -255,6 +255,7 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
         KoReportPluginManager
         KoReportPluginInterface
         KReportUnit
+        KReportUtils
         KReportDesign
         krsize
         krpos
