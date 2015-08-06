@@ -66,6 +66,7 @@ void ElementsTest::testElements()
     QCOMPARE(lbl1.name(), "element2");
 
     lbl1.setText("label1");
+    QCOMPARE(lbl1.text(), "label1");
     e = lbl1;
 
     KReportLabelElement lbl2(e); // e points to lbl1 so shares lbl1 in fact
@@ -73,6 +74,32 @@ void ElementsTest::testElements()
     QCOMPARE(KReportLabelElement(e), lbl2);
     lbl2 = e;
     QCOMPARE(KReportLabelElement(e), lbl2);
+
+    lbl1 = KReportLabelElement();
+    QCOMPARE(lbl1.alignment(), Qt::AlignLeft | Qt::AlignVCenter); // defaults
+    lbl1.setAlignment(Qt::AlignHCenter|Qt::AlignBottom);
+    QCOMPARE(lbl1.alignment(), Qt::AlignHCenter|Qt::AlignBottom);
+
+    lbl1.setBackgroundOpacity(20.0);
+    QCOMPARE(lbl1.backgroundOpacity(), 1.0); // 1.0 is max
+    lbl1.setBackgroundOpacity(-100.10);
+    QCOMPARE(lbl1.backgroundOpacity(), 0.0); // 0.0 is min
+
+    lbl1.setFont(QApplication::font());
+    QFont f = lbl1.font();
+    QCOMPARE(f, QApplication::font());
+
+    QCOMPARE(lbl1.borderStyle().width(), 0.0); // default
+    QCOMPARE(lbl1.borderStyle().penStyle(), Qt::NoPen); // default
+    QCOMPARE(lbl1.borderStyle().color(), QColor()); // default
+    KReportLineStyle lineStyle;
+    lineStyle.setWidth(2.0);
+    lineStyle.setPenStyle(Qt::DashLine);
+    lineStyle.setColor(QColor("brown"));
+    lbl1.setBorderStyle(lineStyle);
+    QCOMPARE(lbl1.borderStyle(), lineStyle);
+    lineStyle.setColor(Qt::yellow);
+    QCOMPARE(lbl1.borderStyle().color(), QColor(Qt::yellow)); // shared
 }
 
 void ElementsTest::testElementCloning()

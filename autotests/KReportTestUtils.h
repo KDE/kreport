@@ -18,10 +18,13 @@
 #ifndef KREPORT_TEST_UTILS_H
 #define KREPORT_TEST_UTILS_H
 
+#include "kreporttestutils_export.h"
+#include "KReportUtils.h"
+
 #include <QTest>
 #include <QRect>
 
-#include "kreporttestutils_export.h"
+char *numberToString(int val) { return qstrdup(qPrintable(QString::number(val))); }
 
 namespace QTest
 {
@@ -32,6 +35,19 @@ KREPORTTESTUTILS_EXPORT bool qCompare(qreal val1, qreal val2, qreal epsilon, con
 //! For convenience.
 KREPORTTESTUTILS_EXPORT bool qCompare(const QString &val1, const char* val2, const char *actual,
                                       const char *expected, const char *file, int line);
+
+template<>
+char *toString(const QColor &val) { return qstrdup(qPrintable(QVariant(val).toString())); }
+
+template<>
+char *toString(const Qt::Alignment &val) {
+    return qstrdup(qPrintable(QString::fromLatin1("horizontal=%1,vertical=%2")
+                       .arg(KReportUtils::horizontalToString(val)).arg(KReportUtils::verticalToString(val))));
+}
+
+template<>
+char *toString(const QFont::Capitalization &val) { return numberToString(val); }
+
 }
 
 #define QFUZZYCOMPARE(actual, expected, epsilon) \

@@ -34,4 +34,5 @@ KREPORTTESTUTILS_EXPORT bool qCompare(const QString &val1, const char* val2, con
 {
     return QTest::qCompare(val1, QLatin1String(val2), actual, expected, file, line);
 }
+
 }
