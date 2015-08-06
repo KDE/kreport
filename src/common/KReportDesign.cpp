@@ -21,7 +21,9 @@
 #include "KReportDesign_p.h"
 #include "KReportElement.h"
 #include "KReportUnit.h"
-#include "krutils.h"
+#include "KReportUtils.h"
+#include "KoReportPluginManager.h"
+#include "KoReportPluginInterface.h"
 
 #include <QDomDocument>
 #include <QDomElement>
@@ -108,11 +110,16 @@ void KReportDesign::setPageLayout(const QPageLayout &pageLayout)
 
 KReportElement KReportDesign::createElement(const QString &typeName, QString *errorMessage)
 {
-    KReportElement element;
-    if (errorMessage) {
-        errorMessage->clear();
+    QDomElement el;
+    KReportDesignReadingStatus status;
+    KoReportPluginInterface* plugin = d->findPlugin(typeName, el, &status);
+    if (!plugin) {
+        if (errorMessage) {
+            *errorMessage = status.errorMessage;
+        }
+        return KReportElement();
     }
-    return element;
+    return plugin->createElement();
 }
 
 bool KReportDesign::hasSection(KReportSection::Type type) const

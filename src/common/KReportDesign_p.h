@@ -29,6 +29,7 @@
 
 class QDomDocument;
 class QDomElement;
+class KoReportPluginInterface;
 
 static const bool DEFAULT_SHOW_GRID = true;
 static const bool DEFAULT_SNAP_TO_GRID = true;
@@ -76,6 +77,9 @@ public:
 
     //! Processes @a el, a /report:content/report:body/report:detail/report:group element and sets status @a status
     bool processGroupElement(const QDomElement &el, KReportDesignReadingStatus *status);
+
+    KoReportPluginInterface* findPlugin(const QString &typeName, const QDomElement &el,
+                                        KReportDesignReadingStatus *status);
 
     KReportDesign * const q;
 
