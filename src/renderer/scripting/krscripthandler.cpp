@@ -87,7 +87,7 @@ KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData*
         m_sectionMap[sec]->setParent(m_report);
         m_sectionMap[sec]->setObjectName(sec->name().replace(QLatin1Char('-'), QLatin1Char('_'))
                                          .remove(QLatin1String("report:")));
-        QJSValue s = registerScriptObject(m_sectionMap[sec], m_sectionMap[sec]->objectName());
+        QJSValue s = m_engine->newQObject(m_sectionMap[sec]);
         r.setProperty(m_sectionMap[sec]->objectName(), s);
         kreportDebug() << "Added" << m_sectionMap[sec]->objectName() << "to report" << m_reportData->name();
     }
