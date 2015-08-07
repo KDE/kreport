@@ -156,6 +156,7 @@ bool KReportExampleData::open()
 
 QStringList KReportExampleData::scriptList(const QString &language) const
 {
+    Q_UNUSED(language);
     QStringList scripts;
 
     scripts << "example";
@@ -165,6 +166,7 @@ QStringList KReportExampleData::scriptList(const QString &language) const
 
 QString KReportExampleData::scriptCode(const QString &script, const QString &language) const
 {
+    Q_UNUSED(language);
     if (script != "example")
         return QString();
 
@@ -182,7 +184,7 @@ QString KReportExampleData::scriptCode(const QString &script, const QString &lan
              "    debug.print(\"report on-open event\");\n"
              "  }\n"
              "}\n"
-             "//example_report.section_detail.initialize(new detail());\n"
+             "example_report.section_detail.initialize(new detail());\n"
              "example_report.initialize(new report());\n";
 
     return scriptcode;

@@ -18,8 +18,7 @@
 #define KRSCRIPTSECTION_H
 
 #include <QObject>
-
-#include <kross/core/object.h>
+#include <QtQml/QJSValue>
 
 class KRSectionData;
 
@@ -56,12 +55,12 @@ public Q_SLOTS:
     /**Returns an object in the section, by name*/
     QObject* objectByName(const QString&);
 
-    void initialize(Kross::Object::Ptr);
+    void initialize(QJSValue s);
     void eventOnRender();
 
 private:
     KRSectionData *m_section;
-    Kross::Object::Ptr m_scriptObject;
+    QJSValue m_scriptObject;
 };
 }
 #endif

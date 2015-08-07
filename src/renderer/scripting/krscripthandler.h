@@ -47,7 +47,7 @@ public:
 
     QVariant evaluate(const QString&);
     void displayErrors();
-    void registerScriptObject(QObject*, const QString&);
+    QJSValue registerScriptObject(QObject*, const QString&);
     void trigger();
 
 public Q_SLOTS:

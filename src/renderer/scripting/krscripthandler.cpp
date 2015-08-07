@@ -78,6 +78,7 @@ KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData*
 
     //Add a general report object
     m_report = new Scripting::Report(m_reportData);
+    QJSValue r = registerScriptObject(m_report, m_reportData->name());
 
     //Add the sections
     QList<KRSectionData*> secs = m_reportData->sections();
@@ -86,10 +87,12 @@ KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData*
         m_sectionMap[sec]->setParent(m_report);
         m_sectionMap[sec]->setObjectName(sec->name().replace(QLatin1Char('-'), QLatin1Char('_'))
                                          .remove(QLatin1String("report:")));
-        //kreportDebug() << "Added" << m_sectionMap[sec]->objectName() << "to report" << m_reportData->name();
+        QJSValue s = registerScriptObject(m_sectionMap[sec], m_sectionMap[sec]->objectName());
+        r.setProperty(m_sectionMap[sec]->objectName(), s);
+        kreportDebug() << "Added" << m_sectionMap[sec]->objectName() << "to report" << m_reportData->name();
     }
 
-    registerScriptObject(m_report, m_reportData->name());
+
     kreportDebug() << "Report name is" << m_reportData->name();
 }
 
@@ -180,12 +183,13 @@ QString KRScriptHandler::where()
     return w;
 }
 
-void KRScriptHandler::registerScriptObject(QObject* obj, const QString& name)
+QJSValue KRScriptHandler::registerScriptObject(QObject* obj, const QString& name)
 {
-    //kreportDebug();
+    QJSValue val;
     if (m_engine) {
-        QJSValue val = m_engine->newQObject(obj);
+        val = m_engine->newQObject(obj);
         m_engine->globalObject().setProperty(name, val);
     }
+    return val;
 }
 
