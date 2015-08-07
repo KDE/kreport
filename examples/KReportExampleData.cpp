@@ -153,3 +153,37 @@ bool KReportExampleData::open()
 {
     return true;
 }
+
+QStringList KReportExampleData::scriptList(const QString &language) const
+{
+    QStringList scripts;
+
+    scripts << "example";
+
+    return scripts;
+}
+
+QString KReportExampleData::scriptCode(const QString &script, const QString &language) const
+{
+    if (script != "example")
+        return QString();
+
+    QString scriptcode;
+
+    scriptcode = ""
+             "function detail(){\n"
+             "  this.OnRender = function() {\n"
+             "    debug.print(\"printing this from the javascript engine\");\n"
+             "  }\n"
+             "}\n"
+             "\n"
+             "function report(){\n"
+             "  this.OnOpen = function() {\n"
+             "    debug.print(\"report on-open event\");\n"
+             "  }\n"
+             "}\n"
+             "//example_report.section_detail.initialize(new detail());\n"
+             "example_report.initialize(new report());\n";
+
+    return scriptcode;
+}

@@ -180,7 +180,7 @@ public:
     KProperty *gridSnap;
     KProperty *labelType;
 #ifdef KREPORT_SCRIPTING
-//!TODO    KProperty *interpreter;
+//    KProperty *interpreter;
     KProperty *script;
 #endif
 
@@ -370,8 +370,8 @@ QDomElement KoReportDesigner::document() const
 
 #ifdef KREPORT_SCRIPTING
     QDomElement scr = propertyToElement(&doc, d->script);
-//!TODO    KRUtils::addPropertyAsAttribute(&scr, d->interpreter);
-//    content.appendChild(scr);
+    //KRUtils::addPropertyAsAttribute(&scr, d->interpreter);
+    content.appendChild(scr);
 #endif
 
     QDomElement grd = doc.createElement(QLatin1String("report:grid"));
@@ -758,7 +758,7 @@ void KoReportDesigner::createProperties()
 //!TODO    keys = Kross::Manager::self().interpreters();
 //    d->interpreter = new KProperty("script-interpreter", keys, keys, keys.value(0), tr("Script Interpreter"));
 //    d->set->addProperty(d->interpreter);
-    d->script = new KProperty("script", keys, keys, QString(), tr("Object Script"));
+    d->script = new KProperty("script", QStringList(), QStringList(), QString(), tr("Object Script"));
 //    d->set->addProperty(d->interpreter);
     d->set->addProperty(d->script);
 #endif
@@ -789,9 +789,13 @@ void KoReportDesigner::slotPropertyChanged(KPropertySet &s, KProperty &p)
 
 void KoReportDesigner::slotPageButton_Pressed()
 {
+    qDebug() << "page button pressed";
 #ifdef KREPORT_SCRIPTING
     if (d->kordata) {
+        qDebug() << "..getting script list";
         QStringList sl = d->kordata->scriptList(QLatin1String(""));
+        sl.push_front(QLatin1String(""));
+        qDebug() << ".." << sl;
         d->script->setListData(sl, sl);
     }
     changeSet(d->set);

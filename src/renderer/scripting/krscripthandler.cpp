@@ -66,18 +66,15 @@ KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData*
 
     //Add constants object
     m_constants = new KRScriptConstants();
-    m_constants->setObjectName(QLatin1String("constants"));
-    m_engine->newQObject(m_constants/*, QLatin1String("constants")*/);
+    registerScriptObject(m_constants, QLatin1String("constants"));
 
     //A simple debug function to allow printing from functions
     m_debug = new KRScriptDebug();
-    m_debug->setObjectName(QLatin1String("debug"));
-    m_engine->newQObject(m_debug/*, QLatin1String("debug")*/);
+    registerScriptObject(m_debug, QLatin1String("debug"));
 
     //A simple drawing object
     m_draw = new KRScriptDraw();
-    m_draw->setObjectName(QLatin1String("draw"));
-    m_engine->newQObject(m_draw/*, "draw"*/);
+    registerScriptObject(m_draw, QLatin1String("draw"));
 
     //Add a general report object
     m_report = new Scripting::Report(m_reportData);
@@ -92,15 +89,15 @@ KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData*
         //kreportDebug() << "Added" << m_sectionMap[sec]->objectName() << "to report" << m_reportData->name();
     }
 
-    m_report->setObjectName(m_reportData->name());
-    m_engine->newQObject(m_report/*, m_reportData->name()*/);
-    //kreportDebug() << "Report name is" << m_reportData->name();
+    registerScriptObject(m_report, m_reportData->name());
+    kreportDebug() << "Report name is" << m_reportData->name();
 }
 
 void KRScriptHandler::trigger()
 {
     //kreportDebug() << m_engine->code();
     QString code = m_koreportData->scriptCode(m_reportData->script(), QLatin1String(""));
+    qDebug() << code;
     m_scriptValue = m_engine->evaluate(code);
 
     if (m_scriptValue.isError()) {
@@ -187,8 +184,8 @@ void KRScriptHandler::registerScriptObject(QObject* obj, const QString& name)
 {
     //kreportDebug();
     if (m_engine) {
-        obj->setObjectName(name);
-        m_engine->newQObject(obj);
+        QJSValue val = m_engine->newQObject(obj);
+        m_engine->globalObject().setProperty(name, val);
     }
 }
 

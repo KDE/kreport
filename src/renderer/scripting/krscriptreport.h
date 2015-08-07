@@ -18,8 +18,7 @@
 #define SCRIPTINGKRSCRIPTREPORT_H
 
 #include <QObject>
-
-#include <kross/core/object.h>
+#include <QtQml/QJSValue>
 
 class KoReportReportData;
 
@@ -44,14 +43,14 @@ public Q_SLOTS:
     QObject* sectionByName(const QString &);
 
 
-    void initialize(Kross::Object::Ptr);
+    void initialize(QJSValue val);
     void eventOnOpen();
     void eventOnComplete();
     void eventOnNewPage();
 
 private:
     KoReportReportData *m_reportData;
-    Kross::Object::Ptr m_scriptObject;
+    QJSValue m_scriptObject;
 };
 
 }
