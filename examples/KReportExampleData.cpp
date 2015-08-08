@@ -154,9 +154,8 @@ bool KReportExampleData::open()
     return true;
 }
 
-QStringList KReportExampleData::scriptList(const QString &language) const
+QStringList KReportExampleData::scriptList() const
 {
-    Q_UNUSED(language);
     QStringList scripts;
 
     scripts << "example";
@@ -164,9 +163,8 @@ QStringList KReportExampleData::scriptList(const QString &language) const
     return scripts;
 }
 
-QString KReportExampleData::scriptCode(const QString &script, const QString &language) const
+QString KReportExampleData::scriptCode(const QString &script) const
 {
-    Q_UNUSED(language);
     if (script != "example")
         return QString();
 

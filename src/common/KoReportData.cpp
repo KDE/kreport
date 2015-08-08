@@ -51,16 +51,14 @@ void KoReportData::addExpression(const QString &field, const QVariant &value, ch
 }
 
 #ifdef KREPORT_SCRIPTING
-QStringList KoReportData::scriptList(const QString &language) const
+QStringList KoReportData::scriptList() const
 {
-    Q_UNUSED(language);
     return QStringList();
 }
 
-QString KoReportData::scriptCode(const QString &script, const QString &language) const
+QString KoReportData::scriptCode(const QString &script) const
 {
     Q_UNUSED(script);
-    Q_UNUSED(language);
     return QString();
 }
 #endif

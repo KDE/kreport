@@ -783,10 +783,8 @@ void KoReportDesigner::slotPageButton_Pressed()
     qDebug() << "page button pressed";
 #ifdef KREPORT_SCRIPTING
     if (d->kordata) {
-        qDebug() << "..getting script list";
-        QStringList sl = d->kordata->scriptList(QLatin1String(""));
+        QStringList sl = d->kordata->scriptList();
         sl.push_front(QLatin1String(""));
-        qDebug() << ".." << sl;
         d->script->setListData(sl, sl);
     }
     changeSet(d->set);

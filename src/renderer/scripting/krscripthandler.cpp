@@ -84,7 +84,7 @@ KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData*
 void KRScriptHandler::trigger()
 {
     //kreportDebug() << m_engine->code();
-    QString code = m_koreportData->scriptCode(m_reportData->script(), QLatin1String(""));
+    QString code = m_koreportData->scriptCode(m_reportData->script());
     qDebug() << code;
     m_scriptValue = m_engine->evaluate(code);
 
