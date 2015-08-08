@@ -49,21 +49,6 @@ KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData*
     // Create the script engine instance .
     m_engine = new QJSEngine(this);
 
-    /*! @todo The kjsembed interpreter is buggy, and crashes on expressions
-     involving QVariant, which happens often.  So, as a workaground
-     if the qtscript interpreter is available, load that instead.
-     we do this instead of hiding the javascript interpreter incase a
-     user has a database using that interpreter. */
-
-    //!TODO QStringList interpreters = Kross::Manager::self().interpreters();
-    //!TODO QString interpreter = d->interpreter();
-
-    //!TODO if (interpreter.toLower() == QLatin1String("javascript") && interpreters.contains(QLatin1String("qtscript"))) {
-    //!TODO     interpreter = QLatin1String("qtscript");
-    //!TODO }
-
-    //!TODO m_engine->setInterpreter(interpreter);
-
     //Add constants object
     m_constants = new KRScriptConstants();
     registerScriptObject(m_constants, QLatin1String("constants"));

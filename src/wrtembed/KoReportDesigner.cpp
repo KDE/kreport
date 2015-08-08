@@ -34,10 +34,6 @@
 #include "common/KoReportPluginInterface.h"
 #include "common/KoReportPluginManager.h"
 
-#ifdef KREPORT_SCRIPTING
-#include <kross/core/manager.h>
-#endif
-
 #include <KStandardShortcut>
 #include <KStandardGuiItem>
 #include <QLayout>
@@ -180,7 +176,6 @@ public:
     KProperty *gridSnap;
     KProperty *labelType;
 #ifdef KREPORT_SCRIPTING
-//    KProperty *interpreter;
     KProperty *script;
 #endif
 
@@ -755,11 +750,7 @@ void KoReportDesigner::createProperties()
     d->set->addProperty(d->bottomMargin);
 
 #ifdef KREPORT_SCRIPTING
-//!TODO    keys = Kross::Manager::self().interpreters();
-//    d->interpreter = new KProperty("script-interpreter", keys, keys, keys.value(0), tr("Script Interpreter"));
-//    d->set->addProperty(d->interpreter);
     d->script = new KProperty("script", QStringList(), QStringList(), QString(), tr("Object Script"));
-//    d->set->addProperty(d->interpreter);
     d->set->addProperty(d->script);
 #endif
 
