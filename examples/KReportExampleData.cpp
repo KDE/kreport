@@ -183,6 +183,7 @@ QString KReportExampleData::scriptCode(const QString &script, const QString &lan
              "    } else {\n"
              "      example_report.section_detail.setBackgroundColor(\"#dddddd\");\n"
              "    }\n"
+             "    example_report.section_detail.objectByName(\"label1\").setCaption(\"Record: \" + count);\n"
              "  }\n"
              "}\n"
              "\n"
