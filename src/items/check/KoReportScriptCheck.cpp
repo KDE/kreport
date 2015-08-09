@@ -17,7 +17,7 @@
  */
 
 #include "KoReportScriptCheck.h"
-#include <KProperty/KProperty>
+#include <KProperty>
 
 namespace Scripting
 {

@@ -18,7 +18,7 @@
 #include "krscriptline.h"
 #include "KoReportItemLine.h"
 
-#include "KProperty/KProperty"
+#include <KProperty>
 
 namespace Scripting
 {

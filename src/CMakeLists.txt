@@ -3,6 +3,7 @@ option(KREPORT_SCRIPTING "Enable scripting" OFF)
 configure_file(config-kreport.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kreport.h)
 
 if(KREPORT_SCRIPTING)
+    find_package(Qt5Qml REQUIRED)
     set(SCRIPTING_LIBS Qt5Qml)
 endif()
 
