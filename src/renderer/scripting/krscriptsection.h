@@ -55,7 +55,7 @@ public Q_SLOTS:
     /**Returns an object in the section, by name*/
     QObject* objectByName(const QString&);
 
-    void initialize(QJSValue s);
+    void initialize(const QJSValue &s);
     void eventOnRender();
 
 private:

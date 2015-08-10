@@ -4,7 +4,7 @@ configure_file(config-kreport.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kreport
 
 if(KREPORT_SCRIPTING)
     find_package(Qt5Qml REQUIRED)
-    set(SCRIPTING_LIBS Qt5Qml)
+    set(SCRIPTING_LIBS Qt5::Qml)
 endif()
 
 add_subdirectory(plugins)
@@ -154,6 +154,7 @@ target_link_libraries(KReport
         Qt5::Xml
         KF5::CoreAddons
         KProperty
+        Qt5::Network
     PRIVATE
         KF5::WidgetsAddons
         KF5::ConfigGui     # KStandardShortcut

@@ -33,6 +33,7 @@
 #include "common/krutils.h"
 #include "common/KoReportPluginInterface.h"
 #include "common/KoReportPluginManager.h"
+#include "kreport_debug.h"
 
 #include <KStandardShortcut>
 #include <KStandardGuiItem>
@@ -46,7 +47,7 @@
 #include <QIcon>
 #include <QAction>
 #include <QMouseEvent>
-#include "kreport_debug.h"
+#include <QMessageBox>
 
 //! Also add public method for runtime?
 const char ns[] = "http://kexi-project.org/report/2.0";
@@ -196,6 +197,9 @@ public:
 
     bool modified; // true if this document has been modified, false otherwise
 
+    QString loadInterpreter; //Value of the script interpreter at load time
+    QString loadScript; //Value of the script at load time
+
     KoReportData *kordata;
 };
 
@@ -282,8 +286,16 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
                 setReportTitle(it.firstChild().nodeValue());
 #ifdef KREPORT_SCRIPTING
             } else if (n == QLatin1String("report:script")) {
-//!TODO                d->interpreter->setValue(it.toElement().attribute(QLatin1String("report:script-interpreter")));
-                d->script->setValue(it.firstChild().nodeValue());
+                d->loadInterpreter = it.toElement().attribute(QLatin1String("report:script-interpreter"));
+                d->loadScript = it.firstChild().nodeValue();
+                d->script->setValue(d->loadScript);
+
+                if (d->loadInterpreter != QLatin1String("javascript") || d->loadInterpreter != QLatin1String("qtscript")) {
+                    QString msg = tr("This report is using a script type other than 'javascript'\n"
+                                     "To prevent data loss, the type of script will not be changed unless the script is changed.\n\n"
+                                     "Please be aware that the script will not work unless it is changed to a 'javascript' script.");
+                    QMessageBox::warning(this, tr("Invalid Script Detected"), msg);
+                }
 #endif
             } else if (n == QLatin1String("report:grid")) {
                 d->showGrid->setValue(it.toElement().attribute(QLatin1String("report:grid-visible"), QString::number(1)).toInt() != 0);
@@ -352,6 +364,7 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
 QDomElement KoReportDesigner::document() const
 {
     QDomDocument doc;
+    QString saveInterpreter;
 
     QDomElement content = doc.createElement(QLatin1String("report:content"));
     content.setAttribute(QLatin1String("xmlns:report"), QLatin1String(ns));
@@ -364,8 +377,15 @@ QDomElement KoReportDesigner::document() const
     content.appendChild(propertyToElement(&doc, d->title));
 
 #ifdef KREPORT_SCRIPTING
+    if (d->script->value().toString() != d->loadScript || d->loadInterpreter == QLatin1String("qtscript")) {
+        //The script has changed so force interpreter to 'javascript'.  Also set if was using qtscript
+        saveInterpreter = QLatin1String("javascript");
+    } else {
+        saveInterpreter = d->loadInterpreter;
+    }
+
     QDomElement scr = propertyToElement(&doc, d->script);
-    //KRUtils::addPropertyAsAttribute(&scr, d->interpreter);
+    scr.setAttribute(QLatin1String("report:interpreter"), saveInterpreter);
     content.appendChild(scr);
 #endif
 
@@ -780,11 +800,10 @@ void KoReportDesigner::slotPropertyChanged(KPropertySet &s, KProperty &p)
 
 void KoReportDesigner::slotPageButton_Pressed()
 {
-    qDebug() << "page button pressed";
 #ifdef KREPORT_SCRIPTING
     if (d->kordata) {
         QStringList sl = d->kordata->scriptList();
-        sl.push_front(QLatin1String(""));
+        sl.prepend(QLatin1String(""));
         d->script->setListData(sl, sl);
     }
     changeSet(d->set);

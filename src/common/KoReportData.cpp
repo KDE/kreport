@@ -70,7 +70,6 @@ QStringList KoReportData::dataSources() const
 
 QStringList KoReportData::dataSourceNames() const
 {
-    qDebug() << "Returning data sources";
     return dataSources();
 }
 

@@ -43,7 +43,10 @@ void ORODocument::setTitle(const QString & pTitle)
 
 OROPage* ORODocument::page(int pnum)
 {
-    return m_pages.at(pnum);
+    if (pnum >= 0 && pnum < m_pages.count()) {
+        return m_pages.at(pnum);
+    }
+    return nullptr;
 }
 
 void ORODocument::addPage(OROPage* p)

@@ -92,26 +92,26 @@ QObject* Report::sectionByName(const QString &n)
     }
 }
 
-void Report::initialize(QJSValue val)
+void Report::initialize(const QJSValue &val)
 {
     m_scriptObject = val;
 }
 
 void Report::eventOnOpen()
 {
-    if (m_scriptObject.isObject())
+    if (m_scriptObject.isObject() && m_scriptObject.hasProperty(QLatin1String("OnOpen")))
         m_scriptObject.property(QLatin1String("OnOpen")).call();
 }
 
 void Report::eventOnComplete()
 {
-    if (m_scriptObject.isObject())
+    if (m_scriptObject.isObject() && m_scriptObject.hasProperty(QLatin1String("OnComlete")))
         m_scriptObject.property(QLatin1String("OnComplete")).call();
 }
 
 void Report::eventOnNewPage()
 {
-    if (m_scriptObject.isObject())
+    if (m_scriptObject.isObject() && m_scriptObject.hasProperty(QLatin1String("OnNewPage")))
         m_scriptObject.property(QLatin1String("OnNewPage")).call();
 }
 

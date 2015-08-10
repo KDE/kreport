@@ -23,18 +23,16 @@
 #include "krscriptreport.h"
 #include "krscriptdraw.h"
 #include "krscriptconstants.h"
-
 #include "krsectiondata.h"
 #include "KoReportItemBase.h"
 #include "krreportdata.h"
 #include "krdetailsectiondata.h"
 #include "renderobjects.h"
+#include "kreport_debug.h"
 
 #include <QtGui/QMessageBox>
-
-#include "kreport_debug.h"
-#include <QtQml/QJSEngine>
-#include <QtQml/QJSValue>
+#include <QJSEngine>
+#include <QJSValue>
 
 KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData* d)
 {
@@ -81,27 +79,29 @@ KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData*
     kreportDebug() << "Report name is" << m_reportData->name();
 }
 
-void KRScriptHandler::trigger()
+bool KRScriptHandler::trigger()
 {
-    //kreportDebug() << m_engine->code();
     QString code = m_koreportData->scriptCode(m_reportData->script());
-    qDebug() << code;
-    m_scriptValue = m_engine->evaluate(code);
+    kreportDebug() << code;
+
+    if (code.isEmpty()) {
+        return true;
+    }
+
+    m_scriptValue = m_engine->evaluate(code, m_reportData->script());
 
     if (m_scriptValue.isError()) {
-        QMessageBox::warning(0, tr("Script Error"), m_scriptValue.toString());
+        return false;
     }/*TODO else {
         kreportDebug() << "Function Names:" << m_engine->functionNames();
     }*/
     m_report->eventOnOpen();
+    return true;
 }
 
 KRScriptHandler::~KRScriptHandler()
 {
     delete m_report;
-    delete m_constants;
-    delete m_debug;
-    delete m_draw;
     delete m_engine;
 }
 
@@ -142,10 +142,13 @@ QVariant KRScriptHandler::evaluate(const QString &code)
 {
     if (!m_scriptValue.isError()) {
         QJSValue result = m_engine->evaluate(code);
-        return result.toVariant();
-    } else {
-        return QVariant();
+        if (!result.isError()) {
+            return result.toVariant();
+        } else {
+            QMessageBox::warning(0, tr("Script Error"), m_scriptValue.toString());
+        }
     }
+    return QVariant();
 }
 
 void KRScriptHandler::displayErrors()
@@ -171,10 +174,8 @@ QString KRScriptHandler::where()
 QJSValue KRScriptHandler::registerScriptObject(QObject* obj, const QString& name)
 {
     QJSValue val;
-    if (m_engine) {
-        val = m_engine->newQObject(obj);
-        m_engine->globalObject().setProperty(name, val);
-    }
+    val = m_engine->newQObject(obj);
+    m_engine->globalObject().setProperty(name, val);
     return val;
 }
 

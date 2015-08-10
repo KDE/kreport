@@ -43,7 +43,7 @@ public Q_SLOTS:
     QObject* sectionByName(const QString &);
 
 
-    void initialize(QJSValue val);
+    void initialize(const QJSValue &val);
     void eventOnOpen();
     void eventOnComplete();
     void eventOnNewPage();

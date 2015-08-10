@@ -95,14 +95,14 @@ QObject* Section::objectByName(const QString& n)
     return 0;
 }
 
-void Section::initialize(QJSValue s)
+void Section::initialize(const QJSValue &s)
 {
     m_scriptObject = s;
 }
 
 void Section::eventOnRender()
 {
-    if (m_scriptObject.isObject())
+    if (m_scriptObject.isObject() && m_scriptObject.hasProperty(QLatin1String("OnRender")))
         m_scriptObject.property(QLatin1String("OnRender")).call();
 }
 }
