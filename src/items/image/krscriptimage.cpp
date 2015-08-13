@@ -18,6 +18,8 @@
 #include "krscriptimage.h"
 #include "KoReportItemImage.h"
 
+#include <KProperty>
+
 namespace Scripting
 {
 

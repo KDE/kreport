@@ -23,61 +23,45 @@
 #include "krscriptreport.h"
 #include "krscriptdraw.h"
 #include "krscriptconstants.h"
-
 #include "krsectiondata.h"
 #include "KoReportItemBase.h"
 #include "krreportdata.h"
 #include "krdetailsectiondata.h"
 #include "renderobjects.h"
-
-#include <KMessageBox>
-
-//! @todo #include <kross/core/manager.h>
-
 #include "kreport_debug.h"
+
+#include <QtGui/QMessageBox>
+#include <QJSEngine>
+#include <QJSValue>
 
 KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData* d)
 {
     m_reportData = d;
     m_koreportData = kodata;
 
-    m_action = 0;
+    m_engine = 0;
     m_constants = 0;
     m_debug = 0;
     m_draw = 0;
 
-    // Create the Kross::Action instance .
-    m_action = new Kross::Action(this, QLatin1String("ReportScript"));
-
-    /*! @todo The kjsembed interpreter is buggy, and crashes on expressions
-     involving QVariant, which happens often.  So, as a workaground
-     if the qtscript interpreter is available, load that instead.
-     we do this instead of hiding the javascript interpreter incase a
-     user has a database using that interpreter. */
-
-    QStringList interpreters = Kross::Manager::self().interpreters();
-    QString interpreter = d->interpreter();
-
-    if (interpreter.toLower() == QLatin1String("javascript") && interpreters.contains(QLatin1String("qtscript"))) {
-        interpreter = QLatin1String("qtscript");
-    }
-
-    m_action->setInterpreter(interpreter);
+    // Create the script engine instance .
+    m_engine = new QJSEngine(this);
 
     //Add constants object
     m_constants = new KRScriptConstants();
-    m_action->addObject(m_constants, QLatin1String("constants"));
+    registerScriptObject(m_constants, QLatin1String("constants"));
 
     //A simple debug function to allow printing from functions
     m_debug = new KRScriptDebug();
-    m_action->addObject(m_debug, QLatin1String("debug"));
+    registerScriptObject(m_debug, QLatin1String("debug"));
 
     //A simple drawing object
     m_draw = new KRScriptDraw();
-    m_action->addObject(m_draw, "draw");
+    registerScriptObject(m_draw, QLatin1String("draw"));
 
     //Add a general report object
     m_report = new Scripting::Report(m_reportData);
+    QJSValue r = registerScriptObject(m_report, m_reportData->name());
 
     //Add the sections
     QList<KRSectionData*> secs = m_reportData->sections();
@@ -86,35 +70,39 @@ KRScriptHandler::KRScriptHandler(const KoReportData* kodata, KoReportReportData*
         m_sectionMap[sec]->setParent(m_report);
         m_sectionMap[sec]->setObjectName(sec->name().replace(QLatin1Char('-'), QLatin1Char('_'))
                                          .remove(QLatin1String("report:")));
-        //kreportDebug() << "Added" << m_sectionMap[sec]->objectName() << "to report" << m_reportData->name();
+        QJSValue s = m_engine->newQObject(m_sectionMap[sec]);
+        r.setProperty(m_sectionMap[sec]->objectName(), s);
+        kreportDebug() << "Added" << m_sectionMap[sec]->objectName() << "to report" << m_reportData->name();
     }
 
-    m_action->addObject(m_report, m_reportData->name());
-    //kreportDebug() << "Report name is" << m_reportData->name();
 
-    QString code = m_koreportData->scriptCode(m_reportData->script(), m_reportData->interpreter());
-    m_action->setCode(code.toUtf8());
+    kreportDebug() << "Report name is" << m_reportData->name();
 }
 
-void KRScriptHandler::trigger()
+bool KRScriptHandler::trigger()
 {
-    //kreportDebug() << m_action->code();
-    m_action->trigger();
-    if (m_action->hadError()) {
-        KMessageBox::error(0, m_action->errorMessage());
-    } else {
-        kreportDebug() << "Function Names:" << m_action->functionNames();
+    QString code = m_koreportData->scriptCode(m_reportData->script());
+    kreportDebug() << code;
+
+    if (code.isEmpty()) {
+        return true;
     }
+
+    m_scriptValue = m_engine->evaluate(code, m_reportData->script());
+
+    if (m_scriptValue.isError()) {
+        return false;
+    }/*TODO else {
+        kreportDebug() << "Function Names:" << m_engine->functionNames();
+    }*/
     m_report->eventOnOpen();
+    return true;
 }
 
 KRScriptHandler::~KRScriptHandler()
 {
     delete m_report;
-    delete m_constants;
-    delete m_debug;
-    delete m_draw;
-    delete m_action;
+    delete m_engine;
 }
 
 void KRScriptHandler::newPage()
@@ -152,18 +140,21 @@ void KRScriptHandler::slotEnteredSection(KRSectionData *section, OROPage* cp, QP
 
 QVariant KRScriptHandler::evaluate(const QString &code)
 {
-    if (!m_action->hadError()) {
-        QVariant result = m_action->evaluate(code.toUtf8());
-        return QString::fromUtf8(result.toByteArray());
-    } else {
-        return QVariant();
+    if (!m_scriptValue.isError()) {
+        QJSValue result = m_engine->evaluate(code);
+        if (!result.isError()) {
+            return result.toVariant();
+        } else {
+            QMessageBox::warning(0, tr("Script Error"), m_scriptValue.toString());
+        }
     }
+    return QVariant();
 }
 
 void KRScriptHandler::displayErrors()
 {
-    if (m_action->hadError()) {
-        KMessageBox::error(0, m_action->errorMessage());
+    if (m_scriptValue.isError()) {
+        QMessageBox::warning(0, tr("Script Error"), m_scriptValue.toString());
     }
 }
 
@@ -172,7 +163,7 @@ QString KRScriptHandler::where()
     QString w;
     QMap<QString, QVariant>::const_iterator i = m_groups.constBegin();
     while (i != m_groups.constEnd()) {
-        w += QLatin1Char('(') + i.key() + QLatin1String(" = '") + i.value().toString() + QLatin1Char("') AND ");
+        w += QLatin1Char('(') + i.key() + QLatin1String(" = '") + i.value().toString() + QLatin1String("') AND ");
         ++i;
     }
     w.chop(4);
@@ -180,10 +171,11 @@ QString KRScriptHandler::where()
     return w;
 }
 
-void KRScriptHandler::registerScriptObject(QObject* obj, const QString& name)
+QJSValue KRScriptHandler::registerScriptObject(QObject* obj, const QString& name)
 {
-    //kreportDebug();
-    if (m_action)
-        m_action->addObject(obj, name);
+    QJSValue val;
+    val = m_engine->newQObject(obj);
+    m_engine->globalObject().setProperty(name, val);
+    return val;
 }
 

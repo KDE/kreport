@@ -33,10 +33,7 @@
 #include "common/krutils.h"
 #include "common/KoReportPluginInterface.h"
 #include "common/KoReportPluginManager.h"
-
-#ifdef KREPORT_SCRIPTING
-#include <kross/core/manager.h>
-#endif
+#include "kreport_debug.h"
 
 #include <KStandardShortcut>
 #include <KStandardGuiItem>
@@ -50,7 +47,7 @@
 #include <QIcon>
 #include <QAction>
 #include <QMouseEvent>
-#include "kreport_debug.h"
+#include <QMessageBox>
 
 //! Also add public method for runtime?
 const char ns[] = "http://kexi-project.org/report/2.0";
@@ -180,7 +177,6 @@ public:
     KProperty *gridSnap;
     KProperty *labelType;
 #ifdef KREPORT_SCRIPTING
-    KProperty *interpreter;
     KProperty *script;
 #endif
 
@@ -200,6 +196,9 @@ public:
     qreal releaseY;
 
     bool modified; // true if this document has been modified, false otherwise
+
+    QString originalInterpreter; //Value of the script interpreter at load time
+    QString originalScript; //Value of the script at load time
 
     KoReportData *kordata;
 };
@@ -287,8 +286,16 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
                 setReportTitle(it.firstChild().nodeValue());
 #ifdef KREPORT_SCRIPTING
             } else if (n == QLatin1String("report:script")) {
-                d->interpreter->setValue(it.toElement().attribute(QLatin1String("report:script-interpreter")));
-                d->script->setValue(it.firstChild().nodeValue());
+                d->originalInterpreter = it.toElement().attribute(QLatin1String("report:script-interpreter"));
+                d->originalScript = it.firstChild().nodeValue();
+                d->script->setValue(d->originalScript);
+
+                if (d->originalInterpreter != QLatin1String("javascript") || d->originalInterpreter != QLatin1String("qtscript")) {
+                    QString msg = tr("This report is using a script type other than \"javascript\".  "
+                                     "To prevent loosing the script, the type of script will not be changed unless the script is changed.  "
+                                     "Please be aware that the script will not work unless it is changed to a \"javascript\" script.");
+                    QMessageBox::warning(this, tr("Unsupported Script Type"), msg);
+                }
 #endif
             } else if (n == QLatin1String("report:grid")) {
                 d->showGrid->setValue(it.toElement().attribute(QLatin1String("report:grid-visible"), QString::number(1)).toInt() != 0);
@@ -357,6 +364,7 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
 QDomElement KoReportDesigner::document() const
 {
     QDomDocument doc;
+    QString saveInterpreter;
 
     QDomElement content = doc.createElement(QLatin1String("report:content"));
     content.setAttribute(QLatin1String("xmlns:report"), QLatin1String(ns));
@@ -369,9 +377,18 @@ QDomElement KoReportDesigner::document() const
     content.appendChild(propertyToElement(&doc, d->title));
 
 #ifdef KREPORT_SCRIPTING
-    QDomElement scr = propertyToElement(&doc, d->script);
-    KRUtils::addPropertyAsAttribute(&scr, d->interpreter);
-    content.appendChild(scr);
+    if (!d->script->value().toString().isEmpty()) {
+        if (d->script->value().toString() != d->originalScript || d->originalInterpreter == QLatin1String("qtscript")) {
+            //The script has changed so force interpreter to 'javascript'.  Also set if was using qtscript
+            saveInterpreter = QLatin1String("javascript");
+        } else {
+            saveInterpreter = d->originalInterpreter;
+        }
+
+        QDomElement scr = propertyToElement(&doc, d->script);
+        scr.setAttribute(QLatin1String("report:interpreter"), saveInterpreter);
+        content.appendChild(scr);
+    }
 #endif
 
     QDomElement grd = doc.createElement(QLatin1String("report:grid"));
@@ -755,10 +772,7 @@ void KoReportDesigner::createProperties()
     d->set->addProperty(d->bottomMargin);
 
 #ifdef KREPORT_SCRIPTING
-    keys = Kross::Manager::self().interpreters();
-    d->interpreter = new KProperty("script-interpreter", keys, keys, keys.value(0), tr("Script Interpreter"));
-    d->set->addProperty(d->interpreter);
-    d->script = new KProperty("script", keys, keys, QString(), tr("Object Script"));
+    d->script = new KProperty("script", QStringList(), QStringList(), QString(), tr("Object Script"));
     d->set->addProperty(d->script);
 #endif
 
@@ -790,7 +804,8 @@ void KoReportDesigner::slotPageButton_Pressed()
 {
 #ifdef KREPORT_SCRIPTING
     if (d->kordata) {
-        QStringList sl = d->kordata->scriptList(d->interpreter->value().toString());
+        QStringList sl = d->kordata->scriptList();
+        sl.prepend(QLatin1String(""));
         d->script->setListData(sl, sl);
     }
     changeSet(d->set);

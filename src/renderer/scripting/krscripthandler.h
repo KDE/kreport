@@ -26,12 +26,12 @@ class OROPage;
 #ifdef KREPORT_SCRIPTING
 #include "krscriptconstants.h"
 #include "KoReportData.h"
-
-//! @todo Scripting
+#include <QtQml/QJSValue>
 
 class KRScriptDebug;
 class KRScriptDraw;
 class KRSectionData;
+class QJSEngine;
 
 namespace Scripting
 {
@@ -47,8 +47,8 @@ public:
 
     QVariant evaluate(const QString&);
     void displayErrors();
-    void registerScriptObject(QObject*, const QString&);
-    void trigger();
+    QJSValue registerScriptObject(QObject*, const QString&);
+    bool trigger();
 
 public Q_SLOTS:
 
@@ -78,7 +78,8 @@ private:
     QString m_source;
     KoReportReportData  *m_reportData;
 
-    //! @todo IKross::Action* m_action;
+    QJSEngine* m_engine;
+    QJSValue m_scriptValue;
 
     QMap<QString, QVariant> m_groups;
     QMap<KRSectionData*, Scripting::Section*> m_sectionMap;

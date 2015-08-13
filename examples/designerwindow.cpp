@@ -68,8 +68,6 @@ DesignerWindow::DesignerWindow()
     connect(m_reportDesigner, SIGNAL(dirty()), this, SLOT(designDirty()));
 
     m_reportDesigner->setReportData(new KReportExampleData());
-
-
 }
 
 DesignerWindow::~DesignerWindow()

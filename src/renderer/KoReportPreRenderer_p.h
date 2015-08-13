@@ -26,6 +26,8 @@
 
 #include <QMap>
 
+class KReportOneRecordData;
+
 /*! This class is the private class that houses all the internal
   variables so we can provide a cleaner interface to the user
   without presenting to them things that they don't need to see
@@ -54,6 +56,8 @@ public:
     int m_recordCount;
 
     KoReportData* m_kodata;
+    KReportOneRecordData *m_oneRecord;
+
     QList<OROTextBox*> m_postProcText;
 
 #ifdef KREPORT_SCRIPTING

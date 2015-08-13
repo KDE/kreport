@@ -44,6 +44,9 @@ public:
     virtual bool close();
     virtual bool open();
 
+    virtual QStringList scriptList() const;
+    virtual QString scriptCode(const QString &script) const;
+
 private:
     struct Data
     {

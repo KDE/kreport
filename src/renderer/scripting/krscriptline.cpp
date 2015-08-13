@@ -18,6 +18,8 @@
 #include "krscriptline.h"
 #include "KoReportItemLine.h"
 
+#include <KProperty>
+
 namespace Scripting
 {
 

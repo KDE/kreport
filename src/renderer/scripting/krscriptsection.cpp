@@ -21,8 +21,8 @@
 #include "KoReportPluginManager.h"
 #include "KoReportPluginInterface.h"
 #include "KoReportItemLine.h"
-
 #include "kreport_debug.h"
+#include "krsectiondata.h"
 
 namespace Scripting
 {
@@ -95,14 +95,14 @@ QObject* Section::objectByName(const QString& n)
     return 0;
 }
 
-void Section::initialize(Kross::Object::Ptr p)
+void Section::initialize(const QJSValue &s)
 {
-    m_scriptObject = p;
+    m_scriptObject = s;
 }
 
 void Section::eventOnRender()
 {
-    if (m_scriptObject)
-        m_scriptObject->callMethod(QLatin1String("OnRender"));
+    if (m_scriptObject.isObject() && m_scriptObject.hasProperty(QLatin1String("OnRender")))
+        m_scriptObject.property(QLatin1String("OnRender")).call();
 }
 }

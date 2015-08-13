@@ -46,6 +46,10 @@ bool KoReportScreenRenderer::render(const KoReportRendererContext& context, OROD
 
     OROPage *p = document->page(page);
 
+    if (!p) {
+        return false;
+    }
+
     // Render Page Objects
     for (int i = 0; i < p->primitives(); i++) {
         OROPrimitive *prim = p->primitive(i);

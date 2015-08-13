@@ -23,6 +23,7 @@
 #include "krscriptline.h"
 #include "krscriptsection.h"
 #include "KoReportItemLine.h"
+#include "kreport_debug.h"
 
 namespace Scripting
 {
@@ -91,27 +92,27 @@ QObject* Report::sectionByName(const QString &n)
     }
 }
 
-void Report::initialize(Kross::Object::Ptr ptr)
+void Report::initialize(const QJSValue &val)
 {
-    m_scriptObject = ptr;
+    m_scriptObject = val;
 }
 
 void Report::eventOnOpen()
 {
-    if (m_scriptObject)
-        m_scriptObject->callMethod(QLatin1String("OnOpen"));
+    if (m_scriptObject.isObject() && m_scriptObject.hasProperty(QLatin1String("OnOpen")))
+        m_scriptObject.property(QLatin1String("OnOpen")).call();
 }
 
 void Report::eventOnComplete()
 {
-    if (m_scriptObject)
-        m_scriptObject->callMethod(QLatin1String("OnComplete"));
+    if (m_scriptObject.isObject() && m_scriptObject.hasProperty(QLatin1String("OnComlete")))
+        m_scriptObject.property(QLatin1String("OnComplete")).call();
 }
 
 void Report::eventOnNewPage()
 {
-    if (m_scriptObject)
-        m_scriptObject->callMethod(QLatin1String("OnNewPage"));
+    if (m_scriptObject.isObject() && m_scriptObject.hasProperty(QLatin1String("OnNewPage")))
+        m_scriptObject.property(QLatin1String("OnNewPage")).call();
 }
 
 }

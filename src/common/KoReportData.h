@@ -96,12 +96,12 @@ public:
     //! @todo These are probably eligable to be moved into a new class
 
 #ifdef KREPORT_SCRIPTING
-    //! Allow the reportdata implementation to return a list of possible scripts for a given language
-    virtual QStringList scriptList(const QString& language) const;
+    //! Allow the reportdata implementation to return a list of possible scripts
+    virtual QStringList scriptList() const;
 
     //! Allow the reportdata implementation to return some script code based on a specific script name
-    //! and a language, as set in the report
-    virtual QString scriptCode(const QString& script, const QString& language) const;
+    //! as set in the report
+    virtual QString scriptCode(const QString& script) const;
 #endif
 
     //! Return a list of data sources possible for advanced controls

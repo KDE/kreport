@@ -49,7 +49,9 @@ KoReportPreRendererPrivate::KoReportPreRendererPrivate()
     m_leftMargin = m_rightMargin = 0.0;
     m_pageCounter = 0;
     m_maxHeight = m_maxWidth = 0.0;
-    m_kodata = new KReportOneRecordData();
+    m_oneRecord = new KReportOneRecordData();
+    m_kodata = m_oneRecord;
+
     asyncManager = new KoReportASyncItemManager(this);
 
     connect(asyncManager, SIGNAL(finished()), this, SLOT(asyncItemsFinished()));
@@ -58,7 +60,7 @@ KoReportPreRendererPrivate::KoReportPreRendererPrivate()
 KoReportPreRendererPrivate::~KoReportPreRendererPrivate()
 {
     delete m_reportData;
-    delete m_kodata;
+    delete m_oneRecord;
 
     m_postProcText.clear();
 }
@@ -503,10 +505,12 @@ ORODocument* KoReportPreRenderer::generate()
             if (i.key() == QLatin1String("field"))
                 QObject::connect(d->m_scriptHandler, SIGNAL(groupChanged(QString)), i.value(), SLOT(setWhere(QString)));
         }
+        //execute the script, if it fails, abort and return the empty document
+        if (!d->m_scriptHandler->trigger()) {
+            d->m_scriptHandler->displayErrors();
+            return d->m_document;
+        }
     }
-
-    //execute the script
-    d->m_scriptHandler->trigger();
 #endif
 
     d->createNewPage();
@@ -618,9 +622,6 @@ ORODocument* KoReportPreRenderer::generate()
 void KoReportPreRenderer::setSourceData(KoReportData *data)
 {
     if (data) {
-        if (d->m_kodata) {
-            delete d->m_kodata;
-        }
         d->m_kodata = data;
     }
 }
