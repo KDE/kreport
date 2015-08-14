@@ -36,10 +36,12 @@ add_executable(
     KReportPageFormat_HeaderTest.cpp
     KReportPluginMetaData_HeaderTest.cpp
     KReportUnit_HeaderTest.cpp
+    KReportView_HeaderTest.cpp
     KReportZoomHandler_HeaderTest.cpp
     KReportZoomMode_HeaderTest.cpp
     krpos_HeaderTest.cpp
     krreportdata_HeaderTest.cpp
+    krscriptconstants_HeaderTest.cpp
     krscriptdraw_HeaderTest.cpp
     krscripthandler_HeaderTest.cpp
     krsectiondata_HeaderTest.cpp
@@ -68,10 +70,12 @@ add_executable(
     KReportPageFormat.h_HeaderTest.cpp
     KReportPluginMetaData.h_HeaderTest.cpp
     KReportUnit.h_HeaderTest.cpp
+    KReportView.h_HeaderTest.cpp
     KReportZoomHandler.h_HeaderTest.cpp
     KReportZoomMode.h_HeaderTest.cpp
     krpos.h_HeaderTest.cpp
     krreportdata.h_HeaderTest.cpp
+    krscriptconstants.h_HeaderTest.cpp
     krscriptdraw.h_HeaderTest.cpp
     krscripthandler.h_HeaderTest.cpp
     krsectiondata.h_HeaderTest.cpp
