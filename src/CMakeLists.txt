@@ -1,5 +1,5 @@
 # Options
-option(KREPORT_SCRIPTING "Enable scripting" OFF)
+simple_option(KREPORT_SCRIPTING "Scripting support using JavaScript language" ON)
 configure_file(config-kreport.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kreport.h)
 
 if(KREPORT_SCRIPTING)
@@ -301,3 +301,5 @@ install(
     DESTINATION ${INCLUDE_INSTALL_DIR}/KReport
     COMPONENT Devel
 )
+
+enable_testing()
