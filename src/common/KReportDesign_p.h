@@ -92,6 +92,10 @@ public:
     QString title;
     QPageLayout pageLayout;
     QVarLengthArray<KReportSection*, KReportSection::Detail> sections;
+#ifdef KREPORT_SCRIPTING
+    QString script;
+    QString originalInterpreter; //!< used for backward-compatibility to save the original
+#endif
 };
 
 class KReportDesignGlobal

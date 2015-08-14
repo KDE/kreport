@@ -20,6 +20,7 @@
 #define KREPORTDESIGN_H
 
 #include "kreport_export.h"
+#include "config-kreport.h"
 #include "KReportSection.h"
 
 #include <QCoreApplication>
@@ -123,6 +124,11 @@ public:
     //! Sets default page layout to @a pageLayout
     //! This information is used when a new report design is created.
     static void setDefaultPageLayout(const QPageLayout &pageLayout);
+
+#ifdef KREPORT_SCRIPTING
+    //! @return text of the script program
+    QString script() const;
+#endif
 
 private:
     Q_DISABLE_COPY(KReportDesign)

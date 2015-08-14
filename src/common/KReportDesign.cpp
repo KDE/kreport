@@ -176,3 +176,10 @@ void KReportDesign::setDefaultPageLayout(const QPageLayout &pageLayout)
     KReportDesignGlobal::self()->defaultPageLayout = pageLayout;
     KReportDesignGlobal::self()->defaultPageLayout.setUnits(QPageLayout::Point);
 }
+
+#ifdef KREPORT_SCRIPTING
+QString KReportDesign::script() const
+{
+    return d->script;
+}
+#endif

@@ -330,9 +330,8 @@ bool KReportDesign::Private::processContentElementChild(const QDomElement &el,
         title = el.text();
 #ifdef KREPORT_SCRIPTING
     } else if (name == "report:script") {
-//! @todo
-        d->interpreter->setValue(el.attribute(QLatin1String("report:script-interpreter"));
-        d->script->setValue(el.firstChildElement().text());
+        script = el.firstChildElement().text();
+        originalInterpreter = KReportUtils::attr(el, "report:script-interpreter", QString());
 #endif
     } else if (name == "report:grid") {
         showGrid = KReportUtils::attr(el, "report:grid-visible", DEFAULT_SHOW_GRID);
