@@ -30,7 +30,7 @@
 #include "renderobjects.h"
 #include "kreport_debug.h"
 
-#include <QtGui/QMessageBox>
+#include <QMessageBox>
 #include <QJSEngine>
 #include <QJSValue>
 
