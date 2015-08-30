@@ -116,14 +116,14 @@ void KRScriptHandler::slotEnteredGroup(const QString &key, const QVariant &value
 {
     //kreportDebug() << key << value;
     m_groups[key] = value;
-    emit(groupChanged(where()));
+    emit(groupChanged(m_groups));
 }
 void KRScriptHandler::slotExitedGroup(const QString &key, const QVariant &value)
 {
     Q_UNUSED(value);
     //kreportDebug() << key << value;
     m_groups.remove(key);
-    emit(groupChanged(where()));
+    emit(groupChanged(m_groups));
 }
 
 void KRScriptHandler::slotEnteredSection(KRSectionData *section, OROPage* cp, QPointF off)
@@ -158,6 +158,8 @@ void KRScriptHandler::displayErrors()
     }
 }
 
+//! @todo KEXI3 move to kexi
+#if 0
 QString KRScriptHandler::where()
 {
     QString w;
@@ -170,6 +172,7 @@ QString KRScriptHandler::where()
     //kreportDebug() << w;
     return w;
 }
+#endif
 
 QJSValue KRScriptHandler::registerScriptObject(QObject* obj, const QString& name)
 {

@@ -18,6 +18,7 @@
 #ifndef KRSCRIPTHANDLER_H
 #define KRSCRIPTHANDLER_H
 
+#include "kreport_export.h"
 #include "config-kreport.h"
 
 class KoReportReportData;
@@ -38,7 +39,7 @@ namespace Scripting
 class Report;
 class Section;
 }
-class KRScriptHandler : public QObject
+class KREPORT_EXPORT KRScriptHandler : public QObject
 {
     Q_OBJECT
 public:
@@ -64,7 +65,7 @@ public Q_SLOTS:
     void newPage();
 
 Q_SIGNALS:
-    void groupChanged(const QString& whereCondition);
+    void groupChanged(const QMap<QString, QVariant> &groupData);
 
 private:
     KRScriptConstants *m_constants;
@@ -83,7 +84,7 @@ private:
 
     QMap<QString, QVariant> m_groups;
     QMap<KRSectionData*, Scripting::Section*> m_sectionMap;
-    QString where();
+//! @todo KEXI3 QString where();
 };
 
 #else // !KREPORT_SCRIPTING
@@ -91,4 +92,3 @@ private:
 #endif
 
 #endif
-

@@ -121,6 +121,10 @@ qt5_wrap_ui(kreport_LIB_SRCS
     wrtembed/sectioneditor.ui
 )
 
+qt_wrap_cpp(KReport kreport_LIB_SRCS
+    renderer/scripting/kreportgrouptracker.h
+    )
+
 ecm_create_qm_loader(kreport_LIB_SRCS kreport_qt)
 
 add_library(KReport SHARED ${kreport_LIB_SRCS})
@@ -267,6 +271,7 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
         krscripthandler
         krscriptdraw
         krscriptconstants
+        kreportgrouptracker
 )
 
 ecm_generate_headers(kreport_FORWARDING_HEADERS

@@ -31,6 +31,7 @@
 
 #ifdef KREPORT_SCRIPTING
 #include "scripting/krscripthandler.h"
+#include "scripting/kreportgrouptracker.h"
 #endif
 
 #include <QDomElement>
@@ -51,7 +52,9 @@ KoReportPreRendererPrivate::KoReportPreRendererPrivate()
     m_maxHeight = m_maxWidth = 0.0;
     m_oneRecord = new KReportOneRecordData();
     m_kodata = m_oneRecord;
-
+#ifdef KREPORT_SCRIPTING
+    m_scriptHandler = 0;
+#endif
     asyncManager = new KoReportASyncItemManager(this);
 
     connect(asyncManager, SIGNAL(finished()), this, SLOT(asyncItemsFinished()));
@@ -378,6 +381,7 @@ qreal KoReportPreRendererPrivate::renderSection(const KRSectionData & sectionDat
 #ifdef KREPORT_SCRIPTING
 void KoReportPreRendererPrivate::initEngine()
 {
+    delete m_scriptHandler;
     m_scriptHandler = new KRScriptHandler(m_kodata, m_reportData);
 
     connect(this, SIGNAL(enteredGroup(QString,QVariant)), m_scriptHandler, SLOT(slotEnteredGroup(QString,QVariant)));
@@ -493,6 +497,8 @@ ORODocument* KoReportPreRenderer::generate()
 
 #ifdef KREPORT_SCRIPTING
     d->initEngine();
+    connect(d->m_scriptHandler, SIGNAL(groupChanged(QMap<QString, QVariant>)),
+            this, SIGNAL(groupChanged(QMap<QString, QVariant>)));
 
     //Loop through all abjects that have been registered, and register them with the script handler
     if (d->m_scriptHandler) {
@@ -500,10 +506,6 @@ ORODocument* KoReportPreRenderer::generate()
         while (i.hasNext()) {
             i.next();
             d->m_scriptHandler->registerScriptObject(i.value(), i.key());
-
-            //! @todo This is a hack
-            if (i.key() == QLatin1String("field"))
-                QObject::connect(d->m_scriptHandler, SIGNAL(groupChanged(QString)), i.value(), SLOT(setWhere(QString)));
         }
         //execute the script, if it fails, abort and return the empty document
         if (!d->m_scriptHandler->trigger()) {
@@ -653,6 +655,11 @@ void KoReportPreRenderer::registerScriptObject(QObject* obj, const QString& name
 {
     //kreportDebug() << name;
     d->m_scriptObjects[name] = obj;
+}
+
+KRScriptHandler *KoReportPreRenderer::scriptHandler()
+{
+    return d->m_scriptHandler;
 }
 #endif
 

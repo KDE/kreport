@@ -19,23 +19,30 @@
 #ifndef __KOREPORTPRERENDERER_H__
 #define __KOREPORTPRERENDERER_H__
 
+#include "config-kreport.h"
 #include "kreport_export.h"
-#include "krscripthandler.h"
 
+#include <QObject>
+
+#ifdef KREPORT_SCRIPTING
+class KRScriptHandler;
+#else
+#define KRScriptHandler void
+#endif
 class KoReportPreRendererPrivate;
 class ORODocument;
 class KoReportData;
+class KoReportReportData;
 class QDomElement;
-class QObject;
-class QString;
 
 //
 // ORPreRender
 // This class takes a report definition and prerenders the result to
 // an ORODocument that can be used to pass to any number of renderers.
 //
-class KREPORT_EXPORT KoReportPreRenderer
+class KREPORT_EXPORT KoReportPreRenderer : public QObject
 {
+    Q_OBJECT
 public:
     explicit KoReportPreRenderer(const QDomElement& document);
 
@@ -44,6 +51,7 @@ public:
     void setSourceData(KoReportData*);
 
 #ifdef KREPORT_SCRIPTING
+    KRScriptHandler *scriptHandler();
     void registerScriptObject(QObject*, const QString&);
 #endif
 
@@ -57,6 +65,9 @@ public:
     bool isValid() const;
 
     const KoReportReportData *reportData() const;
+
+Q_SIGNALS:
+    void groupChanged(const QMap<QString, QVariant> &groupData);
 
 private:
     bool setDocument(const QDomElement &document);
