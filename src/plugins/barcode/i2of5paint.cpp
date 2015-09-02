@@ -64,16 +64,16 @@ static QPointF addSpace(const QRectF &r, QPointF startPos, qreal width, QPainter
 void renderI2of5(const QRectF &r, const QString & _str, int align, QPainter * pPainter)
 {
     QString str = _str;
-    int narrow_bar = 1; // a narrow bar is 1/100th inch wide
-    int bar_width_mult = 2.5; // the wide bar width multiple of the narrow bar
-    int wide_bar = narrow_bar * bar_width_mult;
+    qreal narrow_bar = 1; // a narrow bar is 1/100th inch wide
+    qreal bar_width_mult = 2.5; // the wide bar width multiple of the narrow bar
+    qreal wide_bar = narrow_bar * bar_width_mult;
 
     if (str.length() % 2) {
         str = QLatin1Char('0')+ str; // padding zero if number of characters is not even
     }
 
     // this is our mandatory minimum quiet zone
-    int quiet_zone = narrow_bar * 10;
+    qreal quiet_zone = narrow_bar * 10;
     if(quiet_zone < 0.1) {
         quiet_zone = 0.1;
     }
@@ -91,8 +91,8 @@ void renderI2of5(const QRectF &r, const QString & _str, int align, QPainter * pP
     // X the width of a bar (pixels in our case)
     int L;
     int C = val_length;
-    int N = bar_width_mult;
-    int X = narrow_bar;
+    qreal N = bar_width_mult;
+    qreal X = narrow_bar;
 
     L = (C * (2.0*N + 3.0) + 6.0 + N) * X;
 
