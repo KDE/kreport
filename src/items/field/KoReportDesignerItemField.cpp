@@ -19,7 +19,7 @@
 #include "KoReportDesignerItemField.h"
 #include "KoReportItemField.h"
 #include "wrtembed/KoReportDesigner.h"
-
+#include "kreportplugin_debug.h"
 
 #include <QDomDocument>
 #include <QPainter>
@@ -182,7 +182,7 @@ void KoReportDesignerItemField::slotPropertyChanged(KPropertySet &s, KProperty &
 
 void KoReportDesignerItemField::mousePressEvent(QGraphicsSceneMouseEvent * event)
 {
-    qDebug() << m_reportDesigner->fieldKeys() <<  m_reportDesigner->fieldNames();
+    kreportpluginDebug() << m_reportDesigner->fieldKeys() <<  m_reportDesigner->fieldNames();
     m_controlSource->setListData(m_reportDesigner->fieldKeys(), m_reportDesigner->fieldNames());
     KoReportDesignerItemRectBase::mousePressEvent(event);
 }

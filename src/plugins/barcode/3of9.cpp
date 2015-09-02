@@ -164,7 +164,7 @@ void render3of9(OROPage * page, const QRectF & r, const QString & _str, int alig
         int idx = codeIndex(c);
         kreportpluginDebug() << idx;
         if (idx == -1) {
-            qDebug("Encountered a non-compliant character while rendering a 3of9 barcode -- skipping");
+            kreportpluginWarning() << "Encountered a non-compliant character while rendering a 3of9 barcode -- skipping";
             continue;
         }
 

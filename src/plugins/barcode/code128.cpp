@@ -28,6 +28,7 @@
 #include <QBrush>
 
 #include "renderobjects.h"
+#include "kreportplugin_debug.h"
 
 static const int SETA = 0;
 static const int SETB = 1;
@@ -309,7 +310,7 @@ void renderCode128(OROPage * page, const QRectF & r, const QString & _str, int a
         // loop through each value and render the barcode
         const int idx = str.at(i);
         if (idx < 0 || idx > 105) {
-            qDebug("Encountered a non-compliant element while rendering a 3of9 barcode -- skipping");
+            kreportpluginWarning() << "Encountered a non-compliant element while rendering a 3of9 barcode -- skipping";
             continue;
         }
         space = false;

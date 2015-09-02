@@ -26,6 +26,8 @@
 #include <QPen>
 #include <QBrush>
 
+#include "kreportplugin_debug.h"
+
 struct code3of9 {
     char code;
     int values[9];
@@ -165,7 +167,7 @@ void render3of9(const QRect & r, const QString & _str, int align, QPainter * pPa
         QChar c = str.at(i);
         int idx = codeIndexP(c);
         if (idx == -1) {
-            qDebug("Encountered a non-compliant character while rendering a 3of9 barcode -- skipping");
+            kreportpluginWarning() << "Encountered a non-compliant character while rendering a 3of9 barcode -- skipping";
             continue;
         }
 

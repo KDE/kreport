@@ -34,6 +34,7 @@
 #include <renderobjects.h>
 #include <KoReportPreRenderer.h>
 #include <KoReportRendererBase.h>
+#include "kreport_debug.h"
 
 //! @internal
 class KReportView::Private
@@ -84,7 +85,7 @@ KReportView::KReportView(QWidget *parent)
 
 KReportView::~KReportView()
 {
-    qDebug();
+    kreportDebug();
     delete d;
 }
 
