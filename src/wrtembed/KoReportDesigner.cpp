@@ -386,7 +386,7 @@ QDomElement KoReportDesigner::document() const
         }
 
         QDomElement scr = propertyToElement(&doc, d->script);
-        scr.setAttribute(QLatin1String("report:interpreter"), saveInterpreter);
+        scr.setAttribute(QLatin1String("report:script-interpreter"), saveInterpreter);
         content.appendChild(scr);
     }
 #endif
