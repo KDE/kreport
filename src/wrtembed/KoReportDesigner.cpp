@@ -290,10 +290,12 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data) : Q
                 d->originalScript = it.firstChild().nodeValue();
                 d->script->setValue(d->originalScript);
 
-                if (d->originalInterpreter != QLatin1String("javascript") || d->originalInterpreter != QLatin1String("qtscript")) {
-                    QString msg = tr("This report is using a script type other than \"javascript\".  "
-                                     "To prevent loosing the script, the type of script will not be changed unless the script is changed.  "
-                                     "Please be aware that the script will not work unless it is changed to a \"javascript\" script.");
+                if (d->originalInterpreter != QLatin1String("javascript") && d->originalInterpreter != QLatin1String("qtscript")) {
+                    QString msg = tr("This report contains scripts of type \"%1\". "
+                                     "Only scripts written in JavaScript language are "
+                                     "supported. To prevent loosing the scripts, their type "
+                                     "and content will not be changed unless you change these scripts."
+                                     ).arg(d->originalInterpreter);
                     QMessageBox::warning(this, tr("Unsupported Script Type"), msg);
                 }
 #endif
