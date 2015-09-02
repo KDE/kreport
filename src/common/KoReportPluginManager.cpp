@@ -36,6 +36,7 @@
 KoReportPluginManager::Private::Private(KoReportPluginManager *qq)
     : q(qq), m_parent(new QObject), m_findPlugins(true)
 {
+    Q_UNUSED(q);
 }
 
 // ---
