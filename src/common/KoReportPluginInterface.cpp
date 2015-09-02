@@ -20,6 +20,10 @@
 
 #include "KoReportPluginInterface.h"
 #include "KReportPluginMetaData.h"
+#include "KReportUtils.h"
+#include "kreport_debug.h"
+
+#include <QDomElement>
 
 class KoReportPluginInterface::Private
 {
@@ -51,4 +55,19 @@ const KReportPluginMetaData* KoReportPluginInterface::metaData() const
 void KoReportPluginInterface::setMetaData(KReportPluginMetaData* metaData)
 {
     d->metaData = metaData;
+}
+
+bool KoReportPluginInterface::loadElement(KReportElement *el, const QDomElement &dom, KReportDesignReadingStatus *status)
+{
+    Q_ASSERT(el);
+    Q_UNUSED(status);
+    el->setName(KReportUtils::attr(dom, "report:name", QString()));
+    el->setRect(KReportUtils::readRectAttributes(dom, el->rect()));
+    el->setZ(KReportUtils::attr(dom, "report:z-index", el->z()));
+
+    const QDomElement textStyleDom = dom.firstChildElement(QLatin1String("report:text-style"));
+    el->setForegroundColor(KReportUtils::attr(textStyleDom, "fo:foreground-color", el->foregroundColor()));
+    el->setBackgroundColor(KReportUtils::attr(textStyleDom, "fo:background-color", el->backgroundColor()));
+    el->setBackgroundOpacity(KReportUtils::attrPercent(textStyleDom, "fo:background-opacity", el->backgroundOpacity()));
+    return true;
 }

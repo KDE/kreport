@@ -1,1 +1,1 @@
-#include <kreport/KoReportItemBase.h>
+#include <KoReportItemBase.h>

@@ -35,6 +35,8 @@ public:
     virtual QObject* createRendererInstance(const QDomNode&);
     virtual QObject* createDesignerInstance(KoReportDesigner* , QGraphicsScene* scene, const QPointF&);
     virtual QObject* createDesignerInstance(const QDomNode & element, KoReportDesigner *, QGraphicsScene * scene);
+    virtual KReportElement createElement() Q_DECL_OVERRIDE;
+    virtual bool loadElement(KReportElement *el, const QDomElement &dom, KReportDesignReadingStatus *status) Q_DECL_OVERRIDE;
 #ifdef KREPORT_SCRIPTING
     virtual QObject* createScriptInstance(KoReportItemBase* item);
 #endif

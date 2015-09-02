@@ -9,7 +9,6 @@ if(POLICY CMP0063) # Honor visibility properties for all target types (since cma
     cmake_policy(SET CMP0063 OLD)
 endif()
 
-include(ECMGenerateHeaders)
 include(ECMGeneratePriFile)
 include(ECMPackageConfigHelpers)
 include(ECMPoQmTools)
@@ -21,6 +20,11 @@ include(KDEInstallDirs)
 include(KDEFrameworkCompilerSettings)
 include(KDECMakeSettings)
 
+include(FeatureSummary)
+include(GenerateExportHeader)
+
+include(KDbGenerateHeaders) # from KDb, adds support for generated headers to ECMGenerateHeaders
+include(KDbCreateSharedDataClasses) # from KDb
 include(GenerateExportHeader)
 include(MacroLogFeature)
 include(KReportMacros)
@@ -28,7 +32,7 @@ include(KReportMacros)
 set(KREPORT_VERSION "2.96.1") # Update this
 
 # Dependencies
-set(REQUIRED_QT_VERSION "5.2.0")
+set(REQUIRED_QT_VERSION "5.3.0")
 
 # Required components to build this framework
 # TODO move Widgets/KF5WidgetsAddons-dependent part to a libKReportDesigner

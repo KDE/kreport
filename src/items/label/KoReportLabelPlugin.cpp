@@ -22,9 +22,14 @@
 #include "KoReportDesignerItemLabel.h"
 #include "wrtembed/KoReportDesigner.h"
 #include "common/KReportPluginMetaData.h"
+#include "KReportLabelElement.h"
+#include "KReportLineStyle.h"
+#include "KReportUtils.h"
 #ifdef KREPORT_SCRIPTING
 #include "krscriptlabel.h"
 #endif
+
+#include <QDomElement>
 
 KREPORT_PLUGIN_FACTORY(KoReportLabelPlugin, "label.json")
 
@@ -51,6 +56,40 @@ QObject* KoReportLabelPlugin::createDesignerInstance(KoReportDesigner* designer,
 QObject* KoReportLabelPlugin::createDesignerInstance(const QDomNode & element, KoReportDesigner *designer, QGraphicsScene * scene)
 {
     return new KoReportDesignerItemLabel(element, designer, scene);
+}
+
+KReportElement KoReportLabelPlugin::createElement()
+{
+    return KReportLabelElement();
+}
+
+bool KoReportLabelPlugin::loadElement(KReportElement *el, const QDomElement &dom, KReportDesignReadingStatus *status)
+{
+    if (!KoReportPluginInterface::loadElement(el, dom, status)) {
+        return false;
+    }
+    KReportLabelElement label(*el);
+    label.setText(KReportUtils::attr(dom, "report:caption", QString()));
+    QString s = KReportUtils::attr(dom, "report:horizontal-align", QString());
+    Qt::Alignment alignment = KReportUtils::horizontalAlignment(s, label.alignment() & Qt::AlignHorizontal_Mask);
+    s = KReportUtils::attr(dom, "report:vertical-align", QString());
+    alignment |= KReportUtils::verticalAlignment(s, label.alignment() & Qt::AlignVertical_Mask);
+    label.setAlignment(alignment);
+
+    const QDomElement textStyleDom = dom.firstChildElement(QLatin1String("report:text-style"));
+    QFont font(label.font());
+    KReportUtils::readFontAttributes(textStyleDom, &font);
+    label.setFont(font);
+
+    const QDomElement lineStyleDom = dom.firstChildElement(QLatin1String("report:line-style"));
+    KReportLineStyle borderStyle(label.borderStyle());
+    s = KReportUtils::attr(lineStyleDom, "report:line-style", QString());
+    borderStyle.setPenStyle(KReportUtils::penStyle(s, borderStyle.penStyle()));
+    borderStyle.setColor(KReportUtils::attr(lineStyleDom, "report:line-color", borderStyle.color()));
+    // border-line-width could be better name but it's too late...
+    borderStyle.setWidth(KReportUtils::attr(lineStyleDom, "report:line-weight", borderStyle.width()));
+    label.setBorderStyle(borderStyle);
+    return true;
 }
 
 #ifdef KREPORT_SCRIPTING

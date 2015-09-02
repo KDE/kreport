@@ -1,1 +1,1 @@
-#include <kreport/reportpageoptions.h>
+#include <reportpageoptions.h>

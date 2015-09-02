@@ -23,7 +23,7 @@
 #include "reportsceneview.h"
 #include "KoReportDesigner.h"
 #include "KoReportDesignerItemBase.h"
-#include "common/krutils.h"
+#include "KReportUtils.h"
 #include "common/KoReportPluginInterface.h"
 #include "common/KoReportPluginManager.h"
 #include "KoReportDesignerItemRectBase.h"
@@ -180,7 +180,7 @@ void ReportSection::slotResizeBarDragged(int delta)
 
 void ReportSection::buildXML(QDomDocument *doc, QDomElement *section)
 {
-    KRUtils::setAttribute(section, QLatin1String("svg:height"), d->sectionData->m_height->value().toDouble());
+    KReportUtils::setAttribute(section, QLatin1String("svg:height"), d->sectionData->m_height->value().toDouble());
     section->setAttribute(QLatin1String("fo:background-color"), d->sectionData->backgroundColor().name());
 
     // now get a list of all the QGraphicsItems on this scene and output them.

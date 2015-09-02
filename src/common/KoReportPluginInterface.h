@@ -23,12 +23,15 @@
 
 #include "config-kreport.h"
 #include "kreport_export.h"
+#include "KReportElement.h"
 
 #include <KPluginFactory>
 
 class QGraphicsScene;
 class QDomNode;
+class QDomElement;
 class KReportPluginMetaData;
+class KReportDesignReadingStatus;
 class KoReportDesigner;
 class KoReportItemBase;
 
@@ -53,6 +56,10 @@ public:
                                             QGraphicsScene *scene) = 0;
 
     virtual QObject* createRendererInstance(const QDomNode &element) = 0;
+
+    virtual KReportElement createElement() { return KReportElement(); } //!< @todo remove {}
+
+    virtual bool loadElement(KReportElement *el, const QDomElement &dom, KReportDesignReadingStatus *status);
 
 #ifdef KREPORT_SCRIPTING
     virtual QObject* createScriptInstance(KoReportItemBase* item) = 0;

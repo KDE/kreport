@@ -1,1 +1,1 @@
-#include <kreport/KReportPageFormat.h>
+#include <KReportPageFormat.h>

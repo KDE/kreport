@@ -1,5 +1,6 @@
 /* This file is part of the KDE project
  * Copyright (C) 2012 Dag Andersen <danders@get2net.dk>
+ * Copyright (C) 2015 Jarosław Staniek <staniek@kde.org>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -14,17 +15,20 @@
  * You should have received a copy of the GNU Lesser General Public
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef KOREPORTTEST_H
-#define KOREPORTTEST_H
 
+#ifndef FORMATTEST_H
+#define FORMATTEST_H
 
-class KoReportTest : public QObject
+#include <QObject>
+
+//! Tests for the .kreport format
+class FormatTest : public QObject
 {
     Q_OBJECT
 private Q_SLOTS:
-    void pageOptions();
-    void lineItem();
-    void rectItem();
+    void testPageLayout();
+    void testLineElement();
+    void testLabelElement();
 };
 
-#endif // KOREPORTTEST_H
+#endif // FORMATTEST_H

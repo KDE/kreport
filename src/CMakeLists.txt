@@ -13,7 +13,6 @@ add_subdirectory(plugins)
 set(kreport_LIB_SRCS
     common/kreport_debug.cpp
     common/kreportplugin_debug.cpp
-    common/krutils.cpp
     common/krpos.cpp
     common/krsize.cpp
     common/KoReportItemBase.cpp
@@ -30,8 +29,15 @@ set(kreport_LIB_SRCS
     common/KReportJsonTrader_p.cpp
     common/KReportPluginMetaData.cpp
     common/KoReportData.cpp
+    common/KReportUtils.cpp
     common/KReportPageFormat.cpp
     common/KReportUnit.cpp
+    common/KReportDesign.cpp
+    common/KReportDesign_p.cpp
+    common/KReportLineStyle.cpp
+    common/KReportElement.cpp
+    ${PROJECT_BINARY_DIR}/src/KReportElement_sdc.cpp
+    common/KReportSection.cpp
 
     renderer/KoReportPrintRenderer.cpp
     renderer/KoReportPreRenderer.cpp
@@ -68,6 +74,7 @@ set(kreport_LIB_SRCS
     items/label/KoReportDesignerItemLabel.cpp
     items/label/KoReportLabelPlugin.cpp
     items/label/BoundedTextItem.cpp
+    items/label/KReportLabelElement.cpp
 
     items/check/KoReportItemCheck.cpp
     items/check/KoReportDesignerItemCheck.cpp
@@ -128,6 +135,20 @@ qt_wrap_cpp(KReport kreport_LIB_SRCS
 ecm_create_qm_loader(kreport_LIB_SRCS kreport_qt)
 
 add_library(KReport SHARED ${kreport_LIB_SRCS})
+
+kdb_create_shared_data_classes(
+    kreport_GENERATED_SHARED_DATA_CLASS_HEADERS # output variable with list of headers
+    NO_PREFIX # subdirectory in which the headers should be generated
+    common/KReportLineStyle.shared.h
+    common/KReportElement.shared.h
+    common/KReportSection.shared.h
+    items/label/KReportLabelElement.shared.h
+)
+
+kdb_remove_extensions(
+    kreport_GENERATED_SHARED_DATA_CLASS_BASENAMES
+    ${kreport_GENERATED_SHARED_DATA_CLASS_HEADERS}
+)
 
 generate_export_header(KReport)
 
@@ -230,7 +251,6 @@ install(FILES "${CMAKE_CURRENT_BINARY_DIR}/kreport_version.h"
 ecm_generate_headers(kreport_FORWARDING_HEADERS
     REQUIRED_HEADERS kreport_HEADERS
     ORIGINAL CAMELCASE
-    PREFIX kreport
     RELATIVE common
     HEADER_NAMES
         KReportPageFormat
@@ -241,6 +261,8 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
         KoReportPluginManager
         KoReportPluginInterface
         KReportUnit
+        KReportUtils
+        KReportDesign
         krsize
         krpos
         krreportdata
@@ -253,7 +275,6 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
 ecm_generate_headers(kreport_FORWARDING_HEADERS
     REQUIRED_HEADERS kreport_HEADERS
     ORIGINAL CAMELCASE
-    PREFIX kreport
     RELATIVE renderer
     HEADER_NAMES
         KoReportPage
@@ -265,7 +286,6 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
 ecm_generate_headers(kreport_FORWARDING_HEADERS
     REQUIRED_HEADERS kreport_HEADERS
     ORIGINAL CAMELCASE
-    PREFIX kreport
     RELATIVE renderer/scripting
     HEADER_NAMES
         krscripthandler
@@ -277,7 +297,6 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
 ecm_generate_headers(kreport_FORWARDING_HEADERS
     REQUIRED_HEADERS kreport_HEADERS
     ORIGINAL CAMELCASE
-    PREFIX kreport
     RELATIVE wrtembed
     HEADER_NAMES
         KReportZoomMode
@@ -291,16 +310,26 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
         KoReportDesigner
 )
 
+ecm_generate_headers(kreport_FORWARDING_HEADERS_FROM_BUILDDIR
+    REQUIRED_HEADERS kreport_HEADERS_FROM_BUILDDIR
+    ORIGINAL CAMELCASE
+    SOURCE_DIR ${PROJECT_BINARY_DIR}/src
+    HEADER_NAMES
+        ${kreport_GENERATED_SHARED_DATA_CLASS_BASENAMES}
+)
+
 install(
     FILES
         ${kreport_HEADERS}
-    DESTINATION ${INCLUDE_INSTALL_DIR}/KReport/kreport
+        ${kreport_HEADERS_FROM_BUILDDIR}
+    DESTINATION ${INCLUDE_INSTALL_DIR}/KReport
     COMPONENT Devel
 )
 
 install(
     FILES
         ${kreport_FORWARDING_HEADERS}
+        ${kreport_FORWARDING_HEADERS_FROM_BUILDDIR}
         ${PROJECT_BINARY_DIR}/src/kreport_export.h
         ${PROJECT_BINARY_DIR}/src/config-kreport.h
     DESTINATION ${INCLUDE_INSTALL_DIR}/KReport

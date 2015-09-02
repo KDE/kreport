@@ -1,1 +1,1 @@
-#include <kreport/KReportDpi.h>
+#include <KReportDpi.h>

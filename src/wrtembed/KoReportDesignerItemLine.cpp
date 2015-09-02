@@ -21,8 +21,7 @@
 #include "KoReportDesignerItemBase.h"
 #include "KoReportDesigner.h"
 #include "reportscene.h"
-#include "common/krutils.h"
-
+#include "KReportUtils.h"
 
 #include <QDomDocument>
 #include <QPainter>
@@ -116,10 +115,10 @@ void KoReportDesignerItemLine::buildXML(QDomDocument *doc, QDomElement *parent)
     // properties
     addPropertyAsAttribute(&entity, m_name);
     entity.setAttribute(QLatin1String("report:z-index"), zValue());
-    KRUtils::setAttribute(&entity, QLatin1String("svg:x1"), m_start.toPoint().x());
-    KRUtils::setAttribute(&entity, QLatin1String("svg:y1"), m_start.toPoint().y());
-    KRUtils::setAttribute(&entity, QLatin1String("svg:x2"), m_end.toPoint().x());
-    KRUtils::setAttribute(&entity, QLatin1String("svg:y2"), m_end.toPoint().y());
+    KReportUtils::setAttribute(&entity, QLatin1String("svg:x1"), m_start.toPoint().x());
+    KReportUtils::setAttribute(&entity, QLatin1String("svg:y1"), m_start.toPoint().y());
+    KReportUtils::setAttribute(&entity, QLatin1String("svg:x2"), m_end.toPoint().x());
+    KReportUtils::setAttribute(&entity, QLatin1String("svg:y2"), m_end.toPoint().y());
 
     buildXMLLineStyle(doc, &entity, lineStyle());
 

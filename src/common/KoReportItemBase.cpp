@@ -19,7 +19,7 @@
 
 #include "krpos.h"
 #include "krsize.h"
-#include "krutils.h"
+#include "KReportUtils.h"
 #include <KPropertySet>
 
 KoReportItemBase::KoReportItemBase()
@@ -40,18 +40,18 @@ void KoReportItemBase::addDefaultProperties()
 
 bool KoReportItemBase::parseReportTextStyleData(const QDomElement & elemSource, KRTextStyleData *ts)
 {
-    return KRUtils::parseReportTextStyleData(elemSource, ts);
+    return KReportUtils::parseReportTextStyleData(elemSource, ts);
 }
 
 bool KoReportItemBase::parseReportLineStyleData(const QDomElement & elemSource, KRLineStyleData *ls)
 {
-    return KRUtils::parseReportLineStyleData(elemSource, ls);
+    return KReportUtils::parseReportLineStyleData(elemSource, ls);
 }
 
 
 bool KoReportItemBase::parseReportRect(const QDomElement & elemSource, KRPos *pos, KRSize *size)
 {
-    return KRUtils::parseReportRect(elemSource, pos, size);
+    return KReportUtils::parseReportRect(elemSource, pos, size);
 }
 
 void KoReportItemBase::setUnit(const KReportUnit& u)

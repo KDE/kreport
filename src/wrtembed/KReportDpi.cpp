@@ -74,7 +74,7 @@ int dpiY()
     return s_instance->m_dpiY;
 }
 
-void setDPI(int x, int y)
+void setDpi(int x, int y)
 {
     s_instance->m_dpiX = x;
     s_instance->m_dpiY = y;

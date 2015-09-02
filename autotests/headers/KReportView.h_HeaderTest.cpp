@@ -1,1 +1,1 @@
-#include <kreport/KReportView.h>
+#include <KReportView.h>

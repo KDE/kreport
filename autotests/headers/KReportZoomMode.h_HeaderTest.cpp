@@ -1,1 +1,1 @@
-#include <kreport/KReportZoomMode.h>
+#include <KReportZoomMode.h>

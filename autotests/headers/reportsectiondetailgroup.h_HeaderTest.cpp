@@ -1,1 +1,1 @@
-#include <kreport/reportsectiondetailgroup.h>
+#include <reportsectiondetailgroup.h>
