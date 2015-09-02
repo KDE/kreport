@@ -25,7 +25,7 @@ include(GenerateExportHeader)
 include(MacroLogFeature)
 include(KReportMacros)
 
-set(KREPORT_VERSION "2.96.0") # Update this
+set(KREPORT_VERSION "2.96.1") # Update this
 
 # Dependencies
 set(REQUIRED_QT_VERSION "5.2.0")
