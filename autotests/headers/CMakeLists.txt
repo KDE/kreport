@@ -32,8 +32,8 @@ add_executable(
     KoReportPluginManager_HeaderTest.cpp
     KoReportPreRenderer_HeaderTest.cpp
     KoReportRendererBase_HeaderTest.cpp
-    KReportDesign_HeaderTest.cpp
     KReportDpi_HeaderTest.cpp
+    kreportgrouptracker_HeaderTest.cpp
     KReportPageFormat_HeaderTest.cpp
     KReportPluginMetaData_HeaderTest.cpp
     KReportUnit_HeaderTest.cpp
@@ -55,38 +55,6 @@ add_executable(
     kreport_export.h_HeaderTest.cpp
     kreport_version.h_HeaderTest.cpp
     config-kreport.h_HeaderTest.cpp
-    KoReportASyncItemBase.h_HeaderTest.cpp
-    KoReportData.h_HeaderTest.cpp
-    KoReportDesigner.h_HeaderTest.cpp
-    KoReportDesignerItemBase.h_HeaderTest.cpp
-    KoReportDesignerItemRectBase.h_HeaderTest.cpp
-    KoReportItemBase.h_HeaderTest.cpp
-    KoReportItemLine.h_HeaderTest.cpp
-    KoReportPage.h_HeaderTest.cpp
-    KoReportPluginInterface.h_HeaderTest.cpp
-    KoReportPluginManager.h_HeaderTest.cpp
-    KoReportPreRenderer.h_HeaderTest.cpp
-    KoReportRendererBase.h_HeaderTest.cpp
-    KReportDesign.h_HeaderTest.cpp
-    KReportDpi.h_HeaderTest.cpp
-    KReportPageFormat.h_HeaderTest.cpp
-    KReportPluginMetaData.h_HeaderTest.cpp
-    KReportUnit.h_HeaderTest.cpp
-    KReportView.h_HeaderTest.cpp
-    KReportZoomHandler.h_HeaderTest.cpp
-    KReportZoomMode.h_HeaderTest.cpp
-    krpos.h_HeaderTest.cpp
-    krreportdata.h_HeaderTest.cpp
-    krscriptconstants.h_HeaderTest.cpp
-    krscriptdraw.h_HeaderTest.cpp
-    krscripthandler.h_HeaderTest.cpp
-    krsectiondata.h_HeaderTest.cpp
-    krsize.h_HeaderTest.cpp
-    renderobjects.h_HeaderTest.cpp
-    reportpageoptions.h_HeaderTest.cpp
-    reportsectiondetailgroup.h_HeaderTest.cpp
-    reportsectiondetail.h_HeaderTest.cpp
-    reportsection.h_HeaderTest.cpp
 )
 
 target_link_libraries(
