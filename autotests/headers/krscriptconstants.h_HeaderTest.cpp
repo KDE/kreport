@@ -1,1 +1,1 @@
-#include <kreport/krscriptconstants.h>
+#include <krscriptconstants.h>
