@@ -294,7 +294,7 @@ KoReportDesigner::KoReportDesigner(QWidget *parent, const QDomElement &data)
                 if (d->originalInterpreter != QLatin1String("javascript") && d->originalInterpreter != QLatin1String("qtscript")) {
                     QString msg = tr("This report contains scripts of type \"%1\". "
                                      "Only scripts written in JavaScript language are "
-                                     "supported. To prevent loosing the scripts, their type "
+                                     "supported. To prevent losing the scripts, their type "
                                      "and content will not be changed unless you change these scripts."
                                      ).arg(d->originalInterpreter);
                     QMessageBox::warning(this, tr("Unsupported Script Type"), msg);
