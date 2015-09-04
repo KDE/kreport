@@ -217,6 +217,8 @@ KReportElement KReportDesign::Private::processSectionElementChild(const QDomElem
 bool KReportDesign::Private::processGroupElement(const QDomElement &el,
                                                  KReportDesignReadingStatus *status)
 {
+    Q_UNUSED(el);
+    Q_UNUSED(status);
     //! @todo
     return true;
 }
