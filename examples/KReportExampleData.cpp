@@ -31,7 +31,7 @@ KReportExampleData::KReportExampleData()
     m_testData = temp;
 
     qDebug() << m_testData.count();
-    m_fieldNames << "id" << "devname" << "projet" << "country" << "mobile" << "lat" << "lon" << "code" << "projectlead";
+    m_fieldNames << "id" << "devname" << "project" << "country" << "mobile" << "lat" << "lon" << "code" << "projectlead";
 
     m_currentRecord = 0;
 }
