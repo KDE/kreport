@@ -23,9 +23,16 @@
  - The various report sections, such as title, header or footer, can be sized to suit
  - Reports can be generated on demand, thus eliminating saving them in files for further use
 
+ Project's home page: https://community.kde.org/KReport
+
  @authors
+ - Dag Andersen <danders@get2net.dk>
+ - Wojciech Kosowicz <pcellix@gmail.com>
+ - Shreya Pandit <shreya@shreyapandit.com>
  - Adam Pigg <adam@piggz.co.uk>
  - Jarosław Staniek <staniek@kde.org>
+ - Radoslaw Wicik <rockford@wicik.pl>
+ - OpenMFG, LLC <http://xtuple.com/contact>
 
  Maintainers
  - Adam Pigg <adam@piggz.co.uk>
@@ -34,4 +41,4 @@
  @lgpl
 */
 // DOXYGEN_SET_PROJECT_NAME = KReport
-// DOXYGEN_SET_IGNORE_PREFIX = K
+// DOXYGEN_SET_IGNORE_PREFIX = KReport
