@@ -52,9 +52,7 @@ KoReportPreRendererPrivate::KoReportPreRendererPrivate()
     m_maxHeight = m_maxWidth = 0.0;
     m_oneRecord = new KReportOneRecordData();
     m_kodata = m_oneRecord;
-#ifdef KREPORT_SCRIPTING
     m_scriptHandler = 0;
-#endif
     asyncManager = new KoReportASyncItemManager(this);
 
     connect(asyncManager, SIGNAL(finished()), this, SLOT(asyncItemsFinished()));
@@ -614,6 +612,7 @@ ORODocument* KoReportPreRenderer::generate()
     d->m_kodata->close();
 #ifdef KREPORT_SCRIPTING
     delete d->m_scriptHandler;
+    d->m_scriptHandler = 0;
 #endif
     //! @todo check ownership delete d->m_kodata;
     d->m_postProcText.clear();
