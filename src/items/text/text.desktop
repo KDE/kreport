@@ -36,7 +36,7 @@ Comment[tr]=Raporlar için metin ögesi
 Comment[uk]=Елемент тексту для звітів
 Comment[x-test]=xxText element for Reportsxx
 Type=Service
-Icon=insert-text
+Icon=kreport_text_element
 Encoding=UTF-8
 
 X-KDE-ServiceTypes=KReport/Element

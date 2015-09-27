@@ -34,7 +34,7 @@ Comment[tr]=Raporlar için etiket ögesi
 Comment[uk]=Елемент мітки для звітів
 Comment[x-test]=xxLabel element for Reportsxx
 Type=Service
-Icon=label
+Icon=kreport_label_element
 Encoding=UTF-8
 
 X-KDE-ServiceTypes=KReport/Element

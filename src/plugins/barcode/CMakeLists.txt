@@ -28,4 +28,5 @@ target_link_libraries(kreport_barcodeplugin
 )
 
 install(TARGETS kreport_barcodeplugin DESTINATION ${KREPORT_PLUGIN_INSTALL_DIR})
-#ecm_install_icons(${DATA_INSTALL_DIR}/calligra/icons)
+
+add_subdirectory(pics)

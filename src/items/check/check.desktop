@@ -34,7 +34,7 @@ Comment[tr]=Raporlar için onay kutusu ögesi
 Comment[uk]=Елемент пункту позначки для звітів
 Comment[x-test]=xxCheck box element for Reportsxx
 Type=Service
-Icon=checkbox
+Icon=kreport_checkbox_element
 Encoding=UTF-8
 
 X-KDE-ServiceTypes=KReport/Element

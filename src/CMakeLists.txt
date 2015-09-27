@@ -8,7 +8,7 @@ if(KREPORT_SCRIPTING)
 endif()
 
 add_subdirectory(plugins)
-#add_subdirectory(pics)
+add_subdirectory(pics)
 
 set(kreport_LIB_SRCS
     common/kreport_debug.cpp

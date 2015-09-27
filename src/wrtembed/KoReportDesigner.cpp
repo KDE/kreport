@@ -1332,7 +1332,8 @@ QList<QAction*> KoReportDesigner::itemActions(QActionGroup* group)
     KoReportPluginManager* manager = KoReportPluginManager::self();
     QList<QAction*> actList = manager->actions();
 
-    QAction *act = new QAction(QIcon::fromTheme(QLatin1String("draw-line")), tr("Line"), group);
+    //! @todo make line a real plugin so this isn't needed:
+    QAction *act = new QAction(QIcon::fromTheme(QLatin1String("kreport_line_element")), tr("Line"), group);
     act->setObjectName(QLatin1String("org.kde.kreport.line"));
     act->setData(9);
     act->setCheckable(true);

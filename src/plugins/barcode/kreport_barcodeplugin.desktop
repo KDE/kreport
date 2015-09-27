@@ -34,7 +34,7 @@ Comment[tr]=Raporlar için barkod ögesi
 Comment[uk]=Елемент штрихкоду для звітів
 Comment[x-test]=xxBarcode element for Reportsxx
 Type=Service
-Icon=report_barcode_element
+Icon=kreport_barcode_element
 Encoding=UTF-8
 
 X-KDE-Library=kreport_barcodeplugin

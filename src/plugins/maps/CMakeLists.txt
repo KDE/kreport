@@ -24,4 +24,5 @@ target_link_libraries(kreport_mapsplugin
 ########### install files ###############
 
 install(TARGETS kreport_mapsplugin DESTINATION ${KREPORT_PLUGIN_INSTALL_DIR})
-ecm_install_icons(${DATA_INSTALL_DIR}/calligra/icons)
+
+add_subdirectory(pics)

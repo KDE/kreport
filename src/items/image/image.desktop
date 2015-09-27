@@ -34,7 +34,7 @@ Comment[tr]=Raporlar için resim ögesi
 Comment[uk]=Елемент зображення для звітів
 Comment[x-test]=xxImage element for Reportsxx
 Type=Service
-Icon=image
+Icon=kreport_image_element
 Encoding=UTF-8
 
 X-KDE-ServiceTypes=KReport/Element

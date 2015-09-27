@@ -34,7 +34,7 @@ Comment[tr]=Raporlar için alan ögesi
 Comment[uk]=Елемент поля для звітів
 Comment[x-test]=xxField element for Reportsxx
 Type=Service
-Icon=edit-rename
+Icon=kreport_field_element
 Encoding=UTF-8
 
 X-KDE-ServiceTypes=KReport/Element
