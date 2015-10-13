@@ -1,6 +1,18 @@
 [Desktop Entry]
 Name=Chart
+Name[nl]=Grafiek
+Name[pt]=Gráfico
+Name[pt_BR]=Gráfico
+Name[sv]=Diagram
+Name[uk]=Діаграма
+Name[x-test]=xxChartxx
 Comment=Chart element for Reports
+Comment[nl]=Grafiekelement voor rapporten
+Comment[pt]=Elemento de Gráfico dos Relatórios
+Comment[pt_BR]=Elemento Gráfico para Relatórios
+Comment[sv]=Diagramelement för rapporter
+Comment[uk]=Елемент діаграми для звітів
+Comment[x-test]=xxChart element for Reportsxx
 Type=Service
 Icon=kreport_chart_element
 Encoding=UTF-8
