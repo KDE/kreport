@@ -2,6 +2,7 @@
 Name=Chart
 Name[ca]=Gràfic
 Name[nl]=Grafiek
+Name[pl]=Wykres
 Name[pt]=Gráfico
 Name[pt_BR]=Gráfico
 Name[sv]=Diagram
@@ -10,6 +11,7 @@ Name[x-test]=xxChartxx
 Comment=Chart element for Reports
 Comment[ca]=Element de gràfic per informes
 Comment[nl]=Grafiekelement voor rapporten
+Comment[pl]=Element tabeli dla raportów
 Comment[pt]=Elemento de Gráfico dos Relatórios
 Comment[pt_BR]=Elemento Gráfico para Relatórios
 Comment[sv]=Diagramelement för rapporter
