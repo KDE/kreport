@@ -28,9 +28,9 @@ class KREPORT_EXPORT KReportLineStyle //SDC: explicit operator== virtual_dtor
 public:
     /*!
     @getter
-    @return Line's weight in points. The default is 0 points.
+    @return Line's width in points. The default is 0 points.
     @setter
-    Sets the line's weight to @a weight.
+    Sets the line's width to @a width.
     */
     qreal width; //SDC: default=0.0
 
