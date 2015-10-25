@@ -2,6 +2,7 @@
 Name=Chart
 Name[ca]=Gràfic
 Name[fi]=Kaavio
+Name[gl]=Gráfica
 Name[nl]=Grafiek
 Name[pl]=Wykres
 Name[pt]=Gráfico
@@ -12,6 +13,7 @@ Name[x-test]=xxChartxx
 Comment=Chart element for Reports
 Comment[ca]=Element de gràfic per informes
 Comment[fi]=Kaavioelementti raportteihin
+Comment[gl]=Gráfica para informes.
 Comment[nl]=Grafiekelement voor rapporten
 Comment[pl]=Element tabeli dla raportów
 Comment[pt]=Elemento de Gráfico dos Relatórios
