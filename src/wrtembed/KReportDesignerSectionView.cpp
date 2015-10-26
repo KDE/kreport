@@ -19,12 +19,12 @@
 //
 // ReportSceneView method implementations
 //
-#include "KReportDesignerView.h"
+#include "KReportDesignerSectionView.h"
 #include "KReportDesigner.h"
 
 #include "kreport_debug.h"
 
-KReportDesignerView::KReportDesignerView(KReportDesigner * designer, QGraphicsScene *scene, QWidget * parent)
+KReportDesignerSectionView::KReportDesignerSectionView(KReportDesigner * designer, QGraphicsScene *scene, QWidget * parent)
  : QGraphicsView(scene, parent)
 {
     m_reportDesigner = designer;
@@ -41,36 +41,36 @@ KReportDesignerView::KReportDesignerView(KReportDesigner * designer, QGraphicsSc
 
 }
 
-KReportDesignerView::~KReportDesignerView()
+KReportDesignerSectionView::~KReportDesignerSectionView()
 {
     viewport()->setMouseTracking(false);
 }
 
 //! @todo check
-void KReportDesignerView::resizeContents(const QSize &s)
+void KReportDesignerSectionView::resizeContents(const QSize &s)
 {
     setMinimumSize(s);
     setMaximumSize(s);
 }
 
-KReportDesigner * KReportDesignerView::designer() const
+KReportDesigner * KReportDesignerSectionView::designer() const
 {
     return m_reportDesigner;
 }
 
-void KReportDesignerView::mousePressEvent(QMouseEvent * e)
+void KReportDesignerSectionView::mousePressEvent(QMouseEvent * e)
 {
     m_reportDesigner->sectionMousePressEvent(this, e);
     QGraphicsView::mousePressEvent(e);
 }
 
-void KReportDesignerView::mouseReleaseEvent(QMouseEvent * e)
+void KReportDesignerSectionView::mouseReleaseEvent(QMouseEvent * e)
 {
     m_reportDesigner->sectionMouseReleaseEvent(this, e);
     QGraphicsView::mouseReleaseEvent(e);
 }
 
-QSize KReportDesignerView::sizeHint() const
+QSize KReportDesignerSectionView::sizeHint() const
 {
     //kreportDebug() <<  scene()->width() << "x" << scene()->height();
     return QSize(scene()->width(), scene()->height());

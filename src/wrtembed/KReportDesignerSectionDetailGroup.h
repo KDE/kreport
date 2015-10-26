@@ -16,8 +16,8 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef KREPORTSECTIONDETAILGROUP_H
-#define KREPORTSECTIONDETAILGROUP_H
+#ifndef KREPORTDESIGNERSECTIONDETAILGROUP_H
+#define KREPORTDESIGNERSECTIONDETAILGROUP_H
 
 #include <QObject>
 

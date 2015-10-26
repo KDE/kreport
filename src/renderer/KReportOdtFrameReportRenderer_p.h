@@ -21,13 +21,17 @@
 
 #include "KReportRendererBase.h"
 
-class KReportOdtFrameReportRenderer : public KReportRendererBase
+namespace KReportPrivate {
+
+class OdtFrameReportRenderer : public KReportRendererBase
 {
 public:
-    KReportOdtFrameReportRenderer();
-    virtual ~KReportOdtFrameReportRenderer();
+    OdtFrameReportRenderer();
+    virtual ~OdtFrameReportRenderer();
     virtual bool render(const KReportRendererContext& context, ORODocument* document, int page = -1);
 
 };
+
+}
 
 #endif // KOODTFRAMEREPORTRENDERER_H

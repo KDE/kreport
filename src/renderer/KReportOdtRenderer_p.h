@@ -24,11 +24,13 @@
 
 class QTextDocument;
 
-class KReportODTRenderer : public KReportRendererBase
+namespace KReportPrivate {
+  
+class OdtRenderer : public KReportRendererBase
 {
 public:
-    KReportODTRenderer();
-    virtual ~KReportODTRenderer();
+    OdtRenderer();
+    virtual ~OdtRenderer();
     virtual bool render(const KReportRendererContext& context, ORODocument* document, int page = -1);
 
     private:
@@ -37,4 +39,5 @@ public:
 
 };
 
+}
 #endif // KOREPORTODTRENDERER_H

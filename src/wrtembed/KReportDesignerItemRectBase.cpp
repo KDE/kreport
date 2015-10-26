@@ -17,11 +17,11 @@
  */
 
 #include "KReportDesignerItemRectBase.h"
-#include "KReportDesignerView.h"
+#include "KReportDesignerSectionView.h"
 #include "KReportDesigner.h"
 #include "KReportPosition.h"
 #include "KReportSize.h"
-#include "KReportDesignerScene.h"
+#include "KReportDesignerSectionScene.h"
 
 #include <KPropertySet>
 #include <QGraphicsSceneMouseEvent>
@@ -115,7 +115,7 @@ void KReportDesignerItemRectBase::mouseMoveEvent(QGraphicsSceneMouseEvent * even
 
     qreal w, h;
 
-    QPointF p  = dynamic_cast<KReportDesignerScene*>(scene())->gridPoint(event->scenePos());
+    QPointF p  = dynamic_cast<KReportDesignerSectionScene*>(scene())->gridPoint(event->scenePos());
     w = p.x() - scenePos().x();
     h = p.y() - scenePos().y();
 
@@ -272,7 +272,7 @@ QVariant KReportDesignerItemRectBase::itemChange(GraphicsItemChange change, cons
     if (change == ItemPositionChange && scene()) {
         QPointF newPos = value.toPointF();
 
-        newPos = dynamic_cast<KReportDesignerScene*>(scene())->gridPoint(newPos);
+        newPos = dynamic_cast<KReportDesignerSectionScene*>(scene())->gridPoint(newPos);
         if (newPos.x() < 0)
             newPos.setX(0);
         else if (newPos.x() > (scene()->width() - rect().width()))
@@ -289,7 +289,7 @@ QVariant KReportDesignerItemRectBase::itemChange(GraphicsItemChange change, cons
     } else if (change == ItemSceneHasChanged && scene() && m_psize) {
         QPointF newPos = pos();
 
-        newPos = dynamic_cast<KReportDesignerScene*>(scene())->gridPoint(newPos);
+        newPos = dynamic_cast<KReportDesignerSectionScene*>(scene())->gridPoint(newPos);
         if (newPos.x() < 0)
             newPos.setX(0);
         else if (newPos.x() > (scene()->width() - rect().width()))

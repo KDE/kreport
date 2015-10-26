@@ -22,8 +22,8 @@
 //     Overrides the drawForeground() method to do the grid.
 //
 
-#ifndef KREPORTSCENE_H
-#define KREPORTSCENE_H
+#ifndef KREPORTDESIGNERSECTIONSCENE_H
+#define KREPORTDESIGNERSECTIONSCENE_H
 
 #include <QGraphicsScene>
 
@@ -35,12 +35,12 @@ class QGraphicsSceneContextMenuEvent;
 class QGraphicsSceneMouseEvent;
 class KReportDesignerItemRectBase;
 
-class KReportDesignerScene : public QGraphicsScene
+class KReportDesignerSectionScene : public QGraphicsScene
 {
     Q_OBJECT
 public:
-    KReportDesignerScene(qreal w, qreal h, KReportDesigner* rd);
-    virtual ~KReportDesignerScene();
+    KReportDesignerSectionScene(qreal w, qreal h, KReportDesigner* rd);
+    virtual ~KReportDesignerSectionScene();
     KReportDesigner* document() const {
         return m_rd;
     }

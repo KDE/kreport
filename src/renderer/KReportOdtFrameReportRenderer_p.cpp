@@ -16,7 +16,7 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "KoOdtFrameReportRenderer.h"
+#include "KReportOdtFrameReportRenderer.h"
 #include "odtframe/KoOdtFrameReportDocument.h"
 #include "odtframe/KoOdtFrameReportTextBox.h"
 #include "odtframe/KoOdtFrameReportImage.h"
@@ -25,6 +25,9 @@
 #include "odtframe/KoOdtFrameReportCheckBox.h"
 #include "KReportRenderObjects.h"
 
+namespace KReportPrivate {
+
+  
 KoOdtFrameReportRenderer::KoOdtFrameReportRenderer()
 {
 
@@ -71,3 +74,4 @@ bool KoOdtFrameReportRenderer::render(const KoReportRendererContext& context, OR
     return doc.saveDocument(context.destinationUrl.path()) == QFile::NoError;
 }
 
+}

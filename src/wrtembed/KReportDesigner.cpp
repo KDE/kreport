@@ -19,8 +19,8 @@
 
 #include "KReportDesigner.h"
 #include "KReportDesignerSection.h"
-#include "KReportDesignerScene.h"
-#include "KReportDesignerView.h"
+#include "KReportDesignerSectionScene.h"
+#include "KReportDesignerSectionView.h"
 #include "KReportDesignerSectionDetailGroup.h"
 #include "KReportPropertiesButton.h"
 #include "KReportSectionEditor.h"
@@ -928,7 +928,7 @@ void KReportDesigner::setGridOptions(bool vis, int div)
 //
 // methods for the sectionMouse*Event()
 //
-void KReportDesigner::sectionContextMenuEvent(KReportDesignerScene * s, QGraphicsSceneContextMenuEvent * e)
+void KReportDesigner::sectionContextMenuEvent(KReportDesignerSectionScene * s, QGraphicsSceneContextMenuEvent * e)
 {
     Q_UNUSED(s);
 
@@ -966,14 +966,14 @@ void KReportDesigner::sectionContextMenuEvent(KReportDesignerScene * s, QGraphic
     }
 }
 
-void KReportDesigner::sectionMousePressEvent(KReportDesignerView * v, QMouseEvent * e)
+void KReportDesigner::sectionMousePressEvent(KReportDesignerSectionView * v, QMouseEvent * e)
 {
     Q_UNUSED(v);
     d->pressX = e->pos().x();
     d->pressY = e->pos().y();
 }
 
-void KReportDesigner::sectionMouseReleaseEvent(KReportDesignerView * v, QMouseEvent * e)
+void KReportDesigner::sectionMouseReleaseEvent(KReportDesignerSectionView * v, QMouseEvent * e)
 {
     e->accept();
 
@@ -1185,12 +1185,12 @@ void KReportDesigner::slotEditPaste(QGraphicsScene * canvas)
 }
 void KReportDesigner::slotRaiseSelected()
 {
-    dynamic_cast<KReportDesignerScene*>(activeScene())->raiseSelected();
+    dynamic_cast<KReportDesignerSectionScene*>(activeScene())->raiseSelected();
 }
 
 void KReportDesigner::slotLowerSelected()
 {
-    dynamic_cast<KReportDesignerScene*>(activeScene())->lowerSelected();
+    dynamic_cast<KReportDesignerSectionScene*>(activeScene())->lowerSelected();
 }
 
 QGraphicsScene* KReportDesigner::activeScene() const

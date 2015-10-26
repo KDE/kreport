@@ -16,7 +16,7 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "KReportDesignerScene.h"
+#include "KReportDesignerSectionScene.h"
 #include "KReportPageOptions.h"
 #include "KReportDesignerItemRectBase.h"
 #include "KReportDesigner.h"
@@ -30,7 +30,7 @@
 #include <QGraphicsItem>
 #include <QGraphicsSceneMouseEvent>
 
-KReportDesignerScene::KReportDesignerScene(qreal w, qreal h, KReportDesigner *rd)
+KReportDesignerSectionScene::KReportDesignerSectionScene(qreal w, qreal h, KReportDesigner *rd)
         : QGraphicsScene(0, 0, w, h, rd)
 {
     m_rd = rd;
@@ -57,12 +57,12 @@ KReportDesignerScene::KReportDesignerScene(qreal w, qreal h, KReportDesigner *rd
         }
     }
 }
-KReportDesignerScene::~KReportDesignerScene()
+KReportDesignerSectionScene::~KReportDesignerSectionScene()
 {
     // Qt should be handling everything for us
 }
 
-void KReportDesignerScene::drawBackground(QPainter* painter, const QRectF & clip)
+void KReportDesignerSectionScene::drawBackground(QPainter* painter, const QRectF & clip)
 {
     //Draw the default background colour
     QGraphicsScene::drawBackground(painter, clip);
@@ -125,7 +125,7 @@ void KReportDesignerScene::drawBackground(QPainter* painter, const QRectF & clip
     }
 }
 
-void KReportDesignerScene::mousePressEvent(QGraphicsSceneMouseEvent * e)
+void KReportDesignerSectionScene::mousePressEvent(QGraphicsSceneMouseEvent * e)
 {
     // clear the selection if Shift Key has not been pressed and it's a left mouse button   and
     // if the right mouse button has been pressed over an item which is not part of selected items
@@ -148,12 +148,12 @@ void KReportDesignerScene::mousePressEvent(QGraphicsSceneMouseEvent * e)
     QGraphicsScene::mousePressEvent(e);
 }
 
-void KReportDesignerScene::contextMenuEvent(QGraphicsSceneContextMenuEvent * e)
+void KReportDesignerSectionScene::contextMenuEvent(QGraphicsSceneContextMenuEvent * e)
 {
     m_rd->sectionContextMenuEvent(this, e);
 }
 
-QPointF KReportDesignerScene::gridPoint(const QPointF& p)
+QPointF KReportDesignerSectionScene::gridPoint(const QPointF& p)
 {
     if (!m_rd->propertySet()->property("grid-snap").value().toBool()) {
         return p;
@@ -186,7 +186,7 @@ QPointF KReportDesignerScene::gridPoint(const QPointF& p)
     return QPointF(qRound((p.x() / m_pixelIncrementX)) * m_pixelIncrementX, qRound((p.y() / m_pixelIncrementY)) * m_pixelIncrementY);
 }
 
-void KReportDesignerScene::focusOutEvent(QFocusEvent * focusEvent)
+void KReportDesignerSectionScene::focusOutEvent(QFocusEvent * focusEvent)
 {
     exitInlineEditingModeInItems(0);
 
@@ -194,7 +194,7 @@ void KReportDesignerScene::focusOutEvent(QFocusEvent * focusEvent)
     QGraphicsScene::focusOutEvent(focusEvent);
 }
 
-qreal KReportDesignerScene::lowestZValue()
+qreal KReportDesignerSectionScene::lowestZValue()
 {
     qreal z;
     qreal zz;
@@ -210,7 +210,7 @@ qreal KReportDesignerScene::lowestZValue()
     return z;
 }
 
-qreal KReportDesignerScene::highestZValue()
+qreal KReportDesignerSectionScene::highestZValue()
 {
     qreal z;
     qreal zz;
@@ -225,7 +225,7 @@ qreal KReportDesignerScene::highestZValue()
     return z;
 }
 
-void KReportDesignerScene::lowerSelected()
+void KReportDesignerSectionScene::lowerSelected()
 {
     QGraphicsItemList list = selectedItems();
     for (QGraphicsItemList::iterator it = list.begin();
@@ -234,7 +234,7 @@ void KReportDesignerScene::lowerSelected()
     }
 }
 
-void KReportDesignerScene::raiseSelected()
+void KReportDesignerSectionScene::raiseSelected()
 {
     QGraphicsItemList list = selectedItems();
     for (QGraphicsItemList::iterator it = list.begin();
@@ -243,7 +243,7 @@ void KReportDesignerScene::raiseSelected()
     }
 }
 
-QGraphicsItemList KReportDesignerScene::itemsOrdered() const
+QGraphicsItemList KReportDesignerSectionScene::itemsOrdered() const
 {
     QGraphicsItemList r;
     QGraphicsItemList list = items();
@@ -256,7 +256,7 @@ QGraphicsItemList KReportDesignerScene::itemsOrdered() const
     return r;
 }
 
-void KReportDesignerScene::exitInlineEditingModeInItems(KReportDesignerItemRectBase *rectUnderCursor)
+void KReportDesignerSectionScene::exitInlineEditingModeInItems(KReportDesignerItemRectBase *rectUnderCursor)
 {
     foreach(QGraphicsItem *it, items()) {
         KReportDesignerItemRectBase *itm = qgraphicsitem_cast< KReportDesignerItemRectBase* >(it);

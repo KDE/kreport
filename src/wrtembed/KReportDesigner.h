@@ -38,8 +38,8 @@ class KReportZoomHandler;
 class KReportDesignerSectionDetail;
 class KReportDesignerSection;
 class KReportUnit;
-class KReportDesignerScene;
-class KReportDesignerView;
+class KReportDesignerSectionScene;
+class KReportDesignerSectionView;
 class QAction;
 
 //
@@ -190,14 +190,14 @@ public:
     @brief Handle the context menu event for a report section
     @param scene The associated scene (section)
     */
-    void sectionContextMenuEvent(KReportDesignerScene *, QGraphicsSceneContextMenuEvent * e);
+    void sectionContextMenuEvent(KReportDesignerSectionScene *, QGraphicsSceneContextMenuEvent * e);
 
     /**
     @brief Handle the mouse release event for a report section
     */
-    void sectionMouseReleaseEvent(KReportDesignerView *, QMouseEvent * e);
+    void sectionMouseReleaseEvent(KReportDesignerSectionView *, QMouseEvent * e);
 
-    void sectionMousePressEvent(KReportDesignerView *, QMouseEvent * e);
+    void sectionMousePressEvent(KReportDesignerSectionView *, QMouseEvent * e);
 
     /**
     @brief Sets the property set for the currently selected item

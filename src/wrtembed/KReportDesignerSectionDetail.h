@@ -16,8 +16,8 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef KREPORTSECTIONDETAIL_H
-#define KREPORTSECTIONDETAIL_H
+#ifndef KREPORTDESIGNERSECTIONDETAIL_H
+#define KREPORTDESIGNERSECTIONDETAIL_H
 
 #include <QWidget>
 
