@@ -16,19 +16,19 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef KREPORTSCENEVIEW_H
-#define KREPORTSCENEVIEW_H
+#ifndef KREPORTDESIGNERSECTIONVIEW_H
+#define KREPORTDESIGNERSECTIONVIEW_H
 
 #include <QGraphicsView>
 
 class KReportDesigner;
 
-class KReportDesignerView : public QGraphicsView
+class KReportDesignerSectionView : public QGraphicsView
 {
     Q_OBJECT
 public:
-    KReportDesignerView(KReportDesigner *, QGraphicsScene * scene, QWidget * parent = 0);
-    virtual ~KReportDesignerView();
+    KReportDesignerSectionView(KReportDesigner *, QGraphicsScene * scene, QWidget * parent = 0);
+    virtual ~KReportDesignerSectionView();
 
     KReportDesigner * designer() const;
     virtual QSize sizeHint() const;

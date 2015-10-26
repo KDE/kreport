@@ -19,8 +19,8 @@
 
 #include "KReportDesignerSection.h"
 
-#include "KReportDesignerScene.h"
-#include "KReportDesignerView.h"
+#include "KReportDesignerSectionScene.h"
+#include "KReportDesignerSectionView.h"
 #include "KReportDesigner.h"
 #include "KReportDesignerItemBase.h"
 #include "KReportUtils.h"
@@ -85,9 +85,9 @@ public:
     {}
 
     KReportDesignerSectionTitle *title;
-    KReportDesignerScene *scene;
+    KReportDesignerSectionScene *scene;
     ReportResizeBar *resizeBar;
-    KReportDesignerView *sceneView;
+    KReportDesignerSectionView *sceneView;
     KReportDesigner*reportDesigner;
     KReportRuler *sectionRuler;
 
@@ -123,8 +123,8 @@ KReportDesignerSection::KReportDesignerSection(KReportDesigner * rptdes)
 
     d->sectionRuler = new KReportRuler(this, Qt::Vertical, d->reportDesigner->zoomHandler());
     d->sectionRuler->setUnit(d->reportDesigner->pageUnit());
-    d->scene = new KReportDesignerScene(d->reportDesigner->pageWidthPx(), d->dpiY, rptdes);
-    d->sceneView = new KReportDesignerView(rptdes, d->scene, this);
+    d->scene = new KReportDesignerSectionScene(d->reportDesigner->pageWidthPx(), d->dpiY, rptdes);
+    d->sceneView = new KReportDesignerSectionView(rptdes, d->scene, this);
     d->sceneView->setObjectName(QLatin1String("scene view"));
     d->sceneView->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
 
@@ -385,7 +385,7 @@ void KReportDesignerSectionTitle::paintEvent(QPaintEvent * event)
     QWidget *activeWindow = QApplication::activeWindow();
     if (activeWindow) {
         QWidget *par = activeWindow->focusWidget();
-        if (qobject_cast<KReportDesignerView*>(par)) {
+        if (qobject_cast<KReportDesignerSectionView*>(par)) {
             par = par->parentWidget(); // we're close, pick common parent
         }
         if (hasParent(par, this)) {

@@ -25,6 +25,8 @@
 #include <QTextDocumentWriter>
 #include "kreport_debug.h"
 
+namespace KReportPrivate {
+
 KoReportODTRenderer::KoReportODTRenderer() : m_document(new QTextDocument()), m_cursor(m_document)
 {
 
@@ -112,3 +114,4 @@ bool KoReportODTRenderer::render(const KoReportRendererContext& context, ORODocu
     return writer.write(m_document);
 }
 
+}

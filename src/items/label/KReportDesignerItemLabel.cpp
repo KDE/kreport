@@ -19,7 +19,7 @@
 #include "KReportDesignerItemLabel.h"
 #include "KReportDesignerItemBase.h"
 #include "KReportDesigner.h"
-#include "KReportDesignerScene.h"
+#include "KReportDesignerSectionScene.h"
 #include "KReportLineStyle.h"
 
 #include <QKeyEvent>

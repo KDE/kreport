@@ -60,8 +60,8 @@ set(kreport_LIB_SRCS
     wrtembed/KReportDesignerSection.cpp
     wrtembed/KReportDesignerSectionDetailGroup.cpp
     wrtembed/KReportDesignerSectionDetail.cpp
-    wrtembed/KReportDesignerScene.cpp
-    wrtembed/KReportDesignerView.cpp
+    wrtembed/KReportDesignerSectionScene.cpp
+    wrtembed/KReportDesignerSectionView.cpp
     wrtembed/KReportDesigner.cpp
     wrtembed/KReportPropertiesButton.cpp
     wrtembed/KReportSectionEditor.cpp

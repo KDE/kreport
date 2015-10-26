@@ -16,8 +16,8 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "kreport_debug.h"
 #include "KReportPrintRenderer_p.h"
+#include "kreport_debug.h"
 #include "KReportRenderObjects.h"
 #include "KReportPageFormat.h"
 
