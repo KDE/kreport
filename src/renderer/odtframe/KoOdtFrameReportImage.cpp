@@ -25,7 +25,7 @@
 #include <QMimeDatabase>
 #include <QMimeType>
 
-#include "renderobjects.h"
+#include "KReportRenderObjects.h"
 
 KoOdtFrameReportImage::KoOdtFrameReportImage(OROImage *primitive)
     : KoOdtFrameReportPrimitive(primitive)

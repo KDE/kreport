@@ -18,7 +18,11 @@
 */
 
 #include "KReportView.h"
-#include <KoReportPage.h>
+#include "KReportPage.h"
+#include "KReportRenderObjects.h"
+#include "KReportPreRenderer.h"
+#include "KReportRendererBase.h"
+#include "kreport_debug.h"
 
 #include <QLabel>
 #include <QBoxLayout>
@@ -30,11 +34,6 @@
 #include <QGraphicsView>
 #include <QGraphicsScene>
 #include <QScrollBar>
-
-#include <renderobjects.h>
-#include <KoReportPreRenderer.h>
-#include <KoReportRendererBase.h>
-#include "kreport_debug.h"
 
 //! @internal
 class KReportView::Private
@@ -53,12 +52,12 @@ public:
     ORODocument *reportDocument;
     QGraphicsView *reportView;
     QGraphicsScene *reportScene;
-    KoReportPage *reportPage;
+    KReportPage *reportPage;
 
     int currentPage;
     int pageCount;
 
-    KoReportRendererFactory factory;
+    KReportRendererFactory factory;
 };
 
 
@@ -141,7 +140,7 @@ void KReportView::setDocument(ORODocument* doc)
 
     d->pageCount = doc->pages();
 
-    d->reportPage = new KoReportPage(this, d->reportDocument);
+    d->reportPage = new KReportPage(this, d->reportDocument);
     d->reportPage->setObjectName(QLatin1String("KReportPage"));
 
     d->reportScene->setSceneRect(0,0,d->reportPage->rect().width() + 40, d->reportPage->rect().height() + 40);

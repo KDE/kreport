@@ -3,10 +3,10 @@ ecm_create_qm_loader(koreport_mapsplugin_QM_LOADER kreport_mapsplugin_qt)
 #build a shared library
 set(kreport_mapsplugin_LIB_SRCS
     ${PROJECT_SOURCE_DIR}/src/common/kreportplugin_debug.cpp
-    KoReportDesignerItemMaps.cpp
-    KoReportItemMaps.cpp
-    KoReportMapsPlugin.cpp
-    krscriptmaps.cpp
+    KReportDesignerItemMaps.cpp
+    KReportItemMaps.cpp
+    KReportMapsPlugin.cpp
+    KReportScriptMaps.cpp
     MapRenderer.cpp
     ${koreport_mapsplugin_QM_LOADER}
 )

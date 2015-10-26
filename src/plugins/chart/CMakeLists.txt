@@ -2,10 +2,10 @@ ecm_create_qm_loader(koreport_chartplugin_QM_LOADER kreport_chartplugin_qt)
 
 set(koreport_chartplugin_LIB_SRCS
     ${PROJECT_SOURCE_DIR}/src/common/kreportplugin_debug.cpp
-    KoReportItemChart.cpp
-    KoReportDesignerItemChart.cpp
-    krscriptchart.cpp
-    KoReportChartPlugin.cpp
+    KReportItemChart.cpp
+    KReportDesignerItemChart.cpp
+    KReportScriptChart.cpp
+    KReportChartPlugin.cpp
     ${koreport_chartplugin_QM_LOADER}
 )
 

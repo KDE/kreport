@@ -19,7 +19,7 @@
 
 #include "KoOdtFrameReportDocument.h"
 #include "KoOdtFrameReportPrimitive.h"
-#include "renderobjects.h"
+#include "KReportRenderObjects.h"
 
 #include <KoOdfWriteStore.h>
 #include <KoXmlWriter.h>

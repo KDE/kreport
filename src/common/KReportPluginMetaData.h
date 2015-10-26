@@ -18,8 +18,8 @@
    Boston, MA 02110-1301, USA.
 */
 
-#ifndef KOREPORTPLUGININFO_H
-#define KOREPORTPLUGININFO_H
+#ifndef KREPORTPLUGININFO_H
+#define KREPORTPLUGININFO_H
 
 #include <KPluginMetaData>
 
@@ -60,4 +60,4 @@ private:
     Private * const d;
 };
 
-#endif // KOREPORTPLUGININFO_H
+#endif // KREPORTPLUGININFO_H

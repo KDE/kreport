@@ -20,14 +20,14 @@
 #include "KReportSection.h"
 #include "KReportDesign_p.h"
 
-#include "krreportdata.h"
-#include "KoReportPluginInterface.h"
-#include "KoReportPluginManager.h"
-#include "KoReportItemLine.h"
+#include "KReportDocument.h"
+#include "KReportPluginInterface.h"
+#include "KReportPluginManager.h"
+#include "KReportItemLine.h"
 #include "kreport_debug.h"
 
 #if 0
-KReportSection::KReportSection(const QDomElement & elemSource, KoReportReportData* report)
+KReportSection::KReportSection(const QDomElement & elemSource, KReportReportData* report)
  : QObject(report)
 {
     setObjectName(elemSource.tagName());
@@ -46,7 +46,7 @@ KReportSection::KReportSection(const QDomElement & elemSource, KoReportReportDat
 
     m_backgroundColor->setValue(QColor(elemSource.attribute(QLatin1String("fo:background-color"))));
 
-    KoReportPluginManager* manager = KoReportPluginManager::self();
+    KReportPluginManager* manager = KReportPluginManager::self();
 
     QDomNodeList section = elemSource.childNodes();
     for (int nodeCounter = 0; nodeCounter < section.count(); nodeCounter++) {
@@ -55,15 +55,15 @@ KReportSection::KReportSection(const QDomElement & elemSource, KoReportReportDat
         if (n.startsWith(QLatin1String("report:"))) {
             QString reportItemName = n.mid(qstrlen("report:"));
             if (reportItemName == QLatin1String("line")) {
-                KoReportItemLine * line = new KoReportItemLine(elemThis);
+                KReportItemLine * line = new KReportItemLine(elemThis);
                 m_objects.append(line);
                 continue;
             }
-            KoReportPluginInterface *plugin = manager->plugin(reportItemName);
+            KReportPluginInterface *plugin = manager->plugin(reportItemName);
             if (plugin) {
                 QObject *obj = plugin->createRendererInstance(elemThis);
                 if (obj) {
-                    KoReportItemBase *krobj = dynamic_cast<KoReportItemBase*>(obj);
+                    KReportItemBase *krobj = dynamic_cast<KReportItemBase*>(obj);
                     if (krobj) {
                         m_objects.append(krobj);
                     }
@@ -76,12 +76,12 @@ KReportSection::KReportSection(const QDomElement & elemSource, KoReportReportDat
     qSort(m_objects.begin(), m_objects.end(), zLessThan);
     m_valid = true;
 }
-bool KReportSection::zLessThan(KoReportItemBase* s1, KoReportItemBase* s2)
+bool KReportSection::zLessThan(KReportItemBase* s1, KReportItemBase* s2)
 {
     return s1->Z < s2->Z;
 }
 
-bool KReportSection::xLessThan(KoReportItemBase* s1, KoReportItemBase* s2)
+bool KReportSection::xLessThan(KReportItemBase* s1, KReportItemBase* s2)
 {
     return s1->position().toPoint().x() < s2->position().toPoint().x();
 }

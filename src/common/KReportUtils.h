@@ -32,10 +32,10 @@ class QDomElement;
 class QFont;
 class QPointF;
 class KProperty;
-class KRPos;
-class KRSize;
+class KReportPosition;
+class KReportSize;
 class KRTextStyleData;
-class KRLineStyleData;
+class KReportLineStyle;
 
 namespace KReportUtils
 {
@@ -90,13 +90,13 @@ namespace KReportUtils
     KREPORT_EXPORT void writeFontAttributes(QDomElement *el, const QFont &font);
 
     //! Writes attributes for the rect position @p pos, @p siz
-    KREPORT_EXPORT void buildXMLRect(QDomElement *entity, KRPos *pos, KRSize *size);
+    KREPORT_EXPORT void buildXMLRect(QDomElement *entity, KReportPosition *pos, KReportSize *size);
 
     //! Writes attributes for text style @p ts
     KREPORT_EXPORT void buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KRTextStyleData &ts);
 
     //! Writes attributes for line style @p ls
-    KREPORT_EXPORT void buildXMLLineStyle(QDomDocument *doc, QDomElement *entity, const KRLineStyleData &ls);
+    KREPORT_EXPORT void buildXMLLineStyle(QDomDocument *doc, QDomElement *entity, const KReportLineStyle &ls);
 
     //! Writes attributes for the property @p p
     KREPORT_EXPORT void addPropertyAsAttribute(QDomElement* e, KProperty* p);
@@ -114,10 +114,10 @@ namespace KReportUtils
     KREPORT_EXPORT bool parseReportTextStyleData(const QDomElement & elemSource, KRTextStyleData *ts);
 
     //! Reads attributes from @p elemSource into line style @p ls
-    KREPORT_EXPORT bool parseReportLineStyleData(const QDomElement & elemSource, KRLineStyleData *ls);
+    KREPORT_EXPORT bool parseReportLineStyleData(const QDomElement & elemSource, KReportLineStyle *ls);
 
     //! Reads attributes from @p elemSource into rect @p pos, @p siz
-    KREPORT_EXPORT bool parseReportRect(const QDomElement & elemSource, KRPos *pos, KRSize *size);
+    KREPORT_EXPORT bool parseReportRect(const QDomElement & elemSource, KReportPosition *pos, KReportSize *size);
 
     //! @return page size ID for page key (the PPD standard mediaOption keyword, e.g. "A4")
     //! @note It's an efficient workaround because QPageSize misses this function.

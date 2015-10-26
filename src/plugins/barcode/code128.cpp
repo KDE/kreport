@@ -27,7 +27,7 @@
 #include <QPen>
 #include <QBrush>
 
-#include "renderobjects.h"
+#include "KReportRenderObjects.h"
 #include "kreportplugin_debug.h"
 
 static const int SETA = 0;

@@ -22,8 +22,8 @@
 #include "KReportElement.h"
 #include "KReportUnit.h"
 #include "KReportUtils.h"
-#include "KoReportPluginManager.h"
-#include "KoReportPluginInterface.h"
+#include "KReportPluginManager.h"
+#include "KReportPluginInterface.h"
 
 #include <QDomDocument>
 #include <QDomElement>
@@ -112,7 +112,7 @@ KReportElement KReportDesign::createElement(const QString &typeName, QString *er
 {
     QDomElement el;
     KReportDesignReadingStatus status;
-    KoReportPluginInterface* plugin = d->findPlugin(typeName, el, &status);
+    KReportPluginInterface* plugin = d->findPlugin(typeName, el, &status);
     if (!plugin) {
         if (errorMessage) {
             *errorMessage = status.errorMessage;

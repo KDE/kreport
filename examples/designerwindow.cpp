@@ -20,7 +20,7 @@
 #include "designerwindow.h"
 #include "KReportExampleData.h"
 
-#include <KoReportDesigner.h>
+#include <KReportDesigner.h>
 
 #include <QActionGroup>
 #include <QScrollArea>
@@ -33,7 +33,7 @@ DesignerWindow::DesignerWindow()
     m_scrollArea = new QScrollArea(this);
     setCentralWidget(m_scrollArea);
 
-    m_reportDesigner = new KoReportDesigner(this);
+    m_reportDesigner = new KReportDesigner(this);
     m_scrollArea->setWidget(m_reportDesigner);
 
     m_mainToolbar = addToolBar(tr("Main"));
@@ -45,7 +45,7 @@ DesignerWindow::DesignerWindow()
     }
 
     QActionGroup *group = new QActionGroup(this);
-    QList<QAction*> itemActions = KoReportDesigner::itemActions(group);
+    QList<QAction*> itemActions = KReportDesigner::itemActions(group);
     foreach(QAction* action, itemActions) {
         m_itemToolbar->addAction(action);
     }

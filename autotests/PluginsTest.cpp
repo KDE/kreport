@@ -17,8 +17,8 @@
 
 #include "PluginsTest.h"
 
-#include <KoReportPluginManager>
-#include <KoReportPluginInterface>
+#include <KReportPluginManager>
+#include <KReportPluginInterface>
 #include <KReportPluginMetaData>
 
 #include <KAboutData>
@@ -37,14 +37,14 @@ void PluginsTest::initTestCase()
 
 void PluginsTest::listPlugins()
 {
-    KoReportPluginManager* manager = KoReportPluginManager::self();
+    KReportPluginManager* manager = KReportPluginManager::self();
     QStringList pluginIds = manager->pluginIds();
     qDebug() << pluginIds;
     QCOMPARE(pluginIds.toSet().count(), pluginIds.count());
     foreach(const QString &pluginId, pluginIds) {
         qDebug() << "Checking" << pluginId;
         QVERIFY2(!pluginId.isEmpty(), "Plugin id not empty");
-        KoReportPluginInterface* iface = manager->plugin(pluginId);
+        KReportPluginInterface* iface = manager->plugin(pluginId);
         QVERIFY2(iface, "Plugin interface");
         const KReportPluginMetaData *metaData = manager->pluginMetaData(pluginId);
         //! @todo info->priority()
@@ -124,7 +124,7 @@ do { \
 
 void PluginsTest::checkBuiltInPlugins()
 {
-    KoReportPluginManager* manager = KoReportPluginManager::self();
+    KReportPluginManager* manager = KReportPluginManager::self();
     QStringList pluginIds = manager->pluginIds();
     QCOMPARE(pluginIds.toSet().count(), pluginIds.count());
     QSet<QString> builtInPlugins(
@@ -135,7 +135,7 @@ void PluginsTest::checkBuiltInPlugins()
                         << "org.kde.kreport.text");
     QSet<QString> foundBuiltInPlugins;
     foreach(const QString &pluginId, pluginIds) {
-        KoReportPluginInterface* iface = manager->plugin(pluginId);
+        KReportPluginInterface* iface = manager->plugin(pluginId);
         QVERIFY(iface);
         if (iface->metaData()->isBuiltIn()) {
             foundBuiltInPlugins.insert(pluginId);

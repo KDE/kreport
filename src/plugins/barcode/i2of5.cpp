@@ -27,7 +27,7 @@
 #include <QPen>
 #include <QBrush>
 
-#include "renderobjects.h"
+#include "KReportRenderObjects.h"
 
 const char* _i2of5charmap[] = {
     "NNWWN",

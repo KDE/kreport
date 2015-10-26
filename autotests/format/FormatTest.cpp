@@ -21,18 +21,18 @@
 
 #include "FormatTest.h"
 #include "KReportTestUtils.h"
-#include "KoReportPreRenderer.h"
-#include "KoReportDesigner.h"
+#include "KReportPreRenderer.h"
+#include "KReportDesigner.h"
 #include "KReportLabelElement.h"
-#include "krreportdata.h"
-#include "reportpageoptions.h"
-#include "reportsectiondetail.h"
-#include "reportsection.h"
-#include "krpos.h"
-#include "krsize.h"
-#include "KoReportDesignerItemLine.h"
-#include "KoReportItemLine.h"
-#include "KoReportDesignerItemRectBase.h"
+#include "KReportDocument.h"
+#include "KReportPageOptions.h"
+#include "KReportDesignerSectionDetail.h"
+#include "KReportSection.h"
+#include "KReportPosition.h"
+#include "KReportSize.h"
+#include "KReportDesignerItemLine.h"
+#include "KReportItemLine.h"
+#include "KReportDesignerItemRectBase.h"
 #include "KReportUnit.h"
 #include <KReportDpi>
 #include <KReportDesign>
@@ -92,14 +92,14 @@ void FormatTest::testPageLayout()
 
     //! @todo move this renderer test to a separate place
 #if 0
-    KoReportDesigner designer;
+    KReportDesigner designer;
     QCOMPARE(designer.propertySet()->property("page-size").value().toString(), QLatin1String("A5"));
     QCOMPARE(designer.propertySet()->property("margin-bottom").value().toDouble(), KReportUnit::parseValue("1.5cm"));
     QCOMPARE(designer.propertySet()->property("margin-top").value().toDouble(), KReportUnit::parseValue("2.0cm"));
     QCOMPARE(designer.propertySet()->property("margin-left").value().toDouble(), KReportUnit::parseValue("3.0cm"));
     QCOMPARE(designer.propertySet()->property("margin-right").value().toDouble(), KReportUnit::parseValue("4.0cm"));
 
-    KoReportPreRenderer renderer( designer.document() );
+    KReportPreRenderer renderer( designer.document() );
     renderer.generate();
     ReportPageOptions opt = renderer.reportData()->pageOptions();
 
@@ -125,21 +125,21 @@ void FormatTest::testLineElement()
 #endif
     //! @todo move this renderer test to a separate place
 #if 0
-    KoReportDesigner designer;
+    KReportDesigner designer;
     ReportSectionDetail *ds = designer.detailSection();
     ReportSection *sec = ds->detailSection();
-    KoReportItemLine *l = dynamic_cast<KoReportItemLine*>(sec->items().first());
+    KReportItemLine *l = dynamic_cast<KReportItemLine*>(sec->items().first());
 
     QVERIFY(l != 0);
     QCOMPARE(l->Z, 1.5);
-    KRPos start = l->startPosition();
-    KRPos end = l->endPosition();
+    KReportPosition start = l->startPosition();
+    KReportPosition end = l->endPosition();
     QCOMPARE(start.toPoint(), QPointF(KReportUnit::parseValue("1.5cm"), KReportUnit::parseValue("0.5cm")));
     QCOMPARE(end.toPoint(), QPointF(KReportUnit::parseValue("4.5cm"), KReportUnit::parseValue("2.5cm")));
 
-    KoReportPreRenderer renderer( designer.document() );
+    KReportPreRenderer renderer( designer.document() );
     renderer.generate();
-    l = dynamic_cast<KoReportItemLine*>(renderer.reportData()->object("line1"));
+    l = dynamic_cast<KReportItemLine*>(renderer.reportData()->object("line1"));
 
     QVERIFY(l != 0);
     QCOMPARE(l->Z, 1.5);
@@ -197,23 +197,23 @@ void FormatTest::testLabelElement()
 
     //! @todo move this renderer test to a separate place
 #if 0
-    KoReportDesigner designer;//, doc.documentElement());
+    KReportDesigner designer;//, doc.documentElement());
     ReportSectionDetail *ds = designer.detailSection();
     ReportSection *sec = ds->detailSection();
     QVERIFY(sec->items().count() == 1);
-    KoReportDesignerItemRectBase *rect = dynamic_cast<KoReportDesignerItemRectBase*>(sec->items().first());
+    KReportDesignerItemRectBase *rect = dynamic_cast<KReportDesignerItemRectBase*>(sec->items().first());
 
     QVERIFY(rect != 0);
     QRectF expected( QPointF(KReportUnit::parseValue("1.5cm"), KReportUnit::parseValue("0.5cm")), QSizeF(KReportUnit::parseValue("4.5cm"), KReportUnit::parseValue("0.75cm")));
     QCOMPARE(rect->pointRect(), expected);
 
-    KoReportPreRenderer renderer( designer.document() );
+    KReportPreRenderer renderer( designer.document() );
     renderer.generate();
-    KoReportItemBase *item = dynamic_cast<KoReportItemBase*>(renderer.reportData()->object("label1"));
+    KReportItemBase *item = dynamic_cast<KReportItemBase*>(renderer.reportData()->object("label1"));
 
     QVERIFY(item != 0);
-    KRPos pos = item->position();
-    KRSize size = item->size();
+    KReportPosition pos = item->position();
+    KReportSize size = item->size();
     QCOMPARE(pos.toPoint().x(), KReportUnit::parseValue("1.5cm"));
     QCOMPARE(pos.toPoint().y(), KReportUnit::parseValue("0.5cm"));
     QCOMPARE(size.toPoint(), QSizeF(KReportUnit::parseValue("4.5cm"), KReportUnit::parseValue("0.75cm")));

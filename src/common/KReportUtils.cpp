@@ -19,9 +19,10 @@
 
 #include "KReportUtils.h"
 #include "KReportUnit.h"
-#include "krpos.h"
-#include "krsize.h"
-#include "KoReportItemBase.h"
+#include "KReportPosition.h"
+#include "KReportSize.h"
+#include "KReportItemBase.h"
+#include "KReportLineStyle.h"
 
 #include <KProperty>
 
@@ -355,7 +356,7 @@ void KReportUtils::writeFontAttributes(QDomElement *el, const QFont &font)
 }
 
 
-void KReportUtils::buildXMLRect(QDomElement *entity, KRPos *pos, KRSize *size)
+void KReportUtils::buildXMLRect(QDomElement *entity, KReportPosition *pos, KReportSize *size)
 {
     Q_ASSERT(entity);
     Q_ASSERT(pos);
@@ -378,17 +379,17 @@ void KReportUtils::buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, con
     entity->appendChild(element);
 }
 
-void KReportUtils::buildXMLLineStyle(QDomDocument *doc, QDomElement *entity, const KRLineStyleData &ls)
+void KReportUtils::buildXMLLineStyle(QDomDocument *doc, QDomElement *entity, const KReportLineStyle &ls)
 {
     Q_ASSERT(doc);
     Q_ASSERT(entity);
     QDomElement element = doc->createElement(QLatin1String("report:line-style"));
 
-    element.setAttribute(QLatin1String("report:line-color"), ls.lineColor.name());
-    element.setAttribute(QLatin1String("report:line-weight"), ls.weight);
+    element.setAttribute(QLatin1String("report:line-color"), ls.color().name());
+    element.setAttribute(QLatin1String("report:line-weight"), ls.width());
 
     QString l;
-    switch (ls.style) {
+    switch (ls.penStyle()) {
         case Qt::NoPen:
             l = QLatin1String("nopen");
             break;
@@ -476,33 +477,33 @@ bool KReportUtils::parseReportTextStyleData(const QDomElement & elemSource, KRTe
     return true;
 }
 
-bool KReportUtils::parseReportLineStyleData(const QDomElement & elemSource, KRLineStyleData *ls)
+bool KReportUtils::parseReportLineStyleData(const QDomElement & elemSource, KReportLineStyle *ls)
 {
     Q_ASSERT(ls);
     if (elemSource.tagName() == QLatin1String("report:line-style")) {
-        ls->lineColor = QColor(elemSource.attribute(QLatin1String("report:line-color"), QLatin1String("#ffffff")));
-        ls->weight = elemSource.attribute(QLatin1String("report:line-weight"), QLatin1String("0")).toInt();
+        ls->setColor(QColor(elemSource.attribute(QLatin1String("report:line-color"), QLatin1String("#ffffff"))));
+        ls->setWidth(elemSource.attribute(QLatin1String("report:line-weight"), QLatin1String("0")).toInt());
 
         QString l = elemSource.attribute(QLatin1String("report:line-style"), QLatin1String("nopen"));
         if (l == QLatin1String("nopen")) {
-            ls->style = Qt::NoPen;
+            ls->setPenStyle(Qt::NoPen);
         } else if (l == QLatin1String("solid")) {
-            ls->style = Qt::SolidLine;
+            ls->setPenStyle(Qt::SolidLine);
         } else if (l == QLatin1String("dash")) {
-            ls->style = Qt::DashLine;
+            ls->setPenStyle(Qt::DashLine);
         } else if (l == QLatin1String("dot")) {
-            ls->style = Qt::DotLine;
+            ls->setPenStyle(Qt::DotLine);
         } else if (l == QLatin1String("dashdot")) {
-            ls->style = Qt::DashDotLine;
+            ls->setPenStyle(Qt::DashDotLine);
         } else if (l == QLatin1String("dashdotdot")) {
-            ls->style = Qt::DashDotDotLine;
+            ls->setPenStyle(Qt::DashDotDotLine);
         }
         return true;
     }
     return false;
 }
 
-bool KReportUtils::parseReportRect(const QDomElement & elemSource, KRPos *pos, KRSize *size)
+bool KReportUtils::parseReportRect(const QDomElement & elemSource, KReportPosition *pos, KReportSize *size)
 {
     Q_ASSERT(pos);
     Q_ASSERT(size);

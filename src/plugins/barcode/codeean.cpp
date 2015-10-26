@@ -27,7 +27,7 @@
 #include <QPen>
 #include <QBrush>
 
-#include "renderobjects.h"
+#include "KReportRenderObjects.h"
 
 static const int LEFTHAND_ODD = 0;
 static const int LEFTHAND_EVEN = 1;

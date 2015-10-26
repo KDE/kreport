@@ -26,7 +26,7 @@
 #include <KoStore.h>
 #include <KoStoreDevice.h>
 
-#include "renderobjects.h"
+#include "KReportRenderObjects.h"
 
 #include <QPainter>
 #include <QPen>

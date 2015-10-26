@@ -20,12 +20,12 @@
 #ifndef KREPORTEXAMPLEDATA_H
 #define KREPORTEXAMPLEDATA_H
 
-#include <KoReportData.h>
+#include <KReportData>
 #include <QVariant>
 #include <QStringList>
 #include <QList>
 
-class KReportExampleData : public KoReportData
+class KReportExampleData : public KReportData
 {
 public:
     KReportExampleData();

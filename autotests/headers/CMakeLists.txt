@@ -20,44 +20,44 @@ add_custom_command(
 add_executable(
     HeadersTest
     HeadersTest.cpp
-    KoReportASyncItemBase_HeaderTest.cpp
-    KoReportData_HeaderTest.cpp
-    KoReportDesigner_HeaderTest.cpp
-    KoReportDesignerItemBase_HeaderTest.cpp
-    KoReportDesignerItemRectBase_HeaderTest.cpp
-    KoReportItemBase_HeaderTest.cpp
-    KoReportItemLine_HeaderTest.cpp
-    KoReportPage_HeaderTest.cpp
-    KoReportPluginInterface_HeaderTest.cpp
-    KoReportPluginManager_HeaderTest.cpp
-    KoReportPreRenderer_HeaderTest.cpp
-    KoReportRendererBase_HeaderTest.cpp
+    KReportAsyncItemBase_HeaderTest.cpp
+    KReportData_HeaderTest.cpp
     KReportDesign_HeaderTest.cpp
+    KReportDesigner_HeaderTest.cpp
+    KReportDesignerItemBase_HeaderTest.cpp
+    KReportDesignerItemRectBase_HeaderTest.cpp
+    KReportDesignerSection_HeaderTest.cpp
+    KReportDesignerSectionDetail_HeaderTest.cpp
+    KReportDesignerSectionDetailGroup_HeaderTest.cpp
+    KReportDocument_HeaderTest.cpp
     KReportDpi_HeaderTest.cpp
     KReportElement_HeaderTest.cpp
-    kreportgrouptracker_HeaderTest.cpp
+    KReportGroupTracker_HeaderTest.cpp
+    KReportItemBase_HeaderTest.cpp
+    KReportItemLine_HeaderTest.cpp
     KReportLabelElement_HeaderTest.cpp
     KReportLineStyle_HeaderTest.cpp
+    KReportPage_HeaderTest.cpp
     KReportPageFormat_HeaderTest.cpp
+    KReportPageOptions_HeaderTest.cpp
+    KReportPluginInterface_HeaderTest.cpp
+    KReportPluginManager_HeaderTest.cpp
     KReportPluginMetaData_HeaderTest.cpp
+    KReportPosition_HeaderTest.cpp
+    KReportPreRenderer_HeaderTest.cpp
+    KReportRendererBase_HeaderTest.cpp
+    KReportRenderObjects_HeaderTest.cpp
+    KReportScriptConstants_HeaderTest.cpp
+    KReportScriptDraw_HeaderTest.cpp
+    KReportScriptHandler_HeaderTest.cpp
     KReportSection_HeaderTest.cpp
+    KReportSectionData_HeaderTest.cpp
+    KReportSize_HeaderTest.cpp
     KReportUnit_HeaderTest.cpp
     KReportUtils_HeaderTest.cpp
     KReportView_HeaderTest.cpp
     KReportZoomHandler_HeaderTest.cpp
     KReportZoomMode_HeaderTest.cpp
-    krpos_HeaderTest.cpp
-    krreportdata_HeaderTest.cpp
-    krscriptconstants_HeaderTest.cpp
-    krscriptdraw_HeaderTest.cpp
-    krscripthandler_HeaderTest.cpp
-    krsectiondata_HeaderTest.cpp
-    krsize_HeaderTest.cpp
-    renderobjects_HeaderTest.cpp
-    reportpageoptions_HeaderTest.cpp
-    reportsection_HeaderTest.cpp
-    reportsectiondetail_HeaderTest.cpp
-    reportsectiondetailgroup_HeaderTest.cpp
     config-kreport.h_HeaderTest.cpp
     KReportElement.h_HeaderTest.cpp
     kreport_export.h_HeaderTest.cpp

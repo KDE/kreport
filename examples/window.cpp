@@ -18,7 +18,7 @@
 */
 
 #include "window.h"
-#include <renderobjects.h>
+#include <KReportRenderObjects>
 
 #include <QApplication>
 #include <QFile>
@@ -26,8 +26,8 @@
 #include <QMenu>
 #include <QMenuBar>
 
-#include <KoReportPluginManager>
-#include <KoReportRendererBase.h>
+#include <KReportPluginManager>
+#include <KReportRendererBase>
 
 Window::Window()
     : QMainWindow()
@@ -39,7 +39,7 @@ Window::Window()
 
 #if 0
     if (loadDocument()) {
-        m_preRenderer = new KoReportPreRenderer(m_document.documentElement());
+        m_preRenderer = new KReportPreRenderer(m_document.documentElement());
         if (!m_preRenderer->isValid()) {
             return;
         }
@@ -47,7 +47,7 @@ Window::Window()
 #endif
 
     m_testData = new KReportExampleData();
-    KoReportPluginManager* manager = KoReportPluginManager::self();
+    KReportPluginManager* manager = KReportPluginManager::self();
     //! @todo
     Q_UNUSED(manager);
 }
@@ -90,7 +90,7 @@ void Window::createMenus()
 void Window::showDesign(const QDomElement &design)
 {
     qDebug() << "Show design";
-    KoReportPreRenderer preRenderer(design);
+    KReportPreRenderer preRenderer(design);
     if (!preRenderer.isValid()) {
         return;
     }

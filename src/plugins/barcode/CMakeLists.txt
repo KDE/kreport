@@ -1,10 +1,10 @@
-ecm_create_qm_loader(koreport_barcodeplugin_QM_LOADER kreport_barcodeplugin_qt)
+ecm_create_qm_loader(kreport_barcodeplugin_QM_LOADER kreport_barcodeplugin_qt)
 
 set(kreport_barcodeplugin_LIB_SRCS
     ${PROJECT_SOURCE_DIR}/src/common/kreportplugin_debug.cpp
-    KoReportItemBarcode.cpp
-    KoReportDesignerItemBarcode.cpp
-    krscriptbarcode.cpp
+    KReportItemBarcode.cpp
+    KReportDesignerItemBarcode.cpp
+    KReportScriptBarcode.cpp
     3of9.cpp
     i2of5.cpp
     code128.cpp
@@ -15,8 +15,8 @@ set(kreport_barcodeplugin_LIB_SRCS
     ext3of9paint.cpp
     codeeanpaint.cpp
     code128paint.cpp
-    KoReportBarcodePlugin.cpp
-    ${koreport_barcodeplugin_QM_LOADER}
+    KReportBarcodePlugin.cpp
+    ${kreport_barcodeplugin_QM_LOADER}
 )
 
 add_library(kreport_barcodeplugin MODULE ${kreport_barcodeplugin_LIB_SRCS})

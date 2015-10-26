@@ -8,7 +8,7 @@ remove_definitions(
     -DQT_NO_CAST_FROM_ASCII
 )
 
-add_definitions(-DKREPORTEXAMPLE_DATA_DIR="${CMAKE_CURRENT_SOURCE_DIR}")
+add_definitions(-DKREPORTEXAMPLE_DATA_DIR="\\"${CMAKE_CURRENT_SOURCE_DIR}\\"")
 
 set(kreportexample_SRCS main.cpp
         window.cpp

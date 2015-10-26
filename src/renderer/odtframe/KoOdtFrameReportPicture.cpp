@@ -18,7 +18,7 @@
 */
 
 #include "KoOdtFrameReportPicture.h"
-#include "renderobjects.h"
+#include "KReportRenderObjects.h"
 
 #include <KoXmlWriter.h>
 #include <KoOdfGraphicStyles.h>

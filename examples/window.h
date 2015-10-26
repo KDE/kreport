@@ -26,9 +26,9 @@
 #include <QDomDocument>
 #include <QAction>
 
-#include <KoReportPreRenderer>
-#include <KoReportPage.h>
-#include <KReportView.h>
+#include <KReportPreRenderer>
+#include <KReportPage>
+#include <KReportView>
 
 /*! @short KReportExample application's main window */
 class Window : public QMainWindow

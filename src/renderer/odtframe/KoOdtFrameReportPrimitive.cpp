@@ -18,7 +18,7 @@
 */
 
 #include "KoOdtFrameReportPrimitive.h"
-#include "renderobjects.h"
+#include "KReportRenderObjects.h"
 
 #include <KoXmlWriter.h>
 #include <KReportDpi.h>

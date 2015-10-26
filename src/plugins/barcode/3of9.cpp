@@ -21,7 +21,7 @@
  * All this code assumes a 100dpi rendering surface for it's calculations.
  */
 
-#include "renderobjects.h"
+#include "KReportRenderObjects.h"
 
 #include <QString>
 #include <QRectF>

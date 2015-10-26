@@ -20,8 +20,8 @@
 #include "KReportDesign_p.h"
 #include "KReportElement.h"
 #include "KReportUtils.h"
-#include "KoReportPluginManager.h"
-#include "KoReportPluginInterface.h"
+#include "KReportPluginManager.h"
+#include "KReportPluginInterface.h"
 
 #include <QDebug>
 #include <QDomDocument>
@@ -174,11 +174,11 @@ KReportSection KReportDesign::Private::processSectionElement(const QDomElement &
     return section;
 }
 
-KoReportPluginInterface* KReportDesign::Private::findPlugin(const QString &typeName,
+KReportPluginInterface* KReportDesign::Private::findPlugin(const QString &typeName,
                                                             const QDomElement &el,
                                                             KReportDesignReadingStatus *status)
 {
-    KoReportPluginInterface* plugin = KoReportPluginManager::self()->plugin(typeName);
+    KReportPluginInterface* plugin = KReportPluginManager::self()->plugin(typeName);
     if (!plugin) {
         setStatus(status, QString::fromLatin1("No such plugin \"%1\"").arg(typeName), el);
         return 0;
@@ -198,7 +198,7 @@ KReportElement KReportDesign::Private::processSectionElementChild(const QDomElem
     }
     const QByteArray reportElementName = name.mid(qstrlen(elNamespace));
     qDebug() << "Found Report Element:" << reportElementName;
-    KoReportPluginInterface *plugin = findPlugin(QLatin1String(reportElementName), el, status);
+    KReportPluginInterface *plugin = findPlugin(QLatin1String(reportElementName), el, status);
     if (!plugin) {
         return KReportElement();
     }
@@ -302,9 +302,9 @@ bool KReportDesign::Private::processBodyElementChild(const QDomElement &el,
         }
         q->addSection(section);
 #if 0 //TODO
-        if (section(KRSectionData::sectionTypeFromString(sectiontype)) == 0) {
-            insertSection(KRSectionData::sectionTypeFromString(sectiontype));
-            section(KRSectionData::sectionTypeFromString(sectiontype))->initFromXML(sec);
+        if (section(KReportSectionData::sectionTypeFromString(sectiontype)) == 0) {
+            insertSection(KReportSectionData::sectionTypeFromString(sectiontype));
+            section(KReportSectionData::sectionTypeFromString(sectiontype))->initFromXML(sec);
         }
 #endif
     } else if (name == "report:detail") {

@@ -13,22 +13,22 @@ add_subdirectory(pics)
 set(kreport_LIB_SRCS
     common/kreport_debug.cpp
     common/kreportplugin_debug.cpp
-    common/krpos.cpp
-    common/krsize.cpp
-    common/KoReportItemBase.cpp
-    common/KoReportASyncItemBase.cpp
-    common/krsectiondata.cpp
-    common/labelsizeinfo.cpp
-    common/reportpageoptions.cpp
-    common/krreportdata.cpp
-    common/krdetailsectiondata.cpp
-    common/KoReportPluginInterface.cpp
-    common/KoReportItemLine.cpp
-    common/renderobjects.cpp
-    common/KoReportPluginManager.cpp
+    common/KReportPosition.cpp
+    common/KReportSize.cpp
+    common/KReportItemBase.cpp
+    common/KReportAsyncItemBase.cpp
+    common/KReportSectionData.cpp
+    common/KReportLabelSizeInfo.cpp
+    common/KReportPageOptions.cpp
+    common/KReportDocument.cpp
+    common/KReportDetailSectionData.cpp
+    common/KReportPluginInterface.cpp
+    common/KReportItemLine.cpp
+    common/KReportRenderObjects.cpp
+    common/KReportPluginManager.cpp
     common/KReportJsonTrader_p.cpp
     common/KReportPluginMetaData.cpp
-    common/KoReportData.cpp
+    common/KReportData.cpp
     common/KReportUtils.cpp
     common/KReportPageFormat.cpp
     common/KReportUnit.cpp
@@ -39,69 +39,69 @@ set(kreport_LIB_SRCS
     ${PROJECT_BINARY_DIR}/src/KReportElement_sdc.cpp
     common/KReportSection.cpp
 
-    renderer/KoReportPrintRenderer.cpp
-    renderer/KoReportPreRenderer.cpp
-    renderer/KoReportASyncItemManager.cpp
-    renderer/KoReportScreenRenderer.cpp
-    renderer/KoReportHTMLTableRenderer.cpp
-    renderer/KoReportHTMLCSSRenderer.cpp
-    #TODO renderer/KoReportKSpreadRenderer.cpp
-    #TODO renderer/KoReportODTRenderer.cpp
-    #TODO renderer/KoOdtFrameReportRenderer.cpp
-    renderer/KoReportRendererBase.cpp
-    renderer/KoReportPage.cpp
+    renderer/KReportPrintRenderer_p.cpp
+    renderer/KReportPreRenderer.cpp
+    renderer/KReportAsyncItemManager_p.cpp
+    renderer/KReportScreenRenderer_p.cpp
+    renderer/KReportHTMLTableRenderer_p.cpp
+    renderer/KReportHTMLCSSRenderer_p.cpp
+    #TODO renderer/KReportKSpreadRenderer.cpp
+    #TODO renderer/KReportODTRenderer.cpp
+    #TODO renderer/KOdtFrameReportRenderer.cpp
+    renderer/KReportRendererBase.cpp
+    renderer/KReportPage.cpp
     renderer/KReportView.cpp
-    renderer/KReportOneRecordData.cpp
+    renderer/KReportOneRecordData_p.cpp
 
-    wrtembed/detailgroupsectiondialog.cpp
-    wrtembed/KoReportDesignerItemBase.cpp
-    wrtembed/KoReportDesignerItemRectBase.cpp
-    wrtembed/KoReportDesignerItemLine.cpp
-    wrtembed/reportsection.cpp
-    wrtembed/reportsectiondetailgroup.cpp
-    wrtembed/reportsectiondetail.cpp
-    wrtembed/reportscene.cpp
-    wrtembed/reportsceneview.cpp
-    wrtembed/KoReportDesigner.cpp
-    wrtembed/reportpropertiesbutton.cpp
-    wrtembed/sectioneditor.cpp
+    wrtembed/KReportDetailGroupSectionDialog.cpp
+    wrtembed/KReportDesignerItemBase.cpp
+    wrtembed/KReportDesignerItemRectBase.cpp
+    wrtembed/KReportDesignerItemLine.cpp
+    wrtembed/KReportDesignerSection.cpp
+    wrtembed/KReportDesignerSectionDetailGroup.cpp
+    wrtembed/KReportDesignerSectionDetail.cpp
+    wrtembed/KReportDesignerScene.cpp
+    wrtembed/KReportDesignerView.cpp
+    wrtembed/KReportDesigner.cpp
+    wrtembed/KReportPropertiesButton.cpp
+    wrtembed/KReportSectionEditor.cpp
     wrtembed/KReportDpi.cpp
     wrtembed/KReportRuler.cpp
     wrtembed/KReportZoomHandler.cpp
     wrtembed/KReportZoomMode.cpp
 
-    items/label/KoReportItemLabel.cpp
-    items/label/KoReportDesignerItemLabel.cpp
-    items/label/KoReportLabelPlugin.cpp
-    items/label/BoundedTextItem.cpp
+    items/label/KReportItemLabel.cpp
+    items/label/KReportDesignerItemLabel.cpp
+    items/label/KReportLabelPlugin.cpp
+    items/label/KReportBoundedTextItem.cpp
     items/label/KReportLabelElement.cpp
 
-    items/check/KoReportItemCheck.cpp
-    items/check/KoReportDesignerItemCheck.cpp
-    items/check/KoReportCheckPlugin.cpp
+    items/check/KReportItemCheck.cpp
+    items/check/KReportDesignerItemCheckBox.cpp
+    items/check/KReportCheckBoxPlugin.cpp
 
-    items/field/KoReportItemField.cpp
-    items/field/KoReportDesignerItemField.cpp
-    items/field/KoReportFieldPlugin.cpp
+    items/field/KReportItemField.cpp
+    items/field/KReportDesignerItemField.cpp
+    items/field/KReportFieldPlugin.cpp
 
-    items/image/KoReportItemImage.cpp
-    items/image/KoReportDesignerItemImage.cpp
-    items/image/KoReportImagePlugin.cpp
+    items/image/KReportItemImage.cpp
+    items/image/KReportDesignerItemImage.cpp
+    items/image/KReportImagePlugin.cpp
 
-    items/text/KoReportItemText.cpp
-    items/text/KoReportDesignerItemText.cpp
-    items/text/KoReportTextPlugin.cpp
+    items/text/KReportItemText.cpp
+    items/text/KReportDesignerItemText.cpp
+    items/text/KReportTextPlugin.cpp
 )
 
 if(KREPORT_SCRIPTING)
     list(APPEND kreport_LIB_SRCS
-        renderer/scripting/krscripthandler.cpp
-        renderer/scripting/krscriptconstants.cpp
-        renderer/scripting/krscriptdebug.cpp
-        renderer/scripting/krscriptdraw.cpp
-        renderer/scripting/krscriptreport.cpp
-        renderer/scripting/krscriptsection.cpp
-        renderer/scripting/krscriptline.cpp
+        renderer/scripting/KReportScriptHandler.cpp
+        renderer/scripting/KReportScriptConstants.cpp
+        renderer/scripting/KReportScriptDebug.cpp
+        renderer/scripting/KReportScriptDraw.cpp
+        renderer/scripting/KReportScriptReport.cpp
+        renderer/scripting/KReportScriptSection.cpp
+        renderer/scripting/KReportScriptLine.cpp
 
         #renderer/odtframe/KoOdtFrameReportDocument.cpp
         #renderer/odtframe/KoOdtFrameReportCheckBox.cpp
@@ -115,21 +115,21 @@ if(KREPORT_SCRIPTING)
         #renderer/ods/KoSimpleOdsSheet.cpp
         #renderer/ods/KoSimpleOdsCell.cpp
 
-        items/label/krscriptlabel.cpp
-        items/check/KoReportScriptCheck.cpp
-        items/field/krscriptfield.cpp
-        items/image/krscriptimage.cpp
-        items/text/krscripttext.cpp
+        items/label/KReportScriptLabel.cpp
+        items/check/KReportScriptCheck.cpp
+        items/field/KReportScriptField.cpp
+        items/image/KReportScriptImage.cpp
+        items/text/KReportScriptText.cpp
     )
 endif()
 
 qt5_wrap_ui(kreport_LIB_SRCS
-    wrtembed/detailgroupsectiondialog.ui
-    wrtembed/sectioneditor.ui
+    wrtembed/KReportDetailGroupSectionDialog.ui
+    wrtembed/KReportSectionEditor.ui
 )
 
 qt_wrap_cpp(KReport kreport_LIB_SRCS
-    renderer/scripting/kreportgrouptracker.h
+    renderer/scripting/KReportGroupTracker.h
     )
 
 ecm_create_qm_loader(kreport_LIB_SRCS kreport_qt)
@@ -241,8 +241,7 @@ kcoreaddons_desktop_to_json(KReport items/image/image.desktop)
 kcoreaddons_desktop_to_json(KReport items/label/label.desktop)
 kcoreaddons_desktop_to_json(KReport items/text/text.desktop)
 
-#TODO
-#install(FILES  koreport_itemplugin.desktop  DESTINATION ${SERVICETYPES_INSTALL_DIR})
+install(FILES kreport_elementplugin.desktop  DESTINATION ${SERVICETYPES_INSTALL_DIR})
 
 install(FILES "${CMAKE_CURRENT_BINARY_DIR}/kreport_version.h"
         DESTINATION "${INCLUDE_INSTALL_DIR}"
@@ -254,22 +253,22 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
     RELATIVE common
     HEADER_NAMES
         KReportPageFormat
-        KoReportData
-        KoReportItemBase
-        KoReportItemLine
+        KReportData
+        KReportItemBase
+        KReportItemLine
         KReportPluginMetaData
-        KoReportPluginManager
-        KoReportPluginInterface
+        KReportPluginManager
+        KReportPluginInterface
         KReportUnit
         KReportUtils
         KReportDesign
-        krsize
-        krpos
-        krreportdata
-        krsectiondata
-        reportpageoptions
-        renderobjects
-        KoReportASyncItemBase
+        KReportSize
+        KReportPosition
+        KReportDocument
+        KReportSectionData
+        KReportPageOptions
+        KReportRenderObjects
+        KReportAsyncItemBase
 )
 
 ecm_generate_headers(kreport_FORWARDING_HEADERS
@@ -277,9 +276,9 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
     ORIGINAL CAMELCASE
     RELATIVE renderer
     HEADER_NAMES
-        KoReportPage
-        KoReportRendererBase
-        KoReportPreRenderer
+        KReportPage
+        KReportRendererBase
+        KReportPreRenderer
         KReportView
 )
 
@@ -288,10 +287,10 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
     ORIGINAL CAMELCASE
     RELATIVE renderer/scripting
     HEADER_NAMES
-        krscripthandler
-        krscriptdraw
-        krscriptconstants
-        kreportgrouptracker
+        KReportScriptHandler
+        KReportScriptDraw
+        KReportScriptConstants
+        KReportGroupTracker
 )
 
 ecm_generate_headers(kreport_FORWARDING_HEADERS
@@ -300,14 +299,14 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
     RELATIVE wrtembed
     HEADER_NAMES
         KReportZoomMode
-        reportsectiondetail
-        reportsection
+        KReportDesignerSectionDetail
+        KReportDesignerSection
         KReportDpi
         KReportZoomHandler
-        KoReportDesignerItemBase
-        reportsectiondetailgroup
-        KoReportDesignerItemRectBase
-        KoReportDesigner
+        KReportDesignerItemBase
+        KReportDesignerSectionDetailGroup
+        KReportDesignerItemRectBase
+        KReportDesigner
 )
 
 ecm_generate_headers(kreport_FORWARDING_HEADERS_FROM_BUILDDIR

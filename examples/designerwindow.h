@@ -27,7 +27,7 @@
 #include <KPropertySet>
 
 class QScrollArea;
-class KoReportDesigner;
+class KReportDesigner;
 
 /*! @short KReportExample application's design window */
 class DesignerWindow : public QMainWindow
@@ -48,7 +48,7 @@ private Q_SLOTS:
 
 private:
     QScrollArea * m_scrollArea;
-    KoReportDesigner *m_reportDesigner;
+    KReportDesigner *m_reportDesigner;
     KPropertySet *m_propertySet;
 
     QToolBar *m_mainToolbar;
