@@ -62,7 +62,7 @@ KReportPreRendererPrivate::KReportPreRendererPrivate()
 
 KReportPreRendererPrivate::~KReportPreRendererPrivate()
 {
-    delete m_document;
+    delete m_reportDocument;
     delete m_oneRecord;
 
     m_postProcText.clear();
