@@ -2,3 +2,8 @@
 Type=ServiceType
 X-KDE-ServiceType=KReport/Element
 Comment=KReport Element Plugin
+Comment[pt]='Plugin' de Elemento do KReport
+Comment[pt_BR]=Plugin de elemento do KReport
+Comment[sv]=Insticksprogram för Kreport-element
+Comment[uk]=Додаток елементів KReport
+Comment[x-test]=xxKReport Element Pluginxx
