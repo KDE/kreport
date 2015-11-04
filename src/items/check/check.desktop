@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Check box
 Name[ca]=Casella de selecció
+Name[ca@valencia]=Casella de selecció
 Name[de]=Ankreuzfeld
 Name[es]=Casilla de verificación
 Name[fi]=Valintaruutu
@@ -18,6 +19,7 @@ Name[uk]=Пункт позначки
 Name[x-test]=xxCheck boxxx
 Comment=Check box element for Reports
 Comment[ca]=Element de casella de selecció per informes
+Comment[ca@valencia]=Element de casella de selecció per informes
 Comment[de]=Ankreuzelement für Berichte
 Comment[es]=Elemento de casilla de verificación para informes
 Comment[fi]=Valintaruutuelementti raportteihin

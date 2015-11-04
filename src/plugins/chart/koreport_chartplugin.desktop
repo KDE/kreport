@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Chart
 Name[ca]=Gràfic
+Name[ca@valencia]=Gràfic
 Name[fi]=Kaavio
 Name[gl]=Gráfica
 Name[nl]=Grafiek
@@ -12,6 +13,7 @@ Name[uk]=Діаграма
 Name[x-test]=xxChartxx
 Comment=Chart element for Reports
 Comment[ca]=Element de gràfic per informes
+Comment[ca@valencia]=Element de gràfic per informes
 Comment[fi]=Kaavioelementti raportteihin
 Comment[gl]=Gráfica para informes.
 Comment[nl]=Grafiekelement voor rapporten

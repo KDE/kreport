@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Text
 Name[ca]=Text
+Name[ca@valencia]=Text
 Name[de]=Text
 Name[es]=Texto
 Name[fi]=Teksti
@@ -20,6 +21,7 @@ Name[x-test]=xxTextxx
 Name[zh_CN]=文本
 Comment=Text element for Reports
 Comment[ca]=Element de text per informes
+Comment[ca@valencia]=Element de text per informes
 Comment[de]=Textelement für Berichte
 Comment[es]=Elemento de texto para informes
 Comment[fi]=Tekstielementti raportteihin

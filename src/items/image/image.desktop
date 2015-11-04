@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Image
 Name[ca]=Imatge
+Name[ca@valencia]=Imatge
 Name[de]=Bild
 Name[es]=Imagen
 Name[fi]=Kuva
@@ -18,6 +19,7 @@ Name[uk]=Зображення
 Name[x-test]=xxImagexx
 Comment=Image element for Reports
 Comment[ca]=Element d'imatge per informes
+Comment[ca@valencia]=Element d'imatge per informes
 Comment[de]=Bildelement für Berichte
 Comment[es]=Elemento de imagen para informes
 Comment[fi]=Kuvaelementti raportteihin

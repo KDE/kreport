@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Maps
 Name[ca]=Mapes
+Name[ca@valencia]=Mapes
 Name[de]=Karten
 Name[es]=Mapas
 Name[fi]=Kartta
@@ -19,6 +20,7 @@ Name[x-test]=xxMapsxx
 Name[zh_CN]=地图
 Comment=Maps element for Reports
 Comment[ca]=Element de mapes per informes
+Comment[ca@valencia]=Element de mapes per informes
 Comment[de]=Kartenelement für Berichte
 Comment[es]=Elemento de mapas para informes
 Comment[fi]=Karttaelementti raportteihin

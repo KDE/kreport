@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Barcode
 Name[ca]=Codi de barres
+Name[ca@valencia]=Codi de barres
 Name[de]=Strichcode
 Name[es]=Código de barras
 Name[fi]=Viivakoodi
@@ -18,6 +19,7 @@ Name[uk]=Штрихкод
 Name[x-test]=xxBarcodexx
 Comment=Barcode element for Reports
 Comment[ca]=Element de codi de barres per informes
+Comment[ca@valencia]=Element de codi de barres per informes
 Comment[de]=Strichcode-Element für Berichte
 Comment[es]=Elemento de código de barras para informes
 Comment[fi]=Viivakoodielementti raportteihin

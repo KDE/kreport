@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Label
 Name[ca]=Etiqueta
+Name[ca@valencia]=Etiqueta
 Name[de]=Beschriftung
 Name[es]=Etiqueta
 Name[fi]=Selite
@@ -18,6 +19,7 @@ Name[uk]=Мітка
 Name[x-test]=xxLabelxx
 Comment=Label element for Reports
 Comment[ca]=Element d'etiqueta per informes
+Comment[ca@valencia]=Element d'etiqueta per informes
 Comment[de]=Beschriftungs-Element für Berichte
 Comment[es]=Elemento de etiqueta para informes
 Comment[fi]=Selite-elementti raportteihin

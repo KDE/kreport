@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Field
 Name[ca]=Camp
+Name[ca@valencia]=Camp
 Name[de]=Feld
 Name[es]=Campo
 Name[fi]=Kenttä
@@ -18,6 +19,7 @@ Name[uk]=Поле
 Name[x-test]=xxFieldxx
 Comment=Field element for Reports
 Comment[ca]=Element de camp per informes
+Comment[ca@valencia]=Element de camp per informes
 Comment[de]=Feldelement für Berichte
 Comment[es]=Elemento de campo para informes
 Comment[fi]=Kenttäelementti raporteille
