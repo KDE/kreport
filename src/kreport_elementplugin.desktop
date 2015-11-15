@@ -4,6 +4,7 @@ X-KDE-ServiceType=KReport/Element
 Comment=KReport Element Plugin
 Comment[ca]=Connector de l'element KReport
 Comment[ca@valencia]=Connector de l'element KReport
+Comment[es]=Complemento de elemento de KReport
 Comment[fi]=KReportin elementtiliitännäinen
 Comment[gl]=Complemento de elementos de KReport.
 Comment[nl]=Plug-in voor KReport-element
