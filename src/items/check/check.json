@@ -1,0 +1,60 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "kexi@kde.org",
+                "Name": "Kexi Team"
+            }
+        ],
+        "Category": "",
+        "Dependencies": [
+        ],
+        "Description": "Check box element for Reports",
+        "Description[ca@valencia]": "Element de casella de selecció per informes",
+        "Description[ca]": "Element de casella de selecció per informes",
+        "Description[de]": "Ankreuzelement für Berichte",
+        "Description[es]": "Elemento de casilla de verificación para informes",
+        "Description[fi]": "Valintaruutuelementti raportteihin",
+        "Description[gl]": "Caixa de verificación para informes.",
+        "Description[hu]": "Jelölőnégyzet elem jelentésekhez",
+        "Description[it]": "Elemento casella di spunta per i rapporti",
+        "Description[nl]": "Keuzevakje-element voor rapporten",
+        "Description[pl]": "Element pora wyboru dla raportów",
+        "Description[pt]": "Elemento de marcação dos Relatórios",
+        "Description[pt_BR]": "Elemento Caixa de verificação para Relatórios",
+        "Description[sk]": "Prvok zaškrtávacieho políčka pre Reports",
+        "Description[sv]": "Element med kryssruta för rapporter",
+        "Description[tr]": "Raporlar için onay kutusu ögesi",
+        "Description[uk]": "Елемент пункту позначки для звітів",
+        "Description[x-test]": "xxCheck box element for Reportsxx",
+        "EnabledByDefault": true,
+        "Icon": "kreport_checkbox_element",
+        "Id": "org.kde.kreport.checkbox",
+        "License": "LGPL",
+        "Name": "Check box",
+        "Name[ca@valencia]": "Casella de selecció",
+        "Name[ca]": "Casella de selecció",
+        "Name[de]": "Ankreuzfeld",
+        "Name[es]": "Casilla de verificación",
+        "Name[fi]": "Valintaruutu",
+        "Name[gl]": "Caixa de verificación",
+        "Name[hu]": "Jelölőnégyzet",
+        "Name[it]": "Casella di spunta",
+        "Name[nl]": "Keuzevakje",
+        "Name[pl]": "Pole wyboru",
+        "Name[pt]": "Opção de marcação",
+        "Name[pt_BR]": "Caixa de verificação",
+        "Name[sk]": "Zaškrtávacie políčko",
+        "Name[sv]": "Kryssruta",
+        "Name[tr]": "Onay kutusu",
+        "Name[uk]": "Пункт позначки",
+        "Name[x-test]": "xxCheck boxxx",
+        "ServiceTypes": [
+            "KReport/Element"
+        ],
+        "Version": "1.0",
+        "Website": "http://kexi-project.org"
+    },
+    "X-KDE-PluginInfo-LegacyName": "check",
+    "X-KReport-Priority": "5"
+}

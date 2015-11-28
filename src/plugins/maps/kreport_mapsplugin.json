@@ -1,0 +1,61 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "kexi@kde.org",
+                "Name": "Kexi Team"
+            }
+        ],
+        "Category": "",
+        "Dependencies": [
+        ],
+        "Description": "Maps element for Reports",
+        "Description[ca@valencia]": "Element de mapes per informes",
+        "Description[ca]": "Element de mapes per informes",
+        "Description[de]": "Kartenelement für Berichte",
+        "Description[es]": "Elemento de mapas para informes",
+        "Description[fi]": "Karttaelementti raportteihin",
+        "Description[gl]": "Elemento de mapas para informes.",
+        "Description[hu]": "Térkép elem jelentésekhez",
+        "Description[it]": "Elemento Mappe per i rapporti",
+        "Description[nl]": "Kaartelement voor rapporten",
+        "Description[pl]": "Element mapy dla raportów",
+        "Description[pt]": "Elemento de Mapas dos Relatórios",
+        "Description[pt_BR]": "Elemento Mapas para Relatórios",
+        "Description[sk]": "Prvok máp pre Reports",
+        "Description[sv]": "Kartelement för rapporter",
+        "Description[tr]": "Raporlar için haritalar ögesi",
+        "Description[uk]": "Елемент карти для звітів",
+        "Description[x-test]": "xxMaps element for Reportsxx",
+        "EnabledByDefault": true,
+        "Icon": "report_maps_element",
+        "Id": "org.kde.kreport.maps",
+        "License": "LGPL",
+        "Name": "Maps",
+        "Name[ca@valencia]": "Mapes",
+        "Name[ca]": "Mapes",
+        "Name[de]": "Karten",
+        "Name[es]": "Mapas",
+        "Name[fi]": "Kartta",
+        "Name[gl]": "Mapas",
+        "Name[hu]": "Térképek",
+        "Name[it]": "Mappe",
+        "Name[nl]": "Kaarten",
+        "Name[pl]": "Mapy",
+        "Name[pt]": "Mapas",
+        "Name[pt_BR]": "Mapas",
+        "Name[sk]": "Mapy",
+        "Name[sv]": "Kartor",
+        "Name[tr]": "Haritalar",
+        "Name[uk]": "Карти",
+        "Name[x-test]": "xxMapsxx",
+        "Name[zh_CN]": "地图",
+        "ServiceTypes": [
+            "KReport/Element"
+        ],
+        "Version": "1.0",
+        "Website": "http://kexi-project.org"
+    },
+    "X-KDE-PluginInfo-LegacyName": "maps",
+    "X-KReport-Priority": "50"
+}

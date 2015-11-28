@@ -1,22 +1,23 @@
-ecm_create_qm_loader(koreport_chartplugin_QM_LOADER kreport_chartplugin_qt)
+ecm_create_qm_loader(kreport_chartplugin_QM_LOADER kreport_chartplugin_qt)
 
-set(koreport_chartplugin_LIB_SRCS
+set(kreport_chartplugin_LIB_SRCS
     ${PROJECT_SOURCE_DIR}/src/common/kreportplugin_debug.cpp
     KReportItemChart.cpp
     KReportDesignerItemChart.cpp
     KReportScriptChart.cpp
     KReportChartPlugin.cpp
-    ${koreport_chartplugin_QM_LOADER}
+    ${kreport_chartplugin_QM_LOADER}
 )
 
-add_library(koreport_chartplugin MODULE ${koreport_chartplugin_LIB_SRCS})
+add_library(kreport_chartplugin MODULE ${kreport_chartplugin_LIB_SRCS})
 
-target_link_libraries(koreport_chartplugin
-    ${KOREPORT_LIBS}
-    KChart
-    KProperty
+target_link_libraries(kreport_chartplugin
+    PUBLIC
+        KReport
+    PRIVATE
+        KChart
 )
 
-install(TARGETS koreport_chartplugin  DESTINATION ${PLUGIN_INSTALL_DIR})
+install(TARGETS kreport_chartplugin DESTINATION ${KREPORT_PLUGIN_INSTALL_DIR})
 
 add_subdirectory(pics)

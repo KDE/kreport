@@ -1,0 +1,63 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "kexi@kde.org",
+                "Name": "Kexi Team"
+            }
+        ],
+        "Category": "",
+        "Dependencies": [
+        ],
+        "Description": "Text element for Reports",
+        "Description[ca@valencia]": "Element de text per informes",
+        "Description[ca]": "Element de text per informes",
+        "Description[de]": "Textelement für Berichte",
+        "Description[es]": "Elemento de texto para informes",
+        "Description[fi]": "Tekstielementti raportteihin",
+        "Description[gl]": "Texto para informes.",
+        "Description[hu]": "Szöveg elem jelentésekhez",
+        "Description[it]": "Elemento di testo per i rapporti",
+        "Description[nl]": "Tekstelement voor rapporten",
+        "Description[pl]": "Element tekstowy dla raportów",
+        "Description[pt]": "Elemento de Texto dos Relatórios",
+        "Description[pt_BR]": "Elemento Texto para Relatórios",
+        "Description[sk]": "Prvok textu pre Reports",
+        "Description[sv]": "Textelement för rapporter",
+        "Description[tr]": "Raporlar için metin ögesi",
+        "Description[uk]": "Елемент тексту для звітів",
+        "Description[x-test]": "xxText element for Reportsxx",
+        "EnabledByDefault": true,
+        "Icon": "kreport_text_element",
+        "Id": "org.kde.kreport.text",
+        "License": "LGPL",
+        "Name": "Text",
+        "Name[ast]": "Testu",
+        "Name[ca@valencia]": "Text",
+        "Name[ca]": "Text",
+        "Name[de]": "Text",
+        "Name[es]": "Texto",
+        "Name[fi]": "Teksti",
+        "Name[gl]": "Texto",
+        "Name[hu]": "Szöveg",
+        "Name[it]": "Testo",
+        "Name[nb]": "Tekst",
+        "Name[nl]": "Tekst",
+        "Name[pl]": "Tekst",
+        "Name[pt]": "Texto",
+        "Name[pt_BR]": "Texto",
+        "Name[sk]": "Text",
+        "Name[sv]": "Text",
+        "Name[tr]": "Metin",
+        "Name[uk]": "Текст",
+        "Name[x-test]": "xxTextxx",
+        "Name[zh_CN]": "文本",
+        "ServiceTypes": [
+            "KReport/Element"
+        ],
+        "Version": "1.0",
+        "Website": "http://kexi-project.org"
+    },
+    "X-KDE-PluginInfo-LegacyName": "text",
+    "X-KReport-Priority": "1"
+}

@@ -235,12 +235,6 @@ ecm_generate_pri_file(
 install(FILES ${PRI_FILENAME}
         DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
 
-kcoreaddons_desktop_to_json(KReport items/check/check.desktop)
-kcoreaddons_desktop_to_json(KReport items/field/field.desktop)
-kcoreaddons_desktop_to_json(KReport items/image/image.desktop)
-kcoreaddons_desktop_to_json(KReport items/label/label.desktop)
-kcoreaddons_desktop_to_json(KReport items/text/text.desktop)
-
 install(FILES kreport_elementplugin.desktop  DESTINATION ${SERVICETYPES_INSTALL_DIR})
 
 install(FILES "${CMAKE_CURRENT_BINARY_DIR}/kreport_version.h"

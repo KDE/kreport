@@ -20,7 +20,6 @@ set(kreport_barcodeplugin_LIB_SRCS
 )
 
 add_library(kreport_barcodeplugin MODULE ${kreport_barcodeplugin_LIB_SRCS})
-kcoreaddons_desktop_to_json(kreport_barcodeplugin kreport_barcodeplugin.desktop)
 
 target_link_libraries(kreport_barcodeplugin
     PUBLIC
