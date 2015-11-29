@@ -2,25 +2,24 @@
     "KPlugin": {
         "Authors": [
             {
-                "Email": "kexi@kde.org",
+                "Email": "kexi@kde.org", 
                 "Name": "Kexi Team"
             }
-        ],
-        "Category": "",
-        "Dependencies": [
-        ],
-        "Description": "Chart element for Reports",
-        "EnabledByDefault": true,
-        "Icon": "report_chart_element",
-        "Id": "org.kde.kreport.chart",
-        "License": "LGPL",
-        "Name": "Chart",
+        ], 
+        "Category": "", 
+        "Dependencies": [], 
+        "Description": "Chart element for Reports", 
+        "EnabledByDefault": true, 
+        "Icon": "report_chart_element", 
+        "Id": "org.kde.kreport.chart", 
+        "License": "LGPL", 
+        "Name": "Chart", 
         "ServiceTypes": [
             "KReport/Element"
-        ],
-        "Version": "1.0",
+        ], 
+        "Version": "1.0", 
         "Website": "http://kexi-project.org"
-    },
-    "X-KDE-PluginInfo-LegacyName": "chart",
+    }, 
+    "X-KDE-PluginInfo-LegacyName": "chart", 
     "X-KReport-Priority": "50"
 }

@@ -2,25 +2,24 @@
     "KPlugin": {
         "Authors": [
             {
-                "Email": "kexi@kde.org",
+                "Email": "kexi@kde.org", 
                 "Name": "Kexi Team"
             }
-        ],
-        "Category": "",
-        "Dependencies": [
-        ],
-        "Description": "Web browser element for Reports",
-        "EnabledByDefault": true,
-        "Icon": "report_web_element",
-        "Id": "org.kde.kreport.web",
-        "License": "LGPL",
-        "Name": "Web",
+        ], 
+        "Category": "", 
+        "Dependencies": [], 
+        "Description": "Web browser element for Reports", 
+        "EnabledByDefault": true, 
+        "Icon": "report_web_element", 
+        "Id": "org.kde.kreport.web", 
+        "License": "LGPL", 
+        "Name": "Web", 
         "ServiceTypes": [
             "KReport/Element"
-        ],
-        "Version": "1.0",
+        ], 
+        "Version": "1.0", 
         "Website": "http://kexi-project.org"
-    },
-    "X-KDE-PluginInfo-LegacyName": "web",
+    }, 
+    "X-KDE-PluginInfo-LegacyName": "web", 
     "X-KReport-Priority": "50"
 }
