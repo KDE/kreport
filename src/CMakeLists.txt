@@ -178,7 +178,7 @@ target_link_libraries(KReport
         Qt5::PrintSupport
         Qt5::Xml
         KF5::CoreAddons
-        KProperty
+        KPropertyWidgets
     PRIVATE
         KF5::WidgetsAddons
         KF5::ConfigGui     # KStandardShortcut

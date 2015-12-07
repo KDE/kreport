@@ -27,7 +27,7 @@ macro(KREPORT_UNIT_TESTS)
   foreach(_testname ${ARGN})
     ecm_add_test(${_testname}.cpp
         TEST_NAME ${_testname}
-        LINK_LIBRARIES KReportTestUtils KProperty Qt5::Test KF5::WidgetsAddons)
+        LINK_LIBRARIES KReportTestUtils KPropertyWidgets Qt5::Test KF5::WidgetsAddons)
   endforeach()
 endmacro(KREPORT_UNIT_TESTS)
 

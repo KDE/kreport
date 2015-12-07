@@ -29,7 +29,7 @@ include(GenerateExportHeader)
 include(MacroLogFeature)
 include(KReportMacros)
 
-set(KREPORT_VERSION "2.96.1") # Update this
+set(KREPORT_VERSION "2.97.0") # Update this
 
 # Dependencies
 set(REQUIRED_QT_VERSION "5.3.0")
@@ -38,7 +38,7 @@ set(REQUIRED_QT_VERSION "5.3.0")
 # TODO move Widgets/KF5WidgetsAddons-dependent part to a libKReportDesigner
 find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Core Widgets Xml PrintSupport)
 find_package(KF5 5.7.0 REQUIRED CoreAddons WidgetsAddons GuiAddons Config)
-find_package(KProperty 2.96.0 REQUIRED)
+find_package(KPropertyWidgets 2.97.0 REQUIRED)
 
 set(KREPORT_PLUGIN_INSTALL_DIR ${PLUGIN_INSTALL_DIR}/kreport)
 
