@@ -68,7 +68,7 @@ class QStringList;
 class KREPORT_EXPORT KReportUnit
 {
 public:
-    /** Length units supported by KReport. */
+    /** Length units supported by %KReport. */
     enum Type {
         Millimeter = 0,
         Point,  ///< Postscript point, 1/72th of an Inco
@@ -233,7 +233,7 @@ public:
     int indexInListForUi(ListOptions listOptions = ListAll) const;
 
     /// Parses common %KReport and ODF values, like "10cm", "5mm" to pt.
-    /// If no unit is specifies, pt is assumed.
+    /// If no unit is specified, pt is assumed.
     static qreal parseValue(const QString &value, qreal defaultVal = 0.0);
 
     /// parse an angle to its value in degrees
