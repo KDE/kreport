@@ -372,16 +372,6 @@ qreal KReportUnit::parseAngle(const QString& _value, qreal defaultVal)
     return defaultVal;
 }
 
-qreal KReportUnit::approxTransformScale(const QTransform &t)
-{
-    return std::sqrt(t.determinant());
-}
-
-void KReportUnit::adjustByPixelTransform(const QTransform &t)
-{
-    m_pixelConversion *= approxTransformScale(t);
-}
-
 #ifndef QT_NO_DEBUG_STREAM
 QDebug operator<<(QDebug debug, const KReportUnit &unit)
 {
