@@ -239,7 +239,10 @@ public:
     /// parse an angle to its value in degrees
     static qreal parseAngle(const QString &value, qreal defaultVal = 0.0);
 
-    QString toString() {
+    /**
+     * Equal to symbol(): returns the symbol string of the unit.
+     */
+    inline QString toString() const {
         return symbol();
     }
 
