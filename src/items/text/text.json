@@ -3,7 +3,14 @@
         "Authors": [
             {
                 "Email": "kexi@kde.org", 
-                "Name": "Kexi Team"
+                "Name": "Kexi Team", 
+                "Name[ca]": "L'equip del Kexi", 
+                "Name[nl]": "Het team van Kexi", 
+                "Name[pt]": "Equipa do Kexi", 
+                "Name[pt_BR]": "Equipe do Kexi", 
+                "Name[sv]": "Kexi-gruppen", 
+                "Name[uk]": "Команда Kexi", 
+                "Name[x-test]": "xxKexi Teamxx"
             }
         ], 
         "Category": "", 
