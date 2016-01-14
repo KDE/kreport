@@ -19,10 +19,10 @@
 #include "KReportUnit.h"
 #include "KReportDetailSectionData.h"
 #include "KReportItemBase.h"
+#include "KReportDpi.h"
 
 #include <QDomElement>
 #include <QApplication>
-#include <QScreen>
 #include "kreport_debug.h"
 
 void KReportDocument::init()
@@ -52,10 +52,9 @@ KReportDocument::KReportDocument(const QDomElement & elemSource, QObject *parent
                    << elemSource.text();
         return;
     }
-        QScreen *srn = QApplication::screens().at(0);
 
-    const qreal dpiX = srn->logicalDotsPerInchX();
-    const qreal dpiY = srn->logicalDotsPerInchY();
+    const qreal dpiX = KReportDpi::dpiX();
+    const qreal dpiY = KReportDpi::dpiY();
 
 
     QDomNodeList sections = elemSource.childNodes();

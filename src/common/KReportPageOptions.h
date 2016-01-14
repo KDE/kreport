@@ -38,32 +38,31 @@ public:
         Portrait = 1   // and true
     };
 
-    qreal getMarginTop();
+    qreal getMarginTop() const;
     void setMarginTop(qreal v);
-    qreal getMarginBottom();
+    qreal getMarginBottom() const;
     void setMarginBottom(qreal v);
-    qreal getMarginLeft();
+    qreal getMarginLeft() const;
     void setMarginLeft(qreal v);
-    qreal getMarginRight();
+    qreal getMarginRight() const;
     void setMarginRight(qreal v);
 
-    qreal widthPx();
-    qreal heightPx();
+    QSizeF pixelSize() const;
 
-    const QString & getPageSize();
+    const QString & getPageSize() const;
     void setPageSize(const QString & s);
-    qreal getCustomWidth();
+    qreal getCustomWidth() const;
     void setCustomWidth(qreal v);
-    qreal getCustomHeight();
+    qreal getCustomHeight() const;
     void setCustomHeight(qreal v);
 
-    PageOrientation getOrientation();
-    bool isPortrait();
+    PageOrientation getOrientation() const;
+    bool isPortrait() const;
     void setOrientation(PageOrientation o);
     void setPortrait(bool yes);
 
     void setLabelType(const QString &);
-    const QString & getLabelType();
+    const QString & getLabelType() const;
 
 Q_SIGNALS:
     void pageOptionsChanged();

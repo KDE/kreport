@@ -27,7 +27,8 @@
 #include "KReportDocument.h"
 #include "KReportDetailSectionData.h"
 #include "KReportLabelSizeInfo.h"
-#include "KReportPageFormat.h"
+#include "KReportPageSize.h"
+#include "KReportDpi.h"
 
 #ifdef KREPORT_SCRIPTING
 #include "scripting/KReportScriptHandler.h"
@@ -35,7 +36,6 @@
 #endif
 
 #include <QDomElement>
-#include <QScreen>
 #include <QApplication>
 #include "kreport_debug.h"
 
@@ -288,8 +288,7 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
 
 qreal KReportPreRendererPrivate::renderSectionSize(const KReportSectionData & sectionData)
 {
-    QScreen *srn = QApplication::screens().at(0);
-    qreal intHeight = POINT_TO_INCH(sectionData.height()) * srn->logicalDotsPerInchX();
+    qreal intHeight = POINT_TO_INCH(sectionData.height()) * KReportDpi::dpiX();
 
     int itemHeight = 0;
 
@@ -318,8 +317,7 @@ qreal KReportPreRendererPrivate::renderSectionSize(const KReportSectionData & se
 
 qreal KReportPreRendererPrivate::renderSection(const KReportSectionData & sectionData)
 {
-    QScreen *srn = QApplication::screens().at(0);
-    qreal sectionHeight = POINT_TO_INCH(sectionData.height()) * srn->logicalDotsPerInchX();
+    qreal sectionHeight = POINT_TO_INCH(sectionData.height()) * KReportDpi::dpiX();
 
     int itemHeight = 0;
     //kreportDebug() << "Name: " << sectionData.name() << " Height: " << sectionHeight
@@ -337,7 +335,7 @@ qreal KReportPreRendererPrivate::renderSection(const KReportSectionData & sectio
     ORORect* bg = new ORORect();
     bg->setPen(QPen(Qt::NoPen));
     bg->setBrush(sectionData.backgroundColor());
-    qreal w = m_page->document()->pageOptions().widthPx() - m_page->document()->pageOptions().getMarginRight() - m_leftMargin;
+    qreal w = m_page->document()->pageOptions().pixelSize().width() - m_page->document()->pageOptions().getMarginRight() - m_leftMargin;
 
     bg->setRect(QRectF(m_leftMargin, m_yOffset, w, sectionHeight));
     m_page->addPrimitive(bg, true);
@@ -419,10 +417,6 @@ void KReportPreRenderer::setName(const QString &n)
 
 ORODocument* KReportPreRenderer::generate()
 {
-    QScreen *srn = QApplication::screens().at(0);
-    int dpiX = srn->logicalDotsPerInchX();
-    int dpiY = srn->logicalDotsPerInchY();
-
     if (d == 0 || !d->m_valid || d->m_reportDocument == 0 || d->m_kodata == 0)
         return 0;
 
@@ -442,7 +436,7 @@ ORODocument* KReportPreRenderer::generate()
 
     //kreportDebug() << "Calculating Margins";
     if (!label.isNull()) {
-        if (d->m_reportDocument ->page.isPortrait()) {
+        if (d->m_reportDocument->page.isPortrait()) {
             d->m_topMargin = (label.startY() / 100.0);
             d->m_bottomMargin = 0;
             d->m_rightMargin = 0;
@@ -474,12 +468,10 @@ ORODocument* KReportPreRenderer::generate()
             rpo.setPageSize(label.paper());
         } else {
             // lookup the correct size information for the specified size paper
-            d->m_maxWidth = KReportPageFormat::width(KReportPageFormat::formatFromString(d->m_reportDocument->page.getPageSize()), KReportPageFormat::Portrait);
-            d->m_maxHeight = KReportPageFormat::height(KReportPageFormat::formatFromString(d->m_reportDocument->page.getPageSize()), KReportPageFormat::Portrait);
+	    QSizeF pageSizePx = d->m_reportDocument->page.pixelSize();
 
-            KReportUnit pageUnit(KReportUnit::Millimeter);
-            d->m_maxWidth = KReportUnit::toInch(pageUnit.fromUserValue(d->m_maxWidth)) * dpiX;
-            d->m_maxHeight = KReportUnit::toInch(pageUnit.fromUserValue(d->m_maxHeight)) * dpiY;
+	    d->m_maxWidth = pageSizePx.width();
+	    d->m_maxHeight = pageSizePx.height();
         }
     }
 

@@ -30,6 +30,7 @@
 #include "KReportDesignerItemLine.h"
 #include "KReportRuler_p.h"
 #include "KReportZoomHandler.h"
+#include "KReportDpi.h"
 #include "kreport_debug.h"
 
 #include <QLabel>
@@ -39,7 +40,6 @@
 #include <QGridLayout>
 #include <QMouseEvent>
 #include <QApplication>
-#include <QScreen>
 #include <QApplication>
 #include <QIcon>
 
@@ -103,8 +103,8 @@ KReportDesignerSection::KReportDesignerSection(KReportDesigner * rptdes)
     d->sectionData = new KReportSectionData(this);
     connect(d->sectionData->propertySet(), SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
-    QScreen *srn = QApplication::screens().at(0);
-    d->dpiY = srn->logicalDotsPerInchY();
+
+    d->dpiY = KReportDpi::dpiY();
 
     d->reportDesigner = rptdes;
     setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);

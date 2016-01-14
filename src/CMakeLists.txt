@@ -30,7 +30,7 @@ set(kreport_LIB_SRCS
     common/KReportPluginMetaData.cpp
     common/KReportData.cpp
     common/KReportUtils.cpp
-    common/KReportPageFormat.cpp
+    common/KReportPageSize.cpp
     common/KReportUnit.cpp
     common/KReportDesign.cpp
     common/KReportDesign_p.cpp
@@ -246,7 +246,7 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
     ORIGINAL CAMELCASE
     RELATIVE common
     HEADER_NAMES
-        KReportPageFormat
+        KReportPageSize
         KReportData
         KReportItemBase
         KReportItemLine

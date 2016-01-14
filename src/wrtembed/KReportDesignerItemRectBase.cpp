@@ -22,19 +22,17 @@
 #include "KReportPosition.h"
 #include "KReportSize.h"
 #include "KReportDesignerSectionScene.h"
+#include "KReportDpi.h"
 
 #include <KPropertySet>
 #include <QGraphicsSceneMouseEvent>
-#include <QScreen>
 #include <QApplication>
 
 KReportDesignerItemRectBase::KReportDesignerItemRectBase(KReportDesigner *r)
         : QGraphicsRectItem(), KReportDesignerItemBase(r)
 {
-    QScreen *srn = QApplication::screens().at(0);
-
-    m_dpiX = srn->logicalDotsPerInchX();
-    m_dpiY = srn->logicalDotsPerInchY();
+    m_dpiX = KReportDpi::dpiX();
+    m_dpiY = KReportDpi::dpiY();
 
     m_ppos = 0;
     m_psize = 0;

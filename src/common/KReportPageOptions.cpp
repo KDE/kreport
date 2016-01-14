@@ -17,10 +17,11 @@
  */
 
 #include "KReportPageOptions.h"
-#include "KReportPageFormat.h"
 #include "KReportUnit.h"
+#include "KReportPageSize.h"
+#include "KReportDpi.h"
+
 #include <QApplication>
-#include <QScreen>
 
 KReportPageOptions::KReportPageOptions()
         : QObject(), m_pageSize(QLatin1String("Letter"))
@@ -69,7 +70,7 @@ KReportPageOptions & KReportPageOptions::operator=(const KReportPageOptions & rp
     return *this;
 }
 
-qreal KReportPageOptions::getMarginTop()
+qreal KReportPageOptions::getMarginTop() const
 {
     return m_marginTop;
 }
@@ -83,7 +84,7 @@ void KReportPageOptions::setMarginTop(qreal v)
     emit pageOptionsChanged();
 }
 
-qreal KReportPageOptions::getMarginBottom()
+qreal KReportPageOptions::getMarginBottom() const
 {
     return m_marginBottom;
 }
@@ -97,7 +98,7 @@ void KReportPageOptions::setMarginBottom(qreal v)
     emit pageOptionsChanged();
 }
 
-qreal KReportPageOptions::getMarginLeft()
+qreal KReportPageOptions::getMarginLeft() const
 {
     return m_marginLeft;
 }
@@ -111,7 +112,7 @@ void KReportPageOptions::setMarginLeft(qreal v)
     emit pageOptionsChanged();
 }
 
-qreal KReportPageOptions::getMarginRight()
+qreal KReportPageOptions::getMarginRight() const
 {
     return m_marginRight;
 }
@@ -125,10 +126,11 @@ void KReportPageOptions::setMarginRight(qreal v)
     emit pageOptionsChanged();
 }
 
-const QString & KReportPageOptions::getPageSize()
+const QString & KReportPageOptions::getPageSize() const
 {
     return m_pageSize;
 }
+
 void KReportPageOptions::setPageSize(const QString & s)
 {
     if (m_pageSize == s)
@@ -137,7 +139,7 @@ void KReportPageOptions::setPageSize(const QString & s)
     m_pageSize = s;
     emit pageOptionsChanged();
 }
-qreal KReportPageOptions::getCustomWidth()
+qreal KReportPageOptions::getCustomWidth() const
 {
     return m_customWidth;
 }
@@ -149,10 +151,12 @@ void KReportPageOptions::setCustomWidth(qreal v)
     m_customWidth = v;
     emit pageOptionsChanged();
 }
-qreal KReportPageOptions::getCustomHeight()
+
+qreal KReportPageOptions::getCustomHeight() const
 {
     return m_customHeight;
 }
+
 void KReportPageOptions::setCustomHeight(qreal v)
 {
     if (m_customHeight == v)
@@ -162,12 +166,12 @@ void KReportPageOptions::setCustomHeight(qreal v)
     emit pageOptionsChanged();
 }
 
-KReportPageOptions::PageOrientation KReportPageOptions::getOrientation()
+KReportPageOptions::PageOrientation KReportPageOptions::getOrientation() const
 {
     return m_orientation;
 }
 
-bool KReportPageOptions::isPortrait()
+bool KReportPageOptions::isPortrait() const
 {
     return (m_orientation == Portrait);
 }
@@ -180,15 +184,17 @@ void KReportPageOptions::setOrientation(PageOrientation o)
     m_orientation = o;
     emit pageOptionsChanged();
 }
+
 void KReportPageOptions::setPortrait(bool yes)
 {
     setOrientation((yes ? Portrait : Landscape));
 }
 
-const QString & KReportPageOptions::getLabelType()
+const QString & KReportPageOptions::getLabelType() const
 {
     return m_labelType;
 }
+
 void KReportPageOptions::setLabelType(const QString & type)
 {
     if (m_labelType == type)
@@ -199,39 +205,14 @@ void KReportPageOptions::setLabelType(const QString & type)
 }
 
 //Convenience functions that return the page width/height in pixels based on the DPI
-qreal KReportPageOptions::widthPx()
+QSizeF KReportPageOptions::pixelSize() const
 {
-    int pageWidth;
-
-    if (isPortrait()) {
-        pageWidth = KReportPageFormat::width(KReportPageFormat::formatFromString(getPageSize()), KReportPageFormat::Portrait);
+    QSizeF xDpiSize = QPageSize(KReportPageSize::pageSize(getPageSize())).sizePixels(KReportDpi::dpiX());
+    QSizeF yDpiSize = QPageSize(KReportPageSize::pageSize(getPageSize())).sizePixels(KReportDpi::dpiY());
+        
+    if (isPortrait()){
+	return QSizeF(xDpiSize.width(), yDpiSize.height());
     } else {
-        pageWidth = KReportPageFormat::width(KReportPageFormat::formatFromString(getPageSize()), KReportPageFormat::Landscape);
+	return QSizeF(xDpiSize.height(), yDpiSize.width());
     }
-
-    KReportUnit pageUnit(KReportUnit::Millimeter);
-    QScreen *srn = QApplication::screens().at(0);
-
-    pageWidth = KReportUnit::toInch(pageUnit.fromUserValue(pageWidth)) * srn->logicalDotsPerInchX();
-
-    return pageWidth;
 }
-
-qreal KReportPageOptions::heightPx()
-{
-    int pageHeight;
-
-    if (isPortrait()) {
-        pageHeight = KReportPageFormat::height(KReportPageFormat::formatFromString(getPageSize()), KReportPageFormat::Portrait);
-    } else {
-        pageHeight = KReportPageFormat::height(KReportPageFormat::formatFromString(getPageSize()), KReportPageFormat::Landscape);
-    }
-
-    KReportUnit pageUnit(KReportUnit::Millimeter);
-    QScreen *srn = QApplication::screens().at(0);
-
-    pageHeight = KReportUnit::toInch(pageUnit.fromUserValue(pageHeight)) * srn->logicalDotsPerInchY();
-
-    return pageHeight;
-}
-

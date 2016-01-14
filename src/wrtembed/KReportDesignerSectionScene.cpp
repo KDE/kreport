@@ -21,11 +21,10 @@
 #include "KReportDesignerItemRectBase.h"
 #include "KReportDesigner.h"
 #include "KReportLabelSizeInfo.h"
-#include "KReportPageFormat.h"
+#include "KReportDpi.h"
 #include "kreport_debug.h"
 
 #include <QPainter>
-#include <QScreen>
 #include <QApplication>
 #include <QGraphicsItem>
 #include <QGraphicsSceneMouseEvent>
@@ -35,11 +34,8 @@ KReportDesignerSectionScene::KReportDesignerSectionScene(qreal w, qreal h, KRepo
 {
     m_rd = rd;
     m_minorSteps = 0;
-
-    QScreen *srn = QApplication::screens().at(0);
-
-    m_dpiX = srn->logicalDotsPerInchX();
-    m_dpiY = srn->logicalDotsPerInchY();
+    m_dpiX = KReportDpi::dpiX();
+    m_dpiY = KReportDpi::dpiY();
 
     if (m_unit.type() != m_rd->pageUnit().type()) {
         m_unit = m_rd->pageUnit();

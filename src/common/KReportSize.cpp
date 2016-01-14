@@ -16,10 +16,10 @@
  */
 
 #include "KReportSize.h"
+#include "KReportDpi.h"
 
 #include <KProperty>
 
-#include <QScreen>
 #include <QApplication>
 
 KReportSize::KReportSize(const KReportUnit& unit)
@@ -37,10 +37,8 @@ void KReportSize::setSceneSize(const QSizeF& s, UpdatePropertyFlag update)
 {
     qreal w, h;
 
-    QScreen *srn = QApplication::screens().at(0);
-
-    w = INCH_TO_POINT(s.width() / srn->logicalDotsPerInchX());
-    h = INCH_TO_POINT(s.height() / srn->logicalDotsPerInchY());
+    w = INCH_TO_POINT(s.width() / KReportDpi::dpiX());
+    h = INCH_TO_POINT(s.height() / KReportDpi::dpiY());
     m_pointSize.setWidth(w);
     m_pointSize.setHeight(h);
 
@@ -83,9 +81,8 @@ QSizeF KReportSize::toPoint() const
 QSizeF KReportSize::toScene() const
 {
     qreal w, h;
-    QScreen *srn = QApplication::screens().at(0);
-    w = POINT_TO_INCH(m_pointSize.width()) * srn->logicalDotsPerInchX();
-    h = POINT_TO_INCH(m_pointSize.height()) * srn->logicalDotsPerInchY();
+    w = POINT_TO_INCH(m_pointSize.width()) * KReportDpi::dpiX();
+    h = POINT_TO_INCH(m_pointSize.height()) * KReportDpi::dpiY();
     return QSizeF(w, h);
 }
 

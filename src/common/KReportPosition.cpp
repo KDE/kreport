@@ -17,10 +17,10 @@
  */
 
 #include "KReportPosition.h"
+#include "KReportDpi.h"
 
 #include <KProperty>
 
-#include <QScreen>
 #include <QApplication>
 
 KReportPosition::KReportPosition(const KReportUnit& unit)
@@ -41,10 +41,8 @@ KReportPosition::~KReportPosition()
 
 void KReportPosition::setScenePos(const QPointF& pos, UpdatePropertyFlag update)
 {
-    QScreen *srn = QApplication::screens().at(0);
-
-    const qreal x = INCH_TO_POINT(pos.x() / srn->logicalDotsPerInchX());
-    const qreal y = INCH_TO_POINT(pos.y() / srn->logicalDotsPerInchY());
+    const qreal x = INCH_TO_POINT(pos.x() / KReportDpi::dpiX());
+    const qreal y = INCH_TO_POINT(pos.y() / KReportDpi::dpiY());
 
     m_pointPos.setX(x);
     m_pointPos.setY(y);
@@ -87,10 +85,8 @@ QPointF KReportPosition::toPoint() const
 
 QPointF KReportPosition::toScene() const
 {
-    QScreen *srn = QApplication::screens().at(0);
-
-    const qreal x = POINT_TO_INCH(m_pointPos.x()) * srn->logicalDotsPerInchX();
-    const qreal y = POINT_TO_INCH(m_pointPos.y()) * srn->logicalDotsPerInchY();
+    const qreal x = POINT_TO_INCH(m_pointPos.x()) * KReportDpi::dpiX();
+    const qreal y = POINT_TO_INCH(m_pointPos.y()) * KReportDpi::dpiY();
 
     return QPointF(x, y);
 }

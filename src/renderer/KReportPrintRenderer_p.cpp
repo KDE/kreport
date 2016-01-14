@@ -19,9 +19,9 @@
 #include "KReportPrintRenderer_p.h"
 #include "kreport_debug.h"
 #include "KReportRenderObjects.h"
-#include "KReportPageFormat.h"
+#include "KReportPageSize.h"
+#include "KReportDpi.h"
 
-#include <QScreen>
 #include <QApplication>
 #include <QPainter>
 #include <QPrinter>
@@ -47,10 +47,11 @@ bool PrintRenderer::setupPrinter( ORODocument * document, QPrinter * pPrinter)
     pPrinter->setOrientation((document->pageOptions().isPortrait() ? QPrinter::Portrait : QPrinter::Landscape));
     pPrinter->setPageOrder(QPrinter::FirstPageFirst);
 
-    if (document->pageOptions().getPageSize().isEmpty())
+    if (document->pageOptions().getPageSize().isEmpty()) {
         pPrinter->setPageSize(QPrinter::Custom);
-    else
-        pPrinter->setPageSize(KReportPageFormat::printerPageSize(KReportPageFormat::formatFromString(document->pageOptions().getPageSize())));
+    } else {  
+        pPrinter->setPageSize(QPageSize(KReportPageSize::pageSize(document->pageOptions().getPageSize())));
+    }        
 
     return true;
 }
@@ -79,9 +80,9 @@ bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *d
     if (toPage == 0 || toPage > document->pages())
         toPage = document->pages();
 
-    QScreen *srn = QApplication::screens().at(0);
+    qreal scaleX = context.printer->resolution() / qreal(KReportDpi::dpiX());
+    qreal scaleY = context.printer->resolution() / qreal(KReportDpi::dpiY());
 
-    qreal scale = context.printer->resolution() / qreal(srn->logicalDotsPerInchX());
 
     for (int copy = 0; copy < context.printer->numCopies(); copy++) {
         for (int page = fromPage; page < toPage; page++) {
@@ -97,8 +98,8 @@ bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *d
                 OROPrimitive * prim = p->primitive(i);
 
 
-                prim->setPosition(prim->position() * scale);
-                prim->setSize(prim->size() * scale);
+                prim->setPosition(QPointF(prim->position().x() * scaleX, prim->position().y() * scaleY));
+                prim->setSize(QSizeF(prim->size().width() * scaleX, prim->size().height() * scaleY));
                 //kreportDebug() << "Rendering object" << i << "type" << prim->type();
                 if (prim->type() == OROTextBox::TextBox) {
                     //kreportDebug() << "Text Box";
@@ -124,7 +125,7 @@ bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *d
                     context.painter->drawText(rc, tb->flags(), tb->text());
 
                     //outer line
-                    context.painter->setPen(QPen(tb->lineStyle().color(), tb->lineStyle().width() * scale, tb->lineStyle().penStyle()));
+                    context.painter->setPen(QPen(tb->lineStyle().color(), tb->lineStyle().width() * scaleX, tb->lineStyle().penStyle()));
                     context.painter->drawRect(rc);
 
                     //Reset back to defaults for next element
@@ -134,9 +135,9 @@ bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *d
                     //kreportDebug() << "Line";
                     OROLine * ln = (OROLine*) prim;
                     QPointF s = ln->startPoint();
-                    QPointF e = ln->endPoint() * scale;
+                    QPointF e(ln->endPoint().x() * scaleX, ln->endPoint().y() * scaleY);
                     //QPen pen ( _painter->pen() );
-                    QPen pen(ln->lineStyle().color(), ln->lineStyle().width() * scale, ln->lineStyle().penStyle());
+                    QPen pen(ln->lineStyle().color(), ln->lineStyle().width() * scaleX, ln->lineStyle().penStyle());
 
                     context.painter->save();
                     context.painter->setRenderHint(QPainter::Antialiasing, true);
@@ -204,7 +205,7 @@ bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *d
                     if (chk->lineStyle().penStyle() == Qt::NoPen || chk->lineStyle().width() <= 0) {
                         context.painter->setPen(QPen(Qt::lightGray));
                     } else {
-                        context.painter->setPen(QPen(chk->lineStyle().color(), chk->lineStyle().width() * scale, chk->lineStyle().penStyle()));
+                        context.painter->setPen(QPen(chk->lineStyle().color(), chk->lineStyle().width() * scaleX, chk->lineStyle().penStyle()));
                     }
 
                     qreal ox = sz.width() / 5;

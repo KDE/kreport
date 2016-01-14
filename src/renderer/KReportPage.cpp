@@ -18,7 +18,6 @@
 #include "KReportPage.h"
 
 #include "KReportRendererBase.h"
-#include "KReportPageFormat.h"
 #include "KReportUnit.h"
 #include "KReportRenderObjects.h"
 #include "kreport_debug.h"
@@ -71,8 +70,8 @@ KReportPage::KReportPage(QWidget *parent, ORODocument *document)
             pageHeight = (int)(d->reportDocument->pageOptions().getCustomHeight());
         } else {
             // lookup the correct size information for the specified size paper
-            pageWidth = d->reportDocument->pageOptions().widthPx();
-            pageHeight = d->reportDocument->pageOptions().heightPx();
+            pageWidth = d->reportDocument->pageOptions().pixelSize().width();
+            pageHeight = d->reportDocument->pageOptions().pixelSize().height();
         }
     }
     setRect(0,0,pageWidth, pageHeight);

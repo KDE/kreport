@@ -28,7 +28,7 @@
 #include "KReportDesignerItemLine.h"
 #include "KReportRuler_p.h"
 #include "KReportZoomHandler.h"
-#include "KReportPageFormat.h"
+#include "KReportPageSize.h"
 #include "KReportDpi.h"
 #include "KReportUtils.h"
 #include "KReportPluginInterface.h"
@@ -725,9 +725,9 @@ void KReportDesigner::createProperties()
     d->title = new KProperty("title", QLatin1String("Report"), tr("Title"), tr("Report Title"));
 
     keys.clear();
-    keys =  KReportPageFormat::pageFormatNames();
-    strings = KReportPageFormat::localizedPageFormatNames();
-    QString defaultKey = KReportPageFormat::formatString(KReportPageFormat::defaultFormat());
+    keys =  KReportPageSize::pageFormatKeys();
+    strings = KReportPageSize::pageFormatKeys();
+    QString defaultKey = KReportPageSize::pageSizeKey(KReportPageSize::defaultSize());
     d->pageSize = new KProperty("page-size", keys, strings, defaultKey, tr("Page Size"));
 
     keys.clear(); strings.clear();
@@ -858,29 +858,22 @@ QSize KReportDesigner::sizeHint() const
 }
 
 int KReportDesigner::pageWidthPx() const
-{
-    int cw = 0;
-    int ch = 0;
-    int width = 0;
+{    
+    KReportPageOptions po;
+    po.setPageSize(d->set->property("page-size").value().toString());
+    po.setPortrait(d->set->property("print-orientation").value().toString() == QLatin1String("portrait"));
+    QSizeF pageSizePx = po.pixelSize();
 
-    KReportPageFormat::Format pf = KReportPageFormat::formatFromString(d->set->property("page-size").value().toString());
-
-    cw = POINT_TO_INCH(MM_TO_POINT(KReportPageFormat::width(pf, KReportPageFormat::Portrait))) * KReportDpi::dpiX();
-
-    ch = POINT_TO_INCH(MM_TO_POINT(KReportPageFormat::height(pf, KReportPageFormat::Portrait))) * KReportDpi::dpiY();
-
-    width = (d->set->property("print-orientation").value().toString() == QLatin1String("portrait") ? cw : ch);
-
+    int width = pageSizePx.width();
     width = width - POINT_TO_INCH(d->set->property("margin-left").value().toDouble()) * KReportDpi::dpiX();
     width = width - POINT_TO_INCH(d->set->property("margin-right").value().toDouble()) * KReportDpi::dpiX();
-
-    return width;
+    
+    return width;    
 }
 
 void KReportDesigner::resizeEvent(QResizeEvent * event)
 {
     Q_UNUSED(event);
-    //hruler->setRulerLength ( vboxlayout->geometry().width() );
     d->hruler->setRulerLength(pageWidthPx());
 }
 

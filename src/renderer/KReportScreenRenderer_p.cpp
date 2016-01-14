@@ -18,7 +18,6 @@
 
 #include "KReportScreenRenderer_p.h"
 #include "KReportRenderObjects.h"
-#include "KReportPageFormat.h"
 #include "KReportUnit.h"
 #include "kreport_debug.h"
 
