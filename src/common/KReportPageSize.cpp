@@ -22,8 +22,8 @@
 #include <QPrinterInfo>
 
 struct KReportPageSizeInfo {
-    char *name;
-    char *description;
+    const char *name;
+    const char *description;
     QPageSize::PageSizeId pageSize;
 };
 
