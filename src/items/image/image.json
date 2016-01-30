@@ -4,6 +4,7 @@
             {
                 "Email": "kexi@kde.org", 
                 "Name": "Kexi Team", 
+                "Name[ast]": "L'equipu de Kexi", 
                 "Name[ca@valencia]": "L'equip del Kexi", 
                 "Name[ca]": "L'equip del Kexi", 
                 "Name[de]": "Kexi-Team", 
@@ -40,6 +41,7 @@
         "Id": "org.kde.kreport.image", 
         "License": "LGPL", 
         "Name": "Image", 
+        "Name[ast]": "Imaxe", 
         "Name[ca@valencia]": "Imatge", 
         "Name[ca]": "Imatge", 
         "Name[de]": "Bild", 

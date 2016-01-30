@@ -4,6 +4,7 @@
             {
                 "Email": "kexi@kde.org", 
                 "Name": "Kexi Team", 
+                "Name[ast]": "L'equipu de Kexi", 
                 "Name[ca@valencia]": "L'equip del Kexi", 
                 "Name[ca]": "L'equip del Kexi", 
                 "Name[de]": "Kexi-Team", 
@@ -40,6 +41,7 @@
         "Id": "org.kde.kreport.maps", 
         "License": "LGPL", 
         "Name": "Maps", 
+        "Name[ast]": "Mapes", 
         "Name[ca@valencia]": "Mapes", 
         "Name[ca]": "Mapes", 
         "Name[de]": "Karten", 
