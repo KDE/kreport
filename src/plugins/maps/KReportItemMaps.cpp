@@ -35,7 +35,7 @@ KReportItemMaps::KReportItemMaps(QDomNode *element)
     , m_sectionId(0)
     , m_oroPicture(0)
     , m_longDataSetFromScript(false)
-    , m_latitudeProperty(false)
+    , m_latDataSetFromScript(false)
     , m_zoomDataSetFromScript(false)
 {
     createProperties();
