@@ -283,14 +283,15 @@ KReportPluginInterface* KReportPluginManager::plugin(const QString& id) const
     return entry->plugin();
 }
 
-QList<QAction*> KReportPluginManager::actions()
+QList<QAction*> KReportPluginManager::createActions(QObject *parent)
 {
+    Q_ASSERT(parent);
     const QMap<QString, KReportPluginEntry*> *plugins = d->plugins();
     QList<QAction*> actList;
     foreach(KReportPluginEntry* plugin, *plugins) {
         const KReportPluginMetaData *metaData = plugin->metaData();
         if (metaData) {
-            QAction *act = new QAction(QIcon::fromTheme(metaData->iconName()), metaData->name(), this);
+            QAction *act = new QAction(QIcon::fromTheme(metaData->iconName()), metaData->name(), parent);
             act->setObjectName(metaData->id());
             act->setCheckable(true);
 

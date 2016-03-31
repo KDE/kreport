@@ -1324,7 +1324,7 @@ static bool actionPriortyLessThan(QAction* act1, QAction* act2)
 QList<QAction*> KReportDesigner::itemActions(QActionGroup* group)
 {
     KReportPluginManager* manager = KReportPluginManager::self();
-    QList<QAction*> actList = manager->actions();
+    QList<QAction*> actList = manager->createActions(group);
 
     //! @todo make line a real plugin so this isn't needed:
     QAction *act = new QAction(QIcon::fromTheme(QLatin1String("kreport_line_element")), tr("Line"), group);
