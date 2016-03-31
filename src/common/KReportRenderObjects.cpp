@@ -138,7 +138,9 @@ void OROPage::addPrimitive(OROPrimitive* p, bool atBeginning, bool notify)
     }
 
     if (notify) {
-        document()->notifyChange(page());
+        if (m_document) {
+            m_document->notifyChange(page());
+        }
     }
 }
 

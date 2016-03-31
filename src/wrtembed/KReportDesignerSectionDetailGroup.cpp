@@ -150,21 +150,27 @@ void KReportDesignerSectionDetailGroup::initFromXML( const QDomElement &element 
 void KReportDesignerSectionDetailGroup::setGroupHeaderVisible(bool visible)
 {
     if (groupHeaderVisible() != visible) {
-        if (d->reportSectionDetail && d->reportSectionDetail->reportDesigner()) d->reportSectionDetail->reportDesigner()->setModified(true);
+        if (d->reportSectionDetail && d->reportSectionDetail->reportDesigner()) {
+            d->reportSectionDetail->reportDesigner()->setModified(true);
+        }
     }
-    if (visible) d->groupHeader->show();
-    else d->groupHeader->hide();
-    d->reportSectionDetail->adjustSize();
+    d->groupHeader->setVisible(visible);
+    if (d->reportSectionDetail) {
+        d->reportSectionDetail->adjustSize();
+    }
 }
 
 void KReportDesignerSectionDetailGroup::setGroupFooterVisible(bool visible)
 {
     if (groupFooterVisible() != visible) {
-        if (d->reportSectionDetail && d->reportSectionDetail->reportDesigner()) d->reportSectionDetail->reportDesigner()->setModified(true);
+        if (d->reportSectionDetail && d->reportSectionDetail->reportDesigner()) {
+            d->reportSectionDetail->reportDesigner()->setModified(true);
+        }
     }
-    if (visible) d->groupFooter->show();
-    else d->groupFooter->hide();
-    d->reportSectionDetail->adjustSize();
+    d->groupFooter->setVisible(visible);
+    if (d->reportSectionDetail) {
+        d->reportSectionDetail->adjustSize();
+    }
 }
 
 void KReportDesignerSectionDetailGroup::setPageBreak(KReportDesignerSectionDetailGroup::PageBreak pb)
