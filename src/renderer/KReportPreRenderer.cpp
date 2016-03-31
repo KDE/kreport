@@ -187,11 +187,14 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
             }
 
             while (status) {
-                long l = m_kodata->at();
+                const qint64 pos = m_kodata->at();
                 //kreportDebug() << "At:" << l << "Y:" << m_yOffset << "Max Height:" << m_maxHeight;
-                if (renderSectionSize(*(detailData->m_detailSection)) + finishCurPageSize((l + 1 == m_recordCount)) + m_bottomMargin + m_yOffset >= m_maxHeight) {
+                if ((renderSectionSize(*detailData->m_detailSection)
+                        + finishCurPageSize((pos + 1 == m_recordCount))
+                        + m_bottomMargin + m_yOffset) >= m_maxHeight)
+                {
                     //kreportDebug() << "Next section is too big for this page";
-                    if (l > 0) {
+                    if (pos > 0) {
                         m_kodata->movePrevious();
                         createNewPage();
                         m_kodata->moveNext();
