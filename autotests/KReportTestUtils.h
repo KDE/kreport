@@ -36,8 +36,10 @@ KREPORTTESTUTILS_EXPORT bool qCompare(qreal val1, qreal val2, qreal epsilon, con
 KREPORTTESTUTILS_EXPORT bool qCompare(const QString &val1, const char* val2, const char *actual,
                                       const char *expected, const char *file, int line);
 
+#if QT_VERSION < QT_VERSION_CHECK(5, 7, 0)
 template<>
 char *toString(const QColor &val) { return qstrdup(qPrintable(QVariant(val).toString())); }
+#endif
 
 template<>
 char *toString(const Qt::Alignment &val) {
