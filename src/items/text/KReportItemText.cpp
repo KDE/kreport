@@ -301,7 +301,11 @@ int KReportItemText::renderSimpleData(OROPage *page, OROSection *section, const 
                 tb->setFlags(textFlags());
                 tb->setTextStyle(textStyle());
                 tb->setLineStyle(lineStyle());
-                if (page) page->addPrimitive(tb);
+                if (page) {
+                    page->addPrimitive(tb);
+                } else {
+                    delete tb;
+                }
 
                 intStretch += intRectHeight;
                 intLineCounter++;
