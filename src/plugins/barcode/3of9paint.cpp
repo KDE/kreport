@@ -105,7 +105,7 @@ void render3of9(const QRect & r, const QString & _str, int align, QPainter * pPa
 
     // this is are mandatory minimum quiet zone
     int quiet_zone = narrow_bar * 10;
-    if (quiet_zone < 10) quiet_zone = 10;
+    //if (quiet_zone < 10) quiet_zone = 10;
 
     // what kind of area do we have to work with
     int draw_width = r.width();

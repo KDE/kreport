@@ -120,7 +120,7 @@ void renderCodeEAN13(const QRect & r, const QString & _str, int align, QPainter 
 
     // this is are mandatory minimum quiet zone
     int quiet_zone = bar_width * 10;
-    if (quiet_zone < 10) quiet_zone = 10;
+    //if (quiet_zone < 10) quiet_zone = 10;
 
     // what kind of area do we have to work with
     int draw_width = r.width();
@@ -269,7 +269,7 @@ void renderCodeUPCA(const QRect & r, const QString & _str, int align, QPainter *
 
     // this is are mandatory minimum quiet zone
     int quiet_zone = bar_width * 10;
-    if (quiet_zone < 10) quiet_zone = 10;
+    //if (quiet_zone < 10) quiet_zone = 10;
 
     // what kind of area do we have to work with
     int draw_width = r.width();
@@ -421,7 +421,7 @@ void renderCodeEAN8(const QRect & r, const QString & _str, int align, QPainter *
 
     // this is are mandatory minimum quiet zone
     int quiet_zone = bar_width * 10;
-    if (quiet_zone < 10) quiet_zone = 10;
+    //if (quiet_zone < 10) quiet_zone = 10;
 
     // what kind of area do we have to work with
     int draw_width = r.width();
@@ -557,7 +557,7 @@ void renderCodeUPCE(const QRect & r, const QString & _str, int align, QPainter *
 
     // this is are mandatory minimum quiet zone
     int quiet_zone = bar_width * 10;
-    if (quiet_zone < 10) quiet_zone = 10;
+    //if (quiet_zone < 10) quiet_zone = 10;
 
     // what kind of area do we have to work with
     int draw_width = r.width();

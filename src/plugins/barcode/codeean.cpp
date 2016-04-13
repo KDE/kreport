@@ -323,7 +323,7 @@ void renderCodeUPCA(OROPage * page, const QRectF & r, const QString & _str, int 
 
     // this is are mandatory minimum quiet zone
     qreal quiet_zone = bar_width * 10;
-    if (quiet_zone < 10) quiet_zone = 10;
+    //if (quiet_zone < 10) quiet_zone = 10;
 
     // what kind of area do we have to work with
     qreal draw_width = r.width();
