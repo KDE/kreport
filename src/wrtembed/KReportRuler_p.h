@@ -149,8 +149,10 @@ public:
 
     /// For paragraphs each tab definition is represented by this struct.
     struct Tab {
-        qreal position;    ///< distance in point from the start of the text-shape
-        QTextOption::TabType type;       ///< Determine which type is used.
+        inline Tab(qreal aPosition, QTextOption::TabType aType) : position(aPosition), type(aType) {}
+        inline Tab() : position(0.0), type(QTextOption::LeftTab) {}
+        qreal position;            ///< distance in point from the start of the text-shape
+        QTextOption::TabType type; ///< Determine which type is used.
     };
 
     /// The ruler's unit

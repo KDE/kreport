@@ -686,6 +686,7 @@ KReportRulerPrivate::KReportRulerPrivate(KReportRuler *parent, const KReportZoom
     tabMoved(false),
     originalIndex(-1),
     currentIndex(0),
+    tabDistance(0.0),
     rightToLeft(false),
     selected(None),
     selectOffset(0),
@@ -1100,9 +1101,9 @@ void KReportRuler::mousePressEvent ( QMouseEvent* ev )
             tabpos = d->viewConverter->viewToDocumentX(pos.x() - d->offset)
                     - d->effectiveActiveRangeStart() - (d->relativeTabs ? d->paragraphIndent : 0);
         }
-        Tab t = {tabpos, d->tabChooser ?  d->tabChooser->type() :
+        Tab t(tabpos, d->tabChooser ?  d->tabChooser->type() :
                          d->rightToLeft ? QTextOption::RightTab :
-                                          QTextOption::LeftTab};
+                                          QTextOption::LeftTab);
         d->tabs.append(t);
         d->selectOffset = 0;
         d->selected = KReportRulerPrivate::Tab;
