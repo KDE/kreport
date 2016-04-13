@@ -166,7 +166,7 @@ KReportSection KReportDesign::Private::processSectionElement(const QDomElement &
             return KReportSection();
         }
         KReportElement element = processSectionElementChild(node.toElement(), status);
-        if (status->isError()) {
+        if (!element.rect().isValid() || (status && status->isError())) {
             return KReportSection();
         }
         section.addElement(element);
@@ -240,7 +240,7 @@ bool KReportDesign::Private::processDetailElement(const QDomElement &el,
                 return false;
             }
             KReportSection section = processSectionElement(childEl, status);
-            if (status->isError()) {
+            if (status && status->isError()) {
                 return false;
             }
             if (section.type() != KReportSection::Detail) {
@@ -262,7 +262,7 @@ bool KReportDesign::Private::processDetailElement(const QDomElement &el,
     }
     // finally make sure we have one report:section
     (void)requiredChildElement(el, "report:section", status);
-    if (status->isError()) {
+    if (status && status->isError()) {
         return false;
     }
     return true;
@@ -286,7 +286,7 @@ bool KReportDesign::Private::processBodyElementChild(const QDomElement &el,
     //kreportDebug() << name;
     if (name == "report:section") {
         KReportSection section = processSectionElement(el, status);
-        if (status->isError()) {
+        if (status && status->isError()) {
             return false;
         }
         if (q->hasSection(section.type())) {
@@ -432,7 +432,7 @@ bool KReportDesign::Private::processDocument(const QDomDocument &doc,
         return false;
     }
     const QDomElement contentEl = requiredChildElement(rootEl, "report:content", status);
-    if (status->isError()) {
+    if (status && status->isError()) {
         return false;
     }
     //! @todo check namespaces as in:
