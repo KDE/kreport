@@ -52,6 +52,7 @@ KReportDesignerSectionDetail::KReportDesignerSectionDetail(KReportDesigner * rpt
         : QWidget(rptdes)
         , d(new Private())
 {
+    Q_ASSERT(rptdes);
     setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
     d->vboxlayout = new QVBoxLayout(this);
     d->vboxlayout->setSpacing(0);

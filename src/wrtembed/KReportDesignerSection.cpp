@@ -100,6 +100,7 @@ KReportDesignerSection::KReportDesignerSection(KReportDesigner * rptdes)
         : QWidget(rptdes)
         , d(new Private())
 {
+    Q_ASSERT(rptdes);
     d->sectionData = new KReportSectionData(this);
     connect(d->sectionData->propertySet(), SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));

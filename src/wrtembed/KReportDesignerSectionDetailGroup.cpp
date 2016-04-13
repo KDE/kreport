@@ -30,7 +30,9 @@ class KReportDesignerSectionDetailGroup::Private
 {
 public:
     explicit Private()
-        : pageBreak(KReportDesignerSectionDetailGroup::BreakNone)
+        : groupHeader(0)
+        , groupFooter(0)
+        , pageBreak(KReportDesignerSectionDetailGroup::BreakNone)
         , sort(Qt::AscendingOrder)
     {}
 
@@ -58,18 +60,17 @@ KReportDesignerSectionDetailGroup::KReportDesignerSectionDetailGroup(const QStri
         : QObject(parent)
         , d(new Private())
 {
-    KReportDesigner * rd = 0;
+    Q_ASSERT(rsd);
     d->reportSectionDetail = rsd;
-    if (d->reportSectionDetail) {
-        rd = rsd->reportDesigner();
-    } else {
+    if (!d->reportSectionDetail) {
         kreportWarning() << "Error: ReportSectionDetail is null";
+        return;
     }
+    KReportDesigner * rd = rsd->reportDesigner();
     d->groupHeader = new KReportDesignerSection(rd /*, _rsd*/);
     d->groupFooter = new KReportDesignerSection(rd /*, _rsd*/);
     setGroupHeaderVisible(false);
     setGroupFooterVisible(false);
-
     setColumn(column);
 }
 
