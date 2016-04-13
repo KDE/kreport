@@ -1302,7 +1302,7 @@ bool KReportDesigner::isEntityNameUnique(const QString &n, KReportItemBase* igno
             const QGraphicsItemList l = sec->items();
             for (QGraphicsItemList::const_iterator it = l.constBegin(); it != l.constEnd(); ++it) {
                 KReportItemBase* itm = dynamic_cast<KReportItemBase*>(*it);
-                if (itm && itm && itm->entityName() == n  && itm != ignore) {
+                if (itm && itm->entityName() == n  && itm != ignore) {
                     unique = false;
                     break;
                 }
