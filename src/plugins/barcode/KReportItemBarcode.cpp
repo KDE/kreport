@@ -86,8 +86,9 @@ void KReportItemBarcode::setMaxLength(int i)
             int C = i; // assuming 1:1 ratio of data passed in to data actually used in encoding
             int X = 1; // 1px wide
             m_minWidthData = (((11 * C) + 35) * X) / 100.0;       // assuming CODE A or CODE B
-            m_minHeight = m_minWidthData * 0.15;
-            /*if(min_height < 0.25)*/ m_minHeight = 0.25;
+            //m_minHeight = m_minWidthData * 0.15;
+            /*if(min_height < 0.25)*/
+            m_minHeight = 0.25;
             m_minWidthTotal = m_minWidthData + 0.22; // added a little bugger to make sure we don't loose any
             // of our required quiet zone in conversions
         } else if (m_format->value().toString() == QLatin1String("upc-a")) {
