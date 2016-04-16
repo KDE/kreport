@@ -454,10 +454,8 @@ QDomElement KReportDesigner::document() const
 
 void KReportDesigner::slotSectionEditor()
 {
-    QPointer<KReportSectionEditor> se = new KReportSectionEditor(this);
-    se->init(this);
-    se->exec();
-    delete se;
+    KReportSectionEditor se(this);
+    (void)se.exec();
 }
 
 void KReportDesigner::setReportData(KReportData* kodata)
