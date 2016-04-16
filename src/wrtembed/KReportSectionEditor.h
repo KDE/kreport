@@ -34,11 +34,8 @@ class KReportSectionEditor : public QDialog
     Q_OBJECT
 
 public:
-    explicit KReportSectionEditor(QWidget* parent = 0);
+    explicit KReportSectionEditor(KReportDesigner* parent = 0);
     ~KReportSectionEditor();
-
-public:
-    void init(KReportDesigner *rd);
 
 private Q_SLOTS:
     void cbReportHeader_toggled(bool yes);

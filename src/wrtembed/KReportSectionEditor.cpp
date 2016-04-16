@@ -48,9 +48,13 @@ static inline bool isEditorHelperField(const QString &key)
  *  The dialog will by default be modeless, unless you set 'modal' to
  *  true to construct a modal dialog.
  */
-KReportSectionEditor::KReportSectionEditor(QWidget* parent)
-  : QDialog(parent)
+KReportSectionEditor::KReportSectionEditor(KReportDesigner* designer)
+  : QDialog(designer)
 {
+    Q_ASSERT(designer);
+    m_reportDesigner = designer;
+    m_reportSectionDetail = m_reportDesigner->detailSection();
+
     //! @todo check section editor
     //setButtons(Close);
     //setCaption(tr("Section Editor"));
@@ -105,6 +109,44 @@ KReportSectionEditor::KReportSectionEditor(QWidget* parent)
     connect(m_btnRemove, SIGNAL(clicked(bool)), this, SLOT(btnRemove_clicked()));
     connect(m_btnMoveUp, SIGNAL(clicked(bool)), this, SLOT(btnMoveUp_clicked()));
     connect(m_btnMoveDown, SIGNAL(clicked(bool)), this, SLOT(brnMoveDown_clicked()));
+
+    // set all the properties
+
+    m_ui.cbReportHeader->setChecked(m_reportDesigner->section(KReportSectionData::ReportHeader));
+    m_ui.cbReportFooter->setChecked(m_reportDesigner->section(KReportSectionData::ReportFooter));
+
+    m_ui.cbHeadFirst->setChecked(m_reportDesigner->section(KReportSectionData::PageHeaderFirst));
+    m_ui.cbHeadOdd->setChecked(m_reportDesigner->section(KReportSectionData::PageHeaderOdd));
+    m_ui.cbHeadEven->setChecked(m_reportDesigner->section(KReportSectionData::PageHeaderEven));
+    m_ui.cbHeadLast->setChecked(m_reportDesigner->section(KReportSectionData::PageHeaderLast));
+    m_ui.cbHeadAny->setChecked(m_reportDesigner->section(KReportSectionData::PageHeaderAny));
+
+    m_ui.cbFootFirst->setChecked(m_reportDesigner->section(KReportSectionData::PageFooterFirst));
+    m_ui.cbFootOdd->setChecked(m_reportDesigner->section(KReportSectionData::PageFooterOdd));
+    m_ui.cbFootEven->setChecked(m_reportDesigner->section(KReportSectionData::PageFooterEven));
+    m_ui.cbFootLast->setChecked(m_reportDesigner->section(KReportSectionData::PageFooterLast));
+    m_ui.cbFootAny->setChecked(m_reportDesigner->section(KReportSectionData::PageFooterAny));
+
+    // now set the rw value
+    if (m_reportSectionDetail) {
+        const QStringList columnNames = m_reportDesigner->fieldNames();
+        const QStringList keys = m_reportDesigner->fieldKeys();
+        for (int i = 0; i < m_reportSectionDetail->groupSectionCount(); ++i) {
+            const QString key = m_reportSectionDetail->groupSection(i)->column();
+            const int idx = keys.indexOf(key);
+            const QString columnName = columnNames.value(idx);
+            QListWidgetItem *item = new QListWidgetItem(columnName);
+            item->setData(KeyRole, key);
+            m_ui.lbGroups->addItem(item);
+        }
+    }
+    if (m_ui.lbGroups->count() == 0) {
+    } else {
+        m_ui.lbGroups->setCurrentItem(m_ui.lbGroups->item(0));
+    }
+    updateButtonsForItem(m_ui.lbGroups->currentItem());
+    updateAddButton();
+    updateButtonsForRow(m_ui.lbGroups->currentRow());
 }
 
 /*
@@ -233,52 +275,6 @@ void KReportSectionEditor::cbFootOdd_toggled(bool yes)
         }
     }
 
-}
-
-
-void KReportSectionEditor::init(KReportDesigner * rw)
-{
-    m_reportDesigner = 0;
-    // set all the properties
-
-    m_ui.cbReportHeader->setChecked(rw->section(KReportSectionData::ReportHeader));
-    m_ui.cbReportFooter->setChecked(rw->section(KReportSectionData::ReportFooter));
-
-    m_ui.cbHeadFirst->setChecked(rw->section(KReportSectionData::PageHeaderFirst));
-    m_ui.cbHeadOdd->setChecked(rw->section(KReportSectionData::PageHeaderOdd));
-    m_ui.cbHeadEven->setChecked(rw->section(KReportSectionData::PageHeaderEven));
-    m_ui.cbHeadLast->setChecked(rw->section(KReportSectionData::PageHeaderLast));
-    m_ui.cbHeadAny->setChecked(rw->section(KReportSectionData::PageHeaderAny));
-
-    m_ui.cbFootFirst->setChecked(rw->section(KReportSectionData::PageFooterFirst));
-    m_ui.cbFootOdd->setChecked(rw->section(KReportSectionData::PageFooterOdd));
-    m_ui.cbFootEven->setChecked(rw->section(KReportSectionData::PageFooterEven));
-    m_ui.cbFootLast->setChecked(rw->section(KReportSectionData::PageFooterLast));
-    m_ui.cbFootAny->setChecked(rw->section(KReportSectionData::PageFooterAny));
-
-    // now set the rw value
-    m_reportDesigner = rw;
-    m_reportSectionDetail = rw->detailSection();
-
-    if (m_reportSectionDetail) {
-        const QStringList columnNames = m_reportDesigner->fieldNames();
-        const QStringList keys = m_reportDesigner->fieldKeys();
-        for (int i = 0; i < m_reportSectionDetail->groupSectionCount(); ++i) {
-            const QString key = m_reportSectionDetail->groupSection(i)->column();
-            const int idx = keys.indexOf(key);
-            const QString columnName = columnNames.value(idx);
-            QListWidgetItem *item = new QListWidgetItem(columnName);
-            item->setData(KeyRole, key);
-            m_ui.lbGroups->addItem(item);
-        }
-    }
-    if (m_ui.lbGroups->count() == 0) {
-    } else {
-        m_ui.lbGroups->setCurrentItem(m_ui.lbGroups->item(0));
-    }
-    updateButtonsForItem(m_ui.lbGroups->currentItem());
-    updateAddButton();
-    updateButtonsForRow(m_ui.lbGroups->currentRow());
 }
 
 bool KReportSectionEditor::editDetailGroup(KReportDesignerSectionDetailGroup * rsdg)
