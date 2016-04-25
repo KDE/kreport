@@ -28,6 +28,9 @@ namespace Scripting
 {
 
 /**
+@brief Line item script interface
+
+The user facing interface for scripting report line items
 */
 class Line : public QObject
 {

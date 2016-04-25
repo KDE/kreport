@@ -25,6 +25,9 @@ namespace Scripting
 {
 
 /**
+@brief Text item script interface
+
+The user facing interface for scripting report text items
 */
 class Text : public QObject
 {
@@ -35,45 +38,63 @@ public:
     ~Text();
 public Q_SLOTS:
 
-    /**Returns the source (column) that the field gets its data from*/
-    QString source();
-    /**Sets the source (column) for the field*/
+    //!Returns the source (column) that the text item gets its data from
+    QString source() const;
+    //!Sets the source (column) for the field
     void setSource(const QString&);
 
-    /**Gets/sets the horizontal alignment, -1 Left, 0 Center, +1 Right*/
-    int horizontalAlignment();
+    //!Returns the horizontal alignment of the label, -1 = left, 0 = center, 1 = right
+    int horizontalAlignment() const;
+    //!Sets the horizontal alignment.  Valid values are -1, 0, 1
     void setHorizonalAlignment(int);
 
-    /**Gets/sets the vertical alignment, -1 Top, 0 Middle, +1 Bottom*/
-    int verticalAlignment();
+    //!Returns the vertical alignment of the label, -1 = left, 0 = center, 1 = right
+    int verticalAlignment() const;
+    //!Sets the vertical alignment.  Valid values are -1, 0, 1
     void setVerticalAlignment(int);
 
-    QColor backgroundColor();
+    //!Returns the background color of the label
+    QColor backgroundColor() const;
+    //!Sets the background color
     void setBackgroundColor(const QColor&);
 
-    QColor foregroundColor();
+    //!Returns the foreground (text) color of the label
+    QColor foregroundColor() const;
+    //!Srets the foreground (text) color
     void setForegroundColor(const QColor&);
 
-    int backgroundOpacity();
+    //!Returns the background opacity
+    int backgroundOpacity() const;
+    //!Sets the background opacity.  Values 0-100
     void setBackgroundOpacity(int);
 
-    QColor lineColor();
+    //!Returns the line color of the label
+    QColor lineColor() const;
+    //!Sets the line color of the label
     void setLineColor(const QColor&);
 
-    int lineWeight();
+    //!Returns the line weight (width) of the label
+    int lineWeight() const;
+    //!Sets the line weight (width) of the label
     void setLineWeight(int);
 
-    /**Gets/sets the line style.  Valid values are those from Qt::PenStyle (0-5)*/
-    int lineStyle();
+    //! Returns the line style.  Valid values are those from Qt::PenStyle (0-5)
+    int lineStyle() const;
+    //! Srts the line style.  Valid values are those from Qt::PenStyle (0-5)
     void setLineStyle(int);
 
-    QPointF position();
+    //!Returns the position of the label within the parent section
+    QPointF position() const;
+    //!Sets the position of the label within the parent section
     void setPosition(const QPointF&);
 
-    QSizeF size();
+    //!Returns the size of the label
+    QSizeF size() const;
+    //!Serts the size of the label
     void setSize(const QSizeF&);
 
-    void loadFromFile(const QString&);
+    //!Load the contets for the text item from the given file
+    void loadFromFile(const QString& fileName);
 private:
     KReportItemText *m_text;
 };

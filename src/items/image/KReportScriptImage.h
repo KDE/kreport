@@ -27,8 +27,11 @@ class KReportItemImage;
 namespace Scripting
 {
 
-/**
-*/
+    /**
+     @brief Image item script interface
+
+     The user facing interface for scripting report image items
+     */
 class Image : public QObject
 {
     Q_OBJECT
@@ -43,7 +46,7 @@ public Q_SLOTS:
     * Get the position of the barcode
     * @return position in points
      */
-    QPointF position();
+    QPointF position() const;
 
 
     /**
@@ -56,7 +59,7 @@ public Q_SLOTS:
      * Get the size of the barcode
      * @return size in points
      */
-    QSizeF size();
+    QSizeF size() const;
 
     /**
      * Set the size of the barcode in points
@@ -68,7 +71,7 @@ public Q_SLOTS:
      * Get the resize mode for the image
      * @return resizeMode Clip or Stretch
      */
-    QString resizeMode();
+    QString resizeMode() const;
 
     /**
      * Sets the resize mode for the image

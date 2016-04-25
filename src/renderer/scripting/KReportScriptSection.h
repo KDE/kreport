@@ -23,6 +23,21 @@
 class KReportSectionData;
 
 /**
+ @ *brief Report section object user scripting API.
+
+ Contains methods for a report section object which can be called by user scripts. \n
+
+ Example: \n
+ \code
+ function detail()
+ {
+ this.OnRender = function()
+ {
+ debug.print("Rendering detail section!");
+ }
+ }
+ reportname.section_detail.initialize(new detail())
+ \endcode
 */
 namespace Scripting
 {
@@ -35,27 +50,31 @@ public:
     ~Section();
 
 public Q_SLOTS:
-    /**Returns the background color of the section*/
-    QColor backgroundColor();
+    //! @return the background color of the section
+    QColor backgroundColor() const;
 
-    /**Sets the background color of the section to the given color
-    */
+    //! Sets the background color of the section to the given color
     void setBackgroundColor(const QColor&);
 
-    /**Returns the section height as a real number, in points*/
-    qreal height();
-    /**Sets the section height to the given value in points*/
+    //! @return the section height as a real number, in points
+    qreal height() const;
+
+    //! Sets the section height to the given value in points
     void setHeight(qreal);
 
-    /**Returns the name of the section*/
-    QString name();
+    //! @return the name of the section
+    QString name() const;
 
-    /**Returns an object in the section, by number*/
+    //! @return an object in the section, by number
     QObject* objectByNumber(int);
-    /**Returns an object in the section, by name*/
+
+    //! @return an object in the section, by name
     QObject* objectByName(const QString&);
 
+    //! Assigns a user object to this section
     void initialize(const QJSValue &s);
+
+    //! Executed when the report is opened.  If a handler exists for this in the user object it is called.
     void eventOnRender();
 
 private:

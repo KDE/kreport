@@ -22,7 +22,11 @@
 #include <QObject>
 
 /**
-*/
+ @brief Helper giving access to various scripting constants
+
+ Contains methods for retreiving the current page number, page total
+ and access to the PenStyle enums from user scripts
+ */
 class KReportScriptConstants : public QObject
 {
     Q_OBJECT
@@ -32,6 +36,11 @@ public:
     ~KReportScriptConstants();
     Q_ENUMS(PenStyle)
 
+    //!Enum values for pen styles that can be accessed from user scripts using
+    //! \code
+    //! constants.QtSolidLine
+    //! \endcode
+    //! for example
     enum PenStyle {QtNoPen = 0, QtSolidLine, QtDashLine, QtDotLine, QtDashDotLine, QtDashDotDotLine};
 
     void setPageNumber(int p) {
@@ -41,9 +50,13 @@ public:
         m_totalPages = t;
     };
 public Q_SLOTS:
+
+    //! @return the current page number
     int PageNumber() {
         return m_currentPage;
     };
+
+    //! @return the total number of pages
     int PageTotal() {
         return m_totalPages;
     };

@@ -23,7 +23,10 @@
 #include "KReportItemField.h"
 
 /**
-*/
+ @brief Field item script interface
+
+ The user facing interface for scripting report field items
+ */
 namespace Scripting
 {
 class Field : public QObject
@@ -35,39 +38,59 @@ public:
     ~Field();
 
 public Q_SLOTS:
-    /**Returns the source (column) that the field gets its data from*/
-    QString source();
-    /**Sets the source (column) for the field*/
+    //!Returns the source (column) that the field gets its data from*
+    QString source() const;
+    //!Sets the source (column) for the field
     void setSource(const QString&);
 
-    int horizontalAlignment();
+    //!Returns the horizontal alignment of the field, -1 = left, 0 = center, 1 = right
+    int horizontalAlignment() const;
+    //!Sets the horizontal alignment.  Valid values are -1, 0, 1
     void setHorizonalAlignment(int);
 
-    int verticalAlignment();
+    //!Returns the vertical alignment of the field, -1 = left, 0 = center, 1 = right
+    int verticalAlignment() const;
+    //!Sets the vertical alignment.  Valid values are -1, 0, 1
     void setVerticalAlignment(int);
 
-    QColor backgroundColor();
+    //!Returns the background color of the field
+    QColor backgroundColor() const;
+    //!Sets the background color
     void setBackgroundColor(const QColor&);
 
-    QColor foregroundColor();
+    //!Returns the foreground (text) color of the field
+    QColor foregroundColor() const;
+    //!Srets the foreground (text) color
     void setForegroundColor(const QColor&);
 
-    int backgroundOpacity();
+    //!Returns the background opacity
+    int backgroundOpacity() const;
+    //!Sets the background opacity.  Values 0-100
     void setBackgroundOpacity(int);
 
-    QColor lineColor();
+    //!Returns the line color of the field
+    QColor lineColor() const;
+    //!Sets the line color of the field
     void setLineColor(const QColor&);
 
-    int lineWeight();
+    //!Returns the line weight (width) of the field
+    int lineWeight() const;
+    //!Sets the line weight (width) of the field
     void setLineWeight(int);
 
-    int lineStyle();
+    //! Returns the line style.  Valid values are those from Qt::PenStyle (0-5)
+    int lineStyle() const;
+    //! Srts the line style.  Valid values are those from Qt::PenStyle (0-5)
     void setLineStyle(int);
 
-    QPointF position();
+    //!Returns the position of the field within the parent section
+    QPointF position() const;
+    //!Sets the position of the field within the parent section
     void setPosition(const QPointF&);
 
-    QSizeF size();
+    //!Returns the size of the field
+    QSizeF size() const;
+    //!Serts the size of the field
     void setSize(const QSizeF&);
 
 private:
