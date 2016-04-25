@@ -52,7 +52,7 @@ public:
     @brief Perform the query for the chart and set the charts data
     */
     void populateData();
-    void setConnection(KReportData*);
+    void setConnection(const KReportData *c);
 
     /**
     @brief Set the value of a field from the master (report) data set
@@ -105,7 +105,7 @@ protected:
 
 private:
     virtual void createProperties();
-    KReportData *m_reportData;
+    const KReportData *m_reportData;
 
     friend class Scripting::Chart;
 

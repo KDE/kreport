@@ -214,7 +214,7 @@ void KReportItemChart::setColorScheme(const QString &cs)
     }
 }
 
-void KReportItemChart::setConnection(KReportData *c)
+void KReportItemChart::setConnection(const KReportData *c)
 {
     m_reportData = c;
     populateData();
