@@ -460,13 +460,10 @@ void KReportDesigner::slotSectionEditor()
 
 void KReportDesigner::setReportData(KReportData* kodata)
 {
-    //kreportDebug();
-    if (kodata) {
-        d->kordata = kodata;
-        slotPageButton_Pressed();
-        setModified(true);
-        emit reportDataChanged();
-    }
+    d->kordata = kodata;
+    slotPageButton_Pressed();
+    setModified(true);
+    emit reportDataChanged();
 }
 
 KReportDesignerSection * KReportDesigner::section(KReportSectionData::Section s) const
@@ -856,7 +853,7 @@ QSize KReportDesigner::sizeHint() const
 }
 
 int KReportDesigner::pageWidthPx() const
-{    
+{
     KReportPageOptions po;
     po.setPageSize(d->set->property("page-size").value().toString());
     po.setPortrait(d->set->property("print-orientation").value().toString() == QLatin1String("portrait"));
@@ -865,8 +862,8 @@ int KReportDesigner::pageWidthPx() const
     int width = pageSizePx.width();
     width = width - POINT_TO_INCH(d->set->property("margin-left").value().toDouble()) * KReportDpi::dpiX();
     width = width - POINT_TO_INCH(d->set->property("margin-right").value().toDouble()) * KReportDpi::dpiX();
-    
-    return width;    
+
+    return width;
 }
 
 void KReportDesigner::resizeEvent(QResizeEvent * event)
