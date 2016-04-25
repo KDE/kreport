@@ -299,7 +299,7 @@ void KReportItemChart::populateData()
     }
 }
 
-QStringList KReportItemChart::masterFields()
+QStringList KReportItemChart::masterFields() const
 {
     return m_linkMaster->value().toString().split(',');
 }
