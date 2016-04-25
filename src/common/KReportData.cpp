@@ -72,7 +72,7 @@ QStringList KReportData::dataSourceNames() const
     return dataSources();
 }
 
-KReportData* KReportData::data(const QString &source)
+KReportData* KReportData::create(const QString &source)
 {
     Q_UNUSED(source);
     return 0;

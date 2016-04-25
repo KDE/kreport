@@ -235,7 +235,7 @@ void KReportItemChart::populateData()
         QString src = m_dataSource->value().toString();
 
         if (!src.isEmpty()) {
-            KReportData *curs = m_reportData->data(src);
+            KReportData *curs = m_reportData->create(src);
             if (curs) {
                 const QStringList keys = m_links.keys();
                 foreach(const QString& field, keys) {

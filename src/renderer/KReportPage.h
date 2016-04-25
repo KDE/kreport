@@ -38,6 +38,7 @@ public:
 
     ~KReportPage();
 
+    //! Renders page @a page (counted from 1).
     void renderPage(int page);
 
 public Q_SLOTS:

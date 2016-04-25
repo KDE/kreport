@@ -111,10 +111,10 @@ public:
     //! Returns dataSources() by default
     virtual QStringList dataSourceNames() const;
 
-    //! Allow a driver to create a new instance with a new data source
-    //! source is a driver specific identifier
-    //! Owner of the returned pointer is the caller
-    virtual KReportData* data(const QString &source);
+    //! Creates a new instance with data source. Default implementation returns @c nullptr.
+    //! @a source is a driver-specific identifier.
+    //! Owner of the returned pointer is the caller.
+    virtual KReportData* create(const QString &source);
 };
 
 #endif
