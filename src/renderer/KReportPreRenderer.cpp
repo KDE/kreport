@@ -64,6 +64,7 @@ KReportPreRendererPrivate::~KReportPreRendererPrivate()
 {
     delete m_reportDocument;
     delete m_oneRecord;
+    delete m_document;
 
     m_postProcText.clear();
 }
@@ -399,6 +400,211 @@ void KReportPreRendererPrivate::asyncItemsFinished()
     delete asyncManager;
 }
 
+bool KReportPreRendererPrivate::generateDocument()
+{
+    if (!m_valid || !m_reportDocument || !m_kodata) {
+        return false;
+    }
+
+    // Do this check now so we don't have to undo a lot of work later if it fails
+    KReportLabelSizeInfo label;
+    if (m_reportDocument->page.getPageSize() == QLatin1String("Labels")) {
+        label = KReportLabelSizeInfo::find(m_reportDocument->page.getLabelType());
+        if (label.isNull()) {
+            return false;
+        }
+    }
+
+    //kreportDebug() << "Creating Document";
+    m_document = new ORODocument(m_reportDocument->m_title);
+
+    m_pageCounter  = 0;
+    m_yOffset      = 0.0;
+
+    //kreportDebug() << "Calculating Margins";
+    if (!label.isNull()) {
+        if (m_reportDocument->page.isPortrait()) {
+            m_topMargin = (label.startY() / 100.0);
+            m_bottomMargin = 0;
+            m_rightMargin = 0;
+            m_leftMargin = (label.startX() / 100.0);
+        } else {
+            m_topMargin = (label.startX() / 100.0);
+            m_bottomMargin = 0;
+            m_rightMargin = 0;
+            m_leftMargin = (label.startY() / 100.0);
+        }
+    } else {
+        m_topMargin    = m_reportDocument->page.getMarginTop();
+        m_bottomMargin = m_reportDocument->page.getMarginBottom();
+        m_rightMargin  = m_reportDocument->page.getMarginRight();
+        m_leftMargin   = m_reportDocument->page.getMarginLeft();
+        //kreportDebug() << "Margins:" << m_topMargin << m_bottomMargin << m_rightMargin << m_leftMargin;
+    }
+
+    //kreportDebug() << "Calculating Page Size";
+    KReportPageOptions rpo(m_reportDocument->page);
+    // This should reflect the information of the report page size
+    if (m_reportDocument->page.getPageSize() == QLatin1String("Custom")) {
+        m_maxWidth = m_reportDocument->page.getCustomWidth();
+        m_maxHeight = m_reportDocument->page.getCustomHeight();
+    } else {
+        if (!label.isNull()) {
+            m_maxWidth = label.width();
+            m_maxHeight = label.height();
+            rpo.setPageSize(label.paper());
+        } else {
+            // lookup the correct size information for the specified size paper
+            QSizeF pageSizePx = m_reportDocument->page.pixelSize();
+
+            m_maxWidth = pageSizePx.width();
+            m_maxHeight = pageSizePx.height();
+        }
+    }
+
+    if (!m_reportDocument->page.isPortrait()) {
+        qreal tmp = m_maxWidth;
+        m_maxWidth = m_maxHeight;
+        m_maxHeight = tmp;
+    }
+
+    //kreportDebug() << "Page Size:" << m_maxWidth << m_maxHeight;
+
+    m_document->setPageOptions(rpo);
+    m_kodata->setSorting(m_reportDocument->m_detailSection->m_sortedFields);
+    if (!m_kodata->open()) {
+        return false;
+    }
+
+    #ifdef KREPORT_SCRIPTING
+    initEngine();
+    connect(m_scriptHandler, SIGNAL(groupChanged(QMap<QString, QVariant>)),
+            this, SIGNAL(groupChanged(QMap<QString, QVariant>)));
+
+    //Loop through all abjects that have been registered, and register them with the script handler
+    if (m_scriptHandler) {
+        QMapIterator<QString, QObject*> i(m_scriptObjects);
+        while (i.hasNext()) {
+            i.next();
+            m_scriptHandler->registerScriptObject(i.value(), i.key());
+        }
+        //execute the script, if it fails, abort and return the empty document
+        if (!m_scriptHandler->trigger()) {
+            m_scriptHandler->displayErrors();
+            return m_document;
+        }
+    }
+    #endif
+
+    createNewPage();
+    if (!label.isNull()) {
+        // Label Print Run
+        // remember the initial margin setting as we will be modifying
+        // the value and restoring it as we move around
+        qreal margin = m_leftMargin;
+
+        m_yOffset = m_topMargin;
+
+        qreal w = (label.width() / 100.0);
+        qreal wg = (label.xGap() / 100.0);
+        qreal h = (label.height() / 100.0);
+        qreal hg = (label.yGap() / 100.0);
+        int numCols = label.columns();
+        int numRows = label.rows();
+        qreal tmp;
+
+        // flip the value around if we are printing landscape
+        if (!m_reportDocument->page.isPortrait()) {
+            w = (label.height() / 100.0);
+            wg = (label.yGap() / 100.0);
+            h = (label.width() / 100.0);
+            hg = (label.xGap() / 100.0);
+            numCols = label.rows();
+            numRows = label.columns();
+        }
+
+        KReportDetailSectionData * detailData = m_reportDocument->m_detailSection;
+        if (detailData->m_detailSection) {
+            KReportData *mydata = m_kodata;
+
+            if (mydata && mydata->recordCount() > 0) { /* && !((query = orqThis->getQuery())->eof()))*/
+                if (!mydata->moveFirst()) {
+                    return false;
+                }
+                int row = 0;
+                int col = 0;
+                do {
+                    tmp = m_yOffset; // store the value as renderSection changes it
+                    renderSection(*(detailData->m_detailSection));
+                    m_yOffset = tmp; // restore the value that renderSection modified
+
+                    col++;
+                    m_leftMargin += w + wg;
+                    if (col >= numCols) {
+                        m_leftMargin = margin; // reset back to original value
+                        col = 0;
+                        row++;
+                        m_yOffset += h + hg;
+                        if (row >= numRows) {
+                            m_yOffset = m_topMargin;
+                            row = 0;
+                            createNewPage();
+                        }
+                    }
+                } while (mydata->moveNext());
+            }
+        }
+
+    } else {
+        // Normal Print Run
+        if (m_reportDocument->m_reportHeader) {
+            renderSection(*(m_reportDocument->m_reportHeader));
+        }
+
+        if (m_reportDocument->m_detailSection) {
+            renderDetailSection(m_reportDocument->m_detailSection);
+        }
+
+        if (m_reportDocument->m_reportFooter) {
+            if (renderSectionSize(*(m_reportDocument->m_reportFooter)) + finishCurPageSize(true) + m_bottomMargin + m_yOffset >= m_maxHeight) {
+                createNewPage();
+            }
+            renderSection(*(m_reportDocument->m_reportFooter));
+        }
+    }
+    finishCurPage(true);
+
+    #ifdef KREPORT_SCRIPTING
+    // _postProcText contains those text boxes that need to be updated
+    // with information that wasn't available at the time it was added to the document
+    m_scriptHandler->setPageTotal(m_document->pages());
+
+    for (int i = 0; i < m_postProcText.size(); i++) {
+        OROTextBox * tb = m_postProcText.at(i);
+
+        m_scriptHandler->setPageNumber(tb->page()->page() + 1);
+
+        tb->setText(m_scriptHandler->evaluate(tb->text()).toString());
+    }
+    #endif
+
+    asyncManager->startRendering();
+
+    #ifdef KREPORT_SCRIPTING
+    m_scriptHandler->displayErrors();
+    #endif
+
+    if (!m_kodata->close()) {
+        return false;
+    }
+    #ifdef KREPORT_SCRIPTING
+    delete m_scriptHandler;
+    #endif
+    //delete m_kodata;
+    m_postProcText.clear();
+
+    return true;
+}
 
 //===========================KReportPreRenderer===============================
 
@@ -418,202 +624,25 @@ void KReportPreRenderer::setName(const QString &n)
     d->m_reportDocument->setName(n);
 }
 
-ORODocument* KReportPreRenderer::generate()
+bool KReportPreRenderer::isValid() const
 {
-    if (d == 0 || !d->m_valid || d->m_reportDocument == 0 || d->m_kodata == 0)
-        return 0;
+    if (d && d->m_valid)
+        return true;
+    return false;
+}
 
-    // Do this check now so we don't have to undo a lot of work later if it fails
-    KReportLabelSizeInfo label;
-    if (d->m_reportDocument->page.getPageSize() == QLatin1String("Labels")) {
-        label = KReportLabelSizeInfo::find(d->m_reportDocument->page.getLabelType());
-        if (label.isNull())
-            return 0;
+ORODocument* KReportPreRenderer::document()
+{
+    return d->m_document;
+}
+
+bool KReportPreRenderer::generateDocument()
+{
+//    delete d->m_document;
+    if (!d->generateDocument()) {
+        delete d->m_document;
+        d->m_document = 0;
     }
-
-    //kreportDebug() << "Creating Document";
-    d->m_document = new ORODocument(d->m_reportDocument->m_title);
-
-    d->m_pageCounter  = 0;
-    d->m_yOffset      = 0.0;
-
-    //kreportDebug() << "Calculating Margins";
-    if (!label.isNull()) {
-        if (d->m_reportDocument->page.isPortrait()) {
-            d->m_topMargin = (label.startY() / 100.0);
-            d->m_bottomMargin = 0;
-            d->m_rightMargin = 0;
-            d->m_leftMargin = (label.startX() / 100.0);
-        } else {
-            d->m_topMargin = (label.startX() / 100.0);
-            d->m_bottomMargin = 0;
-            d->m_rightMargin = 0;
-            d->m_leftMargin = (label.startY() / 100.0);
-        }
-    } else {
-        d->m_topMargin    = d->m_reportDocument->page.getMarginTop();
-        d->m_bottomMargin = d->m_reportDocument->page.getMarginBottom();
-        d->m_rightMargin  = d->m_reportDocument->page.getMarginRight();
-        d->m_leftMargin   = d->m_reportDocument->page.getMarginLeft();
-        //kreportDebug() << "Margins:" << d->m_topMargin << d->m_bottomMargin << d->m_rightMargin << d->m_leftMargin;
-    }
-
-    //kreportDebug() << "Calculating Page Size";
-    KReportPageOptions rpo(d->m_reportDocument->page);
-    // This should reflect the information of the report page size
-    if (d->m_reportDocument->page.getPageSize() == QLatin1String("Custom")) {
-        d->m_maxWidth = d->m_reportDocument->page.getCustomWidth();
-        d->m_maxHeight = d->m_reportDocument->page.getCustomHeight();
-    } else {
-        if (!label.isNull()) {
-            d->m_maxWidth = label.width();
-            d->m_maxHeight = label.height();
-            rpo.setPageSize(label.paper());
-        } else {
-            // lookup the correct size information for the specified size paper
-	    QSizeF pageSizePx = d->m_reportDocument->page.pixelSize();
-
-	    d->m_maxWidth = pageSizePx.width();
-	    d->m_maxHeight = pageSizePx.height();
-        }
-    }
-
-    if (!d->m_reportDocument->page.isPortrait()) {
-        qreal tmp = d->m_maxWidth;
-        d->m_maxWidth = d->m_maxHeight;
-        d->m_maxHeight = tmp;
-    }
-
-    //kreportDebug() << "Page Size:" << d->m_maxWidth << d->m_maxHeight;
-
-    d->m_document->setPageOptions(rpo);
-    d->m_kodata->setSorting(d->m_reportDocument->m_detailSection->m_sortedFields);
-    d->m_kodata->open();
-
-#ifdef KREPORT_SCRIPTING
-    d->initEngine();
-    connect(d->m_scriptHandler, SIGNAL(groupChanged(QMap<QString, QVariant>)),
-            this, SIGNAL(groupChanged(QMap<QString, QVariant>)));
-
-    //Loop through all abjects that have been registered, and register them with the script handler
-    if (d->m_scriptHandler) {
-        QMapIterator<QString, QObject*> i(d->m_scriptObjects);
-        while (i.hasNext()) {
-            i.next();
-            d->m_scriptHandler->registerScriptObject(i.value(), i.key());
-        }
-        //execute the script, if it fails, abort and return the empty document
-        if (!d->m_scriptHandler->trigger()) {
-            d->m_scriptHandler->displayErrors();
-            return d->m_document;
-        }
-    }
-#endif
-
-    d->createNewPage();
-    if (!label.isNull()) {
-// Label Print Run
-        // remember the initial margin setting as we will be modifying
-        // the value and restoring it as we move around
-        qreal margin = d->m_leftMargin;
-
-        d->m_yOffset = d->m_topMargin;
-
-        qreal w = (label.width() / 100.0);
-        qreal wg = (label.xGap() / 100.0);
-        qreal h = (label.height() / 100.0);
-        qreal hg = (label.yGap() / 100.0);
-        int numCols = label.columns();
-        int numRows = label.rows();
-        qreal tmp;
-
-        // flip the value around if we are printing landscape
-        if (!d->m_reportDocument->page.isPortrait()) {
-            w = (label.height() / 100.0);
-            wg = (label.yGap() / 100.0);
-            h = (label.width() / 100.0);
-            hg = (label.xGap() / 100.0);
-            numCols = label.rows();
-            numRows = label.columns();
-        }
-
-        KReportDetailSectionData * detailData = d->m_reportDocument->m_detailSection;
-        if (detailData->m_detailSection) {
-            KReportData *mydata = d->m_kodata;
-
-            if (mydata && mydata->recordCount() > 0) { /* && !((query = orqThis->getQuery())->eof()))*/
-                mydata->moveFirst();
-                int row = 0;
-                int col = 0;
-                do {
-                    tmp = d->m_yOffset; // store the value as renderSection changes it
-                    d->renderSection(*(detailData->m_detailSection));
-                    d->m_yOffset = tmp; // restore the value that renderSection modified
-
-                    col++;
-                    d->m_leftMargin += w + wg;
-                    if (col >= numCols) {
-                        d->m_leftMargin = margin; // reset back to original value
-                        col = 0;
-                        row++;
-                        d->m_yOffset += h + hg;
-                        if (row >= numRows) {
-                            d->m_yOffset = d->m_topMargin;
-                            row = 0;
-                            d->createNewPage();
-                        }
-                    }
-                } while (mydata->moveNext());
-            }
-        }
-
-    } else {
-// Normal Print Run
-        if (d->m_reportDocument->m_reportHeader) {
-            d->renderSection(*(d->m_reportDocument->m_reportHeader));
-        }
-
-        if (d->m_reportDocument->m_detailSection) {
-            d->renderDetailSection(d->m_reportDocument->m_detailSection);
-        }
-
-        if (d->m_reportDocument->m_reportFooter) {
-            if (d->renderSectionSize(*(d->m_reportDocument->m_reportFooter)) + d->finishCurPageSize(true) + d->m_bottomMargin + d->m_yOffset >= d->m_maxHeight) {
-                d->createNewPage();
-            }
-            d->renderSection(*(d->m_reportDocument->m_reportFooter));
-        }
-    }
-    d->finishCurPage(true);
-
-#ifdef KREPORT_SCRIPTING
-    // _postProcText contains those text boxes that need to be updated
-    // with information that wasn't available at the time it was added to the document
-    d->m_scriptHandler->setPageTotal(d->m_document->pages());
-
-    for (int i = 0; i < d->m_postProcText.size(); i++) {
-        OROTextBox * tb = d->m_postProcText.at(i);
-
-        d->m_scriptHandler->setPageNumber(tb->page()->page() + 1);
-
-        tb->setText(d->m_scriptHandler->evaluate(tb->text()).toString());
-    }
-#endif
-
-    d->asyncManager->startRendering();
-
-#ifdef KREPORT_SCRIPTING
-    d->m_scriptHandler->displayErrors();
-#endif
-
-    d->m_kodata->close();
-#ifdef KREPORT_SCRIPTING
-    delete d->m_scriptHandler;
-    d->m_scriptHandler = 0;
-#endif
-    //! @todo check ownership delete d->m_kodata;
-    d->m_postProcText.clear();
-
     return d->m_document;
 }
 
@@ -637,13 +666,6 @@ bool KReportPreRenderer::setDocument(const QDomElement &document)
     d->m_reportDocument = new KReportDocument(document);
     d->m_valid = d->m_reportDocument->isValid();
     return isValid();
-}
-
-bool KReportPreRenderer::isValid() const
-{
-    if (d && d->m_valid)
-        return true;
-    return false;
 }
 
 #ifdef KREPORT_SCRIPTING

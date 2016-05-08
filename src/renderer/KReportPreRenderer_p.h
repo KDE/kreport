@@ -81,6 +81,10 @@ public:
     void initEngine();
 #endif
 
+    //! Generates m_document. Returns true on success.
+    //! @note m_document is not removed on failure, caller should remove it.
+    bool generateDocument();
+
     KReportPrivate::AsyncItemManager* asyncManager;
 
 private Q_SLOTS:

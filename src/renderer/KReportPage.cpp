@@ -55,10 +55,8 @@ KReportPage::KReportPage(QWidget *parent, ORODocument *document)
         : QObject(parent), QGraphicsRectItem()
         , d(new Private(document))
 {
-    //! @todo setAttribute(Qt::WA_NoBackground);
-    //kreportDebug() << "CREATED PAGE";
-    int pageWidth = 0;
-    int pageHeight = 0;
+    int pageWidth;
+    int pageHeight;
 
     if (d->reportDocument) {
         QString pageSize = d->reportDocument->pageOptions().getPageSize();
@@ -74,7 +72,7 @@ KReportPage::KReportPage(QWidget *parent, ORODocument *document)
             pageHeight = d->reportDocument->pageOptions().pixelSize().height();
         }
     }
-    setRect(0,0,pageWidth, pageHeight);
+    setRect(0, 0, pageWidth, pageHeight);
     //kreportDebug() << "PAGE IS " << pageWidth << "x" << pageHeight;
     d->pixmap = QPixmap(pageWidth, pageHeight);
     d->renderer = d->factory.createInstance(QLatin1String("screen"));

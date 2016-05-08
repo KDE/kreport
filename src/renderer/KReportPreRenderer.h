@@ -55,8 +55,10 @@ public:
     void registerScriptObject(QObject*, const QString&);
 #endif
 
-    ORODocument * generate();
+    bool generateDocument();
 
+    ORODocument *document();
+    
     /**
     @brief Set the name of the report so that it can be used internally by the script engine
     */

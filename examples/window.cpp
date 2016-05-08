@@ -98,6 +98,8 @@ void Window::showDesign(const QDomElement &design)
     preRenderer.setSourceData(m_testData);
     preRenderer.setName("example_report");
 
-    m_reportView->setDocument(preRenderer.generate());
-    m_reportView->moveToFirstPage();
+    if (preRenderer.generateDocument()) {
+        m_reportView->setDocument(preRenderer.document());
+        m_reportView->moveToFirstPage();
+    }
 }
