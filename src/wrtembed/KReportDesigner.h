@@ -72,7 +72,7 @@ public:
     @brief Sets the report data
     The report data interface contains functions to retrieve data
     and information about the fields.
-    @param kodata Pointer to KReportData instance
+    @param kodata Pointer to KReportData instance, ownership is transferred
     */
     void setReportData(KReportData* kodata);
 

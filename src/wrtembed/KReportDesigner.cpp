@@ -133,6 +133,7 @@ public:
         delete zoom;
         delete sectionData;
         delete set;
+        delete kordata;
     }
 
     QGridLayout *grid;
@@ -460,6 +461,11 @@ void KReportDesigner::slotSectionEditor()
 
 void KReportDesigner::setReportData(KReportData* kodata)
 {
+    if (d->kordata == kodata) {
+        return;
+    }
+    delete d->kordata;
+
     d->kordata = kodata;
     slotPageButton_Pressed();
     setModified(true);

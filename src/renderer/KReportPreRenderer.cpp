@@ -51,7 +51,7 @@ KReportPreRendererPrivate::KReportPreRendererPrivate()
     m_pageCounter = 0;
     m_maxHeight = m_maxWidth = 0.0;
     m_oneRecord = new KReportPrivate::OneRecordData();
-    m_kodata = m_oneRecord;
+    m_kodata = 0;
 #ifdef KREPORT_SCRIPTING
     m_scriptHandler = 0;
 #endif
@@ -63,9 +63,8 @@ KReportPreRendererPrivate::KReportPreRendererPrivate()
 KReportPreRendererPrivate::~KReportPreRendererPrivate()
 {
     delete m_reportDocument;
-    delete m_oneRecord;
     delete m_document;
-
+    delete m_oneRecord;
     m_postProcText.clear();
 }
 
@@ -402,7 +401,11 @@ void KReportPreRendererPrivate::asyncItemsFinished()
 
 bool KReportPreRendererPrivate::generateDocument()
 {
-    if (!m_valid || !m_reportDocument || !m_kodata) {
+    if (!m_kodata) {
+        m_kodata = m_oneRecord;
+    }
+
+    if (!m_valid || !m_reportDocument) {
         return false;
     }
 
@@ -599,8 +602,13 @@ bool KReportPreRendererPrivate::generateDocument()
     }
     #ifdef KREPORT_SCRIPTING
     delete m_scriptHandler;
+    m_scriptHandler = 0;
     #endif
-    //delete m_kodata;
+
+    if (m_kodata != m_oneRecord) {
+        delete m_kodata;
+        m_kodata = 0;
+    }
     m_postProcText.clear();
 
     return true;
@@ -648,7 +656,8 @@ bool KReportPreRenderer::generateDocument()
 
 void KReportPreRenderer::setSourceData(KReportData *data)
 {
-    if (data) {
+    if (d && data != d->m_kodata) {
+        delete d->m_kodata;
         d->m_kodata = data;
     }
 }

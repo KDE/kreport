@@ -48,7 +48,8 @@ public:
 
     virtual ~KReportPreRenderer();
 
-    void setSourceData(KReportData*);
+    //! Sets source data to @a data, takes ownership
+    void setSourceData(KReportData* data);
 
 #ifdef KREPORT_SCRIPTING
     KReportScriptHandler *scriptHandler();
@@ -58,7 +59,7 @@ public:
     bool generateDocument();
 
     ORODocument *document();
-    
+
     /**
     @brief Set the name of the report so that it can be used internally by the script engine
     */
