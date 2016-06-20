@@ -104,7 +104,7 @@ void KReportDesignerItemWeb::buildXML(QDomDocument *doc, QDomElement *parent)
 
 void KReportDesignerItemWeb::slotPropertyChanged(KPropertySet &s, KProperty &p)
 {
-    if (p.name() == "Name") {
+    if (p.name() == "name") {
         if (!m_reportDesigner->isEntityNameUnique(p.value().toString(), this)) {
             p.setValue(m_oldName);
         }

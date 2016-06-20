@@ -166,7 +166,7 @@ void KReportDesignerItemField::slotPropertyChanged(KPropertySet &s, KProperty &p
 {
     Q_UNUSED(s);
 
-    if (p.name() == "Name") {
+    if (p.name() == "name") {
         //For some reason p.oldValue returns an empty string
         if (!m_reportDesigner->isEntityNameUnique(p.value().toString(), this)) {
             p.setValue(m_oldName);

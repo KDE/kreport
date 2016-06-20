@@ -137,7 +137,7 @@ void KReportDesignerItemLine::slotPropertyChanged(KPropertySet &s, KProperty &p)
 
         setLine(m_start.toScene().x(), m_start.toScene().y(), m_end.toScene().x(), m_end.toScene().y());
     }
-    else if (p.name() == "Name") {
+    else if (p.name() == "name") {
         //For some reason p.oldValue returns an empty string
         if (!m_reportDesigner->isEntityNameUnique(p.value().toString(), this)) {
             p.setValue(m_oldName);
