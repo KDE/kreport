@@ -31,6 +31,7 @@
 #include "KReportRuler_p.h"
 #include "KReportZoomHandler.h"
 #include "KReportDpi.h"
+#include "KReportPluginMetaData.h"
 #include "kreport_debug.h"
 
 #include <QLabel>
@@ -227,6 +228,12 @@ void KReportDesignerSection::initFromXML(const QDomNode & section)
                     KReportDesignerItemRectBase *entity = dynamic_cast<KReportDesignerItemRectBase*>(obj);
                     if (entity) {
                         entity->setVisible(true);
+                    }
+                    KReportItemBase *item = dynamic_cast<KReportItemBase*>(obj);
+                    if (item) {
+                        KReportDesigner::addMetaProperties(item->propertySet(),
+                                                           plugin->metaData()->name(),
+                                                           plugin->metaData()->iconName());
                     }
                     continue;
                 }

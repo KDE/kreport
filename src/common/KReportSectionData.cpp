@@ -18,12 +18,11 @@
  */
 
 #include "KReportSectionData.h"
-
 #include "KReportDocument.h"
-
 #include "KReportPluginInterface.h"
 #include "KReportPluginManager.h"
 #include "KReportItemLine.h"
+#include "KReportDesigner.h"
 #include "kreport_debug.h"
 
 #include <KPropertySet>
@@ -105,6 +104,8 @@ bool KReportSectionData::xLessThan(KReportItemBase* s1, KReportItemBase* s2)
 void KReportSectionData::createProperties(const QDomElement & elemSource)
 {
     m_set = new KPropertySet(this);
+    KReportDesigner::addMetaProperties(m_set,
+        tr("Section", "Report section"), QLatin1String("kreport_section_element"));
 
     m_height = new KProperty("height", KReportUnit(KReportUnit::Centimeter).fromUserValue(2.0), tr("Height"));
     m_backgroundColor = new KProperty("background-color", QColor(Qt::white), tr("Background Color"));

@@ -271,6 +271,17 @@ public:
 
     void plugItemActions(const QList<QAction*> &actList);
 
+    /**
+     * @brief Adds meta-properties to the property set @a set for consumption by property editor
+     * - "this:classString" - user-visible translated name of element type, e.g. tr("Label")
+     * - "this:iconName" - name of user-visible icon, e.g. "kreport_label_element"
+     *
+     * All the properties are set to invisible.
+     * @see propertySet()
+     */
+    static void addMetaProperties(KPropertySet* set, const QString &classString,
+                                  const QString &iconName);
+
 public Q_SLOTS:
 
     void slotEditDelete();

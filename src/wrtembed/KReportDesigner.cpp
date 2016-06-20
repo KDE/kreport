@@ -34,6 +34,7 @@
 #include "KReportPluginInterface.h"
 #include "KReportPluginManager.h"
 #include "KReportSection.h"
+#include "KReportPluginMetaData.h"
 #include "kreport_debug.h"
 
 #include <KStandardShortcut>
@@ -719,6 +720,8 @@ void KReportDesigner::createProperties()
 {
     QStringList keys, strings;
     d->set = new KPropertySet;
+    KReportDesigner::addMetaProperties(d->set,
+        tr("Report", "Main report element"), QLatin1String("kreport_report_element"));
 
     connect(d->set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
@@ -989,9 +992,12 @@ void KReportDesigner::sectionMouseReleaseEvent(KReportDesignerSectionView * v, Q
 
         if (d->sectionData->mouseAction == ReportWriterSectionData::MA_Insert) {
             QGraphicsItem * item = 0;
+            QString classString;
+            QString iconName;
             if (d->sectionData->insertItem == QLatin1String("org.kde.kreport.line")) {
                 item = new KReportDesignerItemLine(v->designer(), v->scene(), pos, end);
-
+                classString = tr("Line", "Report line element");
+                iconName = QLatin1String("kreport_line_element");
             }
             else {
                 KReportPluginManager* pluginManager = KReportPluginManager::self();
@@ -1000,6 +1006,8 @@ void KReportDesigner::sectionMouseReleaseEvent(KReportDesignerSectionView * v, Q
                     QObject *obj = plug->createDesignerInstance(v->designer(), v->scene(), pos);
                     if (obj) {
                         item = dynamic_cast<QGraphicsItem*>(obj);
+                        classString = plug->metaData()->name();
+                        iconName = plug->metaData()->iconName();
                     }
                 }
                 else {
@@ -1011,7 +1019,9 @@ void KReportDesigner::sectionMouseReleaseEvent(KReportDesignerSectionView * v, Q
                 item->setSelected(true);
                 KReportItemBase* baseReportItem = dynamic_cast<KReportItemBase*>(item);
                 if (baseReportItem) {
-                    changeSet(baseReportItem->propertySet());
+                    KPropertySet *set = baseReportItem->propertySet();
+                    KReportDesigner::addMetaProperties(set, classString, iconName);
+                    changeSet(set);
                     if (v && v->designer()) {
                         v->designer()->setModified(true);
                     }
@@ -1526,4 +1536,15 @@ void KReportDesigner::slotItemTriggered(bool checked)
         return;
     }
     slotItem(theSender->objectName());
+}
+
+void KReportDesigner::addMetaProperties(KPropertySet* set, const QString &classString,
+                                        const QString &iconName)
+{
+    Q_ASSERT(set);
+    KProperty *prop;
+    set->addProperty(prop = new KProperty("this:classString", classString));
+    prop->setVisible(false);
+    set->addProperty(prop = new KProperty("this:iconName", iconName));
+    prop->setVisible(false);
 }
