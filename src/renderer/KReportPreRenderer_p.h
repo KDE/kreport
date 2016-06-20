@@ -30,6 +30,7 @@
 namespace KReportPrivate{
   class OneRecordData;
 }
+class KReportPreRenderer;
 
 /*! This class is the private class that houses all the internal
   variables so we can provide a cleaner interface to the user
@@ -39,9 +40,10 @@ class KReportPreRendererPrivate : public QObject
 {
     Q_OBJECT
 public:
-    KReportPreRendererPrivate();
+    KReportPreRendererPrivate(KReportPreRenderer *preRenderer);
     virtual ~KReportPreRendererPrivate();
 
+    KReportPreRenderer * const m_preRenderer;
     bool m_valid;
 
     ORODocument* m_document;

@@ -39,7 +39,8 @@
 #include <QApplication>
 #include "kreport_debug.h"
 
-KReportPreRendererPrivate::KReportPreRendererPrivate()
+KReportPreRendererPrivate::KReportPreRendererPrivate(KReportPreRenderer *preRenderer)
+ : m_preRenderer(preRenderer)
 {
     m_valid = false;
     m_document = 0;
@@ -482,7 +483,7 @@ bool KReportPreRendererPrivate::generateDocument()
     #ifdef KREPORT_SCRIPTING
     initEngine();
     connect(m_scriptHandler, SIGNAL(groupChanged(QMap<QString, QVariant>)),
-            this, SIGNAL(groupChanged(QMap<QString, QVariant>)));
+            m_preRenderer, SIGNAL(groupChanged(QMap<QString, QVariant>)));
 
     //Loop through all abjects that have been registered, and register them with the script handler
     if (m_scriptHandler) {
@@ -617,7 +618,7 @@ bool KReportPreRendererPrivate::generateDocument()
 //===========================KReportPreRenderer===============================
 
 KReportPreRenderer::KReportPreRenderer(const QDomElement & document)
-    : d(new KReportPreRendererPrivate())
+    : d(new KReportPreRendererPrivate(this))
 {
     setDocument(document);
 }
