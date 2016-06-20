@@ -718,7 +718,7 @@ QStringList KReportDesigner::fieldKeys() const
 void KReportDesigner::createProperties()
 {
     QStringList keys, strings;
-    d->set = new KPropertySet(0, QLatin1String("Report"));
+    d->set = new KPropertySet;
 
     connect(d->set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));

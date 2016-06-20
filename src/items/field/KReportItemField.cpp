@@ -86,7 +86,7 @@ KReportItemField::~KReportItemField()
 
 void KReportItemField::createProperties()
 {
-    m_set = new KPropertySet(0, QLatin1String("Field"));
+    m_set = new KPropertySet;
 
     QStringList keys, strings;
 

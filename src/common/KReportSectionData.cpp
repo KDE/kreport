@@ -104,7 +104,7 @@ bool KReportSectionData::xLessThan(KReportItemBase* s1, KReportItemBase* s2)
 
 void KReportSectionData::createProperties(const QDomElement & elemSource)
 {
-    m_set = new KPropertySet(this, QLatin1String("Section"));
+    m_set = new KPropertySet(this);
 
     m_height = new KProperty("height", KReportUnit(KReportUnit::Centimeter).fromUserValue(2.0), tr("Height"));
     m_backgroundColor = new KProperty("background-color", QColor(Qt::white), tr("Background Color"));

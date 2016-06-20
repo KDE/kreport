@@ -73,7 +73,7 @@ KReportItemCheckBox::~KReportItemCheckBox()
 
 void KReportItemCheckBox::createProperties()
 {
-    m_set = new KPropertySet(0, QLatin1String("Check"));
+    m_set = new KPropertySet;
 
     QStringList keys, strings;
 

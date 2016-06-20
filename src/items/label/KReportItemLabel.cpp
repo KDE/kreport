@@ -88,7 +88,7 @@ void KReportItemLabel::setText(const QString& t)
 
 void KReportItemLabel::createProperties()
 {
-    m_set = new KPropertySet(0, QLatin1String("Label"));
+    m_set = new KPropertySet;
 
     m_text = new KProperty("caption", QLatin1String("Label"), tr("Caption"));
     QStringList keys, strings;

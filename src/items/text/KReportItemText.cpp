@@ -106,7 +106,7 @@ Qt::Alignment KReportItemText::textFlags() const
 
 void KReportItemText::createProperties()
 {
-    m_set = new KPropertySet(0, QLatin1String("Text"));
+    m_set = new KPropertySet;
 
     //connect ( set, SIGNAL ( propertyChanged ( KPropertySet &, KProperty & ) ), this, SLOT ( propertyChanged ( KPropertySet &, KProperty & ) ) );
 

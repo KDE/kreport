@@ -70,7 +70,7 @@ KReportItemLine::~KReportItemLine()
 
 void KReportItemLine::createProperties()
 {
-    m_set = new KPropertySet(0, QLatin1String("Line"));
+    m_set = new KPropertySet;
 
     m_lineWeight = new KProperty("line-weight", 1, tr("Line Weight"));
     m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));

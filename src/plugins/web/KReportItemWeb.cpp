@@ -62,7 +62,7 @@ void KReportItemWeb::init()
 
 void KReportItemWeb::createProperties()
 {
-    m_set = new KPropertySet(0, "web");
+    m_set = new KPropertySet;
 
     m_controlSource = new KProperty("item-data-source", QStringList(),
                                     QStringList(), QString(), tr("Data Source"));

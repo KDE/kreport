@@ -113,7 +113,7 @@ void KReportItemImage::setMode(const QString &m)
 
 void KReportItemImage::createProperties()
 {
-    m_set = new KPropertySet(0, QLatin1String("Image"));
+    m_set = new KPropertySet;
 
     m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
 

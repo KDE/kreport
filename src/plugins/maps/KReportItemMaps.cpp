@@ -60,7 +60,7 @@ KReportItemMaps::~KReportItemMaps()
 
 void KReportItemMaps::createProperties()
 {
-    m_set = new KPropertySet(0, QLatin1String("Maps"));
+    m_set = new KPropertySet;
 
     m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
 

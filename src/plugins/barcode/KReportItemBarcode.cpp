@@ -115,7 +115,7 @@ void KReportItemBarcode::setMaxLength(int i)
 
 void KReportItemBarcode::createProperties()
 {
-    m_set = new KPropertySet(0, QLatin1String("Barcode"));
+    m_set = new KPropertySet;
 
     QStringList keys, strings;
 

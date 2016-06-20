@@ -88,7 +88,7 @@ KReportItemChart::~KReportItemChart()
 void KReportItemChart::createProperties()
 {
     m_chartWidget = 0;
-    m_set = new KPropertySet(0, "Chart");
+    m_set = new KPropertySet;
 
     QStringList strings;
     QList<QVariant> keys;
