@@ -155,12 +155,6 @@ generate_export_header(KReport)
 #qt5_use_modules(KReport Widgets Xml PrintSupport)
 
 set(kreport_INCLUDE_DIRS
-    ${CMAKE_CURRENT_BINARY_DIR}
-    ${CMAKE_CURRENT_BINARY_DIR}/kreport
-    ${CMAKE_CURRENT_BINARY_DIR}/kreport/common
-    ${CMAKE_CURRENT_BINARY_DIR}/kreport/wrtembed
-    ${CMAKE_CURRENT_BINARY_DIR}/kreport/renderer
-    ${CMAKE_CURRENT_BINARY_DIR}/kreport/renderer/scripting
     ${CMAKE_CURRENT_SOURCE_DIR}/common
     ${CMAKE_CURRENT_SOURCE_DIR}/wrtembed
     ${CMAKE_CURRENT_SOURCE_DIR}/renderer
