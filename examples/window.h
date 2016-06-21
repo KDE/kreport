@@ -52,8 +52,6 @@ private:
     QDomDocument m_document;
 
     int m_currentPage;
-
-    KReportExampleData *m_testData;
 };
 
 #endif

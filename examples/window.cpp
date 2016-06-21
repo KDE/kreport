@@ -46,7 +46,6 @@ Window::Window()
     }
 #endif
 
-    m_testData = new KReportExampleData();
     KReportPluginManager* manager = KReportPluginManager::self();
     //! @todo
     Q_UNUSED(manager);
@@ -95,7 +94,7 @@ void Window::showDesign(const QDomElement &design)
         return;
     }
 
-    preRenderer.setSourceData(m_testData);
+    preRenderer.setSourceData(new KReportExampleData());
     preRenderer.setName("example_report");
 
     if (preRenderer.generateDocument()) {
