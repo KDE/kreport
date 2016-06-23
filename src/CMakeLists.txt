@@ -93,6 +93,16 @@ set(kreport_LIB_SRCS
     items/text/KReportTextPlugin.cpp
 )
 
+set(kreport_INCLUDE_DIRS
+    ${CMAKE_CURRENT_SOURCE_DIR}/common
+    ${CMAKE_CURRENT_SOURCE_DIR}/wrtembed
+    ${CMAKE_CURRENT_SOURCE_DIR}/renderer
+)
+
+set(kreport_TARGET_INCLUDE_DIRS
+    common renderer wrtembed
+)
+
 if(KREPORT_SCRIPTING)
     list(APPEND kreport_LIB_SRCS
         renderer/scripting/KReportScriptHandler.cpp
@@ -121,16 +131,24 @@ if(KREPORT_SCRIPTING)
         items/image/KReportScriptImage.cpp
         items/text/KReportScriptText.cpp
     )
+
+    qt_wrap_cpp(KReport kreport_LIB_SRCS
+        renderer/scripting/KReportGroupTracker.h
+    )
+
+    list(APPEND kreport_INCLUDE_DIRS
+        ${CMAKE_CURRENT_SOURCE_DIR}/renderer/scripting
+    )
+
+    list(APPEND kreport_TARGET_INCLUDE_DIRS
+        renderer/scripting
+    )
 endif()
 
 qt5_wrap_ui(kreport_LIB_SRCS
     wrtembed/KReportDetailGroupSectionDialog.ui
     wrtembed/KReportSectionEditor.ui
 )
-
-qt_wrap_cpp(KReport kreport_LIB_SRCS
-    renderer/scripting/KReportGroupTracker.h
-    )
 
 ecm_create_qm_loader(kreport_LIB_SRCS kreport_qt)
 
@@ -154,17 +172,10 @@ generate_export_header(KReport)
 
 #qt5_use_modules(KReport Widgets Xml PrintSupport)
 
-set(kreport_INCLUDE_DIRS
-    ${CMAKE_CURRENT_SOURCE_DIR}/common
-    ${CMAKE_CURRENT_SOURCE_DIR}/wrtembed
-    ${CMAKE_CURRENT_SOURCE_DIR}/renderer
-    ${CMAKE_CURRENT_SOURCE_DIR}/renderer/scripting
-)
-
 target_include_directories(KReport
     PUBLIC "$<BUILD_INTERFACE:${kreport_INCLUDE_DIRS}>"
     INTERFACE "$<INSTALL_INTERFACE:${INCLUDE_INSTALL_DIR}/KReport>"
-    PRIVATE common renderer renderer/scripting wrtembed
+    PRIVATE ${kreport_TARGET_INCLUDE_DIRS}
 )
 
 target_link_libraries(KReport
@@ -270,16 +281,18 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
         KReportView
 )
 
-ecm_generate_headers(kreport_FORWARDING_HEADERS
-    REQUIRED_HEADERS kreport_HEADERS
-    ORIGINAL CAMELCASE
-    RELATIVE renderer/scripting
-    HEADER_NAMES
-        KReportScriptHandler
-        KReportScriptDraw
-        KReportScriptConstants
-        KReportGroupTracker
-)
+if(KREPORT_SCRIPTING)
+    ecm_generate_headers(kreport_FORWARDING_HEADERS
+        REQUIRED_HEADERS kreport_HEADERS
+        ORIGINAL CAMELCASE
+        RELATIVE renderer/scripting
+        HEADER_NAMES
+            KReportScriptHandler
+            KReportScriptDraw
+            KReportScriptConstants
+            KReportGroupTracker
+    )
+endif()
 
 ecm_generate_headers(kreport_FORWARDING_HEADERS
     REQUIRED_HEADERS kreport_HEADERS

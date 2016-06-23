@@ -4,7 +4,6 @@ set(kreport_barcodeplugin_LIB_SRCS
     ${PROJECT_SOURCE_DIR}/src/common/kreportplugin_debug.cpp
     KReportItemBarcode.cpp
     KReportDesignerItemBarcode.cpp
-    KReportScriptBarcode.cpp
     3of9.cpp
     i2of5.cpp
     code128.cpp
@@ -18,6 +17,12 @@ set(kreport_barcodeplugin_LIB_SRCS
     KReportBarcodePlugin.cpp
     ${kreport_barcodeplugin_QM_LOADER}
 )
+
+if(KREPORT_SCRIPTING)
+    list(APPEND kreport_barcodeplugin_LIB_SRCS
+        KReportScriptBarcode.cpp
+    )
+endif()
 
 add_library(kreport_barcodeplugin MODULE ${kreport_barcodeplugin_LIB_SRCS})
 

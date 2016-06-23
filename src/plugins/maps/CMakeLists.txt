@@ -6,10 +6,15 @@ set(kreport_mapsplugin_LIB_SRCS
     KReportDesignerItemMaps.cpp
     KReportItemMaps.cpp
     KReportMapsPlugin.cpp
-    KReportScriptMaps.cpp
     MapRenderer.cpp
     ${kreport_mapsplugin_QM_LOADER}
 )
+
+if(KREPORT_SCRIPTING)
+    list(APPEND kreport_mapsplugin_LIB_SRCS
+        KReportScriptMaps.cpp
+    )
+endif()
 
 add_library(kreport_mapsplugin MODULE ${kreport_mapsplugin_LIB_SRCS})
 

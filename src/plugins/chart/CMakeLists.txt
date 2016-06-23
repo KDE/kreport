@@ -4,10 +4,15 @@ set(kreport_chartplugin_LIB_SRCS
     ${PROJECT_SOURCE_DIR}/src/common/kreportplugin_debug.cpp
     KReportItemChart.cpp
     KReportDesignerItemChart.cpp
-    KReportScriptChart.cpp
     KReportChartPlugin.cpp
     ${kreport_chartplugin_QM_LOADER}
 )
+
+if(KREPORT_SCRIPTING)
+    list(APPEND kreport_chartplugin_LIB_SRCS
+        KReportScriptChart.cpp
+    )
+endif()
 
 add_library(kreport_chartplugin MODULE ${kreport_chartplugin_LIB_SRCS})
 
