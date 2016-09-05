@@ -26,16 +26,16 @@
  Project's home page: https://community.kde.org/KReport
 
  @authors
- - Dag Andersen <danders@get2net.dk>
- - Wojciech Kosowicz <pcellix@gmail.com>
- - Shreya Pandit <shreya@shreyapandit.com>
- - Adam Pigg <adam@piggz.co.uk>
- - Jarosław Staniek <staniek@kde.org>
- - Radoslaw Wicik <rockford@wicik.pl>
- - OpenMFG, LLC <http://xtuple.com/contact>
+ - Adam Pigg <adam@piggz.co.uk> - Maintainer
+ - Jarosław Staniek <staniek@kde.org> - Developer
+ - Wojciech Kosowicz <pcellix@gmail.com> - improvements
+ - Shreya Pandit <shreya@shreyapandit.com> - Web page element
+ - Radoslaw Wicik <rockford@wicik.pl> - Map element
+ - OpenMFG, LLC <http://xtuple.com/contact> - original code
 
- Maintainers
- - Adam Pigg <adam@piggz.co.uk>
+ Contributors:
+ - Friedrich W. H. Kossebau <kossebau@kde.org> - cleanups
+ - Dag Andersen <danders@get2net.dk> - cleanups
 
  @licenses
  @lgpl
