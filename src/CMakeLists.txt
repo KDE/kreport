@@ -91,6 +91,10 @@ set(kreport_LIB_SRCS
     items/text/KReportItemText.cpp
     items/text/KReportDesignerItemText.cpp
     items/text/KReportTextPlugin.cpp
+
+    # non-source:
+    Mainpage.dox
+    Messages.sh
 )
 
 set(kreport_INCLUDE_DIRS
