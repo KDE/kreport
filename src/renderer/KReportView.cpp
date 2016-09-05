@@ -84,7 +84,7 @@ KReportView::KReportView(QWidget *parent)
 
 KReportView::~KReportView()
 {
-    kreportDebug();
+    //kreportDebug();
     delete d;
 }
 

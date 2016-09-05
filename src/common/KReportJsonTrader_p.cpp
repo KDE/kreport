@@ -105,7 +105,7 @@ QList<QPluginLoader *> KReportJsonTrader::query(const QString &servicetype,
         QStringList searchDirs;
         searchDirs += QCoreApplication::libraryPaths();
         foreach(const QString &dir, searchDirs) {
-            kreportDebug() << dir;
+            //kreportDebug() << dir;
             QString possiblePath = dir + QLatin1String("/kreport");
             if (QDir(possiblePath).exists()) {
                 d->pluginPaths += possiblePath;

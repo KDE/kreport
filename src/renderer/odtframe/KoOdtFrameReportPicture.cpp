@@ -83,7 +83,7 @@ bool KoOdtFrameReportPicture::saveData(KoStore* store, KoXmlWriter* manifestWrit
     painter.setRenderHint(QPainter::Antialiasing);
     painter.drawPicture(0, 0, *(picture()->picture()));
     painter.end();
-    kreportDebug()<<image.format();
+    //kreportDebug()<<image.format();
     bool ok = image.save(&device, "PNG");
     if (ok) {
         QMimeDatabase db;

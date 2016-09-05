@@ -26,13 +26,8 @@ KReportExampleData::KReportExampleData()
                         {1, "Jaroslaw Staniek", "Kexi", QObject::tr("Poland"), "8472947462", 51.895182, 19.623270, "1234567890", true },
                         {2, "Boudewijn Rempt", "Krita", QObject::tr("Netherlands"), "8472947462", 48.858915, 2.347661, "1234567890", true },
     };
-
-
     m_testData = temp;
-
-    qDebug() << m_testData.count();
     m_fieldNames << "id" << "devname" << "project" << "country" << "mobile" << "lat" << "lon" << "code" << "projectlead";
-
     m_currentRecord = 0;
 }
 

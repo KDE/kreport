@@ -46,13 +46,13 @@ public:
 KReportPluginMetaData::KReportPluginMetaData(const QJsonObject &metaData)
     : KPluginMetaData(metaData, QString()), d(new Private(this))
 {
-    kreportDebug() << rawData();
+    //kreportDebug() << rawData();
 }
 
 KReportPluginMetaData::KReportPluginMetaData(const QPluginLoader &loader)
     : KPluginMetaData(loader), d(new Private(this))
 {
-    kreportDebug() << rawData();
+    //kreportDebug() << rawData();
 }
 
 KReportPluginMetaData::~KReportPluginMetaData()

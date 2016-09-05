@@ -131,7 +131,7 @@ void KReportPluginManager::Private::addBuiltInPlugin(const QJsonObject &json)
 {
     KReportPluginEntry *entry = new KReportPluginEntry(new PluginClass(m_parent));
     QJsonObject j = json.value(QLatin1String("MetaData")).toObject();
-    kreportDebug() << j;
+    //kreportDebug() << j;
     entry->setMetaData(j);
     entry->setBuiltIn(true);
     if (entry->metaData()->id().isEmpty()) {

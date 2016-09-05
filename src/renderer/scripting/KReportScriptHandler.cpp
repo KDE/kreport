@@ -72,17 +72,16 @@ KReportScriptHandler::KReportScriptHandler(const KReportData* kodata, KReportDoc
                                          .remove(QLatin1String("report:")));
         QJSValue s = m_engine->newQObject(m_sectionMap[sec]);
         r.setProperty(m_sectionMap[sec]->objectName(), s);
-        kreportDebug() << "Added" << m_sectionMap[sec]->objectName() << "to report" << m_reportData->name();
+        //kreportDebug() << "Added" << m_sectionMap[sec]->objectName() << "to report" << m_reportData->name();
     }
 
-
-    kreportDebug() << "Report name is" << m_reportData->name();
+    //kreportDebug() << "Report name is" << m_reportData->name();
 }
 
 bool KReportScriptHandler::trigger()
 {
     QString code = m_kreportData->scriptCode(m_reportData->script());
-    kreportDebug() << code;
+    //kreportDebug() << code;
 
     if (code.isEmpty()) {
         return true;

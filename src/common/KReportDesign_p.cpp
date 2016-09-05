@@ -197,7 +197,7 @@ KReportElement KReportDesign::Private::processSectionElementChild(const QDomElem
         return KReportElement();
     }
     const QByteArray reportElementName = name.mid(qstrlen(elNamespace));
-    qDebug() << "Found Report Element:" << reportElementName;
+    //qDebug() << "Found Report Element:" << reportElementName;
     KReportPluginInterface *plugin = findPlugin(QLatin1String(reportElementName), el, status);
     if (!plugin) {
         return KReportElement();
