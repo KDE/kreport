@@ -136,11 +136,11 @@ void KReportItemBarcode::createProperties()
          << QLatin1String("ean8") << QLatin1String("ean13") << QLatin1String("i2of5")
          << QLatin1String("upc-a") << QLatin1String("upc-e");
     strings << tr("Code 3 of 9", "Barcode symbology, keep short")
-            << tr("Code 3 of 9 Ext.", "Barcode symbology, keep short")
+            << tr("Code 3 of 9 Ext.", "3 of 3 Extended: Barcode symbology, keep short")
             << tr("Code 128", "Barcode symbology, keep short")
             << tr("EAN-8", "Barcode symbology, keep short")
             << tr("EAN-13", "Barcode symbology, keep short")
-            << tr("Interleaved 2 of 5", "Barcode symbology, keep short")
+            << tr("Interleaved 2 of 5", "Interleaved barcode 2 of 5: barcode symbology, keep short")
             << tr("UPC-A", "Barcode symbology, keep short")
             << tr("UPC-E", "Barcode symbology, keep short");
     m_format = new KProperty("barcode-format", keys, strings, QLatin1String("3of9"),
