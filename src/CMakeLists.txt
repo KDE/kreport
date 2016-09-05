@@ -1,14 +1,10 @@
 # Options
 simple_option(KREPORT_SCRIPTING "Scripting support using JavaScript language" ON)
-configure_file(config-kreport.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kreport.h)
 
 if(KREPORT_SCRIPTING)
     find_package(Qt5Qml REQUIRED)
     set(SCRIPTING_LIBS Qt5::Qml)
 endif()
-
-add_subdirectory(plugins)
-add_subdirectory(pics)
 
 set(kreport_LIB_SRCS
     common/kreport_debug.cpp
@@ -157,6 +153,7 @@ qt5_wrap_ui(kreport_LIB_SRCS
 ecm_create_qm_loader(kreport_LIB_SRCS kreport_qt)
 
 add_library(KReport SHARED ${kreport_LIB_SRCS})
+set_coinstallable_lib_version(KReport)
 
 kdb_create_shared_data_classes(
     kreport_GENERATED_SHARED_DATA_CLASS_HEADERS # output variable with list of headers
@@ -178,7 +175,7 @@ generate_export_header(KReport)
 
 target_include_directories(KReport
     PUBLIC "$<BUILD_INTERFACE:${kreport_INCLUDE_DIRS}>"
-    INTERFACE "$<INSTALL_INTERFACE:${INCLUDE_INSTALL_DIR}/KReport>"
+    INTERFACE "$<INSTALL_INTERFACE:${KREPORT_INCLUDE_INSTALL_DIR}>"
     PRIVATE ${kreport_TARGET_INCLUDE_DIRS}
 )
 
@@ -198,13 +195,7 @@ target_link_libraries(KReport
         #KF5::KIONTLM
 )
 
-set_target_properties(KReport
-    PROPERTIES VERSION 1.0
-               SOVERSION 1.0.0
-               EXPORT_NAME KReport
-)
-
-ecm_setup_version(${KREPORT_VERSION}
+ecm_setup_version(${PROJECT_VERSION}
     VARIABLE_PREFIX KREPORT
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/kreport_version.h"
     PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KReportConfigVersion.cmake"
@@ -215,9 +206,12 @@ install(TARGETS KReport
         ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 # Create a Config.cmake and a ConfigVersion.cmake file and install them
-set(CMAKECONFIG_INSTALL_DIR "${CMAKECONFIG_INSTALL_PREFIX}/KReport")
+set(CMAKECONFIG_INSTALL_DIR "${CMAKECONFIG_INSTALL_PREFIX}/${KREPORT_BASE_NAME}")
 
-ecm_configure_package_config_file(
+# A place for KReport plugins
+set(KREPORT_PLUGIN_INSTALL_DIR ${PLUGIN_INSTALL_DIR}/kreport${PROJECT_STABLE_VERSION_MAJOR})
+
+configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KReportConfig.cmake.in"
     "${CMAKE_CURRENT_BINARY_DIR}/KReportConfig.cmake"
     INSTALL_DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
@@ -234,21 +228,17 @@ install(EXPORT KReportTargets
         FILE KReportTargets.cmake)
 
 ecm_generate_pri_file(
-    BASE_NAME KReport
-    LIB_NAME KReport
+    BASE_NAME ${KREPORT_BASE_NAME}
+    LIB_NAME ${KREPORT_BASE_NAME}
     DEPS "widgets"
     FILENAME_VAR PRI_FILENAME
-    INCLUDE_INSTALL_DIR ${INCLUDE_INSTALL_DIR}/KReport
+    INCLUDE_INSTALL_DIR ${KREPORT_INCLUDE_INSTALL_DIR}
 )
 
 install(FILES ${PRI_FILENAME}
         DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
 
 install(FILES kreport_elementplugin.desktop  DESTINATION ${SERVICETYPES_INSTALL_DIR})
-
-install(FILES "${CMAKE_CURRENT_BINARY_DIR}/kreport_version.h"
-        DESTINATION "${INCLUDE_INSTALL_DIR}"
-        COMPONENT Devel)
 
 ecm_generate_headers(kreport_FORWARDING_HEADERS
     REQUIRED_HEADERS kreport_HEADERS
@@ -322,22 +312,23 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS_FROM_BUILDDIR
         ${kreport_GENERATED_SHARED_DATA_CLASS_BASENAMES}
 )
 
+list(APPEND kreport_HEADERS ${CMAKE_CURRENT_BINARY_DIR}/kreport_version.h)
+
 install(
     FILES
         ${kreport_HEADERS}
         ${kreport_HEADERS_FROM_BUILDDIR}
-    DESTINATION ${INCLUDE_INSTALL_DIR}/KReport
-    COMPONENT Devel
-)
-
-install(
-    FILES
         ${kreport_FORWARDING_HEADERS}
         ${kreport_FORWARDING_HEADERS_FROM_BUILDDIR}
         ${PROJECT_BINARY_DIR}/src/kreport_export.h
         ${PROJECT_BINARY_DIR}/src/config-kreport.h
-    DESTINATION ${INCLUDE_INSTALL_DIR}/KReport
+    DESTINATION ${KREPORT_INCLUDE_INSTALL_DIR}
     COMPONENT Devel
 )
 
+add_subdirectory(plugins)
+add_subdirectory(pics)
+
 enable_testing()
+
+configure_file(config-kreport.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kreport.h)

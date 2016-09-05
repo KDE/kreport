@@ -23,4 +23,13 @@
 //! @brief Defined if unfinished features of KReport are enabled
 #cmakedefine KREPORT_UNFINISHED
 
+//! @def KREPORT_BASE_NAME
+//! @brief Base name for the KReport library, based on major stable version.
+//!        Useful for co-installability.
+#define KREPORT_BASE_NAME "@KREPORT_BASE_NAME@"
+
+//! @def KREPORT_BASE_NAME_LOWER
+//! @brief Like KREPORT_BASE_NAME but lowercase.
+#define KREPORT_BASE_NAME_LOWER "@KREPORT_BASE_NAME_LOWER@"
+
 #endif

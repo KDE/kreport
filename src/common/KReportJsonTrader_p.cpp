@@ -20,14 +20,13 @@
 */
 
 #include "KReportJsonTrader_p.h"
-
 #include "kreport_debug.h"
-#include <QList>
+#include "config-kreport.h"
+
 #include <QPluginLoader>
 #include <QJsonObject>
 #include <QJsonArray>
 #include <QDirIterator>
-#include <QDir>
 #include <QCoreApplication>
 
 Q_GLOBAL_STATIC(KReportJsonTrader, KReportJsonTrader_instance)
@@ -106,7 +105,7 @@ QList<QPluginLoader *> KReportJsonTrader::query(const QString &servicetype,
         searchDirs += QCoreApplication::libraryPaths();
         foreach(const QString &dir, searchDirs) {
             //kreportDebug() << dir;
-            QString possiblePath = dir + QLatin1String("/kreport");
+            const QString possiblePath(dir + QLatin1Char('/') + QLatin1String(KREPORT_BASE_NAME_LOWER));
             if (QDir(possiblePath).exists()) {
                 d->pluginPaths += possiblePath;
             }
