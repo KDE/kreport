@@ -31,7 +31,7 @@ KReportWebPlugin::KReportWebPlugin(QObject *parent, const QVariantList &args)
 
     KoReportPluginInfo *info = new KoReportPluginInfo();
     info->setClassName("web");
-    info->setName(tr("Web"));
+    info->setName(tr("Web browser"));
     info->setIcon(koIcon("report_web_element"));
     info->setPriority(40);
     setInfo(info);

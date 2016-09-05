@@ -43,7 +43,7 @@
         "Icon": "report_web_element", 
         "Id": "org.kde.kreport.web", 
         "License": "LGPL", 
-        "Name": "Web", 
+        "Name": "Web browser",
         "Name[pl]": "Sieć", 
         "Name[sv]": "Webb", 
         "Name[uk]": "Інтернет", 
