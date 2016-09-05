@@ -33,11 +33,12 @@ set(KREPORT_VERSION "2.97.0") # Update this
 
 # Dependencies
 set(REQUIRED_QT_VERSION "5.3.0")
+set(REQUIRED_KF5_VERSION 5.7.0)
 
 # Required components to build this framework
 # TODO move Widgets/KF5WidgetsAddons-dependent part to a libKReportDesigner
 find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Core Widgets Xml PrintSupport)
-find_package(KF5 5.7.0 REQUIRED CoreAddons WidgetsAddons GuiAddons Config)
+find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED CoreAddons WidgetsAddons GuiAddons Config)
 find_package(KPropertyWidgets 2.99.0 REQUIRED)
 
 set(KREPORT_PLUGIN_INSTALL_DIR ${PLUGIN_INSTALL_DIR}/kreport)
@@ -51,6 +52,7 @@ add_pc_file()
 add_subdirectory(src)
 
 if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
+    find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED I18n)
     ki18n_install(po)
 endif()
 
