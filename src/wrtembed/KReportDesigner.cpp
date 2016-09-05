@@ -730,7 +730,7 @@ void KReportDesigner::createProperties()
 
     keys.clear();
     keys =  KReportPageSize::pageFormatKeys();
-    strings = KReportPageSize::pageFormatKeys();
+    strings = KReportPageSize::pageFormatNames();
     QString defaultKey = KReportPageSize::pageSizeKey(KReportPageSize::defaultSize());
     d->pageSize = new KProperty("page-size", keys, strings, defaultKey, tr("Page Size"));
 
