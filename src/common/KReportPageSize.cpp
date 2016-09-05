@@ -23,25 +23,31 @@
 
 struct KReportPageSizeInfo {
     const char *name;
-    const char *description;
+    struct { const char *source; const char *comment; } description;
     QPageSize::PageSizeId pageSize;
 };
 
-const KReportPageSizeInfo pageSizeInfo[] = {
-    { "A3",	QT_TRANSLATE_NOOP("KReportPageFormat", "A3"), QPageSize::A3},
-    { "A4",	QT_TRANSLATE_NOOP("KReportPageFormat", "A4"), QPageSize::A4},
-    { "A5",	QT_TRANSLATE_NOOP("KReportPageFormat", "A5"), QPageSize::A5},
-    { "Letter",	QT_TRANSLATE_NOOP("KReportPageFormat", "US Letter"), QPageSize::Letter},
-    { "Legal",	QT_TRANSLATE_NOOP("KReportPageFormat", "US Legal"), QPageSize::Legal},
-    { "Screen",	QT_TRANSLATE_NOOP("KReportPageFormat", "Screen"), QPageSize::A4},
-    { "", "", QPageSize::LastPageSize}
+static const KReportPageSizeInfo pageSizeInfo[] = {
+    { "A3",	QT_TRANSLATE_NOOP3("KReportPageFormat", "A3", ""), QPageSize::A3},
+    { "A4",	QT_TRANSLATE_NOOP3("KReportPageFormat", "A4", ""), QPageSize::A4},
+    { "A5",	QT_TRANSLATE_NOOP3("KReportPageFormat", "A5", ""), QPageSize::A5},
+    { "Letter",	QT_TRANSLATE_NOOP3("KReportPageFormat", "US Letter",
+                                   "Usually don't translate literally, use \"US Letter\""),
+                QPageSize::Letter},
+    { "Legal", QT_TRANSLATE_NOOP3("KReportPageFormat", "US Legal",
+                                  "Usually don't translate literally, use \"US Legal\""),
+                QPageSize::Legal},
+    { "Screen",	QT_TRANSLATE_NOOP3("KReportPageFormat", "Screen", ""), QPageSize::A4},
+    { "", {"", ""}, QPageSize::LastPageSize}
 };
 
 QStringList KReportPageSize::pageFormatNames()
 {
     QStringList lst;
     for (int i = 0; pageSizeInfo[i].pageSize != QPageSize::LastPageSize ;i++) {
-        lst << QCoreApplication::translate("KReportPageFormat", pageSizeInfo[ i ].description);
+        lst << QCoreApplication::translate("KReportPageFormat",
+                                           pageSizeInfo[ i ].description.source,
+                                           pageSizeInfo[ i ].description.comment);
     }
     return lst;
 }
