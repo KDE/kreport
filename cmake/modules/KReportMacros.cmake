@@ -5,9 +5,14 @@
 # Redistribution and use is allowed according to the terms of the BSD license.
 # For details see the accompanying COPYING-CMAKE-SCRIPTS file.
 
+include(KDbGenerateHeaders) # from KDb, adds support for generated headers to ECMGenerateHeaders
+include(KDbCreateSharedDataClasses) # from KDb
+include(GenerateExportHeader)
+include(MacroLogFeature)
 include(FeatureSummary)
 include(GetGitRevisionDescription)
 
+string(TOUPPER ${PROJECT_NAME} PROJECT_NAME_UPPER)
 string(COMPARE EQUAL "${CMAKE_CXX_COMPILER_ID}" "Clang" CMAKE_COMPILER_IS_CLANG)
 
 # x.80.y or larger means test release, so the stable major version is x+1
@@ -41,7 +46,6 @@ endmacro()
 macro(get_git_revision_and_branch)
   get_git_head_revision(GIT_REFSPEC _GIT_SHA1)
   get_git_branch(_GIT_BRANCH)
-  string(TOUPPER ${PROJECT_NAME} PROJECT_NAME_UPPER)
   if(_GIT_SHA1 AND _GIT_BRANCH)
     string(SUBSTRING ${_GIT_SHA1} 0 7 _GIT_SHA1)
     set(${PROJECT_NAME_UPPER}_GIT_SHA1_STRING ${_GIT_SHA1})
@@ -95,7 +99,6 @@ endmacro()
 # (useful for testing but may confuse end-user) are compiled-in.
 # This option is OFF by default.
 macro(add_unfinished_features_option)
-  string(TOUPPER ${PROJECT_NAME} PROJECT_NAME_UPPER)
   simple_option(${PROJECT_NAME_UPPER}_UNFINISHED
                 "Include unfinished features (useful for testing but may confuse end-user)" OFF)
 endmacro()
