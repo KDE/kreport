@@ -24,14 +24,14 @@
 #include <KPropertySet>
 
 #include <KReportDesignerItemRectBase.h>
-#include "KoReportItemMaps.h"
+#include "KReportItemMaps.h"
 
 class KReportDesignerItemMaps : public KReportItemMaps, public KReportDesignerItemRectBase
 {
   Q_OBJECT
 public:
-    KReportDesignerItemMaps(KoReportDesigner *, QGraphicsScene* scene, const QPointF &pos);
-    KReportDesignerItemMaps(QDomNode *element, KoReportDesigner *, QGraphicsScene* scene);
+    KReportDesignerItemMaps(KReportDesigner *, QGraphicsScene* scene, const QPointF &pos);
+    KReportDesignerItemMaps(const QDomNode &element, KReportDesigner *, QGraphicsScene* scene);
 
     virtual ~KReportDesignerItemMaps();
     virtual void buildXML(QDomDocument *doc, QDomElement *parent);
@@ -42,7 +42,7 @@ protected:
     virtual void mousePressEvent(QGraphicsSceneMouseEvent * event);
 
 private:
-    void init(QGraphicsScene*, KoReportDesigner*);
+    void init(QGraphicsScene*, KReportDesigner*);
 
 private Q_SLOTS:
     void slotPropertyChanged(KPropertySet &, KProperty &);

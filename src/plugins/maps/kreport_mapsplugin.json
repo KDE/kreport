@@ -40,7 +40,7 @@
         "Description[uk]": "Елемент карти для звітів", 
         "Description[x-test]": "xxMaps element for Reportsxx", 
         "EnabledByDefault": true, 
-        "Icon": "report_maps_element", 
+        "Icon": "kreport_maps_element", 
         "Id": "org.kde.kreport.maps", 
         "License": "LGPL", 
         "Name": "Maps", 

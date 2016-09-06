@@ -26,10 +26,11 @@
 
 #include <KProperty>
 
-
 #include "KReportPosition.h"
 #include "KReportSize.h"
-#include "MapRenderer.h"
+#include "KReportMapRenderer.h"
+
+#include <QDomNode>
 
 class OROImage;
 class OROPicture;
@@ -48,7 +49,7 @@ public:
     KReportItemMaps() {
         createProperties();
     }
-    explicit KReportItemMaps(QDomNode *element);
+    explicit KReportItemMaps(const QDomNode &element);
     virtual ~KReportItemMaps();
 
     virtual QString typeName() const;

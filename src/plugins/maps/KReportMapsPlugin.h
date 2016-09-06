@@ -30,8 +30,8 @@ class KReportMapsPlugin : public KReportPluginInterface
     virtual ~KReportMapsPlugin();
 
     virtual QObject* createRendererInstance(const QDomNode& element);
-    virtual QObject* createDesignerInstance(const QDomNode& element, KoReportDesigner* , QGraphicsScene* scene);
-    virtual QObject* createDesignerInstance(KoReportDesigner* , QGraphicsScene* scene, const QPointF& pos);
+    virtual QObject* createDesignerInstance(const QDomNode& element, KReportDesigner* , QGraphicsScene* scene);
+    virtual QObject* createDesignerInstance(KReportDesigner* , QGraphicsScene* scene, const QPointF& pos);
 #ifdef KREPORT_SCRIPTING
     virtual QObject* createScriptInstance(KReportItemBase* item);
 #endif

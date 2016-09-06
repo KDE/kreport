@@ -20,50 +20,17 @@
 #define MAPRENDERER_H
 
 #include <marble/MarbleGlobal.h>
-#include <marble/MarbleWidget.h>
+#include <marble/MarbleMap.h>
 #include <marble/RenderState.h>
 
 #include "kreportplugin_debug.h"
 
 class KReportItemMaps;
-namespace Marble{
-    /**
-     * Workaround Marble error in signal specification.
-     *
-     * renderStatusChange and renderStateChange signals are using params that are in
-     * Marble namespace and are not prefixed with Marble:: in their declaration in
-     * MarbleWidget.h this class is workaround of the bug.
-     */
-    class RenderStatusSignalProxy: public QObject{
-        Q_OBJECT
-    public:
-        explicit RenderStatusSignalProxy(QObject* parent):QObject(parent){};
-        void setConnection(MarbleWidget* marble){
-            connect(marble,SIGNAL(renderStatusChanged(RenderStatus)),this,SLOT(onRenderStatusChange(RenderStatus)));
-            connect(marble,SIGNAL(renderStateChanged(RenderState)),this,SLOT(onRenderStateChange(RenderState)));
-        };
-        void disconnect(MarbleWidget* marble){
-            disconnect(marble,SIGNAL(renderStatusChanged(RenderStatus)),this,SLOT(onRenderStatusChange(RenderStatus)));
-            disconnect(marble,SIGNAL(renderStateChanged(RenderState)),this,SLOT(onRenderStateChange(RenderState)));
-        }
-    public Q_SLOTS:
-        void onRenderStatusChange(RenderStatus renderStatus){
-            kreportpluginDebug() << "!!!!!!!!!!!!!!!!  STATUS change";
-            emit renderStatusChanged(static_cast<int>(renderStatus));
-        };
-        void onRenderStateChange(const RenderState &state){
-            kreportpluginDebug() << "################  STATE change";
-            emit renderStatusChanged(static_cast<int>(state.status()));
-        };
-    Q_SIGNALS:
-        void renderStatusChanged(int renderStatus);
-    };
-}
 
 class KReportMapRenderer : public QObject
 {
     Q_OBJECT
-    Q_DISABLE_COPY(MapRenderer)
+    Q_DISABLE_COPY(KReportMapRenderer)
 public:
     KReportMapRenderer(QObject* parent = 0);
     virtual ~KReportMapRenderer();
@@ -71,14 +38,13 @@ public:
 Q_SIGNALS:
     void jobFinished();
 private Q_SLOTS:
-    void onRenderStatusChange(int renderStatus);
+    void onRenderStatusChange(Marble::RenderStatus renderStatus);
     void downloadProgres(int active, int queued);
     void downloadFinished();
 
 private:
-    Marble::MarbleWidget m_marble;
+    Marble::MarbleMap m_marble;
     KReportItemMaps* m_currentJob;
-    Marble::RenderStatusSignalProxy m_renderStatusProxy;
 };
 
 #endif // MAPRENDERER_H

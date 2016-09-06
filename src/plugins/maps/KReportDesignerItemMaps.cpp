@@ -1,6 +1,5 @@
 /*
- * Copyright (C) 2001-2007 by OpenMFG, LLC (info@openmfg.com)
- * Copyright (C) 2007-2008 by Adam Pigg (adam@piggz.co.uk)
+ * Copyright (C) 2007-2016 by Adam Pigg (adam@piggz.co.uk)
  * Copyright (C) 2011-2015 by Radoslaw Wicik (radoslaw@wicik.pl)
  *
  * This library is free software; you can redistribute it and/or
@@ -17,9 +16,9 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "KoReportDesignerItemMaps.h"
-#include "KoReportDesignerItemBase.h"
-#include "KoReportDesigner.h"
+#include "KReportDesignerItemMaps.h"
+#include "KReportDesignerItemBase.h"
+#include "KReportDesigner.h"
 
 #include <KProperty>
 #include <KPropertySet>
@@ -30,12 +29,12 @@
 #include <QPainter>
 #include "kreportplugin_debug.h"
 
-void KReportDesignerItemMaps::init(QGraphicsScene *scene, KoReportDesigner *d)
+void KReportDesignerItemMaps::init(QGraphicsScene *scene, KReportDesigner *d)
 {
     if (scene)
         scene->addItem(this);
 
-    KoReportDesignerItemRectBase::init(&m_pos, &m_size, m_set, d);
+    KReportDesignerItemRectBase::init(&m_pos, &m_size, m_set, d);
 
     connect(m_set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
@@ -44,8 +43,8 @@ void KReportDesignerItemMaps::init(QGraphicsScene *scene, KoReportDesigner *d)
     setZValue(Z);
 }
 
-KReportDesignerItemMaps::KReportDesignerItemMaps(KoReportDesigner * rw, QGraphicsScene* scene, const QPointF &pos)
-        : KoReportDesignerItemRectBase(rw)
+KReportDesignerItemMaps::KReportDesignerItemMaps(KReportDesigner * rw, QGraphicsScene* scene, const QPointF &pos)
+        : KReportDesignerItemRectBase(rw)
 {
     Q_UNUSED(pos);
     init(scene, rw);
@@ -53,8 +52,8 @@ KReportDesignerItemMaps::KReportDesignerItemMaps(KoReportDesigner * rw, QGraphic
     m_name->setValue(m_reportDesigner->suggestEntityName(typeName()));
 }
 
-KReportDesignerItemMaps::KReportDesignerItemMaps(QDomNode *element, KoReportDesigner * rw, QGraphicsScene* scene)
-        : KoReportItemMaps(element), KoReportDesignerItemRectBase(rw)
+KReportDesignerItemMaps::KReportDesignerItemMaps(const QDomNode &element, KReportDesigner * rw, QGraphicsScene* scene)
+        : KReportItemMaps(element), KReportDesignerItemRectBase(rw)
 {
     init(scene, rw);
     setSceneRect(m_pos.toScene(), m_size.toScene());
@@ -125,12 +124,12 @@ void KReportDesignerItemMaps::slotPropertyChanged(KPropertySet &s, KProperty &p)
         }
     }
 
-    KoReportDesignerItemRectBase::propertyChanged(s, p);
+    KReportDesignerItemRectBase::propertyChanged(s, p);
     if (m_reportDesigner) m_reportDesigner->setModified(true);
 }
 
 void KReportDesignerItemMaps::mousePressEvent(QGraphicsSceneMouseEvent * event)
 {
     m_controlSource->setListData(m_reportDesigner->fieldKeys(), m_reportDesigner->fieldNames());
-    KoReportDesignerItemRectBase::mousePressEvent(event);
+    KReportDesignerItemRectBase::mousePressEvent(event);
 }

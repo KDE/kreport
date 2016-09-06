@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2007-2008 by Adam Pigg (adam@piggz.co.uk)
+ * Copyright (C) 2007-2016 by Adam Pigg (adam@piggz.co.uk)
  * Copyright (C) 2011-2015 by Radoslaw Wicik (radoslaw@wicik.pl)
  *
  * This library is free software; you can redistribute it and/or
@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU Lesser General Public
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "KoReportItemMaps.h"
+#include "KReportItemMaps.h"
 
 #include <KPropertySet>
 
@@ -27,7 +27,7 @@
 
 #define myDebug() if (0) kDebug(44021)
 
-KReportItemMaps::KReportItemMaps(QDomNode *element)
+KReportItemMaps::KReportItemMaps(const QDomNode &element)
     : m_longtitude(0)
     , m_latitude(0)
     , m_zoom(1200)
@@ -40,17 +40,17 @@ KReportItemMaps::KReportItemMaps(QDomNode *element)
 {
     createProperties();
 
-    m_name->setValue(element->toElement().attribute(QLatin1String("report:name")));
-    m_controlSource->setValue(element->toElement().attribute(QLatin1String("report:item-data-source")));
-    Z = element->toElement().attribute(QLatin1String("report:z-index")).toDouble();
-    m_latitudeProperty->setValue(element->toElement().attribute(QLatin1String("report:latitude")).toDouble());
-    m_longitudeProperty->setValue(element->toElement().attribute(QLatin1String("report:longitude")).toDouble());
-    m_zoomProperty->setValue(element->toElement().attribute(QLatin1String("report:zoom")).toInt());
-    QString themeId(element->toElement().attribute(QLatin1String("report:theme")));
+    m_name->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
+    Z = element.toElement().attribute(QLatin1String("report:z-index")).toDouble();
+    m_latitudeProperty->setValue(element.toElement().attribute(QLatin1String("report:latitude")).toDouble());
+    m_longitudeProperty->setValue(element.toElement().attribute(QLatin1String("report:longitude")).toDouble());
+    m_zoomProperty->setValue(element.toElement().attribute(QLatin1String("report:zoom")).toInt());
+    QString themeId(element.toElement().attribute(QLatin1String("report:theme")));
     themeId = themeId.isEmpty() ? m_themeManager.mapThemeIds()[0] : themeId;
     m_themeProperty->setValue(themeId);
 
-    parseReportRect(element->toElement(), &m_pos, &m_size);
+    parseReportRect(element.toElement(), &m_pos, &m_size);
 }
 
 KReportItemMaps::~KReportItemMaps()
@@ -147,6 +147,7 @@ int KReportItemMaps::renderSimpleData(OROPage *page, OROSection *section, const 
 
 void KReportItemMaps::deserializeData(const QVariant& serialized)
 {
+    kreportpluginDebug() << "Map data for this record is" << serialized;
     QStringList dataList = serialized.toString().split(QLatin1Char(';'));
     if (dataList.size() == 3) {
         m_latitude = dataList[0].toDouble();

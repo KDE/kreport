@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2007-2008 by Adam Pigg (adam@piggz.co.uk)
+ * Copyright (C) 2007-2016 by Adam Pigg (adam@piggz.co.uk)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -15,10 +15,8 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "krscriptmaps.h"
-
-#include "KoReportItemMaps.h"
-
+#include "KReportScriptMaps.h"
+#include "KReportItemMaps.h"
 
 namespace Scripting
 {

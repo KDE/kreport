@@ -6,7 +6,7 @@ set(kreport_mapsplugin_LIB_SRCS
     KReportDesignerItemMaps.cpp
     KReportItemMaps.cpp
     KReportMapsPlugin.cpp
-    MapRenderer.cpp
+    KReportMapRenderer.cpp
     ${kreport_mapsplugin_QM_LOADER}
 )
 
@@ -22,7 +22,7 @@ target_link_libraries(kreport_mapsplugin
     PUBLIC
         KReport
     PRIVATE
-        ${MARBLE_LIBRARIES}
+        Marble
 )
 
 ########### install files ###############

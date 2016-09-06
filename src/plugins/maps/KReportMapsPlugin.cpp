@@ -1,5 +1,5 @@
 /*
-   Copyright (C) 2010 by Adam Pigg (adam@piggz.co.uk)
+   Copyright (C) 2010-2016 by Adam Pigg (adam@piggz.co.uk)
    Copyright (C) 2011 by Radoslaw Wicik (radoslaw@wicik.pl)
 
    This library is free software; you can redistribute it and/or
@@ -18,16 +18,17 @@
    Boston, MA 02110-1301, USA.
 */
 
-#include "KoReportMapsPlugin.h"
-#include "KoReportItemMaps.h"
-#include "KoReportDesignerItemMaps.h"
+#include "KReportMapsPlugin.h"
+#include "KReportItemMaps.h"
+#include "KReportDesignerItemMaps.h"
 #include <KReportPluginInterface.h>
 #ifdef KREPORT_SCRIPTING
-#include "krscriptmaps.h"
+#include "KReportScriptMaps.h"
 #endif
+#include "kreport_debug.h"
 
 
-KREPORT_PLUGIN_FACTORY(KoReportMapsPlugin, "kreport_mapsplugin.json")
+KREPORT_PLUGIN_FACTORY(KReportMapsPlugin, "kreport_mapsplugin.json")
 
 KReportMapsPlugin::KReportMapsPlugin(QObject *parent, const QVariantList &args) : KReportPluginInterface(parent)
 {
@@ -43,18 +44,19 @@ QObject* KReportMapsPlugin::createRendererInstance(const QDomNode& element)
     return new KReportItemMaps(element);
 }
 
-QObject* KReportMapsPlugin::createDesignerInstance(const QDomNode& element, KoReportDesigner* designer, QGraphicsScene* scene)
+QObject* KReportMapsPlugin::createDesignerInstance(const QDomNode& element, KReportDesigner* designer, QGraphicsScene* scene)
 {
     return new KReportDesignerItemMaps(element, designer, scene);
 }
 
-QObject* KReportMapsPlugin::createDesignerInstance(KoReportDesigner* designer, QGraphicsScene* scene, const QPointF& pos)
+QObject* KReportMapsPlugin::createDesignerInstance(KReportDesigner* designer, QGraphicsScene* scene, const QPointF& pos)
 {
+    kreportpluginDebug() << "KReport maps init";
     return new KReportDesignerItemMaps(designer, scene, pos);
 }
 
 #ifdef KREPORT_SCRIPTING
-QObject* KoReportMapsPlugin::createScriptInstance(KReportItemBase* /*item*/)
+QObject* KReportMapsPlugin::createScriptInstance(KReportItemBase* /*item*/)
 {
     /*KoReportItemMaps *image = dynamic_cast<KoReportItemMaps*>(item);
     if (image) {
@@ -64,4 +66,4 @@ QObject* KoReportMapsPlugin::createScriptInstance(KReportItemBase* /*item*/)
 }
 #endif
 
-#include "KoReportMapsPlugin.moc"
+#include "KReportMapsPlugin.moc"
