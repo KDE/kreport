@@ -23,6 +23,7 @@ macro(KDB_CREATE_SHARED_DATA_CLASSES)
     list(GET _args 1 PREFIX)
     list(REMOVE_AT _args 0 1)
     # message(STATUS "OUTPUT_VAR: ${OUTPUT_VAR} ${_args}")
+    find_package(PythonInterp REQUIRED)
     foreach(_input ${_args})
         get_filename_component(INPUT ${_input} ABSOLUTE)
         string(REGEX REPLACE "\\.shared\\.h" ".h" OUTPUT ${_input})
@@ -39,7 +40,7 @@ macro(KDB_CREATE_SHARED_DATA_CLASSES)
         # message(STATUS "OUTPUT_DIR: ${OUTPUT_DIR} ${PREFIX}")
         file(MAKE_DIRECTORY ${OUTPUT_DIR})
         execute_process(
-            COMMAND python ${CMAKE_SOURCE_DIR}/tools/sdc.py
+            COMMAND ${PYTHON_EXECUTABLE} ${CMAKE_SOURCE_DIR}/tools/sdc.py
                            ${INPUT}
                            ${OUTPUT_DIR}/${OUTPUT}
             WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
