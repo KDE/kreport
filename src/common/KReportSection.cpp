@@ -19,12 +19,15 @@
 
 #include "KReportSection.h"
 #include "KReportDesign_p.h"
-
 #include "KReportDocument.h"
 #include "KReportPluginInterface.h"
 #include "KReportPluginManager.h"
 #include "KReportItemLine.h"
 #include "kreport_debug.h"
+
+#if 0 // needed by lupdate to avoid "Qualifying with unknown namespace/class"
+class KReportSection { Q_DECLARE_TR_FUNCTIONS(KReportSection) };
+#endif
 
 #if 0
 KReportSection::KReportSection(const QDomElement & elemSource, KReportReportData* report)

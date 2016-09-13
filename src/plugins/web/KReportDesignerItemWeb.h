@@ -22,7 +22,7 @@
 #define KREPORTDESIGNERITEMWEB_H
 
 #include <KReportDesignerItemRectBase.h>
-#include "KoReportItemWeb.h"
+#include "KReportItemWeb.h"
 
 class QGraphicsScene;
 

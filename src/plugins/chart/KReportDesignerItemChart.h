@@ -18,8 +18,8 @@
 #define REPORTENTITYCHART_H
 
 
-#include "KoReportItemChart.h"
-#include "KoReportDesignerItemRectBase.h"
+#include "KReportItemChart.h"
+#include "KReportDesignerItemRectBase.h"
 
 /**
 */

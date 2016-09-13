@@ -148,7 +148,7 @@ void KReportPluginManager::Private::addBuiltInPlugin(const QJsonObject &json)
 //! Typedef of plugin version matching the one exported by KEXI_EXPORT_PLUGIN.
 typedef quint32 (*plugin_version_t)();
 
-loadPlugin(KService::Ptr service)
+bool loadPlugin(KService::Ptr service)
 {
     if (service.isNull()) {
         kreportWarning() << "No service specified";
@@ -181,6 +181,7 @@ loadPlugin(KService::Ptr service)
         plugin->setObjectName(pluginName());
     }
     return plugin;
+}
 #endif
 
 #define KREPORT_ADD_BUILTIN_PLUGIN(name) \

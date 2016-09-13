@@ -17,10 +17,10 @@
    Boston, MA 02110-1301, USA.
 */
 
-#include "KoReportChartPlugin.h"
-#include "KoReportItemChart.h"
-#include "KoReportDesignerItemChart.h"
-#include "KoReportPluginInfo.h"
+#include "KReportChartPlugin.h"
+#include "KReportItemChart.h"
+#include "KReportDesignerItemChart.h"
+#include "KReportPluginInfo.h"
 #ifdef KREPORT_SCRIPTING
 #include "krscriptchart.h"
 #endif

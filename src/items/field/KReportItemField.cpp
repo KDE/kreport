@@ -126,7 +126,7 @@ void KReportItemField::createProperties()
 #if 0 //Field Totals
     m_trackTotal = new KProperty("trackTotal", QVariant(false), futureI18n("Track Total"));
     m_trackBuiltinFormat = new KProperty("trackBuiltinFormat", QVariant(false), futureI18n("Track Builtin Format"));
-    _useSubTotal = new KProperty("useSubTotal", QVariant(false), futureI18n("Use Sub Total"_);
+    _useSubTotal = new KProperty("useSubTotal", QVariant(false), futureI18n("Use Sub Total"_));
     _trackTotalFormat = new KProperty("trackTotalFormat", QString(), futureI18n("Track Total Format"));
 #endif
 

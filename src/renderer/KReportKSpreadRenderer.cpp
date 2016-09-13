@@ -15,7 +15,7 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "KoReportKSpreadRenderer.h"
+#include "KReportKSpreadRenderer.h"
 
 #include "ods/KoSimpleOdsDocument.h"
 #include "ods/KoSimpleOdsCell.h"

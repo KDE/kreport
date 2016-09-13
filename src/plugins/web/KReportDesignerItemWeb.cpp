@@ -18,9 +18,9 @@
  * Boston, MA 02110-1301, USA.
 */
 
-#include "KoReportDesignerItemWeb.h"
-#include <KoReportDesignerItemBase.h>
-#include <KoReportDesigner.h>
+#include "KReportDesignerItemWeb.h"
+#include <KReportDesignerItemBase.h>
+#include <KReportDesigner.h>
 
 #include <KProperty>
 #include <KPropertySet>

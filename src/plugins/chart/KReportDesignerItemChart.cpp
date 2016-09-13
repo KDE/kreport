@@ -14,10 +14,10 @@
  * You should have received a copy of the GNU Lesser General Public
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "KoReportDesignerItemChart.h"
+#include "KReportDesignerItemChart.h"
 
-#include <KoReportDesignerItemBase.h>
-#include "KoReportDesigner.h"
+#include <KReportDesignerItemBase.h>
+#include "KReportDesigner.h"
 
 #include <KProperty>
 #include <KPropertySet>

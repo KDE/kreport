@@ -16,7 +16,7 @@
  */
 
 #include "krscriptchart.h"
-#include "KoReportItemChart.h"
+#include "KReportItemChart.h"
 
 namespace Scripting
 {

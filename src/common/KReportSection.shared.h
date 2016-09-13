@@ -20,6 +20,7 @@
 #ifndef KREPORTSECTION_H
 #define KREPORTSECTION_H
 
+#include <QCoreApplication>
 #include <QSet>
 #include <KReportElement>
 
@@ -29,6 +30,7 @@
     In the case of page header and page footer it is possible to define (firstpage, odd, even or lastpage). */
 class KREPORT_EXPORT KReportSection //SDC: explicit operator== virtual_dtor custom_clone
 {
+    Q_DECLARE_TR_FUNCTIONS(KReportSection)
 public:
     enum Type {
         InvalidType = 0,

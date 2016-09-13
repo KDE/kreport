@@ -17,9 +17,9 @@
  * Boston, MA 02110-1301, USA.
 */
 
-#include "KoReportWebPlugin.h"
-#include "KoReportDesignerItemWeb.h"
-#include "KoReportPluginInfo.h"
+#include "KReportWebPlugin.h"
+#include "KReportDesignerItemWeb.h"
+#include "KReportPluginInfo.h"
 #include <KoIcon.h>
 
 K_EXPORT_KOREPORT_ITEMPLUGIN(KoReportWebPlugin, webplugin)

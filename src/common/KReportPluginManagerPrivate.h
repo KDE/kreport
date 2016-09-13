@@ -24,6 +24,10 @@
 #include <QMap>
 #include <QPluginLoader>
 
+#if 0 // needed by lupdate to avoid "Qualifying with unknown namespace/class"
+class KReportPluginManager {};
+#endif
+
 class QJsonObject;
 class KReportPluginInterface;
 class KReportPluginManager;

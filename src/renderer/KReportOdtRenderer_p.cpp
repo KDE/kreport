@@ -15,7 +15,7 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "KoReportODTRenderer.h"
+#include "KReportOdtRenderer_p.h"
 #include "KReportRenderObjects.h"
 
 #include <QTextDocument>

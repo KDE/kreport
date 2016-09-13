@@ -73,7 +73,7 @@ bool KReportDesign::setContent(const QString &text, KReportDesignReadingStatus *
                         status ? &status->columnNumber : 0))
     {
         if (status) {
-            status->errorMessage = KReportDesign::tr("Could not parse XML document.");
+            status->errorMessage = tr("Could not parse XML document.");
         }
         return false;
     }
