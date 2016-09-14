@@ -1,8 +1,8 @@
 /**
-    @mainpage
-    %KReport is a framework for the creation and generation of reports in multiple formats.
+ @mainpage KReport
 
- The KReport framework implements reporting functionality for creation
+ %KReport is a framework for the creation and generation of reports in multiple formats.
+ The %KReport framework implements reporting functionality for creation
  of <a href="https://support.office.com/article/e0869f59-7536-4d19-8e05-7158dcd3681c">reports
  in MS Access</a> style. They are also similar to <a href="http://www.sap.com/solution/sme/software/analytics/crystal-reports/index.html">
  SAP Crystal Reports</a> and <a href="http://help.filemaker.com/app/answers/detail/a_id/13754">
@@ -13,6 +13,8 @@
  Reports of this kind offer a way to view, format, and summarize the information.
  For example a simple report of contact phone numbers can be prepared, or a more complex
  report on sales for different products, regions, and periods of time.
+
+ @section usecases Use Cases
 
  A report is often filled with information from a database. There are many use cases:
  - The data can be displayed, summarized, sorted and grouped
