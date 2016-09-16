@@ -18,24 +18,35 @@
 */
 
 #include "window.h"
+#include "designerwindow.h"
+
 #include <KReportRenderObjects>
-
-#include <QApplication>
-#include <QFile>
-#include <QDebug>
-#include <QMenu>
-#include <QMenuBar>
-
 #include <KReportPluginManager>
 #include <KReportRendererBase>
 
-Window::Window()
-    : QMainWindow()
+#include <QApplication>
+#include <QDebug>
+#include <QFile>
+#include <QMenu>
+#include <QMenuBar>
+#include <QSplitter>
+
+Window::Window(QWidget *parent, Qt::WindowFlags flags)
+    : QMainWindow(parent, flags)
 {
+    QSplitter *centralWidget = new QSplitter(Qt::Vertical, this);
+    m_designerWidget = new ReportDesignerWidget(centralWidget);
+    m_designerWidget->createMainToolBar(this);
+    m_designerWidget->createItemsToolBar(this);
+    m_designerWidget->createPropertyEditorDockWidget(this, Qt::RightDockWidgetArea);
+    connect(m_designerWidget, &ReportDesignerWidget::designChanged,
+            this, &Window::showDesign);
+
     createMenus();
 
-    m_reportView = new KReportView(this);
-    setCentralWidget(m_reportView);
+    m_reportView = new KReportView(centralWidget);
+    setCentralWidget(centralWidget);
+    centralWidget->setSizes(QList<int>() << height() / 2 << height() / 2);
 
 #if 0
     if (loadDocument()) {

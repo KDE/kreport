@@ -17,26 +17,47 @@
    Boston, MA 02110-1301, USA.
 */
 
-#ifndef DESIGNERWINDOW_H
-#define DESIGNERWINDOW_H
+#ifndef KREPORTDESIGNERWIDGET_H
+#define KREPORTDESIGNERWIDGET_H
 
-#include <QMainWindow>
-#include <QDomElement>
+#include <QDockWidget>
+#include <QPointer>
+#include <QScrollArea>
+#include <QToolBar>
 
 #include <KPropertyEditorView>
 #include <KPropertySet>
 
-class QScrollArea;
 class KReportDesigner;
+class QDomElement;
+class QMainWindow;
+class QScrollArea;
 
-/*! @short KReportExample application's design window */
-class DesignerWindow : public QMainWindow
+//! KReportExample designer widget
+class ReportDesignerWidget : public QScrollArea
 {
     Q_OBJECT
 
 public:
-    DesignerWindow();
-    ~DesignerWindow();
+    ReportDesignerWidget(QWidget *parent = nullptr);
+    ~ReportDesignerWidget();
+
+    //! Creates main toolbar for main window @a mainWindow
+    //! @a mainWindow is required. To be called once.
+    QToolBar* createMainToolBar(QMainWindow *mainWindow);
+
+    //! Creates items toolbar for main window @a mainWindow
+    //! @a mainWindow is required. To be called once.
+    QToolBar* createItemsToolBar(QMainWindow *mainWindow);
+
+    //! Creates a property editor dock widget for the main window @a mainWindow.
+    //! The widget is added to the area @a area is it is not Qt::NoDockWidgetArea.
+    //! @a mainWindow is required. To be called once.
+    QDockWidget* createPropertyEditorDockWidget(QMainWindow *mainWindow,
+                                                Qt::DockWidgetArea area = Qt::NoDockWidgetArea);
+
+    //! @return current document
+    QDomElement document() const;
 
 Q_SIGNALS:
     void designChanged(const QDomElement&);
@@ -47,15 +68,14 @@ private Q_SLOTS:
     void designDirty();
 
 private:
-    QScrollArea * m_scrollArea;
     KReportDesigner *m_reportDesigner;
     KPropertySet *m_propertySet;
 
-    QToolBar *m_mainToolbar;
-    QToolBar *m_itemToolbar;
+    QPointer<QToolBar> m_mainToolBar;
+    QPointer<QToolBar> m_itemToolBar;
 
-    QDockWidget *m_propertyDock;
-    KPropertyEditorView *m_propertyEditor;
+    QPointer<QDockWidget> m_propertyDock;
+    QPointer<KPropertyEditorView> m_propertyEditor;
 };
 
 #endif // DESIGNERWINDOW_H

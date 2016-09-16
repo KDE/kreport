@@ -30,12 +30,14 @@
 #include <KReportPage>
 #include <KReportView>
 
+class ReportDesignerWidget;
+
 /*! @short KReportExample application's main window */
 class Window : public QMainWindow
 {
     Q_OBJECT
 public:
-    Window();
+    Window(QWidget *parent = nullptr, Qt::WindowFlags flags = Qt::WindowFlags());
     virtual ~Window();
 
 public Q_SLOTS:
@@ -45,6 +47,7 @@ private:
     void createMenus();
     bool loadDocument();
 
+    ReportDesignerWidget *m_designerWidget;
     QMenu *m_fileMenu;
     QAction *m_exitAction;
 

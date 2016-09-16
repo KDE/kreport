@@ -20,63 +20,83 @@
 #include "designerwindow.h"
 #include "KReportExampleData.h"
 
-#include <KReportDesigner.h>
+#include <KReportDesigner>
+#include <KReportDesignerSectionDetail>
+#include <KReportDesignerSection>
 
-#include <QActionGroup>
-#include <QScrollArea>
 #include <QAction>
+#include <QActionGroup>
 #include <QDockWidget>
+#include <QDomElement>
+#include <QMainWindow>
+#include <QScrollArea>
 #include <QToolBar>
 
-DesignerWindow::DesignerWindow()
+ReportDesignerWidget::ReportDesignerWidget(QWidget *parent)
+    : QScrollArea(parent)
 {
-    m_scrollArea = new QScrollArea(this);
-    setCentralWidget(m_scrollArea);
-
     m_reportDesigner = new KReportDesigner(this);
-    m_scrollArea->setWidget(m_reportDesigner);
+    setWidget(m_reportDesigner);
 
-    m_mainToolbar = addToolBar(tr("Main"));
-    m_itemToolbar = addToolBar(tr("Items"));
-
-    QList<QAction*> designerActions = m_reportDesigner->designerActions();
-    foreach(QAction* action, designerActions) {
-        m_mainToolbar->addAction(action);
-    }
-
-    QActionGroup *group = new QActionGroup(this);
-    QList<QAction*> itemActions = KReportDesigner::itemActions(group);
-    foreach(QAction* action, itemActions) {
-        m_itemToolbar->addAction(action);
-    }
-
-    m_reportDesigner->plugItemActions(itemActions);
-
-    connect(m_reportDesigner, SIGNAL(itemInserted(QString)), this, SLOT(slotItemInserted(QString)));
-
-    // Set up the property editor
-    m_propertyDock = new QDockWidget(tr("Property Editor"), this);
-    m_propertyEditor = new KPropertyEditorView(this);
-    m_propertyDock->setWidget(m_propertyEditor);
-
-    addDockWidget(Qt::RightDockWidgetArea, m_propertyDock);
-    m_propertyEditor->changeSet(m_reportDesigner->propertySet());
-
+    connect(m_reportDesigner, SIGNAL(itemInserted(QString)),
+            this, SLOT(slotItemInserted(QString)));
     connect(m_reportDesigner, SIGNAL(propertySetChanged()),
             this, SLOT(slotDesignerPropertySetChanged()));
-
     connect(m_reportDesigner, SIGNAL(dirty()), this, SLOT(designDirty()));
 
-    m_reportDesigner->setReportData(new KReportExampleData());
+    m_reportDesigner->setReportData(new KReportExampleData);
 }
 
-DesignerWindow::~DesignerWindow()
+ReportDesignerWidget::~ReportDesignerWidget()
 {
 }
 
-void DesignerWindow::slotItemInserted(const QString &itemId)
+QToolBar* ReportDesignerWidget::createMainToolBar(QMainWindow *mainWindow)
 {
-    QList<QAction*> itemActions = m_itemToolbar->actions();
+    Q_ASSERT(mainWindow);
+    if (!m_mainToolBar) {
+        m_mainToolBar = mainWindow->addToolBar(tr("Main"));
+        QList<QAction*> designerActions = m_reportDesigner->designerActions();
+        foreach(QAction* action, designerActions) {
+            m_mainToolBar->addAction(action);
+        }
+    }
+    return m_mainToolBar;
+}
+
+QToolBar* ReportDesignerWidget::createItemsToolBar(QMainWindow *mainWindow)
+{
+    if (!m_itemToolBar) {
+        m_itemToolBar = mainWindow->addToolBar(tr("Items"));
+        QActionGroup *group = new QActionGroup(this);
+        QList<QAction*> itemActions = KReportDesigner::itemActions(group);
+        foreach(QAction* action, itemActions) {
+            m_itemToolBar->addAction(action);
+        }
+        m_reportDesigner->plugItemActions(itemActions);
+    }
+    return m_itemToolBar;
+}
+
+QDockWidget* ReportDesignerWidget::createPropertyEditorDockWidget(QMainWindow *mainWindow,
+                                                                  Qt::DockWidgetArea area)
+{
+    if (!m_propertyDock) {
+        m_propertyDock = new QDockWidget(tr("Property Editor"), mainWindow);
+        m_propertyEditor = new KPropertyEditorView;
+        m_propertyEditor->changeSet(m_reportDesigner->propertySet());
+        m_propertyDock->setWidget(m_propertyEditor);
+        mainWindow->addDockWidget(area, m_propertyDock);
+        m_propertyEditor->resize(200, m_propertyEditor->height());
+        slotDesignerPropertySetChanged();
+    }
+    emit designDirty();
+    return m_propertyDock;
+}
+
+void ReportDesignerWidget::slotItemInserted(const QString &itemId)
+{
+    QList<QAction*> itemActions = m_itemToolBar->actions();
     foreach(QAction* action, itemActions) {
         if (action->objectName() == itemId) {
             action->setChecked(false);
@@ -84,13 +104,19 @@ void DesignerWindow::slotItemInserted(const QString &itemId)
     }
 }
 
-void DesignerWindow::slotDesignerPropertySetChanged()
+void ReportDesignerWidget::slotDesignerPropertySetChanged()
 {
-    m_propertyEditor->changeSet(m_reportDesigner->itemPropertySet());
+    if (m_propertyEditor) {
+        m_propertyEditor->changeSet(m_reportDesigner->itemPropertySet());
+    }
 }
 
-void DesignerWindow::designDirty()
+void ReportDesignerWidget::designDirty()
 {
     emit designChanged(m_reportDesigner->document());
 }
 
+QDomElement ReportDesignerWidget::document() const
+{
+    return m_reportDesigner->document();
+}
