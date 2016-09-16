@@ -29,6 +29,7 @@
 #include <QFile>
 #include <QMenu>
 #include <QMenuBar>
+#include <QSettings>
 #include <QSplitter>
 
 Window::Window(QWidget *parent, Qt::WindowFlags flags)
@@ -60,10 +61,24 @@ Window::Window(QWidget *parent, Qt::WindowFlags flags)
     KReportPluginManager* manager = KReportPluginManager::self();
     //! @todo
     Q_UNUSED(manager);
+
+    // restore visual settings
+    QSettings settings("org.kde.kreport", "KReportExample");
+    restoreGeometry(settings.value("MainWindow/geometry").toByteArray());
+        restoreState(settings.value("MainWindow/windowState").toByteArray());
 }
 
 Window::~Window()
 {
+}
+
+void Window::closeEvent(QCloseEvent *event)
+{
+    // store visual settings
+    QSettings settings("org.kde.kreport", "KReportExample");
+    settings.setValue("MainWindow/geometry", saveGeometry());
+    settings.setValue("MainWindow/windowState", saveState());
+    QMainWindow::closeEvent(event);
 }
 
 bool Window::loadDocument()
