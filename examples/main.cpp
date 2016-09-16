@@ -20,7 +20,6 @@
 #include <QApplication>
 
 #include "window.h"
-#include "designerwindow.h"
 
 //static const char description[] = "An example application for the KReport library";
 static const char version[] = "0.2";
@@ -35,9 +34,5 @@ int main(int argc, char **argv)
     Window window;
     window.show();
 
-    DesignerWindow designerWindow;
-    designerWindow.show();
-
-    QObject::connect(&designerWindow, SIGNAL(designChanged(QDomElement)), &window, SLOT(showDesign(QDomElement)));
     return app.exec();
 }
