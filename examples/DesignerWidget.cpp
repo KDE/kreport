@@ -17,7 +17,7 @@
    Boston, MA 02110-1301, USA.
 */
 
-#include "designerwindow.h"
+#include "DesignerWidget.h"
 #include "KReportExampleData.h"
 
 #include <KReportDesigner>

@@ -18,7 +18,7 @@
 */
 
 #include "window.h"
-#include "designerwindow.h"
+#include "DesignerWidget.h"
 
 #include <KReportRenderObjects>
 #include <KReportPluginManager>

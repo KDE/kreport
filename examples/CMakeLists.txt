@@ -12,7 +12,7 @@ add_definitions(-DKREPORTEXAMPLE_DATA_DIR="\\"${CMAKE_CURRENT_SOURCE_DIR}\\"")
 
 set(kreportexample_SRCS main.cpp
         window.cpp
-        designerwindow.cpp
+        DesignerWidget.cpp
         KReportExampleData.cpp
 )
 add_executable(kreportexample ${kreportexample_SRCS})
