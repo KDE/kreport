@@ -71,6 +71,7 @@ KReportView::KReportView(QWidget *parent)
     d->reportView->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
 
     QVBoxLayout *l = new QVBoxLayout;
+    l->setMargin(0);
     setLayout(l);
 
     layout()->addWidget(d->reportView);
