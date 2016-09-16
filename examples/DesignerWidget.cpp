@@ -67,7 +67,8 @@ QToolBar* ReportDesignerWidget::createMainToolBar(QMainWindow *mainWindow)
 QToolBar* ReportDesignerWidget::createItemsToolBar(QMainWindow *mainWindow)
 {
     if (!m_itemToolBar) {
-        m_itemToolBar = mainWindow->addToolBar(tr("Items"));
+        m_itemToolBar = new QToolBar(tr("Items"));
+        mainWindow->addToolBar(Qt::LeftToolBarArea, m_itemToolBar); // good position for a toolbox
         QActionGroup *group = new QActionGroup(this);
         QList<QAction*> itemActions = KReportDesigner::itemActions(group);
         foreach(QAction* action, itemActions) {
