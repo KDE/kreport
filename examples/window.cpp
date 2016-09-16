@@ -66,6 +66,8 @@ Window::Window(QWidget *parent, Qt::WindowFlags flags)
     QSettings settings("org.kde.kreport", "KReportExample");
     restoreGeometry(settings.value("MainWindow/geometry").toByteArray());
         restoreState(settings.value("MainWindow/windowState").toByteArray());
+
+    showDesign(m_designerWidget->document());
 }
 
 Window::~Window()
