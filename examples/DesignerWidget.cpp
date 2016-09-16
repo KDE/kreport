@@ -56,6 +56,7 @@ QToolBar* ReportDesignerWidget::createMainToolBar(QMainWindow *mainWindow)
     Q_ASSERT(mainWindow);
     if (!m_mainToolBar) {
         m_mainToolBar = mainWindow->addToolBar(tr("Main"));
+        m_mainToolBar->setObjectName("MainToolBar"); // needed by QMainWindow::saveState()
         QList<QAction*> designerActions = m_reportDesigner->designerActions();
         foreach(QAction* action, designerActions) {
             m_mainToolBar->addAction(action);
@@ -69,6 +70,7 @@ QToolBar* ReportDesignerWidget::createItemsToolBar(QMainWindow *mainWindow)
     if (!m_itemToolBar) {
         m_itemToolBar = new QToolBar(tr("Items"));
         mainWindow->addToolBar(Qt::LeftToolBarArea, m_itemToolBar); // good position for a toolbox
+        m_itemToolBar->setObjectName("ItemsToolBar"); // needed by QMainWindow::saveState()
         QActionGroup *group = new QActionGroup(this);
         QList<QAction*> itemActions = KReportDesigner::itemActions(group);
         foreach(QAction* action, itemActions) {
@@ -84,6 +86,7 @@ QDockWidget* ReportDesignerWidget::createPropertyEditorDockWidget(QMainWindow *m
 {
     if (!m_propertyDock) {
         m_propertyDock = new QDockWidget(tr("Property Editor"), mainWindow);
+        m_propertyDock->setObjectName("PropertyEditorDockWidget"); // needed by QMainWindow::saveState()
         m_propertyEditor = new KPropertyEditorView;
         m_propertyEditor->changeSet(m_reportDesigner->propertySet());
         m_propertyDock->setWidget(m_propertyEditor);
