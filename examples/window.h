@@ -43,6 +43,9 @@ public:
 public Q_SLOTS:
     void showDesign(const QDomElement &design);
 
+protected:
+    void closeEvent(QCloseEvent *event) Q_DECL_OVERRIDE;
+
 private:
     void createMenus();
     bool loadDocument();
