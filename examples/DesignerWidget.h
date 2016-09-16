@@ -78,4 +78,4 @@ private:
     QPointer<KPropertyEditorView> m_propertyEditor;
 };
 
-#endif // DESIGNERWINDOW_H
+#endif // KREPORTDESIGNERWIDGET_H
