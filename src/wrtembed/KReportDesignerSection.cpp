@@ -126,6 +126,8 @@ KReportDesignerSection::KReportDesignerSection(KReportDesigner * rptdes)
     d->sectionRuler = new KReportRuler(this, Qt::Vertical, d->reportDesigner->zoomHandler());
     d->sectionRuler->setUnit(d->reportDesigner->pageUnit());
     d->scene = new KReportDesignerSectionScene(d->reportDesigner->pageWidthPx(), d->dpiY, rptdes);
+    d->scene->setBackgroundBrush(d->sectionData->backgroundColor());
+    
     d->sceneView = new KReportDesignerSectionView(rptdes, d->scene, this);
     d->sceneView->setObjectName(QLatin1String("scene view"));
     d->sceneView->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);

@@ -108,7 +108,7 @@ void KReportItemField::createProperties()
     m_font = new KProperty("font", QApplication::font(), tr("Font"));
 
     m_backgroundColor = new KProperty("background-color", QColor(Qt::white), tr("Background Color"));
-    m_foregroundColor = new KProperty("foreground-color", QPalette().color(QPalette::Foreground), tr("Foreground Color"));
+    m_foregroundColor = new KProperty("foreground-color", QColor(Qt::black), tr("Foreground Color"));
 
     m_backgroundOpacity = new KProperty("background-opacity", QVariant(0), tr("Background Opacity"));
     m_backgroundOpacity->setOption("max", 100);

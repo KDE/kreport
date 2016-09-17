@@ -84,7 +84,7 @@ void KReportItemCheckBox::createProperties()
     m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
     m_controlSource->setOption("extraValueAllowed", QLatin1String("true"));
 
-    m_foregroundColor = new KProperty("foreground-color", QPalette().color(QPalette::Foreground), tr("Foreground Color"));
+    m_foregroundColor = new KProperty("foreground-color", QColor(Qt::black), tr("Foreground Color"));
 
     m_lineWeight = new KProperty("line-weight", 1, tr("Line Weight"));
     m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
