@@ -63,7 +63,7 @@ Window::Window(QWidget *parent, Qt::WindowFlags flags)
     Q_UNUSED(manager);
 
     // restore visual settings
-    QSettings settings("kde.org", "KReportExample");
+    QSettings settings;
     restoreGeometry(settings.value("MainWindow/geometry").toByteArray());
         restoreState(settings.value("MainWindow/windowState").toByteArray());
 
@@ -77,7 +77,7 @@ Window::~Window()
 void Window::closeEvent(QCloseEvent *event)
 {
     // store visual settings
-    QSettings settings("kde.org", "KReportExample");
+    QSettings settings;
     settings.setValue("MainWindow/geometry", saveGeometry());
     settings.setValue("MainWindow/windowState", saveState());
     QMainWindow::closeEvent(event);

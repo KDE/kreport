@@ -30,6 +30,7 @@ int main(int argc, char **argv)
 
     QCoreApplication::setApplicationName("KReportExample");
     QCoreApplication::setApplicationVersion(version);
+    QCoreApplication::setOrganizationDomain("kde.org");
 
     Window window;
     window.show();
