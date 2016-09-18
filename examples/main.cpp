@@ -20,16 +20,16 @@
 #include <QApplication>
 
 #include "window.h"
+#include <kreport_version.h>
 
 //static const char description[] = "An example application for the KReport library";
-static const char version[] = "0.2";
 
 int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
 
     QCoreApplication::setApplicationName("KReportExample");
-    QCoreApplication::setApplicationVersion(version);
+    QCoreApplication::setApplicationVersion(KREPORT_VERSION_STRING);
     QCoreApplication::setOrganizationDomain("kde.org");
 
     Window window;
