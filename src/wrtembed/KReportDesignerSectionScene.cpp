@@ -131,10 +131,8 @@ void KReportDesignerSectionScene::mousePressEvent(QGraphicsSceneMouseEvent * e)
 
     //This will be caught by the section to display its properties, if an item is under the cursor then they will display their properties
     QGraphicsItem* itemUnderCursor = itemAt(e->scenePos(), QTransform());
-    if (!itemUnderCursor) {
-        emit clicked();
-    }
-
+    emit clicked();
+    
     KReportDesignerItemRectBase *rectUnderCursor = qgraphicsitem_cast< KReportDesignerItemRectBase* >(itemUnderCursor);
     if (itemUnderCursor && !rectUnderCursor) {
         rectUnderCursor = qgraphicsitem_cast< KReportDesignerItemRectBase* >(itemUnderCursor->parentItem());
