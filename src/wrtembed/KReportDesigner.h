@@ -274,7 +274,7 @@ public:
     /**
      * @brief Adds meta-properties to the property set @a set for consumption by property editor
      * - "this:classString" - user-visible translated name of element type, e.g. tr("Label")
-     * - "this:iconName" - name of user-visible icon, e.g. "kreport_label_element"
+     * - "this:iconName" - name of user-visible icon, e.g. "kreport-label-element"
      *
      * All the properties are set to invisible.
      * @see propertySet()

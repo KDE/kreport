@@ -16,4 +16,4 @@ set(kreportexample_SRCS main.cpp
         KReportExampleData.cpp
 )
 add_executable(kreportexample ${kreportexample_SRCS})
-target_link_libraries(kreportexample Qt5::Widgets KReport)
+target_link_libraries(kreportexample KF5::ConfigGui KReport)

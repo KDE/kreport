@@ -21,6 +21,7 @@
 
 #include "window.h"
 #include <kreport_version.h>
+#include <KReportUtils_p.h>
 
 //static const char description[] = "An example application for the KReport library";
 
@@ -31,7 +32,7 @@ int main(int argc, char **argv)
     QCoreApplication::setApplicationName("KReportExample");
     QCoreApplication::setApplicationVersion(KREPORT_VERSION_STRING);
     QCoreApplication::setOrganizationDomain("kde.org");
-
+    (void)KReportPrivate::setupGlobalIconTheme();
     Window window;
     window.show();
 

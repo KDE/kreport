@@ -14,15 +14,15 @@ if(KREPORT_SCRIPTING)
     )
 endif()
 
-add_library(kreport_chartplugin MODULE ${kreport_chartplugin_LIB_SRCS})
+add_library(org.kde.kreport.chart MODULE ${kreport_chartplugin_LIB_SRCS})
 
-target_link_libraries(kreport_chartplugin
+target_link_libraries(org.kde.kreport.chart
     PUBLIC
         KReport
     PRIVATE
         KChart
 )
 
-install(TARGETS kreport_chartplugin DESTINATION ${KREPORT_PLUGIN_INSTALL_DIR})
+install(TARGETS org.kde.kreport.chart DESTINATION ${KREPORT_PLUGIN_INSTALL_DIR})
 
 add_subdirectory(pics)

@@ -42,7 +42,7 @@
         "Description[uk]": "Елемент мітки для звітів", 
         "Description[x-test]": "xxLabel element for Reportsxx", 
         "EnabledByDefault": true, 
-        "Icon": "kreport_label_element", 
+        "Icon": "kreport-label-element",
         "Id": "org.kde.kreport.label", 
         "License": "LGPL", 
         "Name": "Label", 
