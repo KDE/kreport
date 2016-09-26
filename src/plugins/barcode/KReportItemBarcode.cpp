@@ -108,7 +108,7 @@ void KReportItemBarcode::setMaxLength(int i)
             m_minWidthTotal = 0.90;
             m_minHeight = 0.25;
         } else {
-            kreportpluginDebug() << "Unknown format encountered: " << m_format->value().toString();
+            kreportpluginWarning() << "Unknown format encountered: " << m_format->value().toString();
         }
     }
 }
@@ -247,7 +247,7 @@ int KReportItemBarcode::renderSimpleData(OROPage *page, OROSection *section, con
         else if (fmt == "upc-e")
             renderCodeUPCE(page, rect, val, align);
         else {
-            kreportpluginDebug() << "Unknown barcode format:" << fmt;
+            kreportpluginWarning() << "Unknown barcode format:" << fmt;
         }
     }
     return 0;

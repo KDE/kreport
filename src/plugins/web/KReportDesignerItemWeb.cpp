@@ -33,7 +33,6 @@
 
 void KReportDesignerItemWeb::init(QGraphicsScene *scene, KoReportDesigner *d) //done,compared,add function if necessary
 {
-    kreportpluginDebug();
     if (scene)
         scene->addItem(this);
 

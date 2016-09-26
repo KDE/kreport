@@ -147,7 +147,7 @@ int KReportItemMaps::renderSimpleData(OROPage *page, OROSection *section, const 
 
 void KReportItemMaps::deserializeData(const QVariant& serialized)
 {
-    kreportpluginDebug() << "Map data for this record is" << serialized;
+    //kreportpluginDebug() << "Map data for this record is" << serialized;
     QStringList dataList = serialized.toString().split(QLatin1Char(';'));
     if (dataList.size() == 3) {
         m_latitude = dataList[0].toDouble();

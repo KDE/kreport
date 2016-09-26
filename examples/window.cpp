@@ -85,7 +85,7 @@ void Window::closeEvent(QCloseEvent *event)
 
 bool Window::loadDocument()
 {
-    qDebug() << KREPORTEXAMPLE_DATA_DIR;
+    //qDebug() << KREPORTEXAMPLE_DATA_DIR;
     QFile file(QLatin1String(KREPORTEXAMPLE_DATA_DIR) + "/report.xml");
     if (!file.open(QIODevice::ReadOnly)) {
         return false;
@@ -116,7 +116,6 @@ void Window::createMenus()
 
 void Window::showDesign(const QDomElement &design)
 {
-    qDebug() << "Show design";
     KReportPreRenderer preRenderer(design);
     if (!preRenderer.isValid()) {
         return;

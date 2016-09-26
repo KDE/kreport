@@ -114,7 +114,7 @@ void KReportDesignerItemMaps::buildXML(QDomDocument *doc, QDomElement *parent)
 
 void KReportDesignerItemMaps::slotPropertyChanged(KPropertySet &s, KProperty &p)
 {
-    kreportpluginDebug() << p.name() << ":" << p.value();
+    //kreportpluginDebug() << p.name() << ":" << p.value();
     if (p.name().toLower() == "name") {
         //For some reason p.oldValue returns an empty string
         if (!m_reportDesigner->isEntityNameUnique(p.value().toString(), this)) {

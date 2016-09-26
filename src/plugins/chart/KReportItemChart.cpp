@@ -239,7 +239,7 @@ void KReportItemChart::populateData()
             if (curs) {
                 const QStringList keys = m_links.keys();
                 foreach(const QString& field, keys) {
-                    kreportpluginDebug() << "Adding Expression:" << field << m_links[field];
+                    //kreportpluginDebug() << "Adding Expression:" << field << m_links[field];
                     curs->addExpression(field, m_links[field], '=');
                 }
             }
@@ -287,15 +287,15 @@ void KReportItemChart::populateData()
                     }
                 }
             } else {
-                kreportpluginDebug() << "Unable to open data set";
+                kreportpluginWarning() << "Unable to open data set";
             }
             delete curs;
             curs = 0;
         } else {
-            kreportpluginDebug() << "No source set";
+            kreportpluginWarning() << "No source set";
         }
     } else {
-        kreportpluginDebug() << "No connection!";
+        kreportpluginWarning() << "No connection!";
     }
 }
 
@@ -306,7 +306,7 @@ QStringList KReportItemChart::masterFields() const
 
 void KReportItemChart::setLinkData(QString fld, QVariant val)
 {
-    kreportpluginDebug() << "Field: " << fld << "is" << val;
+    //kreportpluginDebug() << "Field: " << fld << "is" << val;
     m_links[fld] = val;
 }
 

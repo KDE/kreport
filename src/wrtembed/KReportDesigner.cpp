@@ -1062,7 +1062,7 @@ void KReportDesigner::changeSet(KPropertySet *s)
 
 void KReportDesigner::slotItem(const QString &entity)
 {
-    kreportDebug() << entity;
+    //kreportDebug() << entity;
     d->sectionData->mouseAction = ReportWriterSectionData::MA_Insert;
     d->sectionData->insertItem = entity;
     setSectionCursor(QCursor(Qt::CrossCursor));

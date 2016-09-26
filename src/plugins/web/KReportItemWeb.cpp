@@ -81,7 +81,7 @@ QString KReportItemWeb::typeName() const
 
 void KReportItemWeb::loadFinished(bool)
 {
-    kreportpluginDebug() << m_rendering;
+    //kreportpluginDebug() << m_rendering;
     if (m_rendering) {
         OROPicture * pic = new OROPicture();
         m_webPage->setViewportSize(m_size.toScene().toSize());
@@ -117,7 +117,7 @@ int KReportItemWeb::renderSimpleData(OROPage *page, OROSection *section, const Q
 
     m_rendering = true;
 
-    kreportpluginDebug() << data;
+    //kreportpluginDebug() << data;
 
     m_targetPage = page;
     m_targetSection = section;

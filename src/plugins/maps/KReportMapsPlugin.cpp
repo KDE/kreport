@@ -51,7 +51,7 @@ QObject* KReportMapsPlugin::createDesignerInstance(const QDomNode& element, KRep
 
 QObject* KReportMapsPlugin::createDesignerInstance(KReportDesigner* designer, QGraphicsScene* scene, const QPointF& pos)
 {
-    kreportpluginDebug() << "KReport maps init";
+    //kreportpluginDebug() << "KReport maps init";
     return new KReportDesignerItemMaps(designer, scene, pos);
 }
 

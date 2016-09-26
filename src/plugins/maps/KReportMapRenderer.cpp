@@ -57,7 +57,7 @@ void KReportMapRenderer::renderJob(KReportItemMaps* reportItemMaps)
 {
     m_currentJob = reportItemMaps;
     int zoom = m_currentJob->zoom();
-    kreportpluginDebug() << "Map Renderer rendering" << m_currentJob->longtitude() << m_currentJob->latitude();
+    //kreportpluginDebug() << "Map Renderer rendering" << m_currentJob->longtitude() << m_currentJob->latitude();
 
     m_marble.setMapThemeId(m_currentJob->themeId());
     //some themes enable overview map, and this must be disabled after theme switch.
@@ -77,16 +77,16 @@ void KReportMapRenderer::renderJob(KReportItemMaps* reportItemMaps)
 
 void KReportMapRenderer::onRenderStatusChange(Marble::RenderStatus renderStatus)
 {
-    kreportpluginDebug() << m_marble.renderStatus() << "|" << renderStatus;
+    //kreportpluginDebug() << m_marble.renderStatus() << "|" << renderStatus;
 
     if(m_currentJob){
-        kreportpluginDebug()
+        /*kreportpluginDebug()
             << this
             << m_currentJob
             << m_currentJob->longtitude()
             << m_currentJob->latitude()
             << m_currentJob->zoom()
-            << " | status: " << renderStatus;
+            << " | status: " << renderStatus;*/
 
         if(renderStatus == Marble::Complete){
             m_currentJob->renderFinished();
@@ -96,16 +96,18 @@ void KReportMapRenderer::onRenderStatusChange(Marble::RenderStatus renderStatus)
 
 void KReportMapRenderer::downloadFinished()
 {
-    kreportpluginDebug() << "job:" << m_currentJob
-    << "(" << m_currentJob->latitude() << "," << m_currentJob->longtitude() << ")";
+    //kreportpluginDebug() << "job:" << m_currentJob
+    //<< "(" << m_currentJob->latitude() << "," << m_currentJob->longtitude() << ")";
 }
 
 void KReportMapRenderer::downloadProgres(int active, int queued)
 {
+    Q_UNUSED(active)
+    Q_UNUSED(queued)
     if(m_currentJob){
-        kreportpluginDebug() << "job:" << m_currentJob
-        << "(" << m_currentJob->latitude() << "," << m_currentJob->longtitude() << ")"
-        << "active/queued:" << active << "/" << queued;
+        //kreportpluginDebug() << "job:" << m_currentJob
+        //<< "(" << m_currentJob->latitude() << "," << m_currentJob->longtitude() << ")"
+        //<< "active/queued:" << active << "/" << queued;
     }
 }
 
