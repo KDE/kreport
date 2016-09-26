@@ -42,7 +42,7 @@
         "Description[uk]": "Елемент діаграми для звітів", 
         "Description[x-test]": "xxChart element for Reportsxx", 
         "EnabledByDefault": true, 
-        "Icon": "report_chart_element", 
+        "Icon": "report-chart-element",
         "Id": "org.kde.kreport.chart", 
         "License": "LGPL", 
         "Name": "Chart", 

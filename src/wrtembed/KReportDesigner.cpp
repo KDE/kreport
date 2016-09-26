@@ -214,6 +214,8 @@ KReportDesigner::KReportDesigner(QWidget * parent)
 
 void KReportDesigner::init()
 {
+    KReportPluginManager::self(); // this loads icons early enough
+
     d->sectionData = new ReportWriterSectionData();
     createProperties();
     createActions();
@@ -721,7 +723,7 @@ void KReportDesigner::createProperties()
     QStringList keys, strings;
     d->set = new KPropertySet;
     KReportDesigner::addMetaProperties(d->set,
-        tr("Report", "Main report element"), QLatin1String("kreport_report_element"));
+        tr("Report", "Main report element"), QLatin1String("kreport-report-element"));
 
     connect(d->set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
@@ -997,7 +999,7 @@ void KReportDesigner::sectionMouseReleaseEvent(KReportDesignerSectionView * v, Q
             if (d->sectionData->insertItem == QLatin1String("org.kde.kreport.line")) {
                 item = new KReportDesignerItemLine(v->designer(), v->scene(), pos, end);
                 classString = tr("Line", "Report line element");
-                iconName = QLatin1String("kreport_line_element");
+                iconName = QLatin1String("kreport-line-element");
             }
             else {
                 KReportPluginManager* pluginManager = KReportPluginManager::self();
@@ -1338,7 +1340,7 @@ QList<QAction*> KReportDesigner::itemActions(QActionGroup* group)
     QList<QAction*> actList = manager->createActions(group);
 
     //! @todo make line a real plugin so this isn't needed:
-    QAction *act = new QAction(QIcon::fromTheme(QLatin1String("kreport_line_element")), tr("Line"), group);
+    QAction *act = new QAction(QIcon::fromTheme(QLatin1String("kreport-line-element")), tr("Line"), group);
     act->setObjectName(QLatin1String("org.kde.kreport.line"));
     act->setData(9);
     act->setCheckable(true);

@@ -8,6 +8,7 @@ set(kreport_mapsplugin_LIB_SRCS
     KReportMapsPlugin.cpp
     KReportMapRenderer.cpp
     ${kreport_mapsplugin_QM_LOADER}
+    kreport_mapsplugin.json
 )
 
 if(KREPORT_SCRIPTING)
@@ -16,9 +17,9 @@ if(KREPORT_SCRIPTING)
     )
 endif()
 
-add_library(kreport_mapsplugin MODULE ${kreport_mapsplugin_LIB_SRCS})
+add_library(org.kde.kreport.maps MODULE ${kreport_mapsplugin_LIB_SRCS})
 
-target_link_libraries(kreport_mapsplugin
+target_link_libraries(org.kde.kreport.maps
     PUBLIC
         KReport
     PRIVATE
@@ -27,6 +28,6 @@ target_link_libraries(kreport_mapsplugin
 
 ########### install files ###############
 
-install(TARGETS kreport_mapsplugin DESTINATION ${KREPORT_PLUGIN_INSTALL_DIR})
+install(TARGETS org.kde.kreport.maps DESTINATION ${KREPORT_PLUGIN_INSTALL_DIR})
 
 add_subdirectory(pics)

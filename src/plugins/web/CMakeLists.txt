@@ -9,9 +9,9 @@ set(kreport_webplugin_LIB_SRCS
     ${kreport_webplugin_QM_LOADER}
 )
 
-add_library(kreport_webplugin MODULE ${kreport_webplugin_LIB_SRCS})
+add_library(org.kde.kreport.web MODULE ${kreport_webplugin_LIB_SRCS})
 
-target_link_libraries(kreport_webplugin
+target_link_libraries(org.kde.kreport.web
     PUBLIC
         KReport
     PRIVATE
@@ -20,6 +20,6 @@ target_link_libraries(kreport_webplugin
 
 ########### install files ###############
 
-install(TARGETS kreport_webplugin DESTINATION ${KREPORT_PLUGIN_INSTALL_DIR})
+install(TARGETS org.kde.kreport.web DESTINATION ${KREPORT_PLUGIN_INSTALL_DIR})
 
 add_subdirectory(pics)
