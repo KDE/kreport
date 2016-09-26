@@ -16,6 +16,7 @@ include(KDEFrameworkCompilerSettings)
 include(KDECMakeSettings)
 
 include(KReportMacros)
+include(KReportAddIconsRccFile)
 
 # Dependencies
 set(REQUIRED_QT_VERSION "5.3.0")

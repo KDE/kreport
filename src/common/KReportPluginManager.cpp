@@ -1,6 +1,6 @@
 /* This file is part of the KDE project
    Copyright (C) 2010 by Adam Pigg (adam@piggz.co.uk)
-   Copyright (C) 2015 Jarosław Staniek <staniek@kde.org>
+   Copyright (C) 2015-2016 Jarosław Staniek <staniek@kde.org>
 
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
@@ -22,6 +22,7 @@
 #include "KReportPluginManagerPrivate.h"
 #include "KReportPluginMetaData.h"
 #include "KReportJsonTrader_p.h"
+#include "KReportUtils_p.h"
 
 #include "kreport_debug.h"
 #include <QAction>
@@ -219,9 +220,20 @@ void KReportPluginManager::Private::findPlugins()
         //! @todo check version
         KReportPluginEntry *entry = new KReportPluginEntry;
         entry->setMetaData(loader);
+        if (!KReportPrivate::setupPrivateIconsResourceWithMessage(
+            QLatin1String(KREPORT_BASE_NAME_LOWER),
+            QString::fromLatin1("icons/%1_%2.rcc")
+                .arg(entry->metaData()->id()).arg(KReportPrivate::supportedIconTheme),
+            QtWarningMsg,
+            QString::fromLatin1(":/icons/%1").arg(entry->metaData()->id())))
+        {
+            delete entry;
+            continue;
+        }
         m_plugins.insert(entry->metaData()->id(), entry);
-        if (entry->metaData()->id().startsWith(QLatin1String("org.kde.kreport"))) {
-            m_pluginsByLegacyName.insert(entry->metaData()->value(QLatin1String("X-KDE-PluginInfo-LegacyName"), entry->metaData()->id()), entry);
+        const QString legacyName(entry->metaData()->value(QLatin1String("X-KDE-PluginInfo-LegacyName"), entry->metaData()->id()));
+        if (!legacyName.isEmpty() && entry->metaData()->id().startsWith(QLatin1String("org.kde.kreport"))) {
+            m_pluginsByLegacyName.insert(legacyName, entry);
         }
     }
     m_findPlugins = false;
@@ -240,6 +252,9 @@ public:
 KReportPluginManager::KReportPluginManager()
     : d(new Private(this))
 {
+    KReportPrivate::setupPrivateIconsResourceWithMessage(
+        QLatin1String(KREPORT_BASE_NAME_LOWER),
+        QString::fromLatin1("icons/kreport_%1.rcc").arg(KReportPrivate::supportedIconTheme), QtFatalMsg);
 }
 
 KReportPluginManager::~KReportPluginManager()

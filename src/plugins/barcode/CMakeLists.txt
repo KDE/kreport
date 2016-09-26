@@ -16,6 +16,7 @@ set(kreport_barcodeplugin_LIB_SRCS
     code128paint.cpp
     KReportBarcodePlugin.cpp
     ${kreport_barcodeplugin_QM_LOADER}
+    kreport_barcodeplugin.json
 )
 
 if(KREPORT_SCRIPTING)
@@ -24,13 +25,13 @@ if(KREPORT_SCRIPTING)
     )
 endif()
 
-add_library(kreport_barcodeplugin MODULE ${kreport_barcodeplugin_LIB_SRCS})
+add_library(org.kde.kreport.barcode MODULE ${kreport_barcodeplugin_LIB_SRCS})
 
-target_link_libraries(kreport_barcodeplugin
+target_link_libraries(org.kde.kreport.barcode
     PUBLIC
         KReport
 )
 
-install(TARGETS kreport_barcodeplugin DESTINATION ${KREPORT_PLUGIN_INSTALL_DIR})
+install(TARGETS org.kde.kreport.barcode DESTINATION ${KREPORT_PLUGIN_INSTALL_DIR})
 
 add_subdirectory(pics)

@@ -105,7 +105,7 @@ void KReportSectionData::createProperties(const QDomElement & elemSource)
 {
     m_set = new KPropertySet(this);
     KReportDesigner::addMetaProperties(m_set,
-        tr("Section", "Report section"), QLatin1String("kreport_section_element"));
+        tr("Section", "Report section"), QLatin1String("kreport-section-element"));
 
     m_height = new KProperty("height", KReportUnit(KReportUnit::Centimeter).fromUserValue(2.0), tr("Height"));
     m_backgroundColor = new KProperty("background-color", QColor(Qt::white), tr("Background Color"));
