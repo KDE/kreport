@@ -42,7 +42,7 @@ public:
     explicit Private()
         : reportDocument(0)
         , reportPage(0)
-        , currentPage(0)
+        , currentPage(1)
         , pageCount(0)
     {}
 
