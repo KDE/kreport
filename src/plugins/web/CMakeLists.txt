@@ -11,8 +11,6 @@ set(kreport_webplugin_LIB_SRCS
 
 add_library(kreport_webplugin MODULE ${kreport_webplugin_LIB_SRCS})
 
-set (QT_USE_QTWEBKIT TRUE)
-
 target_link_libraries(kreport_webplugin
     PUBLIC
         KReport

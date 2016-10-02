@@ -32,8 +32,8 @@ class KReportDesignerItemWeb : public KReportItemWeb, public KReportDesignerItem
 {
     Q_OBJECT
 public:
-    KReportDesignerItemWeb(KoReportDesigner *rw, QGraphicsScene *scene, const QPointF &pos);
-    KReportDesignerItemWeb(QDomNode *element, KoReportDesigner *rw, QGraphicsScene *scene);
+    KReportDesignerItemWeb(KReportDesigner *rw, QGraphicsScene *scene, const QPointF &pos);
+    KReportDesignerItemWeb(const QDomNode &element, KReportDesigner *rw, QGraphicsScene *scene);
     virtual ~KReportDesignerItemWeb();
 
     void init(QGraphicsScene *scene);
@@ -46,7 +46,7 @@ protected:
     virtual void mousePressEvent(QGraphicsSceneMouseEvent *event);
 
 private:
-    void init(QGraphicsScene *, KoReportDesigner *r);
+    void init(QGraphicsScene *, KReportDesigner *r);
 
 private Q_SLOTS:
     void slotPropertyChanged(KPropertySet &, KProperty &);

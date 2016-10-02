@@ -27,6 +27,9 @@
 #include <QGraphicsRectItem>
 #include <QUrl>
 #include <QWebPage>
+#include <QWebFrame>
+#include <QPainter>
+
 #include "kreportplugin_debug.h"
 
 KReportItemWeb::KReportItemWeb(): m_rendering(false)
@@ -35,19 +38,19 @@ KReportItemWeb::KReportItemWeb(): m_rendering(false)
     init();
 }
 
-KReportItemWeb::KReportItemWeb(QDomNode *element)
+KReportItemWeb::KReportItemWeb(const QDomNode &element)
 {
     createProperties();
     init();
-    QDomNodeList nl = element->childNodes();
+    QDomNodeList nl = element.childNodes();
     QString n;
     QDomNode node;
-    QDomElement e = element->toElement();
+    QDomElement e = element.toElement();
 
-    m_controlSource->setValue(element->toElement().attribute("report:item-data-source"));
-    m_name->setValue(element->toElement().attribute("report:name"));
-    Z = element->toElement().attribute("report:z-index").toDouble();
-    parseReportRect(element->toElement(), &m_pos, &m_size);
+    m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
+    m_name->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    Z = element.toElement().attribute(QLatin1String("report:z-index")).toDouble();
+    parseReportRect(element.toElement(), &m_pos, &m_size);
     for (int i = 0; i < nl.count(); i++) {
         node = nl.item(i);
         n = node.nodeName();
@@ -57,6 +60,7 @@ KReportItemWeb::KReportItemWeb(QDomNode *element)
 void KReportItemWeb::init()
 {
     m_webPage = new QWebPage();
+
     connect(m_webPage, SIGNAL(loadFinished(bool)), this, SLOT(loadFinished(bool)));
 }
 
@@ -76,7 +80,7 @@ KReportItemWeb::~KReportItemWeb()
 }
 QString KReportItemWeb::typeName() const
 {
-    return "web";
+    return QLatin1String("web");
 }
 
 void KReportItemWeb::loadFinished(bool)

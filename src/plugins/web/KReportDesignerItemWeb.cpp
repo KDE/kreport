@@ -31,19 +31,19 @@
 #include <QPainter>
 #include "kreportplugin_debug.h"
 
-void KReportDesignerItemWeb::init(QGraphicsScene *scene, KoReportDesigner *d) //done,compared,add function if necessary
+void KReportDesignerItemWeb::init(QGraphicsScene *scene, KReportDesigner *d) //done,compared,add function if necessary
 {
     if (scene)
         scene->addItem(this);
 
     connect(m_set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)), this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
-    KoReportDesignerItemRectBase::init(&m_pos, &m_size, m_set, d);
+    KReportDesignerItemRectBase::init(&m_pos, &m_size, m_set, d);
     setZValue(Z);
 }
 
-KReportDesignerItemWeb::KReportDesignerItemWeb(KoReportDesigner *rw, QGraphicsScene *scene,
+KReportDesignerItemWeb::KReportDesignerItemWeb(KReportDesigner *rw, QGraphicsScene *scene,
                                                  const QPointF &pos)     //done,compared
-    : KoReportDesignerItemRectBase(rw)
+    : KReportDesignerItemRectBase(rw)
 {
     Q_UNUSED(pos);
     init(scene, rw);
@@ -51,9 +51,9 @@ KReportDesignerItemWeb::KReportDesignerItemWeb(KoReportDesigner *rw, QGraphicsSc
     m_name->setValue(m_reportDesigner->suggestEntityName(typeName()));
 }
 
-KReportDesignerItemWeb::KReportDesignerItemWeb(QDomNode *element, KoReportDesigner *rw,
+KReportDesignerItemWeb::KReportDesignerItemWeb(const QDomNode &element, KReportDesigner *rw,
                                                  QGraphicsScene *scene)      //done,compared
-    : KoReportItemWeb(element), KoReportDesignerItemRectBase(rw)
+    : KReportItemWeb(element), KReportDesignerItemRectBase(rw)
 {
     init(scene, rw);
     setSceneRect(m_pos.toScene(), m_size.toScene());
@@ -62,7 +62,7 @@ KReportDesignerItemWeb::KReportDesignerItemWeb(QDomNode *element, KoReportDesign
 KReportDesignerItemWeb *KReportDesignerItemWeb::clone() //done,compared
 {
     QDomDocument d;
-    QDomElement e = d.createElement("clone");
+    QDomElement e = d.createElement(QLatin1String("clone"));
     QDomNode n;
     buildXML(&d, &e);
     n = e.firstChild();
@@ -80,7 +80,7 @@ void KReportDesignerItemWeb::paint(QPainter* painter, const QStyleOptionGraphics
     Q_UNUSED(widget);
 
     painter->drawRect(QGraphicsRectItem::rect());
-    painter->drawText(rect(), 0, dataSourceAndObjectTypeName(itemDataSource(), "web-view"));
+    painter->drawText(rect(), 0, dataSourceAndObjectTypeName(itemDataSource(), QLatin1String("web-view")));
 
     painter->setBackgroundMode(Qt::TransparentMode);
 
@@ -96,7 +96,7 @@ void KReportDesignerItemWeb::buildXML(QDomDocument *doc, QDomElement *parent)
     // properties
     addPropertyAsAttribute(&entity, m_controlSource);
     addPropertyAsAttribute(&entity, m_name);
-    entity.setAttribute("report:z-index", zValue());
+    entity.setAttribute(QLatin1String("report:z-index"), zValue());
     buildXMLRect(doc, &entity, &m_pos, &m_size);
     parent->appendChild(entity);
 }
@@ -112,7 +112,7 @@ void KReportDesignerItemWeb::slotPropertyChanged(KPropertySet &s, KProperty &p)
         }
     }
 
-    KoReportDesignerItemRectBase::propertyChanged(s, p);
+    KReportDesignerItemRectBase::propertyChanged(s, p);
     if (m_reportDesigner) {
         m_reportDesigner->setModified(true);
     }
@@ -121,5 +121,5 @@ void KReportDesignerItemWeb::slotPropertyChanged(KPropertySet &s, KProperty &p)
 void KReportDesignerItemWeb::mousePressEvent(QGraphicsSceneMouseEvent *event)
 {
     m_controlSource->setListData(m_reportDesigner->fieldKeys(), m_reportDesigner->fieldNames());
-    KoReportDesignerItemRectBase::mousePressEvent(event);
+    KReportDesignerItemRectBase::mousePressEvent(event);
 }
