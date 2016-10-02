@@ -28,6 +28,7 @@
 
 #include <QGraphicsScene>
 #include <QUrl>
+#include <QDomNode>
 
 class QUrl;
 class QWebPage;
@@ -44,7 +45,7 @@ class KReportItemWeb : public KReportAsyncItemBase
     Q_OBJECT
 public:
     KReportItemWeb();
-    explicit KReportItemWeb(QDomNode *element);
+    explicit KReportItemWeb(const QDomNode &element);
     virtual ~KReportItemWeb();
 
     virtual QString typeName() const;

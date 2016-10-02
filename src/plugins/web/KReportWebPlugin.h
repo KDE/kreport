@@ -30,9 +30,9 @@ public:
     virtual ~KReportWebPlugin();
 
     virtual QObject *createRendererInstance(const QDomNode &element);
-    virtual QObject *createDesignerInstance(const QDomNode &element, KoReportDesigner *designer,
+    virtual QObject *createDesignerInstance(const QDomNode &element, KReportDesigner *designer,
                                             QGraphicsScene *scene);
-    virtual QObject *createDesignerInstance(KoReportDesigner *designer,
+    virtual QObject *createDesignerInstance(KReportDesigner *designer,
                                             QGraphicsScene *scene,const QPointF &pos);
 #ifdef KREPORT_SCRIPTING
     virtual QObject *createScriptInstance(KReportItemBase *item);

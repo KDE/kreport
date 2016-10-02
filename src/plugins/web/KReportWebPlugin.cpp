@@ -19,22 +19,24 @@
 
 #include "KReportWebPlugin.h"
 #include "KReportDesignerItemWeb.h"
-#include "KReportPluginInfo.h"
-#include <KoIcon.h>
+#include "KReportPluginMetaData.h"
+#include <QIcon>
 
-K_EXPORT_KOREPORT_ITEMPLUGIN(KoReportWebPlugin, webplugin)
+KREPORT_PLUGIN_FACTORY(KReportWebPlugin, "kreport_webplugin.json")
 
 KReportWebPlugin::KReportWebPlugin(QObject *parent, const QVariantList &args)
     : KReportPluginInterface(parent)
 {
     Q_UNUSED(args)
-
-    KoReportPluginInfo *info = new KoReportPluginInfo();
+#if 0
+    KReportPluginMetaData *info = new KReportPluginInfo();
     info->setClassName("web");
     info->setName(tr("Web browser"));
     info->setIcon(koIcon("report_web_element"));
     info->setPriority(40);
+    
     setInfo(info);
+#endif
 }
 
 KReportWebPlugin::~KReportWebPlugin()
@@ -43,23 +45,23 @@ KReportWebPlugin::~KReportWebPlugin()
 
 QObject *KReportWebPlugin::createRendererInstance(const QDomNode &element)
 {
-    return new KoReportItemWeb(element);
+    return new KReportItemWeb(element);
 }
 
-QObject *KReportWebPlugin::createDesignerInstance(const QDomNode &element, KoReportDesigner *designer,
+QObject *KReportWebPlugin::createDesignerInstance(const QDomNode &element, KReportDesigner *designer,
                                                    QGraphicsScene *scene)
 {
     return new KReportDesignerItemWeb(element, designer, scene);
 }
 
-QObject *KReportWebPlugin::createDesignerInstance(KoReportDesigner *designer,
+QObject *KReportWebPlugin::createDesignerInstance(KReportDesigner *designer,
                                                    QGraphicsScene *scene,const QPointF &pos)
 {
     return new KReportDesignerItemWeb(designer, scene, pos);
 }
 
 #ifdef KREPORT_SCRIPTING
-QObject *KoReportWebPlugin::createScriptInstance(KReportItemBase *item)
+QObject *KReportWebPlugin::createScriptInstance(KReportItemBase *item)
 {
     Q_UNUSED(item);
 //   KoReportItemweb *image = dynamic_cast<KoReportItemweb*>(item);
@@ -68,3 +70,5 @@ QObject *KoReportWebPlugin::createScriptInstance(KReportItemBase *item)
     return 0;
 }
 #endif
+
+#include "KReportWebPlugin.moc"
