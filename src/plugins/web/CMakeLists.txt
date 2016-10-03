@@ -7,6 +7,7 @@ set(kreport_webplugin_LIB_SRCS
     KReportItemWeb.cpp
     KReportWebPlugin.cpp
     ${kreport_webplugin_QM_LOADER}
+    kreport_webplugin.json
 )
 
 add_library(org.kde.kreport.web MODULE ${kreport_webplugin_LIB_SRCS})
