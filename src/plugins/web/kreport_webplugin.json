@@ -42,7 +42,7 @@
         "Description[uk]": "Елемент засобу для перегляду інтернету для звітів", 
         "Description[x-test]": "xxWeb browser element for Reportsxx", 
         "EnabledByDefault": true, 
-        "Icon": "report-web-element",
+        "Icon": "kreport-web-element",
         "Id": "org.kde.kreport.web", 
         "License": "LGPL", 
         "Name": "Web browser", 
