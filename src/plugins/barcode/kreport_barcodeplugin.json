@@ -42,7 +42,7 @@
         "Description[uk]": "Елемент штрихкоду для звітів", 
         "Description[x-test]": "xxBarcode element for Reportsxx", 
         "EnabledByDefault": true, 
-        "Icon": "kreport-barcode-element",
+        "Icon": "kreport-barcode-element", 
         "Id": "org.kde.kreport.barcode", 
         "License": "LGPL", 
         "Name": "Barcode", 
