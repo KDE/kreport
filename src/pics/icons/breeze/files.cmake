@@ -18,6 +18,12 @@ icons/breeze/actions/22/kreport-image-element.svg
 icons/breeze/actions/22/kreport-label-element.svg
 icons/breeze/actions/22/kreport-line-element.svg
 icons/breeze/actions/22/kreport-text-element.svg
+icons/breeze/actions/24/kreport-checkbox-element.svg
+icons/breeze/actions/24/kreport-field-element.svg
+icons/breeze/actions/24/kreport-image-element.svg
+icons/breeze/actions/24/kreport-label-element.svg
+icons/breeze/actions/24/kreport-line-element.svg
+icons/breeze/actions/24/kreport-text-element.svg
 )
 
 set(_FILES ${_PNG_FILES} ${_SVG_FILES})
