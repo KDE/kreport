@@ -42,7 +42,7 @@
         "Description[uk]": "Елемент поля для звітів", 
         "Description[x-test]": "xxField element for Reportsxx", 
         "EnabledByDefault": true, 
-        "Icon": "kreport-field-element", 
+        "Icon": "kreport-field-element",
         "Id": "org.kde.kreport.field", 
         "License": "LGPL", 
         "Name": "Field", 

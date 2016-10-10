@@ -43,7 +43,7 @@
         "Description[uk]": "Елемент пункту позначки для звітів", 
         "Description[x-test]": "xxCheck box element for Reportsxx", 
         "EnabledByDefault": true, 
-        "Icon": "kreport-checkbox-element", 
+        "Icon": "kreport-checkbox-element",
         "Id": "org.kde.kreport.checkbox", 
         "License": "LGPL", 
         "Name": "Check box", 

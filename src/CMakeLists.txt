@@ -71,22 +71,27 @@ set(kreport_LIB_SRCS
     items/label/KReportLabelPlugin.cpp
     items/label/KReportBoundedTextItem.cpp
     items/label/KReportLabelElement.cpp
+    items/label/label.json
 
     items/check/KReportItemCheck.cpp
     items/check/KReportDesignerItemCheckBox.cpp
     items/check/KReportCheckBoxPlugin.cpp
+    items/check/check.json
 
     items/field/KReportItemField.cpp
     items/field/KReportDesignerItemField.cpp
     items/field/KReportFieldPlugin.cpp
+    items/field/field.json
 
     items/image/KReportItemImage.cpp
     items/image/KReportDesignerItemImage.cpp
     items/image/KReportImagePlugin.cpp
+    items/image/image.json
 
     items/text/KReportItemText.cpp
     items/text/KReportDesignerItemText.cpp
     items/text/KReportTextPlugin.cpp
+    items/text/text.json
 
     # non-source:
     Mainpage.dox

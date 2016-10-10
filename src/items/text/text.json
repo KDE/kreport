@@ -42,7 +42,7 @@
         "Description[uk]": "Елемент тексту для звітів", 
         "Description[x-test]": "xxText element for Reportsxx", 
         "EnabledByDefault": true, 
-        "Icon": "kreport-text-element", 
+        "Icon": "kreport-text-element",
         "Id": "org.kde.kreport.text", 
         "License": "LGPL", 
         "Name": "Text", 
