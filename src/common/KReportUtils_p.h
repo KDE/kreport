@@ -73,6 +73,12 @@ QStringList correctStandardLocations(const QString &privateName,
     return result;
 }
 
+#ifdef Q_OS_WIN
+#define KPATH_SEPARATOR ';'
+#else
+#define KPATH_SEPARATOR ':'
+#endif
+
 /*! @brief Locates a file path for specified parameters
  * @param privateName Name to be used instead of application name for resource lookup
  * @param path Relative path to the resource file
@@ -95,6 +101,14 @@ QString locateFile(const QString &privateName,
     fullPath = QFileInfo(extraLocation + QLatin1Char('/') + path).canonicalFilePath();
     if (fileReadable(fullPath)) {
         return fullPath;
+    }
+    // Try in PATH subdirs, useful for running apps from the build dir, without installing
+    for(const QByteArray &pathDir : qgetenv("PATH").split(KPATH_SEPARATOR)) {
+        const QString dataDirFromPath = QFileInfo(QFile::decodeName(pathDir) + QStringLiteral("/data/")
+                                                  + path).canonicalFilePath();
+        if (fileReadable(dataDirFromPath)) {
+            return dataDirFromPath;
+        }
     }
 
     const QStringList correctedStandardLocations(correctStandardLocations(privateName, location, extraLocation));
