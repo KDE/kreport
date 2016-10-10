@@ -52,7 +52,6 @@ macro(kreport_add_icons_rcc_file _target _parent_target _theme _prefix)
     add_custom_target(${_target}_build_rcc
         COMMAND ${Qt5Core_RCC_EXECUTABLE} --compress 9 --threshold 0 --binary
                 --output "${_RCC_FILE}" "${_QRC_FILE}"
-        #COMMAND ${CMAKE_COMMAND} -E remove -f ${_QRC_FILE}
         DEPENDS "${_QRC_FILE}" "${_FILES}"
         WORKING_DIRECTORY "${_BASE_DIR}"
         COMMENT "Building external Qt resource ${_RCC_FILE}"
