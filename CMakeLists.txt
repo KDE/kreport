@@ -38,8 +38,7 @@ add_pc_file(${PROJECT_NAME})
 add_subdirectory(src)
 
 if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
-    find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED I18n)
-    ki18n_install(po)
+    ecm_install_po_files_as_qm(po)
 endif()
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
