@@ -42,7 +42,7 @@
         "Description[uk]": "Елемент зображення для звітів", 
         "Description[x-test]": "xxImage element for Reportsxx", 
         "EnabledByDefault": true, 
-        "Icon": "kreport-image-element",
+        "Icon": "kreport-image-element", 
         "Id": "org.kde.kreport.image", 
         "License": "LGPL", 
         "Name": "Image", 
