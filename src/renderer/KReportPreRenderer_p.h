@@ -96,6 +96,7 @@ Q_SIGNALS:
     void enteredGroup(const QString&, const QVariant&);
     void exitedGroup(const QString&, const QVariant&);
     void renderingSection(KReportSectionData*, OROPage*, QPointF);
+    void finishedAllASyncItems();
 };
 
 #endif // __KOREPORTPRERENDERER_P_H__

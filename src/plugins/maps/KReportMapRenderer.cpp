@@ -46,6 +46,7 @@ KReportMapRenderer::KReportMapRenderer(QObject* parent)
 
     connect(m_marble.model()->downloadManager(), &Marble::HttpDownloadManager::progressChanged, this, &KReportMapRenderer::downloadProgres);
     connect(&m_marble, &Marble::MarbleMap::renderStatusChanged, this, &KReportMapRenderer::onRenderStatusChange);
+    connect(&m_retryTimer,  &QTimer::timeout, this, &KReportMapRenderer::retryRender);
 }
 
 KReportMapRenderer::~KReportMapRenderer()
@@ -72,7 +73,10 @@ void KReportMapRenderer::renderJob(KReportItemMaps* reportItemMaps)
     
     if (m_marble.renderStatus() == Marble::Complete) {
         m_currentJob->renderFinished();
+    } else {
+        m_retryTimer.start(1000);
     }
+            
 }
 
 void KReportMapRenderer::onRenderStatusChange(Marble::RenderStatus renderStatus)
@@ -94,20 +98,28 @@ void KReportMapRenderer::onRenderStatusChange(Marble::RenderStatus renderStatus)
     }
 }
 
-void KReportMapRenderer::downloadFinished()
-{
-    //kreportpluginDebug() << "job:" << m_currentJob
-    //<< "(" << m_currentJob->latitude() << "," << m_currentJob->longtitude() << ")";
-}
-
 void KReportMapRenderer::downloadProgres(int active, int queued)
 {
     Q_UNUSED(active)
     Q_UNUSED(queued)
-    if(m_currentJob){
-        //kreportpluginDebug() << "job:" << m_currentJob
-        //<< "(" << m_currentJob->latitude() << "," << m_currentJob->longtitude() << ")"
-        //<< "active/queued:" << active << "/" << queued;
+    //if(m_currentJob){
+    //    kreportpluginDebug() << "job:" << m_currentJob
+    //    << "(" << m_currentJob->latitude() << "," << m_currentJob->longtitude() << ")"
+    //    << "active/queued:" << active << "/" << queued;
+    //}
+}
+
+void KReportMapRenderer::retryRender()
+{
+    //kreportpluginDebug() << "Retrying map render";
+
+    // Create a painter that will do the painting.
+    Marble::GeoPainter geoPainter( m_currentJob->oroImage()->picture(), m_marble.viewport(), m_marble.mapQuality() );
+    m_marble.paint( geoPainter, QRect() );
+    
+    if (m_marble.renderStatus() == Marble::Complete) {
+        m_retryTimer.stop();
+        m_currentJob->renderFinished();
     }
 }
 

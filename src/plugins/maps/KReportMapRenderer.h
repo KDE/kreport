@@ -23,6 +23,8 @@
 #include <marble/MarbleMap.h>
 #include <marble/RenderState.h>
 
+#include <QTimer>
+
 #include "kreportplugin_debug.h"
 
 class KReportItemMaps;
@@ -40,11 +42,13 @@ Q_SIGNALS:
 private Q_SLOTS:
     void onRenderStatusChange(Marble::RenderStatus renderStatus);
     void downloadProgres(int active, int queued);
-    void downloadFinished();
+    void retryRender();
 
 private:
     Marble::MarbleMap m_marble;
     KReportItemMaps* m_currentJob;
+    
+    QTimer m_retryTimer;
 };
 
 #endif // MAPRENDERER_H
