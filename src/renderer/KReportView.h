@@ -45,6 +45,7 @@ public:
     void moveToPreviousPage();
     int currentPage() const;
     int pageCount() const;
+    void refreshCurrentPage();
     void setDocument(ORODocument* doc);
 
     QAbstractScrollArea* scrollArea();

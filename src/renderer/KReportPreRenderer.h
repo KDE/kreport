@@ -71,7 +71,8 @@ public:
 
 Q_SIGNALS:
     void groupChanged(const QMap<QString, QVariant> &groupData);
-
+    void finishedAllASyncItems();
+    
 private:
     bool setDocument(const QDomElement &document);
 

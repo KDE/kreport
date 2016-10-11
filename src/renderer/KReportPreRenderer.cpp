@@ -397,7 +397,8 @@ void KReportPreRendererPrivate::initEngine()
 void KReportPreRendererPrivate::asyncItemsFinished()
 {
     //kreportDebug() << "Finished rendering async items";
-    delete asyncManager;
+    asyncManager->deleteLater();
+    emit finishedAllASyncItems();
 }
 
 bool KReportPreRendererPrivate::generateDocument()
@@ -621,6 +622,8 @@ KReportPreRenderer::KReportPreRenderer(const QDomElement & document)
     : d(new KReportPreRendererPrivate(this))
 {
     setDocument(document);
+    connect(d, &KReportPreRendererPrivate::finishedAllASyncItems, this, &KReportPreRenderer::finishedAllASyncItems);
+
 }
 
 KReportPreRenderer::~KReportPreRenderer()
