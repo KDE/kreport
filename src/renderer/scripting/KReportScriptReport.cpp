@@ -42,7 +42,7 @@ Report::~Report()
 
 QString Report::title() const
 {
-    return m_reportData->m_title;
+    return m_reportData->title();
 }
 
 QString Report::name() const
