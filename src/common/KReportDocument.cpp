@@ -25,21 +25,6 @@
 #include <QApplication>
 #include "kreport_debug.h"
 
-class Q_DECL_HIDDEN KReportDocument::Private
-{
-public:
-    bool valid;
-    QString title;
-    QString name;
-    QString query;
-#ifdef KREPORT_SCRIPTING
-    QString script;
-    QString interpreter;
-#endif
-    bool externalData;
-    KReportPageOptions page;
-};
-
 void KReportDocument::init()
 {
     m_pageHeaderFirst = m_pageHeaderOdd = m_pageHeaderEven = m_pageHeaderLast = m_pageHeaderAny = 0;
@@ -48,20 +33,18 @@ void KReportDocument::init()
 }
 
 KReportDocument::KReportDocument(QObject *parent)
-        : QObject(parent),
-        m_detailSection(0),
-        d(new Private())
+        : QObject(parent)
+        , m_detailSection(0)
 {
     init();
-    d->valid = true;
+    m_valid = true;
 }
 
 KReportDocument::KReportDocument(const QDomElement & elemSource, QObject *parent)
-        : QObject(parent),
-        m_detailSection(0),
-        d(new Private())
+        : QObject(parent)
+        , m_detailSection(0)
 {
-    d->valid = false;
+    m_valid = false;
     init();
     //kreportDebug();
     if (elemSource.tagName() != QLatin1String("report:content")) {
@@ -78,31 +61,31 @@ KReportDocument::KReportDocument(const QDomElement & elemSource, QObject *parent
     for (int nodeCounter = 0; nodeCounter < sections.count(); nodeCounter++) {
         QDomElement elemThis = sections.item(nodeCounter).toElement();
         if (elemThis.tagName() == QLatin1String("report:title")) {
-            d->title = elemThis.text();
+            m_title = elemThis.text();
 #ifdef KREPORT_SCRIPTING
         } else if (elemThis.tagName() == QLatin1String("report:script")) {
-            d->script = elemThis.text();
-            d->interpreter = elemThis.attribute(QLatin1String("report:script-interpreter"));
+            m_script = elemThis.text();
+            m_interpreter = elemThis.attribute(QLatin1String("report:script-interpreter"));
 #endif
         } else if (elemThis.tagName() == QLatin1String("report:page-style")) {
             QString pagetype = elemThis.firstChild().nodeValue();
 
             if (pagetype == QLatin1String("predefined")) {
-                d->page.setPageSize(elemThis.attribute(QLatin1String("report:page-size"), QLatin1String("A4")));
+                page.setPageSize(elemThis.attribute(QLatin1String("report:page-size"), QLatin1String("A4")));
             } else if (pagetype == QLatin1String("custom")) {
-                d->page.setCustomWidth(POINT_TO_INCH(KReportUnit::parseValue(elemThis.attribute(QLatin1String("report:custom-page-width"), QString()))) * dpiX);
-                d->page.setCustomHeight(POINT_TO_INCH(KReportUnit::parseValue(elemThis.attribute(QLatin1String("report:custom-page-height"), QString()))) * dpiY);
-                d->page.setPageSize(QLatin1String("Custom"));
+                page.setCustomWidth(POINT_TO_INCH(KReportUnit::parseValue(elemThis.attribute(QLatin1String("report:custom-page-width"), QString()))) * dpiX);
+                page.setCustomHeight(POINT_TO_INCH(KReportUnit::parseValue(elemThis.attribute(QLatin1String("report:custom-page-height"), QString()))) * dpiY);
+                page.setPageSize(QLatin1String("Custom"));
             } else if (pagetype == QLatin1String("label")) {
-                d->page.setLabelType(elemThis.firstChild().nodeValue());
+                page.setLabelType(elemThis.firstChild().nodeValue());
             }
             //! @todo add config for default margins or add within templates support
-            d->page.setMarginBottom(POINT_TO_INCH(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-bottom"), QLatin1String("1.0cm")))) * dpiY);
-            d->page.setMarginTop(POINT_TO_INCH(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-top"), QLatin1String("1.0cm")))) * dpiY);
-            d->page.setMarginLeft(POINT_TO_INCH(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-left"), QLatin1String("1.0cm")))) * dpiX);
-            d->page.setMarginRight(POINT_TO_INCH(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-right"), QLatin1String("1.0cm")))) * dpiX);
+            page.setMarginBottom(POINT_TO_INCH(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-bottom"), QLatin1String("1.0cm")))) * dpiY);
+            page.setMarginTop(POINT_TO_INCH(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-top"), QLatin1String("1.0cm")))) * dpiY);
+            page.setMarginLeft(POINT_TO_INCH(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-left"), QLatin1String("1.0cm")))) * dpiX);
+            page.setMarginRight(POINT_TO_INCH(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-right"), QLatin1String("1.0cm")))) * dpiX);
 
-            d->page.setPortrait(elemThis.attribute(QLatin1String("report:print-orientation"), QLatin1String("portrait")) == QLatin1String("portrait"));
+            page.setPortrait(elemThis.attribute(QLatin1String("report:print-orientation"), QLatin1String("portrait")) == QLatin1String("portrait"));
 
         } else if (elemThis.tagName() == QLatin1String("report:body")) {
             QDomNodeList sectionlist = elemThis.childNodes();
@@ -178,13 +161,13 @@ KReportDocument::KReportDocument(const QDomElement & elemSource, QObject *parent
             }
         }
 
-        d->valid = true;
+        m_valid = true;
     }
 }
 
+
 KReportDocument::~KReportDocument()
 {
-    delete d;
 }
 
 QList<KReportItemBase*> KReportDocument::objects() const
@@ -317,45 +300,5 @@ KReportSectionData* KReportDocument::section(KReportSectionData::Section s) cons
 
 KReportPageOptions KReportDocument::pageOptions() const
 {
-    return d->page;
-}
-
-bool KReportDocument::isValid() const
-{
-    return d->valid;
-}
-
-QString KReportDocument::title() const
-{
-    return d->title;
-}
-
-bool KReportDocument::externalData() const
-{
-    return d->externalData;
-}
-
-QString KReportDocument::interpreter() const
-{
-    return d->interpreter;
-}
-
-QString KReportDocument::name() const
-{
-    return d->name;
-}
-
-void KReportDocument::setName(const QString& n)
-{
-    d->name = n;
-}
-
-QString KReportDocument::query() const
-{
-    return d->query;
-}
-
-QString KReportDocument::script() const
-{
-    return d->script;
+    return page;
 }
