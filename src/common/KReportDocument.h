@@ -44,9 +44,7 @@ public:
     explicit KReportDocument(QObject *parent = 0);
     ~KReportDocument();
 
-    bool isValid() const {
-        return m_valid;
-    }
+    bool isValid() const;
 
     /**
     \return a list of all objects in the report
@@ -73,46 +71,27 @@ public:
     */
     KReportSectionData* section(const QString&) const;
 
-    QString query() const {
-        return m_query;
-    }
+    QString query() const;
 #ifdef KREPORT_SCRIPTING
-    QString script() const {
-        return m_script;
-    };
-    QString interpreter() const {
-        return m_interpreter;
-    }
+    QString script() const;
+
+    QString interpreter() const;
 #endif
 
-    bool externalData() const {
-        return m_externalData;
-    }
+    bool externalData() const;
 
     KReportDetailSectionData* detail() const {
         return m_detailSection;
     }
 
-    void setName(const QString&n) {
-        m_name = n;
-    }
-    QString name() const {
-        return m_name;
-    }
+    void setName(const QString&n);
+    QString name() const;
 
+    QString title() const;
     KReportPageOptions pageOptions() const;
 
 protected:
-    QString m_title;
-    QString m_name;
-    QString m_query;
-#ifdef KREPORT_SCRIPTING
-    QString m_script;
-    QString m_interpreter;
-#endif
-    bool m_externalData;
 
-    KReportPageOptions page;
 
     KReportSectionData * m_pageHeaderFirst;
     KReportSectionData * m_pageHeaderOdd;
@@ -132,15 +111,16 @@ protected:
     KReportDetailSectionData* m_detailSection;
 
 private:
-    bool m_valid;
     void init();
-
+    
     friend class KReportPreRendererPrivate;
     friend class KReportPreRenderer;
 #ifdef KREPORT_SCRIPTING
     friend class KReportScriptHandler;
     friend class Scripting::Report;
 #endif
+    class Private;
+    Private * const d;
 };
 
 #endif
