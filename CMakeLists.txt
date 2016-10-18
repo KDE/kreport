@@ -27,7 +27,7 @@ set(REQUIRED_KPROPERTY_VERSION 3.0.90)
 # TODO move Widgets/KF5WidgetsAddons-dependent part to a libKReportDesigner
 find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Core Widgets Xml PrintSupport)
 find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED CoreAddons WidgetsAddons GuiAddons Config)
-find_package(KPropertyWidgets ${REQUIRED_KPROPERTY_VERSION} REQUIRED)
+find_package(KPropertyWidgets ${REQUIRED_KPROPERTY_VERSION} REQUIRED COMPONENTS KF)
 
 get_git_revision_and_branch()
 add_tests()
