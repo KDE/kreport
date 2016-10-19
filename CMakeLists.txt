@@ -5,6 +5,7 @@ include(SetKReportCMakePolicies NO_POLICY_SCOPE)
 
 project(KReport VERSION 3.0.90) # Update this
 
+include(ECMPackageConfigHelpers)
 include(ECMGeneratePriFile)
 include(ECMPoQmTools)
 include(ECMSetupVersion)
