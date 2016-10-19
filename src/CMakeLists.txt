@@ -216,7 +216,7 @@ set(CMAKECONFIG_INSTALL_DIR "${CMAKECONFIG_INSTALL_PREFIX}/${KREPORT_BASE_NAME}"
 # A place for KReport plugins
 set(KREPORT_PLUGIN_INSTALL_DIR ${PLUGIN_INSTALL_DIR}/kreport${PROJECT_STABLE_VERSION_MAJOR})
 
-configure_package_config_file(
+ecm_configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KReportConfig.cmake.in"
     "${CMAKE_CURRENT_BINARY_DIR}/KReportConfig.cmake"
     INSTALL_DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
