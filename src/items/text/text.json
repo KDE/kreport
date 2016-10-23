@@ -60,7 +60,7 @@
         "ServiceTypes": [
             "KReport/Element"
         ], 
-        "Version": "1.0", 
+        "Version": "3.0",
         "Website": "http://kexi-project.org"
     }, 
     "X-KDE-PluginInfo-LegacyName": "text", 
