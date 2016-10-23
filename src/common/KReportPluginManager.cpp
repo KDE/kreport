@@ -37,7 +37,6 @@
 KReportPluginManager::Private::Private(KReportPluginManager *qq)
     : q(qq), m_parent(new QObject), m_findPlugins(true)
 {
-    Q_UNUSED(q);
 }
 
 // ---
@@ -144,46 +143,6 @@ void KReportPluginManager::Private::addBuiltInPlugin(const QJsonObject &json)
     m_plugins.insert(entry->metaData()->id(), entry);
     m_pluginsByLegacyName.insert(entry->metaData()->value(QLatin1String("X-KDE-PluginInfo-LegacyName"), entry->metaData()->id()), entry);
 }
-
-#if 0
-//! Typedef of plugin version matching the one exported by KEXI_EXPORT_PLUGIN.
-typedef quint32 (*plugin_version_t)();
-
-bool loadPlugin(KService::Ptr service)
-{
-    if (service.isNull()) {
-        kreportWarning() << "No service specified";
-        return;
-    }
-    kreportDebug() << "library:" << service->library();
-    QPluginLoader loader(service->library());
-    QLibrary lib(loader.fileName());
-    plugin_version_t plugin_version_function = (plugin_version_t)lib.resolve("plugin_version");
-    if (!plugin_version_function) {
-        kreportWarning() << "Plugin version not found for" << service->name();
-        return;
-    }
-    quint32 foundVersion = plugin_version_function();
-    kreportDebug() << "foundVersion:" << d->foundVersion;
-    QPointer<QPluginFactory> factory = loader.factory();
-    if (!d->factory) {
-        kreportWarning() << "Failed to create instance of factory for plugin" << ptr->name();
-        return;
-    }
-    QString pluginName;
-    if (!pluginNameProperty.isEmpty()) {
-        pluginName = ptr->property(pluginNameProperty).toString();
-    }
-
-    if (!factory())
-        return 0;
-    KReportPluginInterface* plugin = factory()->create<KReportPluginInterface>(parent);
-    if (plugin) {
-        plugin->setObjectName(pluginName());
-    }
-    return plugin;
-}
-#endif
 
 #define KREPORT_ADD_BUILTIN_PLUGIN(name) \
     addBuiltInPlugin<name>(KREPORT_STATIC_PLUGIN_METADATA(name))
