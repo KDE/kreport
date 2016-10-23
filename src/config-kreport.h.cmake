@@ -32,4 +32,24 @@
 //! @brief Like KREPORT_BASE_NAME but lowercase.
 #define KREPORT_BASE_NAME_LOWER "@KREPORT_BASE_NAME_LOWER@"
 
+//! @def KREPORT_STABLE_VERSION_MAJOR
+//! @brief Extra version info, stable major, e.g. 3 for 3.1.0 Alpha (3.0.90)
+#define KREPORT_STABLE_VERSION_MAJOR @PROJECT_STABLE_VERSION_MAJOR@
+
+//! @def KREPORT_STABLE_VERSION_MINOR
+//! @brief Extra version info, stable minor, e.g. 1 for 3.1.0 Alpha (3.0.90)
+#define KREPORT_STABLE_VERSION_MINOR @PROJECT_STABLE_VERSION_MINOR@
+
+//! @def KREPORT_STABLE_VERSION_PATCH
+//! @brief Extra version info, stable patch, e.g. 0 for 3.1.0 Alpha (3.0.90)
+#define KREPORT_STABLE_VERSION_PATCH @PROJECT_STABLE_VERSION_PATCH@
+
+//! @def KREPORT_TESTING_EXPORT
+//! @brief Export symbols for testing
+#ifdef BUILD_TESTING
+#  define KREPORT_TESTING_EXPORT KREPORT_EXPORT
+#else
+#  define KREPORT_TESTING_EXPORT
+#endif
+
 #endif

@@ -87,6 +87,7 @@ private:
     QObject *m_parent;
     bool m_findPlugins;
     void findPlugins();
+    void addEntry(KReportPluginEntry *entry);
 
     //! A map of name -> plugin instances
     QMap<QString, KReportPluginEntry*> m_plugins;

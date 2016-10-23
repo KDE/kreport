@@ -37,7 +37,6 @@
 KReportPluginManager::Private::Private(KReportPluginManager *qq)
     : q(qq), m_parent(new QObject), m_findPlugins(true)
 {
-    Q_UNUSED(q);
 }
 
 // ---
@@ -145,46 +144,6 @@ void KReportPluginManager::Private::addBuiltInPlugin(const QJsonObject &json)
     m_pluginsByLegacyName.insert(entry->metaData()->value(QLatin1String("X-KDE-PluginInfo-LegacyName"), entry->metaData()->id()), entry);
 }
 
-#if 0
-//! Typedef of plugin version matching the one exported by KEXI_EXPORT_PLUGIN.
-typedef quint32 (*plugin_version_t)();
-
-bool loadPlugin(KService::Ptr service)
-{
-    if (service.isNull()) {
-        kreportWarning() << "No service specified";
-        return;
-    }
-    kreportDebug() << "library:" << service->library();
-    QPluginLoader loader(service->library());
-    QLibrary lib(loader.fileName());
-    plugin_version_t plugin_version_function = (plugin_version_t)lib.resolve("plugin_version");
-    if (!plugin_version_function) {
-        kreportWarning() << "Plugin version not found for" << service->name();
-        return;
-    }
-    quint32 foundVersion = plugin_version_function();
-    kreportDebug() << "foundVersion:" << d->foundVersion;
-    QPointer<QPluginFactory> factory = loader.factory();
-    if (!d->factory) {
-        kreportWarning() << "Failed to create instance of factory for plugin" << ptr->name();
-        return;
-    }
-    QString pluginName;
-    if (!pluginNameProperty.isEmpty()) {
-        pluginName = ptr->property(pluginNameProperty).toString();
-    }
-
-    if (!factory())
-        return 0;
-    KReportPluginInterface* plugin = factory()->create<KReportPluginInterface>(parent);
-    if (plugin) {
-        plugin->setObjectName(pluginName());
-    }
-    return plugin;
-}
-#endif
-
 #define KREPORT_ADD_BUILTIN_PLUGIN(name) \
     addBuiltInPlugin<name>(KREPORT_STATIC_PLUGIN_METADATA(name))
 
@@ -214,29 +173,51 @@ void KReportPluginManager::Private::findPlugins()
 
     //kreportDebug() << "Load all plugins";
     const QList<QPluginLoader*> offers = KReportJsonTrader::self()->query(QLatin1String("KReport/Element"));
+    const QString expectedVersion = QString::fromLatin1("%1.%2")
+            .arg(KREPORT_STABLE_VERSION_MAJOR).arg(KREPORT_STABLE_VERSION_MINOR);
     foreach(QPluginLoader *loader, offers) {
         //QJsonObject json = loader->metaData();
         //kreportDebug() << json;
         //! @todo check version
-        KReportPluginEntry *entry = new KReportPluginEntry;
+        QScopedPointer<KReportPluginEntry> entry(new KReportPluginEntry);
         entry->setMetaData(loader);
+        const KReportPluginMetaData *metaData = entry->metaData();
+        if (metaData->version() != expectedVersion) {
+            kreportWarning() << "Driver with ID" << metaData->id()
+                             << "(" << metaData->fileName() << ")"
+                             << "has version" << metaData->version() << "but expected version is"
+                             << expectedVersion
+                             << "-- skipping it";
+            continue;
+        }
+        if (m_plugins.contains(metaData->id())) {
+            kreportWarning() << "KReport element plugin with ID" << metaData->id()
+                             << "already found at"
+                             << m_plugins.value(metaData->id())->metaData()->fileName()
+                             << "-- skipping another at" << metaData->fileName();
+            continue;
+        }
         if (!KReportPrivate::setupPrivateIconsResourceWithMessage(
             QLatin1String(KREPORT_BASE_NAME_LOWER),
             QString::fromLatin1("icons/%1_%2.rcc")
-                .arg(entry->metaData()->id()).arg(KReportPrivate::supportedIconTheme),
+                .arg(metaData->id()).arg(KReportPrivate::supportedIconTheme),
             QtWarningMsg,
-            QString::fromLatin1(":/icons/%1").arg(entry->metaData()->id())))
+            QString::fromLatin1(":/icons/%1").arg(metaData->id())))
         {
-            delete entry;
             continue;
         }
-        m_plugins.insert(entry->metaData()->id(), entry);
-        const QString legacyName(entry->metaData()->value(QLatin1String("X-KDE-PluginInfo-LegacyName"), entry->metaData()->id()));
-        if (!legacyName.isEmpty() && entry->metaData()->id().startsWith(QLatin1String("org.kde.kreport"))) {
-            m_pluginsByLegacyName.insert(legacyName, entry);
-        }
+        addEntry(entry.take());
     }
     m_findPlugins = false;
+}
+
+void KReportPluginManager::Private::addEntry(KReportPluginEntry *entry)
+{
+    m_plugins.insert(entry->metaData()->id(), entry);
+    const QString legacyName(entry->metaData()->value(QLatin1String("X-KDE-PluginInfo-LegacyName"), entry->metaData()->id()));
+    if (!legacyName.isEmpty() && entry->metaData()->id().startsWith(QLatin1String("org.kde.kreport"))) {
+        m_pluginsByLegacyName.insert(legacyName, entry);
+    }
 }
 
 // ---
