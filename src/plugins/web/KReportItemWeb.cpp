@@ -106,9 +106,12 @@ void KReportItemWeb::loadFinished(bool)
         if (m_targetPage) m_targetPage->addPrimitive(pic, false, true);
 
         OROPicture *p2 = dynamic_cast<OROPicture*>(pic->clone());
-        p2->setPosition(m_pos.toPoint());
-        if (m_targetSection) m_targetSection->addPrimitive(p2);
-
+        if (p2) {
+            p2->setPosition(m_pos.toPoint());
+            if (m_targetSection) {
+                m_targetSection->addPrimitive(p2);
+            }
+        }
         m_rendering = false;
         emit(finishedRendering());
     }

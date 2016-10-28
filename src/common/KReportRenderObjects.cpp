@@ -494,6 +494,7 @@ const int OROCheck::Check = 7;
 
 OROCheck::OROCheck()
         : OROPrimitive(OROCheck::Check)
+        , m_value(false)
 {
 
 }

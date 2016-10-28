@@ -58,7 +58,6 @@ public:
     qreal m_maxHeight;    // -- same as above --
     qreal m_maxWidth;     // -- same as above --
     int m_pageCounter;    // what page are we currently on?
-    int m_recordCount;
 
     KReportData* m_kodata;
     KReportPrivate::OneRecordData *m_oneRecord;

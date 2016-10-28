@@ -423,8 +423,12 @@ int KReportItemChart::renderReportData(OROPage *page, OROSection *section, const
         if (page) page->addPrimitive(pic);
 
         OROPicture *p2 = static_cast<OROPicture*>(pic->clone());
-        p2->setPosition(m_pos.toPoint());
-        if (section) section->addPrimitive(p2);
+        if (p2) {
+            p2->setPosition(m_pos.toPoint());
+            if (section) {
+                section->addPrimitive(p2);
+            }
+        }
     }
 
     return 0;

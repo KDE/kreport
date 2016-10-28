@@ -40,17 +40,12 @@ KReportSectionData::KReportSectionData(const QDomElement & elemSource, KReportDo
 {
     setObjectName(elemSource.tagName());
 
-    if (objectName() != QLatin1String("report:section")) {
-        m_valid = false;
-        return;
-    }
-
     m_type = sectionTypeFromString(elemSource.attribute(QLatin1String("report:section-type")));
-    if (m_type == KReportSectionData::None) {
+    createProperties(elemSource);
+    if (objectName() != QLatin1String("report:section") || m_type == KReportSectionData::None) {
         m_valid = false;
         return;
     }
-    createProperties(elemSource);
 
     m_backgroundColor->setValue(QColor(elemSource.attribute(QLatin1String("fo:background-color"))));
 

@@ -27,6 +27,12 @@
 
 #define myDebug() if (0) kDebug(44021)
 
+//! @todo replace with ReportItemMaps(const QDomNode &element = QDomNode())
+KReportItemMaps::KReportItemMaps()
+    : KReportItemMaps(QDomNode())
+{
+}
+
 KReportItemMaps::KReportItemMaps(const QDomNode &element)
     : m_longtitude(0)
     , m_latitude(0)
@@ -137,7 +143,9 @@ int KReportItemMaps::renderSimpleData(OROPage *page, OROSection *section, const 
 
     if (m_sectionId) {
         OROPicture *i2 = dynamic_cast<OROPicture*>(m_oroPicture->clone());
-        i2->setPosition(m_pos.toPoint());
+        if (i2) {
+            i2->setPosition(m_pos.toPoint());
+        }
     }
 
     m_mapRenderer.renderJob(this);
