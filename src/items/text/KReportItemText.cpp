@@ -28,8 +28,8 @@
 #include <QDomNodeList>
 
 KReportItemText::KReportItemText()
+    : KReportItemText(QDomNode())
 {
-    createProperties();
 }
 
 KReportItemText::KReportItemText(const QDomNode & element) : m_bottomPadding(0.0)
