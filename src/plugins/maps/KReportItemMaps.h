@@ -46,9 +46,7 @@ class KReportItemMaps : public KReportAsyncItemBase
 {
     Q_OBJECT
 public:
-    KReportItemMaps() {
-        createProperties();
-    }
+    KReportItemMaps();
     explicit KReportItemMaps(const QDomNode &element);
     virtual ~KReportItemMaps();
 

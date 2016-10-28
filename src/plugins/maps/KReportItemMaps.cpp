@@ -27,6 +27,12 @@
 
 #define myDebug() if (0) kDebug(44021)
 
+//! @todo replace with ReportItemMaps(const QDomNode &element = QDomNode())
+KReportItemMaps::KReportItemMaps()
+    : KReportItemMaps(QDomNode())
+{
+}
+
 KReportItemMaps::KReportItemMaps(const QDomNode &element)
     : m_longtitude(0)
     , m_latitude(0)
