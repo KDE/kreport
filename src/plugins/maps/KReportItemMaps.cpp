@@ -143,7 +143,9 @@ int KReportItemMaps::renderSimpleData(OROPage *page, OROSection *section, const 
 
     if (m_sectionId) {
         OROPicture *i2 = dynamic_cast<OROPicture*>(m_oroPicture->clone());
-        i2->setPosition(m_pos.toPoint());
+        if (i2) {
+            i2->setPosition(m_pos.toPoint());
+        }
     }
 
     m_mapRenderer.renderJob(this);
