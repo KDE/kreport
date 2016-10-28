@@ -69,7 +69,6 @@ private Q_SLOTS:
 
 private:
     KReportDesigner *m_reportDesigner;
-    KPropertySet *m_propertySet;
 
     QPointer<QToolBar> m_mainToolBar;
     QPointer<QToolBar> m_itemToolBar;
