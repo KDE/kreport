@@ -164,9 +164,9 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
             KReportDetailGroupSectionData * grp = 0;
 
             bool status = m_kodata->moveFirst();
-            m_recordCount = m_kodata->recordCount();
+            int recordCount = m_kodata->recordCount();
 
-            //kreportDebug() << "Record Count:" << m_recordCount;
+            //kreportDebug() << "Record Count:" << recordCount;
 
             for (int i = 0; i < (int) detailData->m_groupList.count(); ++i) {
                 grp = detailData->m_groupList[i];
@@ -191,7 +191,7 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                 const qint64 pos = m_kodata->at();
                 //kreportDebug() << "At:" << l << "Y:" << m_yOffset << "Max Height:" << m_maxHeight;
                 if ((renderSectionSize(*detailData->m_detailSection)
-                        + finishCurPageSize((pos + 1 == m_recordCount))
+                        + finishCurPageSize((pos + 1 == recordCount))
                         + m_bottomMargin + m_yOffset) >= m_maxHeight)
                 {
                     //kreportDebug() << "Next section is too big for this page";
