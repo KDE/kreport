@@ -1,5 +1,6 @@
 /* This file is part of the KDE project
   Copyright (C) 2014 Adam Pigg <adam@piggz.co.uk>
+  Copyright (C) 2016 Jarosław Staniek <staniek@kde.org>
 
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Library General Public
@@ -23,6 +24,7 @@
 #include <QKeyEvent>
 
 BoundedTextItem::BoundedTextItem(QGraphicsItem* parent): QGraphicsTextItem(parent)
+  , m_backgroundOpacity(1.0)
 {
     setTextInteractionFlags(Qt::TextEditorInteraction);
     setCursor(QCursor(Qt::IBeamCursor));
@@ -69,9 +71,14 @@ void BoundedTextItem::setDisplayFont(const QFont& f)
     setFont(m_font);
 }
 
-void BoundedTextItem::setBackgroudOpacity(int o)
+qreal BoundedTextItem::backgroudOpacity() const
 {
-    m_backgroundOpacity = o;
+    return m_backgroundOpacity;
+}
+
+void BoundedTextItem::setBackgroudOpacity(qreal opacity)
+{
+    m_backgroundOpacity = std::min(1.0, std::max(0.0, opacity));
 }
 
 void BoundedTextItem::keyReleaseEvent(QKeyEvent* event)

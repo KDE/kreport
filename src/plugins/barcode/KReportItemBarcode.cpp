@@ -27,11 +27,12 @@
 #include "barcodes.h"
 
 KReportItemBarcode::KReportItemBarcode()
+    : KReportItemBarcode(QDomNode())
 {
-    createProperties();
 }
 
 KReportItemBarcode::KReportItemBarcode(const QDomNode & element)
+    : m_minWidthData(0), m_minWidthTotal(0), m_minHeight(0)
 {
     createProperties();
     QDomNodeList nl = element.childNodes();
@@ -61,8 +62,9 @@ void KReportItemBarcode::setMaxLength(int i)
             int X = 1; // narrow line width
             int I = 1; // interchange line width
             m_minWidthData = (((C + 2) * ((3 * N) + 6) * X) + ((C + 1) * I)) / 100.0;
-            m_minHeight = m_minWidthData * 0.15;
-            /*if(min_height < 0.25)*/ m_minHeight = 0.25;
+            //m_minHeight = m_minWidthData * 0.15;
+            /*if(min_height < 0.25)*/
+            m_minHeight = 0.25;
             m_minWidthTotal = m_minWidthData + 0.22; // added a little buffer to make sure we don't loose any
             // of our required quiet zone in conversions
         } else if (m_format->value().toString() == QLatin1String("3of9+")) {
@@ -71,8 +73,9 @@ void KReportItemBarcode::setMaxLength(int i)
             int X = 1; // 1px narrow line
             int I = 1; // 1px narrow line interchange
             m_minWidthData = (((C + 2) * ((3 * N) + 6) * X) + ((C + 1) * I)) / 100.0;
-            m_minHeight = m_minWidthData * 0.15;
-            /*if(min_height < 0.25)*/ m_minHeight = 0.25;
+            //m_minHeight = m_minWidthData * 0.15;
+            /*if(min_height < 0.25)*/
+            m_minHeight = 0.25;
             m_minWidthTotal = m_minWidthData + 0.22; // added a little buffer to make sure we don't loose any
             // of our required quiet zone in conversions
         } else if (m_format->value().toString() == QLatin1String("i2of5")) {
