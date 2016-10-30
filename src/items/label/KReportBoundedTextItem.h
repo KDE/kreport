@@ -1,5 +1,6 @@
 /* This file is part of the KDE project
   Copyright (C) 2014 Adam Pigg <adam@piggz.co.uk>
+  Copyright (C) 2016 Jarosław Staniek <staniek@kde.org>
 
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Library General Public
@@ -40,7 +41,13 @@ public:
     virtual void paint( QPainter *painter, const QStyleOptionGraphicsItem *o, QWidget *w);
     void setBackgroudColor(const QColor &bc);
     void setForegroundColor(const QColor &fc);
-    void setBackgroudOpacity(int o);
+
+    //! @return background opacity, 0..1.0
+    qreal backgroudOpacity() const;
+
+    //! Sets background opacity, 0..1.0
+    void setBackgroudOpacity(qreal opacity);
+
     void setDisplayFont(const QFont &f);
 
 
@@ -52,7 +59,7 @@ private:
     QColor m_foregroundColor;
     QFont m_font;
 
-    int m_backgroundOpacity;
+    qreal m_backgroundOpacity;
 
 Q_SIGNALS:
     void exitEditMode();

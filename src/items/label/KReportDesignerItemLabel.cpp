@@ -191,7 +191,7 @@ void KReportDesignerItemLabel::enterInlineEditingMode()
         m_inlineEdit->setFont(m_font->value().value<QFont>());
         m_inlineEdit->setDefaultTextColor(m_foregroundColor->value().value<QColor>());
         m_inlineEdit->setBackgroudColor(m_backgroundColor->value().value<QColor>());
-        m_inlineEdit->setBackgroudOpacity(m_backgroundOpacity->value().toInt());
+        m_inlineEdit->setBackgroudOpacity(m_backgroundOpacity->value().toDouble() / 100.0);
         m_inlineEdit->setForegroundColor(m_foregroundColor->value().value<QColor>());
         m_inlineEdit->setFont(m_font->value().value<QFont>());
 
