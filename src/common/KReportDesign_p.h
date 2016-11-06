@@ -39,7 +39,7 @@ static const int DEFAULT_PAGE_MARGIN = CM_TO_POINT(1.0);
 static const QPageSize::PageSizeId DEFAULT_PAGE_SIZE = QPageSize::A4;
 static const QPageLayout::Orientation DEFAULT_PAGE_ORIENTATION = QPageLayout::Landscape;
 
-class KReportDesign::Private
+class Q_DECL_HIDDEN KReportDesign::Private
 {
 public:
     explicit Private(KReportDesign *design);

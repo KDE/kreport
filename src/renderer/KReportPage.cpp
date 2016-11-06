@@ -28,7 +28,7 @@
 #include <QTimer>
 
 //! @internal
-class KReportPage::Private
+class Q_DECL_HIDDEN KReportPage::Private
 {
 public:
     explicit Private(ORODocument *document)

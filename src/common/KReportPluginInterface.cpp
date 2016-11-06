@@ -25,7 +25,7 @@
 
 #include <QDomElement>
 
-class KReportPluginInterface::Private
+class Q_DECL_HIDDEN KReportPluginInterface::Private
 {
 public:
     Private() : metaData(0) {}

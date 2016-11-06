@@ -103,7 +103,7 @@ public:
 };
 
 //! @internal
-class KReportDesigner::Private
+class Q_DECL_HIDDEN KReportDesigner::Private
 {
 public:
     Private()

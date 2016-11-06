@@ -31,7 +31,7 @@
 
 Q_GLOBAL_STATIC(KReportJsonTrader, KReportJsonTrader_instance)
 
-class KReportJsonTrader::Private
+class Q_DECL_HIDDEN KReportJsonTrader::Private
 {
 public:
     Private() : pluginPathFound(false)

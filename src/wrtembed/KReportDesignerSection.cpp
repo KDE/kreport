@@ -76,7 +76,7 @@ protected:
 };
 
 //! @internal
-class KReportDesignerSection::Private
+class Q_DECL_HIDDEN KReportDesignerSection::Private
 {
 public:
     explicit Private()

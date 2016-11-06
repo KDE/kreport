@@ -69,7 +69,7 @@ private:
 };
 
 //! @internal
-class KReportPluginManager::Private
+class Q_DECL_HIDDEN KReportPluginManager::Private
 {
 public:
     explicit Private(KReportPluginManager *qq);

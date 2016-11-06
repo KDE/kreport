@@ -26,7 +26,7 @@
 #include <QDomDocument>
 
 //! @internal
-class KReportDesignerSectionDetail::Private
+class Q_DECL_HIDDEN KReportDesignerSectionDetail::Private
 {
 public:
     explicit Private()

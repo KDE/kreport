@@ -36,7 +36,7 @@
 #include <QScrollBar>
 
 //! @internal
-class KReportView::Private
+class Q_DECL_HIDDEN KReportView::Private
 {
 public:
     explicit Private()
