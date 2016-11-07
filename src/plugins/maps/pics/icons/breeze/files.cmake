@@ -8,6 +8,7 @@ set(_PNG_FILES
 set(_SVG_FILES
 icons/breeze/actions/16/kreport-maps-element.svg
 icons/breeze/actions/22/kreport-maps-element.svg
+icons/breeze/actions/24/kreport-maps-element.svg
 )
 
 set(_FILES ${_PNG_FILES} ${_SVG_FILES})
