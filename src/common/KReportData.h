@@ -23,8 +23,7 @@
 #include "kreport_export.h"
 #include "config-kreport.h"
 
-/**
-
+/** @brief Abstraction of report data source
 */
 class KREPORT_EXPORT KReportData
 {
@@ -115,7 +114,7 @@ public:
     virtual QStringList dataSourceNames() const;
 
     //! Creates a new instance with data source. Default implementation returns @c nullptr.
-    //! @a source is a driver-specific identifier.
+    //! @a source is implementation-specific identifier.
     //! Owner of the returned pointer is the caller.
     virtual KReportData* create(const QString &source) const Q_REQUIRED_RESULT;
 };
