@@ -183,7 +183,7 @@ void KReportPluginManager::Private::findPlugins()
         entry->setMetaData(loader);
         const KReportPluginMetaData *metaData = entry->metaData();
         if (metaData->version() != expectedVersion) {
-            kreportWarning() << "Driver with ID" << metaData->id()
+            kreportWarning() << "KReport element plugin with ID" << metaData->id()
                              << "(" << metaData->fileName() << ")"
                              << "has version" << metaData->version() << "but expected version is"
                              << expectedVersion
