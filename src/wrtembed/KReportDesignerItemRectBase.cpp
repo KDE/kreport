@@ -28,47 +28,48 @@
 #include <QGraphicsSceneMouseEvent>
 #include <QApplication>
 
-KReportDesignerItemRectBase::KReportDesignerItemRectBase(KReportDesigner *r)
-        : QGraphicsRectItem(), KReportDesignerItemBase(r)
+class Q_DECL_HIDDEN KReportDesignerItemRectBase::Private
+{
+public:
+    Private();
+    ~Private();
+    
+    int grabAction;
+};
+
+KReportDesignerItemRectBase::Private::Private()
+{
+}
+
+KReportDesignerItemRectBase::Private::~Private()
+{
+}
+
+KReportDesignerItemRectBase::KReportDesignerItemRectBase(KReportDesigner *r, KReportItemBase *b)
+        : QGraphicsRectItem(), KReportDesignerItemBase(r, b), d(new KReportDesignerItemRectBase::Private)
 {
     m_dpiX = KReportDpi::dpiX();
     m_dpiY = KReportDpi::dpiY();
 
-    m_ppos = 0;
-    m_psize = 0;
-    m_grabAction = 0;
+    d->grabAction = 0;
     setAcceptHoverEvents(true);
 
-#if QT_VERSION >= 0x040600
     setFlags(ItemIsSelectable | ItemIsMovable | ItemSendsGeometryChanges);
-#else
-    setFlags(ItemIsSelectable | ItemIsMovable);
-#endif
-}
-
-void KReportDesignerItemRectBase::init(KReportPosition* p, KReportSize* s, KPropertySet* se, KReportDesigner *d)
-{
-    Q_UNUSED(d);
-    m_ppos = p;
-    m_psize = s;
-    m_pset = se;
 }
 
 KReportDesignerItemRectBase::~KReportDesignerItemRectBase()
 {
+    delete d;
 }
 
 QRectF KReportDesignerItemRectBase::sceneRect()
 {
-    return QRectF(m_ppos->toScene(), m_psize->toScene());
+    return QRectF(KReportItemBase::scenePosition(item()->position()), KReportItemBase::sceneSize(item()->size()));
 }
 
 QRectF KReportDesignerItemRectBase::pointRect() const
 {
-    if (m_ppos && m_psize)
-        return QRectF(m_ppos->toPoint(), m_psize->toPoint());
-    else
-        return QRectF(0, 0, 0, 0);
+    return QRectF(item()->position(), item()->size());
 }
 
 void KReportDesignerItemRectBase::setSceneRect(const QPointF& topLeft, const QSizeF& size, UpdatePropertyFlag update)
@@ -81,8 +82,8 @@ void KReportDesignerItemRectBase::setSceneRect(const QRectF& rect, UpdatePropert
     QGraphicsRectItem::setPos(rect.x(), rect.y());
     setRect(0, 0, rect.width(), rect.height());
     if (update == UpdateProperty) {
-        m_ppos->setScenePos(QPointF(rect.x(), rect.y()));
-        m_psize->setSceneSize(QSizeF(rect.width(), rect.height()));
+        item()->setPosition(KReportItemBase::positionFromScene(QPointF(rect.x(), rect.y())));
+        item()->setSize(KReportItemBase::sizeFromScene(QSizeF(rect.width(), rect.height())));
     }
     this->update();
 }
@@ -90,8 +91,8 @@ void KReportDesignerItemRectBase::setSceneRect(const QRectF& rect, UpdatePropert
 void KReportDesignerItemRectBase::mousePressEvent(QGraphicsSceneMouseEvent * event)
 {
     //Update and show properties
-    m_ppos->setScenePos(QPointF(sceneRect().x(), sceneRect().y()));
-    m_reportDesigner->changeSet(m_pset);
+    item()->setPosition(KReportItemBase::positionFromScene(QPointF(sceneRect().x(), sceneRect().y())));
+    designer()->changeSet(item()->propertySet());
     setSelected(true);
     scene()->update();
 
@@ -101,8 +102,8 @@ void KReportDesignerItemRectBase::mousePressEvent(QGraphicsSceneMouseEvent * eve
 void KReportDesignerItemRectBase::mouseReleaseEvent(QGraphicsSceneMouseEvent * event)
 {
     //Keep the size and position in sync
-    m_ppos->setScenePos(pos());
-    m_psize->setSceneSize(QSizeF(rect().width(), rect().height()));
+    item()->setPosition(KReportItemBase::positionFromScene(pos()));
+    item()->setSize(KReportItemBase::sizeFromScene(QSizeF(rect().width(), rect().height())));
 
     QGraphicsItem::mouseReleaseEvent(event);
 }
@@ -119,7 +120,7 @@ void KReportDesignerItemRectBase::mouseMoveEvent(QGraphicsSceneMouseEvent * even
 
     //! @todo use an enum for the directions
 
-    switch (m_grabAction) {
+    switch (d->grabAction) {
     case 1:
         if (sceneRect().y() - p.y() + rect().height() > 0 && sceneRect().x() - p.x() + rect().width() >= 0)
             setSceneRect(QPointF(p.x(), p.y()), QSizeF(sceneRect().x() - p.x() + rect().width(), sceneRect().y() - p.y() + rect().height()));
@@ -162,8 +163,8 @@ void KReportDesignerItemRectBase::hoverMoveEvent(QGraphicsSceneHoverEvent * even
     //m_grabAction = 0;
 
     if (isSelected()) {
-        m_grabAction = grabHandle(event->pos());
-        switch (m_grabAction) {
+        d->grabAction = grabHandle(event->pos());
+        switch (d->grabAction) {
         case 1:
             setCursor(Qt::SizeFDiagCursor);
             break;
@@ -283,8 +284,10 @@ QVariant KReportDesignerItemRectBase::itemChange(GraphicsItemChange change, cons
 
         return newPos;
     } else if (change == ItemPositionHasChanged && scene()) {
-        m_ppos->setScenePos(value.toPointF(), KReportPosition::DontUpdateProperty);
-    } else if (change == ItemSceneHasChanged && scene() && m_psize) {
+        item()->setPosition(KReportItemBase::positionFromScene(value.toPointF()));
+        //TODO dont update property
+        //m_ppos->setScenePos(value.toPointF(), KReportPosition::DontUpdateProperty);
+    } else if (change == ItemSceneHasChanged && scene() && item()) {
         QPointF newPos = pos();
 
         newPos = dynamic_cast<KReportDesignerSectionScene*>(scene())->gridPoint(newPos);
@@ -298,7 +301,7 @@ QVariant KReportDesignerItemRectBase::itemChange(GraphicsItemChange change, cons
         else if (newPos.y() > (scene()->height() - rect().height()))
             newPos.setY(scene()->height() - rect().height());
 
-        setSceneRect(newPos, m_psize->toScene(), KReportDesignerItemRectBase::DontUpdateProperty);
+        setSceneRect(newPos, KReportItemBase::sceneSize(item()->size()), KReportDesignerItemRectBase::DontUpdateProperty);
     }
 
     return QGraphicsItem::itemChange(change, value);
@@ -309,12 +312,12 @@ void KReportDesignerItemRectBase::propertyChanged(const KPropertySet &s, const K
     Q_UNUSED(s)
 
     if (p.name() == "position") {
-        m_ppos->setUnitPos(p.value().toPointF(), KReportPosition::DontUpdateProperty);
+        item()->setPosition(p.value().toPointF()); //TODO dont update property
     } else if (p.name() == "size") {
-        m_psize->setUnitSize(p.value().toSizeF(), KReportSize::DontUpdateProperty);
+        item()->setSize(p.value().toSizeF()); //TODO dont update property
     }
 
-    setSceneRect(m_ppos->toScene(), m_psize->toScene(), DontUpdateProperty);
+    setSceneRect(KReportItemBase::scenePosition(item()->position()), KReportItemBase::sceneSize(item()->size()), DontUpdateProperty);
 }
 
 void KReportDesignerItemRectBase::move(const QPointF& /*m*/)
@@ -372,15 +375,15 @@ void KReportDesignerItemBase::updateRenderText(const QString &itemDataSource, co
 {
     if (itemDataSource.isEmpty()) {
         if (itemType.isEmpty()) {
-            m_renderText = itemStaticValue;
+            setRenderText(itemStaticValue);
         } else {
-            m_renderText = dataSourceAndObjectTypeName(itemStaticValue, itemType);
+            setRenderText(dataSourceAndObjectTypeName(itemStaticValue, itemType));
         }
     } else {
         if (itemType.isEmpty()) {
-            m_renderText = itemDataSource;
+            setRenderText(itemDataSource);
         } else {
-            m_renderText = dataSourceAndObjectTypeName(itemDataSource, itemType);
+            setRenderText(dataSourceAndObjectTypeName(itemDataSource, itemType));
         }
     }
 }

@@ -39,14 +39,14 @@ KReportItemBarcode::KReportItemBarcode(const QDomNode & element)
     QString n;
     QDomNode node;
 
-    m_name->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
     m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
     m_itemValue->setValue(element.toElement().attribute(QLatin1String("report:value")));
-    Z = element.toElement().attribute(QLatin1String("report:z-index")).toDouble();
+    setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
     m_horizontalAlignment->setValue(element.toElement().attribute(QLatin1String("report:horizontal-align")));
     m_maxLength->setValue(element.toElement().attribute(QLatin1String("report:barcode-max-length")));
     m_format->setValue(element.toElement().attribute(QLatin1String("report:barcode-format")));
-    parseReportRect(element.toElement(), &m_pos, &m_size);
+    parseReportRect(element.toElement());
 
 }
 
@@ -118,8 +118,6 @@ void KReportItemBarcode::setMaxLength(int i)
 
 void KReportItemBarcode::createProperties()
 {
-    m_set = new KPropertySet;
-
     QStringList keys, strings;
 
     m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(),
@@ -152,17 +150,15 @@ void KReportItemBarcode::createProperties()
     m_maxLength = new KProperty("barcode-max-length", 5, tr("Max Length"),
                                 tr("Maximum Barcode Length"));
 
-    addDefaultProperties();
-    m_set->addProperty(m_controlSource);
-    m_set->addProperty(m_itemValue);
-    m_set->addProperty(m_format);
-    m_set->addProperty(m_horizontalAlignment);
-    m_set->addProperty(m_maxLength);
+    propertySet()->addProperty(m_controlSource);
+    propertySet()->addProperty(m_itemValue);
+    propertySet()->addProperty(m_format);
+    propertySet()->addProperty(m_horizontalAlignment);
+    propertySet()->addProperty(m_maxLength);
 }
 
 KReportItemBarcode::~KReportItemBarcode()
 {
-    delete m_set;
 }
 
 int KReportItemBarcode::alignment()
@@ -216,11 +212,11 @@ int KReportItemBarcode::renderSimpleData(OROPage *page, OROSection *section, con
     Q_UNUSED(section);
     Q_UNUSED(script);
 
-    QPointF pos = m_pos.toScene();
-    QSizeF size = m_size.toScene();
+    QPointF pos = scenePosition(position());
+    QSizeF siz = sceneSize(size());
     pos += offset;
 
-    QRectF rect = QRectF(pos, size);
+    QRectF rect = QRectF(pos, siz);
 
     QString val;
 

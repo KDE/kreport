@@ -164,20 +164,20 @@ void Label::setLineStyle(int s)
 
 QPointF Label::position() const
 {
-    return m_label->m_pos.toPoint();
+    return m_label->position();
 }
 void Label::setPosition(const QPointF &p)
 {
-    m_label->m_pos.setPointPos(p);
+    m_label->setPosition(p);
 }
 
 QSizeF Label::size() const
 {
-    return m_label->m_size.toPoint();
+    return m_label->size();
 }
 void Label::setSize(const QSizeF &s)
 {
-    m_label->m_size.setPointSize(s);
+    m_label->setSize(s);
 }
 }
 

@@ -233,6 +233,7 @@ void KReportDesignerSection::initFromXML(const QDomNode & section)
                     }
                     KReportItemBase *item = dynamic_cast<KReportItemBase*>(obj);
                     if (item) {
+                        item->setUnit(d->reportDesigner->pageUnit());
                         KReportDesigner::addMetaProperties(item->propertySet(),
                                                            plugin->metaData()->name(),
                                                            plugin->metaData()->iconName());

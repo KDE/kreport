@@ -46,28 +46,20 @@ public:
     static void buildXML(QGraphicsItem * item, QDomDocument *doc, QDomElement *parent);
     virtual void buildXML(QDomDocument *doc, QDomElement *parent) = 0;
 
-    static void buildXMLRect(QDomDocument *doc, QDomElement *entity, KReportPosition *pos, KReportSize *size);
+    static void buildXMLRect(QDomDocument *doc, QDomElement *entity, KReportItemBase *i);
     static void buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KRTextStyleData &ts);
     static void buildXMLLineStyle(QDomDocument *doc, QDomElement *entity, const KReportLineStyle &ls);
-
-    static QFont getDefaultEntityFont();
-    static void  setDefaultEntityFont(const QFont &);
 
     virtual KReportDesignerItemBase* clone() = 0;
     virtual void move(const QPointF&) = 0;
 
-    KReportDesigner* designer() const {
-        return m_reportDesigner;
-    }
-    void setDesigner(KReportDesigner* rd) {
-        m_reportDesigner = rd;
-    }
+    KReportDesigner* designer() const;
+    void setDesigner(KReportDesigner* rd);
 
     static void addPropertyAsAttribute(QDomElement* e, KProperty* p);
 
 protected:
-    explicit KReportDesignerItemBase(KReportDesigner*);
-    KReportDesigner* m_reportDesigner;
+    explicit KReportDesignerItemBase(KReportDesigner*, KReportItemBase*);
     QString dataSourceAndObjectTypeName(const QString& dataSource, const QString& objectTypeName) const;
 
     /**
@@ -80,12 +72,15 @@ protected:
      * @param itemType type of item
      * @return void
      */
-    void updateRenderText(const QString &itemDataSource, const QString &itemStaticValue, const QString &itemType);
-    QString m_renderText;
+    void updateRenderText(const QString &itemDataSource, const QString &itemStaticValue, const QString &itemType);    
+    KReportItemBase *item() const;
+    
+    void setRenderText(const QString &text);
+    QString renderText() const;
 
 private:
-    static bool m_readDefaultFont;
-    static QFont m_defaultFont;
+    class Private;
+    Private * const d;
 };
 
 #endif

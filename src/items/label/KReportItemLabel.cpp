@@ -37,13 +37,13 @@ KReportItemLabel::KReportItemLabel(const QDomNode & element)
     QString n;
     QDomNode node;
 
-    m_name->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
     m_text->setValue(element.toElement().attribute(QLatin1String("report:caption")));
-    Z = element.toElement().attribute(QLatin1String("report:z-index")).toDouble();
+    setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
     m_horizontalAlignment->setValue(element.toElement().attribute(QLatin1String("report:horizontal-align")));
     m_verticalAlignment->setValue(element.toElement().attribute(QLatin1String("report:vertical-align")));
 
-    parseReportRect(element.toElement(), &m_pos, &m_size);
+    parseReportRect(element.toElement());
 
     for (int i = 0; i < nl.count(); i++) {
         node = nl.item(i);
@@ -73,7 +73,6 @@ KReportItemLabel::KReportItemLabel(const QDomNode & element)
 
 KReportItemLabel::~KReportItemLabel()
 {
-    delete m_set;
 }
 
 QString KReportItemLabel::text() const
@@ -88,8 +87,6 @@ void KReportItemLabel::setText(const QString& t)
 
 void KReportItemLabel::createProperties()
 {
-    m_set = new KPropertySet;
-
     m_text = new KProperty("caption", QLatin1String("Label"), tr("Caption"));
     QStringList keys, strings;
 
@@ -117,17 +114,16 @@ void KReportItemLabel::createProperties()
     m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
     m_lineStyle = new KProperty("line-style", QPen(Qt::NoPen), tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
 
-    addDefaultProperties();
-    m_set->addProperty(m_text);
-    m_set->addProperty(m_horizontalAlignment);
-    m_set->addProperty(m_verticalAlignment);
-    m_set->addProperty(m_font);
-    m_set->addProperty(m_backgroundColor);
-    m_set->addProperty(m_foregroundColor);
-    m_set->addProperty(m_backgroundOpacity);
-    m_set->addProperty(m_lineWeight);
-    m_set->addProperty(m_lineColor);
-    m_set->addProperty(m_lineStyle);
+    propertySet()->addProperty(m_text);
+    propertySet()->addProperty(m_horizontalAlignment);
+    propertySet()->addProperty(m_verticalAlignment);
+    propertySet()->addProperty(m_font);
+    propertySet()->addProperty(m_backgroundColor);
+    propertySet()->addProperty(m_foregroundColor);
+    propertySet()->addProperty(m_backgroundOpacity);
+    propertySet()->addProperty(m_lineWeight);
+    propertySet()->addProperty(m_lineColor);
+    propertySet()->addProperty(m_lineStyle);
 }
 
 Qt::Alignment KReportItemLabel::textFlags() const
@@ -185,8 +181,8 @@ int KReportItemLabel::renderSimpleData(OROPage *page, OROSection *section, const
     Q_UNUSED(script)
 
     OROTextBox * tb = new OROTextBox();
-    tb->setPosition(m_pos.toScene() + offset);
-    tb->setSize(m_size.toScene());
+    tb->setPosition(scenePosition(position()) + offset);
+    tb->setSize(sceneSize(size()));
     tb->setFont(font());
     tb->setText(text());
     tb->setFlags(textFlags());
@@ -199,7 +195,7 @@ int KReportItemLabel::renderSimpleData(OROPage *page, OROSection *section, const
 
     if (section) {
         OROPrimitive *clone = tb->clone();
-        clone->setPosition(m_pos.toScene());
+        clone->setPosition(scenePosition(position()));
         section->addPrimitive(clone);
     }
 

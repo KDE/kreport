@@ -92,20 +92,20 @@ void CheckBox::setLineStyle(int s)
 
 QPointF CheckBox::position() const
 {
-    return m_check->m_pos.toPoint();
+    return m_check->position();
 }
 void CheckBox::setPosition(const QPointF &p)
 {
-    m_check->m_pos.setPointPos(p);
+    m_check->setPosition(p);
 }
 
 QSizeF CheckBox::size() const
 {
-    return m_check->m_size.toPoint();
+    return m_check->size();
 }
 void CheckBox::setSize(const QSizeF &s)
 {
-    m_check->m_size.setPointSize(s);
+    m_check->setSize(s);
 }
 }
 

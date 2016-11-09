@@ -90,7 +90,7 @@ namespace KReportUtils
     KREPORT_EXPORT void writeFontAttributes(QDomElement *el, const QFont &font);
 
     //! Writes attributes for the rect position @p pos, @p siz
-    KREPORT_EXPORT void buildXMLRect(QDomElement *entity, KReportPosition *pos, KReportSize *size);
+    KREPORT_EXPORT void buildXMLRect(QDomElement *entity, const QPointF &pos, const QSizeF &size);
 
     //! Writes attributes for text style @p ts
     KREPORT_EXPORT void buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KRTextStyleData &ts);

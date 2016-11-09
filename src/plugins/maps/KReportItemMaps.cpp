@@ -46,9 +46,9 @@ KReportItemMaps::KReportItemMaps(const QDomNode &element)
 {
     createProperties();
 
-    m_name->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
     m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
-    Z = element.toElement().attribute(QLatin1String("report:z-index")).toDouble();
+    setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
     m_latitudeProperty->setValue(element.toElement().attribute(QLatin1String("report:latitude")).toDouble());
     m_longitudeProperty->setValue(element.toElement().attribute(QLatin1String("report:longitude")).toDouble());
     m_zoomProperty->setValue(element.toElement().attribute(QLatin1String("report:zoom")).toInt());
@@ -56,18 +56,15 @@ KReportItemMaps::KReportItemMaps(const QDomNode &element)
     themeId = themeId.isEmpty() ? m_themeManager.mapThemeIds()[0] : themeId;
     m_themeProperty->setValue(themeId);
 
-    parseReportRect(element.toElement(), &m_pos, &m_size);
+    parseReportRect(element.toElement());
 }
 
 KReportItemMaps::~KReportItemMaps()
 {
-    delete m_set;
 }
 
 void KReportItemMaps::createProperties()
 {
-    m_set = new KPropertySet;
-
     m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
 
     m_latitudeProperty = new KProperty("latitude", 0.0, tr("Latitude"), tr("Latitude"), KProperty::Double);
@@ -98,12 +95,11 @@ void KReportItemMaps::createProperties()
         m_themeProperty->setValue(QLatin1String("earth/srtm/srtm.dgml"), false);
     }
 
-    addDefaultProperties();
-    m_set->addProperty(m_controlSource);
-    m_set->addProperty(m_latitudeProperty);
-    m_set->addProperty(m_longitudeProperty);
-    m_set->addProperty(m_zoomProperty);
-    m_set->addProperty(m_themeProperty);
+    propertySet()->addProperty(m_controlSource);
+    propertySet()->addProperty(m_latitudeProperty);
+    propertySet()->addProperty(m_longitudeProperty);
+    propertySet()->addProperty(m_zoomProperty);
+    propertySet()->addProperty(m_themeProperty);
 }
 
 
@@ -134,8 +130,8 @@ int KReportItemMaps::renderSimpleData(OROPage *page, OROSection *section, const 
 
 
     m_oroPicture = new OROPicture();
-    m_oroPicture->setPosition(m_pos.toScene() + m_offset);
-    m_oroPicture->setSize(m_size.toScene());
+    m_oroPicture->setPosition(scenePosition(position()) + m_offset);
+    m_oroPicture->setSize(sceneSize(size()));
 
     if (m_pageId) {
         m_pageId->addPrimitive(m_oroPicture);
@@ -144,7 +140,7 @@ int KReportItemMaps::renderSimpleData(OROPage *page, OROSection *section, const 
     if (m_sectionId) {
         OROPicture *i2 = dynamic_cast<OROPicture*>(m_oroPicture->clone());
         if (i2) {
-            i2->setPosition(m_pos.toPoint());
+            i2->setPosition(scenePosition(position()));
         }
     }
 
@@ -191,11 +187,6 @@ qreal KReportItemMaps::latitude() const
 int KReportItemMaps::zoom() const
 {
     return m_zoom;
-}
-
-QSize KReportItemMaps::size() const
-{
-    return m_size.toScene().toSize();
 }
 
 QString KReportItemMaps::themeId() const

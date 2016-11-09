@@ -88,7 +88,7 @@ KReportSectionData::~KReportSectionData()
 
 bool KReportSectionData::zLessThan(KReportItemBase* s1, KReportItemBase* s2)
 {
-    return s1->Z < s2->Z;
+    return s1->z() < s2->z();
 }
 
 bool KReportSectionData::xLessThan(KReportItemBase* s1, KReportItemBase* s2)

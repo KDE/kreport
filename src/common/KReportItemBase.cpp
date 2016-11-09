@@ -17,25 +17,56 @@
 
 #include "KReportItemBase.h"
 
-#include "KReportPosition.h"
-#include "KReportSize.h"
 #include "KReportUtils.h"
 #include <KPropertySet>
+#include <QApplication>
+#include <QDomElement>
 
-KReportItemBase::KReportItemBase()
+class Q_DECL_HIDDEN KReportItemBase::Private
 {
-    Z = 0;
-    m_name = new KProperty("name", QString(), tr("Name"), tr("Object Name"));
-    m_name->setAutoSync(0);
+public:
+    Private();
+    ~Private();
+    
+    KPropertySet *set;
+    KProperty *nameProperty;
+    KProperty *sizeProperty;
+    KProperty *positionProperty;
+    QString oldName;
+    qreal z;
+};
+
+KReportItemBase::Private::Private()
+{
+    set = new KPropertySet();
+    nameProperty = new KProperty("name", QString(), tr("Name"), tr("Object Name"));
+    nameProperty->setAutoSync(0);
+    
+    positionProperty = new KProperty("position", QPointF(), QCoreApplication::translate("ItemPosition", "Position"));
+    sizeProperty = new KProperty("size", QSizeF(), QCoreApplication::translate("ItemSize", "Size"));
+    
+    set->addProperty(nameProperty);
+    set->addProperty(positionProperty);
+    set->addProperty(sizeProperty);
 }
 
-KReportItemBase::~KReportItemBase() { }
-
-void KReportItemBase::addDefaultProperties()
+KReportItemBase::Private::~Private()
 {
-    m_set->addProperty(m_name);
-    m_set->addProperty(m_pos.property());
-    m_set->addProperty(m_size.property());
+    delete set;
+}
+
+
+KReportItemBase::KReportItemBase() : d(new Private())
+{
+    d->z = 0;
+    
+    connect(propertySet(), &KPropertySet::propertyChanged,
+            this, &KReportItemBase::propertyChanged);
+}
+
+KReportItemBase::~KReportItemBase() 
+{ 
+    delete d;    
 }
 
 bool KReportItemBase::parseReportTextStyleData(const QDomElement & elemSource, KRTextStyleData *ts)
@@ -49,15 +80,28 @@ bool KReportItemBase::parseReportLineStyleData(const QDomElement & elemSource, K
 }
 
 
-bool KReportItemBase::parseReportRect(const QDomElement & elemSource, KReportPosition *pos, KReportSize *size)
+bool KReportItemBase::parseReportRect(const QDomElement & elemSource)
 {
-    return KReportUtils::parseReportRect(elemSource, pos, size);
+    QPointF pos;
+    QSizeF size;
+
+    pos.setX(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:x"), QLatin1String("1cm"))));
+    pos.setY(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:y"), QLatin1String("1cm"))));
+    size.setWidth(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:width"), QLatin1String("1cm"))));
+    size.setHeight(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:height"), QLatin1String("1cm"))));
+
+    setPosition(pos);
+    setSize(size);
+
+    return true;
+    
 }
 
 void KReportItemBase::setUnit(const KReportUnit& u)
 {
-    m_pos.setUnit(u);
-    m_size.setUnit(u);
+    qDebug() << "Setting page unit to: " << u.symbol();
+    d->positionProperty->setOption("unit", u.symbol());
+    d->sizeProperty->setOption("unit", u.symbol());    
 }
 
 int KReportItemBase::renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset,
@@ -87,9 +131,9 @@ QString KReportItemBase::itemDataSource() const
     return QString();
 }
 
-KPropertySet* KReportItemBase::propertySet() const
+KPropertySet* KReportItemBase::propertySet()
 {
- return m_set;
+ return d->set;
 }
 
 bool KReportItemBase::supportsSubQuery() const
@@ -99,21 +143,95 @@ bool KReportItemBase::supportsSubQuery() const
 
 QString KReportItemBase::entityName() const
 {
-    return m_name->value().toString();
+    return d->nameProperty->value().toString();
 }
 
 void KReportItemBase::setEntityName(const QString& n)
 {
-    m_name->setValue(n);
+    d->nameProperty->setValue(n);
 }
 
-KReportPosition KReportItemBase::position() const
+KProperty* KReportItemBase::nameProperty()
 {
-    return m_pos;
+    return d->nameProperty;
 }
 
-KReportSize KReportItemBase::size() const
+QString KReportItemBase::oldName() const
 {
-    return m_size;
+    return d->oldName;
 }
+
+void KReportItemBase::setOldName(const QString& old)
+{
+    d->oldName = old;
+}
+
+QPointF KReportItemBase::position() const
+{
+    return d->positionProperty->value().toPointF();
+}
+
+QSizeF KReportItemBase::size() const
+{
+    return d->sizeProperty->value().toSizeF();
+}
+
+const KPropertySet * KReportItemBase::propertySet() const
+{
+    return propertySet();
+}
+
+QPointF KReportItemBase::scenePosition(const QPointF &pos)
+{
+    const qreal x = POINT_TO_INCH(pos.x()) * KReportDpi::dpiX();
+    const qreal y = POINT_TO_INCH(pos.y()) * KReportDpi::dpiY();
+    return QPointF(x, y);
+}
+
+QSizeF KReportItemBase::sceneSize(const QSizeF &size)
+{
+    const qreal w = POINT_TO_INCH(size.width()) * KReportDpi::dpiX();
+    const qreal h = POINT_TO_INCH(size.height()) * KReportDpi::dpiY();
+    return QSizeF(w, h);    
+}
+
+qreal KReportItemBase::z() const
+{
+    return d->z;
+}
+
+void KReportItemBase::setZ(qreal z)
+{
+    d->z = z;
+}
+
+void KReportItemBase::setPosition(const QPointF& pos)
+{
+    d->positionProperty->setValue(pos);
+}
+
+void KReportItemBase::setSize(const QSizeF& size)
+{
+    d->sizeProperty->setValue(size);
+}
+
+QPointF KReportItemBase::positionFromScene(const QPointF& pos)
+{
+    const qreal x = INCH_TO_POINT(pos.x() / KReportDpi::dpiX());
+    const qreal y = INCH_TO_POINT(pos.y() / KReportDpi::dpiY());
+    return QPointF(x, y);
+}
+
+QSizeF KReportItemBase::sizeFromScene(const QSizeF& size)
+{
+    qreal w = INCH_TO_POINT(size.width() / KReportDpi::dpiX());
+    qreal h = INCH_TO_POINT(size.height() / KReportDpi::dpiY());
+    return QSizeF(w, h);
+}
+
+void KReportItemBase::propertyChanged(KPropertySet& s, KProperty& p)
+{
+}
+
+
 

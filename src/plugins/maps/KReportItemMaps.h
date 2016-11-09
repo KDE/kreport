@@ -63,7 +63,6 @@ public:
     int zoom() const;
     QString themeId() const;
 
-    QSize size() const;
     OROPicture* oroImage();
 
 protected:

@@ -63,7 +63,7 @@ void KReportMapRenderer::renderJob(KReportItemMaps* reportItemMaps)
     m_marble.setMapThemeId(m_currentJob->themeId());
     //some themes enable overview map, and this must be disabled after theme switch.
     m_marble.setShowOverviewMap(false);
-    m_marble.setSize(m_currentJob->size());
+    m_marble.setSize(KReportItemBase::sceneSize(m_currentJob->size()).toSize());
     m_marble.centerOn(m_currentJob->longtitude(), m_currentJob->latitude());
     m_marble.setRadius(pow(M_E, (zoom / 200.0)));
     

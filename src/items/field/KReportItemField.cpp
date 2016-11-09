@@ -41,17 +41,17 @@ KReportItemField::KReportItemField(const QDomNode & element)
     QString n;
     QDomNode node;
 
-    m_name->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
     m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
     m_itemValue->setValue(element.toElement().attribute(QLatin1String("report:value")));
-    Z = element.toElement().attribute(QLatin1String("report:z-index")).toDouble();
+    setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
     m_horizontalAlignment->setValue(element.toElement().attribute(QLatin1String("report:horizontal-align")));
     m_verticalAlignment->setValue(element.toElement().attribute(QLatin1String("report:vertical-align")));
 
     m_canGrow->setValue(element.toElement().attribute(QLatin1String("report:can-grow")));
     m_wordWrap->setValue(element.toElement().attribute(QLatin1String("report:word-wrap")));
 
-    parseReportRect(element.toElement(), &m_pos, &m_size);
+    parseReportRect(element.toElement());
 
     for (int i = 0; i < nl.count(); i++) {
         node = nl.item(i);
@@ -81,13 +81,10 @@ KReportItemField::KReportItemField(const QDomNode & element)
 
 KReportItemField::~KReportItemField()
 {
-    delete m_set;
 }
 
 void KReportItemField::createProperties()
 {
-    m_set = new KPropertySet;
-
     QStringList keys, strings;
 
     m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
@@ -130,20 +127,19 @@ void KReportItemField::createProperties()
     _trackTotalFormat = new KProperty("trackTotalFormat", QString(), futureI18n("Track Total Format"));
 #endif
 
-    addDefaultProperties();
-    m_set->addProperty(m_controlSource);
-    m_set->addProperty(m_itemValue);
-    m_set->addProperty(m_horizontalAlignment);
-    m_set->addProperty(m_verticalAlignment);
-    m_set->addProperty(m_font);
-    m_set->addProperty(m_backgroundColor);
-    m_set->addProperty(m_foregroundColor);
-    m_set->addProperty(m_backgroundOpacity);
-    m_set->addProperty(m_lineWeight);
-    m_set->addProperty(m_lineColor);
-    m_set->addProperty(m_lineStyle);
-    m_set->addProperty(m_wordWrap);
-    m_set->addProperty(m_canGrow);
+    propertySet()->addProperty(m_controlSource);
+    propertySet()->addProperty(m_itemValue);
+    propertySet()->addProperty(m_horizontalAlignment);
+    propertySet()->addProperty(m_verticalAlignment);
+    propertySet()->addProperty(m_font);
+    propertySet()->addProperty(m_backgroundColor);
+    propertySet()->addProperty(m_foregroundColor);
+    propertySet()->addProperty(m_backgroundOpacity);
+    propertySet()->addProperty(m_lineWeight);
+    propertySet()->addProperty(m_lineColor);
+    propertySet()->addProperty(m_lineStyle);
+    propertySet()->addProperty(m_wordWrap);
+    propertySet()->addProperty(m_canGrow);
 
     //_set->addProperty ( _trackTotal );
     //_set->addProperty ( _trackBuiltinFormat );
@@ -219,8 +215,8 @@ int KReportItemField::renderSimpleData(OROPage *page, OROSection *section, const
                                         const QVariant &data, KReportScriptHandler *script)
 {
     OROTextBox * tb = new OROTextBox();
-    tb->setPosition(m_pos.toScene() + offset);
-    tb->setSize(m_size.toScene());
+    tb->setPosition(scenePosition(position()) + offset);
+    tb->setSize(sceneSize(size()));
     tb->setFont(font());
     tb->setFlags(textFlags());
     tb->setTextStyle(textStyle());
@@ -279,10 +275,10 @@ int KReportItemField::renderSimpleData(OROPage *page, OROSection *section, const
 
     if (section) {
         OROPrimitive *clone = tb->clone();
-        clone->setPosition(m_pos.toScene());
+        clone->setPosition(scenePosition(position()));
         section->addPrimitive(clone);
     }
-    int height = m_pos.toScene().y() + tb->size().height();
+    int height = scenePosition(position()).y() + tb->size().height();
     //If there is no page to add the item to, delete it now because it wont be deleted later
     if (!page) {
         delete tb;

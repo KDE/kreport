@@ -34,20 +34,20 @@ Barcode::~Barcode()
 
 QPointF Barcode::position()
 {
-    return m_barcode->m_pos.toPoint();
+    return m_barcode->position();
 }
 void Barcode::setPosition(const QPointF& p)
 {
-    m_barcode->m_pos.setPointPos(p);
+    m_barcode->setPosition(p);
 }
 
 QSizeF Barcode::size()
 {
-    return m_barcode->m_size.toPoint();
+    return m_barcode->size();
 }
 void Barcode::setSize(const QSizeF& s)
 {
-    m_barcode->m_size.setPointSize(s);
+    m_barcode->setSize(s);
 }
 
 int Barcode::horizontalAlignment()

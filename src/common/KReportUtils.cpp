@@ -356,13 +356,12 @@ void KReportUtils::writeFontAttributes(QDomElement *el, const QFont &font)
 }
 
 
-void KReportUtils::buildXMLRect(QDomElement *entity, KReportPosition *pos, KReportSize *size)
+void KReportUtils::buildXMLRect(QDomElement *entity, const QPointF &pos, const QSizeF &size)
 {
     Q_ASSERT(entity);
-    Q_ASSERT(pos);
-    Q_ASSERT(size);
-    KReportUtils::setAttribute(entity, pos->toPoint() );
-    KReportUtils::setAttribute(entity, size->toPoint() );
+
+    KReportUtils::setAttribute(entity, pos);
+    KReportUtils::setAttribute(entity, size );
 }
 
 void KReportUtils::buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KRTextStyleData &ts)

@@ -36,31 +36,26 @@ void KReportDesignerItemField::init(QGraphicsScene * scene, KReportDesigner * d)
     if (scene)
         scene->addItem(this);
 
-    KReportDesignerItemRectBase::init(&m_pos, &m_size, m_set, d);
-
-    connect(m_set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
-            this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
-
-    setZValue(Z);
+    setZValue(z());
 
     updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(), QLatin1String("field"));
 }
 
 // methods (constructors)
 KReportDesignerItemField::KReportDesignerItemField(KReportDesigner * rw, QGraphicsScene * scene, const QPointF &pos)
-        : KReportDesignerItemRectBase(rw)
+        : KReportDesignerItemRectBase(rw, this)
 {
     Q_UNUSED(pos);
     init(scene, rw);
     setSceneRect(properRect(*rw, getTextRect().width(), getTextRect().height()));
-    m_name->setValue(m_reportDesigner->suggestEntityName(typeName()));
+    nameProperty()->setValue(designer()->suggestEntityName(typeName()));
 }
 
 KReportDesignerItemField::KReportDesignerItemField(const QDomNode & element, KReportDesigner * d, QGraphicsScene * s)
-        : KReportItemField(element), KReportDesignerItemRectBase(d)
+        : KReportItemField(element), KReportDesignerItemRectBase(d, this)
 {
     init(s, d);
-    setSceneRect(m_pos.toScene(), m_size.toScene());
+    setSceneRect(KReportItemBase::scenePosition(item()->position()), KReportItemBase::sceneSize(item()->size()));
 }
 
 KReportDesignerItemField* KReportDesignerItemField::clone()
@@ -79,7 +74,7 @@ KReportDesignerItemField::~KReportDesignerItemField()
 
 QRect KReportDesignerItemField::getTextRect() const
 {
-    return QFontMetrics(font()).boundingRect(x(), y(), 0, 0, textFlags(), m_renderText);
+    return QFontMetrics(font()).boundingRect(x(), y(), 0, 0, textFlags(), renderText());
 }
 
 
@@ -103,7 +98,7 @@ void KReportDesignerItemField::paint(QPainter* painter, const QStyleOptionGraphi
     painter->setPen(m_foregroundColor->value().value<QColor>());
 
     painter->fillRect(QGraphicsRectItem::rect(), bg);
-    painter->drawText(rect(), textFlags(), m_renderText);
+    painter->drawText(rect(), textFlags(), renderText());
 
 
     if ((Qt::PenStyle)m_lineStyle->value().toInt() == Qt::NoPen || m_lineWeight->value().toInt() <= 0) {
@@ -127,7 +122,7 @@ void KReportDesignerItemField::buildXML(QDomDocument *doc, QDomElement *parent)
     QDomElement entity = doc->createElement(QLatin1String("report:") + typeName());
 
     // properties
-    addPropertyAsAttribute(&entity, m_name);
+    addPropertyAsAttribute(&entity, nameProperty());
     addPropertyAsAttribute(&entity, m_controlSource);
     addPropertyAsAttribute(&entity, m_verticalAlignment);
     addPropertyAsAttribute(&entity, m_horizontalAlignment);
@@ -138,7 +133,7 @@ void KReportDesignerItemField::buildXML(QDomDocument *doc, QDomElement *parent)
     entity.setAttribute(QLatin1String("report:z-index"), zValue());
 
     // bounding rect
-    buildXMLRect(doc, &entity, &m_pos, &m_size);
+    buildXMLRect(doc, &entity, this);
 
     //text style info
     buildXMLTextStyle(doc, &entity, textStyle());
@@ -168,23 +163,23 @@ void KReportDesignerItemField::slotPropertyChanged(KPropertySet &s, KProperty &p
 
     if (p.name() == "name") {
         //For some reason p.oldValue returns an empty string
-        if (!m_reportDesigner->isEntityNameUnique(p.value().toString(), this)) {
-            p.setValue(m_oldName);
+        if (!designer()->isEntityNameUnique(p.value().toString(), this)) {
+            p.setValue(oldName());
         } else {
-            m_oldName = p.value().toString();
+            setOldName(p.value().toString());
         }
     }
 
     updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(), QLatin1String("field"));
 
     KReportDesignerItemRectBase::propertyChanged(s, p);
-    if (m_reportDesigner)m_reportDesigner->setModified(true);
+    if (designer())designer()->setModified(true);
 }
 
 void KReportDesignerItemField::mousePressEvent(QGraphicsSceneMouseEvent * event)
 {
     //kreportpluginDebug() << m_reportDesigner->fieldKeys() <<  m_reportDesigner->fieldNames();
-    m_controlSource->setListData(m_reportDesigner->fieldKeys(), m_reportDesigner->fieldNames());
+    m_controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
     KReportDesignerItemRectBase::mousePressEvent(event);
 }
 

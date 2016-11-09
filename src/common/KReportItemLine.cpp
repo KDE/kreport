@@ -36,8 +36,8 @@ KReportItemLine::KReportItemLine(const QDomNode & element)
     QDomNode node;
     QPointF _s, _e;
 
-    m_name->setValue(element.toElement().attribute(QLatin1String("report:name")));
-    Z = element.toElement().attribute(QLatin1String("report:z-index")).toDouble();
+    nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
 
     _s.setX(KReportUnit::parseValue(element.toElement().attribute(QLatin1String("svg:x1"), QLatin1String("1cm"))));
     _s.setY(KReportUnit::parseValue(element.toElement().attribute(QLatin1String("svg:y1"), QLatin1String("1cm"))));
@@ -65,25 +65,21 @@ KReportItemLine::KReportItemLine(const QDomNode & element)
 
 KReportItemLine::~KReportItemLine()
 {
-    delete m_set;
 }
 
 void KReportItemLine::createProperties()
 {
-    m_set = new KPropertySet;
-
     m_lineWeight = new KProperty("line-weight", 1, tr("Line Weight"));
     m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
     m_lineStyle = new KProperty("line-style", (int)Qt::SolidLine, tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
     m_start.setName(QLatin1String("Start"));
     m_end.setName(QLatin1String("End"));
 
-    m_set->addProperty(m_name);
-    m_set->addProperty(m_start.property());
-    m_set->addProperty(m_end.property());
-    m_set->addProperty(m_lineWeight);
-    m_set->addProperty(m_lineColor);
-    m_set->addProperty(m_lineStyle);
+    propertySet()->addProperty(m_start.property());
+    propertySet()->addProperty(m_end.property());
+    propertySet()->addProperty(m_lineWeight);
+    propertySet()->addProperty(m_lineColor);
+    propertySet()->addProperty(m_lineStyle);
 }
 
 KReportLineStyle KReportItemLine::lineStyle() const

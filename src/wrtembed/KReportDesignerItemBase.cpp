@@ -24,16 +24,34 @@
 #include <QDomDocument>
 #include <QCheckBox>
 
-//
-// ReportEntity
-//
-KReportDesignerItemBase::~KReportDesignerItemBase()
+class Q_DECL_HIDDEN KReportDesignerItemBase::Private
+{
+public:
+    Private();
+    ~Private();
+    
+    KReportDesigner *reportDesigner;
+    KReportItemBase *item;
+    QString renderText;   
+};
+
+KReportDesignerItemBase::Private::Private()
 {
 }
 
-KReportDesignerItemBase::KReportDesignerItemBase(KReportDesigner* r)
+KReportDesignerItemBase::Private::~Private()
 {
-    m_reportDesigner = r;
+}
+
+KReportDesignerItemBase::~KReportDesignerItemBase()
+{
+    delete d;
+}
+
+KReportDesignerItemBase::KReportDesignerItemBase(KReportDesigner *r, KReportItemBase *b) : d(new Private())
+{
+    d->reportDesigner = r;
+    d->item = b;
 }
 
 void KReportDesignerItemBase::buildXML(QGraphicsItem * item, QDomDocument *doc, QDomElement *parent)
@@ -47,10 +65,10 @@ void KReportDesignerItemBase::buildXML(QGraphicsItem * item, QDomDocument *doc, 
 
 }
 
-void KReportDesignerItemBase::buildXMLRect(QDomDocument *doc, QDomElement *entity, KReportPosition *pos, KReportSize *size)
+void KReportDesignerItemBase::buildXMLRect(QDomDocument *doc, QDomElement *entity, KReportItemBase *i)
 {
     Q_UNUSED(doc);
-    KReportUtils::buildXMLRect(entity, pos, size);
+    KReportUtils::buildXMLRect(entity, i->position(), i->size());
 }
 
 void KReportDesignerItemBase::buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KRTextStyleData &ts)
@@ -72,4 +90,29 @@ QString KReportDesignerItemBase::dataSourceAndObjectTypeName(const QString& data
 void KReportDesignerItemBase::addPropertyAsAttribute(QDomElement* e, KProperty* p)
 {
     KReportUtils::addPropertyAsAttribute(e, p);
+}
+
+KReportDesigner * KReportDesignerItemBase::designer() const
+{
+    return d->reportDesigner;
+}
+
+void KReportDesignerItemBase::setDesigner(KReportDesigner* rd)
+{
+    d->reportDesigner = rd;
+}
+
+KReportItemBase *KReportDesignerItemBase::item() const
+{
+    return d->item;
+}
+
+QString KReportDesignerItemBase::renderText() const
+{
+    return d->renderText;
+}
+
+void KReportDesignerItemBase::setRenderText(const QString& text)
+{
+    d->renderText = text;
 }

@@ -37,12 +37,12 @@ KReportItemImage::KReportItemImage(const QDomNode & element)
     QString n;
     QDomNode node;
 
-    m_name->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
     m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
     m_resizeMode->setValue(element.toElement().attribute(QLatin1String("report:resize-mode"), QLatin1String("stretch")));
-    Z = element.toElement().attribute(QLatin1String("report:z-index")).toDouble();
+    setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
 
-    parseReportRect(element.toElement(), &m_pos, &m_size);
+    parseReportRect(element.toElement());
 
     for (int i = 0; i < nl.count(); i++) {
         node = nl.item(i);
@@ -60,7 +60,6 @@ KReportItemImage::KReportItemImage(const QDomNode & element)
 
 KReportItemImage::~KReportItemImage()
 {
-    delete m_set;
 }
 
 bool KReportItemImage::isInline() const
@@ -113,8 +112,6 @@ void KReportItemImage::setMode(const QString &m)
 
 void KReportItemImage::createProperties()
 {
-    m_set = new KPropertySet;
-
     m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
 
     QStringList keys, strings;
@@ -124,10 +121,9 @@ void KReportItemImage::createProperties()
 
     m_staticImage = new KProperty("static-image", QPixmap(), tr("Value"), tr("Value used if not bound to a field"));
 
-    addDefaultProperties();
-    m_set->addProperty(m_controlSource);
-    m_set->addProperty(m_resizeMode);
-    m_set->addProperty(m_staticImage);
+    propertySet()->addProperty(m_controlSource);
+    propertySet()->addProperty(m_resizeMode);
+    propertySet()->addProperty(m_staticImage);
 }
 
 
@@ -170,15 +166,15 @@ int KReportItemImage::renderSimpleData(OROPage *page, OROSection *section, const
         id->setTransformationMode(Qt::SmoothTransformation);
     }
 
-    id->setPosition(m_pos.toScene() + offset);
-    id->setSize(m_size.toScene());
+    id->setPosition(scenePosition(position()) + offset);
+    id->setSize(sceneSize(size()));
     if (page) {
         page->addPrimitive(id);
     }
 
     if (section) {
         OROImage *i2 = dynamic_cast<OROImage*>(id->clone());
-        i2->setPosition(m_pos.toPoint());
+        i2->setPosition(scenePosition(position()));
         section->addPrimitive(i2);
     }
 

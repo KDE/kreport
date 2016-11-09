@@ -22,6 +22,7 @@
 #include "kreport_export.h"
 #include "KReportPosition.h"
 #include "KReportSize.h"
+#include "KReportDpi.h"
 
 #include <QObject>
 #include <QFont>
@@ -104,35 +105,52 @@ public:
     @return True if uses a sub query
     */
     virtual bool supportsSubQuery() const;
-
-    KPropertySet* propertySet() const;
-
+ 
+    KPropertySet* propertySet();
+    const KPropertySet* propertySet() const;
+    
     void setEntityName(const QString& n);
     QString entityName() const;
 
     virtual void setUnit(const KReportUnit& u);
 
-    KReportPosition position() const;
-    KReportSize size() const;
+    /**
+     * @brief Return the size in points
+     */
+    QSizeF size() const;
+    
+    /**
+     * @brief Return the position in points
+     */
+    QPointF position() const;
 
-    qreal Z;
+    void setPosition(const QPointF &pos);
+    void setSize(const QSizeF &siz);
+    
+    qreal z() const;
+    void setZ(qreal z);
+    
+    //Helper function to map between size/position units
+    static QPointF scenePosition(const QPointF &pos);
+    static QSizeF sceneSize(const QSizeF &size);
+    static QPointF positionFromScene(const QPointF &pos);
+    static QSizeF sizeFromScene(const QSizeF &size);
+
 protected:
-    KPropertySet *m_set;
-    KProperty *m_name;
-    KReportPosition m_pos;
-    KReportSize m_size;
-
-    QString m_oldName;
-
-    void addDefaultProperties();
-
     virtual void createProperties() = 0;
-
-    static bool parseReportRect(const QDomElement &, KReportPosition *pos, KReportSize *size);
+    bool parseReportRect(const QDomElement &elem);
     static bool parseReportTextStyleData(const QDomElement &, KRTextStyleData*);
     static bool parseReportLineStyleData(const QDomElement &, KReportLineStyle*);
-
-
+    
+    KProperty *nameProperty();
+    QString oldName() const;
+    void setOldName(const QString &old);
+    
+    Q_SLOT virtual void propertyChanged(KPropertySet &s, KProperty &p);
+    
+private:
+    class Private;
+    Private * const d;
 };
 
 #endif

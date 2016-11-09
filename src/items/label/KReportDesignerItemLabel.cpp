@@ -35,12 +35,10 @@ void KReportDesignerItemLabel::init(QGraphicsScene *scene, KReportDesigner *d)
     if (scene)
         scene->addItem(this);
 
-    KReportDesignerItemRectBase::init(&m_pos, &m_size, m_set, d);
-
     connect(propertySet(), SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
-    setZValue(Z);
+    setZValue(z());
     setFlag(ItemIsFocusable);
 
     m_inlineEdit = new BoundedTextItem(this);
@@ -57,21 +55,21 @@ void KReportDesignerItemLabel::init(QGraphicsScene *scene, KReportDesigner *d)
 
 // methods (constructors)
 KReportDesignerItemLabel::KReportDesignerItemLabel(KReportDesigner* d, QGraphicsScene * scene, const QPointF &pos)
-        : KReportDesignerItemRectBase(d)
+        : KReportDesignerItemRectBase(d, this)
 {
     Q_UNUSED(pos);
     init(scene, d);
     setSceneRect(properRect(*d, getTextRect().width(), getTextRect().height()));
-    m_name->setValue(m_reportDesigner->suggestEntityName(typeName()));
+    nameProperty()->setValue(designer()->suggestEntityName(typeName()));
 
     enterInlineEditingMode();
 }
 
 KReportDesignerItemLabel::KReportDesignerItemLabel(const QDomNode & element, KReportDesigner * d, QGraphicsScene * s)
-        : KReportItemLabel(element), KReportDesignerItemRectBase(d), m_inlineEdit(0)
+        : KReportItemLabel(element), KReportDesignerItemRectBase(d, this), m_inlineEdit(0)
 {
     init(s, d);
-    setSceneRect(m_pos.toScene(), m_size.toScene());
+    setSceneRect(KReportItemBase::scenePosition(item()->position()), KReportItemBase::sceneSize(item()->size()));
 }
 
 KReportDesignerItemLabel* KReportDesignerItemLabel::clone()
@@ -139,14 +137,14 @@ void KReportDesignerItemLabel::buildXML(QDomDocument *doc, QDomElement *parent)
     QDomElement entity = doc->createElement(QLatin1String("report:") + typeName());
 
     // properties
-    addPropertyAsAttribute(&entity, m_name);
+    addPropertyAsAttribute(&entity, nameProperty());
     addPropertyAsAttribute(&entity, m_text);
     addPropertyAsAttribute(&entity, m_verticalAlignment);
     addPropertyAsAttribute(&entity, m_horizontalAlignment);
-    entity.setAttribute(QLatin1String("report:z-index"), zValue());
+    entity.setAttribute(QLatin1String("report:z-index"), z());
 
     // bounding rect
-    buildXMLRect(doc, &entity, &m_pos, &m_size);
+    buildXMLRect(doc, &entity, this);
 
     //text style info
     buildXMLTextStyle(doc, &entity, textStyle());
@@ -163,17 +161,17 @@ void KReportDesignerItemLabel::slotPropertyChanged(KPropertySet &s, KProperty &p
 
     if (p.name() == "name") {
         //For some reason p.oldValue returns an empty string
-        if (!m_reportDesigner->isEntityNameUnique(p.value().toString(), this)) {
-            p.setValue(m_oldName);
+        if (!designer()->isEntityNameUnique(p.value().toString(), this)) {
+            p.setValue(oldName());
         } else {
-            m_oldName = p.value().toString();
+            setOldName(p.value().toString());
         }
     } else if (p.name() == "caption") {
         m_inlineEdit->setPlainText(p.value().toString());
     }
 
     KReportDesignerItemRectBase::propertyChanged(s, p);
-    if (m_reportDesigner) m_reportDesigner->setModified(true);
+    if (designer()) designer()->setModified(true);
 
 }
 

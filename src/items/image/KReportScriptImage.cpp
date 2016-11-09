@@ -35,20 +35,20 @@ Image::~Image()
 
 QPointF Image::position() const
 {
-    return m_image->m_pos.toPoint();
+    return m_image->position();
 }
 void Image::setPosition(const QPointF& p)
 {
-    m_image->m_pos.setPointPos(p);
+    m_image->setPosition(p);
 }
 
 QSizeF Image::size() const
 {
-    return m_image->m_size.toPoint();
+    return m_image->size();
 }
 void Image::setSize(const QSizeF& s)
 {
-    m_image->m_size.setPointSize(s);
+    m_image->setSize(s);
 }
 
 QString Image::resizeMode() const

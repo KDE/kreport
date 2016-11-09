@@ -48,9 +48,9 @@ KReportItemWeb::KReportItemWeb(const QDomNode &element)
     QDomElement e = element.toElement();
 
     m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
-    m_name->setValue(element.toElement().attribute(QLatin1String("report:name")));
-    Z = element.toElement().attribute(QLatin1String("report:z-index")).toDouble();
-    parseReportRect(element.toElement(), &m_pos, &m_size);
+    nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
+    parseReportRect(element.toElement());
     for (int i = 0; i < nl.count(); i++) {
         node = nl.item(i);
         n = node.nodeName();
@@ -66,18 +66,15 @@ void KReportItemWeb::init()
 
 void KReportItemWeb::createProperties()
 {
-    m_set = new KPropertySet;
-
     m_controlSource = new KProperty("item-data-source", QStringList(),
                                     QStringList(), QString(), tr("Data Source"));
-    m_set->addProperty(m_controlSource);
-    addDefaultProperties();
+    propertySet()->addProperty(m_controlSource);
 }
 
 KReportItemWeb::~KReportItemWeb()
 {
-    delete m_set;
 }
+
 QString KReportItemWeb::typeName() const
 {
     return QLatin1String("web");
@@ -88,7 +85,7 @@ void KReportItemWeb::loadFinished(bool)
     //kreportpluginDebug() << m_rendering;
     if (m_rendering) {
         OROPicture * pic = new OROPicture();
-        m_webPage->setViewportSize(m_size.toScene().toSize());
+        m_webPage->setViewportSize(sceneSize(size()).toSize());
         m_webPage->mainFrame()->setScrollBarPolicy(Qt::Horizontal, Qt::ScrollBarAlwaysOff);
         m_webPage->mainFrame()->setScrollBarPolicy(Qt::Vertical, Qt::ScrollBarAlwaysOff);
 
@@ -96,22 +93,23 @@ void KReportItemWeb::loadFinished(bool)
 
         m_webPage->mainFrame()->render(&p);
 
-        QPointF pos = m_pos.toScene();
-        QSizeF size = m_size.toScene();
+        QPointF pos = scenePosition(position());
+        QSizeF siz = sceneSize(size());
 
         pos += m_targetOffset;
 
         pic->setPosition(pos);
-        pic->setSize(size);
+        pic->setSize(siz);
         if (m_targetPage) m_targetPage->addPrimitive(pic, false, true);
 
         OROPicture *p2 = dynamic_cast<OROPicture*>(pic->clone());
         if (p2) {
-            p2->setPosition(m_pos.toPoint());
+            p2->setPosition(scenePosition(position()));
             if (m_targetSection) {
                 m_targetSection->addPrimitive(p2);
             }
         }
+
         m_rendering = false;
         emit(finishedRendering());
     }

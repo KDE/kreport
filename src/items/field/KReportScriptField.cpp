@@ -164,20 +164,20 @@ void Field::setLineStyle(int s)
 
 QPointF Field::position() const
 {
-    return m_field->m_pos.toPoint();
+    return m_field->position();
 }
 void Field::setPosition(const QPointF &p)
 {
-    m_field->m_pos.setPointPos(p);
+    m_field->setPosition(p);
 }
 
 QSizeF Field::size() const
 {
-    return m_field->m_size.toPoint();
+    return m_field->size();
 }
 void Field::setSize(const QSizeF &s)
 {
-    m_field->m_size.setPointSize(s);
+    m_field->setSize(s);
 }
 
 }

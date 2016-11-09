@@ -42,29 +42,27 @@ void KReportDesignerItemText::init(QGraphicsScene *scene, KReportDesigner *d)
     connect(propertySet(), SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
-    KReportDesignerItemRectBase::init(&m_pos, &m_size, m_set, d);
-
-    m_controlSource->setListData(m_reportDesigner->fieldKeys(), m_reportDesigner->fieldNames());
-    setZValue(Z);
+    m_controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
+    setZValue(z());
 
     updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(),
                      QLatin1String("textarea"));
 }
 
 KReportDesignerItemText::KReportDesignerItemText(KReportDesigner * rw, QGraphicsScene * scene, const QPointF &pos)
-        : KReportDesignerItemRectBase(rw)
+        : KReportDesignerItemRectBase(rw, this)
 {
     Q_UNUSED(pos);
     init(scene, rw);
     setSceneRect(properRect(*rw, getTextRect().width(), getTextRect().height()));
-    m_name->setValue(m_reportDesigner->suggestEntityName(typeName()));
+    nameProperty()->setValue(designer()->suggestEntityName(typeName()));
 }
 
 KReportDesignerItemText::KReportDesignerItemText(const QDomNode & element, KReportDesigner * d, QGraphicsScene * s)
-        : KReportItemText(element), KReportDesignerItemRectBase(d)
+        : KReportItemText(element), KReportDesignerItemRectBase(d, this)
 {
     init(s, d);
-    setSceneRect(m_pos.toScene(), m_size.toScene());
+    setSceneRect(KReportItemBase::scenePosition(item()->position()), KReportItemBase::sceneSize(item()->size()));
 }
 
 KReportDesignerItemText* KReportDesignerItemText::clone()
@@ -84,7 +82,7 @@ KReportDesignerItemText::~KReportDesignerItemText
 
 QRect KReportDesignerItemText::getTextRect() const
 {
-    return QFontMetrics(font()).boundingRect(int (x()), int (y()), 0, 0, textFlags(), m_renderText);
+    return QFontMetrics(font()).boundingRect(int (x()), int (y()), 0, 0, textFlags(), renderText());
 }
 
 void KReportDesignerItemText::paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget)
@@ -105,7 +103,7 @@ void KReportDesignerItemText::paint(QPainter* painter, const QStyleOptionGraphic
     painter->setPen(m_foregroundColor->value().value<QColor>());
 
     painter->fillRect(rect(),  bg);
-    painter->drawText(rect(), textFlags(), m_renderText);
+    painter->drawText(rect(), textFlags(), renderText());
 
     if ((Qt::PenStyle)m_lineStyle->value().toInt() == Qt::NoPen || m_lineWeight->value().toInt() <= 0) {
         painter->setPen(QPen(Qt::lightGray));
@@ -129,16 +127,16 @@ void KReportDesignerItemText::buildXML(QDomDocument *doc, QDomElement *parent)
     QDomElement entity = doc->createElement(QLatin1String("report:") + typeName());
 
     // properties
-    addPropertyAsAttribute(&entity, m_name);
+    addPropertyAsAttribute(&entity, nameProperty());
     addPropertyAsAttribute(&entity, m_controlSource);
     addPropertyAsAttribute(&entity, m_verticalAlignment);
     addPropertyAsAttribute(&entity, m_horizontalAlignment);
     entity.setAttribute(QLatin1String("report:bottom-padding"), m_bottomPadding);
-    entity.setAttribute(QLatin1String("report:z-index"), zValue());
+    entity.setAttribute(QLatin1String("report:z-index"), z());
     addPropertyAsAttribute(&entity, m_itemValue);
 
     // bounding rect
-    buildXMLRect(doc, &entity, &m_pos, &m_size);
+    buildXMLRect(doc, &entity, this);
 
     //text style info
     buildXMLTextStyle(doc, &entity, textStyle());
@@ -151,7 +149,7 @@ void KReportDesignerItemText::buildXML(QDomDocument *doc, QDomElement *parent)
 
 void KReportDesignerItemText::mousePressEvent(QGraphicsSceneMouseEvent * event)
 {
-    m_controlSource->setListData(m_reportDesigner->fieldKeys(), m_reportDesigner->fieldNames());
+    m_controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
     KReportDesignerItemRectBase::mousePressEvent(event);
 }
 
@@ -160,24 +158,17 @@ void KReportDesignerItemText::slotPropertyChanged(KPropertySet &s, KProperty &p)
 {
     Q_UNUSED(s);
 
-    if (p.name() == "position") {
-        m_pos.setUnitPos(p.value().toPointF(), KReportPosition::DontUpdateProperty);
-    } else if (p.name() == "size") {
-        m_size.setUnitSize(p.value().toSizeF(), KReportSize::DontUpdateProperty);
-    } else if (p.name() == "name") {
+    if (p.name() == "name") {
         //For some reason p.oldValue returns an empty string
-        if (!m_reportDesigner->isEntityNameUnique(p.value().toString(), this)) {
-            p.setValue(m_oldName);
+        if (!designer()->isEntityNameUnique(p.value().toString(), this)) {
+            p.setValue(oldName());
         } else {
-            m_oldName = p.value().toString();
+            setOldName(p.value().toString());
         }
     }
 
-    setSceneRect(m_pos.toScene(), m_size.toScene(), DontUpdateProperty);
-    if (m_reportDesigner)
-        m_reportDesigner->setModified(true);
-    if (scene())
-        scene()->update();
+    KReportDesignerItemRectBase::propertyChanged(s, p);
+    if (designer()) designer()->setModified(true);
 
     updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(),
                      QLatin1String("textarea"));

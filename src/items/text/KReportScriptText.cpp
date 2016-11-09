@@ -168,20 +168,20 @@ void Text::setLineStyle(int s)
 
 QPointF Text::position() const
 {
-    return m_text->m_pos.toPoint();
+    return m_text->position();
 }
 void Text::setPosition(const QPointF& p)
 {
-    m_text->m_pos.setPointPos(p);
+    m_text->setPosition(p);
 }
 
 QSizeF Text::size() const
 {
-    return m_text->m_size.toPoint();
+    return m_text->size();
 }
 void Text::setSize(const QSizeF& s)
 {
-    m_text->m_size.setPointSize(s);
+    m_text->setSize(s);
 }
 
 void Text::loadFromFile(const QString &fn)

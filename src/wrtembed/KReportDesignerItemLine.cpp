@@ -33,10 +33,11 @@
 //
 void KReportDesignerItemLine::init(QGraphicsScene* s, KReportDesigner *r)
 {
-    m_reportDesigner = r;
     setPos(0, 0);
     setUnit(r->pageUnit());
 
+    nameProperty()->setValue(r->suggestEntityName(typeName()));
+    
     setFlags(ItemIsSelectable | ItemIsMovable | ItemSendsGeometryChanges);
 
     setPen(QPen(Qt::black, 5));
@@ -45,31 +46,26 @@ void KReportDesignerItemLine::init(QGraphicsScene* s, KReportDesigner *r)
     if (s)
         s->addItem(this);
 
-    connect(m_set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
-            this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
-
-    setZValue(Z);
+    setZValue(z());
 }
 
 KReportDesignerItemLine::KReportDesignerItemLine(KReportDesigner * d, QGraphicsScene * scene, const QPointF &pos)
-        : KReportDesignerItemBase(d)
+        : KReportDesignerItemBase(d, this)
 {
     init(scene, d);
     setLineScene(QLineF(pos, QPointF(20,20)+pos));
-    m_name->setValue(m_reportDesigner->suggestEntityName(typeName()));
+    
 }
 
 KReportDesignerItemLine::KReportDesignerItemLine(KReportDesigner * d, QGraphicsScene * scene, const QPointF &startPos, const QPointF &endPos)
-        : KReportDesignerItemBase(d)
+        : KReportDesignerItemBase(d, this)
 {
     init(scene, d);
     setLineScene(QLineF(startPos, endPos));
-    m_name->setValue(m_reportDesigner->suggestEntityName(typeName()));
-
 }
 
 KReportDesignerItemLine::KReportDesignerItemLine(const QDomNode & entity, KReportDesigner * d, QGraphicsScene * scene)
-        : KReportItemLine(entity), KReportDesignerItemBase(d)
+        : KReportItemLine(entity), KReportDesignerItemBase(d, this)
 {
     init(scene, d);
     setLine ( m_start.toScene().x(), m_start.toScene().y(), m_end.toScene().x(), m_end.toScene().y() );
@@ -113,7 +109,7 @@ void KReportDesignerItemLine::buildXML(QDomDocument *doc, QDomElement *parent)
     QDomElement entity = doc->createElement(QLatin1String("report:") + typeName());
 
     // properties
-    addPropertyAsAttribute(&entity, m_name);
+    addPropertyAsAttribute(&entity, nameProperty());
     entity.setAttribute(QLatin1String("report:z-index"), zValue());
     KReportUtils::setAttribute(&entity, QLatin1String("svg:x1"), m_start.toPoint().x());
     KReportUtils::setAttribute(&entity, QLatin1String("svg:y1"), m_start.toPoint().y());
@@ -125,7 +121,7 @@ void KReportDesignerItemLine::buildXML(QDomDocument *doc, QDomElement *parent)
     parent->appendChild(entity);
 }
 
-void KReportDesignerItemLine::slotPropertyChanged(KPropertySet &s, KProperty &p)
+void KReportDesignerItemLine::propertyChanged(KPropertySet &s, KProperty &p)
 {
     Q_UNUSED(s);
 
@@ -139,21 +135,21 @@ void KReportDesignerItemLine::slotPropertyChanged(KPropertySet &s, KProperty &p)
     }
     else if (p.name() == "name") {
         //For some reason p.oldValue returns an empty string
-        if (!m_reportDesigner->isEntityNameUnique(p.value().toString(), this)) {
-            p.setValue(m_oldName);
+        if (!designer()->isEntityNameUnique(p.value().toString(), this)) {
+            p.setValue(oldName());
         } else {
-            m_oldName = p.value().toString();
+            setOldName(p.value().toString());
         }
     }
-    if (m_reportDesigner)
-        m_reportDesigner->setModified(true);
+    if (designer())
+        designer()->setModified(true);
 
     update();
 }
 
 void KReportDesignerItemLine::mousePressEvent(QGraphicsSceneMouseEvent * event)
 {
-    m_reportDesigner->changeSet(m_set);
+    designer()->changeSet(propertySet());
     setSelected(true);
     QGraphicsLineItem::mousePressEvent(event);
 }
@@ -245,7 +241,8 @@ void KReportDesignerItemLine::setLineScene(QLineF l)
 
 void KReportDesignerItemLine::move(const QPointF& m)
 {
-    QPointF original = m_pos.toScene();
+    QPointF original = scenePosition(position());
     original += m;
-    m_pos.setScenePos(original);
+    
+    setPosition(positionFromScene(original));
 }

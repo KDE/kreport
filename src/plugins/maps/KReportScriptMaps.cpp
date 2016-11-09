@@ -35,22 +35,22 @@ Maps::~Maps()
 
 QPointF Maps::position() const
 {
-    return m_map->m_pos.toPoint();
+    return m_map->position();
 }
 
 void Maps::setPosition(const QPointF& p)
 {
-    m_map->m_pos.setPointPos(p);
+    m_map->setPosition(p);
 }
 
 QSizeF Maps::size() const
 {
-    return m_map->m_size.toPoint();
+    return m_map->size();
 }
 
 void Maps::setSize(const QSizeF& s)
 {
-    m_map->m_size.setPointSize(s);
+    m_map->setSize(s);
 }
 
 void Maps::setLatitude(qreal latitude)

@@ -34,29 +34,27 @@ void KReportDesignerItemCheckBox::init(QGraphicsScene *scene, KReportDesigner *d
     if (scene)
         scene->addItem(this);
 
-    KReportDesignerItemRectBase::init(&m_pos, &m_size, m_set, d);
-
     connect(propertySet(), SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
-    setZValue(Z);
+    setZValue(z());
 }
 
 // methods (constructors)
 KReportDesignerItemCheckBox::KReportDesignerItemCheckBox(KReportDesigner* d, QGraphicsScene * scene, const QPointF &pos)
-        : KReportDesignerItemRectBase(d)
+        : KReportDesignerItemRectBase(d, this)
 {
     Q_UNUSED(pos);
     init(scene, d);
     setSceneRect(properRect(*d, KREPORT_ITEM_CHECK_DEFAULT_WIDTH, KREPORT_ITEM_CHECK_DEFAULT_HEIGHT));
-    m_name->setValue(m_reportDesigner->suggestEntityName(typeName()));
+    nameProperty()->setValue(designer()->suggestEntityName(typeName()));
 }
 
 KReportDesignerItemCheckBox::KReportDesignerItemCheckBox(const QDomNode & element, KReportDesigner * d, QGraphicsScene * s)
-        : KReportItemCheckBox(element), KReportDesignerItemRectBase(d)
+        : KReportItemCheckBox(element), KReportDesignerItemRectBase(d, this)
 {
     init(s, d);
-    setSceneRect(m_pos.toScene(), m_size.toScene());
+    setSceneRect(KReportItemBase::scenePosition(item()->position()), KReportItemBase::sceneSize(item()->size()));
 }
 
 KReportDesignerItemCheckBox* KReportDesignerItemCheckBox::clone()
@@ -94,19 +92,20 @@ void KReportDesignerItemCheckBox::paint(QPainter* painter, const QStyleOptionGra
         painter->setPen(QPen(m_lineColor->value().value<QColor>(), m_lineWeight->value().toInt(), (Qt::PenStyle)m_lineStyle->value().toInt()));
     }
 
-    qreal ox = m_size.toScene().width() / 5;
-    qreal oy = m_size.toScene().height() / 5;
+    QSizeF sceneSize = this->sceneSize(size());
+    qreal ox = sceneSize.width() / 5;
+    qreal oy = sceneSize.height() / 5;
 
     //Checkbox Style
     if (m_checkStyle->value().toString() == QLatin1String("Cross")) {
-        painter->drawRoundedRect(QGraphicsRectItem::rect(), m_size.toScene().width() / 10 , m_size.toScene().height() / 10);
+        painter->drawRoundedRect(QGraphicsRectItem::rect(), sceneSize.width() / 10 , sceneSize.height() / 10);
 
         QPen lp;
         lp.setColor(m_foregroundColor->value().value<QColor>());
         lp.setWidth(ox > oy ? oy : ox);
         painter->setPen(lp);
-        painter->drawLine(ox, oy, m_size.toScene().width() - ox, m_size.toScene().height() - oy);
-        painter->drawLine(ox, m_size.toScene().height() - oy, m_size.toScene().width() - ox, oy);
+        painter->drawLine(ox, oy, sceneSize.width() - ox, sceneSize.height() - oy);
+        painter->drawLine(ox, sceneSize.height() - oy, sceneSize.width() - ox, oy);
     } else if (m_checkStyle->value().toString() == QLatin1String("Dot")) {
         //Radio Style
         painter->drawEllipse(QGraphicsRectItem::rect());
@@ -114,17 +113,17 @@ void KReportDesignerItemCheckBox::paint(QPainter* painter, const QStyleOptionGra
         QBrush lb(m_foregroundColor->value().value<QColor>());
         painter->setBrush(lb);
         painter->setPen(Qt::NoPen);
-        painter->drawEllipse(rect().center(), m_size.toScene().width() / 2 - ox, m_size.toScene().height() / 2 - oy);
+        painter->drawEllipse(rect().center(), sceneSize.width() / 2 - ox, sceneSize.height() / 2 - oy);
     } else {
         //Tickbox Style
-        painter->drawRoundedRect(QGraphicsRectItem::rect(), m_size.toScene().width() / 10 , m_size.toScene().height() / 10);
+        painter->drawRoundedRect(QGraphicsRectItem::rect(), sceneSize.width() / 10 , sceneSize.height() / 10);
 
         QPen lp;
         lp.setColor(m_foregroundColor->value().value<QColor>());
         lp.setWidth(ox > oy ? oy : ox);
         painter->setPen(lp);
-        painter->drawLine(ox, m_size.toScene().height() / 2, m_size.toScene().width() / 2, m_size.toScene().height() - oy);
-        painter->drawLine(m_size.toScene().width() / 2, m_size.toScene().height() - oy, m_size.toScene().width() - ox, oy);
+        painter->drawLine(ox, sceneSize.height() / 2, sceneSize.width() / 2, sceneSize.height() - oy);
+        painter->drawLine(sceneSize.width() / 2, sceneSize.height() - oy, sceneSize.width() - ox, oy);
 
     }
 
@@ -145,14 +144,14 @@ void KReportDesignerItemCheckBox::buildXML(QDomDocument *doc, QDomElement *paren
     QDomElement entity = doc->createElement(QLatin1String("report:") + typeName());
 
     //properties
-    addPropertyAsAttribute(&entity, m_name);
+    addPropertyAsAttribute(&entity, nameProperty());
     addPropertyAsAttribute(&entity, m_controlSource);
     entity.setAttribute(QLatin1String("fo:foreground-color"), m_foregroundColor->value().toString());
     addPropertyAsAttribute(&entity, m_checkStyle);
     addPropertyAsAttribute(&entity, m_staticValue);
 
     // bounding rect
-    buildXMLRect(doc, &entity, &m_pos, &m_size);
+    buildXMLRect(doc, &entity, this);
 
     //Line Style
     buildXMLLineStyle(doc, &entity, lineStyle());
@@ -166,19 +165,19 @@ void KReportDesignerItemCheckBox::slotPropertyChanged(KPropertySet &s, KProperty
 
     if (p.name() == "name") {
         //For some reason p.oldValue returns an empty string
-        if (!m_reportDesigner->isEntityNameUnique(p.value().toString(), this)) {
-            p.setValue(m_oldName);
+        if (!designer()->isEntityNameUnique(p.value().toString(), this)) {
+            p.setValue(oldName());
         } else {
-            m_oldName = p.value().toString();
+            setOldName(p.value().toString());
         }
     }
 
     KReportDesignerItemRectBase::propertyChanged(s, p);
-    if (m_reportDesigner) m_reportDesigner->setModified(true);
+    if (designer()) designer()->setModified(true);
 }
 
 void KReportDesignerItemCheckBox::mousePressEvent(QGraphicsSceneMouseEvent * event)
 {
-    m_controlSource->setListData(m_reportDesigner->fieldKeys(), m_reportDesigner->fieldNames());
+    m_controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
     KReportDesignerItemRectBase::mousePressEvent(event);
 }

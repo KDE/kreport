@@ -39,7 +39,7 @@ const int KREPORT_ITEM_RECT_DEFAULT_HEIGHT = 100;
 class KREPORT_EXPORT KReportDesignerItemRectBase : public QGraphicsRectItem, public KReportDesignerItemBase
 {
 public:
-    explicit KReportDesignerItemRectBase(KReportDesigner*);
+    explicit KReportDesignerItemRectBase(KReportDesigner *r, KReportItemBase *b);
 
     virtual ~KReportDesignerItemRectBase();
 
@@ -49,8 +49,6 @@ public:
     virtual void exitInlineEditingMode();
 
 protected:
-    void init(KReportPosition*, KReportSize*, KPropertySet*, KReportDesigner *r);
-
     int m_dpiX;
     int m_dpiY;
     qreal m_userHeight;
@@ -81,12 +79,9 @@ protected:
 private:
     int grabHandle(QPointF);
     QPointF properPressPoint(const KReportDesigner &d) const;
-    int m_grabAction;
 
-    KReportPosition* m_ppos;
-    KReportSize* m_psize;
-    KPropertySet* m_pset;
-
+    class Private;
+    Private * const d;
 };
 
 #endif

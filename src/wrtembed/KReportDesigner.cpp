@@ -1021,6 +1021,7 @@ void KReportDesigner::sectionMouseReleaseEvent(KReportDesignerSectionView * v, Q
                 item->setSelected(true);
                 KReportItemBase* baseReportItem = dynamic_cast<KReportItemBase*>(item);
                 if (baseReportItem) {
+                    baseReportItem->setUnit(pageUnit());
                     KPropertySet *set = baseReportItem->propertySet();
                     KReportDesigner::addMetaProperties(set, classString, iconName);
                     changeSet(set);
@@ -1173,9 +1174,9 @@ void KReportDesigner::slotEditPaste(QGraphicsScene * canvas)
             KReportItemBase *new_obj = dynamic_cast<KReportItemBase*>(ent);
             new_obj->setEntityName(suggestEntityName(type));
             if (activeItem) {
-                new_obj->position().setScenePos(QPointF(activeItem->x() + 10, activeItem->y() + 10));
+                new_obj->setPosition(KReportItemBase::positionFromScene(QPointF(activeItem->x() + 10, activeItem->y() + 10)));
             } else {
-                new_obj->position().setScenePos(QPointF(0, 0));
+                new_obj->setPosition(KReportItemBase::positionFromScene(QPointF(0, 0)));
             }
             changeSet(new_obj->propertySet());
             QGraphicsItem *pasted_ent = dynamic_cast<QGraphicsItem*>(ent);

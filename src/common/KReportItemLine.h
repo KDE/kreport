@@ -31,7 +31,7 @@ class Line;
 
 /**
 */
-class KREPORT_EXPORT  KReportItemLine : public KReportItemBase
+class  KReportItemLine : public KReportItemBase
 {
 Q_OBJECT
 public:

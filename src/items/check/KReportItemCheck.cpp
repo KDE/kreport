@@ -39,14 +39,14 @@ KReportItemCheckBox::KReportItemCheckBox(const QDomNode &element)
     QString n;
     QDomNode node;
 
-    m_name->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
     m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
-    Z = element.toElement().attribute(QLatin1String("report:z-index")).toDouble();
+    setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
     m_foregroundColor->setValue(QColor(element.toElement().attribute(QLatin1String("fo:foreground-color"))));
     m_checkStyle->setValue(element.toElement().attribute(QLatin1String("report:check-style")));
     m_staticValue->setValue(QVariant(element.toElement().attribute(QLatin1String("report:value"))).toBool());
 
-    parseReportRect(element.toElement(), &m_pos, &m_size);
+    parseReportRect(element.toElement());
 
     for (int i = 0; i < nl.count(); i++) {
         node = nl.item(i);
@@ -68,13 +68,10 @@ KReportItemCheckBox::KReportItemCheckBox(const QDomNode &element)
 
 KReportItemCheckBox::~KReportItemCheckBox()
 {
-    delete m_set;
 }
 
 void KReportItemCheckBox::createProperties()
 {
-    m_set = new KPropertySet;
-
     QStringList keys, strings;
 
     keys << QLatin1String("Cross") << QLatin1String("Tick") << QLatin1String("Dot");
@@ -91,14 +88,13 @@ void KReportItemCheckBox::createProperties()
     m_lineStyle = new KProperty("line-style", QPen(Qt::SolidLine), tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
     m_staticValue = new KProperty("value", QVariant(false), tr("Value"), tr("Value used if not bound to a field"));
 
-    addDefaultProperties();
-    m_set->addProperty(m_controlSource);
-    m_set->addProperty(m_staticValue);
-    m_set->addProperty(m_checkStyle);
-    m_set->addProperty(m_foregroundColor);
-    m_set->addProperty(m_lineWeight);
-    m_set->addProperty(m_lineColor);
-    m_set->addProperty(m_lineStyle);
+    propertySet()->addProperty(m_controlSource);
+    propertySet()->addProperty(m_staticValue);
+    propertySet()->addProperty(m_checkStyle);
+    propertySet()->addProperty(m_foregroundColor);
+    propertySet()->addProperty(m_lineWeight);
+    propertySet()->addProperty(m_lineColor);
+    propertySet()->addProperty(m_lineStyle);
 }
 
 KReportLineStyle KReportItemCheckBox::lineStyle()
@@ -126,8 +122,8 @@ int KReportItemCheckBox::renderSimpleData(OROPage *page, OROSection *section, co
 {
     OROCheck *chk = new OROCheck();
 
-    chk->setPosition(m_pos.toScene() + offset);
-    chk->setSize(m_size.toScene());
+    chk->setPosition(scenePosition(position()) + offset);
+    chk->setSize(sceneSize(size()));
 
     chk->setLineStyle(lineStyle());
     chk->setForegroundColor(m_foregroundColor->value().value<QColor>());
@@ -168,7 +164,7 @@ int KReportItemCheckBox::renderSimpleData(OROPage *page, OROSection *section, co
 
     if (section) {
         OROCheck *chk2 = dynamic_cast<OROCheck*>(chk->clone());
-        chk2->setPosition(m_pos.toPoint());
+        chk2->setPosition(scenePosition(position()));
         section->addPrimitive(chk2);
     }
 

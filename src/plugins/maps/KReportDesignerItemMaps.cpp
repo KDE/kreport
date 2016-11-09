@@ -34,29 +34,27 @@ void KReportDesignerItemMaps::init(QGraphicsScene *scene, KReportDesigner *d)
     if (scene)
         scene->addItem(this);
 
-    KReportDesignerItemRectBase::init(&m_pos, &m_size, m_set, d);
-
-    connect(m_set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
+    connect(propertySet(), SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
-    m_controlSource->setListData(m_reportDesigner->fieldKeys(), m_reportDesigner->fieldNames());
-    setZValue(Z);
+    m_controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
+    setZValue(z());
 }
 
 KReportDesignerItemMaps::KReportDesignerItemMaps(KReportDesigner * rw, QGraphicsScene* scene, const QPointF &pos)
-        : KReportDesignerItemRectBase(rw)
+        : KReportDesignerItemRectBase(rw, this)
 {
     Q_UNUSED(pos);
     init(scene, rw);
     setSceneRect(properRect(*rw, KREPORT_ITEM_RECT_DEFAULT_WIDTH, KREPORT_ITEM_RECT_DEFAULT_WIDTH));
-    m_name->setValue(m_reportDesigner->suggestEntityName(typeName()));
+    nameProperty()->setValue(designer()->suggestEntityName(typeName()));
 }
 
 KReportDesignerItemMaps::KReportDesignerItemMaps(const QDomNode &element, KReportDesigner * rw, QGraphicsScene* scene)
-        : KReportItemMaps(element), KReportDesignerItemRectBase(rw)
+        : KReportItemMaps(element), KReportDesignerItemRectBase(rw, this)
 {
     init(scene, rw);
-    setSceneRect(m_pos.toScene(), m_size.toScene());
+    setSceneRect(KReportItemBase::scenePosition(item()->position()), KReportItemBase::sceneSize(item()->size()));
 }
 
 KReportDesignerItemMaps* KReportDesignerItemMaps::clone()
@@ -99,15 +97,15 @@ void KReportDesignerItemMaps::buildXML(QDomDocument *doc, QDomElement *parent)
     QDomElement entity = doc->createElement(QLatin1String("report:") + typeName());
 
     // properties
-    addPropertyAsAttribute(&entity, m_name);
+    addPropertyAsAttribute(&entity, nameProperty());
     addPropertyAsAttribute(&entity, m_controlSource);
     addPropertyAsAttribute(&entity, m_latitudeProperty);
     addPropertyAsAttribute(&entity, m_longitudeProperty);
     addPropertyAsAttribute(&entity, m_zoomProperty);
     addPropertyAsAttribute(&entity, m_themeProperty);
     //addPropertyAsAttribute(&entity, m_resizeMode);
-    entity.setAttribute(QLatin1String("report:z-index"), zValue());
-    buildXMLRect(doc, &entity, &m_pos, &m_size);
+    entity.setAttribute(QLatin1String("report:z-index"), z());
+    buildXMLRect(doc, &entity, this);
 
     parent->appendChild(entity);
 }
@@ -117,19 +115,19 @@ void KReportDesignerItemMaps::slotPropertyChanged(KPropertySet &s, KProperty &p)
     //kreportpluginDebug() << p.name() << ":" << p.value();
     if (p.name().toLower() == "name") {
         //For some reason p.oldValue returns an empty string
-        if (!m_reportDesigner->isEntityNameUnique(p.value().toString(), this)) {
-            p.setValue(m_oldName);
+        if (!designer()->isEntityNameUnique(p.value().toString(), this)) {
+            p.setValue(oldName());
         } else {
-            m_oldName = p.value().toString();
+            setOldName(p.value().toString());
         }
     }
 
     KReportDesignerItemRectBase::propertyChanged(s, p);
-    if (m_reportDesigner) m_reportDesigner->setModified(true);
+    if (designer()) designer()->setModified(true);
 }
 
 void KReportDesignerItemMaps::mousePressEvent(QGraphicsSceneMouseEvent * event)
 {
-    m_controlSource->setListData(m_reportDesigner->fieldKeys(), m_reportDesigner->fieldNames());
+    m_controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
     KReportDesignerItemRectBase::mousePressEvent(event);
 }

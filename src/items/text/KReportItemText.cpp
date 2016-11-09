@@ -39,15 +39,15 @@ KReportItemText::KReportItemText(const QDomNode & element) : m_bottomPadding(0.0
     QDomNode node;
 
     createProperties();
-    m_name->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
     m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
     m_itemValue->setValue(element.toElement().attribute(QLatin1String("report:value")));
-    Z = element.toElement().attribute(QLatin1String("report:z-index")).toDouble();
+    setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
     m_horizontalAlignment->setValue(element.toElement().attribute(QLatin1String("report:horizontal-align")));
     m_verticalAlignment->setValue(element.toElement().attribute(QLatin1String("report:vertical-align")));
     m_bottomPadding = element.toElement().attribute(QLatin1String("report:bottom-padding")).toDouble();
 
-    parseReportRect(element.toElement(), &m_pos, &m_size);
+    parseReportRect(element.toElement());
 
     for (int i = 0; i < nl.count(); i++) {
         node = nl.item(i);
@@ -78,7 +78,6 @@ KReportItemText::KReportItemText(const QDomNode & element) : m_bottomPadding(0.0
 
 KReportItemText::~KReportItemText()
 {
-    delete m_set;
 }
 
 Qt::Alignment KReportItemText::textFlags() const
@@ -106,8 +105,6 @@ Qt::Alignment KReportItemText::textFlags() const
 
 void KReportItemText::createProperties()
 {
-    m_set = new KPropertySet;
-
     //connect ( set, SIGNAL ( propertyChanged ( KPropertySet &, KProperty & ) ), this, SLOT ( propertyChanged ( KPropertySet &, KProperty & ) ) );
 
     QStringList keys, strings;
@@ -140,18 +137,17 @@ void KReportItemText::createProperties()
     m_backgroundOpacity->setOption("min", 0);
     m_backgroundOpacity->setOption("unit", QLatin1String("%"));
 
-    addDefaultProperties();
-    m_set->addProperty(m_controlSource);
-    m_set->addProperty(m_itemValue);
-    m_set->addProperty(m_horizontalAlignment);
-    m_set->addProperty(m_verticalAlignment);
-    m_set->addProperty(m_font);
-    m_set->addProperty(m_backgroundColor);
-    m_set->addProperty(m_foregroundColor);
-    m_set->addProperty(m_backgroundOpacity);
-    m_set->addProperty(m_lineWeight);
-    m_set->addProperty(m_lineColor);
-    m_set->addProperty(m_lineStyle);
+    propertySet()->addProperty(m_controlSource);
+    propertySet()->addProperty(m_itemValue);
+    propertySet()->addProperty(m_horizontalAlignment);
+    propertySet()->addProperty(m_verticalAlignment);
+    propertySet()->addProperty(m_font);
+    propertySet()->addProperty(m_backgroundColor);
+    propertySet()->addProperty(m_foregroundColor);
+    propertySet()->addProperty(m_backgroundOpacity);
+    propertySet()->addProperty(m_lineWeight);
+    propertySet()->addProperty(m_lineColor);
+    propertySet()->addProperty(m_lineStyle);
 
 }
 
@@ -216,12 +212,12 @@ int KReportItemText::renderSimpleData(OROPage *page, OROSection *section, const 
     } else {
         qstrValue = m_itemValue->value().toString();
     }
-
-    QPointF pos = m_pos.toScene();
-    QSizeF size = m_size.toScene();
+    
+    QPointF pos = scenePosition(position());
+    QSizeF siz = sceneSize(size());
     pos += offset;
 
-    QRectF trf(pos, size);
+    QRectF trf(pos, siz);
     qreal intStretch = trf.top() - offset.y();
 
     if (qstrValue.length()) {
@@ -234,7 +230,7 @@ int KReportItemText::renderSimpleData(OROPage *page, OROSection *section, const 
         QFontMetrics fm(font(), &prnt);
 
         // int   intRectWidth    = (int)(trf.width() * prnt.resolution()) - 10;
-        int     intRectWidth    = (int)((m_size.toPoint().width() / 72) * prnt.resolution());
+        int     intRectWidth    = (int)((size().width() / 72) * prnt.resolution());
         int     intLineCounter  = 0;
         qreal   intBaseTop      = trf.top();
         qreal   intRectHeight   = trf.height();
@@ -274,7 +270,7 @@ int KReportItemText::renderSimpleData(OROPage *page, OROSection *section, const 
 
                     if (section) {
                         OROTextBox *tb2 = dynamic_cast<OROTextBox*>(tb->clone());
-                        tb2->setPosition(m_pos.toPoint());
+                        tb2->setPosition(scenePosition(position()));
                         section->addPrimitive(tb2);
                     }
 
