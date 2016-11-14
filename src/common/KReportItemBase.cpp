@@ -178,7 +178,7 @@ QSizeF KReportItemBase::size() const
 
 const KPropertySet * KReportItemBase::propertySet() const
 {
-    return propertySet();
+    return d->set;
 }
 
 QPointF KReportItemBase::scenePosition(const QPointF &pos)
