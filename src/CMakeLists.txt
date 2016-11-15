@@ -15,7 +15,6 @@ set(kreport_LIB_SRCS
     common/KReportAsyncItemBase.cpp
     common/KReportSectionData.cpp
     common/KReportLabelSizeInfo.cpp
-    common/KReportPageOptions.cpp
     common/KReportDocument.cpp
     common/KReportDetailSectionData.cpp
     common/KReportPluginInterface.cpp
@@ -264,7 +263,6 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
         KReportPosition
         KReportDocument
         KReportSectionData
-        KReportPageOptions
         KReportRenderObjects
         KReportAsyncItemBase
 )

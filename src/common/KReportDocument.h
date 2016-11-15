@@ -16,13 +16,14 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef KREPORTSCHEMADATA_H
-#define KREPORTSCHEMADATA_H
+#ifndef KREPORTDOCUMENT_H
+#define KREPORTDOCUMENT_H
 
 #include "config-kreport.h"
 #include "kreport_export.h"
 #include "KReportSectionData.h"
-#include "KReportPageOptions.h"
+
+#include <QPageLayout>
 
 class KReportDetailSectionData;
 
@@ -88,8 +89,12 @@ public:
     QString name() const;
 
     QString title() const;
-    KReportPageOptions pageOptions() const;
 
+    QPageLayout pageLayout() const;
+    
+    QString pageSize();
+    void setPageSize(const QString &size);
+    
 protected:
 
 
@@ -119,6 +124,11 @@ private:
     friend class KReportScriptHandler;
     friend class Scripting::Report;
 #endif
+    
+    //! TODO add support for labels
+    QString labelType() const;
+    void setLabelType(const QString &label);
+    
     class Private;
     Private * const d;
 };

@@ -76,9 +76,9 @@ void ORODocument::addSection(OROSection* s)
     m_sections.append(s);
 }
 
-void ORODocument::setPageOptions(const KReportPageOptions & options)
+void ORODocument::setPageLayout(const QPageLayout & options)
 {
-    m_pageOptions = options;
+    m_pageLayout = options;
 }
 
 void ORODocument::notifyChange(int pageNo)

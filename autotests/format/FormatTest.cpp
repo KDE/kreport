@@ -25,7 +25,6 @@
 #include "KReportDesigner.h"
 #include "KReportLabelElement.h"
 #include "KReportDocument.h"
-#include "KReportPageOptions.h"
 #include "KReportDesignerSectionDetail.h"
 #include "KReportSection.h"
 #include "KReportPosition.h"

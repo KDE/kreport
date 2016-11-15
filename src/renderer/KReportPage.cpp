@@ -20,6 +20,7 @@
 #include "KReportRendererBase.h"
 #include "KReportUnit.h"
 #include "KReportRenderObjects.h"
+#include "KReportDpi.h"
 #include "kreport_debug.h"
 
 #include <QWidget>
@@ -60,18 +61,23 @@ KReportPage::KReportPage(QWidget *parent, ORODocument *document)
     int pageWidth;
     int pageHeight;
 
-    QString pageSize = d->reportDocument->pageOptions().getPageSize();
+    QString pageSize = d->reportDocument->pageLayout().pageSize().name();
 
+    pageWidth = d->reportDocument->pageLayout().fullRectPixels(KReportDpi::dpiX()).width();
+    pageHeight = d->reportDocument->pageLayout().fullRectPixels(KReportDpi::dpiX()).height();
+
+//TODO remove after check    
+#if 0    
     if (pageSize == QLatin1String("Custom")) {
         // if this is custom sized sheet of paper we will just use those values
-        pageWidth = (int)(d->reportDocument->pageOptions().getCustomWidth());
-        pageHeight = (int)(d->reportDocument->pageOptions().getCustomHeight());
+
     } else {
         // lookup the correct size information for the specified size paper
         pageWidth = d->reportDocument->pageOptions().pixelSize().width();
         pageHeight = d->reportDocument->pageOptions().pixelSize().height();
     }
-    
+#endif
+
     setRect(0, 0, pageWidth, pageHeight);
     //kreportDebug() << "PAGE IS " << pageWidth << "x" << pageHeight;
     d->pixmap = QPixmap(pageWidth, pageHeight);

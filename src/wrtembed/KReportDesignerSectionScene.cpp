@@ -17,7 +17,6 @@
  */
 
 #include "KReportDesignerSectionScene.h"
-#include "KReportPageOptions.h"
 #include "KReportDesignerItemRectBase.h"
 #include "KReportDesigner.h"
 #include "KReportLabelSizeInfo.h"

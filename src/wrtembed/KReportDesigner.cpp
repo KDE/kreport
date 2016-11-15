@@ -865,10 +865,10 @@ QSize KReportDesigner::sizeHint() const
 
 int KReportDesigner::pageWidthPx() const
 {
-    KReportPageOptions po;
-    po.setPageSize(d->set->property("page-size").value().toString());
-    po.setPortrait(d->set->property("print-orientation").value().toString() == QLatin1String("portrait"));
-    QSizeF pageSizePx = po.pixelSize();
+    QPageLayout layout;
+    layout.setPageSize(QPageSize(KReportPageSize::pageSize(d->set->property("page-size").value().toString())));
+    layout.setOrientation(d->set->property("print-orientation").value().toString() == QLatin1String("portrait") ? QPageLayout::Portrait : QPageLayout::Landscape);
+    QSize pageSizePx = layout.fullRectPixels(KReportDpi::dpiX()).size();
 
     int width = pageSizePx.width();
     width = width - POINT_TO_INCH(d->set->property("margin-left").value().toDouble()) * KReportDpi::dpiX();

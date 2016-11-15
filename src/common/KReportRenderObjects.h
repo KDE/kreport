@@ -27,8 +27,8 @@
 #include <QPen>
 #include <QBrush>
 #include <QPicture>
+#include <QPageLayout>
 
-#include "KReportPageOptions.h"
 #include "KReportData.h"
 #include "KReportItemBase.h"
 #include "KReportSectionData.h"
@@ -74,9 +74,9 @@ public:
     OROSection* section(int);
     void addSection(OROSection*);
 
-    void setPageOptions(const KReportPageOptions &);
-    KReportPageOptions pageOptions() const {
-        return m_pageOptions;
+    void setPageLayout(const QPageLayout &);
+    QPageLayout pageLayout() const {
+        return m_pageLayout;
     };
 
     void notifyChange(int pageNo);
@@ -85,7 +85,7 @@ protected:
     QString m_title;
     QList<OROPage*> m_pages;
     QList<OROSection*> m_sections;
-    KReportPageOptions m_pageOptions;
+    QPageLayout m_pageLayout;
 
 Q_SIGNALS:
     void updated(int pageNo);

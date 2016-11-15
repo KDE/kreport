@@ -339,7 +339,7 @@ qreal KReportPreRendererPrivate::renderSection(const KReportSectionData & sectio
     ORORect* bg = new ORORect();
     bg->setPen(QPen(Qt::NoPen));
     bg->setBrush(sectionData.backgroundColor());
-    qreal w = m_page->document()->pageOptions().pixelSize().width() - m_page->document()->pageOptions().getMarginRight() - m_leftMargin;
+    qreal w = m_page->document()->pageLayout().fullRectPixels(KReportDpi::dpiX()).width() - m_page->document()->pageLayout().marginsPixels(KReportDpi::dpiX()).right() - m_leftMargin;
 
     bg->setRect(QRectF(m_leftMargin, m_yOffset, w, sectionHeight));
     m_page->addPrimitive(bg, true);
@@ -413,13 +413,12 @@ bool KReportPreRendererPrivate::generateDocument()
 
     // Do this check now so we don't have to undo a lot of work later if it fails
     KReportLabelSizeInfo label;
-    if (m_reportDocument->pageOptions().getPageSize() == QLatin1String("Labels")) {
-        label = KReportLabelSizeInfo::find(m_reportDocument->pageOptions().getLabelType());
+    if (m_reportDocument->pageSize() == QLatin1String("Labels")) {
+        label = KReportLabelSizeInfo::find(m_reportDocument->labelType());
         if (label.isNull()) {
             return false;
         }
     }
-
     //kreportDebug() << "Creating Document";
     m_document = new ORODocument(m_reportDocument->title());
 
@@ -428,7 +427,7 @@ bool KReportPreRendererPrivate::generateDocument()
 
     //kreportDebug() << "Calculating Margins";
     if (!label.isNull()) {
-        if (m_reportDocument->pageOptions().isPortrait()) {
+        if (m_reportDocument->pageLayout().orientation() == QPageLayout::Portrait) {
             m_topMargin = (label.startY() / 100.0);
             m_bottomMargin = 0;
             m_rightMargin = 0;
@@ -440,34 +439,35 @@ bool KReportPreRendererPrivate::generateDocument()
             m_leftMargin = (label.startY() / 100.0);
         }
     } else {
-        m_topMargin    = m_reportDocument->pageOptions().getMarginTop();
-        m_bottomMargin = m_reportDocument->pageOptions().getMarginBottom();
-        m_rightMargin  = m_reportDocument->pageOptions().getMarginRight();
-        m_leftMargin   = m_reportDocument->pageOptions().getMarginLeft();
+
+        m_topMargin    = m_reportDocument->pageLayout().marginsPoints().top();
+        m_bottomMargin = m_reportDocument->pageLayout().marginsPoints().bottom();
+        m_rightMargin  = m_reportDocument->pageLayout().marginsPoints().right();
+        m_leftMargin   = m_reportDocument->pageLayout().marginsPoints().left();
         //kreportDebug() << "Margins:" << m_topMargin << m_bottomMargin << m_rightMargin << m_leftMargin;
-    }
+     }
 
     //kreportDebug() << "Calculating Page Size";
-    KReportPageOptions rpo(m_reportDocument->pageOptions());
+    QPageLayout layout =  m_reportDocument->pageLayout();
     // This should reflect the information of the report page size
-    if (m_reportDocument->pageOptions().getPageSize() == QLatin1String("Custom")) {
-        m_maxWidth = m_reportDocument->pageOptions().getCustomWidth();
-        m_maxHeight = m_reportDocument->pageOptions().getCustomHeight();
+    if (m_reportDocument->pageSize() == QLatin1String("Custom")) {
+        m_maxWidth = m_reportDocument->pageLayout().fullRectPoints().width();
+        m_maxHeight = m_reportDocument->pageLayout().fullRectPoints().height();
     } else {
         if (!label.isNull()) {
             m_maxWidth = label.width();
             m_maxHeight = label.height();
-            rpo.setPageSize(label.paper());
+            m_reportDocument->pageLayout().setPageSize(QPageSize(KReportPageSize::pageSize(label.paper())));
         } else {
             // lookup the correct size information for the specified size paper
-            QSizeF pageSizePx = m_reportDocument->pageOptions().pixelSize();
+            QSizeF pageSizePx = m_reportDocument->pageLayout().fullRectPixels(KReportDpi::dpiX()).size();
 
             m_maxWidth = pageSizePx.width();
             m_maxHeight = pageSizePx.height();
         }
     }
 
-    if (!m_reportDocument->pageOptions().isPortrait()) {
+    if (m_reportDocument->pageLayout().orientation() == QPageLayout::Landscape) {
         qreal tmp = m_maxWidth;
         m_maxWidth = m_maxHeight;
         m_maxHeight = tmp;
@@ -475,7 +475,7 @@ bool KReportPreRendererPrivate::generateDocument()
 
     //kreportDebug() << "Page Size:" << m_maxWidth << m_maxHeight;
 
-    m_document->setPageOptions(rpo);
+    m_document->setPageLayout(m_reportDocument->pageLayout());
     m_kodata->setSorting(m_reportDocument->m_detailSection->m_sortedFields);
     if (!m_kodata->open()) {
         return false;
@@ -519,7 +519,7 @@ bool KReportPreRendererPrivate::generateDocument()
         qreal tmp;
 
         // flip the value around if we are printing landscape
-        if (!m_reportDocument->pageOptions().isPortrait()) {
+        if (!m_reportDocument->pageLayout().orientation() == QPageLayout::Portrait) {
             w = (label.height() / 100.0);
             wg = (label.yGap() / 100.0);
             h = (label.width() / 100.0);
@@ -618,12 +618,10 @@ bool KReportPreRendererPrivate::generateDocument()
 
 //===========================KReportPreRenderer===============================
 
-KReportPreRenderer::KReportPreRenderer(const QDomElement & document)
-    : d(new KReportPreRendererPrivate(this))
+KReportPreRenderer::KReportPreRenderer(const QDomElement &document) : d(new KReportPreRendererPrivate(this))
 {
     setDocument(document);
     connect(d, &KReportPreRendererPrivate::finishedAllASyncItems, this, &KReportPreRenderer::finishedAllASyncItems);
-
 }
 
 KReportPreRenderer::~KReportPreRenderer()

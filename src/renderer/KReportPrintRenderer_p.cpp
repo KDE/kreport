@@ -44,13 +44,13 @@ bool PrintRenderer::setupPrinter( ORODocument * document, QPrinter * pPrinter)
     pPrinter->setCreator(QLatin1String("KReport Print Renderer"));
     pPrinter->setDocName(document->title());
     pPrinter->setFullPage(true);
-    pPrinter->setOrientation((document->pageOptions().isPortrait() ? QPrinter::Portrait : QPrinter::Landscape));
+    pPrinter->setOrientation((document->pageLayout().orientation() == QPageLayout::Portrait ? QPrinter::Portrait : QPrinter::Landscape));
     pPrinter->setPageOrder(QPrinter::FirstPageFirst);
 
-    if (document->pageOptions().getPageSize().isEmpty()) {
+    if (!document->pageLayout().pageSize().isValid()) {
         pPrinter->setPageSize(QPrinter::Custom);
     } else {  
-        pPrinter->setPageSize(QPageSize(KReportPageSize::pageSize(document->pageOptions().getPageSize())));
+        pPrinter->setPageSize(QPageSize(document->pageLayout().pageSize()));
     }        
 
     return true;
