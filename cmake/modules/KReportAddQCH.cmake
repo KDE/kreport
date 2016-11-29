@@ -313,7 +313,6 @@ function(kreport_add_qch target_name)
                 ${qt_docs_dir}
         )
 
-        # TODO: if not found, try qmake -query QT_INSTALL_DOCS. or perhaps try that first
         if(Qt5Core_FOUND AND _qtcoreTagsPath)
             string(REPLACE "." "" _version ${Qt5Core_VERSION})
             # TODO: properly find each tag file
