@@ -18,6 +18,9 @@ include(KDECMakeSettings)
 
 include(KReportMacros)
 include(KReportAddIconsRccFile)
+include(KReportAddQCH)
+
+simple_option(BUILD_QCH "Build API documentation in QCH format" OFF)
 
 # Dependencies
 set(REQUIRED_QT_VERSION "5.3.0")

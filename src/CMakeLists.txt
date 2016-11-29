@@ -329,6 +329,41 @@ install(
     COMPONENT Devel
 )
 
+if(BUILD_QCH)
+    kreport_add_qch(
+        KReport_QCH
+        OUTPUT_BASENAME ${KREPORT_BASE_NAME}
+        VERSION ${PROJECT_VERSION}
+        ORG_DOMAIN org.kde
+        SOURCES
+            Mainpage.dox
+            ${kreport_HEADERS}
+            ${kreport_HEADERS_FROM_BUILDDIR}
+        LINK_QCHS
+            Qt5Core_QCH
+            Qt5Xml_QCH
+            Qt5Gui_QCH
+            Qt5Widgets_QCH
+            Qt5PrintSupport_QCH
+            KF5CoreAddons_QCH
+            KPropertyCore_QCH
+            KPropertyWidgets_QCH
+        BLANK_MACROS
+            KREPORT_EXPORT
+            KREPORT_DEPRECATED
+        TAGFILE_INSTALL_DESTINATION ${KREPORT_QTQCH_FULL_INSTALL_DIR}
+        QCH_INSTALL_DESTINATION ${KREPORT_QTQCH_FULL_INSTALL_DIR}
+    )
+    set(kreport_qch_targets KReport_QCH)
+endif()
+
+kreport_install_qch_export(
+    TARGETS ${kreport_qch_targets}
+    FILE KReportQCHTargets.cmake
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+    COMPONENT Devel
+)
+
 add_subdirectory(plugins)
 add_subdirectory(pics)
 
