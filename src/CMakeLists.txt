@@ -332,9 +332,10 @@ install(
 if(BUILD_QCH)
     kreport_add_qch(
         KReport_QCH
-        OUTPUT_BASENAME ${KREPORT_BASE_NAME}
+        NAME KReport
+        BASE_NAME ${KREPORT_BASE_NAME}
         VERSION ${PROJECT_VERSION}
-        ORG_DOMAIN org.kde
+        NAMESPACE org.kde.${KREPORT_BASE_NAME}
         SOURCES
             Mainpage.dox
             ${kreport_HEADERS}
