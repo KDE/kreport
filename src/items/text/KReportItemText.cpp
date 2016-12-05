@@ -265,7 +265,7 @@ int KReportItemText::renderSimpleData(OROPage *page, OROSection *section, const 
                     tb->setLineStyle(lineStyle());
 
                     if (page) {
-                        page->addPrimitive(tb);
+                        page->insertPrimitive(tb);
                     }
 
                     if (section) {
@@ -298,7 +298,7 @@ int KReportItemText::renderSimpleData(OROPage *page, OROSection *section, const 
                 tb->setTextStyle(textStyle());
                 tb->setLineStyle(lineStyle());
                 if (page) {
-                    page->addPrimitive(tb);
+                    page->insertPrimitive(tb);
                 } else {
                     delete tb;
                 }

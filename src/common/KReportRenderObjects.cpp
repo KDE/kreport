@@ -19,66 +19,104 @@
 
 #include "kreport_debug.h"
 
+// Helper functions
+static bool xLessThan(OROPrimitive* s1, OROPrimitive* s2)
+{
+    return s1->position().x() < s2->position().x();
+}
+
 //
 // ORODocument
 //
-ORODocument::ORODocument(const QString & pTitle)
-        : m_title(pTitle)
+
+class Q_DECL_HIDDEN ORODocument::Private
 {
+public:
+    Private();
+    ~Private();
+    QString title;
+    QList<OROPage*> pages;
+    QList<OROSection*> sections;
+    QPageLayout pageLayout;
+};
+
+ORODocument::Private::Private()
+{
+    
+}
+
+ORODocument::Private::~Private()
+{
+    qDeleteAll(pages);
+    qDeleteAll(sections);
+}
+
+
+ORODocument::ORODocument(const QString& title) : d(new Private())
+{
+    d->title = title;
 }
 
 ORODocument::~ORODocument()
 {
-    qDeleteAll(m_pages);
-    m_pages.clear();
-
-    qDeleteAll(m_sections);
-    m_sections.clear();
+    delete d;
 }
 
-void ORODocument::setTitle(const QString & pTitle)
+void ORODocument::setTitle(const QString &title)
 {
-    m_title = pTitle;
+    d->title = title;
 }
 
-OROPage* ORODocument::page(int pnum)
+OROPage* ORODocument::page(int index)
 {
-    if (pnum >= 0 && pnum < m_pages.count()) {
-        return m_pages.at(pnum);
-    }
-    return Q_NULLPTR;
+    return d->pages.value(index);
+}
+
+const OROPage * ORODocument::page(int index) const
+{
+    return d->pages.value(index);
 }
 
 void ORODocument::addPage(OROPage* p)
 {
-    if (p == 0)
+    if (p == 0) {
         return;
+    }
 
-    // check that this page is not already in another document
+    if (p->document() != 0 && p->document() != this) {
+        return;
+    }
 
-    p->m_document = this;
-    m_pages.append(p);
+    p->setDocument(this);
+    d->pages.append(p);
 }
 
 OROSection* ORODocument::section(int pnum)
 {
-    return m_sections.at(pnum);
+    return d->sections.value(pnum);
 }
+
+const OROSection * ORODocument::section(int index) const
+{
+    return d->sections.value(index);
+}
+
 
 void ORODocument::addSection(OROSection* s)
 {
     if (s == 0)
         return;
 
-    // check that this page is not already in another document
-
-    s->m_document = this;
-    m_sections.append(s);
+    if (s->document() != 0 && s->document() != this) {
+        return;
+    }
+    s->setDocument(this);
+    d->sections.append(s);
 }
 
 void ORODocument::setPageLayout(const QPageLayout & options)
 {
-    m_pageLayout = options;
+    d->pageLayout = options;
 }
 
 void ORODocument::notifyChange(int pageNo)
@@ -86,214 +124,475 @@ void ORODocument::notifyChange(int pageNo)
     emit(updated(pageNo));
 }
 
+QPageLayout ORODocument::pageLayout() const
+{
+    return d->pageLayout;
+}
+
+int ORODocument::pageCount() const
+{
+    return d->pages.count();
+}
+
+int ORODocument::sectionCount() const
+{
+    return d->sections.count();
+}
+
+QString ORODocument::title() const
+{
+    return d->title;
+}
+
+void ORODocument::removePage(OROPage* page)
+{
+    d->pages.removeOne(page);
+    delete page;
+}
+
+void ORODocument::takePage(OROPage* page)
+{
+    d->pages.removeOne(page);
+}
+
+void ORODocument::removeSection(OROSection* section)
+{
+    d->sections.removeOne(section);
+    delete section;
+}
+
+void ORODocument::takeSection(OROSection* section)
+{
+    d->sections.removeOne(section);
+}
+
+int ORODocument::pageIndex(const OROPage* page) const
+{
+    return d->pages.indexOf(const_cast<OROPage*>(page));
+}
+
 //
 // OROPage
 //
-OROPage::OROPage(ORODocument * pDocument)
-        : m_document(pDocument)
+class Q_DECL_HIDDEN OROPage::Private
 {
+public:
+    Private();
+    ~Private();
+    ORODocument *document;
+    QList<OROPrimitive*> primitives;
+};
 
+OROPage::Private::Private()
+{
+}
+
+OROPage::Private::~Private()
+{
+    qDeleteAll(primitives);
+}
+
+OROPage::OROPage(ORODocument * pDocument)
+        : d(new Private())
+{
+    d->document = pDocument;
 }
 
 OROPage::~OROPage()
 {
-    if (m_document) {
-        m_document->m_pages.removeOne(this);
-        m_document = 0;
+    if (d->document) {
+        d->document->takePage(this);
     }
-
-    qDeleteAll(m_primitives);
-    m_primitives.clear();
+    delete d;
 }
 
-int OROPage::page() const
+int OROPage::pageNumber() const
 {
-    if (m_document) {
-        for (int i = 0; i < m_document->m_pages.size(); i++) {
-            if (m_document->m_pages.at(i) == this)
-                return i;
-        }
+    if (d->document) {
+        return d->document->pageIndex(this);
     }
     return -1;
 }
 
-OROPrimitive* OROPage::primitive(int idx)
+OROPrimitive* OROPage::primitive(int index)
 {
-    return m_primitives.at(idx);
+    return d->primitives.value(index);
 }
 
-void OROPage::addPrimitive(OROPrimitive* p, bool atBeginning, bool notify)
+const OROPrimitive * OROPage::primitive(int index) const
+{
+    return d->primitives.value(index);
+}
+
+
+void OROPage::insertPrimitive(OROPrimitive* p, int index)
 {
     //kreportDebug() << "Adding primitive" << p->type() << "to page" << page();
     if (p == 0)
         return;
 
-    // check that this primitve is not already in another page
-
-    p->m_page = this;
-    if (atBeginning) {
-        m_primitives.prepend(p);
+    p->setPage(this);
+    if (index == -1) {
+        d->primitives.append(p);
     } else {
-        m_primitives.append(p);
+        d->primitives.insert(index, p);
     }
-
+    
+#if 0
+//TODO
     if (notify) {
-        if (m_document) {
-            m_document->notifyChange(page());
+        if (d->document) {
+            d->document->notifyChange(pageNumber());
         }
     }
+#endif
+}
+
+ORODocument * OROPage::document()
+{
+    return d->document;
+}
+
+const ORODocument * OROPage::document() const
+{
+    return d->document;
+}
+
+int OROPage::primitiveCount() const
+{
+    return d->primitives.count();
+}
+
+void OROPage::setDocument(ORODocument* doc)
+{
+    d->document = doc;
+}
+
+void OROPage::removePrimitive(OROPrimitive* primitive)
+{
+    d->primitives.removeOne(primitive);
+    delete primitive;
+}
+
+void OROPage::takePrimitive(OROPrimitive* primitive)
+{
+    d->primitives.removeOne(primitive);
 }
 
 //
 // OROSection
 //
-OROSection::OROSection(ORODocument * pDocument)
-        : m_document(pDocument)
+
+class Q_DECL_HIDDEN OROSection::Private
 {
-    m_height = 0;
-    m_backgroundColor = Qt::white;
+public:
+    Private();
+    ~Private();
+    ORODocument * document;
+    QList<OROPrimitive*> primitives;
+    qint64 row;
+    int height;
+    KReportSectionData::Section type;
+    QColor backgroundColor;
+};
+
+OROSection::Private::Private()
+{
+    height = 0;
+    backgroundColor = Qt::white;
+}
+
+OROSection::Private::~Private()
+{
+    qDeleteAll(primitives);
+    primitives.clear();
+}
+
+OROSection::OROSection(ORODocument* doc) : d(new Private())
+{
+    d->document = doc;
 }
 
 OROSection::~OROSection()
 {
-    if (m_document) {
-        m_document->m_sections.removeOne(this);
-        m_document = 0;
+    if (d->document) {
+        d->document->takeSection(this);
     }
-
-    qDeleteAll(m_primitives);
-    m_primitives.clear();
+    
+    delete d;
 }
 
-OROPrimitive* OROSection::primitive(int idx)
+OROPrimitive* OROSection::primitive(int index)
 {
-    return m_primitives.at(idx);
+    return d->primitives.value(index);
 }
 
-void OROSection::addPrimitive(OROPrimitive* p)
+const OROPrimitive * OROSection::primitive(int index) const
 {
-    if (p == 0)
+    return d->primitives.value(index);
+}
+
+void OROSection::addPrimitive(OROPrimitive* primitive)
+{
+    if (primitive == 0)
         return;
 
-    m_primitives.append(p);
+    d->primitives.append(primitive);
 }
 
 void OROSection::setHeight(int h)
 {
-    m_height = h;
+    d->height = h;
 }
 
-int OROSection::height()
+int OROSection::height() const
 {
-    return m_height;
+    return d->height;
 }
 
-void OROSection::setBackgroundColor(const QColor &c)
+void OROSection::setBackgroundColor(const QColor& color)
 {
-    m_backgroundColor = c;
+    d->backgroundColor = color;
 }
 
-QColor OROSection::backgroundColor()
+QColor OROSection::backgroundColor() const
 {
-    return m_backgroundColor;
+    return d->backgroundColor;
 }
 
-void OROSection::sortPrimatives(Sort s)
+void OROSection::sortPrimitives(Qt::Orientation orientation)
 {
-    if (s == SortX) {
-        qSort(m_primitives.begin(), m_primitives.end(), xLessThan);
+    if (orientation == Qt::Horizontal) {
+        qSort(d->primitives.begin(), d->primitives.end(), xLessThan);
     }
 }
 
-bool OROSection::xLessThan(OROPrimitive* s1, OROPrimitive* s2)
+ORODocument * OROSection::document()
 {
-    return s1->position().x() < s2->position().x();
+    return d->document;
+}
+
+const ORODocument * OROSection::document() const
+{
+    return d->document;
+}
+
+
+int OROSection::primitiveCount() const
+{
+    return d->primitives.count();
+}
+
+void OROSection::setType(KReportSectionData::Section t)
+{
+    d->type = t;
+}
+
+KReportSectionData::Section OROSection::type() const
+{
+    return d->type;
+}
+
+void OROSection::setDocument(ORODocument* doc)
+{
+    d->document = doc;
 }
 
 //
 // OROPrimitive
 //
-OROPrimitive::OROPrimitive(int pType)
-        : m_type(pType)
+
+class Q_DECL_HIDDEN OROPrimitive::Private
 {
-    m_page = 0;
+public:
+    OROPage * page;
+    QPointF position;
+    QSizeF size;
+};
+
+OROPrimitive::OROPrimitive()
+        : d(new Private())
+{
+    d->page = 0;
 }
 
 OROPrimitive::~OROPrimitive()
 {
-   if (m_page) {
-        m_page->m_primitives.removeAt(m_page->m_primitives.indexOf(this));
-        m_page = 0;
+   if (d->page) {
+        d->page->takePrimitive(this);
     }
+    
+    delete d;
 }
 
-void OROPrimitive::setPosition(const QPointF & p)
+void OROPrimitive::setPosition(const QPointF& pos)
 {
-    m_position = p;
+    d->position = pos;
 }
 
 void OROPrimitive::setSize(const QSizeF & s)
 {
-    m_size = s;
+    d->size = s;
+}
+
+OROPage * OROPrimitive::page()
+{
+    return d->page;
+}
+
+const OROPage * OROPrimitive::page() const
+{
+    return d->page;
+}
+
+QPointF OROPrimitive::position() const
+{
+    return d->position;
+}
+
+QSizeF OROPrimitive::size() const
+{
+    return d->size;
+}
+
+void OROPrimitive::setPage(OROPage* page)
+{
+    d->page = page;
 }
 
 //
 // OROTextBox
 //
-const int OROTextBox::TextBox = 1;
-OROTextBox::OROTextBox()
-        : OROPrimitive(OROTextBox::TextBox)
+
+class Q_DECL_HIDDEN OROTextBox::Private
 {
-    m_flags = 0;
+public:
+    Private();
+    ~Private();
+    QString text;
+    KRTextStyleData textStyle;
+    KReportLineStyle lineStyle;
+    Qt::Alignment alignment;
+    int flags; // Qt::AlignmentFlag and Qt::TextFlag OR'd
+    bool wordWrap;
+    bool canGrow;
+    bool requiresPostProcessing;
+    
+};
 
-    m_lineStyle.setColor(Qt::black);
-    m_lineStyle.setWidth(0);
-    m_lineStyle.setPenStyle(Qt::NoPen);
+OROTextBox::Private::Private()
+{
+    flags = 0;
+    wordWrap = false;
+    canGrow = false;
+    requiresPostProcessing = false;
+    
+    lineStyle.setColor(Qt::black);
+    lineStyle.setWidth(0);
+    lineStyle.setPenStyle(Qt::NoPen);
+}
 
-    m_requiresPostProcessing = false;
+OROTextBox::Private::~Private()
+{
+}
 
-    m_wordWrap = false;
-    m_canGrow = false;
+OROTextBox::OROTextBox() : d(new Private())
+{
+
 }
 
 OROTextBox::~OROTextBox()
 {
+    delete d;
 }
 
 void OROTextBox::setText(const QString & s)
 {
-    m_text = s;
+    d->text = s;
 }
 
 void OROTextBox::setTextStyle(const KRTextStyleData & ts)
 {
-    m_textStyle = ts;
+    d->textStyle = ts;
 }
 
 void OROTextBox::setLineStyle(const KReportLineStyle & ls)
 {
-    m_lineStyle = ls;
+    d->lineStyle = ls;
 }
 
 void OROTextBox::setFont(const QFont & f)
 {
-    m_textStyle.font = f;
+    d->textStyle.font = f;
 }
 
 void OROTextBox::setFlags(int f)
 {
-    m_flags = f;
+    d->flags = f;
 }
 
-OROPrimitive* OROTextBox::clone()
+bool OROTextBox::canGrow() const
+{
+    return d->canGrow;
+}
+
+int OROTextBox::flags() const
+{
+    return d->flags;
+}
+
+KReportLineStyle OROTextBox::lineStyle() const
+{
+    return d->lineStyle;
+}
+
+bool OROTextBox::requiresPostProcessing() const
+{
+    return d->requiresPostProcessing;
+}
+
+void OROTextBox::setCanGrow(bool grow)
+{
+    d->canGrow = grow;
+}
+
+void OROTextBox::setRequiresPostProcessing(bool pp)
+{
+    d->requiresPostProcessing = pp;
+}
+
+void OROTextBox::setWordWrap(bool ww)
+{
+    d->wordWrap = ww;
+}
+
+QString OROTextBox::text() const
+{
+    return d->text;
+}
+
+KRTextStyleData OROTextBox::textStyle() const
+{
+    return d->textStyle;
+}
+
+bool OROTextBox::wordWrap() const
+{
+    return d->wordWrap;
+}
+
+OROPrimitive* OROTextBox::clone() const
 {
     OROTextBox *theClone = new OROTextBox();
-    theClone->setSize(m_size);
-    theClone->setPosition(m_position);
-    theClone->setText(m_text);
-    theClone->setTextStyle(m_textStyle);
-    theClone->setLineStyle(m_lineStyle);
-    theClone->setFlags(m_alignment);
+    theClone->setSize(size());
+    theClone->setPosition(position());
+    theClone->setText(text());
+    theClone->setTextStyle(textStyle());
+    theClone->setLineStyle(lineStyle());
+    theClone->setFlags(flags());
+    theClone->setCanGrow(canGrow());
+    theClone->setWordWrap(wordWrap());
+    theClone->setRequiresPostProcessing(requiresPostProcessing());
     return theClone;
 }
 
@@ -301,16 +600,22 @@ OROPrimitive* OROTextBox::clone()
 //
 // OROLine
 //
-const int OROLine::Line = 2;
 
-OROLine::OROLine()
-        : OROPrimitive(OROLine::Line)
+class Q_DECL_HIDDEN OROLine::Private
+{
+public:
+    QPointF endPoint;
+    KReportLineStyle lineStyle;
+};
+
+OROLine::OROLine() : d(new Private())
 {
 
 }
 
 OROLine::~OROLine()
 {
+    delete d;
 }
 
 void OROLine::setStartPoint(const QPointF & p)
@@ -320,109 +625,167 @@ void OROLine::setStartPoint(const QPointF & p)
 
 void OROLine::setEndPoint(const QPointF & p)
 {
-    m_endPoint = p;
+    d->endPoint = p;
 }
 
-void OROLine::setLineStyle(const KReportLineStyle& ls)
+void OROLine::setLineStyle(const KReportLineStyle& style)
 {
-    m_lineStyle = ls;
+    d->lineStyle = style;
 }
 
+QPointF OROLine::endPoint() const
+{
+    return d->endPoint;
+}
 
-OROPrimitive* OROLine::clone()
+KReportLineStyle OROLine::lineStyle() const
+{
+    return d->lineStyle;
+}
+
+OROPrimitive* OROLine::clone() const
 {
     OROLine *theClone = new OROLine();
-    theClone->setStartPoint(m_position);
-    theClone->setEndPoint(m_endPoint);
-    theClone->setLineStyle(m_lineStyle);
+    theClone->setStartPoint(position());
+    theClone->setEndPoint(endPoint());
+    theClone->setLineStyle(lineStyle());
     return theClone;
 }
 
 //
 // OROImage
 //
-const int OROImage::Image = 3;
 
-OROImage::OROImage()
-        : OROPrimitive(OROImage::Image)
+class Q_DECL_HIDDEN OROImage::Private
 {
-    m_scaled = false;
-    m_transformFlags = Qt::FastTransformation;
-    m_aspectFlags = Qt::IgnoreAspectRatio;
+public:
+    QImage image;
+    bool scaled;
+    Qt::TransformationMode transformFlags;
+    Qt::AspectRatioMode aspectFlags;
+};
+
+OROImage::OROImage() : d(new Private())
+{
+    d->scaled = false;
+    d->transformFlags = Qt::FastTransformation;
+    d->aspectFlags = Qt::IgnoreAspectRatio;
 }
 
 OROImage::~OROImage()
 {
+    delete d;
 }
 
 void OROImage::setImage(const QImage & img)
 {
-    m_image = img;
+    d->image = img;
 }
 
 void OROImage::setScaled(bool b)
 {
-    m_scaled = b;
+    d->scaled = b;
 }
 
-void OROImage::setTransformationMode(int tm)
+void OROImage::setTransformationMode(Qt::TransformationMode transformation)
 {
-    m_transformFlags = tm;
+    d->transformFlags = transformation;
 }
 
-void OROImage::setAspectRatioMode(int arm)
+void OROImage::setAspectRatioMode(Qt::AspectRatioMode aspectRatioMode)
 {
-    m_aspectFlags = arm;
+    d->aspectFlags = aspectRatioMode;
 }
 
-OROPrimitive* OROImage::clone()
+Qt::AspectRatioMode OROImage::aspectRatioMode() const
+{
+    return d->aspectFlags;
+}
+
+QImage OROImage::image() const
+{
+    return d->image;
+}
+
+bool OROImage::isScaled() const
+{
+    return d->scaled;
+}
+
+Qt::TransformationMode OROImage::transformationMode() const
+{
+    return d->transformFlags;
+}
+
+OROPrimitive* OROImage::clone() const
 {
     OROImage *theClone = new OROImage();
-    theClone->setSize(m_size);
-    theClone->setPosition(m_position);
-    theClone->setImage(m_image);
-    theClone->setScaled(m_scaled);
-    theClone->setTransformationMode(m_transformFlags);
-    theClone->setAspectRatioMode(m_aspectFlags);
+    theClone->setSize(size());
+    theClone->setPosition(position());
+    theClone->setImage(image());
+    theClone->setScaled(isScaled());
+    theClone->setTransformationMode(transformationMode());
+    theClone->setAspectRatioMode(aspectRatioMode());
     return theClone;
 }
 
 //
 // OROPicture
 //
-const int OROPicture::Picture = 6;
 
-OROPicture::OROPicture()
-        : OROPrimitive(OROPicture::Picture)
+class Q_DECL_HIDDEN OROPicture::Private
+{
+public:
+    QPicture picture;    
+};
+
+OROPicture::OROPicture() : d(new Private())
 {
 
 }
 
 OROPicture::~OROPicture()
 {
+    delete d;
 }
 
-OROPrimitive* OROPicture::clone()
+OROPrimitive* OROPicture::clone() const
 {
     OROPicture *theClone = new OROPicture();
-    theClone->setSize(m_size);
-    theClone->setPosition(m_position);
-    theClone->setPicture(m_picture);
+    theClone->setSize(size());
+    theClone->setPosition(position());
+//     theClone->setPicture(*(picture()ddddddds));
     return theClone;
+}
+
+QPicture* OROPicture::picture()
+{
+    return &d->picture;
+}
+
+void OROPicture::setPicture(const QPicture& p)
+{
+    d->picture = p;
 }
 
 //
 // ORORect
 //
-const int ORORect::Rect = 4;
 
-ORORect::ORORect()
-        : OROPrimitive(ORORect::Rect)
+class Q_DECL_HIDDEN ORORect::Private
+{
+public:
+    QPen pen;
+    QBrush brush;
+};
+
+ORORect::ORORect() : d(new Private())
 {
 }
 
 ORORect::~ORORect()
 {
+    delete d;
 }
 
 void ORORect::setRect(const QRectF & r)
@@ -433,35 +796,56 @@ void ORORect::setRect(const QRectF & r)
 
 void ORORect::setPen(const QPen & p)
 {
-    m_pen = p;
+    d->pen = p;
 }
 
 void ORORect::setBrush(const QBrush & b)
 {
-    m_brush = b;
+    d->brush = b;
 }
 
-OROPrimitive* ORORect::clone()
+QBrush ORORect::brush() const
+{
+    return d->brush;
+}
+
+QPen ORORect::pen() const
+{
+    return d->pen;
+}
+
+QRectF ORORect::rect() const
+{
+    return QRectF(position(), size());
+}
+
+OROPrimitive* ORORect::clone() const
 {
     ORORect *theClone = new ORORect();
-    theClone->setSize(m_size);
-    theClone->setPosition(m_position);
-    theClone->setPen(m_pen);
-    theClone->setBrush(m_brush);
+    theClone->setSize(size());
+    theClone->setPosition(position());
+    theClone->setPen(pen());
+    theClone->setBrush(brush());
     return theClone;
 }
 //
 // OROEllipse
 //
-const int OROEllipse::Ellipse = 5;
 
-OROEllipse::OROEllipse()
-        : OROPrimitive(OROEllipse::Ellipse)
+class Q_DECL_HIDDEN OROEllipse::Private
+{
+public:
+    QPen pen;
+    QBrush brush;
+};
+
+OROEllipse::OROEllipse() : d(new Private())
 {
 }
 
 OROEllipse::~OROEllipse()
 {
+    delete d;
 }
 
 void OROEllipse::setRect(const QRectF & r)
@@ -472,45 +856,114 @@ void OROEllipse::setRect(const QRectF & r)
 
 void OROEllipse::setPen(const QPen & p)
 {
-    m_pen = p;
+    d->pen = p;
 }
 
 void OROEllipse::setBrush(const QBrush & b)
 {
-    m_brush = b;
+    d->brush = b;
 }
 
-OROPrimitive* OROEllipse::clone()
+QBrush OROEllipse::brush() const
+{
+    return d->brush;
+}
+
+QPen OROEllipse::pen() const
+{
+    return d->pen;
+}
+
+QRectF OROEllipse::rect() const
+{
+    return QRectF(position(), size());
+}
+
+OROPrimitive* OROEllipse::clone() const
 {
     OROEllipse *theClone = new OROEllipse();
-    theClone->setSize(m_size);
-    theClone->setPosition(m_position);
-    theClone->setPen(m_pen);
-    theClone->setBrush(m_brush);
+    theClone->setSize(size());
+    theClone->setPosition(position());
+    theClone->setPen(pen());
+    theClone->setBrush(brush());
     return theClone;
 }
 
-const int OROCheck::Check = 7;
+//
+// OROCheck
+//
 
-OROCheck::OROCheck()
-        : OROPrimitive(OROCheck::Check)
-        , m_value(false)
+class Q_DECL_HIDDEN OROCheckBox::Private
 {
+public:
+    OROCheckBox::Type checkType;
+    bool value;
+    KReportLineStyle lineStyle;
+    QColor foregroundColor;
+};
 
+OROCheckBox::OROCheckBox() : d(new Private())
+{
+    d->value = false;
 }
 
-OROCheck::~OROCheck()
+OROCheckBox::~OROCheckBox()
 {
-
+    delete d;
 }
 
-OROPrimitive* OROCheck::clone()
+OROCheckBox::Type OROCheckBox::checkType() const
 {
-    OROCheck *theClone = new OROCheck();
-    theClone->setSize(m_size);
-    theClone->setPosition(m_position);
-    theClone->setLineStyle(m_lineStyle);
-    theClone->setForegroundColor(m_fgColor);
-    theClone->setValue(m_value);
+    return d->checkType;
+}
+
+QColor OROCheckBox::foregroundColor() const
+{
+    return d->foregroundColor;
+}
+
+KReportLineStyle OROCheckBox::lineStyle() const
+{
+    return d->lineStyle;
+}
+
+void OROCheckBox::setForegroundColor(const QColor& fg)
+{
+    d->foregroundColor = fg;
+}
+
+void OROCheckBox::setLineStyle(const KReportLineStyle& ls)
+{
+    d->lineStyle = ls;
+}
+
+void OROCheckBox::setValue(bool v)
+{
+    d->value = v;
+}
+
+bool OROCheckBox::value() const
+{
+    return d->value;
+}
+
+void OROCheckBox::setCheckType(Type type)
+{
+    if (type == Cross || type == Tick || type == Dot) {
+        d->checkType = type;
+    } else {
+        d->checkType = Cross;
+    }
+}
+
+OROPrimitive* OROCheckBox::clone() const
+{
+    OROCheckBox *theClone = new OROCheckBox();
+    theClone->setSize(size());
+    theClone->setPosition(position());
+    theClone->setLineStyle(lineStyle());
+    theClone->setForegroundColor(foregroundColor());
+    theClone->setValue(value());
+    theClone->setCheckType(checkType());
     return theClone;
 }

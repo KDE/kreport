@@ -342,7 +342,7 @@ qreal KReportPreRendererPrivate::renderSection(const KReportSectionData & sectio
     qreal w = m_page->document()->pageLayout().fullRectPixels(KReportDpi::dpiX()).width() - m_page->document()->pageLayout().marginsPixels(KReportDpi::dpiX()).right() - m_leftMargin;
 
     bg->setRect(QRectF(m_leftMargin, m_yOffset, w, sectionHeight));
-    m_page->addPrimitive(bg, true);
+    m_page->insertPrimitive(bg, true);
 
     QList<KReportItemBase*> objects = sectionData.objects();
     foreach(KReportItemBase *ob, objects) {
@@ -366,10 +366,10 @@ qreal KReportPreRendererPrivate::renderSection(const KReportSectionData & sectio
             sectionHeight = itemHeight;
         }
     }
-    for (int i = 0; i < m_page->primitives(); ++i) {
+    for (int i = 0; i < m_page->primitiveCount(); ++i) {
         OROPrimitive *prim = m_page->primitive(i);
-        if (prim->type() == OROTextBox::TextBox) {
-            OROTextBox *text = static_cast<OROTextBox*>(prim);
+        if (dynamic_cast<OROTextBox*>(prim)) {
+            OROTextBox *text = dynamic_cast<OROTextBox*>(prim);
             if (text->requiresPostProcessing()) {
                 m_postProcText.append(text);
             }
@@ -582,12 +582,12 @@ bool KReportPreRendererPrivate::generateDocument()
     #ifdef KREPORT_SCRIPTING
     // _postProcText contains those text boxes that need to be updated
     // with information that wasn't available at the time it was added to the document
-    m_scriptHandler->setPageTotal(m_document->pages());
+    m_scriptHandler->setPageTotal(m_document->pageCount());
 
     for (int i = 0; i < m_postProcText.size(); i++) {
         OROTextBox * tb = m_postProcText.at(i);
 
-        m_scriptHandler->setPageNumber(tb->page()->page() + 1);
+        m_scriptHandler->setPageNumber(tb->page()->pageNumber() + 1);
 
         tb->setText(m_scriptHandler->evaluate(tb->text()).toString());
     }

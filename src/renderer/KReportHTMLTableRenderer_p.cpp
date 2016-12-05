@@ -93,9 +93,9 @@ QString HTMLTableRenderer::renderTable(ORODocument *document)
 
     // Render Each Section
     body = QLatin1String("<table>\n");
-    for (long s = 0; s < document->sections(); s++) {
+    for (int s = 0; s < document->sectionCount(); s++) {
         OROSection *section = document->section(s);
-        section->sortPrimatives(OROSection::SortX);
+        section->sortPrimitives(Qt::Horizontal);
 
         if (section->type() == KReportSectionData::GroupHeader ||
                 section->type() == KReportSectionData::GroupFooter ||
@@ -103,7 +103,7 @@ QString HTMLTableRenderer::renderTable(ORODocument *document)
                 section->type() == KReportSectionData::ReportHeader ||
                 section->type() == KReportSectionData::ReportFooter ||
                 (section->type() == KReportSectionData::PageHeaderAny && !renderedPageHeader) ||
-                (section->type() == KReportSectionData::PageFooterAny && !renderedPageFooter && s > document->sections() - 2)) { //render the page foot right at the end, it will either be the last or second last section if there is a report footer
+                (section->type() == KReportSectionData::PageFooterAny && !renderedPageFooter && s > document->sectionCount() - 2)) { //render the page foot right at the end, it will either be the last or second last section if there is a report footer
             if (section->type() == KReportSectionData::PageHeaderAny)
                 renderedPageHeader = true;
 
@@ -112,25 +112,25 @@ QString HTMLTableRenderer::renderTable(ORODocument *document)
 
             tr = QLatin1String("<tr style=\"background-color: ") + section->backgroundColor().name() + QLatin1String("\">\n");
             //Render the objects in each section
-            for (int i = 0; i < section->primitives(); i++) {
+            for (int i = 0; i < section->primitiveCount(); i++) {
                 OROPrimitive * prim = section->primitive(i);
 
-                if (prim->type() == OROTextBox::TextBox) {
-                    OROTextBox * tb = (OROTextBox*) prim;
+                if (dynamic_cast<OROTextBox*>(prim)) {
+                    OROTextBox * tb = dynamic_cast<OROTextBox*>(prim);
 
                     tr += QLatin1String("<td>") +
                           tb->text() +
                           QLatin1String("</td>\n");
-                } else if (prim->type() == OROImage::Image) {
+                } else if (dynamic_cast<OROImage*>(prim)) {
                     //kreportDebug() << "Saving an image";
-                    OROImage * im = (OROImage*) prim;
+                    OROImage * im = dynamic_cast<OROImage*>(prim);
                     tr += QLatin1String("<td>"
                           "<img src=\"./") + m_actualDirName + QLatin1String("/object") + QString::number(s) + QString::number(i) + QLatin1String(".png\"></img>"
                           "</td>\n");
                     im->image().save(m_tempDirName + QLatin1String("/object") + QString::number(s) + QString::number(i) + QLatin1String(".png"));
-                } else if (prim->type() == OROPicture::Picture) {
+                } else if (dynamic_cast<OROPicture*>(prim)) {
                     //kreportDebug() << "Saving a picture";
-                    OROPicture * im = (OROPicture*) prim;
+                    OROPicture * im = dynamic_cast<OROPicture*>(prim);
 
                     tr += QLatin1String("<td>"
                           "<img src=\"./") + m_actualDirName + QLatin1String("/object") + QString::number(s) + QString::number(i) + QLatin1String(".png\"></img>"

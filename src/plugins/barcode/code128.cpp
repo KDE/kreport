@@ -321,7 +321,7 @@ void renderCode128(OROPage * page, const QRectF & r, const QString & _str, int a
                 rect->setPen(pen);
                 rect->setBrush(brush);
                 rect->setRect(QRectF(pos, top, w, draw_height));
-                page->addPrimitive(rect);
+                page->insertPrimitive(rect);
             }
             pos += w;
         }
@@ -338,7 +338,7 @@ void renderCode128(OROPage * page, const QRectF & r, const QString & _str, int a
             rect->setPen(pen);
             rect->setBrush(brush);
             rect->setRect(QRectF(pos, top, w, draw_height));
-            page->addPrimitive(rect);
+            page->insertPrimitive(rect);
         }
         pos += w;
     }

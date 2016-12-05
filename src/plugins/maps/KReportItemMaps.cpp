@@ -134,7 +134,7 @@ int KReportItemMaps::renderSimpleData(OROPage *page, OROSection *section, const 
     m_oroPicture->setSize(sceneSize(size()));
 
     if (m_pageId) {
-        m_pageId->addPrimitive(m_oroPicture);
+        m_pageId->insertPrimitive(m_oroPicture);
     }
 
     if (m_sectionId) {

@@ -35,7 +35,7 @@
 #include <QMimeDatabase>
 #include <QMimeType>
 
-KoOdtFrameReportCheckBox::KoOdtFrameReportCheckBox(OROCheck *primitive)
+KoOdtFrameReportCheckBox::KoOdtFrameReportCheckBox(OROCheckBox *primitive)
     : KoOdtFrameReportPrimitive(primitive)
 {
 }
@@ -44,9 +44,9 @@ KoOdtFrameReportCheckBox::~KoOdtFrameReportCheckBox()
 {
 }
 
-OROCheck *KoOdtFrameReportCheckBox::checkBox() const
+OROCheckBox *KoOdtFrameReportCheckBox::checkBox() const
 {
-    return static_cast<OROCheck*>(m_primitive);
+    return static_cast<OROCheckBox*>(m_primitive);
 }
 
 void KoOdtFrameReportCheckBox::createStyle(KoGenStyles *coll)
@@ -107,7 +107,7 @@ bool KoOdtFrameReportCheckBox::saveData(KoStore* store, KoXmlWriter* manifestWri
     if (!store->open(name)) {
         return false;
     }
-    OROCheck * chk = checkBox();
+    OROCheckBox * chk = checkBox();
     QSizeF sz = chk->size();
     QPen fpen; // frame pen
     if (chk->lineStyle().style == Qt::NoPen || chk->lineStyle().weight <= 0) {

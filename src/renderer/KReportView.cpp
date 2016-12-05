@@ -139,7 +139,7 @@ void KReportView::setDocument(ORODocument* doc)
         delete d->reportPage;
     }
 
-    d->pageCount = doc->pages();
+    d->pageCount = doc->pageCount();
 
     d->reportPage = new KReportPage(this, d->reportDocument);
     d->reportPage->setObjectName(QLatin1String("KReportPage"));

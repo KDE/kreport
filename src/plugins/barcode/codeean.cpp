@@ -171,7 +171,7 @@ void renderCodeEAN13(OROPage * page, const QRectF & r, const QString & _str, int
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     pos += (bar_width * 2.0);
 
@@ -179,7 +179,7 @@ void renderCodeEAN13(OROPage * page, const QRectF & r, const QString & _str, int
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     pos += bar_width;
 
@@ -192,7 +192,7 @@ void renderCodeEAN13(OROPage * page, const QRectF & r, const QString & _str, int
                 rect->setPen(pen);
                 rect->setBrush(brush);
                 rect->setRect(QRectF(pos, top, bar_width, draw_height - 0.07));
-                page->addPrimitive(rect);
+                page->insertPrimitive(rect);
             }
             pos += bar_width;
         }
@@ -205,7 +205,7 @@ void renderCodeEAN13(OROPage * page, const QRectF & r, const QString & _str, int
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     pos += (bar_width * 2.0);
 
@@ -213,7 +213,7 @@ void renderCodeEAN13(OROPage * page, const QRectF & r, const QString & _str, int
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     pos += (bar_width * 2.0);
 
@@ -226,7 +226,7 @@ void renderCodeEAN13(OROPage * page, const QRectF & r, const QString & _str, int
                 rect->setPen(pen);
                 rect->setBrush(brush);
                 rect->setRect(QRectF(pos, top, bar_width, draw_height - 0.07));
-                page->addPrimitive(rect);
+                page->insertPrimitive(rect);
             }
             pos += bar_width;
         }
@@ -237,7 +237,7 @@ void renderCodeEAN13(OROPage * page, const QRectF & r, const QString & _str, int
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     pos += (bar_width * 2.0);
 
@@ -245,7 +245,7 @@ void renderCodeEAN13(OROPage * page, const QRectF & r, const QString & _str, int
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     QString parstr = QString::fromLatin1("%1").arg(val[0]);
     QString leftstr = QString().sprintf("%d%d%d%d%d%d",
@@ -260,7 +260,7 @@ void renderCodeEAN13(OROPage * page, const QRectF & r, const QString & _str, int
     tb->setFont(font);
     tb->setText(parstr);
     tb->setFlags(Qt::AlignRight | Qt::AlignTop);
-    page->addPrimitive(tb);
+    page->insertPrimitive(tb);
 
     tb = new OROTextBox();
     tb->setPosition(QPointF(r.left() + quiet_zone + 0.03, (r.top() + draw_height) - 0.07));
@@ -268,7 +268,7 @@ void renderCodeEAN13(OROPage * page, const QRectF & r, const QString & _str, int
     tb->setFont(font);
     tb->setText(leftstr);
     tb->setFlags(Qt::AlignHCenter | Qt::AlignTop);
-    page->addPrimitive(tb);
+    page->insertPrimitive(tb);
 
     tb = new OROTextBox();
     tb->setPosition(QPointF(r.left() + quiet_zone + 0.5, (r.top() + draw_height) - 0.07));
@@ -276,7 +276,7 @@ void renderCodeEAN13(OROPage * page, const QRectF & r, const QString & _str, int
     tb->setFont(font);
     tb->setText(rightstr);
     tb->setFlags(Qt::AlignHCenter | Qt::AlignTop);
-    page->addPrimitive(tb);
+    page->insertPrimitive(tb);
 }
 
 void renderCodeUPCA(OROPage * page, const QRectF & r, const QString & _str, int align)
@@ -366,7 +366,7 @@ void renderCodeUPCA(OROPage * page, const QRectF & r, const QString & _str, int 
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     pos += (bar_width * 2.0);
 
@@ -374,7 +374,7 @@ void renderCodeUPCA(OROPage * page, const QRectF & r, const QString & _str, int 
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     pos += bar_width;
 
@@ -387,7 +387,7 @@ void renderCodeUPCA(OROPage * page, const QRectF & r, const QString & _str, int 
                 rect->setPen(pen);
                 rect->setBrush(brush);
                 rect->setRect(QRectF(pos, top, bar_width, draw_height - (i == 0 ? 0 : 0.07)));
-                page->addPrimitive(rect);
+                page->insertPrimitive(rect);
             }
             pos += bar_width;
         }
@@ -399,7 +399,7 @@ void renderCodeUPCA(OROPage * page, const QRectF & r, const QString & _str, int 
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     pos += (bar_width * 2.0);
 
@@ -407,7 +407,7 @@ void renderCodeUPCA(OROPage * page, const QRectF & r, const QString & _str, int 
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     pos += (bar_width * 2.0);
 
@@ -420,7 +420,7 @@ void renderCodeUPCA(OROPage * page, const QRectF & r, const QString & _str, int 
                 rect->setPen(pen);
                 rect->setBrush(brush);
                 rect->setRect(QRectF(pos, top, bar_width, draw_height - (i == 5 ? 0 : 0.07)));
-                page->addPrimitive(rect);
+                page->insertPrimitive(rect);
             }
             pos += bar_width;
         }
@@ -431,7 +431,7 @@ void renderCodeUPCA(OROPage * page, const QRectF & r, const QString & _str, int 
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     pos += (bar_width * 2.0);
 
@@ -439,7 +439,7 @@ void renderCodeUPCA(OROPage * page, const QRectF & r, const QString & _str, int 
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     QString parstr = QString::number(val[1]);
     QString chkstr = QString::number(val[12]);
@@ -462,28 +462,28 @@ void renderCodeUPCA(OROPage * page, const QRectF & r, const QString & _str, int 
     tb->setTextStyle(ts);
     tb->setText(parstr);
 
-    page->addPrimitive(tb);
+    page->insertPrimitive(tb);
 
     tb = new OROTextBox();
     tb->setPosition(QPointF(r.left() + quiet_zone + 10, (r.top() + draw_height) - 7));
     tb->setSize(QSizeF(35, 10));
     tb->setTextStyle(ts);
     tb->setText(leftstr);
-    page->addPrimitive(tb);
+    page->insertPrimitive(tb);
 
     tb = new OROTextBox();
     tb->setPosition(QPointF(r.left() + quiet_zone + 50, (r.top() + draw_height) - 7));
     tb->setSize(QSizeF(35, 10));
     tb->setTextStyle(ts);
     tb->setText(rightstr);
-    page->addPrimitive(tb);
+    page->insertPrimitive(tb);
 
     tb = new OROTextBox();
     tb->setPosition(QPointF(r.left() + quiet_zone + L + 2, (r.top() + draw_height) - 12));
     tb->setSize(QSizeF(8, 12));
     tb->setTextStyle(ts);
     tb->setText(chkstr);
-    page->addPrimitive(tb);
+    page->insertPrimitive(tb);
 }
 
 void renderCodeEAN8(OROPage * page, const QRectF & r, const QString & _str, int align)
@@ -574,7 +574,7 @@ void renderCodeEAN8(OROPage * page, const QRectF & r, const QString & _str, int 
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     pos += (bar_width * 2.0);
 
@@ -582,7 +582,7 @@ void renderCodeEAN8(OROPage * page, const QRectF & r, const QString & _str, int 
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     pos += bar_width;
 
@@ -595,7 +595,7 @@ void renderCodeEAN8(OROPage * page, const QRectF & r, const QString & _str, int 
                 rect->setPen(pen);
                 rect->setBrush(brush);
                 rect->setRect(QRectF(pos, top, bar_width, draw_height - 0.06));
-                page->addPrimitive(rect);
+                page->insertPrimitive(rect);
             }
             pos += bar_width;
         }
@@ -608,7 +608,7 @@ void renderCodeEAN8(OROPage * page, const QRectF & r, const QString & _str, int 
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     pos += (bar_width * 2.0);
 
@@ -616,7 +616,7 @@ void renderCodeEAN8(OROPage * page, const QRectF & r, const QString & _str, int 
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     pos += (bar_width * 2.0);
 
@@ -629,7 +629,7 @@ void renderCodeEAN8(OROPage * page, const QRectF & r, const QString & _str, int 
                 rect->setPen(pen);
                 rect->setBrush(brush);
                 rect->setRect(QRectF(pos, top, bar_width, draw_height - 0.06));
-                page->addPrimitive(rect);
+                page->insertPrimitive(rect);
             }
             pos += bar_width;
         }
@@ -640,7 +640,7 @@ void renderCodeEAN8(OROPage * page, const QRectF & r, const QString & _str, int 
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     pos += (bar_width * 2.0);
 
@@ -648,7 +648,7 @@ void renderCodeEAN8(OROPage * page, const QRectF & r, const QString & _str, int 
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     QString leftstr = QString().sprintf("%d%d%d%d",
                                         val[0], val[1], val[2], val[3]);
@@ -662,7 +662,7 @@ void renderCodeEAN8(OROPage * page, const QRectF & r, const QString & _str, int 
     tb->setFont(font);
     tb->setText(leftstr);
     tb->setFlags(Qt::AlignHCenter | Qt::AlignTop);
-    page->addPrimitive(tb);
+    page->insertPrimitive(tb);
 
     tb = new OROTextBox();
     tb->setPosition(QPointF(r.left() + quiet_zone + 0.36, (r.top() + draw_height) - 0.06));
@@ -670,7 +670,7 @@ void renderCodeEAN8(OROPage * page, const QRectF & r, const QString & _str, int 
     tb->setFont(font);
     tb->setText(rightstr);
     tb->setFlags(Qt::AlignHCenter | Qt::AlignTop);
-    page->addPrimitive(tb);
+    page->insertPrimitive(tb);
 }
 
 void renderCodeUPCE(OROPage * page, const QRectF & r, const QString & _str, int align)
@@ -753,7 +753,7 @@ void renderCodeUPCE(OROPage * page, const QRectF & r, const QString & _str, int 
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     pos += (bar_width * 2.0);
 
@@ -761,7 +761,7 @@ void renderCodeUPCE(OROPage * page, const QRectF & r, const QString & _str, int 
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     pos += bar_width;
 
@@ -774,7 +774,7 @@ void renderCodeUPCE(OROPage * page, const QRectF & r, const QString & _str, int 
                 rect->setPen(pen);
                 rect->setBrush(brush);
                 rect->setRect(QRectF(pos, top, bar_width, draw_height - 7));
-                page->addPrimitive(rect);
+                page->insertPrimitive(rect);
             }
             pos += bar_width;
         }
@@ -787,7 +787,7 @@ void renderCodeUPCE(OROPage * page, const QRectF & r, const QString & _str, int 
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     pos += (bar_width * 2.0);
 
@@ -795,7 +795,7 @@ void renderCodeUPCE(OROPage * page, const QRectF & r, const QString & _str, int 
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     pos += (bar_width * 2.0);
 
@@ -805,7 +805,7 @@ void renderCodeUPCE(OROPage * page, const QRectF & r, const QString & _str, int 
     rect->setPen(pen);
     rect->setBrush(brush);
     rect->setRect(QRectF(pos, top, bar_width, draw_height));
-    page->addPrimitive(rect);
+    page->insertPrimitive(rect);
 
     QString parstr = QString::number(val[0]);
     QString chkstr = QString::number(val[7]);
@@ -824,19 +824,19 @@ void renderCodeUPCE(OROPage * page, const QRectF & r, const QString & _str, int 
     tb->setSize(QSizeF(quiet_zone - 2, 12));
     tb->setTextStyle(ts);
     tb->setText(parstr);
-    page->addPrimitive(tb);
+    page->insertPrimitive(tb);
 
     tb = new OROTextBox();
     tb->setPosition(QPointF(r.left() + quiet_zone + 3, (r.top() + draw_height) - 7));
     tb->setSize(QSizeF(42, 10));
     tb->setTextStyle(ts);
     tb->setText(leftstr);
-    page->addPrimitive(tb);
+    page->insertPrimitive(tb);
 
     tb = new OROTextBox();
     tb->setPosition(QPointF(r.left() + quiet_zone + L + 2, r.top() + draw_height - 12));
     tb->setSize(QSizeF(8, 12));
     tb->setTextStyle(ts);
     tb->setText(chkstr);
-    page->addPrimitive(tb);
+    page->insertPrimitive(tb);
 }

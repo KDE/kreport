@@ -122,7 +122,7 @@ int KReportItemLine::renderSimpleData(OROPage *page, OROSection *section, const 
     ln->setStartPoint(s);
     ln->setEndPoint(e);
     ln->setLineStyle(lineStyle());
-    if (page) page->addPrimitive(ln);
+    if (page) page->insertPrimitive(ln);
 
     OROLine *l2 = dynamic_cast<OROLine*>(ln->clone());
     l2->setStartPoint(m_start.toPoint());

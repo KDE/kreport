@@ -62,7 +62,7 @@ void KReportScriptDraw::rectangle(qreal x, qreal y, qreal w, qreal h, const QStr
 
         r->setBrush(bru);
         r->setPen(pen);
-        m_curPage->addPrimitive(r);
+        m_curPage->insertPrimitive(r);
     }
 }
 
@@ -84,7 +84,7 @@ void KReportScriptDraw::ellipse(qreal x, qreal y, qreal w, qreal h, const QStrin
 
         e->setBrush(bru);
         e->setPen(pen);
-        m_curPage->addPrimitive(e);
+        m_curPage->insertPrimitive(e);
     }
 }
 
@@ -107,7 +107,7 @@ void KReportScriptDraw::line(qreal x1, qreal y1, qreal x2, qreal y2, const QStri
         ls.setPenStyle(Qt::SolidLine);
 
         ln->setLineStyle(ls);
-        m_curPage->addPrimitive(ln);
+        m_curPage->insertPrimitive(ln);
     }
 }
 
@@ -140,7 +140,7 @@ void KReportScriptDraw::text(qreal x, qreal y, const QString &txt, const QString
 
         tb->setText(txt);
 
-        m_curPage->addPrimitive(tb);
+        m_curPage->insertPrimitive(tb);
 
     }
 }

@@ -50,45 +50,113 @@ class KREPORT_EXPORT ORODocument : public QObject
 {
     Q_OBJECT
 
-    friend class OROPage;
-    friend class OROSection;
-
 public:
-    explicit ORODocument(const QString & = QString());
+    explicit ORODocument(const QString &title = QString());
     ~ORODocument();
 
-    QString title() const {
-        return m_title;
-    };
-    void setTitle(const QString &);
+    QString title() const;
+    void setTitle(const QString &title);
 
-    int pages() const {
-        return m_pages.count();
-    };
-    OROPage* page(int);
-    void addPage(OROPage*);
+    
+    /**
+     * @brief Return the total number of pages in the document
+     * 
+     */
+    int pageCount() const;
+    
+    /**
+     * @brief Return a pointer to a given page
+     * 
+     * @param index page number to find
+     * @return OROPage*
+     */
+    OROPage* page(int index);
+    const OROPage* page(int index) const;
+    
+    /**
+     * @brief Adds the supplied page to this document
+     * 
+     * Ownership of the page is tranferred the document
+     * 
+     * @param page an OROPage* to be added
+     */
+    void addPage(OROPage* page);
+    
+    /**
+     * @brief Returns the index of the supplied page in the document
+     * 
+     * @param page OROPage* to find
+     * @return int page index
+     */
+    int pageIndex(const OROPage* page) const;
+    
+    /**
+     * @brief Removes the given page from the document
+     * 
+     * The page is also deleted
+     * 
+     * @param page OROPage* to delete
+     */
+    void removePage(OROPage* page);
 
-    int sections() const {
-        return m_sections.count();
-    };
-    OROSection* section(int);
-    void addSection(OROSection*);
-
-    void setPageLayout(const QPageLayout &);
-    QPageLayout pageLayout() const {
-        return m_pageLayout;
-    };
+    /**
+     * @brief Takes the page from the document but does not delete it
+     * 
+     * @param page OROPage* to take from the document
+     */
+    void takePage(OROPage *page);
+    
+    /**
+     * @brief Return the total number of sections in the document
+     * 
+     */
+    int sectionCount() const;
+    
+    /**
+     * @brief Return a pointer to a given section
+     * 
+     * @param index section number to find
+     * @return OROSection*
+     */
+    OROSection* section(int index);
+    const OROSection* section(int index) const;
+    
+    /**
+     * @brief Adds the supplied sectin to the document
+     * 
+     * Ownership of the section is transferred to the document
+     * 
+     * @param section OROSection* to add to the document
+     */
+    void addSection(OROSection* section);
+    
+    /**
+     * @brief Removes the supplied section from the document
+     * 
+     * The section will also be deleted
+     * 
+     * @param section OROSection* to remove and delete
+     */
+    void removeSection(OROSection *section);
+    
+    /**
+     * @brief Takes the section from the document but does not delete it
+     * 
+     * @param page OROSection* to take from the document
+     */
+    void takeSection(OROSection *section);
+    
+    void setPageLayout(const QPageLayout &layout);
+    QPageLayout pageLayout() const;
 
     void notifyChange(int pageNo);
-
-protected:
-    QString m_title;
-    QList<OROPage*> m_pages;
-    QList<OROSection*> m_sections;
-    QPageLayout m_pageLayout;
-
+    
 Q_SIGNALS:
     void updated(int pageNo);
+    
+private:
+    class Private;
+    Private * const d;
 };
 
 //
@@ -99,27 +167,28 @@ Q_SIGNALS:
 //
 class KREPORT_EXPORT OROPage
 {
-    friend class ORODocument;
-    friend class OROPrimitive;
-
 public:
-    explicit OROPage(ORODocument * = 0);
+    explicit OROPage(ORODocument * doc = 0);
     ~OROPage();
 
-    ORODocument* document() const {
-        return m_document;
-    };
-    int page() const; // returns this pages current page number
+    ORODocument* document();
+    const ORODocument* document() const;
+    void setDocument(ORODocument *doc);
+    
+    int pageNumber() const; // returns this pages current page number
 
-    int primitives() const {
-        return m_primitives.count();
-    };
-    OROPrimitive* primitive(int);
-    void addPrimitive(OROPrimitive*, bool atBeginning = false, bool notify = false);
+    int primitiveCount() const;
+    
+    OROPrimitive* primitive(int index);
+    const OROPrimitive* primitive(int index) const;
+    
+    void insertPrimitive(OROPrimitive* primitive, int index = -1);
+    void removePrimitive(OROPrimitive *primitive);
+    void takePrimitive(OROPrimitive *primitive);
 
-protected:
-    ORODocument * m_document;
-    QList<OROPrimitive*> m_primitives;
+private:
+    class Private;
+    Private * const d;
 };
 //
 // OROSection
@@ -128,53 +197,32 @@ protected:
 //
 class KREPORT_EXPORT OROSection
 {
-    friend class ORODocument;
-    friend class OROPrimitive;
-
 public:
-    enum Sort {
-        SortX = 1,
-        SortY,
-        SortZ
-    };
-
-    explicit OROSection(ORODocument * = 0);
+    explicit OROSection(ORODocument* doc = 0);
     ~OROSection();
 
     void setHeight(int);
-    int height();
+    int height() const;
 
-    void setBackgroundColor(const QColor&L);
-    QColor backgroundColor();
+    void setBackgroundColor(const QColor& color);
+    QColor backgroundColor() const;
 
-    ORODocument* document() const {
-        return m_document;
-    };
+    ORODocument* document();
+    const ORODocument* document() const;
+    void setDocument(ORODocument *doc);
 
-    void setType(KReportSectionData::Section t) {
-        m_type = t;
-    }
-    KReportSectionData::Section type() {
-        return m_type;
-    }
+    void setType(KReportSectionData::Section t);
+    KReportSectionData::Section type() const;
 
-    int primitives() const {
-        return m_primitives.count();
-    };
-    OROPrimitive* primitive(int);
-    void addPrimitive(OROPrimitive*);
-
-    void sortPrimatives(Sort);
-protected:
-    ORODocument * m_document;
-    QList<OROPrimitive*> m_primitives;
-    long m_row;
-    int m_height;
-    KReportSectionData::Section m_type;
-    QColor m_backgroundColor;
+    int primitiveCount() const;
+    OROPrimitive* primitive(int index);
+    const OROPrimitive* primitive(int index) const;
+    void addPrimitive(OROPrimitive* primitive);
+    void sortPrimitives(Qt::Orientation orientation);
 
 private:
-    static bool xLessThan(OROPrimitive* s1, OROPrimitive* s2);
+    class Private;
+    Private * const d;
 };
 
 
@@ -186,36 +234,27 @@ private:
 //
 class KREPORT_EXPORT OROPrimitive
 {
-    friend class OROPage;
-
 public:
     virtual ~OROPrimitive();
 
-    // Returns the type of the primitive which should be
-    // set by the subclass
-    int type() const {
-        return m_type;
-    };
-    OROPage * page() const {
-        return m_page;
-    };
+    OROPage* page();
+    const OROPage* page() const;
+    void setPage(OROPage *page);
 
-    QPointF position() const {
-        return m_position;
-    };
-    void setPosition(const QPointF &);
-    QSizeF size() const { return m_size; }
+    QPointF position() const;
+    void setPosition(const QPointF &pos);
+    
+    QSizeF size() const;
     void setSize(const QSizeF &s);
 
-    virtual OROPrimitive* clone() = 0;
-
+    virtual OROPrimitive* clone() const = 0;
+    
 protected:
-    OROPrimitive(int);
-
-    OROPage * m_page;
-    int m_type;
-    QPointF m_position;
-    QSizeF m_size;
+    OROPrimitive();
+    
+private:
+    class Private;
+    Private * const d;
 };
 
 //
@@ -230,50 +269,34 @@ public:
     OROTextBox();
     virtual ~OROTextBox();
 
-    QString text() const {
-        return m_text;
-    };
-    void setText(const QString &);
+    QString text() const;
+    void setText(const QString &text);
 
-    KRTextStyleData textStyle() const {
-        return m_textStyle;
-    }
+    KRTextStyleData textStyle() const;
     void setTextStyle(const KRTextStyleData&);
 
-    KReportLineStyle lineStyle() const {
-        return m_lineStyle;
-    }
+    KReportLineStyle lineStyle() const;
     void setLineStyle(const KReportLineStyle&);
 
-    void setFont(const QFont &);
+    void setFont(const QFont &font);
 
-    int flags() const {
-        return m_flags;
-    };
-    void setFlags(int);
+    int flags() const;
+    void setFlags(int flags);
 
-    static const int TextBox;
+    virtual OROPrimitive* clone() const;
 
-    virtual OROPrimitive* clone();
+    bool requiresPostProcessing() const;
+    void setRequiresPostProcessing(bool pp);
 
-    bool requiresPostProcessing(){return m_requiresPostProcessing;}
-    void setRequiresPostProcessing(bool pp = true){m_requiresPostProcessing = pp;}
+    bool wordWrap() const;
+    void setWordWrap(bool ww);
 
-    bool wordWrap() const {return m_wordWrap;}
-    void setWordWrap(bool ww){m_wordWrap = ww;}
-
-    bool canGrow() const {return m_canGrow;}
-    void setCanGrow(bool cg){m_canGrow = cg;}
-
-protected:
-    QString m_text;
-    KRTextStyleData m_textStyle;
-    KReportLineStyle m_lineStyle;
-    Qt::Alignment m_alignment;
-    int m_flags; // Qt::AlignmentFlag and Qt::TextFlag OR'd
-    bool m_wordWrap;
-    bool m_canGrow;
-    bool m_requiresPostProcessing;
+    bool canGrow() const;
+    void setCanGrow(bool grow);
+    
+private:
+    class Private;
+    Private * const d;
 };
 
 //
@@ -289,23 +312,19 @@ public:
     QPointF startPoint() const {
         return position();
     };
-    void setStartPoint(const QPointF &);
+    void setStartPoint(const QPointF &start);
 
-    QPointF endPoint() const {
-        return m_endPoint;
-    };
-    void setEndPoint(const QPointF &);
+    QPointF endPoint() const;
+    void setEndPoint(const QPointF &end);
 
-    KReportLineStyle lineStyle() const {
-        return m_lineStyle;
-    };
-    void setLineStyle(const KReportLineStyle&);
+    KReportLineStyle lineStyle() const;
+    void setLineStyle(const KReportLineStyle& style);
 
-    static const int Line;
-    virtual OROPrimitive* clone();
-protected:
-    QPointF m_endPoint;
-    KReportLineStyle m_lineStyle;
+    virtual OROPrimitive* clone() const;
+    
+private:
+    class Private;
+    Private * const d;
 };
 
 //
@@ -318,53 +337,43 @@ public:
     OROImage();
     virtual ~OROImage();
 
-    QImage image() const {
-        return m_image;
-    };
-    void setImage(const QImage &);
+    QImage image() const;
+    void setImage(const QImage &img);
 
-    bool scaled() const {
-        return m_scaled;
-    };
-    void setScaled(bool);
+    bool isScaled() const;
+    void setScaled(bool scaled);
 
-    int transformationMode() const {
-        return m_transformFlags;
-    };
-    void setTransformationMode(int);
+    Qt::TransformationMode transformationMode() const;
+    void setTransformationMode(Qt::TransformationMode transformation);
 
-    int aspectRatioMode() const {
-        return m_aspectFlags;
-    };
-    void setAspectRatioMode(int);
+    Qt::AspectRatioMode aspectRatioMode() const;
+    void setAspectRatioMode(Qt::AspectRatioMode aspect);
 
-    static const int Image;
-    virtual OROPrimitive* clone();
-
-protected:
-    QImage m_image;
-    bool m_scaled;
-    int m_transformFlags;
-    int m_aspectFlags;
+    virtual OROPrimitive* clone() const;
+    
+private:
+    class Private;
+    Private * const d;
 };
 
+//
+// OROPicture
+// This primitive defines a picture
+//
 class KREPORT_EXPORT OROPicture: public OROPrimitive
 {
 public:
     OROPicture();
     virtual ~OROPicture();
 
-    void setPicture(const QPicture& p) {
-        m_picture = p;
-    }
-    QPicture* picture() {
-        return &m_picture;
-    };
+    void setPicture(const QPicture& pic);
+    QPicture* picture();
 
-    static const int Picture;
-    virtual OROPrimitive* clone();
-protected:
-    QPicture m_picture;
+    virtual OROPrimitive* clone() const;
+    
+private:
+    class Private;
+    Private * const d;
 
 };
 //
@@ -377,26 +386,20 @@ public:
     ORORect();
     virtual ~ORORect();
 
-    QRectF rect() const {
-        return QRectF(m_position, m_size);
-    };
-    void setRect(const QRectF &);
+    QRectF rect() const;
+    void setRect(const QRectF &rectangle);
 
-    QPen pen() const {
-        return m_pen;
-    };
-    void setPen(const QPen &);
+    QPen pen() const;
+    void setPen(const QPen &pen);
 
-    QBrush brush() const {
-        return m_brush;
-    };
-    void setBrush(const QBrush &);
+    QBrush brush() const;
+    void setBrush(const QBrush &brush);
 
-    static const int Rect;
-    virtual OROPrimitive* clone();
-protected:
-    QPen m_pen;
-    QBrush m_brush;
+    virtual OROPrimitive* clone() const;
+    
+private:
+    class Private;
+    Private * const d;
 };
 
 //
@@ -409,78 +412,50 @@ public:
     OROEllipse();
     virtual ~OROEllipse();
 
-    QRectF rect() const {
-        return QRectF(m_position, m_size);
-    };
-    void setRect(const QRectF &);
+    QRectF rect() const;
+    void setRect(const QRectF &rectangle);
 
-    QPen pen() const {
-        return m_pen;
-    };
-    void setPen(const QPen &);
+    QPen pen() const;
+    void setPen(const QPen &pen);
 
-    QBrush brush() const {
-        return m_brush;
-    };
-    void setBrush(const QBrush &);
+    QBrush brush() const;
+    void setBrush(const QBrush &brush);
 
-    static const int Ellipse;
-    virtual OROPrimitive* clone();
-
-protected:
-    QSizeF m_size;
-    QPen m_pen;
-    QBrush m_brush;
+    virtual OROPrimitive* clone() const;
+    
+private:
+    class Private;
+    Private * const d;
 };
 
-class KREPORT_EXPORT OROCheck : public OROPrimitive
+class KREPORT_EXPORT OROCheckBox : public OROPrimitive
 {
 public:
-    OROCheck();
-    virtual ~OROCheck();
-    virtual OROPrimitive* clone();
-    static const int Check;
-
-    void setCheckType(const QString& t) {
-        if (t == QLatin1String("Cross") || t == QLatin1String("Tick") || t == QLatin1String("Dot")) {
-            m_checkType = t;
-        } else {
-            m_checkType = QLatin1String("Cross");
-        }
-    }
-
-    QString checkType() const {
-        return m_checkType;
+    enum Type {
+        Cross = 1,
+        Tick,
+        Dot
     };
+    
+    OROCheckBox();
+    virtual ~OROCheckBox();
+    virtual OROPrimitive* clone() const;
 
-    void setValue(bool v) {
-        m_value = v;
-    }
-    bool value() const {
-        return m_value;
-    }
+    void setCheckType(Type type);
+    Type checkType() const;
 
-    void setLineStyle(const KReportLineStyle& ls) {
-        m_lineStyle = ls;
-    }
+    void setValue(bool val);
+    bool value() const;
 
-    KReportLineStyle lineStyle() const {
-        return m_lineStyle;
-    }
-    void setForegroundColor(const QColor& fg) {
-        m_fgColor = fg;
-    }
-    QColor foregroundColor() const {
-        return m_fgColor;
-    }
+    void setLineStyle(const KReportLineStyle& ls);
+    KReportLineStyle lineStyle() const;
+    
+    void setForegroundColor(const QColor& fg);
+    QColor foregroundColor() const;
 
-protected:
-    QSizeF m_size;
-    QString m_checkType;
-    bool m_value;
-    KReportLineStyle m_lineStyle;
-    QColor m_fgColor;
-
+private:
+    class Private;
+    Private * const d;
 
 };
 

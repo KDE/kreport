@@ -47,7 +47,7 @@ void KoOdtFrameReportPrimitive::setPrimitive(OROPrimitive *primitive)
 
 int KoOdtFrameReportPrimitive::pageNumber() const
 {
-    return isValid() && m_primitive->page() ? m_primitive->page()->page() + 1 : 0;
+    return isValid() && m_primitive->page() ? m_primitive->page()->pageNumber() + 1 : 0;
 }
 
 void KoOdtFrameReportPrimitive::setUID(int uid)

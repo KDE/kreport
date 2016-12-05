@@ -120,15 +120,21 @@ QString KReportItemCheckBox::typeName() const
 int KReportItemCheckBox::renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset,
                                         const QVariant &data, KReportScriptHandler *script)
 {
-    OROCheck *chk = new OROCheck();
+    OROCheckBox *chk = new OROCheckBox();
 
     chk->setPosition(scenePosition(position()) + offset);
     chk->setSize(sceneSize(size()));
 
     chk->setLineStyle(lineStyle());
     chk->setForegroundColor(m_foregroundColor->value().value<QColor>());
-    chk->setCheckType(m_checkStyle->value().toString());
-
+    if (m_checkStyle->value().toString() == QLatin1String("Cross")) {
+        chk->setCheckType(OROCheckBox::Cross);
+    } else if (m_checkStyle->value().toString() == QLatin1String("Dot")) {
+        chk->setCheckType(OROCheckBox::Dot);
+    } else {
+        chk->setCheckType(OROCheckBox::Tick);
+    }
+                
     QString str;
     bool v = false;
     QString cs = itemDataSource();
@@ -159,11 +165,11 @@ int KReportItemCheckBox::renderSimpleData(OROPage *page, OROSection *section, co
     chk->setValue(v);
 
     if (page) {
-        page->addPrimitive(chk);
+        page->insertPrimitive(chk);
     }
 
     if (section) {
-        OROCheck *chk2 = dynamic_cast<OROCheck*>(chk->clone());
+        OROCheckBox *chk2 = dynamic_cast<OROCheckBox*>(chk->clone());
         chk2->setPosition(scenePosition(position()));
         section->addPrimitive(chk2);
     }

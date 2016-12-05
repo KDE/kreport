@@ -46,9 +46,9 @@ bool KoReportKSpreadRenderer::render(const KoReportRendererContext& context, ORO
     bool renderedPageFooter = false;
 
     // Render Each Section
-    for (long s = 0; s < document->sections(); s++) {
+    for (int s = 0; s < document->sectionCount(); s++) {
         OROSection *section = document->section(s);
-        section->sortPrimatives(OROSection::SortX);
+        section->sortPrimitives(OROSection::SortX);
 
         if (section->type() == KReportSectionData::GroupHeader ||
                 section->type() == KReportSectionData::GroupFooter ||
@@ -56,7 +56,7 @@ bool KoReportKSpreadRenderer::render(const KoReportRendererContext& context, ORO
                 section->type() == KReportSectionData::ReportHeader ||
                 section->type() == KReportSectionData::ReportFooter ||
                 (section->type() == KReportSectionData::PageHeaderAny && !renderedPageHeader) ||
-                (section->type() == KReportSectionData::PageFooterAny && !renderedPageFooter && s > document->sections() - 2)) { //render the page foot right at the end, it will either be the last or second last section if there is a report footer
+                (section->type() == KReportSectionData::PageFooterAny && !renderedPageFooter && s > document->sectionCount() - 2)) { //render the page foot right at the end, it will either be the last or second last section if there is a report footer
             if (section->type() == KReportSectionData::PageHeaderAny)
                 renderedPageHeader = true;
 
@@ -64,7 +64,7 @@ bool KoReportKSpreadRenderer::render(const KoReportRendererContext& context, ORO
                 renderedPageFooter = true;
 
             //Render the objects in each section
-            for (int i = 0; i < section->primitives(); i++) {
+            for (int i = 0; i < section->primitiveCount(); i++) {
                 OROPrimitive * prim = section->primitive(i);
 
                 if (prim->type() == OROTextBox::TextBox) {

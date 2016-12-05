@@ -24,19 +24,19 @@
 
 class KoGenStyles;
 class KoXmlWriter;
-class OROCheck;
+class OROCheckBox;
 
 class KoOdtFrameReportCheckBox : public KoOdtFrameReportPrimitive
 {
 public:
-    explicit KoOdtFrameReportCheckBox(OROCheck *primitive);
+    explicit KoOdtFrameReportCheckBox(OROCheckBox *primitive);
     virtual ~KoOdtFrameReportCheckBox();
 
     virtual void createStyle(KoGenStyles *coll);
     virtual void createBody(KoXmlWriter *bodyWriter) const;
     virtual bool saveData(KoStore *store, KoXmlWriter *manifestWriter) const;
 
-    OROCheck *checkBox() const;
+    OROCheckBox *checkBox() const;
 
 protected:
     void frameStyle(KoGenStyles &coll);

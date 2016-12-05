@@ -100,7 +100,7 @@ void KReportItemWeb::loadFinished(bool)
 
         pic->setPosition(pos);
         pic->setSize(siz);
-        if (m_targetPage) m_targetPage->addPrimitive(pic, false, true);
+        if (m_targetPage) m_targetPage->insertPrimitive(pic);
 
         OROPicture *p2 = dynamic_cast<OROPicture*>(pic->clone());
         if (p2) {

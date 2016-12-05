@@ -235,7 +235,7 @@ int KReportItemField::renderSimpleData(OROPage *page, OROSection *section, const
                 str = v.toString();
             } else {
                 str = ids.mid(1);
-                tb->setRequiresPostProcessing();
+                tb->setRequiresPostProcessing(true);
             }
         } else
 #else
@@ -270,7 +270,7 @@ int KReportItemField::renderSimpleData(OROPage *page, OROSection *section, const
     }
 
     if (page) {
-        page->addPrimitive(tb);
+        page->insertPrimitive(tb);
     }
 
     if (section) {

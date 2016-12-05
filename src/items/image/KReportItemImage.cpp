@@ -169,7 +169,7 @@ int KReportItemImage::renderSimpleData(OROPage *page, OROSection *section, const
     id->setPosition(scenePosition(position()) + offset);
     id->setSize(sceneSize(size()));
     if (page) {
-        page->addPrimitive(id);
+        page->insertPrimitive(id);
     }
 
     if (section) {
