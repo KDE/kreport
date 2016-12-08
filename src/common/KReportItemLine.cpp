@@ -21,6 +21,7 @@
 
 #include <KPropertySet>
 
+#include <QCoreApplication>
 #include <QDomNode>
 
 KReportItemLine::KReportItemLine()
@@ -43,8 +44,8 @@ KReportItemLine::KReportItemLine(const QDomNode & element)
     _s.setY(KReportUnit::parseValue(element.toElement().attribute(QLatin1String("svg:y1"), QLatin1String("1cm"))));
     _e.setX(KReportUnit::parseValue(element.toElement().attribute(QLatin1String("svg:x2"), QLatin1String("1cm"))));
     _e.setY(KReportUnit::parseValue(element.toElement().attribute(QLatin1String("svg:y2"), QLatin1String("2cm"))));
-    m_start.setPointPos(_s);
-    m_end.setPointPos(_e);
+    m_start->setValue(_s);
+    m_end->setValue(_e);
 
     for (int i = 0; i < nl.count(); i++) {
         node = nl.item(i);
@@ -69,14 +70,19 @@ KReportItemLine::~KReportItemLine()
 
 void KReportItemLine::createProperties()
 {
-    m_lineWeight = new KProperty("line-weight", 1, tr("Line Weight"));
+    m_start = new KProperty("startposition", QPointF(), QCoreApplication::translate("StartPosition", "Start Position"));
+    m_end = new KProperty("endposition", QPointF(), QCoreApplication::translate("EndPosition", "End Position"));
+
+    m_lineWeight = new KProperty("line-weight", 1.0, tr("Line Weight"));
     m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
     m_lineStyle = new KProperty("line-style", (int)Qt::SolidLine, tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
-    m_start.setName(QLatin1String("Start"));
-    m_end.setName(QLatin1String("End"));
-
-    propertySet()->addProperty(m_start.property());
-    propertySet()->addProperty(m_end.property());
+    
+    //Remove the unused properies from KReportItemBase
+    propertySet()->removeProperty("size");
+    propertySet()->removeProperty("position");
+    
+    propertySet()->addProperty(m_start);
+    propertySet()->addProperty(m_end);
     propertySet()->addProperty(m_lineWeight);
     propertySet()->addProperty(m_lineColor);
     propertySet()->addProperty(m_lineStyle);
@@ -113,8 +119,8 @@ int KReportItemLine::renderSimpleData(OROPage *page, OROSection *section, const 
     Q_UNUSED(data)
 
     OROLine * ln = new OROLine();
-    QPointF s = m_start.toScene();
-    QPointF e = m_end.toScene();
+    QPointF s = scenePosition(m_start->value().toPointF());
+    QPointF e = scenePosition(m_end->value().toPointF());
 
     s += offset;
     e += offset;
@@ -125,8 +131,8 @@ int KReportItemLine::renderSimpleData(OROPage *page, OROSection *section, const 
     if (page) page->insertPrimitive(ln);
 
     OROLine *l2 = dynamic_cast<OROLine*>(ln->clone());
-    l2->setStartPoint(m_start.toPoint());
-    l2->setEndPoint(m_end.toPoint());
+    l2->setStartPoint(m_start->value().toPointF());
+    l2->setEndPoint(m_end->value().toPointF());
     if (section) section->addPrimitive(l2);
 
     return 0;
@@ -134,17 +140,17 @@ int KReportItemLine::renderSimpleData(OROPage *page, OROSection *section, const 
 
 void KReportItemLine::setUnit(const KReportUnit &u)
 {
-    m_start.setUnit(u);
-    m_end.setUnit(u);
+    m_start->setOption("unit", u.symbol());
+    m_end->setOption("unit", u.symbol());
 }
 
-KReportPosition KReportItemLine::startPosition() const
+QPointF KReportItemLine::startPosition() const
 {
-    return m_start;
+    return m_start->value().toPointF();
 }
 
-KReportPosition KReportItemLine::endPosition() const
+QPointF KReportItemLine::endPosition() const
 {
-    return m_end;
+    return m_end->value().toPointF();
 }
 

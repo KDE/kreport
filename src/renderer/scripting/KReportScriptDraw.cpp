@@ -17,8 +17,6 @@
 
 #include "KReportScriptDraw.h"
 #include "KReportRenderObjects.h"
-#include "KReportPosition.h"
-#include "KReportSize.h"
 
 #include <QFont>
 #include <QFontMetrics>
@@ -48,12 +46,8 @@ void KReportScriptDraw::rectangle(qreal x, qreal y, qreal w, qreal h, const QStr
 {
     if (m_curPage) {
         ORORect *r = new ORORect();
-        KReportPosition p;
-        KReportSize s;
 
-        p.setPointPos(QPointF(x, y));
-        s.setPointSize(QSizeF(w, h));
-        r->setRect(QRectF(p.toScene() + m_curOffset, s.toScene()));
+        r->setRect(QRectF(KReportItemBase::scenePosition(QPointF(x, y)) + m_curOffset, KReportItemBase::sceneSize(QSizeF(w, h))));
 
         QPen pen(QColor(lc), lw);
         QColor c(fc);
@@ -70,12 +64,8 @@ void KReportScriptDraw::ellipse(qreal x, qreal y, qreal w, qreal h, const QStrin
 {
     if (m_curPage) {
         OROEllipse *e = new OROEllipse();
-        KReportPosition p;
-        KReportSize s;
 
-        p.setPointPos(QPointF(x, y));
-        s.setPointSize(QSizeF(w, h));
-        e->setRect(QRectF(p.toScene() + m_curOffset, s.toScene()));
+        e->setRect(QRectF(KReportItemBase::scenePosition(QPointF(x, y)) + m_curOffset, KReportItemBase::sceneSize(QSizeF(w, h))));
 
         QPen pen(QColor(lc), lw);
         QColor c(fc);
@@ -92,14 +82,9 @@ void KReportScriptDraw::line(qreal x1, qreal y1, qreal x2, qreal y2, const QStri
 {
     if (m_curPage) {
         OROLine *ln = new OROLine();
-        KReportPosition s;
-        KReportPosition e;
 
-        s.setPointPos(QPointF(x1, y1));
-        e.setPointPos(QPointF(x2, y2));
-
-        ln->setStartPoint(s.toScene() + m_curOffset);
-        ln->setEndPoint(e.toScene() + m_curOffset);
+        ln->setStartPoint(KReportItemBase::scenePosition(QPointF(x1, y1) + m_curOffset));
+        ln->setEndPoint(KReportItemBase::scenePosition(QPointF(x2, y2) + m_curOffset));
 
         KReportLineStyle ls;
         ls.setColor(QColor(lc));

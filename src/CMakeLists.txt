@@ -9,8 +9,6 @@ endif()
 set(kreport_LIB_SRCS
     common/kreport_debug.cpp
     common/kreportplugin_debug.cpp
-    common/KReportPosition.cpp
-    common/KReportSize.cpp
     common/KReportItemBase.cpp
     common/KReportAsyncItemBase.cpp
     common/KReportSectionData.cpp
@@ -259,8 +257,6 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
         KReportUnit
         KReportUtils
         KReportDesign
-        KReportSize
-        KReportPosition
         KReportDocument
         KReportSectionData
         KReportRenderObjects

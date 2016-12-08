@@ -19,7 +19,6 @@
 #define KREPORTITEMLINE_H
 
 #include "KReportItemBase.h"
-#include "KReportPosition.h"
 #include "kreport_export.h"
 
 class QDomNode;
@@ -44,12 +43,12 @@ public:
 
     virtual void setUnit(const KReportUnit&);
 
-    KReportPosition startPosition() const;
-    KReportPosition endPosition() const;
+    QPointF startPosition() const;
+    QPointF endPosition() const;
 
 protected:
-    KReportPosition m_start;
-    KReportPosition m_end;
+    KProperty *m_start;
+    KProperty *m_end;
     KProperty *m_lineColor;
     KProperty *m_lineWeight;
     KProperty *m_lineStyle;

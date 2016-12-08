@@ -18,6 +18,9 @@
 #include "KReportScriptCheck.h"
 #include <KProperty>
 
+#include <QSizeF>
+#include <QPointF>
+
 namespace Scripting
 {
 

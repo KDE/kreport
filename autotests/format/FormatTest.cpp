@@ -27,8 +27,6 @@
 #include "KReportDocument.h"
 #include "KReportDesignerSectionDetail.h"
 #include "KReportSection.h"
-#include "KReportPosition.h"
-#include "KReportSize.h"
 #include "KReportDesignerItemLine.h"
 #include "KReportItemLine.h"
 #include "KReportDesignerItemRectBase.h"

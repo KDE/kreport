@@ -19,8 +19,6 @@
 #define KREPORTITEMTEXT_H
 
 #include "KReportItemBase.h"
-#include "KReportPosition.h"
-#include "KReportSize.h"
 
 #include <KProperty>
 

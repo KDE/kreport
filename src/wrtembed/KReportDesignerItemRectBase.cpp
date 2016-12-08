@@ -19,8 +19,6 @@
 #include "KReportDesignerItemRectBase.h"
 #include "KReportDesignerSectionView.h"
 #include "KReportDesigner.h"
-#include "KReportPosition.h"
-#include "KReportSize.h"
 #include "KReportDesignerSectionScene.h"
 #include "KReportDpi.h"
 

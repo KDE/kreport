@@ -18,6 +18,9 @@
 
 #include <QFile>
 #include <QTextStream>
+#include <QSizeF>
+#include <QPointF>
+
 #include "kreportplugin_debug.h"
 
 namespace Scripting

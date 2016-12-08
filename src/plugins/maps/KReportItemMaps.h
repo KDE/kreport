@@ -26,8 +26,6 @@
 
 #include <KProperty>
 
-#include "KReportPosition.h"
-#include "KReportSize.h"
 #include "KReportMapRenderer.h"
 
 #include <QDomNode>

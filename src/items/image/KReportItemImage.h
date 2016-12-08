@@ -19,8 +19,6 @@
 #define KREPORTITEMIMAGE_H
 
 #include "KReportItemBase.h"
-#include "KReportPosition.h"
-#include "KReportSize.h"
 
 class QDomNode;
 

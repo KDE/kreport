@@ -19,8 +19,6 @@
 
 #include "KReportUtils.h"
 #include "KReportUnit.h"
-#include "KReportPosition.h"
-#include "KReportSize.h"
 #include "KReportItemBase.h"
 #include "KReportLineStyle.h"
 
@@ -502,6 +500,7 @@ bool KReportUtils::parseReportLineStyleData(const QDomElement & elemSource, KRep
     return false;
 }
 
+#if 0
 bool KReportUtils::parseReportRect(const QDomElement & elemSource, KReportPosition *pos, KReportSize *size)
 {
     Q_ASSERT(pos);
@@ -523,6 +522,7 @@ bool KReportUtils::parseReportRect(const QDomElement & elemSource, KReportPositi
     size->setPointSize(_siz);
     return true;
 }
+#endif
 
 class PageIds : private QHash<QString, QPageSize::PageSizeId>
 {

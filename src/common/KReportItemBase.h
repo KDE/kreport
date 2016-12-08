@@ -20,9 +20,8 @@
 
 #include "config-kreport.h"
 #include "kreport_export.h"
-#include "KReportPosition.h"
-#include "KReportSize.h"
 #include "KReportDpi.h"
+#include "KReportUnit.h"
 
 #include <QObject>
 #include <QFont>

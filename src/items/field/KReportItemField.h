@@ -19,7 +19,6 @@
 #define KREPORTITEMFIELD_H
 
 #include "KReportItemBase.h"
-#include "KReportSize.h"
 
 #include <KProperty>
 

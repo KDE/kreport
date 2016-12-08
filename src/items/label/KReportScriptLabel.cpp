@@ -17,6 +17,9 @@
 
 #include "KReportScriptLabel.h"
 
+#include <QSizeF>
+#include <QPointF>
+
 namespace Scripting
 {
 Label::Label(KReportItemLabel *l)

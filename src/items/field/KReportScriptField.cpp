@@ -17,6 +17,10 @@
 
 #include "KReportScriptField.h"
 
+#include <QSizeF>
+#include <QPointF>
+
+
 namespace Scripting
 {
 Field::Field(KReportItemField *f)

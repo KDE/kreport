@@ -21,6 +21,8 @@
 #include "KReportAsyncItemBase.h"
 #include "kreport_debug.h"
 
+#include <QPointF>
+
 namespace KReportPrivate {
   
 class RenderData {

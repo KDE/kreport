@@ -22,8 +22,6 @@
 #define KREPORTITEMWEB_H
 
 #include "KReportAsyncItemBase.h"
-#include "KReportPosition.h"
-#include "KReportSize.h"
 #include "KReportData.h"
 
 #include <QGraphicsScene>
