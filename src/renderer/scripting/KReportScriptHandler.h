@@ -38,6 +38,7 @@ namespace Scripting
 class Report;
 class Section;
 }
+
 class KREPORT_EXPORT KReportScriptHandler : public QObject
 {
     Q_OBJECT
@@ -55,35 +56,18 @@ public Q_SLOTS:
     void slotEnteredSection(KReportSectionData*, OROPage*, QPointF);
     void slotEnteredGroup(const QString&, const QVariant&);
     void slotExitedGroup(const QString&, const QVariant&);
-    void setPageNumber(int p) {
-        m_constants->setPageNumber(p);
-    }
-    void setPageTotal(int t) {
-        m_constants->setPageTotal(t);
-    }
+    void setPageNumber(int p);
+    void setPageTotal(int t);
     void newPage();
 
 Q_SIGNALS:
     void groupChanged(const QMap<QString, QVariant> &groupData);
 
 private:
-    KReportScriptConstants *m_constants;
-    KReportScriptDebug *m_debug;
-    KReportScriptDraw *m_draw;
-
-    Scripting::Report *m_report;
-
-    const KReportData *m_kreportData;
-
-    QString m_source;
-    KReportDocument  *m_reportData;
-
-    QJSEngine* m_engine;
-    QJSValue m_scriptValue;
-
-    QMap<QString, QVariant> m_groups;
-    QMap<KReportSectionData*, Scripting::Section*> m_sectionMap;
-//! @todo KEXI3 QString where();
+    //! @todo KEXI3 QString where();
+    Q_DISABLE_COPY(KReportScriptHandler)
+    class Private;
+    Private * const d;
 };
 
 #else // !KREPORT_SCRIPTING

@@ -34,104 +34,129 @@
 #include <QJSEngine>
 #include <QJSValue>
 
-KReportScriptHandler::KReportScriptHandler(const KReportData* kodata, KReportDocument* d)
+class Q_DECL_HIDDEN KReportScriptHandler::Private
 {
-    m_reportData = d;
-    m_kreportData = kodata;
+public:
+    Private();
+    ~Private();
+    KReportScriptConstants *constants;
+    KReportScriptDebug *debug;
+    KReportScriptDraw *draw;
 
-    m_engine = 0;
-    m_constants = 0;
-    m_debug = 0;
-    m_draw = 0;
+    Scripting::Report *report;
 
-    // Create the script engine instance .
-    m_engine = new QJSEngine(this);
+    const KReportData *reportData;
 
+    QString source;
+    KReportDocument  *reportDocument;
+
+    QJSEngine engine;
+    QJSValue scriptValue;
+
+    QMap<QString, QVariant> groups;
+    QMap<KReportSectionData*, Scripting::Section*> sectionMap;
+};
+
+KReportScriptHandler::Private::Private()
+{
+    //NOTE these are on the heap so that engine can delete them
+    
     //Add constants object
-    m_constants = new KReportScriptConstants();
-    registerScriptObject(m_constants, QLatin1String("constants"));
+    constants = new KReportScriptConstants();
 
     //A simple debug function to allow printing from functions
-    m_debug = new KReportScriptDebug();
-    registerScriptObject(m_debug, QLatin1String("debug"));
+    debug = new KReportScriptDebug();
 
     //A simple drawing object
-    m_draw = new KReportScriptDraw();
-    registerScriptObject(m_draw, QLatin1String("draw"));
+    draw = new KReportScriptDraw();
+}
+
+KReportScriptHandler::Private::~Private()
+{
+}
+
+KReportScriptHandler::KReportScriptHandler(const KReportData* kodata, KReportDocument* doc) : d(new Private())
+{
+    d->reportDocument = doc;
+    d->reportData = kodata;
 
     //Add a general report object
-    m_report = new Scripting::Report(m_reportData);
-    QJSValue r = registerScriptObject(m_report, m_reportData->name());
+    d->report = new Scripting::Report(d->reportDocument);
+    
+    registerScriptObject(d->constants, QLatin1String("constants"));
+    registerScriptObject(d->debug, QLatin1String("debug"));
+    registerScriptObject(d->draw, QLatin1String("draw"));
+
+    QJSValue r = registerScriptObject(d->report, d->reportDocument->name());
 
     //Add the sections
-    QList<KReportSectionData*> secs = m_reportData->sections();
+    QList<KReportSectionData*> secs = d->reportDocument->sections();
     foreach(KReportSectionData *sec, secs) {
-        m_sectionMap[sec] = new Scripting::Section(sec);
-        m_sectionMap[sec]->setParent(m_report);
-        m_sectionMap[sec]->setObjectName(sec->name().replace(QLatin1Char('-'), QLatin1Char('_'))
+        d->sectionMap[sec] = new Scripting::Section(sec);
+        d->sectionMap[sec]->setParent(d->report);
+        d->sectionMap[sec]->setObjectName(sec->name().replace(QLatin1Char('-'), QLatin1Char('_'))
                                          .remove(QLatin1String("report:")));
-        QJSValue s = m_engine->newQObject(m_sectionMap[sec]);
-        r.setProperty(m_sectionMap[sec]->objectName(), s);
-        //kreportDebug() << "Added" << m_sectionMap[sec]->objectName() << "to report" << m_reportData->name();
+        QJSValue s = d->engine.newQObject(d->sectionMap[sec]);
+        r.setProperty(d->sectionMap[sec]->objectName(), s);
+        //kreportDebug() << "Added" << d->sectionMap[sec]->objectName() << "to report" << d->reportData->name();
     }
 
-    //kreportDebug() << "Report name is" << m_reportData->name();
+    //kreportDebug() << "Report name is" << d->reportData->name();
 }
 
 bool KReportScriptHandler::trigger()
 {
-    QString code = m_kreportData->scriptCode(m_reportData->script());
+    QString code = d->reportData->scriptCode(d->reportDocument->script());
     //kreportDebug() << code;
 
     if (code.isEmpty()) {
         return true;
     }
 
-    m_scriptValue = m_engine->evaluate(code, m_reportData->script());
+    d->scriptValue = d->engine.evaluate(code, d->reportDocument->script());
 
-    if (m_scriptValue.isError()) {
+    if (d->scriptValue.isError()) {
         return false;
     }/*TODO else {
-        kreportDebug() << "Function Names:" << m_engine->functionNames();
+        kreportDebug() << "Function Names:" << d->engine->functionNames();
     }*/
-    m_report->eventOnOpen();
+    d->report->eventOnOpen();
     return true;
 }
 
 KReportScriptHandler::~KReportScriptHandler()
 {
-    delete m_report;
-    delete m_engine;
+    delete d;
 }
 
 void KReportScriptHandler::newPage()
 {
-    if (m_report) {
-        m_report->eventOnNewPage();
+    if (d->report) {
+        d->report->eventOnNewPage();
     }
 }
 
 void KReportScriptHandler::slotEnteredGroup(const QString &key, const QVariant &value)
 {
     //kreportDebug() << key << value;
-    m_groups[key] = value;
-    emit(groupChanged(m_groups));
+    d->groups[key] = value;
+    emit(groupChanged(d->groups));
 }
 void KReportScriptHandler::slotExitedGroup(const QString &key, const QVariant &value)
 {
     Q_UNUSED(value);
     //kreportDebug() << key << value;
-    m_groups.remove(key);
-    emit(groupChanged(m_groups));
+    d->groups.remove(key);
+    emit(groupChanged(d->groups));
 }
 
 void KReportScriptHandler::slotEnteredSection(KReportSectionData *section, OROPage* cp, QPointF off)
 {
     if (cp)
-        m_draw->setPage(cp);
-    m_draw->setOffset(off);
+        d->draw->setPage(cp);
+    d->draw->setOffset(off);
 
-    Scripting::Section *ss = m_sectionMap[section];
+    Scripting::Section *ss = d->sectionMap[section];
     if (ss) {
         ss->eventOnRender();
     }
@@ -139,12 +164,12 @@ void KReportScriptHandler::slotEnteredSection(KReportSectionData *section, OROPa
 
 QVariant KReportScriptHandler::evaluate(const QString &code)
 {
-    if (!m_scriptValue.isError()) {
-        QJSValue result = m_engine->evaluate(code);
+    if (!d->scriptValue.isError()) {
+        QJSValue result = d->engine.evaluate(code);
         if (!result.isError()) {
             return result.toVariant();
         } else {
-            QMessageBox::warning(0, tr("Script Error"), m_scriptValue.toString());
+            QMessageBox::warning(0, tr("Script Error"), d->scriptValue.toString());
         }
     }
     return QVariant();
@@ -152,8 +177,8 @@ QVariant KReportScriptHandler::evaluate(const QString &code)
 
 void KReportScriptHandler::displayErrors()
 {
-    if (m_scriptValue.isError()) {
-        QMessageBox::warning(0, tr("Script Error"), m_scriptValue.toString());
+    if (d->scriptValue.isError()) {
+        QMessageBox::warning(0, tr("Script Error"), d->scriptValue.toString());
     }
 }
 
@@ -162,8 +187,8 @@ void KReportScriptHandler::displayErrors()
 QString KReportScriptHandler::where()
 {
     QString w;
-    QMap<QString, QVariant>::const_iterator i = m_groups.constBegin();
-    while (i != m_groups.constEnd()) {
+    QMap<QString, QVariant>::const_iterator i = d->groups.constBegin();
+    while (i != d->groups.constEnd()) {
         w += QLatin1Char('(') + i.key() + QLatin1String(" = '") + i.value().toString() + QLatin1String("') AND ");
         ++i;
     }
@@ -176,8 +201,17 @@ QString KReportScriptHandler::where()
 QJSValue KReportScriptHandler::registerScriptObject(QObject* obj, const QString& name)
 {
     QJSValue val;
-    val = m_engine->newQObject(obj);
-    m_engine->globalObject().setProperty(name, val);
+    val = d->engine.newQObject(obj);
+    d->engine.globalObject().setProperty(name, val);
     return val;
 }
 
+void KReportScriptHandler::setPageNumber(int p)
+{
+    d->constants->setPageNumber(p);
+}
+
+void KReportScriptHandler::setPageTotal(int t)
+{
+    d->constants->setPageTotal(t);
+}
