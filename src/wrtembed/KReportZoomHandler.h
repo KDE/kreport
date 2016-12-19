@@ -37,7 +37,7 @@ class QSizeF;
  * An instance of KReportZoomHandler operates at a given zoom  and resolution
  * so there is usually one instance of KReportZoomHandler per view.
  */
-class KREPORT_EXPORT KReportZoomHandler
+class KReportZoomHandler
 {
 public:
 

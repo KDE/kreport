@@ -28,7 +28,7 @@
 /**
  * The ZoomMode container
  */
-class KREPORT_EXPORT KReportZoomMode
+class KReportZoomMode
 {
 public:
     enum Mode
