@@ -4,7 +4,6 @@
             {
                 "Email": "kexi@kde.org", 
                 "Name": "Kexi Team", 
-                "Name[ast]": "L'equipu de Kexi", 
                 "Name[ca@valencia]": "L'equip del Kexi", 
                 "Name[ca]": "L'equip del Kexi", 
                 "Name[cs]": "Tým Kexi", 
@@ -46,7 +45,6 @@
         "Id": "org.kde.kreport.field", 
         "License": "LGPL", 
         "Name": "Field", 
-        "Name[ast]": "Campu", 
         "Name[ca@valencia]": "Camp", 
         "Name[ca]": "Camp", 
         "Name[cs]": "Pole", 
