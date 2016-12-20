@@ -54,7 +54,7 @@ bool HTMLTableRenderer::render(const KReportRendererContext& context, ORODocumen
 
     QString tempFileName = fi.absoluteFilePath();
     m_tempDirName = tempFileName + dirSuffix;
-    m_actualDirName = context.destinationUrl.fileName() + dirSuffix;
+    m_actualDirName = context.url().fileName() + dirSuffix;
 
     if (!tempDir.mkpath(m_tempDirName))
         return false;

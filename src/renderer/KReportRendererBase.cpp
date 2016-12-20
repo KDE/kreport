@@ -26,10 +26,76 @@
 //! @todo port #include "KReportODTRenderer.h"
 //! @todo port #include "KOdtFrameReportRenderer.h"
 
-KReportRendererContext::KReportRendererContext()
- : painter(0), printer(0)
+class Q_DECL_HIDDEN KReportRendererContext::Private 
+{
+public:
+    Private();
+    ~Private();
+    QUrl destinationUrl;
+    QPainter *painter = nullptr;
+    QPrinter *printer = nullptr;    
+};
+
+KReportRendererContext::Private::Private()
 {
 }
+
+KReportRendererContext::Private::~Private()
+{
+}
+
+
+KReportRendererContext::KReportRendererContext()
+ : d(new Private())
+{
+}
+
+KReportRendererContext::~KReportRendererContext()
+{
+    delete d;
+}
+
+QPainter * KReportRendererContext::painter() const
+{
+    return d->painter;
+}
+
+QPrinter * KReportRendererContext::printer() const
+{
+    return d->printer;
+}
+
+
+QPainter * KReportRendererContext::painter()
+{
+    return d->painter;
+}
+
+QPrinter * KReportRendererContext::printer()
+{
+    return d->printer;
+}
+
+void KReportRendererContext::setUrl(const QUrl& url)
+{
+    d->destinationUrl = url;
+}
+
+void KReportRendererContext::setPainter(QPainter* painter)
+{
+    d->painter = painter;
+}
+
+void KReportRendererContext::setPrinter(QPrinter* printer)
+{
+    d->printer = printer;
+}
+
+QUrl KReportRendererContext::url() const
+{
+    return d->destinationUrl;
+}
+
 
 KReportRendererBase::KReportRendererBase()
 {
@@ -39,8 +105,19 @@ KReportRendererBase::~KReportRendererBase()
 {
 }
 
-KReportRendererFactory::KReportRendererFactory()
+class KReportRendererFactory::Private 
 {
+public:
+    bool dummy = true;
+};
+
+KReportRendererFactory::KReportRendererFactory() : d(new Private())
+{
+}
+
+KReportRendererFactory::~KReportRendererFactory()
+{
+    delete d;
 }
 
 KReportRendererBase* KReportRendererFactory::createInstance(const QString& key)

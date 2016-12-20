@@ -109,7 +109,7 @@ void KReportPage::renderPage(int page)
     QPainter qp(&d->pixmap);
     if (d->reportDocument) {
         KReportRendererContext cxt;
-        cxt.painter = &qp;
+        cxt.setPainter(&qp);
         d->renderer->render(cxt, d->reportDocument, d->page);
     }
     update();

@@ -33,9 +33,23 @@ class KREPORT_EXPORT KReportRendererContext
 {
     public:
         KReportRendererContext();
-        QUrl destinationUrl;
-        QPainter *painter;
-        QPrinter *printer;
+        ~KReportRendererContext();
+        
+        void setUrl(const QUrl& url);
+        void setPainter(QPainter* painter);
+        void setPrinter(QPrinter* printer);
+        
+        QPrinter *printer();
+        QPainter *painter();
+        QPrinter *printer() const;
+        QPainter *painter() const;
+        
+        QUrl url() const;
+        
+    private:
+        Q_DISABLE_COPY(KReportRendererContext)
+        class Private;
+        Private * const d;
 };
 
 //! Base class for report renderers.
@@ -57,8 +71,14 @@ class KREPORT_EXPORT KReportRendererFactory
 {
     public:
         KReportRendererFactory();
-
+        ~KReportRendererFactory();
+        
         KReportRendererBase* createInstance(const QString& key);
+        
+    private:
+        Q_DISABLE_COPY(KReportRendererFactory)
+        class Private;
+        Private * const d;
 };
 
 #endif // KREPORTRENDERERBASE_H

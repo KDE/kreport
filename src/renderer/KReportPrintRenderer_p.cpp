@@ -59,38 +59,38 @@ bool PrintRenderer::setupPrinter( ORODocument * document, QPrinter * pPrinter)
 bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *document, int page)
 {
     Q_UNUSED(page);
-    if (document == 0 || context.printer == 0 || context.painter == 0)
+    if (document == 0 || context.printer() == 0 || context.painter() == 0)
         return false;
 
-    setupPrinter(document, context.printer);
+    setupPrinter(document, context.printer());
 
     bool endWhenComplete = false;
 
 
-    if (!context.painter->isActive()) {
+    if (!context.painter()->isActive()) {
         endWhenComplete = true;
-        if (!context.painter->begin(context.printer))
+        if (!context.painter()->begin(context.printer()))
             return false;
     }
 
-    int fromPage = context.printer->fromPage();
+    int fromPage = context.printer()->fromPage();
     if (fromPage > 0)
         fromPage -= 1;
-    int toPage = context.printer->toPage();
+    int toPage = context.printer()->toPage();
     if (toPage == 0 || toPage > document->pageCount())
         toPage = document->pageCount();
 
-    qreal scaleX = context.printer->resolution() / qreal(KReportDpi::dpiX());
-    qreal scaleY = context.printer->resolution() / qreal(KReportDpi::dpiY());
+    qreal scaleX = context.printer()->resolution() / qreal(KReportDpi::dpiX());
+    qreal scaleY = context.printer()->resolution() / qreal(KReportDpi::dpiY());
 
 
-    for (int copy = 0; copy < context.printer->numCopies(); copy++) {
+    for (int copy = 0; copy < context.printer()->numCopies(); copy++) {
         for (int page = fromPage; page < toPage; page++) {
             if (page > fromPage)
-                context.printer->newPage();
+                context.printer()->newPage();
 
             OROPage * p = document->page(page);
-            if (context.printer->pageOrder() == QPrinter::LastPageFirst)
+            if (context.printer()->pageOrder() == QPrinter::LastPageFirst)
                 p = document->page(toPage - 1 - page);
 
             // Render Page Objects
@@ -109,42 +109,42 @@ bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *d
                     QSizeF sz = tb->size();
                     QRectF rc = QRectF(ps.x(), ps.y(), sz.width(), sz.height());
 
-                    context.painter->save();
+                    context.painter()->save();
                     //Background
 
                     QColor bg = tb->textStyle().backgroundColor;
                     bg.setAlphaF(0.01 * tb->textStyle().backgroundOpacity);
 
-                    //_painter->setBackgroundMode(Qt::OpaqueMode);
-                    context.painter->fillRect(rc, bg);
+                    //_painter()->setBackgroundMode(Qt::OpaqueMode);
+                    context.painter()->fillRect(rc, bg);
 
                     //Text
-                    context.painter->setBackgroundMode(Qt::TransparentMode);
-                    context.painter->setFont(tb->textStyle().font);
-                    context.painter->setPen(tb->textStyle().foregroundColor);
-                    context.painter->drawText(rc, tb->flags(), tb->text());
+                    context.painter()->setBackgroundMode(Qt::TransparentMode);
+                    context.painter()->setFont(tb->textStyle().font);
+                    context.painter()->setPen(tb->textStyle().foregroundColor);
+                    context.painter()->drawText(rc, tb->flags(), tb->text());
 
                     //outer line
-                    context.painter->setPen(QPen(tb->lineStyle().color(), tb->lineStyle().width() * scaleX, tb->lineStyle().penStyle()));
-                    context.painter->drawRect(rc);
+                    context.painter()->setPen(QPen(tb->lineStyle().color(), tb->lineStyle().width() * scaleX, tb->lineStyle().penStyle()));
+                    context.painter()->drawRect(rc);
 
                     //Reset back to defaults for next element
-                    context.painter->restore();
+                    context.painter()->restore();
 
                 } else if (dynamic_cast<OROLine*>(prim)) {
                     //kreportDebug() << "Line";
                     OROLine * ln = dynamic_cast<OROLine*>(prim);
                     QPointF s = ln->startPoint();
                     QPointF e(ln->endPoint().x() * scaleX, ln->endPoint().y() * scaleY);
-                    //QPen pen ( _painter->pen() );
+                    //QPen pen ( _painter()->pen() );
                     QPen pen(ln->lineStyle().color(), ln->lineStyle().width() * scaleX, ln->lineStyle().penStyle());
 
-                    context.painter->save();
-                    context.painter->setRenderHint(QPainter::Antialiasing, true);
-                    context.painter->setPen(pen);
-                    context.painter->drawLine(QLineF(s.x(), s.y(), e.x(), e.y()));
-                    context.painter->setRenderHint(QPainter::Antialiasing, false);
-                    context.painter->restore();
+                    context.painter()->save();
+                    context.painter()->setRenderHint(QPainter::Antialiasing, true);
+                    context.painter()->setPen(pen);
+                    context.painter()->drawLine(QLineF(s.x(), s.y(), e.x(), e.y()));
+                    context.painter()->setRenderHint(QPainter::Antialiasing, false);
+                    context.painter()->restore();
                 } else if (dynamic_cast<OROImage*>(prim)) {
                     //kreportDebug() << "Image";
                     OROImage * im = dynamic_cast<OROImage*>(prim);
@@ -157,7 +157,7 @@ bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *d
                         img = img.scaled(rc.size().toSize(), (Qt::AspectRatioMode) im->aspectRatioMode(), (Qt::TransformationMode) im->transformationMode());
 
                     QRectF sr = QRectF(QPointF(0.0, 0.0), rc.size().boundedTo(img.size()));
-                    context.painter->drawImage(rc.topLeft(), img, sr);
+                    context.painter()->drawImage(rc.topLeft(), img, sr);
                 } else if (dynamic_cast<ORORect*>(prim)) {
                     //kreportDebug() << "Rect";
                     ORORect * re = dynamic_cast<ORORect*>(prim);
@@ -166,11 +166,11 @@ bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *d
                     QSizeF sz = re->size();
                     QRectF rc = QRectF(ps.x(), ps.y(), sz.width(), sz.height());
 
-                    context.painter->save();
-                    context.painter->setPen(re->pen());
-                    context.painter->setBrush(re->brush());
-                    context.painter->drawRect(rc);
-                    context.painter->restore();
+                    context.painter()->save();
+                    context.painter()->setPen(re->pen());
+                    context.painter()->setBrush(re->brush());
+                    context.painter()->drawRect(rc);
+                    context.painter()->restore();
                 } else if (dynamic_cast<OROEllipse*>(prim)) {
                     OROEllipse * re = dynamic_cast<OROEllipse*>(prim);
 
@@ -178,34 +178,34 @@ bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *d
                     QSizeF sz = re->size();
                     QRectF rc = QRectF(ps.x(), ps.y(), sz.width(), sz.height());
 
-                    context.painter->save();
-                    context.painter->setPen(re->pen());
-                    context.painter->setBrush(re->brush());
-                    context.painter->drawEllipse(rc);
-                    context.painter->restore();
+                    context.painter()->save();
+                    context.painter()->setPen(re->pen());
+                    context.painter()->setBrush(re->brush());
+                    context.painter()->drawEllipse(rc);
+                    context.painter()->restore();
                 } else if (dynamic_cast<OROPicture*>(prim)) {
                     OROPicture * im = dynamic_cast<OROPicture*>(prim);
                     QPointF ps = im->position();
                     QSizeF sz = im->size();
                     QRectF rc = QRectF(ps.x(), ps.y(), sz.width(), sz.height());
-                    context.painter->drawPicture(rc.topLeft(), *(im->picture()));
+                    context.painter()->drawPicture(rc.topLeft(), *(im->picture()));
                 } else if (dynamic_cast<OROCheckBox*>(prim)) {
                     OROCheckBox * chk = dynamic_cast<OROCheckBox*>(prim);
                     QPointF ps = chk->position();
                     QSizeF sz = chk->size();
                     QRectF rc = QRectF(ps.x(), ps.y(), sz.width(), sz.height());
 
-                    context.painter->save();
+                    context.painter()->save();
 
-                    context.painter->setBackgroundMode(Qt::OpaqueMode);
-                    context.painter->setRenderHint(QPainter::Antialiasing);
+                    context.painter()->setBackgroundMode(Qt::OpaqueMode);
+                    context.painter()->setRenderHint(QPainter::Antialiasing);
 
-                    context.painter->setPen(chk->foregroundColor());
+                    context.painter()->setPen(chk->foregroundColor());
 
                     if (chk->lineStyle().penStyle() == Qt::NoPen || chk->lineStyle().width() <= 0) {
-                        context.painter->setPen(QPen(Qt::lightGray));
+                        context.painter()->setPen(QPen(Qt::lightGray));
                     } else {
-                        context.painter->setPen(QPen(chk->lineStyle().color(), chk->lineStyle().width() * scaleX, chk->lineStyle().penStyle()));
+                        context.painter()->setPen(QPen(chk->lineStyle().color(), chk->lineStyle().width() * scaleX, chk->lineStyle().penStyle()));
                     }
 
                     qreal ox = sz.width() / 5;
@@ -213,47 +213,47 @@ bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *d
 
                     //Checkbox Style
                     if (chk->checkType() == OROCheckBox::Cross) {
-                        context.painter->drawRoundedRect(rc, sz.width() / 10 , sz.height() / 10);
+                        context.painter()->drawRoundedRect(rc, sz.width() / 10 , sz.height() / 10);
 
                         if (chk->value()) {
                             QPen lp;
                             lp.setColor(chk->foregroundColor());
                             lp.setWidth(ox > oy ? oy : ox);
-                            context.painter->setPen(lp);
-                            context.painter->drawLine(QPointF(ox, oy) + ps, QPointF(sz.width() - ox, sz.height() - oy) + ps);
-                            context.painter->drawLine(QPointF(ox, sz.height() - oy) + ps, QPoint(sz.width() - ox, oy) + ps);
+                            context.painter()->setPen(lp);
+                            context.painter()->drawLine(QPointF(ox, oy) + ps, QPointF(sz.width() - ox, sz.height() - oy) + ps);
+                            context.painter()->drawLine(QPointF(ox, sz.height() - oy) + ps, QPoint(sz.width() - ox, oy) + ps);
                         }
                     } else if (chk->checkType() == OROCheckBox::Dot) {
                         //Radio Style
-                        context.painter->drawEllipse(rc);
+                        context.painter()->drawEllipse(rc);
 
                         if (chk->value()) {
                             QBrush lb(chk->foregroundColor());
-                            context.painter->setBrush(lb);
-                            context.painter->setPen(Qt::NoPen);
-                            context.painter->drawEllipse(rc.center(), sz.width() / 2 - ox, sz.height() / 2 - oy);
+                            context.painter()->setBrush(lb);
+                            context.painter()->setPen(Qt::NoPen);
+                            context.painter()->drawEllipse(rc.center(), sz.width() / 2 - ox, sz.height() / 2 - oy);
                         }
                     } else {
                         //Tickbox Style
-                        context.painter->drawRoundedRect(rc, sz.width() / 10 , sz.height() / 10);
+                        context.painter()->drawRoundedRect(rc, sz.width() / 10 , sz.height() / 10);
 
                         if (chk->value()) {
                             QPen lp;
                             lp.setColor(chk->foregroundColor());
                             lp.setWidth(ox > oy ? oy : ox);
-                            context.painter->setPen(lp);
-                            context.painter->drawLine(QPointF(ox, sz.height() / 2) + ps, QPointF(sz.width() / 2, sz.height() - oy) + ps);
-                            context.painter->drawLine(QPointF(sz.width() / 2, sz.height() - oy) + ps, QPointF(sz.width() - ox, oy) + ps);
+                            context.painter()->setPen(lp);
+                            context.painter()->drawLine(QPointF(ox, sz.height() / 2) + ps, QPointF(sz.width() / 2, sz.height() - oy) + ps);
+                            context.painter()->drawLine(QPointF(sz.width() / 2, sz.height() - oy) + ps, QPointF(sz.width() - ox, oy) + ps);
                         }
                     }
-                    context.painter->restore();
+                    context.painter()->restore();
                 }
             }
         }
     }
 
     if (endWhenComplete)
-        context.painter->end();
+        context.painter()->end();
 
     return true;
 }
