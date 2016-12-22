@@ -129,7 +129,7 @@ void KReportItemText::createProperties()
     m_backgroundColor = new KProperty("background-color", QColor(Qt::white), tr("Background Color"));
     m_foregroundColor = new KProperty("foreground-color", QColor(Qt::black), tr("Foreground Color"));
 
-    m_lineWeight = new KProperty("line-weight", 1, tr("Line Weight"));
+    m_lineWeight = new KProperty("line-weight", 1.0, tr("Line Weight"));
     m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
     m_lineStyle = new KProperty("line-style", QPen(Qt::NoPen), tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
     m_backgroundOpacity = new KProperty("background-opacity", QVariant(0), tr("Background Opacity"));

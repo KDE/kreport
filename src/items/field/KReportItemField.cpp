@@ -112,7 +112,7 @@ void KReportItemField::createProperties()
     m_backgroundOpacity->setOption("min", 0);
     m_backgroundOpacity->setOption("unit", QLatin1String("%"));
 
-    m_lineWeight = new KProperty("line-weight", 1, tr("Line Weight"));
+    m_lineWeight = new KProperty("line-weight", 1.0, tr("Line Weight"));
     m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
     m_lineStyle = new KProperty("line-style", QPen(Qt::NoPen), tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
 

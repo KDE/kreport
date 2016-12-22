@@ -83,7 +83,7 @@ void KReportItemCheckBox::createProperties()
 
     m_foregroundColor = new KProperty("foreground-color", QColor(Qt::black), tr("Foreground Color"));
 
-    m_lineWeight = new KProperty("line-weight", 1, tr("Line Weight"));
+    m_lineWeight = new KProperty("line-weight", 1.0, tr("Line Weight"));
     m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
     m_lineStyle = new KProperty("line-style", QPen(Qt::SolidLine), tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
     m_staticValue = new KProperty("value", QVariant(false), tr("Value"), tr("Value used if not bound to a field"));
