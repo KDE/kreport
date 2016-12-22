@@ -79,6 +79,7 @@ protected:
     QString renderText() const;
 
 private:
+    Q_DISABLE_COPY(KReportDesignerItemBase)
     class Private;
     Private * const d;
 };

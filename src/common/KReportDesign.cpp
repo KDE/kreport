@@ -30,14 +30,86 @@
 #include <QPrinter>
 #include <QPrinterInfo>
 
-KReportDesignReadingStatus::KReportDesignReadingStatus()
-    : lineNumber(-1), columnNumber(-1)
+class Q_DECL_HIDDEN KReportDesignReadingStatus::Private
+{
+public:
+    QString errorMessage;
+    QString errorDetails;
+    int errorLineNumber = -1;
+    int errorColumnNumber = -1;
+};
+
+KReportDesignReadingStatus::KReportDesignReadingStatus() : d(new Private)
 {
 }
 
+KReportDesignReadingStatus::~KReportDesignReadingStatus()
+{
+    delete d;
+}
+
+KReportDesignReadingStatus::KReportDesignReadingStatus(const KReportDesignReadingStatus& other) : d(new Private)
+{
+    *this = other;
+}
+
+KReportDesignReadingStatus& KReportDesignReadingStatus::operator=(const KReportDesignReadingStatus &other)
+{
+    if (this != &other) {
+            setErrorMessage(other.errorMessage());
+            setErrorDetails(other.errorDetails());
+            setErrorLineNumber(other.errorLineNumber());
+            setErrorColumnNumber(other.errorColumnNumber());
+    }
+    
+    return *this;
+}
+
+
 bool KReportDesignReadingStatus::isError() const
 {
-    return lineNumber >= 0;
+    return d->errorLineNumber >= 0 && d->errorColumnNumber >= 0;
+}
+
+int KReportDesignReadingStatus::errorColumnNumber() const
+{
+    return d->errorColumnNumber;
+}
+
+QString KReportDesignReadingStatus::errorDetails() const
+{
+    return d->errorDetails;
+}
+
+QString KReportDesignReadingStatus::errorMessage() const
+{
+    return d->errorMessage;
+}
+
+
+int KReportDesignReadingStatus::errorLineNumber() const
+{
+    return d->errorLineNumber;
+}
+
+void KReportDesignReadingStatus::setErrorColumnNumber(int column)
+{
+    d->errorColumnNumber = column;
+}
+
+void KReportDesignReadingStatus::setErrorDetails(const QString& details)
+{
+    d->errorDetails = details;
+}
+
+void KReportDesignReadingStatus::setErrorLineNumber(int line)
+{
+    d->errorLineNumber = line;
+}
+
+void KReportDesignReadingStatus::setErrorMessage(const QString& msg)
+{
+    d->errorMessage = msg;
 }
 
 QDebug operator<<(QDebug dbg, const KReportDesignReadingStatus& status)
@@ -46,8 +118,8 @@ QDebug operator<<(QDebug dbg, const KReportDesignReadingStatus& status)
         dbg.nospace() << qPrintable(
             QString::fromLatin1("KReportDesignReadingStatus: errorMessage=\"%1\" "
                                 "errorDetails=\"%2\" line=%3 column=%4")
-                .arg(status.errorMessage).arg(status.errorDetails)
-                .arg(status.lineNumber).arg(status.columnNumber));
+                .arg(status.errorMessage()).arg(status.errorDetails())
+                .arg(status.errorLineNumber()).arg(status.errorColumnNumber()));
     } else {
         dbg.nospace() << "KReportDesignReadingStatus: OK";
     }
@@ -69,15 +141,25 @@ KReportDesign::~KReportDesign()
 bool KReportDesign::setContent(const QString &text, KReportDesignReadingStatus *status)
 {
     QDomDocument doc;
-    if (!doc.setContent(text, status ? &status->errorDetails : 0, status ? &status->lineNumber : 0,
-                        status ? &status->columnNumber : 0))
+    QString errorDetails;
+    int errorLine;
+    int errorColumn;
+    
+    if (!doc.setContent(text, &errorDetails, &errorLine, &errorColumn))
     {
         if (status) {
-            status->errorMessage = tr("Could not parse XML document.");
+            status->setErrorMessage(tr("Could not parse XML document."));
+            status->setErrorDetails(errorDetails);
+            status->setErrorLineNumber(errorLine);
+            status->setErrorColumnNumber(errorColumn);
         }
         return false;
     }
-    return d->processDocument(doc, status);
+    bool ret = d->processDocument(doc, status);
+    if (!ret && status) {
+        status->setErrorMessage(tr("Error in XML document."));
+    }
+    return ret;
 }
 
 QString KReportDesign::toString(int indent) const
@@ -115,7 +197,7 @@ KReportElement KReportDesign::createElement(const QString &typeName, QString *er
     KReportPluginInterface* plugin = d->findPlugin(typeName, el, &status);
     if (!plugin) {
         if (errorMessage) {
-            *errorMessage = status.errorMessage;
+            *errorMessage = status.errorMessage();
         }
         return KReportElement();
     }

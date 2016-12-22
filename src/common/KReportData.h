@@ -29,6 +29,7 @@ class KREPORT_EXPORT KReportData
 {
 
 public:
+    KReportData();
     virtual ~KReportData();
 
     //! Describes sorting for single field
@@ -37,8 +38,18 @@ public:
     {
     public:
         SortedField();
-        QString field;
-        Qt::SortOrder order;
+        ~SortedField();
+        SortedField& operator=(const SortedField &other);
+        void setField(const QString &field);
+        void setOrder(Qt::SortOrder order);
+        QString field() const;
+        QString field();
+        Qt::SortOrder order() const;
+        Qt::SortOrder order();
+        
+        private:
+            class Private;
+            Private * const d;
     };
 
     //! Open the dataset
@@ -117,6 +128,11 @@ public:
     //! @a source is implementation-specific identifier.
     //! Owner of the returned pointer is the caller.
     virtual KReportData* create(const QString &source) const Q_REQUIRED_RESULT;
+    
+private:
+    Q_DISABLE_COPY(KReportData)
+    class Private;
+    Private * const d;
 };
 
 #endif

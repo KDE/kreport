@@ -110,9 +110,9 @@ static void setStatus(KReportDesignReadingStatus *status, const QString& details
                       const QDomNode &node)
 {
     if (status) {
-        status->errorDetails = details;
-        status->lineNumber = node.lineNumber() == -1 ? 0 /* mark error */ : node.lineNumber();
-        status->columnNumber = node.columnNumber() == -1 ? 0 /* mark error */ : node.columnNumber();
+        status->setErrorDetails(details);
+        status->setErrorLineNumber(node.lineNumber() == -1 ? 0 /* mark error */ : node.lineNumber());
+        status->setErrorColumnNumber(node.columnNumber() == -1 ? 0 /* mark error */ : node.columnNumber());
     }
 }
 
@@ -452,10 +452,7 @@ bool KReportDesign::Private::processDocument(const QDomDocument &doc,
     }
 
     if (status) {
-        status->lineNumber = -1;
-        status->columnNumber = -1;
-        status->errorMessage.clear();
-        status->errorDetails.clear();
+        *status = KReportDesignReadingStatus();
     }
     return true;
 }

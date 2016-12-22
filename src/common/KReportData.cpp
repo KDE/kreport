@@ -18,13 +18,81 @@
 #include "KReportData.h"
 #include <QVariant>
 
-KReportData::~KReportData()
+class KReportData::SortedField::Private 
+{
+    
+public:
+    QString field;
+    Qt::SortOrder order = Qt::AscendingOrder;
+};
+
+class KReportData::Private
+{
+public:
+    bool dummy = true;
+};
+
+//==========KReportData::SortedField==========
+
+KReportData::SortedField::SortedField()
+    : d(new Private())
 {
 }
 
-KReportData::SortedField::SortedField()
-    : order(Qt::AscendingOrder)
+KReportData::SortedField::~SortedField()
 {
+    delete d;
+}
+
+KReportData::SortedField & KReportData::SortedField::operator=(const KReportData::SortedField& other)
+{
+    if (this != &other) {
+        setField(other.field());
+        setOrder(other.order());
+    }
+    return *this;
+}
+
+QString KReportData::SortedField::field()
+{
+    return d->field;
+}
+
+QString KReportData::SortedField::field() const
+{
+    return d->field;
+}
+
+Qt::SortOrder KReportData::SortedField::order()
+{
+    return d->order;
+}
+
+Qt::SortOrder KReportData::SortedField::order() const
+{
+    return d->order;
+}
+
+void KReportData::SortedField::setField(const QString& field)
+{
+    d->field = field;
+}
+
+void KReportData::SortedField::setOrder(Qt::SortOrder order)
+{
+    d->order = order;
+}
+
+
+//==========KReportData==========
+
+KReportData::KReportData() : d(new Private())
+{
+}
+
+KReportData::~KReportData()
+{
+    delete d;
 }
 
 QStringList KReportData::fieldKeys() const

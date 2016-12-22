@@ -91,8 +91,8 @@ KReportDetailSectionData::KReportDetailSectionData(const QDomElement &elemSource
             }
             m_groupList.append(dgsd);
             KReportData::SortedField s;
-            s.field = dgsd->m_column;
-            s.order = dgsd->m_sort;
+            s.setField(dgsd->m_column);
+            s.setOrder(dgsd->m_sort);
             m_sortedFields.append(s);
 	    
         } else if (elemThis.tagName() == QLatin1String("report:section") && elemThis.attribute(QLatin1String("report:section-type")) == QLatin1String("detail")) {

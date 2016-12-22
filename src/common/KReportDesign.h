@@ -39,21 +39,34 @@ public:
     /*! For empty status objects isError() returns false. */
     KReportDesignReadingStatus();
 
+    ~KReportDesignReadingStatus();
+    KReportDesignReadingStatus(const KReportDesignReadingStatus &other);
+    KReportDesignReadingStatus& operator=(const KReportDesignReadingStatus &other);
+    
     //! @return true if the status is error.
-    //! Equivalent of lineNumber >= 0.
+    //! Equivalent of errorLineNumber() >= 0 && errorColumnNumber() >= 0.
     bool isError() const;
-
+    
     //! Error message suitable for displaying to the user, translated.
-    QString errorMessage;
-
-    //! Detailed error message, partially translated.
-    QString errorDetails;
-
+    QString errorMessage() const;
+    
+    //! Detailed error message, partially translated.    
+    QString errorDetails() const;
+    
     //! Line number (counting from 0) in which the error occured. -1 if there is no error.
-    int lineNumber;
-
+    int errorLineNumber() const;  
+    
     //! Column number (counting from 0) in which the error occured. -1 if there is no error.
-    int columnNumber;
+    int errorColumnNumber() const;
+    
+    void setErrorMessage(const QString& msg);
+    void setErrorDetails(const QString& details);
+    void setErrorLineNumber(int line);
+    void setErrorColumnNumber(int column);
+    
+private:
+    class Private;
+    Private * const d;    
 };
 
 //! Sends information about the reading status @a status to debug output @a dbg.
