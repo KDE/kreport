@@ -1,4 +1,4 @@
-#ecm_optional_add_subdirectory(barcode)
+ecm_optional_add_subdirectory(barcode)
 
 if(NOT WIN32)
 #todo  ecm_optional_add_subdirectory(chart)

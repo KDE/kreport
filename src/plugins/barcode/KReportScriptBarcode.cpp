@@ -18,6 +18,8 @@
 #include "KReportScriptBarcode.h"
 
 #include <KProperty>
+#include <QSizeF>
+#include <QPointF>
 
 namespace Scripting
 {
@@ -26,7 +28,6 @@ Barcode::Barcode(KReportItemBarcode *b)
 {
     m_barcode = b;
 }
-
 
 Barcode::~Barcode()
 {

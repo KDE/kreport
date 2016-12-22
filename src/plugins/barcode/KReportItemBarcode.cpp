@@ -44,7 +44,7 @@ KReportItemBarcode::KReportItemBarcode(const QDomNode & element)
     m_itemValue->setValue(element.toElement().attribute(QLatin1String("report:value")));
     setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
     m_horizontalAlignment->setValue(element.toElement().attribute(QLatin1String("report:horizontal-align")));
-    m_maxLength->setValue(element.toElement().attribute(QLatin1String("report:barcode-max-length")));
+    m_maxLength->setValue(element.toElement().attribute(QLatin1String("report:barcode-max-length")).toInt());
     m_format->setValue(element.toElement().attribute(QLatin1String("report:barcode-format")));
     parseReportRect(element.toElement());
 
