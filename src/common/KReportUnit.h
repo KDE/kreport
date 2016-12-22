@@ -89,6 +89,29 @@ public:
     };
      Q_DECLARE_FLAGS(ListOptions, ListOption)
 
+    /** Construction requires initialization. The factor is for variable factor units like pixel */
+    explicit KReportUnit(Type type = Point, qreal factor = 1.0);
+    
+    KReportUnit(const KReportUnit &other);
+    
+    ~KReportUnit();
+
+    /// Assigns specified type and factor 1.0 to the object
+    /// @param unit Type of unit
+    KReportUnit& operator=(Type type);
+    
+    KReportUnit& operator=(const KReportUnit& other);
+     
+    bool operator!=(const KReportUnit &other) const;
+
+    bool operator==(const KReportUnit &other) const;
+
+    KReportUnit::Type type() const;
+
+    void setFactor(qreal factor);
+    
+    qreal factor() const;
+    
     /** Returns a KReportUnit instance with the type at the @p index of the UI list with the given @p listOptions. */
     static KReportUnit fromListForUi(int index, ListOptions listOptions = ListAll, qreal factor = 1.0);
 
@@ -97,38 +120,12 @@ public:
     /// @param ok if set, it will be true if the unit was known, false if unknown
     static KReportUnit fromSymbol(const QString &symbol, bool *ok = 0);
 
-    /** Construction requires initialization. The factor is for variable factor units like pixel */
-    explicit KReportUnit(Type unit = Point, qreal factor = 1.0) {
-        m_type = unit;
-        m_pixelConversion = factor;
-    }
-
-    KReportUnit& operator=(Type unit) {
-        m_type = unit; m_pixelConversion = 1.0; return *this;
-    }
-
-    bool operator!=(const KReportUnit &other) const {
-        return !operator==(other);
-    }
-
-    bool operator==(const KReportUnit &other) const {
-        return m_type == other.m_type &&
-            (m_type != Pixel ||
-             qFuzzyCompare(m_pixelConversion, other.m_pixelConversion));
-    }
-
-    KReportUnit::Type type() const {
-        return m_type;
-    }
-
-    void setFactor(qreal factor) {
-        m_pixelConversion = factor;
-    }
     /**
      * Prepare ptValue to be displayed in pt
      * This method will round to 0.001 precision
      */
-    static qreal toPoint(qreal ptValue) {
+    static inline qreal toPoint(qreal ptValue)
+    {
         // No conversion, only rounding (to 0.001 precision)
         return floor(ptValue * 1000.0) / 1000.0;
     }
@@ -137,7 +134,8 @@ public:
      * Prepare ptValue to be displayed in mm
      * This method will round to 0.0001 precision, use POINT_TO_MM() for lossless conversion.
      */
-    static qreal toMillimeter(qreal ptValue) {
+    static inline qreal toMillimeter(qreal ptValue)
+    {
         // "mm" values are rounded to 0.0001 millimeters
         return floor(POINT_TO_MM(ptValue) * 10000.0) / 10000.0;
     }
@@ -146,7 +144,8 @@ public:
      * Prepare ptValue to be displayed in cm
      * This method will round to 0.0001 precision, use POINT_TO_CM() for lossless conversion.
      */
-    static qreal toCentimeter(qreal ptValue) {
+    static inline qreal toCentimeter(qreal ptValue)
+    {
         return floor(POINT_TO_CM(ptValue) * 10000.0) / 10000.0;
     }
 
@@ -154,7 +153,8 @@ public:
      * Prepare ptValue to be displayed in dm
      * This method will round to 0.0001 precision, use POINT_TO_DM() for lossless conversion.
      */
-    static qreal toDecimeter(qreal ptValue) {
+    static inline qreal toDecimeter(qreal ptValue)
+    {
         return floor(POINT_TO_DM(ptValue) * 10000.0) / 10000.0;
     }
 
@@ -162,7 +162,8 @@ public:
      * Prepare ptValue to be displayed in inch
      * This method will round to 0.00001 precision, use POINT_TO_INCH() for lossless conversion.
      */
-    static qreal toInch(qreal ptValue) {
+    static inline qreal toInch(qreal ptValue)
+    {
         // "in" values are rounded to 0.00001 inches
         return floor(POINT_TO_INCH(ptValue) * 100000.0) / 100000.0;
     }
@@ -171,7 +172,8 @@ public:
      * Prepare ptValue to be displayed in pica
      * This method will round to 0.00001 precision, use POINT_TO_PI() for lossless conversion.
      */
-    static qreal toPica(qreal ptValue) {
+    static inline qreal toPica(qreal ptValue)
+    {
         // "pi" values are rounded to 0.00001 inches
         return floor(POINT_TO_PI(ptValue) * 100000.0) / 100000.0;
     }
@@ -180,7 +182,8 @@ public:
      * Prepare ptValue to be displayed in cicero
      * This method will round to 0.00001 precision, use POINT_TO_CC() for lossless conversion.
      */
-    static qreal toCicero(qreal ptValue) {
+    static inline qreal toCicero(qreal ptValue)
+    {
         // "cc" values are rounded to 0.00001 inches
         return floor(POINT_TO_CC(ptValue) * 100000.0) / 100000.0;
     }
@@ -242,13 +245,14 @@ public:
     /**
      * Equal to symbol(): returns the symbol string of the unit.
      */
-    inline QString toString() const {
+    inline QString toString() const
+    {
         return symbol();
     }
-
+        
 private:
-    Type m_type;
-    qreal m_pixelConversion;
+    class Private;
+    Private * const d;
 };
 
 #ifndef QT_NO_DEBUG_STREAM

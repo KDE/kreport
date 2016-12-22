@@ -27,6 +27,13 @@
 #include <QTransform>
 #include <QCoreApplication>
 
+class Q_DECL_HIDDEN KReportUnit::Private
+{
+public:
+    Type type;
+    qreal pixelConversion;
+};
+
 // ensure the same order as in KReportUnit::Unit
 static const char* const unitNameList[KReportUnit::TypeCount] =
 {
@@ -39,6 +46,50 @@ static const char* const unitNameList[KReportUnit::TypeCount] =
     "cc",
     "px"
 };
+
+KReportUnit::KReportUnit(Type type, qreal factor) : d(new Private) 
+{
+    d->type = type;
+    d->pixelConversion = factor;
+}
+
+KReportUnit::KReportUnit(const KReportUnit& other) : d(new Private)
+{
+    d->type = other.type();
+    d->pixelConversion = other.factor();
+}
+
+KReportUnit::~KReportUnit()
+{
+    delete d;
+}
+
+bool KReportUnit::operator==(const KReportUnit& other) const 
+{
+    return d->type == other.d->type &&
+           (d->type != Pixel ||
+            qFuzzyCompare(d->pixelConversion, other.d->pixelConversion));
+}
+
+bool KReportUnit::operator!=(const KReportUnit& other) const
+{
+    return !operator==(other);
+}
+
+
+KReportUnit& KReportUnit::operator=(Type type)
+{
+    d->type = type;
+    d->pixelConversion = 1.0;
+    return *this;
+}
+
+KReportUnit & KReportUnit::operator=(const KReportUnit& other)
+{
+    d->type = other.type();
+    d->pixelConversion = other.factor();
+    return *this;
+}
 
 QString KReportUnit::unitDescription(KReportUnit::Type type)
 {
@@ -111,7 +162,7 @@ KReportUnit KReportUnit::fromListForUi(int index, ListOptions listOptions, qreal
 
 int KReportUnit::indexInListForUi(ListOptions listOptions) const
 {
-    if ((listOptions&HidePixel) && (m_type == Pixel)) {
+    if ((listOptions&HidePixel) && (d->type == Pixel)) {
         return -1;
     }
 
@@ -123,7 +174,7 @@ int KReportUnit::indexInListForUi(ListOptions listOptions) const
             ++skipped;
             continue;
         }
-        if (typesInUi[i] == m_type) {
+        if (typesInUi[i] == d->type) {
             result = i - skipped;
             break;
         }
@@ -134,7 +185,7 @@ int KReportUnit::indexInListForUi(ListOptions listOptions) const
 
 qreal KReportUnit::toUserValue(qreal ptValue) const
 {
-    switch (m_type) {
+    switch (d->type) {
     case Millimeter:
         return toMillimeter(ptValue);
     case Centimeter:
@@ -148,7 +199,7 @@ qreal KReportUnit::toUserValue(qreal ptValue) const
     case Cicero:
         return toCicero(ptValue);
     case Pixel:
-        return ptValue * m_pixelConversion;
+        return ptValue * d->pixelConversion;
     case Point:
     default:
         return toPoint(ptValue);
@@ -157,7 +208,7 @@ qreal KReportUnit::toUserValue(qreal ptValue) const
 
 qreal KReportUnit::ptToUnit(qreal ptValue, const KReportUnit &unit)
 {
-    switch (unit.m_type) {
+    switch (unit.d->type) {
     case Millimeter:
         return POINT_TO_MM(ptValue);
     case Centimeter:
@@ -171,7 +222,7 @@ qreal KReportUnit::ptToUnit(qreal ptValue, const KReportUnit &unit)
     case Cicero:
         return POINT_TO_CC(ptValue);
     case Pixel:
-        return ptValue * unit.m_pixelConversion;
+        return ptValue * unit.d->pixelConversion;
     case Point:
     default:
         return ptValue;
@@ -185,7 +236,7 @@ QString KReportUnit::toUserStringValue(qreal ptValue) const
 
 qreal KReportUnit::fromUserValue(qreal value) const
 {
-    switch (m_type) {
+    switch (d->type) {
     case Millimeter:
         return MM_TO_POINT(value);
     case Centimeter:
@@ -199,7 +250,7 @@ qreal KReportUnit::fromUserValue(qreal value) const
     case Cicero:
         return CC_TO_POINT(value);
     case Pixel:
-        return value / m_pixelConversion;
+        return value / d->pixelConversion;
     case Point:
     default:
         return value;
@@ -334,7 +385,7 @@ qreal KReportUnit::convertFromUnitToUnit(qreal value, const KReportUnit &fromUni
 
 QString KReportUnit::symbol() const
 {
-    return QLatin1String(unitNameList[m_type]);
+    return QLatin1String(unitNameList[d->type]);
 }
 
 qreal KReportUnit::parseAngle(const QString& _value, qreal defaultVal)
@@ -383,4 +434,20 @@ QDebug operator<<(QDebug debug, const KReportUnit &unit)
     return debug.space();
 
 }
+
+void KReportUnit::setFactor(qreal factor) 
+{
+    d->pixelConversion = factor;
+}
+
+qreal KReportUnit::factor() const
+{
+    return d->pixelConversion;
+}
+
+KReportUnit::Type KReportUnit::type() const 
+{
+    return d->type;
+}
+
 #endif

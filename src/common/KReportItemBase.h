@@ -148,6 +148,7 @@ protected:
     Q_SLOT virtual void propertyChanged(KPropertySet &s, KProperty &p);
     
 private:
+    Q_DISABLE_COPY(KReportItemBase)
     class Private;
     Private * const d;
 };
