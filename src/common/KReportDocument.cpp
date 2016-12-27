@@ -19,7 +19,7 @@
 #include "KReportUnit.h"
 #include "KReportDetailSectionData.h"
 #include "KReportItemBase.h"
-#include "KReportDpi.h"
+#include "KReportUtils_p.h"
 #include "KReportPageSize.h"
 
 #include <QDomElement>
@@ -73,8 +73,8 @@ KReportDocument::KReportDocument(const QDomElement & elemSource, QObject *parent
         return;
     }
 
-    const qreal dpiX = KReportDpi::dpiX();
-    const qreal dpiY = KReportDpi::dpiY();
+    const qreal dpiX = KReportPrivate::dpiX();
+    const qreal dpiY = KReportPrivate::dpiY();
 
 
     QDomNodeList sections = elemSource.childNodes();

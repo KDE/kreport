@@ -18,6 +18,8 @@
 #include "KReportItemBase.h"
 
 #include "KReportUtils.h"
+#include "KReportUtils_p.h"
+
 #include <KPropertySet>
 #include <QApplication>
 #include <QDomElement>
@@ -183,15 +185,15 @@ const KPropertySet * KReportItemBase::propertySet() const
 
 QPointF KReportItemBase::scenePosition(const QPointF &pos)
 {
-    const qreal x = POINT_TO_INCH(pos.x()) * KReportDpi::dpiX();
-    const qreal y = POINT_TO_INCH(pos.y()) * KReportDpi::dpiY();
+    const qreal x = POINT_TO_INCH(pos.x()) * KReportPrivate::dpiX();
+    const qreal y = POINT_TO_INCH(pos.y()) * KReportPrivate::dpiY();
     return QPointF(x, y);
 }
 
 QSizeF KReportItemBase::sceneSize(const QSizeF &size)
 {
-    const qreal w = POINT_TO_INCH(size.width()) * KReportDpi::dpiX();
-    const qreal h = POINT_TO_INCH(size.height()) * KReportDpi::dpiY();
+    const qreal w = POINT_TO_INCH(size.width()) * KReportPrivate::dpiX();
+    const qreal h = POINT_TO_INCH(size.height()) * KReportPrivate::dpiY();
     return QSizeF(w, h);    
 }
 
@@ -217,15 +219,15 @@ void KReportItemBase::setSize(const QSizeF& size)
 
 QPointF KReportItemBase::positionFromScene(const QPointF& pos)
 {
-    const qreal x = INCH_TO_POINT(pos.x() / KReportDpi::dpiX());
-    const qreal y = INCH_TO_POINT(pos.y() / KReportDpi::dpiY());
+    const qreal x = INCH_TO_POINT(pos.x() / KReportPrivate::dpiX());
+    const qreal y = INCH_TO_POINT(pos.y() / KReportPrivate::dpiY());
     return QPointF(x, y);
 }
 
 QSizeF KReportItemBase::sizeFromScene(const QSizeF& size)
 {
-    qreal w = INCH_TO_POINT(size.width() / KReportDpi::dpiX());
-    qreal h = INCH_TO_POINT(size.height() / KReportDpi::dpiY());
+    qreal w = INCH_TO_POINT(size.width() / KReportPrivate::dpiX());
+    qreal h = INCH_TO_POINT(size.height() / KReportPrivate::dpiY());
     return QSizeF(w, h);
 }
 

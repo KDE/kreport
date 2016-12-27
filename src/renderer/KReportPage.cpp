@@ -20,7 +20,7 @@
 #include "KReportRendererBase.h"
 #include "KReportUnit.h"
 #include "KReportRenderObjects.h"
-#include "KReportDpi.h"
+#include "KReportUtils_p.h"
 #include "kreport_debug.h"
 
 #include <QWidget>
@@ -63,8 +63,8 @@ KReportPage::KReportPage(QWidget *parent, ORODocument *document)
 
     QString pageSize = d->reportDocument->pageLayout().pageSize().name();
 
-    pageWidth = d->reportDocument->pageLayout().fullRectPixels(KReportDpi::dpiX()).width();
-    pageHeight = d->reportDocument->pageLayout().fullRectPixels(KReportDpi::dpiX()).height();
+    pageWidth = d->reportDocument->pageLayout().fullRectPixels(KReportPrivate::dpiX()).width();
+    pageHeight = d->reportDocument->pageLayout().fullRectPixels(KReportPrivate::dpiX()).height();
 
 //TODO remove after check    
 #if 0    

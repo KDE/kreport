@@ -29,7 +29,7 @@
 #include "KReportRuler_p.h"
 #include "KReportZoomHandler.h"
 #include "KReportPageSize.h"
-#include "KReportDpi.h"
+#include "KReportUtils_p.h"
 #include "KReportUtils.h"
 #include "KReportPluginInterface.h"
 #include "KReportPluginManager.h"
@@ -868,11 +868,11 @@ int KReportDesigner::pageWidthPx() const
     QPageLayout layout;
     layout.setPageSize(QPageSize(KReportPageSize::pageSize(d->set->property("page-size").value().toString())));
     layout.setOrientation(d->set->property("print-orientation").value().toString() == QLatin1String("portrait") ? QPageLayout::Portrait : QPageLayout::Landscape);
-    QSize pageSizePx = layout.fullRectPixels(KReportDpi::dpiX()).size();
+    QSize pageSizePx = layout.fullRectPixels(KReportPrivate::dpiX()).size();
 
     int width = pageSizePx.width();
-    width = width - POINT_TO_INCH(d->set->property("margin-left").value().toDouble()) * KReportDpi::dpiX();
-    width = width - POINT_TO_INCH(d->set->property("margin-right").value().toDouble()) * KReportDpi::dpiX();
+    width = width - POINT_TO_INCH(d->set->property("margin-left").value().toDouble()) * KReportPrivate::dpiX();
+    width = width - POINT_TO_INCH(d->set->property("margin-right").value().toDouble()) * KReportPrivate::dpiX();
 
     return width;
 }

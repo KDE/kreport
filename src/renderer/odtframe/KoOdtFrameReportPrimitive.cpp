@@ -88,10 +88,10 @@ void KoOdtFrameReportPrimitive::createBody(KoXmlWriter *bodyWriter) const
 void KoOdtFrameReportPrimitive::commonAttributes(KoXmlWriter *bodyWriter) const
 {
     // convert to inches
-    qreal x = m_primitive->position().x() / KReportDpi::dpiX();
-    qreal y = m_primitive->position().y() / KReportDpi::dpiX();
-    qreal w = m_primitive->size().width() / KReportDpi::dpiX();
-    qreal h = m_primitive->size().height() / KReportDpi::dpiY();
+    qreal x = m_primitive->position().x() / KReportPrivate::dpiX();
+    qreal y = m_primitive->position().y() / KReportPrivate::dpiX();
+    qreal w = m_primitive->size().width() / KReportPrivate::dpiX();
+    qreal h = m_primitive->size().height() / KReportPrivate::dpiY();
 
     bodyWriter->addAttribute("svg:x", QString("%1in").arg(x));
     bodyWriter->addAttribute("svg:y", QString("%1in").arg(y));

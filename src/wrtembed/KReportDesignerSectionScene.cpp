@@ -20,7 +20,7 @@
 #include "KReportDesignerItemRectBase.h"
 #include "KReportDesigner.h"
 #include "KReportLabelSizeInfo.h"
-#include "KReportDpi.h"
+#include "KReportUtils_p.h"
 #include "kreport_debug.h"
 
 #include <QPainter>
@@ -33,8 +33,8 @@ KReportDesignerSectionScene::KReportDesignerSectionScene(qreal w, qreal h, KRepo
 {
     m_rd = rd;
     m_minorSteps = 0;
-    m_dpiX = KReportDpi::dpiX();
-    m_dpiY = KReportDpi::dpiY();
+    m_dpiX = KReportPrivate::dpiX();
+    m_dpiY = KReportPrivate::dpiY();
 
     if (m_unit.type() != m_rd->pageUnit().type()) {
         m_unit = m_rd->pageUnit();
@@ -87,7 +87,7 @@ void KReportDesignerSectionScene::drawBackground(QPainter* painter, const QRectF
         QPen pen = painter->pen();
         painter->setPen(Qt::lightGray);
 
-        //kreportDebug() << "dpix" << KReportDpi::dpiX() << "dpiy" << KReportDpi::dpiY() << "mayorx:" << majorx << "majory" << majory << "pix:" << pixel_incrementx << "piy:" << pixel_incrementy;
+        //kreportDebug() << "dpix" << KReportPrivate::dpiX() << "dpiy" << KReportPrivate::dpiY() << "mayorx:" << majorx << "majory" << majory << "pix:" << pixel_incrementx << "piy:" << pixel_incrementy;
 
         QVector<QLine> lines;
         QVector<QPoint> points;

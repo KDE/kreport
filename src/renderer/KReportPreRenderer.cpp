@@ -28,7 +28,7 @@
 #include "KReportDetailSectionData.h"
 #include "KReportLabelSizeInfo.h"
 #include "KReportPageSize.h"
-#include "KReportDpi.h"
+#include "KReportUtils_p.h"
 
 #ifdef KREPORT_SCRIPTING
 #include "scripting/KReportScriptHandler.h"
@@ -292,7 +292,7 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
 
 qreal KReportPreRendererPrivate::renderSectionSize(const KReportSectionData & sectionData)
 {
-    qreal intHeight = POINT_TO_INCH(sectionData.height()) * KReportDpi::dpiX();
+    qreal intHeight = POINT_TO_INCH(sectionData.height()) * KReportPrivate::dpiX();
 
     int itemHeight = 0;
 
@@ -321,7 +321,7 @@ qreal KReportPreRendererPrivate::renderSectionSize(const KReportSectionData & se
 
 qreal KReportPreRendererPrivate::renderSection(const KReportSectionData & sectionData)
 {
-    qreal sectionHeight = POINT_TO_INCH(sectionData.height()) * KReportDpi::dpiX();
+    qreal sectionHeight = POINT_TO_INCH(sectionData.height()) * KReportPrivate::dpiX();
 
     int itemHeight = 0;
     //kreportDebug() << "Name: " << sectionData.name() << " Height: " << sectionHeight
@@ -339,7 +339,7 @@ qreal KReportPreRendererPrivate::renderSection(const KReportSectionData & sectio
     ORORect* bg = new ORORect();
     bg->setPen(QPen(Qt::NoPen));
     bg->setBrush(sectionData.backgroundColor());
-    qreal w = m_page->document()->pageLayout().fullRectPixels(KReportDpi::dpiX()).width() - m_page->document()->pageLayout().marginsPixels(KReportDpi::dpiX()).right() - m_leftMargin;
+    qreal w = m_page->document()->pageLayout().fullRectPixels(KReportPrivate::dpiX()).width() - m_page->document()->pageLayout().marginsPixels(KReportPrivate::dpiX()).right() - m_leftMargin;
 
     bg->setRect(QRectF(m_leftMargin, m_yOffset, w, sectionHeight));
     m_page->insertPrimitive(bg, true);
@@ -460,7 +460,7 @@ bool KReportPreRendererPrivate::generateDocument()
             m_reportDocument->pageLayout().setPageSize(QPageSize(KReportPageSize::pageSize(label.paper())));
         } else {
             // lookup the correct size information for the specified size paper
-            QSizeF pageSizePx = m_reportDocument->pageLayout().fullRectPixels(KReportDpi::dpiX()).size();
+            QSizeF pageSizePx = m_reportDocument->pageLayout().fullRectPixels(KReportPrivate::dpiX()).size();
 
             m_maxWidth = pageSizePx.width();
             m_maxHeight = pageSizePx.height();

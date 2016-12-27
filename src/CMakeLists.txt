@@ -58,7 +58,6 @@ set(kreport_LIB_SRCS
     wrtembed/KReportDesigner.cpp
     wrtembed/KReportPropertiesButton.cpp
     wrtembed/KReportSectionEditor.cpp
-    wrtembed/KReportDpi.cpp
     wrtembed/KReportRuler.cpp
     wrtembed/KReportZoomHandler.cpp
     wrtembed/KReportZoomMode.cpp
@@ -94,7 +93,7 @@ set(kreport_LIB_SRCS
     Mainpage.dox
     Messages.sh
 )
-
+       
 set(kreport_INCLUDE_DIRS
     ${CMAKE_CURRENT_SOURCE_DIR}/common
     ${CMAKE_CURRENT_SOURCE_DIR}/wrtembed
@@ -157,6 +156,10 @@ ecm_create_qm_loader(kreport_LIB_SRCS kreport_qt)
 add_library(KReport SHARED ${kreport_LIB_SRCS})
 set_coinstallable_lib_version(KReport)
 
+add_library(KReportUtilsPrivate STATIC
+    common/KReportUtils_p.cpp
+)
+    
 kdb_create_shared_data_classes(
     kreport_GENERATED_SHARED_DATA_CLASS_HEADERS # output variable with list of headers
     NO_PREFIX # subdirectory in which the headers should be generated
@@ -188,15 +191,18 @@ target_link_libraries(KReport
         KF5::CoreAddons
         KPropertyWidgets
     PRIVATE
-        KF5::WidgetsAddons
-        KF5::ConfigGui     # KStandardShortcut
         ${SCRIPTING_LIBS}
-        #KF5::KIOCore
-        #KF5::KIOFileWidgets
-        #KF5::KIOWidgets
-        #KF5::KIONTLM
+        KReportUtilsPrivate
 )
 
+target_link_libraries(KReportUtilsPrivate
+    PUBLIC
+        Qt5::Widgets
+    PRIVATE
+        KF5::WidgetsAddons
+        KF5::ConfigGui 
+    )
+    
 ecm_setup_version(${PROJECT_VERSION}
     VARIABLE_PREFIX KREPORT
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/kreport_version.h"
@@ -295,7 +301,6 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
         KReportZoomMode
         KReportDesignerSectionDetail
         KReportDesignerSection
-        KReportDpi
         KReportZoomHandler
         KReportDesignerItemBase
         KReportDesignerSectionDetailGroup

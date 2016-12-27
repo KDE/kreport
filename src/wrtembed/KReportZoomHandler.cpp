@@ -21,7 +21,7 @@
 
 #include "KReportZoomHandler.h"
 #include "KReportUnit.h" // for POINT_TO_INCH
-#include "KReportDpi.h"
+#include "KReportUtils_p.h"
 
 #include <QPointF>
 #include <QRectF>
@@ -36,7 +36,7 @@ KReportZoomHandler::KReportZoomHandler()
 {
     setZoom(1.0);
     setZoomMode( KReportZoomMode::ZOOM_CONSTANT );
-    setDpi(KReportDpi::dpiX(), KReportDpi::dpiY());
+    setDpi(KReportPrivate::dpiX(), KReportPrivate::dpiY());
 }
 
 KReportZoomHandler::~KReportZoomHandler()
@@ -45,7 +45,7 @@ KReportZoomHandler::~KReportZoomHandler()
 
 void KReportZoomHandler::setResolutionToStandard()
 {
-    setDpi(KReportDpi::dpiX(), KReportDpi::dpiY());
+    setDpi(KReportPrivate::dpiX(), KReportPrivate::dpiY());
 }
 
 void KReportZoomHandler::setDpi(int dpiX, int dpiY)

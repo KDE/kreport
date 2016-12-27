@@ -76,10 +76,10 @@ void KoOdtFrameReportLine::createStyle(KoGenStyles *coll)
 void KoOdtFrameReportLine::createBody(KoXmlWriter *bodyWriter) const
 {
     // convert to inches
-    qreal sx = INCH_TO_POINT(line()->startPoint().x() / KReportDpi::dpiX());
-    qreal sy = INCH_TO_POINT(line()->startPoint().y() / KReportDpi::dpiY());
-    qreal ex = INCH_TO_POINT(line()->endPoint().x() / KReportDpi::dpiX());
-    qreal ey = INCH_TO_POINT(line()->endPoint().y() / KReportDpi::dpiY());
+    qreal sx = INCH_TO_POINT(line()->startPoint().x() / KReportPrivate::dpiX());
+    qreal sy = INCH_TO_POINT(line()->startPoint().y() / KReportPrivate::dpiY());
+    qreal ex = INCH_TO_POINT(line()->endPoint().x() / KReportPrivate::dpiX());
+    qreal ey = INCH_TO_POINT(line()->endPoint().y() / KReportPrivate::dpiY());
     qreal width = ex - sx;
     qreal height = ey - sy;
 

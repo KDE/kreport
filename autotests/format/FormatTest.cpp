@@ -31,7 +31,6 @@
 #include "KReportItemLine.h"
 #include "KReportDesignerItemRectBase.h"
 #include "KReportUnit.h"
-#include <KReportDpi>
 #include <KReportDesign>
 
 #include <QPointF>
@@ -103,11 +102,11 @@ void FormatTest::testPageLayout()
     QCOMPARE(opt.getPageSize(), QString("A5"));
     QScreen *srn = QApplication::screens().at(0);
     const qreal dpiY = srn->logicalDotsPerInchY();
-    qDebug() << opt.getMarginBottom() << INCH_TO_POINT(opt.getMarginBottom()) << KReportDpi::dpiY() << dpiY << KReportUnit::parseValue("1.5cm");
-    QFUZZYCOMPARE(INCH_TO_POINT(opt.getMarginBottom()) / KReportDpi::dpiY(), KReportUnit::parseValue("1.5cm"), 0.2);
-    QFUZZYCOMPARE(INCH_TO_POINT(opt.getMarginTop()) / KReportDpi::dpiY(), KReportUnit::parseValue("2.0cm"), 0.2);
-    QFUZZYCOMPARE(INCH_TO_POINT(opt.getMarginLeft()) / KReportDpi::dpiX(), KReportUnit::parseValue("3.0cm"), 0.2);
-    QFUZZYCOMPARE(INCH_TO_POINT(opt.getMarginRight()) / KReportDpi::dpiX(), KReportUnit::parseValue("4.0cm"), 0.3);
+    qDebug() << opt.getMarginBottom() << INCH_TO_POINT(opt.getMarginBottom()) << KReportPrivate::dpiY() << dpiY << KReportUnit::parseValue("1.5cm");
+    QFUZZYCOMPARE(INCH_TO_POINT(opt.getMarginBottom()) / KReportPrivate::dpiY(), KReportUnit::parseValue("1.5cm"), 0.2);
+    QFUZZYCOMPARE(INCH_TO_POINT(opt.getMarginTop()) / KReportPrivate::dpiY(), KReportUnit::parseValue("2.0cm"), 0.2);
+    QFUZZYCOMPARE(INCH_TO_POINT(opt.getMarginLeft()) / KReportPrivate::dpiX(), KReportUnit::parseValue("3.0cm"), 0.2);
+    QFUZZYCOMPARE(INCH_TO_POINT(opt.getMarginRight()) / KReportPrivate::dpiX(), KReportUnit::parseValue("4.0cm"), 0.3);
 #endif
 }
 

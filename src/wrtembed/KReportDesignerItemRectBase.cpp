@@ -20,7 +20,7 @@
 #include "KReportDesignerSectionView.h"
 #include "KReportDesigner.h"
 #include "KReportDesignerSectionScene.h"
-#include "KReportDpi.h"
+#include "KReportUtils_p.h"
 
 #include <KPropertySet>
 #include <QGraphicsSceneMouseEvent>
@@ -46,8 +46,8 @@ KReportDesignerItemRectBase::Private::~Private()
 KReportDesignerItemRectBase::KReportDesignerItemRectBase(KReportDesigner *r, KReportItemBase *b)
         : QGraphicsRectItem(), KReportDesignerItemBase(r, b), d(new KReportDesignerItemRectBase::Private)
 {
-    m_dpiX = KReportDpi::dpiX();
-    m_dpiY = KReportDpi::dpiY();
+    m_dpiX = KReportPrivate::dpiX();
+    m_dpiY = KReportPrivate::dpiY();
 
     d->grabAction = 0;
     setAcceptHoverEvents(true);

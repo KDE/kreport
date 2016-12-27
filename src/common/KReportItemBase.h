@@ -20,7 +20,6 @@
 
 #include "config-kreport.h"
 #include "kreport_export.h"
-#include "KReportDpi.h"
 #include "KReportUnit.h"
 
 #include <QObject>

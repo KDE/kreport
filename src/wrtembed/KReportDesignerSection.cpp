@@ -30,7 +30,7 @@
 #include "KReportDesignerItemLine.h"
 #include "KReportRuler_p.h"
 #include "KReportZoomHandler.h"
-#include "KReportDpi.h"
+#include "KReportUtils_p.h"
 #include "KReportPluginMetaData.h"
 #include "kreport_debug.h"
 
@@ -106,7 +106,7 @@ KReportDesignerSection::KReportDesignerSection(KReportDesigner * rptdes)
     connect(d->sectionData->propertySet(), SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
-    d->dpiY = KReportDpi::dpiY();
+    d->dpiY = KReportPrivate::dpiY();
 
     d->reportDesigner = rptdes;
     setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);

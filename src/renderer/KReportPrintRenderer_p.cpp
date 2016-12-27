@@ -20,7 +20,7 @@
 #include "kreport_debug.h"
 #include "KReportRenderObjects.h"
 #include "KReportPageSize.h"
-#include "KReportDpi.h"
+#include "KReportUtils_p.h"
 
 #include <QApplication>
 #include <QPainter>
@@ -80,8 +80,8 @@ bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *d
     if (toPage == 0 || toPage > document->pageCount())
         toPage = document->pageCount();
 
-    qreal scaleX = context.printer()->resolution() / qreal(KReportDpi::dpiX());
-    qreal scaleY = context.printer()->resolution() / qreal(KReportDpi::dpiY());
+    qreal scaleX = context.printer()->resolution() / qreal(KReportPrivate::dpiX());
+    qreal scaleY = context.printer()->resolution() / qreal(KReportPrivate::dpiY());
 
 
     for (int copy = 0; copy < context.printer()->numCopies(); copy++) {
