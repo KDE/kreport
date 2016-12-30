@@ -53,19 +53,9 @@ KReportData::SortedField & KReportData::SortedField::operator=(const KReportData
     return *this;
 }
 
-QString KReportData::SortedField::field()
-{
-    return d->field;
-}
-
 QString KReportData::SortedField::field() const
 {
     return d->field;
-}
-
-Qt::SortOrder KReportData::SortedField::order()
-{
-    return d->order;
 }
 
 Qt::SortOrder KReportData::SortedField::order() const

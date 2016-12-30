@@ -43,9 +43,7 @@ public:
         void setField(const QString &field);
         void setOrder(Qt::SortOrder order);
         QString field() const;
-        QString field();
         Qt::SortOrder order() const;
-        Qt::SortOrder order();
         
         private:
             class Private;
