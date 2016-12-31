@@ -35,7 +35,7 @@ public:
     KProperty *sizeProperty;
     KProperty *positionProperty;
     QString oldName;
-    qreal z;
+    qreal z = 0;
 };
 
 KReportItemBase::Private::Private()
@@ -59,9 +59,7 @@ KReportItemBase::Private::~Private()
 
 
 KReportItemBase::KReportItemBase() : d(new Private())
-{
-    d->z = 0;
-    
+{    
     connect(propertySet(), &KPropertySet::propertyChanged,
             this, &KReportItemBase::propertyChanged);
 }

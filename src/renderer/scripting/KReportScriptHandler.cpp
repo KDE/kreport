@@ -42,33 +42,18 @@ public:
     KReportScriptConstants *constants;
     KReportScriptDebug *debug;
     KReportScriptDraw *draw;
-
     Scripting::Report *report;
-
     const KReportData *reportData;
-
     QString source;
     KReportDocument  *reportDocument;
-
     QJSEngine engine;
     QJSValue scriptValue;
-
     QMap<QString, QVariant> groups;
     QMap<KReportSectionData*, Scripting::Section*> sectionMap;
 };
 
-KReportScriptHandler::Private::Private()
+KReportScriptHandler::Private::Private() : constants(new KReportScriptConstants), debug(new KReportScriptDebug), draw(new KReportScriptDraw)
 {
-    //NOTE these are on the heap so that engine can delete them
-    
-    //Add constants object
-    constants = new KReportScriptConstants();
-
-    //A simple debug function to allow printing from functions
-    debug = new KReportScriptDebug();
-
-    //A simple drawing object
-    draw = new KReportScriptDraw();
 }
 
 KReportScriptHandler::Private::~Private()

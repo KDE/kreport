@@ -290,16 +290,15 @@ public:
     ~Private();
     ORODocument * document;
     QList<OROPrimitive*> primitives;
-    qint64 row;
-    int height;
-    KReportSectionData::Section type;
-    QColor backgroundColor;
+    qint64 row = 0;
+    int height = 0;
+    KReportSectionData::Section type = KReportSectionData::None;
+    QColor backgroundColor = Qt::white;
 };
 
 OROSection::Private::Private()
 {
-    height = 0;
-    backgroundColor = Qt::white;
+
 }
 
 OROSection::Private::~Private()
@@ -405,7 +404,7 @@ void OROSection::setDocument(ORODocument* doc)
 class Q_DECL_HIDDEN OROPrimitive::Private
 {
 public:
-    OROPage * page;
+    OROPage * page = nullptr;
     QPointF position;
     QSizeF size;
 };
@@ -413,7 +412,6 @@ public:
 OROPrimitive::OROPrimitive()
         : d(new Private())
 {
-    d->page = 0;
 }
 
 OROPrimitive::~OROPrimitive()

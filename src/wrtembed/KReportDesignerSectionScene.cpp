@@ -29,10 +29,8 @@
 #include <QGraphicsSceneMouseEvent>
 
 KReportDesignerSectionScene::KReportDesignerSectionScene(qreal w, qreal h, KReportDesigner *rd)
-        : QGraphicsScene(0, 0, w, h, rd)
+        : QGraphicsScene(0, 0, w, h, rd), m_rd(rd)
 {
-    m_rd = rd;
-    m_minorSteps = 0;
     m_dpiX = KReportPrivate::dpiX();
     m_dpiY = KReportPrivate::dpiY();
 
@@ -80,9 +78,9 @@ void KReportDesignerSectionScene::drawBackground(QPainter* painter, const QRectF
             }
 
         }
-        m_minorSteps = m_rd->propertySet()->property("grid-divisions").value().toInt();
-        m_pixelIncrementX = (m_majorX / m_minorSteps);
-        m_pixelIncrementY = (m_majorY / m_minorSteps);
+        int minorSteps = m_rd->propertySet()->property("grid-divisions").value().toInt();
+        m_pixelIncrementX = (m_majorX / minorSteps);
+        m_pixelIncrementY = (m_majorY / minorSteps);
 
         QPen pen = painter->pen();
         painter->setPen(Qt::lightGray);
@@ -98,7 +96,7 @@ void KReportDesignerSectionScene::drawBackground(QPainter* painter, const QRectF
             for (int i = 0; i < wpoints; ++i) {
                 for (int j = 0; j < hpoints; ++j) {
                     //if (clip.contains(i * pixel_incrementx, j * pixel_incrementy)){
-                    if (i % m_minorSteps == 0 && j % m_minorSteps == 0) {
+                    if (i % minorSteps == 0 && j % minorSteps == 0) {
                         lines << QLine(QPoint(i * m_pixelIncrementX, j * m_pixelIncrementY), QPoint(i * m_pixelIncrementX, j * m_pixelIncrementY  + m_majorX));
                         //painter->drawLine();
                         lines << QLine(QPoint(i * m_pixelIncrementX, j * m_pixelIncrementY), QPoint(i * m_pixelIncrementX + m_majorY, j * m_pixelIncrementY));
@@ -172,9 +170,9 @@ QPointF KReportDesignerSectionScene::gridPoint(const QPointF& p)
 
         }
     }
-    m_minorSteps = m_rd->propertySet()->property("grid-divisions").value().toInt();
-    m_pixelIncrementX = (m_majorX / m_minorSteps);
-    m_pixelIncrementY = (m_majorY / m_minorSteps);
+    int minorSteps = m_rd->propertySet()->property("grid-divisions").value().toInt();
+    m_pixelIncrementX = (m_majorX / minorSteps);
+    m_pixelIncrementY = (m_majorY / minorSteps);
 
     return QPointF(qRound((p.x() / m_pixelIncrementX)) * m_pixelIncrementX, qRound((p.y() / m_pixelIncrementY)) * m_pixelIncrementY);
 }

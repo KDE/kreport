@@ -101,10 +101,7 @@ bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *d
                 prim->setPosition(QPointF(prim->position().x() * scaleX, prim->position().y() * scaleY));
                 prim->setSize(QSizeF(prim->size().width() * scaleX, prim->size().height() * scaleY));
                 //kreportDebug() << "Rendering object" << i << "type" << prim->type();
-                if (dynamic_cast<OROTextBox*>(prim)) {
-                    //kreportDebug() << "Text Box";
-                    OROTextBox * tb = dynamic_cast<OROTextBox*>(prim);
-
+                if (OROTextBox *tb = dynamic_cast<OROTextBox*>(prim)) {
                     QPointF ps = tb->position();
                     QSizeF sz = tb->size();
                     QRectF rc = QRectF(ps.x(), ps.y(), sz.width(), sz.height());
@@ -131,9 +128,7 @@ bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *d
                     //Reset back to defaults for next element
                     context.painter()->restore();
 
-                } else if (dynamic_cast<OROLine*>(prim)) {
-                    //kreportDebug() << "Line";
-                    OROLine * ln = dynamic_cast<OROLine*>(prim);
+                } else if (OROLine *ln = dynamic_cast<OROLine*>(prim)) {
                     QPointF s = ln->startPoint();
                     QPointF e(ln->endPoint().x() * scaleX, ln->endPoint().y() * scaleY);
                     //QPen pen ( _painter()->pen() );
@@ -145,9 +140,7 @@ bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *d
                     context.painter()->drawLine(QLineF(s.x(), s.y(), e.x(), e.y()));
                     context.painter()->setRenderHint(QPainter::Antialiasing, false);
                     context.painter()->restore();
-                } else if (dynamic_cast<OROImage*>(prim)) {
-                    //kreportDebug() << "Image";
-                    OROImage * im = dynamic_cast<OROImage*>(prim);
+                } else if (OROImage *im = dynamic_cast<OROImage*>(prim)) {
                     QPointF ps = im->position();
                     QSizeF sz = im->size();
                     QRectF rc = QRectF(ps.x(), ps.y(), sz.width(), sz.height());
@@ -158,10 +151,7 @@ bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *d
 
                     QRectF sr = QRectF(QPointF(0.0, 0.0), rc.size().boundedTo(img.size()));
                     context.painter()->drawImage(rc.topLeft(), img, sr);
-                } else if (dynamic_cast<ORORect*>(prim)) {
-                    //kreportDebug() << "Rect";
-                    ORORect * re = dynamic_cast<ORORect*>(prim);
-
+                } else if (ORORect *re = dynamic_cast<ORORect*>(prim)) {
                     QPointF ps = re->position();
                     QSizeF sz = re->size();
                     QRectF rc = QRectF(ps.x(), ps.y(), sz.width(), sz.height());
@@ -171,9 +161,7 @@ bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *d
                     context.painter()->setBrush(re->brush());
                     context.painter()->drawRect(rc);
                     context.painter()->restore();
-                } else if (dynamic_cast<OROEllipse*>(prim)) {
-                    OROEllipse * re = dynamic_cast<OROEllipse*>(prim);
-
+                } else if (OROEllipse *re = dynamic_cast<OROEllipse*>(prim)) {
                     QPointF ps = re->position();
                     QSizeF sz = re->size();
                     QRectF rc = QRectF(ps.x(), ps.y(), sz.width(), sz.height());
@@ -183,14 +171,12 @@ bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *d
                     context.painter()->setBrush(re->brush());
                     context.painter()->drawEllipse(rc);
                     context.painter()->restore();
-                } else if (dynamic_cast<OROPicture*>(prim)) {
-                    OROPicture * im = dynamic_cast<OROPicture*>(prim);
+                } else if (OROPicture *im = dynamic_cast<OROPicture*>(prim)) {
                     QPointF ps = im->position();
                     QSizeF sz = im->size();
                     QRectF rc = QRectF(ps.x(), ps.y(), sz.width(), sz.height());
                     context.painter()->drawPicture(rc.topLeft(), *(im->picture()));
-                } else if (dynamic_cast<OROCheckBox*>(prim)) {
-                    OROCheckBox * chk = dynamic_cast<OROCheckBox*>(prim);
+                } else if (OROCheckBox *chk = dynamic_cast<OROCheckBox*>(prim)) {
                     QPointF ps = chk->position();
                     QSizeF sz = chk->size();
                     QRectF rc = QRectF(ps.x(), ps.y(), sz.width(), sz.height());

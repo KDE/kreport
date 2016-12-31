@@ -174,8 +174,10 @@ int KReportItemImage::renderSimpleData(OROPage *page, OROSection *section, const
 
     if (section) {
         OROImage *i2 = dynamic_cast<OROImage*>(id->clone());
-        i2->setPosition(scenePosition(position()));
-        section->addPrimitive(i2);
+        if (i2) {
+            i2->setPosition(scenePosition(position()));
+            section->addPrimitive(i2);
+        }
     }
 
     if (!page) {

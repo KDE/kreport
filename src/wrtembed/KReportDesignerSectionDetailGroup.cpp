@@ -29,30 +29,22 @@
 class Q_DECL_HIDDEN KReportDesignerSectionDetailGroup::Private
 {
 public:
-    explicit Private()
-        : groupHeader(0)
-        , groupFooter(0)
-        , pageBreak(KReportDesignerSectionDetailGroup::BreakNone)
-        , sort(Qt::AscendingOrder)
-    {}
+    explicit Private() {}
 
     ~Private()
     {
-        // I delete these here so that there are no widgets
+        //Delete these here so that there are no widgets
         //left floating around
         delete groupHeader;
         delete groupFooter;
     }
 
     QString column;
-
     KReportDesignerSection *groupHeader;
     KReportDesignerSection *groupFooter;
-
     KReportDesignerSectionDetail * reportSectionDetail;
-
-    PageBreak pageBreak;
-    Qt::SortOrder sort;
+    PageBreak pageBreak = KReportDesignerSectionDetailGroup::BreakNone;
+    Qt::SortOrder sort = Qt::AscendingOrder;
 };
 
 KReportDesignerSectionDetailGroup::KReportDesignerSectionDetailGroup(const QString & column, KReportDesignerSectionDetail * rsd,

@@ -34,7 +34,6 @@ class Q_DECL_HIDDEN KReportPage::Private
 public:
     explicit Private(ORODocument *document)
         : reportDocument(document)
-        , page(0)
     {}
 
     ~Private()
@@ -43,11 +42,10 @@ public:
     }
 
     ORODocument *reportDocument;
-    int page;
+    int page = 0;
     QPixmap pixmap;
     KReportRendererFactory factory;
     KReportRendererBase *renderer;
-
     QTimer renderTimer;
 };
 

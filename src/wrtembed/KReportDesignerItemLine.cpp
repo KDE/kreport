@@ -170,7 +170,12 @@ void KReportDesignerItemLine::mouseMoveEvent(QGraphicsSceneMouseEvent * event)
     int x;
     int y;
 
-    QPointF p = dynamic_cast<KReportDesignerSectionScene*>(scene())->gridPoint(event->scenePos());
+    KReportDesignerSectionScene *section = qobject_cast<KReportDesignerSectionScene*>(scene());
+    if (!section) {
+        return;
+    }
+        
+    QPointF p = section->gridPoint(event->scenePos());
     //kreportDebug() << p;
     x = p.x();
     y = p.y();
@@ -188,7 +193,7 @@ void KReportDesignerItemLine::mouseMoveEvent(QGraphicsSceneMouseEvent * event)
         m_end->setValue(positionFromScene(QPointF(x,y)));
         break;
     default:
-        QPointF d = mapToItem(this, dynamic_cast<KReportDesignerSectionScene*>(scene())->gridPoint(event->scenePos())) - mapToItem(this, dynamic_cast<KReportDesignerSectionScene*>(scene())->gridPoint(event->lastScenePos()));
+        QPointF d = mapToItem(this, section->gridPoint(event->scenePos())) - mapToItem(this, section->gridPoint(event->lastScenePos()));
 
         if (((line().p1() + d).x() >= 0) &&
                 ((line().p2() + d).x() >= 0) &&

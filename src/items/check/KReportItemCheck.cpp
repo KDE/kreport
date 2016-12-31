@@ -170,8 +170,10 @@ int KReportItemCheckBox::renderSimpleData(OROPage *page, OROSection *section, co
 
     if (section) {
         OROCheckBox *chk2 = dynamic_cast<OROCheckBox*>(chk->clone());
-        chk2->setPosition(scenePosition(position()));
-        section->addPrimitive(chk2);
+        if (chk2) {
+            chk2->setPosition(scenePosition(position()));
+            section->addPrimitive(chk2);
+        }
     }
 
     if (!page) {

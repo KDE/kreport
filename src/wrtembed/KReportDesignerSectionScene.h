@@ -70,11 +70,10 @@ private:
     KReportDesigner * m_rd;
 
     KReportUnit m_unit;
-    int m_minorSteps;
-    qreal m_majorX;
-    qreal m_majorY;
-    qreal m_pixelIncrementX;
-    qreal m_pixelIncrementY;
+    qreal m_majorX = 0.0;
+    qreal m_majorY = 0.0;
+    qreal m_pixelIncrementX = 0.0;
+    qreal m_pixelIncrementY = 0.0;
     int m_dpiX;
     int m_dpiY;
 };

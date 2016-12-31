@@ -50,8 +50,8 @@ KReportDpiSingleton::KReportDpiSingleton()
         m_dpiX = w->logicalDpiX();
         m_dpiY = w->logicalDpiY();
     } else {
-        m_dpiX = 75;
-        m_dpiY = 75;
+        m_dpiX = 96;
+        m_dpiY = 96;
     }
 #endif
 }

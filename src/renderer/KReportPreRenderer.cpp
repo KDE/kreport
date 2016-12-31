@@ -368,8 +368,7 @@ qreal KReportPreRendererPrivate::renderSection(const KReportSectionData & sectio
     }
     for (int i = 0; i < m_page->primitiveCount(); ++i) {
         OROPrimitive *prim = m_page->primitive(i);
-        if (dynamic_cast<OROTextBox*>(prim)) {
-            OROTextBox *text = dynamic_cast<OROTextBox*>(prim);
+        if (OROTextBox *text = dynamic_cast<OROTextBox*>(prim)) {
             if (text->requiresPostProcessing()) {
                 m_postProcText.append(text);
             }

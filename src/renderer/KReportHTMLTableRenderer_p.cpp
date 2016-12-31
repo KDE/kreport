@@ -115,23 +115,16 @@ QString HTMLTableRenderer::renderTable(ORODocument *document)
             for (int i = 0; i < section->primitiveCount(); i++) {
                 OROPrimitive * prim = section->primitive(i);
 
-                if (dynamic_cast<OROTextBox*>(prim)) {
-                    OROTextBox * tb = dynamic_cast<OROTextBox*>(prim);
-
+                if (OROTextBox *tb = dynamic_cast<OROTextBox*>(prim)) {
                     tr += QLatin1String("<td>") +
                           tb->text() +
                           QLatin1String("</td>\n");
-                } else if (dynamic_cast<OROImage*>(prim)) {
-                    //kreportDebug() << "Saving an image";
-                    OROImage * im = dynamic_cast<OROImage*>(prim);
+                } else if (OROImage *im  = dynamic_cast<OROImage*>(prim)) {
                     tr += QLatin1String("<td>"
                           "<img src=\"./") + m_actualDirName + QLatin1String("/object") + QString::number(s) + QString::number(i) + QLatin1String(".png\"></img>"
                           "</td>\n");
                     im->image().save(m_tempDirName + QLatin1String("/object") + QString::number(s) + QString::number(i) + QLatin1String(".png"));
-                } else if (dynamic_cast<OROPicture*>(prim)) {
-                    //kreportDebug() << "Saving a picture";
-                    OROPicture * im = dynamic_cast<OROPicture*>(prim);
-
+                } else if (OROPicture *im = dynamic_cast<OROPicture*>(prim)) {
                     tr += QLatin1String("<td>"
                           "<img src=\"./") + m_actualDirName + QLatin1String("/object") + QString::number(s) + QString::number(i) + QLatin1String(".png\"></img>"
                           "</td>\n");

@@ -32,7 +32,7 @@ public:
     Private();
     ~Private();
     
-    int grabAction;
+    int grabAction = 0;
 };
 
 KReportDesignerItemRectBase::Private::Private()
@@ -112,7 +112,12 @@ void KReportDesignerItemRectBase::mouseMoveEvent(QGraphicsSceneMouseEvent * even
 
     qreal w, h;
 
-    QPointF p  = dynamic_cast<KReportDesignerSectionScene*>(scene())->gridPoint(event->scenePos());
+    KReportDesignerSectionScene *section = qobject_cast<KReportDesignerSectionScene*>(scene());
+    if (!section) {
+        return;
+    }
+    
+    QPointF p  = section->gridPoint(event->scenePos());
     w = p.x() - scenePos().x();
     h = p.y() - scenePos().y();
 
@@ -266,42 +271,45 @@ int KReportDesignerItemRectBase::grabHandle(QPointF pos)
 
 QVariant KReportDesignerItemRectBase::itemChange(GraphicsItemChange change, const QVariant &value)
 {
-    if (change == ItemPositionChange && scene()) {
-        QPointF newPos = value.toPointF();
+    KReportDesignerSectionScene *section = qobject_cast<KReportDesignerSectionScene*>(scene());
+    if (section) {
+            
+        if (change == ItemPositionChange) {
+            QPointF newPos = value.toPointF();
+            
+            newPos = section->gridPoint(newPos);
+            if (newPos.x() < 0)
+                newPos.setX(0);
+            else if (newPos.x() > (scene()->width() - rect().width()))
+                newPos.setX(scene()->width() - rect().width());
 
-        newPos = dynamic_cast<KReportDesignerSectionScene*>(scene())->gridPoint(newPos);
-        if (newPos.x() < 0)
-            newPos.setX(0);
-        else if (newPos.x() > (scene()->width() - rect().width()))
-            newPos.setX(scene()->width() - rect().width());
+            if (newPos.y() < 0)
+                newPos.setY(0);
+            else if (newPos.y() > (scene()->height() - rect().height()))
+                newPos.setY(scene()->height() - rect().height());
 
-        if (newPos.y() < 0)
-            newPos.setY(0);
-        else if (newPos.y() > (scene()->height() - rect().height()))
-            newPos.setY(scene()->height() - rect().height());
+            return newPos;
+        } else if (change == ItemPositionHasChanged) {
+            item()->setPosition(KReportItemBase::positionFromScene(value.toPointF()));
+            //TODO dont update property
+            //m_ppos->setScenePos(value.toPointF(), KReportPosition::DontUpdateProperty);
+        } else if (change == ItemSceneHasChanged && item()) {
+            QPointF newPos = pos();
 
-        return newPos;
-    } else if (change == ItemPositionHasChanged && scene()) {
-        item()->setPosition(KReportItemBase::positionFromScene(value.toPointF()));
-        //TODO dont update property
-        //m_ppos->setScenePos(value.toPointF(), KReportPosition::DontUpdateProperty);
-    } else if (change == ItemSceneHasChanged && scene() && item()) {
-        QPointF newPos = pos();
+            newPos = section->gridPoint(newPos);
+            if (newPos.x() < 0)
+                newPos.setX(0);
+            else if (newPos.x() > (scene()->width() - rect().width()))
+                newPos.setX(scene()->width() - rect().width());
 
-        newPos = dynamic_cast<KReportDesignerSectionScene*>(scene())->gridPoint(newPos);
-        if (newPos.x() < 0)
-            newPos.setX(0);
-        else if (newPos.x() > (scene()->width() - rect().width()))
-            newPos.setX(scene()->width() - rect().width());
+            if (newPos.y() < 0)
+                newPos.setY(0);
+            else if (newPos.y() > (scene()->height() - rect().height()))
+                newPos.setY(scene()->height() - rect().height());
 
-        if (newPos.y() < 0)
-            newPos.setY(0);
-        else if (newPos.y() > (scene()->height() - rect().height()))
-            newPos.setY(scene()->height() - rect().height());
-
-        setSceneRect(newPos, KReportItemBase::sceneSize(item()->size()), KReportDesignerItemRectBase::DontUpdateProperty);
+            setSceneRect(newPos, KReportItemBase::sceneSize(item()->size()), KReportDesignerItemRectBase::DontUpdateProperty);
+        }
     }
-
     return QGraphicsItem::itemChange(change, value);
 }
 

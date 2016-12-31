@@ -29,9 +29,7 @@
 class Q_DECL_HIDDEN KReportDesignerSectionDetail::Private
 {
 public:
-    explicit Private()
-        : pageBreak(KReportDesignerSectionDetail::BreakNone)
-    {}
+    explicit Private() {}
 
     ~Private()
     {
@@ -40,12 +38,9 @@ public:
     QString name;
     KReportDesignerSection *detail;
     KReportDesigner *reportDesigner;
-
     QList<KReportDesignerSectionDetailGroup*> groupList;
-
     QVBoxLayout *vboxlayout;
-
-    int pageBreak;
+    int pageBreak = KReportDesignerSectionDetail::BreakNone;
 };
 
 KReportDesignerSectionDetail::KReportDesignerSectionDetail(KReportDesigner * rptdes)

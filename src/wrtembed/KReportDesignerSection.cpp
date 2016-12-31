@@ -389,30 +389,31 @@ static void replaceColors(QPixmap* original, const QColor& color)
 void KReportDesignerSectionTitle::paintEvent(QPaintEvent * event)
 {
     QPainter painter(this);
-    KReportDesignerSection* _section = dynamic_cast<KReportDesignerSection*>(parent());
-
-    const bool current = _section->d->scene == _section->d->reportDesigner->activeScene();
-    QPalette::ColorGroup cg = QPalette::Inactive;
-    QWidget *activeWindow = QApplication::activeWindow();
-    if (activeWindow) {
-        QWidget *par = activeWindow->focusWidget();
-        if (qobject_cast<KReportDesignerSectionView*>(par)) {
-            par = par->parentWidget(); // we're close, pick common parent
+    KReportDesignerSection* section = dynamic_cast<KReportDesignerSection*>(parent());
+    if (section) {
+        const bool current = section->d->scene == section->d->reportDesigner->activeScene();
+        QPalette::ColorGroup cg = QPalette::Inactive;
+        QWidget *activeWindow = QApplication::activeWindow();
+        if (activeWindow) {
+            QWidget *par = activeWindow->focusWidget();
+            if (qobject_cast<KReportDesignerSectionView*>(par)) {
+                par = par->parentWidget(); // we're close, pick common parent
+            }
+            if (hasParent(par, this)) {
+                cg = QPalette::Active;
+            }
         }
-        if (hasParent(par, this)) {
-            cg = QPalette::Active;
+        if (current) {
+            painter.fillRect(rect(), palette().brush(cg, QPalette::Highlight));
         }
-    }
-    if (current) {
-        painter.fillRect(rect(), palette().brush(cg, QPalette::Highlight));
-    }
-    painter.setPen(palette().color(cg, current ? QPalette::HighlightedText : QPalette::WindowText));
-    QPixmap pixmap(QIcon::fromTheme(QLatin1String("arrow-down")).pixmap(16,16));
-    replaceColors(&pixmap, painter.pen().color());
-    const int left = 25;
-    painter.drawPixmap(QPoint(left, (height() - pixmap.height()) / 2), pixmap);
+        painter.setPen(palette().color(cg, current ? QPalette::HighlightedText : QPalette::WindowText));
+        QPixmap pixmap(QIcon::fromTheme(QLatin1String("arrow-down")).pixmap(16,16));
+        replaceColors(&pixmap, painter.pen().color());
+        const int left = 25;
+        painter.drawPixmap(QPoint(left, (height() - pixmap.height()) / 2), pixmap);
 
-    painter.drawText(rect().adjusted(left + pixmap.width() + 4, 0, 0, 0), Qt::AlignLeft | Qt::AlignVCenter, text());
+        painter.drawText(rect().adjusted(left + pixmap.width() + 4, 0, 0, 0), Qt::AlignLeft | Qt::AlignVCenter, text());
+    }
     QFrame::paintEvent(event);
 }
 

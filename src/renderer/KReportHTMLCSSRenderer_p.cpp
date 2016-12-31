@@ -121,9 +121,7 @@ QString HTMLCSSRenderer::renderCSS(ORODocument *document)
             for (int i = 0; i < section->primitiveCount(); i++) {
                 OROPrimitive * prim = section->primitive(i);
                 //kreportDebug() << "Got object type" << prim->type();
-                if (dynamic_cast<OROTextBox*>(prim)) {
-                    OROTextBox * tb = dynamic_cast<OROTextBox*>(prim);
-
+                if (OROTextBox *tb = dynamic_cast<OROTextBox*>(prim)) {
                     QColor bg = tb->textStyle().backgroundColor;
                     style = QLatin1String("position: absolute; ") +
                             QLatin1String("background-color: ") + QString::fromLatin1("rgba(%1,%2,%3,%4)")
@@ -151,9 +149,7 @@ QString HTMLCSSRenderer::renderCSS(ORODocument *document)
                     body += QLatin1String("<div class=\"style") + QString::number(styleindex) + QLatin1String("\">") +
                             tb->text() +
                             QLatin1String("</div>\n");
-                } else if (dynamic_cast<OROImage*>(prim)) {
-                    //kreportDebug() << "Saving an image";
-                    OROImage * im = dynamic_cast<OROImage*>(prim);
+                } else if (OROImage *im = dynamic_cast<OROImage*>(prim)) {
                     style = QLatin1String("position: absolute; ") +
                             QLatin1String("top: ") + QString::number(im->position().y()) + QLatin1String("pt; ") +
                             QLatin1String("left: ") + QString::number(im->position().x()) + QLatin1String("pt; ");
@@ -168,9 +164,7 @@ QString HTMLCSSRenderer::renderCSS(ORODocument *document)
 
 
                     im->image().save(m_tempDirName + QLatin1String("/object") + QString::number(s) + QString::number(i) + QLatin1String(".png"));
-                } else if (dynamic_cast<OROPicture*>(prim)) {
-                    //kreportDebug() << "Saving a picture";
-                    OROPicture * im = dynamic_cast<OROPicture*>(prim);
+                } else if (OROPicture *im = dynamic_cast<OROPicture*>(prim)) {
                     style = QLatin1String("position: absolute; ") +
                             QLatin1String("top: ") + QString::number(im->position().y()) + QLatin1String("pt; ") +
                             QLatin1String("left: ") + QString::number(im->position().x()) + QLatin1String("pt; ");

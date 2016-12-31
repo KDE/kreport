@@ -51,10 +51,6 @@ public:
 protected:
     int m_dpiX;
     int m_dpiY;
-    qreal m_userHeight;
-    qreal m_userWidth;
-    qreal m_pressX;
-    qreal m_pressY;
 
     enum UpdatePropertyFlag {
         UpdateProperty,

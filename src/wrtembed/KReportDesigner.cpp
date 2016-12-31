@@ -106,28 +106,7 @@ public:
 class Q_DECL_HIDDEN KReportDesigner::Private
 {
 public:
-    Private()
-        : activeScene(0)
-        , reportHeader(0)
-        , pageHeaderFirst(0)
-        , pageHeaderOdd(0)
-        , pageHeaderEven(0)
-        , pageHeaderLast(0)
-        , pageHeaderAny(0)
-        , pageFooterFirst(0)
-        , pageFooterOdd(0)
-        , pageFooterEven(0)
-        , pageFooterLast(0)
-        , pageFooterAny(0)
-        , reportFooter(0)
-        , detail(0)
-        , pressX(-1)
-        , pressY(-1)
-        , releaseX(-1)
-        , releaseY(-1)
-        , modified(false)
-        , kordata(0)
-    {}
+    Private(){}
 
     ~Private()
     {
@@ -143,24 +122,24 @@ public:
     QVBoxLayout *vboxlayout;
     KReportPropertiesButton *pageButton;
 
-    QGraphicsScene *activeScene;
+    QGraphicsScene *activeScene = nullptr;
 
     ReportWriterSectionData *sectionData;
 
-    KReportDesignerSection *reportHeader;
-    KReportDesignerSection *pageHeaderFirst;
-    KReportDesignerSection *pageHeaderOdd;
-    KReportDesignerSection *pageHeaderEven;
-    KReportDesignerSection *pageHeaderLast;
-    KReportDesignerSection *pageHeaderAny;
+    KReportDesignerSection *reportHeader = nullptr;
+    KReportDesignerSection *pageHeaderFirst = nullptr;
+    KReportDesignerSection *pageHeaderOdd = nullptr;
+    KReportDesignerSection *pageHeaderEven = nullptr;
+    KReportDesignerSection *pageHeaderLast = nullptr;
+    KReportDesignerSection *pageHeaderAny = nullptr;
 
-    KReportDesignerSection *pageFooterFirst;
-    KReportDesignerSection *pageFooterOdd;
-    KReportDesignerSection *pageFooterEven;
-    KReportDesignerSection *pageFooterLast;
-    KReportDesignerSection *pageFooterAny;
-    KReportDesignerSection *reportFooter;
-    KReportDesignerSectionDetail *detail;
+    KReportDesignerSection *pageFooterFirst = nullptr;
+    KReportDesignerSection *pageFooterOdd = nullptr;
+    KReportDesignerSection *pageFooterEven = nullptr;
+    KReportDesignerSection *pageFooterLast = nullptr;
+    KReportDesignerSection *pageFooterAny = nullptr;
+    KReportDesignerSection *reportFooter = nullptr;
+    KReportDesignerSectionDetail *detail = nullptr;
 
     //Properties
     KPropertySet *set;
@@ -193,17 +172,17 @@ public:
     QAction *itemRaiseAction;
     QAction *itemLowerAction;
 
-    qreal pressX;
-    qreal pressY;
-    qreal releaseX;
-    qreal releaseY;
+    qreal pressX = -1;
+    qreal pressY = -1;
+    qreal releaseX = -1;
+    qreal releaseY = -1;
 
-    bool modified; // true if this document has been modified, false otherwise
+    bool modified = false; // true if this document has been modified, false otherwise
 
     QString originalInterpreter; //Value of the script interpreter at load time
     QString originalScript; //Value of the script at load time
 
-    KReportData *kordata;
+    KReportData *kordata = nullptr;
 };
 
 KReportDesigner::KReportDesigner(QWidget * parent)
@@ -1172,13 +1151,15 @@ void KReportDesigner::slotEditPaste(QGraphicsScene * canvas)
             //kreportDebug() << type;
             KReportDesignerItemBase *ent = item->clone();
             KReportItemBase *new_obj = dynamic_cast<KReportItemBase*>(ent);
-            new_obj->setEntityName(suggestEntityName(type));
-            if (activeItem) {
-                new_obj->setPosition(KReportItemBase::positionFromScene(QPointF(activeItem->x() + 10, activeItem->y() + 10)));
-            } else {
-                new_obj->setPosition(KReportItemBase::positionFromScene(QPointF(0, 0)));
+            if (new_obj) {
+                new_obj->setEntityName(suggestEntityName(type));
+                if (activeItem) {
+                    new_obj->setPosition(KReportItemBase::positionFromScene(QPointF(activeItem->x() + 10, activeItem->y() + 10)));
+                } else {
+                    new_obj->setPosition(KReportItemBase::positionFromScene(QPointF(0, 0)));
+                }
+                changeSet(new_obj->propertySet());
             }
-            changeSet(new_obj->propertySet());
             QGraphicsItem *pasted_ent = dynamic_cast<QGraphicsItem*>(ent);
             if (pasted_ent) {
                 pasted_ent->setSelected(true);

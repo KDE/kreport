@@ -270,8 +270,10 @@ int KReportItemText::renderSimpleData(OROPage *page, OROSection *section, const 
 
                     if (section) {
                         OROTextBox *tb2 = dynamic_cast<OROTextBox*>(tb->clone());
-                        tb2->setPosition(scenePosition(position()));
-                        section->addPrimitive(tb2);
+                        if (tb2) {
+                            tb2->setPosition(scenePosition(position()));
+                            section->addPrimitive(tb2);
+                        }
                     }
 
                     if (!page) {

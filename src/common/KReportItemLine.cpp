@@ -131,10 +131,12 @@ int KReportItemLine::renderSimpleData(OROPage *page, OROSection *section, const 
     if (page) page->insertPrimitive(ln);
 
     OROLine *l2 = dynamic_cast<OROLine*>(ln->clone());
-    l2->setStartPoint(m_start->value().toPointF());
-    l2->setEndPoint(m_end->value().toPointF());
-    if (section) section->addPrimitive(l2);
-
+    if (l2) {
+        l2->setStartPoint(m_start->value().toPointF());
+        l2->setEndPoint(m_end->value().toPointF());
+    
+        if (section) section->addPrimitive(l2);
+    }
     return 0;
 }
 
