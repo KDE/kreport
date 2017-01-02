@@ -30,7 +30,7 @@
 #include <QTextCursor>
 #include <QTextDocument>
 
-void KReportDesignerItemLabel::init(QGraphicsScene *scene, KReportDesigner *d)
+void KReportDesignerItemLabel::init(QGraphicsScene *scene)
 {
     if (scene)
         scene->addItem(this);
@@ -58,7 +58,7 @@ KReportDesignerItemLabel::KReportDesignerItemLabel(KReportDesigner* d, QGraphics
         : KReportDesignerItemRectBase(d, this)
 {
     Q_UNUSED(pos);
-    init(scene, d);
+    init(scene);
     setSceneRect(properRect(*d, getTextRect().width(), getTextRect().height()));
     nameProperty()->setValue(designer()->suggestEntityName(typeName()));
 
@@ -68,7 +68,7 @@ KReportDesignerItemLabel::KReportDesignerItemLabel(KReportDesigner* d, QGraphics
 KReportDesignerItemLabel::KReportDesignerItemLabel(const QDomNode & element, KReportDesigner * d, QGraphicsScene * s)
         : KReportItemLabel(element), KReportDesignerItemRectBase(d, this), m_inlineEdit(0)
 {
-    init(s, d);
+    init(s);
     setSceneRect(KReportItemBase::scenePosition(item()->position()), KReportItemBase::sceneSize(item()->size()));
 }
 

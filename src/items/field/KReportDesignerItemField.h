@@ -45,7 +45,7 @@ protected:
     virtual void mousePressEvent(QGraphicsSceneMouseEvent * event);
 
 private:
-    void init(QGraphicsScene*, KReportDesigner * d);
+    void init(QGraphicsScene *scene);
     QRect getTextRect() const;
 
 private Q_SLOTS:

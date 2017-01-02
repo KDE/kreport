@@ -29,7 +29,7 @@
 // class ReportEntityCheck
 //
 
-void KReportDesignerItemCheckBox::init(QGraphicsScene *scene, KReportDesigner *d)
+void KReportDesignerItemCheckBox::init(QGraphicsScene *scene)
 {
     if (scene)
         scene->addItem(this);
@@ -45,7 +45,7 @@ KReportDesignerItemCheckBox::KReportDesignerItemCheckBox(KReportDesigner* d, QGr
         : KReportDesignerItemRectBase(d, this)
 {
     Q_UNUSED(pos);
-    init(scene, d);
+    init(scene);
     setSceneRect(properRect(*d, KREPORT_ITEM_CHECK_DEFAULT_WIDTH, KREPORT_ITEM_CHECK_DEFAULT_HEIGHT));
     nameProperty()->setValue(designer()->suggestEntityName(typeName()));
 }
@@ -53,7 +53,7 @@ KReportDesignerItemCheckBox::KReportDesignerItemCheckBox(KReportDesigner* d, QGr
 KReportDesignerItemCheckBox::KReportDesignerItemCheckBox(const QDomNode & element, KReportDesigner * d, QGraphicsScene * s)
         : KReportItemCheckBox(element), KReportDesignerItemRectBase(d, this)
 {
-    init(s, d);
+    init(s);
     setSceneRect(KReportItemBase::scenePosition(item()->position()), KReportItemBase::sceneSize(item()->size()));
 }
 

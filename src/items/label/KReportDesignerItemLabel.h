@@ -49,7 +49,7 @@ protected:
     virtual void keyReleaseEvent ( QKeyEvent * event );
 
 private:
-    void init(QGraphicsScene*, KReportDesigner*);
+    void init(QGraphicsScene *scene);
     QRectF getTextRect() const;
     BoundedTextItem *m_inlineEdit;
 

@@ -29,7 +29,7 @@
 #include <QPainter>
 #include "kreportplugin_debug.h"
 
-void KReportDesignerItemMaps::init(QGraphicsScene *scene, KReportDesigner *d)
+void KReportDesignerItemMaps::init(QGraphicsScene *scene)
 {
     if (scene)
         scene->addItem(this);
@@ -41,19 +41,19 @@ void KReportDesignerItemMaps::init(QGraphicsScene *scene, KReportDesigner *d)
     setZValue(z());
 }
 
-KReportDesignerItemMaps::KReportDesignerItemMaps(KReportDesigner * rw, QGraphicsScene* scene, const QPointF &pos)
+KReportDesignerItemMaps::KReportDesignerItemMaps(KReportDesigner *rw, QGraphicsScene *scene, const QPointF &pos)
         : KReportDesignerItemRectBase(rw, this)
 {
     Q_UNUSED(pos);
-    init(scene, rw);
+    init(scene);
     setSceneRect(properRect(*rw, KREPORT_ITEM_RECT_DEFAULT_WIDTH, KREPORT_ITEM_RECT_DEFAULT_WIDTH));
     nameProperty()->setValue(designer()->suggestEntityName(typeName()));
 }
 
-KReportDesignerItemMaps::KReportDesignerItemMaps(const QDomNode &element, KReportDesigner * rw, QGraphicsScene* scene)
+KReportDesignerItemMaps::KReportDesignerItemMaps(const QDomNode &element, KReportDesigner *rw, QGraphicsScene* scene)
         : KReportItemMaps(element), KReportDesignerItemRectBase(rw, this)
 {
-    init(scene, rw);
+    init(scene);
     setSceneRect(KReportItemBase::scenePosition(item()->position()), KReportItemBase::sceneSize(item()->size()));
 }
 

@@ -45,7 +45,7 @@ protected:
 
 private:
     QRect getTextRect() const;
-    void init(QGraphicsScene*, KReportDesigner*);
+    void init(QGraphicsScene *scene);
 
 private Q_SLOTS:
     void slotPropertyChanged(KPropertySet &, KProperty &);

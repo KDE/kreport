@@ -31,7 +31,7 @@
 // class ReportEntityField
 //
 
-void KReportDesignerItemField::init(QGraphicsScene * scene, KReportDesigner * d)
+void KReportDesignerItemField::init(QGraphicsScene *scene)
 {
     if (scene)
         scene->addItem(this);
@@ -42,11 +42,11 @@ void KReportDesignerItemField::init(QGraphicsScene * scene, KReportDesigner * d)
 }
 
 // methods (constructors)
-KReportDesignerItemField::KReportDesignerItemField(KReportDesigner * rw, QGraphicsScene * scene, const QPointF &pos)
+KReportDesignerItemField::KReportDesignerItemField(KReportDesigner *rw, QGraphicsScene *scene, const QPointF &pos)
         : KReportDesignerItemRectBase(rw, this)
 {
     Q_UNUSED(pos);
-    init(scene, rw);
+    init(scene);
     setSceneRect(properRect(*rw, getTextRect().width(), getTextRect().height()));
     nameProperty()->setValue(designer()->suggestEntityName(typeName()));
 }
@@ -54,7 +54,7 @@ KReportDesignerItemField::KReportDesignerItemField(KReportDesigner * rw, QGraphi
 KReportDesignerItemField::KReportDesignerItemField(const QDomNode & element, KReportDesigner * d, QGraphicsScene * s)
         : KReportItemField(element), KReportDesignerItemRectBase(d, this)
 {
-    init(s, d);
+    init(s);
     setSceneRect(KReportItemBase::scenePosition(item()->position()), KReportItemBase::sceneSize(item()->size()));
 }
 

@@ -43,7 +43,7 @@ KREPORT_EXPORT QDebug operator<<(QDebug dbg, const KReportElement& element)
     return dbg.space();
 }
 
-KREPORT_EXPORT uint qHash(const KReportElement &element, uint seed)
+KREPORT_EXPORT uint qHash(const KReportElement &element, uint seed) Q_DECL_NOTHROW
 {
     return qHash(element.name(), seed)
             ^ qHash(element.z(), seed)

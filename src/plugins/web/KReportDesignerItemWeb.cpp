@@ -31,7 +31,7 @@
 #include <QPainter>
 #include "kreportplugin_debug.h"
 
-void KReportDesignerItemWeb::init(QGraphicsScene *scene, KReportDesigner *d)
+void KReportDesignerItemWeb::init(QGraphicsScene *scene)
 {
     if (scene)
         scene->addItem(this);
@@ -45,7 +45,7 @@ KReportDesignerItemWeb::KReportDesignerItemWeb(KReportDesigner *rw, QGraphicsSce
                                                  const QPointF &pos) : KReportDesignerItemRectBase(rw, this)
 {
     Q_UNUSED(pos);
-    init(scene, rw);
+    init(scene);
     setSceneRect(properRect(*rw, KREPORT_ITEM_RECT_DEFAULT_WIDTH, KREPORT_ITEM_RECT_DEFAULT_WIDTH));
     nameProperty()->setValue(designer()->suggestEntityName(typeName()));
 }
@@ -54,7 +54,7 @@ KReportDesignerItemWeb::KReportDesignerItemWeb(const QDomNode &element, KReportD
                                                  QGraphicsScene *scene)      
     : KReportItemWeb(element), KReportDesignerItemRectBase(rw, this)
 {
-    init(scene, rw);
+    init(scene);
     setSceneRect(KReportItemBase::scenePosition(item()->position()), KReportItemBase::sceneSize(item()->size()));
 }
 

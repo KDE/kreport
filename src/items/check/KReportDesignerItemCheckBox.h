@@ -43,7 +43,7 @@ public:
     virtual KReportDesignerItemCheckBox* clone();
 
 private:
-    void init(QGraphicsScene*, KReportDesigner*);
+    void init(QGraphicsScene *scene);
 
 private Q_SLOTS:
     void slotPropertyChanged(KPropertySet &, KProperty &);

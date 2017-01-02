@@ -73,10 +73,6 @@ KReportDocument::KReportDocument(const QDomElement & elemSource, QObject *parent
         return;
     }
 
-    const qreal dpiX = KReportPrivate::dpiX();
-    const qreal dpiY = KReportPrivate::dpiY();
-
-
     QDomNodeList sections = elemSource.childNodes();
     for (int nodeCounter = 0; nodeCounter < sections.count(); nodeCounter++) {
         QDomElement elemThis = sections.item(nodeCounter).toElement();

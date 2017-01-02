@@ -31,7 +31,7 @@
 #include <QPainter>
 #include "kreportplugin_debug.h"
 
-void KReportDesignerItemBarcode::init(QGraphicsScene *scene, KReportDesigner *d)
+void KReportDesignerItemBarcode::init(QGraphicsScene *scene)
 {
     if (scene)
         scene->addItem(this);
@@ -50,7 +50,7 @@ KReportDesignerItemBarcode::KReportDesignerItemBarcode(KReportDesigner * rw, QGr
         : KReportDesignerItemRectBase(rw, this)
 {
     Q_UNUSED(pos);
-    init(scene, rw);
+    init(scene);
     setSceneRect(properRect(*rw, m_minWidthTotal*m_dpiX, m_minHeight*m_dpiY));
     nameProperty()->setValue(designer()->suggestEntityName(typeName()));
 }
@@ -58,7 +58,7 @@ KReportDesignerItemBarcode::KReportDesignerItemBarcode(KReportDesigner * rw, QGr
 KReportDesignerItemBarcode::KReportDesignerItemBarcode(const QDomNode & element, KReportDesigner * rw, QGraphicsScene* scene)
         : KReportItemBarcode(element), KReportDesignerItemRectBase(rw, this)
 {
-    init(scene, rw);
+    init(scene);
     setSceneRect(KReportItemBase::scenePosition(item()->position()), KReportItemBase::sceneSize(item()->size()));
 }
 

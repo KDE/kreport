@@ -33,7 +33,7 @@
 //
 // methods (constructors)
 
-void KReportDesignerItemText::init(QGraphicsScene *scene, KReportDesigner *d)
+void KReportDesignerItemText::init(QGraphicsScene *scene)
 {
     //setFlags(ItemIsSelectable | ItemIsMovable);
     if (scene)
@@ -53,15 +53,15 @@ KReportDesignerItemText::KReportDesignerItemText(KReportDesigner * rw, QGraphics
         : KReportDesignerItemRectBase(rw, this)
 {
     Q_UNUSED(pos);
-    init(scene, rw);
+    init(scene);
     setSceneRect(properRect(*rw, getTextRect().width(), getTextRect().height()));
     nameProperty()->setValue(designer()->suggestEntityName(typeName()));
 }
 
-KReportDesignerItemText::KReportDesignerItemText(const QDomNode & element, KReportDesigner * d, QGraphicsScene * s)
+KReportDesignerItemText::KReportDesignerItemText(const QDomNode & element, KReportDesigner *d, QGraphicsScene *scene)
         : KReportItemText(element), KReportDesignerItemRectBase(d, this)
 {
-    init(s, d);
+    init(scene);
     setSceneRect(KReportItemBase::scenePosition(item()->position()), KReportItemBase::sceneSize(item()->size()));
 }
 

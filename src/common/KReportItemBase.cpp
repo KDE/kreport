@@ -231,6 +231,8 @@ QSizeF KReportItemBase::sizeFromScene(const QSizeF& size)
 
 void KReportItemBase::propertyChanged(KPropertySet& s, KProperty& p)
 {
+    Q_UNUSED(s)
+    Q_UNUSED(p)
 }
 
 

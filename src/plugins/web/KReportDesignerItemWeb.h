@@ -36,8 +36,6 @@ public:
     KReportDesignerItemWeb(const QDomNode &element, KReportDesigner *rw, QGraphicsScene *scene);
     virtual ~KReportDesignerItemWeb();
 
-    void init(QGraphicsScene *scene);
-
     virtual void buildXML(QDomDocument *doc, QDomElement *parent);
     virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget);
     virtual KReportDesignerItemWeb *clone();
@@ -46,7 +44,7 @@ protected:
     virtual void mousePressEvent(QGraphicsSceneMouseEvent *event);
 
 private:
-    void init(QGraphicsScene *, KReportDesigner *r);
+    void init(QGraphicsScene *scene);
 
 private Q_SLOTS:
     void slotPropertyChanged(KPropertySet &, KProperty &);

@@ -31,7 +31,7 @@
 //
 // contructors/deconstructors
 
-void KReportDesignerItemImage::init(QGraphicsScene *scene, KReportDesigner *d)
+void KReportDesignerItemImage::init(QGraphicsScene *scene)
 {
     //kreportpluginDebug();
     if (scene)
@@ -44,12 +44,12 @@ void KReportDesignerItemImage::init(QGraphicsScene *scene, KReportDesigner *d)
     setZValue(z());
 }
 
-KReportDesignerItemImage::KReportDesignerItemImage(KReportDesigner * rw, QGraphicsScene* scene, const QPointF &pos)
+KReportDesignerItemImage::KReportDesignerItemImage(KReportDesigner *rw, QGraphicsScene *scene, const QPointF &pos)
         : KReportDesignerItemRectBase(rw, this)
 {
     Q_UNUSED(pos);
     //kreportpluginDebug();
-    init(scene, rw);
+    init(scene);
     setSceneRect(properRect(*rw, KREPORT_ITEM_RECT_DEFAULT_WIDTH, KREPORT_ITEM_RECT_DEFAULT_WIDTH));
     nameProperty()->setValue(designer()->suggestEntityName(typeName()));
 }
@@ -57,7 +57,7 @@ KReportDesignerItemImage::KReportDesignerItemImage(KReportDesigner * rw, QGraphi
 KReportDesignerItemImage::KReportDesignerItemImage(const QDomNode & element, KReportDesigner * rw, QGraphicsScene* scene)
         : KReportItemImage(element), KReportDesignerItemRectBase(rw, this)
 {
-    init(scene, rw);
+    init(scene);
     setSceneRect(KReportItemBase::scenePosition(item()->position()), KReportItemBase::sceneSize(item()->size()));
 }
 
