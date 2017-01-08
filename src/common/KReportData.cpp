@@ -18,10 +18,16 @@
 #include "KReportData.h"
 #include <QVariant>
 
+#define KReportDataSortedFieldPrivateArgs(o) std::tie(o.field, o.order)
+
 class KReportData::SortedField::Private 
 {
     
 public:
+    Private() {}
+    Private(const Private& other) {
+            KReportDataSortedFieldPrivateArgs((*this)) = KReportDataSortedFieldPrivateArgs(other);
+    }
     QString field;
     Qt::SortOrder order = Qt::AscendingOrder;
 };
@@ -35,9 +41,14 @@ public:
 //==========KReportData::SortedField==========
 
 KReportData::SortedField::SortedField()
-    : d(new Private())
+    : d(new Private)
 {
 }
+
+KReportData::SortedField::SortedField(const KReportData::SortedField& other) : d(new Private(*other.d))
+{
+}
+
 
 KReportData::SortedField::~SortedField()
 {
@@ -51,6 +62,16 @@ KReportData::SortedField & KReportData::SortedField::operator=(const KReportData
         setOrder(other.order());
     }
     return *this;
+}
+
+bool KReportData::SortedField::operator==(const KReportData::SortedField& other) const
+{
+    return KReportDataSortedFieldPrivateArgs((*d)) == KReportDataSortedFieldPrivateArgs((*other.d));
+}
+
+bool KReportData::SortedField::operator!=(const KReportData::SortedField& other) const
+{
+    return KReportDataSortedFieldPrivateArgs((*d)) != KReportDataSortedFieldPrivateArgs((*other.d));
 }
 
 QString KReportData::SortedField::field() const

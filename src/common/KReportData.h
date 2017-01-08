@@ -38,8 +38,11 @@ public:
     {
     public:
         SortedField();
+        SortedField(const SortedField& other);
         ~SortedField();
         SortedField& operator=(const SortedField &other);
+        bool operator==(const SortedField &other) const;
+        bool operator!=(const SortedField &other) const;
         void setField(const QString &field);
         void setOrder(Qt::SortOrder order);
         QString field() const;
