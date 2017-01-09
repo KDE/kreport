@@ -42,7 +42,7 @@ KReportItemBase::Private::Private()
 {
     set = new KPropertySet();
     nameProperty = new KProperty("name", QString(), tr("Name"), tr("Object Name"));
-    nameProperty->setAutoSync(0);
+    nameProperty->setValueSyncPolicy(KProperty::ValueSyncPolicy::FocusOut);
     
     positionProperty = new KProperty("position", QPointF(), QCoreApplication::translate("ItemPosition", "Position"));
     sizeProperty = new KProperty("size", QSizeF(), QCoreApplication::translate("ItemSize", "Size"));
