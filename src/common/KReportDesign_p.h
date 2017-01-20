@@ -22,6 +22,7 @@
 
 #include "KReportDesign.h"
 #include "KReportUnit.h"
+#include "KReportUtils_p.h"
 
 #include <QPageSize>
 #include <QPageLayout>
@@ -90,7 +91,7 @@ public:
     KReportUnit pageUnit;
     // END OF: Visual settings only
     QString title;
-    QPageLayout pageLayout;
+    KReportPrivate::PageLayout pageLayout;
     QVarLengthArray<KReportSection*, KReportSection::Detail> sections;
 #ifdef KREPORT_SCRIPTING
     QString script;
@@ -114,7 +115,7 @@ public:
 
     QString sectionTypeName(KReportSection::Type sectionType);
 
-    QPageLayout defaultPageLayout;
+    KReportPrivate::PageLayout defaultPageLayout;
     qreal defaultSectionHeight;
     QColor defaultSectionBackgroundColor;
 

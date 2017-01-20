@@ -310,4 +310,18 @@ int dpiY()
     return s_instance->m_dpiY;
 }
 
+PageLayout::PageLayout() : QPageLayout(QPageSize(QPageSize::A4), QPageLayout::Portrait, QMarginsF(0,0,0,0))
+{
+}
+
+PageLayout::PageLayout(const QPageLayout& pageLayout) : QPageLayout(pageLayout)
+{
+}
+
+KReportPrivate::PageLayout & PageLayout::operator=(const QPageLayout& other)
+{
+    QPageLayout::operator=(other);
+    return *this;
+}
+
 }

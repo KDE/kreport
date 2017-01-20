@@ -33,6 +33,7 @@
 #include <QStandardPaths>
 #include <QDebug>
 #include <QGlobalStatic>
+#include <QPageLayout>
 
 #ifdef Q_WS_X11
 #include <QX11Info>
@@ -167,6 +168,17 @@ bool setupGlobalIconTheme();
 int dpiX();
 
 int dpiY();
+
+//! This class is wrapper that fixes a critical QTBUG-47551 bug in default constructor of QPageLayout
+//! Default constructor of QPageLayout does not initialize units.
+//! https://bugreports.qt.io/browse/QTBUG-47551
+//! @todo remove this class and go back to QPageLayout when the faulty QPageLayout implementations are no longer on the wild. That's probably for Qt 6.
+class PageLayout: public QPageLayout {
+public:
+        PageLayout();
+        PageLayout(const QPageLayout& pageLayout);
+        PageLayout& operator=(const QPageLayout& other);
+};
 
 } // KReportPrivate
 

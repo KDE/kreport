@@ -16,6 +16,7 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "KReportRenderObjects.h"
+#include "KReportUtils_p.h"
 
 #include "kreport_debug.h"
 
@@ -37,7 +38,7 @@ public:
     QString title;
     QList<OROPage*> pages;
     QList<OROSection*> sections;
-    QPageLayout pageLayout;
+    KReportPrivate::PageLayout pageLayout; 
 };
 
 ORODocument::Private::Private()

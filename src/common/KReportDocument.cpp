@@ -38,7 +38,7 @@ public:
     QString interpreter;
 #endif
     bool externalData;
-    QPageLayout page;
+    KReportPrivate::PageLayout pageLayout;
     QString pageSize;
     QString labelType;
 };
@@ -87,25 +87,25 @@ KReportDocument::KReportDocument(const QDomElement & elemSource, QObject *parent
             QString pagetype = elemThis.firstChild().nodeValue();
 
             //Full page mode is required to allow margins to be set to whatever the user has specified
-            d->page.setMode(QPageLayout::FullPageMode);
+            d->pageLayout.setMode(QPageLayout::FullPageMode);
             
             if (pagetype == QLatin1String("predefined")) {
                 setPageSize(elemThis.attribute(QLatin1String("report:page-size"), QLatin1String("A4")));
-                d->page.setPageSize(QPageSize(KReportPageSize::pageSize(pageSize())));
+                d->pageLayout.setPageSize(QPageSize(KReportPageSize::pageSize(pageSize())));
             } else if (pagetype == QLatin1String("custom")) {
                 QPageSize custom(QSize(elemThis.attribute(QLatin1String("report:custom-page-width"), QString()).toFloat() , elemThis.attribute(QLatin1String("report:custom-page-height"), QString()).toFloat()), QLatin1String("Custom"));
 
-                d->page.setPageSize(custom);
+                d->pageLayout.setPageSize(custom);
             } else if (pagetype == QLatin1String("label")) {
                 setLabelType(elemThis.firstChild().nodeValue());
             }
             //! @todo add config for default margins or add within templates support
-            d->page.setUnits(QPageLayout::Point);
-            d->page.setLeftMargin(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-left"), QLatin1String("1.0cm"))));
-            d->page.setRightMargin(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-right"), QLatin1String("1.0cm"))));
-            d->page.setTopMargin(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-top"), QLatin1String("1.0cm"))));
-            d->page.setBottomMargin(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-bottom"), QLatin1String("1.0cm"))));
-            d->page.setOrientation(elemThis.attribute(QLatin1String("report:print-orientation"), QLatin1String("portrait")) == QLatin1String("portrait") ? QPageLayout::Portrait : QPageLayout::Landscape);
+            d->pageLayout.setUnits(QPageLayout::Point);
+            d->pageLayout.setLeftMargin(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-left"), QLatin1String("1.0cm"))));
+            d->pageLayout.setRightMargin(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-right"), QLatin1String("1.0cm"))));
+            d->pageLayout.setTopMargin(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-top"), QLatin1String("1.0cm"))));
+            d->pageLayout.setBottomMargin(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-bottom"), QLatin1String("1.0cm"))));
+            d->pageLayout.setOrientation(elemThis.attribute(QLatin1String("report:print-orientation"), QLatin1String("portrait")) == QLatin1String("portrait") ? QPageLayout::Portrait : QPageLayout::Landscape);
         } else if (elemThis.tagName() == QLatin1String("report:body")) {
             QDomNodeList sectionlist = elemThis.childNodes();
             QDomNode sec;
@@ -319,7 +319,7 @@ KReportSectionData* KReportDocument::section(KReportSectionData::Section s) cons
 
 QPageLayout KReportDocument::pageLayout() const
 {
-    return d->page;
+    return d->pageLayout;
 }
 
 bool KReportDocument::isValid() const
