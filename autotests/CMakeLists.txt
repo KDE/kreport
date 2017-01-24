@@ -15,25 +15,18 @@ add_library(KReportTestUtils SHARED
 )
 target_link_libraries(KReportTestUtils
     PUBLIC
-        KReport
-    PRIVATE
         Qt5::Test
+        KReport
 )
 generate_export_header(KReportTestUtils)
 
 find_package(Qt5Test REQUIRED)
 
-macro(KREPORT_UNIT_TESTS)
-  foreach(_testname ${ARGN})
-    ecm_add_test(${_testname}.cpp
-        TEST_NAME ${_testname}
-        LINK_LIBRARIES KReportTestUtils KPropertyWidgets Qt5::Test KF5::WidgetsAddons)
-  endforeach()
-endmacro(KREPORT_UNIT_TESTS)
-
-kreport_unit_tests(
-    ElementsTest
-    PluginsTest
+ecm_add_tests(
+    ElementsTest.cpp
+    PluginsTest.cpp
+    LINK_LIBRARIES
+        KReportTestUtils
 )
 
 if(NOT WIN32) #TODO enable for Windows when headers_test.sh is ported e.g. to python
