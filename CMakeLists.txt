@@ -13,8 +13,8 @@ include(ECMInstallIcons)
 include(ECMOptionalAddSubdirectory)
 
 include(KDEInstallDirs)
-include(KDEFrameworkCompilerSettings)
-include(KDECMakeSettings)
+include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
+include(KDECMakeSettings NO_POLICY_SCOPE)
 
 include(KReportMacros)
 include(KReportAddIconsRccFile)
