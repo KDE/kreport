@@ -31,7 +31,7 @@ class KReportScriptHandler;
 #endif
 class KReportPreRendererPrivate;
 class ORODocument;
-class KReportData;
+class KReportDataSource;
 class KReportDocument;
 class QDomElement;
 
@@ -49,7 +49,7 @@ public:
     virtual ~KReportPreRenderer();
 
     //! Sets source data to @a data, takes ownership
-    void setSourceData(KReportData* data);
+    void setSourceData(KReportDataSource* dataSource);
 
 #ifdef KREPORT_SCRIPTING
     KReportScriptHandler *scriptHandler();

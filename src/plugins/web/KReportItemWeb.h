@@ -21,8 +21,8 @@
 #ifndef KREPORTITEMWEB_H
 #define KREPORTITEMWEB_H
 
-#include "KReportAsyncItemBase.h"
-#include "KReportData.h"
+#include <KReportAsyncItemBase>
+#include <KReportDataSource>
 
 #include <QGraphicsScene>
 #include <QUrl>

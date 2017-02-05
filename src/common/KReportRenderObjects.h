@@ -29,7 +29,7 @@
 #include <QPicture>
 #include <QPageLayout>
 
-#include "KReportData.h"
+#include "KReportDataSource.h"
 #include "KReportItemBase.h"
 #include "KReportSectionData.h"
 #include "KReportLineStyle.h"

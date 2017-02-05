@@ -29,7 +29,7 @@
 class OROPage;
 class OROSection;
 class KReportSize;
-class KReportData;
+class KReportDataSource;
 class KReportLineStyle;
 
 #ifdef KREPORT_SCRIPTING
@@ -90,7 +90,7 @@ public:
     @brief Render a complex item that uses a sub query as a data source
     @return the height required by the object
     */
-    virtual int renderReportData(OROPage *page, OROSection *section, const QPointF &offset, KReportData *data, KReportScriptHandler *script);
+    virtual int renderReportData(OROPage *page, OROSection *section, const QPointF &offset, KReportDataSource *dataSource, KReportScriptHandler *script);
 
     /**
     @brief Override if the item supports a simple data source, such as a field

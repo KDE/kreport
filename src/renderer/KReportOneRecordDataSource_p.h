@@ -22,11 +22,11 @@
 #ifndef KREPORTONERECORDDATA_H
 #define KREPORTONERECORDDATA_H
 
-#include <KReportData.h>
+#include <KReportDataSource.h>
 
 namespace KReportPrivate {
 /**
- * @brief A Report Data provide which returns one record
+ * @brief A report data source which returns one record
  *
  * When no other data source is specified the pre-renderer
  * will create this as its data source.  This will return
@@ -34,13 +34,13 @@ namespace KReportPrivate {
  * a report with a static page of data, or a report page
  * generated from a script only.
  */
-class OneRecordData :  public KReportData
+class OneRecordDataSource :  public KReportDataSource
 {
 public:
-    OneRecordData();
-    ~OneRecordData();
+    OneRecordDataSource();
+    ~OneRecordDataSource();
     virtual QVariant value(const QString& field) const;
-    virtual QVariant value(unsigned int fieldNum) const;
+    virtual QVariant value(int fieldNum) const;
     virtual QStringList fieldNames() const;
     virtual int fieldNumber(const QString& field) const;
     virtual qint64 recordCount() const;
@@ -51,6 +51,7 @@ public:
     virtual bool moveNext();
     virtual bool close();
     virtual bool open();
+    virtual QStringList dataSourceNames() const;
 };
 }
 

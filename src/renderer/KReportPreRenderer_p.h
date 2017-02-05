@@ -28,7 +28,7 @@
 #include <QMap>
 
 namespace KReportPrivate{
-  class OneRecordData;
+  class OneRecordDataSource;
 }
 class KReportPreRenderer;
 
@@ -59,8 +59,8 @@ public:
     qreal m_maxWidth;     // -- same as above --
     int m_pageCounter;    // what page are we currently on?
 
-    KReportData* m_kodata;
-    KReportPrivate::OneRecordData *m_oneRecord;
+    KReportDataSource* m_dataSource;
+    KReportPrivate::OneRecordDataSource *m_oneRecord;
 
     QList<OROTextBox*> m_postProcText;
 

@@ -19,10 +19,10 @@
 #include "KReportPreRenderer.h"
 #include "KReportPreRenderer_p.h"
 #include "KReportAsyncItemManager_p.h"
-#include "KReportOneRecordData_p.h"
+#include "KReportOneRecordDataSource_p.h"
 
 #include "KReportRenderObjects.h"
-#include "KReportData.h"
+#include "KReportDataSource.h"
 #include "KReportItemBase.h"
 #include "KReportDocument.h"
 #include "KReportDetailSectionData.h"
@@ -51,8 +51,8 @@ KReportPreRendererPrivate::KReportPreRendererPrivate(KReportPreRenderer *preRend
     m_leftMargin = m_rightMargin = 0.0;
     m_pageCounter = 0;
     m_maxHeight = m_maxWidth = 0.0;
-    m_oneRecord = new KReportPrivate::OneRecordData();
-    m_kodata = 0;
+    m_oneRecord = new KReportPrivate::OneRecordDataSource();
+    m_dataSource = 0;
 #ifdef KREPORT_SCRIPTING
     m_scriptHandler = 0;
 #endif
@@ -157,14 +157,14 @@ qreal KReportPreRendererPrivate::finishCurPage(bool lastPage)
 void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *detailData)
 {
     if (detailData->m_detailSection) {
-        if (m_kodata/* && !curs->eof()*/) {
+        if (m_dataSource/* && !curs->eof()*/) {
             QStringList keys;
             QStringList keyValues;
             QList<int> shownGroups;
             KReportDetailGroupSectionData * grp = 0;
 
-            bool status = m_kodata->moveFirst();
-            int recordCount = m_kodata->recordCount();
+            bool status = m_dataSource->moveFirst();
+            int recordCount = m_dataSource->recordCount();
 
             //kreportDebug() << "Record Count:" << recordCount;
 
@@ -176,7 +176,7 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                     shownGroups << i;
                     keys.append(grp->m_column);
                     if (!keys.last().isEmpty())
-                        keyValues.append(m_kodata->value(m_kodata->fieldNumber(keys.last())).toString());
+                        keyValues.append(m_dataSource->value(m_dataSource->fieldNumber(keys.last())).toString());
                     else
                         keyValues.append(QString());
 
@@ -188,7 +188,7 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
             }
 
             while (status) {
-                const qint64 pos = m_kodata->at();
+                const qint64 pos = m_dataSource->at();
                 //kreportDebug() << "At:" << l << "Y:" << m_yOffset << "Max Height:" << m_maxHeight;
                 if ((renderSectionSize(*detailData->m_detailSection)
                         + finishCurPageSize((pos + 1 == recordCount))
@@ -196,21 +196,21 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                 {
                     //kreportDebug() << "Next section is too big for this page";
                     if (pos > 0) {
-                        m_kodata->movePrevious();
+                        m_dataSource->movePrevious();
                         createNewPage();
-                        m_kodata->moveNext();
+                        m_dataSource->moveNext();
                     }
                 }
 
                 renderSection(*(detailData->m_detailSection));
-                if (m_kodata)
-                    status = m_kodata->moveNext();
+                if (m_dataSource)
+                    status = m_dataSource->moveNext();
 
                 if (status == true && keys.count() > 0) {
                     // check to see where it is we need to start
                     int pos = -1; // if it's still -1 by the time we are done then no keyValues changed
                     for (int i = 0; i < keys.count(); ++i) {
-                        if (keyValues[i] != m_kodata->value(m_kodata->fieldNumber(keys[i])).toString()) {
+                        if (keyValues[i] != m_dataSource->value(m_dataSource->fieldNumber(keys[i])).toString()) {
                             pos = i;
                             break;
                         }
@@ -218,7 +218,7 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                     // don't bother if nothing has changed
                     if (pos != -1) {
                         // roll back the query and go ahead if all is good
-                        status = m_kodata->movePrevious();
+                        status = m_dataSource->movePrevious();
                         if (status == true) {
                             // print the footers as needed
                             // any changes made in this for loop need to be duplicated
@@ -241,7 +241,7 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                             }
                             // step ahead to where we should be and print the needed headers
                             // if all is good
-                            status = m_kodata->moveNext();
+                            status = m_dataSource->moveNext();
                             if (do_break)
                                 createNewPage();
                             if (status == true) {
@@ -250,13 +250,13 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
 
                                     if (grp->m_groupHeader) {
                                         if (renderSectionSize(*(grp->m_groupHeader)) + finishCurPageSize() + m_bottomMargin + m_yOffset >= m_maxHeight) {
-                                            m_kodata->movePrevious();
+                                            m_dataSource->movePrevious();
                                             createNewPage();
-                                            m_kodata->moveNext();
+                                            m_dataSource->moveNext();
                                         }
 
                                         if (!keys[i].isEmpty())
-                                            keyValues[i] = m_kodata->value(m_kodata->fieldNumber(keys[i])).toString();
+                                            keyValues[i] = m_dataSource->value(m_dataSource->fieldNumber(keys[i])).toString();
 
                                         //Tell interested parties thak key values changed
                                         renderSection(*(grp->m_groupHeader));
@@ -270,7 +270,7 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                 }
             }
 
-            if (keys.size() > 0 && m_kodata->movePrevious()) {
+            if (keys.size() > 0 && m_dataSource->movePrevious()) {
                 // finish footers
                 // duplicated changes from above here
                 for (int i = shownGroups.count() - 1; i >= 0; i--) {
@@ -302,7 +302,7 @@ qreal KReportPreRendererPrivate::renderSectionSize(const KReportSectionData & se
     QList<KReportItemBase*> objects = sectionData.objects();
     foreach(KReportItemBase *ob, objects) {
         QPointF offset(m_leftMargin, m_yOffset);
-        QVariant itemData = m_kodata->value(ob->itemDataSource());
+        QVariant itemData = m_dataSource->value(ob->itemDataSource());
 
         //ASync objects cannot alter the section height
         KReportAsyncItemBase *async_ob = qobject_cast<KReportAsyncItemBase*>(ob);
@@ -347,10 +347,10 @@ qreal KReportPreRendererPrivate::renderSection(const KReportSectionData & sectio
     QList<KReportItemBase*> objects = sectionData.objects();
     foreach(KReportItemBase *ob, objects) {
         QPointF offset(m_leftMargin, m_yOffset);
-        QVariant itemData = m_kodata->value(ob->itemDataSource());
+        QVariant itemData = m_dataSource->value(ob->itemDataSource());
 
         if (ob->supportsSubQuery()) {
-           itemHeight = ob->renderReportData(m_page, sec, offset, m_kodata, m_scriptHandler);
+           itemHeight = ob->renderReportData(m_page, sec, offset, m_dataSource, m_scriptHandler);
         } else {
             KReportAsyncItemBase *async_ob = qobject_cast<KReportAsyncItemBase*>(ob);
             if (async_ob){
@@ -383,7 +383,7 @@ qreal KReportPreRendererPrivate::renderSection(const KReportSectionData & sectio
 void KReportPreRendererPrivate::initEngine()
 {
     delete m_scriptHandler;
-    m_scriptHandler = new KReportScriptHandler(m_kodata, m_reportDocument);
+    m_scriptHandler = new KReportScriptHandler(m_dataSource, m_reportDocument);
 
     connect(this, SIGNAL(enteredGroup(QString,QVariant)), m_scriptHandler, SLOT(slotEnteredGroup(QString,QVariant)));
 
@@ -402,8 +402,8 @@ void KReportPreRendererPrivate::asyncItemsFinished()
 
 bool KReportPreRendererPrivate::generateDocument()
 {
-    if (!m_kodata) {
-        m_kodata = m_oneRecord;
+    if (!m_dataSource) {
+        m_dataSource = m_oneRecord;
     }
 
     if (!m_valid || !m_reportDocument) {
@@ -475,8 +475,8 @@ bool KReportPreRendererPrivate::generateDocument()
     //kreportDebug() << "Page Size:" << m_maxWidth << m_maxHeight;
 
     m_document->setPageLayout(m_reportDocument->pageLayout());
-    m_kodata->setSorting(m_reportDocument->m_detailSection->m_sortedFields);
-    if (!m_kodata->open()) {
+    m_dataSource->setSorting(m_reportDocument->m_detailSection->m_sortedFields);
+    if (!m_dataSource->open()) {
         return false;
     }
 
@@ -529,7 +529,7 @@ bool KReportPreRendererPrivate::generateDocument()
 
         KReportDetailSectionData * detailData = m_reportDocument->m_detailSection;
         if (detailData->m_detailSection) {
-            KReportData *mydata = m_kodata;
+            KReportDataSource *mydata = m_dataSource;
 
             if (mydata && mydata->recordCount() > 0) { /* && !((query = orqThis->getQuery())->eof()))*/
                 if (!mydata->moveFirst()) {
@@ -598,7 +598,7 @@ bool KReportPreRendererPrivate::generateDocument()
     m_scriptHandler->displayErrors();
     #endif
 
-    if (!m_kodata->close()) {
+    if (!m_dataSource->close()) {
         return false;
     }
     #ifdef KREPORT_SCRIPTING
@@ -606,9 +606,9 @@ bool KReportPreRendererPrivate::generateDocument()
     m_scriptHandler = 0;
     #endif
 
-    if (m_kodata != m_oneRecord) {
-        delete m_kodata;
-        m_kodata = 0;
+    if (m_dataSource != m_oneRecord) {
+        delete m_dataSource;
+        m_dataSource = 0;
     }
     m_postProcText.clear();
 
@@ -655,11 +655,11 @@ bool KReportPreRenderer::generateDocument()
     return d->m_document;
 }
 
-void KReportPreRenderer::setSourceData(KReportData *data)
+void KReportPreRenderer::setSourceData(KReportDataSource *dataSource)
 {
-    if (d && data != d->m_kodata) {
-        delete d->m_kodata;
-        d->m_kodata = data;
+    if (d && dataSource != d->m_dataSource) {
+        delete d->m_dataSource;
+        d->m_dataSource = dataSource;
     }
 }
 

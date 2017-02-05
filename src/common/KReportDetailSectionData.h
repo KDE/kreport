@@ -21,7 +21,7 @@
 
 #include <QObject>
 
-#include "KReportData.h"
+#include "KReportDataSource.h"
 
 class KReportSectionData;
 class KReportDetailGroupSectionData;
@@ -46,7 +46,7 @@ public:
 
     QString m_name;
     int m_pageBreak;
-    QList<KReportData::SortedField> m_sortedFields;
+    QList<KReportDataSource::SortedField> m_sortedFields;
 
     KReportSectionData * m_detailSection;
 

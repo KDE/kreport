@@ -23,7 +23,7 @@
 
 #ifdef KREPORT_SCRIPTING
 #include "KReportScriptConstants.h"
-#include "KReportData.h"
+#include "KReportDataSource.h"
 #include <QtQml/QJSValue>
 
 class KReportScriptDebug;
@@ -43,7 +43,7 @@ class KREPORT_EXPORT KReportScriptHandler : public QObject
 {
     Q_OBJECT
 public:
-    KReportScriptHandler(const KReportData *, KReportDocument*);
+    KReportScriptHandler(const KReportDataSource *reportDataSource, KReportDocument* reportDocument);
     ~KReportScriptHandler();
 
     QVariant evaluate(const QString&);

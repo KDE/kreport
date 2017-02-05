@@ -90,7 +90,7 @@ KReportDetailSectionData::KReportDetailSectionData(const QDomElement &elemSource
                 }
             }
             m_groupList.append(dgsd);
-            KReportData::SortedField s;
+            KReportDataSource::SortedField s;
             s.setField(dgsd->m_column);
             s.setOrder(dgsd->m_sort);
             m_sortedFields.append(s);

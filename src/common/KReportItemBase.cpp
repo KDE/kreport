@@ -116,12 +116,12 @@ int KReportItemBase::renderSimpleData(OROPage *page, OROSection *section, const 
 }
 
 int KReportItemBase::renderReportData(OROPage *page, OROSection *section, const QPointF &offset,
-                                       KReportData *data, KReportScriptHandler* script)
+                                       KReportDataSource *dataSource, KReportScriptHandler* script)
 {
     Q_UNUSED(page)
     Q_UNUSED(section)
     Q_UNUSED(offset)
-    Q_UNUSED(data)
+    Q_UNUSED(dataSource)
     Q_UNUSED(script)
     return 0;
 }

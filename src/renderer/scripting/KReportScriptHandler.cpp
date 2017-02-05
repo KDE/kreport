@@ -43,7 +43,7 @@ public:
     KReportScriptDebug *debug;
     KReportScriptDraw *draw;
     Scripting::Report *report;
-    const KReportData *reportData;
+    const KReportDataSource *reportDataSource;
     QString source;
     KReportDocument  *reportDocument;
     QJSEngine engine;
@@ -60,10 +60,10 @@ KReportScriptHandler::Private::~Private()
 {
 }
 
-KReportScriptHandler::KReportScriptHandler(const KReportData* kodata, KReportDocument* doc) : d(new Private())
+KReportScriptHandler::KReportScriptHandler(const KReportDataSource* reportDataSource, KReportDocument* reportDocument) : d(new Private())
 {
-    d->reportDocument = doc;
-    d->reportData = kodata;
+    d->reportDocument = reportDocument;
+    d->reportDataSource = reportDataSource;
 
     //Add a general report object
     d->report = new Scripting::Report(d->reportDocument);
@@ -91,7 +91,7 @@ KReportScriptHandler::KReportScriptHandler(const KReportData* kodata, KReportDoc
 
 bool KReportScriptHandler::trigger()
 {
-    QString code = d->reportData->scriptCode(d->reportDocument->script());
+    QString code = d->reportDataSource->scriptCode(d->reportDocument->script());
     //kreportDebug() << code;
 
     if (code.isEmpty()) {

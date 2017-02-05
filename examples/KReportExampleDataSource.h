@@ -20,18 +20,18 @@
 #ifndef KREPORTEXAMPLEDATA_H
 #define KREPORTEXAMPLEDATA_H
 
-#include <KReportData>
+#include <KReportDataSource>
 #include <QVariant>
 #include <QStringList>
 #include <QList>
 
-class KReportExampleData : public KReportData
+class KReportExampleDataSource : public KReportDataSource
 {
 public:
-    KReportExampleData();
-    ~KReportExampleData();
+    KReportExampleDataSource();
+    ~KReportExampleDataSource();
     virtual QVariant value(const QString& field) const;
-    virtual QVariant value(unsigned int) const;
+    virtual QVariant value(int) const;
     virtual QStringList fieldNames() const;
     virtual QStringList fieldKeys() const;
     virtual int fieldNumber(const QString& field) const;
@@ -46,6 +46,8 @@ public:
 
     virtual QStringList scriptList() const;
     virtual QString scriptCode(const QString &script) const;
+    
+    virtual QStringList dataSourceNames() const;
 
 private:
     struct Data

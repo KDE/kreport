@@ -19,80 +19,85 @@
  *
 */
 
-#include "KReportOneRecordData_p.h"
+#include "KReportOneRecordDataSource_p.h"
 
 namespace KReportPrivate {
 
-OneRecordData::OneRecordData()
+OneRecordDataSource::OneRecordDataSource()
 {
 }
 
-OneRecordData::~OneRecordData()
+OneRecordDataSource::~OneRecordDataSource()
 {
 
 }
 
-QVariant OneRecordData::value(const QString& field) const
+QVariant OneRecordDataSource::value(const QString& field) const
 {
     Q_UNUSED(field);
     return QVariant();
 }
 
-QVariant OneRecordData::value(unsigned int fieldNum) const
+QVariant OneRecordDataSource::value(int fieldNum) const
 {
     Q_UNUSED(fieldNum);
     return QVariant();
 }
 
-QStringList OneRecordData::fieldNames() const
+QStringList OneRecordDataSource::fieldNames() const
 {
     return QStringList();
 }
 
-int OneRecordData::fieldNumber(const QString& field) const
+int OneRecordDataSource::fieldNumber(const QString& field) const
 {
     Q_UNUSED(field);
     return 0;
 }
 
-qint64 OneRecordData::recordCount() const
+qint64 OneRecordDataSource::recordCount() const
 {
     return 1;
 }
 
-qint64 OneRecordData::at() const
+qint64 OneRecordDataSource::at() const
 {
     return 0;
 }
 
-bool OneRecordData::moveLast()
+bool OneRecordDataSource::moveLast()
 {
     return true;
 }
 
-bool OneRecordData::moveFirst()
+bool OneRecordDataSource::moveFirst()
 {
     return true;
 }
 
-bool OneRecordData::movePrevious()
+bool OneRecordDataSource::movePrevious()
 {
     return false;
 }
 
-bool OneRecordData::moveNext()
+bool OneRecordDataSource::moveNext()
 {
     return false;
 }
 
-bool OneRecordData::close()
+bool OneRecordDataSource::close()
 {
     return true;
 }
 
-bool OneRecordData::open()
+bool OneRecordDataSource::open()
 {
     return true;
+}
+
+QStringList OneRecordDataSource::dataSourceNames() const
+{
+    return QStringList();
 }
 
 }

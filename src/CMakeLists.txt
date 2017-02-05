@@ -21,7 +21,7 @@ set(kreport_LIB_SRCS
     common/KReportPluginManager.cpp
     common/KReportJsonTrader_p.cpp
     common/KReportPluginMetaData.cpp
-    common/KReportData.cpp
+    common/KReportDataSource.cpp
     common/KReportUtils.cpp
     common/KReportPageSize.cpp
     common/KReportUnit.cpp
@@ -44,7 +44,7 @@ set(kreport_LIB_SRCS
     renderer/KReportRendererBase.cpp
     renderer/KReportPage.cpp
     renderer/KReportView.cpp
-    renderer/KReportOneRecordData_p.cpp
+    renderer/KReportOneRecordDataSource_p.cpp
 
     wrtembed/KReportDetailGroupSectionDialog.cpp
     wrtembed/KReportDesignerItemBase.cpp
@@ -254,7 +254,7 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
     RELATIVE common
     HEADER_NAMES
         KReportPageSize
-        KReportData
+        KReportDataSource
         KReportItemBase
         KReportItemLine
         KReportPluginMetaData

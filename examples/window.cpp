@@ -19,6 +19,7 @@
 
 #include "window.h"
 #include "DesignerWidget.h"
+#include "KReportExampleDataSource.h"
 
 #include <KReportRenderObjects>
 #include <KReportPluginManager>
@@ -121,7 +122,7 @@ void Window::showDesign(const QDomElement &design)
         return;
     }
 
-    preRenderer.setSourceData(new KReportExampleData());
+    preRenderer.setSourceData(new KReportExampleDataSource());
     preRenderer.setName("example_report");
 
     if (preRenderer.generateDocument()) {

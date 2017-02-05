@@ -17,10 +17,10 @@
    Boston, MA 02110-1301, USA.
 */
 
-#include "KReportExampleData.h"
+#include "KReportExampleDataSource.h"
 #include <QDebug>
 
-KReportExampleData::KReportExampleData()
+KReportExampleDataSource::KReportExampleDataSource()
 {
     QList<Data> temp {{ 0, "Adam Pigg", "Kexi", QObject::tr("United Kingdom"), "0123456789", 58.816, -3.1484, "1746287369", false },
                         {1, "Jaroslaw Staniek", "Kexi", QObject::tr("Poland"), "8472947462", 51.895182, 19.623270, "1234567890", true },
@@ -31,17 +31,17 @@ KReportExampleData::KReportExampleData()
     m_currentRecord = 0;
 }
 
-KReportExampleData::~KReportExampleData()
+KReportExampleDataSource::~KReportExampleDataSource()
 {
 
 }
 
-QVariant KReportExampleData::value(const QString& field) const
+QVariant KReportExampleDataSource::value(const QString& field) const
 {
     return value(fieldNumber(field));
 }
 
-QVariant KReportExampleData::value(unsigned int f) const
+QVariant KReportExampleDataSource::value(int f) const
 {
     switch(f) {
         case 0:
@@ -84,44 +84,44 @@ QVariant KReportExampleData::value(unsigned int f) const
     }
 }
 
-QStringList KReportExampleData::fieldNames() const
+QStringList KReportExampleDataSource::fieldNames() const
 {
     return m_fieldNames;
 }
 
-QStringList KReportExampleData::fieldKeys() const
+QStringList KReportExampleDataSource::fieldKeys() const
 {
     return fieldNames();
 }
 
-int KReportExampleData::fieldNumber(const QString& field) const
+int KReportExampleDataSource::fieldNumber(const QString& field) const
 {
     return m_fieldNames.indexOf(field);
 }
 
-qint64 KReportExampleData::recordCount() const
+qint64 KReportExampleDataSource::recordCount() const
 {
     return m_testData.count();
 }
 
-qint64 KReportExampleData::at() const
+qint64 KReportExampleDataSource::at() const
 {
     return m_currentRecord;
 }
 
-bool KReportExampleData::moveLast()
+bool KReportExampleDataSource::moveLast()
 {
     m_currentRecord = recordCount() - 1;
     return true;
 }
 
-bool KReportExampleData::moveFirst()
+bool KReportExampleDataSource::moveFirst()
 {
     m_currentRecord = 0;
     return true;
 }
 
-bool KReportExampleData::movePrevious()
+bool KReportExampleDataSource::movePrevious()
 {
     if (m_currentRecord > 0) {
         m_currentRecord--;
@@ -130,7 +130,7 @@ bool KReportExampleData::movePrevious()
     return false;
 }
 
-bool KReportExampleData::moveNext()
+bool KReportExampleDataSource::moveNext()
 {
     if (m_currentRecord < recordCount() - 1) {
         m_currentRecord++;
@@ -139,17 +139,17 @@ bool KReportExampleData::moveNext()
     return false;
 }
 
-bool KReportExampleData::close()
+bool KReportExampleDataSource::close()
 {
     return true;
 }
 
-bool KReportExampleData::open()
+bool KReportExampleDataSource::open()
 {
     return true;
 }
 
-QStringList KReportExampleData::scriptList() const
+QStringList KReportExampleDataSource::scriptList() const
 {
     QStringList scripts;
 
@@ -158,7 +158,7 @@ QStringList KReportExampleData::scriptList() const
     return scripts;
 }
 
-QString KReportExampleData::scriptCode(const QString &script) const
+QString KReportExampleDataSource::scriptCode(const QString &script) const
 {
     if (script != "example")
         return QString();
@@ -189,4 +189,9 @@ QString KReportExampleData::scriptCode(const QString &script) const
              "example_report.initialize(new report());\n";
 
     return scriptcode;
+}
+
+QStringList KReportExampleDataSource::dataSourceNames() const
+{
+    return QStringList();
 }

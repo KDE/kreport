@@ -25,12 +25,12 @@
 
 /** @brief Abstraction of report data source
 */
-class KREPORT_EXPORT KReportData
+class KREPORT_EXPORT KReportDataSource
 {
 
 public:
-    KReportData();
-    virtual ~KReportData();
+    KReportDataSource();
+    virtual ~KReportDataSource();
 
     //! Describes sorting for single field
     /*! By default the order is ascending. */
@@ -87,7 +87,7 @@ public:
     virtual QStringList fieldKeys() const;
 
     //! Return the value of the field at the given position for the current record
-    virtual QVariant value(unsigned int) const = 0;
+    virtual QVariant value(int pos) const = 0;
 
     //! Return the value of the field fir the given name for the current record
     virtual QVariant value(const QString &field) const = 0;
@@ -103,8 +103,8 @@ public:
     //! Default impl does nothing
     virtual void setSorting(const QList<SortedField> &sorting);
 
-    //! Adds an expression to the data source
-    virtual void addExpression(const QString &field, const QVariant &value, char relation = '=');
+    //! Adds a condition to the data source
+    virtual void addCondition(const QString &field, const QVariant &value, const QString& relation = QLatin1String("="));
 
     //! Utility Functions
     //! @todo These are probably eligable to be moved into a new class
@@ -118,20 +118,22 @@ public:
     virtual QString scriptCode(const QString& script) const;
 #endif
 
-    //! Return a list of data sources possible for advanced controls
-    virtual QStringList dataSources() const;
+    //! Return a list of data source names available for this data source
+    //! Works after the source is opened
+    virtual QStringList dataSourceNames() const = 0;
 
-    //! Return a list of data source names possible for advanced controls.
-    //! Returns dataSources() by default
-    virtual QStringList dataSourceNames() const;
+    //! Return data source caption for specified @a dataSourceName
+    //! It is possibly translated. As such it is suitable for use in GUIs.
+    //! Default implementation just returns @a dataSourceName.
+    virtual QString dataSourceCaption(const QString &dataSourceName) const;
 
     //! Creates a new instance with data source. Default implementation returns @c nullptr.
     //! @a source is implementation-specific identifier.
     //! Owner of the returned pointer is the caller.
-    virtual KReportData* create(const QString &source) const Q_REQUIRED_RESULT;
+    virtual KReportDataSource* create(const QString &source) const Q_REQUIRED_RESULT;
     
 private:
-    Q_DISABLE_COPY(KReportData)
+    Q_DISABLE_COPY(KReportDataSource)
     class Private;
     Private * const d;
 };

@@ -113,7 +113,7 @@ public:
         delete zoom;
         delete sectionData;
         delete set;
-        delete kordata;
+        delete dataSource;
     }
 
     QGridLayout *grid;
@@ -182,7 +182,7 @@ public:
     QString originalInterpreter; //Value of the script interpreter at load time
     QString originalScript; //Value of the script at load time
 
-    KReportData *kordata = nullptr;
+    KReportDataSource *dataSource = nullptr;
 };
 
 KReportDesigner::KReportDesigner(QWidget * parent)
@@ -441,14 +441,14 @@ void KReportDesigner::slotSectionEditor()
     (void)se.exec();
 }
 
-void KReportDesigner::setReportData(KReportData* kodata)
+void KReportDesigner::setDataSource(KReportDataSource* source)
 {
-    if (d->kordata == kodata) {
+    if (d->dataSource == source) {
         return;
     }
-    delete d->kordata;
+    delete d->dataSource;
 
-    d->kordata = kodata;
+    d->dataSource = source;
     slotPageButton_Pressed();
     setModified(true);
     emit reportDataChanged();
@@ -648,9 +648,9 @@ KPropertySet* KReportDesigner::itemPropertySet() const
     return d->itmset;
 }
 
-KReportData *KReportDesigner::reportData() const
+KReportDataSource *KReportDesigner::reportDataSource() const
 {
-    return d->kordata;
+    return d->dataSource;
 }
 
 KReportDesignerSectionDetail * KReportDesigner::detailSection() const
@@ -681,8 +681,8 @@ QStringList KReportDesigner::fieldNames() const
 {
     QStringList qs;
     qs << QString();
-    if (d->kordata)
-        qs << d->kordata->fieldNames();
+    if (d->dataSource)
+        qs << d->dataSource->fieldNames();
 
     return qs;
 }
@@ -691,8 +691,8 @@ QStringList KReportDesigner::fieldKeys() const
 {
     QStringList qs;
     qs << QString();
-    if (d->kordata)
-        qs << d->kordata->fieldKeys();
+    if (d->dataSource)
+        qs << d->dataSource->fieldKeys();
 
     return qs;
 }
@@ -792,8 +792,8 @@ void KReportDesigner::slotPropertyChanged(KPropertySet &s, KProperty &p)
 void KReportDesigner::slotPageButton_Pressed()
 {
 #ifdef KREPORT_SCRIPTING
-    if (d->kordata) {
-        QStringList sl = d->kordata->scriptList();
+    if (d->dataSource) {
+        QStringList sl = d->dataSource->scriptList();
         sl.prepend(QLatin1String(""));
         d->script->setListData(sl, sl);
     }

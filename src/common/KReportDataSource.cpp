@@ -15,12 +15,12 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "KReportData.h"
+#include "KReportDataSource.h"
 #include <QVariant>
 
 #define KReportDataSortedFieldPrivateArgs(o) std::tie(o.field, o.order)
 
-class KReportData::SortedField::Private 
+class KReportDataSource::SortedField::Private 
 {
     
 public:
@@ -32,7 +32,7 @@ public:
     Qt::SortOrder order = Qt::AscendingOrder;
 };
 
-class KReportData::Private
+class KReportDataSource::Private
 {
 public:
     bool dummy = true;
@@ -40,22 +40,22 @@ public:
 
 //==========KReportData::SortedField==========
 
-KReportData::SortedField::SortedField()
+KReportDataSource::SortedField::SortedField()
     : d(new Private)
 {
 }
 
-KReportData::SortedField::SortedField(const KReportData::SortedField& other) : d(new Private(*other.d))
+KReportDataSource::SortedField::SortedField(const KReportDataSource::SortedField& other) : d(new Private(*other.d))
 {
 }
 
 
-KReportData::SortedField::~SortedField()
+KReportDataSource::SortedField::~SortedField()
 {
     delete d;
 }
 
-KReportData::SortedField & KReportData::SortedField::operator=(const KReportData::SortedField& other)
+KReportDataSource::SortedField & KReportDataSource::SortedField::operator=(const KReportDataSource::SortedField& other)
 {
     if (this != &other) {
         setField(other.field());
@@ -64,32 +64,32 @@ KReportData::SortedField & KReportData::SortedField::operator=(const KReportData
     return *this;
 }
 
-bool KReportData::SortedField::operator==(const KReportData::SortedField& other) const
+bool KReportDataSource::SortedField::operator==(const KReportDataSource::SortedField& other) const
 {
     return KReportDataSortedFieldPrivateArgs((*d)) == KReportDataSortedFieldPrivateArgs((*other.d));
 }
 
-bool KReportData::SortedField::operator!=(const KReportData::SortedField& other) const
+bool KReportDataSource::SortedField::operator!=(const KReportDataSource::SortedField& other) const
 {
     return KReportDataSortedFieldPrivateArgs((*d)) != KReportDataSortedFieldPrivateArgs((*other.d));
 }
 
-QString KReportData::SortedField::field() const
+QString KReportDataSource::SortedField::field() const
 {
     return d->field;
 }
 
-Qt::SortOrder KReportData::SortedField::order() const
+Qt::SortOrder KReportDataSource::SortedField::order() const
 {
     return d->order;
 }
 
-void KReportData::SortedField::setField(const QString& field)
+void KReportDataSource::SortedField::setField(const QString& field)
 {
     d->field = field;
 }
 
-void KReportData::SortedField::setOrder(Qt::SortOrder order)
+void KReportDataSource::SortedField::setOrder(Qt::SortOrder order)
 {
     d->order = order;
 }
@@ -97,36 +97,36 @@ void KReportData::SortedField::setOrder(Qt::SortOrder order)
 
 //==========KReportData==========
 
-KReportData::KReportData() : d(new Private())
+KReportDataSource::KReportDataSource() : d(new Private())
 {
 }
 
-KReportData::~KReportData()
+KReportDataSource::~KReportDataSource()
 {
     delete d;
 }
 
-QStringList KReportData::fieldKeys() const
+QStringList KReportDataSource::fieldKeys() const
 {
     return fieldNames();
 }
 
-QString KReportData::sourceName() const
+QString KReportDataSource::sourceName() const
 {
     return QString();
 }
 
-QString KReportData::sourceClass() const
+QString KReportDataSource::sourceClass() const
 {
     return QString();
 }
 
-void KReportData::setSorting(const QList<SortedField> &sorting)
+void KReportDataSource::setSorting(const QList<SortedField> &sorting)
 {
     Q_UNUSED(sorting);
 }
 
-void KReportData::addExpression(const QString &field, const QVariant &value, char relation)
+void KReportDataSource::addCondition(const QString &field, const QVariant &value, const QString& relation)
 {
     Q_UNUSED(field);
     Q_UNUSED(value);
@@ -134,29 +134,29 @@ void KReportData::addExpression(const QString &field, const QVariant &value, cha
 }
 
 #ifdef KREPORT_SCRIPTING
-QStringList KReportData::scriptList() const
+QStringList KReportDataSource::scriptList() const
 {
     return QStringList();
 }
 
-QString KReportData::scriptCode(const QString &script) const
+QString KReportDataSource::scriptCode(const QString &script) const
 {
     Q_UNUSED(script);
     return QString();
 }
 #endif
 
-QStringList KReportData::dataSources() const
+QStringList KReportDataSource::dataSourceNames() const
 {
     return QStringList();
 }
 
-QStringList KReportData::dataSourceNames() const
+QString KReportDataSource::dataSourceCaption(const QString &dataSourceName) const
 {
-    return dataSources();
+    return dataSourceName;
 }
 
-KReportData* KReportData::create(const QString &source) const
+KReportDataSource* KReportDataSource::create(const QString &source) const
 {
     Q_UNUSED(source);
     return 0;

@@ -22,7 +22,7 @@
 #include <QWidget>
 
 #include "KReportDocument.h"
-#include "KReportData.h"
+#include "KReportDataSource.h"
 
 class KProperty;
 class KPropertySet;
@@ -72,15 +72,15 @@ public:
     @brief Sets the report data
     The report data interface contains functions to retrieve data
     and information about the fields.
-    @param kodata Pointer to KReportData instance, ownership is transferred
+    @param kodata Pointer to KReportDataSource instance, ownership is transferred
     */
-    void setReportData(KReportData* kodata);
+    void setDataSource(KReportDataSource* source);
 
     /**
     @brief Return a pointer to the reports data
     @return Pointer to report data
     */
-    KReportData *reportData() const;
+    KReportDataSource *reportDataSource() const;
 
     /**
     @brief Return a pointer to the section specified

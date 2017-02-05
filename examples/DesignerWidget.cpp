@@ -18,7 +18,7 @@
 */
 
 #include "DesignerWidget.h"
-#include "KReportExampleData.h"
+#include "KReportExampleDataSource.h"
 
 #include <KReportDesigner>
 #include <KReportDesignerSectionDetail>
@@ -44,7 +44,7 @@ ReportDesignerWidget::ReportDesignerWidget(QWidget *parent)
             this, SLOT(slotDesignerPropertySetChanged()));
     connect(m_reportDesigner, SIGNAL(dirty()), this, SLOT(designDirty()));
 
-    m_reportDesigner->setReportData(new KReportExampleData);
+    m_reportDesigner->setDataSource(new KReportExampleDataSource);
 }
 
 ReportDesignerWidget::~ReportDesignerWidget()
