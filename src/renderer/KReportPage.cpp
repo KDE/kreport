@@ -108,7 +108,7 @@ void KReportPage::renderPage(int page)
     if (d->reportDocument) {
         KReportRendererContext cxt;
         cxt.setPainter(&qp);
-        d->renderer->render(cxt, d->reportDocument, d->page);
+        (void)d->renderer->render(cxt, d->reportDocument, d->page);
     }
     update();
 }
