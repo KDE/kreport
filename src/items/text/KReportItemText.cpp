@@ -26,6 +26,7 @@
 #include <QPalette>
 #include <QFontMetrics>
 #include <QDomNodeList>
+#include <QRegularExpression>
 
 KReportItemText::KReportItemText()
     : KReportItemText(QDomNode())
@@ -225,7 +226,7 @@ int KReportItemText::renderSimpleData(OROPage *page, OROSection *section, const 
 
         int pos = 0;
         QChar separator;
-        QRegExp re(QLatin1String("\\s"));
+        QRegularExpression re(QLatin1String("\\s"));
         QPrinter prnt(QPrinter::HighResolution);
         QFontMetrics fm(font(), &prnt);
 
@@ -236,7 +237,8 @@ int KReportItemText::renderSimpleData(OROPage *page, OROSection *section, const 
         qreal   intRectHeight   = trf.height();
 
         while (qstrValue.length()) {
-            int idx = re.indexIn(qstrValue, pos);
+            QRegularExpressionMatch match = re.match(qstrValue);
+            int idx = match.capturedStart(pos);
             if (idx == -1) {
                 idx = qstrValue.length();
                 separator = QLatin1Char('\n');
