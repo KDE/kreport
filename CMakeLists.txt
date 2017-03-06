@@ -22,13 +22,15 @@ include(KReportAddIconsRccFile)
 # Dependencies
 set(REQUIRED_QT_VERSION "5.3.0")
 set(REQUIRED_KF5_VERSION 5.7.0)
-set(REQUIRED_KPROPERTY_VERSION 3.0.0)
+set(REQUIRED_KPROPERTY_VERSION 3.0)
+set(MAXIMUM_KPROPERTY_VERSION 3.0.80) # .80 means < 3.1 Alpha
 
 # Required components to build this framework
 # TODO move Widgets/KF5WidgetsAddons-dependent part to a libKReportDesigner
 find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Core Widgets Xml PrintSupport)
 find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED CoreAddons WidgetsAddons GuiAddons Config)
 find_package(KPropertyWidgets ${REQUIRED_KPROPERTY_VERSION} REQUIRED)
+check_maximum_package_version(KPropertyWidgets ${MAXIMUM_KPROPERTY_VERSION})
 
 get_git_revision_and_branch()
 add_tests()
