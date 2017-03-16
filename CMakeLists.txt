@@ -3,7 +3,7 @@ find_package(ECM 1.8.0 REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/modules ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
 include(SetKReportCMakePolicies NO_POLICY_SCOPE)
 
-project(KReport VERSION 3.0.1) # Update this
+project(KReport VERSION 3.0.2) # Update this
 
 include(ECMPackageConfigHelpers)
 include(ECMGeneratePriFile)
