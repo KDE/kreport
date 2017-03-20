@@ -70,9 +70,6 @@ protected:
     KReportLineStyle lineStyle() const;
     KRTextStyleData textStyle() const;
 
-    void setTrackTotal(bool);
-    void setTrackTotalFormat(const QString &, bool = false);
-    void setUseSubTotal(bool);
     int textFlags() const;
 
     QFont font() const {
