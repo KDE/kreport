@@ -5,20 +5,23 @@ include(SetKReportCMakePolicies NO_POLICY_SCOPE)
 
 project(KReport VERSION 3.0.90) # Update this
 
-include(ECMPackageConfigHelpers)
+# CMake
+include(CMakePackageConfigHelpers)
+
+# ECM
 include(ECMGeneratePriFile)
 include(ECMPoQmTools)
 include(ECMSetupVersion)
 include(ECMInstallIcons)
 include(ECMOptionalAddSubdirectory)
-
 include(KDEInstallDirs)
-include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
-include(KDECMakeSettings NO_POLICY_SCOPE)
+include(KDECMakeSettings)
+include(KDEFrameworkCompilerSettings)
 
-include(KReportMacros)
+# Own
 include(KReportAddIconsRccFile)
 include(KReportAddQCH)
+include(KReportMacros)
 
 simple_option(BUILD_QCH "Build API documentation in QCH format" OFF)
 
