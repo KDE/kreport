@@ -23,8 +23,8 @@ include(KReportAddIconsRccFile)
 include(KReportMacros)
 
 # Dependencies
-set(REQUIRED_QT_VERSION "5.3.0")
-set(REQUIRED_KF5_VERSION 5.7.0)
+set(REQUIRED_QT_VERSION 5.4.0)
+set(REQUIRED_KF5_VERSION 5.16.0)
 set(REQUIRED_KPROPERTY_VERSION 3.0)
 set(MAXIMUM_KPROPERTY_VERSION 3.0.80) # .80 means < 3.1 Alpha
 
