@@ -5,19 +5,22 @@ include(SetKReportCMakePolicies NO_POLICY_SCOPE)
 
 project(KReport VERSION 3.0.2) # Update this
 
-include(ECMPackageConfigHelpers)
+# CMake
+include(CMakePackageConfigHelpers)
+
+# ECM
 include(ECMGeneratePriFile)
 include(ECMPoQmTools)
 include(ECMSetupVersion)
 include(ECMInstallIcons)
 include(ECMOptionalAddSubdirectory)
-
 include(KDEInstallDirs)
-include(KDEFrameworkCompilerSettings)
 include(KDECMakeSettings)
+include(KDEFrameworkCompilerSettings)
 
-include(KReportMacros)
+# Own
 include(KReportAddIconsRccFile)
+include(KReportMacros)
 
 # Dependencies
 set(REQUIRED_QT_VERSION "5.3.0")

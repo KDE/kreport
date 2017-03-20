@@ -1,6 +1,8 @@
 # KReportConfig.cmake provides information about the installed KReport library.
 # It can be used directly from CMake via find_package(KReport NO_MODULE)
 #
+# Any changes in this ".cmake" file will be overwritten by CMake, the source is the ".cmake.in" file.
+#
 # The following CMake variables are provided:
 #   KReport_VERSION_MAJOR - the major version number of KReport
 #   KReport_VERSION_MINOR - the minor version number of KReport
@@ -12,6 +14,8 @@
 #   KReport - the KReport library
 
 @PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
 
 find_dependency(Qt5Core @REQUIRED_QT_VERSION@ REQUIRED)
 find_dependency(Qt5Widgets @REQUIRED_QT_VERSION@ REQUIRED)
