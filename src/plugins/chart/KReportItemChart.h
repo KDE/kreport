@@ -96,12 +96,12 @@ protected:
 
     KDChart::Widget *m_chartWidget;
 
-    void set3D(bool);
-    void setAA(bool);
-    void setColorScheme(const QString &);
-    void setAxis(const QString&, const QString&);
+    void set3D(bool td);
+    void setAA(bool aa);
+    void setColorScheme(const QString &cs);
+    void setAxis(const QString &xa, const QString &ya);
     void setBackgroundColor(const QColor&);
-    void setLegend(bool, const QStringList &legends = QStringList());
+    void setLegend(bool le, const QStringList &legends = QStringList());
 
 private:
     virtual void createProperties();

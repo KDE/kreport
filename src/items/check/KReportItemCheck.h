@@ -51,7 +51,7 @@ protected:
     KProperty* m_staticValue;
 
     bool value() const;
-    void setValue(bool);
+    void setValue(bool v);
     KReportLineStyle lineStyle();
 
 private:

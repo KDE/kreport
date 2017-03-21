@@ -69,8 +69,8 @@ public:
 #endif
 
     void createNewPage();
-    qreal finishCurPage(bool = false);
-    qreal finishCurPageSize(bool = false);
+    qreal finishCurPage(bool lastPage);
+    qreal finishCurPageSize(bool lastPage);
 
     void renderDetailSection(KReportDetailSectionData *detailData);
     qreal renderSection(const KReportSectionData &);

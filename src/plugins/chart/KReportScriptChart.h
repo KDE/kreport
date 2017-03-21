@@ -86,7 +86,7 @@ public Q_SLOTS:
      * Set the 3d status of the chart
      * @param 3d
      */
-    void setThreeD(bool);
+    void setThreeD(bool td);
 
     /**
      * The visibility status of the legend
@@ -98,7 +98,7 @@ public Q_SLOTS:
      * Sets the visibility of the legend
      * @param visible
      */
-    void setLegendVisible(bool);
+    void setLegendVisible(bool v);
 
     /**
      * The color scheme used by the chart

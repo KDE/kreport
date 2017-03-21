@@ -73,7 +73,7 @@ void KReportPreRendererPrivate::createNewPage()
 {
     //kreportDebug();
     if (m_pageCounter > 0)
-        finishCurPage();
+        finishCurPage(false);
 
     m_pageCounter++;
 
@@ -231,7 +231,7 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                                 grp = detailData->m_groupList[shownGroups.at(i)];
 
                                 if (grp->m_groupFooter) {
-                                    if (renderSectionSize(*(grp->m_groupFooter)) + finishCurPageSize() + m_bottomMargin + m_yOffset >= m_maxHeight)
+                                    if (renderSectionSize(*(grp->m_groupFooter)) + finishCurPageSize(false) + m_bottomMargin + m_yOffset >= m_maxHeight)
                                         createNewPage();
                                     renderSection(*(grp->m_groupFooter));
                                 }
@@ -249,7 +249,7 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                                     grp = detailData->m_groupList[shownGroups.at(i)];
 
                                     if (grp->m_groupHeader) {
-                                        if (renderSectionSize(*(grp->m_groupHeader)) + finishCurPageSize() + m_bottomMargin + m_yOffset >= m_maxHeight) {
+                                        if (renderSectionSize(*(grp->m_groupHeader)) + finishCurPageSize(false) + m_bottomMargin + m_yOffset >= m_maxHeight) {
                                             m_dataSource->movePrevious();
                                             createNewPage();
                                             m_dataSource->moveNext();
@@ -277,7 +277,7 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                     grp = detailData->m_groupList[shownGroups.at(i)];
 
                     if (grp->m_groupFooter) {
-                        if (renderSectionSize(*(grp->m_groupFooter)) + finishCurPageSize() + m_bottomMargin + m_yOffset >= m_maxHeight)
+                        if (renderSectionSize(*(grp->m_groupFooter)) + finishCurPageSize(false) + m_bottomMargin + m_yOffset >= m_maxHeight)
                             createNewPage();
                         renderSection(*(grp->m_groupFooter));
                         emit(exitedGroup(keys[i], keyValues[i]));
