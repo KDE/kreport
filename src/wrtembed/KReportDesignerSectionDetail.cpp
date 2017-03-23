@@ -53,7 +53,7 @@ KReportDesignerSectionDetail::KReportDesignerSectionDetail(KReportDesigner * rpt
     d->vboxlayout->setSpacing(0);
     d->vboxlayout->setMargin(0);
     d->reportDesigner = rptdes;
-    d->detail = new KReportDesignerSection(rptdes /*, this*/);
+    d->detail = d->reportDesigner->createSection();
     d->vboxlayout->addWidget(d->detail);
 
     this->setLayout(d->vboxlayout);

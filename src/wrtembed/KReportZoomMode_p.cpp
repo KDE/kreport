@@ -18,7 +18,7 @@
  * Boston, MA 02110-1301, USA.
 */
 
-#include "KReportZoomMode.h"
+#include "KReportZoomMode_p.h"
 
 #include <QCoreApplication>
 

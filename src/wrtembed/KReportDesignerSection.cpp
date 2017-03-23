@@ -29,7 +29,7 @@
 #include "KReportDesignerItemRectBase.h"
 #include "KReportDesignerItemLine.h"
 #include "KReportRuler_p.h"
-#include "KReportZoomHandler.h"
+#include "KReportZoomHandler_p.h"
 #include "KReportUtils_p.h"
 #include "KReportPluginMetaData.h"
 #include "kreport_debug.h"
@@ -97,7 +97,8 @@ public:
 };
 
 
-KReportDesignerSection::KReportDesignerSection(KReportDesigner * rptdes)
+KReportDesignerSection::KReportDesignerSection(KReportDesigner * rptdes,
+                                               const KReportZoomHandler &zoomHandler)
         : QWidget(rptdes)
         , d(new Private())
 {
@@ -123,7 +124,7 @@ KReportDesignerSection::KReportDesignerSection(KReportDesigner * rptdes)
     d->title->setObjectName(QLatin1String("detail"));
     d->title->setText(tr("Detail"));
 
-    d->sectionRuler = new KReportRuler(this, Qt::Vertical, d->reportDesigner->zoomHandler());
+    d->sectionRuler = new KReportRuler(this, Qt::Vertical, zoomHandler);
     d->sectionRuler->setUnit(d->reportDesigner->pageUnit());
     d->scene = new KReportDesignerSectionScene(d->reportDesigner->pageWidthPx(), d->dpiY, rptdes);
     d->scene->setBackgroundBrush(d->sectionData->backgroundColor());

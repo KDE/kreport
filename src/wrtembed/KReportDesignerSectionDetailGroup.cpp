@@ -59,8 +59,8 @@ KReportDesignerSectionDetailGroup::KReportDesignerSectionDetailGroup(const QStri
         return;
     }
     KReportDesigner * rd = rsd->reportDesigner();
-    d->groupHeader = new KReportDesignerSection(rd /*, _rsd*/);
-    d->groupFooter = new KReportDesignerSection(rd /*, _rsd*/);
+    d->groupHeader = rd->createSection();
+    d->groupFooter = rd->createSection();
     setGroupHeaderVisible(false);
     setGroupFooterVisible(false);
     setColumn(column);

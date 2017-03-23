@@ -58,9 +58,9 @@ set(kreport_LIB_SRCS
     wrtembed/KReportDesigner.cpp
     wrtembed/KReportPropertiesButton.cpp
     wrtembed/KReportSectionEditor.cpp
-    wrtembed/KReportRuler.cpp
-    wrtembed/KReportZoomHandler.cpp
-    wrtembed/KReportZoomMode.cpp
+    wrtembed/KReportRuler_p.cpp
+    wrtembed/KReportZoomHandler_p.cpp
+    wrtembed/KReportZoomMode_p.cpp
 
     items/label/KReportItemLabel.cpp
     items/label/KReportDesignerItemLabel.cpp
@@ -298,10 +298,8 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
     ORIGINAL CAMELCASE
     RELATIVE wrtembed
     HEADER_NAMES
-        KReportZoomMode
         KReportDesignerSectionDetail
         KReportDesignerSection
-        KReportZoomHandler
         KReportDesignerItemBase
         KReportDesignerSectionDetailGroup
         KReportDesignerItemRectBase

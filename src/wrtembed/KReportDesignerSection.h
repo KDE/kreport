@@ -35,6 +35,7 @@ class KPropertySet;
 class KProperty;
 
 class KReportDesigner;
+class KReportZoomHandler;
 
 //
 // Class ReportSection
@@ -46,7 +47,6 @@ class KREPORT_EXPORT KReportDesignerSection : public QWidget
 {
     Q_OBJECT
 public:
-    explicit KReportDesignerSection(KReportDesigner * rptdes);
     virtual ~KReportDesignerSection();
 
     void setTitle(const QString & s);
@@ -70,6 +70,10 @@ public:
 protected Q_SLOTS:
     void slotResizeBarDragged(int delta);
 
+protected:
+    explicit KReportDesignerSection(KReportDesigner * rptdes,
+                                    const KReportZoomHandler &zoomHandler);
+
 private Q_SLOTS:
     void slotPageOptionsChanged(KPropertySet &);
     void slotSceneClicked();
@@ -79,6 +83,7 @@ private:
     Q_DISABLE_COPY(KReportDesignerSection)
     class Private;
     Private * const d;
+    friend class KReportDesigner;
     friend class KReportDesignerSectionTitle;
 };
 

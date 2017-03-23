@@ -1,7 +1,7 @@
 /* This file is part of the KDE project
  * Copyright (C) 2001-2007 by OpenMFG, LLC <info@openmfg.com>
  * Copyright (C) 2007-2008 by Adam Pigg <adam@piggz.co.uk>
- * Copyright (C) 2011 Jarosław Staniek <staniek@kde.org>
+ * Copyright (C) 2011-2017 Jarosław Staniek <staniek@kde.org>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -34,7 +34,6 @@ class QActionGroup;
 class QGraphicsSceneContextMenuEvent;
 class QString;
 
-class KReportZoomHandler;
 class KReportDesignerSectionDetail;
 class KReportDesignerSection;
 class KReportUnit;
@@ -88,6 +87,13 @@ public:
     @return Pointer to report section object, or 0 if no section exists
     */
     KReportDesignerSection* section(KReportSectionData::Section) const;
+
+    /**
+    @brief Creates new section
+    @return Pointer to a new report section section object, ownership is transferred to
+            the caller
+    */
+    KReportDesignerSection* createSection() Q_REQUIRED_RESULT;
 
     /**
     @brief Deletes the section specified
@@ -177,11 +183,6 @@ public:
     virtual QSize sizeHint() const;
 
     /**
-    @brief Return a pointer to the zoom handler
-    */
-    KReportZoomHandler* zoomHandler() const;
-
-    /**
     @brief Return the current unit assigned to the report
     */
     KReportUnit pageUnit() const;
@@ -208,13 +209,13 @@ public:
     /**
     @brief Return the property set for the curently selected item
     */
-    KPropertySet* itemPropertySet() const;
+    KPropertySet* selectedItemPropertySet() const;
 
     /**
     @brief Sets the modified status, defaulting to true for modified
     @param modified Modified status
     */
-    void setModified(bool = true);
+    void setModified(bool modified);
 
     /**
     @brief Return a unique name that can be used by the entity

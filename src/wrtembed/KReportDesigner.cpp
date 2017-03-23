@@ -1,7 +1,7 @@
 /* This file is part of the KDE project
  * Copyright (C) 2001-2007 by OpenMFG, LLC <info@openmfg.com>
  * Copyright (C) 2007-2010 by Adam Pigg <adam@piggz.co.uk>
- * Copyright (C) 2011 Jarosław Staniek <staniek@kde.org>
+ * Copyright (C) 2011-2017 Jarosław Staniek <staniek@kde.org>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -27,7 +27,7 @@
 #include "KReportDesignerSectionDetail.h"
 #include "KReportDesignerItemLine.h"
 #include "KReportRuler_p.h"
-#include "KReportZoomHandler.h"
+#include "KReportZoomHandler_p.h"
 #include "KReportPageSize.h"
 #include "KReportUtils_p.h"
 #include "KReportUtils.h"
@@ -96,7 +96,7 @@ public:
     int selected_y_offset;
 
     MouseAction mouseAction;
-    QString insertItem;
+    QString itemToInsert;
 
     QList<KReportDesignerItemBase*> copy_list;
     QList<KReportDesignerItemBase*> cut_list;
@@ -110,21 +110,18 @@ public:
 
     ~Private()
     {
-        delete zoom;
-        delete sectionData;
-        delete set;
         delete dataSource;
     }
 
     QGridLayout *grid;
     KReportRuler *hruler;
-    KReportZoomHandler *zoom;
+    KReportZoomHandler zoomHandler;
     QVBoxLayout *vboxlayout;
     KReportPropertiesButton *pageButton;
 
     QGraphicsScene *activeScene = nullptr;
 
-    ReportWriterSectionData *sectionData;
+    ReportWriterSectionData sectionData;
 
     KReportDesignerSection *reportHeader = nullptr;
     KReportDesignerSection *pageHeaderFirst = nullptr;
@@ -142,8 +139,8 @@ public:
     KReportDesignerSectionDetail *detail = nullptr;
 
     //Properties
-    KPropertySet *set;
-    KPropertySet *itmset;
+    KPropertySet set;
+    KPropertySet *itemSet;
     KProperty *title;
     KProperty *pageSize;
     KProperty *orientation;
@@ -195,7 +192,6 @@ void KReportDesigner::init()
 {
     KReportPluginManager::self(); // this loads icons early enough
 
-    d->sectionData = new ReportWriterSectionData();
     createProperties();
     createActions();
 
@@ -212,8 +208,7 @@ void KReportDesigner::init()
     d->vboxlayout->setSizeConstraint(QLayout::SetFixedSize);
 
     //Create nice rulers
-    d->zoom = new KReportZoomHandler();
-    d->hruler = new KReportRuler(this, Qt::Horizontal, d->zoom);
+    d->hruler = new KReportRuler(this, Qt::Horizontal, d->zoomHandler);
 
     d->pageButton = new KReportPropertiesButton(this);
 
@@ -232,12 +227,12 @@ void KReportDesigner::init()
     setLayout(d->grid);
 
     connect(d->pageButton, SIGNAL(released()), this, SLOT(slotPageButton_Pressed()));
-    emit pagePropertyChanged(*d->set);
+    emit pagePropertyChanged(d->set);
 
-    connect(d->set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
+    connect(&d->set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
-    changeSet(d->set);
+    changeSet(&d->set);
 }
 
 KReportDesigner::~KReportDesigner()
@@ -343,7 +338,7 @@ KReportDesigner::KReportDesigner(QWidget *parent, const QDomElement &data)
     }
     this->slotPageButton_Pressed();
     emit reportDataChanged();
-    slotPropertyChanged(*d->set, *d->unit); // set unit for all items
+    slotPropertyChanged(d->set, *d->unit); // set unit for all items
     setModified(false);
 }
 
@@ -499,6 +494,12 @@ KReportDesignerSection * KReportDesigner::section(KReportSectionData::Section s)
     }
     return sec;
 }
+
+KReportDesignerSection* KReportDesigner::createSection()
+{
+    return new KReportDesignerSection(this, d->zoomHandler);
+}
+
 void KReportDesigner::removeSection(KReportSectionData::Section s)
 {
     KReportDesignerSection* sec = section(s);
@@ -563,7 +564,7 @@ void KReportDesigner::insertSection(KReportSectionData::Section s)
         if (s > KReportSectionData::ReportHeader)
             idx++;
         //kreportDebug() << idx;
-        KReportDesignerSection *rs = new KReportDesignerSection(this);
+        KReportDesignerSection *rs = createSection();
         d->vboxlayout->insertWidget(idx, rs);
 
         switch (s) {
@@ -626,7 +627,7 @@ void KReportDesigner::insertSection(KReportSectionData::Section s)
         rs->show();
         setModified(true);
         adjustSize();
-        emit pagePropertyChanged(*d->set);
+        emit pagePropertyChanged(d->set);
     }
 }
 
@@ -638,14 +639,14 @@ void KReportDesigner::setReportTitle(const QString & str)
     }
 }
 
-KPropertySet * KReportDesigner::propertySet() const
+KPropertySet* KReportDesigner::propertySet() const
 {
-    return d->set;
+    return &d->set;
 }
 
-KPropertySet* KReportDesigner::itemPropertySet() const
+KPropertySet* KReportDesigner::selectedItemPropertySet() const
 {
-    return d->itmset;
+    return d->itemSet;
 }
 
 KReportDataSource *KReportDesigner::reportDataSource() const
@@ -668,9 +669,9 @@ bool KReportDesigner::isModified() const
     return d->modified;
 }
 
-void KReportDesigner::setModified(bool mod)
+void KReportDesigner::setModified(bool modified)
 {
-    d->modified = mod;
+    d->modified = modified;
 
     if (d->modified) {
         emit dirty();
@@ -700,11 +701,10 @@ QStringList KReportDesigner::fieldKeys() const
 void KReportDesigner::createProperties()
 {
     QStringList keys, strings;
-    d->set = new KPropertySet;
-    KReportDesigner::addMetaProperties(d->set,
+    KReportDesigner::addMetaProperties(&d->set,
         tr("Report", "Main report element"), QLatin1String("kreport-report-element"));
 
-    connect(d->set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
+    connect(&d->set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
     d->title = new KProperty("title", QLatin1String("Report"), tr("Title"), tr("Report Title"));
@@ -748,21 +748,21 @@ void KReportDesigner::createProperties()
     d->topMargin->setOption("unit", QLatin1String("cm"));
     d->bottomMargin->setOption("unit", QLatin1String("cm"));
 
-    d->set->addProperty(d->title);
-    d->set->addProperty(d->pageSize);
-    d->set->addProperty(d->orientation);
-    d->set->addProperty(d->unit);
-    d->set->addProperty(d->gridSnap);
-    d->set->addProperty(d->showGrid);
-    d->set->addProperty(d->gridDivisions);
-    d->set->addProperty(d->leftMargin);
-    d->set->addProperty(d->rightMargin);
-    d->set->addProperty(d->topMargin);
-    d->set->addProperty(d->bottomMargin);
+    d->set.addProperty(d->title);
+    d->set.addProperty(d->pageSize);
+    d->set.addProperty(d->orientation);
+    d->set.addProperty(d->unit);
+    d->set.addProperty(d->gridSnap);
+    d->set.addProperty(d->showGrid);
+    d->set.addProperty(d->gridDivisions);
+    d->set.addProperty(d->leftMargin);
+    d->set.addProperty(d->rightMargin);
+    d->set.addProperty(d->topMargin);
+    d->set.addProperty(d->bottomMargin);
 
 #ifdef KREPORT_SCRIPTING
     d->script = new KProperty("script", QStringList(), QStringList(), QString(), tr("Object Script"));
-    d->set->addProperty(d->script);
+    d->set.addProperty(d->script);
 #endif
 
 //    KProperty* _customHeight;
@@ -780,12 +780,12 @@ void KReportDesigner::slotPropertyChanged(KPropertySet &s, KProperty &p)
 
     if (p.name() == "page-unit") {
         d->hruler->setUnit(pageUnit());
-        QString newstr = d->set->property("page-unit").value().toString();
+        QString newstr = d->set.property("page-unit").value().toString();
 
-        d->set->property("margin-left").setOption("unit", newstr);
-        d->set->property("margin-right").setOption("unit", newstr);
-        d->set->property("margin-top").setOption("unit", newstr);
-        d->set->property("margin-bottom").setOption("unit", newstr);
+        d->set.property("margin-left").setOption("unit", newstr);
+        d->set.property("margin-right").setOption("unit", newstr);
+        d->set.property("margin-top").setOption("unit", newstr);
+        d->set.property("margin-bottom").setOption("unit", newstr);
     }
 }
 
@@ -797,7 +797,7 @@ void KReportDesigner::slotPageButton_Pressed()
         sl.prepend(QLatin1String(""));
         d->script->setListData(sl, sl);
     }
-    changeSet(d->set);
+    changeSet(&d->set);
 #endif
 }
 
@@ -844,13 +844,16 @@ QSize KReportDesigner::sizeHint() const
 
 int KReportDesigner::pageWidthPx() const
 {
-    QPageLayout layout = QPageLayout(QPageSize(KReportPageSize::pageSize(d->set->property("page-size").value().toString())), d->set->property("print-orientation").value().toString() == QLatin1String("portrait") ? QPageLayout::Portrait : QPageLayout::Landscape, QMarginsF(0,0,0,0));;
+    QPageLayout layout = QPageLayout(
+        QPageSize(KReportPageSize::pageSize(d->set.property("page-size").value().toString())),
+        d->set.property("print-orientation").value().toString()
+                == QLatin1String("portrait") ? QPageLayout::Portrait : QPageLayout::Landscape, QMarginsF(0,0,0,0));
 
     QSize pageSizePx = layout.fullRectPixels(KReportPrivate::dpiX()).size();
 
     int width = pageSizePx.width();
-    width = width - POINT_TO_INCH(d->set->property("margin-left").value().toDouble()) * KReportPrivate::dpiX();
-    width = width - POINT_TO_INCH(d->set->property("margin-right").value().toDouble()) * KReportPrivate::dpiX();
+    width = width - POINT_TO_INCH(d->set.property("margin-left").value().toDouble()) * KReportPrivate::dpiX();
+    width = width - POINT_TO_INCH(d->set.property("margin-right").value().toDouble()) * KReportPrivate::dpiX();
 
     return width;
 }
@@ -922,7 +925,7 @@ void KReportDesigner::sectionContextMenuEvent(KReportDesignerSectionScene * s, Q
         connect(a, SIGNAL(triggered()), this, SLOT(slotEditCopy()));
         pop.addAction(a);
     }
-    if (!d->sectionData->copy_list.isEmpty()) {
+    if (!d->sectionData.copy_list.isEmpty()) {
         QAction *a = new QAction(QIcon::fromTheme(QLatin1String("edit-paste")), tr("Paste"), this);
         connect(a, SIGNAL(triggered()), this, SLOT(slotEditPaste()));
         pop.addAction(a);
@@ -970,18 +973,18 @@ void KReportDesigner::sectionMouseReleaseEvent(KReportDesignerSectionView * v, Q
             end.setX(v->scene()->width());
         }
 
-        if (d->sectionData->mouseAction == ReportWriterSectionData::MA_Insert) {
+        if (d->sectionData.mouseAction == ReportWriterSectionData::MA_Insert) {
             QGraphicsItem * item = 0;
             QString classString;
             QString iconName;
-            if (d->sectionData->insertItem == QLatin1String("org.kde.kreport.line")) {
+            if (d->sectionData.itemToInsert == QLatin1String("org.kde.kreport.line")) {
                 item = new KReportDesignerItemLine(v->designer(), v->scene(), pos, end);
                 classString = tr("Line", "Report line element");
                 iconName = QLatin1String("kreport-line-element");
             }
             else {
                 KReportPluginManager* pluginManager = KReportPluginManager::self();
-                KReportPluginInterface *plug = pluginManager->plugin(d->sectionData->insertItem);
+                KReportPluginInterface *plug = pluginManager->plugin(d->sectionData.itemToInsert);
                 if (plug) {
                     QObject *obj = plug->createDesignerInstance(v->designer(), v->scene(), pos);
                     if (obj) {
@@ -1006,12 +1009,12 @@ void KReportDesigner::sectionMouseReleaseEvent(KReportDesignerSectionView * v, Q
                     if (v && v->designer()) {
                         v->designer()->setModified(true);
                     }
-                    emit itemInserted(d->sectionData->insertItem);
+                    emit itemInserted(d->sectionData.itemToInsert);
                 }
             }
 
-            d->sectionData->mouseAction = ReportWriterSectionData::MA_None;
-            d->sectionData->insertItem.clear();
+            d->sectionData.mouseAction = ReportWriterSectionData::MA_None;
+            d->sectionData.itemToInsert.clear();
             unsetSectionCursor();
         }
     }
@@ -1028,12 +1031,12 @@ unsigned int KReportDesigner::selectionCount() const
 void KReportDesigner::changeSet(KPropertySet *s)
 {
     //Set the checked state of the report properties button
-    if (s == d->set)
+    if (s == &d->set)
         d->pageButton->setCheckState(Qt::Checked);
     else
         d->pageButton->setCheckState(Qt::Unchecked);
 
-    d->itmset = s;
+    d->itemSet = s;
     emit propertySetChanged();
 }
 
@@ -1044,8 +1047,8 @@ void KReportDesigner::changeSet(KPropertySet *s)
 void KReportDesigner::slotItem(const QString &entity)
 {
     //kreportDebug() << entity;
-    d->sectionData->mouseAction = ReportWriterSectionData::MA_Insert;
-    d->sectionData->insertItem = entity;
+    d->sectionData.mouseAction = ReportWriterSectionData::MA_Insert;
+    d->sectionData.itemToInsert = entity;
     setSectionCursor(QCursor(Qt::CrossCursor));
 }
 
@@ -1059,7 +1062,7 @@ void KReportDesigner::slotEditDelete()
             QGraphicsScene * scene = item->scene();
             delete item;
             scene->update();
-            d->sectionData->mouseAction = ReportWriterSectionData::MA_None;
+            d->sectionData.mouseAction = ReportWriterSectionData::MA_None;
             modified = true;
         }
     }
@@ -1069,8 +1072,8 @@ void KReportDesigner::slotEditDelete()
      if weve deleted something in the list
      should really check if an item is in the list first
      and remove it. */
-    d->sectionData->cut_list.clear();
-    d->sectionData->copy_list.clear();
+    d->sectionData.cut_list.clear();
+    d->sectionData.copy_list.clear();
     if (modified) {
         setModified(true);
     }
@@ -1081,24 +1084,24 @@ void KReportDesigner::slotEditCut()
     if (selectionCount() > 0) {
         //First delete any items that are curerntly in the list
         //so as not to leak memory
-        qDeleteAll(d->sectionData->cut_list);
-        d->sectionData->cut_list.clear();
+        qDeleteAll(d->sectionData.cut_list);
+        d->sectionData.cut_list.clear();
 
         QGraphicsItem * item = activeScene()->selectedItems().first();
         bool modified = false;
         if (item) {
-            d->sectionData->copy_list.clear();
+            d->sectionData.copy_list.clear();
             foreach(QGraphicsItem *item, activeScene()->selectedItems()) {
-                d->sectionData->cut_list.append(dynamic_cast<KReportDesignerItemBase*>(item));
-                d->sectionData->copy_list.append(dynamic_cast<KReportDesignerItemBase*>(item));
+                d->sectionData.cut_list.append(dynamic_cast<KReportDesignerItemBase*>(item));
+                d->sectionData.copy_list.append(dynamic_cast<KReportDesignerItemBase*>(item));
             }
             foreach(QGraphicsItem *item, activeScene()->selectedItems()) {
                 activeScene()->removeItem(item);
                 activeScene()->update();
                 modified = true;
             }
-            d->sectionData->selected_x_offset = 10;
-            d->sectionData->selected_y_offset = 10;
+            d->sectionData.selected_x_offset = 10;
+            d->sectionData.selected_y_offset = 10;
         }
         if (modified) {
             setModified(true);
@@ -1113,12 +1116,12 @@ void KReportDesigner::slotEditCopy()
 
     QGraphicsItem * item = activeScene()->selectedItems().first();
     if (item) {
-        d->sectionData->copy_list.clear();
+        d->sectionData.copy_list.clear();
         foreach(QGraphicsItem *item, activeScene()->selectedItems()) {
-            d->sectionData->copy_list.append(dynamic_cast<KReportDesignerItemBase*>(item));
+            d->sectionData.copy_list.append(dynamic_cast<KReportDesignerItemBase*>(item));
         }
-        d->sectionData->selected_x_offset = 10;
-        d->sectionData->selected_y_offset = 10;
+        d->sectionData.selected_x_offset = 10;
+        d->sectionData.selected_y_offset = 10;
     }
 }
 
@@ -1132,19 +1135,19 @@ void KReportDesigner::slotEditPaste(QGraphicsScene * canvas)
 {
 
     // paste a new item of the copy we have in the specified location
-    if (!d->sectionData->copy_list.isEmpty()) {
+    if (!d->sectionData.copy_list.isEmpty()) {
         QList<QGraphicsItem*> activeItems = canvas->selectedItems();
         QGraphicsItem *activeItem = 0;
         if (activeItems.count() == 1) {
             activeItem = activeItems.first();
         }
         canvas->clearSelection();
-        d->sectionData->mouseAction = ReportWriterSectionData::MA_None;
+        d->sectionData.mouseAction = ReportWriterSectionData::MA_None;
 
         //! @todo this code sucks :)
         //! The setPos calls only work AFTER the name has been set ?!?!?
 
-        foreach(KReportDesignerItemBase *item, d->sectionData->copy_list) {
+        foreach(KReportDesignerItemBase *item, d->sectionData.copy_list) {
             KReportItemBase *obj = dynamic_cast<KReportItemBase*>(item);
             const QString type = obj ? obj->typeName() : QLatin1String("object");
             //kreportDebug() << type;
@@ -1164,7 +1167,7 @@ void KReportDesigner::slotEditPaste(QGraphicsScene * canvas)
                 pasted_ent->setSelected(true);
                 canvas->addItem(pasted_ent);
                 pasted_ent->show();
-                d->sectionData->mouseAction = ReportWriterSectionData::MA_Grab;
+                d->sectionData.mouseAction = ReportWriterSectionData::MA_Grab;
                 setModified(true);
             }
         }
@@ -1193,11 +1196,6 @@ void KReportDesigner::setActiveScene(QGraphicsScene* a)
 
     //Trigger an update so that the last scene redraws its title;
     update();
-}
-
-KReportZoomHandler* KReportDesigner::zoomHandler() const
-{
-    return d->zoom;
 }
 
 QString KReportDesigner::suggestEntityName(const QString &n) const

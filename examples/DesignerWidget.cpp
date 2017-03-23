@@ -111,7 +111,7 @@ void ReportDesignerWidget::slotItemInserted(const QString &itemId)
 void ReportDesignerWidget::slotDesignerPropertySetChanged()
 {
     if (m_propertyEditor) {
-        m_propertyEditor->changeSet(m_reportDesigner->itemPropertySet());
+        m_propertyEditor->changeSet(m_reportDesigner->selectedItemPropertySet());
     }
 }
 

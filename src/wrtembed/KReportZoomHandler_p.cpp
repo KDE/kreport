@@ -19,7 +19,7 @@
    Boston, MA 02110-1301, USA.
 */
 
-#include "KReportZoomHandler.h"
+#include "KReportZoomHandler_p.h"
 #include "KReportUnit.h" // for POINT_TO_INCH
 #include "KReportUtils_p.h"
 

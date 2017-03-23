@@ -21,12 +21,11 @@
 #ifndef KREPORTZOOMHANDLER_H
 #define KREPORTZOOMHANDLER_H
 
-#include "KReportZoomMode.h"
+#include "KReportZoomMode_p.h"
 
 class QPointF;
 class QRectF;
 class QSizeF;
-
 
 /**
  * This class handles the zooming and DPI stuff (conversions between
