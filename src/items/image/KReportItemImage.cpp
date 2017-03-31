@@ -52,7 +52,7 @@ KReportItemImage::KReportItemImage(const QDomNode & element)
 
             setInlineImageData(node.firstChild().nodeValue().toLatin1());
         } else {
-            kreportpluginWarning() << "while parsing image element encountered unknow element: " << n;
+            kreportpluginWarning() << "while parsing image element encountered unknown element: " << n;
         }
     }
 

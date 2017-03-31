@@ -66,7 +66,7 @@ KReportItemLabel::KReportItemLabel(const QDomNode & element)
                 m_lineStyle->setValue(QPen(ls.penStyle()));
             }
         } else {
-            kreportpluginWarning() << "while parsing label element encountered unknow element: " << n;
+            kreportpluginWarning() << "while parsing label element encountered unknown element: " << n;
         }
     }
 }
