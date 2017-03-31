@@ -60,7 +60,7 @@ KReportItemCheckBox::KReportItemCheckBox(const QDomNode &element)
                 m_lineStyle->setValue(QPen(ls.penStyle()));
             }
         } else {
-            kreportpluginWarning() << "while parsing check element encountered unknow element: " << n;
+            kreportpluginWarning() << "while parsing check element encountered unknown element: " << n;
         }
     }
 

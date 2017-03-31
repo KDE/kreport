@@ -59,7 +59,7 @@ KReportItemLine::KReportItemLine(const QDomNode & element)
                 m_lineStyle->setValue(int(ls.penStyle()));
             }
         } else {
-            kreportWarning() << "while parsing line element encountered unknow element: " << n;
+            kreportWarning() << "while parsing line element encountered unknown element: " << n;
         }
     }
 }
