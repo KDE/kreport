@@ -1,5 +1,6 @@
 /* This file is part of the KDE project
    Copyright (C) 2015 by Adam Pigg (adam@piggz.co.uk)
+   Copyright (C) 2017 Jarosław Staniek <staniek@kde.org>
 
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
@@ -49,6 +50,15 @@ public:
     ~Private()
     {}
 
+    //! Move to page @a page (counted from 1)
+    void moveToPage(int page)
+    {
+        if (page != currentPage && page >= 1 && page <= pageCount) {
+            currentPage = page;
+            reportPage->renderPage(currentPage);
+        }
+    }
+
     ORODocument *reportDocument;
     QGraphicsView *reportView;
     QGraphicsScene *reportScene;
@@ -91,34 +101,22 @@ KReportView::~KReportView()
 
 void KReportView::moveToFirstPage()
 {
-        if (d->currentPage != 1) {
-                d->currentPage = 1;
-                d->reportPage->renderPage(d->currentPage);
-        }
+    d->moveToPage(1);
 }
 
 void KReportView::moveToLastPage()
 {
-        if (d->currentPage != d->pageCount) {
-                d->currentPage = d->pageCount;
-                d->reportPage->renderPage(d->currentPage);
-        }
+    d->moveToPage(d->pageCount);
 }
 
 void KReportView::moveToNextPage()
 {
-        if (d->currentPage < d->pageCount) {
-                d->currentPage++;
-                d->reportPage->renderPage(d->currentPage);
-        }
+    d->moveToPage(d->currentPage + 1);
 }
 
 void KReportView::moveToPreviousPage()
 {
-        if (d->currentPage > 1) {
-                d->currentPage--;
-                d->reportPage->renderPage(d->currentPage);
-        }
+    d->moveToPage(d->currentPage - 1);
 }
 
 int KReportView::currentPage() const

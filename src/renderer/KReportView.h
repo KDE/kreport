@@ -1,5 +1,6 @@
 /* This file is part of the KDE project
    Copyright (C) 2015 by Adam Pigg (adam@piggz.co.uk)
+   Copyright (C) 2017 Jarosław Staniek <staniek@kde.org>
 
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
@@ -43,7 +44,10 @@ public:
     void moveToLastPage();
     void moveToNextPage();
     void moveToPreviousPage();
+
+    //! @return number of current page (counted from 1)
     int currentPage() const;
+
     int pageCount() const;
     void refreshCurrentPage();
     void setDocument(ORODocument* doc);
