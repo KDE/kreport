@@ -45,6 +45,10 @@ public:
     void moveToNextPage();
     void moveToPreviousPage();
 
+    //! Moves to page @a page (counted from 1)
+    //! @since 3.1
+    void moveToPage(int page);
+
     //! @return number of current page (counted from 1)
     int currentPage() const;
 

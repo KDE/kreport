@@ -119,6 +119,11 @@ void KReportView::moveToPreviousPage()
     d->moveToPage(d->currentPage - 1);
 }
 
+void KReportView::moveToPage(int page)
+{
+    d->moveToPage(page);
+}
+
 int KReportView::currentPage() const
 {
     return d->currentPage;
