@@ -53,9 +53,9 @@ KReportItemLine::KReportItemLine(const QDomNode & element)
         if (n == QLatin1String("report:line-style")) {
             KReportLineStyle ls;
             if (parseReportLineStyleData(node.toElement(), &ls)) {
-                m_lineWeight->setValue(ls.width());
+                m_lineWeight->setValue((int)ls.width());
                 m_lineColor->setValue(ls.color());
-                m_lineStyle->setValue(int(ls.penStyle()));
+                m_lineStyle->setValue(static_cast<int>(ls.penStyle()));
             }
         } else {
             kreportWarning() << "while parsing line element encountered unknown element: " << n;
