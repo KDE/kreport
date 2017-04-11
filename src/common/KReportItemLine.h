@@ -55,8 +55,8 @@ protected:
     KProperty *m_lineStyle;
 
     KReportLineStyle lineStyle() const;
-    int weight() const;
-    void setWeight(int w);
+    qreal weight() const;
+    void setWeight(qreal w);
 
 private:
     virtual void createProperties();

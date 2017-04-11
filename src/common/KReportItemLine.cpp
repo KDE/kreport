@@ -53,7 +53,7 @@ KReportItemLine::KReportItemLine(const QDomNode & element)
         if (n == QLatin1String("report:line-style")) {
             KReportLineStyle ls;
             if (parseReportLineStyleData(node.toElement(), &ls)) {
-                m_lineWeight->setValue((int)ls.width());
+                m_lineWeight->setValue(ls.width());
                 m_lineColor->setValue(ls.color());
                 m_lineStyle->setValue(static_cast<int>(ls.penStyle()));
             }
@@ -72,7 +72,9 @@ void KReportItemLine::createProperties()
 {
     m_set = new KPropertySet;
 
-    m_lineWeight = new KProperty("line-weight", 1, tr("Line Weight"));
+    m_lineWeight = new KProperty("line-weight", 1.0, tr("Line Weight"));
+    m_lineWeight->setOption("step", 1.0);
+
     m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
     m_lineStyle = new KProperty("line-style", (int)Qt::SolidLine, tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
     m_start.setName(QLatin1String("Start"));
@@ -89,18 +91,18 @@ void KReportItemLine::createProperties()
 KReportLineStyle KReportItemLine::lineStyle() const
 {
     KReportLineStyle ls;
-    ls.setWidth(m_lineWeight->value().toInt());
+    ls.setWidth(m_lineWeight->value().toReal());
     ls.setColor(m_lineColor->value().value<QColor>());
     ls.setPenStyle((Qt::PenStyle)m_lineStyle->value().toInt());
     return ls;
 }
 
-int KReportItemLine::weight() const
+qreal KReportItemLine::weight() const
 {
-    return m_lineWeight->value().toInt();
+    return m_lineWeight->value().toReal();
 }
 
-void KReportItemLine::setWeight(int w)
+void KReportItemLine::setWeight(qreal w)
 {
     m_lineWeight->setValue(w);
 }
