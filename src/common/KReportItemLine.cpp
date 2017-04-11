@@ -74,13 +74,14 @@ void KReportItemLine::createProperties()
     m_end = new KProperty("endposition", QPointF(), QCoreApplication::translate("EndPosition", "End Position"));
 
     m_lineWeight = new KProperty("line-weight", 1.0, tr("Line Weight"));
+    m_lineWeight->setOption("step", 1.0);
     m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
     m_lineStyle = new KProperty("line-style", (int)Qt::SolidLine, tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
-    
+
     //Remove the unused properies from KReportItemBase
     propertySet()->removeProperty("size");
     propertySet()->removeProperty("position");
-    
+
     propertySet()->addProperty(m_start);
     propertySet()->addProperty(m_end);
     propertySet()->addProperty(m_lineWeight);
@@ -91,18 +92,18 @@ void KReportItemLine::createProperties()
 KReportLineStyle KReportItemLine::lineStyle() const
 {
     KReportLineStyle ls;
-    ls.setWidth(m_lineWeight->value().toInt());
+    ls.setWidth(m_lineWeight->value().toReal());
     ls.setColor(m_lineColor->value().value<QColor>());
     ls.setPenStyle((Qt::PenStyle)m_lineStyle->value().toInt());
     return ls;
 }
 
-int KReportItemLine::weight() const
+qreal KReportItemLine::weight() const
 {
-    return m_lineWeight->value().toInt();
+    return m_lineWeight->value().toReal();
 }
 
-void KReportItemLine::setWeight(int w)
+void KReportItemLine::setWeight(qreal w)
 {
     m_lineWeight->setValue(w);
 }
@@ -134,7 +135,7 @@ int KReportItemLine::renderSimpleData(OROPage *page, OROSection *section, const 
     if (l2) {
         l2->setStartPoint(m_start->value().toPointF());
         l2->setEndPoint(m_end->value().toPointF());
-    
+
         if (section) section->addPrimitive(l2);
     }
     return 0;
