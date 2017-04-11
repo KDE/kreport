@@ -88,7 +88,7 @@ void KReportScriptDraw::line(qreal x1, qreal y1, qreal x2, qreal y2, const QStri
 
         KReportLineStyle ls;
         ls.setColor(QColor(lc));
-        ls.setWidth(1);
+        ls.setWeight(1);
         ls.setPenStyle(Qt::SolidLine);
 
         ln->setLineStyle(ls);
@@ -110,7 +110,7 @@ void KReportScriptDraw::text(qreal x, qreal y, const QString &txt, const QString
 
         KReportLineStyle ls;
         ls.setColor(QColor(lc));
-        ls.setWidth(lw);
+        ls.setWeight(lw);
         if (lw <= 0)
             ls.setPenStyle(Qt::NoPen);
         else

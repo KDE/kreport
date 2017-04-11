@@ -49,9 +49,9 @@ bool PrintRenderer::setupPrinter( ORODocument * document, QPrinter * pPrinter)
 
     if (!document->pageLayout().pageSize().isValid()) {
         pPrinter->setPageSize(QPrinter::Custom);
-    } else {  
+    } else {
         pPrinter->setPageSize(QPageSize(document->pageLayout().pageSize()));
-    }        
+    }
 
     return true;
 }
@@ -122,7 +122,7 @@ bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *d
                     context.painter()->drawText(rc, tb->flags(), tb->text());
 
                     //outer line
-                    context.painter()->setPen(QPen(tb->lineStyle().color(), tb->lineStyle().width() * scaleX, tb->lineStyle().penStyle()));
+                    context.painter()->setPen(QPen(tb->lineStyle().color(), tb->lineStyle().weight() * scaleX, tb->lineStyle().penStyle()));
                     context.painter()->drawRect(rc);
 
                     //Reset back to defaults for next element
@@ -132,7 +132,7 @@ bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *d
                     QPointF s = ln->startPoint();
                     QPointF e(ln->endPoint().x() * scaleX, ln->endPoint().y() * scaleY);
                     //QPen pen ( _painter()->pen() );
-                    QPen pen(ln->lineStyle().color(), ln->lineStyle().width() * scaleX, ln->lineStyle().penStyle());
+                    QPen pen(ln->lineStyle().color(), ln->lineStyle().weight() * scaleX, ln->lineStyle().penStyle());
 
                     context.painter()->save();
                     context.painter()->setRenderHint(QPainter::Antialiasing, true);
@@ -188,10 +188,10 @@ bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *d
 
                     context.painter()->setPen(chk->foregroundColor());
 
-                    if (chk->lineStyle().penStyle() == Qt::NoPen || chk->lineStyle().width() <= 0) {
+                    if (chk->lineStyle().penStyle() == Qt::NoPen || chk->lineStyle().weight() <= 0) {
                         context.painter()->setPen(QPen(Qt::lightGray));
                     } else {
-                        context.painter()->setPen(QPen(chk->lineStyle().color(), chk->lineStyle().width() * scaleX, chk->lineStyle().penStyle()));
+                        context.painter()->setPen(QPen(chk->lineStyle().color(), chk->lineStyle().weight() * scaleX, chk->lineStyle().penStyle()));
                     }
 
                     qreal ox = sz.width() / 5;

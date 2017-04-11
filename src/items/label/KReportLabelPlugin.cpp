@@ -88,7 +88,7 @@ bool KReportLabelPlugin::loadElement(KReportElement *el, const QDomElement &dom,
     borderStyle.setPenStyle(KReportUtils::penStyle(s, borderStyle.penStyle()));
     borderStyle.setColor(KReportUtils::attr(lineStyleDom, "report:line-color", borderStyle.color()));
     // border-line-width could be better name but it's too late...
-    borderStyle.setWidth(KReportUtils::attr(lineStyleDom, "report:line-weight", borderStyle.width()));
+    borderStyle.setWeight(KReportUtils::attr(lineStyleDom, "report:line-weight", borderStyle.weight()));
     label.setBorderStyle(borderStyle);
     return true;
 }

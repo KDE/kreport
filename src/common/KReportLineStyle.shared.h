@@ -32,7 +32,7 @@ public:
     @setter
     Sets the line's width to @a width.
     */
-    qreal width; //SDC: default=0.0
+    qreal weight; //SDC: default=0.0
 
     /*!
     @getter

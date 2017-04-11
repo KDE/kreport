@@ -38,12 +38,12 @@ public:
     QString title;
     QList<OROPage*> pages;
     QList<OROSection*> sections;
-    KReportPrivate::PageLayout pageLayout; 
+    KReportPrivate::PageLayout pageLayout;
 };
 
 ORODocument::Private::Private()
 {
-    
+
 }
 
 ORODocument::Private::~Private()
@@ -238,7 +238,7 @@ void OROPage::insertPrimitive(OROPrimitive* p, int index)
     } else {
         d->primitives.insert(index, p);
     }
-    
+
 #if 0
 //TODO
     if (notify) {
@@ -318,7 +318,7 @@ OROSection::~OROSection()
     if (d->document) {
         d->document->takeSection(this);
     }
-    
+
     delete d;
 }
 
@@ -420,7 +420,7 @@ OROPrimitive::~OROPrimitive()
    if (d->page) {
         d->page->takePrimitive(this);
     }
-    
+
     delete d;
 }
 
@@ -476,7 +476,7 @@ public:
     bool wordWrap;
     bool canGrow;
     bool requiresPostProcessing;
-    
+
 };
 
 OROTextBox::Private::Private()
@@ -485,9 +485,9 @@ OROTextBox::Private::Private()
     wordWrap = false;
     canGrow = false;
     requiresPostProcessing = false;
-    
+
     lineStyle.setColor(Qt::black);
-    lineStyle.setWidth(0);
+    lineStyle.setWeight(0);
     lineStyle.setPenStyle(Qt::NoPen);
 }
 
@@ -735,7 +735,7 @@ OROPrimitive* OROImage::clone() const
 class Q_DECL_HIDDEN OROPicture::Private
 {
 public:
-    QPicture picture;    
+    QPicture picture;
 };
 
 OROPicture::OROPicture() : d(new Private())

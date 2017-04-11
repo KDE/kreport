@@ -66,7 +66,7 @@ KReportItemText::KReportItemText(const QDomNode & element) : m_bottomPadding(0.0
         } else if (n == QLatin1String("report:line-style")) {
             KReportLineStyle ls;
             if (parseReportLineStyleData(node.toElement(), &ls)) {
-                m_lineWeight->setValue(ls.width());
+                m_lineWeight->setValue(ls.weight());
                 m_lineColor->setValue(ls.color());
                 m_lineStyle->setValue(static_cast<int>(ls.penStyle()));
             }
@@ -183,7 +183,7 @@ KRTextStyleData KReportItemText::textStyle() const
 KReportLineStyle KReportItemText::lineStyle() const
 {
     KReportLineStyle ls;
-    ls.setWidth(m_lineWeight->value().toReal());
+    ls.setWeight(m_lineWeight->value().toReal());
     ls.setColor(m_lineColor->value().value<QColor>());
     ls.setPenStyle((Qt::PenStyle)m_lineStyle->value().toInt());
     return ls;

@@ -187,7 +187,7 @@ void FormatTest::testLabelElement()
     QCOMPARE(label1.font().pointSizeF(), 9.0);
     QCOMPARE(label1.font().letterSpacing(), 110.0);
     QCOMPARE(label1.font().letterSpacingType(), QFont::PercentageSpacing);
-    QCOMPARE(label1.borderStyle().width(), 1.0);
+    QCOMPARE(label1.borderStyle().weight(), 1.0);
     QCOMPARE(label1.borderStyle().color(), QColor("#400000"));
     QCOMPARE(label1.borderStyle().penStyle(), Qt::DashLine);
 

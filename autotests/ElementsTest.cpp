@@ -89,11 +89,11 @@ void ElementsTest::testElements()
     QFont f = lbl1.font();
     QCOMPARE(f, QApplication::font());
 
-    QCOMPARE(lbl1.borderStyle().width(), 0.0); // default
+    QCOMPARE(lbl1.borderStyle().weight(), 0.0); // default
     QCOMPARE(lbl1.borderStyle().penStyle(), Qt::NoPen); // default
     QCOMPARE(lbl1.borderStyle().color(), QColor()); // default
     KReportLineStyle lineStyle;
-    lineStyle.setWidth(2.0);
+    lineStyle.setWeight(2.0);
     lineStyle.setPenStyle(Qt::DashLine);
     lineStyle.setColor(QColor("brown"));
     lbl1.setBorderStyle(lineStyle);

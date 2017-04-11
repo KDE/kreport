@@ -383,7 +383,7 @@ void KReportUtils::buildXMLLineStyle(QDomDocument *doc, QDomElement *entity, con
     QDomElement element = doc->createElement(QLatin1String("report:line-style"));
 
     element.setAttribute(QLatin1String("report:line-color"), ls.color().name());
-    element.setAttribute(QLatin1String("report:line-weight"), ls.width());
+    element.setAttribute(QLatin1String("report:line-weight"), ls.weight());
 
     QString l;
     switch (ls.penStyle()) {
@@ -479,7 +479,7 @@ bool KReportUtils::parseReportLineStyleData(const QDomElement & elemSource, KRep
     Q_ASSERT(ls);
     if (elemSource.tagName() == QLatin1String("report:line-style")) {
         ls->setColor(QColor(elemSource.attribute(QLatin1String("report:line-color"), QLatin1String("#ffffff"))));
-        ls->setWidth(elemSource.attribute(QLatin1String("report:line-weight"), QLatin1String("0.0")).toDouble());
+        ls->setWeight(elemSource.attribute(QLatin1String("report:line-weight"), QLatin1String("0.0")).toDouble());
 
         QString l = elemSource.attribute(QLatin1String("report:line-style"), QLatin1String("nopen"));
         if (l == QLatin1String("nopen")) {

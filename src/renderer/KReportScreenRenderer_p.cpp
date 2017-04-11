@@ -71,7 +71,7 @@ bool ScreenRenderer::render(const KReportRendererContext& context, ORODocument *
             context.painter()->drawText(rc.adjusted(2, 2, 0, 0), tb->flags(), tb->text());
 
             //outer line
-            context.painter()->setPen(QPen(tb->lineStyle().color(), tb->lineStyle().width(), tb->lineStyle().penStyle()));
+            context.painter()->setPen(QPen(tb->lineStyle().color(), tb->lineStyle().weight(), tb->lineStyle().penStyle()));
             context.painter()->drawRect(rc);
 
             //Reset back to defaults for next element
@@ -81,7 +81,7 @@ bool ScreenRenderer::render(const KReportRendererContext& context, ORODocument *
             QPointF s = ln->startPoint();
             QPointF e = ln->endPoint();
             //QPen pen ( _painter->pen() );
-            QPen pen(ln->lineStyle().color(), ln->lineStyle().width(), ln->lineStyle().penStyle());
+            QPen pen(ln->lineStyle().color(), ln->lineStyle().weight(), ln->lineStyle().penStyle());
 
             context.painter()->save();
             context.painter()->setRenderHint(QPainter::Antialiasing, true);
@@ -145,10 +145,10 @@ bool ScreenRenderer::render(const KReportRendererContext& context, ORODocument *
 
             context.painter()->setPen(chk->foregroundColor());
 
-            if (chk->lineStyle().penStyle() == Qt::NoPen || chk->lineStyle().width() <= 0) {
+            if (chk->lineStyle().penStyle() == Qt::NoPen || chk->lineStyle().weight() <= 0) {
                 context.painter()->setPen(QPen(Qt::lightGray));
             } else {
-                context.painter()->setPen(QPen(chk->lineStyle().color(), chk->lineStyle().width(), chk->lineStyle().penStyle()));
+                context.painter()->setPen(QPen(chk->lineStyle().color(), chk->lineStyle().weight(), chk->lineStyle().penStyle()));
             }
 
             qreal ox = sz.width() / 5;
