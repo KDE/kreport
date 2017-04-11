@@ -76,7 +76,7 @@ void KReportItemLine::createProperties()
     m_lineWeight->setOption("step", 1.0);
 
     m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
-    m_lineStyle = new KProperty("line-style", (int)Qt::SolidLine, tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
+    m_lineStyle = new KProperty("line-style", static_cast<int>(Qt::SolidLine), tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
     m_start.setName(QLatin1String("Start"));
     m_end.setName(QLatin1String("End"));
 
