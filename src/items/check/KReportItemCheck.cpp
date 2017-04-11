@@ -55,7 +55,7 @@ KReportItemCheckBox::KReportItemCheckBox(const QDomNode &element)
         if (n == QLatin1String("report:line-style")) {
             KReportLineStyle ls;
             if (parseReportLineStyleData(node.toElement(), &ls)) {
-                m_lineWeight->setValue((int)ls.width());
+                m_lineWeight->setValue(ls.width());
                 m_lineColor->setValue(ls.color());
                 m_lineStyle->setValue(static_cast<int>(ls.penStyle()));
             }
@@ -86,9 +86,10 @@ void KReportItemCheckBox::createProperties()
 
     m_foregroundColor = new KProperty("foreground-color", QColor(Qt::black), tr("Foreground Color"));
 
-    m_lineWeight = new KProperty("line-weight", 1, tr("Line Weight"));
+    m_lineWeight = new KProperty("line-weight", 1.0, tr("Line Weight"));
+    m_lineWeight->setOption("step", 1.0);
     m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
-    m_lineStyle = new KProperty("line-style", QPen(Qt::SolidLine), tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
+    m_lineStyle = new KProperty("line-style", static_cast<int>(Qt::SolidLine), tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
     m_staticValue = new KProperty("value", QVariant(false), tr("Value"), tr("Value used if not bound to a field"));
 
     addDefaultProperties();
@@ -104,7 +105,7 @@ void KReportItemCheckBox::createProperties()
 KReportLineStyle KReportItemCheckBox::lineStyle()
 {
     KReportLineStyle ls;
-    ls.setWidth(m_lineWeight->value().toInt());
+    ls.setWidth(m_lineWeight->value().toReal());
     ls.setColor(m_lineColor->value().value<QColor>());
     ls.setPenStyle((Qt::PenStyle)m_lineStyle->value().toInt());
     return ls;

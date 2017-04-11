@@ -482,7 +482,7 @@ bool KReportUtils::parseReportLineStyleData(const QDomElement & elemSource, KRep
     Q_ASSERT(ls);
     if (elemSource.tagName() == QLatin1String("report:line-style")) {
         ls->setColor(QColor(elemSource.attribute(QLatin1String("report:line-color"), QLatin1String("#ffffff"))));
-        ls->setWidth(elemSource.attribute(QLatin1String("report:line-weight"), QLatin1String("0")).toInt());
+        ls->setWidth(elemSource.attribute(QLatin1String("report:line-weight"), QLatin1String("0.0")).toDouble());
 
         QString l = elemSource.attribute(QLatin1String("report:line-style"), QLatin1String("nopen"));
         if (l == QLatin1String("nopen")) {
