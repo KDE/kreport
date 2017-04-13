@@ -35,8 +35,8 @@ KReportItemField::KReportItemField()
 }
 
 KReportItemField::KReportItemField(const QDomNode & element)
+    : KReportItemField()
 {
-    createProperties();
     QDomNodeList nl = element.childNodes();
     QString n;
     QDomNode node;

@@ -31,8 +31,8 @@ KReportItemLabel::KReportItemLabel()
 }
 
 KReportItemLabel::KReportItemLabel(const QDomNode & element)
+    : KReportItemLabel()
 {
-    createProperties();
     QDomNodeList nl = element.childNodes();
     QString n;
     QDomNode node;

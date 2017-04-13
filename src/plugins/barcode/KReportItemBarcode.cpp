@@ -27,14 +27,14 @@
 #include "barcodes.h"
 
 KReportItemBarcode::KReportItemBarcode()
-    : KReportItemBarcode(QDomNode())
-{
-}
-
-KReportItemBarcode::KReportItemBarcode(const QDomNode & element)
     : m_minWidthData(0), m_minWidthTotal(0), m_minHeight(0)
 {
     createProperties();
+}
+
+KReportItemBarcode::KReportItemBarcode(const QDomNode & element)
+    : KReportItemBarcode()
+{
     QDomNodeList nl = element.childNodes();
     QString n;
     QDomNode node;

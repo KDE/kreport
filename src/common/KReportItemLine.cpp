@@ -29,8 +29,8 @@ KReportItemLine::KReportItemLine()
 }
 
 KReportItemLine::KReportItemLine(const QDomNode & element)
+    : KReportItemLine()
 {
-    createProperties();
     QDomNodeList nl = element.childNodes();
     QString n;
     QDomNode node;

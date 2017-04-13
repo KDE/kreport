@@ -42,16 +42,14 @@
 typedef QVector<double> datalist;
 
 KReportItemChart::KReportItemChart()
+    : m_reportData(nullptr)
 {
-    m_reportData = 0;
     createProperties();
 }
 
 KReportItemChart::KReportItemChart(QDomNode *element)
+    : KReportItemChart()
 {
-    m_reportData = 0;
-    createProperties();
-
     QDomNodeList nl = element->childNodes();
 
     QString n;
