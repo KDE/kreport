@@ -185,11 +185,6 @@ public:
 KReportDesigner::KReportDesigner(QWidget * parent)
         : QWidget(parent), d(new Private())
 {
-    init();
-}
-
-void KReportDesigner::init()
-{
     KReportPluginManager::self(); // this loads icons early enough
 
     createProperties();
@@ -235,17 +230,9 @@ void KReportDesigner::init()
     changeSet(&d->set);
 }
 
-KReportDesigner::~KReportDesigner()
-{
-    delete d;
-}
-
-///The loading Code
 KReportDesigner::KReportDesigner(QWidget *parent, const QDomElement &data)
-    : QWidget(parent), d(new Private())
+    : KReportDesigner(parent)
 {
-    init();
-
     if (data.tagName() != QLatin1String("report:content")) {
         // arg we got an xml file but not one i know of
         kreportWarning() << "root element was not <report:content>";
