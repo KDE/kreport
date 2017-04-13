@@ -67,29 +67,26 @@ void KReportItemMaps::createProperties()
 {
     m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
 
-    m_latitudeProperty = new KProperty("latitude", 0.0, tr("Latitude"), tr("Latitude"), KProperty::Double);
+    m_latitudeProperty = new KProperty("latitude", 0.0, tr("Latitude"), QString(), KProperty::Double);
     m_latitudeProperty->setOption("min", -90);
     m_latitudeProperty->setOption("max", 90);
     m_latitudeProperty->setOption("unit", QString::fromUtf8("°"));
     m_latitudeProperty->setOption("precision", 7);
 
-    m_longitudeProperty = new KProperty("longitude", 0.0, tr("Longitude"), tr("Longitude"), KProperty::Double);
+    m_longitudeProperty = new KProperty("longitude", 0.0, tr("Longitude"), QString(), KProperty::Double);
     m_longitudeProperty->setOption("min", -180);
     m_longitudeProperty->setOption("max", 180);
     m_longitudeProperty->setOption("unit", QString::fromUtf8("°"));
     m_longitudeProperty->setOption("precision", 7);
 
-    m_zoomProperty     = new KProperty("zoom", 1000, tr("Zoom"), tr("Zoom") );
+    m_zoomProperty     = new KProperty("zoom", 1000, tr("Zoom") );
     m_zoomProperty->setOption("min", 0);
     m_zoomProperty->setOption("max", 4000);
     m_zoomProperty->setOption("step", 100);
     m_zoomProperty->setOption("slider", true);
 
     QStringList mapThemIds(m_themeManager.mapThemeIds());
-    m_themeProperty = new KProperty("theme",
-                                                    mapThemIds,
-                                                    mapThemIds,
-                                                    mapThemIds[1]);
+    m_themeProperty = new KProperty("theme",  mapThemIds, mapThemIds, mapThemIds[1], tr("Theme"));
 
     if (mapThemIds.contains(QLatin1String("earth/srtm/srtm.dgml"))) {
         m_themeProperty->setValue(QLatin1String("earth/srtm/srtm.dgml"), KProperty::DefaultValueOptions & ~KProperty::ValueOptions(KProperty::ValueOption::RememberOld));

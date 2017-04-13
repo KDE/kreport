@@ -113,7 +113,7 @@ void KReportItemLabel::createProperties()
     m_lineWeight = new KProperty("line-weight", 1.0, tr("Line Weight"));
     m_lineWeight->setOption("step", 1.0);
     m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
-    m_lineStyle = new KProperty("line-style", static_cast<int>(Qt::NoPen), tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
+    m_lineStyle = new KProperty("line-style", static_cast<int>(Qt::NoPen), tr("Line Style"), QString(), KProperty::LineStyle);
 
     propertySet()->addProperty(m_text);
     propertySet()->addProperty(m_horizontalAlignment);

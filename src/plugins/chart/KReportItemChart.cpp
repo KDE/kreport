@@ -124,10 +124,10 @@ void KReportItemChart::createProperties()
         tr("3D", "Three dimensions"));
     m_aa = new KProperty("antialiased", QVariant(false), tr("Antialiased"));
 
-    m_xTitle = new KProperty("title-x-axis", QString(), tr("X Axis Title"), tr("X Axis Title"));
-    m_yTitle = new KProperty("title-y-axis", QString(), tr("Y Axis Title"), tr("Y Axis Title"));
+    m_xTitle = new KProperty("title-x-axis", QString(), tr("X Axis Title"));
+    m_yTitle = new KProperty("title-y-axis", QString(), tr("Y Axis Title"));
 
-    m_displayLegend = new KProperty("display-legend", true, tr("Display Legend"), tr("Display Legend"));
+    m_displayLegend = new KProperty("display-legend", true, tr("Display Legend"));
 
     keys.clear();
     strings.clear();
@@ -150,7 +150,7 @@ void KReportItemChart::createProperties()
     m_legendOrientation = new KProperty("legend-orientation", subData, Qt::Vertical, tr("Legend Orientation"));
 
     m_backgroundColor = new KProperty("background-color", Qt::white,
-        tr("Background Color"), tr("Background Color"));
+        tr("Background Color"));
 
     m_linkMaster = new KProperty("link-master", QString(), tr("Link Master"),
         tr("Fields from master data source"));

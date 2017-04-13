@@ -76,7 +76,7 @@ void KReportItemLine::createProperties()
     m_lineWeight = new KProperty("line-weight", 1.0, tr("Line Weight"));
     m_lineWeight->setOption("step", 1.0);
     m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
-    m_lineStyle = new KProperty("line-style", (int)Qt::SolidLine, tr("Line Style"), tr("Line Style"), KProperty::LineStyle);
+    m_lineStyle = new KProperty("line-style", (int)Qt::SolidLine, tr("Line Style"), QString(), KProperty::LineStyle);
 
     //Remove the unused properies from KReportItemBase
     propertySet()->removeProperty("size");
