@@ -272,8 +272,8 @@ public:
     QString text() const;
     void setText(const QString &text);
 
-    KRTextStyleData textStyle() const;
-    void setTextStyle(const KRTextStyleData&);
+    KReportTextStyleData textStyle() const;
+    void setTextStyle(const KReportTextStyleData&);
 
     KReportLineStyle lineStyle() const;
     void setLineStyle(const KReportLineStyle&);

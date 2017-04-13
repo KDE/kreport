@@ -43,7 +43,7 @@ class KPropertySet;
 
 class QDomElement;
 
-class KRTextStyleData
+class KReportTextStyleData
 {
 public:
     QFont font;
@@ -103,10 +103,10 @@ public:
     @return True if uses a sub query
     */
     virtual bool supportsSubQuery() const;
- 
+
     KPropertySet* propertySet();
     const KPropertySet* propertySet() const;
-    
+
     void setEntityName(const QString& n);
     QString entityName() const;
 
@@ -116,7 +116,7 @@ public:
      * @brief Return the size in points
      */
     QSizeF size() const;
-    
+
     /**
      * @brief Return the position in points
      */
@@ -124,10 +124,10 @@ public:
 
     void setPosition(const QPointF &pos);
     void setSize(const QSizeF &siz);
-    
+
     qreal z() const;
     void setZ(qreal z);
-    
+
     //Helper function to map between size/position units
     static QPointF scenePosition(const QPointF &pos);
     static QSizeF sceneSize(const QSizeF &size);
@@ -137,15 +137,15 @@ public:
 protected:
     virtual void createProperties() = 0;
     bool parseReportRect(const QDomElement &elem);
-    static bool parseReportTextStyleData(const QDomElement &, KRTextStyleData*);
+    static bool parseReportTextStyleData(const QDomElement &, KReportTextStyleData*);
     static bool parseReportLineStyleData(const QDomElement &, KReportLineStyle*);
-    
+
     KProperty *nameProperty();
     QString oldName() const;
     void setOldName(const QString &old);
-    
+
     Q_SLOT virtual void propertyChanged(KPropertySet &s, KProperty &p);
-    
+
 private:
     Q_DISABLE_COPY(KReportItemBase)
     class Private;

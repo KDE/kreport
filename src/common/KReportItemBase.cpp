@@ -69,7 +69,7 @@ KReportItemBase::~KReportItemBase()
     delete d;    
 }
 
-bool KReportItemBase::parseReportTextStyleData(const QDomElement & elemSource, KRTextStyleData *ts)
+bool KReportItemBase::parseReportTextStyleData(const QDomElement & elemSource, KReportTextStyleData *ts)
 {
     return KReportUtils::parseReportTextStyleData(elemSource, ts);
 }

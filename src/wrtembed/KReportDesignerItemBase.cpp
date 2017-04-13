@@ -71,7 +71,7 @@ void KReportDesignerItemBase::buildXMLRect(QDomDocument *doc, QDomElement *entit
     KReportUtils::buildXMLRect(entity, i->position(), i->size());
 }
 
-void KReportDesignerItemBase::buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KRTextStyleData &ts)
+void KReportDesignerItemBase::buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KReportTextStyleData &ts)
 {
     KReportUtils::buildXMLTextStyle(doc, entity, ts);
 }

@@ -70,7 +70,7 @@ protected:
     qreal bottomPadding() const;
 
 
-    KRTextStyleData textStyle() const;
+    KReportTextStyleData textStyle() const;
     KReportLineStyle lineStyle() const;
 
 private:

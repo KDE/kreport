@@ -61,7 +61,7 @@ protected:
     }
     Qt::Alignment textFlags() const;
     void setText(const QString&);
-    KRTextStyleData textStyle() const;
+    KReportTextStyleData textStyle() const;
     KReportLineStyle lineStyle() const;
 
 private:

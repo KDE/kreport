@@ -58,7 +58,7 @@ KReportItemField::KReportItemField(const QDomNode & element)
         n = node.nodeName();
 
         if (n == QLatin1String("report:text-style")) {
-            KRTextStyleData ts;
+            KReportTextStyleData ts;
             if (parseReportTextStyleData(node.toElement(), &ts)) {
                 m_backgroundColor->setValue(ts.backgroundColor);
                 m_foregroundColor->setValue(ts.foregroundColor);
@@ -174,9 +174,9 @@ int KReportItemField::textFlags() const
     return flags;
 }
 
-KRTextStyleData KReportItemField::textStyle() const
+KReportTextStyleData KReportItemField::textStyle() const
 {
-    KRTextStyleData d;
+    KReportTextStyleData d;
     d.backgroundColor = m_backgroundColor->value().value<QColor>();
     d.foregroundColor = m_foregroundColor->value().value<QColor>();
     d.font = m_font->value().value<QFont>();

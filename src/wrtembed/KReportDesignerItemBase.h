@@ -47,7 +47,7 @@ public:
     virtual void buildXML(QDomDocument *doc, QDomElement *parent) = 0;
 
     static void buildXMLRect(QDomDocument *doc, QDomElement *entity, KReportItemBase *i);
-    static void buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KRTextStyleData &ts);
+    static void buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KReportTextStyleData &ts);
     static void buildXMLLineStyle(QDomDocument *doc, QDomElement *entity, const KReportLineStyle &ls);
 
     virtual KReportDesignerItemBase* clone() = 0;

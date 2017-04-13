@@ -34,7 +34,7 @@ class QPointF;
 class KProperty;
 class KReportPosition;
 class KReportSize;
-class KRTextStyleData;
+class KReportTextStyleData;
 class KReportLineStyle;
 
 namespace KReportUtils
@@ -93,7 +93,7 @@ namespace KReportUtils
     KREPORT_EXPORT void buildXMLRect(QDomElement *entity, const QPointF &pos, const QSizeF &size);
 
     //! Writes attributes for text style @p ts
-    KREPORT_EXPORT void buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KRTextStyleData &ts);
+    KREPORT_EXPORT void buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KReportTextStyleData &ts);
 
     //! Writes attributes for line style @p ls
     KREPORT_EXPORT void buildXMLLineStyle(QDomDocument *doc, QDomElement *entity, const KReportLineStyle &ls);
@@ -111,7 +111,7 @@ namespace KReportUtils
     KREPORT_EXPORT void setAttribute(QDomElement *e, const QSizeF &value);
 
     //! Reads attributes from @p elemSource into text style @p ts
-    KREPORT_EXPORT bool parseReportTextStyleData(const QDomElement & elemSource, KRTextStyleData *ts);
+    KREPORT_EXPORT bool parseReportTextStyleData(const QDomElement & elemSource, KReportTextStyleData *ts);
 
     //! Reads attributes from @p elemSource into line style @p ls
     KREPORT_EXPORT bool parseReportLineStyleData(const QDomElement & elemSource, KReportLineStyle *ls);

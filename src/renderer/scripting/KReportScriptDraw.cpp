@@ -102,7 +102,7 @@ void KReportScriptDraw::text(qreal x, qreal y, const QString &txt, const QString
         QFont f(fnt, pt);
         QRectF r = QFontMetrics(f).boundingRect(txt);
 
-        KRTextStyleData ts;
+        KReportTextStyleData ts;
         ts.font = f;
         ts.backgroundColor = QColor(bc);
         ts.foregroundColor = QColor(fc);

@@ -50,7 +50,7 @@ KReportItemLabel::KReportItemLabel(const QDomNode & element)
         n = node.nodeName();
 
         if (n == QLatin1String("report:text-style")) {
-            KRTextStyleData ts;
+            KReportTextStyleData ts;
             if (parseReportTextStyleData(node.toElement(), &ts)) {
                 m_backgroundColor->setValue(ts.backgroundColor);
                 m_foregroundColor->setValue(ts.foregroundColor);
@@ -150,9 +150,9 @@ Qt::Alignment KReportItemLabel::textFlags() const
     return align;
 }
 
-KRTextStyleData KReportItemLabel::textStyle() const
+KReportTextStyleData KReportItemLabel::textStyle() const
 {
-    KRTextStyleData d;
+    KReportTextStyleData d;
     d.backgroundColor = m_backgroundColor->value().value<QColor>();
     d.foregroundColor = m_foregroundColor->value().value<QColor>();
     d.font = m_font->value().value<QFont>();

@@ -362,7 +362,7 @@ void KReportUtils::buildXMLRect(QDomElement *entity, const QPointF &pos, const Q
     KReportUtils::setAttribute(entity, size );
 }
 
-void KReportUtils::buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KRTextStyleData &ts)
+void KReportUtils::buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KReportTextStyleData &ts)
 {
     Q_ASSERT(doc);
     Q_ASSERT(entity);
@@ -457,7 +457,7 @@ void KReportUtils::setAttribute(QDomElement *e, const QSizeF &value)
     KReportUtils::setAttribute(e, QLatin1String("svg:height"), value.height());
 }
 
-bool KReportUtils::parseReportTextStyleData(const QDomElement & elemSource, KRTextStyleData *ts)
+bool KReportUtils::parseReportTextStyleData(const QDomElement & elemSource, KReportTextStyleData *ts)
 {
     Q_ASSERT(ts);
     if (elemSource.tagName() != QLatin1String("report:text-style"))

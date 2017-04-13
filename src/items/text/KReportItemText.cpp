@@ -55,7 +55,7 @@ KReportItemText::KReportItemText(const QDomNode & element) : m_bottomPadding(0.0
         n = node.nodeName();
 
         if (n == QLatin1String("report:text-style")) {
-            KRTextStyleData ts;
+            KReportTextStyleData ts;
             if (parseReportTextStyleData(node.toElement(), &ts)) {
                 m_backgroundColor->setValue(ts.backgroundColor);
                 m_foregroundColor->setValue(ts.foregroundColor);
@@ -170,9 +170,9 @@ void KReportItemText::setBottomPadding(qreal bp)
     }
 }
 
-KRTextStyleData KReportItemText::textStyle() const
+KReportTextStyleData KReportItemText::textStyle() const
 {
-    KRTextStyleData d;
+    KReportTextStyleData d;
     d.backgroundColor = m_backgroundColor->value().value<QColor>();
     d.foregroundColor = m_foregroundColor->value().value<QColor>();
     d.font = m_font->value().value<QFont>();

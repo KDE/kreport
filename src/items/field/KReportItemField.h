@@ -68,7 +68,7 @@ protected:
     QStringList fieldNames(const QString &);
 
     KReportLineStyle lineStyle() const;
-    KRTextStyleData textStyle() const;
+    KReportTextStyleData textStyle() const;
 
     int textFlags() const;
 

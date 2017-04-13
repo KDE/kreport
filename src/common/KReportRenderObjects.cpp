@@ -469,7 +469,7 @@ public:
     Private();
     ~Private();
     QString text;
-    KRTextStyleData textStyle;
+    KReportTextStyleData textStyle;
     KReportLineStyle lineStyle;
     Qt::Alignment alignment;
     int flags; // Qt::AlignmentFlag and Qt::TextFlag OR'd
@@ -510,7 +510,7 @@ void OROTextBox::setText(const QString & s)
     d->text = s;
 }
 
-void OROTextBox::setTextStyle(const KRTextStyleData & ts)
+void OROTextBox::setTextStyle(const KReportTextStyleData & ts)
 {
     d->textStyle = ts;
 }
@@ -570,7 +570,7 @@ QString OROTextBox::text() const
     return d->text;
 }
 
-KRTextStyleData OROTextBox::textStyle() const
+KReportTextStyleData OROTextBox::textStyle() const
 {
     return d->textStyle;
 }
