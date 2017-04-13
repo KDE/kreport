@@ -35,10 +35,6 @@ KReportItemCheckBox::KReportItemCheckBox()
 KReportItemCheckBox::KReportItemCheckBox(const QDomNode &element)
     : KReportItemCheckBox()
 {
-    QDomNodeList nl = element.childNodes();
-    QString n;
-    QDomNode node;
-
     nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
     m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
     setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
@@ -48,6 +44,9 @@ KReportItemCheckBox::KReportItemCheckBox(const QDomNode &element)
 
     parseReportRect(element.toElement());
 
+    QDomNodeList nl = element.childNodes();
+    QString n;
+    QDomNode node;
     for (int i = 0; i < nl.count(); i++) {
         node = nl.item(i);
         n = node.nodeName();

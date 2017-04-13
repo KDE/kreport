@@ -168,7 +168,9 @@ void KReportDesignerItemText::slotPropertyChanged(KPropertySet &s, KProperty &p)
     }
 
     KReportDesignerItemRectBase::propertyChanged(s, p);
-    if (designer()) designer()->setModified(true);
+    if (designer()) {
+        designer()->setModified(true);
+    }
 
     updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(),
                      QLatin1String("textarea"));

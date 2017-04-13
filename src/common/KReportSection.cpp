@@ -95,27 +95,6 @@ KReportSection::~KReportSection()
 {
 }
 
-#if 0
-void KReportSection::createProperties(const QDomElement & elemSource)
-{
-    m_set = new KPropertySet(/*this*/0, QLatin1String("Section"));
-
-    m_height = new KProperty("height", KReportUnit(KReportUnit::Centimeter).fromUserValue(2.0), tr("Height"));
-    m_backgroundColor = new KProperty("background-color", QColor(Qt::white), tr("Background Color"));
-    m_height->setOption("unit", QLatin1String("cm"));
-    if (!elemSource.isNull())
-        m_height->setValue(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:height"), QLatin1String("2.0cm"))));
-
-    m_set->addProperty(m_height);
-    m_set->addProperty(m_backgroundColor);
-}
-
-QString KReportSection::name() const
-{
-    return (objectName() + QLatin1Char('-') + sectionTypeString(m_type));
-}
-#endif
-
 qreal KReportSection::height() const
 {
     return d->height >= 0.0 ? d->height : KReportSection::defaultHeight();

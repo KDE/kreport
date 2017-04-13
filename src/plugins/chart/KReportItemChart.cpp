@@ -50,10 +50,6 @@ KReportItemChart::KReportItemChart()
 KReportItemChart::KReportItemChart(QDomNode *element)
     : KReportItemChart()
 {
-    QDomNodeList nl = element->childNodes();
-
-    QString n;
-    QDomNode node;
     QDomElement e = element->toElement();
     m_name->setValue(e.attribute("report:name"));
     m_dataSource->setValue(e.attribute("report:data-source"));

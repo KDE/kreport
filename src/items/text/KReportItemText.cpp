@@ -37,10 +37,6 @@ KReportItemText::KReportItemText()
 KReportItemText::KReportItemText(const QDomNode & element)
   : KReportItemText()
 {
-    QDomNodeList nl = element.childNodes();
-    QString n;
-    QDomNode node;
-
     nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
     m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
     m_itemValue->setValue(element.toElement().attribute(QLatin1String("report:value")));
@@ -51,6 +47,9 @@ KReportItemText::KReportItemText(const QDomNode & element)
 
     parseReportRect(element.toElement());
 
+    QDomNodeList nl = element.childNodes();
+    QString n;
+    QDomNode node;
     for (int i = 0; i < nl.count(); i++) {
         node = nl.item(i);
         n = node.nodeName();

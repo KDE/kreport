@@ -500,30 +500,6 @@ bool KReportUtils::parseReportLineStyleData(const QDomElement & elemSource, KRep
     return false;
 }
 
-#if 0
-bool KReportUtils::parseReportRect(const QDomElement & elemSource, KReportPosition *pos, KReportSize *size)
-{
-    Q_ASSERT(pos);
-    Q_ASSERT(size);
-//    QStringList sl;
-//    QDomNamedNodeMap map = elemSource.attributes();
-//    for (int i=0; i < map.count(); ++i ) {
-//        sl << map.item(i).nodeName();
-//    }
-    QPointF _pos;
-    QSizeF _siz;
-
-    _pos.setX(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:x"), QLatin1String("1cm"))));
-    _pos.setY(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:y"), QLatin1String("1cm"))));
-    _siz.setWidth(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:width"), QLatin1String("1cm"))));
-    _siz.setHeight(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:height"), QLatin1String("1cm"))));
-
-    pos->setPointPos(_pos);
-    size->setPointSize(_siz);
-    return true;
-}
-#endif
-
 class PageIds : private QHash<QString, QPageSize::PageSizeId>
 {
 public:

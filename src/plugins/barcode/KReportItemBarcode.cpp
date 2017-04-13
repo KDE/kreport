@@ -35,10 +35,6 @@ KReportItemBarcode::KReportItemBarcode()
 KReportItemBarcode::KReportItemBarcode(const QDomNode & element)
     : KReportItemBarcode()
 {
-    QDomNodeList nl = element.childNodes();
-    QString n;
-    QDomNode node;
-
     nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
     m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
     m_itemValue->setValue(element.toElement().attribute(QLatin1String("report:value")));

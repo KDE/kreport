@@ -33,10 +33,6 @@ KReportItemLabel::KReportItemLabel()
 KReportItemLabel::KReportItemLabel(const QDomNode & element)
     : KReportItemLabel()
 {
-    QDomNodeList nl = element.childNodes();
-    QString n;
-    QDomNode node;
-
     nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
     m_text->setValue(element.toElement().attribute(QLatin1String("report:caption")));
     setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
@@ -45,6 +41,9 @@ KReportItemLabel::KReportItemLabel(const QDomNode & element)
 
     parseReportRect(element.toElement());
 
+    QDomNodeList nl = element.childNodes();
+    QString n;
+    QDomNode node;
     for (int i = 0; i < nl.count(); i++) {
         node = nl.item(i);
         n = node.nodeName();
