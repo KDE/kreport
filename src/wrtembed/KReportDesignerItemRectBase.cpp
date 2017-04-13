@@ -316,13 +316,14 @@ QVariant KReportDesignerItemRectBase::itemChange(GraphicsItemChange change, cons
 void KReportDesignerItemRectBase::propertyChanged(const KPropertySet &s, const KProperty &p)
 {
     Q_UNUSED(s)
-
+    Q_UNUSED(p)
+#if 0
     if (p.name() == "position") {
-        item()->setPosition(p.value().toPointF()); //TODO dont update property
+        item()->setPosition(item()->unit().convertToPoint(p.value().toPointF())); //TODO dont update property
     } else if (p.name() == "size") {
-        item()->setSize(p.value().toSizeF()); //TODO dont update property
+        item()->setSize(item()->unit().convertToPoint(p.value().toSizeF())); //TODO dont update property
     }
-
+#endif
     setSceneRect(KReportItemBase::scenePosition(item()->position()), KReportItemBase::sceneSize(item()->size()), DontUpdateProperty);
 }
 
