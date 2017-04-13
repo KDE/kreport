@@ -54,8 +54,6 @@ private Q_SLOTS:
     void loadFinished(bool);
 
 private:
-    void init();
-
     bool m_rendering;
     OROPage *m_targetPage;
     OROSection *m_targetSection;

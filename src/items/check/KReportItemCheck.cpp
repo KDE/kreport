@@ -33,8 +33,8 @@ KReportItemCheckBox::KReportItemCheckBox()
 }
 
 KReportItemCheckBox::KReportItemCheckBox(const QDomNode &element)
+    : KReportItemCheckBox()
 {
-    createProperties();
     QDomNodeList nl = element.childNodes();
     QString n;
     QDomNode node;

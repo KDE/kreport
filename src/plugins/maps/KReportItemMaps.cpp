@@ -29,11 +29,6 @@
 
 //! @todo replace with ReportItemMaps(const QDomNode &element = QDomNode())
 KReportItemMaps::KReportItemMaps()
-    : KReportItemMaps(QDomNode())
-{
-}
-
-KReportItemMaps::KReportItemMaps(const QDomNode &element)
     : m_longtitude(0)
     , m_latitude(0)
     , m_zoom(1200)
@@ -45,7 +40,11 @@ KReportItemMaps::KReportItemMaps(const QDomNode &element)
     , m_zoomDataSetFromScript(false)
 {
     createProperties();
+}
 
+KReportItemMaps::KReportItemMaps(const QDomNode &element)
+    : KReportItemMaps()
+{
     nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
     m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
     setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());

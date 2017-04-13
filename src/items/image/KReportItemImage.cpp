@@ -31,8 +31,8 @@ KReportItemImage::KReportItemImage()
 }
 
 KReportItemImage::KReportItemImage(const QDomNode & element)
+    : KReportItemImage()
 {
-    createProperties();
     QDomNodeList nl = element.childNodes();
     QString n;
     QDomNode node;

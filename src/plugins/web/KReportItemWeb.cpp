@@ -32,16 +32,16 @@
 
 #include "kreportplugin_debug.h"
 
-KReportItemWeb::KReportItemWeb(): m_rendering(false)
+KReportItemWeb::KReportItemWeb() : m_rendering(false)
 {
     createProperties();
-    init();
+    m_webPage = new QWebPage();
+    connect(m_webPage, SIGNAL(loadFinished(bool)), this, SLOT(loadFinished(bool)));
 }
 
 KReportItemWeb::KReportItemWeb(const QDomNode &element)
+    : KReportItemWeb()
 {
-    createProperties();
-    init();
     QDomNodeList nl = element.childNodes();
     QString n;
     QDomNode node;
@@ -55,13 +55,6 @@ KReportItemWeb::KReportItemWeb(const QDomNode &element)
         node = nl.item(i);
         n = node.nodeName();
     }
-}
-
-void KReportItemWeb::init()
-{
-    m_webPage = new QWebPage();
-
-    connect(m_webPage, SIGNAL(loadFinished(bool)), this, SLOT(loadFinished(bool)));
 }
 
 void KReportItemWeb::createProperties()

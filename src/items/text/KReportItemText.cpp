@@ -29,17 +29,18 @@
 #include <QRegularExpression>
 
 KReportItemText::KReportItemText()
-    : KReportItemText(QDomNode())
+    : m_bottomPadding(0.0)
 {
+    createProperties();
 }
 
-KReportItemText::KReportItemText(const QDomNode & element) : m_bottomPadding(0.0)
+KReportItemText::KReportItemText(const QDomNode & element)
+  : KReportItemText()
 {
     QDomNodeList nl = element.childNodes();
     QString n;
     QDomNode node;
 
-    createProperties();
     nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
     m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
     m_itemValue->setValue(element.toElement().attribute(QLatin1String("report:value")));
