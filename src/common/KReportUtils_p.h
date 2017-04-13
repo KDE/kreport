@@ -19,27 +19,12 @@
 
 #ifndef KREPORTUTILS_P_H
 #define KREPORTUTILS_P_H
-#include <QApplication>
 
-#include <KConfigGroup>
-#include <KSharedConfig>
-#include <KMessageBox>
+#include "KReportUnit.h"
 
-#include <QCoreApplication>
-#include <QDir>
-#include <QFileInfo>
-#include <QRegularExpression>
-#include <QResource>
-#include <QStandardPaths>
-#include <QDebug>
-#include <QGlobalStatic>
 #include <QPageLayout>
-
-#ifdef Q_WS_X11
-#include <QX11Info>
-#else
-#include <QDesktopWidget>
-#endif
+#include <QRect>
+#include <QStandardPaths>
 
 
 // This is a private code made inline for use in the lib and examples.

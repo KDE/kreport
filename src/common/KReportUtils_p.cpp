@@ -21,6 +21,25 @@
 #include "KReportUtils_p.h"
 #include "config-kreport.h"
 
+#include <KConfigGroup>
+#include <KSharedConfig>
+#include <KMessageBox>
+
+#include <QApplication>
+#include <QDir>
+#include <QFileInfo>
+#include <QRegularExpression>
+#include <QResource>
+#include <QStandardPaths>
+#include <QDebug>
+#include <QGlobalStatic>
+
+#ifdef Q_WS_X11
+#include <QX11Info>
+#else
+#include <QDesktopWidget>
+#endif
+
 #ifdef Q_OS_WIN
 #define KPATH_SEPARATOR ';'
 #else
