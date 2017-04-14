@@ -230,6 +230,11 @@ KReportDesigner::KReportDesigner(QWidget * parent)
     changeSet(&d->set);
 }
 
+KReportDesigner::~KReportDesigner()
+{
+    delete d;
+}
+
 KReportDesigner::KReportDesigner(QWidget *parent, const QDomElement &data)
     : KReportDesigner(parent)
 {
