@@ -30,6 +30,7 @@
 #include <QScrollArea>
 #include <QLayout>
 #include <QPainter>
+#include <QPointer>
 #include <QPrintDialog>
 #include <QPrinter>
 #include <QGraphicsView>
@@ -41,8 +42,7 @@ class Q_DECL_HIDDEN KReportView::Private
 {
 public:
     explicit Private()
-        : reportDocument(0)
-        , reportPage(0)
+        : reportPage(0)
         , currentPage(1)
         , pageCount(0)
     {}
@@ -59,7 +59,7 @@ public:
         }
     }
 
-    ORODocument *reportDocument;
+    QPointer<ORODocument> reportDocument;
     QGraphicsView *reportView;
     QGraphicsScene *reportScene;
     KReportPage *reportPage;

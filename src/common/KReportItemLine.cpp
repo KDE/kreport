@@ -56,7 +56,7 @@ KReportItemLine::KReportItemLine(const QDomNode & element)
             if (parseReportLineStyleData(node.toElement(), &ls)) {
                 m_lineWeight->setValue(ls.weight());
                 m_lineColor->setValue(ls.color());
-                m_lineStyle->setValue(int(ls.penStyle()));
+                m_lineStyle->setValue(static_cast<int>(ls.penStyle()));
             }
         } else {
             kreportWarning() << "while parsing line element encountered unknown element: " << n;
@@ -76,7 +76,8 @@ void KReportItemLine::createProperties()
     m_lineWeight = new KProperty("line-weight", 1.0, tr("Line Weight"));
     m_lineWeight->setOption("step", 1.0);
     m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
-    m_lineStyle = new KProperty("line-style", (int)Qt::SolidLine, tr("Line Style"), QString(), KProperty::LineStyle);
+    m_lineStyle = new KProperty("line-style", static_cast<int>(Qt::SolidLine), tr("Line Style"),
+                                QString(), KProperty::LineStyle);
 
     //Remove the unused properies from KReportItemBase
     propertySet()->removeProperty("size");

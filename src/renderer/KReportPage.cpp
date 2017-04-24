@@ -23,10 +23,11 @@
 #include "KReportUtils_p.h"
 #include "kreport_debug.h"
 
-#include <QWidget>
-#include <QPixmap>
 #include <QPainter>
+#include <QPixmap>
+#include <QPointer>
 #include <QTimer>
+#include <QWidget>
 
 //! @internal
 class Q_DECL_HIDDEN KReportPage::Private
@@ -41,8 +42,8 @@ public:
         delete renderer;
     }
 
-    ORODocument *reportDocument;
-    int page = 0;
+    QPointer<ORODocument> reportDocument;
+    int page;
     QPixmap pixmap;
     KReportRendererFactory factory;
     KReportRendererBase *renderer;
