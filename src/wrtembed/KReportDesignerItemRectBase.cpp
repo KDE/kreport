@@ -234,7 +234,7 @@ void KReportDesignerItemRectBase::drawHandles(QPainter *painter)
   8 0 4
   7 6 5
 */
-int KReportDesignerItemRectBase::grabHandle(QPointF pos)
+int KReportDesignerItemRectBase::grabHandle(const QPointF &pos)
 {
     QRectF r = boundingRect();
     int halfW = (int)(r.width() / 2);

@@ -37,8 +37,9 @@ class KREPORT_EXPORT KReportDesignerSectionDetailGroup : public QObject
 {
     Q_OBJECT
 public:
-    KReportDesignerSectionDetailGroup(const QString &column, KReportDesignerSectionDetail *, QWidget * parent = 0);
-    ~KReportDesignerSectionDetailGroup();
+    KReportDesignerSectionDetailGroup(const QString &column, KReportDesignerSectionDetail *rsd,
+                                      QWidget *parent = nullptr);
+    ~KReportDesignerSectionDetailGroup() override;
 
     enum PageBreak {
         BreakNone = 0,

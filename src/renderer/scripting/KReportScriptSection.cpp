@@ -92,7 +92,7 @@ QObject* Section::objectByName(const QString& n)
             return objectByNumber(i);
         }
     }
-    return 0;
+    return nullptr;
 }
 
 void Section::initialize(const QJSValue &s)

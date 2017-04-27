@@ -31,16 +31,18 @@ class KReportDesignerItemCheckBox : public KReportItemCheckBox, public KReportDe
 {
     Q_OBJECT
 public:
-    KReportDesignerItemCheckBox(KReportDesigner *, QGraphicsScene * scene, const QPointF &pos);
-    KReportDesignerItemCheckBox(const QDomNode & element, KReportDesigner *, QGraphicsScene * scene);
+    KReportDesignerItemCheckBox(KReportDesigner *designer, QGraphicsScene *scene,
+                                const QPointF &pos);
+    KReportDesignerItemCheckBox(const QDomNode &element, KReportDesigner *designer,
+                                QGraphicsScene *scene);
 
-    virtual ~KReportDesignerItemCheckBox();
+    ~KReportDesignerItemCheckBox() override;
 
-    virtual void buildXML(QDomDocument *doc, QDomElement *parent);
+    void buildXML(QDomDocument *doc, QDomElement *parent) override;
 
-    virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = 0);
+    void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = nullptr) override;
 
-    virtual KReportDesignerItemCheckBox* clone();
+    KReportDesignerItemCheckBox* clone() override;
 
 private:
     void init(QGraphicsScene *scene);
@@ -49,7 +51,7 @@ private Q_SLOTS:
     void slotPropertyChanged(KPropertySet &, KProperty &);
 
 protected:
-    virtual void mousePressEvent(QGraphicsSceneMouseEvent * event);
+    void mousePressEvent(QGraphicsSceneMouseEvent * event) override;
 };
 
 #endif // KREPORTDESIGNERITEMCHECK_H

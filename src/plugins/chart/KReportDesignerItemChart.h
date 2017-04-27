@@ -27,19 +27,20 @@ class KReportDesignerItemChart : public KReportItemChart, public KReportDesigner
 {
     Q_OBJECT
 public:
-    KReportDesignerItemChart(KoReportDesigner *, QGraphicsScene* scene, const QPointF &pos);
-    KReportDesignerItemChart(QDomNode *element, KoReportDesigner *, QGraphicsScene* scene);
+    KReportDesignerItemChart(KoReportDesigner *designer, QGraphicsScene *scene, const QPointF &pos);
+    KReportDesignerItemChart(QDomNode *element, KoReportDesigner *designer, QGraphicsScene *scene);
+    ~KReportDesignerItemChart() override;
 
-    virtual ~KReportDesignerItemChart();
-    virtual void buildXML(QDomDocument *doc, QDomElement *parent);
-    virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = 0);
-    virtual KReportDesignerItemChart* clone();
+    void buildXML(QDomDocument *doc, QDomElement *parent) override;
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
+               QWidget *widget = nullptr) override;
+    KReportDesignerItemChart *clone() override;
 
 protected:
-    virtual void mousePressEvent(QGraphicsSceneMouseEvent * event);
+    void mousePressEvent(QGraphicsSceneMouseEvent *event) override;
 
 private:
-    void init(QGraphicsScene*, KoReportDesigner *d);
+    void init(QGraphicsScene* scene, KoReportDesigner *d);
 
 private Q_SLOTS:
     void slotPropertyChanged(KPropertySet &, KProperty &);

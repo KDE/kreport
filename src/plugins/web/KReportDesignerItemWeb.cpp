@@ -65,7 +65,7 @@ KReportDesignerItemWeb *KReportDesignerItemWeb::clone()
     QDomNode n;
     buildXML(&d, &e);
     n = e.firstChild();
-    return new KReportDesignerItemWeb(n, designer(), 0);
+    return new KReportDesignerItemWeb(n, designer(), nullptr);
 }
 
 KReportDesignerItemWeb::~KReportDesignerItemWeb() //done,compared

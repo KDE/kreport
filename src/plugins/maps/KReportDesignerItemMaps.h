@@ -30,16 +30,18 @@ class KReportDesignerItemMaps : public KReportItemMaps, public KReportDesignerIt
 {
   Q_OBJECT
 public:
-    KReportDesignerItemMaps(KReportDesigner *, QGraphicsScene* scene, const QPointF &pos);
-    KReportDesignerItemMaps(const QDomNode &element, KReportDesigner *, QGraphicsScene* scene);
+    KReportDesignerItemMaps(KReportDesigner *designer, QGraphicsScene *scene, const QPointF &pos);
+    KReportDesignerItemMaps(const QDomNode &element, KReportDesigner *designer,
+                            QGraphicsScene *scene);
+    ~KReportDesignerItemMaps() override;
 
-    virtual ~KReportDesignerItemMaps();
-    virtual void buildXML(QDomDocument *doc, QDomElement *parent);
-    virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = 0);
-    virtual KReportDesignerItemMaps* clone();
+    void buildXML(QDomDocument *doc, QDomElement *parent) override;
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
+               QWidget *widget = nullptr) override;
+    KReportDesignerItemMaps *clone() override;
 
 protected:
-    virtual void mousePressEvent(QGraphicsSceneMouseEvent * event);
+    void mousePressEvent(QGraphicsSceneMouseEvent * event) override;
 
 private:
     void init(QGraphicsScene *scene);

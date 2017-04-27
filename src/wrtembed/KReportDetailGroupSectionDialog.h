@@ -28,8 +28,8 @@ class KReportDetailGroupSectionDialog : public QDialog, public Ui::DetailGroupSe
     Q_OBJECT
 
 public:
-    explicit KReportDetailGroupSectionDialog(QWidget* parent = 0);
-    ~KReportDetailGroupSectionDialog();
+    explicit KReportDetailGroupSectionDialog(QWidget* parent = nullptr);
+    ~KReportDetailGroupSectionDialog() override;
 };
 
 #endif // DETAILGROUPSECTIONDIALOG_H

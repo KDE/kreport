@@ -32,16 +32,17 @@ class KReportDesignerItemText : public KReportItemText, public KReportDesignerIt
 {
   Q_OBJECT
 public:
-    KReportDesignerItemText(KReportDesigner *, QGraphicsScene * scene, const QPointF &pos);
-    KReportDesignerItemText(const QDomNode & element, KReportDesigner *, QGraphicsScene * scene);
-    virtual ~KReportDesignerItemText();
+    KReportDesignerItemText(KReportDesigner *designer, QGraphicsScene *scene, const QPointF &pos);
+    KReportDesignerItemText(const QDomNode &element, KReportDesigner *designer,
+                            QGraphicsScene *scene);
+    ~KReportDesignerItemText() override;
 
-    virtual void buildXML(QDomDocument *doc, QDomElement *parent);
-    virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = 0);
-    virtual KReportDesignerItemText* clone();
+    void buildXML(QDomDocument *doc, QDomElement *parent) override;
+    void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = nullptr) override;
+    KReportDesignerItemText* clone() override;
 
 protected:
-    virtual void mousePressEvent(QGraphicsSceneMouseEvent * event);
+    void mousePressEvent(QGraphicsSceneMouseEvent * event) override;
 
 private:
     QRect getTextRect() const;

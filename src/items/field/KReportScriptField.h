@@ -35,7 +35,7 @@ class Field : public QObject
 public:
     explicit Field(KReportItemField*);
 
-    ~Field();
+    ~Field() override;
 
 public Q_SLOTS:
     //!Returns the source (column) that the field gets its data from*

@@ -56,7 +56,7 @@ KReportDesignerItemBase::KReportDesignerItemBase(KReportDesigner *r, KReportItem
 
 void KReportDesignerItemBase::buildXML(QGraphicsItem * item, QDomDocument *doc, QDomElement *parent)
 {
-    KReportDesignerItemBase *re = 0;
+    KReportDesignerItemBase *re = nullptr;
     re = dynamic_cast<KReportDesignerItemBase*>(item);
 
     if (re) {

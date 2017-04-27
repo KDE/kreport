@@ -59,8 +59,9 @@ public:
     static void addPropertyAsAttribute(QDomElement* e, KProperty* p);
 
 protected:
-    explicit KReportDesignerItemBase(KReportDesigner*, KReportItemBase*);
-    QString dataSourceAndObjectTypeName(const QString& dataSource, const QString& objectTypeName) const;
+    explicit KReportDesignerItemBase(KReportDesigner *r, KReportItemBase *);
+    QString dataSourceAndObjectTypeName(const QString &dataSource,
+                                        const QString &objectTypeName) const;
 
     /**
      * @brief Updates the text that is shown for the item in the report designer

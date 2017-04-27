@@ -239,7 +239,7 @@ def insert_operator_neq():
 def insert_clone():
     global outfile, shared_class_name, shared_class_options, superclass
     line = """    //! Clones the object with all attributes; the copy isn't shared with the original.
-    virtual %s clone() const%s""" % (shared_class_name, 'Q_DECL_OVERRIDE ' if superclass else '')
+    virtual %s clone() const%s""" % (shared_class_name, 'override ' if superclass else '')
     custom_clone = False; # not needed I guess: shared_class_options['custom_clone']
     if custom_clone:
         line += """;
@@ -303,7 +303,7 @@ def insert_generated_code(context):
         //! Clones the object with all attributes; the copy isn't shared with the original.
         virtual %sData* clone() const""" % ((superclass + '::') if superclass else ''))
     if superclass:
-        outfile.write(' Q_DECL_OVERRIDE')
+        outfile.write(' override')
     if shared_class_options['custom_clone']:
         outfile.write(""";
 

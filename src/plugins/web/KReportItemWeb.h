@@ -44,11 +44,11 @@ class KReportItemWeb : public KReportAsyncItemBase
 public:
     KReportItemWeb();
     explicit KReportItemWeb(const QDomNode &element);
-    virtual ~KReportItemWeb();
+    ~KReportItemWeb() override;
 
-    virtual QString typeName() const;
-    virtual int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset, const QVariant &data, KReportScriptHandler *script);
-    virtual QString itemDataSource() const;
+    QString typeName() const override;
+    int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset, const QVariant &data, KReportScriptHandler *script) override;
+    QString itemDataSource() const override;
 
 private Q_SLOTS:
     void loadFinished(bool);
@@ -60,7 +60,7 @@ private:
     QPointF m_targetOffset;
 
 protected:
-    virtual void createProperties();
+    void createProperties() override;
 
     KProperty *m_controlSource;
     QWebPage *m_webPage;

@@ -47,7 +47,7 @@ class Section : public QObject
 public:
     explicit Section(KReportSectionData*);
 
-    ~Section();
+    ~Section() override;
 
 public Q_SLOTS:
     //! @return the background color of the section

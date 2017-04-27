@@ -38,20 +38,20 @@ class OneRecordDataSource :  public KReportDataSource
 {
 public:
     OneRecordDataSource();
-    ~OneRecordDataSource();
-    virtual QVariant value(const QString& field) const;
-    virtual QVariant value(int fieldNum) const;
-    virtual QStringList fieldNames() const;
-    virtual int fieldNumber(const QString& field) const;
-    virtual qint64 recordCount() const;
-    virtual qint64 at() const;
-    virtual bool moveLast();
-    virtual bool moveFirst();
-    virtual bool movePrevious();
-    virtual bool moveNext();
-    virtual bool close();
-    virtual bool open();
-    virtual QStringList dataSourceNames() const;
+    ~OneRecordDataSource() override;
+    QVariant value(const QString &field) const override;
+    QVariant value(int fieldNum) const override;
+    QStringList fieldNames() const override;
+    int fieldNumber(const QString &field) const override;
+    qint64 recordCount() const override;
+    qint64 at() const override;
+    bool moveLast() override;
+    bool moveFirst() override;
+    bool movePrevious() override;
+    bool moveNext() override;
+    bool close() override;
+    bool open() override;
+    QStringList dataSourceNames() const override;
 };
 }
 

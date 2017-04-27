@@ -28,7 +28,7 @@ class KReportPropertiesButton : public QCheckBox
 public:
     explicit KReportPropertiesButton(QWidget*);
 protected:
-    virtual void paintEvent(QPaintEvent*);
+    void paintEvent(QPaintEvent*) override;
 };
 
 #endif // REPORTPROPERTIESBUTTON_H

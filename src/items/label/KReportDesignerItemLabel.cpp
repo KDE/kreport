@@ -66,7 +66,7 @@ KReportDesignerItemLabel::KReportDesignerItemLabel(KReportDesigner* d, QGraphics
 }
 
 KReportDesignerItemLabel::KReportDesignerItemLabel(const QDomNode & element, KReportDesigner * d, QGraphicsScene * s)
-        : KReportItemLabel(element), KReportDesignerItemRectBase(d, this), m_inlineEdit(0)
+        : KReportItemLabel(element), KReportDesignerItemRectBase(d, this), m_inlineEdit(nullptr)
 {
     init(s);
     setSceneRect(KReportItemBase::scenePosition(item()->position()), KReportItemBase::sceneSize(item()->size()));
@@ -79,7 +79,7 @@ KReportDesignerItemLabel* KReportDesignerItemLabel::clone()
     QDomNode n;
     buildXML(&d, &e);
     n = e.firstChild();
-    return new KReportDesignerItemLabel(n, designer(), 0);
+    return new KReportDesignerItemLabel(n, designer(), nullptr);
 }
 
 // methods (deconstructor)

@@ -54,7 +54,7 @@ class KREPORT_EXPORT KReportPluginManager : public QObject
 
         KReportPluginManager();
 
-        ~KReportPluginManager();
+        ~KReportPluginManager() override;
 
         Q_DISABLE_COPY(KReportPluginManager)
         class Private;

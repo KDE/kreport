@@ -69,7 +69,7 @@ KReportDesignerItemBarcode* KReportDesignerItemBarcode::clone()
     QDomNode n;
     buildXML(&d, &e);
     n = e.firstChild();
-    return new KReportDesignerItemBarcode(n, designer(), 0);
+    return new KReportDesignerItemBarcode(n, designer(), nullptr);
 }
 
 // methods (deconstructor)

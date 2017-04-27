@@ -53,19 +53,19 @@ public:
     @brief Constructor that create a blank designer
     @param widget QWidget parent
     */
-    explicit KReportDesigner(QWidget *parent = 0);
+    explicit KReportDesigner(QWidget *parent = nullptr);
 
     /**
     @brief Constructor that create a designer, and loads the report described in the QDomElement
     @param widget QWidget parent
     @param element Report structure XML element
     */
-    KReportDesigner(QWidget *, const QDomElement &data);
+    KReportDesigner(QWidget *parent, const QDomElement &data);
 
     /**
     @brief Desctructor
     */
-    ~KReportDesigner();
+    ~KReportDesigner() override;
 
     /**
     @brief Sets the report data
@@ -180,7 +180,7 @@ public:
     /**
     @brief Give a hint on the size of the widget
     */
-    virtual QSize sizeHint() const;
+    QSize sizeHint() const override;
 
     /**
     @brief Return the current unit assigned to the report
@@ -191,14 +191,14 @@ public:
     @brief Handle the context menu event for a report section
     @param scene The associated scene (section)
     */
-    void sectionContextMenuEvent(KReportDesignerSectionScene *, QGraphicsSceneContextMenuEvent * e);
+    void sectionContextMenuEvent(KReportDesignerSectionScene *s, QGraphicsSceneContextMenuEvent * e);
 
     /**
     @brief Handle the mouse release event for a report section
     */
-    void sectionMouseReleaseEvent(KReportDesignerSectionView *, QMouseEvent * e);
+    void sectionMouseReleaseEvent(KReportDesignerSectionView *v, QMouseEvent * e);
 
-    void sectionMousePressEvent(KReportDesignerSectionView *, QMouseEvent * e);
+    void sectionMousePressEvent(KReportDesignerSectionView *v, QMouseEvent * e);
 
     /**
     @brief Sets the property set for the currently selected item
@@ -226,13 +226,13 @@ public:
     /**
     @brief Checks if the supplied name is unique among all entities
     */
-    bool isEntityNameUnique(const QString &, KReportItemBase* = 0) const;
+    bool isEntityNameUnique(const QString &, KReportItemBase* = nullptr) const;
 
     /**
     @brief Returns a list of actions that represent the entities that can be inserted into the report.
     Actions are created as children of @a group and belong to the group.
     @return list of actions */
-    static QList<QAction*> itemActions(QActionGroup* group = 0);
+    static QList<QAction*> itemActions(QActionGroup* group = nullptr);
 
     /**
     @brief Populates the toolbar with actions that can be applied to the report
@@ -311,7 +311,7 @@ private:
     */
     void deleteDetail();
 
-    virtual void resizeEvent(QResizeEvent * event);
+    void resizeEvent(QResizeEvent * event) override;
 
     //Properties
     void createProperties();

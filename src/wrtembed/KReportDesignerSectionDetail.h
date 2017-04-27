@@ -38,7 +38,7 @@ class KREPORT_EXPORT KReportDesignerSectionDetail : public QWidget
     Q_OBJECT
 public:
     explicit KReportDesignerSectionDetail(KReportDesigner * rptdes);
-    virtual ~KReportDesignerSectionDetail();
+    ~KReportDesignerSectionDetail() override;
 
     enum PageBreak {
         BreakNone = 0,
@@ -60,7 +60,7 @@ public:
     void insertGroupSection(int idx, KReportDesignerSectionDetailGroup * rsd);
     int indexOfGroupSection(const QString & column) const;
     void removeGroupSection(int idx, bool del = false);
-    virtual QSize sizeHint() const;
+    QSize sizeHint() const override;
 
     void setSectionCursor(const QCursor&);
     void unsetSectionCursor();

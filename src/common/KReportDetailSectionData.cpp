@@ -27,7 +27,7 @@ KReportDetailSectionData::KReportDetailSectionData(QObject *parent)
  : QObject(parent)
 {
     m_pageBreak = BreakNone;
-    m_detailSection = 0;
+    m_detailSection = nullptr;
     m_valid = true;
 }
 
@@ -35,7 +35,7 @@ KReportDetailSectionData::KReportDetailSectionData(const QDomElement &elemSource
  : QObject(report)
 {
     m_pageBreak = BreakNone;
-    m_detailSection = 0;
+    m_detailSection = nullptr;
     m_valid = false;
     //kreportDebug() << elemSource.tagName();
     if (elemSource.tagName() != QLatin1String("report:detail")) {
@@ -117,7 +117,7 @@ KReportDetailGroupSectionData::KReportDetailGroupSectionData()
 {
     m_pagebreak = BreakNone;
     m_sort = Qt::AscendingOrder;
-    m_groupHeader = 0;
-    m_groupFooter = 0;
+    m_groupHeader = nullptr;
+    m_groupFooter = nullptr;
 }
 

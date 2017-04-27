@@ -80,11 +80,11 @@ const OROPage * ORODocument::page(int index) const
 
 void ORODocument::addPage(OROPage* p)
 {
-    if (p == 0) {
+    if (p == nullptr) {
         return;
     }
 
-    if (p->document() != 0 && p->document() != this) {
+    if (p->document() != nullptr && p->document() != this) {
         return;
     }
 
@@ -105,10 +105,10 @@ const OROSection * ORODocument::section(int index) const
 
 void ORODocument::addSection(OROSection* s)
 {
-    if (s == 0)
+    if (s == nullptr)
         return;
 
-    if (s->document() != 0 && s->document() != this) {
+    if (s->document() != nullptr && s->document() != this) {
         return;
     }
     s->setDocument(this);
@@ -229,7 +229,7 @@ const OROPrimitive * OROPage::primitive(int index) const
 void OROPage::insertPrimitive(OROPrimitive* p, int index)
 {
     //kreportDebug() << "Adding primitive" << p->type() << "to page" << page();
-    if (p == 0)
+    if (p == nullptr)
         return;
 
     p->setPage(this);
@@ -334,7 +334,7 @@ const OROPrimitive * OROSection::primitive(int index) const
 
 void OROSection::addPrimitive(OROPrimitive* primitive)
 {
-    if (primitive == 0)
+    if (primitive == nullptr)
         return;
 
     d->primitives.append(primitive);

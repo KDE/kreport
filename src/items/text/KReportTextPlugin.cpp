@@ -59,7 +59,7 @@ QObject* KReportTextPlugin::createScriptInstance(KReportItemBase* item)
     if (text) {
         return new Scripting::Text(text);
     }
-    return 0;
+    return nullptr;
 }
 #endif
 

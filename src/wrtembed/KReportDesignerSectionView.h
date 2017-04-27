@@ -27,17 +27,18 @@ class KReportDesignerSectionView : public QGraphicsView
 {
     Q_OBJECT
 public:
-    KReportDesignerSectionView(KReportDesigner *, QGraphicsScene * scene, QWidget * parent = 0);
-    virtual ~KReportDesignerSectionView();
+    KReportDesignerSectionView(KReportDesigner *designer, QGraphicsScene *scene,
+                               QWidget *parent = nullptr);
+    ~KReportDesignerSectionView() override;
 
     KReportDesigner * designer() const;
-    virtual QSize sizeHint() const;
+    QSize sizeHint() const override;
 public Q_SLOTS:
     void resizeContents(const QSize&);
 
 protected:
-    void mousePressEvent(QMouseEvent * e);
-    void mouseReleaseEvent(QMouseEvent * e);
+    void mousePressEvent(QMouseEvent * e) override;
+    void mouseReleaseEvent(QMouseEvent * e) override;
 
 private:
     KReportDesigner* m_reportDesigner;

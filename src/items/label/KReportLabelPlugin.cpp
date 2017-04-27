@@ -100,7 +100,7 @@ QObject* KReportLabelPlugin::createScriptInstance(KReportItemBase *item)
     if (label) {
         return new Scripting::Label(label);
     }
-    return 0;
+    return nullptr;
 }
 #endif
 

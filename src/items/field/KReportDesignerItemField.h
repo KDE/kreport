@@ -31,18 +31,19 @@ class KReportDesignerItemField : public KReportItemField, public KReportDesigner
 {
   Q_OBJECT
 public:
-    //Used when creating new basic field
-    KReportDesignerItemField(KReportDesigner *, QGraphicsScene * scene, const QPointF &pos);
-    //Used when loading from file
-    KReportDesignerItemField(const QDomNode & element, KReportDesigner *, QGraphicsScene * scene);
-    virtual ~KReportDesignerItemField();
-    virtual void buildXML(QDomDocument *doc, QDomElement *parent);
+    // Used when creating new basic field
+    KReportDesignerItemField(KReportDesigner *designer, QGraphicsScene *scene, const QPointF &pos);
+    // Used when loading from file
+    KReportDesignerItemField(const QDomNode &element, KReportDesigner *designer,
+                             QGraphicsScene *scene);
+    ~KReportDesignerItemField() override;
+    void buildXML(QDomDocument *doc, QDomElement *parent) override;
 
-    virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget *widget = 0);
-    virtual KReportDesignerItemField* clone();
+    void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget *widget = nullptr) override;
+    KReportDesignerItemField* clone() override;
 
 protected:
-    virtual void mousePressEvent(QGraphicsSceneMouseEvent * event);
+    void mousePressEvent(QGraphicsSceneMouseEvent * event) override;
 
 private:
     void init(QGraphicsScene *scene);

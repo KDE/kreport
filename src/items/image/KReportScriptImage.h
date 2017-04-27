@@ -38,7 +38,7 @@ class Image : public QObject
 public:
     explicit Image(KReportItemImage *);
 
-    ~Image();
+    ~Image() override;
 public Q_SLOTS:
 
 

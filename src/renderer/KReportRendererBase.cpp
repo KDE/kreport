@@ -150,5 +150,5 @@ KReportRendererBase* KReportRendererFactory::createInstance(const QString& key)
         return new KReportOdtFrameReportRenderer();
     }
 #endif
-    return 0;
+    return nullptr;
 }

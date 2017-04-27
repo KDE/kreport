@@ -36,7 +36,7 @@ class AsyncItemManager : public QObject
 
 public:
     explicit AsyncItemManager(QObject *parent);
-    virtual ~AsyncItemManager();
+    ~AsyncItemManager() override;
 
     void addItem(KReportAsyncItemBase *item, OROPage *page, OROSection *section, QPointF offset, QVariant data, KReportScriptHandler *script);
 

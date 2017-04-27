@@ -40,7 +40,7 @@ class ReportDesignerWidget : public QScrollArea
 
 public:
     ReportDesignerWidget(QWidget *parent = nullptr);
-    ~ReportDesignerWidget();
+    ~ReportDesignerWidget() override;
 
     //! Creates main toolbar for main window @a mainWindow
     //! @a mainWindow is required. To be called once.

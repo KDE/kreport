@@ -36,12 +36,13 @@ Q_OBJECT
 public:
     KReportItemLine();
     explicit KReportItemLine(const QDomNode & element);
-    ~KReportItemLine();
+    ~KReportItemLine() override;
 
-    virtual QString typeName() const;
-    virtual int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset, const QVariant &data, KReportScriptHandler *script);
+    QString typeName() const override;
+    int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset,
+                         const QVariant &data, KReportScriptHandler *script) override;
 
-    virtual void setUnit(const KReportUnit&);
+    void setUnit(const KReportUnit&) override;
 
     QPointF startPosition() const;
     QPointF endPosition() const;
@@ -58,7 +59,7 @@ protected:
     void setWeight(qreal w);
 
 private:
-    virtual void createProperties();
+    void createProperties() override;
 
     friend class Scripting::Line;
 };

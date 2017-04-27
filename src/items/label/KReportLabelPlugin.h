@@ -28,17 +28,21 @@ class KReportLabelPlugin : public KReportPluginInterface
 {
     Q_OBJECT
 public:
-    explicit KReportLabelPlugin(QObject *parent = 0, const QVariantList &args = QVariantList());
+    explicit KReportLabelPlugin(QObject *parent = nullptr,
+                                const QVariantList &args = QVariantList());
 
-    virtual ~KReportLabelPlugin();
+    ~KReportLabelPlugin() override;
 
-    virtual QObject* createRendererInstance(const QDomNode&);
-    virtual QObject* createDesignerInstance(KReportDesigner* , QGraphicsScene* scene, const QPointF&);
-    virtual QObject* createDesignerInstance(const QDomNode & element, KReportDesigner *, QGraphicsScene * scene);
-    virtual KReportElement createElement() Q_DECL_OVERRIDE;
-    virtual bool loadElement(KReportElement *el, const QDomElement &dom, KReportDesignReadingStatus *status) Q_DECL_OVERRIDE;
+    QObject *createRendererInstance(const QDomNode &) override;
+    QObject *createDesignerInstance(KReportDesigner *designer, QGraphicsScene *scene,
+                                    const QPointF &) override;
+    QObject *createDesignerInstance(const QDomNode &element, KReportDesigner *designer,
+                                    QGraphicsScene *scene) override;
+    KReportElement createElement() override;
+    bool loadElement(KReportElement *el, const QDomElement &dom,
+                     KReportDesignReadingStatus *status) override;
 #ifdef KREPORT_SCRIPTING
-    virtual QObject* createScriptInstance(KReportItemBase* item);
+    QObject *createScriptInstance(KReportItemBase *item) override;
 #endif
 };
 

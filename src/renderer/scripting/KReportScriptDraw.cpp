@@ -24,7 +24,7 @@
 KReportScriptDraw::KReportScriptDraw(QObject *parent)
         : QObject(parent)
 {
-    m_curPage = 0;
+    m_curPage = nullptr;
 }
 
 

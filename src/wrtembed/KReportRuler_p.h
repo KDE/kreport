@@ -44,7 +44,7 @@ public:
      */
     KReportRuler(QWidget* parent, Qt::Orientation orientation,
                  const KReportZoomHandler &zoomHandler);
-    ~KReportRuler();
+    ~KReportRuler() override;
 
     /// For paragraphs each tab definition is represented by this struct.
     struct Tab {
@@ -89,10 +89,10 @@ public:
     QList<QAction*> popupActionList() const;
 
     /// reimplemented
-    virtual QSize minimumSizeHint() const;
+    QSize minimumSizeHint() const override;
 
     /// reimplemented
-    virtual QSize sizeHint() const;
+    QSize sizeHint() const override;
 
     class Private;
 
@@ -249,13 +249,13 @@ Q_SIGNALS:
 
 protected:
     /// reimplemented
-    virtual void paintEvent(QPaintEvent* event);
+    void paintEvent(QPaintEvent* event) override;
     /// reimplemented
-    virtual void mousePressEvent(QMouseEvent *ev);
+    void mousePressEvent(QMouseEvent *ev) override;
     /// reimplemented
-    virtual void mouseReleaseEvent(QMouseEvent *ev);
+    void mouseReleaseEvent(QMouseEvent *ev) override;
     /// reimplemented
-    virtual void mouseMoveEvent(QMouseEvent *ev);
+    void mouseMoveEvent(QMouseEvent *ev) override;
 
 private:
     Private * const d;

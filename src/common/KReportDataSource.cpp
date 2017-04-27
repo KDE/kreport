@@ -159,5 +159,5 @@ QString KReportDataSource::dataSourceCaption(const QString &dataSourceName) cons
 KReportDataSource* KReportDataSource::create(const QString &source) const
 {
     Q_UNUSED(source);
-    return 0;
+    return nullptr;
 }

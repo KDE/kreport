@@ -41,13 +41,13 @@ class RulerTabChooser : public QWidget
 {
 public:
     RulerTabChooser(QWidget *parent) : QWidget(parent), m_type(QTextOption::LeftTab), m_showTabs(false) {}
-    virtual ~RulerTabChooser() {}
+    ~RulerTabChooser() override {}
 
     inline QTextOption::TabType type() {return m_type;}
     void setShowTabs(bool showTabs) { if (m_showTabs == showTabs) return; m_showTabs = showTabs; update(); }
-    void mousePressEvent(QMouseEvent *);
+    void mousePressEvent(QMouseEvent *) override;
 
-    void paintEvent(QPaintEvent *);
+    void paintEvent(QPaintEvent *) override;
 
 private:
     QTextOption::TabType m_type;
@@ -106,11 +106,11 @@ class HorizontalPaintingStrategy : public PaintingStrategy
 public:
     HorizontalPaintingStrategy() : lengthInPixel(1) {}
 
-    virtual QRectF drawBackground(const KReportRuler::Private *ruler, QPainter *painter);
-    virtual void drawTabs(const KReportRuler::Private *ruler, QPainter *painter);
-    virtual void drawMeasurements(const KReportRuler::Private *ruler, QPainter *painter, const QRectF &rectangle);
-    virtual void drawIndents(const KReportRuler::Private *ruler, QPainter *painter);
-    virtual QSize sizeHint();
+    QRectF drawBackground(const KReportRuler::Private *ruler, QPainter *painter) override;
+    void drawTabs(const KReportRuler::Private *ruler, QPainter *painter) override;
+    void drawMeasurements(const KReportRuler::Private *ruler, QPainter *painter, const QRectF &rectangle) override;
+    void drawIndents(const KReportRuler::Private *ruler, QPainter *painter) override;
+    QSize sizeHint() override;
 
 private:
     qreal lengthInPixel;
@@ -123,11 +123,11 @@ class VerticalPaintingStrategy : public PaintingStrategy
 public:
     VerticalPaintingStrategy() : lengthInPixel(1) {}
 
-    virtual QRectF drawBackground(const KReportRuler::Private *ruler, QPainter *painter);
-    virtual void drawTabs(const KReportRuler::Private *, QPainter *) {}
-    virtual void drawMeasurements(const KReportRuler::Private *ruler, QPainter *painter, const QRectF &rectangle);
-    virtual void drawIndents(const KReportRuler::Private *, QPainter *) { }
-    virtual QSize sizeHint();
+    QRectF drawBackground(const KReportRuler::Private *ruler, QPainter *painter) override;
+    void drawTabs(const KReportRuler::Private *, QPainter *) override {}
+    void drawMeasurements(const KReportRuler::Private *ruler, QPainter *painter, const QRectF &rectangle) override;
+    void drawIndents(const KReportRuler::Private *, QPainter *) override {}
+    QSize sizeHint() override;
 
 private:
     qreal lengthInPixel;
@@ -138,7 +138,7 @@ class HorizontalDistancesPaintingStrategy : public HorizontalPaintingStrategy
 public:
     HorizontalDistancesPaintingStrategy() {}
 
-    virtual void drawMeasurements(const KReportRuler::Private *ruler, QPainter *painter, const QRectF &rectangle);
+    void drawMeasurements(const KReportRuler::Private *ruler, QPainter *painter, const QRectF &rectangle) override;
 
 private:
     void drawDistanceLine(const KReportRuler::Private *d, QPainter *painter, qreal start, qreal end);
@@ -220,8 +220,8 @@ public:
     qreal numberStepForUnit() const;
     /// @return The rounding of value to the nearest multiple of stepValue
     qreal doSnapping(qreal value) const;
-    Selection selectionAtPosition(const QPoint & pos, int *selectOffset = 0);
-    int hotSpotIndex(const QPoint & pos);
+    Selection selectionAtPosition(const QPoint &pos, int *selectOffset = nullptr);
+    int hotSpotIndex(const QPoint &pos);
     qreal effectiveActiveRangeStart() const;
     qreal effectiveActiveRangeEnd() const;
 
@@ -884,7 +884,7 @@ KReportRuler::Private::Private(KReportRuler *parent,
     rightToLeft(false),
     selected(None),
     selectOffset(0),
-    tabChooser(0),
+    tabChooser(nullptr),
     normalPaintingStrategy(o == Qt::Horizontal ?
             (PaintingStrategy*)new HorizontalPaintingStrategy() : (PaintingStrategy*)new VerticalPaintingStrategy()),
     distancesPaintingStrategy((PaintingStrategy*)new HorizontalDistancesPaintingStrategy()),
@@ -1011,7 +1011,7 @@ void KReportRuler::Private::emitTabChanged()
     KReportRuler::Tab tab;
     if (currentIndex >= 0)
         tab = tabs[currentIndex];
-    emit ruler->tabChanged(originalIndex, currentIndex >= 0 ? &tab : 0);
+    emit ruler->tabChanged(originalIndex, currentIndex >= 0 ? &tab : nullptr);
 }
 
 
@@ -1170,7 +1170,7 @@ qreal KReportRuler::endIndent() const
 
 QWidget *KReportRuler::tabChooser()
 {
-    if ((d->tabChooser == 0) && (d->orientation == Qt::Horizontal)) {
+    if ((d->tabChooser == nullptr) && (d->orientation == Qt::Horizontal)) {
         d->tabChooser = new RulerTabChooser(parentWidget());
         d->tabChooser->setShowTabs(d->showTabs);
     }

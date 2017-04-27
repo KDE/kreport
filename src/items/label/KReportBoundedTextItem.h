@@ -37,8 +37,8 @@ class BoundedTextItem : public QGraphicsTextItem
 
 public:
     explicit BoundedTextItem(QGraphicsItem *parent);
-    virtual QRectF boundingRect() const;
-    virtual void paint( QPainter *painter, const QStyleOptionGraphicsItem *o, QWidget *w);
+    QRectF boundingRect() const override;
+    void paint( QPainter *painter, const QStyleOptionGraphicsItem *o, QWidget *w) override;
     void setBackgroudColor(const QColor &bc);
     void setForegroundColor(const QColor &fc);
 
@@ -52,7 +52,7 @@ public:
 
 
 protected:
-    virtual void keyReleaseEvent ( QKeyEvent * event );
+    void keyReleaseEvent ( QKeyEvent * event ) override;
 
 private:
     QColor m_backgroundColor;

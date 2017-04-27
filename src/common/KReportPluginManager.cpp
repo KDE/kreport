@@ -42,12 +42,12 @@ KReportPluginManager::Private::Private(KReportPluginManager *qq)
 // ---
 
 KReportPluginEntry::KReportPluginEntry()
-    : m_loader(0), m_interface(0), m_metaData(0)
+    : m_loader(nullptr), m_interface(nullptr), m_metaData(nullptr)
 {
 }
 
 KReportPluginEntry::KReportPluginEntry(KReportPluginInterface *staticInterface)
-    : m_loader(0), m_interface(staticInterface), m_metaData(0)
+    : m_loader(nullptr), m_interface(staticInterface), m_metaData(nullptr)
 {
 }
 
@@ -64,21 +64,21 @@ KReportPluginInterface* KReportPluginEntry::plugin()
     }
     if (!m_loader) {
         kreportWarning() << "No such plugin";
-        return 0;
+        return nullptr;
     }
     if (!m_loader->load()) {
         kreportWarning() << "Could not load plugin" << m_loader->fileName();
-        return 0;
+        return nullptr;
     }
     KPluginFactory *factory = qobject_cast<KPluginFactory*>(m_loader->instance());
     if (!factory) {
         kreportWarning() << "Could not create factory for plugin" << m_loader->fileName();
-        return 0;
+        return nullptr;
     }
     m_interface = factory->create<KReportPluginInterface>();
     if (!m_interface) {
         kreportWarning() << "Could not create instance of plugin" << m_loader->fileName();
-        return 0;
+        return nullptr;
     }
     m_interface->setMetaData(m_metaData);
     return m_interface;
@@ -259,7 +259,7 @@ const KReportPluginMetaData *KReportPluginManager::pluginMetaData(const QString&
 {
     KReportPluginEntry *entry = d->plugins()->value(id);
     if (!entry) {
-        return 0;
+        return nullptr;
     }
     return entry->metaData();
 }
@@ -275,7 +275,7 @@ KReportPluginInterface* KReportPluginManager::plugin(const QString& id) const
     }
 
     if (!entry) {
-        return 0;
+        return nullptr;
     }
     return entry->plugin();
 }

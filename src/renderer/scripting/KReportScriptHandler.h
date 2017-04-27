@@ -44,7 +44,7 @@ class KREPORT_EXPORT KReportScriptHandler : public QObject
     Q_OBJECT
 public:
     KReportScriptHandler(const KReportDataSource *reportDataSource, KReportDocument* reportDocument);
-    ~KReportScriptHandler();
+    ~KReportScriptHandler() override;
 
     QVariant evaluate(const QString&);
     void displayErrors();

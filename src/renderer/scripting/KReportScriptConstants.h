@@ -31,9 +31,9 @@ class KReportScriptConstants : public QObject
 {
     Q_OBJECT
 public:
-    explicit KReportScriptConstants(QObject *parent = 0);
+    explicit KReportScriptConstants(QObject *parent = nullptr);
 
-    ~KReportScriptConstants();
+    ~KReportScriptConstants() override;
     Q_ENUMS(PenStyle)
 
     //!Enum values for pen styles that can be accessed from user scripts using

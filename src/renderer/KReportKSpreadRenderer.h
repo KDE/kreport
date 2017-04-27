@@ -26,9 +26,9 @@ class KReportKSpreadRenderer : public KReportRendererBase
 {
 public:
     KReportKSpreadRenderer();
-    ~KReportKSpreadRenderer();
+    ~KReportKSpreadRenderer() override;
 
-    virtual bool render(const KReportRendererContext&, ORODocument*, int page = -1);
+    bool render(const KReportRendererContext&, ORODocument*, int page = -1) override;
 
 private:
 

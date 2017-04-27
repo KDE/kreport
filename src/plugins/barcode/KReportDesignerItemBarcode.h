@@ -32,18 +32,20 @@ class KReportDesignerItemBarcode : public KReportItemBarcode, public KReportDesi
 {
     Q_OBJECT
 public:
-    KReportDesignerItemBarcode(KReportDesigner *, QGraphicsScene* scene, const QPointF &pos);
-    KReportDesignerItemBarcode(const QDomNode & element, KReportDesigner *, QGraphicsScene* scene);
+    KReportDesignerItemBarcode(KReportDesigner *designer, QGraphicsScene *scene,
+                               const QPointF &pos);
+    KReportDesignerItemBarcode(const QDomNode &element, KReportDesigner *designer,
+                               QGraphicsScene *scene);
+    ~KReportDesignerItemBarcode() override;
 
-    virtual ~KReportDesignerItemBarcode();
-    virtual void buildXML(QDomDocument *doc, QDomElement *parent);
-    virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = 0);
+    void buildXML(QDomDocument *doc, QDomElement *parent) override;
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
+               QWidget *widget = nullptr) override;
 
-    virtual KReportDesignerItemBarcode* clone();
-
+    KReportDesignerItemBarcode *clone() override;
 
 protected:
-    virtual void mousePressEvent(QGraphicsSceneMouseEvent * event);
+    void mousePressEvent(QGraphicsSceneMouseEvent * event) override;
 
 private:
     void init(QGraphicsScene *scene);

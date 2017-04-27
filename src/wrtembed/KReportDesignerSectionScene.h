@@ -40,7 +40,7 @@ class KReportDesignerSectionScene : public QGraphicsScene
     Q_OBJECT
 public:
     KReportDesignerSectionScene(qreal w, qreal h, KReportDesigner* rd);
-    virtual ~KReportDesignerSectionScene();
+    ~KReportDesignerSectionScene() override;
     KReportDesigner* document() const {
         return m_rd;
     }
@@ -53,10 +53,10 @@ public:
     }
 
 protected:
-    virtual void drawBackground(QPainter* painter, const QRectF & clip);
-    virtual void mousePressEvent(QGraphicsSceneMouseEvent * e);
-    virtual void focusOutEvent(QFocusEvent * focusEvent);
-    virtual void contextMenuEvent(QGraphicsSceneContextMenuEvent * contextMenuEvent);
+    void drawBackground(QPainter *painter, const QRectF &clip) override;
+    void mousePressEvent(QGraphicsSceneMouseEvent *e) override;
+    void focusOutEvent(QFocusEvent *focusEvent) override;
+    void contextMenuEvent(QGraphicsSceneContextMenuEvent *contextMenuEvent) override;
 
 Q_SIGNALS:
     void clicked();

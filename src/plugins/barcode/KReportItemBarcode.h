@@ -35,11 +35,11 @@ Q_OBJECT
 public:
     KReportItemBarcode();
     explicit KReportItemBarcode(const QDomNode &element);
-    ~KReportItemBarcode();
+    ~KReportItemBarcode() override;
 
-    virtual QString typeName() const;
-    virtual int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset, const QVariant &data, KReportScriptHandler *script);
-    virtual QString itemDataSource() const;
+    QString typeName() const override;
+    int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset, const QVariant &data, KReportScriptHandler *script) override;
+    QString itemDataSource() const override;
 
 protected:
 
@@ -64,7 +64,7 @@ protected:
     qreal m_minHeight;
 
 private:
-    virtual void createProperties();
+    void createProperties() override;
 
     friend class Scripting::Barcode;
 };

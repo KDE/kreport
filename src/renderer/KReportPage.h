@@ -36,13 +36,13 @@ class KREPORT_EXPORT KReportPage : public QObject, public QGraphicsRectItem
 public:
     KReportPage(QWidget *parent, ORODocument *document);
 
-    ~KReportPage();
+    ~KReportPage() override;
 
     //! Renders page @a page (counted from 1).
     void renderPage(int page);
 
 public Q_SLOTS:
-    virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = 0);
+    void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = nullptr) override;
 
     void pageUpdated(int pageNo);
 

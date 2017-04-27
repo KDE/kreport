@@ -310,7 +310,7 @@ KReportDesigner::KReportDesigner(QWidget *parent, const QDomElement &data)
                         //kreportDebug() << sn;
                         if (sn == QLatin1String("report:section")) {
                             QString sectiontype = sec.toElement().attribute(QLatin1String("report:section-type"));
-                            if (section(KReportSectionData::sectionTypeFromString(sectiontype)) == 0) {
+                            if (section(KReportSectionData::sectionTypeFromString(sectiontype)) == nullptr) {
                                 insertSection(KReportSectionData::sectionTypeFromString(sectiontype));
                                 section(KReportSectionData::sectionTypeFromString(sectiontype))->initFromXML(sec);
                             }
@@ -482,7 +482,7 @@ KReportDesignerSection * KReportDesigner::section(KReportSectionData::Section s)
         sec = d->reportFooter;
         break;
     default:
-        sec = 0;
+        sec = nullptr;
     }
     return sec;
 }
@@ -500,43 +500,43 @@ void KReportDesigner::removeSection(KReportSectionData::Section s)
 
         switch (s) {
         case KReportSectionData::PageHeaderAny:
-            d->pageHeaderAny = 0;
+            d->pageHeaderAny = nullptr;
             break;
         case KReportSectionData::PageHeaderEven:
-            sec = d->pageHeaderEven = 0;
+            sec = d->pageHeaderEven = nullptr;
             break;
         case KReportSectionData::PageHeaderOdd:
-            d->pageHeaderOdd = 0;
+            d->pageHeaderOdd = nullptr;
             break;
         case KReportSectionData::PageHeaderFirst:
-            d->pageHeaderFirst = 0;
+            d->pageHeaderFirst = nullptr;
             break;
         case KReportSectionData::PageHeaderLast:
-            d->pageHeaderLast = 0;
+            d->pageHeaderLast = nullptr;
             break;
         case KReportSectionData::PageFooterAny:
-            d->pageFooterAny = 0;
+            d->pageFooterAny = nullptr;
             break;
         case KReportSectionData::PageFooterEven:
-            d->pageFooterEven = 0;
+            d->pageFooterEven = nullptr;
             break;
         case KReportSectionData::PageFooterOdd:
-            d->pageFooterOdd = 0;
+            d->pageFooterOdd = nullptr;
             break;
         case KReportSectionData::PageFooterFirst:
-            d->pageFooterFirst = 0;
+            d->pageFooterFirst = nullptr;
             break;
         case KReportSectionData::PageFooterLast:
-            d->pageFooterLast = 0;
+            d->pageFooterLast = nullptr;
             break;
         case KReportSectionData::ReportHeader:
-            d->reportHeader = 0;
+            d->reportHeader = nullptr;
             break;
         case KReportSectionData::ReportFooter:
-            d->reportFooter = 0;
+            d->reportFooter = nullptr;
             break;
         default:
-            sec = 0;
+            sec = nullptr;
         }
 
         setModified(true);
@@ -873,7 +873,7 @@ void KReportDesigner::setDetail(KReportDesignerSectionDetail *rsd)
 void KReportDesigner::deleteDetail()
 {
     delete d->detail;
-    d->detail = 0;
+    d->detail = nullptr;
 }
 
 KReportUnit KReportDesigner::pageUnit() const
@@ -966,7 +966,7 @@ void KReportDesigner::sectionMouseReleaseEvent(KReportDesignerSectionView * v, Q
         }
 
         if (d->sectionData.mouseAction == ReportWriterSectionData::MA_Insert) {
-            QGraphicsItem * item = 0;
+            QGraphicsItem * item = nullptr;
             QString classString;
             QString iconName;
             if (d->sectionData.itemToInsert == QLatin1String("org.kde.kreport.line")) {
@@ -1046,7 +1046,7 @@ void KReportDesigner::slotItem(const QString &entity)
 
 void KReportDesigner::slotEditDelete()
 {
-    QGraphicsItem * item = 0;
+    QGraphicsItem * item = nullptr;
     bool modified = false;
     while (selectionCount() > 0) {
         item = activeScene()->selectedItems().value(0);
@@ -1129,7 +1129,7 @@ void KReportDesigner::slotEditPaste(QGraphicsScene * canvas)
     // paste a new item of the copy we have in the specified location
     if (!d->sectionData.copy_list.isEmpty()) {
         QList<QGraphicsItem*> activeItems = canvas->selectedItems();
-        QGraphicsItem *activeItem = 0;
+        QGraphicsItem *activeItem = nullptr;
         if (activeItems.count() == 1) {
             activeItem = activeItems.first();
         }

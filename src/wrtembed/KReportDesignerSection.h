@@ -47,12 +47,12 @@ class KREPORT_EXPORT KReportDesignerSection : public QWidget
 {
     Q_OBJECT
 public:
-    virtual ~KReportDesignerSection();
+    ~KReportDesignerSection() override;
 
     void setTitle(const QString & s);
     void buildXML(QDomDocument *doc, QDomElement *section);
     void initFromXML(const QDomNode & section);
-    virtual QSize sizeHint() const;
+    QSize sizeHint() const override;
 
     /**
      * @brief Return the items in the section

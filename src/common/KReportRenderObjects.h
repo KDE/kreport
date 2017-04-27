@@ -52,7 +52,7 @@ class KREPORT_EXPORT ORODocument : public QObject
 
 public:
     explicit ORODocument(const QString &title = QString());
-    ~ORODocument();
+    ~ORODocument() override;
 
     QString title() const;
     void setTitle(const QString &title);
@@ -168,7 +168,7 @@ private:
 class KREPORT_EXPORT OROPage
 {
 public:
-    explicit OROPage(ORODocument * doc = 0);
+    explicit OROPage(ORODocument * doc = nullptr);
     ~OROPage();
 
     ORODocument* document();
@@ -198,7 +198,7 @@ private:
 class KREPORT_EXPORT OROSection
 {
 public:
-    explicit OROSection(ORODocument* doc = 0);
+    explicit OROSection(ORODocument* doc = nullptr);
     ~OROSection();
 
     void setHeight(int);
@@ -267,7 +267,7 @@ class KREPORT_EXPORT OROTextBox : public OROPrimitive
 {
 public:
     OROTextBox();
-    virtual ~OROTextBox();
+    ~OROTextBox() override;
 
     QString text() const;
     void setText(const QString &text);
@@ -283,7 +283,7 @@ public:
     int flags() const;
     void setFlags(int flags);
 
-    virtual OROPrimitive* clone() const;
+    OROPrimitive* clone() const override;
 
     bool requiresPostProcessing() const;
     void setRequiresPostProcessing(bool pp);
@@ -307,7 +307,7 @@ class KREPORT_EXPORT OROLine : public OROPrimitive
 {
 public:
     OROLine();
-    virtual ~OROLine();
+    ~OROLine() override;
 
     QPointF startPoint() const {
         return position();
@@ -320,7 +320,7 @@ public:
     KReportLineStyle lineStyle() const;
     void setLineStyle(const KReportLineStyle& style);
 
-    virtual OROPrimitive* clone() const;
+    OROPrimitive* clone() const override;
     
 private:
     class Private;
@@ -335,7 +335,7 @@ class KREPORT_EXPORT OROImage: public OROPrimitive
 {
 public:
     OROImage();
-    virtual ~OROImage();
+    ~OROImage() override;
 
     QImage image() const;
     void setImage(const QImage &img);
@@ -349,7 +349,7 @@ public:
     Qt::AspectRatioMode aspectRatioMode() const;
     void setAspectRatioMode(Qt::AspectRatioMode aspect);
 
-    virtual OROPrimitive* clone() const;
+    OROPrimitive* clone() const override;
     
 private:
     class Private;
@@ -364,12 +364,12 @@ class KREPORT_EXPORT OROPicture: public OROPrimitive
 {
 public:
     OROPicture();
-    virtual ~OROPicture();
+    ~OROPicture() override;
 
     void setPicture(const QPicture& pic);
     QPicture* picture();
 
-    virtual OROPrimitive* clone() const;
+    OROPrimitive* clone() const override;
     
 private:
     class Private;
@@ -384,7 +384,7 @@ class KREPORT_EXPORT ORORect: public OROPrimitive
 {
 public:
     ORORect();
-    virtual ~ORORect();
+    ~ORORect() override;
 
     QRectF rect() const;
     void setRect(const QRectF &rectangle);
@@ -395,7 +395,7 @@ public:
     QBrush brush() const;
     void setBrush(const QBrush &brush);
 
-    virtual OROPrimitive* clone() const;
+    OROPrimitive* clone() const override;
     
 private:
     class Private;
@@ -410,7 +410,7 @@ class KREPORT_EXPORT OROEllipse: public OROPrimitive
 {
 public:
     OROEllipse();
-    virtual ~OROEllipse();
+    ~OROEllipse() override;
 
     QRectF rect() const;
     void setRect(const QRectF &rectangle);
@@ -421,7 +421,7 @@ public:
     QBrush brush() const;
     void setBrush(const QBrush &brush);
 
-    virtual OROPrimitive* clone() const;
+    OROPrimitive* clone() const override;
     
 private:
     class Private;
@@ -438,8 +438,8 @@ public:
     };
     
     OROCheckBox();
-    virtual ~OROCheckBox();
-    virtual OROPrimitive* clone() const;
+    ~OROCheckBox() override;
+    OROPrimitive* clone() const override;
 
     void setCheckType(Type type);
     Type checkType() const;

@@ -74,6 +74,10 @@ KReportDesignerItemLine::KReportDesignerItemLine(const QDomNode & entity, KRepor
     setLine ( s.x(), s.y(), e.x(), e.y() );
 }
 
+KReportDesignerItemLine::~KReportDesignerItemLine()
+{
+}
+
 KReportDesignerItemLine* KReportDesignerItemLine::clone()
 {
     QDomDocument d;
@@ -81,7 +85,7 @@ KReportDesignerItemLine* KReportDesignerItemLine::clone()
     QDomNode n;
     buildXML(&d, &e);
     n = e.firstChild();
-    return new KReportDesignerItemLine(n, designer(), 0);
+    return new KReportDesignerItemLine(n, designer(), nullptr);
 }
 
 void KReportDesignerItemLine::paint(QPainter* painter, const QStyleOptionGraphicsItem* option,
@@ -208,7 +212,7 @@ void KReportDesignerItemLine::mouseMoveEvent(QGraphicsSceneMouseEvent * event)
     }
 }
 
-int KReportDesignerItemLine::grabHandle(QPointF pos)
+int KReportDesignerItemLine::grabHandle(const QPointF &pos)
 {
     if (QRectF(line().p1().x(), line().p1().y() - 2, 5, 5).contains(pos)) {
         // we are over point 1
@@ -239,12 +243,12 @@ void KReportDesignerItemLine::hoverMoveEvent(QGraphicsSceneHoverEvent * event)
     }
 }
 
-void KReportDesignerItemLine::setLineScene(QLineF l)
+void KReportDesignerItemLine::setLineScene(const QLineF &line)
 {
-    m_start->setValue(positionFromScene(l.p1()));
-    m_end->setValue(positionFromScene(l.p2()));
-    
-    setLine(l);
+    m_start->setValue(positionFromScene(line.p1()));
+    m_end->setValue(positionFromScene(line.p2()));
+
+    setLine(line);
 }
 
 void KReportDesignerItemLine::move(const QPointF& m)

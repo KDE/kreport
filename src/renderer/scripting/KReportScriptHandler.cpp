@@ -154,7 +154,7 @@ QVariant KReportScriptHandler::evaluate(const QString &code)
         if (!result.isError()) {
             return result.toVariant();
         } else {
-            QMessageBox::warning(0, tr("Script Error"), d->scriptValue.toString());
+            QMessageBox::warning(nullptr, tr("Script Error"), d->scriptValue.toString());
         }
     }
     return QVariant();
@@ -163,7 +163,7 @@ QVariant KReportScriptHandler::evaluate(const QString &code)
 void KReportScriptHandler::displayErrors()
 {
     if (d->scriptValue.isError()) {
-        QMessageBox::warning(0, tr("Script Error"), d->scriptValue.toString());
+        QMessageBox::warning(nullptr, tr("Script Error"), d->scriptValue.toString());
     }
 }
 

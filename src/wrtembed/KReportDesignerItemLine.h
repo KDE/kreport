@@ -31,32 +31,35 @@ class KReportDesignerItemLine : public KReportItemLine, public QGraphicsLineItem
 {
     Q_OBJECT
 public:
-    KReportDesignerItemLine(KReportDesigner *, QGraphicsScene * scene, const QPointF &pos);
-    KReportDesignerItemLine(KReportDesigner * d, QGraphicsScene * scene, const QPointF &startPos, const QPointF &endPos);
-    KReportDesignerItemLine(const QDomNode & element, KReportDesigner *, QGraphicsScene * scene);
+    KReportDesignerItemLine(KReportDesigner *d, QGraphicsScene *scene, const QPointF &pos);
+    KReportDesignerItemLine(KReportDesigner *d, QGraphicsScene *scene, const QPointF &startPos,
+                            const QPointF &endPos);
+    KReportDesignerItemLine(const QDomNode &element, KReportDesigner *d, QGraphicsScene *scene);
+    ~KReportDesignerItemLine() override;
 
-    virtual void buildXML(QDomDocument *doc, QDomElement *parent);
-    virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget *widget = 0);
-    virtual KReportDesignerItemLine* clone();
+    void buildXML(QDomDocument *doc, QDomElement *parent) override;
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
+               QWidget *widget = nullptr) override;
+    KReportDesignerItemLine *clone() override;
 
-    void setLineScene(QLineF);
+    void setLineScene(const QLineF &line);
 
-    virtual void move(const QPointF&);
+    void move(const QPointF &m) override;
 
 private:
     KReportDesigner* m_rd;
-    void init(QGraphicsScene*, KReportDesigner *);
-    int grabHandle(QPointF pos);
+    void init(QGraphicsScene *s, KReportDesigner *r);
+    int grabHandle(const QPointF &pos);
 
     int m_grabAction;
 
 protected:
-    virtual void hoverMoveEvent(QGraphicsSceneHoverEvent * event);
-    virtual void mouseMoveEvent(QGraphicsSceneMouseEvent * event);
-    virtual void mousePressEvent(QGraphicsSceneMouseEvent * event);
-    virtual void mouseReleaseEvent(QGraphicsSceneMouseEvent * event);
-    virtual QVariant itemChange(GraphicsItemChange change, const QVariant &value);
-    virtual void propertyChanged(KPropertySet &s, KProperty &p);
+    void hoverMoveEvent(QGraphicsSceneHoverEvent * event) override;
+    void mouseMoveEvent(QGraphicsSceneMouseEvent * event) override;
+    void mousePressEvent(QGraphicsSceneMouseEvent * event) override;
+    void mouseReleaseEvent(QGraphicsSceneMouseEvent * event) override;
+    QVariant itemChange(GraphicsItemChange change, const QVariant &value) override;
+    void propertyChanged(KPropertySet &s, KProperty &p) override;
 };
 
 #endif

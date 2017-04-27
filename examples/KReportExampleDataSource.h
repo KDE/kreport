@@ -29,25 +29,25 @@ class KReportExampleDataSource : public KReportDataSource
 {
 public:
     KReportExampleDataSource();
-    ~KReportExampleDataSource();
-    virtual QVariant value(const QString& field) const;
-    virtual QVariant value(int) const;
-    virtual QStringList fieldNames() const;
-    virtual QStringList fieldKeys() const;
-    virtual int fieldNumber(const QString& field) const;
-    virtual qint64 recordCount() const;
-    virtual qint64 at() const;
-    virtual bool moveLast();
-    virtual bool moveFirst();
-    virtual bool movePrevious();
-    virtual bool moveNext();
-    virtual bool close();
-    virtual bool open();
+    ~KReportExampleDataSource() override;
+    QVariant value(const QString &field) const override;
+    QVariant value(int) const override;
+    QStringList fieldNames() const override;
+    QStringList fieldKeys() const override;
+    int fieldNumber(const QString &field) const override;
+    qint64 recordCount() const override;
+    qint64 at() const override;
+    bool moveLast() override;
+    bool moveFirst() override;
+    bool movePrevious() override;
+    bool moveNext() override;
+    bool close() override;
+    bool open() override;
 
-    virtual QStringList scriptList() const;
-    virtual QString scriptCode(const QString &script) const;
-    
-    virtual QStringList dataSourceNames() const;
+    QStringList scriptList() const override;
+    QString scriptCode(const QString &script) const override;
+
+    QStringList dataSourceNames() const override;
 
 private:
     struct Data

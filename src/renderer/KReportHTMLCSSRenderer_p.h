@@ -29,9 +29,9 @@ class HTMLCSSRenderer : public KReportRendererBase
 public:
     HTMLCSSRenderer();
 
-    virtual ~HTMLCSSRenderer();
+    ~HTMLCSSRenderer() override;
 
-    virtual bool render(const KReportRendererContext&, ORODocument *document, int page = -1);
+    bool render(const KReportRendererContext&, ORODocument *document, int page = -1) override;
 
 private:
     QString renderCSS(ORODocument*);

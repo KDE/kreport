@@ -41,7 +41,7 @@ class KREPORT_EXPORT KReportDesignerItemRectBase : public QGraphicsRectItem, pub
 public:
     explicit KReportDesignerItemRectBase(KReportDesigner *r, KReportItemBase *b);
 
-    virtual ~KReportDesignerItemRectBase();
+    ~KReportDesignerItemRectBase() override;
 
     QRectF pointRect() const;
 
@@ -62,18 +62,18 @@ protected:
 
     void drawHandles(QPainter*);
     QRectF sceneRect();
-    virtual void mousePressEvent(QGraphicsSceneMouseEvent * event);
-    virtual void mouseReleaseEvent(QGraphicsSceneMouseEvent * event);
-    virtual void mouseMoveEvent(QGraphicsSceneMouseEvent * event);
-    virtual void hoverMoveEvent(QGraphicsSceneHoverEvent * event);
-    virtual QVariant itemChange(GraphicsItemChange change, const QVariant &value);
+    void mousePressEvent(QGraphicsSceneMouseEvent * event) override;
+    void mouseReleaseEvent(QGraphicsSceneMouseEvent * event) override;
+    void mouseMoveEvent(QGraphicsSceneMouseEvent * event) override;
+    void hoverMoveEvent(QGraphicsSceneHoverEvent * event) override;
+    QVariant itemChange(GraphicsItemChange change, const QVariant &value) override;
 
     void propertyChanged(const KPropertySet &s, const KProperty &p);
 
-    virtual void move(const QPointF&);
+    void move(const QPointF&) override;
     QRectF properRect(const KReportDesigner &d, qreal minWidth, qreal minHeight) const;
 private:
-    int grabHandle(QPointF);
+    int grabHandle(const QPointF &pos);
     QPointF properPressPoint(const KReportDesigner &d) const;
 
     class Private;

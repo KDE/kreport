@@ -29,9 +29,9 @@ class KReportScriptDebug : public QObject
 {
     Q_OBJECT
 public:
-    explicit KReportScriptDebug(QObject *parent = 0);
+    explicit KReportScriptDebug(QObject *parent = nullptr);
 
-    ~KReportScriptDebug();
+    ~KReportScriptDebug() override;
 
 public Q_SLOTS:
     //! Prints the given message to the console

@@ -25,15 +25,17 @@
 class KReportChartPlugin : public KReportPluginInterface
 {
     Q_OBJECT
-    public:
-        explicit KReportChartPlugin(QObject *parent, const QVariantList &args = QVariantList());
-        virtual ~KReportChartPlugin();
+public:
+    explicit KReportChartPlugin(QObject *parent, const QVariantList &args = QVariantList());
+    virtual ~KReportChartPlugin();
 
-        virtual QObject* createRendererInstance(const QDomNode& element);
-        virtual QObject* createDesignerInstance(const QDomNode& element, KoReportDesigner* , QGraphicsScene* scene);
-        virtual QObject* createDesignerInstance(KoReportDesigner* , QGraphicsScene* scene, const QPointF& pos);
+    virtual QObject *createRendererInstance(const QDomNode &element);
+    virtual QObject *createDesignerInstance(const QDomNode &element, KoReportDesigner *designer,
+                                            QGraphicsScene *scene);
+    virtual QObject *createDesignerInstance(KoReportDesigner *designer, QGraphicsScene *scene,
+                                            const QPointF &pos);
 #ifdef KREPORT_SCRIPTING
-        virtual QObject* createScriptInstance(KReportItemBase* item);
+    virtual QObject *createScriptInstance(KReportItemBase *item);
 #endif
 };
 

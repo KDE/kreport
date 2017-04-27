@@ -29,9 +29,9 @@ class HTMLTableRenderer : public KReportRendererBase
 public:
     HTMLTableRenderer();
 
-    virtual ~HTMLTableRenderer();
+    ~HTMLTableRenderer() override;
 
-    virtual bool render(const KReportRendererContext&, ORODocument *document, int page = -1);
+    bool render(const KReportRendererContext&, ORODocument *document, int page = -1) override;
 
 private:
     QString renderTable(ORODocument*);

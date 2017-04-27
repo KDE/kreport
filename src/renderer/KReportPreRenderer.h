@@ -46,14 +46,14 @@ class KREPORT_EXPORT KReportPreRenderer : public QObject
 public:
     explicit KReportPreRenderer(const QDomElement& document);
 
-    virtual ~KReportPreRenderer();
+    ~KReportPreRenderer() override;
 
     //! Sets source data to @a data, takes ownership
     void setSourceData(KReportDataSource* dataSource);
 
 #ifdef KREPORT_SCRIPTING
     KReportScriptHandler *scriptHandler();
-    void registerScriptObject(QObject*, const QString&);
+    void registerScriptObject(QObject *obj, const QString &name);
 #endif
 
     bool generateDocument();

@@ -28,7 +28,7 @@
 class Q_DECL_HIDDEN KReportPluginInterface::Private
 {
 public:
-    Private() : metaData(0) {}
+    Private() : metaData(nullptr) {}
     ~Private() {}
 
     const KReportPluginMetaData *metaData;
