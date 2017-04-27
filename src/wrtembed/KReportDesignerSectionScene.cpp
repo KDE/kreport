@@ -182,7 +182,7 @@ QPointF KReportDesignerSectionScene::gridPoint(const QPointF& p)
 
 void KReportDesignerSectionScene::focusOutEvent(QFocusEvent * focusEvent)
 {
-    exitInlineEditingModeInItems(0);
+    exitInlineEditingModeInItems(nullptr);
 
     emit lostFocus();
     QGraphicsScene::focusOutEvent(focusEvent);

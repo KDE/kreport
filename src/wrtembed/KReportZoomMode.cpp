@@ -27,11 +27,11 @@ const char* const KReportZoomMode::modes[] =
     QT_TRANSLATE_NOOP("KReportZoomMode", "%1%"),
     QT_TRANSLATE_NOOP("KReportZoomMode", "Fit Page Width"),
     QT_TRANSLATE_NOOP("KReportZoomMode", "Fit Page"),
-    0,
+    nullptr,
     QT_TRANSLATE_NOOP("KReportZoomMode", "Actual Pixels"),
-    0,
-    0,
-    0,
+    nullptr,
+    nullptr,
+    nullptr,
     QT_TRANSLATE_NOOP("KReportZoomMode", "Fit Text Width")
 };
 

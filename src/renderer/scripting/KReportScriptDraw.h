@@ -29,9 +29,9 @@ class KReportScriptDraw : public QObject
 {
     Q_OBJECT
 public:
-    explicit KReportScriptDraw(QObject *parent = 0);
+    explicit KReportScriptDraw(QObject *parent = nullptr);
 
-    ~KReportScriptDraw();
+    ~KReportScriptDraw() override;
     void setPage(OROPage*);
     void setOffset(QPointF);
 public Q_SLOTS:

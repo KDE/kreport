@@ -79,7 +79,7 @@ QObject* Report::objectByName(const QString &n)
             }
         }
     }
-    return 0;
+    return nullptr;
 }
 
 QObject* Report::sectionByName(const QString &n)

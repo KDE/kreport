@@ -82,7 +82,7 @@ KReportDesignerItemLine* KReportDesignerItemLine::clone()
     QDomNode n;
     buildXML(&d, &e);
     n = e.firstChild();
-    return new KReportDesignerItemLine(n, designer(), 0);
+    return new KReportDesignerItemLine(n, designer(), nullptr);
 }
 
 void KReportDesignerItemLine::paint(QPainter* painter, const QStyleOptionGraphicsItem* option,

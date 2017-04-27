@@ -33,13 +33,13 @@ public:
     KReportDesignerItemMaps(KReportDesigner *, QGraphicsScene* scene, const QPointF &pos);
     KReportDesignerItemMaps(const QDomNode &element, KReportDesigner *, QGraphicsScene* scene);
 
-    virtual ~KReportDesignerItemMaps();
-    virtual void buildXML(QDomDocument *doc, QDomElement *parent);
-    virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = 0);
-    virtual KReportDesignerItemMaps* clone();
+    ~KReportDesignerItemMaps() override;
+    void buildXML(QDomDocument *doc, QDomElement *parent) override;
+    void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = nullptr) override;
+    KReportDesignerItemMaps* clone() override;
 
 protected:
-    virtual void mousePressEvent(QGraphicsSceneMouseEvent * event);
+    void mousePressEvent(QGraphicsSceneMouseEvent * event) override;
 
 private:
     void init(QGraphicsScene*, KReportDesigner*);

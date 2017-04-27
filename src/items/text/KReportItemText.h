@@ -39,12 +39,12 @@ Q_OBJECT
 public:
     KReportItemText();
     explicit KReportItemText(const QDomNode & element);
-    virtual ~KReportItemText();
+    ~KReportItemText() override;
 
-    virtual QString typeName() const;
-    virtual int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset, const QVariant &data, KReportScriptHandler *script);
+    QString typeName() const override;
+    int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset, const QVariant &data, KReportScriptHandler *script) override;
 
-    virtual QString itemDataSource() const;
+    QString itemDataSource() const override;
 
 protected:
 
@@ -76,7 +76,7 @@ protected:
     KReportLineStyle lineStyle() const;
 
 private:
-    virtual void createProperties();
+    void createProperties() override;
 
     friend class Scripting::Text;
 };

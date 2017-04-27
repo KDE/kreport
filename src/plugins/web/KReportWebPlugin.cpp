@@ -67,7 +67,7 @@ QObject *KReportWebPlugin::createScriptInstance(KReportItemBase *item)
 //   KoReportItemweb *image = dynamic_cast<KoReportItemweb*>(item);
     // if (image) {
     //   return new Scripting::Web(image);
-    return 0;
+    return nullptr;
 }
 #endif
 

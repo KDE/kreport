@@ -35,15 +35,15 @@ public:
     KReportDesignerItemBarcode(KReportDesigner *, QGraphicsScene* scene, const QPointF &pos);
     KReportDesignerItemBarcode(const QDomNode & element, KReportDesigner *, QGraphicsScene* scene);
 
-    virtual ~KReportDesignerItemBarcode();
-    virtual void buildXML(QDomDocument *doc, QDomElement *parent);
-    virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = 0);
+    ~KReportDesignerItemBarcode() override;
+    void buildXML(QDomDocument *doc, QDomElement *parent) override;
+    void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = nullptr) override;
 
-    virtual KReportDesignerItemBarcode* clone();
+    KReportDesignerItemBarcode* clone() override;
 
 
 protected:
-    virtual void mousePressEvent(QGraphicsSceneMouseEvent * event);
+    void mousePressEvent(QGraphicsSceneMouseEvent * event) override;
 
 private:
     void init(QGraphicsScene*, KReportDesigner*);

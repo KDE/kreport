@@ -74,7 +74,7 @@ KReportDesignerItemText* KReportDesignerItemText::clone()
     QDomNode n;
     buildXML(&d, &e);
     n = e.firstChild();
-    return new KReportDesignerItemText(n, designer(), 0);
+    return new KReportDesignerItemText(n, designer(), nullptr);
 }
 
 KReportDesignerItemText::~KReportDesignerItemText

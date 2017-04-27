@@ -38,7 +38,7 @@ class Line : public QObject
 public:
     explicit Line(KReportItemLine *);
 
-    ~Line();
+    ~Line() override;
 
 public Q_SLOTS:
     /**

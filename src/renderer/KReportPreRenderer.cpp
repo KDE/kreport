@@ -43,18 +43,18 @@ KReportPreRendererPrivate::KReportPreRendererPrivate(KReportPreRenderer *preRend
  : m_preRenderer(preRenderer)
 {
     m_valid = false;
-    m_document = 0;
-    m_reportDocument = 0;
-    m_page = 0;
+    m_document = nullptr;
+    m_reportDocument = nullptr;
+    m_page = nullptr;
     m_yOffset = 0.0;
     m_topMargin = m_bottomMargin = 0.0;
     m_leftMargin = m_rightMargin = 0.0;
     m_pageCounter = 0;
     m_maxHeight = m_maxWidth = 0.0;
     m_oneRecord = new KReportPrivate::OneRecordData();
-    m_kodata = 0;
+    m_kodata = nullptr;
 #ifdef KREPORT_SCRIPTING
-    m_scriptHandler = 0;
+    m_scriptHandler = nullptr;
 #endif
     asyncManager = new KReportPrivate::AsyncItemManager(this);
 
@@ -83,7 +83,7 @@ void KReportPreRendererPrivate::createNewPage()
     m_scriptHandler->newPage();
 #endif
 
-    m_page = new OROPage(0);
+    m_page = new OROPage(nullptr);
     m_document->addPage(m_page);
 
     //! @todo calculate past page
@@ -161,7 +161,7 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
             QStringList keys;
             QStringList keyValues;
             QList<int> shownGroups;
-            KReportDetailGroupSectionData * grp = 0;
+            KReportDetailGroupSectionData * grp = nullptr;
 
             bool status = m_kodata->moveFirst();
             int recordCount = m_kodata->recordCount();
@@ -308,7 +308,7 @@ qreal KReportPreRendererPrivate::renderSectionSize(const KReportSectionData & se
         KReportAsyncItemBase *async_ob = qobject_cast<KReportAsyncItemBase*>(ob);
 
         if (!async_ob) {
-            itemHeight = ob->renderSimpleData(0, 0, offset, itemData, m_scriptHandler);
+            itemHeight = ob->renderSimpleData(nullptr, nullptr, offset, itemData, m_scriptHandler);
 
             if (itemHeight > intHeight) {
                 intHeight = itemHeight;
@@ -604,12 +604,12 @@ bool KReportPreRendererPrivate::generateDocument()
     }
     #ifdef KREPORT_SCRIPTING
     delete m_scriptHandler;
-    m_scriptHandler = 0;
+    m_scriptHandler = nullptr;
     #endif
 
     if (m_kodata != m_oneRecord) {
         delete m_kodata;
-        m_kodata = 0;
+        m_kodata = nullptr;
     }
     m_postProcText.clear();
 
@@ -653,7 +653,7 @@ bool KReportPreRenderer::generateDocument()
 //    delete d->m_document;
     if (!d->generateDocument()) {
         delete d->m_document;
-        d->m_document = 0;
+        d->m_document = nullptr;
     }
     return d->m_document;
 }

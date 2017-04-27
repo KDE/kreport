@@ -26,15 +26,17 @@ KREPORT_DECLARE_STATIC_PLUGIN(KReportFieldPlugin)
 
 class KReportFieldPlugin : public KReportPluginInterface
 {
-    public:
+public:
     explicit KReportFieldPlugin(QObject *parent, const QVariantList &args = QVariantList());
-    virtual ~KReportFieldPlugin();
+    ~KReportFieldPlugin() override;
 
-    virtual QObject* createRendererInstance(const QDomNode& element);
-    virtual QObject* createDesignerInstance(const QDomNode& element, KReportDesigner* , QGraphicsScene* scene);
-    virtual QObject* createDesignerInstance(KReportDesigner* , QGraphicsScene* scene, const QPointF& pos);
+    QObject *createRendererInstance(const QDomNode &element) override;
+    QObject *createDesignerInstance(const QDomNode &element, KReportDesigner *,
+                                    QGraphicsScene *scene) override;
+    QObject *createDesignerInstance(KReportDesigner *, QGraphicsScene *scene,
+                                    const QPointF &pos) override;
 #ifdef KREPORT_SCRIPTING
-    virtual QObject* createScriptInstance(KReportItemBase* item);
+    QObject *createScriptInstance(KReportItemBase *item) override;
 #endif
 };
 

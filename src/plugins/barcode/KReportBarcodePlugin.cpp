@@ -59,7 +59,7 @@ QObject* KReportBarcodePlugin::createScriptInstance(KReportItemBase* item)
     if (barcode) {
         return new Scripting::Barcode(barcode);
     }
-    return 0;
+    return nullptr;
 }
 #endif
 

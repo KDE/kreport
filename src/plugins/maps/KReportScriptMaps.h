@@ -33,7 +33,7 @@ class Maps : public QObject
 public:
     explicit Maps(KReportItemMaps *i);
 
-    ~Maps();
+    ~Maps() override;
 
 public Q_SLOTS:
     /**

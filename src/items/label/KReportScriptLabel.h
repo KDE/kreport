@@ -35,7 +35,7 @@ class Label : public QObject
 public:
     explicit Label(KReportItemLabel *);
 
-    ~Label();
+    ~Label() override;
 
 public Q_SLOTS:
     //!Return the label caption

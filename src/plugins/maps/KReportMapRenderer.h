@@ -34,8 +34,8 @@ class KReportMapRenderer : public QObject
     Q_OBJECT
     Q_DISABLE_COPY(KReportMapRenderer)
 public:
-    KReportMapRenderer(QObject* parent = 0);
-    virtual ~KReportMapRenderer();
+    KReportMapRenderer(QObject* parent = nullptr);
+    ~KReportMapRenderer() override;
     void renderJob(KReportItemMaps* reportItemMaps);
 Q_SIGNALS:
     void jobFinished();

@@ -44,10 +44,10 @@ class KREPORT_EXPORT KReportPluginInterface : public QObject
 {
     Q_OBJECT
 public:
-    explicit KReportPluginInterface(QObject *parent = 0,
+    explicit KReportPluginInterface(QObject *parent = nullptr,
                                      const QVariantList &args = QVariantList());
 
-    virtual ~KReportPluginInterface();
+    ~KReportPluginInterface() override;
 
     virtual QObject* createDesignerInstance(KReportDesigner *designer, QGraphicsScene * scene,
                                             const QPointF &pos) = 0;

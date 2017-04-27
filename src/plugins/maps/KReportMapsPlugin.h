@@ -25,15 +25,17 @@
 
 class KReportMapsPlugin : public KReportPluginInterface
 {
-    public:
+public:
     explicit KReportMapsPlugin(QObject *parent, const QVariantList &args = QVariantList());
-    virtual ~KReportMapsPlugin();
+    ~KReportMapsPlugin() override;
 
-    virtual QObject* createRendererInstance(const QDomNode& element);
-    virtual QObject* createDesignerInstance(const QDomNode& element, KReportDesigner* , QGraphicsScene* scene);
-    virtual QObject* createDesignerInstance(KReportDesigner* , QGraphicsScene* scene, const QPointF& pos);
+    QObject *createRendererInstance(const QDomNode &element) override;
+    QObject *createDesignerInstance(const QDomNode &element, KReportDesigner *designer,
+                                    QGraphicsScene *scene) override;
+    QObject *createDesignerInstance(KReportDesigner *designer, QGraphicsScene *scene,
+                                    const QPointF &pos) override;
 #ifdef KREPORT_SCRIPTING
-    virtual QObject* createScriptInstance(KReportItemBase* item);
+    QObject *createScriptInstance(KReportItemBase *item) override;
 #endif
 };
 

@@ -34,16 +34,16 @@ class KReportDesignerItemWeb : public KReportItemWeb, public KReportDesignerItem
 public:
     KReportDesignerItemWeb(KReportDesigner *rw, QGraphicsScene *scene, const QPointF &pos);
     KReportDesignerItemWeb(const QDomNode &element, KReportDesigner *rw, QGraphicsScene *scene);
-    virtual ~KReportDesignerItemWeb();
+    ~KReportDesignerItemWeb() override;
 
     void init(QGraphicsScene *scene);
 
-    virtual void buildXML(QDomDocument *doc, QDomElement *parent);
-    virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget);
-    virtual KReportDesignerItemWeb *clone();
+    void buildXML(QDomDocument *doc, QDomElement *parent) override;
+    void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget) override;
+    KReportDesignerItemWeb *clone() override;
 
 protected:
-    virtual void mousePressEvent(QGraphicsSceneMouseEvent *event);
+    void mousePressEvent(QGraphicsSceneMouseEvent *event) override;
 
 private:
     void init(QGraphicsScene *, KReportDesigner *r);

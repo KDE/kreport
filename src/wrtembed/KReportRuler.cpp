@@ -690,7 +690,7 @@ KReportRulerPrivate::KReportRulerPrivate(KReportRuler *parent, const KReportZoom
     rightToLeft(false),
     selected(None),
     selectOffset(0),
-    tabChooser(0),
+    tabChooser(nullptr),
     normalPaintingStrategy(o == Qt::Horizontal ?
             (PaintingStrategy*)new HorizontalPaintingStrategy() : (PaintingStrategy*)new VerticalPaintingStrategy()),
     distancesPaintingStrategy((PaintingStrategy*)new HorizontalDistancesPaintingStrategy()),
@@ -817,7 +817,7 @@ void KReportRulerPrivate::emitTabChanged()
     KReportRuler::Tab tab;
     if (currentIndex >= 0)
         tab = tabs[currentIndex];
-    emit ruler->tabChanged(originalIndex, currentIndex >= 0 ? &tab : 0);
+    emit ruler->tabChanged(originalIndex, currentIndex >= 0 ? &tab : nullptr);
 }
 
 
@@ -975,7 +975,7 @@ qreal KReportRuler::endIndent() const
 
 QWidget *KReportRuler::tabChooser()
 {
-    if ((d->tabChooser == 0) && (d->orientation == Qt::Horizontal)) {
+    if ((d->tabChooser == nullptr) && (d->orientation == Qt::Horizontal)) {
         d->tabChooser = new RulerTabChooser(parentWidget());
         d->tabChooser->setShowTabs(d->showTabs);
     }

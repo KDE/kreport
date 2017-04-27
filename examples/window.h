@@ -38,13 +38,13 @@ class Window : public QMainWindow
     Q_OBJECT
 public:
     Window(QWidget *parent = nullptr, Qt::WindowFlags flags = Qt::WindowFlags());
-    virtual ~Window();
+    ~Window() override;
 
 public Q_SLOTS:
     void showDesign(const QDomElement &design);
 
 protected:
-    void closeEvent(QCloseEvent *event) Q_DECL_OVERRIDE;
+    void closeEvent(QCloseEvent *event) override;
 
 private:
     void createMenus();

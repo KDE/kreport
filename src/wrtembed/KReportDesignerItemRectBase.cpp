@@ -34,8 +34,8 @@ KReportDesignerItemRectBase::KReportDesignerItemRectBase(KReportDesigner *r)
     m_dpiX = KReportDpi::dpiX();
     m_dpiY = KReportDpi::dpiY();
 
-    m_ppos = 0;
-    m_psize = 0;
+    m_ppos = nullptr;
+    m_psize = nullptr;
     m_grabAction = 0;
     setAcceptHoverEvents(true);
 

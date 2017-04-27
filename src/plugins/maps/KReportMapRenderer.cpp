@@ -31,7 +31,7 @@
 
 KReportMapRenderer::KReportMapRenderer(QObject* parent)
     : QObject(parent)
-    , m_currentJob(0)
+    , m_currentJob(nullptr)
 {
     m_marble.setMapThemeId(QLatin1String("earth/openstreetmap/openstreetmap.dgml"));
     m_marble.setShowOverviewMap(false);

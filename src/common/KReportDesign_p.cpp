@@ -95,7 +95,7 @@ const KReportDesignGlobal::SectionTypeInfo KReportDesignGlobal::sectionTypes[] =
     { KReportSection::GroupHeader, "group-header" },
     { KReportSection::GroupFooter, "group-footer" },
     { KReportSection::Detail, "detail" },
-    { KReportSection::InvalidType, 0 }
+    { KReportSection::InvalidType, nullptr }
 };
 
 Q_GLOBAL_STATIC(KReportDesignGlobal, s_global)
@@ -181,7 +181,7 @@ KReportPluginInterface* KReportDesign::Private::findPlugin(const QString &typeNa
     KReportPluginInterface* plugin = KReportPluginManager::self()->plugin(typeName);
     if (!plugin) {
         setStatus(status, QString::fromLatin1("No such plugin \"%1\"").arg(typeName), el);
-        return 0;
+        return nullptr;
     }
     return plugin;
 }

@@ -35,7 +35,7 @@ namespace Scripting
         public:
             explicit CheckBox(KReportItemCheckBox *);
 
-            ~CheckBox();
+            ~CheckBox() override;
 
         public Q_SLOTS:
 

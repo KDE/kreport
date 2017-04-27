@@ -38,7 +38,7 @@ PrintRenderer::~PrintRenderer()
 
 bool PrintRenderer::setupPrinter( ORODocument * document, QPrinter * pPrinter)
 {
-    if (document == 0 || pPrinter == 0)
+    if (document == nullptr || pPrinter == nullptr)
         return false;
 
     pPrinter->setCreator(QLatin1String("KReport Print Renderer"));
@@ -59,7 +59,7 @@ bool PrintRenderer::setupPrinter( ORODocument * document, QPrinter * pPrinter)
 bool PrintRenderer::render(const KReportRendererContext &context, ORODocument *document, int page)
 {
     Q_UNUSED(page);
-    if (document == 0 || context.printer == 0 || context.painter == 0)
+    if (document == nullptr || context.printer == nullptr || context.painter == nullptr)
         return false;
 
     setupPrinter(document, context.printer);

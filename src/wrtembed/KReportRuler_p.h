@@ -34,13 +34,13 @@ class RulerTabChooser : public QWidget
 {
 public:
     RulerTabChooser(QWidget *parent) : QWidget(parent), m_type(QTextOption::LeftTab), m_showTabs(false) {}
-    virtual ~RulerTabChooser() {}
+    ~RulerTabChooser() override {}
 
     inline QTextOption::TabType type() {return m_type;}
     void setShowTabs(bool showTabs) { if (m_showTabs == showTabs) return; m_showTabs = showTabs; update(); }
-    void mousePressEvent(QMouseEvent *);
+    void mousePressEvent(QMouseEvent *) override;
 
-    void paintEvent(QPaintEvent *);
+    void paintEvent(QPaintEvent *) override;
 
 private:
     QTextOption::TabType m_type;
@@ -95,11 +95,11 @@ class HorizontalPaintingStrategy : public PaintingStrategy
 public:
     HorizontalPaintingStrategy() : lengthInPixel(1) {}
 
-    virtual QRectF drawBackground(const KReportRulerPrivate *ruler, QPainter *painter);
-    virtual void drawTabs(const KReportRulerPrivate *ruler, QPainter *painter);
-    virtual void drawMeasurements(const KReportRulerPrivate *ruler, QPainter *painter, const QRectF &rectangle);
-    virtual void drawIndents(const KReportRulerPrivate *ruler, QPainter *painter);
-    virtual QSize sizeHint();
+    QRectF drawBackground(const KReportRulerPrivate *ruler, QPainter *painter) override;
+    void drawTabs(const KReportRulerPrivate *ruler, QPainter *painter) override;
+    void drawMeasurements(const KReportRulerPrivate *ruler, QPainter *painter, const QRectF &rectangle) override;
+    void drawIndents(const KReportRulerPrivate *ruler, QPainter *painter) override;
+    QSize sizeHint() override;
 
 private:
     qreal lengthInPixel;
@@ -110,11 +110,11 @@ class VerticalPaintingStrategy : public PaintingStrategy
 public:
     VerticalPaintingStrategy() : lengthInPixel(1) {}
 
-    virtual QRectF drawBackground(const KReportRulerPrivate *ruler, QPainter *painter);
-    virtual void drawTabs(const KReportRulerPrivate *, QPainter *) {}
-    virtual void drawMeasurements(const KReportRulerPrivate *ruler, QPainter *painter, const QRectF &rectangle);
-    virtual void drawIndents(const KReportRulerPrivate *, QPainter *) { }
-    virtual QSize sizeHint();
+    QRectF drawBackground(const KReportRulerPrivate *ruler, QPainter *painter) override;
+    void drawTabs(const KReportRulerPrivate *, QPainter *) override {}
+    void drawMeasurements(const KReportRulerPrivate *ruler, QPainter *painter, const QRectF &rectangle) override;
+    void drawIndents(const KReportRulerPrivate *, QPainter *) override { }
+    QSize sizeHint() override;
 
 private:
     qreal lengthInPixel;
@@ -125,7 +125,7 @@ class HorizontalDistancesPaintingStrategy : public HorizontalPaintingStrategy
 public:
     HorizontalDistancesPaintingStrategy() {}
 
-    virtual void drawMeasurements(const KReportRulerPrivate *ruler, QPainter *painter, const QRectF &rectangle);
+    void drawMeasurements(const KReportRulerPrivate *ruler, QPainter *painter, const QRectF &rectangle) override;
 
 private:
     void drawDistanceLine(const KReportRulerPrivate *d, QPainter *painter, qreal start, qreal end);
@@ -145,7 +145,7 @@ public:
      * @param viewConverter the view converter used to convert from point to pixel
      */
     KReportRuler(QWidget* parent, Qt::Orientation orientation, const KReportZoomHandler* viewConverter);
-    ~KReportRuler();
+    ~KReportRuler() override;
 
     /// For paragraphs each tab definition is represented by this struct.
     struct Tab {
@@ -190,10 +190,10 @@ public:
     QList<QAction*> popupActionList() const;
 
     /// reimplemented
-    virtual QSize minimumSizeHint() const;
+    QSize minimumSizeHint() const override;
 
     /// reimplemented
-    virtual QSize sizeHint() const;
+    QSize sizeHint() const override;
 
 public Q_SLOTS:
     /// Set the unit of the ruler
@@ -348,13 +348,13 @@ Q_SIGNALS:
 
 protected:
     /// reimplemented
-    virtual void paintEvent(QPaintEvent* event);
+    void paintEvent(QPaintEvent* event) override;
     /// reimplemented
-    virtual void mousePressEvent(QMouseEvent *ev);
+    void mousePressEvent(QMouseEvent *ev) override;
     /// reimplemented
-    virtual void mouseReleaseEvent(QMouseEvent *ev);
+    void mouseReleaseEvent(QMouseEvent *ev) override;
     /// reimplemented
-    virtual void mouseMoveEvent(QMouseEvent *ev);
+    void mouseMoveEvent(QMouseEvent *ev) override;
 
 private:
     KReportRulerPrivate * const d;
@@ -436,8 +436,8 @@ public:
     qreal numberStepForUnit() const;
     /// @return The rounding of value to the nearest multiple of stepValue
     qreal doSnapping(qreal value) const;
-    Selection selectionAtPosition(const QPoint & pos, int *selectOffset = 0);
-    int hotSpotIndex(const QPoint & pos);
+    Selection selectionAtPosition(const QPoint &pos, int *selectOffset = nullptr);
+    int hotSpotIndex(const QPoint &pos);
     qreal effectiveActiveRangeStart() const;
     qreal effectiveActiveRangeEnd() const;
 

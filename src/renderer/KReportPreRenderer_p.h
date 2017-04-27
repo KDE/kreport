@@ -41,7 +41,7 @@ class KReportPreRendererPrivate : public QObject
     Q_OBJECT
 public:
     KReportPreRendererPrivate(KReportPreRenderer *preRenderer);
-    virtual ~KReportPreRendererPrivate();
+    ~KReportPreRendererPrivate() override;
 
     KReportPreRenderer * const m_preRenderer;
     bool m_valid;

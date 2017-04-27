@@ -49,7 +49,7 @@ class Report : public QObject
 public:
     explicit Report(KReportDocument*);
 
-    ~Report();
+    ~Report() override;
 
 public Q_SLOTS:
     //! @return the title of the report as a string

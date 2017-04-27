@@ -62,7 +62,7 @@ QObject* KReportMapsPlugin::createScriptInstance(KReportItemBase* /*item*/)
     if (image) {
         return new Scripting::Maps(image);
     }*/
-    return 0;
+    return nullptr;
 }
 #endif
 

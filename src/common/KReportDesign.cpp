@@ -69,8 +69,8 @@ KReportDesign::~KReportDesign()
 bool KReportDesign::setContent(const QString &text, KReportDesignReadingStatus *status)
 {
     QDomDocument doc;
-    if (!doc.setContent(text, status ? &status->errorDetails : 0, status ? &status->lineNumber : 0,
-                        status ? &status->columnNumber : 0))
+    if (!doc.setContent(text, status ? &status->errorDetails : nullptr, status ? &status->lineNumber : nullptr,
+                        status ? &status->columnNumber : nullptr))
     {
         if (status) {
             status->errorMessage = tr("Could not parse XML document.");

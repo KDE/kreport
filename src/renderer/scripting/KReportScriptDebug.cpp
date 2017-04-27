@@ -37,5 +37,5 @@ void KReportScriptDebug::print(const QString& s)
 
 void KReportScriptDebug::message(const QString &t, const QString &m)
 {
-    KMessageBox::information(0, m, t);
+    KMessageBox::information(nullptr, m, t);
 }

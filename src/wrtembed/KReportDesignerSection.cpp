@@ -50,13 +50,13 @@ class ReportResizeBar : public QFrame
 {
     Q_OBJECT
 public:
-    explicit ReportResizeBar(QWidget * parent = 0, Qt::WindowFlags f = 0);
+    explicit ReportResizeBar(QWidget * parent = nullptr, Qt::WindowFlags f = nullptr);
 
 Q_SIGNALS:
     void barDragged(int delta);
 
 protected:
-    void mouseMoveEvent(QMouseEvent * e);
+    void mouseMoveEvent(QMouseEvent * e) override;
 };
 
 //! @internal
@@ -64,15 +64,15 @@ class KReportDesignerSectionTitle : public QLabel
 {
     Q_OBJECT
 public:
-    explicit KReportDesignerSectionTitle(QWidget *parent = 0);
-    ~KReportDesignerSectionTitle();
+    explicit KReportDesignerSectionTitle(QWidget *parent = nullptr);
+    ~KReportDesignerSectionTitle() override;
 
 Q_SIGNALS:
     void clicked();
 
 protected:
-    virtual void paintEvent(QPaintEvent* event);
-    virtual void mousePressEvent(QMouseEvent *event);
+    void paintEvent(QPaintEvent* event) override;
+    void mousePressEvent(QMouseEvent *event) override;
 };
 
 //! @internal
@@ -326,7 +326,7 @@ QGraphicsItemList KReportDesignerSection::items() const
 
     if (d->scene) {
         foreach (QGraphicsItem *itm, d->scene->items()) {
-            if (itm->parentItem() == 0) {
+            if (itm->parentItem() == nullptr) {
                 items << itm;
             }
         }

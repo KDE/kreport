@@ -35,7 +35,7 @@ class Text : public QObject
 public:
     explicit Text(KReportItemText*);
 
-    ~Text();
+    ~Text() override;
 public Q_SLOTS:
 
     //!Returns the source (column) that the text item gets its data from

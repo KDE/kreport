@@ -59,7 +59,7 @@ QObject* KReportFieldPlugin::createScriptInstance(KReportItemBase* item)
     if (field) {
         return new Scripting::Field(field);
     }
-    return 0;
+    return nullptr;
 }
 #endif
 

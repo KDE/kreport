@@ -9,7 +9,7 @@ class KREPORT_EXPORT KReportGroupTracker : public QObject {
 
 protected:
     KReportGroupTracker() {}
-    virtual ~KReportGroupTracker(){}
+    ~KReportGroupTracker() override{}
 
 public:
     Q_SLOT virtual void setGroupData(const QMap<QString, QVariant> &groupData) = 0;

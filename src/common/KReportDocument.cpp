@@ -27,14 +27,14 @@
 
 void KReportDocument::init()
 {
-    m_pageHeaderFirst = m_pageHeaderOdd = m_pageHeaderEven = m_pageHeaderLast = m_pageHeaderAny = 0;
-    m_pageFooterFirst = m_pageFooterOdd = m_pageFooterEven = m_pageFooterLast = m_pageFooterAny = 0;
-    m_reportHeader = m_reportFooter = 0;
+    m_pageHeaderFirst = m_pageHeaderOdd = m_pageHeaderEven = m_pageHeaderLast = m_pageHeaderAny = nullptr;
+    m_pageFooterFirst = m_pageFooterOdd = m_pageFooterEven = m_pageFooterLast = m_pageFooterAny = nullptr;
+    m_reportHeader = m_reportFooter = nullptr;
 }
 
 KReportDocument::KReportDocument(QObject *parent)
         : QObject(parent)
-        , m_detailSection(0)
+        , m_detailSection(nullptr)
 {
     init();
     m_valid = true;
@@ -42,7 +42,7 @@ KReportDocument::KReportDocument(QObject *parent)
 
 KReportDocument::KReportDocument(const QDomElement & elemSource, QObject *parent)
         : QObject(parent)
-        , m_detailSection(0)
+        , m_detailSection(nullptr)
 {
     m_valid = false;
     init();
@@ -210,7 +210,7 @@ KReportItemBase* KReportDocument::object(const QString& n) const
             return o;
         }
     }
-    return 0;
+    return nullptr;
 }
 
 QList<KReportSectionData*> KReportDocument::sections() const
@@ -249,7 +249,7 @@ KReportSectionData* KReportDocument::section(const QString& sn) const
             return sec;
         }
     }
-    return 0;
+    return nullptr;
 }
 
 KReportSectionData* KReportDocument::section(KReportSectionData::Section s) const
@@ -293,7 +293,7 @@ KReportSectionData* KReportDocument::section(KReportSectionData::Section s) cons
         sec = m_reportFooter;
         break;
     default:
-        sec = 0;
+        sec = nullptr;
     }
     return sec;
 }

@@ -57,7 +57,7 @@ QObject* KReportCheckBoxPlugin::createScriptInstance(KReportItemBase* item)
     if (check) {
        return new Scripting::CheckBox(check);
     }
-    return 0;
+    return nullptr;
 }
 #endif
 

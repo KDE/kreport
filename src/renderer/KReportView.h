@@ -38,7 +38,7 @@ class KREPORT_EXPORT KReportView : public QWidget
 public:
     explicit KReportView(QWidget *parent);
 
-    ~KReportView();
+    ~KReportView() override;
 
     void moveToFirstPage();
     void moveToLastPage();

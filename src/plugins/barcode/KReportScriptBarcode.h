@@ -33,7 +33,7 @@ class Barcode : public QObject
 public:
     explicit Barcode(KReportItemBarcode *f);
 
-    ~Barcode();
+    ~Barcode() override;
 
 public Q_SLOTS:
 

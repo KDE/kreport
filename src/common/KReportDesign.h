@@ -71,7 +71,7 @@ public:
     //! Reads the XML document in .kreport format from the string @a text
     //! @return true if the content was successfully parsed
     //! On failure false is returned and if @a status is provided, it is updated accordingly.
-    bool setContent(const QString &text, KReportDesignReadingStatus *status = 0);
+    bool setContent(const QString &text, KReportDesignReadingStatus *status = nullptr);
 
     //! Converts the report document back to its textual representation.
     QString toString(int indent = 1) const;

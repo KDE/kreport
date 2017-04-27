@@ -73,7 +73,7 @@ class KREPORT_EXPORT KReportItemBase : public QObject
 public:
 
     KReportItemBase();
-    virtual ~KReportItemBase();
+    ~KReportItemBase() override;
 
     /**
     @brief Return the item type as a string.  Required by all items

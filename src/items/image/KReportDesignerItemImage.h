@@ -28,16 +28,17 @@ class KReportDesignerItemImage : public KReportItemImage, public KReportDesigner
 {
   Q_OBJECT
 public:
-    KReportDesignerItemImage(KReportDesigner *, QGraphicsScene* scene, const QPointF &pos);
-    KReportDesignerItemImage(const QDomNode & element, KReportDesigner *, QGraphicsScene* scene);
+    KReportDesignerItemImage(KReportDesigner *, QGraphicsScene *scene, const QPointF &pos);
+    KReportDesignerItemImage(const QDomNode &element, KReportDesigner *, QGraphicsScene *scene);
+    ~KReportDesignerItemImage() override;
 
-    virtual ~KReportDesignerItemImage();
-    virtual void buildXML(QDomDocument *doc, QDomElement *parent);
-    virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = 0);
-    virtual KReportDesignerItemImage* clone();
+    void buildXML(QDomDocument *doc, QDomElement *parent) override;
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
+               QWidget *widget = nullptr) override;
+    KReportDesignerItemImage *clone() override;
 
 protected:
-    virtual void mousePressEvent(QGraphicsSceneMouseEvent * event);
+    void mousePressEvent(QGraphicsSceneMouseEvent *event) override;
 
 private:
     void init(QGraphicsScene*, KReportDesigner*);

@@ -42,7 +42,7 @@ class KReportView::Private
 {
 public:
     explicit Private()
-        : reportPage(0)
+        : reportPage(nullptr)
         , currentPage(1)
         , pageCount(0)
     {}

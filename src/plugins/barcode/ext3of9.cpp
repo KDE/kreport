@@ -168,7 +168,7 @@ const _ext3of9map ext3of9map[] = {
     _ext3of9map('~' , "%S"),
     _ext3of9map('\177' , "%T"),   // DEL
 
-    _ext3of9map(-1 , 0)
+    _ext3of9map(-1 , nullptr)
 };
 
 inline QString convertTo3of9(char code)

@@ -70,7 +70,7 @@ KReportDesignerItemField* KReportDesignerItemField::clone()
     QDomNode n;
     buildXML(&d, &e);
     n = e.firstChild();
-    return new KReportDesignerItemField(n, designer(), 0);
+    return new KReportDesignerItemField(n, designer(), nullptr);
 }
 
 // methods (deconstructor)

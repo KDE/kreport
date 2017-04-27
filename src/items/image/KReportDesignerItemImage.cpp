@@ -70,7 +70,7 @@ KReportDesignerItemImage* KReportDesignerItemImage::clone()
     QDomNode n;
     buildXML(&d, &e);
     n = e.firstChild();
-    return new KReportDesignerItemImage(n, designer(), 0);
+    return new KReportDesignerItemImage(n, designer(), nullptr);
 }
 
 KReportDesignerItemImage::~KReportDesignerItemImage()

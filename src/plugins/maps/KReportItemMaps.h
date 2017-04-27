@@ -48,12 +48,12 @@ class KReportItemMaps : public KReportAsyncItemBase
 public:
     KReportItemMaps();
     explicit KReportItemMaps(const QDomNode &element);
-    virtual ~KReportItemMaps();
+    ~KReportItemMaps() override;
 
-    virtual QString typeName() const;
-    virtual int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset, const QVariant &data, KReportScriptHandler *script);
+    QString typeName() const override;
+    int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset, const QVariant &data, KReportScriptHandler *script) override;
 
-    virtual QString itemDataSource() const;
+    QString itemDataSource() const override;
     virtual QVariant realItemData(const QVariant &itemData) const;
 
     void renderFinished();
@@ -86,7 +86,7 @@ protected:
     Marble::MapThemeManager m_themeManager;
 
 private:
-    virtual void createProperties();
+    void createProperties() override;
     void deserializeData(const QVariant& serialized);
 
     bool m_longDataSetFromScript;

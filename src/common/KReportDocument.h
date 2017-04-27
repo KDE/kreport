@@ -40,9 +40,9 @@ class KREPORT_EXPORT KReportDocument : public QObject
     Q_OBJECT
 
 public:
-    explicit KReportDocument(const QDomElement & elemSource, QObject *parent = 0);
-    explicit KReportDocument(QObject *parent = 0);
-    ~KReportDocument();
+    explicit KReportDocument(const QDomElement &elemSource, QObject *parent = nullptr);
+    explicit KReportDocument(QObject *parent = nullptr);
+    ~KReportDocument() override;
 
     bool isValid() const {
         return m_valid;

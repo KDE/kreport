@@ -28,13 +28,15 @@ class KReportCheckBoxPlugin : public KReportPluginInterface
 {
     public:
         explicit KReportCheckBoxPlugin(QObject *parent, const QVariantList &args = QVariantList());
-        virtual ~KReportCheckBoxPlugin();
+        ~KReportCheckBoxPlugin() override;
 
-        virtual QObject* createRendererInstance(const QDomNode& element);
-        virtual QObject* createDesignerInstance(const QDomNode& element, KReportDesigner* , QGraphicsScene* scene);
-        virtual QObject* createDesignerInstance(KReportDesigner* , QGraphicsScene* scene, const QPointF& pos);
+        QObject *createRendererInstance(const QDomNode &element) override;
+        QObject *createDesignerInstance(const QDomNode &element, KReportDesigner *,
+                                        QGraphicsScene *scene) override;
+        QObject *createDesignerInstance(KReportDesigner *, QGraphicsScene *scene,
+                                        const QPointF &pos) override;
 #ifdef KREPORT_SCRIPTING
-        virtual QObject* createScriptInstance(KReportItemBase* item);
+        QObject *createScriptInstance(KReportItemBase *item) override;
 #endif
 };
 

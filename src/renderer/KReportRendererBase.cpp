@@ -27,7 +27,7 @@
 //! @todo port #include "KOdtFrameReportRenderer.h"
 
 KReportRendererContext::KReportRendererContext()
- : painter(0), printer(0)
+ : painter(nullptr), printer(nullptr)
 {
 }
 
@@ -73,5 +73,5 @@ KReportRendererBase* KReportRendererFactory::createInstance(const QString& key)
         return new KReportOdtFrameReportRenderer();
     }
 #endif
-    return 0;
+    return nullptr;
 }

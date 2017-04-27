@@ -60,7 +60,7 @@ QObject* KReportImagePlugin::createScriptInstance(KReportItemBase* item)
     if (image) {
         return new Scripting::Image(image);
     }
-    return 0;
+    return nullptr;
 }
 #endif
 

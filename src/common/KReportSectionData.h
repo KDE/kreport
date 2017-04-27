@@ -64,9 +64,9 @@ public:
         Detail
     };
 
-    explicit KReportSectionData(QObject* parent = 0);
+    explicit KReportSectionData(QObject* parent = nullptr);
     KReportSectionData(const QDomElement &, KReportDocument* report);
-    ~KReportSectionData();
+    ~KReportSectionData() override;
     KPropertySet* propertySet() const {
         return m_set;
     }

@@ -31,14 +31,14 @@ class ScreenRenderer : public KReportRendererBase
 {
 public:
     ScreenRenderer();
-    virtual ~ScreenRenderer();
+    ~ScreenRenderer() override;
 
     //void setPainter(QPainter *);
     //QPainter * painter() {
     //    return m_painter;
     //}
 
-    virtual bool render(const KReportRendererContext& context, ORODocument *document, int page);
+    bool render(const KReportRendererContext &context, ORODocument *document, int page) override;
 
 protected:
     //QPainter* m_painter;

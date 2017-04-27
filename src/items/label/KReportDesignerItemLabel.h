@@ -34,19 +34,19 @@ class KReportDesignerItemLabel : public KReportItemLabel, public KReportDesigner
 public:
     KReportDesignerItemLabel(KReportDesigner *, QGraphicsScene * scene, const QPointF &pos);
     KReportDesignerItemLabel(const QDomNode & element, KReportDesigner *, QGraphicsScene * scene);
-    virtual ~KReportDesignerItemLabel();
+    ~KReportDesignerItemLabel() override;
 
-    virtual void buildXML(QDomDocument *doc, QDomElement *parent);
-    virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = 0);
-    virtual KReportDesignerItemLabel* clone();
+    void buildXML(QDomDocument *doc, QDomElement *parent) override;
+    void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = nullptr) override;
+    KReportDesignerItemLabel* clone() override;
 
 public Q_SLOTS:
-    virtual void enterInlineEditingMode();
-    virtual void exitInlineEditingMode();
+    void enterInlineEditingMode() override;
+    void exitInlineEditingMode() override;
 
 protected:
-    virtual void mouseDoubleClickEvent ( QGraphicsSceneMouseEvent * event );
-    virtual void keyReleaseEvent ( QKeyEvent * event );
+    void mouseDoubleClickEvent ( QGraphicsSceneMouseEvent * event ) override;
+    void keyReleaseEvent ( QKeyEvent * event ) override;
 
 private:
     void init(QGraphicsScene*, KReportDesigner*);

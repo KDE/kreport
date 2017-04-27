@@ -35,14 +35,14 @@ public:
     KReportDesignerItemField(KReportDesigner *, QGraphicsScene * scene, const QPointF &pos);
     //Used when loading from file
     KReportDesignerItemField(const QDomNode & element, KReportDesigner *, QGraphicsScene * scene);
-    virtual ~KReportDesignerItemField();
-    virtual void buildXML(QDomDocument *doc, QDomElement *parent);
+    ~KReportDesignerItemField() override;
+    void buildXML(QDomDocument *doc, QDomElement *parent) override;
 
-    virtual void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget *widget = 0);
-    virtual KReportDesignerItemField* clone();
+    void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget *widget = nullptr) override;
+    KReportDesignerItemField* clone() override;
 
 protected:
-    virtual void mousePressEvent(QGraphicsSceneMouseEvent * event);
+    void mousePressEvent(QGraphicsSceneMouseEvent * event) override;
 
 private:
     void init(QGraphicsScene*, KReportDesigner * d);

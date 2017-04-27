@@ -35,9 +35,9 @@ class KReportDetailSectionData : public QObject
 {
     Q_OBJECT
 public:
-    explicit KReportDetailSectionData(QObject *parent = 0);
+    explicit KReportDetailSectionData(QObject *parent = nullptr);
     KReportDetailSectionData(const QDomElement &elemSource, KReportDocument *report);
-    ~KReportDetailSectionData();
+    ~KReportDetailSectionData() override;
 
     enum PageBreak {
         BreakNone = 0,

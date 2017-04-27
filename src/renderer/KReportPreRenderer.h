@@ -46,7 +46,7 @@ class KREPORT_EXPORT KReportPreRenderer : public QObject
 public:
     explicit KReportPreRenderer(const QDomElement& document);
 
-    virtual ~KReportPreRenderer();
+    ~KReportPreRenderer() override;
 
     //! Sets source data to @a data, takes ownership
     void setSourceData(KReportData* data);

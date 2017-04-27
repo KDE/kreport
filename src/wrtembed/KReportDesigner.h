@@ -54,7 +54,7 @@ public:
     @brief Constructor that create a blank designer
     @param widget QWidget parent
     */
-    explicit KReportDesigner(QWidget *parent = 0);
+    explicit KReportDesigner(QWidget *parent = nullptr);
 
     /**
     @brief Constructor that create a designer, and loads the report described in the QDomElement
@@ -66,7 +66,7 @@ public:
     /**
     @brief Desctructor
     */
-    ~KReportDesigner();
+    ~KReportDesigner() override;
 
     /**
     @brief Sets the report data
@@ -174,7 +174,7 @@ public:
     /**
     @brief Give a hint on the size of the widget
     */
-    virtual QSize sizeHint() const;
+    QSize sizeHint() const override;
 
     /**
     @brief Return a pointer to the zoom handler
@@ -225,13 +225,13 @@ public:
     /**
     @brief Checks if the supplied name is unique among all entities
     */
-    bool isEntityNameUnique(const QString &, KReportItemBase* = 0) const;
+    bool isEntityNameUnique(const QString &, KReportItemBase *ignore = nullptr) const;
 
     /**
     @brief Returns a list of actions that represent the entities that can be inserted into the report.
     Actions are created as children of @a group and belong to the group.
     @return list of actions */
-    static QList<QAction*> itemActions(QActionGroup* group = 0);
+    static QList<QAction*> itemActions(QActionGroup* group = nullptr);
 
     /**
     @brief Populates the toolbar with actions that can be applied to the report
@@ -310,7 +310,7 @@ private:
     */
     void deleteDetail();
 
-    virtual void resizeEvent(QResizeEvent * event);
+    void resizeEvent(QResizeEvent * event) override;
 
     //Properties
     void createProperties();

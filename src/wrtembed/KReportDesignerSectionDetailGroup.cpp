@@ -30,8 +30,8 @@ class KReportDesignerSectionDetailGroup::Private
 {
 public:
     explicit Private()
-        : groupHeader(0)
-        , groupFooter(0)
+        : groupHeader(nullptr)
+        , groupFooter(nullptr)
         , pageBreak(KReportDesignerSectionDetailGroup::BreakNone)
         , sort(Qt::AscendingOrder)
     {}

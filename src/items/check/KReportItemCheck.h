@@ -35,12 +35,12 @@ Q_OBJECT
 public:
     KReportItemCheckBox();
     explicit KReportItemCheckBox(const QDomNode &element);
-    virtual ~KReportItemCheckBox();
+    ~KReportItemCheckBox() override;
 
-    virtual QString typeName() const;
-    virtual int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset, const QVariant &data, KReportScriptHandler *script);
+    QString typeName() const override;
+    int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset, const QVariant &data, KReportScriptHandler *script) override;
 
-    virtual QString itemDataSource()const;
+    QString itemDataSource()const override;
 
 protected:
 
@@ -57,7 +57,7 @@ protected:
     KReportLineStyle lineStyle();
 
 private:
-    virtual void createProperties();
+    void createProperties() override;
 
     friend class Scripting::CheckBox;
 };

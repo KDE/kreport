@@ -39,10 +39,10 @@ KReportScriptHandler::KReportScriptHandler(const KReportData* kodata, KReportDoc
     m_reportData = d;
     m_kreportData = kodata;
 
-    m_engine = 0;
-    m_constants = 0;
-    m_debug = 0;
-    m_draw = 0;
+    m_engine = nullptr;
+    m_constants = nullptr;
+    m_debug = nullptr;
+    m_draw = nullptr;
 
     // Create the script engine instance .
     m_engine = new QJSEngine(this);
@@ -144,7 +144,7 @@ QVariant KReportScriptHandler::evaluate(const QString &code)
         if (!result.isError()) {
             return result.toVariant();
         } else {
-            QMessageBox::warning(0, tr("Script Error"), m_scriptValue.toString());
+            QMessageBox::warning(nullptr, tr("Script Error"), m_scriptValue.toString());
         }
     }
     return QVariant();
@@ -153,7 +153,7 @@ QVariant KReportScriptHandler::evaluate(const QString &code)
 void KReportScriptHandler::displayErrors()
 {
     if (m_scriptValue.isError()) {
-        QMessageBox::warning(0, tr("Script Error"), m_scriptValue.toString());
+        QMessageBox::warning(nullptr, tr("Script Error"), m_scriptValue.toString());
     }
 }
 

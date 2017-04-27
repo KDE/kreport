@@ -22,8 +22,8 @@
 //
 // ORODocument
 //
-ORODocument::ORODocument(const QString & pTitle)
-        : m_title(pTitle)
+ORODocument::ORODocument(const QString &title)
+        : m_title(title)
 {
 }
 
@@ -36,9 +36,9 @@ ORODocument::~ORODocument()
     m_sections.clear();
 }
 
-void ORODocument::setTitle(const QString & pTitle)
+void ORODocument::setTitle(const QString &title)
 {
-    m_title = pTitle;
+    m_title = title;
 }
 
 OROPage* ORODocument::page(int pnum)
@@ -51,7 +51,7 @@ OROPage* ORODocument::page(int pnum)
 
 void ORODocument::addPage(OROPage* p)
 {
-    if (p == 0)
+    if (p == nullptr)
         return;
 
     // check that this page is not already in another document
@@ -67,7 +67,7 @@ OROSection* ORODocument::section(int pnum)
 
 void ORODocument::addSection(OROSection* s)
 {
-    if (s == 0)
+    if (s == nullptr)
         return;
 
     // check that this page is not already in another document
@@ -89,8 +89,8 @@ void ORODocument::notifyChange(int pageNo)
 //
 // OROPage
 //
-OROPage::OROPage(ORODocument * pDocument)
-        : m_document(pDocument)
+OROPage::OROPage(ORODocument *document)
+        : m_document(document)
 {
 
 }
@@ -99,7 +99,7 @@ OROPage::~OROPage()
 {
     if (m_document) {
         m_document->m_pages.removeOne(this);
-        m_document = 0;
+        m_document = nullptr;
     }
 
     qDeleteAll(m_primitives);
@@ -122,10 +122,10 @@ OROPrimitive* OROPage::primitive(int idx)
     return m_primitives.at(idx);
 }
 
-void OROPage::addPrimitive(OROPrimitive* p, bool atBeginning, bool notify)
+void OROPage::addPrimitive(OROPrimitive *p, bool atBeginning, bool notify)
 {
     //kreportDebug() << "Adding primitive" << p->type() << "to page" << page();
-    if (p == 0)
+    if (p == nullptr)
         return;
 
     // check that this primitve is not already in another page
@@ -147,8 +147,8 @@ void OROPage::addPrimitive(OROPrimitive* p, bool atBeginning, bool notify)
 //
 // OROSection
 //
-OROSection::OROSection(ORODocument * pDocument)
-        : m_document(pDocument)
+OROSection::OROSection(ORODocument *document)
+        : m_document(document)
 {
     m_height = 0;
     m_backgroundColor = Qt::white;
@@ -158,7 +158,7 @@ OROSection::~OROSection()
 {
     if (m_document) {
         m_document->m_sections.removeOne(this);
-        m_document = 0;
+        m_document = nullptr;
     }
 
     qDeleteAll(m_primitives);
@@ -172,7 +172,7 @@ OROPrimitive* OROSection::primitive(int idx)
 
 void OROSection::addPrimitive(OROPrimitive* p)
 {
-    if (p == 0)
+    if (p == nullptr)
         return;
 
     m_primitives.append(p);
@@ -216,14 +216,14 @@ bool OROSection::xLessThan(OROPrimitive* s1, OROPrimitive* s2)
 OROPrimitive::OROPrimitive(int pType)
         : m_type(pType)
 {
-    m_page = 0;
+    m_page = nullptr;
 }
 
 OROPrimitive::~OROPrimitive()
 {
    if (m_page) {
         m_page->m_primitives.removeAt(m_page->m_primitives.indexOf(this));
-        m_page = 0;
+        m_page = nullptr;
     }
 }
 

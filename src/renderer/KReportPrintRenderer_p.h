@@ -29,8 +29,8 @@ class PrintRenderer : public KReportRendererBase
 {
     public:
         PrintRenderer();
-        virtual ~PrintRenderer();
-        virtual bool render(const KReportRendererContext&, ORODocument*, int page = -1);
+        ~PrintRenderer() override;
+        bool render(const KReportRendererContext&, ORODocument*, int page = -1) override;
 
     private:
         bool setupPrinter(ORODocument *, QPrinter *);

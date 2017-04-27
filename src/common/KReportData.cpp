@@ -80,5 +80,5 @@ QStringList KReportData::dataSourceNames() const
 KReportData* KReportData::create(const QString &source) const
 {
     Q_UNUSED(source);
-    return 0;
+    return nullptr;
 }

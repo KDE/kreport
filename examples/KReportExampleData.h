@@ -29,23 +29,23 @@ class KReportExampleData : public KReportData
 {
 public:
     KReportExampleData();
-    ~KReportExampleData();
-    virtual QVariant value(const QString& field) const;
-    virtual QVariant value(unsigned int) const;
-    virtual QStringList fieldNames() const;
-    virtual QStringList fieldKeys() const;
-    virtual int fieldNumber(const QString& field) const;
-    virtual qint64 recordCount() const;
-    virtual qint64 at() const;
-    virtual bool moveLast();
-    virtual bool moveFirst();
-    virtual bool movePrevious();
-    virtual bool moveNext();
-    virtual bool close();
-    virtual bool open();
+    ~KReportExampleData() override;
+    QVariant value(const QString &field) const override;
+    QVariant value(unsigned int) const override;
+    QStringList fieldNames() const override;
+    QStringList fieldKeys() const override;
+    int fieldNumber(const QString &field) const override;
+    qint64 recordCount() const override;
+    qint64 at() const override;
+    bool moveLast() override;
+    bool moveFirst() override;
+    bool movePrevious() override;
+    bool moveNext() override;
+    bool close() override;
+    bool open() override;
 
-    virtual QStringList scriptList() const;
-    virtual QString scriptCode(const QString &script) const;
+    QStringList scriptList() const override;
+    QString scriptCode(const QString &script) const override;
 
 private:
     struct Data

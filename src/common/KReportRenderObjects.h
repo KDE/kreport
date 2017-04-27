@@ -54,13 +54,14 @@ class KREPORT_EXPORT ORODocument : public QObject
     friend class OROSection;
 
 public:
-    explicit ORODocument(const QString & = QString());
-    ~ORODocument();
+    explicit ORODocument(const QString &title = QString());
+    ~ORODocument() override;
 
     QString title() const {
         return m_title;
     };
-    void setTitle(const QString &);
+
+    void setTitle(const QString &title);
 
     int pages() const {
         return m_pages.count();
@@ -103,7 +104,7 @@ class KREPORT_EXPORT OROPage
     friend class OROPrimitive;
 
 public:
-    explicit OROPage(ORODocument * = 0);
+    explicit OROPage(ORODocument *document = nullptr);
     ~OROPage();
 
     ORODocument* document() const {
@@ -115,7 +116,7 @@ public:
         return m_primitives.count();
     };
     OROPrimitive* primitive(int);
-    void addPrimitive(OROPrimitive*, bool atBeginning = false, bool notify = false);
+    void addPrimitive(OROPrimitive *p, bool atBeginning = false, bool notify = false);
 
 protected:
     ORODocument * m_document;
@@ -138,7 +139,7 @@ public:
         SortZ
     };
 
-    explicit OROSection(ORODocument * = 0);
+    explicit OROSection(ORODocument *document = nullptr);
     ~OROSection();
 
     void setHeight(int);
@@ -228,7 +229,7 @@ class KREPORT_EXPORT OROTextBox : public OROPrimitive
 {
 public:
     OROTextBox();
-    virtual ~OROTextBox();
+    ~OROTextBox() override;
 
     QString text() const {
         return m_text;
@@ -254,7 +255,7 @@ public:
 
     static const int TextBox;
 
-    virtual OROPrimitive* clone();
+    OROPrimitive* clone() override;
 
     bool requiresPostProcessing(){return m_requiresPostProcessing;}
     void setRequiresPostProcessing(bool pp = true){m_requiresPostProcessing = pp;}
@@ -284,7 +285,7 @@ class KREPORT_EXPORT OROLine : public OROPrimitive
 {
 public:
     OROLine();
-    virtual ~OROLine();
+    ~OROLine() override;
 
     QPointF startPoint() const {
         return position();
@@ -302,7 +303,7 @@ public:
     void setLineStyle(const KReportLineStyle&);
 
     static const int Line;
-    virtual OROPrimitive* clone();
+    OROPrimitive* clone() override;
 protected:
     QPointF m_endPoint;
     KReportLineStyle m_lineStyle;
@@ -316,7 +317,7 @@ class KREPORT_EXPORT OROImage: public OROPrimitive
 {
 public:
     OROImage();
-    virtual ~OROImage();
+    ~OROImage() override;
 
     QImage image() const {
         return m_image;
@@ -339,7 +340,7 @@ public:
     void setAspectRatioMode(int);
 
     static const int Image;
-    virtual OROPrimitive* clone();
+    OROPrimitive* clone() override;
 
 protected:
     QImage m_image;
@@ -352,7 +353,7 @@ class KREPORT_EXPORT OROPicture: public OROPrimitive
 {
 public:
     OROPicture();
-    virtual ~OROPicture();
+    ~OROPicture() override;
 
     void setPicture(const QPicture& p) {
         m_picture = p;
@@ -362,7 +363,7 @@ public:
     };
 
     static const int Picture;
-    virtual OROPrimitive* clone();
+    OROPrimitive* clone() override;
 protected:
     QPicture m_picture;
 
@@ -375,7 +376,7 @@ class KREPORT_EXPORT ORORect: public OROPrimitive
 {
 public:
     ORORect();
-    virtual ~ORORect();
+    ~ORORect() override;
 
     QRectF rect() const {
         return QRectF(m_position, m_size);
@@ -393,7 +394,7 @@ public:
     void setBrush(const QBrush &);
 
     static const int Rect;
-    virtual OROPrimitive* clone();
+    OROPrimitive* clone() override;
 protected:
     QPen m_pen;
     QBrush m_brush;
@@ -407,7 +408,7 @@ class KREPORT_EXPORT OROEllipse: public OROPrimitive
 {
 public:
     OROEllipse();
-    virtual ~OROEllipse();
+    ~OROEllipse() override;
 
     QRectF rect() const {
         return QRectF(m_position, m_size);
@@ -425,7 +426,7 @@ public:
     void setBrush(const QBrush &);
 
     static const int Ellipse;
-    virtual OROPrimitive* clone();
+    OROPrimitive* clone() override;
 
 protected:
     QSizeF m_size;
@@ -437,8 +438,8 @@ class KREPORT_EXPORT OROCheck : public OROPrimitive
 {
 public:
     OROCheck();
-    virtual ~OROCheck();
-    virtual OROPrimitive* clone();
+    ~OROCheck() override;
+    OROPrimitive* clone() override;
     static const int Check;
 
     void setCheckType(const QString& t) {
