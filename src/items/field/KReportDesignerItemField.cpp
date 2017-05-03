@@ -36,6 +36,9 @@ void KReportDesignerItemField::init(QGraphicsScene *scene)
     if (scene)
         scene->addItem(this);
 
+    connect(propertySet(), SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
+            this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
+
     setZValue(z());
 
     updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(), QLatin1String("field"));
