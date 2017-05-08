@@ -385,18 +385,18 @@ QDomElement KReportDesigner::document() const
     content.appendChild(propertyToElement(&doc, d->title));
 
 #ifdef KREPORT_SCRIPTING
+    saveInterpreter = d->originalInterpreter;
+
     if (!d->script->value().toString().isEmpty()) {
-        if (d->script->value().toString() != d->originalScript || d->originalInterpreter == QLatin1String("qtscript")) {
+        if (d->script->value().toString() != d->originalScript || d->originalInterpreter == QLatin1String("qtscript") || d->originalInterpreter.isEmpty() ) {
             //The script has changed so force interpreter to 'javascript'.  Also set if was using qtscript
             saveInterpreter = QLatin1String("javascript");
-        } else {
-            saveInterpreter = d->originalInterpreter;
         }
-
-        QDomElement scr = propertyToElement(&doc, d->script);
-        scr.setAttribute(QLatin1String("report:script-interpreter"), saveInterpreter);
-        content.appendChild(scr);
     }
+
+    QDomElement scr = propertyToElement(&doc, d->script);
+    scr.setAttribute(QLatin1String("report:script-interpreter"), saveInterpreter);
+    content.appendChild(scr);
 #endif
 
     QDomElement grd = doc.createElement(QLatin1String("report:grid"));
