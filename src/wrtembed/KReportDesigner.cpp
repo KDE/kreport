@@ -292,7 +292,7 @@ KReportDesigner::KReportDesigner(QWidget *parent, const QDomElement &data)
                 setReportTitle(it.firstChild().nodeValue());
 #ifdef KREPORT_SCRIPTING
             } else if (n == QLatin1String("report:script")) {
-                d->originalInterpreter = it.toElement().attribute(QLatin1String("report:script-interpreter"));
+                d->originalInterpreter = it.toElement().attribute(QLatin1String("report:script-interpreter"), QLatin1String("javascript"));
                 d->originalScript = it.firstChild().nodeValue();
                 d->script->setValue(d->originalScript);
 
