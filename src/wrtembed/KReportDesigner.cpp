@@ -1193,7 +1193,7 @@ void KReportDesigner::setActiveScene(QGraphicsScene* a)
     update();
 }
 
-QString KReportDesigner::suggestEntityName(const QString &n) const
+QString KReportDesigner::suggestEntityName(const QString &name) const
 {
     KReportDesignerSection *sec;
     int itemCount = 0;
@@ -1228,13 +1228,13 @@ QString KReportDesigner::suggestEntityName(const QString &n) const
         }
     }
 
-    while (!isEntityNameUnique(n + QString::number(itemCount))) {
+    while (!isEntityNameUnique(name + QString::number(itemCount))) {
         itemCount++;
     }
-    return n + QString::number(itemCount);
+    return name + QString::number(itemCount);
 }
 
-bool KReportDesigner::isEntityNameUnique(const QString &n, KReportItemBase* ignore) const
+bool KReportDesigner::isEntityNameUnique(const QString &name, KReportItemBase* ignore) const
 {
     KReportDesignerSection *sec;
     bool unique = true;
@@ -1246,7 +1246,7 @@ bool KReportDesigner::isEntityNameUnique(const QString &n, KReportItemBase* igno
             const QGraphicsItemList l = sec->items();
             for (QGraphicsItemList::const_iterator it = l.constBegin(); it != l.constEnd(); ++it) {
                 KReportItemBase* itm = dynamic_cast<KReportItemBase*>(*it);
-                if (itm && itm->entityName() == n  && itm != ignore) {
+                if (itm && itm->entityName() == name  && itm != ignore) {
                     unique = false;
                     break;
                 }
@@ -1263,7 +1263,7 @@ bool KReportDesigner::isEntityNameUnique(const QString &n, KReportItemBase* igno
                 const QGraphicsItemList l = sec->items();
                 for (QGraphicsItemList::const_iterator it = l.constBegin(); it != l.constEnd(); ++it) {
                     KReportItemBase* itm = dynamic_cast<KReportItemBase*>(*it);
-                    if (itm && itm->entityName() == n  && itm != ignore) {
+                    if (itm && itm->entityName() == name  && itm != ignore) {
                         unique = false;
                         break;
                     }
@@ -1275,7 +1275,7 @@ bool KReportDesigner::isEntityNameUnique(const QString &n, KReportItemBase* igno
                 const QGraphicsItemList l = sec->items();
                 for (QGraphicsItemList::const_iterator it = l.constBegin(); it != l.constEnd(); ++it) {
                     KReportItemBase* itm = dynamic_cast<KReportItemBase*>(*it);
-                    if (itm && itm->entityName() == n  && itm != ignore) {
+                    if (itm && itm->entityName() == name  && itm != ignore) {
                         unique = false;
                         break;
                     }
@@ -1289,7 +1289,7 @@ bool KReportDesigner::isEntityNameUnique(const QString &n, KReportItemBase* igno
             const QGraphicsItemList l = sec->items();
             for (QGraphicsItemList::const_iterator it = l.constBegin(); it != l.constEnd(); ++it) {
                 KReportItemBase* itm = dynamic_cast<KReportItemBase*>(*it);
-                if (itm && itm->entityName() == n  && itm != ignore) {
+                if (itm && itm->entityName() == name  && itm != ignore) {
                     unique = false;
                     break;
                 }

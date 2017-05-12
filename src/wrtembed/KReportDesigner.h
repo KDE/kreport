@@ -221,12 +221,12 @@ public:
     @brief Return a unique name that can be used by the entity
     @param entity Name of entity
     */
-    QString suggestEntityName(const QString &) const;
+    QString suggestEntityName(const QString &name) const;
 
     /**
     @brief Checks if the supplied name is unique among all entities
     */
-    bool isEntityNameUnique(const QString &, KReportItemBase* = nullptr) const;
+    bool isEntityNameUnique(const QString &name, KReportItemBase *ignore = nullptr) const;
 
     /**
     @brief Returns a list of actions that represent the entities that can be inserted into the report.

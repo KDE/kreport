@@ -38,7 +38,7 @@ class BoundedTextItem : public QGraphicsTextItem
 public:
     explicit BoundedTextItem(QGraphicsItem *parent);
     QRectF boundingRect() const override;
-    void paint( QPainter *painter, const QStyleOptionGraphicsItem *o, QWidget *w) override;
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *o, QWidget *w) override;
     void setBackgroudColor(const QColor &bc);
     void setForegroundColor(const QColor &fc);
 
