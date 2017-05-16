@@ -29,15 +29,6 @@
 
 //! @todo replace with ReportItemMaps(const QDomNode &element = QDomNode())
 KReportItemMaps::KReportItemMaps()
-    : m_longtitude(0)
-    , m_latitude(0)
-    , m_zoom(1200)
-    , m_pageId(nullptr)
-    , m_sectionId(nullptr)
-    , m_oroPicture(nullptr)
-    , m_longDataSetFromScript(false)
-    , m_latDataSetFromScript(false)
-    , m_zoomDataSetFromScript(false)
 {
     createProperties();
 }

@@ -18,3 +18,8 @@
 
 
 #include "KReportAsyncItemBase.h"
+
+QVariant KReportAsyncItemBase::realItemData(const QVariant& itemData) const
+{
+    return itemData;
+}

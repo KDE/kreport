@@ -52,7 +52,7 @@ public:
     int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset, const QVariant &data, KReportScriptHandler *script) override;
 
     QString itemDataSource() const override;
-    virtual QVariant realItemData(const QVariant &itemData) const;
+    QVariant realItemData(const QVariant &itemData) const override;
 
     void renderFinished();
 
@@ -72,13 +72,13 @@ protected:
 
     void setColumn(const QString&);
 
-    qreal m_longtitude;
-    qreal m_latitude;
-    int m_zoom;
-    OROPage *m_pageId;
-    OROSection *m_sectionId;
+    qreal m_longtitude = 0.0;
+    qreal m_latitude = 0.0;
+    int m_zoom = 1200;
+    OROPage *m_pageId = nullptr;
+    OROSection *m_sectionId = nullptr;
     QPointF m_offset;
-    OROPicture * m_oroPicture;
+    OROPicture * m_oroPicture = nullptr;
     KReportMapRenderer m_mapRenderer;
     Marble::MapThemeManager m_themeManager;
 
@@ -86,9 +86,9 @@ private:
     void createProperties() override;
     void deserializeData(const QVariant& serialized);
 
-    bool m_longDataSetFromScript;
-    bool m_latDataSetFromScript;
-    bool m_zoomDataSetFromScript;
+    bool m_longDataSetFromScript = false;
+    bool m_latDataSetFromScript = false;
+    bool m_zoomDataSetFromScript = false;
 
     friend class Scripting::Maps;
 };

@@ -56,12 +56,12 @@ QObject* KReportMapsPlugin::createDesignerInstance(KReportDesigner* designer, QG
 }
 
 #ifdef KREPORT_SCRIPTING
-QObject* KReportMapsPlugin::createScriptInstance(KReportItemBase* /*item*/)
+QObject* KReportMapsPlugin::createScriptInstance(KReportItemBase* item)
 {
-    /*KoReportItemMaps *image = dynamic_cast<KoReportItemMaps*>(item);
-    if (image) {
-        return new Scripting::Maps(image);
-    }*/
+    KReportItemMaps *map = qobject_cast<KReportItemMaps*>(item);
+    if (map) {
+        return new Scripting::Maps(map);
+    }
     return nullptr;
 }
 #endif

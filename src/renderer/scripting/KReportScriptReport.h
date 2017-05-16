@@ -19,6 +19,7 @@
 
 #include <QObject>
 #include <QtQml/QJSValue>
+#include <QMap>
 
 class KReportDocument;
 
@@ -83,6 +84,7 @@ public Q_SLOTS:
 private:
     KReportDocument *m_reportData;
     QJSValue m_scriptObject;
+    QMap<QString, QObject*> m_scriptObjMap;
 };
 
 }

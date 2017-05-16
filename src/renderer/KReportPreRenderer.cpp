@@ -355,7 +355,7 @@ qreal KReportPreRendererPrivate::renderSection(const KReportSectionData & sectio
             KReportAsyncItemBase *async_ob = qobject_cast<KReportAsyncItemBase*>(ob);
             if (async_ob){
                 //kreportDebug() << "async object";
-                asyncManager->addItem(async_ob, m_page, sec, offset, itemData, m_scriptHandler);
+                asyncManager->addItem(async_ob, m_page, sec, offset, async_ob->realItemData(itemData), m_scriptHandler);
             } else {
                 //kreportDebug() << "sync object";
                 itemHeight = ob->renderSimpleData(m_page, sec, offset, itemData, m_scriptHandler);
