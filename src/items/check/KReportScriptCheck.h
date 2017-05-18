@@ -39,44 +39,50 @@ namespace Scripting
 
         public Q_SLOTS:
 
-            //! Return the value of the checkbox
+            //! @return the value of the checkbox
             bool value() const;
             //! Set the value of the checkbox, defaults to checked if no value is given
             void setValue(bool val = true);
 
-            //! Returns the style of the checkbox as Cross, Tick or Dot
+            //! @return the style of the checkbox as Cross, Tick or Dot
             QString checkStyle() const;
             //!Sets the style of the checkbox, valid values are Cross, Tick or Dot
             void setCheckStyle(const QString&);
 
-            //!Returns the foreground color
+            //! @return the foreground (text) color of the text-item
             QColor foregroundColor() const;
-            //!Sets the foreground color
+
+            //! Sets the foreground (text) color of the text-item to the given color
             void setForegroundColor(const QColor&);
 
-            //!Returs the line color
+            //! @return the border line color of the text-item
             QColor lineColor() const;
-            //!Sets the line color
+
+            //! Sets the border line color of the text-item to the given color
             void setLineColor(const QColor&);
 
-            //!Returns the line weight (thickness)
+            //! @return the border line weight (thickness) of the text-item
             int lineWeight() const;
-            //!Serts the line weight (thicknes)
+
+            //! Sets the border line weight (thickness) of the text-item
             void setLineWeight(int);
 
-            //! Returns the line style.  Valid values are those from Qt::PenStyle (0-5)
+            //! @return the border line style of the text-item.  Values are from Qt::Penstyle range 0-5
             int lineStyle() const;
-            //! Srts the line style.  Valid values are those from Qt::PenStyle (0-5)
+
+            //! Sets the border line style of the text-item to the given style in the range 0-5
             void setLineStyle(int);
 
-            //!Returns the position of the checkbox within the parent section
+            //! @returns the position of the text-item in points
             QPointF position() const;
-            //!Sets the position of the checkbox within the parent section
+
+            //! Sets the position of the text-item to the given point coordinates
             void setPosition(const QPointF&);
 
-            //!Returns the size of the checkbox
+            //! @returns the size of the text-item in points
             QSizeF size() const;
-            //!Serts the size of the checkbox
+
+            //! Sets the size of the text-item to the given size in points
             void setSize(const QSizeF&);
 
         private:

@@ -44,9 +44,9 @@ public Q_SLOTS:
 
     /**
      * Sets the position of the map in points
-     * @param Position
+     * @param position
      */
-    void setPosition(const QPointF &p);
+    void setPosition(const QPointF &position);
 
     /**
      * Get the size of the map
@@ -56,14 +56,26 @@ public Q_SLOTS:
 
     /**
      * Set the size of the map in points
-     * @param Size
+     * @param size
      */
-    void setSize(const QSizeF &s);
+    void setSize(const QSizeF &size);
 
+    /**
+     * Set the latitude value of the map
+     * @param latitude
+     */
     void setLatitude(qreal latitude);
 
+    /**
+     * Set the longitude value of the map
+     * @param longitude
+     */
     void setLongitude(qreal longitude);
 
+    /**
+     * Set the zoom factor of the map
+     * @param zoom
+     */
     void setZoom(int zoom);
 
 private:

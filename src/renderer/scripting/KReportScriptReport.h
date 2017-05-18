@@ -28,21 +28,21 @@ namespace Scripting
 
 
 /**
-    @ *brief Report object user scripting API.
+ @brief Report object user scripting API.
 
-    Contains methods for a report object which can be called by user scripts. \n
+ Contains methods for a report object which can be called by user scripts. \n
 
-    Example: \n
-    \code
-    function report()
-    {
-        this.OnOpen = function()
-        {
-            debug.print("Report opened!");
-        }
-    }
-    reportname.initialize(new report())
-    \endcode
+ Example: \n
+ \code
+ function report()
+ {
+  this.OnOpen = function()
+  {
+   debug.print("Report opened!");
+  }
+ }
+ reportname.initialize(new report())
+ \endcode
 */
 class Report : public QObject
 {

@@ -1,12 +1,15 @@
 /**
  * \mainpage
  *
- * KoReport is a library for the generation of reports in multiple formats.
+ * KReport is a library for the generation of reports in multiple formats.
+ *
+ * It contains support for user generated scripts written in Javascript.
+ * This document describes the user facing API for controling reports.
  *
  * Concepts
  * ========
  *
- * KoReport user scripting has the following concepts:
+ * KReport user scripting has the following concepts:
  * * The top-level report object \n
  *   This contains functions for retreiving the report name, section objects and item objects \n
  *   It also contains event handlers which are executed at open, complete, and newPage events \n
@@ -39,7 +42,7 @@
  * Example
  * =======
  *
- * The following javascripy snippet contains a basic object with no methods
+ * The following javascript snippet contains a basic object with no methods
  *
  * \code
  * function detail()

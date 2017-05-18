@@ -23,7 +23,7 @@
 class KReportSectionData;
 
 /**
- @ *brief Report section object user scripting API.
+ @brief Report section object user scripting API.
 
  Contains methods for a report section object which can be called by user scripts. \n
 
@@ -31,10 +31,10 @@ class KReportSectionData;
  \code
  function detail()
  {
- this.OnRender = function()
- {
- debug.print("Rendering detail section!");
- }
+  this.OnRender = function()
+  {
+   debug.print("Rendering detail section!");
+  }
  }
  reportname.section_detail.initialize(new detail())
  \endcode

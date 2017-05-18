@@ -45,62 +45,61 @@ public Q_SLOTS:
      * Return the start position of the line
      * @return start position
      */
-    QPointF startPosition();
+    QPointF startPosition() const;
 
     /**
      * Set the start position of the line
-     * @param StartPosition
+     * @param startPosition
      */
-    void setStartPosition(const QPointF&);
+    void setStartPosition(const QPointF& startPosition);
 
     /**
      * Return the end position of the line
      * @return end position
      */
-    QPointF endPosition();
+    QPointF endPosition() const;
 
     /**
      * Set the end position of the line
-     * @param EndPosition
+     * @param endPosition
      */
-    void setEndPosition(const QPointF&);
+    void setEndPosition(const QPointF& endPosition);
 
     /**
-     * Return the color of the line
+     * Return the color of the linelineColor
      * @return line color
      */
-    QColor lineColor();
+    QColor lineColor() const;
 
     /**
      * Sets the line color
-     * @param LineColor
+     * @param lineColor
      */
-    void setLineColor(const QColor&);
+    void setLineColor(const QColor& lineColor);
 
     /**
      * Return the weight (width) of the line
      * @return Weight
      */
-    int lineWeight();
+    int lineWeight() const;
 
     /**
      * Set the weight (width) of the line
-     * @param Weight
+     * @param weight
      */
-    void setLineWeight(int);
+    void setLineWeight(int const weight);
 
     /**
      * Return the line style.  Valid values are those from Qt::PenStyle (0-5)
      * @return Style
      */
-    int lineStyle();
-
+    int lineStyle() const;
 
     /**
      * Set the style of the line
-     * @param Style From Qt::PenStyle (0-5)
+     * @param style From Qt::PenStyle (0-5)
      */
-    void setLineStyle(int);
+    void setLineStyle(int style);
 
 private:
     KReportItemLine *m_line;

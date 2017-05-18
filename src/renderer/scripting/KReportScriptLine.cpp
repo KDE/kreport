@@ -32,56 +32,56 @@ Line::~Line()
 {
 }
 
-
-QColor Line::lineColor()
+QColor Line::lineColor() const
 {
     return m_line->m_lineColor->value().value<QColor>();
 }
 
-void Line::setLineColor(const QColor& c)
+void Line::setLineColor(const QColor& color)
 {
-    m_line->m_lineColor->setValue(c);
+    m_line->m_lineColor->setValue(color);
 }
 
-int Line::lineWeight()
+int Line::lineWeight() const
 {
     return m_line->m_lineWeight->value().toInt();
 }
 
-void Line::setLineWeight(int w)
+void Line::setLineWeight(int weight)
 {
-    m_line->m_lineWeight->setValue(w);
+    m_line->m_lineWeight->setValue(weight);
 }
 
-int Line::lineStyle()
+int Line::lineStyle() const
 {
     return m_line->m_lineStyle->value().toInt();
 }
-void Line::setLineStyle(int s)
+
+void Line::setLineStyle(int style)
 {
-    if (s < 0 || s > 5) {
-        s = 1;
+    if (style < 0 || style > 5) {
+        style = 1;
     }
-    m_line->m_lineStyle->setValue(s);
+    m_line->m_lineStyle->setValue(style);
 }
 
-QPointF Line::startPosition()
+QPointF Line::startPosition() const
 {
     return m_line->m_start->value().toPointF();
 }
 
-void Line::setStartPosition(const QPointF& p)
+void Line::setStartPosition(const QPointF& startPosition)
 {
-    m_line->m_start->setValue(p);
+    m_line->m_start->setValue(startPosition);
 }
 
-QPointF Line::endPosition()
+QPointF Line::endPosition() const
 {
     return m_line->m_end->value().toPointF();
 }
 
-void Line::setEndPosition(const QPointF& p)
+void Line::setEndPosition(const QPointF& endPosition)
 {
-    m_line->m_end->setValue(p);
+    m_line->m_end->setValue(endPosition);
 }
 }

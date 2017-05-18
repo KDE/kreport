@@ -38,9 +38,9 @@ QPointF Maps::position() const
     return m_map->position();
 }
 
-void Maps::setPosition(const QPointF& p)
+void Maps::setPosition(const QPointF& position)
 {
-    m_map->setPosition(p);
+    m_map->setPosition(position);
 }
 
 QSizeF Maps::size() const
@@ -48,9 +48,9 @@ QSizeF Maps::size() const
     return m_map->size();
 }
 
-void Maps::setSize(const QSizeF& s)
+void Maps::setSize(const QSizeF& size)
 {
-    m_map->setSize(s);
+    m_map->setSize(size);
 }
 
 void Maps::setLatitude(qreal latitude)
