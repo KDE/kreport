@@ -7,7 +7,7 @@ from __future__ import print_function
 #
 #   Shared Data Compiler (SDC)
 
-version = '0.2'
+version = '0.3'
 
 #   A tool that takes a header file with C++ class declaration with specification
 #   of class' data members and injects getters, setters and facilities for
@@ -234,12 +234,18 @@ def insert_operator_neq():
 """ % (shared_class_name))
 
 """
+    Prepends 'virtual' to the method if there is superclass, otherwise appends 'override'.
+"""
+def virtual_or_override(hasSuperclass, method):
+    return ('virtual ' if not hasSuperclass else '') + method + (' override' if hasSuperclass else '')
+
+"""
     Inserts generated clone() method (makes sense for explicitly shared class).
 """
 def insert_clone():
     global outfile, shared_class_name, shared_class_options, superclass
     line = """    //! Clones the object with all attributes; the copy isn't shared with the original.
-    virtual %s clone() const%s""" % (shared_class_name, 'override ' if superclass else '')
+    %s""" % virtual_or_override(superclass, shared_class_name + ' clone() const')
     custom_clone = False; # not needed I guess: shared_class_options['custom_clone']
     if custom_clone:
         line += """;
@@ -298,12 +304,11 @@ def insert_generated_code(context):
         }
 
 """)
-    outfile.write("""        virtual ~Data() {}
+    outfile.write("""        %s {}
 
-        //! Clones the object with all attributes; the copy isn't shared with the original.
-        virtual %sData* clone() const""" % ((superclass + '::') if superclass else ''))
-    if superclass:
-        outfile.write(' override')
+""" % virtual_or_override(superclass, '~Data()'))
+    outfile.write("""        //! Clones the object with all attributes; the copy isn't shared with the original.
+        %s""" % virtual_or_override(superclass, ((superclass + '::') if superclass else '') + "Data* clone() const"))
     if shared_class_options['custom_clone']:
         outfile.write(""";
 
@@ -751,8 +756,8 @@ def process():
     }
 """ % (shared_class_name, shared_class_name)
             main_ctor += """
-    %s~%s();
-""" % (('virtual ' if shared_class_options['virtual_dtor'] else ''), shared_class_name)
+    %s;
+""" % virtual_or_override(superclass and shared_class_options['virtual_dtor'], '~' + shared_class_name + '()')
             if shared_class_options['explicit']:
                 outfile.write("""/*! @note objects of this class are explicitly shared, what means they behave like regular
           C++ pointers, except that by doing reference counting and not deleting the shared
