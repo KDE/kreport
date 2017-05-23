@@ -27,12 +27,12 @@
 KReportDetailGroupSectionDialog::KReportDetailGroupSectionDialog(QWidget* parent)
   : QDialog(parent)
 {
-    QWidget *widget = new QWidget(this);
-    setupUi(widget);
-   //! @todo  setMainWidget(widget);
+    setupUi(this);
 
-    //! @todo setButtons(Ok | Cancel);
-    //! @todo setCaption(tr("Group Section Editor"));
+    connect(buttonBox, SIGNAL(accepted()), this, SLOT(accept()));
+    connect(buttonBox, SIGNAL(rejected()), this, SLOT(reject()));
+
+    setWindowTitle(tr("Group Section Editor"));
 }
 
 /*
