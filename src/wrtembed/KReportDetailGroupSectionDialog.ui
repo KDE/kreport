@@ -19,10 +19,15 @@
  * License along with this library.  If not, see http://www.gnu.org/licenses/.</comment>
  <class>DetailGroupSectionDialog</class>
  <widget class="QWidget" name="DetailGroupSectionDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>269</width>
+    <height>115</height>
+   </rect>
+  </property>
   <layout class="QFormLayout" name="formLayout">
-   <property name="margin">
-    <number>0</number>
-   </property>
    <item row="0" column="0">
     <widget class="QLabel" name="lblColumn">
      <property name="text">
@@ -62,6 +67,9 @@
      <property name="text">
       <string>Show group header:</string>
      </property>
+     <property name="buddy">
+      <cstring>cbHead</cstring>
+     </property>
     </widget>
    </item>
    <item row="2" column="1">
@@ -75,6 +83,9 @@
     <widget class="QLabel" name="label_2">
      <property name="text">
       <string>Show group footer:</string>
+     </property>
+     <property name="buddy">
+      <cstring>cbFoot</cstring>
      </property>
     </widget>
    </item>
@@ -93,6 +104,9 @@
      <property name="text">
       <string>Insert page break after group footer:</string>
      </property>
+     <property name="buddy">
+      <cstring>breakAfterFooter</cstring>
+     </property>
     </widget>
    </item>
    <item row="4" column="1">
@@ -105,6 +119,13 @@
      </property>
     </widget>
    </item>
+   <item row="5" column="0" colspan="2">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
   </layout>
  </widget>
  <resources/>
@@ -114,12 +135,32 @@
    <signal>toggled(bool)</signal>
    <receiver>breakAfterFooter</receiver>
    <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
   </connection>
   <connection>
    <sender>cbFoot</sender>
    <signal>toggled(bool)</signal>
    <receiver>breakAfterFooterLabel</receiver>
    <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
   </connection>
  </connections>
 </ui>
