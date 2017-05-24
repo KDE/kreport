@@ -20,7 +20,6 @@
 #define DETAILGROUPSECTIONDIALOG_H
 
 #include <QDialog>
-#include <QDialogButtonBox>
 
 #include <ui_KReportDetailGroupSectionDialog.h>
 
@@ -31,7 +30,6 @@ class KReportDetailGroupSectionDialog : public QDialog, public Ui::DetailGroupSe
 public:
     explicit KReportDetailGroupSectionDialog(QWidget* parent = nullptr);
     ~KReportDetailGroupSectionDialog() override;
-
 };
 
 #endif // DETAILGROUPSECTIONDIALOG_H
