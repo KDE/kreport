@@ -354,6 +354,9 @@ QDomElement KReportDesigner::document() const
     content.appendChild(propertyToElement(&doc, d->title));
 
 #ifdef KREPORT_SCRIPTING
+    if (d->originalInterpreter.isEmpty()) {
+        d->originalInterpreter = QLatin1String("javascript");
+    }
     saveInterpreter = d->originalInterpreter;
 
     if (!d->script->value().toString().isEmpty()) {
