@@ -5,6 +5,11 @@ include(SetKReportCMakePolicies NO_POLICY_SCOPE)
 
 project(KReport VERSION 3.0.2) # Update this
 
+include(KReportAddTests)
+include(KReportAddExamples)
+kreport_add_tests(OFF)
+kreport_add_examples(OFF)
+
 # CMake
 include(CMakePackageConfigHelpers)
 
@@ -38,12 +43,19 @@ set_package_properties(KPropertyWidgets PROPERTIES TYPE REQUIRED
 check_maximum_package_version(KPropertyWidgets ${MAXIMUM_KPROPERTY_VERSION})
 
 get_git_revision_and_branch()
-add_tests()
-add_examples()
 add_unfinished_features_option()
 add_pc_file(${PROJECT_NAME})
 
 add_subdirectory(src)
+
+if(BUILD_TESTING)
+  add_subdirectory(autotests)
+  #add_subdirectory(tests)
+endif()
+
+if(BUILD_EXAMPLES)
+  add_subdirectory(examples)
+endif()
 
 if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
     ecm_install_po_files_as_qm(po)
