@@ -8,7 +8,6 @@
 include(KDbGenerateHeaders) # from KDb, adds support for generated headers to ECMGenerateHeaders
 include(KDbCreateSharedDataClasses) # from KDb
 include(GenerateExportHeader)
-include(MacroLogFeature)
 include(FeatureSummary)
 include(GetGitRevisionDescription)
 
