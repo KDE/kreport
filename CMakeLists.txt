@@ -32,7 +32,9 @@ set(MAXIMUM_KPROPERTY_VERSION 3.0.80) # .80 means < 3.1 Alpha
 # TODO move Widgets/KF5WidgetsAddons-dependent part to a libKReportDesigner
 find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Core Widgets Xml PrintSupport)
 find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED CoreAddons WidgetsAddons GuiAddons Config)
-find_package(KPropertyWidgets ${REQUIRED_KPROPERTY_VERSION} REQUIRED)
+find_package(KPropertyWidgets ${REQUIRED_KPROPERTY_VERSION})
+set_package_properties(KPropertyWidgets PROPERTIES TYPE REQUIRED
+                       PURPOSE "Required by KReport for handling properties")
 check_maximum_package_version(KPropertyWidgets ${MAXIMUM_KPROPERTY_VERSION})
 
 get_git_revision_and_branch()

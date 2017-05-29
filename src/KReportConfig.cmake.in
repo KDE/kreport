@@ -28,4 +28,9 @@ include("${CMAKE_CURRENT_LIST_DIR}/KReportTargets.cmake")
 
 set(KREPORT_SCRIPTING @KREPORT_SCRIPTING@)
 
+include(FeatureSummary)
+set_package_properties(KReport PROPERTIES
+   DESCRIPTION "Framework for the creation and generation of reports in multiple formats"
+   URL "https://community.kde.org/KReport")
+
 # TODO
