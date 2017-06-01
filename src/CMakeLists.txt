@@ -93,7 +93,7 @@ set(kreport_LIB_SRCS
     Mainpage.dox
     Messages.sh
 )
-       
+
 set(kreport_INCLUDE_DIRS
     ${CMAKE_CURRENT_SOURCE_DIR}/common
     ${CMAKE_CURRENT_SOURCE_DIR}/wrtembed
@@ -159,7 +159,7 @@ set_coinstallable_lib_version(KReport)
 add_library(KReportUtilsPrivate STATIC
     common/KReportUtils_p.cpp
 )
-    
+
 kdb_create_shared_data_classes(
     kreport_GENERATED_SHARED_DATA_CLASS_HEADERS # output variable with list of headers
     NO_PREFIX # subdirectory in which the headers should be generated
@@ -200,9 +200,9 @@ target_link_libraries(KReportUtilsPrivate
         Qt5::Widgets
     PRIVATE
         KF5::WidgetsAddons
-        KF5::ConfigGui 
+        KF5::ConfigGui
     )
-    
+
 ecm_setup_version(${PROJECT_VERSION}
     VARIABLE_PREFIX KREPORT
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/kreport_version.h"
@@ -255,6 +255,7 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
     HEADER_NAMES
         KReportPageSize
         KReportDataSource
+        KReportScriptSource
         KReportItemBase
         KReportItemLine
         KReportPluginMetaData

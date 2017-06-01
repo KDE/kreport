@@ -26,6 +26,7 @@
 
 #ifdef KREPORT_SCRIPTING
 class KReportScriptHandler;
+class KReportScriptSource;
 #else
 #define KReportScriptHandler void
 #endif
@@ -51,6 +52,9 @@ public:
     //! Sets source data to @a data, takes ownership
     void setSourceData(KReportDataSource* dataSource);
 
+    //!Sets the script source to @a source, does NOT take ownership as it may be an application window
+    void setScriptSource(KReportScriptSource* source);
+
 #ifdef KREPORT_SCRIPTING
     KReportScriptHandler *scriptHandler();
     void registerScriptObject(QObject *obj, const QString &name);
@@ -72,7 +76,7 @@ public:
 Q_SIGNALS:
     void groupChanged(const QMap<QString, QVariant> &groupData);
     void finishedAllASyncItems();
-    
+
 private:
     bool setDocument(const QDomElement &document);
 

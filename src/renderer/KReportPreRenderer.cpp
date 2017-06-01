@@ -383,7 +383,7 @@ qreal KReportPreRendererPrivate::renderSection(const KReportSectionData & sectio
 void KReportPreRendererPrivate::initEngine()
 {
     delete m_scriptHandler;
-    m_scriptHandler = new KReportScriptHandler(m_dataSource, m_reportDocument);
+    m_scriptHandler = new KReportScriptHandler(m_dataSource, scriptSource, m_reportDocument);
 
     connect(this, SIGNAL(enteredGroup(QString,QVariant)), m_scriptHandler, SLOT(slotEnteredGroup(QString,QVariant)));
 
@@ -662,6 +662,14 @@ void KReportPreRenderer::setSourceData(KReportDataSource *dataSource)
         d->m_dataSource = dataSource;
     }
 }
+
+void KReportPreRenderer::setScriptSource(KReportScriptSource *source)
+{
+    if (d) {
+        d->scriptSource = source;
+    }
+}
+
 
 bool KReportPreRenderer::setDocument(const QDomElement &document)
 {

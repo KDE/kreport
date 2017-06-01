@@ -36,6 +36,9 @@
 #include "KReportSection.h"
 #include "KReportPluginMetaData.h"
 #include "kreport_debug.h"
+#ifdef KREPORT_SCRIPTING
+#include "KReportScriptSource.h"
+#endif
 
 #include <KStandardShortcut>
 #include <KStandardGuiItem>
@@ -180,6 +183,9 @@ public:
     QString originalScript; //Value of the script at load time
 
     KReportDataSource *dataSource = nullptr;
+#ifdef KREPORT_SCRIPTING
+    KReportScriptSource *scriptSource = nullptr;
+#endif
 };
 
 KReportDesigner::KReportDesigner(QWidget * parent)
@@ -446,6 +452,13 @@ void KReportDesigner::setDataSource(KReportDataSource* source)
     setModified(true);
     emit reportDataChanged();
 }
+
+#ifdef KREPORT_SCRIPTING
+void KReportDesigner::setScriptSource(KReportScriptSource* source)
+{
+    d->scriptSource = source;
+}
+#endif
 
 KReportDesignerSection * KReportDesigner::section(KReportSectionData::Section s) const
 {
@@ -790,9 +803,9 @@ void KReportDesigner::slotPropertyChanged(KPropertySet &s, KProperty &p)
 void KReportDesigner::slotPageButton_Pressed()
 {
 #ifdef KREPORT_SCRIPTING
-    if (d->dataSource) {
-        QStringList sl = d->dataSource->scriptList();
-        sl.prepend(QLatin1String(""));
+    if (d->scriptSource) {
+        QStringList sl = d->scriptSource->scriptList();
+        sl.prepend(QString());
         d->script->setListData(sl, sl);
     }
     changeSet(&d->set);

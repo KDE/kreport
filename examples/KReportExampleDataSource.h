@@ -21,11 +21,12 @@
 #define KREPORTEXAMPLEDATA_H
 
 #include <KReportDataSource>
+#include <KReportScriptSource>
 #include <QVariant>
 #include <QStringList>
 #include <QList>
 
-class KReportExampleDataSource : public KReportDataSource
+class KReportExampleDataSource : public KReportDataSource, public KReportScriptSource
 {
 public:
     KReportExampleDataSource();

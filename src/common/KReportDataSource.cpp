@@ -20,9 +20,9 @@
 
 #define KReportDataSortedFieldPrivateArgs(o) std::tie(o.field, o.order)
 
-class KReportDataSource::SortedField::Private 
+class KReportDataSource::SortedField::Private
 {
-    
+
 public:
     Private() {}
     Private(const Private& other) {
@@ -132,19 +132,6 @@ void KReportDataSource::addCondition(const QString &field, const QVariant &value
     Q_UNUSED(value);
     Q_UNUSED(relation);
 }
-
-#ifdef KREPORT_SCRIPTING
-QStringList KReportDataSource::scriptList() const
-{
-    return QStringList();
-}
-
-QString KReportDataSource::scriptCode(const QString &script) const
-{
-    Q_UNUSED(script);
-    return QString();
-}
-#endif
 
 QStringList KReportDataSource::dataSourceNames() const
 {

@@ -47,7 +47,7 @@ public:
         void setOrder(Qt::SortOrder order);
         QString field() const;
         Qt::SortOrder order() const;
-        
+
         private:
             class Private;
             Private * const d;
@@ -97,7 +97,7 @@ public:
 
     //! @return the class name of this source
     virtual QString sourceClass() const;
-    
+
     //! Sets the sorting for the data
     //! Should be called before open() so that the data source can be edited accordingly
     //! Default impl does nothing
@@ -105,18 +105,6 @@ public:
 
     //! Adds a condition to the data source
     virtual void addCondition(const QString &field, const QVariant &value, const QString& relation = QLatin1String("="));
-
-    //! Utility Functions
-    //! @todo These are probably eligable to be moved into a new class
-
-#ifdef KREPORT_SCRIPTING
-    //! Allow the reportdata implementation to return a list of possible scripts
-    virtual QStringList scriptList() const;
-
-    //! Allow the reportdata implementation to return some script code based on a specific script name
-    //! as set in the report
-    virtual QString scriptCode(const QString& script) const;
-#endif
 
     //! Return a list of data source names available for this data source
     //! Works after the source is opened
@@ -131,7 +119,7 @@ public:
     //! @a source is implementation-specific identifier.
     //! Owner of the returned pointer is the caller.
     virtual KReportDataSource* create(const QString &source) const Q_REQUIRED_RESULT;
-    
+
 private:
     Q_DISABLE_COPY(KReportDataSource)
     class Private;

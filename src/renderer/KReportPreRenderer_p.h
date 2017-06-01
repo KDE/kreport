@@ -27,6 +27,10 @@
 
 #include <QMap>
 
+#ifdef KREPORT_SCRIPTING
+#include <KReportScriptSource>
+#endif
+
 namespace KReportPrivate{
   class OneRecordDataSource;
 }
@@ -66,6 +70,7 @@ public:
 
 #ifdef KREPORT_SCRIPTING
     QMap<QString, QObject*> m_scriptObjects;
+    KReportScriptSource *scriptSource = nullptr;
 #endif
 
     void createNewPage();

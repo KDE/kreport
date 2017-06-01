@@ -41,6 +41,10 @@ class KReportDesignerSectionScene;
 class KReportDesignerSectionView;
 class QAction;
 
+#ifdef KREPORT_SCRIPTING
+class KReportScriptSource;
+#endif
+
 //
 // Class ReportDesigner
 //     The ReportDesigner is the main widget for designing a report
@@ -71,9 +75,18 @@ public:
     @brief Sets the report data
     The report data interface contains functions to retrieve data
     and information about the fields.
-    @param kodata Pointer to KReportDataSource instance, ownership is transferred
+    @param source Pointer to KReportDataSource instance, ownership is transferred
     */
     void setDataSource(KReportDataSource* source);
+
+#ifdef KREPORT_SCRIPTING
+    /**
+    @brief Sets the script source for the designer
+    The script source contains function to return scripts supplied by the parent application
+    @param source Pointer to KReportScriptSource instance, ownership is NOT transferred as it may be an application window
+    */
+    void setScriptSource(KReportScriptSource *source);
+#endif
 
     /**
     @brief Return a pointer to the reports data
@@ -299,8 +312,6 @@ public Q_SLOTS:
     void slotLowerSelected();
 
 private:
-    void init();
-
     /**
     @brief Sets the detail section to the given section
     */

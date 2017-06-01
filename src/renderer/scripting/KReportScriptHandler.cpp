@@ -18,6 +18,8 @@
 
 #include "KReportScriptHandler.h"
 
+#include "KReportDataSource.h"
+#include "KReportScriptSource.h"
 #include "KReportScriptSection.h"
 #include "KReportScriptDebug.h"
 #include "KReportScriptReport.h"
@@ -34,6 +36,12 @@
 #include <QJSEngine>
 #include <QJSValue>
 
+
+//Note#: this is here to save creating a new file for this interface
+KReportScriptSource::~KReportScriptSource()
+{
+}
+
 class Q_DECL_HIDDEN KReportScriptHandler::Private
 {
 public:
@@ -44,12 +52,14 @@ public:
     KReportScriptDraw *draw;
     Scripting::Report *report;
     const KReportDataSource *reportDataSource;
+    const KReportScriptSource *scriptSource;
     QString source;
     KReportDocument  *reportDocument;
     QJSEngine engine;
     QJSValue scriptValue;
     QMap<QString, QVariant> groups;
     QMap<KReportSectionData*, Scripting::Section*> sectionMap;
+    bool suppressEvaluateErrors = false;
 };
 
 KReportScriptHandler::Private::Private() : constants(new KReportScriptConstants), debug(new KReportScriptDebug), draw(new KReportScriptDraw)
@@ -60,14 +70,15 @@ KReportScriptHandler::Private::~Private()
 {
 }
 
-KReportScriptHandler::KReportScriptHandler(const KReportDataSource* reportDataSource, KReportDocument* reportDocument) : d(new Private())
+KReportScriptHandler::KReportScriptHandler(const KReportDataSource* reportDataSource, KReportScriptSource* scriptSource, KReportDocument* reportDocument) : d(new Private())
 {
     d->reportDocument = reportDocument;
     d->reportDataSource = reportDataSource;
+    d->scriptSource = scriptSource;
 
     //Add a general report object
     d->report = new Scripting::Report(d->reportDocument);
-    
+
     registerScriptObject(d->constants, QLatin1String("constants"));
     registerScriptObject(d->debug, QLatin1String("debug"));
     registerScriptObject(d->draw, QLatin1String("draw"));
@@ -85,14 +96,14 @@ KReportScriptHandler::KReportScriptHandler(const KReportDataSource* reportDataSo
         r.setProperty(d->sectionMap[sec]->objectName(), s);
         //kreportDebug() << "Added" << d->sectionMap[sec]->objectName() << "to report" << d->reportData->name();
     }
-
-    //kreportDebug() << "Report name is" << d->reportData->name();
 }
 
 bool KReportScriptHandler::trigger()
 {
-    QString code = d->reportDataSource->scriptCode(d->reportDocument->script());
-    //kreportDebug() << code;
+    QString code;
+    if (d->scriptSource) {
+        code = d->scriptSource->scriptCode(d->reportDocument->script());
+    }
 
     if (code.isEmpty()) {
         return true;
@@ -154,7 +165,17 @@ QVariant KReportScriptHandler::evaluate(const QString &code)
         if (!result.isError()) {
             return result.toVariant();
         } else {
-            QMessageBox::warning(nullptr, tr("Script Error"), d->scriptValue.toString());
+            if (!d->suppressEvaluateErrors) {
+                QMessageBox msgBox;
+                msgBox.setText(tr("Cannot evaluate script. Error: %1\n\nDo you want to suppress further messages?\n(messages will be restored next time the report is opened)").arg(d->scriptValue.toString()));
+                msgBox.setDetailedText(tr("Script code:\n%1").arg(code));
+                msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
+                msgBox.setDefaultButton(QMessageBox::No);
+                int ret = msgBox.exec();
+                if (ret == QMessageBox::Yes) {
+                    d->suppressEvaluateErrors = true;
+                }
+            }
         }
     }
     return QVariant();

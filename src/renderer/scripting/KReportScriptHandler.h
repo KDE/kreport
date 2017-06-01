@@ -32,6 +32,7 @@ class KReportSectionData;
 class QJSEngine;
 class KReportDocument;
 class OROPage;
+class KReportScriptSource;
 
 namespace Scripting
 {
@@ -43,7 +44,7 @@ class KREPORT_EXPORT KReportScriptHandler : public QObject
 {
     Q_OBJECT
 public:
-    KReportScriptHandler(const KReportDataSource *reportDataSource, KReportDocument* reportDocument);
+    KReportScriptHandler(const KReportDataSource *reportDataSource, KReportScriptSource *scriptSource, KReportDocument* reportDocument);
     ~KReportScriptHandler() override;
 
     QVariant evaluate(const QString&);
