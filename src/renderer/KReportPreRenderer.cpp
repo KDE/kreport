@@ -203,8 +203,7 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                 }
 
                 renderSection(*(detailData->m_detailSection));
-                if (m_dataSource)
-                    status = m_dataSource->moveNext();
+                status = m_dataSource->moveNext();
 
                 if (status == true && keys.count() > 0) {
                     // check to see where it is we need to start
@@ -294,22 +293,20 @@ qreal KReportPreRendererPrivate::renderSectionSize(const KReportSectionData & se
 {
     qreal intHeight = POINT_TO_INCH(sectionData.height()) * KReportPrivate::dpiX();
 
-    int itemHeight = 0;
-
     if (sectionData.objects().count() == 0)
         return intHeight;
 
     QList<KReportItemBase*> objects = sectionData.objects();
     foreach(KReportItemBase *ob, objects) {
         QPointF offset(m_leftMargin, m_yOffset);
-        QVariant itemData = m_dataSource->value(ob->itemDataSource());
-
         //ASync objects cannot alter the section height
         KReportAsyncItemBase *async_ob = qobject_cast<KReportAsyncItemBase*>(ob);
-
         if (!async_ob) {
-            itemHeight = ob->renderSimpleData(nullptr, nullptr, offset, itemData, m_scriptHandler);
-
+            QVariant itemData;
+            if (m_dataSource) {
+                itemData = m_dataSource->value(ob->itemDataSource());
+            }
+            const int itemHeight = ob->renderSimpleData(nullptr, nullptr, offset, itemData, m_scriptHandler);
             if (itemHeight > intHeight) {
                 intHeight = itemHeight;
             }
