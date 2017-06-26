@@ -169,7 +169,7 @@ KReportSection KReportDesign::Private::processSectionElement(const QDomElement &
         if (!element.rect().isValid() || (status && status->isError())) {
             return KReportSection();
         }
-        section.addElement(element);
+        (void)section.addElement(element);
     }
     return section;
 }
