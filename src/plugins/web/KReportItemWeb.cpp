@@ -32,7 +32,7 @@
 
 #include "kreportplugin_debug.h"
 
-KReportItemWeb::KReportItemWeb() : m_rendering(false)
+KReportItemWeb::KReportItemWeb() : m_rendering(false), m_targetPage(nullptr)
 {
     createProperties();
     m_webPage = new QWebPage();
