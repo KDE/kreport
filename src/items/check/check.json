@@ -21,6 +21,7 @@
                 "Name[pt_BR]": "Equipe do Kexi",
                 "Name[sk]": "Tím Kexi",
                 "Name[sv]": "Kexi-gruppen",
+                "Name[tr]": "Kexi Ekibi",
                 "Name[uk]": "Команда Kexi",
                 "Name[x-test]": "xxKexi Teamxx"
             }
@@ -42,6 +43,7 @@
         "Description[pt_BR]": "Elemento Caixa de verificação para Relatórios",
         "Description[sk]": "Prvok zaškrtávacieho políčka pre Reports",
         "Description[sv]": "Element med kryssruta för rapporter",
+        "Description[tr]": "Raporlar için işaret kutusu ögesi",
         "Description[uk]": "Елемент пункту позначки для звітів",
         "Description[x-test]": "xxCheck box element for Reportsxx",
         "EnabledByDefault": true,
@@ -65,6 +67,7 @@
         "Name[pt_BR]": "Caixa de verificação",
         "Name[sk]": "Zaškrtávacie políčko",
         "Name[sv]": "Kryssruta",
+        "Name[tr]": "İşaret kutusu",
         "Name[uk]": "Пункт позначки",
         "Name[x-test]": "xxCheck boxxx",
         "ServiceTypes": [

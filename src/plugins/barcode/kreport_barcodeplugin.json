@@ -21,6 +21,7 @@
                 "Name[pt_BR]": "Equipe do Kexi",
                 "Name[sk]": "Tím Kexi",
                 "Name[sv]": "Kexi-gruppen",
+                "Name[tr]": "Kexi Ekibi",
                 "Name[uk]": "Команда Kexi",
                 "Name[x-test]": "xxKexi Teamxx"
             }
@@ -41,6 +42,7 @@
         "Description[pt_BR]": "Elemento Código de barras para Relatórios",
         "Description[sk]": "Prvok čiarového kódu pre Reports",
         "Description[sv]": "Streckkodselement för rapporter",
+        "Description[tr]": "Raporlar için Barkod ögesi",
         "Description[uk]": "Елемент штрихкоду для звітів",
         "Description[x-test]": "xxBarcode element for Reportsxx",
         "EnabledByDefault": true,
@@ -63,6 +65,7 @@
         "Name[pt_BR]": "Código de barras",
         "Name[sk]": "Čiarový kód",
         "Name[sv]": "Streckkod",
+        "Name[tr]": "Barkod",
         "Name[uk]": "Штрихкод",
         "Name[x-test]": "xxBarcodexx",
         "Name[zh_CN]": "条形码",

@@ -21,6 +21,7 @@
                 "Name[pt_BR]": "Equipe do Kexi",
                 "Name[sk]": "Tím Kexi",
                 "Name[sv]": "Kexi-gruppen",
+                "Name[tr]": "Kexi Ekibi",
                 "Name[uk]": "Команда Kexi",
                 "Name[x-test]": "xxKexi Teamxx"
             }
@@ -41,6 +42,7 @@
         "Description[pt_BR]": "Elemento Gráfico para Relatórios",
         "Description[sk]": "Prvky grafu pre správy",
         "Description[sv]": "Diagramelement för rapporter",
+        "Description[tr]": "Raporlar için Grafik ögesi",
         "Description[uk]": "Елемент діаграми для звітів",
         "Description[x-test]": "xxChart element for Reportsxx",
         "EnabledByDefault": true,
@@ -63,6 +65,7 @@
         "Name[pt_BR]": "Gráfico",
         "Name[sk]": "Graf",
         "Name[sv]": "Diagram",
+        "Name[tr]": "Grafik",
         "Name[uk]": "Діаграма",
         "Name[x-test]": "xxChartxx",
         "ServiceTypes": [

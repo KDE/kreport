@@ -21,6 +21,7 @@
                 "Name[pt_BR]": "Equipe do Kexi",
                 "Name[sk]": "Tím Kexi",
                 "Name[sv]": "Kexi-gruppen",
+                "Name[tr]": "Kexi Ekibi",
                 "Name[uk]": "Команда Kexi",
                 "Name[x-test]": "xxKexi Teamxx"
             }
@@ -41,6 +42,7 @@
         "Description[pt_BR]": "Elemento Mapas para Relatórios",
         "Description[sk]": "Prvok máp pre Reports",
         "Description[sv]": "Kartelement för rapporter",
+        "Description[tr]": "Raporlar için Haritalar ögesi",
         "Description[uk]": "Елемент карти для звітів",
         "Description[x-test]": "xxMaps element for Reportsxx",
         "EnabledByDefault": true,
@@ -64,6 +66,7 @@
         "Name[pt_BR]": "Mapas",
         "Name[sk]": "Mapy",
         "Name[sv]": "Kartor",
+        "Name[tr]": "Haritalar",
         "Name[uk]": "Карти",
         "Name[x-test]": "xxMapsxx",
         "ServiceTypes": [

@@ -21,6 +21,7 @@
                 "Name[pt_BR]": "Equipe do Kexi",
                 "Name[sk]": "Tím Kexi",
                 "Name[sv]": "Kexi-gruppen",
+                "Name[tr]": "Kexi Ekibi",
                 "Name[uk]": "Команда Kexi",
                 "Name[x-test]": "xxKexi Teamxx"
             }
@@ -43,6 +44,7 @@
         "Description[pt_BR]": "Elemento Texto para Relatórios",
         "Description[sk]": "Prvok textu pre Reports",
         "Description[sv]": "Textelement för rapporter",
+        "Description[tr]": "Raporlar için Metin ögesi",
         "Description[uk]": "Елемент тексту для звітів",
         "Description[x-test]": "xxText element for Reportsxx",
         "EnabledByDefault": true,
@@ -61,6 +63,7 @@
         "Name[pl]": "Tekst",
         "Name[pt]": "Texto",
         "Name[pt_BR]": "Texto",
+        "Name[tr]": "Metin",
         "Name[uk]": "Текст",
         "Name[x-test]": "xxTextxx",
         "ServiceTypes": [

@@ -21,6 +21,7 @@
                 "Name[pt_BR]": "Equipe do Kexi",
                 "Name[sk]": "Tím Kexi",
                 "Name[sv]": "Kexi-gruppen",
+                "Name[tr]": "Kexi Ekibi",
                 "Name[uk]": "Команда Kexi",
                 "Name[x-test]": "xxKexi Teamxx"
             }
@@ -41,6 +42,7 @@
         "Description[pt_BR]": "Elemento Campo para Relatórios",
         "Description[sk]": "Prvok poľa pre Reports",
         "Description[sv]": "Fältelement för rapporter",
+        "Description[tr]": "Raporlar için giriş ögesi",
         "Description[uk]": "Елемент поля для звітів",
         "Description[x-test]": "xxField element for Reportsxx",
         "EnabledByDefault": true,
@@ -64,6 +66,7 @@
         "Name[pt_BR]": "Campo",
         "Name[sk]": "Pole",
         "Name[sv]": "Fält",
+        "Name[tr]": "Giriş",
         "Name[uk]": "Поле",
         "Name[x-test]": "xxFieldxx",
         "ServiceTypes": [

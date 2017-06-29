@@ -21,6 +21,7 @@
                 "Name[pt_BR]": "Equipe do Kexi",
                 "Name[sk]": "Tím Kexi",
                 "Name[sv]": "Kexi-gruppen",
+                "Name[tr]": "Kexi Ekibi",
                 "Name[uk]": "Команда Kexi",
                 "Name[x-test]": "xxKexi Teamxx"
             }
@@ -41,6 +42,7 @@
         "Description[pt_BR]": "Elemento Navegador Web para Relatórios",
         "Description[sk]": "Prvok webového prehliadača pre správy",
         "Description[sv]": "Webbläsarelement för rapporter",
+        "Description[tr]": "Raporlar için Web Tarayıcı ögesi",
         "Description[uk]": "Елемент засобу для перегляду інтернету для звітів",
         "Description[x-test]": "xxWeb browser element for Reportsxx",
         "EnabledByDefault": true,
@@ -62,6 +64,7 @@
         "Name[pt]": "Navegador Web",
         "Name[sk]": "Webový prehliadač",
         "Name[sv]": "Webbläsare",
+        "Name[tr]": "Web Tarayıcısı",
         "Name[uk]": "Переглядач інтернету",
         "Name[x-test]": "xxWeb browserxx",
         "ServiceTypes": [

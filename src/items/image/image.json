@@ -21,6 +21,7 @@
                 "Name[pt_BR]": "Equipe do Kexi",
                 "Name[sk]": "Tím Kexi",
                 "Name[sv]": "Kexi-gruppen",
+                "Name[tr]": "Kexi Ekibi",
                 "Name[uk]": "Команда Kexi",
                 "Name[x-test]": "xxKexi Teamxx"
             }
@@ -41,6 +42,7 @@
         "Description[pt_BR]": "Elemento Imagem para Relatórios",
         "Description[sk]": "Prvok obrázku pre Reports",
         "Description[sv]": "Bildelement för rapporter",
+        "Description[tr]": "Raporlar için Resim ögesi",
         "Description[uk]": "Елемент зображення для звітів",
         "Description[x-test]": "xxImage element for Reportsxx",
         "EnabledByDefault": true,
@@ -63,6 +65,7 @@
         "Name[pt_BR]": "Imagem",
         "Name[sk]": "Obrázok",
         "Name[sv]": "Bild",
+        "Name[tr]": "Resim",
         "Name[uk]": "Зображення",
         "Name[x-test]": "xxImagexx",
         "ServiceTypes": [
