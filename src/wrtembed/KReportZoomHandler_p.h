@@ -103,20 +103,21 @@ public:
     void setZoom(qreal zoom);
 
     /**
-     * Change the zoom mode
-     * @param zoomMode the zoom mode.
+     * Change the zoom type
+     * @param zoomType the zoom type.
      */
-    inline void setZoomMode(KReportZoomMode::Mode zoomMode) { m_zoomMode = zoomMode; }
+    inline void setZoomMode(KReportZoomMode::Type zoomType) { m_zoomType = zoomType; }
     /**
      * @return the global zoom factor (e.g. 100 for 100%).
      * Only use this to display to the user, don't use in calculations
      */
     inline int zoomInPercent() const { return qRound(zoom() * 100); }
+
     /**
-     * @return the global zoom mode (e.g. KReportZoomMode::ZOOM_WIDTH).
+     * @return the global zoom type (e.g. KReportZoomMode::Type::Width).
      * use this to determine how to zoom
      */
-    KReportZoomMode::Mode zoomMode() const { return m_zoomMode; }
+    KReportZoomMode::Type zoomType() const { return m_zoomType; }
 
     // Input: pt. Output: pixels. Resolution and zoom are applied.
 
@@ -220,7 +221,7 @@ public:
     qreal zoom() const;
 
 private:
-    KReportZoomMode::Mode m_zoomMode;
+    KReportZoomMode::Type m_zoomType;
 
     qreal m_resolutionX;
     qreal m_resolutionY;

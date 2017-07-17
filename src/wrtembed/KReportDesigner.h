@@ -99,7 +99,7 @@ public:
     @param section KReportSectionData::Section enum value of the section to return
     @return Pointer to report section object, or 0 if no section exists
     */
-    KReportDesignerSection* section(KReportSectionData::Section) const;
+    KReportDesignerSection* section(KReportSectionData::Type type) const;
 
     /**
     @brief Creates new section
@@ -112,13 +112,13 @@ public:
     @brief Deletes the section specified
     @param section KReportSectionData::Section enum value of the section to return
     */
-    void removeSection(KReportSectionData::Section);
+    void removeSection(KReportSectionData::Type type);
 
     /**
     @brief Create a new section and insert it into the report
     @param section KReportSectionData::Section enum value of the section to return
     */
-    void insertSection(KReportSectionData::Section);
+    void insertSection(KReportSectionData::Type type);
 
     /**
     @brief Return a pointer to the detail section.

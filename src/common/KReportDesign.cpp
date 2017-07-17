@@ -206,7 +206,7 @@ KReportElement KReportDesign::createElement(const QString &typeName, QString *er
 
 bool KReportDesign::hasSection(KReportSection::Type type) const
 {
-    const int index = type - 1;
+    const int index = static_cast<int>(type) - 1;
     if (0 <= index && index < d->sections.length()) {
         return d->sections[index];
     }
@@ -215,7 +215,7 @@ bool KReportDesign::hasSection(KReportSection::Type type) const
 
 KReportSection KReportDesign::section(KReportSection::Type type) const
 {
-    const int index = type - 1;
+    const int index = static_cast<int>(type) - 1;
     if (0 <= index && index < d->sections.length()) {
         KReportSection *section = d->sections[index];
         if (section) {
@@ -227,7 +227,7 @@ KReportSection KReportDesign::section(KReportSection::Type type) const
 
 void KReportDesign::addSection(const KReportSection &section)
 {
-    const int index = section.type() - 1;
+    const int index = static_cast<int>(section.type()) - 1;
     if (0 <= index && index < d->sections.length()) {
         if (d->sections[index]) {
             *d->sections[index] = section;

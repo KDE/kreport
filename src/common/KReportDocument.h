@@ -63,14 +63,14 @@ public:
     QList<KReportSectionData*> sections() const;
 
     /**
-    \return a sectiondata given a section enum
+    \return a sectiondata given a section type
     */
-    KReportSectionData* section(KReportSectionData::Section) const;
+    KReportSectionData* section(KReportSectionData::Type type) const;
 
     /**
     \return a sectiondata given its name
     */
-    KReportSectionData* section(const QString&) const;
+    KReportSectionData* section(const QString &name) const;
 
     QString query() const;
 #ifdef KREPORT_SCRIPTING

@@ -74,25 +74,25 @@ public:
     ReportWriterSectionData() {
         selected_x_offset = 0;
         selected_y_offset = 0;
-        mouseAction = ReportWriterSectionData::MA_None;
+        mouseAction = MouseAction::None;
     }
     virtual ~ReportWriterSectionData() {
     }
 
-    enum MouseAction {
-        MA_None = 0,
-        MA_Insert = 1,
-        MA_Grab = 2,
-        MA_MoveStartPoint,
-        MA_MoveEndPoint,
-        MA_ResizeNW = 8,
-        MA_ResizeN,
-        MA_ResizeNE,
-        MA_ResizeE,
-        MA_ResizeSE,
-        MA_ResizeS,
-        MA_ResizeSW,
-        MA_ResizeW
+    enum class MouseAction {
+        None = 0,
+        Insert = 1,
+        Grab = 2,
+        MoveStartPoint,
+        MoveEndPoint,
+        ResizeNW = 8,
+        ResizeN,
+        ResizeNE,
+        ResizeE,
+        ResizeSE,
+        ResizeS,
+        ResizeSW,
+        ResizeW
     };
 
     int selected_x_offset;
@@ -416,11 +416,15 @@ QDomElement KReportDesigner::document() const
     QDomElement body = doc.createElement(QLatin1String("report:body"));
     QDomElement domsection;
 
-    for (int i = KReportSectionData::PageHeaderFirst; i <= KReportSectionData::PageFooterAny; ++i) {
-        KReportDesignerSection *sec = section((KReportSectionData::Section)i);
+    for (int i = static_cast<int>(KReportSectionData::Type::PageHeaderFirst);
+         i <= static_cast<int>(KReportSectionData::Type::PageFooterAny); ++i)
+    {
+        KReportDesignerSection *sec = section(static_cast<KReportSectionData::Type>(i));
         if (sec) {
             domsection = doc.createElement(QLatin1String("report:section"));
-            domsection.setAttribute(QLatin1String("report:section-type"), KReportSectionData::sectionTypeString(KReportSectionData::Section(i)));
+            domsection.setAttribute(
+                QLatin1String("report:section-type"),
+                KReportSectionData::sectionTypeString(static_cast<KReportSectionData::Type>(i)));
             sec->buildXML(&doc, &domsection);
             body.appendChild(domsection);
         }
@@ -460,44 +464,44 @@ void KReportDesigner::setScriptSource(KReportScriptSource* source)
 }
 #endif
 
-KReportDesignerSection * KReportDesigner::section(KReportSectionData::Section s) const
+KReportDesignerSection * KReportDesigner::section(KReportSectionData::Type type) const
 {
     KReportDesignerSection *sec;
-    switch (s) {
-    case KReportSectionData::PageHeaderAny:
+    switch (type) {
+    case KReportSectionData::Type::PageHeaderAny:
         sec = d->pageHeaderAny;
         break;
-    case KReportSectionData::PageHeaderEven:
+    case KReportSectionData::Type::PageHeaderEven:
         sec = d->pageHeaderEven;
         break;
-    case KReportSectionData::PageHeaderOdd:
+    case KReportSectionData::Type::PageHeaderOdd:
         sec = d->pageHeaderOdd;
         break;
-    case KReportSectionData::PageHeaderFirst:
+    case KReportSectionData::Type::PageHeaderFirst:
         sec = d->pageHeaderFirst;
         break;
-    case KReportSectionData::PageHeaderLast:
+    case KReportSectionData::Type::PageHeaderLast:
         sec = d->pageHeaderLast;
         break;
-    case KReportSectionData::PageFooterAny:
+    case KReportSectionData::Type::PageFooterAny:
         sec = d->pageFooterAny;
         break;
-    case KReportSectionData::PageFooterEven:
+    case KReportSectionData::Type::PageFooterEven:
         sec = d->pageFooterEven;
         break;
-    case KReportSectionData::PageFooterOdd:
+    case KReportSectionData::Type::PageFooterOdd:
         sec = d->pageFooterOdd;
         break;
-    case KReportSectionData::PageFooterFirst:
+    case KReportSectionData::Type::PageFooterFirst:
         sec = d->pageFooterFirst;
         break;
-    case KReportSectionData::PageFooterLast:
+    case KReportSectionData::Type::PageFooterLast:
         sec = d->pageFooterLast;
         break;
-    case KReportSectionData::ReportHeader:
+    case KReportSectionData::Type::ReportHeader:
         sec = d->reportHeader;
         break;
-    case KReportSectionData::ReportFooter:
+    case KReportSectionData::Type::ReportFooter:
         sec = d->reportFooter;
         break;
     default:
@@ -511,47 +515,47 @@ KReportDesignerSection* KReportDesigner::createSection()
     return new KReportDesignerSection(this, d->zoomHandler);
 }
 
-void KReportDesigner::removeSection(KReportSectionData::Section s)
+void KReportDesigner::removeSection(KReportSectionData::Type type)
 {
-    KReportDesignerSection* sec = section(s);
+    KReportDesignerSection* sec = section(type);
     if (sec) {
         delete sec;
 
-        switch (s) {
-        case KReportSectionData::PageHeaderAny:
+        switch (type) {
+        case KReportSectionData::Type::PageHeaderAny:
             d->pageHeaderAny = nullptr;
             break;
-        case KReportSectionData::PageHeaderEven:
+        case KReportSectionData::Type::PageHeaderEven:
             sec = d->pageHeaderEven = nullptr;
             break;
-        case KReportSectionData::PageHeaderOdd:
+        case KReportSectionData::Type::PageHeaderOdd:
             d->pageHeaderOdd = nullptr;
             break;
-        case KReportSectionData::PageHeaderFirst:
+        case KReportSectionData::Type::PageHeaderFirst:
             d->pageHeaderFirst = nullptr;
             break;
-        case KReportSectionData::PageHeaderLast:
+        case KReportSectionData::Type::PageHeaderLast:
             d->pageHeaderLast = nullptr;
             break;
-        case KReportSectionData::PageFooterAny:
+        case KReportSectionData::Type::PageFooterAny:
             d->pageFooterAny = nullptr;
             break;
-        case KReportSectionData::PageFooterEven:
+        case KReportSectionData::Type::PageFooterEven:
             d->pageFooterEven = nullptr;
             break;
-        case KReportSectionData::PageFooterOdd:
+        case KReportSectionData::Type::PageFooterOdd:
             d->pageFooterOdd = nullptr;
             break;
-        case KReportSectionData::PageFooterFirst:
+        case KReportSectionData::Type::PageFooterFirst:
             d->pageFooterFirst = nullptr;
             break;
-        case KReportSectionData::PageFooterLast:
+        case KReportSectionData::Type::PageFooterLast:
             d->pageFooterLast = nullptr;
             break;
-        case KReportSectionData::ReportHeader:
+        case KReportSectionData::Type::ReportHeader:
             d->reportHeader = nullptr;
             break;
-        case KReportSectionData::ReportFooter:
+        case KReportSectionData::Type::ReportFooter:
             d->reportFooter = nullptr;
             break;
         default:
@@ -563,75 +567,77 @@ void KReportDesigner::removeSection(KReportSectionData::Section s)
     }
 }
 
-void KReportDesigner::insertSection(KReportSectionData::Section s)
+void KReportDesigner::insertSection(KReportSectionData::Type type)
 {
-    KReportDesignerSection* sec = section(s);
+    KReportDesignerSection* sec = section(type);
     if (!sec) {
         int idx = 0;
-        for (int i = 1; i <= s; ++i) {
-            if (section((KReportSectionData::Section)i))
+        for (int i = static_cast<int>(KReportSectionData::Type::None) + 1;
+             i <= static_cast<int>(type); ++i)
+        {
+            if (section(static_cast<KReportSectionData::Type>(i)))
                 idx++;
         }
-        if (s > KReportSectionData::ReportHeader)
+        if (type > KReportSectionData::Type::ReportHeader)
             idx++;
         //kreportDebug() << idx;
         KReportDesignerSection *rs = createSection();
         d->vboxlayout->insertWidget(idx, rs);
 
-        switch (s) {
-        case KReportSectionData::PageHeaderAny:
+        switch (type) {
+        case KReportSectionData::Type::PageHeaderAny:
             rs->setTitle(tr("Page Header (Any)"));
             d->pageHeaderAny = rs;
             break;
-        case KReportSectionData::PageHeaderEven:
+        case KReportSectionData::Type::PageHeaderEven:
             rs->setTitle(tr("Page Header (Even)"));
             d->pageHeaderEven = rs;
             break;
-        case KReportSectionData::PageHeaderOdd:
+        case KReportSectionData::Type::PageHeaderOdd:
             rs->setTitle(tr("Page Header (Odd)"));
             d->pageHeaderOdd = rs;
             break;
-        case KReportSectionData::PageHeaderFirst:
+        case KReportSectionData::Type::PageHeaderFirst:
             rs->setTitle(tr("Page Header (First)"));
             d->pageHeaderFirst = rs;
             break;
-        case KReportSectionData::PageHeaderLast:
+        case KReportSectionData::Type::PageHeaderLast:
             rs->setTitle(tr("Page Header (Last)"));
             d->pageHeaderLast = rs;
             break;
-        case KReportSectionData::PageFooterAny:
+        case KReportSectionData::Type::PageFooterAny:
             rs->setTitle(tr("Page Footer (Any)"));
             d->pageFooterAny = rs;
             break;
-        case KReportSectionData::PageFooterEven:
+        case KReportSectionData::Type::PageFooterEven:
             rs->setTitle(tr("Page Footer (Even)"));
             d->pageFooterEven = rs;
             break;
-        case KReportSectionData::PageFooterOdd:
+        case KReportSectionData::Type::PageFooterOdd:
             rs->setTitle(tr("Page Footer (Odd)"));
             d->pageFooterOdd = rs;
             break;
-        case KReportSectionData::PageFooterFirst:
+        case KReportSectionData::Type::PageFooterFirst:
             rs->setTitle(tr("Page Footer (First)"));
             d->pageFooterFirst = rs;
             break;
-        case KReportSectionData::PageFooterLast:
+        case KReportSectionData::Type::PageFooterLast:
             rs->setTitle(tr("Page Footer (Last)"));
             d->pageFooterLast = rs;
             break;
-        case KReportSectionData::ReportHeader:
+        case KReportSectionData::Type::ReportHeader:
             rs->setTitle(tr("Report Header"));
             d->reportHeader = rs;
             break;
-        case KReportSectionData::ReportFooter:
+        case KReportSectionData::Type::ReportFooter:
             rs->setTitle(tr("Report Footer"));
             d->reportFooter = rs;
             break;
             //These sections cannot be inserted this way
-        case KReportSectionData::None:
-        case KReportSectionData::GroupHeader:
-        case KReportSectionData::GroupFooter:
-        case KReportSectionData::Detail:
+        case KReportSectionData::Type::None:
+        case KReportSectionData::Type::GroupHeader:
+        case KReportSectionData::Type::GroupFooter:
+        case KReportSectionData::Type::Detail:
             break;
         }
 
@@ -984,7 +990,7 @@ void KReportDesigner::sectionMouseReleaseEvent(KReportDesignerSectionView * v, Q
             end.setX(v->scene()->width());
         }
 
-        if (d->sectionData.mouseAction == ReportWriterSectionData::MA_Insert) {
+        if (d->sectionData.mouseAction == ReportWriterSectionData::MouseAction::Insert) {
             QGraphicsItem * item = nullptr;
             QString classString;
             QString iconName;
@@ -1024,7 +1030,7 @@ void KReportDesigner::sectionMouseReleaseEvent(KReportDesignerSectionView * v, Q
                 }
             }
 
-            d->sectionData.mouseAction = ReportWriterSectionData::MA_None;
+            d->sectionData.mouseAction = ReportWriterSectionData::MouseAction::None;
             d->sectionData.itemToInsert.clear();
             unsetSectionCursor();
         }
@@ -1058,7 +1064,7 @@ void KReportDesigner::changeSet(KPropertySet *s)
 void KReportDesigner::slotItem(const QString &entity)
 {
     //kreportDebug() << entity;
-    d->sectionData.mouseAction = ReportWriterSectionData::MA_Insert;
+    d->sectionData.mouseAction = ReportWriterSectionData::MouseAction::Insert;
     d->sectionData.itemToInsert = entity;
     setSectionCursor(QCursor(Qt::CrossCursor));
 }
@@ -1073,7 +1079,7 @@ void KReportDesigner::slotEditDelete()
             QGraphicsScene * scene = item->scene();
             delete item;
             scene->update();
-            d->sectionData.mouseAction = ReportWriterSectionData::MA_None;
+            d->sectionData.mouseAction = ReportWriterSectionData::MouseAction::None;
             modified = true;
         }
     }
@@ -1153,7 +1159,7 @@ void KReportDesigner::slotEditPaste(QGraphicsScene * canvas)
             activeItem = activeItems.first();
         }
         canvas->clearSelection();
-        d->sectionData.mouseAction = ReportWriterSectionData::MA_None;
+        d->sectionData.mouseAction = ReportWriterSectionData::MouseAction::None;
 
         //! @todo this code sucks :)
         //! The setPos calls only work AFTER the name has been set ?!?!?
@@ -1178,7 +1184,7 @@ void KReportDesigner::slotEditPaste(QGraphicsScene * canvas)
                 pasted_ent->setSelected(true);
                 canvas->addItem(pasted_ent);
                 pasted_ent->show();
-                d->sectionData.mouseAction = ReportWriterSectionData::MA_Grab;
+                d->sectionData.mouseAction = ReportWriterSectionData::MouseAction::Grab;
                 setModified(true);
             }
         }
@@ -1213,9 +1219,11 @@ QString KReportDesigner::suggestEntityName(const QString &name) const
 {
     KReportDesignerSection *sec;
     int itemCount = 0;
-    //Count items in the main sections
-    for (int i = 1; i <= KReportSectionData::PageFooterAny; i++) {
-        sec = section((KReportSectionData::Section) i);
+    // Count items in the main sections
+    for (int i = static_cast<int>(KReportSectionData::Type::None) + 1;
+         i <= static_cast<int>(KReportSectionData::Type::GroupFooter); i++)
+    {
+        sec = section(static_cast<KReportSectionData::Type>(i));
         if (sec) {
             const QGraphicsItemList l = sec->items();
             itemCount += l.count();
@@ -1255,9 +1263,11 @@ bool KReportDesigner::isEntityNameUnique(const QString &name, KReportItemBase* i
     KReportDesignerSection *sec;
     bool unique = true;
 
-    //Check items in the main sections
-    for (int i = 1; i <= KReportSectionData::PageFooterAny; i++) {
-        sec = section((KReportSectionData::Section)i);
+    // Check items in the main sections
+    for (int i = static_cast<int>(KReportSectionData::Type::None);
+         i <= static_cast<int>(KReportSectionData::Type::GroupFooter); i++)
+    {
+        sec = section(static_cast<KReportSectionData::Type>(i));
         if (sec) {
             const QGraphicsItemList l = sec->items();
             for (QGraphicsItemList::const_iterator it = l.constBegin(); it != l.constEnd(); ++it) {

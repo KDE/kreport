@@ -155,7 +155,7 @@ bool ScreenRenderer::render(const KReportRendererContext& context, ORODocument *
             qreal oy = sz.height() / 5;
 
             //Checkbox Style
-            if (chk->checkType() == OROCheckBox::Cross) {
+            if (chk->checkType() == OROCheckBox::Type::Cross) {
                 context.painter()->drawRoundedRect(rc, sz.width() / 10 , sz.height() / 10);
 
                 if (chk->value()) {
@@ -167,7 +167,7 @@ bool ScreenRenderer::render(const KReportRendererContext& context, ORODocument *
                     context.painter()->drawLine(QPointF(ox, sz.height() - oy) + ps, QPoint(sz.width() - ox, oy) + ps);
                 }
             }
-            else if (chk->checkType() == OROCheckBox::Dot) {
+            else if (chk->checkType() == OROCheckBox::Type::Dot) {
                 //Radio Style
                 context.painter()->drawEllipse(rc);
 

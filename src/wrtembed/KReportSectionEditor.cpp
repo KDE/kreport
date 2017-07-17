@@ -112,20 +112,20 @@ KReportSectionEditor::KReportSectionEditor(KReportDesigner* designer)
 
     // set all the properties
 
-    m_ui.cbReportHeader->setChecked(m_reportDesigner->section(KReportSectionData::ReportHeader));
-    m_ui.cbReportFooter->setChecked(m_reportDesigner->section(KReportSectionData::ReportFooter));
+    m_ui.cbReportHeader->setChecked(m_reportDesigner->section(KReportSectionData::Type::ReportHeader));
+    m_ui.cbReportFooter->setChecked(m_reportDesigner->section(KReportSectionData::Type::ReportFooter));
 
-    m_ui.cbHeadFirst->setChecked(m_reportDesigner->section(KReportSectionData::PageHeaderFirst));
-    m_ui.cbHeadOdd->setChecked(m_reportDesigner->section(KReportSectionData::PageHeaderOdd));
-    m_ui.cbHeadEven->setChecked(m_reportDesigner->section(KReportSectionData::PageHeaderEven));
-    m_ui.cbHeadLast->setChecked(m_reportDesigner->section(KReportSectionData::PageHeaderLast));
-    m_ui.cbHeadAny->setChecked(m_reportDesigner->section(KReportSectionData::PageHeaderAny));
+    m_ui.cbHeadFirst->setChecked(m_reportDesigner->section(KReportSectionData::Type::PageHeaderFirst));
+    m_ui.cbHeadOdd->setChecked(m_reportDesigner->section(KReportSectionData::Type::PageHeaderOdd));
+    m_ui.cbHeadEven->setChecked(m_reportDesigner->section(KReportSectionData::Type::PageHeaderEven));
+    m_ui.cbHeadLast->setChecked(m_reportDesigner->section(KReportSectionData::Type::PageHeaderLast));
+    m_ui.cbHeadAny->setChecked(m_reportDesigner->section(KReportSectionData::Type::PageHeaderAny));
 
-    m_ui.cbFootFirst->setChecked(m_reportDesigner->section(KReportSectionData::PageFooterFirst));
-    m_ui.cbFootOdd->setChecked(m_reportDesigner->section(KReportSectionData::PageFooterOdd));
-    m_ui.cbFootEven->setChecked(m_reportDesigner->section(KReportSectionData::PageFooterEven));
-    m_ui.cbFootLast->setChecked(m_reportDesigner->section(KReportSectionData::PageFooterLast));
-    m_ui.cbFootAny->setChecked(m_reportDesigner->section(KReportSectionData::PageFooterAny));
+    m_ui.cbFootFirst->setChecked(m_reportDesigner->section(KReportSectionData::Type::PageFooterFirst));
+    m_ui.cbFootOdd->setChecked(m_reportDesigner->section(KReportSectionData::Type::PageFooterOdd));
+    m_ui.cbFootEven->setChecked(m_reportDesigner->section(KReportSectionData::Type::PageFooterEven));
+    m_ui.cbFootLast->setChecked(m_reportDesigner->section(KReportSectionData::Type::PageFooterLast));
+    m_ui.cbFootAny->setChecked(m_reportDesigner->section(KReportSectionData::Type::PageFooterAny));
 
     // now set the rw value
     if (m_reportSectionDetail) {
@@ -161,9 +161,9 @@ void KReportSectionEditor::cbReportHeader_toggled(bool yes)
 {
     if (m_reportDesigner) {
         if (yes) {
-            m_reportDesigner->insertSection(KReportSectionData::ReportHeader);
+            m_reportDesigner->insertSection(KReportSectionData::Type::ReportHeader);
         } else {
-            m_reportDesigner->removeSection(KReportSectionData::ReportHeader);
+            m_reportDesigner->removeSection(KReportSectionData::Type::ReportHeader);
         }
     }
 
@@ -173,9 +173,9 @@ void KReportSectionEditor::cbReportFooter_toggled(bool yes)
 {
     if (m_reportDesigner) {
         if (yes) {
-            m_reportDesigner->insertSection(KReportSectionData::ReportFooter);
+            m_reportDesigner->insertSection(KReportSectionData::Type::ReportFooter);
         } else {
-            m_reportDesigner->removeSection(KReportSectionData::ReportFooter);
+            m_reportDesigner->removeSection(KReportSectionData::Type::ReportFooter);
         }
     }
 
@@ -185,9 +185,9 @@ void KReportSectionEditor::cbHeadFirst_toggled(bool yes)
 {
     if (m_reportDesigner) {
         if (yes) {
-            m_reportDesigner->insertSection(KReportSectionData::PageHeaderFirst);
+            m_reportDesigner->insertSection(KReportSectionData::Type::PageHeaderFirst);
         } else {
-            m_reportDesigner->removeSection(KReportSectionData::PageHeaderFirst);
+            m_reportDesigner->removeSection(KReportSectionData::Type::PageHeaderFirst);
         }
     }
 
@@ -197,9 +197,9 @@ void KReportSectionEditor::cbHeadLast_toggled(bool yes)
 {
     if (m_reportDesigner) {
         if (yes) {
-            m_reportDesigner->insertSection(KReportSectionData::PageHeaderLast);
+            m_reportDesigner->insertSection(KReportSectionData::Type::PageHeaderLast);
         } else {
-            m_reportDesigner->removeSection(KReportSectionData::PageHeaderLast);
+            m_reportDesigner->removeSection(KReportSectionData::Type::PageHeaderLast);
         }
     }
 
@@ -209,9 +209,9 @@ void KReportSectionEditor::cbHeadEven_toggled(bool yes)
 {
     if (m_reportDesigner) {
         if (yes) {
-            m_reportDesigner->insertSection(KReportSectionData::PageHeaderEven);
+            m_reportDesigner->insertSection(KReportSectionData::Type::PageHeaderEven);
         } else {
-            m_reportDesigner->removeSection(KReportSectionData::PageHeaderEven);
+            m_reportDesigner->removeSection(KReportSectionData::Type::PageHeaderEven);
         }
     }
 
@@ -221,9 +221,9 @@ void KReportSectionEditor::cbHeadOdd_toggled(bool yes)
 {
     if (m_reportDesigner) {
         if (yes) {
-            m_reportDesigner->insertSection(KReportSectionData::PageHeaderOdd);
+            m_reportDesigner->insertSection(KReportSectionData::Type::PageHeaderOdd);
         } else {
-            m_reportDesigner->removeSection(KReportSectionData::PageHeaderOdd);
+            m_reportDesigner->removeSection(KReportSectionData::Type::PageHeaderOdd);
         }
     }
 
@@ -233,9 +233,9 @@ void KReportSectionEditor::cbFootFirst_toggled(bool yes)
 {
     if (m_reportDesigner) {
         if (yes) {
-            m_reportDesigner->insertSection(KReportSectionData::PageFooterFirst);
+            m_reportDesigner->insertSection(KReportSectionData::Type::PageFooterFirst);
         } else {
-            m_reportDesigner->removeSection(KReportSectionData::PageFooterFirst);
+            m_reportDesigner->removeSection(KReportSectionData::Type::PageFooterFirst);
         }
     }
 
@@ -245,9 +245,9 @@ void KReportSectionEditor::cbFootLast_toggled(bool yes)
 {
     if (m_reportDesigner) {
         if (yes) {
-            m_reportDesigner->insertSection(KReportSectionData::PageFooterLast);
+            m_reportDesigner->insertSection(KReportSectionData::Type::PageFooterLast);
         } else {
-            m_reportDesigner->removeSection(KReportSectionData::PageFooterLast);
+            m_reportDesigner->removeSection(KReportSectionData::Type::PageFooterLast);
         }
     }
 
@@ -257,9 +257,9 @@ void KReportSectionEditor::cbFootEven_toggled(bool yes)
 {
     if (m_reportDesigner) {
         if (yes) {
-            m_reportDesigner->insertSection(KReportSectionData::PageFooterEven);
+            m_reportDesigner->insertSection(KReportSectionData::Type::PageFooterEven);
         } else {
-            m_reportDesigner->removeSection(KReportSectionData::PageFooterEven);
+            m_reportDesigner->removeSection(KReportSectionData::Type::PageFooterEven);
         }
     }
 
@@ -269,9 +269,9 @@ void KReportSectionEditor::cbFootOdd_toggled(bool yes)
 {
     if (m_reportDesigner) {
         if (yes) {
-            m_reportDesigner->insertSection(KReportSectionData::PageFooterOdd);
+            m_reportDesigner->insertSection(KReportSectionData::Type::PageFooterOdd);
         } else {
-            m_reportDesigner->removeSection(KReportSectionData::PageFooterOdd);
+            m_reportDesigner->removeSection(KReportSectionData::Type::PageFooterOdd);
         }
     }
 
@@ -365,9 +365,9 @@ void KReportSectionEditor::cbHeadAny_toggled(bool yes)
 {
     if (m_reportDesigner) {
         if (yes) {
-            m_reportDesigner->insertSection(KReportSectionData::PageHeaderAny);
+            m_reportDesigner->insertSection(KReportSectionData::Type::PageHeaderAny);
         } else {
-            m_reportDesigner->removeSection(KReportSectionData::PageHeaderAny);
+            m_reportDesigner->removeSection(KReportSectionData::Type::PageHeaderAny);
         }
     }
 }
@@ -376,9 +376,9 @@ void KReportSectionEditor::cbFootAny_toggled(bool yes)
 {
     if (m_reportDesigner) {
         if (yes) {
-            m_reportDesigner->insertSection(KReportSectionData::PageFooterAny);
+            m_reportDesigner->insertSection(KReportSectionData::Type::PageFooterAny);
         } else {
-            m_reportDesigner->removeSection(KReportSectionData::PageFooterAny);
+            m_reportDesigner->removeSection(KReportSectionData::Type::PageFooterAny);
         }
     }
 }

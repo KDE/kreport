@@ -142,13 +142,13 @@ void ElementsTest::testSections()
 {
     // types
     KReportSection sec1;
-    QCOMPARE(sec1.type(), KReportSection::InvalidType);
-    QCOMPARE(KReportSection(sec1).type(), KReportSection::InvalidType);
-    sec1.setType(KReportSection::PageFooterFirst);
+    QCOMPARE(sec1.type(), KReportSection::Type::Invalid);
+    QCOMPARE(KReportSection(sec1).type(), KReportSection::Type::Invalid);
+    sec1.setType(KReportSection::Type::PageFooterFirst);
     KReportSection sec2(sec1);
     QCOMPARE(sec1.type(), sec2.type());
     QCOMPARE(sec1, sec2);
-    sec1.setType(KReportSection::PageFooterEven);
+    sec1.setType(KReportSection::Type::PageFooterEven);
     QCOMPARE(sec1.type(), sec2.type()); // shared
     QCOMPARE(sec1, sec2); // shared
 

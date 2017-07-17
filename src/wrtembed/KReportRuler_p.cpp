@@ -193,7 +193,7 @@ public:
     QList<HotSpotData> hotspots;
 
     bool rightToLeft;
-    enum Selection {
+    enum class Selection {
         None,
         Tab,
         FirstLineIndent,
@@ -552,11 +552,16 @@ void HorizontalPaintingStrategy::drawMeasurements(const KReportRuler::Private *d
 
     // Draw the mouse indicator
     const int mouseCoord = d->mouseCoordinate - start;
-    if (d->selected == KReportRuler::Private::None || d->selected == KReportRuler::Private::HotSpot) {
+    if (d->selected == KReportRuler::Private::Selection::None
+        || d->selected == KReportRuler::Private::Selection::HotSpot)
+    {
         const qreal top = rectangle.y() + 1;
         const qreal bottom = rectangle.bottom() -1;
-        if (d->selected == KReportRuler::Private::None && d->showMousePosition && mouseCoord > 0 && mouseCoord < rectangle.width() )
+        if (d->selected == KReportRuler::Private::Selection::None && d->showMousePosition
+            && mouseCoord > 0 && mouseCoord < rectangle.width())
+        {
             painter->drawLine(QPointF(mouseCoord, top), QPointF(mouseCoord, bottom));
+        }
         foreach (const KReportRuler::Private::HotSpotData & hp, d->hotspots) {
             const qreal x = d->viewConverter->documentToViewX(hp.position) + d->offset;
             painter->drawLine(QPointF(x, top), QPointF(x, bottom));
@@ -763,11 +768,16 @@ void VerticalPaintingStrategy::drawMeasurements(const KReportRuler::Private *d, 
 
     // Draw the mouse indicator
     const int mouseCoord = d->mouseCoordinate - start;
-    if (d->selected == KReportRuler::Private::None || d->selected == KReportRuler::Private::HotSpot) {
+    if (d->selected == KReportRuler::Private::Selection::None
+        || d->selected == KReportRuler::Private::Selection::HotSpot)
+    {
         const qreal left = rectangle.left() + 1;
         const qreal right = rectangle.right() -1;
-        if (d->selected == KReportRuler::Private::None && d->showMousePosition && mouseCoord > 0 && mouseCoord < rectangle.height() )
+        if (d->selected == KReportRuler::Private::Selection::None && d->showMousePosition
+            && mouseCoord > 0 && mouseCoord < rectangle.height())
+        {
             painter->drawLine(QPointF(left, mouseCoord), QPointF(right, mouseCoord));
+        }
         foreach (const KReportRuler::Private::HotSpotData & hp, d->hotspots) {
             const qreal y = d->viewConverter->documentToViewY(hp.position) + d->offset;
             painter->drawLine(QPointF(left, y), QPointF(right, y));
@@ -882,7 +892,7 @@ KReportRuler::Private::Private(KReportRuler *parent,
     currentIndex(0),
     tabDistance(0.0),
     rightToLeft(false),
-    selected(None),
+    selected(Selection::None),
     selectOffset(0),
     tabChooser(nullptr),
     normalPaintingStrategy(o == Qt::Horizontal ?
@@ -930,21 +940,21 @@ KReportRuler::Private::Selection KReportRuler::Private::selectionAtPosition(cons
         if (pos.x() >= x - 8 && pos.x() <= x +8 && pos.y() < height / 2) {
             if (selectOffset)
                 *selectOffset = x - pos.x();
-            return KReportRuler::Private::FirstLineIndent;
+            return KReportRuler::Private::Selection::FirstLineIndent;
         }
 
         x = int(viewConverter->documentToViewX(effectiveActiveRangeEnd() - paragraphIndent) + offset);
         if (pos.x() >= x - 8 && pos.x() <= x +8 && pos.y() > height / 2) {
             if (selectOffset)
                 *selectOffset = x - pos.x();
-            return KReportRuler::Private::ParagraphIndent;
+            return KReportRuler::Private::Selection::ParagraphIndent;
         }
 
         x = int(viewConverter->documentToViewX(effectiveActiveRangeStart() + endIndent) + offset);
         if (pos.x() >= x - 8 && pos.x() <= x + 8) {
             if (selectOffset)
                 *selectOffset = x - pos.x();
-            return KReportRuler::Private::EndIndent;
+            return KReportRuler::Private::Selection::EndIndent;
         }
     }
     else {
@@ -952,25 +962,25 @@ KReportRuler::Private::Selection KReportRuler::Private::selectionAtPosition(cons
         if (pos.x() >= x -8 && pos.x() <= x + 8 && pos.y() < height / 2) {
             if (selectOffset)
                 *selectOffset = x - pos.x();
-            return KReportRuler::Private::FirstLineIndent;
+            return KReportRuler::Private::Selection::FirstLineIndent;
         }
 
         x = int(viewConverter->documentToViewX(effectiveActiveRangeStart() + paragraphIndent) + offset);
         if (pos.x() >= x - 8 && pos.x() <= x + 8 && pos.y() > height/2) {
             if (selectOffset)
                 *selectOffset = x - pos.x();
-            return KReportRuler::Private::ParagraphIndent;
+            return KReportRuler::Private::Selection::ParagraphIndent;
         }
 
         x = int(viewConverter->documentToViewX(effectiveActiveRangeEnd() - endIndent) + offset);
         if (pos.x() >= x - 8 && pos.x() <= x + 8) {
             if (selectOffset)
                 *selectOffset = x - pos.x();
-            return KReportRuler::Private::EndIndent;
+            return KReportRuler::Private::Selection::EndIndent;
         }
     }
 
-    return KReportRuler::Private::None;
+    return KReportRuler::Private::Selection::None;
 }
 
 int KReportRuler::Private::hotSpotIndex(const QPoint & pos)
@@ -1244,7 +1254,7 @@ QList<QAction*> KReportRuler::popupActionList() const
 void KReportRuler::mousePressEvent ( QMouseEvent* ev )
 {
     d->tabMoved = false;
-    d->selected = KReportRuler::Private::None;
+    d->selected = KReportRuler::Private::Selection::None;
     if (ev->button() == Qt::RightButton && !d->popupActions.isEmpty())
         QMenu::exec(d->popupActions, ev->globalPos());
     if (ev->button() != Qt::LeftButton) {
@@ -1266,7 +1276,7 @@ void KReportRuler::mousePressEvent ( QMouseEvent* ev )
                         + (d->relativeTabs ? d->paragraphIndent : 0) + t.position) + d->offset;
             }
             if (pos.x() >= x-6 && pos.x() <= x+6) {
-                d->selected = KReportRuler::Private::Tab;
+                d->selected = KReportRuler::Private::Selection::Tab;
                 d->selectOffset = x - pos.x();
                 d->currentIndex = i;
                 break;
@@ -1276,17 +1286,17 @@ void KReportRuler::mousePressEvent ( QMouseEvent* ev )
         d->originalIndex = d->currentIndex;
     }
 
-    if (d->selected == KReportRuler::Private::None)
+    if (d->selected == KReportRuler::Private::Selection::None)
         d->selected = d->selectionAtPosition(ev->pos(), &d->selectOffset);
-    if (d->selected == KReportRuler::Private::None) {
+    if (d->selected == KReportRuler::Private::Selection::None) {
         int hotSpotIndex = d->hotSpotIndex(ev->pos());
         if (hotSpotIndex >= 0) {
-            d->selected = KReportRuler::Private::HotSpot;
+            d->selected = KReportRuler::Private::Selection::HotSpot;
             update();
         }
     }
 
-    if (d->showTabs && d->selected == KReportRuler::Private::None) {
+    if (d->showTabs && d->selected == KReportRuler::Private::Selection::None) {
         // still haven't found something so let assume the user wants to add a tab
         qreal tabpos;
         if (d->rightToLeft) {
@@ -1301,26 +1311,26 @@ void KReportRuler::mousePressEvent ( QMouseEvent* ev )
                                           QTextOption::LeftTab);
         d->tabs.append(t);
         d->selectOffset = 0;
-        d->selected = KReportRuler::Private::Tab;
+        d->selected = KReportRuler::Private::Selection::Tab;
         d->currentIndex = d->tabs.count() - 1;
         d->originalIndex = -1; // new!
         update();
     }
     if (d->orientation == Qt::Horizontal && (ev->modifiers() & Qt::ShiftModifier) &&
-            (d->selected == KReportRuler::Private::FirstLineIndent ||
-             d->selected == KReportRuler::Private::ParagraphIndent ||
-             d->selected == KReportRuler::Private::Tab ||
-             d->selected == KReportRuler::Private::EndIndent))
+            (d->selected == KReportRuler::Private::Selection::FirstLineIndent ||
+             d->selected == KReportRuler::Private::Selection::ParagraphIndent ||
+             d->selected == KReportRuler::Private::Selection::Tab ||
+             d->selected == KReportRuler::Private::Selection::EndIndent))
         d->paintingStrategy = d->distancesPaintingStrategy;
 
-    if (d->selected != KReportRuler::Private::None)
+    if (d->selected != KReportRuler::Private::Selection::None)
         emit aboutToChange();
 }
 
 void KReportRuler::mouseReleaseEvent ( QMouseEvent* ev )
 {
     ev->accept();
-    if (d->selected == KReportRuler::Private::Tab) {
+    if (d->selected == KReportRuler::Private::Selection::Tab) {
         if (d->originalIndex >= 0 && !d->tabMoved) {
             int type = d->tabs[d->currentIndex].type;
             type++;
@@ -1331,13 +1341,13 @@ void KReportRuler::mouseReleaseEvent ( QMouseEvent* ev )
         }
         d->emitTabChanged();
     }
-    else if( d->selected != KReportRuler::Private::None)
+    else if( d->selected != KReportRuler::Private::Selection::None)
         emit indentsChanged(true);
     else
         ev->ignore();
 
     d->paintingStrategy = d->normalPaintingStrategy;
-    d->selected = KReportRuler::Private::None;
+    d->selected = KReportRuler::Private::Selection::None;
 }
 
 void KReportRuler::mouseMoveEvent ( QMouseEvent* ev )
@@ -1347,7 +1357,7 @@ void KReportRuler::mouseMoveEvent ( QMouseEvent* ev )
     qreal activeLength = d->effectiveActiveRangeEnd() - d->effectiveActiveRangeStart();
 
     switch (d->selected) {
-    case KReportRuler::Private::FirstLineIndent:
+    case KReportRuler::Private::Selection::FirstLineIndent:
         if (d->rightToLeft)
             d->firstLineIndent = d->effectiveActiveRangeEnd() - d->paragraphIndent -
                 d->viewConverter->viewToDocumentX(pos.x() + d->selectOffset - d->offset);
@@ -1364,7 +1374,7 @@ void KReportRuler::mouseMoveEvent ( QMouseEvent* ev )
 
         emit indentsChanged(false);
         break;
-    case KReportRuler::Private::ParagraphIndent:
+    case KReportRuler::Private::Selection::ParagraphIndent:
         if (d->rightToLeft)
             d->paragraphIndent = d->effectiveActiveRangeEnd() -
                 d->viewConverter->viewToDocumentX(pos.x() + d->selectOffset - d->offset);
@@ -1383,7 +1393,7 @@ void KReportRuler::mouseMoveEvent ( QMouseEvent* ev )
             d->paragraphIndent = activeLength - d->endIndent;
         emit indentsChanged(false);
         break;
-    case KReportRuler::Private::EndIndent:
+    case KReportRuler::Private::Selection::EndIndent:
         if (d->rightToLeft)
             d->endIndent = d->viewConverter->viewToDocumentX(pos.x()
                  + d->selectOffset - d->offset) - d->effectiveActiveRangeStart();
@@ -1402,7 +1412,7 @@ void KReportRuler::mouseMoveEvent ( QMouseEvent* ev )
             d->endIndent = activeLength - d->paragraphIndent;
         emit indentsChanged(false);
         break;
-    case KReportRuler::Private::Tab:
+    case KReportRuler::Private::Selection::Tab:
         d->tabMoved = true;
         if (d->currentIndex < 0) { // tab is deleted.
             if (ev->pos().y() < height()) { // reinstante it.
@@ -1438,7 +1448,7 @@ void KReportRuler::mouseMoveEvent ( QMouseEvent* ev )
 
         d->emitTabChanged();
         break;
-    case KReportRuler::Private::HotSpot:
+    case KReportRuler::Private::Selection::HotSpot:
         qreal newPos;
         if (d->orientation == Qt::Horizontal)
             newPos= d->viewConverter->viewToDocumentX(pos.x() - d->offset);
@@ -1447,7 +1457,7 @@ void KReportRuler::mouseMoveEvent ( QMouseEvent* ev )
         d->hotspots[d->currentIndex].position = newPos;
         emit hotSpotChanged(d->hotspots[d->currentIndex].id, newPos);
         break;
-    case KReportRuler::Private::None:
+    case KReportRuler::Private::Selection::None:
         d->mouseCoordinate = (d->orientation == Qt::Horizontal ?  pos.x() : pos.y()) - d->offset;
         int hotSpotIndex = d->hotSpotIndex(pos);
         if (hotSpotIndex >= 0) {
@@ -1459,10 +1469,10 @@ void KReportRuler::mouseMoveEvent ( QMouseEvent* ev )
         KReportRuler::Private::Selection selection = d->selectionAtPosition(pos);
         QString text;
         switch(selection) {
-        case KReportRuler::Private::FirstLineIndent: text = tr("First line indent"); break;
-        case KReportRuler::Private::ParagraphIndent: text = tr("Left indent"); break;
-        case KReportRuler::Private::EndIndent: text = tr("Right indent"); break;
-        case KReportRuler::Private::None:
+        case KReportRuler::Private::Selection::FirstLineIndent: text = tr("First line indent"); break;
+        case KReportRuler::Private::Selection::ParagraphIndent: text = tr("Left indent"); break;
+        case KReportRuler::Private::Selection::EndIndent: text = tr("Right indent"); break;
+        case KReportRuler::Private::Selection::None:
             if (ev->buttons() & Qt::LeftButton) {
                 if (d->orientation == Qt::Horizontal && ev->pos().y() > height() + OutsideRulerThreshold)
                     emit guideLineCreated(d->orientation, d->viewConverter->viewToDocumentY(ev->pos().y()));

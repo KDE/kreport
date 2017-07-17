@@ -156,9 +156,9 @@ void FormatTest::testLabelElement()
 
     QCOMPARE(design.title(), QLatin1String("Label Element Test Report"));
 
-    QVERIFY(design.hasSection(KReportSection::Detail));
-    KReportSection detailSection = design.section(KReportSection::Detail);
-    QCOMPARE(detailSection.type(), KReportSection::Detail);
+    QVERIFY(design.hasSection(KReportSection::Type::Detail));
+    KReportSection detailSection = design.section(KReportSection::Type::Detail);
+    QCOMPARE(detailSection.type(), KReportSection::Type::Detail);
     QCOMPARE(detailSection.height(), CM_TO_POINT(5.0));
     QCOMPARE(detailSection.backgroundColor(), QColor("#eeeeee"));
 

@@ -211,8 +211,8 @@ public:
     const ORODocument* document() const;
     void setDocument(ORODocument *doc);
 
-    void setType(KReportSectionData::Section t);
-    KReportSectionData::Section type() const;
+    void setType(KReportSectionData::Type type);
+    KReportSectionData::Type type() const;
 
     int primitiveCount() const;
     OROPrimitive* primitive(int index);
@@ -431,8 +431,8 @@ private:
 class KREPORT_EXPORT OROCheckBox : public OROPrimitive
 {
 public:
-    enum Type {
-        Cross = 1,
+    enum class Type {
+        Cross,
         Tick,
         Dot
     };

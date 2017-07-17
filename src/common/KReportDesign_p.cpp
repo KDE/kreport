@@ -34,7 +34,7 @@ KReportDesign::Private::Private(KReportDesign *design)
  , snapToGrid(DEFAULT_SNAP_TO_GRID)
  , gridDivisions(DEFAULT_GRID_DIVISIONS)
  , pageUnit(DEFAULT_UNIT)
- , sections(KReportSection::Detail)
+ , sections(static_cast<int>(KReportSection::Type::Detail))
 {
     memset(static_cast<void*>(sections.data()), 0, sizeof(void*) * sections.length());
     pageLayout.setUnits(QPageLayout::Point); // initializate because of https://bugreports.qt.io/browse/QTBUG-47551
@@ -60,7 +60,12 @@ KReportDesignGlobal::KReportDesignGlobal()
 
 KReportSection::Type KReportDesignGlobal::sectionType(const QString& typeName) {
     initSectionTypes();
-    return sectionTypesForName.value(typeName); // returns InvalidType for invalid name
+    return sectionTypesForName.value(typeName); // returns Invalid typefor invalid name
+}
+
+inline uint qHash(KReportSection::Type sectionType, uint seed = 0)
+{
+    return qHash(static_cast<uint>(sectionType), seed);
 }
 
 QString KReportDesignGlobal::sectionTypeName(KReportSection::Type sectionType) {
@@ -79,23 +84,23 @@ void KReportDesignGlobal::initSectionTypes() {
 }
 
 const KReportDesignGlobal::SectionTypeInfo KReportDesignGlobal::sectionTypes[] = {
-    { KReportSection::InvalidType, "" },
-    { KReportSection::PageHeaderAny, "header-page-any" },
-    { KReportSection::PageHeaderEven, "header-page-even" },
-    { KReportSection::PageHeaderOdd, "header-page-odd" },
-    { KReportSection::PageHeaderFirst, "header-page-first" },
-    { KReportSection::PageHeaderLast, "header-page-last" },
-    { KReportSection::PageFooterAny, "footer-page-any" },
-    { KReportSection::PageFooterEven, "footer-page-even" },
-    { KReportSection::PageFooterOdd, "footer-page-odd" },
-    { KReportSection::PageFooterFirst, "footer-page-first" },
-    { KReportSection::PageFooterLast, "footer-page-last" },
-    { KReportSection::ReportHeader, "header-report" },
-    { KReportSection::ReportFooter, "footer-report" },
-    { KReportSection::GroupHeader, "group-header" },
-    { KReportSection::GroupFooter, "group-footer" },
-    { KReportSection::Detail, "detail" },
-    { KReportSection::InvalidType, nullptr }
+    { KReportSection::Type::Invalid, "" },
+    { KReportSection::Type::PageHeaderAny, "header-page-any" },
+    { KReportSection::Type::PageHeaderEven, "header-page-even" },
+    { KReportSection::Type::PageHeaderOdd, "header-page-odd" },
+    { KReportSection::Type::PageHeaderFirst, "header-page-first" },
+    { KReportSection::Type::PageHeaderLast, "header-page-last" },
+    { KReportSection::Type::PageFooterAny, "footer-page-any" },
+    { KReportSection::Type::PageFooterEven, "footer-page-even" },
+    { KReportSection::Type::PageFooterOdd, "footer-page-odd" },
+    { KReportSection::Type::PageFooterFirst, "footer-page-first" },
+    { KReportSection::Type::PageFooterLast, "footer-page-last" },
+    { KReportSection::Type::ReportHeader, "header-report" },
+    { KReportSection::Type::ReportFooter, "footer-report" },
+    { KReportSection::Type::GroupHeader, "group-header" },
+    { KReportSection::Type::GroupFooter, "group-footer" },
+    { KReportSection::Type::Detail, "detail" },
+    { KReportSection::Type::Invalid, nullptr }
 };
 
 Q_GLOBAL_STATIC(KReportDesignGlobal, s_global)
@@ -148,7 +153,7 @@ KReportSection KReportDesign::Private::processSectionElement(const QDomElement &
 {
     const QString sectionTypeName = KReportUtils::attr(el, "report:section-type", QString());
     KReportSection::Type sectionType = s_global->sectionType(sectionTypeName);
-    if (sectionType == KReportSection::InvalidType) {
+    if (sectionType == KReportSection::Type::Invalid) {
         setStatus(status,
             QString::fromLatin1("Invalid value of report:section-type=\"%1\" in element <%2>")
                                 .arg(sectionTypeName).arg(el.tagName()), el);
@@ -243,7 +248,7 @@ bool KReportDesign::Private::processDetailElement(const QDomElement &el,
             if (status && status->isError()) {
                 return false;
             }
-            if (section.type() != KReportSection::Detail) {
+            if (section.type() != KReportSection::Type::Detail) {
                 setStatus(status,
                     QString::fromLatin1("Only section of type \"detail\" allowed in <report:detail>"), el);
                 return false;
@@ -295,7 +300,7 @@ bool KReportDesign::Private::processBodyElementChild(const QDomElement &el,
                                 .arg(s_global->sectionTypeName(section.type())), el);
             return false;
         }
-        if (section.type() == KReportSection::Detail) {
+        if (section.type() == KReportSection::Type::Detail) {
             setStatus(status,
                 QString::fromLatin1("Section of type \"detail\" not allowed in <report:body>"), el);
             return false;

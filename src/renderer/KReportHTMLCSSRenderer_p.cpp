@@ -96,17 +96,21 @@ QString HTMLCSSRenderer::renderCSS(ORODocument *document)
     for (int s = 0; s < document->sectionCount(); s++) {
         OROSection *section = document->section(s);
 
-        if (section->type() == KReportSectionData::GroupHeader ||
-                section->type() == KReportSectionData::GroupFooter ||
-                section->type() == KReportSectionData::Detail ||
-                section->type() == KReportSectionData::ReportHeader ||
-                section->type() == KReportSectionData::ReportFooter ||
-                (section->type() == KReportSectionData::PageHeaderAny && !renderedPageHead) ||
-                (section->type() == KReportSectionData::PageFooterAny && !renderedPageFoot && s > document->sectionCount() - 2)) { //render the page foot right at the end, it will either be the last or second last section if there is a report footer
-            if (section->type() == KReportSectionData::PageHeaderAny)
+        if (section->type() == KReportSectionData::Type::GroupHeader
+            || section->type() == KReportSectionData::Type::GroupFooter
+            || section->type() == KReportSectionData::Type::Detail
+            || section->type() == KReportSectionData::Type::ReportHeader
+            || section->type() == KReportSectionData::Type::ReportFooter
+            || (section->type() == KReportSectionData::Type::PageHeaderAny && !renderedPageHead)
+            || (section->type() == KReportSectionData::Type::PageFooterAny && !renderedPageFoot
+                && s > document->sectionCount() - 2))
+        { // render the page foot right at the end, it
+          // will either be the last or second last
+          // section if there is a report footer
+            if (section->type() == KReportSectionData::Type::PageHeaderAny)
                 renderedPageHead = true;
 
-            if (section->type() == KReportSectionData::PageFooterAny)
+            if (section->type() == KReportSectionData::Type::PageFooterAny)
                 renderedPageFoot = true;
 
             style = QLatin1String("position: relative; top: 0pt; left: 0pt; background-color: ") + section->backgroundColor().name() + QLatin1String("; height: ") + QString::number(section->height()) + QLatin1String("pt;");

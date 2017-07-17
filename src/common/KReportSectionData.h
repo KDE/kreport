@@ -45,9 +45,9 @@ class KReportSectionData : public QObject
 {
     Q_OBJECT
 public:
-    enum Section {
-        None = 0,
-        PageHeaderFirst = 1,
+    enum class Type {
+        None,
+        PageHeaderFirst,
         PageHeaderOdd,
         PageHeaderEven,
         PageHeaderLast,
@@ -89,12 +89,12 @@ public:
         return m_backgroundColor->value().value<QColor>();
     }
 
-    Section type() const {
+    Type type() const {
         return m_type;
     }
 
-    static KReportSectionData::Section sectionTypeFromString(const QString& s);
-    static QString sectionTypeString(KReportSectionData::Section s);
+    static KReportSectionData::Type sectionTypeFromString(const QString& s);
+    static QString sectionTypeString(KReportSectionData::Type type);
 protected:
     KPropertySet *m_set;
     KProperty *m_height;
@@ -105,7 +105,7 @@ private:
 
     QList<KReportItemBase*> m_objects;
 
-    Section m_type;
+    Type m_type;
 
     static bool zLessThan(KReportItemBase* s1, KReportItemBase* s2);
     static bool xLessThan(KReportItemBase* s1, KReportItemBase* s2);

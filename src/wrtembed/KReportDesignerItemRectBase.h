@@ -50,13 +50,15 @@ protected:
     int m_dpiX;
     int m_dpiY;
 
-    enum UpdatePropertyFlag {
+    enum class SceneRectFlag {
         UpdateProperty,
         DontUpdateProperty
     };
 
-    void setSceneRect(const QPointF& topLeft, const QSizeF& size, UpdatePropertyFlag update = UpdateProperty);
-    void setSceneRect(const QRectF& rect, UpdatePropertyFlag update = UpdateProperty);
+    void setSceneRect(const QPointF &topLeft, const QSizeF &size,
+                      SceneRectFlag update = SceneRectFlag::UpdateProperty);
+    void setSceneRect(const QRectF &rect,
+                      SceneRectFlag update = SceneRectFlag::UpdateProperty);
 
     void drawHandles(QPainter*);
     QRectF sceneRect();

@@ -128,11 +128,11 @@ int KReportItemCheckBox::renderSimpleData(OROPage *page, OROSection *section, co
     chk->setLineStyle(lineStyle());
     chk->setForegroundColor(m_foregroundColor->value().value<QColor>());
     if (m_checkStyle->value().toString() == QLatin1String("Cross")) {
-        chk->setCheckType(OROCheckBox::Cross);
+        chk->setCheckType(OROCheckBox::Type::Cross);
     } else if (m_checkStyle->value().toString() == QLatin1String("Dot")) {
-        chk->setCheckType(OROCheckBox::Dot);
+        chk->setCheckType(OROCheckBox::Type::Dot);
     } else {
-        chk->setCheckType(OROCheckBox::Tick);
+        chk->setCheckType(OROCheckBox::Type::Tick);
     }
 
     QString str;

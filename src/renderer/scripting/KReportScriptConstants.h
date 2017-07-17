@@ -41,7 +41,7 @@ public:
     //! constants.QtSolidLine
     //! \endcode
     //! for example
-    enum PenStyle {QtNoPen = 0, QtSolidLine, QtDashLine, QtDotLine, QtDashDotLine, QtDashDotDotLine};
+    enum PenStyle {QtNoPen, QtSolidLine, QtDashLine, QtDotLine, QtDashDotLine, QtDashDotDotLine};
 
     void setPageNumber(int p) {
         m_currentPage = p;

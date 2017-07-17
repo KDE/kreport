@@ -32,9 +32,9 @@ class KREPORT_EXPORT KReportSection //SDC: explicit operator== virtual_dtor cust
 {
     Q_DECLARE_TR_FUNCTIONS(KReportSection)
 public:
-    enum Type {
-        InvalidType = 0,
-        PageHeaderFirst = 1,
+    enum class Type {
+        Invalid,
+        PageHeaderFirst,
         PageHeaderOdd,
         PageHeaderEven,
         PageHeaderLast,
@@ -54,11 +54,11 @@ public:
     /*!
     @getter
     @return section type
-    Default section type is InvalidType.
+    Default section type is Invalid.
     @setter
     Sets section type.
     */
-    KReportSection::Type type;  //SDC: default=KReportSection::InvalidType simple_type
+    KReportSection::Type type;  //SDC: default=KReportSection::Type::Invalid simple_type
 
     /*!
     @getter

@@ -70,16 +70,16 @@ QRectF KReportDesignerItemRectBase::pointRect() const
     return QRectF(item()->position(), item()->size());
 }
 
-void KReportDesignerItemRectBase::setSceneRect(const QPointF& topLeft, const QSizeF& size, UpdatePropertyFlag update)
+void KReportDesignerItemRectBase::setSceneRect(const QPointF& topLeft, const QSizeF& size, SceneRectFlag update)
 {
     setSceneRect(QRectF(topLeft, size), update);
 }
 
-void KReportDesignerItemRectBase::setSceneRect(const QRectF& rect, UpdatePropertyFlag update)
+void KReportDesignerItemRectBase::setSceneRect(const QRectF& rect, SceneRectFlag update)
 {
     QGraphicsRectItem::setPos(rect.x(), rect.y());
     setRect(0, 0, rect.width(), rect.height());
-    if (update == UpdateProperty) {
+    if (update == SceneRectFlag::UpdateProperty) {
         item()->setPosition(KReportItemBase::positionFromScene(QPointF(rect.x(), rect.y())));
         item()->setSize(KReportItemBase::sizeFromScene(QSizeF(rect.width(), rect.height())));
     }
@@ -307,7 +307,8 @@ QVariant KReportDesignerItemRectBase::itemChange(GraphicsItemChange change, cons
             else if (newPos.y() > (scene()->height() - rect().height()))
                 newPos.setY(scene()->height() - rect().height());
 
-            setSceneRect(newPos, KReportItemBase::sceneSize(item()->size()), KReportDesignerItemRectBase::DontUpdateProperty);
+            setSceneRect(newPos, KReportItemBase::sceneSize(item()->size()),
+                         KReportDesignerItemRectBase::SceneRectFlag::DontUpdateProperty);
         }
     }
     return QGraphicsItem::itemChange(change, value);
@@ -324,7 +325,8 @@ void KReportDesignerItemRectBase::propertyChanged(const KPropertySet &s, const K
         item()->setSize(item()->unit().convertToPoint(p.value().toSizeF())); //TODO dont update property
     }
 #endif
-    setSceneRect(KReportItemBase::scenePosition(item()->position()), KReportItemBase::sceneSize(item()->size()), DontUpdateProperty);
+    setSceneRect(KReportItemBase::scenePosition(item()->position()),
+                 KReportItemBase::sceneSize(item()->size()), SceneRectFlag::DontUpdateProperty);
 }
 
 void KReportDesignerItemRectBase::move(const QPointF& /*m*/)

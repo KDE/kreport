@@ -97,17 +97,21 @@ QString HTMLTableRenderer::renderTable(ORODocument *document)
         OROSection *section = document->section(s);
         section->sortPrimitives(Qt::Horizontal);
 
-        if (section->type() == KReportSectionData::GroupHeader ||
-                section->type() == KReportSectionData::GroupFooter ||
-                section->type() == KReportSectionData::Detail ||
-                section->type() == KReportSectionData::ReportHeader ||
-                section->type() == KReportSectionData::ReportFooter ||
-                (section->type() == KReportSectionData::PageHeaderAny && !renderedPageHeader) ||
-                (section->type() == KReportSectionData::PageFooterAny && !renderedPageFooter && s > document->sectionCount() - 2)) { //render the page foot right at the end, it will either be the last or second last section if there is a report footer
-            if (section->type() == KReportSectionData::PageHeaderAny)
+        if (section->type() == KReportSectionData::Type::GroupHeader
+            || section->type() == KReportSectionData::Type::GroupFooter
+            || section->type() == KReportSectionData::Type::Detail
+            || section->type() == KReportSectionData::Type::ReportHeader
+            || section->type() == KReportSectionData::Type::ReportFooter
+            || (section->type() == KReportSectionData::Type::PageHeaderAny && !renderedPageHeader)
+            || (section->type() == KReportSectionData::Type::PageFooterAny && !renderedPageFooter
+                && s > document->sectionCount() - 2))
+        {   // render the page foot right at the end, it
+            // will either be the last or second last
+            // section if there is a report footer
+            if (section->type() == KReportSectionData::Type::PageHeaderAny)
                 renderedPageHeader = true;
 
-            if (section->type() == KReportSectionData::PageFooterAny)
+            if (section->type() == KReportSectionData::Type::PageFooterAny)
                 renderedPageFooter = true;
 
             tr = QLatin1String("<tr style=\"background-color: ") + section->backgroundColor().name() + QLatin1String("\">\n");

@@ -92,7 +92,7 @@ public:
     // END OF: Visual settings only
     QString title;
     KReportPrivate::PageLayout pageLayout;
-    QVarLengthArray<KReportSection*, KReportSection::Detail> sections;
+    QVarLengthArray<KReportSection*, static_cast<int>(KReportSection::Type::Detail)> sections;
 #ifdef KREPORT_SCRIPTING
     QString script;
     QString originalInterpreter; //!< used for backward-compatibility to save the original

@@ -21,7 +21,7 @@
 #ifndef _KREPORTZOOMMODE_H_
 #define _KREPORTZOOMMODE_H_
 
-#include <QString>
+#include <QCoreApplication>
 
 #include "kreport_export.h"
 
@@ -30,29 +30,28 @@
  */
 class KReportZoomMode
 {
+    Q_DECLARE_TR_FUNCTIONS(KReportZoomMode)
 public:
-    enum Mode
+    enum class Type
     {
-        ZOOM_CONSTANT = 0,  ///< zoom x %
-        ZOOM_WIDTH    = 1,  ///< zoom pagewidth
-        ZOOM_PAGE     = 2,  ///< zoom to pagesize
-        ZOOM_PIXELS   = 4,   ///< zoom to actual pixels
-        ZOOM_TEXT   = 8   ///< zoom to actual pixels
+        Constant, ///< zoom x %
+        Width,    ///< zoom pagewidth
+        Page,     ///< zoom to pagesize
+        Pixels,   ///< zoom to actual pixels
+        Text      ///< zoom to text
     };
 
-    Q_DECLARE_FLAGS(Modes, Mode)
+    /// \param type name
+    /// \return type converted
+    static Type toType(const QString &string);
 
-    /// \param mode the mode name
-    /// \return the to Mode converted QString \c mode
-    static Mode toMode(const QString& mode);
+    /// \return QString converted and translated for type
+    static QString toString(Type type);
 
-    /// \return the to QString converted and translated Mode \c mode
-    static QString toString(Mode mode);
-
-    /// \param mode the mode name
+    /// \param type name
     /// \return true if \c mode isn't dependent on windowsize
     static bool isConstant(const QString& mode)
-    { return toMode(mode) == ZOOM_CONSTANT; }
+    { return toType(mode) == Type::Constant; }
 
     /**
      * Return the minimum zoom possible for documents.
@@ -94,13 +93,6 @@ public:
      * \param zoom The maximum zoom to use.
      */
     static void setMaximumZoom(qreal zoom);
-
-private:
-    static const char * const modes[];
-    static qreal minimumZoomValue;
-    static qreal maximumZoomValue;
 };
-
-Q_DECLARE_OPERATORS_FOR_FLAGS(KReportZoomMode::Modes)
 
 #endif

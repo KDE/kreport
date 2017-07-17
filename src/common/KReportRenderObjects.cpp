@@ -293,7 +293,7 @@ public:
     QList<OROPrimitive*> primitives;
     qint64 row = 0;
     int height = 0;
-    KReportSectionData::Section type = KReportSectionData::None;
+    KReportSectionData::Type type = KReportSectionData::Type::None;
     QColor backgroundColor = Qt::white;
 };
 
@@ -383,12 +383,12 @@ int OROSection::primitiveCount() const
     return d->primitives.count();
 }
 
-void OROSection::setType(KReportSectionData::Section t)
+void OROSection::setType(KReportSectionData::Type type)
 {
-    d->type = t;
+    d->type = type;
 }
 
-KReportSectionData::Section OROSection::type() const
+KReportSectionData::Type OROSection::type() const
 {
     return d->type;
 }
@@ -948,10 +948,10 @@ bool OROCheckBox::value() const
 
 void OROCheckBox::setCheckType(Type type)
 {
-    if (type == Cross || type == Tick || type == Dot) {
+    if (type == Type::Cross || type == Type::Tick || type == Type::Dot) {
         d->checkType = type;
     } else {
-        d->checkType = Cross;
+        d->checkType = Type::Cross;
     }
 }
 

@@ -42,7 +42,7 @@ KReportSectionData::KReportSectionData(const QDomElement & elemSource, KReportDo
 
     m_type = sectionTypeFromString(elemSource.attribute(QLatin1String("report:section-type")));
     createProperties(elemSource);
-    if (objectName() != QLatin1String("report:section") || m_type == KReportSectionData::None) {
+    if (objectName() != QLatin1String("report:section") || m_type == KReportSectionData::Type::None) {
         m_valid = false;
         return;
     }
@@ -117,100 +117,100 @@ QString KReportSectionData::name() const
     return (objectName() + QLatin1Char('-') + sectionTypeString(m_type));
 }
 
-QString KReportSectionData::sectionTypeString(KReportSectionData::Section s)
+QString KReportSectionData::sectionTypeString(KReportSectionData::Type type)
 {
 //! @todo use QMap
     QString sectiontype;
-    switch (s) {
-    case KReportSectionData::PageHeaderAny:
+    switch (type) {
+    case KReportSectionData::Type::PageHeaderAny:
         sectiontype = QLatin1String("header-page-any");
         break;
-    case KReportSectionData::PageHeaderEven:
+    case KReportSectionData::Type::PageHeaderEven:
         sectiontype = QLatin1String("header-page-even");
         break;
-    case KReportSectionData::PageHeaderOdd:
+    case KReportSectionData::Type::PageHeaderOdd:
         sectiontype = QLatin1String("header-page-odd");
         break;
-    case KReportSectionData::PageHeaderFirst:
+    case KReportSectionData::Type::PageHeaderFirst:
         sectiontype = QLatin1String("header-page-first");
         break;
-    case KReportSectionData::PageHeaderLast:
+    case KReportSectionData::Type::PageHeaderLast:
         sectiontype = QLatin1String("header-page-last");
         break;
-    case KReportSectionData::PageFooterAny:
+    case KReportSectionData::Type::PageFooterAny:
         sectiontype = QLatin1String("footer-page-any");
         break;
-    case KReportSectionData::PageFooterEven:
+    case KReportSectionData::Type::PageFooterEven:
         sectiontype = QLatin1String("footer-page-even");
         break;
-    case KReportSectionData::PageFooterOdd:
+    case KReportSectionData::Type::PageFooterOdd:
         sectiontype = QLatin1String("footer-page-odd");
         break;
-    case KReportSectionData::PageFooterFirst:
+    case KReportSectionData::Type::PageFooterFirst:
         sectiontype = QLatin1String("footer-page-first");
         break;
-    case KReportSectionData::PageFooterLast:
+    case KReportSectionData::Type::PageFooterLast:
         sectiontype = QLatin1String("footer-page-last");
         break;
-    case KReportSectionData::ReportHeader:
+    case KReportSectionData::Type::ReportHeader:
         sectiontype = QLatin1String("header-report");
         break;
-    case KReportSectionData::ReportFooter:
+    case KReportSectionData::Type::ReportFooter:
         sectiontype = QLatin1String("footer-report");
         break;
-    case KReportSectionData::GroupHeader:
+    case KReportSectionData::Type::GroupHeader:
         sectiontype = QLatin1String("group-header");
         break;
-    case KReportSectionData::GroupFooter:
+    case KReportSectionData::Type::GroupFooter:
         sectiontype = QLatin1String("group-footer");
         break;
-    case KReportSectionData::Detail:
+    case KReportSectionData::Type::Detail:
         sectiontype = QLatin1String("detail");
         break;
     default:
-        ;
+        break;
     }
 
     return sectiontype;
 }
 
-KReportSectionData::Section KReportSectionData::sectionTypeFromString(const QString& s)
+KReportSectionData::Type KReportSectionData::sectionTypeFromString(const QString& s)
 {
 //! @todo use QMap
-    KReportSectionData::Section sec;
+    KReportSectionData::Type type;
     //kreportDebug() << "Determining section type for " << s;
     if (s == QLatin1String("header-page-any"))
-        sec = KReportSectionData::PageHeaderAny;
+        type = KReportSectionData::Type::PageHeaderAny;
     else if (s == QLatin1String("header-page-even"))
-        sec = KReportSectionData::PageHeaderEven;
+        type = KReportSectionData::Type::PageHeaderEven;
     else if (s == QLatin1String("header-page-odd"))
-        sec = KReportSectionData::PageHeaderOdd;
+        type = KReportSectionData::Type::PageHeaderOdd;
     else if (s == QLatin1String("header-page-first"))
-        sec = KReportSectionData::PageHeaderFirst;
+        type = KReportSectionData::Type::PageHeaderFirst;
     else if (s == QLatin1String("header-page-last"))
-        sec = KReportSectionData::PageHeaderLast;
+        type = KReportSectionData::Type::PageHeaderLast;
     else if (s == QLatin1String("header-report"))
-        sec = KReportSectionData::ReportHeader;
+        type = KReportSectionData::Type::ReportHeader;
     else if (s == QLatin1String("footer-page-any"))
-        sec = KReportSectionData::PageFooterAny;
+        type = KReportSectionData::Type::PageFooterAny;
     else if (s == QLatin1String("footer-page-even"))
-        sec = KReportSectionData::PageFooterEven;
+        type = KReportSectionData::Type::PageFooterEven;
     else if (s == QLatin1String("footer-page-odd"))
-        sec = KReportSectionData::PageFooterOdd;
+        type = KReportSectionData::Type::PageFooterOdd;
     else if (s == QLatin1String("footer-page-first"))
-        sec = KReportSectionData::PageFooterFirst;
+        type = KReportSectionData::Type::PageFooterFirst;
     else if (s == QLatin1String("footer-page-last"))
-        sec = KReportSectionData::PageFooterLast;
+        type = KReportSectionData::Type::PageFooterLast;
     else if (s == QLatin1String("footer-report"))
-        sec = KReportSectionData::ReportFooter;
+        type = KReportSectionData::Type::ReportFooter;
     else if (s == QLatin1String("group-header"))
-        sec = KReportSectionData::GroupHeader;
+        type = KReportSectionData::Type::GroupHeader;
     else if (s == QLatin1String("group-footer"))
-        sec = KReportSectionData::GroupFooter;
+        type = KReportSectionData::Type::GroupFooter;
     else if (s == QLatin1String("detail"))
-        sec = KReportSectionData::Detail;
+        type = KReportSectionData::Type::Detail;
     else
-        sec = KReportSectionData::None;
+        type = KReportSectionData::Type::None;
 
-    return sec;
+    return type;
 }

@@ -22,7 +22,8 @@
 
 #include <QCoreApplication>
 
-const char* const KReportZoomMode::modes[] =
+namespace{
+static const char* const s_types[] =
 {
     QT_TRANSLATE_NOOP("KReportZoomMode", "%1%"),
     QT_TRANSLATE_NOOP("KReportZoomMode", "Fit Page Width"),
@@ -35,59 +36,58 @@ const char* const KReportZoomMode::modes[] =
     QT_TRANSLATE_NOOP("KReportZoomMode", "Fit Text Width")
 };
 
-qreal KReportZoomMode::minimumZoomValue = 0.2;
-qreal KReportZoomMode::maximumZoomValue = 5.0;
-
-QString KReportZoomMode::toString(Mode mode)
-{
-    return QCoreApplication::translate("KReportZoomMode", modes[mode]);
+qreal s_minimumZoomValue = 0.2;
+qreal s_maximumZoomValue = 5.0;
 }
 
-KReportZoomMode::Mode KReportZoomMode::toMode(const QString& mode)
+QString KReportZoomMode::toString(Type type)
 {
-    if(mode == QCoreApplication::translate("KReportZoomMode", modes[ZOOM_WIDTH]))
-        return ZOOM_WIDTH;
-    else
-    if(mode == QCoreApplication::translate("KReportZoomMode", modes[ZOOM_PAGE]))
-        return ZOOM_PAGE;
-    else
-     if(mode == QCoreApplication::translate("KReportZoomMode", modes[ZOOM_PIXELS]))
-        return ZOOM_PIXELS;
-    else
-     if(mode == QCoreApplication::translate("KReportZoomMode", modes[ZOOM_TEXT]))
-        return ZOOM_TEXT;
-    else
-       return ZOOM_CONSTANT;
-    // we return ZOOM_CONSTANT else because then we can pass '10%' or '15%'
-    // or whatever, it's automatically converted. ZOOM_CONSTANT is
-    // changeable, whereas all other zoom modes (non-constants) are normal
-    // text like "Fit to xxx". they let the view grow/shrink according
-    // to windowsize, hence the term 'non-constant'
+    return tr(s_types[static_cast<int>(type)]);
+}
+
+KReportZoomMode::Type KReportZoomMode::toType(const QString& string)
+{
+    if(string == toString(Type::Width)) {
+        return Type::Width;
+    } else if (string == toString(Type::Page)) {
+        return Type::Page;
+    } else if (string == toString(Type::Pixels)) {
+        return Type::Pixels;
+    } else if (string == toString(Type::Text)) {
+        return Type::Text;
+    } else {
+        // we return Constant else because then we can pass '10%' or '15%'
+        // or whatever, it's automatically converted. Constant is
+        // changeable, whereas all other zoom modes (non-constants) are normal
+        // text like "Fit to xxx". they let the view grow/shrink according
+        // to windowsize, hence the term 'non-constant'
+        return Type::Constant;
+    }
 }
 
 qreal KReportZoomMode::minimumZoom()
 {
-    return minimumZoomValue;
+    return s_minimumZoomValue;
 }
 
 qreal KReportZoomMode::maximumZoom()
 {
-    return maximumZoomValue;
+    return s_maximumZoomValue;
 }
 
 qreal KReportZoomMode::clampZoom(qreal zoom)
 {
-    return qMin(maximumZoomValue, qMax(minimumZoomValue, zoom));
+    return qMin(s_maximumZoomValue, qMax(s_minimumZoomValue, zoom));
 }
 
 void KReportZoomMode::setMinimumZoom(qreal zoom)
 {
     Q_ASSERT(zoom > 0.0f);
-    minimumZoomValue = zoom;
+    s_minimumZoomValue = zoom;
 }
 
 void KReportZoomMode::setMaximumZoom(qreal zoom)
 {
     Q_ASSERT(zoom > 0.0f);
-    maximumZoomValue = zoom;
+    s_maximumZoomValue = zoom;
 }

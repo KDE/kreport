@@ -27,7 +27,7 @@
 #include <QRectF>
 
 KReportZoomHandler::KReportZoomHandler()
-    : m_zoomMode(KReportZoomMode::ZOOM_CONSTANT)
+    : m_zoomType(KReportZoomMode::Type::Constant)
     , m_resolutionX(0)
     , m_resolutionY(0)
     , m_zoomedResolutionX(0)
@@ -35,7 +35,7 @@ KReportZoomHandler::KReportZoomHandler()
     , m_zoomLevel(1.0)
 {
     setZoom(1.0);
-    setZoomMode( KReportZoomMode::ZOOM_CONSTANT );
+    setZoomMode(KReportZoomMode::Type::Constant);
     setDpi(KReportPrivate::dpiX(), KReportPrivate::dpiY());
 }
 
