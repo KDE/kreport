@@ -39,18 +39,18 @@ public:
     KReportDetailSectionData(const QDomElement &elemSource, KReportDocument *report);
     ~KReportDetailSectionData() override;
 
-    enum PageBreak {
-        BreakNone = 0,
-        BreakAtEnd = 1
+    enum class PageBreak {
+        None,
+        AtEnd
     };
 
-    QString m_name;
-    int m_pageBreak;
-    QList<KReportDataSource::SortedField> m_sortedFields;
+    QString name;
+    PageBreak pageBreak;
+    QList<KReportDataSource::SortedField> sortedFields;
 
-    KReportSectionData * m_detailSection;
+    KReportSectionData *detailSection;
 
-    QList<KReportDetailGroupSectionData*> m_groupList;
+    QList<KReportDetailGroupSectionData*> groupList;
 
     bool isValid() const {
         return m_valid;
@@ -65,19 +65,18 @@ class KReportDetailGroupSectionData
 public:
     KReportDetailGroupSectionData();
 
-    enum PageBreak {
-        BreakNone = 0,
-        BreakAfterGroupFooter = 1,
-        BreakBeforeGroupHeader = 2
+    enum class PageBreak {
+        None,
+        AfterGroupFooter,
+        BeforeGroupHeader
     };
 
-    //QString name;
-    QString m_column;
-    PageBreak m_pagebreak;
+    QString column;
+    PageBreak pagebreak;
     Qt::SortOrder m_sort;
 
-    KReportSectionData *m_groupHeader;
-    KReportSectionData *m_groupFooter;
+    KReportSectionData *groupHeader;
+    KReportSectionData *groupFooter;
 };
 
 #endif

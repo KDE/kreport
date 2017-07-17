@@ -26,16 +26,16 @@
 KReportDetailSectionData::KReportDetailSectionData(QObject *parent)
  : QObject(parent)
 {
-    m_pageBreak = BreakNone;
-    m_detailSection = nullptr;
+    pageBreak = PageBreak::None;
+    detailSection = nullptr;
     m_valid = true;
 }
 
 KReportDetailSectionData::KReportDetailSectionData(const QDomElement &elemSource, KReportDocument *report)
  : QObject(report)
 {
-    m_pageBreak = BreakNone;
-    m_detailSection = nullptr;
+    pageBreak = PageBreak::None;
+    detailSection = nullptr;
     m_valid = false;
     //kreportDebug() << elemSource.tagName();
     if (elemSource.tagName() != QLatin1String("report:detail")) {
@@ -51,17 +51,17 @@ KReportDetailSectionData::KReportDetailSectionData(const QDomElement &elemSource
             KReportDetailGroupSectionData * dgsd = new KReportDetailGroupSectionData();
 
             if ( elemThis.hasAttribute( QLatin1String("report:group-column") ) ) {
-                dgsd->m_column = elemThis.attribute( QLatin1String("report:group-column") );
+                dgsd->column = elemThis.attribute( QLatin1String("report:group-column") );
             }
 
             if ( elemThis.hasAttribute( QLatin1String("report:group-page-break") ) ) {
                 QString s = elemThis.attribute( QLatin1String("report:group-page-break") );
                 if ( s == QLatin1String("after-footer") ) {
-                    dgsd->m_pagebreak = KReportDetailGroupSectionData::BreakAfterGroupFooter;
+                    dgsd->pagebreak = KReportDetailGroupSectionData::PageBreak::AfterGroupFooter;
                 } else if ( s == QLatin1String("before-header") ) {
-                    dgsd->m_pagebreak = KReportDetailGroupSectionData::BreakBeforeGroupHeader;
+                    dgsd->pagebreak = KReportDetailGroupSectionData::PageBreak::BeforeGroupHeader;
                 } else {
-                    dgsd->m_pagebreak = KReportDetailGroupSectionData::BreakNone;
+                    dgsd->pagebreak = KReportDetailGroupSectionData::PageBreak::None;
                 }
             }
 
@@ -76,29 +76,29 @@ KReportDetailSectionData::KReportDetailSectionData(const QDomElement &elemSource
                 if ( s == QLatin1String("group-header") ) {
                     KReportSectionData * sd = new KReportSectionData(e, report);
                     if (sd->isValid()) {
-                        dgsd->m_groupHeader = sd;
+                        dgsd->groupHeader = sd;
                     } else {
                         delete sd;
                     }
                 } else if ( s == QLatin1String("group-footer") ) {
                     KReportSectionData * sd = new KReportSectionData(e, report);
                     if (sd->isValid()) {
-                        dgsd->m_groupFooter = sd;
+                        dgsd->groupFooter = sd;
                     } else {
                         delete sd;
                     }
                 }
             }
-            m_groupList.append(dgsd);
+            groupList.append(dgsd);
             KReportDataSource::SortedField s;
-            s.setField(dgsd->m_column);
+            s.setField(dgsd->column);
             s.setOrder(dgsd->m_sort);
-            m_sortedFields.append(s);
+            sortedFields.append(s);
 	    
         } else if (elemThis.tagName() == QLatin1String("report:section") && elemThis.attribute(QLatin1String("report:section-type")) == QLatin1String("detail")) {
             KReportSectionData * sd = new KReportSectionData(elemThis, report);
             if (sd->isValid()) {
-                m_detailSection = sd;
+                detailSection = sd;
             } else
                 delete sd;
         } else {
@@ -115,9 +115,9 @@ KReportDetailSectionData::~KReportDetailSectionData()
 
 KReportDetailGroupSectionData::KReportDetailGroupSectionData()
 {
-    m_pagebreak = BreakNone;
+    pagebreak = PageBreak::None;
     m_sort = Qt::AscendingOrder;
-    m_groupHeader = nullptr;
-    m_groupFooter = nullptr;
+    groupHeader = nullptr;
+    groupFooter = nullptr;
 }
 

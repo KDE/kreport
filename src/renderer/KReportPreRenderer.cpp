@@ -156,7 +156,7 @@ qreal KReportPreRendererPrivate::finishCurPage(bool lastPage)
 
 void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *detailData)
 {
-    if (detailData->m_detailSection) {
+    if (detailData->detailSection) {
         if (m_dataSource/* && !curs->eof()*/) {
             QStringList keys;
             QStringList keyValues;
@@ -168,13 +168,13 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
 
             //kreportDebug() << "Record Count:" << recordCount;
 
-            for (int i = 0; i < (int) detailData->m_groupList.count(); ++i) {
-                grp = detailData->m_groupList[i];
+            for (int i = 0; i < (int) detailData->groupList.count(); ++i) {
+                grp = detailData->groupList[i];
                 //If the group has a header or footer, then emit a change of group value
-                if(grp->m_groupFooter || grp->m_groupHeader) {
+                if(grp->groupFooter || grp->groupHeader) {
                     // we get here only if group is *shown*
                     shownGroups << i;
-                    keys.append(grp->m_column);
+                    keys.append(grp->column);
                     if (!keys.last().isEmpty())
                         keyValues.append(m_dataSource->value(m_dataSource->fieldNumber(keys.last())).toString());
                     else
@@ -183,14 +183,14 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                     //Tell interested parties we're about to render a header
                     emit(enteredGroup(keys.last(), keyValues.last()));
                 }
-                if (grp->m_groupHeader)
-                    renderSection(*(grp->m_groupHeader));
+                if (grp->groupHeader)
+                    renderSection(*(grp->groupHeader));
             }
 
             while (status) {
                 const qint64 pos = m_dataSource->at();
                 //kreportDebug() << "At:" << l << "Y:" << m_yOffset << "Max Height:" << m_maxHeight;
-                if ((renderSectionSize(*detailData->m_detailSection)
+                if ((renderSectionSize(*detailData->detailSection)
                         + finishCurPageSize((pos + 1 == recordCount))
                         + m_bottomMargin + m_yOffset) >= m_maxHeight)
                 {
@@ -202,7 +202,7 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                     }
                 }
 
-                renderSection(*(detailData->m_detailSection));
+                renderSection(*(detailData->detailSection));
                 status = m_dataSource->moveNext();
 
                 if (status == true && keys.count() > 0) {
@@ -227,15 +227,15 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                                 if (do_break)
                                     createNewPage();
                                 do_break = false;
-                                grp = detailData->m_groupList[shownGroups.at(i)];
+                                grp = detailData->groupList[shownGroups.at(i)];
 
-                                if (grp->m_groupFooter) {
-                                    if (renderSectionSize(*(grp->m_groupFooter)) + finishCurPageSize(false) + m_bottomMargin + m_yOffset >= m_maxHeight)
+                                if (grp->groupFooter) {
+                                    if (renderSectionSize(*(grp->groupFooter)) + finishCurPageSize(false) + m_bottomMargin + m_yOffset >= m_maxHeight)
                                         createNewPage();
-                                    renderSection(*(grp->m_groupFooter));
+                                    renderSection(*(grp->groupFooter));
                                 }
 
-                                if (KReportDetailGroupSectionData::BreakAfterGroupFooter == grp->m_pagebreak)
+                                if (KReportDetailGroupSectionData::PageBreak::AfterGroupFooter == grp->pagebreak)
                                     do_break = true;
                             }
                             // step ahead to where we should be and print the needed headers
@@ -245,10 +245,10 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                                 createNewPage();
                             if (status == true) {
                                 for (int i = 0; i < shownGroups.count(); ++i) {
-                                    grp = detailData->m_groupList[shownGroups.at(i)];
+                                    grp = detailData->groupList[shownGroups.at(i)];
 
-                                    if (grp->m_groupHeader) {
-                                        if (renderSectionSize(*(grp->m_groupHeader)) + finishCurPageSize(false) + m_bottomMargin + m_yOffset >= m_maxHeight) {
+                                    if (grp->groupHeader) {
+                                        if (renderSectionSize(*(grp->groupHeader)) + finishCurPageSize(false) + m_bottomMargin + m_yOffset >= m_maxHeight) {
                                             m_dataSource->movePrevious();
                                             createNewPage();
                                             m_dataSource->moveNext();
@@ -258,7 +258,7 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                                             keyValues[i] = m_dataSource->value(m_dataSource->fieldNumber(keys[i])).toString();
 
                                         //Tell interested parties thak key values changed
-                                        renderSection(*(grp->m_groupHeader));
+                                        renderSection(*(grp->groupHeader));
                                     }
 
 
@@ -273,18 +273,18 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                 // finish footers
                 // duplicated changes from above here
                 for (int i = shownGroups.count() - 1; i >= 0; i--) {
-                    grp = detailData->m_groupList[shownGroups.at(i)];
+                    grp = detailData->groupList[shownGroups.at(i)];
 
-                    if (grp->m_groupFooter) {
-                        if (renderSectionSize(*(grp->m_groupFooter)) + finishCurPageSize(false) + m_bottomMargin + m_yOffset >= m_maxHeight)
+                    if (grp->groupFooter) {
+                        if (renderSectionSize(*(grp->groupFooter)) + finishCurPageSize(false) + m_bottomMargin + m_yOffset >= m_maxHeight)
                             createNewPage();
-                        renderSection(*(grp->m_groupFooter));
+                        renderSection(*(grp->groupFooter));
                         emit(exitedGroup(keys[i], keyValues[i]));
                     }
                 }
             }
         }
-        if (KReportDetailSectionData::BreakAtEnd == detailData->m_pageBreak)
+        if (KReportDetailSectionData::PageBreak::AtEnd == detailData->pageBreak)
             createNewPage();
     }
 }
@@ -472,7 +472,7 @@ bool KReportPreRendererPrivate::generateDocument()
     //kreportDebug() << "Page Size:" << m_maxWidth << m_maxHeight;
 
     m_document->setPageLayout(m_reportDocument->pageLayout());
-    m_dataSource->setSorting(m_reportDocument->m_detailSection->m_sortedFields);
+    m_dataSource->setSorting(m_reportDocument->m_detailSection->sortedFields);
     if (!m_dataSource->open()) {
         return false;
     }
@@ -525,7 +525,7 @@ bool KReportPreRendererPrivate::generateDocument()
         }
 
         KReportDetailSectionData * detailData = m_reportDocument->m_detailSection;
-        if (detailData->m_detailSection) {
+        if (detailData->detailSection) {
             KReportDataSource *mydata = m_dataSource;
 
             if (mydata && mydata->recordCount() > 0) { /* && !((query = orqThis->getQuery())->eof()))*/
@@ -536,7 +536,7 @@ bool KReportPreRendererPrivate::generateDocument()
                 int col = 0;
                 do {
                     tmp = m_yOffset; // store the value as renderSection changes it
-                    renderSection(*(detailData->m_detailSection));
+                    renderSection(*(detailData->detailSection));
                     m_yOffset = tmp; // restore the value that renderSection modified
 
                     col++;
