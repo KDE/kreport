@@ -4,6 +4,7 @@
    Copyright (C) 2004, Nicolas GOUTTE <goutte@kde.org>
    Copyright (C) 2010 Thomas Zander <zander@kde.org>
    Copyright 2012 Friedrich W. H. Kossebau <kossebau@kde.org>
+   Copyright (C) 2017 Jarosław Staniek <staniek@kde.org>
 
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
@@ -26,13 +27,12 @@
 
 #include <math.h> // for floor
 
+#include <QCoreApplication>
 #include <QString>
 #include <QDebug>
 #include <QMetaType>
 
 #include "kreport_export.h"
-
-class QStringList;
 
 // 1 inch ^= 72 pt
 // 1 inch ^= 25.399956 mm (-pedantic ;p)
@@ -60,65 +60,93 @@ class QStringList;
  * When displaying a value to the user, the value is converted to the user's unit
  * of choice, and rounded to a reasonable precision to avoid 0.999999
  *
- * For implementing the selection of a unit type in the UI use the *ForUi() methods.
- * They ensure the same order of the unit types in all places, with the order not
- * bound to the order in the enum (so ABI-compatible extension is possible) and
- * with the order and scope of listed types controlled by the @c ListOptions parameter.
+ * For implementing the selection of a unit type in the UI use the allTypes() method.
+ * it ensure the same order of the unit types in all places, with the order not
+ * bound to the order in the enum so ABI-compatible extension is possible.
  */
 class KREPORT_EXPORT KReportUnit
 {
+    Q_DECLARE_TR_FUNCTIONS(KReportUnit)
 public:
     /** Length units supported by %KReport. */
-    enum Type {
-        Millimeter = 0,
-        Point,  ///< Postscript point, 1/72th of an Inco
-        Inch,
+    enum class Type {
+        Invalid,
+        Millimeter,
         Centimeter,
         Decimeter,
+        Inch,
         Pica,
         Cicero,
+        Point,  ///< Postscript point, 1/72th of an Inco
         Pixel,
-        TypeCount ///< @internal
+        Last = Pixel ///< internal
     };
 
-    /// Used to control the scope of the unit types listed in the UI
-    enum ListOption {
-        ListAll = 0,
-        HidePixel = 1,
-        HideMask = HidePixel
-    };
-     Q_DECLARE_FLAGS(ListOptions, ListOption)
+    /**
+     * @brief Constructs invalid unit
+      *
+      * @since 3.1
+      */
+    KReportUnit();
 
-    /** Construction requires initialization. The factor is for variable factor units like pixel */
-    explicit KReportUnit(Type type = Point, qreal factor = 1.0);
-    
+    /** Construct unit with given type and factor. */
+    explicit KReportUnit(Type type, qreal factor = 1.0);
+
     KReportUnit(const KReportUnit &other);
-    
+
     ~KReportUnit();
 
     /// Assigns specified type and factor 1.0 to the object
     /// @param unit Type of unit
     KReportUnit& operator=(Type type);
-    
+
     KReportUnit& operator=(const KReportUnit& other);
-     
+
     bool operator!=(const KReportUnit &other) const;
 
     bool operator==(const KReportUnit &other) const;
 
+    /**
+     * @brief Returns true if type of this unit is valid
+     *
+     * @since 3.1
+     */
+    bool isValid() const;
+
+    /**
+     * @brief Returns list of all supported types (without Invalid)
+     *
+     * @since 3.1
+     */
+    static QList<Type> allTypes();
+
+    /** Returns the type of this unit */
     KReportUnit::Type type() const;
 
-    void setFactor(qreal factor);
-    
-    qreal factor() const;
-    
-    /** Returns a KReportUnit instance with the type at the @p index of the UI list with the given @p listOptions. */
-    static KReportUnit fromListForUi(int index, ListOptions listOptions = ListAll, qreal factor = 1.0);
+    /**
+     * @brief Returns (translated) description string for type of this unit
+     *
+     * @since 3.1
+     */
+    QString description() const;
 
-    /// Convert a unit symbol string into a KReportUnit
-    /// @param symbol symbol to convert
-    /// @param ok if set, it will be true if the unit was known, false if unknown
-    static KReportUnit fromSymbol(const QString &symbol, bool *ok = nullptr);
+    /**
+     * @brief Returns (translated) description string for given unit type
+     *
+     * @since 3.1
+     */
+    static QString description(KReportUnit::Type type);
+
+    /**
+     * @brief Returns the list of (translated) description strings for given list of types
+     *
+     * @since 3.1
+     */
+    static QStringList descriptions(const QList<Type> &types);
+
+    void setFactor(qreal factor);
+
+    qreal factor() const;
 
     /**
      * Prepare ptValue to be displayed in pt
@@ -193,7 +221,6 @@ public:
      */
     static qreal convertFromUnitToUnit(qreal value, const KReportUnit &fromUnit, const KReportUnit &toUnit, qreal factor = 1.0);
 
-
     /**
      * This method is the one to use to display a value in a dialog
      * \return the value @p ptValue converted to unit and rounded, ready to be displayed
@@ -222,25 +249,13 @@ public:
     /// @return the value converted to points for internal use
     qreal fromUserValue(const QString &value, bool *ok = nullptr) const;
 
-    /// Get the description string of the given unit
-    static QString unitDescription(KReportUnit::Type type);
+    //! Returns the symbol string of given unit type
+    //! Symbol for Invalid type is empty string.
+    static QString symbol(KReportUnit::Type type);
 
-    /// Get the symbol string of the unit
+    //! Returns the symbol string of the unit
+    //! Symbol for Invalid type is empty string.
     QString symbol() const;
-
-    /// Returns the list of unit types for the UI, controlled with the given @p listOptions.
-    static QStringList listOfUnitNameForUi(ListOptions listOptions = ListAll);
-
-    /// Get the index of this unit in the list of unit types for the UI,
-    /// if it is controlled with the given @p listOptions.
-    int indexInListForUi(ListOptions listOptions = ListAll) const;
-
-    /// Parses common %KReport and ODF values, like "10cm", "5mm" to pt.
-    /// If no unit is specified, pt is assumed.
-    static qreal parseValue(const QString &value, qreal defaultVal = 0.0);
-
-    /// parse an angle to its value in degrees
-    static qreal parseAngle(const QString &value, qreal defaultVal = 0.0);
 
     /**
      * Equal to symbol(): returns the symbol string of the unit.
@@ -249,7 +264,31 @@ public:
     {
         return symbol();
     }
-        
+
+    /**
+     * @brief Returns a unit symbol string to type
+     *
+     * @param symbol symbol to convert, must be lowercase
+     * @return Invalid type for unsupported symbol
+     *
+     * @since 3.1
+     */
+    static KReportUnit::Type symbolToType(const QString &symbol);
+
+    /**
+     * @brief Returns the list of unit symbols for the given types
+     *
+     * @since 3.1
+     */
+    static QStringList symbols(const QList<Type> &types);
+
+    /// Parses common %KReport and ODF values, like "10cm", "5mm" to pt.
+    /// If no unit is specified, pt is assumed.
+    static qreal parseValue(const QString &value, qreal defaultVal = 0.0);
+
+    /// parse an angle to its value in degrees
+    static qreal parseAngle(const QString &value, qreal defaultVal = 0.0);
+
 private:
     class Private;
     Private * const d;
@@ -260,6 +299,5 @@ KREPORT_EXPORT QDebug operator<<(QDebug, const KReportUnit &);
 #endif
 
 Q_DECLARE_METATYPE(KReportUnit)
-Q_DECLARE_OPERATORS_FOR_FLAGS(KReportUnit::ListOptions)
 
 #endif

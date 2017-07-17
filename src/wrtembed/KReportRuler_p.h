@@ -55,6 +55,7 @@ public:
     };
 
     /// The ruler's unit
+    /// Default is Centimeter.
     KReportUnit unit() const;
 
     /// The length of the ruler in points (pt)

@@ -2,6 +2,7 @@
    Copyright (C) 2001 David Faure <faure@kde.org>
    Copyright (C) 2004, Nicolas GOUTTE <goutte@kde.org>
    Copyright 2012 Friedrich W. H. Kossebau <kossebau@kde.org>
+   Copyright (C) 2017 Jarosław Staniek <staniek@kde.org>
 
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
@@ -30,24 +31,54 @@
 class Q_DECL_HIDDEN KReportUnit::Private
 {
 public:
-    Type type;
+    KReportUnit::Type type;
     qreal pixelConversion;
 };
 
-// ensure the same order as in KReportUnit::Unit
-static const char* const unitNameList[KReportUnit::TypeCount] =
+// unit types
+// Note: ensure the same order as in KReportUnit::Unit
+static QList<KReportUnit::Type> s_unitTypes = {
+    KReportUnit::Type::Millimeter,
+    KReportUnit::Type::Centimeter,
+    KReportUnit::Type::Decimeter,
+    KReportUnit::Type::Inch,
+    KReportUnit::Type::Pica,
+    KReportUnit::Type::Cicero,
+    KReportUnit::Type::Point,
+    KReportUnit::Type::Pixel
+};
+static int firstUnitIndex()
 {
+    return static_cast<int>(KReportUnit::Type::Invalid) + 1;
+}
+
+static int lastUnitIndex()
+{
+    return static_cast<int>(KReportUnit::Type::Last); // without Invalid
+}
+
+// unit symbols
+// Note: ensure the same order as in KReportUnit::Unit
+static const char* const s_unitSymbols[] =
+{
+    nullptr,
     "mm",
-    "pt",
-    "in",
     "cm",
     "dm",
+    "in",
     "pi",
     "cc",
+    "pt",
     "px"
 };
 
-KReportUnit::KReportUnit(Type type, qreal factor) : d(new Private) 
+KReportUnit::KReportUnit() : d(new Private)
+{
+    d->type = Type::Invalid;
+    d->pixelConversion = 1.0;
+}
+
+KReportUnit::KReportUnit(Type type, qreal factor) : d(new Private)
 {
     d->type = type;
     d->pixelConversion = factor;
@@ -67,7 +98,7 @@ KReportUnit::~KReportUnit()
 bool KReportUnit::operator==(const KReportUnit& other) const 
 {
     return d->type == other.d->type &&
-           (d->type != Pixel ||
+           (d->type != Type::Pixel ||
             qFuzzyCompare(d->pixelConversion, other.d->pixelConversion));
 }
 
@@ -91,116 +122,74 @@ KReportUnit & KReportUnit::operator=(const KReportUnit& other)
     return *this;
 }
 
-QString KReportUnit::unitDescription(KReportUnit::Type type)
+//static
+QList<KReportUnit::Type> KReportUnit::allTypes()
+{
+    return s_unitTypes;
+}
+
+//static
+QString KReportUnit::description(KReportUnit::Type type)
 {
     switch (type) {
-    case KReportUnit::Millimeter:
-        return QCoreApplication::translate("KReportUnit", "Millimeters (mm)");
-    case KReportUnit::Centimeter:
-        return QCoreApplication::translate("KReportUnit", "Centimeters (cm)");
-    case KReportUnit::Decimeter:
-        return QCoreApplication::translate("KReportUnit", "Decimeters (dm)");
-    case KReportUnit::Inch:
-        return QCoreApplication::translate("KReportUnit", "Inches (in)");
-    case KReportUnit::Pica:
-        return QCoreApplication::translate("KReportUnit", "Pica (pi)");
-    case KReportUnit::Cicero:
-        return QCoreApplication::translate("KReportUnit", "Cicero (cc)");
-    case KReportUnit::Point:
-        return QCoreApplication::translate("KReportUnit", "Points (pt)");
-    case KReportUnit::Pixel:
-        return QCoreApplication::translate("KReportUnit", "Pixels (px)");
+    case KReportUnit::Type::Invalid:
+        return tr("Invalid");
+    case KReportUnit::Type::Millimeter:
+        return tr("Millimeters (mm)");
+    case KReportUnit::Type::Centimeter:
+        return tr("Centimeters (cm)");
+    case KReportUnit::Type::Decimeter:
+        return tr("Decimeters (dm)");
+    case KReportUnit::Type::Inch:
+        return tr("Inches (in)");
+    case KReportUnit::Type::Pica:
+        return tr("Pica (pi)");
+    case KReportUnit::Type::Cicero:
+        return tr("Cicero (cc)");
+    case KReportUnit::Type::Point:
+        return tr("Points (pt)");
+    case KReportUnit::Type::Pixel:
+        return tr("Pixels (px)");
     default:
-        return QCoreApplication::translate("KReportUnit", "Unsupported unit");
+        return tr("Unsupported unit");
     }
 }
 
-// grouped by units which are similar
-static const KReportUnit::Type typesInUi[KReportUnit::TypeCount] =
+QString KReportUnit::description() const
 {
-    KReportUnit::Millimeter,
-    KReportUnit::Centimeter,
-    KReportUnit::Decimeter,
-    KReportUnit::Inch,
-    KReportUnit::Pica,
-    KReportUnit::Cicero,
-    KReportUnit::Point,
-    KReportUnit::Pixel,
-};
-
-QStringList KReportUnit::listOfUnitNameForUi(ListOptions listOptions)
-{
-    QStringList lst;
-    for (int i = 0; i < KReportUnit::TypeCount; ++i) {
-        const Type type = typesInUi[i];
-        if ((type != Pixel) || ((listOptions & HideMask) == ListAll))
-            lst.append(unitDescription(type));
-    }
-    return lst;
+    return KReportUnit::description(type());
 }
 
-KReportUnit KReportUnit::fromListForUi(int index, ListOptions listOptions, qreal factor)
+QStringList KReportUnit::descriptions(const QList<Type> &types)
 {
-    KReportUnit::Type type = KReportUnit::Point;
-
-    if ((0 <= index) && (index < KReportUnit::TypeCount)) {
-        // iterate through all enums and skip the Pixel enum if needed
-        for (int i = 0; i < KReportUnit::TypeCount; ++i) {
-            if ((listOptions&HidePixel) && (typesInUi[i] == Pixel)) {
-                ++index;
-                continue;
-            }
-            if (i == index) {
-                type = typesInUi[i];
-                break;
-            }
-        }
+    QStringList result;
+    for (Type t : types) {
+        result.append(description(t));
     }
-
-    return KReportUnit(type, factor);
-}
-
-int KReportUnit::indexInListForUi(ListOptions listOptions) const
-{
-    if ((listOptions&HidePixel) && (d->type == Pixel)) {
-        return -1;
-    }
-
-    int result = -1;
-
-    int skipped = 0;
-    for (int i = 0; i < KReportUnit::TypeCount; ++i) {
-        if ((listOptions&HidePixel) && (typesInUi[i] == Pixel)) {
-            ++skipped;
-            continue;
-        }
-        if (typesInUi[i] == d->type) {
-            result = i - skipped;
-            break;
-        }
-    }
-
     return result;
 }
 
 qreal KReportUnit::toUserValue(qreal ptValue) const
 {
     switch (d->type) {
-    case Millimeter:
+    case Type::Invalid:
+        kreportWarning() << "Conversion for Invalid type not supported";
+        return -1.0;
+    case Type::Millimeter:
         return toMillimeter(ptValue);
-    case Centimeter:
+    case Type::Centimeter:
         return toCentimeter(ptValue);
-    case Decimeter:
+    case Type::Decimeter:
         return toDecimeter(ptValue);
-    case Inch:
+    case Type::Inch:
         return toInch(ptValue);
-    case Pica:
+    case Type::Pica:
         return toPica(ptValue);
-    case Cicero:
+    case Type::Cicero:
         return toCicero(ptValue);
-    case Pixel:
+    case Type::Pixel:
         return ptValue * d->pixelConversion;
-    case Point:
+    case Type::Point:
     default:
         return toPoint(ptValue);
     }
@@ -209,21 +198,23 @@ qreal KReportUnit::toUserValue(qreal ptValue) const
 qreal KReportUnit::ptToUnit(qreal ptValue, const KReportUnit &unit)
 {
     switch (unit.d->type) {
-    case Millimeter:
+    case Type::Invalid:
+        return -1.0;
+    case Type::Millimeter:
         return POINT_TO_MM(ptValue);
-    case Centimeter:
+    case Type::Centimeter:
         return POINT_TO_CM(ptValue);
-    case Decimeter:
+    case Type::Decimeter:
         return POINT_TO_DM(ptValue);
-    case Inch:
+    case Type::Inch:
         return POINT_TO_INCH(ptValue);
-    case Pica:
+    case Type::Pica:
         return POINT_TO_PI(ptValue);
-    case Cicero:
+    case Type::Cicero:
         return POINT_TO_CC(ptValue);
-    case Pixel:
+    case Type::Pixel:
         return ptValue * unit.d->pixelConversion;
-    case Point:
+    case Type::Point:
     default:
         return ptValue;
     }
@@ -237,21 +228,23 @@ QString KReportUnit::toUserStringValue(qreal ptValue) const
 qreal KReportUnit::fromUserValue(qreal value) const
 {
     switch (d->type) {
-    case Millimeter:
+    case Type::Invalid:
+        return -1.0;
+    case Type::Millimeter:
         return MM_TO_POINT(value);
-    case Centimeter:
+    case Type::Centimeter:
         return CM_TO_POINT(value);
-    case Decimeter:
+    case Type::Decimeter:
         return DM_TO_POINT(value);
-    case Inch:
+    case Type::Inch:
         return INCH_TO_POINT(value);
-    case Pica:
+    case Type::Pica:
         return PI_TO_POINT(value);
-    case Cicero:
+    case Type::Cicero:
         return CC_TO_POINT(value);
-    case Pixel:
+    case Type::Pixel:
         return value / d->pixelConversion;
-    case Point:
+    case Type::Point:
     default:
         return value;
     }
@@ -259,6 +252,13 @@ qreal KReportUnit::fromUserValue(qreal value) const
 
 qreal KReportUnit::fromUserValue(const QString &value, bool *ok) const
 {
+    if (d->type == Type::Invalid) {
+        kreportWarning() << "Conversion from Invalid type not supported";
+        if (ok) {
+            *ok = false;
+        }
+        return -1.0;
+    }
     return fromUserValue(QLocale::system().toDouble(value, ok));
 }
 
@@ -293,9 +293,10 @@ qreal KReportUnit::parseValue(const QString& _value, qreal defaultVal)
     if (symbol == "pt" || symbol.isEmpty())
         return val;
 
-    KReportUnit u = KReportUnit::fromSymbol(QLatin1String(symbol), &ok);
-    if (ok)
+    KReportUnit u(KReportUnit::symbolToType(QLatin1String(symbol)));
+    if (u.isValid()) {
         return u.fromUserValue(val);
+    }
 
     if (symbol == "m")
         return DM_TO_POINT(val * 10.0);
@@ -307,85 +308,98 @@ qreal KReportUnit::parseValue(const QString& _value, qreal defaultVal)
     return defaultVal;
 }
 
-KReportUnit KReportUnit::fromSymbol(const QString &symbol, bool *ok)
+//static
+QString KReportUnit::symbol(KReportUnit::Type type)
 {
-    Type result = Point;
+    return QLatin1String(s_unitSymbols[static_cast<int>(type)]);
+}
+
+//static
+KReportUnit::Type KReportUnit::symbolToType(const QString &symbol)
+{
+    Type result = Type::Invalid;
 
     if (symbol == QLatin1String("inch") /*compat*/) {
-        result = Inch;
-        if (ok)
-            *ok = true;
+        result = Type::Inch;
     } else {
-        if (ok)
-            *ok = false;
-
-        for (int i = 0; i < TypeCount; ++i) {
-            if (symbol == QLatin1String(unitNameList[i])) {
+        for (int i = firstUnitIndex(); i <= lastUnitIndex(); ++i) {
+            if (symbol == QLatin1String(s_unitSymbols[i])) {
                 result = static_cast<Type>(i);
-                if (ok)
-                    *ok = true;
+                break;
             }
         }
     }
+    return result;
+}
 
-    return KReportUnit(result);
+//static
+QStringList KReportUnit::symbols(const QList<Type> &types)
+{
+    QStringList result;
+    for (Type t : types) {
+        result.append(symbol(t));
+    }
+    return result;
 }
 
 qreal KReportUnit::convertFromUnitToUnit(qreal value, const KReportUnit &fromUnit, const KReportUnit &toUnit, qreal factor)
 {
     qreal pt;
     switch (fromUnit.type()) {
-    case Millimeter:
+    case Type::Invalid:
+        pt = -1.0;
+        break;
+    case Type::Millimeter:
         pt = MM_TO_POINT(value);
         break;
-    case Centimeter:
+    case Type::Centimeter:
         pt = CM_TO_POINT(value);
         break;
-    case Decimeter:
+    case Type::Decimeter:
         pt = DM_TO_POINT(value);
         break;
-    case Inch:
+    case Type::Inch:
         pt = INCH_TO_POINT(value);
         break;
-    case Pica:
+    case Type::Pica:
         pt = PI_TO_POINT(value);
         break;
-    case Cicero:
+    case Type::Cicero:
         pt = CC_TO_POINT(value);
         break;
-    case Pixel:
+    case Type::Pixel:
         pt = value / factor;
         break;
-    case Point:
+    case Type::Point:
     default:
         pt = value;
     }
 
     switch (toUnit.type()) {
-    case Millimeter:
+    case Type::Millimeter:
         return POINT_TO_MM(pt);
-    case Centimeter:
+    case Type::Centimeter:
         return POINT_TO_CM(pt);
-    case Decimeter:
+    case Type::Decimeter:
         return POINT_TO_DM(pt);
-    case Inch:
+    case Type::Inch:
         return POINT_TO_INCH(pt);
-    case Pica:
+    case Type::Pica:
         return POINT_TO_PI(pt);
-    case Cicero:
+    case Type::Cicero:
         return POINT_TO_CC(pt);
-    case Pixel:
+    case Type::Pixel:
         return pt * factor;
-    case Point:
+    case Type::Invalid:
+    case Type::Point:
     default:
         return pt;
     }
-
 }
 
 QString KReportUnit::symbol() const
 {
-    return QLatin1String(unitNameList[d->type]);
+    return QLatin1String(s_unitSymbols[static_cast<int>(d->type)]);
 }
 
 qreal KReportUnit::parseAngle(const QString& _value, qreal defaultVal)
@@ -427,12 +441,15 @@ qreal KReportUnit::parseAngle(const QString& _value, qreal defaultVal)
 QDebug operator<<(QDebug debug, const KReportUnit &unit)
 {
 #ifndef NDEBUG
-    debug.nospace() << unit.symbol();
+    if (unit.isValid()) {
+        debug.nospace() << QString::fromLatin1("Unit(%1, %2)").arg(unit.symbol()).arg(unit.factor());
+    } else {
+        debug.nospace() << QString::fromLatin1("Unit(Invalid)");
+    }
 #else
     Q_UNUSED(unit);
 #endif
     return debug.space();
-
 }
 
 void KReportUnit::setFactor(qreal factor) 
@@ -448,6 +465,11 @@ qreal KReportUnit::factor() const
 KReportUnit::Type KReportUnit::type() const 
 {
     return d->type;
+}
+
+bool KReportUnit::isValid() const
+{
+    return d->type != KReportUnit::Type::Invalid;
 }
 
 #endif

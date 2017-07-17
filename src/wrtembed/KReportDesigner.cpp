@@ -18,23 +18,24 @@
  */
 
 #include "KReportDesigner.h"
+#include "KReportDesign_p.h"
+#include "KReportDesignerItemLine.h"
 #include "KReportDesignerSection.h"
+#include "KReportDesignerSectionDetail.h"
+#include "KReportDesignerSectionDetailGroup.h"
 #include "KReportDesignerSectionScene.h"
 #include "KReportDesignerSectionView.h"
-#include "KReportDesignerSectionDetailGroup.h"
-#include "KReportPropertiesButton.h"
-#include "KReportSectionEditor.h"
-#include "KReportDesignerSectionDetail.h"
-#include "KReportDesignerItemLine.h"
-#include "KReportRuler_p.h"
-#include "KReportZoomHandler_p.h"
 #include "KReportPageSize.h"
-#include "KReportUtils_p.h"
-#include "KReportUtils.h"
 #include "KReportPluginInterface.h"
 #include "KReportPluginManager.h"
-#include "KReportSection.h"
 #include "KReportPluginMetaData.h"
+#include "KReportPropertiesButton.h"
+#include "KReportRuler_p.h"
+#include "KReportSection.h"
+#include "KReportSectionEditor.h"
+#include "KReportUtils.h"
+#include "KReportUtils_p.h"
+#include "KReportZoomHandler_p.h"
 #include "kreport_debug.h"
 #ifdef KREPORT_SCRIPTING
 #include "KReportScriptSource.h"
@@ -212,8 +213,6 @@ KReportDesigner::KReportDesigner(QWidget * parent)
     d->hruler = new KReportRuler(this, Qt::Horizontal, d->zoomHandler);
 
     d->pageButton = new KReportPropertiesButton(this);
-
-    d->hruler->setUnit(KReportUnit(KReportUnit::Centimeter));
 
     d->grid->addWidget(d->pageButton, 0, 0);
     d->grid->addWidget(d->hruler, 0, 1);
@@ -726,33 +725,29 @@ void KReportDesigner::createProperties()
     QString defaultKey = KReportPageSize::pageSizeKey(KReportPageSize::defaultSize());
     d->pageSize = new KProperty("page-size", keys, strings, defaultKey, tr("Page Size"));
 
-    keys.clear(); strings.clear();
+    keys.clear();
+    strings.clear();
     keys << QLatin1String("portrait") << QLatin1String("landscape");
     strings << tr("Portrait") << tr("Landscape");
     d->orientation = new KProperty("print-orientation", keys, strings, QLatin1String("portrait"), tr("Page Orientation"));
 
-    keys.clear(); strings.clear();
-
-    strings = KReportUnit::listOfUnitNameForUi(KReportUnit::HidePixel);
-    QString unit;
-    foreach(const QString &un, strings) {
-        unit = un.mid(un.indexOf(QLatin1String("(")) + 1, 2);
-        keys << unit;
-    }
-
+    QList<KReportUnit::Type> types(KReportUnit::allTypes());
+    types.removeOne(KReportUnit::Type::Pixel);
+    keys = KReportUnit::symbols(types);
+    strings = KReportUnit::descriptions(types);
     d->unit = new KProperty("page-unit", keys, strings, QLatin1String("cm"), tr("Page Unit"));
 
     d->showGrid = new KProperty("grid-visible", true, tr("Show Grid"));
     d->gridSnap = new KProperty("grid-snap", true, tr("Snap to Grid"));
     d->gridDivisions = new KProperty("grid-divisions", 4, tr("Grid Divisions"));
 
-    d->leftMargin = new KProperty("margin-left", KReportUnit(KReportUnit::Centimeter).fromUserValue(1.0),
+    d->leftMargin = new KProperty("margin-left", KReportUnit(KReportUnit::Type::Centimeter).fromUserValue(1.0),
         tr("Left Margin"), tr("Left Margin"), KProperty::Double);
-    d->rightMargin = new KProperty("margin-right", KReportUnit(KReportUnit::Centimeter).fromUserValue(1.0),
+    d->rightMargin = new KProperty("margin-right", KReportUnit(KReportUnit::Type::Centimeter).fromUserValue(1.0),
         tr("Right Margin"), tr("Right Margin"), KProperty::Double);
-    d->topMargin = new KProperty("margin-top", KReportUnit(KReportUnit::Centimeter).fromUserValue(1.0),
+    d->topMargin = new KProperty("margin-top", KReportUnit(KReportUnit::Type::Centimeter).fromUserValue(1.0),
         tr("Top Margin"), tr("Top Margin"), KProperty::Double);
-    d->bottomMargin = new KProperty("margin-bottom", KReportUnit(KReportUnit::Centimeter).fromUserValue(1.0),
+    d->bottomMargin = new KProperty("margin-bottom", KReportUnit(KReportUnit::Type::Centimeter).fromUserValue(1.0),
         tr("Bottom Margin"), tr("Bottom Margin"), KProperty::Double);
     d->leftMargin->setOption("unit", QLatin1String("cm"));
     d->rightMargin->setOption("unit", QLatin1String("cm"));
@@ -897,17 +892,9 @@ void KReportDesigner::deleteDetail()
 
 KReportUnit KReportDesigner::pageUnit() const
 {
-    QString u;
-    bool found;
-
-    u = d->unit->value().toString();
-
-    KReportUnit unit = KReportUnit::fromSymbol(u, &found);
-    if (!found) {
-        unit = KReportUnit(KReportUnit::Centimeter);
-    }
-
-    return unit;
+    const QString symbol = d->unit->value().toString();
+    KReportUnit unit(KReportUnit::symbolToType(symbol));
+    return unit.isValid() ? unit : DEFAULT_UNIT;
 }
 
 void KReportDesigner::setGridOptions(bool vis, int div)
