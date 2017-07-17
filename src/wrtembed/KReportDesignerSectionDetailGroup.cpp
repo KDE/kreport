@@ -43,7 +43,7 @@ public:
     KReportDesignerSection *groupHeader;
     KReportDesignerSection *groupFooter;
     KReportDesignerSectionDetail * reportSectionDetail;
-    PageBreak pageBreak = KReportDesignerSectionDetailGroup::BreakNone;
+    KReportDesignerSectionDetailGroup::PageBreak pageBreak = KReportDesignerSectionDetailGroup::PageBreak::None;
     Qt::SortOrder sort = Qt::AscendingOrder;
 };
 
@@ -76,9 +76,9 @@ void KReportDesignerSectionDetailGroup::buildXML(QDomDocument *doc, QDomElement 
     QDomElement grp = doc->createElement(QLatin1String("report:group"));
 
     grp.setAttribute(QLatin1String("report:group-column"), column());
-    if (pageBreak() == KReportDesignerSectionDetailGroup::BreakAfterGroupFooter) {
+    if (pageBreak() == KReportDesignerSectionDetailGroup::PageBreak::AfterGroupFooter) {
         grp.setAttribute(QLatin1String("report:group-page-break"), QLatin1String("after-footer"));
-    } else if (pageBreak() == KReportDesignerSectionDetailGroup::BreakBeforeGroupHeader) {
+    } else if (pageBreak() == KReportDesignerSectionDetailGroup::PageBreak::BeforeGroupHeader) {
         grp.setAttribute(QLatin1String("report:group-page-break"), QLatin1String("before-header"));
     }
 
@@ -115,9 +115,9 @@ void KReportDesignerSectionDetailGroup::initFromXML( const QDomElement &element 
     if ( element.hasAttribute( QLatin1String("report:group-page-break") ) ) {
         QString s = element.attribute( QLatin1String("report:group-page-break") );
         if ( s == QLatin1String("after-footer") ) {
-            setPageBreak( KReportDesignerSectionDetailGroup::BreakAfterGroupFooter );
+            setPageBreak( KReportDesignerSectionDetailGroup::PageBreak::AfterGroupFooter );
         } else if ( s == QLatin1String("before-header") ) {
-            setPageBreak( KReportDesignerSectionDetailGroup::BreakBeforeGroupHeader );
+            setPageBreak( KReportDesignerSectionDetailGroup::PageBreak::BeforeGroupHeader );
         }
     }
 
@@ -220,7 +220,3 @@ KReportDesignerSection * KReportDesignerSectionDetailGroup::groupFooter() const
 {
     return d->groupFooter;
 }
-
-
-
-

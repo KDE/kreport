@@ -40,13 +40,13 @@ public:
     explicit KReportDesignerSectionDetail(KReportDesigner * rptdes);
     ~KReportDesignerSectionDetail() override;
 
-    enum PageBreak {
-        BreakNone = 0,
-        BreakAtEnd = 1
+    enum class PageBreak {
+        None,
+        AtEnd
     };
 
-    void setPageBreak(int);
-    int pageBreak() const;
+    void setPageBreak(PageBreak pageBreak);
+    PageBreak pageBreak() const;
 
     KReportDesignerSection * detailSection() const;
 

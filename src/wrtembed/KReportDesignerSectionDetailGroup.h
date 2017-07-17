@@ -41,10 +41,10 @@ public:
                                       QWidget *parent = nullptr);
     ~KReportDesignerSectionDetailGroup() override;
 
-    enum PageBreak {
-        BreakNone = 0,
-        BreakAfterGroupFooter = 1,
-        BreakBeforeGroupHeader = 2
+    enum class PageBreak {
+        None,
+        AfterGroupFooter,
+        BeforeGroupHeader
     };
 
     void setColumn(const QString &);

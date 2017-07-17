@@ -40,7 +40,7 @@ public:
     KReportDesigner *reportDesigner;
     QList<KReportDesignerSectionDetailGroup*> groupList;
     QVBoxLayout *vboxlayout;
-    int pageBreak = KReportDesignerSectionDetail::BreakNone;
+    KReportDesignerSectionDetail::PageBreak pageBreak = KReportDesignerSectionDetail::PageBreak::None;
 };
 
 KReportDesignerSectionDetail::KReportDesignerSectionDetail(KReportDesigner * rptdes)
@@ -64,11 +64,11 @@ KReportDesignerSectionDetail::~KReportDesignerSectionDetail()
     delete d;
 }
 
-int KReportDesignerSectionDetail::pageBreak() const
+KReportDesignerSectionDetail::PageBreak KReportDesignerSectionDetail::pageBreak() const
 {
     return d->pageBreak;
 }
-void KReportDesignerSectionDetail::setPageBreak(int pb)
+void KReportDesignerSectionDetail::setPageBreak(PageBreak pb)
 {
     d->pageBreak = pb;
 }
@@ -80,9 +80,9 @@ KReportDesignerSection * KReportDesignerSectionDetail::detailSection() const
 
 void KReportDesignerSectionDetail::buildXML(QDomDocument *doc, QDomElement *section)
 {
-    if (pageBreak() != KReportDesignerSectionDetail::BreakNone) {
+    if (pageBreak() != KReportDesignerSectionDetail::PageBreak::None) {
         QDomElement spagebreak = doc->createElement(QLatin1String("pagebreak"));
-        if (pageBreak() == KReportDesignerSectionDetail::BreakAtEnd)
+        if (pageBreak() == KReportDesignerSectionDetail::PageBreak::AtEnd)
             spagebreak.setAttribute(QLatin1String("when"), QLatin1String("at end"));
         section->appendChild(spagebreak);
     }
@@ -111,7 +111,7 @@ void KReportDesignerSectionDetail::initFromXML(QDomNode *section)
         if (n == QLatin1String("pagebreak")) {
             QDomElement eThis = node.toElement();
             if (eThis.attribute(QLatin1String("when")) == QLatin1String("at end"))
-                setPageBreak(BreakAtEnd);
+                setPageBreak(PageBreak::AtEnd);
         } else if (n == QLatin1String("report:group")) {
             KReportDesignerSectionDetailGroup * rsdg = new KReportDesignerSectionDetailGroup(QLatin1String("unnamed"), this, this);
             rsdg->initFromXML( node.toElement() );
@@ -229,4 +229,3 @@ void KReportDesignerSectionDetail::unsetSectionCursor()
             rsdg->groupFooter()->unsetSectionCursor();
     }
 }
-

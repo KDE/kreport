@@ -312,7 +312,7 @@ bool KReportSectionEditor::editDetailGroup(KReportDesignerSectionDetailGroup * r
     dgsd->cbSort->addItem(tr("Descending"), Qt::DescendingOrder);
     dgsd->cbSort->setCurrentIndex(dgsd->cbSort->findData(rsdg->sort()));
 
-    dgsd->breakAfterFooter->setChecked(rsdg->pageBreak() == KReportDesignerSectionDetailGroup::BreakAfterGroupFooter);
+    dgsd->breakAfterFooter->setChecked(rsdg->pageBreak() == KReportDesignerSectionDetailGroup::PageBreak::AfterGroupFooter);
     dgsd->cbHead->setChecked(rsdg->groupHeaderVisible());
     dgsd->cbFoot->setChecked(rsdg->groupFooterVisible());
 
@@ -329,8 +329,10 @@ bool KReportSectionEditor::editDetailGroup(KReportDesignerSectionDetailGroup * r
         rsdg->setGroupHeaderVisible(dgsd->cbHead->isChecked());
         rsdg->setGroupFooterVisible(dgsd->cbFoot->isChecked());
 
-        const KReportDesignerSectionDetailGroup::PageBreak pageBreak = dgsd->breakAfterFooter->isChecked() ?
-            KReportDesignerSectionDetailGroup::BreakAfterGroupFooter : KReportDesignerSectionDetailGroup::BreakNone;
+        const KReportDesignerSectionDetailGroup::PageBreak pageBreak
+            = dgsd->breakAfterFooter->isChecked()
+            ? KReportDesignerSectionDetailGroup::PageBreak::AfterGroupFooter
+            : KReportDesignerSectionDetailGroup::PageBreak::None;
         rsdg->setPageBreak(pageBreak);
 
         const Qt::SortOrder sortOrder =
