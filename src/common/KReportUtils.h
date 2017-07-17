@@ -32,8 +32,6 @@ class QDomElement;
 class QFont;
 class QPointF;
 class KProperty;
-class KReportPosition;
-class KReportSize;
 class KReportTextStyleData;
 class KReportLineStyle;
 
@@ -115,9 +113,6 @@ namespace KReportUtils
 
     //! Reads attributes from @p elemSource into line style @p ls
     KREPORT_EXPORT bool parseReportLineStyleData(const QDomElement & elemSource, KReportLineStyle *ls);
-
-    //! Reads attributes from @p elemSource into rect @p pos, @p siz
-    KREPORT_EXPORT bool parseReportRect(const QDomElement & elemSource, KReportPosition *pos, KReportSize *size);
 
     //! @return page size ID for page key (the PPD standard mediaOption keyword, e.g. "A4")
     //! @note It's an efficient workaround because QPageSize misses this function.

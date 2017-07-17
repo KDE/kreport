@@ -28,7 +28,6 @@
 
 class OROPage;
 class OROSection;
-class KReportSize;
 class KReportDataSource;
 class KReportLineStyle;
 

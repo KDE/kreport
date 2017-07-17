@@ -26,8 +26,6 @@
 #include "kreport_export.h"
 
 class KReportDesigner;
-class KReportPosition;
-class KReportSize;
 
 class KPropertySet;
 

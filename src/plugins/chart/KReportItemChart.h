@@ -21,8 +21,6 @@
 #include <KDChartWidget>
 
 #include "KReportItemBase.h"
-#include "KReportSize.h"
-#include "KReportPosition.h"
 #include "KReportData.h"
 
 namespace Scripting

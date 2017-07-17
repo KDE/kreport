@@ -32,8 +32,6 @@ class QDomDocument;
 class QDomElement;
 
 class KReportDesigner;
-class KReportPosition;
-class KReportSize;
 
 //
 // ReportEntity
