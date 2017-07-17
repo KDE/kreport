@@ -22,6 +22,7 @@
 */
 
 #include "KReportRuler_p.h"
+#include "KReportDesign_p.h"
 #include "KReportZoomHandler_p.h"
 
 #include <QPainter>
@@ -867,7 +868,7 @@ void HorizontalDistancesPaintingStrategy::drawMeasurements(const KReportRuler::P
 
 KReportRuler::Private::Private(KReportRuler *parent,
                                          const KReportZoomHandler &zoomHandler, Qt::Orientation o)
-    : unit(KReportUnit(KReportUnit::Point)),
+    : unit(DEFAULT_UNIT),
     orientation(o),
     viewConverter(&zoomHandler),
     offset(0),
@@ -912,15 +913,15 @@ KReportRuler::Private::~Private()
 qreal KReportRuler::Private::numberStepForUnit() const
 {
     switch(unit.type()) {
-        case KReportUnit::Inch:
-        case KReportUnit::Centimeter:
-        case KReportUnit::Decimeter:
-        case KReportUnit::Millimeter:
+        case KReportUnit::Type::Inch:
+        case KReportUnit::Type::Centimeter:
+        case KReportUnit::Type::Decimeter:
+        case KReportUnit::Type::Millimeter:
             return 1.0;
-        case KReportUnit::Pica:
-        case KReportUnit::Cicero:
+        case KReportUnit::Type::Pica:
+        case KReportUnit::Type::Cicero:
             return 10.0;
-        case KReportUnit::Point:
+        case KReportUnit::Type::Point:
         default:
             return 100.0;
     }

@@ -101,7 +101,7 @@ void KReportItemBase::setUnit(const KReportUnit& u)
 {
     qDebug() << "Setting page unit to: " << u.symbol();
     d->positionProperty->setOption("unit", u.symbol());
-    d->sizeProperty->setOption("unit", u.symbol());    
+    d->sizeProperty->setOption("unit", u.symbol());
 }
 
 int KReportItemBase::renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset,

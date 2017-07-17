@@ -28,6 +28,15 @@
 #include <QDomElement>
 #include <QSizeF>
 
+const bool DEFAULT_SHOW_GRID = true;
+const bool DEFAULT_SNAP_TO_GRID = true;
+const int DEFAULT_GRID_DIVISIONS = 4;
+const KReportUnit::Type DEFAULT_UNIT_TYPE = KReportUnit::Type::Centimeter;
+const KReportUnit DEFAULT_UNIT(DEFAULT_UNIT_TYPE);
+const int DEFAULT_PAGE_MARGIN = CM_TO_POINT(1.0);
+const QPageSize::PageSizeId DEFAULT_PAGE_SIZE = QPageSize::A4;
+const QPageLayout::Orientation DEFAULT_PAGE_ORIENTATION = QPageLayout::Landscape;
+
 KReportDesign::Private::Private(KReportDesign *design)
  : q(design)
  , showGrid(DEFAULT_SHOW_GRID)
@@ -345,9 +354,8 @@ bool KReportDesign::Private::processContentElementChild(const QDomElement &el,
         snapToGrid = KReportUtils::attr(el, "report:grid-snap", DEFAULT_SNAP_TO_GRID);
         gridDivisions = KReportUtils::attr(el, "report:grid-divisions", DEFAULT_GRID_DIVISIONS);
         const QString pageUnitString = KReportUtils::attr(el, "report:page-unit", QString());
-        bool found;
-        pageUnit = KReportUnit::fromSymbol(pageUnitString, &found);
-        if (!found) {
+        pageUnit = KReportUnit(KReportUnit::symbolToType(pageUnitString));
+        if (!pageUnit.isValid()) {
             pageUnit = DEFAULT_UNIT;
             if (!pageUnitString.isEmpty()) {
                 qWarning() << "Invalid page unit" << pageUnitString << "specified in" << name

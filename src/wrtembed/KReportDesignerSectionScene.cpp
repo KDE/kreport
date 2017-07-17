@@ -36,12 +36,12 @@ KReportDesignerSectionScene::KReportDesignerSectionScene(qreal w, qreal h, KRepo
 
     if (m_unit.type() != m_rd->pageUnit().type()) {
         m_unit = m_rd->pageUnit();
-        if (m_unit.type() == KReportUnit::Cicero ||
-            m_unit.type() == KReportUnit::Pica ||
-            m_unit.type() == KReportUnit::Millimeter) {
+        if (m_unit.type() == KReportUnit::Type::Cicero ||
+            m_unit.type() == KReportUnit::Type::Pica ||
+            m_unit.type() == KReportUnit::Type::Millimeter) {
             m_majorX = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiX;
             m_majorY = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiY;
-        } else if (m_unit.type() == KReportUnit::Point) {
+        } else if (m_unit.type() == KReportUnit::Type::Point) {
             m_majorX = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiX;
             m_majorY = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiY;
         } else {
@@ -64,12 +64,12 @@ void KReportDesignerSectionScene::drawBackground(QPainter* painter, const QRectF
     if (m_rd->propertySet()->property("grid-visible").value().toBool()) {
         if (m_unit.type() != m_rd->pageUnit().type()) {
             m_unit = m_rd->pageUnit();
-            if (m_unit.type() == KReportUnit::Cicero ||
-                m_unit.type() == KReportUnit::Pica ||
-                m_unit.type() == KReportUnit::Millimeter) {
+            if (m_unit.type() == KReportUnit::Type::Cicero ||
+                m_unit.type() == KReportUnit::Type::Pica ||
+                m_unit.type() == KReportUnit::Type::Millimeter) {
                 m_majorX = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiX;
                 m_majorY = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiY;
-            } else if (m_unit.type() == KReportUnit::Point) {
+            } else if (m_unit.type() == KReportUnit::Type::Point) {
                 m_majorX = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiX;
                 m_majorY = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiY;
             } else {
@@ -155,12 +155,12 @@ QPointF KReportDesignerSectionScene::gridPoint(const QPointF& p)
         //! @todo Again? Copy&Paste error?
         if (m_unit.type() != m_rd->pageUnit().type()) {
             m_unit = m_rd->pageUnit();
-            if (m_unit.type() == KReportUnit::Cicero ||
-                m_unit.type() == KReportUnit::Pica ||
-                m_unit.type() == KReportUnit::Millimeter) {
+            if (m_unit.type() == KReportUnit::Type::Cicero ||
+                m_unit.type() == KReportUnit::Type::Pica ||
+                m_unit.type() == KReportUnit::Type::Millimeter) {
                 m_majorX = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiX;
                 m_majorY = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiY;
-            } else if (m_unit.type() == KReportUnit::Point) {
+            } else if (m_unit.type() == KReportUnit::Type::Point) {
                 m_majorX = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiX;
                 m_majorY = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiY;
             } else {
