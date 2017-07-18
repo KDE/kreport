@@ -192,8 +192,8 @@ KReportDocument::~KReportDocument()
 QList<KReportItemBase*> KReportDocument::objects() const
 {
     QList<KReportItemBase*> obs;
-    for (int i = static_cast<int>(KReportSectionData::Type::None) + 1;
-         i <= static_cast<int>(KReportSectionData::Type::GroupFooter); i++)
+    for (int i = static_cast<int>(KReportSectionData::Type::PageHeaderFirst);
+         i <= static_cast<int>(KReportSectionData::Type::PageFooterAny); i++)
     {
         KReportSectionData *sec = section(static_cast<KReportSectionData::Type>(i));
         if (sec) {
@@ -237,8 +237,8 @@ KReportItemBase* KReportDocument::object(const QString& n) const
 QList<KReportSectionData*> KReportDocument::sections() const
 {
     QList<KReportSectionData*> secs;
-    for (int i = static_cast<int>(KReportSectionData::Type::None) + 1;
-         i <= static_cast<int>(KReportSectionData::Type::GroupFooter); i++)
+    for (int i = static_cast<int>(KReportSectionData::Type::PageHeaderFirst);
+         i <= static_cast<int>(KReportSectionData::Type::PageFooterAny); i++)
     {
         KReportSectionData *sec = section(static_cast<KReportSectionData::Type>(i));
         if (sec) {

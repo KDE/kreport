@@ -572,7 +572,7 @@ void KReportDesigner::insertSection(KReportSectionData::Type type)
     KReportDesignerSection* sec = section(type);
     if (!sec) {
         int idx = 0;
-        for (int i = static_cast<int>(KReportSectionData::Type::None) + 1;
+        for (int i = static_cast<int>(KReportSectionData::Type::PageHeaderFirst);
              i <= static_cast<int>(type); ++i)
         {
             if (section(static_cast<KReportSectionData::Type>(i)))
@@ -1220,8 +1220,8 @@ QString KReportDesigner::suggestEntityName(const QString &name) const
     KReportDesignerSection *sec;
     int itemCount = 0;
     // Count items in the main sections
-    for (int i = static_cast<int>(KReportSectionData::Type::None) + 1;
-         i <= static_cast<int>(KReportSectionData::Type::GroupFooter); i++)
+    for (int i = static_cast<int>(KReportSectionData::Type::PageHeaderFirst);
+         i <= static_cast<int>(KReportSectionData::Type::PageFooterAny); i++)
     {
         sec = section(static_cast<KReportSectionData::Type>(i));
         if (sec) {
@@ -1264,8 +1264,8 @@ bool KReportDesigner::isEntityNameUnique(const QString &name, KReportItemBase* i
     bool unique = true;
 
     // Check items in the main sections
-    for (int i = static_cast<int>(KReportSectionData::Type::None);
-         i <= static_cast<int>(KReportSectionData::Type::GroupFooter); i++)
+    for (int i = static_cast<int>(KReportSectionData::Type::PageHeaderFirst);
+         i <= static_cast<int>(KReportSectionData::Type::PageFooterAny); i++)
     {
         sec = section(static_cast<KReportSectionData::Type>(i));
         if (sec) {
