@@ -40,6 +40,8 @@
 #include "KReportScriptSource.h"
 #endif
 
+#include <KPropertyListData>
+
 #include <KStandardShortcut>
 #include <KStandardGuiItem>
 #include <QLayout>
@@ -717,7 +719,6 @@ QStringList KReportDesigner::fieldKeys() const
 
 void KReportDesigner::createProperties()
 {
-    QStringList keys, strings;
     KReportDesigner::addMetaProperties(&d->set,
         tr("Report", "Main report element"), QLatin1String("kreport-report-element"));
 
@@ -726,27 +727,26 @@ void KReportDesigner::createProperties()
 
     d->title = new KProperty("title", QLatin1String("Report"), tr("Title"), tr("Report Title"));
 
-    keys.clear();
-    keys =  KReportPageSize::pageFormatKeys();
-    strings = KReportPageSize::pageFormatNames();
-    QString defaultKey = KReportPageSize::pageSizeKey(KReportPageSize::defaultSize());
-    d->pageSize = new KProperty("page-size", keys, strings, defaultKey, tr("Page Size"));
+    KPropertyListData *listData = new KPropertyListData(KReportPageSize::pageFormatKeys(),
+                                                        KReportPageSize::pageFormatNames());
+    QVariant defaultKey = KReportPageSize::pageSizeKey(KReportPageSize::defaultSize());
+    d->pageSize = new KProperty("page-size", listData, defaultKey, tr("Page Size"));
 
-    keys.clear(); strings.clear();
-    keys << QLatin1String("portrait") << QLatin1String("landscape");
-    strings << tr("Portrait") << tr("Landscape");
-    d->orientation = new KProperty("print-orientation", keys, strings, QLatin1String("portrait"), tr("Page Orientation"));
+    listData = new KPropertyListData({ QLatin1String("portrait"), QLatin1String("landscape") },
+                                     QVariantList{ tr("Portrait"), tr("Landscape") });
+    d->orientation = new KProperty("print-orientation", listData, QLatin1String("portrait"),
+                                   tr("Page Orientation"));
 
-    keys.clear(); strings.clear();
-
-    strings = KReportUnit::listOfUnitNameForUi(KReportUnit::HidePixel);
+    QStringList keys;
+    QStringList strings = KReportUnit::listOfUnitNameForUi(KReportUnit::HidePixel);
     QString unit;
     foreach(const QString &un, strings) {
         unit = un.mid(un.indexOf(QLatin1String("(")) + 1, 2);
         keys << unit;
     }
 
-    d->unit = new KProperty("page-unit", keys, strings, QLatin1String("cm"), tr("Page Unit"));
+    listData = new KPropertyListData(keys, strings);
+    d->unit = new KProperty("page-unit", listData, QLatin1String("cm"), tr("Page Unit"));
 
     d->showGrid = new KProperty("grid-visible", true, tr("Show Grid"));
     d->gridSnap = new KProperty("grid-snap", true, tr("Snap to Grid"));
@@ -778,7 +778,7 @@ void KReportDesigner::createProperties()
     d->set.addProperty(d->bottomMargin);
 
 #ifdef KREPORT_SCRIPTING
-    d->script = new KProperty("script", QStringList(), QStringList(), QString(), tr("Object Script"));
+    d->script = new KProperty("script", new KPropertyListData, QVariant(), tr("Object Script"));
     d->set.addProperty(d->script);
 #endif
 

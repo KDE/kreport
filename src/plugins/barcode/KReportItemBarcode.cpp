@@ -18,6 +18,7 @@
 #include "KReportItemBarcode.h"
 
 #include <KProperty>
+#include <KPropertyListData>
 #include <KPropertySet>
 
 #include <QDomNode>
@@ -114,33 +115,34 @@ void KReportItemBarcode::setMaxLength(int i)
 
 void KReportItemBarcode::createProperties()
 {
-    QStringList keys, strings;
-
-    m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(),
-                                    QString(), tr("Data Source"));
+    m_controlSource
+        = new KProperty("item-data-source", new KPropertyListData, QVariant(), tr("Data Source"));
 
     m_itemValue = new KProperty("value", QString(), tr("Value"),
                                 tr("Value used if not bound to a field"));
 
-    keys << QLatin1String("left") << QLatin1String("center") << QLatin1String("right");
-    strings << tr("Left") << tr("Center") << tr("Right");
-    m_horizontalAlignment = new KProperty("horizontal-align", keys, strings,
-                                          QLatin1String("left"), tr("Horizontal Alignment"));
+    KPropertyListData *listData = new KPropertyListData(
+        { QLatin1String("left"), QLatin1String("center"), QLatin1String("right") },
+        QVariantList{ tr("Left"), tr("Center"), tr("Right") });
+    m_horizontalAlignment = new KProperty("horizontal-align", listData, QLatin1String("left"),
+                                          tr("Horizontal Alignment"));
 
-    keys.clear();
-    strings.clear();
-    keys << QLatin1String("3of9") << QLatin1String("3of9+") << QLatin1String("128")
+    listData = new KPropertyListData(
+    QStringList()
+         << QLatin1String("3of9") << QLatin1String("3of9+") << QLatin1String("128")
          << QLatin1String("ean8") << QLatin1String("ean13") << QLatin1String("i2of5")
-         << QLatin1String("upc-a") << QLatin1String("upc-e");
-    strings << tr("Code 3 of 9", "Barcode symbology, keep short")
+         << QLatin1String("upc-a") << QLatin1String("upc-e"),
+    QStringList()
+            << tr("Code 3 of 9", "Barcode symbology, keep short")
             << tr("Code 3 of 9 Ext.", "3 of 3 Extended: Barcode symbology, keep short")
             << tr("Code 128", "Barcode symbology, keep short")
             << tr("EAN-8", "Barcode symbology, keep short")
             << tr("EAN-13", "Barcode symbology, keep short")
             << tr("Interleaved 2 of 5", "Interleaved barcode 2 of 5: barcode symbology, keep short")
             << tr("UPC-A", "Barcode symbology, keep short")
-            << tr("UPC-E", "Barcode symbology, keep short");
-    m_format = new KProperty("barcode-format", keys, strings, QLatin1String("3of9"),
+            << tr("UPC-E", "Barcode symbology, keep short")
+    );
+    m_format = new KProperty("barcode-format", listData, QLatin1String("3of9"),
                              tr("Barcode Format"));
 
     m_maxLength = new KProperty("barcode-max-length", 5, tr("Max Length"),

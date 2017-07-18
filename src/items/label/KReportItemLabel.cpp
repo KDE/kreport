@@ -20,6 +20,7 @@
 #include "kreportplugin_debug.h"
 
 #include <KPropertySet>
+#include <KPropertyListData>
 
 #include <QFontDatabase>
 #include <QPalette>
@@ -87,17 +88,17 @@ void KReportItemLabel::setText(const QString& t)
 void KReportItemLabel::createProperties()
 {
     m_text = new KProperty("caption", QLatin1String("Label"), tr("Caption"));
-    QStringList keys, strings;
+    KPropertyListData *listData = new KPropertyListData(
+        { QLatin1String("left"), QLatin1String("center"), QLatin1String("right") },
+        QVariantList{ tr("Left"), tr("Center"), tr("Right") });
+    m_horizontalAlignment = new KProperty("horizontal-align", listData, QLatin1String("left"),
+                                          tr("Horizontal Alignment"));
 
-    keys << QLatin1String("left") << QLatin1String("center") << QLatin1String("right");
-    strings << tr("Left") << tr("Center") << tr("Right");
-    m_horizontalAlignment = new KProperty("horizontal-align", keys, strings, QLatin1String("left"), tr("Horizontal Alignment"));
-
-    keys.clear();
-    strings.clear();
-    keys << QLatin1String("top") << QLatin1String("center") << QLatin1String("bottom");
-    strings << tr("Top") << tr("Center") << tr("Bottom");
-    m_verticalAlignment = new KProperty("vertical-align", keys, strings, QLatin1String("center"), tr("Vertical Alignment"));
+    listData = new KPropertyListData(
+        { QLatin1String("top"), QLatin1String("center"), QLatin1String("bottom") },
+        QVariantList{ tr("Top"), tr("Center"), tr("Bottom") });
+    m_verticalAlignment = new KProperty("vertical-align", listData, QLatin1String("center"),
+                                        tr("Vertical Alignment"));
 
     m_font = new KProperty("font", QFontDatabase::systemFont(QFontDatabase::GeneralFont), tr("Font"), tr("Font"));
 

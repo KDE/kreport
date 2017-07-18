@@ -17,6 +17,7 @@
  */
 #include "KReportItemMaps.h"
 
+#include <KPropertyListData>
 #include <KPropertySet>
 
 #include <QStringList>
@@ -55,7 +56,7 @@ KReportItemMaps::~KReportItemMaps()
 
 void KReportItemMaps::createProperties()
 {
-    m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
+    m_controlSource = new KProperty("item-data-source", new KPropertyListData, QVariant(), tr("Data Source"));
 
     m_latitudeProperty = new KProperty("latitude", 0.0, tr("Latitude"), QString(), KProperty::Double);
     m_latitudeProperty->setOption("min", -90);
@@ -76,7 +77,9 @@ void KReportItemMaps::createProperties()
     m_zoomProperty->setOption("slider", true);
 
     QStringList mapThemIds(m_themeManager.mapThemeIds());
-    m_themeProperty = new KProperty("theme",  mapThemIds, mapThemIds, mapThemIds[1], tr("Theme"));
+
+    m_themeProperty = new KProperty("theme", new KPropertyListData(mapThemIds, mapThemIds),
+                                    QVariant(mapThemIds[1]), tr("Theme"));
 
     if (mapThemIds.contains(QLatin1String("earth/srtm/srtm.dgml"))) {
         m_themeProperty->setValue(QLatin1String("earth/srtm/srtm.dgml"), KProperty::DefaultValueOptions & ~KProperty::ValueOptions(KProperty::ValueOption::RememberOld));

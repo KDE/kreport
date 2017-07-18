@@ -22,6 +22,7 @@
 #include "renderer/scripting/KReportScriptHandler.h"
 #endif
 
+#include <KPropertyListData>
 #include <KPropertySet>
 
 #include <QPalette>
@@ -71,13 +72,13 @@ KReportItemCheckBox::~KReportItemCheckBox()
 
 void KReportItemCheckBox::createProperties()
 {
-    QStringList keys, strings;
+    KPropertyListData *listData = new KPropertyListData(
+        QVariantList{ QLatin1String("Cross"), QLatin1String("Tick"), QLatin1String("Dot") },
+        QVariantList{ tr("Cross"), tr("Tick"), tr("Dot") });
+    m_checkStyle = new KProperty("check-style", listData, QLatin1String("Cross"), tr("Style"));
 
-    keys << QLatin1String("Cross") << QLatin1String("Tick") << QLatin1String("Dot");
-    strings << tr("Cross") << tr("Tick") << tr("Dot");
-    m_checkStyle = new KProperty("check-style", keys, strings, QLatin1String("Cross"), tr("Style"));
-
-    m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
+    m_controlSource
+        = new KProperty("item-data-source", new KPropertyListData, QVariant(), tr("Data Source"));
     m_controlSource->setOption("extraValueAllowed", QLatin1String("true"));
 
     m_foregroundColor = new KProperty("foreground-color", QColor(Qt::black), tr("Foreground Color"));

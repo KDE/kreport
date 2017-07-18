@@ -19,6 +19,7 @@
 #include "KReportRenderObjects.h"
 #include "kreportplugin_debug.h"
 
+#include <KPropertyListData>
 #include <KPropertySet>
 
 #include <QBuffer>
@@ -111,13 +112,12 @@ void KReportItemImage::setMode(const QString &m)
 
 void KReportItemImage::createProperties()
 {
-    m_controlSource = new KProperty("item-data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
+    m_controlSource = new KProperty("item-data-source", new KPropertyListData, QVariant(), tr("Data Source"));
 
-    QStringList keys, strings;
-    keys << QLatin1String("clip") << QLatin1String("stretch");
-    strings << tr("Clip") << tr("Stretch");
-    m_resizeMode = new KProperty("resize-mode", keys, strings, QLatin1String("clip"), tr("Resize Mode"));
-
+    KPropertyListData *listData = new KPropertyListData(
+        { QLatin1String("clip"), QLatin1String("stretch") },
+        QVariantList{ tr("Clip"), tr("Stretch") });
+    m_resizeMode = new KProperty("resize-mode", listData, QLatin1String("clip"), tr("Resize Mode"));
     m_staticImage = new KProperty("static-image", QPixmap(), tr("Value"), tr("Value used if not bound to a field"));
 
     propertySet()->addProperty(m_controlSource);
