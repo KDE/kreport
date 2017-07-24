@@ -290,9 +290,8 @@ QVariant KReportDesignerItemRectBase::itemChange(GraphicsItemChange change, cons
 
             return newPos;
         } else if (change == ItemPositionHasChanged) {
-            item()->setPosition(KReportItemBase::positionFromScene(value.toPointF()));
-            //TODO dont update property
-            //m_ppos->setScenePos(value.toPointF(), KReportPosition::DontUpdateProperty);
+            setSceneRect(value.toPointF(),
+                 KReportItemBase::sceneSize(item()->size()), SceneRectFlag::DontUpdateProperty);
         } else if (change == ItemSceneHasChanged && item()) {
             QPointF newPos = pos();
 
