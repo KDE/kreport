@@ -80,7 +80,7 @@ Q_SIGNALS:
 private:
     bool setDocument(const QDomElement &document);
 
-private:
+    Q_DISABLE_COPY(KReportPreRenderer)
     KReportPreRendererPrivate *const d;
 };
 
