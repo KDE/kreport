@@ -68,7 +68,6 @@
         "Name[tr]": "Barkod",
         "Name[uk]": "Штрихкод",
         "Name[x-test]": "xxBarcodexx",
-        "Name[zh_CN]": "条形码",
         "ServiceTypes": [
             "KReport/Element"
         ],
