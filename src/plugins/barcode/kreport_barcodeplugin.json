@@ -75,5 +75,5 @@
         "Website": "http://kexi-project.org"
     },
     "X-KDE-PluginInfo-LegacyName": "barcode",
-    "X-KReport-Priority": "50"
+    "X-KReport-PluginInfo-Priority": "50"
 }

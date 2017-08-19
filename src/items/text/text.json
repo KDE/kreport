@@ -74,5 +74,5 @@
         "Website": "http://kexi-project.org"
     },
     "X-KDE-PluginInfo-LegacyName": "text",
-    "X-KReport-Priority": "1"
+    "X-KReport-PluginInfo-Priority": "1"
 }

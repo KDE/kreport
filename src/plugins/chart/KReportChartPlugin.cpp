@@ -37,7 +37,6 @@ KReportChartPlugin::KReportChartPlugin(QObject *parent, const QVariantList &args
     info->setClassName("chart");
     info->setIcon(koIcon("office-chart-area"));
     info->setName(tr("Chart"));
-    info->setPriority(10);
     setInfo(info);
 }
 

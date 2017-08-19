@@ -28,7 +28,7 @@ class KReportPluginMetaData::Private
 public:
     Private(KReportPluginMetaData *metaData) : isBuiltIn(false), isStatic(false)
     {
-        const QString s = metaData->value(QLatin1String("X-KReport-Priority"));
+        const QString s = metaData->value(QLatin1String("X-KReport-PluginInfo-Priority"));
         bool ok;
         int i = s.toInt(&ok);
         priority = ok ? i : 100; // default priority is low

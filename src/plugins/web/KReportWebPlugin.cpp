@@ -28,15 +28,6 @@ KReportWebPlugin::KReportWebPlugin(QObject *parent, const QVariantList &args)
     : KReportPluginInterface(parent)
 {
     Q_UNUSED(args)
-#if 0
-    KReportPluginMetaData *info = new KReportPluginInfo();
-    info->setClassName("web");
-    info->setName(tr("Web browser"));
-    info->setIcon(koIcon("report_web_element"));
-    info->setPriority(40);
-    
-    setInfo(info);
-#endif
 }
 
 KReportWebPlugin::~KReportWebPlugin()
