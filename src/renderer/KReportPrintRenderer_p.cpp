@@ -47,11 +47,11 @@ bool PrintRenderer::setupPrinter( ORODocument * document, QPrinter * pPrinter)
     pPrinter->setOrientation((document->pageLayout().orientation() == QPageLayout::Portrait ? QPrinter::Portrait : QPrinter::Landscape));
     pPrinter->setPageOrder(QPrinter::FirstPageFirst);
 
-    if (!document->pageLayout().pageSize().isValid()) {
-        pPrinter->setPageSize(QPrinter::Custom);
-    } else {
+//    if (!document->pageLayout().pageSize().isValid()) {
+//        pPrinter->setPageSize(QPageSize(QSize(document->pageLayout().getCustomWidth(), document->pageLayout().getCustomHeight()), QLatin1String("Custom"));
+//    } else {
         pPrinter->setPageSize(QPageSize(document->pageLayout().pageSize()));
-    }
+//    }
 
     return true;
 }

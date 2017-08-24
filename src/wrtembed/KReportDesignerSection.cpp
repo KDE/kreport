@@ -162,13 +162,16 @@ void KReportDesignerSection::setTitle(const QString & s)
     d->title->setText(s);
 }
 
-void KReportDesignerSection::slotResizeBarDragged(int delta)
+void KReportDesignerSection::slotResizeBarDragged(int delta, bool changeSet)
 {
     if (d->sceneView->designer() && d->sceneView->designer()->propertySet()->property("page-size").value().toString() == QLatin1String("Labels")) {
         return; // we don't want to allow this on reports that are for labels
     }
-    slotSceneClicked(); // switches property set to this section
-
+    
+    if (changeSet) {
+      slotSceneClicked(); // switches property set to this section
+    }
+    
     qreal h = d->scene->height() + delta;
 
     if (h < 1) h = 1;
@@ -279,7 +282,7 @@ void KReportDesignerSection::slotPageOptionsChanged(KPropertySet &set)
     d->reportDesigner->adjustSize();
     d->reportDesigner->repaint();
 
-    slotResizeBarDragged(0);
+    slotResizeBarDragged(0, false);
 }
 
 void KReportDesignerSection::slotSceneClicked()

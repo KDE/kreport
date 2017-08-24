@@ -72,7 +72,7 @@ KReportDocument::KReportDocument(const QDomElement & elemSource, QObject *parent
                    << elemSource.text();
         return;
     }
-
+    
     QDomNodeList sections = elemSource.childNodes();
     for (int nodeCounter = 0; nodeCounter < sections.count(); nodeCounter++) {
         QDomElement elemThis = sections.item(nodeCounter).toElement();
@@ -93,7 +93,8 @@ KReportDocument::KReportDocument(const QDomElement & elemSource, QObject *parent
                 setPageSize(elemThis.attribute(QLatin1String("report:page-size"), QLatin1String("A4")));
                 d->pageLayout.setPageSize(QPageSize(KReportPageSize::pageSize(pageSize())));
             } else if (pagetype == QLatin1String("custom")) {
-                QPageSize custom(QSize(elemThis.attribute(QLatin1String("report:custom-page-width"), QString()).toFloat() , elemThis.attribute(QLatin1String("report:custom-page-height"), QString()).toFloat()), QLatin1String("Custom"));
+                kreportDebug() << "Setting custom page size in document to " << KReportUnit::parseValue(elemThis.attribute(QLatin1String("report:custom-page-width"), QLatin1String("5.0cm"))) << KReportUnit::parseValue(elemThis.attribute(QLatin1String("report:custom-page-height"), QLatin1String("5.0cm"))) ;
+                QPageSize custom(QSize(KReportUnit::parseValue(elemThis.attribute(QLatin1String("report:custom-page-width"), QLatin1String("5.0cm")))  , KReportUnit::parseValue(elemThis.attribute(QLatin1String("report:custom-page-height"), QLatin1String("5.0cm"))) ), QString(), QPageSize::ExactMatch);
 
                 d->pageLayout.setPageSize(custom);
             } else if (pagetype == QLatin1String("label")) {

@@ -60,22 +60,8 @@ KReportPage::KReportPage(QWidget *parent, ORODocument *document)
     int pageWidth;
     int pageHeight;
 
-    QString pageSize = d->reportDocument->pageLayout().pageSize().name();
-
     pageWidth = d->reportDocument->pageLayout().fullRectPixels(KReportPrivate::dpiX()).width();
     pageHeight = d->reportDocument->pageLayout().fullRectPixels(KReportPrivate::dpiX()).height();
-
-//TODO remove after check    
-#if 0    
-    if (pageSize == QLatin1String("Custom")) {
-        // if this is custom sized sheet of paper we will just use those values
-
-    } else {
-        // lookup the correct size information for the specified size paper
-        pageWidth = d->reportDocument->pageOptions().pixelSize().width();
-        pageHeight = d->reportDocument->pageOptions().pixelSize().height();
-    }
-#endif
 
     setRect(0, 0, pageWidth, pageHeight);
     //kreportDebug() << "PAGE IS " << pageWidth << "x" << pageHeight;

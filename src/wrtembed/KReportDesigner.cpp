@@ -151,8 +151,7 @@ public:
     KProperty *pageSize;
     KProperty *orientation;
     KProperty *unit;
-    KProperty *customHeight;
-    KProperty *customWidth;
+    KProperty *customPageSize;
     KProperty *leftMargin;
     KProperty *rightMargin;
     KProperty *topMargin;
@@ -295,9 +294,9 @@ KReportDesigner::KReportDesigner(QWidget *parent, const QDomElement &data)
                 if (pagetype == QLatin1String("predefined")) {
                     d->pageSize->setValue(it.toElement().attribute(QLatin1String("report:page-size"), QLatin1String("A4")));
                 } else if (pagetype == QLatin1String("custom")) {
-                    d->pageSize->setValue(QLatin1String("custom"));
-                    d->customHeight->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("report:custom-page-height"), QLatin1String(""))));
-                    d->customWidth->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("report:custom-page-widtht"), QLatin1String(""))));
+                    d->pageSize->setValue(QLatin1String("Custom"));
+                    d->customPageSize->setValue(QSizeF(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("report:custom-page-width"), QLatin1String(""))),
+                        KReportUnit::parseValue(it.toElement().attribute(QLatin1String("report:custom-page-height"), QLatin1String("")))));
                 } else if (pagetype == QLatin1String("label")) {
                     //! @todo
                 }
@@ -391,8 +390,8 @@ QDomElement KReportDesigner::document() const
 
     if (d->pageSize->value().toString() == QLatin1String("Custom")) {
         pagestyle.appendChild(doc.createTextNode(QLatin1String("custom")));
-        KReportUtils::setAttribute(&pagestyle, QLatin1String("report:custom-page-width"), d->customWidth->value().toDouble());
-        KReportUtils::setAttribute(&pagestyle, QLatin1String("report:custom-page-height"), d->customHeight->value().toDouble());
+        KReportUtils::setAttribute(&pagestyle, QLatin1String("report:custom-page-width"), d->customPageSize->value().toSizeF().width());
+        KReportUtils::setAttribute(&pagestyle, QLatin1String("report:custom-page-height"), d->customPageSize->value().toSizeF().height());
 
     } else if (d->pageSize->value().toString() == QLatin1String("Label")) {
         pagestyle.appendChild(doc.createTextNode(QLatin1String("label")));
@@ -729,7 +728,10 @@ void KReportDesigner::createProperties()
     KPropertyListData *listData = new KPropertyListData(KReportPageSize::pageFormatKeys(),
                                                         KReportPageSize::pageFormatNames());
     QVariant defaultKey = KReportPageSize::pageSizeKey(KReportPageSize::defaultSize());
-    d->pageSize = new KProperty("page-size", listData, defaultKey, tr("Page Size"));
+    d->pageSize = new KProperty("page-size", listData, defaultKey, tr("Page Size"));    
+    
+    d->customPageSize = new KProperty("custom-page-size", QSizeF(KReportUnit(KReportUnit::Type::Centimeter).fromUserValue(10), KReportUnit(KReportUnit::Type::Centimeter).fromUserValue(10)),
+        tr("Custom Page Size"), tr("Custom Page Size"), KProperty::SizeF);
 
     listData = new KPropertyListData({ QLatin1String("portrait"), QLatin1String("landscape") },
                                      QVariantList{ tr("Portrait"), tr("Landscape") });
@@ -760,6 +762,7 @@ void KReportDesigner::createProperties()
 
     d->set.addProperty(d->title);
     d->set.addProperty(d->pageSize);
+    d->set.addProperty(d->customPageSize);
     d->set.addProperty(d->orientation);
     d->set.addProperty(d->unit);
     d->set.addProperty(d->gridSnap);
@@ -774,9 +777,6 @@ void KReportDesigner::createProperties()
     d->script = new KProperty("script", new KPropertyListData, QVariant(), tr("Object Script"));
     d->set.addProperty(d->script);
 #endif
-
-//    KProperty* _customHeight;
-//    KProperty* _customWidth;
 
 }
 
@@ -796,6 +796,7 @@ void KReportDesigner::slotPropertyChanged(KPropertySet &s, KProperty &p)
         d->set.property("margin-right").setOption("unit", newstr);
         d->set.property("margin-top").setOption("unit", newstr);
         d->set.property("margin-bottom").setOption("unit", newstr);
+        d->set.property("custom-page-size").setOption("unit", newstr);
     }
 }
 
@@ -854,18 +855,31 @@ QSize KReportDesigner::sizeHint() const
 
 int KReportDesigner::pageWidthPx() const
 {
-    QPageLayout layout = QPageLayout(
-        QPageSize(KReportPageSize::pageSize(d->set.property("page-size").value().toString())),
-        d->set.property("print-orientation").value().toString()
-                == QLatin1String("portrait") ? QPageLayout::Portrait : QPageLayout::Landscape, QMarginsF(0,0,0,0));
+    QSize pageSizePx;
+    int pageWidth;
+    
+    if (d->set.property("page-size").value().toString() == QLatin1String("Custom")) {
+        KReportUnit unit = pageUnit();
+        
+        QSizeF customSize = d->set.property("custom-page-size").value().toSizeF();
+        QPageLayout layout(QPageSize(customSize, QPageSize::Point, QString(), QPageSize::ExactMatch), d->set.property("print-orientation").value().toString()
+                    == QLatin1String("portrait") ? QPageLayout::Portrait : QPageLayout::Landscape, QMarginsF(0,0,0,0));
+        
+        pageSizePx = layout.fullRectPixels(KReportPrivate::dpiX()).size();
+    } else {
+        QPageLayout layout = QPageLayout(
+            QPageSize(KReportPageSize::pageSize(d->set.property("page-size").value().toString())),
+            d->set.property("print-orientation").value().toString()
+                    == QLatin1String("portrait") ? QPageLayout::Portrait : QPageLayout::Landscape, QMarginsF(0,0,0,0));
+        pageSizePx = layout.fullRectPixels(KReportPrivate::dpiX()).size();
+    }
+    
+    pageWidth = pageSizePx.width();
 
-    QSize pageSizePx = layout.fullRectPixels(KReportPrivate::dpiX()).size();
+    pageWidth = pageWidth - POINT_TO_INCH(d->set.property("margin-left").value().toDouble()) * KReportPrivate::dpiX();
+    pageWidth = pageWidth - POINT_TO_INCH(d->set.property("margin-right").value().toDouble()) * KReportPrivate::dpiX();
 
-    int width = pageSizePx.width();
-    width = width - POINT_TO_INCH(d->set.property("margin-left").value().toDouble()) * KReportPrivate::dpiX();
-    width = width - POINT_TO_INCH(d->set.property("margin-right").value().toDouble()) * KReportPrivate::dpiX();
-
-    return width;
+    return pageWidth;
 }
 
 void KReportDesigner::resizeEvent(QResizeEvent * event)
@@ -1038,8 +1052,10 @@ void KReportDesigner::changeSet(KPropertySet *s)
     else
         d->pageButton->setCheckState(Qt::Unchecked);
 
-    d->itemSet = s;
-    emit propertySetChanged();
+    if (d->itemSet != s) {
+        d->itemSet = s;
+        emit propertySetChanged();
+    }
 }
 
 //

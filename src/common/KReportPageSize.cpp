@@ -38,7 +38,9 @@ static const KReportPageSizeInfo pageSizeInfo[] = {
                                   "Usually don't translate literally, use \"US Legal\""),
                 QPageSize::Legal},
     { "Screen",	QT_TRANSLATE_NOOP3("KReportPageFormat", "Screen", ""), QPageSize::A4},
+    { "Custom", QT_TRANSLATE_NOOP3("KReportPageFormat", "Custom", ""), QPageSize::Custom},
     { "", {"", ""}, QPageSize::LastPageSize}
+
 };
 
 QStringList KReportPageSize::pageFormatNames()

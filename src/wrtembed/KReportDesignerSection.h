@@ -68,7 +68,7 @@ public:
     void unsetSectionCursor();
 
 protected Q_SLOTS:
-    void slotResizeBarDragged(int delta);
+    void slotResizeBarDragged(int delta, bool changeSet = true);
 
 protected:
     explicit KReportDesignerSection(KReportDesigner * rptdes,
