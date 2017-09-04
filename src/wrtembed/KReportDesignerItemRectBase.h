@@ -47,8 +47,6 @@ public:
     virtual void exitInlineEditingMode();
 
 protected:
-    int m_dpiX;
-    int m_dpiY;
 
     enum class SceneRectFlag {
         UpdateProperty,
@@ -72,7 +70,10 @@ protected:
 
     void move(const QPointF&) override;
     QRectF properRect(const KReportDesigner &d, qreal minWidth, qreal minHeight) const;
+    int dpiX() const;
+    int dpiY() const;
 private:
+    Q_DISABLE_COPY(KReportDesignerItemRectBase)
     int grabHandle(const QPointF &pos);
     QPointF properPressPoint(const KReportDesigner &d) const;
 

@@ -41,32 +41,38 @@ public:
     KReportPrivate::PageLayout pageLayout;
     QString pageSize;
     QString labelType;
-};
+    
+    KReportSectionData * pageHeaderFirst = nullptr;
+    KReportSectionData * pageHeaderOdd = nullptr;
+    KReportSectionData * pageHeaderEven = nullptr;
+    KReportSectionData * pageHeaderLast = nullptr;
+    KReportSectionData * pageHeaderAny = nullptr;
 
-void KReportDocument::init()
-{
-    m_pageHeaderFirst = m_pageHeaderOdd = m_pageHeaderEven = m_pageHeaderLast = m_pageHeaderAny = nullptr;
-    m_pageFooterFirst = m_pageFooterOdd = m_pageFooterEven = m_pageFooterLast = m_pageFooterAny = nullptr;
-    m_reportHeader = m_reportFooter = nullptr;
-}
+    KReportSectionData * reportHeader = nullptr;
+    KReportSectionData * reportFooter = nullptr;
+
+    KReportSectionData * pageFooterFirst = nullptr;
+    KReportSectionData * pageFooterOdd = nullptr;
+    KReportSectionData * pageFooterEven = nullptr;
+    KReportSectionData * pageFooterLast = nullptr;
+    KReportSectionData * pageFooterAny = nullptr;
+
+    KReportDetailSectionData* detailSection = nullptr;
+};
 
 KReportDocument::KReportDocument(QObject *parent)
         : QObject(parent),
-        m_detailSection(nullptr),
-        d(new Private())
+        d(new Private)
 {
-    init();
     d->valid = true;
 }
 
 KReportDocument::KReportDocument(const QDomElement & elemSource, QObject *parent)
         : QObject(parent),
-        m_detailSection(nullptr),
-        d(new Private())
+        d(new Private)
 {
     d->valid = false;
-    init();
-    //kreportDebug();
+
     if (elemSource.tagName() != QLatin1String("report:content")) {
         kreportWarning() << "QDomElement is not <report:content> tag"
                    << elemSource.text();
@@ -125,40 +131,40 @@ KReportDocument::KReportDocument(const QDomElement & elemSource, QObject *parent
                             //kreportDebug() << "Adding section of type " << sd->type();
                             switch (sd->type()) {
                             case KReportSectionData::Type::PageHeaderFirst:
-                                m_pageHeaderFirst = sd;
+                                d->pageHeaderFirst = sd;
                                 break;
                             case KReportSectionData::Type::PageHeaderOdd:
-                                m_pageHeaderOdd = sd;
+                                d->pageHeaderOdd = sd;
                                 break;
                             case KReportSectionData::Type::PageHeaderEven:
-                                m_pageHeaderEven = sd;
+                                d->pageHeaderEven = sd;
                                 break;
                             case KReportSectionData::Type::PageHeaderLast:
-                                m_pageHeaderLast = sd;
+                                d->pageHeaderLast = sd;
                                 break;
                             case KReportSectionData::Type::PageHeaderAny:
-                                m_pageHeaderAny = sd;
+                                d->pageHeaderAny = sd;
                                 break;
                             case KReportSectionData::Type::ReportHeader:
-                                m_reportHeader = sd;
+                                d->reportHeader = sd;
                                 break;
                             case KReportSectionData::Type::ReportFooter:
-                                m_reportFooter = sd;
+                                d->reportFooter = sd;
                                 break;
                             case KReportSectionData::Type::PageFooterFirst:
-                                m_pageFooterFirst = sd;
+                                d->pageFooterFirst = sd;
                                 break;
                             case KReportSectionData::Type::PageFooterOdd:
-                                m_pageFooterOdd = sd;
+                                d->pageFooterOdd = sd;
                                 break;
                             case KReportSectionData::Type::PageFooterEven:
-                                m_pageFooterEven = sd;
+                                d->pageFooterEven = sd;
                                 break;
                             case KReportSectionData::Type::PageFooterLast:
-                                m_pageFooterLast = sd;
+                                d->pageFooterLast = sd;
                                 break;
                             case KReportSectionData::Type::PageFooterAny:
-                                m_pageFooterAny = sd;
+                                d->pageFooterAny = sd;
                                 break;
                             default:
                                 ;
@@ -169,7 +175,7 @@ KReportDocument::KReportDocument(const QDomElement & elemSource, QObject *parent
                         KReportDetailSectionData * dsd = new KReportDetailSectionData(sec.toElement(), this);
 
                         if (dsd->isValid()) {
-                            m_detailSection = dsd;
+                            d->detailSection = dsd;
                         } else {
                             kreportDebug() << "Invalid detail section";
                             delete dsd;
@@ -202,9 +208,9 @@ QList<KReportItemBase*> KReportDocument::objects() const
         }
     }
 
-    if (m_detailSection) {
+    if (d->detailSection) {
         //kreportDebug() << "Number of groups: " << m_detailSection->m_groupList.count();
-        foreach(KReportDetailGroupSectionData* g, m_detailSection->groupList) {
+        foreach(KReportDetailGroupSectionData* g, d->detailSection->groupList) {
             if (g->groupHeader) {
                 obs << g->groupHeader->objects();
             }
@@ -212,8 +218,8 @@ QList<KReportItemBase*> KReportDocument::objects() const
                 obs << g->groupFooter->objects();
             }
         }
-        if (m_detailSection->detailSection)
-            obs << m_detailSection->detailSection->objects();
+        if (d->detailSection->detailSection)
+            obs << d->detailSection->detailSection->objects();
     }
 
     /*kreportDebug() << "Object List:";
@@ -247,9 +253,9 @@ QList<KReportSectionData*> KReportDocument::sections() const
         }
     }
 
-    if (m_detailSection) {
+    if (d->detailSection) {
         //kreportDebug() << "Number of groups: " << m_detailSection->m_groupList.count();
-        foreach(KReportDetailGroupSectionData* g, m_detailSection->groupList) {
+        foreach(KReportDetailGroupSectionData* g, d->detailSection->groupList) {
             if (g->groupHeader) {
                 secs << g->groupHeader;
             }
@@ -257,8 +263,8 @@ QList<KReportSectionData*> KReportDocument::sections() const
                 secs << g->groupFooter;
             }
         }
-        if (m_detailSection->detailSection)
-            secs << m_detailSection->detailSection;
+        if (d->detailSection->detailSection)
+            secs << d->detailSection->detailSection;
     }
 
     return secs;
@@ -281,40 +287,40 @@ KReportSectionData* KReportDocument::section(KReportSectionData::Type type) cons
     KReportSectionData *sec;
     switch (type) {
     case KReportSectionData::Type::PageHeaderAny:
-        sec = m_pageHeaderAny;
+        sec = d->pageHeaderAny;
         break;
     case KReportSectionData::Type::PageHeaderEven:
-        sec = m_pageHeaderEven;
+        sec = d->pageHeaderEven;
         break;
     case KReportSectionData::Type::PageHeaderOdd:
-        sec = m_pageHeaderOdd;
+        sec = d->pageHeaderOdd;
         break;
     case KReportSectionData::Type::PageHeaderFirst:
-        sec = m_pageHeaderFirst;
+        sec = d->pageHeaderFirst;
         break;
     case KReportSectionData::Type::PageHeaderLast:
-        sec = m_pageHeaderLast;
+        sec = d->pageHeaderLast;
         break;
     case KReportSectionData::Type::PageFooterAny:
-        sec = m_pageFooterAny;
+        sec = d->pageFooterAny;
         break;
     case KReportSectionData::Type::PageFooterEven:
-        sec = m_pageFooterEven;
+        sec = d->pageFooterEven;
         break;
     case KReportSectionData::Type::PageFooterOdd:
-        sec = m_pageFooterOdd;
+        sec = d->pageFooterOdd;
         break;
     case KReportSectionData::Type::PageFooterFirst:
-        sec = m_pageFooterFirst;
+        sec = d->pageFooterFirst;
         break;
     case KReportSectionData::Type::PageFooterLast:
-        sec = m_pageFooterLast;
+        sec = d->pageFooterLast;
         break;
     case KReportSectionData::Type::ReportHeader:
-        sec = m_reportHeader;
+        sec = d->reportHeader;
         break;
     case KReportSectionData::Type::ReportFooter:
-        sec = m_reportFooter;
+        sec = d->reportFooter;
         break;
     default:
         sec = nullptr;
@@ -386,3 +392,9 @@ void KReportDocument::setLabelType(const QString& label)
 {
     d->labelType = label;
 }
+
+KReportDetailSectionData * KReportDocument::detail() const
+{
+    return d->detailSection;
+}
+

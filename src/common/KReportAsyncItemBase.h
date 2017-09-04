@@ -26,11 +26,17 @@ class KREPORT_EXPORT KReportAsyncItemBase : public KReportItemBase
 {
     Q_OBJECT
 public:
+    KReportAsyncItemBase();
+    ~KReportAsyncItemBase();
     int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset, const QVariant &data, KReportScriptHandler *script) override = 0;
     virtual QVariant realItemData(const QVariant& itemData) const;
 
 Q_SIGNALS:
     void finishedRendering();
+    
+private:
+    class Private;
+    Private * const d;
 };
 
 #endif // KREPORTASYNCITEMBASE_H

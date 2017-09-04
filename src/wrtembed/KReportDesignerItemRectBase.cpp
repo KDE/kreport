@@ -33,6 +33,8 @@ public:
     ~Private();
     
     int grabAction = 0;
+    int dpiX = KReportPrivate::dpiX();
+    int dpiY = KReportPrivate::dpiY();
 };
 
 KReportDesignerItemRectBase::Private::Private()
@@ -46,12 +48,7 @@ KReportDesignerItemRectBase::Private::~Private()
 KReportDesignerItemRectBase::KReportDesignerItemRectBase(KReportDesigner *r, KReportItemBase *b)
         : QGraphicsRectItem(), KReportDesignerItemBase(r, b), d(new KReportDesignerItemRectBase::Private)
 {
-    m_dpiX = KReportPrivate::dpiX();
-    m_dpiY = KReportPrivate::dpiY();
-
-    d->grabAction = 0;
     setAcceptHoverEvents(true);
-
     setFlags(ItemIsSelectable | ItemIsMovable | ItemSendsGeometryChanges);
 }
 
@@ -394,4 +391,14 @@ void KReportDesignerItemBase::updateRenderText(const QString &itemDataSource, co
             setRenderText(dataSourceAndObjectTypeName(itemDataSource, itemType));
         }
     }
+}
+
+int KReportDesignerItemRectBase::dpiX() const
+{
+    return d->dpiX;
+}
+
+int KReportDesignerItemRectBase::dpiY() const
+{
+    return d->dpiY;
 }

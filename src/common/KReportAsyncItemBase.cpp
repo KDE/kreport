@@ -19,6 +19,22 @@
 
 #include "KReportAsyncItemBase.h"
 
+class Q_DECL_HIDDEN KReportAsyncItemBase::Private
+{
+public:
+    bool dummy = true;
+};
+
+KReportAsyncItemBase::KReportAsyncItemBase() : d(new Private)
+{
+}
+
+KReportAsyncItemBase::~KReportAsyncItemBase()
+{
+    delete d;
+}
+
+
 QVariant KReportAsyncItemBase::realItemData(const QVariant& itemData) const
 {
     return itemData;

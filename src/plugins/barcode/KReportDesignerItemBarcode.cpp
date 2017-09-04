@@ -51,7 +51,7 @@ KReportDesignerItemBarcode::KReportDesignerItemBarcode(KReportDesigner * rw, QGr
 {
     Q_UNUSED(pos);
     init(scene);
-    setSceneRect(properRect(*rw, m_minWidthTotal*m_dpiX, m_minHeight*m_dpiY));
+    setSceneRect(properRect(*rw, m_minWidthTotal*dpiX(), m_minHeight*dpiY()));
     nameProperty()->setValue(designer()->suggestEntityName(typeName()));
 }
 

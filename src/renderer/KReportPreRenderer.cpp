@@ -91,32 +91,32 @@ void KReportPreRendererPrivate::createNewPage()
 
     m_yOffset = m_topMargin;
 
-    if (m_pageCounter == 1 && m_reportDocument->m_pageHeaderFirst)
-        renderSection(*(m_reportDocument->m_pageHeaderFirst));
-    else if (lastPage == true && m_reportDocument->m_pageHeaderLast)
-        renderSection(*(m_reportDocument->m_pageHeaderLast));
-    else if ((m_pageCounter % 2) == 1 && m_reportDocument->m_pageHeaderOdd)
-        renderSection(*(m_reportDocument->m_pageHeaderOdd));
-    else if ((m_pageCounter % 2) == 0 && m_reportDocument->m_pageHeaderAny)
-        renderSection(*(m_reportDocument->m_pageHeaderAny));
-    else if (m_reportDocument->m_pageHeaderAny)
-        renderSection(*(m_reportDocument->m_pageHeaderAny));
+    if (m_pageCounter == 1 && m_reportDocument->section(KReportSectionData::Type::PageHeaderFirst))
+        renderSection(*(m_reportDocument->section(KReportSectionData::Type::PageHeaderFirst)));
+    else if (lastPage == true && m_reportDocument->section(KReportSectionData::Type::PageHeaderLast))
+        renderSection(*(m_reportDocument->section(KReportSectionData::Type::PageHeaderLast)));
+    else if ((m_pageCounter % 2) == 1 && m_reportDocument->section(KReportSectionData::Type::PageHeaderOdd))
+        renderSection(*(m_reportDocument->section(KReportSectionData::Type::PageHeaderOdd)));
+    else if ((m_pageCounter % 2) == 0 && m_reportDocument->section(KReportSectionData::Type::PageHeaderEven))
+        renderSection(*(m_reportDocument->section(KReportSectionData::Type::PageHeaderEven)));
+    else if (m_reportDocument->section(KReportSectionData::Type::PageHeaderAny))
+        renderSection(*(m_reportDocument->section(KReportSectionData::Type::PageHeaderAny)));
 }
 
 qreal KReportPreRendererPrivate::finishCurPageSize(bool lastPage)
 {
     qreal retval = 0.0;
 
-    if (lastPage && m_reportDocument->m_pageFooterLast)
-        retval = renderSectionSize(* (m_reportDocument->m_pageFooterLast));
-    else if (m_pageCounter == 1 && m_reportDocument->m_pageFooterFirst)
-        retval = renderSectionSize(* (m_reportDocument->m_pageFooterFirst));
-    else if ((m_pageCounter % 2) == 1 && m_reportDocument->m_pageFooterOdd)
-        retval = renderSectionSize(* (m_reportDocument->m_pageFooterOdd));
-    else if ((m_pageCounter % 2) == 0 && m_reportDocument->m_pageFooterEven)
-        retval = renderSectionSize(* (m_reportDocument->m_pageFooterEven));
-    else if (m_reportDocument->m_pageFooterAny)
-        retval = renderSectionSize(* (m_reportDocument->m_pageFooterAny));
+    if (lastPage && m_reportDocument->section(KReportSectionData::Type::PageFooterLast))
+        retval = renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterLast)));
+    else if (m_pageCounter == 1 && m_reportDocument->section(KReportSectionData::Type::PageFooterFirst))
+        retval = renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterFirst)));
+    else if ((m_pageCounter % 2) == 1 && m_reportDocument->section(KReportSectionData::Type::PageFooterOdd))
+        retval = renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterOdd)));
+    else if ((m_pageCounter % 2) == 0 && m_reportDocument->section(KReportSectionData::Type::PageFooterEven))
+        retval = renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterEven)));
+    else if (m_reportDocument->section(KReportSectionData::Type::PageFooterAny))
+        retval = renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterAny)));
 
     //kreportDebug() << retval;
     return retval;
@@ -129,26 +129,26 @@ qreal KReportPreRendererPrivate::finishCurPage(bool lastPage)
     qreal retval = 0.0;
     //kreportDebug() << offset;
 
-    if (lastPage && m_reportDocument->m_pageFooterLast) {
+    if (lastPage && m_reportDocument->section(KReportSectionData::Type::PageFooterLast)) {
         //kreportDebug() << "Last Footer";
-        m_yOffset = offset - renderSectionSize(* (m_reportDocument->m_pageFooterLast));
-        retval = renderSection(* (m_reportDocument->m_pageFooterLast));
-    } else if (m_pageCounter == 1 && m_reportDocument->m_pageFooterFirst) {
+        m_yOffset = offset - renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterLast)));
+        retval = renderSection(* (m_reportDocument->section(KReportSectionData::Type::PageFooterLast)));
+    } else if (m_pageCounter == 1 && m_reportDocument->section(KReportSectionData::Type::PageFooterFirst)) {
         //kreportDebug() << "First Footer";
-        m_yOffset = offset - renderSectionSize(* (m_reportDocument->m_pageFooterFirst));
-        retval = renderSection(* (m_reportDocument->m_pageFooterFirst));
-    } else if ((m_pageCounter % 2) == 1 && m_reportDocument->m_pageFooterOdd) {
+        m_yOffset = offset - renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterLast)));
+        retval = renderSection(* (m_reportDocument->section(KReportSectionData::Type::PageFooterFirst)));
+    } else if ((m_pageCounter % 2) == 1 && m_reportDocument->section(KReportSectionData::Type::PageFooterOdd)) {
         //kreportDebug() << "Odd Footer";
-        m_yOffset = offset - renderSectionSize(* (m_reportDocument->m_pageFooterOdd));
-        retval = renderSection(* (m_reportDocument->m_pageFooterOdd));
-    } else if ((m_pageCounter % 2) == 0 && m_reportDocument->m_pageFooterEven) {
+        m_yOffset = offset - renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterOdd)));
+        retval = renderSection(* (m_reportDocument->section(KReportSectionData::Type::PageFooterOdd)));
+    } else if ((m_pageCounter % 2) == 0 && m_reportDocument->section(KReportSectionData::Type::PageFooterEven)) {
         //kreportDebug() << "Even Footer";
-        m_yOffset = offset - renderSectionSize(* (m_reportDocument->m_pageFooterEven));
-        retval = renderSection(* (m_reportDocument->m_pageFooterEven));
-    } else if (m_reportDocument->m_pageFooterAny) {
+        m_yOffset = offset - renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterEven)));
+        retval = renderSection(* (m_reportDocument->section(KReportSectionData::Type::PageFooterEven)));
+    } else if (m_reportDocument->section(KReportSectionData::Type::PageFooterAny)) {
         //kreportDebug() << "Any Footer";
-        m_yOffset = offset - renderSectionSize(* (m_reportDocument->m_pageFooterAny));
-        retval = renderSection(* (m_reportDocument->m_pageFooterAny));
+        m_yOffset = offset - renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterAny)));
+        retval = renderSection(* (m_reportDocument->section(KReportSectionData::Type::PageFooterAny)));
     }
 
     return retval;
@@ -472,7 +472,7 @@ bool KReportPreRendererPrivate::generateDocument()
     //kreportDebug() << "Page Size:" << m_maxWidth << m_maxHeight;
 
     m_document->setPageLayout(m_reportDocument->pageLayout());
-    m_dataSource->setSorting(m_reportDocument->m_detailSection->sortedFields);
+    m_dataSource->setSorting(m_reportDocument->detail()->sortedFields);
     if (!m_dataSource->open()) {
         return false;
     }
@@ -515,7 +515,7 @@ bool KReportPreRendererPrivate::generateDocument()
         qreal tmp;
 
         // flip the value around if we are printing landscape
-        if (!m_reportDocument->pageLayout().orientation() == QPageLayout::Portrait) {
+        if (!(m_reportDocument->pageLayout().orientation() == QPageLayout::Portrait)) {
             w = (label.height() / 100.0);
             wg = (label.yGap() / 100.0);
             h = (label.width() / 100.0);
@@ -524,7 +524,7 @@ bool KReportPreRendererPrivate::generateDocument()
             numRows = label.columns();
         }
 
-        KReportDetailSectionData * detailData = m_reportDocument->m_detailSection;
+        KReportDetailSectionData * detailData = m_reportDocument->detail();
         if (detailData->detailSection) {
             KReportDataSource *mydata = m_dataSource;
 
@@ -558,19 +558,19 @@ bool KReportPreRendererPrivate::generateDocument()
 
     } else {
         // Normal Print Run
-        if (m_reportDocument->m_reportHeader) {
-            renderSection(*(m_reportDocument->m_reportHeader));
+        if (m_reportDocument->section(KReportSectionData::Type::ReportHeader)) {
+            renderSection(*(m_reportDocument->section(KReportSectionData::Type::ReportHeader)));
         }
 
-        if (m_reportDocument->m_detailSection) {
-            renderDetailSection(m_reportDocument->m_detailSection);
+        if (m_reportDocument->detail()) {
+            renderDetailSection(m_reportDocument->detail());
         }
 
-        if (m_reportDocument->m_reportFooter) {
-            if (renderSectionSize(*(m_reportDocument->m_reportFooter)) + finishCurPageSize(true) + m_bottomMargin + m_yOffset >= m_maxHeight) {
+        if (m_reportDocument->section(KReportSectionData::Type::ReportFooter)) {
+            if (renderSectionSize(*(m_reportDocument->section(KReportSectionData::Type::ReportFooter))) + finishCurPageSize(true) + m_bottomMargin + m_yOffset >= m_maxHeight) {
                 createNewPage();
             }
-            renderSection(*(m_reportDocument->m_reportFooter));
+            renderSection(*(m_reportDocument->section(KReportSectionData::Type::ReportFooter)));
         }
     }
     finishCurPage(true);

@@ -81,9 +81,7 @@ public:
 
     bool externalData() const;
 
-    KReportDetailSectionData* detail() const {
-        return m_detailSection;
-    }
+    KReportDetailSectionData* detail() const;
 
     void setName(const QString&n);
     QString name() const;
@@ -94,30 +92,8 @@ public:
     
     QString pageSize();
     void setPageSize(const QString &size);
-    
-protected:
 
-
-    KReportSectionData * m_pageHeaderFirst;
-    KReportSectionData * m_pageHeaderOdd;
-    KReportSectionData * m_pageHeaderEven;
-    KReportSectionData * m_pageHeaderLast;
-    KReportSectionData * m_pageHeaderAny;
-
-    KReportSectionData * m_reportHeader;
-    KReportSectionData * m_reportFooter;
-
-    KReportSectionData * m_pageFooterFirst;
-    KReportSectionData * m_pageFooterOdd;
-    KReportSectionData * m_pageFooterEven;
-    KReportSectionData * m_pageFooterLast;
-    KReportSectionData * m_pageFooterAny;
-
-    KReportDetailSectionData* m_detailSection;
-
-private:
-    void init();
-    
+private:    
     friend class KReportPreRendererPrivate;
     friend class KReportPreRenderer;
 #ifdef KREPORT_SCRIPTING
