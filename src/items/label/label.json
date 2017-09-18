@@ -69,7 +69,6 @@
         "Name[tr]": "Etiket",
         "Name[uk]": "Мітка",
         "Name[x-test]": "xxLabelxx",
-        "Name[zh_CN]": "标签",
         "ServiceTypes": [
             "KReport/Element"
         ],

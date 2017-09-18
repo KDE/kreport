@@ -68,7 +68,6 @@
         "Name[tr]": "Resim",
         "Name[uk]": "Зображення",
         "Name[x-test]": "xxImagexx",
-        "Name[zh_CN]": "图像",
         "ServiceTypes": [
             "KReport/Element"
         ],
