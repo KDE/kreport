@@ -68,6 +68,7 @@
         "Name[tr]": "Grafik",
         "Name[uk]": "Діаграма",
         "Name[x-test]": "xxChartxx",
+        "Name[zh_CN]": "图表",
         "ServiceTypes": [
             "KReport/Element"
         ],
