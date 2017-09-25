@@ -49,8 +49,8 @@ public:
 
     ~KReportPreRenderer() override;
 
-    //! Sets source data to @a data, takes ownership
-    void setSourceData(KReportDataSource* dataSource);
+    //! Sets data source to @a data, takes ownership
+    void setDataSource(KReportDataSource* dataSource);
 
     //!Sets the script source to @a source, does NOT take ownership as it may be an application window
     void setScriptSource(KReportScriptSource* source);

@@ -652,7 +652,7 @@ bool KReportPreRenderer::generateDocument()
     return d->m_document;
 }
 
-void KReportPreRenderer::setSourceData(KReportDataSource *dataSource)
+void KReportPreRenderer::setDataSource(KReportDataSource *dataSource)
 {
     if (d && dataSource != d->m_dataSource) {
         delete d->m_dataSource;
