@@ -198,9 +198,8 @@ target_link_libraries(KReport
 target_link_libraries(KReportUtilsPrivate
     PUBLIC
         Qt5::Widgets
-    PRIVATE
-        KF5::WidgetsAddons
         KF5::ConfigGui
+        KF5::WidgetsAddons
     )
 
 ecm_setup_version(${PROJECT_VERSION}
