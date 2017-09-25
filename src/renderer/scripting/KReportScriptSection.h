@@ -66,10 +66,10 @@ public Q_SLOTS:
     QString name() const;
 
     //! @return an object in the section, by number
-    QObject* objectByNumber(int);
+    QObject* objectAt(int);
 
     //! @return an object in the section, by name
-    QObject* objectByName(const QString&);
+    QObject* objectForName(const QString&);
 
     //! Assigns a user object to this section
     void initialize(const QJSValue &s);

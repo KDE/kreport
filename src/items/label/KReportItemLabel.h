@@ -43,26 +43,25 @@ public:
     int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset, const QVariant &data, KReportScriptHandler *script) override;
 
 protected:
+    KProperty *text;
+    KProperty *horizontalAlignment;
+    KProperty *verticalAlignment;
+    KProperty *font;
+    KProperty *foregroundColor;
+    KProperty *backgroundColor;
+    KProperty *backgroundOpacity;
+    KProperty *lineColor;
+    KProperty *lineWeight;
+    KProperty *lineStyle;
 
-    KProperty *m_text;
-    KProperty *m_horizontalAlignment;
-    KProperty *m_verticalAlignment;
-    KProperty *m_font;
-    KProperty *m_foregroundColor;
-    KProperty *m_backgroundColor;
-    KProperty *m_backgroundOpacity;
-    KProperty *m_lineColor;
-    KProperty *m_lineWeight;
-    KProperty *m_lineStyle;
-
-    QString text() const;
-    QFont font() const {
-        return m_font->value().value<QFont>();
+    QString textValue() const;
+    QFont fontValue() const {
+        return font->value().value<QFont>();
     }
     Qt::Alignment textFlags() const;
     void setText(const QString&);
-    KReportTextStyleData textStyle() const;
-    KReportLineStyle lineStyle() const;
+    KReportTextStyleData textStyleValue() const;
+    KReportLineStyle lineStyleValue() const;
 
 private:
     void createProperties() override;

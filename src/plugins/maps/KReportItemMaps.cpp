@@ -38,14 +38,14 @@ KReportItemMaps::KReportItemMaps(const QDomNode &element)
     : KReportItemMaps()
 {
     nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
-    m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
+    controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
     setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
-    m_latitudeProperty->setValue(element.toElement().attribute(QLatin1String("report:latitude")).toDouble());
-    m_longitudeProperty->setValue(element.toElement().attribute(QLatin1String("report:longitude")).toDouble());
-    m_zoomProperty->setValue(element.toElement().attribute(QLatin1String("report:zoom")).toInt());
+    latitudeProperty->setValue(element.toElement().attribute(QLatin1String("report:latitude")).toDouble());
+    longitudeProperty->setValue(element.toElement().attribute(QLatin1String("report:longitude")).toDouble());
+    zoomProperty->setValue(element.toElement().attribute(QLatin1String("report:zoom")).toInt());
     QString themeId(element.toElement().attribute(QLatin1String("report:theme")));
-    themeId = themeId.isEmpty() ? m_themeManager.mapThemeIds()[0] : themeId;
-    m_themeProperty->setValue(themeId);
+    themeId = themeId.isEmpty() ? themeManager.mapThemeIds()[0] : themeId;
+    themeProperty->setValue(themeId);
 
     parseReportRect(element.toElement());
 }
@@ -56,51 +56,51 @@ KReportItemMaps::~KReportItemMaps()
 
 void KReportItemMaps::createProperties()
 {
-    m_controlSource = new KProperty("item-data-source", new KPropertyListData, QVariant(), tr("Data Source"));
+    controlSource = new KProperty("item-data-source", new KPropertyListData, QVariant(), tr("Data Source"));
 
-    m_latitudeProperty = new KProperty("latitude", 0.0, tr("Latitude"), QString(), KProperty::Double);
-    m_latitudeProperty->setOption("min", -90);
-    m_latitudeProperty->setOption("max", 90);
-    m_latitudeProperty->setOption("unit", QString::fromUtf8("°"));
-    m_latitudeProperty->setOption("precision", 7);
+    latitudeProperty = new KProperty("latitude", 0.0, tr("Latitude"), QString(), KProperty::Double);
+    latitudeProperty->setOption("min", -90);
+    latitudeProperty->setOption("max", 90);
+    latitudeProperty->setOption("unit", QString::fromUtf8("°"));
+    latitudeProperty->setOption("precision", 7);
 
-    m_longitudeProperty = new KProperty("longitude", 0.0, tr("Longitude"), QString(), KProperty::Double);
-    m_longitudeProperty->setOption("min", -180);
-    m_longitudeProperty->setOption("max", 180);
-    m_longitudeProperty->setOption("unit", QString::fromUtf8("°"));
-    m_longitudeProperty->setOption("precision", 7);
+    longitudeProperty = new KProperty("longitude", 0.0, tr("Longitude"), QString(), KProperty::Double);
+    longitudeProperty->setOption("min", -180);
+    longitudeProperty->setOption("max", 180);
+    longitudeProperty->setOption("unit", QString::fromUtf8("°"));
+    longitudeProperty->setOption("precision", 7);
 
-    m_zoomProperty     = new KProperty("zoom", 1000, tr("Zoom") );
-    m_zoomProperty->setOption("min", 0);
-    m_zoomProperty->setOption("max", 4000);
-    m_zoomProperty->setOption("step", 100);
-    m_zoomProperty->setOption("slider", true);
+    zoomProperty     = new KProperty("zoom", 1000, tr("Zoom") );
+    zoomProperty->setOption("min", 0);
+    zoomProperty->setOption("max", 4000);
+    zoomProperty->setOption("step", 100);
+    zoomProperty->setOption("slider", true);
 
-    QStringList mapThemIds(m_themeManager.mapThemeIds());
+    QStringList mapThemIds(themeManager.mapThemeIds());
 
-    m_themeProperty = new KProperty("theme", new KPropertyListData(mapThemIds, mapThemIds),
+    themeProperty = new KProperty("theme", new KPropertyListData(mapThemIds, mapThemIds),
                                     QVariant(mapThemIds[1]), tr("Theme"));
 
     if (mapThemIds.contains(QLatin1String("earth/srtm/srtm.dgml"))) {
-        m_themeProperty->setValue(QLatin1String("earth/srtm/srtm.dgml"), KProperty::DefaultValueOptions & ~KProperty::ValueOptions(KProperty::ValueOption::RememberOld));
+        themeProperty->setValue(QLatin1String("earth/srtm/srtm.dgml"), KProperty::DefaultValueOptions & ~KProperty::ValueOptions(KProperty::ValueOption::RememberOld));
     }
 
-    propertySet()->addProperty(m_controlSource);
-    propertySet()->addProperty(m_latitudeProperty);
-    propertySet()->addProperty(m_longitudeProperty);
-    propertySet()->addProperty(m_zoomProperty);
-    propertySet()->addProperty(m_themeProperty);
+    propertySet()->addProperty(controlSource);
+    propertySet()->addProperty(latitudeProperty);
+    propertySet()->addProperty(longitudeProperty);
+    propertySet()->addProperty(zoomProperty);
+    propertySet()->addProperty(themeProperty);
 }
 
 
 void KReportItemMaps::setColumn(const QString &c)
 {
-    m_controlSource->setValue(c);
+    controlSource->setValue(c);
 }
 
 QString KReportItemMaps::itemDataSource() const
 {
-    return m_controlSource->value().toString();
+    return controlSource->value().toString();
 }
 
 QString KReportItemMaps::typeName() const
@@ -114,27 +114,26 @@ int KReportItemMaps::renderSimpleData(OROPage *page, OROSection *section, const 
     Q_UNUSED(script)
 
     deserializeData(data);
-    m_pageId = page;
-    m_sectionId = section;
-    m_offset = offset;
+    pageId = page;
+    sectionId = section;
+    this->offset = offset;
 
+    oroPicture = new OROPicture();
+    oroPicture->setPosition(scenePosition(position()) + offset);
+    oroPicture->setSize(sceneSize(size()));
 
-    m_oroPicture = new OROPicture();
-    m_oroPicture->setPosition(scenePosition(position()) + m_offset);
-    m_oroPicture->setSize(sceneSize(size()));
-
-    if (m_pageId) {
-        m_pageId->insertPrimitive(m_oroPicture);
+    if (pageId) {
+        pageId->insertPrimitive(oroPicture);
     }
 
-    if (m_sectionId) {
-        OROPicture *i2 = dynamic_cast<OROPicture*>(m_oroPicture->clone());
+    if (sectionId) {
+        OROPicture *i2 = dynamic_cast<OROPicture*>(oroPicture->clone());
         if (i2) {
             i2->setPosition(scenePosition(position()));
         }
     }
 
-    m_mapRenderer.renderJob(this);
+    mapRenderer.renderJob(this);
 
     return 0; //Item doesn't stretch the section height
 }
@@ -144,13 +143,13 @@ void KReportItemMaps::deserializeData(const QVariant& serialized)
     //kreportpluginDebug() << "Map data for this record is" << serialized;
     QStringList dataList = serialized.toString().split(QLatin1Char(';'));
     if (dataList.size() == 3) {
-        m_latitude = dataList[0].toDouble();
-        m_longtitude = dataList[1].toDouble();
-        m_zoom = dataList[2].toInt();
+        latitude = dataList[0].toDouble();
+        longtitude = dataList[1].toDouble();
+        zoom = dataList[2].toInt();
     } else {
-        m_latitude = m_latitudeProperty->value().toReal();
-        m_longtitude = m_longitudeProperty->value().toReal();
-        m_zoom = m_zoomProperty->value().toInt();
+        latitude = latitudeProperty->value().toReal();
+        longtitude = longitudeProperty->value().toReal();
+        zoom = zoomProperty->value().toInt();
     }
 }
 
@@ -161,27 +160,27 @@ void KReportItemMaps::renderFinished()
 
 OROPicture* KReportItemMaps::oroImage()
 {
-    return m_oroPicture;
+    return oroPicture;
 }
 
-qreal KReportItemMaps::longtitude() const
+qreal KReportItemMaps::longtitudeValue() const
 {
-    return m_longtitude;
+    return longtitude;
 }
 
-qreal KReportItemMaps::latitude() const
+qreal KReportItemMaps::latitudeValue() const
 {
-    return m_latitude;
+    return latitude;
 }
 
-int KReportItemMaps::zoom() const
+int KReportItemMaps::zoomValue() const
 {
-    return m_zoom;
+    return zoom;
 }
 
 QString KReportItemMaps::themeId() const
 {
-    return m_themeProperty->value().toString();
+    return themeProperty->value().toString();
 }
 
 QVariant KReportItemMaps::realItemData(const QVariant& itemData) const
@@ -198,21 +197,21 @@ QVariant KReportItemMaps::realItemData(const QVariant& itemData) const
     } else if (dataList.size() == 2) {
         lat = dataList[0].toDouble();
         lon = dataList[1].toDouble();
-        zoom = m_zoomProperty->value().toInt();
+        zoom = zoomProperty->value().toInt();
     } else {
-        lat = m_latitudeProperty->value().toReal();
-        lon = m_longitudeProperty->value().toReal();
-        zoom = m_zoomProperty->value().toInt();
+        lat = latitudeProperty->value().toReal();
+        lon = longitudeProperty->value().toReal();
+        zoom = zoomProperty->value().toInt();
     }
 
-    if (m_longDataSetFromScript) {
-        lon = m_longtitude;
+    if (longDataSetFromScript) {
+        lon = longtitude;
     }
-    if (m_latDataSetFromScript) {
-        lat = m_latitude;
+    if (latDataSetFromScript) {
+        lat = latitude;
     }
-    if (m_zoomDataSetFromScript) {
-        zoom = m_zoom;
+    if (zoomDataSetFromScript) {
+        zoom = zoom;
     }
     return QString(QLatin1String("%1;%2;%3")).arg(lat).arg(lon).arg(zoom);
 }

@@ -45,33 +45,32 @@ public:
     QString itemDataSource() const override;
 
 protected:
+    KProperty* controlSource;
+    KProperty* horizontalAlignment;
+    KProperty* verticalAlignment;
+    KProperty* font;
+    KProperty* foregroundColor;
+    KProperty* backgroundColor;
+    KProperty* backgroundOpacity;
+    KProperty* lineColor;
+    KProperty* lineWeight;
+    KProperty* lineStyle;
+    KProperty* itemValue;
 
-    KProperty* m_controlSource;
-    KProperty* m_horizontalAlignment;
-    KProperty* m_verticalAlignment;
-    KProperty* m_font;
-    KProperty* m_foregroundColor;
-    KProperty* m_backgroundColor;
-    KProperty* m_backgroundOpacity;
-    KProperty* m_lineColor;
-    KProperty* m_lineWeight;
-    KProperty* m_lineStyle;
-    KProperty* m_itemValue;
 
-
-    qreal m_bottomPadding;
+    qreal bottomPadding;
 
     Qt::Alignment textFlags() const;
-    QFont font() const {
-        return m_font->value().value<QFont>();
+    QFont fontValue() const {
+        return font->value().value<QFont>();
     }
 
-    void setBottomPadding(qreal bp);
-    qreal bottomPadding() const;
+    void setBottomPaddingValue(qreal bp);
+    qreal bottomPaddingValue() const;
 
 
-    KReportTextStyleData textStyle() const;
-    KReportLineStyle lineStyle() const;
+    KReportTextStyleData textStyleValue() const;
+    KReportLineStyle lineStyleValue() const;
 
 private:
     void createProperties() override;

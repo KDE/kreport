@@ -35,8 +35,8 @@ KReportItemImage::KReportItemImage(const QDomNode & element)
     : KReportItemImage()
 {
     nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
-    m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
-    m_resizeMode->setValue(element.toElement().attribute(QLatin1String("report:resize-mode"), QLatin1String("stretch")));
+    controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
+    resizeMode->setValue(element.toElement().attribute(QLatin1String("report:resize-mode"), QLatin1String("stretch")));
     setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
 
     parseReportRect(element.toElement());
@@ -69,7 +69,7 @@ bool KReportItemImage::isInline() const
 
 QByteArray KReportItemImage::inlineImageData() const
 {
-    QPixmap pixmap = m_staticImage->value().value<QPixmap>();
+    QPixmap pixmap = staticImage->value().value<QPixmap>();
     QByteArray ba;
     QBuffer buffer(&ba);
     buffer.open(QIODevice::ReadWrite);
@@ -84,56 +84,56 @@ void KReportItemImage::setInlineImageData(const QByteArray &dat, const QString &
     if (!fn.isEmpty()) {
         QPixmap pix(fn);
         if (!pix.isNull())
-            m_staticImage->setValue(pix);
+            staticImage->setValue(pix);
         else {
             QPixmap blank(1, 1);
             blank.fill();
-            m_staticImage->setValue(blank);
+            staticImage->setValue(blank);
         }
     } else {
         const QByteArray binaryStream(QByteArray::fromBase64(dat));
         const QPixmap pix(QPixmap::fromImage(QImage::fromData(binaryStream), Qt::ColorOnly));
-        m_staticImage->setValue(pix);
+        staticImage->setValue(pix);
     }
 
 }
 
 QString KReportItemImage::mode() const
 {
-    return m_resizeMode->value().toString();
+    return resizeMode->value().toString();
 }
 
 void KReportItemImage::setMode(const QString &m)
 {
     if (mode() != m) {
-        m_resizeMode->setValue(m);
+        resizeMode->setValue(m);
     }
 }
 
 void KReportItemImage::createProperties()
 {
-    m_controlSource = new KProperty("item-data-source", new KPropertyListData, QVariant(), tr("Data Source"));
+    controlSource = new KProperty("item-data-source", new KPropertyListData, QVariant(), tr("Data Source"));
 
     KPropertyListData *listData = new KPropertyListData(
         { QLatin1String("clip"), QLatin1String("stretch") },
         QVariantList{ tr("Clip"), tr("Stretch") });
-    m_resizeMode = new KProperty("resize-mode", listData, QLatin1String("clip"), tr("Resize Mode"));
-    m_staticImage = new KProperty("static-image", QPixmap(), tr("Value"), tr("Value used if not bound to a field"));
+    resizeMode = new KProperty("resize-mode", listData, QLatin1String("clip"), tr("Resize Mode"));
+    staticImage = new KProperty("static-image", QPixmap(), tr("Value"), tr("Value used if not bound to a field"));
 
-    propertySet()->addProperty(m_controlSource);
-    propertySet()->addProperty(m_resizeMode);
-    propertySet()->addProperty(m_staticImage);
+    propertySet()->addProperty(controlSource);
+    propertySet()->addProperty(resizeMode);
+    propertySet()->addProperty(staticImage);
 }
 
 
 void KReportItemImage::setColumn(const QString &c)
 {
-    m_controlSource->setValue(c);
+    controlSource->setValue(c);
 }
 
 QString KReportItemImage::itemDataSource() const
 {
-    return m_controlSource->value().toString();
+    return controlSource->value().toString();
 }
 
 QString KReportItemImage::typeName() const

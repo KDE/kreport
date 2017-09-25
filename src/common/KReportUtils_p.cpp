@@ -51,8 +51,8 @@ class KReportDpiSingleton
 public:
     KReportDpiSingleton();
 
-    int m_dpiX;
-    int m_dpiY;
+    int dpiX;
+    int dpiY;
 };
 
 KReportDpiSingleton::KReportDpiSingleton()
@@ -61,16 +61,16 @@ KReportDpiSingleton::KReportDpiSingleton()
     // but we have no widget here (and moving this to KoView wouldn't allow
     // using this from the document easily).
 #ifdef Q_WS_X11
-    m_dpiX = QX11Info::appDpiX();
-    m_dpiY = QX11Info::appDpiY();
+    dpiX = QX11Info::appDpiX();
+    dpiY = QX11Info::appDpiY();
 #else
     QDesktopWidget *w = QApplication::desktop();
     if (w) {
-        m_dpiX = w->logicalDpiX();
-        m_dpiY = w->logicalDpiY();
+        dpiX = w->logicalDpiX();
+        dpiY = w->logicalDpiY();
     } else {
-        m_dpiX = 96;
-        m_dpiY = 96;
+        dpiX = 96;
+        dpiY = 96;
     }
 #endif
 }
@@ -321,12 +321,12 @@ bool setupGlobalIconTheme()
 
 int dpiX()
 {
-    return s_instance->m_dpiX;
+    return s_instance->dpiX;
 }
 
 int dpiY()
 {
-    return s_instance->m_dpiY;
+    return s_instance->dpiY;
 }
 
 PageLayout::PageLayout() : QPageLayout(QPageSize(QPageSize::A4), QPageLayout::Portrait, QMarginsF(0,0,0,0))

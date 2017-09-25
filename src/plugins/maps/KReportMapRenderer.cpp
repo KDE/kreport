@@ -57,14 +57,14 @@ KReportMapRenderer::~KReportMapRenderer()
 void KReportMapRenderer::renderJob(KReportItemMaps* reportItemMaps)
 {
     m_currentJob = reportItemMaps;
-    int zoom = m_currentJob->zoom();
+    int zoom = m_currentJob->zoomValue();
     //kreportpluginDebug() << "Map Renderer rendering" << m_currentJob->longtitude() << m_currentJob->latitude();
 
     m_marble.setMapThemeId(m_currentJob->themeId());
     //some themes enable overview map, and this must be disabled after theme switch.
     m_marble.setShowOverviewMap(false);
     m_marble.setSize(KReportItemBase::sceneSize(m_currentJob->size()).toSize());
-    m_marble.centerOn(m_currentJob->longtitude(), m_currentJob->latitude());
+    m_marble.centerOn(m_currentJob->longtitudeValue(), m_currentJob->latitudeValue());
     m_marble.setRadius(pow(M_E, (zoom / 200.0)));
     
     // Create a painter that will do the painting.

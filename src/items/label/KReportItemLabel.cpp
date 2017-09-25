@@ -35,10 +35,10 @@ KReportItemLabel::KReportItemLabel(const QDomNode & element)
     : KReportItemLabel()
 {
     nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
-    m_text->setValue(element.toElement().attribute(QLatin1String("report:caption")));
+    text->setValue(element.toElement().attribute(QLatin1String("report:caption")));
     setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
-    m_horizontalAlignment->setValue(element.toElement().attribute(QLatin1String("report:horizontal-align")));
-    m_verticalAlignment->setValue(element.toElement().attribute(QLatin1String("report:vertical-align")));
+    horizontalAlignment->setValue(element.toElement().attribute(QLatin1String("report:horizontal-align")));
+    verticalAlignment->setValue(element.toElement().attribute(QLatin1String("report:vertical-align")));
 
     parseReportRect(element.toElement());
 
@@ -52,18 +52,18 @@ KReportItemLabel::KReportItemLabel(const QDomNode & element)
         if (n == QLatin1String("report:text-style")) {
             KReportTextStyleData ts;
             if (parseReportTextStyleData(node.toElement(), &ts)) {
-                m_backgroundColor->setValue(ts.backgroundColor);
-                m_foregroundColor->setValue(ts.foregroundColor);
-                m_backgroundOpacity->setValue(ts.backgroundOpacity);
-                m_font->setValue(ts.font);
+                backgroundColor->setValue(ts.backgroundColor);
+                foregroundColor->setValue(ts.foregroundColor);
+                backgroundOpacity->setValue(ts.backgroundOpacity);
+                font->setValue(ts.font);
 
             }
         } else if (n == QLatin1String("report:line-style")) {
             KReportLineStyle ls;
             if (parseReportLineStyleData(node.toElement(), &ls)) {
-                m_lineWeight->setValue(ls.weight());
-                m_lineColor->setValue(ls.color());
-                m_lineStyle->setValue(static_cast<int>(ls.penStyle()));
+                lineWeight->setValue(ls.weight());
+                lineColor->setValue(ls.color());
+                lineStyle->setValue(static_cast<int>(ls.penStyle()));
             }
         } else {
             kreportpluginWarning() << "while parsing label element encountered unknown element: " << n;
@@ -75,63 +75,63 @@ KReportItemLabel::~KReportItemLabel()
 {
 }
 
-QString KReportItemLabel::text() const
+QString KReportItemLabel::textValue() const
 {
-    return m_text->value().toString();
+    return text->value().toString();
 }
 
 void KReportItemLabel::setText(const QString& t)
 {
-    m_text->setValue(t);
+    text->setValue(t);
 }
 
 void KReportItemLabel::createProperties()
 {
-    m_text = new KProperty("caption", QLatin1String("Label"), tr("Caption"));
+    text = new KProperty("caption", QLatin1String("Label"), tr("Caption"));
     KPropertyListData *listData = new KPropertyListData(
         { QLatin1String("left"), QLatin1String("center"), QLatin1String("right") },
         QVariantList{ tr("Left"), tr("Center"), tr("Right") });
-    m_horizontalAlignment = new KProperty("horizontal-align", listData, QLatin1String("left"),
+    horizontalAlignment = new KProperty("horizontal-align", listData, QLatin1String("left"),
                                           tr("Horizontal Alignment"));
 
     listData = new KPropertyListData(
         { QLatin1String("top"), QLatin1String("center"), QLatin1String("bottom") },
         QVariantList{ tr("Top"), tr("Center"), tr("Bottom") });
-    m_verticalAlignment = new KProperty("vertical-align", listData, QLatin1String("center"),
+    verticalAlignment = new KProperty("vertical-align", listData, QLatin1String("center"),
                                         tr("Vertical Alignment"));
 
-    m_font = new KProperty("font", QFontDatabase::systemFont(QFontDatabase::GeneralFont), tr("Font"), tr("Font"));
+    font = new KProperty("font", QFontDatabase::systemFont(QFontDatabase::GeneralFont), tr("Font"), tr("Font"));
 
-    m_backgroundColor = new KProperty("background-color", QColor(Qt::white), tr("Background Color"));
-    m_foregroundColor = new KProperty("foreground-color", QColor(Qt::black), tr("Foreground Color"));
+    backgroundColor = new KProperty("background-color", QColor(Qt::white), tr("Background Color"));
+    foregroundColor = new KProperty("foreground-color", QColor(Qt::black), tr("Foreground Color"));
 
-    m_backgroundOpacity = new KProperty("background-opacity", QVariant(0), tr("Background Opacity"));
-    m_backgroundOpacity->setOption("max", 100);
-    m_backgroundOpacity->setOption("min", 0);
-    m_backgroundOpacity->setOption("unit", QLatin1String("%"));
+    backgroundOpacity = new KProperty("background-opacity", QVariant(0), tr("Background Opacity"));
+    backgroundOpacity->setOption("max", 100);
+    backgroundOpacity->setOption("min", 0);
+    backgroundOpacity->setOption("unit", QLatin1String("%"));
 
-    m_lineWeight = new KProperty("line-weight", 1.0, tr("Line Weight"));
-    m_lineWeight->setOption("step", 1.0);
-    m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
-    m_lineStyle = new KProperty("line-style", static_cast<int>(Qt::NoPen), tr("Line Style"), QString(), KProperty::LineStyle);
+    lineWeight = new KProperty("line-weight", 1.0, tr("Line Weight"));
+    lineWeight->setOption("step", 1.0);
+    lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
+    lineStyle = new KProperty("line-style", static_cast<int>(Qt::NoPen), tr("Line Style"), QString(), KProperty::LineStyle);
 
-    propertySet()->addProperty(m_text);
-    propertySet()->addProperty(m_horizontalAlignment);
-    propertySet()->addProperty(m_verticalAlignment);
-    propertySet()->addProperty(m_font);
-    propertySet()->addProperty(m_backgroundColor);
-    propertySet()->addProperty(m_foregroundColor);
-    propertySet()->addProperty(m_backgroundOpacity);
-    propertySet()->addProperty(m_lineWeight);
-    propertySet()->addProperty(m_lineColor);
-    propertySet()->addProperty(m_lineStyle);
+    propertySet()->addProperty(text);
+    propertySet()->addProperty(horizontalAlignment);
+    propertySet()->addProperty(verticalAlignment);
+    propertySet()->addProperty(font);
+    propertySet()->addProperty(backgroundColor);
+    propertySet()->addProperty(foregroundColor);
+    propertySet()->addProperty(backgroundOpacity);
+    propertySet()->addProperty(lineWeight);
+    propertySet()->addProperty(lineColor);
+    propertySet()->addProperty(lineStyle);
 }
 
 Qt::Alignment KReportItemLabel::textFlags() const
 {
     Qt::Alignment align;
     QString t;
-    t = m_horizontalAlignment->value().toString();
+    t = horizontalAlignment->value().toString();
     if (t == QLatin1String("center"))
         align = Qt::AlignHCenter;
     else if (t == QLatin1String("right"))
@@ -139,7 +139,7 @@ Qt::Alignment KReportItemLabel::textFlags() const
     else
         align = Qt::AlignLeft;
 
-    t = m_verticalAlignment->value().toString();
+    t = verticalAlignment->value().toString();
     if (t == QLatin1String("center"))
         align |= Qt::AlignVCenter;
     else if (t == QLatin1String("bottom"))
@@ -150,22 +150,22 @@ Qt::Alignment KReportItemLabel::textFlags() const
     return align;
 }
 
-KReportTextStyleData KReportItemLabel::textStyle() const
+KReportTextStyleData KReportItemLabel::textStyleValue() const
 {
     KReportTextStyleData d;
-    d.backgroundColor = m_backgroundColor->value().value<QColor>();
-    d.foregroundColor = m_foregroundColor->value().value<QColor>();
-    d.font = m_font->value().value<QFont>();
-    d.backgroundOpacity = m_backgroundOpacity->value().toInt();
+    d.backgroundColor = backgroundColor->value().value<QColor>();
+    d.foregroundColor = foregroundColor->value().value<QColor>();
+    d.font = font->value().value<QFont>();
+    d.backgroundOpacity = backgroundOpacity->value().toInt();
     return d;
 }
 
-KReportLineStyle KReportItemLabel::lineStyle() const
+KReportLineStyle KReportItemLabel::lineStyleValue() const
 {
     KReportLineStyle ls;
-    ls.setWeight(m_lineWeight->value().toReal());
-    ls.setColor(m_lineColor->value().value<QColor>());
-    ls.setPenStyle((Qt::PenStyle)m_lineStyle->value().toInt());
+    ls.setWeight(lineWeight->value().toReal());
+    ls.setColor(lineColor->value().value<QColor>());
+    ls.setPenStyle((Qt::PenStyle)lineStyle->value().toInt());
     return ls;
 }
 
@@ -184,11 +184,11 @@ int KReportItemLabel::renderSimpleData(OROPage *page, OROSection *section, const
     OROTextBox * tb = new OROTextBox();
     tb->setPosition(scenePosition(position()) + offset);
     tb->setSize(sceneSize(size()));
-    tb->setFont(font());
-    tb->setText(text());
+    tb->setFont(fontValue());
+    tb->setText(textValue());
     tb->setFlags(textFlags());
-    tb->setTextStyle(textStyle());
-    tb->setLineStyle(lineStyle());
+    tb->setTextStyle(textStyleValue());
+    tb->setLineStyle(lineStyleValue());
 
     if (page) {
         page->insertPrimitive(tb);

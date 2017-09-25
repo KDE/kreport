@@ -45,7 +45,7 @@ void Field::setSource(const QString& s)
 
 int Field::horizontalAlignment() const
 {
-    const QString a = m_field->m_horizontalAlignment->value().toString().toLower();
+    const QString a = m_field->horizontalAlignment->value().toString().toLower();
 
     if (a == QLatin1String("left")) {
         return -1;
@@ -62,23 +62,23 @@ void Field::setHorizonalAlignment(int a)
 {
     switch (a) {
     case -1:
-        m_field->m_horizontalAlignment->setValue(QLatin1String("left"));
+        m_field->horizontalAlignment->setValue(QLatin1String("left"));
         break;
     case 0:
-        m_field->m_horizontalAlignment->setValue(QLatin1String("center"));
+        m_field->horizontalAlignment->setValue(QLatin1String("center"));
         break;
     case 1:
-        m_field->m_horizontalAlignment->setValue(QLatin1String("right"));
+        m_field->horizontalAlignment->setValue(QLatin1String("right"));
         break;
     default:
-        m_field->m_horizontalAlignment->setValue(QLatin1String("left"));
+        m_field->horizontalAlignment->setValue(QLatin1String("left"));
         break;
     }
 }
 
 int Field::verticalAlignment() const
 {
-    const QString a = m_field->m_horizontalAlignment->value().toString().toLower();
+    const QString a = m_field->horizontalAlignment->value().toString().toLower();
 
     if (a == QLatin1String("top")) {
         return -1;
@@ -95,75 +95,75 @@ void Field::setVerticalAlignment(int a)
 {
     switch (a) {
     case -1:
-        m_field->m_verticalAlignment->setValue(QLatin1String("top"));
+        m_field->verticalAlignment->setValue(QLatin1String("top"));
         break;
     case 0:
-        m_field->m_verticalAlignment->setValue(QLatin1String("middle"));
+        m_field->verticalAlignment->setValue(QLatin1String("middle"));
         break;
     case 1:
-        m_field->m_verticalAlignment->setValue(QLatin1String("bottom"));
+        m_field->verticalAlignment->setValue(QLatin1String("bottom"));
         break;
     default:
-        m_field->m_verticalAlignment->setValue(QLatin1String("middle"));
+        m_field->verticalAlignment->setValue(QLatin1String("middle"));
         break;
     }
 }
 
 QColor Field::backgroundColor() const
 {
-    return m_field->m_backgroundColor->value().value<QColor>();
+    return m_field->backgroundColor->value().value<QColor>();
 }
 void Field::setBackgroundColor(const QColor& c)
 {
-    m_field->m_backgroundColor->setValue(c);
+    m_field->backgroundColor->setValue(c);
 }
 
 QColor Field::foregroundColor() const
 {
-    return m_field->m_foregroundColor->value().value<QColor>();
+    return m_field->foregroundColor->value().value<QColor>();
 }
 void Field::setForegroundColor(const QColor& c)
 {
-    m_field->m_foregroundColor->setValue(c);
+    m_field->foregroundColor->setValue(c);
 }
 
 int Field::backgroundOpacity() const
 {
-    return m_field->m_backgroundOpacity->value().toInt();
+    return m_field->backgroundOpacity->value().toInt();
 }
 void Field::setBackgroundOpacity(int o)
 {
-    m_field->m_backgroundOpacity->setValue(o);
+    m_field->backgroundOpacity->setValue(o);
 }
 
 QColor Field::lineColor() const
 {
-    return m_field->m_lineColor->value().value<QColor>();
+    return m_field->lineColor->value().value<QColor>();
 }
 void Field::setLineColor(const QColor& c)
 {
-    m_field->m_lineColor->setValue(c);
+    m_field->lineColor->setValue(c);
 }
 
 int Field::lineWeight() const
 {
-    return m_field->m_lineWeight->value().toInt();
+    return m_field->lineWeight->value().toInt();
 }
 void Field::setLineWeight(int w)
 {
-    m_field->m_lineWeight->setValue(w);
+    m_field->lineWeight->setValue(w);
 }
 
 int Field::lineStyle() const
 {
-    return m_field->m_lineStyle->value().toInt();
+    return m_field->lineStyle->value().toInt();
 }
 void Field::setLineStyle(int s)
 {
     if (s < 0 || s > 5) {
         s = 1;
     }
-    m_field->m_lineStyle->setValue(s);
+    m_field->lineStyle->setValue(s);
 }
 
 QPointF Field::position() const

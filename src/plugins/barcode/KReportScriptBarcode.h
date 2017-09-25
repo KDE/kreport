@@ -36,14 +36,11 @@ public:
     ~Barcode() override;
 
 public Q_SLOTS:
-
-
     /**
      * Get the position of the barcode
      * @return position in points
      */
-    QPointF position();
-
+    QPointF position() const;
 
     /**
      * Sets the position of the barcode in points
@@ -55,7 +52,7 @@ public Q_SLOTS:
      * Get the size of the barcode
      * @return size in points
      */
-    QSizeF size();
+    QSizeF size() const;
 
     /**
      * Set the size of the barcode in points
@@ -70,7 +67,7 @@ public Q_SLOTS:
      * +1 Right
      * @return alignment
     */
-    int horizontalAlignment();
+    int horizontalAlignment() const;
 
     /**
      * Sets the horizontal alignment
@@ -78,26 +75,23 @@ public Q_SLOTS:
      */
     void setHorizonalAlignment(int);
 
-
     /**
      * Get the control source (field name) of the barcode
      * @return control source
      */
-    QString source();
-
+    QString source() const;
 
     /**
      * Set the control source (field name) of the barcode
      * @param controlsource
      */
-    void setSource(const QString&);
-
+    void setSource(const QString &s);
 
     /**
      * Get the barcode format
      * @return format as string
      */
-    QString format();
+    QString format() const;
 
     /**
      * Set the barcode format

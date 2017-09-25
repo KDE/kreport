@@ -43,12 +43,12 @@ QString Text::source() const
 
 void Text::setSource(const QString& s)
 {
-    m_text->m_controlSource->setValue(s);
+    m_text->controlSource->setValue(s);
 }
 
 int Text::horizontalAlignment() const
 {
-    const QString a = m_text->m_horizontalAlignment->value().toString().toLower();
+    const QString a = m_text->horizontalAlignment->value().toString().toLower();
 
     if (a == QLatin1String("left")) {
         return -1;
@@ -65,23 +65,23 @@ void Text::setHorizonalAlignment(int a)
 {
     switch (a) {
     case -1:
-        m_text->m_horizontalAlignment->setValue(QLatin1String("left"));
+        m_text->horizontalAlignment->setValue(QLatin1String("left"));
         break;
     case 0:
-        m_text->m_horizontalAlignment->setValue(QLatin1String("center"));
+        m_text->horizontalAlignment->setValue(QLatin1String("center"));
         break;
     case 1:
-        m_text->m_horizontalAlignment->setValue(QLatin1String("right"));
+        m_text->horizontalAlignment->setValue(QLatin1String("right"));
         break;
     default:
-        m_text->m_horizontalAlignment->setValue(QLatin1String("left"));
+        m_text->horizontalAlignment->setValue(QLatin1String("left"));
         break;
     }
 }
 
 int Text::verticalAlignment() const
 {
-    const QString a = m_text->m_horizontalAlignment->value().toString().toLower();
+    const QString a = m_text->horizontalAlignment->value().toString().toLower();
 
     if (a == QLatin1String("top")) {
         return -1;
@@ -98,75 +98,75 @@ void Text::setVerticalAlignment(int a)
 {
     switch (a) {
     case -1:
-        m_text->m_verticalAlignment->setValue(QLatin1String("top"));
+        m_text->verticalAlignment->setValue(QLatin1String("top"));
         break;
     case 0:
-        m_text->m_verticalAlignment->setValue(QLatin1String("middle"));
+        m_text->verticalAlignment->setValue(QLatin1String("middle"));
         break;
     case 1:
-        m_text->m_verticalAlignment->setValue(QLatin1String("bottom"));
+        m_text->verticalAlignment->setValue(QLatin1String("bottom"));
         break;
     default:
-        m_text->m_verticalAlignment->setValue(QLatin1String("middle"));
+        m_text->verticalAlignment->setValue(QLatin1String("middle"));
         break;
     }
 }
 
 QColor Text::backgroundColor() const
 {
-    return m_text->m_backgroundColor->value().value<QColor>();
+    return m_text->backgroundColor->value().value<QColor>();
 }
 void Text::setBackgroundColor(const QColor& c)
 {
-    m_text->m_backgroundColor->setValue(QColor(c));
+    m_text->backgroundColor->setValue(QColor(c));
 }
 
 QColor Text::foregroundColor() const
 {
-    return m_text->m_foregroundColor->value().value<QColor>();
+    return m_text->foregroundColor->value().value<QColor>();
 }
 void Text::setForegroundColor(const QColor& c)
 {
-    m_text->m_foregroundColor->setValue(QColor(c));
+    m_text->foregroundColor->setValue(QColor(c));
 }
 
 int Text::backgroundOpacity() const
 {
-    return m_text->m_backgroundOpacity->value().toInt();
+    return m_text->backgroundOpacity->value().toInt();
 }
 void Text::setBackgroundOpacity(int o)
 {
-    m_text->m_backgroundOpacity->setValue(o);
+    m_text->backgroundOpacity->setValue(o);
 }
 
 QColor Text::lineColor() const
 {
-    return m_text->m_lineColor->value().value<QColor>();
+    return m_text->lineColor->value().value<QColor>();
 }
 void Text::setLineColor(const QColor& c)
 {
-    m_text->m_lineColor->setValue(QColor(c));
+    m_text->lineColor->setValue(QColor(c));
 }
 
 int Text::lineWeight() const
 {
-    return m_text->m_lineWeight->value().toInt();
+    return m_text->lineWeight->value().toInt();
 }
 void Text::setLineWeight(int w)
 {
-    m_text->m_lineWeight->setValue(w);
+    m_text->lineWeight->setValue(w);
 }
 
 int Text::lineStyle() const
 {
-    return m_text->m_lineStyle->value().toInt();
+    return m_text->lineStyle->value().toInt();
 }
 void Text::setLineStyle(int s)
 {
     if (s < 0 || s > 5) {
         s = 1;
     }
-    m_text->m_lineStyle->setValue(s);
+    m_text->lineStyle->setValue(s);
 }
 
 QPointF Text::position() const
@@ -192,7 +192,7 @@ void Text::loadFromFile(const QString &fn)
     QFile file(fn);
     //kreportpluginDebug() << "Loading from" << fn;
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        m_text->m_controlSource->setValue(tr("$Unable to read %1").arg(fn));
+        m_text->controlSource->setValue(tr("$Unable to read %1").arg(fn));
         return;
     }
     QTextStream in(&file);
@@ -202,7 +202,7 @@ void Text::loadFromFile(const QString &fn)
       QString line = in.readLine();
       process_line(line);
     }*/
-    m_text->m_controlSource->setValue(QVariant(QLatin1String("$") + data));
+    m_text->controlSource->setValue(QVariant(QLatin1String("$") + data));
 }
 
 }

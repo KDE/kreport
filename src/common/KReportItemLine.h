@@ -48,15 +48,15 @@ public:
     QPointF endPosition() const;
 
 protected:
-    KProperty *m_start;
-    KProperty *m_end;
-    KProperty *m_lineColor;
-    KProperty *m_lineWeight;
-    KProperty *m_lineStyle;
+    KProperty *start;
+    KProperty *end;
+    KProperty *lineColor;
+    KProperty *lineWeight;
+    KProperty *lineStyle;
 
-    KReportLineStyle lineStyle() const;
-    qreal weight() const;
-    void setWeight(qreal w);
+    KReportLineStyle lineStyleValue() const;
+    qreal weightValue() const;
+    void setWeightValue(qreal w);
 
 private:
     void createProperties() override;

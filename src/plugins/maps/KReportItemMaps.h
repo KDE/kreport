@@ -56,39 +56,38 @@ public:
 
     void renderFinished();
 
-    qreal longtitude() const;
-    qreal latitude() const;
-    int zoom() const;
+    qreal longtitudeValue() const;
+    qreal latitudeValue() const;
+    int zoomValue() const;
     QString themeId() const;
 
     OROPicture* oroImage();
 
 protected:
-    KProperty* m_controlSource;
-    KProperty* m_latitudeProperty;
-    KProperty* m_longitudeProperty;
-    KProperty* m_zoomProperty;
-    KProperty* m_themeProperty;
-
     void setColumn(const QString&);
 
-    qreal m_longtitude = 0.0;
-    qreal m_latitude = 0.0;
-    int m_zoom = 1200;
-    OROPage *m_pageId = nullptr;
-    OROSection *m_sectionId = nullptr;
-    QPointF m_offset;
-    OROPicture * m_oroPicture = nullptr;
-    KReportMapRenderer m_mapRenderer;
-    Marble::MapThemeManager m_themeManager;
+    KProperty* controlSource;
+    KProperty* latitudeProperty;
+    KProperty* longitudeProperty;
+    KProperty* zoomProperty;
+    KProperty* themeProperty;
+
+    qreal longtitude = 0.0;
+    qreal latitude = 0.0;
+    int zoom = 1200;
+    OROPage *pageId = nullptr;
+    OROSection *sectionId = nullptr;
+    QPointF offset;
+    OROPicture * oroPicture = nullptr;
+    KReportMapRenderer mapRenderer;
+    Marble::MapThemeManager themeManager;
+    bool longDataSetFromScript = false;
+    bool latDataSetFromScript = false;
+    bool zoomDataSetFromScript = false;
 
 private:
     void createProperties() override;
     void deserializeData(const QVariant& serialized);
-
-    bool m_longDataSetFromScript = false;
-    bool m_latDataSetFromScript = false;
-    bool m_zoomDataSetFromScript = false;
 
     friend class Scripting::Maps;
 };

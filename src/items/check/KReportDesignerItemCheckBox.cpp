@@ -84,12 +84,15 @@ void KReportDesignerItemCheckBox::paint(QPainter* painter, const QStyleOptionGra
     painter->setBackgroundMode(Qt::OpaqueMode);
     painter->setRenderHint(QPainter::Antialiasing);
 
-    painter->setPen(m_foregroundColor->value().value<QColor>());
+    painter->setPen(foregroundColor->value().value<QColor>());
 
-    if ((Qt::PenStyle)m_lineStyle->value().toInt() == Qt::NoPen || m_lineWeight->value().toInt() <= 0) {
+    if ((Qt::PenStyle)lineStyle->value().toInt() == Qt::NoPen
+        || lineWeight->value().toInt() <= 0)
+    {
         painter->setPen(QPen(Qt::lightGray));
     } else {
-        painter->setPen(QPen(m_lineColor->value().value<QColor>(), m_lineWeight->value().toInt(), (Qt::PenStyle)m_lineStyle->value().toInt()));
+        painter->setPen(QPen(lineColor->value().value<QColor>(), lineWeight->value().toInt(),
+                             (Qt::PenStyle)lineStyle->value().toInt()));
     }
 
     QSizeF sceneSize = this->sceneSize(size());
@@ -97,20 +100,20 @@ void KReportDesignerItemCheckBox::paint(QPainter* painter, const QStyleOptionGra
     qreal oy = sceneSize.height() / 5;
 
     //Checkbox Style
-    if (m_checkStyle->value().toString() == QLatin1String("Cross")) {
+    if (checkStyle->value().toString() == QLatin1String("Cross")) {
         painter->drawRoundedRect(QGraphicsRectItem::rect(), sceneSize.width() / 10 , sceneSize.height() / 10);
 
         QPen lp;
-        lp.setColor(m_foregroundColor->value().value<QColor>());
+        lp.setColor(foregroundColor->value().value<QColor>());
         lp.setWidth(ox > oy ? oy : ox);
         painter->setPen(lp);
         painter->drawLine(ox, oy, sceneSize.width() - ox, sceneSize.height() - oy);
         painter->drawLine(ox, sceneSize.height() - oy, sceneSize.width() - ox, oy);
-    } else if (m_checkStyle->value().toString() == QLatin1String("Dot")) {
+    } else if (checkStyle->value().toString() == QLatin1String("Dot")) {
         //Radio Style
         painter->drawEllipse(QGraphicsRectItem::rect());
 
-        QBrush lb(m_foregroundColor->value().value<QColor>());
+        QBrush lb(foregroundColor->value().value<QColor>());
         painter->setBrush(lb);
         painter->setPen(Qt::NoPen);
         painter->drawEllipse(rect().center(), sceneSize.width() / 2 - ox, sceneSize.height() / 2 - oy);
@@ -119,7 +122,7 @@ void KReportDesignerItemCheckBox::paint(QPainter* painter, const QStyleOptionGra
         painter->drawRoundedRect(QGraphicsRectItem::rect(), sceneSize.width() / 10 , sceneSize.height() / 10);
 
         QPen lp;
-        lp.setColor(m_foregroundColor->value().value<QColor>());
+        lp.setColor(foregroundColor->value().value<QColor>());
         lp.setWidth(ox > oy ? oy : ox);
         painter->setPen(lp);
         painter->drawLine(ox, sceneSize.height() / 2, sceneSize.width() / 2, sceneSize.height() - oy);
@@ -128,7 +131,7 @@ void KReportDesignerItemCheckBox::paint(QPainter* painter, const QStyleOptionGra
     }
 
     painter->setBackgroundMode(Qt::TransparentMode);
-    painter->setPen(m_foregroundColor->value().value<QColor>());
+    painter->setPen(foregroundColor->value().value<QColor>());
 
     // restore an values before we started just in case
     painter->setFont(f);
@@ -145,16 +148,16 @@ void KReportDesignerItemCheckBox::buildXML(QDomDocument *doc, QDomElement *paren
 
     //properties
     addPropertyAsAttribute(&entity, nameProperty());
-    addPropertyAsAttribute(&entity, m_controlSource);
-    entity.setAttribute(QLatin1String("fo:foreground-color"), m_foregroundColor->value().toString());
-    addPropertyAsAttribute(&entity, m_checkStyle);
-    addPropertyAsAttribute(&entity, m_staticValue);
+    addPropertyAsAttribute(&entity, controlSource);
+    entity.setAttribute(QLatin1String("fo:foreground-color"), foregroundColor->value().toString());
+    addPropertyAsAttribute(&entity, checkStyle);
+    addPropertyAsAttribute(&entity, staticValue);
 
     // bounding rect
     buildXMLRect(doc, &entity, this);
 
     //Line Style
-    buildXMLLineStyle(doc, &entity, lineStyle());
+    buildXMLLineStyle(doc, &entity, lineStyleValue());
 
     parent->appendChild(entity);
 }
@@ -178,6 +181,6 @@ void KReportDesignerItemCheckBox::slotPropertyChanged(KPropertySet &s, KProperty
 
 void KReportDesignerItemCheckBox::mousePressEvent(QGraphicsSceneMouseEvent * event)
 {
-    m_controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
+    controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
     KReportDesignerItemRectBase::mousePressEvent(event);
 }

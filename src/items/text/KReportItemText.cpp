@@ -30,7 +30,7 @@
 #include <QRegularExpression>
 
 KReportItemText::KReportItemText()
-    : m_bottomPadding(0.0)
+    : bottomPadding(0.0)
 {
     createProperties();
 }
@@ -39,12 +39,12 @@ KReportItemText::KReportItemText(const QDomNode & element)
   : KReportItemText()
 {
     nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
-    m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
-    m_itemValue->setValue(element.toElement().attribute(QLatin1String("report:value")));
+    controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
+    itemValue->setValue(element.toElement().attribute(QLatin1String("report:value")));
     setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
-    m_horizontalAlignment->setValue(element.toElement().attribute(QLatin1String("report:horizontal-align")));
-    m_verticalAlignment->setValue(element.toElement().attribute(QLatin1String("report:vertical-align")));
-    m_bottomPadding = element.toElement().attribute(QLatin1String("report:bottom-padding")).toDouble();
+    horizontalAlignment->setValue(element.toElement().attribute(QLatin1String("report:horizontal-align")));
+    verticalAlignment->setValue(element.toElement().attribute(QLatin1String("report:vertical-align")));
+    bottomPadding = element.toElement().attribute(QLatin1String("report:bottom-padding")).toDouble();
 
     parseReportRect(element.toElement());
 
@@ -58,18 +58,18 @@ KReportItemText::KReportItemText(const QDomNode & element)
         if (n == QLatin1String("report:text-style")) {
             KReportTextStyleData ts;
             if (parseReportTextStyleData(node.toElement(), &ts)) {
-                m_backgroundColor->setValue(ts.backgroundColor);
-                m_foregroundColor->setValue(ts.foregroundColor);
-                m_backgroundOpacity->setValue(ts.backgroundOpacity);
-                m_font->setValue(ts.font);
+                backgroundColor->setValue(ts.backgroundColor);
+                foregroundColor->setValue(ts.foregroundColor);
+                backgroundOpacity->setValue(ts.backgroundOpacity);
+                font->setValue(ts.font);
 
             }
         } else if (n == QLatin1String("report:line-style")) {
             KReportLineStyle ls;
             if (parseReportLineStyleData(node.toElement(), &ls)) {
-                m_lineWeight->setValue(ls.weight());
-                m_lineColor->setValue(ls.color());
-                m_lineStyle->setValue(static_cast<int>(ls.penStyle()));
+                lineWeight->setValue(ls.weight());
+                lineColor->setValue(ls.color());
+                lineStyle->setValue(static_cast<int>(ls.penStyle()));
             }
         } else {
             kreportpluginWarning() << "while parsing field element encountered unknown element: " << n;
@@ -86,7 +86,7 @@ Qt::Alignment KReportItemText::textFlags() const
 {
     Qt::Alignment align;
     QString t;
-    t = m_horizontalAlignment->value().toString();
+    t = horizontalAlignment->value().toString();
     if (t == QLatin1String("center"))
         align = Qt::AlignHCenter;
     else if (t == QLatin1String("right"))
@@ -94,7 +94,7 @@ Qt::Alignment KReportItemText::textFlags() const
     else
         align = Qt::AlignLeft;
 
-    t = m_verticalAlignment->value().toString();
+    t = verticalAlignment->value().toString();
     if (t == QLatin1String("center"))
         align |= Qt::AlignVCenter;
     else if (t == QLatin1String("bottom"))
@@ -110,83 +110,83 @@ void KReportItemText::createProperties()
     //connect ( set, SIGNAL ( propertyChanged ( KPropertySet &, KProperty & ) ), this, SLOT ( propertyChanged ( KPropertySet &, KProperty & ) ) );
 
     //_query = new KProperty ( "Query", QStringList(), QStringList(), "Data Source", "Query" );
-    m_controlSource = new KProperty("item-data-source", new KPropertyListData, QVariant(), tr("Data Source"));
+    controlSource = new KProperty("item-data-source", new KPropertyListData, QVariant(), tr("Data Source"));
 
-    m_itemValue = new KProperty("value", QString(), tr("Value"), tr("Value used if not bound to a field"));
+    itemValue = new KProperty("value", QString(), tr("Value"), tr("Value used if not bound to a field"));
 
     KPropertyListData *listData = new KPropertyListData(
         { QLatin1String("left"), QLatin1String("center"), QLatin1String("right") },
         QVariantList{ tr("Left"), tr("Center"), tr("Right") });
-    m_horizontalAlignment = new KProperty("horizontal-align", listData, QLatin1String("left"),
+    horizontalAlignment = new KProperty("horizontal-align", listData, QLatin1String("left"),
                                           tr("Horizontal Alignment"));
 
     listData = new KPropertyListData(
         { QLatin1String("top"), QLatin1String("center"), QLatin1String("bottom") },
         QVariantList{ tr("Top"), tr("Center"), tr("Bottom") });
-    m_verticalAlignment = new KProperty("vertical-align", listData, QLatin1String("center"),
+    verticalAlignment = new KProperty("vertical-align", listData, QLatin1String("center"),
                                         tr("Vertical Alignment"));
 
-    m_font = new KProperty("font", QApplication::font(), tr("Font"));
+    font = new KProperty("font", QApplication::font(), tr("Font"));
 
-    m_backgroundColor = new KProperty("background-color", QColor(Qt::white), tr("Background Color"));
-    m_foregroundColor = new KProperty("foreground-color", QColor(Qt::black), tr("Foreground Color"));
+    backgroundColor = new KProperty("background-color", QColor(Qt::white), tr("Background Color"));
+    foregroundColor = new KProperty("foreground-color", QColor(Qt::black), tr("Foreground Color"));
 
-    m_lineWeight = new KProperty("line-weight", 1.0, tr("Line Weight"));
-    m_lineWeight->setOption("step", 1.0);
-    m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
-    m_lineStyle = new KProperty("line-style", static_cast<int>(Qt::NoPen), tr("Line Style"), QString(), KProperty::LineStyle);
-    m_backgroundOpacity = new KProperty("background-opacity", QVariant(0), tr("Background Opacity"));
-    m_backgroundOpacity->setOption("max", 100);
-    m_backgroundOpacity->setOption("min", 0);
-    m_backgroundOpacity->setOption("unit", QLatin1String("%"));
+    lineWeight = new KProperty("line-weight", 1.0, tr("Line Weight"));
+    lineWeight->setOption("step", 1.0);
+    lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
+    lineStyle = new KProperty("line-style", static_cast<int>(Qt::NoPen), tr("Line Style"), QString(), KProperty::LineStyle);
+    backgroundOpacity = new KProperty("background-opacity", QVariant(0), tr("Background Opacity"));
+    backgroundOpacity->setOption("max", 100);
+    backgroundOpacity->setOption("min", 0);
+    backgroundOpacity->setOption("unit", QLatin1String("%"));
 
-    propertySet()->addProperty(m_controlSource);
-    propertySet()->addProperty(m_itemValue);
-    propertySet()->addProperty(m_horizontalAlignment);
-    propertySet()->addProperty(m_verticalAlignment);
-    propertySet()->addProperty(m_font);
-    propertySet()->addProperty(m_backgroundColor);
-    propertySet()->addProperty(m_foregroundColor);
-    propertySet()->addProperty(m_backgroundOpacity);
-    propertySet()->addProperty(m_lineWeight);
-    propertySet()->addProperty(m_lineColor);
-    propertySet()->addProperty(m_lineStyle);
+    propertySet()->addProperty(controlSource);
+    propertySet()->addProperty(itemValue);
+    propertySet()->addProperty(horizontalAlignment);
+    propertySet()->addProperty(verticalAlignment);
+    propertySet()->addProperty(font);
+    propertySet()->addProperty(backgroundColor);
+    propertySet()->addProperty(foregroundColor);
+    propertySet()->addProperty(backgroundOpacity);
+    propertySet()->addProperty(lineWeight);
+    propertySet()->addProperty(lineColor);
+    propertySet()->addProperty(lineStyle);
 
 }
 
 QString KReportItemText::itemDataSource() const
 {
-    return m_controlSource->value().toString();
+    return controlSource->value().toString();
 }
 
-qreal KReportItemText::bottomPadding() const
+qreal KReportItemText::bottomPaddingValue() const
 {
-    return m_bottomPadding;
+    return bottomPadding;
 }
 
-void KReportItemText::setBottomPadding(qreal bp)
+void KReportItemText::setBottomPaddingValue(qreal bp)
 {
-    if (m_bottomPadding != bp) {
-        m_bottomPadding = bp;
+    if (bottomPadding != bp) {
+        bottomPadding = bp;
     }
 }
 
-KReportTextStyleData KReportItemText::textStyle() const
+KReportTextStyleData KReportItemText::textStyleValue() const
 {
     KReportTextStyleData d;
-    d.backgroundColor = m_backgroundColor->value().value<QColor>();
-    d.foregroundColor = m_foregroundColor->value().value<QColor>();
-    d.font = m_font->value().value<QFont>();
-    d.backgroundOpacity = m_backgroundOpacity->value().toInt();
+    d.backgroundColor = backgroundColor->value().value<QColor>();
+    d.foregroundColor = foregroundColor->value().value<QColor>();
+    d.font = font->value().value<QFont>();
+    d.backgroundOpacity = backgroundOpacity->value().toInt();
     return d;
 }
 
-KReportLineStyle KReportItemText::lineStyle() const
+KReportLineStyle KReportItemText::lineStyleValue() const
 {
     KReportLineStyle ls;
-    ls.setWeight(m_lineWeight->value().toReal());
-    ls.setColor(m_lineColor->value().value<QColor>());
-    ls.setPenStyle((Qt::PenStyle)m_lineStyle->value().toInt());
+    ls.setWeight(lineWeight->value().toReal());
+    ls.setColor(lineColor->value().value<QColor>());
+    ls.setPenStyle((Qt::PenStyle)lineStyle->value().toInt());
     return ls;
 }
 
@@ -213,7 +213,7 @@ int KReportItemText::renderSimpleData(OROPage *page, OROSection *section, const 
             qstrValue = data.toString();
         }
     } else {
-        qstrValue = m_itemValue->value().toString();
+        qstrValue = itemValue->value().toString();
     }
 
     QPointF pos = scenePosition(position());
@@ -230,7 +230,7 @@ int KReportItemText::renderSimpleData(OROPage *page, OROSection *section, const 
         QChar separator;
         QRegularExpression re(QLatin1String("\\s"));
         QPrinter prnt(QPrinter::HighResolution);
-        QFontMetrics fm(font(), &prnt);
+        QFontMetrics fm(fontValue(), &prnt);
 
         // int   intRectWidth    = (int)(trf.width() * prnt.resolution()) - 10;
         int     intRectWidth    = (int)((size().width() / 72) * prnt.resolution());
@@ -262,11 +262,11 @@ int KReportItemText::renderSimpleData(OROPage *page, OROSection *section, const 
                     OROTextBox * tb = new OROTextBox();
                     tb->setPosition(rect.topLeft());
                     tb->setSize(rect.size());
-                    tb->setFont(font());
+                    tb->setFont(fontValue());
                     tb->setText(line);
                     tb->setFlags(textFlags());
-                    tb->setTextStyle(textStyle());
-                    tb->setLineStyle(lineStyle());
+                    tb->setTextStyle(textStyleValue());
+                    tb->setLineStyle(lineStyleValue());
 
                     if (page) {
                         page->insertPrimitive(tb);
@@ -298,11 +298,11 @@ int KReportItemText::renderSimpleData(OROPage *page, OROSection *section, const 
                 OROTextBox * tb = new OROTextBox();
                 tb->setPosition(rect.topLeft());
                 tb->setSize(rect.size());
-                tb->setFont(font());
+                tb->setFont(fontValue());
                 tb->setText(line);
                 tb->setFlags(textFlags());
-                tb->setTextStyle(textStyle());
-                tb->setLineStyle(lineStyle());
+                tb->setTextStyle(textStyleValue());
+                tb->setLineStyle(lineStyleValue());
                 if (page) {
                     page->insertPrimitive(tb);
                 } else {
@@ -314,7 +314,7 @@ int KReportItemText::renderSimpleData(OROPage *page, OROSection *section, const 
             }
         }
 
-        intStretch += (m_bottomPadding / 100.0);
+        intStretch += (bottomPadding / 100.0);
     }
 
     return intStretch; //Item returns its required section height

@@ -53,15 +53,15 @@ void Image::setSize(const QSizeF& s)
 
 QString Image::resizeMode() const
 {
-    return m_image->m_resizeMode->value().toString();
+    return m_image->resizeMode->value().toString();
 }
 
 void Image::setResizeMode(const QString &rm)
 {
     if (rm == QLatin1String("Stretch")) {
-        m_image->m_resizeMode->setValue(QLatin1String("Stretch"));
+        m_image->resizeMode->setValue(QLatin1String("Stretch"));
     } else {
-        m_image->m_resizeMode->setValue(QLatin1String("Clip"));
+        m_image->resizeMode->setValue(QLatin1String("Clip"));
     }
 }
 

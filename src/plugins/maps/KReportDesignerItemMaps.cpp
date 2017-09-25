@@ -37,7 +37,7 @@ void KReportDesignerItemMaps::init(QGraphicsScene *scene)
     connect(propertySet(), SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
-    m_controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
+    controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
     setZValue(z());
 }
 
@@ -98,11 +98,11 @@ void KReportDesignerItemMaps::buildXML(QDomDocument *doc, QDomElement *parent)
 
     // properties
     addPropertyAsAttribute(&entity, nameProperty());
-    addPropertyAsAttribute(&entity, m_controlSource);
-    addPropertyAsAttribute(&entity, m_latitudeProperty);
-    addPropertyAsAttribute(&entity, m_longitudeProperty);
-    addPropertyAsAttribute(&entity, m_zoomProperty);
-    addPropertyAsAttribute(&entity, m_themeProperty);
+    addPropertyAsAttribute(&entity, controlSource);
+    addPropertyAsAttribute(&entity, latitudeProperty);
+    addPropertyAsAttribute(&entity, longitudeProperty);
+    addPropertyAsAttribute(&entity, zoomProperty);
+    addPropertyAsAttribute(&entity, themeProperty);
     //addPropertyAsAttribute(&entity, m_resizeMode);
     entity.setAttribute(QLatin1String("report:z-index"), z());
     buildXMLRect(doc, &entity, this);
@@ -128,6 +128,6 @@ void KReportDesignerItemMaps::slotPropertyChanged(KPropertySet &s, KProperty &p)
 
 void KReportDesignerItemMaps::mousePressEvent(QGraphicsSceneMouseEvent * event)
 {
-    m_controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
+    controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
     KReportDesignerItemRectBase::mousePressEvent(event);
 }
