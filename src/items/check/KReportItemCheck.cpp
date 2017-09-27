@@ -37,11 +37,11 @@ KReportItemCheckBox::KReportItemCheckBox(const QDomNode &element)
     : KReportItemCheckBox()
 {
     nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
-    controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
+    m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
     setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
-    foregroundColor->setValue(QColor(element.toElement().attribute(QLatin1String("fo:foreground-color"))));
-    checkStyle->setValue(element.toElement().attribute(QLatin1String("report:check-style")));
-    staticValue->setValue(QVariant(element.toElement().attribute(QLatin1String("report:value"))).toBool());
+    m_foregroundColor->setValue(QColor(element.toElement().attribute(QLatin1String("fo:foreground-color"))));
+    m_checkStyle->setValue(element.toElement().attribute(QLatin1String("report:check-style")));
+    m_staticValue->setValue(QVariant(element.toElement().attribute(QLatin1String("report:value"))).toBool());
 
     parseReportRect(element.toElement());
 
@@ -55,9 +55,9 @@ KReportItemCheckBox::KReportItemCheckBox(const QDomNode &element)
         if (n == QLatin1String("report:line-style")) {
             KReportLineStyle ls;
             if (parseReportLineStyleData(node.toElement(), &ls)) {
-                lineWeight->setValue(ls.weight());
-                lineColor->setValue(ls.color());
-                lineStyle->setValue(static_cast<int>(ls.penStyle()));
+                m_lineWeight->setValue(ls.weight());
+                m_lineColor->setValue(ls.color());
+                m_lineStyle->setValue(static_cast<int>(ls.penStyle()));
             }
         } else {
             kreportpluginWarning() << "while parsing check element encountered unknown element: " << n;
@@ -75,41 +75,41 @@ void KReportItemCheckBox::createProperties()
     KPropertyListData *listData = new KPropertyListData(
         QVariantList{ QLatin1String("Cross"), QLatin1String("Tick"), QLatin1String("Dot") },
         QVariantList{ tr("Cross"), tr("Tick"), tr("Dot") });
-    checkStyle = new KProperty("check-style", listData, QLatin1String("Cross"), tr("Style"));
+    m_checkStyle = new KProperty("check-style", listData, QLatin1String("Cross"), tr("Style"));
 
-    controlSource
+    m_controlSource
         = new KProperty("item-data-source", new KPropertyListData, QVariant(), tr("Data Source"));
-    controlSource->setOption("extraValueAllowed", QLatin1String("true"));
+    m_controlSource->setOption("extraValueAllowed", QLatin1String("true"));
 
-    foregroundColor = new KProperty("foreground-color", QColor(Qt::black), tr("Foreground Color"));
+    m_foregroundColor = new KProperty("foreground-color", QColor(Qt::black), tr("Foreground Color"));
 
-    lineWeight = new KProperty("line-weight", 1.0, tr("Line Weight"));
-    lineWeight->setOption("step", 1.0);
-    lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
-    lineStyle = new KProperty("line-style", static_cast<int>(Qt::SolidLine), tr("Line Style"), QString(), KProperty::LineStyle);
-    staticValue = new KProperty("value", QVariant(false), tr("Value"), tr("Value used if not bound to a field"));
+    m_lineWeight = new KProperty("line-weight", 1.0, tr("Line Weight"));
+    m_lineWeight->setOption("step", 1.0);
+    m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
+    m_lineStyle = new KProperty("line-style", static_cast<int>(Qt::SolidLine), tr("Line Style"), QString(), KProperty::LineStyle);
+    m_staticValue = new KProperty("value", QVariant(false), tr("Value"), tr("Value used if not bound to a field"));
 
-    propertySet()->addProperty(controlSource);
-    propertySet()->addProperty(staticValue);
-    propertySet()->addProperty(checkStyle);
-    propertySet()->addProperty(foregroundColor);
-    propertySet()->addProperty(lineWeight);
-    propertySet()->addProperty(lineColor);
-    propertySet()->addProperty(lineStyle);
+    propertySet()->addProperty(m_controlSource);
+    propertySet()->addProperty(m_staticValue);
+    propertySet()->addProperty(m_checkStyle);
+    propertySet()->addProperty(m_foregroundColor);
+    propertySet()->addProperty(m_lineWeight);
+    propertySet()->addProperty(m_lineColor);
+    propertySet()->addProperty(m_lineStyle);
 }
 
-KReportLineStyle KReportItemCheckBox::lineStyleValue()
+KReportLineStyle KReportItemCheckBox::lineStyle()
 {
     KReportLineStyle ls;
-    ls.setWeight(lineWeight->value().toReal());
-    ls.setColor(lineColor->value().value<QColor>());
-    ls.setPenStyle(static_cast<Qt::PenStyle>(lineStyle->value().toInt()));
+    ls.setWeight(m_lineWeight->value().toReal());
+    ls.setColor(m_lineColor->value().value<QColor>());
+    ls.setPenStyle((Qt::PenStyle)m_lineStyle->value().toInt());
     return ls;
 }
 
 QString KReportItemCheckBox::itemDataSource() const
 {
-    return controlSource->value().toString();
+    return m_controlSource->value().toString();
 }
 
 // RTTI
@@ -126,11 +126,11 @@ int KReportItemCheckBox::renderSimpleData(OROPage *page, OROSection *section, co
     chk->setPosition(scenePosition(position()) + offset);
     chk->setSize(sceneSize(size()));
 
-    chk->setLineStyle(lineStyleValue());
-    chk->setForegroundColor(foregroundColor->value().value<QColor>());
-    if (checkStyle->value().toString() == QLatin1String("Cross")) {
+    chk->setLineStyle(lineStyle());
+    chk->setForegroundColor(m_foregroundColor->value().value<QColor>());
+    if (m_checkStyle->value().toString() == QLatin1String("Cross")) {
         chk->setCheckType(OROCheckBox::Type::Cross);
-    } else if (checkStyle->value().toString() == QLatin1String("Dot")) {
+    } else if (m_checkStyle->value().toString() == QLatin1String("Dot")) {
         chk->setCheckType(OROCheckBox::Type::Dot);
     } else {
         chk->setCheckType(OROCheckBox::Type::Tick);
@@ -186,10 +186,10 @@ int KReportItemCheckBox::renderSimpleData(OROPage *page, OROSection *section, co
 
 bool KReportItemCheckBox::value() const
 {
-    return staticValue->value().toBool();
+    return m_staticValue->value().toBool();
 }
 
 void KReportItemCheckBox::setValue(bool v)
 {
-    staticValue->setValue(v);
+    m_staticValue->setValue(v);
 }

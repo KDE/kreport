@@ -127,7 +127,7 @@ KReportDesignerSection::KReportDesignerSection(KReportDesigner * rptdes,
     d->sectionRuler = new KReportRuler(this, Qt::Vertical, zoomHandler);
     d->sectionRuler->setUnit(d->reportDesigner->pageUnit());
     d->scene = new KReportDesignerSectionScene(d->reportDesigner->pageWidthPx(), d->dpiY, rptdes);
-    d->scene->setBackgroundBrush(d->sectionData->backgroundColorValue());
+    d->scene->setBackgroundBrush(d->sectionData->backgroundColor());
     
     d->sceneView = new KReportDesignerSectionView(rptdes, d->scene, this);
     d->sceneView->setObjectName(QLatin1String("scene view"));
@@ -177,7 +177,7 @@ void KReportDesignerSection::slotResizeBarDragged(int delta, bool changeSet)
     if (h < 1) h = 1;
 
     h = d->scene->gridPoint(QPointF(0, h)).y();
-    d->sectionData->height->setValue(INCH_TO_POINT(h/d->dpiY));
+    d->sectionData->m_height->setValue(INCH_TO_POINT(h/d->dpiY));
     d->sectionRuler->setRulerLength(h);
 
     d->scene->setSceneRect(0, 0, d->scene->width(), h);
@@ -188,8 +188,8 @@ void KReportDesignerSection::slotResizeBarDragged(int delta, bool changeSet)
 
 void KReportDesignerSection::buildXML(QDomDocument *doc, QDomElement *section)
 {
-    KReportUtils::setAttribute(section, QLatin1String("svg:height"), d->sectionData->heightValue());
-    section->setAttribute(QLatin1String("fo:background-color"), d->sectionData->backgroundColorValue().name());
+    KReportUtils::setAttribute(section, QLatin1String("svg:height"), d->sectionData->m_height->value().toDouble());
+    section->setAttribute(QLatin1String("fo:background-color"), d->sectionData->backgroundColor().name());
 
     // now get a list of all the QGraphicsItems on this scene and output them.
     QGraphicsItemList list = d->scene->items();
@@ -206,14 +206,14 @@ void KReportDesignerSection::initFromXML(const QDomNode & section)
     QString n;
 
     qreal h = KReportUnit::parseValue(section.toElement().attribute(QLatin1String("svg:height"), QLatin1String("2.0cm")));
-    d->sectionData->height->setValue(h);
+    d->sectionData->m_height->setValue(h);
 
     h  = POINT_TO_INCH(h) * d->dpiY;
     //kreportDebug() << "Section Height: " << h;
     d->scene->setSceneRect(0, 0, d->scene->width(), h);
     slotResizeBarDragged(0);
 
-    d->sectionData->backgroundColor->setValue(QColor(section.toElement().attribute(QLatin1String("fo:background-color"), QLatin1String("#ffffff"))));
+    d->sectionData->m_backgroundColor->setValue(QColor(section.toElement().attribute(QLatin1String("fo:background-color"), QLatin1String("#ffffff"))));
 
     for (int i = 0; i < nl.count(); ++i) {
         node = nl.item(i);
@@ -261,7 +261,7 @@ void KReportDesignerSection::slotPageOptionsChanged(KPropertySet &set)
 
     KReportUnit unit = d->reportDesigner->pageUnit();
 
-    d->sectionData->height->setOption("unit", unit.symbol());
+    d->sectionData->m_height->setOption("unit", unit.symbol());
 
     //update items position with unit
     QList<QGraphicsItem*> itms = d->scene->items();

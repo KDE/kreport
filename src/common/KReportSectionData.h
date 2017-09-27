@@ -68,29 +68,25 @@ public:
     KReportSectionData(const QDomElement &, KReportDocument* report);
     ~KReportSectionData() override;
     KPropertySet* propertySet() const {
-        return set;
+        return m_set;
     }
 
     bool isValid() const {
         return m_valid;
     }
 
-    qreal heightValue() const {
-        return height->value().toDouble();
+    qreal height() const {
+        return m_height->value().toDouble();
     }
 
-    const QList<KReportItemBase*> objects() const {
-        return m_objects;
-    }
-
-    QList<KReportItemBase*> objects() {
+    QList<KReportItemBase*> objects() const {
         return m_objects;
     }
 
     QString name() const;
 
-    QColor backgroundColorValue() const {
-        return backgroundColor->value().value<QColor>();
+    QColor backgroundColor() const {
+        return m_backgroundColor->value().value<QColor>();
     }
 
     Type type() const {
@@ -100,14 +96,15 @@ public:
     static KReportSectionData::Type sectionTypeFromString(const QString& s);
     static QString sectionTypeString(KReportSectionData::Type type);
 protected:
-    KPropertySet *set;
-    KProperty *height;
-    KProperty *backgroundColor;
+    KPropertySet *m_set;
+    KProperty *m_height;
+    KProperty *m_backgroundColor;
 
 private:
     void createProperties(const QDomElement & elemSource);
 
     QList<KReportItemBase*> m_objects;
+
     Type m_type;
 
     static bool zLessThan(KReportItemBase* s1, KReportItemBase* s2);

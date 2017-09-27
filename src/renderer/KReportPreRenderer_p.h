@@ -47,29 +47,29 @@ public:
     KReportPreRendererPrivate(KReportPreRenderer *preRenderer);
     ~KReportPreRendererPrivate() override;
 
-    KReportPreRenderer * const preRenderer;
-    bool valid;
+    KReportPreRenderer * const m_preRenderer;
+    bool m_valid;
 
-    ORODocument* document;
-    OROPage*     page;
-    KReportDocument* reportDocument;
+    ORODocument* m_document;
+    OROPage*     m_page;
+    KReportDocument* m_reportDocument;
 
-    qreal yOffset;      // how far down the current page are we
-    qreal topMargin;    // value stored in the correct units
-    qreal bottomMargin; // -- same as above --
-    qreal leftMargin;   // -- same as above --
-    qreal rightMargin;  // -- same as above --
-    qreal maxHeight;    // -- same as above --
-    qreal maxWidth;     // -- same as above --
-    int pageCounter;    // what page are we currently on?
+    qreal m_yOffset;      // how far down the current page are we
+    qreal m_topMargin;    // value stored in the correct units
+    qreal m_bottomMargin; // -- same as above --
+    qreal m_leftMargin;   // -- same as above --
+    qreal m_rightMargin;  // -- same as above --
+    qreal m_maxHeight;    // -- same as above --
+    qreal m_maxWidth;     // -- same as above --
+    int m_pageCounter;    // what page are we currently on?
 
-    KReportDataSource* dataSource;
-    KReportPrivate::OneRecordDataSource *oneRecord;
+    KReportDataSource* m_dataSource;
+    KReportPrivate::OneRecordDataSource *m_oneRecord;
 
-    QList<OROTextBox*> postProcText;
+    QList<OROTextBox*> m_postProcText;
 
 #ifdef KREPORT_SCRIPTING
-    QMap<QString, QObject*> scriptObjects;
+    QMap<QString, QObject*> m_scriptObjects;
     KReportScriptSource *scriptSource = nullptr;
 #endif
 
@@ -82,7 +82,7 @@ public:
     qreal renderSectionSize(const KReportSectionData &);
 
     ///Scripting Stuff
-    KReportScriptHandler *scriptHandler;
+    KReportScriptHandler *m_scriptHandler;
 #ifdef KREPORT_SCRIPTING
     void initEngine();
 #endif

@@ -39,11 +39,11 @@ void KReportDesignerItemBarcode::init(QGraphicsScene *scene)
     connect(propertySet(), SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
-    setMaxLengthValue(5);
+    setMaxLength(5);
     setZ(z());
 
-    updateRenderText(itemValue->value().toString().isEmpty() ? formatValue() : QString(),
-                     itemValue->value().toString(), QString());
+    updateRenderText(m_itemValue->value().toString().isEmpty() ?  m_format->value().toString() : QString(), m_itemValue->value().toString(), QString());
+
 }
 // methods (constructors)
 KReportDesignerItemBarcode::KReportDesignerItemBarcode(KReportDesigner * rw, QGraphicsScene* scene, const QPointF &pos)
@@ -51,7 +51,7 @@ KReportDesignerItemBarcode::KReportDesignerItemBarcode(KReportDesigner * rw, QGr
 {
     Q_UNUSED(pos);
     init(scene);
-    setSceneRect(properRect(*rw, minWidthTotal*dpiX(), minHeight*dpiY()));
+    setSceneRect(properRect(*rw, m_minWidthTotal*dpiX(), m_minHeight*dpiY()));
     nameProperty()->setValue(designer()->suggestEntityName(typeName()));
 }
 
@@ -102,23 +102,23 @@ void KReportDesignerItemBarcode::paint(QPainter* painter,
 
     drawHandles(painter);
 
-    QByteArray fmt = formatValue().toLatin1();
+    QByteArray fmt = m_format->value().toByteArray();
     if (fmt == "i2of5") {
-        renderI2of5(rect().toRect(), renderText(), horizontalAlignmentValue(), painter);
+        renderI2of5(rect().toRect(), renderText(), alignment(), painter);
     } else if (fmt == "3of9") {
-        render3of9(rect().toRect(), renderText(), horizontalAlignmentValue(), painter);
+        render3of9(rect().toRect(), renderText(), alignment(), painter);
     } else if (fmt == "3of9+") {
-        renderExtended3of9(rect().toRect(), renderText(), horizontalAlignmentValue(), painter);
+        renderExtended3of9(rect().toRect(), renderText(), alignment(), painter);
     } else if (fmt == "128") {
-        renderCode128(rect().toRect(), renderText(), horizontalAlignmentValue(), painter);
+        renderCode128(rect().toRect(), renderText(), alignment(), painter);
     } else if (fmt == "upc-a") {
-        renderCodeUPCA(rect().toRect(), renderText(), horizontalAlignmentValue(), painter);
+        renderCodeUPCA(rect().toRect(), renderText(), alignment(), painter);
     } else if (fmt == "upc-e") {
-        renderCodeUPCE(rect().toRect(), renderText(), horizontalAlignmentValue(), painter);
+        renderCodeUPCE(rect().toRect(), renderText(), alignment(), painter);
     } else if (fmt == "ean13") {
-        renderCodeEAN13(rect().toRect(), renderText(), horizontalAlignmentValue(), painter);
+        renderCodeEAN13(rect().toRect(), renderText(), alignment(), painter);
     } else if (fmt == "ean8") {
-        renderCodeEAN8(rect().toRect(), renderText(), horizontalAlignmentValue(), painter);
+        renderCodeEAN8(rect().toRect(), renderText(), alignment(), painter);
     }
 
     painter->setPen(Qt::black);
@@ -136,12 +136,12 @@ void KReportDesignerItemBarcode::buildXML(QDomDocument *doc, QDomElement *parent
 
     // properties
     addPropertyAsAttribute(&entity, nameProperty());
-    addPropertyAsAttribute(&entity, controlSource);
-    addPropertyAsAttribute(&entity, horizontalAlignment);
-    addPropertyAsAttribute(&entity, format);
-    addPropertyAsAttribute(&entity, maxLength);
+    addPropertyAsAttribute(&entity, m_controlSource);
+    addPropertyAsAttribute(&entity, m_horizontalAlignment);
+    addPropertyAsAttribute(&entity, m_format);
+    addPropertyAsAttribute(&entity, m_maxLength);
     entity.setAttribute(QLatin1String("report:z-index"), zValue());
-    addPropertyAsAttribute(&entity, itemValue);
+    addPropertyAsAttribute(&entity, m_itemValue);
 
     // bounding rect
     buildXMLRect(doc, &entity, this);
@@ -160,8 +160,7 @@ void KReportDesignerItemBarcode::slotPropertyChanged(KPropertySet &s, KProperty 
         }
     }
 
-    updateRenderText(itemValue->value().toString().isEmpty() ? formatValue() : QString(),
-                     itemValue->value().toString(), QString());
+    updateRenderText(m_itemValue->value().toString().isEmpty() ?  m_format->value().toString() : QString(), m_itemValue->value().toString(), QString());
 
     KReportDesignerItemRectBase::propertyChanged(s, p);
     if (designer()) designer()->setModified(true);
@@ -169,6 +168,6 @@ void KReportDesignerItemBarcode::slotPropertyChanged(KPropertySet &s, KProperty 
 
 void KReportDesignerItemBarcode::mousePressEvent(QGraphicsSceneMouseEvent * event)
 {
-    controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
+    m_controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
     KReportDesignerItemRectBase::mousePressEvent(event);
 }

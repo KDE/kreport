@@ -24,9 +24,9 @@ namespace Scripting
 Maps::Maps(KReportItemMaps *i)
 {
     m_map = i;
-    m_map->latDataSetFromScript = false;
-    m_map->longDataSetFromScript = false;
-    m_map->zoomDataSetFromScript = false;
+    m_map->m_latDataSetFromScript = false;
+    m_map->m_longDataSetFromScript = false;
+    m_map->m_zoomDataSetFromScript = false;
 }
 
 Maps::~Maps()
@@ -55,20 +55,20 @@ void Maps::setSize(const QSizeF& size)
 
 void Maps::setLatitude(qreal latitude)
 {
-    m_map->latitude = latitude;
-    m_map->latDataSetFromScript = true;
+    m_map->m_latitude = latitude;
+    m_map->m_latDataSetFromScript = true;
 }
 
 void Maps::setLongitude(qreal longitude)
 {
-    m_map->longtitude = longitude;
-    m_map->longDataSetFromScript = true;
+    m_map->m_longtitude = longitude;
+    m_map->m_longDataSetFromScript = true;
 }
 
 void Maps::setZoom(int zoom)
 {
-    m_map->zoom = zoom;
-    m_map->zoomDataSetFromScript = true;
+    m_map->m_zoom = zoom;
+    m_map->m_zoomDataSetFromScript = true;
 }
 
 }

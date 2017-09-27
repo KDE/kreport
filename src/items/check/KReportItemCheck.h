@@ -42,17 +42,17 @@ public:
 
 protected:
 
-    KProperty * controlSource;
-    KProperty* checkStyle;
-    KProperty* foregroundColor;
-    KProperty* lineColor;
-    KProperty* lineWeight;
-    KProperty* lineStyle;
-    KProperty* staticValue;
+    KProperty * m_controlSource;
+    KProperty* m_checkStyle;
+    KProperty* m_foregroundColor;
+    KProperty* m_lineColor;
+    KProperty* m_lineWeight;
+    KProperty* m_lineStyle;
+    KProperty* m_staticValue;
 
     bool value() const;
     void setValue(bool v);
-    KReportLineStyle lineStyleValue();
+    KReportLineStyle lineStyle();
 
 private:
     void createProperties() override;

@@ -209,7 +209,7 @@ QList<KReportItemBase*> KReportDocument::objects() const
     }
 
     if (d->detailSection) {
-        //kreportDebug() << "Number of groups: " << m_detailSection->groupList.count();
+        //kreportDebug() << "Number of groups: " << m_detailSection->m_groupList.count();
         foreach(KReportDetailGroupSectionData* g, d->detailSection->groupList) {
             if (g->groupHeader) {
                 obs << g->groupHeader->objects();
@@ -254,7 +254,7 @@ QList<KReportSectionData*> KReportDocument::sections() const
     }
 
     if (d->detailSection) {
-        //kreportDebug() << "Number of groups: " << m_detailSection->groupList.count();
+        //kreportDebug() << "Number of groups: " << m_detailSection->m_groupList.count();
         foreach(KReportDetailGroupSectionData* g, d->detailSection->groupList) {
             if (g->groupHeader) {
                 secs << g->groupHeader;

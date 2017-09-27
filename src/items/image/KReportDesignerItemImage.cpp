@@ -40,7 +40,7 @@ void KReportDesignerItemImage::init(QGraphicsScene *scene)
     connect(propertySet(), SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
-    controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
+    m_controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
     setZValue(z());
 }
 
@@ -86,7 +86,7 @@ void KReportDesignerItemImage::paint(QPainter* painter, const QStyleOptionGraphi
 
     if (isInline()) {
         //QImage t_img = _image;
-        QImage t_img = staticImage->value().value<QPixmap>().toImage();
+        QImage t_img = m_staticImage->value().value<QPixmap>().toImage();
         if (mode() == QLatin1String("stretch")) {
             t_img = t_img.scaled(rect().width(), rect().height(), Qt::KeepAspectRatio);
         }
@@ -112,7 +112,7 @@ void KReportDesignerItemImage::buildXML(QDomDocument *doc, QDomElement *parent)
 
     // properties
     addPropertyAsAttribute(&entity, nameProperty());
-    addPropertyAsAttribute(&entity, resizeMode);
+    addPropertyAsAttribute(&entity, m_resizeMode);
     entity.setAttribute(QLatin1String("report:z-index"), z());
     buildXMLRect(doc, &entity, this);
 
@@ -122,7 +122,7 @@ void KReportDesignerItemImage::buildXML(QDomDocument *doc, QDomElement *parent)
         map.appendChild(doc->createTextNode(QLatin1String(inlineImageData())));
         entity.appendChild(map);
     } else {
-        addPropertyAsAttribute(&entity, controlSource);
+        addPropertyAsAttribute(&entity, m_controlSource);
     }
 
     parent->appendChild(entity);
@@ -145,6 +145,6 @@ void KReportDesignerItemImage::slotPropertyChanged(KPropertySet &s, KProperty &p
 
 void KReportDesignerItemImage::mousePressEvent(QGraphicsSceneMouseEvent * event)
 {
-    controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
+    m_controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
     KReportDesignerItemRectBase::mousePressEvent(event);
 }

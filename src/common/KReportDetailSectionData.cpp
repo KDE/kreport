@@ -66,9 +66,9 @@ KReportDetailSectionData::KReportDetailSectionData(const QDomElement &elemSource
             }
 
             if (elemThis.attribute(QLatin1String("report:group-sort"), QLatin1String("ascending")) == QLatin1String("ascending")) {
-                dgsd->sort = Qt::AscendingOrder;
+                dgsd->m_sort = Qt::AscendingOrder;
             } else {
-                dgsd->sort = Qt::DescendingOrder;
+                dgsd->m_sort = Qt::DescendingOrder;
             }
             
             for ( QDomElement e = elemThis.firstChildElement( QLatin1String("report:section") ); ! e.isNull(); e = e.nextSiblingElement( QLatin1String("report:section") ) ) {
@@ -92,7 +92,7 @@ KReportDetailSectionData::KReportDetailSectionData(const QDomElement &elemSource
             groupList.append(dgsd);
             KReportDataSource::SortedField s;
             s.setField(dgsd->column);
-            s.setOrder(dgsd->sort);
+            s.setOrder(dgsd->m_sort);
             sortedFields.append(s);
 	    
         } else if (elemThis.tagName() == QLatin1String("report:section") && elemThis.attribute(QLatin1String("report:section-type")) == QLatin1String("detail")) {
@@ -116,7 +116,7 @@ KReportDetailSectionData::~KReportDetailSectionData()
 KReportDetailGroupSectionData::KReportDetailGroupSectionData()
 {
     pagebreak = PageBreak::None;
-    sort = Qt::AscendingOrder;
+    m_sort = Qt::AscendingOrder;
     groupHeader = nullptr;
     groupFooter = nullptr;
 }

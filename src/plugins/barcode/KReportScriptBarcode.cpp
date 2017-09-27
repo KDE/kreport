@@ -33,53 +33,74 @@ Barcode::~Barcode()
 {
 }
 
-QPointF Barcode::position() const
+QPointF Barcode::position()
 {
     return m_barcode->position();
 }
-
 void Barcode::setPosition(const QPointF& p)
 {
     m_barcode->setPosition(p);
 }
 
-QSizeF Barcode::size() const
+QSizeF Barcode::size()
 {
     return m_barcode->size();
 }
-
 void Barcode::setSize(const QSizeF& s)
 {
     m_barcode->setSize(s);
 }
 
-int Barcode::horizontalAlignment() const
+int Barcode::horizontalAlignment()
 {
-    return m_barcode->horizontalAlignmentValue();
-}
+    const QString a = m_barcode->m_horizontalAlignment->value().toString().toLower();
 
+    if (a == QLatin1String("left")) {
+        return -1;
+    }
+    if (a == QLatin1String("center")) {
+        return 0;
+    }
+    if (a == QLatin1String("right")) {
+        return 1;
+    }
+    return -1;
+}
 void Barcode::setHorizonalAlignment(int a)
 {
-    m_barcode->setHorizontalAlignmentValue(a);
+    switch (a) {
+    case -1:
+        m_barcode->m_horizontalAlignment->setValue(QLatin1String("left"));
+        break;
+    case 0:
+        m_barcode->m_horizontalAlignment->setValue(QLatin1String("center"));
+        break;
+    case 1:
+        m_barcode->m_horizontalAlignment->setValue(QLatin1String("right"));
+        break;
+    default:
+        m_barcode->m_horizontalAlignment->setValue(QLatin1String("left"));
+        break;
+    }
 }
 
-QString Barcode::source() const
+QString Barcode::source()
 {
-    return m_barcode->controlSource->value().toString();
+    return m_barcode->m_controlSource->value().toString();
 }
 
 void Barcode::setSource(const QString& s)
 {
-    m_barcode->controlSource->setValue(s);
+    m_barcode->m_controlSource->setValue(s);
 }
 
-QString Barcode::format() const
+QString Barcode::format()
 {
-    return m_barcode->formatValue();
+    return m_barcode->m_format->value().toString();
 }
 
 void Barcode::setFormat(const QString& s)
 {
-    m_barcode->setFormatValue(s);
+    m_barcode->m_format->setValue(s);
 }
 }

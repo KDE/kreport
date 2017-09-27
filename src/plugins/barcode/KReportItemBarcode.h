@@ -43,24 +43,25 @@ public:
 
 protected:
 
-    KProperty * controlSource;
-    KProperty * horizontalAlignment;
-    KProperty * format;
-    KProperty * maxLength;
-    KProperty* itemValue;
+    KProperty * m_controlSource;
+    KProperty * m_horizontalAlignment;
+    KProperty * m_format;
+    KProperty * m_maxLength;
+    KProperty* m_itemValue;
+
+
+    int alignment();
+    void setAlignment(int);
+    int maxLength();
+    void setMaxLength(int i);
+    QString format();
+    void setFormat(const QString&);
 
     // all these values are in inches and
     // are for internal use only
-    qreal minWidthData;
-    qreal minWidthTotal;
-    qreal minHeight;
-
-    int horizontalAlignmentValue() const;
-    void setHorizontalAlignmentValue(int value);
-    int maxLengthValue() const;
-    void setMaxLengthValue(int i);
-    QString formatValue() const;
-    void setFormatValue(const QString&);
+    qreal m_minWidthData;
+    qreal m_minWidthTotal;
+    qreal m_minHeight;
 
 private:
     void createProperties() override;

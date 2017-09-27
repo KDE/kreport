@@ -47,7 +47,7 @@ void KReportDesignerItemLabel::init(QGraphicsScene *scene)
     m_inlineEdit->setFlag(ItemIsSelectable, false);
     QTextDocument *doc = new QTextDocument;
     doc->setDocumentMargin(0);
-    doc->setPlainText(textValue());
+    doc->setPlainText(text());
     m_inlineEdit->setDocument(doc);
 
     connect(m_inlineEdit, SIGNAL(exitEditMode()), this, SLOT(exitInlineEditingMode()));
@@ -88,7 +88,7 @@ KReportDesignerItemLabel::~KReportDesignerItemLabel()
 
 QRectF KReportDesignerItemLabel::getTextRect() const
 {
-    return QFontMetrics(fontValue()).boundingRect(x(), y(), 0, 0, textFlags(), textValue());
+    return QFontMetrics(font()).boundingRect(x(), y(), 0, 0, textFlags(), m_text->value().toString());
 }
 
 void KReportDesignerItemLabel::paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget)
@@ -104,25 +104,25 @@ void KReportDesignerItemLabel::paint(QPainter* painter, const QStyleOptionGraphi
     QFont f = painter->font();
     QPen  p = painter->pen();
 
-    painter->setFont(fontValue());
+    painter->setFont(font());
     painter->setBackgroundMode(Qt::TransparentMode);
 
-    QColor bg = backgroundColor->value().value<QColor>();
-    bg.setAlphaF(backgroundOpacity->value().toReal() * 0.01);
+    QColor bg = m_backgroundColor->value().value<QColor>();
+    bg.setAlphaF(m_backgroundOpacity->value().toReal() * 0.01);
 
-    painter->setPen(foregroundColor->value().value<QColor>());
+    painter->setPen(m_foregroundColor->value().value<QColor>());
 
     painter->fillRect(QGraphicsRectItem::rect(), bg);
-    painter->drawText(rect(), textFlags(), textValue());
+    painter->drawText(rect(), textFlags(), text());
 
-    if ((Qt::PenStyle)lineStyle->value().toInt() == Qt::NoPen || lineWeight->value().toInt() <= 0) {
+    if ((Qt::PenStyle)m_lineStyle->value().toInt() == Qt::NoPen || m_lineWeight->value().toInt() <= 0) {
         painter->setPen(QPen(QColor(224, 224, 224)));
     } else {
-        painter->setPen(QPen(lineColor->value().value<QColor>(), lineWeight->value().toInt(), (Qt::PenStyle)lineStyle->value().toInt()));
+        painter->setPen(QPen(m_lineColor->value().value<QColor>(), m_lineWeight->value().toInt(), (Qt::PenStyle)m_lineStyle->value().toInt()));
     }
 
     painter->drawRect(QGraphicsRectItem::rect());
-    painter->setPen(foregroundColor->value().value<QColor>());
+    painter->setPen(m_foregroundColor->value().value<QColor>());
 
     drawHandles(painter);
 
@@ -138,19 +138,19 @@ void KReportDesignerItemLabel::buildXML(QDomDocument *doc, QDomElement *parent)
 
     // properties
     addPropertyAsAttribute(&entity, nameProperty());
-    addPropertyAsAttribute(&entity, text);
-    addPropertyAsAttribute(&entity, verticalAlignment);
-    addPropertyAsAttribute(&entity, horizontalAlignment);
+    addPropertyAsAttribute(&entity, m_text);
+    addPropertyAsAttribute(&entity, m_verticalAlignment);
+    addPropertyAsAttribute(&entity, m_horizontalAlignment);
     entity.setAttribute(QLatin1String("report:z-index"), z());
 
     // bounding rect
     buildXMLRect(doc, &entity, this);
 
     //text style info
-    buildXMLTextStyle(doc, &entity, textStyleValue());
+    buildXMLTextStyle(doc, &entity, textStyle());
 
     //Line Style
-    buildXMLLineStyle(doc, &entity, lineStyleValue());
+    buildXMLLineStyle(doc, &entity, lineStyle());
 
     parent->appendChild(entity);
 }
@@ -179,19 +179,19 @@ void KReportDesignerItemLabel::enterInlineEditingMode()
 {
     if (!m_inlineEdit->isVisible()) {
         m_inlineEdit->setVisible(true);
-        m_inlineEdit->setPlainText(textValue());
+        m_inlineEdit->setPlainText(text());
         m_inlineEdit->setFocus();
 
         QTextCursor c = m_inlineEdit->textCursor();
         c.select(QTextCursor::Document);
         m_inlineEdit->setTextCursor(c);
 
-        m_inlineEdit->setFont(font->value().value<QFont>());
-        m_inlineEdit->setDefaultTextColor(foregroundColor->value().value<QColor>());
-        m_inlineEdit->setBackgroudColor(backgroundColor->value().value<QColor>());
-        m_inlineEdit->setBackgroudOpacity(backgroundOpacity->value().toDouble() / 100.0);
-        m_inlineEdit->setForegroundColor(foregroundColor->value().value<QColor>());
-        m_inlineEdit->setFont(font->value().value<QFont>());
+        m_inlineEdit->setFont(m_font->value().value<QFont>());
+        m_inlineEdit->setDefaultTextColor(m_foregroundColor->value().value<QColor>());
+        m_inlineEdit->setBackgroudColor(m_backgroundColor->value().value<QColor>());
+        m_inlineEdit->setBackgroudOpacity(m_backgroundOpacity->value().toDouble() / 100.0);
+        m_inlineEdit->setForegroundColor(m_foregroundColor->value().value<QColor>());
+        m_inlineEdit->setFont(m_font->value().value<QFont>());
 
         update();
     }

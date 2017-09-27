@@ -42,9 +42,9 @@ public:
     QString itemDataSource() const override;
 
 protected:
-    KProperty * controlSource;
-    KProperty* resizeMode;
-    KProperty* staticImage;
+    KProperty * m_controlSource;
+    KProperty* m_resizeMode;
+    KProperty* m_staticImage;
 
     void setMode(const QString&);
     void setInlineImageData(const QByteArray &dat, const QString& = QString());

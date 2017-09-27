@@ -47,7 +47,7 @@ KReportSectionData::KReportSectionData(const QDomElement & elemSource, KReportDo
         return;
     }
 
-    backgroundColor->setValue(QColor(elemSource.attribute(QLatin1String("fo:background-color"))));
+    m_backgroundColor->setValue(QColor(elemSource.attribute(QLatin1String("fo:background-color"))));
 
     KReportPluginManager* manager = KReportPluginManager::self();
 
@@ -82,7 +82,7 @@ KReportSectionData::KReportSectionData(const QDomElement & elemSource, KReportDo
 
 KReportSectionData::~KReportSectionData()
 {
-    delete set;
+    delete m_set;
     qDeleteAll(m_objects);
 }
 
@@ -98,18 +98,18 @@ bool KReportSectionData::xLessThan(KReportItemBase* s1, KReportItemBase* s2)
 
 void KReportSectionData::createProperties(const QDomElement & elemSource)
 {
-    set = new KPropertySet(this);
-    KReportDesigner::addMetaProperties(set,
+    m_set = new KPropertySet(this);
+    KReportDesigner::addMetaProperties(m_set,
         tr("Section", "Report section"), QLatin1String("kreport-section-element"));
 
-    height = new KProperty("height", KReportUnit(KReportUnit::Type::Centimeter).fromUserValue(2.0), tr("Height"));
-    backgroundColor = new KProperty("background-color", QColor(Qt::white), tr("Background Color"));
-    height->setOption("unit", QLatin1String("cm"));
+    m_height = new KProperty("height", KReportUnit(KReportUnit::Type::Centimeter).fromUserValue(2.0), tr("Height"));
+    m_backgroundColor = new KProperty("background-color", QColor(Qt::white), tr("Background Color"));
+    m_height->setOption("unit", QLatin1String("cm"));
     if (!elemSource.isNull())
-        height->setValue(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:height"), QLatin1String("2.0cm"))));
+        m_height->setValue(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:height"), QLatin1String("2.0cm"))));
 
-    set->addProperty(height);
-    set->addProperty(backgroundColor);
+    m_set->addProperty(m_height);
+    m_set->addProperty(m_backgroundColor);
 }
 
 QString KReportSectionData::name() const

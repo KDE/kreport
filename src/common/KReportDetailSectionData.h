@@ -73,7 +73,7 @@ public:
 
     QString column;
     PageBreak pagebreak;
-    Qt::SortOrder sort;
+    Qt::SortOrder m_sort;
 
     KReportSectionData *groupHeader;
     KReportSectionData *groupFooter;

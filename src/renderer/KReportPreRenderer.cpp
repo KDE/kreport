@@ -40,21 +40,21 @@
 #include "kreport_debug.h"
 
 KReportPreRendererPrivate::KReportPreRendererPrivate(KReportPreRenderer *preRenderer)
- : preRenderer(preRenderer)
+ : m_preRenderer(preRenderer)
 {
-    valid = false;
-    document = nullptr;
-    reportDocument = nullptr;
-    page = nullptr;
-    yOffset = 0.0;
-    topMargin = bottomMargin = 0.0;
-    leftMargin = rightMargin = 0.0;
-    pageCounter = 0;
-    maxHeight = maxWidth = 0.0;
-    oneRecord = new KReportPrivate::OneRecordDataSource();
-    dataSource = nullptr;
+    m_valid = false;
+    m_document = nullptr;
+    m_reportDocument = nullptr;
+    m_page = nullptr;
+    m_yOffset = 0.0;
+    m_topMargin = m_bottomMargin = 0.0;
+    m_leftMargin = m_rightMargin = 0.0;
+    m_pageCounter = 0;
+    m_maxHeight = m_maxWidth = 0.0;
+    m_oneRecord = new KReportPrivate::OneRecordDataSource();
+    m_dataSource = nullptr;
 #ifdef KREPORT_SCRIPTING
-    scriptHandler = nullptr;
+    m_scriptHandler = nullptr;
 #endif
     asyncManager = new KReportPrivate::AsyncItemManager(this);
 
@@ -63,60 +63,60 @@ KReportPreRendererPrivate::KReportPreRendererPrivate(KReportPreRenderer *preRend
 
 KReportPreRendererPrivate::~KReportPreRendererPrivate()
 {
-    delete reportDocument;
-    delete document;
-    delete oneRecord;
-    postProcText.clear();
+    delete m_reportDocument;
+    delete m_document;
+    delete m_oneRecord;
+    m_postProcText.clear();
 }
 
 void KReportPreRendererPrivate::createNewPage()
 {
     //kreportDebug();
-    if (pageCounter > 0)
+    if (m_pageCounter > 0)
         finishCurPage(false);
 
-    pageCounter++;
+    m_pageCounter++;
 
 #ifdef KREPORT_SCRIPTING
     //Update the page count script value
-    scriptHandler->setPageNumber(pageCounter);
-    scriptHandler->newPage();
+    m_scriptHandler->setPageNumber(m_pageCounter);
+    m_scriptHandler->newPage();
 #endif
 
-    page = new OROPage(nullptr);
-    document->addPage(page);
+    m_page = new OROPage(nullptr);
+    m_document->addPage(m_page);
 
     //! @todo calculate past page
     bool lastPage = false;
 
-    yOffset = topMargin;
+    m_yOffset = m_topMargin;
 
-    if (pageCounter == 1 && reportDocument->section(KReportSectionData::Type::PageHeaderFirst))
-        renderSection(*(reportDocument->section(KReportSectionData::Type::PageHeaderFirst)));
-    else if (lastPage == true && reportDocument->section(KReportSectionData::Type::PageHeaderLast))
-        renderSection(*(reportDocument->section(KReportSectionData::Type::PageHeaderLast)));
-    else if ((pageCounter % 2) == 1 && reportDocument->section(KReportSectionData::Type::PageHeaderOdd))
-        renderSection(*(reportDocument->section(KReportSectionData::Type::PageHeaderOdd)));
-    else if ((pageCounter % 2) == 0 && reportDocument->section(KReportSectionData::Type::PageHeaderEven))
-        renderSection(*(reportDocument->section(KReportSectionData::Type::PageHeaderEven)));
-    else if (reportDocument->section(KReportSectionData::Type::PageHeaderAny))
-        renderSection(*(reportDocument->section(KReportSectionData::Type::PageHeaderAny)));
+    if (m_pageCounter == 1 && m_reportDocument->section(KReportSectionData::Type::PageHeaderFirst))
+        renderSection(*(m_reportDocument->section(KReportSectionData::Type::PageHeaderFirst)));
+    else if (lastPage == true && m_reportDocument->section(KReportSectionData::Type::PageHeaderLast))
+        renderSection(*(m_reportDocument->section(KReportSectionData::Type::PageHeaderLast)));
+    else if ((m_pageCounter % 2) == 1 && m_reportDocument->section(KReportSectionData::Type::PageHeaderOdd))
+        renderSection(*(m_reportDocument->section(KReportSectionData::Type::PageHeaderOdd)));
+    else if ((m_pageCounter % 2) == 0 && m_reportDocument->section(KReportSectionData::Type::PageHeaderEven))
+        renderSection(*(m_reportDocument->section(KReportSectionData::Type::PageHeaderEven)));
+    else if (m_reportDocument->section(KReportSectionData::Type::PageHeaderAny))
+        renderSection(*(m_reportDocument->section(KReportSectionData::Type::PageHeaderAny)));
 }
 
 qreal KReportPreRendererPrivate::finishCurPageSize(bool lastPage)
 {
     qreal retval = 0.0;
 
-    if (lastPage && reportDocument->section(KReportSectionData::Type::PageFooterLast))
-        retval = renderSectionSize(* (reportDocument->section(KReportSectionData::Type::PageFooterLast)));
-    else if (pageCounter == 1 && reportDocument->section(KReportSectionData::Type::PageFooterFirst))
-        retval = renderSectionSize(* (reportDocument->section(KReportSectionData::Type::PageFooterFirst)));
-    else if ((pageCounter % 2) == 1 && reportDocument->section(KReportSectionData::Type::PageFooterOdd))
-        retval = renderSectionSize(* (reportDocument->section(KReportSectionData::Type::PageFooterOdd)));
-    else if ((pageCounter % 2) == 0 && reportDocument->section(KReportSectionData::Type::PageFooterEven))
-        retval = renderSectionSize(* (reportDocument->section(KReportSectionData::Type::PageFooterEven)));
-    else if (reportDocument->section(KReportSectionData::Type::PageFooterAny))
-        retval = renderSectionSize(* (reportDocument->section(KReportSectionData::Type::PageFooterAny)));
+    if (lastPage && m_reportDocument->section(KReportSectionData::Type::PageFooterLast))
+        retval = renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterLast)));
+    else if (m_pageCounter == 1 && m_reportDocument->section(KReportSectionData::Type::PageFooterFirst))
+        retval = renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterFirst)));
+    else if ((m_pageCounter % 2) == 1 && m_reportDocument->section(KReportSectionData::Type::PageFooterOdd))
+        retval = renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterOdd)));
+    else if ((m_pageCounter % 2) == 0 && m_reportDocument->section(KReportSectionData::Type::PageFooterEven))
+        retval = renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterEven)));
+    else if (m_reportDocument->section(KReportSectionData::Type::PageFooterAny))
+        retval = renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterAny)));
 
     //kreportDebug() << retval;
     return retval;
@@ -125,30 +125,30 @@ qreal KReportPreRendererPrivate::finishCurPageSize(bool lastPage)
 qreal KReportPreRendererPrivate::finishCurPage(bool lastPage)
 {
 
-    qreal offset = maxHeight - bottomMargin;
+    qreal offset = m_maxHeight - m_bottomMargin;
     qreal retval = 0.0;
     //kreportDebug() << offset;
 
-    if (lastPage && reportDocument->section(KReportSectionData::Type::PageFooterLast)) {
+    if (lastPage && m_reportDocument->section(KReportSectionData::Type::PageFooterLast)) {
         //kreportDebug() << "Last Footer";
-        yOffset = offset - renderSectionSize(* (reportDocument->section(KReportSectionData::Type::PageFooterLast)));
-        retval = renderSection(* (reportDocument->section(KReportSectionData::Type::PageFooterLast)));
-    } else if (pageCounter == 1 && reportDocument->section(KReportSectionData::Type::PageFooterFirst)) {
+        m_yOffset = offset - renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterLast)));
+        retval = renderSection(* (m_reportDocument->section(KReportSectionData::Type::PageFooterLast)));
+    } else if (m_pageCounter == 1 && m_reportDocument->section(KReportSectionData::Type::PageFooterFirst)) {
         //kreportDebug() << "First Footer";
-        yOffset = offset - renderSectionSize(* (reportDocument->section(KReportSectionData::Type::PageFooterLast)));
-        retval = renderSection(* (reportDocument->section(KReportSectionData::Type::PageFooterFirst)));
-    } else if ((pageCounter % 2) == 1 && reportDocument->section(KReportSectionData::Type::PageFooterOdd)) {
+        m_yOffset = offset - renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterLast)));
+        retval = renderSection(* (m_reportDocument->section(KReportSectionData::Type::PageFooterFirst)));
+    } else if ((m_pageCounter % 2) == 1 && m_reportDocument->section(KReportSectionData::Type::PageFooterOdd)) {
         //kreportDebug() << "Odd Footer";
-        yOffset = offset - renderSectionSize(* (reportDocument->section(KReportSectionData::Type::PageFooterOdd)));
-        retval = renderSection(* (reportDocument->section(KReportSectionData::Type::PageFooterOdd)));
-    } else if ((pageCounter % 2) == 0 && reportDocument->section(KReportSectionData::Type::PageFooterEven)) {
+        m_yOffset = offset - renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterOdd)));
+        retval = renderSection(* (m_reportDocument->section(KReportSectionData::Type::PageFooterOdd)));
+    } else if ((m_pageCounter % 2) == 0 && m_reportDocument->section(KReportSectionData::Type::PageFooterEven)) {
         //kreportDebug() << "Even Footer";
-        yOffset = offset - renderSectionSize(* (reportDocument->section(KReportSectionData::Type::PageFooterEven)));
-        retval = renderSection(* (reportDocument->section(KReportSectionData::Type::PageFooterEven)));
-    } else if (reportDocument->section(KReportSectionData::Type::PageFooterAny)) {
+        m_yOffset = offset - renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterEven)));
+        retval = renderSection(* (m_reportDocument->section(KReportSectionData::Type::PageFooterEven)));
+    } else if (m_reportDocument->section(KReportSectionData::Type::PageFooterAny)) {
         //kreportDebug() << "Any Footer";
-        yOffset = offset - renderSectionSize(* (reportDocument->section(KReportSectionData::Type::PageFooterAny)));
-        retval = renderSection(* (reportDocument->section(KReportSectionData::Type::PageFooterAny)));
+        m_yOffset = offset - renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterAny)));
+        retval = renderSection(* (m_reportDocument->section(KReportSectionData::Type::PageFooterAny)));
     }
 
     return retval;
@@ -157,14 +157,14 @@ qreal KReportPreRendererPrivate::finishCurPage(bool lastPage)
 void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *detailData)
 {
     if (detailData->detailSection) {
-        if (dataSource/* && !curs->eof()*/) {
+        if (m_dataSource/* && !curs->eof()*/) {
             QStringList keys;
             QStringList keyValues;
             QList<int> shownGroups;
             KReportDetailGroupSectionData * grp = nullptr;
 
-            bool status = dataSource->moveFirst();
-            int recordCount = dataSource->recordCount();
+            bool status = m_dataSource->moveFirst();
+            int recordCount = m_dataSource->recordCount();
 
             //kreportDebug() << "Record Count:" << recordCount;
 
@@ -176,7 +176,7 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                     shownGroups << i;
                     keys.append(grp->column);
                     if (!keys.last().isEmpty())
-                        keyValues.append(dataSource->value(dataSource->fieldNumber(keys.last())).toString());
+                        keyValues.append(m_dataSource->value(m_dataSource->fieldNumber(keys.last())).toString());
                     else
                         keyValues.append(QString());
 
@@ -188,28 +188,28 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
             }
 
             while (status) {
-                const qint64 pos = dataSource->at();
-                //kreportDebug() << "At:" << l << "Y:" << yOffset << "Max Height:" << maxHeight;
+                const qint64 pos = m_dataSource->at();
+                //kreportDebug() << "At:" << l << "Y:" << m_yOffset << "Max Height:" << m_maxHeight;
                 if ((renderSectionSize(*detailData->detailSection)
                         + finishCurPageSize((pos + 1 == recordCount))
-                        + bottomMargin + yOffset) >= maxHeight)
+                        + m_bottomMargin + m_yOffset) >= m_maxHeight)
                 {
                     //kreportDebug() << "Next section is too big for this page";
                     if (pos > 0) {
-                        dataSource->movePrevious();
+                        m_dataSource->movePrevious();
                         createNewPage();
-                        dataSource->moveNext();
+                        m_dataSource->moveNext();
                     }
                 }
 
                 renderSection(*(detailData->detailSection));
-                status = dataSource->moveNext();
+                status = m_dataSource->moveNext();
 
                 if (status == true && keys.count() > 0) {
                     // check to see where it is we need to start
                     int pos = -1; // if it's still -1 by the time we are done then no keyValues changed
                     for (int i = 0; i < keys.count(); ++i) {
-                        if (keyValues[i] != dataSource->value(dataSource->fieldNumber(keys[i])).toString()) {
+                        if (keyValues[i] != m_dataSource->value(m_dataSource->fieldNumber(keys[i])).toString()) {
                             pos = i;
                             break;
                         }
@@ -217,7 +217,7 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                     // don't bother if nothing has changed
                     if (pos != -1) {
                         // roll back the query and go ahead if all is good
-                        status = dataSource->movePrevious();
+                        status = m_dataSource->movePrevious();
                         if (status == true) {
                             // print the footers as needed
                             // any changes made in this for loop need to be duplicated
@@ -230,7 +230,7 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                                 grp = detailData->groupList[shownGroups.at(i)];
 
                                 if (grp->groupFooter) {
-                                    if (renderSectionSize(*(grp->groupFooter)) + finishCurPageSize(false) + bottomMargin + yOffset >= maxHeight)
+                                    if (renderSectionSize(*(grp->groupFooter)) + finishCurPageSize(false) + m_bottomMargin + m_yOffset >= m_maxHeight)
                                         createNewPage();
                                     renderSection(*(grp->groupFooter));
                                 }
@@ -240,7 +240,7 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                             }
                             // step ahead to where we should be and print the needed headers
                             // if all is good
-                            status = dataSource->moveNext();
+                            status = m_dataSource->moveNext();
                             if (do_break)
                                 createNewPage();
                             if (status == true) {
@@ -248,14 +248,14 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                                     grp = detailData->groupList[shownGroups.at(i)];
 
                                     if (grp->groupHeader) {
-                                        if (renderSectionSize(*(grp->groupHeader)) + finishCurPageSize(false) + bottomMargin + yOffset >= maxHeight) {
-                                            dataSource->movePrevious();
+                                        if (renderSectionSize(*(grp->groupHeader)) + finishCurPageSize(false) + m_bottomMargin + m_yOffset >= m_maxHeight) {
+                                            m_dataSource->movePrevious();
                                             createNewPage();
-                                            dataSource->moveNext();
+                                            m_dataSource->moveNext();
                                         }
 
                                         if (!keys[i].isEmpty())
-                                            keyValues[i] = dataSource->value(dataSource->fieldNumber(keys[i])).toString();
+                                            keyValues[i] = m_dataSource->value(m_dataSource->fieldNumber(keys[i])).toString();
 
                                         //Tell interested parties thak key values changed
                                         renderSection(*(grp->groupHeader));
@@ -269,14 +269,14 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
                 }
             }
 
-            if (keys.size() > 0 && dataSource->movePrevious()) {
+            if (keys.size() > 0 && m_dataSource->movePrevious()) {
                 // finish footers
                 // duplicated changes from above here
                 for (int i = shownGroups.count() - 1; i >= 0; i--) {
                     grp = detailData->groupList[shownGroups.at(i)];
 
                     if (grp->groupFooter) {
-                        if (renderSectionSize(*(grp->groupFooter)) + finishCurPageSize(false) + bottomMargin + yOffset >= maxHeight)
+                        if (renderSectionSize(*(grp->groupFooter)) + finishCurPageSize(false) + m_bottomMargin + m_yOffset >= m_maxHeight)
                             createNewPage();
                         renderSection(*(grp->groupFooter));
                         emit(exitedGroup(keys[i], keyValues[i]));
@@ -291,22 +291,22 @@ void KReportPreRendererPrivate::renderDetailSection(KReportDetailSectionData *de
 
 qreal KReportPreRendererPrivate::renderSectionSize(const KReportSectionData & sectionData)
 {
-    qreal intHeight = POINT_TO_INCH(sectionData.heightValue()) * KReportPrivate::dpiX();
+    qreal intHeight = POINT_TO_INCH(sectionData.height()) * KReportPrivate::dpiX();
 
     if (sectionData.objects().count() == 0)
         return intHeight;
 
     QList<KReportItemBase*> objects = sectionData.objects();
     foreach(KReportItemBase *ob, objects) {
-        QPointF offset(leftMargin, yOffset);
+        QPointF offset(m_leftMargin, m_yOffset);
         //ASync objects cannot alter the section height
         KReportAsyncItemBase *async_ob = qobject_cast<KReportAsyncItemBase*>(ob);
         if (!async_ob) {
             QVariant itemData;
-            if (dataSource) {
-                itemData = dataSource->value(ob->itemDataSource());
+            if (m_dataSource) {
+                itemData = m_dataSource->value(ob->itemDataSource());
             }
-            const int itemHeight = ob->renderSimpleData(nullptr, nullptr, offset, itemData, scriptHandler);
+            const int itemHeight = ob->renderSimpleData(nullptr, nullptr, offset, itemData, m_scriptHandler);
             if (itemHeight > intHeight) {
                 intHeight = itemHeight;
             }
@@ -318,44 +318,44 @@ qreal KReportPreRendererPrivate::renderSectionSize(const KReportSectionData & se
 
 qreal KReportPreRendererPrivate::renderSection(const KReportSectionData & sectionData)
 {
-    qreal sectionHeight = POINT_TO_INCH(sectionData.heightValue()) * KReportPrivate::dpiX();
+    qreal sectionHeight = POINT_TO_INCH(sectionData.height()) * KReportPrivate::dpiX();
 
     int itemHeight = 0;
     //kreportDebug() << "Name: " << sectionData.name() << " Height: " << sectionHeight
     //         << "Objects: " << sectionData.objects().count();
-    emit(renderingSection(const_cast<KReportSectionData*>(&sectionData), page, QPointF(leftMargin, yOffset)));
+    emit(renderingSection(const_cast<KReportSectionData*>(&sectionData), m_page, QPointF(m_leftMargin, m_yOffset)));
 
     //Create a pre-rendered section for this section and add it to the document
-    OROSection *sec = new OROSection(document);
-    sec->setHeight(sectionData.heightValue());
-    sec->setBackgroundColor(sectionData.backgroundColorValue());
+    OROSection *sec = new OROSection(m_document);
+    sec->setHeight(sectionData.height());
+    sec->setBackgroundColor(sectionData.backgroundColor());
     sec->setType(sectionData.type());
-    document->addSection(sec);
+    m_document->addSection(sec);
 
     //Render section background
     ORORect* bg = new ORORect();
     bg->setPen(QPen(Qt::NoPen));
-    bg->setBrush(sectionData.backgroundColorValue());
-    qreal w = page->document()->pageLayout().fullRectPixels(KReportPrivate::dpiX()).width() - page->document()->pageLayout().marginsPixels(KReportPrivate::dpiX()).right() - leftMargin;
+    bg->setBrush(sectionData.backgroundColor());
+    qreal w = m_page->document()->pageLayout().fullRectPixels(KReportPrivate::dpiX()).width() - m_page->document()->pageLayout().marginsPixels(KReportPrivate::dpiX()).right() - m_leftMargin;
 
-    bg->setRect(QRectF(leftMargin, yOffset, w, sectionHeight));
-    page->insertPrimitive(bg, true);
+    bg->setRect(QRectF(m_leftMargin, m_yOffset, w, sectionHeight));
+    m_page->insertPrimitive(bg, true);
 
     QList<KReportItemBase*> objects = sectionData.objects();
     foreach(KReportItemBase *ob, objects) {
-        QPointF offset(leftMargin, yOffset);
-        QVariant itemData = dataSource->value(ob->itemDataSource());
+        QPointF offset(m_leftMargin, m_yOffset);
+        QVariant itemData = m_dataSource->value(ob->itemDataSource());
 
         if (ob->supportsSubQuery()) {
-           itemHeight = ob->renderReportData(page, sec, offset, dataSource, scriptHandler);
+           itemHeight = ob->renderReportData(m_page, sec, offset, m_dataSource, m_scriptHandler);
         } else {
             KReportAsyncItemBase *async_ob = qobject_cast<KReportAsyncItemBase*>(ob);
             if (async_ob){
                 //kreportDebug() << "async object";
-                asyncManager->addItem(async_ob, page, sec, offset, async_ob->realItemData(itemData), scriptHandler);
+                asyncManager->addItem(async_ob, m_page, sec, offset, async_ob->realItemData(itemData), m_scriptHandler);
             } else {
                 //kreportDebug() << "sync object";
-                itemHeight = ob->renderSimpleData(page, sec, offset, itemData, scriptHandler);
+                itemHeight = ob->renderSimpleData(m_page, sec, offset, itemData, m_scriptHandler);
             }
         }
 
@@ -363,15 +363,15 @@ qreal KReportPreRendererPrivate::renderSection(const KReportSectionData & sectio
             sectionHeight = itemHeight;
         }
     }
-    for (int i = 0; i < page->primitiveCount(); ++i) {
-        OROPrimitive *prim = page->primitive(i);
+    for (int i = 0; i < m_page->primitiveCount(); ++i) {
+        OROPrimitive *prim = m_page->primitive(i);
         if (OROTextBox *text = dynamic_cast<OROTextBox*>(prim)) {
             if (text->requiresPostProcessing()) {
-                postProcText.append(text);
+                m_postProcText.append(text);
             }
         }
     }
-    yOffset += sectionHeight;
+    m_yOffset += sectionHeight;
 
     return sectionHeight;
 }
@@ -379,14 +379,14 @@ qreal KReportPreRendererPrivate::renderSection(const KReportSectionData & sectio
 #ifdef KREPORT_SCRIPTING
 void KReportPreRendererPrivate::initEngine()
 {
-    delete scriptHandler;
-    scriptHandler = new KReportScriptHandler(dataSource, scriptSource, reportDocument);
+    delete m_scriptHandler;
+    m_scriptHandler = new KReportScriptHandler(m_dataSource, scriptSource, m_reportDocument);
 
-    connect(this, SIGNAL(enteredGroup(QString,QVariant)), scriptHandler, SLOT(slotEnteredGroup(QString,QVariant)));
+    connect(this, SIGNAL(enteredGroup(QString,QVariant)), m_scriptHandler, SLOT(slotEnteredGroup(QString,QVariant)));
 
-    connect(this, SIGNAL(exitedGroup(QString,QVariant)), scriptHandler, SLOT(slotExitedGroup(QString,QVariant)));
+    connect(this, SIGNAL(exitedGroup(QString,QVariant)), m_scriptHandler, SLOT(slotExitedGroup(QString,QVariant)));
 
-    connect(this, SIGNAL(renderingSection(KReportSectionData*,OROPage*,QPointF)), scriptHandler, SLOT(slotEnteredSection(KReportSectionData*,OROPage*,QPointF)));
+    connect(this, SIGNAL(renderingSection(KReportSectionData*,OROPage*,QPointF)), m_scriptHandler, SLOT(slotEnteredSection(KReportSectionData*,OROPage*,QPointF)));
 }
 #endif
 
@@ -399,100 +399,100 @@ void KReportPreRendererPrivate::asyncItemsFinished()
 
 bool KReportPreRendererPrivate::generateDocument()
 {
-    if (!dataSource) {
-        dataSource = oneRecord;
+    if (!m_dataSource) {
+        m_dataSource = m_oneRecord;
     }
 
-    if (!valid || !reportDocument) {
+    if (!m_valid || !m_reportDocument) {
         return false;
     }
 
     // Do this check now so we don't have to undo a lot of work later if it fails
     KReportLabelSizeInfo label;
-    if (reportDocument->pageSize() == QLatin1String("Labels")) {
-        label = KReportLabelSizeInfo::find(reportDocument->labelType());
+    if (m_reportDocument->pageSize() == QLatin1String("Labels")) {
+        label = KReportLabelSizeInfo::find(m_reportDocument->labelType());
         if (label.isNull()) {
             return false;
         }
     }
     //kreportDebug() << "Creating Document";
-    document = new ORODocument(reportDocument->title());
+    m_document = new ORODocument(m_reportDocument->title());
 
-    pageCounter  = 0;
-    yOffset      = 0.0;
+    m_pageCounter  = 0;
+    m_yOffset      = 0.0;
 
     //kreportDebug() << "Calculating Margins";
     if (!label.isNull()) {
-        if (reportDocument->pageLayout().orientation() == QPageLayout::Portrait) {
-            topMargin = (label.startY() / 100.0);
-            bottomMargin = 0;
-            rightMargin = 0;
-            leftMargin = (label.startX() / 100.0);
+        if (m_reportDocument->pageLayout().orientation() == QPageLayout::Portrait) {
+            m_topMargin = (label.startY() / 100.0);
+            m_bottomMargin = 0;
+            m_rightMargin = 0;
+            m_leftMargin = (label.startX() / 100.0);
         } else {
-            topMargin = (label.startX() / 100.0);
-            bottomMargin = 0;
-            rightMargin = 0;
-            leftMargin = (label.startY() / 100.0);
+            m_topMargin = (label.startX() / 100.0);
+            m_bottomMargin = 0;
+            m_rightMargin = 0;
+            m_leftMargin = (label.startY() / 100.0);
         }
     } else {
 
-        topMargin    = reportDocument->pageLayout().marginsPoints().top();
-        bottomMargin = reportDocument->pageLayout().marginsPoints().bottom();
-        rightMargin  = reportDocument->pageLayout().marginsPoints().right();
-        leftMargin   = reportDocument->pageLayout().marginsPoints().left();
-        //kreportDebug() << "Margins:" << topMargin << bottomMargin << rightMargin << leftMargin;
+        m_topMargin    = m_reportDocument->pageLayout().marginsPoints().top();
+        m_bottomMargin = m_reportDocument->pageLayout().marginsPoints().bottom();
+        m_rightMargin  = m_reportDocument->pageLayout().marginsPoints().right();
+        m_leftMargin   = m_reportDocument->pageLayout().marginsPoints().left();
+        //kreportDebug() << "Margins:" << m_topMargin << m_bottomMargin << m_rightMargin << m_leftMargin;
      }
 
     //kreportDebug() << "Calculating Page Size";
-    QPageLayout layout =  reportDocument->pageLayout();
+    QPageLayout layout =  m_reportDocument->pageLayout();
     // This should reflect the information of the report page size
-    if (reportDocument->pageSize() == QLatin1String("Custom")) {
-        maxWidth = reportDocument->pageLayout().fullRectPoints().width();
-        maxHeight = reportDocument->pageLayout().fullRectPoints().height();
+    if (m_reportDocument->pageSize() == QLatin1String("Custom")) {
+        m_maxWidth = m_reportDocument->pageLayout().fullRectPoints().width();
+        m_maxHeight = m_reportDocument->pageLayout().fullRectPoints().height();
     } else {
         if (!label.isNull()) {
-            maxWidth = label.width();
-            maxHeight = label.height();
-            reportDocument->pageLayout().setPageSize(QPageSize(KReportPageSize::pageSize(label.paper())));
+            m_maxWidth = label.width();
+            m_maxHeight = label.height();
+            m_reportDocument->pageLayout().setPageSize(QPageSize(KReportPageSize::pageSize(label.paper())));
         } else {
             // lookup the correct size information for the specified size paper
-            QSizeF pageSizePx = reportDocument->pageLayout().fullRectPixels(KReportPrivate::dpiX()).size();
+            QSizeF pageSizePx = m_reportDocument->pageLayout().fullRectPixels(KReportPrivate::dpiX()).size();
 
-            maxWidth = pageSizePx.width();
-            maxHeight = pageSizePx.height();
+            m_maxWidth = pageSizePx.width();
+            m_maxHeight = pageSizePx.height();
         }
     }
 
-    if (reportDocument->pageLayout().orientation() == QPageLayout::Landscape) {
-        qreal tmp = maxWidth;
-        maxWidth = maxHeight;
-        maxHeight = tmp;
+    if (m_reportDocument->pageLayout().orientation() == QPageLayout::Landscape) {
+        qreal tmp = m_maxWidth;
+        m_maxWidth = m_maxHeight;
+        m_maxHeight = tmp;
     }
 
-    //kreportDebug() << "Page Size:" << maxWidth << maxHeight;
+    //kreportDebug() << "Page Size:" << m_maxWidth << m_maxHeight;
 
-    document->setPageLayout(reportDocument->pageLayout());
-    dataSource->setSorting(reportDocument->detail()->sortedFields);
-    if (!dataSource->open()) {
+    m_document->setPageLayout(m_reportDocument->pageLayout());
+    m_dataSource->setSorting(m_reportDocument->detail()->sortedFields);
+    if (!m_dataSource->open()) {
         return false;
     }
 
     #ifdef KREPORT_SCRIPTING
     initEngine();
-    connect(scriptHandler, SIGNAL(groupChanged(QMap<QString, QVariant>)),
-            preRenderer, SIGNAL(groupChanged(QMap<QString, QVariant>)));
+    connect(m_scriptHandler, SIGNAL(groupChanged(QMap<QString, QVariant>)),
+            m_preRenderer, SIGNAL(groupChanged(QMap<QString, QVariant>)));
 
     //Loop through all abjects that have been registered, and register them with the script handler
-    if (scriptHandler) {
-        QMapIterator<QString, QObject*> i(scriptObjects);
+    if (m_scriptHandler) {
+        QMapIterator<QString, QObject*> i(m_scriptObjects);
         while (i.hasNext()) {
             i.next();
-            scriptHandler->registerScriptObject(i.value(), i.key());
+            m_scriptHandler->registerScriptObject(i.value(), i.key());
         }
         //execute the script, if it fails, abort and return the empty document
-        if (!scriptHandler->trigger()) {
-            scriptHandler->displayErrors();
-            return document;
+        if (!m_scriptHandler->trigger()) {
+            m_scriptHandler->displayErrors();
+            return m_document;
         }
     }
     #endif
@@ -502,9 +502,9 @@ bool KReportPreRendererPrivate::generateDocument()
         // Label Print Run
         // remember the initial margin setting as we will be modifying
         // the value and restoring it as we move around
-        qreal margin = leftMargin;
+        qreal margin = m_leftMargin;
 
-        yOffset = topMargin;
+        m_yOffset = m_topMargin;
 
         qreal w = (label.width() / 100.0);
         qreal wg = (label.xGap() / 100.0);
@@ -515,7 +515,7 @@ bool KReportPreRendererPrivate::generateDocument()
         qreal tmp;
 
         // flip the value around if we are printing landscape
-        if (!(reportDocument->pageLayout().orientation() == QPageLayout::Portrait)) {
+        if (!(m_reportDocument->pageLayout().orientation() == QPageLayout::Portrait)) {
             w = (label.height() / 100.0);
             wg = (label.yGap() / 100.0);
             h = (label.width() / 100.0);
@@ -524,9 +524,9 @@ bool KReportPreRendererPrivate::generateDocument()
             numRows = label.columns();
         }
 
-        KReportDetailSectionData * detailData = reportDocument->detail();
+        KReportDetailSectionData * detailData = m_reportDocument->detail();
         if (detailData->detailSection) {
-            KReportDataSource *mydata = dataSource;
+            KReportDataSource *mydata = m_dataSource;
 
             if (mydata && mydata->recordCount() > 0) { /* && !((query = orqThis->getQuery())->eof()))*/
                 if (!mydata->moveFirst()) {
@@ -535,19 +535,19 @@ bool KReportPreRendererPrivate::generateDocument()
                 int row = 0;
                 int col = 0;
                 do {
-                    tmp = yOffset; // store the value as renderSection changes it
+                    tmp = m_yOffset; // store the value as renderSection changes it
                     renderSection(*(detailData->detailSection));
-                    yOffset = tmp; // restore the value that renderSection modified
+                    m_yOffset = tmp; // restore the value that renderSection modified
 
                     col++;
-                    leftMargin += w + wg;
+                    m_leftMargin += w + wg;
                     if (col >= numCols) {
-                        leftMargin = margin; // reset back to original value
+                        m_leftMargin = margin; // reset back to original value
                         col = 0;
                         row++;
-                        yOffset += h + hg;
+                        m_yOffset += h + hg;
                         if (row >= numRows) {
-                            yOffset = topMargin;
+                            m_yOffset = m_topMargin;
                             row = 0;
                             createNewPage();
                         }
@@ -558,19 +558,19 @@ bool KReportPreRendererPrivate::generateDocument()
 
     } else {
         // Normal Print Run
-        if (reportDocument->section(KReportSectionData::Type::ReportHeader)) {
-            renderSection(*(reportDocument->section(KReportSectionData::Type::ReportHeader)));
+        if (m_reportDocument->section(KReportSectionData::Type::ReportHeader)) {
+            renderSection(*(m_reportDocument->section(KReportSectionData::Type::ReportHeader)));
         }
 
-        if (reportDocument->detail()) {
-            renderDetailSection(reportDocument->detail());
+        if (m_reportDocument->detail()) {
+            renderDetailSection(m_reportDocument->detail());
         }
 
-        if (reportDocument->section(KReportSectionData::Type::ReportFooter)) {
-            if (renderSectionSize(*(reportDocument->section(KReportSectionData::Type::ReportFooter))) + finishCurPageSize(true) + bottomMargin + yOffset >= maxHeight) {
+        if (m_reportDocument->section(KReportSectionData::Type::ReportFooter)) {
+            if (renderSectionSize(*(m_reportDocument->section(KReportSectionData::Type::ReportFooter))) + finishCurPageSize(true) + m_bottomMargin + m_yOffset >= m_maxHeight) {
                 createNewPage();
             }
-            renderSection(*(reportDocument->section(KReportSectionData::Type::ReportFooter)));
+            renderSection(*(m_reportDocument->section(KReportSectionData::Type::ReportFooter)));
         }
     }
     finishCurPage(true);
@@ -578,36 +578,36 @@ bool KReportPreRendererPrivate::generateDocument()
     #ifdef KREPORT_SCRIPTING
     // _postProcText contains those text boxes that need to be updated
     // with information that wasn't available at the time it was added to the document
-    scriptHandler->setPageTotal(document->pageCount());
+    m_scriptHandler->setPageTotal(m_document->pageCount());
 
-    for (int i = 0; i < postProcText.size(); i++) {
-        OROTextBox * tb = postProcText.at(i);
+    for (int i = 0; i < m_postProcText.size(); i++) {
+        OROTextBox * tb = m_postProcText.at(i);
 
-        scriptHandler->setPageNumber(tb->page()->pageNumber() + 1);
+        m_scriptHandler->setPageNumber(tb->page()->pageNumber() + 1);
 
-        tb->setText(scriptHandler->evaluate(tb->text()).toString());
+        tb->setText(m_scriptHandler->evaluate(tb->text()).toString());
     }
     #endif
 
     asyncManager->startRendering();
 
     #ifdef KREPORT_SCRIPTING
-    scriptHandler->displayErrors();
+    m_scriptHandler->displayErrors();
     #endif
 
-    if (!dataSource->close()) {
+    if (!m_dataSource->close()) {
         return false;
     }
     #ifdef KREPORT_SCRIPTING
-    delete scriptHandler;
-    scriptHandler = nullptr;
+    delete m_scriptHandler;
+    m_scriptHandler = nullptr;
     #endif
 
-    if (dataSource != oneRecord) {
-        delete dataSource;
-        dataSource = nullptr;
+    if (m_dataSource != m_oneRecord) {
+        delete m_dataSource;
+        m_dataSource = nullptr;
     }
-    postProcText.clear();
+    m_postProcText.clear();
 
     return true;
 }
@@ -627,36 +627,36 @@ KReportPreRenderer::~KReportPreRenderer()
 
 void KReportPreRenderer::setName(const QString &n)
 {
-    d->reportDocument->setName(n);
+    d->m_reportDocument->setName(n);
 }
 
 bool KReportPreRenderer::isValid() const
 {
-    if (d && d->valid)
+    if (d && d->m_valid)
         return true;
     return false;
 }
 
 ORODocument* KReportPreRenderer::document()
 {
-    return d->document;
+    return d->m_document;
 }
 
 bool KReportPreRenderer::generateDocument()
 {
-//    delete d->document;
+//    delete d->m_document;
     if (!d->generateDocument()) {
-        delete d->document;
-        d->document = nullptr;
+        delete d->m_document;
+        d->m_document = nullptr;
     }
-    return d->document;
+    return d->m_document;
 }
 
 void KReportPreRenderer::setDataSource(KReportDataSource *dataSource)
 {
-    if (d && dataSource != d->dataSource) {
-        delete d->dataSource;
-        d->dataSource = dataSource;
+    if (d && dataSource != d->m_dataSource) {
+        delete d->m_dataSource;
+        d->m_dataSource = dataSource;
     }
 }
 
@@ -670,16 +670,16 @@ void KReportPreRenderer::setScriptSource(KReportScriptSource *source)
 
 bool KReportPreRenderer::setDocument(const QDomElement &document)
 {
-    delete d->document;
-    d->valid = false;
+    delete d->m_document;
+    d->m_valid = false;
 
     if (document.tagName() != QLatin1String("report:content")) {
         kreportWarning() << "report schema is invalid";
         return false;
     }
 
-    d->reportDocument = new KReportDocument(document);
-    d->valid = d->reportDocument->isValid();
+    d->m_reportDocument = new KReportDocument(document);
+    d->m_valid = d->m_reportDocument->isValid();
     return isValid();
 }
 
@@ -687,16 +687,16 @@ bool KReportPreRenderer::setDocument(const QDomElement &document)
 void KReportPreRenderer::registerScriptObject(QObject* obj, const QString& name)
 {
     //kreportDebug() << name;
-    d->scriptObjects[name] = obj;
+    d->m_scriptObjects[name] = obj;
 }
 
 KReportScriptHandler *KReportPreRenderer::scriptHandler()
 {
-    return d->scriptHandler;
+    return d->m_scriptHandler;
 }
 #endif
 
 const KReportDocument* KReportPreRenderer::reportData() const
 {
-    return d->reportDocument;
+    return d->m_reportDocument;
 }

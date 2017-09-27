@@ -39,23 +39,23 @@ Section::~Section()
 
 QColor Section::backgroundColor() const
 {
-    return m_section->backgroundColor->value().value<QColor>();
+    return m_section->m_backgroundColor->value().value<QColor>();
 }
 
 void   Section::setBackgroundColor(const QColor &c)
 {
     //kreportDebug() << c.name();
-    m_section->backgroundColor->setValue(c);
+    m_section->m_backgroundColor->setValue(c);
 }
 
 qreal Section::height() const
 {
-    return m_section->height->value().toDouble();
+    return m_section->m_height->value().toDouble();
 }
 
 void Section::setHeight(qreal h)
 {
-    m_section->height->setValue(h);
+    m_section->m_height->setValue(h);
 }
 
 QString Section::name() const
@@ -63,32 +63,33 @@ QString Section::name() const
     return m_section->objectName();
 }
 
-QObject* Section::objectAt(int i)
+QObject* Section::objectByNumber(int i)
 {
-    if (m_section->objects()[i]->typeName() == QLatin1String("line")) {
-        return new Scripting::Line(dynamic_cast<KReportItemLine *>(m_section->objects()[i]));
-    } else {
-        KReportPluginManager *manager = KReportPluginManager::self();
-        KReportPluginInterface *plugin = manager->plugin(m_section->objects()[i]->typeName());
+    if (m_section->m_objects[i]->typeName() == QLatin1String("line")) {
+                return new Scripting::Line(dynamic_cast<KReportItemLine*>(m_section->m_objects[i]));
+    }
+    else {
+        KReportPluginManager* manager = KReportPluginManager::self();
+        KReportPluginInterface *plugin = manager->plugin(m_section->m_objects[i]->typeName());
         if (plugin) {
-            QObject *obj = plugin->createScriptInstance(m_section->objects()[i]);
+            QObject *obj = plugin->createScriptInstance(m_section->m_objects[i]);
             if (obj) {
                 return obj;
             }
-        } else {
-            kreportWarning() << "Encountered unknown node while parsing section:"
-                             << m_section->objects()[i]->typeName();
+        }
+        else {
+            kreportWarning() << "Encountered unknown node while parsing section: " << m_section->m_objects[i]->typeName();
         }
     }
 
     return new QObject();
 }
 
-QObject* Section::objectForName(const QString& n)
+QObject* Section::objectByName(const QString& n)
 {
     for (int i = 0; i < m_section->objects().count(); ++i) {
-        if (m_section->objects()[i]->entityName() == n) {
-            return objectAt(i);
+        if (m_section->m_objects[i]->entityName() == n) {
+            return objectByNumber(i);
         }
     }
     return nullptr;
