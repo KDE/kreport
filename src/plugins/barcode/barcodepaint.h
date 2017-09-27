@@ -25,30 +25,30 @@
 //
 // i2of5
 //
-void renderI2of5(const QRectF &, const QString &, int align, QPainter *);
+void renderI2of5(const QRectF &, const QString &, Qt::Alignment align, QPainter *);
 
 //
 // 3of9
 //
-void render3of9(const QRect &, const QString &, int align, QPainter *);
+void render3of9(const QRect &, const QString &, Qt::Alignment align, QPainter *);
 
 //
 // 3of9+
 //
-void renderExtended3of9(const QRect &, const QString &, int align, QPainter *);
+void renderExtended3of9(const QRect &, const QString &, Qt::Alignment align, QPainter *);
 
 //
 // Code 128
 //
-void renderCode128(const QRect &, const QString &, int align, QPainter *);
+void renderCode128(const QRect &, const QString &, Qt::Alignment align, QPainter *);
 
 //
 // Code EAN/UPC
 //
-void renderCodeEAN13(const QRect &, const QString &, int align, QPainter *);
-void renderCodeEAN8(const QRect &, const QString &, int align, QPainter *);
-void renderCodeUPCA(const QRect &, const QString &, int align, QPainter *);
-void renderCodeUPCE(const QRect &, const QString &, int align, QPainter *);
+void renderCodeEAN13(const QRect &, const QString &, Qt::Alignment align, QPainter *);
+void renderCodeEAN8(const QRect &, const QString &, Qt::Alignment align, QPainter *);
+void renderCodeUPCA(const QRect &, const QString &, Qt::Alignment align, QPainter *);
+void renderCodeUPCE(const QRect &, const QString &, Qt::Alignment align, QPainter *);
 
 #endif
 

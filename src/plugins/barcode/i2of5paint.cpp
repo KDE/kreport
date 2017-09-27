@@ -61,7 +61,7 @@ static QPointF addSpace(const QRectF &r, QPointF startPos, qreal width, QPainter
 }
 
 
-void renderI2of5(const QRectF &r, const QString & _str, int align, QPainter * pPainter)
+void renderI2of5(const QRectF &r, const QString & _str, Qt::Alignment align, QPainter * pPainter)
 {
     QString str = _str;
     qreal narrow_bar = 1; // a narrow bar is 1/100th inch wide
@@ -103,16 +103,16 @@ void renderI2of5(const QRectF &r, const QString & _str, int align, QPainter * pP
     // to the right
     //
     // calculate the starting position based on the alignment option
-    if (align == 1) { // center
+    if (align == Qt::AlignHCenter) {
         int nqz = (draw_width - L) / 2.0;
         if (nqz > quiet_zone) {
             quiet_zone = nqz;
         }
     }
-    else if (align > 1) { // right
+    else if (align == Qt::AlignRight) {
         quiet_zone = draw_width - (L + quiet_zone);
     }
-    //else if (align < 1) {} // left : do nothing
+    // left : do nothing
 
     if (pPainter) {
         pPainter->save();

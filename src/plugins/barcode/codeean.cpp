@@ -83,7 +83,7 @@ static const int _upcparenc[10][2][6] = {
 //! @todo New Renderer Functions
 ////////////////////////////////////////////////////////
 
-void renderCodeEAN13(OROPage * page, const QRectF & r, const QString & _str, int align)
+void renderCodeEAN13(OROPage * page, const QRectF & r, const QString & _str, Qt::Alignment align)
 {
     int val[13];
 
@@ -151,13 +151,14 @@ void renderCodeEAN13(OROPage * page, const QRectF & r, const QString & _str, int
     //
     // calculate the starting position based on the alignment option
     // for left align we don't need to do anything as the values are already setup for it
-    if (align == 1) { // center
+    if (align == Qt::AlignHCenter) {
         qreal nqz = (draw_width - L) / 2;
         if (nqz > quiet_zone)
             quiet_zone = nqz;
-    } else if (align > 1) // right
+    } else if (align == Qt::AlignRight) {
         quiet_zone = draw_width - (L + quiet_zone);
-    // else if(align < 1) {} // left : do nothing
+    }
+    // left : do nothing
 
     qreal pos = r.left() + quiet_zone;
     qreal top = r.top();
@@ -279,7 +280,7 @@ void renderCodeEAN13(OROPage * page, const QRectF & r, const QString & _str, int
     page->insertPrimitive(tb);
 }
 
-void renderCodeUPCA(OROPage * page, const QRectF & r, const QString & _str, int align)
+void renderCodeUPCA(OROPage * page, const QRectF & r, const QString & _str, Qt::Alignment align)
 {
     int val[13];
 
@@ -347,13 +348,14 @@ void renderCodeUPCA(OROPage * page, const QRectF & r, const QString & _str, int 
     //
     // calculate the starting position based on the alignment option
     // for left align we don't need to do anything as the values are already setup for it
-    if (align == 1) { // center
+    if (align == Qt::AlignHCenter) {
         qreal nqz = (draw_width - L) / 2;
         if (nqz > quiet_zone)
             quiet_zone = nqz;
-    } else if (align > 1) // right
+    } else if (align == Qt::AlignRight) {
         quiet_zone = draw_width - (L + quiet_zone);
-    // else if(align < 1) {} // left : do nothing
+    }
+    // left : do nothing
 
     qreal pos = r.left() + quiet_zone;
     qreal top = r.top();
@@ -486,7 +488,7 @@ void renderCodeUPCA(OROPage * page, const QRectF & r, const QString & _str, int 
     page->insertPrimitive(tb);
 }
 
-void renderCodeEAN8(OROPage * page, const QRectF & r, const QString & _str, int align)
+void renderCodeEAN8(OROPage * page, const QRectF & r, const QString & _str, Qt::Alignment align)
 {
     int val[8];
 
@@ -555,13 +557,14 @@ void renderCodeEAN8(OROPage * page, const QRectF & r, const QString & _str, int 
     //
     // calculate the starting position based on the alignment option
     // for left align we don't need to do anything as the values are already setup for it
-    if (align == 1) { // center
+    if (align ==  Qt::AlignHCenter) {
         qreal nqz = (draw_width - L) / 2;
         if (nqz > quiet_zone)
             quiet_zone = nqz;
-    } else if (align > 1) // right
+    } else if (align == Qt::AlignRight) {
         quiet_zone = draw_width - (L + quiet_zone);
-    // else if(align < 1) {} // left : do nothing
+    }
+    // left : do nothing
 
     qreal pos = r.left() + quiet_zone;
     qreal top = r.top();
@@ -673,7 +676,7 @@ void renderCodeEAN8(OROPage * page, const QRectF & r, const QString & _str, int 
     page->insertPrimitive(tb);
 }
 
-void renderCodeUPCE(OROPage * page, const QRectF & r, const QString & _str, int align)
+void renderCodeUPCE(OROPage * page, const QRectF & r, const QString & _str, Qt::Alignment align)
 {
     int val[8];
 
@@ -734,13 +737,14 @@ void renderCodeUPCE(OROPage * page, const QRectF & r, const QString & _str, int 
     //
     // calculate the starting position based on the alignment option
     // for left align we don't need to do anything as the values are already setup for it
-    if (align == 1) { // center
+    if (align == Qt::AlignHCenter) {
         qreal nqz = (draw_width - L) / 2;
         if (nqz > quiet_zone)
             quiet_zone = nqz;
-    } else if (align > 1) // right
+    } else if (align == Qt::AlignRight) {
         quiet_zone = draw_width - (L + quiet_zone);
-    // else if(align < 1) {} // left : do nothing
+    }
+    // left : do nothing
 
     qreal pos = r.left() + quiet_zone;
     qreal top = r.top();

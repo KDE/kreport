@@ -50,11 +50,11 @@ protected:
     KProperty* m_itemValue;
 
 
-    int alignment();
-    void setAlignment(int);
-    int maxLength();
+    Qt::Alignment horizontalAlignment() const;
+    void setHorizontalAlignment(Qt::Alignment value);
+    int maxLength() const;
     void setMaxLength(int i);
-    QString format();
+    QString format() const;
     void setFormat(const QString&);
 
     // all these values are in inches and

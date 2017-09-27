@@ -31,7 +31,7 @@
 
 QString convertTo3of9(const QString &str);
 
-void renderExtended3of9(const QRect & r, const QString & str, int align, QPainter * pPainter)
+void renderExtended3of9(const QRect & r, const QString & str, Qt::Alignment align, QPainter * pPainter)
 {
     render3of9(r, convertTo3of9(str), align, pPainter);
 }

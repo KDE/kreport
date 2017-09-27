@@ -188,7 +188,7 @@ QString convertTo3of9(const QString &str)
     return result;
 }
 
-void renderExtended3of9(OROPage * page, const QRectF & r, const QString & str, int align)
+void renderExtended3of9(OROPage * page, const QRectF & r, const QString & str, Qt::Alignment align)
 {
     render3of9(page, r, convertTo3of9(str), align);
 }

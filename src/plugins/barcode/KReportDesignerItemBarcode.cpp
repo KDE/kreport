@@ -104,21 +104,21 @@ void KReportDesignerItemBarcode::paint(QPainter* painter,
 
     QByteArray fmt = m_format->value().toByteArray();
     if (fmt == "i2of5") {
-        renderI2of5(rect().toRect(), renderText(), alignment(), painter);
+        renderI2of5(rect().toRect(), renderText(), horizontalAlignment(), painter);
     } else if (fmt == "3of9") {
-        render3of9(rect().toRect(), renderText(), alignment(), painter);
+        render3of9(rect().toRect(), renderText(), horizontalAlignment(), painter);
     } else if (fmt == "3of9+") {
-        renderExtended3of9(rect().toRect(), renderText(), alignment(), painter);
+        renderExtended3of9(rect().toRect(), renderText(), horizontalAlignment(), painter);
     } else if (fmt == "128") {
-        renderCode128(rect().toRect(), renderText(), alignment(), painter);
+        renderCode128(rect().toRect(), renderText(), horizontalAlignment(), painter);
     } else if (fmt == "upc-a") {
-        renderCodeUPCA(rect().toRect(), renderText(), alignment(), painter);
+        renderCodeUPCA(rect().toRect(), renderText(), horizontalAlignment(), painter);
     } else if (fmt == "upc-e") {
-        renderCodeUPCE(rect().toRect(), renderText(), alignment(), painter);
+        renderCodeUPCE(rect().toRect(), renderText(), horizontalAlignment(), painter);
     } else if (fmt == "ean13") {
-        renderCodeEAN13(rect().toRect(), renderText(), alignment(), painter);
+        renderCodeEAN13(rect().toRect(), renderText(), horizontalAlignment(), painter);
     } else if (fmt == "ean8") {
-        renderCodeEAN8(rect().toRect(), renderText(), alignment(), painter);
+        renderCodeEAN8(rect().toRect(), renderText(), horizontalAlignment(), painter);
     }
 
     painter->setPen(Qt::black);

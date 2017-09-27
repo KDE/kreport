@@ -16,6 +16,7 @@
  */
 
 #include "KReportItemBarcode.h"
+#include "KReportUtils.h"
 
 #include <KProperty>
 #include <KPropertyListData>
@@ -159,18 +160,10 @@ KReportItemBarcode::~KReportItemBarcode()
 {
 }
 
-int KReportItemBarcode::alignment()
+Qt::Alignment KReportItemBarcode::horizontalAlignment() const
 {
-    QByteArray a = m_horizontalAlignment->value().toByteArray();
-
-    if (a == "left")
-        return 0;
-    else if (a == "center")
-        return 1;
-    else if (a == "right")
-        return 2;
-    else
-        return 0;
+    return KReportUtils::horizontalAlignment(m_horizontalAlignment->value().toString(),
+                                             Qt::AlignLeft);
 }
 
 QString KReportItemBarcode::itemDataSource() const
@@ -178,12 +171,12 @@ QString KReportItemBarcode::itemDataSource() const
     return m_controlSource->value().toString();
 }
 
-QString KReportItemBarcode::format()
+QString KReportItemBarcode::format() const
 {
     return m_format->value().toString();
 }
 
-int KReportItemBarcode::maxLength()
+int KReportItemBarcode::maxLength() const
 {
     return m_maxLength->value().toInt();
 }
@@ -193,9 +186,9 @@ void KReportItemBarcode::setFormat(const QString& f)
     m_format->setValue(f);
 }
 
-void KReportItemBarcode::setAlignment(int)
+void KReportItemBarcode::setHorizontalAlignment(Qt::Alignment value)
 {
-    //! @todo Barcode alignment
+    m_horizontalAlignment->setValue(KReportUtils::horizontalToString(value));
 }
 
 //RTTI
@@ -226,7 +219,7 @@ int KReportItemBarcode::renderSimpleData(OROPage *page, OROSection *section, con
 
     if (page) {
         QByteArray fmt = m_format->value().toByteArray();
-        int align = alignment();
+        Qt::Alignment align = horizontalAlignment();
         if (fmt == "3of9")
             render3of9(page, rect, val, align);
         else if (fmt == "3of9+")

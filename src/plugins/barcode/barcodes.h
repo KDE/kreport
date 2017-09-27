@@ -27,30 +27,30 @@ class OROPage;
 //
 // i2of5
 //
-void renderI2of5(OROPage *, const QRectF &, const QString &, int align);
+void renderI2of5(OROPage *, const QRectF &, const QString &, Qt::Alignment align);
 
 //
 // 3of9
 //
-void render3of9(OROPage *, const QRectF &, const QString &, int align);
+void render3of9(OROPage *, const QRectF &, const QString &, Qt::Alignment align);
 
 //
 // 3of9+
 //
-void renderExtended3of9(OROPage *, const QRectF &, const QString &, int align);
+void renderExtended3of9(OROPage *, const QRectF &, const QString &, Qt::Alignment align);
 
 //
 // Code 128
 //
-void renderCode128(OROPage *, const QRectF &, const QString &, int align);
+void renderCode128(OROPage *, const QRectF &, const QString &, Qt::Alignment align);
 
 //
 // Code EAN/UPC
 //
-void renderCodeEAN13(OROPage *, const QRectF &, const QString &, int align);
-void renderCodeEAN8(OROPage *, const QRectF &, const QString &, int align);
-void renderCodeUPCA(OROPage *, const QRectF &, const QString &, int align);
-void renderCodeUPCE(OROPage *, const QRectF &, const QString &, int align);
+void renderCodeEAN13(OROPage *, const QRectF &, const QString &, Qt::Alignment align);
+void renderCodeEAN8(OROPage *, const QRectF &, const QString &, Qt::Alignment align);
+void renderCodeUPCA(OROPage *, const QRectF &, const QString &, Qt::Alignment align);
+void renderCodeUPCE(OROPage *, const QRectF &, const QString &, Qt::Alignment align);
 
 #endif
 

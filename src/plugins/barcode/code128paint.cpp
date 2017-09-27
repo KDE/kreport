@@ -183,7 +183,7 @@ int code128IndexP(QChar code, int set)
     return -1;  // couldn't find it
 }
 
-void renderCode128(const QRect & r, const QString & _str, int align, QPainter * pPainter)
+void renderCode128(const QRect & r, const QString & _str, Qt::Alignment align, QPainter * pPainter)
 {
     QVector<int> str;
 
@@ -290,12 +290,13 @@ void renderCode128(const QRect & r, const QString & _str, int align, QPainter * 
     //
     // calculate the starting position based on the alignment option
     // for left align we don't need to do anything as the values are already setup for it
-    if (align == 1) { // center
+    if (align == Qt::AlignHCenter) {
         int nqz = (draw_width - L) / 2;
         if (nqz > quiet_zone) quiet_zone = nqz;
-    } else if (align > 1) { // right
+    } else if (align == Qt::AlignRight) {
         quiet_zone = draw_width - (L + quiet_zone);
-    } // else if(align < 1) {} // left : do nothing
+    }
+    // left : do nothing
 
     int pos = r.left() + quiet_zone;
     int top = r.top();

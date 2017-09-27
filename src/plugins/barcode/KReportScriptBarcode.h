@@ -42,8 +42,7 @@ public Q_SLOTS:
      * Get the position of the barcode
      * @return position in points
      */
-    QPointF position();
-
+    QPointF position() const;
 
     /**
      * Sets the position of the barcode in points
@@ -55,7 +54,7 @@ public Q_SLOTS:
      * Get the size of the barcode
      * @return size in points
      */
-    QSizeF size();
+    QSizeF size() const;
 
     /**
      * Set the size of the barcode in points
@@ -65,18 +64,18 @@ public Q_SLOTS:
 
     /**
      * Get the horizontal alignment
-     * -1 Left
-     * 0 Center
-     * +1 Right
+     * Qt::AlignLeft Left
+     * Qt::AlignHCenter Center
+     * Qt::AlignRight Right
      * @return alignment
     */
-    int horizontalAlignment();
+    Qt::Alignment horizontalAlignment() const;
 
     /**
      * Sets the horizontal alignment
      * @param  Alignemnt
      */
-    void setHorizonalAlignment(int);
+    void setHorizonalAlignment(Qt::Alignment value);
 
 
     /**
