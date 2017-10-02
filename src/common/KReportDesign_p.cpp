@@ -67,9 +67,10 @@ KReportDesignGlobal::KReportDesignGlobal()
     defaultPageLayout.setOrientation(DEFAULT_PAGE_ORIENTATION);
 }
 
-KReportSection::Type KReportDesignGlobal::sectionType(const QString& typeName) {
+KReportSection::Type KReportDesignGlobal::sectionType(const QString& typeName)
+{
     initSectionTypes();
-    return sectionTypesForName.value(typeName); // returns Invalid typefor invalid name
+    return sectionTypesForName.value(typeName); // returns Invalid type for invalid name
 }
 
 inline uint qHash(KReportSection::Type sectionType, uint seed = 0)
@@ -77,12 +78,14 @@ inline uint qHash(KReportSection::Type sectionType, uint seed = 0)
     return qHash(static_cast<uint>(sectionType), seed);
 }
 
-QString KReportDesignGlobal::sectionTypeName(KReportSection::Type sectionType) {
+QString KReportDesignGlobal::sectionTypeName(KReportSection::Type sectionType)
+{
     initSectionTypes();
     return sectionTypeNames.value(sectionType);
 }
 
-void KReportDesignGlobal::initSectionTypes() {
+void KReportDesignGlobal::initSectionTypes()
+{
     if (!sectionTypesForName.isEmpty()) {
         return;
     }

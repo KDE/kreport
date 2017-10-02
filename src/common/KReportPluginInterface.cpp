@@ -47,6 +47,11 @@ KReportPluginInterface::~KReportPluginInterface()
     delete d;
 }
 
+KReportElement KReportPluginInterface::createElement()
+{
+    return KReportElement();
+}
+
 const KReportPluginMetaData* KReportPluginInterface::metaData() const
 {
     return d->metaData;

@@ -57,7 +57,7 @@ public:
 
     virtual QObject* createRendererInstance(const QDomNode &element) = 0;
 
-    virtual KReportElement createElement() { return KReportElement(); } //!< @todo remove {}
+    virtual KReportElement createElement();
 
     virtual bool loadElement(KReportElement *el, const QDomElement &dom, KReportDesignReadingStatus *status);
 
