@@ -82,7 +82,7 @@ void KReportItemMaps::createProperties()
                                     QVariant(mapThemIds[1]), tr("Theme"));
 
     if (mapThemIds.contains(QLatin1String("earth/srtm/srtm.dgml"))) {
-        m_themeProperty->setValue(QLatin1String("earth/srtm/srtm.dgml"), KProperty::DefaultValueOptions & ~KProperty::ValueOptions(KProperty::ValueOption::RememberOld));
+        m_themeProperty->setValue(QLatin1String("earth/srtm/srtm.dgml"), KProperty::ValueOption::IgnoreOld);
     }
 
     propertySet()->addProperty(m_controlSource);
