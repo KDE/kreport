@@ -80,8 +80,8 @@ void KReportItemLine::createProperties()
                                 QString(), KProperty::LineStyle);
 
     //Remove the unused properies from KReportItemBase
-    propertySet()->removeProperty("size");
-    propertySet()->removeProperty("position");
+    propertySet()->property("size").setVisible(false);
+    propertySet()->property("position").setVisible(false);
 
     propertySet()->addProperty(m_start);
     propertySet()->addProperty(m_end);
