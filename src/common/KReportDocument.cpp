@@ -348,10 +348,17 @@ bool KReportDocument::externalData() const
     return d->externalData;
 }
 
+#ifdef KREPORT_SCRIPTING
+QString KReportDocument::script() const
+{
+    return d->script;
+}
+
 QString KReportDocument::interpreter() const
 {
     return d->interpreter;
 }
+#endif
 
 QString KReportDocument::name() const
 {
@@ -366,11 +373,6 @@ void KReportDocument::setName(const QString& n)
 QString KReportDocument::query() const
 {
     return d->query;
-}
-
-QString KReportDocument::script() const
-{
-    return d->script;
 }
 
 QString KReportDocument::pageSize()

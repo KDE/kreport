@@ -149,6 +149,7 @@ bool KReportExampleDataSource::open()
     return true;
 }
 
+#ifdef KREPORT_SCRIPTING
 QStringList KReportExampleDataSource::scriptList() const
 {
     QStringList scripts;
@@ -190,6 +191,7 @@ QString KReportExampleDataSource::scriptCode(const QString &script) const
 
     return scriptcode;
 }
+#endif
 
 QStringList KReportExampleDataSource::dataSourceNames() const
 {

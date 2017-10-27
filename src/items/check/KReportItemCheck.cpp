@@ -19,7 +19,7 @@
 #include "KReportRenderObjects.h"
 #include "kreportplugin_debug.h"
 #ifdef KREPORT_SCRIPTING
-#include "renderer/scripting/KReportScriptHandler.h"
+#include "KReportScriptHandler.h"
 #endif
 
 #include <KPropertyListData>

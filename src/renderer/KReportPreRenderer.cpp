@@ -31,8 +31,8 @@
 #include "KReportUtils_p.h"
 
 #ifdef KREPORT_SCRIPTING
-#include "scripting/KReportScriptHandler.h"
-#include "scripting/KReportGroupTracker.h"
+#include "KReportScriptHandler.h"
+#include "KReportGroupTracker.h"
 #endif
 
 #include <QDomElement>
@@ -660,14 +660,6 @@ void KReportPreRenderer::setDataSource(KReportDataSource *dataSource)
     }
 }
 
-void KReportPreRenderer::setScriptSource(KReportScriptSource *source)
-{
-    if (d) {
-        d->scriptSource = source;
-    }
-}
-
-
 bool KReportPreRenderer::setDocument(const QDomElement &document)
 {
     delete d->m_document;
@@ -684,6 +676,13 @@ bool KReportPreRenderer::setDocument(const QDomElement &document)
 }
 
 #ifdef KREPORT_SCRIPTING
+void KReportPreRenderer::setScriptSource(KReportScriptSource *source)
+{
+    if (d) {
+        d->scriptSource = source;
+    }
+}
+
 void KReportPreRenderer::registerScriptObject(QObject* obj, const QString& name)
 {
     //kreportDebug() << name;

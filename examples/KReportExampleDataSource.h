@@ -17,16 +17,18 @@
    Boston, MA 02110-1301, USA.
 */
 
-#ifndef KREPORTEXAMPLEDATA_H
-#define KREPORTEXAMPLEDATA_H
+#ifndef KREPORTEXAMPLEDATASOURCE_H
+#define KREPORTEXAMPLEDATASOURCE_H
 
 #include <KReportDataSource>
+#ifdef KREPORT_SCRIPTING
 #include <KReportScriptSource>
-#include <QVariant>
-#include <QStringList>
-#include <QList>
+#define KReportExampleDataSource_ExtraInterfaces , public KReportScriptSource
+#else
+#define KReportExampleDataSource_ExtraInterfaces
+#endif
 
-class KReportExampleDataSource : public KReportDataSource, public KReportScriptSource
+class KReportExampleDataSource : public KReportDataSource KReportExampleDataSource_ExtraInterfaces
 {
 public:
     KReportExampleDataSource();
@@ -45,8 +47,10 @@ public:
     bool close() override;
     bool open() override;
 
+#ifdef KREPORT_SCRIPTING
     QStringList scriptList() const override;
     QString scriptCode(const QString &script) const override;
+#endif
 
     QStringList dataSourceNames() const override;
 
@@ -69,4 +73,4 @@ private:
     int m_currentRecord;
 };
 
-#endif // KREPORTEXAMPLEDATA_H
+#endif // KREPORTEXAMPLEDATASOURCE_H

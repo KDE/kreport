@@ -52,10 +52,10 @@ public:
     //! Sets data source to @a data, takes ownership
     void setDataSource(KReportDataSource* dataSource);
 
+#ifdef KREPORT_SCRIPTING
     //!Sets the script source to @a source, does NOT take ownership as it may be an application window
     void setScriptSource(KReportScriptSource* source);
 
-#ifdef KREPORT_SCRIPTING
     KReportScriptHandler *scriptHandler();
     void registerScriptObject(QObject *obj, const QString &name);
 #endif

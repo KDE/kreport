@@ -254,7 +254,6 @@ ecm_generate_headers(kreport_FORWARDING_HEADERS
     HEADER_NAMES
         KReportPageSize
         KReportDataSource
-        KReportScriptSource
         KReportItemBase
         KReportItemLine
         KReportPluginMetaData
@@ -286,10 +285,11 @@ if(KREPORT_SCRIPTING)
         ORIGINAL CAMELCASE
         RELATIVE renderer/scripting
         HEADER_NAMES
-            KReportScriptHandler
-            KReportScriptDraw
-            KReportScriptConstants
             KReportGroupTracker
+            KReportScriptConstants
+            KReportScriptDraw
+            KReportScriptHandler
+            KReportScriptSource
     )
 endif()
 
