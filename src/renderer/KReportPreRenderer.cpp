@@ -135,7 +135,7 @@ qreal KReportPreRendererPrivate::finishCurPage(bool lastPage)
         retval = renderSection(* (m_reportDocument->section(KReportSectionData::Type::PageFooterLast)));
     } else if (m_pageCounter == 1 && m_reportDocument->section(KReportSectionData::Type::PageFooterFirst)) {
         //kreportDebug() << "First Footer";
-        m_yOffset = offset - renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterLast)));
+        m_yOffset = offset - renderSectionSize(* (m_reportDocument->section(KReportSectionData::Type::PageFooterFirst)));
         retval = renderSection(* (m_reportDocument->section(KReportSectionData::Type::PageFooterFirst)));
     } else if ((m_pageCounter % 2) == 1 && m_reportDocument->section(KReportSectionData::Type::PageFooterOdd)) {
         //kreportDebug() << "Odd Footer";
