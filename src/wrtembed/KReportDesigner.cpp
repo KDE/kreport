@@ -112,12 +112,20 @@ public:
 class Q_DECL_HIDDEN KReportDesigner::Private
 {
 public:
-    Private(){}
+    explicit Private(KReportDesigner *designer);
 
     ~Private()
     {
         delete dataSource;
     }
+
+    void init(const QDomElement *xml);
+
+#ifdef KREPORT_SCRIPTING
+    void updateScripts();
+#endif
+
+    KReportDesigner * const q;
 
     QGridLayout *grid;
     KReportRuler *hruler;
@@ -188,68 +196,72 @@ public:
 #ifdef KREPORT_SCRIPTING
     KReportScriptSource *scriptSource = nullptr;
 #endif
+
+private:
+    void loadXml(const QDomElement &data);
 };
 
-KReportDesigner::KReportDesigner(QWidget * parent)
-        : QWidget(parent), d(new Private())
+KReportDesigner::Private::Private(KReportDesigner *designer) : q(designer)
+{
+}
+
+// (must be init() instead of ctor because we are indirectly depending on initialized KReportDesigner::d here)
+void KReportDesigner::Private::init(const QDomElement *xml)
 {
     KReportPluginManager::self(); // this loads icons early enough
 
-    createProperties();
-    createActions();
+    q->createProperties();
+    q->createActions();
 
-    d->grid = new QGridLayout(this);
-    d->grid->setSpacing(0);
-    d->grid->setMargin(0);
-    d->grid->setColumnStretch(1, 1);
-    d->grid->setRowStretch(1, 1);
-    d->grid->setSizeConstraint(QLayout::SetFixedSize);
+    grid = new QGridLayout(q);
+    grid->setSpacing(0);
+    grid->setMargin(0);
+    grid->setColumnStretch(1, 1);
+    grid->setRowStretch(1, 1);
+    grid->setSizeConstraint(QLayout::SetFixedSize);
 
-    d->vboxlayout = new QVBoxLayout();
-    d->vboxlayout->setSpacing(0);
-    d->vboxlayout->setMargin(0);
-    d->vboxlayout->setSizeConstraint(QLayout::SetFixedSize);
+    vboxlayout = new QVBoxLayout();
+    vboxlayout->setSpacing(0);
+    vboxlayout->setMargin(0);
+    vboxlayout->setSizeConstraint(QLayout::SetFixedSize);
 
     //Create nice rulers
-    d->hruler = new KReportRuler(this, Qt::Horizontal, d->zoomHandler);
+    hruler = new KReportRuler(nullptr, Qt::Horizontal, zoomHandler);
 
-    d->pageButton = new KReportPropertiesButton(this);
+    pageButton = new KReportPropertiesButton;
 
-    d->grid->addWidget(d->pageButton, 0, 0);
-    d->grid->addWidget(d->hruler, 0, 1);
-    d->grid->addLayout(d->vboxlayout, 1, 0, 1, 2);
+    grid->addWidget(pageButton, 0, 0);
+    grid->addWidget(hruler, 0, 1);
+    grid->addLayout(vboxlayout, 1, 0, 1, 2);
 
-    d->pageButton->setMaximumSize(QSize(19, 22));
-    d->pageButton->setMinimumSize(QSize(19, 22));
+    pageButton->setMaximumSize(QSize(19, 22));
+    pageButton->setMinimumSize(QSize(19, 22));
 
-    d->detail = new KReportDesignerSectionDetail(this);
-    d->vboxlayout->insertWidget(0, d->detail);
+    if (!xml) {
+        detail = new KReportDesignerSectionDetail(q);
+        vboxlayout->insertWidget(0, detail);
+    }
 
-    setLayout(d->grid);
+    connect(pageButton, &KReportPropertiesButton::released,
+            q, &KReportDesigner::slotPageButton_Pressed);
+    emit q->pagePropertyChanged(set);
 
-    connect(d->pageButton, SIGNAL(released()), this, SLOT(slotPageButton_Pressed()));
-    emit pagePropertyChanged(d->set);
+    connect(&set, &KPropertySet::propertyChanged, q, &KReportDesigner::slotPropertyChanged);
 
-    connect(&d->set, SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
-            this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
-
-    changeSet(&d->set);
+    if (xml) {
+        loadXml(*xml);
+    }
+    set.clearModifiedFlags();
+    q->changeSet(&set);
 }
 
-KReportDesigner::~KReportDesigner()
-{
-    delete d;
-}
-
-KReportDesigner::KReportDesigner(QWidget *parent, const QDomElement &data)
-    : KReportDesigner(parent)
+void KReportDesigner::Private::loadXml(const QDomElement &data)
 {
     if (data.tagName() != QLatin1String("report:content")) {
         // arg we got an xml file but not one i know of
         kreportWarning() << "root element was not <report:content>";
     }
     //kreportDebug() << data.text();
-    deleteDetail();
 
     QDomNodeList nlist = data.childNodes();
     QDomNode it;
@@ -261,30 +273,30 @@ KReportDesigner::KReportDesigner(QWidget *parent, const QDomElement &data)
             QString n = it.nodeName().toLower();
             //kreportDebug() << n;
             if (n == QLatin1String("report:title")) {
-                setReportTitle(it.firstChild().nodeValue());
+                q->setReportTitle(it.firstChild().nodeValue());
 #ifdef KREPORT_SCRIPTING
             } else if (n == QLatin1String("report:script")) {
-                d->originalInterpreter = it.toElement().attribute(QLatin1String("report:script-interpreter"), QLatin1String("javascript"));
-                if (d->originalInterpreter.isEmpty()) {
-                    d->originalInterpreter = QLatin1String("javascript");
+                originalInterpreter = it.toElement().attribute(QLatin1String("report:script-interpreter"), QLatin1String("javascript"));
+                if (originalInterpreter.isEmpty()) {
+                    originalInterpreter = QLatin1String("javascript");
                 }
-                d->originalScript = it.firstChild().nodeValue();
-                d->script->setValue(d->originalScript);
+                originalScript = it.firstChild().nodeValue();
+                script->setValue(originalScript);
 
-                if (d->originalInterpreter != QLatin1String("javascript") && d->originalInterpreter != QLatin1String("qtscript")) {
+                if (originalInterpreter != QLatin1String("javascript") && originalInterpreter != QLatin1String("qtscript")) {
                     QString msg = tr("This report contains scripts of type \"%1\". "
                                      "Only scripts written in JavaScript language are "
                                      "supported. To prevent losing the scripts, their type "
                                      "and content will not be changed unless you change these scripts."
-                                     ).arg(d->originalInterpreter);
-                    QMessageBox::warning(this, tr("Unsupported Script Type"), msg);
+                                     ).arg(originalInterpreter);
+                    QMessageBox::warning(q, tr("Unsupported Script Type"), msg);
                 }
 #endif
             } else if (n == QLatin1String("report:grid")) {
-                d->showGrid->setValue(it.toElement().attribute(QLatin1String("report:grid-visible"), QString::number(1)).toInt() != 0);
-                d->gridSnap->setValue(it.toElement().attribute(QLatin1String("report:grid-snap"), QString::number(1)).toInt() != 0);
-                d->gridDivisions->setValue(it.toElement().attribute(QLatin1String("report:grid-divisions"), QString::number(4)).toInt());
-                d->unit->setValue(it.toElement().attribute(QLatin1String("report:page-unit"), QLatin1String("cm")));
+                showGrid->setValue(it.toElement().attribute(QLatin1String("report:grid-visible"), QString::number(1)).toInt() != 0);
+                gridSnap->setValue(it.toElement().attribute(QLatin1String("report:grid-snap"), QString::number(1)).toInt() != 0);
+                gridDivisions->setValue(it.toElement().attribute(QLatin1String("report:grid-divisions"), QString::number(4)).toInt());
+                unit->setValue(it.toElement().attribute(QLatin1String("report:page-unit"), QLatin1String("cm")));
             }
 
             //! @todo Load page options
@@ -292,21 +304,21 @@ KReportDesigner::KReportDesigner(QWidget *parent, const QDomElement &data)
                 QString pagetype = it.firstChild().nodeValue();
 
                 if (pagetype == QLatin1String("predefined")) {
-                    d->pageSize->setValue(it.toElement().attribute(QLatin1String("report:page-size"), QLatin1String("A4")));
+                    pageSize->setValue(it.toElement().attribute(QLatin1String("report:page-size"), QLatin1String("A4")));
                 } else if (pagetype == QLatin1String("custom")) {
-                    d->pageSize->setValue(QLatin1String("Custom"));
-                    d->customPageSize->setValue(QSizeF(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("report:custom-page-width"), QLatin1String(""))),
+                    pageSize->setValue(QLatin1String("Custom"));
+                    customPageSize->setValue(QSizeF(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("report:custom-page-width"), QLatin1String(""))),
                         KReportUnit::parseValue(it.toElement().attribute(QLatin1String("report:custom-page-height"), QLatin1String("")))));
                 } else if (pagetype == QLatin1String("label")) {
                     //! @todo
                 }
 
-                d->rightMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-right"), QLatin1String("1.0cm"))));
-                d->leftMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-left"), QLatin1String("1.0cm"))));
-                d->topMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-top"), QLatin1String("1.0cm"))));
-                d->bottomMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-bottom"), QLatin1String("1.0cm"))));
+                rightMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-right"), QLatin1String("1.0cm"))));
+                leftMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-left"), QLatin1String("1.0cm"))));
+                topMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-top"), QLatin1String("1.0cm"))));
+                bottomMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-bottom"), QLatin1String("1.0cm"))));
 
-                d->orientation->setValue(it.toElement().attribute(QLatin1String("report:print-orientation"), QLatin1String("portrait")));
+                orientation->setValue(it.toElement().attribute(QLatin1String("report:print-orientation"), QLatin1String("portrait")));
 
             } else if (n == QLatin1String("report:body")) {
                 QDomNodeList sectionlist = it.childNodes();
@@ -319,14 +331,14 @@ KReportDesigner::KReportDesigner(QWidget *parent, const QDomElement &data)
                         //kreportDebug() << sn;
                         if (sn == QLatin1String("report:section")) {
                             QString sectiontype = sec.toElement().attribute(QLatin1String("report:section-type"));
-                            if (section(KReportSectionData::sectionTypeFromString(sectiontype)) == nullptr) {
-                                insertSection(KReportSectionData::sectionTypeFromString(sectiontype));
-                                section(KReportSectionData::sectionTypeFromString(sectiontype))->initFromXML(sec);
+                            if (q->section(KReportSectionData::sectionTypeFromString(sectiontype)) == nullptr) {
+                                q->insertSection(KReportSectionData::sectionTypeFromString(sectiontype));
+                                q->section(KReportSectionData::sectionTypeFromString(sectiontype))->initFromXML(sec);
                             }
                         } else if (sn == QLatin1String("report:detail")) {
-                            KReportDesignerSectionDetail * rsd = new KReportDesignerSectionDetail(this);
+                            KReportDesignerSectionDetail * rsd = new KReportDesignerSectionDetail(q);
                             rsd->initFromXML(&sec);
-                            setDetail(rsd);
+                            q->setDetail(rsd);
                         }
                     } else {
                         kreportWarning() << "Encountered an unknown Element: "  << n;
@@ -337,10 +349,40 @@ KReportDesigner::KReportDesigner(QWidget *parent, const QDomElement &data)
             kreportWarning() << "Encountered a child node of root that is not an Element";
         }
     }
-    this->slotPageButton_Pressed();
-    emit reportDataChanged();
-    slotPropertyChanged(d->set, *d->unit); // set unit for all items
-    setModified(false);
+    updateScripts();
+    emit q->reportDataChanged();
+    q->slotPropertyChanged(set, *unit); // set unit for all items
+    q->setModified(false);
+}
+
+#ifdef KREPORT_SCRIPTING
+void KReportDesigner::Private::updateScripts()
+{
+    if (scriptSource) {
+        QStringList sl = scriptSource->scriptList();
+        sl.prepend(QString()); // prepend "none"
+        script->setListData(sl, sl);
+    }
+}
+#endif
+
+// ----
+
+KReportDesigner::KReportDesigner(QWidget * parent)
+        : QWidget(parent), d(new Private(this))
+{
+    d->init(nullptr);
+}
+
+KReportDesigner::KReportDesigner(QWidget *parent, const QDomElement &data)
+    : QWidget(parent), d(new Private(this))
+{
+    d->init(&data);
+}
+
+KReportDesigner::~KReportDesigner()
+{
+    delete d;
 }
 
 ///The saving code
@@ -728,8 +770,8 @@ void KReportDesigner::createProperties()
     KPropertyListData *listData = new KPropertyListData(KReportPageSize::pageFormatKeys(),
                                                         KReportPageSize::pageFormatNames());
     QVariant defaultKey = KReportPageSize::pageSizeKey(KReportPageSize::defaultSize());
-    d->pageSize = new KProperty("page-size", listData, defaultKey, tr("Page Size"));    
-    
+    d->pageSize = new KProperty("page-size", listData, defaultKey, tr("Page Size"));
+
     d->customPageSize = new KProperty("custom-page-size", QSizeF(KReportUnit(KReportUnit::Type::Centimeter).fromUserValue(10), KReportUnit(KReportUnit::Type::Centimeter).fromUserValue(10)),
         tr("Custom Page Size"), tr("Custom Page Size"), KProperty::SizeF);
 
@@ -777,7 +819,6 @@ void KReportDesigner::createProperties()
     d->script = new KProperty("script", new KPropertyListData, QVariant(), tr("Object Script"));
     d->set.addProperty(d->script);
 #endif
-
 }
 
 /**
@@ -803,11 +844,7 @@ void KReportDesigner::slotPropertyChanged(KPropertySet &s, KProperty &p)
 void KReportDesigner::slotPageButton_Pressed()
 {
 #ifdef KREPORT_SCRIPTING
-    if (d->scriptSource) {
-        QStringList sl = d->scriptSource->scriptList();
-        sl.prepend(QString());
-        d->script->setListData(sl, sl);
-    }
+    d->updateScripts();
     changeSet(&d->set);
 #endif
 }
@@ -857,14 +894,14 @@ int KReportDesigner::pageWidthPx() const
 {
     QSize pageSizePx;
     int pageWidth;
-    
+
     if (d->set.property("page-size").value().toString() == QLatin1String("Custom")) {
         KReportUnit unit = pageUnit();
-        
+
         QSizeF customSize = d->set.property("custom-page-size").value().toSizeF();
         QPageLayout layout(QPageSize(customSize, QPageSize::Point, QString(), QPageSize::ExactMatch), d->set.property("print-orientation").value().toString()
                     == QLatin1String("portrait") ? QPageLayout::Portrait : QPageLayout::Landscape, QMarginsF(0,0,0,0));
-        
+
         pageSizePx = layout.fullRectPixels(KReportPrivate::dpiX()).size();
     } else {
         QPageLayout layout = QPageLayout(
@@ -873,7 +910,7 @@ int KReportDesigner::pageWidthPx() const
                     == QLatin1String("portrait") ? QPageLayout::Portrait : QPageLayout::Landscape, QMarginsF(0,0,0,0));
         pageSizePx = layout.fullRectPixels(KReportPrivate::dpiX()).size();
     }
-    
+
     pageWidth = pageSizePx.width();
 
     pageWidth = pageWidth - POINT_TO_INCH(d->set.property("margin-left").value().toDouble()) * KReportPrivate::dpiX();
@@ -901,11 +938,6 @@ void KReportDesigner::setDetail(KReportDesignerSectionDetail *rsd)
         d->detail = rsd;
         d->vboxlayout->insertWidget(idx, d->detail);
     }
-}
-void KReportDesigner::deleteDetail()
-{
-    delete d->detail;
-    d->detail = nullptr;
 }
 
 KReportUnit KReportDesigner::pageUnit() const
@@ -1021,6 +1053,7 @@ void KReportDesigner::sectionMouseReleaseEvent(KReportDesignerSectionView * v, Q
                     baseReportItem->setUnit(pageUnit());
                     KPropertySet *set = baseReportItem->propertySet();
                     KReportDesigner::addMetaProperties(set, classString, iconName);
+                    set->clearModifiedFlags();
                     changeSet(set);
                     if (v && v->designer()) {
                         v->designer()->setModified(true);
@@ -1178,6 +1211,7 @@ void KReportDesigner::slotEditPaste(QGraphicsScene * canvas)
                 } else {
                     new_obj->setPosition(KReportItemBase::positionFromScene(QPointF(0, 0)));
                 }
+                new_obj->propertySet()->clearModifiedFlags();
                 changeSet(new_obj->propertySet());
             }
             QGraphicsItem *pasted_ent = dynamic_cast<QGraphicsItem*>(ent);

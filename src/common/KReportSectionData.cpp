@@ -18,36 +18,48 @@
  */
 
 #include "KReportSectionData.h"
+#include "KReportDesigner.h"
 #include "KReportDocument.h"
+#include "KReportItemLine.h"
 #include "KReportPluginInterface.h"
 #include "KReportPluginManager.h"
-#include "KReportItemLine.h"
-#include "KReportDesigner.h"
+#include "KReportUtils.h"
 #include "kreport_debug.h"
 
 #include <KPropertySet>
 
 #include <QDomElement>
 
-KReportSectionData::KReportSectionData(QObject* parent)
- : QObject(parent)
+KReportSectionData::KReportSectionData(QObject *parent) : KReportSectionData(QDomElement(), parent)
 {
-    createProperties(QDomElement());
 }
 
-KReportSectionData::KReportSectionData(const QDomElement & elemSource, KReportDocument* report)
- : QObject(report)
+KReportSectionData::KReportSectionData(const QDomElement &elemSource, QObject *parent)
+    : QObject(parent)
 {
-    setObjectName(elemSource.tagName());
+    if (elemSource.isNull()) {
+        m_type = Type::None;
+    } else {
+        setObjectName(elemSource.tagName());
+        m_type = sectionTypeFromString(elemSource.attribute(QLatin1String("report:section-type")));
+    }
 
-    m_type = sectionTypeFromString(elemSource.attribute(QLatin1String("report:section-type")));
     createProperties(elemSource);
+
+    if (elemSource.isNull()) {
+        m_valid = true;
+    } else {
+        loadXml(elemSource);
+    }
+    m_set->clearModifiedFlags();
+}
+
+void KReportSectionData::loadXml(const QDomElement &elemSource)
+{
     if (objectName() != QLatin1String("report:section") || m_type == KReportSectionData::Type::None) {
         m_valid = false;
         return;
     }
-
-    m_backgroundColor->setValue(QColor(elemSource.attribute(QLatin1String("fo:background-color"))));
 
     KReportPluginManager* manager = KReportPluginManager::self();
 
@@ -56,22 +68,23 @@ KReportSectionData::KReportSectionData(const QDomElement & elemSource, KReportDo
         QDomElement elemThis = section.item(nodeCounter).toElement();
         QString n = elemThis.tagName();
         if (n.startsWith(QLatin1String("report:"))) {
+            KReportItemBase *krobj = nullptr;
             QString reportItemName = n.mid(qstrlen("report:"));
             if (reportItemName == QLatin1String("line")) {
                 KReportItemLine * line = new KReportItemLine(elemThis);
-                m_objects.append(line);
-                continue;
-            }
-            KReportPluginInterface *plugin = manager->plugin(reportItemName);
-            if (plugin) {
-                QObject *obj = plugin->createRendererInstance(elemThis);
-                if (obj) {
-                    KReportItemBase *krobj = dynamic_cast<KReportItemBase*>(obj);
-                    if (krobj) {
-                        m_objects.append(krobj);
+                krobj = line;
+            } else {
+                KReportPluginInterface *plugin = manager->plugin(reportItemName);
+                if (plugin) {
+                    QObject *obj = plugin->createRendererInstance(elemThis);
+                    if (obj) {
+                        krobj = dynamic_cast<KReportItemBase*>(obj);
                     }
-                    continue;
                 }
+            }
+            if (krobj) {
+                krobj->propertySet()->clearModifiedFlags();
+                m_objects.append(krobj);
             }
         }
         kreportWarning() << "While parsing section encountered an unknown element: " << n;
@@ -103,13 +116,17 @@ void KReportSectionData::createProperties(const QDomElement & elemSource)
         tr("Section", "Report section"), QLatin1String("kreport-section-element"));
 
     m_height = new KProperty("height", KReportUnit(KReportUnit::Type::Centimeter).fromUserValue(2.0), tr("Height"));
-    m_backgroundColor = new KProperty("background-color", QColor(Qt::white), tr("Background Color"));
+    m_backgroundColor = new KProperty(
+        "background-color",
+        KReportUtils::attr(elemSource, "fo:background-color", QColor(Qt::white)),
+        tr("Background Color"));
     m_height->setOption("unit", QLatin1String("cm"));
     if (!elemSource.isNull())
         m_height->setValue(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:height"), QLatin1String("2.0cm"))));
 
     m_set->addProperty(m_height);
     m_set->addProperty(m_backgroundColor);
+    m_set->clearModifiedFlags();
 }
 
 QString KReportSectionData::name() const

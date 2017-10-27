@@ -317,11 +317,6 @@ private:
     */
     void setDetail(KReportDesignerSectionDetail *rsd);
 
-    /**
-    @brief Deletes the detail section
-    */
-    void deleteDetail();
-
     void resizeEvent(QResizeEvent * event) override;
 
     //Properties

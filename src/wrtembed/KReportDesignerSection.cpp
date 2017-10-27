@@ -177,13 +177,17 @@ void KReportDesignerSection::slotResizeBarDragged(int delta, bool changeSet)
     if (h < 1) h = 1;
 
     h = d->scene->gridPoint(QPointF(0, h)).y();
-    d->sectionData->m_height->setValue(INCH_TO_POINT(h/d->dpiY));
+    d->sectionData->m_height->setValue(INCH_TO_POINT(h / d->dpiY),
+                                       delta == 0 ? KProperty::ValueOption::IgnoreOld
+                                                  : KProperty::ValueOption::None);
     d->sectionRuler->setRulerLength(h);
 
     d->scene->setSceneRect(0, 0, d->scene->width(), h);
     d->sceneView->resizeContents(QSize(d->scene->width(), h));
 
-    d->reportDesigner->setModified(true);
+    if (delta != 0) {
+        d->reportDesigner->setModified(true);
+    }
 }
 
 void KReportDesignerSection::buildXML(QDomDocument *doc, QDomElement *section)
@@ -214,35 +218,40 @@ void KReportDesignerSection::initFromXML(const QDomNode & section)
     slotResizeBarDragged(0);
 
     d->sectionData->m_backgroundColor->setValue(QColor(section.toElement().attribute(QLatin1String("fo:background-color"), QLatin1String("#ffffff"))));
+    d->sectionData->propertySet()->clearModifiedFlags();
 
+    KReportPluginManager* manager = KReportPluginManager::self();
     for (int i = 0; i < nl.count(); ++i) {
         node = nl.item(i);
         n = node.nodeName();
         if (n.startsWith(QLatin1String("report:"))) {
             //Load objects
             //report:line is a special case as it is not a plugin
+            QObject *obj = nullptr;
+            KReportPluginInterface *plugin = nullptr;
             QString reportItemName = n.mid(qstrlen("report:"));
             if (reportItemName == QLatin1String("line")) {
-                (new KReportDesignerItemLine(node, d->sceneView->designer(), d->scene))->setVisible(true);
-                continue;
+                obj = new KReportDesignerItemLine(node, d->sceneView->designer(), d->scene);
+            } else {
+                plugin = manager->plugin(reportItemName);
+                if (plugin) {
+                    obj = plugin->createDesignerInstance(node, d->reportDesigner, d->scene);
+                }
             }
-            KReportPluginManager* manager = KReportPluginManager::self();
-            KReportPluginInterface *plugin = manager->plugin(reportItemName);
-            if (plugin) {
-                QObject *obj = plugin->createDesignerInstance(node, d->reportDesigner, d->scene);
-                if (obj) {
-                    KReportDesignerItemRectBase *entity = dynamic_cast<KReportDesignerItemRectBase*>(obj);
-                    if (entity) {
-                        entity->setVisible(true);
-                    }
-                    KReportItemBase *item = dynamic_cast<KReportItemBase*>(obj);
-                    if (item) {
-                        item->setUnit(d->reportDesigner->pageUnit());
+            if (obj) {
+                KReportDesignerItemRectBase *entity = dynamic_cast<KReportDesignerItemRectBase*>(obj);
+                if (entity) {
+                    entity->setVisible(true);
+                }
+                KReportItemBase *item = dynamic_cast<KReportItemBase*>(obj);
+                if (item) {
+                    item->setUnit(d->reportDesigner->pageUnit());
+                    if (plugin) {
                         KReportDesigner::addMetaProperties(item->propertySet(),
                                                            plugin->metaData()->name(),
                                                            plugin->metaData()->iconName());
                     }
-                    continue;
+                    item->propertySet()->clearModifiedFlags();
                 }
             }
         }

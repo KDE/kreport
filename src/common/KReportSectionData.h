@@ -65,8 +65,11 @@ public:
     };
 
     explicit KReportSectionData(QObject* parent = nullptr);
-    KReportSectionData(const QDomElement &, KReportDocument* report);
+
+    explicit KReportSectionData(const QDomElement &elemSource, QObject* parent = nullptr);
+
     ~KReportSectionData() override;
+
     KPropertySet* propertySet() const {
         return m_set;
     }
@@ -102,6 +105,7 @@ protected:
 
 private:
     void createProperties(const QDomElement & elemSource);
+    void loadXml(const QDomElement &elemSource);
 
     QList<KReportItemBase*> m_objects;
 
