@@ -26,7 +26,7 @@ class KReportPropertiesButton : public QCheckBox
 {
     Q_OBJECT
 public:
-    explicit KReportPropertiesButton(QWidget*);
+    explicit KReportPropertiesButton(QWidget *parent = nullptr);
 protected:
     void paintEvent(QPaintEvent*) override;
 };
