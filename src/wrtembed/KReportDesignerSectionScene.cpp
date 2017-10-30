@@ -62,22 +62,20 @@ void KReportDesignerSectionScene::drawBackground(QPainter* painter, const QRectF
     painter->setRenderHint(QPainter::Antialiasing, false);
 
     if (m_rd->propertySet()->property("grid-visible").value().toBool()) {
-        if (m_unit.type() != m_rd->pageUnit().type()) {
-            m_unit = m_rd->pageUnit();
-            if (m_unit.type() == KReportUnit::Type::Cicero ||
-                m_unit.type() == KReportUnit::Type::Pica ||
-                m_unit.type() == KReportUnit::Type::Millimeter) {
-                m_majorX = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiX;
-                m_majorY = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiY;
-            } else if (m_unit.type() == KReportUnit::Type::Point) {
-                m_majorX = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiX;
-                m_majorY = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiY;
-            } else {
-                m_majorX = POINT_TO_INCH(m_unit.fromUserValue(1)) * m_dpiX;
-                m_majorY = POINT_TO_INCH(m_unit.fromUserValue(1)) * m_dpiY;
-            }
-
+        m_unit = m_rd->pageUnit();
+        if (m_unit.type() == KReportUnit::Type::Cicero ||
+            m_unit.type() == KReportUnit::Type::Pica ||
+            m_unit.type() == KReportUnit::Type::Millimeter) {
+            m_majorX = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiX;
+            m_majorY = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiY;
+        } else if (m_unit.type() == KReportUnit::Type::Point) {
+            m_majorX = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiX;
+            m_majorY = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiY;
+        } else {
+            m_majorX = POINT_TO_INCH(m_unit.fromUserValue(1)) * m_dpiX;
+            m_majorY = POINT_TO_INCH(m_unit.fromUserValue(1)) * m_dpiY;
         }
+
         int minorSteps = m_rd->propertySet()->property("grid-divisions").value().toInt();
         m_pixelIncrementX = (m_majorX / minorSteps);
         m_pixelIncrementY = (m_majorY / minorSteps);
@@ -129,7 +127,7 @@ void KReportDesignerSectionScene::mousePressEvent(QGraphicsSceneMouseEvent * e)
     //This will be caught by the section to display its properties, if an item is under the cursor then they will display their properties
     QGraphicsItem* itemUnderCursor = itemAt(e->scenePos(), QTransform());
     emit clicked();
-    
+
     KReportDesignerItemRectBase *rectUnderCursor = qgraphicsitem_cast< KReportDesignerItemRectBase* >(itemUnderCursor);
     if (itemUnderCursor && !rectUnderCursor) {
         rectUnderCursor = qgraphicsitem_cast< KReportDesignerItemRectBase* >(itemUnderCursor->parentItem());
@@ -152,22 +150,17 @@ QPointF KReportDesignerSectionScene::gridPoint(const QPointF& p)
 
     if (m_unit.type() != m_rd->pageUnit().type()) {
         m_unit = m_rd->pageUnit();
-        //! @todo Again? Copy&Paste error?
-        if (m_unit.type() != m_rd->pageUnit().type()) {
-            m_unit = m_rd->pageUnit();
-            if (m_unit.type() == KReportUnit::Type::Cicero ||
-                m_unit.type() == KReportUnit::Type::Pica ||
-                m_unit.type() == KReportUnit::Type::Millimeter) {
-                m_majorX = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiX;
-                m_majorY = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiY;
-            } else if (m_unit.type() == KReportUnit::Type::Point) {
-                m_majorX = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiX;
-                m_majorY = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiY;
-            } else {
-                m_majorX = POINT_TO_INCH(m_unit.fromUserValue(1)) * m_dpiX;
-                m_majorY = POINT_TO_INCH(m_unit.fromUserValue(1)) * m_dpiY;
-            }
-
+        if (m_unit.type() == KReportUnit::Type::Cicero ||
+            m_unit.type() == KReportUnit::Type::Pica ||
+            m_unit.type() == KReportUnit::Type::Millimeter) {
+            m_majorX = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiX;
+            m_majorY = POINT_TO_INCH(m_unit.fromUserValue(10)) * m_dpiY;
+        } else if (m_unit.type() == KReportUnit::Type::Point) {
+            m_majorX = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiX;
+            m_majorY = POINT_TO_INCH(m_unit.fromUserValue(100)) * m_dpiY;
+        } else {
+            m_majorX = POINT_TO_INCH(m_unit.fromUserValue(1)) * m_dpiX;
+            m_majorY = POINT_TO_INCH(m_unit.fromUserValue(1)) * m_dpiY;
         }
     }
     int minorSteps = m_rd->propertySet()->property("grid-divisions").value().toInt();

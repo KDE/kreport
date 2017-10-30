@@ -45,7 +45,7 @@ protected:
     void mousePressEvent(QGraphicsSceneMouseEvent * event) override;
 
 private:
-    QRect getTextRect() const;
+    QRectF getTextRect() const;
     void init(QGraphicsScene *scene);
 
 private Q_SLOTS:

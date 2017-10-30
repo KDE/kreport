@@ -109,7 +109,11 @@ public:
     void setEntityName(const QString& n);
     QString entityName() const;
 
-    virtual void setUnit(const KReportUnit& u);
+    KReportUnit unit() const;
+
+    //! Sets unit to @a a and converts values of position and size property from the old
+    //! unit to new if needed.
+    virtual void setUnit(const KReportUnit &u);
 
     /**
      * @brief Return the size in points
@@ -121,16 +125,39 @@ public:
      */
     QPointF position() const;
 
-    void setPosition(const QPointF &pos);
-    void setSize(const QSizeF &siz);
+    /**
+     * @brief Sets position for the element
+     * @param ptPos Position in points
+     */
+    void setPosition(const QPointF &ptPos);
 
+    /**
+     * @brief Sets size for the element
+     * @param ptSize Size in points
+     */
+    void setSize(const QSizeF &ptSize);
+
+    /**
+     * @brief Return the z-value in points
+     */
     qreal z() const;
+
+    /**
+     * @brief Sets the z-value for the element
+     * @param z Z-value in points
+     */
     void setZ(qreal z);
 
-    //Helper function to map between size/position units
-    static QPointF scenePosition(const QPointF &pos);
-    static QSizeF sceneSize(const QSizeF &size);
+    //! Helper function mapping to screen units (pixels), @a ptPos is in points
+    static QPointF scenePosition(const QPointF &ptPos);
+
+    //! Helper function mapping to screen units (pixels), @a ptSize is in points
+    static QSizeF sceneSize(const QSizeF &ptSize);
+    
+    //! Helper function mapping from screen units to points, @a pos is in pixels
     static QPointF positionFromScene(const QPointF &pos);
+
+    //! Helper function mapping from screen units to points, @a size is in pixels
     static QSizeF sizeFromScene(const QSizeF &size);
 
 protected:
@@ -149,6 +176,8 @@ private:
     Q_DISABLE_COPY(KReportItemBase)
     class Private;
     Private * const d;
+    Q_SLOT void aboutToDeleteProperty(KPropertySet& set, KProperty& property);
+
 };
 
 #endif

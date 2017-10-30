@@ -17,6 +17,7 @@
  */
 
 #include "KReportDesignerItemBase.h"
+#include "KReportDesigner.h"
 #include "KReportItemBase.h"
 #include "KReportUtils.h"
 
@@ -52,6 +53,7 @@ KReportDesignerItemBase::KReportDesignerItemBase(KReportDesigner *r, KReportItem
 {
     d->reportDesigner = r;
     d->item = b;
+    b->setUnit(r->pageUnit());
 }
 
 void KReportDesignerItemBase::buildXML(QGraphicsItem * item, QDomDocument *doc, QDomElement *parent)

@@ -16,13 +16,13 @@
  * License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "KReportItemMaps.h"
+#include "KReportUtils.h"
+#include "KReportRenderObjects.h"
 
 #include <KPropertyListData>
 #include <KPropertySet>
 
 #include <QStringList>
-
-#include <KReportRenderObjects.h>
 
 #include <sys/socket.h>
 
@@ -37,7 +37,7 @@ KReportItemMaps::KReportItemMaps()
 KReportItemMaps::KReportItemMaps(const QDomNode &element)
     : KReportItemMaps()
 {
-    nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    nameProperty()->setValue(KReportUtils::readNameAttribute(element.toElement()));
     m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
     setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
     m_latitudeProperty->setValue(element.toElement().attribute(QLatin1String("report:latitude")).toDouble());
@@ -61,13 +61,13 @@ void KReportItemMaps::createProperties()
     m_latitudeProperty = new KProperty("latitude", 0.0, tr("Latitude"), QString(), KProperty::Double);
     m_latitudeProperty->setOption("min", -90);
     m_latitudeProperty->setOption("max", 90);
-    m_latitudeProperty->setOption("unit", QString::fromUtf8("°"));
+    m_latitudeProperty->setOption("suffix", QString::fromUtf8("°"));
     m_latitudeProperty->setOption("precision", 7);
 
     m_longitudeProperty = new KProperty("longitude", 0.0, tr("Longitude"), QString(), KProperty::Double);
     m_longitudeProperty->setOption("min", -180);
     m_longitudeProperty->setOption("max", 180);
-    m_longitudeProperty->setOption("unit", QString::fromUtf8("°"));
+    m_longitudeProperty->setOption("suffix", QString::fromUtf8("°"));
     m_longitudeProperty->setOption("precision", 7);
 
     m_zoomProperty     = new KProperty("zoom", 1000, tr("Zoom") );
@@ -82,7 +82,8 @@ void KReportItemMaps::createProperties()
                                     QVariant(mapThemIds[1]), tr("Theme"));
 
     if (mapThemIds.contains(QLatin1String("earth/srtm/srtm.dgml"))) {
-        m_themeProperty->setValue(QLatin1String("earth/srtm/srtm.dgml"), KProperty::ValueOption::IgnoreOld);
+        m_themeProperty->setValue(QLatin1String("earth/srtm/srtm.dgml"),
+                                  KProperty::ValueOption::IgnoreOld);
     }
 
     propertySet()->addProperty(m_controlSource);

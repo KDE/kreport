@@ -108,11 +108,20 @@ KReportDocument::KReportDocument(const QDomElement & elemSource, QObject *parent
             }
             //! @todo add config for default margins or add within templates support
             d->pageLayout.setUnits(QPageLayout::Point);
-            d->pageLayout.setLeftMargin(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-left"), QLatin1String("1.0cm"))));
-            d->pageLayout.setRightMargin(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-right"), QLatin1String("1.0cm"))));
-            d->pageLayout.setTopMargin(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-top"), QLatin1String("1.0cm"))));
-            d->pageLayout.setBottomMargin(KReportUnit::parseValue(elemThis.attribute(QLatin1String("fo:margin-bottom"), QLatin1String("1.0cm"))));
-            d->pageLayout.setOrientation(elemThis.attribute(QLatin1String("report:print-orientation"), QLatin1String("portrait")) == QLatin1String("portrait") ? QPageLayout::Portrait : QPageLayout::Landscape);
+            d->pageLayout.setLeftMargin(KReportUnit::parseValue(elemThis.attribute(
+                QLatin1String("fo:margin-left"), DEFAULT_PAGE_MARGIN_STRING)));
+            d->pageLayout.setRightMargin(KReportUnit::parseValue(elemThis.attribute(
+                QLatin1String("fo:margin-right"), DEFAULT_PAGE_MARGIN_STRING)));
+            d->pageLayout.setTopMargin(KReportUnit::parseValue(elemThis.attribute(
+                QLatin1String("fo:margin-top"), DEFAULT_PAGE_MARGIN_STRING)));
+            d->pageLayout.setBottomMargin(KReportUnit::parseValue(elemThis.attribute(
+                QLatin1String("fo:margin-bottom"), DEFAULT_PAGE_MARGIN_STRING)));
+            d->pageLayout.setOrientation(
+                elemThis.attribute(QLatin1String("report:print-orientation"),
+                                   QLatin1String("portrait"))
+                        == QLatin1String("portrait")
+                    ? QPageLayout::Portrait
+                    : QPageLayout::Landscape);
         } else if (elemThis.tagName() == QLatin1String("report:body")) {
             QDomNodeList sectionlist = elemThis.childNodes();
             QDomNode sec;

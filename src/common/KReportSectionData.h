@@ -21,9 +21,11 @@
 #ifndef KREPORTSECTIONDATA_H
 #define KREPORTSECTIONDATA_H
 
-#include <QColor>
+#include "KReportUnit.h"
 
 #include <KPropertySet>
+
+#include <QColor>
 
 class KReportItemBase;
 class KReportDocument;
@@ -66,9 +68,13 @@ public:
 
     explicit KReportSectionData(QObject* parent = nullptr);
 
-    explicit KReportSectionData(const QDomElement &elemSource, QObject* parent = nullptr);
+    explicit KReportSectionData(const QDomElement &elemSource, QObject *parent = nullptr);
 
     ~KReportSectionData() override;
+
+    KReportUnit unit() const;
+
+    void setUnit(const KReportUnit &u);
 
     KPropertySet* propertySet() const {
         return m_set;
@@ -78,9 +84,9 @@ public:
         return m_valid;
     }
 
-    qreal height() const {
-        return m_height->value().toDouble();
-    }
+    qreal height() const;
+
+    void setHeight(qreal ptHeight);
 
     QList<KReportItemBase*> objects() const {
         return m_objects;
@@ -100,14 +106,16 @@ public:
     static QString sectionTypeString(KReportSectionData::Type type);
 protected:
     KPropertySet *m_set;
-    KProperty *m_height;
     KProperty *m_backgroundColor;
 
 private:
     void createProperties(const QDomElement & elemSource);
     void loadXml(const QDomElement &elemSource);
+    void setHeight(qreal ptHeight, KProperty::ValueOptions options);
 
+    KProperty *m_height;
     QList<KReportItemBase*> m_objects;
+    KReportUnit m_unit;
 
     Type m_type;
 

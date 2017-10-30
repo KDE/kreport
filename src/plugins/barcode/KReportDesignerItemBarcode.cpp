@@ -76,11 +76,11 @@ KReportDesignerItemBarcode* KReportDesignerItemBarcode::clone()
 KReportDesignerItemBarcode::~KReportDesignerItemBarcode()
 {}
 
-QRect KReportDesignerItemBarcode::getTextRect()
+QRectF KReportDesignerItemBarcode::getTextRect() const
 {
     QFont fnt = QFont();
-    return QFontMetrics(fnt)
-            .boundingRect(int (x()), int (y()), 0, 0, 0,
+    return QFontMetricsF(fnt)
+            .boundingRect(QRectF(x(), y(), 0, 0), 0,
                           dataSourceAndObjectTypeName(itemDataSource(), QLatin1String("barcode")));
 }
 

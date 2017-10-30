@@ -75,9 +75,9 @@ KReportDesignerItemField* KReportDesignerItemField::clone()
 KReportDesignerItemField::~KReportDesignerItemField()
 {}
 
-QRect KReportDesignerItemField::getTextRect() const
+QRectF KReportDesignerItemField::getTextRect() const
 {
-    return QFontMetrics(font()).boundingRect(x(), y(), 0, 0, textFlags(), renderText());
+    return QFontMetricsF(font()).boundingRect(QRectF(x(), y(), 0, 0), textFlags(), renderText());
 }
 
 

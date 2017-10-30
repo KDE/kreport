@@ -67,21 +67,22 @@ void Line::setLineStyle(int style)
 
 QPointF Line::startPosition() const
 {
-    return m_line->m_start->value().toPointF();
+    return m_line->startPosition();
 }
 
 void Line::setStartPosition(const QPointF& startPosition)
 {
-    m_line->m_start->setValue(startPosition);
+    m_line->setStartPosition(startPosition);
 }
 
 QPointF Line::endPosition() const
 {
-    return m_line->m_end->value().toPointF();
+    return m_line->endPosition();
 }
 
 void Line::setEndPosition(const QPointF& endPosition)
 {
-    m_line->m_end->setValue(endPosition);
+    m_line->setEndPosition(endPosition);
 }
+
 }

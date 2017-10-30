@@ -100,7 +100,7 @@ void KReportScriptDraw::text(qreal x, qreal y, const QString &txt, const QString
 {
     if (m_curPage) {
         QFont f(fnt, pt);
-        QRectF r = QFontMetrics(f).boundingRect(txt);
+        QRectF r = QFontMetricsF(f).boundingRect(txt);
 
         KReportTextStyleData ts;
         ts.font = f;

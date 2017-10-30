@@ -80,9 +80,9 @@ KReportDesignerItemText::~KReportDesignerItemText
 ()
 {}
 
-QRect KReportDesignerItemText::getTextRect() const
+QRectF KReportDesignerItemText::getTextRect() const
 {
-    return QFontMetrics(font()).boundingRect(int (x()), int (y()), 0, 0, textFlags(), renderText());
+    return QFontMetricsF(font()).boundingRect(QRectF(x(), y(), 0, 0), textFlags(), renderText());
 }
 
 void KReportDesignerItemText::paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget)

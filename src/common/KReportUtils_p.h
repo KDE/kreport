@@ -26,6 +26,25 @@
 #include <QRect>
 #include <QStandardPaths>
 
+const bool DEFAULT_SHOW_GRID = true;
+const bool DEFAULT_SNAP_TO_GRID = true;
+const int DEFAULT_GRID_DIVISIONS = 4;
+const KReportUnit DEFAULT_UNIT(KReportUnit::Type::Centimeter);
+const KReportUnit::Type DEFAULT_UNIT_TYPE = DEFAULT_UNIT.type();
+#define DEFAULT_UNIT_STRING QLatin1String("cm")
+const QPointF DEFAULT_ELEMENT_POS_PT(CM_TO_POINT(1.0), CM_TO_POINT(1.0));
+const QSizeF DEFAULT_ELEMENT_SIZE_PT(CM_TO_POINT(1.0), CM_TO_POINT(1.0));
+const QRectF DEFAULT_ELEMENT_RECT_PT(DEFAULT_ELEMENT_POS_PT, DEFAULT_ELEMENT_SIZE_PT);
+#define DEFAULT_ELEMENT_POS_STRING QLatin1String("1.0cm") // both X and Y
+#define DEFAULT_ELEMENT_SIZE_STRING QLatin1String("1.0cm") // both width and height
+const qreal DEFAULT_SECTION_SIZE_PT = CM_TO_POINT(2.0);
+#define DEFAULT_SECTION_SIZE_STRING QLatin1String("2.0cm")
+const qreal DEFAULT_PAGE_MARGIN_PT = CM_TO_POINT(1.0);
+#define DEFAULT_PAGE_MARGIN_STRING QLatin1String("1.0cm")
+const QPageSize::PageSizeId DEFAULT_PAGE_SIZE = QPageSize::A4;
+const QPageLayout::Orientation DEFAULT_PAGE_ORIENTATION = QPageLayout::Landscape;
+const QSizeF DEFAULT_CUSTOM_PAGE_SIZE(10.0,10.0);
+const qreal SMALLEST_PAGE_SIZE_PT = MM_TO_POINT(5);
 
 // This is a private code made inline for use in the lib and examples.
 //! @todo Move to a shared lib to use in other Kexi libraries as well.

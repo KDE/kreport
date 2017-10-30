@@ -70,10 +70,11 @@ bool KReportLabelPlugin::loadElement(KReportElement *el, const QDomElement &dom,
         return false;
     }
     KReportLabelElement label(*el);
-    label.setText(KReportUtils::attr(dom, "report:caption", QString()));
-    QString s = KReportUtils::attr(dom, "report:horizontal-align", QString());
-    Qt::Alignment alignment = KReportUtils::horizontalAlignment(s, label.alignment() & Qt::AlignHorizontal_Mask);
-    s = KReportUtils::attr(dom, "report:vertical-align", QString());
+    label.setText(KReportUtils::attr(dom, QLatin1String("report:caption"), QString()));
+    QString s = KReportUtils::attr(dom, QLatin1String("report:horizontal-align"), QString());
+    Qt::Alignment alignment = KReportUtils::horizontalAlignment(
+        s, label.alignment() & Qt::AlignHorizontal_Mask);
+    s = KReportUtils::attr(dom, QLatin1String("report:vertical-align"), QString());
     alignment |= KReportUtils::verticalAlignment(s, label.alignment() & Qt::AlignVertical_Mask);
     label.setAlignment(alignment);
 
@@ -82,13 +83,16 @@ bool KReportLabelPlugin::loadElement(KReportElement *el, const QDomElement &dom,
     KReportUtils::readFontAttributes(textStyleDom, &font);
     label.setFont(font);
 
-    const QDomElement lineStyleDom = dom.firstChildElement(QLatin1String("report:line-style"));
+    const QDomElement lineStyleDom
+        = dom.firstChildElement(QLatin1String("report:line-style"));
     KReportLineStyle borderStyle(label.borderStyle());
-    s = KReportUtils::attr(lineStyleDom, "report:line-style", QString());
+    s = KReportUtils::attr(lineStyleDom, QLatin1String("report:line-style"), QString());
     borderStyle.setPenStyle(KReportUtils::penStyle(s, borderStyle.penStyle()));
-    borderStyle.setColor(KReportUtils::attr(lineStyleDom, "report:line-color", borderStyle.color()));
+    borderStyle.setColor(KReportUtils::attr(
+        lineStyleDom, QLatin1String("report:line-color"), borderStyle.color()));
     // border-line-width could be better name but it's too late...
-    borderStyle.setWeight(KReportUtils::attr(lineStyleDom, "report:line-weight", borderStyle.weight()));
+    borderStyle.setWeight(KReportUtils::attr(
+        lineStyleDom, QLatin1String("report:line-weight"), borderStyle.weight()));
     label.setBorderStyle(borderStyle);
     return true;
 }

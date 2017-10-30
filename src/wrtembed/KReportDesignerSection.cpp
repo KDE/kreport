@@ -94,6 +94,7 @@ public:
 
     KReportSectionData *sectionData;
     int dpiY;
+    bool slotPropertyChangedEnabled = true;
 };
 
 
@@ -128,7 +129,7 @@ KReportDesignerSection::KReportDesignerSection(KReportDesigner * rptdes,
     d->sectionRuler->setUnit(d->reportDesigner->pageUnit());
     d->scene = new KReportDesignerSectionScene(d->reportDesigner->pageWidthPx(), d->dpiY, rptdes);
     d->scene->setBackgroundBrush(d->sectionData->backgroundColor());
-    
+
     d->sceneView = new KReportDesignerSectionView(rptdes, d->scene, this);
     d->sceneView->setObjectName(QLatin1String("scene view"));
     d->sceneView->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
@@ -136,11 +137,11 @@ KReportDesignerSection::KReportDesignerSection(KReportDesigner * rptdes,
     d->resizeBar = new ReportResizeBar(this);
 
     connect(d->resizeBar, SIGNAL(barDragged(int)), this, SLOT(slotResizeBarDragged(int)));
-    connect(d->reportDesigner, SIGNAL(pagePropertyChanged(KPropertySet&)),
-        this, SLOT(slotPageOptionsChanged(KPropertySet&)));
-    connect(d->scene, SIGNAL(clicked()), this, (SLOT(slotSceneClicked())));
+    connect(d->reportDesigner, &KReportDesigner::pagePropertyChanged,
+        this, &KReportDesignerSection::slotPageOptionsChanged);
+    connect(d->scene, &KReportDesignerSectionScene::clicked, this, &KReportDesignerSection::slotSceneClicked);
     connect(d->scene, SIGNAL(lostFocus()), d->title, SLOT(update()));
-    connect(d->title, SIGNAL(clicked()), this, (SLOT(slotSceneClicked())));
+    connect(d->title, &KReportDesignerSectionTitle::clicked, this, &KReportDesignerSection::slotSceneClicked);
 
     glayout->addWidget(d->title, 0, 0, 1, 2);
     glayout->addWidget(d->sectionRuler, 1, 0);
@@ -167,23 +168,28 @@ void KReportDesignerSection::slotResizeBarDragged(int delta, bool changeSet)
     if (d->sceneView->designer() && d->sceneView->designer()->propertySet()->property("page-size").value().toString() == QLatin1String("Labels")) {
         return; // we don't want to allow this on reports that are for labels
     }
-    
+
     if (changeSet) {
       slotSceneClicked(); // switches property set to this section
     }
-    
+
     qreal h = d->scene->height() + delta;
 
     if (h < 1) h = 1;
 
     h = d->scene->gridPoint(QPointF(0, h)).y();
-    d->sectionData->m_height->setValue(INCH_TO_POINT(h / d->dpiY),
-                                       delta == 0 ? KProperty::ValueOption::IgnoreOld
-                                                  : KProperty::ValueOption::None);
+    d->slotPropertyChangedEnabled = false; // reduce updates
+    d->sectionData->setHeight(INCH_TO_POINT(h / d->dpiY),
+                              delta == 0 ? KProperty::ValueOption::IgnoreOld
+                                         : KProperty::ValueOption::None);
+    d->slotPropertyChangedEnabled = true;
     d->sectionRuler->setRulerLength(h);
 
-    d->scene->setSceneRect(0, 0, d->scene->width(), h);
-    d->sceneView->resizeContents(QSize(d->scene->width(), h));
+    const QRect newSceneRect(0, 0, d->scene->width(), h);
+    if (d->scene->sceneRect() != newSceneRect) {
+        d->scene->setSceneRect(newSceneRect);
+    }
+    d->sceneView->resizeContents(newSceneRect.size());
 
     if (delta != 0) {
         d->reportDesigner->setModified(true);
@@ -192,7 +198,7 @@ void KReportDesignerSection::slotResizeBarDragged(int delta, bool changeSet)
 
 void KReportDesignerSection::buildXML(QDomDocument *doc, QDomElement *section)
 {
-    KReportUtils::setAttribute(section, QLatin1String("svg:height"), d->sectionData->m_height->value().toDouble());
+    KReportUtils::setAttribute(section, QLatin1String("svg:height"), d->sectionData->height());
     section->setAttribute(QLatin1String("fo:background-color"), d->sectionData->backgroundColor().name());
 
     // now get a list of all the QGraphicsItems on this scene and output them.
@@ -209,10 +215,10 @@ void KReportDesignerSection::initFromXML(const QDomNode & section)
     QDomNode node;
     QString n;
 
-    qreal h = KReportUnit::parseValue(section.toElement().attribute(QLatin1String("svg:height"), QLatin1String("2.0cm")));
-    d->sectionData->m_height->setValue(h);
+    qreal ptHeight = KReportUtils::readSizeAttributes(section.toElement(), QSizeF(DEFAULT_SECTION_SIZE_PT, DEFAULT_SECTION_SIZE_PT)).height();
+    d->sectionData->setHeight(ptHeight);
 
-    h  = POINT_TO_INCH(h) * d->dpiY;
+    qreal h  = POINT_TO_INCH(ptHeight) * d->dpiY;
     //kreportDebug() << "Section Height: " << h;
     d->scene->setSceneRect(0, 0, d->scene->width(), h);
     slotResizeBarDragged(0);
@@ -269,8 +275,7 @@ void KReportDesignerSection::slotPageOptionsChanged(KPropertySet &set)
     Q_UNUSED(set)
 
     KReportUnit unit = d->reportDesigner->pageUnit();
-
-    d->sectionData->m_height->setOption("unit", unit.symbol());
+    d->sectionData->setUnit(unit);
 
     //update items position with unit
     QList<QGraphicsItem*> itms = d->scene->items();
@@ -286,12 +291,13 @@ void KReportDesignerSection::slotPageOptionsChanged(KPropertySet &set)
     d->sectionRuler->setUnit(d->reportDesigner->pageUnit());
 
     //Trigger a redraw of the background
+    d->sceneView->resizeContents(QSize(d->scene->width(), d->scene->height()));
+
     d->sceneView->resetCachedContent();
+    d->sceneView->update();
 
     d->reportDesigner->adjustSize();
     d->reportDesigner->repaint();
-
-    slotResizeBarDragged(0, false);
 }
 
 void KReportDesignerSection::slotSceneClicked()
@@ -303,6 +309,9 @@ void KReportDesignerSection::slotSceneClicked()
 void KReportDesignerSection::slotPropertyChanged(KPropertySet &s, KProperty &p)
 {
     Q_UNUSED(s)
+    if (!d->slotPropertyChangedEnabled) {
+        return;
+    }
     //kreportDebug() << p.name();
 
     //Handle Background Color
@@ -311,8 +320,11 @@ void KReportDesignerSection::slotPropertyChanged(KPropertySet &s, KProperty &p)
     }
 
     if (p.name() == "height") {
-    d->scene->setSceneRect(0, 0, d->scene->width(), POINT_TO_INCH(p.value().toDouble()) * d->dpiY);
-    slotResizeBarDragged(0);
+        const QRect newSceneRect(0, 0, d->scene->width(), POINT_TO_INCH(d->sectionData->height()) * d->dpiY);
+        if (d->scene->sceneRect() != newSceneRect) {
+            d->scene->setSceneRect(newSceneRect);
+        }
+        d->sceneView->resizeContents(newSceneRect.size());
     }
 
     if (d->reportDesigner)

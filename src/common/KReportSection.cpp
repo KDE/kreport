@@ -40,7 +40,7 @@ KReportSection::KReportSection(const QDomElement & elemSource, KReportReportData
         return;
     }
 
-    m_type = sectionTypeFromString(elemSource.attribute(QLatin1String("report:section-type")));
+    m_type = sectionTypeFromString(KReportUtils::readSectionTypeNameAttribute(elemSource));
     if (m_type == KReportSection::None) {
         m_valid = false;
         return;
@@ -183,9 +183,9 @@ qreal KReportSection::defaultHeight()
 }
 
 //static
-void KReportSection::setDefaultHeight(qreal height)
+void KReportSection::setDefaultHeight(qreal ptHeight)
 {
-    KReportDesignGlobal::self()->defaultSectionHeight = height;
+    KReportDesignGlobal::self()->defaultSectionHeight = ptHeight;
 }
 
 //static

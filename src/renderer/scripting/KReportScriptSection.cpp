@@ -50,12 +50,12 @@ void   Section::setBackgroundColor(const QColor &c)
 
 qreal Section::height() const
 {
-    return m_section->m_height->value().toDouble();
+    return m_section->height();
 }
 
 void Section::setHeight(qreal h)
 {
-    m_section->m_height->setValue(h);
+    m_section->setHeight(h);
 }
 
 QString Section::name() const

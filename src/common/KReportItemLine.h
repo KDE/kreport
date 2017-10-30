@@ -42,14 +42,14 @@ public:
     int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset,
                          const QVariant &data, KReportScriptHandler *script) override;
 
-    void setUnit(const KReportUnit&) override;
+    void setUnit(const KReportUnit &u) override;
 
     QPointF startPosition() const;
+    void setStartPosition(const QPointF &ptPos);
     QPointF endPosition() const;
+    void setEndPosition(const QPointF &ptPos);
 
 protected:
-    KProperty *m_start;
-    KProperty *m_end;
     KProperty *m_lineColor;
     KProperty *m_lineWeight;
     KProperty *m_lineStyle;
@@ -59,6 +59,9 @@ protected:
     void setWeight(qreal w);
 
 private:
+    KProperty *m_start;
+    KProperty *m_end;
+
     void createProperties() override;
 
     friend class Scripting::Line;

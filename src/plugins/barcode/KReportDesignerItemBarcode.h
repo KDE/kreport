@@ -50,7 +50,7 @@ protected:
 private:
     void init(QGraphicsScene *scene);
 
-    QRect getTextRect();
+    QRectF getTextRect() const;
 
 private Q_SLOTS:
     void slotPropertyChanged(KPropertySet &, KProperty &);

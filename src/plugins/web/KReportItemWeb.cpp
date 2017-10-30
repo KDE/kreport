@@ -19,7 +19,8 @@
 */
 
 #include "KReportItemWeb.h"
-#include <KReportRenderObjects.h>
+#include "KReportUtils.h"
+#include "KReportRenderObjects.h"
 
 #include <KPropertyListData>
 #include <KPropertySet>
@@ -42,15 +43,15 @@ KReportItemWeb::KReportItemWeb() : m_rendering(false), m_targetPage(nullptr)
 KReportItemWeb::KReportItemWeb(const QDomNode &element)
     : KReportItemWeb()
 {
+    QDomElement e = element.toElement();
+
+    m_controlSource->setValue(e.attribute(QLatin1String("report:item-data-source")));
+    nameProperty()->setValue(KReportUtils::readNameAttribute(e));
+    setZ(e.attribute(QLatin1String("report:z-index")).toDouble());
+    parseReportRect(e);
     QDomNodeList nl = element.childNodes();
     QString n;
     QDomNode node;
-    QDomElement e = element.toElement();
-
-    m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
-    nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
-    setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
-    parseReportRect(element.toElement());
     for (int i = 0; i < nl.count(); i++) {
         node = nl.item(i);
         n = node.nodeName();

@@ -68,8 +68,8 @@ KReportDesignerItemLine::KReportDesignerItemLine(const QDomNode & entity, KRepor
         : KReportItemLine(entity), KReportDesignerItemBase(d, this)
 {
     init(scene, d);
-    QPointF s = scenePosition(m_start->value().toPointF());
-    QPointF e = scenePosition(m_end->value().toPointF());
+    QPointF s = scenePosition(startPosition());
+    QPointF e = scenePosition(endPosition());
     
     setLine ( s.x(), s.y(), e.x(), e.y() );
 }
@@ -118,10 +118,10 @@ void KReportDesignerItemLine::buildXML(QDomDocument *doc, QDomElement *parent)
     // properties
     addPropertyAsAttribute(&entity, nameProperty());
     entity.setAttribute(QLatin1String("report:z-index"), zValue());
-    KReportUtils::setAttribute(&entity, QLatin1String("svg:x1"), m_start->value().toPointF().x());
-    KReportUtils::setAttribute(&entity, QLatin1String("svg:y1"), m_start->value().toPointF().y());
-    KReportUtils::setAttribute(&entity, QLatin1String("svg:x2"), m_end->value().toPointF().x());
-    KReportUtils::setAttribute(&entity, QLatin1String("svg:y2"), m_end->value().toPointF().y());
+    KReportUtils::setAttribute(&entity, QLatin1String("svg:x1"), startPosition().x());
+    KReportUtils::setAttribute(&entity, QLatin1String("svg:y1"), startPosition().y());
+    KReportUtils::setAttribute(&entity, QLatin1String("svg:x2"), endPosition().x());
+    KReportUtils::setAttribute(&entity, QLatin1String("svg:y2"), endPosition().y());
 
     buildXMLLineStyle(doc, &entity, lineStyle());
 
@@ -133,8 +133,8 @@ void KReportDesignerItemLine::propertyChanged(KPropertySet &s, KProperty &p)
     Q_UNUSED(s);
 
     if (p.name() == "startposition" || p.name() == "endposition") {
-        QPointF s = scenePosition(m_start->value().toPointF());
-        QPointF e = scenePosition(m_end->value().toPointF());
+        QPointF s = scenePosition(startPosition());
+        QPointF e = scenePosition(endPosition());
         
         setLine ( s.x(), s.y(), e.x(), e.y() );
     }
@@ -191,10 +191,10 @@ void KReportDesignerItemLine::mouseMoveEvent(QGraphicsSceneMouseEvent * event)
 
     switch (m_grabAction) {
     case 1:
-        m_start->setValue(positionFromScene(QPointF(x,y)));
+        setStartPosition(positionFromScene(QPointF(x,y)));
         break;
     case 2:
-        m_end->setValue(positionFromScene(QPointF(x,y)));
+        setEndPosition(positionFromScene(QPointF(x,y)));
         break;
     default:
         QPointF d = mapToItem(this, section->gridPoint(event->scenePos())) - mapToItem(this, section->gridPoint(event->lastScenePos()));
@@ -245,9 +245,8 @@ void KReportDesignerItemLine::hoverMoveEvent(QGraphicsSceneHoverEvent * event)
 
 void KReportDesignerItemLine::setLineScene(const QLineF &line)
 {
-    m_start->setValue(positionFromScene(line.p1()));
-    m_end->setValue(positionFromScene(line.p2()));
-
+    setStartPosition(positionFromScene(line.p1()));
+    setEndPosition(positionFromScene(line.p2()));
     setLine(line);
 }
 

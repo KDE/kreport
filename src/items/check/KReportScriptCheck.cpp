@@ -95,20 +95,21 @@ void CheckBox::setLineStyle(int s)
 
 QPointF CheckBox::position() const
 {
-    return m_check->position();
+    return KReportItemBase::scenePosition(m_check->position());
 }
+
 void CheckBox::setPosition(const QPointF &p)
 {
-    m_check->setPosition(p);
+    m_check->setPosition(KReportItemBase::positionFromScene(p));
 }
 
 QSizeF CheckBox::size() const
 {
-    return m_check->size();
-}
-void CheckBox::setSize(const QSizeF &s)
-{
-    m_check->setSize(s);
-}
+    return KReportItemBase::sceneSize(m_check->size());
 }
 
+void CheckBox::setSize(const QSizeF &s)
+{
+    m_check->setSize(KReportItemBase::sizeFromScene(s));
+}
+}

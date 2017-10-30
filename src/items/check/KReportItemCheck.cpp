@@ -17,6 +17,8 @@
 
 #include "KReportItemCheck.h"
 #include "KReportRenderObjects.h"
+#include "KReportUtils.h"
+#include "KReportUtils_p.h"
 #include "kreportplugin_debug.h"
 #ifdef KREPORT_SCRIPTING
 #include "KReportScriptHandler.h"
@@ -36,9 +38,9 @@ KReportItemCheckBox::KReportItemCheckBox()
 KReportItemCheckBox::KReportItemCheckBox(const QDomNode &element)
     : KReportItemCheckBox()
 {
-    nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    nameProperty()->setValue(KReportUtils::readNameAttribute(element.toElement()));
     m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
-    setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
+    setZ(KReportUtils::readZAttribute(element.toElement()));
     m_foregroundColor->setValue(QColor(element.toElement().attribute(QLatin1String("fo:foreground-color"))));
     m_checkStyle->setValue(element.toElement().attribute(QLatin1String("report:check-style")));
     m_staticValue->setValue(QVariant(element.toElement().attribute(QLatin1String("report:value"))).toBool());

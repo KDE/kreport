@@ -1,9 +1,9 @@
 /* This file is part of the KDE project
-   Copyright (C) 1998, 1999 Reginald Stadlbauer <reggie@kde.org>
-   Copyright (C) 1998, 1999 Torben Weis <weis@kde.org>
-   Copyright (C) 2004, Nicolas GOUTTE <goutte@kde.org>
+   Copyright (C) 1998 1999 Reginald Stadlbauer <reggie@kde.org>
+   Copyright (C) 1998 1999 Torben Weis <weis@kde.org>
+   Copyright (C) 2004 Nicolas GOUTTE <goutte@kde.org>
    Copyright (C) 2010 Thomas Zander <zander@kde.org>
-   Copyright 2012 Friedrich W. H. Kossebau <kossebau@kde.org>
+   Copyright (C) 2012 Friedrich W. H. Kossebau <kossebau@kde.org>
    Copyright (C) 2017 Jarosław Staniek <staniek@kde.org>
 
    This library is free software; you can redistribute it and/or
@@ -217,9 +217,23 @@ public:
     }
 
     /**
-     * convert the given value directly from one unit to another
+     * convert the given value directly from one unit to another with high accuracy
      */
-    static qreal convertFromUnitToUnit(qreal value, const KReportUnit &fromUnit, const KReportUnit &toUnit, qreal factor = 1.0);
+    static qreal convertFromUnitToUnit(qreal value, const KReportUnit &fromUnit,
+                                       const KReportUnit &toUnit, qreal factor = 1.0);
+
+    /**
+     * convert the given value directly from one unit to another with high accuracy
+     */
+    static QPointF convertFromUnitToUnit(const QPointF &value,
+                                         const KReportUnit &fromUnit,
+                                         const KReportUnit &toUnit);
+
+    /**
+     * convert the given value directly from one unit to another with high accuracy
+     */
+    static QSizeF convertFromUnitToUnit(const QSizeF &value, const KReportUnit &fromUnit,
+                                        const KReportUnit &toUnit);
 
     /**
      * This method is the one to use to display a value in a dialog
@@ -238,16 +252,38 @@ public:
     /// @return the value @p ptValue converted the unit and rounded, ready to be displayed
     QString toUserStringValue(qreal ptValue) const;
 
-    /// This method is the one to use to read a value from a dialog
-    /// @return the value converted to points for internal use
-    qreal fromUserValue(qreal value) const;
+    //! @return the value converted to points with high accuracy
+    qreal convertToPoint(qreal value) const;
 
-    /// This method is the one to use to read a value from a dialog
+    //! @return the value converted from points to the actual unit with high accuracy
+    qreal convertFromPoint(qreal ptValue) const;
+
+    //! @return the value converted from points to the actual unit with high accuracy
+    QPointF convertFromPoint(const QPointF &ptValue) const;
+
+    //! @return the value converted from points to the actual unit with high accuracy
+    QSizeF convertFromPoint(const QSizeF &ptValue) const;
+
+    //! Equal to convertToPoint(), use convertToPoint() instead for clarity
+    inline qreal fromUserValue(qreal value) const { return convertToPoint(value); }
+
+    /// @return the value converted to points with high accuracy
+    QPointF convertToPoint(const QPointF &value) const;
+
+    /// @return the value converted to points with high accuracy
+    QSizeF convertToPoint(const QSizeF &value) const;
+
+    /// @return the value converted to points with high accuracy
     /// @param value value entered by the user
     /// @param ok if set, the pointed bool is set to true if the value could be
     /// converted to a qreal, and to false otherwise.
     /// @return the value converted to points for internal use
-    qreal fromUserValue(const QString &value, bool *ok = nullptr) const;
+    qreal convertToPoint(const QString &value, bool *ok = 0) const;
+
+    //! Equal to convertToPoint(), use convertToPoint() instead for clarity
+    inline qreal fromUserValue(const QString &value, bool *ok = 0) const {
+        return convertToPoint(value, ok);
+    }
 
     //! Returns the symbol string of given unit type
     //! Symbol for Invalid type is empty string.
@@ -284,9 +320,11 @@ public:
 
     /// Parses common %KReport and ODF values, like "10cm", "5mm" to pt.
     /// If no unit is specified, pt is assumed.
+    /// @a defaultVal is in Points
     static qreal parseValue(const QString &value, qreal defaultVal = 0.0);
 
     /// parse an angle to its value in degrees
+    /// @a defaultVal is in degrees
     static qreal parseAngle(const QString &value, qreal defaultVal = 0.0);
 
 private:

@@ -121,6 +121,25 @@ public:
 
     void init(const QDomElement *xml);
 
+    void updateCurrentUnit() {
+        QString u = unit->value().toString();
+        KReportUnit newUnit = KReportUnit(KReportUnit::symbolToType(u));
+        if (newUnit.isValid()) {
+            currentUnit = newUnit;
+        } else {
+            currentUnit = DEFAULT_UNIT;
+        }
+
+        if (u == QLatin1String("dm")) {
+            gridDivisions->setOption("max", 100);
+        } else {
+            gridDivisions->setOption("max", 10);
+            if (gridDivisions->value().toInt() > 10) {
+                gridDivisions->setValue(10, KProperty::ValueOption::IgnoreOld);
+            }
+        }
+    }
+
 #ifdef KREPORT_SCRIPTING
     void updateScripts();
 #endif
@@ -172,6 +191,8 @@ public:
     KProperty *script;
 #endif
 
+    KReportUnit currentUnit;
+
     //Actions
     QAction *editCutAction;
     QAction *editCopyAction;
@@ -201,7 +222,8 @@ private:
     void loadXml(const QDomElement &data);
 };
 
-KReportDesigner::Private::Private(KReportDesigner *designer) : q(designer)
+KReportDesigner::Private::Private(KReportDesigner *designer)
+    : q(designer), currentUnit(DEFAULT_UNIT_TYPE)
 {
 }
 
@@ -227,6 +249,7 @@ void KReportDesigner::Private::init(const QDomElement *xml)
 
     //Create nice rulers
     hruler = new KReportRuler(nullptr, Qt::Horizontal, zoomHandler);
+    hruler->setUnit(DEFAULT_UNIT);
 
     pageButton = new KReportPropertiesButton;
 
@@ -296,7 +319,8 @@ void KReportDesigner::Private::loadXml(const QDomElement &data)
                 showGrid->setValue(it.toElement().attribute(QLatin1String("report:grid-visible"), QString::number(1)).toInt() != 0);
                 gridSnap->setValue(it.toElement().attribute(QLatin1String("report:grid-snap"), QString::number(1)).toInt() != 0);
                 gridDivisions->setValue(it.toElement().attribute(QLatin1String("report:grid-divisions"), QString::number(4)).toInt());
-                unit->setValue(it.toElement().attribute(QLatin1String("report:page-unit"), QLatin1String("cm")));
+                unit->setValue(it.toElement().attribute(QLatin1String("report:page-unit"), DEFAULT_UNIT_STRING));
+                updateCurrentUnit();
             }
 
             //! @todo Load page options
@@ -313,13 +337,21 @@ void KReportDesigner::Private::loadXml(const QDomElement &data)
                     //! @todo
                 }
 
-                rightMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-right"), QLatin1String("1.0cm"))));
-                leftMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-left"), QLatin1String("1.0cm"))));
-                topMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-top"), QLatin1String("1.0cm"))));
-                bottomMargin->setValue(KReportUnit::parseValue(it.toElement().attribute(QLatin1String("fo:margin-bottom"), QLatin1String("1.0cm"))));
-
-                orientation->setValue(it.toElement().attribute(QLatin1String("report:print-orientation"), QLatin1String("portrait")));
-
+                rightMargin->setValue(currentUnit.convertFromPoint(
+                    KReportUnit::parseValue(it.toElement().attribute(
+                        QLatin1String("fo:margin-right"), DEFAULT_PAGE_MARGIN_STRING))));
+                leftMargin->setValue(currentUnit.convertFromPoint(
+                    KReportUnit::parseValue(it.toElement().attribute(
+                        QLatin1String("fo:margin-left"), DEFAULT_PAGE_MARGIN_STRING))));
+                topMargin->setValue(currentUnit.convertFromPoint(
+                    KReportUnit::parseValue(it.toElement().attribute(
+                        QLatin1String("fo:margin-top"), DEFAULT_PAGE_MARGIN_STRING))));
+                bottomMargin->setValue(currentUnit.convertFromPoint(
+                    KReportUnit::parseValue(it.toElement().attribute(
+                        QLatin1String("fo:margin-bottom"), DEFAULT_PAGE_MARGIN_STRING))));
+                orientation->setValue(
+                    it.toElement().attribute(QLatin1String("report:print-orientation"),
+                                             QLatin1String("portrait")));
             } else if (n == QLatin1String("report:body")) {
                 QDomNodeList sectionlist = it.childNodes();
                 QDomNode sec;
@@ -330,7 +362,7 @@ void KReportDesigner::Private::loadXml(const QDomElement &data)
                         QString sn = sec.nodeName().toLower();
                         //kreportDebug() << sn;
                         if (sn == QLatin1String("report:section")) {
-                            QString sectiontype = sec.toElement().attribute(QLatin1String("report:section-type"));
+                            const QString sectiontype = KReportUtils::readSectionTypeNameAttribute(sec.toElement());
                             if (q->section(KReportSectionData::sectionTypeFromString(sectiontype)) == nullptr) {
                                 q->insertSection(KReportSectionData::sectionTypeFromString(sectiontype));
                                 q->section(KReportSectionData::sectionTypeFromString(sectiontype))->initFromXML(sec);
@@ -432,9 +464,13 @@ QDomElement KReportDesigner::document() const
 
     if (d->pageSize->value().toString() == QLatin1String("Custom")) {
         pagestyle.appendChild(doc.createTextNode(QLatin1String("custom")));
-        KReportUtils::setAttribute(&pagestyle, QLatin1String("report:custom-page-width"), d->customPageSize->value().toSizeF().width());
-        KReportUtils::setAttribute(&pagestyle, QLatin1String("report:custom-page-height"), d->customPageSize->value().toSizeF().height());
 
+        KReportUtils::setAttribute(
+            &pagestyle, QLatin1String("report:custom-page-width"),
+            d->currentUnit.convertToPoint(d->customPageSize->value().toSizeF().width()));
+        KReportUtils::setAttribute(
+            &pagestyle, QLatin1String("report:custom-page-height"),
+            d->currentUnit.convertToPoint(d->customPageSize->value().toSizeF().height()));
     } else if (d->pageSize->value().toString() == QLatin1String("Label")) {
         pagestyle.appendChild(doc.createTextNode(QLatin1String("label")));
         pagestyle.setAttribute(QLatin1String("report:page-label-type"), d->labelType->value().toString());
@@ -448,10 +484,18 @@ QDomElement KReportDesigner::document() const
     KReportUtils::addPropertyAsAttribute(&pagestyle, d->orientation);
 
     // -- margins: save as points, and not localized
-    KReportUtils::setAttribute(&pagestyle, QLatin1String("fo:margin-top"), d->topMargin->value().toDouble());
-    KReportUtils::setAttribute(&pagestyle, QLatin1String("fo:margin-bottom"), d->bottomMargin->value().toDouble());
-    KReportUtils::setAttribute(&pagestyle, QLatin1String("fo:margin-right"), d->rightMargin->value().toDouble());
-    KReportUtils::setAttribute(&pagestyle, QLatin1String("fo:margin-left"), d->leftMargin->value().toDouble());
+    KReportUtils::setAttribute(
+        &pagestyle, QLatin1String("fo:margin-top"),
+        d->currentUnit.convertToPoint(d->topMargin->value().toDouble()));
+    KReportUtils::setAttribute(
+        &pagestyle, QLatin1String("fo:margin-bottom"),
+        d->currentUnit.convertToPoint(d->bottomMargin->value().toDouble()));
+    KReportUtils::setAttribute(
+        &pagestyle, QLatin1String("fo:margin-right"),
+        d->currentUnit.convertToPoint(d->rightMargin->value().toDouble()));
+    KReportUtils::setAttribute(
+        &pagestyle, QLatin1String("fo:margin-left"),
+        d->currentUnit.convertToPoint(d->leftMargin->value().toDouble()));
 
     content.appendChild(pagestyle);
 
@@ -772,8 +816,9 @@ void KReportDesigner::createProperties()
     QVariant defaultKey = KReportPageSize::pageSizeKey(KReportPageSize::defaultSize());
     d->pageSize = new KProperty("page-size", listData, defaultKey, tr("Page Size"));
 
-    d->customPageSize = new KProperty("custom-page-size", QSizeF(KReportUnit(KReportUnit::Type::Centimeter).fromUserValue(10), KReportUnit(KReportUnit::Type::Centimeter).fromUserValue(10)),
+    d->customPageSize = new KProperty("custom-page-size", DEFAULT_CUSTOM_PAGE_SIZE,
         tr("Custom Page Size"), tr("Custom Page Size"), KProperty::SizeF);
+    d->customPageSize->setOption("suffix", d->currentUnit.symbol());
 
     listData = new KPropertyListData({ QLatin1String("portrait"), QLatin1String("landscape") },
                                      QVariantList{ tr("Portrait"), tr("Landscape") });
@@ -783,24 +828,26 @@ void KReportDesigner::createProperties()
     QList<KReportUnit::Type> types(KReportUnit::allTypes());
     types.removeOne(KReportUnit::Type::Pixel);
     listData = new KPropertyListData(KReportUnit::symbols(types), KReportUnit::descriptions(types));
-    d->unit = new KProperty("page-unit", listData, QLatin1String("cm"), tr("Page Unit"));
-
+    d->unit = new KProperty("page-unit", listData, DEFAULT_UNIT_STRING, tr("Page Unit"));
     d->showGrid = new KProperty("grid-visible", true, tr("Show Grid"));
     d->gridSnap = new KProperty("grid-snap", true, tr("Snap to Grid"));
     d->gridDivisions = new KProperty("grid-divisions", 4, tr("Grid Divisions"));
+    d->gridDivisions->setOption("min", 1);
+    d->gridDivisions->setOption("max", 10);
 
-    d->leftMargin = new KProperty("margin-left", KReportUnit(KReportUnit::Type::Centimeter).fromUserValue(1.0),
+
+    d->leftMargin = new KProperty("margin-left", pageUnit().convertFromPoint(KReportUnit::parseValue(DEFAULT_PAGE_MARGIN_STRING)),
         tr("Left Margin"), tr("Left Margin"), KProperty::Double);
-    d->rightMargin = new KProperty("margin-right", KReportUnit(KReportUnit::Type::Centimeter).fromUserValue(1.0),
+    d->rightMargin = new KProperty("margin-right", pageUnit().convertFromPoint(KReportUnit::parseValue(DEFAULT_PAGE_MARGIN_STRING)),
         tr("Right Margin"), tr("Right Margin"), KProperty::Double);
-    d->topMargin = new KProperty("margin-top", KReportUnit(KReportUnit::Type::Centimeter).fromUserValue(1.0),
+    d->topMargin = new KProperty("margin-top", pageUnit().convertFromPoint(KReportUnit::parseValue(DEFAULT_PAGE_MARGIN_STRING)),
         tr("Top Margin"), tr("Top Margin"), KProperty::Double);
-    d->bottomMargin = new KProperty("margin-bottom", KReportUnit(KReportUnit::Type::Centimeter).fromUserValue(1.0),
+    d->bottomMargin = new KProperty("margin-bottom", pageUnit().convertFromPoint(KReportUnit::parseValue(DEFAULT_PAGE_MARGIN_STRING)),
         tr("Bottom Margin"), tr("Bottom Margin"), KProperty::Double);
-    d->leftMargin->setOption("unit", QLatin1String("cm"));
-    d->rightMargin->setOption("unit", QLatin1String("cm"));
-    d->topMargin->setOption("unit", QLatin1String("cm"));
-    d->bottomMargin->setOption("unit", QLatin1String("cm"));
+    d->leftMargin->setOption("suffix", d->currentUnit.symbol());
+    d->rightMargin->setOption("suffix", d->currentUnit.symbol());
+    d->topMargin->setOption("suffix", d->currentUnit.symbol());
+    d->bottomMargin->setOption("suffix", d->currentUnit.symbol());
 
     d->set.addProperty(d->title);
     d->set.addProperty(d->pageSize);
@@ -815,6 +862,8 @@ void KReportDesigner::createProperties()
     d->set.addProperty(d->topMargin);
     d->set.addProperty(d->bottomMargin);
 
+    recalculateMaxMargins();
+
 #ifdef KREPORT_SCRIPTING
     d->script = new KProperty("script", new KPropertyListData, QVariant(), tr("Object Script"));
     d->set.addProperty(d->script);
@@ -826,19 +875,47 @@ void KReportDesigner::createProperties()
 */
 void KReportDesigner::slotPropertyChanged(KPropertySet &s, KProperty &p)
 {
+    const QSignalBlocker blocker(s);
     setModified(true);
+    QByteArray propertyName = p.name();
+
+    if (propertyName == "page-unit") {
+        const KReportUnit oldUnit = d->currentUnit;
+        d->updateCurrentUnit();
+        d->hruler->setUnit(pageUnit());
+
+        // convert values
+        d->leftMargin->setValue(KReportUnit::convertFromUnitToUnit(
+                                    d->leftMargin->value().toDouble(), oldUnit, d->currentUnit),
+                                KProperty::ValueOption::IgnoreOld);
+
+        d->rightMargin->setValue(KReportUnit::convertFromUnitToUnit(
+                                     d->rightMargin->value().toDouble(), oldUnit, d->currentUnit),
+                                 KProperty::ValueOption::IgnoreOld);
+
+        d->topMargin->setValue(KReportUnit::convertFromUnitToUnit(d->topMargin->value().toDouble(),
+                                                                  oldUnit, d->currentUnit),
+                               KProperty::ValueOption::IgnoreOld);
+
+        d->bottomMargin->setValue(KReportUnit::convertFromUnitToUnit(
+                                      d->bottomMargin->value().toDouble(), oldUnit, d->currentUnit),
+                                  KProperty::ValueOption::IgnoreOld);
+
+        d->customPageSize->setValue(
+            KReportUnit::convertFromUnitToUnit(d->customPageSize->value().toSizeF(), oldUnit,
+                                               d->currentUnit),
+            KProperty::ValueOption::IgnoreOld);
+
+        d->leftMargin->setOption("suffix", d->currentUnit.symbol());
+        d->rightMargin->setOption("suffix", d->currentUnit.symbol());
+        d->topMargin->setOption("suffix", d->currentUnit.symbol());
+        d->bottomMargin->setOption("suffix", d->currentUnit.symbol());
+        d->customPageSize->setOption("suffix", d->currentUnit.symbol());
+    } else if (propertyName.startsWith("margin-") || propertyName == "page-size" || propertyName == "custom-page-size") {
+        recalculateMaxMargins();
+    }
     emit pagePropertyChanged(s);
 
-    if (p.name() == "page-unit") {
-        d->hruler->setUnit(pageUnit());
-        QString newstr = d->set.property("page-unit").value().toString();
-
-        d->set.property("margin-left").setOption("unit", newstr);
-        d->set.property("margin-right").setOption("unit", newstr);
-        d->set.property("margin-top").setOption("unit", newstr);
-        d->set.property("margin-bottom").setOption("unit", newstr);
-        d->set.property("custom-page-size").setOption("unit", newstr);
-    }
 }
 
 void KReportDesigner::slotPageButton_Pressed()
@@ -898,7 +975,7 @@ int KReportDesigner::pageWidthPx() const
     if (d->set.property("page-size").value().toString() == QLatin1String("Custom")) {
         KReportUnit unit = pageUnit();
 
-        QSizeF customSize = d->set.property("custom-page-size").value().toSizeF();
+        QSizeF customSize = d->currentUnit.convertToPoint(d->set.property("custom-page-size").value().toSizeF());
         QPageLayout layout(QPageSize(customSize, QPageSize::Point, QString(), QPageSize::ExactMatch), d->set.property("print-orientation").value().toString()
                     == QLatin1String("portrait") ? QPageLayout::Portrait : QPageLayout::Landscape, QMarginsF(0,0,0,0));
 
@@ -913,10 +990,33 @@ int KReportDesigner::pageWidthPx() const
 
     pageWidth = pageSizePx.width();
 
-    pageWidth = pageWidth - POINT_TO_INCH(d->set.property("margin-left").value().toDouble()) * KReportPrivate::dpiX();
-    pageWidth = pageWidth - POINT_TO_INCH(d->set.property("margin-right").value().toDouble()) * KReportPrivate::dpiX();
+    pageWidth = pageWidth - KReportUnit::convertFromUnitToUnit(d->set.property("margin-left").value().toDouble(), pageUnit(), KReportUnit(KReportUnit::Type::Inch)) * KReportPrivate::dpiX();
+    pageWidth = pageWidth - KReportUnit::convertFromUnitToUnit(d->set.property("margin-right").value().toDouble(), pageUnit(), KReportUnit(KReportUnit::Type::Inch)) * KReportPrivate::dpiX();
 
     return pageWidth;
+}
+
+QSize KReportDesigner::pageSizePt() const
+{
+    QSize pageSizePt;
+
+    if (d->set.property("page-size").value().toString() == QLatin1String("Custom")) {
+        KReportUnit unit = pageUnit();
+
+        QSizeF customSize = d->currentUnit.convertToPoint(d->set.property("custom-page-size").value().toSizeF());
+        QPageLayout layout(QPageSize(customSize, QPageSize::Point, QString(), QPageSize::ExactMatch), d->set.property("print-orientation").value().toString()
+                    == QLatin1String("portrait") ? QPageLayout::Portrait : QPageLayout::Landscape, QMarginsF(0,0,0,0));
+
+        pageSizePt = layout.fullRectPoints().size();
+    } else {
+        QPageLayout layout = QPageLayout(
+            QPageSize(KReportPageSize::pageSize(d->set.property("page-size").value().toString())),
+            d->set.property("print-orientation").value().toString()
+                    == QLatin1String("portrait") ? QPageLayout::Portrait : QPageLayout::Landscape, QMarginsF(0,0,0,0));
+        pageSizePt = layout.fullRectPoints().size();
+    }
+
+    return pageSizePt;
 }
 
 void KReportDesigner::resizeEvent(QResizeEvent * event)
@@ -942,9 +1042,7 @@ void KReportDesigner::setDetail(KReportDesignerSectionDetail *rsd)
 
 KReportUnit KReportDesigner::pageUnit() const
 {
-    const QString symbol = d->unit->value().toString();
-    KReportUnit unit(KReportUnit::symbolToType(symbol));
-    return unit.isValid() ? unit : DEFAULT_UNIT;
+    return d->currentUnit;
 }
 
 void KReportDesigner::setGridOptions(bool vis, int div)
@@ -1050,7 +1148,6 @@ void KReportDesigner::sectionMouseReleaseEvent(KReportDesignerSectionView * v, Q
                 item->setSelected(true);
                 KReportItemBase* baseReportItem = dynamic_cast<KReportItemBase*>(item);
                 if (baseReportItem) {
-                    baseReportItem->setUnit(pageUnit());
                     KPropertySet *set = baseReportItem->propertySet();
                     KReportDesigner::addMetaProperties(set, classString, iconName);
                     set->clearModifiedFlags();
@@ -1584,4 +1681,13 @@ void KReportDesigner::addMetaProperties(KPropertySet* set, const QString &classS
     prop->setVisible(false);
     set->addProperty(prop = new KProperty("this:iconName", iconName));
     prop->setVisible(false);
+}
+
+void KReportDesigner::recalculateMaxMargins()
+{
+    QSize pageSize = pageSizePt();
+    d->leftMargin->setOption("max", d->currentUnit.convertFromPoint(pageSize.width() - d->currentUnit.convertToPoint(d->rightMargin->value().toReal()) - SMALLEST_PAGE_SIZE_PT));
+    d->rightMargin->setOption("max", d->currentUnit.convertFromPoint(pageSize.width()  - d->currentUnit.convertToPoint(d->leftMargin->value().toReal())- SMALLEST_PAGE_SIZE_PT));
+    d->topMargin->setOption("max", d->currentUnit.convertFromPoint(pageSize.height()  - d->currentUnit.convertToPoint(d->bottomMargin->value().toReal())- SMALLEST_PAGE_SIZE_PT));
+    d->bottomMargin->setOption("max", d->currentUnit.convertFromPoint(pageSize.height()  - d->currentUnit.convertToPoint(d->topMargin->value().toReal())- SMALLEST_PAGE_SIZE_PT));
 }

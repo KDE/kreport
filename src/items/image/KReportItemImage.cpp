@@ -16,6 +16,7 @@
  */
 
 #include "KReportItemImage.h"
+#include "KReportUtils.h"
 #include "KReportRenderObjects.h"
 #include "kreportplugin_debug.h"
 
@@ -34,7 +35,7 @@ KReportItemImage::KReportItemImage()
 KReportItemImage::KReportItemImage(const QDomNode & element)
     : KReportItemImage()
 {
-    nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    nameProperty()->setValue(KReportUtils::readNameAttribute(element.toElement()));
     m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
     m_resizeMode->setValue(element.toElement().attribute(QLatin1String("report:resize-mode"), QLatin1String("stretch")));
     setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
@@ -55,7 +56,6 @@ KReportItemImage::KReportItemImage(const QDomNode & element)
             kreportpluginWarning() << "while parsing image element encountered unknown element: " << n;
         }
     }
-
 }
 
 KReportItemImage::~KReportItemImage()

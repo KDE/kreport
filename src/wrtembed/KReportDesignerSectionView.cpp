@@ -49,6 +49,9 @@ KReportDesignerSectionView::~KReportDesignerSectionView()
 //! @todo check
 void KReportDesignerSectionView::resizeContents(const QSize &s)
 {
+    if (size() == s) {
+        return;
+    }
     setMinimumSize(s);
     setMaximumSize(s);
 }

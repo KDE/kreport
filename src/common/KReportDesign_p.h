@@ -21,7 +21,6 @@
 #define KREPORTDESIGN_P_H
 
 #include "KReportDesign.h"
-#include "KReportUnit.h"
 #include "KReportUtils_p.h"
 
 #include <QPageSize>
@@ -31,15 +30,6 @@
 class QDomDocument;
 class QDomElement;
 class KReportPluginInterface;
-
-extern const bool DEFAULT_SHOW_GRID;
-extern const bool DEFAULT_SNAP_TO_GRID;
-extern const int DEFAULT_GRID_DIVISIONS;
-extern const KReportUnit::Type DEFAULT_UNIT_TYPE;
-extern const KReportUnit DEFAULT_UNIT;
-extern const int DEFAULT_PAGE_MARGIN;
-extern const QPageSize::PageSizeId DEFAULT_PAGE_SIZE;
-extern const QPageLayout::Orientation DEFAULT_PAGE_ORIENTATION;
 
 class Q_DECL_HIDDEN KReportDesign::Private
 {

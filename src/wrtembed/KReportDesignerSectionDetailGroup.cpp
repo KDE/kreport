@@ -20,6 +20,7 @@
 #include "KReportDesigner.h"
 #include "KReportDesignerSection.h"
 #include "KReportDesignerSectionDetail.h"
+#include "KReportUtils.h"
 #include "kreport_debug.h"
 
 #include <QDomElement>
@@ -129,7 +130,7 @@ void KReportDesignerSectionDetailGroup::initFromXML( const QDomElement &element 
     }
 
     for ( QDomElement e = element.firstChildElement( QLatin1String("report:section") ); ! e.isNull(); e = e.nextSiblingElement( QLatin1String("report:section") ) ) {
-        QString s = e.attribute( QLatin1String("report:section-type") );
+        const QString s = KReportUtils::readSectionTypeNameAttribute(e);
         if ( s == QLatin1String("group-header") ) {
             setGroupHeaderVisible( true );
             d->groupHeader->initFromXML( e );

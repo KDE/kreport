@@ -19,6 +19,7 @@
 #include "KReportDetailSectionData.h"
 #include "KReportSectionData.h"
 #include "KReportDocument.h"
+#include "KReportUtils.h"
 
 #include "kreport_debug.h"
 #include <QDomElement>
@@ -72,7 +73,7 @@ KReportDetailSectionData::KReportDetailSectionData(const QDomElement &elemSource
             }
             
             for ( QDomElement e = elemThis.firstChildElement( QLatin1String("report:section") ); ! e.isNull(); e = e.nextSiblingElement( QLatin1String("report:section") ) ) {
-                QString s = e.attribute( QLatin1String("report:section-type") );
+                const QString s = KReportUtils::readSectionTypeNameAttribute(e);
                 if ( s == QLatin1String("group-header") ) {
                     KReportSectionData * sd = new KReportSectionData(e, report);
                     if (sd->isValid()) {
@@ -93,10 +94,13 @@ KReportDetailSectionData::KReportDetailSectionData(const QDomElement &elemSource
             KReportDataSource::SortedField s;
             s.setField(dgsd->column);
             s.setOrder(dgsd->m_sort);
+
             sortedFields.append(s);
-	    
-        } else if (elemThis.tagName() == QLatin1String("report:section") && elemThis.attribute(QLatin1String("report:section-type")) == QLatin1String("detail")) {
-            KReportSectionData * sd = new KReportSectionData(elemThis, report);
+        } else if (elemThis.tagName() == QLatin1String("report:section")
+                   && KReportUtils::readSectionTypeNameAttribute(elemThis)
+                       == QLatin1String("detail"))
+        {
+            KReportSectionData *sd = new KReportSectionData(elemThis, report);
             if (sd->isValid()) {
                 detailSection = sd;
             } else

@@ -1,7 +1,7 @@
 /* This file is part of the KDE project
    Copyright (C) 2001 David Faure <faure@kde.org>
-   Copyright (C) 2004, Nicolas GOUTTE <goutte@kde.org>
-   Copyright 2012 Friedrich W. H. Kossebau <kossebau@kde.org>
+   Copyright (C) 2004 Nicolas GOUTTE <goutte@kde.org>
+   Copyright (C) 2012 Friedrich W. H. Kossebau <kossebau@kde.org>
    Copyright (C) 2017 Jarosław Staniek <staniek@kde.org>
 
    This library is free software; you can redistribute it and/or
@@ -225,7 +225,40 @@ QString KReportUnit::toUserStringValue(qreal ptValue) const
     return QLocale::system().toString(toUserValue(ptValue));
 }
 
-qreal KReportUnit::fromUserValue(qreal value) const
+qreal KReportUnit::convertFromPoint(qreal ptValue) const
+{
+    switch (d->type) {
+    case Type::Millimeter:
+        return POINT_TO_MM(ptValue);
+    case Type::Centimeter:
+        return POINT_TO_CM(ptValue);
+    case Type::Decimeter:
+        return POINT_TO_DM(ptValue);
+    case Type::Inch:
+        return POINT_TO_INCH(ptValue);
+    case Type::Pica:
+        return POINT_TO_PI(ptValue);
+    case Type::Cicero:
+        return POINT_TO_CC(ptValue);
+    case Type::Pixel:
+        return ptValue * d->pixelConversion;
+    case Type::Point:
+    default:
+        return ptValue;
+    }
+}
+
+QPointF KReportUnit::convertFromPoint(const QPointF &ptValue) const
+{
+    return QPointF(convertFromPoint(ptValue.x()), convertFromPoint(ptValue.y()));
+}
+
+QSizeF KReportUnit::convertFromPoint(const QSizeF &ptValue) const
+{
+    return QSizeF(convertFromPoint(ptValue.width()), convertFromPoint(ptValue.height()));
+}
+
+qreal KReportUnit::convertToPoint(qreal value) const
 {
     switch (d->type) {
     case Type::Invalid:
@@ -250,16 +283,21 @@ qreal KReportUnit::fromUserValue(qreal value) const
     }
 }
 
-qreal KReportUnit::fromUserValue(const QString &value, bool *ok) const
+qreal KReportUnit::convertToPoint(const QString &value, bool *ok) const
 {
-    if (d->type == Type::Invalid) {
-        kreportWarning() << "Conversion from Invalid type not supported";
-        if (ok) {
-            *ok = false;
-        }
-        return -1.0;
-    }
-    return fromUserValue(QLocale::system().toDouble(value, ok));
+    return convertToPoint(QLocale::system().toDouble(value, ok));
+}
+
+QPointF KReportUnit::convertToPoint(const QPointF &value) const
+{
+    return QPointF(KReportUnit::convertToPoint(value.x()),
+                   KReportUnit::convertToPoint(value.y()));
+}
+
+QSizeF KReportUnit::convertToPoint(const QSizeF &value) const
+{
+    return QSizeF(KReportUnit::convertToPoint(value.width()),
+                  KReportUnit::convertToPoint(value.height()));
 }
 
 qreal KReportUnit::parseValue(const QString& _value, qreal defaultVal)
@@ -353,48 +391,65 @@ qreal KReportUnit::convertFromUnitToUnit(qreal value, const KReportUnit &fromUni
         pt = MM_TO_POINT(value);
         break;
     case Type::Centimeter:
-        pt = CM_TO_POINT(value);
-        break;
+         pt = CM_TO_POINT(value);
+         break;
     case Type::Decimeter:
-        pt = DM_TO_POINT(value);
-        break;
+         pt = DM_TO_POINT(value);
+         break;
     case Type::Inch:
-        pt = INCH_TO_POINT(value);
-        break;
+         pt = INCH_TO_POINT(value);
+         break;
     case Type::Pica:
-        pt = PI_TO_POINT(value);
-        break;
+         pt = PI_TO_POINT(value);
+         break;
     case Type::Cicero:
-        pt = CC_TO_POINT(value);
-        break;
+         pt = CC_TO_POINT(value);
+         break;
     case Type::Pixel:
-        pt = value / factor;
-        break;
+         pt = value / factor;
+         break;
     case Type::Point:
     default:
-        pt = value;
-    }
-
+         pt = value;
+     }
+ 
     switch (toUnit.type()) {
     case Type::Millimeter:
-        return POINT_TO_MM(pt);
+         return POINT_TO_MM(pt);
     case Type::Centimeter:
-        return POINT_TO_CM(pt);
+         return POINT_TO_CM(pt);
     case Type::Decimeter:
-        return POINT_TO_DM(pt);
+         return POINT_TO_DM(pt);
     case Type::Inch:
-        return POINT_TO_INCH(pt);
+         return POINT_TO_INCH(pt);
     case Type::Pica:
-        return POINT_TO_PI(pt);
+         return POINT_TO_PI(pt);
     case Type::Cicero:
-        return POINT_TO_CC(pt);
+         return POINT_TO_CC(pt);
     case Type::Pixel:
-        return pt * factor;
+         return pt * factor;
     case Type::Invalid:
-    case Type::Point:
     default:
-        return pt;
-    }
+         return pt;
+     }
+}
+ 
+QPointF KReportUnit::convertFromUnitToUnit(const QPointF &value,
+                                           const KReportUnit &fromUnit,
+                                           const KReportUnit &toUnit)
+{
+    return QPointF(
+        KReportUnit::convertFromUnitToUnit(value.x(), fromUnit, toUnit),
+        KReportUnit::convertFromUnitToUnit(value.y(), fromUnit, toUnit));
+}
+
+QSizeF KReportUnit::convertFromUnitToUnit(const QSizeF &value,
+                                           const KReportUnit &fromUnit,
+                                           const KReportUnit &toUnit)
+{
+    return QSizeF(
+        KReportUnit::convertFromUnitToUnit(value.width(), fromUnit, toUnit),
+        KReportUnit::convertFromUnitToUnit(value.height(), fromUnit, toUnit));
 }
 
 QString KReportUnit::symbol() const

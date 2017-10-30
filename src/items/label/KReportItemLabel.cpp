@@ -17,6 +17,7 @@
 
 #include "KReportItemLabel.h"
 #include "KReportRenderObjects.h"
+#include "KReportUtils.h"
 #include "kreportplugin_debug.h"
 
 #include <KPropertySet>
@@ -34,7 +35,7 @@ KReportItemLabel::KReportItemLabel()
 KReportItemLabel::KReportItemLabel(const QDomNode & element)
     : KReportItemLabel()
 {
-    nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    nameProperty()->setValue(KReportUtils::readNameAttribute(element.toElement()));
     m_text->setValue(element.toElement().attribute(QLatin1String("report:caption")));
     setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
     m_horizontalAlignment->setValue(element.toElement().attribute(QLatin1String("report:horizontal-align")));
@@ -108,7 +109,7 @@ void KReportItemLabel::createProperties()
     m_backgroundOpacity = new KProperty("background-opacity", QVariant(0), tr("Background Opacity"));
     m_backgroundOpacity->setOption("max", 100);
     m_backgroundOpacity->setOption("min", 0);
-    m_backgroundOpacity->setOption("unit", QLatin1String("%"));
+    m_backgroundOpacity->setOption("suffix", QLatin1String("%"));
 
     m_lineWeight = new KProperty("line-weight", 1.0, tr("Line Weight"));
     m_lineWeight->setOption("step", 1.0);

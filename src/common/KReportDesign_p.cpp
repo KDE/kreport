@@ -20,6 +20,7 @@
 #include "KReportDesign_p.h"
 #include "KReportElement.h"
 #include "KReportUtils.h"
+#include "KReportUtils_p.h"
 #include "KReportPluginManager.h"
 #include "KReportPluginInterface.h"
 
@@ -27,15 +28,6 @@
 #include <QDomDocument>
 #include <QDomElement>
 #include <QSizeF>
-
-const bool DEFAULT_SHOW_GRID = true;
-const bool DEFAULT_SNAP_TO_GRID = true;
-const int DEFAULT_GRID_DIVISIONS = 4;
-const KReportUnit::Type DEFAULT_UNIT_TYPE = KReportUnit::Type::Centimeter;
-const KReportUnit DEFAULT_UNIT(DEFAULT_UNIT_TYPE);
-const int DEFAULT_PAGE_MARGIN = CM_TO_POINT(1.0);
-const QPageSize::PageSizeId DEFAULT_PAGE_SIZE = QPageSize::A4;
-const QPageLayout::Orientation DEFAULT_PAGE_ORIENTATION = QPageLayout::Landscape;
 
 KReportDesign::Private::Private(KReportDesign *design)
  : q(design)
@@ -59,10 +51,10 @@ KReportDesignGlobal::KReportDesignGlobal()
     , defaultSectionBackgroundColor(Qt::white)
 {
     defaultPageLayout.setUnits(QPageLayout::Point);
-    defaultPageLayout.setMargins(QMarginsF(DEFAULT_PAGE_MARGIN,
-                                           DEFAULT_PAGE_MARGIN,
-                                           DEFAULT_PAGE_MARGIN,
-                                           DEFAULT_PAGE_MARGIN));
+    defaultPageLayout.setMargins(QMarginsF(DEFAULT_PAGE_MARGIN_PT,
+                                           DEFAULT_PAGE_MARGIN_PT,
+                                           DEFAULT_PAGE_MARGIN_PT,
+                                           DEFAULT_PAGE_MARGIN_PT));
     defaultPageLayout.setMode(QPageLayout::StandardMode);
     defaultPageLayout.setOrientation(DEFAULT_PAGE_ORIENTATION);
 }
@@ -143,10 +135,10 @@ static bool checkElement(const QDomNode &node, KReportDesignReadingStatus *statu
     return false;
 }
 
-static void setNoAttributeStatus(const QDomElement &el, const char *attrName, KReportDesignReadingStatus *status)
+static void setNoAttributeStatus(const QDomElement &el, const QString &attrName, KReportDesignReadingStatus *status)
 {
     setStatus(status, QString::fromLatin1("Attribute \"%1\" expected inside of <%1>")
-              .arg(QLatin1String(attrName)).arg(el.tagName()), el);
+              .arg(attrName).arg(el.tagName()), el);
 }
 
 #if 0 // TODO unused for now
@@ -163,21 +155,26 @@ static bool checkAttribute(const QDomElement &el, const char *attrName, KReportD
 KReportSection KReportDesign::Private::processSectionElement(const QDomElement &el,
                                                              KReportDesignReadingStatus *status)
 {
-    const QString sectionTypeName = KReportUtils::attr(el, "report:section-type", QString());
-    KReportSection::Type sectionType = s_global->sectionType(sectionTypeName);
+    qDebug() << el.nodeName();
+    const KReportSection::Type sectionType
+        = s_global->sectionType(KReportUtils::readSectionTypeNameAttribute(el));
     if (sectionType == KReportSection::Type::Invalid) {
         setStatus(status,
-            QString::fromLatin1("Invalid value of report:section-type=\"%1\" in element <%2>")
-                                .arg(sectionTypeName).arg(el.tagName()), el);
+                  QString::fromLatin1(
+                      "Invalid value of report:section-type=\"%1\" in element <%2>")
+                      .arg(KReportUtils::readSectionTypeNameAttribute(el))
+                      .arg(el.tagName()),
+                  el);
         return KReportSection();
     }
     KReportSection section;
     section.setType(sectionType);
-    qreal height = KReportUtils::attr(el, "svg:height", -1.0);
-    if (height >= 0.0) {
-        section.setHeight(height);
+    const QSizeF size(KReportUtils::readSizeAttributes(el));
+    if (size.height() >= 0) {
+        section.setHeight(size.height());
     }
-    section.setBackgroundColor(QColor(KReportUtils::attr(el, "fo:background-color", QString())));
+    section.setBackgroundColor(
+        KReportUtils::attr(el, QLatin1String("fo:background-color"), QColor()));
     for (QDomNode node = el.firstChild(); !node.isNull(); node = node.nextSibling()) {
         if (!checkElement(node, status)) {
             return KReportSection();
@@ -223,9 +220,9 @@ KReportElement KReportDesign::Private::processSectionElementChild(const QDomElem
     if (!plugin->loadElement(&element, el, status)) {
         return KReportElement();
     }
-    element.setName(KReportUtils::attr(el, "report:name", QString()));
+    element.setName(KReportUtils::readNameAttribute(el));
     if (element.name().isEmpty()) {
-        setNoAttributeStatus(el, "report:name", status);
+        setNoAttributeStatus(el, QLatin1String("report:name"), status);
         return KReportElement();
     }
     return element;
@@ -350,14 +347,20 @@ bool KReportDesign::Private::processContentElementChild(const QDomElement &el,
 #ifdef KREPORT_SCRIPTING
     } else if (name == "report:script") {
         script = el.firstChildElement().text();
-        originalInterpreter = KReportUtils::attr(el, "report:script-interpreter", QString());
+        originalInterpreter = KReportUtils::attr(
+            el, QLatin1String("report:script-interpreter"), QString());
 #endif
     } else if (name == "report:grid") {
-        showGrid = KReportUtils::attr(el, "report:grid-visible", DEFAULT_SHOW_GRID);
-        snapToGrid = KReportUtils::attr(el, "report:grid-snap", DEFAULT_SNAP_TO_GRID);
-        gridDivisions = KReportUtils::attr(el, "report:grid-divisions", DEFAULT_GRID_DIVISIONS);
-        const QString pageUnitString = KReportUtils::attr(el, "report:page-unit", QString());
-        pageUnit = KReportUnit(KReportUnit::symbolToType(pageUnitString));
+        showGrid = KReportUtils::attr(
+            el, QLatin1String("report:grid-visible"), DEFAULT_SHOW_GRID);
+        snapToGrid = KReportUtils::attr(
+            el, QLatin1String("report:grid-snap"), DEFAULT_SNAP_TO_GRID);
+        gridDivisions = KReportUtils::attr(
+            el, QLatin1String("report:grid-divisions"), DEFAULT_GRID_DIVISIONS);
+        const QString pageUnitString
+            = KReportUtils::attr(el, QLatin1String("report:page-unit"), QString());
+
+        pageUnit = KReportUnit::symbolToType(pageUnitString);
         if (!pageUnit.isValid()) {
             pageUnit = DEFAULT_UNIT;
             if (!pageUnitString.isEmpty()) {
@@ -369,12 +372,12 @@ bool KReportDesign::Private::processContentElementChild(const QDomElement &el,
     else if (name == "report:page-style") { // see https://git.reviewboard.kde.org/r/115314
         const QByteArray pagetype = el.text().toLatin1();
         if (pagetype == "predefined") {
-            pageLayout.setPageSize(
-                        KReportUtils::pageSize(KReportUtils::attr(el, "report:page-size",
-                                               QPageSize(DEFAULT_PAGE_SIZE).key())));
+            pageLayout.setPageSize(KReportUtils::pageSize(
+                KReportUtils::attr(el, QLatin1String("report:page-size"),
+                                   QPageSize(DEFAULT_PAGE_SIZE).key())));
         } else if (pagetype.isEmpty() || pagetype == "custom") {
-            QSizeF size(KReportUtils::attr(el, "fo:page-width", -1.0),
-                        KReportUtils::attr(el, "fo:page-height", -1.0));
+            QSizeF size(KReportUtils::attr(el, QLatin1String("fo:page-width"), -1.0),
+                        KReportUtils::attr(el, QLatin1String("fo:page-height"), -1.0));
             if (size.isValid()) {
                 pageLayout.setPageSize(QPageSize(size, QPageSize::Point));
             } else {
@@ -384,15 +387,20 @@ bool KReportDesign::Private::processContentElementChild(const QDomElement &el,
             //! @todo?
             pageLayout.setPageSize(defaultPageLayout.pageSize());
         }
-        QMarginsF margins(KReportUtils::attr(el, "fo:margin-left", defaultPageLayout.margins().left()),
-                 KReportUtils::attr(el, "fo:margin-top", defaultPageLayout.margins().top()),
-                 KReportUtils::attr(el, "fo:margin-right", defaultPageLayout.margins().right()),
-                 KReportUtils::attr(el, "fo:margin-bottom", defaultPageLayout.margins().bottom()));
+        QMarginsF margins(KReportUtils::attr(el, QLatin1String("fo:margin-left"),
+                                             defaultPageLayout.margins().left()),
+                          KReportUtils::attr(el, QLatin1String("fo:margin-top"),
+                                             defaultPageLayout.margins().top()),
+                          KReportUtils::attr(el, QLatin1String("fo:margin-right"),
+                                             defaultPageLayout.margins().right()),
+                          KReportUtils::attr(el, QLatin1String("fo:margin-bottom"),
+                                             defaultPageLayout.margins().bottom()));
         bool b = pageLayout.setMargins(margins);
         if (!b) {
             qWarning() << "Failed to set page margins to" << margins;
         }
-        const QString s = KReportUtils::attr(el, "report:print-orientation", QString());
+        const QString s = KReportUtils::attr(
+            el, QLatin1String("report:print-orientation"), QString());
         if (s == QLatin1String("portrait")) {
             pageLayout.setOrientation(QPageLayout::Portrait);
         } else if (s == QLatin1String("landscape")) {

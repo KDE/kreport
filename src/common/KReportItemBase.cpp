@@ -29,13 +29,42 @@ class Q_DECL_HIDDEN KReportItemBase::Private
 public:
     Private();
     ~Private();
-    
+
+    void setUnit(const KReportUnit& u, bool force)
+    {
+        if (!force && unit == u) {
+            return;
+        }
+        const QSignalBlocker blocker(set);
+        KReportUnit oldunit = unit;
+        unit = u;
+        // convert values
+
+        if (positionProperty) {
+            positionProperty->setValue(KReportUnit::convertFromUnitToUnit(
+                                           positionProperty->value().toPointF(), oldunit, u),
+                                       KProperty::ValueOption::IgnoreOld);
+
+            positionProperty->setOption("suffix", u.symbol());
+
+        }
+        if (sizeProperty) {
+            sizeProperty->setValue(
+                KReportUnit::convertFromUnitToUnit(sizeProperty->value().toSizeF(), oldunit, u),
+                KProperty::ValueOption::IgnoreOld);
+
+            sizeProperty->setOption("suffix", u.symbol());
+        }
+
+    }
+
     KPropertySet *set;
     KProperty *nameProperty;
     KProperty *sizeProperty;
     KProperty *positionProperty;
     QString oldName;
     qreal z = 0;
+    KReportUnit unit;
 };
 
 KReportItemBase::Private::Private()
@@ -43,10 +72,11 @@ KReportItemBase::Private::Private()
     set = new KPropertySet();
     nameProperty = new KProperty("name", QString(), tr("Name"), tr("Object Name"));
     nameProperty->setValueSyncPolicy(KProperty::ValueSyncPolicy::FocusOut);
-    
+
     positionProperty = new KProperty("position", QPointF(), QCoreApplication::translate("ItemPosition", "Position"));
     sizeProperty = new KProperty("size", QSizeF(), QCoreApplication::translate("ItemSize", "Size"));
-    
+    setUnit(DEFAULT_UNIT, true);
+
     set->addProperty(nameProperty);
     set->addProperty(positionProperty);
     set->addProperty(sizeProperty);
@@ -59,14 +89,16 @@ KReportItemBase::Private::~Private()
 
 
 KReportItemBase::KReportItemBase() : d(new Private())
-{    
+{
     connect(propertySet(), &KPropertySet::propertyChanged,
             this, &KReportItemBase::propertyChanged);
+
+    connect(propertySet(), &KPropertySet::aboutToDeleteProperty, this, &KReportItemBase::aboutToDeleteProperty);
 }
 
-KReportItemBase::~KReportItemBase() 
-{ 
-    delete d;    
+KReportItemBase::~KReportItemBase()
+{
+    delete d;
 }
 
 bool KReportItemBase::parseReportTextStyleData(const QDomElement & elemSource, KReportTextStyleData *ts)
@@ -82,26 +114,20 @@ bool KReportItemBase::parseReportLineStyleData(const QDomElement & elemSource, K
 
 bool KReportItemBase::parseReportRect(const QDomElement & elemSource)
 {
-    QPointF pos;
-    QSizeF size;
-
-    pos.setX(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:x"), QLatin1String("1cm"))));
-    pos.setY(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:y"), QLatin1String("1cm"))));
-    size.setWidth(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:width"), QLatin1String("1cm"))));
-    size.setHeight(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:height"), QLatin1String("1cm"))));
-
-    setPosition(pos);
-    setSize(size);
-
+    const QRectF r(KReportUtils::readRectAttributes(elemSource, DEFAULT_ELEMENT_RECT_PT));
+    setPosition(r.topLeft());
+    setSize(r.size());
     return true;
-    
+}
+
+KReportUnit KReportItemBase::unit() const
+{
+    return d->unit;
 }
 
 void KReportItemBase::setUnit(const KReportUnit& u)
 {
-    qDebug() << "Setting page unit to: " << u.symbol();
-    d->positionProperty->setOption("unit", u.symbol());
-    d->sizeProperty->setOption("unit", u.symbol());
+    d->setUnit(u, false);
 }
 
 int KReportItemBase::renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset,
@@ -168,12 +194,12 @@ void KReportItemBase::setOldName(const QString& old)
 
 QPointF KReportItemBase::position() const
 {
-    return d->positionProperty->value().toPointF();
+    return d->unit.convertToPoint(d->positionProperty->value().toPointF());
 }
 
 QSizeF KReportItemBase::size() const
 {
-    return d->sizeProperty->value().toSizeF();
+    return d->unit.convertToPoint(d->sizeProperty->value().toSizeF());
 }
 
 const KPropertySet * KReportItemBase::propertySet() const
@@ -181,18 +207,18 @@ const KPropertySet * KReportItemBase::propertySet() const
     return d->set;
 }
 
-QPointF KReportItemBase::scenePosition(const QPointF &pos)
+QPointF KReportItemBase::scenePosition(const QPointF &ptPos)
 {
-    const qreal x = POINT_TO_INCH(pos.x()) * KReportPrivate::dpiX();
-    const qreal y = POINT_TO_INCH(pos.y()) * KReportPrivate::dpiY();
+    const qreal x = POINT_TO_INCH(ptPos.x()) * KReportPrivate::dpiX();
+    const qreal y = POINT_TO_INCH(ptPos.y()) * KReportPrivate::dpiY();
     return QPointF(x, y);
 }
 
-QSizeF KReportItemBase::sceneSize(const QSizeF &size)
+QSizeF KReportItemBase::sceneSize(const QSizeF &ptSize)
 {
-    const qreal w = POINT_TO_INCH(size.width()) * KReportPrivate::dpiX();
-    const qreal h = POINT_TO_INCH(size.height()) * KReportPrivate::dpiY();
-    return QSizeF(w, h);    
+    const qreal w = POINT_TO_INCH(ptSize.width()) * KReportPrivate::dpiX();
+    const qreal h = POINT_TO_INCH(ptSize.height()) * KReportPrivate::dpiY();
+    return QSizeF(w, h);
 }
 
 qreal KReportItemBase::z() const
@@ -205,14 +231,14 @@ void KReportItemBase::setZ(qreal z)
     d->z = z;
 }
 
-void KReportItemBase::setPosition(const QPointF& pos)
+void KReportItemBase::setPosition(const QPointF& ptPos)
 {
-    d->positionProperty->setValue(pos);
+    d->positionProperty->setValue(d->unit.convertFromPoint(ptPos));
 }
 
-void KReportItemBase::setSize(const QSizeF& size)
+void KReportItemBase::setSize(const QSizeF &ptSize)
 {
-    d->sizeProperty->setValue(size);
+    d->sizeProperty->setValue(d->unit.convertFromPoint(ptSize));
 }
 
 QPointF KReportItemBase::positionFromScene(const QPointF& pos)
@@ -233,4 +259,15 @@ void KReportItemBase::propertyChanged(KPropertySet& s, KProperty& p)
 {
     Q_UNUSED(s)
     Q_UNUSED(p)
+}
+
+void KReportItemBase::aboutToDeleteProperty(KPropertySet& set, KProperty& property)
+{
+    Q_UNUSED(set)
+    if (property.name() == "size") {
+        d->sizeProperty = nullptr;
+    }
+    else if (property.name() == "position") {
+        d->positionProperty = nullptr;
+    }
 }

@@ -18,6 +18,7 @@
 #include "KReportItemChart.h"
 
 #include "KReportRenderObjects.h"
+#include "KReportUtils.h"
 
 #include <KDChartBarDiagram>
 #include <KDChartThreeDBarAttributes>
@@ -51,7 +52,7 @@ KReportItemChart::KReportItemChart(QDomNode *element)
     : KReportItemChart()
 {
     QDomElement e = element->toElement();
-    m_name->setValue(e.attribute("report:name"));
+    m_name->setValue(KReportUtils::readNameAttribute(e));
     m_dataSource->setValue(e.attribute("report:data-source"));
     Z = e.attribute("report:z-index").toDouble();
     m_chartType->setValue(e.attribute("report:chart-type").toInt());
@@ -70,7 +71,6 @@ KReportItemChart::KReportItemChart(QDomNode *element)
     m_linkChild->setValue(e.attribute("report:link-child"));
 
     parseReportRect(e, &m_pos, &m_size);
-
 }
 
 

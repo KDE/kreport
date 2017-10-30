@@ -20,6 +20,7 @@
 #include "KReportDesignerSectionDetailGroup.h"
 #include "KReportDesignerSection.h"
 #include "KReportDesigner.h"
+#include "KReportUtils.h"
 #include "kreport_debug.h"
 
 #include <QVBoxLayout>
@@ -116,8 +117,10 @@ void KReportDesignerSectionDetail::initFromXML(QDomNode *section)
             KReportDesignerSectionDetailGroup * rsdg = new KReportDesignerSectionDetailGroup(QLatin1String("unnamed"), this, this);
             rsdg->initFromXML( node.toElement() );
             insertGroupSection(groupSectionCount(), rsdg);
-        } else if (n == QLatin1String("report:section") && node.toElement().attribute(QLatin1String("report:section-type")) == QLatin1String("detail")) {
-            //kreportDebug() << "Creating detail section";
+        } else if (n == QLatin1String("report:section")
+            && KReportUtils::readSectionTypeNameAttribute(node.toElement()) == QLatin1String("detail"))
+        {
+            // kreportDebug() << "Creating detail section";
             d->detail->initFromXML(node);
         } else {
             // unknown element

@@ -37,23 +37,23 @@ class KReportLineStyle;
 
 namespace KReportUtils
 {
-    KREPORT_EXPORT QString attr(const QDomElement &el, const char *attrName,
+    KREPORT_EXPORT QString attr(const QDomElement &el, const QString &attrName,
                                 const QString &defaultValue = QString());
 
-    KREPORT_EXPORT QByteArray attr(const QDomElement &el, const char *attrName,
+    KREPORT_EXPORT QByteArray attr(const QDomElement &el, const QString &attrName,
                                    const QByteArray &defaultValue = QByteArray());
 
-    KREPORT_EXPORT bool attr(const QDomElement &el, const char *attrName, bool defaultValue = false);
+    KREPORT_EXPORT bool attr(const QDomElement &el, const QString &attrName, bool defaultValue = false);
 
-    KREPORT_EXPORT int attr(const QDomElement &el, const char *attrName, int defaultValue = 0);
+    KREPORT_EXPORT int attr(const QDomElement &el, const QString &attrName, int defaultValue = 0);
 
-    KREPORT_EXPORT qreal attr(const QDomElement &el, const char *attrName, qreal defaultValue = 0.0);
+    KREPORT_EXPORT qreal attr(const QDomElement &el, const QString &attrName, qreal defaultValue = 0.0);
 
-    KREPORT_EXPORT QColor attr(const QDomElement &el, const char *attrName, const QColor &defaultValue = QColor());
+    KREPORT_EXPORT QColor attr(const QDomElement &el, const QString &attrName, const QColor &defaultValue = QColor());
 
     //! @return percent value converted to qreal, e.g. 1.0 for "100%", 0.505 for "50.5%".
     //! @a defaultValue is returned if there is not "%" suffix or no proper number.
-    KREPORT_EXPORT qreal attrPercent(const QDomElement& el, const char* attrName, qreal defaultValue = 0.0);
+    KREPORT_EXPORT qreal attrPercent(const QDomElement& el, const QString &attrName, qreal defaultValue = 0.0);
 
     //! @return pen style from @a str or @a defaultValue
     //! Values from ODF 1.2 19.493 style:line-style are also recognized.
@@ -71,13 +71,37 @@ namespace KReportUtils
     //! @return horizontal alignment flag from @a alignment
     KREPORT_EXPORT QString horizontalToString(Qt::Alignment alignment);
 
+    //! @return name value read from report:name attribute of @a el.
+    //! If the attribute is missing, @a defaultValue is returned.
+    KREPORT_EXPORT QString readNameAttribute(
+        const QDomElement &el, const QString &defaultValue = QString());
+
+    //! @return size value read from svg:width and svg:height attributes of @a el.
+    //! If any of the attributes are missing, @a defaultValue is returned.
+    //! @a defaultValue should be specified in Points.
+    KREPORT_EXPORT QSizeF readSizeAttributes(
+        const QDomElement &el, const QSizeF &defaultValue = QSizeF());
+
     //! @return rectangle value read from svg:x, svg:y, svg:width, svg:height attributes of @a el.
-    //! If any of the arguments are missing, @a defaultValue is returned.
-    KREPORT_EXPORT QRectF readRectAttributes(const QDomElement &el, const QRectF &defaultValue = QRectF());
+    //! If any of the attributes are missing, @a defaultValue is returned.
+    //! @a defaultValue should be specified in Points.
+    KREPORT_EXPORT QRectF readRectAttributes(
+        const QDomElement &el, const QRectF &defaultValue = QRectF());
+
+    //! @return Z index value read from report:z-index attribute of @a el.
+    //! If the attribute is missing @a defaultValue is returned.
+    //! @a defaultValue should be specified in Points.
+    KREPORT_EXPORT qreal readZAttribute(const QDomElement &el, qreal defaultValue = 0.0);
+
+    //! @return name of section type read from report:section-type attribute of @a el.
+    //! If the attribute is missing, @a defaultValue is returned.
+    KREPORT_EXPORT QString readSectionTypeNameAttribute(
+        const QDomElement &el, const QString &defaultValue = QString());
 
     //! @return percent value for element @a name. If the element is missing, returns @a defaultPercentValue.
     //! If @a ok is not 0, *ok is set to the result.
-    KREPORT_EXPORT int readPercent(const QDomElement & el, const char* name, int defaultPercentValue, bool *ok);
+    KREPORT_EXPORT int readPercent(const QDomElement &el, const QString &attrName,
+        int defaultPercentValue, bool *ok);
 
     //! Reads all font attributes for element @a el into @a font.
     //! @todo add unit tests

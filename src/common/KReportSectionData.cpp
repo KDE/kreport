@@ -23,7 +23,10 @@
 #include "KReportItemLine.h"
 #include "KReportPluginInterface.h"
 #include "KReportPluginManager.h"
+#include "KReportItemLine.h"
+#include "KReportDesigner.h"
 #include "KReportUtils.h"
+#include "KReportUtils_p.h"
 #include "kreport_debug.h"
 
 #include <KPropertySet>
@@ -34,14 +37,15 @@ KReportSectionData::KReportSectionData(QObject *parent) : KReportSectionData(QDo
 {
 }
 
-KReportSectionData::KReportSectionData(const QDomElement &elemSource, QObject *parent)
-    : QObject(parent)
+KReportSectionData::KReportSectionData(const QDomElement & elemSource, QObject *parent)
+ : QObject(parent)
+ , m_unit(DEFAULT_UNIT_TYPE)
 {
     if (elemSource.isNull()) {
         m_type = Type::None;
     } else {
         setObjectName(elemSource.tagName());
-        m_type = sectionTypeFromString(elemSource.attribute(QLatin1String("report:section-type")));
+        m_type = sectionTypeFromString(KReportUtils::readSectionTypeNameAttribute(elemSource));
     }
 
     createProperties(elemSource);
@@ -85,9 +89,12 @@ void KReportSectionData::loadXml(const QDomElement &elemSource)
             if (krobj) {
                 krobj->propertySet()->clearModifiedFlags();
                 m_objects.append(krobj);
+            } else {
+                kreportWarning() << "Could not create element of type" << reportItemName;
             }
+        } else {
+            kreportWarning() << "While parsing section encountered an unknown element:" << n;
         }
-        kreportWarning() << "While parsing section encountered an unknown element: " << n;
     }
     qSort(m_objects.begin(), m_objects.end(), zLessThan);
     m_valid = true;
@@ -97,6 +104,25 @@ KReportSectionData::~KReportSectionData()
 {
     delete m_set;
     qDeleteAll(m_objects);
+}
+
+KReportUnit KReportSectionData::unit() const
+{
+    return m_unit;
+}
+
+void KReportSectionData::setUnit(const KReportUnit &u)
+{
+    if (m_unit == u) {
+        return;
+    }
+    // convert values
+    KReportUnit oldunit = m_unit;
+    m_unit = u;
+
+    m_height->setValue(KReportUnit::convertFromUnitToUnit(m_height->value().toReal(), oldunit, u),
+                       KProperty::ValueOption::IgnoreOld);
+    m_height->setOption("suffix", u.symbol());
 }
 
 bool KReportSectionData::zLessThan(KReportItemBase* s1, KReportItemBase* s2)
@@ -115,14 +141,18 @@ void KReportSectionData::createProperties(const QDomElement & elemSource)
     KReportDesigner::addMetaProperties(m_set,
         tr("Section", "Report section"), QLatin1String("kreport-section-element"));
 
-    m_height = new KProperty("height", KReportUnit(KReportUnit::Type::Centimeter).fromUserValue(2.0), tr("Height"));
+    m_height = new KProperty("height", 0.0, tr("Height"));
     m_backgroundColor = new KProperty(
         "background-color",
-        KReportUtils::attr(elemSource, "fo:background-color", QColor(Qt::white)),
+        KReportUtils::attr(elemSource, QLatin1String("fo:background-color"), QColor(Qt::white)),
         tr("Background Color"));
     m_height->setOption("unit", QLatin1String("cm"));
-    if (!elemSource.isNull())
-        m_height->setValue(KReportUnit::parseValue(elemSource.attribute(QLatin1String("svg:height"), QLatin1String("2.0cm"))));
+    if (!elemSource.isNull()) {
+        m_height->setValue(m_unit.convertFromPoint(
+            KReportUtils::readSizeAttributes(
+                elemSource, QSizeF(DEFAULT_SECTION_SIZE_PT, DEFAULT_SECTION_SIZE_PT))
+                .height()));
+    }
 
     m_set->addProperty(m_height);
     m_set->addProperty(m_backgroundColor);
@@ -230,4 +260,19 @@ KReportSectionData::Type KReportSectionData::sectionTypeFromString(const QString
         type = KReportSectionData::Type::None;
 
     return type;
+}
+
+qreal KReportSectionData::height() const
+{
+    return m_unit.convertToPoint(m_height->value().toReal());
+}
+
+void KReportSectionData::setHeight(qreal ptHeight, KProperty::ValueOptions options)
+{
+    m_height->setValue(m_unit.convertFromPoint(ptHeight), options);
+}
+
+void KReportSectionData::setHeight(qreal ptHeight)
+{
+    setHeight(ptHeight, KProperty::ValueOptions());
 }

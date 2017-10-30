@@ -33,6 +33,15 @@
 #include <QSettings>
 #include <QSplitter>
 
+QDebug operator<<(QDebug dbg, const QDomNode& node)
+{
+  QString s;
+  QTextStream str(&s, QIODevice::WriteOnly);
+  node.save(str, 2);
+  dbg << qPrintable(s);
+  return dbg;
+}
+
 Window::Window(QWidget *parent, Qt::WindowFlags flags)
     : QMainWindow(parent, flags)
 {
@@ -117,6 +126,7 @@ void Window::createMenus()
 
 void Window::showDesign(const QDomElement &design)
 {
+    //qDebug() << design;
     KReportPreRenderer preRenderer(design);
     if (!preRenderer.isValid()) {
         return;

@@ -329,6 +329,10 @@ private:
 
     void createActions();
 
+    QSize pageSizePt() const;
+
+    void recalculateMaxMargins();
+
 private Q_SLOTS:
     void slotPropertyChanged(KPropertySet &s, KProperty &p);
 

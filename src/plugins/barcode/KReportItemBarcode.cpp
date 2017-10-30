@@ -37,7 +37,7 @@ KReportItemBarcode::KReportItemBarcode()
 KReportItemBarcode::KReportItemBarcode(const QDomNode & element)
     : KReportItemBarcode()
 {
-    nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    nameProperty()->setValue(KReportUtils::readNameAttribute(element.toElement()));
     m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
     m_itemValue->setValue(element.toElement().attribute(QLatin1String("report:value")));
     setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
@@ -45,7 +45,6 @@ KReportItemBarcode::KReportItemBarcode(const QDomNode & element)
     m_maxLength->setValue(element.toElement().attribute(QLatin1String("report:barcode-max-length")).toInt());
     m_format->setValue(element.toElement().attribute(QLatin1String("report:barcode-format")));
     parseReportRect(element.toElement());
-
 }
 
 void KReportItemBarcode::setMaxLength(int i)

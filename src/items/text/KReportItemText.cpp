@@ -18,6 +18,7 @@
 #include "KReportItemText.h"
 #include "KReportRenderObjects.h"
 #include "kreportplugin_debug.h"
+#include "KReportUtils.h"
 
 #include <KPropertyListData>
 #include <KPropertySet>
@@ -38,7 +39,7 @@ KReportItemText::KReportItemText()
 KReportItemText::KReportItemText(const QDomNode & element)
   : KReportItemText()
 {
-    nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
+    nameProperty()->setValue(KReportUtils::readNameAttribute(element.toElement()));
     m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
     m_itemValue->setValue(element.toElement().attribute(QLatin1String("report:value")));
     setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
@@ -138,7 +139,7 @@ void KReportItemText::createProperties()
     m_backgroundOpacity = new KProperty("background-opacity", QVariant(0), tr("Background Opacity"));
     m_backgroundOpacity->setOption("max", 100);
     m_backgroundOpacity->setOption("min", 0);
-    m_backgroundOpacity->setOption("unit", QLatin1String("%"));
+    m_backgroundOpacity->setOption("suffix", QLatin1String("%"));
 
     propertySet()->addProperty(m_controlSource);
     propertySet()->addProperty(m_itemValue);
@@ -230,7 +231,7 @@ int KReportItemText::renderSimpleData(OROPage *page, OROSection *section, const 
         QChar separator;
         QRegularExpression re(QLatin1String("\\s"));
         QPrinter prnt(QPrinter::HighResolution);
-        QFontMetrics fm(font(), &prnt);
+        QFontMetricsF fm(font(), &prnt);
 
         // int   intRectWidth    = (int)(trf.width() * prnt.resolution()) - 10;
         int     intRectWidth    = (int)((size().width() / 72) * prnt.resolution());

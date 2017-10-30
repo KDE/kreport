@@ -31,10 +31,11 @@ class Q_DECL_HIDDEN KReportDesignerItemRectBase::Private
 public:
     Private();
     ~Private();
-    
+
     int grabAction = 0;
     int dpiX = KReportPrivate::dpiX();
     int dpiY = KReportPrivate::dpiY();
+    bool insideSetSceneRect = false;
 };
 
 KReportDesignerItemRectBase::Private::Private()
@@ -74,6 +75,10 @@ void KReportDesignerItemRectBase::setSceneRect(const QPointF& topLeft, const QSi
 
 void KReportDesignerItemRectBase::setSceneRect(const QRectF& rect, SceneRectFlag update)
 {
+    if (d->insideSetSceneRect) {
+        return;
+    }
+    d->insideSetSceneRect = true;
     QGraphicsRectItem::setPos(rect.x(), rect.y());
     setRect(0, 0, rect.width(), rect.height());
     if (update == SceneRectFlag::UpdateProperty) {
@@ -81,6 +86,7 @@ void KReportDesignerItemRectBase::setSceneRect(const QRectF& rect, SceneRectFlag
         item()->setSize(KReportItemBase::sizeFromScene(QSizeF(rect.width(), rect.height())));
     }
     this->update();
+    d->insideSetSceneRect = false;
 }
 
 void KReportDesignerItemRectBase::mousePressEvent(QGraphicsSceneMouseEvent * event)
@@ -113,7 +119,7 @@ void KReportDesignerItemRectBase::mouseMoveEvent(QGraphicsSceneMouseEvent * even
     if (!section) {
         return;
     }
-    
+
     QPointF p  = section->gridPoint(event->scenePos());
     w = p.x() - scenePos().x();
     h = p.y() - scenePos().y();
@@ -270,10 +276,10 @@ QVariant KReportDesignerItemRectBase::itemChange(GraphicsItemChange change, cons
 {
     KReportDesignerSectionScene *section = qobject_cast<KReportDesignerSectionScene*>(scene());
     if (section) {
-            
+
         if (change == ItemPositionChange) {
             QPointF newPos = value.toPointF();
-            
+
             newPos = section->gridPoint(newPos);
             if (newPos.x() < 0)
                 newPos.setX(0);
@@ -288,7 +294,7 @@ QVariant KReportDesignerItemRectBase::itemChange(GraphicsItemChange change, cons
             return newPos;
         } else if (change == ItemPositionHasChanged) {
             setSceneRect(value.toPointF(),
-                 KReportItemBase::sceneSize(item()->size()), SceneRectFlag::DontUpdateProperty);
+                 KReportItemBase::sceneSize(item()->size()), SceneRectFlag::UpdateProperty);
         } else if (change == ItemSceneHasChanged && item()) {
             QPointF newPos = pos();
 

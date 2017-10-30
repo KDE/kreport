@@ -88,7 +88,7 @@ KReportDesignerItemLabel::~KReportDesignerItemLabel()
 
 QRectF KReportDesignerItemLabel::getTextRect() const
 {
-    return QFontMetrics(font()).boundingRect(x(), y(), 0, 0, textFlags(), m_text->value().toString());
+    return QFontMetricsF(font()).boundingRect(QRectF(x(), y(), 0, 0), textFlags(), m_text->value().toString());
 }
 
 void KReportDesignerItemLabel::paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget)

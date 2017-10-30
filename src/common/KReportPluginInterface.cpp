@@ -66,13 +66,17 @@ bool KReportPluginInterface::loadElement(KReportElement *el, const QDomElement &
 {
     Q_ASSERT(el);
     Q_UNUSED(status);
-    el->setName(KReportUtils::attr(dom, "report:name", QString()));
+    el->setName(KReportUtils::readNameAttribute(dom));
     el->setRect(KReportUtils::readRectAttributes(dom, el->rect()));
-    el->setZ(KReportUtils::attr(dom, "report:z-index", el->z()));
+    el->setZ(KReportUtils::readZAttribute(dom, el->z()));
 
-    const QDomElement textStyleDom = dom.firstChildElement(QLatin1String("report:text-style"));
-    el->setForegroundColor(KReportUtils::attr(textStyleDom, "fo:foreground-color", el->foregroundColor()));
-    el->setBackgroundColor(KReportUtils::attr(textStyleDom, "fo:background-color", el->backgroundColor()));
-    el->setBackgroundOpacity(KReportUtils::attrPercent(textStyleDom, "fo:background-opacity", el->backgroundOpacity()));
+    const QDomElement textStyleDom
+        = dom.firstChildElement(QLatin1String("report:text-style"));
+    el->setForegroundColor(KReportUtils::attr(
+        textStyleDom, QLatin1String("fo:foreground-color"), el->foregroundColor()));
+    el->setBackgroundColor(KReportUtils::attr(
+        textStyleDom, QLatin1String("fo:background-color"), el->backgroundColor()));
+    el->setBackgroundOpacity(KReportUtils::attrPercent(
+        textStyleDom, QLatin1String("fo:background-opacity"), el->backgroundOpacity()));
     return true;
 }

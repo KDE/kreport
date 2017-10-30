@@ -17,6 +17,8 @@
 
 #include "KReportItemLine.h"
 #include "KReportRenderObjects.h"
+#include "KReportUtils.h"
+#include "KReportUtils_p.h"
 #include "kreport_debug.h"
 
 #include <KPropertySet>
@@ -32,21 +34,26 @@ KReportItemLine::KReportItemLine()
 KReportItemLine::KReportItemLine(const QDomNode & element)
     : KReportItemLine()
 {
+    nameProperty()->setValue(KReportUtils::readNameAttribute(element.toElement()));
+    setZ(KReportUtils::readZAttribute(element.toElement()));
+
+    const QPointF s(KReportUnit::parseValue(element.toElement().attribute(
+                        QLatin1String("svg:x1"), DEFAULT_ELEMENT_POS_STRING)),
+                    KReportUnit::parseValue(element.toElement().attribute(
+                        QLatin1String("svg:y1"), DEFAULT_ELEMENT_POS_STRING)));
+    const QPointF e(KReportUnit::parseValue(element.toElement().attribute(
+                        QLatin1String("svg:x2"), DEFAULT_ELEMENT_POS_STRING)),
+                    KReportUnit::parseValue(element.toElement().attribute(
+                        QLatin1String("svg:y2"),
+                        QString::number(POINT_TO_CM(DEFAULT_ELEMENT_POS_PT.y()
+                                                    + DEFAULT_ELEMENT_SIZE_PT.height()))
+                            + QLatin1String("cm"))));
+    setStartPosition(s);
+    setEndPosition(e);
+
     QDomNodeList nl = element.childNodes();
     QString n;
     QDomNode node;
-    QPointF _s, _e;
-
-    nameProperty()->setValue(element.toElement().attribute(QLatin1String("report:name")));
-    setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
-
-    _s.setX(KReportUnit::parseValue(element.toElement().attribute(QLatin1String("svg:x1"), QLatin1String("1cm"))));
-    _s.setY(KReportUnit::parseValue(element.toElement().attribute(QLatin1String("svg:y1"), QLatin1String("1cm"))));
-    _e.setX(KReportUnit::parseValue(element.toElement().attribute(QLatin1String("svg:x2"), QLatin1String("1cm"))));
-    _e.setY(KReportUnit::parseValue(element.toElement().attribute(QLatin1String("svg:y2"), QLatin1String("2cm"))));
-    m_start->setValue(_s);
-    m_end->setValue(_e);
-
     for (int i = 0; i < nl.count(); i++) {
         node = nl.item(i);
         n = node.nodeName();
@@ -121,8 +128,8 @@ int KReportItemLine::renderSimpleData(OROPage *page, OROSection *section, const 
     Q_UNUSED(data)
 
     OROLine * ln = new OROLine();
-    QPointF s = scenePosition(m_start->value().toPointF());
-    QPointF e = scenePosition(m_end->value().toPointF());
+    QPointF s = scenePosition(startPosition());
+    QPointF e = scenePosition(endPosition());
 
     s += offset;
     e += offset;
@@ -134,8 +141,8 @@ int KReportItemLine::renderSimpleData(OROPage *page, OROSection *section, const 
 
     OROLine *l2 = dynamic_cast<OROLine*>(ln->clone());
     if (l2) {
-        l2->setStartPoint(m_start->value().toPointF());
-        l2->setEndPoint(m_end->value().toPointF());
+        l2->setStartPoint(startPosition());
+        l2->setEndPoint(endPosition());
 
         if (section) section->addPrimitive(l2);
     }
@@ -144,17 +151,38 @@ int KReportItemLine::renderSimpleData(OROPage *page, OROSection *section, const 
 
 void KReportItemLine::setUnit(const KReportUnit &u)
 {
-    m_start->setOption("unit", u.symbol());
-    m_end->setOption("unit", u.symbol());
+    if (unit() == u) {
+        return;
+    }
+    KReportUnit oldunit = unit();
+    KReportItemBase::setUnit(u);
+    
+    // convert values
+    m_start->setValue(KReportUnit::convertFromUnitToUnit(m_start->value().toPointF(), oldunit, u),
+                      KProperty::ValueOption::IgnoreOld);
+    m_end->setValue(KReportUnit::convertFromUnitToUnit(m_end->value().toPointF(), oldunit, u),
+                    KProperty::ValueOption::IgnoreOld);
+
+    m_start->setOption("suffix", u.symbol());
+    m_end->setOption("suffix", u.symbol());
 }
 
 QPointF KReportItemLine::startPosition() const
 {
-    return m_start->value().toPointF();
+    return unit().convertToPoint(m_start->value().toPointF());
+}
+
+void KReportItemLine::setStartPosition(const QPointF &ptPos)
+{
+    m_start->setValue(unit().convertFromPoint(ptPos));
 }
 
 QPointF KReportItemLine::endPosition() const
 {
-    return m_end->value().toPointF();
+    return unit().convertToPoint(m_end->value().toPointF());
 }
 
+void KReportItemLine::setEndPosition(const QPointF &ptPos)
+{
+    m_end->setValue(unit().convertFromPoint(ptPos));
+}
