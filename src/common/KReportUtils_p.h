@@ -29,8 +29,8 @@
 const bool DEFAULT_SHOW_GRID = true;
 const bool DEFAULT_SNAP_TO_GRID = true;
 const int DEFAULT_GRID_DIVISIONS = 4;
-const KReportUnit DEFAULT_UNIT(KReportUnit::Type::Centimeter);
-const KReportUnit::Type DEFAULT_UNIT_TYPE = DEFAULT_UNIT.type();
+const KReportUnit::Type DEFAULT_UNIT_TYPE = KReportUnit::Type::Centimeter;
+#define DEFAULT_UNIT KReportUnit(DEFAULT_UNIT_TYPE)
 #define DEFAULT_UNIT_STRING QLatin1String("cm")
 const QPointF DEFAULT_ELEMENT_POS_PT(CM_TO_POINT(1.0), CM_TO_POINT(1.0));
 const QSizeF DEFAULT_ELEMENT_SIZE_PT(CM_TO_POINT(1.0), CM_TO_POINT(1.0));
