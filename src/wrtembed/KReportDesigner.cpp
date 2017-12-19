@@ -1174,7 +1174,7 @@ unsigned int KReportDesigner::selectionCount() const
         return 0;
 }
 
-void KReportDesigner::changeSet(KPropertySet *s)
+void KReportDesigner::changeSet(KPropertySet *set)
 {
     //Set the checked state of the report properties button
     if (set == &d->set)
