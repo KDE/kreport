@@ -25,7 +25,9 @@
 
 #include "kreport_export.h"
 
-//! Information about a KReport plugin.
+/*!
+ * @brief Information about a KReport plugin.
+ */
 class KREPORT_EXPORT KReportPluginMetaData : public KPluginMetaData
 {
 public:

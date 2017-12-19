@@ -30,7 +30,6 @@ class QAbstractScrollArea;
 
 /**
  * @brief Provides a simple widget for viewing a rendered report on screen
- *
  */
 class KREPORT_EXPORT KReportView : public QWidget
 {

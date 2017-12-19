@@ -55,8 +55,11 @@
 #define POINT_TO_CC(px) qreal((px)*0.077880997)
 #define PI_TO_POINT(pi) qreal((pi)*12)
 #define CC_TO_POINT(cc) qreal((cc)*12.840103)
-/**
- * %KReport stores everything in pt (using "qreal") internally.
+
+/*!
+ * @brief Converts between different units
+ *
+ * KReportUnit stores everything in pt (using "qreal") internally.
  * When displaying a value to the user, the value is converted to the user's unit
  * of choice, and rounded to a reasonable precision to avoid 0.999999
  *

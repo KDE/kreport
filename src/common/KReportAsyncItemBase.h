@@ -22,6 +22,9 @@
 
 #include "KReportItemBase.h"
 
+/*!
+ * @brief Base class for items that are drawn asyncronously due to unknown loading times.
+ */
 class KREPORT_EXPORT KReportAsyncItemBase : public KReportItemBase
 {
     Q_OBJECT
@@ -33,7 +36,7 @@ public:
 
 Q_SIGNALS:
     void finishedRendering();
-    
+
 private:
     class Private;
     Private * const d;

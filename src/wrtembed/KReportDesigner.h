@@ -45,26 +45,26 @@ class QAction;
 class KReportScriptSource;
 #endif
 
-//
-// Class ReportDesigner
-//     The ReportDesigner is the main widget for designing a report
-//
+
+/*!
+ * @brief The ReportDesigner is the main widget for designing a report
+ */
 class KREPORT_EXPORT KReportDesigner : public QWidget
 {
     Q_OBJECT
 public:
     /**
     @brief Constructor that create a blank designer
-    @param widget QWidget parent
+    @param parent QWidget parent
     */
     explicit KReportDesigner(QWidget *parent = nullptr);
 
     /**
     @brief Constructor that create a designer, and loads the report described in the QDomElement
-    @param widget QWidget parent
-    @param element Report structure XML element
+    @param parent QWidget parent
+    @param desc Report structure XML element
     */
-    KReportDesigner(QWidget *parent, const QDomElement &data);
+    KReportDesigner(QWidget *parent, const QDomElement &desc);
 
     /**
     @brief Desctructor
@@ -96,7 +96,7 @@ public:
 
     /**
     @brief Return a pointer to the section specified
-    @param section KReportSectionData::Section enum value of the section to return
+    @param type KReportSectionData::Section enum value of the section to return
     @return Pointer to report section object, or 0 if no section exists
     */
     KReportDesignerSection* section(KReportSectionData::Type type) const;
@@ -110,13 +110,13 @@ public:
 
     /**
     @brief Deletes the section specified
-    @param section KReportSectionData::Section enum value of the section to return
+    @param type KReportSectionData::Section enum value of the section to return
     */
     void removeSection(KReportSectionData::Type type);
 
     /**
     @brief Create a new section and insert it into the report
-    @param section KReportSectionData::Section enum value of the section to return
+    @param type KReportSectionData::Section enum value of the section to return
     */
     void insertSection(KReportSectionData::Type type);
 
@@ -131,7 +131,7 @@ public:
     @brief Sets the title of the reportData
     @param title Report Title
     */
-    void setReportTitle(const QString &);
+    void setReportTitle(const QString &title);
 
     /**
     @brief Sets the parameters for the display of the background gridpoints
@@ -204,7 +204,7 @@ public:
     @brief Handle the context menu event for a report section
     @param scene The associated scene (section)
     */
-    void sectionContextMenuEvent(KReportDesignerSectionScene *s, QGraphicsSceneContextMenuEvent * e);
+    void sectionContextMenuEvent(KReportDesignerSectionScene *scene, QGraphicsSceneContextMenuEvent * event);
 
     /**
     @brief Handle the mouse release event for a report section
@@ -217,7 +217,7 @@ public:
     @brief Sets the property set for the currently selected item
     @param set Property set of item
     */
-    void changeSet(KPropertySet *);
+    void changeSet(KPropertySet *set);
 
     /**
     @brief Return the property set for the curently selected item
@@ -232,7 +232,7 @@ public:
 
     /**
     @brief Return a unique name that can be used by the entity
-    @param entity Name of entity
+    @param name Name of entity
     */
     QString suggestEntityName(const QString &name) const;
 

@@ -40,6 +40,12 @@ class Report;
 class Section;
 }
 
+/*!
+ * @brief Handles scripting during report rendering.
+ *
+ * The script handler loads scriptable objects, and executes
+ * appropriate script code during report rendering
+ */
 class KREPORT_EXPORT KReportScriptHandler : public QObject
 {
     Q_OBJECT

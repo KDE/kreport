@@ -1177,13 +1177,13 @@ unsigned int KReportDesigner::selectionCount() const
 void KReportDesigner::changeSet(KPropertySet *s)
 {
     //Set the checked state of the report properties button
-    if (s == &d->set)
+    if (set == &d->set)
         d->pageButton->setCheckState(Qt::Checked);
     else
         d->pageButton->setCheckState(Qt::Unchecked);
 
-    if (d->itemSet != s) {
-        d->itemSet = s;
+    if (d->itemSet != set) {
+        d->itemSet = set;
         emit propertySetChanged();
     }
 }

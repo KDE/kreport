@@ -42,10 +42,10 @@ class OROLine;
 class OROImage;
 class OROSection;
 
-//
-// ORODocument
-// This object is a single document containing one or more OROPage elements
-//
+
+/*!
+ * @brief Represents a single document containing one or more OROPage elements
+ */
 class KREPORT_EXPORT ORODocument : public QObject
 {
     Q_OBJECT
@@ -57,114 +57,113 @@ public:
     QString title() const;
     void setTitle(const QString &title);
 
-    
+
     /**
      * @brief Return the total number of pages in the document
-     * 
+     *
      */
     int pageCount() const;
-    
+
     /**
      * @brief Return a pointer to a given page
-     * 
+     *
      * @param index page number to find
      * @return OROPage*
      */
     OROPage* page(int index);
     const OROPage* page(int index) const;
-    
+
     /**
      * @brief Adds the supplied page to this document
-     * 
+     *
      * Ownership of the page is tranferred the document
-     * 
+     *
      * @param page an OROPage* to be added
      */
     void addPage(OROPage* page);
-    
+
     /**
      * @brief Returns the index of the supplied page in the document
-     * 
+     *
      * @param page OROPage* to find
      * @return int page index
      */
     int pageIndex(const OROPage* page) const;
-    
+
     /**
      * @brief Removes the given page from the document
-     * 
+     *
      * The page is also deleted
-     * 
+     *
      * @param page OROPage* to delete
      */
     void removePage(OROPage* page);
 
     /**
      * @brief Takes the page from the document but does not delete it
-     * 
+     *
      * @param page OROPage* to take from the document
      */
     void takePage(OROPage *page);
-    
+
     /**
      * @brief Return the total number of sections in the document
-     * 
+     *
      */
     int sectionCount() const;
-    
+
     /**
      * @brief Return a pointer to a given section
-     * 
+     *
      * @param index section number to find
      * @return OROSection*
      */
     OROSection* section(int index);
     const OROSection* section(int index) const;
-    
+
     /**
      * @brief Adds the supplied sectin to the document
-     * 
+     *
      * Ownership of the section is transferred to the document
-     * 
+     *
      * @param section OROSection* to add to the document
      */
     void addSection(OROSection* section);
-    
+
     /**
      * @brief Removes the supplied section from the document
-     * 
+     *
      * The section will also be deleted
-     * 
+     *
      * @param section OROSection* to remove and delete
      */
     void removeSection(OROSection *section);
-    
+
     /**
      * @brief Takes the section from the document but does not delete it
-     * 
-     * @param page OROSection* to take from the document
+     *
+     * @param section OROSection* to take from the document
      */
     void takeSection(OROSection *section);
-    
+
     void setPageLayout(const QPageLayout &layout);
     QPageLayout pageLayout() const;
 
     void notifyChange(int pageNo);
-    
+
 Q_SIGNALS:
     void updated(int pageNo);
-    
+
 private:
     class Private;
     Private * const d;
 };
 
-//
-// OROPage
-// This object is a single page in a document and may contain zero or more
-// OROPrimitive objects all of which represent some form of mark to made on
-// a page.
-//
+/*!
+ * @brief Represents a single page in a document and may contain zero or more
+ * OROPrimitive objects all of which represent some form of mark to be made on
+ * a page.
+ */
 class KREPORT_EXPORT OROPage
 {
 public:
@@ -174,14 +173,14 @@ public:
     ORODocument* document();
     const ORODocument* document() const;
     void setDocument(ORODocument *doc);
-    
+
     int pageNumber() const; // returns this pages current page number
 
     int primitiveCount() const;
-    
+
     OROPrimitive* primitive(int index);
     const OROPrimitive* primitive(int index) const;
-    
+
     void insertPrimitive(OROPrimitive* primitive, int index = -1);
     void removePrimitive(OROPrimitive *primitive);
     void takePrimitive(OROPrimitive *primitive);
@@ -190,11 +189,11 @@ private:
     class Private;
     Private * const d;
 };
-//
-// OROSection
-// This object is a single row in a document and may contain zero or more
-// OROPrimitives
-//
+
+/*!
+ * @brief Represents a single a single row in a document and may contain zero or more
+ * OROPrimitives
+ */
 class KREPORT_EXPORT OROSection
 {
 public:
@@ -226,12 +225,11 @@ private:
 };
 
 
-//
-// OROPrimitive
-// This object represents the basic primitive with a position and type.
-// Other primitives are subclasses with a defined type and any additional
-// information they require to define that primitive.
-//
+/*!
+ * @brief Represents the basic primitive with a position and type.
+ * Other primitives are subclasses with a defined type and any additional
+ * information they require to define that primitive.
+ */
 class KREPORT_EXPORT OROPrimitive
 {
 public:
@@ -243,26 +241,25 @@ public:
 
     QPointF position() const;
     void setPosition(const QPointF &pos);
-    
+
     QSizeF size() const;
     void setSize(const QSizeF &s);
 
     virtual OROPrimitive* clone() const = 0;
-    
+
 protected:
     OROPrimitive();
-    
+
 private:
     class Private;
     Private * const d;
 };
 
-//
-// OROTextBox
-// This is a text box primitive it defines a box region and text that will
-// be rendered inside that region. It also contains information for font
-// and positioning of the text.
-//
+/*!
+ * @brief A text box primitive it defines a box region and text that will
+ * be rendered inside that region, it also contains information for font
+ * and positioning of the text.
+ */
 class KREPORT_EXPORT OROTextBox : public OROPrimitive
 {
 public:
@@ -293,16 +290,15 @@ public:
 
     bool canGrow() const;
     void setCanGrow(bool grow);
-    
+
 private:
     class Private;
     Private * const d;
 };
 
-//
-// OROLine
-// This primitive defines a line with a width/weight.
-//
+/*!
+ * @brief Defines a line with a width/weight.
+ */
 class KREPORT_EXPORT OROLine : public OROPrimitive
 {
 public:
@@ -321,16 +317,16 @@ public:
     void setLineStyle(const KReportLineStyle& style);
 
     OROPrimitive* clone() const override;
-    
+
 private:
     class Private;
     Private * const d;
 };
 
-//
-// OROImage
-// This primitive defines an image
-//
+/*!
+ * @brief Defines an image.
+ * An image is a bitmap.
+ */
 class KREPORT_EXPORT OROImage: public OROPrimitive
 {
 public:
@@ -350,16 +346,16 @@ public:
     void setAspectRatioMode(Qt::AspectRatioMode aspect);
 
     OROPrimitive* clone() const override;
-    
+
 private:
     class Private;
     Private * const d;
 };
 
-//
-// OROPicture
-// This primitive defines a picture
-//
+/*!
+ * @brief Defines a picture.
+ * A picture is different to an image, in that it is drawn using commands.
+ */
 class KREPORT_EXPORT OROPicture: public OROPrimitive
 {
 public:
@@ -370,16 +366,16 @@ public:
     QPicture* picture();
 
     OROPrimitive* clone() const override;
-    
+
 private:
     class Private;
     Private * const d;
 
 };
-//
-// ORORect
-// This primitive defines a drawn rectangle
-//
+
+/*!
+ * @brief Defines a rectangle.
+ */
 class KREPORT_EXPORT ORORect: public OROPrimitive
 {
 public:
@@ -396,16 +392,15 @@ public:
     void setBrush(const QBrush &brush);
 
     OROPrimitive* clone() const override;
-    
+
 private:
     class Private;
     Private * const d;
 };
 
-//
-// ORORect
-// This primitive defines a drawn rectangle
-//
+/*!
+ * @brief Defines an ellipse.
+ */
 class KREPORT_EXPORT OROEllipse: public OROPrimitive
 {
 public:
@@ -422,12 +417,15 @@ public:
     void setBrush(const QBrush &brush);
 
     OROPrimitive* clone() const override;
-    
+
 private:
     class Private;
     Private * const d;
 };
 
+/*!
+ * @brief Defines checkbox.
+ */
 class KREPORT_EXPORT OROCheckBox : public OROPrimitive
 {
 public:
@@ -436,7 +434,7 @@ public:
         Tick,
         Dot
     };
-    
+
     OROCheckBox();
     ~OROCheckBox() override;
     OROPrimitive* clone() const override;
@@ -449,7 +447,7 @@ public:
 
     void setLineStyle(const KReportLineStyle& ls);
     KReportLineStyle lineStyle() const;
-    
+
     void setForegroundColor(const QColor& fg);
     QColor foregroundColor() const;
 

@@ -31,7 +31,8 @@ class QWidget;
 class KReportDesignerSection;
 class KReportDesignerSectionDetail;
 
-/**
+/*!
+ * @brief A section group allows a header and footer to be used for a particular report field
 */
 class KREPORT_EXPORT KReportDesignerSectionDetailGroup : public QObject
 {

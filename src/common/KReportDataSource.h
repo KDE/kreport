@@ -23,8 +23,12 @@
 #include "kreport_export.h"
 #include "config-kreport.h"
 
-/** @brief Abstraction of report data source
-*/
+/*!
+ * @brief Abstraction of report data source.
+ *
+ * A data source provides data to the report engine, usually from a
+ * database, but could also be implemented for text and other file formats
+ */
 class KREPORT_EXPORT KReportDataSource
 {
 
@@ -32,8 +36,10 @@ public:
     KReportDataSource();
     virtual ~KReportDataSource();
 
-    //! Describes sorting for single field
-    /*! By default the order is ascending. */
+    /*!
+     * @brief Describes sorting for single field,
+     * By default the order is ascending.
+     */
     class KREPORT_EXPORT SortedField
     {
     public:

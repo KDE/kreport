@@ -28,31 +28,38 @@ class QPainter;
 class QPrinter;
 class ORODocument;
 
-//! Context for executing rendering.
+/*!
+ * @bref Context for executing rendering.
+ */
 class KREPORT_EXPORT KReportRendererContext
 {
     public:
         KReportRendererContext();
         ~KReportRendererContext();
-        
+
         void setUrl(const QUrl& url);
         void setPainter(QPainter* painter);
         void setPrinter(QPrinter* printer);
-        
+
         QPrinter *printer();
         QPainter *painter();
         QPrinter *printer() const;
         QPainter *painter() const;
-        
+
         QUrl url() const;
-        
+
     private:
         Q_DISABLE_COPY(KReportRendererContext)
         class Private;
         Private * const d;
 };
 
-//! Base class for report renderers.
+/*!
+ * @brief Base class for report renderers.
+ *
+ * A renderer combines the report design with
+ * data to produce a visual output
+ */
 class KREPORT_EXPORT KReportRendererBase
 {
     public:
@@ -65,16 +72,18 @@ class KREPORT_EXPORT KReportRendererBase
         virtual bool render(const KReportRendererContext& context, ORODocument *document, int page = -1) = 0;
 };
 
-//! Factory for creating renderers
-//! @todo make it use plugins
+/*!
+ * @brief Factory for creating renderers
+ * @todo make it use plugins
+ */
 class KREPORT_EXPORT KReportRendererFactory
 {
     public:
         KReportRendererFactory();
         ~KReportRendererFactory();
-        
+
         KReportRendererBase* createInstance(const QString& key);
-        
+
     private:
         Q_DISABLE_COPY(KReportRendererFactory)
         class Private;

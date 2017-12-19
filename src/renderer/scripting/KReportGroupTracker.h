@@ -4,6 +4,9 @@
 #include <QObject>
 #include "kreport_export.h"
 
+/*!
+ * @brief Keeps track of groups as the data for the group changes
+ */
 class KREPORT_EXPORT KReportGroupTracker : public QObject {
     Q_OBJECT
 

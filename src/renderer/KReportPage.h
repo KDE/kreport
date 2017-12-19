@@ -25,11 +25,11 @@
 
 class ORODocument;
 
-/**
- Provides a widget that renders a specific page of
- and ORODocument
- The widget is sized to the document size in pixels.
-*/
+/*!
+ * @brief Provides a widget that renders a specific page of
+ * an ORODocument
+ * The widget is sized to the document size in pixels
+ */
 class KREPORT_EXPORT KReportPage : public QObject, public QGraphicsRectItem
 {
     Q_OBJECT

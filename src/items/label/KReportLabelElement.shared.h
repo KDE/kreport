@@ -25,7 +25,10 @@
 
 #include <QFont>
 
-//! @brief The KReportLabelElement class represents a label element of a report design
+/*!
+ * @brief The KReportLabelElement class represents a label element of a report design
+ * @warning This API is currently private.
+ */
 class KREPORT_EXPORT KReportLabelElement : public KReportElement //SDC: explicit operator== virtual_dtor
 {
 public:

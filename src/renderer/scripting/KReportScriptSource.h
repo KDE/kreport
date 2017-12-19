@@ -23,8 +23,12 @@
 
 #include "kreport_export.h"
 
-/** @brief Abstraction of report script source
-*/
+/*!
+ * @brief Abstraction of report script source.
+ *
+ * A script source is implemented by the source
+ * application to provide scripts to the report.
+ */
 class KREPORT_EXPORT KReportScriptSource
 {
 public:

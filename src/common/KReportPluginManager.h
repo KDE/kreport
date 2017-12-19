@@ -34,6 +34,9 @@ class QStringList;
 class QAction;
 class QString;
 
+/*!
+ * @brief Manager class for finding and loading available plugins
+ */
 class KREPORT_EXPORT KReportPluginManager : public QObject
 {
     Q_OBJECT

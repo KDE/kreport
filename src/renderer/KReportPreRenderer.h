@@ -36,11 +36,10 @@ class KReportDataSource;
 class KReportDocument;
 class QDomElement;
 
-//
-// ORPreRender
-// This class takes a report definition and prerenders the result to
-// an ORODocument that can be used to pass to any number of renderers.
-//
+/*!
+ * @brief Takes a report definition and prerenders the result to
+ * an ORODocument that can be used to pass to any number of renderers.
+ */
 class KREPORT_EXPORT KReportPreRenderer : public QObject
 {
     Q_OBJECT

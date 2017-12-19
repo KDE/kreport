@@ -34,8 +34,11 @@ class Report;
 }
 #endif
 
-/**
-*/
+/*!
+ * @brief Top level report document definition.
+ * A KReportDocment defines the design of a document, and is composed of multiple
+ * sections.
+ */
 class KREPORT_EXPORT KReportDocument : public QObject
 {
     Q_OBJECT
@@ -89,22 +92,22 @@ public:
     QString title() const;
 
     QPageLayout pageLayout() const;
-    
+
     QString pageSize();
     void setPageSize(const QString &size);
 
-private:    
+private:
     friend class KReportPreRendererPrivate;
     friend class KReportPreRenderer;
 #ifdef KREPORT_SCRIPTING
     friend class KReportScriptHandler;
     friend class Scripting::Report;
 #endif
-    
+
     //! TODO add support for labels
     QString labelType() const;
     void setLabelType(const QString &label);
-    
+
     class Private;
     Private * const d;
 };

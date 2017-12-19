@@ -33,9 +33,9 @@ class QDomElement;
 
 class KReportDesigner;
 
-//
-// ReportEntity
-//
+/*!
+ * @brief Base class for report items used within the designer GUI.
+*/
 class KREPORT_EXPORT KReportDesignerItemBase
 {
 public:
@@ -71,9 +71,9 @@ protected:
      * @param itemType type of item
      * @return void
      */
-    void updateRenderText(const QString &itemDataSource, const QString &itemStaticValue, const QString &itemType);    
+    void updateRenderText(const QString &itemDataSource, const QString &itemStaticValue, const QString &itemType);
     KReportItemBase *item() const;
-    
+
     void setRenderText(const QString &text);
     QString renderText() const;
 

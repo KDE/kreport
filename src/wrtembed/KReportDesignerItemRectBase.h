@@ -32,7 +32,8 @@ class KPropertySet;
 const int KREPORT_ITEM_RECT_DEFAULT_WIDTH = 100;
 const int KREPORT_ITEM_RECT_DEFAULT_HEIGHT = 100;
 
-/**
+/*!
+ * @brief Base class for rectangular report items used within the designer GUI.
 */
 class KREPORT_EXPORT KReportDesignerItemRectBase : public QGraphicsRectItem, public KReportDesignerItemBase
 {

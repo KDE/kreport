@@ -31,7 +31,8 @@ class KReportDesignerSection;
 class KReportDesigner;
 class KReportDesignerSectionDetailGroup;
 
-/**
+/*!
+ * @brief The central detail section which contains the bulk of the report
 */
 class KREPORT_EXPORT KReportDesignerSectionDetail : public QWidget
 {

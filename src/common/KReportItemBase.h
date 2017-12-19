@@ -53,18 +53,9 @@ public:
 
 };
 
-/*
-class KReportLineStyle
-{
-public:
-    int weight;
-    QColor lineColor;
-    Qt::PenStyle style;
-};
-*/
-
-/**
-*/
+/*!
+ * @brief Base class for items that are drawn syncronously.
+ */
 class KREPORT_EXPORT KReportItemBase : public QObject
 {
     Q_OBJECT
@@ -153,7 +144,7 @@ public:
 
     //! Helper function mapping to screen units (pixels), @a ptSize is in points
     static QSizeF sceneSize(const QSizeF &ptSize);
-    
+
     //! Helper function mapping from screen units to points, @a pos is in pixels
     static QPointF positionFromScene(const QPointF &pos);
 

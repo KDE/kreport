@@ -37,12 +37,11 @@ class KProperty;
 class KReportDesigner;
 class KReportZoomHandler;
 
-//
-// Class ReportSection
-//
-//     This class is the base to all Report Section's visual representation.
-// It contains the basic data and interface that all the sections need to work.
-//
+/*!
+ * @brief This class is the base to all Report Section's visual representation.
+ *
+ * Contains the basic data and interface that all the sections need to work.
+ */
 class KREPORT_EXPORT KReportDesignerSection : public QWidget
 {
     Q_OBJECT
