@@ -124,7 +124,7 @@ bool KReportSection::addElement(const KReportElement &element)
 bool KReportSection::insertElement(int i, const KReportElement &element)
 {
     if (i < 0 || i > d->elements.count()) {
-        kreportWarning() << "Could not insert element at index" << i << "into section";
+        kreportWarning() << "Could not insert element" << element << "at index" << i << "into section";
         return false;
     }
     if (d->elementsSet.contains(element)) {

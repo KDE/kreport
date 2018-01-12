@@ -22,6 +22,7 @@
 #include <KReportSection>
 #include <KReportUnit>
 
+#include <QRegularExpression>
 #include <QTest>
 
 QTEST_MAIN(ElementsTest)
@@ -178,6 +179,7 @@ void ElementsTest::testSections()
     QVERIFY2(sec1.elements().isEmpty(), "Initially section has no elements inside");
     QVERIFY2(sec2.elements().isEmpty(), "Initially section has no elements inside");
     KReportLabelElement lbl1("text1");
+    QVERIFY(lbl1.name().isEmpty());
     QVERIFY(sec1.addElement(lbl1));
     QCOMPARE(sec1.elements().count(), 1);
     QCOMPARE(sec2.elements().count(), 1);
@@ -185,9 +187,13 @@ void ElementsTest::testSections()
     QCOMPARE(KReportLabelElement(sec1.elements().first()), lbl1);
     QCOMPARE(KReportLabelElement(sec1.elements().at(0)), lbl1);
 
+    QRegularExpression sectionAlreadyContainsElement("Section already contains element KReportElement: name=\"\".*");
+    QTest::ignoreMessage(QtWarningMsg, sectionAlreadyContainsElement);
     QVERIFY2(!sec1.addElement(lbl1), "Adding the same element twice isn't possible");
     QCOMPARE(sec1.elements().count(), 1);
     KReportLabelElement lbl2("text2");
+    QTest::ignoreMessage(QtWarningMsg,
+        QRegularExpression("Could not find element KReportElement: name=\"\".* in section"));
     QVERIFY2(!sec1.removeElement(lbl2), "Removing not added element isn't possible");
     QCOMPARE(sec1.elements().count(), 1);
     QVERIFY(sec1.removeElement(lbl1));
@@ -203,10 +209,18 @@ void ElementsTest::testSections()
     // insert
     sec1 = KReportSection();
     QVERIFY(sec1.insertElement(0, lbl1));
+    QCOMPARE(sec1.elements().count(), 1);
+    QTest::ignoreMessage(QtWarningMsg, sectionAlreadyContainsElement);
     QVERIFY2(!sec1.insertElement(0, lbl1), "Cannot insert the same element twice");
+    const QString couldNotInsertElementMessage("Could not insert element KReportElement: name=\"\".* at index %1 into section");
+    QTest::ignoreMessage(QtWarningMsg, QRegularExpression(couldNotInsertElementMessage.arg(2)));
     QVERIFY2(!sec1.insertElement(2, lbl2), "Cannot insert element at position 2");
+    QCOMPARE(sec1.elements().count(), 1);
+    QTest::ignoreMessage(QtWarningMsg, QRegularExpression(couldNotInsertElementMessage.arg(-1)));
     QVERIFY2(!sec1.insertElement(-1, lbl2), "Cannot insert element at position -1");
+    QCOMPARE(sec1.elements().count(), 1);
     QVERIFY(sec1.insertElement(0, lbl2));
+    QCOMPARE(sec1.elements().count(), 2);
 
     // indexOf
     QCOMPARE(sec1.elements().indexOf(lbl1), 1);
@@ -214,10 +228,15 @@ void ElementsTest::testSections()
     QCOMPARE(KReportLabelElement(sec1.elements().last()), lbl1);
 
     // removeAt
+    const QString couldNotFindElementMessage("Could not find element at index %1 in section");
+    QTest::ignoreMessage(QtWarningMsg, QRegularExpression(couldNotFindElementMessage.arg(2)));
     QVERIFY2(!sec1.removeElementAt(2), "Cannot remove element at position 2");
+    QTest::ignoreMessage(QtWarningMsg, QRegularExpression(couldNotFindElementMessage.arg(-1)));
     QVERIFY2(!sec1.removeElementAt(-1), "Cannot remove element at position -1");
     QVERIFY(sec1.removeElementAt(1));
+    QCOMPARE(sec1.elements().count(), 1);
     QVERIFY(sec1.removeElementAt(0));
+    QCOMPARE(sec1.elements().count(), 0);
 
     // cloning sections
     sec1 = KReportSection();
