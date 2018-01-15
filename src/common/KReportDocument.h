@@ -20,7 +20,6 @@
 #define KREPORTDOCUMENT_H
 
 #include "config-kreport.h"
-#include "kreport_export.h"
 #include "KReportSectionData.h"
 
 #include <QPageLayout>

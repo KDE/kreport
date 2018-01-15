@@ -1,7 +1,7 @@
 /* This file is part of the KDE project
  * Copyright (C) 2001-2007 by OpenMFG, LLC (info@openmfg.com)
  * Copyright (C) 2007-2008 by Adam Pigg (adam@piggz.co.uk)
- * Copyright (C) 2010 Jarosław Staniek <staniek@kde.org>
+ * Copyright (C) 2010-2018 Jarosław Staniek <staniek@kde.org>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -36,14 +36,12 @@ namespace Scripting
 class Section;
 }
 
-//
-// KReportSectionData is used to store the information about a specific
-// section.
-// A section has a name and optionally extra data. `name'
-// reportheader, reportfooter, pageheader, pagefooter, groupheader, groupfooter or detail.
-// In the case of pghead and pgfoot extra would contain the page
-// designation (firstpage, odd, even or lastpage).
-class KReportSectionData : public QObject
+/**
+ * KReportSectionData is used to store the information about a specific report section
+ *
+ * A section has a name, type, unit and optionally extra data.
+ */
+class KREPORT_EXPORT KReportSectionData : public QObject
 {
     Q_OBJECT
 public:
@@ -76,53 +74,43 @@ public:
 
     void setUnit(const KReportUnit &u);
 
-    KPropertySet* propertySet() const {
-        return m_set;
-    }
+    /**
+     * Returns property set for this section
+     *
+     * @since 3.1
+     */
+    KPropertySet* propertySet();
 
-    bool isValid() const {
-        return m_valid;
-    }
+    /**
+     * @overload
+     */
+    const KPropertySet* propertySet() const;
+
+    bool isValid() const;
 
     qreal height() const;
 
     void setHeight(qreal ptHeight);
 
-    QList<KReportItemBase*> objects() const {
-        return m_objects;
-    }
+    QList<KReportItemBase*> objects() const;
 
     QString name() const;
 
-    QColor backgroundColor() const {
-        return m_backgroundColor->value().value<QColor>();
-    }
+    QColor backgroundColor() const;
 
-    Type type() const {
-        return m_type;
-    }
+    Type type() const;
 
     static KReportSectionData::Type sectionTypeFromString(const QString& s);
     static QString sectionTypeString(KReportSectionData::Type type);
-protected:
-    KPropertySet *m_set;
-    KProperty *m_backgroundColor;
 
 private:
-    void createProperties(const QDomElement & elemSource);
-    void loadXml(const QDomElement &elemSource);
+    void setBackgroundColor(const QColor &color);
     void setHeight(qreal ptHeight, KProperty::ValueOptions options);
+    KReportItemBase* object(int index);
 
-    KProperty *m_height;
-    QList<KReportItemBase*> m_objects;
-    KReportUnit m_unit;
-
-    Type m_type;
-
-    static bool zLessThan(KReportItemBase* s1, KReportItemBase* s2);
-    static bool xLessThan(KReportItemBase* s1, KReportItemBase* s2);
-
-    bool m_valid;
+    Q_DISABLE_COPY(KReportSectionData)
+    class Private;
+    Private * const d;
 
     friend class Scripting::Section;
     friend class KReportDesignerSection;

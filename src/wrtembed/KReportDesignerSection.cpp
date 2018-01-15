@@ -222,8 +222,8 @@ void KReportDesignerSection::initFromXML(const QDomNode & section)
     //kreportDebug() << "Section Height: " << h;
     d->scene->setSceneRect(0, 0, d->scene->width(), h);
     slotResizeBarDragged(0);
-
-    d->sectionData->m_backgroundColor->setValue(QColor(section.toElement().attribute(QLatin1String("fo:background-color"), QLatin1String("#ffffff"))));
+    d->sectionData->setBackgroundColor(KReportUtils::attr(
+        section.toElement(), QLatin1String("fo:background-color"), QColor(Qt::white)));
     d->sectionData->propertySet()->clearModifiedFlags();
 
     KReportPluginManager* manager = KReportPluginManager::self();

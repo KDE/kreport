@@ -1,7 +1,7 @@
 /* This file is part of the KDE project
  * Copyright (C) 2001-2007 by OpenMFG, LLC (info@openmfg.com)
  * Copyright (C) 2007-2008 by Adam Pigg (adam@piggz.co.uk)
- * Copyright (C) 2010 Jarosław Staniek <staniek@kde.org>
+ * Copyright (C) 2010-2018 Jarosław Staniek <staniek@kde.org>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -33,35 +33,60 @@
 
 #include <QDomElement>
 
-KReportSectionData::KReportSectionData(QObject *parent) : KReportSectionData(QDomElement(), parent)
+class Q_DECL_HIDDEN KReportSectionData::Private
+{
+public:
+    explicit Private(KReportSectionData *data, const QDomElement &elemSource) : q(data)
+    {
+        if (!elemSource.isNull()) {
+            q->setObjectName(elemSource.tagName());
+            type = sectionTypeFromString(KReportUtils::readSectionTypeNameAttribute(elemSource));
+        }
+        createProperties(elemSource);
+        if (!elemSource.isNull()) {
+            loadXml(elemSource);
+        }
+        set.clearModifiedFlags();
+    }
+
+    ~Private()
+    {
+        qDeleteAll(objects);
+    }
+
+    void setHeight(qreal ptHeight, KProperty::ValueOptions options);
+
+    static bool zLessThan(KReportItemBase* s1, KReportItemBase* s2);
+    static bool xLessThan(KReportItemBase* s1, KReportItemBase* s2);
+
+    KReportSectionData * const q;
+    KPropertySet set;
+    KProperty *backgroundColor;
+    KProperty *height;
+    QList<KReportItemBase *> objects;
+    KReportUnit unit = KReportUnit(DEFAULT_UNIT_TYPE);
+    Type type = Type::None;
+    bool valid = true;
+
+private:
+    void createProperties(const QDomElement &elemSource);
+    void loadXml(const QDomElement &elemSource);
+};
+
+KReportSectionData::KReportSectionData(QObject *parent)
+    : KReportSectionData(QDomElement(), parent)
 {
 }
 
 KReportSectionData::KReportSectionData(const QDomElement & elemSource, QObject *parent)
- : QObject(parent)
- , m_unit(DEFAULT_UNIT_TYPE)
+ : QObject(parent), d(new Private(this, elemSource))
 {
-    if (elemSource.isNull()) {
-        m_type = Type::None;
-    } else {
-        setObjectName(elemSource.tagName());
-        m_type = sectionTypeFromString(KReportUtils::readSectionTypeNameAttribute(elemSource));
-    }
-
-    createProperties(elemSource);
-
-    if (elemSource.isNull()) {
-        m_valid = true;
-    } else {
-        loadXml(elemSource);
-    }
-    m_set->clearModifiedFlags();
 }
 
-void KReportSectionData::loadXml(const QDomElement &elemSource)
+void KReportSectionData::Private::loadXml(const QDomElement &elemSource)
 {
-    if (objectName() != QLatin1String("report:section") || m_type == KReportSectionData::Type::None) {
-        m_valid = false;
+    if (q->objectName() != QLatin1String("report:section") || type == KReportSectionData::Type::None) {
+        valid = false;
         return;
     }
 
@@ -88,7 +113,7 @@ void KReportSectionData::loadXml(const QDomElement &elemSource)
             }
             if (krobj) {
                 krobj->propertySet()->clearModifiedFlags();
-                m_objects.append(krobj);
+                objects.append(krobj);
             } else {
                 kreportWarning() << "Could not create element of type" << reportItemName;
             }
@@ -96,72 +121,69 @@ void KReportSectionData::loadXml(const QDomElement &elemSource)
             kreportWarning() << "While parsing section encountered an unknown element:" << n;
         }
     }
-    qSort(m_objects.begin(), m_objects.end(), zLessThan);
-    m_valid = true;
+    qSort(objects.begin(), objects.end(), zLessThan);
+    valid = true;
 }
 
 KReportSectionData::~KReportSectionData()
 {
-    delete m_set;
-    qDeleteAll(m_objects);
+    delete d;
 }
 
 KReportUnit KReportSectionData::unit() const
 {
-    return m_unit;
+    return d->unit;
 }
 
 void KReportSectionData::setUnit(const KReportUnit &u)
 {
-    if (m_unit == u) {
+    if (d->unit == u) {
         return;
     }
     // convert values
-    KReportUnit oldunit = m_unit;
-    m_unit = u;
+    KReportUnit oldunit = d->unit;
+    d->unit = u;
 
-    m_height->setValue(KReportUnit::convertFromUnitToUnit(m_height->value().toReal(), oldunit, u),
+    d->height->setValue(KReportUnit::convertFromUnitToUnit(d->height->value().toReal(), oldunit, u),
                        KProperty::ValueOption::IgnoreOld);
-    m_height->setOption("suffix", u.symbol());
+    d->height->setOption("suffix", u.symbol());
 }
 
-bool KReportSectionData::zLessThan(KReportItemBase* s1, KReportItemBase* s2)
+bool KReportSectionData::Private::zLessThan(KReportItemBase* s1, KReportItemBase* s2)
 {
     return s1->z() < s2->z();
 }
 
-bool KReportSectionData::xLessThan(KReportItemBase* s1, KReportItemBase* s2)
+bool KReportSectionData::Private::xLessThan(KReportItemBase* s1, KReportItemBase* s2)
 {
     return s1->position().toPoint().x() < s2->position().toPoint().x();
 }
 
-void KReportSectionData::createProperties(const QDomElement & elemSource)
+void KReportSectionData::Private::createProperties(const QDomElement & elemSource)
 {
-    m_set = new KPropertySet(this);
-    KReportDesigner::addMetaProperties(m_set,
-        tr("Section", "Report section"), QLatin1String("kreport-section-element"));
-
-    m_height = new KProperty("height", 0.0, tr("Height"));
-    m_backgroundColor = new KProperty(
+    KReportDesigner::addMetaProperties(&set, KReportSectionData::tr("Section", "Report section"),
+                                       QLatin1String("kreport-section-element"));
+    height = new KProperty("height", 0.0, tr("Height"));
+    backgroundColor = new KProperty(
         "background-color",
         KReportUtils::attr(elemSource, QLatin1String("fo:background-color"), QColor(Qt::white)),
         tr("Background Color"));
-    m_height->setOption("unit", QLatin1String("cm"));
+    height->setOption("unit", QLatin1String("cm"));
     if (!elemSource.isNull()) {
-        m_height->setValue(m_unit.convertFromPoint(
+        height->setValue(unit.convertFromPoint(
             KReportUtils::readSizeAttributes(
                 elemSource, QSizeF(DEFAULT_SECTION_SIZE_PT, DEFAULT_SECTION_SIZE_PT))
                 .height()));
     }
 
-    m_set->addProperty(m_height);
-    m_set->addProperty(m_backgroundColor);
-    m_set->clearModifiedFlags();
+    set.addProperty(height);
+    set.addProperty(backgroundColor);
+    set.clearModifiedFlags();
 }
 
 QString KReportSectionData::name() const
 {
-    return (objectName() + QLatin1Char('-') + sectionTypeString(m_type));
+    return (objectName() + QLatin1Char('-') + sectionTypeString(d->type));
 }
 
 QString KReportSectionData::sectionTypeString(KReportSectionData::Type type)
@@ -264,15 +286,55 @@ KReportSectionData::Type KReportSectionData::sectionTypeFromString(const QString
 
 qreal KReportSectionData::height() const
 {
-    return m_unit.convertToPoint(m_height->value().toReal());
+    return d->unit.convertToPoint(d->height->value().toReal());
 }
 
 void KReportSectionData::setHeight(qreal ptHeight, KProperty::ValueOptions options)
 {
-    m_height->setValue(m_unit.convertFromPoint(ptHeight), options);
+    d->height->setValue(d->unit.convertFromPoint(ptHeight), options);
 }
 
 void KReportSectionData::setHeight(qreal ptHeight)
 {
     setHeight(ptHeight, KProperty::ValueOptions());
+}
+
+KPropertySet* KReportSectionData::propertySet()
+{
+    return &d->set;
+}
+
+const KPropertySet* KReportSectionData::propertySet() const
+{
+    return &d->set;
+}
+
+bool KReportSectionData::isValid() const
+{
+    return d->valid;
+}
+
+QList<KReportItemBase*> KReportSectionData::objects() const
+{
+    return d->objects;
+}
+
+QColor KReportSectionData::backgroundColor() const
+{
+    return d->backgroundColor->value().value<QColor>();
+}
+
+void KReportSectionData::setBackgroundColor(const QColor &color)
+{
+    d->backgroundColor->setValue(color);
+}
+
+KReportSectionData::Type KReportSectionData::type() const
+{
+    return d->type;
+}
+
+KReportItemBase* KReportSectionData::object(int index)
+{
+    return d->objects.value(index);
 }
