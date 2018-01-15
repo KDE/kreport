@@ -3,7 +3,7 @@ find_package(ECM 1.8.0 REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/modules ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
 include(SetKReportCMakePolicies NO_POLICY_SCOPE)
 
-project(KReport VERSION 3.0.90) # Update this
+project(KReport VERSION 3.0.94) # Update this
 
 include(KReportAddTests)
 include(KReportAddExamples)
@@ -33,7 +33,7 @@ simple_option(BUILD_QCH "Build API documentation in QCH format" OFF)
 # Dependencies
 set(REQUIRED_QT_VERSION 5.4.0)
 set(REQUIRED_KF5_VERSION 5.16.0)
-set(REQUIRED_KPROPERTY_VERSION 3.0.91)
+set(REQUIRED_KPROPERTY_VERSION 3.0.94)
 
 # Required components to build this framework
 # TODO move Widgets/KF5WidgetsAddons-dependent part to a libKReportDesigner
