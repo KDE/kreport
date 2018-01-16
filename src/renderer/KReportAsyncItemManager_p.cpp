@@ -24,7 +24,7 @@
 #include <QPointF>
 
 namespace KReportPrivate {
-  
+
 class RenderData {
 public:
     KReportAsyncItemBase* item;
@@ -53,6 +53,7 @@ void AsyncItemManager::addItem(KReportAsyncItemBase* item, OROPage* page, OROSec
     rdata->section = section;
     rdata->offset = offset;
     rdata->data = data;
+
 #ifdef KREPORT_SCRIPTING
     rdata->script = script;
 #else
@@ -70,9 +71,12 @@ void AsyncItemManager::addItem(KReportAsyncItemBase* item, OROPage* page, OROSec
 
 void AsyncItemManager::itemFinished()
 {
+    m_curDoc->updated(m_curPage->pageNumber());
     //kreportDebug();
     if (m_renderList.count() > 0) {
         RenderData *rdata = m_renderList.dequeue();
+        m_curPage = rdata->page;
+        m_curDoc = m_curPage->document();
         rdata->item->renderSimpleData(rdata->page, rdata->section, rdata->offset, rdata->data, rdata->script);
     } else {
         emit(finished());
@@ -84,6 +88,8 @@ void AsyncItemManager::startRendering()
     //kreportDebug();
     if (m_renderList.count() > 0) {
         RenderData *rdata = m_renderList.dequeue();
+        m_curPage = rdata->page;
+        m_curDoc = m_curPage->document();
         rdata->item->renderSimpleData(rdata->page, rdata->section, rdata->offset, rdata->data, rdata->script);
     } else {
         emit(finished());
