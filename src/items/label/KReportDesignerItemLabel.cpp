@@ -45,7 +45,7 @@ void KReportDesignerItemLabel::init(QGraphicsScene *scene)
     m_inlineEdit->setVisible(false);
     m_inlineEdit->setFlag(ItemIsFocusable);
     m_inlineEdit->setFlag(ItemIsSelectable, false);
-    QTextDocument *doc = new QTextDocument;
+    QTextDocument *doc = new QTextDocument(m_inlineEdit);
     doc->setDocumentMargin(0);
     doc->setPlainText(text());
     m_inlineEdit->setDocument(doc);
