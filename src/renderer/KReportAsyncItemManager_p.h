@@ -52,7 +52,6 @@ private Q_SLOTS:
 private:
     QQueue<RenderData*> m_renderList;
     QList<KReportAsyncItemBase*> m_itemList;
-    ORODocument *m_curDoc;
     OROPage *m_curPage;
 };
 

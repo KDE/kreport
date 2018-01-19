@@ -71,12 +71,11 @@ void AsyncItemManager::addItem(KReportAsyncItemBase* item, OROPage* page, OROSec
 
 void AsyncItemManager::itemFinished()
 {
-    m_curDoc->updated(m_curPage->pageNumber());
+    m_curPage->document()->updated(m_curPage->pageNumber());
     //kreportDebug();
     if (m_renderList.count() > 0) {
         RenderData *rdata = m_renderList.dequeue();
         m_curPage = rdata->page;
-        m_curDoc = m_curPage->document();
         rdata->item->renderSimpleData(rdata->page, rdata->section, rdata->offset, rdata->data, rdata->script);
     } else {
         emit(finished());
@@ -89,7 +88,6 @@ void AsyncItemManager::startRendering()
     if (m_renderList.count() > 0) {
         RenderData *rdata = m_renderList.dequeue();
         m_curPage = rdata->page;
-        m_curDoc = m_curPage->document();
         rdata->item->renderSimpleData(rdata->page, rdata->section, rdata->offset, rdata->data, rdata->script);
     } else {
         emit(finished());
