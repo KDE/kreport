@@ -38,13 +38,13 @@ public:
     ~Text() override;
 public Q_SLOTS:
 
-    //! @return the source (column) that the text-item gets its data from*
+    //! @return the data source for the text element
+    //! The source can be a column name or a valid script expression if prefixed with a '='.
     QString source() const;
 
-    //! Sets the source (column) for the text-item.
-    //! Valid values include a column name, fixed string if prefixed with '$'
-    //! or a valid script expression if prefixed with a '='
-    void setSource(const QString&);
+    //! Sets the data source for the text element.
+    //! @see source()
+    void setSource(const QString &s);
 
     //! @return the horizontal alignment as an integer
     //! Valid values are left: -1, center: 0, right; 1
@@ -111,8 +111,8 @@ public Q_SLOTS:
     //! Sets the size of the text-item to the given size in points
     void setSize(const QSizeF&);
 
-    //!Load the contets for the text item from the given file
-    void loadFromFile(const QString& fileName);
+    //!Load the contents for the text item from the given file
+    bool loadFromFile(const QString& fileName);
 private:
     KReportItemText *m_text;
 };

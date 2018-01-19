@@ -70,9 +70,9 @@ void Image::setInlineImage(const QByteArray &ba)
     m_image->setInlineImageData(ba);
 }
 
-void Image::loadFromFile(const QVariant &pth)
+void Image::loadFromFile(const QVariant &path)
 {
-    QString str = pth.toString();
+    QString str = path.toString();
     m_image->setInlineImageData(QByteArray(), str);
 }
 }

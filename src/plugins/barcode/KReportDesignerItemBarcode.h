@@ -44,9 +44,6 @@ public:
 
     KReportDesignerItemBarcode *clone() override;
 
-protected:
-    void mousePressEvent(QGraphicsSceneMouseEvent * event) override;
-
 private:
     void init(QGraphicsScene *scene);
 

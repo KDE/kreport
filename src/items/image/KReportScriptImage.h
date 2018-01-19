@@ -89,10 +89,10 @@ public Q_SLOTS:
     /**
      * Get the data from a file (expected to be an image)
      * the returned data will be base64 encoded
-     * @param Path location of file
-     * @return File data enoded in base64
+     * @param path location of file
      */
-    void loadFromFile(const QVariant &);
+    void loadFromFile(const QVariant &path);
+
 private:
     KReportItemImage *m_image;
 

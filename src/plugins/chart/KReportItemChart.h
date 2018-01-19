@@ -73,8 +73,6 @@ public:
     virtual bool supportsSubQuery() const { return true; }
 
 protected:
-
-    KProperty * m_dataSource;
     KProperty * m_font;
     KProperty * m_chartType;
     KProperty * m_chartSubType;

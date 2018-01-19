@@ -45,7 +45,7 @@ KReportItemWeb::KReportItemWeb(const QDomNode &element)
 {
     QDomElement e = element.toElement();
 
-    m_controlSource->setValue(e.attribute(QLatin1String("report:item-data-source")));
+    setItemDataSource(e.attribute(QLatin1String("report:item-data-source")));
     nameProperty()->setValue(KReportUtils::readNameAttribute(e));
     setZ(e.attribute(QLatin1String("report:z-index")).toDouble());
     parseReportRect(e);
@@ -60,9 +60,7 @@ KReportItemWeb::KReportItemWeb(const QDomNode &element)
 
 void KReportItemWeb::createProperties()
 {
-    m_controlSource
-        = new KProperty("item-data-source", new KPropertyListData, QVariant(), tr("Data Source"));
-    propertySet()->addProperty(m_controlSource);
+    createDataSourceProperty();
 }
 
 KReportItemWeb::~KReportItemWeb()
@@ -130,9 +128,4 @@ int KReportItemWeb::renderSimpleData(OROPage *page, OROSection *section, const Q
     }
 
     return 0; //Item doesn't stretch the section height
-}
-
-QString KReportItemWeb::itemDataSource() const
-{
-    return m_controlSource->value().toString();
 }

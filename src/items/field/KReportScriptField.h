@@ -44,13 +44,13 @@ public:
 
 public Q_SLOTS:
 
-    //! @return the source (column) that the field gets its data from*
+    //! @return the data source for the field element
+    //! The source can be a column name or a valid script expression if prefixed with a '='.
     QString source() const;
 
-    //! Sets the source (column) for the field.
-    //! Valid values include a column name, fixed string if prefixed with '$'
-    //! or a valid script expression if prefixed with a '='
-    void setSource(const QString&);
+    //! Sets the data source for the field element.
+    //! @see source()
+    void setSource(const QString &s);
 
     //! @return the horizontal alignment as an integer
     //! Valid values are left: -1, center: 0, right; 1

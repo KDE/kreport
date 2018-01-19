@@ -51,12 +51,12 @@ void Chart::setSize(const QSizeF& s)
 
 QString Chart::dataSource()
 {
-    return m_chart->m_dataSource->value().toString();
+    return m_chart->itemDataSource();
 }
 
 void Chart::setDataSource(const QString &ds)
 {
-    m_chart->m_dataSource->setValue(ds);
+    m_chart->setItemDataSource(ds);
 }
 
 bool Chart::threeD()

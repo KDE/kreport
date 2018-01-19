@@ -93,7 +93,7 @@ void KReportDesignerItemWeb::buildXML(QDomDocument *doc, QDomElement *parent)
     QDomElement entity = doc->createElement(QLatin1String("report:") + typeName());
 
     // properties
-    addPropertyAsAttribute(&entity, m_controlSource);
+    addPropertyAsAttribute(&entity, dataSourceProperty());
     addPropertyAsAttribute(&entity, nameProperty());
     entity.setAttribute(QLatin1String("report:z-index"), zValue());
     buildXMLRect(doc, &entity, this);
@@ -115,10 +115,4 @@ void KReportDesignerItemWeb::slotPropertyChanged(KPropertySet &s, KProperty &p)
     if (designer()) {
         designer()->setModified(true);
     }
-}
-
-void KReportDesignerItemWeb::mousePressEvent(QGraphicsSceneMouseEvent *event)
-{
-    m_controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
-    KReportDesignerItemRectBase::mousePressEvent(event);
 }

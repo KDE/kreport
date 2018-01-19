@@ -38,7 +38,7 @@ KReportItemMaps::KReportItemMaps(const QDomNode &element)
     : KReportItemMaps()
 {
     nameProperty()->setValue(KReportUtils::readNameAttribute(element.toElement()));
-    m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
+    setItemDataSource(element.toElement().attribute(QLatin1String("report:item-data-source")));
     setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
     m_latitudeProperty->setValue(element.toElement().attribute(QLatin1String("report:latitude")).toDouble());
     m_longitudeProperty->setValue(element.toElement().attribute(QLatin1String("report:longitude")).toDouble());
@@ -56,7 +56,7 @@ KReportItemMaps::~KReportItemMaps()
 
 void KReportItemMaps::createProperties()
 {
-    m_controlSource = new KProperty("item-data-source", new KPropertyListData, QVariant(), tr("Data Source"));
+    createDataSourceProperty();
 
     m_latitudeProperty = new KProperty("latitude", 0.0, tr("Latitude"), QString(), KProperty::Double);
     m_latitudeProperty->setOption("min", -90);
@@ -86,22 +86,10 @@ void KReportItemMaps::createProperties()
                                   KProperty::ValueOption::IgnoreOld);
     }
 
-    propertySet()->addProperty(m_controlSource);
     propertySet()->addProperty(m_latitudeProperty);
     propertySet()->addProperty(m_longitudeProperty);
     propertySet()->addProperty(m_zoomProperty);
     propertySet()->addProperty(m_themeProperty);
-}
-
-
-void KReportItemMaps::setColumn(const QString &c)
-{
-    m_controlSource->setValue(c);
-}
-
-QString KReportItemMaps::itemDataSource() const
-{
-    return m_controlSource->value().toString();
 }
 
 QString KReportItemMaps::typeName() const

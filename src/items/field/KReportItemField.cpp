@@ -40,7 +40,7 @@ KReportItemField::KReportItemField(const QDomNode & element)
     : KReportItemField()
 {
     nameProperty()->setValue(KReportUtils::readNameAttribute(element.toElement()));
-    m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
+    setItemDataSource(element.toElement().attribute(QLatin1String("report:item-data-source")));
     m_itemValue->setValue(element.toElement().attribute(QLatin1String("report:value")));
     setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
     m_horizontalAlignment->setValue(element.toElement().attribute(QLatin1String("report:horizontal-align")));
@@ -86,8 +86,7 @@ KReportItemField::~KReportItemField()
 
 void KReportItemField::createProperties()
 {
-    m_controlSource = new KProperty("item-data-source", new KPropertyListData, QVariant(), tr("Data Source"));
-    m_controlSource->setOption("extraValueAllowed", QLatin1String("true"));
+    createDataSourceProperty();
 
     m_itemValue = new KProperty("value", QString(), tr("Value"), tr("Value used if not bound to a field"));
 
@@ -129,7 +128,6 @@ void KReportItemField::createProperties()
     _trackTotalFormat = new KProperty("trackTotalFormat", QString(), futureI18n("Track Total Format"));
 #endif
 
-    propertySet()->addProperty(m_controlSource);
     propertySet()->addProperty(m_itemValue);
     propertySet()->addProperty(m_horizontalAlignment);
     propertySet()->addProperty(m_verticalAlignment);
@@ -186,19 +184,6 @@ KReportTextStyleData KReportItemField::textStyle() const
     return d;
 }
 
-QString KReportItemField::itemDataSource() const
-{
-    return m_controlSource->value().toString();
-}
-
-void KReportItemField::setItemDataSource(const QString& t)
-{
-    if (m_controlSource->value() != t) {
-        m_controlSource->setValue(t);
-    }
-    //kreportpluginDebug() << "Field: " << entityName() << "is" << itemDataSource();
-}
-
 KReportLineStyle KReportItemField::lineStyle() const
 {
     KReportLineStyle ls;
@@ -243,13 +228,9 @@ int KReportItemField::renderSimpleData(OROPage *page, OROSection *section, const
 #else
         Q_UNUSED(script);
 #endif
-        if (ids.left(1) == QLatin1String("$")) { //Everything past $ is treated as a string
-            str = ids.mid(1);
-        } else {
-            str = data.toString();
-        }
+        str = data.toString();
     } else {
-            str = m_itemValue->value().toString();
+        str = m_itemValue->value().toString();
     }
 
     tb->setText(str);

@@ -92,6 +92,9 @@ void KReportDesignerItemRectBase::setSceneRect(const QRectF& rect, SceneRectFlag
 void KReportDesignerItemRectBase::mousePressEvent(QGraphicsSceneMouseEvent * event)
 {
     //Update and show properties
+    if (item()->dataSourceProperty()) {
+        item()->dataSourceProperty()->setListData(designer()->fieldKeys(), designer()->fieldNames());
+    }
     item()->setPosition(KReportItemBase::positionFromScene(QPointF(sceneRect().x(), sceneRect().y())));
     designer()->changeSet(item()->propertySet());
     setSelected(true);

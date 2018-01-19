@@ -79,24 +79,24 @@ public Q_SLOTS:
 
 
     /**
-     * Get the control source (field name) of the barcode
-     * @return control source
+     * @return the data source for the element
+     * The source can be a column name or a valid script expression if prefixed with a '='.
      */
-    QString source();
+    QString source() const;
 
 
     /**
-     * Set the control source (field name) of the barcode
-     * @param controlsource
+     * Sets the data source for the element.
+     * @see source()
      */
-    void setSource(const QString&);
+    void setSource(const QString &s);
 
 
     /**
      * Get the barcode format
      * @return format as string
      */
-    QString format();
+    QString format() const;
 
     /**
      * Set the barcode format

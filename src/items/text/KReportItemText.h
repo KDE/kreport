@@ -42,11 +42,7 @@ public:
     QString typeName() const override;
     int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset, const QVariant &data, KReportScriptHandler *script) override;
 
-    QString itemDataSource() const override;
-
 protected:
-
-    KProperty* m_controlSource;
     KProperty* m_horizontalAlignment;
     KProperty* m_verticalAlignment;
     KProperty* m_font;

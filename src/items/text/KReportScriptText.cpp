@@ -43,7 +43,7 @@ QString Text::source() const
 
 void Text::setSource(const QString& s)
 {
-    m_text->m_controlSource->setValue(s);
+    m_text->setItemDataSource(s);
 }
 
 int Text::horizontalAlignment() const
@@ -187,13 +187,13 @@ void Text::setSize(const QSizeF& s)
     m_text->setSize(s);
 }
 
-void Text::loadFromFile(const QString &fn)
+bool Text::loadFromFile(const QString &fileName)
 {
-    QFile file(fn);
+    QFile file(fileName);
     //kreportpluginDebug() << "Loading from" << fn;
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        m_text->m_controlSource->setValue(tr("$Unable to read %1").arg(fn));
-        return;
+        kreportpluginWarning() << "Failed to load value for text element from file" << fileName;
+        return false;
     }
     QTextStream in(&file);
     QString data = in.readAll();
@@ -202,7 +202,8 @@ void Text::loadFromFile(const QString &fn)
       QString line = in.readLine();
       process_line(line);
     }*/
-    m_text->m_controlSource->setValue(QVariant(QLatin1String("$") + data));
+    m_text->m_itemValue->setValue(data);
+    return true;
 }
 
 }

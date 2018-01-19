@@ -40,9 +40,6 @@ public:
                QWidget *widget = nullptr) override;
     KReportDesignerItemMaps *clone() override;
 
-protected:
-    void mousePressEvent(QGraphicsSceneMouseEvent * event) override;
-
 private:
     void init(QGraphicsScene *scene);
 

@@ -53,7 +53,7 @@ KReportItemChart::KReportItemChart(QDomNode *element)
 {
     QDomElement e = element->toElement();
     m_name->setValue(KReportUtils::readNameAttribute(e));
-    m_dataSource->setValue(e.attribute("report:data-source"));
+    setItemDataSource(e.attribute("report:item-data-source"));
     Z = e.attribute("report:z-index").toDouble();
     m_chartType->setValue(e.attribute("report:chart-type").toInt());
     m_chartSubType->setValue(e.attribute("report:chart-sub-type").toInt());
@@ -84,17 +84,13 @@ void KReportItemChart::createProperties()
     m_chartWidget = 0;
     m_set = new KPropertySet;
 
-    QStringList strings;
-    QList<QVariant> keys;
-    QStringList stringkeys;
-
-    m_dataSource = new KProperty("data-source", QStringList(), QStringList(), QString(), tr("Data Source"));
-
-    m_dataSource->setOption("extraValueAllowed", "true");
+    createDataSourceProperty();
 
     m_font = new KProperty("font", QFontDatabase::systemFont(QFontDatabase::GeneralFont), tr("Font"), tr("Field Font"));
 
+    QList<QVariant> keys;
     keys << 1 << 2 << 3 << 4 << 5;
+    QStringList strings;
     strings << tr("Bar") << tr("Line") << tr("Pie") << tr("Ring") << tr("Polar");
     KProperty::ListData *typeData = new KProperty::ListData(keys, strings);
     m_chartType = new KProperty("chart-type", typeData, 1, tr("Chart Type"));
@@ -110,6 +106,7 @@ void KReportItemChart::createProperties()
 
     keys.clear();
     strings.clear();
+    QStringList stringkeys;
     stringkeys << "default" << "rainbow" << "subdued";
     strings << tr("Default") << tr("Rainbow") << tr("Subdued");
     m_colorScheme = new KProperty("chart-color-scheme", stringkeys, strings, "default", tr("Color Scheme"));
@@ -152,7 +149,6 @@ void KReportItemChart::createProperties()
         tr("Fields from child data source"));
 
     addDefaultProperties();
-    m_set->addProperty(m_dataSource);
     m_set->addProperty(m_chartType);
     m_set->addProperty(m_chartSubType);
     m_set->addProperty(m_font);
@@ -226,7 +222,7 @@ void KReportItemChart::populateData()
     m_chartWidget = 0;
 
     if (m_reportData) {
-        QString src = m_dataSource->value().toString();
+        QString src = itemDataSource();
 
         if (!src.isEmpty()) {
             KReportData *curs = m_reportData->create(src);

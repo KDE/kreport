@@ -51,7 +51,6 @@ public:
     QString typeName() const override;
     int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset, const QVariant &data, KReportScriptHandler *script) override;
 
-    QString itemDataSource() const override;
     QVariant realItemData(const QVariant &itemData) const override;
 
     void renderFinished();
@@ -64,13 +63,10 @@ public:
     OROPicture* oroImage();
 
 protected:
-    KProperty* m_controlSource;
     KProperty* m_latitudeProperty;
     KProperty* m_longitudeProperty;
     KProperty* m_zoomProperty;
     KProperty* m_themeProperty;
-
-    void setColumn(const QString&);
 
     qreal m_longtitude = 0.0;
     qreal m_latitude = 0.0;

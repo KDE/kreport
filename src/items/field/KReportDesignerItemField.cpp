@@ -39,9 +39,10 @@ void KReportDesignerItemField::init(QGraphicsScene *scene)
     connect(propertySet(), SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
+    dataSourceProperty()->setListData(designer()->fieldKeys(), designer()->fieldNames());
     setZValue(z());
 
-    updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(), QLatin1String("field"));
+    updateRenderText(itemDataSource(), m_itemValue->value().toString(), QLatin1String("field"));
 }
 
 // methods (constructors)
@@ -126,7 +127,7 @@ void KReportDesignerItemField::buildXML(QDomDocument *doc, QDomElement *parent)
 
     // properties
     addPropertyAsAttribute(&entity, nameProperty());
-    addPropertyAsAttribute(&entity, m_controlSource);
+    addPropertyAsAttribute(&entity, dataSourceProperty());
     addPropertyAsAttribute(&entity, m_verticalAlignment);
     addPropertyAsAttribute(&entity, m_horizontalAlignment);
     addPropertyAsAttribute(&entity, m_wordWrap);
@@ -173,17 +174,8 @@ void KReportDesignerItemField::slotPropertyChanged(KPropertySet &s, KProperty &p
         }
     }
 
-    updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(), QLatin1String("field"));
+    updateRenderText(itemDataSource(), m_itemValue->value().toString(), QLatin1String("field"));
 
     KReportDesignerItemRectBase::propertyChanged(s, p);
     if (designer())designer()->setModified(true);
 }
-
-void KReportDesignerItemField::mousePressEvent(QGraphicsSceneMouseEvent * event)
-{
-    //kreportpluginDebug() << m_reportDesigner->fieldKeys() <<  m_reportDesigner->fieldNames();
-    m_controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
-    KReportDesignerItemRectBase::mousePressEvent(event);
-}
-
-

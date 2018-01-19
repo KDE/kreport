@@ -39,7 +39,7 @@ KReportItemCheckBox::KReportItemCheckBox(const QDomNode &element)
     : KReportItemCheckBox()
 {
     nameProperty()->setValue(KReportUtils::readNameAttribute(element.toElement()));
-    m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
+    setItemDataSource(element.toElement().attribute(QLatin1String("report:item-data-source")));
     setZ(KReportUtils::readZAttribute(element.toElement()));
     m_foregroundColor->setValue(QColor(element.toElement().attribute(QLatin1String("fo:foreground-color"))));
     m_checkStyle->setValue(element.toElement().attribute(QLatin1String("report:check-style")));
@@ -79,9 +79,7 @@ void KReportItemCheckBox::createProperties()
         QVariantList{ tr("Cross"), tr("Tick"), tr("Dot") });
     m_checkStyle = new KProperty("check-style", listData, QLatin1String("Cross"), tr("Style"));
 
-    m_controlSource
-        = new KProperty("item-data-source", new KPropertyListData, QVariant(), tr("Data Source"));
-    m_controlSource->setOption("extraValueAllowed", QLatin1String("true"));
+    createDataSourceProperty();
 
     m_foregroundColor = new KProperty("foreground-color", QColor(Qt::black), tr("Foreground Color"));
 
@@ -91,7 +89,6 @@ void KReportItemCheckBox::createProperties()
     m_lineStyle = new KProperty("line-style", static_cast<int>(Qt::SolidLine), tr("Line Style"), QString(), KProperty::LineStyle);
     m_staticValue = new KProperty("value", QVariant(false), tr("Value"), tr("Value used if not bound to a field"));
 
-    propertySet()->addProperty(m_controlSource);
     propertySet()->addProperty(m_staticValue);
     propertySet()->addProperty(m_checkStyle);
     propertySet()->addProperty(m_foregroundColor);
@@ -107,11 +104,6 @@ KReportLineStyle KReportItemCheckBox::lineStyle()
     ls.setColor(m_lineColor->value().value<QColor>());
     ls.setPenStyle((Qt::PenStyle)m_lineStyle->value().toInt());
     return ls;
-}
-
-QString KReportItemCheckBox::itemDataSource() const
-{
-    return m_controlSource->value().toString();
 }
 
 // RTTI

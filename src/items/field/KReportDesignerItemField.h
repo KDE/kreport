@@ -42,9 +42,6 @@ public:
     void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget *widget = nullptr) override;
     KReportDesignerItemField* clone() override;
 
-protected:
-    void mousePressEvent(QGraphicsSceneMouseEvent * event) override;
-
 private:
     void init(QGraphicsScene *scene);
     QRectF getTextRect() const;

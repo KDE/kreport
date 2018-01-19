@@ -48,7 +48,6 @@ public:
 
     QString typeName() const override;
     int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset, const QVariant &data, KReportScriptHandler *script) override;
-    QString itemDataSource() const override;
 
 private Q_SLOTS:
     void loadFinished(bool);
@@ -62,7 +61,6 @@ private:
 protected:
     void createProperties() override;
 
-    KProperty *m_controlSource;
     QWebPage *m_webPage;
 
     friend class Scripting::Web;

@@ -40,7 +40,7 @@ KReportItemText::KReportItemText(const QDomNode & element)
   : KReportItemText()
 {
     nameProperty()->setValue(KReportUtils::readNameAttribute(element.toElement()));
-    m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
+    setItemDataSource(element.toElement().attribute(QLatin1String("report:item-data-source")));
     m_itemValue->setValue(element.toElement().attribute(QLatin1String("report:value")));
     setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
     m_horizontalAlignment->setValue(element.toElement().attribute(QLatin1String("report:horizontal-align")));
@@ -108,10 +108,7 @@ Qt::Alignment KReportItemText::textFlags() const
 
 void KReportItemText::createProperties()
 {
-    //connect ( set, SIGNAL ( propertyChanged ( KPropertySet &, KProperty & ) ), this, SLOT ( propertyChanged ( KPropertySet &, KProperty & ) ) );
-
-    //_query = new KProperty ( "Query", QStringList(), QStringList(), "Data Source", "Query" );
-    m_controlSource = new KProperty("item-data-source", new KPropertyListData, QVariant(), tr("Data Source"));
+    createDataSourceProperty();
 
     m_itemValue = new KProperty("value", QString(), tr("Value"), tr("Value used if not bound to a field"));
 
@@ -141,7 +138,6 @@ void KReportItemText::createProperties()
     m_backgroundOpacity->setOption("min", 0);
     m_backgroundOpacity->setOption("suffix", QLatin1String("%"));
 
-    propertySet()->addProperty(m_controlSource);
     propertySet()->addProperty(m_itemValue);
     propertySet()->addProperty(m_horizontalAlignment);
     propertySet()->addProperty(m_verticalAlignment);
@@ -153,11 +149,6 @@ void KReportItemText::createProperties()
     propertySet()->addProperty(m_lineColor);
     propertySet()->addProperty(m_lineStyle);
 
-}
-
-QString KReportItemText::itemDataSource() const
-{
-    return m_controlSource->value().toString();
 }
 
 qreal KReportItemText::bottomPadding() const
@@ -208,11 +199,7 @@ int KReportItemText::renderSimpleData(OROPage *page, OROSection *section, const 
     QString cs = itemDataSource();
 
     if (!cs.isEmpty()) {
-        if (cs.left(1) == QLatin1String("$")) { //Everything past $ is treated as a string
-            qstrValue = cs.mid(1);
-        } else {
-            qstrValue = data.toString();
-        }
+        qstrValue = data.toString();
     } else {
         qstrValue = m_itemValue->value().toString();
     }

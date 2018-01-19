@@ -38,7 +38,7 @@ KReportItemBarcode::KReportItemBarcode(const QDomNode & element)
     : KReportItemBarcode()
 {
     nameProperty()->setValue(KReportUtils::readNameAttribute(element.toElement()));
-    m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
+    setItemDataSource(element.toElement().attribute(QLatin1String("report:item-data-source")));
     m_itemValue->setValue(element.toElement().attribute(QLatin1String("report:value")));
     setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
     m_horizontalAlignment->setValue(element.toElement().attribute(QLatin1String("report:horizontal-align")));
@@ -115,8 +115,7 @@ void KReportItemBarcode::setMaxLength(int i)
 
 void KReportItemBarcode::createProperties()
 {
-    m_controlSource
-        = new KProperty("item-data-source", new KPropertyListData, QVariant(), tr("Data Source"));
+    createDataSourceProperty();
 
     m_itemValue = new KProperty("value", QString(), tr("Value"),
                                 tr("Value used if not bound to a field"));
@@ -148,7 +147,6 @@ void KReportItemBarcode::createProperties()
     m_maxLength = new KProperty("barcode-max-length", 5, tr("Max Length"),
                                 tr("Maximum Barcode Length"));
 
-    propertySet()->addProperty(m_controlSource);
     propertySet()->addProperty(m_itemValue);
     propertySet()->addProperty(m_format);
     propertySet()->addProperty(m_horizontalAlignment);
@@ -163,11 +161,6 @@ Qt::Alignment KReportItemBarcode::horizontalAlignment() const
 {
     return KReportUtils::horizontalAlignment(m_horizontalAlignment->value().toString(),
                                              Qt::AlignLeft);
-}
-
-QString KReportItemBarcode::itemDataSource() const
-{
-    return m_controlSource->value().toString();
 }
 
 QString KReportItemBarcode::format() const
@@ -210,7 +203,7 @@ int KReportItemBarcode::renderSimpleData(OROPage *page, OROSection *section, con
 
     QString val;
 
-    if (m_controlSource->value().toString().isEmpty()) {
+    if (itemDataSource().isEmpty()) {
         val = m_itemValue->value().toString();
     } else {
         val = data.toString();

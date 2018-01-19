@@ -40,9 +40,6 @@ public:
     void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget) override;
     KReportDesignerItemWeb *clone() override;
 
-protected:
-    void mousePressEvent(QGraphicsSceneMouseEvent *event) override;
-
 private:
     void init(QGraphicsScene *scene);
 

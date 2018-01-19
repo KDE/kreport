@@ -83,10 +83,11 @@ public:
     virtual int renderReportData(OROPage *page, OROSection *section, const QPointF &offset, KReportDataSource *dataSource, KReportScriptHandler *script);
 
     /**
-    @brief Override if the item supports a simple data source, such as a field
     @return The field name or expression for the data source
     */
-    virtual QString itemDataSource() const;
+    QString itemDataSource() const;
+
+    void setItemDataSource(const QString &source);
 
     /**
     @brief Override if the item uses a sub query and linked fields, such as a chart or sub-report
@@ -153,6 +154,7 @@ public:
 
 protected:
     virtual void createProperties() = 0;
+    void createDataSourceProperty();
     bool parseReportRect(const QDomElement &elem);
     static bool parseReportTextStyleData(const QDomElement &, KReportTextStyleData*);
     static bool parseReportLineStyleData(const QDomElement &, KReportLineStyle*);
@@ -160,6 +162,7 @@ protected:
     KProperty *nameProperty();
     QString oldName() const;
     void setOldName(const QString &old);
+    KProperty* dataSourceProperty();
 
     Q_SLOT virtual void propertyChanged(KPropertySet &s, KProperty &p);
 
@@ -169,6 +172,7 @@ private:
     Private * const d;
     Q_SLOT void aboutToDeleteProperty(KPropertySet& set, KProperty& property);
 
+    friend class KReportDesignerItemRectBase;
 };
 
 #endif

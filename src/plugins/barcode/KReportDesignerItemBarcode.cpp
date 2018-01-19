@@ -136,7 +136,7 @@ void KReportDesignerItemBarcode::buildXML(QDomDocument *doc, QDomElement *parent
 
     // properties
     addPropertyAsAttribute(&entity, nameProperty());
-    addPropertyAsAttribute(&entity, m_controlSource);
+    addPropertyAsAttribute(&entity, dataSourceProperty());
     addPropertyAsAttribute(&entity, m_horizontalAlignment);
     addPropertyAsAttribute(&entity, m_format);
     addPropertyAsAttribute(&entity, m_maxLength);
@@ -164,10 +164,4 @@ void KReportDesignerItemBarcode::slotPropertyChanged(KPropertySet &s, KProperty 
 
     KReportDesignerItemRectBase::propertyChanged(s, p);
     if (designer()) designer()->setModified(true);
-}
-
-void KReportDesignerItemBarcode::mousePressEvent(QGraphicsSceneMouseEvent * event)
-{
-    m_controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
-    KReportDesignerItemRectBase::mousePressEvent(event);
 }

@@ -36,7 +36,7 @@ KReportItemImage::KReportItemImage(const QDomNode & element)
     : KReportItemImage()
 {
     nameProperty()->setValue(KReportUtils::readNameAttribute(element.toElement()));
-    m_controlSource->setValue(element.toElement().attribute(QLatin1String("report:item-data-source")));
+    setItemDataSource(element.toElement().attribute(QLatin1String("report:item-data-source")));
     m_resizeMode->setValue(element.toElement().attribute(QLatin1String("report:resize-mode"), QLatin1String("stretch")));
     setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
 
@@ -112,7 +112,7 @@ void KReportItemImage::setMode(const QString &m)
 
 void KReportItemImage::createProperties()
 {
-    m_controlSource = new KProperty("item-data-source", new KPropertyListData, QVariant(), tr("Data Source"));
+    createDataSourceProperty();
 
     KPropertyListData *listData = new KPropertyListData(
         { QLatin1String("clip"), QLatin1String("stretch") },
@@ -120,20 +120,8 @@ void KReportItemImage::createProperties()
     m_resizeMode = new KProperty("resize-mode", listData, QLatin1String("clip"), tr("Resize Mode"));
     m_staticImage = new KProperty("static-image", QPixmap(), tr("Value"), tr("Value used if not bound to a field"));
 
-    propertySet()->addProperty(m_controlSource);
     propertySet()->addProperty(m_resizeMode);
     propertySet()->addProperty(m_staticImage);
-}
-
-
-void KReportItemImage::setColumn(const QString &c)
-{
-    m_controlSource->setValue(c);
-}
-
-QString KReportItemImage::itemDataSource() const
-{
-    return m_controlSource->value().toString();
 }
 
 QString KReportItemImage::typeName() const

@@ -39,16 +39,12 @@ public:
     int renderSimpleData(OROPage *page, OROSection *section, const QPointF &offset,
                          const QVariant &data, KReportScriptHandler *script) override;
 
-    QString itemDataSource() const override;
-
 protected:
-    KProperty * m_controlSource;
     KProperty* m_resizeMode;
     KProperty* m_staticImage;
 
     void setMode(const QString&);
     void setInlineImageData(const QByteArray &dat, const QString& = QString());
-    void setColumn(const QString&);
     QString mode() const;
     bool isInline() const;
     QByteArray inlineImageData() const;

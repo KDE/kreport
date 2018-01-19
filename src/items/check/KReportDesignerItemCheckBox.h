@@ -49,9 +49,6 @@ private:
 
 private Q_SLOTS:
     void slotPropertyChanged(KPropertySet &, KProperty &);
-
-protected:
-    void mousePressEvent(QGraphicsSceneMouseEvent * event) override;
 };
 
 #endif // KREPORTDESIGNERITEMCHECK_H

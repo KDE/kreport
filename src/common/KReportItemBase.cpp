@@ -21,6 +21,7 @@
 #include "KReportUtils_p.h"
 
 #include <KPropertySet>
+#include <KPropertyListData>
 #include <QApplication>
 #include <QDomElement>
 
@@ -62,6 +63,7 @@ public:
     KProperty *nameProperty;
     KProperty *sizeProperty;
     KProperty *positionProperty;
+    KProperty *dataSourceProperty = 0;
     QString oldName;
     qreal z = 0;
     KReportUnit unit;
@@ -99,6 +101,17 @@ KReportItemBase::KReportItemBase() : d(new Private())
 KReportItemBase::~KReportItemBase()
 {
     delete d;
+}
+
+void KReportItemBase::createDataSourceProperty()
+{
+    if (d->dataSourceProperty) {
+        return;
+    }
+    d->dataSourceProperty
+        = new KProperty("item-data-source", new KPropertyListData, QVariant(), tr("Data Source"));
+    d->dataSourceProperty->setOption("extraValueAllowed", true);
+    d->set->addProperty(d->dataSourceProperty);
 }
 
 bool KReportItemBase::parseReportTextStyleData(const QDomElement & elemSource, KReportTextStyleData *ts)
@@ -154,7 +167,14 @@ int KReportItemBase::renderReportData(OROPage *page, OROSection *section, const 
 
 QString KReportItemBase::itemDataSource() const
 {
-    return QString();
+    return d->dataSourceProperty ? d->dataSourceProperty->value().toString() : QString();
+}
+
+void KReportItemBase::setItemDataSource(const QString& source)
+{
+    if (d->dataSourceProperty && d->dataSourceProperty->value() != source) {
+        d->dataSourceProperty->setValue(source);
+    }
 }
 
 KPropertySet* KReportItemBase::propertySet()
@@ -190,6 +210,11 @@ QString KReportItemBase::oldName() const
 void KReportItemBase::setOldName(const QString& old)
 {
     d->oldName = old;
+}
+
+KProperty* KReportItemBase::dataSourceProperty()
+{
+    return d->dataSourceProperty;
 }
 
 QPointF KReportItemBase::position() const

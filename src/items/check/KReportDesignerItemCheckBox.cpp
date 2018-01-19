@@ -145,7 +145,7 @@ void KReportDesignerItemCheckBox::buildXML(QDomDocument *doc, QDomElement *paren
 
     //properties
     addPropertyAsAttribute(&entity, nameProperty());
-    addPropertyAsAttribute(&entity, m_controlSource);
+    addPropertyAsAttribute(&entity, dataSourceProperty());
     entity.setAttribute(QLatin1String("fo:foreground-color"), m_foregroundColor->value().toString());
     addPropertyAsAttribute(&entity, m_checkStyle);
     addPropertyAsAttribute(&entity, m_staticValue);
@@ -174,10 +174,4 @@ void KReportDesignerItemCheckBox::slotPropertyChanged(KPropertySet &s, KProperty
 
     KReportDesignerItemRectBase::propertyChanged(s, p);
     if (designer()) designer()->setModified(true);
-}
-
-void KReportDesignerItemCheckBox::mousePressEvent(QGraphicsSceneMouseEvent * event)
-{
-    m_controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
-    KReportDesignerItemRectBase::mousePressEvent(event);
 }

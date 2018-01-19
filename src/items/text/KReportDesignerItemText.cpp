@@ -42,10 +42,10 @@ void KReportDesignerItemText::init(QGraphicsScene *scene)
     connect(propertySet(), SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
-    m_controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
+    dataSourceProperty()->setListData(designer()->fieldKeys(), designer()->fieldNames());
     setZValue(z());
 
-    updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(),
+    updateRenderText(itemDataSource(), m_itemValue->value().toString(),
                      QLatin1String("textarea"));
 }
 
@@ -128,7 +128,7 @@ void KReportDesignerItemText::buildXML(QDomDocument *doc, QDomElement *parent)
 
     // properties
     addPropertyAsAttribute(&entity, nameProperty());
-    addPropertyAsAttribute(&entity, m_controlSource);
+    addPropertyAsAttribute(&entity, dataSourceProperty());
     addPropertyAsAttribute(&entity, m_verticalAlignment);
     addPropertyAsAttribute(&entity, m_horizontalAlignment);
     entity.setAttribute(QLatin1String("report:bottom-padding"), m_bottomPadding);
@@ -146,13 +146,6 @@ void KReportDesignerItemText::buildXML(QDomDocument *doc, QDomElement *parent)
 
     parent->appendChild(entity);
 }
-
-void KReportDesignerItemText::mousePressEvent(QGraphicsSceneMouseEvent * event)
-{
-    m_controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
-    KReportDesignerItemRectBase::mousePressEvent(event);
-}
-
 
 void KReportDesignerItemText::slotPropertyChanged(KPropertySet &s, KProperty &p)
 {
@@ -172,6 +165,6 @@ void KReportDesignerItemText::slotPropertyChanged(KPropertySet &s, KProperty &p)
         designer()->setModified(true);
     }
 
-    updateRenderText(m_controlSource->value().toString(), m_itemValue->value().toString(),
+    updateRenderText(itemDataSource(), m_itemValue->value().toString(),
                      QLatin1String("textarea"));
 }

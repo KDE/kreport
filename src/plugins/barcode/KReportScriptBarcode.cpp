@@ -63,17 +63,17 @@ void Barcode::setHorizonalAlignment(Qt::Alignment value)
     m_barcode->setHorizontalAlignment(value);
 }
 
-QString Barcode::source()
+QString Barcode::source() const
 {
-    return m_barcode->m_controlSource->value().toString();
+    return m_barcode->itemDataSource();
 }
 
 void Barcode::setSource(const QString& s)
 {
-    m_barcode->m_controlSource->setValue(s);
+    m_barcode->setItemDataSource(s);
 }
 
-QString Barcode::format()
+QString Barcode::format() const
 {
     return m_barcode->m_format->value().toString();
 }

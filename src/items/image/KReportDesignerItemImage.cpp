@@ -40,7 +40,7 @@ void KReportDesignerItemImage::init(QGraphicsScene *scene)
     connect(propertySet(), SIGNAL(propertyChanged(KPropertySet&,KProperty&)),
             this, SLOT(slotPropertyChanged(KPropertySet&,KProperty&)));
 
-    m_controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
+    dataSourceProperty()->setListData(designer()->fieldKeys(), designer()->fieldNames());
     setZValue(z());
 }
 
@@ -122,7 +122,7 @@ void KReportDesignerItemImage::buildXML(QDomDocument *doc, QDomElement *parent)
         map.appendChild(doc->createTextNode(QLatin1String(inlineImageData())));
         entity.appendChild(map);
     } else {
-        addPropertyAsAttribute(&entity, m_controlSource);
+        addPropertyAsAttribute(&entity, dataSourceProperty());
     }
 
     parent->appendChild(entity);
@@ -141,10 +141,4 @@ void KReportDesignerItemImage::slotPropertyChanged(KPropertySet &s, KProperty &p
 
     KReportDesignerItemRectBase::propertyChanged(s, p);
     if (designer()) designer()->setModified(true);
-}
-
-void KReportDesignerItemImage::mousePressEvent(QGraphicsSceneMouseEvent * event)
-{
-    m_controlSource->setListData(designer()->fieldKeys(), designer()->fieldNames());
-    KReportDesignerItemRectBase::mousePressEvent(event);
 }

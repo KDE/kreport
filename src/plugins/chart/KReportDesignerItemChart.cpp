@@ -87,7 +87,7 @@ void KReportDesignerItemChart::paint(QPainter* painter, const QStyleOptionGraphi
 
     painter->setBackground(bg);
     painter->setPen(Qt::black);
-    painter->drawText(rect(), 0, dataSourceAndObjectTypeName(m_dataSource->value().toString(), "chart"));
+    painter->drawText(rect(), 0, dataSourceAndObjectTypeName(itemDataSource(), "chart"));
     painter->setPen(QPen(QColor(224, 224, 224)));
     painter->drawRect(rect());
     painter->setBackgroundMode(Qt::TransparentMode);
@@ -114,8 +114,8 @@ void KReportDesignerItemChart::buildXML(QDomDocument *doc, QDomElement *parent)
     QDomElement entity = doc->createElement(QLatin1String("report:") + typeName());
 
     // properties
-    addPropertyAsAttribute(&entity, m_name);
-    addPropertyAsAttribute(&entity, m_dataSource);
+    addPropertyAsAttribute(&entity, nameProperty());
+    addPropertyAsAttribute(&entity, dataSourceProperty());
     addPropertyAsAttribute(&entity, m_chartType);
     addPropertyAsAttribute(&entity, m_chartSubType);
     addPropertyAsAttribute(&entity, m_threeD);
@@ -190,7 +190,7 @@ void KReportDesignerItemChart::mousePressEvent(QGraphicsSceneMouseEvent * event)
     if (m_reportDesigner->reportData()) {
         QStringList ql = m_reportDesigner->reportData()->dataSources();
         QStringList qn = m_reportDesigner->reportData()->dataSourceNames();
-        m_dataSource->setListData(ql, qn);
+        dataSourceProperty()->setListData(ql, qn);
     }
     KoReportDesignerItemRectBase::mousePressEvent(event);
 }
