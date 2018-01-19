@@ -23,6 +23,7 @@
 #include "KReportUtils_p.h"
 #include "KReportPluginManager.h"
 #include "KReportPluginInterface.h"
+#include "kreport_debug.h"
 
 #include <QDebug>
 #include <QDomDocument>
@@ -155,7 +156,7 @@ static bool checkAttribute(const QDomElement &el, const char *attrName, KReportD
 KReportSection KReportDesign::Private::processSectionElement(const QDomElement &el,
                                                              KReportDesignReadingStatus *status)
 {
-    qDebug() << el.nodeName();
+    kreportDebug() << el.nodeName();
     const KReportSection::Type sectionType
         = s_global->sectionType(KReportUtils::readSectionTypeNameAttribute(el));
     if (sectionType == KReportSection::Type::Invalid) {
@@ -364,7 +365,7 @@ bool KReportDesign::Private::processContentElementChild(const QDomElement &el,
         if (!pageUnit.isValid()) {
             pageUnit = DEFAULT_UNIT;
             if (!pageUnitString.isEmpty()) {
-                qWarning() << "Invalid page unit" << pageUnitString << "specified in" << name
+                kreportWarning() << "Invalid page unit" << pageUnitString << "specified in" << name
                            << "element, defaulting to" << pageUnit.symbol();
             }
         }

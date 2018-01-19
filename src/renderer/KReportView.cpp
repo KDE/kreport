@@ -161,7 +161,7 @@ QAbstractScrollArea* KReportView::scrollArea()
 
 void KReportView::refreshCurrentPage()
 {
-    //qDebug() << "Refreshing current page" << d->currentPage;
+    //kreportDebug() << "Refreshing current page" << d->currentPage;
     if (d->reportPage) {
         d->reportPage->renderPage(d->currentPage);
     }
