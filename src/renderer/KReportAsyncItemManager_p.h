@@ -25,9 +25,10 @@
 
 #include <QObject>
 #include <QQueue>
+#include <KReportRenderObjects.h>
 
 namespace KReportPrivate {
-  
+
 class RenderData;
 
 class AsyncItemManager : public QObject
@@ -51,6 +52,7 @@ private Q_SLOTS:
 private:
     QQueue<RenderData*> m_renderList;
     QList<KReportAsyncItemBase*> m_itemList;
+    OROPage *m_curPage;
 };
 
 }
