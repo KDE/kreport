@@ -35,9 +35,8 @@ public:
     KReportScriptHandler* script;
 };
 
-AsyncItemManager::AsyncItemManager(QObject* parent): QObject(parent)
+AsyncItemManager::AsyncItemManager(QObject *parent) : QObject(parent), m_curPage(nullptr)
 {
-
 }
 
 AsyncItemManager::~AsyncItemManager()
