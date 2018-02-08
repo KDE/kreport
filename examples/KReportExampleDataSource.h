@@ -62,8 +62,8 @@ private:
         QString project;
         QString country;
         QString mobile;
-        float lat;
-        float lon;
+        qreal lat;
+        qreal lon;
         QString code;
         bool projectLead;
     };
