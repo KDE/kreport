@@ -24,7 +24,7 @@ KReportExampleDataSource::KReportExampleDataSource()
 {
     QList<Data> temp {{ 0, "Adam Pigg", "Kexi", QObject::tr("United Kingdom"), "0123456789", 58.816, -3.1484, "1746287369", false },
                         {1, "Jaroslaw Staniek", "Kexi", QObject::tr("Poland"), "8472947462", 51.895182, 19.623270, "1234567890", true },
-                        {2, "Boudewijn Rempt", "Krita", QObject::tr("Netherlands"), "8472947462", 48.858915, 2.347661, "1234567890", true },
+                        {2, "Boudewijn Rempt", "Krita", QObject::tr("Netherlands"), "8472947462", 48.858915, 2.347661, "1234567890", true }
     };
     m_testData = temp;
     m_fieldNames << "id" << "devname" << "project" << "country" << "mobile" << "lat" << "lon" << "code" << "projectlead";
