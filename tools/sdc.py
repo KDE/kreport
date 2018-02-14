@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from __future__ import print_function
+from __future__ import print_function, unicode_literals
 #
 #   This file is part of the KDE project
 #   Copyright (C) 2010-2015 Jarosław Staniek <staniek@kde.org>
@@ -97,14 +97,17 @@ out_fname = sys.argv[2]
 
 try:
     infile = open(in_fname, "rb") # binary mode needed for Windows
-    outfile = open(out_fname, "w")
-except Exception, inst:
+    outfile = open(out_fname, "wb")
+except Exception as inst:
     print(inst)
     sys.exit(1)
 
 outfile_sdc = None
 
 # --- utils ---
+def write(f, line):
+    f.write(line.encode('utf-8'))
+
 def param(lst, name):
     for item in lst:
         s = item.split('=')
@@ -157,18 +160,18 @@ def open_sdc():
     if not outfile_sdc:
         sdc_fname = out_fname.replace('.h', '_sdc.cpp')
         try:
-            outfile_sdc = open(sdc_fname, "w")
-        except Exception, inst:
+            outfile_sdc = open(sdc_fname, "wb")
+        except Exception as inst:
             print(inst)
             sys.exit(1)
-    outfile_sdc.write(warningHeader())
-    outfile_sdc.write("""#include "%s"
+    write(outfile_sdc, warningHeader())
+    write(outfile_sdc, """#include "%s"
 #include <QVariant>
 
 """ % get_file(out_fname))
 
     if shared_class_options['namespace']:
-        outfile_sdc.write("""using namespace %s;
+        write(outfile_sdc, """using namespace %s;
 
 """ % shared_class_options['namespace'])
 
@@ -178,7 +181,7 @@ def open_sdc():
 """
 def insert_fromMap_toMap_methods():
     global outfile, shared_class_name, toMap_impl, fromMap_impl
-    outfile.write("""    /*! @return map with saved attributes of the %s object.
+    write(outfile, """    /*! @return map with saved attributes of the %s object.
 
      @see %s(const QMap<QString, QString>&, bool *).
     */
@@ -188,7 +191,7 @@ def insert_fromMap_toMap_methods():
 
 """ % (shared_class_name, shared_class_name))
     open_sdc()
-    outfile_sdc.write("""%s::Data::Data(const QMap<QString, QString> &map, bool *ok)
+    write(outfile_sdc, """%s::Data::Data(const QMap<QString, QString> &map, bool *ok)
 {
     if (ok) {
         *ok = true;
@@ -213,7 +216,7 @@ def insert_operator_eq():
     if not shared_class_options['explicit']: # deep comparison only for implicitly shared data
         data = '*' + data
         otherData = '*' + otherData
-    outfile.write("""    //! @return true if this object is equal to @a other; otherwise returns false.
+    write(outfile, """    //! @return true if this object is equal to @a other; otherwise returns false.
     bool operator==(const %s &other) const {
         return %s == %s;
     }
@@ -225,7 +228,7 @@ def insert_operator_eq():
 """
 def insert_operator_neq():
     global outfile, shared_class_name, shared_class_options, superclass
-    outfile.write("""    //! @return true if this object is not equal to @a other; otherwise returns false.
+    write(outfile, """    //! @return true if this object is not equal to @a other; otherwise returns false.
     bool operator!=(const %s &other) const {
         return !operator==(other);
     }
@@ -254,29 +257,29 @@ def insert_clone():
         return %s(d->clone());
     }
 """ % (shared_class_name)
-    outfile.write(line)
+    write(outfile, line)
 
 """
     Inserts generated Data::operator==() code into the output.
 """
 def insert_data_operator_eq():
     global outfile, members_list, superclass
-    outfile.write("""        bool operator==(const Data &other) const {
+    write(outfile, """        bool operator==(const Data &other) const {
 """)
-    outfile.write("            return ")
+    write(outfile, "            return ")
     first = True;
     space = """
                    && """
     if superclass:
-        outfile.write('%s::Data::operator==(other)' % superclass)
+        write(outfile, '%s::Data::operator==(other)' % superclass)
         first = False;
     for member in members_list:
         if member['internal']:
             continue
-        outfile.write("""%s%s == other.%s""" % ('' if first else space, member['name'], member['name']))
+        write(outfile, """%s%s == other.%s""" % ('' if first else space, member['name'], member['name']))
         if first:
             first = False
-    outfile.write(""";
+    write(outfile, """;
         }
 
 """)
@@ -291,34 +294,34 @@ def insert_generated_code(context):
     if generated_code_inserted:
         return;
     #print "--------insert_generated_code--------"
-    #outfile.write('//CONTEXT:' + str(context) + '\n')
-    #outfile.write('//data_class_ctor>\n')
-    outfile.write(data_class_ctor)
-    #outfile.write('//<data_class_ctor\n')
-    outfile.write("""        {
+    #write(outfile, '//CONTEXT:' + str(context) + '\n')
+    #write(outfile, '//data_class_ctor>\n')
+    write(outfile, data_class_ctor)
+    #write(outfile, '//<data_class_ctor\n')
+    write(outfile,"""        {
         }
 """)
-    outfile.write(data_class_copy_ctor)
-    outfile.write("""        {
+    write(outfile, data_class_copy_ctor)
+    write(outfile, """        {
         }
 
 """)
-    outfile.write("""        %s {}
+    write(outfile, """        %s {}
 
 """ % virtual_or_override(superclass, '~Data()'))
-    outfile.write("""        //! Clones the object with all attributes; the copy isn't shared with the original.
+    write(outfile, """        //! Clones the object with all attributes; the copy isn't shared with the original.
         %s""" % virtual_or_override(superclass, ((superclass + '::') if superclass else '') + "Data* clone() const"))
     if shared_class_options['custom_clone']:
-        outfile.write(""";
+        write(outfile, """;
 
 """)
     else:
-        outfile.write(""" { return new Data(*this); }
+        write(outfile, """ { return new Data(*this); }
 
 """)
 
     if shared_class_options['with_from_to_map']:
-        outfile.write("""        /*! Constructor for Data object, takes attributes saved to map @a map.
+        write(outfile, """        /*! Constructor for Data object, takes attributes saved to map @a map.
         If @a ok is not 0, *ok is set to true on success and to false on failure. @see toMap(). */
         Data(const QMap<QString, QString> &map, bool *ok);
 
@@ -328,10 +331,10 @@ def insert_generated_code(context):
     if shared_class_options['operator=='] and not shared_class_options['explicit']:
         insert_data_operator_eq()
 
-    outfile.write(data_class_members)
-    outfile.write(main_ctor)
-    outfile.write(data_accesors)
-    outfile.write("\n")
+    write(outfile, data_class_members)
+    write(outfile, main_ctor)
+    write(outfile, data_accesors)
+    write(outfile, "\n")
     if shared_class_options['with_from_to_map']:
         insert_fromMap_toMap_methods()
     if shared_class_options['operator==']:
@@ -340,10 +343,10 @@ def insert_generated_code(context):
     if shared_class_options['explicit'] and (not superclass or shared_class_options['custom_clone']):
         insert_clone()
     if protected_data_accesors:
-        outfile.write("protected:")
-        outfile.write(protected_data_accesors)
-        outfile.write("\npublic:")
-    outfile.write("\n")
+        write(outfile, "protected:")
+        write(outfile, protected_data_accesors)
+        write(outfile, "\npublic:")
+    write(outfile, "\n")
     generated_code_inserted = True
 
 
@@ -357,7 +360,7 @@ def read_getter_or_setter_doc():
     while True:
         prev_pos = infile.tell()
         prev_line = line
-        line = infile.readline()
+        line = infile.readline().decode('utf-8')
         if not line:
             break
         elif line.find('*/') != -1 or line.find('@getter') != -1 or line.find('@setter') != -1:
@@ -373,14 +376,14 @@ def process_docs(comment):
     result = {}
     while True:
         prev_line = line
-        line = infile.readline()
+        line = infile.readline().decode('utf-8')
         #print "process_docs: " + line
         if not line:
             break
         elif line.find('*/') != -1:
             if result == {}:
                 insert_generated_code(1)
-                outfile.write(line)
+                write(outfile, line)
             break
         elif line.find('@getter') != -1:
             result['getter'] = read_getter_or_setter_doc()
@@ -388,8 +391,8 @@ def process_docs(comment):
             result['setter'] = read_getter_or_setter_doc()
         else:
             insert_generated_code(2)
-            outfile.write(comment)
-            outfile.write(line)
+            write(outfile, comment)
+            write(outfile, line)
     if result == {}:
         result = None
     #print "process_docs result: " + str(result)
@@ -401,7 +404,7 @@ def try_read_member_docs(comment):
     result = comment
     while True:
         prev_line = line
-        line = infile.readline()
+        line = infile.readline().decode('utf-8')
         if not line or line.find('@getter') != -1 or line.find('@setter') != -1:
             infile.seek(prev_pos)
             return None
@@ -420,7 +423,7 @@ def makeSetter(name, forceSetter):
 def update_data_accesors():
     global data_accesors, protected_data_accesors, member
     if not member['no_getter']:
-        if member.has_key('getter_docs'):
+        if 'getter_docs' in member:
             val = '\n    /*!\n' + member['getter_docs'] + '    */'
             if member['access'] == 'public':
                 data_accesors += val
@@ -445,7 +448,7 @@ def update_data_accesors():
         else: # protected
             protected_data_accesors += val
     if not member['no_setter']:
-        if member.has_key('setter_docs'):
+        if 'setter_docs' in member:
             val = '\n    /*!\n' + member['setter_docs'] + '    */'
             if member['access'] == 'public':
                 data_accesors += val
@@ -557,7 +560,7 @@ def get_pos_for_QSharedData_h():
     last_include = -1
     while True:
         prev_line = line
-        line = infile.readline().lower()
+        line = infile.readline().decode('utf-8').lower()
         if not line:
             break
         line_number += 1
@@ -664,7 +667,7 @@ def process():
     global shared_class_name, superclass, shared_class_options, shared_class_inserted, data_class_members
     global members_list, data_accesors, member, main_ctor, toMap_impl, fromMap_impl
     global prev_line, line
-    outfile.write(warningHeader())
+    write(outfile, warningHeader())
 
     member = {}
     after_member = False
@@ -678,7 +681,7 @@ def process():
     line_number = -1 # used for writing #include <QSharedData>
     while True:
         prev_line = line
-        line = infile.readline()
+        line = infile.readline().decode('utf-8')
         line_number += 1
         if not line:
             break
@@ -686,13 +689,13 @@ def process():
         lst = line.split()
         #print lst, find_index(lst, '//SDC:')
         if line_number == position_for_include_QSharedData_h:
-            outfile.write("""#include <QSharedData>
+            write(outfile, """#include <QSharedData>
 """)
             position_for_include_QSharedData_h = -1
         line_starts_with_class = len(lst) > 0 and lst[0] == 'class'
         if line_starts_with_class and find_index(lst, '//SDC:') < 0:
             shared_class_inserted = False # required because otherwise QSharedDataPointer<Data> d will be added to all classes
-            outfile.write(line)
+            write(outfile, line)
         elif line_starts_with_class and find_index(lst, '//SDC:') > 0:
             # re-init variables, needed if there are more than one shared class per file
             shared_class_inserted = False
@@ -760,14 +763,14 @@ def process():
     %s;
 """ % virtual_or_override(superclass and shared_class_options['virtual_dtor'], '~' + shared_class_name + '()')
             if shared_class_options['explicit']:
-                outfile.write("""/*! @note objects of this class are explicitly shared, what means they behave like regular
+                write(outfile, """/*! @note objects of this class are explicitly shared, what means they behave like regular
           C++ pointers, except that by doing reference counting and not deleting the shared
           data object until the reference count is 0, they avoid the dangling pointer problem.
           See <a href="http://doc.qt.io/qt-5/qexplicitlyshareddatapointer.html#details">Qt documentation</a>.
  */
 """)
             else:
-                outfile.write("""/*! @note objects of this class are implicitly shared, what means they have value semantics
+                write(outfile, """/*! @note objects of this class are implicitly shared, what means they have value semantics
           by offering copy-on-write behaviour to maximize resource usage and minimize copying.
           Only a pointer to the data is passed around. See <a href="http://doc.qt.io/qt-5/qshareddatapointer.html#details">Qt documentation</a>.
  */
@@ -775,29 +778,29 @@ def process():
 
             # Finally output the class name: use all remaining elements of 'lst' except
             # the 0th (which is the 'shared' keyword):
-            outfile.write('//! @note This class has been generated using the following SDC class options: '
+            write(outfile, '//! @note This class has been generated using the following SDC class options: '
                           + ', '.join(enabled_shared_class_options()) + '\n')
-            outfile.write(' '.join(remove_cpp_comment(lst)) + '\n')
+            write(outfile, ' '.join(remove_cpp_comment(lst)) + '\n')
             while True:
                 prev_line = line
-                line = infile.readline() # output everything until 'public:'
-                outfile.write(line)
+                line = infile.readline().decode('utf-8')  # output everything until 'public:'
+                write(outfile, line)
                 if line.strip().startswith('public:'):
                     break
             shared_class_inserted = True
         elif len(lst) >= 2 and lst[0] == '#if' and lst[1] == '0':
             insert_generated_code(3)
-            outfile.write(line)
+            write(outfile, line)
             while True:
                 prev_line = line
-                line = infile.readline()
+                line = infile.readline().decode('utf-8')
                 lst = line.split()
                 if not line:
                     break
                 elif len(lst) >= 1 and lst[0] == '#endif':
-                    outfile.write(line)
+                    write(outfile, line)
                     break
-                outfile.write(line)
+                write(outfile, line)
         elif len(lst) == 1 and (lst[0] == '/**' or lst[0] == '/*!'):
             comment = line
 
@@ -813,24 +816,24 @@ def process():
             if docs:
                 #print "DOCS:" + str(docs)
                 member = {}
-                if docs.has_key('getter'):
+                if 'getter' in docs:
                     member['getter_docs'] = docs['getter']
-                if docs.has_key('setter'):
+                if 'setter' in docs:
                     member['setter_docs'] = docs['setter']
             elif not member_docs:
                 insert_generated_code(4)
-                outfile.write(comment)
+                write(outfile, comment)
         elif len(lst) >= 2 and lst[0] == 'enum':
             # skip enums: until '};' found
-            outfile.write(line)
+            write(outfile, line)
             while True:
                 prev_line = line
-                line = infile.readline()
+                line = infile.readline().decode('utf-8')
                 lst = line.split()
                 if len(lst) > 0 and lst[0] == '};':
-                    outfile.write(line)
+                    write(outfile, line)
                     break
-                outfile.write(line)
+                write(outfile, line)
         elif data_member_found(lst):
             """ for syntax see top of the file """
             if lst[1].endswith(';'):
@@ -893,7 +896,7 @@ def process():
     #            print data_class_ctor
                 if not member['internal']:
                     data_class_copy_ctor += '         , %s(other.%s)\n' % (member['name'], member['name'])
-            if member.has_key('docs'):
+            if 'docs' in member:
                 data_class_members += simplify_multiline_doc(member['docs']) + '\n';
 
             mutable = 'mutable ' if member['mutable'] else ''
@@ -929,15 +932,15 @@ def process():
             after_member = True
         elif len(lst) > 0 and lst[0] == '};' and line[:2] == '};' and shared_class_inserted:
             insert_generated_code(5)
-#            outfile.write('\nprivate:\n');
-            outfile.write('\nprotected:\n');
+#            write(outfile, '\nprivate:\n');
+            write(outfile, '\nprotected:\n');
             if shared_class_options['explicit']:
                 if superclass:
-                    outfile.write("""    virtual const Data* data() const { return dynamic_cast<const Data*>(%s::d.constData()); }
+                    write(outfile, """    virtual const Data* data() const { return dynamic_cast<const Data*>(%s::d.constData()); }
     virtual Data* data() { return dynamic_cast<Data*>(%s::d.data()); }
 """ % (superclass, superclass))
                 else:
-                    outfile.write("""    %s(Data *data)
+                    write(outfile, """    %s(Data *data)
      : d(data)
     {
     }
@@ -950,16 +953,16 @@ def process():
     QExplicitlySharedDataPointer<Data> d;
 """ % (shared_class_name, shared_class_name, shared_class_name))
             else:
-                outfile.write('    QSharedDataPointer<Data> d;\n');
-            outfile.write(line)
+                write(outfile, '    QSharedDataPointer<Data> d;\n');
+            write(outfile, line)
 
             if shared_class_options['explicit']:
-                outfile.write("""
+                write(outfile, """
 template<>
 %s %s::Data *QSharedDataPointer<%s::Data>::clone();
 """ % (export_macro, shared_class_name, shared_class_name))
                 open_sdc()
-                outfile_sdc.write("""template<>
+                write(outfile_sdc, """template<>
 %s %s::Data *QSharedDataPointer<%s::Data>::clone()
 {
     return d->clone();
@@ -967,7 +970,7 @@ template<>
 """ % (export_macro, shared_class_name, shared_class_name))
 
         else:
-            #outfile.write('____ELSE____\n');
+            #write(outfile, '____ELSE____\n');
             if False and other_comment(line):
                 prev_pos = infile.tell()
                 prev_line_number = line_number
@@ -981,7 +984,7 @@ template<>
                             result = result[:-1]
                             break
                         prev_line = line
-                        line = infile.readline()
+                        line = infile.readline().decode('utf-8')
                         line_number += 1
                         ln = line[:-1].strip(' ')
                     print(result)
@@ -989,23 +992,23 @@ template<>
                     member['docs'] = result
                 infile.seek(prev_pos)
                 prev_line = line
-                line = infile.readline()
+                line = infile.readline().decode('utf-8')
                 lst = line.split()
                 line_number = prev_line_number
 
             if not lst:
                 if len(prev_line.split()) > 0:
-                    #outfile.write('['+prev_line + ']prev_line[' + line +']')
-                    outfile.write(line)
+                    #write(outfile, '['+prev_line + ']prev_line[' + line +']')
+                    write(outfile, line)
             elif not after_member or len(lst) > 0:
                 if shared_class_inserted:
                     insert_generated_code(6)
-                outfile.write(line)
+                write(outfile, line)
             elif generated_code_inserted and len(lst) == 0:
-                #outfile.write('ELSE>>>' + line)
-                outfile.write(line)
+                #write(outfile, 'ELSE>>>' + line)
+                write(outfile, line)
 #            else:
-#                outfile.write(line)
+#                write(outfile, line)
 
 process()
 
