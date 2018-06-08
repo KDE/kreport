@@ -176,8 +176,6 @@ kdb_remove_extensions(
 
 generate_export_header(KReport)
 
-#qt5_use_modules(KReport Widgets Xml PrintSupport)
-
 target_include_directories(KReport
     PUBLIC "$<BUILD_INTERFACE:${kreport_INCLUDE_DIRS}>"
     INTERFACE "$<INSTALL_INTERFACE:${KREPORT_INCLUDE_INSTALL_DIR}>"
