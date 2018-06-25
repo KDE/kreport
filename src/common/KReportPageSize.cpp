@@ -23,58 +23,53 @@
 
 struct KReportPageSizeInfo {
     const char *name;
-    struct { const char *source; const char *comment; } description;
     QPageSize::PageSizeId pageSize;
 };
 
 static const KReportPageSizeInfo pageSizeInfo[] = {
-    { "A3", QT_TRANSLATE_NOOP3("KReportPageFormat", "A3", ""), QPageSize::A3},
-    { "A4", QT_TRANSLATE_NOOP3("KReportPageFormat", "A4", ""), QPageSize::A4},
-    { "A5", QT_TRANSLATE_NOOP3("KReportPageFormat", "A5", ""), QPageSize::A5},
-    { "Letter", QT_TRANSLATE_NOOP3("KReportPageFormat", "US Letter",
-                                   "Usually don't translate literally, use \"US Letter\""),
-                QPageSize::Letter},
-    { "Legal", QT_TRANSLATE_NOOP3("KReportPageFormat", "US Legal",
-                                  "Usually don't translate literally, use \"US Legal\""),
-                QPageSize::Legal},
-    { "Custom", QT_TRANSLATE_NOOP3("KReportPageFormat", "Custom", ""), QPageSize::Custom},
-    { "B6", QT_TRANSLATE_NOOP3("KReportPageFormat", "B6", ""), QPageSize::B6},
-    { "B5", QT_TRANSLATE_NOOP3("KReportPageFormat", "B5", ""), QPageSize::B5},
-    { "B4", QT_TRANSLATE_NOOP3("KReportPageFormat", "B4", ""), QPageSize::B4},
-    { "Executive", QT_TRANSLATE_NOOP3("KReportPageFormat", "Executive", ""), QPageSize::Executive},
-    { "A0", QT_TRANSLATE_NOOP3("KReportPageFormat", "A0", ""), QPageSize::A0},
-    { "A1", QT_TRANSLATE_NOOP3("KReportPageFormat", "A1", ""), QPageSize::A1},
-    { "A2", QT_TRANSLATE_NOOP3("KReportPageFormat", "A2", ""), QPageSize::A2},
-    { "A6", QT_TRANSLATE_NOOP3("KReportPageFormat", "A6", ""), QPageSize::A6},
-    { "A7", QT_TRANSLATE_NOOP3("KReportPageFormat", "A7", ""), QPageSize::A7},
-    { "A8", QT_TRANSLATE_NOOP3("KReportPageFormat", "A8", ""), QPageSize::A8},
-    { "A9", QT_TRANSLATE_NOOP3("KReportPageFormat", "A9", ""), QPageSize::A9},
-    { "B0", QT_TRANSLATE_NOOP3("KReportPageFormat", "B0", ""), QPageSize::B0},
-    { "B1", QT_TRANSLATE_NOOP3("KReportPageFormat", "B1", ""), QPageSize::B1},
-    { "B10", QT_TRANSLATE_NOOP3("KReportPageFormat", "B10", ""), QPageSize::B10},
-    { "B2", QT_TRANSLATE_NOOP3("KReportPageFormat", "B2", ""), QPageSize::B2},
-    { "B3", QT_TRANSLATE_NOOP3("KReportPageFormat", "B3", ""), QPageSize::B3},
-    { "C5E", QT_TRANSLATE_NOOP3("KReportPageFormat", "C5E", ""), QPageSize::C5E},
-    { "Comm10", QT_TRANSLATE_NOOP3("KReportPageFormat", "Comm10", ""), QPageSize::Comm10E},
-    { "DL", QT_TRANSLATE_NOOP3("KReportPageFormat", "ISO DL", ""), QPageSize::DLE},
-    { "Folio", QT_TRANSLATE_NOOP3("KReportPageFormat", "US Folio", ""), QPageSize::Folio},
-    { "Ledger", QT_TRANSLATE_NOOP3("KReportPageFormat", "US Ledger", ""), QPageSize::Ledger},
-    { "Tabloid", QT_TRANSLATE_NOOP3("KReportPageFormat", "US Tabloid", ""), QPageSize::Tabloid},
-    { "EnvelopeDL", QT_TRANSLATE_NOOP3("KReportPageFormat", "DL Envelope", ""), QPageSize::EnvelopeDL},
-    { "EnvelopeC6", QT_TRANSLATE_NOOP3("KReportPageFormat", "C6 Envelope", ""), QPageSize::EnvelopeC6},
-    { "EnvelopeC65", QT_TRANSLATE_NOOP3("KReportPageFormat", "C6/5 Envolope", ""), QPageSize::EnvelopeC65},
-    { "EnvelopeC5", QT_TRANSLATE_NOOP3("KReportPageFormat", "C5 Envelope", ""), QPageSize::EnvelopeC5},
-    { "EnvelopeC4", QT_TRANSLATE_NOOP3("KReportPageFormat", "C4 Envelope", ""), QPageSize::EnvelopeC4},
-    { "EnvelopeMonarch", QT_TRANSLATE_NOOP3("KReportPageFormat", "Monarch Envelope", ""), QPageSize::EnvelopeMonarch},
-    { "EnvelopePersonal", QT_TRANSLATE_NOOP3("KReportPageFormat", "Personal Envelope", ""), QPageSize::EnvelopePersonal},
-    { "Envelope9", QT_TRANSLATE_NOOP3("KReportPageFormat", "9 Envelope", ""), QPageSize::Envelope9},
-    { "Envelope10", QT_TRANSLATE_NOOP3("KReportPageFormat", "10 Envelope", ""), QPageSize::Envelope10},
-    { "Envelope11", QT_TRANSLATE_NOOP3("KReportPageFormat", "11 Envelope", ""), QPageSize::Envelope11},
-    { "Envelope12", QT_TRANSLATE_NOOP3("KReportPageFormat", "12 Envelope", ""), QPageSize::Envelope12},
-    { "Postcard", QT_TRANSLATE_NOOP3("KReportPageFormat", "Postcard", ""), QPageSize::Postcard},
-    { "DoublePostcard", QT_TRANSLATE_NOOP3("KReportPageFormat", "Double Postcard", ""), QPageSize::DoublePostcard},
+    { "A3", QPageSize::A3},
+    { "A4", QPageSize::A4},
+    { "A5", QPageSize::A5},
+    { "Letter", QPageSize::Letter},
+    { "Legal", QPageSize::Legal},
+    { "Custom", QPageSize::Custom},
+    { "B6", QPageSize::B6},
+    { "B5", QPageSize::B5},
+    { "B4", QPageSize::B4},
+    { "Executive", QPageSize::Executive},
+    { "A0", QPageSize::A0},
+    { "A1", QPageSize::A1},
+    { "A2", QPageSize::A2},
+    { "A6", QPageSize::A6},
+    { "A7", QPageSize::A7},
+    { "A8", QPageSize::A8},
+    { "A9", QPageSize::A9},
+    { "B0", QPageSize::B0},
+    { "B1", QPageSize::B1},
+    { "B10", QPageSize::B10},
+    { "B2", QPageSize::B2},
+    { "B3", QPageSize::B3},
+    { "C5E", QPageSize::C5E},
+    { "Comm10", QPageSize::Comm10E},
+    { "DL", QPageSize::DLE},
+    { "Folio", QPageSize::Folio},
+    { "Ledger", QPageSize::Ledger},
+    { "Tabloid", QPageSize::Tabloid},
+    { "EnvelopeDL", QPageSize::EnvelopeDL},
+    { "EnvelopeC6", QPageSize::EnvelopeC6},
+    { "EnvelopeC65", QPageSize::EnvelopeC65},
+    { "EnvelopeC5", QPageSize::EnvelopeC5},
+    { "EnvelopeC4", QPageSize::EnvelopeC4},
+    { "EnvelopeMonarch", QPageSize::EnvelopeMonarch},
+    { "EnvelopePersonal", QPageSize::EnvelopePersonal},
+    { "Envelope9", QPageSize::Envelope9},
+    { "Envelope10", QPageSize::Envelope10},
+    { "Envelope11", QPageSize::Envelope11},
+    { "Envelope12", QPageSize::Envelope12},
+    { "Postcard", QPageSize::Postcard},
+    { "DoublePostcard", QPageSize::DoublePostcard},
 
-    { "", {"", ""}, QPageSize::LastPageSize}
+    { "", QPageSize::LastPageSize}
 
 };
 
@@ -82,9 +77,7 @@ QStringList KReportPageSize::pageFormatNames()
 {
     QStringList lst;
     for (int i = 0; pageSizeInfo[i].pageSize != QPageSize::LastPageSize ;i++) {
-        lst << QCoreApplication::translate("KReportPageFormat",
-                                           pageSizeInfo[ i ].description.source,
-                                           pageSizeInfo[ i ].description.comment);
+        lst << QPageSize::name(pageSizeInfo[ i ].pageSize);
     }
     return lst;
 }
