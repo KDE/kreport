@@ -281,10 +281,10 @@ public:
     /// @param ok if set, the pointed bool is set to true if the value could be
     /// converted to a qreal, and to false otherwise.
     /// @return the value converted to points for internal use
-    qreal convertToPoint(const QString &value, bool *ok = 0) const;
+    qreal convertToPoint(const QString &value, bool *ok = nullptr) const;
 
     //! Equal to convertToPoint(), use convertToPoint() instead for clarity
-    inline qreal fromUserValue(const QString &value, bool *ok = 0) const {
+    inline qreal fromUserValue(const QString &value, bool *ok = nullptr) const {
         return convertToPoint(value, ok);
     }
 

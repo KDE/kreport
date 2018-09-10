@@ -500,11 +500,10 @@ void KReportSectionEditor::brnMoveDown_clicked()
 
 void KReportSectionEditor::updateButtonsForItem(QListWidgetItem* currentItem)
 {
-    const bool isItemSelected = (currentItem != 0);
+    const bool isItemSelected = currentItem;
 
     m_btnEdit->setEnabled(isItemSelected);
     m_btnRemove->setEnabled(isItemSelected);
-
 }
 
 void KReportSectionEditor::updateButtonsForRow(int row)

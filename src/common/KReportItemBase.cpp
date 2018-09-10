@@ -63,7 +63,7 @@ public:
     KProperty *nameProperty;
     KProperty *sizeProperty;
     KProperty *positionProperty;
-    KProperty *dataSourceProperty = 0;
+    KProperty *dataSourceProperty = nullptr;
     QString oldName;
     qreal z = 0;
     KReportUnit unit;
