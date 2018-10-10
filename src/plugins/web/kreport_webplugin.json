@@ -4,7 +4,6 @@
             {
                 "Email": "kexi@kde.org",
                 "Name": "Kexi Team",
-                "Name[ast]": "L'equipu Kexi",
                 "Name[ca@valencia]": "L'equip del Kexi",
                 "Name[ca]": "L'equip del Kexi",
                 "Name[cs]": "Tým Kexi",
@@ -58,7 +57,6 @@
         "Id": "org.kde.kreport.web",
         "License": "LGPL",
         "Name": "Web browser",
-        "Name[ast]": "Restolador web",
         "Name[ca@valencia]": "Navegador web",
         "Name[ca]": "Navegador web",
         "Name[cs]": "Webový prohlížeč",

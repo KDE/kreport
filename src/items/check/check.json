@@ -4,7 +4,6 @@
             {
                 "Email": "kexi@kde.org",
                 "Name": "Kexi Team",
-                "Name[ast]": "L'equipu Kexi",
                 "Name[ca@valencia]": "L'equip del Kexi",
                 "Name[ca]": "L'equip del Kexi",
                 "Name[cs]": "Tým Kexi",
@@ -59,7 +58,6 @@
         "Id": "org.kde.kreport.checkbox",
         "License": "LGPL",
         "Name": "Check box",
-        "Name[ast]": "Caxellu",
         "Name[ca@valencia]": "Casella de selecció",
         "Name[ca]": "Casella de selecció",
         "Name[da]": "Afkrydsningsfelt",
