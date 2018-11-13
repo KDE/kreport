@@ -56,6 +56,7 @@
         "Description[tr]": "Raporlar için Metin ögesi",
         "Description[uk]": "Елемент тексту для звітів",
         "Description[x-test]": "xxText element for Reportsxx",
+        "Description[zh_CN]": "Reports 的文本元素",
         "EnabledByDefault": true,
         "Icon": "kreport-text-element",
         "Id": "org.kde.kreport.text",
