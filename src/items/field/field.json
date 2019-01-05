@@ -28,7 +28,8 @@
                 "Name[tr]": "Kexi Ekibi",
                 "Name[uk]": "Команда Kexi",
                 "Name[x-test]": "xxKexi Teamxx",
-                "Name[zh_CN]": "Kexi 团队"
+                "Name[zh_CN]": "Kexi 团队",
+                "Name[zh_TW]": "Kexi 團隊"
             }
         ],
         "Category": "",
@@ -55,6 +56,7 @@
         "Description[tr]": "Raporlar için giriş ögesi",
         "Description[uk]": "Елемент поля для звітів",
         "Description[x-test]": "xxField element for Reportsxx",
+        "Description[zh_TW]": "用於報告的欄位元件",
         "EnabledByDefault": true,
         "Icon": "kreport-field-element",
         "Id": "org.kde.kreport.field",
@@ -84,6 +86,7 @@
         "Name[uk]": "Поле",
         "Name[x-test]": "xxFieldxx",
         "Name[zh_CN]": "字段",
+        "Name[zh_TW]": "欄位",
         "ServiceTypes": [
             "KReport/Element"
         ],
