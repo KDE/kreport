@@ -85,7 +85,7 @@
         "Name[tr]": "Haritalar",
         "Name[uk]": "Карти",
         "Name[x-test]": "xxMapsxx",
-        "Name[zh_CN]": "地图",
+        "Name[zh_CN]": "映射",
         "Name[zh_TW]": "地圖",
         "ServiceTypes": [
             "KReport/Element"
