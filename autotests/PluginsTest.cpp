@@ -28,7 +28,18 @@
 #include <QSet>
 #include <QList>
 
-QTEST_GUILESS_MAIN(PluginsTest)
+QTEST_MAIN(PluginsTest)
+
+const struct Init {
+    Init()
+    {
+        // Initialize before constructing QGuiApplication to avoid issue
+        // "Qt WebEngine seems to be initialized from a plugin. Please set
+        // Qt::AA_ShareOpenGLContexts using QCoreApplication::setAttribute before constructing
+        // QGuiApplication."
+        QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
+    }
+} initialize;
 
 void PluginsTest::initTestCase()
 {
