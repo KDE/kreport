@@ -5,7 +5,7 @@ if(NOT WIN32)
 endif()
 
 find_package(Marble)
-if(Marble_FOUND)
+if(Marble_FOUND AND NOT WIN32)
   ecm_optional_add_subdirectory(maps)
 endif()
 
