@@ -83,7 +83,7 @@ public:
     void addBuiltInPlugin(const QJsonObject &json);
 
 private:
-    KReportPluginManager *q;
+    KReportPluginManager * const q;
     QObject *m_parent;
     bool m_findPlugins;
     void findPlugins();
