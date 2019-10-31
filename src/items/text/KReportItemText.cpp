@@ -211,7 +211,7 @@ int KReportItemText::renderSimpleData(OROPage *page, OROSection *section, const 
     QRectF trf(pos, siz);
     qreal intStretch = trf.top() - offset.y();
 
-    if (qstrValue.length()) {
+    if (!qstrValue.isEmpty()) {
         QRectF rect = trf;
 
         int pos = 0;
@@ -226,7 +226,7 @@ int KReportItemText::renderSimpleData(OROPage *page, OROSection *section, const 
         qreal   intBaseTop      = trf.top();
         qreal   intRectHeight   = trf.height();
 
-        while (qstrValue.length()) {
+        while (!qstrValue.isEmpty()) {
             QRegularExpressionMatch match = re.match(qstrValue);
             int idx = match.capturedStart(pos);
             if (idx == -1) {
