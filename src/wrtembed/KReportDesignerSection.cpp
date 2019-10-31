@@ -230,10 +230,10 @@ void KReportDesignerSection::initFromXML(const QDomNode & section)
     for (int i = 0; i < nl.count(); ++i) {
         node = nl.item(i);
         n = node.nodeName();
+        QObject *obj = nullptr;
         if (n.startsWith(QLatin1String("report:"))) {
             //Load objects
             //report:line is a special case as it is not a plugin
-            QObject *obj = nullptr;
             KReportPluginInterface *plugin = nullptr;
             QString reportItemName = n.mid(qstrlen("report:"));
             if (reportItemName == QLatin1String("line")) {
@@ -261,7 +261,10 @@ void KReportDesignerSection::initFromXML(const QDomNode & section)
                 }
             }
         }
-        kreportWarning() << "Encountered unknown node while parsing section: " << n;
+        if (!obj) {
+            kreportWarning() << "Unknown element" << n << "while parsing section"
+                             << section.toElement().tagName();
+        }
     }
 }
 
