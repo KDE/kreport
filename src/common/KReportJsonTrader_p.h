@@ -50,7 +50,7 @@ public:
      *
      * @param servicetype A service type like 'KMyApp/Plugin' or 'KFilePlugin'.
      * @param mimetype    A mimetype constraint to limit the choices returned, QString() to
-     *                    get all services of the given @p servicetype.
+     *                    get all services of the given @a servicetype.
      *
      * @return A list of QPluginLoader that satisfy the query
      * @see http://techbase.kde.org/Development/Tutorials/Services/Traders#The_KTrader_Query_Language

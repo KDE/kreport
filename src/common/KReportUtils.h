@@ -111,31 +111,34 @@ namespace KReportUtils
     //! @todo add unit tests
     KREPORT_EXPORT void writeFontAttributes(QDomElement *el, const QFont &font);
 
-    //! Writes attributes for the rect position @p pos, @p siz
+    //! Writes attributes for the rect position @a pos, @a siz
     KREPORT_EXPORT void buildXMLRect(QDomElement *entity, const QPointF &pos, const QSizeF &size);
 
-    //! Writes attributes for text style @p ts
+    //! Writes attributes for text style @a ts
     KREPORT_EXPORT void buildXMLTextStyle(QDomDocument *doc, QDomElement *entity, const KReportTextStyleData &ts);
 
-    //! Writes attributes for line style @p ls
+    //! Writes attributes for line style @a ls
     KREPORT_EXPORT void buildXMLLineStyle(QDomDocument *doc, QDomElement *entity, const KReportLineStyle &ls);
 
-    //! Writes attributes for the property @p p
+    //! Writes attributes for the property @a p
     KREPORT_EXPORT void addPropertyAsAttribute(QDomElement* e, KProperty* p);
 
-    //! Writes @p attribute to element @p e, @p value is stored in points with unit 'pt'
+    //! Writes @a attribute to element @a e, @a value is stored in points with unit 'pt'
     KREPORT_EXPORT void setAttribute(QDomElement *e, const QString &attribute, double value);
 
-    //! Writes point @p value as attributes to element @p e
+    //! Writes point @a value as attributes to element @a e
     KREPORT_EXPORT void setAttribute(QDomElement *e, const QPointF &value);
 
-    //! Writes size @p value as attributes to element @p e
+    //! Writes size @a value as attributes to element @a e
     KREPORT_EXPORT void setAttribute(QDomElement *e, const QSizeF &value);
 
-    //! Reads attributes from @p elemSource into text style @p ts
+    //! Writes @a attribute to element @a e, @a value is stored as boolean
+    KREPORT_EXPORT void setAttribute(QDomElement *e, const QString &attribute, bool value);
+
+    //! Reads attributes from @a elemSource into text style @a ts
     KREPORT_EXPORT bool parseReportTextStyleData(const QDomElement & elemSource, KReportTextStyleData *ts);
 
-    //! Reads attributes from @p elemSource into line style @p ls
+    //! Reads attributes from @a elemSource into line style @a ls
     KREPORT_EXPORT bool parseReportLineStyleData(const QDomElement & elemSource, KReportLineStyle *ls);
 
     //! @return page size ID for page key (the PPD standard mediaOption keyword, e.g. "A4")
@@ -144,7 +147,6 @@ namespace KReportUtils
 
     //! Like QPageSize::PageSizeId pageSizeId(const QString &key) but returns entire QPageSize object.
     KREPORT_EXPORT QPageSize pageSize(const QString &key);
-
 } // KReportUtils
 
 #endif
