@@ -123,6 +123,13 @@ namespace KReportUtils
     //! Writes attributes for the property @a p
     KREPORT_EXPORT void addPropertyAsAttribute(QDomElement* e, KProperty* p);
 
+    /**
+     * Sets value of property @a p if element @e e has attribute named report:X where X is the name of @a p.
+     *
+     * Otherwise it does nothing and return @c false.
+     */
+    KREPORT_EXPORT bool setPropertyValue(KProperty *p, const QDomElement &e);
+
     //! Writes @a attribute to element @a e, @a value is stored in points with unit 'pt'
     KREPORT_EXPORT void setAttribute(QDomElement *e, const QString &attribute, double value);
 

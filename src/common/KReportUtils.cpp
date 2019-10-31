@@ -358,8 +358,7 @@ void KReportUtils::writeFontAttributes(QDomElement *el, const QFont &font)
         el->setAttribute(QLatin1String("fo:font-family"), font.family());
     }
     // kerning, default is "true"
-    el->setAttribute(QLatin1String("style:letter-kerning"),
-        font.kerning() ? QLatin1String("true") : QLatin1String("false"));
+    KReportUtils::setAttribute(el, QLatin1String("style:letter-kerning"), font.kerning());
     // underline, default is "none"
     if (font.underline()) {
         el->setAttribute(QLatin1String("style:text-underline-type"), QLatin1String("single"));
@@ -452,20 +451,34 @@ void KReportUtils::addPropertyAsAttribute(QDomElement* e, KProperty* p)
     Q_ASSERT(p);
     const QString name = QLatin1String("report:") + QString::fromLatin1(p->name().toLower());
 
-    switch (p->value().type()) {
-        case QVariant::Int :
+    switch (p->type()) {
+        case QVariant::Int:
             e->setAttribute(name, p->value().toInt());
             break;
         case QVariant::Double:
             e->setAttribute(name, p->value().toDouble());
             break;
         case QVariant::Bool:
-            e->setAttribute(name, p->value().toInt());
+            e->setAttribute(name, p->value().toBool());
             break;
         default:
             e->setAttribute(name, p->value().toString());
             break;
     }
+}
+
+bool KReportUtils::setPropertyValue(KProperty *p, const QDomElement &e)
+{
+    const QString name = QStringLiteral("report:") + QString::fromLatin1(p->name());
+    if (!e.hasAttribute(name)) {
+        return false;
+    }
+    QVariant value = e.attribute(name); // string
+    if (!value.convert(p->type())) {
+        return false;
+    }
+    p->setValue(value);
+    return true;
 }
 
 void KReportUtils::setAttribute(QDomElement *e, const QString &attribute, double value)
@@ -488,6 +501,11 @@ void KReportUtils::setAttribute(QDomElement *e, const QSizeF &value)
     Q_ASSERT(e);
     KReportUtils::setAttribute(e, QLatin1String("svg:width"), value.width());
     KReportUtils::setAttribute(e, QLatin1String("svg:height"), value.height());
+}
+
+void KReportUtils::setAttribute(QDomElement *e, const QString &attribute, bool value)
+{
+    e->setAttribute(attribute, value ? QStringLiteral("true") : QStringLiteral("false"));
 }
 
 bool KReportUtils::parseReportTextStyleData(const QDomElement & elemSource, KReportTextStyleData *ts)
