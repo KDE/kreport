@@ -37,7 +37,7 @@ class KReportRuler : public QWidget
 Q_OBJECT
 public:
     /**
-     * Creates a ruler with the orientation @p orientation
+     * Creates a ruler with the orientation @a orientation
      * @param parent parent widget
      * @param orientation the orientation of the ruler
      * @param viewConverter the view converter used to convert from point to pixel
@@ -107,7 +107,9 @@ public Q_SLOTS:
       */
     void setOffset(int offset);
 
-    /// Sets the length of the ruler to @p length in points (pt)
+    /**
+     * Sets the length of the ruler to @a length in points (pt)
+     */
     void setRulerLength(qreal length);
 
     /** Set the active range, ie the part of the ruler that is most likely used.

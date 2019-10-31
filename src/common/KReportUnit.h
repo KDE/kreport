@@ -240,19 +240,19 @@ public:
 
     /**
      * This method is the one to use to display a value in a dialog
-     * \return the value @p ptValue converted to unit and rounded, ready to be displayed
+     * \return the value @a ptValue converted to unit and rounded, ready to be displayed
      */
     qreal toUserValue(qreal ptValue) const;
 
     /**
-     * Convert the value @p ptValue to a given unit @p unit
+     * Convert the value @a ptValue to a given unit @a unit
      * Unlike KReportUnit::ptToUnit the return value remains unrounded, so that it can be used in complex calculation
      * \return the converted value
      */
     static qreal ptToUnit(qreal ptValue, const KReportUnit &unit);
 
     /// This method is the one to use to display a value in a dialog
-    /// @return the value @p ptValue converted the unit and rounded, ready to be displayed
+    /// @return the value @a ptValue converted the unit and rounded, ready to be displayed
     QString toUserStringValue(qreal ptValue) const;
 
     //! @return the value converted to points with high accuracy
