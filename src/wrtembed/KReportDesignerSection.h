@@ -50,6 +50,7 @@ public:
 
     void setTitle(const QString & s);
     void buildXML(QDomDocument *doc, QDomElement *section);
+    //! @todo 4.0: Use QDomElement
     void initFromXML(const QDomNode & section);
     QSize sizeHint() const override;
 

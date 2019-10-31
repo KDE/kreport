@@ -54,9 +54,11 @@ public:
     virtual QObject* createDesignerInstance(KReportDesigner *designer, QGraphicsScene * scene,
                                             const QPointF &pos) = 0;
 
+    //! @todo 4.0: Use QDomElement
     virtual QObject* createDesignerInstance(const QDomNode &element, KReportDesigner *designer,
                                             QGraphicsScene *scene) = 0;
 
+    //! @todo 4.0: Use QDomElement
     virtual QObject* createRendererInstance(const QDomNode &element) = 0;
 
     virtual KReportElement createElement();
