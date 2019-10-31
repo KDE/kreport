@@ -52,6 +52,7 @@ public:
     KReportDesignerSection * detailSection() const;
 
     void buildXML(QDomDocument *doc, QDomElement *section);
+    //! @todo 4.0: Use QDomElement
     void initFromXML(QDomNode *node);
 
     KReportDesigner * reportDesigner() const;
