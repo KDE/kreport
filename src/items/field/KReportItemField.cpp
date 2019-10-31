@@ -45,9 +45,8 @@ KReportItemField::KReportItemField(const QDomNode & element)
     setZ(element.toElement().attribute(QLatin1String("report:z-index")).toDouble());
     m_horizontalAlignment->setValue(element.toElement().attribute(QLatin1String("report:horizontal-align")));
     m_verticalAlignment->setValue(element.toElement().attribute(QLatin1String("report:vertical-align")));
-
-    m_canGrow->setValue(element.toElement().attribute(QLatin1String("report:can-grow")));
-    m_wordWrap->setValue(element.toElement().attribute(QLatin1String("report:word-wrap")));
+    KReportUtils::setPropertyValue(m_canGrow, element.toElement());
+    KReportUtils::setPropertyValue(m_wordWrap, element.toElement());
 
     parseReportRect(element.toElement());
 
