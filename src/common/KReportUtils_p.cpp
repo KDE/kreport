@@ -1,5 +1,5 @@
 /* This file is part of the KDE project
-   Copyright (C) 2015-2016 Jarosław Staniek <staniek@kde.org>
+   Copyright (C) 2015-2019 Jarosław Staniek <staniek@kde.org>
    Copyright (C) 2016 Adam Pigg <adam@piggz.co.uk>
 
    This library is free software; you can redistribute it and/or
@@ -26,13 +26,14 @@
 #include <KMessageBox>
 
 #include <QApplication>
+#include <QDebug>
 #include <QDir>
 #include <QFileInfo>
+#include <QGlobalStatic>
+#include <QPrinter>
 #include <QRegularExpression>
 #include <QResource>
 #include <QStandardPaths>
-#include <QDebug>
-#include <QGlobalStatic>
 
 #ifdef Q_WS_X11
 #include <QX11Info>
@@ -327,6 +328,13 @@ int dpiX()
 int dpiY()
 {
     return s_instance->m_dpiY;
+}
+
+Q_GLOBAL_STATIC_WITH_ARGS(QPrinter, s_printerInstance, (QPrinter::HighResolution))
+
+QPrinter* highResolutionPrinter()
+{
+    return s_printerInstance;
 }
 
 PageLayout::PageLayout() : QPageLayout(QPageSize(QPageSize::A4), QPageLayout::Portrait, QMarginsF(0,0,0,0))

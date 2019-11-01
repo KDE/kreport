@@ -1,5 +1,5 @@
 /* This file is part of the KDE project
-   Copyright (C) 2015-2016 Jarosław Staniek <staniek@kde.org>
+   Copyright (C) 2015-2019 Jarosław Staniek <staniek@kde.org>
 
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
@@ -25,6 +25,8 @@
 #include <QPageLayout>
 #include <QRect>
 #include <QStandardPaths>
+
+class QPrinter;
 
 const bool DEFAULT_SHOW_GRID = true;
 const bool DEFAULT_SNAP_TO_GRID = true;
@@ -172,6 +174,14 @@ bool setupGlobalIconTheme();
 int dpiX();
 
 int dpiY();
+
+/*!
+ * Returns a high-resolution printer
+ *
+ * The QPrinter(QPrinter::HighResolution)) instance is created on first call.
+ * The global printer helps to optimize access to QPrinter when report items need it.
+ */
+QPrinter* highResolutionPrinter();
 
 //! This class is wrapper that fixes a critical QTBUG-47551 bug in default constructor of QPageLayout
 //! Default constructor of QPageLayout does not initialize units.

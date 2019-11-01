@@ -1,5 +1,6 @@
 /* This file is part of the KDE project
  * Copyright (C) 2007-2008 by Adam Pigg (adam@piggz.co.uk)
+ * Copyright (C) 2019 Jarosław Staniek <staniek@kde.org>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -17,8 +18,9 @@
 
 #include "KReportItemText.h"
 #include "KReportRenderObjects.h"
-#include "kreportplugin_debug.h"
 #include "KReportUtils.h"
+#include "KReportUtils_p.h"
+#include "kreportplugin_debug.h"
 
 #include <KPropertyListData>
 #include <KPropertySet>
@@ -217,11 +219,10 @@ int KReportItemText::renderSimpleData(OROPage *page, OROSection *section, const 
         int pos = 0;
         QChar separator;
         QRegularExpression re(QLatin1String("\\s"));
-        QPrinter prnt(QPrinter::HighResolution);
-        QFontMetricsF fm(font(), &prnt);
+        const QFontMetricsF fm(font(), KReportPrivate::highResolutionPrinter());
 
-        // int   intRectWidth    = (int)(trf.width() * prnt.resolution()) - 10;
-        int     intRectWidth    = (int)((size().width() / 72) * prnt.resolution());
+        const int intRectWidth
+            = (int)((size().width() / 72) * KReportPrivate::highResolutionPrinter()->resolution());
         int     intLineCounter  = 0;
         qreal   intBaseTop      = trf.top();
         qreal   intRectHeight   = trf.height();
