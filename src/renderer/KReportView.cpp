@@ -31,8 +31,6 @@
 #include <QLayout>
 #include <QPainter>
 #include <QPointer>
-#include <QPrintDialog>
-#include <QPrinter>
 #include <QGraphicsView>
 #include <QGraphicsScene>
 #include <QScrollBar>

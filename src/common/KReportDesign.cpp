@@ -27,7 +27,6 @@
 
 #include <QDomDocument>
 #include <QDomElement>
-#include <QPrinter>
 #include <QPrinterInfo>
 
 class Q_DECL_HIDDEN KReportDesignReadingStatus::Private
@@ -61,7 +60,7 @@ KReportDesignReadingStatus& KReportDesignReadingStatus::operator=(const KReportD
             setErrorLineNumber(other.errorLineNumber());
             setErrorColumnNumber(other.errorColumnNumber());
     }
-    
+
     return *this;
 }
 
@@ -144,7 +143,7 @@ bool KReportDesign::setContent(const QString &text, KReportDesignReadingStatus *
     QString errorDetails;
     int errorLine;
     int errorColumn;
-    
+
     if (!doc.setContent(text, &errorDetails, &errorLine, &errorColumn))
     {
         if (status) {
