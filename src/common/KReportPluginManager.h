@@ -49,7 +49,7 @@ class KREPORT_EXPORT KReportPluginManager : public QObject
 
         KReportPluginInterface* plugin(const QString& id) const;
 
-        QList<QAction*> createActions(QObject *parent) Q_REQUIRED_RESULT;
+        Q_REQUIRED_RESULT QList<QAction*> createActions(QObject *parent);
 
     private:
         // class for access to the constructor

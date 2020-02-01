@@ -106,7 +106,7 @@ public:
     @return Pointer to a new report section section object, ownership is transferred to
             the caller
     */
-    KReportDesignerSection* createSection() Q_REQUIRED_RESULT;
+    Q_REQUIRED_RESULT KReportDesignerSection* createSection();
 
     /**
     @brief Deletes the section specified
