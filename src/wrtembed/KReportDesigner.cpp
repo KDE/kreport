@@ -547,6 +547,7 @@ void KReportDesigner::setDataSource(KReportDataSource* source)
 void KReportDesigner::setScriptSource(KReportScriptSource* source)
 {
     d->scriptSource = source;
+    d->updateScripts();
 }
 #endif
 
