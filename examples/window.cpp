@@ -132,7 +132,9 @@ void Window::showDesign(const QDomElement &design)
         return;
     }
 
-    preRenderer.setDataSource(new KReportExampleDataSource());
+    auto dataSource = new KReportExampleDataSource();
+    preRenderer.setDataSource(dataSource);
+    preRenderer.setScriptSource(dataSource);
     preRenderer.setName("example_report");
 
     if (preRenderer.generateDocument()) {
