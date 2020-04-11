@@ -44,7 +44,9 @@ ReportDesignerWidget::ReportDesignerWidget(QWidget *parent)
             this, SLOT(slotDesignerPropertySetChanged()));
     connect(m_reportDesigner, SIGNAL(dirty()), this, SLOT(designDirty()));
 
-    m_reportDesigner->setDataSource(new KReportExampleDataSource);
+    auto dataSource = new KReportExampleDataSource;
+    m_reportDesigner->setDataSource(dataSource);
+    m_reportDesigner->setScriptSource(dataSource);
 }
 
 ReportDesignerWidget::~ReportDesignerWidget()
