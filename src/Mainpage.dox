@@ -25,6 +25,202 @@
  - The various report sections, such as title, header or footer, can be sized to suit
  - Reports can be generated on demand, thus eliminating saving them in files for further use
 
+ @section concepts Concepts
+
+ There are three main concepts in %KReport: designer, data sources, and rendering objects.
+ The report designer is a visual tool to create report templates by placing items, such as labels or fields, and setting their properties;
+ data sources provide the data needed to render the report from its template;
+ and rendering objects define how to layout and render the report to output devices, such as the screen or a printer.
+
+ @subsection designer Designer
+
+ A report design defines the page size, its margins, and one or more sections that hold items, the smallest unit that tell the engine what data to use and how to render it.
+ Report designs are saved as XML documents, and can be stored on any medium, for instance files or as part of a KEXI database project, for re-use and transfer.
+ KReportDesigner is based on the Qt Graphics View framework.
+
+ Internally, it uses the following classes to manipulate the report’s design:
+
+ - KReportDesigner
+ - KReportDesignerSection
+ - KReportDesignerSectionDetail
+ - KReportDesignerSectionDetailGroup
+ - KReportSectionData
+ - KReportUnit
+
+ Items, the classes that convert data from sources to rendering objects, are provided through the plugin system, for extensibility, and implement one or more of the following interfaces:
+
+ - KReportAsyncItemBase
+ - KReportDesignerItemBase
+ - KReportDesignerItemRectBase
+ - KReportItemBase
+ - KReportPluginInterface
+
+ See \ref kreport_item_plugin for more information on how to implement a plugin for a new item.
+
+
+ @subsection datasources Data Sources
+
+ Data sources are classes that adapt data from external sources to something that %KReport can work with.
+ They are somewhat similar in concept to Qt’s QAbstractItemModel, but they instead have to implement one of the following interfaces:
+
+ - KReportDataSource
+ - KReportScriptSource
+
+ %KReport does not provide any public implementation of data sources and applications must do it themselves.
+ See \ref kreport_data_source for more information on how to implement a new data source.
+
+
+ @subsection renderingobjects Rendering Objects
+
+ The items placed when designing the report’s XML are kind of cookie cutters that define how a particular data is to be rendered on the report’s output.
+ However, the actual placement and styling of data on a rendered document is done by the following classes:
+
+ - OROCheckBox
+ - ORODocument
+ - OROEllipse
+ - OROImage
+ - OROLine
+ - OROPage
+ - OROPicture
+ - OROPrimitive
+ - ORORect
+ - OROSection
+ - OROTextBox
+
+ There is a class that takes an XML document with the report’s design from one end, a data source from another, and creates a ORODocument with all rendering object correctly placed inside:
+
+ - KReportPreRenderer
+
+ The actual rendering to an output device, be it the screen or a file, it is performed by classes that inherit from KReportRendererBase, using an instance of KReportRendererContext to pass any information that the renderer requires.
+ The access to instances of KReportRendererBase it is necessary to use the following class:
+
+ - KReportRendererFactory
+
+
+ @section example Simple Example
+
+ The following example loads a report design from an XML file named `report.xml`, pre-renders the report using the data source class in the `examples` directory and, finally, renders the final document to a PDF file named `report.pdf`.
+
+ \code
+ #include "KReportExampleDataSource.h"
+ #include <KReportDocument>
+ #include <KReportPreRenderer>
+ #include <KReportRenderObjects>
+ #include <KReportRendererBase>
+ #include <QApplication>
+ #include <QDomDocument>
+ #include <QDomElement>
+ #include <QFile>
+ #include <QPainter>
+ #include <QPdfWriter>
+
+ int main(int argc, char *argv[])
+ {
+     QApplication app(argc, argv);
+
+     QFile file("report.xml");
+     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+         return EXIT_FAILURE;
+     }
+     QDomDocument doc;
+     doc.setContent(QString::fromUtf8(file.readAll()));
+     QDomElement root = doc.documentElement();
+
+     KReportPreRenderer preRenderer(root.firstChildElement());
+     if (!preRenderer.isValid()) {
+         return EXIT_FAILURE;
+     }
+     preRenderer.setDataSource(new KReportExampleDataSource);
+     preRenderer.setName("kreport");
+     if (!preRenderer.generateDocument()) {
+         return EXIT_FAILURE;
+     }
+
+     KReportRendererFactory factory;
+     KReportRendererBase *renderer = factory.createInstance("screen");
+     if (!renderer) {
+         return EXIT_FAILURE;
+     }
+
+     const KReportDocument *document = preRenderer.reportData();
+     QPdfWriter pdfWriter("report.pdf");
+     pdfWriter.setResolution(96);
+     pdfWriter.setPageLayout(document->pageLayout());
+
+     QPainter painter(&pdfWriter);
+     KReportRendererContext context;
+     context.setPainter(&painter);
+
+     ORODocument *preRenderedDocument = preRenderer.document();
+     int numPages = preRenderedDocument->pageCount();
+     for (int p = 0; p < numPages; p++) {
+         if (p > 0) {
+             pdfWriter.newPage();
+         }
+         if (!renderer->render(context, preRenderedDocument, p)) {
+             return EXIT_FAILURE;
+         }
+     }
+     return EXIT_SUCCESS;
+ }
+ \endcode
+
+ The XML could be something like this:
+
+ \verbatim
+ <!DOCTYPE kexireport>
+ <kexireport>
+  <report:content xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0"
+                  xmlns:report="http://kexi-project.org/report/2.0"
+                  xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0">
+   <report:title>Report</report:title>
+   <report:grid report:grid-divisions="4"
+                report:grid-visible="1"
+                report:page-unit="cm"
+                report:grid-snap="1" />
+   <report:page-style report:print-orientation="portrait"
+                      fo:margin-right="28.346505829687491pt"
+                      fo:margin-left="28.346505829687491pt"
+                      report:page-size="A4"
+                      fo:margin-top="28.346505829687491pt"
+                      fo:margin-bottom="28.346505829687491pt"
+   >predefined</report:page-style>
+   <report:body>
+    <report:detail>
+     <report:section fo:background-color="#ffffff"
+                     report:section-type="detail"
+                     svg:height="28.346505829689765pt">
+      <report:field report:item-data-source="project"
+                    report:z-index="0"
+                    report:vertical-align="center"
+                    report:name="field26"
+                    report:value=""
+                    svg:width="327.750000343254840pt"
+                    report:word-wrap="1"
+                    svg:x="92.250000096614059pt"
+                    svg:y="6.750000007069322pt"
+                    svg:height="12.750000013353164pt"
+                    report:can-grow="1"
+                    report:horizontal-align="left">
+       <report:text-style fo:background-color="#ffffff"
+                          fo:background-opacity="0%"
+                          fo:letter-spacing="0%"
+                          fo:font-size="9"
+                          fo:font-family="Sans Serif"
+                          fo:foreground-color="#000000"
+                          style:letter-kerning="true"/>
+       <report:line-style report:line-style="nopen"
+                          report:line-weight="1"
+                          report:line-color="#000000"/>
+      </report:field>
+     </report:section>
+    </report:detail>
+   </report:body>
+  </report:content>
+ </kexireport>
+ \endverbatim
+
+
  Project's home page: https://community.kde.org/KReport
 
  @authors
@@ -41,8 +237,918 @@
 
  @licenses
  @lgpl
+
+ @page kreport_item_plugin How to Implement a Type Plugin
+
+ This section describes how to create your own item types for KReport by implementing a sample plugin that adds a filled rectangle to the report.
+
+ - \ref kreport_item_plugin_item_base
+ - \ref kreport_item_plugin_designer_item
+ - \ref kreport_item_plugin_scripting
+ - \ref kreport_item_plugin_plugin
+
+ @section kreport_item_plugin_item_base Base Item
+
+ The duties of the base item is to extract values of its properties, such as position or size, from the report’s XML, and to create the rendering primitives to draw from the given data.
+
+ %KReport will give us the XML data in the form of a QDomNode object that only contains the fragment relevant to our item.
+ In this case, the XML structure will be something like the following:
+
+ \verbatim
+ <report:rect report:name="rect1"
+              report:z-index="0"
+              svg:x="113.386023318759058pt"
+              svg:y="21.259879372267321pt"
+              svg:height="40.500000848363968pt"
+              svg:width="210.000004398924290pt"
+              fo:background-color="#ffffff"
+              fo:background-opacity="0%"
+ >
+     <report:line-style report:line-style="solid"
+                        report:line-weight="1"
+                        report:line-color="#000000"
+     />
+ </report:rect>
+ \endverbatim
+
+ As for the rendering primitives, there are two type of items: these that create them based on a simple value from the data source, for instance a label, and these that use a subquery to extract the data, as is the case for charts;
+ the former need to implement KReportItemBase::renderSimpleData while the latter need KReportItemBase::renderReportData.
+ Rendering a rectangle does not need data from a source and will be a simple item that ignores its input.
+
+ \code
+ #include <KReportItemBase>
+
+ class QDomNode;
+
+ class KReportRectItem : public KReportItemBase
+ {
+     Q_OBJECT
+
+ public:
+     KReportRectItem();
+     explicit KReportRectItem(const QDomNode &node);
+     ~KReportRectItem() override;
+
+     QString typeName() const override;
+     int renderSimpleData(OROPage *page,
+                          OROSection *section,
+                          const QPointF &offset,
+                          const QVariant &data,
+                          KReportScriptHandler *script) override;
+
+ protected:
+     void createProperties() override;
+     QBrush brush() const;
+     KReportLineStyle lineStyle() const;
+     QPen pen() const;
+
+     KProperty *m_backgroundColor;
+     KProperty *m_backgroundOpacity;
+     KProperty *m_lineColor;
+     KProperty *m_lineStyle;
+     KProperty *m_lineWeight;
+ }
+
+ \endcode
+
+ As we will see later, the default constructor will be used when creating an empty item from the designer and it must create all properties except for the name, size, position, and data source, because these are created by KReportItemBase:
+
+ \code
+ #include "kreportrectitem.h"
+ #include <KProperty>
+ #include <KPropertySet>
+
+ KReportRectItem::KReportRectItem()
+     : KReportItemBase()
+ {
+     createProperties();
+ }
+
+ void KReportRectItem::createProperties()
+ {
+     m_backgroundColor = new KProperty("background-color", QColor(Qt::white), tr("Background color"));
+
+     m_backgroundOpacity = new KProperty("background-opacity", QVariant(0), tr("Background Opacity"));
+     m_backgroundOpacity->setOption("max", 100);
+     m_backgroundOpacity->setOption("min", 0);
+     m_backgroundOpacity->setOption("suffix", "%");
+
+     m_lineWeight = new KProperty("line-weight", 1.0, tr("Line Weight"));
+     m_lineWeight->setOption("step", 1.0);
+     m_lineColor = new KProperty("line-color", QColor(Qt::black), tr("Line Color"));
+     m_lineStyle = new KProperty("line-style", static_cast<int>(Qt::SolidLine), tr("Line Style"), QString(), KProperty::LineStyle);
+
+     propertySet()->addProperty(m_backgroundColor);
+     propertySet()->addProperty(m_backgroundOpacity);
+     propertySet()->addProperty(m_lineWeight);
+     propertySet()->addProperty(m_lineColor);
+     propertySet()->addProperty(m_lineStyle);
+ }
+ \endcode
+
+ As you can see, we create a KProperty object for each property that can be set and then we add them all to the item’s property set, that will manage their life cycle and signals.
+
+ The constructor accepting a QDomNode must extract the properties’ value from it.
+ Fortunately, KReportItemBase and KReportUtils already contain functions to help us in reading common properties.
+
+ \code
+ #include <KReportUtils>
+ #include <QDebug>
+ #include <QDomNode>
+
+ KReportRectItem::KReportRectItem(const QDomNode &node)
+     : KReportRectItem()
+ {
+     QDomElement element = node.toElement();
+     nameProperty()->setValue(KReportUtils::readNameAttribute(element));
+     setZ(KReportUtils::readZAttribute(element));
+     parseReportRect(element);
+
+     QColor backgroundColor(element.attribute("fo:background-color", "#ffffff"));
+     m_backgroundColor->setValue(backgroundColor);
+
+     bool ok;
+     int backgroundOpacity = KReportUtils::readPercent(element, "fo:background-opacity", 100, &ok);
+     if (ok) {
+         m_backgroundOpacity->setValue(backgroundOpacity);
+     }
+
+     QDomNodeList children = element.childNodes();
+     for (int i = 0; i < children.count(); i++) {
+         QDomNode node = children.at(i);
+         QString name = node.nodeName();
+
+         if (name == "report:line-style") {
+             KReportLineStyle style;
+             if (parseReportLineStyleData(node.toElement(), &style)) {
+                 m_lineWeight->setValue(style.weight());
+                 m_lineColor->setValue(style.color());
+                 m_lineStyle->setValue(static_cast<int>(style.penStyle()));
+             }
+         } else {
+             qWarning() << "found unknown element while parsing rect element:" << name;
+         }
+     }
+ }
+ \endcode
+
+ Notice how we can call nameProperty() to set this item’s name even though we did not create that property.
+ Also, parseReportRect will read the `svg:x`, `svg:y`, `svg:width` and `svg:height` attributes from the node’s element and initialize the corresponding position and size properties that we have inherited from KReportItemBase.
+
+ Now we are ready to render rectangles to the report’s output.
+ renderSimpleData receives the page and the section that the item needs to render to add the rendering objects to, and must return how much it stretches the section’s height, for instance as a result of wrapping text.
+ Both are `nullptr` when %KReport is computing the actual section’s height.
+
+ `data` contains the value that the item must render and is given by the data source.
+ For a rectangle we already got all the information required from the XML and can safely ignore this parameter.
+
+ In this case we only need to create an ORORect object and set all its attributes from the item’s properties.
+ KReportItemBase::scenePosition and KReportItemBase::sceneSize convert, respectively, the position and size from point units to pixels according to the output’s DPI.
+
+ \code
+ #include <KReportUnit>
+ #include <QPointF>
+ #include <QRectF>
+
+ int KReportRectItem::renderSimpleData(OROPage *page,
+                                       OROSection *section,
+                                       const QPointF &offset,
+                                       const QVariant &data,
+                                       KReportScriptHandler *script)
+ {
+     Q_UNUSED(data)
+     Q_UNUSED(script)
+
+     auto *rect = new ORORect();
+     rect->setRect(QRectF(scenePosition(position()) + offset, sceneSize(size())));
+     rect->setPen(pen());
+     rect->setBrush(brush());
+
+     if (page) {
+         page->insertPrimitive(rect);
+     }
+     if (section) {
+         OROPrimitive *clone = rect->clone();
+         clone->setPosition(scenePosition(position()));
+         section->addPrimitive(clone);
+     }
+     if (!page) {
+         delete rect;
+     }
+
+     return 0;
+ }
+
+ QBrush KReportRectItem::brush() const
+ {
+     QColor color = m_backgroundColor->value().value<QColor>();
+     color.setAlphaF(m_backgroundOpacity->value().toReal() * 0.01);
+     return QBrush(color);
+ }
+
+ KReportLineStyle KReportRectItem::lineStyle() const
+ {
+     KReportLineStyle style;
+     style.setWeight(m_lineWeight->value().toReal());
+     style.setColor(m_lineColor->value().value<QColor>());
+     style.setPenStyle(static_cast<Qt::PenStyle>(m_lineStyle->value().toInt()));
+     return style;
+ }
+
+ QPen KReportRectItem::pen() const
+ {
+     KReportLineStyle style = lineStyle();
+     return QPen(style.color(), style.weight(), style.penStyle());
+ }
+ \endcode
+
+ The only remaining bit is to tell %KReport the item‘s name, that will be the basis for its XML tag. That is, `"<report:" + typeName() + ">"`.
+
+ \code
+ QString KReportRectItem::typeName() const
+ {
+     return "rect";
+ }
+ \endcode
+
+
+ @section kreport_item_plugin_designer_item Designer Item
+
+ The designer item extends from the base item and its duties are to build the XML node that will be placed in the report’s structure, and to draw a preview in the designer’s QGraphicsScene.
+ This object can start its life with the properties at their default values or by initializing their values from a QDomNode, like the base item does.
+
+ KReportDesignerItemRectBase is a class that extends KReportDesignerItemBase and is used as the base class for items that are “rectangular”.
+ This, of course, includes our rectangle, but also items such as fields and labels because they define a rectangular area where they will render its data in.
+ Extending from this class means that we do not need to take care of handling mouse events and can easily draw the item’s resize handles when it is selected.
+
+ \code
+ #include "kreportrectitem.h"
+ #include <KReportDesignerItemRectBase>
+
+ class KReportRectDesignerItem : public KReportRectItem, public KReportDesignerItemRectBase
+ {
+     Q_OBJECT
+
+ public:
+     KReportRectDesignerItem(KReportDesigner *designer, QGraphicsScene *scene, const QPointF &pos);
+     KReportRectDesignerItem(const QDomNode &node, KReportDesigner *designer, QGraphicsScene *scene);
+     ~KReportRectDesignerItem() override;
+
+     void buildXML(QDomDocument *doc, QDomElement *parent) override;
+     void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = nullptr) override;
+     KReportRectDesignerItem *clone() override;
+
+ private Q_SLOTS:
+     void slotPropertyChanged(KPropertySet &set, KProperty &property);
+
+ private:
+     void init(QGraphicsScene *scene);
+ };
+ \endcode
+
+ The constructor accepting a QDomNode is called when the designer loads an existing document and we simply call the base item’s constructor to initialize the properties from the XML node.
+ The other constructor is called when the user creates a new item on the designer widget and we need to create a default-valuated instance;
+ notice how we ask KReportDesigner to suggest us a name based on the item’s type name.
+ In both cases we have to initialize this item in the scene graph and setup a slot that will inform the designer when a property has changed.
+
+ \code
+ #include "kreportrectdesigneritem.h"
+ #include <KProperty>
+ #include <KReportDesigner>
+ #include <QGraphicsScene>
+
+ KReportRectDesignerItem::KReportRectDesignerItem(KReportDesigner *designer,
+                                                  QGraphicsScene *scene,
+                                                  const QPointF &pos)
+     : KReportRectItem()
+     , KReportDesignerItemRectBase(designer, this)
+ {
+     Q_UNUSED(pos)
+     init(scene);
+     qreal size = KReportUnit::parseValue("1cm");
+     setSceneRect(properRect(*designer, size, size));
+     nameProperty()->setValue(designer->suggestEntityName(typeName()));
+ }
+
+ KReportRectDesignerItem::KReportRectDesignerItem(const QDomNode &node,
+                                                  KReportDesigner *designer,
+                                                  QGraphicsScene *scene)
+     : KReportRectItem(node)
+     , KReportDesignerItemRectBase(designer, this)
+ {
+     init(scene);
+     setSceneRect(KReportItemBase::scenePosition(item()->position()),
+                  KReportItemBase::sceneSize(item()->size()));
+ }
+
+ void KReportRectDesignerItem::init(QGraphicsScene *scene)
+ {
+     if (scene) {
+         scene->addItem(this);
+     }
+
+     connect(propertySet(),
+             &KPropertySet::propertyChanged,
+             this,
+             &KReportRectDesignerItem::slotPropertyChanged);
+
+     setFlags(ItemIsSelectable | ItemIsMovable | ItemSendsGeometryChanges);
+     setZValue(z());
+ }
+
+ void KReportRectDesignerItem::slotPropertyChanged(KPropertySet &set, KProperty &property) {
+     if (property.name() == "name") {
+        if (!designer()->isEntityNameUnique(property.value().toString(), this)) {
+            property.setValue(oldName());
+        } else {
+            setOldName(property.value().toString());
+        }
+     }
+
+     KReportDesignerItemRectBase::propertyChanged(set, property);
+     if (designer()) {
+         designer()->setModified(true);
+     }
+ }
+ \endcode
+
+ When the designer wants to write the report’s template in XML, it will call `buildXML()` with the XML document that is creating and the node that needs to be this item’s parent.
+ Our job is to create the same XML structure that the base item’s constructor accepting a QDomNode can read.
+ Again, KReportDesignerItemBase has utility functions to help us build the XML of common elements and attributes.
+
+ \code
+ #include <QDomDocument>
+ #include <QDomElement>
+
+ void KReportRectDesignerItem::buildXML(QDomDocument *doc, QDomElement *parent)
+ {
+     QDomElement entity = doc->createElement("report:" + typeName());
+
+     // properties
+     addPropertyAsAttribute(&entity, nameProperty());
+     entity.setAttribute("report:z-index", z());
+     entity.setAttribute("fo:background-color", m_backgroundColor->value().value<QColor>().name());
+     entity.setAttribute("fo:background-opacity", QString::number(m_backgroundOpacity->value().toInt()) + '%');
+
+     // bounding rect attributes
+     buildXMLRect(doc, &entity, this);
+
+     // line Style element
+     buildXMLLineStyle(doc, &entity, lineStyle());
+
+     parent->appendChild(entity);
+ }
+ \endcode
+
+ In fact, we can use this dynamic of `buildXML()` generating the XML node that the constructor can read to implement the required `clone` method.
+ This method is called by KReportDesigner to copy and paste items, among others.
+
+ \code
+ KReportRectDesignerItem *KReportRectDesignerItem::clone()
+ {
+     QDomDocument doc;
+     QDomElement parent = doc.createElement("clone");
+     buildXML(&doc, &parent);
+     QDomNode node = parent.firstChild();
+     return new KReportRectDesignerItem(node, designer(), nullptr);
+ }
+ \endcode
+
+ The last thing to do is draw the actual item on the designer.
+ In contrast to KReportItemBase, KReportDesignerItemRectBase is a QGraphicsItem-derived class and must know how to paint itself using a QPainter.
+ For a rectangle we only have to take the same brush and pen that we use when building a ORORect and paint a rectangle at the current position and size.
+ KReportDesignerItemRectBase::drawHandles will render the eight small boxes all around the rectangle that allow users to resize our item with the mouse.
+
+ \code
+ void KReportRectDesignerItem::paint(QPainter *painter,
+                                    const QStyleOptionGraphicsItem *option,
+                                    QWidget *widget)
+ {
+     Q_UNUSED(option)
+     Q_UNUSED(widget)
+
+     painter->save();
+     painter->setPen(KReportRectItem::pen());
+     painter->setBrush(KReportRectItem::brush());
+     painter->drawRect(QGraphicsRectItem::rect());
+     painter->restore();
+
+     drawHandles(painter);
+
+ }
+ \endcode
+
+ @section kreport_item_plugin_scripting Scripting
+
+ %KReport allows users to write scripts in JavaScript to change items’ properties.
+ For example, the following script for a report named `example_report` would change the background color of an item named rect1 to the color #abc, and toggle the section’s between #ffffff and #dddddd prior to rendering it:
+
+ \code
+ function detail() {
+   var count = 0;
+   this.OnRender = function() {
+     count++;
+     if (count % 2 == 0) {
+       example_report.section_detail.backgroundColor = "#ffffff";
+     } else {
+       example_report.section_detail.backgroundColor = "#dddddd";
+     }
+     example_report.section_detail.objectByName("rect1").backgroundColor = "#abc";
+   }
+ }
+ example_report.section_detail.initialize(new detail());
+ \endcode
+
+ %KReport uses QML’s QJSEngine to run JavaScript and calling `objectByName` from the script will try to create a QObject-derived object that wraps the  item whose name is passed as parameter.
+ This QObject needs to define Qt properties in order to provide a way to write and read item's property values.
+ By convention, the scripting class is from the `Scripting` namespace.
+
+ \code
+ #include <QObject>
+
+ class KReportRectItem;
+
+ namespace Scripting {
+
+ class Rect : public QObject
+ {
+     Q_OBJECT
+     Q_PROPERTY(QColor backgroundColor READ backgroundColor WRITE setBackgroundColor)
+     Q_PROPERTY(int backgroundOpacity READ backgroundOpacity WRITE setBackgroundOpacity)
+     Q_PROPERTY(QColor lineColor READ lineColor WRITE setLineColor)
+     Q_PROPERTY(int lineStyle READ lineStyle WRITE setLineStyle)
+     Q_PROPERTY(int lineWeight READ lineWeight WRITE setLineWeight)
+     Q_PROPERTY(QPointF position READ position WRITE setPosition)
+     Q_PROPERTY(QSizeF size READ size WRITE setSize)
+
+ public:
+     explicit Rect(KReportRectItem *item, QObject *parent = nullptr);
+
+     QColor backgroundColor() const;
+     int backgroundOpacity() const;
+     QColor lineColor() const;
+     int lineStyle() const;
+     int lineWeight() const;
+     QPointF position() const;
+     QSizeF size() const;
+
+ public Q_SLOTS:
+     void setBackgroundColor(const QColor &color);
+     void setBackgroundOpacity(int opacity);
+     void setLineColor(const QColor &color);
+     void setLineStyle(int style);
+     void setLineWeight(int weight);
+     void setPosition(const QPointF &position);
+     void setSize(const QSizeF &size);
+
+ private:
+     KReportRectItem *m_rect;
+ };
+
+ }
+ \endcode
+
+ The implementation is very straightforward and just needs to set or get the item’s property values.
+
+ \code
+ #include "kreportrectscript.h"
+ #include "kreportrectitem.h"
+ #include <KProperty>
+ #include <QPointF>
+ #include <QSizeF>
+
+ Scripting::Rect::Rect(KReportRectItem *item, QObject *parent)
+     : QObject(parent)
+     , m_rect(item)
+ {}
+
+ QColor Scripting::Rect::backgroundColor() const
+ {
+     return m_rect->m_backgroundColor->value().value<QColor>();
+ }
+
+ int Scripting::Rect::backgroundOpacity() const
+ {
+     return m_rect->m_backgroundOpacity->value().toInt();
+ }
+
+ QColor Scripting::Rect::lineColor() const
+ {
+     return m_rect->m_lineColor->value().value<QColor>();
+ }
+
+ int Scripting::Rect::lineStyle() const
+ {
+     return m_rect->m_lineStyle->value().toInt();
+ }
+
+ int Scripting::Rect::lineWeight() const
+ {
+     return m_rect->m_lineWeight->value().toInt();
+ }
+
+ QPointF Scripting::Rect::position() const
+ {
+     return m_rect->position();
+ }
+
+ QSizeF Scripting::Rect::size() const
+ {
+     return m_rect->size();
+ }
+
+ void Scripting::Rect::setBackgroundColor(const QColor &color)
+ {
+     m_rect->m_backgroundColor->setValue(color);
+ }
+
+ void Scripting::Rect::setBackgroundOpacity(int opacity)
+ {
+     m_rect->m_backgroundOpacity->setValue(opacity);
+ }
+
+ void Scripting::Rect::setLineColor(const QColor &color)
+ {
+     m_rect->m_lineColor->setValue(color);
+ }
+
+ void Scripting::Rect::setLineStyle(int style)
+ {
+     m_rect->m_lineStyle->setValue(qMax(1, qMin(style, 5)));
+ }
+
+ void Scripting::Rect::setLineWeight(int weight)
+ {
+     m_rect->m_lineWeight->setValue(weight);
+ }
+
+ void Scripting::Rect::setPosition(const QPointF &position)
+ {
+     m_rect->setPosition(position);
+ }
+
+ void Scripting::Rect::setSize(const QSizeF &size)
+ {
+     m_rect->setSize(size);
+ }
+ \endcode
+
+ Because most of KReportRectItem properties are private, we need to make `Scripting::Rect` a friend class by appending the following at the end of KReportRectItem’s declaration:
+
+ \code
+ private:
+   friend class Scripting::Rect;
+ \endcode
+
+
+ @section kreport_item_plugin_plugin Implementing the Plugin Interface
+
+ We already have all the actors ready
+ — the base item class, the designer’s, and the class that allows changing its properties from scripts —,
+ but we need a way to somehow tell %KReport that they exist.
+ This is done by implementing the KReportPluginInterface interface.
+
+ \code
+ #include <KReportPluginInterface>
+
+ class Q_DECL_EXPORT KReportRectPlugin : public KReportPluginInterface
+ {
+     Q_OBJECT
+
+ public:
+     explicit KReportRectPlugin(QObject *parent, const QVariantList &args = QVariantList());
+     ~KReportRectPlugin() override;
+
+     QObject *createRendererInstance(const QDomNode &element) override;
+     QObject *createDesignerInstance(const QDomNode &element,
+                                     KReportDesigner *designer,
+                                     QGraphicsScene *scene) override;
+     QObject *createDesignerInstance(KReportDesigner *designer,
+                                     QGraphicsScene *scene,
+                                     const QPointF &pos) override;
+ #ifdef KREPORT_SCRIPTING
+     QObject *createScriptInstance(KReportItemBase *item) override;
+ #endif
+ };
+ \endcode
+
+ KReportPluginInterface::createRendererInstance is called when there is the need to instantiate a base item for rendering the report.
+ It is given the QDomNode from the report’s XML template of this item.
+
+ \code
+ #include "kreportrectitem.h"
+
+ QObject *KReportRectPlugin::createRendererInstance(const QDomNode &element)
+ {
+     return new KReportRectItem(element);
+ }
+ \endcode.
+
+ Likewise, KReportPluginInterface::createDesignerInstance is called to instantiate a designer item.
+ As we saw above, the designer item can be needed when loading an XML document or when the user creates a new item in the designer widget, that is why there are two different signatures for this method.
+
+ \code
+ #include "kreportrectdesigneritem.h"
+
+ QObject *KReportRectPlugin::createDesignerInstance(const QDomNode &element,
+                                                    KReportDesigner *designer,
+                                                    QGraphicsScene *scene)
+ {
+     return new KReportRectDesignerItem(element, designer, scene);
+ }
+
+ QObject *KReportRectPlugin::createDesignerInstance(KReportDesigner *designer,
+                                                    QGraphicsScene *scene,
+                                                    const QPointF &pos)
+ {
+     return new KReportRectDesignerItem(designer, scene, pos);
+ }
+ \endcode
+
+ The last class we need to instantiate is the QObject-derived object used in scripts.
+ The method receives the item to wrap as a parameter.
+ Due to the dynamic nature of JavaScript, we need to cast it to the type of our item and make sure it is correct.
+
+ \code
+ #ifdef KREPORT_SCRIPTING
+
+ #include "kreportrectscript.h"
+
+ QObject *KReportRectPlugin::createScriptInstance(KReportItemBase *item)
+ {
+     auto rect = qobject_cast<KReportRectItem *>(item);
+     if (!rect) {
+         return nullptr;
+     }
+     return new Scripting::Rect(rect);
+ }
+
+ #endif
+ \endcode
+
+ The last thing required to implement this interface is to create a plugin factory.
+ It can be done with the KREPORT_PLUGIN_FACTORY macro, that expects the name of the class extending KReportPluginInterface and the name of a JSON file with valid KPlugin metadata.
+ It is also necessary to include the source code generated by the Qt MOC in the plugin’s implementation file in order to compile the generated factory code.
+
+ \code
+ #include "kreportrectplugin.h"
+
+ KREPORT_PLUGIN_FACTORY(KReportRectPlugin, "rect.json")
+
+ KReportRectPlugin::KReportRectPlugin(QObject *parent, const QVariantList &args)
+     : KReportPluginInterface(parent, args)
+ {}
+
+ KReportRectPlugin::~KReportRectPlugin() {}
+
+ #include "kreportrectplugin.moc"
+ \endcode
+
+ The JSON file must have all necessary KPlugin metadata.
+ It is very important to add "KReport/Element" to "ServiceTypes" or %KReport would not recognize it as a valid plugin.
+ Also, "Version" must be set to the major and minor component of %KReport’s stable version.
+ For example, in %KReport 3.2.1 "Version" must be set to "3.2".
+
+ Lastly, the JSON file must contain a "X-KDE-PluginInfo-LegacyName" property with the exact same value as the return value of KReportItemBase::typeName or %KReport would fail to find the plugin when reading XML templates or creating new items in the designer.
+
+ \verbatim
+ {
+         "KPlugin": {
+                 "Authors": [
+                         {
+                                 "Email": "author@hosting.suffix",
+                                 "Name": "Proud Author"
+                         }
+                 ],
+                 "Category": "",
+                 "Dependencies": [],
+                 "Description": "Rectangle element for Reports",
+                 "Icon": "draw-rectangle",
+                 "Id": "org.kde.kreport.rect",
+                 "License": "LGPL",
+                 "Name": "Rect",
+                 "ServiceTypes": [
+                         "KReport/Element"
+                 ],
+                 "Version": "3.3"
+         },
+         "X-KDE-PluginInfo-LegacyName": "rect",
+         "X-KReport-PluginInfo-Priority": "100"
+ }
+ \endverbatim
+
+ The last piece you need for a complete item plugin is a `CMakeLists.txt` that compiles and installs the plugin.
+ The `CMakeLists.txt` looks like the following:
+
+ \verbatim
+ find_package(ECM 1.8.0 NO_MODULE REQUIRED)
+ set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
+
+ include(KDEInstallDirs)
+ include(KDECMakeSettings NO_POLICY_SCOPE)
+ include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
+
+ set(CMAKE_INCLUDE_CURRENT_DIR ON)
+ set(CMAKE_CXX_STANDARD 11)
+ set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+ find_package(Qt5 5.4.0 COMPONENTS Core REQUIRED)
+ find_package(KReport 3.2.90 NO_MODULE REQUIRED)
+
+ set(kreportrectplugin_SRCS
+   kreportrectdebug.cpp
+   kreportrectdesigneritem.cpp
+   kreportrectitem.cpp
+   kreportrectplugin.cpp
+ )
+
+ if (KREPORT_SCRIPTING)
+     list(APPEND kreportrectplugin_SRCS
+       kreportrectscript.cpp
+     )
+ endif(KREPORT_SCRIPTING)
+
+ add_library(KReportRectPlugin MODULE ${kreportrectplugin_SRCS})
+ target_link_libraries(KReportRectPlugin PRIVATE Qt5::Core KReport)
+
+ install(TARGETS KReportRectPlugin DESTINATION ${KDE_INSTALL_PLUGINDIR}/kreport3)
+ \endverbatim
+
+ Now you can compile the type plugin and install it.
+ Once done, the new plugin should be available for every application using %KReport.
+ In applications that utilize the Report Designer, Items toolbar should also offer the new item type.
+
+
+ @page kreport_data_source How to Implement a Data Source
+
+ This section describes how to implement a data source for %KReport.
+ As an example, this data source will simply wrap a QAbstractTableModel and will keep the current row in an attribute.
+ It is the most simple data source that does not sort its data.
+
+ \code
+ #include <KReportDataSource>
+ #include <QPointer>
+
+ class QAbstractTableModel;
+
+ class KReportTableModelDataSource : public KReportDataSource
+ {
+ public:
+    explicit KReportTableModelDataSource(QAbstractTableModel *model);
+    ~KReportTableModelDataSource() override;
+
+    bool open() override;
+    bool close() override;
+    bool moveNext() override;
+    bool movePrevious() override;
+    bool moveFirst() override;
+    bool moveLast() override;
+    qint64 at() const override;
+    qint64 recordCount() const override;
+    int fieldNumber(const QString &field) const override;
+    QStringList fieldNames() const override;
+    QVariant value(int pos) const override;
+    QVariant value(const QString &field) const override;
+    QStringList dataSourceNames() const override;
+
+ private:
+    qint64 m_currentRow;
+    QPointer<QAbstractTableModel> m_model;
+ };
+ \endcode
+
+ The constructor already receives the model with all the data that we need to extract, therefore in this case there is nothing to open or close.
+
+ \code
+ #include "kreporttablemodeldatasource.h"
+ #include <QAbstractTableModel>
+
+ KReportTableModelDataSource::KReportTableModelDataSource(QAbstractTableModel *model)
+     : KReportDataSource()
+     , m_currentRow(0)
+     , m_model(&model)
+ {}
+
+ KReportTableModelDataSource::~KReportTableModelDataSource() {}
+
+ bool KReportTableModelDataSource::open()
+ {
+     // Nothing to do.
+     return true;
+ }
+
+ bool KReportTableModelDataSource::close()
+ {
+     // Nothing to do.
+     return true;
+ }
+ \endcode
+
+ Next we will manage the current row by implementing the next, previous, first, and last methods.
+ Those methods are called by %KReport when traversing the data source within a report’s section.
+
+ \code
+ bool KReportTableModelDataSource::moveNext()
+ {
+     if (m_currentRow >= recordCount() - 1) {
+         return false;
+     }
+     m_currentRow++;
+     return true;
+ }
+
+ bool KReportTableModelDataSource::movePrevious()
+ {
+     if (m_currentRow <= 0) {
+         return false;
+     }
+     m_currentRow--;
+     return true;
+ }
+
+ bool KReportTableModelDataSource::moveFirst()
+ {
+     m_currentRow = 0;
+     return true;
+ }
+
+ bool KReportTableModelDataSource::moveLast()
+ {
+     m_currentRow = recordCount() - 1;
+     return true;
+ }
+
+ qint64 KReportTableModelDataSource::at() const
+ {
+     return m_currentRow;
+ }
+ \endcode
+
+ %KReport needs to know how many rows there are in the data source.
+
+ \code
+ qint64 KReportTableModelDataSource::recordCount() const
+ {
+     return m_model->rowCount();
+ }
+ \endcode
+
+ It also needs to know the field count for each record, their names, and a way to reference them.
+ All records need to have the same number of fields, exactly like the rows of a QAbstractTableModel.
+ In this case, the field names will correspond to column’s names, and will use them as keys;
+ the default behaviour of KReportDataSource::fieldKeys() is to return the output of KReportDataSource::fieldNames().
+
+ \code
+ QStringList KReportTableModelDataSource::fieldNames() const
+ {
+     QStringList names;
+     for (int i = 0; i < m_model->columnCount(); i++) {
+         names << m_model->headerData(i, Qt::Horizontal).toString();
+     }
+     return names;
+ }
+
+ int KReportTableModelDataSource::fieldNumber(const QString &field) const
+ {
+     for (int i = 0; i < m_model->columnCount(); i++) {
+         if (m_model->headerData(i, Qt::Horizontal).toString() == field) {
+             return i;
+         }
+     }
+     return -1;
+ }
+ \endcode
+
+ %KReport will need to be able to read the value of a given field.
+ The field is always in the current record and can be referenced by the key — the column’s name in this case — or by its position.
+ Therefore we need to handle both cases.
+
+ \code
+ QVariant KReportTableModelDataSource::value(int pos) const
+ {
+     return m_model->data(m_model->index(m_currentRow, pos));
+ }
+
+ QVariant KReportTableModelDataSource::value(const QString &field) const
+ {
+     return value(fieldNumber(field));
+ }
+ \endcode
+
+ The last remaining method to implement is for data sources that can retrieve data from multiple sources.
+ In this case there is one possible source, the QAbstractTableModel, and have nothing to return.
+
+ \code
+ QStringList KReportTableModelDataSource::dataSourceNames() const
+ {
+     return QStringList();
+ }
+ \endcode
+
+ Our data source is now ready to be used to render reports.
 */
 // DOXYGEN_SET_PROJECT_NAME = KReport
 // DOXYGEN_SET_IGNORE_PREFIX = KReport
 // DOXYGEN_SET_EXCLUDE_PATTERNS += *_p.h
 // DOXYGEN_SET_EXCLUDE_PATTERNS += */editors/* */plugins/*
+
