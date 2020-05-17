@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0 FATAL_ERROR)
-find_package(ECM 1.8.0 REQUIRED NO_MODULE)
+find_package(ECM 5.45.0 REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/modules ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
 include(SetKReportCMakePolicies NO_POLICY_SCOPE)
 
@@ -22,6 +22,7 @@ include(ECMOptionalAddSubdirectory)
 include(KDEInstallDirs)
 include(KDECMakeSettings NO_POLICY_SCOPE)
 include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
+include(ECMSetupQtPluginMacroNames)
 
 # Own
 include(KReportAddIconsRccFile)
@@ -46,6 +47,11 @@ set_package_properties(KPropertyWidgets PROPERTIES TYPE REQUIRED
 get_git_revision_and_branch()
 add_unfinished_features_option()
 add_pc_file(${PROJECT_NAME})
+
+ecm_setup_qtplugin_macro_names(
+    JSON_ARG2 KREPORT_PLUGIN_FACTORY
+    CONFIG_CODE_VARIABLE KREPORT_SETUP_AUTOMOC_VARIABLES
+)
 
 add_subdirectory(src)
 

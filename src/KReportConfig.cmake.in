@@ -27,6 +27,8 @@ find_dependency(KPropertyWidgets @REQUIRED_KPROPERTY_VERSION@)
 include("${CMAKE_CURRENT_LIST_DIR}/KReportTargets.cmake")
 include("${CMAKE_CURRENT_LIST_DIR}/KReportQCHTargets.cmake")
 
+@KREPORT_SETUP_AUTOMOC_VARIABLES@
+
 # "public" variables:
 
 set(KREPORT_SCRIPTING @KREPORT_SCRIPTING@)
