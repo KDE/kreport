@@ -326,12 +326,12 @@ install(
 )
 
 if(BUILD_QCH)
-    kreport_add_qch(
+    ecm_add_qch(
         KReport_QCH
         NAME KReport
         BASE_NAME ${KREPORT_BASE_NAME}
         VERSION ${PROJECT_VERSION}
-        NAMESPACE org.kde.${KREPORT_BASE_NAME}
+        ORG_DOMAIN org.kde.${KREPORT_BASE_NAME}
         SOURCES
             Mainpage.dox
             ${kreport_HEADERS}
@@ -345,16 +345,20 @@ if(BUILD_QCH)
             KF5CoreAddons_QCH
             KPropertyCore_QCH
             KPropertyWidgets_QCH
+        INCLUDE_DIRS
+            ${CMAKE_CURRENT_BINARY_DIR}
+            ${kreport_INCLUDE_DIRS}
         BLANK_MACROS
             KREPORT_EXPORT
             KREPORT_DEPRECATED
-        TAGFILE_INSTALL_DESTINATION ${KREPORT_QTQCH_FULL_INSTALL_DIR}
-        QCH_INSTALL_DESTINATION ${KREPORT_QTQCH_FULL_INSTALL_DIR}
+        TAGFILE_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
+        QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
+        COMPONENT Devel
     )
     set(kreport_qch_targets KReport_QCH)
 endif()
 
-kreport_install_qch_export(
+ecm_install_qch_export(
     TARGETS ${kreport_qch_targets}
     FILE KReportQCHTargets.cmake
     DESTINATION "${CMAKECONFIG_INSTALL_DIR}"

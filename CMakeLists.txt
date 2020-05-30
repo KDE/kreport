@@ -23,10 +23,10 @@ include(KDEInstallDirs)
 include(KDECMakeSettings NO_POLICY_SCOPE)
 include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(ECMSetupQtPluginMacroNames)
+include(ECMAddQch)
 
 # Own
 include(KReportAddIconsRccFile)
-include(KReportAddQCH)
 include(KReportMacros)
 
 simple_option(BUILD_QCH "Build API documentation in QCH format" OFF)
