@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0 FATAL_ERROR)
 find_package(ECM 5.45.0 REQUIRED NO_MODULE)
-set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/modules ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
+set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/modules ${ECM_MODULE_PATH})
 include(SetKReportCMakePolicies NO_POLICY_SCOPE)
 
 project(KReport VERSION 3.2.90) # Update this: Alpha = 90, Beta 1 = 91, RC 1 = 94
