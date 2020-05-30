@@ -1,0 +1,22 @@
+# kapidox info
+description: KReport is a framework for the creation and generation of reports in multiple formats.
+#logo: TODO
+group: kexiframeworks
+type: functional
+
+platforms:
+    - name: Linux
+    - name: Windows
+#    - name: MacOSX
+#    - name: Android
+
+public_lib: true
+public_source_dirs:
+    - src
+libraries:
+    - cmake: KReport
+      qmake: KReport3
+cmakename: KReport
+
+maintainer:
+    - piggz
