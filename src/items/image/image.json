@@ -31,7 +31,6 @@
                 "Name[sv]": "Kexi-gruppen",
                 "Name[tr]": "Kexi Ekibi",
                 "Name[uk]": "Команда Kexi",
-                "Name[x-test]": "xxKexi Teamxx",
                 "Name[zh_CN]": "Kexi 团队",
                 "Name[zh_TW]": "Kexi 團隊"
             }
@@ -64,7 +63,6 @@
         "Description[sv]": "Bildelement för rapporter",
         "Description[tr]": "Raporlar için Resim ögesi",
         "Description[uk]": "Елемент зображення для звітів",
-        "Description[x-test]": "xxImage element for Reportsxx",
         "Description[zh_TW]": "用於報告的影像元件",
         "EnabledByDefault": true,
         "Icon": "kreport-image-element",
@@ -98,7 +96,6 @@
         "Name[sv]": "Bild",
         "Name[tr]": "Resim",
         "Name[uk]": "Зображення",
-        "Name[x-test]": "xxImagexx",
         "Name[zh_CN]": "图像",
         "Name[zh_TW]": "影像",
         "ServiceTypes": [
