@@ -29,7 +29,6 @@
                 "Name[sv]": "Kexi-gruppen",
                 "Name[tr]": "Kexi Ekibi",
                 "Name[uk]": "Команда Kexi",
-                "Name[x-test]": "xxKexi Teamxx",
                 "Name[zh_CN]": "Kexi 团队"
             }
         ],
@@ -58,7 +57,6 @@
         "Description[sv]": "Element med kryssruta för rapporter",
         "Description[tr]": "Raporlar için işaret kutusu ögesi",
         "Description[uk]": "Елемент пункту позначки для звітів",
-        "Description[x-test]": "xxCheck box element for Reportsxx",
         "EnabledByDefault": true,
         "Icon": "kreport-checkbox-element",
         "Id": "org.kde.kreport.checkbox",
@@ -88,7 +86,6 @@
         "Name[sv]": "Kryssruta",
         "Name[tr]": "İşaret kutusu",
         "Name[uk]": "Пункт позначки",
-        "Name[x-test]": "xxCheck boxxx",
         "Name[zh_CN]": "复选框",
         "ServiceTypes": [
             "KReport/Element"

@@ -29,7 +29,6 @@
                 "Name[sv]": "Kexi-gruppen",
                 "Name[tr]": "Kexi Ekibi",
                 "Name[uk]": "Команда Kexi",
-                "Name[x-test]": "xxKexi Teamxx",
                 "Name[zh_CN]": "Kexi 团队"
             }
         ],
@@ -58,7 +57,6 @@
         "Description[sv]": "Streckkodselement för rapporter",
         "Description[tr]": "Raporlar için Barkod ögesi",
         "Description[uk]": "Елемент штрихкоду для звітів",
-        "Description[x-test]": "xxBarcode element for Reportsxx",
         "EnabledByDefault": true,
         "Icon": "kreport-barcode-element",
         "Id": "org.kde.kreport.barcode",
@@ -89,7 +87,6 @@
         "Name[sv]": "Streckkod",
         "Name[tr]": "Barkod",
         "Name[uk]": "Штрихкод",
-        "Name[x-test]": "xxBarcodexx",
         "Name[zh_CN]": "条形码",
         "ServiceTypes": [
             "KReport/Element"

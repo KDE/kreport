@@ -29,7 +29,6 @@
                 "Name[sv]": "Kexi-gruppen",
                 "Name[tr]": "Kexi Ekibi",
                 "Name[uk]": "Команда Kexi",
-                "Name[x-test]": "xxKexi Teamxx",
                 "Name[zh_CN]": "Kexi 团队"
             }
         ],
@@ -58,7 +57,6 @@
         "Description[sv]": "Webbläsarelement för rapporter",
         "Description[tr]": "Raporlar için Web Tarayıcı ögesi",
         "Description[uk]": "Елемент засобу для перегляду інтернету для звітів",
-        "Description[x-test]": "xxWeb browser element for Reportsxx",
         "EnabledByDefault": true,
         "Icon": "kreport-web-element",
         "Id": "org.kde.kreport.web",
@@ -89,7 +87,6 @@
         "Name[sv]": "Webbläsare",
         "Name[tr]": "Web Tarayıcısı",
         "Name[uk]": "Переглядач інтернету",
-        "Name[x-test]": "xxWeb browserxx",
         "Name[zh_CN]": "网页浏览器",
         "ServiceTypes": [
             "KReport/Element"

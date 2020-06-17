@@ -29,7 +29,6 @@
                 "Name[sv]": "Kexi-gruppen",
                 "Name[tr]": "Kexi Ekibi",
                 "Name[uk]": "Команда Kexi",
-                "Name[x-test]": "xxKexi Teamxx",
                 "Name[zh_CN]": "Kexi 团队"
             }
         ],
@@ -58,7 +57,6 @@
         "Description[sv]": "Kartelement för rapporter",
         "Description[tr]": "Raporlar için Haritalar ögesi",
         "Description[uk]": "Елемент карти для звітів",
-        "Description[x-test]": "xxMaps element for Reportsxx",
         "EnabledByDefault": true,
         "Icon": "kreport-maps-element",
         "Id": "org.kde.kreport.maps",
@@ -89,7 +87,6 @@
         "Name[sv]": "Kartor",
         "Name[tr]": "Haritalar",
         "Name[uk]": "Карти",
-        "Name[x-test]": "xxMapsxx",
         "Name[zh_CN]": "映射",
         "ServiceTypes": [
             "KReport/Element"

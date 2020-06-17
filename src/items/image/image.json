@@ -29,7 +29,6 @@
                 "Name[sv]": "Kexi-gruppen",
                 "Name[tr]": "Kexi Ekibi",
                 "Name[uk]": "Команда Kexi",
-                "Name[x-test]": "xxKexi Teamxx",
                 "Name[zh_CN]": "Kexi 团队"
             }
         ],
@@ -58,7 +57,6 @@
         "Description[sv]": "Bildelement för rapporter",
         "Description[tr]": "Raporlar için Resim ögesi",
         "Description[uk]": "Елемент зображення для звітів",
-        "Description[x-test]": "xxImage element for Reportsxx",
         "EnabledByDefault": true,
         "Icon": "kreport-image-element",
         "Id": "org.kde.kreport.image",
@@ -89,7 +87,6 @@
         "Name[sv]": "Bild",
         "Name[tr]": "Resim",
         "Name[uk]": "Зображення",
-        "Name[x-test]": "xxImagexx",
         "Name[zh_CN]": "图像",
         "ServiceTypes": [
             "KReport/Element"
