@@ -29,6 +29,7 @@
                 "Name[sv]": "Kexi-gruppen",
                 "Name[tr]": "Kexi Ekibi",
                 "Name[uk]": "Команда Kexi",
+                "Name[x-test]": "xxKexi Teamxx",
                 "Name[zh_CN]": "Kexi 团队"
             }
         ],
@@ -57,6 +58,7 @@
         "Description[sv]": "Etikettelement för rapporter",
         "Description[tr]": "Raporlar için Etiket ögesi",
         "Description[uk]": "Елемент мітки для звітів",
+        "Description[x-test]": "xxLabel element for Reportsxx",
         "EnabledByDefault": true,
         "Icon": "kreport-label-element",
         "Id": "org.kde.kreport.label",
@@ -87,6 +89,7 @@
         "Name[sv]": "Etikett",
         "Name[tr]": "Etiket",
         "Name[uk]": "Мітка",
+        "Name[x-test]": "xxLabelxx",
         "Name[zh_CN]": "标签",
         "ServiceTypes": [
             "KReport/Element"

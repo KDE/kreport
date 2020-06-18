@@ -29,6 +29,7 @@
                 "Name[sv]": "Kexi-gruppen",
                 "Name[tr]": "Kexi Ekibi",
                 "Name[uk]": "Команда Kexi",
+                "Name[x-test]": "xxKexi Teamxx",
                 "Name[zh_CN]": "Kexi 团队"
             }
         ],
@@ -57,6 +58,7 @@
         "Description[sv]": "Fältelement för rapporter",
         "Description[tr]": "Raporlar için giriş ögesi",
         "Description[uk]": "Елемент поля для звітів",
+        "Description[x-test]": "xxField element for Reportsxx",
         "EnabledByDefault": true,
         "Icon": "kreport-field-element",
         "Id": "org.kde.kreport.field",
@@ -87,6 +89,7 @@
         "Name[sv]": "Fält",
         "Name[tr]": "Giriş",
         "Name[uk]": "Поле",
+        "Name[x-test]": "xxFieldxx",
         "Name[zh_CN]": "字段",
         "ServiceTypes": [
             "KReport/Element"

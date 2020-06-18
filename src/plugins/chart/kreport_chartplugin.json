@@ -29,6 +29,7 @@
                 "Name[sv]": "Kexi-gruppen",
                 "Name[tr]": "Kexi Ekibi",
                 "Name[uk]": "Команда Kexi",
+                "Name[x-test]": "xxKexi Teamxx",
                 "Name[zh_CN]": "Kexi 团队"
             }
         ],
@@ -57,6 +58,7 @@
         "Description[sv]": "Diagramelement för rapporter",
         "Description[tr]": "Raporlar için Grafik ögesi",
         "Description[uk]": "Елемент діаграми для звітів",
+        "Description[x-test]": "xxChart element for Reportsxx",
         "EnabledByDefault": true,
         "Icon": "report-chart-element",
         "Id": "org.kde.kreport.chart",
@@ -86,6 +88,7 @@
         "Name[sv]": "Diagram",
         "Name[tr]": "Grafik",
         "Name[uk]": "Діаграма",
+        "Name[x-test]": "xxChartxx",
         "Name[zh_CN]": "图表",
         "ServiceTypes": [
             "KReport/Element"
