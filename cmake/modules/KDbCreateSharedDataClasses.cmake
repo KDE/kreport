@@ -23,7 +23,7 @@ macro(KDB_CREATE_SHARED_DATA_CLASSES)
     list(GET _args 1 PREFIX)
     list(REMOVE_AT _args 0 1)
     # message(STATUS "OUTPUT_VAR: ${OUTPUT_VAR} ${_args}")
-    find_package(PythonInterp 2.6)
+    find_package(PythonInterp)
     set_package_properties(PythonInterp PROPERTIES DESCRIPTION "Python language interpreter"
                            URL "https://www.python.org" TYPE REQUIRED
                            PURPOSE "Required by the Shared Data Classes (SDC) tool")
