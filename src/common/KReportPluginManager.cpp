@@ -21,11 +21,13 @@
 #include "KReportPluginManager.h"
 #include "KReportPluginManagerPrivate.h"
 #include "KReportPluginMetaData.h"
-#include "KReportJsonTrader_p.h"
 #include "KReportUtils_p.h"
 
 #include "kreport_debug.h"
 #include <QAction>
+
+#include <KPluginMetaData>
+#include <KPluginLoader>
 
 //Include the static items
 #include "../items/label/KReportLabelPlugin.h"
@@ -173,13 +175,11 @@ void KReportPluginManager::Private::findPlugins()
     KREPORT_ADD_BUILTIN_PLUGIN(KReportTextPlugin);
 
     //kreportDebug() << "Load all plugins";
-    const QList<QPluginLoader*> offers = KReportJsonTrader::self()->query(QLatin1String("KReport/Element"));
+    const QVector<KPluginMetaData> metaDataList = KPluginLoader::findPlugins(QStringLiteral(KREPORT_BASE_NAME_LOWER));
     const QString expectedVersion = QString::fromLatin1("%1.%2")
             .arg(KREPORT_STABLE_VERSION_MAJOR).arg(KREPORT_STABLE_VERSION_MINOR);
-    foreach(QPluginLoader *loader, offers) {
-        //QJsonObject json = loader->metaData();
-        //kreportDebug() << json;
-        //! @todo check version
+    for (const KPluginMetaData &pluginMetaData : metaDataList) {
+        auto *loader = new QPluginLoader(pluginMetaData.fileName());
         QScopedPointer<KReportPluginEntry> entry(new KReportPluginEntry);
         entry->setMetaData(loader);
         const KReportPluginMetaData *metaData = entry->metaData();

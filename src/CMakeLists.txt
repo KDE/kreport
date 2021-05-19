@@ -19,7 +19,6 @@ set(kreport_LIB_SRCS
     common/KReportItemLine.cpp
     common/KReportRenderObjects.cpp
     common/KReportPluginManager.cpp
-    common/KReportJsonTrader_p.cpp
     common/KReportPluginMetaData.cpp
     common/KReportDataSource.cpp
     common/KReportUtils.cpp
