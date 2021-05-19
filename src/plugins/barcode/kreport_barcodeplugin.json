@@ -102,9 +102,6 @@
         "Name[x-test]": "xxBarcodexx",
         "Name[zh_CN]": "条形码",
         "Name[zh_TW]": "條碼",
-        "ServiceTypes": [
-            "KReport/Element"
-        ],
         "Version": "3.3",
         "Website": "http://kexi-project.org"
     },

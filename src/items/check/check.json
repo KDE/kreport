@@ -101,9 +101,6 @@
         "Name[x-test]": "xxCheck boxxx",
         "Name[zh_CN]": "复选框",
         "Name[zh_TW]": "核取框",
-        "ServiceTypes": [
-            "KReport/Element"
-        ],
         "Version": "3.3",
         "Website": "http://kexi-project.org"
     },

@@ -905,7 +905,6 @@
  \endcode
 
  The JSON file must have all necessary KPlugin metadata.
- It is very important to add "KReport/Element" to "ServiceTypes" or %KReport would not recognize it as a valid plugin.
  Also, "Version" must be set to the major and minor component of %KReport’s stable version.
  For example, in %KReport 3.2.1 "Version" must be set to "3.2".
 
@@ -927,9 +926,6 @@
                  "Id": "org.kde.kreport.rect",
                  "License": "LGPL",
                  "Name": "Rect",
-                 "ServiceTypes": [
-                         "KReport/Element"
-                 ],
                  "Version": "3.3"
          },
          "X-KDE-PluginInfo-LegacyName": "rect",

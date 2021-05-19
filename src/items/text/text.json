@@ -104,9 +104,6 @@
         "Name[x-test]": "xxTextxx",
         "Name[zh_CN]": "文本",
         "Name[zh_TW]": "文字",
-        "ServiceTypes": [
-            "KReport/Element"
-        ],
         "Version": "3.3",
         "Website": "http://kexi-project.org"
     },

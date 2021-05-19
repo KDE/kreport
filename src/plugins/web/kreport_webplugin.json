@@ -102,9 +102,6 @@
         "Name[x-test]": "xxWeb browserxx",
         "Name[zh_CN]": "网页浏览器",
         "Name[zh_TW]": "網頁瀏覽器",
-        "ServiceTypes": [
-            "KReport/Element"
-        ],
         "Version": "3.3",
         "Website": "http://kexi-project.org"
     },

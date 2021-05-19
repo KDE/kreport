@@ -102,9 +102,6 @@
         "Name[x-test]": "xxMapsxx",
         "Name[zh_CN]": "映射",
         "Name[zh_TW]": "地圖",
-        "ServiceTypes": [
-            "KReport/Element"
-        ],
         "Version": "3.3",
         "Website": "http://kexi-project.org"
     },

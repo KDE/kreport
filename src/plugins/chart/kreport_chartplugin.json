@@ -102,9 +102,6 @@
         "Name[x-test]": "xxChartxx",
         "Name[zh_CN]": "图表",
         "Name[zh_TW]": "圖表",
-        "ServiceTypes": [
-            "KReport/Element"
-        ],
         "Version": "3.3",
         "Website": "http://kexi-project.org"
     },

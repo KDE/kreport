@@ -102,9 +102,6 @@
         "Name[x-test]": "xxLabelxx",
         "Name[zh_CN]": "标签",
         "Name[zh_TW]": "標籤",
-        "ServiceTypes": [
-            "KReport/Element"
-        ],
         "Version": "3.3",
         "Website": "http://kexi-project.org"
     },
