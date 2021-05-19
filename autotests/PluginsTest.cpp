@@ -71,7 +71,6 @@ void PluginsTest::listPlugins()
         QVERIFY(!metaData->version().isEmpty());
         QVERIFY(!metaData->website().isEmpty());
         QVERIFY(!metaData->license().isEmpty());
-        QVERIFY(!metaData->serviceTypes().isEmpty());
         QCOMPARE(metaData->isStatic(), metaData->fileName().isEmpty());
     }
 }
