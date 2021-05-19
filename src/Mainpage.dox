@@ -920,7 +920,6 @@
                          }
                  ],
                  "Category": "",
-                 "Dependencies": [],
                  "Description": "Rectangle element for Reports",
                  "Icon": "draw-rectangle",
                  "Id": "org.kde.kreport.rect",

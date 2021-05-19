@@ -37,7 +37,6 @@
             }
         ],
         "Category": "",
-        "Dependencies": [],
         "Description": "Barcode element for Reports",
         "Description[ca@valencia]": "Element de codi de barres per a informes",
         "Description[ca]": "Element de codi de barres per a informes",
