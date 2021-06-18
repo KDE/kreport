@@ -23,7 +23,7 @@
 #include "KReportPluginMetaData.h"
 #include "KReportScriptCheck.h"
 
-KREPORT_PLUGIN_FACTORY(KReportCheckBoxPlugin, "check.json")
+K_PLUGIN_CLASS_WITH_JSON(KReportCheckBoxPlugin, "check.json")
 
 KReportCheckBoxPlugin::KReportCheckBoxPlugin(QObject *parent, const QVariantList &args)
     : KReportPluginInterface(parent, args)

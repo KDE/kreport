@@ -35,7 +35,7 @@ class KReportDesignReadingStatus;
 class KReportDesigner;
 class KReportItemBase;
 
-//! Implementation of report plugin's entry point
+//! deprecated, use K_PLUGIN_CLASS_WITH_JSON instead!
 #define KREPORT_PLUGIN_FACTORY(class_name, name) \
     K_PLUGIN_FACTORY_WITH_JSON(class_name ## Factory, name, registerPlugin<class_name>();)
 

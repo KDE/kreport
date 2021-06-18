@@ -25,7 +25,7 @@
 #include "KReportScriptText.h"
 #endif
 
-KREPORT_PLUGIN_FACTORY(KReportTextPlugin, "text.json")
+K_PLUGIN_CLASS_WITH_JSON(KReportTextPlugin, "text.json")
 
 KReportTextPlugin::KReportTextPlugin(QObject *parent, const QVariantList &args)
     : KReportPluginInterface(parent, args)

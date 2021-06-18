@@ -26,7 +26,7 @@
 #endif
 
 
-KREPORT_PLUGIN_FACTORY(KReportBarcodePlugin, "kreport_barcodeplugin.json")
+K_PLUGIN_CLASS_WITH_JSON(KReportBarcodePlugin, "kreport_barcodeplugin.json")
 
 KReportBarcodePlugin::KReportBarcodePlugin(QObject *parent, const QVariantList &args)
     : KReportPluginInterface(parent, args)

@@ -25,7 +25,7 @@
 #include "KReportScriptField.h"
 #endif
 
-KREPORT_PLUGIN_FACTORY(KReportFieldPlugin, "field.json")
+K_PLUGIN_CLASS_WITH_JSON(KReportFieldPlugin, "field.json")
 
 KReportFieldPlugin::KReportFieldPlugin(QObject *parent, const QVariantList &args)
     : KReportPluginInterface(parent, args)

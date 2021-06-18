@@ -22,7 +22,7 @@
 #include "KReportPluginMetaData.h"
 #include <QIcon>
 
-KREPORT_PLUGIN_FACTORY(KReportWebPlugin, "kreport_webplugin.json")
+K_PLUGIN_CLASS_WITH_JSON(KReportWebPlugin, "kreport_webplugin.json")
 
 KReportWebPlugin::KReportWebPlugin(QObject *parent, const QVariantList &args)
     : KReportPluginInterface(parent)

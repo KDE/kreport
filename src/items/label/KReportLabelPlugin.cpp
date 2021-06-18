@@ -32,7 +32,7 @@
 
 #include <QDomElement>
 
-KREPORT_PLUGIN_FACTORY(KReportLabelPlugin, "label.json")
+K_PLUGIN_CLASS_WITH_JSON(KReportLabelPlugin, "label.json")
 
 KReportLabelPlugin::KReportLabelPlugin(QObject *parent, const QVariantList &args)
     : KReportPluginInterface(parent, args)

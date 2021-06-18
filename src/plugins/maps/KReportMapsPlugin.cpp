@@ -28,7 +28,7 @@
 #include "kreport_debug.h"
 
 
-KREPORT_PLUGIN_FACTORY(KReportMapsPlugin, "kreport_mapsplugin.json")
+K_PLUGIN_CLASS_WITH_JSON(KReportMapsPlugin, "kreport_mapsplugin.json")
 
 KReportMapsPlugin::KReportMapsPlugin(QObject *parent, const QVariantList &args) : KReportPluginInterface(parent)
 {
