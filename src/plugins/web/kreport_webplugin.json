@@ -67,6 +67,7 @@
         "Description[tr]": "Raporlar için Web Tarayıcı ögesi",
         "Description[uk]": "Елемент засобу для перегляду інтернету для звітів",
         "Description[x-test]": "xxWeb browser element for Reportsxx",
+        "Description[zh_CN]": "给报表使用的网页浏览器元素",
         "Description[zh_TW]": "用於報告的網頁瀏覽器元件",
         "EnabledByDefault": true,
         "Icon": "kreport-web-element",

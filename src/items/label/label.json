@@ -67,6 +67,7 @@
         "Description[tr]": "Raporlar için Etiket ögesi",
         "Description[uk]": "Елемент мітки для звітів",
         "Description[x-test]": "xxLabel element for Reportsxx",
+        "Description[zh_CN]": "给报表使用的标签元素",
         "Description[zh_TW]": "用於報告的標籤元件",
         "EnabledByDefault": true,
         "Icon": "kreport-label-element",

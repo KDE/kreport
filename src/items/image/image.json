@@ -67,6 +67,7 @@
         "Description[tr]": "Raporlar için Resim ögesi",
         "Description[uk]": "Елемент зображення для звітів",
         "Description[x-test]": "xxImage element for Reportsxx",
+        "Description[zh_CN]": "给报表使用的图像元素",
         "Description[zh_TW]": "用於報告的影像元件",
         "EnabledByDefault": true,
         "Icon": "kreport-image-element",

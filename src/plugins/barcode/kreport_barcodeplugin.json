@@ -67,6 +67,7 @@
         "Description[tr]": "Raporlar için Barkod ögesi",
         "Description[uk]": "Елемент штрихкоду для звітів",
         "Description[x-test]": "xxBarcode element for Reportsxx",
+        "Description[zh_CN]": "给报表使用的条形码元素",
         "Description[zh_TW]": "用於報告的條碼元件",
         "EnabledByDefault": true,
         "Icon": "kreport-barcode-element",

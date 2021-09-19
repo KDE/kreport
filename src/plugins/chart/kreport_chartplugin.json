@@ -67,6 +67,7 @@
         "Description[tr]": "Raporlar için Grafik ögesi",
         "Description[uk]": "Елемент діаграми для звітів",
         "Description[x-test]": "xxChart element for Reportsxx",
+        "Description[zh_CN]": "给报表使用的图表元素",
         "Description[zh_TW]": "用於報告的圖表元件",
         "EnabledByDefault": true,
         "Icon": "report-chart-element",

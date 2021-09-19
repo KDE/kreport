@@ -67,6 +67,7 @@
         "Description[tr]": "Raporlar için işaret kutusu ögesi",
         "Description[uk]": "Елемент пункту позначки для звітів",
         "Description[x-test]": "xxCheck box element for Reportsxx",
+        "Description[zh_CN]": "KReport给报表使用的复选框元素",
         "Description[zh_TW]": "用於報告的核取框元件",
         "EnabledByDefault": true,
         "Icon": "kreport-checkbox-element",

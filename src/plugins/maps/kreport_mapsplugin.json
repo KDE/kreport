@@ -67,6 +67,7 @@
         "Description[tr]": "Raporlar için Haritalar ögesi",
         "Description[uk]": "Елемент карти для звітів",
         "Description[x-test]": "xxMaps element for Reportsxx",
+        "Description[zh_CN]": "给报表使用的地图元素",
         "Description[zh_TW]": "用於報告的地圖元件",
         "EnabledByDefault": true,
         "Icon": "kreport-maps-element",
