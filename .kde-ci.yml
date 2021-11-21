@@ -10,4 +10,4 @@ Dependencies:
     'frameworks/kconfig': '@stable'
     'frameworks/kguiaddons': '@stable'
     'frameworks/kwidgetsaddons': '@stable'
-    'libraries/kproperty': '@stable'
+    'libraries/kproperty': '@same'
