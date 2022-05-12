@@ -124,7 +124,7 @@ public:
     //! Creates a new instance with data source. Default implementation returns @c nullptr.
     //! @a source is implementation-specific identifier.
     //! Owner of the returned pointer is the caller.
-    virtual Q_REQUIRED_RESULT KReportDataSource* create(const QString &source) const;
+    Q_REQUIRED_RESULT virtual KReportDataSource* create(const QString &source) const;
 
 private:
     Q_DISABLE_COPY(KReportDataSource)
