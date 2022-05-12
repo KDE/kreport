@@ -30,7 +30,7 @@
                 "Name[sk]": "Tím Kexi",
                 "Name[sl]": "Kexi Team",
                 "Name[sv]": "Kexi-gruppen",
-                "Name[tr]": "Kexi Ekibi",
+                "Name[tr]": "Kexi Takımı",
                 "Name[uk]": "Команда Kexi",
                 "Name[x-test]": "xxKexi Teamxx",
                 "Name[zh_CN]": "Kexi 团队"
@@ -63,7 +63,7 @@
         "Description[sk]": "Prvok webového prehliadača pre správy",
         "Description[sl]": "Spletni brskalnik za Reports",
         "Description[sv]": "Webbläsarelement för rapporter",
-        "Description[tr]": "Raporlar için Web Tarayıcı ögesi",
+        "Description[tr]": "Raporlar için web tarayıcı ögesi",
         "Description[uk]": "Елемент засобу для перегляду інтернету для звітів",
         "Description[x-test]": "xxWeb browser element for Reportsxx",
         "Description[zh_CN]": "给报表使用的网页浏览器元素",
