@@ -41,13 +41,6 @@ else()
     set(PROJECT_STABLE_VERSION_PATCH ${PROJECT_VERSION_PATCH})
 endif()
 
-if(WIN32)
-    set(LIB_INSTALL_DIR ${LIB_INSTALL_DIR}
-                        RUNTIME DESTINATION ${BIN_INSTALL_DIR}
-                        LIBRARY ${INSTALL_TARGETS_DEFAULT_ARGS}
-                        ARCHIVE ${INSTALL_TARGETS_DEFAULT_ARGS} )
-endif()
-
 set(ICONS_INSTALL_DIR "${DATA_INSTALL_DIR}/${PROJECT_NAME_LOWER}${PROJECT_STABLE_VERSION_MAJOR}/icons")
 
 # Fetches git revision and branch from the source dir of the current build if possible.
