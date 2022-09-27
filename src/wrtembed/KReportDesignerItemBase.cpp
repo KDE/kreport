@@ -30,10 +30,10 @@ class Q_DECL_HIDDEN KReportDesignerItemBase::Private
 public:
     Private();
     ~Private();
-    
+
     KReportDesigner *reportDesigner;
     KReportItemBase *item;
-    QString renderText;   
+    QString renderText;
 };
 
 KReportDesignerItemBase::Private::Private()
@@ -58,9 +58,7 @@ KReportDesignerItemBase::KReportDesignerItemBase(KReportDesigner *r, KReportItem
 
 void KReportDesignerItemBase::buildXML(QGraphicsItem * item, QDomDocument *doc, QDomElement *parent)
 {
-    KReportDesignerItemBase *re = nullptr;
-    re = dynamic_cast<KReportDesignerItemBase*>(item);
-
+    KReportDesignerItemBase *re = dynamic_cast<KReportDesignerItemBase*>(item);
     if (re) {
         re->buildXML(doc, parent);
     }
