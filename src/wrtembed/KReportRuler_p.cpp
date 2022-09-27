@@ -481,7 +481,6 @@ void HorizontalPaintingStrategy::drawMeasurements(const KReportRuler::Private *d
     int halfStepCount = (start / qRound(numberStepPixel * 0.5)) + 1;
     int quarterStepCount = (start / qRound(numberStepPixel * 0.25)) + 1;
 
-    int pos = 0;
     const QPen numberPen(d->ruler->palette().color(QPalette::Text));
     const QPen markerPen(d->ruler->palette().color(QPalette::Inactive, QPalette::Text));
     painter->setPen(markerPen);
@@ -498,7 +497,7 @@ void HorizontalPaintingStrategy::drawMeasurements(const KReportRuler::Private *d
         numberStep * 0.25 * quarterStepCount)));
 
     for(int i = start; i < len; ++i) {
-        pos = i - start;
+        const int pos = i - start;
 
         if(i == nextStep) {
             if(pos != 0)
@@ -719,9 +718,8 @@ void VerticalPaintingStrategy::drawMeasurements(const KReportRuler::Private *d, 
     int nextQuarterStep = qRound(d->viewConverter->documentToViewY(d->unit.fromUserValue(
         numberStep * 0.25 * quarterStepCount)));
 
-    int pos = 0;
     for(int i = start; i < len; ++i) {
-        pos = i - start;
+        const int pos = i - start;
 
         if(i == nextStep) {
             painter->save();
@@ -897,8 +895,9 @@ KReportRuler::Private::Private(KReportRuler *parent,
     selectOffset(0),
     tabChooser(nullptr),
     normalPaintingStrategy(o == Qt::Horizontal ?
-            (PaintingStrategy*)new HorizontalPaintingStrategy() : (PaintingStrategy*)new VerticalPaintingStrategy()),
-    distancesPaintingStrategy((PaintingStrategy*)new HorizontalDistancesPaintingStrategy()),
+              static_cast<PaintingStrategy*>(new HorizontalPaintingStrategy())
+            : static_cast<PaintingStrategy*>(new VerticalPaintingStrategy())),
+    distancesPaintingStrategy(new HorizontalDistancesPaintingStrategy()),
     paintingStrategy(normalPaintingStrategy),
     ruler(parent)
 {
