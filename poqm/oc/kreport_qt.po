@@ -1,0 +1,4089 @@
+# translation of koffice.po to Occitan (lengadocian)
+# Copyright (C) 2008 This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: koffice\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2008-08-05 22:28+0200\n"
+"Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
+"Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
+"Language: oc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: KBabel 1.11.4\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+#, fuzzy
+#| msgid "Save Document"
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "Enregistrar lo document"
+
+#: common/KReportDesign.cpp:159
+#, fuzzy
+#| msgid "Save Document"
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Enregistrar lo document"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Nom"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Object"
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Objècte"
+
+#: common/KReportItemBase.cpp:78
+#, fuzzy
+#| msgid "Position:"
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Posicion :"
+
+#: common/KReportItemBase.cpp:79
+#, fuzzy
+#| msgid "Time:"
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Talha :"
+
+#: common/KReportItemBase.cpp:112
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Suprimir"
+
+#: common/KReportItemLine.cpp:80
+#, fuzzy
+#| msgid "Position:"
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "Posicion :"
+
+#: common/KReportItemLine.cpp:81
+#, fuzzy
+#| msgid "Position:"
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Posicion :"
+
+#: common/KReportItemLine.cpp:83
+#, fuzzy
+#| msgid "Lighten"
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "Esclarzir"
+
+#: common/KReportItemLine.cpp:85
+#, fuzzy
+#| msgid "Color"
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Color"
+
+#: common/KReportItemLine.cpp:86
+#, fuzzy
+#| msgid "Insert Break"
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Inserir un saut"
+
+#: common/KReportSectionData.cpp:164
+#, fuzzy
+#| msgid "Actions"
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Accions"
+
+#: common/KReportSectionData.cpp:166
+#, fuzzy
+#| msgid "Height:"
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "Nautor"
+
+#: common/KReportSectionData.cpp:170
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Color de &fons :"
+
+#: common/KReportUnit.cpp:136
+#, fuzzy
+#| msgid "Add Group"
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Apondre un grop"
+
+#: common/KReportUnit.cpp:138
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr ""
+
+#: common/KReportUnit.cpp:140
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr ""
+
+#: common/KReportUnit.cpp:142
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr ""
+
+#: common/KReportUnit.cpp:144
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr ""
+
+#: common/KReportUnit.cpp:146
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr ""
+
+#: common/KReportUnit.cpp:148
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr ""
+
+#: common/KReportUnit.cpp:150
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr ""
+
+#: common/KReportUnit.cpp:152
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr ""
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Close"
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Crotz"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:80
+#, fuzzy
+#| msgid "Styles"
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "Estils"
+
+#: items/check/KReportItemCheck.cpp:84
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Color de &fons :"
+
+#: items/check/KReportItemCheck.cpp:86
+#, fuzzy
+#| msgid "Lighten"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "Esclarzir"
+
+#: items/check/KReportItemCheck.cpp:88
+#, fuzzy
+#| msgid "Color"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Color"
+
+#: items/check/KReportItemCheck.cpp:89
+#, fuzzy
+#| msgid "Insert Break"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Inserir un saut"
+
+#: items/check/KReportItemCheck.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Valor"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Valor"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Esquèrra:"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Comment"
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Comentari"
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Right:"
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Drecha:"
+
+#: items/field/KReportItemField.cpp:96
+#, fuzzy
+#| msgid "Horizontal"
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Orizontal"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Top:"
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "Amont:"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Bottom:"
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Aval:"
+
+#: items/field/KReportItemField.cpp:102
+#, fuzzy
+#| msgid "Horizontal"
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Orizontal"
+
+#: items/field/KReportItemField.cpp:104
+#, fuzzy
+#| msgid "Format"
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Format"
+
+#: items/field/KReportItemField.cpp:106
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Color de &fons :"
+
+#: items/field/KReportItemField.cpp:107
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Color de &fons :"
+
+#: items/field/KReportItemField.cpp:109
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Color de &fons :"
+
+#: items/field/KReportItemField.cpp:114
+#, fuzzy
+#| msgid "Lighten"
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "Esclarzir"
+
+#: items/field/KReportItemField.cpp:116
+#, fuzzy
+#| msgid "Color"
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Color"
+
+#: items/field/KReportItemField.cpp:117
+#, fuzzy
+#| msgid "Insert Break"
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Inserir un saut"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:120
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgid "Street:"
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Carrièra :"
+
+#: items/image/KReportItemImage.cpp:120
+#, fuzzy
+#| msgid "Resize"
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "Redimensionar"
+
+#: items/image/KReportItemImage.cpp:121
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Valor"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:91
+#, fuzzy
+#| msgid "Collection"
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Colleccion"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Esquèrra:"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Comment"
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Comentari"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Right:"
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Drecha:"
+
+#: items/label/KReportItemLabel.cpp:96
+#, fuzzy
+#| msgid "Horizontal"
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Orizontal"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Top:"
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "Amont:"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Bottom:"
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Aval:"
+
+#: items/label/KReportItemLabel.cpp:102
+#, fuzzy
+#| msgid "Horizontal"
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Orizontal"
+
+#: items/label/KReportItemLabel.cpp:104
+#, fuzzy
+#| msgid "Format"
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Format"
+
+#: items/label/KReportItemLabel.cpp:106
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Color de &fons :"
+
+#: items/label/KReportItemLabel.cpp:107
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Color de &fons :"
+
+#: items/label/KReportItemLabel.cpp:109
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Color de &fons :"
+
+#: items/label/KReportItemLabel.cpp:114
+#, fuzzy
+#| msgid "Lighten"
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "Esclarzir"
+
+#: items/label/KReportItemLabel.cpp:116
+#, fuzzy
+#| msgid "Color"
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Color"
+
+#: items/label/KReportItemLabel.cpp:117
+#, fuzzy
+#| msgid "Insert Break"
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Inserir un saut"
+
+#: items/text/KReportItemText.cpp:115
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Valor"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Esquèrra:"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Comment"
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Comentari"
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Right:"
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Drecha:"
+
+#: items/text/KReportItemText.cpp:121
+#, fuzzy
+#| msgid "Horizontal"
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Orizontal"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Top:"
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "Amont:"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Bottom:"
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Aval:"
+
+#: items/text/KReportItemText.cpp:127
+#, fuzzy
+#| msgid "Horizontal"
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Orizontal"
+
+#: items/text/KReportItemText.cpp:129
+#, fuzzy
+#| msgid "Format"
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Format"
+
+#: items/text/KReportItemText.cpp:131
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Color de &fons :"
+
+#: items/text/KReportItemText.cpp:132
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Color de &fons :"
+
+#: items/text/KReportItemText.cpp:134
+#, fuzzy
+#| msgid "Lighten"
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "Esclarzir"
+
+#: items/text/KReportItemText.cpp:136
+#, fuzzy
+#| msgid "Color"
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Color"
+
+#: items/text/KReportItemText.cpp:137
+#, fuzzy
+#| msgid "Insert Break"
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Inserir un saut"
+
+#: items/text/KReportItemText.cpp:138
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Color de &fons :"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+#, fuzzy
+#| msgid "Internal error"
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Error intèrna"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:676
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Previsualizacion"
+
+#: wrtembed/KReportDesigner.cpp:680
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Previsualizacion"
+
+#: wrtembed/KReportDesigner.cpp:684
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Previsualizacion"
+
+#: wrtembed/KReportDesigner.cpp:688
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Previsualizacion"
+
+#: wrtembed/KReportDesigner.cpp:692
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Previsualizacion"
+
+#: wrtembed/KReportDesigner.cpp:696
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "Pè"
+
+#: wrtembed/KReportDesigner.cpp:700
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "Pè"
+
+#: wrtembed/KReportDesigner.cpp:704
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "Pè"
+
+#: wrtembed/KReportDesigner.cpp:708
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "Pè"
+
+#: wrtembed/KReportDesigner.cpp:712
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "Pè"
+
+#: wrtembed/KReportDesigner.cpp:716
+#, fuzzy
+#| msgid "Header"
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "Encap"
+
+#: wrtembed/KReportDesigner.cpp:720
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "Pè"
+
+#: wrtembed/KReportDesigner.cpp:808
+#, fuzzy
+#| msgid "Export"
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "Exportar"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Title:"
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Títol:"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Pè"
+
+#: wrtembed/KReportDesigner.cpp:818
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Talha de la pagina"
+
+#: wrtembed/KReportDesigner.cpp:821
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Talha de la pagina"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "Portrait"
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "Contrast"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "Landscape"
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "Païsatge"
+
+#: wrtembed/KReportDesigner.cpp:827
+#, fuzzy
+#| msgid "Orientation"
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "Orientacion"
+
+#: wrtembed/KReportDesigner.cpp:832
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Talha de la pagina"
+
+#: wrtembed/KReportDesigner.cpp:833
+#, fuzzy
+#| msgid "Snap to Grid"
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Alinhar s~us la gresilha"
+
+#: wrtembed/KReportDesigner.cpp:834
+#, fuzzy
+#| msgid "Snap to Grid"
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Alinhar s~us la gresilha"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:841
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Marges"
+
+#: wrtembed/KReportDesigner.cpp:843
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Marges"
+
+#: wrtembed/KReportDesigner.cpp:845
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Marges"
+
+#: wrtembed/KReportDesigner.cpp:847
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Marges"
+
+#: wrtembed/KReportDesigner.cpp:869
+#, fuzzy
+#| msgid "Object"
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Objècte"
+
+#: wrtembed/KReportDesigner.cpp:1067
+#, fuzzy
+#| msgid "Custom"
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Personalizat"
+
+#: wrtembed/KReportDesigner.cpp:1071
+#, fuzzy
+#| msgid "Blue"
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Blau"
+
+#: wrtembed/KReportDesigner.cpp:1076
+#, fuzzy
+#| msgid "Date"
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Data"
+
+#: wrtembed/KReportDesigner.cpp:1087
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Suprimir"
+
+#: wrtembed/KReportDesigner.cpp:1129
+#, fuzzy
+#| msgid "Lines"
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Linhas"
+
+#: wrtembed/KReportDesigner.cpp:1476
+#, fuzzy
+#| msgid "Lines"
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Linhas"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1525
+#, fuzzy
+#| msgid "Blue"
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "Blau"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1531
+#, fuzzy
+#| msgid "Date"
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "Data"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1544
+#, fuzzy
+#| msgid "Collection"
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Colleccion"
+
+#: wrtembed/KReportDesigner.cpp:1547
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1549
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr ""
+
+#: wrtembed/KReportDesignerSection.cpp:126
+#, fuzzy
+#| msgid "Make Default"
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "Defaut"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+#, fuzzy
+#| msgid "Actions"
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Accions"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+#, fuzzy
+#| msgid "Columns:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Colomnas :"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+#, fuzzy
+#| msgid "Street:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Carrièra :"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+#, fuzzy
+#| msgid "Snap to Grid"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Alinhar s~us la gresilha"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+#, fuzzy
+#| msgid "Snap to Grid"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Alinhar s~us la gresilha"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+
+#: wrtembed/KReportRuler_p.cpp:1472
+#, fuzzy
+#| msgid "First line indent"
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Retirament de primièra linha"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Esquèrra:"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+#, fuzzy
+#| msgid "Right:"
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Drecha:"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.cpp:74
+#, fuzzy
+#| msgid "Add..."
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "Apondre..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Suprimir"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+#, fuzzy
+#| msgid "Delete Page"
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Suprimir pagina"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+#, fuzzy
+#| msgid "Delete Page"
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Suprimir pagina"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.cpp:312
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.ui:29
+#, fuzzy
+#| msgid "Snap to Grid"
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Alinhar s~us la gresilha"
+
+#: wrtembed/KReportSectionEditor.ui:36
+#, fuzzy
+#| msgid "Snap to Grid"
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Alinhar s~us la gresilha"
+
+#: wrtembed/KReportSectionEditor.ui:43
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Previsualizacion"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+#, fuzzy
+#| msgid "Delete Page"
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "Suprimir pagina"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+#, fuzzy
+#| msgid "Page"
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Pagina"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+#, fuzzy
+#| msgid "Page"
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Pagina"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+#, fuzzy
+#| msgid "Delete Page"
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Suprimir pagina"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+#, fuzzy
+#| msgid "Page"
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Pagina"
+
+#: wrtembed/KReportSectionEditor.ui:130
+#, fuzzy
+#| msgid "Footer"
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "Pè"
+
+#: wrtembed/KReportSectionEditor.ui:217
+#, fuzzy
+#| msgid "Actions"
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Accions"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, fuzzy, qt-format
+#| msgid "%1%"
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+#, fuzzy
+#| msgid "Insert Break"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Inserir un saut"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+#, fuzzy
+#| msgid "Page"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Pagina"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr ""
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+#, fuzzy
+#| msgid "Insert Break"
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "Personalizat"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B6"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B5"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B4"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B0"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B1"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B2"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B3"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "Comma"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "Virgula"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Suprimir"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Suprimir"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Suprimir"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Ecran"
+
+#, fuzzy
+#~| msgid "Height:"
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "Nautor"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Color de &fons :"
+
+#, fuzzy
+#~| msgid "Position:"
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "Posicion :"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "Talha :"
+
+#, fuzzy
+#~| msgid "Height:"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "Nautor"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "Color de &fons :"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Weight"
+#~ msgstr "Esclarzir"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "Color"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Suprimir"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "Valor"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "Color de &fons :"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "Color de &fons :"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Weight"
+#~ msgstr "Esclarzir"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "Color"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Suprimir"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "Valor"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "Esquèrra:"
+
+#, fuzzy
+#~| msgid "Comment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "Comentari"
+
+#, fuzzy
+#~| msgid "Right:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "Drecha:"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Orizontal"
+
+#, fuzzy
+#~| msgid "Top:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "Amont:"
+
+#, fuzzy
+#~| msgid "Bottom:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "Aval:"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Orizontal"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "Format"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "Color de &fons :"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "Color de &fons :"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "Color de &fons :"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Weight"
+#~ msgstr "Esclarzir"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "Color"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Suprimir"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "Valor"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "Esquèrra:"
+
+#, fuzzy
+#~| msgid "Comment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "Comentari"
+
+#, fuzzy
+#~| msgid "Right:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "Drecha:"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Orizontal"
+
+#, fuzzy
+#~| msgid "Top:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "Amont:"
+
+#, fuzzy
+#~| msgid "Bottom:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "Aval:"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Orizontal"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "Format"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "Color de &fons :"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "Color de &fons :"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Weight"
+#~ msgstr "Esclarzir"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "Color"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "Color de &fons :"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "Suprimir"
+
+#, fuzzy
+#~| msgid "Position:"
+#~ msgid "Precision:"
+#~ msgstr "Posicion :"
+
+#~ msgid "Curve"
+#~ msgstr "Corba"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Creating table failed."
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Begin transaction failed."
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Unknown error."
+#~ msgstr "Error desconeguda"
+
+#, fuzzy
+#~| msgid "File not found"
+#~ msgid "Field not found"
+#~ msgstr "Impossible de trobar lo fichièr"
+
+#, fuzzy
+#~| msgid "File not found"
+#~ msgid "Table not found"
+#~ msgstr "Impossible de trobar lo fichièr"
+
+#, fuzzy
+#~| msgid "Revision number:"
+#~ msgid "Short Integer Number"
+#~ msgstr "Numerò de revision :"
+
+#, fuzzy
+#~| msgid "Revision number:"
+#~ msgid "Integer Number"
+#~ msgstr "Numerò de revision :"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgid "Yes/No Value"
+#~ msgstr "Aumentar l'alinèa"
+
+#~ msgid "Date"
+#~ msgstr "Data"
+
+#, fuzzy
+#~| msgid "Date & Time"
+#~ msgid "Date and Time"
+#~ msgstr "Data e ora"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Time"
+#~ msgstr "Títol:"
+
+#, fuzzy
+#~| msgid "Revision number:"
+#~ msgid "Single Precision Number"
+#~ msgstr "Numerò de revision :"
+
+#, fuzzy
+#~| msgid "Revision number:"
+#~ msgid "Double Precision Number"
+#~ msgstr "Numerò de revision :"
+
+#~ msgid "Text"
+#~ msgstr "Tèxt"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Long Text"
+#~ msgstr "Tèxt"
+
+#~ msgid "Object"
+#~ msgstr "Objècte"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Floating Point Number"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Date & Time"
+#~ msgid "Date/Time"
+#~ msgstr "Data e ora"
+
+#, fuzzy
+#~| msgid "Internal error"
+#~ msgid "Syntax error."
+#~ msgstr "Error intèrna"
+
+#, fuzzy
+#~| msgid "Error!"
+#~ msgid "Error"
+#~ msgstr "Enganada !"
+
+#, fuzzy
+#~| msgid "Internal error"
+#~ msgid "Error near \"%1\"."
+#~ msgstr "Error intèrna"
+
+#, fuzzy
+#~| msgid "Revision number:"
+#~ msgid "Server's port number"
+#~ msgstr "Numerò de revision :"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Record inserting failed."
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Record deleting failed."
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Collection"
+#~ msgid "Test Connection"
+#~ msgstr "Colleccion"
+
+#, fuzzy
+#~| msgid "Revision number:"
+#~ msgid "Number"
+#~ msgstr "Numerò de revision :"
+
+#, fuzzy
+#~| msgid "Page"
+#~ msgid "Image"
+#~ msgstr "Pagina"
+
+#, fuzzy
+#~| msgid "Change"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr "Cambiar"
+
+#, fuzzy
+#~| msgid "Margins"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "Marges"
+
+#, fuzzy
+#~| msgid "Margins"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "Marges"
+
+#, fuzzy
+#~| msgid "Remove Group"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove points"
+#~ msgstr "Suprimir un grop"
+
+#, fuzzy
+#~| msgid "Opacity"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set point type"
+#~ msgstr "Opacitat"
+
+#, fuzzy
+#~| msgid "Change"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to curves"
+#~ msgstr "Cambiar"
+
+#, fuzzy
+#~| msgid "Change"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to lines"
+#~ msgstr "Cambiar"
+
+#, fuzzy
+#~| msgid "Shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Align shapes"
+#~ msgstr "Forma"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr "Color de &fons :"
+
+#, fuzzy
+#~| msgid "Shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Clip Shape"
+#~ msgstr "Forma"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shape"
+#~ msgid_plural "Delete shapes"
+#~ msgstr[0] "Suprimir pagina"
+#~ msgstr[1] "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Distribute shapes"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Actions"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr "Accions"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move shapes"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reorder shapes"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Change"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Shape RunAround"
+#~ msgstr "Cambiar"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Shear shapes"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Resize"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Resize shapes"
+#~ msgstr "Redimensionar"
+
+#, fuzzy
+#~| msgid "Opacity"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr "Opacitat"
+
+#, fuzzy
+#~| msgid "Shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shape"
+#~ msgstr "Forma"
+
+#, fuzzy
+#~| msgid "Shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shapes"
+#~ msgstr "Forma"
+
+#, fuzzy
+#~| msgid "Remove Group"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove subpath"
+#~ msgstr "Suprimir un grop"
+
+#~ msgid "Standard"
+#~ msgstr "Estandard"
+
+#~ msgid "Lines"
+#~ msgstr "Linhas"
+
+#~ msgid "Type:"
+#~ msgstr "Mena :"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Tie"
+#~ msgstr "Títol:"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Simple path shape"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Shapes"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgid "Nodes"
+#~ msgstr "Pas cap"
+
+#, fuzzy
+#~| msgid "Underline"
+#~ msgid "Guide lines"
+#~ msgstr "Soslinhat"
+
+#~ msgid "Pan"
+#~ msgstr "Pan"
+
+#, fuzzy
+#~| msgid "Change"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Segment"
+#~ msgstr "Cambiar"
+
+#, fuzzy
+#~| msgid "Curve"
+#~ msgid "Line/Curve"
+#~ msgstr "Corba"
+
+#, fuzzy
+#~| msgid "Warning"
+#~ msgid "Path editing"
+#~ msgstr "En espèra"
+
+#~ msgid "Zoom"
+#~ msgstr "Zoom"
+
+#, fuzzy
+#~| msgid "Zoom"
+#~ msgid "Zoom In"
+#~ msgstr "Agrandir lo zoom"
+
+#, fuzzy
+#~| msgid "Zoom"
+#~ msgid "Zoom Out"
+#~ msgstr "Reduire el zoom"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Replace"
+#~ msgstr "Remplaçar"
+
+#~ msgid "Save"
+#~ msgstr "Enregistrar"
+
+#~ msgid "Add"
+#~ msgstr "Apondre"
+
+#~ msgid "Script"
+#~ msgstr "Escript"
+
+#~ msgid "Collection"
+#~ msgstr "Colleccion"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master slide"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master page"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Change"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "Cambiar"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display page background"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Show master shapes"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Hide master shapes"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] "Suprimir pagina"
+#~ msgstr[1] "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "Suprimir pagina"
+#~ msgstr[1] "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "Suprimir pagina"
+#~ msgstr[1] "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] "Suprimir pagina"
+#~ msgstr[1] "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Snap to Grid"
+#~ msgid "Grid"
+#~ msgstr "Alinhar s~us la gresilha"
+
+#, fuzzy
+#~| msgid "Document"
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "Document"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Document Settings"
+#~ msgstr "Document d'informacion"
+
+#, fuzzy
+#~| msgid "Author"
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Master Slide"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Master Page"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Page"
+#~ msgid "Page  %1"
+#~ msgstr "Pagina %1"
+
+#~ msgid "Layer"
+#~ msgstr "Jaç"
+
+#~ msgid "Group"
+#~ msgstr "Grop"
+
+#~ msgid "Shape"
+#~ msgstr "Forma"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "Pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Slide"
+#~ msgstr "Talha :"
+
+#~ msgid "Visible"
+#~ msgstr "Visible"
+
+#~ msgid "Locked"
+#~ msgstr "Varrolhat"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reparent shapes"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "&Move Here"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Green"
+#~ msgid "&Copy Here"
+#~ msgstr "Vèrd"
+
+#, fuzzy
+#~| msgid "Change"
+#~ msgid "C&ancel"
+#~ msgstr "Cambiar"
+
+#~ msgid "Document"
+#~ msgstr "Document"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Page"
+#~ msgid "Page %1"
+#~ msgstr "Pagina %1"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] "Suprimir pagina"
+#~ msgstr[1] "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] "Suprimir pagina"
+#~ msgstr[1] "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgid "D&elete"
+#~ msgstr "Suprimir"
+
+#~ msgid "Delete Page"
+#~ msgstr "Suprimir pagina"
+
+#~ msgid "Variable"
+#~ msgstr "Variable"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Document..."
+#~ msgstr "Importar un document"
+
+#~ msgid "Import Document"
+#~ msgstr "Importar un document"
+
+#, fuzzy
+#~| msgid "Change"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr "Cambiar"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgid "Background"
+#~ msgstr "Color de &fons :"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgid "Page Background"
+#~ msgstr "Color de &fons :"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page Design"
+#~ msgstr "Previsualizacion"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Use background of master page"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Use background of master slide"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Display shapes of master page"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Display shapes of master slide"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change slide background image"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page background image"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Slide %1/%2"
+#~ msgstr "Talha :"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Master Page %1/%2"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Page"
+#~ msgid "Page %1/%2"
+#~ msgstr "Pagina %1"
+
+#, fuzzy
+#~| msgid "File"
+#~ msgid "Field"
+#~ msgstr "Fixe"
+
+#, fuzzy
+#~| msgid "Layer"
+#~ msgid "Label"
+#~ msgstr "Jaç"
+
+#, fuzzy
+#~| msgid "%1%"
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1 %"
+
+#, fuzzy
+#~| msgid "Change"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "Cambiar"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "Suprimir"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "Tèxt"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "Suprimir"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Right"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Below"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List Numbering"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "Format"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Date"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "Data"
+
+#, fuzzy
+#~| msgid "Actions"
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "Accions"
+
+#~ msgctxt "Underline Style"
+#~ msgid "None"
+#~ msgstr "Pas cap"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "Simple"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "Doble"
+
+#, fuzzy
+#~| msgid "Add Bookmark"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "Apondre un favorit"
+
+#, fuzzy
+#~| msgid "Position:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "Posicion :"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Margins"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "Marges"
+
+#, fuzzy
+#~| msgid "Vertical"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "Vertical"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Position:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "Posicion :"
+
+#, fuzzy
+#~| msgid "Bold"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr "Gras"
+
+#, fuzzy
+#~| msgid "Italic"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "Italic"
+
+#, fuzzy
+#~| msgid "Underline"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "Soslinhat"
+
+#, fuzzy
+#~| msgid "Change"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr "Cambiar"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr "Orizontal"
+
+#, fuzzy
+#~| msgid "Decrease Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "Reduire l'alinèa"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "Aumentar l'alinèa"
+
+#, fuzzy
+#~| msgid "Decrease Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "Reduire l'alinèa"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "Aumentar l'alinèa"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr "Format"
+
+#, fuzzy
+#~| msgid "Opacity"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr "Opacitat"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr "Color de &fons :"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "Format"
+
+#, fuzzy
+#~| msgid "Make Default"
+#~ msgid "Default"
+#~ msgstr "Defaut"
+
+#, fuzzy
+#~| msgid "Red"
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "Roge"
+
+#, fuzzy
+#~| msgid "Red"
+#~ msgid "Redo %1"
+#~ msgstr "Roge"
+
+#, fuzzy
+#~| msgid "Red"
+#~ msgid "Redo"
+#~ msgstr "Roge"
+
+#~ msgid "&File"
+#~ msgstr "&Fichièr"
+
+#~ msgid "&Settings"
+#~ msgstr "&Paramètres"
+
+#~ msgid "File"
+#~ msgstr "Fichièr"
+
+#~ msgid "Name:"
+#~ msgstr "Nom :"
+
+#, fuzzy
+#~| msgid "Untitled"
+#~ msgid "Initials:"
+#~ msgstr "Sens nom"
+
+#~ msgid "Title:"
+#~ msgstr "Títol:"
+
+#~ msgid "Position:"
+#~ msgstr "Posicion :"
+
+#~ msgid "Email:"
+#~ msgstr "Adreça electronica :"
+
+#~ msgid "Fax:"
+#~ msgstr "Fax :"
+
+#~ msgid "Street:"
+#~ msgstr "Carrièra :"
+
+#~ msgid "City:"
+#~ msgstr "Ciutat :"
+
+#~ msgid "Country:"
+#~ msgstr "Païs :"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Create backup file:"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Snap to Grid"
+#~ msgid "Show grid:"
+#~ msgstr "Alinhar s~us la gresilha"
+
+#, fuzzy
+#~| msgid "Snap to Grid"
+#~ msgid "Snap to grid:"
+#~ msgstr "Alinhar s~us la gresilha"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgid "Grid color:"
+#~ msgstr "Color de &fons :"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgid "Spacing"
+#~ msgstr "Espaci"
+
+#, fuzzy
+#~| msgid "&Horizontal"
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "&Orizontal"
+
+#, fuzzy
+#~| msgid "&Vertical"
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "&Vertical"
+
+#, fuzzy
+#~| msgid "Unit:"
+#~ msgid "Units:"
+#~ msgstr "_Unitats :"
+
+#~ msgid "Saving..."
+#~ msgstr "Enregistrament..."
+
+#, fuzzy
+#~| msgid "Open Document"
+#~ msgid "Opening Document"
+#~ msgstr "Dobrir un document"
+
+#~ msgid "File not found"
+#~ msgstr "Impossible de trobar lo fichièr"
+
+#~ msgid "Internal error"
+#~ msgstr "Error intèrna"
+
+#~ msgid "Out of memory"
+#~ msgstr "Pas pro de memòria"
+
+#~ msgid "Unknown error"
+#~ msgstr "Error desconeguda"
+
+#~ msgid "Untitled"
+#~ msgstr "Sens nom"
+
+#, fuzzy
+#~| msgid "%1%"
+#~ msgid "%1 %"
+#~ msgstr "%1 %"
+
+#~ msgid "No"
+#~ msgstr "Non"
+
+#~ msgid "Yes"
+#~ msgstr "Òc"
+
+#, fuzzy
+#~| msgid "File"
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "Fixe"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "Tèxt"
+
+#, fuzzy
+#~| msgid "Preview:"
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "Ulhada :"
+
+#, fuzzy
+#~| msgid "Tool Options"
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "Opcions dels espleches"
+
+#, fuzzy
+#~| msgid "Replace"
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "Remplaçar"
+
+#, fuzzy
+#~| msgid "Replace"
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "Remplaçar"
+
+#, fuzzy
+#~| msgid "Replace"
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "Remplaçar"
+
+#~ msgid "Export as PDF..."
+#~ msgstr "Exportar al format PDF..."
+
+#~ msgid "Reload"
+#~ msgstr "Tornar cargar"
+
+#~ msgid "Versions..."
+#~ msgstr "Versions..."
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "En&crypt Document"
+#~ msgstr "Importar un document"
+
+#~ msgid "&New View"
+#~ msgstr "Vista &novèla"
+
+#~ msgid "Document Information"
+#~ msgstr "Document d'informacion"
+
+#, fuzzy
+#~| msgid "Untitled"
+#~ msgid "untitled"
+#~ msgstr "Sens nom"
+
+#~ msgid "Open Document"
+#~ msgstr "Dobrir un document"
+
+#, fuzzy
+#~| msgid "Export as PDF..."
+#~ msgid "Export as PDF"
+#~ msgstr "Exportar al format PDF..."
+
+#~ msgid "Warning"
+#~ msgstr "Alèrta"
+
+#, fuzzy
+#~| msgid "Open Document"
+#~ msgid "Open Existing Document"
+#~ msgstr "Dobrir un document"
+
+#~ msgid "Recent Documents"
+#~ msgstr "Documents recents"
+
+#~ msgid "Stop"
+#~ msgstr "Arrestar"
+
+#, fuzzy
+#~| msgid "Warning"
+#~ msgid "Printing"
+#~ msgstr "En espèra"
+
+#~ msgid "Close"
+#~ msgstr "Tampar"
+
+#~ msgid "Stopped"
+#~ msgstr "Arrestat"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "Nom :"
+
+#~ msgid "Group:"
+#~ msgstr "Grop :"
+
+#~ msgid "&Remove"
+#~ msgstr "&Suprimir "
+
+#~ msgid "Picture"
+#~ msgstr "Imatge"
+
+#, fuzzy
+#~| msgid "Preview:"
+#~ msgid "&Preview"
+#~ msgstr "Ulhada :"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Custom:"
+#~ msgstr "Personalizat"
+
+#~ msgid "Add Group"
+#~ msgstr "Apondre un grop"
+
+#~ msgid "Remove Group"
+#~ msgstr "Suprimir un grop"
+
+#~ msgid "&Delete"
+#~ msgstr "&Suprimir"
+
+#~ msgid "Version"
+#~ msgstr "Version"
+
+#~ msgid "Date & Time"
+#~ msgstr "Data e ora"
+
+#~ msgid "Comment"
+#~ msgstr "Comentari"
+
+#~ msgid "&Add"
+#~ msgstr "&Apondre"
+
+#~ msgid "&Modify"
+#~ msgstr "&Modificar"
+
+#~ msgid "&Open"
+#~ msgstr "&Dobrir"
+
+#~ msgid "Unknown"
+#~ msgstr "Desconegut"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "Ecran"
+
+#~ msgid "Clear"
+#~ msgstr "Netejar"
+
+#~ msgid "Alpha"
+#~ msgstr "Alfa"
+
+#~ msgid "Lightness"
+#~ msgstr "Clar"
+
+#~ msgid "Blue"
+#~ msgstr "Blau"
+
+#~ msgid "Green"
+#~ msgstr "Vèrd"
+
+#~ msgid "Red"
+#~ msgstr "Roge"
+
+#, fuzzy
+#~| msgid "Alpha"
+#~ msgid "Alpha darken"
+#~ msgstr "Alfa"
+
+#~ msgid "Erase"
+#~ msgstr "Suprimir"
+
+#~ msgid "Normal"
+#~ msgstr "Normal"
+
+#, fuzzy
+#~| msgid "Height:"
+#~ msgid "Hard Mix"
+#~ msgstr "Nautor"
+
+#, fuzzy
+#~| msgid "Variable"
+#~ msgid "Parallel"
+#~ msgstr "Variable"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color Dodge"
+#~ msgstr "Color"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Linear Dodge"
+#~ msgstr "Esclarzir"
+
+#~ msgid "Lighten"
+#~ msgstr "Esclarzir"
+
+#, fuzzy
+#~| msgid "Height:"
+#~ msgid "Hard Light"
+#~ msgstr "Nautor"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "Esclarzir"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "Esclarzir"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Gamma Light"
+#~ msgstr "Esclarzir"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Vivid Light"
+#~ msgstr "Esclarzir"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Pin Light"
+#~ msgstr "Esclarzir"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Linear Light"
+#~ msgstr "Esclarzir"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color Burn"
+#~ msgstr "Color"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgid "Linear Burn"
+#~ msgstr "Inserir un saut"
+
+#~ msgid "Darken"
+#~ msgstr "Escuresir"
+
+#, fuzzy
+#~| msgid "Position:"
+#~ msgid "Addition"
+#~ msgstr "Posicion :"
+
+#, fuzzy
+#~| msgid "Green"
+#~ msgid "Copy Green"
+#~ msgstr "Vèrd"
+
+#, fuzzy
+#~| msgid "Blue"
+#~ msgid "Copy Blue"
+#~ msgstr "Blau"
+
+#~ msgid "Color"
+#~ msgstr "Color"
+
+#~ msgid "Saturation"
+#~ msgstr "Saturacion"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation"
+#~ msgstr "Saturacion"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation"
+#~ msgstr "Saturacion"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgid "Increase Luminosity"
+#~ msgstr "Aumentar l'alinèa"
+
+#, fuzzy
+#~| msgid "Decrease Indent"
+#~ msgid "Decrease Luminosity"
+#~ msgstr "Reduire l'alinèa"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgid "Darker Color"
+#~ msgstr "Color de &fons :"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Lighter Color"
+#~ msgstr "Color"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color HSI"
+#~ msgstr "Color"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Saturation HSI"
+#~ msgstr "Saturacion"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation HSI"
+#~ msgstr "Saturacion"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation HSI"
+#~ msgstr "Saturacion"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgid "Increase Intensity"
+#~ msgstr "Aumentar l'alinèa"
+
+#, fuzzy
+#~| msgid "Decrease Indent"
+#~ msgid "Decrease Intensity"
+#~ msgstr "Reduire l'alinèa"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color HSL"
+#~ msgstr "Color"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Saturation HSL"
+#~ msgstr "Saturacion"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation HSL"
+#~ msgstr "Saturacion"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation HSL"
+#~ msgstr "Saturacion"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgid "Increase Lightness"
+#~ msgstr "Aumentar l'alinèa"
+
+#, fuzzy
+#~| msgid "Decrease Indent"
+#~ msgid "Decrease Lightness"
+#~ msgstr "Reduire l'alinèa"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color HSV"
+#~ msgstr "Color"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Saturation HSV"
+#~ msgstr "Saturacion"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation HSV"
+#~ msgstr "Saturacion"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation HSV"
+#~ msgstr "Saturacion"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgid "Increase Value"
+#~ msgstr "Aumentar l'alinèa"
+
+#, fuzzy
+#~| msgid "Decrease Indent"
+#~ msgid "Decrease Value"
+#~ msgstr "Reduire l'alinèa"
+
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "G"
+#~ msgstr "G"
+
+#~ msgid "Grayscale"
+#~ msgstr "Escala de grises"
+
+#, fuzzy
+#~| msgid "Automatic"
+#~ msgid "Arithmetic"
+#~ msgstr "Automatic"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Inverse Subtract"
+#~ msgstr "Saturacion"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Additive Subtractive"
+#~ msgstr "Saturacion"
+
+#, fuzzy
+#~| msgid "Alpha"
+#~ msgid "Alpha Darken"
+#~ msgstr "Alfa"
+
+#, fuzzy
+#~| msgid "Red"
+#~ msgid "Rdf"
+#~ msgstr "Roge"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgid "Triples"
+#~ msgstr "Títol:"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgid "delete"
+#~ msgstr "Suprimir"
+
+#, fuzzy
+#~| msgid "Replace"
+#~ msgid "Namespaces"
+#~ msgstr "Remplaçar"
+
+#, fuzzy
+#~| msgid "Replace"
+#~ msgid "Namespace"
+#~ msgstr "Remplaçar"
+
+#, fuzzy
+#~| msgid "Styles"
+#~ msgid "Stylesheets"
+#~ msgstr "Estils"
+
+#, fuzzy
+#~| msgid "Insert"
+#~ msgid "User"
+#~ msgstr "Inserir"
+
+#, fuzzy
+#~| msgid "Styles"
+#~ msgid "Stylesheet Definition"
+#~ msgstr "Estils"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgid "Description"
+#~ msgstr "Posicion"
+
+#, fuzzy
+#~| msgid "Styles"
+#~ msgid "Stylesheet Name"
+#~ msgstr "Estils"
+
+#, fuzzy
+#~| msgid "Black"
+#~ msgid "Blank"
+#~ msgstr "Negre"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Valid"
+#~ msgstr "Talha :"
+
+#, fuzzy
+#~| msgid "Subject:"
+#~ msgid "Subject"
+#~ msgstr "Subjècte :"
+
+#, fuzzy
+#~| msgid "Picture"
+#~ msgid "Predicate"
+#~ msgstr "Imatge"
+
+#, fuzzy
+#~| msgid "Type"
+#~ msgid "Obj Type"
+#~ msgstr "Tipe"
+
+#, fuzzy
+#~| msgid "Data"
+#~ msgid "DataType"
+#~ msgstr "Donadas"
+
+#, fuzzy
+#~| msgid "Stopped"
+#~ msgid "Stored In"
+#~ msgstr "Arrestat"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "Pas cap"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgid "Tamil"
+#~ msgstr "Títol:"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Tibetan"
+#~ msgstr "Títol:"
+
+#~ msgid "Opacity"
+#~ msgstr "Opacitat"
+
+#~ msgid "Import Data"
+#~ msgstr "Importar de donadas"
+
+#~ msgid "Generic"
+#~ msgstr "Generic"
+
+#~ msgid "None"
+#~ msgstr "Pas cap"
+
+#~ msgid "Data"
+#~ msgstr "Donadas"
+
+#, fuzzy
+#~| msgid "Warning"
+#~ msgid "E&ncoding:"
+#~ msgstr "Alèrta"
+
+#~ msgid "Format"
+#~ msgstr "Format"
+
+#~ msgid "Semicolon"
+#~ msgstr "Punt virgula"
+
+#~ msgid "Other"
+#~ msgstr "Autre"
+
+#~ msgid "Space"
+#~ msgstr "Espaci"
+
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "&Format:"
+#~ msgstr "Format"
+
+#, fuzzy
+#~| msgid "Change"
+#~ msgid "Ranges"
+#~ msgstr "Cambiar"
+
+#~ msgid "Update"
+#~ msgstr "Actualizar"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import columns:"
+#~ msgstr "Importar un document"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import lines:"
+#~ msgstr "Importar un document"
+
+#~ msgid "to"
+#~ msgstr "cap a"
+
+#, fuzzy
+#~| msgid "Save Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "Enregistrar lo document"
+
+#, fuzzy
+#~| msgid "Save Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "Enregistrar lo document"
+
+#~ msgid "Keywords:"
+#~ msgstr "Mots-clau :"
+
+#~ msgid "Subject:"
+#~ msgstr "Subjècte :"
+
+#~ msgid "Last printed:"
+#~ msgstr "Estampat lo :"
+
+#~ msgid "Total editing time:"
+#~ msgstr "Durada totala de modificacion :"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgid "Encryption:"
+#~ msgstr "Posicion"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "Títol:"
+
+#~ msgid "Revision number:"
+#~ msgstr "Numerò de revision :"
+
+#~ msgid "Modified:"
+#~ msgstr "Modificat :"
+
+#~ msgid "Comments:"
+#~ msgstr "Comentaris :"
+
+#~ msgid "Created:"
+#~ msgstr "Creat :"
+
+#, fuzzy
+#~| msgid "Date:"
+#~ msgid "Path:"
+#~ msgstr "Camin:"
+
+#~ msgid "&Reset"
+#~ msgstr "&Reïnicializar"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Language:"
+#~ msgstr "Suprimir pagina"
+
+#~ msgid "General"
+#~ msgstr "General"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Last saved by"
+#~ msgstr "Suprimir pagina"
+
+#~ msgid "Save Document"
+#~ msgstr "Enregistrar lo document"
+
+#~ msgid "Change"
+#~ msgstr "Cambiar"
+
+#~ msgid "Remove"
+#~ msgstr "Suprimir"
+
+#, fuzzy
+#~| msgid "Palette"
+#~ msgid "Open palette"
+#~ msgstr "Paleta"
+
+#, fuzzy
+#~| msgid "Palette"
+#~ msgid "Save palette"
+#~ msgstr "Paleta"
+
+#~ msgid "Palette"
+#~ msgstr "Paleta"
+
+#, fuzzy
+#~| msgid "Palette"
+#~ msgid "Testing: OpenFile"
+#~ msgstr "Paleta"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: ImportFile"
+#~ msgstr "Importar un document"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "Importar un document"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: Import Directory"
+#~ msgstr "Importar un document"
+
+#, fuzzy
+#~| msgid "Palette"
+#~ msgid "Testing: SaveFile"
+#~ msgstr "Paleta"
+
+#, fuzzy
+#~| msgid "Palette"
+#~ msgid "Open File"
+#~ msgstr "Paleta"
+
+#, fuzzy
+#~| msgid "Palette"
+#~ msgid "Open Files"
+#~ msgstr "Paleta"
+
+#, fuzzy
+#~| msgid "Layer"
+#~ msgid "TextLabel"
+#~ msgstr "Jaç"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "Named"
+#~ msgstr "Nom"
+
+#, fuzzy
+#~| msgid "Palette"
+#~ msgid "Save File"
+#~ msgstr "Paleta"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Files"
+#~ msgstr "Importar un document"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import File"
+#~ msgstr "Importar un document"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Directory"
+#~ msgstr "Importar un document"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "Pas cap"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Change the filling gradient"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Icon and Text"
+#~ msgstr "Tèxt"
+
+#, fuzzy
+#~| msgid "Bottom:"
+#~ msgid "Bottom side"
+#~ msgstr "Aval:"
+
+#, fuzzy
+#~| msgid "Open Document"
+#~ msgid "Apply to document"
+#~ msgstr "Dobrir un document"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgid "Left Edge:"
+#~ msgstr "Esquèrra:"
+
+#, fuzzy
+#~| msgid "Right:"
+#~ msgid "Right Edge:"
+#~ msgstr "Drecha:"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page spread"
+#~ msgstr "Previsualizacion"
+
+#~ msgid "Unit:"
+#~ msgstr "_Unitats :"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Size:"
+#~ msgstr "Talha :"
+
+#~ msgid "Width:"
+#~ msgstr "Largor :"
+
+#~ msgid "Height:"
+#~ msgstr "Nautor :"
+
+#, fuzzy
+#~| msgid "Orientation"
+#~ msgid "Orientation:"
+#~ msgstr "Orientacion :"
+
+#, fuzzy
+#~| msgctxt "Underline Style"
+#~| msgid "Single"
+#~ msgid "Single sided"
+#~ msgstr "Simple"
+
+#, fuzzy
+#~| msgid "Collection"
+#~ msgid "Text direction:"
+#~ msgstr "Colleccion"
+
+#~ msgid "Automatic"
+#~ msgstr "Automatic"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Left to right"
+#~ msgstr "Esclarzir"
+
+#~ msgid "Margins"
+#~ msgstr "Marges"
+
+#~ msgid "Top:"
+#~ msgstr "Amont:"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Binding edge:"
+#~ msgstr "Previsualizacion"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page edge:"
+#~ msgstr "Previsualizacion"
+
+#~ msgid "Bottom:"
+#~ msgstr "Aval:"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "Importar un document"
+
+#, fuzzy
+#~| msgid "Download"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "Telecargar"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "Suprimir"
+
+#, fuzzy
+#~| msgid "Remove Group"
+#~ msgid "Remove from this tag"
+#~ msgstr "Suprimir un grop"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Miter limit"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Page"
+#~ msgid "Rename tag"
+#~ msgstr "Pagina"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Delete this tag"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgid "Undelete"
+#~ msgstr "Suprimir"
+
+#~ msgid "Tool Options"
+#~ msgstr "Opcions dels espleches"
+
+#, fuzzy
+#~| msgid "Zoom"
+#~ msgid "Zoom to All"
+#~ msgstr "Reduire el zoom"
+
+#, fuzzy
+#~| msgid "%1%"
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1%"
+
+#, fuzzy
+#~| msgid "Automatic"
+#~ msgctxt "Static Image"
+#~ msgid "Static"
+#~ msgstr "Automatic"
+
+#~ msgid "Yellow"
+#~ msgstr "Rossèl"
+
+#~ msgid "Black"
+#~ msgstr "Negre"
+
+#~ msgid "Opacity:"
+#~ msgstr "Opacitat :"
+
+#, fuzzy
+#~| msgid "Make Default"
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "Defaut"
+
+#, fuzzy
+#~| msgid "Collection"
+#~ msgid "Color Selector"
+#~ msgstr "Colleccion"
+
+#, fuzzy
+#~| msgctxt "Size Policy"
+#~| msgid "Ignored"
+#~ msgid "Ignored"
+#~ msgstr "Ignorat"
+
+#, fuzzy
+#~| msgid "Snap to Grid"
+#~ msgid "Grid Snap"
+#~ msgstr "Alinhar s~us la gresilha"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Formatting"
+#~ msgstr "Format"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: OpenDirectories"
+#~ msgstr "Importar un document"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: ImportDirectories"
+#~ msgstr "Importar un document"
+
+#, fuzzy
+#~| msgid "Palette"
+#~ msgid "Testing: SaveFiles"
+#~ msgstr "Paleta"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Directories"
+#~ msgstr "Importar un document"
+
+#, fuzzy
+#~| msgid "Palette"
+#~ msgid "Save Files"
+#~ msgstr "Paleta"
+
+#~ msgid "Error!"
+#~ msgstr "Enganada !"
+
+#, fuzzy
+#~| msgid "Actions"
+#~ msgid "Locations"
+#~ msgstr "Accions"
+
+#, fuzzy
+#~| msgid "Version"
+#~ msgid "Region"
+#~ msgstr "Version"
+
+#, fuzzy
+#~| msgid "Collection"
+#~ msgid "&Location:"
+#~ msgstr "Colleccion"
+
+#, fuzzy
+#~| msgid "Street:"
+#~ msgid "&Start:"
+#~ msgstr "Carrièra :"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Timezone"
+#~ msgstr "Títol:"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "&Name:"
+#~ msgstr "Nom :"
+
+#, fuzzy
+#~| msgid "Revision number:"
+#~ msgid "&Phone Number:"
+#~ msgstr "Numerò de revision :"
+
+#, fuzzy
+#~| msgid "Page"
+#~ msgid "&Home Page:"
+#~ msgstr "Pagina"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Contact Information"
+#~ msgstr "Document d'informacion"
+
+#, fuzzy
+#~| msgid "Import Data"
+#~ msgid "Import contact"
+#~ msgstr "Importar de donadas"
+
+#, fuzzy
+#~| msgid "Export as PDF..."
+#~ msgid "Export as vcard..."
+#~ msgstr "Exportar al format PDF..."
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "&Name"
+#~ msgstr "Nom"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Location Information"
+#~ msgstr "Document d'informacion"
+
+#, fuzzy
+#~| msgid "Replace"
+#~ msgid "People"
+#~ msgstr "Remplaçar"
+
+#~ msgid "Save Document As"
+#~ msgstr "Enregistrar lo document jos"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Export Document As"
+#~ msgstr "Importar un document"
+
+#, fuzzy
+#~| msgid "Export as PDF..."
+#~ msgid "Export to PDF"
+#~ msgstr "Exportar al format PDF..."
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgid "Slide Background"
+#~ msgstr "Color de &fons :"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgid "Document background"
+#~ msgstr "Color de &fons :"
+
+#, fuzzy
+#~| msgid "Change"
+#~ msgid "&Cancel"
+#~ msgstr "Cambiar"
+
+#, fuzzy
+#~| msgid "Add..."
+#~ msgid "&Edit"
+#~ msgstr "Apondre..."
+
+#, fuzzy
+#~| msgid "Close"
+#~ msgid "&Close"
+#~ msgstr "Tampar"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgid "Dodge"
+#~ msgstr "Pas cap"
+
+#, fuzzy
+#~| msgid "Height:"
+#~ msgid "Hard light"
+#~ msgstr "Nautor"
+
+#, fuzzy
+#~| msgid "Snap to Grid"
+#~ msgid "Show Shadow"
+#~ msgstr "Alinhar s~us la gresilha"
+
+#, fuzzy
+#~| msgctxt "Underline Style"
+#~| msgid "Single"
+#~ msgid "Angle:"
+#~ msgstr "Simple"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color:"
+#~ msgstr "Color"
+
+#, fuzzy
+#~| msgid "Styles"
+#~ msgid "Style:"
+#~ msgstr "Estils"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bookmark"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgid "Insert Table"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgid "Insert Row Above"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgid "Insert Column Left"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Delete Column"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgid "Delete Row"
+#~ msgstr "Suprimir"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Inserir un saut"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgid "Background Tool"
+#~ msgstr "Color de &fons :"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgid "Background editing tool"
+#~ msgstr "Color de &fons :"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shapes"
+#~ msgstr "Suprimir pagina"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Substract"
+#~ msgstr "Saturacion"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Inverse Substract"
+#~ msgstr "Saturacion"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgid "Line Break"
+#~ msgstr "Inserir un saut"
+
+#~ msgid "&Horizontal"
+#~ msgstr "&Orizontal"
+
+#~ msgid "&Vertical"
+#~ msgstr "&Vertical"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Form"
+#~ msgstr "Format"
+
+#~ msgid "Import"
+#~ msgstr "Importar"
+
+#, fuzzy
+#~| msgid "Shape"
+#~ msgid "Share"
+#~ msgstr "Forma"
+
+#, fuzzy
+#~| msgid "Alpha"
+#~ msgid "Copy Opacy"
+#~ msgstr "Alfa"
+
+#, fuzzy
+#~| msgid "Alpha"
+#~ msgid "Copy Alpha"
+#~ msgstr "Alfa"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Light"
+#~ msgstr "Esclarzir"
+
+#, fuzzy
+#~| msgid "Stop"
+#~ msgid "Atop"
+#~ msgstr "Arrestar"
+
+#~ msgid "KOffice"
+#~ msgstr "KOffice"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Barcode"
+#~ msgstr "Format"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Barcode Format"
+#~ msgstr "Format"
+
+#, fuzzy
+#~| msgid "Street:"
+#~ msgid "Chart"
+#~ msgstr "Carrièra :"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Pie"
+#~ msgstr "Títol:"
+
+#, fuzzy
+#~| msgid "Version"
+#~ msgid "Ring"
+#~ msgstr "Version"
+
+#, fuzzy
+#~| msgid "Clear"
+#~ msgid "Polar"
+#~ msgstr "Netejar"
+
+#, fuzzy
+#~| msgid "Data"
+#~ msgid "Chart Type"
+#~ msgstr "Donadas"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgid "Stacked"
+#~ msgstr "Espaci"
+
+#, fuzzy
+#~| msgid "Collection"
+#~ msgid "Color Scheme"
+#~ msgstr "Colleccion"
+
+#, fuzzy
+#~| msgctxt "Mouse Cursor Shape"
+#~| msgid "I"
+#~ msgid "In"
+#~ msgstr "I"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Out"
+#~ msgstr "Personalizat"
+
+#~ msgid "&Insert"
+#~ msgstr "&Inserir"
+
+#~ msgid "Make Default"
+#~ msgstr "Valeurs par défaut"
+
+#~ msgid "C&ustom"
+#~ msgstr "&Personalizat"
+
+#~ msgid "Borders"
+#~ msgstr "Bordaduras"
+
+#~ msgid "true"
+#~ msgstr "verai"
+
+#~ msgid "false"
+#~ msgstr "fals"
+
+#~ msgid "Date:"
+#~ msgstr "Data :"
+
+#~ msgid "Horizontal"
+#~ msgstr "Orizontal"
+
+#~ msgid "Vertical"
+#~ msgstr "Vertical"
+
+#~ msgid "Confirmation Required"
+#~ msgstr "Confirmacion necessària"
+
+#~ msgid "Skip"
+#~ msgstr "Sautar"
+
+#~ msgid "Na&me:"
+#~ msgstr "No&m :"
+
+#~ msgid "Context Help"
+#~ msgstr "Ajuda contèxtuala"
+
+#~ msgctxt "Custom size"
+#~ msgid "Custom"
+#~ msgstr "Personalizat"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Delete slides"
+#~ msgstr "Suprimir pagina"
+
+#~ msgid "Insert Object"
+#~ msgstr "Inserir un objècte"
+
+#~ msgid "Page Preview"
+#~ msgstr "Previsualizacion"
+
+#~ msgid "&Help"
+#~ msgstr "&Ajuda"
+
+#~ msgid "Rotate"
+#~ msgstr "እንደገና አስጀምሩ"
+
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Arrow"
+#~ msgstr "Flècha"
+
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Up Arrow"
+#~ msgstr "Sageta cap al naut"
+
+#, fuzzy
+#~| msgid "Vertical"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Vertical"
+#~ msgstr "Vertical"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Horizontal"
+#~ msgstr "Orizontal"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size All"
+#~ msgstr "Títol:"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Split Horizontal"
+#~ msgstr "Orizontal"
+
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "What's This?"
+#~ msgstr "Qu'es aquò ?"
+
+#~ msgctxt "Size Policy"
+#~ msgid "Minimum"
+#~ msgstr "Minim"
+
+#~ msgctxt "Size Policy"
+#~ msgid "Maximum"
+#~ msgstr "Maxim"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgctxt "General properties"
+#~ msgid "General"
+#~ msgstr "General"
+
+#, fuzzy
+#~| msgid "Width:"
+#~ msgid "Width"
+#~ msgstr "Largor"
+
+#~ msgid "X"
+#~ msgstr "X"
+
+#~ msgid "Y"
+#~ msgstr "O"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgid "Horizontal Size Type"
+#~ msgstr "Orizontal"
+
+#, fuzzy
+#~| msgid "Vertical"
+#~ msgid "Vertical Size Type"
+#~ msgstr "Vertical"
+
+#, fuzzy
+#~| msgid "Vertical"
+#~ msgid "Vertical Stretch"
+#~ msgstr "Vertical"
+
+#, fuzzy
+#~| msgid "Snap to Grid"
+#~ msgid "Snap Guides"
+#~ msgstr "Alinhar s~us la gresilha"
+
+#, fuzzy
+#~| msgid "Tool Options"
+#~ msgid "Tool Option"
+#~ msgstr "Opcions dels espleches"

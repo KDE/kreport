@@ -1,0 +1,1141 @@
+# Copyright (C).
+#
+# Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: koffice\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2008-01-27 21:10+0700\n"
+"Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
+"Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KAider 0.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+#, fuzzy
+#| msgid "Could not create the file for saving"
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "Không thể tạo tệp để lưu"
+
+#: common/KReportDesign.cpp:159
+#, fuzzy
+#| msgid "Error in embedded document"
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Lỗi trong tài liệu nhúng"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Tên:"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Object"
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Đối tượng"
+
+#: common/KReportItemBase.cpp:78
+#, fuzzy
+#| msgid "Position"
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Vị trí"
+
+#: common/KReportItemBase.cpp:79
+#, fuzzy
+#| msgid "&Size:"
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "&Cỡ:"
+
+#: common/KReportItemBase.cpp:112
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Xoá"
+
+#: common/KReportItemLine.cpp:80
+#, fuzzy
+#| msgid "&Set Position..."
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "Đặt &Vị trí..."
+
+#: common/KReportItemLine.cpp:81
+#, fuzzy
+#| msgid "Position"
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Vị trí"
+
+#: common/KReportItemLine.cpp:83
+#, fuzzy
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "Bề rộng:"
+
+#: common/KReportItemLine.cpp:85
+#, fuzzy
+#| msgid "More Line Colors..."
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Màu dòng khác ..."
+
+#: common/KReportItemLine.cpp:86
+#, fuzzy
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Đầu đề:"
+
+#: common/KReportSectionData.cpp:164
+#, fuzzy
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Nhóm các hình"
+
+#: common/KReportSectionData.cpp:166
+#, fuzzy
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "Chiều cao:"
+
+#: common/KReportSectionData.cpp:170
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Đặt nền"
+
+#: common/KReportUnit.cpp:136
+#, fuzzy
+#| msgid "Add Group"
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Thêm Nhóm"
+
+#: common/KReportUnit.cpp:138
+#, fuzzy
+#| msgid "Millimeters (mm)"
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "Millimét (mm)"
+
+#: common/KReportUnit.cpp:140
+#, fuzzy
+#| msgid "Centimeters (cm)"
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "Centimét (mm)"
+
+#: common/KReportUnit.cpp:142
+#, fuzzy
+#| msgid "Decimeters (dm)"
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "Decimét (mm)"
+
+#: common/KReportUnit.cpp:144
+#, fuzzy
+#| msgid "Inches (in)"
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "Inch (in)"
+
+#: common/KReportUnit.cpp:146
+#, fuzzy
+#| msgid "Pica (pi)"
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "Pica (pi)"
+
+#: common/KReportUnit.cpp:148
+#, fuzzy
+#| msgid "Cicero (cc)"
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "Cicero (cc)"
+
+#: common/KReportUnit.cpp:150
+#, fuzzy
+#| msgid "Points (pt)"
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "Points (pt)"
+
+#: common/KReportUnit.cpp:152
+#, fuzzy
+#| msgid "Pixels (px)"
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "Điểm ảnh (px)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Close"
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Đóng"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:80
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "Đầu đề:"
+
+#: items/check/KReportItemCheck.cpp:84
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Đặt nền"
+
+#: items/check/KReportItemCheck.cpp:86
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "Bề rộng:"
+
+#: items/check/KReportItemCheck.cpp:88
+#, fuzzy
+#| msgid "More Line Colors..."
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Màu dòng khác ..."
+
+#: items/check/KReportItemCheck.cpp:89
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Đầu đề:"
+
+#: items/check/KReportItemCheck.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Giá trị"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Giá trị"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Trái:"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Nhập tên"
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Phải:"
+
+#: items/field/KReportItemField.cpp:96
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Đặt Dóng Ngang"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "Đỉnh:"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Các lề"
+
+#: items/field/KReportItemField.cpp:102
+#, fuzzy
+#| msgid "Set Vertical Alignment"
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Đặt Dóng Dọc"
+
+#: items/field/KReportItemField.cpp:104
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Nước :"
+
+#: items/field/KReportItemField.cpp:106
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Đặt nền"
+
+#: items/field/KReportItemField.cpp:107
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Đặt nền"
+
+#: items/field/KReportItemField.cpp:109
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Màu &nền:"
+
+#: items/field/KReportItemField.cpp:114
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "Bề rộng:"
+
+#: items/field/KReportItemField.cpp:116
+#, fuzzy
+#| msgid "More Line Colors..."
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Màu dòng khác ..."
+
+#: items/field/KReportItemField.cpp:117
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Đầu đề:"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:120
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgid "Street:"
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Phố:"
+
+#: items/image/KReportItemImage.cpp:120
+#, fuzzy
+#| msgid "Resize"
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "Thay đổi cỡ"
+
+#: items/image/KReportItemImage.cpp:121
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Giá trị"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:91
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Tìm thấy toàn bộ text"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Trái:"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Nhập tên"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Phải:"
+
+#: items/label/KReportItemLabel.cpp:96
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Đặt Dóng Ngang"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "Đỉnh:"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Các lề"
+
+#: items/label/KReportItemLabel.cpp:102
+#, fuzzy
+#| msgid "Set Vertical Alignment"
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Đặt Dóng Dọc"
+
+#: items/label/KReportItemLabel.cpp:104
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Nước :"
+
+#: items/label/KReportItemLabel.cpp:106
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Đặt nền"
+
+#: items/label/KReportItemLabel.cpp:107
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Đặt nền"
+
+#: items/label/KReportItemLabel.cpp:109
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Màu &nền:"
+
+#: items/label/KReportItemLabel.cpp:114
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "Bề rộng:"
+
+#: items/label/KReportItemLabel.cpp:116
+#, fuzzy
+#| msgid "More Line Colors..."
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Màu dòng khác ..."
+
+#: items/label/KReportItemLabel.cpp:117
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Đầu đề:"
+
+#: items/text/KReportItemText.cpp:115
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Giá trị"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Trái:"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Nhập tên"
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Phải:"
+
+#: items/text/KReportItemText.cpp:121
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Đặt Dóng Ngang"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "Đỉnh:"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Các lề"
+
+#: items/text/KReportItemText.cpp:127
+#, fuzzy
+#| msgid "Set Vertical Alignment"
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Đặt Dóng Dọc"
+
+#: items/text/KReportItemText.cpp:129
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Nước :"
+
+#: items/text/KReportItemText.cpp:131
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Đặt nền"
+
+#: items/text/KReportItemText.cpp:132
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Đặt nền"
+
+#: items/text/KReportItemText.cpp:134
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "Bề rộng:"
+
+#: items/text/KReportItemText.cpp:136
+#, fuzzy
+#| msgid "More Line Colors..."
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Màu dòng khác ..."
+
+#: items/text/KReportItemText.cpp:137
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Đầu đề:"
+
+#: items/text/KReportItemText.cpp:138
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Màu &nền:"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+#, fuzzy
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Lỗi bên trong"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:676
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Xem trước Trang"
+
+#: wrtembed/KReportDesigner.cpp:680
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Xem trước Trang"
+
+#: wrtembed/KReportDesigner.cpp:684
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Xem trước Trang"
+
+#: wrtembed/KReportDesigner.cpp:688
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Xem trước Trang"
+
+#: wrtembed/KReportDesigner.cpp:692
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Xem trước Trang"
+
+#: wrtembed/KReportDesigner.cpp:696
+#, fuzzy
+#| msgid "H&eader && Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "&Header và Footer"
+
+#: wrtembed/KReportDesigner.cpp:700
+#, fuzzy
+#| msgid "H&eader && Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "&Header và Footer"
+
+#: wrtembed/KReportDesigner.cpp:704
+#, fuzzy
+#| msgid "H&eader && Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "&Header và Footer"
+
+#: wrtembed/KReportDesigner.cpp:708
+#, fuzzy
+#| msgid "H&eader && Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "&Header và Footer"
+
+#: wrtembed/KReportDesigner.cpp:712
+#, fuzzy
+#| msgid "H&eader && Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "&Header và Footer"
+
+#: wrtembed/KReportDesigner.cpp:716
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "Header"
+
+#: wrtembed/KReportDesigner.cpp:720
+#, fuzzy
+#| msgid "H&eader && Footer"
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "&Header và Footer"
+
+#: wrtembed/KReportDesigner.cpp:808
+#, fuzzy
+#| msgid "Export"
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "Xuất"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Tựa đề:"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr " Tác giả "
+
+#: wrtembed/KReportDesigner.cpp:818
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Cỡ Trang"
+
+#: wrtembed/KReportDesigner.cpp:821
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Cỡ Trang"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "&Portrait"
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "&Chân dung"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "La&ndscape"
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "Nằm &ngang"
+
+#: wrtembed/KReportDesigner.cpp:827
+#, fuzzy
+#| msgid "Orientation"
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "Định &hướng"
+
+#: wrtembed/KReportDesigner.cpp:832
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Cỡ Trang"
+
+#: wrtembed/KReportDesigner.cpp:833
+#, fuzzy
+#| msgid "Show &Grid"
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Hiện &Lưới"
+
+#: wrtembed/KReportDesigner.cpp:834
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Gắn vào Lưới"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:841
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Các lề"
+
+#: wrtembed/KReportDesigner.cpp:843
+#, fuzzy
+#| msgid "Right indent"
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Thụt phải"
+
+#: wrtembed/KReportDesigner.cpp:845
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Các lề"
+
+#: wrtembed/KReportDesigner.cpp:847
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Các lề"
+
+#: wrtembed/KReportDesigner.cpp:869
+#, fuzzy
+#| msgid "Object"
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Đối tượng"
+
+#: wrtembed/KReportDesigner.cpp:1067
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Tự chọn"
+
+#: wrtembed/KReportDesigner.cpp:1071
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Công ti:"
+
+#: wrtembed/KReportDesigner.cpp:1076
+#, fuzzy
+#| msgid "Date"
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Ngày"
+
+#: wrtembed/KReportDesigner.cpp:1087
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Xoá"
+
+#: wrtembed/KReportDesigner.cpp:1129
+#, fuzzy
+#| msgid "Lines"
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Các dòng"
+
+#: wrtembed/KReportDesigner.cpp:1476
+#, fuzzy
+#| msgid "Lines"
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Các dòng"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1525
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "Công ti:"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1531
+#, fuzzy
+#| msgid "Date"
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "Ngày"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1544
+#, fuzzy
+#| msgid "Actions"
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Các hành động"
+
+#: wrtembed/KReportDesigner.cpp:1547
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr "&Có "
+
+#: wrtembed/KReportDesigner.cpp:1549
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr ""
+
+#: wrtembed/KReportDesignerSection.cpp:126
+#, fuzzy
+#| msgid "&Default"
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "&Mặc định"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+#, fuzzy
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Nhóm các hình"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+#, fuzzy
+#| msgid "Columns:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Các cột:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+#, fuzzy
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Phố:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+#, fuzzy
+#| msgid "Show &Grid"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Hiện &Lưới"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+#, fuzzy
+#| msgid "Show &Grid"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Hiện &Lưới"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+
+#: wrtembed/KReportRuler_p.cpp:1472
+#, fuzzy
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Thụt dòng đầu tiên vào"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+#, fuzzy
+#| msgid "Left indent"
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Thụt trái"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+#, fuzzy
+#| msgid "Right indent"
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Thụt phải"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.cpp:74
+#, fuzzy
+#| msgid "Add..."
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "Thêm..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Xoá"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+#, fuzzy
+#| msgid "Move page"
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Di chuyển trang"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+#, fuzzy
+#| msgid "Move points"
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Di chuyển các điểm"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.cpp:312
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.ui:29
+#, fuzzy
+#| msgid "Show &Grid"
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Hiện &Lưới"
+
+#: wrtembed/KReportSectionEditor.ui:36
+#, fuzzy
+#| msgid "Show &Grid"
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Hiện &Lưới"
+
+#: wrtembed/KReportSectionEditor.ui:43
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Xem trước Trang"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+#, fuzzy
+#| msgid "Fit Page"
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "Vừa Trang"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+#, fuzzy
+#| msgid "Copy Page"
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Chép Trang"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+#, fuzzy
+#| msgid "Copy Page"
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Chép Trang"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Trang Dán"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+#, fuzzy
+#| msgid "Copy Page"
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Chép Trang"
+
+#: wrtembed/KReportSectionEditor.ui:130
+#, fuzzy
+#| msgid "H&eader && Footer"
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "&Header và Footer"
+
+#: wrtembed/KReportSectionEditor.ui:217
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Nhóm các hình"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, fuzzy, qt-format
+#| msgid "%1%"
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+#, fuzzy
+#| msgid "Fit Page Width"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Vừa Bề rộng"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+#, fuzzy
+#| msgid "Fit Page"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Vừa Trang"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+#, fuzzy
+#| msgid "Actual Pixels"
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr "Điểm ảnh Thật"
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+#, fuzzy
+#| msgid "Fit Page Width"
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Vừa Bề rộng"

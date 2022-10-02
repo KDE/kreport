@@ -1,0 +1,121 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Yasen Pramatarov <yasen@lindeas.com>, 2011, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-01-20 01:47+0000\n"
+"PO-Revision-Date: 2015-06-01 10:47+0300\n"
+"Last-Translator: Yasen Pramatarov <yasen@lindeas.com>\n"
+"Language-Team: Bulgarian <dict@ludost.net>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Qt-Contexts: true\n"
+
+#: KReportItemBarcode.cpp:120
+#, fuzzy
+msgctxt "KReportItemBarcode|"
+msgid "Value"
+msgstr "Стойност"
+
+#: KReportItemBarcode.cpp:121
+#, fuzzy
+msgctxt "KReportItemBarcode|"
+msgid "Value used if not bound to a field"
+msgstr "Стойност, ако не е свързано с поле"
+
+#: KReportItemBarcode.cpp:125
+#, fuzzy
+msgctxt "KReportItemBarcode|"
+msgid "Left"
+msgstr "Ляво"
+
+#: KReportItemBarcode.cpp:125
+#, fuzzy
+msgctxt "KReportItemBarcode|"
+msgid "Center"
+msgstr "Центрирано"
+
+#: KReportItemBarcode.cpp:125
+#, fuzzy
+msgctxt "KReportItemBarcode|"
+msgid "Right"
+msgstr "Дясно"
+
+#: KReportItemBarcode.cpp:127
+#, fuzzy
+msgctxt "KReportItemBarcode|"
+msgid "Horizontal Alignment"
+msgstr "Хоризонтално подравняване"
+
+#: KReportItemBarcode.cpp:135
+#, fuzzy
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "Code 3 of 9"
+msgstr "Код 3 от 9"
+
+#: KReportItemBarcode.cpp:136
+#, fuzzy
+msgctxt "KReportItemBarcode|3 of 3 Extended: Barcode symbology, keep short"
+msgid "Code 3 of 9 Ext."
+msgstr "Код 3 от 9"
+
+#: KReportItemBarcode.cpp:137
+#, fuzzy
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "Code 128"
+msgstr "Код 128"
+
+#: KReportItemBarcode.cpp:138
+#, fuzzy
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "EAN-8"
+msgstr "EAN-8"
+
+#: KReportItemBarcode.cpp:139
+#, fuzzy
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "EAN-13"
+msgstr "EAN-13"
+
+#: KReportItemBarcode.cpp:140
+msgctxt ""
+"KReportItemBarcode|Interleaved barcode 2 of 5: barcode symbology, keep short"
+msgid "Interleaved 2 of 5"
+msgstr ""
+
+#: KReportItemBarcode.cpp:141
+#, fuzzy
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "UPC-A"
+msgstr "UPC-A"
+
+#: KReportItemBarcode.cpp:142
+#, fuzzy
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "UPC-E"
+msgstr "UPC-E"
+
+#: KReportItemBarcode.cpp:145
+#, fuzzy
+msgctxt "KReportItemBarcode|"
+msgid "Barcode Format"
+msgstr "Формат на баркод"
+
+#: KReportItemBarcode.cpp:147
+#, fuzzy
+msgctxt "KReportItemBarcode|"
+msgid "Max Length"
+msgstr "Максимална дължина"
+
+#: KReportItemBarcode.cpp:148
+#, fuzzy
+msgctxt "KReportItemBarcode|"
+msgid "Maximum Barcode Length"
+msgstr "Максимална дължина на баркода"

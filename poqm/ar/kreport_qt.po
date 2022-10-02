@@ -1,0 +1,5939 @@
+# translation of koffice.po to
+# Copyright (C) 2002,2003, 2006, 2007, 2008 Free Software Foundation, Inc.
+# Usama Ahmed Ali <usama01@maktoob.com>, 2002.
+# Nuriddin Aminagha <nuriddin@haydarlinux.org>, 2003.
+# محمد سعد  Mohamed SAAD <metehyi@free.fr>, 2006.
+# Youssef Chahibi <chahibi@gmail.com>, 2007, 2008.
+# Abdelrahman <abd_elrahman_em@yahoo.com>, 2007, 2008.
+# Zayed Al-Saidi <zayed.alsaidi@gmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: koffice\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2022-01-22 22:27+0400\n"
+"Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
+"Language-Team: ar\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Lokalize 21.07.70\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+#, fuzzy
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "لا يمكن إنشاء الملف للحفظ"
+
+#: common/KReportDesign.cpp:159
+#, fuzzy
+#| msgid "Error in embedded document"
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "خطأ في المستند المضمن"
+
+#: common/KReportItemBase.cpp:75
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "الاسم"
+
+#: common/KReportItemBase.cpp:75
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "اسم الكائن"
+
+#: common/KReportItemBase.cpp:78
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "الموقع"
+
+#: common/KReportItemBase.cpp:79
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "الحجم"
+
+#: common/KReportItemBase.cpp:112
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "مصدر البيانات"
+
+#: common/KReportItemLine.cpp:80
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "موقع البداية"
+
+#: common/KReportItemLine.cpp:81
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "الموضع"
+
+#: common/KReportItemLine.cpp:83
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "عرض الخط"
+
+#: common/KReportItemLine.cpp:85
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "لون الخطّ"
+
+#: common/KReportItemLine.cpp:86
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "نمط الخطّ"
+
+#: common/KReportSectionData.cpp:164
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "القسم"
+
+#: common/KReportSectionData.cpp:166
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "الارتفاع"
+
+#: common/KReportSectionData.cpp:170
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "لون الخلفيّة"
+
+#: common/KReportUnit.cpp:136
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "غير صالح"
+
+#: common/KReportUnit.cpp:138
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "مليمترات (مم)"
+
+#: common/KReportUnit.cpp:140
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "سنتيمترات (سم)"
+
+#: common/KReportUnit.cpp:142
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "ديسيمترات (دسم)"
+
+#: common/KReportUnit.cpp:144
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "بوصة (بوصة)"
+
+#: common/KReportUnit.cpp:146
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr ""
+
+#: common/KReportUnit.cpp:148
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "سيسيرو (cc)"
+
+#: common/KReportUnit.cpp:150
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "نقاط (نق)"
+
+#: common/KReportUnit.cpp:152
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "بكسلات (بك)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr "وحدة غير مدعومة"
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "اغلق"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr "نقطة"
+
+#: items/check/KReportItemCheck.cpp:80
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "النّمط"
+
+#: items/check/KReportItemCheck.cpp:84
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "لون المقدّمة"
+
+#: items/check/KReportItemCheck.cpp:86
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "عرض الخط:"
+
+#: items/check/KReportItemCheck.cpp:88
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "لون الخطّ"
+
+#: items/check/KReportItemCheck.cpp:89
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "نمط الخطّ"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "القيمة"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "القيمة"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:94
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "اليسار"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "الوسط"
+
+#: items/field/KReportItemField.cpp:94
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "اليمين"
+
+#: items/field/KReportItemField.cpp:96
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "محاذاة أفقية"
+
+#: items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "الأعلى"
+
+#: items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "الأسفل"
+
+#: items/field/KReportItemField.cpp:102
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "محاذاة العموديّة"
+
+#: items/field/KReportItemField.cpp:104
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "الخط"
+
+#: items/field/KReportItemField.cpp:106
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "لون الخلفيّة"
+
+#: items/field/KReportItemField.cpp:107
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "لون المقدّمة"
+
+#: items/field/KReportItemField.cpp:109
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "شفافيّة الخلفيّة:"
+
+#: items/field/KReportItemField.cpp:114
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "عرض الخط"
+
+#: items/field/KReportItemField.cpp:116
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "لون الخطّ"
+
+#: items/field/KReportItemField.cpp:117
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "نمط الخطّ"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr "لفّ الكلمات"
+
+#: items/field/KReportItemField.cpp:120
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr "قصاصة"
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "الشارع :"
+
+#: items/image/KReportItemImage.cpp:120
+#, fuzzy
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "أعد تحجيم"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "القيمة"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:91
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "الوصف"
+
+#: items/label/KReportItemLabel.cpp:94
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "اليسار"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "الوسط"
+
+#: items/label/KReportItemLabel.cpp:94
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "اليمين"
+
+#: items/label/KReportItemLabel.cpp:96
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "اضبط المحاذاة الأفقية"
+
+#: items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "الأعلى"
+
+#: items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "الأسفل"
+
+#: items/label/KReportItemLabel.cpp:102
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "محاذاة العموديّة"
+
+#: items/label/KReportItemLabel.cpp:104
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "الخط"
+
+#: items/label/KReportItemLabel.cpp:106
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "لون الخلفيّة"
+
+#: items/label/KReportItemLabel.cpp:107
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "لون المقدّمة"
+
+#: items/label/KReportItemLabel.cpp:109
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "شفافيّة الخلفيّة:"
+
+#: items/label/KReportItemLabel.cpp:114
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "وزن الخط"
+
+#: items/label/KReportItemLabel.cpp:116
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "لون الخطّ"
+
+#: items/label/KReportItemLabel.cpp:117
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "نمط الخطّ"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "القيمة"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:119
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "اليسار"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "الوسط"
+
+#: items/text/KReportItemText.cpp:119
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "اليمين"
+
+#: items/text/KReportItemText.cpp:121
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "اضبط المحاذاة الأفقية"
+
+#: items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "الأعلى"
+
+#: items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "الأسفل"
+
+#: items/text/KReportItemText.cpp:127
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "محاذاة العموديّة"
+
+#: items/text/KReportItemText.cpp:129
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "الخط"
+
+#: items/text/KReportItemText.cpp:131
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "لون الخلفيّة"
+
+#: items/text/KReportItemText.cpp:132
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "لون المقدّمة"
+
+#: items/text/KReportItemText.cpp:134
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "عرض الخط:"
+
+#: items/text/KReportItemText.cpp:136
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "لون الخطّ"
+
+#: items/text/KReportItemText.cpp:137
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "نمط الخطّ"
+
+#: items/text/KReportItemText.cpp:138
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "شفافيّة الخلفيّة"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, fuzzy, qt-format
+#| msgid "Script File"
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr "ملف سرد أوامر"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+#, fuzzy
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "خطأ داخلي"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:676
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "معاينة الصفحة"
+
+#: wrtembed/KReportDesigner.cpp:680
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "معاينة الصفحة"
+
+#: wrtembed/KReportDesigner.cpp:684
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "معاينة الصفحة"
+
+#: wrtembed/KReportDesigner.cpp:688
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "معاينة الصفحة"
+
+#: wrtembed/KReportDesigner.cpp:692
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "معاينة الصفحة"
+
+#: wrtembed/KReportDesigner.cpp:696
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "تذييل"
+
+#: wrtembed/KReportDesigner.cpp:700
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "تذييل"
+
+#: wrtembed/KReportDesigner.cpp:704
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "تذييل"
+
+#: wrtembed/KReportDesigner.cpp:708
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "تذييل"
+
+#: wrtembed/KReportDesigner.cpp:712
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "تذييل"
+
+#: wrtembed/KReportDesigner.cpp:716
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "ترويسة"
+
+#: wrtembed/KReportDesigner.cpp:720
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "تذييل"
+
+#: wrtembed/KReportDesigner.cpp:808
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "التقرير"
+
+#: wrtembed/KReportDesigner.cpp:813
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "العنوان"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "تذييل"
+
+#: wrtembed/KReportDesigner.cpp:818
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "حجم الصفحة"
+
+#: wrtembed/KReportDesigner.cpp:821
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "حجم الصفحة"
+
+#: wrtembed/KReportDesigner.cpp:825
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "بالطّول"
+
+#: wrtembed/KReportDesigner.cpp:825
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "بالعرض"
+
+#: wrtembed/KReportDesigner.cpp:827
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "اتّجاه الصّفحة"
+
+#: wrtembed/KReportDesigner.cpp:832
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "حجم الصفحة"
+
+#: wrtembed/KReportDesigner.cpp:833
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "أظهر الشبكة"
+
+#: wrtembed/KReportDesigner.cpp:834
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "مطابقة للشبكة"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:841
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "الهوامش"
+
+#: wrtembed/KReportDesigner.cpp:843
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "المسافة البادئة اليمنى"
+
+#: wrtembed/KReportDesigner.cpp:845
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "الهوامش"
+
+#: wrtembed/KReportDesigner.cpp:847
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "الهوامش"
+
+#: wrtembed/KReportDesigner.cpp:869
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "كائن"
+
+#: wrtembed/KReportDesigner.cpp:1067
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "قصّ"
+
+#: wrtembed/KReportDesigner.cpp:1071
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "انسخ"
+
+#: wrtembed/KReportDesigner.cpp:1076
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "ألصق"
+
+#: wrtembed/KReportDesigner.cpp:1087
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "احذف"
+
+#: wrtembed/KReportDesigner.cpp:1129
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "السّطر"
+
+#: wrtembed/KReportDesigner.cpp:1476
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "السّطر"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr "ق&صّ"
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr "قص التحديد إلى الحافظة"
+
+#: wrtembed/KReportDesigner.cpp:1525
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "ا&نسخ"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr "انسخ التحديد إلى الحافظ"
+
+#: wrtembed/KReportDesigner.cpp:1531
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "أ&لصق"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr "ألصق محتوى الحافظة"
+
+#: wrtembed/KReportDesigner.cpp:1544
+#, fuzzy
+#| msgid "Collection"
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "مجموعة"
+
+#: wrtembed/KReportDesigner.cpp:1547
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr "ارفع"
+
+#: wrtembed/KReportDesigner.cpp:1549
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr "اخفض"
+
+#: wrtembed/KReportDesignerSection.cpp:126
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "التّفاصيل"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+#, fuzzy
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "اجمع الأشكال"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "العمود:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "الفرز:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+#, fuzzy
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "اعرض ال&شبيكة"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+#, fuzzy
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "اعرض ال&شبيكة"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+
+#: wrtembed/KReportRuler_p.cpp:1472
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "المسافة البادئة للسطر الأول"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "المسافة البادئة اليسرى"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "المسافة البادئة اليمنى"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr "أضف..."
+
+#: wrtembed/KReportSectionEditor.cpp:74
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "حرّر..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "احذف"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "انقل لأعلى"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "انقل لأسفل"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr "تصاعديًّا"
+
+#: wrtembed/KReportSectionEditor.cpp:312
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr "تنازليًّا"
+
+#: wrtembed/KReportSectionEditor.ui:29
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "اعرض ال&شبيكة"
+
+#: wrtembed/KReportSectionEditor.ui:36
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "اعرض ال&شبيكة"
+
+#: wrtembed/KReportSectionEditor.ui:43
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "معاينة الصفحة"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "أول صفحة:"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "انسخ الصفحة"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "انسخ الصفحة"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "الصّفحة الأخيرة:"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "انسخ الصفحة"
+
+#: wrtembed/KReportSectionEditor.ui:130
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "تذييل"
+
+#: wrtembed/KReportSectionEditor.ui:217
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "اجمع الأشكال"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, fuzzy, qt-format
+#| msgid "%1%"
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "اضبط لعرض الصفحة"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "ناسب الصفحة"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr "البكسلات الفعلية"
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "لائم إلى عرض النّصّ"
+
+#, fuzzy
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "US Letter"
+
+#, fuzzy
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "US Legal"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "مخصص"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B6"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B5"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B4"
+#~ msgstr "B"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "US Executive"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B0"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B1"
+#~ msgstr "B"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "ISO B10"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B2"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B3"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "Comma"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "فاصلة"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "ISO DL"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Folio"
+#~ msgstr "US Folio"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "US Ledger"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Tabloid"
+#~ msgstr "US Tabloid"
+
+#, fuzzy
+#~| msgid "Postal code:"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "الرمز البريدي:"
+
+#, fuzzy
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "احذف"
+
+#, fuzzy
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "احذف"
+
+#, fuzzy
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "احذف"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "الشاشة"
+
+#, fuzzy
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "الارتفاع:"
+
+#, fuzzy
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "الموضع"
+
+#, fuzzy
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "ال&حجم:"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "ISO A3"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "ISO A4"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "ISO A5"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "ISO B5"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "US Executive"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "ISO A0"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "ISO A1"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "ISO A2"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "ISO A6"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "ISO A7"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "ISO A8"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "ISO A9"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "ISO B0"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "ISO B1"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "ISO B2"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "ISO B3"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "ISO B4"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "ISO B6"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "ISO C5"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Common 10"
+#~ msgstr "US Common 10"
+
+#, fuzzy
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "الارتفاع:"
+
+#, fuzzy
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Weight"
+#~ msgstr "عرض الخط:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "اللون"
+
+#, fuzzy
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "حد الخط"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "احذف"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "القيمة"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Weight"
+#~ msgstr "عرض الخط:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "اللون"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "حد الخط"
+
+#, fuzzy
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "احذف"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "القيمة"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "اليسار:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "التعليق"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "يمين:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "اضبط المحاذاة الأفقية"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "الأعلى:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "تكبير"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "اضبط المحاذاة الرأسية"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "اضبط نوع النقطة"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "&لون الخلفية:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Weight"
+#~ msgstr "عرض الخط:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "اللون"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "حد الخط"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "احذف"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "القيمة"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "اليسار:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "التعليق"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "يمين:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "اضبط المحاذاة الأفقية"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "الأعلى:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "تكبير"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "اضبط المحاذاة الرأسية"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "اضبط نوع النقطة"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Weight"
+#~ msgstr "عرض الخط:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "اللون"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "حد الخط"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "&لون الخلفية:"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "احذف"
+
+#, fuzzy
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "مدير سرد الأوامر"
+
+#, fuzzy
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "اسم اللون:"
+
+#, fuzzy
+#~ msgid "Draw path"
+#~ msgstr "اكسر المسار الفرعي"
+
+#, fuzzy
+#~ msgid "Freehand path"
+#~ msgstr "اكسر المسار الفرعي"
+
+#, fuzzy
+#~ msgid "Angle Constraints"
+#~ msgstr "غيِّر الاتصال"
+
+#, fuzzy
+#~ msgid "Precision:"
+#~ msgstr "الموقع:"
+
+#~ msgid "Curve"
+#~ msgstr "منحنى"
+
+#~ msgid "Straight"
+#~ msgstr "مستقيم"
+
+#, fuzzy
+#~ msgid "Combine angle:"
+#~ msgstr "امزج المسارات"
+
+#, fuzzy
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr "تعذر تصدير الملف."
+
+#, fuzzy
+#~ msgid "The database \"%1\" does not exist."
+#~ msgstr "الملف %1 ليس موجودا."
+
+#, fuzzy
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "الملف %1 ليس موجودا."
+
+#, fuzzy
+#~ msgid "Database file \"%1\" is not writable."
+#~ msgstr "الملف %1 ليس موجودا."
+
+#, fuzzy
+#~ msgid "Creating table failed."
+#~ msgstr "انشئ شكلاً"
+
+#, fuzzy
+#~ msgid "Cannot create table without fields."
+#~ msgstr "لا يمكن إنشاء التخزين"
+
+#, fuzzy
+#~ msgid "Could not create the same table \"%1\" twice."
+#~ msgstr "لم يمكن قراءة الحزمة \"%1\"."
+
+#, fuzzy
+#~ msgid "Table \"%1\" does not exist."
+#~ msgstr "الملف %1 ليس موجودا."
+
+#, fuzzy
+#~ msgid "Could not remove object's data."
+#~ msgstr ""
+#~ "تعذر تحميل الكائن المضمن:\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgid "Could not alter table \"%1\" using the same table as destination."
+#~ msgstr ""
+#~ "لم يمكن إلغاء تثبيت حزمة سرد الأوامر \"%1\" حيث أن سرد الأوامر ليس مثبتا."
+
+#, fuzzy
+#~ msgid "Could not rename table \"%1\" using the same name."
+#~ msgstr "تعذر قراءة بداية الملف."
+
+#, fuzzy
+#~ msgid "Query \"%1\" does not exist."
+#~ msgstr "الملف %1 ليس موجودا."
+
+#, fuzzy
+#~ msgid "Begin transaction failed."
+#~ msgstr "غيِّر الاتصال"
+
+#, fuzzy
+#~ msgid "Transaction already started."
+#~ msgstr "هذا الاسم مستخدم مسبقا."
+
+#, fuzzy
+#~ msgid "Column <resource>%1</resource> does not exist in the query."
+#~ msgstr "الملف %1 ليس موجودا."
+
+#, fuzzy
+#~| msgid "Error while saving embedded documents"
+#~ msgctxt "Extended schema for a table: loading error"
+#~ msgid "Error while loading extended table schema."
+#~ msgstr "خطأ أثناء حفظ المستندات المضمنة"
+
+#, fuzzy
+#~ msgid ""
+#~ "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~ "XML data: %4"
+#~ msgstr ""
+#~ "خطأ تحليل في %1 عند السطر %2, العمود %3\n"
+#~ "رسالة الخطأ: %4"
+
+#, fuzzy
+#~ msgid "Could not insert record because there is no master table specified."
+#~ msgstr "لم يمكن قراءة الحزمة \"%1\"."
+
+#, fuzzy
+#~ msgid "Could not delete record because there is no master table specified."
+#~ msgstr "لم يمكن قراءة الحزمة \"%1\"."
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Unknown error."
+#~ msgstr "خطأ مجهول"
+
+#, fuzzy
+#~| msgid "Date: %1"
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "التاريخ: %1"
+
+#, fuzzy
+#~ msgid "Could not set value of database property \"%1\"."
+#~ msgstr "لم يمكن قراءة الحزمة \"%1\"."
+
+#, fuzzy
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "لم يمكن قراءة الحزمة \"%1\"."
+
+#, fuzzy
+#~ msgid "Could not read database properties."
+#~ msgstr "تعذر قراءة بداية الملف."
+
+#, fuzzy
+#~ msgid "Could not find database driver \"%1\"."
+#~ msgstr "لم يمكن قراءة الحزمة \"%1\"."
+
+#, fuzzy
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "لم يمكن قراءة الحزمة \"%1\"."
+
+#, fuzzy
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "لم يمكن قراءة الحزمة \"%1\"."
+
+#, fuzzy
+#~ msgid "Field not found"
+#~ msgstr "الملف غير موجود"
+
+#, fuzzy
+#~ msgid "Could not access the table directly using its name"
+#~ msgstr "لا يمكن إنشاء الملف للحفظ"
+
+#, fuzzy
+#~ msgid "Table not found"
+#~ msgstr "الملف غير موجود"
+
+#, fuzzy
+#~ msgid "Table \"%1\" has no \"%2\" field."
+#~ msgstr "الملف %1 ليس موجودا."
+
+#, fuzzy
+#~ msgid "Short Integer Number"
+#~ msgstr "العدد:"
+
+#, fuzzy
+#~ msgid "Integer Number"
+#~ msgstr "العدد:"
+
+#, fuzzy
+#~ msgid "Yes/No Value"
+#~ msgstr "زد الإزاحة"
+
+#~ msgid "Date"
+#~ msgstr "التاريخ"
+
+#, fuzzy
+#~ msgid "Date and Time"
+#~ msgstr "التاريخ و الوقت"
+
+#, fuzzy
+#~ msgid "Time"
+#~ msgstr "الوقت:"
+
+#, fuzzy
+#~ msgid "Single Precision Number"
+#~ msgstr "رقم المراجعة:"
+
+#, fuzzy
+#~ msgid "Double Precision Number"
+#~ msgstr "رقم المراجعة:"
+
+#~ msgid "Text"
+#~ msgstr "النص"
+
+#, fuzzy
+#~ msgid "Long Text"
+#~ msgstr "النص"
+
+#~ msgid "Object"
+#~ msgstr "كائن"
+
+#, fuzzy
+#~ msgid "Floating Point Number"
+#~ msgstr "غير المعامل"
+
+#, fuzzy
+#~ msgid "Date/Time"
+#~ msgstr "التاريخ و الوقت"
+
+#, fuzzy
+#~ msgid "Syntax error."
+#~ msgstr "خطأ داخلي"
+
+#, fuzzy
+#~ msgid "Error"
+#~ msgstr "خطأ!"
+
+#, fuzzy
+#~ msgid "Error near \"%1\"."
+#~ msgstr "خطأ داخلي"
+
+#, fuzzy
+#~ msgid "Server's port number"
+#~ msgstr "رقم المراجعة:"
+
+#, fuzzy
+#~ msgid "Record inserting failed."
+#~ msgstr "انشئ شكلاً"
+
+#, fuzzy
+#~ msgid "Record deleting failed."
+#~ msgstr "خطأ عند حذف الطبقات"
+
+#, fuzzy
+#~ msgid "Test Connection"
+#~ msgstr "غيِّر الاتصال"
+
+#, fuzzy
+#~ msgid "Number"
+#~ msgstr "العدد:"
+
+#, fuzzy
+#~ msgid "Image"
+#~ msgstr "للصفحة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr "غيِّر الاتصال"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr "غير المعامل"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "حوّل إلى المسار"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath at points"
+#~ msgstr "اكسر المسار الفرعي عند نقاط"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Combine paths"
+#~ msgstr "امزج المسارات"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move control point"
+#~ msgstr "انقل نقطة التحكم"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set fill rule"
+#~ msgstr "اضبط قاعدة الملء"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "أدرج نقطة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "ادمج النقاط"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move points"
+#~ msgstr "انقل النقاط"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove points"
+#~ msgstr "أزل النقاط"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set point type"
+#~ msgstr "اضبط نوع النقطة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reverse paths"
+#~ msgstr "اعكس المسارات"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath"
+#~ msgstr "اكسر المسار الفرعي"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to curves"
+#~ msgstr "غيّر القطع إلى منحنيات"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to lines"
+#~ msgstr "غيّر القطع إلى خطوط"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set marker"
+#~ msgstr "اضبط الحد"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Align shapes"
+#~ msgstr "حاذِ الأشكال"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Clip Shape"
+#~ msgstr "شكل بيضوي"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr "انشئ شكلاً"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shape"
+#~ msgid_plural "Delete shapes"
+#~ msgstr[0] "احذف الشكل"
+#~ msgstr[1] "احذف الشكل"
+#~ msgstr[2] "احذف الشكل"
+#~ msgstr[3] "احذف الشكل"
+#~ msgstr[4] "احذف الشكل"
+#~ msgstr[5] "احذف الشكل"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Distribute shapes"
+#~ msgstr "وزع الأشكال"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr "اجمع الأشكال"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Keep Aspect Ratio"
+#~ msgstr "حافظ على نسبة القياس"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Lock shapes"
+#~ msgstr "اقفل الأشكال"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move shapes"
+#~ msgstr "انقل الأشكال"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr "انشئ أشكالاً"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reorder shapes"
+#~ msgstr "أعد ترتيب الأشكال"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Shape RunAround"
+#~ msgstr "غير المعامل"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Shear shapes"
+#~ msgstr "قص الأشكال"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Resize shapes"
+#~ msgstr "أعد تحجيم الأشكال"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set stroke"
+#~ msgstr "اضبط الحد"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr "إعتام"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shape"
+#~ msgstr "شكل بيضوي"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shapes"
+#~ msgstr "شكل بيضوي"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr "فك تجميع الأشكال"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Close subpath"
+#~ msgstr "اغلق المسار الفرعي"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Join subpaths"
+#~ msgstr "ضم المسارات الفرعية"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove subpath"
+#~ msgstr "أزل المسار الفرعي"
+
+#~ msgid "Standard"
+#~ msgstr "قياسي"
+
+#~ msgid "Lines"
+#~ msgstr "الخطوط"
+
+#~ msgid "Type:"
+#~ msgstr "النوع:"
+
+#, fuzzy
+#~ msgid "Tie"
+#~ msgstr "الوقت:"
+
+#, fuzzy
+#~ msgid "A connection between two other shapes"
+#~ msgstr "الشكل الذي يظهر اتصالا بين شكلين آخرين"
+
+#, fuzzy
+#~ msgid "Shows or hides grid"
+#~ msgstr "اعرض ال&شبيكة"
+
+#, fuzzy
+#~ msgid "Simple path shape"
+#~ msgstr "شكل مسار بسيط"
+
+#~ msgid "A simple path shape"
+#~ msgstr "شكل مسار بسيط"
+
+#~ msgid "%1 Options"
+#~ msgstr "خيارات %1"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Shapes"
+#~ msgstr "الصق الأشكال"
+
+#~ msgid "Active tool: %1"
+#~ msgstr "الأداة النشطة: %1"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "الصق الصفحة"
+
+#, fuzzy
+#~ msgid "Nodes"
+#~ msgstr "لا يوجد"
+
+#, fuzzy
+#~ msgid "Guide lines"
+#~ msgstr "الخطوط الأدلة"
+
+#~ msgid "Create object"
+#~ msgstr "انشئ كائناً"
+
+#~ msgid "Pan"
+#~ msgstr "Pan"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Segment"
+#~ msgstr "غيِّر الاتصال"
+
+#~ msgid "Corner point"
+#~ msgstr "نقطة الركن"
+
+#~ msgid "Smooth point"
+#~ msgstr "نقطة ملساء"
+
+#~ msgid "Symmetric Point"
+#~ msgstr "نقطة متماثلة"
+
+#, fuzzy
+#~ msgid "Make curve point"
+#~ msgstr "ادمج النقاط"
+
+#, fuzzy
+#~ msgid "Make line point"
+#~ msgstr "ادمج النقاط"
+
+#~ msgid "Segment to Line"
+#~ msgstr "قطعة إلى خط"
+
+#~ msgid "Segment to Curve"
+#~ msgstr "قطعة إلى منحنى"
+
+#~ msgid "Insert point"
+#~ msgstr "أدرج نقطة"
+
+#~ msgid "Remove point"
+#~ msgstr "أزل النقطة"
+
+#~ msgid "Break at point"
+#~ msgstr "اكسر عند النقطة"
+
+#~ msgid "Break at segment"
+#~ msgstr "اكسر عند القطعة"
+
+#~ msgid "Join with segment"
+#~ msgstr "ضم مع القطعة"
+
+#~ msgid "Merge points"
+#~ msgstr "ادمج النقاط"
+
+#~ msgid "To Path"
+#~ msgstr "إلى المسار"
+
+#, fuzzy
+#~ msgid "Line/Curve"
+#~ msgstr "منحنى"
+
+#, fuzzy
+#~ msgid "Drag to move control point."
+#~ msgstr "انقل نقطة التحكم"
+
+#, fuzzy
+#~ msgid "Press B to break path at selected point."
+#~ msgstr "اكسر المسار الفرعي عند نقاط"
+
+#, fuzzy
+#~| msgid "Path editing tool"
+#~ msgid "Path editing"
+#~ msgstr "أداة تحرير المسار"
+
+#~ msgid "Zoom"
+#~ msgstr "تكبير"
+
+#, fuzzy
+#~ msgid "Zoom In"
+#~ msgstr "تكبير"
+
+#, fuzzy
+#~ msgid "Zoom Out"
+#~ msgstr "تكبير"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Convert To Path"
+#~ msgstr "حوّل إلى المسار"
+
+#~ msgid "Scripts"
+#~ msgstr "سرد الأوامر"
+
+#~ msgid "Script Manager"
+#~ msgstr "مدير سرد الأوامر"
+
+#~ msgid "Execute Script File..."
+#~ msgstr "نفذ ملف سرد أوامر..."
+
+#~ msgid "Script Manager..."
+#~ msgstr "مدير سرد الأوامر..."
+
+#~ msgid "Execute Script File"
+#~ msgstr "نفذ ملف سرد أوامر"
+
+#~ msgid "Install Script Package"
+#~ msgstr "ثبت حزمة سرد أوامر"
+
+#~ msgid "Could not read the package \"%1\"."
+#~ msgstr "لم يمكن قراءة الحزمة \"%1\"."
+
+#~ msgid "The package \"%1\" does not contain a valid install.rc file."
+#~ msgstr "الحزمة \"%1\" لا تحتوي ملف install.rc صالح."
+
+#~ msgid "Failed to parse the install.rc file at package \"%1\"."
+#~ msgstr "فشل في تحليل ملف install.rc للحزمة \"%1\"."
+
+#~ msgid ""
+#~ "Failed to determinate location where the package \"%1\" should be "
+#~ "installed to."
+#~ msgstr "فشل في تحديد المكان حيث يجب للحزمة \"%1\" أن تثبت."
+
+#~ msgid ""
+#~ "A script package with the name \"%1\" already exists. Replace this "
+#~ "package?"
+#~ msgstr "هناك حزمة سرد أوامر بالاسم \"%1\" موجودة فعلا. هل تستبدل الحزمة؟"
+
+#~ msgid "Replace"
+#~ msgstr "استبدل"
+
+#~ msgid ""
+#~ "Could not uninstall this script package. You may not have sufficient "
+#~ "permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "لم يمكن إلغاء تثبيت حزمة سرد الأوامر هذه. ربما ليس لديك صلاحيات كافية "
+#~ "لحذف المجلد \"%1\"."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\" since the script is not "
+#~ "installed."
+#~ msgstr ""
+#~ "لم يمكن إلغاء تثبيت حزمة سرد الأوامر \"%1\" حيث أن سرد الأوامر ليس مثبتا."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\". You may not have "
+#~ "sufficient permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "لم يمكن إلغاء تثبيت حزمة سرد الأوامر \"%1\". ربما ليس لديك صلاحيات كافية "
+#~ "لحذف المجلد \"%1\"."
+
+#~ msgid "Save"
+#~ msgstr "احفظ"
+
+#~ msgid ""
+#~ "<qt>This wizard will guide you through the proccess of adding a new "
+#~ "resource to your scripts.</qt>"
+#~ msgstr ""
+#~ "<qt>سيرشدك هذا المعالج خلال عملية إضافة مورد جديد لبرامج سرد الأوامر.</qt>"
+
+#~ msgid "Add script file"
+#~ msgstr "أضف ملف سرد أوامر"
+
+#~ msgid "Add collection folder"
+#~ msgstr "أضف مجلد مجموعة"
+
+#~ msgid "Install script package file"
+#~ msgstr "ثبت ملف حزمة سرد أوامر"
+
+#~ msgid "Install online script package"
+#~ msgstr "ثبت حزمة سرد أوامر عبر الخط"
+
+#~ msgid "Add"
+#~ msgstr "أضف"
+
+#~ msgid "Script"
+#~ msgstr "سرد أوامر"
+
+#~ msgid "Collection"
+#~ msgstr "مجموعة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master slide"
+#~ msgstr "غير المعامل"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master page"
+#~ msgstr "غير المعامل"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "تخطيط الصفحة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display master background"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display slide background"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display page background"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Show master shapes"
+#~ msgstr "اعرض الصفحات الرئيسية"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Hide master shapes"
+#~ msgstr "قص الأشكال"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] "احذف الشكل"
+#~ msgstr[1] "احذف الشكل"
+#~ msgstr[2] "احذف الشكل"
+#~ msgstr[3] "احذف الشكل"
+#~ msgstr[4] "احذف الشكل"
+#~ msgstr[5] "احذف الشكل"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "احذف الصفحة"
+#~ msgstr[1] "احذف الصفحة"
+#~ msgstr[2] "احذف الصفحة"
+#~ msgstr[3] "احذف الصفحة"
+#~ msgstr[4] "احذف الصفحة"
+#~ msgstr[5] "احذف الصفحة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr "أدرج فهرساً"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr "أدرج صفحة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "انقل الأشكال"
+#~ msgstr[1] "انقل الأشكال"
+#~ msgstr[2] "انقل الأشكال"
+#~ msgstr[3] "انقل الأشكال"
+#~ msgstr[4] "انقل الأشكال"
+#~ msgstr[5] "انقل الأشكال"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] "انقل الصفحة"
+#~ msgstr[1] "انقل الصفحة"
+#~ msgstr[2] "انقل الصفحة"
+#~ msgstr[3] "انقل الصفحة"
+#~ msgstr[4] "انقل الصفحة"
+#~ msgstr[5] "انقل الصفحة"
+
+#, fuzzy
+#~ msgid "Configure"
+#~ msgstr "أكد الحفظ"
+
+#, fuzzy
+#~ msgid "Grid"
+#~ msgstr "اعرض ال&شبيكة"
+
+#, fuzzy
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "المستند"
+
+#, fuzzy
+#~ msgid "Document Settings"
+#~ msgstr "معلومات المستند"
+
+#, fuzzy
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "المؤلف"
+
+#~ msgid "Author"
+#~ msgstr "المؤلف"
+
+#, fuzzy
+#~ msgid "Master Slide"
+#~ msgstr "الصق الصفحة"
+
+#, fuzzy
+#~ msgid "Master Page"
+#~ msgstr "الصق الصفحة"
+
+#, fuzzy
+#~ msgid "Page  %1"
+#~ msgstr "للصفحة"
+
+#~ msgid "Layer"
+#~ msgstr "طبقة"
+
+#~ msgid "Group"
+#~ msgstr "المجموعة"
+
+#~ msgid "Shape"
+#~ msgstr "الشكل"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "الصق الصفحة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "انقل الصفحة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "انشئ طبقة"
+
+#, fuzzy
+#~ msgid "Slide"
+#~ msgstr "ال&حجم:"
+
+#~ msgid "Visible"
+#~ msgstr "مرئي"
+
+#~ msgid "Locked"
+#~ msgstr "مقفل"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reparent shapes"
+#~ msgstr "غيّر أصول الأشكال"
+
+#, fuzzy
+#~ msgid "&Move Here"
+#~ msgstr "انقل الصفحة"
+
+#, fuzzy
+#~ msgid "&Copy Here"
+#~ msgstr "أخضر"
+
+#, fuzzy
+#~ msgid "C&ancel"
+#~ msgstr "غيّر"
+
+#~ msgid "Document"
+#~ msgstr "المستند"
+
+#, fuzzy
+#~ msgid "Add a new slide or layer"
+#~ msgstr "أضف طبقة جديدة"
+
+#, fuzzy
+#~ msgid "Add a new page or layer"
+#~ msgstr "أضف طبقة جديدة"
+
+#~ msgid "Page"
+#~ msgstr "للصفحة"
+
+#~ msgid "Delete selected objects"
+#~ msgstr "احذف الكائنات المنتقاة"
+
+#~ msgid "Raise selected objects"
+#~ msgstr "ارفع الكائنات المنتقاة"
+
+#~ msgid "Lower selected objects"
+#~ msgstr "اخفض الكائنات المنتقاة"
+
+#, fuzzy
+#~ msgid "View mode"
+#~ msgstr "حد الخط"
+
+#~ msgid "Enter the name of the new layer:"
+#~ msgstr "أدخل اسم الطبقة الجديدة"
+
+#~ msgid "New Layer"
+#~ msgstr "طبقة جديدة"
+
+#~ msgid "New layer"
+#~ msgstr "طبقة جديدة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "انشئ طبقة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "احذف الطبقة"
+
+#~ msgid "Could not delete all layers. At least one layer is required."
+#~ msgstr "لا يمكن حذف كل الطبقات. هناك طبقة واحدة على الأقل مطلوبة."
+
+#~ msgid "Error deleting layers"
+#~ msgstr "خطأ عند حذف الطبقات"
+
+#, fuzzy
+#~ msgid "Add a new slide"
+#~ msgstr "أضف طبقة جديدة"
+
+#, fuzzy
+#~ msgid "Add a new page"
+#~ msgstr "أضف طبقة جديدة"
+
+#, fuzzy
+#~ msgid "Page %1"
+#~ msgstr "للصفحة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] "الصق الصفحة"
+#~ msgstr[1] "الصق الصفحة"
+#~ msgstr[2] "الصق الصفحة"
+#~ msgstr[3] "الصق الصفحة"
+#~ msgstr[4] "الصق الصفحة"
+#~ msgstr[5] "الصق الصفحة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] "الصق الصفحة"
+#~ msgstr[1] "الصق الصفحة"
+#~ msgstr[2] "الصق الصفحة"
+#~ msgstr[3] "الصق الصفحة"
+#~ msgstr[4] "الصق الصفحة"
+#~ msgstr[5] "الصق الصفحة"
+
+#, fuzzy
+#~ msgid "Tools"
+#~ msgstr "Pan Tool"
+
+#, fuzzy
+#~ msgid "D&elete"
+#~ msgstr "احذف"
+
+#~ msgid "Show Master Pages"
+#~ msgstr "اعرض الصفحات الرئيسية"
+
+#~ msgid "Show Rulers"
+#~ msgstr "اعرض المساطر"
+
+#~ msgid "Show/hide the view's rulers"
+#~ msgstr "اعرض/اخف مساطر العرض"
+
+#~ msgid "Insert Page"
+#~ msgstr "أدرج صفحة"
+
+#~ msgid "Insert a new page after the current one"
+#~ msgstr "أدرج صفحة جديدة بعد الحالية"
+
+#~ msgid "Copy Page"
+#~ msgstr "انسخ الصفحة"
+
+#~ msgid "Copy the current page"
+#~ msgstr "انسخ الصفحة الحالية"
+
+#~ msgid "Delete Page"
+#~ msgstr "احذف الصفحة"
+
+#, fuzzy
+#~ msgid "Delete the current page"
+#~ msgstr "انسخ الصفحة الحالية"
+
+#, fuzzy
+#~ msgid "Master Page..."
+#~ msgstr "الصق الصفحة"
+
+#, fuzzy
+#~ msgid "Page Layout..."
+#~ msgstr "تخطيط الصفحة"
+
+#~ msgid "Variable"
+#~ msgstr "متغير"
+
+#, fuzzy
+#~ msgid "Import Document..."
+#~ msgstr "استورد مستندا"
+
+#, fuzzy
+#~ msgid "Configure..."
+#~ msgstr "طابق إلى الشبكة"
+
+#, fuzzy
+#~ msgid "Import Slideshow"
+#~ msgstr "استورد أسطر:"
+
+#~ msgid "Import Document"
+#~ msgstr "استورد مستندا"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not import\n"
+#~ "%1"
+#~ msgstr ""
+#~ "تعذر فتح\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr "غير المعامل"
+
+#, fuzzy
+#~ msgid "Set image ..."
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~ msgid "Background"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~ msgid "Page Background"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~ msgid "Page Design"
+#~ msgstr "معاينة الصفحة"
+
+#, fuzzy
+#~ msgid "Use background of master page"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~ msgid "Use background of master slide"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~ msgid "Display shapes of master page"
+#~ msgstr "غير المعامل"
+
+#, fuzzy
+#~ msgid "Display shapes of master slide"
+#~ msgstr "غير المعامل"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change slide background image"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page background image"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "الصق الصفحة"
+
+#, fuzzy
+#~ msgid "Slide %1/%2"
+#~ msgstr "ال&حجم:"
+
+#, fuzzy
+#~ msgid "Master Page %1/%2"
+#~ msgstr "الصق الصفحة"
+
+#, fuzzy
+#~ msgid "Page %1/%2"
+#~ msgstr "للصفحة"
+
+#, fuzzy
+#~ msgid "Field"
+#~ msgstr "ملف"
+
+#, fuzzy
+#~ msgid "Label"
+#~ msgstr "بطاقة نص1:"
+
+#, fuzzy
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1%"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "غيّر"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "غيّر نوع الملف"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "احذف"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "النص"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "احذف الشكل"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "احذف"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "أدرج نقطة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr "أدرج فهرساً"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Right"
+#~ msgstr "أدرج نقطة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr "أدرج نقطة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Below"
+#~ msgstr "ادرج فاصلا"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "أدرج صفحة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List Numbering"
+#~ msgstr "غير المعامل"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "تنسيق"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Direct Paragraph Formatting"
+#~ msgstr "اضبط أسلوب الفقرة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr "انشئ أشكالاً"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr "عرض خط مخصص"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "الصق الصفحة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "للصفحة"
+
+#, fuzzy
+#~ msgid "Index Reference"
+#~ msgstr "مرجع النص"
+
+#~ msgid "Text Reference"
+#~ msgstr "مرجع النص"
+
+#, fuzzy
+#~ msgid "Please create an index to reference first."
+#~ msgstr "انتق الفهرس الذي ترغب بمرجعيته"
+
+#~ msgid "Select the index you want to reference"
+#~ msgstr "انتق الفهرس الذي ترغب بمرجعيته"
+
+#~ msgid "Found 1 match"
+#~ msgid_plural "Found %1 matches"
+#~ msgstr[0] "لم يعثر على تطابق"
+#~ msgstr[1] "عثر على تطابق واحد"
+#~ msgstr[2] "عثر على تطابقان"
+#~ msgstr[3] "عثر على %1 تطابقات"
+#~ msgstr[4] "عثر على %1 تطابقاً"
+#~ msgstr[5] "عثر على %1 تطابق"
+
+#~ msgid "Found no match"
+#~ msgstr "لم يعثر على تطابق"
+
+#, fuzzy
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "اجمع الأشكال"
+
+#~ msgctxt "Underline Style"
+#~ msgid "None"
+#~ msgstr "لا شيء"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "مفرد"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "مزدوج"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "New Paragraph"
+#~ msgstr "اضبط أسلوب الفقرة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "أضف علامة موقع"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "الموضع"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "أدرج فهرساً"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "أدرج صفحة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "ادرج فاصلا"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "أدرج صفحة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "ادمج النقاط"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "رأسي"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr "عرض خط مخصص"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "أدرج صفحة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr "أدرج صفحة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "ادرج فاصلا"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "الموضع"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr "عريض"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "مائل"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "تسطير"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr "شطب"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr "غيِّر الاتصال"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr "اضبط المحاذاة الرأسية"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "انقص الإزاحة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "زد الإزاحة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "انقص حجم الخط"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "زد حجم الخط"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr "اضبط نوع النقطة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr "اضبط نوع النقطة"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Text Color"
+#~ msgstr "لون النصً..."
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr "اضبط أسلوب المحرف"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Paragraph Style"
+#~ msgstr "اضبط أسلوب الفقرة"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "تنسيق"
+
+#, fuzzy
+#~ msgid "Default"
+#~ msgstr "ا&فتراضي"
+
+#, fuzzy
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "أحمر"
+
+#, fuzzy
+#~ msgid "Redo %1"
+#~ msgstr "أحمر"
+
+#, fuzzy
+#~ msgid "Redo"
+#~ msgstr "أحمر"
+
+#~ msgid "&File"
+#~ msgstr "&ملف"
+
+#~ msgid "&Settings"
+#~ msgstr "ت&عيينات"
+
+#~ msgid "File"
+#~ msgstr "ملف"
+
+#, fuzzy
+#~ msgid "Delete the author profile"
+#~ msgstr "انسخ الصفحة الحالية"
+
+#, fuzzy
+#~ msgid "Name of Profile"
+#~ msgstr "اسم ملف المخرجات"
+
+#~ msgid "Name:"
+#~ msgstr "الاسم:"
+
+#~ msgid "Initials:"
+#~ msgstr "الحروف البادئة:"
+
+#~ msgid "Title:"
+#~ msgstr "العنوان:"
+
+#~ msgid "Position:"
+#~ msgstr "الموقع:"
+
+#~ msgid "Company:"
+#~ msgstr "الشركة:"
+
+#~ msgid "Email:"
+#~ msgstr "البريد الإلكتروني:"
+
+#~ msgid "Telephone (home):"
+#~ msgstr "الهاتف (المنزل):"
+
+#~ msgid "Telephone (work):"
+#~ msgstr "الهاتف (العمل):"
+
+#~ msgid "Fax:"
+#~ msgstr "الفاكس:"
+
+#~ msgid "Street:"
+#~ msgstr "الشارع :"
+
+#~ msgid "City:"
+#~ msgstr "المدينة:"
+
+#~ msgid "Country:"
+#~ msgstr "الدولة:"
+
+#, fuzzy
+#~ msgid "Autosave interval:"
+#~ msgstr "يجري الحفظ التلقائي..."
+
+#, fuzzy
+#~ msgid "Create backup file:"
+#~ msgstr "انشئ شكلاً"
+
+#, fuzzy
+#~ msgid "Show grid:"
+#~ msgstr "اعرض ال&شبيكة"
+
+#, fuzzy
+#~ msgid "Snap to grid:"
+#~ msgstr "طابق إلى الشبكة"
+
+#, fuzzy
+#~ msgid "Grid color:"
+#~ msgstr "&لون الخلفية:"
+
+#, fuzzy
+#~ msgid "Spacing"
+#~ msgstr "مسافة"
+
+#, fuzzy
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "أ&فقي"
+
+#, fuzzy
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "&رأسي"
+
+#, fuzzy
+#~ msgid "Units:"
+#~ msgstr "الوحدة:"
+
+#, fuzzy
+#~ msgid "Paste offset:"
+#~ msgstr "الصق الصفحة"
+
+#~ msgid "Only print and exit"
+#~ msgstr "فقط اطبع واخرج"
+
+#~ msgid "Open a new document with a template"
+#~ msgstr "افتح مستند جديد مع قالب"
+
+#~ msgid "Override display DPI"
+#~ msgstr "تجاوز عرض DPI"
+
+#, fuzzy
+#~ msgid "Only export to PDF and exit"
+#~ msgstr "فقط اطبع واخرج"
+
+#, fuzzy
+#~| msgid "Creation error"
+#~ msgid "%1: Critical Error"
+#~ msgstr "خطأ إنشاء"
+
+#, fuzzy
+#~ msgid "No template found for: %1"
+#~ msgstr "لا يوجد قالب لأجل: %1 "
+
+#~ msgid "Too many templates found for: %1"
+#~ msgstr "عُثر على قوالب كثيرة جداً لأجل: %1"
+
+#~ msgid "Template %1 failed to load."
+#~ msgstr "القالب %1 فشل في التحميل."
+
+#~ msgid "Always use this template at application start up"
+#~ msgstr "استخدم هذا القالب دائما عند بدء تشغيل التطبيق"
+
+#~ msgid "Always use this template"
+#~ msgstr "استخدم هذا القالب دائماً"
+
+#~ msgid "Making backup..."
+#~ msgstr "عمل نسخة احتياطية..."
+
+#~ msgid "Saving..."
+#~ msgstr "يجري الحفظ..."
+
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "تعذر حفظ\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "تعذر حفظ %1 \n"
+#~ "السبب: %2"
+
+#~ msgid "Document <i>%1</i> saved"
+#~ msgstr "المستند <i>%1</i> قد حفظ"
+
+#~ msgid ""
+#~ "The password of this encrypted document is not known. Autosave aborted! "
+#~ "Please save your work manually."
+#~ msgstr ""
+#~ "كلمة المرور لهذا المستند المشفر مجهولة. تم مغادرة الحفظ التلقائي! يرجى "
+#~ "حفظ عملك يدويا."
+
+#~ msgid "Autosaving..."
+#~ msgstr "يجري الحفظ التلقائي..."
+
+#~ msgid "Error during autosave! Partition full?"
+#~ msgstr "خطأ أثناء الحفظ التلقائي! القسم مليء؟"
+
+#~ msgid "Could not create the file for saving"
+#~ msgstr "لا يمكن إنشاء الملف للحفظ"
+
+#~ msgid "Not able to write '%1'. Partition full?"
+#~ msgstr "لا يمكن كتابة '%1'. القسم مليء؟"
+
+#, fuzzy
+#~ msgid "Not able to write RDF metadata. Partition full?"
+#~ msgstr "لا يمكن كتابة '%1'. القسم مليء؟"
+
+#~ msgid "Error while trying to write '%1'. Partition full?"
+#~ msgstr "خطأ عند محاولة كتابة '%1'. القسم مليء؟"
+
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "عنوان URL مشوه\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "An autosaved file exists for this document.\n"
+#~ "Do you want to open it instead?"
+#~ msgstr ""
+#~ "توجد نسخة محفوظة آليا لهذا الملف\n"
+#~ "هل تريد أن تفتح هذه النسخة كبديل ؟"
+
+#~ msgid "The file %1 does not exist."
+#~ msgstr "الملف %1 ليس موجودا."
+
+#, fuzzy
+#~| msgid "Open Document"
+#~ msgid "Opening Document"
+#~ msgstr "افتح مستندا"
+
+#, fuzzy
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "لا يمكن إنشاء الملف للحفظ"
+
+#~ msgid "File not found"
+#~ msgstr "الملف غير موجود"
+
+#~ msgid "Cannot create storage"
+#~ msgstr "لا يمكن إنشاء التخزين"
+
+#~ msgid "Bad MIME type"
+#~ msgstr "نوع MIME سيئ"
+
+#~ msgid "Format not recognized"
+#~ msgstr "لم يتعرف على التنسيق"
+
+#~ msgid "Not implemented"
+#~ msgstr "لم يُجهَز"
+
+#~ msgid "Parsing error"
+#~ msgstr "خطأ تحليل"
+
+#~ msgid "Document is password protected"
+#~ msgstr "المستند محمي بكلمة مرور"
+
+#~ msgid "Internal error"
+#~ msgstr "خطأ داخلي"
+
+#~ msgid "Out of memory"
+#~ msgstr "نفذت الذّاكرة"
+
+#~ msgid "Unknown error"
+#~ msgstr "خطأ مجهول"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open\n"
+#~| "%2.\n"
+#~| "Reason: %1"
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr ""
+#~ "تعذر فتح\n"
+#~ "%2.\n"
+#~ "السبب: %1"
+
+#~ msgid "Document <i>%1</i> loaded"
+#~ msgstr "المستند <i>%1</i> قد حًمّل"
+
+#~ msgid "Could not find %1"
+#~ msgstr "لا يمكن إيجاد %1"
+
+#~ msgid ""
+#~ "Parsing error in %1 at line %2, column %3\n"
+#~ "Error message: %4"
+#~ msgstr ""
+#~ "خطأ تحليل في %1 عند السطر %2, العمود %3\n"
+#~ "رسالة الخطأ: %4"
+
+#~ msgid "%1 is not a file."
+#~ msgstr "%1 ليس ملفاً."
+
+#~ msgid "Could not open the file for reading (check read permissions)."
+#~ msgstr "تعذر فتح الملف للقراءة (افحص صلاحيات القراءة)."
+
+#~ msgid "Could not read the beginning of the file."
+#~ msgstr "تعذر قراءة بداية الملف."
+
+#~ msgid ""
+#~ "parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "خطأ تحليل في المستند الرئيسي عند السطر %1، العمود %2\n"
+#~ "رسالة الخطأ: %3"
+
+#, fuzzy
+#~ msgid "Not a valid Calligra file: %1"
+#~ msgstr "ليس ملف KOffice صالح: %1"
+
+#~ msgid "Invalid document: no file 'maindoc.xml'."
+#~ msgstr "مستند غير صالح: لا ملف 'maindoc.xml'."
+
+#, fuzzy
+#~ msgid ""
+#~ "Document <i>%1</i> contains several versions. Go to File->Versions to "
+#~ "open an old version."
+#~ msgstr ""
+#~ "هذا المستند يحتوي عدة إصدارات. اذهب إلى ملف->إصدارات لفتح إصدار قديم."
+
+#~ msgid "Untitled"
+#~ msgstr "بدون عنوان"
+
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr "<p>المستند <b>'%1'</b> تعرض للتعديل.</p><p>هل ترغب بحفظه؟</p>"
+
+#~ msgid "Internal error: saveXML not implemented"
+#~ msgstr "خطأ داخلي: حفظXML غير متوفر"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "تعذر فتح\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "تعذر فتح %1\n"
+#~ "السبب: %2"
+
+#~ msgid "a word processing"
+#~ msgstr "معالجة كلمات"
+
+#~ msgid "a spreadsheet"
+#~ msgstr "ورقة حسابية"
+
+#~ msgid "a presentation"
+#~ msgstr "عرض تقديمي"
+
+#~ msgid "a chart"
+#~ msgstr "رسم بياني"
+
+#~ msgid "a drawing"
+#~ msgstr "رسم"
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~| "it?</p>"
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr "<p>المستند <b>'%1'</b> تعرض للتعديل.</p><p>هل ترغب بحفظه؟</p>"
+
+#, fuzzy
+#~| msgid "Custom Document"
+#~ msgid "Close Document"
+#~ msgstr "مستند مخصص"
+
+#, fuzzy
+#~ msgid "%1 %"
+#~ msgstr "%1%"
+
+#~ msgid "No"
+#~ msgstr "لا"
+
+#~ msgid "Yes"
+#~ msgstr "نعم"
+
+#~ msgid "Could not export file."
+#~ msgstr "تعذر تصدير الملف."
+
+#~ msgid "Missing Export Filter"
+#~ msgstr "مرشح التصدير مفقود"
+
+#~ msgid ""
+#~ "Could not import file of type\n"
+#~ "%1"
+#~ msgstr ""
+#~ "تعذر استيراد الملف من نوع\n"
+#~ "%1"
+
+#~ msgid "Missing Import Filter"
+#~ msgstr "مرشح استيراد مفقود"
+
+#~ msgid "Choose Filter"
+#~ msgstr "اختر مرشح"
+
+#, fuzzy
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "متوسط:"
+
+#, fuzzy
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "النص"
+
+#, fuzzy
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "المعاينة:"
+
+#, fuzzy
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "خيارات %1"
+
+#, fuzzy
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "استبدل"
+
+#, fuzzy
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "استبدل"
+
+#, fuzzy
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "استبدل"
+
+#, fuzzy
+#~ msgctxt "Total number of matches"
+#~ msgid "1 match found"
+#~ msgid_plural "%1 matches found"
+#~ msgstr[0] "لا يوجد قالب لأجل: %1 "
+#~ msgstr[1] "لا يوجد قالب لأجل: %1 "
+#~ msgstr[2] "لا يوجد قالب لأجل: %1 "
+#~ msgstr[3] "لا يوجد قالب لأجل: %1 "
+#~ msgstr[4] "لا يوجد قالب لأجل: %1 "
+#~ msgstr[5] "لا يوجد قالب لأجل: %1 "
+
+#, fuzzy
+#~ msgid "No matches found"
+#~ msgstr "لا يوجد قالب لأجل: %1 "
+
+#~ msgid "%1 unsaved document (%2)"
+#~ msgstr "%1 مستند غير محفوظ (%2)"
+
+#~ msgid "Export as PDF..."
+#~ msgstr "صدر بصيغة PDF..."
+
+#~ msgid "Reload"
+#~ msgstr "أعد تحميل"
+
+#~ msgid "Versions..."
+#~ msgstr "الإصدارات..."
+
+#, fuzzy
+#~ msgid "Open ex&isting Document as Untitled Document..."
+#~ msgstr "افتح مستنداً موجوداً..."
+
+#~ msgid "E&xport..."
+#~ msgstr "ص&دِّر..."
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "En&crypt Document"
+#~ msgstr "استورد مستندا"
+
+#~ msgid "&New View"
+#~ msgstr "&عرض جديد"
+
+#~ msgid "Document Information"
+#~ msgstr "معلومات المستند"
+
+#~ msgid "Full Screen Mode"
+#~ msgstr "نمط ملء الشاشة"
+
+#, fuzzy
+#~ msgid "Show Dockers"
+#~ msgstr "مراسي"
+
+#, fuzzy
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "مراسي"
+
+#~ msgid "Dockers"
+#~ msgstr "مراسي"
+
+#~ msgid "(write protected)"
+#~ msgstr "(محمي من الكتابة)"
+
+#~ msgid "Save as %1"
+#~ msgstr "احفظ باسم %1"
+
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "%1 (نوع ملف مجهول)"
+
+#~ msgid ""
+#~ "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
+#~ "want to save in this format?</qt>"
+#~ msgstr ""
+#~ "<qt>الحفظ بصفة %1 قد يتسبب في فقدان بعض التنسيق.<p>هل لازلت تريد الحفظ "
+#~ "بهذا التنسيق؟</qt>"
+
+#~ msgid "Confirm Save"
+#~ msgstr "أكد الحفظ"
+
+#~ msgid ""
+#~ "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you "
+#~ "still want to export to this format?</qt>"
+#~ msgstr ""
+#~ "<qt>التصدير بصيغة %1 قد يتسبب في فقدان بعض التنسيق.<p>هل لازلت تريد "
+#~ "التصدير بهذا التنسيق؟</qt>"
+
+#~ msgid "Confirm Export"
+#~ msgstr "أكد التصدير"
+
+#, fuzzy
+#~| msgid "Untitled"
+#~ msgid "untitled"
+#~ msgstr "بدون عنوان"
+
+#~ msgid "Open Document"
+#~ msgstr "افتح مستندا"
+
+#, fuzzy
+#~| msgid "Export as PDF..."
+#~ msgid "Export as PDF"
+#~ msgstr "صدر بصيغة PDF..."
+
+#~ msgid "Document - %1"
+#~ msgstr "المستند - %1"
+
+#~ msgid ""
+#~ "You will lose all changes made since your last save\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "ستفقد كل التغييرات التي أجريتها منذ حفظك الأخير\n"
+#~ "هل تريد المتابعة؟"
+
+#~ msgid "Warning"
+#~ msgstr "تحذير"
+
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "اعرض شريط الأدوات %1"
+
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "اخف شريط الأدوات %1"
+
+#, fuzzy
+#~| msgid "Open This Document"
+#~ msgid "Open Existing Document"
+#~ msgstr "افتح هذا المستند"
+
+#~ msgid "Recent Documents"
+#~ msgstr "المستندات الحديثة"
+
+#~ msgid "Custom Document"
+#~ msgstr "مستند مخصص"
+
+#~ msgid "Stop"
+#~ msgstr "أوقف"
+
+#, fuzzy
+#~| msgid "Printing done"
+#~ msgid "Printing"
+#~ msgstr "الطباعة انتهت"
+
+#~ msgid "Printing done"
+#~ msgstr "الطباعة انتهت"
+
+#~ msgid "Close"
+#~ msgstr "اغلق"
+
+#~ msgid "Stopped"
+#~ msgstr "تم الإيقاف"
+
+#~ msgid "Open This Document"
+#~ msgstr "افتح هذا المستند"
+
+#~ msgctxt "File modification date and time. %1 is date time"
+#~ msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>آخر تعديل:</b></td><td>%1</td></tr>"
+
+#~ msgctxt "File access date and time. %1 is date time"
+#~ msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>آخر دخول:</b></td><td>%1</td></tr>"
+
+#, fuzzy
+#~ msgid "Show Guides"
+#~ msgstr "اعرض ال&شبيكة"
+
+#~ msgid "Create Template"
+#~ msgstr "انشئ قالب"
+
+#, fuzzy
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "الاسم:"
+
+#~ msgid "Group:"
+#~ msgstr "المجموعة:"
+
+#~ msgid "&Add Group..."
+#~ msgstr "أضف مجموعة..."
+
+#~ msgid "&Remove"
+#~ msgstr "أ&زل"
+
+#~ msgid "Picture"
+#~ msgstr "صورة"
+
+#, fuzzy
+#~ msgid "&Preview"
+#~ msgstr "المعاينة:"
+
+#, fuzzy
+#~ msgid "Custom:"
+#~ msgstr "مخصص"
+
+#~ msgid "&Select..."
+#~ msgstr "ا&نتقِ..."
+
+#~ msgid "Use the new template as default"
+#~ msgstr "استخدم القالب الجديد كافتراضي"
+
+#~ msgid "Use the new template every time %1 starts"
+#~ msgstr "استخدم القالب الجديد في كل مرة يبدأ %1"
+
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr "هل ترغب فعلأ باستبدال القالب الموجود '%1' ؟"
+
+#~ msgid "Add Group"
+#~ msgstr "أضف مجموعة"
+
+#~ msgid "Enter group name:"
+#~ msgstr "أدخل اسم المجموعة:"
+
+#~ msgid "This name is already used."
+#~ msgstr "هذا الاسم مستخدم مسبقا."
+
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "هل ترغب بالفعل بإزالة هذه المجموعة ؟"
+
+#~ msgid "Remove Group"
+#~ msgstr "أزل المجموعة"
+
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "هل ترغب بالفعل بإزالة هذا القالب ؟"
+
+#~ msgid "Remove Template"
+#~ msgstr "أزل القالب"
+
+#~ msgid "&Delete"
+#~ msgstr "ا&حذف"
+
+#~ msgid "Could not load picture."
+#~ msgstr "تعذر تحميل الصورة."
+
+#~ msgid "No picture available."
+#~ msgstr "لا تتوفر صورة."
+
+#~ msgid "Use This Template"
+#~ msgstr "استخدم هذا القالب"
+
+#~ msgid "Version"
+#~ msgstr "الإصدار"
+
+#~ msgid "Date & Time"
+#~ msgstr "التاريخ و الوقت"
+
+#~ msgid "Saved By"
+#~ msgstr "محفوظ بواسطة"
+
+#~ msgid "Comment"
+#~ msgstr "التعليق"
+
+#~ msgid "&Add"
+#~ msgstr "أ&ضف"
+
+#~ msgid "&Modify"
+#~ msgstr "&عدِّل"
+
+#~ msgid "&Open"
+#~ msgstr "ا&فتح"
+
+#~ msgid "A new version could not be added"
+#~ msgstr "لا يمكن إضافة إصدار جديد"
+
+#~ msgid "Date: %1"
+#~ msgstr "التاريخ: %1"
+
+#, fuzzy
+#~ msgid "Active Author Profile"
+#~ msgstr "الأداة النشطة: %1"
+
+#~ msgid "Unknown"
+#~ msgstr "مجهول"
+
+#~ msgid ""
+#~ "This document contains an unknown checksum. When you give a password it "
+#~ "might not be verified."
+#~ msgstr ""
+#~ "هذا المستند يحتوي على checksum مجهول. عندما تعطي كلمة مرور قد لا يتم "
+#~ "التعرف عليها."
+
+#~ msgid ""
+#~ "This document contains an unknown encryption method. Some parts may be "
+#~ "unreadable."
+#~ msgstr ""
+#~ "هذا المستند يحتوي على وسيلة تشفير مجهولة. بعض الأجزاء قد لا يمكن قراءتها."
+
+#~ msgid ""
+#~ "This document contains incomplete encryption data. Some parts may be "
+#~ "unreadable."
+#~ msgstr ""
+#~ "هذا المستند يحتوي بيانات تشفير غير كاملة. بعض الأجزاء قد لا يمكن قراءتها."
+
+#~ msgid ""
+#~ "QCA has currently no support for SHA1 or PBKDF2 using SHA1. The document "
+#~ "can not be opened."
+#~ msgstr ""
+#~ "QCA لا يدعم حالياً SHA1 أو PBKDF2 باستخدام SHA1. لا يمكن فتح المستند."
+
+#~ msgid ""
+#~ "The manifest file seems to be corrupted. It cannot be modified and the "
+#~ "document will remain unreadable. Please try and save the document again "
+#~ "to prevent losing your work."
+#~ msgstr ""
+#~ "ملف البيان يبدو فاسداً. لا يمكن تعديله والمستنند سيبقى غير قابل للقراءة. "
+#~ "يرجى المحاولة وحفظ المستند مجددا لمنع فقدان عملك."
+
+#~ msgid ""
+#~ "The manifest file cannot be written. The document will remain unreadable. "
+#~ "Please try and save the document again to prevent losing your work."
+#~ msgstr ""
+#~ "ملف البيان لا يمكن كتابته. سيبقى المستند غير قابل للقراءة. يرجى المحاولة "
+#~ "وحفظ المستند مجددا لمنع فقدان عملك."
+
+#~ msgid "Please enter the password to open this file."
+#~ msgstr "يرجي إدخال كلمة المرور لفتح هذا الملف."
+
+#~ msgid "Please enter the password to encrypt the document with."
+#~ msgstr "يرجى إدخال كلمة المرور لتشفير المستند معها."
+
+#~ msgid "Do you want to save the password?"
+#~ msgstr "هل ترغب بحفظ كلمة المرور؟"
+
+#~ msgid "No store backend"
+#~ msgstr "لا نهاية خلفية للتخزين "
+
+#~ msgid ""
+#~ "Parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "خطأ تحليل في المستند الرئيسي عند السطر %1، العمود %2\n"
+#~ "رسالة الخطأ: %3"
+
+#, fuzzy
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "الشاشة"
+
+#~ msgid "The directory mode is not supported for remote locations."
+#~ msgstr "نمط الفهرس ليس مدعوما للأماكن البعيدة."
+
+#~ msgid "Clear"
+#~ msgstr "امسح"
+
+#~ msgid "Subtract"
+#~ msgstr "اطرح"
+
+#~ msgid "Alpha mask"
+#~ msgstr "قناع ألفا"
+
+#~ msgid "Alpha"
+#~ msgstr "ألفا"
+
+#, fuzzy
+#~ msgid "L*a*b* (16-bit integer/channel, unmanaged)"
+#~ msgstr "L*a*b* (16-bit عدد صحيح/قناة)"
+
+#~ msgid "Lightness"
+#~ msgstr "الخفة"
+
+#~ msgid "a*"
+#~ msgstr "a*"
+
+#~ msgid "b*"
+#~ msgstr "b*"
+
+#, fuzzy
+#~ msgid "RGB (16-bit integer/channel, unmanaged)"
+#~ msgstr "RGB 16-bit عدد صحيح/قناة)"
+
+#, fuzzy
+#~ msgid "RGB (8-bit integer/channel, unmanaged)"
+#~ msgstr "RGB 8-bit عدد صحيح/قناة)"
+
+#~ msgid "Blue"
+#~ msgstr "أزرق"
+
+#~ msgid "Green"
+#~ msgstr "أخضر"
+
+#~ msgid "Red"
+#~ msgstr "أحمر"
+
+#, fuzzy
+#~ msgid "Alpha darken"
+#~ msgstr "قناع ألفا"
+
+#~ msgid "Erase"
+#~ msgstr "امسح"
+
+#~ msgid "Normal"
+#~ msgstr "عادي"
+
+#, fuzzy
+#~ msgid "Hard Mix"
+#~ msgstr "الارتفاع:"
+
+#, fuzzy
+#~ msgid "Geometric Mean"
+#~ msgstr "الهندسة"
+
+#, fuzzy
+#~ msgid "Parallel"
+#~ msgstr "متغير"
+
+#, fuzzy
+#~ msgid "Color Dodge"
+#~ msgstr "مختار اللون"
+
+#, fuzzy
+#~ msgid "Linear Dodge"
+#~ msgstr "حد الخط"
+
+#~ msgid "Lighten"
+#~ msgstr "تفتيح"
+
+#, fuzzy
+#~ msgid "Hard Light"
+#~ msgstr "الارتفاع:"
+
+#, fuzzy
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "مستقيم"
+
+#, fuzzy
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "مستقيم"
+
+#, fuzzy
+#~ msgid "Gamma Light"
+#~ msgstr "تفتيح"
+
+#, fuzzy
+#~ msgid "Vivid Light"
+#~ msgstr "تفتيح"
+
+#, fuzzy
+#~ msgid "Pin Light"
+#~ msgstr "تفتيح"
+
+#, fuzzy
+#~ msgid "Linear Light"
+#~ msgstr "عرض الخط:"
+
+#, fuzzy
+#~ msgid "Color Burn"
+#~ msgstr "اللون"
+
+#, fuzzy
+#~ msgid "Linear Burn"
+#~ msgstr "حد الخط"
+
+#~ msgid "Darken"
+#~ msgstr "تقتيم"
+
+#, fuzzy
+#~ msgid "Addition"
+#~ msgstr "الموضع"
+
+#, fuzzy
+#~ msgid "Inversed-Subtract"
+#~ msgstr "اطرح"
+
+#, fuzzy
+#~ msgid "Difference"
+#~ msgstr "مرجع النص"
+
+#, fuzzy
+#~ msgid "Additive-Subtractive"
+#~ msgstr "اطرح"
+
+#, fuzzy
+#~ msgid "Copy Red"
+#~ msgstr "انسخ الصفحة"
+
+#, fuzzy
+#~ msgid "Copy Green"
+#~ msgstr "أخضر"
+
+#, fuzzy
+#~ msgid "Copy Blue"
+#~ msgstr "انسخ الصفحة"
+
+#~ msgid "Color"
+#~ msgstr "اللون"
+
+#~ msgid "Hue"
+#~ msgstr "التدرج"
+
+#~ msgid "Saturation"
+#~ msgstr "الإشباع"
+
+#, fuzzy
+#~ msgid "Increase Saturation"
+#~ msgstr "الإشباع"
+
+#, fuzzy
+#~ msgid "Decrease Saturation"
+#~ msgstr "الإشباع"
+
+#, fuzzy
+#~ msgid "Increase Luminosity"
+#~ msgstr "زد حجم الخط"
+
+#, fuzzy
+#~ msgid "Decrease Luminosity"
+#~ msgstr "انقص حجم الخط"
+
+#, fuzzy
+#~ msgid "Darker Color"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~ msgid "Lighter Color"
+#~ msgstr "اللون"
+
+#, fuzzy
+#~ msgid "Color HSI"
+#~ msgstr "اللون"
+
+#, fuzzy
+#~ msgid "Hue HSI"
+#~ msgstr "التدرج"
+
+#, fuzzy
+#~ msgid "Saturation HSI"
+#~ msgstr "الإشباع"
+
+#, fuzzy
+#~ msgid "Increase Saturation HSI"
+#~ msgstr "الإشباع"
+
+#, fuzzy
+#~ msgid "Decrease Saturation HSI"
+#~ msgstr "الإشباع"
+
+#, fuzzy
+#~ msgid "Intensity"
+#~ msgstr "الإنترنت"
+
+#, fuzzy
+#~ msgid "Increase Intensity"
+#~ msgstr "زد الإزاحة"
+
+#, fuzzy
+#~ msgid "Decrease Intensity"
+#~ msgstr "انقص الإزاحة"
+
+#, fuzzy
+#~ msgid "Color HSL"
+#~ msgstr "اللون"
+
+#, fuzzy
+#~ msgid "Hue HSL"
+#~ msgstr "التدرج"
+
+#, fuzzy
+#~ msgid "Saturation HSL"
+#~ msgstr "الإشباع"
+
+#, fuzzy
+#~ msgid "Increase Saturation HSL"
+#~ msgstr "الإشباع"
+
+#, fuzzy
+#~ msgid "Decrease Saturation HSL"
+#~ msgstr "الإشباع"
+
+#, fuzzy
+#~ msgid "Increase Lightness"
+#~ msgstr "زد الإزاحة"
+
+#, fuzzy
+#~ msgid "Decrease Lightness"
+#~ msgstr "انقص الإزاحة"
+
+#, fuzzy
+#~ msgid "Color HSV"
+#~ msgstr "اللون"
+
+#, fuzzy
+#~ msgid "Hue HSV"
+#~ msgstr "التدرج"
+
+#, fuzzy
+#~ msgid "Saturation HSV"
+#~ msgstr "الإشباع"
+
+#, fuzzy
+#~ msgid "Increase Saturation HSV"
+#~ msgstr "الإشباع"
+
+#, fuzzy
+#~ msgid "Decrease Saturation HSV"
+#~ msgstr "الإشباع"
+
+#, fuzzy
+#~ msgid "Increase Value"
+#~ msgstr "زد الإزاحة"
+
+#, fuzzy
+#~ msgid "Decrease Value"
+#~ msgstr "انقص الإزاحة"
+
+#~ msgid "Generic RGB Histogram"
+#~ msgstr "مدرج RGB الشامل"
+
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "G"
+#~ msgstr "G"
+
+#~ msgid "L*a*b* Histogram"
+#~ msgstr "L*a*b* مدرج"
+
+#~ msgid "L*"
+#~ msgstr "L*"
+
+#, fuzzy
+#~ msgid "Generic L*a*b* Histogram"
+#~ msgstr "مدرج RGB الشامل"
+
+#~ msgid "XYZ"
+#~ msgstr "XYZ"
+
+#~ msgid "Grayscale"
+#~ msgstr "تدرّج رمادي"
+
+#~ msgid "Grayscale (without transparency)"
+#~ msgstr "تدرج رمادي (بلا شفافية)"
+
+#~ msgid "YCbCr"
+#~ msgstr "YCbCr"
+
+#~ msgid "8 Bits"
+#~ msgstr "8 Bits"
+
+#~ msgid "16 Bits"
+#~ msgstr "16 Bits"
+
+#, fuzzy
+#~ msgid "16 Bits Float"
+#~ msgstr "16 Bits Float (HDR)"
+
+#, fuzzy
+#~ msgid "32 Bits Float"
+#~ msgstr "32 Bits Float (HDR)"
+
+#, fuzzy
+#~ msgid "64 Bits Float"
+#~ msgstr "16 Bits Float (HDR)"
+
+#, fuzzy
+#~ msgid "Inverse Subtract"
+#~ msgstr "اطرح"
+
+#, fuzzy
+#~ msgid "Additive Subtractive"
+#~ msgstr "اطرح"
+
+#, fuzzy
+#~ msgid "Alpha Darken"
+#~ msgstr "قناع ألفا"
+
+#, fuzzy
+#~ msgid "Select the object you want to reference"
+#~ msgstr "انتق الفهرس الذي ترغب بمرجعيته"
+
+#, fuzzy
+#~ msgid "Reference"
+#~ msgstr "مرجع النص"
+
+#, fuzzy
+#~ msgid "Rdf"
+#~ msgstr "أحمر"
+
+#, fuzzy
+#~ msgid "Triples"
+#~ msgstr "العنوان:"
+
+#, fuzzy
+#~ msgid "copy"
+#~ msgstr "الشركة:"
+
+#, fuzzy
+#~ msgid "delete"
+#~ msgstr "احذف"
+
+#, fuzzy
+#~ msgid "Namespaces"
+#~ msgstr "استبدل"
+
+#, fuzzy
+#~ msgid "Namespace"
+#~ msgstr "استبدل"
+
+#, fuzzy
+#~ msgid "Stylesheets"
+#~ msgstr "الأساليب"
+
+#, fuzzy
+#~ msgid "User"
+#~ msgstr "أدرج"
+
+#, fuzzy
+#~ msgid "Stylesheet Definition"
+#~ msgstr "الأساليب"
+
+#, fuzzy
+#~ msgid "Description"
+#~ msgstr "الوصف:"
+
+#, fuzzy
+#~ msgid "Stylesheet Name"
+#~ msgstr "الأساليب"
+
+#, fuzzy
+#~ msgid "Blank"
+#~ msgstr "أسود"
+
+#, fuzzy
+#~ msgid "Valid"
+#~ msgstr "ال&حجم:"
+
+#, fuzzy
+#~ msgid "Subject"
+#~ msgstr "الموضوع:"
+
+#, fuzzy
+#~ msgid "Predicate"
+#~ msgstr "صورة"
+
+#, fuzzy
+#~ msgid "Obj Type"
+#~ msgstr "النوع"
+
+#, fuzzy
+#~ msgid "DataType"
+#~ msgstr "البيانات"
+
+#, fuzzy
+#~ msgid "Stored In"
+#~ msgstr "تم الإيقاف"
+
+#, fuzzy
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "لا يوجد"
+
+#, fuzzy
+#~ msgid "Rightwards Arrow Bullet"
+#~ msgstr "المسافة البادئة اليمنى"
+
+#, fuzzy
+#~ msgid "Tamil"
+#~ msgstr "العنوان:"
+
+#, fuzzy
+#~ msgid "Tibetan"
+#~ msgstr "الوقت:"
+
+#~ msgid "Opacity"
+#~ msgstr "إعتام"
+
+#~ msgid "Recent:"
+#~ msgstr "الحديث:"
+
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "أضف / أزل ألوان..."
+
+#~ msgid "Import Data"
+#~ msgstr "استورد بيانات"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Recommended ( %1 )"
+#~ msgstr "يفضل ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Locale ( %1 )"
+#~ msgstr "المحلي ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Other ( %1 )"
+#~ msgstr "أخرى ( %1 )"
+
+#~ msgid "Generic"
+#~ msgstr "شامل"
+
+#~ msgid "Currency"
+#~ msgstr "العملة"
+
+#~ msgid "None"
+#~ msgstr "لا يوجد"
+
+#~ msgid ""
+#~ "Please check the ranges you specified. The start value must be lower than "
+#~ "the end value."
+#~ msgstr ""
+#~ "يرجى فحص النطاقات التي أدخلتها. قيمة البداية يجب أن تكون أقل من قيمة "
+#~ "النهاية."
+
+#~ msgid "Cannot find encoding: %1"
+#~ msgstr "لا يمكن إيجاد الترميز: %1"
+
+#~ msgid "Data"
+#~ msgstr "البيانات"
+
+#~ msgid "E&ncoding:"
+#~ msgstr "ال&ترميز:"
+
+#~ msgid "First row contains headers"
+#~ msgstr "الصف الأول يحتوي على ترويسات"
+
+#~ msgid "First column contains headers"
+#~ msgstr "العمود الأول يحتوي على ترويسات"
+
+#~ msgid "Format"
+#~ msgstr "تنسيق"
+
+#~ msgid "Delimiter"
+#~ msgstr "نقطة"
+
+#~ msgid "Semicolon"
+#~ msgstr "فاصلة منقوطة"
+
+#~ msgid "Other"
+#~ msgstr "أخرى"
+
+#~ msgid "Tabulator"
+#~ msgstr "علامة الجدولة"
+
+#~ msgid "Space"
+#~ msgstr "مسافة"
+
+#~ msgid "Text&quote:"
+#~ msgstr "إقتبا&س نص:"
+
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "Decimal symbol:"
+#~ msgstr "العلامة العشرية:"
+
+#~ msgid "Thousands separator:"
+#~ msgstr "فاصل الآلاف:"
+
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "تجاهل النقاط المتكرّرة"
+
+#~ msgid "&Format:"
+#~ msgstr "تـ&نسيق:"
+
+#~ msgid "Ranges"
+#~ msgstr "النطاقات"
+
+#~ msgid "Update"
+#~ msgstr "حدِّث"
+
+#~ msgid "Import columns:"
+#~ msgstr "استورد أعمدة:"
+
+#~ msgid "Import lines:"
+#~ msgstr "استورد أسطر:"
+
+#~ msgid "to"
+#~ msgstr "إلى"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Float Docker"
+#~ msgstr "مراسي"
+
+#, fuzzy
+#~| msgid "Custom Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "مستند مخصص"
+
+#, fuzzy
+#~| msgid "Custom Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "مستند مخصص"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Lock Docker"
+#~ msgstr "مراسي"
+
+#~ msgid "&Encrypt"
+#~ msgstr "&شفّر"
+
+#~ msgid "Keywords:"
+#~ msgstr "كلمات مفتاحية:"
+
+#~ msgid "Subject:"
+#~ msgstr "الموضوع:"
+
+#~ msgid "Last printed:"
+#~ msgstr "آخر طباعة:"
+
+#~ msgid "Total editing time:"
+#~ msgstr "وقت التحرير الكلي:"
+
+#~ msgid "Encryption:"
+#~ msgstr "التشفير:"
+
+#, fuzzy
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "العنوان:"
+
+#~ msgid "Revision number:"
+#~ msgstr "رقم المراجعة:"
+
+#~ msgid "Modified:"
+#~ msgstr "آخر تعديل:"
+
+#~ msgid "Comments:"
+#~ msgstr "التعليقات:"
+
+#~ msgid "Created:"
+#~ msgstr "تم إنشاؤه:"
+
+#, fuzzy
+#~ msgid "Path:"
+#~ msgstr "إلى المسار"
+
+#~ msgid "&Reset"
+#~ msgstr "اسـ&تعادة"
+
+#, fuzzy
+#~ msgid "Language:"
+#~ msgstr "الصق الصفحة"
+
+#~ msgid "General"
+#~ msgstr "عام"
+
+#, fuzzy
+#~ msgid "Last saved by"
+#~ msgstr "الصق الصفحة"
+
+#, fuzzy
+#~ msgid "Use ';' (Example: Office;KDE;Calligra)"
+#~ msgstr "استخدم ';' (مثال: Office;KDE;KOffice)"
+
+#~ msgid "This document will be decrypted"
+#~ msgstr "هذا المستند سيتم فك تشفيره"
+
+#~ msgid "Do not decrypt"
+#~ msgstr "لا تفك التشفير"
+
+#~ msgid "This document is encrypted"
+#~ msgstr "هذا المستند تم تشفيره"
+
+#~ msgid "D&ecrypt"
+#~ msgstr "فكّ التشفير"
+
+#~ msgid "This document will be encrypted."
+#~ msgstr "هذا المستند سيتم تشفيره"
+
+#~ msgid "Do not encrypt"
+#~ msgstr "لا تقم بالتشفير"
+
+#~ msgid "This document is not encrypted"
+#~ msgstr "هذا المستند ليس مشفراً"
+
+#, fuzzy
+#~ msgid "This document does not support encryption"
+#~ msgstr "هذا المستند ليس مشفراً"
+
+#~ msgid ""
+#~ "<qt>Decrypting the document will remove the password protection from it."
+#~ "<p>Do you still want to decrypt the file?</qt>"
+#~ msgstr ""
+#~ "<qt>فك تشفير الملف سيزيل منه حماية كلمة المرور.<p>هل لازلت تريد فك تشفير "
+#~ "الملف؟</qt>"
+
+#~ msgid "Confirm Decrypt"
+#~ msgstr "أكد فك التشفير"
+
+#~ msgid "Decrypt"
+#~ msgstr "فكّ تشفير"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "decryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>تعذر حفظ مستندك تلقائيا.<p>لإكمال فك التشفير، يرجى حفظ المستند.</qt>"
+
+#~ msgid "Save Document"
+#~ msgstr "احفظ المستند"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "decryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt> لقد تغير المستند منذ فتحه. لإكمال فك التشفير يحتاج المستند أن يحفظ."
+#~ "<p>هل تريد حفظ المستند الآن؟</qt>"
+
+#~ msgid ""
+#~ "<qt>The document is currently saved as %1. The document needs to be "
+#~ "changed to <b>OASIS OpenDocument</b> to be encrypted.<p>Do you want to "
+#~ "change the file to OASIS OpenDocument?</qt>"
+#~ msgstr ""
+#~ "<qt>المستند محفوظ حالياً على أنه %1. يحتاج المستند أن يتم تغييره  إلى "
+#~ "<b>OASIS OpenDocument</b> ليتم تشفيره.<p>هل تريد تغيير  الملف إلى OASIS "
+#~ "OpenDocument؟</qt>"
+
+#~ msgid "Change Filetype"
+#~ msgstr "غيّر نوع الملف"
+
+#~ msgid "Change"
+#~ msgstr "غيّر"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "encryption, please save the document.</qt>"
+#~ msgstr "<qt>تعذر حفظ مستندك تلقائيا.<p>لإكمال التشفير، يرجي حفظ الملف.</qt>"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "encryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt>لقد تغير المستند منذ فتحه. لإكمال التشفير يحتاج المستند أن يحفظ.<p>هل "
+#~ "تريد حفظ المستند الآن؟</qt>"
+
+#~ msgid "Remove"
+#~ msgstr "أزل"
+
+#~ msgid "Open palette"
+#~ msgstr "افتح لوحة ألوان"
+
+#~ msgid "Save palette"
+#~ msgstr "احفظ لوحة ألوان"
+
+#~ msgid "Add Color To Palette"
+#~ msgstr "أضف اللون إلى اللوحة"
+
+#~ msgid "Color name:"
+#~ msgstr "اسم اللون:"
+
+#, fuzzy
+#~| msgid "Add Color To Palette"
+#~ msgid "Gimp Color Palette (*.gpl)"
+#~ msgstr "أضف اللون إلى اللوحة"
+
+#~ msgid "Cannot write to palette file %1. Maybe it is read-only. "
+#~ msgstr "لا يمكن الكتابة لملف لوحة الألوان %1. ربما تكون للقراءة فقط. "
+
+#~ msgid "Palette"
+#~ msgstr "لوحة الألوان"
+
+#~ msgid "Add/Remove Colors"
+#~ msgstr "أضف/أزل ألوان"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Testing: OpenFile"
+#~ msgstr "افتح لوحة ألوان"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFile"
+#~ msgstr "مرشح استيراد مفقود"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "مرشح استيراد مفقود"
+
+#, fuzzy
+#~ msgid "Testing: Import Directory"
+#~ msgstr "استورد مستندا"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Testing: SaveFile"
+#~ msgstr "احفظ لوحة ألوان"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Open File"
+#~ msgstr "افتح لوحة ألوان"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Open Files"
+#~ msgstr "افتح لوحة ألوان"
+
+#, fuzzy
+#~| msgid "Choose Filter"
+#~ msgid "Filter:"
+#~ msgstr "اختر مرشح"
+
+#, fuzzy
+#~ msgid "TextLabel"
+#~ msgstr "بطاقة نص1:"
+
+#, fuzzy
+#~ msgid "Named"
+#~ msgstr "الاسم:"
+
+#, fuzzy
+#~| msgid "Select a filter:"
+#~ msgid "Set default filter"
+#~ msgstr "انتقِ المرشّح:"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Save File"
+#~ msgstr "احفظ لوحة ألوان"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Import Files"
+#~ msgstr "استورد أسطر:"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Import File"
+#~ msgstr "استورد أسطر:"
+
+#, fuzzy
+#~ msgid "Import Directory"
+#~ msgstr "استورد مستندا"
+
+#, fuzzy
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "لا يوجد"
+
+#, fuzzy
+#~ msgid "Change the filling gradient"
+#~ msgstr "غير المعامل"
+
+#, fuzzy
+#~ msgid "Icon and Text"
+#~ msgstr "النص"
+
+#, fuzzy
+#~ msgid "Bottom side"
+#~ msgstr "تكبير"
+
+#, fuzzy
+#~ msgid "Left side"
+#~ msgstr "المسافة البادئة اليسرى"
+
+#, fuzzy
+#~ msgid "Right side"
+#~ msgstr "المسافة البادئة اليمنى"
+
+#~ msgid "Page Layout"
+#~ msgstr "تخطيط الصفحة"
+
+#, fuzzy
+#~ msgid "Apply to document"
+#~ msgstr "مستند فارغ"
+
+#, fuzzy
+#~ msgid "Left Edge:"
+#~ msgstr "اليسار:"
+
+#, fuzzy
+#~ msgid "Right Edge:"
+#~ msgstr "يمين:"
+
+#, fuzzy
+#~ msgid "Binding Edge:"
+#~ msgstr "الطباعة انتهت"
+
+#, fuzzy
+#~ msgid "Page Edge:"
+#~ msgstr "حجم الصفحة"
+
+#, fuzzy
+#~ msgid "Facing Pages:"
+#~ msgstr "اضبط للصفحة"
+
+#, fuzzy
+#~ msgid "Facing pages"
+#~ msgstr "اضبط للصفحة"
+
+#, fuzzy
+#~ msgid "Page Layout:"
+#~ msgstr "تخطيط الصفحة"
+
+#, fuzzy
+#~ msgid "Page spread"
+#~ msgstr "ورقة حسابية"
+
+#~ msgid "Unit:"
+#~ msgstr "الوحدة:"
+
+#, fuzzy
+#~ msgid "Size:"
+#~ msgstr "ال&حجم:"
+
+#~ msgid "Width:"
+#~ msgstr "العرض:"
+
+#~ msgid "Height:"
+#~ msgstr "الارتفاع:"
+
+#, fuzzy
+#~ msgid "Orientation:"
+#~ msgstr "الاتجاه"
+
+#, fuzzy
+#~ msgid "Facing pages:"
+#~ msgstr "اضبط للصفحة"
+
+#, fuzzy
+#~ msgid "Single sided"
+#~ msgstr "مفرد"
+
+#, fuzzy
+#~ msgid "Text direction:"
+#~ msgstr "غيِّر الاتصال"
+
+#, fuzzy
+#~ msgid "Left to right"
+#~ msgstr "مستقيم"
+
+#, fuzzy
+#~ msgid "Right to left"
+#~ msgstr "المسافة البادئة اليمنى"
+
+#~ msgid "Margins"
+#~ msgstr "الهوامش"
+
+#~ msgid "Top:"
+#~ msgstr "الأعلى:"
+
+#, fuzzy
+#~ msgid "Binding edge:"
+#~ msgstr "الطباعة انتهت"
+
+#, fuzzy
+#~ msgid "Page edge:"
+#~ msgstr "معاينة الصفحة"
+
+#, fuzzy
+#~ msgid "Bottom:"
+#~ msgstr "تكبير"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "استورد مستندا"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "تنزيل"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "احذف"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "اختر مرشح"
+
+#, fuzzy
+#~ msgid "New tag"
+#~ msgstr "طبقة جديدة"
+
+#, fuzzy
+#~ msgid "Remove from this tag"
+#~ msgstr "أزل النقطة"
+
+#, fuzzy
+#~ msgid "Miter join"
+#~ msgstr "ادمج النقاط"
+
+#, fuzzy
+#~ msgid "Bevel join"
+#~ msgstr "أزل النقطة"
+
+#, fuzzy
+#~ msgid "Miter limit"
+#~ msgstr "ادمج النقاط"
+
+#, fuzzy
+#~| msgid "Target:"
+#~ msgid "Tag"
+#~ msgstr "الهدف:"
+
+#, fuzzy
+#~ msgid "Rename tag"
+#~ msgstr "انقل الصفحة"
+
+#, fuzzy
+#~ msgid "Delete this tag"
+#~ msgstr "احذف الصفحة"
+
+#, fuzzy
+#~ msgid "Undelete"
+#~ msgstr "احذف"
+
+#~ msgid "Tool Options"
+#~ msgstr "خيارات الأداة"
+
+#, fuzzy
+#~ msgid "deselect item"
+#~ msgstr "انتقِ المحرف"
+
+#, fuzzy
+#~ msgid "select item"
+#~ msgstr "انتقِ المحرف"
+
+#~ msgid "Use same aspect as pixels"
+#~ msgstr "استخدم نفس القياس كـ بكسلات"
+
+#, fuzzy
+#~ msgid "Zoom to All"
+#~ msgstr "أداة التكبير"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1%"
+
+#~ msgid "Value (brightness)"
+#~ msgstr "القيمة (الإضاءة)"
+
+#~ msgid "Cyan"
+#~ msgstr "أزرق معتم"
+
+#~ msgid "Magenta"
+#~ msgstr "أرجواني"
+
+#~ msgid "Yellow"
+#~ msgstr "أصفر"
+
+#~ msgid "Black"
+#~ msgstr "أسود"
+
+#~ msgid "Green to magenta*"
+#~ msgstr "أخضر إلى أرجوانى*"
+
+#~ msgid "Blue to yellow"
+#~ msgstr "أزرق إلى أصفر"
+
+#~ msgid "Opacity:"
+#~ msgstr "الإعتام:"
+
+#, fuzzy
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "ا&فتراضي"
+
+#, fuzzy
+#~ msgid "Configuration..."
+#~ msgstr "طابق إلى الشبكة"
+
+#, fuzzy
+#~ msgid "&Tools"
+#~ msgstr "Pan Tool"
+
+#~ msgid ""
+#~ "The manifest file seems to be corrupted. The document could not be opened."
+#~ msgstr "ملف البيان يبدو فاسداً. تعذر فتح المستند."
+
+#, fuzzy
+#~ msgid "Color Selector"
+#~ msgstr "مجموعة"
+
+#, fuzzy
+#~ msgid "Database file \"%1\" does not exist."
+#~ msgstr "الملف %1 ليس موجودا."
+
+#, fuzzy
+#~ msgid "Table \"%1\" does not exist in the database."
+#~ msgstr "الملف %1 ليس موجودا."
+
+#, fuzzy
+#~ msgid "Could not compact database \"%1\"."
+#~ msgstr "لم يمكن قراءة الحزمة \"%1\"."
+
+#, fuzzy
+#~ msgid "Do you want to open file \"%1\" as read-only?"
+#~ msgstr "هل ترغب بحفظ كلمة المرور؟"
+
+#, fuzzy
+#~ msgid "Could not gain exclusive access for writing the file."
+#~ msgstr "تعذر قراءة بداية الملف."
+
+#, fuzzy
+#~ msgid "Could not close busy database."
+#~ msgstr "تعذر تحميل الصورة."
+
+#, fuzzy
+#~ msgid "Could not remove file \"%1\"."
+#~ msgstr "تعذر تصدير الملف."
+
+#, fuzzy
+#~ msgid "Table \"%1\" does not exist"
+#~ msgstr "الملف %1 ليس موجودا."
+
+#, fuzzy
+#~ msgid "Grid Snap"
+#~ msgstr "اعرض ال&شبيكة"
+
+#, fuzzy
+#~ msgid "Formatting"
+#~ msgstr "تنسيق"
+
+#, fuzzy
+#~ msgid "Testing: OpenDirectories"
+#~ msgstr "استورد مستندا"
+
+#, fuzzy
+#~ msgid "Testing: ImportDirectories"
+#~ msgstr "استورد مستندا"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Testing: SaveFiles"
+#~ msgstr "احفظ لوحة ألوان"
+
+#, fuzzy
+#~ msgid "Import Directories"
+#~ msgstr "استورد مستندا"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Save Files"
+#~ msgstr "احفظ لوحة ألوان"
+
+#~ msgid "Create Path"
+#~ msgstr "أنشئ مساراً"
+
+#~ msgid "Red Green Blue"
+#~ msgstr "أحمر أخضر أزرق"
+
+#~ msgid "L a* b*"
+#~ msgstr "L a* b*"
+
+#~ msgid "Cyan Magenta Yellow Black"
+#~ msgstr "أزرق-معتم أرجواني أصفر أسود"
+
+#~ msgid "Error!"
+#~ msgstr "خطأ!"
+
+#, fuzzy
+#~ msgid "Locations"
+#~ msgstr "إجراءات"
+
+#, fuzzy
+#~ msgid "Region"
+#~ msgstr "الإصدار"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not add entry\n"
+#~ "%1"
+#~ msgstr ""
+#~ "تعذر حفظ\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not save iCal file\n"
+#~ "%1"
+#~ msgstr ""
+#~ "تعذر حفظ\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgid "&Location:"
+#~ msgstr "مجموعة"
+
+#, fuzzy
+#~ msgid "&Start:"
+#~ msgstr "الشارع :"
+
+#, fuzzy
+#~ msgid "Timezone"
+#~ msgstr "الوقت:"
+
+#, fuzzy
+#~ msgid "&Name:"
+#~ msgstr "الاسم:"
+
+#, fuzzy
+#~ msgid "&Phone Number:"
+#~ msgstr "العدد:"
+
+#, fuzzy
+#~ msgid "&Home Page:"
+#~ msgstr "انقل الصفحة"
+
+#, fuzzy
+#~ msgid "Contact Information"
+#~ msgstr "معلومات المستند"
+
+#, fuzzy
+#~ msgid "Import contact"
+#~ msgstr "استورد بيانات"
+
+#, fuzzy
+#~ msgid "Export as vcard..."
+#~ msgstr "صدر بصيغة PDF..."
+
+#, fuzzy
+#~ msgid "&Name"
+#~ msgstr "الاسم:"
+
+#, fuzzy
+#~ msgid "The Earth"
+#~ msgstr "إلى المسار"
+
+#, fuzzy
+#~ msgid "Location Information"
+#~ msgstr "معلومات المستند"
+
+#, fuzzy
+#~ msgid "People"
+#~ msgstr "استبدل"
+
+#~ msgid ""
+#~ "A document with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "يوجد مستند يحمل نفس الاسم.\n"
+#~ "هل تريد استبداله؟"
+
+#, fuzzy
+#~ msgid "Unknown Calligra MimeType %1. Check your installation."
+#~ msgstr "نوع KOffice Mime مجهول %1. افحص التثبيت."
+
+#~ msgid "%1 (Uncompressed XML Files)"
+#~ msgstr "%1 (ملفات XML غير مضغوطة)"
+
+#~ msgid "%1 (Flat XML File)"
+#~ msgstr "%1 (ملف XML مسطح)"
+
+#~ msgid "%1 (Encrypted)"
+#~ msgstr "%1 (مُشَفَّر)"
+
+#~ msgid "%1 (%2 Compatible)"
+#~ msgstr "%1 (%2 متوافق)"
+
+#~ msgid "Save Document As"
+#~ msgstr "حفظ المستند باسم"
+
+#~ msgid "Export Document As"
+#~ msgstr "صدِّر المستند باسم"
+
+#, fuzzy
+#~ msgid "Export to PDF"
+#~ msgstr "صدر بصيغة PDF..."
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Slide Background"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Document background"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~| msgid "Change"
+#~ msgid "&Cancel"
+#~ msgstr "غيّر"
+
+#, fuzzy
+#~| msgid "Fit Page"
+#~ msgid "First Page"
+#~ msgstr "اضبط للصفحة"
+
+#, fuzzy
+#~| msgid "Copy Page"
+#~ msgid "Even Pages(s)"
+#~ msgstr "انسخ الصفحة"
+
+#, fuzzy
+#~| msgid "Copy Page"
+#~ msgid "Any Pages(s)"
+#~ msgstr "انسخ الصفحة"
+
+#, fuzzy
+#~| msgid "Add..."
+#~ msgid "&Edit"
+#~ msgstr "أضف..."
+
+#, fuzzy
+#~| msgid "Close"
+#~ msgid "&Close"
+#~ msgstr "اغلق"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgid "Dodge"
+#~ msgstr "لا يوجد"
+
+#, fuzzy
+#~| msgid "Height:"
+#~ msgid "Hard light"
+#~ msgstr "الارتفاع:"
+
+#, fuzzy
+#~| msgid "Straight"
+#~ msgid "Soft light"
+#~ msgstr "مستقيم"
+
+#, fuzzy
+#~| msgid "Show &Grid"
+#~ msgid "Show Shadow"
+#~ msgstr "اعرض ال&شبيكة"
+
+#, fuzzy
+#~| msgctxt "Underline Style"
+#~| msgid "Single"
+#~ msgid "Angle:"
+#~ msgstr "مفرد"
+
+#, fuzzy
+#~| msgid "Paste Page"
+#~ msgid "Offset:"
+#~ msgstr "الصق الصفحة"
+
+#, fuzzy
+#~| msgid "&Color:"
+#~ msgid "Color:"
+#~ msgstr "الـ&لون:"
+
+#, fuzzy
+#~| msgid "&Style:"
+#~ msgid "Style:"
+#~ msgstr "الأ&سلوب:"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bookmark"
+#~ msgstr "ادرج فاصلا"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgid "Insert Table"
+#~ msgstr "أدرج صفحة"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgid "Insert Row Above"
+#~ msgstr "أدرج صفحة"
+
+#, fuzzy
+#~| msgid "Insert point"
+#~ msgid "Insert Column Left"
+#~ msgstr "أدرج نقطة"
+
+#, fuzzy
+#~| msgid "Insert point"
+#~ msgid "Insert Column Right"
+#~ msgstr "أدرج نقطة"
+
+#, fuzzy
+#~| msgid "Delete shape"
+#~ msgid "Delete Column"
+#~ msgstr "احذف الشكل"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgid "Delete Row"
+#~ msgstr "احذف"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "أدرج صفحة"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgid "Insert Bibliography"
+#~ msgstr "ادرج فاصلا"
+
+#~ msgid "DetailsPaneBase"
+#~ msgstr "DetailsPaneBase"
+
+#~ msgid "Embedding Object"
+#~ msgstr "تضمين كائن"
+
+#~ msgid "I&mport..."
+#~ msgstr "ا&ستورد..."
+
+#~ msgid "&Default"
+#~ msgstr "ا&فتراضي"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgid "Background Tool"
+#~ msgstr "&لون الخلفية:"
+
+#, fuzzy
+#~| msgid "Path editing tool"
+#~ msgid "Background editing tool"
+#~ msgstr "أداة تحرير المسار"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Use master background"
+#~ msgstr "اضبط الخلفية"
+
+#, fuzzy
+#~| msgid "Separate paths"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Separate paths"
+#~ msgstr "افصل المسارات"
+
+#~ msgid ""
+#~ "An autosaved file for an unnamed document exists in %1.\n"
+#~ "This file is dated %2\n"
+#~ "Do you want to open it?"
+#~ msgstr ""
+#~ "يوجد ملف غير مسمى محفوظ آليا في %1\n"
+#~ "هذا المستند بتاريخ:%2 \n"
+#~ "هل ترغب بفتحه؟"
+
+#~ msgid "&Delete Personal Data"
+#~ msgstr "اح&ذف البيانات الشخصية"
+
+#, fuzzy
+#~| msgid "Delete shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shapes"
+#~ msgstr "احذف الأشكال"
+
+#, fuzzy
+#~| msgid "Subtract"
+#~ msgid "Substract"
+#~ msgstr "اطرح"
+
+#, fuzzy
+#~| msgid "Subtract"
+#~ msgid "Inverse Substract"
+#~ msgstr "اطرح"
+
+#, fuzzy
+#~| msgid ""
+#~| "No personal contact data set, please use the option                     "
+#~| "\"Set as Personal Contact Data\" from the \"Edit\"     menu in "
+#~| "KAddressbook to set one."
+#~ msgid ""
+#~ "No personal contact data set, please use the "
+#~ "option                                     \"Set as Personal Contact Data"
+#~ "\" from the \"Edit\"     menu in KAddressbook to set one."
+#~ msgstr ""
+#~ "لم يتم تعيين بيانات الاتصال الشخصي، يرجي استخدام "
+#~ "الخيار                     \"ضبط كبيانات اتصال شخصي\" من قائمة \"حرر"
+#~ "\"     في KAddressbook لتعيين واحداً."
+
+#~ msgid "Hide colors with bad contrast"
+#~ msgstr "اخف الألوان التي لها تباين سيئ"
+
+#~ msgid "&Load From Address Book"
+#~ msgstr "&حمِّل من دفتر العناوين"
+
+#, fuzzy
+#~| msgid "&Color:"
+#~ msgid "Shadow Color:"
+#~ msgstr "الـ&لون:"
+
+#, fuzzy
+#~| msgid "Set border"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set border"
+#~ msgstr "اضبط الحد"
+
+#~ msgid "Ellipse Shape"
+#~ msgstr "شكل بيضوي"
+
+#~ msgid "Set Horizontal Alignment"
+#~ msgstr "اضبط المحاذاة الأفقية"
+
+#, fuzzy
+#~| msgid "Line Border"
+#~ msgid "Line Break"
+#~ msgstr "حد الخط"
+
+#, fuzzy
+#~| msgid "Snap to Grid"
+#~ msgid "Hide Grid"
+#~ msgstr "طابق إلى الشبكة"
+
+#, fuzzy
+#~| msgid "Snap to Grid"
+#~ msgid "Hide Guides"
+#~ msgstr "طابق إلى الشبكة"
+
+#~ msgid "&Close All Views"
+#~ msgstr "أ&غلق كل العروض"
+
+#~ msgid "&Split View"
+#~ msgstr "&اقسم العرض"
+
+#~ msgid "&Remove View"
+#~ msgstr "أز&ل العرض"
+
+#~ msgid "Splitter &Orientation"
+#~ msgstr "ا&تجاه الانقسام"
+
+#~ msgid "&Horizontal"
+#~ msgstr "أ&فقي"
+
+#~ msgid "&Vertical"
+#~ msgstr "&رأسي"
+
+#~ msgid "Printing page %1"
+#~ msgstr "يجري طباعة الصفحة %1"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Form"
+#~ msgstr "تنسيق"
+
+#~ msgid "Import"
+#~ msgstr "استورد"
+
+#, fuzzy
+#~| msgid "Shape"
+#~ msgid "Share"
+#~ msgstr "الشكل"
+
+#, fuzzy
+#~| msgid "Alpha"
+#~ msgid "Copy Opacy"
+#~ msgstr "ألفا"
+
+#, fuzzy
+#~| msgid "Alpha"
+#~ msgid "Copy Alpha"
+#~ msgstr "ألفا"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Light"
+#~ msgstr "تفتيح"
+
+#~ msgid "Write PDF"
+#~ msgstr "اكتب PDF"
+
+#, fuzzy
+#~| msgid "Dockers"
+#~ msgid "Hide Dockers"
+#~ msgstr "مراسي"
+
+#, fuzzy
+#~| msgid "Stop"
+#~ msgid "Atop"
+#~ msgstr "أوقف"
+
+#~ msgid "KOffice"
+#~ msgstr "KOffice"
+
+#~ msgid "KOffice Storage"
+#~ msgstr "مخزن KOffice"
+
+#, fuzzy
+#~| msgid "CSSGraph"
+#~ msgid "CCSGraph"
+#~ msgstr "CSSGraph"
+
+#~ msgid "Output the graph of color conversion of pigment's Color Conversion"
+#~ msgstr "إخراج رسم تحويل اللون من تحويل لون الصبغة"
+
+#~ msgid "(c) 2007 Cyrille Berger"
+#~ msgstr "(c) 2007 Cyrille Berger"
+
+#~ msgid "return the list of available graphs"
+#~ msgstr "أرجع قائمة الرسوم المتاحة "
+
+#~ msgid ""
+#~ "specify the type of graph (see --graphs to get the full list, the default "
+#~ "is full)"
+#~ msgstr ""
+#~ "حدد نوع الرسم (أنظر --graphs لتحصل على القائمة الكاملة، الافتراضي هو full)"
+
+#, fuzzy
+#~| msgid "specify the source color model"
+#~ msgid "specify the key of the source color space"
+#~ msgstr "حدد نموذج لون المصدر"
+
+#, fuzzy
+#~| msgid "specify the destination color model"
+#~ msgid "specify the key of the destination color space"
+#~ msgstr "حدد نموذج اللون للهدف"
+
+#~ msgid "specify the output (can be ps or dot, the default is ps)"
+#~ msgstr "حدد المخرج (يمكن أن يكون ps أو dot، الافتراضي هو ps)"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Barcode"
+#~ msgstr "تنسيق"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Barcode Format"
+#~ msgstr "تنسيق"
+
+#, fuzzy
+#~| msgid "a chart"
+#~ msgid "Chart"
+#~ msgstr "رسم بياني"
+
+#, fuzzy
+#~| msgid "Set point type"
+#~ msgid "Field Font"
+#~ msgstr "اضبط نوع النقطة"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Pie"
+#~ msgstr "الوقت:"
+
+#, fuzzy
+#~| msgid "Version"
+#~ msgid "Ring"
+#~ msgstr "الإصدار"
+
+#, fuzzy
+#~| msgid "Clear"
+#~ msgid "Polar"
+#~ msgstr "امسح"
+
+#, fuzzy
+#~| msgid "Data"
+#~ msgid "Chart Type"
+#~ msgstr "البيانات"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgid "Stacked"
+#~ msgstr "مسافة"
+
+#, fuzzy
+#~| msgid "Recent:"
+#~ msgid "Percent"
+#~ msgstr "الحديث:"
+
+#, fuzzy
+#~| msgid "Color name:"
+#~ msgid "Color Scheme"
+#~ msgstr "اسم اللون:"
+
+#, fuzzy
+#~| msgid "Untitled"
+#~ msgid "Antialiased"
+#~ msgstr "بدون عنوان"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Display Legend"
+#~ msgstr "اضبط الخلفية"
+
+#~ msgid "QXml"
+#~ msgstr "QXml"
+
+#~ msgid "Zoom Tool"
+#~ msgstr "أداة التكبير"
+
+#~ msgid "Pan Tool"
+#~ msgstr "Pan Tool"
+
+#~ msgid "Path tool"
+#~ msgstr "أداة المسار"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Out"
+#~ msgstr "مخصص"
+
+#~ msgid "RGB8 Histogram"
+#~ msgstr "RGB8 مدرج"
+
+#~ msgid "Insert Linebreak"
+#~ msgstr "ادرج فاصل سطر"
+
+#~ msgid "&Insert"
+#~ msgstr "أ&درج"
+
+#~ msgid "Insert the selected character in the text"
+#~ msgstr "أدرج الحرف المحدد في النص"
+
+#~ msgid "Resize Panel Forward"
+#~ msgstr "أعد تحجيم اللوحة للأمام"
+
+#~ msgid "Resize Panel Reverse"
+#~ msgstr "أعد تحجيم اللوحة عكسيا"
+
+#~ msgid "Access Keys"
+#~ msgstr "مفاتيح الدخول"
+
+#~ msgid "Enable word completion"
+#~ msgstr "مكّن إكمال الكلمات"
+
+#~ msgid ""
+#~ "Toggle autocompletion on and off: if this is checked then autocompletion "
+#~ "will be enabled."
+#~ msgstr ""
+#~ "تبديل حالة الإكمال التلقائي بين التفعيل والتعطيل: إذا تم تعيين هذا "
+#~ "الاختيار فسيفعل الإكمال التلقائي."
+
+#~ msgid ""
+#~ "Suggestion list for autocompletion: contains all the words that will be "
+#~ "autocompleted."
+#~ msgstr ""
+#~ "قائمة الاقتراحات للإكمال التلقائي: تحتوي كافة الكلمات التي ستكمل تلقائيا."
+
+#~ msgid ""
+#~ "By clicking this button you can add manually an individual word to the "
+#~ "completion list."
+#~ msgstr "بالضغط على هذا الزر يمكنك أن تضيف بنفسك كلمة لقائمة الإكمال."
+
+#~ msgid ""
+#~ "To remove words from the completion list, select the word with the left "
+#~ "mouse button from the list, then click this button."
+#~ msgstr ""
+#~ "لإزالة كلمات من القائمة، انتق الكلمة بزر الفأرة الأيسر من القائمة، ثم "
+#~ "اضغط هذا الزر."
+
+#~ msgid "Automatically add new words to suggestion list"
+#~ msgstr "أضف تلقائيا كلمات جديدة لقائمة الاقتراحات"
+
+#~ msgid ""
+#~ "If this option is enabled, any word equal to or longer than the "
+#~ "\"Characters needed\" typed in this document will automatically be added "
+#~ "to the list of words used by the completion."
+#~ msgstr ""
+#~ "عند تفعيل هذا الخيار، فإن أي كلمة مساوية أو أطول من \"الأحرف المطلوبة\" "
+#~ "مكتوبة في المستند سيتم إضافتها تلقائيا لقائمة الكلمات المستخدمة بالإكمال "
+#~ "التلقائي."
+
+#~ msgid "Completion Options"
+#~ msgstr "خيارات الإكمال"
+
+#~ msgid "Show words in tooltip"
+#~ msgstr "اعرض الكلمات في تلميحات"
+
+#~ msgid ""
+#~ "If this option is enabled, a tool tip box will appear when you type the "
+#~ "beginning of a word that exists in the completion list. To complete the "
+#~ "word, press the key you set to accept suggestions in the \"Key to accept "
+#~ "suggestion\" drop-down list."
+#~ msgstr ""
+#~ "عند تفعيل هذا الخيار، سيتم إظهار صندوق تلميح عند كتابتك لبداية كلمة "
+#~ "موجودة ضمن قائمة الإكمال. لإكمال الكلمة اضغط على المفتاح الذي عينته "
+#~ "للموافقة على الاقتراحات في القائمة المنسدلة \"مفتاح قبول الاقتراح\"."
+
+#~ msgid ""
+#~ "This sets the maximum number of words in the completion list. All "
+#~ "additional words will not be included in the list. You can select any "
+#~ "value from 1 to 500. This option keeps the list from becoming too "
+#~ "cumbersome.\n"
+#~ "This option is most important when Automatically add words to completion "
+#~ "list is enabled."
+#~ msgstr ""
+#~ "هذا يعين العدد الأقصى للكلمات ضمن قائمة الإكمال. كل الكلمات الإضافية لن "
+#~ "تتضمن في القائمة. يمكنك انتقاء أية قيمة من 1 حتى 500. هذا الخيار يحافظ "
+#~ "على القائمة من أن تكون مثقلة.\n"
+#~ "هذا الاختيار يكون هام جدا عند تفعيل إضافة الكلمات تلقائياً لقائمة الإكمال."
+
+#~ msgid "Characters needed:"
+#~ msgstr "الأحرف المطلوبة:"
+
+#~ msgid "Suggest words:"
+#~ msgstr "اقترح الكلمات:"
+
+#~ msgid ""
+#~ "Use this spinbox/slider combination to prevent automatically adding short "
+#~ "words to the completion list. You can select any value from 5-100 and the "
+#~ "words will need to be at least the number of characters set here to be "
+#~ "added to the list."
+#~ msgstr ""
+#~ "استخدم ناتج هذا الصندوق/شريط التمرير لمنع الإضافة التلقائية للكلمات "
+#~ "القصيرة للقائمة. يمكنك انتقاء أي قيمة بين 5-100 وستحتاج الكلمات أن تكون "
+#~ "على الأقل في عدد المحارف المعين هنا لتتم إضافتها للقائمة."
+
+#~ msgid "Append space"
+#~ msgstr "إلحاق مسافة"
+
+#~ msgid ""
+#~ "If checked, it adds a single space to the end of a word after "
+#~ "autocompletion, this means it is not necessary to add the space manually "
+#~ "for the next word."
+#~ msgstr ""
+#~ "عند تعيينه، تضاف مسافة مفردة لنهاية الكلمة بعد الإكمال التلقائي، مما يعني "
+#~ "عدم ضرورة إضافة مسافة يدويا للكلمة التالية."
+
+#~ msgid "Key to accept suggestion:"
+#~ msgstr "مفتاح قبول الاقتراح:"
+
+#~ msgid ""
+#~ "Set the key you want to use when an autocompleted word is suggested to "
+#~ "you and you want to accept it. You can choose Enter, Tab, Space, End or "
+#~ "Right."
+#~ msgstr ""
+#~ "اضبط المفتاح الذي ترغب باستخدامه عندما يتم اقتراح كلمة بالإكمال التلقائي "
+#~ "وأنت ترغب بقبولها. يمكنك اختيار الإدخال، Tab، المسافة، End أو اليمين."
+
+#~ msgid "Make Default"
+#~ msgstr "اضبط كافتراضي"
+
+#~ msgid ""
+#~ "Completion is configured per document. Making this list the default will "
+#~ "allow you to use it for new documents automatically. A dialog will appear "
+#~ "to inform you that the list will be used for all documents from now on."
+#~ msgstr ""
+#~ "الإكمال يتم إعداده لكل مستند. عند جعل هذه القائمة افتراضية سيسمح لك "
+#~ "باستخدامها للمستندات الجديدة تلقائياً. سوف تظهر لك رسالة تخبرك بأن القائمة "
+#~ "سوف تستخدم لكل المستندات من الآن فصاعدا."
+
+#~ msgid "C&ustom"
+#~ msgstr "مخصـ&ص"
+
+#~ msgid "&Insert:"
+#~ msgstr "ادر&ج:"
+
+#~ msgid "Paragraph Background Color"
+#~ msgstr "لون خلفية الفقرة"
+
+#~ msgid ""
+#~ "<p>Paragraph Background Color</p>\n"
+#~ "\n"
+#~ "<p>The paragraph background color appears\n"
+#~ "between the left and right margins of a\n"
+#~ "paragraph.</p>\n"
+#~ "\n"
+#~ "<p>If the text has a background color set, then\n"
+#~ "the text background will appear 'on top' of the\n"
+#~ "paragraph background.  In this case, the paragraph\n"
+#~ "background will still show on parts of the paragraph\n"
+#~ "that have no text (usually on the last line, between\n"
+#~ "the end of the text and the margin).</p>"
+#~ msgstr ""
+#~ "<p>لون خلفية الفقرة</p>\n"
+#~ "\n"
+#~ "<p>لون خلفية النص يظهر\n"
+#~ "فيما بين الهامشين الأيمن والأيسر للفقرة.</p>\n"
+#~ "\n"
+#~ "<p>عند تعيين لون خلفية للنص، فإن\n"
+#~ "خلفية النص ستظهر فوق \n"
+#~ "خلفية الفقرة.  في هذه الحالة ستبقى خلفية الفقرة ظاهرة في الأجزاء من "
+#~ "الفقرة\n"
+#~ "التي ليس بها نص (عادة في السطر الأخير، بين\n"
+#~ "نهاية النص والهامش).</p>"
+
+#~ msgid "Borders"
+#~ msgstr "الحدود"
+
+#~ msgid ""
+#~ "<p>Paragraph Borders</p>\n"
+#~ "\n"
+#~ "<p>The preview shows what the currently \n"
+#~ "selected paragraph borders will look like.</p>\n"
+#~ "\n"
+#~ "<p>To <i>add</i> a new border: Select the desired style,\n"
+#~ "width and color.  Click the toggle button that corresponds\n"
+#~ "to that border.</p>\n"
+#~ "\n"
+#~ "<p>To <i>remove</i> an existing border: Either click on the\n"
+#~ "border to be removed in the preview, or click the\n"
+#~ "toggle button corresponding to that border.</p>\n"
+#~ "\n"
+#~ "<p>To <i>modify</i> a border: Select the desired style,\n"
+#~ "width and color, then click on the border to be\n"
+#~ "modified in the preview.</p>"
+#~ msgstr ""
+#~ "<p>حدود الفقرة</p>\n"
+#~ "\n"
+#~ "<p>المعاينة تظهر كيف ستبدو حدود الفقرة المتقاة حاليا.</p>\n"
+#~ "\n"
+#~ "<p>لكي <i>تضيف</i> حد جديد: انتق الأسلوب المرغوب،\n"
+#~ "والعرض واللون.  ثم اضغط زر التبديل المناظر\n"
+#~ "لذلك الحد.</p>\n"
+#~ "\n"
+#~ "<p>لكي <i>تزيل</i> حداً موجوداً: فإما أن تضغط على\n"
+#~ "ذلك الحد ليتم إزالته في المعاينة، أو اضغط على\n"
+#~ "زر التبديل المناظر لذلك الحد.</p>\n"
+#~ "\n"
+#~ "<p>لكي <i>تعدل</i> حدا: انتق الأسلوب المرغوب،\n"
+#~ "والعرض واللون، ثم اضغط على الحد ليتم\n"
+#~ "تعديله في المعاينة.</p>"
+
+#~ msgid "&Width:"
+#~ msgstr "الـ&عرض:"
+
+#~ msgid "Add/remove left paragraph border"
+#~ msgstr "أضف/أزل حد أيسر للفقرة"
+
+#~ msgid "Toggles the left paragraph border on or off."
+#~ msgstr "تبديل وضع حد الفقرة الأيسر."
+
+#~ msgid "Add/remove right paragraph border"
+#~ msgstr "أضف/أزل حد أيمن للفقرة"
+
+#~ msgid "Toggles the right paragraph border on or off."
+#~ msgstr "تبديل وضع حد الفقرة الأيمن."
+
+#~ msgid "Add/remove top paragraph border"
+#~ msgstr "أضف/أزل حد علوي للفقرة"
+
+#~ msgid "Toggles the top paragraph border on or off."
+#~ msgstr "تبديل وضع حد الفقرة العلوي."
+
+#~ msgid "Add/remove bottom paragraph border"
+#~ msgstr "أضف/أزل حد سفلي للفقرة"
+
+#~ msgid "Toggles the bottom paragraph border on or off."
+#~ msgstr "تبديل وضع حد الفقرة السفلي."
+
+#~ msgid "&Merge with next paragraph"
+#~ msgstr "ا&دمج مع الفقرة التالية"
+
+#~ msgid ""
+#~ "Merges the border style of the current paragraph with the next paragraph"
+#~ msgstr "يدمج أسلوب الحد للفقرة الحالية مع الفقرة التالية"
+
+#~ msgid ""
+#~ "<p>Merge with next paragraph</p>\n"
+#~ "\n"
+#~ "<p>When this option is checked, no top or bottom borders\n"
+#~ "will appear between consecutive paragraphs with the\n"
+#~ "same style.  Top and Bottom borders will only appear between\n"
+#~ "paragraphs with different styles.</p>\n"
+#~ "\n"
+#~ "<p>When this option is unchecked, top and bottom borders\n"
+#~ "always appear at the top and bottom of paragraphs with this style,\n"
+#~ "regardless of the style of the preceding and subsequent paragraphs.</p>"
+#~ msgstr ""
+#~ "<p>دمج مع الفقرة التالية</p>\n"
+#~ "\n"
+#~ "<p>عند تعيين هذا الخيار، لن تظهر حدود\n"
+#~ "عليا أو سفلى بين الإطارات المتتابعة التي لها\n"
+#~ "نفس الأسلوب.  الحدود العليا والسفلى ستظهر فقط بين\n"
+#~ "الفقرات التي لها أساليب مختلفة.</p>\n"
+#~ "\n"
+#~ "<p>عند عدم تعيين هذا الخيار، الحدود العليا والسفلى\n"
+#~ "ستظهر دائماً أعلى وأسفل الفقرات بهذا الأسلوب،\n"
+#~ "بغض النظر عن أسلوب الفقرات السابقة واللاحقة.</p>"
+
+#~ msgid "String:"
+#~ msgstr "السلسلة النصية:"
+
+#~ msgid "Boolean:"
+#~ msgstr "المنطقية:"
+
+#~ msgid "true"
+#~ msgstr "صحيح"
+
+#~ msgid "false"
+#~ msgstr "خاطئ"
+
+#~ msgid "Date:"
+#~ msgstr "التاريخ:"
+
+#~ msgid "Set Guide Line Position"
+#~ msgstr "اضبط موضع الخط الدليل"
+
+#~ msgid "Add Guide Line"
+#~ msgstr "أضف خط دليل"
+
+#~ msgid "Horizontal"
+#~ msgstr "أفقي"
+
+#~ msgid "Vertical"
+#~ msgstr "رأسي"
+
+#~ msgid "&Position:"
+#~ msgstr "المو&ضع:"
+
+#~ msgid "Guide Line"
+#~ msgstr "الخط الدليل"
+
+#~ msgid "Guide Lines"
+#~ msgstr "الخطوط الأدلة"
+
+#~ msgid "No handler found for %1"
+#~ msgstr "لم يعثر على مشغل لـ %1"
+
+#~ msgid ""
+#~ "Error loading %1:\n"
+#~ "%2"
+#~ msgstr ""
+#~ "خطأ بتحميل %1:\n"
+#~ "%2"
+
+#~ msgid ""
+#~ "This document contains an external link to a remote document\n"
+#~ "%1"
+#~ msgstr ""
+#~ "هذا المستند يحتوي علي ارتباط خارجي لمستند بعيد\n"
+#~ "%1"
+
+#~ msgid "Confirmation Required"
+#~ msgstr "التأكيد مطلوب"
+
+#~ msgid "Skip"
+#~ msgstr "تخطى"
+
+#~ msgid ""
+#~ "Could not load external document %1:\n"
+#~ "%2"
+#~ msgstr ""
+#~ "تعذر تحميل المستند الخارجي %1:\n"
+#~ "%2"
+
+#~ msgid "Na&me:"
+#~ msgstr "الا&سم:"
+
+#~ msgid "Protect si&ze and position"
+#~ msgstr "احم ال&حجم والموضع"
+
+#~ msgid "Keep &aspect ratio"
+#~ msgstr "حافظ على نسبة القياس"
+
+#~ msgid "&Height:"
+#~ msgstr "الا&رتفاع:"
+
+#~ msgid "&Top:"
+#~ msgstr "الأ&على:"
+
+#~ msgid "&Left:"
+#~ msgstr "&اليسار:"
+
+#~ msgid "Context Help"
+#~ msgstr "مساعدة السياق"
+
+#~ msgid "Here will be shown help according to your actions"
+#~ msgstr "هنا سيتم عرض مساعدة مناظرة لإجراءاتك"
+
+#~ msgid "All values are given in %1."
+#~ msgstr "جميع القيم معطاة بـ %1 ."
+
+#~ msgid "&Size:"
+#~ msgstr "ال&حجم:"
+
+#~ msgid "&Portrait"
+#~ msgstr "منظر &طولي"
+
+#~ msgid "La&ndscape"
+#~ msgstr "منظر عر&ضي"
+
+#~ msgid "The page width is smaller than the left and right margins."
+#~ msgstr "عرض الصفحة أصغر من الهامشين الأيمن والأيسر."
+
+#~ msgid "Page Layout Problem"
+#~ msgstr "مشكلة بتخطيط الصفحة"
+
+#~ msgid "The page height is smaller than the top and bottom margins."
+#~ msgstr "ارتفاع الصفحة أصغر من الهامشين العلوي والسفلي"
+
+#~ msgid "Show &Grid"
+#~ msgstr "اعرض ال&شبيكة"
+
+#~ msgctxt "Custom size"
+#~ msgid "Custom"
+#~ msgstr "مخصص"
+
+#, fuzzy
+#~| msgid "Delete shape"
+#~ msgid "Delete slides"
+#~ msgstr "احذف الشكل"
+
+#, fuzzy
+#~| msgid "Delete page"
+#~ msgid "Delete pages"
+#~ msgstr "احذف الصفحة"
+
+#~ msgid "Insert Object"
+#~ msgstr "ادرج كائناً"
+
+#~ msgid "Column spacing:"
+#~ msgstr "تباعد العمود:"
+
+#~ msgid "Footnote/ Endnote"
+#~ msgstr "حاشية سفلية/ تعليق ختامي"
+
+#~ msgid "Spacing between footnote and body:"
+#~ msgstr "التباعد بين الحاشية السفلية و المتن:"
+
+#~ msgid "Different footer for even and odd pages"
+#~ msgstr "تذييل مختلف للصفحات الفردية و الزوجية"
+
+#~ msgid "Different footer for the first page"
+#~ msgstr "تذييل مختلف للصفحة الأولى"
+
+#~ msgid "Spacing between footer and body:"
+#~ msgstr "التباعد بين التذييل و المتن:"
+
+#~ msgid "Spacing between header and body:"
+#~ msgstr "التباعد بين الترويسة و المتن:"
+
+#~ msgid "Different header for even and odd pages"
+#~ msgstr "ترويسة مختلفة للصفحات الفردية و الزوجية"
+
+#~ msgid "Different header for the first page"
+#~ msgstr "ترويسة مختلفة للصفحة الأولى"
+
+#~ msgid "Page Preview"
+#~ msgstr "معاينة الصفحة"
+
+#~ msgid "Page Size && &Margins"
+#~ msgstr "حجم الصفحة والـ&هوامش"
+
+#~ msgid "H&eader && Footer"
+#~ msgstr "التـ&رويسة والتذييل"
+
+#~ msgid "Head Line"
+#~ msgstr "الخط العلوي"
+
+#~ msgid "Foot Line"
+#~ msgstr "الخط السفلي"
+
+#~ msgid "You can insert several tags in the text:"
+#~ msgstr "يمكنك إدراج عدة بطاقات في النص:"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;sheet&gt; The sheet name</li><li>&lt;page&gt; The current "
+#~ "page</li><li>&lt;pages&gt; The total number of pages</li><li>&lt;name&gt; "
+#~ "The filename or URL</li><li>&lt;file&gt; The filename with complete path "
+#~ "or the URL</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;الورقة&gt; اسم الورقة</li><li>&lt;الصفحة&gt; الصفحة "
+#~ "الحالية</li><li>&lt;الصفحات&gt; عدد الصفحات الإجمالي</li><li>&lt;"
+#~ "الاسم&gt; اسم الملف أو عنوان URL</li><li>&lt;الملف&gt; اسم الملف مع "
+#~ "المسار الكامل أو عنوان URL</li></ul></qt>"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;time&gt; The current time</li><li>&lt;date&gt; The "
+#~ "current date</li><li>&lt;author&gt; Your full name</li><li>&lt;org&gt; "
+#~ "Your organization</li><li>&lt;email&gt; Your email address</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;الوقت&gt; الوقت الحالي</li><li>&lt;التاريخ&gt; التاريخ "
+#~ "الحالي</li><li>&lt;المؤلف&gt; اسمك الكامل</li><li>&lt;المؤسسة&gt; المؤسسة "
+#~ "الخاصة بك</li><li>&lt;البريد الإلكتروني&gt; بريدك الإلكتروني</li></ul></"
+#~ "qt>"
+
+#~ msgid "Col&umns"
+#~ msgstr "الأ&عمدة"
+
+#~ msgid "&Help"
+#~ msgstr "&مساعدة"
+
+#~ msgid "Delete a new page after the current one"
+#~ msgstr "احذف صفحة جديدة بعد الحالية"
+
+#~ msgid "Storage Test"
+#~ msgstr "اختبار التخزين"
+
+#~ msgid "A test for the KoStore classes"
+#~ msgstr "اختبار لفئات KoStore"
+
+#~ msgid "Storage Test 2"
+#~ msgstr "اختبار التخزين 2"
+
+#~ msgid ""
+#~ "A test for the KoStore classes, in particular a Krita-induced bug testcase"
+#~ msgstr "اختبار لفئات KoStore، بشكل خاص حالة اختبار لثغرة Krita مستحثة"
+
+#, fuzzy
+#~| msgid "Paste Page"
+#~ msgid "Master page"
+#~ msgstr "الصق الصفحة"
+
+#~ msgid "Rotate"
+#~ msgstr "أدر"
+
+#~ msgid "Shear"
+#~ msgstr "قص"
+
+#, fuzzy
+#~| msgid "Warning"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Waiting"
+#~ msgstr "تحذير"
+
+#, fuzzy
+#~| msgid "Vertical"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Vertical"
+#~ msgstr "رأسي"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Horizontal"
+#~ msgstr "أفقي"
+
+#, fuzzy
+#~| msgid "&Size:"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size All"
+#~ msgstr "ال&حجم:"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Split Horizontal"
+#~ msgstr "أفقي"
+
+#, fuzzy
+#~| msgid "Printing done"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Pointing Hand"
+#~ msgstr "الطباعة انتهت"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgid "Insert image from file"
+#~ msgstr "أدرج صفحة"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "Select Char"
+#~ msgstr "انتقِ المحرف"
+
+#, fuzzy
+#~| msgid "E&ncoding:"
+#~ msgctxt "Size Policy"
+#~ msgid "Expanding"
+#~ msgstr "ال&ترميز:"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgctxt "General properties"
+#~ msgid "General"
+#~ msgstr "عام"
+
+#, fuzzy
+#~| msgid "Width:"
+#~ msgid "Width"
+#~ msgstr "العرض:"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgid "Horizontal Size Type"
+#~ msgstr "أفقي"
+
+#, fuzzy
+#~| msgid "Vertical"
+#~ msgid "Vertical Size Type"
+#~ msgstr "رأسي"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgid "Horizontal Stretch"
+#~ msgstr "أفقي"
+
+#, fuzzy
+#~| msgid "Vertical"
+#~ msgid "Vertical Stretch"
+#~ msgstr "رأسي"
+
+#, fuzzy
+#~| msgid "Ungroup shapes"
+#~ msgid "Undo changes"
+#~ msgstr "فك تجميع الأشكال"
+
+#, fuzzy
+#~| msgid "Show &Grid"
+#~ msgid "Snap Guides"
+#~ msgstr "اعرض ال&شبيكة"
+
+#, fuzzy
+#~| msgid "Guide Lines"
+#~ msgid "Enable Guide Lines Guide "
+#~ msgstr "الخطوط الأدلة"
+
+#, fuzzy
+#~| msgid "Tool Options"
+#~ msgid "Tool Option"
+#~ msgstr "خيارات الأداة"
+
+#, fuzzy
+#~| msgid "Snap to Grid"
+#~ msgid "Configure Snap Guides"
+#~ msgstr "طابق إلى الشبكة"
+
+#~ msgid "Connection Shape"
+#~ msgstr "شكل الاتصال"
+
+#, fuzzy
+#~| msgid "Guide Lines"
+#~ msgid "Edit Guidelines"
+#~ msgstr "الخطوط الأدلة"
+
+#, fuzzy
+#~| msgid "Add Guide Line"
+#~ msgid "Edit guidelines"
+#~ msgstr "أضف خط دليل"
+
+#~ msgid "Activate %1"
+#~ msgstr "نشِّط %1"
+
+#~ msgid "specify the source color depth"
+#~ msgstr "حدد عمق لون المصدر"
+
+#~ msgid "specify the destination color depth"
+#~ msgstr "حدد عمق اللون للهدف"
+
+#~ msgid "Fit to width"
+#~ msgstr "اضبط للعرض"
+
+#~ msgid "Fit to page/canvas"
+#~ msgstr "اضبط للصفحة/المساحة"
+
+#~ msgid "[No Paragraph Style]"
+#~ msgstr "[لا يوجد أسلوب فقرة]"
+
+#~ msgid "[No Character Style]"
+#~ msgstr "[لا يوجد أسلوب محرف]"
+
+#~ msgid "Selected Template"
+#~ msgstr "القالب المنتقى"
+
+#~ msgid "Creates an empty document"
+#~ msgstr "ينشئ مستنداً فارغاً"
+
+#~ msgid "Choose Template"
+#~ msgstr "اختر قالباً"
+
+#~ msgid "No description available"
+#~ msgstr "لا يتوفر وصف"
+
+#~ msgid "Protect size and position"
+#~ msgstr "احم الحجم والموضع"
+
+#~ msgid "&Custom..."
+#~ msgstr "م&خصص..."
+
+#~ msgid "*.svg *.wmf *.qpic|Clipart (*.svg *.wmf *.qpic)"
+#~ msgstr "*.svg *.wmf *.qpic|Clipart (*.svg *.wmf *.qpic)"
+
+#~ msgid "Insert Link"
+#~ msgstr "أدرج ارتباطاً"
+
+#~ msgid "Mail & News"
+#~ msgstr "البريد الإلكتروني و الأخبار"
+
+#~ msgid "Bookmark"
+#~ msgstr "علامة موقع"
+
+#~ msgid "Text to display:"
+#~ msgstr "النص المراد عرضه:"
+
+#~ msgid "Internet address:"
+#~ msgstr "عنوان الانترنت:"
+
+#~ msgid "Bookmark name:"
+#~ msgstr "اسم علامة الموقع:"
+
+#~ msgid "Recent file:"
+#~ msgstr "الملف الحديث:"
+
+#~ msgid "No Entries"
+#~ msgstr "لا مدخلات"
+
+#~ msgid "File location:"
+#~ msgstr "موقع الملف:"
+
+#~ msgid "Tabulator &Left"
+#~ msgstr "علامة الجدولة بالي&سار"
+
+#~ msgid "Tabulator &Center"
+#~ msgstr "علامة الجدولة بالوس&ط"
+
+#~ msgid "Tabulator &Right"
+#~ msgstr "علامة الجدولة بالي&مين"
+
+#~ msgid "Tabulator &Decimal Point"
+#~ msgstr "&علامة عشرية لعلامة الجدولة"
+
+#~ msgid "%1:"
+#~ msgstr "%1:"

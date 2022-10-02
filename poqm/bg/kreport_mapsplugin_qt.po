@@ -1,0 +1,40 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Yasen Pramatarov <yasen@lindeas.com>, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2015-06-01 14:29+0300\n"
+"Last-Translator: Yasen Pramatarov <yasen@lindeas.com>\n"
+"Language-Team: Bulgarian <dict@ludost.net>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: KReportItemMaps.cpp:61
+#, fuzzy
+msgctxt "KReportItemMaps|"
+msgid "Latitude"
+msgstr "Географска ширина"
+
+#: KReportItemMaps.cpp:67
+#, fuzzy
+msgctxt "KReportItemMaps|"
+msgid "Longitude"
+msgstr "Географска дължина"
+
+#: KReportItemMaps.cpp:73
+#, fuzzy
+msgctxt "KReportItemMaps|"
+msgid "Zoom"
+msgstr "Мащаб"
+
+#: KReportItemMaps.cpp:82
+msgctxt "KReportItemMaps|"
+msgid "Theme"
+msgstr ""

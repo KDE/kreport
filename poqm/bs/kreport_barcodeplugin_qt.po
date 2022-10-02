@@ -1,0 +1,154 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: calligra\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-01-20 01:47+0000\n"
+"PO-Revision-Date: 2015-02-26 21:56+0100\n"
+"Last-Translator: Samir Ribić <megaribi@epn.ba>\n"
+"Language-Team: Bosnian <bs@li.org>\n"
+"Language: bs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-10-21 06:53+0000\n"
+"X-Generator: Launchpad (build 17203)\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Qt-Contexts: true\n"
+
+#: KReportItemBarcode.cpp:120
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemBarcode|"
+msgid "Value"
+msgstr "Vrijednost"
+
+#: KReportItemBarcode.cpp:121
+#, fuzzy
+#| msgid "Value used if not bound to a field"
+msgctxt "KReportItemBarcode|"
+msgid "Value used if not bound to a field"
+msgstr "Vrijednost korištena ako nije vezana za polje"
+
+#: KReportItemBarcode.cpp:125
+#, fuzzy
+#| msgid "Left"
+msgctxt "KReportItemBarcode|"
+msgid "Left"
+msgstr "Lijevo"
+
+#: KReportItemBarcode.cpp:125
+#, fuzzy
+#| msgid "Center"
+msgctxt "KReportItemBarcode|"
+msgid "Center"
+msgstr "Centar"
+
+#: KReportItemBarcode.cpp:125
+#, fuzzy
+#| msgid "Right"
+msgctxt "KReportItemBarcode|"
+msgid "Right"
+msgstr "Desno"
+
+#: KReportItemBarcode.cpp:127
+#, fuzzy
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemBarcode|"
+msgid "Horizontal Alignment"
+msgstr "Horizontalno poravnanje"
+
+#: KReportItemBarcode.cpp:135
+#, fuzzy
+#| msgctxt "Barcode symbology, keep short"
+#| msgid "Code 3 of 9"
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "Code 3 of 9"
+msgstr "Code 3 od 9"
+
+#: KReportItemBarcode.cpp:136
+#, fuzzy
+#| msgctxt "Barcode symbology, keep short"
+#| msgid "Code 3 of 9 Ext."
+msgctxt "KReportItemBarcode|3 of 3 Extended: Barcode symbology, keep short"
+msgid "Code 3 of 9 Ext."
+msgstr "Kod 3 od 9 Ext."
+
+#: KReportItemBarcode.cpp:137
+#, fuzzy
+#| msgctxt "Barcode symbology, keep short"
+#| msgid "Code 128"
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "Code 128"
+msgstr "Kod 128"
+
+#: KReportItemBarcode.cpp:138
+#, fuzzy
+#| msgctxt "Barcode symbology, keep short"
+#| msgid "EAN-8"
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "EAN-8"
+msgstr "EAN-8"
+
+#: KReportItemBarcode.cpp:139
+#, fuzzy
+#| msgctxt "Barcode symbology, keep short"
+#| msgid "EAN-13"
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "EAN-13"
+msgstr "EAN-13"
+
+#: KReportItemBarcode.cpp:140
+#, fuzzy
+#| msgctxt "Barcode symbology, keep short"
+#| msgid "Interleaved 2 of 5"
+msgctxt ""
+"KReportItemBarcode|Interleaved barcode 2 of 5: barcode symbology, keep short"
+msgid "Interleaved 2 of 5"
+msgstr "Interleaved 2 od 5"
+
+#: KReportItemBarcode.cpp:141
+#, fuzzy
+#| msgctxt "Barcode symbology, keep short"
+#| msgid "UPC-A"
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "UPC-A"
+msgstr "UPC-A"
+
+#: KReportItemBarcode.cpp:142
+#, fuzzy
+#| msgctxt "Barcode symbology, keep short"
+#| msgid "UPC-E"
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "UPC-E"
+msgstr "UPC-E"
+
+#: KReportItemBarcode.cpp:145
+#, fuzzy
+#| msgid "Barcode Format"
+msgctxt "KReportItemBarcode|"
+msgid "Barcode Format"
+msgstr "Bar kod format"
+
+#: KReportItemBarcode.cpp:147
+#, fuzzy
+#| msgid "Max Length"
+msgctxt "KReportItemBarcode|"
+msgid "Max Length"
+msgstr "Maksimalna dužina"
+
+#: KReportItemBarcode.cpp:148
+#, fuzzy
+#| msgid "Maximum Barcode Length"
+msgctxt "KReportItemBarcode|"
+msgid "Maximum Barcode Length"
+msgstr "Maksimalna dužina bar koda"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemBarcode|"
+#~ msgid "Data Source"
+#~ msgstr "Izvor podataka"
+
+#~ msgid "Barcode"
+#~ msgstr "Bar kod"

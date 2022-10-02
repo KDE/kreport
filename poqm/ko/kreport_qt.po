@@ -1,0 +1,902 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Jung Hee Lee <daemul72@gmail.com>, 2019.
+# Shinjo Park <kde@peremen.name>, 2019, 2020, 2021, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2022-05-15 22:37+0200\n"
+"Last-Translator: Shinjo Park <kde@peremen.name>\n"
+"Language-Team: Korean <kde-kr@kde.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+"X-Generator: Lokalize 21.12.3\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: common/KReportDesign.cpp:150
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "XML 문서를 처리할 수 없습니다."
+
+#: common/KReportDesign.cpp:159
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "XML 문서에서 오류가 발생했습니다."
+
+#: common/KReportItemBase.cpp:75
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "이름"
+
+#: common/KReportItemBase.cpp:75
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "객체 이름"
+
+#: common/KReportItemBase.cpp:78
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "위치"
+
+#: common/KReportItemBase.cpp:79
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "크기"
+
+#: common/KReportItemBase.cpp:112
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "데이터 원본"
+
+#: common/KReportItemLine.cpp:80
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "시작 위치"
+
+#: common/KReportItemLine.cpp:81
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "끝 위치"
+
+#: common/KReportItemLine.cpp:83
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "선 두께"
+
+#: common/KReportItemLine.cpp:85
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "선 색상"
+
+#: common/KReportItemLine.cpp:86
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "선 스타일"
+
+#: common/KReportSectionData.cpp:164
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "섹션"
+
+#: common/KReportSectionData.cpp:166
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "높이"
+
+#: common/KReportSectionData.cpp:170
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "배경색"
+
+#: common/KReportUnit.cpp:136
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "인식 불가"
+
+#: common/KReportUnit.cpp:138
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "밀리미터(mm)"
+
+#: common/KReportUnit.cpp:140
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "센티미터(cm)"
+
+#: common/KReportUnit.cpp:142
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "데시미터(dm)"
+
+#: common/KReportUnit.cpp:144
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "인치(in)"
+
+#: common/KReportUnit.cpp:146
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "파이카(pi)"
+
+#: common/KReportUnit.cpp:148
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "시세로(cc)"
+
+#: common/KReportUnit.cpp:150
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "포인트(pt)"
+
+#: common/KReportUnit.cpp:152
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "픽셀(px)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr "지원하지 않는 단위"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "교차"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr "눈금"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr "점"
+
+#: items/check/KReportItemCheck.cpp:80
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "스타일"
+
+#: items/check/KReportItemCheck.cpp:84
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "전경색"
+
+#: items/check/KReportItemCheck.cpp:86
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "선 두께"
+
+#: items/check/KReportItemCheck.cpp:88
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "선 색상"
+
+#: items/check/KReportItemCheck.cpp:89
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "선 스타일"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "값"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr "필드에 바인딩되지 않았을 때 사용할 값"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "값"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr "필드에 바인딩되지 않았을 때 사용할 값"
+
+#: items/field/KReportItemField.cpp:94
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "왼쪽"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "가운데"
+
+#: items/field/KReportItemField.cpp:94
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "오른쪽"
+
+#: items/field/KReportItemField.cpp:96
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "수평 정렬"
+
+#: items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "위"
+
+#: items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "아래"
+
+#: items/field/KReportItemField.cpp:102
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "수직 정렬"
+
+#: items/field/KReportItemField.cpp:104
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "글꼴"
+
+#: items/field/KReportItemField.cpp:106
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "배경색"
+
+#: items/field/KReportItemField.cpp:107
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "전경색"
+
+#: items/field/KReportItemField.cpp:109
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "배경 불투명도"
+
+#: items/field/KReportItemField.cpp:114
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "선 두께"
+
+#: items/field/KReportItemField.cpp:116
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "선 색상"
+
+#: items/field/KReportItemField.cpp:117
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "선 스타일"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr "자동 줄 바꿈"
+
+#: items/field/KReportItemField.cpp:120
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr "확장 가능"
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr "자르기"
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "늘이기"
+
+#: items/image/KReportItemImage.cpp:120
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "크기 조정 모드"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "값"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr "필드에 바인딩되지 않았을 때 사용할 값"
+
+#: items/label/KReportItemLabel.cpp:91
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "캡션"
+
+#: items/label/KReportItemLabel.cpp:94
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "왼쪽"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "가운데"
+
+#: items/label/KReportItemLabel.cpp:94
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "오른쪽"
+
+#: items/label/KReportItemLabel.cpp:96
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "수평 정렬"
+
+#: items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "위"
+
+#: items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "아래"
+
+#: items/label/KReportItemLabel.cpp:102
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "수직 정렬"
+
+#: items/label/KReportItemLabel.cpp:104
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "글꼴"
+
+#: items/label/KReportItemLabel.cpp:106
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "배경색"
+
+#: items/label/KReportItemLabel.cpp:107
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "전경색"
+
+#: items/label/KReportItemLabel.cpp:109
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "배경 불투명도"
+
+#: items/label/KReportItemLabel.cpp:114
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "선 두께"
+
+#: items/label/KReportItemLabel.cpp:116
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "선 색상"
+
+#: items/label/KReportItemLabel.cpp:117
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "선 스타일"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "값"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr "필드에 바인딩되지 않았을 때 사용할 값"
+
+#: items/text/KReportItemText.cpp:119
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "왼쪽"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "가운데"
+
+#: items/text/KReportItemText.cpp:119
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "오른쪽"
+
+#: items/text/KReportItemText.cpp:121
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "수평 정렬"
+
+#: items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "위"
+
+#: items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "아래"
+
+#: items/text/KReportItemText.cpp:127
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "수직 정렬"
+
+#: items/text/KReportItemText.cpp:129
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "글꼴"
+
+#: items/text/KReportItemText.cpp:131
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "배경색"
+
+#: items/text/KReportItemText.cpp:132
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "전경색"
+
+#: items/text/KReportItemText.cpp:134
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "선 두께"
+
+#: items/text/KReportItemText.cpp:136
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "선 색상"
+
+#: items/text/KReportItemText.cpp:137
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "선 스타일"
+
+#: items/text/KReportItemText.cpp:138
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "배경 불투명도"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+"스크립트를 평가할 수 없습니다. 오류: %1\n"
+"\n"
+"추가 메시지를 숨기시겠습니까?\n"
+"(다음에 보고서를 열 때 메시지가 복원됨)"
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr ""
+"스크립트 코드:\n"
+"%1"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "스크립트 오류"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+"이 보고서에는 \"%1\" 형식의 스크립트가 들어 있습니다. 자바스크립트 언어로 작"
+"성한 스크립트만 지원합니다. 스크립트 손실을 방지할 수 있도록 이러한 스크립트"
+"를 변경하지 않는 한 해당 스크립트의 형식과 내용을 변경하지 않습니다."
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr "지원되지 않는 스크립트 형식"
+
+#: wrtembed/KReportDesigner.cpp:676
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "페이지 머리글(모두)"
+
+#: wrtembed/KReportDesigner.cpp:680
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "페이지 머리글(짝수)"
+
+#: wrtembed/KReportDesigner.cpp:684
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "페이지 머리글(홀수)"
+
+#: wrtembed/KReportDesigner.cpp:688
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "페이지 머리글(처음)"
+
+#: wrtembed/KReportDesigner.cpp:692
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "페이지 머리글(마지막)"
+
+#: wrtembed/KReportDesigner.cpp:696
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "페이지 바닥글(모두)"
+
+#: wrtembed/KReportDesigner.cpp:700
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "페이지 바닥글(짝수)"
+
+#: wrtembed/KReportDesigner.cpp:704
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "페이지 바닥글(홀수)"
+
+#: wrtembed/KReportDesigner.cpp:708
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "페이지 바닥글(처음)"
+
+#: wrtembed/KReportDesigner.cpp:712
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "페이지 바닥글(마지막)"
+
+#: wrtembed/KReportDesigner.cpp:716
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "보고서 머리글"
+
+#: wrtembed/KReportDesigner.cpp:720
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "보고서 바닥글"
+
+#: wrtembed/KReportDesigner.cpp:808
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "보고서"
+
+#: wrtembed/KReportDesigner.cpp:813
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "제목"
+
+#: wrtembed/KReportDesigner.cpp:813
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "보고서 제목"
+
+#: wrtembed/KReportDesigner.cpp:818
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "용지 크기"
+
+#: wrtembed/KReportDesigner.cpp:821
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "사용자 정의 페이지 크기"
+
+#: wrtembed/KReportDesigner.cpp:825
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "세로 방향"
+
+#: wrtembed/KReportDesigner.cpp:825
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "가로 방향"
+
+#: wrtembed/KReportDesigner.cpp:827
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "용지 방향"
+
+#: wrtembed/KReportDesigner.cpp:832
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "용지 단위"
+
+#: wrtembed/KReportDesigner.cpp:833
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "격자 표시"
+
+#: wrtembed/KReportDesigner.cpp:834
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "눈금에 맞춤"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr "격자 분할"
+
+#: wrtembed/KReportDesigner.cpp:841
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "왼쪽 여백"
+
+#: wrtembed/KReportDesigner.cpp:843
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "오른쪽 여백"
+
+#: wrtembed/KReportDesigner.cpp:845
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "위쪽 여백"
+
+#: wrtembed/KReportDesigner.cpp:847
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "아래쪽 여백"
+
+#: wrtembed/KReportDesigner.cpp:869
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "객체 스크립트"
+
+#: wrtembed/KReportDesigner.cpp:1067
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "잘라내기"
+
+#: wrtembed/KReportDesigner.cpp:1071
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "복사"
+
+#: wrtembed/KReportDesigner.cpp:1076
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "붙여넣기"
+
+#: wrtembed/KReportDesigner.cpp:1087
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "삭제"
+
+#: wrtembed/KReportDesigner.cpp:1129
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "선"
+
+#: wrtembed/KReportDesigner.cpp:1476
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "선"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr "잘라내기(&T)"
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr "선택 항목을 클립보드로 잘라내기"
+
+#: wrtembed/KReportDesigner.cpp:1525
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "복사(&C)"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr "선택 항목을 클립보드에 복사하기"
+
+#: wrtembed/KReportDesigner.cpp:1531
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "붙여넣기(&P)"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr "클립보드 내용 붙여넣기"
+
+#: wrtembed/KReportDesigner.cpp:1544
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "섹션 편집"
+
+#: wrtembed/KReportDesigner.cpp:1547
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr "키우기"
+
+#: wrtembed/KReportDesigner.cpp:1549
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr "줄이기"
+
+#: wrtembed/KReportDesignerSection.cpp:126
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "자세한 정보"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "그룹 섹션 편집기"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "열:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "정렬:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "그룹 머리글 표시:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "그룹 바닥글 표시:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr "그룹 바닥글 뒤에 페이지 구분 삽입:"
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr "전체 보고서 선택"
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr "보고서의 표면을 선택하여 해당 속성을 표시하는 단추입니다."
+
+#: wrtembed/KReportRuler_p.cpp:1472
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "첫 줄 들여쓰기"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "왼쪽 들여쓰기"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "오른쪽 들여쓰기"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr "추가..."
+
+#: wrtembed/KReportSectionEditor.cpp:74
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "편집..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "삭제"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "위로 이동"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "아래로 이동"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr "오름차순"
+
+#: wrtembed/KReportSectionEditor.cpp:312
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr "내림차순"
+
+#: wrtembed/KReportSectionEditor.ui:29
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "보고서 머리글 표시"
+
+#: wrtembed/KReportSectionEditor.ui:36
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "보고서 바닥글 표시"
+
+#: wrtembed/KReportSectionEditor.ui:43
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "쪽 머리글"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "첫 쪽:"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "짝수 쪽:"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "모든 쪽:"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "마지막 쪽:"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "홀수 쪽:"
+
+#: wrtembed/KReportSectionEditor.ui:130
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "쪽 바닥글"
+
+#: wrtembed/KReportSectionEditor.ui:217
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "그룹 섹션"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, qt-format
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "쪽 너비 맞춤"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "쪽 맞춤"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr "실제 픽셀"
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "문자 폭 맞춤"

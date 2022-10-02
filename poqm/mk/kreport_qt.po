@@ -1,0 +1,5332 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2000 Free Software Foundation, Inc.
+# Damjan Janevski <miopa@usa.net>, 2000.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: koffice\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2000-10-02 22:00+0100\n"
+"Last-Translator: Damjan Janevski <miopa@usa.net>\n"
+"Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
+"Language: mk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
+"2;\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+#, fuzzy
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "Не може да се отвори датотеката %1"
+
+#: common/KReportDesign.cpp:159
+#, fuzzy
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Не може да се отвори датотеката %1"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Име :"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Полно име :"
+
+#: common/KReportItemBase.cpp:78
+#, fuzzy
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr ""
+"\n"
+"Ориентација:"
+
+#: common/KReportItemBase.cpp:79
+#, fuzzy
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Наслов :"
+
+#: common/KReportItemBase.cpp:112
+#, fuzzy
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Отстрани шаблон"
+
+#: common/KReportItemLine.cpp:80
+#, fuzzy
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr ""
+"\n"
+"Ориентација:"
+
+#: common/KReportItemLine.cpp:81
+#, fuzzy
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr ""
+"\n"
+"Ориентација:"
+
+#: common/KReportItemLine.cpp:83
+#, fuzzy
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "Ширина:"
+
+#: common/KReportItemLine.cpp:85
+#, fuzzy
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Колони:"
+
+#: common/KReportItemLine.cpp:86
+#, fuzzy
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Наслов :"
+
+#: common/KReportSectionData.cpp:164
+#, fuzzy
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr ""
+"\n"
+"Ориентација:"
+
+#: common/KReportSectionData.cpp:166
+#, fuzzy
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "Висина:"
+
+#: common/KReportSectionData.cpp:170
+#, fuzzy
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Отстрани табулатор"
+
+#: common/KReportUnit.cpp:136
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "&Додади група..."
+
+#: common/KReportUnit.cpp:138
+#, fuzzy
+#| msgid "Millimeters (mm)"
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "Милиметри (mm)"
+
+#: common/KReportUnit.cpp:140
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "Милиметри (mm)"
+
+#: common/KReportUnit.cpp:142
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "Милиметри (mm)"
+
+#: common/KReportUnit.cpp:144
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "Инчи ( in )"
+
+#: common/KReportUnit.cpp:146
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "Точки (pt)"
+
+#: common/KReportUnit.cpp:148
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr ""
+
+#: common/KReportUnit.cpp:150
+#, fuzzy
+#| msgid "Points (pt)"
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "Точки (pt)"
+
+#: common/KReportUnit.cpp:152
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "Точки (pt)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Колони:"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:80
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "Наслов :"
+
+#: items/check/KReportItemCheck.cpp:84
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Отстрани табулатор"
+
+#: items/check/KReportItemCheck.cpp:86
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "Ширина:"
+
+#: items/check/KReportItemCheck.cpp:88
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Колони:"
+
+#: items/check/KReportItemCheck.cpp:89
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Наслов :"
+
+#: items/check/KReportItemCheck.cpp:90
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Наслов :"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:90
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Наслов :"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Лево:"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Коментар"
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Десно:"
+
+#: items/field/KReportItemField.cpp:96
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Хоризонтално"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "Горе:"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "inch"
+
+#: items/field/KReportItemField.cpp:102
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Внесете име"
+
+#: items/field/KReportItemField.cpp:104
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "inch"
+
+#: items/field/KReportItemField.cpp:106
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Отстрани табулатор"
+
+#: items/field/KReportItemField.cpp:107
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Отстрани табулатор"
+
+#: items/field/KReportItemField.cpp:109
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Отстрани табулатор"
+
+#: items/field/KReportItemField.cpp:114
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "Ширина:"
+
+#: items/field/KReportItemField.cpp:116
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Колони:"
+
+#: items/field/KReportItemField.cpp:117
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Наслов :"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:120
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Улица :"
+
+#: items/image/KReportItemImage.cpp:120
+#, fuzzy
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "&Да"
+
+#: items/image/KReportItemImage.cpp:121
+#, fuzzy
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Наслов :"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:91
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Зачувај документ како"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Лево:"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Коментар"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Десно:"
+
+#: items/label/KReportItemLabel.cpp:96
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Хоризонтално"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "Горе:"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "inch"
+
+#: items/label/KReportItemLabel.cpp:102
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Внесете име"
+
+#: items/label/KReportItemLabel.cpp:104
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "inch"
+
+#: items/label/KReportItemLabel.cpp:106
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Отстрани табулатор"
+
+#: items/label/KReportItemLabel.cpp:107
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Отстрани табулатор"
+
+#: items/label/KReportItemLabel.cpp:109
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Отстрани табулатор"
+
+#: items/label/KReportItemLabel.cpp:114
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "Ширина:"
+
+#: items/label/KReportItemLabel.cpp:116
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Колони:"
+
+#: items/label/KReportItemLabel.cpp:117
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Наслов :"
+
+#: items/text/KReportItemText.cpp:115
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Наслов :"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Лево:"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Коментар"
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Десно:"
+
+#: items/text/KReportItemText.cpp:121
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Хоризонтално"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "Горе:"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "inch"
+
+#: items/text/KReportItemText.cpp:127
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Внесете име"
+
+#: items/text/KReportItemText.cpp:129
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "inch"
+
+#: items/text/KReportItemText.cpp:131
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Отстрани табулатор"
+
+#: items/text/KReportItemText.cpp:132
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Отстрани табулатор"
+
+#: items/text/KReportItemText.cpp:134
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "Ширина:"
+
+#: items/text/KReportItemText.cpp:136
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Колони:"
+
+#: items/text/KReportItemText.cpp:137
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Наслов :"
+
+#: items/text/KReportItemText.cpp:138
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Отстрани табулатор"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, fuzzy, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr "Скрипта за извршување."
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+#, fuzzy
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Внесете име"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:676
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Преглед на страна"
+
+#: wrtembed/KReportDesigner.cpp:680
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Преглед на страна"
+
+#: wrtembed/KReportDesigner.cpp:684
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Преглед на страна"
+
+#: wrtembed/KReportDesigner.cpp:688
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Преглед на страна"
+
+#: wrtembed/KReportDesigner.cpp:692
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Преглед на страна"
+
+#: wrtembed/KReportDesigner.cpp:696
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "Подножје"
+
+#: wrtembed/KReportDesigner.cpp:700
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "Подножје"
+
+#: wrtembed/KReportDesigner.cpp:704
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "Подножје"
+
+#: wrtembed/KReportDesigner.cpp:708
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "Подножје"
+
+#: wrtembed/KReportDesigner.cpp:712
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "Подножје"
+
+#: wrtembed/KReportDesigner.cpp:716
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "Заглавје"
+
+#: wrtembed/KReportDesigner.cpp:720
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "Подножје"
+
+#: wrtembed/KReportDesigner.cpp:808
+#, fuzzy
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "Отстрани приказ"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Наслов :"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Автор"
+
+#: wrtembed/KReportDesigner.cpp:818
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Преглед на страна"
+
+#: wrtembed/KReportDesigner.cpp:821
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Преглед на страна"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "inch"
+
+#: wrtembed/KReportDesigner.cpp:825
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:827
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr ""
+"\n"
+"Ориентација:"
+
+#: wrtembed/KReportDesigner.cpp:832
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Преглед на страна"
+
+#: wrtembed/KReportDesigner.cpp:833
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Покажи %1 алатник"
+
+#: wrtembed/KReportDesigner.cpp:834
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Насловна линија:"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:841
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "inch"
+
+#: wrtembed/KReportDesigner.cpp:843
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "inch"
+
+#: wrtembed/KReportDesigner.cpp:845
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "inch"
+
+#: wrtembed/KReportDesigner.cpp:847
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "inch"
+
+#: wrtembed/KReportDesigner.cpp:869
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Скрипта за извршување."
+
+#: wrtembed/KReportDesigner.cpp:1067
+#, fuzzy
+#| msgid "Custom"
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "По Избор"
+
+#: wrtembed/KReportDesigner.cpp:1071
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Фирма :"
+
+#: wrtembed/KReportDesigner.cpp:1076
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Преглед на страна"
+
+#: wrtembed/KReportDesigner.cpp:1087
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Отстрани шаблон"
+
+#: wrtembed/KReportDesigner.cpp:1129
+#, fuzzy
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "inch"
+
+#: wrtembed/KReportDesigner.cpp:1476
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "inch"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1521
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr "Зачувај документ како"
+
+#: wrtembed/KReportDesigner.cpp:1525
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "Фирма :"
+
+#: wrtembed/KReportDesigner.cpp:1527
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr "Зачувај документ како"
+
+#: wrtembed/KReportDesigner.cpp:1531
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "Преглед на страна"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1544
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr ""
+"\n"
+"Ориентација:"
+
+#: wrtembed/KReportDesigner.cpp:1547
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr "&Да"
+
+#: wrtembed/KReportDesigner.cpp:1549
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr "Име :"
+
+#: wrtembed/KReportDesignerSection.cpp:126
+#, fuzzy
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "Одбери..."
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+#, fuzzy
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr ""
+"\n"
+"Ориентација:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+#, fuzzy
+#| msgid "Columns:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Колони:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+#, fuzzy
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Улица :"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+#, fuzzy
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Покажи %1 алатник"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+#, fuzzy
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Покажи %1 алатник"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+
+#: wrtembed/KReportRuler_p.cpp:1472
+#, fuzzy
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Сите датотеки (*.*)"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+#, fuzzy
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "inch"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+#, fuzzy
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "inch"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.cpp:74
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "&Додади група..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Отстрани шаблон"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Отстрани шаблон"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Отстрани шаблон"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.cpp:312
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.ui:29
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Покажи %1 алатник"
+
+#: wrtembed/KReportSectionEditor.ui:36
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Покажи %1 алатник"
+
+#: wrtembed/KReportSectionEditor.ui:43
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Преглед на страна"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "Сите датотеки (*.*)"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Фирма :"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Фирма :"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Колони"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Фирма :"
+
+#: wrtembed/KReportSectionEditor.ui:130
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "Подножје"
+
+#: wrtembed/KReportSectionEditor.ui:217
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr ""
+"\n"
+"Ориентација:"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, qt-format
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr ""
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+#, fuzzy
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Ширина:"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+#, fuzzy
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Преглед на страна"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr ""
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+#, fuzzy
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Ширина:"
+
+#, fuzzy
+#~| msgid "US Letter"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "US Писмо"
+
+#, fuzzy
+#~| msgid "US Legal"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "US Правно"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "По Избор"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "US Извршно"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "DIN B5"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "Фирма :"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "DIN A3"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "US Писмо"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "Поштенски код :"
+
+#, fuzzy
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Екран"
+
+#, fuzzy
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "Висина:"
+
+#, fuzzy
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "DIN A3"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "DIN A4"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "DIN A5"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "DIN B5"
+
+#, fuzzy
+#~| msgid "US Executive"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "US Извршно"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "DIN A3"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "DIN A3"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "DIN A3"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "DIN A3"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "DIN A3"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "DIN A3"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "DIN A3"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "DIN B5"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "DIN B5"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "DIN B5"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "DIN A3"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "DIN A4"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "DIN B5"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "DIN A5"
+
+#, fuzzy
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "Висина:"
+
+#, fuzzy
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Weight"
+#~ msgstr "Ширина:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "Колони:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Weight"
+#~ msgstr "Ширина:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "Колони:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "Лево:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "Коментар"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "Десно:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Хоризонтално"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "Горе:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Внесете име"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Weight"
+#~ msgstr "Ширина:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "Колони:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "Лево:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "Коментар"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "Десно:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Хоризонтално"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "Горе:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Внесете име"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Weight"
+#~ msgstr "Ширина:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "Колони:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Колони:"
+
+#, fuzzy
+#~ msgid "Draw path"
+#~ msgstr "Одбери..."
+
+#, fuzzy
+#~ msgid "Freehand path"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgid "Angle Constraints"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Precision:"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Straight"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgid "Combine angle:"
+#~ msgstr "По Избор"
+
+#, fuzzy
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr ""
+#~ "Не може да се извезе датотека од тип\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgid "Currently no database is used."
+#~ msgstr "Нема расположиви слики."
+
+#, fuzzy
+#~ msgid "Creating table failed."
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgid "Could not create the same table \"%1\" twice."
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~ msgid "Could not remove object's data."
+#~ msgstr "Не може да се вчита слика."
+
+#, fuzzy
+#~ msgid "Could not alter table \"%1\" using the same table as destination."
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~ msgid "Could not rename table \"%1\" using the same name."
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~ msgid "Begin transaction failed."
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Could not insert record because there is no master table specified."
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~ msgid "Could not delete record because there is no master table specified."
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "Избери..."
+
+#, fuzzy
+#~ msgid "Could not set value of database property \"%1\"."
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~ msgid "Could not read database properties."
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~ msgid "Could not find database driver \"%1\"."
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~ msgid "Field not found"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Could not access the table directly using its name"
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~ msgid "Table not found"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Short Integer Number"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Integer Number"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Yes/No Value"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "Date and Time"
+#~ msgstr "Нема расположиви слики."
+
+#, fuzzy
+#~ msgid "Time"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgid "Text"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Long Text"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Floating Point Number"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Date/Time"
+#~ msgstr "Нема расположиви слики."
+
+#, fuzzy
+#~ msgid "Syntax error."
+#~ msgstr "Внесете име"
+
+#, fuzzy
+#~ msgid "Error near \"%1\"."
+#~ msgstr "Внесете име"
+
+#, fuzzy
+#~ msgid "Record inserting failed."
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgid "Record deleting failed."
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgid "Test Connection"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Number"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Image"
+#~ msgstr "Преглед на страна"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Combine paths"
+#~ msgstr "По Избор"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move control point"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move points"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove points"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set point type"
+#~ msgstr "Одбери..."
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reverse paths"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to curves"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to lines"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Align shapes"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Clip Shape"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shape"
+#~ msgid_plural "Delete shapes"
+#~ msgstr[0] "Отстрани шаблон"
+#~ msgstr[1] "Отстрани шаблон"
+#~ msgstr[2] "Отстрани шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Distribute shapes"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move shapes"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reorder shapes"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Shape RunAround"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Shadow"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Shear shapes"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Resize shapes"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr "Скрипта за извршување."
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shape"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shapes"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Close subpath"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Join subpaths"
+#~ msgstr "По Избор"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove subpath"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgid "Lines"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgid "Type:"
+#~ msgstr "Горе:"
+
+#, fuzzy
+#~ msgid "Tie"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgid "Simple path shape"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Shapes"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Nodes"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Guide lines"
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgid "Create object"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Segment"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Corner point"
+#~ msgstr "Внесете име"
+
+#, fuzzy
+#~ msgid "Make curve point"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgid "Segment to Line"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Insert point"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Remove point"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgid "Path editing"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "..."
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Convert To Path"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgid "Scripts"
+#~ msgstr "Скрипта за извршување."
+
+#, fuzzy
+#~ msgid "Execute Script File..."
+#~ msgstr "Скрипта за извршување."
+
+#, fuzzy
+#~ msgid "Execute Script File"
+#~ msgstr "Скрипта за извршување."
+
+#, fuzzy
+#~ msgid "Could not read the package \"%1\"."
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~ msgid ""
+#~ "A script package with the name \"%1\" already exists. Replace this "
+#~ "package?"
+#~ msgstr ""
+#~ "Шаблон со истото име (%1) веќе постои. Дали сакате да го презапишете?"
+
+#, fuzzy
+#~ msgid "Replace"
+#~ msgstr "Отстрани приказ"
+
+#, fuzzy
+#~ msgid "Save"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Add script file"
+#~ msgstr "Скрипта за извршување."
+
+#, fuzzy
+#~ msgid "Add collection folder"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgid "Add"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Script"
+#~ msgstr "Скрипта за извршување."
+
+#, fuzzy
+#~ msgid "Collection"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master slide"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master page"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~| msgid "Page Layout"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "Распоред на страна"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display page background"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Show master shapes"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Hide master shapes"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] "Отстрани шаблон"
+#~ msgstr[1] "Отстрани шаблон"
+#~ msgstr[2] "Отстрани шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "Отстрани шаблон"
+#~ msgstr[1] "Отстрани шаблон"
+#~ msgstr[2] "Отстрани шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "Колони"
+#~ msgstr[1] "Колони"
+#~ msgstr[2] "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] "Отстрани шаблон"
+#~ msgstr[1] "Отстрани шаблон"
+#~ msgstr[2] "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "Grid"
+#~ msgstr "Покажи %1 алатник"
+
+#, fuzzy
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgid "Document Settings"
+#~ msgstr "Информации за документот"
+
+#, fuzzy
+#~| msgid "Author"
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "Автор"
+
+#~ msgid "Author"
+#~ msgstr "Автор"
+
+#, fuzzy
+#~ msgid "Master Slide"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Master Page"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Slide %1"
+#~ msgstr "Покажи %1 алатник"
+
+#, fuzzy
+#~ msgid "Page  %1"
+#~ msgstr "Избери..."
+
+#, fuzzy
+#~| msgid "Group:"
+#~ msgid "Group"
+#~ msgstr "Група:"
+
+#, fuzzy
+#~ msgid "Shape"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgid "Slide"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reparent shapes"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "&Move Here"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "&Copy Here"
+#~ msgstr "Екран"
+
+#, fuzzy
+#~ msgid "C&ancel"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Document"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgid "Add a new slide or layer"
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgid "Add a new page or layer"
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgid "Delete selected objects"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "Raise selected objects"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "Lower selected objects"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgid "View mode"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "Add a new slide"
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgid "Add a new page"
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgid "Page %1"
+#~ msgstr "Избери..."
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] "Колони"
+#~ msgstr[1] "Колони"
+#~ msgstr[2] "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] "Колони"
+#~ msgstr[1] "Колони"
+#~ msgstr[2] "Колони"
+
+#, fuzzy
+#~ msgid "Tools"
+#~ msgstr "Одбери..."
+
+#, fuzzy
+#~ msgid "D&elete"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "Insert Page"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Copy Page"
+#~ msgstr "Фирма :"
+
+#, fuzzy
+#~ msgid "Delete Page"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "Delete the current page"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "Master Page..."
+#~ msgstr "Колони"
+
+#~ msgid "Page Layout..."
+#~ msgstr "Распоред на страна..."
+
+#, fuzzy
+#~ msgid "Import Document..."
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgid "Import Slideshow"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgid "Import Document"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not import\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Не може да се отвори\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgid "Background"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgid "Page Background"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page Design"
+#~ msgstr "Преглед на страна"
+
+#, fuzzy
+#~ msgid "Slide Design"
+#~ msgstr "Покажи %1 алатник"
+
+#, fuzzy
+#~ msgid "Use background of master page"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Use background of master slide"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Display shapes of master page"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Display shapes of master slide"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change slide background image"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page background image"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Slide %1/%2"
+#~ msgstr "Покажи %1 алатник"
+
+#, fuzzy
+#~ msgid "Master Page %1/%2"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Page %1/%2"
+#~ msgstr "Избери..."
+
+#, fuzzy
+#~ msgid "Field"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Right"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Below"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List Numbering"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "Формат на страна"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Direct Paragraph Formatting"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr "По Избор"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "Преглед на страна"
+
+#, fuzzy
+#~ msgid "Replace %1 with %2?"
+#~ msgstr "Отстрани приказ"
+
+#, fuzzy
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "Автор"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "Вертикално"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr "По Избор"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Border Formatting"
+#~ msgstr "Формат на страна"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "Единица:"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr "Улица :"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr "Внесете име"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr "Одбери..."
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr "Одбери..."
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Text Color"
+#~ msgstr "Колони:"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Paragraph Style"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "Формат на страна"
+
+#, fuzzy
+#~ msgid "Default"
+#~ msgstr "Одбери..."
+
+#, fuzzy
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "Отстрани приказ"
+
+#, fuzzy
+#~ msgid "Redo %1"
+#~ msgstr "Отстрани приказ"
+
+#, fuzzy
+#~ msgid "Redo"
+#~ msgstr "Отстрани приказ"
+
+#, fuzzy
+#~ msgid "&File"
+#~ msgstr "Полно име :"
+
+#, fuzzy
+#~ msgid "&Settings"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgid "File"
+#~ msgstr "Полно име :"
+
+#, fuzzy
+#~ msgid "Delete the author profile"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "Default Author Profile"
+#~ msgstr "Одбери..."
+
+#, fuzzy
+#~ msgid "Name of Profile"
+#~ msgstr "Име :"
+
+#~ msgid "Name:"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "Initials:"
+#~ msgstr "Единица:"
+
+#, fuzzy
+#~ msgid "Title:"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgid "Position:"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Company:"
+#~ msgstr "Фирма :"
+
+#, fuzzy
+#~ msgid "Email:"
+#~ msgstr "Е-пошта :"
+
+#, fuzzy
+#~ msgid "Telephone (home):"
+#~ msgstr "Телефон :"
+
+#, fuzzy
+#~ msgid "Telephone (work):"
+#~ msgstr "Телефон :"
+
+#, fuzzy
+#~ msgid "Fax:"
+#~ msgstr "Факс :"
+
+#, fuzzy
+#~ msgid "Street:"
+#~ msgstr "Улица :"
+
+#, fuzzy
+#~ msgid "Postal code:"
+#~ msgstr "Поштенски код :"
+
+#, fuzzy
+#~ msgid "City:"
+#~ msgstr "Град :"
+
+#, fuzzy
+#~ msgid "Country:"
+#~ msgstr "Држава :"
+
+#, fuzzy
+#~ msgid "Create backup file:"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgid "Show grid:"
+#~ msgstr "Покажи %1 алатник"
+
+#, fuzzy
+#~ msgid "Grid color:"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgid "Spacing"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~| msgid "&Horizontal"
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "Хоризонтално"
+
+#, fuzzy
+#~| msgid "&Vertical"
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "Вертикално"
+
+#, fuzzy
+#~| msgid "Unit:"
+#~ msgid "Units:"
+#~ msgstr "Единица:"
+
+#, fuzzy
+#~ msgid "Paste offset:"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Open a new document with a template"
+#~ msgstr "Создади нов документ од &шаблон"
+
+#, fuzzy
+#~ msgid "%1: Critical Error"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgid "Always use this template"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgid "Saving..."
+#~ msgstr "inch"
+
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Не може да се сними\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Не може да се сними\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgid "Could not create the file for saving"
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~ msgid "Opening Document"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~ msgid "File not found"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Not implemented"
+#~ msgstr "Коментар"
+
+#, fuzzy
+#~ msgid "Invalid file format"
+#~ msgstr "Формат на страна"
+
+#, fuzzy
+#~ msgid "Internal error"
+#~ msgstr "Внесете име"
+
+#, fuzzy
+#~ msgid "Failed to download remote file"
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~ msgid "Could not find %1"
+#~ msgstr "Не може да се пронајде модулот %1"
+
+#, fuzzy
+#~ msgid "Could not open the file for reading (check read permissions)."
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~ msgid "Could not read the beginning of the file."
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~ msgid "Untitled"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr ""
+#~ "Документот беше променет\n"
+#~ "Дали сакате да го зачувате?"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Не може да се отвори\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~ msgid "a presentation"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr ""
+#~ "Документот беше променет\n"
+#~ "Дали сакате да го зачувате?"
+
+#, fuzzy
+#~ msgid "Close Document"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgid "No"
+#~ msgstr "Избери..."
+
+#, fuzzy
+#~ msgid "Could not export file."
+#~ msgstr ""
+#~ "Не може да се извезе датотека од тип\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgid "Missing Export Filter"
+#~ msgstr "Недостасува филтер за извоз"
+
+#~ msgid ""
+#~ "Could not import file of type\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Не може да се увезе датотека од тип\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgid "Missing Import Filter"
+#~ msgstr "Недостасува филтер за увоз"
+
+#, fuzzy
+#~ msgid "Choose Filter"
+#~ msgstr "Избери"
+
+#, fuzzy
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "Средина:"
+
+#, fuzzy
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "Преглед:"
+
+#, fuzzy
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "Отстрани приказ"
+
+#, fuzzy
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "Отстрани приказ"
+
+#, fuzzy
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "Отстрани приказ"
+
+#, fuzzy
+#~ msgid "%1 unsaved document (%2)"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgid "Open ex&isting Document as Untitled Document..."
+#~ msgstr "&Отвори постоечки документ"
+
+#, fuzzy
+#~ msgid "En&crypt Document"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgid "&New View"
+#~ msgstr "Отстрани приказ"
+
+#~ msgid "Document Information"
+#~ msgstr "Информации за документот"
+
+#, fuzzy
+#~| msgid "Show %1 Toolbar"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "Покажи %1 алатник"
+
+#, fuzzy
+#~ msgid "(write protected)"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "untitled"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgid "Open Document"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgid "Document - %1"
+#~ msgstr "Зачувај документ како"
+
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "Покажи %1 алатник"
+
+#, fuzzy
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "Покажи %1 алатник"
+
+#, fuzzy
+#~ msgid "Open Existing Document"
+#~ msgstr "&Отвори постоечки документ"
+
+#, fuzzy
+#~ msgid "Recent Documents"
+#~ msgstr "&Отвори постоечки документ"
+
+#, fuzzy
+#~ msgid "Custom Document"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgid "Printing"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Printing done"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Close"
+#~ msgstr "Колони:"
+
+#, fuzzy
+#~ msgid "Open This Document"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgid "Create Template"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "Име :"
+
+#~ msgid "Group:"
+#~ msgstr "Група:"
+
+#, fuzzy
+#~ msgid "&Add Group..."
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "&Remove"
+#~ msgstr "Отстрани приказ"
+
+#, fuzzy
+#~ msgid "Picture"
+#~ msgstr "Слика:"
+
+#, fuzzy
+#~ msgid "&Preview"
+#~ msgstr "Преглед:"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Custom:"
+#~ msgstr "По Избор"
+
+#, fuzzy
+#~ msgid "&Select..."
+#~ msgstr "Одбери..."
+
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr "Навистина ли сакате да го презапишете постоечкиот '%1' шаблон?"
+
+#, fuzzy
+#~ msgid "Add Group"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Enter group name:"
+#~ msgstr "Внесете име"
+
+#, fuzzy
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "Навистина ли сакате да ја отстраните таа група"
+
+#, fuzzy
+#~ msgid "Remove Group"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "Навистина ли сакате да го отстраните тој шаблон"
+
+#, fuzzy
+#~ msgid "Remove Template"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "&Delete"
+#~ msgstr "Отстрани шаблон"
+
+#~ msgid "Could not load picture."
+#~ msgstr "Не може да се вчита слика."
+
+#~ msgid "No picture available."
+#~ msgstr "Нема расположиви слики."
+
+#, fuzzy
+#~ msgid "Use This Template"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgid "Date & Time"
+#~ msgstr "Нема расположиви слики."
+
+#~ msgid "Comment"
+#~ msgstr "Коментар"
+
+#, fuzzy
+#~ msgid "&Modify"
+#~ msgstr "Средина:"
+
+#, fuzzy
+#~ msgid "Date: %1"
+#~ msgstr "Избери..."
+
+#, fuzzy
+#~ msgid "Do you want to save the password?"
+#~ msgstr "Навистина ли сакате да го отстраните тој шаблон"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "Екран"
+
+#, fuzzy
+#~ msgid "Subtract"
+#~ msgstr "Кратка содржина :"
+
+#, fuzzy
+#~ msgid "Green"
+#~ msgstr "Екран"
+
+#, fuzzy
+#~ msgid "Erase"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "Overlay"
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgid "Grain Merge"
+#~ msgstr "Е-пошта :"
+
+#, fuzzy
+#~ msgid "Hard Mix"
+#~ msgstr "Висина:"
+
+#, fuzzy
+#~ msgid "Color Dodge"
+#~ msgstr "Колони:"
+
+#, fuzzy
+#~ msgid "Linear Dodge"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Lighten"
+#~ msgstr "Десно:"
+
+#, fuzzy
+#~ msgid "Hard Light"
+#~ msgstr "Висина:"
+
+#, fuzzy
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgid "Gamma Light"
+#~ msgstr "Десно:"
+
+#, fuzzy
+#~ msgid "Vivid Light"
+#~ msgstr "Десно:"
+
+#, fuzzy
+#~ msgid "Pin Light"
+#~ msgstr "Десно:"
+
+#, fuzzy
+#~ msgid "Linear Light"
+#~ msgstr "Ширина:"
+
+#, fuzzy
+#~ msgid "Color Burn"
+#~ msgstr "Колони:"
+
+#, fuzzy
+#~ msgid "Linear Burn"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Darken"
+#~ msgstr "Екран"
+
+#, fuzzy
+#~ msgid "Addition"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Inversed-Subtract"
+#~ msgstr "Кратка содржина :"
+
+#, fuzzy
+#~ msgid "Additive-Subtractive"
+#~ msgstr "Кратка содржина :"
+
+#, fuzzy
+#~ msgid "Copy Red"
+#~ msgstr "Фирма :"
+
+#, fuzzy
+#~ msgid "Copy Green"
+#~ msgstr "Екран"
+
+#, fuzzy
+#~ msgid "Copy Blue"
+#~ msgstr "Фирма :"
+
+#, fuzzy
+#~ msgid "Color"
+#~ msgstr "Колони:"
+
+#, fuzzy
+#~ msgid "Increase Saturation"
+#~ msgstr "Кратка содржина :"
+
+#, fuzzy
+#~ msgid "Decrease Saturation"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Increase Luminosity"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "Decrease Luminosity"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "Darker Color"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgid "Lighter Color"
+#~ msgstr "Колони:"
+
+#, fuzzy
+#~ msgid "Color HSI"
+#~ msgstr "Колони:"
+
+#, fuzzy
+#~ msgid "Intensity"
+#~ msgstr "Внесете име"
+
+#, fuzzy
+#~ msgid "Increase Intensity"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "Decrease Intensity"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "Color HSL"
+#~ msgstr "Колони:"
+
+#, fuzzy
+#~ msgid "Increase Lightness"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "Decrease Lightness"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "Color HSV"
+#~ msgstr "Колони:"
+
+#, fuzzy
+#~ msgid "Increase Value"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "Decrease Value"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "8 Bits"
+#~ msgstr "pt"
+
+#, fuzzy
+#~ msgid "Arithmetic"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgid "Negative"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgid "Inverse Subtract"
+#~ msgstr "Кратка содржина :"
+
+#, fuzzy
+#~ msgid "Additive Subtractive"
+#~ msgstr "Кратка содржина :"
+
+#, fuzzy
+#~ msgid "Alpha Darken"
+#~ msgstr "Екран"
+
+#, fuzzy
+#~ msgid "Triples"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgid "copy"
+#~ msgstr "Фирма :"
+
+#, fuzzy
+#~ msgid "delete"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "Namespaces"
+#~ msgstr "Отстрани приказ"
+
+#, fuzzy
+#~ msgid "Prefix"
+#~ msgstr "Преглед:"
+
+#, fuzzy
+#~ msgid "Namespace"
+#~ msgstr "Отстрани приказ"
+
+#, fuzzy
+#~ msgid "Stylesheets"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgid "User"
+#~ msgstr "Внесете име"
+
+#, fuzzy
+#~ msgid "Stylesheet Definition"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgid "Description"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Stylesheet Name"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgid "Valid"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgid "Subject"
+#~ msgstr "Кратка содржина :"
+
+#, fuzzy
+#~ msgid "Predicate"
+#~ msgstr "Слика:"
+
+#, fuzzy
+#~ msgid "Obj Type"
+#~ msgstr "Горе:"
+
+#, fuzzy
+#~ msgid "DataType"
+#~ msgstr "Избери..."
+
+#, fuzzy
+#~ msgid "Invalid identifier"
+#~ msgstr "Внесете име"
+
+#, fuzzy
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "&Не"
+
+#, fuzzy
+#~ msgid "Small Bullet"
+#~ msgstr "По Избор"
+
+#, fuzzy
+#~ msgid "Circle Bullet"
+#~ msgstr "По Избор"
+
+#, fuzzy
+#~ msgid "Square Bullet"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Rhombus Bullet"
+#~ msgstr "По Избор"
+
+#, fuzzy
+#~ msgid "Rightwards Arrow Bullet"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgid "Lower Roman"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "Large Bullet"
+#~ msgstr "По Избор"
+
+#, fuzzy
+#~ msgid "Ballot X Bullet"
+#~ msgstr "По Избор"
+
+#, fuzzy
+#~ msgid "Tamil"
+#~ msgstr "Е-пошта :"
+
+#, fuzzy
+#~ msgid "Tibetan"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgid "Recent:"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgid "Import Data"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgid "Data"
+#~ msgstr "Избери..."
+
+#, fuzzy
+#~ msgid "E&ncoding:"
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgid "Format"
+#~ msgstr "Формат на страна"
+
+#, fuzzy
+#~ msgid "Other"
+#~ msgstr "Коментар"
+
+#, fuzzy
+#~ msgid "Tabulator"
+#~ msgstr "Табулатор &лево"
+
+#, fuzzy
+#~ msgid "Space"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "&Format:"
+#~ msgstr "Формат на страна"
+
+#, fuzzy
+#~ msgid "Ranges"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Import columns:"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgid "Import lines:"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~| msgid "Author"
+#~ msgid "to"
+#~ msgstr "Автор"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Lock Docker"
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgid "Keywords:"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgid "Subject:"
+#~ msgstr "Кратка содржина :"
+
+#, fuzzy
+#~ msgid "Encryption:"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgid "Revision number:"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Modified:"
+#~ msgstr "Средина:"
+
+#, fuzzy
+#~ msgid "Comments:"
+#~ msgstr "Коментар"
+
+#, fuzzy
+#~ msgid "Created:"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgid "Path:"
+#~ msgstr "Избери..."
+
+#, fuzzy
+#~ msgid "&Reset"
+#~ msgstr "&Да"
+
+#, fuzzy
+#~ msgid "Language:"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Last saved by"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Do not decrypt"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "D&ecrypt"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Do not encrypt"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Decrypt"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Save Document"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgid "Change Filetype"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Change"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Remove"
+#~ msgstr "Отстрани приказ"
+
+#, fuzzy
+#~ msgid "Open palette"
+#~ msgstr "Преглед на страна"
+
+#, fuzzy
+#~ msgid "Save palette"
+#~ msgstr "Преглед на страна"
+
+#, fuzzy
+#~ msgid "Color name:"
+#~ msgstr "Колони:"
+
+#, fuzzy
+#~ msgid "Palette"
+#~ msgstr "Преглед на страна"
+
+#, fuzzy
+#~ msgid "Add/Remove Colors"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgid "Testing: OpenFile"
+#~ msgstr "Преглед на страна"
+
+#, fuzzy
+#~ msgid "Testing: ImportFile"
+#~ msgstr "Недостасува филтер за увоз"
+
+#, fuzzy
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "Недостасува филтер за увоз"
+
+#, fuzzy
+#~ msgid "Testing: Import Directory"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgid "Testing: SaveFile"
+#~ msgstr "Преглед на страна"
+
+#, fuzzy
+#~ msgid "Open File"
+#~ msgstr "Преглед на страна"
+
+#, fuzzy
+#~ msgid "Open Files"
+#~ msgstr "Преглед на страна"
+
+#, fuzzy
+#~ msgid "Filter:"
+#~ msgstr "Избери"
+
+#, fuzzy
+#~ msgid "TextLabel"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "Named"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "Set default filter"
+#~ msgstr "Формат на страна"
+
+#, fuzzy
+#~ msgid "Save File"
+#~ msgstr "Преглед на страна"
+
+#, fuzzy
+#~ msgid "Import Files"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgid "Import File"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgid "Import Directory"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "&Не"
+
+#, fuzzy
+#~ msgid "Change the filling gradient"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Icon and Text"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Left side"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgid "Right side"
+#~ msgstr "inch"
+
+#~ msgid "Page Layout"
+#~ msgstr "Распоред на страна"
+
+#, fuzzy
+#~ msgid "Apply to document"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgid "Left Edge:"
+#~ msgstr "Лево:"
+
+#, fuzzy
+#~| msgid "Right:"
+#~ msgid "Right Edge:"
+#~ msgstr "Десно:"
+
+#, fuzzy
+#~ msgid "Binding Edge:"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Page Edge:"
+#~ msgstr "Преглед на страна"
+
+#, fuzzy
+#~ msgid "Facing pages"
+#~ msgstr "inch"
+
+#, fuzzy
+#~| msgid "Page Layout"
+#~ msgid "Page Layout:"
+#~ msgstr "Распоред на страна"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page spread"
+#~ msgstr "Преглед на страна"
+
+#~ msgid "Unit:"
+#~ msgstr "Единица:"
+
+#, fuzzy
+#~ msgid "Follow style:"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgid "Size:"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgid "Width:"
+#~ msgstr "Ширина:"
+
+#, fuzzy
+#~ msgid "Height:"
+#~ msgstr "Висина:"
+
+#, fuzzy
+#~ msgid "Orientation:"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Facing pages:"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgid "Single sided"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgid "Text direction:"
+#~ msgstr "Одбери..."
+
+#, fuzzy
+#~ msgid "Automatic"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgid "Left to right"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgid "Right to left"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgid "Top:"
+#~ msgstr "Горе:"
+
+#, fuzzy
+#~ msgid "Binding edge:"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page edge:"
+#~ msgstr "Преглед на страна"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "Избери"
+
+#, fuzzy
+#~ msgid "Remove from this tag"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgid "Remove from other tag"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgid "Round cap"
+#~ msgstr "Скрипта за извршување."
+
+#, fuzzy
+#~ msgid "Bevel join"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgid "Miter limit"
+#~ msgstr "Внесете име"
+
+#, fuzzy
+#~ msgid "Rename tag"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "Delete this tag"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "Undelete"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "Tool Options"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgid "deselect item"
+#~ msgstr "Одбери слика"
+
+#, fuzzy
+#~ msgid "select item"
+#~ msgstr "Одбери слика"
+
+#, fuzzy
+#~ msgctxt "Static Image"
+#~ msgid "Static"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgid "Opacity:"
+#~ msgstr "Град :"
+
+#, fuzzy
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "Одбери..."
+
+#, fuzzy
+#~ msgid "&Tools"
+#~ msgstr "Одбери..."
+
+#, fuzzy
+#~ msgid "Color Selector"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgid "Could not compact database \"%1\"."
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~ msgid "Do you want to open file \"%1\" as read-only?"
+#~ msgstr "Навистина ли сакате да го отстраните тој шаблон"
+
+#, fuzzy
+#~ msgid "Could not gain exclusive access for writing the file."
+#~ msgstr "Не може да се отвори датотеката %1"
+
+#, fuzzy
+#~| msgid "Could not load picture."
+#~ msgid "Could not close busy database."
+#~ msgstr "Не може да се вчита слика."
+
+#, fuzzy
+#~ msgid "Could not remove file \"%1\"."
+#~ msgstr ""
+#~ "Не може да се извезе датотека од тип\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgid "Track Total Format"
+#~ msgstr "Формат на страна"
+
+#, fuzzy
+#~ msgid "Grid Snap"
+#~ msgstr "Покажи %1 алатник"
+
+#, fuzzy
+#~ msgid "Formatting"
+#~ msgstr "Формат на страна"
+
+#, fuzzy
+#~ msgid "Testing: OpenDirectories"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgid "Testing: ImportDirectories"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgid "Testing: SaveFiles"
+#~ msgstr "Преглед на страна"
+
+#, fuzzy
+#~ msgid "Import Directories"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgid "Save Files"
+#~ msgstr "Преглед на страна"
+
+#, fuzzy
+#~ msgid "Create Path"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgid "Contacts"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgid "Locations"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Region"
+#~ msgstr "Отстрани приказ"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not save\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not add entry\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Не може да се сними\n"
+#~ "%1"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not save\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not save iCal file\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Не може да се сними\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgid "&Location:"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "&Start:"
+#~ msgstr "Улица :"
+
+#, fuzzy
+#~ msgid "Timezone"
+#~ msgstr "inch"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "&Name:"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "&Phone Number:"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "&Home Page:"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Contact Information"
+#~ msgstr "Информации за документот"
+
+#, fuzzy
+#~ msgid "Import contact"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "&Name"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Location Information"
+#~ msgstr "Информации за документот"
+
+#, fuzzy
+#~ msgid "People"
+#~ msgstr "Отстрани приказ"
+
+#, fuzzy
+#~ msgid ""
+#~ "A document with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "Документ со ова име веќе постои\n"
+#~ "Дали сакате да го презапишете?"
+
+#, fuzzy
+#~ msgid "Save Document As"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgid "Export Document As"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgid "Slide Background"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgid "Document background"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgid "&Cancel"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Even Pages(s)"
+#~ msgstr "Фирма :"
+
+#, fuzzy
+#~ msgid "Any Pages(s)"
+#~ msgstr "Фирма :"
+
+#, fuzzy
+#~ msgid "&Edit"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "&Close"
+#~ msgstr "Колони:"
+
+#, fuzzy
+#~ msgid "Dodge"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Hard light"
+#~ msgstr "Висина:"
+
+#, fuzzy
+#~ msgid "Soft light"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgid "Show Shadow"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Angle:"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgid "Offset:"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Color:"
+#~ msgstr "Колони:"
+
+#, fuzzy
+#~ msgid "Style:"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bookmark"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Insert Table"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Insert Row Above"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Insert Column Left"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Insert Column Right"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Delete Column"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "Delete Row"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Insert Bibliography"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Embedding Object"
+#~ msgstr "Не може да се вчита слика."
+
+#, fuzzy
+#~ msgid "I&mport..."
+#~ msgstr "Отстрани приказ"
+
+#, fuzzy
+#~ msgid "&Default"
+#~ msgstr "Одбери..."
+
+#~ msgid "Preview:"
+#~ msgstr "Преглед:"
+
+#, fuzzy
+#~ msgid "Background Tool"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgid "Background editing tool"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Separate paths"
+#~ msgstr "Одбери..."
+
+#, fuzzy
+#~ msgid "&Delete Personal Data"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shapes"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "Substract"
+#~ msgstr "Кратка содржина :"
+
+#, fuzzy
+#~ msgid "Inverse Substract"
+#~ msgstr "Кратка содржина :"
+
+#, fuzzy
+#~ msgid "Shadow Angle:"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Shadow Color:"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Line Break"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Hide Grid"
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgid "Hide Guides"
+#~ msgstr "Насловна линија:"
+
+#~ msgid "&Close All Views"
+#~ msgstr "Затвори ги сите прикази"
+
+#~ msgid "&Split View"
+#~ msgstr "Раздвои приказ"
+
+#~ msgid "&Remove View"
+#~ msgstr "Отстрани приказ"
+
+#~ msgid "Splitter &Orientation"
+#~ msgstr "Ориентација на раздвојник:"
+
+#~ msgid "&Horizontal"
+#~ msgstr "Хоризонтално"
+
+#~ msgid "&Vertical"
+#~ msgstr "Вертикално"
+
+#, fuzzy
+#~ msgid "Printing page %1"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Form"
+#~ msgstr "Подножје"
+
+#, fuzzy
+#~ msgid "Share"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Copy Opacy"
+#~ msgstr "Фирма :"
+
+#, fuzzy
+#~ msgid "Copy Alpha"
+#~ msgstr "Фирма :"
+
+#, fuzzy
+#~ msgid "Light"
+#~ msgstr "Десно:"
+
+#, fuzzy
+#~ msgid "Spread out:"
+#~ msgstr "Улица :"
+
+#, fuzzy
+#~ msgid "Barcode"
+#~ msgstr "Формат на страна"
+
+#, fuzzy
+#~ msgid "Barcode Format"
+#~ msgstr "Формат на страна"
+
+#, fuzzy
+#~ msgid "Chart"
+#~ msgstr "Улица :"
+
+#, fuzzy
+#~ msgid "Field Font"
+#~ msgstr "Одбери..."
+
+#, fuzzy
+#~ msgid "Pie"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgid "Ring"
+#~ msgstr "Десно:"
+
+#, fuzzy
+#~ msgid "Polar"
+#~ msgstr "Колони:"
+
+#, fuzzy
+#~ msgid "Chart Type"
+#~ msgstr "Избери..."
+
+#, fuzzy
+#~ msgid "Stacked"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Percent"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~| msgid "Rows:"
+#~ msgid "Rows"
+#~ msgstr "Редици:"
+
+#, fuzzy
+#~ msgid "Color Scheme"
+#~ msgstr "Колони:"
+
+#, fuzzy
+#~ msgid "Antialiased"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgid "Pan Tool"
+#~ msgstr "Одбери..."
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Out"
+#~ msgstr "По Избор"
+
+#, fuzzy
+#~ msgid "Insert Linebreak"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "&Insert"
+#~ msgstr "Внесете име"
+
+#, fuzzy
+#~ msgid "Enable word completion"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgid "Completion Options"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgid "Append space"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Make Default"
+#~ msgstr "Одбери..."
+
+#, fuzzy
+#~ msgid "C&ustom"
+#~ msgstr "По Избор"
+
+#, fuzzy
+#~ msgid "&Insert:"
+#~ msgstr "Внесете име"
+
+#, fuzzy
+#~ msgid "Paragraph Background Color"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgid "Borders"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "&Width:"
+#~ msgstr "Ширина:"
+
+#, fuzzy
+#~ msgid "Number:"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "String:"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgid "true"
+#~ msgstr "Улица :"
+
+#, fuzzy
+#~ msgid "false"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "Date:"
+#~ msgstr "Избери..."
+
+#, fuzzy
+#~ msgid "Add Guide Line"
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgid "Horizontal"
+#~ msgstr "Хоризонтално"
+
+#, fuzzy
+#~ msgid "Vertical"
+#~ msgstr "Вертикално"
+
+#, fuzzy
+#~ msgid "&Position:"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Guide Line"
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgid "Guide Lines"
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not load external document %1:\n"
+#~ "%2"
+#~ msgstr "Не може да се вчита слика."
+
+#, fuzzy
+#~ msgid "Na&me:"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "&Height:"
+#~ msgstr "Висина:"
+
+#, fuzzy
+#~ msgid "&Top:"
+#~ msgstr "Горе:"
+
+#, fuzzy
+#~ msgid "&Left:"
+#~ msgstr "Лево:"
+
+#, fuzzy
+#~ msgid "Context Help"
+#~ msgstr "Коментар"
+
+#, fuzzy
+#~ msgid "All values are given in %1."
+#~ msgstr "Сите вредности се дадени во %1"
+
+#, fuzzy
+#~ msgid "&Size:"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgid "Page Layout Problem"
+#~ msgstr "Распоред на страна"
+
+#, fuzzy
+#~ msgid "Delete slides"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "Delete pages"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "Column spacing:"
+#~ msgstr "Растојание меѓу колони ( %1 ):"
+
+#, fuzzy
+#~ msgid "Spacing between footnote and body:"
+#~ msgstr "Растојание меѓу подножје и тело ( %1 ):"
+
+#~ msgid "Different footer for even and odd pages"
+#~ msgstr "Различно подножје за парни и непарни страни"
+
+#~ msgid "Different footer for the first page"
+#~ msgstr "Различно подножје за првата страна"
+
+#, fuzzy
+#~ msgid "Spacing between footer and body:"
+#~ msgstr "Растојание меѓу подножје и тело ( %1 ):"
+
+#, fuzzy
+#~ msgid "Header"
+#~ msgstr "Заглавје"
+
+#, fuzzy
+#~ msgid "Spacing between header and body:"
+#~ msgstr "Растојание меѓу заглавје и тело ( %1 ):"
+
+#~ msgid "Different header for even and odd pages"
+#~ msgstr "Различно заглавје за парни и непарни страни"
+
+#~ msgid "Different header for the first page"
+#~ msgstr "Различно заглавје за првата страна"
+
+#~ msgid "Page Preview"
+#~ msgstr "Преглед на страна"
+
+#, fuzzy
+#~ msgid "Page Size && &Margins"
+#~ msgstr "Преглед на страна"
+
+#, fuzzy
+#~ msgid "H&eader && Footer"
+#~ msgstr "Заглавје и подножје"
+
+#, fuzzy
+#~ msgid "Head Line"
+#~ msgstr "Насловна линија:"
+
+#~ msgid "Mid:"
+#~ msgstr "Средина:"
+
+#~ msgid "Right:"
+#~ msgstr "Десно:"
+
+#, fuzzy
+#~ msgid "Foot Line"
+#~ msgstr ""
+#~ "\n"
+#~ "Долна линија"
+
+#, fuzzy
+#~ msgid "Col&umns"
+#~ msgstr "Колони:"
+
+#, fuzzy
+#~ msgid "Storage Test"
+#~ msgstr "Улица :"
+
+#, fuzzy
+#~ msgid "Storage Test 2"
+#~ msgstr "Улица :"
+
+#, fuzzy
+#~ msgid "Master page"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Rotate"
+#~ msgstr "Избери..."
+
+#, fuzzy
+#~ msgid "Shear"
+#~ msgstr "Екран"
+
+#, fuzzy
+#~ msgid "KoProperty Test"
+#~ msgstr "Вертикално"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Vertical"
+#~ msgstr "Вертикално"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Horizontal"
+#~ msgstr "Хоризонтално"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size All"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Split Horizontal"
+#~ msgstr "Хоризонтално"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Pointing Hand"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Insert image from file"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Select Char"
+#~ msgstr "Одбери слика"
+
+#, fuzzy
+#~ msgctxt "Size Policy"
+#~ msgid "Minimum"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgctxt "Size Policy"
+#~ msgid "Expanding"
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgctxt "General properties"
+#~ msgid "General"
+#~ msgstr "Распоред на страна"
+
+#, fuzzy
+#~ msgid "Width"
+#~ msgstr "Ширина:"
+
+#, fuzzy
+#~ msgid "Horizontal Size Type"
+#~ msgstr "Хоризонтално"
+
+#, fuzzy
+#~ msgid "Vertical Size Type"
+#~ msgstr "Вертикално"
+
+#, fuzzy
+#~ msgid "Horizontal Stretch"
+#~ msgstr "Хоризонтално"
+
+#, fuzzy
+#~ msgid "Vertical Stretch"
+#~ msgstr "Вертикално"
+
+#, fuzzy
+#~ msgid "Enable Guide Lines Guide "
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgid "Tool Option"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgid "Edit Guidelines"
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgid "Edit guidelines"
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgid "Select a filter:"
+#~ msgstr "Одбери слика"
+
+#, fuzzy
+#~ msgid "[No Character Style]"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgid "Selected Template"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgid "Creates an empty document"
+#~ msgstr "Почни со &празен документ"
+
+#, fuzzy
+#~ msgid "Choose Template"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "No description available"
+#~ msgstr "Нема расположиви слики."
+
+#, fuzzy
+#~ msgid "&Custom..."
+#~ msgstr "По Избор"
+
+#, fuzzy
+#~ msgid "Internet address:"
+#~ msgstr "Внесете име"
+
+#, fuzzy
+#~ msgid "Recent file:"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "No Entries"
+#~ msgstr "Избери..."
+
+#, fuzzy
+#~ msgid "File location:"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#~ msgid "Tabulator &Left"
+#~ msgstr "Табулатор &лево"
+
+#~ msgid "Tabulator &Center"
+#~ msgstr "Табулатор на &средина"
+
+#~ msgid "Tabulator &Right"
+#~ msgstr "Табулатор &десно"
+
+#~ msgid "Tabulator &Decimal Point"
+#~ msgstr "Децимална &точка на табулатор"
+
+#, fuzzy
+#~ msgid "Default Tool"
+#~ msgstr "Одбери..."
+
+#, fuzzy
+#~ msgid "Position x:"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Position y:"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Order:"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Horizontal:"
+#~ msgstr "Хоризонтално"
+
+#, fuzzy
+#~ msgid "Vertical:"
+#~ msgstr "Вертикално"
+
+#, fuzzy
+#~ msgid "Scale"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Create New Style"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgid "Case"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "T&itle case"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgid "&Toggle case"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgid "<None>"
+#~ msgstr "&Не"
+
+#, fuzzy
+#~ msgid "New Style Template (%1)"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgid "Layout"
+#~ msgstr "Распоред на страна"
+
+#, fuzzy
+#~ msgid "Date (Fixed)"
+#~ msgstr "Нема расположиви слики."
+
+#, fuzzy
+#~ msgid "File Modification"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Current Date (variable)"
+#~ msgstr "Нема расположиви слики."
+
+#, fuzzy
+#~ msgid "Date of File Creation"
+#~ msgstr "Создади шаблон"
+
+#, fuzzy
+#~ msgid "Date of File Modification"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Time (Fixed)"
+#~ msgstr "Нема расположиви слики."
+
+#, fuzzy
+#~ msgid "Current Time (fixed)"
+#~ msgstr "Нема расположиви слики."
+
+#, fuzzy
+#~ msgid "Current Time (variable)"
+#~ msgstr "Нема расположиви слики."
+
+#, fuzzy
+#~ msgid "Time Format"
+#~ msgstr "Формат на страна"
+
+#, fuzzy
+#~ msgid "Custom Variable"
+#~ msgstr "Одбери слика"
+
+#, fuzzy
+#~ msgid "Custom..."
+#~ msgstr "По Избор"
+
+#, fuzzy
+#~ msgid "Total Page Num"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Previous Page Number"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Filename"
+#~ msgstr "Полно име :"
+
+#, fuzzy
+#~ msgid "Path Filename"
+#~ msgstr "Полно име :"
+
+#, fuzzy
+#~ msgid "Author Name"
+#~ msgstr "Автор"
+
+#, fuzzy
+#~ msgid "Email"
+#~ msgstr "Е-пошта :"
+
+#, fuzzy
+#~ msgid "Telephone (work)"
+#~ msgstr "Телефон :"
+
+#, fuzzy
+#~ msgid "Telephone (home)"
+#~ msgstr "Телефон :"
+
+#, fuzzy
+#~ msgid "Fax"
+#~ msgstr "Факс :"
+
+#, fuzzy
+#~ msgid "Country"
+#~ msgstr "Држава :"
+
+#, fuzzy
+#~ msgid "City"
+#~ msgstr "Град :"
+
+#, fuzzy
+#~ msgid "Abstract"
+#~ msgstr "Кратка содржина :"
+
+#, fuzzy
+#~ msgid "Initials"
+#~ msgstr "Единица:"
+
+#, fuzzy
+#~ msgid "Company"
+#~ msgstr "Фирма :"
+
+#, fuzzy
+#~ msgid "Telephone (private)"
+#~ msgstr "Телефон :"
+
+#, fuzzy
+#~ msgid "Document Abstract"
+#~ msgstr "Информации за документот"
+
+#, fuzzy
+#~ msgid "Directory && File Name"
+#~ msgstr "Полно име :"
+
+#, fuzzy
+#~ msgid "Note"
+#~ msgstr "Избери..."
+
+#, fuzzy
+#~ msgid "Note..."
+#~ msgstr "Избери..."
+
+#, fuzzy
+#~ msgid "<No title>"
+#~ msgstr "&Не"
+
+#, fuzzy
+#~ msgid "Number of Words"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "Number of Sentences"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "Number of Lines"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "Number of Characters"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "Number of Syllables"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "Number of Frames"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "Number of Embedded Objects"
+#~ msgstr "Не може да се вчита слика."
+
+#, fuzzy
+#~ msgid "Number of Tables"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "&Suppress double spaces"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Custom Quotes"
+#~ msgstr "По Избор"
+
+#, fuzzy
+#~ msgid "Change Format..."
+#~ msgstr "Формат на страна"
+
+#, fuzzy
+#~ msgid "Clear Format"
+#~ msgstr "Формат на страна"
+
+#, fuzzy
+#~ msgid "Change Variable Subtype"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Change Variable Format"
+#~ msgstr "Формат на страна"
+
+#, fuzzy
+#~ msgid "Entry Name"
+#~ msgstr "Внесете име"
+
+#, fuzzy
+#~ msgid "Add Variable"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Add Completion Entry"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgid "Enter entry:"
+#~ msgstr "Внесете име"
+
+#, fuzzy
+#~ msgid "Completion List Saved"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgid "Delete Text"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "Format Text"
+#~ msgstr ""
+#~ "\n"
+#~ "Формат:"
+
+#, fuzzy
+#~ msgid "Change Paragraph Background Color"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgid "Change Borders"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Change Join Borders"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "Change Tabulator"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgid "Remove Selected Text"
+#~ msgstr "Отстрани шаблон"
+
+#, fuzzy
+#~ msgid "Remove Word"
+#~ msgstr "Отстрани приказ"
+
+#, fuzzy
+#~ msgid "Replace Word"
+#~ msgstr "Отстрани приказ"
+
+#, fuzzy
+#~ msgid "Remove Link"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgid "Edit Comment"
+#~ msgstr "Коментар"
+
+#, fuzzy
+#~ msgid "Add Author Name"
+#~ msgstr "Автор"
+
+#, fuzzy
+#~ msgid "Autocorrect Word"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgid "Autocorrect"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgid "Autocorrect for Fraction"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgid "Autocorrection: Change Format"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgid "Simple Bold"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgid "Underline:"
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgid "Suffi&x text:"
+#~ msgstr "Преглед:"
+
+#, fuzzy
+#~ msgid "&Start at:"
+#~ msgstr "Улица :"
+
+#, fuzzy
+#~ msgid "Custo&m character:"
+#~ msgstr "Одбери слика"
+
+#, fuzzy
+#~ msgid "Indent"
+#~ msgstr "Внесете име"
+
+#, fuzzy
+#~ msgid "&Right:"
+#~ msgstr "Десно:"
+
+#, fuzzy
+#~ msgid "At Least (%1)"
+#~ msgstr "Сите датотеки (*.*)"
+
+#, fuzzy
+#~ msgid "Fixed (%1)"
+#~ msgstr "Десно:"
+
+#, fuzzy
+#~ msgid "&Left"
+#~ msgstr "Лево:"
+
+#, fuzzy
+#~ msgid "&Right"
+#~ msgstr "Десно:"
+
+#, fuzzy
+#~ msgid "D&ecorations"
+#~ msgstr ""
+#~ "\n"
+#~ "Ориентација:"
+
+#, fuzzy
+#~ msgid "Tab Leader"
+#~ msgstr "Заглавје"
+
+#, fuzzy
+#~ msgid "&Filling:"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgid "&New"
+#~ msgstr "&Не"
+
+#, fuzzy
+#~ msgid "&Tabulators"
+#~ msgstr "Табулатор &лево"
+
+#, fuzzy
+#~ msgid "Import Styles"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgid "Aligment"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Strikethrough"
+#~ msgstr "Улица :"
+
+#, fuzzy
+#~ msgid "Underlining:"
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgid "Colors"
+#~ msgstr "Колони:"
+
+#, fuzzy
+#~ msgid "More Colors..."
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MintCream"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PaleGoldenrod"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Thistle"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PaleGreen"
+#~ msgstr "Преглед на страна"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSkyBlue"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkSeaGreen"
+#~ msgstr "Екран"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Goldenrod"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumPurple"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DeepSkyBlue"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Chocolate"
+#~ msgstr "Избери"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumSeaGreen"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "OrangeRed"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DeepPink"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SeaGreen"
+#~ msgstr "Екран"
+
+#, fuzzy
+#~ msgid "Cancelled"
+#~ msgstr "Рабови на страна"
+
+#, fuzzy
+#~ msgid "done"
+#~ msgstr "&Не"
+
+#, fuzzy
+#~ msgid "Default font:"
+#~ msgstr "Одбери..."
+
+#, fuzzy
+#~ msgid "Name font:"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "Number font:"
+#~ msgstr "Име :"
+
+#, fuzzy
+#~ msgid "Operator font:"
+#~ msgstr "Одбери..."
+
+#, fuzzy
+#~ msgid "Choose..."
+#~ msgstr "Избери..."
+
+#, fuzzy
+#~ msgid "Formula tool"
+#~ msgstr ""
+#~ "\n"
+#~ "Формат:"
+
+#, fuzzy
+#~ msgid "Remove Elements"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgid "Open &Recent Document"
+#~ msgstr "&Отвори постоечки документ"
+
+#, fuzzy
+#~ msgid "&Document Information"
+#~ msgstr "Информации за документот"
+
+#, fuzzy
+#~ msgid "Failed to create script for interpreter '%1'"
+#~ msgstr "KDE Толкувач на скрипти."
+
+#, fuzzy
+#~ msgid "Requested Font"
+#~ msgstr "Одбери..."
+
+#, fuzzy
+#~ msgid "Font style"
+#~ msgstr "Наслов :"
+
+#, fuzzy
+#~ msgid "Actual Font"
+#~ msgstr "Одбери..."
+
+#~ msgid "Remove Tabulator"
+#~ msgstr "Отстрани табулатор"
+
+#, fuzzy
+#~ msgid "&Font"
+#~ msgstr "inch"
+
+#, fuzzy
+#~ msgid "Hyphenation"
+#~ msgstr "Зачувај документ како"
+
+#, fuzzy
+#~ msgid "Abstract:"
+#~ msgstr "Кратка содржина :"
+
+#, fuzzy
+#~ msgid "Accelerator"
+#~ msgstr "Одбери..."
+
+#, fuzzy
+#~ msgid " plus "
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Add Operator"
+#~ msgstr "Одбери..."
+
+#, fuzzy
+#~ msgid "Add Number"
+#~ msgstr "Автор"
+
+#, fuzzy
+#~ msgid "Add Name"
+#~ msgstr "Автор"
+
+#, fuzzy
+#~ msgid "Add Bracket"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Add Overline"
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgid "Add Underline"
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgid "Add Multiline"
+#~ msgstr "Насловна линија:"
+
+#, fuzzy
+#~ msgid "Add Space"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Add Root"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Change Char to Symbol"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Change Char Family"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Index"
+#~ msgstr "Внесете име"
+
+#, fuzzy
+#~ msgid "Append Column"
+#~ msgstr "&Отвори документ"
+
+#, fuzzy
+#~ msgid "Remove Enclosing Element"
+#~ msgstr "Отстрани група"
+
+#, fuzzy
+#~ msgid "Add Index"
+#~ msgstr "Автор"
+
+#, fuzzy
+#~ msgid "Numerator"
+#~ msgstr "Одбери..."
+
+#, fuzzy
+#~ msgid "Add Negative Thin Space"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Add Thin Space"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Add Medium Space"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Add Thick Space"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Add Quad Space"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Add Product"
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Add Matrix..."
+#~ msgstr "&Додади група..."
+
+#, fuzzy
+#~ msgid "Add Lower Index"
+#~ msgstr "Автор"
+
+#, fuzzy
+#~ msgid "Insert Symbol"
+#~ msgstr "Колони"
+
+#, fuzzy
+#~ msgid "Font Family"
+#~ msgstr "Е-пошта :"
+
+#, fuzzy
+#~ msgid "Operator"
+#~ msgstr "Одбери..."

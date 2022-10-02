@@ -1,0 +1,6424 @@
+# Irish translation of koffice
+# Copyright (C) 2009 This_file_is_part_of_KDE
+# This file is distributed under the same license as the koffice package.
+# Kevin Scannell <kscanne@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: koffice/koffice.po\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2004-12-03 14:52-0500\n"
+"Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
+"Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
+"Language: ga\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n < 11 ? "
+"3 : 4\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+#, fuzzy
+#| msgid "Could not create the file for saving"
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "Ní féidir an comhad a chruthú le haghaidh sábhála"
+
+#: common/KReportDesign.cpp:159
+#, fuzzy
+#| msgid "Error in embedded document"
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Earráid i gcáipéis leabaithe"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Name"
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Ainm"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Object Name"
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Ainm Réada"
+
+#: common/KReportItemBase.cpp:78
+#, fuzzy
+#| msgid "Position"
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Ionad"
+
+#: common/KReportItemBase.cpp:79
+#, fuzzy
+#| msgid "Size"
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Méid"
+
+#: common/KReportItemBase.cpp:112
+#, fuzzy
+#| msgid "Data Source"
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Foinse Sonraí"
+
+#: common/KReportItemLine.cpp:80
+#, fuzzy
+#| msgid "&Set Position..."
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "&Socraigh Ionad..."
+
+#: common/KReportItemLine.cpp:81
+#, fuzzy
+#| msgid "Position"
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Ionad"
+
+#: common/KReportItemLine.cpp:83
+#, fuzzy
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "Ailínigh Ar Dheis"
+
+#: common/KReportItemLine.cpp:85
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Dath Líne"
+
+#: common/KReportItemLine.cpp:86
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Stíl Líne"
+
+#: common/KReportSectionData.cpp:164
+#, fuzzy
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Grúpáil giuirléidí"
+
+#: common/KReportSectionData.cpp:166
+#, fuzzy
+#| msgid "Height"
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "Airde"
+
+#: common/KReportSectionData.cpp:170
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Dath an Chúlra"
+
+#: common/KReportUnit.cpp:136
+#, fuzzy
+#| msgid "Invalid Type"
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Cineál Neamhbhailí"
+
+#: common/KReportUnit.cpp:138
+#, fuzzy
+#| msgid "Millimeters (mm)"
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "Milliméadair (mm)"
+
+#: common/KReportUnit.cpp:140
+#, fuzzy
+#| msgid "Centimeters (cm)"
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "Ceintiméadair (cm)"
+
+#: common/KReportUnit.cpp:142
+#, fuzzy
+#| msgid "Decimeters (dm)"
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "Deiciméadair (dm)"
+
+#: common/KReportUnit.cpp:144
+#, fuzzy
+#| msgid "Inches (in)"
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "Orlaí (or)"
+
+#: common/KReportUnit.cpp:146
+#, fuzzy
+#| msgid "Pica (pi)"
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "Píoca (pi)"
+
+#: common/KReportUnit.cpp:148
+#, fuzzy
+#| msgid "Cicero (cc)"
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "Cicero (cc)"
+
+#: common/KReportUnit.cpp:150
+#, fuzzy
+#| msgid "Points (pt)"
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "Pointí (pt)"
+
+#: common/KReportUnit.cpp:152
+#, fuzzy
+#| msgid "Pixels (px)"
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "Picteilíní (px)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Cross"
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Cros"
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Tick"
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr "Tic"
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Dot"
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr "Ponc"
+
+#: items/check/KReportItemCheck.cpp:80
+#, fuzzy
+#| msgid "Style"
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "Stíl"
+
+#: items/check/KReportItemCheck.cpp:84
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Dath an Tulra"
+
+#: items/check/KReportItemCheck.cpp:86
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "Ailínigh Ar Dheis"
+
+#: items/check/KReportItemCheck.cpp:88
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Dath Líne"
+
+#: items/check/KReportItemCheck.cpp:89
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Stíl Líne"
+
+#: items/check/KReportItemCheck.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Luach"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Luach"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Left"
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Ar Chlé"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Center"
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Lár"
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Right"
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Ar Dheis"
+
+#: items/field/KReportItemField.cpp:96
+#, fuzzy
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Ailíniú Cothrománach"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Top"
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "Barr"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Bottom"
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Bun"
+
+#: items/field/KReportItemField.cpp:102
+#, fuzzy
+#| msgid "Vertical Alignment"
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Ailíniú Ingearach"
+
+#: items/field/KReportItemField.cpp:104
+#, fuzzy
+#| msgid "Font"
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Cló"
+
+#: items/field/KReportItemField.cpp:106
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Dath an Chúlra"
+
+#: items/field/KReportItemField.cpp:107
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Dath an Tulra"
+
+#: items/field/KReportItemField.cpp:109
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Dath an Chúlra"
+
+#: items/field/KReportItemField.cpp:114
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "Ailínigh Ar Dheis"
+
+#: items/field/KReportItemField.cpp:116
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Dath Líne"
+
+#: items/field/KReportItemField.cpp:117
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Stíl Líne"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:120
+#, fuzzy
+#| msgid "Can Grow"
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr "Is Féidir Méadú"
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgid "Stretch"
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Sínte"
+
+#: items/image/KReportItemImage.cpp:120
+#, fuzzy
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "Athraigh méid giuirléidí"
+
+#: items/image/KReportItemImage.cpp:121
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Luach"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:91
+#, fuzzy
+#| msgid "Caption"
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Teideal"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Left"
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Ar Chlé"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Center"
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Lár"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Right"
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Ar Dheis"
+
+#: items/label/KReportItemLabel.cpp:96
+#, fuzzy
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Ailíniú Cothrománach"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Top"
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "Barr"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Bottom"
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Bun"
+
+#: items/label/KReportItemLabel.cpp:102
+#, fuzzy
+#| msgid "Vertical Alignment"
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Ailíniú Ingearach"
+
+#: items/label/KReportItemLabel.cpp:104
+#, fuzzy
+#| msgid "Font"
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Cló"
+
+#: items/label/KReportItemLabel.cpp:106
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Dath an Chúlra"
+
+#: items/label/KReportItemLabel.cpp:107
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Dath an Tulra"
+
+#: items/label/KReportItemLabel.cpp:109
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Dath an Chúlra"
+
+#: items/label/KReportItemLabel.cpp:114
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "Ailínigh Ar Dheis"
+
+#: items/label/KReportItemLabel.cpp:116
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Dath Líne"
+
+#: items/label/KReportItemLabel.cpp:117
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Stíl Líne"
+
+#: items/text/KReportItemText.cpp:115
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Luach"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Left"
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Ar Chlé"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Center"
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Lár"
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Right"
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Ar Dheis"
+
+#: items/text/KReportItemText.cpp:121
+#, fuzzy
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Ailíniú Cothrománach"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Top"
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "Barr"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Bottom"
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Bun"
+
+#: items/text/KReportItemText.cpp:127
+#, fuzzy
+#| msgid "Vertical Alignment"
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Ailíniú Ingearach"
+
+#: items/text/KReportItemText.cpp:129
+#, fuzzy
+#| msgid "Font"
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Cló"
+
+#: items/text/KReportItemText.cpp:131
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Dath an Chúlra"
+
+#: items/text/KReportItemText.cpp:132
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Dath an Tulra"
+
+#: items/text/KReportItemText.cpp:134
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "Ailínigh Ar Dheis"
+
+#: items/text/KReportItemText.cpp:136
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Dath Líne"
+
+#: items/text/KReportItemText.cpp:137
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Stíl Líne"
+
+#: items/text/KReportItemText.cpp:138
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Dath an Chúlra"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, fuzzy, qt-format
+#| msgid "Script File"
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr "Comhad Scripte"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+#, fuzzy
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Earráid inmheánach"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:676
+#, fuzzy
+#| msgid "Page Header"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Ceanntásc Leathanaigh"
+
+#: wrtembed/KReportDesigner.cpp:680
+#, fuzzy
+#| msgid "Page Header"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Ceanntásc Leathanaigh"
+
+#: wrtembed/KReportDesigner.cpp:684
+#, fuzzy
+#| msgid "Page Header"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Ceanntásc Leathanaigh"
+
+#: wrtembed/KReportDesigner.cpp:688
+#, fuzzy
+#| msgid "Page Header"
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Ceanntásc Leathanaigh"
+
+#: wrtembed/KReportDesigner.cpp:692
+#, fuzzy
+#| msgid "Page Header"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Ceanntásc Leathanaigh"
+
+#: wrtembed/KReportDesigner.cpp:696
+#, fuzzy
+#| msgid "Page Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "Buntásc Leathanaigh"
+
+#: wrtembed/KReportDesigner.cpp:700
+#, fuzzy
+#| msgid "Page Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "Buntásc Leathanaigh"
+
+#: wrtembed/KReportDesigner.cpp:704
+#, fuzzy
+#| msgid "Page Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "Buntásc Leathanaigh"
+
+#: wrtembed/KReportDesigner.cpp:708
+#, fuzzy
+#| msgid "Page Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "Buntásc Leathanaigh"
+
+#: wrtembed/KReportDesigner.cpp:712
+#, fuzzy
+#| msgid "Page Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "Buntásc Leathanaigh"
+
+#: wrtembed/KReportDesigner.cpp:716
+#, fuzzy
+#| msgid "Report Header"
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "Ceanntásc Tuairisce"
+
+#: wrtembed/KReportDesigner.cpp:720
+#, fuzzy
+#| msgid "Report Footer"
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "Buntásc Tuairisce"
+
+#: wrtembed/KReportDesigner.cpp:808
+#, fuzzy
+#| msgid "Export"
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "Easpórtáil"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Title"
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Teideal"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Report Footer"
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Buntásc Tuairisce"
+
+#: wrtembed/KReportDesigner.cpp:818
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Méid an Leathanaigh"
+
+#: wrtembed/KReportDesigner.cpp:821
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Méid an Leathanaigh"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "Portrait"
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "Portráid"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "Landscape"
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "Tírdhreach"
+
+#: wrtembed/KReportDesigner.cpp:827
+#, fuzzy
+#| msgid "Page Orientation"
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "Treoshuíomh an Leathanaigh"
+
+#: wrtembed/KReportDesigner.cpp:832
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Méid an Leathanaigh"
+
+#: wrtembed/KReportDesigner.cpp:833
+#, fuzzy
+#| msgid "Show Grid"
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Taispeáin Greille"
+
+#: wrtembed/KReportDesigner.cpp:834
+#, fuzzy
+#| msgid "Snap to Grid"
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Léim go Greille"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:841
+#, fuzzy
+#| msgid "Left Margin"
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Imeall ar chlé"
+
+#: wrtembed/KReportDesigner.cpp:843
+#, fuzzy
+#| msgid "Right Margin"
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Imeall ar dheis"
+
+#: wrtembed/KReportDesigner.cpp:845
+#, fuzzy
+#| msgid "Top Margin"
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Imeall ag an mbarr"
+
+#: wrtembed/KReportDesigner.cpp:847
+#, fuzzy
+#| msgid "Bottom Margin"
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Imeall ag an mbun"
+
+#: wrtembed/KReportDesigner.cpp:869
+#, fuzzy
+#| msgid "Object"
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Réad"
+
+#: wrtembed/KReportDesigner.cpp:1067
+#, fuzzy
+#| msgid "Cut"
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Gearr"
+
+#: wrtembed/KReportDesigner.cpp:1071
+#, fuzzy
+#| msgid "Copy"
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Cóipeáil"
+
+#: wrtembed/KReportDesigner.cpp:1076
+#, fuzzy
+#| msgid "Paste"
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Greamaigh"
+
+#: wrtembed/KReportDesigner.cpp:1087
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Scrios"
+
+#: wrtembed/KReportDesigner.cpp:1129
+#, fuzzy
+#| msgid "Line"
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Líne"
+
+#: wrtembed/KReportDesigner.cpp:1476
+#, fuzzy
+#| msgid "Line"
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Líne"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1525
+#, fuzzy
+#| msgid "Copy"
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "Cóipeáil"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1531
+#, fuzzy
+#| msgid "Paste"
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "Greamaigh"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1544
+#, fuzzy
+#| msgid "Actions"
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Gníomhartha"
+
+#: wrtembed/KReportDesigner.cpp:1547
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1549
+#, fuzzy
+#| msgid "&Lowercase"
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr "Cás Íoch&tair"
+
+#: wrtembed/KReportDesignerSection.cpp:126
+#, fuzzy
+#| msgid "Detail"
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "Mionsonra"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+#, fuzzy
+#| msgid "Section Editor"
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Eagarthóir Rannáin"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+#, fuzzy
+#| msgid "Column:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Colún:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+#, fuzzy
+#| msgid "Sort"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Sórtáil"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+#, fuzzy
+#| msgid "Show Grid"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Taispeáin Greille"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+#, fuzzy
+#| msgid "Report Footer"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Buntásc Tuairisce"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+#, fuzzy
+#| msgid "Insert break after paragraph"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr "Ionsáigh briseadh tar éis ailt"
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+#, fuzzy
+#| msgid "Select styles to import:"
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr "Roghnaigh stíleanna le hiompórtáil:"
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+
+#: wrtembed/KReportRuler_p.cpp:1472
+#, fuzzy
+#| msgid "First line indent"
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Eangú chéadlíne"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+#, fuzzy
+#| msgid "Left Edge:"
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Ciumhais Ar Chlé:"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+#, fuzzy
+#| msgid "Right Edge:"
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Ciumhais Ar Dheis:"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+#, fuzzy
+#| msgid "Load..."
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr "Luchtaigh..."
+
+#: wrtembed/KReportSectionEditor.cpp:74
+#, fuzzy
+#| msgid "Edit..."
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "Eagar..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Scrios"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+#, fuzzy
+#| msgid "Move &Up"
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Bog S&uas"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+#, fuzzy
+#| msgid "Move &Down"
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Bog &Síos"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+#, fuzzy
+#| msgid "Ascending"
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr "Ag dul suas"
+
+#: wrtembed/KReportSectionEditor.cpp:312
+#, fuzzy
+#| msgid "Descending"
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr "Ag dul síos"
+
+#: wrtembed/KReportSectionEditor.ui:29
+#, fuzzy
+#| msgid "Show Grid"
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Taispeáin Greille"
+
+#: wrtembed/KReportSectionEditor.ui:36
+#, fuzzy
+#| msgid "Report Footer"
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Buntásc Tuairisce"
+
+#: wrtembed/KReportSectionEditor.ui:43
+#, fuzzy
+#| msgid "Page Header"
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Ceanntásc Leathanaigh"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+#, fuzzy
+#| msgid "First page:"
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "An chéad leathanach:"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Leathanach Baile"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+#, fuzzy
+#| msgid "Copy Page"
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Cóipeáil Leathanach"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+#, fuzzy
+#| msgid "Last Page"
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "An Leathanach Deireanach"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+#, fuzzy
+#| msgid "Facing pages:"
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Leathanaigh ar aghaigh a chéile:"
+
+#: wrtembed/KReportSectionEditor.ui:130
+#, fuzzy
+#| msgid "Page Footer"
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "Buntásc Leathanaigh"
+
+#: wrtembed/KReportSectionEditor.ui:217
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Grúpáil giuirléidí"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, fuzzy, qt-format
+#| msgid "%1%"
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+#, fuzzy
+#| msgid "Fit Page Width"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Oiriúnaigh don Leithead"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+#, fuzzy
+#| msgid "Fit Page"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Laghdaigh go dtí an Leathanach"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr ""
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+#, fuzzy
+#| msgid "Fit Page Width"
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Oiriúnaigh don Leithead"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Letter"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "Litir Mheiriceánach"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Legal"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "US Legal"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "Custom"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "Saincheaptha"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B6"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B5"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B4"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "Execute"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "Rith"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B0"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B1"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "ISO B10"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B2"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B3"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "Comma"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "Camóg"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO DL"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "ISO DL"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Ledger"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "Litir Mheiriceánach"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Tabloid"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Tabloid"
+#~ msgstr "Tablóid SAM"
+
+#, fuzzy
+#~| msgid "Postal Code"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "Cód Poist"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Foinse Sonraí"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Foinse Sonraí"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Foinse Sonraí"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Scáileán"
+
+#, fuzzy
+#~| msgid "Height"
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "Airde"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Dath an Chúlra"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "Ionad"
+
+#, fuzzy
+#~| msgid "Size"
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "Méid"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "ISO A3"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "ISO A4"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "ISO A5"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "ISO B5"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Executive"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "US Executive"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "ISO A0"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "ISO A1"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "ISO A2"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "ISO A6"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A7"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "ISO A7"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A8"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "ISO A8"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A9"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "ISO A9"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "ISO B0"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "ISO B1"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "ISO B2"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "ISO B3"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "ISO B4"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "ISO B6"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO C5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "ISO C5"
+
+#, fuzzy
+#~| msgid "Height"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "Airde"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "Dath an Chúlra"
+
+#, fuzzy
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Weight"
+#~ msgstr "Ailínigh Ar Dheis"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "Dath Líne"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "Stíl Líne"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Foinse Sonraí"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "Luach"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "Dath an Chúlra"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "Dath an Tulra"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Weight"
+#~ msgstr "Ailínigh Ar Dheis"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "Dath Líne"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "Stíl Líne"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Foinse Sonraí"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "Luach"
+
+#, fuzzy
+#~| msgid "Left"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "Ar Chlé"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "Lár"
+
+#, fuzzy
+#~| msgid "Right"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "Ar Dheis"
+
+#, fuzzy
+#~| msgid "Horizontal Alignment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Ailíniú Cothrománach"
+
+#, fuzzy
+#~| msgid "Top"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "Barr"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "Bun"
+
+#, fuzzy
+#~| msgid "Vertical Alignment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Ailíniú Ingearach"
+
+#, fuzzy
+#~| msgid "Font"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "Cló"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "Dath an Chúlra"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "Dath an Tulra"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "Dath an Chúlra"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Weight"
+#~ msgstr "Ailínigh Ar Dheis"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "Dath Líne"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "Stíl Líne"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Foinse Sonraí"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "Luach"
+
+#, fuzzy
+#~| msgid "Left"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "Ar Chlé"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "Lár"
+
+#, fuzzy
+#~| msgid "Right"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "Ar Dheis"
+
+#, fuzzy
+#~| msgid "Horizontal Alignment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Ailíniú Cothrománach"
+
+#, fuzzy
+#~| msgid "Top"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "Barr"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "Bun"
+
+#, fuzzy
+#~| msgid "Vertical Alignment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Ailíniú Ingearach"
+
+#, fuzzy
+#~| msgid "Font"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "Cló"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "Dath an Chúlra"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "Dath an Tulra"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Weight"
+#~ msgstr "Ailínigh Ar Dheis"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "Dath Líne"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "Stíl Líne"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "Dath an Chúlra"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "Scrios"
+
+#, fuzzy
+#~| msgid "Script Manager"
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "Bainisteoir na Scripteanna"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Séamus Ó Ciardhuáin,Kevin Scannell"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "seoc@iolfree.ie,kscanne@gmail.com"
+
+#, fuzzy
+#~| msgid "Default path"
+#~ msgid "Draw path"
+#~ msgstr "Conair réamhshocraithe"
+
+#, fuzzy
+#~ msgid "Freehand path"
+#~ msgstr "Bain fochonair"
+
+#, fuzzy
+#~| msgid "Position:"
+#~ msgid "Precision:"
+#~ msgstr "Ionad:"
+
+#, fuzzy
+#~| msgid "Rainbow"
+#~ msgctxt "The raw line data"
+#~ msgid "Raw"
+#~ msgstr "Tua Cheatha"
+
+#~ msgid "Curve"
+#~ msgstr "Cuar"
+
+#~ msgid "Straight"
+#~ msgstr "Díreach"
+
+#~ msgid "Invalid database contents. "
+#~ msgstr "Inneachar neamhbhailí sa bhunachar sonraí. "
+
+#~ msgid "It is a system object."
+#~ msgstr "Is réad córais é."
+
+#~ msgid "Connection already established."
+#~ msgstr "Bunaíodh ceangal cheana."
+
+#, fuzzy
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr "Ní féidir an comhad a easpórtáil."
+
+#, fuzzy
+#~ msgid "The database \"%1\" does not exist."
+#~ msgstr "Níl comhad %1 ann."
+
+#, fuzzy
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "Níl comhad %1 ann."
+
+#, fuzzy
+#~ msgid "Database file \"%1\" is not writable."
+#~ msgstr "Níl comhad %1 ann."
+
+#~ msgid "Database \"%1\" already exists."
+#~ msgstr "Tá bunachar sonraí \"%1\" ann cheana."
+
+#~ msgid "Error creating database \"%1\" on the server."
+#~ msgstr "Earráid agus bunachar sonraí \"%1\" á chruthú ar an bhfreastalaí."
+
+#~ msgid "Database \"%1\" created but could not be opened."
+#~ msgstr "Cruthaíodh bunachar sonraí \"%1\" ach níorbh fhéidir é a oscailt."
+
+#~ msgid "Opening database \"%1\" failed."
+#~ msgstr "Theip ar oscailt an bhunachair sonraí \"%1\"."
+
+#~ msgid "Cannot delete database - name not specified."
+#~ msgstr "Ní féidir an bunachar sonraí a scriosadh - níor sonraíodh ainm."
+
+#~ msgid "Error while executing SQL statement."
+#~ msgstr "Earráid agus ráiteas SQL á rith."
+
+#, fuzzy
+#~ msgid "Creating table failed."
+#~ msgstr "Cruthaigh comhad cúltaca"
+
+#, fuzzy
+#~ msgid "Cannot create table without fields."
+#~ msgstr "Ní féidir stóras a chruthú"
+
+#, fuzzy
+#~ msgid "Could not create the same table \"%1\" twice."
+#~ msgstr "Ní féidir pacáiste \"%1\" a léamh."
+
+#~ msgid "Table \"%1\" already exists."
+#~ msgstr "Tá tábla darb ainm \"%1\" ann cheana."
+
+#, fuzzy
+#~ msgid "Table \"%1\" does not exist."
+#~ msgstr "Níl comhad %1 ann."
+
+#, fuzzy
+#~ msgid "Could not remove object's data."
+#~ msgstr ""
+#~ "Ní féidir réad leabaithe a luchtú:\n"
+#~ "%1"
+
+#~ msgid "Table \"%1\" cannot be removed.\n"
+#~ msgstr "Ní féidir tábla \"%1\" a bhaint.\n"
+
+#~ msgid "Unexpected name or identifier."
+#~ msgstr "Ainm nó aitheantóir gan choinne."
+
+#, fuzzy
+#~ msgid "Could not alter table \"%1\" using the same table as destination."
+#~ msgstr "Ní féidir pacáiste \"%1\" a léamh."
+
+#, fuzzy
+#~ msgid "Unknown table \"%1\"."
+#~ msgstr "Léirmhínitheoir anaithnid '%1'"
+
+#, fuzzy
+#~| msgid "Invalid database contents. "
+#~ msgid "Invalid table name \"%1\"."
+#~ msgstr "Inneachar neamhbhailí sa bhunachar sonraí. "
+
+#, fuzzy
+#~ msgid "Query \"%1\" does not exist."
+#~ msgstr "Níl comhad %1 ann."
+
+#, fuzzy
+#~ msgid "Begin transaction failed."
+#~ msgstr "Cruthú Comhaid"
+
+#, fuzzy
+#~ msgid "Transaction already started."
+#~ msgstr "Tá an t-ainm seo ann cheana."
+
+#, fuzzy
+#~| msgid "Error on commit transaction"
+#~ msgid "Error on commit transaction."
+#~ msgstr "Earráid agus idirbheart á chur i bhfeidhm"
+
+#, fuzzy
+#~| msgid "Error on rollback transaction"
+#~ msgid "Error on rollback transaction."
+#~ msgstr "Earráid agus idirbheart á rolladh siar"
+
+#, fuzzy
+#~ msgid "Column <resource>%1</resource> does not exist in the query."
+#~ msgstr "Níl comhad %1 ann."
+
+#, fuzzy
+#~ msgid ""
+#~ "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~ "XML data: %4"
+#~ msgstr ""
+#~ "Earráid pharsála i %1 ag líne %2, colún %3\n"
+#~ "Teachtaireacht: %4"
+
+#, fuzzy
+#~ msgid "Could not insert record because there is no master table specified."
+#~ msgstr "Ní féidir pacáiste \"%1\" a léamh."
+
+#, fuzzy
+#~| msgid "Cannot delete database - name not specified."
+#~ msgid "Could not delete record because there is no master table specified."
+#~ msgstr "Ní féidir an bunachar sonraí a scriosadh - níor sonraíodh ainm."
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Unknown error."
+#~ msgstr "Earráid anaithnid"
+
+#, fuzzy
+#~| msgid "file"
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "comhad"
+
+#~ msgid "Cannot fetch next record."
+#~ msgstr "Ní féidir an chéad taifead eile a fháil."
+
+#, fuzzy
+#~ msgid "Could not set value of database property \"%1\"."
+#~ msgstr "Ní féidir pacáiste \"%1\" a léamh."
+
+#, fuzzy
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "Ní féidir pacáiste \"%1\" a léamh."
+
+#, fuzzy
+#~ msgid "Could not read database properties."
+#~ msgstr "Ní féidir an comhad a easpórtáil."
+
+#~ msgid "Client library version"
+#~ msgstr "Leagan na leabharlainne cliaint"
+
+#~ msgid "Default character encoding on server"
+#~ msgstr "Ionchódú réamhshocraithe na gcarachtar ar an bhfreastalaí"
+
+#~ msgid "KexiDB driver version"
+#~ msgstr "Leagan an tiománaí KexiDB"
+
+#, fuzzy
+#~ msgid "Could not find database driver \"%1\"."
+#~ msgstr "Ní féidir pacáiste \"%1\" a léamh."
+
+#, fuzzy
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "Ní féidir pacáiste \"%1\" a léamh."
+
+#, fuzzy
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "Ní féidir pacáiste \"%1\" a léamh."
+
+#, fuzzy
+#~ msgid "Field not found"
+#~ msgstr "Comhad gan aimsiú"
+
+#, fuzzy
+#~ msgid "Could not access the table directly using its name"
+#~ msgstr "Ní féidir an comhad a chruthú le haghaidh sábhála"
+
+#, fuzzy
+#~ msgid "Table not found"
+#~ msgstr "Comhad gan aimsiú"
+
+#~ msgid "Ambiguous \"%1.*\" expression"
+#~ msgstr "Slonn débhríoch \"%1.*\""
+
+#, fuzzy
+#~| msgid "Table \"%1\" has no \"%2\" field"
+#~ msgid "Table \"%1\" has no \"%2\" field."
+#~ msgstr "Níl réimse \"%2\" i dtábla \"%1\""
+
+#~ msgid "Ambiguous \"%1.%2\" expression"
+#~ msgstr "Slonn débhríoch \"%1.%2\""
+
+#~ msgid "Byte"
+#~ msgstr "Beart"
+
+#, fuzzy
+#~ msgid "Short Integer Number"
+#~ msgstr "Uimhir Theileafóin"
+
+#, fuzzy
+#~ msgid "Integer Number"
+#~ msgstr "Uimhir Theileafóin"
+
+#~ msgid "Big Integer Number"
+#~ msgstr "Slánuimhir Mhór"
+
+#, fuzzy
+#~ msgid "Yes/No Value"
+#~ msgstr "Méadaigh Eangú"
+
+#~ msgid "Date"
+#~ msgstr "Dáta"
+
+#, fuzzy
+#~ msgid "Date and Time"
+#~ msgstr "Dáta agus Am"
+
+#, fuzzy
+#~ msgid "Time"
+#~ msgstr "Crios ama"
+
+#, fuzzy
+#~ msgid "Single Precision Number"
+#~ msgstr "Leasú:"
+
+#, fuzzy
+#~ msgid "Double Precision Number"
+#~ msgstr "Leasú:"
+
+#~ msgid "Text"
+#~ msgstr "Téacs"
+
+#, fuzzy
+#~ msgid "Long Text"
+#~ msgstr "Téacs"
+
+#, fuzzy
+#~ msgid "Invalid Group"
+#~ msgstr "Cuir Grúpa Leis"
+
+#, fuzzy
+#~ msgid "Floating Point Number"
+#~ msgstr "Uimhir le Pointe Deachúlach"
+
+#~ msgid "Yes/No"
+#~ msgstr "Tá/Níl"
+
+#, fuzzy
+#~ msgid "Date/Time"
+#~ msgstr "Dáta agus Am"
+
+#, fuzzy
+#~ msgid "Unspecified error encountered"
+#~ msgstr "Tharla Earráid"
+
+#~ msgid "identifier was expected"
+#~ msgstr "bhíothas ag súil le haitheantóir"
+
+#, fuzzy
+#~| msgid "\"%1\" is a reserved keyword"
+#~ msgid "\"%1\" is a reserved keyword."
+#~ msgstr "is lorgfhocal in áirithe é \"%1\""
+
+#, fuzzy
+#~ msgid "Syntax error."
+#~ msgstr "Earráid inmheánach"
+
+#, fuzzy
+#~ msgid "Error"
+#~ msgstr "Earráid!"
+
+#, fuzzy
+#~| msgid "Syntax Error near \"%1\""
+#~ msgid "Error near \"%1\"."
+#~ msgstr "Earráid Chomhréire i ngar do \"%1\""
+
+#, fuzzy
+#~| msgid "No query specified"
+#~ msgid "No query statement specified."
+#~ msgstr "Níor sonraíodh iarratas"
+
+#, fuzzy
+#~| msgctxt ""
+#~| "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
+#~| msgid "expr"
+#~ msgctxt ""
+#~ "short for 'expression' word, e.g. 'expr' (only latin letters, please, no "
+#~ "'.')"
+#~ msgid "expr"
+#~ msgstr "slonn"
+
+#, fuzzy
+#~ msgid "Server's port number"
+#~ msgstr "Leasú:"
+
+#, fuzzy
+#~ msgid "Record inserting failed."
+#~ msgstr "Cruthaigh comhad cúltaca"
+
+#, fuzzy
+#~| msgid "Error deleting layers"
+#~ msgid "Record deleting failed."
+#~ msgstr "Earráid agus sraitheanna á scriosadh"
+
+#~ msgid "Message from server:"
+#~ msgstr "Teachtaireacht ón fhreastalaí:"
+
+#~ msgid "SQL statement:"
+#~ msgstr "Ráiteas SQL:"
+
+#, fuzzy
+#~ msgid "Test Connection"
+#~ msgstr "Athraigh Ceangal"
+
+#~ msgid "Number"
+#~ msgstr "Uimhir"
+
+#~ msgid "Image"
+#~ msgstr "Íomhá"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr "Athraigh Ceangal"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr "Athraigh an Cás"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "Tiontaigh go Conair"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move control point"
+#~ msgstr "Bain pointe"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set fill rule"
+#~ msgstr "Socraigh riail líonta"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "Ionsáigh pointe"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "Bain pointí"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move points"
+#~ msgstr "Bain pointí"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove points"
+#~ msgstr "Bain pointí"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set point type"
+#~ msgstr "Socraigh Clómhéid"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reverse paths"
+#~ msgstr "Bain fochonair"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath"
+#~ msgstr "Bain fochonair"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Align shapes"
+#~ msgstr "Ailínigh giuirléidí"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr "Dath an Chúlra"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Clip Shape"
+#~ msgstr "Giuirléid Éilips"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr "Cruthaigh giuirléid"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shape"
+#~ msgid_plural "Delete shapes"
+#~ msgstr[0] "Scrios giuirléid"
+#~ msgstr[1] "Scrios giuirléid"
+#~ msgstr[2] "Scrios giuirléid"
+#~ msgstr[3] "Scrios giuirléid"
+#~ msgstr[4] "Scrios giuirléid"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Distribute shapes"
+#~ msgstr "Scrios giuirléidí"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr "Grúpáil giuirléidí"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add shapes to group"
+#~ msgstr "Cuir giuirléidí le grúpa"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Keep Aspect Ratio"
+#~ msgstr "Caomhnaigh an Cóimheas Treoíochta"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Lock shapes"
+#~ msgstr "Cuir giuirléidí faoi ghlas"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move shapes"
+#~ msgstr "Bog giuirléidí"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr "Cruthaigh Cruthanna"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reorder shapes"
+#~ msgstr "Athraigh méid giuirléidí"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Shape RunAround"
+#~ msgstr "Athraigh leagan amach an leathanaigh"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Shadow"
+#~ msgstr "Socraigh Scáth"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Shear shapes"
+#~ msgstr "Taispeáin Máistirgiuirléidí"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr "Socraigh an teimhneacht"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shape"
+#~ msgstr "Giuirléid Éilips"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shapes"
+#~ msgstr "Giuirléid Éilips"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr "Díghrúpáil giuirléidí"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Close subpath"
+#~ msgstr "Bain fochonair"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Join subpaths"
+#~ msgstr "Bain fochonair"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove subpath"
+#~ msgstr "Bain fochonair"
+
+#~ msgid "Standard"
+#~ msgstr "Caighdeánach"
+
+#~ msgid "Lines"
+#~ msgstr "Línte"
+
+#~ msgid "Type:"
+#~ msgstr "Cineál:"
+
+#~ msgid "Tie"
+#~ msgstr "Ceangal"
+
+#~ msgid "A connection between two other shapes"
+#~ msgstr "Ceangal idir dhá ghiuirléid eile"
+
+#~ msgid "Shows or hides grid"
+#~ msgstr "Taispeáin nó folaigh greille"
+
+#~ msgid "Simple path shape"
+#~ msgstr "Giuirléid shimplí chonaire"
+
+#~ msgid "A simple path shape"
+#~ msgstr "Giuirléid shimplí chonaire"
+
+#~ msgid "%1 Options"
+#~ msgstr "Roghanna %1"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Shapes"
+#~ msgstr "Greamaigh Giuirléidí"
+
+#~ msgid "Active tool: %1"
+#~ msgstr "Uirlis ghníomhach: %1"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "Greamaigh Leathanach"
+
+#~ msgid "Nodes"
+#~ msgstr "Nóid"
+
+#~ msgid " px"
+#~ msgstr " pct"
+
+#~ msgid "Guide lines"
+#~ msgstr "Treoirlínte"
+
+#~ msgid "Create object"
+#~ msgstr "Cruthaigh réad"
+
+#~ msgid "Pan"
+#~ msgstr "Peanáil"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Segment"
+#~ msgstr "Athraigh an cló"
+
+#~ msgid "Insert point"
+#~ msgstr "Ionsáigh pointe"
+
+#~ msgid "Remove point"
+#~ msgstr "Bain pointe"
+
+#~ msgid "Line/Curve"
+#~ msgstr "Líne/Cuar"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Path editing"
+#~ msgstr "Priontáilte Ar"
+
+#~ msgid "Zoom"
+#~ msgstr "Súmáil"
+
+#~ msgid "Zoom In"
+#~ msgstr "Súmáil Isteach"
+
+#~ msgid "Zoom Out"
+#~ msgstr "Súmáil Amach"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Convert To Path"
+#~ msgstr "Tiontaigh go Conair"
+
+#~ msgid "Scripts"
+#~ msgstr "Scripteanna"
+
+#~ msgid "Execute Script File..."
+#~ msgstr "Rith Comhad Scripte..."
+
+#~ msgid "Script Manager..."
+#~ msgstr "Bainisteoir na Scripteanna..."
+
+#~ msgid "Execute Script File"
+#~ msgstr "Rith Comhad Scripte"
+
+#~ msgid "Install Script Package"
+#~ msgstr "Suiteáil Pacáiste Scripte"
+
+#~ msgid "Could not read the package \"%1\"."
+#~ msgstr "Ní féidir pacáiste \"%1\" a léamh."
+
+#~ msgid ""
+#~ "A script package with the name \"%1\" already exists. Replace this "
+#~ "package?"
+#~ msgstr "Tá pacáiste scripte darb ainm \"%1\" ann cheana. Ionadaigh é?"
+
+#~ msgid "Replace"
+#~ msgstr "Ionadaigh"
+
+#~ msgid "Save"
+#~ msgstr "Sábháil"
+
+#~ msgid "Add script file"
+#~ msgstr "Cuir comhad scripte leis"
+
+#~ msgid "Add"
+#~ msgstr "Cuir Leis"
+
+#~ msgid "Script"
+#~ msgstr "Script"
+
+#~ msgid "Collection"
+#~ msgstr "Bailiúchán"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master slide"
+#~ msgstr "Athraigh an máistirleathanach"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master page"
+#~ msgstr "Athraigh an máistirleathanach"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "Socraigh Leagan Amach an Leathanaigh"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Show master shapes"
+#~ msgstr "Taispeáin Máistirgiuirléidí"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Hide master shapes"
+#~ msgstr "Folaigh Máistirgiuirléidí"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] "Scrios sleamhnán"
+#~ msgstr[1] "Scrios sleamhnáin"
+#~ msgstr[2] "Scrios sleamhnáin"
+#~ msgstr[3] "Scrios sleamhnáin"
+#~ msgstr[4] "Scrios sleamhnáin"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "Scrios leathanach"
+#~ msgstr[1] "Scrios leathanaigh"
+#~ msgstr[2] "Scrios leathanaigh"
+#~ msgstr[3] "Scrios leathanaigh"
+#~ msgstr[4] "Scrios leathanaigh"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr "Ionsáigh sleamhnán"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr "Ionsáigh leathanach"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "Bog sleamhnán"
+#~ msgstr[1] "Bog sleamhnáin"
+#~ msgstr[2] "Bog sleamhnáin"
+#~ msgstr[3] "Bog sleamhnáin"
+#~ msgstr[4] "Bog sleamhnáin"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] "Bog leathanach"
+#~ msgstr[1] "Bog leathanaigh"
+#~ msgstr[2] "Bog leathanaigh"
+#~ msgstr[3] "Bog leathanaigh"
+#~ msgstr[4] "Bog leathanaigh"
+
+#~ msgid "Configure"
+#~ msgstr "Cumraigh"
+
+#~ msgid "Misc"
+#~ msgstr "Éagsúil"
+
+#~ msgid "Grid"
+#~ msgstr "Greille"
+
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "Cáipéis"
+
+#~ msgid "Document Settings"
+#~ msgstr "Socruithe Cáipéise"
+
+#, fuzzy
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "Údar"
+
+#~ msgid "Author"
+#~ msgstr "Údar"
+
+#~ msgid "Master Page"
+#~ msgstr "Máistirleathanach"
+
+#~ msgid "Slide %1"
+#~ msgstr "Sleamhnán %1"
+
+#~ msgid "Page  %1"
+#~ msgstr "Leathanach  %1"
+
+#~ msgid "Layer"
+#~ msgstr "Sraith"
+
+#~ msgid "Group"
+#~ msgstr "Grúpa"
+
+#~ msgid "Shape"
+#~ msgstr "Giuirléid"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "Greamaigh Sleamhnán"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "Leathanach Baile"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "Cruthaigh Sraith"
+
+#~ msgid "Slide"
+#~ msgstr "Sleamhnán"
+
+#~ msgid "Visible"
+#~ msgstr "Infheicthe"
+
+#~ msgid "Locked"
+#~ msgstr "Faoi Ghlas"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reparent shapes"
+#~ msgstr "Scrios giuirléidí"
+
+#, fuzzy
+#~ msgid "&Move Here"
+#~ msgstr "Bog leathanach"
+
+#, fuzzy
+#~ msgid "&Copy Here"
+#~ msgstr "Uaine"
+
+#, fuzzy
+#~ msgid "C&ancel"
+#~ msgstr "&Cealaigh"
+
+#~ msgid "Document"
+#~ msgstr "Cáipéis"
+
+#~ msgid "Add a new slide or layer"
+#~ msgstr "Cuir sleamhnán nó sraith nua leis"
+
+#~ msgid "Add a new page or layer"
+#~ msgstr "Cuir leathanach nó sraith nua leis"
+
+#~ msgid "Page"
+#~ msgstr "Leathanach"
+
+#~ msgid "Delete selected objects"
+#~ msgstr "Scrios na réada roghnaithe"
+
+#~ msgid "Raise selected objects"
+#~ msgstr "Ardaigh na réada roghnaithe"
+
+#~ msgid "Lower selected objects"
+#~ msgstr "Ísligh na réada roghnaithe"
+
+#~ msgid "Minimal View"
+#~ msgstr "Amharc Íosta"
+
+#~ msgid "Detailed View"
+#~ msgstr "Amharc Mionsonraithe"
+
+#~ msgid "Thumbnail View"
+#~ msgstr "Amharc Mionsamhlacha"
+
+#~ msgid "View mode"
+#~ msgstr "Mód amhairc"
+
+#~ msgid "Enter the name of the new layer:"
+#~ msgstr "Iontráil ainm na sraithe nuaí:"
+
+#~ msgid "New Layer"
+#~ msgstr "Sraith Nua"
+
+#~ msgid "New layer"
+#~ msgstr "Sraith nua"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "Cruthaigh Sraith"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "Scrios Sraith"
+
+#~ msgid "Could not delete all layers. At least one layer is required."
+#~ msgstr ""
+#~ "Ní féidir gach sraith a scriosadh. Tá sraith amháin ar a laghad de dhíth."
+
+#~ msgid "Error deleting layers"
+#~ msgstr "Earráid agus sraitheanna á scriosadh"
+
+#~ msgid "Add a new slide"
+#~ msgstr "Cuir sleamhnán nua leis"
+
+#, fuzzy
+#~ msgid "Add a new page"
+#~ msgstr "Cuir sleamhnán nua leis"
+
+#~ msgid "Page %1"
+#~ msgstr "Leathanach %1"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] "Greamaigh Sleamhnán"
+#~ msgstr[1] "Greamaigh Sleamhnáin"
+#~ msgstr[2] "Greamaigh Sleamhnáin"
+#~ msgstr[3] "Greamaigh Sleamhnáin"
+#~ msgstr[4] "Greamaigh Sleamhnáin"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] "Greamaigh Leathanach"
+#~ msgstr[1] "Greamaigh Leathanaigh"
+#~ msgstr[2] "Greamaigh Leathanaigh"
+#~ msgstr[3] "Greamaigh Leathanaigh"
+#~ msgstr[4] "Greamaigh Leathanaigh"
+
+#~ msgid "Tools"
+#~ msgstr "Uirlisí"
+
+#~ msgid "D&elete"
+#~ msgstr "S&crios"
+
+#~ msgid "Show Master Pages"
+#~ msgstr "Taispeáin Máistirleathanaigh"
+
+#~ msgid "Show Rulers"
+#~ msgstr "Taispeáin Rialóirí"
+
+#~ msgid "Show/hide the view's rulers"
+#~ msgstr "Taispeáin/folaigh rialóirí an amhairc"
+
+#~ msgid "Insert Page"
+#~ msgstr "Ionsáigh Leathanach"
+
+#~ msgid "Insert a new page after the current one"
+#~ msgstr "Ionsáigh leathanach tar éis an ceann seo"
+
+#~ msgid "Copy Page"
+#~ msgstr "Cóipeáil Leathanach"
+
+#~ msgid "Copy the current page"
+#~ msgstr "Cóipeáil an leathanach reatha"
+
+#~ msgid "Delete Page"
+#~ msgstr "Scrios Leathanach"
+
+#~ msgid "Delete the current page"
+#~ msgstr "Scrios an leathanach reatha"
+
+#~ msgid "Master Page..."
+#~ msgstr "Máistirleathanach..."
+
+#~ msgid "Page Layout..."
+#~ msgstr "Leagan Amach Leathanaigh..."
+
+#~ msgid "Variable"
+#~ msgstr "Athróg"
+
+#~ msgid "Import Document..."
+#~ msgstr "Iompórtáil Cáipéis..."
+
+#~ msgid "Configure..."
+#~ msgstr "Cumraigh..."
+
+#~ msgid "Import Slideshow"
+#~ msgstr "Iompórtáil Taispeántas Sleamhnán"
+
+#~ msgid "Import Document"
+#~ msgstr "Iompórtáil Cáipéis"
+
+#~ msgid ""
+#~ "Could not import\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Níorbh fhéidir iompórtáil:\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr "Athraigh leagan amach an leathanaigh"
+
+#, fuzzy
+#~ msgid "Background"
+#~ msgstr "Dath an Chúlra"
+
+#, fuzzy
+#~ msgid "Page Background"
+#~ msgstr "Dath an Chúlra"
+
+#, fuzzy
+#~| msgid "Page edge:"
+#~ msgid "Page Design"
+#~ msgstr "Ciumhais an leathanaigh:"
+
+#, fuzzy
+#~| msgid "Slide %1"
+#~ msgid "Slide Design"
+#~ msgstr "Sleamhnán %1"
+
+#, fuzzy
+#~ msgid "Use background of master page"
+#~ msgstr "Athraigh an máistirleathanach"
+
+#, fuzzy
+#~ msgid "Use background of master slide"
+#~ msgstr "Athraigh an máistirleathanach"
+
+#, fuzzy
+#~ msgid "Display shapes of master page"
+#~ msgstr "Athraigh an máistirleathanach"
+
+#, fuzzy
+#~ msgid "Display shapes of master slide"
+#~ msgstr "Athraigh an máistirleathanach"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change slide background image"
+#~ msgstr "Athraigh an máistirleathanach"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page background image"
+#~ msgstr "Athraigh an máistirleathanach"
+
+#, fuzzy
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "Greamaigh Sleamhnán"
+
+#, fuzzy
+#~ msgid "Slide %1/%2"
+#~ msgstr "Sleamhnán %1"
+
+#, fuzzy
+#~ msgid "Master Page %1/%2"
+#~ msgstr "Máistirleathanach"
+
+#, fuzzy
+#~ msgid "Page %1/%2"
+#~ msgstr "Leathanach %1"
+
+#, fuzzy
+#~| msgid "Check"
+#~ msgid "Check Box"
+#~ msgstr "Seiceáil"
+
+#~ msgid "Field"
+#~ msgstr "Réimse"
+
+#~ msgid "Label"
+#~ msgstr "Lipéad"
+
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgid "Section Editor"
+#~ msgstr "Eagarthóir Rannáin"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "Athraigh"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "Athraigh Cineál an Chomhaid"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "Scrios"
+
+#~ msgid "Key Press"
+#~ msgstr "Eochairbhrú"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "Téacs"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "Ionsáigh Colún"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "Scrios"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "Ionsáigh pointe"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr "Ionsáigh Innéacs"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Right"
+#~ msgstr "Ionsáigh Colún"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr "Ionsáigh Colún"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Below"
+#~ msgstr "Ionsáigh Ró"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "Ionsáigh Ró"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List Numbering"
+#~ msgstr "Athraigh an máistirleathanach"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "Formáid"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Direct Paragraph Formatting"
+#~ msgstr "Athraigh Spásáil Alt"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr "Cruthaigh Cruthanna"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr "Ionsáigh Colún"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "Greamaigh Leathanach"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "Greamaigh"
+
+#~ msgid "Found 1 match"
+#~ msgid_plural "Found %1 matches"
+#~ msgstr[0] "Aimsíodh 1 rud comhoiriúnach"
+#~ msgstr[1] "Aimsíodh %1 rud comhoiriúnach"
+#~ msgstr[2] "Aimsíodh %1 rud comhoiriúnach"
+#~ msgstr[3] "Aimsíodh %1 rud comhoiriúnach"
+#~ msgstr[4] "Aimsíodh %1 rud comhoiriúnach"
+
+#~ msgid "Found no match"
+#~ msgstr "Níor aimsíodh aon rud comhoiriúnach"
+
+#, fuzzy
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "Grúpáil giuirléidí"
+
+#~ msgctxt "Underline Style"
+#~ msgid "None"
+#~ msgstr "Neamhní"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "Singil"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "Dúbail"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "Cuir Leabharmharc Leis"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "Cuir Codán Leis"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "Ionsáigh Innéacs"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "Ionsáigh Athróg"
+
+#, fuzzy
+#~| msgid "Key Press"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Key Press"
+#~ msgstr "Eochairbhrú"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "Ionsáigh Briseadh"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "Ionsáigh Tábla"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "Cumaisc Cealla"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "Amharc &Roinnte"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr "Oiriúnaigh don Leithead"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Border Formatting"
+#~ msgstr "Athraigh na Teorainneacha"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Cuir i gclár na n-ábhar"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr "Cuir i gclár na n-ábhar"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Ionsáigh Briseadh"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "Cuir Codán Leis"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr "Trom"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "Cló Iodálach"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "Líne Faoi"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr "Scríoblíne"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr "Athraigh an cló"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr "Socraigh Ailíniú Ingearach"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "Laghdaigh Eangú"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "Méadaigh Eangú"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "Cló níos lú"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "Cló níos mó"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr "Socraigh Cló"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr "Socraigh Clómhéid"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr "Socraigh Dath an Chúlra"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Text Color"
+#~ msgstr "Socraigh Dath Téacs"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr "Cruthaigh Stíl Nua"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Paragraph Style"
+#~ msgstr "Athraigh Spásáil Alt"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "Formáid"
+
+#~ msgid "Default"
+#~ msgstr "Réamhshocrú"
+
+#, fuzzy
+#~ msgctxt "Default text for undo action"
+#~ msgid "Undo"
+#~ msgstr "Cealaigh"
+
+#, fuzzy
+#~ msgid "Undo %1"
+#~ msgstr "&Cealaigh: %1"
+
+#, fuzzy
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "Athdhéan"
+
+#, fuzzy
+#~ msgid "Redo %1"
+#~ msgstr "Athdhéan: %1"
+
+#, fuzzy
+#~| msgid "Empty"
+#~ msgid "<empty>"
+#~ msgstr "Folamh"
+
+#~ msgid "Redo"
+#~ msgstr "Athdhéan"
+
+#~ msgid "Undo"
+#~ msgstr "Cealaigh"
+
+#~ msgid "&File"
+#~ msgstr "&Comhad"
+
+#~ msgid "&Settings"
+#~ msgstr "&Socruithe"
+
+#~ msgid "File"
+#~ msgstr "Comhad"
+
+#, fuzzy
+#~ msgid "Delete the author profile"
+#~ msgstr "Scrios an leathanach reatha"
+
+#, fuzzy
+#~ msgid "Default Author Profile"
+#~ msgstr "Uirlis réamhshocraithe"
+
+#, fuzzy
+#~ msgid "Name of Profile"
+#~ msgstr "Líon na bPictiúr"
+
+#~ msgid "Name:"
+#~ msgstr "Ainm:"
+
+#~ msgid "Initials:"
+#~ msgstr "Túslitreacha:"
+
+#~ msgid "Title:"
+#~ msgstr "Teideal:"
+
+#~ msgid "Position:"
+#~ msgstr "Ionad:"
+
+#~ msgid "Company:"
+#~ msgstr "Comhlacht:"
+
+#~ msgid "Email:"
+#~ msgstr "Ríomhphost:"
+
+#~ msgid "Telephone (home):"
+#~ msgstr "Teileafón (baile):"
+
+#~ msgid "Telephone (work):"
+#~ msgstr "Teileafón (obair):"
+
+#~ msgid "Fax:"
+#~ msgstr "Facs:"
+
+#~ msgid "Street:"
+#~ msgstr "Sráid:"
+
+#~ msgid "Postal code:"
+#~ msgstr "Cód poist:"
+
+#~ msgid "City:"
+#~ msgstr "Cathair:"
+
+#~ msgid "Country:"
+#~ msgstr "Tír:"
+
+#, fuzzy
+#~ msgid "No autosave"
+#~ msgstr "Gan sábháil uathoibríoch"
+
+#, fuzzy
+#~ msgid "Autosave interval:"
+#~ msgstr "Sábháil uathoibríoch (nóim):"
+
+#, fuzzy
+#~ msgid "Create backup file:"
+#~ msgstr "Cruthaigh comhad cúltaca"
+
+#~ msgid "Show grid:"
+#~ msgstr "Taispeáin greille:"
+
+#~ msgid "Snap to grid:"
+#~ msgstr "Léim go greille:"
+
+#~ msgid "Grid color:"
+#~ msgstr "Dath na greille:"
+
+#~ msgid "Spacing"
+#~ msgstr "Spásáil"
+
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "&Cothrománach:"
+
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "&Ingearach:"
+
+#~ msgid "Units:"
+#~ msgstr "Aonaid:"
+
+#, fuzzy
+#~ msgid "Paste offset:"
+#~ msgstr "Greamaigh Leathanach"
+
+#~ msgid "Only print and exit"
+#~ msgstr "Priontáil agus scoir amháin"
+
+#~ msgid "Open a new document with a template"
+#~ msgstr "Oscail cáipéis nua le teimpléad"
+
+#~ msgid "Only export to PDF and exit"
+#~ msgstr "Easpórtáil go PDF agus scoir amháin"
+
+#, fuzzy
+#~| msgid "Creation error"
+#~ msgid "%1: Critical Error"
+#~ msgstr "Earráid chruthaithe"
+
+#~ msgid "No template found for: %1"
+#~ msgstr "Níor aimsíodh teimpléad le haghaidh: %1"
+
+#~ msgid "Too many templates found for: %1"
+#~ msgstr "Aimsíodh an iomarca teimpléad le haghaidh: %1"
+
+#~ msgid "Template %1 failed to load."
+#~ msgstr "Theip ar luchtú teimpléid %1."
+
+#~ msgid "Always use this template at application start up"
+#~ msgstr "Úsáid an teimpléad i gcónaí ag am thosú an fheidhmchláir"
+
+#~ msgid "Always use this template"
+#~ msgstr "Úsáid an teimpléad seo i gcónaí"
+
+#~ msgid "Making backup..."
+#~ msgstr "Cúltaca á dhéanamh..."
+
+#~ msgid "Saving..."
+#~ msgstr "Á Shábháil..."
+
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ní féidir a shábháil\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Ní féidir %1 a shábháil\n"
+#~ "Fáth: %2"
+
+#~ msgid "Autosaving..."
+#~ msgstr "Sábháil go hUathoibríoch..."
+
+#~ msgid "Could not create the file for saving"
+#~ msgstr "Ní féidir an comhad a chruthú le haghaidh sábhála"
+
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "URL míchumtha\n"
+#~ "%1"
+
+#~ msgid "The file %1 does not exist."
+#~ msgstr "Níl comhad %1 ann."
+
+#, fuzzy
+#~| msgid "Open Document"
+#~ msgid "Opening Document"
+#~ msgstr "Oscail Cáipéis"
+
+#, fuzzy
+#~| msgid "Could not create the file for saving"
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "Ní féidir an comhad a chruthú le haghaidh sábhála"
+
+#~ msgid "File not found"
+#~ msgstr "Comhad gan aimsiú"
+
+#~ msgid "Cannot create storage"
+#~ msgstr "Ní féidir stóras a chruthú"
+
+#~ msgid "Bad MIME type"
+#~ msgstr "Droch-chineál MIME"
+
+#~ msgid "Format not recognized"
+#~ msgstr "Formáid anaithnid"
+
+#~ msgid "Not implemented"
+#~ msgstr "Gan feidhmiú"
+
+#~ msgid "Parsing error"
+#~ msgstr "Earráid pharsála"
+
+#~ msgid "Internal error"
+#~ msgstr "Earráid inmheánach"
+
+#~ msgid "Out of memory"
+#~ msgstr "Cuimhne ídithe"
+
+#~ msgid "Unknown error"
+#~ msgstr "Earráid anaithnid"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open\n"
+#~| "%2.\n"
+#~| "Reason: %1"
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr ""
+#~ "Ní féidir %2\n"
+#~ "a oscailt.\n"
+#~ "Fáth: %1"
+
+#~ msgid "Could not find %1"
+#~ msgstr "Ní féidir %1 a aimsiú"
+
+#~ msgid ""
+#~ "Parsing error in %1 at line %2, column %3\n"
+#~ "Error message: %4"
+#~ msgstr ""
+#~ "Earráid pharsála i %1 ag líne %2, colún %3\n"
+#~ "Teachtaireacht: %4"
+
+#~ msgid "Could not open the file for reading (check read permissions)."
+#~ msgstr ""
+#~ "Ní féidir an comhad a oscailt chun é a léamh (féach an bhfuil cead agat)."
+
+#~ msgid ""
+#~ "parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "earráid parsála sa phríomhcháipéis ag líne %1, colún %2\n"
+#~ "Teachtaireacht: %3"
+
+#~ msgid "Untitled"
+#~ msgstr "Gan Teideal"
+
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr ""
+#~ "<p>Athraíodh an cháipéis <b>'%1'</b>.</p><p>An bhfuil fonn ort í a "
+#~ "shábháil?</p>"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ní féidir a oscailt\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Ní féidir %1 a oscailt\n"
+#~ "Fáth: %2"
+
+#~ msgid "a spreadsheet"
+#~ msgstr "scarbhileog"
+
+#~ msgid "a chart"
+#~ msgstr "cairt"
+
+#~ msgid "a drawing"
+#~ msgstr "líníocht"
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~| "it?</p>"
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr ""
+#~ "<p>Athraíodh an cháipéis <b>'%1'</b>.</p><p>An bhfuil fonn ort í a "
+#~ "shábháil?</p>"
+
+#, fuzzy
+#~| msgid "Create Document"
+#~ msgid "Close Document"
+#~ msgstr "Cruthaigh Cáipéis"
+
+#~ msgid "%1 %"
+#~ msgstr "%1 %"
+
+# libs/guiutils; boolean "is mutable?"
+#~ msgid "No"
+#~ msgstr "Níl"
+
+# libs/guiutils; boolean "is mutable?"
+#~ msgid "Yes"
+#~ msgstr "Tá"
+
+#~ msgid "Could not export file."
+#~ msgstr "Ní féidir an comhad a easpórtáil."
+
+#~ msgid "Missing Export Filter"
+#~ msgstr "Scagaire Easpórtála Ar Iarraidh"
+
+#~ msgid ""
+#~ "Could not import file of type\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ní féidir comhad den chineál seo a impórtáil:\n"
+#~ "%1"
+
+#~ msgid "Missing Import Filter"
+#~ msgstr "Scagaire Iompórtála Ar Iarraidh"
+
+#~ msgid "Choose Filter"
+#~ msgstr "Roghnaigh Scagaire"
+
+#~ msgid "Case Sensitive"
+#~ msgstr "Cásíogair"
+
+#~ msgid "Whole Words Only"
+#~ msgstr "Focail Iomlána Amháin"
+
+#, fuzzy
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "&Aimsigh:"
+
+#, fuzzy
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "Téacs"
+
+#, fuzzy
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "An Leathanach Roimhe Seo"
+
+#, fuzzy
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "Roghanna %1"
+
+#, fuzzy
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "&Ionadaigh:"
+
+#, fuzzy
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "Ionadaigh"
+
+#, fuzzy
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "Ionadaigh"
+
+#, fuzzy
+#~ msgctxt "Total number of matches"
+#~ msgid "1 match found"
+#~ msgid_plural "%1 matches found"
+#~ msgstr[0] "Níor aimsíodh teimpléad le haghaidh: %1"
+#~ msgstr[1] "Níor aimsíodh teimpléad le haghaidh: %1"
+#~ msgstr[2] "Níor aimsíodh teimpléad le haghaidh: %1"
+#~ msgstr[3] "Níor aimsíodh teimpléad le haghaidh: %1"
+#~ msgstr[4] "Níor aimsíodh teimpléad le haghaidh: %1"
+
+#, fuzzy
+#~ msgid "No matches found"
+#~ msgstr "Níor aimsíodh teimpléad le haghaidh: %1"
+
+#~ msgid "%1 unsaved document (%2)"
+#~ msgstr "%1 cáipéis gan sábháil (%2)"
+
+#~ msgid "Export as PDF..."
+#~ msgstr "Easpórtáil mar PDF..."
+
+#~ msgid "Reload"
+#~ msgstr "Athluchtaigh"
+
+#~ msgid "Versions..."
+#~ msgstr "Leaganacha..."
+
+#, fuzzy
+#~ msgid "Open ex&isting Document as Untitled Document..."
+#~ msgstr "Oscail Cáipéis Atá Ann..."
+
+#~ msgid "E&xport..."
+#~ msgstr "E&aspórtáil..."
+
+#, fuzzy
+#~| msgid "&Create Document"
+#~ msgid "En&crypt Document"
+#~ msgstr "&Cruthaigh Cáipéis"
+
+#~ msgid "&New View"
+#~ msgstr "Amharc &Nua"
+
+#~ msgid "Document Information"
+#~ msgstr "Eolas faoin Cháipéis"
+
+#~ msgid "Full Screen Mode"
+#~ msgstr "Mód Lánscáileáin"
+
+#~ msgid "Show Dockers"
+#~ msgstr "Taispeáin Dugairí"
+
+#, fuzzy
+#~| msgid "Show Dockers"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "Taispeáin Dugairí"
+
+#~ msgid "Dockers"
+#~ msgstr "Dugairí"
+
+#~ msgid "(write protected)"
+#~ msgstr "(cosaint ar scríobh)"
+
+#~ msgid "Save as %1"
+#~ msgstr "Sábháil mar %1"
+
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "%1 (cineál anaithnid comhaid)"
+
+#~ msgid "Confirm Save"
+#~ msgstr "Deimhnigh Sábháil"
+
+#, fuzzy
+#~| msgid "Untitled"
+#~ msgid "untitled"
+#~ msgstr "Gan Teideal"
+
+#~ msgid "Open Document"
+#~ msgstr "Oscail Cáipéis"
+
+#, fuzzy
+#~| msgid "Export as PDF..."
+#~ msgid "Export as PDF"
+#~ msgstr "Easpórtáil mar PDF..."
+
+#~ msgid "Document - %1"
+#~ msgstr "Cáipéis - %1"
+
+#~ msgid "Warning"
+#~ msgstr "Rabhadh"
+
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "Taispeáin an Barra Uirlisí %1"
+
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "Folaigh an Barra Uirlisí %1"
+
+#, fuzzy
+#~| msgid "Open &Existing Document"
+#~ msgid "Open Existing Document"
+#~ msgstr "Oscail cáipéis atá ann ch&eana"
+
+#~ msgid "Recent Documents"
+#~ msgstr "Cáipéisí is Déanaí"
+
+#~ msgid "Custom Document"
+#~ msgstr "Cáipéis Saincheaptha"
+
+#~ msgid "Stop"
+#~ msgstr "Stad"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Printing"
+#~ msgstr "Priontáilte Ar"
+
+#~ msgid "Close"
+#~ msgstr "Dún"
+
+#~ msgid "Stopped"
+#~ msgstr "Stoptha"
+
+#~ msgid "Open This Document"
+#~ msgstr "Oscail An Cháipéis Seo"
+
+#~ msgctxt "File modification date and time. %1 is date time"
+#~ msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Athraithe:</b></td><td>%1</td></tr>"
+
+#~ msgctxt "File access date and time. %1 is date time"
+#~ msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Rochtain:</b></td><td>%1</td></tr>"
+
+#~ msgid "Create Template"
+#~ msgstr "Cruthaigh Teimpléad"
+
+#, fuzzy
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "Ainm:"
+
+#~ msgid "Group:"
+#~ msgstr "Grúpa:"
+
+#~ msgid "&Add Group..."
+#~ msgstr "&Cuir Grúpa Leis..."
+
+#~ msgid "&Remove"
+#~ msgstr "&Bain"
+
+#~ msgid "Picture"
+#~ msgstr "Pictiúr"
+
+#, fuzzy
+#~ msgid "&Preview"
+#~ msgstr "Réamhamharc:"
+
+#, fuzzy
+#~ msgid "Custom:"
+#~ msgstr "Saincheaptha"
+
+#~ msgid "&Select..."
+#~ msgstr "&Roghnaigh..."
+
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr ""
+#~ "Tá teimpléad '%1' ann cheana; an bhfuil tú cinnte gur mhaith leat é a "
+#~ "fhorscríobh?"
+
+#~ msgid "Add Group"
+#~ msgstr "Cuir Grúpa Leis"
+
+#~ msgid "Enter group name:"
+#~ msgstr "Iontráil ainm grúpa:"
+
+#~ msgid "This name is already used."
+#~ msgstr "Tá an t-ainm seo ann cheana."
+
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "An bhfuil tú cinnte gur mhaith leat an grúpa sin a bhaint?"
+
+#~ msgid "Remove Group"
+#~ msgstr "Bain Grúpa"
+
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "An bhfuil tú cinnte gur mhaith leat an teimpléad sin a bhaint?"
+
+#~ msgid "Remove Template"
+#~ msgstr "Bain Teimpléad"
+
+#~ msgid "&Delete"
+#~ msgstr "&Scrios"
+
+#~ msgid "Could not load picture."
+#~ msgstr "Ní féidir pictiúr a luchtú."
+
+#~ msgid "No picture available."
+#~ msgstr "Níl aon phictiúr ar fáil."
+
+#~ msgid "Use This Template"
+#~ msgstr "Úsáid an Teimpléad Seo"
+
+#~ msgid "Version"
+#~ msgstr "Leagan"
+
+#~ msgid "Date & Time"
+#~ msgstr "Dáta agus Am"
+
+#~ msgid "Saved By"
+#~ msgstr "Sábháilte Ag"
+
+#~ msgid "Comment"
+#~ msgstr "Nóta"
+
+#~ msgid "&Add"
+#~ msgstr "C&uir Leis"
+
+#~ msgid "&Modify"
+#~ msgstr "&Athraigh"
+
+#~ msgid "&Open"
+#~ msgstr "&Oscail"
+
+#~ msgid "A new version could not be added"
+#~ msgstr "Níorbh fhéidir leagan nua a chur leis"
+
+#~ msgid "Date: %1"
+#~ msgstr "Dáta: %1"
+
+#, fuzzy
+#~ msgid "Active Author Profile"
+#~ msgstr "Uirlis ghníomhach: %1"
+
+#~ msgid "Unknown"
+#~ msgstr "Anaithnid"
+
+#~ msgid "Do you want to save the password?"
+#~ msgstr "An bhfuil fonn ort an focal faire a shábháil?"
+
+#~ msgid "No store backend"
+#~ msgstr "Gan inneall stórála"
+
+#~ msgid ""
+#~ "Parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Earráid parsála sa phríomhcháipéis ag líne %1, colún %2\n"
+#~ "Teachtaireacht: %3"
+
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "Scáileán"
+
+#~ msgid "Clear"
+#~ msgstr "Glan"
+
+#~ msgid "Subtract"
+#~ msgstr "Dealaigh"
+
+#~ msgid "Multiply"
+#~ msgstr "Iolraigh"
+
+#~ msgid "Alpha mask"
+#~ msgstr "Masc alfa"
+
+#~ msgid "Alpha"
+#~ msgstr "Alfa"
+
+#~ msgid "L*a*b* (16-bit integer/channel, unmanaged)"
+#~ msgstr "L*a*b (slánuimhir 16-giotán/cainéal, neamhbhainistithe)"
+
+#~ msgid "Lightness"
+#~ msgstr "Gile"
+
+#~ msgid "a*"
+#~ msgstr "a*"
+
+#~ msgid "b*"
+#~ msgstr "b*"
+
+#~ msgid "RGB (16-bit integer/channel, unmanaged)"
+#~ msgstr "RGB (slánuimhir 16-giotán/cainéal, neamhbhainistithe)"
+
+#~ msgid "RGB (8-bit integer/channel, unmanaged)"
+#~ msgstr "RGB (slánuimhir 8-giotán/cainéal, neamhbhainistithe)"
+
+#~ msgid "Blue"
+#~ msgstr "Gorm"
+
+#~ msgid "Green"
+#~ msgstr "Uaine"
+
+#~ msgid "Red"
+#~ msgstr "Dearg"
+
+#~ msgid "Dissolve"
+#~ msgstr "Díscaoil"
+
+#~ msgid "Erase"
+#~ msgstr "Bánaigh"
+
+#~ msgid "Normal"
+#~ msgstr "Gnách"
+
+#~ msgid "Overlay"
+#~ msgstr "Forleag"
+
+#, fuzzy
+#~ msgid "Grain Merge"
+#~ msgstr "Postchumasc"
+
+#, fuzzy
+#~ msgid "Hard Mix"
+#~ msgstr "Éadrom"
+
+#, fuzzy
+#~ msgid "Geometric Mean"
+#~ msgstr "Céimseata"
+
+#, fuzzy
+#~ msgid "Parallel"
+#~ msgstr "Athróg"
+
+#, fuzzy
+#~ msgid "Color Dodge"
+#~ msgstr "Ainm an datha:"
+
+#, fuzzy
+#~ msgid "Linear Dodge"
+#~ msgstr "Ailínigh Ar Dheis"
+
+#~ msgid "Lighten"
+#~ msgstr "Sorchaigh"
+
+#, fuzzy
+#~ msgid "Hard Light"
+#~ msgstr "Éadrom"
+
+#, fuzzy
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "Díreach"
+
+#, fuzzy
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "Díreach"
+
+#, fuzzy
+#~ msgid "Gamma Light"
+#~ msgstr "Éadrom"
+
+#, fuzzy
+#~ msgid "Vivid Light"
+#~ msgstr "Éadrom"
+
+#, fuzzy
+#~ msgid "Pin Light"
+#~ msgstr "Éadrom"
+
+#, fuzzy
+#~ msgid "Color Burn"
+#~ msgstr "Dath"
+
+#, fuzzy
+#~ msgid "Linear Burn"
+#~ msgstr "Briseadh Líne"
+
+#~ msgid "Darken"
+#~ msgstr "Dorchaigh"
+
+#, fuzzy
+#~ msgid "Addition"
+#~ msgstr "Cuir Codán Leis"
+
+#, fuzzy
+#~ msgid "Inversed-Subtract"
+#~ msgstr "Dealaigh"
+
+#~ msgid "Divide"
+#~ msgstr "Roinn"
+
+#, fuzzy
+#~ msgid "Difference"
+#~ msgstr "Tagairt"
+
+#, fuzzy
+#~ msgid "Exclusion"
+#~ msgstr "Eisceachtaí"
+
+#, fuzzy
+#~ msgid "Copy Red"
+#~ msgstr "Cóipeáil Leathanach"
+
+#, fuzzy
+#~ msgid "Copy Green"
+#~ msgstr "Uaine"
+
+#, fuzzy
+#~ msgid "Copy Blue"
+#~ msgstr "Cóipeáil Leathanach"
+
+#~ msgid "Color"
+#~ msgstr "Dath"
+
+#~ msgid "Hue"
+#~ msgstr "Lí"
+
+#~ msgid "Saturation"
+#~ msgstr "Sáithiú"
+
+#, fuzzy
+#~ msgid "Increase Saturation"
+#~ msgstr "Sáithiú"
+
+#, fuzzy
+#~ msgid "Decrease Saturation"
+#~ msgstr "Sáithiú"
+
+#~ msgid "Luminosity"
+#~ msgstr "Lonrachas"
+
+#, fuzzy
+#~ msgid "Increase Luminosity"
+#~ msgstr "Cló níos mó"
+
+#, fuzzy
+#~ msgid "Decrease Luminosity"
+#~ msgstr "Cló níos lú"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgid "Darker Color"
+#~ msgstr "Dath an Chúlra"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgid "Lighter Color"
+#~ msgstr "Dath Líne"
+
+#, fuzzy
+#~ msgid "Color HSI"
+#~ msgstr "Dath"
+
+#, fuzzy
+#~ msgid "Hue HSI"
+#~ msgstr "Lí"
+
+#, fuzzy
+#~ msgid "Saturation HSI"
+#~ msgstr "Sáithiú"
+
+#, fuzzy
+#~ msgid "Increase Saturation HSI"
+#~ msgstr "Sáithiú"
+
+#, fuzzy
+#~ msgid "Decrease Saturation HSI"
+#~ msgstr "Sáithiú"
+
+#, fuzzy
+#~ msgid "Intensity"
+#~ msgstr "Idirlíon"
+
+#, fuzzy
+#~ msgid "Increase Intensity"
+#~ msgstr "Méadaigh Eangú"
+
+#, fuzzy
+#~ msgid "Decrease Intensity"
+#~ msgstr "Laghdaigh Eangú"
+
+#, fuzzy
+#~ msgid "Color HSL"
+#~ msgstr "Dath"
+
+#, fuzzy
+#~ msgid "Hue HSL"
+#~ msgstr "Lí"
+
+#, fuzzy
+#~ msgid "Saturation HSL"
+#~ msgstr "Sáithiú"
+
+#, fuzzy
+#~ msgid "Increase Saturation HSL"
+#~ msgstr "Sáithiú"
+
+#, fuzzy
+#~ msgid "Decrease Saturation HSL"
+#~ msgstr "Sáithiú"
+
+#, fuzzy
+#~ msgid "Increase Lightness"
+#~ msgstr "Méadaigh Eangú"
+
+#, fuzzy
+#~ msgid "Decrease Lightness"
+#~ msgstr "Laghdaigh Eangú"
+
+#, fuzzy
+#~ msgid "Color HSV"
+#~ msgstr "Dath"
+
+#, fuzzy
+#~ msgid "Hue HSV"
+#~ msgstr "Lí"
+
+#, fuzzy
+#~ msgid "Saturation HSV"
+#~ msgstr "Sáithiú"
+
+#, fuzzy
+#~ msgid "Increase Saturation HSV"
+#~ msgstr "Sáithiú"
+
+#, fuzzy
+#~ msgid "Decrease Saturation HSV"
+#~ msgstr "Sáithiú"
+
+#, fuzzy
+#~ msgid "Increase Value"
+#~ msgstr "Méadaigh Eangú"
+
+#, fuzzy
+#~ msgid "Decrease Value"
+#~ msgstr "Laghdaigh Eangú"
+
+#~ msgid "Generic RGB Histogram"
+#~ msgstr "Histeagram Ginearálta RGB"
+
+# ok as is; RGB is international
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "G"
+#~ msgstr "G"
+
+#~ msgid "L*a*b* Histogram"
+#~ msgstr "Histeagram L*a*b*"
+
+#~ msgid "L*"
+#~ msgstr "L*"
+
+#~ msgid "Generic L*a*b* Histogram"
+#~ msgstr "Histeagram Ginearálta L*a*b*"
+
+#~ msgid "XYZ"
+#~ msgstr "XYZ"
+
+#~ msgid "Grayscale"
+#~ msgstr "Liathscála"
+
+#~ msgid "Grayscale (without transparency)"
+#~ msgstr "Liathscála (gan trédhearcacht)"
+
+#~ msgid "YCbCr"
+#~ msgstr "YCbCr"
+
+#~ msgid "8 Bits"
+#~ msgstr "8 nGiotán"
+
+#~ msgid "16 Bits"
+#~ msgstr "16 Giotán"
+
+#, fuzzy
+#~ msgid "64 Bits Float"
+#~ msgstr "16 Giotán"
+
+#~ msgid "Arithmetic"
+#~ msgstr "Uimhríocht"
+
+#, fuzzy
+#~ msgid "Negative"
+#~ msgstr "Coibhneasta"
+
+#~ msgid "HSV"
+#~ msgstr "HSV"
+
+#~ msgid "Mix"
+#~ msgstr "Measc"
+
+#, fuzzy
+#~ msgid "Inverse Subtract"
+#~ msgstr "Dealaigh"
+
+#~ msgid "Burn"
+#~ msgstr "Dóigh"
+
+#, fuzzy
+#~ msgid "Additive Subtractive"
+#~ msgstr "Dealaigh"
+
+#, fuzzy
+#~ msgid "Alpha Darken"
+#~ msgstr "Masc alfa"
+
+#~ msgid "Bumpmap"
+#~ msgstr "Bumpmap"
+
+#~ msgid "SVG Gradient"
+#~ msgstr "Grádán SVG"
+
+#~ msgid "Reference"
+#~ msgstr "Tagairt"
+
+#~ msgid "Rdf"
+#~ msgstr "Rdf"
+
+#~ msgid "new"
+#~ msgstr "nua"
+
+#~ msgid "copy"
+#~ msgstr "cóip"
+
+#~ msgid "delete"
+#~ msgstr "scrios"
+
+#~ msgid "Namespaces"
+#~ msgstr "Ainmspásanna"
+
+#~ msgid "Prefix"
+#~ msgstr "Réimír"
+
+#~ msgid "Namespace"
+#~ msgstr "Ainmspás"
+
+#~ msgid "Stylesheets"
+#~ msgstr "Stílbhileoga"
+
+#~ msgid "Apply Stylesheet"
+#~ msgstr "Cuir Stílbhileog i bhFeidhm"
+
+#~ msgid "System"
+#~ msgstr "Córas"
+
+#~ msgid "User"
+#~ msgstr "Úsáideoir"
+
+#~ msgid "Edit %1"
+#~ msgstr "Cuir %1 in Eagar"
+
+#, fuzzy
+#~| msgid "Stylesheets"
+#~ msgid "Stylesheet Definition"
+#~ msgstr "Stílbhileoga"
+
+#~ msgid "Description"
+#~ msgstr "Cur Síos"
+
+#, fuzzy
+#~| msgid "Stylesheets"
+#~ msgid "Stylesheet Name"
+#~ msgstr "Stílbhileoga"
+
+#~ msgid "Empty"
+#~ msgstr "Folamh"
+
+#~ msgid "URI"
+#~ msgstr "URI"
+
+#~ msgid "Blank"
+#~ msgstr "Bán"
+
+#~ msgid "Valid"
+#~ msgstr "Bailí"
+
+#~ msgid "Subject"
+#~ msgstr "Ábhar"
+
+#~ msgid "Invalid integer number"
+#~ msgstr "Slánuimhir neamhbhailí"
+
+#, fuzzy
+#~ msgid "Invalid identifier"
+#~ msgstr "Aitheantóir:"
+
+#, fuzzy
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "Neamhní"
+
+#, fuzzy
+#~ msgid "Small Bullet"
+#~ msgstr "Urchar Ciorclach"
+
+#~ msgid "Circle Bullet"
+#~ msgstr "Urchar Ciorclach"
+
+#, fuzzy
+#~ msgid "Square Bullet"
+#~ msgstr "Urchar Ciorclach"
+
+#, fuzzy
+#~ msgid "Rhombus Bullet"
+#~ msgstr "Urchar Saincheaptha"
+
+#, fuzzy
+#~ msgid "Check Mark Bullet"
+#~ msgstr "Urchar Ciorclach"
+
+#, fuzzy
+#~ msgid "Rightwards Arrow Bullet"
+#~ msgstr "Deas go clé"
+
+#, fuzzy
+#~ msgid "Arabic"
+#~ msgstr "Limistéar"
+
+#, fuzzy
+#~ msgid "Lower Roman"
+#~ msgstr "Cás Íochtair"
+
+#, fuzzy
+#~ msgid "Upper Roman"
+#~ msgstr "Cás Uachtair"
+
+#, fuzzy
+#~ msgid "Large Bullet"
+#~ msgstr "Urchar Ciorclach"
+
+#~ msgid "Bengali"
+#~ msgstr "Beangáilis"
+
+#~ msgid "Gujarati"
+#~ msgstr "Gúisearáitis"
+
+#~ msgid "Kannada"
+#~ msgstr "Cannadais"
+
+#~ msgid "Malayalam"
+#~ msgstr "Mailéalaimis"
+
+#~ msgid "Oriya"
+#~ msgstr "Oirísis"
+
+#, fuzzy
+#~ msgid "Tamil"
+#~ msgstr "Clann:"
+
+#~ msgid "Telugu"
+#~ msgstr "Teileagúis"
+
+#, fuzzy
+#~ msgid "Tibetan"
+#~ msgstr "Ceangal"
+
+#, fuzzy
+#~ msgid "Thai"
+#~ msgstr "Caicí"
+
+#~ msgid "Abjad"
+#~ msgstr "Abjad"
+
+#~ msgid "AbjadMinor"
+#~ msgstr "MionAbjad"
+
+#~ msgid "ArabicAlphabet"
+#~ msgstr "Aibítir Arabach"
+
+#~ msgid "Opacity"
+#~ msgstr "Teimhneacht"
+
+#~ msgid "Recent:"
+#~ msgstr "Le Déanaí:"
+
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "Cuir Dathanna Leis / Bain Dathanna..."
+
+#~ msgid "Import Data"
+#~ msgstr "Iompórtáil Sonraí"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Recommended ( %1 )"
+#~ msgstr "Molta ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Locale ( %1 )"
+#~ msgstr "Logchaighdeán ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Other ( %1 )"
+#~ msgstr "Eile ( %1 )"
+
+#~ msgid "Generic"
+#~ msgstr "Ginearálta"
+
+#~ msgid "Currency"
+#~ msgstr "Airgeadra"
+
+#~ msgid "None"
+#~ msgstr "Neamhní"
+
+#~ msgid "Cannot find encoding: %1"
+#~ msgstr "Ní féidir an t-ionchódú a aimsiú: %1"
+
+#~ msgid "Data"
+#~ msgstr "Sonraí"
+
+#~ msgid "E&ncoding:"
+#~ msgstr "Io&nchódú:"
+
+#~ msgid "Format"
+#~ msgstr "Formáid"
+
+#~ msgid "Delimiter"
+#~ msgstr "Teormharcóir"
+
+#~ msgid "Semicolon"
+#~ msgstr "Leathstad"
+
+#~ msgid "Other"
+#~ msgstr "Eile"
+
+#~ msgid "Tabulator"
+#~ msgstr "Táblóir"
+
+#~ msgid "Space"
+#~ msgstr "Spás"
+
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "Decimal symbol:"
+#~ msgstr "Siombail dheachúlach:"
+
+#~ msgid "Thousands separator:"
+#~ msgstr "Deighilteoir mílte:"
+
+#~ msgid "&Format:"
+#~ msgstr "&Formáid:"
+
+#~ msgid "Ranges"
+#~ msgstr "Raonta"
+
+#~ msgid "Update"
+#~ msgstr "Nuashonraigh"
+
+#~ msgid "Import columns:"
+#~ msgstr "Iompórtáil colúin:"
+
+#~ msgid "Import lines:"
+#~ msgstr "Iompórtáil línte:"
+
+#~ msgid "to"
+#~ msgstr "go"
+
+#, fuzzy
+#~| msgid "Show Dockers"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Float Docker"
+#~ msgstr "Taispeáin Dugairí"
+
+#, fuzzy
+#~| msgid "Create Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "Cruthaigh Cáipéis"
+
+#, fuzzy
+#~| msgid "Create Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "Cruthaigh Cáipéis"
+
+#, fuzzy
+#~| msgid "Show Dockers"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Lock Docker"
+#~ msgstr "Taispeáin Dugairí"
+
+#~ msgid "&Encrypt"
+#~ msgstr "&Criptigh"
+
+#~ msgid "Keywords:"
+#~ msgstr "Lorgfhocail:"
+
+#~ msgid "Subject:"
+#~ msgstr "Ábhar:"
+
+#~ msgid "Last printed:"
+#~ msgstr "Priontáilte:"
+
+#~ msgid "Total editing time:"
+#~ msgstr "Am iomlán eagair:"
+
+#~ msgid "Encryption:"
+#~ msgstr "Criptiú:"
+
+#, fuzzy
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "Teideal:"
+
+#~ msgid "Revision number:"
+#~ msgstr "Leasú:"
+
+#~ msgid "Modified:"
+#~ msgstr "Athraithe:"
+
+#~ msgid "Comments:"
+#~ msgstr "Nótaí:"
+
+#~ msgid "Created:"
+#~ msgstr "Cruthaithe:"
+
+#~ msgid "Path:"
+#~ msgstr "Conair:"
+
+#~ msgid "&Reset"
+#~ msgstr "Athshoc&raigh"
+
+#, fuzzy
+#~| msgid "Language"
+#~ msgid "Language:"
+#~ msgstr "Teanga"
+
+#~ msgid "General"
+#~ msgstr "Ginearálta"
+
+#, fuzzy
+#~ msgid "Last saved by"
+#~ msgstr "An Leathanach Deireanach"
+
+#, fuzzy
+#~ msgid "Use ';' (Example: Office;KDE;Calligra)"
+#~ msgstr "Úsáid ';' (Sampla: Office;KDE;KOffice)"
+
+#~ msgid "This document will be decrypted"
+#~ msgstr "Beidh an cháipéis seo díchriptithe"
+
+#~ msgid "Do not decrypt"
+#~ msgstr "Ná díchriptigh"
+
+#~ msgid "This document is encrypted"
+#~ msgstr "Tá an cháipéis seo criptithe"
+
+#~ msgid "D&ecrypt"
+#~ msgstr "&Díchriptigh"
+
+#~ msgid "This document will be encrypted."
+#~ msgstr "Beidh an cháipéis seo criptithe"
+
+#~ msgid "Do not encrypt"
+#~ msgstr "Ná criptigh"
+
+#~ msgid "This document is not encrypted"
+#~ msgstr "Níl an cháipéis seo criptithe"
+
+#~ msgid "This document does not support encryption"
+#~ msgstr "Ní thacaíonn an cháipéis seo le criptiú"
+
+#~ msgid "Decrypt"
+#~ msgstr "Díchriptigh"
+
+#~ msgid "Save Document"
+#~ msgstr "Sábháil an Cháipéis"
+
+#~ msgid "Change Filetype"
+#~ msgstr "Athraigh Cineál an Chomhaid"
+
+#~ msgid "Change"
+#~ msgstr "Athraigh"
+
+#~ msgid "Remove"
+#~ msgstr "Bain"
+
+#~ msgid "Open palette"
+#~ msgstr "Oscail pailéad"
+
+#~ msgid "Save palette"
+#~ msgstr "Sábháil pailéad"
+
+#~ msgid "Color name:"
+#~ msgstr "Ainm an datha:"
+
+#~ msgid "Palette"
+#~ msgstr "Pailéad"
+
+#~ msgid "Add/Remove Colors"
+#~ msgstr "Cuir Dathanna Leis/Bain Dathanna"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Testing: OpenFile"
+#~ msgstr "Oscail pailéad"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Testing: OpenDirectory"
+#~ msgstr "Ainm Comhadlainne"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFile"
+#~ msgstr "Scagaire Iompórtála Ar Iarraidh"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "Scagaire Iompórtála Ar Iarraidh"
+
+#, fuzzy
+#~ msgid "Testing: Import Directory"
+#~ msgstr "Iompórtáil Cáipéis"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Testing: SaveFile"
+#~ msgstr "Sábháil pailéad"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Open File"
+#~ msgstr "Oscail pailéad"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Open Files"
+#~ msgstr "Oscail pailéad"
+
+#, fuzzy
+#~| msgid "After:"
+#~ msgid "Filter:"
+#~ msgstr "Tar Éis:"
+
+#, fuzzy
+#~| msgid "Label"
+#~ msgid "TextLabel"
+#~ msgstr "Lipéad"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Named"
+#~ msgstr "Ainm"
+
+#, fuzzy
+#~| msgid "Set default format"
+#~ msgid "Set default filter"
+#~ msgstr "Roghnaigh formáid réamhshocraithe"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Save File"
+#~ msgstr "Sábháil pailéad"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Import Files"
+#~ msgstr "Iompórtáil línte:"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Import File"
+#~ msgstr "Iompórtáil línte:"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Open Directory"
+#~ msgstr "Ainm Comhadlainne"
+
+#, fuzzy
+#~ msgid "Import Directory"
+#~ msgstr "Iompórtáil Cáipéis"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "Neamhní"
+
+#, fuzzy
+#~| msgid "SVG Gradient"
+#~ msgid "Gradient"
+#~ msgstr "Grádán SVG"
+
+#, fuzzy
+#~ msgid "Change the filling gradient"
+#~ msgstr "Athraigh an máistirleathanach"
+
+#, fuzzy
+#~ msgid "Icon and Text"
+#~ msgstr "Téacs"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgid "Bottom side"
+#~ msgstr "Bun"
+
+#~ msgid "Page Layout"
+#~ msgstr "Leagan Amach Leathanaigh"
+
+#~ msgid "Apply to document"
+#~ msgstr "Cuir i bhfeidhm ar an gcáipéis"
+
+#~ msgid "Left Edge:"
+#~ msgstr "Ciumhais Ar Chlé:"
+
+#~ msgid "Right Edge:"
+#~ msgstr "Ciumhais Ar Dheis:"
+
+#~ msgid "Binding Edge:"
+#~ msgstr "Ciumhais Cheangail:"
+
+#~ msgid "Page Edge:"
+#~ msgstr "Ciumhais an Leathanaigh:"
+
+#~ msgid "Facing Pages:"
+#~ msgstr "Leathanaigh ar aghaigh a chéile:"
+
+#~ msgid "Facing pages"
+#~ msgstr "Leathanaigh ar aghaigh a chéile"
+
+#~ msgid "Page Layout:"
+#~ msgstr "Leagan Amach an Leathanaigh:"
+
+#~ msgid "Unit:"
+#~ msgstr "Aonad:"
+
+#, fuzzy
+#~| msgid "Font style"
+#~ msgid "Follow style:"
+#~ msgstr "Stíl an chló"
+
+#~ msgid "Size:"
+#~ msgstr "Méid:"
+
+#~ msgid "Width:"
+#~ msgstr "Leithead:"
+
+#~ msgid "Height:"
+#~ msgstr "Airde:"
+
+#~ msgid "Orientation:"
+#~ msgstr "Treoshuíomh:"
+
+#~ msgid "Facing pages:"
+#~ msgstr "Leathanaigh ar aghaigh a chéile:"
+
+#~ msgid "Single sided"
+#~ msgstr "Taobh amháin"
+
+#~ msgid "Text direction:"
+#~ msgstr "Treo an téacs:"
+
+#~ msgid "Automatic"
+#~ msgstr "Uathoibríoch"
+
+#~ msgid "Left to right"
+#~ msgstr "Clé go deas"
+
+#~ msgid "Right to left"
+#~ msgstr "Deas go clé"
+
+#~ msgid "Margins"
+#~ msgstr "Imill"
+
+#~ msgid "Top:"
+#~ msgstr "Barr:"
+
+#~ msgid "Binding edge:"
+#~ msgstr "Ciumhais cheangail:"
+
+#~ msgid "Page edge:"
+#~ msgstr "Ciumhais an leathanaigh:"
+
+#~ msgid "Bottom:"
+#~ msgstr "Bun:"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "Iompórtáil Cáipéis"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Delete resource"
+#~ msgstr "Scrios"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "Íosluchtaigh"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "Scrios"
+
+#, fuzzy
+#~| msgid "Choose Filter"
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "Roghnaigh Scagaire"
+
+#, fuzzy
+#~| msgid "New Layer"
+#~ msgid "New tag"
+#~ msgstr "Sraith Nua"
+
+#, fuzzy
+#~| msgid "Remove point"
+#~ msgid "Remove from this tag"
+#~ msgstr "Bain pointe"
+
+#, fuzzy
+#~| msgid "Remove Comment"
+#~ msgid "Remove from other tag"
+#~ msgstr "Bain Nóta"
+
+#~ msgid "Distance:"
+#~ msgstr "Fad:"
+
+#, fuzzy
+#~ msgid "Square cap"
+#~ msgstr "Urchar Cearnach"
+
+#~ msgid "Miter join"
+#~ msgstr "Mítéaralt"
+
+#, fuzzy
+#~ msgid "Bevel join"
+#~ msgstr "Bain pointe"
+
+#, fuzzy
+#~ msgid "Miter limit"
+#~ msgstr "Liosta teormharcáilte"
+
+#, fuzzy
+#~| msgid "Tab"
+#~ msgid "Tag"
+#~ msgstr "Táb"
+
+#, fuzzy
+#~ msgid "Rename tag"
+#~ msgstr "Leathanach Baile"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Delete this tag"
+#~ msgstr "Scrios Leathanach"
+
+#, fuzzy
+#~| msgid "delete"
+#~ msgid "Undelete"
+#~ msgstr "scrios"
+
+#~ msgid "Tool Options"
+#~ msgstr "Roghanna Uirlisí"
+
+#, fuzzy
+#~ msgid "deselect item"
+#~ msgstr "Díroghnaigh Mír"
+
+#, fuzzy
+#~ msgid "select item"
+#~ msgstr "Díroghnaigh Mír"
+
+#~ msgid "Zoom to Selection"
+#~ msgstr "Súmáil go dtí an Roghnúchán"
+
+#, fuzzy
+#~| msgid "%1%"
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1%"
+
+#, fuzzy
+#~| msgid "Key Press"
+#~ msgid "All Presets"
+#~ msgstr "Eochairbhrú"
+
+#, fuzzy
+#~| msgid "Automatic"
+#~ msgctxt "Static Image"
+#~ msgid "Static"
+#~ msgstr "Uathoibríoch"
+
+#~ msgid "Value (brightness)"
+#~ msgstr "Luach (gile)"
+
+#~ msgid "Cyan"
+#~ msgstr "Cian"
+
+#~ msgid "Magenta"
+#~ msgstr "Maigeanta"
+
+#~ msgid "Yellow"
+#~ msgstr "Buí"
+
+#~ msgid "Black"
+#~ msgstr "Dubh"
+
+#~ msgid "Green to magenta*"
+#~ msgstr "Uaine go maigeanta*"
+
+#~ msgid "Blue to yellow"
+#~ msgstr "Gorm go buí"
+
+#~ msgid "Opacity:"
+#~ msgstr "Teimhneacht:"
+
+#~ msgid "&Themes"
+#~ msgstr "&Téamaí"
+
+#, fuzzy
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "Réamhshocrú"
+
+#, fuzzy
+#~ msgid "Configuration..."
+#~ msgstr "Cumraigh..."
+
+#, fuzzy
+#~ msgid "&Tools"
+#~ msgstr "Uirlisí"
+
+#, fuzzy
+#~ msgid "Database file \"%1\" does not exist."
+#~ msgstr "Níl comhad %1 ann."
+
+#, fuzzy
+#~ msgid "Table \"%1\" does not exist in the database."
+#~ msgstr "Níl comhad %1 ann."
+
+#~ msgid "Multiple transactions"
+#~ msgstr "Idirbhearta iomadúla"
+
+#~ msgid "Nested transactions"
+#~ msgstr "Idirbhearta neadaithe"
+
+#~ msgid "Ignored"
+#~ msgstr "Neamhaird tugtha air"
+
+#, fuzzy
+#~ msgid "Could not compact database \"%1\"."
+#~ msgstr "Ní féidir pacáiste \"%1\" a léamh."
+
+#, fuzzy
+#~ msgid "Do you want to open file \"%1\" as read-only?"
+#~ msgstr "An bhfuil fonn ort an focal faire a shábháil?"
+
+#, fuzzy
+#~ msgid "Could not close busy database."
+#~ msgstr "Ní féidir pictiúr a luchtú."
+
+#, fuzzy
+#~ msgid "Could not remove file \"%1\"."
+#~ msgstr "Ní féidir an comhad a easpórtáil."
+
+#~ msgid "Compacting database"
+#~ msgstr "Bunachar sonraí á chomhdhlúthú"
+
+#~ msgid "Compacting database \"%1\"..."
+#~ msgstr "Bunachar sonraí \"%1\" á chomhdhlúthú..."
+
+#, fuzzy
+#~ msgid "Table \"%1\" does not exist"
+#~ msgstr "Níl comhad %1 ann."
+
+#, fuzzy
+#~ msgid "Formatting"
+#~ msgstr "Formáid"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Testing: OpenDirectories"
+#~ msgstr "Ainm Comhadlainne"
+
+#, fuzzy
+#~ msgid "Testing: ImportDirectories"
+#~ msgstr "Iompórtáil Cáipéis"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Testing: SaveFiles"
+#~ msgstr "Sábháil pailéad"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Open Directories"
+#~ msgstr "Ainm Comhadlainne"
+
+#, fuzzy
+#~ msgid "Import Directories"
+#~ msgstr "Iompórtáil Cáipéis"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Save Files"
+#~ msgstr "Sábháil pailéad"
+
+#~ msgid "Create Path"
+#~ msgstr "Cruthaigh Conair"
+
+#~ msgid "Red Green Blue"
+#~ msgstr "Dearg Uaine Gorm"
+
+#~ msgid "L a* b*"
+#~ msgstr "L a* b*"
+
+#~ msgid "Error!"
+#~ msgstr "Earráid!"
+
+#~ msgid "Contacts"
+#~ msgstr "Teagmhálacha"
+
+#~ msgid "Events"
+#~ msgstr "Imeachtaí"
+
+#~ msgid "Locations"
+#~ msgstr "Suímh"
+
+#~ msgid "Area"
+#~ msgstr "Limistéar"
+
+#~ msgid "Region"
+#~ msgstr "Réigiún"
+
+#, fuzzy
+#~ msgid "&Summary:"
+#~ msgstr "Achoimre"
+
+#, fuzzy
+#~ msgid "&Location:"
+#~ msgstr "Suíomh"
+
+#, fuzzy
+#~ msgid "&Start:"
+#~ msgstr "Tosach"
+
+#~ msgid "&End:"
+#~ msgstr "D&eireadh:"
+
+#~ msgid "Time and Date"
+#~ msgstr "Am agus Dáta"
+
+#~ msgid "Timezone"
+#~ msgstr "Crios ama"
+
+#, fuzzy
+#~ msgid "&Name:"
+#~ msgstr "Ainm:"
+
+#, fuzzy
+#~ msgid "&Nick:"
+#~ msgstr "Leasainm"
+
+#, fuzzy
+#~ msgid "&Phone Number:"
+#~ msgstr "Uimhir Theileafóin"
+
+#, fuzzy
+#~ msgid "&Home Page:"
+#~ msgstr "Leathanach Baile"
+
+#~ msgid "Contact Information"
+#~ msgstr "Eolas Teagmhála"
+
+#~ msgid "Import contact"
+#~ msgstr "Iompórtáil teagmháil"
+
+#, fuzzy
+#~ msgid "&Name"
+#~ msgstr "Ainm"
+
+#~ msgid "The Earth"
+#~ msgstr "An Domhan"
+
+#~ msgid "The Marble widget displays a virtual globe."
+#~ msgstr "Taispeánann an ghiuirléid Marble cruinneog fhíorúil."
+
+#~ msgid "Navigation Control"
+#~ msgstr "Rialtán Loingseoireachta"
+
+#~ msgid "Use this control to navigate."
+#~ msgstr "Úsáid an rialtán seo chun loingseoireacht a dhéanamh."
+
+#~ msgid "Latitude"
+#~ msgstr "Domhanleithead"
+
+#~ msgid "Longitude"
+#~ msgstr "Domhanfhad"
+
+#~ msgid "People"
+#~ msgstr "Daoine"
+
+#~ msgid ""
+#~ "A document with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "Tá comhad ann cheana agus an t-ainm seo air.\n"
+#~ "An bhfuil fonn ort scríobh air?"
+
+#~ msgid "%1 (Uncompressed XML Files)"
+#~ msgstr "%1 (Comhaid XML Gan Comhbhrú)"
+
+#, fuzzy
+#~| msgid "%1 (Uncompressed XML Files)"
+#~ msgid "%1 (Flat XML File)"
+#~ msgstr "%1 (Comhaid XML Gan Comhbhrú)"
+
+#, fuzzy
+#~| msgid "&Encrypt"
+#~ msgid "%1 (Encrypted)"
+#~ msgstr "&Criptigh"
+
+#~ msgid "Save Document As"
+#~ msgstr "Sábháil an Cháipéis Mar"
+
+#~ msgid "Export Document As"
+#~ msgstr "Easpórtáil Cáipéis Mar"
+
+#, fuzzy
+#~ msgid "Export to PDF"
+#~ msgstr "Easpórtáil mar PDF..."
+
+#, fuzzy
+#~ msgid "Slide Background"
+#~ msgstr "Dath an Chúlra"
+
+#, fuzzy
+#~ msgid "Document background"
+#~ msgstr "Dath an Chúlra"
+
+#~ msgid "&OK"
+#~ msgstr "&OK"
+
+#~ msgid "&Cancel"
+#~ msgstr "&Cealaigh"
+
+#~ msgid "Error Encountered"
+#~ msgstr "Tharla Earráid"
+
+#~ msgid "First Page"
+#~ msgstr "An Chéad Leathanach"
+
+#~ msgid "&Edit"
+#~ msgstr "&Eagar"
+
+#~ msgid "&Close"
+#~ msgstr "&Dún"
+
+#~ msgid "Snapping"
+#~ msgstr "Léim"
+
+#~ msgid "Show Shadow"
+#~ msgstr "Taispeáin Scáth"
+
+#, fuzzy
+#~ msgid "Angle:"
+#~ msgstr "Singil"
+
+#, fuzzy
+#~ msgid "Offset:"
+#~ msgstr "Greamaigh Leathanach"
+
+#~ msgid "Color:"
+#~ msgstr "Dath:"
+
+#, fuzzy
+#~ msgid "Style:"
+#~ msgstr "&Stíl:"
+
+#~ msgid "Join:"
+#~ msgstr "Ceangail:"
+
+#~ msgid "Insert Table"
+#~ msgstr "Ionsáigh Tábla"
+
+#~ msgid "min"
+#~ msgstr "nóiméad"
+
+#~ msgid "DetailsPaneBase"
+#~ msgstr "DetailsPaneBase"
+
+#~ msgid "Embedding Object"
+#~ msgstr "Réad Leabaithe"
+
+#~ msgid "I&mport..."
+#~ msgstr "Io&mpórtáil..."
+
+#~ msgid "&Default"
+#~ msgstr "&Réamhshocrú"
+
+#~ msgid "&Delete Personal Data"
+#~ msgstr "&Scrios Sonraí Pearsanta"
+
+#~ msgid "&Load From Address Book"
+#~ msgstr "&Luchtaigh Ón Leabhar Seoltaí"
+
+#~ msgid "Shadow Angle:"
+#~ msgstr "Uillinn Scátha:"
+
+#~ msgid "Shadow Color:"
+#~ msgstr "Dath an Scátha:"
+
+#~ msgid "Ellipse Shape"
+#~ msgstr "Giuirléid Éilips"
+
+#~ msgid "Set Horizontal Alignment"
+#~ msgstr "Socraigh Ailíniú Cothrománach"
+
+#~ msgid "Line Break"
+#~ msgstr "Briseadh Líne"
+
+#~ msgid "Hide Grid"
+#~ msgstr "Folaigh Greille"
+
+#~ msgid "&Close All Views"
+#~ msgstr "&Dún Gach Amharc"
+
+#~ msgid "&Split View"
+#~ msgstr "Amharc &Roinnte"
+
+#~ msgid "&Remove View"
+#~ msgstr "&Bain Amharc"
+
+#~ msgid "&Horizontal"
+#~ msgstr "&Cothrománach"
+
+#~ msgid "&Vertical"
+#~ msgstr "&Ingearach"
+
+#~ msgid "End"
+#~ msgstr "Deireadh"
+
+#~ msgid "Printing page %1"
+#~ msgstr "Leathanach %1 á phriontáil"
+
+#~ msgid "Form"
+#~ msgstr "Foirm"
+
+#~ msgid "Import"
+#~ msgstr "Iompórtáil"
+
+#~ msgid "Share"
+#~ msgstr "Roinn"
+
+#~ msgid "Light"
+#~ msgstr "Éadrom"
+
+#~ msgid "Hide Dockers"
+#~ msgstr "Folaigh Dugairí"
+
+#~ msgid "KOffice"
+#~ msgstr "KOffice"
+
+#~ msgid "KOffice Storage"
+#~ msgstr "Stóráil KOffice"
+
+#~ msgid "CCSGraph"
+#~ msgstr "CCSGraph"
+
+#~ msgid "(c) 2007 Cyrille Berger"
+#~ msgstr "© 2007 Cyrille Berger"
+
+#~ msgid "Barcode"
+#~ msgstr "Barrachód"
+
+#~ msgid "Chart"
+#~ msgstr "Cairt"
+
+#~ msgid "Bar"
+#~ msgstr "Barra"
+
+#~ msgid "Pie"
+#~ msgstr "Píchairt"
+
+#~ msgid "Ring"
+#~ msgstr "Fáinne"
+
+#~ msgid "Polar"
+#~ msgstr "Polach"
+
+#~ msgid "Chart Type"
+#~ msgstr "Cineál Cairte"
+
+#~ msgid "Stacked"
+#~ msgstr "Cruachta"
+
+#~ msgid "Percent"
+#~ msgstr "Céatadán"
+
+#~ msgid "Rows"
+#~ msgstr "Rónna"
+
+#~ msgid "Color Scheme"
+#~ msgstr "Scéim Datha"
+
+#~ msgctxt "Three dimensions"
+#~ msgid "3D"
+#~ msgstr "3T"
+
+#~ msgid "QXml"
+#~ msgstr "QXml"
+
+#~ msgid "Zoom Tool"
+#~ msgstr "Uirlis Súmála"
+
+#~ msgid "Pan Tool"
+#~ msgstr "Uirlis Pheanála"
+
+#~ msgid "RGB8 Histogram"
+#~ msgstr "Histeagram RGB8"
+
+#~ msgid "Insert Linebreak"
+#~ msgstr "Ionsáigh Briseadh"
+
+#~ msgid "&Insert"
+#~ msgstr "&Ionsáigh"
+
+#~ msgid "Insert the selected character in the text"
+#~ msgstr "Ionsáigh an carachtar roghnaithe sa téacs"
+
+#~ msgid "Access Keys"
+#~ msgstr "Eochracha Rochtana"
+
+#~ msgid "Enable word completion"
+#~ msgstr "Cumasaigh comhlá&nú focal"
+
+#~ msgid "Completion Options"
+#~ msgstr "Roghanna Comhlánaithe"
+
+#~ msgid "Show words in tooltip"
+#~ msgstr "Taispeáin focail i leid uirlisí"
+
+#~ msgid ""
+#~ "If this option is enabled, a tool tip box will appear when you type the "
+#~ "beginning of a word that exists in the completion list. To complete the "
+#~ "word, press the key you set to accept suggestions in the \"Key to accept "
+#~ "suggestion\" drop-down list."
+#~ msgstr ""
+#~ "Leis an rogha seo, taispeánfar leid uirlisí nuair a chlóscríobhfaidh tú "
+#~ "tús focail atá sa liosta comhlánaithe. Chun an focal a chomhlánú, brúigh "
+#~ "an eochair a roghnaigh tú sa liosta anuas \"Eochair a ghlacann le moladh"
+#~ "\"."
+
+#~ msgid "Characters needed:"
+#~ msgstr "Carachtair de dhíth"
+
+#~ msgid "Suggest words:"
+#~ msgstr "Mol focail:"
+
+#~ msgid "Append space"
+#~ msgstr "Iarcheangail spás"
+
+#~ msgid "Key to accept suggestion:"
+#~ msgstr "Eochair a ghlacann le moladh:"
+
+#~ msgid "Make Default"
+#~ msgstr "Réamhshocraigh"
+
+#~ msgid "C&ustom"
+#~ msgstr "S&aincheaptha"
+
+#~ msgid "&Insert:"
+#~ msgstr "&Ionsáigh:"
+
+#~ msgid "Borders"
+#~ msgstr "Teorainneacha"
+
+#~ msgid "&Width:"
+#~ msgstr "&Leithead:"
+
+#~ msgid "&Color:"
+#~ msgstr "&Dath:"
+
+#~ msgid "&Merge with next paragraph"
+#~ msgstr "Cu&maisc leis an chéad alt eile"
+
+#~ msgid "Number:"
+#~ msgstr "Uimhir:"
+
+#~ msgid "String:"
+#~ msgstr "Teaghrán:"
+
+#~ msgid "Boolean:"
+#~ msgstr "Boole:"
+
+#~ msgid "true"
+#~ msgstr "fíor"
+
+#~ msgid "false"
+#~ msgstr "bréagach"
+
+#~ msgid "Date:"
+#~ msgstr "Dáta:"
+
+#~ msgid "Set Guide Line Position"
+#~ msgstr "Socraigh Ionad na Treoirlíne"
+
+#~ msgid "Add Guide Line"
+#~ msgstr "Cuir Treoirlíne Leis"
+
+#~ msgid "Horizontal"
+#~ msgstr "Cothrománach"
+
+#~ msgid "Vertical"
+#~ msgstr "Ingearach"
+
+#~ msgid "&Position:"
+#~ msgstr "&Ionad:"
+
+#~ msgid "Guide Line"
+#~ msgstr "Treoirlíne"
+
+#~ msgid "Guide Lines"
+#~ msgstr "Treoirlínte"
+
+#~ msgid "No handler found for %1"
+#~ msgstr "Ní bhfuarthas láimhseálaí do %1"
+
+#~ msgid "Confirmation Required"
+#~ msgstr "Ní mór cinntiú"
+
+#~ msgid "Skip"
+#~ msgstr "Ná bac leis"
+
+#~ msgid ""
+#~ "Could not load external document %1:\n"
+#~ "%2"
+#~ msgstr ""
+#~ "Ní féidir cáipéis seachtrach %1 a luchtú:\n"
+#~ "%2"
+
+#~ msgid "Na&me:"
+#~ msgstr "Ain&m:"
+
+#~ msgid "Protect si&ze and position"
+#~ msgstr "&Cosain an mhéid agus an t-ionad"
+
+#~ msgid "Keep &aspect ratio"
+#~ msgstr "Caomh&naigh an cóimheas treoíochta"
+
+#~ msgid "&Height:"
+#~ msgstr "&Airde:"
+
+#~ msgid "&Top:"
+#~ msgstr "&Barr:"
+
+#~ msgid "&Left:"
+#~ msgstr "Ar Ch&lé:"
+
+#~ msgid "Context Help"
+#~ msgstr "Cabhair Chomhthéacsíogair"
+
+#~ msgid "&Size:"
+#~ msgstr "&Méid:"
+
+#~ msgid "&Portrait"
+#~ msgstr "&Portráid"
+
+#~ msgid "La&ndscape"
+#~ msgstr "Tírdhreach"
+
+#~ msgid "Page Layout Problem"
+#~ msgstr "Fadhb le Leagan Amach an Leathanaigh"
+
+#~ msgid "Show &Grid"
+#~ msgstr "Taispeáin &Greille"
+
+#~ msgctxt "Custom size"
+#~ msgid "Custom"
+#~ msgstr "Saincheaptha"
+
+#~ msgid "Insert Object"
+#~ msgstr "Ionsáigh Réad"
+
+#~ msgid "Column spacing:"
+#~ msgstr "Spásáil na gcolún:"
+
+#~ msgid "Footnote/ Endnote"
+#~ msgstr "Fonóta/ Iarnóta"
+
+#~ msgid "Header"
+#~ msgstr "Ceanntásc"
+
+#~ msgid "Page Preview"
+#~ msgstr "Réamhamharc an Leathanaigh"
+
+#~ msgid "Page Size && &Margins"
+#~ msgstr "Méid an Leathanaigh agus I&mill"
+
+#~ msgid "H&eader && Footer"
+#~ msgstr "C&eanntásc agus Buntásc"
+
+#~ msgid "Mid:"
+#~ msgstr "Sa Lár:"
+
+#~ msgid "Right:"
+#~ msgstr "Ar Dheis:"
+
+#~ msgid "You can insert several tags in the text:"
+#~ msgstr "Is féidir leat roinnt clibeanna a chur isteach sa téacs:"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;time&gt; The current time</li><li>&lt;date&gt; The "
+#~ "current date</li><li>&lt;author&gt; Your full name</li><li>&lt;org&gt; "
+#~ "Your organization</li><li>&lt;email&gt; Your email address</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;am&gt; An t-am anois</li><li>&lt;dáta&gt; An dáta inniu</"
+#~ "li><li>&lt;údar&gt; D'ainmsa</li><li>&lt;org&gt; Eagraíocht</li><li>&lt;"
+#~ "rphost&gt; Do sheoladh ríomhphoist</li></ul></qt>"
+
+#~ msgid "Col&umns"
+#~ msgstr "Co&lúin"
+
+#~ msgid "&Help"
+#~ msgstr "&Cabhair"
+
+#~ msgid "Delete a new page after the current one"
+#~ msgstr "Scrios leathanach nua tar éis an chinn reatha"
+
+#~ msgid "Master page"
+#~ msgstr "Máistirleathanach"
+
+#~ msgid "Rotate"
+#~ msgstr "Rothlaigh"
+
+#~ msgid "Shear"
+#~ msgstr "Fiar"
+
+#~ msgid "KoProperty Test"
+#~ msgstr "Tástáil KoProperty"
+
+#~ msgid "(C) 2005 Cedric Pasteur"
+#~ msgstr "© 2005 Cédric Pasteur"
+
+#~ msgid "Cedric Pasteur"
+#~ msgstr "Cédric Pasteur"
+
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Vertical"
+#~ msgstr "Méid Ingearach"
+
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Horizontal"
+#~ msgstr "Méid Cothrománach"
+
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Pointing Hand"
+#~ msgstr "Méar Eolais"
+
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "What's This?"
+#~ msgstr "Cad É Seo?"
+
+#~ msgid "Insert image from file"
+#~ msgstr "Ionsáigh íomhá ó chomhad"
+
+#~ msgid ""
+#~ "Position: %1, %2\n"
+#~ "Size: %3 x %4"
+#~ msgstr ""
+#~ "Ionad: %1, %2\n"
+#~ "Méid: %3 × %4"
+
+#~ msgid "Select Char"
+#~ msgstr "Roghnaigh Carachtar"
+
+#~ msgctxt "Size Policy"
+#~ msgid "Minimum"
+#~ msgstr "Íosmhéid"
+
+#~ msgctxt "Size Policy"
+#~ msgid "Maximum"
+#~ msgstr "Uasmhéid"
+
+#~ msgctxt "General properties"
+#~ msgid "General"
+#~ msgstr "Ginearálta"
+
+#~ msgid "Width"
+#~ msgstr "Leithead"
+
+#~ msgid "X"
+#~ msgstr "X"
+
+#~ msgid "Y"
+#~ msgstr "Y"
+
+#~ msgid "Tool Option"
+#~ msgstr "Rogha Uirlise"
+
+#~ msgid "Edit Guidelines"
+#~ msgstr "Cuir Treoirlínte in Eagar"
+
+#~ msgid "Edit guidelines"
+#~ msgstr "Cuir treoirlíne in eagar"
+
+#~ msgid "Activate %1"
+#~ msgstr "Gníomhachtaigh %1"
+
+#~ msgid "Select a filter:"
+#~ msgstr "Roghnaigh scagaire:"
+
+#~ msgid "Fit to width"
+#~ msgstr "Oiriúnaigh don leithead"
+
+#~ msgid "Fit to page/canvas"
+#~ msgstr "Laghdaigh go dtí an leathanach/canbhás"
+
+#~ msgid "Selected Template"
+#~ msgstr "Teimpléad Roghnaithe"
+
+#~ msgid "Creates an empty document"
+#~ msgstr "Cruthaigh cáipéis fholamh"
+
+#~ msgid "Choose Template"
+#~ msgstr "Roghnaigh Teimpléad"
+
+#~ msgid "No description available"
+#~ msgstr "Níl cur síos ar fáil"
+
+#~ msgid "Protect size and position"
+#~ msgstr "Cosain an mhéid agus an t-ionad"
+
+#~ msgid "&Custom..."
+#~ msgstr "Sain&cheaptha..."
+
+#~ msgid "*.svg *.wmf *.qpic|Clipart (*.svg *.wmf *.qpic)"
+#~ msgstr "*.svg *.wmf *.qpic|Fáiscealaín (*.svg *.wmf *.qpic)"
+
+#~ msgid "Insert Link"
+#~ msgstr "Ionsáigh Nasc"
+
+#~ msgid "Mail & News"
+#~ msgstr "R-phost agus Nuacht"
+
+#~ msgid "Bookmark"
+#~ msgstr "Leabharmharc"
+
+#~ msgid "Text to display:"
+#~ msgstr "Téacs le taispeáint:"
+
+#~ msgid "Internet address:"
+#~ msgstr "Seoladh Idirlín:"
+
+#~ msgid "Bookmark name:"
+#~ msgstr "Ainm an leabharmhairc:"
+
+#~ msgid "Target:"
+#~ msgstr "Sprioc:"
+
+#~ msgid "Recent file:"
+#~ msgstr "Comhad le déanaí:"
+
+#~ msgid "No Entries"
+#~ msgstr "Easpa Iontrála"
+
+#~ msgid "File location:"
+#~ msgstr "Suíomh an chomhaid:"
+
+#~ msgid "%1:"
+#~ msgstr "%1:"
+
+#~ msgid "Align Left"
+#~ msgstr "Ailínigh Ar Chlé"
+
+#~ msgid "Default Tool"
+#~ msgstr "Uirlis Réamhshocraithe"
+
+#~ msgid "Position x:"
+#~ msgstr "Ionad x:"
+
+#~ msgid "Position y:"
+#~ msgstr "Ionad y:"
+
+#~ msgid "Order:"
+#~ msgstr "Ord:"
+
+#~ msgid "Alignment"
+#~ msgstr "Ailíniú"
+
+#~ msgid "Horizontal:"
+#~ msgstr "Cothrománach:"
+
+#~ msgid "Vertical:"
+#~ msgstr "Ingearach:"
+
+#~ msgid "Scale"
+#~ msgstr "Scála"
+
+#~ msgid "Please specify a new style name:"
+#~ msgstr "Iontráil ainm stíle nua le do thoil:"
+
+#~ msgid "Case"
+#~ msgstr "Cás"
+
+#~ msgid "&Uppercase"
+#~ msgstr "Cás &Uachtair"
+
+#~ msgid "&Toggle case"
+#~ msgstr "&Scoránaigh an cás"
+
+#~ msgid "Sentence case"
+#~ msgstr "Cás an abairt"
+
+#~ msgid "Style Manager"
+#~ msgstr "Bainisteoir na Stíleanna"
+
+#~ msgid "Next style:"
+#~ msgstr "An chéad stíl eile:"
+
+#~ msgid "Decoration"
+#~ msgstr "Maisíocht"
+
+#~ msgid "Highlighting"
+#~ msgstr "Aibhsiú"
+
+#~ msgid "Layout"
+#~ msgstr "Leagan Amach"
+
+#~ msgid "Date (Fixed)"
+#~ msgstr "Dáta (Socraithe)"
+
+#~ msgid "File Modification"
+#~ msgstr "Mionathrú Comhaid"
+
+#~ msgid "Time Format"
+#~ msgstr "Formáid Ama"
+
+#~ msgid "Custom..."
+#~ msgstr "Saincheaptha..."
+
+#~ msgid "&Mail Merge..."
+#~ msgstr "Postchu&masc..."
+
+#~ msgid "Number of Pages"
+#~ msgstr "Líon na Leathanach"
+
+#~ msgid "Next Page"
+#~ msgstr "An Chéad Leathanach Eile"
+
+#~ msgid "Filename"
+#~ msgstr "Ainm comhaid"
+
+#~ msgid "Filename Without Extension"
+#~ msgstr "Ainm Comhaid Gan Iarmhír"
+
+#~ msgid "Author Name"
+#~ msgstr "Ainm an Údair"
+
+#~ msgid "Email"
+#~ msgstr "Ríomhphost"
+
+#~ msgid "Telephone (work)"
+#~ msgstr "Teileafón (obair)"
+
+#~ msgid "Telephone (home)"
+#~ msgstr "Teileafón (baile)"
+
+#~ msgid "Fax"
+#~ msgstr "Facs"
+
+#~ msgid "Country"
+#~ msgstr "Tír"
+
+#~ msgid "City"
+#~ msgstr "Cathair"
+
+#~ msgid "Abstract"
+#~ msgstr "Coimriú"
+
+#~ msgid "Initials"
+#~ msgstr "Túslitreacha"
+
+#~ msgid "Telephone (private)"
+#~ msgstr "Teileafón (príobháideach)"
+
+#~ msgid "File Name"
+#~ msgstr "Ainm Comhaid"
+
+#~ msgid "File Name without Extension"
+#~ msgstr "Ainm Comhaid gan Iarmhír"
+
+#~ msgid "Directory && File Name"
+#~ msgstr "Comhadlann agus Ainm Comhaid"
+
+#~ msgid "Link"
+#~ msgstr "Nasc"
+
+#~ msgid "Link..."
+#~ msgstr "Nasc..."
+
+#~ msgid "Note"
+#~ msgstr "Nóta"
+
+#~ msgid "Note..."
+#~ msgstr "Nóta..."
+
+#~ msgid "<No title>"
+#~ msgstr "<Gan teideal>"
+
+#~ msgid "Number of Words"
+#~ msgstr "Líon na bhFocal"
+
+#~ msgid "Number of Sentences"
+#~ msgstr "Líon na nAbairtí"
+
+#~ msgid "Number of Lines"
+#~ msgstr "Líon na Línte"
+
+#~ msgid "Number of Characters"
+#~ msgstr "Líon na gCarachtar"
+
+#~ msgid "Number of Syllables"
+#~ msgstr "Líon na Siollaí"
+
+#~ msgid "Number of Frames"
+#~ msgstr "Líon na bhFrámaí"
+
+#~ msgid "Number of Embedded Objects"
+#~ msgstr "Líon na Réada Leabaithe"
+
+#~ msgid "Number of Tables"
+#~ msgstr "Líon na dTáblaí"
+
+#~ msgid "Autocorrection"
+#~ msgstr "Uathcheartú"
+
+#~ msgid "Simple Autocorrection"
+#~ msgstr "Uathcheartú Simplí"
+
+#~ msgid "Autoformat &URLs"
+#~ msgstr "Uathfhormáidigh &URLanna"
+
+#~ msgid "Custom Quotes"
+#~ msgstr "Comharthaí Saincheaptha Athfhriotail"
+
+#~ msgid "Advanced Autocorrection"
+#~ msgstr "Uathcheartú Casta"
+
+#~ msgid "All Languages"
+#~ msgstr "Gach Teanga"
+
+#~ msgid "Insert a special character..."
+#~ msgstr "Ionsáigh carachtar speisialta..."
+
+#~ msgid "Find"
+#~ msgstr "Aimsigh"
+
+#~ msgid "Accept two uppercase letters in:"
+#~ msgstr "Glac dhá litir chás uachtair i:"
+
+#~ msgid "Entry Name"
+#~ msgstr "Ainm Iontrála"
+
+#~ msgid "Edit Variable"
+#~ msgstr "Cuir Athróg in Eagar"
+
+#~ msgid "Value:"
+#~ msgstr "Luach:"
+
+#~ msgid "Enter"
+#~ msgstr "Iontráil"
+
+#~ msgid "The quick brown fox jumps over the lazy dog."
+#~ msgstr "Léim an sionnach tapa thar an madra leisciúil."
+
+#~ msgid "Delete Text"
+#~ msgstr "Scrios Téacs"
+
+#~ msgid "Insert Text"
+#~ msgstr "Ionsáigh Téacs"
+
+#~ msgid "Format Text"
+#~ msgstr "Formáidigh Téacs"
+
+#~ msgid "Remove Selected Text"
+#~ msgstr "Bain an Téacs Roghnaithe"
+
+#~ msgid "Day"
+#~ msgstr "Lá"
+
+#~ msgid "Day (2 digits)"
+#~ msgstr "Lá (2 digit)"
+
+#~ msgid "Day (long name)"
+#~ msgstr "Lá (ainm fada)"
+
+#~ msgid "Month"
+#~ msgstr "Mí"
+
+#~ msgid "Month (2 digits)"
+#~ msgstr "Mí (2 digit)"
+
+#~ msgid "Month (long name)"
+#~ msgstr "Mí (ainm fada)"
+
+#~ msgid "Year (2 digits)"
+#~ msgstr "Bliain (2 digit)"
+
+#~ msgid "Year (4 digits)"
+#~ msgstr "Bliain (4 digit)"
+
+#~ msgid "Hour"
+#~ msgstr "Uair"
+
+#~ msgid "Minute (2 digits)"
+#~ msgstr "Nóiméad (2 digit)"
+
+#~ msgid "Second (2 digits)"
+#~ msgstr "Soicind (2 digit)"
+
+#~ msgid "Millisecond (3 digits)"
+#~ msgstr "Milleasoicind (3 digit)"
+
+#~ msgid "AM/PM"
+#~ msgstr "RN/IN"
+
+#~ msgid "Remove Word"
+#~ msgstr "Bain Focal"
+
+#~ msgid "Replace Word"
+#~ msgstr "Ionadaigh Focal"
+
+#~ msgid "Insert Soft Hyphen"
+#~ msgstr "Ionsáigh Fleiscín Bog"
+
+#~ msgid "Insert Non-Breaking Space"
+#~ msgstr "Ionsáigh Spás Neamhbhristeach"
+
+#~ msgid "Insert Non-Breaking Hyphen"
+#~ msgstr "Ionsáigh Fleiscín Neamhbhristeach"
+
+#~ msgid "Insert Special Char"
+#~ msgstr "Ionsáigh Carachtar Speisialta"
+
+#~ msgid "Remove Link"
+#~ msgstr "Bain Nasc"
+
+#~ msgid "Edit Comment"
+#~ msgstr "Cuir Nóta in Eagar"
+
+#~ msgid "Double"
+#~ msgstr "Dúbail"
+
+#~ msgid "Wave"
+#~ msgstr "Tonn"
+
+#~ msgid "Formatting Options"
+#~ msgstr "Roghanna Formáidithe"
+
+#~ msgid "Replace Text"
+#~ msgstr "Ionadaigh Téacs"
+
+#~ msgid "Reset"
+#~ msgstr "Athshocraigh"
+
+#~ msgid "Italic:"
+#~ msgstr "Cló iodálach:"
+
+#~ msgid "Word by word:"
+#~ msgstr "Focal ar focal:"
+
+#~ msgid "Underline:"
+#~ msgstr "Líne Faoi:"
+
+#~ msgid "Capitalization:"
+#~ msgstr "Ceannlitriú:"
+
+#~ msgid "Subscript"
+#~ msgstr "Foscript"
+
+#~ msgid "Superscript"
+#~ msgstr "Forscript"
+
+#~ msgid "&Start at:"
+#~ msgstr "To&saigh ag:"
+
+#~ msgid "Custo&m character:"
+#~ msgstr "Carachtar &saincheaptha:"
+
+#~ msgid "&Depth:"
+#~ msgstr "&Doimhneacht:"
+
+#~ msgid "&Right:"
+#~ msgstr "A&r Dheis:"
+
+#~ msgid "&First line:"
+#~ msgstr "An &chéad líne:"
+
+#~ msgctxt "Line spacing value"
+#~ msgid "Single"
+#~ msgstr "Singil"
+
+#~ msgctxt "Line spacing value"
+#~ msgid "1.5 Lines"
+#~ msgstr "1.5 Líne"
+
+#~ msgctxt "Line spacing value"
+#~ msgid "Double"
+#~ msgstr "Dúbailte"
+
+#~ msgid "At Least (%1)"
+#~ msgstr "Ar a Laghad (%1)"
+
+#~ msgid "Fixed (%1)"
+#~ msgstr "Seasta (%1)"
+
+#~ msgid "Before:"
+#~ msgstr "Roimh:"
+
+#~ msgid "Indent && S&pacing"
+#~ msgstr "Eangú agus S&pásáil"
+
+#~ msgid "&Left"
+#~ msgstr "Ar &Chlé"
+
+#~ msgid "&Right"
+#~ msgstr "Ar &Dheis"
+
+#~ msgid "&Justify"
+#~ msgstr "&Comhfhadaigh"
+
+#~ msgid "&Keep lines together"
+#~ msgstr "&Coimeád línte le chéile"
+
+#~ msgid "Insert break before paragraph"
+#~ msgstr "Ionsáigh briseadh roimh alt"
+
+#~ msgid "General &Layout"
+#~ msgstr "&Leagan Amach Ginearálta"
+
+#~ msgid "D&ecorations"
+#~ msgstr "Maisíocht&aí"
+
+#~ msgid "Numbering"
+#~ msgstr "Uimhriú"
+
+#~ msgid "&List"
+#~ msgstr "&Liosta"
+
+#~ msgid "Chapt&er"
+#~ msgstr "&Caibidil"
+
+#~ msgid "B&ullets/Numbers"
+#~ msgstr "&Urchair/Uimhreacha"
+
+#~ msgid "Po&sition"
+#~ msgstr "Po&st"
+
+#~ msgid "&Filling:"
+#~ msgstr "&Líonadh:"
+
+#~ msgid "&New"
+#~ msgstr "&Nua"
+
+#~ msgid "&Tabulators"
+#~ msgstr "&Táblóirí"
+
+#~ msgid "Aligment"
+#~ msgstr "Ailíniú"
+
+#~ msgid "Strikethrough"
+#~ msgstr "Línte Trí"
+
+#~ msgid "Colors"
+#~ msgstr "Dathanna"
+
+#~ msgid "Didot (dd)"
+#~ msgstr "Didot (dd)"
+
+#~ msgid "Default Color"
+#~ msgstr "Dath Réamhshocraithe"
+
+#~ msgctxt "color"
+#~ msgid "Red"
+#~ msgstr "Dearg"
+
+#~ msgctxt "color"
+#~ msgid "Orange"
+#~ msgstr "Oráiste"
+
+#~ msgctxt "color"
+#~ msgid "Magenta"
+#~ msgstr "Maigeanta"
+
+#~ msgctxt "color"
+#~ msgid "Blue"
+#~ msgstr "Gorm"
+
+#~ msgctxt "color"
+#~ msgid "Cyan"
+#~ msgstr "Cian"
+
+#~ msgctxt "color"
+#~ msgid "Yellow"
+#~ msgstr "Buí"
+
+#~ msgctxt "color"
+#~ msgid "DarkRed"
+#~ msgstr "Dúrua"
+
+#~ msgctxt "color"
+#~ msgid "DarkBlue"
+#~ msgstr "Dúghorm"
+
+#~ msgctxt "color"
+#~ msgid "DarkGreen"
+#~ msgstr "Dúghlas"
+
+#~ msgctxt "color"
+#~ msgid "DarkYellow"
+#~ msgstr "Crónbhuí"
+
+#~ msgctxt "color"
+#~ msgid "White"
+#~ msgstr "Bán"
+
+#~ msgctxt "color"
+#~ msgid "Gray 90%"
+#~ msgstr "Liath 90%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 80%"
+#~ msgstr "Liath 80%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 70%"
+#~ msgstr "Liath 70%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 60%"
+#~ msgstr "Liath 60%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 50%"
+#~ msgstr "Liath 50%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 40%"
+#~ msgstr "Liath 40%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 30%"
+#~ msgstr "Liath 30%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 20%"
+#~ msgstr "Liath 20%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 10%"
+#~ msgstr "Liath 10%"
+
+#~ msgctxt "color"
+#~ msgid "Black"
+#~ msgstr "Dubh"
+
+#~ msgctxt "color"
+#~ msgid "Ivory"
+#~ msgstr "Eabhar"
+
+#~ msgctxt "color"
+#~ msgid "Snow"
+#~ msgstr "Sneachta"
+
+#~ msgctxt "color"
+#~ msgid "Seashell"
+#~ msgstr "Sliogán Mara"
+
+#~ msgctxt "color"
+#~ msgid "Cornsilk"
+#~ msgstr "Liathghlas"
+
+#~ msgctxt "color"
+#~ msgid "LavenderBlush"
+#~ msgstr "Labhandair"
+
+#~ msgctxt "color"
+#~ msgid "Beige"
+#~ msgstr "Béasa"
+
+#~ msgctxt "color"
+#~ msgid "PapayaWhip"
+#~ msgstr "Uachtar"
+
+#~ msgctxt "color"
+#~ msgid "BlanchedAlmond"
+#~ msgstr "Almóinn Bhánaithe"
+
+#~ msgctxt "color"
+#~ msgid "MistyRose"
+#~ msgstr "Rós"
+
+#~ msgctxt "color"
+#~ msgid "Bisque"
+#~ msgstr "Uachtar Dorcha"
+
+#~ msgctxt "color"
+#~ msgid "NavajoWhite"
+#~ msgstr "Bán Navachóch"
+
+#~ msgctxt "color"
+#~ msgid "PeachPuff"
+#~ msgstr "Péitseog"
+
+#~ msgctxt "color"
+#~ msgid "Wheat"
+#~ msgstr "Cruithneacht"
+
+#~ msgctxt "color"
+#~ msgid "Pink"
+#~ msgstr "Bándearg"
+
+#~ msgctxt "color"
+#~ msgid "Aquamarine"
+#~ msgstr "Gormghlas"
+
+#~ msgctxt "color"
+#~ msgid "Thistle"
+#~ msgstr "Feochadán"
+
+#~ msgctxt "color"
+#~ msgid "LightBlue"
+#~ msgstr "Bánghorm"
+
+#~ msgctxt "color"
+#~ msgid "Gold"
+#~ msgstr "Ór"
+
+#~ msgctxt "color"
+#~ msgid "Plum"
+#~ msgstr "Pluma"
+
+#~ msgctxt "color"
+#~ msgid "Gray"
+#~ msgstr "Liath"
+
+#~ msgctxt "color"
+#~ msgid "SkyBlue"
+#~ msgstr "Spéirghorm"
+
+#~ msgctxt "color"
+#~ msgid "Tan"
+#~ msgstr "Crón"
+
+#~ msgctxt "color"
+#~ msgid "Violet"
+#~ msgstr "Vialait"
+
+#~ msgctxt "color"
+#~ msgid "SandyBrown"
+#~ msgstr "Fionnrua"
+
+#~ msgctxt "color"
+#~ msgid "Chartreuse"
+#~ msgstr "Seártrús"
+
+#~ msgctxt "color"
+#~ msgid "DarkGray"
+#~ msgstr "Dúliath"
+
+#~ msgctxt "color"
+#~ msgid "Salmon"
+#~ msgstr "Bradán"
+
+#~ msgctxt "color"
+#~ msgid "Turquoise"
+#~ msgstr "Turcaidghorm"
+
+#~ msgctxt "color"
+#~ msgid "Orchid"
+#~ msgstr "Corcra"
+
+#~ msgctxt "color"
+#~ msgid "Coral"
+#~ msgstr "Coiréal"
+
+#~ msgctxt "color"
+#~ msgid "Goldenrod"
+#~ msgstr "Slat Óir"
+
+#~ msgctxt "color"
+#~ msgid "Tomato"
+#~ msgstr "Tráta"
+
+#~ msgctxt "color"
+#~ msgid "Peru"
+#~ msgstr "Peiriú"
+
+#~ msgctxt "color"
+#~ msgid "CornflowerBlue"
+#~ msgstr "Gormán"
+
+#~ msgctxt "color"
+#~ msgid "MediumPurple"
+#~ msgstr "Meánchorcra"
+
+#~ msgctxt "color"
+#~ msgid "DeepSkyBlue"
+#~ msgstr "Spéirghorm Domhain"
+
+#~ msgctxt "color"
+#~ msgid "Chocolate"
+#~ msgstr "Seacláid"
+
+#~ msgctxt "color"
+#~ msgid "DeepPink"
+#~ msgstr "Bándearg Domhain"
+
+#~ msgctxt "color"
+#~ msgid "RoyalBlue"
+#~ msgstr "Gorm Ríoga"
+
+#~ msgctxt "color"
+#~ msgid "Sienna"
+#~ msgstr "Siaineach"
+
+#~ msgctxt "color"
+#~ msgid "Maroon"
+#~ msgstr "Marún"
+
+#~ msgctxt "color"
+#~ msgid "DarkOliveGreen"
+#~ msgstr "Dúghlas Olóige"
+
+#~ msgctxt "color"
+#~ msgid "FireBrick"
+#~ msgstr "Bríce Tine"
+
+#~ msgctxt "color"
+#~ msgid "MediumBlue"
+#~ msgstr "Meánghorm"
+
+#~ msgid "Cancelled"
+#~ msgstr "Cealaithe"
+
+#~ msgid "done"
+#~ msgstr "críochnaithe"
+
+#~ msgid "Choose..."
+#~ msgstr "Roghnaigh..."
+
+#~ msgid "More Fill Colors..."
+#~ msgstr "Tuilleadh Dathanna Líonta..."
+
+#~ msgctxt "color"
+#~ msgid "DarkSeagreen"
+#~ msgstr "Dúghlas Mara"
+
+#~ msgctxt "color"
+#~ msgid "DeepSkyblue"
+#~ msgstr "Spéirghorm Domhain"
+
+#~ msgid "&Document Information"
+#~ msgstr "&Eolas faoin Cháipéis"
+
+#~ msgid "Hide All Palette Windows"
+#~ msgstr "Folaigh Gach Fuinneog Phailéid"
+
+#~ msgid "Show Palette Windows Again"
+#~ msgstr "Taispeáin Fuinneoga Pailéid Arís"
+
+#~ msgid "Show %1"
+#~ msgstr "Taispeáin %1"
+
+#~ msgid "Kross::Api::Variant::String expected, but got %1."
+#~ msgstr "Bhíothas ag súil le Kross::Api::Variant::String ach fuarthas %1."
+
+#~ msgid "Kross::Api::Variant::Int expected, but got %1."
+#~ msgstr "Bhíothas ag súil le Kross::Api::Variant::Int ach fuarthas %1."
+
+#~ msgid "Kross::Api::Variant::UInt expected, but got %1."
+#~ msgstr "Bhíothas ag súil le Kross::Api::Variant::UInt ach fuarthas %1."
+
+#~ msgid "Kross::Api::Variant::Double expected, but got %1."
+#~ msgstr "Bhíothas ag súil le Kross::Api::Variant::Double ach fuarthas %1."
+
+#~ msgid "Kross::Api::Variant::LLONG expected, but got %1."
+#~ msgstr "Bhíothas ag súil le Kross::Api::Variant::LLONG ach fuarthas %1."
+
+#~ msgid "Kross::Api::Variant::ULLONG expected, but got %1."
+#~ msgstr "Bhíothas ag súil le Kross::Api::Variant::ULLONG ach fuarthas %1."
+
+#~ msgid "Kross::Api::Variant::Bool expected, but got %1."
+#~ msgstr "Bhíothas ag súil le Kross::Api::Variant::Bool ach fuarthas %1."
+
+#~ msgid "Kross::Api::Variant::List expected, but got '%1'."
+#~ msgstr "Bhíothas ag súil le Kross::Api::Variant::List ach fuarthas '%1'."
+
+#~ msgid "History"
+#~ msgstr "Stair"
+
+#~ msgid "Load Script File"
+#~ msgstr "Luchtaigh Comhad Scripte"
+
+#~ msgid "Uninstall"
+#~ msgstr "Díshuiteáil"
+
+#~ msgid "Name of the interpreter being used"
+#~ msgstr "Ainm an léirmhínitheora atá in úsáid"
+
+#~ msgid "Here you can choose the font to be used."
+#~ msgstr "Is féidir an cló atá le húsáid a roghnú anseo."
+
+#~ msgid "Requested Font"
+#~ msgstr "Cló Iarrtha"
+
+#~ msgid "Enable this checkbox to change the font size settings."
+#~ msgstr "Cumasaigh an ticbhosca seo chun socruithe na clómhéide a athrú."
+
+#~ msgid "Regular"
+#~ msgstr "Gnách"
+
+#~ msgid "Font size<br><i>fixed</i> or <i>relative</i><br>to environment"
+#~ msgstr ""
+#~ "Clómhéid<br><i>socraithe</i> nó <i>coibhneasta</i><br>maidir leis an "
+#~ "timpeallacht"
+
+#~ msgid "Here you can choose the font size to be used."
+#~ msgstr "Tig leat an chlómhéid atá le húsáid a roghnú anseo."
+
+#~ msgid ""
+#~ "This sample text illustrates the current settings. You may edit it to "
+#~ "test special characters."
+#~ msgstr ""
+#~ "Léiríonn an téacs samplach seo na socruithe reatha. Tig leat é a athrú "
+#~ "chun carachtair speisialta a thástáil."
+
+#~ msgid "&Redo: %1"
+#~ msgstr "&Athdhéan: %1"
+
+#~ msgid "Remove Tabulator"
+#~ msgstr "Bain Táblóir"
+
+#~ msgid "Load"
+#~ msgstr "Luchtaigh"
+
+#~ msgid "Install"
+#~ msgstr "Suiteáil"
+
+#~ msgid "Get More Scripts"
+#~ msgstr "Faigh Níos Mó Scripteanna"
+
+#~ msgid "Word by word"
+#~ msgstr "Focal ar focal"
+
+#~ msgid "Capitalization"
+#~ msgstr "Ceannlitriú"
+
+#~ msgid "&Font"
+#~ msgstr "&Cló"
+
+#~ msgid " %"
+#~ msgstr " %"
+
+#~ msgid "Relative size:"
+#~ msgstr "Méid coibhneasta:"
+
+#~ msgid "Abstract:"
+#~ msgstr "Coimriú:"
+
+#~ msgctxt "A grayed widget"
+#~ msgid "Disabled. "
+#~ msgstr "Díchumasaithe. "
+
+#~ msgid "control plus "
+#~ msgstr "control in éineacht le "
+
+#~ msgid "alt plus "
+#~ msgstr "alt in éineacht le "
+
+#~ msgid " plus "
+#~ msgstr " in éineacht le"
+
+#~ msgid "Use syntax highlighting"
+#~ msgstr "Úsáid aibhsiú comhréire"
+
+#~ msgid "Add Empty Box"
+#~ msgstr "Cuir Bosca Folamh Leis"
+
+#~ msgid "Add Name"
+#~ msgstr "Ainm Nua"
+
+#~ msgid "Add Bracket"
+#~ msgstr "Cuir Lúibín Leis"
+
+#~ msgid "Add Space"
+#~ msgstr "Cuir Spás Leis"
+
+#~ msgid "Add Root"
+#~ msgstr "Cuir Fréamh Leis"
+
+#~ msgid "Add Symbol"
+#~ msgstr "Cuir Siombail Leis"
+
+#~ msgid "MathML Import Error"
+#~ msgstr "Earráid Iompórtála MathML"
+
+#~ msgid "Indexed list"
+#~ msgstr "Liosta innéacsaithe"
+
+#~ msgid "Index"
+#~ msgstr "Innéacs"
+
+#~ msgid "Numerator"
+#~ msgstr "Uimhreoir"
+
+#~ msgid "Denominator"
+#~ msgstr "Ainmneoir"
+
+#~ msgid "Add Integral"
+#~ msgstr "Cuir Suimeálaí Leis"
+
+#~ msgid "Add Square Bracket"
+#~ msgstr "Cuir Lúibín Cearnach Leis"
+
+#~ msgid "Add Curly Bracket"
+#~ msgstr "Cuir Lúibín Casta Leis"
+
+#~ msgid "Syntax Highlighting"
+#~ msgstr "Aibhsiú Comhréire"
+
+#~ msgid "&Bold"
+#~ msgstr "Cló &Trom"
+
+#~ msgid "&Italic"
+#~ msgstr "Cló &Iodálach"
+
+#~ msgid "Right Delimiter"
+#~ msgstr "Teormharcóir ar Dheis"
+
+#~ msgid "Insert Symbol"
+#~ msgstr "Ionsáigh Siombail"
+
+#~ msgid "Fraktur"
+#~ msgstr "Fraktur"
+
+#~ msgid "Operator"
+#~ msgstr "Oibreoir"

@@ -1,0 +1,898 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Vít Pelčák <vit@pelcak.org>, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018.
+# Tomáš Chvátal <tomas.chvatal@gmail.com>, 2013.
+# Vit Pelcak <vpelcak@suse.cz>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: koffice\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2022-06-27 14:37+0200\n"
+"Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
+"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 22.04.2\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "Dokument XML nelze analyzovat."
+
+#: common/KReportDesign.cpp:159
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Chyba v dokumentu XML."
+
+#: common/KReportItemBase.cpp:75
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Název"
+
+#: common/KReportItemBase.cpp:75
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Název objektu"
+
+#: common/KReportItemBase.cpp:78
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Pozice"
+
+#: common/KReportItemBase.cpp:79
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Velikost"
+
+#: common/KReportItemBase.cpp:112
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Zdroj dat"
+
+#: common/KReportItemLine.cpp:80
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "Počáteční pozice"
+
+#: common/KReportItemLine.cpp:81
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Konečná pozice"
+
+#: common/KReportItemLine.cpp:83
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr ""
+
+#: common/KReportItemLine.cpp:85
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Barva čáry"
+
+#: common/KReportItemLine.cpp:86
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Styl čáry"
+
+#: common/KReportSectionData.cpp:164
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Oddíl"
+
+#: common/KReportSectionData.cpp:166
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "Výška"
+
+#: common/KReportSectionData.cpp:170
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Barva pozadí"
+
+#: common/KReportUnit.cpp:136
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Neplatný"
+
+#: common/KReportUnit.cpp:138
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "Milimetry (mm)"
+
+#: common/KReportUnit.cpp:140
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "Centimetry (cm)"
+
+#: common/KReportUnit.cpp:142
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "Decimetry (dm)"
+
+#: common/KReportUnit.cpp:144
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "Palce (in)"
+
+#: common/KReportUnit.cpp:146
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "Pica (pi)"
+
+#: common/KReportUnit.cpp:148
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "Cicero (cc)"
+
+#: common/KReportUnit.cpp:150
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "Body (pt)"
+
+#: common/KReportUnit.cpp:152
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "Pixelů (px)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr "Nepodporovaná jednotka"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Kříž"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr "Tečka"
+
+#: items/check/KReportItemCheck.cpp:80
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "Styl"
+
+#: items/check/KReportItemCheck.cpp:84
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Barva popředí"
+
+#: items/check/KReportItemCheck.cpp:86
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:88
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Barva čáry"
+
+#: items/check/KReportItemCheck.cpp:89
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Styl čáry"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Hodnota"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Hodnota"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:94
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Vlevo"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Střed"
+
+#: items/field/KReportItemField.cpp:94
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Vpravo"
+
+#: items/field/KReportItemField.cpp:96
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Vodorovné zarovnání"
+
+#: items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "Nahoře"
+
+#: items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Dole"
+
+#: items/field/KReportItemField.cpp:102
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Svislé zarovnání"
+
+#: items/field/KReportItemField.cpp:104
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Písmo"
+
+#: items/field/KReportItemField.cpp:106
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Barva pozadí"
+
+#: items/field/KReportItemField.cpp:107
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Barva popředí"
+
+#: items/field/KReportItemField.cpp:109
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Krytí pozadí"
+
+#: items/field/KReportItemField.cpp:114
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:116
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Barva čáry"
+
+#: items/field/KReportItemField.cpp:117
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Styl čáry"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr "Lámání slov"
+
+#: items/field/KReportItemField.cpp:120
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr "Klip"
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Roztažení"
+
+#: items/image/KReportItemImage.cpp:120
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Hodnota"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:91
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Titulek"
+
+#: items/label/KReportItemLabel.cpp:94
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Vlevo"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Střed"
+
+#: items/label/KReportItemLabel.cpp:94
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Vpravo"
+
+#: items/label/KReportItemLabel.cpp:96
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Vodorovné zarovnání"
+
+#: items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "Nahoře"
+
+#: items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Dole"
+
+#: items/label/KReportItemLabel.cpp:102
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Svislé zarovnání"
+
+#: items/label/KReportItemLabel.cpp:104
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Písmo"
+
+#: items/label/KReportItemLabel.cpp:106
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Barva pozadí"
+
+#: items/label/KReportItemLabel.cpp:107
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Barva popředí"
+
+#: items/label/KReportItemLabel.cpp:109
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Krytí pozadí"
+
+#: items/label/KReportItemLabel.cpp:114
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:116
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Barva čáry"
+
+#: items/label/KReportItemLabel.cpp:117
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Styl čáry"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Hodnota"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:119
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Vlevo"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Střed"
+
+#: items/text/KReportItemText.cpp:119
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Vpravo"
+
+#: items/text/KReportItemText.cpp:121
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Vodorovné zarovnání"
+
+#: items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "Nahoře"
+
+#: items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Dole"
+
+#: items/text/KReportItemText.cpp:127
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Svislé zarovnání"
+
+#: items/text/KReportItemText.cpp:129
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Písmo"
+
+#: items/text/KReportItemText.cpp:131
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Barva pozadí"
+
+#: items/text/KReportItemText.cpp:132
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Barva popředí"
+
+#: items/text/KReportItemText.cpp:134
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:136
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Barva čáry"
+
+#: items/text/KReportItemText.cpp:137
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Styl čáry"
+
+#: items/text/KReportItemText.cpp:138
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Krytí pozadí"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr ""
+"Kód skriptu:\n"
+"%1"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Chyba skriptu"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr "Nepodporovaný typ skriptu"
+
+#: wrtembed/KReportDesigner.cpp:676
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Záhlaví stránky (kterákoliv)"
+
+#: wrtembed/KReportDesigner.cpp:680
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Záhlaví stránky (sudá)"
+
+#: wrtembed/KReportDesigner.cpp:684
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Záhlaví stránky (lichá)"
+
+#: wrtembed/KReportDesigner.cpp:688
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Záhlaví stránky (první)"
+
+#: wrtembed/KReportDesigner.cpp:692
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Záhlaví stránky (poslední)"
+
+#: wrtembed/KReportDesigner.cpp:696
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "Zápatí stránky (kterákoliv)"
+
+#: wrtembed/KReportDesigner.cpp:700
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "Zápatí stránky (sudá)"
+
+#: wrtembed/KReportDesigner.cpp:704
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "Zápatí stránky (lichá)"
+
+#: wrtembed/KReportDesigner.cpp:708
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "Zápatí stránky (první)"
+
+#: wrtembed/KReportDesigner.cpp:712
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "Zápatí stránky (poslední)"
+
+#: wrtembed/KReportDesigner.cpp:716
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "Záhlaví hlášení"
+
+#: wrtembed/KReportDesigner.cpp:720
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "Zápatí hlášení"
+
+#: wrtembed/KReportDesigner.cpp:808
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "Hlášení"
+
+#: wrtembed/KReportDesigner.cpp:813
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Název"
+
+#: wrtembed/KReportDesigner.cpp:813
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Nadpis hlášení"
+
+#: wrtembed/KReportDesigner.cpp:818
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Velikost strany"
+
+#: wrtembed/KReportDesigner.cpp:821
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Vlastní velikost stránky"
+
+#: wrtembed/KReportDesigner.cpp:825
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "Na výšku"
+
+#: wrtembed/KReportDesigner.cpp:825
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "Na šířku"
+
+#: wrtembed/KReportDesigner.cpp:827
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "Orientace stránky"
+
+#: wrtembed/KReportDesigner.cpp:832
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Jednotka stránky"
+
+#: wrtembed/KReportDesigner.cpp:833
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Ukázat mřížku"
+
+#: wrtembed/KReportDesigner.cpp:834
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Přichytávat k mřížce"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:841
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Levý okraj"
+
+#: wrtembed/KReportDesigner.cpp:843
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Pravý okraj"
+
+#: wrtembed/KReportDesigner.cpp:845
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Horní okraj"
+
+#: wrtembed/KReportDesigner.cpp:847
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Dolní okraj"
+
+#: wrtembed/KReportDesigner.cpp:869
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1067
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Vyjmout"
+
+#: wrtembed/KReportDesigner.cpp:1071
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Kopírovat"
+
+#: wrtembed/KReportDesigner.cpp:1076
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Vložit"
+
+#: wrtembed/KReportDesigner.cpp:1087
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Smazat"
+
+#: wrtembed/KReportDesigner.cpp:1129
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Čára"
+
+#: wrtembed/KReportDesigner.cpp:1476
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Čára"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr "Vyjmou&t"
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr "Vyjmout výběr do schránky"
+
+#: wrtembed/KReportDesigner.cpp:1525
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "&Kopírovat"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr "Kopírovat výběr do schránky"
+
+#: wrtembed/KReportDesigner.cpp:1531
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "V&ložit"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr "Vložit obsah schránky"
+
+#: wrtembed/KReportDesigner.cpp:1544
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Upravit sekce"
+
+#: wrtembed/KReportDesigner.cpp:1547
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr "Do popředí"
+
+#: wrtembed/KReportDesigner.cpp:1549
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr "Do pozadí"
+
+#: wrtembed/KReportDesignerSection.cpp:126
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "Podrobnosti"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr ""
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Sloupec:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Seřadit:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Zobrazit nadpis skupin:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Zobrazit nadpis skupin:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+
+#: wrtembed/KReportRuler_p.cpp:1472
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Odsazení prvního řádku"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Odsazení zleva"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Odsazení zprava"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr "Přidat..."
+
+#: wrtembed/KReportSectionEditor.cpp:74
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "Upravit..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Smazat"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Posunout nahoru"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Posunout dolů"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr "Vzestupně"
+
+#: wrtembed/KReportSectionEditor.cpp:312
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr "Sestupně"
+
+#: wrtembed/KReportSectionEditor.ui:29
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Zobrazit záhlaví hlášení"
+
+#: wrtembed/KReportSectionEditor.ui:36
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Zobrazit zápatí hlášení"
+
+#: wrtembed/KReportSectionEditor.ui:43
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Záhlaví stránky"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "První stránka:"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Sudé stránky:"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Kterákoliv stránka:"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Poslední stránka:"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Liché stránky:"
+
+#: wrtembed/KReportSectionEditor.ui:130
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "Zápatí stránky"
+
+#: wrtembed/KReportSectionEditor.ui:217
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Seskupit oddíly"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, qt-format
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Přizpůsobit šířce stránky"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Přizpůsobit stránce"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr ""
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Přizpůsobit text šířce"

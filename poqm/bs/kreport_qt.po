@@ -1,0 +1,5876 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: calligra\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2015-02-26 18:25+0100\n"
+"Last-Translator: Samir Ribić <megaribi@epn.ba>\n"
+"Language-Team: Bosnian <kde-i18n-doc@kde.org>\n"
+"Language: bs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Launchpad (build 17341)\n"
+"X-Launchpad-Export-Date: 2015-02-15 06:06+0000\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+#, fuzzy
+#| msgid "Could not create the output document"
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "Ne mogu kreirati izlazni dokument"
+
+#: common/KReportDesign.cpp:159
+#, fuzzy
+#| msgid "Error in embedded document"
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Greška u ugrađenom dokumentu"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Name"
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Naziv"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Object Name"
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Ime objekta"
+
+#: common/KReportItemBase.cpp:78
+#, fuzzy
+#| msgid "Position"
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Pozicija"
+
+#: common/KReportItemBase.cpp:79
+#, fuzzy
+#| msgid "Size"
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Veličina"
+
+#: common/KReportItemBase.cpp:112
+#, fuzzy
+#| msgid "Data Source"
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Izvor podataka"
+
+#: common/KReportItemLine.cpp:80
+#, fuzzy
+#| msgid "Position"
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "Pozicija"
+
+#: common/KReportItemLine.cpp:81
+#, fuzzy
+#| msgid "Position"
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Pozicija"
+
+#: common/KReportItemLine.cpp:83
+#, fuzzy
+#| msgid "Line Weight"
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "Debljina linije"
+
+#: common/KReportItemLine.cpp:85
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Boja linije"
+
+#: common/KReportItemLine.cpp:86
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Stil linije"
+
+#: common/KReportSectionData.cpp:164
+#, fuzzy
+#| msgctxt "(qtundo-format)"
+#| msgid "New Section"
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Nova sekcija"
+
+#: common/KReportSectionData.cpp:166
+#, fuzzy
+#| msgid "Height"
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "Visina"
+
+#: common/KReportSectionData.cpp:170
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Boja pozadine"
+
+#: common/KReportUnit.cpp:136
+#, fuzzy
+#| msgid "Invalid Type"
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Neispravan tip"
+
+#: common/KReportUnit.cpp:138
+#, fuzzy
+#| msgid "Millimeters (mm)"
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "Milimetara (mm)"
+
+#: common/KReportUnit.cpp:140
+#, fuzzy
+#| msgid "Centimeters (cm)"
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "Centimetara (cm)"
+
+#: common/KReportUnit.cpp:142
+#, fuzzy
+#| msgid "Decimeters (dm)"
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "Decimetri (dm)"
+
+#: common/KReportUnit.cpp:144
+#, fuzzy
+#| msgid "Inches (in)"
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "Inča (in)"
+
+#: common/KReportUnit.cpp:146
+#, fuzzy
+#| msgid "Pica (pi)"
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "Pike (pi)"
+
+#: common/KReportUnit.cpp:148
+#, fuzzy
+#| msgid "Cicero (cc)"
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "Cicero (cc)"
+
+#: common/KReportUnit.cpp:150
+#, fuzzy
+#| msgid "Points (pt)"
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "Tačke (tač.)"
+
+#: common/KReportUnit.cpp:152
+#, fuzzy
+#| msgid "Pixels (px)"
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "Pikseli (pk)"
+
+#: common/KReportUnit.cpp:154
+#, fuzzy
+#| msgid "Unsupported unit"
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr "Nepodržana jedinica"
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Cross"
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Ukrštanje"
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Tick"
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr "Kvačica"
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Dot"
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr "Tačka"
+
+#: items/check/KReportItemCheck.cpp:80
+#, fuzzy
+#| msgid "Style"
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "Stil"
+
+#: items/check/KReportItemCheck.cpp:84
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Boja teksta"
+
+#: items/check/KReportItemCheck.cpp:86
+#, fuzzy
+#| msgid "Line Weight"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "Debljina linije"
+
+#: items/check/KReportItemCheck.cpp:88
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Boja linije"
+
+#: items/check/KReportItemCheck.cpp:89
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Stil linije"
+
+#: items/check/KReportItemCheck.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Vrijednost"
+
+#: items/check/KReportItemCheck.cpp:90
+#, fuzzy
+#| msgid "Value used if not bound to a field"
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr "Vrijednost korištena ako nije povezana na polje"
+
+#: items/field/KReportItemField.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Vrijednost"
+
+#: items/field/KReportItemField.cpp:90
+#, fuzzy
+#| msgid "Value used if not bound to a field"
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr "Vrijednost korištena ako nije povezana na polje"
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Left"
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Lijevo"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Center"
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Centar"
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Right"
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Desno"
+
+#: items/field/KReportItemField.cpp:96
+#, fuzzy
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Horizontalno poravnanje"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Top"
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "Vrh"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Bottom"
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Dno"
+
+#: items/field/KReportItemField.cpp:102
+#, fuzzy
+#| msgid "Vertical Alignment"
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Vertikalno poravnanje"
+
+#: items/field/KReportItemField.cpp:104
+#, fuzzy
+#| msgid "Font"
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Font"
+
+#: items/field/KReportItemField.cpp:106
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Boja pozadine"
+
+#: items/field/KReportItemField.cpp:107
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Boja teksta"
+
+#: items/field/KReportItemField.cpp:109
+#, fuzzy
+#| msgid "Background Opacity"
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Neprozirnost pozadine"
+
+#: items/field/KReportItemField.cpp:114
+#, fuzzy
+#| msgid "Line Weight"
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "Debljina linije"
+
+#: items/field/KReportItemField.cpp:116
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Boja linije"
+
+#: items/field/KReportItemField.cpp:117
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Stil linije"
+
+#: items/field/KReportItemField.cpp:119
+#, fuzzy
+#| msgid "Word Wrap"
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr "Prelom teksta"
+
+#: items/field/KReportItemField.cpp:120
+#, fuzzy
+#| msgid "Can Grow"
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr "Može rasti"
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgid "Clip"
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr "Odsječak"
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgid "Stretch"
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Razvučeno"
+
+#: items/image/KReportItemImage.cpp:120
+#, fuzzy
+#| msgid "Resize Mode"
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "Režim promjene veličine"
+
+#: items/image/KReportItemImage.cpp:121
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Vrijednost"
+
+#: items/image/KReportItemImage.cpp:121
+#, fuzzy
+#| msgid "Value used if not bound to a field"
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr "Vrijednost korištena ako nije povezana na polje"
+
+#: items/label/KReportItemLabel.cpp:91
+#, fuzzy
+#| msgid "Caption"
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Naslov"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Left"
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Lijevo"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Center"
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Centar"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Right"
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Desno"
+
+#: items/label/KReportItemLabel.cpp:96
+#, fuzzy
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Horizontalno poravnanje"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Top"
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "Vrh"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Bottom"
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Dno"
+
+#: items/label/KReportItemLabel.cpp:102
+#, fuzzy
+#| msgid "Vertical Alignment"
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Vertikalno poravnanje"
+
+#: items/label/KReportItemLabel.cpp:104
+#, fuzzy
+#| msgid "Font"
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Font"
+
+#: items/label/KReportItemLabel.cpp:106
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Boja pozadine"
+
+#: items/label/KReportItemLabel.cpp:107
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Boja teksta"
+
+#: items/label/KReportItemLabel.cpp:109
+#, fuzzy
+#| msgid "Background Opacity"
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Neprozirnost pozadine"
+
+#: items/label/KReportItemLabel.cpp:114
+#, fuzzy
+#| msgid "Line Weight"
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "Debljina linije"
+
+#: items/label/KReportItemLabel.cpp:116
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Boja linije"
+
+#: items/label/KReportItemLabel.cpp:117
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Stil linije"
+
+#: items/text/KReportItemText.cpp:115
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Vrijednost"
+
+#: items/text/KReportItemText.cpp:115
+#, fuzzy
+#| msgid "Value used if not bound to a field"
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr "Vrijednost korištena ako nije povezana na polje"
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Left"
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Lijevo"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Center"
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Centar"
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Right"
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Desno"
+
+#: items/text/KReportItemText.cpp:121
+#, fuzzy
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Horizontalno poravnanje"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Top"
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "Vrh"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Bottom"
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Dno"
+
+#: items/text/KReportItemText.cpp:127
+#, fuzzy
+#| msgid "Vertical Alignment"
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Vertikalno poravnanje"
+
+#: items/text/KReportItemText.cpp:129
+#, fuzzy
+#| msgid "Font"
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Font"
+
+#: items/text/KReportItemText.cpp:131
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Boja pozadine"
+
+#: items/text/KReportItemText.cpp:132
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Boja teksta"
+
+#: items/text/KReportItemText.cpp:134
+#, fuzzy
+#| msgid "Line Weight"
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "Debljina linije"
+
+#: items/text/KReportItemText.cpp:136
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Boja linije"
+
+#: items/text/KReportItemText.cpp:137
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Stil linije"
+
+#: items/text/KReportItemText.cpp:138
+#, fuzzy
+#| msgid "Background Opacity"
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Neprozirnost pozadine"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, fuzzy, qt-format
+#| msgid "Script File"
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr "Skriptna datoteka"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+#, fuzzy
+#| msgid "Syntax Error"
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Sintaksna greška"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:315
+#, fuzzy
+#| msgid "Unsupported unit"
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr "Nepodržana jedinica"
+
+#: wrtembed/KReportDesigner.cpp:676
+#, fuzzy
+#| msgid "Page Header (Any)"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Zaglavlje stranice  (Bilo koje)"
+
+#: wrtembed/KReportDesigner.cpp:680
+#, fuzzy
+#| msgid "Page Header (Even)"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Zaglavlje stranice (Parno)"
+
+#: wrtembed/KReportDesigner.cpp:684
+#, fuzzy
+#| msgid "Page Header (Odd)"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Zaglavlje stranice (Neparno)"
+
+#: wrtembed/KReportDesigner.cpp:688
+#, fuzzy
+#| msgid "Page Header (First)"
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Zaglavlje stranice (Prvo)"
+
+#: wrtembed/KReportDesigner.cpp:692
+#, fuzzy
+#| msgid "Page Header (Last)"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Zaglavlje stranice (Zadnje)"
+
+#: wrtembed/KReportDesigner.cpp:696
+#, fuzzy
+#| msgid "Page Footer (Any)"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "Podnožje stranice (Bilo koje)"
+
+#: wrtembed/KReportDesigner.cpp:700
+#, fuzzy
+#| msgid "Page Footer (Even)"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "Podnožje stranice  (Parno)"
+
+#: wrtembed/KReportDesigner.cpp:704
+#, fuzzy
+#| msgid "Page Footer (Odd)"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "Podnožje stranice  (Neparano)"
+
+#: wrtembed/KReportDesigner.cpp:708
+#, fuzzy
+#| msgid "Page Footer (First)"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "Podnožje stranice (Prvo)"
+
+#: wrtembed/KReportDesigner.cpp:712
+#, fuzzy
+#| msgid "Page Footer (Last)"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "Podnožje stranice (Zadnje)"
+
+#: wrtembed/KReportDesigner.cpp:716
+#, fuzzy
+#| msgid "Report Header"
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "Zaglavlje izvještaja"
+
+#: wrtembed/KReportDesigner.cpp:720
+#, fuzzy
+#| msgid "Report Footer"
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "Podnožje izvještaja"
+
+#: wrtembed/KReportDesigner.cpp:808
+#, fuzzy
+#| msgid "Export"
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "Izvezi"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Title"
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Naslov"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Report Title"
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Naslov izvještaja"
+
+#: wrtembed/KReportDesigner.cpp:818
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Veličina stranice"
+
+#: wrtembed/KReportDesigner.cpp:821
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Veličina stranice"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "Portrait"
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "Uspravno"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "Landscape"
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "Položeno"
+
+#: wrtembed/KReportDesigner.cpp:827
+#, fuzzy
+#| msgid "Page Orientation"
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "Usmjerenje strane"
+
+#: wrtembed/KReportDesigner.cpp:832
+#, fuzzy
+#| msgid "Page Unit"
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Jedinica stranice"
+
+#: wrtembed/KReportDesigner.cpp:833
+#, fuzzy
+#| msgid "Show Grid"
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Prikaži mrežu"
+
+#: wrtembed/KReportDesigner.cpp:834
+#, fuzzy
+#| msgid "Snap to Grid"
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Poravnaj s mrežom"
+
+#: wrtembed/KReportDesigner.cpp:835
+#, fuzzy
+#| msgid "Grid Divisions"
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr "Mrežna odjeljenja"
+
+#: wrtembed/KReportDesigner.cpp:841
+#, fuzzy
+#| msgid "Left Margin"
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Lijeva margina"
+
+#: wrtembed/KReportDesigner.cpp:843
+#, fuzzy
+#| msgid "Right Margin"
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Desna margina"
+
+#: wrtembed/KReportDesigner.cpp:845
+#, fuzzy
+#| msgid "Top Margin"
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Gornja margina"
+
+#: wrtembed/KReportDesigner.cpp:847
+#, fuzzy
+#| msgid "Bottom Margin"
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Donja margina"
+
+#: wrtembed/KReportDesigner.cpp:869
+#, fuzzy
+#| msgid "Object Script"
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Skripta objekta"
+
+#: wrtembed/KReportDesigner.cpp:1067
+#, fuzzy
+#| msgid "Cut"
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Isijeci"
+
+#: wrtembed/KReportDesigner.cpp:1071
+#, fuzzy
+#| msgid "Copy"
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Kopiraj"
+
+#: wrtembed/KReportDesigner.cpp:1076
+#, fuzzy
+#| msgid "Paste"
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Umetni"
+
+#: wrtembed/KReportDesigner.cpp:1087
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Izbriši"
+
+#: wrtembed/KReportDesigner.cpp:1129
+#, fuzzy
+#| msgid "Line"
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Linija"
+
+#: wrtembed/KReportDesigner.cpp:1476
+#, fuzzy
+#| msgid "Line"
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Linija"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1525
+#, fuzzy
+#| msgid "Copy"
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "Kopiraj"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1531
+#, fuzzy
+#| msgid "Paste"
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "Umetni"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1544
+#, fuzzy
+#| msgid "Section"
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Sekcija"
+
+#: wrtembed/KReportDesigner.cpp:1547
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1549
+#, fuzzy
+#| msgid "Lower Roman"
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr "Mala rimska"
+
+#: wrtembed/KReportDesignerSection.cpp:126
+#, fuzzy
+#| msgid "Detail"
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "Detalji"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+#, fuzzy
+#| msgid "Group Section Editor"
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Uređivač grupa sekcija"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+#, fuzzy
+#| msgid "Column:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Kolona:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+#, fuzzy
+#| msgid "Sort:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Sortiraj:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+#, fuzzy
+#| msgid "Show group header:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Prikaži zaglavlje grupe:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+#, fuzzy
+#| msgid "Show group footer:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Prikaži podnožje grupe:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+#, fuzzy
+#| msgid "Insert page break after group footer:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr "Umetni prekid stranice poslije podnožja grupe:"
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+#, fuzzy
+#| msgid "Select entire report"
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr "Pošalji cijeli izvještaj"
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+#, fuzzy
+#| msgid ""
+#| "A button that allows a report's surface to be selected, allowing its "
+#| "properties to be seen."
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+"Dugme koje dozvoljava da se izvještaji sa površine mogu označiti, "
+"dozvoljavajući im da se osobine mogu vidjeti."
+
+#: wrtembed/KReportRuler_p.cpp:1472
+#, fuzzy
+#| msgid "First line indent"
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Uvlačenje prvog reda"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+#, fuzzy
+#| msgid "Left indent"
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Lijevo uvlačenje"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+#, fuzzy
+#| msgid "Right indent"
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Desno uvlačenje"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+#, fuzzy
+#| msgid "Add..."
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr "Dodaj..."
+
+#: wrtembed/KReportSectionEditor.cpp:74
+#, fuzzy
+#| msgid "Edit..."
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "Izmijeni..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Izbriši"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+#, fuzzy
+#| msgid "Move Up"
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Pomjeri prema gore"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+#, fuzzy
+#| msgid "Move Down"
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Pomjeri prema dolje"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+#, fuzzy
+#| msgid "Ascending"
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr "Rastuće"
+
+#: wrtembed/KReportSectionEditor.cpp:312
+#, fuzzy
+#| msgid "Descending"
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr "Opadajuće"
+
+#: wrtembed/KReportSectionEditor.ui:29
+#, fuzzy
+#| msgid "Show report header"
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Prikaži zaglavlje izvještaja"
+
+#: wrtembed/KReportSectionEditor.ui:36
+#, fuzzy
+#| msgid "Show report footer"
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Prikaži podnožje izvještaja"
+
+#: wrtembed/KReportSectionEditor.ui:43
+#, fuzzy
+#| msgid "Page Header"
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Zaglavlje strane"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+#, fuzzy
+#| msgid "First page:"
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "Prva stranica:"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+#, fuzzy
+#| msgid "Even pages:"
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Neparne stranice:"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+#, fuzzy
+#| msgid "Any pages:"
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Sve stranice:"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+#, fuzzy
+#| msgid "Last page:"
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Posljednja stranica:"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+#, fuzzy
+#| msgid "Odd pages:"
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Neparne stranice:"
+
+#: wrtembed/KReportSectionEditor.ui:130
+#, fuzzy
+#| msgid "Page Footer"
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "Podnožje strane"
+
+#: wrtembed/KReportSectionEditor.ui:217
+#, fuzzy
+#| msgid "Group Sections"
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Grupiši sekcije"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, fuzzy, qt-format
+#| msgid "%1%"
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+#, fuzzy
+#| msgid "Fit Page Width"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Uklopi prema širini stranice"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+#, fuzzy
+#| msgid "Fit Page"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Prilagodi po stranici"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+#, fuzzy
+#| msgid "Actual Pixels"
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr "Stvarnih piksela"
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+#, fuzzy
+#| msgid "Fit Text Width"
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Širina sklopa teksta"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Letter"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "Američko pismo"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Legal"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "Američki pravnički"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "Custom"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "Prilagođeno"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B6"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B5"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B4"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "Execute"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "Izvrši"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B0"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B1"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "ISO B10"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B2"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B3"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "Comma"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "Zarez"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO DL"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "ISO DL"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Folio"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Folio"
+#~ msgstr "Američki list"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Ledger"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "Američka glavna knjiga"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Tabloid"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Tabloid"
+#~ msgstr "US Tabloid"
+
+#, fuzzy
+#~| msgid "Postal code:"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "Poštanski broj:"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Izvor podataka"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Izvor podataka"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Izvor podataka"
+
+#, fuzzy
+#~| msgid "Unable to undelete tag"
+#~ msgctxt "Scripting::Text|"
+#~ msgid "$Unable to read %1"
+#~ msgstr "Ne mogu vratim obrisanu oznaku"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Ekran"
+
+#, fuzzy
+#~| msgid "Height"
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "Visina"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Boja pozadine"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "Pozicija"
+
+#, fuzzy
+#~| msgid "Size"
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "Veličina"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "ISO A3"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "ISO A4"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "ISO A5"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "ISO B5"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Executive"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "US Executive"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "ISO A0"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "ISO A1"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "ISO A2"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "ISO A6"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A7"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "ISO A7"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A8"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "ISO A8"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A9"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "ISO A9"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "ISO B0"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "ISO B1"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "ISO B2"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "ISO B3"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "ISO B4"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "ISO B6"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO C5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "ISO C5"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Common 10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Common 10"
+#~ msgstr "US Common 10"
+
+#, fuzzy
+#~| msgid "Height"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "Visina"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "Boja pozadine"
+
+#, fuzzy
+#~| msgid "Line Weight"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Weight"
+#~ msgstr "Debljina linije"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "Boja linije"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "Stil linije"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Izvor podataka"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "Vrijednost"
+
+#, fuzzy
+#~| msgid "Value used if not bound to a field"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value used if not bound to a field"
+#~ msgstr "Vrijednost korištena ako nije povezana na polje"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "Boja pozadine"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "Boja teksta"
+
+#, fuzzy
+#~| msgid "Line Weight"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Weight"
+#~ msgstr "Debljina linije"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "Boja linije"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "Stil linije"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Izvor podataka"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "Vrijednost"
+
+#, fuzzy
+#~| msgid "Value used if not bound to a field"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value used if not bound to a field"
+#~ msgstr "Vrijednost korištena ako nije povezana na polje"
+
+#, fuzzy
+#~| msgid "Left"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "Lijevo"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "Centar"
+
+#, fuzzy
+#~| msgid "Right"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "Desno"
+
+#, fuzzy
+#~| msgid "Horizontal Alignment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Horizontalno poravnanje"
+
+#, fuzzy
+#~| msgid "Top"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "Vrh"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "Dno"
+
+#, fuzzy
+#~| msgid "Vertical Alignment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Vertikalno poravnanje"
+
+#, fuzzy
+#~| msgid "Font"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "Font"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "Boja pozadine"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "Boja teksta"
+
+#, fuzzy
+#~| msgid "Background Opacity"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "Neprozirnost pozadine"
+
+#, fuzzy
+#~| msgid "Line Weight"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Weight"
+#~ msgstr "Debljina linije"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "Boja linije"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "Stil linije"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Izvor podataka"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "Vrijednost"
+
+#, fuzzy
+#~| msgid "Value used if not bound to a field"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value used if not bound to a field"
+#~ msgstr "Vrijednost korištena ako nije povezana na polje"
+
+#, fuzzy
+#~| msgid "Left"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "Lijevo"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "Centar"
+
+#, fuzzy
+#~| msgid "Right"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "Desno"
+
+#, fuzzy
+#~| msgid "Horizontal Alignment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Horizontalno poravnanje"
+
+#, fuzzy
+#~| msgid "Top"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "Vrh"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "Dno"
+
+#, fuzzy
+#~| msgid "Vertical Alignment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Vertikalno poravnanje"
+
+#, fuzzy
+#~| msgid "Font"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "Font"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "Boja pozadine"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "Boja teksta"
+
+#, fuzzy
+#~| msgid "Line Weight"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Weight"
+#~ msgstr "Debljina linije"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "Boja linije"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "Stil linije"
+
+#, fuzzy
+#~| msgid "Background Opacity"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "Neprozirnost pozadine"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "Izbriši"
+
+#, fuzzy
+#~| msgid "Script Interpreter"
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "Interpreter skripte"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr ""
+#~ "Nasiha Djedovic,Samir Ribić,Emrah Dautbegovic,Vedran Ljubovic,Vedad Babic"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr ""
+#~ "Ndjedovic1@etf.unsa.ba,samir.ribic@etf.unsa.ba,edautbegov1@etf.unsa.ba,"
+#~ "vljubovic@smartnet.ba,vbabic1@etf.unsa.ba"
+
+#~ msgid "Draw path"
+#~ msgstr "Nacrtati stazu"
+
+#~ msgid "Freehand path"
+#~ msgstr "Freehand put"
+
+#~ msgid "Angle snapping delta:"
+#~ msgstr "Ugao ljepljenja delte:"
+
+#~ msgid "Activate angle snap:"
+#~ msgstr "Aktiviraj pomjeranje ugla:"
+
+#~ msgid "Angle Constraints"
+#~ msgstr "Ugao ograničenja"
+
+#~ msgid "Precision:"
+#~ msgstr "Preciznost:"
+
+#~ msgctxt "The raw line data"
+#~ msgid "Raw"
+#~ msgstr "Sirovi"
+
+#~ msgid "Curve"
+#~ msgstr "Krivulja"
+
+#~ msgid "Straight"
+#~ msgstr "Prava"
+
+#~ msgid "Optimize"
+#~ msgstr "Optimiziraj"
+
+#~ msgid "Exactness:"
+#~ msgstr "Tačnost:"
+
+#~ msgid "Combine angle:"
+#~ msgstr "Kombinuj ugao:"
+
+#~ msgid "Pencil"
+#~ msgstr "Olovka"
+
+#~ msgid "Invalid database contents. "
+#~ msgstr "Neispravan sadržaj baze podataka. "
+
+#~ msgid "It is a system object."
+#~ msgstr "To je sistemski objekat."
+
+#~ msgid "Connection already established."
+#~ msgstr "Veza je već uspostavljena."
+
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr "Ne mogu da otvorim projektnu datoteku \"%1\"."
+
+#~ msgid "Could not connect to \"%1\" database server."
+#~ msgstr "Ne mogu da se povežem sa serverom baze podataka \"%1\"."
+
+#~ msgid "Not connected to the database server."
+#~ msgstr "Veza sa serverom baze podataka nije uspostavljena."
+
+#~ msgid "Currently no database is used."
+#~ msgstr "Trenutno se ne koristi nijedna baza podataka."
+
+#~ msgid "The database \"%1\" does not exist."
+#~ msgstr "Baza podataka \"%1\" ne postoji."
+
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "Datoteka baze podataka \"%1\" ne postoji."
+
+#~ msgid "Database file \"%1\" is not readable."
+#~ msgstr "Datoteka baze podataka \"%1\" se ne može čitati."
+
+#~ msgid "Database file \"%1\" is not writable."
+#~ msgstr "Datoteka baze podataka \"%1\" se ne može upisati."
+
+#~ msgid "Database \"%1\" created but could not be closed after creation."
+#~ msgstr ""
+#~ "Baza podataka \"%1\" je stvorena ali ne može biti zatvorena nakon "
+#~ "stvaranja."
+
+#~ msgid "Database \"%1\" already exists."
+#~ msgstr "Baza podataka \"%1\" već postoji."
+
+#~ msgid ""
+#~ "Cannot create database \"%1\". This name is reserved for system database."
+#~ msgstr ""
+#~ "Ne mogu da napravim bazu \"%1\". Ovo ime je rezervisano za sistemsku bazu "
+#~ "podataka."
+
+#~ msgid "Error creating database \"%1\" on the server."
+#~ msgstr "Greška prilikom pravljenja baze \"%1\" na serveru."
+
+#~ msgid "Database \"%1\" created but could not be opened."
+#~ msgstr "Baza \"%1\" je napravljena, ali ne može biti otvorena."
+
+#~ msgid "Opening database \"%1\" failed."
+#~ msgstr "Otvaranje baze podataka \"%1\" nije uspjelo."
+
+#~ msgid "Database version (%1) does not match Kexi application's version (%2)"
+#~ msgstr "Verzija baze podataka (%1) se ne slaže sa verzijom Kexi-ja (%2)"
+
+#~ msgid "Cannot find any database for temporary connection."
+#~ msgstr "Ne mogu da nađem ni jednu bazu podataka za privremenu vezu."
+
+#~ msgid ""
+#~ "Error during starting temporary connection using \"%1\" database name."
+#~ msgstr "Greška prilikom privremene veze korištenjem imena baze \"%1\"."
+
+#~ msgid "Cannot delete database - name not specified."
+#~ msgstr "Ne mogu da obrišem bazu - nije naznačeno ime."
+
+#~ msgid "Cannot delete system database \"%1\"."
+#~ msgstr "Ne mogu da obrišem sistemsku bazu podataka \"%1\"."
+
+#~ msgid "Error while executing SQL statement."
+#~ msgstr "Greška pri izvršavanju SQL naredbe."
+
+#~ msgid "Creating table failed."
+#~ msgstr "Stvaranje tabele nije uspjelo."
+
+#~ msgid "Cannot create table without fields."
+#~ msgstr "Ne mogu da napravim tabelu bez polja."
+
+#~ msgid "System name \"%1\" cannot be used as table name."
+#~ msgstr "Sistemsko ime \"%1\" se ne može koristiti kao ime tabele."
+
+#~ msgid "System name \"%1\" cannot be used as one of fields in \"%2\" table."
+#~ msgstr ""
+#~ "Sistemsko ime \"%1\" se ne može koristiti kao jedno od polja u tabeli "
+#~ "\"%2\"."
+
+#~ msgid "Could not create the same table \"%1\" twice."
+#~ msgstr "Ne mogu da napravim istu tabelu \"%1\" dvaput."
+
+#~ msgid "Table \"%1\" already exists."
+#~ msgstr "Tabela \"%1\" već postoji."
+
+#~ msgid "Table \"%1\" does not exist."
+#~ msgstr "Tabela \"%1\" ne postoji."
+
+#~ msgid "Could not remove object's data."
+#~ msgstr "Ne mogu da uklonim podatke objekta."
+
+#~ msgid "Table \"%1\" cannot be removed.\n"
+#~ msgstr "Tabela \"%1\" ne može da se ukloni.\n"
+
+#~ msgid "Unexpected name or identifier."
+#~ msgstr "Neočekivano ime ili identifikator."
+
+#~ msgid "Could not alter table \"%1\" using the same table as destination."
+#~ msgstr "Ne mogu mijenjati tabelu \"%1\" koristeći istu tabelu kao odredište"
+
+#~ msgid "Unknown table \"%1\"."
+#~ msgstr "Nepoznata tablica \"%1\"."
+
+#~ msgid "Invalid table name \"%1\"."
+#~ msgstr "Pogrešan naziv tabele \"%1\""
+
+#~ msgid "Could not rename table \"%1\" using the same name."
+#~ msgstr "Ne mogu preimenovati tabelu \"%1\" koristeći isto ime."
+
+#~ msgid ""
+#~ "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
+#~ msgstr ""
+#~ "Nisam mogao da preimenujem tabelu \"%1\" u \"%2\". Tabela \"%3\" već "
+#~ "postoji."
+
+#~ msgid "Query \"%1\" does not exist."
+#~ msgstr "Upit \"%1\" ne postoji."
+
+#~ msgid "Transactions are not supported for \"%1\" driver."
+#~ msgstr "Transakcije nisu podržane za \"%1\" drajver."
+
+#~ msgid "Begin transaction failed."
+#~ msgstr "Početak transakcije nije uspio"
+
+#~ msgid "Transaction already started."
+#~ msgstr "Transakcija je već otpočela."
+
+#~ msgid "Transaction not started."
+#~ msgstr "Transakcija nije započeta."
+
+#~ msgid "Error on commit transaction."
+#~ msgstr "Greška u potvrdi transakcije"
+
+#~ msgid "Error on rollback transaction."
+#~ msgstr "Greška u poništavanju transakcije"
+
+#~ msgid "Invalid object name \"%1\"."
+#~ msgstr "Pogrešan naziv objekta \"%1\""
+
+#~ msgid "Column <resource>%1</resource> does not exist in the query."
+#~ msgstr "Kolona <resource>%1</resource> ne postoji u upitu."
+
+#~ msgctxt "Extended schema for a table: loading error"
+#~ msgid "Error while loading extended table schema."
+#~ msgstr "Greška tokom učitavanja proširene tablice šema."
+
+#~ msgid "Invalid XML data: %1"
+#~ msgstr "Pogrešni XML podaci: %1"
+
+#~ msgid ""
+#~ "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~ "XML data: %4"
+#~ msgstr ""
+#~ "Greška u XML podacima:\"%1\" u liniji %2 kolina %3\n"
+#~ "XML podaci: %4"
+
+#~ msgid "Table has no fields defined."
+#~ msgstr "Tabela nema definisanih polja."
+
+#~ msgid ""
+#~ "Could not find definition for query \"%1\". Removing this query is "
+#~ "recommended."
+#~ msgstr ""
+#~ "Nisam mogao da nađem definiciju za upit \"%1\". Predlažem uklanjanje ovog "
+#~ "upita."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>Could not load definition for query \"%1\". SQL statement for this "
+#~ "query is invalid: <message>%2</message></para>\n"
+#~ "<para>You can open this query in Text View and correct it.</para>"
+#~ msgstr ""
+#~ "<para> Nije moguće učitati definiciju za upit \"%1\". SQL za ovaj upit je "
+#~ "nevažeći: <message>%2 </message> </para>\n"
+#~ "<para> možete otvoriti ovaj upit u Text View i ispraviti. </para>"
+
+#~ msgid "Could not update record because there is no master table defined."
+#~ msgstr "Ne mogu ažurirati zapis jer nije definisana glavna tabela."
+
+#~ msgid ""
+#~ "Could not update record because master table has no primary key defined."
+#~ msgstr ""
+#~ "Ne mogu ažurirati zapis jer glavna tabela nema definisan izvorni ključ."
+
+#~ msgid ""
+#~ "Could not update record because it does not contain entire primary key of "
+#~ "master table."
+#~ msgstr ""
+#~ "Ne mogu ažurirati slog, ne sadrži čitav primarni ključ master tabele."
+
+#~ msgid "Primary key's field \"%1\" cannot be empty."
+#~ msgstr "Primarni ključ polja \"%1\" ne može biti prazan."
+
+#~ msgid "Record updating on the server failed."
+#~ msgstr "Ažuriranje zapisa na server nije uspjelo."
+
+#~ msgid "Could not insert record because there is no master table specified."
+#~ msgstr "Ne može se umetnuti zapis, jer ne postoji naveden master sto."
+
+#~ msgid ""
+#~ "Could not insert record because master table has no primary key specified."
+#~ msgstr ""
+#~ "Ne može se umetnuti slog jer u master tabeli nije naveden primarni ključ."
+
+#~ msgid ""
+#~ "Could not insert record because it does not contain entire master table's "
+#~ "primary key."
+#~ msgstr ""
+#~ "Ne mogu umetnuti zapis jer ne sadrži čitav izvorni kod glavne tabele."
+
+#~ msgid "Record inserting on the server failed."
+#~ msgstr "Umetanje zapisa na server nije uspjelo."
+
+#~ msgid "Could not delete record because there is no master table specified."
+#~ msgstr "Ne mogu obrisati slog, jer nije navedena master tabela."
+
+#~ msgid ""
+#~ "Could not delete record because there is no primary key for master table "
+#~ "specified."
+#~ msgstr ""
+#~ "Ne mogu izbrisati slog jer nije naveden primarni ključ u master tabeli."
+
+#~ msgid ""
+#~ "Could not delete record because it does not contain entire master table's "
+#~ "primary key."
+#~ msgstr ""
+#~ "Ne mogu izbrisati zapis jer ne sadrži čitav izvorni ključ glavne tabele."
+
+#~ msgid "Record deletion on the server failed."
+#~ msgstr "Brisanje zapisa na serveru nije uspjelo."
+
+#~ msgid "Unknown error."
+#~ msgstr "Nepoznata greška."
+
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "fajl: %1"
+
+#~ msgctxt "@info"
+#~ msgid "&lt;file&gt;"
+#~ msgstr "&lt;fajl&gt"
+
+#~ msgid "No query statement or schema defined."
+#~ msgstr "Šema ili naredba upita nije definisana."
+
+#~ msgid "Query statement is empty."
+#~ msgstr "Naredba upita je prazna."
+
+#~ msgid "Error opening database cursor."
+#~ msgstr "Greška pri otvaranju kursora baze podataka."
+
+#~ msgid "Cannot fetch next record."
+#~ msgstr "Ne mogu da dohvatim sljedeći zapis."
+
+#~ msgid "No connection for cursor open operation specified."
+#~ msgstr "Nema veze za navedenu operaciju otvaranja kursora."
+
+#~ msgid "Could not set value of database property \"%1\"."
+#~ msgstr "Nisam mogao da postavim vrijednost svojstva baze \"%1\"."
+
+#~ msgid "Could not set caption for database property \"%1\"."
+#~ msgstr "Nisam mogao da postavim natpis za svojstvo baze \"%1\"."
+
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "Nisam mogao da pročitam svojstvo baze \"%1\"."
+
+#~ msgid "Could not read database properties."
+#~ msgstr "Nisam mogao da pročitam svojstva baze podataka."
+
+#~ msgid "Invalid database driver's \"%1\" implementation:\n"
+#~ msgstr "Neispravna implementacija drajvera baze podataka \"%1\":\n"
+
+#~ msgid "Value of \"%1\" is not initialized for the driver."
+#~ msgstr "Vrijednost \"%1\" nije inicijalizovana za drajver."
+
+#~ msgid "File name expected for file-based database driver."
+#~ msgstr ""
+#~ "Očekivano je ime datoteke za drajver baze podataka bazirane na datotekama."
+
+#~ msgid "Client library version"
+#~ msgstr "Verzija biblioteke na klijentu"
+
+#~ msgid "Default character encoding on server"
+#~ msgstr "Podrazumijevano kodiranje znakova na serveru"
+
+#~ msgid "File-based database driver"
+#~ msgstr "Drajver baze podataka na osnovu datoteke"
+
+#~ msgid "File-based database's MIME type"
+#~ msgstr "MIME tip baze podataka na osnovu datoteke"
+
+#~ msgid "Single transactions support"
+#~ msgstr "Podrška za jednostruke transakcije"
+
+#~ msgid "Multiple transactions support"
+#~ msgstr "Podrška za višestruke transakcije"
+
+#~ msgid "Nested transactions support"
+#~ msgstr "Podrška za ugnježdene transakcije"
+
+#~ msgid "KexiDB driver version"
+#~ msgstr "KexiDB verzija drajvera"
+
+#~ msgid "Could not find any database drivers."
+#~ msgstr "Nisam mogao da nađem nijedan drajver baze podataka."
+
+#~ msgid "Could not find database driver \"%1\"."
+#~ msgstr "Nisam mogao da nađem drajver baze podataka \"%1\"."
+
+#~ msgid ""
+#~ "Incompatible database driver's \"%1\" version: found version %2, expected "
+#~ "version %3."
+#~ msgstr ""
+#~ "Neodgovarajuća verzija drajvera baze podataka \"%1\": pronađena verzija "
+#~ "je %2, a očekivana je %3."
+
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "Nisam mogao da učitam drajver baze podataka \"%1\"."
+
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "Nije moguće pronaći servis <resource>%1</resource>."
+
+#, fuzzy
+#~| msgid "Incompatible types of arguments"
+#~ msgid "Incorrect number of arguments"
+#~ msgstr "Nekompatibilni tipovi argumenata"
+
+#~ msgctxt "@info BETWEEN..AND error"
+#~ msgid "%1 operator requires exactly three arguments."
+#~ msgstr "%1 operator zahtijeva tačno tri argumenta."
+
+#~ msgid "Incompatible types of arguments"
+#~ msgstr "Nekompatibilni tipovi argumenata"
+
+#~ msgctxt "@info BETWEEN..AND type error"
+#~ msgid "%1 operator requires compatible types of arguments."
+#~ msgstr "%1 operator zahtijeva kompatiblne tipove of argumenata."
+
+#~ msgid "Ambiguous field name"
+#~ msgstr "Dvosmisleno ime polja"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Both table <resource>%1</resource> and <resource>%2</resource> have "
+#~ "defined <resource>%3</resource> field. Use "
+#~ "<resource><placeholder>tableName</placeholder>.%4</resource> notation to "
+#~ "specify table name."
+#~ msgstr ""
+#~ "Obije tabele <resource>%1 </resource> i <resource>%2 </resource> su "
+#~ "definirale <resource>%3 </resource> polje. Koristite <resource> "
+#~ "<placeholder> tableName </placeholder>.%4 </resource> notaciju da "
+#~ "navedete naziv tabele."
+
+#~ msgid "Field not found"
+#~ msgstr "Polje nije pronađeno"
+
+#~ msgid "Table containing \"%1\" field not found."
+#~ msgstr "Tabela koja sadrži \"%1\" polje nije nađena"
+
+#~ msgid "Could not access the table directly using its name"
+#~ msgstr "Nisam mogao direktno da pristupim tabeli pomoću njenog imena"
+
+#~ msgid ""
+#~ "Table name <resource>%1</resource> is covered by aliases. Instead of "
+#~ "<resource>%2</resource>, you can write <resource>%3</resource>."
+#~ msgstr ""
+#~ "Naziv tabele <resource>%1</resource> pokriven pseudonimima. Umjesto "
+#~ "<resource>%2</resource>, možete napisati <resource>%3</resource>."
+
+#~ msgid "Table not found"
+#~ msgstr "Tabela nije nađena"
+
+#~ msgid "Ambiguous \"%1.*\" expression"
+#~ msgstr "Dvosmislen izraz \"%1.*\""
+
+#~ msgid "More than one \"%1\" table or alias defined."
+#~ msgstr "Više od jedne \"%1\" tabele ili pseudonima definirano."
+
+#~ msgid "Table \"%1\" has no \"%2\" field."
+#~ msgstr "Tabela \"%1\" nema \"%2\" polja."
+
+#~ msgid "Ambiguous \"%1.%2\" expression"
+#~ msgstr "Dvosmislen izraz \"%1.%2\""
+
+#~ msgid "More than one \"%1\" table or alias defined containing \"%2\" field."
+#~ msgstr ""
+#~ "Više od jedne\"%1\"  definirane tabele ili aliasa  sadrže \"%2\" polje."
+
+#, fuzzy
+#~| msgctxt "@info BETWEEN..AND error"
+#~| msgid "%1 operator requires exactly three arguments."
+#~ msgctxt "@info Number of arguments error"
+#~ msgid "%1() function requires 2 or 3 arguments."
+#~ msgstr "%1 operator zahtijeva tačno tri argumenta."
+
+#, fuzzy
+#~| msgid "Incompatible types of arguments"
+#~ msgid "Incorrect type of argument"
+#~ msgstr "Nekompatibilni tipovi argumenata"
+
+#~ msgid "Byte"
+#~ msgstr "Bajt"
+
+#~ msgid "Short Integer Number"
+#~ msgstr "Kratak cijeli broj"
+
+#~ msgid "Integer Number"
+#~ msgstr "Cijeli broj"
+
+#~ msgid "Big Integer Number"
+#~ msgstr "Veliki cijeli broj"
+
+#~ msgid "Yes/No Value"
+#~ msgstr "Da/ne vrijednost"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "Date and Time"
+#~ msgstr "Datum i vrijeme"
+
+#~ msgid "Time"
+#~ msgstr "Vrijeme"
+
+#~ msgid "Single Precision Number"
+#~ msgstr "Broj jednostruke tačnosti"
+
+#~ msgid "Double Precision Number"
+#~ msgstr "Broj dvostruke tačnosti"
+
+#~ msgid "Text"
+#~ msgstr "Tekst"
+
+#~ msgid "Long Text"
+#~ msgstr "Dugačak tekst"
+
+#~ msgid "Object"
+#~ msgstr "Objekat"
+
+#~ msgid "Invalid Group"
+#~ msgstr "Neispravna grupa"
+
+#~ msgid "Floating Point Number"
+#~ msgstr "Broj u pokretnom zarezu"
+
+#~ msgid "Yes/No"
+#~ msgstr "Da/ne"
+
+#~ msgid "Date/Time"
+#~ msgstr "Datum/Vrijeme"
+
+#~ msgid ""
+#~ "You can correct data in this record or use \"Cancel record changes\" "
+#~ "function."
+#~ msgstr ""
+#~ "Možete ispraviti podatke u ovom zapisu ili koristiti funkciju \"Prekinuti "
+#~ "izmjene zapisa\"."
+
+#~ msgid "Unspecified error encountered"
+#~ msgstr "Pojavila se neodređena greška"
+
+#~ msgid "identifier was expected"
+#~ msgstr "očekivan je identifikator"
+
+#~ msgid "\"%1\" is a reserved keyword."
+#~ msgstr "\"%1\" je rezervisana ključna riječ."
+
+#~ msgid "Syntax error."
+#~ msgstr "Sintaksna greška"
+
+#~ msgid "Error"
+#~ msgstr "Greška"
+
+#~ msgid "Error near \"%1\"."
+#~ msgstr "Greška u blizini \"%1\"."
+
+#~ msgid "No query statement specified."
+#~ msgstr "Bez navedene naredbe upita."
+
+#~ msgid "\"*\" could not be used if no tables are specified."
+#~ msgstr "\"*\" Ne mogu se koristiti ako su navedene bez tablica."
+
+#~ msgid "Invalid alias definition for column \"%1\"."
+#~ msgstr "Pogrešna definicija alias za kolonu \"%1\"."
+
+#~ msgid "Invalid \"%1\" column definition."
+#~ msgstr "Pogrešna \"%1\" definicija kolone."
+
+#~ msgid "Could not define sorting - no column at position %1."
+#~ msgstr "Ne mogu definisati sortiranje - nema kolone na poziciji %1."
+
+#~ msgid ""
+#~ "Could not define sorting - column name or alias \"%1\" does not exist."
+#~ msgstr "Ne može se definirati sortiranje - ime ili alias \"%1\" ne postoji."
+
+#~ msgctxt ""
+#~ "short for 'expression' word, e.g. 'expr' (only latin letters, please, no "
+#~ "'.')"
+#~ msgid "expr"
+#~ msgstr "izraz"
+
+#~ msgid "Database driver name"
+#~ msgstr "Ime drajvera baza podataka"
+
+#~ msgid "Database user name"
+#~ msgstr "Korisničko ime baza podataka"
+
+#~ msgid "Prompts for password"
+#~ msgstr "Zatraži lozinku"
+
+#~ msgid "Host (server) name"
+#~ msgstr "Ime domaćina (servera)"
+
+#~ msgid "Server's port number"
+#~ msgstr "Broj porta servera"
+
+#~ msgid "Server's local socket filename"
+#~ msgstr "Ime datoteke lokalnog soketa na serveru"
+
+#~ msgid "Enter password for %1: "
+#~ msgstr "Unesite lozinku za %1: "
+
+#~ msgid "\"%1\" column requires a value to be entered."
+#~ msgstr "Kolona \"%1\" zahtjeva da vrijednost bude unešena."
+
+#~ msgid "The column's constraint is declared as NOT NULL."
+#~ msgstr "Ograničenje kolone je da ne može biti nulta."
+
+#~ msgid "The column's constraint is declared as NOT EMPTY."
+#~ msgstr "Ograničenje kolone je da ne može biti prazna."
+
+#~ msgid "Record inserting failed."
+#~ msgstr "Umetanje zapisa nije uspjelo."
+
+#~ msgid "Record changing failed."
+#~ msgstr "Mijenjanje zapisa nije uspjelo."
+
+#~ msgid "Record deleting failed."
+#~ msgstr "Brisanje zapisa nije uspjelo."
+
+#~ msgid "Message from server:"
+#~ msgstr "Poruka sa servera:"
+
+#~ msgid "SQL statement:"
+#~ msgstr "SQL naredba:"
+
+#~ msgid "Server result:"
+#~ msgstr "Rezultati sa servera:"
+
+#~ msgid "Test Connection"
+#~ msgstr "Testiraj vezu"
+
+#~ msgid "Testing connection to <resource>%1</resource> database server..."
+#~ msgstr ""
+#~ "Ispitivanje veza s <resource>%1 </resource> poslužiteljom baze "
+#~ "podataka ..."
+
+#~ msgid ""
+#~ "<qt>Test connection to <b>%1</b> database server failed. The server is "
+#~ "not responding.</qt>"
+#~ msgstr ""
+#~ "<qt>Proba veze do servera baze <b>%1</b> nije uspjela. Server se ne "
+#~ "odaziva.</qt>"
+
+#~ msgid ""
+#~ "<qt>Test connection to <b>%1</b> database server established successfully."
+#~ "</qt>"
+#~ msgstr ""
+#~ "<qt>Probna veza do servera baza <b>%1</b> uspješno je uspostavljena.</qt>"
+
+#~ msgid "Number"
+#~ msgstr "Broj"
+
+#~ msgid "Image"
+#~ msgstr "Slika"
+
+#~ msgid "\"%1\" value has to be entered."
+#~ msgstr "Vrijednost \"%1\" mora biti unešena."
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr "Promijeni povezanost"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr "Promijeni parametar"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "Pretvori u stazu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath at points"
+#~ msgstr "Prelom podputa u tačkama"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Combine paths"
+#~ msgstr "Kombinuj puteve"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move control point"
+#~ msgstr "Premjesti kontrolnu tačku"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set fill rule"
+#~ msgstr "Postavi pravilo ispunjavanja"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "Unosne tačke"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "Spoji tačke"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move points"
+#~ msgstr "Pomjeri tačke"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove points"
+#~ msgstr "Ukloni tačke"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set point type"
+#~ msgstr "Postavi tip tačke"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reverse paths"
+#~ msgstr "Obrnuti putanju"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath"
+#~ msgstr "Prelomi podputanju"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to curves"
+#~ msgstr "Promijeni segmente na krivoj"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to lines"
+#~ msgstr "Promjenite segmente za liniju"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set marker"
+#~ msgstr "Podesi oznaku"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Align shapes"
+#~ msgstr "Poravnaj oblike"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr "Postavi pozadinu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Clip Shape"
+#~ msgstr "Odsijeci lik"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr "Kreiraj oblik"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shape"
+#~ msgid_plural "Delete shapes"
+#~ msgstr[0] "Izbriši oblik"
+#~ msgstr[1] "Izbriši oblike"
+#~ msgstr[2] "Izbriši oblike"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Distribute shapes"
+#~ msgstr "Raspodjeli oblike"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr "Grupisanje oblika"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add shapes to group"
+#~ msgstr "Dodaj oblike u grupu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Keep Aspect Ratio"
+#~ msgstr "Čuvaj razmjeru"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Lock shapes"
+#~ msgstr "Zaključaj oblike"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move shapes"
+#~ msgstr "Premjesti oblike"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr "Preimenovanje Shape"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reorder shapes"
+#~ msgstr "Presloži oblike"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Shape RunAround"
+#~ msgstr "Promijeni RunAround lika"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Shadow"
+#~ msgstr "Postavite sjenu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Shear shapes"
+#~ msgstr "Kresanje oblika"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Resize shapes"
+#~ msgstr "Promijeni veličinu oblika"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set stroke"
+#~ msgstr "Postavi za liniju"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr "Postavite neprozirnost"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shape"
+#~ msgstr "Ne odsijeci lik"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shapes"
+#~ msgstr "Ne odsijeci likove"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr "Razgrupisanje oblika"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Close subpath"
+#~ msgstr "Zatvori podputanju"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Join subpaths"
+#~ msgstr "Spoji podputanje"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove subpath"
+#~ msgstr "Ukloni podputanju"
+
+#~ msgid "Standard"
+#~ msgstr "Standardno"
+
+#~ msgid "Lines"
+#~ msgstr "Linije"
+
+#~ msgid "Type:"
+#~ msgstr "Vrsta:"
+
+#~ msgid "Tie"
+#~ msgstr "Veza"
+
+#~ msgid "A connection between two other shapes"
+#~ msgstr "Veza između dva druga oblika"
+
+#~ msgid "Shows or hides grid"
+#~ msgstr "Prikazuje ili skriva mrežu"
+
+#~ msgid "Simple path shape"
+#~ msgstr "Obični oblik putanje"
+
+#~ msgid "A simple path shape"
+#~ msgstr "Obični oblik putanje"
+
+#~ msgid "%1 Options"
+#~ msgstr "%1 Opcija"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Shapes"
+#~ msgstr "Umetni oblik"
+
+#~ msgid "Active tool: %1"
+#~ msgstr "Aktivan alat: %1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "Umetni sliku"
+
+#~ msgid "Nodes"
+#~ msgstr "Čvorovi"
+
+#~ msgid "Extension of lines"
+#~ msgstr "Produženje linija"
+
+#~ msgid "Bounding box of shape"
+#~ msgstr "Granični okvir oblika"
+
+#~ msgid "Proximity distance where snapping happens"
+#~ msgstr "Bliže rastojanje gdje se dešava hvatanje"
+
+#~ msgid " px"
+#~ msgstr " piks."
+
+#~ msgid "Orthogonal"
+#~ msgstr "Ortogonalno"
+
+#~ msgid "Intersection of lines"
+#~ msgstr "Sekcija presjeka linija"
+
+#~ msgid "Guide lines"
+#~ msgstr "Pomoćne linije"
+
+#~ msgid "Embedded svg shape"
+#~ msgstr "Ugrađeni svg lik"
+
+#~ msgid "Create object"
+#~ msgstr "Napravi objekat"
+
+#~ msgid "Pan"
+#~ msgstr "Paniraj"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Segment"
+#~ msgstr "Segment promjene"
+
+#~ msgid "Corner point"
+#~ msgstr "Ugaona tačka"
+
+#~ msgid "Smooth point"
+#~ msgstr "Glatka tačka"
+
+#~ msgid "Symmetric Point"
+#~ msgstr "Simetrična tačka"
+
+#~ msgid "Make curve point"
+#~ msgstr "Napravite tačku krive"
+
+#~ msgid "Make line point"
+#~ msgstr "Napravite linijsku tačku"
+
+#~ msgid "Segment to Line"
+#~ msgstr "Segment do linije"
+
+#~ msgid "Segment to Curve"
+#~ msgstr "Segment do krive"
+
+#~ msgid "Insert point"
+#~ msgstr "Umetnite tačku"
+
+#~ msgid "Remove point"
+#~ msgstr "Uklonite tačku"
+
+#~ msgid "Break at point"
+#~ msgstr "Prelom na tački"
+
+#~ msgid "Break at segment"
+#~ msgstr "Prelom na segmentu"
+
+#~ msgid "Join with segment"
+#~ msgstr "Spoj sa segmentom"
+
+#~ msgid "Merge points"
+#~ msgstr "Spoji tačke"
+
+#~ msgid "To Path"
+#~ msgstr "Put do"
+
+#~ msgid "Line/Curve"
+#~ msgstr "Linija/Kriva"
+
+#~ msgid "Drag to move handle."
+#~ msgstr "Povlačenje do držača za premještanje."
+
+#~ msgid "Drag to move point. Shift click to change point type."
+#~ msgstr ""
+#~ "Povucite da promijenite tačku. Klikni shift da promjenite tip tačke."
+
+#~ msgid "Drag to move control point."
+#~ msgstr "Povucite da pomjerite kontrolnu tačku."
+
+#~ msgid ""
+#~ "Drag to change curve directly. Double click to insert new path point."
+#~ msgstr ""
+#~ "Povucite za direktnu promjenu krivulje. Dvaput kliknite da biste umetnuli "
+#~ "novu  tačku."
+
+#~ msgid "Press B to break path at selected point."
+#~ msgstr "Pritisnite B za prelom puta u označenoj tački."
+
+#~ msgid "Press B to break path at selected segments."
+#~ msgstr "Pritisnite B za prelom puta u označenom segmentu."
+
+#~ msgid "Path editing"
+#~ msgstr "Uređivanje puta"
+
+#~ msgid "Zoom"
+#~ msgstr "Uvećaj"
+
+#~ msgid "Zoom In"
+#~ msgstr "Uveličaj"
+
+#~ msgid "Zoom Out"
+#~ msgstr "Umanji"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Convert To Path"
+#~ msgstr "Pretvori u stazu"
+
+#~ msgid "Scripts"
+#~ msgstr "Skripte"
+
+#~ msgid "Script Manager"
+#~ msgstr "Upravljač skriptama"
+
+#~ msgid "Execute Script File..."
+#~ msgstr "Izvrši datoteku skripte..."
+
+#~ msgid "Script Manager..."
+#~ msgstr "Upravljač skriptama..."
+
+#~ msgid "Execute Script File"
+#~ msgstr "Izvrši datoteku skripte"
+
+#~ msgid "Install Script Package"
+#~ msgstr "Instaliraj paket skripti"
+
+#~ msgid "Could not read the package \"%1\"."
+#~ msgstr "Nisam mogao da pročitam paket „%1“."
+
+#~ msgid "The package \"%1\" does not contain a valid install.rc file."
+#~ msgstr "Paket \"%1\" ne sadrži validnu install.rc datoteku."
+
+#~ msgid "Failed to parse the install.rc file at package \"%1\"."
+#~ msgstr "Neuspjelo anliziranje install.rc datoteke kod paketa \"%1\"."
+
+#~ msgid ""
+#~ "Failed to determinate location where the package \"%1\" should be "
+#~ "installed to."
+#~ msgstr ""
+#~ "Neuspjelo ustanovljavanje lokacije gdje se paket podataka \"%1\" trebao "
+#~ "instalirati."
+
+#~ msgid ""
+#~ "A script package with the name \"%1\" already exists. Replace this "
+#~ "package?"
+#~ msgstr ""
+#~ "Paket skripti po imenu „%1“ već postoji. Želite li da ga zamijenite?"
+
+#~ msgid "Replace"
+#~ msgstr "Zamijeni"
+
+#~ msgid ""
+#~ "Could not uninstall this script package. You may not have sufficient "
+#~ "permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Nisam mogao da uklonim paket skripti. Možda nemate dozvole za brisanje "
+#~ "direktorijuma „%1“."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\" since the script is not "
+#~ "installed."
+#~ msgstr ""
+#~ "Nije bilo moguće deinstalirati paket podataka \"%1\" s obzirom da nije "
+#~ "instaliran."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\". You may not have "
+#~ "sufficient permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Nije bilo moguće deinstalirati paket podataka \"%1.\" Vjerovatno niste "
+#~ "dovoljno ovlašteni da izbrišete direktorij \"%1\"."
+
+#~ msgid "Save"
+#~ msgstr "Sačuvaj"
+
+#~ msgid ""
+#~ "<qt>This wizard will guide you through the proccess of adding a new "
+#~ "resource to your scripts.</qt>"
+#~ msgstr ""
+#~ "<qt>Ovaj čarobnjak će vas voditi kroz proces dodavanja novih resursa u "
+#~ "vaš paket podataka.</qt>"
+
+#~ msgid "Add script file"
+#~ msgstr "Dodaj datoteku skripte"
+
+#~ msgid "Add collection folder"
+#~ msgstr "Dodaj direktorij kolekcije"
+
+#~ msgid "Install script package file"
+#~ msgstr "Instaliraj datoteku paketa skripte"
+
+#~ msgid "Install online script package"
+#~ msgstr "Instalirajte preko interneta skriptni paket"
+
+#~ msgid "Add"
+#~ msgstr "Dodaj"
+
+#~ msgid "Script"
+#~ msgstr "Skripta"
+
+#~ msgid "Collection"
+#~ msgstr "Kolekcija"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master slide"
+#~ msgstr "Promijeni glavni slajd"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master page"
+#~ msgstr "Promijeni glavnu stranicu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "Podesi raspored stranice"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display master background"
+#~ msgstr "Prikaži glavnu pozadinu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display slide background"
+#~ msgstr "Prikaži pozadinu slajda"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display page background"
+#~ msgstr "Prikaži pozadinu strane"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Show master shapes"
+#~ msgstr "Prikaži glavne oblike"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Hide master shapes"
+#~ msgstr "Sakrij glavne oblike"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] "Obriši slajd"
+#~ msgstr[1] "Obriši slajdove"
+#~ msgstr[2] "Obriši slajdove"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "Obriši stranicu"
+#~ msgstr[1] "Obriši stranice"
+#~ msgstr[2] "Obriši stranice"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr "Umetni slajd"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr "Umetni stranicu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "Pomjeri slajd"
+#~ msgstr[1] "Pomjeri slajdove"
+#~ msgstr[2] "Pomjeri slajdove"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] "Pomjeri stranicu"
+#~ msgstr[1] "Pomjeri stranice"
+#~ msgstr[2] "Pomjeri stranice"
+
+#~ msgid "Configure"
+#~ msgstr "Podesi"
+
+#~ msgid "Misc"
+#~ msgstr "Razno"
+
+#~ msgid "Grid"
+#~ msgstr "Mreža"
+
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "Dokument"
+
+#~ msgid "Document Settings"
+#~ msgstr "Postavke dokumenta"
+
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "Select a master slide design:"
+#~ msgstr "Odaberite glavni dizajn slajda:"
+
+#~ msgid "Master Slide"
+#~ msgstr "Glavni slajd"
+
+#~ msgid "Select a master page design:"
+#~ msgstr "Odaberite glavni dizajn stranice:"
+
+#~ msgid "Master Page"
+#~ msgstr "Glavna stranica"
+
+#~ msgid "Slide %1"
+#~ msgstr "Slajd %1"
+
+#~ msgid "Page  %1"
+#~ msgstr "Strana %1"
+
+#~ msgid "Layer"
+#~ msgstr "Nivo"
+
+#~ msgid "Group"
+#~ msgstr "Grupa"
+
+#~ msgid "Shape"
+#~ msgstr "Oblik"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "Preimenuj slajd"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "Preimenuj stranicu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "Preimenuj sloj"
+
+#~ msgid "Slide"
+#~ msgstr "Slajd"
+
+#~ msgid "Visible"
+#~ msgstr "Vidljiv"
+
+#~ msgid "Locked"
+#~ msgstr "Zaključan"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reparent shapes"
+#~ msgstr "Reparentni oblici"
+
+#~ msgid "&Move Here"
+#~ msgstr "&Premjesti ovdje"
+
+#~ msgid "&Copy Here"
+#~ msgstr "&Kopiraj ovdje"
+
+#~ msgid "C&ancel"
+#~ msgstr "&Odustani"
+
+#~ msgid "Document"
+#~ msgstr "Dokument"
+
+#~ msgid "Add a new slide or layer"
+#~ msgstr "Dodati novi slajd ili sloj"
+
+#~ msgid "Add a new page or layer"
+#~ msgstr "Dodati novu stranicu ili sloj"
+
+#~ msgid "Page"
+#~ msgstr "Stranica"
+
+#~ msgid "Delete selected objects"
+#~ msgstr "Izbriši odabrane objekte"
+
+#~ msgid "Raise selected objects"
+#~ msgstr "Podigni odabrane objekte"
+
+#~ msgid "Lower selected objects"
+#~ msgstr "Spusti odabrane objekte"
+
+#~ msgid "Minimal View"
+#~ msgstr "Minmalni pogled"
+
+#~ msgid "Detailed View"
+#~ msgstr "Detaljni pogled"
+
+#~ msgid "Thumbnail View"
+#~ msgstr "Umanjeni pogled"
+
+#~ msgid "View mode"
+#~ msgstr "Način prikaza"
+
+#~ msgid "Enter the name of the new layer:"
+#~ msgstr "Unesi ime novog sloja:"
+
+#~ msgid "New Layer"
+#~ msgstr "Novi sloj"
+
+#~ msgid "New layer"
+#~ msgstr "Novi sloj"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "Stvori sloj"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "Izbriši sloj"
+
+#~ msgid "Could not delete all layers. At least one layer is required."
+#~ msgstr "Ne mogu  izbrisati sve slojeve. Barem jedan je potreban."
+
+#~ msgid "Error deleting layers"
+#~ msgstr "Greška pri brisanju slojeva"
+
+#~ msgid "Add a new slide"
+#~ msgstr "Dodaj novi slajd"
+
+#~ msgid "Add a new page"
+#~ msgstr "Dodaj novu stranicu"
+
+#~ msgid "Page %1"
+#~ msgstr "Strana %1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] "Umetni slajd"
+#~ msgstr[1] "Umetni slajdove"
+#~ msgstr[2] "Umetni slajdove"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] "Umetni stranicu"
+#~ msgstr[1] "Umetni stranice"
+#~ msgstr[2] "Umetni stranice"
+
+#~ msgid "Tools"
+#~ msgstr "Alati"
+
+#~ msgid "D&elete"
+#~ msgstr "O&briši"
+
+#~ msgid "Show Master Pages"
+#~ msgstr "Prikaži glavne stranice"
+
+#~ msgid "Show Rulers"
+#~ msgstr "Prikaži lenjire"
+
+#~ msgid "Show/hide the view's rulers"
+#~ msgstr "Prikaži/sakrij prikaz lenjira"
+
+#~ msgid "Insert Page"
+#~ msgstr "Ubaci stranicu"
+
+#~ msgid "Insert a new page after the current one"
+#~ msgstr "Umetnite novu stranicu nakon što je trenutna umetnuta"
+
+#~ msgid "Copy Page"
+#~ msgstr "Kopiraj stranicu"
+
+#~ msgid "Copy the current page"
+#~ msgstr "Kopirajte trenutnu stranicu"
+
+#~ msgid "Delete Page"
+#~ msgstr "Obriši stranicu"
+
+#~ msgid "Delete the current page"
+#~ msgstr "Obrišite trenutnu stranicu"
+
+#~ msgid "Master Page..."
+#~ msgstr "Glavna stranica..."
+
+#~ msgid "Page Layout..."
+#~ msgstr "Raspored strane..."
+
+#~ msgid "Variable"
+#~ msgstr "Promjenljiva"
+
+#~ msgid "Import Document..."
+#~ msgstr "Uvezi dokument..."
+
+#~ msgid "Configure..."
+#~ msgstr "Konfiguriši..."
+
+#~ msgid "Import Slideshow"
+#~ msgstr "Uvezi prikaz slajdova"
+
+#~ msgid "Import Document"
+#~ msgstr "Uvezi dokument"
+
+#~ msgid ""
+#~ "Could not import\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ne mogu uvesti\n"
+#~ "%1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr "Promijeni raspored stranice"
+
+#~ msgid "Set image ..."
+#~ msgstr "Postavite sliku..."
+
+#~ msgid "Background"
+#~ msgstr "Pozadina"
+
+#~ msgid "Page Background"
+#~ msgstr "Pozadina stranice"
+
+#~ msgid "Page Design"
+#~ msgstr "Dizajn stranice"
+
+#~ msgid "Slide Design"
+#~ msgstr "Dizajn slajdova"
+
+#~ msgid "Use background of master page"
+#~ msgstr "Koristite pozadinu master stranice"
+
+#~ msgid "Use background of master slide"
+#~ msgstr "Koristite pozadinu master slajda"
+
+#~ msgid "Display shapes of master page"
+#~ msgstr "Prikaz oblike master stranice"
+
+#~ msgid "Display shapes of master slide"
+#~ msgstr "Prikaz oblike master slajda"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change slide background image"
+#~ msgstr "Promjena pozadinske slike slajda"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page background image"
+#~ msgstr "Promjena pozadinske slike stranice"
+
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "Master slajd %1/%2"
+
+#~ msgid "Slide %1/%2"
+#~ msgstr "Slajd %1/%2"
+
+#~ msgid "Master Page %1/%2"
+#~ msgstr "Master stranica %1/%2"
+
+#~ msgid "Page %1/%2"
+#~ msgstr "Strana %1/%2"
+
+#~ msgid "Check Box"
+#~ msgstr "Kućica"
+
+#~ msgid "Field"
+#~ msgstr "Polje"
+
+#~ msgid "Label"
+#~ msgstr "Labela"
+
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgid "Section Editor"
+#~ msgstr "Uređivač sekcija"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "Promjena liste"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "Promjena stilova"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "Brisanje"
+
+#~ msgid "Key Press"
+#~ msgstr "Pritisak dugmeta"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "Tekst"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "Obriši kolonu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "Obriši red"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "Umetni fusnotu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr "Umetni endnotu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Right"
+#~ msgstr "Ubaci kolonu desno"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr "Ubaci kolonu lijevo"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Below"
+#~ msgstr "Ubaci red ispod"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "Ubaci red iznad"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List Numbering"
+#~ msgstr "Promjena numerisanja liste"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "Formatiram"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Direct Paragraph Formatting"
+#~ msgstr "Izravno formatiranje paragrafa"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr "Preimenovanje sekcije"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr "Prilagodi širinu kolone"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Row Height"
+#~ msgstr "Prilagodi visinu kolone"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "Umetni kao tekst"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "Umetni"
+
+#~ msgid "Index Reference"
+#~ msgstr "Indeksna referenca"
+
+#~ msgid "Text Reference"
+#~ msgstr "Referenca za tekst"
+
+#~ msgid "Please create an index to reference first."
+#~ msgstr "Molim prvo kreirajte indeks na referencu."
+
+#~ msgid "Select the index you want to reference"
+#~ msgstr "Označite index koji želite referencirati"
+
+#~ msgid "Found 1 match"
+#~ msgid_plural "Found %1 matches"
+#~ msgstr[0] "Nađeno %1 slaganje"
+#~ msgstr[1] "Nađena %1 slaganja"
+#~ msgstr[2] "Nađeno %1 slaganja"
+
+#~ msgid "Found no match"
+#~ msgstr "Nije pronađeno ništa što se poklapa"
+
+#~ msgid ""
+#~ "Found no match\n"
+#~ "\n"
+#~ "No text was replaced"
+#~ msgstr ""
+#~ "Nije pronađeno ništa što se poklapa\n"
+#~ "\n"
+#~ "Tekst nije zamjenjen"
+
+#~ msgid "1 replacement made"
+#~ msgid_plural "%1 replacements made"
+#~ msgstr[0] "%1 zamjena urađena"
+#~ msgstr[1] "%1 zamjene urađeno"
+#~ msgstr[2] "%1 zamjena urađeno"
+
+#~ msgid "Replace %1 with %2?"
+#~ msgstr "Zamijeni %1 sa %2?"
+
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "Nova sekcija %1"
+
+#~ msgctxt "Underline Style"
+#~ msgid "None"
+#~ msgstr "Nijedan"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "Jednostruko"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "Dvostruko"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "New Paragraph"
+#~ msgstr "Novi paragraf"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "Dodaj bilješku"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "Dodaj pribilješku"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "Umetni index"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "Umetni varijablu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Key Press"
+#~ msgstr "Pritisak Dugmeta"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "Umetni prekid"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "Umetni tabelu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "Spoji ćelije"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "Razdvoji ćelije"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr "Prilagodi širinu tabele"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Border Formatting"
+#~ msgstr "Promjenite format ruba"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Umetni sadržaj"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr "Izmijeni tabelu sadržaja"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Ubaci bibliografiju"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "Dodaj citat"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Typing"
+#~ msgstr "Tipkanje"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr "Podebljano"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "Kurziv"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "Podvučeno"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr "Precrtano"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr "Promijeni poravnanje"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr "Postavi uspravno poravnanje"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "Smanji uvlačenje"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "Povećaj uvlačenje"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "Umanji veličinu fonta"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "Povećaj veličinu fonta"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr "Postavi font"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr "Postavi veličinu fonta"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr "Postavite boju pozadine"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Text Color"
+#~ msgstr "Podesi boju teksta"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr "Postavi stil znakova"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Paragraph Style"
+#~ msgstr "Postavi stil paragrafa"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "Oblik"
+
+#~ msgid "Default"
+#~ msgstr "Podrazumijevano"
+
+#~ msgctxt "Default text for undo action"
+#~ msgid "Undo"
+#~ msgstr "Poništi"
+
+#~ msgid "Undo %1"
+#~ msgstr "Poništi %1"
+
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "Ponovi"
+
+#~ msgid "Redo %1"
+#~ msgstr "Ponovi %1"
+
+#, fuzzy
+#~| msgid "Empty"
+#~ msgid "<empty>"
+#~ msgstr "Prazno"
+
+#~ msgid "Redo"
+#~ msgstr "Ponovi"
+
+#~ msgid "Undo"
+#~ msgstr "Poništi"
+
+#~ msgid "&File"
+#~ msgstr "&Datoteka"
+
+#~ msgid "&Settings"
+#~ msgstr "&Postavke"
+
+#~ msgid "File"
+#~ msgstr "Datoteka"
+
+#~ msgid "Add new author profile (starts out as a copy of current)"
+#~ msgstr "Dodaj novi profil autora (počni kao kopiju trenutnog)"
+
+#~ msgid "Delete the author profile"
+#~ msgstr "Izbriši profil autora"
+
+#~ msgid "Default Author Profile"
+#~ msgstr "Zadani profil autora"
+
+#~ msgid "Name (not duplicate or blank name):"
+#~ msgstr "Ime (nije duplikat ili prazno ime):"
+
+#~ msgid "Name of Profile"
+#~ msgstr "Naziv profila"
+
+#~ msgid "Name:"
+#~ msgstr "Naziv:"
+
+#~ msgid "Initials:"
+#~ msgstr "Inicijali:"
+
+#~ msgid "Title:"
+#~ msgstr "Naslov:"
+
+#~ msgid "Position:"
+#~ msgstr "Pozicija:"
+
+#~ msgid "Company:"
+#~ msgstr "Preduzeće:"
+
+#~ msgid "Email:"
+#~ msgstr "Email:"
+
+#~ msgid "Telephone (home):"
+#~ msgstr "Telefon (kuća):"
+
+#~ msgid "Telephone (work):"
+#~ msgstr "Telefon (posao):"
+
+#~ msgid "Fax:"
+#~ msgstr "Faks:"
+
+#~ msgid "Street:"
+#~ msgstr "Ulica:"
+
+#~ msgid "City:"
+#~ msgstr "Grad:"
+
+#~ msgid "Country:"
+#~ msgstr "Država:"
+
+#~ msgid "No autosave"
+#~ msgstr "Nema auto-snimanja"
+
+#~ msgctxt "unit symbol for minutes, leading space as separator"
+#~ msgid " min"
+#~ msgstr " min"
+
+#~ msgid "Autosave interval:"
+#~ msgstr "Interval automatskog snimanja:"
+
+#~ msgid "Create backup file:"
+#~ msgstr "Pravi rezervnu datoteku:"
+
+#~ msgid "Show grid:"
+#~ msgstr "Prikaži mrežu:"
+
+#~ msgid "Snap to grid:"
+#~ msgstr "Poravnaj s rešetkom:"
+
+#~ msgid "Grid color:"
+#~ msgstr "Boja mreže:"
+
+#~ msgid "Spacing"
+#~ msgstr "Razmak"
+
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "&Horizontalno:"
+
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "&Vertikalno:"
+
+#~ msgid "Units:"
+#~ msgstr "Jedinice:"
+
+#~ msgid "Handle radius:"
+#~ msgstr "Radijus držača:"
+
+#~ msgid "Grab sensitivity:"
+#~ msgstr "Osjetljivost hvatanja:"
+
+#~ msgid "Paste offset:"
+#~ msgstr "Pozicija umetanja:"
+
+#~ msgid "Paste at Cursor:"
+#~ msgstr "Zalijepi na kursor:"
+
+#~ msgid "Only print and exit"
+#~ msgstr "Samo odštampaj i izađi"
+
+#~ msgid "Open a new document with a template"
+#~ msgstr "Napravi novi dokument prema šablonu"
+
+#~ msgid "Override display DPI"
+#~ msgstr "Prevaziđi DPI ekrana"
+
+#~ msgid "Only export to PDF and exit"
+#~ msgstr "Samo izvezi u PDF i izađi"
+
+#~ msgid "Filename for export-pdf"
+#~ msgstr "Ime datoteke za izvoz-pdf"
+
+#~ msgid "just load the file and then exit"
+#~ msgstr "samo učitaj datoteku i izađi"
+
+#~ msgid "load the file, show the window and progressbar and then exit"
+#~ msgstr "učitaj datoteku, pokaži prozor i traku napretka a zatim izađi"
+
+#~ msgid "Filename to write profiling information into."
+#~ msgstr "Ime datoteke u koju se pišu informacija profilisanja."
+
+#~ msgid "Load a file and save it as an ODF file. Meant for debugging."
+#~ msgstr ""
+#~ "Učitaj datoteku i sačuvaj je kao datoteku ODF. Namijenjeno za otklanjanje "
+#~ "grešaka."
+
+#~ msgid "Calligra"
+#~ msgstr "Calligra"
+
+#~ msgid ""
+#~ "You are running a 32 bits build on a 64 bits Windows.\n"
+#~ "This is not recommended.\n"
+#~ "Please download and install the x64 build instead."
+#~ msgstr ""
+#~ "Pokrenuli ste 32 bitnu verziju na 64 bitnom Windows.\n"
+#~ "To nije preporučljivo.\n"
+#~ "Molim preuzmite i instalirajte x64 gradnju umjesto toga."
+
+#~ msgid "%1: Critical Error"
+#~ msgstr "%1: Kritična greška"
+
+#~ msgid ""
+#~ "Essential application components could not be found.\n"
+#~ "This might be an installation issue.\n"
+#~ "Try restarting or reinstalling."
+#~ msgstr ""
+#~ "Nije moguće pronaći osnovne dijelove aplikacije .\n"
+#~ "To bi moglao biti problem  instalacije.\n"
+#~ "Pokušajte ponovno pokrenuti ili reinstalirati."
+
+#~ msgid "No template found for: %1"
+#~ msgstr "Uzorak nije pronađen za:%1"
+
+#~ msgid "Too many templates found for: %1"
+#~ msgstr "Pronađeno je previše šablona za: %1"
+
+#~ msgid "Template %1 failed to load."
+#~ msgstr "Šablon %1 nije mogao da se učita."
+
+#~ msgctxt "@title:window"
+#~ msgid "Recover Files"
+#~ msgstr "Oporavak datoteka"
+
+#~ msgid "The following autosave file can be recovered:"
+#~ msgstr "Automatsko spremanje datoteke koje slijedi može biti obnovljeno:"
+
+#~ msgid "The following autosave files can be recovered:"
+#~ msgstr "Automatsko spremanje datoteke koje slijedi može biti obnovljeno:"
+
+#~ msgid "Always use this template at application start up"
+#~ msgstr "Uvijek koristi ovaj šablon pri pokretanju programa"
+
+#~ msgid "Always use this template"
+#~ msgstr "Uvijek koristi ovaj šablon"
+
+#~ msgid "Making backup..."
+#~ msgstr "Pravim rezervnu kopiju..."
+
+#~ msgid "Saving..."
+#~ msgstr "Snimam..."
+
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ne mogu snimiti\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Ne mogu snimiti%1\n"
+#~ "Razlog: %2"
+
+#~ msgid "Document <i>%1</i> saved"
+#~ msgstr "Dokument <i>%1</i> snimljen"
+
+#~ msgid ""
+#~ "The password of this encrypted document is not known. Autosave aborted! "
+#~ "Please save your work manually."
+#~ msgstr ""
+#~ "Šifra ovog kodiranog dokumenta nije poznata. Autosnimanje odbijeno! "
+#~ "Molimo da snimite vaš rad ručno."
+
+#~ msgid "Autosaving..."
+#~ msgstr "Automatski snimam..."
+
+#~ msgid "Error during autosave! Partition full?"
+#~ msgstr "Greška tokom automatskog snimanja. Nema prostora na disku?"
+
+#~ msgid "Could not create the file for saving"
+#~ msgstr "Nisam mogao da napravim datoteku za snimanje"
+
+#~ msgid "Not able to write '%1'. Partition full?"
+#~ msgstr "Nije moguće zapisati '%1'. Particija puna?"
+
+#~ msgid "Not able to write RDF metadata. Partition full?"
+#~ msgstr "Nije bilo moguće upisati RDF metapodatke. Particija puna?"
+
+#~ msgid "Error while trying to write '%1'. Partition full?"
+#~ msgstr "Ne mogu da zapišem „%1“. Nema prostora na disku?"
+
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Loše formiran URL\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "An autosaved file exists for this document.\n"
+#~ "Do you want to open it instead?"
+#~ msgstr ""
+#~ "Pronašao sam automatski snimljenu verziju ovog dokumenta.\n"
+#~ "Da li je želite otvoriti?"
+
+#~ msgid "The file %1 does not exist."
+#~ msgstr "Datoteka %1 ne postoji."
+
+#~ msgid "Opening Document"
+#~ msgstr "Otvaram okument"
+
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "Ne mogu kreirati filter priključak"
+
+#~ msgid "File not found"
+#~ msgstr "Datoteka nije pronađena"
+
+#~ msgid "Cannot create storage"
+#~ msgstr "Ne mogu napraviti mjesto za čuvanje podataka"
+
+#~ msgid "Bad MIME type"
+#~ msgstr "Loš MIME tip"
+
+#~ msgid "Format not recognized"
+#~ msgstr "Format nije prepoznat"
+
+#~ msgid "Not implemented"
+#~ msgstr "Nije implementirano"
+
+#~ msgid "Parsing error"
+#~ msgstr "Greška u raščlanjivanju"
+
+#~ msgid "Document is password protected"
+#~ msgstr "Dokument je zaštićen šifrom"
+
+#~ msgid "Invalid file format"
+#~ msgstr "Pogrešan format datoteke"
+
+#~ msgid "Internal error"
+#~ msgstr "Interna greška"
+
+#~ msgid "Out of memory"
+#~ msgstr "Nema više memorije"
+
+#~ msgid "Empty Filter Plugin"
+#~ msgstr "Isprazni filter priključak"
+
+#~ msgid "Trying to load into the wrong kind of document"
+#~ msgstr "Pokušaj da se učita u pogrešnu vrstu dokumenta"
+
+#~ msgid "Failed to download remote file"
+#~ msgstr "Skidanje udaljene datoteke nije uspjelo"
+
+#~ msgid "Unknown error"
+#~ msgstr "Nepoznata greška"
+
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr ""
+#~ "Ne mogu otvoriti%2.\n"
+#~ "Razlog:%1.\n"
+#~ "%3"
+
+#~ msgid "Document <i>%1</i> loaded"
+#~ msgstr "Dokument <i>%1</i> se učitava"
+
+#~ msgid "Could not find %1"
+#~ msgstr "Nisam mogao da nađem %1"
+
+#~ msgid ""
+#~ "Parsing error in %1 at line %2, column %3\n"
+#~ "Error message: %4"
+#~ msgstr ""
+#~ "Greška pri raščlanjivanju u %1 u liniji %2, koloni %3\n"
+#~ "Poruka o grešci: %4"
+
+#~ msgid "%1 is not a file."
+#~ msgstr "%1 nije datoteka."
+
+#~ msgid "Could not open the file for reading (check read permissions)."
+#~ msgstr ""
+#~ "Nisam mogao da otvorim datoteku za čitanje (provjerite dozvole čitanja)."
+
+#~ msgid "Could not read the beginning of the file."
+#~ msgstr "Nisam mogao da pročitam početak datoteke."
+
+#~ msgid ""
+#~ "parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "greška u raščlanjivanju glavnog dokumenta u liniji %1, koloni %2\n"
+#~ "Poruka o grešci: %3"
+
+#~ msgid "Not a valid Calligra file: %1"
+#~ msgstr "Nije važeća Calligra datoteka: %1"
+
+#~ msgid "Invalid document: no file 'maindoc.xml'."
+#~ msgstr "Neispravan dokument: nema datoteke „maindoc.xml“."
+
+#~ msgid ""
+#~ "Document <i>%1</i> contains several versions. Go to File->Versions to "
+#~ "open an old version."
+#~ msgstr ""
+#~ "Dokument <i>%1</i> sadržava nekoliko verzija. Idi na Datoteka->Verzije da "
+#~ "se otvaraju stare verzije."
+
+#~ msgid "Untitled"
+#~ msgstr "Neimenovano"
+
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr ""
+#~ "<p>Dokument <b>'%1'</b> je mijenjan.</p><p>Želite li ga snimiti?</p>"
+
+#~ msgid "Internal error: saveXML not implemented"
+#~ msgstr "Interna greška: saveXML nije implementiran"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ne mogu otvoriti\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Ne mogu otvoriti %1\n"
+#~ "Razlog: %2"
+
+#~ msgid "a word processing"
+#~ msgstr "obrada riječi"
+
+#~ msgid "a spreadsheet"
+#~ msgstr "tabelarni proračun"
+
+#~ msgid "a presentation"
+#~ msgstr "prezentacija"
+
+#~ msgid "a chart"
+#~ msgstr "grafikon"
+
+#~ msgid "a drawing"
+#~ msgstr "crtež"
+
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr ""
+#~ "Dokument \"%1\" je mijenjan.\n"
+#~ "Želite li snimiti vaše izmjene ili ih poništiti?"
+
+#~ msgid "Close Document"
+#~ msgstr "Zatvori dokument"
+
+#~ msgid "%1 %"
+#~ msgstr "%1 %"
+
+#~ msgid "No"
+#~ msgstr "Ne"
+
+#~ msgid "Yes"
+#~ msgstr "Da"
+
+#~ msgid "Could not export file."
+#~ msgstr "Ne može izvesti datoteku."
+
+#~ msgid "Missing Export Filter"
+#~ msgstr "Nedostaje filter za izvoz"
+
+#~ msgid ""
+#~ "Could not import file of type\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ne mogu uvesti datoteku tipa\n"
+#~ "%1"
+
+#~ msgid "Missing Import Filter"
+#~ msgstr "Nedostaje filter za uvoz"
+
+#~ msgid "Choose Filter"
+#~ msgstr "Izaberite filter"
+
+#~ msgid "Case Sensitive"
+#~ msgstr "Razlikovanje malih i velikih slova"
+
+#~ msgid "Match cases when searching"
+#~ msgstr "Poklapanje veličine slova pri traženju"
+
+#~ msgid "Match only whole words"
+#~ msgstr "Poklopi samo cijele riječi"
+
+#~ msgid "Whole Words Only"
+#~ msgstr "Samo cijele riječi"
+
+#~ msgid "Find from Cursor"
+#~ msgstr "Pronađi od kursora"
+
+#~ msgid "Start searching from the current cursor"
+#~ msgstr "Počni tražiti od sadašnjeg kursora"
+
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "Nađi:"
+
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "Sljedeći"
+
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "Prethodni"
+
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "Postavke"
+
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "Zamijeni:"
+
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "Zamijeni"
+
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "Zamijeni sve"
+
+#~ msgctxt "Total number of matches"
+#~ msgid "1 match found"
+#~ msgid_plural "%1 matches found"
+#~ msgstr[0] "nađeno %1 poklapanje"
+#~ msgstr[1] "nađena %1 poklapanja"
+#~ msgstr[2] "nađeno %1 poklapanja"
+
+#~ msgid "No matches found"
+#~ msgstr "Nema rezultata"
+
+#~ msgid "Search hit bottom, continuing from top."
+#~ msgstr "Pretraga dosegla dno, nastavljam s vrha."
+
+#~ msgid "Search hit top, continuing from bottom."
+#~ msgstr "Pretraga dosegla vrh, nastavljam s dna."
+
+#~ msgid "%1 unsaved document (%2)"
+#~ msgstr "%1 nesnimljen dokument (%2)"
+
+#~ msgid "Export as PDF..."
+#~ msgstr "Izvezi kao PDF..."
+
+#~ msgid "Reload"
+#~ msgstr "Ponovo učitaj"
+
+#~ msgid "Versions..."
+#~ msgstr "Verzije..."
+
+#~ msgid "Open ex&isting Document as Untitled Document..."
+#~ msgstr "Otvori po&stojeći dokument kao dokument bez naslova..."
+
+#~ msgid "E&xport..."
+#~ msgstr "Iz&vezi..."
+
+#~ msgid "En&crypt Document"
+#~ msgstr "Š&ifruj dokument"
+
+#~ msgid "&Uncompress to Directory"
+#~ msgstr "&Dekompresuj u Direktorij"
+
+#~ msgid "&New View"
+#~ msgstr "&Novi pogled"
+
+#~ msgid "Document Information"
+#~ msgstr "Podaci o dokumentu"
+
+#~ msgid "Full Screen Mode"
+#~ msgstr "Režim punog ekrana"
+
+#~ msgid "Show Dockers"
+#~ msgstr "Prikaži sidrišta"
+
+#, fuzzy
+#~| msgid "Show Dockers"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "Prikaži sidrišta"
+
+#~ msgid "Dockers"
+#~ msgstr "Dokeri"
+
+#~ msgid "(write protected)"
+#~ msgstr "(zaštićeno od pisanja)"
+
+#~ msgid "Save as %1"
+#~ msgstr "Snimi kao %1"
+
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "%1 (Nepoznat tip datoteke)"
+
+#~ msgid ""
+#~ "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
+#~ "want to save in this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Snimanjem kao %1 može doći do djelimičnog gubitka formatiranja."
+#~ "<p>Želite li i dalje da se snimi u ovom formatu?</qt>"
+
+#~ msgid "Confirm Save"
+#~ msgstr "Potvrdi snimanje"
+
+#~ msgid ""
+#~ "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you "
+#~ "still want to export to this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Izvoženjem u %1 može doći do djelimičnog gubitka formatiranja."
+#~ "<p>Želite li i dalje da se izveze u ovom formatu?</qt>"
+
+#~ msgid "Confirm Export"
+#~ msgstr "Potvrdi izvoz"
+
+#~ msgid "untitled"
+#~ msgstr "bez naslova"
+
+#~ msgid "Open Document"
+#~ msgstr "Otvori dokument"
+
+#~ msgid "Export as PDF"
+#~ msgstr "Izvezi kao PDF"
+
+#~ msgid "Cannot export to the specified file"
+#~ msgstr "Ne mogu izvesti u izabranu datoteku"
+
+#~ msgid "Document - %1"
+#~ msgstr "Dokument - %1"
+
+#~ msgid ""
+#~ "You will lose all changes made since your last save\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "Izgubit ćete sve napravljene promjene od prošlog snimljenog\n"
+#~ "Da li želite nastaviti?"
+
+#~ msgid "Warning"
+#~ msgstr "Upozorenje"
+
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "Prikaži traku %1"
+
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "Sakrij traku sa alatima %1"
+
+#~ msgid "Open Existing Document"
+#~ msgstr "Otvori postojeći dokument"
+
+#~ msgid "Recent Documents"
+#~ msgstr "Skorašnji dokumenti"
+
+#~ msgid "Custom Document"
+#~ msgstr "Poseban dokument"
+
+#~ msgid "Stop"
+#~ msgstr "Zaustavi"
+
+#~ msgid "Printing"
+#~ msgstr "Štampam"
+
+#~ msgid "Printing done"
+#~ msgstr "Štampanje završeno"
+
+#~ msgid "Close"
+#~ msgstr "Zatvori"
+
+#~ msgid "Stopped"
+#~ msgstr "Zaustavljen"
+
+#~ msgid "Open This Document"
+#~ msgstr "Otvori ovaj dokument"
+
+#~ msgctxt "File modification date and time. %1 is date time"
+#~ msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Izmijenjeno:</b></td><td>%1</td></tr>"
+
+#~ msgctxt "File access date and time. %1 is date time"
+#~ msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Pristupljeno:</b></td><td>%1</td></tr>"
+
+#~ msgid "Show Guides"
+#~ msgstr "Prikaži vodiče"
+
+#~ msgid "Shows or hides guides"
+#~ msgstr "Prikazuje ili skriva vodiće"
+
+#~ msgid "Create Template"
+#~ msgstr "Napravi šablon"
+
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "Ime:"
+
+#~ msgid "Group:"
+#~ msgstr "Grupa:"
+
+#~ msgid "&Add Group..."
+#~ msgstr "&Dodaj grupu..."
+
+#~ msgid "&Remove"
+#~ msgstr "&Ukloni"
+
+#~ msgid "Picture"
+#~ msgstr "Slika"
+
+#~ msgid "&Preview"
+#~ msgstr "&Pregled"
+
+#~ msgid "Custom:"
+#~ msgstr "Posebno:"
+
+#~ msgid "&Select..."
+#~ msgstr "&Izaberite..."
+
+#~ msgid "Use the new template as default"
+#~ msgstr "Koristi novi šablon kao podrazumijevani"
+
+#~ msgid "Use the new template every time %1 starts"
+#~ msgstr "Koristi novi šablon svaki put kada se %1 pokrene"
+
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr "Da li zaista želite pisati preko postojećeg šablona '%1'?"
+
+#~ msgid "Add Group"
+#~ msgstr "Dodaj grupu"
+
+#~ msgid "Enter group name:"
+#~ msgstr "Unesite ime grupe:"
+
+#~ msgid "This name is already used."
+#~ msgstr "Ovo ime već postoji."
+
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "Da li zaista želite ukloniti ovu grupu?"
+
+#~ msgid "Remove Group"
+#~ msgstr "Ukloni grupu"
+
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "Da li zaista želite ukloniti ovaj šablon?"
+
+#~ msgid "Remove Template"
+#~ msgstr "Ukloni šablon"
+
+#~ msgid "&Delete"
+#~ msgstr "O&briši"
+
+#~ msgid "Could not load picture."
+#~ msgstr "Ne mogu učitati sliku."
+
+#~ msgid "No picture available."
+#~ msgstr "Niti jedna slika nije dostupna."
+
+#~ msgid "Use This Template"
+#~ msgstr "Koristi ovaj šablon"
+
+#~ msgid "Version"
+#~ msgstr "Verzija"
+
+#~ msgid "Date & Time"
+#~ msgstr "Datum i vrijeme"
+
+#~ msgid "Saved By"
+#~ msgstr "Snimio"
+
+#~ msgid "Comment"
+#~ msgstr "Komentar"
+
+#~ msgid "&Add"
+#~ msgstr "&Dodaj"
+
+#~ msgid "&Modify"
+#~ msgstr "&Izmijeni"
+
+#~ msgid "&Open"
+#~ msgstr "&Otvori"
+
+#~ msgid "A new version could not be added"
+#~ msgstr "Nova verzija nije mogla biti dodana"
+
+#~ msgid "Date: %1"
+#~ msgstr "Datum: %1"
+
+#~ msgid "Active Author Profile"
+#~ msgstr "Aktivni profil autora"
+
+#~ msgctxt "choice for author profile"
+#~ msgid "Anonymous"
+#~ msgstr "Anonimno"
+
+#~ msgid "Unknown"
+#~ msgstr "Nepoznat"
+
+#~ msgid ""
+#~ "This document contains an unknown checksum. When you give a password it "
+#~ "might not be verified."
+#~ msgstr ""
+#~ "Ovaj dokument sadrži neočekivani zbroj za provjeru. Ako ukucate šifru "
+#~ "eventualno neće biti verifikovana."
+
+#~ msgid ""
+#~ "This document contains an unknown encryption method. Some parts may be "
+#~ "unreadable."
+#~ msgstr ""
+#~ "Ovaj dokument sadrži neočekivani šifrirajući metod. Neki djelovi bi mogli "
+#~ "biti nečitljivi."
+
+#~ msgid ""
+#~ "This document contains incomplete encryption data. Some parts may be "
+#~ "unreadable."
+#~ msgstr ""
+#~ "Ovaj dokument sadrži nekompletne podatke šifriranja. Neki djelovi će "
+#~ "možda biti nečitljivi."
+
+#~ msgid ""
+#~ "QCA has currently no support for SHA1 or PBKDF2 using SHA1. The document "
+#~ "can not be opened."
+#~ msgstr ""
+#~ "QCA trenutno nema podršku za SHA1 ili PBKDF2 korištenjem SHA1. Dokument "
+#~ "se ne može otvoriti."
+
+#~ msgid ""
+#~ "The manifest file seems to be corrupted. It cannot be modified and the "
+#~ "document will remain unreadable. Please try and save the document again "
+#~ "to prevent losing your work."
+#~ msgstr ""
+#~ "Izgleda da je manifest datoteka pokvarena. Ne može biti promjenjena i "
+#~ "dokument će ostati nečitljiv. Molimo da pokušate ponovo snimiti dokument "
+#~ "kako bi se spriječilo gubljene vašeg rada."
+
+#~ msgid ""
+#~ "The manifest file cannot be written. The document will remain unreadable. "
+#~ "Please try and save the document again to prevent losing your work."
+#~ msgstr ""
+#~ "Manifest datoteka se ne može zapisati. Dokument će ostati nečitljiv."
+#~ "Molimo pokušajte ponovo snimiti dokument kako bi se spriječilo gubljenje "
+#~ "vašeg rada."
+
+#~ msgid "Please enter the password to open this file."
+#~ msgstr "Molimo da unesete šifru da bi otvorili ovu datoteku."
+
+#~ msgid "Please enter the password to encrypt the document with."
+#~ msgstr "Molimo unesite šifru da dekodirate dokument sa."
+
+#~ msgid "Do you want to save the password?"
+#~ msgstr "Želite li snimiti šifru?"
+
+#~ msgid "No store backend"
+#~ msgstr "Skladište nema zadnji dio"
+
+#~ msgid ""
+#~ "Parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Greška u raščlanjivanju glavnog dokumenta u liniji %1, koloni %2\n"
+#~ "Poruka o grešci: %3"
+
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "Ekran"
+
+#~ msgid "The directory mode is not supported for remote locations."
+#~ msgstr "Režim direktorija nije podržan za udaljene lokacije."
+
+#~ msgid "Calligra Storage"
+#~ msgstr "Calligra memorija"
+
+#~ msgid "Clear"
+#~ msgstr "Čisto"
+
+#~ msgid "Subtract"
+#~ msgstr "Oduzmi"
+
+#~ msgid "Multiply"
+#~ msgstr "Pomnoži"
+
+#~ msgid "Alpha mask"
+#~ msgstr "Alfa-maska"
+
+#~ msgid "Alpha"
+#~ msgstr "Alfa"
+
+#~ msgid "Undefined operation in the alpha color space"
+#~ msgstr "Nedefinisano djelovanje u prostoru alfa boje"
+
+#~ msgid "L*a*b* (16-bit integer/channel, unmanaged)"
+#~ msgstr "L*a*b* (16-bitni cjelobrojni/kanal, nerukovođen)"
+
+#~ msgid "Lightness"
+#~ msgstr "Osvijetljenost"
+
+#~ msgid "a*"
+#~ msgstr "a*"
+
+#~ msgid "b*"
+#~ msgstr "b*"
+
+#~ msgid "RGB (16-bit integer/channel, unmanaged)"
+#~ msgstr "RGB (16-bitni cjelobrojni/kanal, ne rukovođen )"
+
+#~ msgid "RGB (8-bit integer/channel, unmanaged)"
+#~ msgstr "RGB (8-bitni cjelobrojni/kanal, nerukovođen)"
+
+#~ msgid "Blue"
+#~ msgstr "Plava"
+
+#~ msgid "Green"
+#~ msgstr "Zelena"
+
+#~ msgid "Red"
+#~ msgstr "Crvena"
+
+#~ msgid "Undefined operation in the %1 space"
+#~ msgstr "Nedefinisano djelovanje u %1 prostora"
+
+#~ msgid "Undefined operation in the %1 color space"
+#~ msgstr "Nedefinisano djelovanje u %1  prostora boja"
+
+#~ msgid "Simple Color Conversion Engine"
+#~ msgstr "Pogon za pretvaranje običnih boja"
+
+#~ msgid "Alpha darken"
+#~ msgstr "Alfa potamniti"
+
+#~ msgid "Behind"
+#~ msgstr "Iza"
+
+#~ msgid "Dissolve"
+#~ msgstr "Razloži"
+
+#~ msgid "Erase"
+#~ msgstr "Briši"
+
+#~ msgid "Normal"
+#~ msgstr "Normalno"
+
+#~ msgid "Overlay"
+#~ msgstr "Preklapanje"
+
+#~ msgid "Grain Merge"
+#~ msgstr "Spojena zrna"
+
+#~ msgid "Grain Extract"
+#~ msgstr "Izvađena zrna"
+
+#~ msgid "Hard Mix"
+#~ msgstr "Čvrsta mješavina"
+
+#~ msgid "Geometric Mean"
+#~ msgstr "Geometrijska sredina"
+
+#~ msgid "Parallel"
+#~ msgstr "Paralelno"
+
+#~ msgid "Allanon"
+#~ msgstr "Allanon"
+
+#~ msgid "Color Dodge"
+#~ msgstr "Izbjegavanje boja"
+
+#~ msgid "Linear Dodge"
+#~ msgstr "Linearno izbjegavanje"
+
+#~ msgid "Lighten"
+#~ msgstr "Posvijetli"
+
+#~ msgid "Hard Light"
+#~ msgstr "Jako svjetlo"
+
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "Blago svjetlo (SVG)"
+
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "Blago svjetlo (Photoshop)"
+
+#~ msgid "Gamma Light"
+#~ msgstr "Gama svjetlo"
+
+#~ msgid "Vivid Light"
+#~ msgstr "Živopisno svjetlo"
+
+#~ msgid "Pin Light"
+#~ msgstr "Dodirujuće svjetlo"
+
+#~ msgid "Linear Light"
+#~ msgstr "Linearno svjetlo"
+
+#~ msgid "Color Burn"
+#~ msgstr "Nagorijevanje bojama"
+
+#~ msgid "Linear Burn"
+#~ msgstr "Linearo nagorijevanje"
+
+#~ msgid "Darken"
+#~ msgstr "Tamnije"
+
+#~ msgid "Gamma Dark"
+#~ msgstr "Gama tamno"
+
+#~ msgid "Addition"
+#~ msgstr "Sabiranje"
+
+#~ msgid "Inversed-Subtract"
+#~ msgstr "Inverzno-oduzimanja"
+
+#~ msgid "Divide"
+#~ msgstr "Podijeli"
+
+#~ msgid "Arcus Tangent"
+#~ msgstr "Arcus Tangens"
+
+#~ msgid "Difference"
+#~ msgstr "Razlika"
+
+#~ msgid "Exclusion"
+#~ msgstr "Isključenje"
+
+#~ msgid "Equivalence"
+#~ msgstr "Ekvivalencija"
+
+#~ msgid "Additive-Subtractive"
+#~ msgstr "Dodatak-odbijajuci"
+
+#~ msgid "Copy Red"
+#~ msgstr "Kopiraj crveno"
+
+#~ msgid "Copy Green"
+#~ msgstr "Kopiraj zeleno"
+
+#~ msgid "Copy Blue"
+#~ msgstr "Kopiraj plavo"
+
+#~ msgid "Color"
+#~ msgstr "Boja"
+
+#~ msgid "Hue"
+#~ msgstr "Nijansa"
+
+#~ msgid "Saturation"
+#~ msgstr "Zasićenje"
+
+#~ msgid "Increase Saturation"
+#~ msgstr "Povećaj zasićenje"
+
+#~ msgid "Decrease Saturation"
+#~ msgstr "Smanji zasićenje"
+
+#~ msgid "Luminosity"
+#~ msgstr "Osvjetljenje"
+
+#~ msgid "Increase Luminosity"
+#~ msgstr "Povećaj osvjetljenje"
+
+#~ msgid "Decrease Luminosity"
+#~ msgstr "Smanji osvjetljenje"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgid "Darker Color"
+#~ msgstr "Boja pozadine"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgid "Lighter Color"
+#~ msgstr "Boja linije"
+
+#~ msgid "Color HSI"
+#~ msgstr "Boja HSI"
+
+#~ msgid "Hue HSI"
+#~ msgstr "Nijansa HSI"
+
+#~ msgid "Saturation HSI"
+#~ msgstr "Zasićenje HSI"
+
+#~ msgid "Increase Saturation HSI"
+#~ msgstr "Povećaj zasićenje HSI"
+
+#~ msgid "Decrease Saturation HSI"
+#~ msgstr "Smanji zasićenje HSI"
+
+#~ msgid "Intensity"
+#~ msgstr "Intenzitet"
+
+#~ msgid "Increase Intensity"
+#~ msgstr "Povećaj intenzitet"
+
+#~ msgid "Decrease Intensity"
+#~ msgstr "Smanji intenzitet"
+
+#~ msgid "Color HSL"
+#~ msgstr "Boja HSL"
+
+#~ msgid "Hue HSL"
+#~ msgstr "Nijansa HSL"
+
+#~ msgid "Saturation HSL"
+#~ msgstr "Zasićenje HSL"
+
+#~ msgid "Increase Saturation HSL"
+#~ msgstr "Povećaj zasićenje HSL"
+
+#~ msgid "Decrease Saturation HSL"
+#~ msgstr "Smanji zasićenje HSL"
+
+#~ msgid "Increase Lightness"
+#~ msgstr "Pojačaj osvjetljenost"
+
+#~ msgid "Decrease Lightness"
+#~ msgstr "Smanji osvjetljenost"
+
+#~ msgid "Color HSV"
+#~ msgstr "Boja HSV"
+
+#~ msgid "Hue HSV"
+#~ msgstr "Nijansa HSV"
+
+#~ msgid "Saturation HSV"
+#~ msgstr "Zasićenje HSV"
+
+#~ msgid "Increase Saturation HSV"
+#~ msgstr "Povećaj zasićenje HSV"
+
+#~ msgid "Decrease Saturation HSV"
+#~ msgstr "Smanji zasićenje HSV"
+
+#~ msgid "Increase Value"
+#~ msgstr "Povećaj vrijednost"
+
+#~ msgid "Decrease Value"
+#~ msgstr "Smanji vrijednost"
+
+#~ msgid "Generic RGB Histogram"
+#~ msgstr "Generički RGB histogram"
+
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "G"
+#~ msgstr "G"
+
+#~ msgid "L*a*b* Histogram"
+#~ msgstr "L*a*b* Histogram"
+
+#~ msgid "L*"
+#~ msgstr "L*"
+
+#~ msgid "Generic L*a*b* Histogram"
+#~ msgstr "Opšti L*a*b Histogram"
+
+#~ msgid "RGB"
+#~ msgstr "RGB"
+
+#~ msgid "XYZ"
+#~ msgstr "XYZ"
+
+#~ msgid "L*a*b*"
+#~ msgstr "L*a*b*"
+
+#~ msgid "CMYK"
+#~ msgstr "CMYK"
+
+#~ msgid "Grayscale"
+#~ msgstr "Sive nijanse"
+
+#~ msgid "Grayscale (without transparency)"
+#~ msgstr "U sivim tonovima (bez prozirnosti)"
+
+#~ msgid "YCbCr"
+#~ msgstr "YCbCr"
+
+#~ msgid "8 Bits"
+#~ msgstr "8 bita"
+
+#~ msgid "16 Bits"
+#~ msgstr "16 bita"
+
+#~ msgid "16 Bits Float"
+#~ msgstr "16 bitni s zarezom"
+
+#~ msgid "32 Bits Float"
+#~ msgstr "32 bitni s zarezom"
+
+#~ msgid "64 Bits Float"
+#~ msgstr "64 bitni s zarezom"
+
+#~ msgid "Arithmetic"
+#~ msgstr "Aritmetički"
+
+#~ msgid "Negative"
+#~ msgstr "Negativ"
+
+#~ msgid "HSY"
+#~ msgstr "HSY"
+
+#~ msgid "HSI"
+#~ msgstr "HSI"
+
+#~ msgid "HSL"
+#~ msgstr "HSL"
+
+#~ msgid "HSV"
+#~ msgstr "HSV"
+
+#~ msgid "Mix"
+#~ msgstr "Miks"
+
+#~ msgid "Inverse Subtract"
+#~ msgstr "Inverzno oduzimanje"
+
+#~ msgid "Burn"
+#~ msgstr "Zagori"
+
+#~ msgid "Additive Subtractive"
+#~ msgstr "Odbijajaući dodatak"
+
+#~ msgid "Alpha Darken"
+#~ msgstr "Alfa-potamnjenje"
+
+#~ msgid "Bumpmap"
+#~ msgstr "Mapa reljefa"
+
+#~ msgid "SVG Gradient"
+#~ msgstr "SVG Gradijent"
+
+#~ msgid "Select the object you want to reference"
+#~ msgstr "Označite objekat koji želite referencirati"
+
+#~ msgid "Reference"
+#~ msgstr "Referenca"
+
+#~ msgid "Set For All Existing"
+#~ msgstr "Postavi za sve postojeće"
+
+#~ msgctxt "statement is an Rdf related term"
+#~ msgid "<qt>Edits will be lost.<p>There is %1 invalid statement left.</qt>"
+#~ msgid_plural ""
+#~ "<qt>Edits will be lost.<p>There are %1 invalid statements left.</qt>"
+#~ msgstr[0] ""
+#~ "<qt>Izmjene će biti izgubljene.<p>Ostala je %1 nevažeća naredba.</qt>"
+#~ msgstr[1] ""
+#~ "<qt>Izmjene će biti izgubljene.<p>Ostale su %1 nevažeće naredbe.</qt>"
+#~ msgstr[2] ""
+#~ "<qt>Izmjene će biti izgubljene.<p>Ostalo je %1 nevažećih naredbi.</qt>"
+
+#~ msgctxt "statement is an Rdf related term"
+#~ msgid "Discard invalid statements?"
+#~ msgstr "Odbaci nevažeće naredbe?"
+
+#~ msgid "Rdf"
+#~ msgstr "Rdf"
+
+#~ msgid "Triples"
+#~ msgstr "Trojke"
+
+#~ msgid "new"
+#~ msgstr "novi"
+
+#~ msgid "copy"
+#~ msgstr "kopija"
+
+#~ msgid "delete"
+#~ msgstr "brisanje"
+
+#~ msgid "Namespaces"
+#~ msgstr "Imenski prostori"
+
+#~ msgid "Prefix"
+#~ msgstr "Prefiks"
+
+#~ msgid "Namespace"
+#~ msgstr "Imenski prostor"
+
+#~ msgid "Semantic"
+#~ msgstr "Semantički"
+
+#~ msgid "SPARQL"
+#~ msgstr "SPARQL"
+
+#, fuzzy
+#~| msgid ""
+#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
+#~| "TR/REC-html40/strict.dtd\">\n"
+#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~| "css\">\n"
+#~| "p, li { white-space: pre-wrap; }\n"
+#~| "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~| "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\"># Insert your SPARQL query here<br /"
+#~| "># Results are shown below.</span></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">prefix rdf:  &lt;http://www.w3."
+#~| "org/1999/02/22-rdf-syntax-ns#&gt; </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">prefix foaf: &lt;http://xmlns.com/"
+#~| "foaf/0.1/&gt; </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">prefix pkg:  &lt;http://docs.oasis-"
+#~| "open.org/opendocument/meta/package/common#&gt; </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">prefix geo84: &lt;http://www.w3."
+#~| "org/2003/01/geo/wgs84_pos#&gt;</span></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">select ?s ?p ?o </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">where { </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\"> ?s ?p ?o </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">}</span></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p></body></html>"
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"># Insert your SPARQL query here<br /"
+#~ "># Results are shown below.</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix rdf:  &lt;http://www.w3."
+#~ "org/1999/02/22-rdf-syntax-ns#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix foaf: &lt;http://xmlns.com/"
+#~ "foaf/0.1/&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix pkg:  &lt;http://docs.oasis-"
+#~ "open.org/ns/office/1.2/meta/pkg#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix geo84: &lt;http://www.w3."
+#~ "org/2003/01/geo/wgs84_pos#&gt;</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">select ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">where { </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"> ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">}</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"># Ovdje ubacite SPARQL upit<br /># "
+#~ "Rezultati su dolje.</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix rdf:  &lt;http://www.w3."
+#~ "org/1999/02/22-rdf-syntax-ns#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix foaf: &lt;http://xmlns.com/"
+#~ "foaf/0.1/&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix pkg:  &lt;http://docs.oasis-"
+#~ "open.org/opendocument/meta/package/common#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix geo84: &lt;http://www.w3."
+#~ "org/2003/01/geo/wgs84_pos#&gt;</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">select ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">where { </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"> ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">}</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p></body></html>"
+
+#~ msgid "Stylesheets"
+#~ msgstr "Opisi stilova"
+
+#~ msgid ""
+#~ "Set the default stylesheet for Semantic objects in this document. New RDF "
+#~ "objects will use this stylesheet automatically. The buttons allow you to "
+#~ "set the stylesheet for all existing semantic objects to the new default "
+#~ "stylesheet as well."
+#~ msgstr ""
+#~ "Postavi ponuđene opise oblika za semantičke objekte u ovom dokumentu. "
+#~ "Novi RDF objekat će koristiti opis oblika automatski. Dugmad vam "
+#~ "dozvoljavaju da postavite opise oblika za sve postojeće semantičke "
+#~ "objekte kao i za nove ponuđene opise oblika."
+
+#~ msgid "Apply Stylesheet"
+#~ msgstr "Primjeni stil"
+
+#~ msgid "System"
+#~ msgstr "Sistem"
+
+#~ msgid "User"
+#~ msgstr "Korisnik"
+
+#~ msgid "Reapply Current"
+#~ msgstr "Ponovo primjeni trenutno"
+
+#~ msgid "Disassociate"
+#~ msgstr "Razveži"
+
+#~ msgid "Edit %1"
+#~ msgstr "Izmijeni %1"
+
+#~ msgid "Stylesheet Definition"
+#~ msgstr "Definicija stila"
+
+#~ msgid "Variables Available"
+#~ msgstr "Dostupne varijable"
+
+#~ msgid "Description"
+#~ msgstr "Opis"
+
+#~ msgid "Stylesheet Name"
+#~ msgstr "Ime stila"
+
+#~ msgid "Empty"
+#~ msgstr "Prazno"
+
+#~ msgid "URI"
+#~ msgstr "URI"
+
+#~ msgid "Literal"
+#~ msgstr "Literal"
+
+#~ msgid "Blank"
+#~ msgstr "Prazno"
+
+#~ msgid "Valid"
+#~ msgstr "Ispravan"
+
+#~ msgid "Subject"
+#~ msgstr "Tema"
+
+#~ msgid "Predicate"
+#~ msgstr "Predikat"
+
+#~ msgid "Obj Type"
+#~ msgstr "Obj tip"
+
+#~ msgid "DataType"
+#~ msgstr "Podatkovni tip"
+
+#~ msgid "Stored In"
+#~ msgstr "Snimljen u"
+
+#~ msgid "Invalid integer number"
+#~ msgstr "Neispravan cijeli broj"
+
+#~ msgid "This integer number may be too large."
+#~ msgstr "Možda je ovaj cijeli broj prevelik."
+
+#~ msgid "Invalid identifier"
+#~ msgstr "Neispravan identifikator"
+
+#~ msgid "Identifiers should start with a letter or '_' character"
+#~ msgstr "Identifikatori ne mogu počinjati slovom ili znakom '_'"
+
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "Nijedan"
+
+#~ msgid "Small Bullet"
+#~ msgstr "Mala tačka"
+
+#~ msgid "Circle Bullet"
+#~ msgstr "Kružić"
+
+#~ msgid "Square Bullet"
+#~ msgstr "Kvadratić"
+
+#~ msgid "Rhombus Bullet"
+#~ msgstr "Romb"
+
+#~ msgid "Check Mark Bullet"
+#~ msgstr "Tačka za označavanje"
+
+#~ msgid "Rightwards Arrow Bullet"
+#~ msgstr "Tačka strelica udesno"
+
+#~ msgid "Arabic"
+#~ msgstr "Arapski"
+
+#~ msgid "Lower Alphabetical"
+#~ msgstr "Mala slova"
+
+#~ msgid "Upper Alphabetical"
+#~ msgstr "Velika slova"
+
+#~ msgid "Upper Roman"
+#~ msgstr "Velika rimska"
+
+#~ msgid "Large Bullet"
+#~ msgstr "Veliki kružić"
+
+#~ msgid "Ballot X Bullet"
+#~ msgstr "Glasačka tačka"
+
+#~ msgid "Rightwards Arrow Head Bullet"
+#~ msgstr "Glavna tačka strelica udesno"
+
+#~ msgid "Bengali"
+#~ msgstr "Bengalski"
+
+#~ msgid "Gujarati"
+#~ msgstr "Gudžarati"
+
+#~ msgid "Gurumukhi"
+#~ msgstr "Gurumukhi"
+
+#~ msgid "Kannada"
+#~ msgstr "Kannada"
+
+#~ msgid "Malayalam"
+#~ msgstr "Malajalam"
+
+#~ msgid "Oriya"
+#~ msgstr "Orija"
+
+#~ msgid "Tamil"
+#~ msgstr "Tamilski"
+
+#~ msgid "Telugu"
+#~ msgstr "Telugu"
+
+#~ msgid "Tibetan"
+#~ msgstr "Tibetski"
+
+#~ msgid "Thai"
+#~ msgstr "Tajlandski"
+
+#~ msgid "Abjad"
+#~ msgstr "Abdžad"
+
+#~ msgid "AbjadMinor"
+#~ msgstr "Abdžad mala"
+
+#~ msgid "ArabicAlphabet"
+#~ msgstr "Arapska slova"
+
+#~ msgid "Opacity"
+#~ msgstr "Neprozirnost"
+
+#~ msgid "Recent:"
+#~ msgstr "Nedavno:"
+
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "Dodaj / Ukloni boje..."
+
+#~ msgid "Import Data"
+#~ msgstr "Uvezi podatke"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Recommended ( %1 )"
+#~ msgstr "Preporučeno ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Locale ( %1 )"
+#~ msgstr "Lokal ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Other ( %1 )"
+#~ msgstr "Drugo ( %1 )"
+
+#~ msgid "Generic"
+#~ msgstr "Opšte"
+
+#~ msgid "Currency"
+#~ msgstr "Moneta"
+
+#~ msgid "None"
+#~ msgstr "Nijedan"
+
+#~ msgid ""
+#~ "Please check the ranges you specified. The start value must be lower than "
+#~ "the end value."
+#~ msgstr ""
+#~ "Provjerite opsege koje ste naveli. Početna vrijednost mora biti veća od "
+#~ "krajnje."
+
+#~ msgid "Cannot find encoding: %1"
+#~ msgstr "Ne mogu da nađem kodiranje: %1"
+
+#~ msgid "Data"
+#~ msgstr "Podaci"
+
+#~ msgid "E&ncoding:"
+#~ msgstr "&Kodiranje:"
+
+#~ msgid "First row contains headers"
+#~ msgstr "Prvi red sadrži zaglavlja"
+
+#~ msgid "First column contains headers"
+#~ msgstr "Prva kolona sadrži zaglavlja"
+
+#~ msgid "Format"
+#~ msgstr "Format"
+
+#~ msgid "Delimiter"
+#~ msgstr "Graničnik"
+
+#~ msgid "Semicolon"
+#~ msgstr "Tačka-zarez"
+
+#~ msgid "Other"
+#~ msgstr "Drugo"
+
+#~ msgid "Tabulator"
+#~ msgstr "Tabulator"
+
+#~ msgid "Space"
+#~ msgstr "Prostor"
+
+#~ msgid "Text&quote:"
+#~ msgstr "&Navodnici:"
+
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "Decimal symbol:"
+#~ msgstr "Decimalni simbol:"
+
+#~ msgid "Thousands separator:"
+#~ msgstr "Graničnik hiljada:"
+
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "Ignoriši duple graničnike"
+
+#~ msgid "&Format:"
+#~ msgstr "&Format:"
+
+#~ msgid "Ranges"
+#~ msgstr "Opsezi"
+
+#~ msgid "Update"
+#~ msgstr "Ažuriraj"
+
+#~ msgid "Import columns:"
+#~ msgstr "Uvezi kolone:"
+
+#~ msgid "Import lines:"
+#~ msgstr "Uvezi linije:"
+
+#~ msgid "to"
+#~ msgstr "do"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Float Docker"
+#~ msgstr "Float Docker"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "Zatvori Docker"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "Skupi Docker"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Lock Docker"
+#~ msgstr "Zaključaj Docker"
+
+#~ msgid "&Encrypt"
+#~ msgstr "Š&ifruj"
+
+#~ msgid "Keywords:"
+#~ msgstr "Ključne riječi:"
+
+#~ msgid "Subject:"
+#~ msgstr "Predmet:"
+
+#~ msgid "Last printed:"
+#~ msgstr "Posljednje štampano:"
+
+#~ msgid "Total editing time:"
+#~ msgstr "Ukupno vrijeme uređivanja:"
+
+#~ msgid "Encryption:"
+#~ msgstr "Šifrovanje:"
+
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "Naslov:"
+
+#~ msgid "Revision number:"
+#~ msgstr "Broj revizije:"
+
+#~ msgid "Modified:"
+#~ msgstr "Izmjena:"
+
+#~ msgid "Comments:"
+#~ msgstr "Komentari:"
+
+#~ msgid "Created:"
+#~ msgstr "Napravljeno:"
+
+#~ msgid "Path:"
+#~ msgstr "Putanja:"
+
+#~ msgid "&Reset"
+#~ msgstr "&Resetuj"
+
+#~ msgid "Language:"
+#~ msgstr "Jezik:"
+
+#~ msgid "General"
+#~ msgstr "Opšte"
+
+#~ msgid "Last saved by"
+#~ msgstr "Posljednji snimljeni"
+
+#~ msgid "Use ';' (Example: Office;KDE;Calligra)"
+#~ msgstr "Koristi ';' (Primjer: Office;KDE;Calligra)"
+
+#~ msgid "This document will be decrypted"
+#~ msgstr "Ovaj dokument će biti dekriptovan"
+
+#~ msgid "Do not decrypt"
+#~ msgstr "Ne dekriptovati"
+
+#~ msgid "This document is encrypted"
+#~ msgstr "Ovaj dokument je enkriptovan"
+
+#~ msgid "D&ecrypt"
+#~ msgstr "De&kriptovati"
+
+#~ msgid "This document will be encrypted."
+#~ msgstr "Ovaj dokument će biti šifrovan."
+
+#~ msgid "Do not encrypt"
+#~ msgstr "Ne šifrovati"
+
+#~ msgid "This document is not encrypted"
+#~ msgstr "Ovaj dokument nije šifrovan"
+
+#~ msgid "This document does not support encryption"
+#~ msgstr "Ovaj dokument ne podržava šifrovanje"
+
+#~ msgid ""
+#~ "<qt>Decrypting the document will remove the password protection from it."
+#~ "<p>Do you still want to decrypt the file?</qt>"
+#~ msgstr ""
+#~ "<qt>Dešifriranje dokumenta će ukolniti zaštitnu šifru.<p>Želite li ipak "
+#~ "dešifrovati datoteku?</qt>"
+
+#~ msgid "Confirm Decrypt"
+#~ msgstr "Potvrdi dešifriranje"
+
+#~ msgid "Decrypt"
+#~ msgstr "Dešifriraj"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "decryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>Vaš dokument se nije mogao snimiti automatski.<p>Da završite "
+#~ "dešifrovanje, molimo da snimite dokument.</qt>"
+
+#~ msgid "Save Document"
+#~ msgstr "Snimi dokument"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "decryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt>Dokument je bio promijenjen od kada je otvoren. Da se završi "
+#~ "dešifriranje dokument se mora snimiti.<p>Želite li sada snimiti dokument?"
+#~ "</qt>"
+
+#~ msgid ""
+#~ "<qt>The document is currently saved as %1. The document needs to be "
+#~ "changed to <b>OASIS OpenDocument</b> to be encrypted.<p>Do you want to "
+#~ "change the file to OASIS OpenDocument?</qt>"
+#~ msgstr ""
+#~ "<qt>Dokument je trenutno snimljen kao %1.Dokument se treba promijeniti u "
+#~ "<b>OASIS OpenDocument</b> da bi se šifrovao.<p>Želite li promjeniti "
+#~ "datoteku u OASIS OpenDocument?</qt>"
+
+#~ msgid "Change Filetype"
+#~ msgstr "Promjeni tip datoteke"
+
+#~ msgid "Change"
+#~ msgstr "Promjena"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "encryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>Vaš dokument se nije mogao snimiti automatski.<p>Da završite "
+#~ "pifriranje, molimo da snimite dokument.</qt>"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "encryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt>Dokument je bio promijenjen od kada je od kada je otvoren. Da "
+#~ "završite šifriranje dokument se mora snimiti.<p>Želite li sada snimiti "
+#~ "dokument?</qt>"
+
+#~ msgid "Remove"
+#~ msgstr "Ukloni"
+
+#~ msgid "Open palette"
+#~ msgstr "Otvori palete"
+
+#~ msgid "Save palette"
+#~ msgstr "Snimi palete"
+
+#~ msgid "Add Color To Palette"
+#~ msgstr "Dodaj paleti boje"
+
+#~ msgid "Color name:"
+#~ msgstr "Ime boje:"
+
+#~ msgid "Gimp Color Palette (*.gpl)"
+#~ msgstr "Gimp paleta boja (*.gpl)"
+
+#~ msgid "Cannot write to palette file %1. Maybe it is read-only. "
+#~ msgstr "Ne mogu pisati u datoteku paleta %1. Možda je samo za čitanje. "
+
+#~ msgid "Palette"
+#~ msgstr "Paleta"
+
+#~ msgid "Add/Remove Colors"
+#~ msgstr "Dodaj/Ukloni boje"
+
+#~ msgid "All supported formats"
+#~ msgstr "Svi podržani formati"
+
+#~ msgid "Testing: OpenFile"
+#~ msgstr "Test: OtvoriFajl"
+
+#~ msgid "Testing: OpenDirectory"
+#~ msgstr "Test: OtvoriDirektorij"
+
+#~ msgid "Testing: ImportFile"
+#~ msgstr "Test: UbaciFajl"
+
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "Test: Ubacifajlove"
+
+#~ msgid "Testing: Import Directory"
+#~ msgstr "Test: Ubaci direktorij"
+
+#~ msgid "Testing: SaveFile"
+#~ msgstr "Test: SpasiFajl"
+
+#~ msgid "Open File"
+#~ msgstr "Otvori Datoteku"
+
+#~ msgid "Open Files"
+#~ msgstr "Otvori Datoteke"
+
+#~ msgid "Unique key:"
+#~ msgstr "Jedinstven kljuc:"
+
+#~ msgid "blablabla"
+#~ msgstr "blablabla"
+
+#~ msgid "Filter:"
+#~ msgstr "Filter:"
+
+#~ msgid "TextLabel"
+#~ msgstr "TextLabel"
+
+#~ msgid "Results:"
+#~ msgstr "Rezultati:"
+
+#~ msgid "Filter Type"
+#~ msgstr "Tip Filtera"
+
+#~ msgid "Mime"
+#~ msgstr "Mime"
+
+#~ msgid "Named"
+#~ msgstr "Imenovan"
+
+#~ msgid "hide name filter details option"
+#~ msgstr "opcija za sakrivanje detalja filtera imena"
+
+#~ msgid "Set default filter"
+#~ msgstr "Stavi osnovni filter"
+
+#~ msgid "Save File"
+#~ msgstr "Spasi Fajl"
+
+#~ msgid "Import Files"
+#~ msgstr "Uvezi datoteke"
+
+#~ msgid "Import File"
+#~ msgstr "Uvezi datoteku"
+
+#~ msgid "Open Directory"
+#~ msgstr "Otvori direktorij"
+
+#~ msgid "Import Directory"
+#~ msgstr "Uvezi Direktorij"
+
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "Ništa"
+
+#~ msgctxt "Solid color stroke or fill"
+#~ msgid "Solid"
+#~ msgstr "Puna"
+
+#~ msgid "Gradient"
+#~ msgstr "Gradijent"
+
+#~ msgid "Pattern"
+#~ msgstr "Uzorak"
+
+#~ msgid "Change the filling color"
+#~ msgstr "Promijeni boju popunjavanja"
+
+#, fuzzy
+#~| msgid "Change the filling color"
+#~ msgid "Change the filling gradient"
+#~ msgstr "Promijeni boju popunjavanja"
+
+#, fuzzy
+#~| msgid "Change the filling color"
+#~ msgid "Change the filling pattern"
+#~ msgstr "Promijeni boju popunjavanja"
+
+#~ msgid "Icon and Text"
+#~ msgstr "Ikona i tekst"
+
+#~ msgid "Icon only"
+#~ msgstr "Samo ikona"
+
+#~ msgid "Tabs side"
+#~ msgstr "Strana kartice"
+
+#~ msgid "Top side"
+#~ msgstr "Gornja strana"
+
+#~ msgid "Bottom side"
+#~ msgstr "Donja strana"
+
+#~ msgid "Left side"
+#~ msgstr "Lijeva strana"
+
+#~ msgid "Right side"
+#~ msgstr "Desna strana"
+
+#~ msgid "Page Layout"
+#~ msgstr "Raspored strane"
+
+#~ msgid "Apply to document"
+#~ msgstr "Primijeni na dokument"
+
+#~ msgid "Left Edge:"
+#~ msgstr "Lijeva ivica:"
+
+#~ msgid "Right Edge:"
+#~ msgstr "Desna ivica:"
+
+#~ msgid "Binding Edge:"
+#~ msgstr "Vezivna ivica:"
+
+#~ msgid "Page Edge:"
+#~ msgstr "Ivica stranice:"
+
+#~ msgid "Facing Pages:"
+#~ msgstr "Suprotne strane:"
+
+#~ msgid "Facing pages"
+#~ msgstr "Suprotne stranice"
+
+#~ msgid "Page Layout:"
+#~ msgstr "Postavke stranice:"
+
+#~ msgid "Page spread"
+#~ msgstr "Opseg stranice"
+
+#~ msgid "Unit:"
+#~ msgstr "Jedinica:"
+
+#~ msgid "Follow style:"
+#~ msgstr "Prati stil:"
+
+#~ msgid "Size:"
+#~ msgstr "Veličina:"
+
+#~ msgid "Width:"
+#~ msgstr "Širina:"
+
+#~ msgid "Height:"
+#~ msgstr "Visina:"
+
+#~ msgid "Orientation:"
+#~ msgstr "Orijentacija:"
+
+#~ msgid "Facing pages:"
+#~ msgstr "Suprotne stranice:"
+
+#~ msgid "Single sided"
+#~ msgstr "Jednostrana"
+
+#~ msgid "Text direction:"
+#~ msgstr "Smijer teksta:"
+
+#~ msgid "Automatic"
+#~ msgstr "Automatski"
+
+#~ msgid "Left to right"
+#~ msgstr "S lijeva nadesno"
+
+#~ msgid "Right to left"
+#~ msgstr "S desna nalijevo"
+
+#~ msgid "Margins"
+#~ msgstr "Margine"
+
+#~ msgid "Top:"
+#~ msgstr "Vrh:"
+
+#~ msgid "Binding edge:"
+#~ msgstr "Ivica uveza:"
+
+#~ msgid "Page edge:"
+#~ msgstr "Rub stranice:"
+
+#~ msgid "Bottom:"
+#~ msgstr "Dno:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "Uvoz resursa"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Delete resource"
+#~ msgstr "Izbriši resurs"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "Skini resurs"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "Podijeli resurs"
+
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "Odaberi datoteku za dodavanje"
+
+#~ msgid "New tag"
+#~ msgstr "Nova oznaka"
+
+#~ msgid "Assign to tag"
+#~ msgstr "Dodjela za oznaku"
+
+#~ msgid "Remove from this tag"
+#~ msgstr "Ukloni sa ove oznake"
+
+#~ msgid "Remove from other tag"
+#~ msgstr "Ukloni sa druge oznake"
+
+#~ msgid "Tags"
+#~ msgstr "Oznake"
+
+#~ msgid ""
+#~ "<qt>The tag you are trying to undelete already exists in tag list."
+#~ "<br>Please enter a new, unique name for it.</qt>"
+#~ msgstr ""
+#~ "<qt> Oznaka koju pokušavate da vratite sa brisanja već postoji u listi "
+#~ "oznaka.<br> Molimo unesite novo,jedinstveno ime za nju.</qt>"
+
+#~ msgid "Tag was not undeleted."
+#~ msgstr "Oznaka nije vraćena sa brisanja."
+
+#, fuzzy
+#~| msgid "Allanon"
+#~ msgid "All"
+#~ msgstr "Allanon"
+
+#~ msgid "Change the color of the shadow"
+#~ msgstr "Promijeni boju sjene"
+
+#~ msgid "Blur:"
+#~ msgstr "Zamućenje:"
+
+#~ msgid "Distance:"
+#~ msgstr "Udaljenost:"
+
+#~ msgid "Butt cap"
+#~ msgstr "Ravan završetak"
+
+#~ msgid "Round cap"
+#~ msgstr "Zaobljeni završetak"
+
+#~ msgid "Square cap"
+#~ msgstr "Kvadratni završetak"
+
+#~ msgid "Miter join"
+#~ msgstr "Nalegli spoj"
+
+#~ msgid "Round join"
+#~ msgstr "Obli spoj"
+
+#~ msgid "Bevel join"
+#~ msgstr "Zakošeni spoj"
+
+#~ msgid "Miter limit"
+#~ msgstr "Pravougli limit"
+
+#~ msgid "Thickness:"
+#~ msgstr "Debljina:"
+
+#~ msgid "Set line width of actual selection"
+#~ msgstr "Postavi širinu linije trenutno označenog"
+
+#~ msgid "Change the color of the line/border"
+#~ msgstr "Promijeni boju linije/granice"
+
+#, fuzzy
+#~| msgid "Tags"
+#~ msgid "Tag"
+#~ msgstr "Oznake"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<qt>Entering search terms here will add to, or remove resources from the "
+#~ "current tag view.<para>To filter based on the partial, case insensitive "
+#~ "name of a resource:<br><icode>partialname</icode> or <icode>!partialname</"
+#~ "icode>.</para><para>In-/exclusion of other tag sets:<br><icode>[Tagname]</"
+#~ "icode> or <icode>![Tagname]</icode>.</para><para>Case sensitive and full "
+#~ "name matching in-/exclusion:<br><icode>\"ExactMatch\"</icode> or <icode>!"
+#~ "\"ExactMatch\"</icode>.</para>Filter results cannot be saved for the "
+#~ "<interface>All Presets</interface> view.<br>In this view, pressing "
+#~ "<interface>Enter</interface> or clearing the filter box will restore all "
+#~ "items.<br>Create and/or switch to a different tag if you want to save "
+#~ "filtered resources into named sets.</qt>"
+#~ msgstr ""
+#~ "<qt>Unošenje uvjeta pretrage ovdje će biti dodani,ili uklonjeni resursi "
+#~ "iz trenutnog pregleda oznake.<para>Za filtriranje na osnovu djelimično "
+#~ "velikih i malih slova imena resursa:<br><icode>partialname</icode> ili "
+#~ "<icode>!partialname</icode>.</para><para>In-/isključenje druge oznake "
+#~ "postavlja::<br><icode>[Tagname]</icode> or <icode>![Tagname]</icode>.</"
+#~ "para><para>Velika i mala slova i puno ime se slažu u-/isključenje:"
+#~ "<br><icode>\"ExactMatch\"</icode> or <icode>!\"ExactMatch\"</icode>.</"
+#~ "para>Filtriranje rezultata ne može biti spremljeno za <interface>Sve "
+#~ "predstavljeno</interface> pregled.<br> U ovom pregledu, pritiskom "
+#~ "<interface>Enter</interface> ili čišćenjem filtriranog prostora ćete "
+#~ "vratiti sve stavke.<br> Kreiraj i/ili prebaci na različitu oznaku ako "
+#~ "želiš da spremiš filtrirane resurse u imenovane postavke- </qt>"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<qt>Entering search terms here will add to, or remove resources from the "
+#~ "current tag view.<para>To filter based on the partial, case insensitive "
+#~ "name of a resource:<br><icode>partialname</icode> or <icode>!partialname</"
+#~ "icode>.</para><para>In-/exclusion of other tag sets:<br><icode>[Tagname]</"
+#~ "icode> or <icode>![Tagname]</icode>.</para><para>Case sensitive and full "
+#~ "name matching in-/exclusion:<br><icode>\"ExactMatch\"</icode> or <icode>!"
+#~ "\"ExactMatch\"</icode>.</para>Pressing <interface>Enter</interface> or "
+#~ "clicking the <interface>Save</interface> button will save the changes.</"
+#~ "qt>"
+#~ msgstr ""
+#~ "<qt> Unošenje uvjeta pretrage uvdje će dodati,ili ukloniti resurse za "
+#~ "pregled trenutne oznake.<para<za filtriranje na osnovu djelimičnog, imena "
+#~ "resursa sa velikim i malim slovima: <br><icode>partialname</icode> or "
+#~ "<icode>!partialname</icode>.</para><para>In-/isključenje druge oznake "
+#~ "postavlja:<br><icode>[Tagname]</icode> ili  <icode>![Tagname]</icode>.</"
+#~ "para><para>Velika i mala slova i puno ime se slažu u-/isključenje: "
+#~ "<br><icode>\"ExactMatch\"</icode> or <icode>!\"ExactMatch\"</icode>.</"
+#~ "para> Pritiskom na <interface>Enter</interface> ili klikanjem <interface> "
+#~ "Spremi </interface> tipke,promjene će biti spremljene. </qt>"
+
+#~ msgid "Enter resource filters here"
+#~ msgstr "Unesi filter resursa ovdje"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<qt>Save the currently filtered set as the new members of the current tag."
+#~ "</qt>"
+#~ msgstr ""
+#~ "<qt>Spremi upravo filtrirana podešavanja kao nove članove trenutne oznake."
+#~ "</qt>"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "<qt>Show the tag box options.</qt>"
+#~ msgstr "<qt>Prikaži tag box opcije. </qt>"
+
+#~ msgid "Rename tag"
+#~ msgstr "Preimenuj oznaku"
+
+#~ msgid "Delete this tag"
+#~ msgstr "Obriši ovu oznaku"
+
+#~ msgid "Clear undelete list"
+#~ msgstr "Očisti listu za vraćanje izbrisanog"
+
+#~ msgid "Undelete"
+#~ msgstr "Vrati izbrisano"
+
+#~ msgid "Tool Options"
+#~ msgstr "Opcije alata"
+
+#~ msgid "Toggles organizing the options in tabs or not"
+#~ msgstr "Izmjenjuje organiziranje opcija na karticama ili ne"
+
+#~ msgid "deselect item"
+#~ msgstr "isključite stavku"
+
+#~ msgid "select item"
+#~ msgstr "odaberite stavku"
+
+#~ msgid "Use same aspect as pixels"
+#~ msgstr "Koristi isti izgled kao pikseli"
+
+#~ msgid "Zoom to Selection"
+#~ msgstr "Uvećaj na označeno"
+
+#~ msgid "Zoom to All"
+#~ msgstr "Uvećaj sve"
+
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1"
+
+#~ msgid "All Presets"
+#~ msgstr "Sva pretpodešavanja"
+
+#~ msgid "Tag:"
+#~ msgstr "Oznaka:"
+
+#~ msgid "Three arguments required"
+#~ msgstr "Tri argumenta su potrebna"
+
+#~ msgctxt "Static Image"
+#~ msgid "Static"
+#~ msgstr "Statička"
+
+#~ msgid "&Themes"
+#~ msgstr "&Teme"
+
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "Zadano"
+
+#~ msgid "Configuration..."
+#~ msgstr "Konfiguracija..."
+
+#~ msgid ""
+#~ "Cannot start Colors Settings panel from KDE Control Center. Please check "
+#~ "your system..."
+#~ msgstr ""
+#~ "Ne može se pokrenuti tabla Postavke boja iz KDE kontrolnog centra. "
+#~ "Molimo, provjerite Vaš sistem..."
+
+#~ msgid "&Tools"
+#~ msgstr "&Alati"
+
+#~ msgid ""
+#~ "The manifest file seems to be corrupted. The document could not be opened."
+#~ msgstr ""
+#~ "Manifest datoteka je  izgleda  pokvarena. Dokument se ne može otvoriti."
+
+#~ msgid "Value (brightness)"
+#~ msgstr "Vrijednost (osvijetljenost)"
+
+#~ msgid "Cyan"
+#~ msgstr "Cijan"
+
+#~ msgid "Magenta"
+#~ msgstr "Magenta"
+
+#~ msgid "Yellow"
+#~ msgstr "Žuta"
+
+#~ msgid "Black"
+#~ msgstr "Crna"
+
+#~ msgid "Green to magenta*"
+#~ msgstr "Zelena do magenta"
+
+#~ msgid "Blue to yellow"
+#~ msgstr "Plavo do Žuto"
+
+#~ msgid "Opacity:"
+#~ msgstr "Neprozirnost:"
+
+#~ msgid "Color Selector"
+#~ msgstr "Odabir boja"

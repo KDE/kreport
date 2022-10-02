@@ -1,0 +1,33 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kreport_mapsplugin_qt\n"
+"PO-Revision-Date: 2020-06-27 03:50+0000\n"
+"Last-Translator: transxx.py program <null@kde.org>\n"
+"Language-Team: KDE Test Language <kde-i18n-doc@kde.org>\n"
+"Language: x-test\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Qt-Contexts: true\n"
+
+#: KReportItemMaps.cpp:61
+msgctxt "KReportItemMaps|"
+msgid "Latitude"
+msgstr "xxLatitudexx"
+
+#: KReportItemMaps.cpp:67
+msgctxt "KReportItemMaps|"
+msgid "Longitude"
+msgstr "xxLongitudexx"
+
+#: KReportItemMaps.cpp:73
+msgctxt "KReportItemMaps|"
+msgid "Zoom"
+msgstr "xxZoomxx"
+
+#: KReportItemMaps.cpp:82
+msgctxt "KReportItemMaps|"
+msgid "Theme"
+msgstr "xxThemexx"

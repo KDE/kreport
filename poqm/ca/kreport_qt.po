@@ -1,0 +1,908 @@
+# Translation of kreport_qt.po to Catalan
+# Copyright (C) 2015-2021 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
+#
+# Josep M. Ferrer <txemaq@gmail.com>, 2015, 2016, 2017, 2018, 2021.
+# Antoni Bella Pérez <antonibella5@yahoo.com>, 2015, 2016, 2017, 2019, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: kreport\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"PO-Revision-Date: 2021-11-06 19:21+0100\n"
+"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+"X-Generator: Lokalize 20.12.0\n"
+
+#: common/KReportDesign.cpp:150
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "No s'ha pogut analitzar el document XML."
+
+#: common/KReportDesign.cpp:159
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Error en el document XML."
+
+#: common/KReportItemBase.cpp:75
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Nom"
+
+#: common/KReportItemBase.cpp:75
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Nom de l'objecte"
+
+#: common/KReportItemBase.cpp:78
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Posició"
+
+#: common/KReportItemBase.cpp:79
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Mida"
+
+#: common/KReportItemBase.cpp:112
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Origen de les dades"
+
+#: common/KReportItemLine.cpp:80
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "Posició d'inici"
+
+#: common/KReportItemLine.cpp:81
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Posició final"
+
+#: common/KReportItemLine.cpp:83
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "Gruix de la línia"
+
+#: common/KReportItemLine.cpp:85
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Color de la línia"
+
+#: common/KReportItemLine.cpp:86
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Estil de la línia"
+
+#: common/KReportSectionData.cpp:164
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Secció"
+
+#: common/KReportSectionData.cpp:166
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "Alçada"
+
+#: common/KReportSectionData.cpp:170
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Color del fons"
+
+#: common/KReportUnit.cpp:136
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "No vàlid"
+
+#: common/KReportUnit.cpp:138
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "Mil·límetres (mm)"
+
+#: common/KReportUnit.cpp:140
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "Centímetres (cm)"
+
+#: common/KReportUnit.cpp:142
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "Decímetres (dm)"
+
+#: common/KReportUnit.cpp:144
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "Polzades (in)"
+
+#: common/KReportUnit.cpp:146
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "Pica (pi)"
+
+#: common/KReportUnit.cpp:148
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "Cícero (cc)"
+
+#: common/KReportUnit.cpp:150
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "Punts (pt)"
+
+#: common/KReportUnit.cpp:152
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "Píxels (px)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr "Unitat no admesa"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Creu"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr "Marca"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr "Punt"
+
+#: items/check/KReportItemCheck.cpp:80
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "Estil"
+
+#: items/check/KReportItemCheck.cpp:84
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Color de primer pla"
+
+#: items/check/KReportItemCheck.cpp:86
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "Gruix de la línia"
+
+#: items/check/KReportItemCheck.cpp:88
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Color de la línia"
+
+#: items/check/KReportItemCheck.cpp:89
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Estil de la línia"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Valor"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr "Valor usat si no està vinculat a cap camp"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Valor"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr "Valor usat si no està vinculat a cap camp"
+
+#: items/field/KReportItemField.cpp:94
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Esquerra"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Centre"
+
+#: items/field/KReportItemField.cpp:94
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Dreta"
+
+#: items/field/KReportItemField.cpp:96
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Alineació horitzontal"
+
+#: items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "Superior"
+
+#: items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Inferior"
+
+#: items/field/KReportItemField.cpp:102
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Alineació vertical"
+
+#: items/field/KReportItemField.cpp:104
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Tipus de lletra"
+
+#: items/field/KReportItemField.cpp:106
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Color del fons"
+
+#: items/field/KReportItemField.cpp:107
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Color de primer pla"
+
+#: items/field/KReportItemField.cpp:109
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Opacitat del fons"
+
+#: items/field/KReportItemField.cpp:114
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "Gruix de la línia"
+
+#: items/field/KReportItemField.cpp:116
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Color de la línia"
+
+#: items/field/KReportItemField.cpp:117
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Estil de la línia"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr "Ajust de les paraules"
+
+#: items/field/KReportItemField.cpp:120
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr "Pot créixer"
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr "Clip"
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Amplia"
+
+#: items/image/KReportItemImage.cpp:120
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "Mode de redimensió"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Valor"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr "Valor usat si no està vinculat a cap camp"
+
+#: items/label/KReportItemLabel.cpp:91
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Llegenda"
+
+#: items/label/KReportItemLabel.cpp:94
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Esquerra"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Centre"
+
+#: items/label/KReportItemLabel.cpp:94
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Dreta"
+
+#: items/label/KReportItemLabel.cpp:96
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Alineació horitzontal"
+
+#: items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "Superior"
+
+#: items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Inferior"
+
+#: items/label/KReportItemLabel.cpp:102
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Alineació vertical"
+
+#: items/label/KReportItemLabel.cpp:104
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Tipus de lletra"
+
+#: items/label/KReportItemLabel.cpp:106
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Color del fons"
+
+#: items/label/KReportItemLabel.cpp:107
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Color de primer pla"
+
+#: items/label/KReportItemLabel.cpp:109
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Opacitat del fons"
+
+#: items/label/KReportItemLabel.cpp:114
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "Gruix de la línia"
+
+#: items/label/KReportItemLabel.cpp:116
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Color de la línia"
+
+#: items/label/KReportItemLabel.cpp:117
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Estil de la línia"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Valor"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr "Valor usat si no està vinculat a cap camp"
+
+#: items/text/KReportItemText.cpp:119
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Esquerra"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Centre"
+
+#: items/text/KReportItemText.cpp:119
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Dreta"
+
+#: items/text/KReportItemText.cpp:121
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Alineació horitzontal"
+
+#: items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "Superior"
+
+#: items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Inferior"
+
+#: items/text/KReportItemText.cpp:127
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Alineació vertical"
+
+#: items/text/KReportItemText.cpp:129
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Tipus de lletra"
+
+#: items/text/KReportItemText.cpp:131
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Color del fons"
+
+#: items/text/KReportItemText.cpp:132
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Color de primer pla"
+
+#: items/text/KReportItemText.cpp:134
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "Gruix de la línia"
+
+#: items/text/KReportItemText.cpp:136
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Color de la línia"
+
+#: items/text/KReportItemText.cpp:137
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Estil de la línia"
+
+#: items/text/KReportItemText.cpp:138
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Opacitat del fons"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+"No s'ha pogut avaluar l'script. Error: %1\n"
+"\n"
+"Voleu suprimir la resta dels missatges?\n"
+"(els missatges es restauraran la pròxima vegada que s'obri l'informe)"
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr ""
+"Codi de l'script:\n"
+"%1"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Error de l'script"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+"Aquest informe conté scripts de tipus «%1». Només s'admetran els scripts "
+"escrits en Javascript. Per a evitar perdre els scripts, el seu tipus i "
+"contingut no canviarà a menys que els canvieu."
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr "Tipus de script no acceptat"
+
+#: wrtembed/KReportDesigner.cpp:676
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Capçalera de pàgina (qualsevulla)"
+
+#: wrtembed/KReportDesigner.cpp:680
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Capçalera de pàgina (parell)"
+
+#: wrtembed/KReportDesigner.cpp:684
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Capçalera de pàgina (senar)"
+
+#: wrtembed/KReportDesigner.cpp:688
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Capçalera de pàgina (primera)"
+
+#: wrtembed/KReportDesigner.cpp:692
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Capçalera de pàgina (última)"
+
+#: wrtembed/KReportDesigner.cpp:696
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "Peu de pàgina (qualsevol)"
+
+#: wrtembed/KReportDesigner.cpp:700
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "Peu de pàgina (parell)"
+
+#: wrtembed/KReportDesigner.cpp:704
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "Peu de pàgina (senar)"
+
+#: wrtembed/KReportDesigner.cpp:708
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "Peu de pàgina (primera)"
+
+#: wrtembed/KReportDesigner.cpp:712
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "Peu de pàgina (última)"
+
+#: wrtembed/KReportDesigner.cpp:716
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "Capçalera d'informe"
+
+#: wrtembed/KReportDesigner.cpp:720
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "Peu d'informe"
+
+#: wrtembed/KReportDesigner.cpp:808
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "Informe"
+
+#: wrtembed/KReportDesigner.cpp:813
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Títol"
+
+#: wrtembed/KReportDesigner.cpp:813
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Títol de l'informe"
+
+#: wrtembed/KReportDesigner.cpp:818
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Mida de la pàgina"
+
+#: wrtembed/KReportDesigner.cpp:821
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Mida personalitzada de la pàgina"
+
+#: wrtembed/KReportDesigner.cpp:825
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "Vertical"
+
+#: wrtembed/KReportDesigner.cpp:825
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "Apaïsada"
+
+#: wrtembed/KReportDesigner.cpp:827
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "Orientació de la pàgina"
+
+#: wrtembed/KReportDesigner.cpp:832
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Unitat de pàgina"
+
+#: wrtembed/KReportDesigner.cpp:833
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Mostra la graella"
+
+#: wrtembed/KReportDesigner.cpp:834
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Ajusta a la graella"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr "Divisions de graella"
+
+#: wrtembed/KReportDesigner.cpp:841
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Marge esquerre"
+
+#: wrtembed/KReportDesigner.cpp:843
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Marge dret"
+
+#: wrtembed/KReportDesigner.cpp:845
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Marge superior"
+
+#: wrtembed/KReportDesigner.cpp:847
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Marge inferior"
+
+#: wrtembed/KReportDesigner.cpp:869
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Script d'objecte"
+
+#: wrtembed/KReportDesigner.cpp:1067
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Retalla"
+
+#: wrtembed/KReportDesigner.cpp:1071
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Copia"
+
+#: wrtembed/KReportDesigner.cpp:1076
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Enganxa"
+
+#: wrtembed/KReportDesigner.cpp:1087
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Suprimeix"
+
+#: wrtembed/KReportDesigner.cpp:1129
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Línia"
+
+#: wrtembed/KReportDesigner.cpp:1476
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Línia"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr "Re&talla"
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr "Retalla la selecció al porta-retalls"
+
+#: wrtembed/KReportDesigner.cpp:1525
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "&Copia"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr "Copia la selecció al porta-retalls"
+
+#: wrtembed/KReportDesigner.cpp:1531
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "&Enganxa"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr "Enganxa el contingut del porta-retalls"
+
+#: wrtembed/KReportDesigner.cpp:1544
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Edita les seccions"
+
+#: wrtembed/KReportDesigner.cpp:1547
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr "Eleva"
+
+#: wrtembed/KReportDesigner.cpp:1549
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr "Baixa"
+
+#: wrtembed/KReportDesignerSection.cpp:126
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "Detall"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Editor de la secció del grup"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Columna:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Ordena:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Mostra la capçalera del grup:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Mostra el peu del grup:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr "Insereix un salt de pàgina després del peu del grup:"
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr "Selecciona l'informe sencer"
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+"Un botó que permet una superfície d'informe a seleccionar, permetent que es "
+"vegin les seves propietats."
+
+#: wrtembed/KReportRuler_p.cpp:1472
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Sagnat de la primera línia"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Sagnat esquerre"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Sagnat dret"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr "Afegeix..."
+
+#: wrtembed/KReportSectionEditor.cpp:74
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "Edita..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Suprimeix"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Mou amunt"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Mou avall"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr "Ascendent"
+
+#: wrtembed/KReportSectionEditor.cpp:312
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr "Descendent"
+
+#: wrtembed/KReportSectionEditor.ui:29
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Mostra la capçalera d'informe"
+
+#: wrtembed/KReportSectionEditor.ui:36
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Mostra el peu d'informe"
+
+#: wrtembed/KReportSectionEditor.ui:43
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Capçalera de pàgina"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "Primera pàgina:"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Pàgines parelles:"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Qualsevol pàgina:"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Última la pàgina:"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Pàgines senars:"
+
+#: wrtembed/KReportSectionEditor.ui:130
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "Peu de pàgina"
+
+#: wrtembed/KReportSectionEditor.ui:217
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Seccions de grup"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, qt-format
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Ajusta a l'amplada de la pàgina"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Ajusta a la pàgina"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr "Píxels reals"
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Ajusta l'amplada del text"

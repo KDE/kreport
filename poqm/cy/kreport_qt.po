@@ -1,0 +1,7748 @@
+# translation of koffice.po to Cymraeg
+# Penbwrdd yn Gymraeg.
+# Copyright (C) 2003, 2004 Free Software Foundation, Inc.
+# www.kyfieithu.co.uk<kyfieithu@dotmon.com>, www.gyfieithu.co.uk<kyfieithu@dotmon.com>, 2003.
+# Kyfieithu <kyfieithu@dotmon.com>, 2004.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: koffice\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2004-09-07 14:22+0100\n"
+"Last-Translator: Kyfieithu <kyfieithu@dotmon.com>\n"
+"Language-Team: Cymraeg <cy@li.org>\n"
+"Language: cy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+#, fuzzy
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "Methwyd agor y ffeil i'w gadw"
+
+#: common/KReportDesign.cpp:159
+#, fuzzy
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Digwyddodd gwall wrth gadw dogfennau caeth"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Enw:"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Object"
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Gwrthrych"
+
+#: common/KReportItemBase.cpp:78
+#, fuzzy
+#| msgid "Position"
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Lleoliad"
+
+#: common/KReportItemBase.cpp:79
+#, fuzzy
+#| msgid "Size:"
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Maint:"
+
+#: common/KReportItemBase.cpp:112
+#, fuzzy
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Dileu Testun"
+
+#: common/KReportItemLine.cpp:80
+#, fuzzy
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "Lleoliad"
+
+#: common/KReportItemLine.cpp:81
+#, fuzzy
+#| msgid "Position"
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Lleoliad"
+
+#: common/KReportItemLine.cpp:83
+#, fuzzy
+#| msgid "Line width:"
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "Lled y llinell:"
+
+#: common/KReportItemLine.cpp:85
+#, fuzzy
+#| msgid "More Line Colors..."
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Rhagor o Liwiau Llinell..."
+
+#: common/KReportItemLine.cpp:86
+#, fuzzy
+#| msgid "St&yle"
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Ardd&ull"
+
+#: common/KReportSectionData.cpp:164
+#, fuzzy
+#| msgid "Current Section"
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Adran Gyfredol"
+
+#: common/KReportSectionData.cpp:166
+#, fuzzy
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "&Uchder:"
+
+#: common/KReportSectionData.cpp:170
+#, fuzzy
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Eiliad"
+
+#: common/KReportUnit.cpp:136
+#, fuzzy
+#| msgid "Add Group"
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Ychwanegu Grŵp"
+
+#: common/KReportUnit.cpp:138
+#, fuzzy
+#| msgid "Millimeters (mm)"
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "Milimetrau (mm)"
+
+#: common/KReportUnit.cpp:140
+#, fuzzy
+#| msgid "Centimeters (cm)"
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "Centimetrau (cm)"
+
+#: common/KReportUnit.cpp:142
+#, fuzzy
+#| msgid "Decimeters (dm)"
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "Decimetrau (dm)"
+
+#: common/KReportUnit.cpp:144
+#, fuzzy
+#| msgid "Inches (in)"
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "Modfeddi (in)"
+
+#: common/KReportUnit.cpp:146
+#, fuzzy
+#| msgid "Pica (pi)"
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "Pica (pi)"
+
+#: common/KReportUnit.cpp:148
+#, fuzzy
+#| msgid "Cicero (cc)"
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "Cicero (cc)"
+
+#: common/KReportUnit.cpp:150
+#, fuzzy
+#| msgid "Points (pt)"
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "Pwyntiau (pt)"
+
+#: common/KReportUnit.cpp:152
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "Pwyntiau (pt)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Colors"
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Lliwiau"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:80
+#, fuzzy
+#| msgid "St&yle"
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "Ardd&ull"
+
+#: items/check/KReportItemCheck.cpp:84
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Eiliad"
+
+#: items/check/KReportItemCheck.cpp:86
+#, fuzzy
+#| msgid "Line width:"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "Lled y llinell:"
+
+#: items/check/KReportItemCheck.cpp:88
+#, fuzzy
+#| msgid "More Line Colors..."
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Rhagor o Liwiau Llinell..."
+
+#: items/check/KReportItemCheck.cpp:89
+#, fuzzy
+#| msgid "St&yle"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Ardd&ull"
+
+#: items/check/KReportItemCheck.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Gwerth"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Gwerth"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Chwith:"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "C&enter"
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "C&anol"
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "&De"
+
+#: items/field/KReportItemField.cpp:96
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Aliniad fertigol:"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "&Pen:"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Align Auto"
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Alinio'n Ymysgogol"
+
+#: items/field/KReportItemField.cpp:102
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Aliniad fertigol:"
+
+#: items/field/KReportItemField.cpp:104
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Wynebfath:"
+
+#: items/field/KReportItemField.cpp:106
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Eiliad"
+
+#: items/field/KReportItemField.cpp:107
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Eiliad"
+
+#: items/field/KReportItemField.cpp:109
+#, fuzzy
+#| msgid "Background color:"
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Lliw cefndir:"
+
+#: items/field/KReportItemField.cpp:114
+#, fuzzy
+#| msgid "Line width:"
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "Lled y llinell:"
+
+#: items/field/KReportItemField.cpp:116
+#, fuzzy
+#| msgid "More Line Colors..."
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Rhagor o Liwiau Llinell..."
+
+#: items/field/KReportItemField.cpp:117
+#, fuzzy
+#| msgid "St&yle"
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Ardd&ull"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:120
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgid "Street:"
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Stryd:"
+
+#: items/image/KReportItemImage.cpp:120
+#, fuzzy
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "Ailosod"
+
+#: items/image/KReportItemImage.cpp:121
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Gwerth"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:91
+#, fuzzy
+#| msgid "Completion"
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Cwblhad"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Chwith:"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "C&enter"
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "C&anol"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "&De"
+
+#: items/label/KReportItemLabel.cpp:96
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Aliniad fertigol:"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "&Pen:"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Align Auto"
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Alinio'n Ymysgogol"
+
+#: items/label/KReportItemLabel.cpp:102
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Aliniad fertigol:"
+
+#: items/label/KReportItemLabel.cpp:104
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Wynebfath:"
+
+#: items/label/KReportItemLabel.cpp:106
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Eiliad"
+
+#: items/label/KReportItemLabel.cpp:107
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Eiliad"
+
+#: items/label/KReportItemLabel.cpp:109
+#, fuzzy
+#| msgid "Background color:"
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Lliw cefndir:"
+
+#: items/label/KReportItemLabel.cpp:114
+#, fuzzy
+#| msgid "Line width:"
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "Lled y llinell:"
+
+#: items/label/KReportItemLabel.cpp:116
+#, fuzzy
+#| msgid "More Line Colors..."
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Rhagor o Liwiau Llinell..."
+
+#: items/label/KReportItemLabel.cpp:117
+#, fuzzy
+#| msgid "St&yle"
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Ardd&ull"
+
+#: items/text/KReportItemText.cpp:115
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Gwerth"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Chwith:"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "C&enter"
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "C&anol"
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "&De"
+
+#: items/text/KReportItemText.cpp:121
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Aliniad fertigol:"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "&Pen:"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Align Auto"
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Alinio'n Ymysgogol"
+
+#: items/text/KReportItemText.cpp:127
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Aliniad fertigol:"
+
+#: items/text/KReportItemText.cpp:129
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Wynebfath:"
+
+#: items/text/KReportItemText.cpp:131
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Eiliad"
+
+#: items/text/KReportItemText.cpp:132
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Eiliad"
+
+#: items/text/KReportItemText.cpp:134
+#, fuzzy
+#| msgid "Line width:"
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "Lled y llinell:"
+
+#: items/text/KReportItemText.cpp:136
+#, fuzzy
+#| msgid "More Line Colors..."
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Rhagor o Liwiau Llinell..."
+
+#: items/text/KReportItemText.cpp:137
+#, fuzzy
+#| msgid "St&yle"
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Ardd&ull"
+
+#: items/text/KReportItemText.cpp:138
+#, fuzzy
+#| msgid "Background color:"
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Lliw cefndir:"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, fuzzy, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr "Sgript"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+#, fuzzy
+#| msgid "Internal error"
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Gwall mewnol"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:676
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Rhagolwg Tudalen"
+
+#: wrtembed/KReportDesigner.cpp:680
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Rhagolwg Tudalen"
+
+#: wrtembed/KReportDesigner.cpp:684
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Rhagolwg Tudalen"
+
+#: wrtembed/KReportDesigner.cpp:688
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Rhagolwg Tudalen"
+
+#: wrtembed/KReportDesigner.cpp:692
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Rhagolwg Tudalen"
+
+#: wrtembed/KReportDesigner.cpp:696
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "Troedyn"
+
+#: wrtembed/KReportDesigner.cpp:700
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "Troedyn"
+
+#: wrtembed/KReportDesigner.cpp:704
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "Troedyn"
+
+#: wrtembed/KReportDesigner.cpp:708
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "Troedyn"
+
+#: wrtembed/KReportDesigner.cpp:712
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "Troedyn"
+
+#: wrtembed/KReportDesigner.cpp:716
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "P&ennawd"
+
+#: wrtembed/KReportDesigner.cpp:720
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "Troedyn"
+
+#: wrtembed/KReportDesigner.cpp:808
+#, fuzzy
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "&Allforio..."
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Title:"
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Teitl:"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Author Title"
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Teitl Awdur"
+
+#: wrtembed/KReportDesigner.cpp:818
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Maint y Dudalen"
+
+#: wrtembed/KReportDesigner.cpp:821
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Maint y Dudalen"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "&Portrait"
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "&Darlun"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "La&ndscape"
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "&Tirlun"
+
+#: wrtembed/KReportDesigner.cpp:827
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "Cyfeiriadaeth H&olltydd"
+
+#: wrtembed/KReportDesigner.cpp:832
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Maint y Dudalen"
+
+#: wrtembed/KReportDesigner.cpp:833
+#, fuzzy
+#| msgid "Show %1"
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Dangos %1"
+
+#: wrtembed/KReportDesigner.cpp:834
+#, fuzzy
+#| msgid "Confirm Save"
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Cadarnhau Cadw"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:841
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Ymylon"
+
+#: wrtembed/KReportDesigner.cpp:843
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Pinc Golau"
+
+#: wrtembed/KReportDesigner.cpp:845
+#, fuzzy
+#| msgid "Top margin"
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Ymyl Ben"
+
+#: wrtembed/KReportDesigner.cpp:847
+#, fuzzy
+#| msgid "Bottom margin"
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Ymyl Waelod"
+
+#: wrtembed/KReportDesigner.cpp:869
+#, fuzzy
+#| msgid "Object"
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Gwrthrych"
+
+#: wrtembed/KReportDesigner.cpp:1067
+#, fuzzy
+#| msgid "Custom"
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Addasiedig"
+
+#: wrtembed/KReportDesigner.cpp:1071
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Cwmni"
+
+#: wrtembed/KReportDesigner.cpp:1076
+#, fuzzy
+#| msgid "Date"
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Dyddiad"
+
+#: wrtembed/KReportDesigner.cpp:1087
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Dileu Testun"
+
+#: wrtembed/KReportDesigner.cpp:1129
+#, fuzzy
+#| msgctxt "color"
+#| msgid "Linen"
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Lliain"
+
+#: wrtembed/KReportDesigner.cpp:1476
+#, fuzzy
+#| msgctxt "color"
+#| msgid "Linen"
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Lliain"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1521
+#, fuzzy
+#| msgid "Completion Word"
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr "Gair Cwblhad"
+
+#: wrtembed/KReportDesigner.cpp:1525
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "Cwmni"
+
+#: wrtembed/KReportDesigner.cpp:1527
+#, fuzzy
+#| msgid "Completion Word"
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr "Gair Cwblhad"
+
+#: wrtembed/KReportDesigner.cpp:1531
+#, fuzzy
+#| msgid "Date"
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "Dyddiad"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1544
+#, fuzzy
+#| msgid "Exceptions"
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Eithriadau"
+
+#: wrtembed/KReportDesigner.cpp:1547
+#, fuzzy
+#| msgid "&Reset"
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr "&Ailosod"
+
+#: wrtembed/KReportDesigner.cpp:1549
+#, fuzzy
+#| msgid "&Lowercase"
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr "&Islythrennau"
+
+#: wrtembed/KReportDesignerSection.cpp:126
+#, fuzzy
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "&Rhagosodyn"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+#, fuzzy
+#| msgid "Section Title"
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Teitl Adran"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+#, fuzzy
+#| msgid "Columns:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Colofnau:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+#, fuzzy
+#| msgid "Street"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Stryd"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+#, fuzzy
+#| msgid "Show %1"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Dangos %1"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+#, fuzzy
+#| msgid "Show %1"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Dangos %1"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+#, fuzzy
+#| msgid "Insert break after paragraph"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr "Mewnosod toriad ar ôl y paragraff"
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+#, fuzzy
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr "Dewis yr arddull i fewnforio:"
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+
+#: wrtembed/KReportRuler_p.cpp:1472
+#, fuzzy
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Newid Mewnoliad Llinell Gyntaf"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+#, fuzzy
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Lliain"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+#, fuzzy
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Pinc Golau"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+#, fuzzy
+#| msgid "Load..."
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr "Llwytho..."
+
+#: wrtembed/KReportSectionEditor.cpp:74
+#, fuzzy
+#| msgid "Add..."
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "Ychwanegu..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Dileu Testun"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Dileu Testun"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Dileu Testun"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.cpp:312
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.ui:29
+#, fuzzy
+#| msgid "Show %1"
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Dangos %1"
+
+#: wrtembed/KReportSectionEditor.ui:36
+#, fuzzy
+#| msgid "Show %1"
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Dangos %1"
+
+#: wrtembed/KReportSectionEditor.ui:43
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Rhagolwg Tudalen"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "Ffitio i Dudalen"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+#, fuzzy
+#| msgid "Company Name"
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Enw Cwmni"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+#, fuzzy
+#| msgid "Company Name"
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Enw Cwmni"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+#, fuzzy
+#| msgid "Paste Text"
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Gludo Testun"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+#, fuzzy
+#| msgid "Company Name"
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Enw Cwmni"
+
+#: wrtembed/KReportSectionEditor.ui:130
+#, fuzzy
+#| msgid "Footer"
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "Troedyn"
+
+#: wrtembed/KReportSectionEditor.ui:217
+#, fuzzy
+#| msgid "Current Section"
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Adran Gyfredol"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, fuzzy, qt-format
+#| msgid "%1%"
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+#, fuzzy
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Ffitio i Dudalen"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+#, fuzzy
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Ffitio i Dudalen"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr ""
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+#, fuzzy
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Ffitio i Dudalen"
+
+#, fuzzy
+#~| msgid "US Letter"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "Llythyr UDA"
+
+#, fuzzy
+#~| msgid "US Legal"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "Cyfreithiol UDA"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "Addasiedig"
+
+#, fuzzy
+#~| msgid "Execute"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "Gweithredu"
+
+#, fuzzy
+#~| msgid "ISO B10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "ISO B10"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "Cwmni"
+
+#, fuzzy
+#~| msgid "ISO DL"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "ISO DL"
+
+#, fuzzy
+#~| msgid "US Folio"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Folio"
+#~ msgstr "Ffolio UDA"
+
+#, fuzzy
+#~| msgid "US Ledger"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "Cyfriflyfr UDA"
+
+#, fuzzy
+#~| msgid "US Tabloid"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Tabloid"
+#~ msgstr "Tabloid UDA"
+
+#, fuzzy
+#~| msgid "Postal Code"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "Côd Post"
+
+#, fuzzy
+#~| msgid "Double Struck"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Double Postcard"
+#~ msgstr "Trwylinell Ddwbl"
+
+#, fuzzy
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Sgrîn"
+
+#, fuzzy
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "&Uchder:"
+
+#, fuzzy
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "Lleoliad"
+
+#, fuzzy
+#~| msgid "Size:"
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "Maint:"
+
+#, fuzzy
+#~| msgid "ISO A3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "ISO A3"
+
+#, fuzzy
+#~| msgid "ISO A4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "ISO A4"
+
+#, fuzzy
+#~| msgid "ISO A5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "ISO A5"
+
+#, fuzzy
+#~| msgid "ISO B5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "ISO B5"
+
+#, fuzzy
+#~| msgid "US Executive"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "Gweithredwr UDA"
+
+#, fuzzy
+#~| msgid "ISO A0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "ISO A0"
+
+#, fuzzy
+#~| msgid "ISO A1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "ISO A1"
+
+#, fuzzy
+#~| msgid "ISO A2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "ISO A2"
+
+#, fuzzy
+#~| msgid "ISO A6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "ISO A6"
+
+#, fuzzy
+#~| msgid "ISO A7"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "ISO A7"
+
+#, fuzzy
+#~| msgid "ISO A8"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "ISO A8"
+
+#, fuzzy
+#~| msgid "ISO A9"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "ISO A9"
+
+#, fuzzy
+#~| msgid "ISO B0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "ISO B0"
+
+#, fuzzy
+#~| msgid "ISO B1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "ISO B1"
+
+#, fuzzy
+#~| msgid "ISO B2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "ISO B2"
+
+#, fuzzy
+#~| msgid "ISO B3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "ISO B3"
+
+#, fuzzy
+#~| msgid "ISO B4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "ISO B4"
+
+#, fuzzy
+#~| msgid "ISO B6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "ISO B6"
+
+#, fuzzy
+#~| msgid "ISO C5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "ISO C5"
+
+#, fuzzy
+#~| msgid "US Common 10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Common 10"
+#~ msgstr "10 Cyffredinol UDA"
+
+#, fuzzy
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "&Uchder:"
+
+#, fuzzy
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~| msgid "Line width:"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Weight"
+#~ msgstr "Lled y llinell:"
+
+#, fuzzy
+#~| msgid "More Line Colors..."
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "Rhagor o Liwiau Llinell..."
+
+#, fuzzy
+#~| msgid "St&yle"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "Ardd&ull"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "Gwerth"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~| msgid "Line width:"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Weight"
+#~ msgstr "Lled y llinell:"
+
+#, fuzzy
+#~| msgid "More Line Colors..."
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "Rhagor o Liwiau Llinell..."
+
+#, fuzzy
+#~| msgid "St&yle"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "Ardd&ull"
+
+#, fuzzy
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "Gwerth"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "Chwith:"
+
+#, fuzzy
+#~| msgid "C&enter"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "C&anol"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "&De"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Aliniad fertigol:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "&Pen:"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "Alinio'n Ymysgogol"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Aliniad fertigol:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "Wynebfath:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~| msgid "Background color:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "Lliw cefndir:"
+
+#, fuzzy
+#~| msgid "Line width:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Weight"
+#~ msgstr "Lled y llinell:"
+
+#, fuzzy
+#~| msgid "More Line Colors..."
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "Rhagor o Liwiau Llinell..."
+
+#, fuzzy
+#~| msgid "St&yle"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "Ardd&ull"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "Gwerth"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "Chwith:"
+
+#, fuzzy
+#~| msgid "C&enter"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "C&anol"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "&De"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Aliniad fertigol:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "&Pen:"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "Alinio'n Ymysgogol"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Aliniad fertigol:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "Wynebfath:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~| msgid "Line width:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Weight"
+#~ msgstr "Lled y llinell:"
+
+#, fuzzy
+#~| msgid "More Line Colors..."
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "Rhagor o Liwiau Llinell..."
+
+#, fuzzy
+#~| msgid "St&yle"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "Ardd&ull"
+
+#, fuzzy
+#~| msgid "Background color:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "Lliw cefndir:"
+
+#, fuzzy
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "Rheolydd Arddull"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "KD wrth KGyfieithu"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "kyfieithu@dotmon.com"
+
+#, fuzzy
+#~| msgid "Default path"
+#~ msgid "Draw path"
+#~ msgstr "Llwybr rhagosodol"
+
+#, fuzzy
+#~ msgid "Freehand path"
+#~ msgstr "Gwaredu Grŵp"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Angle Constraints"
+#~ msgstr "Newid Mewnoliad"
+
+#, fuzzy
+#~| msgid "Position:"
+#~ msgid "Precision:"
+#~ msgstr "Lleoliad:"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "Gainsboro"
+#~ msgctxt "The raw line data"
+#~ msgid "Raw"
+#~ msgstr "Gainsboro"
+
+#, fuzzy
+#~ msgid "Curve"
+#~ msgstr "Adran Gyfredol"
+
+#, fuzzy
+#~| msgid "String:"
+#~ msgid "Straight"
+#~ msgstr "Llinyn:"
+
+#, fuzzy
+#~ msgid "Combine angle:"
+#~ msgstr "Bwled Addasiedig"
+
+#, fuzzy
+#~| msgid "Could not export file."
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr "Methu allforio'r ffeil."
+
+#, fuzzy
+#~| msgid "Current Date (fixed)"
+#~ msgid "Currently no database is used."
+#~ msgstr "Dyddiad Cyfredol (sefydlog)"
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "The database \"%1\" does not exist."
+#~ msgstr "Nid yw'r ffeil %1 yn bodoli!."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "Nid yw'r ffeil %1 yn bodoli!."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Database file \"%1\" is not writable."
+#~ msgstr "Nid yw'r ffeil %1 yn bodoli!."
+
+#, fuzzy
+#~ msgid "Creating table failed."
+#~ msgstr "Creu Patrymlun"
+
+#, fuzzy
+#~ msgid "Could not create the same table \"%1\" twice."
+#~ msgstr "Methodd ddarllen dechrau'r ffeil."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist."
+#~ msgstr "Nid yw'r ffeil %1 yn bodoli!."
+
+#, fuzzy
+#~ msgid "Could not remove object's data."
+#~ msgstr "Methu llwytho gwrthrych caeth."
+
+#, fuzzy
+#~ msgid "Could not alter table \"%1\" using the same table as destination."
+#~ msgstr "Methodd ddarllen dechrau'r ffeil."
+
+#, fuzzy
+#~ msgid "Unknown table \"%1\"."
+#~ msgstr "Gwall anhysbys"
+
+#, fuzzy
+#~ msgid "Could not rename table \"%1\" using the same name."
+#~ msgstr "Methodd ddarllen dechrau'r ffeil."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Query \"%1\" does not exist."
+#~ msgstr "Nid yw'r ffeil %1 yn bodoli!."
+
+#, fuzzy
+#~| msgid "File Creation"
+#~ msgid "Begin transaction failed."
+#~ msgstr "Creu Ffeil"
+
+#, fuzzy
+#~| msgid "This name is already used."
+#~ msgid "Transaction already started."
+#~ msgstr "Defnyddir yr enw hwn eisoes."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Column <resource>%1</resource> does not exist in the query."
+#~ msgstr "Nid yw'r ffeil %1 yn bodoli!."
+
+#, fuzzy
+#~| msgid "Error while saving embedded documents"
+#~ msgctxt "Extended schema for a table: loading error"
+#~ msgid "Error while loading extended table schema."
+#~ msgstr "Digwyddodd gwall wrth gadw dogfennau caeth"
+
+#, fuzzy
+#~ msgid ""
+#~ "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~ "XML data: %4"
+#~ msgstr ""
+#~ "Gwall dosrannu yn y prif ddogfen wrth linell %1, colofn %2\n"
+#~ "  Neges wall: %3"
+
+#, fuzzy
+#~ msgid "Could not insert record because there is no master table specified."
+#~ msgstr "Methodd ddarllen dechrau'r ffeil."
+
+#, fuzzy
+#~ msgid "Could not delete record because there is no master table specified."
+#~ msgstr "Methodd ddarllen dechrau'r ffeil."
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Unknown error."
+#~ msgstr "Gwall anhysbys"
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "Dyddiad:"
+
+#, fuzzy
+#~ msgid "Could not set value of database property \"%1\"."
+#~ msgstr "Methodd ddarllen dechrau'r ffeil."
+
+#, fuzzy
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "Methodd ddarllen dechrau'r ffeil."
+
+#, fuzzy
+#~ msgid "Could not read database properties."
+#~ msgstr "Methodd ddarllen dechrau'r ffeil."
+
+#, fuzzy
+#~ msgid "Could not find database driver \"%1\"."
+#~ msgstr "Methodd ddarllen dechrau'r ffeil."
+
+#, fuzzy
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "Methodd ddarllen dechrau'r ffeil."
+
+#, fuzzy
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "Methodd ddarllen dechrau'r ffeil."
+
+#, fuzzy
+#~| msgid "File not found"
+#~ msgid "Field not found"
+#~ msgstr "Ni chanfuwyd y ffeil"
+
+#, fuzzy
+#~ msgid "Could not access the table directly using its name"
+#~ msgstr "Methwyd agor y ffeil i'w gadw"
+
+#, fuzzy
+#~| msgid "File not found"
+#~ msgid "Table not found"
+#~ msgstr "Ni chanfuwyd y ffeil"
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" has no \"%2\" field."
+#~ msgstr "Nid yw'r ffeil %1 yn bodoli!."
+
+#, fuzzy
+#~| msgid "Page Number"
+#~ msgid "Short Integer Number"
+#~ msgstr "Rhif y Dudalen"
+
+#, fuzzy
+#~| msgid "Next Page Number"
+#~ msgid "Integer Number"
+#~ msgstr "Rhif y Dudalen Nesaf"
+
+#, fuzzy
+#~| msgid "No value"
+#~ msgid "Yes/No Value"
+#~ msgstr "Dim gwerth"
+
+#~ msgid "Date"
+#~ msgstr "Dyddiad"
+
+#, fuzzy
+#~| msgid "Date & Time"
+#~ msgid "Date and Time"
+#~ msgstr "Dyddiad ac Amser"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Time"
+#~ msgstr "Amser:"
+
+#, fuzzy
+#~ msgid "Text"
+#~ msgstr "Ychwanegu Testun"
+
+#, fuzzy
+#~ msgid "Long Text"
+#~ msgstr "Ychwanegu Testun"
+
+#~ msgid "Object"
+#~ msgstr "Gwrthrych"
+
+#, fuzzy
+#~| msgid "Change Line Spacing"
+#~ msgid "Floating Point Number"
+#~ msgstr "Newid Bylchu Llinell"
+
+#, fuzzy
+#~| msgid "Date & Time"
+#~ msgid "Date/Time"
+#~ msgstr "Dyddiad ac Amser"
+
+#, fuzzy
+#~| msgid "Internal error"
+#~ msgid "Syntax error."
+#~ msgstr "Gwall mewnol"
+
+#, fuzzy
+#~| msgid "Error!"
+#~ msgid "Error"
+#~ msgstr "Gwall!"
+
+#, fuzzy
+#~| msgid "Internal error"
+#~ msgid "Error near \"%1\"."
+#~ msgstr "Gwall mewnol"
+
+#, fuzzy
+#~ msgid "Record inserting failed."
+#~ msgstr "Creu Patrymlun"
+
+#, fuzzy
+#~ msgid "Record deleting failed."
+#~ msgstr "Creu Patrymlun"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Test Connection"
+#~ msgstr "Newid Mewnoliad"
+
+#, fuzzy
+#~ msgid "Number"
+#~ msgstr "Rhif:"
+
+#, fuzzy
+#~ msgid "Image"
+#~ msgstr "Ffitio i Dudalen"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr "Newid Mewnoliad"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr "Newid Tablydd"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "Trosi i'r Groeg"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Combine paths"
+#~ msgstr "Bwled Addasiedig"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move control point"
+#~ msgstr "Ymylon"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "Mewnosod Cyswllt"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "Ymylon"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move points"
+#~ msgstr "Gwaredu Cyswllt"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove points"
+#~ msgstr "Gwaredu Cyswllt"
+
+#, fuzzy
+#~| msgid "Select Font"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set point type"
+#~ msgstr "Dewis Wynebfath"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reverse paths"
+#~ msgstr "Gwaredu Grŵp"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath"
+#~ msgstr "Gwaredu Grŵp"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to curves"
+#~ msgstr "Newid ardull wynebfath?"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to lines"
+#~ msgstr "Newid ardull wynebfath?"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set marker"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Align shapes"
+#~ msgstr "Alinio i'r Chwith"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Clip Shape"
+#~ msgstr "Ton"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr "Creu Patrymlun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shape"
+#~ msgid_plural "Delete shapes"
+#~ msgstr[0] "Dileu Testun"
+#~ msgstr[1] "Dileu Testun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Distribute shapes"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~| msgid "Current Section"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr "Adran Gyfredol"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Lock shapes"
+#~ msgstr "Alinio i'r Chwith"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move shapes"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr "Creu Patrymlun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reorder shapes"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Shape RunAround"
+#~ msgstr "Newid Tablydd"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Shadow"
+#~ msgstr "Cysgod"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Shear shapes"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Resize shapes"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr "Sgript"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shape"
+#~ msgstr "Creu Patrymlun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shapes"
+#~ msgstr "Alinio i'r Chwith"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr "Alinio i'r Chwith"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Close subpath"
+#~ msgstr "Gwaredu Grŵp"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Join subpaths"
+#~ msgstr "Bwled Addasiedig"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove subpath"
+#~ msgstr "Gwaredu Grŵp"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "Linen"
+#~ msgid "Lines"
+#~ msgstr "Lliain"
+
+#~ msgid "Type:"
+#~ msgstr "Math:"
+
+#, fuzzy
+#~| msgid "Time"
+#~ msgid "Tie"
+#~ msgstr "Amser"
+
+#, fuzzy
+#~ msgid "Simple path shape"
+#~ msgstr "Creu Patrymlun"
+
+#, fuzzy
+#~ msgid "%1 Options"
+#~ msgstr "Eithriadau"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Shapes"
+#~ msgstr "Creu Patrymlun"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "Gludo Testun"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgid "Nodes"
+#~ msgstr "Dim"
+
+#, fuzzy
+#~| msgid "Guide Lines"
+#~ msgid "Guide lines"
+#~ msgstr "Cyfeiryddion"
+
+#, fuzzy
+#~ msgid "Create object"
+#~ msgstr "Creu Dogfen"
+
+#, fuzzy
+#~ msgid "Pan"
+#~ msgstr "Melynddu"
+
+#, fuzzy
+#~| msgid "Change Alignment"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Segment"
+#~ msgstr "Newid Aliniad"
+
+#, fuzzy
+#~ msgid "Corner point"
+#~ msgstr "Cadarnhau Allforio"
+
+#, fuzzy
+#~ msgid "Make curve point"
+#~ msgstr "Ymylon"
+
+#, fuzzy
+#~ msgid "Make line point"
+#~ msgstr "Ymylon"
+
+#, fuzzy
+#~ msgid "Segment to Line"
+#~ msgstr "Newid ardull wynebfath?"
+
+#, fuzzy
+#~ msgid "Insert point"
+#~ msgstr "Mewnosod Cyswllt"
+
+#, fuzzy
+#~ msgid "Remove point"
+#~ msgstr "Gwaredu Cyswllt"
+
+#, fuzzy
+#~ msgid "Merge points"
+#~ msgstr "Ymylon"
+
+#, fuzzy
+#~| msgid "Edit Path"
+#~ msgid "To Path"
+#~ msgstr "Llwybr Golygu "
+
+#, fuzzy
+#~ msgid "Line/Curve"
+#~ msgstr "Adran Gyfredol"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Path editing"
+#~ msgstr "Argraffiad Diwethaf"
+
+#, fuzzy
+#~ msgid "..."
+#~ msgstr "Ychwanegu..."
+
+#, fuzzy
+#~ msgid "Convert To Path"
+#~ msgstr "Trosi i'r Groeg"
+
+#~ msgid "Scripts"
+#~ msgstr "Sgriptiau"
+
+#, fuzzy
+#~ msgid "Script Manager"
+#~ msgstr "Rheolydd Arddull"
+
+#, fuzzy
+#~ msgid "Execute Script File..."
+#~ msgstr "Sgript"
+
+#, fuzzy
+#~ msgid "Script Manager..."
+#~ msgstr "Rheolydd Arddull"
+
+#, fuzzy
+#~ msgid "Execute Script File"
+#~ msgstr "Sgript"
+
+#, fuzzy
+#~ msgid "Could not read the package \"%1\"."
+#~ msgstr "Methodd ddarllen dechrau'r ffeil."
+
+#, fuzzy
+#~ msgid "Replace"
+#~ msgstr "&Amnewid:"
+
+#, fuzzy
+#~ msgid "Save"
+#~ msgstr "Ton"
+
+#, fuzzy
+#~ msgid "Add script file"
+#~ msgstr "Sgript"
+
+#, fuzzy
+#~| msgid "Add Completion Entry"
+#~ msgid "Add collection folder"
+#~ msgstr "Ychwanegu Cofnod Cwblhad"
+
+#, fuzzy
+#~ msgid "Add"
+#~ msgstr "&Ychwanegu"
+
+#, fuzzy
+#~| msgid "Scripts"
+#~ msgid "Script"
+#~ msgstr "Sgriptiau"
+
+#, fuzzy
+#~| msgid "Completion"
+#~ msgid "Collection"
+#~ msgstr "Cwblhad"
+
+#, fuzzy
+#~| msgid "Change List Type"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master slide"
+#~ msgstr "Newid Math Rhestr"
+
+#, fuzzy
+#~| msgid "Change List Type"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master page"
+#~ msgstr "Newid Math Rhestr"
+
+#, fuzzy
+#~| msgid "Page Layout"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "Haenlun Dudalen"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display master background"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display slide background"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display page background"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Show master shapes"
+#~ msgstr "Creu Patrymlun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Hide master shapes"
+#~ msgstr "Creu Patrymlun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] "Dileu Testun"
+#~ msgstr[1] "Dileu Testun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "Dileu Testun"
+#~ msgstr[1] "Dileu Testun"
+
+#, fuzzy
+#~| msgid "Insert Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr "Mewnosod Testun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr "Mewnosod Testun"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "Gludo Testun"
+#~ msgstr[1] "Gludo Testun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] "Dileu Testun"
+#~ msgstr[1] "Dileu Testun"
+
+#, fuzzy
+#~| msgid "Confirm Save"
+#~ msgid "Configure"
+#~ msgstr "Cadarnhau Cadw"
+
+#, fuzzy
+#~| msgid "Show %1"
+#~ msgid "Grid"
+#~ msgstr "Dangos %1"
+
+#, fuzzy
+#~| msgid "Document"
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "Dogfen"
+
+#, fuzzy
+#~ msgid "Document Settings"
+#~ msgstr "Crynodeb Ddogfen"
+
+#, fuzzy
+#~| msgid "Author"
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "Awdur"
+
+#~ msgid "Author"
+#~ msgstr "Awdur"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Slide"
+#~ msgstr "Gludo Testun"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Page"
+#~ msgstr "Gludo Testun"
+
+#, fuzzy
+#~| msgid "Hide %1"
+#~ msgid "Slide %1"
+#~ msgstr "Cuddio %1"
+
+#, fuzzy
+#~ msgid "Page  %1"
+#~ msgstr "Dyddiad:"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "Lavender"
+#~ msgid "Layer"
+#~ msgstr "Lafant"
+
+#, fuzzy
+#~| msgid "Group:"
+#~ msgid "Group"
+#~ msgstr "Grŵp:"
+
+#, fuzzy
+#~ msgid "Shape"
+#~ msgstr "Ton"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "Gludo Testun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "Creu Patrymlun"
+
+#, fuzzy
+#~| msgid "Size:"
+#~ msgid "Slide"
+#~ msgstr "Maint:"
+
+#, fuzzy
+#~| msgid "Variable"
+#~ msgid "Visible"
+#~ msgstr "Newidyn"
+
+#, fuzzy
+#~| msgid "Loaded"
+#~ msgid "Locked"
+#~ msgstr "Wedi'i lwytho"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reparent shapes"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgid "&Move Here"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~| msgid "Green"
+#~ msgid "&Copy Here"
+#~ msgstr "Gwyrdd"
+
+#, fuzzy
+#~ msgid "C&ancel"
+#~ msgstr "Newid Prid/Islythrennau"
+
+#~ msgid "Document"
+#~ msgstr "Dogfen"
+
+#, fuzzy
+#~| msgid "Add Newline"
+#~ msgid "Add a new slide or layer"
+#~ msgstr "Ychwanegu Llinell Newydd"
+
+#, fuzzy
+#~| msgid "Add Newline"
+#~ msgid "Add a new page or layer"
+#~ msgstr "Ychwanegu Llinell Newydd"
+
+#, fuzzy
+#~ msgid "Page"
+#~ msgstr "Ffitio i Dudalen"
+
+#, fuzzy
+#~| msgid "Remove Selected Text"
+#~ msgid "Delete selected objects"
+#~ msgstr "Gwaredu'r Testun Dewisiedig"
+
+#, fuzzy
+#~| msgid "Remove Selected Text"
+#~ msgid "Raise selected objects"
+#~ msgstr "Gwaredu'r Testun Dewisiedig"
+
+#, fuzzy
+#~ msgid "Lower selected objects"
+#~ msgstr "Creu Dogfen"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgid "View mode"
+#~ msgstr "Newid Ffiniau"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "Creu Patrymlun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~| msgid "Add Newline"
+#~ msgid "Add a new slide"
+#~ msgstr "Ychwanegu Llinell Newydd"
+
+#, fuzzy
+#~| msgid "Add Newline"
+#~ msgid "Add a new page"
+#~ msgstr "Ychwanegu Llinell Newydd"
+
+#, fuzzy
+#~ msgid "Page %1"
+#~ msgstr "Dyddiad:"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] "Gludo Testun"
+#~ msgstr[1] "Gludo Testun"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] "Gludo Testun"
+#~ msgstr[1] "Gludo Testun"
+
+#, fuzzy
+#~ msgid "Tools"
+#~ msgstr "Lliw Rhagosodol"
+
+#, fuzzy
+#~ msgid "D&elete"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgid "Insert Page"
+#~ msgstr "Mewnosod Testun"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Page"
+#~ msgstr "Enw Cwmni"
+
+#, fuzzy
+#~ msgid "Delete Page"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgid "Delete the current page"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Page..."
+#~ msgstr "Gludo Testun"
+
+#~ msgid "Page Layout..."
+#~ msgstr "Haenlun y Dudalen..."
+
+#~ msgid "Variable"
+#~ msgstr "Newidyn"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Document..."
+#~ msgstr "Mewnforio Dogfen"
+
+#, fuzzy
+#~ msgid "Import Slideshow"
+#~ msgstr "Mewnforio Arddull"
+
+#~ msgid "Import Document"
+#~ msgstr "Mewnforio Dogfen"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not import\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Methwyd agor\n"
+#~ " %1"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr "Newid Tablydd"
+
+#, fuzzy
+#~ msgid "Set image ..."
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~ msgid "Background"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~ msgid "Page Background"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page Design"
+#~ msgstr "Rhagolwg Tudalen"
+
+#, fuzzy
+#~| msgid "Hide %1"
+#~ msgid "Slide Design"
+#~ msgstr "Cuddio %1"
+
+#, fuzzy
+#~ msgid "Use background of master page"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~ msgid "Use background of master slide"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~| msgid "Change List Type"
+#~ msgid "Display shapes of master page"
+#~ msgstr "Newid Math Rhestr"
+
+#, fuzzy
+#~| msgid "Change List Type"
+#~ msgid "Display shapes of master slide"
+#~ msgstr "Newid Math Rhestr"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change slide background image"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page background image"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "Gludo Testun"
+
+#, fuzzy
+#~| msgid "Hide %1"
+#~ msgid "Slide %1/%2"
+#~ msgstr "Cuddio %1"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Page %1/%2"
+#~ msgstr "Gludo Testun"
+
+#, fuzzy
+#~ msgid "Page %1/%2"
+#~ msgstr "Dyddiad:"
+
+#, fuzzy
+#~| msgid "Field"
+#~ msgid "Field"
+#~ msgstr "Maes"
+
+#, fuzzy
+#~| msgid "TextLabel1:"
+#~ msgid "Label"
+#~ msgstr "LabelTestun1 :"
+
+#, fuzzy
+#~| msgid "%1%"
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1%"
+
+#, fuzzy
+#~| msgid "Section Title"
+#~ msgid "Section Editor"
+#~ msgstr "Teitl Adran"
+
+#, fuzzy
+#~| msgid "Change font family?"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "Newid y teulu wynebfath?"
+
+#, fuzzy
+#~| msgid "Change Char Style"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "Newid Arddull Llythyren"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "Ychwanegu Testun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "Mewnosod Cyswllt"
+
+#, fuzzy
+#~| msgid "Insert Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr "Mewnosod Testun"
+
+#, fuzzy
+#~| msgid "Insert Column"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Right"
+#~ msgstr "Mewnosod Colofn"
+
+#, fuzzy
+#~| msgid "Insert Column"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr "Mewnosod Colofn"
+
+#, fuzzy
+#~| msgid "Insert Row"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Below"
+#~ msgstr "Mewnosod Rhes"
+
+#, fuzzy
+#~| msgid "Insert Row"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "Mewnosod Rhes"
+
+#, fuzzy
+#~| msgid "Change Line Spacing"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List Numbering"
+#~ msgstr "Newid Bylchu Llinell"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "Fformat Dyddiad"
+
+#, fuzzy
+#~| msgid "Change Paragraph Spacing"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Direct Paragraph Formatting"
+#~ msgstr "Newid Bylchu Paragraff"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr "Creu Patrymlun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr "Bwled Addasiedig"
+
+#, fuzzy
+#~| msgid "Offset:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "Atred:"
+
+#, fuzzy
+#~| msgid "Date"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "Dyddiad"
+
+#, fuzzy
+#~ msgid "1 replacement made"
+#~ msgid_plural "%1 replacements made"
+#~ msgstr[0] "Amnewid Testun"
+#~ msgstr[1] "Amnewid Testun"
+
+#, fuzzy
+#~| msgctxt "We add the 1/2 char at the %1"
+#~| msgid "Re&place 1/2... with %1..."
+#~ msgid "Replace %1 with %2?"
+#~ msgstr "Am&newid 1/2... gyda %1..."
+
+#, fuzzy
+#~| msgid "Current Section"
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "Adran Gyfredol"
+
+#~ msgctxt "Underline Style"
+#~ msgid "None"
+#~ msgstr "Dim"
+
+#, fuzzy
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "Sengl"
+
+#, fuzzy
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "Dwbl"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "New Paragraph"
+#~ msgstr "Testun paragraff arferol"
+
+#, fuzzy
+#~| msgid "Bookmark"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "Tudnod"
+
+#, fuzzy
+#~| msgid "Add Fraction"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "Ychwanegu Ffracsiwn"
+
+#, fuzzy
+#~| msgid "Insert Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "Mewnosod Testun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "Mewnosod Testun"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "Mewnosod Toriad Llinell"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "Mewnosod Testun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "Ymylon"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "&Fertigol"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr "Bwled Addasiedig"
+
+#, fuzzy
+#~| msgid "Change Text Format"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Border Formatting"
+#~ msgstr "Newid Fformat Testun"
+
+#, fuzzy
+#~| msgid "Include in table of contents"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Cynnwys yn y tabl cynnwys"
+
+#, fuzzy
+#~| msgid "Include in table of contents"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr "Cynnwys yn y tabl cynnwys"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Mewnosod Toriad Llinell"
+
+#, fuzzy
+#~| msgid "Add Fraction"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "Ychwanegu Ffracsiwn"
+
+#, fuzzy
+#~| msgid "Bold"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr "Trwm"
+
+#, fuzzy
+#~| msgid "Italic:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "Italig:"
+
+#, fuzzy
+#~| msgid "Underline"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "Tanlinellu"
+
+#, fuzzy
+#~| msgid "Strikeout:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr "Trwylinellu:"
+
+#, fuzzy
+#~| msgid "Change Alignment"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr "Newid Aliniad"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr "Aliniad fertigol:"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "Newid Mewnoliad"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "Newid Mewnoliad"
+
+#, fuzzy
+#~| msgid "Change font size?"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "Newid maint yr wynebfath?"
+
+#, fuzzy
+#~| msgid "Change font size?"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "Newid maint yr wynebfath?"
+
+#, fuzzy
+#~| msgid "Select Font"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr "Dewis Wynebfath"
+
+#, fuzzy
+#~| msgid "Select Font"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr "Dewis Wynebfath"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~| msgid "Text Color"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Text Color"
+#~ msgstr "Lliw Testun"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr "Creu Arddull Newydd"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Paragraph Style"
+#~ msgstr "Testun paragraff arferol"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "Fformat Dyddiad"
+
+#, fuzzy
+#~ msgid "Default"
+#~ msgstr "&Rhagosodyn"
+
+#, fuzzy
+#~| msgid "Undo: %1"
+#~ msgctxt "Default text for undo action"
+#~ msgid "Undo"
+#~ msgstr "Dadwneud: %1"
+
+#, fuzzy
+#~| msgid "&Undo: %1"
+#~ msgid "Undo %1"
+#~ msgstr "&Dadwneud: %1"
+
+#, fuzzy
+#~| msgid "Red"
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "Coch"
+
+#, fuzzy
+#~| msgid "Redo: %1"
+#~ msgid "Redo %1"
+#~ msgstr "Ailwneud: %1"
+
+#, fuzzy
+#~| msgid "Red"
+#~ msgid "Redo"
+#~ msgstr "Coch"
+
+#, fuzzy
+#~| msgid "Undo: %1"
+#~ msgid "Undo"
+#~ msgstr "Dadwneud: %1"
+
+#, fuzzy
+#~ msgid "&File"
+#~ msgstr "Enw Ffeil"
+
+#, fuzzy
+#~ msgid "&Settings"
+#~ msgstr "Llinyn:"
+
+#, fuzzy
+#~ msgid "File"
+#~ msgstr "Enw Ffeil"
+
+#, fuzzy
+#~ msgid "Delete the author profile"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgid "Default Author Profile"
+#~ msgstr "Lliw Rhagosodol"
+
+#, fuzzy
+#~ msgid "Name of Profile"
+#~ msgstr "Nifer Tudalennau"
+
+#~ msgid "Name:"
+#~ msgstr "Enw:"
+
+#~ msgid "Initials:"
+#~ msgstr "Blaenlythrennau:"
+
+#~ msgid "Title:"
+#~ msgstr "Teitl:"
+
+#~ msgid "Position:"
+#~ msgstr "Lleoliad:"
+
+#~ msgid "Company:"
+#~ msgstr "Cwmni:"
+
+#~ msgid "Email:"
+#~ msgstr "Ebost:"
+
+#, fuzzy
+#~ msgid "Telephone (home):"
+#~ msgstr "Ffôn:"
+
+#, fuzzy
+#~ msgid "Telephone (work):"
+#~ msgstr "Ffôn"
+
+#~ msgid "Fax:"
+#~ msgstr "Ffacs"
+
+#~ msgid "Street:"
+#~ msgstr "Stryd:"
+
+#~ msgid "Postal code:"
+#~ msgstr "Côd post:"
+
+#~ msgid "City:"
+#~ msgstr "Dinas:"
+
+#~ msgid "Country:"
+#~ msgstr "Gwlad:"
+
+#, fuzzy
+#~| msgid "No date set"
+#~ msgid "No autosave"
+#~ msgstr "Ni osodir dyddiad"
+
+#, fuzzy
+#~| msgid "Autosaving..."
+#~ msgid "Autosave interval:"
+#~ msgstr "Hunangadw..."
+
+#, fuzzy
+#~ msgid "Create backup file:"
+#~ msgstr "Creu Patrymlun"
+
+#, fuzzy
+#~| msgid "Show %1"
+#~ msgid "Show grid:"
+#~ msgstr "Dangos %1"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgid "Grid color:"
+#~ msgstr "Lliw'r &cefndir:"
+
+#, fuzzy
+#~| msgid "Line &Spacing"
+#~ msgid "Spacing"
+#~ msgstr "Bylch&u Llinellau"
+
+#, fuzzy
+#~| msgid "&Horizontal"
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "&Llorweddol"
+
+#, fuzzy
+#~| msgid "&Vertical"
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "&Fertigol"
+
+#, fuzzy
+#~| msgid "Unit:"
+#~ msgid "Units:"
+#~ msgstr "Uned:"
+
+#, fuzzy
+#~| msgid "Offset:"
+#~ msgid "Paste offset:"
+#~ msgstr "Atred:"
+
+#~ msgid "Only print and exit"
+#~ msgstr "Argraffu a terfynu yn unig"
+
+#~ msgid "Open a new document with a template"
+#~ msgstr "Defnyddio patrymlun i agor dogfen newydd"
+
+#~ msgid "Override display DPI"
+#~ msgstr "Disodli DPI'r sgrîn"
+
+#, fuzzy
+#~| msgid "Only print and exit"
+#~ msgid "Only export to PDF and exit"
+#~ msgstr "Argraffu a terfynu yn unig"
+
+#, fuzzy
+#~ msgid "%1: Critical Error"
+#~ msgstr "Gair Cwblhad"
+
+#, fuzzy
+#~| msgid "No template found for: %1 "
+#~ msgid "No template found for: %1"
+#~ msgstr "Methu canfod patrymlun ar gyfer: %1"
+
+#~ msgid "Too many templates found for: %1"
+#~ msgstr "Gormod o batrymluniau wedi eu canfod ar gyfer: %1"
+
+#~ msgid "Template %1 failed to load."
+#~ msgstr "Methwyd patrymlun %1 lwytho"
+
+#, fuzzy
+#~ msgid "Always use this template at application start up"
+#~ msgstr "Cychwyn %1 bob tro gyda'r patrymlun dewisiedig"
+
+#, fuzzy
+#~ msgid "Always use this template"
+#~ msgstr "Cychwyn %1 bob tro gyda'r patrymlun dewisiedig"
+
+#~ msgid "Making backup..."
+#~ msgstr "Yn gwneud copi wrth gefn..."
+
+#~ msgid "Saving..."
+#~ msgstr "Yn cadw..."
+
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Methodd gadw\n"
+#~ " %1"
+
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Methodd gadw %1\n"
+#~ "Rheswm: %2"
+
+#, fuzzy
+#~| msgid "Document Title"
+#~ msgid "Document <i>%1</i> saved"
+#~ msgstr "Teitl Dogfen"
+
+#~ msgid "Autosaving..."
+#~ msgstr "Hunangadw..."
+
+#~ msgid "Error during autosave! Partition full?"
+#~ msgstr "Digwyddodd gwall yn ystod y hunangadw!  Rhaniad llawn?"
+
+#, fuzzy
+#~ msgid "Could not create the file for saving"
+#~ msgstr "Methwyd agor y ffeil i'w gadw"
+
+#, fuzzy
+#~ msgid "Not able to write '%1'. Partition full?"
+#~ msgstr "Methu ysgrifennu 'maindoc.xml'."
+
+#, fuzzy
+#~ msgid "Not able to write RDF metadata. Partition full?"
+#~ msgstr "Methu ysgrifennu 'maindoc.xml'."
+
+#, fuzzy
+#~ msgid "Error while trying to write '%1'. Partition full?"
+#~ msgstr "Methu ysgrifennu 'maindoc.xml'."
+
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "URL wedi'i gamffurfio\n"
+#~ " %1"
+
+#~ msgid ""
+#~ "An autosaved file exists for this document.\n"
+#~ "Do you want to open it instead?"
+#~ msgstr ""
+#~ "Mae ffeil wedi'i hunangadw yn bodoli ar gyfer y ddogfen hon.\n"
+#~ " Ydych chi am ei agor yn ei lle?"
+
+#~ msgid "The file %1 does not exist."
+#~ msgstr "Nid yw'r ffeil %1 yn bodoli!."
+
+#, fuzzy
+#~| msgid "Open Document"
+#~ msgid "Opening Document"
+#~ msgstr "Agor Dogfen"
+
+#, fuzzy
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "Methwyd agor y ffeil i'w gadw"
+
+#~ msgid "File not found"
+#~ msgstr "Ni chanfuwyd y ffeil"
+
+#~ msgid "Not implemented"
+#~ msgstr "Heb ei weithredoli"
+
+#, fuzzy
+#~| msgid "Locale format"
+#~ msgid "Invalid file format"
+#~ msgstr "Fformat y fro"
+
+#~ msgid "Internal error"
+#~ msgstr "Gwall mewnol"
+
+#~ msgid "Out of memory"
+#~ msgstr "Allan o Gof."
+
+#, fuzzy
+#~ msgid "Failed to download remote file"
+#~ msgstr "Methu agor ffeil %1"
+
+#~ msgid "Unknown error"
+#~ msgstr "Gwall anhysbys"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr ""
+#~ "Methwyd agor %1\n"
+#~ " Rheswm: %2"
+
+#, fuzzy
+#~| msgid "Document Title"
+#~ msgid "Document <i>%1</i> loaded"
+#~ msgstr "Teitl Dogfen"
+
+#~ msgid "Could not find %1"
+#~ msgstr "Methodd ganfod %1"
+
+#, fuzzy
+#~ msgid ""
+#~ "Parsing error in %1 at line %2, column %3\n"
+#~ "Error message: %4"
+#~ msgstr ""
+#~ "Gwall dosrannu yn y prif ddogfen wrth linell %1, colofn %2\n"
+#~ "  Neges wall: %3"
+
+#~ msgid "%1 is not a file."
+#~ msgstr "Nid ffeil yw %1."
+
+#, fuzzy
+#~ msgid "Could not open the file for reading (check read permissions)."
+#~ msgstr "Methodd agor y ffeil i'w ddarllen (gwiriwch y caniatadau darllen)."
+
+#, fuzzy
+#~ msgid "Could not read the beginning of the file."
+#~ msgstr "Methodd ddarllen dechrau'r ffeil."
+
+#~ msgid ""
+#~ "parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "gwall dosrannu yn y prif ddogfen wrth linell %1, colofn %2\n"
+#~ "Neges wall: %3"
+
+#, fuzzy
+#~ msgid "Not a valid Calligra file: %1"
+#~ msgstr "Nid ffeil KOffice dilys yw hwn."
+
+#~ msgid "Invalid document: no file 'maindoc.xml'."
+#~ msgstr "Dogfen annilys: dim ffeil 'maindoc.xml'."
+
+#, fuzzy
+#~ msgid "Untitled"
+#~ msgstr "Teitl"
+
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr ""
+#~ "<p>Mae'r ddogfen <b>'%1'</b> wedi ei haddasu.</p><p>Ydych am ei chadw? </"
+#~ "p>"
+
+#~ msgid "Internal error: saveXML not implemented"
+#~ msgstr "Gwall mewnol: saveXML heb ei weithredoli"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Methwyd agor\n"
+#~ " %1"
+
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Methwyd agor %1\n"
+#~ " Rheswm: %2"
+
+#, fuzzy
+#~ msgid "a drawing"
+#~ msgstr "Oren Tywyll"
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~| "it?</p>"
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr ""
+#~ "<p>Mae'r ddogfen <b>'%1'</b> wedi ei haddasu.</p><p>Ydych am ei chadw? </"
+#~ "p>"
+
+#, fuzzy
+#~| msgid "Create Document"
+#~ msgid "Close Document"
+#~ msgstr "Creu Dogfen"
+
+#, fuzzy
+#~| msgid "%1%"
+#~ msgid "%1 %"
+#~ msgstr "%1%"
+
+#, fuzzy
+#~ msgid "No"
+#~ msgstr "Nodiad"
+
+#~ msgid "Could not export file."
+#~ msgstr "Methu allforio'r ffeil."
+
+#~ msgid "Missing Export Filter"
+#~ msgstr "Hidlen Allforio ar Goll"
+
+#~ msgid ""
+#~ "Could not import file of type\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Methu mewnforio ffeil o fath\n"
+#~ " %1"
+
+#~ msgid "Missing Import Filter"
+#~ msgstr "Hidlen Mewnforio ar Goll"
+
+#~ msgid "Choose Filter"
+#~ msgstr "Dewis Hidlen"
+
+#, fuzzy
+#~| msgid "&Find:"
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "&Canfod:"
+
+#, fuzzy
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "Ychwanegu Testun"
+
+#, fuzzy
+#~| msgid "Previous Page"
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "Tudalen Flaenorol"
+
+#, fuzzy
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "Eithriadau"
+
+#, fuzzy
+#~| msgid "&Replace:"
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "&Amnewid:"
+
+#, fuzzy
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "&Amnewid:"
+
+#, fuzzy
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "&Amnewid:"
+
+#, fuzzy
+#~| msgid "No template found for: %1 "
+#~ msgctxt "Total number of matches"
+#~ msgid "1 match found"
+#~ msgid_plural "%1 matches found"
+#~ msgstr[0] "Methu canfod patrymlun ar gyfer: %1"
+#~ msgstr[1] "Methu canfod patrymlun ar gyfer: %1"
+
+#, fuzzy
+#~| msgid "No template found for: %1 "
+#~ msgid "No matches found"
+#~ msgstr "Methu canfod patrymlun ar gyfer: %1"
+
+#, fuzzy
+#~ msgid "%1 unsaved document (%2)"
+#~ msgstr "Cadw'r Ddogfen Fel"
+
+#, fuzzy
+#~| msgid "E&xport..."
+#~ msgid "Export as PDF..."
+#~ msgstr "&Allforio..."
+
+#, fuzzy
+#~ msgid "Reload"
+#~ msgstr "Lawrlwytho"
+
+#, fuzzy
+#~| msgid "Open Existing Document..."
+#~ msgid "Open ex&isting Document as Untitled Document..."
+#~ msgstr "Agor Dogfen Gyfredol..."
+
+#~ msgid "E&xport..."
+#~ msgstr "&Allforio..."
+
+#, fuzzy
+#~| msgid "&Create Document"
+#~ msgid "En&crypt Document"
+#~ msgstr "&Creu Dogfen"
+
+#, fuzzy
+#~ msgid "&New View"
+#~ msgstr "G&waredu Golwg"
+
+#~ msgid "Document Information"
+#~ msgstr "Gwybodaeth Ddogfen"
+
+#, fuzzy
+#~| msgid "Show %1 Toolbar"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "Dangos Bar Offer %1"
+
+#, fuzzy
+#~ msgid "(write protected)"
+#~ msgstr "atal ysgrifennu"
+
+#~ msgid "Save as %1"
+#~ msgstr "Cadw e %1"
+
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "%1 (math anhybys o ffeil)"
+
+#~ msgid ""
+#~ "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
+#~ "want to save in this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Gall gadw fel %1 achosi colled fformatio.<p>Ydych am gadw yn y "
+#~ "fformat hwn serch hynny?</qt>"
+
+#~ msgid "Confirm Save"
+#~ msgstr "Cadarnhau Cadw"
+
+#~ msgid ""
+#~ "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you "
+#~ "still want to export to this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Gall allforio fel %1 achosi colled fformatio.<p>Ydych am allforio i'r "
+#~ "fformat hwn serch hynny?</qt>"
+
+#~ msgid "Confirm Export"
+#~ msgstr "Cadarnhau Allforio"
+
+#, fuzzy
+#~ msgid "untitled"
+#~ msgstr "Teitl"
+
+#~ msgid "Open Document"
+#~ msgstr "Agor Dogfen"
+
+#, fuzzy
+#~| msgid "E&xport..."
+#~ msgid "Export as PDF"
+#~ msgstr "&Allforio..."
+
+#, fuzzy
+#~ msgid "Document - %1"
+#~ msgstr "Teitl Dogfen"
+
+#, fuzzy
+#~| msgid ""
+#~| "You will lose all your changes!\n"
+#~| "Do you want to continue?"
+#~ msgid ""
+#~ "You will lose all changes made since your last save\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "Byddwch yn colli eich newidiadau i gyd!\n"
+#~ "Ydych eisiau parhau?"
+
+#, fuzzy
+#~ msgid "Warning"
+#~ msgstr "Oren Tywyll"
+
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "Dangos Bar Offer %1"
+
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "Cuddio Bar Offer %1"
+
+#, fuzzy
+#~| msgid "Open &Existing Document"
+#~ msgid "Open Existing Document"
+#~ msgstr "Agor Dogfen &Gyfredol"
+
+#~ msgid "Recent Documents"
+#~ msgstr "Dogfennau a Ddefnyddwyd yn Ddiweddar"
+
+#, fuzzy
+#~ msgid "Custom Document"
+#~ msgstr "Creu Dogfen"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Printing"
+#~ msgstr "Argraffiad Diwethaf"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Printing done"
+#~ msgstr "Argraffiad Diwethaf"
+
+#, fuzzy
+#~| msgid "Colors"
+#~ msgid "Close"
+#~ msgstr "Lliwiau"
+
+#, fuzzy
+#~ msgid "Open This Document"
+#~ msgstr "Agor Dogfen"
+
+#~ msgid "Create Template"
+#~ msgstr "Creu Patrymlun"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "Enw:"
+
+#~ msgid "Group:"
+#~ msgstr "Grŵp:"
+
+#~ msgid "&Add Group..."
+#~ msgstr "&Ychwanegu Grŵp..."
+
+#, fuzzy
+#~ msgid "&Remove"
+#~ msgstr "G&waredu Golwg"
+
+#~ msgid "Picture"
+#~ msgstr "Llun"
+
+#, fuzzy
+#~| msgid "Preview"
+#~ msgid "&Preview"
+#~ msgstr "Rhagolwg"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Custom:"
+#~ msgstr "Addasiedig"
+
+#~ msgid "&Select..."
+#~ msgstr "&Dewis..."
+
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr "Ydych wir eisiau trosysgrifo'r patrymlun cyfredol '%1'?"
+
+#~ msgid "Add Group"
+#~ msgstr "Ychwanegu Grŵp"
+
+#~ msgid "Enter group name:"
+#~ msgstr "Rhowch enw grŵp:"
+
+#~ msgid "This name is already used."
+#~ msgstr "Defnyddir yr enw hwn eisoes."
+
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "Ydych wir eisiau gwaredu'r grŵp yma?"
+
+#~ msgid "Remove Group"
+#~ msgstr "Gwaredu Grŵp"
+
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "Ydych wir eisiau gwaredu'r patrymlun hwnnw?"
+
+#~ msgid "Remove Template"
+#~ msgstr "Gwaredu Patrymlun"
+
+#, fuzzy
+#~ msgid "&Delete"
+#~ msgstr "Dileu Testun"
+
+#~ msgid "Could not load picture."
+#~ msgstr "Methu llwytho llun."
+
+#~ msgid "No picture available."
+#~ msgstr "Dim llun ar gael."
+
+#, fuzzy
+#~ msgid "Use This Template"
+#~ msgstr "Creu Patrymlun"
+
+#~ msgid "Version"
+#~ msgstr "Fersiwn"
+
+#~ msgid "Date & Time"
+#~ msgstr "Dyddiad ac Amser"
+
+#~ msgid "Comment"
+#~ msgstr "Sylwad"
+
+#~ msgid "&Add"
+#~ msgstr "&Ychwanegu"
+
+#, fuzzy
+#~ msgid "&Modify"
+#~ msgstr "Newidwyd:"
+
+#~ msgid "&Open"
+#~ msgstr "A&gor"
+
+#, fuzzy
+#~ msgid "Date: %1"
+#~ msgstr "Dyddiad:"
+
+#~ msgid "Unknown"
+#~ msgstr "Anhysbys"
+
+#, fuzzy
+#~ msgid "Do you want to save the password?"
+#~ msgstr "Ydych wir eisiau gwaredu'r patrymlun hwnnw?"
+
+#~ msgid ""
+#~ "Parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Gwall dosrannu yn y prif ddogfen wrth linell %1, colofn %2\n"
+#~ "Neges wall: %3"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "Sgrîn"
+
+#~ msgid "The directory mode is not supported for remote locations."
+#~ msgstr "Ni chynhelir y modd cyfeiriadur ar gyfer lleoliadau pell."
+
+#, fuzzy
+#~ msgid "Subtract"
+#~ msgstr "Crynodeb"
+
+#, fuzzy
+#~ msgid "Lightness"
+#~ msgstr "GwyrddlasGolau"
+
+#~ msgid "Blue"
+#~ msgstr "Glas"
+
+#~ msgid "Green"
+#~ msgstr "Gwyrdd"
+
+#~ msgid "Red"
+#~ msgstr "Coch"
+
+#, fuzzy
+#~ msgid "Erase"
+#~ msgstr "Prif/Islythrennau"
+
+#~ msgid "Normal"
+#~ msgstr "Arferol"
+
+#, fuzzy
+#~| msgid "Overline"
+#~ msgid "Overlay"
+#~ msgstr "Troslinellu"
+
+#, fuzzy
+#~| msgid "Mail Merge"
+#~ msgid "Grain Merge"
+#~ msgstr "Uno Post"
+
+#, fuzzy
+#~ msgid "Hard Mix"
+#~ msgstr "&Uchder:"
+
+#, fuzzy
+#~| msgid "Variable"
+#~ msgid "Parallel"
+#~ msgstr "Newidyn"
+
+#, fuzzy
+#~ msgid "Color Dodge"
+#~ msgstr "Lliwiau"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgid "Linear Dodge"
+#~ msgstr "Newid Ffiniau"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "LightGreen"
+#~ msgid "Lighten"
+#~ msgstr "GwyrddGolau"
+
+#, fuzzy
+#~ msgid "Hard Light"
+#~ msgstr "&Uchder:"
+
+#, fuzzy
+#~| msgid "String:"
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "Llinyn:"
+
+#, fuzzy
+#~| msgid "String:"
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "Llinyn:"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "LightGreen"
+#~ msgid "Gamma Light"
+#~ msgstr "GwyrddGolau"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "LightGreen"
+#~ msgid "Vivid Light"
+#~ msgstr "GwyrddGolau"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "LightGreen"
+#~ msgid "Pin Light"
+#~ msgstr "GwyrddGolau"
+
+#, fuzzy
+#~| msgid "Line width:"
+#~ msgid "Linear Light"
+#~ msgstr "Lled y llinell:"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Color Burn"
+#~ msgstr "Lliw:"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgid "Linear Burn"
+#~ msgstr "Newid Ffiniau"
+
+#, fuzzy
+#~ msgid "Darken"
+#~ msgstr "Gwyrdd Tywyll"
+
+#, fuzzy
+#~| msgid "Add Fraction"
+#~ msgid "Addition"
+#~ msgstr "Ychwanegu Ffracsiwn"
+
+#, fuzzy
+#~ msgid "Inversed-Subtract"
+#~ msgstr "Crynodeb"
+
+#, fuzzy
+#~| msgid "Exceptions"
+#~ msgid "Exclusion"
+#~ msgstr "Eithriadau"
+
+#, fuzzy
+#~ msgid "Additive-Subtractive"
+#~ msgstr "Crynodeb"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Red"
+#~ msgstr "Enw Cwmni"
+
+#, fuzzy
+#~| msgid "Green"
+#~ msgid "Copy Green"
+#~ msgstr "Gwyrdd"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Blue"
+#~ msgstr "Enw Cwmni"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Color"
+#~ msgstr "Lliw:"
+
+#~ msgid "Hue"
+#~ msgstr "Arlliw"
+
+#~ msgid "Saturation"
+#~ msgstr "Dirlawnder"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation"
+#~ msgstr "Dirlawnder"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation"
+#~ msgstr "Dirlawnder"
+
+#, fuzzy
+#~| msgid "Change font size?"
+#~ msgid "Increase Luminosity"
+#~ msgstr "Newid maint yr wynebfath?"
+
+#, fuzzy
+#~| msgid "Change font size?"
+#~ msgid "Decrease Luminosity"
+#~ msgstr "Newid maint yr wynebfath?"
+
+#, fuzzy
+#~ msgid "Darker Color"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~| msgid "More Line Colors..."
+#~ msgid "Lighter Color"
+#~ msgstr "Rhagor o Liwiau Llinell..."
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Color HSI"
+#~ msgstr "Lliw:"
+
+#, fuzzy
+#~| msgid "Hue"
+#~ msgid "Hue HSI"
+#~ msgstr "Arlliw"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Saturation HSI"
+#~ msgstr "Dirlawnder"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation HSI"
+#~ msgstr "Dirlawnder"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation HSI"
+#~ msgstr "Dirlawnder"
+
+#, fuzzy
+#~| msgid "Internet"
+#~ msgid "Intensity"
+#~ msgstr "Rhyngrwyd"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Increase Intensity"
+#~ msgstr "Newid Mewnoliad"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Decrease Intensity"
+#~ msgstr "Newid Mewnoliad"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Color HSL"
+#~ msgstr "Lliw:"
+
+#, fuzzy
+#~| msgid "Hue"
+#~ msgid "Hue HSL"
+#~ msgstr "Arlliw"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Saturation HSL"
+#~ msgstr "Dirlawnder"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation HSL"
+#~ msgstr "Dirlawnder"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation HSL"
+#~ msgstr "Dirlawnder"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Increase Lightness"
+#~ msgstr "Newid Mewnoliad"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Decrease Lightness"
+#~ msgstr "Newid Mewnoliad"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Color HSV"
+#~ msgstr "Lliw:"
+
+#, fuzzy
+#~| msgid "Hue"
+#~ msgid "Hue HSV"
+#~ msgstr "Arlliw"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Saturation HSV"
+#~ msgstr "Dirlawnder"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation HSV"
+#~ msgstr "Dirlawnder"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation HSV"
+#~ msgstr "Dirlawnder"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Increase Value"
+#~ msgstr "Newid Mewnoliad"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Decrease Value"
+#~ msgstr "Newid Mewnoliad"
+
+#, fuzzy
+#~| msgid "Gray"
+#~ msgid "Grayscale"
+#~ msgstr "Llwyd"
+
+#, fuzzy
+#~ msgid "8 Bits"
+#~ msgstr "pt"
+
+#, fuzzy
+#~| msgid "Autoinclude"
+#~ msgid "Arithmetic"
+#~ msgstr "Hunan-gynnwys"
+
+#, fuzzy
+#~| msgid "Relative"
+#~ msgid "Negative"
+#~ msgstr " Cymharol"
+
+#, fuzzy
+#~ msgid "Inverse Subtract"
+#~ msgstr "Crynodeb"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "Brown"
+#~ msgid "Burn"
+#~ msgstr "Brown"
+
+#, fuzzy
+#~ msgid "Additive Subtractive"
+#~ msgstr "Crynodeb"
+
+#, fuzzy
+#~ msgid "Alpha Darken"
+#~ msgstr "Gwyrdd Tywyll"
+
+#, fuzzy
+#~| msgid "Red"
+#~ msgid "Rdf"
+#~ msgstr "Coch"
+
+#, fuzzy
+#~| msgid "Title"
+#~ msgid "Triples"
+#~ msgstr "Teitl"
+
+#, fuzzy
+#~| msgid "New"
+#~ msgid "new"
+#~ msgstr "Newydd"
+
+#, fuzzy
+#~ msgid "copy"
+#~ msgstr "Cwmni"
+
+#, fuzzy
+#~ msgid "delete"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgid "Namespaces"
+#~ msgstr "&Amnewid:"
+
+#, fuzzy
+#~| msgid "Pre&fix text:"
+#~ msgid "Prefix"
+#~ msgstr "&Rhagddodi testun:"
+
+#, fuzzy
+#~ msgid "Namespace"
+#~ msgstr "&Amnewid:"
+
+#, fuzzy
+#~| msgid "St&yle"
+#~ msgid "Stylesheets"
+#~ msgstr "Ardd&ull"
+
+#, fuzzy
+#~| msgid "Apply Style %1"
+#~ msgid "Apply Stylesheet"
+#~ msgstr "Gweithredu Arddull %1"
+
+#, fuzzy
+#~ msgid "User"
+#~ msgstr "&Mewnosod:"
+
+#, fuzzy
+#~| msgid "St&yle"
+#~ msgid "Stylesheet Definition"
+#~ msgstr "Ardd&ull"
+
+#, fuzzy
+#~| msgid "Variable Name"
+#~ msgid "Variables Available"
+#~ msgstr "Enw Newidyn"
+
+#, fuzzy
+#~| msgid "Description:"
+#~ msgid "Description"
+#~ msgstr "Disgrifiad:"
+
+#, fuzzy
+#~| msgid "St&yle"
+#~ msgid "Stylesheet Name"
+#~ msgstr "Ardd&ull"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "LightCoral"
+#~ msgid "Literal"
+#~ msgstr "CwrelGolau"
+
+#~ msgid "Blank"
+#~ msgstr "Gwag"
+
+#, fuzzy
+#~| msgid "Size:"
+#~ msgid "Valid"
+#~ msgstr "Maint:"
+
+#~ msgid "Subject"
+#~ msgstr "Pwnc"
+
+#, fuzzy
+#~| msgid "Picture"
+#~ msgid "Predicate"
+#~ msgstr "Llun"
+
+#, fuzzy
+#~| msgid "Type"
+#~ msgid "Obj Type"
+#~ msgstr "Math"
+
+#, fuzzy
+#~ msgid "DataType"
+#~ msgstr "Dyddiad"
+
+#, fuzzy
+#~ msgid "Invalid identifier"
+#~ msgstr "Mewnoliad"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "Dim"
+
+#, fuzzy
+#~| msgid "Circle Bullet"
+#~ msgid "Small Bullet"
+#~ msgstr "Bwled Cylch"
+
+#~ msgid "Circle Bullet"
+#~ msgstr "Bwled Cylch"
+
+#, fuzzy
+#~| msgid "Circle Bullet"
+#~ msgid "Square Bullet"
+#~ msgstr "Bwled Cylch"
+
+#, fuzzy
+#~| msgid "Box Bullet"
+#~ msgid "Rhombus Bullet"
+#~ msgstr "Bwled Blwch"
+
+#, fuzzy
+#~| msgid "Circle Bullet"
+#~ msgid "Check Mark Bullet"
+#~ msgstr "Bwled Cylch"
+
+#, fuzzy
+#~ msgid "Rightwards Arrow Bullet"
+#~ msgstr "Pinc Golau"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "Azure"
+#~ msgid "Arabic"
+#~ msgstr "Asur"
+
+#~ msgid "Lower Alphabetical"
+#~ msgstr "Trefn yr Wyddor, islythrennau"
+
+#~ msgid "Upper Alphabetical"
+#~ msgstr "Trefn yr Wyddor, priflythrennau"
+
+#, fuzzy
+#~| msgid "Lower Roman Numbers"
+#~ msgid "Lower Roman"
+#~ msgstr "Rhifau Rhufeinig, islythrennau"
+
+#, fuzzy
+#~| msgid "Upper Roman Numbers"
+#~ msgid "Upper Roman"
+#~ msgstr "Rhifau Rhufeinig, priflythrennau"
+
+#, fuzzy
+#~| msgid "Circle Bullet"
+#~ msgid "Large Bullet"
+#~ msgstr "Bwled Cylch"
+
+#, fuzzy
+#~| msgid "Box Bullet"
+#~ msgid "Ballot X Bullet"
+#~ msgstr "Bwled Blwch"
+
+#, fuzzy
+#~| msgid "Family:"
+#~ msgid "Tamil"
+#~ msgstr "Teulu:"
+
+#, fuzzy
+#~| msgid "Time"
+#~ msgid "Tibetan"
+#~ msgstr "Amser"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "Khaki"
+#~ msgid "Thai"
+#~ msgstr "Caci"
+
+#, fuzzy
+#~| msgid "Recent file:"
+#~ msgid "Recent:"
+#~ msgstr "Ffeil diweddar:"
+
+#, fuzzy
+#~| msgid "More Colors..."
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "Rhagor o Liwiau..."
+
+#, fuzzy
+#~ msgid "Import Data"
+#~ msgstr "Mewnforio Dogfen"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgid "Generic"
+#~ msgstr "Cyffredinol"
+
+#, fuzzy
+#~ msgid "Currency"
+#~ msgstr "Adran Gyfredol"
+
+#~ msgid "None"
+#~ msgstr "Dim"
+
+#, fuzzy
+#~ msgid "Data"
+#~ msgstr "Dyddiad"
+
+#, fuzzy
+#~ msgid "E&ncoding:"
+#~ msgstr "&Tanlinellu:"
+
+#, fuzzy
+#~ msgid "Format"
+#~ msgstr "Fformat Dyddiad"
+
+#, fuzzy
+#~ msgid "Delimiter"
+#~ msgstr "Amlinydd Chwith"
+
+#, fuzzy
+#~ msgid "Semicolon"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~ msgid "Other"
+#~ msgstr "C&anol"
+
+#, fuzzy
+#~ msgid "Tabulator"
+#~ msgstr "&Tablyddion"
+
+#~ msgid "Space"
+#~ msgstr "Gofodnod"
+
+#, fuzzy
+#~ msgid "&Format:"
+#~ msgstr "Fformat Dyddiad"
+
+#, fuzzy
+#~ msgid "Ranges"
+#~ msgstr "Oren"
+
+#, fuzzy
+#~ msgid "Update"
+#~ msgstr "Dyddiad"
+
+#, fuzzy
+#~ msgid "Import columns:"
+#~ msgstr "Mewnforio Dogfen"
+
+#, fuzzy
+#~ msgid "Import lines:"
+#~ msgstr "Mewnforio Arddull"
+
+#, fuzzy
+#~| msgid "Author"
+#~ msgid "to"
+#~ msgstr "Awdur"
+
+#, fuzzy
+#~| msgid "Create Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "Creu Dogfen"
+
+#, fuzzy
+#~| msgid "Create Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "Creu Dogfen"
+
+#, fuzzy
+#~| msgid "Guide Lines"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Lock Docker"
+#~ msgstr "Cyfeiryddion"
+
+#~ msgid "Keywords:"
+#~ msgstr "Allweddeiriau:"
+
+#~ msgid "Subject:"
+#~ msgstr "Pwnc:"
+
+#, fuzzy
+#~ msgid "Last printed:"
+#~ msgstr "Argraffiad Diwethaf"
+
+#, fuzzy
+#~ msgid "Encryption:"
+#~ msgstr "Disgrifiad:"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "Teitl:"
+
+#, fuzzy
+#~| msgid "Page Number"
+#~ msgid "Revision number:"
+#~ msgstr "Rhif y Dudalen"
+
+#~ msgid "Modified:"
+#~ msgstr "Newidwyd:"
+
+#, fuzzy
+#~ msgid "Comments:"
+#~ msgstr "Sylwad"
+
+#~ msgid "Created:"
+#~ msgstr "Creuwyd:"
+
+#, fuzzy
+#~| msgid "Edit Path"
+#~ msgid "Path:"
+#~ msgstr "Llwybr Golygu "
+
+#~ msgid "&Reset"
+#~ msgstr "&Ailosod"
+
+#, fuzzy
+#~| msgid "Language"
+#~ msgid "Language:"
+#~ msgstr "Iaith"
+
+#~ msgid "General"
+#~ msgstr "Cyffredinol"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Last saved by"
+#~ msgstr "Gludo Testun"
+
+#, fuzzy
+#~ msgid "Do not decrypt"
+#~ msgstr "Disgrifiad:"
+
+#, fuzzy
+#~ msgid "D&ecrypt"
+#~ msgstr "Disgrifiad:"
+
+#, fuzzy
+#~ msgid "Do not encrypt"
+#~ msgstr "Disgrifiad:"
+
+#, fuzzy
+#~ msgid "Confirm Decrypt"
+#~ msgstr "Cadarnhau Allforio"
+
+#, fuzzy
+#~ msgid "Decrypt"
+#~ msgstr "Disgrifiad:"
+
+#, fuzzy
+#~ msgid "Save Document"
+#~ msgstr "Cadw'r Ddogfen Fel"
+
+#, fuzzy
+#~ msgid "Change Filetype"
+#~ msgstr "Newid Math Rhestr"
+
+#, fuzzy
+#~ msgid "Change"
+#~ msgstr "Newid Prid/Islythrennau"
+
+#, fuzzy
+#~ msgid "Remove"
+#~ msgstr "Gwaredu Rhes"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "PaleGreen"
+#~ msgid "Open palette"
+#~ msgstr "GwyrddGwan"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "PaleGreen"
+#~ msgid "Save palette"
+#~ msgstr "GwyrddGwan"
+
+#, fuzzy
+#~| msgid "Bookmark name:"
+#~ msgid "Color name:"
+#~ msgstr "Enw'r tudnod:"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "PaleGreen"
+#~ msgid "Palette"
+#~ msgstr "GwyrddGwan"
+
+#, fuzzy
+#~| msgid "Remove Column"
+#~ msgid "Add/Remove Colors"
+#~ msgstr "Gwaredu Colofn"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "PaleGreen"
+#~ msgid "Testing: OpenFile"
+#~ msgstr "GwyrddGwan"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Testing: OpenDirectory"
+#~ msgstr "Enw Cyfeiriadur"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFile"
+#~ msgstr "Hidlen Mewnforio ar Goll"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "Hidlen Mewnforio ar Goll"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: Import Directory"
+#~ msgstr "Mewnforio Dogfen"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "PaleGreen"
+#~ msgid "Testing: SaveFile"
+#~ msgstr "GwyrddGwan"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "PaleGreen"
+#~ msgid "Open File"
+#~ msgstr "GwyrddGwan"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "PaleGreen"
+#~ msgid "Open Files"
+#~ msgstr "GwyrddGwan"
+
+#, fuzzy
+#~| msgid "After:"
+#~ msgid "Filter:"
+#~ msgstr "Wedi:"
+
+#, fuzzy
+#~| msgid "TextLabel1:"
+#~ msgid "TextLabel"
+#~ msgstr "LabelTestun1 :"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "Named"
+#~ msgstr "Enw:"
+
+#, fuzzy
+#~| msgid "Locale date format"
+#~ msgid "Set default filter"
+#~ msgstr "Fformat dyddiad y fro"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "PaleGreen"
+#~ msgid "Save File"
+#~ msgstr "GwyrddGwan"
+
+#, fuzzy
+#~ msgid "Import Files"
+#~ msgstr "Mewnforio Arddull"
+
+#, fuzzy
+#~ msgid "Import File"
+#~ msgstr "Mewnforio Arddull"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Open Directory"
+#~ msgstr "Enw Cyfeiriadur"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Directory"
+#~ msgstr "Mewnforio Dogfen"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "Dim"
+
+#, fuzzy
+#~| msgid "Change First Line Indent"
+#~ msgid "Change the filling gradient"
+#~ msgstr "Newid Mewnoliad Llinell Gyntaf"
+
+#, fuzzy
+#~ msgid "Icon and Text"
+#~ msgstr "Ychwanegu Testun"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgid "Bottom side"
+#~ msgstr "Alinio'n Ymysgogol"
+
+#, fuzzy
+#~ msgid "Left side"
+#~ msgstr "Lliain"
+
+#, fuzzy
+#~ msgid "Right side"
+#~ msgstr "Pinc Golau"
+
+#~ msgid "Page Layout"
+#~ msgstr "Haenlun Dudalen"
+
+#, fuzzy
+#~| msgid "Empty Document"
+#~ msgid "Apply to document"
+#~ msgstr "Dogfen Wag"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgid "Left Edge:"
+#~ msgstr "Chwith:"
+
+#, fuzzy
+#~| msgid "Right:"
+#~ msgid "Right Edge:"
+#~ msgstr "De:"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Binding Edge:"
+#~ msgstr "Argraffiad Diwethaf"
+
+#, fuzzy
+#~| msgid "Page Size"
+#~ msgid "Page Edge:"
+#~ msgstr "Maint y Dudalen"
+
+#, fuzzy
+#~ msgid "Facing Pages:"
+#~ msgstr "Ffitio i Dudalen"
+
+#, fuzzy
+#~ msgid "Facing pages"
+#~ msgstr "Ffitio i Dudalen"
+
+#, fuzzy
+#~| msgid "Page Layout"
+#~ msgid "Page Layout:"
+#~ msgstr "Haenlun Dudalen"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page spread"
+#~ msgstr "Rhagolwg Tudalen"
+
+#~ msgid "Unit:"
+#~ msgstr "Uned:"
+
+#, fuzzy
+#~| msgid "Font style:"
+#~ msgid "Follow style:"
+#~ msgstr "Ardull wynebfath:"
+
+#~ msgid "Size:"
+#~ msgstr "Maint:"
+
+#, fuzzy
+#~ msgid "Width:"
+#~ msgstr "&Lled:"
+
+#, fuzzy
+#~ msgid "Height:"
+#~ msgstr "&Uchder:"
+
+#, fuzzy
+#~ msgid "Orientation:"
+#~ msgstr "Cyfeiriadaeth H&olltydd"
+
+#, fuzzy
+#~| msgid "Language:"
+#~ msgid "Facing pages:"
+#~ msgstr "Iaith:"
+
+#, fuzzy
+#~| msgid "Single"
+#~ msgid "Single sided"
+#~ msgstr "Sengl"
+
+#, fuzzy
+#~ msgid "Text direction:"
+#~ msgstr "&Lliw Testun:"
+
+#, fuzzy
+#~| msgid "Autoinclude"
+#~ msgid "Automatic"
+#~ msgstr "Hunan-gynnwys"
+
+#, fuzzy
+#~| msgid "String:"
+#~ msgid "Left to right"
+#~ msgstr "Llinyn:"
+
+#, fuzzy
+#~ msgid "Right to left"
+#~ msgstr "Pinc Golau"
+
+#~ msgid "Margins"
+#~ msgstr "Ymylon"
+
+#, fuzzy
+#~ msgid "Top:"
+#~ msgstr "&Pen:"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Binding edge:"
+#~ msgstr "Argraffiad Diwethaf"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page edge:"
+#~ msgstr "Rhagolwg Tudalen"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgid "Bottom:"
+#~ msgstr "Alinio'n Ymysgogol"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "Mewnforio Dogfen"
+
+#, fuzzy
+#~| msgid "Download"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "Lawrlwytho"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~| msgid "Choose Filter"
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "Dewis Hidlen"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgid "Assign to tag"
+#~ msgstr "Alinio'n Ymysgogol"
+
+#, fuzzy
+#~ msgid "Remove from this tag"
+#~ msgstr "Gwaredu Cyswllt"
+
+#, fuzzy
+#~| msgid "Remove Comment"
+#~ msgid "Remove from other tag"
+#~ msgstr "Gwaredu Sylwad"
+
+#, fuzzy
+#~ msgid "Round cap"
+#~ msgstr "Sgript"
+
+#, fuzzy
+#~| msgid "Square Bullet"
+#~ msgid "Square cap"
+#~ msgstr "Bwled Sgwâr"
+
+#, fuzzy
+#~ msgid "Miter join"
+#~ msgstr "Ymylon"
+
+#, fuzzy
+#~ msgid "Bevel join"
+#~ msgstr "Gwaredu Cyswllt"
+
+#, fuzzy
+#~| msgid "Counter alignment:"
+#~ msgid "Miter limit"
+#~ msgstr "Gwrth-aliniad:"
+
+#, fuzzy
+#~| msgid "Tab"
+#~ msgid "Tag"
+#~ msgstr "Tab"
+
+#, fuzzy
+#~ msgid "Rename tag"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgid "Delete this tag"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgid "Undelete"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgid "Tool Options"
+#~ msgstr "Gair Cwblhad"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "deselect item"
+#~ msgstr "Dewis Nod"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "select item"
+#~ msgstr "Dewis Nod"
+
+#, fuzzy
+#~| msgid "%1%"
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1%"
+
+#, fuzzy
+#~| msgid "Autoinclude"
+#~ msgctxt "Static Image"
+#~ msgid "Static"
+#~ msgstr "Hunan-gynnwys"
+
+#~ msgid "Cyan"
+#~ msgstr "Gwyrddlas"
+
+#~ msgid "Magenta"
+#~ msgstr "Magenta"
+
+#~ msgid "Yellow"
+#~ msgstr "Melyn"
+
+#~ msgid "Black"
+#~ msgstr "Du"
+
+#, fuzzy
+#~ msgid "Opacity:"
+#~ msgstr "Dinas:"
+
+#, fuzzy
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "&Rhagosodyn"
+
+#, fuzzy
+#~| msgid "Confirm Save"
+#~ msgid "Configuration..."
+#~ msgstr "Cadarnhau Cadw"
+
+#, fuzzy
+#~ msgid "&Tools"
+#~ msgstr "Lliw Rhagosodol"
+
+#, fuzzy
+#~| msgid "Completion"
+#~ msgid "Color Selector"
+#~ msgstr "Cwblhad"
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Database file \"%1\" does not exist."
+#~ msgstr "Nid yw'r ffeil %1 yn bodoli!."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist in the database."
+#~ msgstr "Nid yw'r ffeil %1 yn bodoli!."
+
+#, fuzzy
+#~ msgid "Could not compact database \"%1\"."
+#~ msgstr "Methodd ddarllen dechrau'r ffeil."
+
+#, fuzzy
+#~ msgid "Do you want to open file \"%1\" as read-only?"
+#~ msgstr "Ydych wir eisiau gwaredu'r patrymlun hwnnw?"
+
+#, fuzzy
+#~ msgid "Could not gain exclusive access for writing the file."
+#~ msgstr "Methodd ddarllen dechrau'r ffeil."
+
+#, fuzzy
+#~| msgid "Could not load picture."
+#~ msgid "Could not close busy database."
+#~ msgstr "Methu llwytho llun."
+
+#, fuzzy
+#~| msgid "Could not export file."
+#~ msgid "Could not remove file \"%1\"."
+#~ msgstr "Methu allforio'r ffeil."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist"
+#~ msgstr "Nid yw'r ffeil %1 yn bodoli!."
+
+#, fuzzy
+#~| msgid "Date Format"
+#~ msgid "Track Total Format"
+#~ msgstr "Fformat Dyddiad"
+
+#, fuzzy
+#~| msgid "Show %1"
+#~ msgid "Grid Snap"
+#~ msgstr "Dangos %1"
+
+#, fuzzy
+#~ msgid "Formatting"
+#~ msgstr "Fformat Dyddiad"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Testing: OpenDirectories"
+#~ msgstr "Enw Cyfeiriadur"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: ImportDirectories"
+#~ msgstr "Mewnforio Dogfen"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "PaleGreen"
+#~ msgid "Testing: SaveFiles"
+#~ msgstr "GwyrddGwan"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Open Directories"
+#~ msgstr "Enw Cyfeiriadur"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Directories"
+#~ msgstr "Mewnforio Dogfen"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "PaleGreen"
+#~ msgid "Save Files"
+#~ msgstr "GwyrddGwan"
+
+#, fuzzy
+#~ msgid "Create Path"
+#~ msgstr "Creu Patrymlun"
+
+#~ msgid "Error!"
+#~ msgstr "Gwall!"
+
+#, fuzzy
+#~ msgid "Contacts"
+#~ msgstr "Wynebfath:"
+
+#, fuzzy
+#~| msgid "Location:"
+#~ msgid "Locations"
+#~ msgstr "Lleoliad:"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "Azure"
+#~ msgid "Area"
+#~ msgstr "Asur"
+
+#, fuzzy
+#~| msgid "Version"
+#~ msgid "Region"
+#~ msgstr "Fersiwn"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not save\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not add entry\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Methodd gadw\n"
+#~ " %1"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not save\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not save iCal file\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Methodd gadw\n"
+#~ " %1"
+
+#, fuzzy
+#~| msgid "Location:"
+#~ msgid "&Location:"
+#~ msgstr "Lleoliad:"
+
+#, fuzzy
+#~| msgid "Street"
+#~ msgid "&Start:"
+#~ msgstr "Stryd"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Timezone"
+#~ msgstr "Amser:"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "&Name:"
+#~ msgstr "Enw:"
+
+#, fuzzy
+#~| msgid "Page Number"
+#~ msgid "&Phone Number:"
+#~ msgstr "Rhif y Dudalen"
+
+#, fuzzy
+#~ msgid "&Home Page:"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Contact Information"
+#~ msgstr "Gwybodaeth Ddogfen"
+
+#, fuzzy
+#~ msgid "Import contact"
+#~ msgstr "Mewnforio Dogfen"
+
+#, fuzzy
+#~| msgid "E&xport..."
+#~ msgid "Export as vcard..."
+#~ msgstr "&Allforio..."
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "&Name"
+#~ msgstr "Enw:"
+
+#, fuzzy
+#~| msgid "Edit Path"
+#~ msgid "The Earth"
+#~ msgstr "Llwybr Golygu "
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Location Information"
+#~ msgstr "Gwybodaeth Ddogfen"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "Purple"
+#~ msgid "People"
+#~ msgstr "Porffor"
+
+#~ msgid ""
+#~ "A document with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "Mae dogfen efo'r enw hwn yn bodoli eisoes.\n"
+#~ "Ydych eisiau ei throsysgrifo?"
+
+#~ msgid "%1 (Uncompressed XML Files)"
+#~ msgstr "%1 (Ffeiliau XML Heb eu Cywasgu)"
+
+#, fuzzy
+#~ msgid "%1 (Flat XML File)"
+#~ msgstr "%1 (Ffeiliau XML Heb eu Cywasgu)"
+
+#~ msgid "%1 (%2 Compatible)"
+#~ msgstr "%1 (Cydnaws â %2)"
+
+#~ msgid "Save Document As"
+#~ msgstr "Cadw'r Ddogfen Fel"
+
+#~ msgid "Export Document As"
+#~ msgstr "Allforio'r Ddogfen Fel"
+
+#, fuzzy
+#~| msgid "E&xport..."
+#~ msgid "Export to PDF"
+#~ msgstr "&Allforio..."
+
+#, fuzzy
+#~ msgid "Slide Background"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~ msgid "Document background"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~ msgid "&Cancel"
+#~ msgstr "Newid Prid/Islythrennau"
+
+#, fuzzy
+#~ msgid "First Page"
+#~ msgstr "Ffitio i Dudalen"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Even Pages(s)"
+#~ msgstr "Enw Cwmni"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Any Pages(s)"
+#~ msgstr "Enw Cwmni"
+
+#, fuzzy
+#~| msgid "Add..."
+#~ msgid "&Edit"
+#~ msgstr "Ychwanegu..."
+
+#, fuzzy
+#~| msgid "Colors"
+#~ msgid "&Close"
+#~ msgstr "Lliwiau"
+
+#, fuzzy
+#~ msgid "Dodge"
+#~ msgstr "Glas Dodger"
+
+#, fuzzy
+#~ msgid "Hard light"
+#~ msgstr "&Uchder:"
+
+#, fuzzy
+#~| msgid "String:"
+#~ msgid "Soft light"
+#~ msgstr "Llinyn:"
+
+#, fuzzy
+#~| msgid "Change Shadow"
+#~ msgid "Show Shadow"
+#~ msgstr "Newid Cysgod"
+
+#, fuzzy
+#~ msgid "Angle:"
+#~ msgstr "Sengl"
+
+#, fuzzy
+#~| msgid "Shadow:"
+#~ msgid "Offset:"
+#~ msgstr "Cysgod:"
+
+#~ msgid "Color:"
+#~ msgstr "Lliw:"
+
+#, fuzzy
+#~| msgid "&Style:"
+#~ msgid "Style:"
+#~ msgstr "&Arddull:"
+
+#, fuzzy
+#~| msgid "Delimited list"
+#~ msgid "Set miter limit"
+#~ msgstr "Rhestr amffiniedig"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bookmark"
+#~ msgstr "Mewnosod Toriad Llinell"
+
+#, fuzzy
+#~ msgid "Insert Table"
+#~ msgstr "Mewnosod Testun"
+
+#, fuzzy
+#~| msgid "Insert Row"
+#~ msgid "Insert Row Above"
+#~ msgstr "Mewnosod Rhes"
+
+#, fuzzy
+#~| msgid "Insert Column"
+#~ msgid "Insert Column Left"
+#~ msgstr "Mewnosod Colofn"
+
+#, fuzzy
+#~| msgid "Insert Column"
+#~ msgid "Insert Column Right"
+#~ msgstr "Mewnosod Colofn"
+
+#, fuzzy
+#~ msgid "Delete Column"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgid "Delete Row"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~| msgid "Include in table of contents"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Cynnwys yn y tabl cynnwys"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Mewnosod Toriad Llinell"
+
+#, fuzzy
+#~ msgid "Embedding Object"
+#~ msgstr "Methu llwytho gwrthrych caeth."
+
+#~ msgid "I&mport..."
+#~ msgstr "&Mewnforio..."
+
+#~ msgid "&Default"
+#~ msgstr "&Rhagosodyn"
+
+#~ msgid "Preview:"
+#~ msgstr "Rhagolwg:"
+
+#, fuzzy
+#~| msgid "Background color:"
+#~ msgid "Background Tool"
+#~ msgstr "Lliw cefndir:"
+
+#, fuzzy
+#~ msgid "Background editing tool"
+#~ msgstr "Dewisiadau Fformatio"
+
+#, fuzzy
+#~ msgid "Use master background"
+#~ msgstr "Eiliad"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Separate paths"
+#~ msgstr "Llwybr rhagosodol"
+
+#~ msgid ""
+#~ "An autosaved file for an unnamed document exists in %1.\n"
+#~ "This file is dated %2\n"
+#~ "Do you want to open it?"
+#~ msgstr ""
+#~ "Mae feil wedi'i hunangadw ar gyfer dogfen di-enw yn bodoli yn %1.\n"
+#~ " Mae dyddiad %2ar y ffeil hwn.\n"
+#~ "Ydych chi am ei agor?"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shapes"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgid "Substract"
+#~ msgstr "Crynodeb"
+
+#, fuzzy
+#~ msgid "Inverse Substract"
+#~ msgstr "Crynodeb"
+
+#~ msgid "&Load From Address Book"
+#~ msgstr "&Llwytho o'r Llyfr Cyfeiriadau"
+
+#, fuzzy
+#~| msgid "Shadow:"
+#~ msgid "Shadow Angle:"
+#~ msgstr "Cysgod:"
+
+#, fuzzy
+#~| msgid "&Shadow color:"
+#~ msgid "Shadow Color:"
+#~ msgstr "Lliw &cysgod:"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgid "Set Horizontal Alignment"
+#~ msgstr "Aliniad fertigol:"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgid "Line Break"
+#~ msgstr "Newid Ffiniau"
+
+#, fuzzy
+#~| msgid "Guide Lines"
+#~ msgid "Hide Grid"
+#~ msgstr "Cyfeiryddion"
+
+#, fuzzy
+#~| msgid "Guide Lines"
+#~ msgid "Hide Guides"
+#~ msgstr "Cyfeiryddion"
+
+#~ msgid "&Close All Views"
+#~ msgstr "&Cau Pob Golwg"
+
+#~ msgid "&Split View"
+#~ msgstr "Golwg wedi'i &Hollti"
+
+#~ msgid "&Remove View"
+#~ msgstr "G&waredu Golwg"
+
+#~ msgid "Splitter &Orientation"
+#~ msgstr "Cyfeiriadaeth H&olltydd"
+
+#~ msgid "&Horizontal"
+#~ msgstr "&Llorweddol"
+
+#~ msgid "&Vertical"
+#~ msgstr "&Fertigol"
+
+#~ msgid "End"
+#~ msgstr "Diwedd"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Printing page %1"
+#~ msgstr "Argraffiad Diwethaf"
+
+#, fuzzy
+#~ msgid "Form"
+#~ msgstr "Arferol"
+
+#, fuzzy
+#~| msgid "I&mport..."
+#~ msgid "Import"
+#~ msgstr "&Mewnforio..."
+
+#, fuzzy
+#~ msgid "Share"
+#~ msgstr "Ton"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Opacy"
+#~ msgstr "Enw Cwmni"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Alpha"
+#~ msgstr "Enw Cwmni"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "LightGreen"
+#~ msgid "Light"
+#~ msgstr "GwyrddGolau"
+
+#, fuzzy
+#~| msgid "Strikeout:"
+#~ msgid "Spread out:"
+#~ msgstr "Trwylinellu:"
+
+#~ msgid "KOffice"
+#~ msgstr "KOffice"
+
+#~ msgid "KOffice Storage"
+#~ msgstr "Storio KOffice"
+
+#, fuzzy
+#~| msgid "Date Format"
+#~ msgid "Barcode"
+#~ msgstr "Fformat Dyddiad"
+
+#, fuzzy
+#~| msgid "Date Format"
+#~ msgid "Barcode Format"
+#~ msgstr "Fformat Dyddiad"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "Chartreuse"
+#~ msgid "Chart"
+#~ msgstr "Chartreuse"
+
+#, fuzzy
+#~| msgid "Select Font"
+#~ msgid "Field Font"
+#~ msgstr "Dewis Wynebfath"
+
+#, fuzzy
+#~| msgid "Time"
+#~ msgid "Pie"
+#~ msgstr "Amser"
+
+#, fuzzy
+#~ msgid "Ring"
+#~ msgstr "&De"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Polar"
+#~ msgstr "Lliw:"
+
+#, fuzzy
+#~ msgid "Chart Type"
+#~ msgstr "Dyddiad"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgid "Stacked"
+#~ msgstr "Gofodnod"
+
+#, fuzzy
+#~| msgid "Recent file:"
+#~ msgid "Percent"
+#~ msgstr "Ffeil diweddar:"
+
+#, fuzzy
+#~| msgid "Rows:"
+#~ msgid "Rows"
+#~ msgstr "Rhesi:"
+
+#, fuzzy
+#~| msgid "Bookmark name:"
+#~ msgid "Color Scheme"
+#~ msgstr "Enw'r tudnod:"
+
+#, fuzzy
+#~ msgid "Antialiased"
+#~ msgstr "Teitl"
+
+#, fuzzy
+#~| msgid "Display le&vels:"
+#~ msgid "Display Legend"
+#~ msgstr "Le&felau arddangos:"
+
+#, fuzzy
+#~ msgid "Pan Tool"
+#~ msgstr "Lliw Rhagosodol"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Out"
+#~ msgstr "Addasiedig"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgid "Insert Linebreak"
+#~ msgstr "Mewnosod Toriad Llinell"
+
+#, fuzzy
+#~ msgid "&Insert"
+#~ msgstr "&Mewnosod:"
+
+#~ msgid "Insert the selected character in the text"
+#~ msgstr "Mewnosod y nod dewisiedig yn y testun"
+
+#, fuzzy
+#~ msgid "Enable word completion"
+#~ msgstr "&Galluogi cwblhad"
+
+#, fuzzy
+#~ msgid "Automatically add new words to suggestion list"
+#~ msgstr "&Ychwanegu geiriau newydd i'r rhestr gwblhad yn ymysgogol"
+
+#, fuzzy
+#~ msgid ""
+#~ "If this option is enabled, any word equal to or longer than the "
+#~ "\"Characters needed\" typed in this document will automatically be added "
+#~ "to the list of words used by the completion."
+#~ msgstr ""
+#~ "Os alluogir y dewisiad yma, bydd unrhyw gair a deipir yn y ddogfen yma yn "
+#~ "cael ei ychwanegu i'r rhestr o eiriau a ddefnyddir gan y cwblhad."
+
+#, fuzzy
+#~ msgid "Completion Options"
+#~ msgstr "Gair Cwblhad"
+
+#, fuzzy
+#~ msgid "Suggest words:"
+#~ msgstr "Awgrymiadau:"
+
+#~ msgid "Append space"
+#~ msgstr "Atodi bwlch"
+
+#, fuzzy
+#~ msgid "Make Default"
+#~ msgstr "&Rhagosodyn"
+
+#~ msgid "C&ustom"
+#~ msgstr "&Addasiedig"
+
+#~ msgid "&Insert:"
+#~ msgstr "&Mewnosod:"
+
+#, fuzzy
+#~ msgid "Paragraph Background Color"
+#~ msgstr "Newid Lliw &Cefndir..."
+
+#~ msgid "Borders"
+#~ msgstr "Borderi"
+
+#~ msgid "&Width:"
+#~ msgstr "&Lled:"
+
+#~ msgid "&Color:"
+#~ msgstr "&Lliw:"
+
+#~ msgid "Number:"
+#~ msgstr "Rhif:"
+
+#~ msgid "String:"
+#~ msgstr "Llinyn:"
+
+#~ msgid "Boolean:"
+#~ msgstr "Boolaidd :"
+
+#~ msgid "true"
+#~ msgstr "gwir"
+
+#~ msgid "false"
+#~ msgstr "ffug"
+
+#~ msgid "Date:"
+#~ msgstr "Dyddiad:"
+
+#, fuzzy
+#~ msgid "Add Guide Line"
+#~ msgstr "Ychwanegu Aml-linell"
+
+#, fuzzy
+#~ msgid "Horizontal"
+#~ msgstr "&Llorweddol"
+
+#, fuzzy
+#~ msgid "Vertical"
+#~ msgstr "&Fertigol"
+
+#~ msgid "&Position:"
+#~ msgstr "Lleoli&ad:"
+
+#, fuzzy
+#~ msgid "Guide Line"
+#~ msgstr "Llinell Solet"
+
+#~ msgid "Guide Lines"
+#~ msgstr "Cyfeiryddion"
+
+#~ msgid "No handler found for %1"
+#~ msgstr "Ni chafwyd trinydd ar gyfer %1"
+
+#~ msgid ""
+#~ "This document contains an external link to a remote document\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Cynhwysa'r ddogfen hon gyswllt allanol i ddogfen bell\n"
+#~ " %1"
+
+#~ msgid "Confirmation Required"
+#~ msgstr "Mynnir Cadarnhad"
+
+#~ msgid "Skip"
+#~ msgstr "Hepgor"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not load external document %1:\n"
+#~ "%2"
+#~ msgstr "Methu llwytho gwrthrych caeth."
+
+#~ msgid "Na&me:"
+#~ msgstr "&Enw:"
+
+#~ msgid "Protect si&ze and position"
+#~ msgstr "Diogelu mai&nt a lleoliad"
+
+#~ msgid "&Height:"
+#~ msgstr "&Uchder:"
+
+#~ msgid "&Top:"
+#~ msgstr "&Pen:"
+
+#~ msgid "&Left:"
+#~ msgstr "&Chwith:"
+
+#~ msgid "Context Help"
+#~ msgstr "Cymorth Cyd-destun"
+
+#~ msgid "Here will be shown help according to your actions"
+#~ msgstr "Dangosir cymorth yma yn ôl eich gweithredoedd"
+
+#~ msgid "All values are given in %1."
+#~ msgstr "Rhoddir pob gwerth mewn %1."
+
+#~ msgid "&Size:"
+#~ msgstr "&Maint:"
+
+#~ msgid "&Portrait"
+#~ msgstr "&Darlun"
+
+#~ msgid "La&ndscape"
+#~ msgstr "&Tirlun"
+
+#~ msgid "The page width is smaller than the left and right margins."
+#~ msgstr "Mae lled y dudalen yn llai na'r ymylon chwith a de."
+
+#~ msgid "Page Layout Problem"
+#~ msgstr "Problem Haenlun y Dudalen"
+
+#~ msgid "The page height is smaller than the top and bottom margins."
+#~ msgstr "Mae uchder y dudalen yn llai na'r ymylon pen a gwaelod."
+
+#~ msgctxt "Custom size"
+#~ msgid "Custom"
+#~ msgstr "Addasiedig"
+
+#, fuzzy
+#~ msgid "Delete slides"
+#~ msgstr "Dileu Testun"
+
+#, fuzzy
+#~ msgid "Delete pages"
+#~ msgstr "Dileu Testun"
+
+#~ msgid "Insert Object"
+#~ msgstr "Mewnosod Gwrthrych"
+
+#, fuzzy
+#~ msgid "Column spacing:"
+#~ msgstr "Bylchu'r &colofnau (%1)"
+
+#, fuzzy
+#~ msgid "Footnote/ Endnote"
+#~ msgstr "Troedyn/Diweddnod"
+
+#, fuzzy
+#~ msgid "Spacing between footnote and body:"
+#~ msgstr "Bylchiad rhwhg y troedyn a'r corff (%1):"
+
+#~ msgid "Different footer for even and odd pages"
+#~ msgstr "Troedyn gwahanol ar gyfer tudalenau eilrif ac odrif"
+
+#~ msgid "Different footer for the first page"
+#~ msgstr "Troedyn gwahanol ar gyfer y dudalen gyntaf"
+
+#, fuzzy
+#~ msgid "Spacing between footer and body:"
+#~ msgstr "Bylchiad rhwng y troedyn a'r corff (%1):"
+
+#~ msgid "Header"
+#~ msgstr "Pennawd"
+
+#, fuzzy
+#~ msgid "Spacing between header and body:"
+#~ msgstr "Bylchiad rhwng y pennawd a'r corff (%1):"
+
+#~ msgid "Different header for even and odd pages"
+#~ msgstr "Pennawd gwahanol ar gyfer eilrifau ac odrifau"
+
+#~ msgid "Different header for the first page"
+#~ msgstr "Pennawd gwahanol ar gyfer y dudalen gyntaf"
+
+#~ msgid "Page Preview"
+#~ msgstr "Rhagolwg Tudalen"
+
+#~ msgid "Page Size && &Margins"
+#~ msgstr "Maint y Dudalen ac &Ymylon "
+
+#~ msgid "H&eader && Footer"
+#~ msgstr "&Pennawd a Throedyn"
+
+#~ msgid "Head Line"
+#~ msgstr "Llinell Bennawd"
+
+#~ msgid "Mid:"
+#~ msgstr "Canol:"
+
+#~ msgid "Right:"
+#~ msgstr "De:"
+
+#~ msgid "Foot Line"
+#~ msgstr "Llinell Droed"
+
+#~ msgid "You can insert several tags in the text:"
+#~ msgstr "Cewch fewnosod sawl tag yn y testun:"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;sheet&gt; The sheet name</li><li>&lt;page&gt; The current "
+#~ "page</li><li>&lt;pages&gt; The total number of pages</li><li>&lt;name&gt; "
+#~ "The filename or URL</li><li>&lt;file&gt; The filename with complete path "
+#~ "or the URL</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;dalen&gt; Enw'r ddalen</li><li>&lt;tudalen&gt; Y dudalen "
+#~ "gyfredol</li><li>&lt;tudalennau&gt; Cyfanswm y tudalennau</li><li>&lt;"
+#~ "enw&gt; Enw'r ffeil neu URL</li><li>&lt;ffeil&gt; Enw'r ffeil gyda'i "
+#~ "lwybr llawn neu URL</li></ul></qt>"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;time&gt; The current time</li><li>&lt;date&gt; The "
+#~ "current date</li><li>&lt;author&gt; Your full name</li><li>&lt;org&gt; "
+#~ "Your organization</li><li>&lt;email&gt; Your email address</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;amser&gt; Yr amser yn awr</li><li>&lt;dyddiad&gt; Y "
+#~ "dyddiad heddiw</li><li>&lt;awdur&gt; Eich enw llawn</li><li>&lt;corff&gt; "
+#~ "Eich corff</li><li>&lt;ebost&gt; Eich cyfeiriad ebost</li></ul></qt>"
+
+#~ msgid "Col&umns"
+#~ msgstr "C&olofnau"
+
+#, fuzzy
+#~| msgid "Street"
+#~ msgid "Storage Test"
+#~ msgstr "Stryd"
+
+#, fuzzy
+#~| msgid "Street"
+#~ msgid "Storage Test 2"
+#~ msgstr "Stryd"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master page"
+#~ msgstr "Gludo Testun"
+
+#, fuzzy
+#~ msgid "Rotate"
+#~ msgstr "Dyddiad"
+
+#, fuzzy
+#~ msgid "Shear"
+#~ msgstr "Mor-wyrdd"
+
+#, fuzzy
+#~| msgid "Proportional"
+#~ msgid "KoProperty Test"
+#~ msgstr "Cyfrannol"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Waiting"
+#~ msgstr "Oren Tywyll"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Vertical"
+#~ msgstr "&Fertigol"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Horizontal"
+#~ msgstr "&Llorweddol"
+
+#, fuzzy
+#~| msgid "Size"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size All"
+#~ msgstr "Maint"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Split Horizontal"
+#~ msgstr "&Llorweddol"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Pointing Hand"
+#~ msgstr "Argraffiad Diwethaf"
+
+#, fuzzy
+#~| msgid "Insert Variable"
+#~ msgid "Insert image from file"
+#~ msgstr "Mewnosod Newidyn"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "Select Char"
+#~ msgstr "Dewis Nod"
+
+#, fuzzy
+#~| msgid "Minute"
+#~ msgctxt "Size Policy"
+#~ msgid "Minimum"
+#~ msgstr "Munud"
+
+#, fuzzy
+#~ msgctxt "Size Policy"
+#~ msgid "Expanding"
+#~ msgstr "&Tanlinellu:"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgctxt "General properties"
+#~ msgid "General"
+#~ msgstr "Cyffredinol"
+
+#, fuzzy
+#~ msgid "Width"
+#~ msgstr "&Lled:"
+
+#, fuzzy
+#~ msgid "Horizontal Size Type"
+#~ msgstr "&Llorweddol"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgid "Vertical Size Type"
+#~ msgstr "Aliniad fertigol:"
+
+#, fuzzy
+#~ msgid "Horizontal Stretch"
+#~ msgstr "&Llorweddol"
+
+#, fuzzy
+#~ msgid "Vertical Stretch"
+#~ msgstr "&Fertigol"
+
+#, fuzzy
+#~| msgid "Line Distance (%1)"
+#~ msgid "Snap Distance (px)"
+#~ msgstr "Pellter Llinell (%1)"
+
+#, fuzzy
+#~| msgid "Guide Lines"
+#~ msgid "Enable Guide Lines Guide "
+#~ msgstr "Cyfeiryddion"
+
+#, fuzzy
+#~ msgid "Tool Option"
+#~ msgstr "Gair Cwblhad"
+
+#, fuzzy
+#~| msgid "Guide Lines"
+#~ msgid "Edit Guidelines"
+#~ msgstr "Cyfeiryddion"
+
+#, fuzzy
+#~ msgid "Edit guidelines"
+#~ msgstr "Ychwanegu Aml-linell"
+
+#~ msgid "Select a filter:"
+#~ msgstr "Dewis hidlen:"
+
+#, fuzzy
+#~ msgid "Fit to width"
+#~ msgstr "Lled y llinell:"
+
+#, fuzzy
+#~ msgid "Fit to page/canvas"
+#~ msgstr "Ffitio i Dudalen"
+
+#, fuzzy
+#~ msgid "[No Paragraph Style]"
+#~ msgstr "Testun paragraff arferol"
+
+#, fuzzy
+#~ msgid "[No Character Style]"
+#~ msgstr "Creu Arddull Newydd"
+
+#~ msgid "Selected Template"
+#~ msgstr "Patrymlun Dewisiedig"
+
+#~ msgid "Creates an empty document"
+#~ msgstr "Creuir dogfen wag"
+
+#, fuzzy
+#~ msgid "Choose Template"
+#~ msgstr "Gwaredu Patrymlun"
+
+#~ msgid "No description available"
+#~ msgstr "Dim disgrifiad ar gael"
+
+#, fuzzy
+#~ msgid "Protect size and position"
+#~ msgstr "Diogelu mai&nt a lleoliad"
+
+#~ msgid "&Custom..."
+#~ msgstr "&Addasu..."
+
+#, fuzzy
+#~ msgid "*.svg *.wmf *.qpic|Clipart (*.svg *.wmf *.qpic)"
+#~ msgstr "*.svg *.wmf|Clipart (*.svg *.wmf)"
+
+#~ msgid "Insert Link"
+#~ msgstr "Mewnosod Cyswllt"
+
+#~ msgid "Mail & News"
+#~ msgstr "Post a Newyddion"
+
+#~ msgid "Bookmark"
+#~ msgstr "Tudnod"
+
+#~ msgid "Text to display:"
+#~ msgstr "Testun i'w ddangos :"
+
+#~ msgid "Internet address:"
+#~ msgstr "Cyfeiriad Rhyngrwyd:"
+
+#~ msgid "Bookmark name:"
+#~ msgstr "Enw'r tudnod:"
+
+#~ msgid "Target:"
+#~ msgstr "Cyrchfan:"
+
+#~ msgid "Recent file:"
+#~ msgstr "Ffeil diweddar:"
+
+#~ msgid "No Entries"
+#~ msgstr "Dim Cofnodion"
+
+#~ msgid "File location:"
+#~ msgstr "Lleoliad y ffeil:"
+
+#~ msgid "Tabulator &Left"
+#~ msgstr "Tablydd C&hwith"
+
+#~ msgid "Tabulator &Center"
+#~ msgstr "Tablydd C&anol"
+
+#~ msgid "Tabulator &Right"
+#~ msgstr "Tablydd D&e"
+
+#~ msgid "Tabulator &Decimal Point"
+#~ msgstr "Tablydd P&wynt Degol"
+
+#, fuzzy
+#~ msgid "%1:"
+#~ msgstr "%1%"
+
+#~ msgid "Align Left"
+#~ msgstr "Alinio i'r Chwith"
+
+#, fuzzy
+#~ msgid "Horizontally Center"
+#~ msgstr "&Llorweddol"
+
+#~ msgid "Align Right"
+#~ msgstr "Alinio i'r Dde"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgid "Align Top"
+#~ msgstr "Alinio'n Ymysgogol"
+
+#, fuzzy
+#~ msgid "Default Tool"
+#~ msgstr "Lliw Rhagosodol"
+
+#, fuzzy
+#~| msgid "Position:"
+#~ msgid "Position x:"
+#~ msgstr "Lleoliad:"
+
+#, fuzzy
+#~| msgid "Position:"
+#~ msgid "Position y:"
+#~ msgstr "Lleoliad:"
+
+#, fuzzy
+#~| msgid "Borders"
+#~ msgid "Order:"
+#~ msgstr "Borderi"
+
+#~ msgid "Alignment"
+#~ msgstr "Aliniad"
+
+#, fuzzy
+#~ msgid "Horizontal:"
+#~ msgstr "&Llorweddol"
+
+#, fuzzy
+#~ msgid "Vertical:"
+#~ msgstr "&Fertigol"
+
+#, fuzzy
+#~ msgid "Scale"
+#~ msgstr "Ton"
+
+#~ msgid "Create New Style"
+#~ msgstr "Creu Arddull Newydd"
+
+#~ msgid "Please specify a new style name:"
+#~ msgstr "Penodwch enw i'r arddull newydd:"
+
+#~ msgid "Name already exists! Please choose another name"
+#~ msgstr "Mae'r enw yn bodoli eisoes!  Dewiswch enw arall."
+
+#~ msgid "Change Case"
+#~ msgstr "Newid Prid/Islythrennau"
+
+#~ msgid "Case"
+#~ msgstr "Prif/Islythrennau"
+
+#~ msgid "&Uppercase"
+#~ msgstr "&Priflythrennau"
+
+#~ msgid "&Lowercase"
+#~ msgstr "&Islythrennau"
+
+#~ msgid "T&itle case"
+#~ msgstr "Prif/Islythrennau yn y &teitl"
+
+#~ msgid "&Toggle case"
+#~ msgstr "&Newid rhwng prif/islythrennau"
+
+#~ msgid "Sentence case"
+#~ msgstr "Prif/Islythrennau yn y frawddeg"
+
+#~ msgid "Convert first letter of a sentence to uppercase."
+#~ msgstr "Trosi'r llythyren gyntaf mewn brawddeg i briflythrennau."
+
+#~ msgid "Style Manager"
+#~ msgstr "Rheolydd Arddull"
+
+#~ msgid "Next style:"
+#~ msgstr "Arddull nesaf:"
+
+#~ msgid "Inherit style:"
+#~ msgstr "Etifeddu arddull:"
+
+#~ msgid "<None>"
+#~ msgstr "<Dim>"
+
+#~ msgid "New Style Template (%1)"
+#~ msgstr "Patrymlun Arddull Newydd (%1)"
+
+#, fuzzy
+#~ msgid "Decoration"
+#~ msgstr "Disgrifiad:"
+
+#~ msgid "Highlighting"
+#~ msgstr "Amlygu"
+
+#~ msgid "Layout"
+#~ msgstr "Cynllun"
+
+#~ msgid "Short locale date format"
+#~ msgstr "Fformat byr dyddiad y fro"
+
+#~ msgid "Locale date & time format"
+#~ msgstr "Fformat dyddiad ac amser y fro"
+
+#~ msgid "Short locale date & time format"
+#~ msgstr "Fformat byr dyddiad ac amser y fro"
+
+#~ msgid "Date (Fixed)"
+#~ msgstr "Dyddiad (Sefydlog)"
+
+#~ msgid "File Modification"
+#~ msgstr "Newid Ffeil"
+
+#~ msgid "Current Date (variable)"
+#~ msgstr "Dyddiad Cyfredol (newidol)"
+
+#~ msgid "Date of Last Printing"
+#~ msgstr "Dyddiad Argraffiad Diwethaf"
+
+#~ msgid "Date of File Creation"
+#~ msgstr "Dyddiad Creu Ffeil"
+
+#~ msgid "Date of File Modification"
+#~ msgstr "Dyddiad Newid Ffeil"
+
+#~ msgctxt "DateFormat"
+#~ msgid "Format of Date Variable"
+#~ msgstr "Fformat y Newidyn Dyddiad"
+
+#~ msgid "Time (Fixed)"
+#~ msgstr "Amser (Sefydlog)"
+
+#~ msgid "Current Time (fixed)"
+#~ msgstr "Amser Cyfredol (sefydlog)"
+
+#~ msgid "Current Time (variable)"
+#~ msgstr "Amser Cyfredol (newidol)"
+
+#~ msgid "Time Format"
+#~ msgstr "Fformat Amser"
+
+#~ msgctxt "TimeFormat"
+#~ msgid "This Dialog Allows You to Set the Format of the Time Variable"
+#~ msgstr "Mae'r ymgom yma yn gadael i chi osod fformat y newidyn amser"
+
+#~ msgid "Custom Variable"
+#~ msgstr "Newidyn Addasiedig"
+
+#~ msgid "Custom..."
+#~ msgstr "Addasiedig..."
+
+#~ msgid "&Mail Merge..."
+#~ msgstr "Uno &Post"
+
+#~ msgid "Page Current Num"
+#~ msgstr "Rhif y Dudalen Gyfredol"
+
+#~ msgid "Total Page Num"
+#~ msgstr "Cyfanswm Tudalennau"
+
+#~ msgid "Previous Page Number"
+#~ msgstr "Rhif y Dudalen Flaenorol"
+
+#~ msgid "Number of Pages"
+#~ msgstr "Nifer Tudalennau"
+
+#~ msgid "Next Page"
+#~ msgstr "Tudalen Nesaf"
+
+#~ msgid "Filename"
+#~ msgstr "Enw Ffeil"
+
+#~ msgid "Path Filename"
+#~ msgstr "Enw Ffeil y Llwybr"
+
+#~ msgid "Filename Without Extension"
+#~ msgstr "Enw Ffeil Heb Estyniad"
+
+#~ msgid "Author Name"
+#~ msgstr "Enw Awdur"
+
+#~ msgid "Email"
+#~ msgstr "Ebost"
+
+#, fuzzy
+#~ msgid "Telephone (work)"
+#~ msgstr "Ffôn"
+
+#, fuzzy
+#~ msgid "Telephone (home)"
+#~ msgstr "Ffôn"
+
+#~ msgid "Fax"
+#~ msgstr "Ffacs"
+
+#~ msgid "Country"
+#~ msgstr "Gwlad"
+
+#~ msgid "City"
+#~ msgstr "Dinas"
+
+#~ msgid "Abstract"
+#~ msgstr "Crynodeb"
+
+#~ msgid "Keywords"
+#~ msgstr "Allweddeiriau"
+
+#~ msgid "Initials"
+#~ msgstr "Blaenlythrennau"
+
+#~ msgid "Company"
+#~ msgstr "Cwmni"
+
+#, fuzzy
+#~ msgid "Telephone (private)"
+#~ msgstr "Ffôn"
+
+#~ msgid "Document Abstract"
+#~ msgstr "Crynodeb Ddogfen"
+
+#, fuzzy
+#~ msgid "Document Keywords"
+#~ msgstr "Teitl Dogfen"
+
+#~ msgid "File Name"
+#~ msgstr "Enw Ffeil"
+
+#~ msgid "File Name without Extension"
+#~ msgstr "Enw Ffeil heb Estyniad"
+
+#~ msgid "Directory && File Name"
+#~ msgstr "Cyfeiriadur ac Enw Ffeil"
+
+#~ msgid "Link"
+#~ msgstr "Cyswllt"
+
+#~ msgid "Link..."
+#~ msgstr "Cyswllt..."
+
+#~ msgid "Note"
+#~ msgstr "Nodiad"
+
+#~ msgid "Note..."
+#~ msgstr "Nodiad..."
+
+#, fuzzy
+#~ msgid "<No title>"
+#~ msgstr "<Dim>"
+
+#, fuzzy
+#~ msgid "Number of Words"
+#~ msgstr "Wynebfath rhifau:"
+
+#, fuzzy
+#~ msgid "Number of Sentences"
+#~ msgstr "Nifer Tudalennau"
+
+#, fuzzy
+#~ msgid "Number of Lines"
+#~ msgstr "Nifer Tudalennau"
+
+#, fuzzy
+#~ msgid "Number of Characters"
+#~ msgstr "Nifer Tudalennau"
+
+#, fuzzy
+#~ msgid "Number of Non-Whitespace Characters"
+#~ msgstr "Nifer Tudalennau"
+
+#, fuzzy
+#~ msgid "Number of Syllables"
+#~ msgstr "Nifer Tudalennau"
+
+#, fuzzy
+#~ msgid "Number of Frames"
+#~ msgstr "Nifer Tudalennau"
+
+#, fuzzy
+#~ msgid "Number of Embedded Objects"
+#~ msgstr "Methu llwytho gwrthrych caeth."
+
+#, fuzzy
+#~ msgid "Number of Tables"
+#~ msgstr "Nifer Tudalennau"
+
+#~ msgid "Autocorrection"
+#~ msgstr "Hunangywiro"
+
+#~ msgid "Simple Autocorrection"
+#~ msgstr "Hunangywiro Syml"
+
+#~ msgid ""
+#~ "Convert &first letter of a sentence automatically to uppercase\n"
+#~ "(e.g. \"my house. in this town\" to \"my house. In this town\")"
+#~ msgstr ""
+#~ "Trosi'r llythyren &gyntaf mewn brawddeg i briflythyren yn ymysgogol\n"
+#~ " (e.e. \"fy nhŷ. yn y dref hon\" i \"fy nhŷ. Yn y dref hon\")"
+
+#~ msgid ""
+#~ "Detect when a new sentence is started and always ensure that the first "
+#~ "character is an uppercase character."
+#~ msgstr ""
+#~ "Darganfod cychwyn brawddeg newydd a sicrhau bob tro mai priflythyren "
+#~ "ydy'r llythyren gyntaf."
+
+#~ msgid ""
+#~ "Convert &two uppercase characters to one uppercase and one lowercase "
+#~ "character\n"
+#~ " (e.g. PErfect to Perfect)"
+#~ msgstr ""
+#~ "Trosi dwy &briflythyren i un briflythyren ac un islythyren\n"
+#~ " (e.e. PErffaith i Perffaith)"
+
+#~ msgid ""
+#~ "All words are checked for the common mistake of holding the shift key "
+#~ "down a bit too long. If some words must have two uppercase characters, "
+#~ "then those exceptions should be added in the 'Exceptions' tab."
+#~ msgstr ""
+#~ "Profir pob gair am y camgymeriad cyffredin o ddal y fysell gyfnewid i "
+#~ "lawr dipyn yn rhy hir. Os oes rhaid i rai geiriau fod â dwy briflythyren, "
+#~ "dylid eu hychwanegu i'r tab 'Eithriadau'."
+
+#~ msgid "Autoformat &URLs"
+#~ msgstr "Hunan-fformatio &URLs"
+
+#~ msgid ""
+#~ "Detect when a URL (Uniform Resource Locator) is typed and provide "
+#~ "formatting that matches the way an Internet browser would show a URL."
+#~ msgstr ""
+#~ "Darganfod teipio URL (Uniform Resource Locator) a darparu fformatio sy'n "
+#~ "cydweddu â'r ffordd byddai porydd Rhyngrwyd yn dangos URL."
+
+#~ msgid "&Suppress double spaces"
+#~ msgstr "&Atal bylchau dwbl"
+
+#~ msgid ""
+#~ "Make sure that more than one space cannot be typed, as this is a common "
+#~ "mistake which is quite hard to find in formatted text."
+#~ msgstr ""
+#~ "Sicrhau na ellir teipio mwy nag un bwlch, am mai camgymeriad eithaf "
+#~ "cyffredin ydy hwn sy'n eithaf anodd i'w gweld mewn testun wedi'i "
+#~ "fformatio."
+
+#~ msgid "R&emove spaces at the beginning and end of paragraphs"
+#~ msgstr "&Gwaredu bylchau ar ddechrau a diwedd paragraffau"
+
+#~ msgid ""
+#~ "Keep correct formatting and indenting of sentences by automatically "
+#~ "removing spaces typed at the beginning and end of a paragraph."
+#~ msgstr ""
+#~ "Cadw fformatio a mewnoli cywir brawddegau trwy waredu bylchau yn "
+#~ "ymysgogol wedi'u teipio ar ddechrau a diwedd paragraff."
+
+#~ msgid "Automatically do &bold and underline formatting"
+#~ msgstr "Gwneud fformatio &trwm a thanlinellu'n ymysgogol"
+
+#~ msgid ""
+#~ "When you use _underline_ or *bold*, the text between the underscores or "
+#~ "asterisks will be converted to underlined or bold text."
+#~ msgstr ""
+#~ "Pan ffyddwch yn defnyddio _tanlinellu_ neu *trwm*, trosir y testun rhwng "
+#~ "y tanlinelliadau neu'r sêr i destun wedi'i danlinellu neu'n destun trwm."
+
+#~ msgid "Most standard fraction notations will be converted when available"
+#~ msgstr ""
+#~ "Trosir y rhan fwyaf o nodiannau ffracsiwn safonol pan fyddant ar gael"
+
+#~ msgid "Use &autonumbering for numbered paragraphs"
+#~ msgstr "Defnyddio hunan-&rifo ar gyfer paragraffau wedi'u rhifo"
+
+#~ msgid ""
+#~ "When typing '1)' or similar in front of a paragraph, automatically "
+#~ "convert the paragraph to use that numbering style. This has the advantage "
+#~ "that further paragraphs will also be numbered and the spacing is done "
+#~ "correctly."
+#~ msgstr ""
+#~ "Wrth deipio '1)' neu ei debyg o flaen paragraff, trosi'r paragraff yn "
+#~ "ymysgogol i ddefnyddio'r arddull yma o rifo.  Mae hyn efo'r fantais bydd "
+#~ "paragraffau ychwanegol yn cael eu rhifo, a bydd y bylchu yn cael ei wneud "
+#~ "yn gywir."
+
+#~ msgid "Rep&lace 1st... with 1^st..."
+#~ msgstr "Amnew&id 1af... gyda 1^af..."
+
+#~ msgid "Capitalize name of days"
+#~ msgstr "Trosi blaenlythrennau enwau dyddiau i briflythrennau"
+
+#~ msgid "Use l&ist-formatting for bulleted paragraphs"
+#~ msgstr "Defnyddio fformatio r&hestrau ar gyfer paragraffau gyda bwledi"
+
+#~ msgid ""
+#~ "When typing '*' or '-' in front of a paragraph, automatically convert the "
+#~ "paragraph to use that list-style. Using a list-style formatting means "
+#~ "that a correct bullet is used to draw the list."
+#~ msgstr ""
+#~ "Wrth deipio '*' neu '-' o flaen paragraff, trosi'r paragraff yn ymysgogol "
+#~ "i ddefnyddio'r arddull rhestr yna.  Mae defnyddio fformatio arddull "
+#~ "rhestr yn golygu bod bwled cywir yn cael ei ddefnyddio i ddarlunio'r "
+#~ "rhestr."
+
+#~ msgid "Custom Quotes"
+#~ msgstr "Dyfyniadau Addasiedig"
+
+#~ msgid "Replace &double quotes with typographical quotes"
+#~ msgstr "Amnewid &dyfyniadau dwbl gyda dyfyniadau teipograffeg"
+
+#~ msgid "Replace &single quotes with typographical quotes"
+#~ msgstr "Amnewid &dyfyniadau sengl gyda dyfyniadau teipograffeg"
+
+#~ msgid "Advanced Autocorrection"
+#~ msgstr "Hunangywiro Uwch"
+
+#~ msgid "All Languages"
+#~ msgstr "Pob Iaith"
+
+#~ msgid "Replacements and exceptions for language:"
+#~ msgstr "Amnewidiadau ac eithriadau ar gyfer iaith:"
+
+#~ msgid "Enable word replacement"
+#~ msgstr "Galluogi amnewid geiriau"
+
+#~ msgid "Replace text with format"
+#~ msgstr "Amnewid testun gyda fformat"
+
+#, fuzzy
+#~ msgid "Insert a special character..."
+#~ msgstr "Mewnosod Nod Arbennig"
+
+#~ msgid "Find"
+#~ msgstr "Canfod"
+
+#~ msgid "Change Format..."
+#~ msgstr "Newid Fformat..."
+
+#~ msgid "Clear Format"
+#~ msgstr "Gwagu Fformat"
+
+#~ msgid "Do not treat as the end of a sentence:"
+#~ msgstr "Peidio â thrin fel diwedd brawddeg:"
+
+#~ msgid "Accept two uppercase letters in:"
+#~ msgstr "Derbyn dwy briflythyren yn:"
+
+#~ msgid "An area is empty"
+#~ msgstr "Mae ardal yn wag"
+
+#~ msgid "Find string is the same as replace string!"
+#~ msgstr "Mae'r llinyn canfod yr un fath â'r llinyn amnewid!"
+
+#~ msgid "Change Variable Subtype"
+#~ msgstr "Newid Isfath Newidyn"
+
+#~ msgid "Change Variable Format"
+#~ msgstr "Newid Fformat Newidyn"
+
+#~ msgid "Entry Name"
+#~ msgstr "Enw Cofnod"
+
+#~ msgid "Variable Value Editor"
+#~ msgstr "Golygydd Gwerth Newidyn"
+
+#~ msgid "Add Variable"
+#~ msgstr "Ychwanegu Newidyn"
+
+#~ msgid "Edit Variable"
+#~ msgstr "Golygu Newidyn"
+
+#~ msgid "Value:"
+#~ msgstr "Gwerth:"
+
+#, fuzzy
+#~ msgid "Enter"
+#~ msgstr "C&anol"
+
+#~ msgid "Add Completion Entry"
+#~ msgstr "Ychwanegu Cofnod Cwblhad"
+
+#~ msgid "Enter entry:"
+#~ msgstr "Rhowch gofnod:"
+
+#~ msgid ""
+#~ "Completion list saved.\n"
+#~ "It will be used for all documents from now on."
+#~ msgstr ""
+#~ "Cedwyd y rhestr gwblhad.\n"
+#~ "Defnyddir ar gyfer pob dogfen o hyn ymlaen."
+
+#~ msgid "Completion List Saved"
+#~ msgstr "Cedwyd y Rhestr Gwblhad"
+
+#, fuzzy
+#~ msgid "The quick brown fox jumps over the lazy dog."
+#~ msgstr "Mae'r gwr o Fôn wedi cyrraedd heddiw."
+
+#~ msgid "Delete Text"
+#~ msgstr "Dileu Testun"
+
+#~ msgid "Insert Text"
+#~ msgstr "Mewnosod Testun"
+
+#~ msgid "Format Text"
+#~ msgstr "Fformatio Testun"
+
+#, fuzzy
+#~ msgid "Change Paragraph Background Color"
+#~ msgstr "Newid Lliw &Cefndir..."
+
+#~ msgid "Change Borders"
+#~ msgstr "Newid Ffiniau"
+
+#, fuzzy
+#~ msgid "Change Join Borders"
+#~ msgstr "Newid Ffiniau"
+
+#~ msgid "Change Tabulator"
+#~ msgstr "Newid Tablydd"
+
+#~ msgid "Remove Selected Text"
+#~ msgstr "Gwaredu'r Testun Dewisiedig"
+
+#~ msgid "Day"
+#~ msgstr "Dydd"
+
+#~ msgid "Day (2 digits)"
+#~ msgstr "Dydd (2 ddigid)"
+
+#~ msgid "Day (abbreviated name)"
+#~ msgstr "Dydd (enw talfyredig)"
+
+#~ msgid "Day (long name)"
+#~ msgstr "Dydd (enw llawn)"
+
+#~ msgid "Month"
+#~ msgstr "Mis"
+
+#~ msgid "Month (2 digits)"
+#~ msgstr "Mis (2 ddigid)"
+
+#~ msgid "Month (abbreviated name)"
+#~ msgstr "Mis (enw talfyredig)"
+
+#~ msgid "Month (long name)"
+#~ msgstr "Mis (enw llawn)"
+
+#~ msgid "Month (possessive abbreviated name)"
+#~ msgstr "Mis (enw talfyredig meddiannol)"
+
+#~ msgid "Month (possessive long name)"
+#~ msgstr "Mis (enw llawn meddiannol)"
+
+#~ msgid "Year (2 digits)"
+#~ msgstr "Blwyddyn (2 ddigid)"
+
+#~ msgid "Year (4 digits)"
+#~ msgstr "Blwyddyn (4 digid)"
+
+#~ msgid "Hour"
+#~ msgstr "Awr"
+
+#~ msgid "Hour (2 digits)"
+#~ msgstr "Awr (2 ddigid)"
+
+#~ msgid "Minute (2 digits)"
+#~ msgstr "Munud (2 ddigid)"
+
+#~ msgid "Second"
+#~ msgstr "Eiliad"
+
+#~ msgid "Second (2 digits)"
+#~ msgstr "Eiliad (2 ddigid)"
+
+#~ msgid "Millisecond (3 digits)"
+#~ msgstr "Milieiliad (3 digid)"
+
+#~ msgid "am/pm"
+#~ msgstr "yb/yp"
+
+#~ msgid "AM/PM"
+#~ msgstr "YB/YP"
+
+#~ msgid "Correct in Days"
+#~ msgstr "Cywir mewn Diwrnodau"
+
+#~ msgid "Remove Word"
+#~ msgstr "Gwaredu Gair"
+
+#~ msgid "Replace Word"
+#~ msgstr "Amnewid Gair"
+
+#~ msgid "%1 is not a valid link."
+#~ msgstr "Nid cyswllt dilys yw %1."
+
+#~ msgid "Insert Soft Hyphen"
+#~ msgstr "Mewnosod Cysylltnod Meddal"
+
+#~ msgid "Insert Line Break"
+#~ msgstr "Mewnosod Toriad Llinell"
+
+#~ msgid "Insert Non-Breaking Space"
+#~ msgstr "Mewnosod Bwlch Di-doriad"
+
+#, fuzzy
+#~ msgid "Insert Non-Breaking Hyphen"
+#~ msgstr "Mewnosod Bwlch Di-doriad"
+
+#~ msgid "Insert Special Char"
+#~ msgstr "Mewnosod Nod Arbennig"
+
+#~ msgid "Remove Link"
+#~ msgstr "Gwaredu Cyswllt"
+
+#~ msgid "Correct in Minutes"
+#~ msgstr "Cywir mewn Munudau"
+
+#~ msgid "Edit Comment"
+#~ msgstr "Golygu Sylwad"
+
+#~ msgid "Add Author Name"
+#~ msgstr "Ychwanegu Enw'r Awdur"
+
+#~ msgid "Autocorrect Word"
+#~ msgstr "Hunangywiro Gair "
+
+#~ msgid "Autocorrect Word with Format"
+#~ msgstr "Hunangywiro Gair gyda Fformatio"
+
+#~ msgid "Typographic Quote"
+#~ msgstr "Dyfyniad Teipograffeg"
+
+#~ msgid "Autocorrect (capitalize first letter)"
+#~ msgstr "Hunangywiro (priflythrennu'r llythyren gyntaf)"
+
+#~ msgid "Autocorrect"
+#~ msgstr "Hunan-gywiro"
+
+#, fuzzy
+#~ msgid "Autocorrect for Fraction"
+#~ msgstr "Hunangywiro"
+
+#~ msgid "Autocorrection: Change Format"
+#~ msgstr "Hunangywiriad: Newid Fformat"
+
+#~ msgid "Autocorrect (use bullet style)"
+#~ msgstr "Hunangywiro (defnyddio arddull bwledi)"
+
+#~ msgid "Autocorrect (use number style)"
+#~ msgstr "Hunangywiro (defnyddio arddull rhifau)"
+
+#~ msgid "Autocorrect (remove start and end line space)"
+#~ msgstr "Hunangywiro (gwaredu bylchau ar gychwyn a therfyn llinellau)"
+
+#~ msgid "Capitalize Name of Days"
+#~ msgstr "Priflythrennu Enwau Dyddiau"
+
+#~ msgid "Double"
+#~ msgstr "Dwbl"
+
+#~ msgid "Simple Bold"
+#~ msgstr "Trwm Syml"
+
+#~ msgid "Wave"
+#~ msgstr "Ton"
+
+#~ msgctxt "Strikeout Style"
+#~ msgid "None"
+#~ msgstr "Dim"
+
+#~ msgid "Uppercase"
+#~ msgstr "Priflythrennau"
+
+#~ msgid "Lowercase"
+#~ msgstr "Islythrennau"
+
+#~ msgid "Small Caps"
+#~ msgstr "Priflythrennau Bach"
+
+#~ msgid "Show Formatting Options"
+#~ msgstr "Dangos Dewisiadau Fformatio"
+
+#~ msgid "Formatting Options"
+#~ msgstr "Dewisiadau Fformatio"
+
+#~ msgid "Replace Text"
+#~ msgstr "Amnewid Testun"
+
+#~ msgid "Reset"
+#~ msgstr "Ailosod"
+
+#~ msgid "Bold:"
+#~ msgstr "Trwm:"
+
+#~ msgid "Italic:"
+#~ msgstr "Italig:"
+
+#~ msgid "Word by word:"
+#~ msgstr "Fesul gair:"
+
+#~ msgid "Underline:"
+#~ msgstr "Tanlinellu:"
+
+#~ msgid "Capitalization:"
+#~ msgstr "Priflythrennu:"
+
+#~ msgid "Subscript"
+#~ msgstr "Isysgrif"
+
+#~ msgid "Superscript"
+#~ msgstr "Uwchysgrif"
+
+#~ msgid "Suffi&x text:"
+#~ msgstr "Ô&lddodi testun:"
+
+#~ msgid "&Start at:"
+#~ msgstr "&Cychwyn wrth:"
+
+#~ msgid "Custo&m character:"
+#~ msgstr "&Nod addasiedig:"
+
+#~ msgid "&Depth:"
+#~ msgstr "&Dyfnder:"
+
+#~ msgid "&Restart numbering at this paragraph"
+#~ msgstr "Ail-&gychwyn rhifo wrth y paragraff yma"
+
+#~ msgid "Arabic Numbers"
+#~ msgstr "Rhifau Arabaidd"
+
+#~ msgid "Disc Bullet"
+#~ msgstr "Bwled Disg"
+
+#~ msgid "Custom Bullet"
+#~ msgstr "Bwled Addasiedig"
+
+#, fuzzy
+#~ msgid "Frame width: %1 %2"
+#~ msgstr "Lled y ffrâm: %1"
+
+#~ msgid "Indent"
+#~ msgstr "Mewnoliad"
+
+#~ msgid "&Right:"
+#~ msgstr "&De:"
+
+#, fuzzy
+#~ msgid "&First line:"
+#~ msgstr "&Llinell gyntaf (%1):"
+
+#~ msgctxt "Line spacing value"
+#~ msgid "Single"
+#~ msgstr "Sengl"
+
+#~ msgctxt "Line spacing value"
+#~ msgid "1.5 Lines"
+#~ msgstr "1.5 Llinell"
+
+#~ msgctxt "Line spacing value"
+#~ msgid "Double"
+#~ msgstr "Dwbl"
+
+#~ msgid "At Least (%1)"
+#~ msgstr "O Leiaf (%1)"
+
+#~ msgid "Fixed (%1)"
+#~ msgstr "Sefydlog (%1)"
+
+#~ msgid "Para&graph Space"
+#~ msgstr "Bylchu &Paragraff"
+
+#~ msgid "Before:"
+#~ msgstr "O Flaen :"
+
+#~ msgid "Indent && S&pacing"
+#~ msgstr "Mewnoliad a B&ylchu"
+
+#~ msgid "&Left"
+#~ msgstr "&Chwith"
+
+#~ msgid "&Right"
+#~ msgstr "&De"
+
+#~ msgid "&Justify"
+#~ msgstr "&Unioni"
+
+#~ msgid "Behavior at &End of Frame/Page"
+#~ msgstr "Ymddygiad wrth Ddiwedd y Ffrâm/&Tudalen"
+
+#~ msgid "&Keep lines together"
+#~ msgstr "&Cadw llinellau efo'u gilydd"
+
+#~ msgid "Insert break before paragraph"
+#~ msgstr "Mewnosod toriad o flaen y paragraff"
+
+#, fuzzy
+#~ msgid "General &Layout"
+#~ msgstr "Cyffredinol"
+
+#, fuzzy
+#~ msgid "D&ecorations"
+#~ msgstr "Cy&feiriad:"
+
+#~ msgid "Numbering"
+#~ msgstr "Rhifo"
+
+#~ msgid "&None"
+#~ msgstr "&Dim"
+
+#~ msgid "&List"
+#~ msgstr "&Rhestr"
+
+#~ msgid "Chapt&er"
+#~ msgstr "Pe&nnod"
+
+#~ msgid "Normal paragraph text"
+#~ msgstr "Testun paragraff arferol"
+
+#~ msgid "B&ullets/Numbers"
+#~ msgstr "B&wledi/Rhifau"
+
+#~ msgid "Po&sition"
+#~ msgstr "Lle&oliad"
+
+#~ msgid "On followin&g character: "
+#~ msgstr "Cyn y nod &dilynnol:"
+
+#~ msgid "Tab Leader"
+#~ msgstr "Arweinydd Tablydd"
+
+#~ msgid "The space a tab uses can be filled with a pattern."
+#~ msgstr "Gellir llenwi'r bwlch y mae tablydd yn ei ddefnyddio efo patrwm."
+
+#~ msgid "&Filling:"
+#~ msgstr "Ll&enwad:"
+
+#~ msgid "&New"
+#~ msgstr "&Newydd"
+
+#~ msgid "&Tabulators"
+#~ msgstr "&Tablyddion"
+
+#, fuzzy
+#~ msgid "Import Styles"
+#~ msgstr "Mewnforio Arddull"
+
+#, fuzzy
+#~| msgid "Alignment"
+#~ msgid "Aligment"
+#~ msgstr "Aliniad"
+
+#, fuzzy
+#~ msgid "Strikethrough"
+#~ msgstr "T&rwylinellu:"
+
+#, fuzzy
+#~ msgid "Underlining:"
+#~ msgstr "&Tanlinellu:"
+
+#~ msgid "Colors"
+#~ msgstr "Lliwiau"
+
+#, fuzzy
+#~ msgid "Automatic hyphenation"
+#~ msgstr "Hunan-gysylltnodi"
+
+#~ msgid "Didot (dd)"
+#~ msgstr "Didot (dd)"
+
+#~ msgid "Default Color"
+#~ msgstr "Lliw Rhagosodol"
+
+#~ msgid "More Colors..."
+#~ msgstr "Rhagor o Liwiau..."
+
+#~ msgctxt "color"
+#~ msgid "Red"
+#~ msgstr "Coch"
+
+#~ msgctxt "color"
+#~ msgid "Orange"
+#~ msgstr "Oren"
+
+#~ msgctxt "color"
+#~ msgid "Magenta"
+#~ msgstr "Magenta"
+
+#~ msgctxt "color"
+#~ msgid "Blue"
+#~ msgstr "Glas"
+
+#~ msgctxt "color"
+#~ msgid "Cyan"
+#~ msgstr "Gwyrddlas"
+
+#~ msgctxt "color"
+#~ msgid "Green"
+#~ msgstr "Gwyrdd"
+
+#~ msgctxt "color"
+#~ msgid "Yellow"
+#~ msgstr "Melyn"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkRed"
+#~ msgstr "Coch Tywyll"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkOrange"
+#~ msgstr "Oren Tywyll"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkMagenta"
+#~ msgstr "Magenta Tywyll"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkBlue"
+#~ msgstr "Glas Tywyll"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkCyan"
+#~ msgstr "Gwyrddlas Tywyll"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkGreen"
+#~ msgstr "Gwyrdd Tywyll"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkYellow"
+#~ msgstr "Melyn Tywyll"
+
+#~ msgctxt "color"
+#~ msgid "White"
+#~ msgstr "Gwyn"
+
+#~ msgctxt "color"
+#~ msgid "Gray 90%"
+#~ msgstr "Llwyd 90%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 80%"
+#~ msgstr "Llwyd 80%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 70%"
+#~ msgstr "Llwyd 70%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 60%"
+#~ msgstr "Llwyd 60%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 50%"
+#~ msgstr "Llwyd 50%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 40%"
+#~ msgstr "Llwyd 40%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 30%"
+#~ msgstr "Llwyd 30%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 20%"
+#~ msgstr "Llwyd 20%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 10%"
+#~ msgstr "Llwyd 10%"
+
+#~ msgctxt "color"
+#~ msgid "Black"
+#~ msgstr "Du"
+
+#~ msgctxt "color"
+#~ msgid "Ivory"
+#~ msgstr "Ifori"
+
+#~ msgctxt "color"
+#~ msgid "Snow"
+#~ msgstr "Eira"
+
+#~ msgctxt "color"
+#~ msgid "MintCream"
+#~ msgstr "HufenMintys"
+
+#~ msgctxt "color"
+#~ msgid "FloralWhite"
+#~ msgstr "GwynBlodau"
+
+#~ msgctxt "color"
+#~ msgid "LightYellow"
+#~ msgstr "MelynGolau"
+
+#~ msgctxt "color"
+#~ msgid "GhostWhite"
+#~ msgstr "GwynYsbryd"
+
+#~ msgctxt "color"
+#~ msgid "Honeydew"
+#~ msgstr "Melwlith"
+
+#~ msgctxt "color"
+#~ msgid "Seashell"
+#~ msgstr "Cragen Fôr"
+
+#~ msgctxt "color"
+#~ msgid "AliceBlue"
+#~ msgstr "GlasAlis"
+
+#~ msgctxt "color"
+#~ msgid "Cornsilk"
+#~ msgstr "Sidan ŷd"
+
+#~ msgctxt "color"
+#~ msgid "LavenderBlush"
+#~ msgstr "GwridLafant"
+
+#~ msgctxt "color"
+#~ msgid "OldLace"
+#~ msgstr "HenAddurnwe"
+
+#~ msgctxt "color"
+#~ msgid "WhiteSmoke"
+#~ msgstr "MwgGwyn"
+
+#~ msgctxt "color"
+#~ msgid "LemonChiffon"
+#~ msgstr "SifonLemon"
+
+#~ msgctxt "color"
+#~ msgid "LightCyan"
+#~ msgstr "GwyrddlasGolau"
+
+#~ msgctxt "color"
+#~ msgid "LightGoldenrodYellow"
+#~ msgstr "MelynEurwialenGolau"
+
+#~ msgctxt "color"
+#~ msgid "Beige"
+#~ msgstr "Llwydfelyn"
+
+#~ msgctxt "color"
+#~ msgid "PapayaWhip"
+#~ msgstr "HufenChwipPapaya"
+
+#~ msgctxt "color"
+#~ msgid "BlanchedAlmond"
+#~ msgstr "AlmonGwynedig"
+
+#~ msgctxt "color"
+#~ msgid "AntiqueWhite"
+#~ msgstr "HenWyn"
+
+#~ msgctxt "color"
+#~ msgid "MistyRose"
+#~ msgstr "RhosynTarthog"
+
+#~ msgctxt "color"
+#~ msgid "Bisque"
+#~ msgstr "Bisg"
+
+#~ msgctxt "color"
+#~ msgid "Moccasin"
+#~ msgstr "Mocasin"
+
+#~ msgctxt "color"
+#~ msgid "NavajoWhite"
+#~ msgstr "GwynNafaho"
+
+#~ msgctxt "color"
+#~ msgid "PeachPuff"
+#~ msgstr "CacenBwffEirinGwlanog"
+
+#~ msgctxt "color"
+#~ msgid "PaleGoldenrod"
+#~ msgstr "EurwialenWan"
+
+#~ msgctxt "color"
+#~ msgid "Wheat"
+#~ msgstr "Gwenith"
+
+#~ msgctxt "color"
+#~ msgid "PaleTurquoise"
+#~ msgstr "GwyrddlasGwan"
+
+#~ msgctxt "color"
+#~ msgid "Pink"
+#~ msgstr "Pinc"
+
+#~ msgctxt "color"
+#~ msgid "LightGoldenrod"
+#~ msgstr "EurwialenOlau"
+
+#~ msgctxt "color"
+#~ msgid "LightGray"
+#~ msgstr "LlwydGolau"
+
+#~ msgctxt "color"
+#~ msgid "LightPink"
+#~ msgstr "PincGolau"
+
+#~ msgctxt "color"
+#~ msgid "PowderBlue"
+#~ msgstr "GlasPowdwr"
+
+#~ msgctxt "color"
+#~ msgid "Aquamarine"
+#~ msgstr "Morlas"
+
+#~ msgctxt "color"
+#~ msgid "Thistle"
+#~ msgstr "Asgell"
+
+#~ msgctxt "color"
+#~ msgid "LightBlue"
+#~ msgstr "GlasGolau"
+
+#~ msgctxt "color"
+#~ msgid "PaleGreen"
+#~ msgstr "GwyrddGwan"
+
+#~ msgctxt "color"
+#~ msgid "Gold"
+#~ msgstr "Aur"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "GreenYellow"
+#~ msgstr "Gwyrdd-felyn"
+
+#~ msgctxt "color"
+#~ msgid "LightSteelBlue"
+#~ msgstr "DurLasGolau"
+
+#~ msgctxt "color"
+#~ msgid "LightGreen"
+#~ msgstr "GwyrddGolau"
+
+#~ msgctxt "color"
+#~ msgid "Plum"
+#~ msgstr "Eirin"
+
+#~ msgctxt "color"
+#~ msgid "Gray"
+#~ msgstr "Llwyd"
+
+#~ msgctxt "color"
+#~ msgid "BurlyWood"
+#~ msgstr "prenceinciog"
+
+#~ msgctxt "color"
+#~ msgid "LightSkyBlue"
+#~ msgstr "AwyrLasGolau"
+
+#~ msgctxt "color"
+#~ msgid "LightSalmon"
+#~ msgstr "EogliwGolau"
+
+#~ msgctxt "color"
+#~ msgid "SkyBlue"
+#~ msgstr "AwyrLas"
+
+#~ msgctxt "color"
+#~ msgid "Tan"
+#~ msgstr "Melynddu"
+
+#~ msgctxt "color"
+#~ msgid "Violet"
+#~ msgstr "Fioled"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SandyBrown"
+#~ msgstr "Brown Tywodliw"
+
+#~ msgctxt "color"
+#~ msgid "DarkSalmon"
+#~ msgstr "EogliwTywyll"
+
+#~ msgctxt "color"
+#~ msgid "DarkKhaki"
+#~ msgstr "CaciTywyll"
+
+#~ msgctxt "color"
+#~ msgid "DarkGray"
+#~ msgstr "LlwydTywyll"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LawnGreen"
+#~ msgstr "Gwyrdd Lawnt"
+
+#~ msgctxt "color"
+#~ msgid "HotPink"
+#~ msgstr "PincPoeth"
+
+#~ msgctxt "color"
+#~ msgid "Salmon"
+#~ msgstr "Eogliw"
+
+#~ msgctxt "color"
+#~ msgid "Turquoise"
+#~ msgstr "Glaswyrdd"
+
+#~ msgctxt "color"
+#~ msgid "DarkSeaGreen"
+#~ msgstr "MorWyrddTywyll"
+
+#~ msgctxt "color"
+#~ msgid "Orchid"
+#~ msgstr "Tegeirian"
+
+#~ msgctxt "color"
+#~ msgid "MediumAquamarine"
+#~ msgstr "MorlasCanolog"
+
+#~ msgctxt "color"
+#~ msgid "Coral"
+#~ msgstr "Cwrel"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "YellowGreen"
+#~ msgstr "Melyn-wyrdd"
+
+#~ msgctxt "color"
+#~ msgid "Goldenrod"
+#~ msgstr "Eurwialen"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumTurquoise"
+#~ msgstr "Glaswyrdd Canolog"
+
+#~ msgctxt "color"
+#~ msgid "RosyBrown"
+#~ msgstr "BrownRhosliw"
+
+#~ msgctxt "color"
+#~ msgid "PaleVioletRed"
+#~ msgstr "CochFioledGwan"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumSpringGreen"
+#~ msgstr "Gwyrdd Gwanwyn Canolog"
+
+#~ msgctxt "color"
+#~ msgid "Tomato"
+#~ msgstr "Tomato"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SpringGreen"
+#~ msgstr "Gwyrdd Gwanwyn"
+
+#~ msgctxt "color"
+#~ msgid "Peru"
+#~ msgstr "Perw"
+
+#~ msgctxt "color"
+#~ msgid "CornflowerBlue"
+#~ msgstr "GlasBenlas"
+
+#~ msgctxt "color"
+#~ msgid "LightSlateBlue"
+#~ msgstr "LlechenLasGolau"
+
+#~ msgctxt "color"
+#~ msgid "MediumPurple"
+#~ msgstr "PiwsCanolog"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumOrchid"
+#~ msgstr "Tegeirian Canolog"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "CadetBlue"
+#~ msgstr "Glas Cadét"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkTurquoise"
+#~ msgstr "Glaswyrdd Tywyll"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DeepSkyBlue"
+#~ msgstr "Awyr Las Dwfn"
+
+#~ msgctxt "color"
+#~ msgid "LightSlateGray"
+#~ msgstr "LlechenLwydGolau"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkGoldenrod"
+#~ msgstr "Eurwialen Dywyll"
+
+#~ msgctxt "color"
+#~ msgid "MediumSlateBlue"
+#~ msgstr "LlechenLasCanolog"
+
+#~ msgctxt "color"
+#~ msgid "IndianRed"
+#~ msgstr "Coch India"
+
+#~ msgctxt "color"
+#~ msgid "Chocolate"
+#~ msgstr "Siocled"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumSeaGreen"
+#~ msgstr "Mor-wyrdd Canolog"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LimeGreen"
+#~ msgstr "Gwyrdd Leim"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSeaGreen"
+#~ msgstr "Mor-wyrdd Golau"
+
+#~ msgctxt "color"
+#~ msgid "SlateGray"
+#~ msgstr "LlechenLwyd"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "OrangeRed"
+#~ msgstr "Orengoch"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DeepPink"
+#~ msgstr "Pinc Dwfn"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SteelBlue"
+#~ msgstr "Glas Dur"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SlateBlue"
+#~ msgstr "Glas Llechen"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "OliveDrab"
+#~ msgstr "Diliw Olewydd"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "RoyalBlue"
+#~ msgstr "Glas Brenhinol"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "VioletRed"
+#~ msgstr "Coch Fioled"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkOrchid"
+#~ msgstr "Tegeirian Tywyll"
+
+#~ msgctxt "color"
+#~ msgid "DimGray"
+#~ msgstr "LlwydGwan"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "BlueViolet"
+#~ msgstr "Fioled Glas"
+
+#~ msgctxt "color"
+#~ msgid "Sienna"
+#~ msgstr "Siena"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumVioletRed"
+#~ msgstr "Coch Fioled Canolog"
+
+#~ msgctxt "color"
+#~ msgid "Maroon"
+#~ msgstr "Marŵn"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SeaGreen"
+#~ msgstr "Mor-wyrdd"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkOliveGreen"
+#~ msgstr "Gwyrdd Olewydd Tywyll"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "ForestGreen"
+#~ msgstr "Gwydd Coedwig"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SaddleBrown"
+#~ msgstr "Brown Cyfrwy"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkViolet"
+#~ msgstr "Fioled Tywyll"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "FireBrick"
+#~ msgstr "Bricsen Dân"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkSlateBlue"
+#~ msgstr "Glas Llechen Tywyll"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkSlateGray"
+#~ msgstr "Llwyd Llechen Tywyll"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MidnightBlue"
+#~ msgstr "Glas Hanner-nos"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumBlue"
+#~ msgstr "Glas Canolog"
+
+#~ msgctxt "color"
+#~ msgid "Navy"
+#~ msgstr "Nefi"
+
+#, fuzzy
+#~ msgid "Decimal Comma Number"
+#~ msgstr "Rhifau Rhufeinig, islythrennau"
+
+#, fuzzy
+#~ msgid "Convert to path"
+#~ msgstr "Trosi i'r Groeg"
+
+#, fuzzy
+#~ msgid "Cancelled"
+#~ msgstr "Newid Prid/Islythrennau"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgid "done"
+#~ msgstr "Dim"
+
+#~ msgid "Default font:"
+#~ msgstr "Wynebfath rhagosodol:"
+
+#~ msgid "Name font:"
+#~ msgstr "Wynebfath enwau:"
+
+#~ msgid "Number font:"
+#~ msgstr "Wynebfath rhifau:"
+
+#~ msgid "Operator font:"
+#~ msgstr "Wynebfath gweithredwr:"
+
+#~ msgid "Default base size:"
+#~ msgstr "Maint sail rhagosodol:"
+
+#~ msgid "Choose..."
+#~ msgstr "Dewis..."
+
+#, fuzzy
+#~ msgid "Formula tool"
+#~ msgstr "Fformatio Testun"
+
+#~ msgid "Add Matrix"
+#~ msgstr "Ychwanegu Matrics"
+
+#, fuzzy
+#~ msgid "Add Elements"
+#~ msgstr "Ychwanegu Elfen"
+
+#, fuzzy
+#~ msgid "Remove Elements"
+#~ msgstr "Gwaredu Sylwad"
+
+#~ msgid "More Text Colors..."
+#~ msgstr "Rhagor o Liwiau Testun..."
+
+#~ msgid "More Fill Colors..."
+#~ msgstr "Rhagor o Liwiau Llenwad..."
+
+#~ msgctxt "color"
+#~ msgid "LightSkyblue"
+#~ msgstr "AwyrLasGolau"
+
+#~ msgctxt "color"
+#~ msgid "DarkSeagreen"
+#~ msgstr "MorWyrddTywyll"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DeepSkyblue"
+#~ msgstr "Awyr Las Dwfn"
+
+#~ msgid "Always start %1 with the selected template"
+#~ msgstr "Cychwyn %1 bob tro gyda'r patrymlun dewisiedig"
+
+#~ msgid "Open &Recent Document"
+#~ msgstr "Agor Dogfen &Ddiweddar"
+
+#~ msgid "&Document Information"
+#~ msgstr "&Gwybodaeth Ddogfen"
+
+#~ msgid "Expression Path"
+#~ msgstr "Llwybr Mynegiadau"
+
+#, fuzzy
+#~ msgid "Failed to create script for interpreter '%1'"
+#~ msgstr "Dehonglydd sgriptiau KOffice."
+
+#~ msgid "History"
+#~ msgstr "Hanes"
+
+#~ msgid "Uninstall"
+#~ msgstr "Dadosod"
+
+#~ msgid "Here you can choose the font to be used."
+#~ msgstr "Yma y dewisir yr wynebfath a ddefnyddir."
+
+#~ msgid "Requested Font"
+#~ msgstr "Wynebfath a Ddymunwyd"
+
+#~ msgid "Enable this checkbox to change the font family settings."
+#~ msgstr ""
+#~ "Alluogi'r blwch britho yma er mwyn newid gosodiadau'r teulu wynebfath."
+
+#~ msgid "Font style"
+#~ msgstr "Ardull wynebfath"
+
+#~ msgid "Enable this checkbox to change the font style settings."
+#~ msgstr ""
+#~ "Alluogi'r blwch britho yma er mwyn newid gosodiadau'r arddull wynebfath."
+
+#~ msgid "Enable this checkbox to change the font size settings."
+#~ msgstr ""
+#~ "Alluogi'r blwch britho yma er mwyn newid gosodiadau maint yr wynebfath."
+
+#~ msgid "Here you can choose the font family to be used."
+#~ msgstr "Yma y dewisir y teulu wynebfath a ddefnyddir."
+
+#~ msgid "Here you can choose the font style to be used."
+#~ msgstr "Yma y dewisir yr arddull wynebfath a ddefnyddir."
+
+#~ msgid "Regular"
+#~ msgstr "Arferol"
+
+#~ msgid "Bold Italic"
+#~ msgstr "Trwm Italig"
+
+#~ msgid "Font size<br><i>fixed</i> or <i>relative</i><br>to environment"
+#~ msgstr ""
+#~ "Mae maint yr wynebfath yn <br><i>osodedig</i> neu <i>gymharol</i><br> i'r "
+#~ "amgylchedd"
+
+#~ msgid ""
+#~ "Here you can switch between fixed font size and font size to be "
+#~ "calculated dynamically and adjusted to changing environment (e.g. widget "
+#~ "dimensions, paper size)."
+#~ msgstr ""
+#~ "Yma y newidir rhwng maint wynebfath sy'n osodedig, a maint wynebfath a "
+#~ "chyfrifir yn ddinamig ac a  addasir i amgychedd sy'n newid (e.e. "
+#~ "dimensiynau'r celfigyn, maint y papur)."
+
+#~ msgid "Here you can choose the font size to be used."
+#~ msgstr "Yma y dewisir maint yr wynebfath a ddefnyddir."
+
+#~ msgid "The Quick Brown Fox Jumps Over The Lazy Dog"
+#~ msgstr "Duw a'm gwaredo, ni allaf ddianc rhag hon"
+
+#~ msgid ""
+#~ "This sample text illustrates the current settings. You may edit it to "
+#~ "test special characters."
+#~ msgstr ""
+#~ "Mae'r testun engraifft yma yn dangos y gosodiadau cyfredol. Cewch ei "
+#~ "golygu er mwyn arbrofi llythrennau arbennig."
+
+#~ msgid "Actual Font"
+#~ msgstr "Gwir Wynebfath"
+
+#~ msgid "&Redo: %1"
+#~ msgstr "&Ailwneud: %1"
+
+#~ msgid "Undo %1 action"
+#~ msgid_plural "Undo %1 actions"
+#~ msgstr[0] "Dadwneud %1 gweithred"
+#~ msgstr[1] "Dadwneud %1 gweithred"
+
+#~ msgid "Redo %1 action"
+#~ msgid_plural "Redo %1 actions"
+#~ msgstr[0] "Ailwneud %1 gweithred"
+#~ msgstr[1] "Ailwneud %1 gweithred"
+
+#~ msgid "Remove Tabulator"
+#~ msgstr "Gwaredu'r Tablydd"
+
+#~ msgid "Load"
+#~ msgstr "Llwytho"
+
+#~ msgid "Install"
+#~ msgstr "Gosod"
+
+#~ msgid "Word by word"
+#~ msgstr "Fesul gair"
+
+#~ msgid "Capitalization"
+#~ msgstr "Priflythrennu"
+
+#~ msgid "&Font"
+#~ msgstr "&Wynebfath"
+
+#~ msgid " %"
+#~ msgstr " %"
+
+#~ msgid "Relative size:"
+#~ msgstr "Maint cymharol:"
+
+#, fuzzy
+#~ msgid "Hyphenation"
+#~ msgstr "Hunan-&gysylltnodi"
+
+#~ msgid "Abstract:"
+#~ msgstr "Crynodeb:"
+
+#, fuzzy
+#~ msgid "Accelerator"
+#~ msgstr "Rhifiadur"
+
+#~ msgid "Use syntax highlighting"
+#~ msgstr "Defnyddio amlygu cystrawen"
+
+#~ msgid "Base Size Change"
+#~ msgstr "Newid Maint Sail"
+
+#~ msgid "Add Text"
+#~ msgstr "Ychwanegu Testun"
+
+#, fuzzy
+#~ msgid "Add Operator"
+#~ msgstr "Wynebfath gweithredwr:"
+
+#, fuzzy
+#~ msgid "Add Number"
+#~ msgstr "Ychwanegu Enw"
+
+#~ msgid "Add Empty Box"
+#~ msgstr "Ychwanegu Blwch Gwag "
+
+#~ msgid "Add Name"
+#~ msgstr "Ychwanegu Enw"
+
+#~ msgid "Add Bracket"
+#~ msgstr "Ychwanegu Cromfach"
+
+#~ msgid "Add Overline"
+#~ msgstr "Ychwanegu Troslinell"
+
+#~ msgid "Add Underline"
+#~ msgstr "Ychwanegu Tanlinell"
+
+#~ msgid "Add Multiline"
+#~ msgstr "Ychwanegu Aml-linell"
+
+#~ msgid "Add Space"
+#~ msgstr "Ychwanegu Bwlch"
+
+#~ msgid "Add Root"
+#~ msgstr "Ychwanegu Isradd"
+
+#~ msgid "Add Symbol"
+#~ msgstr "Ychwanegu Symbol"
+
+#~ msgid "Add 1x2 Matrix"
+#~ msgstr "Ychwanegu Matrics 1x2"
+
+#~ msgid "Change Char to Symbol"
+#~ msgstr "Newid Llythyren i Symbol"
+
+#~ msgid "Change Char Family"
+#~ msgstr "Newid Teulu Llythrennau"
+
+#~ msgid "MathML Import Error"
+#~ msgstr "Gwall Mewnforio MathML "
+
+#~ msgid "Indexed list"
+#~ msgstr "Rhestr mynegai"
+
+#~ msgid "Index"
+#~ msgstr "Mynegai"
+
+#~ msgid "Append Column"
+#~ msgstr "Atodi Colofn"
+
+#~ msgid "Append Row"
+#~ msgstr "Atodi Rhes"
+
+#~ msgid "Matrix element"
+#~ msgstr "Elfen fatrics"
+
+#~ msgid "Add Tabmark"
+#~ msgstr "Ychwanegu Arwyddnod Tablydd"
+
+#~ msgid "Multi line element"
+#~ msgstr "Elfen aml-linell"
+
+#~ msgid "Main list of root"
+#~ msgstr "Prif restr gwraidd"
+
+#~ msgid "Remove Enclosing Element"
+#~ msgstr "Dileu'r Elfen Amgylchynnol"
+
+#~ msgid "Add Index"
+#~ msgstr "Ychwanegu Mynegai"
+
+#~ msgid "Numerator"
+#~ msgstr "Rhifiadur"
+
+#~ msgid "Denominator"
+#~ msgstr "Enwadur"
+
+#~ msgid "Add Negative Thin Space"
+#~ msgstr "Ychwanegu Gofod Tenau Negyddol"
+
+#~ msgid "Add Thin Space"
+#~ msgstr "Ychwanegu Gofod Tenau"
+
+#~ msgid "Add Medium Space"
+#~ msgstr "Ychwanegu Gofod Canolfaint"
+
+#~ msgid "Add Thick Space"
+#~ msgstr "Ychwanegu Gofod Trwchus"
+
+#~ msgid "Add Quad Space"
+#~ msgstr "Ychwanegu Gofod Cwad"
+
+#~ msgid "Add Integral"
+#~ msgstr "Ychwanegu Integryn"
+
+#~ msgid "Add Sum"
+#~ msgstr "Ychwanegu Cyfanswm"
+
+#~ msgid "Add Product"
+#~ msgstr "Ychwanegu Lluoswm"
+
+#~ msgid "Add Square Bracket"
+#~ msgstr "Ychwanegu Cromfach Sgwar"
+
+#~ msgid "Add Curly Bracket"
+#~ msgstr "Ychwanegu Cromfach Cyrliog"
+
+#~ msgid "Add Abs"
+#~ msgstr "Ychwanegu Abs"
+
+#~ msgid "Add Matrix..."
+#~ msgstr "Ychwanegu Matrics..."
+
+#~ msgid "Add Upper Left Index"
+#~ msgstr "Ychwanegu Mynegrif Uwch-Chwith"
+
+#~ msgid "Add Lower Left Index"
+#~ msgstr "Ychwanegu Mynegrif Is-Chwith "
+
+#~ msgid "Add Upper Right Index"
+#~ msgstr "Ychwanegu Mynegrif Uwch-Dde"
+
+#~ msgid "Add Lower Right Index"
+#~ msgstr "Ychwanegu Mynegrif Is-Dde"
+
+#~ msgid "Add Upper Index"
+#~ msgstr "Ychwanegu Mynegrif Uwch"
+
+#~ msgid "Add Lower Index"
+#~ msgstr "Ychwanegu Mynegrif Is"
+
+#~ msgid "Syntax Highlighting"
+#~ msgstr "Amlygu Cystrawen"
+
+#~ msgid "&Bold"
+#~ msgstr "&Trwm"
+
+#~ msgid "&Italic"
+#~ msgstr "&Italig"
+
+#~ msgid "Right Delimiter"
+#~ msgstr "Amlinydd De"
+
+#~ msgid "Insert Symbol"
+#~ msgstr "Mewnosod Symbol"
+
+#~ msgid "Symbol Names"
+#~ msgstr "Enwau Symbolau"
+
+#~ msgid "Fraktur"
+#~ msgstr "Fraktur"
+
+#~ msgid "Font Family"
+#~ msgstr "Teulu Wynebfath"
+
+#, fuzzy
+#~ msgid "Operator"
+#~ msgstr "Wynebfath gweithredwr:"

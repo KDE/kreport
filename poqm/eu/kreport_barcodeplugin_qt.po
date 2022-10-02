@@ -1,0 +1,106 @@
+# Translation of kreport_barcodeplugin_qt.po to Euskara/Basque (eu).
+# Copyright (C) 2020, This file is copyright:
+# This file is distributed under the same license as the original file.
+# KDE euskaratzeko proiektuko arduraduna <xalba@eusklnet.net>.
+#
+# Translators:
+# Iñigo Salvador Azurmendi <xalba@euskalnet.net>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2020-03-23 17:30+0100\n"
+"Last-Translator: Iñigo Salvador Azurmendi <xalba@euskalnet.net>\n"
+"Language-Team: Basque <kde-i18n-eu@kde.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 19.12.3\n"
+
+#: KReportItemBarcode.cpp:120
+msgctxt "KReportItemBarcode|"
+msgid "Value"
+msgstr "Balioa"
+
+#: KReportItemBarcode.cpp:121
+msgctxt "KReportItemBarcode|"
+msgid "Value used if not bound to a field"
+msgstr "Erabilitako balioa, eremu bati lotua ez badago"
+
+#: KReportItemBarcode.cpp:125
+msgctxt "KReportItemBarcode|"
+msgid "Left"
+msgstr "Ezkerrera"
+
+#: KReportItemBarcode.cpp:125
+msgctxt "KReportItemBarcode|"
+msgid "Center"
+msgstr "Erdian"
+
+#: KReportItemBarcode.cpp:125
+msgctxt "KReportItemBarcode|"
+msgid "Right"
+msgstr "Eskuinera"
+
+#: KReportItemBarcode.cpp:127
+msgctxt "KReportItemBarcode|"
+msgid "Horizontal Alignment"
+msgstr "Lerrokatze horizontala"
+
+#: KReportItemBarcode.cpp:135
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "Code 3 of 9"
+msgstr "Code 3/9"
+
+#: KReportItemBarcode.cpp:136
+msgctxt "KReportItemBarcode|3 of 3 Extended: Barcode symbology, keep short"
+msgid "Code 3 of 9 Ext."
+msgstr "Code 3/9 hedatua"
+
+#: KReportItemBarcode.cpp:137
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "Code 128"
+msgstr "Code 128"
+
+#: KReportItemBarcode.cpp:138
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "EAN-8"
+msgstr "EAN-8"
+
+#: KReportItemBarcode.cpp:139
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "EAN-13"
+msgstr "EAN-13"
+
+#: KReportItemBarcode.cpp:140
+msgctxt ""
+"KReportItemBarcode|Interleaved barcode 2 of 5: barcode symbology, keep short"
+msgid "Interleaved 2 of 5"
+msgstr "2/5 tartekatua"
+
+#: KReportItemBarcode.cpp:141
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "UPC-A"
+msgstr "UPC-A"
+
+#: KReportItemBarcode.cpp:142
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "UPC-E"
+msgstr "UPC-E"
+
+#: KReportItemBarcode.cpp:145
+msgctxt "KReportItemBarcode|"
+msgid "Barcode Format"
+msgstr "Barra-kode formatua"
+
+#: KReportItemBarcode.cpp:147
+msgctxt "KReportItemBarcode|"
+msgid "Max Length"
+msgstr "Gehienezko luzera"
+
+#: KReportItemBarcode.cpp:148
+msgctxt "KReportItemBarcode|"
+msgid "Maximum Barcode Length"
+msgstr "Barra-kodearen gehienezko luzera"

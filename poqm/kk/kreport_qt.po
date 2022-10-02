@@ -1,0 +1,7048 @@
+# translation of koffice.po to Kazakh
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sairan Kikkarin <sairan@sci.kz>, 2008.
+# Sairan Kikkarin <sairan@computer.org>, 2008, 2011, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: koffice\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2013-10-24 03:22+0600\n"
+"Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
+"Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.2\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+#, fuzzy
+#| msgid "Could not create the output document"
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "Шығыс құжаты құрылмады"
+
+#: common/KReportDesign.cpp:159
+#, fuzzy
+#| msgid "Error in embedded document"
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Ендірме құжатта қате"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Name"
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Атауы"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Object Name"
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Нысанның атауы"
+
+#: common/KReportItemBase.cpp:78
+#, fuzzy
+#| msgid "Position"
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Орны"
+
+#: common/KReportItemBase.cpp:79
+#, fuzzy
+#| msgid "Size"
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Өлшемі"
+
+#: common/KReportItemBase.cpp:112
+#, fuzzy
+#| msgid "Data Source"
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Дерек көзі"
+
+#: common/KReportItemLine.cpp:80
+#, fuzzy
+#| msgid "&Set Position..."
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "&Орны..."
+
+#: common/KReportItemLine.cpp:81
+#, fuzzy
+#| msgid "Position"
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Орны"
+
+#: common/KReportItemLine.cpp:83
+#, fuzzy
+#| msgid "Line Weight"
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "Сызықтың қалыңдығы"
+
+#: common/KReportItemLine.cpp:85
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Сызықтың түсі"
+
+#: common/KReportItemLine.cpp:86
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Сызықтың түрі"
+
+#: common/KReportSectionData.cpp:164
+#, fuzzy
+#| msgid "Group Sections"
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Топ бөлімдері"
+
+#: common/KReportSectionData.cpp:166
+#, fuzzy
+#| msgid "Height"
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "Биіктігі"
+
+#: common/KReportSectionData.cpp:170
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Аясының түсі"
+
+#: common/KReportUnit.cpp:136
+#, fuzzy
+#| msgid "Invalid Type"
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Түрі дұрыс емес"
+
+#: common/KReportUnit.cpp:138
+#, fuzzy
+#| msgid "Millimeters (mm)"
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "Миллиметр (мм)"
+
+#: common/KReportUnit.cpp:140
+#, fuzzy
+#| msgid "Centimeters (cm)"
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "Сантиметр (см)"
+
+#: common/KReportUnit.cpp:142
+#, fuzzy
+#| msgid "Decimeters (dm)"
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "Дециметр (дм)"
+
+#: common/KReportUnit.cpp:144
+#, fuzzy
+#| msgid "Inches (in)"
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "Дюйм (д)"
+
+#: common/KReportUnit.cpp:146
+#, fuzzy
+#| msgid "Pica (pi)"
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "Пика (пи)"
+
+#: common/KReportUnit.cpp:148
+#, fuzzy
+#| msgid "Cicero (cc)"
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "Цицеро (цц)"
+
+#: common/KReportUnit.cpp:150
+#, fuzzy
+#| msgid "Points (pt)"
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "Пойнт (пт)"
+
+#: common/KReportUnit.cpp:152
+#, fuzzy
+#| msgid "Pixels (px)"
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "Пиксел (пк)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Cross"
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Айқыш"
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Tick"
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr "Құсбелгі"
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Dot"
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr "Нүкте"
+
+#: items/check/KReportItemCheck.cpp:80
+#, fuzzy
+#| msgid "Style"
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "Стилі"
+
+#: items/check/KReportItemCheck.cpp:84
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Мәтіннің түсі"
+
+#: items/check/KReportItemCheck.cpp:86
+#, fuzzy
+#| msgid "Line Weight"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "Сызықтың қалыңдығы"
+
+#: items/check/KReportItemCheck.cpp:88
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Сызықтың түсі"
+
+#: items/check/KReportItemCheck.cpp:89
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Сызықтың түрі"
+
+#: items/check/KReportItemCheck.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Мәні"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Мәні"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Left"
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Солға"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Center"
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Ортаға"
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Right"
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Оңға"
+
+#: items/field/KReportItemField.cpp:96
+#, fuzzy
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Көлденең туралау"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Top"
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "Жоғарға"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Bottom"
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Төменге"
+
+#: items/field/KReportItemField.cpp:102
+#, fuzzy
+#| msgid "Vertical Alignment"
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Тігінен туралау"
+
+#: items/field/KReportItemField.cpp:104
+#, fuzzy
+#| msgid "Font"
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Қаріп"
+
+#: items/field/KReportItemField.cpp:106
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Аясының түсі"
+
+#: items/field/KReportItemField.cpp:107
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Мәтіннің түсі"
+
+#: items/field/KReportItemField.cpp:109
+#, fuzzy
+#| msgid "Background tool"
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Аясының құралы"
+
+#: items/field/KReportItemField.cpp:114
+#, fuzzy
+#| msgid "Line Weight"
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "Сызықтың қалыңдығы"
+
+#: items/field/KReportItemField.cpp:116
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Сызықтың түсі"
+
+#: items/field/KReportItemField.cpp:117
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Сызықтың түрі"
+
+#: items/field/KReportItemField.cpp:119
+#, fuzzy
+#| msgid "Word Wrap"
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr "Сөздерді тасымалдау"
+
+#: items/field/KReportItemField.cpp:120
+#, fuzzy
+#| msgid "Can Grow"
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr "Өсе алады"
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgid "Clip"
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr "Кесу"
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgid "Stretch"
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Созу"
+
+#: items/image/KReportItemImage.cpp:120
+#, fuzzy
+#| msgid "Resize Mode"
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "Өлшемін өзгерту режімі"
+
+#: items/image/KReportItemImage.cpp:121
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Мәні"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:91
+#, fuzzy
+#| msgid "Caption"
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Айдары"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Left"
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Солға"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Center"
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Ортаға"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Right"
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Оңға"
+
+#: items/label/KReportItemLabel.cpp:96
+#, fuzzy
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Көлденең туралау"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Top"
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "Жоғарға"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Bottom"
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Төменге"
+
+#: items/label/KReportItemLabel.cpp:102
+#, fuzzy
+#| msgid "Vertical Alignment"
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Тігінен туралау"
+
+#: items/label/KReportItemLabel.cpp:104
+#, fuzzy
+#| msgid "Font"
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Қаріп"
+
+#: items/label/KReportItemLabel.cpp:106
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Аясының түсі"
+
+#: items/label/KReportItemLabel.cpp:107
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Мәтіннің түсі"
+
+#: items/label/KReportItemLabel.cpp:109
+#, fuzzy
+#| msgid "Background tool"
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Аясының құралы"
+
+#: items/label/KReportItemLabel.cpp:114
+#, fuzzy
+#| msgid "Line Weight"
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "Сызықтың қалыңдығы"
+
+#: items/label/KReportItemLabel.cpp:116
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Сызықтың түсі"
+
+#: items/label/KReportItemLabel.cpp:117
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Сызықтың түрі"
+
+#: items/text/KReportItemText.cpp:115
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Мәні"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Left"
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Солға"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Center"
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Ортаға"
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Right"
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Оңға"
+
+#: items/text/KReportItemText.cpp:121
+#, fuzzy
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Көлденең туралау"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Top"
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "Жоғарға"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Bottom"
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Төменге"
+
+#: items/text/KReportItemText.cpp:127
+#, fuzzy
+#| msgid "Vertical Alignment"
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Тігінен туралау"
+
+#: items/text/KReportItemText.cpp:129
+#, fuzzy
+#| msgid "Font"
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Қаріп"
+
+#: items/text/KReportItemText.cpp:131
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Аясының түсі"
+
+#: items/text/KReportItemText.cpp:132
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Мәтіннің түсі"
+
+#: items/text/KReportItemText.cpp:134
+#, fuzzy
+#| msgid "Line Weight"
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "Сызықтың қалыңдығы"
+
+#: items/text/KReportItemText.cpp:136
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Сызықтың түсі"
+
+#: items/text/KReportItemText.cpp:137
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Сызықтың түрі"
+
+#: items/text/KReportItemText.cpp:138
+#, fuzzy
+#| msgid "Background tool"
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Аясының құралы"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, fuzzy, qt-format
+#| msgid "Script File"
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr "Скрипт файлы"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+#, fuzzy
+#| msgid "Syntax Error"
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Синтаксис қатесі"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:676
+#, fuzzy
+#| msgid "Page Header (Any)"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Беттің жоғарғы колонтитулы (бүкілі)"
+
+#: wrtembed/KReportDesigner.cpp:680
+#, fuzzy
+#| msgid "Page Header (Even)"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Беттің жоғарғы колонтитулы (жұп)"
+
+#: wrtembed/KReportDesigner.cpp:684
+#, fuzzy
+#| msgid "Page Header (Odd)"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Беттің жоғарғы колонтитулы (тақ)"
+
+#: wrtembed/KReportDesigner.cpp:688
+#, fuzzy
+#| msgid "Page Header (First)"
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Беттің жоғарғы колонтитулы (алғашқы)"
+
+#: wrtembed/KReportDesigner.cpp:692
+#, fuzzy
+#| msgid "Page Header (Last)"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Беттің жоғарғы колонтитулы (соңғы)"
+
+#: wrtembed/KReportDesigner.cpp:696
+#, fuzzy
+#| msgid "Page Footer (Any)"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "Беттің төменгі колонтитулы (бүкілі)"
+
+#: wrtembed/KReportDesigner.cpp:700
+#, fuzzy
+#| msgid "Page Footer (Even)"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "Беттің төменгі колонтитулы (жұп)"
+
+#: wrtembed/KReportDesigner.cpp:704
+#, fuzzy
+#| msgid "Page Footer (Odd)"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "Беттің төменгі колонтитулы (тақ)"
+
+#: wrtembed/KReportDesigner.cpp:708
+#, fuzzy
+#| msgid "Page Footer (First)"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "Беттің төменгі колонтитулы (алғашқы)"
+
+#: wrtembed/KReportDesigner.cpp:712
+#, fuzzy
+#| msgid "Page Footer (Last)"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "Беттің төменгі колонтитулы (соңғы)"
+
+#: wrtembed/KReportDesigner.cpp:716
+#, fuzzy
+#| msgid "Report Header"
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "Баяндаманың жоғарғы колонтитулы"
+
+#: wrtembed/KReportDesigner.cpp:720
+#, fuzzy
+#| msgid "Report Footer"
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "Баяндаманың төменгі колонтитулы"
+
+#: wrtembed/KReportDesigner.cpp:808
+#, fuzzy
+#| msgid "Export"
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "Экспорт ету"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Title"
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Атауы"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Report Title"
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Баяндаманың атауы"
+
+#: wrtembed/KReportDesigner.cpp:818
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Беттің өлшемі"
+
+#: wrtembed/KReportDesigner.cpp:821
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Беттің өлшемі"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "Portrait"
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "Тігінен"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "Landscape"
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "Көлденеңнен"
+
+#: wrtembed/KReportDesigner.cpp:827
+#, fuzzy
+#| msgid "Page Orientation"
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "Беттің бағдары"
+
+#: wrtembed/KReportDesigner.cpp:832
+#, fuzzy
+#| msgid "Page Unit"
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Бет бірлігі"
+
+#: wrtembed/KReportDesigner.cpp:833
+#, fuzzy
+#| msgid "Show Grid"
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Торды көрсету"
+
+#: wrtembed/KReportDesigner.cpp:834
+#, fuzzy
+#| msgid "Snap to Grid"
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Торға келтіру"
+
+#: wrtembed/KReportDesigner.cpp:835
+#, fuzzy
+#| msgid "Grid Divisions"
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr "Тор көздері"
+
+#: wrtembed/KReportDesigner.cpp:841
+#, fuzzy
+#| msgid "Left Margin"
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Сол жақ жиегі"
+
+#: wrtembed/KReportDesigner.cpp:843
+#, fuzzy
+#| msgid "Right Margin"
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Оң жақ жиегі"
+
+#: wrtembed/KReportDesigner.cpp:845
+#, fuzzy
+#| msgid "Top Margin"
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Жоғарғы жиегі"
+
+#: wrtembed/KReportDesigner.cpp:847
+#, fuzzy
+#| msgid "Bottom Margin"
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Төменгі жиегі"
+
+#: wrtembed/KReportDesigner.cpp:869
+#, fuzzy
+#| msgid "Object Script"
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Нысанның скрипті"
+
+#: wrtembed/KReportDesigner.cpp:1067
+#, fuzzy
+#| msgid "Cut"
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Қиып алу"
+
+#: wrtembed/KReportDesigner.cpp:1071
+#, fuzzy
+#| msgid "Copy"
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Көшіріп алу"
+
+#: wrtembed/KReportDesigner.cpp:1076
+#, fuzzy
+#| msgid "Paste"
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Орналастыру"
+
+#: wrtembed/KReportDesigner.cpp:1087
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Өшіру"
+
+#: wrtembed/KReportDesigner.cpp:1129
+#, fuzzy
+#| msgid "Line"
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Сызық"
+
+#: wrtembed/KReportDesigner.cpp:1476
+#, fuzzy
+#| msgid "Line"
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Сызық"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1525
+#, fuzzy
+#| msgid "Copy"
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "Көшіріп алу"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1531
+#, fuzzy
+#| msgid "Paste"
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "Орналастыру"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1544
+#, fuzzy
+#| msgid "Collection"
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Жинаққа"
+
+#: wrtembed/KReportDesigner.cpp:1547
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1549
+#, fuzzy
+#| msgid "Lower Roman"
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr "Кіші римдік"
+
+#: wrtembed/KReportDesignerSection.cpp:126
+#, fuzzy
+#| msgid "Detail"
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "Егжей-тегжейі"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+#, fuzzy
+#| msgid "Group Section Editor"
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Топ бөлімдер редакторы"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+#, fuzzy
+#| msgid "Column:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Баған:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+#, fuzzy
+#| msgid "Sort:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Реттеу:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+#, fuzzy
+#| msgid "Show group header:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Топтың көрсетілетін жоғарғы колонтитулы:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+#, fuzzy
+#| msgid "Show group footer:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Топтың көрсетілетін төменгі колонтитулы:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+#, fuzzy
+#| msgid "Insert page break after group footer:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr "Топтың төменгі колонтитулдан кейінгі үзілімі:"
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+#, fuzzy
+#| msgid ""
+#| "A button that allows a report's surface to be selected, allowing its "
+#| "properties to be seen."
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+"Бұл батырманы басқанда, қасиеттері көрсетіліп, баяндаманың қаптама бетін "
+"таңдап алуға мүмкіндік беріледі."
+
+#: wrtembed/KReportRuler_p.cpp:1472
+#, fuzzy
+#| msgid "First line indent"
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Алғашқы жол шегінісі"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+#, fuzzy
+#| msgid "Left indent"
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Сол жақ шегінісі"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+#, fuzzy
+#| msgid "Right indent"
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Оң жақ шегінісі"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+#, fuzzy
+#| msgid "Add..."
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr "Қосу..."
+
+#: wrtembed/KReportSectionEditor.cpp:74
+#, fuzzy
+#| msgid "Edit..."
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "Өзгерту...."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Өшіру"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+#, fuzzy
+#| msgid "Move Up"
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Жоғарлату"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+#, fuzzy
+#| msgid "Move Down"
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Төмендету"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+#, fuzzy
+#| msgid "Ascending"
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr "Өсу ретімен"
+
+#: wrtembed/KReportSectionEditor.cpp:312
+#, fuzzy
+#| msgid "Descending"
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr "Кему ретімен"
+
+#: wrtembed/KReportSectionEditor.ui:29
+#, fuzzy
+#| msgid "Show report header"
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Баяндаманың жоғарғы колонтитулы"
+
+#: wrtembed/KReportSectionEditor.ui:36
+#, fuzzy
+#| msgid "Show report footer"
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Баяндаманың төменгі колонтитулы көрсетілсін"
+
+#: wrtembed/KReportSectionEditor.ui:43
+#, fuzzy
+#| msgid "Page Header"
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Беттің жоғарғы колонтитулы"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+#, fuzzy
+#| msgid "First page:"
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "Алғашқы беті:"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+#, fuzzy
+#| msgid "Even pages:"
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Жұп беттері:"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+#, fuzzy
+#| msgid "Any pages:"
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Бүкіл беттері"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+#, fuzzy
+#| msgid "Last page:"
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Соңғы беті:"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+#, fuzzy
+#| msgid "Odd pages:"
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Тақ беттері:"
+
+#: wrtembed/KReportSectionEditor.ui:130
+#, fuzzy
+#| msgid "Page Footer"
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "Төменгі колонтитулы"
+
+#: wrtembed/KReportSectionEditor.ui:217
+#, fuzzy
+#| msgid "Group Sections"
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Топ бөлімдері"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, fuzzy, qt-format
+#| msgid "%1%"
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+#, fuzzy
+#| msgid "Fit Page Width"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Парақтың енін шақтау"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+#, fuzzy
+#| msgid "Fit Page"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Бетке шақтау"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+#, fuzzy
+#| msgid "Actual Pixels"
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr "Іс жүзіндегі пикселдер"
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+#, fuzzy
+#| msgid "Fit Text Width"
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Мәтін енін шақтау"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Letter"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "US Letter"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Legal"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "US Legal"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "Custom"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "Өзгеше"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B6"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B5"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B4"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "Execute"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "Орындау"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B0"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B1"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "ISO B10"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B2"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B3"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "Comma"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "Үтір"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO DL"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "ISO DL"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Folio"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Folio"
+#~ msgstr "US Folio"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Ledger"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "US Ledger"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Tabloid"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Tabloid"
+#~ msgstr "US Tabloid"
+
+#, fuzzy
+#~| msgid "Postal code:"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "Пошта индексі:"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Дерек көзі"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Дерек көзі"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Дерек көзі"
+
+#, fuzzy
+#~| msgid "Unable to undelete tag"
+#~ msgctxt "Scripting::Text|"
+#~ msgid "$Unable to read %1"
+#~ msgstr "Белгіні өшіруден қайтуға болмайды"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Экран"
+
+#, fuzzy
+#~| msgid "Height"
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "Биіктігі"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Аясының түсі"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "Орны"
+
+#, fuzzy
+#~| msgid "Size"
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "Өлшемі"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "ISO A3"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "ISO A4"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "ISO A5"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "ISO B5"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Executive"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "US Executive"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "ISO A0"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "ISO A1"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "ISO A2"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "ISO A6"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A7"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "ISO A7"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A8"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "ISO A8"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A9"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "ISO A9"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "ISO B0"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "ISO B1"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "ISO B2"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "ISO B3"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "ISO B4"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "ISO B6"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO C5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "ISO C5"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Common 10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Common 10"
+#~ msgstr "US Common 10"
+
+#, fuzzy
+#~| msgid "Height"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "Биіктігі"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "Аясының түсі"
+
+#, fuzzy
+#~| msgid "Line Weight"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Weight"
+#~ msgstr "Сызықтың қалыңдығы"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "Сызықтың түсі"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "Сызықтың түрі"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Дерек көзі"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "Мәні"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "Аясының түсі"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "Мәтіннің түсі"
+
+#, fuzzy
+#~| msgid "Line Weight"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Weight"
+#~ msgstr "Сызықтың қалыңдығы"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "Сызықтың түсі"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "Сызықтың түрі"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Дерек көзі"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "Мәні"
+
+#, fuzzy
+#~| msgid "Left"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "Солға"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "Ортаға"
+
+#, fuzzy
+#~| msgid "Right"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "Оңға"
+
+#, fuzzy
+#~| msgid "Horizontal Alignment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Көлденең туралау"
+
+#, fuzzy
+#~| msgid "Top"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "Жоғарға"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "Төменге"
+
+#, fuzzy
+#~| msgid "Vertical Alignment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Тігінен туралау"
+
+#, fuzzy
+#~| msgid "Font"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "Қаріп"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "Аясының түсі"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "Мәтіннің түсі"
+
+#, fuzzy
+#~| msgid "Background tool"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "Аясының құралы"
+
+#, fuzzy
+#~| msgid "Line Weight"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Weight"
+#~ msgstr "Сызықтың қалыңдығы"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "Сызықтың түсі"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "Сызықтың түрі"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Дерек көзі"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "Мәні"
+
+#, fuzzy
+#~| msgid "Left"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "Солға"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "Ортаға"
+
+#, fuzzy
+#~| msgid "Right"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "Оңға"
+
+#, fuzzy
+#~| msgid "Horizontal Alignment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Көлденең туралау"
+
+#, fuzzy
+#~| msgid "Top"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "Жоғарға"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "Төменге"
+
+#, fuzzy
+#~| msgid "Vertical Alignment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Тігінен туралау"
+
+#, fuzzy
+#~| msgid "Font"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "Қаріп"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "Аясының түсі"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "Мәтіннің түсі"
+
+#, fuzzy
+#~| msgid "Line Weight"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Weight"
+#~ msgstr "Сызықтың қалыңдығы"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "Сызықтың түсі"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "Сызықтың түрі"
+
+#, fuzzy
+#~| msgid "Background tool"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "Аясының құралы"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "Өшіру"
+
+#, fuzzy
+#~| msgid "Script Interpreter"
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "Скрипт интерпретаторы"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Сайран Киккарин"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "sairan@computer.org"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Break subpath"
+#~ msgid "Draw path"
+#~ msgstr "Ішкі сүрлеуін үзу"
+
+#, fuzzy
+#~| msgid "Freehand Path Drawing Tool"
+#~ msgid "Freehand path"
+#~ msgstr "Қолмен сүрлеу салу құралы"
+
+#~ msgid "Angle snapping delta:"
+#~ msgstr "Жабысу бұрышының аттамы:"
+
+#~ msgid "Activate angle snap:"
+#~ msgstr "Бұрыш жабысқақтығын белсендету:"
+
+#~ msgid "Angle Constraints"
+#~ msgstr "Бұрыш шектеулері"
+
+#~ msgid "Precision:"
+#~ msgstr "Дәлдігі:"
+
+#~ msgctxt "The raw line data"
+#~ msgid "Raw"
+#~ msgstr "Өңделмеген"
+
+#~ msgid "Curve"
+#~ msgstr "Қисық"
+
+#~ msgid "Straight"
+#~ msgstr "Түзу"
+
+#~ msgid "Optimize"
+#~ msgstr "Оңтайландыру"
+
+#~ msgid "Exactness:"
+#~ msgstr "Нақтылығы:"
+
+#~ msgid "Combine angle:"
+#~ msgstr "Құрастыру бұрышы:"
+
+#~ msgid "Pencil"
+#~ msgstr "Қрындаш"
+
+#~ msgid "Invalid database contents. "
+#~ msgstr "Деректер қорының мазмұны дұрыс емес. "
+
+#~ msgid "It is a system object."
+#~ msgstr "Бұл жүйелік нысан."
+
+#~ msgid "Connection already established."
+#~ msgstr "Қосылым бұрын орнатылған."
+
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr "\"%1\" жоба файлы ашылмады."
+
+#~ msgid "Could not connect to \"%1\" database server."
+#~ msgstr "\"%1\" деректер серверіне қосылу болмады."
+
+#~ msgid "Not connected to the database server."
+#~ msgstr "Деректер серверіне қосылым жоқ."
+
+#~ msgid "Currently no database is used."
+#~ msgstr "Қолданыста деректер қоры жоқ."
+
+#~ msgid "The database \"%1\" does not exist."
+#~ msgstr "\"%1\" деген деректер қоры жоқ."
+
+#, fuzzy
+#~| msgid "The database \"%1\" does not exist."
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "\"%1\" деген деректер қоры жоқ."
+
+#~ msgid "Database file \"%1\" is not readable."
+#~ msgstr "\"%1\" деген деректер қорының файлы оқылмайды."
+
+#~ msgid "Database file \"%1\" is not writable."
+#~ msgstr "\"%1\" деген деректер қорының файлы жазылмайды."
+
+#~ msgid "Database \"%1\" created but could not be closed after creation."
+#~ msgstr "\"%1\" деректер қоры құрылған, бірақ құрылғаннан кейін жабылмайды."
+
+#~ msgid "Database \"%1\" already exists."
+#~ msgstr "\"%1\" деген деректер қоры бар ғой."
+
+#~ msgid ""
+#~ "Cannot create database \"%1\". This name is reserved for system database."
+#~ msgstr ""
+#~ "\"%1\" деректер қоры құрымады. Бұл атау жүйелік деректер қорына арналған."
+
+#~ msgid "Error creating database \"%1\" on the server."
+#~ msgstr "\"%1\" деректер қорын серверде құру қатесі."
+
+#~ msgid "Database \"%1\" created but could not be opened."
+#~ msgstr "\"%1\" деректер қоры құрылды бірақ ашылмайды."
+
+#~ msgid "Opening database \"%1\" failed."
+#~ msgstr "\"%1\" деректер қорын ашу жаңылысы."
+
+#~ msgid "Database version (%1) does not match Kexi application's version (%2)"
+#~ msgstr ""
+#~ "Деректер қорының нұсқасы (\"%1\") Kexi бағдарламаның нұсқасымен (%2) "
+#~ "ұштаспайды"
+
+#~ msgid "Cannot find any database for temporary connection."
+#~ msgstr "Уақытша қосылу үшін деректер қоры табылмады."
+
+#~ msgid ""
+#~ "Error during starting temporary connection using \"%1\" database name."
+#~ msgstr "\"%1\" деректер қорымен уақытша қосылу кезінде қате пайда болды."
+
+#~ msgid "Cannot delete database - name not specified."
+#~ msgstr "Деректер қоры жойылған жоқ - атауы келтірілмеген."
+
+#~ msgid "Cannot delete system database \"%1\"."
+#~ msgstr "\"%1\" жүйелік деректер қоры жойылмайды."
+
+#~ msgid "Error while executing SQL statement."
+#~ msgstr "SQL командасын орындағанда қате пайда болды."
+
+#~ msgid "Creating table failed."
+#~ msgstr "Кесте құру жаңылысы."
+
+#~ msgid "Cannot create table without fields."
+#~ msgstr "Өрістерсіз кесте құрылмайды."
+
+#~ msgid "System name \"%1\" cannot be used as table name."
+#~ msgstr "\"%1\" деген жүйелік атауын кестені атау үшін қолдануға болмайды."
+
+#~ msgid "System name \"%1\" cannot be used as one of fields in \"%2\" table."
+#~ msgstr ""
+#~ "\"%1\" деген жүйелік атауын \"%2\" кестенің өрісін атау үшін қолдануға "
+#~ "болмайды."
+
+#~ msgid "Could not create the same table \"%1\" twice."
+#~ msgstr "\"%1\" деп екінші кестені құруға болмайды."
+
+#~ msgid "Table \"%1\" already exists."
+#~ msgstr "\"%1\" деген кесте бар ғой."
+
+#~ msgid "Table \"%1\" does not exist."
+#~ msgstr "\"%1\" деген кесте жоқ."
+
+#~ msgid "Could not remove object's data."
+#~ msgstr "Нысанның деректері өшірілмеді."
+
+#~ msgid "Table \"%1\" cannot be removed.\n"
+#~ msgstr "\"%1\" кестесі өшірілмейді.\n"
+
+#~ msgid "Unexpected name or identifier."
+#~ msgstr "Күтпеген атау не идентификатор."
+
+#, fuzzy
+#~| msgid "Could not alter table \"%1\" using the same table."
+#~ msgid "Could not alter table \"%1\" using the same table as destination."
+#~ msgstr "\"%1\" кестесін кестенің өзі бойынша өзгерту болмайды."
+
+#, fuzzy
+#~| msgid "Unknown table \"%1\""
+#~ msgid "Unknown table \"%1\"."
+#~ msgstr "\"%1\" деген кесте беймәлім"
+
+#, fuzzy
+#~| msgid "Invalid table name \"%1\""
+#~ msgid "Invalid table name \"%1\"."
+#~ msgstr "\"%1\" деген кестенің атауы жарамсыз"
+
+#~ msgid "Could not rename table \"%1\" using the same name."
+#~ msgstr "\"%1\" кестені өз атауымен қайта атауға болмайды."
+
+#~ msgid ""
+#~ "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
+#~ msgstr ""
+#~ "\"%1\" деген кестенің атауын \"%2\" деп өзгерту болмайды. \"%3\" деген "
+#~ "кесте бар екен."
+
+#~ msgid "Query \"%1\" does not exist."
+#~ msgstr "\"%1\" деген сұраныс жоқ."
+
+#~ msgid "Transactions are not supported for \"%1\" driver."
+#~ msgstr " \"%1\" драйвері үшін транзакциялардың қолдауы жоқ."
+
+#, fuzzy
+#~| msgid "Begin transaction failed"
+#~ msgid "Begin transaction failed."
+#~ msgstr "Транзакцияны бастау жаңылысы"
+
+#~ msgid "Transaction already started."
+#~ msgstr "Транзакция басталған ғой."
+
+#~ msgid "Transaction not started."
+#~ msgstr "Транзакция басталған жоқ."
+
+#, fuzzy
+#~| msgid "Error on commit transaction"
+#~ msgid "Error on commit transaction."
+#~ msgstr "Транзакцияны тапсыру қатесі"
+
+#, fuzzy
+#~| msgid "Error on rollback transaction"
+#~ msgid "Error on rollback transaction."
+#~ msgstr "Транзакцияның қайтару қатесі"
+
+#, fuzzy
+#~| msgid "Invalid object name \"%1\""
+#~ msgid "Invalid object name \"%1\"."
+#~ msgstr "\"%1\" деген нысанның атауы жарамсыз"
+
+#, fuzzy
+#~| msgid "Column %1 does not exist for the query."
+#~ msgid "Column <resource>%1</resource> does not exist in the query."
+#~ msgstr "Сұраныстағы %1 деген баған жоқ."
+
+#, fuzzy
+#~| msgid "Error while loading extended table schema information."
+#~ msgctxt "Extended schema for a table: loading error"
+#~ msgid "Error while loading extended table schema."
+#~ msgstr "Кеңейтілген кесте сұлбасының мәліметін жүктеу қатесі."
+
+#, fuzzy
+#~| msgid "Invalid XML data: "
+#~ msgid "Invalid XML data: %1"
+#~ msgstr "Жарамыз XML деректері: "
+
+#, fuzzy
+#~| msgid ""
+#~| "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~| "XML data: "
+#~ msgid ""
+#~ "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~ "XML data: %4"
+#~ msgstr ""
+#~ "XML дерегінде қателік: %2-жолында, %3-бағанында \"%1\" қатесі.\n"
+#~ "XML дерегі: "
+
+#~ msgid "Table has no fields defined."
+#~ msgstr "Кестеде өрістері жоқ."
+
+#~ msgid ""
+#~ "Could not find definition for query \"%1\". Removing this query is "
+#~ "recommended."
+#~ msgstr ""
+#~ "\"%1\" сұранысының анықтамасы табылмады. Бұл сұранысты өшіріп тастауы жөн."
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>Could not load definition for query \"%1\". SQL statement for this "
+#~| "query is invalid:<br><tt>%2</tt></p>\n"
+#~| "<p>You can open this query in Text View and correct it.</p>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>Could not load definition for query \"%1\". SQL statement for this "
+#~ "query is invalid: <message>%2</message></para>\n"
+#~ "<para>You can open this query in Text View and correct it.</para>"
+#~ msgstr ""
+#~ "<p> \"%1\" сұранысының анықтамасы жүктелмеді. Бұл сұранысының SQL "
+#~ "командасы дұрыс емес:<br><tt>%2</tt></p>\n"
+#~ "<p>Сұранысты Мәтін көрінісінде ашып түзеуге болады.</p>"
+
+#~ msgid "Could not update record because there is no master table defined."
+#~ msgstr "Жазу жаңартылған жоқ, өйткені басты кестесі анықталмаған."
+
+#~ msgid ""
+#~ "Could not update record because master table has no primary key defined."
+#~ msgstr ""
+#~ "Жазу жаңартылған жоқ, өйткені басты кестесінде бастапқы кілті "
+#~ "анықталмаған."
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not update record because it does not contain entire master "
+#~| "table's primary key."
+#~ msgid ""
+#~ "Could not update record because it does not contain entire primary key of "
+#~ "master table."
+#~ msgstr ""
+#~ "Жазу жаңартылған жоқ, өйткені онда бүкіл басты кестенің бастапқы кілті "
+#~ "жоқ."
+
+#~ msgid "Primary key's field \"%1\" cannot be empty."
+#~ msgstr "Бастапқы кілт өрісі (\"%1\") бос бола алмайды."
+
+#~ msgid "Record updating on the server failed."
+#~ msgstr "Серверінде жазуын жаңарту жаңылысы."
+
+#, fuzzy
+#~| msgid "Could not insert record because there is no master table defined."
+#~ msgid "Could not insert record because there is no master table specified."
+#~ msgstr "Жазу ендірілген жоқ, өйткені басты кестесі анықталмаған."
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not insert record because master table has no primary key defined."
+#~ msgid ""
+#~ "Could not insert record because master table has no primary key specified."
+#~ msgstr ""
+#~ "Жазу ендірілген жоқ, өйткені басты кестесінде бастапқы кілті анықталмаған."
+
+#~ msgid ""
+#~ "Could not insert record because it does not contain entire master table's "
+#~ "primary key."
+#~ msgstr ""
+#~ "Жазу ендірілген жоқ, өйткені онда бүкіл басты кестенің бастапқы кілті жоқ."
+
+#~ msgid "Record inserting on the server failed."
+#~ msgstr "Серверінде жазуын ендіру жаңылысы."
+
+#, fuzzy
+#~| msgid "Could not delete record because there is no master table defined."
+#~ msgid "Could not delete record because there is no master table specified."
+#~ msgstr "Жазу өшірілген жоқ, өйткені басты кестесі анықталмаған."
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not delete record because there is no primary key for master table "
+#~| "defined."
+#~ msgid ""
+#~ "Could not delete record because there is no primary key for master table "
+#~ "specified."
+#~ msgstr ""
+#~ "Жазу өшірілген жоқ, өйткені басты кестесінде бастапқы кілті анықталмаған."
+
+#~ msgid ""
+#~ "Could not delete record because it does not contain entire master table's "
+#~ "primary key."
+#~ msgstr ""
+#~ "Жазу өшірілген жоқ, өйткені онда бүкіл басты кестенің бастапқы кілті жоқ."
+
+#~ msgid "Record deletion on the server failed."
+#~ msgstr "Серверінде жазуын өшіру жаңылысы."
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Unknown error."
+#~ msgstr "Беймәлім қате"
+
+#, fuzzy
+#~| msgid "file"
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "файл"
+
+#~ msgid "No query statement or schema defined."
+#~ msgstr "Сұраныс не схема анықталмаған."
+
+#~ msgid "Query statement is empty."
+#~ msgstr "Бос сұраныс."
+
+#~ msgid "Error opening database cursor."
+#~ msgstr "Деректер қорының меңзерін ашу қатесі."
+
+#~ msgid "Cannot fetch next record."
+#~ msgstr "Келесі жазу алынбады."
+
+#~ msgid "Could not set value of database property \"%1\"."
+#~ msgstr "Деректер қорының \"%1\" деген қасиетінің мәні орнатылмады."
+
+#~ msgid "Could not set caption for database property \"%1\"."
+#~ msgstr "Деректер қорының \"%1\" деген қасиетінің айдары орнатылмады."
+
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "Деректер қорының \"%1\" деген қасиеті оқылмады."
+
+#~ msgid "Could not read database properties."
+#~ msgstr "Деректер қорының деген қасиеттері оқылмады."
+
+#~ msgid "Invalid database driver's \"%1\" implementation:\n"
+#~ msgstr "Жарамсыз \"%1\" деректер қоры драйверінің іске асыруы:\n"
+
+#~ msgid "Value of \"%1\" is not initialized for the driver."
+#~ msgstr "\"%1\" дегеннің мәні драйвер үшін берілмеген."
+
+#~ msgid "File name expected for file-based database driver."
+#~ msgstr "Файл-негізді деректер қоры драйвері үшін файл атауы керек."
+
+#~ msgid "Client library version"
+#~ msgstr "Клиент жиынның нұсқасы"
+
+#~ msgid "Default character encoding on server"
+#~ msgstr "Серведегінің әдетті кодтамасы"
+
+#~ msgid "File-based database driver"
+#~ msgstr "Файл негіздегі деректер қорының драйвері"
+
+#~ msgid "File-based database's MIME type"
+#~ msgstr "Файл негіздегі деректер қорының MIME түрі"
+
+#~ msgid "Single transactions support"
+#~ msgstr "Жеке транзакцияларды қолдау"
+
+#~ msgid "Multiple transactions support"
+#~ msgstr "Көпше транзакцияларды қолдау"
+
+#~ msgid "Nested transactions support"
+#~ msgstr "Қабаттасқан транзакцияларды қолдау"
+
+#~ msgid "KexiDB driver version"
+#~ msgstr "KexiDB драйверінің нұсқасы"
+
+#~ msgid "Could not find any database drivers."
+#~ msgstr "Бір де бір деректер қорының драйвері табылмады."
+
+#~ msgid "Could not find database driver \"%1\"."
+#~ msgstr "\"%1\" деректер қорының драйвері табылмады."
+
+#~ msgid ""
+#~ "Incompatible database driver's \"%1\" version: found version %2, expected "
+#~ "version %3."
+#~ msgstr ""
+#~ "Үйлесімсіз деректер қоры драйверінің \"%1\" нұсқасы: табылған нұсқасы - "
+#~ "%2, керек нұсқасы - %3."
+
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "\"%1\" деректер қорының драйвері жүктелмеді."
+
+#, fuzzy
+#~| msgid "Could not find database driver \"%1\"."
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "\"%1\" деректер қорының драйвері табылмады."
+
+#~ msgid "Ambiguous field name"
+#~ msgstr "Өріс атауы бірмағыналы емес"
+
+#, fuzzy
+#~| msgid ""
+#~| "Both table \"%1\" and \"%2\" have defined \"%3\" field. Use "
+#~| "\"<tableName>.%4\" notation to specify table name."
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Both table <resource>%1</resource> and <resource>%2</resource> have "
+#~ "defined <resource>%3</resource> field. Use "
+#~ "<resource><placeholder>tableName</placeholder>.%4</resource> notation to "
+#~ "specify table name."
+#~ msgstr ""
+#~ "\"%1\" және \"%2\" кестелердің екеуінде де \"%3\" деген өрсі бар. Кестені "
+#~ "нақты келтіру үшін \"<tableName>.%4\" деп жазыңыз."
+
+#~ msgid "Field not found"
+#~ msgstr "Өріс табылмады"
+
+#, fuzzy
+#~| msgid "Table containing \"%1\" field not found"
+#~ msgid "Table containing \"%1\" field not found."
+#~ msgstr "\"%1\" деген өрісі бар кесте табылған жоқ"
+
+#~ msgid "Could not access the table directly using its name"
+#~ msgstr "Кестеге атауы бойынша тікелей қатынау жоқ"
+
+#, fuzzy
+#~| msgid ""
+#~| "Table \"%1\" is covered by aliases. Instead of \"%2\", you can write "
+#~| "\"%3\""
+#~ msgid ""
+#~ "Table name <resource>%1</resource> is covered by aliases. Instead of "
+#~ "<resource>%2</resource>, you can write <resource>%3</resource>."
+#~ msgstr ""
+#~ "\"%1\" кестесі бүркеншік атауымен жамылған. \"%2\" орнына \"%3\" деп "
+#~ "жазыңыз"
+
+#~ msgid "Table not found"
+#~ msgstr "Кесте табылмады"
+
+#~ msgid "Ambiguous \"%1.*\" expression"
+#~ msgstr "\"%1.*\" деген бірмағыналы емес"
+
+#, fuzzy
+#~| msgid "More than one \"%1\" table or alias defined"
+#~ msgid "More than one \"%1\" table or alias defined."
+#~ msgstr "\"%1\" деген кесте не бүреншік атауы жалғыз емес"
+
+#, fuzzy
+#~| msgid "Table \"%1\" has no \"%2\" field"
+#~ msgid "Table \"%1\" has no \"%2\" field."
+#~ msgstr "\"%1\" кестеде \"%2\" өрісі жоқ"
+
+#~ msgid "Ambiguous \"%1.%2\" expression"
+#~ msgstr "\"%1.%2\" деген бірмағыналы емес"
+
+#, fuzzy
+#~| msgid "More than one \"%1\" table or alias defined containing \"%2\" field"
+#~ msgid "More than one \"%1\" table or alias defined containing \"%2\" field."
+#~ msgstr ""
+#~ "\"%2\" деген өрісі бар \"%1\" деген кесте не бүреншік атауы жалғыз емес"
+
+#~ msgid "Byte"
+#~ msgstr "Байт"
+
+#~ msgid "Short Integer Number"
+#~ msgstr "Қысқа бүтін сан"
+
+#~ msgid "Integer Number"
+#~ msgstr "Бүтін сан"
+
+#~ msgid "Big Integer Number"
+#~ msgstr "Үлкен бүтін сан"
+
+#~ msgid "Yes/No Value"
+#~ msgstr "Иә/Жоқ"
+
+#~ msgid "Date"
+#~ msgstr "Күні"
+
+#~ msgid "Date and Time"
+#~ msgstr "Күні мен уақыты"
+
+#~ msgid "Time"
+#~ msgstr " Уақыты"
+
+#~ msgid "Single Precision Number"
+#~ msgstr "Дара дәлдік сан"
+
+#~ msgid "Double Precision Number"
+#~ msgstr "Дәлдігі екі есе сан"
+
+#~ msgid "Text"
+#~ msgstr "Мәтін"
+
+#~ msgid "Long Text"
+#~ msgstr "Ұзын мәтін"
+
+#~ msgid "Object"
+#~ msgstr "Нысан"
+
+#~ msgid "Invalid Group"
+#~ msgstr "Дұрыс емес топ"
+
+#~ msgid "Floating Point Number"
+#~ msgstr "Жылжымалы үтірлі сан"
+
+#~ msgid "Yes/No"
+#~ msgstr "Иә/Жоқ"
+
+#~ msgid "Date/Time"
+#~ msgstr "Күні/Уақыты"
+
+#~ msgid ""
+#~ "You can correct data in this record or use \"Cancel record changes\" "
+#~ "function."
+#~ msgstr ""
+#~ "Деректі осы жазуда түзей аласыз немесе \"Жазу өзгерістерінен айну\" "
+#~ "функциясын қолданыңыз."
+
+#~ msgid "Unspecified error encountered"
+#~ msgstr "Белгісіз қате пайда болды"
+
+#~ msgid "identifier was expected"
+#~ msgstr "идентификатор күтілген еді"
+
+#, fuzzy
+#~| msgid "\"%1\" is a reserved keyword"
+#~ msgid "\"%1\" is a reserved keyword."
+#~ msgstr "\"%1\" деген арналған қызметті сөз"
+
+#, fuzzy
+#~| msgid "Syntax Error"
+#~ msgid "Syntax error."
+#~ msgstr "Синтаксис қатесі"
+
+#~ msgid "Error"
+#~ msgstr "Қате"
+
+#, fuzzy
+#~| msgid "Syntax Error near \"%1\""
+#~ msgid "Error near \"%1\"."
+#~ msgstr "\"%1\" маңайында синтаксис қатесі"
+
+#, fuzzy
+#~| msgid "No query statement or schema defined."
+#~ msgid "No query statement specified."
+#~ msgstr "Сұраныс не схема анықталмаған."
+
+#, fuzzy
+#~| msgid "\"*\" could not be used if no tables are specified"
+#~ msgid "\"*\" could not be used if no tables are specified."
+#~ msgstr "кестелер келтірілмесе \"*\" қолданылмайды"
+
+#, fuzzy
+#~| msgid "Invalid alias definition for column \"%1\""
+#~ msgid "Invalid alias definition for column \"%1\"."
+#~ msgstr "\"%1\" бағанға дұрыс бүркеншік атауы берілмеген"
+
+#, fuzzy
+#~| msgid "Invalid \"%1\" column definition"
+#~ msgid "Invalid \"%1\" column definition."
+#~ msgstr "\"%1\" бағанға дұрыс анықтама берілмеген"
+
+#, fuzzy
+#~| msgid "Could not define sorting - no column at position %1"
+#~ msgid "Could not define sorting - no column at position %1."
+#~ msgstr "Реттеу анықталмады - %1-орнында баған жоқ"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not define sorting - column name or alias \"%1\" does not exist"
+#~ msgid ""
+#~ "Could not define sorting - column name or alias \"%1\" does not exist."
+#~ msgstr "Реттеу анықталмады - \"%1\" деген баған не бүркеншік атауы жоқ"
+
+#, fuzzy
+#~| msgctxt ""
+#~| "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
+#~| msgid "expr"
+#~ msgctxt ""
+#~ "short for 'expression' word, e.g. 'expr' (only latin letters, please, no "
+#~ "'.')"
+#~ msgid "expr"
+#~ msgstr "expr"
+
+#~ msgid "Database driver name"
+#~ msgstr "Деректер қоры драйверінің атауы"
+
+#~ msgid "Database user name"
+#~ msgstr "Деректер қорының пайдаланушысы"
+
+#, fuzzy
+#~| msgid "Prompt for password"
+#~ msgid "Prompts for password"
+#~ msgstr "Паролін сұрау"
+
+#~ msgid "Host (server) name"
+#~ msgstr "Хосттың (сервердің) атауы"
+
+#~ msgid "Server's port number"
+#~ msgstr "Сервердің порт нөмірі"
+
+#~ msgid "Server's local socket filename"
+#~ msgstr "Сервердің жергілікті сокет файлы"
+
+#~ msgid "Enter password for %1: "
+#~ msgstr "%1 дегеннің паролі: "
+
+#~ msgid "\"%1\" column requires a value to be entered."
+#~ msgstr "\"%1\" бағаны мәнін келтіруді талап етеді."
+
+#~ msgid "The column's constraint is declared as NOT NULL."
+#~ msgstr "Бұл бағандағысына NULL болуға шектеу қойылған."
+
+#~ msgid "The column's constraint is declared as NOT EMPTY."
+#~ msgstr "Бұл бағандағысына бос болуға шектеу қойылған."
+
+#~ msgid "Record inserting failed."
+#~ msgstr "Жазуын ендіру жаңылысы."
+
+#~ msgid "Record changing failed."
+#~ msgstr "Жазуды өзгерту жаңылысы."
+
+#~ msgid "Record deleting failed."
+#~ msgstr "Жазуды кетіру жаңылысы."
+
+#~ msgid "Message from server:"
+#~ msgstr "Сервердің хабарламасы:"
+
+#~ msgid "SQL statement:"
+#~ msgstr "SQL командасы:"
+
+#~ msgid "Server result:"
+#~ msgstr "Сервер нәтижесі:"
+
+#~ msgid "Test Connection"
+#~ msgstr "Қосылым тексерісі"
+
+#, fuzzy
+#~| msgid "<qt>Testing connection to <b>%1</b> database server...</qt>"
+#~ msgid "Testing connection to <resource>%1</resource> database server..."
+#~ msgstr "<qt><b>%1</b> деректер қоры серверіне қосылу сынағы...</qt>"
+
+#~ msgid ""
+#~ "<qt>Test connection to <b>%1</b> database server failed. The server is "
+#~ "not responding.</qt>"
+#~ msgstr ""
+#~ "<qt><b>%1</b> деректер қоры серверіне сынақ қосылу жаңылысы. Сервер жауап "
+#~ "бермейді.</qt>"
+
+#~ msgid ""
+#~ "<qt>Test connection to <b>%1</b> database server established successfully."
+#~ "</qt>"
+#~ msgstr ""
+#~ "<qt><b>%1</b> деректер қоры серверіне қосылу сынағы сәтті өтті.</qt>"
+
+#~ msgid "Number"
+#~ msgstr "Сан"
+
+#~ msgid "Image"
+#~ msgstr "Кескін"
+
+#~ msgid "\"%1\" value has to be entered."
+#~ msgstr "\"%1\" дегенді келтіру керек."
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr "Байланысын өзгерту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr "Параметрді өзгерту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "Сүрлеуге аудару"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath at points"
+#~ msgstr "Ішкі сүрлеуін нүктеде үзу"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Combine paths"
+#~ msgstr "Сүрлеулерді біріктіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move control point"
+#~ msgstr "Басқару нүктені жылжыту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set fill rule"
+#~ msgstr "Толтыру ережесін орнату"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "Нүктелерді ендіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "Нүктелерді біріктіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move points"
+#~ msgstr "Нүктелерді жылжыту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove points"
+#~ msgstr "Нүктелерді өшіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set point type"
+#~ msgstr "Нүктенің түрін орнату"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reverse paths"
+#~ msgstr "Сүрлеулерді теріс бұру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath"
+#~ msgstr "Ішкі сүрлеуін үзу"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to curves"
+#~ msgstr "Сегментті қисыққа аудару"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to lines"
+#~ msgstr "Сегментті түзуге аудару"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set marker"
+#~ msgstr "Маркерді орнату"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Align shapes"
+#~ msgstr "Қалыптарды туралау"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr "Аясын орнату"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Clip Shape"
+#~ msgstr "Қалыпты бекіту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr "Қалыпты құру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shape"
+#~ msgid_plural "Delete shapes"
+#~ msgstr[0] "Қалыптарды өшіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Distribute shapes"
+#~ msgstr "Қалыптарды үлестіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr "Қалыптарды топтастыру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add shapes to group"
+#~ msgstr "Қалыпты топқа қосу"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Keep Aspect Ratio"
+#~ msgstr "Ара қатынасын сақтау"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Lock shapes"
+#~ msgstr "Қалыптарды бұғаттау"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move shapes"
+#~ msgstr "Қалыптарды жылжыту"
+
+#, fuzzy
+#~| msgid "Rename Shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr "Қалыпты қайта атау"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reorder shapes"
+#~ msgstr "Қалыптарды реттеу"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Shape RunAround"
+#~ msgstr "Қалыпты айналып өтуін өзгерту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Shadow"
+#~ msgstr "Көлеңкесін орнату"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Shear shapes"
+#~ msgstr "Қалыптарды қисайту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Resize shapes"
+#~ msgstr "Қалыптардің өлшемін өзгерту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set stroke"
+#~ msgstr "Штрихті орнату"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr "Мөлдірсіздікті орнату"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shape"
+#~ msgstr "Қалыпты босату"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shapes"
+#~ msgstr "Қалыптарды босату"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr "Қалыптарды ыдырату"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Close subpath"
+#~ msgstr "Ішкі сүрлеуді тұйықтау"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Join subpaths"
+#~ msgstr "Ішкі сүрлеулерін біріктіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove subpath"
+#~ msgstr "Ішкі сүрлеуін өшіру"
+
+#~ msgid "Standard"
+#~ msgstr "Стандартты"
+
+#~ msgid "Lines"
+#~ msgstr "Сызықтар"
+
+#~ msgid "Type:"
+#~ msgstr "Түрі:"
+
+#~ msgid "Tie"
+#~ msgstr "Байланыстыру"
+
+#~ msgid "A connection between two other shapes"
+#~ msgstr "Екі қалып арасындағы байланыс"
+
+#~ msgid "Shows or hides grid"
+#~ msgstr "Торын көрсету/жасыру"
+
+#~ msgid "Simple path shape"
+#~ msgstr "Қарапайым сүрлеу қалыпы"
+
+#~ msgid "A simple path shape"
+#~ msgstr "Қарапайым сүрлеу қалыпы"
+
+#~ msgid "%1 Options"
+#~ msgstr "%1 параметрі"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Shapes"
+#~ msgstr "Қалыптарды орналастыру"
+
+#~ msgid "Active tool: %1"
+#~ msgstr "Белсенді құрал: %1"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Paste Page"
+#~| msgid_plural "Paste Pages"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "Бетт(терд)і орналастыру"
+
+#~ msgid "Nodes"
+#~ msgstr "Түйіндер"
+
+#~ msgid "Extension of lines"
+#~ msgstr "Сызық кеңейтілімдері"
+
+#~ msgid "Bounding box of shape"
+#~ msgstr "Қалыптың төртбұрыш қоршауы"
+
+#~ msgid "Proximity distance where snapping happens"
+#~ msgstr "Жабысу басталатын жақындық"
+
+#~ msgid " px"
+#~ msgstr " пкс"
+
+#~ msgid "Orthogonal"
+#~ msgstr "Ортогоналды"
+
+#~ msgid "Intersection of lines"
+#~ msgstr "Сықтардын қиылысуы"
+
+#~ msgid "Guide lines"
+#~ msgstr "Бағыттауыш сызықтары"
+
+#~ msgid "Embedded svg shape"
+#~ msgstr "Құрамдағы svg қалыпы"
+
+#~ msgid "Create object"
+#~ msgstr "Нысанды құру"
+
+#~ msgid "Pan"
+#~ msgstr "Мәнзаралау"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Segment"
+#~ msgstr "Кесіндіні өзгерту"
+
+#~ msgid "Corner point"
+#~ msgstr "Бұрыш нүктесі"
+
+#~ msgid "Smooth point"
+#~ msgstr "Жазық нүктесі"
+
+#~ msgid "Symmetric Point"
+#~ msgstr "Симметриялы нүкте"
+
+#~ msgid "Make curve point"
+#~ msgstr "Қисықтың нүктесі қылу"
+
+#~ msgid "Make line point"
+#~ msgstr "Түзудің нүктесі қылу"
+
+#~ msgid "Segment to Line"
+#~ msgstr "Кесінді->Түзу"
+
+#~ msgid "Segment to Curve"
+#~ msgstr "Кесінді->Қисық"
+
+#~ msgid "Insert point"
+#~ msgstr "Нүктені ендіру"
+
+#~ msgid "Remove point"
+#~ msgstr "Нүктені өшіру"
+
+#~ msgid "Break at point"
+#~ msgstr "Нүктеде үзу"
+
+#~ msgid "Break at segment"
+#~ msgstr "Кесіндіні үзу"
+
+#~ msgid "Join with segment"
+#~ msgstr "Кесіндімен біріктіру"
+
+#~ msgid "Merge points"
+#~ msgstr "Нүктелерді біріктіру"
+
+#~ msgid "To Path"
+#~ msgstr "Сүрлеуге"
+
+#~ msgid "Line/Curve"
+#~ msgstr "Түзу/Қисық"
+
+#~ msgid "Drag to move handle."
+#~ msgstr "Сүйреп жылжыту тұтқасы."
+
+#~ msgid "Drag to move point. Shift click to change point type."
+#~ msgstr ""
+#~ "Сүйреп жылжыту нүктесі. Нүктенің түрін өзгерту үшін Shift-пен түртіңіз."
+
+#~ msgid "Drag to move control point."
+#~ msgstr "Басқару нүктені жылжыту үшін сүйреңіз."
+
+#~ msgid ""
+#~ "Drag to change curve directly. Double click to insert new path point."
+#~ msgstr ""
+#~ "Кисықты өзгерту үшін оны сүйреңіз. Сүрлеудің жаңа нүктесін қою үшін қос "
+#~ "түртім жасаңыз."
+
+#~ msgid "Press B to break path at selected point."
+#~ msgstr "Сүрлеуді таңдаған нүктеде үзу үшін B-ні басыңыз."
+
+#~ msgid "Press B to break path at selected segments."
+#~ msgstr "Сүрлеуді таңдаған кесіндіде үзу үшін B-ні басыңыз."
+
+#, fuzzy
+#~| msgid "Path editing tool"
+#~ msgid "Path editing"
+#~ msgstr "Сүрлеуді өңдеу құралы"
+
+#~ msgid "Zoom"
+#~ msgstr "Ұлғайту/кішірейту"
+
+#~ msgid "Zoom In"
+#~ msgstr "Ұлғайту"
+
+#~ msgid "Zoom Out"
+#~ msgstr "Кішірейту"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Convert To Path"
+#~ msgstr "Сүрлеуге аудару"
+
+#~ msgid "Scripts"
+#~ msgstr "Скрипттер"
+
+#~ msgid "Script Manager"
+#~ msgstr "Скрипт менеджері"
+
+#~ msgid "Execute Script File..."
+#~ msgstr "Скрипт файлын орындау..."
+
+#~ msgid "Script Manager..."
+#~ msgstr "Скрипт менеджері..."
+
+#~ msgid "Execute Script File"
+#~ msgstr "Скрипт файлын орындау"
+
+#~ msgid "Install Script Package"
+#~ msgstr "Скрипт дестесін орнату"
+
+#~ msgid "Could not read the package \"%1\"."
+#~ msgstr "\"%1\" дестесі оқылмайды."
+
+#~ msgid "The package \"%1\" does not contain a valid install.rc file."
+#~ msgstr "\"%1\" дестесінің дұрыс install.rc файлы жоқ."
+
+#~ msgid "Failed to parse the install.rc file at package \"%1\"."
+#~ msgstr "\"%1\" дестесінің install.rc файлының талдау жаңылысы."
+
+#~ msgid ""
+#~ "Failed to determinate location where the package \"%1\" should be "
+#~ "installed to."
+#~ msgstr "\"%1\" дестесінің орнату орнын анықтау жаңылысы."
+
+#~ msgid ""
+#~ "A script package with the name \"%1\" already exists. Replace this "
+#~ "package?"
+#~ msgstr "\"%1\" деп аталған скрипт дестесі бар ғой. Десте ауыстырылсын ба?"
+
+#~ msgid "Replace"
+#~ msgstr "Ауыстыру"
+
+#~ msgid ""
+#~ "Could not uninstall this script package. You may not have sufficient "
+#~ "permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Бұл скрипт дестесі орнатудан шығарылмайды. \"%1\" қапшығын өшіру "
+#~ "рұқсатыңыз жеткіліксіз болуы мүмкін."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\" since the script is not "
+#~ "installed."
+#~ msgstr ""
+#~ "\"%1\" скрипт дестесі орнатудан шығарылмайды, өйткені ол орнатылмаған."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\". You may not have "
+#~ "sufficient permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "\"%1\" скрипт дестесі орнатудан шығарылмайды. \"%1\" қапшығын өшіру "
+#~ "рұқсатыңыз жеткіліксіз болуы мүмкін."
+
+#~ msgid "Save"
+#~ msgstr "Сақтау"
+
+#~ msgid ""
+#~ "<qt>This wizard will guide you through the proccess of adding a new "
+#~ "resource to your scripts.</qt>"
+#~ msgstr ""
+#~ "<qt>Бұл шебер скрипттеріңізге жаңа ресурсты қосып беруге көмектеседі.</qt>"
+
+#~ msgid "Add script file"
+#~ msgstr "Скрипт файлын қосу"
+
+#~ msgid "Add collection folder"
+#~ msgstr "Жинақтау қапшығын қосу"
+
+#~ msgid "Install script package file"
+#~ msgstr "Скрипт десте файлын орнату"
+
+#~ msgid "Install online script package"
+#~ msgstr "Скрипт дестесін онлайн орнату"
+
+#~ msgid "Add"
+#~ msgstr "Қосу"
+
+#~ msgid "Script"
+#~ msgstr "Скрипт"
+
+#~ msgid "Collection"
+#~ msgstr "Жинаққа"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master slide"
+#~ msgstr "Үлгі слайдты өзгерту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master page"
+#~ msgstr "Үлгі бетті өзгерту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "Бетте орналасуы"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display master background"
+#~ msgstr "Үлгі аясын көрсету"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display slide background"
+#~ msgstr "Слайдтың аясын көрсету"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display page background"
+#~ msgstr "Беттің аясын көрсету"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Show master shapes"
+#~ msgstr "Жетекші қалыптарды көрсету"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Hide master shapes"
+#~ msgstr "Жетекші қалыптарды жасыру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] "Слайдт(ард)ы өшіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "Бетт(ерд)і өшіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr "Слайдты ендіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr "Бетті ендіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "Слайдт(ард)ы жылжыту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] "Бетт(ерд)і жылжыту"
+
+#~ msgid "Configure"
+#~ msgstr "Баптау"
+
+#~ msgid "Misc"
+#~ msgstr "Түрлі басқа"
+
+#~ msgid "Grid"
+#~ msgstr "Тор"
+
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "Құжат"
+
+#~ msgid "Document Settings"
+#~ msgstr "Құжат параметрлері"
+
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "Авторы"
+
+#~ msgid "Author"
+#~ msgstr "Авторы"
+
+#~ msgid "Select a master slide design:"
+#~ msgstr "Слайдтың үлгі құрылымы:"
+
+#~ msgid "Master Slide"
+#~ msgstr "Үлгі слайды"
+
+#~ msgid "Select a master page design:"
+#~ msgstr "Беттің үлгі құрылымы:"
+
+#~ msgid "Master Page"
+#~ msgstr "Үлгі бет"
+
+#~ msgid "Slide %1"
+#~ msgstr "%1-слайд"
+
+#~ msgid "Page  %1"
+#~ msgstr "%1-бет"
+
+#~ msgid "Layer"
+#~ msgstr "Қабаты"
+
+#~ msgid "Group"
+#~ msgstr "Тобы"
+
+#~ msgid "Shape"
+#~ msgstr "Қалып"
+
+#, fuzzy
+#~| msgid "Rename Slide"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "Слайдтың атауын өзгерту"
+
+#, fuzzy
+#~| msgid "Rename Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "Беттің атауын өзгерту"
+
+#, fuzzy
+#~| msgid "Rename Layer"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "Қабаттің атауын өзгерту"
+
+#~ msgid "Slide"
+#~ msgstr "Слайд"
+
+#~ msgid "Visible"
+#~ msgstr "Көрінетін"
+
+#~ msgid "Locked"
+#~ msgstr "Бұғатталған"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reparent shapes"
+#~ msgstr "Қалыптарды қайта еншілеу"
+
+#~ msgid "&Move Here"
+#~ msgstr "Мұнда &жылжыту"
+
+#~ msgid "&Copy Here"
+#~ msgstr "Мұнда &көшірмелеу"
+
+#~ msgid "C&ancel"
+#~ msgstr "Қ&айту"
+
+#~ msgid "Document"
+#~ msgstr "Құжат"
+
+#~ msgid "Add a new slide or layer"
+#~ msgstr "Жаңа слайдты не қабатты қосу"
+
+#~ msgid "Add a new page or layer"
+#~ msgstr "Жаңа бетті не қабатты қосу"
+
+#~ msgid "Page"
+#~ msgstr "Бет"
+
+#~ msgid "Delete selected objects"
+#~ msgstr "Таңдалған нысандарды жою"
+
+#~ msgid "Raise selected objects"
+#~ msgstr "Таңдалған нысандарды алға шығару"
+
+#~ msgid "Lower selected objects"
+#~ msgstr "Таңдалған нысандарды артқа шығару"
+
+#~ msgid "Minimal View"
+#~ msgstr "Ықшам көрініс"
+
+#~ msgid "Detailed View"
+#~ msgstr "Егжей-тегжейлі көрініс"
+
+#~ msgid "Thumbnail View"
+#~ msgstr "Нобайлар көрінісі"
+
+#~ msgid "View mode"
+#~ msgstr "Көрсету режімі"
+
+#~ msgid "Enter the name of the new layer:"
+#~ msgstr "Жаңа қабаттың атауы:"
+
+#~ msgid "New Layer"
+#~ msgstr "Жаңа қабат"
+
+#~ msgid "New layer"
+#~ msgstr "Жаңа қабат"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "Қабатты құру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "Қабатты өшіру"
+
+#~ msgid "Could not delete all layers. At least one layer is required."
+#~ msgstr "Бүкіл қабаттарды өшіруге болмайды. Кемінде біреуі қалу керек."
+
+#~ msgid "Error deleting layers"
+#~ msgstr "Қабаттарды өшіру қатесі"
+
+#~ msgid "Add a new slide"
+#~ msgstr "Жаңа слайдты қосу"
+
+#~ msgid "Add a new page"
+#~ msgstr "Жаңа бетті қосу"
+
+#~ msgid "Page %1"
+#~ msgstr "%1-бет"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] "Слайдт(ард)ы орналастыру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] "Бетт(терд)і орналастыру"
+
+#~ msgid "Tools"
+#~ msgstr "Құралдар"
+
+#~ msgid "D&elete"
+#~ msgstr "Ө&шіру"
+
+#~ msgid "Show Master Pages"
+#~ msgstr "Үлгі беттерін көрсету"
+
+#~ msgid "Show Rulers"
+#~ msgstr "Өлшегіштерін көрсету"
+
+#~ msgid "Show/hide the view's rulers"
+#~ msgstr "Көріністің өлшегіштерін көрсету/жасыру"
+
+#~ msgid "Insert Page"
+#~ msgstr "Бетті ендіру"
+
+#~ msgid "Insert a new page after the current one"
+#~ msgstr "Назардағынан кейін жаңа бетті ендіру"
+
+#~ msgid "Copy Page"
+#~ msgstr "Бетті көшіріп алу"
+
+#~ msgid "Copy the current page"
+#~ msgstr "Назардағы бетті көшіріп алу"
+
+#~ msgid "Delete Page"
+#~ msgstr "Бетті алып тастау"
+
+#~ msgid "Delete the current page"
+#~ msgstr "Назардағы бетті өшіру"
+
+#~ msgid "Master Page..."
+#~ msgstr "Үлгі бет..."
+
+#~ msgid "Page Layout..."
+#~ msgstr "Беттің пішімі..."
+
+#~ msgid "Variable"
+#~ msgstr "Айнымалы"
+
+#~ msgid "Import Document..."
+#~ msgstr "Құжатты импорттау"
+
+#~ msgid "Configure..."
+#~ msgstr "Баптау..."
+
+#~ msgid "Import Slideshow"
+#~ msgstr "Слайд-шоуды импорттау"
+
+#~ msgid "Import Document"
+#~ msgstr "Құжатты импорттау"
+
+#~ msgid ""
+#~ "Could not import\n"
+#~ "%1"
+#~ msgstr ""
+#~ "%1\n"
+#~ "импортталмады"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr "Бет пішімін өзгерту"
+
+#~ msgid "Set image ..."
+#~ msgstr "Кескінің орнату..."
+
+#~ msgid "Background"
+#~ msgstr "Аясы"
+
+#~ msgid "Page Background"
+#~ msgstr "Беттің аясын"
+
+#~ msgid "Page Design"
+#~ msgstr "Беттің құрылымы"
+
+#~ msgid "Slide Design"
+#~ msgstr "Слайд құрылымы"
+
+#~ msgid "Use background of master page"
+#~ msgstr "Үлгі слайд аясын қолдану"
+
+#~ msgid "Use background of master slide"
+#~ msgstr "Үлгі слайд аясы қолданылсын"
+
+#~ msgid "Display shapes of master page"
+#~ msgstr "Үлгі бетттің қалыптарын көрсету"
+
+#~ msgid "Display shapes of master slide"
+#~ msgstr "Үлгі слайдтың қалыптарын көрсету"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change slide background image"
+#~ msgstr "Үлгі слайдтың кескіндерін көрсету"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page background image"
+#~ msgstr "Беттің ая кескінін өзгерту"
+
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "%1/%2 үлгі слайды"
+
+#~ msgid "Slide %1/%2"
+#~ msgstr "%1/%2-слайды"
+
+#~ msgid "Master Page %1/%2"
+#~ msgstr "%1/%2 үлгі беті"
+
+#~ msgid "Page %1/%2"
+#~ msgstr "%1/%2 беті"
+
+#, fuzzy
+#~| msgid "Check"
+#~ msgid "Check Box"
+#~ msgstr "Белгісі"
+
+#~ msgid "Field"
+#~ msgstr "Өріс"
+
+#~ msgid "Label"
+#~ msgstr "Жарлық"
+
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgid "Section Editor"
+#~ msgstr "Бөлімдер редакторы"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "Тізімді өзгерту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "Стильдерін өзгерту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "Өшіру"
+
+#~ msgid "Key Press"
+#~ msgstr "Пернені басу"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "Мәтін"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "Бағанды өшіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "Қатарды өшіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "Астылық сілтемені ендіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr "Соңғылық сілтемені ендіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Right"
+#~ msgstr "Оң жағына бағанды ендіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr "Сол жағына бағанды ендіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Below"
+#~ msgstr "Төменде қатарды ендіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "Жоғарда қатарды ендіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List Numbering"
+#~ msgstr "Тізім нөмірлеуін өзгерту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "Пішімдеу"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Direct Paragraph Formatting"
+#~ msgstr "Абзацты тікелей пішімдеу"
+
+#, fuzzy
+#~| msgid "Rename Shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr "Қалыпты қайта атау"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr "Бағанның енін шақтау"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Row Height"
+#~ msgstr "Жол биіктігін келтіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "Мәтін деп орналастыру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "Орналастыру"
+
+#~ msgid "Index Reference"
+#~ msgstr "Индекстің сілтемесі"
+
+#~ msgid "Text Reference"
+#~ msgstr "Мәтін сілтемесі"
+
+#~ msgid "Please create an index to reference first."
+#~ msgstr "Алдымен сілтейтін индексін таңдау керек."
+
+#~ msgid "Select the index you want to reference"
+#~ msgstr "Сілтейтін индексін таңдау"
+
+#~ msgid "Found 1 match"
+#~ msgid_plural "Found %1 matches"
+#~ msgstr[0] "%1 сәйкестік табылды"
+
+#~ msgid "Found no match"
+#~ msgstr "Сәйкестік табылған жоқ"
+
+#~ msgid ""
+#~ "Found no match\n"
+#~ "\n"
+#~ "No text was replaced"
+#~ msgstr ""
+#~ "Іздегені табылған жоқ\n"
+#~ "\n"
+#~ "Ештеңе ауыстырылмады"
+
+#~ msgid "1 replacement made"
+#~ msgid_plural "%1 replacements made"
+#~ msgstr[0] "%1 ауыстыру жасалды"
+
+#~ msgid "Replace %1 with %2?"
+#~ msgstr "%2 деген %1 дегенді ауыстырсын ба?"
+
+#, fuzzy
+#~| msgid "Group Sections"
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "Топ бөлімдері"
+
+#~ msgctxt "Underline Style"
+#~ msgid "None"
+#~ msgstr "Жоқ"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "Жалғыз"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "Қосарлы"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "New Paragraph"
+#~ msgstr "Жаңа абзац"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "Бетбелгіні қосу"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Add Citation"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "Дәйексөзді қосу"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "Индексті ендіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "Айнымалыны ендіру"
+
+#, fuzzy
+#~| msgid "Key Press"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Key Press"
+#~ msgstr "Пернені басу"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "Аяктау белгісін ендіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "Кестені ендіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "Ұяшықтарды біріктіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "Ұяшықтарды бөлу"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr "Кестенің енін шақтау"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Border Formatting"
+#~ msgstr "Шегінің пішімін өзгерту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Мазмұны тізімін ендіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr "Мазмұны тізімін өзгерту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Библиографияні ендіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "Дәйексөзді қосу"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Typing"
+#~ msgstr "Теру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr "Қалың"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "Көлбеу"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "Асты сызық"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr "Сызылып тастаған"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr "Туралауын өзгерту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr "Тігінен туралау"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "Шегінуін азайту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "Шегінуін үлкейту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "Қаріп өлшемін кішірейту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "Қаріп өлшемін үлкейту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr "Қаріпін орнату"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr "Қаріптің өлшемін таңдау"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr "Аясының түсін орнату"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Text Color"
+#~ msgstr "Мәтінің түсін орнату"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr "Таңбалар стилін орнату"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Paragraph Style"
+#~ msgstr "Абзац стилін орнату"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "Пішімі"
+
+#~ msgid "Default"
+#~ msgstr "Әдетті"
+
+#~ msgctxt "Default text for undo action"
+#~ msgid "Undo"
+#~ msgstr "Амалдан қайту"
+
+#~ msgid "Undo %1"
+#~ msgstr "%1 амалынан қайту"
+
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "Қайтудан айну"
+
+#~ msgid "Redo %1"
+#~ msgstr "%1 амалын қайталау"
+
+#, fuzzy
+#~| msgid "Empty"
+#~ msgid "<empty>"
+#~ msgstr "Бос"
+
+#~ msgid "Redo"
+#~ msgstr "Қайтудан айну"
+
+#~ msgid "Undo"
+#~ msgstr "Амалдан қайту"
+
+#~ msgid "&File"
+#~ msgstr "&Файл"
+
+#~ msgid "&Settings"
+#~ msgstr "&Баптау"
+
+#~ msgid "File"
+#~ msgstr "Файл"
+
+#~ msgid "Add new author profile (starts out as a copy of current)"
+#~ msgstr "Жаңа автордың профилі (қазіргісінің көшірмесі болып басталады)"
+
+#~ msgid "Delete the author profile"
+#~ msgstr "Автордың профилін өшіру"
+
+#~ msgid "Default Author Profile"
+#~ msgstr "Әдетті автордың профилі"
+
+#~ msgid "Name (not duplicate or blank name):"
+#~ msgstr "Атауы (бос емес және қайталанбайтын)"
+
+#~ msgid "Name of Profile"
+#~ msgstr "Профилінің атауы"
+
+#~ msgid "Name:"
+#~ msgstr "Атауы:"
+
+#~ msgid "Initials:"
+#~ msgstr "Инициалдары:"
+
+#~ msgid "Title:"
+#~ msgstr "Атауы:"
+
+#~ msgid "Position:"
+#~ msgstr "Мансабы:"
+
+#~ msgid "Company:"
+#~ msgstr "Компаниясы:"
+
+#~ msgid "Email:"
+#~ msgstr "Эл.пошта:"
+
+#~ msgid "Telephone (home):"
+#~ msgstr "Тел.(үй):"
+
+#~ msgid "Telephone (work):"
+#~ msgstr "Тел.(жұмыс):"
+
+#~ msgid "Fax:"
+#~ msgstr "Факсы:"
+
+#~ msgid "Street:"
+#~ msgstr "Көшесі:"
+
+#~ msgid "City:"
+#~ msgstr "Қала:"
+
+#~ msgid "Country:"
+#~ msgstr "Ел:"
+
+#~ msgid "No autosave"
+#~ msgstr "Автосақтамау"
+
+#~ msgctxt "unit symbol for minutes, leading space as separator"
+#~ msgid " min"
+#~ msgstr " мин"
+
+#~ msgid "Autosave interval:"
+#~ msgstr "Автосақтау аралығы:"
+
+#~ msgid "Create backup file:"
+#~ msgstr "Сақтық көшірмені жасау:"
+
+#~ msgid "Show grid:"
+#~ msgstr "Торды көрсету:"
+
+#~ msgid "Snap to grid:"
+#~ msgstr "Торға келтіру"
+
+#~ msgid "Grid color:"
+#~ msgstr "Тордың түсі:"
+
+#~ msgid "Spacing"
+#~ msgstr "Аралығы"
+
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "&Жатығынан"
+
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "&Тігінен"
+
+#~ msgid "Units:"
+#~ msgstr "Бірліктері:"
+
+#~ msgid "Handle radius:"
+#~ msgstr "Түтқаның радиусы"
+
+#~ msgid "Grab sensitivity:"
+#~ msgstr "Аулау шеңбері:"
+
+#~ msgid "Paste offset:"
+#~ msgstr "Орналастырудың ығысуы:"
+
+#~ msgid "Paste at Cursor:"
+#~ msgstr "Меңзеген жерге орналастыру"
+
+#~ msgid "Only print and exit"
+#~ msgstr "Тек басып шығу"
+
+#~ msgid "Open a new document with a template"
+#~ msgstr "Үлгі бойынша жаңа құжатты ашу"
+
+#~ msgid "Override display DPI"
+#~ msgstr "Дисплейдің айырымдылығын басып тастау"
+
+#~ msgid "Only export to PDF and exit"
+#~ msgstr "Тек PDF-ті экспорттап шығу"
+
+#~ msgid "Filename for export-pdf"
+#~ msgstr "PDF файлының атауы"
+
+#~ msgid "just load the file and then exit"
+#~ msgstr "тек файлды жүктеу де шығу"
+
+#~ msgid "load the file, show the window and progressbar and then exit"
+#~ msgstr "файлды жүктеу, терезесін және барыс жолағын көрсету де шығу"
+
+#~ msgid "Filename to write profiling information into."
+#~ msgstr "Профильдеу ақпаратты жазатын файлдың атауы"
+
+#~ msgid "Load a file and save it as an ODF file. Meant for debugging."
+#~ msgstr "Файлды жүктеп алып ODF түрінде сақтау. Жөндеуге керек."
+
+#~ msgid "Calligra"
+#~ msgstr "Calligra"
+
+#, fuzzy
+#~| msgid "Creation error"
+#~ msgid "%1: Critical Error"
+#~ msgstr "Құру қатесі"
+
+#~ msgid "No template found for: %1"
+#~ msgstr "Келесі үшін үлгі табылмады: %1"
+
+#~ msgid "Too many templates found for: %1"
+#~ msgstr "Келесі үшін үлгілер тым көп: %1"
+
+#~ msgid "Template %1 failed to load."
+#~ msgstr "%1 үлгісі жүктелмеді."
+
+#~ msgctxt "@title:window"
+#~ msgid "Recover Files"
+#~ msgstr "Файлдарды қалпына келтіру"
+
+#~ msgid "The following autosave file can be recovered:"
+#~ msgstr "Келесі автосақталатын файл қалпына келтіруге келеді:"
+
+#~ msgid "The following autosave files can be recovered:"
+#~ msgstr "Келесі автосақталатын файлдар қалпына келтіруге келеді:"
+
+#~ msgid "Always use this template at application start up"
+#~ msgstr "Бастағанда әрқашанда осы үлгіні қолдану"
+
+#~ msgid "Always use this template"
+#~ msgstr "Әрқашан осы үлгі қолданылсын"
+
+#~ msgid "Making backup..."
+#~ msgstr "Сақтық көшірмесін жасау..."
+
+#~ msgid "Saving..."
+#~ msgstr "Сақтау..."
+
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "%1\n"
+#~ "сақталмады"
+
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "%1 сақталмады\n"
+#~ "Себебі: %2"
+
+#~ msgid "Document <i>%1</i> saved"
+#~ msgstr "<i>%1</i> құжаты сақталды"
+
+#~ msgid ""
+#~ "The password of this encrypted document is not known. Autosave aborted! "
+#~ "Please save your work manually."
+#~ msgstr ""
+#~ "Бұл шифрланған құжаттың паролі беймәлім. Автосақтау доғарылды! Қолмен "
+#~ "сақтап көріңіз."
+
+#~ msgid "Autosaving..."
+#~ msgstr "Автосақтау..."
+
+#~ msgid "Error during autosave! Partition full?"
+#~ msgstr "Автосақтау кезіндегі қате! Дискі толы?"
+
+#~ msgid "Could not create the file for saving"
+#~ msgstr "Сақтау үшін файл құрылмады"
+
+#~ msgid "Not able to write '%1'. Partition full?"
+#~ msgstr "'%1' жазылмады. Дискі толы ма?"
+
+#~ msgid "Not able to write RDF metadata. Partition full?"
+#~ msgstr "RDF метадерегі жазылмады. Дискі бөлімі толы ма?"
+
+#~ msgid "Error while trying to write '%1'. Partition full?"
+#~ msgstr "'%1' жазу кезіндегі қате. Дискі толы ма?"
+
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Жарамсыз URL\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "An autosaved file exists for this document.\n"
+#~ "Do you want to open it instead?"
+#~ msgstr ""
+#~ "Бұл құжаттың автосақтталған файлы бар.\n"
+#~ "Мынаның орнына соны ашып көресіз бе?"
+
+#~ msgid "The file %1 does not exist."
+#~ msgstr "%1 деген файл жоқ."
+
+#~ msgid "Opening Document"
+#~ msgstr "Құжатты ашу..."
+
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "Сүзгі плагині құрылмады"
+
+#~ msgid "File not found"
+#~ msgstr "Файл табылмады"
+
+#~ msgid "Cannot create storage"
+#~ msgstr "Жинақтау құрылмады"
+
+#~ msgid "Bad MIME type"
+#~ msgstr "MIME түрі дұрыс емес"
+
+#~ msgid "Format not recognized"
+#~ msgstr "Танылмайтын пішім"
+
+#~ msgid "Not implemented"
+#~ msgstr "Іске асырылмаған"
+
+#~ msgid "Parsing error"
+#~ msgstr "Талдау қатесі"
+
+#~ msgid "Document is password protected"
+#~ msgstr "Құжат паролімен қорғалған"
+
+#~ msgid "Invalid file format"
+#~ msgstr "Жарамсыз файл пішімі"
+
+#~ msgid "Internal error"
+#~ msgstr "Ішкі қате"
+
+#~ msgid "Out of memory"
+#~ msgstr "Жад тапшылығы"
+
+#~ msgid "Empty Filter Plugin"
+#~ msgstr "Бос сүзгі плагині"
+
+#~ msgid "Trying to load into the wrong kind of document"
+#~ msgstr "Жарамсыз құжат түрін жүктеп алу әрекеті"
+
+#~ msgid "Failed to download remote file"
+#~ msgstr "Қашықтағы файлды жүктеп алу жаңылысы"
+
+#~ msgid "Unknown error"
+#~ msgstr "Беймәлім қате"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open\n"
+#~| "%2.\n"
+#~| "Reason: %1"
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr ""
+#~ "%2\n"
+#~ "ашылмады.\n"
+#~ "Себебі: %1"
+
+#~ msgid "Document <i>%1</i> loaded"
+#~ msgstr "<i>%1</i> құжаты жүктелді"
+
+#~ msgid "Could not find %1"
+#~ msgstr "%1 табылмады"
+
+#~ msgid ""
+#~ "Parsing error in %1 at line %2, column %3\n"
+#~ "Error message: %4"
+#~ msgstr ""
+#~ "%1 дегеннің %2-жолында, %3-бағанында талдау қатесі\n"
+#~ "Қате хабарламасы: %4"
+
+#~ msgid "%1 is not a file."
+#~ msgstr "%1 деген файл емес."
+
+#~ msgid "Could not open the file for reading (check read permissions)."
+#~ msgstr "Файл оқуға ашылмады (оқу рұқсатын тексеріңіз)."
+
+#~ msgid "Could not read the beginning of the file."
+#~ msgstr "Файлдың басы оқылмады."
+
+#~ msgid ""
+#~ "parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Негізгі құжаттың %1-жолында, %2-бағанында талдау қатесі\n"
+#~ "Қате хабарламасы: %3"
+
+#~ msgid "Not a valid Calligra file: %1"
+#~ msgstr "Дұрыс Calligra файлы емес: %1"
+
+#~ msgid "Invalid document: no file 'maindoc.xml'."
+#~ msgstr "Жарамсыз құжат: 'maindoc.xml' файлы жоқ."
+
+#~ msgid ""
+#~ "Document <i>%1</i> contains several versions. Go to File->Versions to "
+#~ "open an old version."
+#~ msgstr ""
+#~ "<i>%1</i> құжаттың бірнеше нұсқасы бар. Ескі нұсқасын ашу үшін Файлға өту "
+#~ "-> Нұсқалары дегенге барыңыз."
+
+#~ msgid "Untitled"
+#~ msgstr "Аталмаған"
+
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr "<p><b>'%1'</b> құжаты өзгерілген.</p><p>Сақтауды қалайсыз ба?</p>"
+
+#~ msgid "Internal error: saveXML not implemented"
+#~ msgstr "Ішкі қатесі: saveXML іске асырылмаған"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "%1\n"
+#~ "ашылмады"
+
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "%1 ашылмады\n"
+#~ "Себебі: %2"
+
+#~ msgid "a word processing"
+#~ msgstr "мәтінді өңдеу"
+
+#~ msgid "a spreadsheet"
+#~ msgstr "электрондық кесте"
+
+#~ msgid "a presentation"
+#~ msgstr "презентация"
+
+#~ msgid "a chart"
+#~ msgstr "диаграмма"
+
+#~ msgid "a drawing"
+#~ msgstr "сурет"
+
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr ""
+#~ "\"%1\" құжаты өзгертілген.\n"
+#~ "Сақтамақсыз ба, әлде ысырып тастамақсыз ба?"
+
+#~ msgid "Close Document"
+#~ msgstr "Құжатты жабу"
+
+#~ msgid "%1 %"
+#~ msgstr "%1 %"
+
+#~ msgid "No"
+#~ msgstr "Жоқ"
+
+#~ msgid "Yes"
+#~ msgstr "Иә"
+
+#~ msgid "Could not export file."
+#~ msgstr "Файл экспорталмайды."
+
+#~ msgid "Missing Export Filter"
+#~ msgstr "Экспорт сүзгісі жоқ"
+
+#~ msgid ""
+#~ "Could not import file of type\n"
+#~ "%1"
+#~ msgstr ""
+#~ "%1\n"
+#~ "түрдегі файл импортталмайды"
+
+#~ msgid "Missing Import Filter"
+#~ msgstr "Импорт сүзгісі жоқ"
+
+#~ msgid "Choose Filter"
+#~ msgstr "Сүзгіні таңдау"
+
+#~ msgid "Case Sensitive"
+#~ msgstr "Үлкен-кішілігін ескеріп"
+
+#~ msgid "Match cases when searching"
+#~ msgstr "Үлкен-кішілігін ескеріп іздеу"
+
+#~ msgid "Match only whole words"
+#~ msgstr "Тұтас сөздерді ғана іздеу"
+
+#~ msgid "Whole Words Only"
+#~ msgstr "Тек бүтін сөздерді"
+
+#~ msgid "Find from Cursor"
+#~ msgstr "Меңзерден бастап іздеу"
+
+#~ msgid "Start searching from the current cursor"
+#~ msgstr "Іздеуді меңзер тұрған жерден бастау"
+
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "Іздейтіні:"
+
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "Келесі"
+
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "Алдыңғы"
+
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "Параметрлері"
+
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "Ауыстыру"
+
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "Ауыстыру"
+
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "Бүкілін ауыстыру"
+
+#~ msgctxt "Total number of matches"
+#~ msgid "1 match found"
+#~ msgid_plural "%1 matches found"
+#~ msgstr[0] "%1 сәйкестік табылды"
+
+#~ msgid "No matches found"
+#~ msgstr "Сәйкестік табылмады"
+
+#~ msgid "Search hit bottom, continuing from top."
+#~ msgstr "Іздеу соңына жетіп, басынан жалғастырылды."
+
+#~ msgid "Search hit top, continuing from bottom."
+#~ msgstr "Іздеу басына жетіп, соңынан жалғастырылды."
+
+#~ msgid "%1 unsaved document (%2)"
+#~ msgstr "%1 сақталмаған құжат (%2)"
+
+#~ msgid "Export as PDF..."
+#~ msgstr "PDF-ке экспорттау..."
+
+#~ msgid "Reload"
+#~ msgstr "Қайта жүктеу"
+
+#~ msgid "Versions..."
+#~ msgstr "Нұсқалар..."
+
+#~ msgid "Open ex&isting Document as Untitled Document..."
+#~ msgstr "&Бар құжатты Аталмаған деп ашу..."
+
+#~ msgid "E&xport..."
+#~ msgstr "Э&кспоттау..."
+
+#~ msgid "En&crypt Document"
+#~ msgstr "Құжатты шиф&рлау"
+
+#~ msgid "&Uncompress to Directory"
+#~ msgstr "Қапшыққа &тарқату"
+
+#~ msgid "&New View"
+#~ msgstr "&Жаңа көрініс"
+
+#~ msgid "Document Information"
+#~ msgstr "Құжат туралы мәлімет"
+
+#~ msgid "Full Screen Mode"
+#~ msgstr "Толық экранды режім"
+
+#~ msgid "Show Dockers"
+#~ msgstr "Докерлерін көрсету"
+
+#, fuzzy
+#~| msgid "Show Dockers"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "Докерлерін көрсету"
+
+#~ msgid "Dockers"
+#~ msgstr "Докерлері"
+
+#~ msgid "(write protected)"
+#~ msgstr "(жазудан қорғалған)"
+
+#~ msgid "Save as %1"
+#~ msgstr "%1 деп сақтау"
+
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "%1 (беймәлім файл түрі)"
+
+#~ msgid ""
+#~ "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
+#~ "want to save in this format?</qt>"
+#~ msgstr ""
+#~ "<qt>%1 деп сақтағанда кейбір пішімдеулер жоғалуға ықтимал.<p>Сонда да осы "
+#~ "пішімінде сақтай берейік пе?</qt>"
+
+#~ msgid "Confirm Save"
+#~ msgstr "Сақтау құпталсын"
+
+#~ msgid ""
+#~ "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you "
+#~ "still want to export to this format?</qt>"
+#~ msgstr ""
+#~ "<qt>%1 дегенге экспорттау кейбір пішімдеулерін жоғалтуға апаруы мүмкін."
+#~ "<p>Сонда да осы пішімінге экспорттала берсін ба?</qt>"
+
+#~ msgid "Confirm Export"
+#~ msgstr "Экспорттауды құптау"
+
+#~ msgid "untitled"
+#~ msgstr "аталмаған"
+
+#~ msgid "Open Document"
+#~ msgstr "Құжатты ашу"
+
+#~ msgid "Export as PDF"
+#~ msgstr "PDF қылып экспорттау"
+
+#~ msgid "Cannot export to the specified file"
+#~ msgstr "Келтірілген файл экспорттауға келмеді"
+
+#~ msgid "Document - %1"
+#~ msgstr "Құжат - %1"
+
+#~ msgid ""
+#~ "You will lose all changes made since your last save\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "Соңғы сақталғаннан кейінгі жасалған өзгерістерді жоғалтасыз\n"
+#~ "Жалғастырасыз ба?"
+
+#~ msgid "Warning"
+#~ msgstr "Ескерту"
+
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "%1 құралдар панелін көрсету"
+
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "%1 құралдар панелін жасыру"
+
+#~ msgid "Open Existing Document"
+#~ msgstr "Бар құжатты ашу"
+
+#~ msgid "Recent Documents"
+#~ msgstr "Жуырдағы құжаттар"
+
+#~ msgid "Custom Document"
+#~ msgstr "Өзіндік құжаты"
+
+#~ msgid "Stop"
+#~ msgstr "Тоқтату"
+
+#~ msgid "Printing"
+#~ msgstr "Басып шығару"
+
+#~ msgid "Printing done"
+#~ msgstr "Басып шығарылды"
+
+#~ msgid "Close"
+#~ msgstr "Жабу"
+
+#~ msgid "Stopped"
+#~ msgstr "Тоқтап тұр"
+
+#~ msgid "Open This Document"
+#~ msgstr "Осы құжатты ашу"
+
+#~ msgctxt "File modification date and time. %1 is date time"
+#~ msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Өзгертілген:</b></td><td>%1</td></tr>"
+
+#~ msgctxt "File access date and time. %1 is date time"
+#~ msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Ашылған:</b></td><td>%1</td></tr>"
+
+#~ msgid "Show Guides"
+#~ msgstr "Бағыттауыштарын көрсету"
+
+#~ msgid "Shows or hides guides"
+#~ msgstr "Бағыттауыштарын көрсету/жасыру"
+
+#~ msgid "Create Template"
+#~ msgstr "Үлгіні құру"
+
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "Атауы:"
+
+#~ msgid "Group:"
+#~ msgstr "Тобы:"
+
+#~ msgid "&Add Group..."
+#~ msgstr "Топты қ&осу..."
+
+#~ msgid "&Remove"
+#~ msgstr "Ө&шіру"
+
+#~ msgid "Picture"
+#~ msgstr "Сурет"
+
+#~ msgid "&Preview"
+#~ msgstr "&Карап-шығу"
+
+#~ msgid "Custom:"
+#~ msgstr "Өзгеше:"
+
+#~ msgid "&Select..."
+#~ msgstr "&Таңдау..."
+
+#~ msgid "Use the new template as default"
+#~ msgstr "Жаңа үлгіні әдетті қылу"
+
+#~ msgid "Use the new template every time %1 starts"
+#~ msgstr "Әрбірде %1 бастағанда жаңа үлгі қолданылсын"
+
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr "Шынымен '%1' деген үлгінің үстінен жазбақсыз ба?"
+
+#~ msgid "Add Group"
+#~ msgstr "Топты қосу"
+
+#~ msgid "Enter group name:"
+#~ msgstr "Топтың атауы:"
+
+#~ msgid "This name is already used."
+#~ msgstr "Бұндай атау қолданыста бар ғой."
+
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "Шынымен бұл топты құртпақсыз ба?"
+
+#~ msgid "Remove Group"
+#~ msgstr "Топты өшіру"
+
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "Шынымен бұл үлгіні өшірмексіз бе?"
+
+#~ msgid "Remove Template"
+#~ msgstr "Үлгіні өшіру"
+
+#~ msgid "&Delete"
+#~ msgstr "&Өшіру"
+
+#~ msgid "Could not load picture."
+#~ msgstr "Сурет жүктелмеді."
+
+#~ msgid "No picture available."
+#~ msgstr "Сурет жоқ."
+
+#~ msgid "Use This Template"
+#~ msgstr "Осы Үлгіні қолдану"
+
+#~ msgid "Version"
+#~ msgstr "Нұсқасы"
+
+#~ msgid "Date & Time"
+#~ msgstr "Күні мен уақыты"
+
+#~ msgid "Saved By"
+#~ msgstr "Сақтаған"
+
+#~ msgid "Comment"
+#~ msgstr "Түсініктемесі"
+
+#~ msgid "&Add"
+#~ msgstr "Қ&осу"
+
+#~ msgid "&Modify"
+#~ msgstr "Ө&згерту"
+
+#~ msgid "&Open"
+#~ msgstr "&Ашу"
+
+#~ msgid "A new version could not be added"
+#~ msgstr "Жаңа нұсқа қосылмайды"
+
+#~ msgid "Date: %1"
+#~ msgstr "Күні: %1"
+
+#~ msgid "Active Author Profile"
+#~ msgstr "Белсенді автордың профилі"
+
+#~ msgctxt "choice for author profile"
+#~ msgid "Anonymous"
+#~ msgstr "Анонимді"
+
+#~ msgid "Unknown"
+#~ msgstr "Беймәлім"
+
+#~ msgid ""
+#~ "This document contains an unknown checksum. When you give a password it "
+#~ "might not be verified."
+#~ msgstr ""
+#~ "Құжатта беймәлім бақылау қосындысы бар. Келтірілген пароль тексерістен "
+#~ "өтпеуі мүмкін."
+
+#~ msgid ""
+#~ "This document contains an unknown encryption method. Some parts may be "
+#~ "unreadable."
+#~ msgstr ""
+#~ "Құжатта беймәлім шифрлау әдісі бар. Кейбір бөлшектері оқылмауы мүмкін."
+
+#~ msgid ""
+#~ "This document contains incomplete encryption data. Some parts may be "
+#~ "unreadable."
+#~ msgstr ""
+#~ "Құжатта шифрлауы аяқталмаған деректері бар. Кейбір бөлшектері оқылмауы "
+#~ "мүмкін."
+
+#~ msgid ""
+#~ "QCA has currently no support for SHA1 or PBKDF2 using SHA1. The document "
+#~ "can not be opened."
+#~ msgstr ""
+#~ "QCA қазір SHA1 не SHA1 қолданатын PBKDF2 қолдамайды. Құжат ашылмайды."
+
+#~ msgid ""
+#~ "The manifest file seems to be corrupted. It cannot be modified and the "
+#~ "document will remain unreadable. Please try and save the document again "
+#~ "to prevent losing your work."
+#~ msgstr ""
+#~ "Манифест файлы бүлінген сияқты. Ол өзгертілмейді де құжат оқылмайды. "
+#~ "Жұмысыңызды жоғалтпау үшін құжатты сақтау жолын тауып қөріңіз."
+
+#~ msgid ""
+#~ "The manifest file cannot be written. The document will remain unreadable. "
+#~ "Please try and save the document again to prevent losing your work."
+#~ msgstr ""
+#~ "Манифест файлы жазылмайды.Құжат оқылмайтын болады. Жұмысыңызды жоғалтпау "
+#~ "үшін құжатты сақтау жолын тауып қөріңіз."
+
+#~ msgid "Please enter the password to open this file."
+#~ msgstr "Бұл файлды ашу үшін паролін келтіріңіз."
+
+#~ msgid "Please enter the password to encrypt the document with."
+#~ msgstr "Құжатты шифрлау үшін паролін келтіріңіз."
+
+#~ msgid "Do you want to save the password?"
+#~ msgstr "Паролін сақтауды қалайсыз ба?"
+
+#~ msgid "No store backend"
+#~ msgstr "Сақтайтын тетік жоқ"
+
+#~ msgid ""
+#~ "Parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Негізгі құжатта %1-жолында, %2-бағанында талдау қатесі\n"
+#~ "Қате хабарламасы: %3"
+
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "Экран"
+
+#~ msgid "The directory mode is not supported for remote locations."
+#~ msgstr "Каталог режімі қашық орналасуын қолдамайды."
+
+#~ msgid "Calligra Storage"
+#~ msgstr "Calligra сақтау қоймасы"
+
+#~ msgid "Clear"
+#~ msgstr "Тазалау"
+
+#~ msgid "Subtract"
+#~ msgstr "Азайту"
+
+#~ msgid "Multiply"
+#~ msgstr "Көбейту"
+
+#~ msgid "Alpha mask"
+#~ msgstr "Альфа қалқасы"
+
+#~ msgid "Alpha"
+#~ msgstr "Альфа"
+
+#~ msgid "Undefined operation in the alpha color space"
+#~ msgstr "Альфа түстер кеңістігінде анықталмаған амал"
+
+#~ msgid "L*a*b* (16-bit integer/channel, unmanaged)"
+#~ msgstr "L*a*b* (16-бит бүтін/арна, баптаусыз)"
+
+#~ msgid "Lightness"
+#~ msgstr "Жарықтық"
+
+#~ msgid "a*"
+#~ msgstr "a*"
+
+#~ msgid "b*"
+#~ msgstr "b*"
+
+#~ msgid "RGB (16-bit integer/channel, unmanaged)"
+#~ msgstr "RGB (16-бит бүтін сан/арна, баптаусыз)"
+
+#~ msgid "RGB (8-bit integer/channel, unmanaged)"
+#~ msgstr "RGB (8-бит бүтін сан/арна, баптаусыз)"
+
+#~ msgid "Blue"
+#~ msgstr "Көк"
+
+#~ msgid "Green"
+#~ msgstr "Жасыл"
+
+#~ msgid "Red"
+#~ msgstr "Қызыл"
+
+#~ msgid "Undefined operation in the %1 space"
+#~ msgstr "%1 кеңістігінде анықталмаған амал"
+
+#~ msgid "Undefined operation in the %1 color space"
+#~ msgstr "%1 түстер кеңістігінде анықталмаған амал"
+
+#~ msgid "Simple Color Conversion Engine"
+#~ msgstr "Қарапайым түстер түрлендіру тетігі"
+
+#~ msgid "Alpha darken"
+#~ msgstr "Альфа күңгірттеу"
+
+#~ msgid "Behind"
+#~ msgstr "Артында"
+
+#~ msgid "Dissolve"
+#~ msgstr "Ерту"
+
+#~ msgid "Erase"
+#~ msgstr "Кетіру"
+
+#~ msgid "Normal"
+#~ msgstr "Кәдімгі"
+
+#~ msgid "Overlay"
+#~ msgstr "Үстеме"
+
+#~ msgid "Grain Merge"
+#~ msgstr "Дақтарын біріктіру"
+
+#~ msgid "Grain Extract"
+#~ msgstr "Дақтарын шығару"
+
+#~ msgid "Hard Mix"
+#~ msgstr "Қатты араластыру"
+
+#~ msgid "Geometric Mean"
+#~ msgstr "Орташа геометриялық өлшем"
+
+#~ msgid "Parallel"
+#~ msgstr "Параллель"
+
+#~ msgid "Allanon"
+#~ msgstr "Алланон"
+
+#~ msgid "Color Dodge"
+#~ msgstr "Түсін ашық реңктеу"
+
+#~ msgid "Linear Dodge"
+#~ msgstr "Пропорционал ашық реңктеу"
+
+#~ msgid "Lighten"
+#~ msgstr "Жарықтау қылу"
+
+#~ msgid "Hard Light"
+#~ msgstr "Қатты ашық қылу"
+
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "Сәл ашық қылу (SVG)"
+
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "Сәл ашық қылу (Photoshop)"
+
+#~ msgid "Gamma Light"
+#~ msgstr "Гамма-ашықтау"
+
+#~ msgid "Vivid Light"
+#~ msgstr "Ап-ашық қылу"
+
+#~ msgid "Pin Light"
+#~ msgstr "Нүктелі ашық қылу"
+
+#~ msgid "Linear Light"
+#~ msgstr "Пропорционал ашық қылу"
+
+#~ msgid "Color Burn"
+#~ msgstr "Түсті қоюлату"
+
+#~ msgid "Linear Burn"
+#~ msgstr "Сызықтық қоюлату"
+
+#~ msgid "Darken"
+#~ msgstr "Күңгірттеу"
+
+#~ msgid "Gamma Dark"
+#~ msgstr "Гамма-күңгірттеу"
+
+#~ msgid "Addition"
+#~ msgstr "Қосу"
+
+#~ msgid "Inversed-Subtract"
+#~ msgstr "Терістеп азайту"
+
+#~ msgid "Divide"
+#~ msgstr "Бөлу"
+
+#~ msgid "Arcus Tangent"
+#~ msgstr "Жанаспалы доға"
+
+#~ msgid "Difference"
+#~ msgstr "Айырылымы"
+
+#~ msgid "Exclusion"
+#~ msgstr "Қоспасы"
+
+#~ msgid "Equivalence"
+#~ msgstr "Бірдейлігі"
+
+#~ msgid "Additive-Subtractive"
+#~ msgstr "Қосымша-Айырылымша"
+
+#~ msgid "Copy Red"
+#~ msgstr "Қызылдығын көшіріп алу"
+
+#~ msgid "Copy Green"
+#~ msgstr "Жасылдығын көшіріп алу"
+
+#~ msgid "Copy Blue"
+#~ msgstr "Көктігін көшіріп алу"
+
+#~ msgid "Color"
+#~ msgstr "Түсі"
+
+#~ msgid "Hue"
+#~ msgstr "Реңкі"
+
+#~ msgid "Saturation"
+#~ msgstr "Қанықтық"
+
+#~ msgid "Increase Saturation"
+#~ msgstr "Қанықтығын арттыру"
+
+#~ msgid "Decrease Saturation"
+#~ msgstr "Қанықтығын кеміту"
+
+#~ msgid "Luminosity"
+#~ msgstr "Жарықтығы"
+
+#~ msgid "Increase Luminosity"
+#~ msgstr "Жарықтығын арттыру"
+
+#~ msgid "Decrease Luminosity"
+#~ msgstr "Жарықтығын кеміту"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgid "Darker Color"
+#~ msgstr "Аясының түсі"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgid "Lighter Color"
+#~ msgstr "Сызықтың түсі"
+
+#~ msgid "Color HSI"
+#~ msgstr "HSI түсі"
+
+#~ msgid "Hue HSI"
+#~ msgstr "HSI реңкі"
+
+#~ msgid "Saturation HSI"
+#~ msgstr "HSI қанықтығы"
+
+#~ msgid "Increase Saturation HSI"
+#~ msgstr "HSI қанықтығын арттыру"
+
+#~ msgid "Decrease Saturation HSI"
+#~ msgstr "HSI қанықтығын кеміту"
+
+#~ msgid "Intensity"
+#~ msgstr "Күштілігі"
+
+#~ msgid "Increase Intensity"
+#~ msgstr "Күштілігін арттыру"
+
+#~ msgid "Decrease Intensity"
+#~ msgstr "Күштілігін арттыру"
+
+#~ msgid "Color HSL"
+#~ msgstr "HSL түсі"
+
+#~ msgid "Hue HSL"
+#~ msgstr "HSL Реңкі"
+
+#~ msgid "Saturation HSL"
+#~ msgstr "HSL қанықтығы"
+
+#~ msgid "Increase Saturation HSL"
+#~ msgstr "HSL қанықтығын арттыру"
+
+#~ msgid "Decrease Saturation HSL"
+#~ msgstr "HSL қанықтығын кеміту"
+
+#~ msgid "Increase Lightness"
+#~ msgstr "Ашықтығын арттыру"
+
+#~ msgid "Decrease Lightness"
+#~ msgstr "Ашықтығын кеміту"
+
+#~ msgid "Color HSV"
+#~ msgstr "HSV түсі"
+
+#~ msgid "Hue HSV"
+#~ msgstr "HSV реңкі"
+
+#~ msgid "Saturation HSV"
+#~ msgstr "HSV қанықтығы"
+
+#~ msgid "Increase Saturation HSV"
+#~ msgstr "HSV қанықтығын арттыру"
+
+#~ msgid "Decrease Saturation HSV"
+#~ msgstr "HSV қанықтығын кеміту"
+
+#~ msgid "Increase Value"
+#~ msgstr "Мәнің үлкейту"
+
+#~ msgid "Decrease Value"
+#~ msgstr "Мәнің азайту"
+
+#~ msgid "Generic RGB Histogram"
+#~ msgstr "Негізгі RGB гистограммасы"
+
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "G"
+#~ msgstr "G"
+
+#~ msgid "L*a*b* Histogram"
+#~ msgstr "L*a*b* гистограммасы"
+
+#~ msgid "L*"
+#~ msgstr "L*"
+
+#~ msgid "Generic L*a*b* Histogram"
+#~ msgstr "Негізгі L*a*b* гистограммасы"
+
+#~ msgid "XYZ"
+#~ msgstr "XYZ"
+
+#~ msgid "Grayscale"
+#~ msgstr "Сұр реңкті"
+
+#~ msgid "Grayscale (without transparency)"
+#~ msgstr "Сұр реңкті (мөлдірліксіз)"
+
+#~ msgid "YCbCr"
+#~ msgstr "YCbCr"
+
+#~ msgid "8 Bits"
+#~ msgstr "8 бит"
+
+#~ msgid "16 Bits"
+#~ msgstr "16 бит"
+
+#~ msgid "16 Bits Float"
+#~ msgstr "16 бит жылжымалы үтірлі"
+
+#~ msgid "32 Bits Float"
+#~ msgstr "32 бит жылжымалы үтірлі"
+
+#~ msgid "64 Bits Float"
+#~ msgstr "64 бит жылжымалы үтірлі"
+
+#~ msgid "Arithmetic"
+#~ msgstr "Арифметикалық"
+
+#~ msgid "Negative"
+#~ msgstr "Теріс"
+
+#~ msgid "HSY"
+#~ msgstr "HSY"
+
+#~ msgid "HSI"
+#~ msgstr "HSI"
+
+#~ msgid "HSL"
+#~ msgstr "HSL"
+
+#~ msgid "HSV"
+#~ msgstr "HSV"
+
+#~ msgid "Mix"
+#~ msgstr "Қоспалау"
+
+#~ msgid "Inverse Subtract"
+#~ msgstr "Азайтып терістеу"
+
+#~ msgid "Burn"
+#~ msgstr "Қоюлау"
+
+#~ msgid "Additive Subtractive"
+#~ msgstr "Қосымша Айырылымша"
+
+#~ msgid "Alpha Darken"
+#~ msgstr "Альфа-күңгірттеу"
+
+#~ msgid "Bumpmap"
+#~ msgstr "Бедер"
+
+#~ msgid "SVG Gradient"
+#~ msgstr "SVG градиенті"
+
+#~ msgid "Select the object you want to reference"
+#~ msgstr "Сілтейтін нысанның түрін таңдау"
+
+#~ msgid "Reference"
+#~ msgstr "Сілтемелер"
+
+#~ msgid "Set For All Existing"
+#~ msgstr "Баршаға орнату"
+
+#~ msgctxt "statement is an Rdf related term"
+#~ msgid "<qt>Edits will be lost.<p>There is %1 invalid statement left.</qt>"
+#~ msgid_plural ""
+#~ "<qt>Edits will be lost.<p>There are %1 invalid statements left.</qt>"
+#~ msgstr[0] "<qt>Өзгерістер жоғалады.<p>Әлі %1 дұрыс емес жері бар.</qt>"
+
+#~ msgctxt "statement is an Rdf related term"
+#~ msgid "Discard invalid statements?"
+#~ msgstr "Қате жерлері алынып тасталсын ба?"
+
+#~ msgid "Rdf"
+#~ msgstr "Rdf"
+
+#~ msgid "Triples"
+#~ msgstr "Үштіктер"
+
+#~ msgid "new"
+#~ msgstr "жаңа"
+
+#~ msgid "copy"
+#~ msgstr "көшірмелеу"
+
+#~ msgid "delete"
+#~ msgstr "өшіру"
+
+#~ msgid "Namespaces"
+#~ msgstr "Атаулар кеңістіктері"
+
+#~ msgid "Prefix"
+#~ msgstr "Префиксі"
+
+#~ msgid "Namespace"
+#~ msgstr "Атаулар кеңістігі"
+
+#~ msgid "Semantic"
+#~ msgstr "Семантика"
+
+#~ msgid "SPARQL"
+#~ msgstr "SPARQL"
+
+#, fuzzy
+#~| msgid ""
+#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
+#~| "TR/REC-html40/strict.dtd\">\n"
+#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~| "css\">\n"
+#~| "p, li { white-space: pre-wrap; }\n"
+#~| "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~| "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\"># Insert your SPARQL query here<br /"
+#~| "># Results are shown below.</span></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">prefix rdf:  &lt;http://www.w3."
+#~| "org/1999/02/22-rdf-syntax-ns#&gt; </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">prefix foaf: &lt;http://xmlns.com/"
+#~| "foaf/0.1/&gt; </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">prefix pkg:  &lt;http://docs.oasis-"
+#~| "open.org/opendocument/meta/package/common#&gt; </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">prefix geo84: &lt;http://www.w3."
+#~| "org/2003/01/geo/wgs84_pos#&gt;</span></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">select ?s ?p ?o </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">where { </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\"> ?s ?p ?o </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">}</span></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p></body></html>"
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"># Insert your SPARQL query here<br /"
+#~ "># Results are shown below.</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix rdf:  &lt;http://www.w3."
+#~ "org/1999/02/22-rdf-syntax-ns#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix foaf: &lt;http://xmlns.com/"
+#~ "foaf/0.1/&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix pkg:  &lt;http://docs.oasis-"
+#~ "open.org/ns/office/1.2/meta/pkg#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix geo84: &lt;http://www.w3."
+#~ "org/2003/01/geo/wgs84_pos#&gt;</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">select ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">where { </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"> ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">}</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"># SPARQL сұранысын осында "
+#~ "енгізіңіз<br /># Нәтижесі төменде келтіріледі.</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix rdf:  &lt;http://www.w3."
+#~ "org/1999/02/22-rdf-syntax-ns#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix foaf: &lt;http://xmlns.com/"
+#~ "foaf/0.1/&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix pkg:  &lt;http://docs.oasis-"
+#~ "open.org/opendocument/meta/package/common#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix geo84: &lt;http://www.w3."
+#~ "org/2003/01/geo/wgs84_pos#&gt;</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">select ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">where { </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"> ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">}</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p></body></html>"
+
+#~ msgid "Stylesheets"
+#~ msgstr "Стиль кестелер"
+
+#~ msgid ""
+#~ "Set the default stylesheet for Semantic objects in this document. New RDF "
+#~ "objects will use this stylesheet automatically. The buttons allow you to "
+#~ "set the stylesheet for all existing semantic objects to the new default "
+#~ "stylesheet as well."
+#~ msgstr ""
+#~ "осы құжаттағы семантикалық нысандары үшін әдетті эл.кестесін орнатыңыз. "
+#~ "Жаңа RDF нысаны  автоматты түрде осы эл.кестесні пайдаланады. Бұл батырма "
+#~ "бар семантикалық нысандар үшін де, жаңа нысандар үшін де, эл.кестелерін "
+#~ "орнатып беруге көмектеседі."
+
+#~ msgid "Apply Stylesheet"
+#~ msgstr "Стиль кестесін қолдану"
+
+#~ msgid "System"
+#~ msgstr "Жүйе"
+
+#~ msgid "User"
+#~ msgstr "Пайдаланушы"
+
+#~ msgid "Reapply Current"
+#~ msgstr "Қолданыстағыны қайта ету"
+
+#~ msgid "Disassociate"
+#~ msgstr "Айыру"
+
+#~ msgid "Edit %1"
+#~ msgstr "%1 дегенді өзгерту"
+
+#~ msgid "Stylesheet Definition"
+#~ msgstr "Стиль кестесінің анықтамасы"
+
+#~ msgid "Variables Available"
+#~ msgstr "Бар айнымалылар"
+
+#~ msgid "Description"
+#~ msgstr "Сипаттамасы"
+
+#~ msgid "Stylesheet Name"
+#~ msgstr "Стиль кестенің атауы"
+
+#~ msgid "Empty"
+#~ msgstr "Бос"
+
+#~ msgid "URI"
+#~ msgstr "URI"
+
+#~ msgid "Literal"
+#~ msgstr "Әрібті"
+
+#~ msgid "Blank"
+#~ msgstr "Бланк"
+
+#~ msgid "Valid"
+#~ msgstr "Дұрыс"
+
+#~ msgid "Subject"
+#~ msgstr "Тақырыбы"
+
+#~ msgid "Predicate"
+#~ msgstr "Предикат"
+
+#~ msgid "Obj Type"
+#~ msgstr "Ныс. түрі"
+
+#~ msgid "DataType"
+#~ msgstr "Дерек түрі"
+
+#~ msgid "Stored In"
+#~ msgstr "Сақталған жері"
+
+#~ msgid "Invalid integer number"
+#~ msgstr "Жарамсыз бүтін сан"
+
+#~ msgid "This integer number may be too large."
+#~ msgstr "Бұл бүтін сан тым ұзын сияқты."
+
+#~ msgid "Invalid identifier"
+#~ msgstr "Жарамсыз идентификатор"
+
+#~ msgid "Identifiers should start with a letter or '_' character"
+#~ msgstr "Идентификатор әріп не '_' таңбасынан басталуы тиіс"
+
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "Жоқ"
+
+#~ msgid "Small Bullet"
+#~ msgstr "Шағын нүктелі"
+
+#~ msgid "Circle Bullet"
+#~ msgstr "Шеңберлі"
+
+#~ msgid "Square Bullet"
+#~ msgstr "Шаршылы"
+
+#~ msgid "Rhombus Bullet"
+#~ msgstr "Ромбты"
+
+#~ msgid "Check Mark Bullet"
+#~ msgstr "Құсбелілі"
+
+#~ msgid "Rightwards Arrow Bullet"
+#~ msgstr "Оң жебелі"
+
+#~ msgid "Arabic"
+#~ msgstr "Кәдімгі сан"
+
+#~ msgid "Lower Alphabetical"
+#~ msgstr "Кіші әріп"
+
+#~ msgid "Upper Alphabetical"
+#~ msgstr "Бас әріп"
+
+#~ msgid "Upper Roman"
+#~ msgstr "Үлкен римдік"
+
+#~ msgid "Large Bullet"
+#~ msgstr "Үлкен нүктелі"
+
+#~ msgid "Ballot X Bullet"
+#~ msgstr "Бюллетень X-ті"
+
+#~ msgid "Rightwards Arrow Head Bullet"
+#~ msgstr "Оң жебе ұшты"
+
+#~ msgid "Bengali"
+#~ msgstr "Бенгали"
+
+#~ msgid "Gujarati"
+#~ msgstr "Гуджарати"
+
+#~ msgid "Gurumukhi"
+#~ msgstr "Гурумухи"
+
+#~ msgid "Kannada"
+#~ msgstr "Каннада"
+
+#~ msgid "Malayalam"
+#~ msgstr "Малайям"
+
+#~ msgid "Oriya"
+#~ msgstr "Ория"
+
+#~ msgid "Tamil"
+#~ msgstr "Тамил"
+
+#~ msgid "Telugu"
+#~ msgstr "Телугу"
+
+#~ msgid "Tibetan"
+#~ msgstr "Тибеттік"
+
+#~ msgid "Thai"
+#~ msgstr "Тай"
+
+#~ msgid "Abjad"
+#~ msgstr "Абжад"
+
+#~ msgid "AbjadMinor"
+#~ msgstr "КішіАбжад"
+
+#~ msgid "ArabicAlphabet"
+#~ msgstr "Араб әліппесі"
+
+#~ msgid "Opacity"
+#~ msgstr "Мөлдірсіздік"
+
+#~ msgid "Recent:"
+#~ msgstr "Жуырдағысы:"
+
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "Түстерді қосу / кетіру..."
+
+#~ msgid "Import Data"
+#~ msgstr "Деректі импорттау"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Recommended ( %1 )"
+#~ msgstr "Жөн деп табылатыны ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Locale ( %1 )"
+#~ msgstr "Жергілікті стандарт ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Other ( %1 )"
+#~ msgstr "Басқа ( %1 )"
+
+#~ msgid "Generic"
+#~ msgstr "Негізгі"
+
+#~ msgid "Currency"
+#~ msgstr "Ақша"
+
+#~ msgid "None"
+#~ msgstr "Жоқ"
+
+#~ msgid ""
+#~ "Please check the ranges you specified. The start value must be lower than "
+#~ "the end value."
+#~ msgstr "Келтірген ауқымды тексеріңіз. Бастауы соңынан кем болу керек қой."
+
+#~ msgid "Cannot find encoding: %1"
+#~ msgstr "Кодтама табылған жоқ: %1"
+
+#~ msgid "Data"
+#~ msgstr "Деректер"
+
+#~ msgid "E&ncoding:"
+#~ msgstr "&Кодтамасы:"
+
+#~ msgid "First row contains headers"
+#~ msgstr "Бірінші жолда - айдарлары"
+
+#~ msgid "First column contains headers"
+#~ msgstr "Бірінші бағанда - айдарлары"
+
+#~ msgid "Format"
+#~ msgstr "Пішімі"
+
+#~ msgid "Delimiter"
+#~ msgstr "Бөлгіші"
+
+#~ msgid "Semicolon"
+#~ msgstr "Үтірлі нүкте"
+
+#~ msgid "Other"
+#~ msgstr "Басқа"
+
+#~ msgid "Tabulator"
+#~ msgstr "Кестелегіш"
+
+#~ msgid "Space"
+#~ msgstr "Бос орын"
+
+#~ msgid "Text&quote:"
+#~ msgstr "&Тырнақшадағы мәтін:"
+
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "Decimal symbol:"
+#~ msgstr "Ондық бөлшек бөлгіші:"
+
+#~ msgid "Thousands separator:"
+#~ msgstr "Мыңдық бөлгіші:"
+
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "Қайталанатын бөлгішті елемеу"
+
+#~ msgid "&Format:"
+#~ msgstr "&Пішімі:"
+
+#~ msgid "Ranges"
+#~ msgstr "Ауқымдары"
+
+#~ msgid "Update"
+#~ msgstr "Жаңарту"
+
+#~ msgid "Import columns:"
+#~ msgstr "Импорттайтын бағандар:"
+
+#~ msgid "Import lines:"
+#~ msgstr "Импорттайтын жолдар:"
+
+#~ msgid "to"
+#~ msgstr "->"
+
+#, fuzzy
+#~| msgid "Show Dockers"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Float Docker"
+#~ msgstr "Докерлерін көрсету"
+
+#, fuzzy
+#~| msgid "Close Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "Құжатты жабу"
+
+#, fuzzy
+#~| msgid "Tool Bars Docker"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "Құралдар панелі"
+
+#, fuzzy
+#~| msgid "Show Dockers"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Lock Docker"
+#~ msgstr "Докерлерін көрсету"
+
+#~ msgid "&Encrypt"
+#~ msgstr "&Шифрлау"
+
+#~ msgid "Keywords:"
+#~ msgstr "Түйінді сөздері:"
+
+#~ msgid "Subject:"
+#~ msgstr "Тақырыбы:"
+
+#~ msgid "Last printed:"
+#~ msgstr "Соңғы басылған кезі:"
+
+#~ msgid "Total editing time:"
+#~ msgstr "Жалпы өңдеу уақыты:"
+
+#~ msgid "Encryption:"
+#~ msgstr "Шифрлау:"
+
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "Айңдары:"
+
+#~ msgid "Revision number:"
+#~ msgstr "Жетілдірімі:"
+
+#~ msgid "Modified:"
+#~ msgstr "Өзгертілген:"
+
+#~ msgid "Comments:"
+#~ msgstr "Түсініктемелері:"
+
+#~ msgid "Created:"
+#~ msgstr "Құрылған кезі:"
+
+#~ msgid "Path:"
+#~ msgstr "Жолы:"
+
+#~ msgid "&Reset"
+#~ msgstr "&Ысырып тастау"
+
+#, fuzzy
+#~| msgid "Last page:"
+#~ msgid "Language:"
+#~ msgstr "Соңғы беті:"
+
+#~ msgid "General"
+#~ msgstr "Жалпы"
+
+#~ msgid "Last saved by"
+#~ msgstr "Соңғы сақтағаны:"
+
+#~ msgid "Use ';' (Example: Office;KDE;Calligra)"
+#~ msgstr "';' таңбаны қолданыңыз (Мысалы: Office;KDE;Calligra)"
+
+#~ msgid "This document will be decrypted"
+#~ msgstr "Құжаттың шифры шешілмек"
+
+#~ msgid "Do not decrypt"
+#~ msgstr "Шифрын шешпеу"
+
+#~ msgid "This document is encrypted"
+#~ msgstr "Құжат шифрланған"
+
+#~ msgid "D&ecrypt"
+#~ msgstr "&Шифрын шешу"
+
+#~ msgid "This document will be encrypted."
+#~ msgstr "Құжат шифрланбақ."
+
+#~ msgid "Do not encrypt"
+#~ msgstr "Шифрламау"
+
+#~ msgid "This document is not encrypted"
+#~ msgstr "Құжат шифрланбаған"
+
+#~ msgid "This document does not support encryption"
+#~ msgstr "Бұл құжат шифрлауға жарамайды"
+
+#~ msgid ""
+#~ "<qt>Decrypting the document will remove the password protection from it."
+#~ "<p>Do you still want to decrypt the file?</qt>"
+#~ msgstr ""
+#~ "<qt>Құжаттың шифрын шешсе, оны парольмен қорғауға болмайды.<p>Файлдың "
+#~ "шифры шешілсін бе?</qt>"
+
+#~ msgid "Confirm Decrypt"
+#~ msgstr "Шифрдың шешуін құптау"
+
+#~ msgid "Decrypt"
+#~ msgstr "Шифрын шешу"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "decryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>Құжатыңыз автоматты түрде сақталмайды.<p>Шифрын шешуді толығымен "
+#~ "аяқтау үшін құжатты сақтаңыз.</qt>"
+
+#~ msgid "Save Document"
+#~ msgstr "Құжатты сақтау"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "decryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt>Құжат ашылғаннан кейін өзгертілген. Шифрын шешуді толығымен аяқтау "
+#~ "үшін құжатты сақтау керек.<p>Енді сақталсын ба?</qt>"
+
+#~ msgid ""
+#~ "<qt>The document is currently saved as %1. The document needs to be "
+#~ "changed to <b>OASIS OpenDocument</b> to be encrypted.<p>Do you want to "
+#~ "change the file to OASIS OpenDocument?</qt>"
+#~ msgstr ""
+#~ "<qt>Құжат %1 деп сақталған. Шифрлау үшін оны <b>OASIS OpenDocument</b> "
+#~ "деп ауыстыру керек.<p>Файл OASIS OpenDocument түріне ауыстырылсын ба?</qt>"
+
+#~ msgid "Change Filetype"
+#~ msgstr "Файлдың түрін өзгерту"
+
+#~ msgid "Change"
+#~ msgstr "Өзгерту"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "encryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>Құжатыңыз автоматты түрде сақталмайды.<p>Шифрлауды толығымен аяқтау "
+#~ "үшін құжатты сақтаңыз.</qt>"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "encryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt>Құжат ашылғаннан кейін өзгертілген. Шифрлауды толығымен аяқтау үшін "
+#~ "құжатты сақтау керек.<p>Енді сақталсын ба?</qt>"
+
+#~ msgid "Remove"
+#~ msgstr "Өшіру"
+
+#~ msgid "Open palette"
+#~ msgstr "Палитраны ашу"
+
+#~ msgid "Save palette"
+#~ msgstr "Палитраны сақтау"
+
+#~ msgid "Add Color To Palette"
+#~ msgstr "Палитраға түсті қосу"
+
+#~ msgid "Color name:"
+#~ msgstr "Түстің атауы:"
+
+#, fuzzy
+#~| msgid "Add Color To Palette"
+#~ msgid "Gimp Color Palette (*.gpl)"
+#~ msgstr "Палитраға түсті қосу"
+
+#~ msgid "Cannot write to palette file %1. Maybe it is read-only. "
+#~ msgstr "%1 палитра файлы жазылмады. Бәлкім, ол тек оқу үшін шығар. "
+
+#~ msgid "Palette"
+#~ msgstr "Палитра"
+
+#~ msgid "Add/Remove Colors"
+#~ msgstr "Түстерді қосу/кетіру"
+
+#~ msgid "All supported formats"
+#~ msgstr "Бүкіл танитын пішімдер"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Testing: OpenFile"
+#~ msgstr "Палитраны ашу"
+
+#, fuzzy
+#~| msgid "&Uncompress to Directory"
+#~ msgid "Testing: OpenDirectory"
+#~ msgstr "Қапшыққа &тарқату"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFile"
+#~ msgstr "Импорт сүзгісі жоқ"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "Импорт сүзгісі жоқ"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "Import resource"
+#~ msgid "Testing: Import Directory"
+#~ msgstr "Ресурсты импорттау"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Testing: SaveFile"
+#~ msgstr "Палитраны сақтау"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Open File"
+#~ msgstr "Палитраны ашу"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Open Files"
+#~ msgstr "Палитраны ашу"
+
+#, fuzzy
+#~| msgid "Choose Filter"
+#~ msgid "Filter:"
+#~ msgstr "Сүзгіні таңдау"
+
+#, fuzzy
+#~| msgid "Label"
+#~ msgid "TextLabel"
+#~ msgstr "Жарлық"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Named"
+#~ msgstr "Атауы"
+
+#, fuzzy
+#~| msgid "Set default format"
+#~ msgid "Set default filter"
+#~ msgstr "Әдетті пішімді қылу"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Save File"
+#~ msgstr "Палитраны сақтау"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Import Files"
+#~ msgstr "Импорттайтын жолдар:"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Import File"
+#~ msgstr "Импорттайтын жолдар:"
+
+#, fuzzy
+#~| msgid "&Uncompress to Directory"
+#~ msgid "Open Directory"
+#~ msgstr "Қапшыққа &тарқату"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "Import resource"
+#~ msgid "Import Directory"
+#~ msgstr "Ресурсты импорттау"
+
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "Жоқ"
+
+#~ msgctxt "Solid color stroke or fill"
+#~ msgid "Solid"
+#~ msgstr "Тұтас"
+
+#~ msgid "Gradient"
+#~ msgstr "Градиент"
+
+#~ msgid "Pattern"
+#~ msgstr "Өрнек"
+
+#~ msgid "Change the filling color"
+#~ msgstr "Толтыру түсін өзгерту"
+
+#, fuzzy
+#~| msgid "Change the filling color"
+#~ msgid "Change the filling gradient"
+#~ msgstr "Толтыру түсін өзгерту"
+
+#, fuzzy
+#~| msgid "Change the filling color"
+#~ msgid "Change the filling pattern"
+#~ msgstr "Толтыру түсін өзгерту"
+
+#~ msgid "Icon and Text"
+#~ msgstr "Таңбаша мен мәтін"
+
+#~ msgid "Icon only"
+#~ msgstr "Тек таңбаша"
+
+#~ msgid "Tabs side"
+#~ msgstr "Қойынды жағы"
+
+#~ msgid "Top side"
+#~ msgstr "Жоғарғы жағы"
+
+#~ msgid "Bottom side"
+#~ msgstr "Төменгі жағы"
+
+#~ msgid "Left side"
+#~ msgstr "Сол жағы"
+
+#~ msgid "Right side"
+#~ msgstr "Оң жағы"
+
+#~ msgid "Page Layout"
+#~ msgstr "Беттің пішімі"
+
+#~ msgid "Apply to document"
+#~ msgstr "Құжатқа қолдану"
+
+#~ msgid "Left Edge:"
+#~ msgstr "Сол жақ шеті:"
+
+#~ msgid "Right Edge:"
+#~ msgstr "Оң жақ шеті:"
+
+#~ msgid "Binding Edge:"
+#~ msgstr "Түбтеу шеті:"
+
+#~ msgid "Page Edge:"
+#~ msgstr "Беттің шеті:"
+
+#~ msgid "Facing Pages:"
+#~ msgstr "Беттер ашылымы:"
+
+#~ msgid "Facing pages"
+#~ msgstr "Беттер ашылымы"
+
+#~ msgid "Page Layout:"
+#~ msgstr "Орналасуы:"
+
+#~ msgid "Page spread"
+#~ msgstr "Бет жайлымы"
+
+#~ msgid "Unit:"
+#~ msgstr "Өлшеу бірлігі:"
+
+#~ msgid "Follow style:"
+#~ msgstr "Стиліне еру"
+
+#~ msgid "Size:"
+#~ msgstr "Өлшемі:"
+
+#~ msgid "Width:"
+#~ msgstr "Ені:"
+
+#~ msgid "Height:"
+#~ msgstr "Биіктігі:"
+
+#~ msgid "Orientation:"
+#~ msgstr "Бағдары:"
+
+#~ msgid "Facing pages:"
+#~ msgstr "Беттер ашылымы:"
+
+#~ msgid "Single sided"
+#~ msgstr "Бір жақты"
+
+#~ msgid "Text direction:"
+#~ msgstr "Жазу бағыты:"
+
+#~ msgid "Automatic"
+#~ msgstr "Автоматты"
+
+#~ msgid "Left to right"
+#~ msgstr "Солдан оңға"
+
+#~ msgid "Right to left"
+#~ msgstr "Оңдан солға"
+
+#~ msgid "Margins"
+#~ msgstr "Жиектер"
+
+#~ msgid "Top:"
+#~ msgstr "Жоғарғы:"
+
+#~ msgid "Binding edge:"
+#~ msgstr "Түбтеу шеті:"
+
+#~ msgid "Page edge:"
+#~ msgstr "Беттің шеті"
+
+#~ msgid "Bottom:"
+#~ msgstr "Төменгі:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "Ресурсты импорттау"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Delete resource"
+#~ msgstr "Ресурсты жою"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "Ресурсты жүктеп алу"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "Ресурсты ортақтастыру"
+
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "Қосатын файлды таңдау"
+
+#~ msgid "New tag"
+#~ msgstr "Жаңа белгі"
+
+#~ msgid "Assign to tag"
+#~ msgstr "Белгіге тағайындау"
+
+#~ msgid "Remove from this tag"
+#~ msgstr "Белгіден өшіру"
+
+#~ msgid "Remove from other tag"
+#~ msgstr "Басқа белгіден өшіру"
+
+#~ msgid "Tags"
+#~ msgstr "Белгілер"
+
+#~ msgid ""
+#~ "<qt>The tag you are trying to undelete already exists in tag list."
+#~ "<br>Please enter a new, unique name for it.</qt>"
+#~ msgstr ""
+#~ "<qt>Өшіруден қайтарам дегені белгілер тізімінде бар екен.<br>Жаңа, "
+#~ "қайталанбайтын атауды келтіріңіз.</qt>"
+
+#~ msgid "Tag was not undeleted."
+#~ msgstr "Белгі өшіруден қайтарылмады."
+
+#, fuzzy
+#~| msgid "Allanon"
+#~ msgid "All"
+#~ msgstr "Алланон"
+
+#~ msgid "Change the color of the shadow"
+#~ msgstr "Көлеңкенің түсін өзгерту"
+
+#~ msgid "Blur:"
+#~ msgstr "Бұлдырлығы:"
+
+#~ msgid "Distance:"
+#~ msgstr "Аралығы:"
+
+#~ msgid "Butt cap"
+#~ msgstr "Доғал ұшты"
+
+#~ msgid "Round cap"
+#~ msgstr "Дөңгелек ұшты"
+
+#~ msgid "Square cap"
+#~ msgstr "Тікбұрышты ұшы"
+
+#~ msgid "Miter join"
+#~ msgstr "Фацетті түйісі"
+
+#~ msgid "Round join"
+#~ msgstr "Дөңгеленіп түйісу"
+
+#~ msgid "Bevel join"
+#~ msgstr "Қиғаштап түйісу"
+
+#~ msgid "Miter limit"
+#~ msgstr "Фацет шегі:"
+
+#~ msgid "Thickness:"
+#~ msgstr "Қалыңдылығы:"
+
+#~ msgid "Set line width of actual selection"
+#~ msgstr "Сызықтың ені таңдалғандай болсын"
+
+#~ msgid "Change the color of the line/border"
+#~ msgstr "Сызықтың/жиегінің түсін өзгерту"
+
+#, fuzzy
+#~| msgid "Tags"
+#~ msgid "Tag"
+#~ msgstr "Белгілер"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<qt>Entering search terms here will add to, or remove resources from the "
+#~ "current tag view.<para>To filter based on the partial, case insensitive "
+#~ "name of a resource:<br><icode>partialname</icode> or <icode>!partialname</"
+#~ "icode>.</para><para>In-/exclusion of other tag sets:<br><icode>[Tagname]</"
+#~ "icode> or <icode>![Tagname]</icode>.</para><para>Case sensitive and full "
+#~ "name matching in-/exclusion:<br><icode>\"ExactMatch\"</icode> or <icode>!"
+#~ "\"ExactMatch\"</icode>.</para>Filter results cannot be saved for the "
+#~ "<interface>All Presets</interface> view.<br>In this view, pressing "
+#~ "<interface>Enter</interface> or clearing the filter box will restore all "
+#~ "items.<br>Create and/or switch to a different tag if you want to save "
+#~ "filtered resources into named sets.</qt>"
+#~ msgstr ""
+#~ "<qt><qt>Мына іздеу кілтін келтіргенде, назардағы белгі көрінісінде "
+#~ "ресурсты қосылады не өшіріледі.<para>Үлкен-кішілігін ескерімей атауының "
+#~ "бір бөлігін келтіру үшін:<br><icode>атаубөлігі</icode> немесе <icode>!"
+#~ "атаубөлігі</icode>.</para><para>Басқа белгі жиынын кіргізу/шығаруы: "
+#~ "<br><icode>[ТегБелгіАтауы]</icode> немесе <icode>![ТегБелгіАтауы]</icode>."
+#~ "</para><para>Үлкен-кішілігін ескеріп толық атауын келтіру үшін:<br><icode>"
+#~ "\"НақтыСәйкестік\"</icode> немесе <icode>!\"НақтыСәйкестік\"</icode>.</"
+#~ "para><interface>Бүкіл дайындары</interface> көріністегі сүзгілеу нәтижесі "
+#~ "сақтауға келмейді.<br>Бұл көріністе <interface>Enter</interface> пернесін "
+#~ "басса не сүзгі өрнегін өшірсе бүкіл аталымдарды орына қайтарады."
+#~ "<br>Сүзгілеген ресурстарды аталған жиындарға сақтаймын десеңіз, басқа тег-"
+#~ "белгіні құрыңыз не/және басқасына ауысыңыз.</qt>"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<qt>Entering search terms here will add to, or remove resources from the "
+#~ "current tag view.<para>To filter based on the partial, case insensitive "
+#~ "name of a resource:<br><icode>partialname</icode> or <icode>!partialname</"
+#~ "icode>.</para><para>In-/exclusion of other tag sets:<br><icode>[Tagname]</"
+#~ "icode> or <icode>![Tagname]</icode>.</para><para>Case sensitive and full "
+#~ "name matching in-/exclusion:<br><icode>\"ExactMatch\"</icode> or <icode>!"
+#~ "\"ExactMatch\"</icode>.</para>Pressing <interface>Enter</interface> or "
+#~ "clicking the <interface>Save</interface> button will save the changes.</"
+#~ "qt>"
+#~ msgstr ""
+#~ "<qt>Мына іздеу кілтін келтіргенде, назардағы белгі көрінісінде ресурсты "
+#~ "қосылады не өшіріледі.<para>Үлкен-кішілігін ескерімей атауының бір "
+#~ "бөлігін келтіру үшін:<br><icode>атаубөлігі</icode> немесе <icode>!"
+#~ "атаубөлігі</icode>.</para><para>Басқа белгі жиынын кіргізу/шығаруы: "
+#~ "<br><icode>[ТегБелгіАтауы]</icode> немесе <icode>![ТегБелгіАтауы]</icode>."
+#~ "</para><para>Үлкен-кішілігін ескеріп толық атауын келтіру үшін:<br><icode>"
+#~ "\"НақтыСәйкестік\"</icode> немесе <icode>!\"НақтыСәйкестік\"</icode>.</"
+#~ "para><interface><interface>Enter</interface> пернесін басса не "
+#~ "<interface>Сақтау</interface> дегенді түртіп өзгерістерді сатауға болады."
+#~ "</qt>"
+
+#~ msgid "Enter resource filters here"
+#~ msgstr "Ресурс сүзгісін осында келтіріңіз"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<qt>Save the currently filtered set as the new members of the current tag."
+#~ "</qt>"
+#~ msgstr ""
+#~ "<qt>Сүзгілеп алғандарды назардағы белгінің жаңа мүшелері ретінде сақтау.</"
+#~ "qt>"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "<qt>Show the tag box options.</qt>"
+#~ msgstr "<qt>Белгі өрісінің параметрлерін көрсету.</qt>"
+
+#~ msgid "Rename tag"
+#~ msgstr "Белгі атауын өзгерту"
+
+#~ msgid "Delete this tag"
+#~ msgstr "Осы белгіні алып тастау"
+
+#~ msgid "Clear undelete list"
+#~ msgstr "Өшіруден қайту тізімін тазалау"
+
+#~ msgid "Undelete"
+#~ msgstr "Өшіруден қайту"
+
+#~ msgid "Tool Options"
+#~ msgstr "Құрал параметрлері"
+
+#, fuzzy
+#~| msgid "Toggles organising the options in tabs or not"
+#~ msgid "Toggles organizing the options in tabs or not"
+#~ msgstr "Қойындылар тәртібін қосу/ажырату"
+
+#~ msgid "deselect item"
+#~ msgstr "аталымды таңдауынан айну"
+
+#~ msgid "select item"
+#~ msgstr "аталымды таңдау"
+
+#~ msgid "Use same aspect as pixels"
+#~ msgstr "Жақтар ара қатынасы пикселдердегідей"
+
+#~ msgid "Zoom to Selection"
+#~ msgstr "Тандағанды ұғайту"
+
+#~ msgid "Zoom to All"
+#~ msgstr "Барлығын ұғайту"
+
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1"
+
+#~ msgid "All Presets"
+#~ msgstr "Бүкіл дайындары"
+
+#, fuzzy
+#~| msgid "Static Image"
+#~ msgctxt "Static Image"
+#~ msgid "Static"
+#~ msgstr "Тұрақты кескін"
+
+#~ msgid "Value (brightness)"
+#~ msgstr "Мәні (жарықтығы)"
+
+#~ msgid "Cyan"
+#~ msgstr "Циан"
+
+#~ msgid "Magenta"
+#~ msgstr "Маджента"
+
+#~ msgid "Yellow"
+#~ msgstr "Сары"
+
+#~ msgid "Black"
+#~ msgstr "Қара"
+
+#~ msgid "Green to magenta*"
+#~ msgstr "Жасылды маджентаға"
+
+#~ msgid "Blue to yellow"
+#~ msgstr "Көкті сарыға"
+
+#~ msgid "Opacity:"
+#~ msgstr "Мөлдірсіздігі:"
+
+#~ msgid "&Themes"
+#~ msgstr "&Нақыштар"
+
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "Әдетті"
+
+#~ msgid "Configuration..."
+#~ msgstr "Баптау..."
+
+#~ msgid ""
+#~ "Cannot start Colors Settings panel from KDE Control Center. Please check "
+#~ "your system..."
+#~ msgstr ""
+#~ "KDE Басқару орталығының Түстерді баптауы жегілмеді. Жүйеңізді түгелдеңіз."
+
+#~ msgid "&Tools"
+#~ msgstr "Құ&ралдар"
+
+#~ msgid ""
+#~ "The manifest file seems to be corrupted. The document could not be opened."
+#~ msgstr "Манифест файлы бүлінген сияқты. Құжат ашылмайды."
+
+#~ msgid "Color Selector"
+#~ msgstr "Түс таңдағышы"
+
+#~ msgid "Database file \"%1\" does not exist."
+#~ msgstr "\"%1\" деген деректер қорының файлы жоқ."
+
+#~ msgid "Cannot drop database - name not specified."
+#~ msgstr "Деректер қоры өшірілмеді - атауы келтірілмеген."
+
+#~ msgid "Table \"%1\" does not exist in the database."
+#~ msgstr "\"%1\" деген кесте бұл деректер қорында жоқ."
+
+#~ msgid "Single transactions"
+#~ msgstr "Жеке транзакциялар"
+
+#~ msgid "Multiple transactions"
+#~ msgstr "Көпше транзакциялар"
+
+#~ msgid "Nested transactions"
+#~ msgstr "Қабаттасқан транзакциялар"
+
+#~ msgid "Ignored"
+#~ msgstr "Елемеген"
+
+#~ msgid "No such driver service: \"%1\"."
+#~ msgstr "Мұндай драйверінің қызметі жоқ: \"%1\"."
+
+#~ msgid "Could not compact database \"%1\"."
+#~ msgstr "\"%1\" деректер қоры ықшамдалмайды."
+
+#~ msgid "Do you want to open file \"%1\" as read-only?"
+#~ msgstr "\"%1\" файлды тек оқу үшін ашқыңыз келеді ме?"
+
+#~ msgid "The file is probably already open on this or another computer."
+#~ msgstr "Бұл файл бәлкім осы не басқа компьютерінен ашылған."
+
+#~ msgid "Could not gain exclusive access for writing the file."
+#~ msgstr "Файлға жазу үшін керек артықшылығы ерекше құқықты иелену болмады."
+
+#~ msgid "Open As Read-Only"
+#~ msgstr "Тек оқу үшін ашу"
+
+#~ msgid "Could not close busy database."
+#~ msgstr "Істегі деректер қоры жабылмайды."
+
+#~ msgid "Could not remove file \"%1\"."
+#~ msgstr "\"%1\" файлы өшірілмейді."
+
+#~ msgid ""
+#~ "Check the file's permissions and whether it is already opened and locked "
+#~ "by another application."
+#~ msgstr ""
+#~ "Файлдың рұқсаттарың және файл басқа бағдарламамен ашылып бұғатталмағанын "
+#~ "тексеріңіз."
+
+#~ msgid "Compacting database"
+#~ msgstr "Деректер қорын ықшамдау"
+
+#~ msgid "Compacting database \"%1\"..."
+#~ msgstr "\"%1\"деректер қорын ықшамдау..."
+
+#~ msgid ""
+#~ "The database has been compacted. Current size decreased by %1% to %2."
+#~ msgstr "Деректер қоры ықшамдалды. Өлшемі %1% кішірейіп %2 болды."
+
+#~ msgid "No query specified"
+#~ msgstr "Сұраныс келтірілмеген"
+
+#~ msgid "Table \"%1\" does not exist"
+#~ msgstr "\"%1\" деген кесте жоқ"
+
+#~ msgid "Track Total"
+#~ msgstr "Жолсызықтың қортындысы"
+
+#~ msgid "Track Builtin Format"
+#~ msgstr "Жолсызықтың пішімі"
+
+#~ msgid "Use Sub Total"
+#~ msgstr "Қортынды салаларға бөлінсін"
+
+#~ msgid "Track Total Format"
+#~ msgstr "Жолсызық қортындысының пішімі"
+
+#~ msgid "Grid Snap"
+#~ msgstr "Торға келтіруі"
+
+#~ msgid "                Language:"
+#~ msgstr "                Тіл:"
+
+#~ msgid "PushButton"
+#~ msgstr "Батырма"
+
+#~ msgid "Formatting"
+#~ msgstr "Пішімдеу"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open\n"
+#~| "%1.\n"
+#~| "The filter plugins have not been properly registered. Please reboot "
+#~| "Windows. Krita Sketch will now close."
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1.\n"
+#~ "The filter plugins have not been properly registered. Please reboot "
+#~ "Windows. Krita Sketch will now close."
+#~ msgstr ""
+#~ "%1\n"
+#~ "деген ашылмады.\n"
+#~ "Сүзгі плагині дұрыстап тіркелмеген. Windows-ты қайта жүктеңіз. Krita "
+#~ "нобайлау құралы жабылады."
+
+#, fuzzy
+#~| msgid "&Uncompress to Directory"
+#~ msgid "Testing: OpenDirectories"
+#~ msgstr "Қапшыққа &тарқату"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "Import resource"
+#~ msgid "Testing: ImportDirectories"
+#~ msgstr "Ресурсты импорттау"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Recover Files"
+#~ msgid "Testing: SaveFiles"
+#~ msgstr "Файлдарды қалпына келтіру"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "Import resource"
+#~ msgid "Import Directories"
+#~ msgstr "Ресурсты импорттау"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Recover Files"
+#~ msgid "Save Files"
+#~ msgstr "Файлдарды қалпына келтіру"
+
+#~ msgid "Create Path"
+#~ msgstr "Сүрлеуді салу"
+
+#~ msgid "Red Green Blue"
+#~ msgstr "Қызыл Жасыл Көк"
+
+#~ msgid "L a* b*"
+#~ msgstr "L a* b*"
+
+#~ msgid "Cyan Magenta Yellow Black"
+#~ msgstr "Циан Маджента Сары Қара"
+
+#~ msgid "Error!"
+#~ msgstr "Қате!"
+
+#~ msgid "Contacts"
+#~ msgstr "Контакттар"
+
+#~ msgid "Events"
+#~ msgstr "Оқиғалар"
+
+#~ msgid "Locations"
+#~ msgstr "Меккен-жайлар"
+
+#~ msgid "Area"
+#~ msgstr "Аумағы"
+
+#~ msgid "Region"
+#~ msgstr "Өлкесі"
+
+#~ msgid ""
+#~ "Could not add entry\n"
+#~ "%1"
+#~ msgstr ""
+#~ "%1\n"
+#~ "жазуы қосылмады"
+
+#~ msgid ""
+#~ "Could not save iCal file\n"
+#~ "%1"
+#~ msgstr ""
+#~ "%1\n"
+#~ "iCal файлы сақталмады"
+
+#~ msgid "&Summary:"
+#~ msgstr "&Тұжырымы:"
+
+#~ msgid "&Location:"
+#~ msgstr "&Орыны:"
+
+#~ msgid "&Start:"
+#~ msgstr "&Бастауы:"
+
+#~ msgid "&End:"
+#~ msgstr "&Аяқтауы:"
+
+#~ msgid "Time and Date"
+#~ msgstr "Уақыт пен Күн"
+
+#~ msgid "Timezone"
+#~ msgstr "Сағат белдеуі"
+
+#~ msgid "Calendar Event"
+#~ msgstr "Күнтізбе оқиғасы"
+
+#~ msgid "Import event to Calendar"
+#~ msgstr "Күнтізбеге оқиғаны импорттау"
+
+#~ msgid "Export event to iCal file..."
+#~ msgstr "Оқиғаны iCal файлына экспорттау"
+
+#~ msgid "&Name:"
+#~ msgstr "&Аты:"
+
+#~ msgid "&Nick:"
+#~ msgstr "&Бүркеншік аты:"
+
+#~ msgid "&Phone Number:"
+#~ msgstr "&Телефон нөмірі:"
+
+#~ msgid "&Home Page:"
+#~ msgstr "Мекен &парағы:"
+
+#~ msgid "Contact Information"
+#~ msgstr "Контакт мәліметі"
+
+#~ msgid "Import contact"
+#~ msgstr "Контактті импорттау"
+
+#~ msgid "Export as vcard..."
+#~ msgstr "vCard-қа экспорттау."
+
+#~ msgid "&Name"
+#~ msgstr "Атауы"
+
+#~ msgid "The Earth"
+#~ msgstr "Жер"
+
+#~ msgid "The Marble widget displays a virtual globe."
+#~ msgstr "Виртуалды глобусты көрсететін Marble виджеті."
+
+#~ msgid "Navigation Control"
+#~ msgstr "Шарлауды басқару"
+
+#~ msgid "Use this control to navigate."
+#~ msgstr "Осы тізгінімен шарлауға болады."
+
+#~ msgid "Latitude"
+#~ msgstr "Ендігі"
+
+#~ msgid "Longitude"
+#~ msgstr "Бойлығы"
+
+#~ msgid "Location Information"
+#~ msgstr "Мекен-жай мәліметі"
+
+#~ msgid "People"
+#~ msgstr "Тұлғалар"
+
+#~ msgid ""
+#~ "A document with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "Былай аталған құжат бар ғой.\n"
+#~ "Үстінен жазыла берсін бе?"
+
+#~ msgid "Unknown Calligra MimeType %1. Check your installation."
+#~ msgstr "Беймәлім Calligra Mime түрі %1. Орнатуын тексеріңіз."
+
+#~ msgid "%1 (Uncompressed XML Files)"
+#~ msgstr "%1 (Сығылмаған XML файлдары)"
+
+#~ msgid "%1 (Flat XML File)"
+#~ msgstr "%1 (Қарапайым XML файлы)"
+
+#~ msgid "%1 (Encrypted)"
+#~ msgstr "%1 (Шифрланған)"
+
+#~ msgid "%1 (%2 Compatible)"
+#~ msgstr "%1 (%2 үйлесімді)"
+
+#~ msgid "Save Document As"
+#~ msgstr "Құжатты былай сақтау"
+
+#~ msgid "Export Document As"
+#~ msgstr "Құжатты былай экспорттау"
+
+#~ msgid "Export to PDF"
+#~ msgstr "PDF-ке экспорттау..."
+
+#~ msgid "To change background color use Stroke and Fill docker."
+#~ msgstr ""
+#~ "Аясының түсін өзгерту үшін Штрихтау және Толтыру докерін қолданыңыз."
+
+#~ msgid "Slide Background"
+#~ msgstr "Слайд аясы"
+
+#~ msgid "Document background"
+#~ msgstr "Құжат аясы"
+
+#~ msgid "&OK"
+#~ msgstr "Құп"
+
+#~ msgid "&Cancel"
+#~ msgstr "Қ&айту"
+
+#~ msgid "Error Encountered"
+#~ msgstr "Қате тап болды"
+
+#~ msgid "Unable to add a new group because its name would not be unique"
+#~ msgstr "Жаңа топ қосылмады, өйткені оның атауы қайталанады "
+
+#~ msgid "Even Pages(s)"
+#~ msgstr "Жұп бет(тер)"
+
+#~ msgid "Any Pages(s)"
+#~ msgstr "Барлық беттер"
+
+#~ msgid "&Edit"
+#~ msgstr "&Өзгерту"
+
+#~ msgid "&Close"
+#~ msgstr "&Жабу"
+
+#~ msgid "Snapping"
+#~ msgstr "Жабысу"
+
+#~ msgid "Dodge"
+#~ msgstr "Ақшылдау"
+
+#~ msgid "Hard light"
+#~ msgstr "Қатты жарық"
+
+#~ msgid "Soft light"
+#~ msgstr "Сәл жарық"
+
+#~ msgid "Show Shadow"
+#~ msgstr "Көлеңкесін көрсету"
+
+#~ msgid "Angle:"
+#~ msgstr "Бұрышы"
+
+#~ msgid "Offset:"
+#~ msgstr "Шегінісі:"
+
+#~ msgid "Color:"
+#~ msgstr "Түсі:"
+
+#~ msgid "Blur radius:"
+#~ msgstr "Бұлдырлық шеңбері:"
+
+#~ msgid "Style:"
+#~ msgstr "Стилі:"
+
+#~ msgid "Cap:"
+#~ msgstr "Ұшы:"
+
+#~ msgid "Join:"
+#~ msgstr "Түйісі:"
+
+#~ msgid "Set miter limit"
+#~ msgstr "Фацетің шектеу"
+
+#, fuzzy
+#~| msgid "Insert Bookmark"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bookmark"
+#~ msgstr "Бетбелгіні ендіру"
+
+#~ msgid "Insert Table"
+#~ msgstr "Кестені ендіру"
+
+#~ msgid "Insert Row Above"
+#~ msgstr "Жоғарда қатарды ендіру"
+
+#~ msgid "Insert Column Left"
+#~ msgstr "Сол жағына бағанды ендіру"
+
+#~ msgid "Insert Column Right"
+#~ msgstr "Оң жағына бағанды ендіру"
+
+#~ msgid "Delete Column"
+#~ msgstr "Бағанды өшіру"
+
+#~ msgid "Delete Row"
+#~ msgstr "Қатарды өшіру"
+
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Мазмұны тізімін ендіру"
+
+#~ msgid "Insert Bibliography"
+#~ msgstr "Библиографияні ендіру"
+
+#~ msgid "Typing"
+#~ msgstr "Теру"
+
+#~ msgid "min"
+#~ msgstr "мин"
+
+#~ msgid "DetailsPaneBase"
+#~ msgstr "DetailsPaneBase"
+
+#~ msgid "Embedding Object"
+#~ msgstr "Ендірме нысаны"
+
+#~ msgid "I&mport..."
+#~ msgstr "И&мпорттау..."
+
+#~ msgid "&Default"
+#~ msgstr "Ә&детті"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select Item"
+#~ msgstr "Аталымды таңдау"
+
+#~ msgid "Background Tool"
+#~ msgstr "Аясының құралы"
+
+#~ msgid "Use the styles docker to manipulate the background."
+#~ msgstr "Аясын өзгерту үшін стиль докерін қолдану."
+
+#~ msgid "Background editing tool"
+#~ msgstr "Аясын өңдеу құралы"
+
+#~ msgid "Use master background"
+#~ msgstr "Үлгілі аясы болсын"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Separate paths"
+#~ msgstr "Сүрлеудерді бөлу"
+
+#~ msgid ""
+#~ "An autosaved file for an unnamed document exists in %1.\n"
+#~ "This file is dated %2\n"
+#~ "Do you want to open it?"
+#~ msgstr ""
+#~ "%1 дегенде аталмаған құжаттың автосақталған файлы бар.\n"
+#~ "Жасалған күні %2 деп белгіленген\n"
+#~ "Ашып көресіз бе?"
+
+#~ msgid "&Delete Personal Data"
+#~ msgstr "Дербес деректерді ө&шіру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shapes"
+#~ msgstr "Қалыптарды өшіру"
+
+#~ msgid "Substract"
+#~ msgstr "Алып тастау"
+
+#~ msgid "Inverse Substract"
+#~ msgstr "Терістеп азайту"
+
+#~ msgid ""
+#~ "No personal contact data set, please use the "
+#~ "option                                     \"Set as Personal Contact Data"
+#~ "\" from the \"Edit\"     menu in KAddressbook to set one."
+#~ msgstr ""
+#~ "Өз басының контакт деректері жоқ екен                     KAddressbook-"
+#~ "тың \"Өңдеу\" мәзіріндегі     \"Дербес контакт дерек қылу\" жолын "
+#~ "пайдаланыңыз."
+
+#~ msgid "Hide colors with bad contrast"
+#~ msgstr "Контрастығы нашар түстер жасырылсын"
+
+#~ msgid "&Load From Address Book"
+#~ msgstr "&Адрес кітапшасынан алу"
+
+#~ msgid "Shadow Angle:"
+#~ msgstr "Көлеңкенің бағыты:"
+
+#~ msgid "Shadow Color:"
+#~ msgstr "Көлеңкенің түсі:"
+
+#~ msgid "Toggles showing a title bar"
+#~ msgstr "Атау айдарын көрсету/жасыру"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set border"
+#~ msgstr "Шегін орнату"
+
+#~ msgid "Ellipse Shape"
+#~ msgstr "Эллипс қалыпы"
+
+#~ msgid "Set Horizontal Alignment"
+#~ msgstr "Көлденең туралау"
+
+#~ msgid "Line Break"
+#~ msgstr "Жол үзілмі"
+
+#~ msgid "Hide Grid"
+#~ msgstr "Торды жасыру"
+
+#~ msgid "Hide Guides"
+#~ msgstr "Бағыттауыштарын жасыру"
+
+#~ msgid "&Close All Views"
+#~ msgstr "Барлық көріністерін &жабу"
+
+#~ msgid "&Split View"
+#~ msgstr "Көрністі &бөлу"
+
+#~ msgid "&Remove View"
+#~ msgstr "&Көріністі жою"
+
+#~ msgid "Splitter &Orientation"
+#~ msgstr "Бөлу &бағдары"
+
+#~ msgid "&Horizontal"
+#~ msgstr "&Жатық"
+
+#~ msgid "&Vertical"
+#~ msgstr "&Тік"
+
+#~ msgid "End"
+#~ msgstr "Аяқтау"
+
+#~ msgid "Printing page %1"
+#~ msgstr "%1-бет басылуда"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Form"
+#~ msgstr "Пішімі"
+
+#~ msgid "Import"
+#~ msgstr "Импорт"
+
+#, fuzzy
+#~| msgid "Shape"
+#~ msgid "Share"
+#~ msgstr "Қалып"
+
+#, fuzzy
+#~| msgid "Alpha"
+#~ msgid "Copy Opacy"
+#~ msgstr "Альфа"
+
+#, fuzzy
+#~| msgid "Alpha"
+#~ msgid "Copy Alpha"
+#~ msgstr "Альфа"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Light"
+#~ msgstr "Ашық"
+
+#~ msgid "Write PDF"
+#~ msgstr "PDF-ті жазу"
+
+#, fuzzy
+#~| msgid "Dockers"
+#~ msgid "Hide Dockers"
+#~ msgstr "Докерлері"
+
+#, fuzzy
+#~| msgid "Stop"
+#~ msgid "Atop"
+#~ msgstr "Тоқтату"
+
+#~ msgid "KOffice"
+#~ msgstr "KOffice"
+
+#~ msgid "KOffice Storage"
+#~ msgstr "KOffice жинақтауы"
+
+#~ msgid "CCSGraph"
+#~ msgstr "CCSGraph"
+
+#~ msgid "Output the graph of color conversion of pigment's Color Conversion"
+#~ msgstr "Түстерді аудару пигментінің түс аудару диаграммасының шығысы"
+
+#~ msgid "(c) 2007 Cyrille Berger"
+#~ msgstr "(c) 2007 Cyrille Berger"
+
+#~ msgid "return the list of available graphs"
+#~ msgstr "қол жеткізетін диаграммалар тізімі қайтарылады"
+
+#~ msgid ""
+#~ "specify the type of graph (see --graphs to get the full list, the default "
+#~ "is full)"
+#~ msgstr ""
+#~ "диаграмманың түрін келтіріңіз (толық тізімін көру үшін --graphs, "
+#~ "әдеттегісі толық)"
+
+#~ msgid "specify the key of the source color space"
+#~ msgstr "кірістің түс кеңістігінің параметрін келтіріңіз"
+
+#~ msgid "specify the key of the destination color space"
+#~ msgstr "шығыстың түс кеңістігінің параметрін келтіріңіз"
+
+#~ msgid "specify the output (can be ps or dot, the default is ps)"
+#~ msgstr "шығысын келтіріңіз (ps немесе нүкте, әдетте ps)"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Barcode"
+#~ msgstr "Пішімі"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Barcode Format"
+#~ msgstr "Пішімі"
+
+#, fuzzy
+#~| msgid "a chart"
+#~ msgid "Chart"
+#~ msgstr "диаграмма"
+
+#, fuzzy
+#~| msgid "Set point type"
+#~ msgid "Field Font"
+#~ msgstr "Нүктенің түрін орнату"
+
+#, fuzzy
+#~| msgid "Tie"
+#~ msgid "Pie"
+#~ msgstr "Байланыстыру"
+
+#, fuzzy
+#~| msgid "Version"
+#~ msgid "Ring"
+#~ msgstr "Нұсқасы"
+
+#, fuzzy
+#~| msgid "Clear"
+#~ msgid "Polar"
+#~ msgstr "Тазалау"
+
+#, fuzzy
+#~| msgid "Data"
+#~ msgid "Chart Type"
+#~ msgstr "Деректер"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgid "Stacked"
+#~ msgstr "Бос орын"
+
+#, fuzzy
+#~| msgid "Recent:"
+#~ msgid "Percent"
+#~ msgstr "Жуырдағысы:"
+
+#, fuzzy
+#~| msgid "Color name:"
+#~ msgid "Color Scheme"
+#~ msgstr "Түстің атауы:"
+
+#, fuzzy
+#~| msgid "Untitled"
+#~ msgid "Antialiased"
+#~ msgstr "Аталмаған"
+
+#, fuzzy
+#~| msgid "Display page background"
+#~ msgid "Display Legend"
+#~ msgstr "Беттің аясын көрсету"
+
+#~ msgid "QXml"
+#~ msgstr "QXml"
+
+#~ msgid "Zoom Tool"
+#~ msgstr "Ұлғайту/кішрейту құралы"
+
+#~ msgid "Pan Tool"
+#~ msgstr "Мәнзаралау құралы"
+
+#~ msgid "Path tool"
+#~ msgstr "Сүрлеу құралы"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Out"
+#~ msgstr "Басқа"
+
+#~ msgid "ICC Engine"
+#~ msgstr "ICC тетігі"
+
+#~ msgid "RGB8 Histogram"
+#~ msgstr "RGB8 гистограма"
+
+#~ msgid "Insert Linebreak"
+#~ msgstr "Жол аяқтау белгісін ендіру"
+
+#~ msgid "&Insert"
+#~ msgstr "&Ендіру"
+
+#~ msgid "Insert the selected character in the text"
+#~ msgstr "Таңдалған таңбаны мәтінге ендіру"
+
+#~ msgid "Resize Panel Forward"
+#~ msgstr "Панель өлшемін алға"
+
+#~ msgid "Resize Panel Reverse"
+#~ msgstr "Панель өлшемін артқа"
+
+#~ msgid "Access Keys"
+#~ msgstr "Қатынау пернелері"
+
+#~ msgid "Enable word completion"
+#~ msgstr "Сөзді аяқтау рұқсат етілсін"
+
+#~ msgid ""
+#~ "Toggle autocompletion on and off: if this is checked then autocompletion "
+#~ "will be enabled."
+#~ msgstr "Автоаяқтауды қосу/ажырату: белгісі қойылса - рұқсат етілгені."
+
+#~ msgid ""
+#~ "Suggestion list for autocompletion: contains all the words that will be "
+#~ "autocompleted."
+#~ msgstr ""
+#~ "Автоаяқтау ұсыныстар тізімі: бұнда барлық автоаяқтауы ұсынатын сөздер "
+#~ "келтірілген."
+
+#~ msgid ""
+#~ "By clicking this button you can add manually an individual word to the "
+#~ "completion list."
+#~ msgstr ""
+#~ "Осы батырманы басып автоаяқтау ұсыныстар тізіміне қолмен бір сөз қоса "
+#~ "аласыз."
+
+#~ msgid ""
+#~ "To remove words from the completion list, select the word with the left "
+#~ "mouse button from the list, then click this button."
+#~ msgstr ""
+#~ "Автоаяқтау ұсыныстар тізімінен сөзді өшіру үшін оны тышқанның сол жақ "
+#~ "батырмасының көмегімен таңдап, осы батырманы басыңыз."
+
+#~ msgid "Automatically add new words to suggestion list"
+#~ msgstr "Ұсыныстар тізіміне жаңа сөздер автоматты түрде қосылсын"
+
+#~ msgid ""
+#~ "If this option is enabled, any word equal to or longer than the "
+#~ "\"Characters needed\" typed in this document will automatically be added "
+#~ "to the list of words used by the completion."
+#~ msgstr ""
+#~ "Белгісі қойылса, осы құжатта терілген сөздің ұзындығы \"Әріптер санының "
+#~ "шегі\" дегенде келтірілгенге тең не одан артық болса, автоматты түрде "
+#~ "ұсыныстар тізіміне енгізіледі."
+
+#~ msgid "Completion Options"
+#~ msgstr "Автоаяқтау параметрлері"
+
+#~ msgid "Show words in tooltip"
+#~ msgstr "Сөз ишара жазуда көрсетілсін"
+
+#~ msgid ""
+#~ "If this option is enabled, a tool tip box will appear when you type the "
+#~ "beginning of a word that exists in the completion list. To complete the "
+#~ "word, press the key you set to accept suggestions in the \"Key to accept "
+#~ "suggestion\" drop-down list."
+#~ msgstr ""
+#~ "Белгісі қойылса, автоаяқтау ұсыныстар тізіміне бар сөздің басы терілгенде "
+#~ "ишара жазуы пайда болады. Сөзді ұсыныстағыдай аяқтау үшін \"Ұсынысты "
+#~ "қабылдау пернесі\" дегенде таңдалған пернесін басу керек."
+
+#~ msgid ""
+#~ "This sets the maximum number of words in the completion list. All "
+#~ "additional words will not be included in the list. You can select any "
+#~ "value from 1 to 500. This option keeps the list from becoming too "
+#~ "cumbersome.\n"
+#~ "This option is most important when Automatically add words to completion "
+#~ "list is enabled."
+#~ msgstr ""
+#~ "Бұл автоаяқтау ұсыныстар тізімінің жоғарғы шегі. Бұдан артық сөздер "
+#~ "тізімге енгізілмейді. Мәнін 1 мен 500 арасында қылып таңдаңыз. Бұл "
+#~ "параметр тізімді тым ұзын болып кетеуден сақтайды.\n"
+#~ "Параметр \"Ұсыныстар тізіміне жаңа сөздер автоматты түрде қосылсын\" "
+#~ "деген қосылып тұрғанда маңызды."
+
+#~ msgid "Characters needed:"
+#~ msgstr "Әріптер санының шегі:"
+
+#~ msgid "Suggest words:"
+#~ msgstr "Ұсынылатын сөздер:"
+
+#~ msgid ""
+#~ "Use this spinbox/slider combination to prevent automatically adding short "
+#~ "words to the completion list. You can select any value from 5-100 and the "
+#~ "words will need to be at least the number of characters set here to be "
+#~ "added to the list."
+#~ msgstr ""
+#~ "Осы сан тергіш пен жүгірткіні бірге тым қысқа сөздер ұсыныстар тізіміне "
+#~ "енгізілмеу үшін қолданыңыз. Тізімінің жоғарғы шегінің мәнін 1 мен 500 "
+#~ "арасында және тізімдегі сөздің ең қысқа ұзыңдығын таңдаңыз."
+
+#~ msgid "Append space"
+#~ msgstr "Бос орын тіркелсін"
+
+#~ msgid ""
+#~ "If checked, it adds a single space to the end of a word after "
+#~ "autocompletion, this means it is not necessary to add the space manually "
+#~ "for the next word."
+#~ msgstr ""
+#~ "Белгісі қойылса, ақтоаяқталған сөзден кейін бір бос орын жалғанады. "
+#~ "Сонымен, келесі сөзді терудің алдында бос орын енгізу қажеті болмайды."
+
+#~ msgid "Key to accept suggestion:"
+#~ msgstr "Ұсынысты қабылдау пернесі:"
+
+#~ msgid ""
+#~ "Set the key you want to use when an autocompleted word is suggested to "
+#~ "you and you want to accept it. You can choose Enter, Tab, Space, End or "
+#~ "Right."
+#~ msgstr ""
+#~ "Ұсынылғанмен келісіп автоаяқтауды қабылдау үшін қолданатын пернені "
+#~ "таңдау. Enter, Tab, Бос_орын, End, Оңға пернелерінің біреуін таңдауға "
+#~ "болады."
+
+#~ msgid "Make Default"
+#~ msgstr "Әдетті қылу"
+
+#~ msgid ""
+#~ "Completion is configured per document. Making this list the default will "
+#~ "allow you to use it for new documents automatically. A dialog will appear "
+#~ "to inform you that the list will be used for all documents from now on."
+#~ msgstr ""
+#~ "Автоаяқтау бір құжат үшін ғана бапталды. Бұл тізімді әдетті қылсаңыз оны "
+#~ "басқа құжаттар үшін автоматты түрде қолданатын болады. Енді тізім барлық "
+#~ "құжаттар үшін қолданылады деп диалог терезесі көрсетіледі."
+
+#~ msgid "C&ustom"
+#~ msgstr "Б&асқа"
+
+#~ msgid "&Insert:"
+#~ msgstr "&Ендіретіні:"
+
+#~ msgid "Paragraph Background Color"
+#~ msgstr "Абзац аясының түсі"
+
+#~ msgid ""
+#~ "<p>Paragraph Background Color</p>\n"
+#~ "\n"
+#~ "<p>The paragraph background color appears\n"
+#~ "between the left and right margins of a\n"
+#~ "paragraph.</p>\n"
+#~ "\n"
+#~ "<p>If the text has a background color set, then\n"
+#~ "the text background will appear 'on top' of the\n"
+#~ "paragraph background.  In this case, the paragraph\n"
+#~ "background will still show on parts of the paragraph\n"
+#~ "that have no text (usually on the last line, between\n"
+#~ "the end of the text and the margin).</p>"
+#~ msgstr ""
+#~ "<p>Абзац аясының түсі</p>\n"
+#~ "\n"
+#~ "<p>Абзац аясының түсіне оң мен\n"
+#~ "сол жақ жиегінің арасы боялады.</p>\n"
+#~ "\n"
+#~ "<p>Егер мәтіннің өзінің аясының түсі болса,\n"
+#~ "ол абзац аясының түсінің үстінен боялады.\n"
+#~ "Бұл жағдайда абзац аясының түсі мәтіні жоқ\n"
+#~ "бөліктерінде көрінеді (әдетте соңғы жолында,\n"
+#~ "мәтіннің соңы мен жиегінің арасында).</p>"
+
+#~ msgid "Borders"
+#~ msgstr "Шектері"
+
+#~ msgid ""
+#~ "<p>Paragraph Borders</p>\n"
+#~ "\n"
+#~ "<p>The preview shows what the currently \n"
+#~ "selected paragraph borders will look like.</p>\n"
+#~ "\n"
+#~ "<p>To <i>add</i> a new border: Select the desired style,\n"
+#~ "width and color.  Click the toggle button that corresponds\n"
+#~ "to that border.</p>\n"
+#~ "\n"
+#~ "<p>To <i>remove</i> an existing border: Either click on the\n"
+#~ "border to be removed in the preview, or click the\n"
+#~ "toggle button corresponding to that border.</p>\n"
+#~ "\n"
+#~ "<p>To <i>modify</i> a border: Select the desired style,\n"
+#~ "width and color, then click on the border to be\n"
+#~ "modified in the preview.</p>"
+#~ msgstr ""
+#~ "<p>Абзацтың шектері</p>\n"
+#~ "\n"
+#~ "<p>Бұнда қазір таңдалған абзацтың\n"
+#~ "шектері қандай болады екенін көрсетеді.</p>\n"
+#~ "\n"
+#~ "<p>Жаңа шегін <i>қосу</i> үшін: Қалаған стилін,\n"
+#~ "енін, түсін таңдаңыз.  Шегіне сәйкес батырманы\n"
+#~ "басып қалыңыз.</p>\n"
+#~ "\n"
+#~ "<p>Бар шегін <i>өшіру</i> үшін: Немесе нобайдағы\n"
+#~ "шектің сызығын түртіп кетіріңіз, немесе шегіне\n"
+#~ "сәйкесті батырманы басып қалыңыз.</p>\n"
+#~ "\n"
+#~ "<p>Жаңа шегін <i>өзгерту</i> үшін: Қалаған стилін,\n"
+#~ "енін, түсін таңдаңыз. Шегіне сәйкесті батырманы\n"
+#~ "басып қалыңыз.</p>"
+
+#~ msgid "&Width:"
+#~ msgstr "&Ені:"
+
+#~ msgid "Add/remove left paragraph border"
+#~ msgstr "Абзацтың сол жақ шегін келтіру/кетіру"
+
+#~ msgid "Toggles the left paragraph border on or off."
+#~ msgstr "Абзацтың сол жақ шегін келтіру/кетіру."
+
+#~ msgid "Add/remove right paragraph border"
+#~ msgstr "Абзацтың оң жақ шегін келтіру/кетіру"
+
+#~ msgid "Toggles the right paragraph border on or off."
+#~ msgstr "Абзацтың оң жақ шегін келтіру/кетіру."
+
+#~ msgid "Add/remove top paragraph border"
+#~ msgstr "Абзацтың жоғарғы шегін келтіру/кетіру"
+
+#~ msgid "Toggles the top paragraph border on or off."
+#~ msgstr "Абзацтың жоғарғы шегін келтіру/кетіру."
+
+#~ msgid "Add/remove bottom paragraph border"
+#~ msgstr "Абзацтың төменгі шегін келтіру/кетіру"
+
+#~ msgid "Toggles the bottom paragraph border on or off."
+#~ msgstr "Абзацтың төменгі шегін келтіру/кетіру."
+
+#~ msgid "&Merge with next paragraph"
+#~ msgstr "Келесі абзацтығымен &біріктірілсін"
+
+#~ msgid ""
+#~ "Merges the border style of the current paragraph with the next paragraph"
+#~ msgstr "Назардағы абзац шегінің стилін келесі абзацтығымен біріктіру"
+
+#~ msgid ""
+#~ "<p>Merge with next paragraph</p>\n"
+#~ "\n"
+#~ "<p>When this option is checked, no top or bottom borders\n"
+#~ "will appear between consecutive paragraphs with the\n"
+#~ "same style.  Top and Bottom borders will only appear between\n"
+#~ "paragraphs with different styles.</p>\n"
+#~ "\n"
+#~ "<p>When this option is unchecked, top and bottom borders\n"
+#~ "always appear at the top and bottom of paragraphs with this style,\n"
+#~ "regardless of the style of the preceding and subsequent paragraphs.</p>"
+#~ msgstr ""
+#~ "<p>Келесі абзацтығымен біріктірілсін</p>\n"
+#~ "\n"
+#~ "<p>Белгісі қойылса, екі көрші абзацтың стилі бірдей\n"
+#~ "болса арасындағы төменгі және жоғарғы шегі жоқ\n"
+#~ "болады. Көрші абзацтардың стилі бөлек болса\n"
+#~ "арасындағы төменгі және жоғарғы шегі бар\n"
+#~ "болады.</p>\n"
+#~ "\n"
+#~ "<p>Белгісі қойылмаса, екі көрші абзацтың стилі\n"
+#~ "бірдей болса да болмаса да арасындағы төменгі\n"
+#~ "және жоғарғы шегі болады.</p>"
+
+#~ msgid "String:"
+#~ msgstr "Жол:"
+
+#~ msgid "Boolean:"
+#~ msgstr "Логикалық:"
+
+#~ msgid "true"
+#~ msgstr "ақиқат"
+
+#~ msgid "false"
+#~ msgstr "жалған"
+
+#~ msgid "Date:"
+#~ msgstr "Күні:"
+
+#~ msgid "Set Guide Line Position"
+#~ msgstr "Бағыттауыш сызықты орнату"
+
+#~ msgid "Add Guide Line"
+#~ msgstr "Бағыттауыш сызықты қосу"
+
+#~ msgid "Horizontal"
+#~ msgstr "Жатық"
+
+#~ msgid "Vertical"
+#~ msgstr "Тік"
+
+#~ msgid "&Position:"
+#~ msgstr "&Орны:"
+
+#~ msgid "Guide Line"
+#~ msgstr "Бағыттауыш сызығы"
+
+#~ msgid "Guide Lines"
+#~ msgstr "Бағыттауыш сызықтары"
+
+#~ msgid "No handler found for %1"
+#~ msgstr "%1 үшін өңдеушісі табылған жоқ"
+
+#~ msgid ""
+#~ "Error loading %1:\n"
+#~ "%2"
+#~ msgstr ""
+#~ "%1 дегенді жүктеу қатесі:\n"
+#~ "%2"
+
+#~ msgid ""
+#~ "This document contains an external link to a remote document\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Құжатта қашықтағы құжатқа сыртқы сілтемесі бар\n"
+#~ "%1"
+
+#~ msgid "Confirmation Required"
+#~ msgstr "Құптау талап етілген"
+
+#~ msgid "Skip"
+#~ msgstr "Өткізіп жіберу"
+
+#~ msgid ""
+#~ "Could not load external document %1:\n"
+#~ "%2"
+#~ msgstr ""
+#~ "%1 сыртқы құжаты жүктелмеді:\n"
+#~ "%2"
+
+#~ msgid "Error while saving embedded documents"
+#~ msgstr "Ендірме құжатты сақтағанда қате пайда болды"
+
+#~ msgid "Na&me:"
+#~ msgstr "&Атауы:"
+
+#~ msgid "Protect si&ze and position"
+#~ msgstr "Өл&шем мен орны қорғалсын"
+
+#~ msgid "Keep &aspect ratio"
+#~ msgstr "Жақтарының &ара қатынасы сақталсын"
+
+#~ msgid "&Height:"
+#~ msgstr "&Биіктігі:"
+
+#~ msgid "&Top:"
+#~ msgstr "Ж&оғарғы:"
+
+#~ msgid "&Left:"
+#~ msgstr "&Сол жақ:"
+
+#~ msgid "Context Help"
+#~ msgstr "Контекстті анықтама"
+
+#~ msgid "Here will be shown help according to your actions"
+#~ msgstr "Амалыңызға қарай анықтама беріледі"
+
+#~ msgid "All values are given in %1."
+#~ msgstr "Барлығы %1 өлшемінде берілген."
+
+#~ msgid "&Size:"
+#~ msgstr "Өл&шемі:"
+
+#~ msgid "&Portrait"
+#~ msgstr "&Тігінен"
+
+#~ msgid "La&ndscape"
+#~ msgstr "&Көлденеңнен"
+
+#~ msgid "The page width is smaller than the left and right margins."
+#~ msgstr "Беттің ені оң мен сол жиектерінен кем."
+
+#~ msgid "Page Layout Problem"
+#~ msgstr "Парақ өлшемдер мәселесі"
+
+#~ msgid "The page height is smaller than the top and bottom margins."
+#~ msgstr "Беттің биіктігі жоғарғы мен төменгі жиектерінен кем."
+
+#~ msgid "Show &Grid"
+#~ msgstr "&Торды көрсету"
+
+#~ msgctxt "Custom size"
+#~ msgid "Custom"
+#~ msgstr "Басқа"
+
+#, fuzzy
+#~| msgid "Delete slide"
+#~ msgid "Delete slides"
+#~ msgstr "Слайдты өшіру"
+
+#, fuzzy
+#~| msgid "Delete page"
+#~ msgid "Delete pages"
+#~ msgstr "Бетті өшіру"
+
+#~ msgid "Insert Object"
+#~ msgstr "Нысанды ендіру"
+
+#~ msgid "Column spacing:"
+#~ msgstr "Бағандар аралығы:"
+
+#~ msgid "Footnote/ Endnote"
+#~ msgstr "Астылық/Соңғылық сілтемесі"
+
+#~ msgid "Spacing between footnote and body:"
+#~ msgstr "Астылық сілтеме мен негізгі мәтіндерінің аралығы:"
+
+#~ msgid "Different footer for even and odd pages"
+#~ msgstr "Жұп пен тақ беттердегі төменгі колонтитулдары бөлек"
+
+#~ msgid "Different footer for the first page"
+#~ msgstr "Алғашқы беттегі төменгі колонтитулы бөлек"
+
+#~ msgid "Spacing between footer and body:"
+#~ msgstr "Төменгі колонтитулы мен негізгі мәтіннің аралығы:"
+
+#~ msgid "Spacing between header and body:"
+#~ msgstr "Жоғарғы колонтитулы мен негізгі мәтіннің аралығы:"
+
+#~ msgid "Different header for even and odd pages"
+#~ msgstr "Жұп пен тақ беттердегі жоғарғы колонтитулдары бөлек"
+
+#~ msgid "Different header for the first page"
+#~ msgstr "Алғашқы беттегі жоғарғы колонтитулы бөлек"
+
+#~ msgid "Page Preview"
+#~ msgstr "Алдын-ала қарау"
+
+#~ msgid "Page Size && &Margins"
+#~ msgstr "Бет өлшемі мен &жиектері"
+
+#~ msgid "H&eader && Footer"
+#~ msgstr "&Колонтитулдары"
+
+#~ msgid "Head Line"
+#~ msgstr "Жоғарғы колонтитулы"
+
+#~ msgid "Foot Line"
+#~ msgstr "Төменгі колонтитулы"
+
+#~ msgid "You can insert several tags in the text:"
+#~ msgstr "мәтінге бірнеше тегтерді енгізе аласыз:"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;sheet&gt; The sheet name</li><li>&lt;page&gt; The current "
+#~ "page</li><li>&lt;pages&gt; The total number of pages</li><li>&lt;name&gt; "
+#~ "The filename or URL</li><li>&lt;file&gt; The filename with complete path "
+#~ "or the URL</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;sheet&gt; Беттің атауы</li><li>&lt;page&gt; Назардағы "
+#~ "бет</li><li>&lt;pages&gt; Жалпы беттер саны</li><li>&lt;name&gt; Файл не "
+#~ "URL-сілтемесі</li><li>&lt;file&gt; Толық жолымен файл атауы не URL-"
+#~ "сілтемесі</li></ul></qt>"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;time&gt; The current time</li><li>&lt;date&gt; The "
+#~ "current date</li><li>&lt;author&gt; Your full name</li><li>&lt;org&gt; "
+#~ "Your organization</li><li>&lt;email&gt; Your email address</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;time&gt; Қазіргі уақыт</li><li>&lt;date&gt; Бүгінгі күн</"
+#~ "li><li>&lt;author&gt; Толық атыңыз</li><li>&lt;org&gt; Мекеме/Ұйымыңыз</"
+#~ "li><li>&lt;email&gt; Эл.пошта адресіңіз</li></ul></qt>"
+
+#~ msgid "Col&umns"
+#~ msgstr "&Бағандар"

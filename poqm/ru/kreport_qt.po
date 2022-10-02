@@ -1,0 +1,8480 @@
+# KDE3 - koffice/koffice.po Russian translation.
+# Copyright (C) 2006 KDE Russian translation team.
+# Vitaly Lopatin <vitls@chat.ru>, 2000.
+# Andrey Cherepanov <sibskull@mail.ru>, 2001-2006.
+# Zumus <zumus@mail.ru>, 2005.
+# Nick Shaforostoff <shafff@ukr.net>, 2004-2006.
+# Nick Shaforostoff <shaforostoff@kde.ru>, 2007, 2009.
+# Alexander Potashev <aspotashev@gmail.com>, 2010, 2011, 2012, 2015, 2018.
+# Yuri Efremov <yur.arh@gmail.com>, 2011, 2012.
+# Georgiy Syptchenko <superzhook@gmail.com>, 2014, 2015.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: koffice\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2018-12-27 16:45+1000\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 18.12.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "Не удалось прочитать документ XML."
+
+#: common/KReportDesign.cpp:159
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Ошибка в документе XML."
+
+#: common/KReportItemBase.cpp:75
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Название"
+
+#: common/KReportItemBase.cpp:75
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Название объекта"
+
+#: common/KReportItemBase.cpp:78
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Положение"
+
+#: common/KReportItemBase.cpp:79
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Размер"
+
+#: common/KReportItemBase.cpp:112
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Источник данных"
+
+#: common/KReportItemLine.cpp:80
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "Положение начала"
+
+#: common/KReportItemLine.cpp:81
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Положение конца"
+
+#: common/KReportItemLine.cpp:83
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "Толщина линии"
+
+#: common/KReportItemLine.cpp:85
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Цвет линии"
+
+#: common/KReportItemLine.cpp:86
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Стиль линии"
+
+#: common/KReportSectionData.cpp:164
+#, fuzzy
+#| msgid "Current Section"
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Текущий раздел"
+
+#: common/KReportSectionData.cpp:166
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "Высота"
+
+#: common/KReportSectionData.cpp:170
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Цвет фона"
+
+#: common/KReportUnit.cpp:136
+#, fuzzy
+#| msgid "Invalid Type"
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Недопустимый тип"
+
+#: common/KReportUnit.cpp:138
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "Миллиметры (мм)"
+
+#: common/KReportUnit.cpp:140
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "Сантиметры (см)"
+
+#: common/KReportUnit.cpp:142
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "Дециметры (дм)"
+
+#: common/KReportUnit.cpp:144
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "Дюймы (дм)"
+
+# пики? (мн.ч.)
+#: common/KReportUnit.cpp:146
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "Пика (pi)"
+
+# мн.ч.?
+#: common/KReportUnit.cpp:148
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "Цицеро (cc)"
+
+#: common/KReportUnit.cpp:150
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "Пункты (пт)"
+
+#: common/KReportUnit.cpp:152
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "Пикселы (пикс.)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr "Неподдерживаемая единица измерения"
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Colors"
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Одна панель"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:80
+#, fuzzy
+#| msgid "Style"
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "Стиль"
+
+#: items/check/KReportItemCheck.cpp:84
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Цвет переднего плана"
+
+#: items/check/KReportItemCheck.cpp:86
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "Толщина линии"
+
+#: items/check/KReportItemCheck.cpp:88
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Цвет линии"
+
+#: items/check/KReportItemCheck.cpp:89
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Стиль линии"
+
+#: items/check/KReportItemCheck.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Значение"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Значение"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:94
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "По левому краю"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "По центру"
+
+#: items/field/KReportItemField.cpp:94
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "По правому краю"
+
+#: items/field/KReportItemField.cpp:96
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Выравнивание по горизонтали"
+
+#: items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "По верхнему краю"
+
+#: items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "По нижнему краю"
+
+#: items/field/KReportItemField.cpp:102
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Выравнивание по вертикали"
+
+#: items/field/KReportItemField.cpp:104
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Шрифт"
+
+#: items/field/KReportItemField.cpp:106
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Цвет фона"
+
+#: items/field/KReportItemField.cpp:107
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Цвет переднего плана"
+
+#: items/field/KReportItemField.cpp:109
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Непрозрачность фона"
+
+#: items/field/KReportItemField.cpp:114
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "Толщина линии"
+
+#: items/field/KReportItemField.cpp:116
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Цвет линии"
+
+#: items/field/KReportItemField.cpp:117
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Стиль линии"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:120
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgid "Street:"
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Улица:"
+
+#: items/image/KReportItemImage.cpp:120
+#, fuzzy
+#| msgid "Resize"
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "Изменить размер"
+
+#: items/image/KReportItemImage.cpp:121
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Значение"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:91
+#, fuzzy
+#| msgid "Caption"
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Заголовок"
+
+#: items/label/KReportItemLabel.cpp:94
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "По левому краю"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "По центру"
+
+#: items/label/KReportItemLabel.cpp:94
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "По правому краю"
+
+#: items/label/KReportItemLabel.cpp:96
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Выравнивание по горизонтали"
+
+#: items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "По верхнему краю"
+
+#: items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "По нижнему краю"
+
+#: items/label/KReportItemLabel.cpp:102
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Выравнивание по вертикали"
+
+#: items/label/KReportItemLabel.cpp:104
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Шрифт"
+
+#: items/label/KReportItemLabel.cpp:106
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Цвет фона"
+
+#: items/label/KReportItemLabel.cpp:107
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Цвет переднего плана"
+
+#: items/label/KReportItemLabel.cpp:109
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Непрозрачность фона"
+
+#: items/label/KReportItemLabel.cpp:114
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "Толщина линии"
+
+#: items/label/KReportItemLabel.cpp:116
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Цвет линии"
+
+#: items/label/KReportItemLabel.cpp:117
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Стиль линии"
+
+#: items/text/KReportItemText.cpp:115
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Значение"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:119
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "По левому краю"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "По центру"
+
+#: items/text/KReportItemText.cpp:119
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "По правому краю"
+
+#: items/text/KReportItemText.cpp:121
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Выравнивание по горизонтали"
+
+#: items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "По верхнему краю"
+
+#: items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "По нижнему краю"
+
+#: items/text/KReportItemText.cpp:127
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Выравнивание по вертикали"
+
+#: items/text/KReportItemText.cpp:129
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Шрифт"
+
+#: items/text/KReportItemText.cpp:131
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Цвет фона"
+
+#: items/text/KReportItemText.cpp:132
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Цвет переднего плана"
+
+#: items/text/KReportItemText.cpp:134
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "Толщина линии"
+
+#: items/text/KReportItemText.cpp:136
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Цвет линии"
+
+#: items/text/KReportItemText.cpp:137
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Стиль линии"
+
+#: items/text/KReportItemText.cpp:138
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Непрозрачность фона"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, fuzzy, qt-format
+#| msgid "Script File"
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr "Файл сценария"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+#, fuzzy
+#| msgid "Syntax Error"
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Синтаксическая ошибка"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:315
+#, fuzzy
+#| msgctxt "KReportUnit|"
+#| msgid "Unsupported unit"
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr "Неподдерживаемая единица измерения"
+
+#: wrtembed/KReportDesigner.cpp:676
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Верхний колонтитул (любые страницы)"
+
+#: wrtembed/KReportDesigner.cpp:680
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Верхний колонтитул (чётные страницы)"
+
+#: wrtembed/KReportDesigner.cpp:684
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Верхний колонтитул (нечётные страницы)"
+
+#: wrtembed/KReportDesigner.cpp:688
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Верхний колонтитул (первая страница)"
+
+#: wrtembed/KReportDesigner.cpp:692
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Верхний колонтитул (последняя страница)"
+
+#: wrtembed/KReportDesigner.cpp:696
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "Нижний колонтитул (любые страницы)"
+
+#: wrtembed/KReportDesigner.cpp:700
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "Нижний колонтитул (чётные страницы)"
+
+#: wrtembed/KReportDesigner.cpp:704
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "Нижний колонтитул (нечётные страницы)"
+
+#: wrtembed/KReportDesigner.cpp:708
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "Нижний колонтитул (первая страница)"
+
+#: wrtembed/KReportDesigner.cpp:712
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "Нижний колонтитул (последняя страница)"
+
+#: wrtembed/KReportDesigner.cpp:716
+#, fuzzy
+#| msgid "No Header"
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "Отключить верхний колонтитул"
+
+#: wrtembed/KReportDesigner.cpp:720
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "Нижний колонтитул"
+
+#: wrtembed/KReportDesigner.cpp:808
+#, fuzzy
+#| msgid "Export"
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "Экспортировать"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Title"
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Заголовок"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Author Title"
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Автор"
+
+#: wrtembed/KReportDesigner.cpp:818
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Размер страницы"
+
+#: wrtembed/KReportDesigner.cpp:821
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Размер страницы"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "Portrait"
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "Портрет"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "Landscape"
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "Альбом"
+
+#: wrtembed/KReportDesigner.cpp:827
+#, fuzzy
+#| msgid "Page Orientation"
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "Ориентация страницы"
+
+#: wrtembed/KReportDesigner.cpp:832
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Размер страницы"
+
+#: wrtembed/KReportDesigner.cpp:833
+#, fuzzy
+#| msgid "Show Grid"
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Показать сетку"
+
+#: wrtembed/KReportDesigner.cpp:834
+#, fuzzy
+#| msgid "Snap to Grid"
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Прилипать к сетке"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:841
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Левое поле"
+
+#: wrtembed/KReportDesigner.cpp:843
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Правое поле"
+
+#: wrtembed/KReportDesigner.cpp:845
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Верхнее поле"
+
+#: wrtembed/KReportDesigner.cpp:847
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Нижнее поле"
+
+#: wrtembed/KReportDesigner.cpp:869
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Сценарий"
+
+#: wrtembed/KReportDesigner.cpp:1067
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Вырезать"
+
+#: wrtembed/KReportDesigner.cpp:1071
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Копировать"
+
+#: wrtembed/KReportDesigner.cpp:1076
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Вставить"
+
+#: wrtembed/KReportDesigner.cpp:1087
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Удалить"
+
+#: wrtembed/KReportDesigner.cpp:1129
+#, fuzzy
+#| msgid "Line"
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Линия"
+
+#: wrtembed/KReportDesigner.cpp:1476
+#, fuzzy
+#| msgid "Line"
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Линия"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1521
+#, fuzzy
+#| msgid "Completion Word"
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr "Автозавершение"
+
+#: wrtembed/KReportDesigner.cpp:1525
+#, fuzzy
+#| msgid "Copy"
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "Копировать"
+
+#: wrtembed/KReportDesigner.cpp:1527
+#, fuzzy
+#| msgid "Completion Word"
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr "Автозавершение"
+
+#: wrtembed/KReportDesigner.cpp:1531
+#, fuzzy
+#| msgid "Paste"
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "Вставить"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1544
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Изменить разделы"
+
+#: wrtembed/KReportDesigner.cpp:1547
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr "Поднять"
+
+#: wrtembed/KReportDesigner.cpp:1549
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr "Опустить"
+
+#: wrtembed/KReportDesignerSection.cpp:126
+#, fuzzy
+#| msgid "Detailed View"
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "Подробный вид"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+#, fuzzy
+#| msgid "Section Title"
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Заголовок раздела"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+#, fuzzy
+#| msgid "Column:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Колонка:"
+
+# combobox options: ascending, descending --aspotashev
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+#, fuzzy
+#| msgid "Sort:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Сортировать:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+#, fuzzy
+#| msgid "Show Guides"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Показать направляющие"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+#, fuzzy
+#| msgid "Show Guides"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Показать направляющие"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+#, fuzzy
+#| msgid "Insert break after paragraph"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr "Вставить разрыв после абзаца"
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+#, fuzzy
+#| msgid "Select styles to import:"
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr "Импортировать стили:"
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+
+#: wrtembed/KReportRuler_p.cpp:1472
+#, fuzzy
+#| msgid "First line indent"
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Отступ первой строки"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+#, fuzzy
+#| msgid "Left indent"
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Отступ слева"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+#, fuzzy
+#| msgid "Right indent"
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Отступ справа"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr "Добавить..."
+
+#: wrtembed/KReportSectionEditor.cpp:74
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "Изменить..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Удалить"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Переместить выше"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Переместить ниже"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+#, fuzzy
+#| msgid "Ascending"
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr "По возрастанию"
+
+#: wrtembed/KReportSectionEditor.cpp:312
+#, fuzzy
+#| msgid "Descending"
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr "По убыванию"
+
+#: wrtembed/KReportSectionEditor.ui:29
+#, fuzzy
+#| msgid "Show Guides"
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Показать направляющие"
+
+#: wrtembed/KReportSectionEditor.ui:36
+#, fuzzy
+#| msgid "Show Guides"
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Показать направляющие"
+
+#: wrtembed/KReportSectionEditor.ui:43
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Верхний колонтитул"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "Первая страница:"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Чётные страницы:"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Все страницы:"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Последняя страница:"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Нечётные страницы:"
+
+#: wrtembed/KReportSectionEditor.ui:130
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "Нижний колонтитул"
+
+#: wrtembed/KReportSectionEditor.ui:217
+#, fuzzy
+#| msgid "Current Section"
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Текущий раздел"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, qt-format
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+#, fuzzy
+#| msgid "Fit Page Width"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "По ширине страницы"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+#, fuzzy
+#| msgid "Fit Page"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Страница целиком"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr ""
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+#, fuzzy
+#| msgid "Fit Page Width"
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "По ширине страницы"
+
+#, fuzzy
+#~| msgctxt "KReportPageFormat|"
+#~| msgid "US Letter"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "US Letter"
+
+#, fuzzy
+#~| msgctxt "KReportPageFormat|"
+#~| msgid "US Legal"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "US Legal"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "Custom"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "Другой формат"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B6"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B5"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B4"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "Execute"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "Выполнить"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B0"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B1"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgctxt "KReportPageFormat|"
+#~| msgid "ISO B10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "ISO B10"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B2"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B3"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "Comma"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "запятая"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "ISO DL"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Folio"
+#~ msgstr "US Folio"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "US Ledger"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Tabloid"
+#~ msgstr "US Tabloid"
+
+#, fuzzy
+#~| msgid "Postal Code"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "Почтовый индекс"
+
+#, fuzzy
+#~| msgid "Double Struck"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Double Postcard"
+#~ msgstr "Контурный"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Источник данных"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Источник данных"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Источник данных"
+
+#, fuzzy
+#~| msgid "Unable to undelete tag"
+#~ msgctxt "Scripting::Text|"
+#~ msgid "$Unable to read %1"
+#~ msgstr "Не удалось восстановить метку"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Осветление"
+
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "Высота"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Цвет фона"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "Позиция"
+
+#, fuzzy
+#~| msgid "Size"
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "Размер"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "ISO A3"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "ISO A4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "ISO A5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "ISO B5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "US Executive"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "ISO A0"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "ISO A1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "ISO A2"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "ISO A6"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "ISO A7"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "ISO A8"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "ISO A9"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "ISO B0"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "ISO B1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "ISO B2"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "ISO B3"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "ISO B4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "ISO B6"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "ISO C5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Common 10"
+#~ msgstr "US Common 10"
+
+#, fuzzy
+#~| msgid "Height"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "Высота"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "Цвет фона"
+
+#, fuzzy
+#~| msgid "Line Weight"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Weight"
+#~ msgstr "Толщина линии"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "Цвет линии"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "Стиль линии"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Источник данных"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "Значение"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "Цвет фона"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "Цвет переднего плана"
+
+#, fuzzy
+#~| msgid "Line Weight"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Weight"
+#~ msgstr "Толщина линии"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "Цвет линии"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "Стиль линии"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Источник данных"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "Значение"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "Слева:"
+
+#, fuzzy
+#~| msgid "C&enter"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "По &центру"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "По &правому краю"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Выравнивание по вертикали"
+
+#, fuzzy
+#~| msgid "Top:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "Сверху:"
+
+#, fuzzy
+#~| msgid "Bottom:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "Внизу:"
+
+#, fuzzy
+#~| msgid "Vertical Alignment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Выравнивание по вертикали"
+
+#, fuzzy
+#~| msgid "Font"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "Шрифт"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "Цвет фона"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "Цвет переднего плана"
+
+#, fuzzy
+#~| msgid "Background color:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "Цвет фона:"
+
+#, fuzzy
+#~| msgid "Line Weight"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Weight"
+#~ msgstr "Толщина линии"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "Цвет линии"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "Стиль линии"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Источник данных"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "Значение"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "Слева:"
+
+#, fuzzy
+#~| msgid "C&enter"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "По &центру"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "По &правому краю"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Выравнивание по вертикали"
+
+#, fuzzy
+#~| msgid "Top:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "Сверху:"
+
+#, fuzzy
+#~| msgid "Bottom:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "Внизу:"
+
+#, fuzzy
+#~| msgid "Vertical Alignment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Выравнивание по вертикали"
+
+#, fuzzy
+#~| msgid "Font"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "Шрифт"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "Цвет фона"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "Цвет переднего плана"
+
+#, fuzzy
+#~| msgid "Line Weight"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Weight"
+#~ msgstr "Толщина линии"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "Цвет линии"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "Стиль линии"
+
+#, fuzzy
+#~| msgid "Background color:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "Цвет фона:"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "Удалить"
+
+#, fuzzy
+#~| msgid "Script Manager"
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "Управление сценариями"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Виталий Лопатин,Андрей Черепанов,Николай Шафоростов,Zumus"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "vitls@chat.ru,sibskull@mail.ru,shafff@ukr.net,zumus@mail.ru"
+
+#~ msgid "Draw path"
+#~ msgstr "Нарисовать контур"
+
+#~ msgid "Freehand path"
+#~ msgstr "Контур от руки"
+
+#~ msgid "Precision:"
+#~ msgstr "Точность:"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "Gainsboro"
+#~ msgctxt "The raw line data"
+#~ msgid "Raw"
+#~ msgstr "Светлый серо-фиолетовый"
+
+#~ msgid "Curve"
+#~ msgstr "Кривые"
+
+#~ msgid "Straight"
+#~ msgstr "Прямые линии"
+
+#~ msgid "Optimize"
+#~ msgstr "Оптимизировать"
+
+#~ msgid "Exactness:"
+#~ msgstr "Точность:"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Combine paths"
+#~ msgid "Combine angle:"
+#~ msgstr ""
+#~ "Объединение контуров\n"
+#~ "объединение контуров"
+
+#~ msgid "Pencil"
+#~ msgstr "Карандаш"
+
+#~ msgid "Invalid database contents. "
+#~ msgstr "Недопустимое содержимое базы данных."
+
+#~ msgid "It is a system object."
+#~ msgstr "Это системный объект."
+
+#~ msgid "Connection already established."
+#~ msgstr "Соединение уже установлено."
+
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr "Не удалось открыть файл проекта «%1»."
+
+#~ msgid "Could not connect to \"%1\" database server."
+#~ msgstr "Не удалось подключиться к серверу базы данных «%1»."
+
+#~ msgid "Not connected to the database server."
+#~ msgstr "Не подключено к серверу базы данных."
+
+#~ msgid "Currently no database is used."
+#~ msgstr "В данный момент нет используемых баз данных."
+
+#~ msgid "The database \"%1\" does not exist."
+#~ msgstr "База данных «%1» не существует."
+
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "Файл базы данных «%1» не существует."
+
+#~ msgid "Database file \"%1\" is not readable."
+#~ msgstr "Файл базы данных «%1» недоступен для чтения."
+
+#~ msgid "Database file \"%1\" is not writable."
+#~ msgstr "Файл базы данных «%1» недоступен для записи."
+
+#~ msgid ""
+#~ "Cannot create database \"%1\". This name is reserved for system database."
+#~ msgstr ""
+#~ "Не удалось создать базу данных «%1». Это имя зарезервировано для "
+#~ "системной базы данных."
+
+#~ msgid "Database \"%1\" created but could not be opened."
+#~ msgstr "База данных «%1» создана, но её не удалось открыть."
+
+#~ msgid "Opening database \"%1\" failed."
+#~ msgstr "Не удалось открыть базу данных «%1»."
+
+#, fuzzy
+#~| msgid "Create backup file"
+#~ msgid "Creating table failed."
+#~ msgstr "Создавать резервную копию"
+
+#, fuzzy
+#~| msgid "Cannot create storage"
+#~ msgid "Cannot create table without fields."
+#~ msgstr "Невозможно сохранить данные"
+
+#~ msgid "System name \"%1\" cannot be used as table name."
+#~ msgstr "Системное имя «%1» нельзя использовать в качестве имени таблицы."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not create the same table \"%1\" twice."
+#~ msgstr "Не удалось прочитать пакет «%1»."
+
+#~ msgid "Table \"%1\" already exists."
+#~ msgstr "Таблица «%1» уже существует."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist."
+#~ msgstr "Файл %1 не существует."
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not load embedded object:\n"
+#~| "%1"
+#~ msgid "Could not remove object's data."
+#~ msgstr ""
+#~ "Не удаётся загрузить внедрённый объект:\n"
+#~ "%1"
+
+#~ msgid "Table \"%1\" cannot be removed.\n"
+#~ msgstr "Не получилось удалить таблицу «%1».\n"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not uninstall the script package \"%1\" since the script is not "
+#~| "installed."
+#~ msgid "Could not alter table \"%1\" using the same table as destination."
+#~ msgstr "Не удалось удалить пакет сценария «%1», поскольку он не установлен."
+
+#, fuzzy
+#~| msgid "Unknown interpreter '%1'"
+#~ msgid "Unknown table \"%1\"."
+#~ msgstr "Неизвестный интерпретатор '%1'"
+
+#, fuzzy
+#~| msgid "Could not read the beginning of the file."
+#~ msgid "Could not rename table \"%1\" using the same name."
+#~ msgstr "Не удалось прочитать заголовок файла."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Query \"%1\" does not exist."
+#~ msgstr "Файл %1 не существует."
+
+#, fuzzy
+#~| msgid "File Creation"
+#~ msgid "Begin transaction failed."
+#~ msgstr "Создание файла"
+
+#, fuzzy
+#~| msgid "This name is already used."
+#~ msgid "Transaction already started."
+#~ msgstr "Это имя уже используется."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Column <resource>%1</resource> does not exist in the query."
+#~ msgstr "Файл %1 не существует."
+
+#, fuzzy
+#~| msgid "Error while saving embedded documents"
+#~ msgctxt "Extended schema for a table: loading error"
+#~ msgid "Error while loading extended table schema."
+#~ msgstr "Ошибка сохранения внедрённых документов"
+
+#, fuzzy
+#~| msgid ""
+#~| "Parsing error in %1 at line %2, column %3\n"
+#~| "Error message: %4"
+#~ msgid ""
+#~ "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~ "XML data: %4"
+#~ msgstr ""
+#~ "Ошибка обработки файла %1 в строке %2, позиции %3\n"
+#~ "Сообщение об ошибке: %4"
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not insert record because there is no master table specified."
+#~ msgstr "Не удалось прочитать пакет «%1»."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not delete record because there is no master table specified."
+#~ msgstr "Не удалось прочитать пакет «%1»."
+
+#~ msgid "Unknown error."
+#~ msgstr "Неизвестная ошибка."
+
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "файл: %1"
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not set value of database property \"%1\"."
+#~ msgstr "Не удалось прочитать пакет «%1»."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "Не удалось прочитать пакет «%1»."
+
+#, fuzzy
+#~| msgid "Could not read the beginning of the file."
+#~ msgid "Could not read database properties."
+#~ msgstr "Не удалось прочитать заголовок файла."
+
+#~ msgid "KexiDB driver version"
+#~ msgstr "Версия драйвера KexiDB"
+
+#~ msgid "Could not find any database drivers."
+#~ msgstr "Не удалось найти ни одного драйвера базы данных."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not find database driver \"%1\"."
+#~ msgstr "Не удалось прочитать пакет «%1»."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "Не удалось прочитать пакет «%1»."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "Не удалось прочитать пакет «%1»."
+
+#~ msgid "Ambiguous field name"
+#~ msgstr "Неопределённое имя поля"
+
+#~ msgid "Field not found"
+#~ msgstr "Поле не найдено"
+
+#, fuzzy
+#~| msgid "Could not create the file for saving"
+#~ msgid "Could not access the table directly using its name"
+#~ msgstr "Не удалось создать файл для сохранения"
+
+#~ msgid "Table not found"
+#~ msgstr "Таблица не найдена"
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" has no \"%2\" field."
+#~ msgstr "Файл %1 не существует."
+
+#~ msgid "Byte"
+#~ msgstr "Байт"
+
+#, fuzzy
+#~| msgid "&Phone Number:"
+#~ msgid "Short Integer Number"
+#~ msgstr "&Номер телефона:"
+
+#~ msgid "Integer Number"
+#~ msgstr "Целое число"
+
+#~ msgid "Yes/No Value"
+#~ msgstr "Значение «да/нет»"
+
+#~ msgid "Date"
+#~ msgstr "Дата"
+
+#~ msgid "Date and Time"
+#~ msgstr "Дата и время"
+
+#~ msgid "Time"
+#~ msgstr "Время"
+
+#, fuzzy
+#~| msgid "Revision number:"
+#~ msgid "Single Precision Number"
+#~ msgstr "Номер редакции:"
+
+#, fuzzy
+#~| msgid "Revision number:"
+#~ msgid "Double Precision Number"
+#~ msgstr "Номер редакции:"
+
+#~ msgid "Text"
+#~ msgstr "Текст"
+
+#~ msgid "Long Text"
+#~ msgstr "Длинный текст"
+
+#~ msgid "Object"
+#~ msgstr "Объект"
+
+#~ msgid "Invalid Group"
+#~ msgstr "Недопустимая группа"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Change List Numbering"
+#~ msgid "Floating Point Number"
+#~ msgstr ""
+#~ "Изменение нумерации списка\n"
+#~ "изменение нумерации списка"
+
+#~ msgid "Yes/No"
+#~ msgstr "Да/нет"
+
+#~ msgid "Date/Time"
+#~ msgstr "Дата и время"
+
+#, fuzzy
+#~| msgid "Syntax Error"
+#~ msgid "Syntax error."
+#~ msgstr "Синтаксическая ошибка"
+
+#~ msgid "Error"
+#~ msgstr "Ошибка."
+
+#, fuzzy
+#~| msgid "Syntax Error"
+#~ msgid "Error near \"%1\"."
+#~ msgstr "Синтаксическая ошибка"
+
+#~ msgid "Server's port number"
+#~ msgstr "Номер порта сервера"
+
+#, fuzzy
+#~| msgid "Create backup file"
+#~ msgid "Record inserting failed."
+#~ msgstr "Создавать резервную копию"
+
+#, fuzzy
+#~| msgid "Error deleting layers"
+#~ msgid "Record deleting failed."
+#~ msgstr "Ошибка при удалении слоев"
+
+#~ msgid "Server result:"
+#~ msgstr "Ответ сервера:"
+
+#~ msgid "Test Connection"
+#~ msgstr "Тестовое соединение"
+
+#~ msgid "Number"
+#~ msgstr "Число"
+
+#~ msgid "Image"
+#~ msgstr "Изображение"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr ""
+#~ "Изменение соединения\n"
+#~ "изменение соединения"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr ""
+#~ "Изменение параметра\n"
+#~ "изменение параметра"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr ""
+#~ "Преобразование в контур\n"
+#~ "преобразование в контур"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath at points"
+#~ msgstr ""
+#~ "Разбивка субконтура по точкам\n"
+#~ "разбивку субконтура по точкам"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Combine paths"
+#~ msgstr ""
+#~ "Объединение контуров\n"
+#~ "объединение контуров"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move control point"
+#~ msgstr ""
+#~ "Перемещение точки управления\n"
+#~ "перемещение точки управления"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set fill rule"
+#~ msgstr ""
+#~ "Установка способа заливки\n"
+#~ "установку способа заливки"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr ""
+#~ "Вставка точки\n"
+#~ "вставку точки"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr ""
+#~ "Объединение точек\n"
+#~ "объединение точек"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move points"
+#~ msgstr ""
+#~ "Перемещение точек\n"
+#~ "перемещение точек"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove points"
+#~ msgstr ""
+#~ "Удаление точек\n"
+#~ "удаление точек"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set point type"
+#~ msgstr ""
+#~ "Установка типа точки\n"
+#~ "установку типа точки"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reverse paths"
+#~ msgstr ""
+#~ "Оборот контуров\n"
+#~ "оборот контуров"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath"
+#~ msgstr ""
+#~ "Разбивка субконтура\n"
+#~ "разбивку субконтура"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to curves"
+#~ msgstr ""
+#~ "Преобразование сегментов в кривые\n"
+#~ "преобразование сегментов в кривые"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to lines"
+#~ msgstr ""
+#~ "Преобразование сегментов в линии\n"
+#~ "преобразование сегментов в линии"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Set border"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set marker"
+#~ msgstr ""
+#~ "Установка обводки\n"
+#~ "установку обводки"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Align shapes"
+#~ msgstr ""
+#~ "Выравнивание объектов\n"
+#~ "выравнивание объектов"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr ""
+#~ "Выбор фона\n"
+#~ "выбор фона"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Clip Shape"
+#~ msgstr ""
+#~ "Фиксация объекта\n"
+#~ "фиксацию объекта"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr ""
+#~ "Cоздание объекта\n"
+#~ "cоздание объекта"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shape"
+#~ msgid_plural "Delete shapes"
+#~ msgstr[0] ""
+#~ "Удаление объектов\n"
+#~ "удаление объектов"
+#~ msgstr[1] ""
+#~ "Удаление объектов\n"
+#~ "удаление объектов"
+#~ msgstr[2] ""
+#~ "Удаление объектов\n"
+#~ "удаление объектов"
+#~ msgstr[3] ""
+#~ "Удаление объекта\n"
+#~ "удаление объекта"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Distribute shapes"
+#~ msgstr ""
+#~ "Расстановка объектов\n"
+#~ "расстановку объектов"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr ""
+#~ "Группировка объектов\n"
+#~ "группировку объектов"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add shapes to group"
+#~ msgstr ""
+#~ "Добавление объектов в группу\n"
+#~ "добавление объектов в группу"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Keep Aspect Ratio"
+#~ msgstr ""
+#~ "Сохранение пропорций\n"
+#~ "сохранение пропорций"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Lock shapes"
+#~ msgstr ""
+#~ "Блокировка объектов\n"
+#~ "блокировку объектов"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move shapes"
+#~ msgstr ""
+#~ "Перемещение объектов\n"
+#~ "перемещение объектов"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr ""
+#~ "Переименование объекта\n"
+#~ "переименование объекта"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reorder shapes"
+#~ msgstr ""
+#~ "Изменение порядка объектов\n"
+#~ "изменение порядка объектов"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Change page layout"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Shape RunAround"
+#~ msgstr ""
+#~ "Изменение формата страницы\n"
+#~ "изменение формата страницы"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Shadow"
+#~ msgstr ""
+#~ "Установка тени\n"
+#~ "установку тени"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Shear shapes"
+#~ msgstr ""
+#~ "Сдвиг объектов\n"
+#~ "сдвиг объектов"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Resize shapes"
+#~ msgstr ""
+#~ "Изменение размера объектов\n"
+#~ "изменение размера объектов"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Set border"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set stroke"
+#~ msgstr ""
+#~ "Установка обводки\n"
+#~ "установку обводки"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr ""
+#~ "Установка непрозрачности\n"
+#~ "установку непрозрачности"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shape"
+#~ msgstr ""
+#~ "Снятие фиксации с объекта\n"
+#~ "снятие фиксации с объекта"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shapes"
+#~ msgstr ""
+#~ "Снятие фиксации с объектов\n"
+#~ "снятие фиксации с объектов"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr ""
+#~ "Разгруппировка объектов\n"
+#~ "разгруппировку объектов"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Close subpath"
+#~ msgstr ""
+#~ "Замыкание субконтура\n"
+#~ "замыкание субконтура"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Join subpaths"
+#~ msgstr ""
+#~ "Присоединение субконтуров\n"
+#~ "присоединение субконтуров"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove subpath"
+#~ msgstr ""
+#~ "Удаление субконтура\n"
+#~ "удаление субконтура"
+
+#~ msgid "Standard"
+#~ msgstr "Обычный"
+
+#~ msgid "Lines"
+#~ msgstr "Линии"
+
+#~ msgid "Type:"
+#~ msgstr "Тип:"
+
+#~ msgid "Tie"
+#~ msgstr "Соединительная линия"
+
+#~ msgid "A connection between two other shapes"
+#~ msgstr "Соединение двух разных объектов"
+
+#~ msgid "Shows or hides grid"
+#~ msgstr "Показать или скрыть сетку"
+
+#~ msgid "Simple path shape"
+#~ msgstr "Простой контур"
+
+#~ msgid "A simple path shape"
+#~ msgstr "Простой контур"
+
+# BUGME: use Transcript
+#~ msgid "%1 Options"
+#~ msgstr "Параметры %1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Shapes"
+#~ msgstr ""
+#~ "Вставка объектов\n"
+#~ "вставку объектов"
+
+#~ msgid "Active tool: %1"
+#~ msgstr "Активный инструмент: %1"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Paste Page"
+#~| msgid_plural "Paste Pages"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr ""
+#~ "Вставка страниц\n"
+#~ "вставку страниц"
+
+#~ msgid "Nodes"
+#~ msgstr "Узлы"
+
+#~ msgid "Extension of lines"
+#~ msgstr "Дополнение линий"
+
+#~ msgid "Bounding box of shape"
+#~ msgstr "Площадка объекта"
+
+#~ msgid "Proximity distance where snapping happens"
+#~ msgstr "Расстояние, на котором происходит привязка"
+
+#~ msgid " px"
+#~ msgstr " пикс."
+
+#~ msgid "Orthogonal"
+#~ msgstr "Ортогональная"
+
+#~ msgid "Intersection of lines"
+#~ msgstr "Пересечение линий"
+
+#~ msgid "Guide lines"
+#~ msgstr "Линии направляющих"
+
+#~ msgid "Embedded svg shape"
+#~ msgstr "Встроенный объект SVG"
+
+#~ msgid "Create object"
+#~ msgstr "Создать объект"
+
+#~ msgid "Pan"
+#~ msgstr "Перемещение"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Segment"
+#~ msgstr ""
+#~ "Изменение сегмента\n"
+#~ "изменение сегмента"
+
+#~ msgid "Corner point"
+#~ msgstr "Угловая точка"
+
+#~ msgid "Smooth point"
+#~ msgstr "Сглаженная точка"
+
+#~ msgid "Symmetric Point"
+#~ msgstr "Симметричная точка"
+
+#~ msgid "Make curve point"
+#~ msgstr "Сделать отрезок точки кривым"
+
+#~ msgid "Make line point"
+#~ msgstr "Сделать отрезок точки прямым"
+
+#~ msgid "Segment to Line"
+#~ msgstr "Сегмент в линию"
+
+#~ msgid "Segment to Curve"
+#~ msgstr "Сегмент в кривую"
+
+#~ msgid "Insert point"
+#~ msgstr "Вставить точку"
+
+#~ msgid "Remove point"
+#~ msgstr "Удалить точку"
+
+#~ msgid "Break at point"
+#~ msgstr "Разбить в точке"
+
+#~ msgid "Break at segment"
+#~ msgstr "Разбить на сегменты"
+
+#~ msgid "Join with segment"
+#~ msgstr "Объединить с сегментом"
+
+#~ msgid "Merge points"
+#~ msgstr "Объединить точки"
+
+#~ msgid "To Path"
+#~ msgstr "В контур"
+
+#~ msgid "Line/Curve"
+#~ msgstr "Линия/кривая"
+
+#~ msgid "Drag to move handle."
+#~ msgstr "Чтобы переместить точку управления, перетащите её."
+
+#~ msgid "Drag to move point. Shift click to change point type."
+#~ msgstr ""
+#~ "Чтобы переместить точку, перетащите её. Чтобы изменить тип точки, "
+#~ "щёлкните по ней с нажатой клавишей Shift."
+
+#~ msgid "Drag to move control point."
+#~ msgstr "Чтобы переместить точку управления, перетащите её."
+
+#~ msgid "Press B to break path at selected point."
+#~ msgstr "Нажмите клавишу «B», чтобы разбить контур в выбранной точке."
+
+#~ msgid "Press B to break path at selected segments."
+#~ msgstr "Нажмите клавишу «B», чтобы разбить контур на выбранные сегменты."
+
+#, fuzzy
+#~| msgid "Path editing tool"
+#~ msgid "Path editing"
+#~ msgstr "Редактор контуров"
+
+#~ msgid "Zoom"
+#~ msgstr "Масштаб"
+
+#~ msgid "Zoom In"
+#~ msgstr "Приблизить"
+
+#~ msgid "Zoom Out"
+#~ msgstr "Отдалить"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Convert To Path"
+#~ msgstr "Преобразовать в контур"
+
+#~ msgid "Scripts"
+#~ msgstr "Сценарии"
+
+#~ msgid "Script Manager"
+#~ msgstr "Управление сценариями"
+
+#~ msgid "Execute Script File..."
+#~ msgstr "Выполнить сценарий..."
+
+#~ msgid "Script Manager..."
+#~ msgstr "Управление сценариями..."
+
+#~ msgid "Execute Script File"
+#~ msgstr "Выполнить сценарий"
+
+#~ msgid "Install Script Package"
+#~ msgstr "Установить пакет сценария"
+
+#~ msgid "Could not read the package \"%1\"."
+#~ msgstr "Не удалось прочитать пакет «%1»."
+
+#~ msgid "The package \"%1\" does not contain a valid install.rc file."
+#~ msgstr "Пакет «%1» не содержит допустимого файла install.rc."
+
+#~ msgid "Failed to parse the install.rc file at package \"%1\"."
+#~ msgstr "Не удалось обработать файл install.rc в пакете «%1»."
+
+#~ msgid ""
+#~ "Failed to determinate location where the package \"%1\" should be "
+#~ "installed to."
+#~ msgstr "Не удалось определить место установки пакета «%1»."
+
+#~ msgid ""
+#~ "A script package with the name \"%1\" already exists. Replace this "
+#~ "package?"
+#~ msgstr "Пакет сценария с название «%1» уже существует. Заменить его?"
+
+#~ msgid "Replace"
+#~ msgstr "Заменить"
+
+#~ msgid ""
+#~ "Could not uninstall this script package. You may not have sufficient "
+#~ "permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Не удалось удалить пакет сценария. Убедитесь, что у вас есть права на "
+#~ "удаление папки «%1»."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\" since the script is not "
+#~ "installed."
+#~ msgstr "Не удалось удалить пакет сценария «%1», поскольку он не установлен."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\". You may not have "
+#~ "sufficient permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Не удалось удалить пакет сценария. Убедитесь, что у вас есть права на "
+#~ "удаление папки «%1»."
+
+#~ msgid "Save"
+#~ msgstr "Сохранить"
+
+#~ msgid ""
+#~ "<qt>This wizard will guide you through the proccess of adding a new "
+#~ "resource to your scripts.</qt>"
+#~ msgstr ""
+#~ "<qt>Этот мастер поможет вам с добавлением новых данных в ваши сценарии.</"
+#~ "qt>"
+
+#~ msgid "Add script file"
+#~ msgstr "Добавить файл сценария"
+
+#~ msgid "Add collection folder"
+#~ msgstr "Добавить папку коллекции"
+
+#~ msgid "Install script package file"
+#~ msgstr "Установить пакет сценария"
+
+#~ msgid "Install online script package"
+#~ msgstr "Установить пакет сценария из Интернета"
+
+#~ msgid "Add"
+#~ msgstr "Добавить"
+
+#~ msgid "Script"
+#~ msgstr "Сценарий"
+
+#~ msgid "Collection"
+#~ msgstr "Коллекция"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master slide"
+#~ msgstr ""
+#~ "Изменение шаблона слайда\n"
+#~ "изменение шаблона слайда"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master page"
+#~ msgstr ""
+#~ "Изменение шаблона страницы\n"
+#~ "изменение шаблона страницы"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr ""
+#~ "Установка формата страницы\n"
+#~ "установку формата страницы"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display master background"
+#~ msgstr ""
+#~ "Отображение фона шаблона\n"
+#~ "отображение фона шаблона"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display slide background"
+#~ msgstr ""
+#~ "Отображение фона слайда\n"
+#~ "отображение фона слайда"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display page background"
+#~ msgstr ""
+#~ "Отображение фона страницы\n"
+#~ "отображение фона страницы"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Show master shapes"
+#~ msgstr ""
+#~ "Отображение объектов шаблона\n"
+#~ "отображение объектов шаблона"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Hide master shapes"
+#~ msgstr ""
+#~ "Скрытие объектов шаблона\n"
+#~ "скрытие объектов шаблона"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] ""
+#~ "Удаление слайдов\n"
+#~ "удаление слайдов"
+#~ msgstr[1] ""
+#~ "Удаление слайдов\n"
+#~ "удаление слайдов"
+#~ msgstr[2] ""
+#~ "Удаление слайдов\n"
+#~ "удаление слайдов"
+#~ msgstr[3] ""
+#~ "Удаление слайда\n"
+#~ "удаление слайда"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] ""
+#~ "Удаление страниц\n"
+#~ "удаление страниц"
+#~ msgstr[1] ""
+#~ "Удаление страниц\n"
+#~ "удаление страниц"
+#~ msgstr[2] ""
+#~ "Удаление страниц\n"
+#~ "удаление страниц"
+#~ msgstr[3] ""
+#~ "Удаление страницы\n"
+#~ "удаление страницы"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr ""
+#~ "Вставка слайда\n"
+#~ "вставку слайда"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr ""
+#~ "Вставка страницы\n"
+#~ "вставку страницы"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] ""
+#~ "Перемещение слайдов\n"
+#~ "перемещение слайдов"
+#~ msgstr[1] ""
+#~ "Перемещение слайдов\n"
+#~ "перемещение слайдов"
+#~ msgstr[2] ""
+#~ "Перемещение слайдов\n"
+#~ "перемещение слайдов"
+#~ msgstr[3] ""
+#~ "Перемещение слайда\n"
+#~ "перемещение слайда"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] ""
+#~ "Перемещение страниц\n"
+#~ "перемещение страниц"
+#~ msgstr[1] ""
+#~ "Перемещение страниц\n"
+#~ "перемещение страниц"
+#~ msgstr[2] ""
+#~ "Перемещение страниц\n"
+#~ "перемещение страниц"
+#~ msgstr[3] ""
+#~ "Перемещение страницы\n"
+#~ "перемещение страницы"
+
+#~ msgid "Configure"
+#~ msgstr "Настроить"
+
+#~ msgid "Misc"
+#~ msgstr "Прочее"
+
+#~ msgid "Grid"
+#~ msgstr "Сетка"
+
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "Документ"
+
+#~ msgid "Document Settings"
+#~ msgstr "Настройка документа"
+
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "Автор"
+
+#~ msgid "Author"
+#~ msgstr "Автор"
+
+#~ msgid "Select a master slide design:"
+#~ msgstr "Выберите оформление шаблона слайда:"
+
+#~ msgid "Master Slide"
+#~ msgstr "Шаблон слайда"
+
+#~ msgid "Select a master page design:"
+#~ msgstr "Выберите оформление шаблона страницы:"
+
+#~ msgid "Master Page"
+#~ msgstr "Шаблон страницы"
+
+#~ msgid "Slide %1"
+#~ msgstr "Слайд %1"
+
+#~ msgid "Page  %1"
+#~ msgstr "Страница %1"
+
+#~ msgid "Layer"
+#~ msgstr "Слой"
+
+#~ msgid "Group"
+#~ msgstr "Группа"
+
+#~ msgid "Shape"
+#~ msgstr "Фигура"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "Переименовать слайд"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "Переименовать страницу"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "Переименовать слой"
+
+#~ msgid "Slide"
+#~ msgstr "Слайд"
+
+#~ msgid "Visible"
+#~ msgstr "Видимость"
+
+#~ msgid "Locked"
+#~ msgstr "Блокировка"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reparent shapes"
+#~ msgstr ""
+#~ "Реорганизация объектов\n"
+#~ "реорганизацию объектов"
+
+#~ msgid "&Move Here"
+#~ msgstr "&Переместить сюда"
+
+#~ msgid "&Copy Here"
+#~ msgstr "&Копировать сюда"
+
+#~ msgid "C&ancel"
+#~ msgstr "О&тмена"
+
+#~ msgid "Document"
+#~ msgstr "Документ"
+
+#~ msgid "Add a new slide or layer"
+#~ msgstr "Добавить новый слайд или слой"
+
+#~ msgid "Add a new page or layer"
+#~ msgstr "Добавить новую страницу или слой"
+
+#~ msgid "Page"
+#~ msgstr "Страница"
+
+#~ msgid "Delete selected objects"
+#~ msgstr "Удалить выбранные объекты"
+
+#~ msgid "Raise selected objects"
+#~ msgstr "Поднять выбранные объекты"
+
+#~ msgid "Lower selected objects"
+#~ msgstr "Опустить выбранные объекты"
+
+#~ msgid "Minimal View"
+#~ msgstr "Минимальный вид"
+
+#~ msgid "Detailed View"
+#~ msgstr "Подробный вид"
+
+#~ msgid "Thumbnail View"
+#~ msgstr "Миниатюры"
+
+#~ msgid "View mode"
+#~ msgstr "Режим просмотра"
+
+#~ msgid "Enter the name of the new layer:"
+#~ msgstr "Введите название нового слоя:"
+
+#~ msgid "New Layer"
+#~ msgstr "Новый слой"
+
+#~ msgid "New layer"
+#~ msgstr "Новый слой"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr ""
+#~ "Создание слоя\n"
+#~ "создание слоя"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr ""
+#~ "Удаление слоя\n"
+#~ "удаление слоя"
+
+#~ msgid "Could not delete all layers. At least one layer is required."
+#~ msgstr "Не удалось удалить все слои. Нужен как минимум один слой."
+
+#~ msgid "Error deleting layers"
+#~ msgstr "Ошибка при удалении слоев"
+
+#~ msgid "Add a new slide"
+#~ msgstr "Добавить новый слайд"
+
+#~ msgid "Add a new page"
+#~ msgstr "Добавить новую страницу"
+
+#~ msgid "Page %1"
+#~ msgstr "Страница %1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] ""
+#~ "Вставка слайдов\n"
+#~ "вставку слайдов"
+#~ msgstr[1] ""
+#~ "Вставка слайдов\n"
+#~ "вставку слайдов"
+#~ msgstr[2] ""
+#~ "Вставка слайдов\n"
+#~ "вставку слайдов"
+#~ msgstr[3] ""
+#~ "Вставка слайда\n"
+#~ "вставку слайда"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] ""
+#~ "Вставка страниц\n"
+#~ "вставку страниц"
+#~ msgstr[1] ""
+#~ "Вставка страниц\n"
+#~ "вставку страниц"
+#~ msgstr[2] ""
+#~ "Вставка страниц\n"
+#~ "вставку страниц"
+#~ msgstr[3] ""
+#~ "Вставка страницы\n"
+#~ "вставку страницы"
+
+#~ msgid "Tools"
+#~ msgstr "Инструменты"
+
+#~ msgid "D&elete"
+#~ msgstr "У&далить"
+
+#~ msgid "Show Master Pages"
+#~ msgstr "Показать шаблоны страниц"
+
+#~ msgid "Show Rulers"
+#~ msgstr "Показать линейки"
+
+#~ msgid "Show/hide the view's rulers"
+#~ msgstr "Показать или скрыть линейки"
+
+#~ msgid "Insert Page"
+#~ msgstr "Вставить страницу"
+
+#~ msgid "Insert a new page after the current one"
+#~ msgstr "Вставить новую страницу после текущей"
+
+#~ msgid "Copy Page"
+#~ msgstr "Скопировать страницу"
+
+#~ msgid "Copy the current page"
+#~ msgstr "Скопировать текущую страницу"
+
+#~ msgid "Delete Page"
+#~ msgstr "Удалить страницу"
+
+#~ msgid "Delete the current page"
+#~ msgstr "Удалить текущую страницу"
+
+#~ msgid "Master Page..."
+#~ msgstr "Шаблон страницы..."
+
+#~ msgid "Page Layout..."
+#~ msgstr "Свойства страницы..."
+
+#~ msgid "Variable"
+#~ msgstr "Переменная"
+
+#~ msgid "Import Document..."
+#~ msgstr "Импорт документа..."
+
+#~ msgid "Configure..."
+#~ msgstr "Настроить..."
+
+#~ msgid "Import Slideshow"
+#~ msgstr "Импорт презентации"
+
+#~ msgid "Import Document"
+#~ msgstr "Импорт документа"
+
+#~ msgid ""
+#~ "Could not import\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Не удалось импортировать\n"
+#~ "%1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr ""
+#~ "Изменение формата страницы\n"
+#~ "изменение формата страницы"
+
+#, fuzzy
+#~ msgid "Set image ..."
+#~ msgstr "Выбрать изображение фона..."
+
+#~ msgid "Background"
+#~ msgstr "Фон"
+
+#~ msgid "Page Background"
+#~ msgstr "Фон страницы"
+
+#~ msgid "Page Design"
+#~ msgstr "Дизайн страницы"
+
+#~ msgid "Slide Design"
+#~ msgstr "Дизайн слайда"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Change background image"
+#~ msgid "Use background of master page"
+#~ msgstr ""
+#~ "Изменение изображения фона\n"
+#~ "изменение изображения фона"
+
+#, fuzzy
+#~ msgid "Use background of master slide"
+#~ msgstr "Выбрать изображение фона..."
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Change master page"
+#~ msgid "Display shapes of master page"
+#~ msgstr ""
+#~ "Изменение шаблона страницы\n"
+#~ "изменение шаблона страницы"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Change master slide"
+#~ msgid "Display shapes of master slide"
+#~ msgstr ""
+#~ "Изменение шаблона слайда\n"
+#~ "изменение шаблона слайда"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Change background image"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change slide background image"
+#~ msgstr ""
+#~ "Изменение изображения фона\n"
+#~ "изменение изображения фона"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Change background image"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page background image"
+#~ msgstr ""
+#~ "Изменение изображения фона\n"
+#~ "изменение изображения фона"
+
+#, fuzzy
+#~| msgid "Master Slide"
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "Шаблон слайда"
+
+#~ msgid "Slide %1/%2"
+#~ msgstr "Слайд %1/%2"
+
+# BUGME: we need to invent a good translation for "master page" --aspotashev
+#~ msgid "Master Page %1/%2"
+#~ msgstr "Мастер-страница %1/%2"
+
+#~ msgid "Page %1/%2"
+#~ msgstr "Страница %1/%2"
+
+#, fuzzy
+#~| msgid "Field"
+#~ msgid "Field"
+#~ msgstr "Поле"
+
+#~ msgid "Label"
+#~ msgstr "Надпись"
+
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#, fuzzy
+#~| msgid "Section Title"
+#~ msgid "Section Editor"
+#~ msgstr "Заголовок раздела"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr ""
+#~ "Изменение списка\n"
+#~ "изменение списка"
+
+#, fuzzy
+#~| msgid "Change Char Style"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "Изменить стиль символа"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr ""
+#~ "Удаление\n"
+#~ "удаление"
+
+#~ msgid "Key Press"
+#~ msgstr "Нажатие клавиши"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "Текст"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr ""
+#~ "Удаление столбца\n"
+#~ "удаление столбца"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr ""
+#~ "Удаление строки\n"
+#~ "удаление строки"
+
+#, fuzzy
+#~| msgid "Insert Index"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "Вставить указатель"
+
+#, fuzzy
+#~| msgid "Insert Index"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr "Вставить указатель"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Right"
+#~ msgstr ""
+#~ "Вставка столбца справа\n"
+#~ "вставку столбца справа"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr ""
+#~ "Вставка столбца слева\n"
+#~ "вставку столбца слева"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Below"
+#~ msgstr ""
+#~ "Вставка строки ниже\n"
+#~ "вставку строки ниже"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr ""
+#~ "Вставка строки выше\n"
+#~ "вставку строки выше"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List Numbering"
+#~ msgstr ""
+#~ "Изменение нумерации списка\n"
+#~ "изменение нумерации списка"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr ""
+#~ "Форматирование\n"
+#~ "форматирование"
+
+#, fuzzy
+#~| msgid "Change Paragraph Spacing"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Direct Paragraph Formatting"
+#~ msgstr "Изменить отступ абзаца"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Rename Shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr ""
+#~ "Переименование объекта\n"
+#~ "переименование объекта"
+
+#, fuzzy
+#~| msgid "Custom Line Width"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr "Другая толщина линии"
+
+#, fuzzy
+#~| msgid "Paste As Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "Вставка как текст"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr ""
+#~ "Вставка\n"
+#~ "вставку"
+
+#~ msgid "Found 1 match"
+#~ msgid_plural "Found %1 matches"
+#~ msgstr[0] "Найдено %1 cовпадение"
+#~ msgstr[1] "Найдены %1 cовпадения"
+#~ msgstr[2] "Найдено %1 cовпадений"
+#~ msgstr[3] "Найдено %1 cовпадение"
+
+#~ msgid "Found no match"
+#~ msgstr "Совпадений не найдено"
+
+#~ msgid ""
+#~ "Found no match\n"
+#~ "\n"
+#~ "No text was replaced"
+#~ msgstr ""
+#~ "Совпадений не найдено\n"
+#~ "\n"
+#~ "Замена текста не была произведена."
+
+#~ msgid "1 replacement made"
+#~ msgid_plural "%1 replacements made"
+#~ msgstr[0] "выполнена %1 замена"
+#~ msgstr[1] "выполнено %1 замены"
+#~ msgstr[2] "выполнено %1 замен"
+#~ msgstr[3] "выполнена %1 замена"
+
+#~ msgid "Replace %1 with %2?"
+#~ msgstr "Заменить %1 на %2?"
+
+#, fuzzy
+#~| msgid "Current Section"
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "Текущий раздел"
+
+#~ msgctxt "Underline Style"
+#~ msgid "None"
+#~ msgstr "Нет"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "Одинарное"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "Двойное"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "New Paragraph"
+#~ msgstr ""
+#~ "Новый абзац\n"
+#~ "создание нового абзаца"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "Добавить закладку"
+
+# annotation: may be "примечание", "комментарий"? --aspotashev
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "Добавить аннотацию"
+
+#, fuzzy
+#~| msgid "Insert Index"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "Вставить указатель"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "Вставить переменную"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Key Press"
+#~ msgstr ""
+#~ "Нажатие клавиши\n"
+#~ "нажатие клавиши"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "Вставить разрыв строки"
+
+#, fuzzy
+#~| msgid "Insert Table"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "Добавление таблицы"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr ""
+#~ "Объединение ячеек\n"
+#~ "объединение ячеек"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr ""
+#~ "Разделение ячеек\n"
+#~ "разделение ячеек"
+
+#, fuzzy
+#~| msgid "Custom Line Width"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr "Другая толщина линии"
+
+#, fuzzy
+#~| msgid "Change Text Format"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Border Formatting"
+#~ msgstr "Изменить формат текста"
+
+#, fuzzy
+#~| msgid "Include in table of contents"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Включать в оглавление"
+
+#, fuzzy
+#~| msgid "Include in table of contents"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr "Включать в оглавление"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Вставить разрыв строки"
+
+#, fuzzy
+#~| msgid "Addition"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "Добавление"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Typing"
+#~ msgstr ""
+#~ "Набор текста\n"
+#~ "набор текста"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr ""
+#~ "Полужирный\n"
+#~ "полужирный"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr ""
+#~ "Курсив\n"
+#~ "курсив"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr ""
+#~ "Подчёркнуть\n"
+#~ "подчёркивание"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr ""
+#~ "Зачеркнуть\n"
+#~ "зачёркивание"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Change Segment"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr ""
+#~ "Изменение сегмента\n"
+#~ "изменение сегмента"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr ""
+#~ "Включение выравнивания по вертикали\n"
+#~ "включение выравнивания по вертикали"
+
+#, fuzzy
+#~| msgid "Decrease Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "Уменьшение отступа"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "Увеличение отступа"
+
+#, fuzzy
+#~| msgid "Decrease font size"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "Уменьшение размера шрифта"
+
+#, fuzzy
+#~| msgid "Increase font size"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "Увеличение размер шрифта"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr ""
+#~ "Выбор шрифта\n"
+#~ "выбор шрифта"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr ""
+#~ "Выбор размера шрифта\n"
+#~ "выбор размера шрифта"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr ""
+#~ "Выбор цвета фона\n"
+#~ "выбор цвета фона"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Text Color"
+#~ msgstr ""
+#~ "Выбор цвета текста\n"
+#~ "выбор цвета текста"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr ""
+#~ "Выбор символьного стиля\n"
+#~ "выбор символьного стиля"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Paragraph Style"
+#~ msgstr ""
+#~ "Выбор стиля абзаца\n"
+#~ "выбор стиля абзаца"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "Формат"
+
+#~ msgid "Default"
+#~ msgstr "По умолчанию"
+
+#~ msgctxt "Default text for undo action"
+#~ msgid "Undo"
+#~ msgstr "Отменить"
+
+#~ msgid "Undo %1"
+#~ msgstr "Отменить %1"
+
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "Повторить"
+
+#~ msgid "Redo %1"
+#~ msgstr "Повторить %1"
+
+#, fuzzy
+#~| msgid "Empty"
+#~ msgid "<empty>"
+#~ msgstr "Пусто"
+
+#~ msgid "Redo"
+#~ msgstr "Повторить"
+
+#~ msgid "Undo"
+#~ msgstr "Отменить"
+
+#~ msgid "&File"
+#~ msgstr "&Файл"
+
+#~ msgid "&Settings"
+#~ msgstr "&Настройка"
+
+#~ msgid "File"
+#~ msgstr "Файл"
+
+#~ msgid "Add new author profile (starts out as a copy of current)"
+#~ msgstr "Добавить новый профиль автора (на основе копии текущего)"
+
+#, fuzzy
+#~| msgid "Delete the current page"
+#~ msgid "Delete the author profile"
+#~ msgstr "Удалить текущую страницу"
+
+#~ msgid "Default Author Profile"
+#~ msgstr "Профиль автора по умолчанию"
+
+#, fuzzy
+#~| msgid "Number of Pictures"
+#~ msgid "Name of Profile"
+#~ msgstr "Количество рисунков"
+
+# Имя автора документа
+#~ msgid "Name:"
+#~ msgstr "Имя:"
+
+#~ msgid "Initials:"
+#~ msgstr "Инициалы:"
+
+#~ msgid "Title:"
+#~ msgstr "Заголовок:"
+
+#~ msgid "Position:"
+#~ msgstr "Положение:"
+
+#~ msgid "Company:"
+#~ msgstr "Организация:"
+
+#~ msgid "Email:"
+#~ msgstr "Электронная почта:"
+
+#~ msgid "Telephone (home):"
+#~ msgstr "Телефон (домашний):"
+
+#~ msgid "Telephone (work):"
+#~ msgstr "Телефон (рабочий):"
+
+#~ msgid "Fax:"
+#~ msgstr "Факс:"
+
+#~ msgid "Street:"
+#~ msgstr "Улица:"
+
+#~ msgid "Postal code:"
+#~ msgstr "Почтовый индекс:"
+
+#~ msgid "City:"
+#~ msgstr "Город:"
+
+#~ msgid "Country:"
+#~ msgstr "Страна:"
+
+#~ msgid "No autosave"
+#~ msgstr "Без автосохранения"
+
+#~ msgctxt "unit symbol for minutes, leading space as separator"
+#~ msgid " min"
+#~ msgstr " мин"
+
+#~ msgid "Autosave interval:"
+#~ msgstr "Интервал автосохранения:"
+
+#, fuzzy
+#~| msgid "Create backup file"
+#~ msgid "Create backup file:"
+#~ msgstr "Создавать резервную копию"
+
+#~ msgid "Show grid:"
+#~ msgstr "Показывать сетку:"
+
+#~ msgid "Snap to grid:"
+#~ msgstr "Прилипание к сетке:"
+
+#~ msgid "Grid color:"
+#~ msgstr "Цвет сетки:"
+
+#~ msgid "Spacing"
+#~ msgstr "Интервал"
+
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "&Горизонтальный:"
+
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "&Вертикальный:"
+
+#~ msgid "Units:"
+#~ msgstr "Единица измерения:"
+
+#~ msgid "Handle radius:"
+#~ msgstr "Радиус точки управления:"
+
+#~ msgid "Grab sensitivity:"
+#~ msgstr "Чувствительность захвата:"
+
+#~ msgid "Paste offset:"
+#~ msgstr "Отступ вставки:"
+
+#, fuzzy
+#~| msgid "Paste at Cursor"
+#~ msgid "Paste at Cursor:"
+#~ msgstr "Вставить под курсором"
+
+#~ msgid "Only print and exit"
+#~ msgstr "Только распечатать и выйти"
+
+#~ msgid "Open a new document with a template"
+#~ msgstr "Создать новый документ по шаблону"
+
+#~ msgid "Override display DPI"
+#~ msgstr "Разрешение экрана, определённое пользователем"
+
+#~ msgid "Only export to PDF and exit"
+#~ msgstr "Только экспортировать в PDF и выйти"
+
+#~ msgid "Load a file and save it as an ODF file. Meant for debugging."
+#~ msgstr ""
+#~ "Открыть документ и сохранить его в формате ODF. Используется для отладки."
+
+#~ msgid "Calligra"
+#~ msgstr "Calligra"
+
+#, fuzzy
+#~| msgid ": Critical Error"
+#~ msgid "%1: Critical Error"
+#~ msgstr ": критическая ошибка"
+
+#~ msgid "No template found for: %1"
+#~ msgstr "Не найдено шаблонов для %1"
+
+#~ msgid "Too many templates found for: %1"
+#~ msgstr "Найдено несколько шаблонов для %1"
+
+#~ msgid "Template %1 failed to load."
+#~ msgstr "Ошибка открытия шаблона %1."
+
+#~ msgctxt "@title:window"
+#~ msgid "Recover Files"
+#~ msgstr "Восстановление файлов"
+
+#~ msgid "The following autosave file can be recovered:"
+#~ msgstr "Можно восстановить следующий автоматически сохранённый файл:"
+
+#~ msgid "The following autosave files can be recovered:"
+#~ msgstr "Можно восстановить следующие автоматически сохранённые файлы:"
+
+#~ msgid "Always use this template at application start up"
+#~ msgstr "Всегда открывать этот шаблон при запуске"
+
+#~ msgid "Always use this template"
+#~ msgstr "Всегда использовать этот шаблон"
+
+#~ msgid "Making backup..."
+#~ msgstr "Создание резервной копии..."
+
+#~ msgid "Saving..."
+#~ msgstr "Сохранение..."
+
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Не удалось сохранить\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Не удалось сохранить %1\n"
+#~ "Причина: %2"
+
+#~ msgid "Document <i>%1</i> saved"
+#~ msgstr "Документ <i>%1</i> сохранён"
+
+#~ msgid "Autosaving..."
+#~ msgstr "Автосохранение..."
+
+#~ msgid "Error during autosave! Partition full?"
+#~ msgstr "Произошла ошибка при автосохранении. Возможно, диск переполнен."
+
+#~ msgid "Could not create the file for saving"
+#~ msgstr "Не удалось создать файл для сохранения"
+
+#~ msgid "Not able to write '%1'. Partition full?"
+#~ msgstr "Не удаётся сохранить «%1». Возможно, диск переполнен."
+
+#~ msgid "Not able to write RDF metadata. Partition full?"
+#~ msgstr "Не удаётся сохранить метаданные RDF. Возможно, диск переполнен."
+
+#~ msgid "Error while trying to write '%1'. Partition full?"
+#~ msgstr "Не удаётся сохранить «%1». Возможно, диск переполнен."
+
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Неверный адрес\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "An autosaved file exists for this document.\n"
+#~ "Do you want to open it instead?"
+#~ msgstr ""
+#~ "Существует автосохранение этого документа.\n"
+#~ "Открыть автосохранение?"
+
+#~ msgid "The file %1 does not exist."
+#~ msgstr "Файл %1 не существует."
+
+#~ msgid "Opening Document"
+#~ msgstr "Открытие документа"
+
+#, fuzzy
+#~| msgid "Could not create the file for saving"
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "Не удалось создать файл для сохранения"
+
+#~ msgid "File not found"
+#~ msgstr "Файл не найден"
+
+#~ msgid "Cannot create storage"
+#~ msgstr "Невозможно сохранить данные"
+
+#~ msgid "Bad MIME type"
+#~ msgstr "Неправильный тип MIME"
+
+#~ msgid "Format not recognized"
+#~ msgstr "Недопустимый формат"
+
+#~ msgid "Not implemented"
+#~ msgstr "Не реализовано"
+
+#~ msgid "Parsing error"
+#~ msgstr "Ошибка разбора"
+
+#~ msgid "Document is password protected"
+#~ msgstr "Документ защищён паролем"
+
+#~ msgid "Invalid file format"
+#~ msgstr "Неверный формат файла"
+
+#~ msgid "Internal error"
+#~ msgstr "Внутренняя ошибка"
+
+#~ msgid "Out of memory"
+#~ msgstr "Не хватает памяти"
+
+#, fuzzy
+#~| msgid "Failed to open scriptfile '%1'"
+#~ msgid "Failed to download remote file"
+#~ msgstr "Невозможно открыть файл сценария '%1'"
+
+#~ msgid "Unknown error"
+#~ msgstr "Неизвестная ошибка"
+
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr ""
+#~ "Не удалось открыть %2.\n"
+#~ "Причина: %1.\n"
+#~ "%3"
+
+#~ msgid "Document <i>%1</i> loaded"
+#~ msgstr "Документ <i>%1</i> загружен"
+
+#~ msgid "Could not find %1"
+#~ msgstr "Не удалось найти %1"
+
+#~ msgid ""
+#~ "Parsing error in %1 at line %2, column %3\n"
+#~ "Error message: %4"
+#~ msgstr ""
+#~ "Ошибка обработки файла %1 в строке %2, позиции %3\n"
+#~ "Сообщение об ошибке: %4"
+
+#~ msgid "%1 is not a file."
+#~ msgstr "%1 не является файлом."
+
+#~ msgid "Could not open the file for reading (check read permissions)."
+#~ msgstr "Не удалось открыть файл для чтения (проверьте права на чтение)."
+
+#~ msgid "Could not read the beginning of the file."
+#~ msgstr "Не удалось прочитать заголовок файла."
+
+#~ msgid ""
+#~ "parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Ошибка обработки данных файла в строке %1, колонке %2\n"
+#~ "Сообщение об ошибке: %3"
+
+#~ msgid "Not a valid Calligra file: %1"
+#~ msgstr "Неверный формат файла Calligra: %1"
+
+#~ msgid "Invalid document: no file 'maindoc.xml'."
+#~ msgstr "Неверный формат документа: нет файла «maindoc.xml»."
+
+#~ msgid ""
+#~ "Document <i>%1</i> contains several versions. Go to File->Versions to "
+#~ "open an old version."
+#~ msgstr ""
+#~ "Документ <i>%1</i> содержит несколько версий. Чтобы открыть старую версию "
+#~ "перейдите к пункту меню «Файл»->«Версии»."
+
+#~ msgid "Untitled"
+#~ msgstr "Безымянный"
+
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr "<p>Документ <b>%1</b> был изменён.</p><p>Сохранить его?</p>"
+
+#~ msgid "Internal error: saveXML not implemented"
+#~ msgstr "Внутренняя ошибка: не реализован метод saveXML"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Не удалось открыть\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Не удалось открыть %1\n"
+#~ "Причина: %2"
+
+#~ msgid "a word processing"
+#~ msgstr "документ"
+
+#~ msgid "a spreadsheet"
+#~ msgstr "электронная таблица"
+
+#~ msgid "a presentation"
+#~ msgstr "презентация"
+
+#~ msgid "a chart"
+#~ msgstr "диаграмма"
+
+#~ msgid "a drawing"
+#~ msgstr "рисунок"
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~| "it?</p>"
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr "<p>Документ <b>%1</b> был изменён.</p><p>Сохранить его?</p>"
+
+#, fuzzy
+#~| msgid "Create Document"
+#~ msgid "Close Document"
+#~ msgstr "Создать документ"
+
+#~ msgid "%1 %"
+#~ msgstr "%1 %"
+
+#~ msgid "No"
+#~ msgstr "Нет"
+
+#~ msgid "Yes"
+#~ msgstr "Да"
+
+#~ msgid "Could not export file."
+#~ msgstr "Не удалось экспортировать файл."
+
+#~ msgid "Missing Export Filter"
+#~ msgstr "Отсутствует фильтр экспорта"
+
+#~ msgid ""
+#~ "Could not import file of type\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Не удалось импортировать файл типа\n"
+#~ "%1"
+
+#~ msgid "Missing Import Filter"
+#~ msgstr "Отсутствует фильтр импорта"
+
+#~ msgid "Choose Filter"
+#~ msgstr "Фильтр"
+
+#~ msgid "Case Sensitive"
+#~ msgstr "Чувствительность к регистру"
+
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "Найти:"
+
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "Далее"
+
+#, fuzzy
+#~| msgid "Previous Page"
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "Предыдущая страница"
+
+# BUGME: use Transcript
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "Параметры"
+
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "Заменить:"
+
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "Заменить"
+
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "Заменить все"
+
+#~ msgctxt "Total number of matches"
+#~ msgid "1 match found"
+#~ msgid_plural "%1 matches found"
+#~ msgstr[0] "Найдено %1 cовпадение"
+#~ msgstr[1] "Найдены %1 cовпадения"
+#~ msgstr[2] "Найдены %1 cовпадений"
+#~ msgstr[3] "Найдено %1 cовпадение"
+
+#~ msgid "No matches found"
+#~ msgstr "Совпадений не найдено"
+
+#~ msgid "%1 unsaved document (%2)"
+#~ msgstr "%1 несохранённый документ (%2)"
+
+#~ msgid "Export as PDF..."
+#~ msgstr "Экспортировать как PDF..."
+
+#~ msgid "Reload"
+#~ msgstr "Обновить"
+
+#~ msgid "Versions..."
+#~ msgstr "Версии..."
+
+#~ msgid "Open ex&isting Document as Untitled Document..."
+#~ msgstr "Открыть су&ществующий документ как новый..."
+
+#~ msgid "E&xport..."
+#~ msgstr "&Экспорт..."
+
+#, fuzzy
+#~| msgid "&Create Document"
+#~ msgid "En&crypt Document"
+#~ msgstr "Созд&ать документ"
+
+#~ msgid "&Uncompress to Directory"
+#~ msgstr "&Распаковать в каталог"
+
+#~ msgid "&New View"
+#~ msgstr "&Создать вид"
+
+#~ msgid "Document Information"
+#~ msgstr "Сведения о документе"
+
+#~ msgid "Full Screen Mode"
+#~ msgstr "Полноэкранный режим"
+
+#~ msgid "Show Dockers"
+#~ msgstr "Показать панели"
+
+#, fuzzy
+#~| msgid "Show Dockers"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "Показать панели"
+
+#~ msgid "Dockers"
+#~ msgstr "Панели"
+
+#~ msgid "(write protected)"
+#~ msgstr "(защита от записи)"
+
+#~ msgid "Save as %1"
+#~ msgstr "Сохранить как %1"
+
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "%1 (неизвестный тип файла)"
+
+#~ msgid ""
+#~ "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
+#~ "want to save in this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Сохранение в формате %1 может привести к частичной потере "
+#~ "форматирования. <p> Сохранить в этом формате?</qt>"
+
+#~ msgid "Confirm Save"
+#~ msgstr "Подтверждение сохранения"
+
+#~ msgid ""
+#~ "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you "
+#~ "still want to export to this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Экспорт в формат %1 может привести к частичной потере форматирования. "
+#~ "<p>Вы хотите экспортировать в этот формат?</qt>"
+
+#~ msgid "Confirm Export"
+#~ msgstr "Подтверждение экспорта"
+
+#~ msgid "untitled"
+#~ msgstr "Безымянный"
+
+#~ msgid "Open Document"
+#~ msgstr "Открыть документ"
+
+#~ msgid "Export as PDF"
+#~ msgstr "Экспортировать как PDF"
+
+#~ msgid "Document - %1"
+#~ msgstr "Документа — %1"
+
+#~ msgid ""
+#~ "You will lose all changes made since your last save\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "Изменения, сделанные со времени последнего сохранения, будут утеряны.\n"
+#~ "Продолжить?"
+
+#~ msgid "Warning"
+#~ msgstr "Предупреждение"
+
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "Показать панель инструментов %1 "
+
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "Скрыть панель инструментов %1 "
+
+#~ msgid "Open Existing Document"
+#~ msgstr "Открыть существующий документ"
+
+#~ msgid "Recent Documents"
+#~ msgstr "Последние документы"
+
+#~ msgid "Custom Document"
+#~ msgstr "Другой документ"
+
+#~ msgid "Stop"
+#~ msgstr "Остановить"
+
+#~ msgid "Printing"
+#~ msgstr "Печать..."
+
+#~ msgid "Printing done"
+#~ msgstr "Печать завершена"
+
+#~ msgid "Close"
+#~ msgstr "Закрыть"
+
+#~ msgid "Stopped"
+#~ msgstr "Остановлено"
+
+#~ msgid "Open This Document"
+#~ msgstr "Открыть этот документ"
+
+#~ msgctxt "File modification date and time. %1 is date time"
+#~ msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Время модификации:</b></td><td>%1</td></tr>"
+
+#~ msgctxt "File access date and time. %1 is date time"
+#~ msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Время доступа:</b></td><td>%1</td></tr>"
+
+#~ msgid "Show Guides"
+#~ msgstr "Показать направляющие"
+
+#~ msgid "Shows or hides guides"
+#~ msgstr "Показать или скрыть направляющие"
+
+#~ msgid "Create Template"
+#~ msgstr "Создать шаблон"
+
+# Имя автора документа
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "Имя:"
+
+#~ msgid "Group:"
+#~ msgstr "Группа:"
+
+#~ msgid "&Add Group..."
+#~ msgstr "&Добавить группу..."
+
+#~ msgid "&Remove"
+#~ msgstr "Удалить "
+
+#~ msgid "Picture"
+#~ msgstr "Рисунок"
+
+#~ msgid "&Preview"
+#~ msgstr "&Просмотр"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Custom:"
+#~ msgstr "Другой формат"
+
+#~ msgid "&Select..."
+#~ msgstr "&Выбрать..."
+
+#~ msgid "Use the new template as default"
+#~ msgstr "Сделать новый шаблон шаблоном по умолчанию"
+
+#~ msgid "Use the new template every time %1 starts"
+#~ msgstr "Открывать новый шаблон при каждом запуске %1"
+
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr "Заменить существующий шаблон %1?"
+
+#~ msgid "Add Group"
+#~ msgstr "Добавить группу"
+
+#~ msgid "Enter group name:"
+#~ msgstr "Имя группы:"
+
+#~ msgid "This name is already used."
+#~ msgstr "Это имя уже используется."
+
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "Удалить группу?"
+
+#~ msgid "Remove Group"
+#~ msgstr "Удалить группу"
+
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "Удалить шаблон?"
+
+#~ msgid "Remove Template"
+#~ msgstr "Удалить шаблон"
+
+#~ msgid "&Delete"
+#~ msgstr "&Удалить"
+
+#~ msgid "Could not load picture."
+#~ msgstr "Не удалось загрузить рисунок."
+
+#~ msgid "No picture available."
+#~ msgstr "Нет доступных рисунков."
+
+#~ msgid "Use This Template"
+#~ msgstr "Использовать этот шаблон"
+
+#~ msgid "Version"
+#~ msgstr "Версия"
+
+#~ msgid "Date & Time"
+#~ msgstr "Дата и время"
+
+#~ msgid "Saved By"
+#~ msgstr "Сохранён"
+
+#~ msgid "Comment"
+#~ msgstr "Комментарий"
+
+#~ msgid "&Add"
+#~ msgstr "&Добавить"
+
+#~ msgid "&Modify"
+#~ msgstr "&Изменить"
+
+#~ msgid "&Open"
+#~ msgstr "&Открыть"
+
+#~ msgid "A new version could not be added"
+#~ msgstr "Не удалось добавить новую версию"
+
+#~ msgid "Date: %1"
+#~ msgstr "Дата: %1"
+
+#~ msgid "Active Author Profile"
+#~ msgstr "Активный профиль автора"
+
+#~ msgctxt "choice for author profile"
+#~ msgid "Anonymous"
+#~ msgstr "Анонимный"
+
+#~ msgid "Unknown"
+#~ msgstr "Неизвестно"
+
+#~ msgid "Do you want to save the password?"
+#~ msgstr "Сохранить пароль?"
+
+#~ msgid ""
+#~ "Parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Ошибка обработки данных основного документа в строке %1, позиции %2\n"
+#~ "Сообщение об ошибке: %3"
+
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "Размер экрана"
+
+#~ msgid "The directory mode is not supported for remote locations."
+#~ msgstr "Режим каталога недоступен при указании адресов Интернет."
+
+#~ msgid "Calligra Storage"
+#~ msgstr "Хранилище данных Calligra"
+
+#~ msgid "Clear"
+#~ msgstr "Очистить"
+
+#~ msgid "Subtract"
+#~ msgstr "Вычитание"
+
+#~ msgid "Multiply"
+#~ msgstr "Умножение"
+
+#~ msgid "Alpha mask"
+#~ msgstr "Маска альфа-канала"
+
+#~ msgid "Alpha"
+#~ msgstr "Альфа-канал"
+
+#~ msgid "Undefined operation in the alpha color space"
+#~ msgstr "Неопределённое действие в цветовом пространстве альфа-канала"
+
+#~ msgid "L*a*b* (16-bit integer/channel, unmanaged)"
+#~ msgstr "L*a*b* (16 бит на канал, неуправляемый)"
+
+#~ msgid "Lightness"
+#~ msgstr "Светлота"
+
+#~ msgid "a*"
+#~ msgstr "a*"
+
+#~ msgid "b*"
+#~ msgstr "b*"
+
+#~ msgid "Blue"
+#~ msgstr "Синий"
+
+#~ msgid "Green"
+#~ msgstr "Зелёный"
+
+#~ msgid "Red"
+#~ msgstr "Красный"
+
+#~ msgid "Alpha darken"
+#~ msgstr "Затемнение альфа-канала"
+
+#~ msgid "Behind"
+#~ msgstr "Подложка"
+
+#~ msgid "Dissolve"
+#~ msgstr "Растворение"
+
+#~ msgid "Erase"
+#~ msgstr "Стирание"
+
+#~ msgid "Normal"
+#~ msgstr "Нормальное"
+
+#~ msgid "Overlay"
+#~ msgstr "Перекрытие"
+
+#~ msgid "Grain Merge"
+#~ msgstr "Слияние зерна"
+
+#~ msgid "Grain Extract"
+#~ msgstr "Извлечение зерна"
+
+#~ msgid "Hard Mix"
+#~ msgstr "Жёсткое смешивание"
+
+#~ msgid "Geometric Mean"
+#~ msgstr "Cреднее геометрическое"
+
+#~ msgid "Color Dodge"
+#~ msgstr "Осветление цвета"
+
+#~ msgid "Linear Dodge"
+#~ msgstr "Линейное осветление"
+
+#~ msgid "Lighten"
+#~ msgstr "Осветление"
+
+#~ msgid "Hard Light"
+#~ msgstr "Жёсткое осветление"
+
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "Мягкий свет (SVG)"
+
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "Мягкий свет (Photoshop)"
+
+#~ msgid "Gamma Light"
+#~ msgstr "Осветление гаммы"
+
+#~ msgid "Vivid Light"
+#~ msgstr "Яркое осветление"
+
+#~ msgid "Pin Light"
+#~ msgstr "Точечное осветление"
+
+#~ msgid "Linear Light"
+#~ msgstr "Линейное осветление"
+
+#~ msgid "Color Burn"
+#~ msgstr "Затемнение цвета"
+
+#~ msgid "Linear Burn"
+#~ msgstr "Линейное затемнение"
+
+#~ msgid "Darken"
+#~ msgstr "Затемнение"
+
+#~ msgid "Gamma Dark"
+#~ msgstr "Затемнение гаммы"
+
+#~ msgid "Addition"
+#~ msgstr "Добавление"
+
+#~ msgid "Inversed-Subtract"
+#~ msgstr "Обратное вычитание"
+
+#~ msgid "Divide"
+#~ msgstr "Деление"
+
+#~ msgid "Arcus Tangent"
+#~ msgstr "Касательная дуга"
+
+#~ msgid "Difference"
+#~ msgstr "Разница"
+
+#~ msgid "Exclusion"
+#~ msgstr "Исключение"
+
+#~ msgid "Equivalence"
+#~ msgstr "Эквивалентное"
+
+#, fuzzy
+#~| msgid "Additive-Substractive"
+#~ msgid "Additive-Subtractive"
+#~ msgstr "Аддитивное вычитание"
+
+#~ msgid "Copy Red"
+#~ msgstr "Копирование красного"
+
+#~ msgid "Copy Green"
+#~ msgstr "Копирование зелёного"
+
+#~ msgid "Copy Blue"
+#~ msgstr "Копирование синего"
+
+#~ msgid "Color"
+#~ msgstr "Цвет"
+
+#~ msgid "Hue"
+#~ msgstr "Оттенок"
+
+#~ msgid "Saturation"
+#~ msgstr "Насыщенность"
+
+#~ msgid "Increase Saturation"
+#~ msgstr "Увеличение насыщенности"
+
+#~ msgid "Decrease Saturation"
+#~ msgstr "Уменьшение насыщенности"
+
+#~ msgid "Luminosity"
+#~ msgstr "Яркость света"
+
+#~ msgid "Increase Luminosity"
+#~ msgstr "Увеличение яркости света"
+
+#~ msgid "Decrease Luminosity"
+#~ msgstr "Уменьшение яркости света"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgid "Darker Color"
+#~ msgstr "Цвет фона"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgid "Lighter Color"
+#~ msgstr "Цвет линии"
+
+#~ msgid "Color HSI"
+#~ msgstr "Цвет HSI"
+
+#~ msgid "Hue HSI"
+#~ msgstr "Тон HSI"
+
+#~ msgid "Saturation HSI"
+#~ msgstr "Насыщенность HSI"
+
+#~ msgid "Increase Saturation HSI"
+#~ msgstr "Увеличение насыщенности HSI"
+
+#~ msgid "Decrease Saturation HSI"
+#~ msgstr "Уменьшение насыщенности HSI"
+
+#~ msgid "Intensity"
+#~ msgstr "Интенсивность"
+
+#~ msgid "Increase Intensity"
+#~ msgstr "Увеличение интенсивности"
+
+#~ msgid "Decrease Intensity"
+#~ msgstr "Уменьшение интенсивности"
+
+#~ msgid "Color HSL"
+#~ msgstr "Цвет HSL"
+
+#~ msgid "Hue HSL"
+#~ msgstr "Тон HSL"
+
+#~ msgid "Saturation HSL"
+#~ msgstr "Насыщенность HSL"
+
+#~ msgid "Increase Saturation HSL"
+#~ msgstr "Увеличение насыщенности HSL"
+
+#~ msgid "Decrease Saturation HSL"
+#~ msgstr "Уменьшение насыщенности HSL"
+
+#~ msgid "Increase Lightness"
+#~ msgstr "Увеличение светлоты"
+
+#~ msgid "Decrease Lightness"
+#~ msgstr "Уменьшение светлоты"
+
+#~ msgid "Color HSV"
+#~ msgstr "Цвет HSV"
+
+#~ msgid "Hue HSV"
+#~ msgstr "Тон HSV"
+
+#~ msgid "Saturation HSV"
+#~ msgstr "Насыщенность HSV"
+
+#~ msgid "Increase Saturation HSV"
+#~ msgstr "Увеличение насыщенности HSV"
+
+#~ msgid "Decrease Saturation HSV"
+#~ msgstr "Уменьшение насыщенности HSV"
+
+#~ msgid "Increase Value"
+#~ msgstr "Увеличение значения"
+
+#~ msgid "Decrease Value"
+#~ msgstr "Уменьшение значения"
+
+#~ msgid "Generic RGB Histogram"
+#~ msgstr "Обычная гистограмма RGB"
+
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "G"
+#~ msgstr "G"
+
+#~ msgid "L*a*b* Histogram"
+#~ msgstr "Гистограмма L*a*b*"
+
+#~ msgid "L*"
+#~ msgstr "L*"
+
+#~ msgid "Generic L*a*b* Histogram"
+#~ msgstr "Обычная гистограмма L*a*b*"
+
+#~ msgid "RGB"
+#~ msgstr "RGB"
+
+#~ msgid "XYZ"
+#~ msgstr "XYZ"
+
+#~ msgid "L*a*b*"
+#~ msgstr "L*a*b*"
+
+#~ msgid "CMYK"
+#~ msgstr "CMYK"
+
+#~ msgid "Grayscale"
+#~ msgstr "Оттенки серого"
+
+#~ msgid "Grayscale (without transparency)"
+#~ msgstr "Оттенки серого без прозрачности"
+
+#~ msgid "YCbCr"
+#~ msgstr "YCbCr"
+
+#~ msgid "8 Bits"
+#~ msgstr "8 разрядов"
+
+#~ msgid "16 Bits"
+#~ msgstr "16 разрядов"
+
+#~ msgid "16 Bits Float"
+#~ msgstr "16 бит с плавающей запятой"
+
+#~ msgid "32 Bits Float"
+#~ msgstr "32 бита с плавающей запятой"
+
+#, fuzzy
+#~| msgid "16 Bits Float"
+#~ msgid "64 Bits Float"
+#~ msgstr "16 бит с плавающей запятой"
+
+#~ msgid "Arithmetic"
+#~ msgstr "Арифметический"
+
+#~ msgid "Negative"
+#~ msgstr "Отрицательный"
+
+#~ msgid "HSY"
+#~ msgstr "HSY"
+
+#~ msgid "HSI"
+#~ msgstr "HSI"
+
+#~ msgid "HSL"
+#~ msgstr "HSL"
+
+#~ msgid "HSV"
+#~ msgstr "HSV"
+
+#~ msgid "Mix"
+#~ msgstr "Смешивание"
+
+#~ msgid "Inverse Subtract"
+#~ msgstr "Обратное вычитание"
+
+#~ msgid "Burn"
+#~ msgstr "Затемнение"
+
+#, fuzzy
+#~| msgid "Additive Substractive"
+#~ msgid "Additive Subtractive"
+#~ msgstr "Аддитивное вычитание"
+
+#~ msgid "Alpha Darken"
+#~ msgstr "Затемнение альфа-канала"
+
+#~ msgid "Bumpmap"
+#~ msgstr "Рельефное"
+
+#~ msgid "SVG Gradient"
+#~ msgstr "Градиент SVG"
+
+#~ msgid "Rdf"
+#~ msgstr "RDF"
+
+#, fuzzy
+#~| msgid "Title"
+#~ msgid "Triples"
+#~ msgstr "Название"
+
+#~ msgid "new"
+#~ msgstr "Создать"
+
+#~ msgid "copy"
+#~ msgstr "Копировать"
+
+#~ msgid "delete"
+#~ msgstr "Удалить"
+
+#~ msgid "Namespaces"
+#~ msgstr "Пространства имён"
+
+#~ msgid "Prefix"
+#~ msgstr "Префикс"
+
+#~ msgid "Namespace"
+#~ msgstr "Пространство имён"
+
+#~ msgid "SPARQL"
+#~ msgstr "SPARQL"
+
+#~ msgid "Stylesheets"
+#~ msgstr "Таблицы стилей"
+
+#, fuzzy
+#~| msgid "Apply Style %1"
+#~ msgid "Apply Stylesheet"
+#~ msgstr "Применить стиль %1"
+
+#~ msgid "User"
+#~ msgstr "Пользователь"
+
+#~ msgid "Edit %1"
+#~ msgstr "Изменить %1"
+
+#, fuzzy
+#~| msgid "Stylesheet Name"
+#~ msgid "Stylesheet Definition"
+#~ msgstr "Название таблицы стилей"
+
+#, fuzzy
+#~| msgid "Variable Name"
+#~ msgid "Variables Available"
+#~ msgstr "Название переменной"
+
+#~ msgid "Description"
+#~ msgstr "Описание"
+
+#~ msgid "Stylesheet Name"
+#~ msgstr "Название таблицы стилей"
+
+#~ msgid "Empty"
+#~ msgstr "Пусто"
+
+#~ msgid "URI"
+#~ msgstr "URI"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "LightCoral"
+#~ msgid "Literal"
+#~ msgstr "Светло-коралловый"
+
+#~ msgid "Blank"
+#~ msgstr "Пустой"
+
+#, fuzzy
+#~| msgid "Slide"
+#~ msgid "Valid"
+#~ msgstr "Слайд"
+
+#~ msgid "Subject"
+#~ msgstr "Тема"
+
+#, fuzzy
+#~| msgid "Picture"
+#~ msgid "Predicate"
+#~ msgstr "Рисунок"
+
+#, fuzzy
+#~| msgid "Type"
+#~ msgid "Obj Type"
+#~ msgstr "Тип"
+
+#~ msgid "DataType"
+#~ msgstr "Тип данных"
+
+#, fuzzy
+#~| msgid "Stopped"
+#~ msgid "Stored In"
+#~ msgstr "Остановлено"
+
+#, fuzzy
+#~| msgid "Identifier"
+#~ msgid "Invalid identifier"
+#~ msgstr "Идентификатор"
+
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "Нет"
+
+#, fuzzy
+#~| msgid "Circle Bullet"
+#~ msgid "Small Bullet"
+#~ msgstr "Маркер в виде окружности"
+
+#~ msgid "Circle Bullet"
+#~ msgstr "Маркер в виде окружности"
+
+#, fuzzy
+#~| msgid "Circle Bullet"
+#~ msgid "Square Bullet"
+#~ msgstr "Маркер в виде окружности"
+
+#, fuzzy
+#~| msgid "Box Bullet"
+#~ msgid "Rhombus Bullet"
+#~ msgstr "Сплошной квадратный маркер"
+
+#, fuzzy
+#~| msgid "Circle Bullet"
+#~ msgid "Check Mark Bullet"
+#~ msgstr "Маркер в виде окружности"
+
+#, fuzzy
+#~| msgid "Right to left"
+#~ msgid "Rightwards Arrow Bullet"
+#~ msgstr "Справа налево"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "Azure"
+#~ msgid "Arabic"
+#~ msgstr "Лазурь"
+
+#~ msgid "Lower Alphabetical"
+#~ msgstr "Буквы в нижнем регистре"
+
+#~ msgid "Upper Alphabetical"
+#~ msgstr "Буквы в верхнем регистре"
+
+#, fuzzy
+#~| msgid "Lower Roman Numbers"
+#~ msgid "Lower Roman"
+#~ msgstr "Римские числа в нижнем регистре"
+
+#, fuzzy
+#~| msgid "Upper Roman Numbers"
+#~ msgid "Upper Roman"
+#~ msgstr "Римские числа в верхнем регистре"
+
+#, fuzzy
+#~| msgid "Circle Bullet"
+#~ msgid "Large Bullet"
+#~ msgstr "Маркер в виде окружности"
+
+#, fuzzy
+#~| msgid "Box Bullet"
+#~ msgid "Ballot X Bullet"
+#~ msgstr "Сплошной квадратный маркер"
+
+#~ msgid "Bengali"
+#~ msgstr "Бенгали"
+
+#~ msgid "Gujarati"
+#~ msgstr "Гуджарати"
+
+#~ msgid "Gurumukhi"
+#~ msgstr "Гурмукхи"
+
+#~ msgid "Kannada"
+#~ msgstr "Каннада"
+
+#~ msgid "Malayalam"
+#~ msgstr "Малайялам"
+
+#~ msgid "Oriya"
+#~ msgstr "Ория"
+
+#~ msgid "Tamil"
+#~ msgstr "Тамильский"
+
+#~ msgid "Telugu"
+#~ msgstr "Телугу"
+
+#~ msgid "Tibetan"
+#~ msgstr "Тибетский"
+
+#~ msgid "Thai"
+#~ msgstr "Тайский"
+
+#~ msgid "Abjad"
+#~ msgstr "Абджад"
+
+#~ msgid "AbjadMinor"
+#~ msgstr "Абджад (малый)"
+
+#~ msgid "ArabicAlphabet"
+#~ msgstr "Арабские буквы"
+
+#~ msgid "Opacity"
+#~ msgstr "Непрозрачность"
+
+#~ msgid "Recent:"
+#~ msgstr "Последние цвета:"
+
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "Добавить/Удалить цвета..."
+
+#~ msgid "Import Data"
+#~ msgstr "Импортировать данные"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Recommended ( %1 )"
+#~ msgstr "Рекомендуемая ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Locale ( %1 )"
+#~ msgstr "Локаль ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Other ( %1 )"
+#~ msgstr "Другая ( %1 )"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgid "Generic"
+#~ msgstr "Обычный"
+
+#~ msgid "Currency"
+#~ msgstr "Валюта"
+
+#~ msgid "None"
+#~ msgstr "Нет"
+
+#~ msgid ""
+#~ "Please check the ranges you specified. The start value must be lower than "
+#~ "the end value."
+#~ msgstr ""
+#~ "Проверьте выбранный диапазон. Начальное значение должно быть меньше "
+#~ "конечного."
+
+#~ msgid "Cannot find encoding: %1"
+#~ msgstr "Не удалось найти кодировку: %1"
+
+#~ msgid "Data"
+#~ msgstr "Данные"
+
+#~ msgid "E&ncoding:"
+#~ msgstr "Кодиров&ка:"
+
+#~ msgid "First row contains headers"
+#~ msgstr "Первая строка содержит заголовки"
+
+#~ msgid "First column contains headers"
+#~ msgstr "Первый столбец содержит заголовки"
+
+#~ msgid "Format"
+#~ msgstr "Формат"
+
+#~ msgid "Delimiter"
+#~ msgstr "Разделитель"
+
+#~ msgid "Semicolon"
+#~ msgstr "точка с запятой"
+
+#~ msgid "Other"
+#~ msgstr "Прочее"
+
+#~ msgid "Tabulator"
+#~ msgstr "Табуляция"
+
+#~ msgid "Space"
+#~ msgstr "Пробел"
+
+#~ msgid "Text&quote:"
+#~ msgstr "Текст &в кавычках:"
+
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "Decimal symbol:"
+#~ msgstr "Десятичный разделитель:"
+
+#~ msgid "Thousands separator:"
+#~ msgstr "Тысячный разделитель:"
+
+#, fuzzy
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "Считать последовательные разделители одним"
+
+#~ msgid "&Format:"
+#~ msgstr "&Формат:"
+
+#~ msgid "Ranges"
+#~ msgstr "Диапазоны"
+
+#~ msgid "Update"
+#~ msgstr "Обновить"
+
+#~ msgid "Import columns:"
+#~ msgstr "Импорт столбцов:"
+
+#~ msgid "Import lines:"
+#~ msgstr "Импорт строк:"
+
+#~ msgid "to"
+#~ msgstr "до"
+
+#, fuzzy
+#~| msgid "Show Dockers"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Float Docker"
+#~ msgstr "Показать панели"
+
+#, fuzzy
+#~| msgid "Create Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "Создать документ"
+
+#, fuzzy
+#~| msgid "Tool Bars Docker"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "Панель инструментов"
+
+#, fuzzy
+#~| msgid "Show Dockers"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Lock Docker"
+#~ msgstr "Показать панели"
+
+#~ msgid "&Encrypt"
+#~ msgstr "За&шифровать"
+
+#~ msgid "Keywords:"
+#~ msgstr "Ключевые слова:"
+
+#~ msgid "Subject:"
+#~ msgstr "Тема:"
+
+#~ msgid "Last printed:"
+#~ msgstr "Последняя распечатка:"
+
+#~ msgid "Total editing time:"
+#~ msgstr "Общее время правки:"
+
+#~ msgid "Encryption:"
+#~ msgstr "Шифрование:"
+
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "Заголовок:"
+
+#~ msgid "Revision number:"
+#~ msgstr "Номер редакции:"
+
+#~ msgid "Modified:"
+#~ msgstr "Изменён:"
+
+#~ msgid "Comments:"
+#~ msgstr "Комментарий:"
+
+#~ msgid "Created:"
+#~ msgstr "Создан:"
+
+#~ msgid "Path:"
+#~ msgstr "Расположение:"
+
+#~ msgid "&Reset"
+#~ msgstr "Сб&рос"
+
+#, fuzzy
+#~| msgid "Language"
+#~ msgid "Language:"
+#~ msgstr "Язык"
+
+#~ msgid "General"
+#~ msgstr "Общие"
+
+#, fuzzy
+#~| msgid "Last Page"
+#~ msgid "Last saved by"
+#~ msgstr "Последняя страница"
+
+#~ msgid "Use ';' (Example: Office;KDE;Calligra)"
+#~ msgstr "Использовать «;» (Например: Office;KDE;Calligra)"
+
+#~ msgid "This document will be decrypted"
+#~ msgstr "Этот документ будет расшифрован"
+
+#~ msgid "Do not decrypt"
+#~ msgstr "Не расшифровывать"
+
+#~ msgid "This document is encrypted"
+#~ msgstr "Этот документ зашифрован"
+
+#~ msgid "D&ecrypt"
+#~ msgstr "Р&асшифровать"
+
+#~ msgid "This document will be encrypted."
+#~ msgstr "Этот документ будет зашифрован"
+
+#~ msgid "Do not encrypt"
+#~ msgstr "Не шифровать"
+
+#~ msgid "This document is not encrypted"
+#~ msgstr "Этот документ не зашифрован"
+
+#~ msgid "This document does not support encryption"
+#~ msgstr "Этот документ не поддерживает шифрование"
+
+#~ msgid "Confirm Decrypt"
+#~ msgstr "Подтверждение расшифровки"
+
+#~ msgid "Decrypt"
+#~ msgstr "Расшифровать"
+
+#~ msgid "Save Document"
+#~ msgstr "Сохранить документ"
+
+#~ msgid "Change Filetype"
+#~ msgstr "Изменить тип файла"
+
+#~ msgid "Change"
+#~ msgstr "Изменить"
+
+#~ msgid "Remove"
+#~ msgstr "Удалить"
+
+#~ msgid "Open palette"
+#~ msgstr "Открыть палитру"
+
+#~ msgid "Save palette"
+#~ msgstr "Сохранить палитру"
+
+#~ msgid "Add Color To Palette"
+#~ msgstr "Добавить цвет в палитру"
+
+#~ msgid "Color name:"
+#~ msgstr "Название цвета:"
+
+#~ msgid "Gimp Color Palette (*.gpl)"
+#~ msgstr "Цветовая палитра GIMP (*.gpl)"
+
+#~ msgid "Cannot write to palette file %1. Maybe it is read-only. "
+#~ msgstr ""
+#~ "Не удалось записать в файл палитры %1. Вероятно, он доступен только для "
+#~ "чтения."
+
+#~ msgid "Palette"
+#~ msgstr "Палитра"
+
+#~ msgid "Add/Remove Colors"
+#~ msgstr "Добавить/Удалить цвета"
+
+#~ msgid "All supported formats"
+#~ msgstr "Все поддерживаемые форматы"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Testing: OpenFile"
+#~ msgstr "Открыть палитру"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Testing: OpenDirectory"
+#~ msgstr "Название каталога"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFile"
+#~ msgstr "Отсутствует фильтр импорта"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "Отсутствует фильтр импорта"
+
+#, fuzzy
+#~| msgid "Import Resource"
+#~ msgid "Testing: Import Directory"
+#~ msgstr "Импорт данных"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Testing: SaveFile"
+#~ msgstr "Сохранить палитру"
+
+#~ msgid "Open File"
+#~ msgstr "Открыть файл"
+
+#~ msgid "Open Files"
+#~ msgstr "Открыть файлы"
+
+#~ msgid "blablabla"
+#~ msgstr "блаблабла"
+
+#, fuzzy
+#~| msgid "After:"
+#~ msgid "Filter:"
+#~ msgstr "После:"
+
+#, fuzzy
+#~| msgid "TextLabel1:"
+#~ msgid "TextLabel"
+#~ msgstr "Надпись1:"
+
+#~ msgid "Results:"
+#~ msgstr "Результаты:"
+
+#~ msgid "Filter Type"
+#~ msgstr "Тип фильтра"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Named"
+#~ msgstr "Название"
+
+#, fuzzy
+#~| msgid "Set default format"
+#~ msgid "Set default filter"
+#~ msgstr "Установить формат по умолчанию"
+
+#~ msgid "Save File"
+#~ msgstr "Сохранить файл"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Import Files"
+#~ msgstr "Импорт строк:"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Import File"
+#~ msgstr "Импорт строк:"
+
+#~ msgid "Open Directory"
+#~ msgstr "Открыть папку"
+
+#, fuzzy
+#~| msgid "Import Resource"
+#~ msgid "Import Directory"
+#~ msgstr "Импорт данных"
+
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "Нет"
+
+#~ msgid "Gradient"
+#~ msgstr "Градиент"
+
+#~ msgid "Pattern"
+#~ msgstr "Текстура"
+
+#~ msgid "Change the filling color"
+#~ msgstr "Изменить цвет заливки"
+
+#, fuzzy
+#~| msgid "Change the filling color"
+#~ msgid "Change the filling gradient"
+#~ msgstr "Изменить цвет заливки"
+
+#, fuzzy
+#~| msgid "Change the filling color"
+#~ msgid "Change the filling pattern"
+#~ msgstr "Изменить цвет заливки"
+
+#~ msgid "Icon and Text"
+#~ msgstr "Значок и текст"
+
+#~ msgid "Icon only"
+#~ msgstr "Только значок"
+
+#, fuzzy
+#~| msgid "Bottom:"
+#~ msgid "Bottom side"
+#~ msgstr "Внизу:"
+
+#, fuzzy
+#~| msgid "Left indent"
+#~ msgid "Left side"
+#~ msgstr "Отступ слева"
+
+#, fuzzy
+#~| msgid "Right indent"
+#~ msgid "Right side"
+#~ msgstr "Отступ справа"
+
+#~ msgid "Page Layout"
+#~ msgstr "Разметка страницы"
+
+#, fuzzy
+#~| msgid "Empty Document"
+#~ msgid "Apply to document"
+#~ msgstr "Пустой документ"
+
+#~ msgid "Left Edge:"
+#~ msgstr "Левый край:"
+
+#~ msgid "Right Edge:"
+#~ msgstr "Правый край:"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Binding Edge:"
+#~ msgstr "Последняя распечатка"
+
+#, fuzzy
+#~| msgid "Page Size"
+#~ msgid "Page Edge:"
+#~ msgstr "Размер страницы"
+
+#~ msgid "Facing Pages:"
+#~ msgstr "Парные страницы:"
+
+#~ msgid "Facing pages"
+#~ msgstr "Парные страницы"
+
+#~ msgid "Page Layout:"
+#~ msgstr "Свойства страницы:"
+
+#~ msgid "Page spread"
+#~ msgstr "Разворот"
+
+#~ msgid "Unit:"
+#~ msgstr "Единица измерения:"
+
+#, fuzzy
+#~| msgid "Font style:"
+#~ msgid "Follow style:"
+#~ msgstr "Стиль шрифта:"
+
+#~ msgid "Size:"
+#~ msgstr "Размер:"
+
+#~ msgid "Width:"
+#~ msgstr "Толщина:"
+
+#~ msgid "Height:"
+#~ msgstr "Высота:"
+
+#~ msgid "Orientation:"
+#~ msgstr "Ориентация:"
+
+#~ msgid "Facing pages:"
+#~ msgstr "Парные страницы:"
+
+#~ msgid "Single sided"
+#~ msgstr "Одиночная"
+
+#~ msgid "Text direction:"
+#~ msgstr "Направление текста:"
+
+#~ msgid "Automatic"
+#~ msgstr "Автоматическое"
+
+#~ msgid "Left to right"
+#~ msgstr "Слева направо"
+
+#~ msgid "Right to left"
+#~ msgstr "Справа налево"
+
+#~ msgid "Margins"
+#~ msgstr "Поля"
+
+#~ msgid "Top:"
+#~ msgstr "Сверху:"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Binding edge:"
+#~ msgstr "Последняя распечатка"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page edge:"
+#~ msgstr "Просмотр страницы"
+
+#~ msgid "Bottom:"
+#~ msgstr "Внизу:"
+
+#, fuzzy
+#~| msgid "Import Resource"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "Импорт данных"
+
+#, fuzzy
+#~| msgid "Delete Resource"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Delete resource"
+#~ msgstr "Удалить данные"
+
+#, fuzzy
+#~| msgid "Download Resource"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "Загрузить данные"
+
+#, fuzzy
+#~| msgid "Share Resource"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "Опубликовать данные"
+
+#, fuzzy
+#~| msgid "Choose File to Add"
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "Выберите файл для добавления"
+
+#~ msgid "New tag"
+#~ msgstr "Создать метку"
+
+#~ msgid "Assign to tag"
+#~ msgstr "Добавить метку"
+
+#~ msgid "Remove from this tag"
+#~ msgstr "Снять эту метку"
+
+#~ msgid "Remove from other tag"
+#~ msgstr "Снять другую метку"
+
+#~ msgid "Tags"
+#~ msgstr "Метки"
+
+#~ msgid ""
+#~ "<qt>The tag you are trying to undelete already exists in tag list."
+#~ "<br>Please enter a new, unique name for it.</qt>"
+#~ msgstr ""
+#~ "<qt>Метка, которую вы пытаетесь восстановить, уже есть в списке."
+#~ "<br>Введите другое имя для неё.</qt>"
+
+#~ msgid "Tag was not undeleted."
+#~ msgstr "Метка не была восстановлена."
+
+#~ msgid "Change the color of the shadow"
+#~ msgstr "Изменить цвет тени"
+
+#~ msgid "Blur:"
+#~ msgstr "Размытие:"
+
+#~ msgid "Distance:"
+#~ msgstr "Расстояние:"
+
+#~ msgid "Butt cap"
+#~ msgstr "Срезанный"
+
+#~ msgid "Round cap"
+#~ msgstr "Скругленный"
+
+#~ msgid "Square cap"
+#~ msgstr "Квадратный"
+
+#~ msgid "Miter join"
+#~ msgstr "Угловой"
+
+#~ msgid "Round join"
+#~ msgstr "Скругленный"
+
+#~ msgid "Bevel join"
+#~ msgstr "Срезанный"
+
+#, fuzzy
+#~| msgid "Miter limit:"
+#~ msgid "Miter limit"
+#~ msgstr "Предел среза:"
+
+#~ msgid "Thickness:"
+#~ msgstr "Толщина:"
+
+#~ msgid "Set line width of actual selection"
+#~ msgstr "Установка толщины линии"
+
+#~ msgid "Change the color of the line/border"
+#~ msgstr "Изменить цвет линии/контура"
+
+#, fuzzy
+#~| msgid "Tags"
+#~ msgid "Tag"
+#~ msgstr "Метки"
+
+#~ msgid "Enter resource filters here"
+#~ msgstr "Введите слова для поиска"
+
+#~ msgid "Rename tag"
+#~ msgstr "Переименовать метку"
+
+#~ msgid "Delete this tag"
+#~ msgstr "Удалить эту метку"
+
+#~ msgid "Undelete"
+#~ msgstr "Восстановить"
+
+#~ msgid "Tool Options"
+#~ msgstr "Параметры инструмента"
+
+#, fuzzy
+#~| msgid "Toggles organising the options in tabs or not"
+#~ msgid "Toggles organizing the options in tabs or not"
+#~ msgstr "Режим вкладок"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "deselect item"
+#~ msgstr "Выберите символ"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "select item"
+#~ msgstr "Выберите символ"
+
+#~ msgid "Zoom to Selection"
+#~ msgstr "Масштаб в выделение"
+
+#, fuzzy
+#~| msgid "Zoom Tool"
+#~ msgid "Zoom to All"
+#~ msgstr "Масштаб"
+
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1"
+
+#~ msgid "All Presets"
+#~ msgstr "Все профили"
+
+#~ msgid "Tag:"
+#~ msgstr "Метка:"
+
+#, fuzzy
+#~| msgid "Automatic"
+#~ msgctxt "Static Image"
+#~ msgid "Static"
+#~ msgstr "Автоматическое"
+
+#~ msgid "Value (brightness)"
+#~ msgstr "Значение (яркость)"
+
+#~ msgid "Cyan"
+#~ msgstr "Голубой"
+
+#~ msgid "Magenta"
+#~ msgstr "Пурпурный"
+
+#~ msgid "Yellow"
+#~ msgstr "Жёлтый"
+
+#~ msgid "Black"
+#~ msgstr "Чёрный"
+
+#~ msgid "Opacity:"
+#~ msgstr "Непрозрачность:"
+
+#~ msgid "&Themes"
+#~ msgstr "&Темы"
+
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "По умолчанию"
+
+#~ msgid "Configuration..."
+#~ msgstr "Настроить..."
+
+#~ msgid "&Tools"
+#~ msgstr "&Сервис"
+
+#~ msgid "Color Selector"
+#~ msgstr "Выбор цвета"
+
+#~ msgid "Database file \"%1\" does not exist."
+#~ msgstr "Файл базы данных \"%1\" не существует."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist in the database."
+#~ msgstr "Файл %1 не существует."
+
+#~ msgid "Ignored"
+#~ msgstr "Проигнорировано"
+
+#, fuzzy
+#~| msgid "No such interpreter '%1'"
+#~ msgid "No such driver service: \"%1\"."
+#~ msgstr "Нет интерпретатора '%1'"
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not compact database \"%1\"."
+#~ msgstr "Не удалось прочитать пакет «%1»."
+
+#, fuzzy
+#~| msgid "Do you want to save the password?"
+#~ msgid "Do you want to open file \"%1\" as read-only?"
+#~ msgstr "Сохранить пароль?"
+
+#, fuzzy
+#~| msgid "Could not read the beginning of the file."
+#~ msgid "Could not gain exclusive access for writing the file."
+#~ msgstr "Не удалось прочитать заголовок файла."
+
+#, fuzzy
+#~| msgid "Could not load picture."
+#~ msgid "Could not close busy database."
+#~ msgstr "Не удалось загрузить рисунок."
+
+#, fuzzy
+#~| msgid "Could not export file."
+#~ msgid "Could not remove file \"%1\"."
+#~ msgstr "Не удалось экспортировать файл."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist"
+#~ msgstr "Файл %1 не существует."
+
+#, fuzzy
+#~| msgid "Date Format"
+#~ msgid "Track Total Format"
+#~ msgstr "Формат даты"
+
+#, fuzzy
+#~| msgid "Show Grid"
+#~ msgid "Grid Snap"
+#~ msgstr "Показать сетку"
+
+#~ msgid "                Language:"
+#~ msgstr "Язык:"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Formatting"
+#~ msgstr "Формат"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Testing: OpenDirectories"
+#~ msgstr "Название каталога"
+
+#, fuzzy
+#~| msgid "Import Resource"
+#~ msgid "Testing: ImportDirectories"
+#~ msgstr "Импорт данных"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Testing: SaveFiles"
+#~ msgstr "Сохранить палитру"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Open Directories"
+#~ msgstr "Название каталога"
+
+#, fuzzy
+#~| msgid "Import Resource"
+#~ msgid "Import Directories"
+#~ msgstr "Импорт данных"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Save Files"
+#~ msgstr "Сохранить палитру"
+
+#~ msgid "Create Path"
+#~ msgstr "Создание контура"
+
+#~ msgid "Red Green Blue"
+#~ msgstr "Red Green Blue"
+
+#~ msgid "L a* b*"
+#~ msgstr "L*a*b*"
+
+#~ msgid "Cyan Magenta Yellow Black"
+#~ msgstr "Cyan Magenta Yellow Black"
+
+#~ msgid "Error!"
+#~ msgstr "Ошибка!"
+
+#~ msgid "Contacts"
+#~ msgstr "Контакты"
+
+#~ msgid "Events"
+#~ msgstr "События"
+
+#~ msgid "Locations"
+#~ msgstr "Расположения"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "Azure"
+#~ msgid "Area"
+#~ msgstr "Лазурь"
+
+#, fuzzy
+#~| msgid "Version"
+#~ msgid "Region"
+#~ msgstr "Версия"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not save\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not add entry\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Не удаётся сохранить\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not save iCal file\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Не удалось сохранить файл iCal\n"
+#~ "%1"
+
+#~ msgid "&Summary:"
+#~ msgstr "&Сводка:"
+
+#~ msgid "&Location:"
+#~ msgstr "&Местоположение:"
+
+#~ msgid "&Start:"
+#~ msgstr "&Начало:"
+
+#~ msgid "&End:"
+#~ msgstr "&Конец:"
+
+#~ msgid "Time and Date"
+#~ msgstr "Дата и время"
+
+#~ msgid "Timezone"
+#~ msgstr "Часовой пояс"
+
+# Имя автора документа
+#~ msgid "&Name:"
+#~ msgstr "&Имя:"
+
+#~ msgid "&Nick:"
+#~ msgstr "&Прозвище:"
+
+#~ msgid "&Phone Number:"
+#~ msgstr "&Номер телефона:"
+
+#~ msgid "&Home Page:"
+#~ msgstr "&Домашняя страница:"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Contact Information"
+#~ msgstr "Сведения о документе"
+
+#, fuzzy
+#~| msgid "Import Data"
+#~ msgid "Import contact"
+#~ msgstr "Импортировать данные"
+
+#~ msgid "Export as vcard..."
+#~ msgstr "Экспортировать как vCard..."
+
+#~ msgid "&Name"
+#~ msgstr "&Имя"
+
+#~ msgid "The Earth"
+#~ msgstr "Земля"
+
+#~ msgid "The Marble widget displays a virtual globe."
+#~ msgstr "Элемент Marble, показывающий виртуальный глобус."
+
+#~ msgid "Navigation Control"
+#~ msgstr "Навигация"
+
+#~ msgid "Use this control to navigate."
+#~ msgstr "Использовать этот элемент управления для навигации."
+
+#~ msgid "Latitude"
+#~ msgstr "Широта"
+
+#~ msgid "Longitude"
+#~ msgstr "Долгота"
+
+#~ msgid "Location Information"
+#~ msgstr "Сведения о расположении"
+
+#~ msgid "People"
+#~ msgstr "Люди"
+
+#~ msgid ""
+#~ "A document with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "Документ с таким названием уже существует\n"
+#~ "Хотите перезаписать его?"
+
+#~ msgid "Unknown Calligra MimeType %1. Check your installation."
+#~ msgstr "Неизвестный Calligra тип MIME %1. Проверьте правильность установки."
+
+#~ msgid "%1 (Uncompressed XML Files)"
+#~ msgstr "%1 (несжатые файлы XML)"
+
+#~ msgid "%1 (Flat XML File)"
+#~ msgstr "%1 (простой файл XML)"
+
+#~ msgid "%1 (Encrypted)"
+#~ msgstr "%1 (зашифровано)"
+
+#~ msgid "%1 (%2 Compatible)"
+#~ msgstr "%1 (совместимо с %2)"
+
+#~ msgid "Save Document As"
+#~ msgstr "Сохранить документ как"
+
+#~ msgid "Export Document As"
+#~ msgstr "Экспорт в файл"
+
+#~ msgid "Export to PDF"
+#~ msgstr "Экспорт в PDF"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Set background"
+#~ msgid "Slide Background"
+#~ msgstr ""
+#~ "Выбор фона\n"
+#~ "выбор фона"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Set background"
+#~ msgid "Document background"
+#~ msgstr ""
+#~ "Выбор фона\n"
+#~ "выбор фона"
+
+#~ msgid "&OK"
+#~ msgstr "&ОК"
+
+#~ msgid "&Cancel"
+#~ msgstr "О&тмена"
+
+#~ msgid "First Page"
+#~ msgstr "Первая страница"
+
+#, fuzzy
+#~| msgid "Copy Page"
+#~ msgid "Even Pages(s)"
+#~ msgstr "Скопировать страницу"
+
+#, fuzzy
+#~| msgid "Copy Page"
+#~ msgid "Any Pages(s)"
+#~ msgstr "Скопировать страницу"
+
+#~ msgid "&Edit"
+#~ msgstr "&Правка"
+
+#~ msgid "&Close"
+#~ msgstr "&Закрыть"
+
+#~ msgid "Snapping"
+#~ msgstr "Прилипание"
+
+#~ msgid "Dodge"
+#~ msgstr "Осветление"
+
+#~ msgid "Hard light"
+#~ msgstr "Жёсткое осветление"
+
+#~ msgid "Soft light"
+#~ msgstr "Мягкое осветление"
+
+#~ msgid "Show Shadow"
+#~ msgstr "Показать тень"
+
+#, fuzzy
+#~| msgctxt "Underline Style"
+#~| msgid "Single"
+#~ msgid "Angle:"
+#~ msgstr "Одинарное"
+
+#, fuzzy
+#~| msgid "Shadow Offset:"
+#~ msgid "Offset:"
+#~ msgstr "Смещение тени:"
+
+#~ msgid "Color:"
+#~ msgstr "Цвет:"
+
+#~ msgid "Blur radius:"
+#~ msgstr "Радиус размытия:"
+
+#~ msgid "Style:"
+#~ msgstr "Стиль:"
+
+#~ msgid "Cap:"
+#~ msgstr "Торец:"
+
+#~ msgid "Join:"
+#~ msgstr "Стык:"
+
+#~ msgid "Set miter limit"
+#~ msgstr "Установка предела среза"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bookmark"
+#~ msgstr "Вставить разрыв строки"
+
+#~ msgid "Insert Table"
+#~ msgstr "Добавление таблицы"
+
+#~ msgid "Insert Row Above"
+#~ msgstr "Вставить строку выше"
+
+#~ msgid "Insert Column Left"
+#~ msgstr "Вставить столбец слева"
+
+#~ msgid "Insert Column Right"
+#~ msgstr "Вставить столбец справа"
+
+#~ msgid "Delete Column"
+#~ msgstr "Удалить столбец"
+
+#~ msgid "Delete Row"
+#~ msgstr "Удалить строку"
+
+#, fuzzy
+#~| msgid "Include in table of contents"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Включать в оглавление"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Вставить разрыв строки"
+
+#~ msgid "min"
+#~ msgstr " мин."
+
+#, fuzzy
+#~ msgid "DetailsPaneBase"
+#~ msgstr "DetailsPaneBase"
+
+#~ msgid "Embedding Object"
+#~ msgstr "Внедрённый объект"
+
+#~ msgid "I&mport..."
+#~ msgstr "&Импорт..."
+
+#~ msgid "&Default"
+#~ msgstr "По &умолчанию"
+
+#~ msgid "Preview:"
+#~ msgstr "Просмотр:"
+
+#~ msgid "Background Tool"
+#~ msgstr "Редактирование фона"
+
+#~ msgid "Use the styles docker to manipulate the background."
+#~ msgstr "Использовать панель стилей для работы с фоном."
+
+#~ msgid "Background editing tool"
+#~ msgstr "Редактирование фона"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Separate paths"
+#~ msgstr ""
+#~ "Отделение контуров\n"
+#~ "отделение контуров"
+
+#~ msgid ""
+#~ "An autosaved file for an unnamed document exists in %1.\n"
+#~ "This file is dated %2\n"
+#~ "Do you want to open it?"
+#~ msgstr ""
+#~ "Автосохранение безымянного документа находится в %1.\n"
+#~ "Файл был создан %2.\n"
+#~ "Открыть автосохранение?"
+
+#~ msgid "&Delete Personal Data"
+#~ msgstr "Удалить &личные данные"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shapes"
+#~ msgstr ""
+#~ "Удаление объектов\n"
+#~ "удаление объектов"
+
+#~ msgid "Substract"
+#~ msgstr "Вычитание"
+
+#~ msgid "Inverse Substract"
+#~ msgstr "Обратное вычитание"
+
+#~ msgid ""
+#~ "No personal contact data set, please use the "
+#~ "option                                     \"Set as Personal Contact Data"
+#~ "\" from the \"Edit\"     menu in KAddressbook to set one."
+#~ msgstr ""
+#~ "Не установлен ваш контакт в адресной книге. Используйте пункт меню "
+#~ "адресной книги KDE «Правка->Пометить как данные владельца»."
+
+#~ msgid "Hide colors with bad contrast"
+#~ msgstr "Скрывать недостаточно контрастные цвета"
+
+#~ msgid "&Load From Address Book"
+#~ msgstr "&Получить из адресной книги"
+
+#~ msgid "Shadow Angle:"
+#~ msgstr "Угол тени:"
+
+#~ msgid "Shadow Color:"
+#~ msgstr "Цвет тени:"
+
+#~ msgid "Toggles showing a title bar"
+#~ msgstr "Отображение заголовка панели"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set border"
+#~ msgstr ""
+#~ "Установка обводки\n"
+#~ "установку обводки"
+
+#~ msgid "Ellipse Shape"
+#~ msgstr "Эллипс"
+
+#~ msgid "Set Horizontal Alignment"
+#~ msgstr "Выравнивание по горизонтали"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgid "Line Break"
+#~ msgstr "Изменить рамку"
+
+#~ msgid "Hide Grid"
+#~ msgstr "Скрыть сетку"
+
+#~ msgid "Hide Guides"
+#~ msgstr "Скрыть направляющие"
+
+#~ msgid "&Close All Views"
+#~ msgstr "&Закрыть все виды"
+
+#~ msgid "&Split View"
+#~ msgstr "&Разделить вид"
+
+#~ msgid "&Remove View"
+#~ msgstr "&Удалить вид"
+
+#~ msgid "Splitter &Orientation"
+#~ msgstr "Раз&делитель"
+
+#~ msgid "&Horizontal"
+#~ msgstr "&Горизонтальный"
+
+#~ msgid "&Vertical"
+#~ msgstr "&Вертикальный"
+
+#, fuzzy
+#~ msgid "End"
+#~ msgstr "End"
+
+#~ msgid "Printing page %1"
+#~ msgstr "Печатается страница %1"
+
+#, fuzzy
+#~ msgid "Form"
+#~ msgstr "Обычный текст"
+
+#~ msgid "Import"
+#~ msgstr "Импортировать"
+
+#, fuzzy
+#~| msgid "Shape"
+#~ msgid "Share"
+#~ msgstr "Фигура"
+
+#, fuzzy
+#~| msgid "Alpha"
+#~ msgid "Copy Opacy"
+#~ msgstr "Альфа-канал"
+
+#, fuzzy
+#~| msgid "Alpha"
+#~ msgid "Copy Alpha"
+#~ msgstr "Альфа-канал"
+
+#~ msgid "Light"
+#~ msgstr "Светлое"
+
+#~ msgid "Hide Dockers"
+#~ msgstr "Скрыть панели"
+
+#, fuzzy
+#~| msgid "Stop"
+#~ msgid "Atop"
+#~ msgstr "Остановить"
+
+#, fuzzy
+#~| msgid "Strikeout:"
+#~ msgid "Spread out:"
+#~ msgstr "Зачёркнутый:"
+
+#~ msgid "KOffice"
+#~ msgstr "KOffice"
+
+#~ msgid "KOffice Storage"
+#~ msgstr "Хранилище KOffice"
+
+#~ msgid "(c) 2007 Cyrille Berger"
+#~ msgstr "© Cyrille Berger, 2007"
+
+#, fuzzy
+#~| msgid "Date Format"
+#~ msgid "Barcode"
+#~ msgstr "Формат даты"
+
+#, fuzzy
+#~| msgid "Date Format"
+#~ msgid "Barcode Format"
+#~ msgstr "Формат даты"
+
+#, fuzzy
+#~| msgid "a chart"
+#~ msgid "Chart"
+#~ msgstr "диаграмма"
+
+#, fuzzy
+#~| msgid "Select Font"
+#~ msgid "Field Font"
+#~ msgstr "Выберите шрифт"
+
+#, fuzzy
+#~| msgid "Tie"
+#~ msgid "Pie"
+#~ msgstr "Соединительная линия"
+
+#, fuzzy
+#~ msgid "Ring"
+#~ msgstr "По &правому краю"
+
+#, fuzzy
+#~| msgid "Clear"
+#~ msgid "Polar"
+#~ msgstr "Очистить"
+
+#, fuzzy
+#~| msgid "Data"
+#~ msgid "Chart Type"
+#~ msgstr "Данные"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgid "Stacked"
+#~ msgstr "Пробел"
+
+#, fuzzy
+#~| msgid "Recent:"
+#~ msgid "Percent"
+#~ msgstr "Недавние цвета:"
+
+#, fuzzy
+#~| msgid "Rows:"
+#~ msgid "Rows"
+#~ msgstr "Строк:"
+
+#, fuzzy
+#~| msgid "Color name:"
+#~ msgid "Color Scheme"
+#~ msgstr "Название цвета:"
+
+#, fuzzy
+#~| msgid "Untitled"
+#~ msgid "Antialiased"
+#~ msgstr "Безымянный"
+
+#~ msgid "QXml"
+#~ msgstr "QXml"
+
+#~ msgid "Zoom Tool"
+#~ msgstr "Масштаб"
+
+#~ msgid "Pan Tool"
+#~ msgstr "Перемещение"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Out"
+#~ msgstr "Другой формат"
+
+#~ msgid "ICC Engine"
+#~ msgstr "Модуль ICC"
+
+#~ msgid "RGB8 Histogram"
+#~ msgstr "Гистограмма RGB8"
+
+#~ msgid "Insert Linebreak"
+#~ msgstr "Вставить разрыв строки"
+
+#~ msgid "&Insert"
+#~ msgstr "&Вставить"
+
+#~ msgid "Insert the selected character in the text"
+#~ msgstr "Вставить выбранный символ в текст"
+
+#~ msgid "Resize Panel Forward"
+#~ msgstr "Увеличить размер"
+
+#~ msgid "Resize Panel Reverse"
+#~ msgstr "Уменьшить размер"
+
+#~ msgid "Access Keys"
+#~ msgstr "Клавиши доступа"
+
+#~ msgid "Enable word completion"
+#~ msgstr "Включить автозавершение"
+
+#~ msgid ""
+#~ "Toggle autocompletion on and off: if this is checked then autocompletion "
+#~ "will be enabled."
+#~ msgstr "Включить или выключить автозавершение."
+
+#~ msgid ""
+#~ "Suggestion list for autocompletion: contains all the words that will be "
+#~ "autocompleted."
+#~ msgstr "Список всех слов, для которых будет использоваться автозавершение."
+
+#~ msgid ""
+#~ "By clicking this button you can add manually an individual word to the "
+#~ "completion list."
+#~ msgstr ""
+#~ "При нажатии на эту кнопку вы можете внести вручную слово в список "
+#~ "автозавершения."
+
+#~ msgid ""
+#~ "To remove words from the completion list, select the word with the left "
+#~ "mouse button from the list, then click this button."
+#~ msgstr ""
+#~ "Для удаления слова из списка автозавершения, выберите его в списке и "
+#~ "нажмите эту кнопку."
+
+#~ msgid "Automatically add new words to suggestion list"
+#~ msgstr "Автоматически добавлять слова в список автозавершения"
+
+#~ msgid ""
+#~ "If this option is enabled, any word equal to or longer than the "
+#~ "\"Characters needed\" typed in this document will automatically be added "
+#~ "to the list of words used by the completion."
+#~ msgstr ""
+#~ "При включении этой опции каждое вводимое слово, имеющее длину равную или "
+#~ "большую указанной, будет автоматически добавлено в список автозавершения "
+#~ "слов."
+
+#~ msgid "Completion Options"
+#~ msgstr "Параметры автозавершения"
+
+#~ msgid "Show words in tooltip"
+#~ msgstr "Показывать варианты в подсказке"
+
+#~ msgid ""
+#~ "If this option is enabled, a tool tip box will appear when you type the "
+#~ "beginning of a word that exists in the completion list. To complete the "
+#~ "word, press the key you set to accept suggestions in the \"Key to accept "
+#~ "suggestion\" drop-down list."
+#~ msgstr ""
+#~ "Если эта опция включена, то когда вы начнёте набирать слово, появится "
+#~ "всплывающая подсказка с вариантом завершения печатаемого слова. Для "
+#~ "автоматического завершения слова, нажмите клавишу, выбранную в списке."
+
+#~ msgid ""
+#~ "This sets the maximum number of words in the completion list. All "
+#~ "additional words will not be included in the list. You can select any "
+#~ "value from 1 to 500. This option keeps the list from becoming too "
+#~ "cumbersome.\n"
+#~ "This option is most important when Automatically add words to completion "
+#~ "list is enabled."
+#~ msgstr ""
+#~ "Количество слов в списке автозавершения. Вы можете указать размер списка "
+#~ "в пределах от 1 до 500 слов.\n"
+#~ "Этот параметр очень важен при включенном параметре 'Автоматически "
+#~ "добавлять слова в список автозавершения'."
+
+#~ msgid "Characters needed:"
+#~ msgstr "Минимальное число символов:"
+
+#~ msgid "Suggest words:"
+#~ msgstr "Слова:"
+
+#~ msgid ""
+#~ "Use this spinbox/slider combination to prevent automatically adding short "
+#~ "words to the completion list. You can select any value from 5-100 and the "
+#~ "words will need to be at least the number of characters set here to be "
+#~ "added to the list."
+#~ msgstr ""
+#~ "Используйте поле ввода или бегунок для ограничения количества слов в "
+#~ "списке автозавершения. Вы можете указать размер списка в пределах от 1 до "
+#~ "500 слов."
+
+#~ msgid "Append space"
+#~ msgstr "Добавлять пробел"
+
+#~ msgid ""
+#~ "If checked, it adds a single space to the end of a word after "
+#~ "autocompletion, this means it is not necessary to add the space manually "
+#~ "for the next word."
+#~ msgstr "Добавлять пробел после завершаемого слова."
+
+#~ msgid "Key to accept suggestion:"
+#~ msgstr "Клавиша подтверждения варианта автозавершения:"
+
+#~ msgid ""
+#~ "Set the key you want to use when an autocompleted word is suggested to "
+#~ "you and you want to accept it. You can choose Enter, Tab, Space, End or "
+#~ "Right."
+#~ msgstr ""
+#~ "Выбор клавиши, при нажатии на которую слово будет завершено. Вы можете "
+#~ "указать Enter, Tab, Пробел, End или Стрелку вправо."
+
+#~ msgid "Make Default"
+#~ msgstr "Установить в качестве списка по умолчанию"
+
+#~ msgid ""
+#~ "Completion is configured per document. Making this list the default will "
+#~ "allow you to use it for new documents automatically. A dialog will appear "
+#~ "to inform you that the list will be used for all documents from now on."
+#~ msgstr ""
+#~ "Автозавершение настраивается для каждого документа отдельно. Установка "
+#~ "этого списка списком по умолчанию позволит автоматически использовать его "
+#~ "для всех новых документов."
+
+#~ msgid "C&ustom"
+#~ msgstr "&Другой"
+
+#~ msgid "&Insert:"
+#~ msgstr "&Вставить:"
+
+#~ msgid "Paragraph Background Color"
+#~ msgstr "Фоновый цвет абзаца"
+
+#~ msgid ""
+#~ "<p>Paragraph Background Color</p>\n"
+#~ "\n"
+#~ "<p>The paragraph background color appears\n"
+#~ "between the left and right margins of a\n"
+#~ "paragraph.</p>\n"
+#~ "\n"
+#~ "<p>If the text has a background color set, then\n"
+#~ "the text background will appear 'on top' of the\n"
+#~ "paragraph background.  In this case, the paragraph\n"
+#~ "background will still show on parts of the paragraph\n"
+#~ "that have no text (usually on the last line, between\n"
+#~ "the end of the text and the margin).</p>"
+#~ msgstr ""
+#~ "<p>Цвет фона абзаца</p>\n"
+#~ "\n"
+#~ "<p>Фон абзаца показывается между левой и правой\n"
+#~ " границами абзаца.</p>\n"
+#~ "\n"
+#~ "<p>Если цвет фона текста отличается от фона абзаца,\n"
+#~ "фон текста будет наложен на фон абзаца.</p>"
+
+#~ msgid "Borders"
+#~ msgstr "Границы абзаца"
+
+#~ msgid ""
+#~ "<p>Paragraph Borders</p>\n"
+#~ "\n"
+#~ "<p>The preview shows what the currently \n"
+#~ "selected paragraph borders will look like.</p>\n"
+#~ "\n"
+#~ "<p>To <i>add</i> a new border: Select the desired style,\n"
+#~ "width and color.  Click the toggle button that corresponds\n"
+#~ "to that border.</p>\n"
+#~ "\n"
+#~ "<p>To <i>remove</i> an existing border: Either click on the\n"
+#~ "border to be removed in the preview, or click the\n"
+#~ "toggle button corresponding to that border.</p>\n"
+#~ "\n"
+#~ "<p>To <i>modify</i> a border: Select the desired style,\n"
+#~ "width and color, then click on the border to be\n"
+#~ "modified in the preview.</p>"
+#~ msgstr ""
+#~ "<p>Границы абзаца</p>\n"
+#~ "\n"
+#~ "<p>В этом окне показывается как будут выглядеть\n"
+#~ "границы абзаца.</p>\n"
+#~ "\n"
+#~ "<p>Для того чтобы <i>добавить</i> границу: выберите \n"
+#~ "стиль, толщину и цвет линии, затем нажмите на кнопку, \n"
+#~ "соответствующую расположению границы.</p>\n"
+#~ "\n"
+#~ "<p>Для того чтобы <i>удалить</i> границу: нажмите \n"
+#~ "на линию границы в поле просмотра или на кнопку, \n"
+#~ "соответствующую расположению границы.</p>\n"
+#~ "\n"
+#~ "<p>Для того чтобы <i>изменить</i> границу: выберите \n"
+#~ "стиль, толщину и цвет линии, затем нажмите на кнопку, \n"
+#~ "соответствующую расположению границы.</p>"
+
+#~ msgid "&Width:"
+#~ msgstr "&Ширина:"
+
+#~ msgid "&Color:"
+#~ msgstr "&Цвет:"
+
+#~ msgid "Add/remove left paragraph border"
+#~ msgstr "Добавить или удалить левую границу абзаца"
+
+#~ msgid "Toggles the left paragraph border on or off."
+#~ msgstr "Показывать или скрыть левую границу абзаца."
+
+#~ msgid "Add/remove right paragraph border"
+#~ msgstr "Добавить или удалить правую границу абзаца"
+
+#~ msgid "Toggles the right paragraph border on or off."
+#~ msgstr "Показывать или скрыть правую границу абзаца."
+
+#~ msgid "Add/remove top paragraph border"
+#~ msgstr "Добавить или удалить верхнюю границу абзаца"
+
+#~ msgid "Toggles the top paragraph border on or off."
+#~ msgstr "Показывать или скрыть верхнюю границу абзаца."
+
+#~ msgid "Add/remove bottom paragraph border"
+#~ msgstr "Добавить или удалить нижнюю границу абзаца"
+
+#~ msgid "Toggles the bottom paragraph border on or off."
+#~ msgstr "Показывать или скрыть нижнюю границу абзаца."
+
+#~ msgid "&Merge with next paragraph"
+#~ msgstr "&Объединить со следующим абзацем"
+
+#~ msgid ""
+#~ "Merges the border style of the current paragraph with the next paragraph"
+#~ msgstr "Расширить рамку на следующий абзац"
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>Merge with next paragraph</p>\n"
+#~| "\n"
+#~| "<p>When this option is checked, no top or bottom borders\n"
+#~| "will appear between consecutive paragraphs with the\n"
+#~| "same style.  Top and Bottom borders will only appear between\n"
+#~| "paragraphs with different styles.</p>\n"
+#~| "\n"
+#~| "<p>When this option is unchecked, top and bottom borders\n"
+#~| "always appear at the top and bottom of paragraphs with this style,\n"
+#~| "regardless of the style of the preceeding and subsequent paragraphs.</p>"
+#~ msgid ""
+#~ "<p>Merge with next paragraph</p>\n"
+#~ "\n"
+#~ "<p>When this option is checked, no top or bottom borders\n"
+#~ "will appear between consecutive paragraphs with the\n"
+#~ "same style.  Top and Bottom borders will only appear between\n"
+#~ "paragraphs with different styles.</p>\n"
+#~ "\n"
+#~ "<p>When this option is unchecked, top and bottom borders\n"
+#~ "always appear at the top and bottom of paragraphs with this style,\n"
+#~ "regardless of the style of the preceding and subsequent paragraphs.</p>"
+#~ msgstr ""
+#~ "<p>Расширить рамку на следующий абзац</p>\n"
+#~ "\n"
+#~ "<p>При включении этого параметра, между этим и следующим абзацами\n"
+#~ "не будут показываться граница.</p>"
+
+#~ msgid "Number:"
+#~ msgstr "Число:"
+
+#~ msgid "String:"
+#~ msgstr "Строка:"
+
+#~ msgid "Boolean:"
+#~ msgstr "Логический:"
+
+#~ msgid "true"
+#~ msgstr "истина"
+
+#~ msgid "false"
+#~ msgstr "ложь"
+
+#~ msgid "Date:"
+#~ msgstr "Дата:"
+
+#~ msgid "Set Guide Line Position"
+#~ msgstr "Указать расположение направляющий линии"
+
+#~ msgid "Add Guide Line"
+#~ msgstr "Добавить направляющую"
+
+#, fuzzy
+#~ msgid "Horizontal"
+#~ msgstr "горизонтальное:"
+
+#, fuzzy
+#~ msgid "Vertical"
+#~ msgstr "&Вертикальные линии"
+
+#~ msgid "&Position:"
+#~ msgstr "&Положение:"
+
+#~ msgid "Guide Line"
+#~ msgstr "Направляющая"
+
+#~ msgid "Guide Lines"
+#~ msgstr "Направляющие"
+
+#~ msgid "No handler found for %1"
+#~ msgstr "Нет обработчика для %1"
+
+#, fuzzy
+#~ msgid ""
+#~ "Error loading %1:\n"
+#~ "%2"
+#~ msgstr "Ошибка загрузки '%1':\n"
+
+#~ msgid ""
+#~ "This document contains an external link to a remote document\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Этот документ содержит внешнюю ссылку на нелокальный документ\n"
+#~ "%1"
+
+#~ msgid "Confirmation Required"
+#~ msgstr "Требуется подтверждение"
+
+#~ msgid "Skip"
+#~ msgstr "Пропустить"
+
+#~ msgid ""
+#~ "Could not load external document %1:\n"
+#~ "%2"
+#~ msgstr ""
+#~ "Не удаётся загрузить связанный документ %1:\n"
+#~ "%2"
+
+#~ msgid "Na&me:"
+#~ msgstr "&Имя:"
+
+#~ msgid "Protect si&ze and position"
+#~ msgstr "Зафиксировать &размер и положение"
+
+#~ msgid "Keep &aspect ratio"
+#~ msgstr "Сохранять &пропорции"
+
+#~ msgid "&Height:"
+#~ msgstr "&Высота:"
+
+#~ msgid "&Top:"
+#~ msgstr "С&верху:"
+
+#~ msgid "&Left:"
+#~ msgstr "С&лева:"
+
+#~ msgid "Context Help"
+#~ msgstr "Контекстная подсказка"
+
+#~ msgid "Here will be shown help according to your actions"
+#~ msgstr ""
+#~ "Здесь будет показана подсказка в соответствии с совершаемыми вами "
+#~ "действиями"
+
+#~ msgid "All values are given in %1."
+#~ msgstr "Единицы измерения: %1"
+
+#~ msgid "&Size:"
+#~ msgstr "&Размер:"
+
+#~ msgid "&Portrait"
+#~ msgstr "&Книжная"
+
+#~ msgid "La&ndscape"
+#~ msgstr "&Альбомная"
+
+#~ msgid "The page width is smaller than the left and right margins."
+#~ msgstr "Ширина страницы меньше расстояния между левым и правым полем."
+
+#~ msgid "Page Layout Problem"
+#~ msgstr "Ошибки в свойствах страницы"
+
+#~ msgid "The page height is smaller than the top and bottom margins."
+#~ msgstr "Высота страницы меньше расстояния между верхним и нижним полем."
+
+#, fuzzy
+#~ msgid "Show &Grid"
+#~ msgstr "Показать &сетку"
+
+#~ msgctxt "Custom size"
+#~ msgid "Custom"
+#~ msgstr "Другой"
+
+#, fuzzy
+#~ msgid "Delete slides"
+#~ msgstr "Удалить объект"
+
+#, fuzzy
+#~ msgid "Delete pages"
+#~ msgstr "Удалить вкладку"
+
+#~ msgid "Insert Object"
+#~ msgstr "Вставить объект"
+
+#~ msgid "Column spacing:"
+#~ msgstr "Расстояние между колонками:"
+
+#, fuzzy
+#~ msgid "Footnote/ Endnote"
+#~ msgstr "Сноски"
+
+#~ msgid "Spacing between footnote and body:"
+#~ msgstr "Расстояние между текстом и сноской:"
+
+#~ msgid "Different footer for even and odd pages"
+#~ msgstr "Различать для чётных и нечётных страниц"
+
+#~ msgid "Different footer for the first page"
+#~ msgstr "Различать для первой страницы"
+
+#~ msgid "Spacing between footer and body:"
+#~ msgstr "Расстояние между нижним колонтитулом и текстом:"
+
+#~ msgid "Header"
+#~ msgstr "Заголовок"
+
+#~ msgid "Spacing between header and body:"
+#~ msgstr "Расстояние между верхним колонтитулом и текстом:"
+
+#~ msgid "Different header for even and odd pages"
+#~ msgstr "Различать для чётных и нечётных страниц"
+
+#~ msgid "Different header for the first page"
+#~ msgstr "Различать для первой страницы"
+
+#~ msgid "Page Preview"
+#~ msgstr "Просмотр страницы"
+
+#~ msgid "Page Size && &Margins"
+#~ msgstr "Размер &страницы и поля"
+
+#~ msgid "H&eader && Footer"
+#~ msgstr "&Колонтитулы"
+
+#~ msgid "Head Line"
+#~ msgstr "Верхний колонтитул"
+
+#~ msgid "Mid:"
+#~ msgstr "Посередине:"
+
+#~ msgid "Right:"
+#~ msgstr "Справа:"
+
+#~ msgid "Foot Line"
+#~ msgstr "Нижний колонтитул"
+
+#~ msgid "You can insert several tags in the text:"
+#~ msgstr "Вы можете вставить в текст следующие теги:"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;sheet&gt; The sheet name</li><li>&lt;page&gt; The current "
+#~ "page</li><li>&lt;pages&gt; The total number of pages</li><li>&lt;name&gt; "
+#~ "The filename or URL</li><li>&lt;file&gt; The filename with complete path "
+#~ "or the URL</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;sheet&gt; имя листа</li><li>&lt;page&gt; номер страницы</"
+#~ "li><li>&lt;pages&gt; общее количество страниц</li><li>&lt;name&gt; имя "
+#~ "файла или адрес</li><li>&lt;file&gt; полное имя файла или адрес</li></"
+#~ "ul></qt>"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;time&gt; The current time</li><li>&lt;date&gt; The "
+#~ "current date</li><li>&lt;author&gt; Your full name</li><li>&lt;org&gt; "
+#~ "Your organization</li><li>&lt;email&gt; Your email address</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;time&gt;: текущее время</li><li>&lt;date&gt;: текущая "
+#~ "дата</li><li>&lt;author&gt;: ваше полное имя</li><li>&lt;org&gt;: ваша "
+#~ "организация</li><li>&lt;email&gt;: ваш электронный адрес</li></ul></qt>"
+
+#~ msgid "Col&umns"
+#~ msgstr "К&олонки"
+
+#~ msgid "&Help"
+#~ msgstr "&Справка"
+
+#, fuzzy
+#~| msgid "Street"
+#~ msgid "Storage Test"
+#~ msgstr "Улица"
+
+#, fuzzy
+#~| msgid "Street"
+#~ msgid "Storage Test 2"
+#~ msgstr "Улица"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master page"
+#~ msgstr "Вставить текст из буфера обмена"
+
+#, fuzzy
+#~ msgid "Rotate"
+#~ msgstr "Вращение фона"
+
+#, fuzzy
+#~ msgid "Shear"
+#~ msgstr "Исказить..."
+
+#, fuzzy
+#~| msgid "Proportional"
+#~ msgid "KoProperty Test"
+#~ msgstr "Пропорционально"
+
+#, fuzzy
+#~| msgid "Warning"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Waiting"
+#~ msgstr "Предупреждение"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Vertical"
+#~ msgstr "&Вертикальные линии"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Horizontal"
+#~ msgstr "горизонтальное:"
+
+#, fuzzy
+#~| msgid "Size"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size All"
+#~ msgstr "Размер"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Split Horizontal"
+#~ msgstr "горизонтальное:"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Pointing Hand"
+#~ msgstr "Последняя распечатка"
+
+#, fuzzy
+#~| msgid "Insert Variable"
+#~ msgid "Insert image from file"
+#~ msgstr "Вставить переменную"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "Select Char"
+#~ msgstr "Выберите символ"
+
+#, fuzzy
+#~| msgid "Minute"
+#~ msgctxt "Size Policy"
+#~ msgid "Minimum"
+#~ msgstr "Минуты"
+
+#, fuzzy
+#~| msgid "E&ncoding:"
+#~ msgctxt "Size Policy"
+#~ msgid "Expanding"
+#~ msgstr "Кодиров&ка:"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgctxt "General properties"
+#~ msgid "General"
+#~ msgstr "Общие"
+
+#, fuzzy
+#~| msgid "Width:"
+#~ msgid "Width"
+#~ msgstr "Ширина:"
+
+#, fuzzy
+#~ msgid "Horizontal Size Type"
+#~ msgstr "горизонтальное:"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgid "Vertical Size Type"
+#~ msgstr "Выравнивание по вертикали"
+
+#, fuzzy
+#~ msgid "Horizontal Stretch"
+#~ msgstr "горизонтальное:"
+
+#, fuzzy
+#~ msgid "Vertical Stretch"
+#~ msgstr "&Вертикальные линии"
+
+#, fuzzy
+#~ msgid "Snap Guides"
+#~ msgstr "Показать &сетку"
+
+#, fuzzy
+#~| msgid "Line Distance (%1)"
+#~ msgid "Snap Distance (px)"
+#~ msgstr "Межстрочный интервал (%1):"
+
+#, fuzzy
+#~| msgid "Guide Lines"
+#~ msgid "Enable Guide Lines Guide "
+#~ msgstr "Направляющие"
+
+#, fuzzy
+#~ msgid "Tool Option"
+#~ msgstr "Параметры автозавершения"
+
+#, fuzzy
+#~ msgid "Configure Snap Guides"
+#~ msgstr "Прилипание к сетке"
+
+#, fuzzy
+#~| msgid "Guide Lines"
+#~ msgid "Edit Guidelines"
+#~ msgstr "Направляющие"
+
+#, fuzzy
+#~| msgid "Add Guide Line"
+#~ msgid "Edit guidelines"
+#~ msgstr "Добавить направляющую"
+
+#~ msgid "Activate %1"
+#~ msgstr "Активировать %1"
+
+#~ msgid "Select a filter:"
+#~ msgstr "Выберите фильтр:"
+
+#, fuzzy
+#~ msgid "Fit to width"
+#~ msgstr "По &ширине"
+
+#, fuzzy
+#~ msgid "Fit to page/canvas"
+#~ msgstr "Страница целиком"
+
+#, fuzzy
+#~ msgid "[No Paragraph Style]"
+#~ msgstr "Обычный текст абзаца"
+
+#, fuzzy
+#~ msgid "[No Character Style]"
+#~ msgstr "Создать стиль"
+
+#~ msgid "Selected Template"
+#~ msgstr "Выбранный шаблон"
+
+#~ msgid "Creates an empty document"
+#~ msgstr "Начинать с пустого документа"
+
+#, fuzzy
+#~ msgid "Choose Template"
+#~ msgstr "Удалить шаблон"
+
+#~ msgid "No description available"
+#~ msgstr "Нет описания"
+
+#~ msgid "Protect size and position"
+#~ msgstr "Заблокировать размер и положение"
+
+#~ msgid "&Custom..."
+#~ msgstr "&Другая..."
+
+#~ msgid "*.svg *.wmf *.qpic|Clipart (*.svg *.wmf *.qpic)"
+#~ msgstr "*.svg *.wmf *.qpic|Иллюстрации (*.svg *.wmf *.qpic)"
+
+#~ msgid "Insert Link"
+#~ msgstr "Вставить ссылку"
+
+#~ msgid "Mail & News"
+#~ msgstr "Почта и новости"
+
+#~ msgid "Bookmark"
+#~ msgstr "Закладка"
+
+#~ msgid "Text to display:"
+#~ msgstr "Показываемый текст:"
+
+#~ msgid "Internet address:"
+#~ msgstr "Интернет-адрес:"
+
+#~ msgid "Bookmark name:"
+#~ msgstr "Имя закладки:"
+
+#~ msgid "Target:"
+#~ msgstr "Цель:"
+
+#~ msgid "Recent file:"
+#~ msgstr "Последний файл:"
+
+#~ msgid "No Entries"
+#~ msgstr "Пусто"
+
+#~ msgid "File location:"
+#~ msgstr "Расположение файла:"
+
+#~ msgid "Tabulator &Left"
+#~ msgstr "Табуляция &слева"
+
+#~ msgid "Tabulator &Center"
+#~ msgstr "Табуляция в &центре"
+
+#~ msgid "Tabulator &Right"
+#~ msgstr "Табуляция с&права"
+
+#~ msgid "Tabulator &Decimal Point"
+#~ msgstr "Табуляция &десятичной точкой"
+
+#, fuzzy
+#~ msgid "%1:"
+#~ msgstr "%1%"
+
+#~ msgid "Align Left"
+#~ msgstr "Автовыравнивание по левому краю"
+
+#, fuzzy
+#~ msgid "Horizontally Center"
+#~ msgstr "&Горизонтальный"
+
+#~ msgid "Align Right"
+#~ msgstr "Автовыравнивание по правому краю"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgid "Align Top"
+#~ msgstr "Автоматическое выравнивание"
+
+#, fuzzy
+#~ msgid "Default Tool"
+#~ msgstr "Цвет по умолчанию"
+
+#, fuzzy
+#~| msgid "Position:"
+#~ msgid "Position x:"
+#~ msgstr "Положение:"
+
+#, fuzzy
+#~| msgid "Position:"
+#~ msgid "Position y:"
+#~ msgstr "Положение:"
+
+#, fuzzy
+#~| msgid "Borders"
+#~ msgid "Order:"
+#~ msgstr "Границы абзаца"
+
+#~ msgid "Alignment"
+#~ msgstr "Выравнивание"
+
+#, fuzzy
+#~ msgid "Horizontal:"
+#~ msgstr "&Горизонтальный"
+
+#, fuzzy
+#~ msgid "Vertical:"
+#~ msgstr "&Вертикальный"
+
+#, fuzzy
+#~ msgid "Scale"
+#~ msgstr "Волнистая"
+
+#~ msgid "Create New Style"
+#~ msgstr "Создать стиль"
+
+#~ msgid "Please specify a new style name:"
+#~ msgstr "Укажите имя нового стиля:"
+
+#~ msgid "Name already exists! Please choose another name"
+#~ msgstr "Стиль с таким именем уже существует! Выберите другое имя"
+
+#~ msgid "Change Case"
+#~ msgstr "Изменить регистр"
+
+#~ msgid "Case"
+#~ msgstr "Регистр"
+
+#~ msgid "&Uppercase"
+#~ msgstr "&ВЕРХНИЙ РЕГИСТР"
+
+#~ msgid "&Lowercase"
+#~ msgstr "&нижний регистр"
+
+#~ msgid "T&itle case"
+#~ msgstr "Как В &Заголовках"
+
+#~ msgid "&Toggle case"
+#~ msgstr "&Переключить регистр"
+
+#~ msgid "Sentence case"
+#~ msgstr "Как в заголовках"
+
+#~ msgid "Convert first letter of a sentence to uppercase."
+#~ msgstr "Преобразовывать первую букву предложения в верхний регистр."
+
+#~ msgid "Style Manager"
+#~ msgstr "Менеджер стилей"
+
+#~ msgid "Next style:"
+#~ msgstr "Следующий стиль:"
+
+#~ msgid "Inherit style:"
+#~ msgstr "Наследовать стиль:"
+
+#~ msgid ""
+#~ "The quick brown fox jumps over the lazy dog. And, what about the cat, one "
+#~ "may ask? Well, the cat is playing cards with the mouse, the bird and the "
+#~ "fish. It is, to say the least a hell of a party!"
+#~ msgstr ""
+#~ "Широкая электрификация южных губерний даст мощный толчок подъёму "
+#~ "сельского хозяйства?!"
+
+#~ msgid "<None>"
+#~ msgstr "<Ничего>"
+
+#~ msgid "New Style Template (%1)"
+#~ msgstr "Создать шаблон стиля (%1)"
+
+#~ msgid "Decoration"
+#~ msgstr "Оформление"
+
+#~ msgid "Highlighting"
+#~ msgstr "Подсветка"
+
+#~ msgid "Layout"
+#~ msgstr "Размещение"
+
+#~ msgid "Short locale date format"
+#~ msgstr "Краткий локальный формат даты"
+
+#~ msgid "Locale date & time format"
+#~ msgstr "Локальный формат даты и времени"
+
+#~ msgid "Short locale date & time format"
+#~ msgstr "Краткий локальный формат даты и времени"
+
+#~ msgid "Date (Fixed)"
+#~ msgstr "Дата (фиксированная)"
+
+#~ msgid "Last Printing"
+#~ msgstr "Последняя распечатка"
+
+#~ msgid "File Modification"
+#~ msgstr "Изменение файла"
+
+#~ msgid "Current Date (variable)"
+#~ msgstr "Текущая дата (переменная)"
+
+#~ msgid "Date of Last Printing"
+#~ msgstr "Дата последней распечатки"
+
+#~ msgid "Date of File Creation"
+#~ msgstr "Дата создания файла"
+
+#~ msgid "Date of File Modification"
+#~ msgstr "Дата изменения файла"
+
+#~ msgctxt "DateFormat"
+#~ msgid "Format of Date Variable"
+#~ msgstr "Формат даты"
+
+#~ msgid "Time (Fixed)"
+#~ msgstr "Время (фиксированное)"
+
+#~ msgid "Current Time (fixed)"
+#~ msgstr "Текущее время (фиксированное)"
+
+#~ msgid "Current Time (variable)"
+#~ msgstr "Текущее время (переменное)"
+
+#~ msgid "Time Format"
+#~ msgstr "Формат времени"
+
+#~ msgctxt "TimeFormat"
+#~ msgid "This Dialog Allows You to Set the Format of the Time Variable"
+#~ msgstr "Этот диалог позволит настроить формат переменных даты и времени"
+
+#~ msgid "Custom Variable"
+#~ msgstr "Переменная"
+
+#~ msgid "Custom..."
+#~ msgstr "Настроить..."
+
+#~ msgid "&Mail Merge..."
+#~ msgstr "&Почтовое слияние..."
+
+#~ msgid "Page Current Num"
+#~ msgstr "Номер страницы"
+
+#~ msgid "Total Page Num"
+#~ msgstr "Всего страниц"
+
+#~ msgid "Previous Page Number"
+#~ msgstr "Номер предыдущей страницы"
+
+#~ msgid "Number of Pages"
+#~ msgstr "Количество страниц"
+
+#~ msgid "Next Page"
+#~ msgstr "Следующая страница"
+
+#~ msgid "Filename"
+#~ msgstr "Имя файла"
+
+#~ msgid "Path Filename"
+#~ msgstr "Полный путь и имя файла"
+
+#~ msgid "Filename Without Extension"
+#~ msgstr "Имя файла без расширения"
+
+#~ msgid "Author Name"
+#~ msgstr "Автор"
+
+#~ msgid "Email"
+#~ msgstr "Адрес электронной почты"
+
+#~ msgid "Telephone (work)"
+#~ msgstr "Телефон (рабочий)"
+
+#~ msgid "Telephone (home)"
+#~ msgstr "Телефон (домашний)"
+
+#~ msgid "Fax"
+#~ msgstr "Факс"
+
+#~ msgid "Country"
+#~ msgstr "Страна"
+
+#~ msgid "City"
+#~ msgstr "Город"
+
+#~ msgid "Abstract"
+#~ msgstr "Описание"
+
+#~ msgid "Keywords"
+#~ msgstr "Ключевые слова"
+
+#~ msgid "Initials"
+#~ msgstr "Инициалы автора"
+
+#~ msgid "Company"
+#~ msgstr "Организация"
+
+#~ msgid "Telephone (private)"
+#~ msgstr "Телефон (мобильный)"
+
+#~ msgid "Document Abstract"
+#~ msgstr "Сведения о документе"
+
+#~ msgid "Document Keywords"
+#~ msgstr "Ключевые слова документа"
+
+#~ msgid "File Name"
+#~ msgstr "Имя файла"
+
+#~ msgid "File Name without Extension"
+#~ msgstr "Имя файла без расширения"
+
+#~ msgid "Directory && File Name"
+#~ msgstr "Название каталога и имя файла"
+
+#~ msgid "Link..."
+#~ msgstr "Ссылка..."
+
+#~ msgid "Note"
+#~ msgstr "Примечание"
+
+#~ msgid "Note..."
+#~ msgstr "Примечание..."
+
+#~ msgid "<No title>"
+#~ msgstr "<Без названия>"
+
+#~ msgid "Number of Words"
+#~ msgstr "Количество слов"
+
+#~ msgid "Number of Sentences"
+#~ msgstr "Количество предложений"
+
+#~ msgid "Number of Lines"
+#~ msgstr "Количество строк"
+
+#~ msgid "Number of Characters"
+#~ msgstr "Количество символов"
+
+#~ msgid "Number of Non-Whitespace Characters"
+#~ msgstr "Количество пробелов, символов табуляций и пустых строк"
+
+#~ msgid "Number of Syllables"
+#~ msgstr "Количество слогов"
+
+#~ msgid "Number of Frames"
+#~ msgstr "Количество врезок"
+
+#~ msgid "Number of Embedded Objects"
+#~ msgstr "Количество внедрённых объектов"
+
+#~ msgid "Number of Tables"
+#~ msgstr "Количество таблиц"
+
+#~ msgid "Autocorrection"
+#~ msgstr "Автоисправление"
+
+#~ msgid "Simple Autocorrection"
+#~ msgstr "Общие"
+
+#~ msgid ""
+#~ "Convert &first letter of a sentence automatically to uppercase\n"
+#~ "(e.g. \"my house. in this town\" to \"my house. In this town\")"
+#~ msgstr ""
+#~ "Переводить первую букву первого слова предложения в &верхний регистр\n"
+#~ "(\"конец. это Проверка\" - \"конец. Это Проверка\")"
+
+#~ msgid ""
+#~ "Detect when a new sentence is started and always ensure that the first "
+#~ "character is an uppercase character."
+#~ msgstr ""
+#~ "Проверяется при начале ввода нового предложения и всегда делает заглавной "
+#~ "первую букву предложения."
+
+#~ msgid ""
+#~ "Convert &two uppercase characters to one uppercase and one lowercase "
+#~ "character\n"
+#~ " (e.g. PErfect to Perfect)"
+#~ msgstr ""
+#~ "Исправлять ввод &двух букв подряд в верхнем регистре.\n"
+#~ "(например, \"ПРивет\" в \"Привет\")"
+
+#~ msgid ""
+#~ "All words are checked for the common mistake of holding the shift key "
+#~ "down a bit too long. If some words must have two uppercase characters, "
+#~ "then those exceptions should be added in the 'Exceptions' tab."
+#~ msgstr ""
+#~ "Все слова проверяются на часто встречающуюся ошибку ввода нескольких "
+#~ "заглавных букв при нажатой клавише Shift. Если некоторые слова состоят из "
+#~ "нескольких заглавных букв (например, КГБ), то они должны указываться в "
+#~ "списке исключений."
+
+#~ msgid "Autoformat &URLs"
+#~ msgstr "Автоформатирование &Интернет-адресов"
+
+#~ msgid ""
+#~ "Detect when a URL (Uniform Resource Locator) is typed and provide "
+#~ "formatting that matches the way an Internet browser would show a URL."
+#~ msgstr ""
+#~ "Определяет, что введённое слов является Интернет-адресом (URL), и "
+#~ "форматирует её так, как эту ссылку показал бы браузер."
+
+#~ msgid "&Suppress double spaces"
+#~ msgstr "Удалять &двойные пробелы"
+
+#~ msgid ""
+#~ "Make sure that more than one space cannot be typed, as this is a common "
+#~ "mistake which is quite hard to find in formatted text."
+#~ msgstr ""
+#~ "Исправляет достаточно частую проблему работы с текстом, импортируемым из "
+#~ "текстового файла с форматированием, когда для выравнивания текста по "
+#~ "ширине указывается несколько пробелов."
+
+#~ msgid "R&emove spaces at the beginning and end of paragraphs"
+#~ msgstr "&Удалять пробелы в начале и конце абзаца"
+
+#~ msgid ""
+#~ "Keep correct formatting and indenting of sentences by automatically "
+#~ "removing spaces typed at the beginning and end of a paragraph."
+#~ msgstr ""
+#~ "Устанавливает правильное форматирование и отступы в абзацах, удаляя "
+#~ "первоначальные и завершающие пробелы в абзацах."
+
+#~ msgid "Automatically do &bold and underline formatting"
+#~ msgstr "Форматировать полу&жирным и подчёркиванием"
+
+#~ msgid ""
+#~ "When you use _underline_ or *bold*, the text between the underscores or "
+#~ "asterisks will be converted to underlined or bold text."
+#~ msgstr ""
+#~ "Когда вы используете для выделения _подчёркнутого_ или *полужирного* "
+#~ "текста определённые символы, эти символы будут убраны, а текст "
+#~ "отформатирован надлежащим образом."
+
+#~ msgid "Most standard fraction notations will be converted when available"
+#~ msgstr "Часто употребляемые дроби будут преобразованы в символы дробей"
+
+#~ msgid "Use &autonumbering for numbered paragraphs"
+#~ msgstr "Преобразовывать в &нумерованные списки"
+
+#~ msgid ""
+#~ "When typing '1)' or similar in front of a paragraph, automatically "
+#~ "convert the paragraph to use that numbering style. This has the advantage "
+#~ "that further paragraphs will also be numbered and the spacing is done "
+#~ "correctly."
+#~ msgstr ""
+#~ "Когда вы начинаете абзац с цифры - например, '1)', этот абзац будет "
+#~ "преобразован в нумерованный список. Вводимые вслед за ним абзацы уже "
+#~ "будут элементами нумерованного списка."
+
+#~ msgid "Rep&lace 1st... with 1^st..."
+#~ msgstr "За&менять 1st... на 1^st..."
+
+#~ msgid "Capitalize name of days"
+#~ msgstr "Начинать дни недели с заглавной буквы"
+
+#~ msgid "Use l&ist-formatting for bulleted paragraphs"
+#~ msgstr "Преобразовывать в &маркированные списки"
+
+#~ msgid ""
+#~ "When typing '*' or '-' in front of a paragraph, automatically convert the "
+#~ "paragraph to use that list-style. Using a list-style formatting means "
+#~ "that a correct bullet is used to draw the list."
+#~ msgstr ""
+#~ "Когда вы начинаете абзац с символов '*' или '-', этот абзац будет "
+#~ "преобразован в маркированный список с маркерами, соответствующим "
+#~ "символам . Вводимые вслед за ним абзацы уже будут элементами "
+#~ "маркированного списка."
+
+#~ msgid "Custom Quotes"
+#~ msgstr "Кавычки"
+
+#~ msgid "Replace &double quotes with typographical quotes"
+#~ msgstr "Заменять &двойные кавычки на типографские кавычки"
+
+#~ msgid "Replace &single quotes with typographical quotes"
+#~ msgstr "Заменять &одинарные кавычки на типографские кавычки"
+
+#~ msgid "Advanced Autocorrection"
+#~ msgstr "Дополнительно"
+
+#~ msgid "All Languages"
+#~ msgstr "Все языки"
+
+#~ msgid "Replacements and exceptions for language:"
+#~ msgstr "Замены и исключения для языка:"
+
+#~ msgid "Enable word replacement"
+#~ msgstr "Включить автоисправление"
+
+#~ msgid "Replace text with format"
+#~ msgstr "Заменить текст с форматом"
+
+#~ msgid "Insert a special character..."
+#~ msgstr "Вставить специальный символ..."
+
+#~ msgid "Find"
+#~ msgstr "Найти"
+
+#~ msgid "Change Format..."
+#~ msgstr "Изменить формат..."
+
+#~ msgid "Clear Format"
+#~ msgstr "Очистить формат"
+
+#~ msgid "Do not treat as the end of a sentence:"
+#~ msgstr "Не принимать за конец предложения:"
+
+#~ msgid "Accept two uppercase letters in:"
+#~ msgstr "Позволять написание двойных букв в верхнем регистре:"
+
+#~ msgid "An area is empty"
+#~ msgstr "Область пуста"
+
+#~ msgid "Find string is the same as replace string!"
+#~ msgstr "Найденная строка такая же, как строка замены!"
+
+#~ msgid "Change Variable Subtype"
+#~ msgstr "Изменить подтип переменной"
+
+#~ msgid "Change Variable Format"
+#~ msgstr "Изменить формат переменой"
+
+#~ msgid "Entry Name"
+#~ msgstr "Название элемента"
+
+#~ msgid "Variable Value Editor"
+#~ msgstr "Редактор переменных"
+
+#~ msgid "Add Variable"
+#~ msgstr "Добавить переменную"
+
+#~ msgid "Edit Variable"
+#~ msgstr "Изменить переменную"
+
+#~ msgid "Value:"
+#~ msgstr "Значение:"
+
+#~ msgid "This will save your options."
+#~ msgstr "Сохранить параметры."
+
+#~ msgid "This will abort all changes."
+#~ msgstr "Отменить изменения параметров."
+
+#~ msgid ""
+#~ "This will reset to the state after you clicked on the Make Default button."
+#~ msgstr ""
+#~ "После нажатия кнопки 'Установить в качестве списка умолчанию' состояние "
+#~ "будет сброшено."
+
+#~ msgid "Enter"
+#~ msgstr "Enter"
+
+#~ msgid "Tab"
+#~ msgstr "Tab"
+
+#~ msgid "Add Completion Entry"
+#~ msgstr "Добавить правило автозавершения"
+
+#~ msgid "Enter entry:"
+#~ msgstr "Слово или фраза:"
+
+#~ msgid ""
+#~ "Completion list saved.\n"
+#~ "It will be used for all documents from now on."
+#~ msgstr ""
+#~ "Список завершаемых слов сохранен.\n"
+#~ "Теперь он может быть использован для всех документов."
+
+#~ msgid "Completion List Saved"
+#~ msgstr "Список завершаемых слов сохранен"
+
+#, fuzzy
+#~ msgid "The quick brown fox jumps over the lazy dog."
+#~ msgstr ""
+#~ "Широкая электрификация южных губерний даст мощный толчок подъёму "
+#~ "сельского хозяйства."
+
+#~ msgid "Font too large for the preview pane"
+#~ msgstr "Размер шрифта слишком большой для предварительного показа"
+
+#~ msgid "Delete Text"
+#~ msgstr "Удалить текст"
+
+#~ msgid "Insert Text"
+#~ msgstr "Вставить текст"
+
+#~ msgid "Format Text"
+#~ msgstr "Форматировать текст"
+
+#~ msgid "Change First Line Indent"
+#~ msgstr "Изменить отступ первой строки"
+
+#~ msgid "Change Paragraph Background Color"
+#~ msgstr "Изменить фоновый цвет абзаца"
+
+#~ msgid "Change Borders"
+#~ msgstr "Изменить рамку"
+
+#~ msgid "Change Join Borders"
+#~ msgstr "Изменить рамку связанных абзацев"
+
+#~ msgid "Change Tabulator"
+#~ msgstr "Изменить табуляцию"
+
+#~ msgid "Remove Selected Text"
+#~ msgstr "Удалить выделенный текст"
+
+#~ msgid "Day"
+#~ msgstr "День"
+
+#~ msgid "Day (2 digits)"
+#~ msgstr "День (2 знака)"
+
+#~ msgid "Day (abbreviated name)"
+#~ msgstr "Сокращённое название дня недели"
+
+#~ msgid "Day (long name)"
+#~ msgstr "Полное название дня недели"
+
+#~ msgid "Month"
+#~ msgstr "Месяц"
+
+#~ msgid "Month (2 digits)"
+#~ msgstr "Месяц (2 знака)"
+
+#~ msgid "Month (abbreviated name)"
+#~ msgstr "Сокращённое название месяца"
+
+#~ msgid "Month (long name)"
+#~ msgstr "Полное название месяца"
+
+#~ msgid "Month (possessive abbreviated name)"
+#~ msgstr "Сокращённое название месяца в притяжательном падеже"
+
+#~ msgid "Month (possessive long name)"
+#~ msgstr "Полное название месяца в притяжательном падеже"
+
+#~ msgid "Year (2 digits)"
+#~ msgstr "Год (2 знака)"
+
+#~ msgid "Year (4 digits)"
+#~ msgstr "Год (2 знака)"
+
+#~ msgid "Hour"
+#~ msgstr "Часы"
+
+#~ msgid "Hour (2 digits)"
+#~ msgstr "Часы (2 знака)"
+
+#~ msgid "Minute (2 digits)"
+#~ msgstr "Минуты (2 знака)"
+
+#~ msgid "Second"
+#~ msgstr "Секунды"
+
+#~ msgid "Second (2 digits)"
+#~ msgstr "Секунды (2 знака)"
+
+#~ msgid "Millisecond (3 digits)"
+#~ msgstr "Миллисекунды (2 знака)"
+
+#~ msgid "am/pm"
+#~ msgstr "am/pm"
+
+#~ msgid "AM/PM"
+#~ msgstr "AM/PM"
+
+#~ msgid "Correct in Days"
+#~ msgstr "Корректировка дат"
+
+#~ msgid "Numbering Style for %1"
+#~ msgstr "Стиль нумерации %1"
+
+#~ msgid "Remove Word"
+#~ msgstr "Удалить слово"
+
+#~ msgid "Replace Word"
+#~ msgstr "Заменить слово"
+
+#~ msgid "%1 is not a valid link."
+#~ msgstr "%1 неверная ссылка."
+
+#~ msgid "Insert Soft Hyphen"
+#~ msgstr "Вставить мягкий перенос"
+
+#~ msgid "Insert Line Break"
+#~ msgstr "Вставить разрыв строки"
+
+#~ msgid "Insert Non-Breaking Space"
+#~ msgstr "Вставить неразрывный пробел"
+
+#~ msgid "Insert Non-Breaking Hyphen"
+#~ msgstr "Вставить неразрывный дефис"
+
+#~ msgid "Insert Special Char"
+#~ msgstr "Вставить специальный символ"
+
+#~ msgid "Remove Link"
+#~ msgstr "Удалить ссылку"
+
+#~ msgid "Correct in Minutes"
+#~ msgstr "Корректировка минут"
+
+#~ msgid "Edit Comment"
+#~ msgstr "Изменить комментарий"
+
+#~ msgid "Add Author Name"
+#~ msgstr "Добавить имя автора"
+
+#~ msgid "Autocorrect Word"
+#~ msgstr "Автоисправление слов"
+
+#~ msgid "Autocorrect Word with Format"
+#~ msgstr "Автоисправление слов с форматированием"
+
+#~ msgid "Typographic Quote"
+#~ msgstr "Типографские кавычки"
+
+#~ msgid "Autocorrect (capitalize first letter)"
+#~ msgstr "Первая буква предложения в верхнем регистре"
+
+#~ msgid "Autocorrect"
+#~ msgstr "Автоисправление"
+
+#~ msgid "Autocorrect for Fraction"
+#~ msgstr "Автоисправление дробей"
+
+#~ msgid "Autocorrection: Change Format"
+#~ msgstr "Автоисправление: изменить форматирование"
+
+#~ msgid "Autocorrect (use bullet style)"
+#~ msgstr "Маркированный список"
+
+#~ msgid "Autocorrect (use number style)"
+#~ msgstr "Нумерованный список"
+
+#~ msgid "Autocorrect (remove start and end line space)"
+#~ msgstr "Удалить первоначальные и завершающие пробелы"
+
+#~ msgid "Capitalize Name of Days"
+#~ msgstr "Дни недели с заглавной буквы"
+
+#~ msgid "Double"
+#~ msgstr "Двойная"
+
+#~ msgid "Simple Bold"
+#~ msgstr "Жирная"
+
+#~ msgid "Wave"
+#~ msgstr "Волнистая"
+
+#~ msgctxt "Strikeout Style"
+#~ msgid "None"
+#~ msgstr "Нет"
+
+#~ msgid "Uppercase"
+#~ msgstr "ВЕРХНИЙ РЕГИСТР"
+
+#~ msgid "Lowercase"
+#~ msgstr "нижний регистр"
+
+#~ msgid "Small Caps"
+#~ msgstr "маленькие заглавные буквы"
+
+#~ msgid "Show Formatting Options"
+#~ msgstr "Показать скрытые символы"
+
+#~ msgid "Formatting Options"
+#~ msgstr "Настройки форматирования"
+
+#~ msgid "Replace Text"
+#~ msgstr "Заменить текст"
+
+#~ msgid "Reset"
+#~ msgstr "Сброс"
+
+#~ msgid "Bold:"
+#~ msgstr "Полужирный:"
+
+#~ msgid "Italic:"
+#~ msgstr "Курсив:"
+
+#~ msgid "Word by word:"
+#~ msgstr "Слово за словом:"
+
+#~ msgid "Underline:"
+#~ msgstr "Подчёркнутый:"
+
+#~ msgid "Capitalization:"
+#~ msgstr "Регистр:"
+
+#~ msgid "Subscript"
+#~ msgstr "Подстрочный"
+
+#~ msgid "Superscript"
+#~ msgstr "Надстрочный"
+
+#~ msgid "Suffi&x text:"
+#~ msgstr "&Суффикс:"
+
+#~ msgid "&Start at:"
+#~ msgstr "&Начинать с:"
+
+#~ msgid "Custo&m character:"
+#~ msgstr "&Другой символ:"
+
+#~ msgid "&Depth:"
+#~ msgstr "&Глубина:"
+
+#~ msgid "&Restart numbering at this paragraph"
+#~ msgstr "Начинать нумерацию &заново с этого абзаца"
+
+#~ msgid "Arabic Numbers"
+#~ msgstr "Арабские цифры"
+
+#~ msgid "Disc Bullet"
+#~ msgstr "Дисковый маркер"
+
+#~ msgid "Custom Bullet"
+#~ msgstr "Другой маркер"
+
+#~ msgid "Frame width: %1 %2"
+#~ msgstr "Ширина врезки: %1 %2"
+
+#~ msgid "Indent"
+#~ msgstr "Отступ"
+
+#~ msgid "&Right:"
+#~ msgstr "С&права:"
+
+#~ msgid "&First line:"
+#~ msgstr "&Красная строка:"
+
+#~ msgctxt "Line spacing value"
+#~ msgid "Single"
+#~ msgstr "Одинарный"
+
+#~ msgctxt "Line spacing value"
+#~ msgid "1.5 Lines"
+#~ msgstr "Полуторный"
+
+#~ msgctxt "Line spacing value"
+#~ msgid "Double"
+#~ msgstr "Двойной"
+
+#~ msgid "At Least (%1)"
+#~ msgstr "Минимум (%1)"
+
+#~ msgid "Fixed (%1)"
+#~ msgstr "Точно (%1)"
+
+#~ msgid "Para&graph Space"
+#~ msgstr "&Расстояние между абзацами"
+
+#~ msgid "Before:"
+#~ msgstr "Перед:"
+
+#~ msgid "Indent && S&pacing"
+#~ msgstr "Отступы и &интервалы"
+
+#~ msgid "&Left"
+#~ msgstr "По &левому краю"
+
+#~ msgid "&Right"
+#~ msgstr "По &правому краю"
+
+#~ msgid "&Justify"
+#~ msgstr "По &ширине"
+
+#~ msgid "Behavior at &End of Frame/Page"
+#~ msgstr "&Перенос текста в конце врезки/страницы"
+
+#~ msgid "&Keep lines together"
+#~ msgstr "&Не отрывать строки друг от друга"
+
+#~ msgid "Insert break before paragraph"
+#~ msgstr "Вставить разрыв перед абзацем"
+
+#~ msgid "General &Layout"
+#~ msgstr "&Расположение"
+
+#~ msgid "D&ecorations"
+#~ msgstr "&Оформление"
+
+#~ msgid "Numbering"
+#~ msgstr "Нумерация"
+
+#~ msgid "&None"
+#~ msgstr "&Отсутствует"
+
+#~ msgid "&List"
+#~ msgstr "&Список"
+
+#~ msgid "Chapt&er"
+#~ msgstr "&Заголовок"
+
+#~ msgid "Normal paragraph text"
+#~ msgstr "Обычный текст абзаца"
+
+#~ msgid "B&ullets/Numbers"
+#~ msgstr "Сп&иски и нумерация"
+
+#~ msgid "Po&sition"
+#~ msgstr "По&зиция"
+
+#~ msgid "On followin&g character: "
+#~ msgstr "На с&ледующем символе:"
+
+#~ msgid "Tab Leader"
+#~ msgstr "Заполнитель до позиции табуляции"
+
+#~ msgid "The space a tab uses can be filled with a pattern."
+#~ msgstr "Шаблон заполнителя до позиции табуляции."
+
+#~ msgid "&Filling:"
+#~ msgstr "&Заполнитель:"
+
+#~ msgid "&New"
+#~ msgstr "Созд&ать"
+
+#~ msgid "&Tabulators"
+#~ msgstr "Позиции &табуляции"
+
+#~ msgid "Import Styles"
+#~ msgstr "Импорт стилей"
+
+#, fuzzy
+#~| msgid "Alignment"
+#~ msgid "Aligment"
+#~ msgstr "Выравнивание"
+
+#, fuzzy
+#~ msgid "Strikethrough"
+#~ msgstr "&Зачёркивание:"
+
+#, fuzzy
+#~ msgid "Underlining:"
+#~ msgstr "По&дчёркивание:"
+
+#~ msgid "Colors"
+#~ msgstr "Цвета"
+
+#, fuzzy
+#~ msgid "Automatic hyphenation"
+#~ msgstr "Автоматический перенос"
+
+#~ msgid "Didot (dd)"
+#~ msgstr "Дидот (dd)"
+
+#~ msgid "Default Color"
+#~ msgstr "Цвет по умолчанию"
+
+#~ msgid "More Colors..."
+#~ msgstr "Дополнительные цвета..."
+
+#~ msgctxt "color"
+#~ msgid "Red"
+#~ msgstr "Красный"
+
+#~ msgctxt "color"
+#~ msgid "Orange"
+#~ msgstr "Оранжевый"
+
+#~ msgctxt "color"
+#~ msgid "Magenta"
+#~ msgstr "Фуксин"
+
+#~ msgctxt "color"
+#~ msgid "Blue"
+#~ msgstr "Синий"
+
+#~ msgctxt "color"
+#~ msgid "Cyan"
+#~ msgstr "Голубой"
+
+#~ msgctxt "color"
+#~ msgid "Green"
+#~ msgstr "Зелёный"
+
+#~ msgctxt "color"
+#~ msgid "Yellow"
+#~ msgstr "Жёлтый"
+
+#~ msgctxt "color"
+#~ msgid "DarkRed"
+#~ msgstr "Тёмно-красный"
+
+#~ msgctxt "color"
+#~ msgid "DarkOrange"
+#~ msgstr "Тёмно-оранжевый"
+
+#~ msgctxt "color"
+#~ msgid "DarkMagenta"
+#~ msgstr "Тёмный фуксин"
+
+#~ msgctxt "color"
+#~ msgid "DarkBlue"
+#~ msgstr "Тёмно-синий"
+
+#~ msgctxt "color"
+#~ msgid "DarkCyan"
+#~ msgstr "Тёмный сине-зелёный"
+
+#~ msgctxt "color"
+#~ msgid "DarkGreen"
+#~ msgstr "Тёмно-зелёный"
+
+#~ msgctxt "color"
+#~ msgid "DarkYellow"
+#~ msgstr "Тёмно-жёлтый"
+
+#~ msgctxt "color"
+#~ msgid "White"
+#~ msgstr "Белый"
+
+#~ msgctxt "color"
+#~ msgid "Gray 90%"
+#~ msgstr "Серый 90%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 80%"
+#~ msgstr "Серый 80%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 70%"
+#~ msgstr "Серый 70%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 60%"
+#~ msgstr "Серый 60%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 50%"
+#~ msgstr "Серый 50%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 40%"
+#~ msgstr "Серый 40% "
+
+#~ msgctxt "color"
+#~ msgid "Gray 30%"
+#~ msgstr "Серый 30%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 20%"
+#~ msgstr "Серый 20%"
+
+#~ msgctxt "color"
+#~ msgid "Gray 10%"
+#~ msgstr "Серый 10%"
+
+#~ msgctxt "color"
+#~ msgid "Black"
+#~ msgstr "Чёрный"
+
+#~ msgctxt "color"
+#~ msgid "Ivory"
+#~ msgstr "Слоновой кости"
+
+#~ msgctxt "color"
+#~ msgid "Snow"
+#~ msgstr "Снежный"
+
+#~ msgctxt "color"
+#~ msgid "MintCream"
+#~ msgstr "Мятно-кремовый"
+
+#~ msgctxt "color"
+#~ msgid "FloralWhite"
+#~ msgstr "Цветочно-белый"
+
+#~ msgctxt "color"
+#~ msgid "LightYellow"
+#~ msgstr "Светло-жёлтый"
+
+#~ msgctxt "color"
+#~ msgid "GhostWhite"
+#~ msgstr "Туманно-белый"
+
+#~ msgctxt "color"
+#~ msgid "Honeydew"
+#~ msgstr "Свежего мёда"
+
+#~ msgctxt "color"
+#~ msgid "Seashell"
+#~ msgstr "Морской волны"
+
+#~ msgctxt "color"
+#~ msgid "AliceBlue"
+#~ msgstr "Блекло-голубой"
+
+#~ msgctxt "color"
+#~ msgid "Cornsilk"
+#~ msgstr "Шёлковый"
+
+#~ msgctxt "color"
+#~ msgid "LavenderBlush"
+#~ msgstr "Голубой с красным отливом"
+
+#~ msgctxt "color"
+#~ msgid "OldLace"
+#~ msgstr "Старого кружева"
+
+#~ msgctxt "color"
+#~ msgid "WhiteSmoke"
+#~ msgstr "Дымчатый"
+
+#~ msgctxt "color"
+#~ msgid "LemonChiffon"
+#~ msgstr "Лимонный"
+
+#~ msgctxt "color"
+#~ msgid "LightCyan"
+#~ msgstr "Светлый сине-зелёный"
+
+#~ msgctxt "color"
+#~ msgid "LightGoldenrodYellow"
+#~ msgstr "Светло-жёлтый золотистый"
+
+#~ msgctxt "color"
+#~ msgid "Beige"
+#~ msgstr "Бежевый"
+
+#~ msgctxt "color"
+#~ msgid "PapayaWhip"
+#~ msgstr "Папайя"
+
+#~ msgctxt "color"
+#~ msgid "BlanchedAlmond"
+#~ msgstr "Светло-кремовый"
+
+#~ msgctxt "color"
+#~ msgid "AntiqueWhite"
+#~ msgstr "Античный белый"
+
+#~ msgctxt "color"
+#~ msgid "MistyRose"
+#~ msgstr "Тускло-розовый"
+
+#~ msgctxt "color"
+#~ msgid "Bisque"
+#~ msgstr "Бисквитный"
+
+#~ msgctxt "color"
+#~ msgid "Moccasin"
+#~ msgstr "Телесный"
+
+#~ msgctxt "color"
+#~ msgid "NavajoWhite"
+#~ msgstr "Белый-навахо"
+
+#~ msgctxt "color"
+#~ msgid "PeachPuff"
+#~ msgstr "Персиковый"
+
+#~ msgctxt "color"
+#~ msgid "PaleGoldenrod"
+#~ msgstr "Бледно-золотистый"
+
+#~ msgctxt "color"
+#~ msgid "Wheat"
+#~ msgstr "Пшеничный"
+
+#~ msgctxt "color"
+#~ msgid "PaleTurquoise"
+#~ msgstr "Бледно-бирюзовый"
+
+#~ msgctxt "color"
+#~ msgid "Pink"
+#~ msgstr "Розовый"
+
+#~ msgctxt "color"
+#~ msgid "LightGoldenrod"
+#~ msgstr "Светло-золотистый"
+
+#~ msgctxt "color"
+#~ msgid "LightGray"
+#~ msgstr "Светло-серый"
+
+#~ msgctxt "color"
+#~ msgid "LightPink"
+#~ msgstr "Светло-розовый"
+
+#~ msgctxt "color"
+#~ msgid "PowderBlue"
+#~ msgstr "Туманно-голубой"
+
+#~ msgctxt "color"
+#~ msgid "Aquamarine"
+#~ msgstr "Аквамарин"
+
+#~ msgctxt "color"
+#~ msgid "Thistle"
+#~ msgstr "Сиреневый"
+
+#~ msgctxt "color"
+#~ msgid "LightBlue"
+#~ msgstr "Светло-синий"
+
+#~ msgctxt "color"
+#~ msgid "PaleGreen"
+#~ msgstr "Бледно-зелёный"
+
+#~ msgctxt "color"
+#~ msgid "Gold"
+#~ msgstr "Золотой"
+
+#~ msgctxt "color"
+#~ msgid "GreenYellow"
+#~ msgstr "Жёлто-зелёный"
+
+#~ msgctxt "color"
+#~ msgid "LightSteelBlue"
+#~ msgstr "Светло-стальной"
+
+#~ msgctxt "color"
+#~ msgid "LightGreen"
+#~ msgstr "Светло-зелёный"
+
+#~ msgctxt "color"
+#~ msgid "Plum"
+#~ msgstr "Сливовый"
+
+#~ msgctxt "color"
+#~ msgid "Gray"
+#~ msgstr "Серый"
+
+#~ msgctxt "color"
+#~ msgid "BurlyWood"
+#~ msgstr "Старого дерева"
+
+#~ msgctxt "color"
+#~ msgid "LightSkyBlue"
+#~ msgstr "Светлый небесно-синий"
+
+#~ msgctxt "color"
+#~ msgid "LightSalmon"
+#~ msgstr "Светлый оранжево-розовый"
+
+#~ msgctxt "color"
+#~ msgid "SkyBlue"
+#~ msgstr "Небесно-голубой"
+
+#~ msgctxt "color"
+#~ msgid "Tan"
+#~ msgstr "Желтовато-коричневый"
+
+#~ msgctxt "color"
+#~ msgid "Violet"
+#~ msgstr "Фиолетовый"
+
+#~ msgctxt "color"
+#~ msgid "SandyBrown"
+#~ msgstr "Рыже-коричневый"
+
+#~ msgctxt "color"
+#~ msgid "DarkSalmon"
+#~ msgstr "Тёмно-оранжево-розовый"
+
+#~ msgctxt "color"
+#~ msgid "DarkKhaki"
+#~ msgstr "Тёмный хаки"
+
+#~ msgctxt "color"
+#~ msgid "Chartreuse"
+#~ msgstr "Фисташковый"
+
+#~ msgctxt "color"
+#~ msgid "DarkGray"
+#~ msgstr "Темно-серый"
+
+#~ msgctxt "color"
+#~ msgid "LawnGreen"
+#~ msgstr "Зелёной травы"
+
+#~ msgctxt "color"
+#~ msgid "HotPink"
+#~ msgstr "Ярко-розовый"
+
+#~ msgctxt "color"
+#~ msgid "Salmon"
+#~ msgstr "Оранжево-розовый"
+
+#~ msgctxt "color"
+#~ msgid "Turquoise"
+#~ msgstr "Бирюзовый"
+
+#~ msgctxt "color"
+#~ msgid "DarkSeaGreen"
+#~ msgstr "Тёмный морской волны"
+
+#~ msgctxt "color"
+#~ msgid "Orchid"
+#~ msgstr "Орхидейный"
+
+#~ msgctxt "color"
+#~ msgid "MediumAquamarine"
+#~ msgstr "Умеренно-аквамариновый"
+
+#~ msgctxt "color"
+#~ msgid "Coral"
+#~ msgstr "Коралловый"
+
+#~ msgctxt "color"
+#~ msgid "YellowGreen"
+#~ msgstr "Жёлто-зелёный"
+
+#~ msgctxt "color"
+#~ msgid "Goldenrod"
+#~ msgstr "Золотистый"
+
+#~ msgctxt "color"
+#~ msgid "MediumTurquoise"
+#~ msgstr "Умеренно-бирюзовый"
+
+#~ msgctxt "color"
+#~ msgid "RosyBrown"
+#~ msgstr "Розово-коричневый"
+
+#~ msgctxt "color"
+#~ msgid "PaleVioletRed"
+#~ msgstr "Бледный красно-фиолетовый"
+
+#~ msgctxt "color"
+#~ msgid "MediumSpringGreen"
+#~ msgstr "Средний весенне-зелёный"
+
+#~ msgctxt "color"
+#~ msgid "Tomato"
+#~ msgstr "Томатный"
+
+#~ msgctxt "color"
+#~ msgid "SpringGreen"
+#~ msgstr "Весенне-зелёный"
+
+#~ msgctxt "color"
+#~ msgid "Peru"
+#~ msgstr "Оливково-коричневый"
+
+#~ msgctxt "color"
+#~ msgid "CornflowerBlue"
+#~ msgstr "Васильковый"
+
+#~ msgctxt "color"
+#~ msgid "LightSlateBlue"
+#~ msgstr "Светло-стальной"
+
+#~ msgctxt "color"
+#~ msgid "MediumPurple"
+#~ msgstr "Умеренно-пурпурный"
+
+#~ msgctxt "color"
+#~ msgid "MediumOrchid"
+#~ msgstr "Умеренно-орхидейный"
+
+#~ msgctxt "color"
+#~ msgid "CadetBlue"
+#~ msgstr "Блеклый серо-голубой"
+
+#~ msgctxt "color"
+#~ msgid "DarkTurquoise"
+#~ msgstr "Тёмный бирюзовый"
+
+#~ msgctxt "color"
+#~ msgid "DeepSkyBlue"
+#~ msgstr "Тёмный небесно-синий"
+
+#~ msgctxt "color"
+#~ msgid "LightSlateGray"
+#~ msgstr "Светлый синевато-серый"
+
+#~ msgctxt "color"
+#~ msgid "DarkGoldenrod"
+#~ msgstr "Тёмный золотистый"
+
+#~ msgctxt "color"
+#~ msgid "MediumSlateBlue"
+#~ msgstr "Умеренный серовато-синий"
+
+#~ msgctxt "color"
+#~ msgid "IndianRed"
+#~ msgstr "Ярко-красный"
+
+#~ msgctxt "color"
+#~ msgid "Chocolate"
+#~ msgstr "Шоколадный"
+
+#~ msgctxt "color"
+#~ msgid "MediumSeaGreen"
+#~ msgstr "Умеренный морской волны"
+
+#~ msgctxt "color"
+#~ msgid "LimeGreen"
+#~ msgstr "Зеленовато-известковый"
+
+#~ msgctxt "color"
+#~ msgid "LightSeaGreen"
+#~ msgstr "Светлый морской волны"
+
+#~ msgctxt "color"
+#~ msgid "SlateGray"
+#~ msgstr "Синевато-серый"
+
+#~ msgctxt "color"
+#~ msgid "OrangeRed"
+#~ msgstr "Красно-оранжевый"
+
+#~ msgctxt "color"
+#~ msgid "DeepPink"
+#~ msgstr "Тёмно-розовый"
+
+#~ msgctxt "color"
+#~ msgid "SteelBlue"
+#~ msgstr "Голубовато-стальной"
+
+#~ msgctxt "color"
+#~ msgid "SlateBlue"
+#~ msgstr "Серовато-синий"
+
+#~ msgctxt "color"
+#~ msgid "OliveDrab"
+#~ msgstr "Нежно-оливковый"
+
+#~ msgctxt "color"
+#~ msgid "RoyalBlue"
+#~ msgstr "Королевский голубой"
+
+#~ msgctxt "color"
+#~ msgid "VioletRed"
+#~ msgstr "Красно-фиолетовый"
+
+#~ msgctxt "color"
+#~ msgid "DarkOrchid"
+#~ msgstr "Тёмно-орхидейный"
+
+#~ msgctxt "color"
+#~ msgid "DimGray"
+#~ msgstr "Тускло-серый"
+
+#~ msgctxt "color"
+#~ msgid "BlueViolet"
+#~ msgstr "Фиолетово-синий"
+
+#~ msgctxt "color"
+#~ msgid "Sienna"
+#~ msgstr "Охра"
+
+#~ msgctxt "color"
+#~ msgid "MediumVioletRed"
+#~ msgstr "Умеренный красно-фиолетовый"
+
+#~ msgctxt "color"
+#~ msgid "Maroon"
+#~ msgstr "Тёмно-бордовый"
+
+#~ msgctxt "color"
+#~ msgid "SeaGreen"
+#~ msgstr "Морской волны"
+
+#~ msgctxt "color"
+#~ msgid "DarkOliveGreen"
+#~ msgstr "Тёмно-оливковый"
+
+#~ msgctxt "color"
+#~ msgid "ForestGreen"
+#~ msgstr "Лесной зелёный"
+
+#~ msgctxt "color"
+#~ msgid "SaddleBrown"
+#~ msgstr "Старой кожи"
+
+#~ msgctxt "color"
+#~ msgid "DarkViolet"
+#~ msgstr "Тёмно-фиолетовый"
+
+#~ msgctxt "color"
+#~ msgid "FireBrick"
+#~ msgstr "Огнеупорного кирпича"
+
+#~ msgctxt "color"
+#~ msgid "DarkSlateBlue"
+#~ msgstr "Тёмный серовато-синий"
+
+#~ msgctxt "color"
+#~ msgid "DarkSlateGray"
+#~ msgstr "Тёмный синевато-серый"
+
+#~ msgctxt "color"
+#~ msgid "MidnightBlue"
+#~ msgstr "Ночной синий"
+
+#~ msgctxt "color"
+#~ msgid "MediumBlue"
+#~ msgstr "Умерено синий"
+
+#~ msgctxt "color"
+#~ msgid "Navy"
+#~ msgstr "Тёмно-синий"
+
+#, fuzzy
+#~ msgid "Convert to path"
+#~ msgstr "Преобразовать в греческие символы"
+
+#, fuzzy
+#~ msgid "Decimal Comma Number"
+#~ msgstr "Римские числа в нижнем регистре"
+
+#, fuzzy
+#~ msgid "Cancelled"
+#~ msgstr "Изменить регистр"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgid "done"
+#~ msgstr "Нет"
+
+#~ msgid "Default font:"
+#~ msgstr "Шрифт по умолчанию:"
+
+#~ msgid "Name font:"
+#~ msgstr "Шрифт:"
+
+#~ msgid "Number font:"
+#~ msgstr "Шрифт нумерованного списка:"
+
+#~ msgid "Operator font:"
+#~ msgstr "Шрифт оператора:"
+
+#~ msgid "Default base size:"
+#~ msgstr "Размер по умолчанию:"
+
+#~ msgid "Choose..."
+#~ msgstr "Выбрать..."
+
+#, fuzzy
+#~ msgid "Formula tool"
+#~ msgstr "Форматировать текст"
+
+#, fuzzy
+#~ msgid "Formula editing tool"
+#~ msgstr "Настройки форматирования"
+
+#~ msgid "Add Matrix"
+#~ msgstr "Добавить матрицу"
+
+#, fuzzy
+#~ msgid "Add Elements"
+#~ msgstr "Добавить элемент"
+
+#, fuzzy
+#~ msgid "Remove Elements"
+#~ msgstr "Удалить комментарий"
+
+#~ msgid ""
+#~ "Some fonts have been installed to assure that symbols in formulas are "
+#~ "properly visualized. You must restart the application in order so that "
+#~ "changes take effect"
+#~ msgstr ""
+#~ "Для того, чтобы в формулах показывались правильные символы, необходимо "
+#~ "доустановить некоторые шрифты. Для того, чтобы изменения вступили в силу, "
+#~ "вам необходимо перезапустить приложение"
+
+#~ msgid "More Text Colors..."
+#~ msgstr "Дополнительные цвета текста..."
+
+#~ msgid "More Fill Colors..."
+#~ msgstr "Дополнительные цвета фона..."
+
+#~ msgctxt "color"
+#~ msgid "LightSkyblue"
+#~ msgstr "Светлый небесно-синий"
+
+#~ msgctxt "color"
+#~ msgid "DarkSeagreen"
+#~ msgstr "Тёмный морской волны"
+
+#~ msgctxt "color"
+#~ msgid "DeepSkyblue"
+#~ msgstr "Тёмный небесно-синий"
+
+#~ msgid "Always start %1 with the selected template"
+#~ msgstr "Всегда начинать %1 с выбранного шаблона"
+
+#~ msgid "Open &Recent Document"
+#~ msgstr "Открыть &последний документ"
+
+#~ msgid "&Document Information"
+#~ msgstr "Сведения о &документе"
+
+#~ msgid "Expression Path"
+#~ msgstr "Каталог файлов с фразами"
+
+#~ msgid "Hide All Palette Windows"
+#~ msgstr "Скрыть все палитры"
+
+#~ msgid "Show Palette Windows Again"
+#~ msgstr "Показать все палитры"
+
+#~ msgid "Show %1"
+#~ msgstr "Показать %1"
+
+#~ msgid "Kross::Api::Variant::String expected, but got %1."
+#~ msgstr "Ожидалось Kross::Api::Variant::String, но получено %1."
+
+#~ msgid "Kross::Api::Variant::Int expected, but got %1."
+#~ msgstr "Ожидалось Kross::Api::Variant::Int, но получено %1."
+
+#~ msgid "Kross::Api::Variant::UInt expected, but got %1."
+#~ msgstr "Ожидалось Kross::Api::Variant::UInt, но получено %1."
+
+#~ msgid "Kross::Api::Variant::Double expected, but got %1."
+#~ msgstr "Ожидалось Kross::Api::Variant::Double, но получено %1."
+
+#~ msgid "Kross::Api::Variant::LLONG expected, but got %1."
+#~ msgstr "Ожидалось Kross::Api::Variant::LLONG, но получено %1."
+
+#~ msgid "Kross::Api::Variant::ULLONG expected, but got %1."
+#~ msgstr "Ожидалось Kross::Api::Variant::ULLONG, но получено %1."
+
+#~ msgid "Kross::Api::Variant::Bool expected, but got %1."
+#~ msgstr "Ожидалось Kross::Api::Variant::Bool, но получено %1."
+
+#~ msgid "Kross::Api::Variant::List expected, but got '%1'."
+#~ msgstr "Ожидалось Kross::Api::Variant::List, но получено %1."
+
+#~ msgid "No functionname defined for ScriptContainer::callFunction()."
+#~ msgstr "Не определено имя функции в ScriptContainer::callFunction()."
+
+#~ msgid "Failed to determinate interpreter for scriptfile '%1'"
+#~ msgstr "Невозможно определить интерпретатор сценария '%1'"
+
+#~ msgid "Failed to create script for interpreter '%1'"
+#~ msgstr "Невозможно создать сценарий для интерпретатора '%1'"
+
+#~ msgid "History"
+#~ msgstr "История"
+
+#~ msgid "Load Script File"
+#~ msgstr "Загрузить сценарий"
+
+#~ msgid ""
+#~ "Uninstall the script package \"%1\" and delete the package's folder "
+#~ "\"%2\"?"
+#~ msgstr "Удалить пакет сценария \"%1\" с папкой \"%2\"?"
+
+#~ msgid "Uninstall"
+#~ msgstr "Удалить"
+
+#~ msgid "Name of the interpreter being used"
+#~ msgstr "Интерпретатор для сценария"
+
+#~ msgid "Script file to execute with the defined interpreter"
+#~ msgstr "Выполнить файл сценария в заданном интерпретаторе"
+
+#~ msgid "Start the GUI; otherwise the command line application is used."
+#~ msgstr ""
+#~ "Запустить графический интерфейс. В противном случае приложение будет "
+#~ "работать в командном режиме."
+
+#~ msgid "Here you can choose the font to be used."
+#~ msgstr "Здесь вы можете выбрать шрифт."
+
+#~ msgid "Requested Font"
+#~ msgstr "Шрифт"
+
+#~ msgid "Enable this checkbox to change the font family settings."
+#~ msgstr "Включите этот флажок для изменения гарнитуры шрифта."
+
+#~ msgid "Font style"
+#~ msgstr "Стиль шрифта"
+
+#~ msgid "Enable this checkbox to change the font style settings."
+#~ msgstr "Включите этот флажок для изменения стиля шрифта."
+
+#~ msgid "Enable this checkbox to change the font size settings."
+#~ msgstr "Включите этот флажок для изменения размера шрифта."
+
+#~ msgid "Here you can choose the font family to be used."
+#~ msgstr "Здесь вы можете выбрать гарнитуру шрифта."
+
+#~ msgid "Here you can choose the font style to be used."
+#~ msgstr "Здесь вы можете выбрать стиль шрифта."
+
+#~ msgid "Regular"
+#~ msgstr "Обычный"
+
+#~ msgid "Bold Italic"
+#~ msgstr "Полужирный курсив"
+
+#~ msgid "Font size<br><i>fixed</i> or <i>relative</i><br>to environment"
+#~ msgstr ""
+#~ "Размер шрифта<br><i>точный</i> или <i>относительный</i><br> к настройкам "
+#~ "системы"
+
+#~ msgid ""
+#~ "Here you can switch between fixed font size and font size to be "
+#~ "calculated dynamically and adjusted to changing environment (e.g. widget "
+#~ "dimensions, paper size)."
+#~ msgstr ""
+#~ "Здесь вы можете выбрать между точным и относительным размером шрифта. "
+#~ "Относительный размер шрифта автоматически изменяется в зависимости от "
+#~ "типа носителя (графический интерфейс или печать на бумаге)."
+
+#~ msgid "Here you can choose the font size to be used."
+#~ msgstr "Размер шрифта."
+
+#~ msgid "The Quick Brown Fox Jumps Over The Lazy Dog"
+#~ msgstr ""
+#~ "Широкая электрификация южных губерний даст мощный толчок подъёму "
+#~ "сельского хозяйства"
+
+#~ msgid ""
+#~ "This sample text illustrates the current settings. You may edit it to "
+#~ "test special characters."
+#~ msgstr ""
+#~ "Текст примера, показанный выбранным шрифтом. Вы можете поменять текст для "
+#~ "проверки показа специальных символов."
+
+#~ msgid "Actual Font"
+#~ msgstr "Действительный шрифт"
+
+#~ msgid "&Redo: %1"
+#~ msgstr "&Повторить: %1"
+
+#~ msgid "Undo %1 action"
+#~ msgid_plural "Undo %1 actions"
+#~ msgstr[0] "Отменено %1 действие"
+#~ msgstr[1] "Отменено %1 действия"
+#~ msgstr[2] "Отменено %1 действий"
+#~ msgstr[3] "Отменено %1 действие"
+
+#~ msgid "Redo %1 action"
+#~ msgid_plural "Redo %1 actions"
+#~ msgstr[0] "Повторено %1 действие"
+#~ msgstr[1] "Повторено %1 действия"
+#~ msgstr[2] "Повторено %1 действий"
+#~ msgstr[3] "Повторено %1 действие"
+
+#~ msgid "Remove Tabulator"
+#~ msgstr "Убрать табуляцию"
+
+#~ msgid "Load"
+#~ msgstr "Загрузить"
+
+#~ msgid "Install"
+#~ msgstr "Установить"
+
+#~ msgid "Get More Scripts"
+#~ msgstr "Загрузить сценарии"
+
+#~ msgid "Word by word"
+#~ msgstr "Слово за словом"
+
+#~ msgid "Capitalization"
+#~ msgstr "Регистр"
+
+#~ msgid "&Font"
+#~ msgstr "&Шрифт"
+
+#~ msgid "Shadow & distance:"
+#~ msgstr "Глубина тени:"
+
+#~ msgid " %"
+#~ msgstr " %"
+
+#~ msgid "Relative size:"
+#~ msgstr "Относительный размер:"
+
+#~ msgid "Hyphenation"
+#~ msgstr "Перенос слов"
+
+#~ msgid "Abstract:"
+#~ msgstr "Описание:"
+
+#~ msgid "Accelerator"
+#~ msgstr "Акселератор"
+
+#~ msgctxt "A grayed widget"
+#~ msgid "Disabled. "
+#~ msgstr "Заблокирован. "
+
+#~ msgid "control plus "
+#~ msgstr "Ctrl+"
+
+#~ msgid "alt plus "
+#~ msgstr "Alt+"
+
+#~ msgid " plus "
+#~ msgstr "+"
+
+#~ msgid "User-Defined Metadata"
+#~ msgstr "Пользовательские метаданные"
+
+#~ msgid "Use syntax highlighting"
+#~ msgstr "Подсветка синтаксиса"
+
+#~ msgid "Base Size Change"
+#~ msgstr "Базовый размер"
+
+#~ msgid "Add Text"
+#~ msgstr "Добавить текст"
+
+#~ msgid "Add Operator"
+#~ msgstr "Добавить оператор"
+
+#~ msgid "Add Number"
+#~ msgstr "Добавить число"
+
+#~ msgid "Add Empty Box"
+#~ msgstr "Добавить пустой блок"
+
+#~ msgid "Add Name"
+#~ msgstr "Добавить переменную"
+
+#~ msgid "Add Bracket"
+#~ msgstr "Добавить скобку"
+
+#~ msgid "Add Overline"
+#~ msgstr "Надчёркнуть"
+
+#~ msgid "Add Underline"
+#~ msgstr "Подчеркнуть"
+
+#~ msgid "Add Multiline"
+#~ msgstr "Добавить многострочный текст"
+
+#~ msgid "Add Space"
+#~ msgstr "Добавить разделитель"
+
+#~ msgid "Add Root"
+#~ msgstr "Добавить корень"
+
+#~ msgid "Add Symbol"
+#~ msgstr "Добавить символ"
+
+#~ msgid "Add 1x2 Matrix"
+#~ msgstr "Добавить матрицу 1х2"
+
+#~ msgid "Change Char to Symbol"
+#~ msgstr "Преобразовать char в символ"
+
+#~ msgid "Change Char Family"
+#~ msgstr "Изменить шрифт символа"
+
+#~ msgid "MathML Import Error"
+#~ msgstr "Ошибка импорта MathML"
+
+#~ msgid "Indexed list"
+#~ msgstr "Индексированный список"
+
+#~ msgid "Index"
+#~ msgstr "Индекс"
+
+#~ msgid "Append Column"
+#~ msgstr "Добавить столбец"
+
+#~ msgid "Append Row"
+#~ msgstr "Добавить строку"
+
+#~ msgid "Matrix element"
+#~ msgstr "Элемент матрицы"
+
+#~ msgid "Add Tabmark"
+#~ msgstr "Добавить табуляцию"
+
+#~ msgid "Multi line element"
+#~ msgstr "Многострочный элемент"
+
+#~ msgid "Main list of root"
+#~ msgstr "Главный корневой список"
+
+#~ msgid "Remove Enclosing Element"
+#~ msgstr "Удалить незакрытый элемент"
+
+#~ msgid "Add Index"
+#~ msgstr "Добавить индекс"
+
+#~ msgid "Numerator"
+#~ msgstr "Числитель"
+
+#~ msgid "Denominator"
+#~ msgstr "Знаменатель"
+
+#~ msgid "Add Negative Thin Space"
+#~ msgstr "Добавить отрицательный тонкий разделитель"
+
+#~ msgid "Add Thin Space"
+#~ msgstr "Добавить тонкий разделитель"
+
+#~ msgid "Add Medium Space"
+#~ msgstr "Добавить средний разделитель"
+
+#~ msgid "Add Thick Space"
+#~ msgstr "Добавить широкий разделитель"
+
+#~ msgid "Add Quad Space"
+#~ msgstr "Добавить очень широкий разделитель"
+
+#~ msgid "Add Integral"
+#~ msgstr "Добавить интеграл"
+
+#~ msgid "Add Sum"
+#~ msgstr "Добавить сумму"
+
+#~ msgid "Add Product"
+#~ msgstr "Добавить произведение"
+
+#~ msgid "Add Square Bracket"
+#~ msgstr "Добавить квадратную скобку"
+
+#~ msgid "Add Curly Bracket"
+#~ msgstr "Добавить фигурную скобку"
+
+#~ msgid "Add Abs"
+#~ msgstr "Добавить модуль"
+
+#~ msgid "Add Matrix..."
+#~ msgstr "Добавить матрицу..."
+
+#~ msgid "Add Upper Left Index"
+#~ msgstr "Добавить верхний левый индекс"
+
+#~ msgid "Add Lower Left Index"
+#~ msgstr "Добавить нижний левый индекс"
+
+#~ msgid "Add Upper Right Index"
+#~ msgstr "Добавить верхний правый индекс"
+
+#~ msgid "Add Lower Right Index"
+#~ msgstr "Добавить нижний правый индекс"
+
+#~ msgid "Add Upper Index"
+#~ msgstr "Добавить верхний индекс"
+
+#~ msgid "Add Lower Index"
+#~ msgstr "Добавить нижний индекс"
+
+#~ msgid "Syntax Highlighting"
+#~ msgstr "Подсветка синтаксиса"
+
+#~ msgid "&Bold"
+#~ msgstr "Полу&жирный"
+
+#~ msgid "&Italic"
+#~ msgstr "&Курсив"
+
+#~ msgid "Right Delimiter"
+#~ msgstr "Правый предел"
+
+#~ msgid "Insert Symbol"
+#~ msgstr "Вставить символ"
+
+#~ msgid "Symbol Names"
+#~ msgstr "Названия символов"
+
+#~ msgid "Fraktur"
+#~ msgstr "Готический"
+
+#~ msgid "Font Family"
+#~ msgstr "Шрифт"
+
+#~ msgid "Operator"
+#~ msgstr "Оператор"
+
+#~ msgid "Token Type"
+#~ msgstr "Тип элемента"

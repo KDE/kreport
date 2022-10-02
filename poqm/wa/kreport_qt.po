@@ -1,0 +1,8201 @@
+# translation of koffice.po to Walon
+# Copyright (C).
+#
+# Lorint HENDSCHEL <LorintHendschel@skynet.be>, 2001.
+# Pablo Saratxaga <pablo@mandrakesoft.com>, 2003.
+# Pablo Saratxaga <pablo@walon.org>, 2003, 2004.
+# Jean Cayron <jean.cayron@gmail.com>, 2009, 2010.
+# Jean Cayron et Odile Lambert <jean.cayron@gmail.com>, 2010, 2011.
+# Djan Cayron <jean.cayron@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: koffice\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2011-01-17 21:09+0100\n"
+"Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
+"Language-Team: Walloon <linux@walon.org>\n"
+"Language: wa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+#, fuzzy
+#| msgid "Could not create the file for saving"
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "Dji n' a savou ahiver l' fitchî pol schapaedje"
+
+#: common/KReportDesign.cpp:159
+#, fuzzy
+#| msgid "Error in embedded document"
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Åk ni va nén dins l' ravalé documint"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Name"
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "No:"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Object Name"
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "No di l' objet"
+
+#: common/KReportItemBase.cpp:78
+#, fuzzy
+#| msgid "Position"
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Eplaeçmint"
+
+#: common/KReportItemBase.cpp:79
+#, fuzzy
+#| msgid "Size"
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Grandeu"
+
+#: common/KReportItemBase.cpp:112
+#, fuzzy
+#| msgid "Data Source"
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Sourdant di dnêyes"
+
+#: common/KReportItemLine.cpp:80
+#, fuzzy
+#| msgid "&Set Position..."
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "&Defini eplaeçmint..."
+
+#: common/KReportItemLine.cpp:81
+#, fuzzy
+#| msgid "Position"
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Eplaeçmint"
+
+#: common/KReportItemLine.cpp:83
+#, fuzzy
+#| msgid "Line Weight"
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "Pwès del roye"
+
+#: common/KReportItemLine.cpp:85
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Coleur del roye"
+
+#: common/KReportItemLine.cpp:86
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Stîle del roye"
+
+#: common/KReportSectionData.cpp:164
+#, fuzzy
+#| msgid "Group Sections"
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Seccions do groupe"
+
+#: common/KReportSectionData.cpp:166
+#, fuzzy
+#| msgid "Height"
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "Hôteur"
+
+#: common/KReportSectionData.cpp:170
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Coleur do fond"
+
+#: common/KReportUnit.cpp:136
+#, fuzzy
+#| msgid "Add Group"
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Radjouter on hopea"
+
+#: common/KReportUnit.cpp:138
+#, fuzzy
+#| msgid "Millimeters (mm)"
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "Milimetes (mm)"
+
+#: common/KReportUnit.cpp:140
+#, fuzzy
+#| msgid "Centimeters (cm)"
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "Cintimetes (cm)"
+
+#: common/KReportUnit.cpp:142
+#, fuzzy
+#| msgid "Decimeters (dm)"
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "Decimetes (dm)"
+
+#: common/KReportUnit.cpp:144
+#, fuzzy
+#| msgid "Inches (in)"
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "Pôces (in)"
+
+#: common/KReportUnit.cpp:146
+#, fuzzy
+#| msgid "Pica (pi)"
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "Picas (pi)"
+
+#: common/KReportUnit.cpp:148
+#, fuzzy
+#| msgid "Cicero (cc)"
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "Cicero (cc)"
+
+#: common/KReportUnit.cpp:150
+#, fuzzy
+#| msgid "Points (pt)"
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "Ponts (pt)"
+
+#: common/KReportUnit.cpp:152
+#, fuzzy
+#| msgid "Pixels (px)"
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "Picsels (px)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Cross"
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Croes"
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Tick"
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr "Marke"
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Dot"
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr "Pont"
+
+#: items/check/KReportItemCheck.cpp:80
+#, fuzzy
+#| msgid "Style"
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "Stîle"
+
+#: items/check/KReportItemCheck.cpp:84
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Coleur di dvant"
+
+#: items/check/KReportItemCheck.cpp:86
+#, fuzzy
+#| msgid "Line Weight"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "Pwès del roye"
+
+#: items/check/KReportItemCheck.cpp:88
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Coleur del roye"
+
+#: items/check/KReportItemCheck.cpp:89
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Stîle del roye"
+
+#: items/check/KReportItemCheck.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Valixhance"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Valixhance"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Left"
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Hintche"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Center"
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Mitan"
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Right"
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Droete"
+
+#: items/field/KReportItemField.cpp:96
+#, fuzzy
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Aroymint di coutchî"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Top"
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "Copete"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Bottom"
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Valêye"
+
+#: items/field/KReportItemField.cpp:102
+#, fuzzy
+#| msgid "Vertical Alignment"
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Aroymint d' astampé"
+
+#: items/field/KReportItemField.cpp:104
+#, fuzzy
+#| msgid "Font"
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Fonte"
+
+#: items/field/KReportItemField.cpp:106
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Coleur do fond"
+
+#: items/field/KReportItemField.cpp:107
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Coleur di dvant"
+
+#: items/field/KReportItemField.cpp:109
+#, fuzzy
+#| msgid "Background tool"
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Usteye pol fond"
+
+#: items/field/KReportItemField.cpp:114
+#, fuzzy
+#| msgid "Line Weight"
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "Pwès del roye"
+
+#: items/field/KReportItemField.cpp:116
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Coleur del roye"
+
+#: items/field/KReportItemField.cpp:117
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Stîle del roye"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:120
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgid "Clip"
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr "Clip"
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgid "Stretch"
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Stindaedje"
+
+#: items/image/KReportItemImage.cpp:120
+#, fuzzy
+#| msgid "Resize Mode"
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "Môde candjî l' grandeu"
+
+#: items/image/KReportItemImage.cpp:121
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Valixhance"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:91
+#, fuzzy
+#| msgid "Caption"
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Ledjinde"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Left"
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Hintche"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Center"
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Mitan"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Right"
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Droete"
+
+#: items/label/KReportItemLabel.cpp:96
+#, fuzzy
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Aroymint di coutchî"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Top"
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "Copete"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Bottom"
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Valêye"
+
+#: items/label/KReportItemLabel.cpp:102
+#, fuzzy
+#| msgid "Vertical Alignment"
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Aroymint d' astampé"
+
+#: items/label/KReportItemLabel.cpp:104
+#, fuzzy
+#| msgid "Font"
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Fonte"
+
+#: items/label/KReportItemLabel.cpp:106
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Coleur do fond"
+
+#: items/label/KReportItemLabel.cpp:107
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Coleur di dvant"
+
+#: items/label/KReportItemLabel.cpp:109
+#, fuzzy
+#| msgid "Background tool"
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Usteye pol fond"
+
+#: items/label/KReportItemLabel.cpp:114
+#, fuzzy
+#| msgid "Line Weight"
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "Pwès del roye"
+
+#: items/label/KReportItemLabel.cpp:116
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Coleur del roye"
+
+#: items/label/KReportItemLabel.cpp:117
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Stîle del roye"
+
+#: items/text/KReportItemText.cpp:115
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Valixhance"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Left"
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Hintche"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Center"
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Mitan"
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Right"
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Droete"
+
+#: items/text/KReportItemText.cpp:121
+#, fuzzy
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Aroymint di coutchî"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Top"
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "Copete"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Bottom"
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Valêye"
+
+#: items/text/KReportItemText.cpp:127
+#, fuzzy
+#| msgid "Vertical Alignment"
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Aroymint d' astampé"
+
+#: items/text/KReportItemText.cpp:129
+#, fuzzy
+#| msgid "Font"
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Fonte"
+
+#: items/text/KReportItemText.cpp:131
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Coleur do fond"
+
+#: items/text/KReportItemText.cpp:132
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Coleur di dvant"
+
+#: items/text/KReportItemText.cpp:134
+#, fuzzy
+#| msgid "Line Weight"
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "Pwès del roye"
+
+#: items/text/KReportItemText.cpp:136
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Coleur del roye"
+
+#: items/text/KReportItemText.cpp:137
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Stîle del roye"
+
+#: items/text/KReportItemText.cpp:138
+#, fuzzy
+#| msgid "Background tool"
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Usteye pol fond"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, fuzzy, qt-format
+#| msgid "Script File"
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr "Fitchî scripe"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+#, fuzzy
+#| msgid "Internal error"
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Divintrinne aroke"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:676
+#, fuzzy
+#| msgid "Page Header (Any)"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Tiestire del pådje (tolminme)"
+
+#: wrtembed/KReportDesigner.cpp:680
+#, fuzzy
+#| msgid "Page Header (Even)"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Tiestire del pådje (paire)"
+
+#: wrtembed/KReportDesigner.cpp:684
+#, fuzzy
+#| msgid "Page Header (Odd)"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Tiestire del pådje (impaire)"
+
+#: wrtembed/KReportDesigner.cpp:688
+#, fuzzy
+#| msgid "Page Header (First)"
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Tiestire del pådje (prumire)"
+
+#: wrtembed/KReportDesigner.cpp:692
+#, fuzzy
+#| msgid "Page Header (Last)"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Tiestire del pådje (dierinne)"
+
+#: wrtembed/KReportDesigner.cpp:696
+#, fuzzy
+#| msgid "Page Footer (Any)"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "Pî del pådje (tolminme)"
+
+#: wrtembed/KReportDesigner.cpp:700
+#, fuzzy
+#| msgid "Page Footer (Even)"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "Pî del pådje (paire)"
+
+#: wrtembed/KReportDesigner.cpp:704
+#, fuzzy
+#| msgid "Page Footer (Odd)"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "Pî del pådje (impaire)"
+
+#: wrtembed/KReportDesigner.cpp:708
+#, fuzzy
+#| msgid "Page Footer (First)"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "Pî del pådje (prumire)"
+
+#: wrtembed/KReportDesigner.cpp:712
+#, fuzzy
+#| msgid "Page Footer (Last)"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "Pî del pådje (dierinne)"
+
+#: wrtembed/KReportDesigner.cpp:716
+#, fuzzy
+#| msgid "Report Header"
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "Tiestire do rapoirt"
+
+#: wrtembed/KReportDesigner.cpp:720
+#, fuzzy
+#| msgid "Report Footer"
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "Pî do rapoirt"
+
+#: wrtembed/KReportDesigner.cpp:808
+#, fuzzy
+#| msgid "Export"
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "Ebaguer"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Title"
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Tite"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Report Title"
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Tite do rapoirt"
+
+#: wrtembed/KReportDesigner.cpp:818
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Grandeu del pådje"
+
+#: wrtembed/KReportDesigner.cpp:821
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Grandeu del pådje"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "Portrait"
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "Portrait"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "Landscape"
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "Payisaedje"
+
+#: wrtembed/KReportDesigner.cpp:827
+#, fuzzy
+#| msgid "Page Orientation"
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "Ashidaedje del pådje"
+
+#: wrtembed/KReportDesigner.cpp:832
+#, fuzzy
+#| msgid "Page Unit"
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Unité del pådje"
+
+#: wrtembed/KReportDesigner.cpp:833
+#, fuzzy
+#| msgid "Show Grid"
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Mostrer grile"
+
+#: wrtembed/KReportDesigner.cpp:834
+#, fuzzy
+#| msgid "Snap to Grid"
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Claper sol grile"
+
+#: wrtembed/KReportDesigner.cpp:835
+#, fuzzy
+#| msgid "Grid Divisions"
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr "Pårtixhaedjes del grile"
+
+#: wrtembed/KReportDesigner.cpp:841
+#, fuzzy
+#| msgid "Left Margin"
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Mådje di hintche"
+
+#: wrtembed/KReportDesigner.cpp:843
+#, fuzzy
+#| msgid "Right Margin"
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Mådje di droete"
+
+#: wrtembed/KReportDesigner.cpp:845
+#, fuzzy
+#| msgid "Top Margin"
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Mådje dal copete"
+
+#: wrtembed/KReportDesigner.cpp:847
+#, fuzzy
+#| msgid "Bottom Margin"
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Mådje dal valêye"
+
+#: wrtembed/KReportDesigner.cpp:869
+#, fuzzy
+#| msgid "Object Script"
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Scripe d' objet"
+
+#: wrtembed/KReportDesigner.cpp:1067
+#, fuzzy
+#| msgid "Cut"
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Côper"
+
+#: wrtembed/KReportDesigner.cpp:1071
+#, fuzzy
+#| msgid "Copy"
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Copyî"
+
+#: wrtembed/KReportDesigner.cpp:1076
+#, fuzzy
+#| msgid "Paste"
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Aclaper"
+
+#: wrtembed/KReportDesigner.cpp:1087
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Disfacer"
+
+#: wrtembed/KReportDesigner.cpp:1129
+#, fuzzy
+#| msgid "Line"
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Roye"
+
+#: wrtembed/KReportDesigner.cpp:1476
+#, fuzzy
+#| msgid "Line"
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Roye"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1525
+#, fuzzy
+#| msgid "Copy"
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "Copyî"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1531
+#, fuzzy
+#| msgid "Paste"
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "Aclaper"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1544
+#, fuzzy
+#| msgid "Collection"
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Ramexhnaedje"
+
+#: wrtembed/KReportDesigner.cpp:1547
+#, fuzzy
+#| msgid "&Raise"
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr "&Rimete come divant"
+
+#: wrtembed/KReportDesigner.cpp:1549
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr ""
+
+#: wrtembed/KReportDesignerSection.cpp:126
+#, fuzzy
+#| msgid "Detail"
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "Sipepieus"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+#, fuzzy
+#| msgid "Group Section Editor"
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Aspougneu do tite del seccion"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+#, fuzzy
+#| msgid "Column:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Colone:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+#, fuzzy
+#| msgid "Sort"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Relére"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+#, fuzzy
+#| msgid "Show Group Header"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Mostrer tiestire do groupe"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+#, fuzzy
+#| msgid "Show Group Footer"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Mostrer pînote do groupe"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+#, fuzzy
+#| msgid "Insert Page Break After this Footer"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr "Sititchî djocaedje di pådje après cisse pînote ci"
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+#, fuzzy
+#| msgid ""
+#| "A button that allows a report's surface to be selected, allowing its "
+#| "properties to be seen."
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+"On boton k' permet d' tchoezi l' surface d' on rapoirt, permetant d' vey ses "
+"prôpietés."
+
+#: wrtembed/KReportRuler_p.cpp:1472
+#, fuzzy
+#| msgid "First line indent"
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Ritrait del prumire roye"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+#, fuzzy
+#| msgid "Left indent"
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Ritrait di hintche"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+#, fuzzy
+#| msgid "Right indent"
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Ritrait di droete"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+#, fuzzy
+#| msgid "Load..."
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr "Tcherdjî..."
+
+#: wrtembed/KReportSectionEditor.cpp:74
+#, fuzzy
+#| msgid "Edit..."
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "Candjî..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Disfacer"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+#, fuzzy
+#| msgid "Move &Up"
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "&Monter"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+#, fuzzy
+#| msgid "Move &Down"
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "&Dischinde"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+#, fuzzy
+#| msgid "Ascending"
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr "Crexhant"
+
+#: wrtembed/KReportSectionEditor.cpp:312
+#, fuzzy
+#| msgid "Descending"
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr "Discrexhant"
+
+#: wrtembed/KReportSectionEditor.ui:29
+#, fuzzy
+#| msgid "Show Group Header"
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Mostrer tiestire do groupe"
+
+#: wrtembed/KReportSectionEditor.ui:36
+#, fuzzy
+#| msgid "Show Group Footer"
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Mostrer pînote do groupe"
+
+#: wrtembed/KReportSectionEditor.ui:43
+#, fuzzy
+#| msgid "Page Header"
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Tiestire del pådje"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "Pådje shuvante"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+#, fuzzy
+#| msgid "Even Page(s)"
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Paire/ès pådje(s)"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+#, fuzzy
+#| msgid "Any Page(s)"
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Tolminme kéne(s) pådje(s)"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+#, fuzzy
+#| msgid "Last Page"
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Dierinne pådje"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+#, fuzzy
+#| msgid "Odd Page(s)"
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Impaire/ès pådje(s)"
+
+#: wrtembed/KReportSectionEditor.ui:130
+#, fuzzy
+#| msgid "Page Footer"
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "Pî del pådje"
+
+#: wrtembed/KReportSectionEditor.ui:217
+#, fuzzy
+#| msgid "Group Sections"
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Seccions do groupe"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, fuzzy, qt-format
+#| msgid "%1%"
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+#, fuzzy
+#| msgid "Fit Page Width"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Forrimpli l' lårdjeur del pådje"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+#, fuzzy
+#| msgid "Fit Page"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Forrimpli l' pådje"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+#, fuzzy
+#| msgid "Actual Pixels"
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr "Vraiys picsels"
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+#, fuzzy
+#| msgid "Fit Page Width"
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Forrimpli l' lårdjeur del pådje"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Letter"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "Lete US"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Legal"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "US Legal"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "Custom"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "A vosse môde"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B6"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B5"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B4"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "Execute"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "Enonder"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B0"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B1"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "ISO B10"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B2"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B3"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "Comma"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "Coma"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO DL"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "ISO DL"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Folio"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Folio"
+#~ msgstr "US Folio"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Ledger"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "US Ledger"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Tabloid"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Tabloid"
+#~ msgstr "US Tabloyide"
+
+#, fuzzy
+#~| msgid "Postal Code"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "Côde del posse"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Sourdant di dnêyes"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Sourdant di dnêyes"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Sourdant di dnêyes"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Waitroûle"
+
+#, fuzzy
+#~| msgid "Height"
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "Hôteur"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Coleur do fond"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "Eplaeçmint"
+
+#, fuzzy
+#~| msgid "Size"
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "Grandeu"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "ISO A3"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "ISO A4"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "ISO A5"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "ISO B5"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Executive"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "US Executive"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "ISO A0"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "ISO A1"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "ISO A2"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "ISO A6"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A7"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "ISO A7"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A8"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "ISO A8"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A9"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "ISO A9"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "ISO B0"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "ISO B1"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "ISO B2"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "ISO B3"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "ISO B4"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "ISO B6"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO C5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "ISO C5"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Common 10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Common 10"
+#~ msgstr "US Common 10"
+
+#, fuzzy
+#~| msgid "Height"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "Hôteur"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "Coleur do fond"
+
+#, fuzzy
+#~| msgid "Line Weight"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Weight"
+#~ msgstr "Pwès del roye"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "Coleur del roye"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "Stîle del roye"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Sourdant di dnêyes"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "Valixhance"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "Coleur do fond"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "Coleur di dvant"
+
+#, fuzzy
+#~| msgid "Line Weight"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Weight"
+#~ msgstr "Pwès del roye"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "Coleur del roye"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "Stîle del roye"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Sourdant di dnêyes"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "Valixhance"
+
+#, fuzzy
+#~| msgid "Left"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "Hintche"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "Mitan"
+
+#, fuzzy
+#~| msgid "Right"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "Droete"
+
+#, fuzzy
+#~| msgid "Horizontal Alignment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Aroymint di coutchî"
+
+#, fuzzy
+#~| msgid "Top"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "Copete"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "Valêye"
+
+#, fuzzy
+#~| msgid "Vertical Alignment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Aroymint d' astampé"
+
+#, fuzzy
+#~| msgid "Font"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "Fonte"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "Coleur do fond"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "Coleur di dvant"
+
+#, fuzzy
+#~| msgid "Background tool"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "Usteye pol fond"
+
+#, fuzzy
+#~| msgid "Line Weight"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Weight"
+#~ msgstr "Pwès del roye"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "Coleur del roye"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "Stîle del roye"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Sourdant di dnêyes"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "Valixhance"
+
+#, fuzzy
+#~| msgid "Left"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "Hintche"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "Mitan"
+
+#, fuzzy
+#~| msgid "Right"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "Droete"
+
+#, fuzzy
+#~| msgid "Horizontal Alignment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Aroymint di coutchî"
+
+#, fuzzy
+#~| msgid "Top"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "Copete"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "Valêye"
+
+#, fuzzy
+#~| msgid "Vertical Alignment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Aroymint d' astampé"
+
+#, fuzzy
+#~| msgid "Font"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "Fonte"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "Coleur do fond"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "Coleur di dvant"
+
+#, fuzzy
+#~| msgid "Line Weight"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Weight"
+#~ msgstr "Pwès del roye"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "Coleur del roye"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "Stîle del roye"
+
+#, fuzzy
+#~| msgid "Background tool"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "Usteye pol fond"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "Disfacer"
+
+#, fuzzy
+#~| msgid "Script Interpreter"
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "Eterpreteu di scripe"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Djan Cayron"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "jean.cayron@gmail.com"
+
+#, fuzzy
+#~| msgid "Break subpath"
+#~ msgid "Draw path"
+#~ msgstr "Djoker tchimin efant"
+
+#, fuzzy
+#~| msgid "Break subpath"
+#~ msgid "Freehand path"
+#~ msgstr "Djoker tchimin efant"
+
+#, fuzzy
+#~| msgid "Angle snapping delta"
+#~ msgid "Angle snapping delta:"
+#~ msgstr "Delta di l' inglêye d' assaetchaedje magnetike"
+
+#~ msgid "Angle Constraints"
+#~ msgstr "Stronnas d' inglêye"
+
+#, fuzzy
+#~| msgid "Position:"
+#~ msgid "Precision:"
+#~ msgstr "Pôzucion:"
+
+#, fuzzy
+#~| msgid "Rainbow"
+#~ msgctxt "The raw line data"
+#~ msgid "Raw"
+#~ msgstr "Airdiè"
+
+#~ msgid "Curve"
+#~ msgstr "Coube"
+
+#~ msgid "Straight"
+#~ msgstr "Direk"
+
+#, fuzzy
+#~| msgid "Combine paths"
+#~ msgid "Combine angle:"
+#~ msgstr "Combiner tchmins"
+
+#, fuzzy
+#~| msgid "Could not export file."
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr "Dji n' a savou ebaguer l' fitchî."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "The database \"%1\" does not exist."
+#~ msgstr "Li fitchî %1 n' egzistêye nén."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "Li fitchî %1 n' egzistêye nén."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Database file \"%1\" is not writable."
+#~ msgstr "Li fitchî %1 n' egzistêye nén."
+
+#, fuzzy
+#~| msgid "Create backup file"
+#~ msgid "Creating table failed."
+#~ msgstr "Ahiver copeye di såvrité"
+
+#, fuzzy
+#~| msgid "Cannot create storage"
+#~ msgid "Cannot create table without fields."
+#~ msgstr "Dji n' sai ahiver l' sitocaedje"
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not create the same table \"%1\" twice."
+#~ msgstr "Dji n' a savou lére li pacaedje « %1 »."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist."
+#~ msgstr "Li fitchî %1 n' egzistêye nén."
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not load embedded object:\n"
+#~| "%1"
+#~ msgid "Could not remove object's data."
+#~ msgstr ""
+#~ "Dji n' a savou tcherdjî l' ravalé objet :\n"
+#~ "%1"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not uninstall the script package \"%1\" since the script is not "
+#~| "installed."
+#~ msgid "Could not alter table \"%1\" using the same table as destination."
+#~ msgstr ""
+#~ "Dji n' a savou disastaler l' pacaedje di scripe « %1 » ca l' sicripe n' "
+#~ "est nén astalé."
+
+#, fuzzy
+#~| msgid "Could not read the beginning of the file."
+#~ msgid "Could not rename table \"%1\" using the same name."
+#~ msgstr "Dji n' a savou lére li cmince do fitchî."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Query \"%1\" does not exist."
+#~ msgstr "Li fitchî %1 n' egzistêye nén."
+
+#, fuzzy
+#~| msgid "File Creation"
+#~ msgid "Begin transaction failed."
+#~ msgstr "Askepiaedje do fitchî"
+
+#, fuzzy
+#~| msgid "This name is already used."
+#~ msgid "Transaction already started."
+#~ msgstr "Ci no la est ddja eployî."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Column <resource>%1</resource> does not exist in the query."
+#~ msgstr "Li fitchî %1 n' egzistêye nén."
+
+#, fuzzy
+#~| msgid "Error while saving embedded documents"
+#~ msgctxt "Extended schema for a table: loading error"
+#~ msgid "Error while loading extended table schema."
+#~ msgstr "Åk n' a nén stî come dji schapéve des ravalés documints"
+
+#, fuzzy
+#~| msgid ""
+#~| "Parsing error in %1 at line %2, column %3\n"
+#~| "Error message: %4"
+#~ msgid ""
+#~ "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~ "XML data: %4"
+#~ msgstr ""
+#~ "Aroke d' analijhe del sintake dins %1 al roye %2, colone %3\n"
+#~ "Messaedje d' aroke: %4"
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not insert record because there is no master table specified."
+#~ msgstr "Dji n' a savou lére li pacaedje « %1 »."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not delete record because there is no master table specified."
+#~ msgstr "Dji n' a savou lére li pacaedje « %1 »."
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Unknown error."
+#~ msgstr "Aroke nén cnoxhowe"
+
+#, fuzzy
+#~| msgid "Date: %1"
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "Date: %1"
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not set value of database property \"%1\"."
+#~ msgstr "Dji n' a savou lére li pacaedje « %1 »."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "Dji n' a savou lére li pacaedje « %1 »."
+
+#, fuzzy
+#~| msgid "Could not read the beginning of the file."
+#~ msgid "Could not read database properties."
+#~ msgstr "Dji n' a savou lére li cmince do fitchî."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not find database driver \"%1\"."
+#~ msgstr "Dji n' a savou lére li pacaedje « %1 »."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "Dji n' a savou lére li pacaedje « %1 »."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "Dji n' a savou lére li pacaedje « %1 »."
+
+#, fuzzy
+#~| msgid "File not found"
+#~ msgid "Field not found"
+#~ msgstr "Fitchî nén trové"
+
+#, fuzzy
+#~| msgid "Could not create the file for saving"
+#~ msgid "Could not access the table directly using its name"
+#~ msgstr "Dji n' a savou ahiver l' fitchî pol schapaedje"
+
+#, fuzzy
+#~| msgid "File not found"
+#~ msgid "Table not found"
+#~ msgstr "Fitchî nén trové"
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" has no \"%2\" field."
+#~ msgstr "Li fitchî %1 n' egzistêye nén."
+
+#, fuzzy
+#~| msgid "Phone Number"
+#~ msgid "Short Integer Number"
+#~ msgstr "Limero d' telefone"
+
+#, fuzzy
+#~| msgid "Phone Number"
+#~ msgid "Integer Number"
+#~ msgstr "Limero d' telefone"
+
+#, fuzzy
+#~| msgid "No value"
+#~ msgid "Yes/No Value"
+#~ msgstr "Nole valixhance"
+
+#~ msgid "Date"
+#~ msgstr "Date"
+
+#, fuzzy
+#~| msgid "Date & Time"
+#~ msgid "Date and Time"
+#~ msgstr "Date et eure"
+
+#, fuzzy
+#~| msgid "Timezone"
+#~ msgid "Time"
+#~ msgstr "Coisse ås eures"
+
+#, fuzzy
+#~| msgid "Revision number:"
+#~ msgid "Single Precision Number"
+#~ msgstr "Limero d' rivizion:"
+
+#, fuzzy
+#~| msgid "Revision number:"
+#~ msgid "Double Precision Number"
+#~ msgstr "Limero d' rivizion:"
+
+#~ msgid "Text"
+#~ msgstr "Tecse"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Long Text"
+#~ msgstr "Tecse"
+
+#~ msgid "Object"
+#~ msgstr "Objet"
+
+#, fuzzy
+#~| msgid "Change master page"
+#~ msgid "Floating Point Number"
+#~ msgstr "Candjî mwaisse pådje"
+
+#, fuzzy
+#~| msgid "Date & Time"
+#~ msgid "Date/Time"
+#~ msgstr "Date et eure"
+
+#, fuzzy
+#~| msgid "Error Encountered"
+#~ msgid "Unspecified error encountered"
+#~ msgstr "Åk n' a nén stî"
+
+#, fuzzy
+#~| msgid "Internal error"
+#~ msgid "Syntax error."
+#~ msgstr "Divintrinne aroke"
+
+#, fuzzy
+#~| msgid "Error!"
+#~ msgid "Error"
+#~ msgstr "Aroke!"
+
+#, fuzzy
+#~| msgid "Internal error"
+#~ msgid "Error near \"%1\"."
+#~ msgstr "Divintrinne aroke"
+
+#, fuzzy
+#~| msgid "Revision number:"
+#~ msgid "Server's port number"
+#~ msgstr "Limero d' rivizion:"
+
+#, fuzzy
+#~| msgid "Create backup file"
+#~ msgid "Record inserting failed."
+#~ msgstr "Ahiver copeye di såvrité"
+
+#, fuzzy
+#~| msgid "Error deleting layers"
+#~ msgid "Record deleting failed."
+#~ msgstr "Åk n' a nén stî come dji disfacéve des coûtches"
+
+#, fuzzy
+#~| msgid "Change Connection"
+#~ msgid "Test Connection"
+#~ msgstr "Candjî raloyaedje"
+
+#, fuzzy
+#~ msgid "Number"
+#~ msgstr "Limerotaedje"
+
+#~ msgid "Image"
+#~ msgstr "Imådje"
+
+#, fuzzy
+#~| msgid "Change Connection"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr "Candjî raloyaedje"
+
+#, fuzzy
+#~| msgid "Change parameter"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr "Candjî parametes"
+
+#, fuzzy
+#~| msgid "Convert to Path"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "Covierser e tchmin"
+
+#, fuzzy
+#~| msgid "Break subpath at points"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath at points"
+#~ msgstr "Djoker tchimin efant ås ponts"
+
+#, fuzzy
+#~| msgid "Combine paths"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Combine paths"
+#~ msgstr "Combiner tchmins"
+
+#, fuzzy
+#~| msgid "Move control point"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move control point"
+#~ msgstr "Bodjî pont d' controle"
+
+#, fuzzy
+#~| msgid "Set fill rule"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set fill rule"
+#~ msgstr "Defini rîle di rimplixhaedje"
+
+#, fuzzy
+#~| msgid "Insert point"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "Sititchî on pont"
+
+#, fuzzy
+#~| msgid "Merge points"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "Rimaxhî des ponts"
+
+#, fuzzy
+#~| msgid "Move points"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move points"
+#~ msgstr "Bodjî ponts"
+
+#, fuzzy
+#~| msgid "Remove points"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove points"
+#~ msgstr "Oister ponts"
+
+#, fuzzy
+#~| msgid "Set point type"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set point type"
+#~ msgstr "Defini sôre di pont"
+
+#, fuzzy
+#~| msgid "Reverse paths"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reverse paths"
+#~ msgstr "Mete årvier les tchmins"
+
+#, fuzzy
+#~| msgid "Break subpath"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath"
+#~ msgstr "Djoker tchimin efant"
+
+#, fuzzy
+#~| msgid "Change segments to curves"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to curves"
+#~ msgstr "Candjî segmints e coubes"
+
+#, fuzzy
+#~| msgid "Change segments to lines"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to lines"
+#~ msgstr "Candjî segmints e royes"
+
+#, fuzzy
+#~| msgid "Set border"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set marker"
+#~ msgstr "Defini boirdeure"
+
+#, fuzzy
+#~| msgid "Align shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Align shapes"
+#~ msgstr "Aroyî cognes"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr "Defini coleur di fond"
+
+#, fuzzy
+#~| msgid "Ellipse Shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Clip Shape"
+#~ msgstr "Cogne e ceke asplati"
+
+#, fuzzy
+#~| msgid "Create shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr "Ahiver cogne"
+
+#, fuzzy
+#~| msgid "Delete shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shape"
+#~ msgid_plural "Delete shapes"
+#~ msgstr[0] "Disfacer cogne"
+#~ msgstr[1] "Disfacer cogne"
+
+#, fuzzy
+#~| msgid "Distribute shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Distribute shapes"
+#~ msgstr "Cossemer cognes"
+
+#, fuzzy
+#~| msgid "Group shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr "Grouper cognes"
+
+#, fuzzy
+#~| msgid "Add shapes to group"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add shapes to group"
+#~ msgstr "Radjouter des fômes å groupe"
+
+#, fuzzy
+#~| msgid "Keep Aspect Ratio"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Keep Aspect Ratio"
+#~ msgstr "Wårder l' rapoirt lårdjeur/hôteur"
+
+#, fuzzy
+#~| msgid "Lock shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Lock shapes"
+#~ msgstr "Eclawer cognes"
+
+#, fuzzy
+#~| msgid "Move shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move shapes"
+#~ msgstr "Bodjî cognes"
+
+#, fuzzy
+#~| msgid "Create Shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr "Ahiver des cognes"
+
+#, fuzzy
+#~| msgid "Reorder shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reorder shapes"
+#~ msgstr "Rélére cognes"
+
+#, fuzzy
+#~| msgid "Change page layout"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Shape RunAround"
+#~ msgstr "Candjî adjinçmint del pådje"
+
+#, fuzzy
+#~| msgid "Set Shadow"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Shadow"
+#~ msgstr "Defini ombion"
+
+#, fuzzy
+#~| msgid "Shear shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Shear shapes"
+#~ msgstr "Fé èn efet d' cizetes so les cognes"
+
+#, fuzzy
+#~| msgid "Resize shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Resize shapes"
+#~ msgstr "Candjî l' grandeu des cognes"
+
+#, fuzzy
+#~| msgid "Set border"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set stroke"
+#~ msgstr "Defini boirdeure"
+
+#, fuzzy
+#~| msgid "Set opacity"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr "Defini zeroveyaedje"
+
+#, fuzzy
+#~| msgid "Ellipse Shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shape"
+#~ msgstr "Cogne e ceke asplati"
+
+#, fuzzy
+#~| msgid "Ellipse Shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shapes"
+#~ msgstr "Cogne e ceke asplati"
+
+#, fuzzy
+#~| msgid "Ungroup shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr "Disgrouper cognes"
+
+#, fuzzy
+#~| msgid "Close subpath"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Close subpath"
+#~ msgstr "Clôre tchimin efant"
+
+#, fuzzy
+#~| msgid "Join subpaths"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Join subpaths"
+#~ msgstr "Radjonde tchimins efants"
+
+#, fuzzy
+#~| msgid "Remove subpath"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove subpath"
+#~ msgstr "Oister tchimin efant"
+
+#~ msgid "Standard"
+#~ msgstr "Sitandård"
+
+#~ msgid "Lines"
+#~ msgstr "Royes"
+
+#~ msgid "Type:"
+#~ msgstr "Sôre :"
+
+#~ msgid "Tie"
+#~ msgstr "Loyaedje"
+
+#~ msgid "A connection between two other shapes"
+#~ msgstr "On raloyaedje inte deus ôtès cognes"
+
+#~ msgid "Shows or hides grid"
+#~ msgstr "Mostere ou catche li grile"
+
+#~ msgid "Simple path shape"
+#~ msgstr "Simpe cogne di tchmin"
+
+#~ msgid "A simple path shape"
+#~ msgstr "Ene simpe cogne di tchmin"
+
+#~ msgid "%1 Options"
+#~ msgstr "Tchuzes di %1"
+
+#, fuzzy
+#~| msgid "Paste Shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Shapes"
+#~ msgstr "Aclaper cognes"
+
+#~ msgid "Active tool: %1"
+#~ msgstr "Usteye en alaedje : %1"
+
+#, fuzzy
+#~| msgid "Paste Page"
+#~| msgid_plural "Paste Pages"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "Aclaper pådje"
+
+#~ msgid "Nodes"
+#~ msgstr "Nuks"
+
+#~ msgid "Extension of lines"
+#~ msgstr "Sitindaedje des royes"
+
+#~ msgid "Bounding box of shape"
+#~ msgstr "Ewalpaedje djeyometrike del cogne"
+
+#~ msgid "Proximity distance where snapping happens"
+#~ msgstr "Li distance a costé d' ewou çki l' assaetchaedje magnetike si fwait"
+
+#~ msgid " px"
+#~ msgstr " px"
+
+#~ msgid "Orthogonal"
+#~ msgstr "Ortogonå"
+
+#~ msgid "Intersection of lines"
+#~ msgstr "Croejhlåde des royes"
+
+#~ msgid "Guide lines"
+#~ msgstr "Royes di moennaedje"
+
+#~ msgid "Create object"
+#~ msgstr "Ahiver èn objet"
+
+#~ msgid "Pan"
+#~ msgstr "Panoramike"
+
+#, fuzzy
+#~| msgid "Change Segment"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Segment"
+#~ msgstr "Candjî segmint"
+
+#~ msgid "Corner point"
+#~ msgstr "Pont avou coines"
+
+#~ msgid "Smooth point"
+#~ msgstr "Pont radoûci"
+
+#~ msgid "Symmetric Point"
+#~ msgstr "Pont simetrike"
+
+#~ msgid "Make curve point"
+#~ msgstr "Fé on pont d' coube"
+
+#~ msgid "Make line point"
+#~ msgstr "Fé on pont d' roye"
+
+#~ msgid "Segment to Line"
+#~ msgstr "Segmint viè roye"
+
+#~ msgid "Segment to Curve"
+#~ msgstr "Segmint viè coube"
+
+#~ msgid "Insert point"
+#~ msgstr "Sititchî on pont"
+
+#~ msgid "Remove point"
+#~ msgstr "Oister on pont"
+
+#~ msgid "Break at point"
+#~ msgstr "Djoker å pont"
+
+#~ msgid "Break at segment"
+#~ msgstr "Djoker å segmint"
+
+#~ msgid "Join with segment"
+#~ msgstr "Radjonde avou on segmint"
+
+#~ msgid "Merge points"
+#~ msgstr "Rimaxhî des ponts"
+
+#~ msgid "To Path"
+#~ msgstr "Viè l' tchimin"
+
+#~ msgid "Line/Curve"
+#~ msgstr "Roye/Coube"
+
+#~ msgid "Drag to move handle."
+#~ msgstr "Bodjî eyet saetchî po displaecî l' pougneye."
+
+#~ msgid "Drag to move point. Shift click to change point type."
+#~ msgstr ""
+#~ "Bodjî eyet saetchî po displaecî l' pont. Maj+clitch po candjî l' sôre di "
+#~ "pont."
+
+#~ msgid "Drag to move control point."
+#~ msgstr "Bodjî eyet saetchî po displaecî l' pont d' controle."
+
+#~ msgid "Press B to break path at selected point."
+#~ msgstr "Tchôkî B po djoker on tchmin å pont tchoezi."
+
+#~ msgid "Press B to break path at selected segments."
+#~ msgstr "Tchôkî B po djoker on tchmin ås segmints tchoezis."
+
+#, fuzzy
+#~| msgid "Path editing tool"
+#~ msgid "Path editing"
+#~ msgstr "Usteye d' aspougnaedje di tchmin"
+
+#~ msgid "Zoom"
+#~ msgstr "Zoumaedje"
+
+#~ msgid "Zoom In"
+#~ msgstr "Zoumer"
+
+#~ msgid "Zoom Out"
+#~ msgstr "Diszoumer"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Convert To Path"
+#~ msgstr "Covierser e tchmin"
+
+#~ msgid "Scripts"
+#~ msgstr "Sicripes"
+
+#~ msgid "Script Manager"
+#~ msgstr "Manaedjeu des scripes"
+
+#~ msgid "Execute Script File..."
+#~ msgstr "Enonder l' fitchî scripe..."
+
+#~ msgid "Script Manager..."
+#~ msgstr "Manaedjeu des scripes"
+
+#~ msgid "Execute Script File"
+#~ msgstr "Enonder l' fitchî scripe"
+
+#~ msgid "Install Script Package"
+#~ msgstr "Astaler l' pacaedje di scripe"
+
+#~ msgid "Could not read the package \"%1\"."
+#~ msgstr "Dji n' a savou lére li pacaedje « %1 »."
+
+#~ msgid "The package \"%1\" does not contain a valid install.rc file."
+#~ msgstr "I gn a pont d' fitchî install.rc valåbe dins l' pacaedje « %1 »."
+
+#~ msgid "Failed to parse the install.rc file at package \"%1\"."
+#~ msgstr "Dji n' a savou lére li fitchî install.rc do pacaedje « %1 »."
+
+#~ msgid ""
+#~ "Failed to determinate location where the package \"%1\" should be "
+#~ "installed to."
+#~ msgstr ""
+#~ "Dji n' a savou dire l' eplaeçmint ewou çkel pacaedje « %1 » duvreut esse "
+#~ "astalé"
+
+#~ msgid ""
+#~ "A script package with the name \"%1\" already exists. Replace this "
+#~ "package?"
+#~ msgstr ""
+#~ "On pacaedje di scripe avou l' no « %1 » egzistêye dedja. Replaecî c' "
+#~ "pacaedje la ?"
+
+#~ msgid "Replace"
+#~ msgstr "Replaecî"
+
+#~ msgid ""
+#~ "Could not uninstall this script package. You may not have sufficient "
+#~ "permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Dji n' a savou disastaler ci pacaedje di scripe. Motoit k' vos n' avoz "
+#~ "pont d' droets assez po disfacer l' ridant « %1 »."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\" since the script is not "
+#~ "installed."
+#~ msgstr ""
+#~ "Dji n' a savou disastaler l' pacaedje di scripe « %1 » ca l' sicripe n' "
+#~ "est nén astalé."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\". You may not have "
+#~ "sufficient permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Dji n' a savou disastaler l' pacaedje di scripe « %1 ». Motoit k' vos n' "
+#~ "avoz pont d' droets assez po disfacer l' ridant « %1 »."
+
+#~ msgid "Save"
+#~ msgstr "Schaper"
+
+#~ msgid ""
+#~ "<qt>This wizard will guide you through the proccess of adding a new "
+#~ "resource to your scripts.</qt>"
+#~ msgstr ""
+#~ "<qt>Ci macrea vos moenrè ttavå l' processus di radjoutaedje d' ene novele "
+#~ "rissoûce a vos scripes.</qt>"
+
+#~ msgid "Add script file"
+#~ msgstr "Radjouter fitchî di scripe"
+
+#~ msgid "Add collection folder"
+#~ msgstr "Radjouter ridant di ramexhnaedje"
+
+#~ msgid "Install script package file"
+#~ msgstr "Astaler fitchî di pacaedje di scripe"
+
+#~ msgid "Install online script package"
+#~ msgstr "Astaler pacaedje di scripe so fyis"
+
+#~ msgid "Add"
+#~ msgstr "Radjouter"
+
+#~ msgid "Script"
+#~ msgstr "Sicripe"
+
+#~ msgid "Collection"
+#~ msgstr "Ramexhnaedje"
+
+#, fuzzy
+#~| msgid "Change master slide"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master slide"
+#~ msgstr "Candjî mwaisse pådje"
+
+#, fuzzy
+#~| msgid "Change master page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master page"
+#~ msgstr "Candjî mwaisse pådje"
+
+#, fuzzy
+#~| msgid "Set Page Layout"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "Defini adjinçmint del pådje"
+
+#, fuzzy
+#~| msgid "Display master background"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display master background"
+#~ msgstr "Håyner fond do modele"
+
+#, fuzzy
+#~| msgid "Display slide background"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display slide background"
+#~ msgstr "Håyner fond del dia"
+
+#, fuzzy
+#~| msgid "Display page background"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display page background"
+#~ msgstr "Håyner l' fond del pådje"
+
+#, fuzzy
+#~| msgid "Show master shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Show master shapes"
+#~ msgstr "Mostrer mwaissès fômes"
+
+#, fuzzy
+#~| msgid "Hide master shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Hide master shapes"
+#~ msgstr "Catchî mwaissès fômes"
+
+#, fuzzy
+#~| msgid "Delete slide"
+#~| msgid_plural "Delete slides"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] "Disfacer dia"
+#~ msgstr[1] "Disfacer dias"
+
+#, fuzzy
+#~| msgid "Delete page"
+#~| msgid_plural "Delete pages"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "Disfacer pådje"
+#~ msgstr[1] "Disfacer pådjes"
+
+#, fuzzy
+#~| msgid "Insert slide"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr "Sititchî dia"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr "Sititchî pådje"
+
+#, fuzzy
+#~| msgid "Move slide"
+#~| msgid_plural "Move slides"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "Bodjî dia"
+#~ msgstr[1] "Bodjî dias"
+
+#, fuzzy
+#~| msgid "Move page"
+#~| msgid_plural "Move pages"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] "Bodjî pådje"
+#~ msgstr[1] "Bodjî pådjes"
+
+#~ msgid "Configure"
+#~ msgstr "Apontyî"
+
+#~ msgid "Misc"
+#~ msgstr "Totes sôres"
+
+#~ msgid "Grid"
+#~ msgstr "Grile"
+
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "Documint"
+
+#~ msgid "Document Settings"
+#~ msgstr "Apontiaedjes do documint"
+
+#, fuzzy
+#~| msgid "Author"
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "Oteur"
+
+#~ msgid "Author"
+#~ msgstr "Oteur"
+
+#~ msgid "Select a master slide design:"
+#~ msgstr "Tchoezi on mwaisse atuzlaedje des dias:"
+
+#~ msgid "Master Slide"
+#~ msgstr "Mwaisse dia"
+
+#~ msgid "Select a master page design:"
+#~ msgstr "Tchoezi on mwaisse atuzlaedje des pådjes:"
+
+#~ msgid "Master Page"
+#~ msgstr "Mwaisse pådje"
+
+#~ msgid "Slide %1"
+#~ msgstr "Diya %1"
+
+#~ msgid "Page  %1"
+#~ msgstr "Pådje  %1"
+
+#~ msgid "Layer"
+#~ msgstr "Coûtche"
+
+#~ msgid "Group"
+#~ msgstr "Groupe"
+
+#~ msgid "Shape"
+#~ msgstr "Fôme"
+
+#, fuzzy
+#~| msgid "Paste Slide"
+#~| msgid_plural "Paste Slides"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "Aclaper dia"
+
+#, fuzzy
+#~| msgid "Home Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "Pådje måjhon"
+
+#, fuzzy
+#~| msgid "Create Layer"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "Ahiver coûtche"
+
+#~ msgid "Slide"
+#~ msgstr "Diya"
+
+#~ msgid "Visible"
+#~ msgstr "Veyåve"
+
+#~ msgid "Locked"
+#~ msgstr "Eclawé"
+
+#, fuzzy
+#~| msgid "Reparent shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reparent shapes"
+#~ msgstr "Ramete fômes"
+
+#, fuzzy
+#~| msgid "Move page"
+#~| msgid_plural "Move pages"
+#~ msgid "&Move Here"
+#~ msgstr "Bodjî pådje"
+
+#, fuzzy
+#~| msgid "Green"
+#~ msgid "&Copy Here"
+#~ msgstr "Vert"
+
+#, fuzzy
+#~| msgid "&Cancel"
+#~ msgid "C&ancel"
+#~ msgstr "&Rinoncî"
+
+#~ msgid "Document"
+#~ msgstr "Documint"
+
+#~ msgid "Add a new slide or layer"
+#~ msgstr "Radjouter ene novele diapo ou coûtche"
+
+#~ msgid "Add a new page or layer"
+#~ msgstr "Radjouter ene novele pådje ou coûtche"
+
+#~ msgid "Page"
+#~ msgstr "Pådje"
+
+#~ msgid "Delete selected objects"
+#~ msgstr "Oister les objets tchoezis"
+
+#~ msgid "Raise selected objects"
+#~ msgstr "Agrandi les objets tchoezis"
+
+#~ msgid "Lower selected objects"
+#~ msgstr "Raptiti les objets tchoezis"
+
+#~ msgid "Minimal View"
+#~ msgstr "Vuwe minimåle"
+
+#~ msgid "Detailed View"
+#~ msgstr "Sipepieuse vuwe"
+
+#~ msgid "Thumbnail View"
+#~ msgstr "Vuwe avou prévoeyaedje"
+
+#~ msgid "View mode"
+#~ msgstr "Môde di vuwe"
+
+#~ msgid "Enter the name of the new layer:"
+#~ msgstr "Tapez l' no del novele coûtche:"
+
+#~ msgid "New Layer"
+#~ msgstr "Novele coûtche"
+
+#~ msgid "New layer"
+#~ msgstr "Novele coûtche"
+
+#, fuzzy
+#~| msgid "Create Layer"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "Ahiver coûtche"
+
+#, fuzzy
+#~| msgid "Delete Layer"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "Disfacer coûtche"
+
+#~ msgid "Could not delete all layers. At least one layer is required."
+#~ msgstr ""
+#~ "Dji n' a savou disfacer totes les coûtches. I fåt pol moens ene coûtche."
+
+#~ msgid "Error deleting layers"
+#~ msgstr "Åk n' a nén stî come dji disfacéve des coûtches"
+
+#~ msgid "Add a new slide"
+#~ msgstr "Radjouter ene novele diya"
+
+#, fuzzy
+#~| msgid "Add a new slide"
+#~ msgid "Add a new page"
+#~ msgstr "Radjouter ene novele diya"
+
+#~ msgid "Page %1"
+#~ msgstr "Pådje %1"
+
+#, fuzzy
+#~| msgid "Paste Slide"
+#~| msgid_plural "Paste Slides"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] "Aclaper dia"
+#~ msgstr[1] "Aclaper dias"
+
+#, fuzzy
+#~| msgid "Paste Page"
+#~| msgid_plural "Paste Pages"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] "Aclaper pådje"
+#~ msgstr[1] "Aclaper pådjes"
+
+#~ msgid "Tools"
+#~ msgstr "Usteyes"
+
+#~ msgid "D&elete"
+#~ msgstr "Disfac&er"
+
+#~ msgid "Show Master Pages"
+#~ msgstr "Mostrer mwaissès pådjes"
+
+#~ msgid "Show Rulers"
+#~ msgstr "Mostrer rîles"
+
+#~ msgid "Show/hide the view's rulers"
+#~ msgstr "Mostrer/catchî les rîles del vûwe"
+
+#~ msgid "Insert Page"
+#~ msgstr "Sititchî pådje"
+
+#~ msgid "Insert a new page after the current one"
+#~ msgstr "Sititchî ene novele pådje après l' cisse do moumint"
+
+#~ msgid "Copy Page"
+#~ msgstr "Copyî pådje"
+
+#~ msgid "Copy the current page"
+#~ msgstr "Copyî l' pådje do moumint"
+
+#~ msgid "Delete Page"
+#~ msgstr "Disfacer pådje"
+
+#~ msgid "Delete the current page"
+#~ msgstr "Disfacer l' pådje do moumint"
+
+#~ msgid "Master Page..."
+#~ msgstr "Mwaisse pådje..."
+
+#~ msgid "Page Layout..."
+#~ msgstr "Arindjmint del Pådje..."
+
+#~ msgid "Variable"
+#~ msgstr "Variåve"
+
+#~ msgid "Import Document..."
+#~ msgstr "Abaguer documint..."
+
+#~ msgid "Configure..."
+#~ msgstr "Apontyî..."
+
+#~ msgid "Import Slideshow"
+#~ msgstr "Abaguer diaporama"
+
+#~ msgid "Import Document"
+#~ msgstr "Abaguer on documint"
+
+#~ msgid ""
+#~ "Could not import\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Dji n' a savou abaguer\n"
+#~ "%1"
+
+#, fuzzy
+#~| msgid "Change page layout"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr "Candjî adjinçmint del pådje"
+
+#, fuzzy
+#~| msgid "Set background image ..."
+#~ msgid "Set image ..."
+#~ msgstr "Defini l' imådje do fond ..."
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Background"
+#~ msgstr "Defini coleur di fond"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Page Background"
+#~ msgstr "Defini coleur di fond"
+
+#, fuzzy
+#~| msgid "Page edge:"
+#~ msgid "Page Design"
+#~ msgstr "Boird del pådje:"
+
+#, fuzzy
+#~| msgid "Slide %1"
+#~ msgid "Slide Design"
+#~ msgstr "Diya %1"
+
+#, fuzzy
+#~| msgid "Change background image"
+#~ msgid "Use background of master page"
+#~ msgstr "Candjî imådje di fond"
+
+#, fuzzy
+#~| msgid "Set background image ..."
+#~ msgid "Use background of master slide"
+#~ msgstr "Defini l' imådje do fond ..."
+
+#, fuzzy
+#~| msgid "Display shapes of master"
+#~ msgid "Display shapes of master page"
+#~ msgstr "Håyner les fômes do mwaisse"
+
+#, fuzzy
+#~| msgid "Display shapes of master"
+#~ msgid "Display shapes of master slide"
+#~ msgstr "Håyner les fômes do mwaisse"
+
+#, fuzzy
+#~| msgid "Change background image"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change slide background image"
+#~ msgstr "Candjî imådje di fond"
+
+#, fuzzy
+#~| msgid "Change background image"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page background image"
+#~ msgstr "Candjî imådje di fond"
+
+#, fuzzy
+#~| msgid "Master Slide"
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "Mwaisse dia"
+
+#, fuzzy
+#~| msgid "Slide %1"
+#~ msgid "Slide %1/%2"
+#~ msgstr "Diya %1"
+
+#, fuzzy
+#~| msgid "Master Page"
+#~ msgid "Master Page %1/%2"
+#~ msgstr "Mwaisse pådje"
+
+#, fuzzy
+#~| msgid "Page %1"
+#~ msgid "Page %1/%2"
+#~ msgstr "Pådje %1"
+
+#, fuzzy
+#~| msgid "Check"
+#~ msgid "Check Box"
+#~ msgstr "Clitchaedje"
+
+#~ msgid "Field"
+#~ msgstr "Tchamp"
+
+#~ msgid "Label"
+#~ msgstr "Etikete"
+
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1 : %2"
+
+#~ msgid "Section Editor"
+#~ msgstr "Aspougneu del seccion"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "Famile del fonte"
+
+#, fuzzy
+#~| msgid "Change Filetype"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "Candjî sôre di fitchî"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "Disfacer"
+
+#~ msgid "Key Press"
+#~ msgstr "Tchôcaedje di tape"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "Tecse"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "Disfacer tecse"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "Disfacer"
+
+#, fuzzy
+#~| msgid "Insert point"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "Sititchî on pont"
+
+#, fuzzy
+#~| msgid "Insert Index"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr "Sititchî indecse"
+
+#, fuzzy
+#~| msgid "Insert Column"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Right"
+#~ msgstr "Sititchî colone"
+
+#, fuzzy
+#~| msgid "Insert Column"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr "Sititchî colone"
+
+#, fuzzy
+#~| msgid "Insert Row"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Below"
+#~ msgstr "Sititchî roye"
+
+#, fuzzy
+#~| msgid "Insert Row"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "Sititchî roye"
+
+#, fuzzy
+#~| msgid "Change master page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List Numbering"
+#~ msgstr "Candjî mwaisse pådje"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "Cogne"
+
+#, fuzzy
+#~| msgid "Set Paragraph Style"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Direct Paragraph Formatting"
+#~ msgstr "Defini stîle del hagnon"
+
+#, fuzzy
+#~| msgid "Create Shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr "Ahiver des cognes"
+
+#, fuzzy
+#~| msgid "Insert Column"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr "Sititchî colone"
+
+#, fuzzy
+#~| msgid "Copy offset:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "Displaeçmint do copiaedje :"
+
+#, fuzzy
+#~| msgid "Paste"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "Aclaper"
+
+#~ msgid "Index Reference"
+#~ msgstr "Referince di l' indecse"
+
+#~ msgid "Text Reference"
+#~ msgstr "Referince di tecse"
+
+#~ msgid "Please create an index to reference first."
+#~ msgstr "Ahivez èn indecse a referincer aprume, s' i vs plait."
+
+#~ msgid "Select the index you want to reference"
+#~ msgstr "Tchoezixhoz l' indecse ki vs voloz referincer"
+
+#~ msgid "Found 1 match"
+#~ msgid_plural "Found %1 matches"
+#~ msgstr[0] "Dj' a trové 1 sacwè ki corespond"
+#~ msgstr[1] "Dj' a trové %1 sacwès ki corespondèt"
+
+#~ msgid "Found no match"
+#~ msgstr "Dji n' a rén trové ki corespond"
+
+#~ msgid ""
+#~ "Found no match\n"
+#~ "\n"
+#~ "No text was replaced"
+#~ msgstr ""
+#~ "Dji n' a rén trové ki corespond\n"
+#~ "\n"
+#~ "Dji n' a replaecî nou tecse"
+
+#~ msgid "1 replacement made"
+#~ msgid_plural "%1 replacements made"
+#~ msgstr[0] "1 replaeçmint di fwait"
+#~ msgstr[1] "%1 replaeçmints di fwaits"
+
+#~ msgid "Replace %1 with %2?"
+#~ msgstr "Replaecî %1 avou %2 ?"
+
+#, fuzzy
+#~| msgid "Group Sections"
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "Seccions do groupe"
+
+#~ msgctxt "Underline Style"
+#~ msgid "None"
+#~ msgstr "Nouk"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "Simpe"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "Dobe"
+
+#, fuzzy
+#~| msgid "Set Paragraph Style"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "New Paragraph"
+#~ msgstr "Defini stîle del hagnon"
+
+#, fuzzy
+#~| msgid "Add Bookmark"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "Radjouter ene rimåke"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "Eplaeçmint"
+
+#, fuzzy
+#~| msgid "Insert Index"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "Sititchî indecse"
+
+#, fuzzy
+#~| msgid "Insert Variable"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "Sititchî variåve"
+
+#, fuzzy
+#~| msgid "Key Press"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Key Press"
+#~ msgstr "Tchôcaedje di tape"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "Sititchî djocaedje"
+
+#, fuzzy
+#~| msgid "Insert Table"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "Sititchî tåvlea"
+
+#, fuzzy
+#~| msgid "Merge points"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "Rimaxhî des ponts"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "&Astampé"
+
+#, fuzzy
+#~| msgid "Fit Page Width"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr "Forrimpli l' lårdjeur del pådje"
+
+#, fuzzy
+#~| msgid "Change Text Format"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Border Formatting"
+#~ msgstr "Candjî l' cogne do tecse"
+
+#, fuzzy
+#~| msgid "Insert Table"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Sititchî tåvlea"
+
+#, fuzzy
+#~| msgid "Insert Table"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr "Sititchî tåvlea"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Sititchî djocaedje"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "Eplaeçmint"
+
+#, fuzzy
+#~| msgid "Bold"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr "Cråssès letes"
+
+#, fuzzy
+#~| msgid "Italic"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "Clintcheyès letes"
+
+#, fuzzy
+#~| msgid "Underline"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "Sorlignî"
+
+#, fuzzy
+#~| msgid "Strike Out"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr "Båré"
+
+#, fuzzy
+#~| msgid "Change Segment"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr "Candjî segmint"
+
+#, fuzzy
+#~| msgid "Set Vertical Alignment"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr "Defini l' aroymint d' astampé"
+
+#, fuzzy
+#~| msgid "Decrease Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "Ritrait pus ptit"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "Ritrait pus grand"
+
+#, fuzzy
+#~| msgid "Decrease font size"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "Raptiti l' fonte"
+
+#, fuzzy
+#~| msgid "Increase font size"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "Ragrandi l' fonte"
+
+#, fuzzy
+#~| msgid "Set Font"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr "Defini fonte"
+
+#, fuzzy
+#~| msgid "Set Font Size"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr "Defini grandeu del fonte"
+
+#, fuzzy
+#~| msgid "Set Background Color"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr "Defini coleur di fond"
+
+#, fuzzy
+#~| msgid "Set Text Color"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Text Color"
+#~ msgstr "Tchoezi coleur do tecse"
+
+#, fuzzy
+#~| msgid "Set Character Style"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr "Defini stîle do caractere"
+
+#, fuzzy
+#~| msgid "Set Paragraph Style"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Paragraph Style"
+#~ msgstr "Defini stîle del hagnon"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "Cogne"
+
+#~ msgid "Default"
+#~ msgstr "Prémetou"
+
+#, fuzzy
+#~| msgid "Undo"
+#~ msgctxt "Default text for undo action"
+#~ msgid "Undo"
+#~ msgstr "Disfé: %1"
+
+#, fuzzy
+#~| msgid "&Undo: %1"
+#~ msgid "Undo %1"
+#~ msgstr "&Disfé: %1"
+
+#, fuzzy
+#~| msgid "Redo"
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "Rodje"
+
+#, fuzzy
+#~| msgid "Redo: %1"
+#~ msgid "Redo %1"
+#~ msgstr "Rifé: %1"
+
+#, fuzzy
+#~| msgid "Empty"
+#~ msgid "<empty>"
+#~ msgstr "Vude"
+
+#~ msgid "Redo"
+#~ msgstr "Rodje"
+
+#~ msgid "Undo"
+#~ msgstr "Disfé: %1"
+
+#~ msgid "&File"
+#~ msgstr "&Fitchî"
+
+#~ msgid "&Settings"
+#~ msgstr "A&pontiaedjes"
+
+#~ msgid "File"
+#~ msgstr "Fitchî"
+
+#, fuzzy
+#~| msgid "Delete the current page"
+#~ msgid "Delete the author profile"
+#~ msgstr "Disfacer l' pådje do moumint"
+
+#, fuzzy
+#~ msgid "Default Author Profile"
+#~ msgstr "Prémetowe coleur"
+
+#, fuzzy
+#~| msgid "name of the output file"
+#~ msgid "Name of Profile"
+#~ msgstr "no do fitchî d' rexhowe"
+
+#~ msgid "Name:"
+#~ msgstr "No:"
+
+#~ msgid "Initials:"
+#~ msgstr "Iniciåles:"
+
+#~ msgid "Title:"
+#~ msgstr "Tite:"
+
+#~ msgid "Position:"
+#~ msgstr "Pôzucion:"
+
+#~ msgid "Company:"
+#~ msgstr "Eterprijhe:"
+
+#~ msgid "Email:"
+#~ msgstr "Emile:"
+
+#~ msgid "Telephone (home):"
+#~ msgstr "Telefone (måjhon):"
+
+#~ msgid "Telephone (work):"
+#~ msgstr "Telefone (buro):"
+
+#~ msgid "Fax:"
+#~ msgstr "Facs:"
+
+#~ msgid "Street:"
+#~ msgstr "Rowe:"
+
+#~ msgid "Postal code:"
+#~ msgstr "Côde al Posse:"
+
+#~ msgid "City:"
+#~ msgstr "Veye:"
+
+#~ msgid "Country:"
+#~ msgstr "Payis:"
+
+#, fuzzy
+#~| msgid "No auto save"
+#~ msgid "No autosave"
+#~ msgstr "Nou schapaedje otomatike"
+
+#, fuzzy
+#~| msgid "Auto save (min):"
+#~ msgid "Autosave interval:"
+#~ msgstr "Schapaedje otomatike (mun):"
+
+#, fuzzy
+#~| msgid "Create backup file"
+#~ msgid "Create backup file:"
+#~ msgstr "Ahiver copeye di såvrité"
+
+#~ msgid "Show grid:"
+#~ msgstr "Mostrer grile:"
+
+#~ msgid "Snap to grid:"
+#~ msgstr "Claper sol grile:"
+
+#~ msgid "Grid color:"
+#~ msgstr "Coleur del grile:"
+
+#~ msgid "Spacing"
+#~ msgstr "Espåçmint"
+
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "&Coûtchî:"
+
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "&Astampé:"
+
+#~ msgid "Units:"
+#~ msgstr "Unités :"
+
+#~ msgid "Handle radius:"
+#~ msgstr "Reyon del pougneye :"
+
+#~ msgid "Grab sensitivity:"
+#~ msgstr "Sinsiûlisté di l' apougnaedje :"
+
+#, fuzzy
+#~| msgid "Copy offset:"
+#~ msgid "Paste offset:"
+#~ msgstr "Displaeçmint do copiaedje :"
+
+#~ msgid "Only print and exit"
+#~ msgstr "Seulmint rexhe eyet moussî foû"
+
+#~ msgid "Open a new document with a template"
+#~ msgstr "Drovi on novea documint avou on modele"
+
+#~ msgid "Override display DPI"
+#~ msgstr "Sipotchî l' DPI d' håynaedje"
+
+#~ msgid "Only export to PDF and exit"
+#~ msgstr "Seulmint ebaguer e PDF eyet moussî foû"
+
+#~ msgid "Filename for export-pdf"
+#~ msgstr "No do fitchî po l' ebagaedje pdf"
+
+#~ msgid "just load the file and then exit"
+#~ msgstr "tcherdjî djusse li fitchî ey adon moussî foû"
+
+#~ msgid "load the file, show the window and progressbar and then exit"
+#~ msgstr ""
+#~ "tcherdjî l' fitchî, mostrer l' finiesse eyet l' båre d' avançmint ey adon "
+#~ "moussî foû"
+
+#~ msgid "Filename to write profiling information into."
+#~ msgstr "No do fitchî k' on scrirè l' informåcion d' profilaedje divins."
+
+#~ msgid "Load a file and save it as an ODF file. Meant for debugging."
+#~ msgstr ""
+#~ "Tcherdjî on fitchî eyet l' schaper come on fitchî ODF. Fwait pol "
+#~ "disbugaedje. "
+
+#, fuzzy
+#~| msgid "Creation error"
+#~ msgid "%1: Critical Error"
+#~ msgstr "Aroke d' askepiaedje"
+
+#~ msgid "No template found for: %1"
+#~ msgstr "Dji n' a trové nou modele po : %1"
+
+#~ msgid "Too many templates found for: %1"
+#~ msgstr "Dj' a trové trop d' modeles po : %1"
+
+#~ msgid "Template %1 failed to load."
+#~ msgstr "Dji n' a savou tcherdjî l' modele %1."
+
+#~ msgid "Always use this template at application start up"
+#~ msgstr "Tofer si siervi di c' modele ci a l' enondaedje do programe"
+
+#~ msgid "Always use this template"
+#~ msgstr "Tofer si siervi di c' modele ci"
+
+#~ msgid "Making backup..."
+#~ msgstr "Fijhant ene copeye di såvrité..."
+
+#~ msgid "Saving..."
+#~ msgstr "Schapant.."
+
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Dji n' sai schaper\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Dji n' a savou schaper %1\n"
+#~ "Vochal li råjhon: %2"
+
+#~ msgid "Document <i>%1</i> saved"
+#~ msgstr "Documint <i>%1</i> schapé"
+
+#~ msgid ""
+#~ "The password of this encrypted document is not known. Autosave aborted! "
+#~ "Please save your work manually."
+#~ msgstr ""
+#~ "Li scret di c' documint ecripté n' est nén cnoxhou. Schapaedje otomatike "
+#~ "abandné ! Schapez vost ovraedje al mwin, s' i vs plait."
+
+#~ msgid "Autosaving..."
+#~ msgstr "Schapaedje otomatike..."
+
+#~ msgid "Error during autosave! Partition full?"
+#~ msgstr ""
+#~ "Åk n' a nén stî tot rlomant dji schapéve otomaticmint ! Li pårticion est "
+#~ "ele rimpleye ?"
+
+#~ msgid "Could not create the file for saving"
+#~ msgstr "Dji n' a savou ahiver l' fitchî pol schapaedje"
+
+#~ msgid "Not able to write '%1'. Partition full?"
+#~ msgstr "Dji n' sai scrire « %1 ». Li pårticion est ele rimpleye ?"
+
+#~ msgid "Not able to write RDF metadata. Partition full?"
+#~ msgstr ""
+#~ "Dji n' sai scrire les meta-dnêyes RDF. Li pårticion est ele rimpleye ?"
+
+#~ msgid "Error while trying to write '%1'. Partition full?"
+#~ msgstr ""
+#~ "Åk n' a nén stî come dji sayive di scrire « %1 ». Li pårticion est ele "
+#~ "rimpleye ?"
+
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "URL må basti\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "An autosaved file exists for this document.\n"
+#~ "Do you want to open it instead?"
+#~ msgstr ""
+#~ "On fitchî ki dj' a schapé tot seu egzistêye po ci documint ci\n"
+#~ "Voloz vs ki djel drove ?"
+
+#~ msgid "The file %1 does not exist."
+#~ msgstr "Li fitchî %1 n' egzistêye nén."
+
+#, fuzzy
+#~| msgid "Open Document"
+#~ msgid "Opening Document"
+#~ msgstr "Drovi on documint"
+
+#, fuzzy
+#~| msgid "Could not create the file for saving"
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "Dji n' a savou ahiver l' fitchî pol schapaedje"
+
+#~ msgid "File not found"
+#~ msgstr "Fitchî nén trové"
+
+#~ msgid "Cannot create storage"
+#~ msgstr "Dji n' sai ahiver l' sitocaedje"
+
+#~ msgid "Bad MIME type"
+#~ msgstr "Mwaijhe sôre MIME"
+
+#~ msgid "Format not recognized"
+#~ msgstr "Cogne nén rconoxhowe"
+
+#~ msgid "Not implemented"
+#~ msgstr "Dji n' sai nén fé ça"
+
+#~ msgid "Parsing error"
+#~ msgstr "Aroke d' analijhe del sintake"
+
+#~ msgid "Document is password protected"
+#~ msgstr "Li documint est waeranti pas on scret"
+
+#, fuzzy
+#~| msgid "Locale format"
+#~ msgid "Invalid file format"
+#~ msgstr "Cogne locåle"
+
+#~ msgid "Internal error"
+#~ msgstr "Divintrinne aroke"
+
+#~ msgid "Out of memory"
+#~ msgstr "Pupont d' memwere"
+
+#, fuzzy
+#~ msgid "Failed to download remote file"
+#~ msgstr "Dji n' a savou drovi li fitchî %1"
+
+#~ msgid "Unknown error"
+#~ msgstr "Aroke nén cnoxhowe"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open\n"
+#~| "%2.\n"
+#~| "Reason: %1"
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr ""
+#~ "Dji n' a savou drovi\n"
+#~ "\n"
+#~ "%2\n"
+#~ "Vochal li råjhon : %1"
+
+#~ msgid "Document <i>%1</i> loaded"
+#~ msgstr "Documint <i>%1</i> tcherdjî"
+
+#~ msgid "Could not find %1"
+#~ msgstr "Dji n' a savou trover %1"
+
+#~ msgid ""
+#~ "Parsing error in %1 at line %2, column %3\n"
+#~ "Error message: %4"
+#~ msgstr ""
+#~ "Aroke d' analijhe del sintake dins %1 al roye %2, colone %3\n"
+#~ "Messaedje d' aroke: %4"
+
+#~ msgid "%1 is not a file."
+#~ msgstr "%1 n' est nén on fitchî."
+
+#~ msgid "Could not open the file for reading (check read permissions)."
+#~ msgstr ""
+#~ "Dji n' a savou drovi l' fitchî pol lére (waitîz les droets d' léjhadje)."
+
+#~ msgid "Could not read the beginning of the file."
+#~ msgstr "Dji n' a savou lére li cmince do fitchî."
+
+#~ msgid ""
+#~ "parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "aroke d' analijhe del sintake e mwaisse documint al roye %1, colone %2\n"
+#~ "Messaedje d' aroke: %3"
+
+#, fuzzy
+#~| msgid "Not a valid KOffice file: %1"
+#~ msgid "Not a valid Calligra file: %1"
+#~ msgstr "Fitchî KOffice nén valåbe : %1"
+
+#~ msgid "Invalid document: no file 'maindoc.xml'."
+#~ msgstr "Documint nén valåbe : pont d' fitchî « maindoc.xml »."
+
+#~ msgid ""
+#~ "Document <i>%1</i> contains several versions. Go to File->Versions to "
+#~ "open an old version."
+#~ msgstr ""
+#~ "I gn a sacwantès modêyes dins l' documint <i>%1</i>. Potchîz dins Fitchî-"
+#~ ">Modêyes po drovi ene viye modêye."
+
+#~ msgid "Untitled"
+#~ msgstr "Sins no"
+
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr ""
+#~ "<p>Li documint <b>«%1»</b> a stî candjî.</p><p>El voloz schaper?</p>"
+
+#~ msgid "Internal error: saveXML not implemented"
+#~ msgstr "Divintrinne aroke: saveXML nén co epleminté"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Dji n' a savou drovi\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Dji n' a savou drovi li fitchî %1\n"
+#~ "Vochal li råjhon: %2"
+
+#~ msgid "a word processing"
+#~ msgstr "on scrijhaedje di tecse"
+
+#~ msgid "a spreadsheet"
+#~ msgstr "on tåvlea"
+
+#~ msgid "a presentation"
+#~ msgstr "on prezintaedje"
+
+#~ msgid "a chart"
+#~ msgstr "on grafike"
+
+#~ msgid "a drawing"
+#~ msgstr "on dessin"
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~| "it?</p>"
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr ""
+#~ "<p>Li documint <b>«%1»</b> a stî candjî.</p><p>El voloz schaper?</p>"
+
+#, fuzzy
+#~| msgid "Custom Document"
+#~ msgid "Close Document"
+#~ msgstr "Documint a vosse môde"
+
+#~ msgid "%1 %"
+#~ msgstr "%1 %"
+
+#~ msgid "No"
+#~ msgstr "Neni"
+
+#~ msgid "Yes"
+#~ msgstr "Oyi"
+
+#~ msgid "Could not export file."
+#~ msgstr "Dji n' a savou ebaguer l' fitchî."
+
+#~ msgid "Missing Export Filter"
+#~ msgstr "Passete d' ebagaedje mancante"
+
+#~ msgid ""
+#~ "Could not import file of type\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Dji n' a savou abaguer on fitchî del sôre\n"
+#~ "%1"
+
+#~ msgid "Missing Import Filter"
+#~ msgstr "Passete d' abagaedje mancante"
+
+#~ msgid "Choose Filter"
+#~ msgstr "Tchoezi passete"
+
+#, fuzzy
+#~| msgid "&Find:"
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "&Trover:"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "Tecse"
+
+#, fuzzy
+#~| msgid "Previous Page"
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "Pådje di dvant"
+
+#, fuzzy
+#~| msgid "%1 Options"
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "Tchuzes di %1"
+
+#, fuzzy
+#~| msgid "&Replace:"
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "&Replaecî:"
+
+#, fuzzy
+#~| msgid "Replace"
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "Replaecî"
+
+#, fuzzy
+#~| msgid "Replace"
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "Replaecî"
+
+#, fuzzy
+#~| msgid "No template found for: %1"
+#~ msgctxt "Total number of matches"
+#~ msgid "1 match found"
+#~ msgid_plural "%1 matches found"
+#~ msgstr[0] "Dji n' a trové nou modele po : %1"
+#~ msgstr[1] "Dji n' a trové nou modele po : %1"
+
+#, fuzzy
+#~| msgid "No template found for: %1"
+#~ msgid "No matches found"
+#~ msgstr "Dji n' a trové nou modele po : %1"
+
+#~ msgid "%1 unsaved document (%2)"
+#~ msgstr "%1 documint nén schapé (%2)"
+
+#~ msgid "Export as PDF..."
+#~ msgstr "Ebaguer come PDF..."
+
+#~ msgid "Reload"
+#~ msgstr "Ritcherdjî"
+
+#~ msgid "Versions..."
+#~ msgstr "Modêyes..."
+
+#, fuzzy
+#~ msgid "Open ex&isting Document as Untitled Document..."
+#~ msgstr "Drovi on documint k' &egzistêye dedja"
+
+#~ msgid "E&xport..."
+#~ msgstr "&Ebaguer..."
+
+#, fuzzy
+#~| msgid "&Create Document"
+#~ msgid "En&crypt Document"
+#~ msgstr "A&hiver on documint"
+
+#~ msgid "&New View"
+#~ msgstr "&Novele vuwe"
+
+#~ msgid "Document Information"
+#~ msgstr "Informåcion sol Documint"
+
+#~ msgid "Full Screen Mode"
+#~ msgstr "Môde tote li waitroûle"
+
+#~ msgid "Show Dockers"
+#~ msgstr "Mostrer paneas d' usteyes"
+
+#, fuzzy
+#~| msgid "Show Dockers"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "Mostrer paneas d' usteyes"
+
+#~ msgid "Dockers"
+#~ msgstr "Paneas d' usteyes"
+
+#~ msgid "(write protected)"
+#~ msgstr "(waeranti sconte li scrijhaedje)"
+
+#~ msgid "Save as %1"
+#~ msgstr "Schaper eyet rlomer come %1"
+
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "%1 (sôre di fitchî nén cnoxhowe)"
+
+#~ msgid ""
+#~ "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
+#~ "want to save in this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Schaper eyet rlomer come %1 vos pôreut fé piede di l' epådjnaedje."
+#~ "<p>Voloz co schaper dins cisse cogne la ?<qt>"
+
+#~ msgid "Confirm Save"
+#~ msgstr "Racertiner schapaedje"
+
+#~ msgid ""
+#~ "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you "
+#~ "still want to export to this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Ebaguer come %1 vos pôreut fé piede di l' epådjnaedje.<p>Voloz co "
+#~ "ebaguer dins cisse cogne la ?<qt>"
+
+#~ msgid "Confirm Export"
+#~ msgstr "Racertiner ebagaedje"
+
+#, fuzzy
+#~| msgid "Untitled"
+#~ msgid "untitled"
+#~ msgstr "Sins no"
+
+#~ msgid "Open Document"
+#~ msgstr "Drovi on documint"
+
+#, fuzzy
+#~| msgid "Export as PDF..."
+#~ msgid "Export as PDF"
+#~ msgstr "Ebaguer come PDF..."
+
+#~ msgid "Document - %1"
+#~ msgstr "Documint - %1"
+
+#~ msgid ""
+#~ "You will lose all changes made since your last save\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "Vos aloz piede tos les candjmints fwaits dispoy vosse dierin schapaedje\n"
+#~ "Voloz tcheryî pus lon ?"
+
+#~ msgid "Warning"
+#~ msgstr "Adviertixhmint"
+
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "Håyner bår ås usteyes %1"
+
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "Catchî båre ås usteyes %1"
+
+#, fuzzy
+#~| msgid "Open &Existing Document"
+#~ msgid "Open Existing Document"
+#~ msgstr "Drovi on documint k' &egzistêye dedja"
+
+#~ msgid "Recent Documents"
+#~ msgstr "Documints d' enawaire"
+
+#~ msgid "Custom Document"
+#~ msgstr "Documint a vosse môde"
+
+#~ msgid "Stop"
+#~ msgstr "Hôw"
+
+#, fuzzy
+#~| msgid "Printing done"
+#~ msgid "Printing"
+#~ msgstr "Imprimaedje fwait"
+
+#~ msgid "Printing done"
+#~ msgstr "Imprimaedje fwait"
+
+#~ msgid "Close"
+#~ msgstr "Clôre"
+
+#~ msgid "Stopped"
+#~ msgstr "Aresté"
+
+#~ msgid "Open This Document"
+#~ msgstr "Drovi c' documint"
+
+#~ msgctxt "File modification date and time. %1 is date time"
+#~ msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Candjî:</b></td><td>%1</td></tr>"
+
+#~ msgctxt "File access date and time. %1 is date time"
+#~ msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Eployî:</b></td><td>%1</td></tr>"
+
+#~ msgid "Show Guides"
+#~ msgstr "Mostrer moennaedjes"
+
+#~ msgid "Shows or hides guides"
+#~ msgstr "Moster oudonbén catche les moennaedjes"
+
+#~ msgid "Create Template"
+#~ msgstr "Ahiver on modele"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "No:"
+
+#~ msgid "Group:"
+#~ msgstr "Hopea:"
+
+#~ msgid "&Add Group..."
+#~ msgstr "&Radjouter on hopea..."
+
+#~ msgid "&Remove"
+#~ msgstr "&Oister"
+
+#~ msgid "Picture"
+#~ msgstr "Imådje"
+
+#, fuzzy
+#~| msgid "Preview:"
+#~ msgid "&Preview"
+#~ msgstr "Prévoeyaedje:"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Custom:"
+#~ msgstr "A vosse môde"
+
+#~ msgid "&Select..."
+#~ msgstr "&Tchoezi..."
+
+#~ msgid "Use the new template as default"
+#~ msgstr "Si siervi do novea modele come prémetou"
+
+#~ msgid "Use the new template every time %1 starts"
+#~ msgstr "Si siervi do novea modele a tchaeke côp k' %1 enonde"
+
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr "Voloz po do bon spotchî li modele '%1' k' egzistêye dedja?"
+
+#~ msgid "Add Group"
+#~ msgstr "Radjouter on hopea"
+
+#~ msgid "Enter group name:"
+#~ msgstr "Tapez li no do hopea:"
+
+#~ msgid "This name is already used."
+#~ msgstr "Ci no la est ddja eployî."
+
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "Voloz vs po do bon oister ci hopea la?"
+
+#~ msgid "Remove Group"
+#~ msgstr "Oister hopea"
+
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "Voloz vs po do bon oister ci modele la?"
+
+#~ msgid "Remove Template"
+#~ msgstr "Oister li modele"
+
+#~ msgid "&Delete"
+#~ msgstr "&Disfacer"
+
+#~ msgid "Could not load picture."
+#~ msgstr "Dji n' a savou tcherdjî l' imådje"
+
+#~ msgid "No picture available."
+#~ msgstr "Dji n' a nole imådje por vos"
+
+#~ msgid "Use This Template"
+#~ msgstr "Si siervi di c' modele ci"
+
+#~ msgid "Version"
+#~ msgstr "Modêye"
+
+#~ msgid "Date & Time"
+#~ msgstr "Date et eure"
+
+#~ msgid "Saved By"
+#~ msgstr "Schapé pa"
+
+#~ msgid "Comment"
+#~ msgstr "Rawete"
+
+#~ msgid "&Add"
+#~ msgstr "R&adjouter"
+
+#~ msgid "&Modify"
+#~ msgstr "&Candjî"
+
+#~ msgid "&Open"
+#~ msgstr "Dr&ovi"
+
+#~ msgid "A new version could not be added"
+#~ msgstr "Dji n' a savou radjouter ene novele modêye"
+
+#~ msgid "Date: %1"
+#~ msgstr "Date: %1"
+
+#, fuzzy
+#~| msgid "Active tool: %1"
+#~ msgid "Active Author Profile"
+#~ msgstr "Usteye en alaedje : %1"
+
+#~ msgid "Unknown"
+#~ msgstr "Nén cnoxhou"
+
+#~ msgid ""
+#~ "This document contains an unknown checksum. When you give a password it "
+#~ "might not be verified."
+#~ msgstr ""
+#~ "I gn a dins c' documint ci ene checksum nén cnoxhowe. Cwand vs denroz on "
+#~ "scret, i pôrè esse verifyî."
+
+#~ msgid ""
+#~ "This document contains an unknown encryption method. Some parts may be "
+#~ "unreadable."
+#~ msgstr ""
+#~ "I gn a dins c' documint ci ene metôde d' ecriptaedje nén cnoxhowe. Des "
+#~ "bokets pôrént esse nén léjhåve."
+
+#~ msgid ""
+#~ "This document contains incomplete encryption data. Some parts may be "
+#~ "unreadable."
+#~ msgstr ""
+#~ "I gn a dins c' documint ci des dnêyes d' ecriptaedje nén completes. Des "
+#~ "bokets pôrént esse nén léjhåve."
+
+#~ msgid ""
+#~ "QCA has currently no support for SHA1 or PBKDF2 using SHA1. The document "
+#~ "can not be opened."
+#~ msgstr ""
+#~ "Ig n a pol moumint pont d' sopoirt dins QCA po SHA1 ou PBKDF2 s' siervant "
+#~ "d' SHA1. Dji n' sai drovi l' documint."
+
+#~ msgid ""
+#~ "The manifest file seems to be corrupted. It cannot be modified and the "
+#~ "document will remain unreadable. Please try and save the document again "
+#~ "to prevent losing your work."
+#~ msgstr ""
+#~ "Li fitchî afitcha shonne esse cron. Dji n' sai l' candjî eyet l' documint "
+#~ "dmorrè nén léjhåve. Sayîz s' i vs plait co on côp d' schaper l' documint "
+#~ "po n' nén piede vost ovraedje."
+
+#~ msgid ""
+#~ "The manifest file cannot be written. The document will remain unreadable. "
+#~ "Please try and save the document again to prevent losing your work."
+#~ msgstr ""
+#~ "Dji n' sai scrire sol fitchî afitcha. Li documint dmorrè nén léjhåve. "
+#~ "Sayîz s' i vs plait co on côp d' schaper l' documint po n' nén piede vost "
+#~ "ovraedje."
+
+#~ msgid "Please enter the password to open this file."
+#~ msgstr "Dinez l' sicret po drovi c' fitchî, s' i vs plait."
+
+#~ msgid "Please enter the password to encrypt the document with."
+#~ msgstr "Dinez l' sicret pos ecripter l' fitchî."
+
+#~ msgid "Do you want to save the password?"
+#~ msgstr "Voloz vs schaper l' sicret ?"
+
+#~ msgid "No store backend"
+#~ msgstr "Nou programe fondmint di stocaedje"
+
+#~ msgid ""
+#~ "Parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Aroke d' analijhe del sintake e mwaisse documint al roye %1, colone %2\n"
+#~ "Messaedje d' aroke: %3"
+
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "Waitroûle"
+
+#~ msgid "The directory mode is not supported for remote locations."
+#~ msgstr "Li môde do ridant n' est nén sopoirté po des eplaeçmints å lon."
+
+#~ msgid "Clear"
+#~ msgstr "Netyî"
+
+#~ msgid "Subtract"
+#~ msgstr "Sostraire"
+
+#~ msgid "Multiply"
+#~ msgstr "Mopliyî"
+
+#~ msgid "Alpha mask"
+#~ msgstr "Masse alfa"
+
+#~ msgid "Alpha"
+#~ msgstr "Alfa"
+
+#~ msgid "Undefined operation in the alpha color space"
+#~ msgstr "Operåcion nén defineye dins l' espåce di coleurs alfa"
+
+#~ msgid "L*a*b* (16-bit integer/channel, unmanaged)"
+#~ msgstr "L*a*b* (16-bit etir/canå, nén manaedjî)"
+
+#~ msgid "Lightness"
+#~ msgstr "Ledjiristé"
+
+#~ msgid "a*"
+#~ msgstr "a*"
+
+#~ msgid "b*"
+#~ msgstr "b*"
+
+#~ msgid "RGB (16-bit integer/channel, unmanaged)"
+#~ msgstr "RVB (16-bit etir/canå, nén manaedjî)"
+
+#~ msgid "RGB (8-bit integer/channel, unmanaged)"
+#~ msgstr "RVB (8-bit etir/canå, nén manaedjî)"
+
+#~ msgid "Blue"
+#~ msgstr "Bleu"
+
+#~ msgid "Green"
+#~ msgstr "Vert"
+
+#~ msgid "Red"
+#~ msgstr "Rodje"
+
+#~ msgid "Undefined operation in the %1 space"
+#~ msgstr "Operåcion nén defineye dins l' espåce %1"
+
+#~ msgid "Undefined operation in the %1 color space"
+#~ msgstr "Operåcion nén defineye dins l' espåce di coleurs %1"
+
+#~ msgid "Simple Color Conversion Engine"
+#~ msgstr "Simpe éndjin d' coviertixhaedje di coleur"
+
+#~ msgid "Alpha darken"
+#~ msgstr "Alfa noeri"
+
+#, fuzzy
+#~| msgid "Disassociate"
+#~ msgid "Dissolve"
+#~ msgstr "Disassoçner"
+
+#~ msgid "Erase"
+#~ msgstr "Disfacer"
+
+#~ msgid "Normal"
+#~ msgstr "Normå"
+
+#~ msgid "Overlay"
+#~ msgstr "Ricovri"
+
+#, fuzzy
+#~| msgid "Hard light"
+#~ msgid "Hard Mix"
+#~ msgstr "Foite loumire"
+
+#, fuzzy
+#~| msgid "Variable"
+#~ msgid "Parallel"
+#~ msgstr "Variåve"
+
+#, fuzzy
+#~| msgid "Color Chooser"
+#~ msgid "Color Dodge"
+#~ msgstr "Tchoezixheu di coleur"
+
+#, fuzzy
+#~| msgid "Line Border"
+#~ msgid "Linear Dodge"
+#~ msgstr "Boirdeure del roye"
+
+#~ msgid "Lighten"
+#~ msgstr "Raclairi"
+
+#, fuzzy
+#~| msgid "Hard light"
+#~ msgid "Hard Light"
+#~ msgstr "Foite loumire"
+
+#, fuzzy
+#~| msgid "Soft light"
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "Doûce loumire"
+
+#, fuzzy
+#~| msgid "Soft light"
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "Doûce loumire"
+
+#, fuzzy
+#~| msgid "Light"
+#~ msgid "Gamma Light"
+#~ msgstr "Clair"
+
+#, fuzzy
+#~| msgid "Light"
+#~ msgid "Vivid Light"
+#~ msgstr "Clair"
+
+#, fuzzy
+#~| msgid "Light"
+#~ msgid "Pin Light"
+#~ msgstr "Clair"
+
+#, fuzzy
+#~| msgid "Line Weight"
+#~ msgid "Linear Light"
+#~ msgstr "Pwès del roye"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color Burn"
+#~ msgstr "Coleur"
+
+#, fuzzy
+#~| msgid "Line Break"
+#~ msgid "Linear Burn"
+#~ msgstr "Djocaedje di roye"
+
+#~ msgid "Darken"
+#~ msgstr "Noeri"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgid "Addition"
+#~ msgstr "Eplaeçmint"
+
+#, fuzzy
+#~| msgid "Inversed Subtract"
+#~ msgid "Inversed-Subtract"
+#~ msgstr "Sostraire å rvier"
+
+#~ msgid "Divide"
+#~ msgstr "Pårti"
+
+#, fuzzy
+#~| msgid "Reference"
+#~ msgid "Difference"
+#~ msgstr "Referince"
+
+#, fuzzy
+#~ msgid "Additive-Subtractive"
+#~ msgstr "Rascourti"
+
+#, fuzzy
+#~| msgid "Copy Page"
+#~ msgid "Copy Red"
+#~ msgstr "Copyî pådje"
+
+#, fuzzy
+#~| msgid "Green"
+#~ msgid "Copy Green"
+#~ msgstr "Vert"
+
+#, fuzzy
+#~| msgid "Copy Page"
+#~ msgid "Copy Blue"
+#~ msgstr "Copyî pådje"
+
+#~ msgid "Color"
+#~ msgstr "Coleur"
+
+#~ msgid "Hue"
+#~ msgstr "Tinte"
+
+#~ msgid "Saturation"
+#~ msgstr "Saturaedje"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation"
+#~ msgstr "Saturaedje"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation"
+#~ msgstr "Saturaedje"
+
+#, fuzzy
+#~| msgid "Increase font size"
+#~ msgid "Increase Luminosity"
+#~ msgstr "Ragrandi l' fonte"
+
+#, fuzzy
+#~| msgid "Decrease font size"
+#~ msgid "Decrease Luminosity"
+#~ msgstr "Raptiti l' fonte"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgid "Darker Color"
+#~ msgstr "Coleur do fond"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgid "Lighter Color"
+#~ msgstr "Coleur del roye"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color HSI"
+#~ msgstr "Coleur"
+
+#, fuzzy
+#~| msgid "Hue"
+#~ msgid "Hue HSI"
+#~ msgstr "Tinte"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Saturation HSI"
+#~ msgstr "Saturaedje"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation HSI"
+#~ msgstr "Saturaedje"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation HSI"
+#~ msgstr "Saturaedje"
+
+#, fuzzy
+#~| msgid "Internet"
+#~ msgid "Intensity"
+#~ msgstr "Daegntoele"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgid "Increase Intensity"
+#~ msgstr "Ritrait pus grand"
+
+#, fuzzy
+#~| msgid "Decrease Indent"
+#~ msgid "Decrease Intensity"
+#~ msgstr "Ritrait pus ptit"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color HSL"
+#~ msgstr "Coleur"
+
+#, fuzzy
+#~| msgid "Hue"
+#~ msgid "Hue HSL"
+#~ msgstr "Tinte"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Saturation HSL"
+#~ msgstr "Saturaedje"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation HSL"
+#~ msgstr "Saturaedje"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation HSL"
+#~ msgstr "Saturaedje"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgid "Increase Lightness"
+#~ msgstr "Ritrait pus grand"
+
+#, fuzzy
+#~| msgid "Decrease Indent"
+#~ msgid "Decrease Lightness"
+#~ msgstr "Ritrait pus ptit"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color HSV"
+#~ msgstr "Coleur"
+
+#, fuzzy
+#~| msgid "Hue"
+#~ msgid "Hue HSV"
+#~ msgstr "Tinte"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Saturation HSV"
+#~ msgstr "Saturaedje"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation HSV"
+#~ msgstr "Saturaedje"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation HSV"
+#~ msgstr "Saturaedje"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgid "Increase Value"
+#~ msgstr "Ritrait pus grand"
+
+#, fuzzy
+#~| msgid "Decrease Indent"
+#~ msgid "Decrease Value"
+#~ msgstr "Ritrait pus ptit"
+
+#~ msgid "Generic RGB Histogram"
+#~ msgstr "Istograme RVB djenerike"
+
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "G"
+#~ msgstr "V"
+
+#~ msgid "L*a*b* Histogram"
+#~ msgstr "Istograme L*a*b*"
+
+#~ msgid "L*"
+#~ msgstr "L*"
+
+#~ msgid "Generic L*a*b* Histogram"
+#~ msgstr "Istograme L*a*b* djenerike"
+
+#~ msgid "XYZ"
+#~ msgstr "XYZ"
+
+#~ msgid "Grayscale"
+#~ msgstr "Gris"
+
+#~ msgid "Grayscale (without transparency)"
+#~ msgstr "Gris (sins trinsparince)"
+
+#~ msgid "YCbCr"
+#~ msgstr "YCbCr"
+
+#~ msgid "8 Bits"
+#~ msgstr "8 Bites"
+
+#~ msgid "16 Bits"
+#~ msgstr "16 Bites"
+
+#~ msgid "16 Bits Float"
+#~ msgstr "16 bites flotant"
+
+#~ msgid "32 Bits Float"
+#~ msgstr "32 bites flotant"
+
+#, fuzzy
+#~| msgid "16 Bits Float"
+#~ msgid "64 Bits Float"
+#~ msgstr "16 bites flotant"
+
+#~ msgid "Arithmetic"
+#~ msgstr "Aritmetike"
+
+#~ msgid "Mix"
+#~ msgstr "Maxhaedje"
+
+#, fuzzy
+#~| msgid "Inversed Subtract"
+#~ msgid "Inverse Subtract"
+#~ msgstr "Sostraire å rvier"
+
+#~ msgid "Burn"
+#~ msgstr "Broûler"
+
+#, fuzzy
+#~ msgid "Additive Subtractive"
+#~ msgstr "Rascourti"
+
+#, fuzzy
+#~| msgid "Alpha darken"
+#~ msgid "Alpha Darken"
+#~ msgstr "Alfa noeri"
+
+#~ msgid "Bumpmap"
+#~ msgstr "Bumpmap"
+
+#~ msgid "SVG Gradient"
+#~ msgstr "Gradyint SVG"
+
+#~ msgid "Select the object you want to reference"
+#~ msgstr "Tchoezixhoz l' objet ki vs voloz referincer"
+
+#~ msgid "Reference"
+#~ msgstr "Referince"
+
+#~ msgid "Set For All Existing"
+#~ msgstr "Defini po tos les ci egzistants"
+
+#~ msgctxt "statement is an Rdf related term"
+#~ msgid "<qt>Edits will be lost.<p>There is %1 invalid statement left.</qt>"
+#~ msgid_plural ""
+#~ "<qt>Edits will be lost.<p>There are %1 invalid statements left.</qt>"
+#~ msgstr[0] ""
+#~ "<qt>Les candjmints sront pierdous.<p>I dmeure %1 instruccion nén valåbe.</"
+#~ "qt>"
+#~ msgstr[1] ""
+#~ "<qt>Les candjmints sront pierdous.<p>I dmeure %1 instruccions nén valåbes."
+#~ "</qt>"
+
+#~ msgctxt "statement is an Rdf related term"
+#~ msgid "Discard invalid statements?"
+#~ msgstr "Abandner ls instruccions nén valåbes ?"
+
+#~ msgid "Rdf"
+#~ msgstr "Rdf"
+
+#~ msgid "Triples"
+#~ msgstr "Tripes"
+
+#~ msgid "new"
+#~ msgstr "novea"
+
+#~ msgid "copy"
+#~ msgstr "copyî"
+
+#~ msgid "delete"
+#~ msgstr "disfacer"
+
+#~ msgid "Namespaces"
+#~ msgstr "Espåces des nos"
+
+#~ msgid "Prefix"
+#~ msgstr "Betchete "
+
+#~ msgid "Namespace"
+#~ msgstr "Espåce di no"
+
+#~ msgid "Semantic"
+#~ msgstr "Semantike"
+
+#~ msgid "SPARQL"
+#~ msgstr "SPARQL"
+
+#, fuzzy
+#~| msgid ""
+#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
+#~| "TR/REC-html40/strict.dtd\">\n"
+#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~| "css\">\n"
+#~| "p, li { white-space: pre-wrap; }\n"
+#~| "</style></head><body style=\" font-family:'Verdana'; font-size:13pt; "
+#~| "font-weight:400; font-style:normal;\">\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"># Insert your SPARQL "
+#~| "query here<br /># Results are shown below.</p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~| "\"></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">prefix rdf:  &lt;"
+#~| "http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; </p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">prefix foaf: &lt;"
+#~| "http://xmlns.com/foaf/0.1/&gt; </p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">prefix pkg:  &lt;"
+#~| "http://docs.oasis-open.org/opendocument/meta/package/common#&gt; </p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">prefix geo84: &lt;"
+#~| "http://www.w3.org/2003/01/geo/wgs84_pos#&gt;</p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~| "\"></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">select ?s ?p ?o </p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">where { </p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"> ?s ?p ?o </p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">}</p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~| "\"></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~| "\"></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~| "\"></p></body></html>"
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"># Insert your SPARQL query here<br /"
+#~ "># Results are shown below.</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix rdf:  &lt;http://www.w3."
+#~ "org/1999/02/22-rdf-syntax-ns#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix foaf: &lt;http://xmlns.com/"
+#~ "foaf/0.1/&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix pkg:  &lt;http://docs.oasis-"
+#~ "open.org/ns/office/1.2/meta/pkg#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix geo84: &lt;http://www.w3."
+#~ "org/2003/01/geo/wgs84_pos#&gt;</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">select ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">where { </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"> ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">}</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Verdana'; font-size:13pt; font-"
+#~ "weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"># Sititchî vos "
+#~ "ricweraedje SPARQL cial<br /># Les rzultats sont mostrés cial pa dzo.</"
+#~ "p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">betchete rdf:  &lt;"
+#~ "http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; </p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">betchete foaf: &lt;"
+#~ "http://xmlns.com/foaf/0.1/&gt; </p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">betchete pkg:  &lt;"
+#~ "http://docs.oasis-open.org/opendocument/meta/package/common#&gt; </p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">betchete geo84: &lt;"
+#~ "http://www.w3.org/2003/01/geo/wgs84_pos#&gt;</p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">tchoezi ?s ?p ?o </p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">wice { </p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"> ?s ?p ?o </p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">}</p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p></body></html>"
+
+#~ msgid "Stylesheets"
+#~ msgstr "Foyes di stîle"
+
+#~ msgid ""
+#~ "Set the default stylesheet for Semantic objects in this document. New RDF "
+#~ "objects will use this stylesheet automatically. The buttons allow you to "
+#~ "set the stylesheet for all existing semantic objects to the new default "
+#~ "stylesheet as well."
+#~ msgstr ""
+#~ "Definixhoz l' foye di stîle prémetowe po ls objets semantikes e c' "
+#~ "documint ci. Les noveas objets RDF eployront otomaticmint cisse foye di "
+#~ "stîle. Les botons vs permetèt d' defini l' foye di stîle po tos les "
+#~ "objets semantikes ossu come li novele foye di stîle."
+
+#~ msgid "Apply Stylesheet"
+#~ msgstr "Mete en ouve foye di stîle"
+
+#~ msgid "System"
+#~ msgstr "Sistinme"
+
+#~ msgid "User"
+#~ msgstr "Uzeu"
+
+#~ msgid "Reapply Current"
+#~ msgstr "Rimete èn ouve li ci do moumint"
+
+#~ msgid "Disassociate"
+#~ msgstr "Disassoçner"
+
+#~ msgid "Edit %1"
+#~ msgstr "Candjî %1"
+
+#~ msgid "Stylesheet Definition"
+#~ msgstr "Definixha del foye di stîle"
+
+#~ msgid "Variables Available"
+#~ msgstr "Variåves k' i gn a"
+
+#~ msgid "Description"
+#~ msgstr "Discrijhaedje"
+
+#~ msgid "Stylesheet Name"
+#~ msgstr "No del foye di stîle"
+
+#~ msgid "Empty"
+#~ msgstr "Vude"
+
+#~ msgid "URI"
+#~ msgstr "URI"
+
+#~ msgid "Literal"
+#~ msgstr "Literå"
+
+#~ msgid "Blank"
+#~ msgstr "Vude"
+
+#~ msgid "Valid"
+#~ msgstr "Valåbe"
+
+#~ msgid "Subject"
+#~ msgstr "Sudjet"
+
+#~ msgid "Predicate"
+#~ msgstr "Prédicat"
+
+#~ msgid "Obj Type"
+#~ msgstr "Sôre d' obj."
+
+#~ msgid "DataType"
+#~ msgstr "Sôre di dnêyes"
+
+#~ msgid "Stored In"
+#~ msgstr "Wårdé divins"
+
+#, fuzzy
+#~ msgid "Invalid identifier"
+#~ msgstr "Ritrait"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "Nole"
+
+#, fuzzy
+#~| msgid "Add Square Bracket"
+#~ msgid "Square Bullet"
+#~ msgstr "Radjouter cwårêye åtchete"
+
+#, fuzzy
+#~| msgid "Right to left"
+#~ msgid "Rightwards Arrow Bullet"
+#~ msgstr "Di droete a hintche"
+
+#, fuzzy
+#~| msgid "Area"
+#~ msgid "Arabic"
+#~ msgstr "Zone"
+
+#, fuzzy
+#~| msgid "Family:"
+#~ msgid "Tamil"
+#~ msgstr "Famile:"
+
+#, fuzzy
+#~| msgid "Tie"
+#~ msgid "Tibetan"
+#~ msgstr "Loyaedje"
+
+#, fuzzy
+#~ msgid "Thai"
+#~ msgstr "Blanc"
+
+#~ msgid "Opacity"
+#~ msgstr "Zeroveyaedje"
+
+#~ msgid "Recent:"
+#~ msgstr "Eployîs dierinnmint:"
+
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "Radjouter / oister des coleurs..."
+
+#~ msgid "Import Data"
+#~ msgstr "Abaguer des dnêyes"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Recommended ( %1 )"
+#~ msgstr "Ricmandé ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Locale ( %1 )"
+#~ msgstr "Locåle ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Other ( %1 )"
+#~ msgstr "Ôte ( %1 )"
+
+#~ msgid "Generic"
+#~ msgstr "Djenerike"
+
+#~ msgid "Currency"
+#~ msgstr "Manoye"
+
+#~ msgid "None"
+#~ msgstr "Nole"
+
+#~ msgid ""
+#~ "Please check the ranges you specified. The start value must be lower than "
+#~ "the end value."
+#~ msgstr ""
+#~ "Waitîz s' i vs plait les fortchetes ki vs avoz specifyî. Li valixhance di "
+#~ "cmince doet esse pus ptite kele cisse di dfén."
+
+#~ msgid "Cannot find encoding: %1"
+#~ msgstr "Dji n' sai trover l' ecôdaedje: %1"
+
+#~ msgid "Data"
+#~ msgstr "Dinêyes"
+
+#~ msgid "E&ncoding:"
+#~ msgstr "E&côdaedje:"
+
+#~ msgid "First row contains headers"
+#~ msgstr "Les tiestires sont dins l' prumire roye"
+
+#~ msgid "First column contains headers"
+#~ msgstr "Les tiestires sont dins l' prumire colone"
+
+#~ msgid "Format"
+#~ msgstr "Cogne"
+
+#~ msgid "Delimiter"
+#~ msgstr "Pårtixhant"
+
+#~ msgid "Semicolon"
+#~ msgstr "Dimey colone"
+
+#~ msgid "Other"
+#~ msgstr "Ôte"
+
+#~ msgid "Tabulator"
+#~ msgstr "Tabulåcion"
+
+#~ msgid "Space"
+#~ msgstr "Espåce"
+
+#~ msgid "Text&quote:"
+#~ msgstr "D&ireye di tecse:"
+
+#~ msgid "\""
+#~ msgstr "«"
+
+#~ msgid "'"
+#~ msgstr "‘"
+
+#~ msgid "Decimal symbol:"
+#~ msgstr "Pont decimå:"
+
+#~ msgid "Thousands separator:"
+#~ msgstr "Separateu po les meye:"
+
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "Passer houte les pårtixhant e dobe"
+
+#~ msgid "&Format:"
+#~ msgstr "Co&gne:"
+
+#~ msgid "Ranges"
+#~ msgstr "Fortchetes"
+
+#~ msgid "Update"
+#~ msgstr "Mete a djoû"
+
+#~ msgid "Import columns:"
+#~ msgstr "Abaguer des colones:"
+
+#~ msgid "Import lines:"
+#~ msgstr "Abaguer des royes:"
+
+#~ msgid "to"
+#~ msgstr "viè"
+
+#, fuzzy
+#~| msgid "Show Dockers"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Float Docker"
+#~ msgstr "Mostrer paneas d' usteyes"
+
+#, fuzzy
+#~| msgid "Custom Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "Documint a vosse môde"
+
+#, fuzzy
+#~| msgid "Custom Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "Documint a vosse môde"
+
+#, fuzzy
+#~| msgid "Show Dockers"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Lock Docker"
+#~ msgstr "Mostrer paneas d' usteyes"
+
+#~ msgid "&Encrypt"
+#~ msgstr "&Ecripter"
+
+#~ msgid "Keywords:"
+#~ msgstr "Mots clés:"
+
+#~ msgid "Subject:"
+#~ msgstr "Sudjet:"
+
+#~ msgid "Last printed:"
+#~ msgstr "Dierin imprimaedje:"
+
+#~ msgid "Total editing time:"
+#~ msgstr "Tins d' aspougnaedje totå:"
+
+#~ msgid "Encryption:"
+#~ msgstr "Ecriptaedje:"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "Tite:"
+
+#~ msgid "Revision number:"
+#~ msgstr "Limero d' rivizion:"
+
+#~ msgid "Modified:"
+#~ msgstr "Candjî :"
+
+#~ msgid "Comments:"
+#~ msgstr "Rawetes:"
+
+#~ msgid "Created:"
+#~ msgstr "Ahivé:"
+
+#~ msgid "Path:"
+#~ msgstr "Tchimin:"
+
+#~ msgid "&Reset"
+#~ msgstr "&Rimete come divant"
+
+#, fuzzy
+#~ msgid "Language:"
+#~ msgstr "Lingaedje:"
+
+#~ msgid "General"
+#~ msgstr "Djenerå"
+
+#, fuzzy
+#~| msgid "Last Page"
+#~ msgid "Last saved by"
+#~ msgstr "Dierinne pådje"
+
+#, fuzzy
+#~| msgid "Use ';' (Example: Office;KDE;KOffice)"
+#~ msgid "Use ';' (Example: Office;KDE;Calligra)"
+#~ msgstr "Si siervi d'  « ; » (Metans : Office;KDE;KOffice)"
+
+#~ msgid "This document will be decrypted"
+#~ msgstr "Ci documint va esse discripté"
+
+#~ msgid "Do not decrypt"
+#~ msgstr "Èn nén discripter"
+
+#~ msgid "This document is encrypted"
+#~ msgstr "Ci documint est ecripté"
+
+#~ msgid "D&ecrypt"
+#~ msgstr "D&iscripter"
+
+#~ msgid "This document will be encrypted."
+#~ msgstr "Ci documint va esse ecripté."
+
+#~ msgid "Do not encrypt"
+#~ msgstr "Èn nén ecripter"
+
+#~ msgid "This document is not encrypted"
+#~ msgstr "Ci documint n' est nén ecripté"
+
+#~ msgid "This document does not support encryption"
+#~ msgstr "Ci documint n' sopoite nén l' ecriptaedje"
+
+#~ msgid ""
+#~ "<qt>Decrypting the document will remove the password protection from it."
+#~ "<p>Do you still want to decrypt the file?</qt>"
+#~ msgstr ""
+#~ "<qt>Discripter l' documint lyi oistêyrè l' waerantixhaedje do scret. "
+#~ "<p>Voloz vs co discripter l' fitchî ?</qt>"
+
+#~ msgid "Confirm Decrypt"
+#~ msgstr "Acertiner l' discriptaedje"
+
+#~ msgid "Decrypt"
+#~ msgstr "Discripter"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "decryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>Dji n' a savou schaper otomaticmint vosse documint.<p>Po fini l' "
+#~ "discriptaedje, schapez l' documint, s' i vs plait.</qt>"
+
+#~ msgid "Save Document"
+#~ msgstr "Schaper documint"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "decryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt>Li documint a stî candjî dispoy k' il  a stî drovou. Po fini l' "
+#~ "discriptaedje i fåt schaper l' documint.<p>Voloz vs schaper l' documint "
+#~ "sol côp ?<qt>"
+
+#~ msgid ""
+#~ "<qt>The document is currently saved as %1. The document needs to be "
+#~ "changed to <b>OASIS OpenDocument</b> to be encrypted.<p>Do you want to "
+#~ "change the file to OASIS OpenDocument?</qt>"
+#~ msgstr ""
+#~ "<qt>Li documint est schapé pol moumint come %1. I fåt candjî l' documint "
+#~ "e <b>OASIS OpenDocument</p> po l' ecripter.<p>Voloz vs candjî l' fitchî e "
+#~ "OASIS OpenDocument ?<qt>"
+
+#~ msgid "Change Filetype"
+#~ msgstr "Candjî sôre di fitchî"
+
+#~ msgid "Change"
+#~ msgstr "Candjî"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "encryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>Dji n' a savou schaper vosse documint otomaticmint.<p>Po fini l' "
+#~ "ecriptaedje, schapez l' documint s' i vs plait.</qt>"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "encryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt>Li documint a stî candjî dispoy k' il  a stî drovou. Po fini l' "
+#~ "ecriptaedje i fåt schaper l' documint.<p>Voloz vs schaper l' documint sol "
+#~ "côp ?<qt>"
+
+#~ msgid "Remove"
+#~ msgstr "Oister"
+
+#~ msgid "Open palette"
+#~ msgstr "Drovi palete"
+
+#~ msgid "Save palette"
+#~ msgstr "Schaper palete"
+
+#~ msgid "Add Color To Palette"
+#~ msgstr "Radjouter coleur al palete"
+
+#~ msgid "Color name:"
+#~ msgstr "No del coleur:"
+
+#, fuzzy
+#~| msgid "Add Color To Palette"
+#~ msgid "Gimp Color Palette (*.gpl)"
+#~ msgstr "Radjouter coleur al palete"
+
+#~ msgid "Cannot write to palette file %1. Maybe it is read-only. "
+#~ msgstr ""
+#~ "Dji n' sai scrire e fitchî di palete %1. C' est motoit e môde lére-"
+#~ "seulmint."
+
+#~ msgid "Palette"
+#~ msgstr "Palete"
+
+#~ msgid "Add/Remove Colors"
+#~ msgstr "Radjouter/oister coleurs"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Testing: OpenFile"
+#~ msgstr "Drovi palete"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Testing: OpenDirectory"
+#~ msgstr "No do ridant"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFile"
+#~ msgstr "Passete d' abagaedje mancante"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "Passete d' abagaedje mancante"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: Import Directory"
+#~ msgstr "Abaguer on documint"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Testing: SaveFile"
+#~ msgstr "Schaper palete"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Open File"
+#~ msgstr "Drovi palete"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Open Files"
+#~ msgstr "Drovi palete"
+
+#, fuzzy
+#~ msgid "Filter:"
+#~ msgstr "Après (%1):"
+
+#, fuzzy
+#~| msgid "Label"
+#~ msgid "TextLabel"
+#~ msgstr "Etikete"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Named"
+#~ msgstr "No:"
+
+#, fuzzy
+#~| msgid "Set default format"
+#~ msgid "Set default filter"
+#~ msgstr "Defini prémetowe cogne"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Save File"
+#~ msgstr "Schaper palete"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Import Files"
+#~ msgstr "Abaguer des royes:"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Import File"
+#~ msgstr "Abaguer des royes:"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Open Directory"
+#~ msgstr "No do ridant"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Directory"
+#~ msgstr "Abaguer on documint"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "Nole"
+
+#, fuzzy
+#~| msgid "SVG Gradient"
+#~ msgid "Gradient"
+#~ msgstr "Gradyint SVG"
+
+#, fuzzy
+#~| msgid "Change master slide"
+#~ msgid "Change the filling gradient"
+#~ msgstr "Candjî mwaisse pådje"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Icon and Text"
+#~ msgstr "Tecse"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgid "Bottom side"
+#~ msgstr "Valêye"
+
+#, fuzzy
+#~| msgid "Left indent"
+#~ msgid "Left side"
+#~ msgstr "Ritrait di hintche"
+
+#, fuzzy
+#~| msgid "Right indent"
+#~ msgid "Right side"
+#~ msgstr "Ritrait di droete"
+
+#~ msgid "Page Layout"
+#~ msgstr "Adjinçmint del pådje"
+
+#~ msgid "Apply to document"
+#~ msgstr "Mete en ouve pol documint"
+
+#~ msgid "Left Edge:"
+#~ msgstr "Boird di hintche:"
+
+#~ msgid "Right Edge:"
+#~ msgstr "Boird di droete:"
+
+#~ msgid "Binding Edge:"
+#~ msgstr "Boird di l' assoçnaedje:"
+
+#~ msgid "Page Edge:"
+#~ msgstr "Boird del pådje"
+
+#~ msgid "Facing Pages:"
+#~ msgstr "Pådjes pa deus:"
+
+#~ msgid "Facing pages"
+#~ msgstr "Pådjes pa deus:"
+
+#~ msgid "Page Layout:"
+#~ msgstr "Adjinçmint del pådje:"
+
+#~ msgid "Page spread"
+#~ msgstr "Dispårdaedje del pådje"
+
+#~ msgid "Unit:"
+#~ msgstr "Unité:"
+
+#~ msgid "Follow style:"
+#~ msgstr "Shure sitîle :"
+
+#~ msgid "Size:"
+#~ msgstr "Grandeu:"
+
+#~ msgid "Width:"
+#~ msgstr "Lårdjeur:"
+
+#~ msgid "Height:"
+#~ msgstr "Hôteur:"
+
+#~ msgid "Orientation:"
+#~ msgstr "Ashidaedje:"
+
+#~ msgid "Facing pages:"
+#~ msgstr "Pådjes pa deus:"
+
+#~ msgid "Single sided"
+#~ msgstr "Ene seule pådje"
+
+#~ msgid "Text direction:"
+#~ msgstr "Direccion do scrijhaedje"
+
+#~ msgid "Automatic"
+#~ msgstr "Otomatike"
+
+#~ msgid "Left to right"
+#~ msgstr "Di hintche a droete"
+
+#~ msgid "Right to left"
+#~ msgstr "Di droete a hintche"
+
+#~ msgid "Margins"
+#~ msgstr "Mådjes"
+
+#~ msgid "Top:"
+#~ msgstr "Copete:"
+
+#~ msgid "Binding edge:"
+#~ msgstr "Boird di l' assoçnaedje:"
+
+#~ msgid "Page edge:"
+#~ msgstr "Boird del pådje:"
+
+#~ msgid "Bottom:"
+#~ msgstr "Valêye:"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "Abaguer on documint"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Delete resource"
+#~ msgstr "Disfacer"
+
+#, fuzzy
+#~| msgid "Download"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "Aberweter"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "Disfacer"
+
+#, fuzzy
+#~| msgid "Choose File to Add"
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "Tchoezi fitchî a radjouter"
+
+#, fuzzy
+#~| msgid "New Layer"
+#~ msgid "New tag"
+#~ msgstr "Novele coûtche"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgid "Assign to tag"
+#~ msgstr "Aroymint otomatike"
+
+#, fuzzy
+#~| msgid "Remove point"
+#~ msgid "Remove from this tag"
+#~ msgstr "Oister on pont"
+
+#, fuzzy
+#~| msgid "Remove Comment"
+#~ msgid "Remove from other tag"
+#~ msgstr "Oister rawete"
+
+#, fuzzy
+#~| msgid "Merge points"
+#~ msgid "Miter join"
+#~ msgstr "Rimaxhî des ponts"
+
+#, fuzzy
+#~| msgid "Remove point"
+#~ msgid "Bevel join"
+#~ msgstr "Oister on pont"
+
+#, fuzzy
+#~| msgid "Merge points"
+#~ msgid "Miter limit"
+#~ msgstr "Rimaxhî des ponts"
+
+#, fuzzy
+#~ msgid "Tag"
+#~ msgstr "Cian"
+
+#, fuzzy
+#~| msgid "Home Page"
+#~ msgid "Rename tag"
+#~ msgstr "Pådje måjhon"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Delete this tag"
+#~ msgstr "Disfacer pådje"
+
+#, fuzzy
+#~| msgid "delete"
+#~ msgid "Undelete"
+#~ msgstr "disfacer"
+
+#~ msgid "Tool Options"
+#~ msgstr "Tchuzes des usteyes"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "deselect item"
+#~ msgstr "Tchoezi on caractere"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "select item"
+#~ msgstr "Tchoezi on caractere"
+
+#~ msgid "Use same aspect as pixels"
+#~ msgstr "Eployî l' minme parexhance come picsels"
+
+#~ msgid "Zoom to Selection"
+#~ msgstr "Zoumer sol tchoes"
+
+#~ msgid "Zoom to All"
+#~ msgstr "Zoumer so ttafwait"
+
+#, fuzzy
+#~| msgid "%1%"
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1%"
+
+#, fuzzy
+#~| msgid "Key Press"
+#~ msgid "All Presets"
+#~ msgstr "Tchôcaedje di tape"
+
+#, fuzzy
+#~| msgid "Static Image"
+#~ msgctxt "Static Image"
+#~ msgid "Static"
+#~ msgstr "Imådje sitatêye"
+
+#~ msgid "Value (brightness)"
+#~ msgstr "Valixhance (rilujhance)"
+
+#~ msgid "Cyan"
+#~ msgstr "Cian"
+
+#~ msgid "Magenta"
+#~ msgstr "Madjénta"
+
+#~ msgid "Yellow"
+#~ msgstr "Djaene"
+
+#~ msgid "Black"
+#~ msgstr "Noer"
+
+#~ msgid "Green to magenta*"
+#~ msgstr "Vert viè Madjénta*"
+
+#~ msgid "Blue to yellow"
+#~ msgstr "Bleu viè djaene"
+
+#~ msgid "Opacity:"
+#~ msgstr "Zeroveyaedje (opacité):"
+
+#, fuzzy
+#~| msgid "Default"
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "Prémetou"
+
+#, fuzzy
+#~| msgid "Configure..."
+#~ msgid "Configuration..."
+#~ msgstr "Apontyî..."
+
+#, fuzzy
+#~| msgid "Tools"
+#~ msgid "&Tools"
+#~ msgstr "Usteyes"
+
+#~ msgid ""
+#~ "The manifest file seems to be corrupted. The document could not be opened."
+#~ msgstr ""
+#~ "Li fitchî afitcha shonne esse cron. Dji n' a savou drovi l' documint."
+
+#~ msgid "Color Selector"
+#~ msgstr "Tchoezixheu di coleur"
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Database file \"%1\" does not exist."
+#~ msgstr "Li fitchî %1 n' egzistêye nén."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist in the database."
+#~ msgstr "Li fitchî %1 n' egzistêye nén."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not compact database \"%1\"."
+#~ msgstr "Dji n' a savou lére li pacaedje « %1 »."
+
+#, fuzzy
+#~| msgid "Do you want to save the password?"
+#~ msgid "Do you want to open file \"%1\" as read-only?"
+#~ msgstr "Voloz vs schaper l' sicret ?"
+
+#, fuzzy
+#~| msgid "Could not read the beginning of the file."
+#~ msgid "Could not gain exclusive access for writing the file."
+#~ msgstr "Dji n' a savou lére li cmince do fitchî."
+
+#, fuzzy
+#~| msgid "Could not load picture."
+#~ msgid "Could not close busy database."
+#~ msgstr "Dji n' a savou tcherdjî l' imådje"
+
+#, fuzzy
+#~| msgid "Could not export file."
+#~ msgid "Could not remove file \"%1\"."
+#~ msgstr "Dji n' a savou ebaguer l' fitchî."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist"
+#~ msgstr "Li fitchî %1 n' egzistêye nén."
+
+#~ msgid "Track Total"
+#~ msgstr "Totå do boket"
+
+#~ msgid "Track Builtin Format"
+#~ msgstr "Cogne di dvins l' boket"
+
+#~ msgid "Use Sub Total"
+#~ msgstr "Eployî l' totå efant"
+
+#~ msgid "Track Total Format"
+#~ msgstr "Cogne totåle do boket"
+
+#~ msgid "Grid Snap"
+#~ msgstr "Assaetchî al grile"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Formatting"
+#~ msgstr "Cogne"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Testing: OpenDirectories"
+#~ msgstr "No do ridant"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: ImportDirectories"
+#~ msgstr "Abaguer on documint"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Testing: SaveFiles"
+#~ msgstr "Schaper palete"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Open Directories"
+#~ msgstr "No do ridant"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Directories"
+#~ msgstr "Abaguer on documint"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Save Files"
+#~ msgstr "Schaper palete"
+
+#~ msgid "Create Path"
+#~ msgstr "Ahiver on tchmin"
+
+#~ msgid "Red Green Blue"
+#~ msgstr "Rodje Vert Bleu"
+
+#~ msgid "L a* b*"
+#~ msgstr "L a* b*"
+
+#~ msgid "Cyan Magenta Yellow Black"
+#~ msgstr "Cian Madjénta Djaene Noer"
+
+#~ msgid "Error!"
+#~ msgstr "Aroke!"
+
+#~ msgid "Contacts"
+#~ msgstr "Soçons"
+
+#~ msgid "Events"
+#~ msgstr "Evenmints"
+
+#~ msgid "Locations"
+#~ msgstr "Eplaeçmints"
+
+#~ msgid "Area"
+#~ msgstr "Zone"
+
+#~ msgid "Region"
+#~ msgstr "Redjon"
+
+#~ msgid ""
+#~ "Could not add entry\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Dji n' a savou radjouter l' intrêye\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not save iCal file\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Dji n' a savou schaper l' fitchî iCal\n"
+#~ "%1"
+
+#, fuzzy
+#~| msgid "Summary"
+#~ msgid "&Summary:"
+#~ msgstr "Racourti"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgid "&Location:"
+#~ msgstr "Plaece"
+
+#, fuzzy
+#~| msgid "Start"
+#~ msgid "&Start:"
+#~ msgstr "Cominçmint"
+
+#~ msgid "Time and Date"
+#~ msgstr "Eure et date"
+
+#~ msgid "Timezone"
+#~ msgstr "Coisse ås eures"
+
+#~ msgid "Calendar Event"
+#~ msgstr "Evenmint do calindrî"
+
+#~ msgid "Import event to Calendar"
+#~ msgstr "Abaguer evenmint e calindrî"
+
+#~ msgid "Export event to iCal file..."
+#~ msgstr "Ebaguer evenmint e fitchî iCal..."
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "&Name:"
+#~ msgstr "No:"
+
+#, fuzzy
+#~| msgid "Nick"
+#~ msgid "&Nick:"
+#~ msgstr "No metou"
+
+#, fuzzy
+#~| msgid "Phone Number"
+#~ msgid "&Phone Number:"
+#~ msgstr "Limero d' telefone"
+
+#, fuzzy
+#~| msgid "Home Page"
+#~ msgid "&Home Page:"
+#~ msgstr "Pådje måjhon"
+
+#~ msgid "Contact Information"
+#~ msgstr "Informåcion sol soçon"
+
+#~ msgid "Import contact"
+#~ msgstr "Abaguer soçon"
+
+#~ msgid "Export as vcard..."
+#~ msgstr "Ebaguer come vcard..."
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "&Name"
+#~ msgstr "No:"
+
+#, fuzzy
+#~| msgid "To Path"
+#~ msgid "The Earth"
+#~ msgstr "Viè l' tchimin"
+
+#~ msgid "Location Information"
+#~ msgstr "Informåcion so l' eplaeçmint"
+
+#~ msgid "People"
+#~ msgstr "Djins"
+
+#~ msgid ""
+#~ "A document with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "I gn a ddja on documint avou ci no la.\n"
+#~ "El voloz spotchî?"
+
+#, fuzzy
+#~| msgid "Unknown KOffice MimeType %1. Check your installation."
+#~ msgid "Unknown Calligra MimeType %1. Check your installation."
+#~ msgstr "Sôre Mime KOffice %1 nén cnoxhowe. Verifyîz vost astalaedje."
+
+#~ msgid "%1 (Uncompressed XML Files)"
+#~ msgstr "%1 (Fitchîs XML nén rastrindous)"
+
+#~ msgid "%1 (Flat XML File)"
+#~ msgstr "%1 (Fitchî XML plat)"
+
+#~ msgid "%1 (Encrypted)"
+#~ msgstr "%1 (Ecripté)"
+
+#~ msgid "%1 (%2 Compatible)"
+#~ msgstr "(%1 (Copatibe avou %2)"
+
+#~ msgid "Save Document As"
+#~ msgstr "Schaper eyet rlomer"
+
+#~ msgid "Export Document As"
+#~ msgstr "Ebaguer documint come"
+
+#, fuzzy
+#~| msgid "Export as PDF..."
+#~ msgid "Export to PDF"
+#~ msgstr "Ebaguer come PDF..."
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Slide Background"
+#~ msgstr "Defini coleur di fond"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Document background"
+#~ msgstr "Defini coleur di fond"
+
+#~ msgid "&OK"
+#~ msgstr "&I va"
+
+#~ msgid "&Cancel"
+#~ msgstr "&Rinoncî"
+
+#~ msgid "Error Encountered"
+#~ msgstr "Åk n' a nén stî"
+
+#~ msgid "Unable to add a new group because its name would not be unique"
+#~ msgstr "Dji n' sai radjouter d' novea groupe pask' i nd onk k' a ddja s' no"
+
+#~ msgid "First Page"
+#~ msgstr "Prumire pådje"
+
+#~ msgid "Even Pages(s)"
+#~ msgstr "Paire/ès pådje(s)"
+
+#~ msgid "Any Pages(s)"
+#~ msgstr "Tolminme kéne(s) pådje(s)"
+
+#~ msgid "&Edit"
+#~ msgstr "&Candjî"
+
+#~ msgid "&Close"
+#~ msgstr "&Clôre"
+
+#~ msgid "Snapping"
+#~ msgstr "Assaetchaedje magnetike"
+
+#~ msgid "Dodge"
+#~ msgstr "Raclairi"
+
+#~ msgid "Hard light"
+#~ msgstr "Foite loumire"
+
+#~ msgid "Soft light"
+#~ msgstr "Doûce loumire"
+
+#~ msgid "Show Shadow"
+#~ msgstr "Mostrer l' ombion"
+
+#, fuzzy
+#~| msgctxt "Underline Style"
+#~| msgid "Single"
+#~ msgid "Angle:"
+#~ msgstr "Simpe"
+
+#, fuzzy
+#~| msgid "Shadow Offset:"
+#~ msgid "Offset:"
+#~ msgstr "Displaeçmint di l' ombion:"
+
+#~ msgid "Color:"
+#~ msgstr "Coleur:"
+
+#, fuzzy
+#~| msgid "Handle radius:"
+#~ msgid "Blur radius:"
+#~ msgstr "Reyon del pougneye :"
+
+#, fuzzy
+#~| msgid "&Style:"
+#~ msgid "Style:"
+#~ msgstr "&Stîle:"
+
+#, fuzzy
+#~| msgid "Insert Bookmark"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bookmark"
+#~ msgstr "Sititchî rimåke"
+
+#~ msgid "Insert Table"
+#~ msgstr "Sititchî tåvlea"
+
+#, fuzzy
+#~| msgid "Insert Row"
+#~ msgid "Insert Row Above"
+#~ msgstr "Sititchî roye"
+
+#, fuzzy
+#~| msgid "Insert Column"
+#~ msgid "Insert Column Left"
+#~ msgstr "Sititchî colone"
+
+#, fuzzy
+#~| msgid "Insert Column"
+#~ msgid "Insert Column Right"
+#~ msgstr "Sititchî colone"
+
+#, fuzzy
+#~ msgid "Delete Column"
+#~ msgstr "Disfacer tecse"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgid "Delete Row"
+#~ msgstr "Disfacer"
+
+#, fuzzy
+#~| msgid "Insert Table"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Sititchî tåvlea"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Sititchî djocaedje"
+
+#~ msgid "min"
+#~ msgstr "mun"
+
+#~ msgid "DetailsPaneBase"
+#~ msgstr "Båze do panea di detays"
+
+#~ msgid "Embedding Object"
+#~ msgstr "Ravalaedje d' objet"
+
+#~ msgid "I&mport..."
+#~ msgstr "&Abaguer..."
+
+#~ msgid "&Default"
+#~ msgstr "&Prémetou"
+
+#~ msgid "Background Tool"
+#~ msgstr "Usteye pol fond"
+
+#~ msgid "Use the styles docker to manipulate the background."
+#~ msgstr "Si siervi do panea des stîles pos apougnî l' fond."
+
+#~ msgid "Background editing tool"
+#~ msgstr "Usteye pos aspougnî l' fond"
+
+#~ msgid "Use master background"
+#~ msgstr "Si siervi do mwaisse fond"
+
+#, fuzzy
+#~| msgid "Separate paths"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Separate paths"
+#~ msgstr "Mete tchimins a pårt"
+
+#~ msgid ""
+#~ "An autosaved file for an unnamed document exists in %1.\n"
+#~ "This file is dated %2\n"
+#~ "Do you want to open it?"
+#~ msgstr ""
+#~ "On fitchî ki dj' a schapé otomaticmint on documint sins no egzistêye e "
+#~ "%1.\n"
+#~ "Li date di ç' fitchî la est %2\n"
+#~ "Voloz vs ki djel drove?"
+
+#~ msgid "&Delete Personal Data"
+#~ msgstr "&Disfacer dinêyes da vosse"
+
+#, fuzzy
+#~| msgid "Delete shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shapes"
+#~ msgstr "Disfacer cognes"
+
+#, fuzzy
+#~| msgid "Subtract"
+#~ msgid "Substract"
+#~ msgstr "Sostraire"
+
+#, fuzzy
+#~| msgid "Inversed Subtract"
+#~ msgid "Inverse Substract"
+#~ msgstr "Sostraire å rvier"
+
+#~ msgid ""
+#~ "No personal contact data set, please use the "
+#~ "option                                     \"Set as Personal Contact Data"
+#~ "\" from the \"Edit\"     menu in KAddressbook to set one."
+#~ msgstr ""
+#~ "Nole dinêye d' atôtchaedje da vosse di defineye, siervoz vs "
+#~ "deltchuze                                     « Defini come dinêyes d' "
+#~ "atôtchaedje da minne »del dressêyes « Candjî »     dins KAddressbook "
+#~ "(calpin d' adresses) pol defini."
+
+#~ msgid "Hide colors with bad contrast"
+#~ msgstr "Catchî coleurs avou on mwais contrasse"
+
+#~ msgid "&Load From Address Book"
+#~ msgstr "&Tcherdjî a pårti do calpin d' adresses"
+
+#~ msgid "Shadow Angle:"
+#~ msgstr "Inglêye di l' ombion"
+
+#~ msgid "Shadow Color:"
+#~ msgstr "Coleur di l' ombion:"
+
+#, fuzzy
+#~| msgid "Set border"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set border"
+#~ msgstr "Defini boirdeure"
+
+#~ msgid "Ellipse Shape"
+#~ msgstr "Cogne e ceke asplati"
+
+#~ msgid "Set Horizontal Alignment"
+#~ msgstr "Defini l' aroymint di coutchî"
+
+#~ msgid "Line Break"
+#~ msgstr "Djocaedje di roye"
+
+#~ msgid "Hide Grid"
+#~ msgstr "Catchî grile"
+
+#~ msgid "Hide Guides"
+#~ msgstr "Catchî moennaedjes"
+
+#~ msgid "&Close All Views"
+#~ msgstr "&Clôre totes les vuwes"
+
+#~ msgid "&Split View"
+#~ msgstr "Di&spårti li vuwe"
+
+#~ msgid "&Remove View"
+#~ msgstr "&Oister cisse vuwe"
+
+#~ msgid "Splitter &Orientation"
+#~ msgstr "A&shidaedje do dispårteu"
+
+#~ msgid "&Horizontal"
+#~ msgstr "&Coûtchî"
+
+#~ msgid "&Vertical"
+#~ msgstr "&Astampé"
+
+#~ msgid "End"
+#~ msgstr "Difén"
+
+#~ msgid "Printing page %1"
+#~ msgstr "Dji rexhe mo pådje %1"
+
+#, fuzzy
+#~ msgid "Form"
+#~ msgstr "Normå"
+
+#~ msgid "Import"
+#~ msgstr "Abaguer"
+
+#~ msgid "Share"
+#~ msgstr "Pårtaedjî"
+
+#, fuzzy
+#~| msgid "Alpha"
+#~ msgid "Copy Opacy"
+#~ msgstr "Alfa"
+
+#, fuzzy
+#~| msgid "Alpha"
+#~ msgid "Copy Alpha"
+#~ msgstr "Alfa"
+
+#~ msgid "Light"
+#~ msgstr "Clair"
+
+#~ msgid "Write PDF"
+#~ msgstr "Sicrire PDF"
+
+#~ msgid "Control Source"
+#~ msgstr "Sourdant do controle"
+
+#~ msgid "Hide Dockers"
+#~ msgstr "Catchî paneas d' usteyes"
+
+#, fuzzy
+#~| msgid "Stop"
+#~ msgid "Atop"
+#~ msgstr "Hôw"
+
+#~ msgid "KOffice"
+#~ msgstr "KOffice"
+
+#~ msgid "KOffice Storage"
+#~ msgstr "Wårdaedje di KOffice"
+
+#~ msgid "CCSGraph"
+#~ msgstr "Grafike CCS"
+
+#~ msgid "Output the graph of color conversion of pigment's Color Conversion"
+#~ msgstr ""
+#~ "Rexhe li grafe di coviertixhaedje di coleur des pigmints da Color "
+#~ "Conversion"
+
+#~ msgid "(c) 2007 Cyrille Berger"
+#~ msgstr "© 2007 Cyrille Berger"
+
+#~ msgid "return the list of available graphs"
+#~ msgstr "ritourner l' djivêye des grafikes k' i gn a"
+
+#~ msgid ""
+#~ "specify the type of graph (see --graphs to get the full list, the default "
+#~ "is full)"
+#~ msgstr ""
+#~ "sipecifyî l' sôre di grafe (voeyoz --graphs pos awè tote li djivêye, "
+#~ "prémetou c' est « full »"
+
+#~ msgid "specify the key of the source color space"
+#~ msgstr "sipecifyî l' clé di l' espåce di coleur sourdant"
+
+#~ msgid "specify the key of the destination color space"
+#~ msgstr "sipecifyî l' clé di l' espåce di coleur såme"
+
+#~ msgid "specify the output (can be ps or dot, the default is ps)"
+#~ msgstr ""
+#~ "sipecifyî l' rexhowe (pout esse ps oudonbén dot, prémetou c' est ps)"
+
+#~ msgid "Barcode"
+#~ msgstr "Côde bår"
+
+#~ msgid "Barcode Format"
+#~ msgstr "Cogne do côde bår"
+
+#~ msgid "Max Length"
+#~ msgstr "Longueur macsimom"
+
+#~ msgid "Maximum Barcode Length"
+#~ msgstr "Longueur macsimom do côde bår"
+
+#~ msgid "Chart"
+#~ msgstr "Grafike"
+
+#~ msgid "Field Font"
+#~ msgstr "Fonte do tchamp"
+
+#~ msgid "Bar"
+#~ msgstr "Bår"
+
+#~ msgid "Pie"
+#~ msgstr "Dorêye"
+
+#~ msgid "Ring"
+#~ msgstr "Anea"
+
+#~ msgid "Polar"
+#~ msgstr "Polaire"
+
+#~ msgid "Chart Type"
+#~ msgstr "Sôre di grafike"
+
+#~ msgid "Stacked"
+#~ msgstr "Astaplé"
+
+#~ msgid "Percent"
+#~ msgstr "Åcint"
+
+#~ msgid "Rows"
+#~ msgstr "Royes"
+
+#~ msgid "Chart Sub Type"
+#~ msgstr "Sôre efant do grafike"
+
+#~ msgid "Color Scheme"
+#~ msgstr "Djeu d' coleurs"
+
+#~ msgctxt "Three dimensions"
+#~ msgid "3D"
+#~ msgstr "3D"
+
+#~ msgid "Antialiased"
+#~ msgstr "Discrenlé"
+
+#~ msgid "X Axis Title"
+#~ msgstr "Tite di l' acse X"
+
+#~ msgid "Y Axis Title"
+#~ msgstr "Tite di l' acse Y"
+
+#~ msgid "Display Legend"
+#~ msgstr "Håyner ledjinde"
+
+#~ msgid "Link Master"
+#~ msgstr "Loyî å mwaisse"
+
+#~ msgid "Fields from master data source"
+#~ msgstr "Tchamps do mwaisse sourdant des dnêyes"
+
+#~ msgid "Link Child"
+#~ msgstr "Loyî a l' efant"
+
+#~ msgid "Fields from child data source"
+#~ msgstr "Tchamps do sourdant efant des dnêyes"
+
+#~ msgid "QXml"
+#~ msgstr "QXml"
+
+#~ msgid "Zoom Tool"
+#~ msgstr "Usteye di zoumaedje"
+
+#~ msgid "Pan Tool"
+#~ msgstr "Usteye panoramike"
+
+#~ msgid "Path tool"
+#~ msgstr "Usteye di tchmin"
+
+#~ msgid "In"
+#~ msgstr "Dins"
+
+#~ msgid "Out"
+#~ msgstr "Foû"
+
+#~ msgid "Diff"
+#~ msgstr "Dif"
+
+#~ msgid "ICC Engine"
+#~ msgstr "Éndjin ICC"
+
+#~ msgid "RGB8 Histogram"
+#~ msgstr "Istograme RVB8"
+
+#~ msgid "Insert Linebreak"
+#~ msgstr "Sititchî on djocaedje di roye"
+
+#~ msgid "&Insert"
+#~ msgstr "S&ititchî:"
+
+#~ msgid "Insert the selected character in the text"
+#~ msgstr "Sititchî l' caractere di tchoezi e tecse"
+
+#~ msgid "Resize Panel Forward"
+#~ msgstr "Candjî l' grandeur do scriftôr en avant"
+
+#~ msgid "Resize Panel Reverse"
+#~ msgstr "Candjî l' grandeur do scriftôr en erî"
+
+#~ msgid "Access Keys"
+#~ msgstr "Tapes d' accès"
+
+#~ msgid "Enable word completion"
+#~ msgstr "Mete en alaedje li completaedje des mots"
+
+#~ msgid ""
+#~ "Toggle autocompletion on and off: if this is checked then autocompletion "
+#~ "will be enabled."
+#~ msgstr ""
+#~ "Mete ou dismete l' otocompletaedje: si c' est clitchî, dabôrd l' oto-"
+#~ "completaedje serè metowe en alaedje."
+
+#~ msgid ""
+#~ "Suggestion list for autocompletion: contains all the words that will be "
+#~ "autocompleted."
+#~ msgstr ""
+#~ "Djivêye des sudjestions po l' otocompletaedje: i gn a ddins tos les mots "
+#~ "ki sront otocompletés."
+
+#~ msgid ""
+#~ "By clicking this button you can add manually an individual word to the "
+#~ "completion list."
+#~ msgstr ""
+#~ "E clitchant so c' boton vos ploz radjouter al mwin on mot tot seu dins l' "
+#~ "djivêye di completaedje."
+
+#~ msgid ""
+#~ "To remove words from the completion list, select the word with the left "
+#~ "mouse button from the list, then click this button."
+#~ msgstr ""
+#~ "Po oister des mots del djivêye di completaedje, tchoezixhoz l' mot dins "
+#~ "l' djivêye avou l' boton d' hintche, adonpwis clitchîz c' boton ci."
+
+#~ msgid "Automatically add new words to suggestion list"
+#~ msgstr "Radjoute otomaticmint des noveas mots al djivêye des sudjestions"
+
+#~ msgid ""
+#~ "If this option is enabled, any word equal to or longer than the "
+#~ "\"Characters needed\" typed in this document will automatically be added "
+#~ "to the list of words used by the completion."
+#~ msgstr ""
+#~ "Si cisse tchuze est en alaedje, tos les mots ewal ou pus longs ki les « "
+#~ "Caracteres k' ons a dandjî » tapés dins c' documint seront radjoutés "
+#~ "otomaticmint al djivêye des mots eployîs pal completaedje."
+
+#~ msgid "Completion Options"
+#~ msgstr "Tchuzes do completaedje"
+
+#~ msgid "Show words in tooltip"
+#~ msgstr "Mostrer les mots dins ene bouye di racsegne"
+
+#~ msgid "Characters needed:"
+#~ msgstr "Caracteres k' ons a dandjî"
+
+#~ msgid "Suggest words:"
+#~ msgstr "Mots sudjerés"
+
+#~ msgid "Append space"
+#~ msgstr "Adjouter ene espåce"
+
+#~ msgid "Key to accept suggestion:"
+#~ msgstr "Tape pos accepter li sudjestion:"
+
+#~ msgid "Make Default"
+#~ msgstr "Defini come prémetou"
+
+#~ msgid "C&ustom"
+#~ msgstr "A &vosse môde"
+
+#~ msgid "&Insert:"
+#~ msgstr "S&ititchî:"
+
+#~ msgid "Paragraph Background Color"
+#~ msgstr "Coleur di fond do hagnon"
+
+#~ msgid "Borders"
+#~ msgstr "Boirdeures"
+
+#~ msgid "&Width:"
+#~ msgstr "&Lårdjeur:"
+
+#~ msgid "&Color:"
+#~ msgstr "&Coleur:"
+
+#~ msgid "Add/remove left paragraph border"
+#~ msgstr "Radjouter/oister l' boirdeure di hintche do hagnon"
+
+#~ msgid "Toggles the left paragraph border on or off."
+#~ msgstr "(Dis)met l' boirdeure di hintche do hagnon."
+
+#~ msgid "Add/remove right paragraph border"
+#~ msgstr "Radjouter/oister l' boirdeure di droete do hagnon"
+
+#~ msgid "Toggles the right paragraph border on or off."
+#~ msgstr "(Dis)met l' boirdeure di droete do hagnon."
+
+#~ msgid "Add/remove top paragraph border"
+#~ msgstr "Radjouter/oister l' boirdeure al copete do hagnon"
+
+#~ msgid "Toggles the top paragraph border on or off."
+#~ msgstr "(Dis)met l' boirdeure al copete do hagnon."
+
+#~ msgid "Add/remove bottom paragraph border"
+#~ msgstr "Radjouter/oister l' boirdeure al valêye do hagnon"
+
+#~ msgid "Toggles the bottom paragraph border on or off."
+#~ msgstr "(Dis)met l' boirdeure al valêye do hagnon."
+
+#~ msgid "&Merge with next paragraph"
+#~ msgstr "&Rimaxhî avou l' hagnon d' après"
+
+#~ msgid ""
+#~ "Merges the border style of the current paragraph with the next paragraph"
+#~ msgstr ""
+#~ "Rimaxhe li stîle del boirdeure do hagnon do moumint avou l' hagnon d' "
+#~ "après"
+
+#~ msgid "Number:"
+#~ msgstr "Nombe:"
+
+#~ msgid "String:"
+#~ msgstr "Tchinne:"
+
+#~ msgid "Boolean:"
+#~ msgstr "Bouleyin:"
+
+#~ msgid "true"
+#~ msgstr "vraiy"
+
+#~ msgid "false"
+#~ msgstr "fås"
+
+#~ msgid "Date:"
+#~ msgstr "Date:"
+
+#~ msgid "Set Guide Line Position"
+#~ msgstr "Defini l' eplaeçmint des royes di moennaedje"
+
+#~ msgid "Add Guide Line"
+#~ msgstr "Radjouter roye di moennaedje"
+
+#~ msgid "Horizontal"
+#~ msgstr "Di coutchî"
+
+#~ msgid "Vertical"
+#~ msgstr "D' astampé"
+
+#~ msgid "&Position:"
+#~ msgstr "&Eplaeçmint:"
+
+#~ msgid "Guide Line"
+#~ msgstr "Roye di moennaedje"
+
+#~ msgid "Guide Lines"
+#~ msgstr "Royes di moennaedje"
+
+#~ msgid "No handler found for %1"
+#~ msgstr "Nou apougneu di trové po %1"
+
+#~ msgid ""
+#~ "Error loading %1:\n"
+#~ "%2"
+#~ msgstr ""
+#~ "Aroke tot tcherdjant %1 :\n"
+#~ "%2"
+
+#~ msgid ""
+#~ "This document contains an external link to a remote document\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ci documint chal a-st å dvins on loyén viè ene hårdêye å lon\n"
+#~ "%1"
+
+#~ msgid "Confirmation Required"
+#~ msgstr "I fåt racertiner"
+
+#~ msgid "Skip"
+#~ msgstr "Passer houte"
+
+#~ msgid ""
+#~ "Could not load external document %1:\n"
+#~ "%2"
+#~ msgstr ""
+#~ "Dji n' a savou tcherdjî l' difoûtrin objet %1 :\n"
+#~ "%2"
+
+#~ msgid "Na&me:"
+#~ msgstr "&No:"
+
+#~ msgid "Protect si&ze and position"
+#~ msgstr "Waeranti l' &grandeu eyet l' eplaeçmint"
+
+#~ msgid "Keep &aspect ratio"
+#~ msgstr "Wårder l' r&apoirt lårdjeur/hôteur"
+
+#~ msgid "&Height:"
+#~ msgstr "&Hôteur:"
+
+#~ msgid "&Top:"
+#~ msgstr "Al cope&te:"
+
+#~ msgid "&Left:"
+#~ msgstr "&Hintche:"
+
+#~ msgid "Context Help"
+#~ msgstr "Aidance di contecse"
+
+#~ msgid "Here will be shown help according to your actions"
+#~ msgstr "I srè mostré d' l' aidance chal, sorlon vos accions"
+
+#~ msgid "All values are given in %1."
+#~ msgstr "Totes les valixhances sont dnêyes e %1"
+
+#~ msgid "&Size:"
+#~ msgstr "&Grandeu:"
+
+#~ msgid "&Portrait"
+#~ msgstr "D' &astampé"
+
+#~ msgid "La&ndscape"
+#~ msgstr "&Payizaedje"
+
+#~ msgid "The page width is smaller than the left and right margins."
+#~ msgstr ""
+#~ "Li lårdjeur del pådje est pus ptite ki les mådjes di hintche et d' droete."
+
+#~ msgid "Page Layout Problem"
+#~ msgstr "Åk n' a nén stî avou l' adjinçmint del pådje"
+
+#~ msgid "The page height is smaller than the top and bottom margins."
+#~ msgstr "Li hôteu del pådje est pus ptite ki les mådjes di dzeur et di dzo."
+
+#~ msgid "Show &Grid"
+#~ msgstr "Mostrer &grile"
+
+#~ msgctxt "Custom size"
+#~ msgid "Custom"
+#~ msgstr "A vosse môde"
+
+#~ msgid "Insert Object"
+#~ msgstr "Sititchî on Cayet"
+
+#, fuzzy
+#~ msgid "Column spacing:"
+#~ msgstr "E&spåce etur les Colones (%1):"
+
+#, fuzzy
+#~ msgid "Spacing between footnote and body:"
+#~ msgstr "Espåce inte li pî eyet li coir (%1):"
+
+#~ msgid "Different footer for even and odd pages"
+#~ msgstr "Pîs diferins po les pådjes paires eyet impaires"
+
+#~ msgid "Different footer for the first page"
+#~ msgstr "Ôte pî pol prumire pådje"
+
+#, fuzzy
+#~ msgid "Spacing between footer and body:"
+#~ msgstr "Espåce inte li pî eyet li coir (%1):"
+
+#, fuzzy
+#~ msgid "Header"
+#~ msgstr "&Tiestire"
+
+#, fuzzy
+#~ msgid "Spacing between header and body:"
+#~ msgstr "Espåce inte li pî eyet li coir (%1):"
+
+#~ msgid "Different header for even and odd pages"
+#~ msgstr "Diferinnès tiestires po les pådjes paires eyet impaires"
+
+#~ msgid "Different header for the first page"
+#~ msgstr "Ôte tiestire pol prumire pådje"
+
+#~ msgid "Page Preview"
+#~ msgstr "Prévey li Pådje"
+
+#~ msgid "Page Size && &Margins"
+#~ msgstr "Grandeu del pådje eyet &mådjes"
+
+#~ msgid "H&eader && Footer"
+#~ msgstr "&Tiestire eyet pî"
+
+#~ msgid "Mid:"
+#~ msgstr "Mitan:"
+
+#~ msgid "Right:"
+#~ msgstr "Droete:"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;sheet&gt; The sheet name</li><li>&lt;page&gt; The current "
+#~ "page</li><li>&lt;pages&gt; The total number of pages</li><li>&lt;name&gt; "
+#~ "The filename or URL</li><li>&lt;file&gt; The filename with complete path "
+#~ "or the URL</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;sheet&gt; Li no del foye</li><li>&lt;page&gt; Li pådje do "
+#~ "moumint</li><li>&lt;pages&gt; Li nombe di pådjes å totå</li><li>&lt;"
+#~ "name&gt; Li no do fitchî ou li hårdêye (URL)</li><li>&lt;file&gt; Li no "
+#~ "do fitchî avous si tchmin en etir ou li hårdêye (URL)</li></ul></qt>"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;time&gt; The current time</li><li>&lt;date&gt; The "
+#~ "current date</li><li>&lt;author&gt; Your full name</li><li>&lt;org&gt; "
+#~ "Your organization</li><li>&lt;email&gt; Your email address</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;time&gt; L'&nbsp;eure do moumint</li><li>&lt;date&gt; Li "
+#~ "date do moumint</li><li>&lt;author&gt; Vosse no en etir</li><li>&lt;"
+#~ "org&gt; Voste organizåcion</li><li>&lt;email&gt; Voste adresse emile</"
+#~ "li></ul></qt>"
+
+#~ msgid "Col&umns"
+#~ msgstr "C&olones:"
+
+#~ msgid "Storage Test"
+#~ msgstr "Rowe"
+
+#~ msgid "Storage Test 2"
+#~ msgstr "Rowe"
+
+#~ msgid "Master page"
+#~ msgstr "Aclaper tecse"
+
+#, fuzzy
+#~ msgid "Rotate"
+#~ msgstr "Date"
+
+#, fuzzy
+#~ msgid "Shear"
+#~ msgstr "Vert"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Waiting"
+#~ msgstr "Dierin imprimaedje"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Vertical"
+#~ msgstr "&Astampé"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Horizontal"
+#~ msgstr "&Coûtchî"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size All"
+#~ msgstr "Grandeu:"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Split Horizontal"
+#~ msgstr "&Coûtchî"
+
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Pointing Hand"
+#~ msgstr "Dierin imprimaedje"
+
+#~ msgid "Insert image from file"
+#~ msgstr "Sititchî variåve"
+
+#~ msgid "Select Char"
+#~ msgstr "Tchoezi on caractere"
+
+#~ msgctxt "Size Policy"
+#~ msgid "Minimum"
+#~ msgstr "Munutes"
+
+#, fuzzy
+#~ msgctxt "Size Policy"
+#~ msgid "Expanding"
+#~ msgstr "&Sorlignî:"
+
+#~ msgctxt "General properties"
+#~ msgid "General"
+#~ msgstr "Djenerå"
+
+#, fuzzy
+#~ msgid "Width"
+#~ msgstr "&Lårdjeu:"
+
+#, fuzzy
+#~ msgid "Horizontal Size Type"
+#~ msgstr "&Coûtchî"
+
+#, fuzzy
+#~ msgid "Vertical Size Type"
+#~ msgstr "&Astampé"
+
+#, fuzzy
+#~ msgid "Horizontal Stretch"
+#~ msgstr "&Coûtchî"
+
+#, fuzzy
+#~ msgid "Vertical Stretch"
+#~ msgstr "&Astampé"
+
+#, fuzzy
+#~ msgid "Snap Guides"
+#~ msgstr "Nombe di pådjes"
+
+#, fuzzy
+#~ msgid "Enable Guide Lines Guide "
+#~ msgstr "Nombe di pådjes"
+
+#, fuzzy
+#~ msgid "Connection Shape"
+#~ msgstr "Ahiver on modele"
+
+#, fuzzy
+#~ msgid "Edit Guidelines"
+#~ msgstr "Nombe di pådjes"
+
+#, fuzzy
+#~ msgid "Edit guidelines"
+#~ msgstr "Nombe di pådjes"
+
+#~ msgid "Select a filter:"
+#~ msgstr "Tchoezi ene passete:"
+
+#, fuzzy
+#~ msgid "Fit to width"
+#~ msgstr "&Lårdjeu:"
+
+#, fuzzy
+#~ msgid "Fit to page/canvas"
+#~ msgstr "Pådje shuvante"
+
+#, fuzzy
+#~ msgid "[No Character Style]"
+#~ msgstr "Ahiver on novea stîle"
+
+#~ msgid "Creates an empty document"
+#~ msgstr "Ahiver on documint vude"
+
+#, fuzzy
+#~ msgid "Choose Template"
+#~ msgstr "Ahiver on modele"
+
+#~ msgid "No description available"
+#~ msgstr "I n' a nou discrijhaedje"
+
+#, fuzzy
+#~ msgid "&Custom..."
+#~ msgstr "Da vosse..."
+
+#~ msgid "Insert Link"
+#~ msgstr "Sititchî on loyén"
+
+#~ msgid "Bookmark"
+#~ msgstr "Rimåke"
+
+#~ msgid "Internet address:"
+#~ msgstr "Adresse rantoele:"
+
+#~ msgid "Bookmark name:"
+#~ msgstr "No del rimåke:"
+
+#~ msgid "Target:"
+#~ msgstr "Såme:"
+
+#~ msgid "No Entries"
+#~ msgstr "Nole intrêye"
+
+#~ msgid "File location:"
+#~ msgstr "Eplaeçmint do fitchî:"
+
+#~ msgid "Align Left"
+#~ msgstr "Aroymint a hintche"
+
+#, fuzzy
+#~ msgid "Horizontally Center"
+#~ msgstr "&Coûtchî"
+
+#~ msgid "Align Right"
+#~ msgstr "Aroymint a droete"
+
+#~ msgid "Align Top"
+#~ msgstr "Aroymint otomatike"
+
+#, fuzzy
+#~ msgid "Default Tool"
+#~ msgstr "Prémetowe coleur"
+
+#, fuzzy
+#~ msgid "Position x:"
+#~ msgstr "Eplaeçmint"
+
+#, fuzzy
+#~ msgid "Position y:"
+#~ msgstr "Eplaeçmint"
+
+#, fuzzy
+#~ msgid "Order:"
+#~ msgstr "&Boirdeures"
+
+#~ msgid "Alignment"
+#~ msgstr "Aroymint"
+
+#, fuzzy
+#~ msgid "Horizontal:"
+#~ msgstr "&Coûtchî"
+
+#, fuzzy
+#~ msgid "Vertical:"
+#~ msgstr "&Astampé"
+
+#, fuzzy
+#~ msgid "Scale"
+#~ msgstr "Wache"
+
+#~ msgid "Create New Style"
+#~ msgstr "Ahiver on novea stîle"
+
+#~ msgid "Please specify a new style name:"
+#~ msgstr "Dinez on novea no di stîle s' i vs plait:"
+
+#~ msgid "Name already exists! Please choose another name"
+#~ msgstr "Li no egzistêye dedja! Tchoezixhoz è èn ôte s' i vs plait"
+
+#~ msgid "Convert first letter of a sentence to uppercase."
+#~ msgstr "Candjî l' prumire lete d' ene fråze e grande lete."
+
+#~ msgid "Style Manager"
+#~ msgstr "Manaedjeu des stîles"
+
+#~ msgid "<None>"
+#~ msgstr "<Nouk>"
+
+#, fuzzy
+#~ msgid "Decoration"
+#~ msgstr "Discrijhaedje:"
+
+#, fuzzy
+#~ msgid "Highlighting"
+#~ msgstr "Metaedje e valeur del sintacse"
+
+#, fuzzy
+#~ msgid "Layout"
+#~ msgstr "Arindjmint del Pådje"
+
+#~ msgid "Short locale date format"
+#~ msgstr "Coûte cogne locåle pol date"
+
+#~ msgid "Locale date & time format"
+#~ msgstr "Cogne locåle pol date et l' eure"
+
+#~ msgid "Short locale date & time format"
+#~ msgstr "Coûte cogne locåle pol date et l' eure"
+
+#~ msgid "Last Printing"
+#~ msgstr "Dierin imprimaedje"
+
+#~ msgid "File Modification"
+#~ msgstr "Dierin candjmint do fitchî"
+
+#~ msgid "Date of Last Printing"
+#~ msgstr "Date do dierin imprimaedje"
+
+#~ msgid "Date of File Creation"
+#~ msgstr "Date di l' askepiaedje do fitchî"
+
+#~ msgid "Date of File Modification"
+#~ msgstr "Date do dierin candjmint do fitchî"
+
+#~ msgid "Time Format"
+#~ msgstr "Cogne di l' eure"
+
+#~ msgid "Custom Variable"
+#~ msgstr "Variåve da vosse"
+
+#~ msgid "Custom..."
+#~ msgstr "Da vosse..."
+
+#~ msgid "Total Page Num"
+#~ msgstr "Nombe totå di pådjes"
+
+#~ msgid "Number of Pages"
+#~ msgstr "Nombe di pådjes"
+
+#~ msgid "Next Page"
+#~ msgstr "Pådje shuvante"
+
+#~ msgid "Filename"
+#~ msgstr "No do fitchî"
+
+#~ msgid "Path Filename"
+#~ msgstr "Tchimin et no do fitchî"
+
+#~ msgid "Author Name"
+#~ msgstr "No d' l' Oteur"
+
+#~ msgid "Email"
+#~ msgstr "Emile"
+
+#, fuzzy
+#~ msgid "Telephone (work)"
+#~ msgstr "Telefone"
+
+#, fuzzy
+#~ msgid "Telephone (home)"
+#~ msgstr "Telefone"
+
+#~ msgid "Fax"
+#~ msgstr "Facs"
+
+#~ msgid "Country"
+#~ msgstr "Payis"
+
+#~ msgid "City"
+#~ msgstr "Veye"
+
+#~ msgid "Abstract"
+#~ msgstr "Rascourti"
+
+#, fuzzy
+#~ msgid "Telephone (private)"
+#~ msgstr "Telefone"
+
+#~ msgid "Document Abstract"
+#~ msgstr "Rascourti do documint"
+
+#, fuzzy
+#~ msgid "Document Keywords"
+#~ msgstr "Tite do documint"
+
+#~ msgid "File Name"
+#~ msgstr "No do fitchî"
+
+#~ msgid "File Name without Extension"
+#~ msgstr "No do fitchî sins cawete"
+
+#~ msgid "Directory && File Name"
+#~ msgstr "Ridant eyet no do fitchî"
+
+#~ msgid "Link"
+#~ msgstr "Loyén"
+
+#~ msgid "Link..."
+#~ msgstr "Loyén..."
+
+#~ msgid "Note"
+#~ msgstr "Note"
+
+#~ msgid "Note..."
+#~ msgstr "Note..."
+
+#, fuzzy
+#~ msgid "<No title>"
+#~ msgstr "<Nouk>"
+
+#, fuzzy
+#~ msgid "Number of Words"
+#~ msgstr "Fonte po les limeros:"
+
+#, fuzzy
+#~ msgid "Number of Sentences"
+#~ msgstr "Nombe di pådjes"
+
+#, fuzzy
+#~ msgid "Number of Lines"
+#~ msgstr "Nombe di pådjes"
+
+#, fuzzy
+#~ msgid "Number of Characters"
+#~ msgstr "Nombe di pådjes"
+
+#, fuzzy
+#~ msgid "Number of Non-Whitespace Characters"
+#~ msgstr "Nombe di pådjes"
+
+#, fuzzy
+#~ msgid "Number of Syllables"
+#~ msgstr "Nombe di pådjes"
+
+#, fuzzy
+#~ msgid "Number of Frames"
+#~ msgstr "Nombe di pådjes"
+
+#, fuzzy
+#~ msgid "Number of Embedded Objects"
+#~ msgstr "Dji n' a savou tcherdjî l' ravalé objet."
+
+#, fuzzy
+#~ msgid "Number of Pictures"
+#~ msgstr "Nombe di pådjes"
+
+#, fuzzy
+#~ msgid "Number of Tables"
+#~ msgstr "Nombe di pådjes"
+
+#~ msgid "Autocorrection"
+#~ msgstr "Coridjaedje tot seu"
+
+#~ msgid "Automatically do &bold and underline formatting"
+#~ msgstr "Mete otomaticmint e &cråssès letes et sorlignî"
+
+#~ msgid ""
+#~ "When you use _underline_ or *bold*, the text between the underscores or "
+#~ "asterisks will be converted to underlined or bold text."
+#~ msgstr ""
+#~ "Cwand vos tapez avou des _sorlignaedjes_ ou des *cråssès letes*, li tecse "
+#~ "inte les sorlignîs ou les stoeles serè cviersé e sorlignî ou cråssès "
+#~ "letes."
+
+#~ msgid "Most standard fraction notations will be converted when available"
+#~ msgstr "Li plupårt des fraccions standård seront cviersêyes si possibe"
+
+#~ msgid "Use &autonumbering for numbered paragraphs"
+#~ msgstr "Eployî l' oto&limerotaedje po les hagnons"
+
+#~ msgid ""
+#~ "When typing '1)' or similar in front of a paragraph, automatically "
+#~ "convert the paragraph to use that numbering style. This has the advantage "
+#~ "that further paragraphs will also be numbered and the spacing is done "
+#~ "correctly."
+#~ msgstr ""
+#~ "Cwand vos tapez « 1) » ou ene sacwè insi pa dvant on hagnon d' tecse, li "
+#~ "hagnon est otomaticmint cviersé po-z eployî ci stîle di limerotaedje la. "
+#~ "Eployî on stîle di limerotaedje ça vout dire ki les hagnons shuvants "
+#~ "seront eto limerotés avou l' minme sitîle."
+
+#~ msgid "Rep&lace 1st... with 1^st..."
+#~ msgstr "Replaecî « &1st » avou « 1^st »"
+
+#~ msgid "Capitalize name of days"
+#~ msgstr "No des djoûs e grandès letes"
+
+#~ msgid "Use l&ist-formatting for bulleted paragraphs"
+#~ msgstr ""
+#~ "Eployî l' epådjnaedje des d&jivêyes po fé des hagnons come djivêyes a "
+#~ "boles"
+
+#~ msgid ""
+#~ "When typing '*' or '-' in front of a paragraph, automatically convert the "
+#~ "paragraph to use that list-style. Using a list-style formatting means "
+#~ "that a correct bullet is used to draw the list."
+#~ msgstr ""
+#~ "Cwand vos tapez on « * » ou on « - » pa dvant on hagnon d' tecse, li "
+#~ "hagnon est otomaticmint cviersé po-z eployî ci stîle di djivêye la. "
+#~ "Eployî on stîle di djivêye ça vout dire k' i gn årè pa dvant ene bole ou "
+#~ "ene loyeure di dessinêye, po ndè fé on cayet dins ene djivêye."
+
+#~ msgid "Custom Quotes"
+#~ msgstr "Wiyemets da vosse"
+
+#~ msgid "Replace &double quotes with typographical quotes"
+#~ msgstr "Replaecî les wiyemets &dobes ascii avou des wiyemets tipografikes"
+
+#~ msgid "Replace &single quotes with typographical quotes"
+#~ msgstr ""
+#~ "Replaecî les wiyemets &faflotes ascii avou des wiyemets tipografikes"
+
+#~ msgid "Advanced Autocorrection"
+#~ msgstr "Sipepieus coridjaedje otomatike"
+
+#~ msgid "All Languages"
+#~ msgstr "Tos les lingaedjes"
+
+#, fuzzy
+#~ msgid "Insert a special character..."
+#~ msgstr "Sititchî caractere sipeciå"
+
+#~ msgid "Find"
+#~ msgstr "Trover"
+
+#~ msgid "Change Format..."
+#~ msgstr "Candjî l' cogne..."
+
+#~ msgid "Clear Format"
+#~ msgstr "Netyî l' cogne"
+
+#~ msgid "Entry Name"
+#~ msgstr "No del intrêye"
+
+#~ msgid "Add Variable"
+#~ msgstr "Radjouter variåve"
+
+#~ msgid "Edit Variable"
+#~ msgstr "Candjî l' variåve"
+
+#~ msgid "Value:"
+#~ msgstr "Valixhance:"
+
+#, fuzzy
+#~ msgid "The quick brown fox jumps over the lazy dog."
+#~ msgstr ""
+#~ "Mi trûte a les balzins, co pés ki l' grijhe cawe di m' pôve fayé vexhåd!"
+
+#~ msgid "Delete Text"
+#~ msgstr "Disfacer tecse"
+
+#~ msgid "Insert Text"
+#~ msgstr "Sititchî tecse"
+
+#, fuzzy
+#~ msgid "Change Paragraph Background Color"
+#~ msgstr "Candjî l' coleur di &fond..."
+
+#~ msgid "Change Borders"
+#~ msgstr "Candjî les boirdeures"
+
+#, fuzzy
+#~ msgid "Change Join Borders"
+#~ msgstr "Candjî les boirdeures"
+
+#~ msgid "Remove Selected Text"
+#~ msgstr "Oister li tecse tchoezi"
+
+#~ msgid "Day"
+#~ msgstr "Djoû"
+
+#~ msgid "Day (2 digits)"
+#~ msgstr "Djoû (2 chifes)"
+
+#~ msgid "Day (abbreviated name)"
+#~ msgstr "Djoû del samwinne (rascourti)"
+
+#~ msgid "Day (long name)"
+#~ msgstr "Djoû del samwinne (en etir)"
+
+#~ msgid "Month"
+#~ msgstr "Moes"
+
+#~ msgid "Month (2 digits)"
+#~ msgstr "Moes (limero, 2 chifes)"
+
+#~ msgid "Month (abbreviated name)"
+#~ msgstr "Moes (no, rascourti)"
+
+#~ msgid "Month (long name)"
+#~ msgstr "Moes (no, en etir)"
+
+#~ msgid "Month (possessive abbreviated name)"
+#~ msgstr "Moes (avou «di» pa dvant, rascourti)"
+
+#~ msgid "Month (possessive long name)"
+#~ msgstr "Moes (avou «di» pa dvant, en etir)"
+
+#~ msgid "Year (2 digits)"
+#~ msgstr "Anêye (2 chifes)"
+
+#~ msgid "Year (4 digits)"
+#~ msgstr "Anêye (4 chifes)"
+
+#~ msgid "Hour"
+#~ msgstr "Eure"
+
+#~ msgid "Hour (2 digits)"
+#~ msgstr "Eure (2 chifes)"
+
+#~ msgid "Minute (2 digits)"
+#~ msgstr "Munutes (2 chifes)"
+
+#~ msgid "Second"
+#~ msgstr "Segondes"
+
+#~ msgid "Second (2 digits)"
+#~ msgstr "Segondes (2 chifes)"
+
+#~ msgid "Millisecond (3 digits)"
+#~ msgstr "Meyinme di segondes (3 chifes)"
+
+#~ msgid "am/pm"
+#~ msgstr "am/pm"
+
+#~ msgid "AM/PM"
+#~ msgstr "AM/PM"
+
+#~ msgid "Remove Word"
+#~ msgstr "Oister mot"
+
+#~ msgid "Replace Word"
+#~ msgstr "Replaecî mot"
+
+#~ msgid "Insert Non-Breaking Space"
+#~ msgstr "Sititchî espåce nén côpåve"
+
+#, fuzzy
+#~ msgid "Insert Non-Breaking Hyphen"
+#~ msgstr "Sititchî espåce nén côpåve"
+
+#~ msgid "Insert Special Char"
+#~ msgstr "Sititchî caractere sipeciå"
+
+#~ msgid "Remove Link"
+#~ msgstr "Oister on loyén"
+
+#~ msgid "Edit Comment"
+#~ msgstr "Candjî l' rawete"
+
+#~ msgid "Add Author Name"
+#~ msgstr "Radjouter l' no di l' oteur"
+
+#, fuzzy
+#~ msgid "Autocorrect"
+#~ msgstr "Coridjaedje tot seu"
+
+#, fuzzy
+#~ msgid "Autocorrect for Fraction"
+#~ msgstr "Coridjaedje tot seu"
+
+#~ msgid "Double"
+#~ msgstr "Dobe"
+
+#~ msgid "Wave"
+#~ msgstr "Wache"
+
+#~ msgid "Replace Text"
+#~ msgstr "Discandjî Tecse"
+
+#~ msgid "Reset"
+#~ msgstr "Rimete a zero"
+
+#~ msgid "Bold:"
+#~ msgstr "Cråssès letes:"
+
+#~ msgid "Italic:"
+#~ msgstr "Clintcheyès letes:"
+
+#~ msgid "Subscript"
+#~ msgstr "Dizo li Roye"
+
+#~ msgid "Superscript"
+#~ msgstr "Dizeu li Roye"
+
+#~ msgid "&Depth:"
+#~ msgstr "&Parfondeu:"
+
+#~ msgid "Indent"
+#~ msgstr "Ritrait"
+
+#~ msgid "&Right:"
+#~ msgstr "&Droete:"
+
+#, fuzzy
+#~ msgid "&First line:"
+#~ msgstr "&Prumire roye (%1):"
+
+#~ msgctxt "Line spacing value"
+#~ msgid "Single"
+#~ msgstr "Simpe"
+
+#~ msgctxt "Line spacing value"
+#~ msgid "1.5 Lines"
+#~ msgstr "Ene roye et dmeye"
+
+#~ msgctxt "Line spacing value"
+#~ msgid "Double"
+#~ msgstr "Dobe"
+
+#~ msgid "At Least (%1)"
+#~ msgstr "Pol moens (%1)"
+
+#, fuzzy
+#~ msgid "Before:"
+#~ msgstr "Divant (%1):"
+
+#~ msgid "&Left"
+#~ msgstr "&Hintche"
+
+#~ msgid "&Right"
+#~ msgstr "&Droete"
+
+#, fuzzy
+#~ msgid "General &Layout"
+#~ msgstr "Djenerå"
+
+#, fuzzy
+#~ msgid "D&ecorations"
+#~ msgstr "Discrijhaedje:"
+
+#~ msgid "Numbering"
+#~ msgstr "Limerotaedje"
+
+#~ msgid "&None"
+#~ msgstr "&Nouk"
+
+#~ msgid "&List"
+#~ msgstr "&Djivêye"
+
+#~ msgid "&Filling:"
+#~ msgstr "&Rimplixhaedje:"
+
+#~ msgid "&New"
+#~ msgstr "&Novea"
+
+#, fuzzy
+#~ msgid "Import Styles"
+#~ msgstr "Stîle del fonte"
+
+#~ msgid "Aligment"
+#~ msgstr "Aroymint"
+
+#, fuzzy
+#~ msgid "Strikethrough"
+#~ msgstr "&Båré:"
+
+#, fuzzy
+#~ msgid "Underlining:"
+#~ msgstr "&Sorlignî:"
+
+#~ msgid "Colors"
+#~ msgstr "Coleurs"
+
+#~ msgid "Default Color"
+#~ msgstr "Prémetowe coleur"
+
+#~ msgid "More Colors..."
+#~ msgstr "D' ôtès coleurs..."
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Red"
+#~ msgstr "Rodje"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Orange"
+#~ msgstr "Orandje"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Magenta"
+#~ msgstr "Madjénta"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Blue"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Cyan"
+#~ msgstr "Cian"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Green"
+#~ msgstr "Vert"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Yellow"
+#~ msgstr "Djaene"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkRed"
+#~ msgstr "Rodje"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkOrange"
+#~ msgstr "Orandje"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkMagenta"
+#~ msgstr "Madjénta"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkBlue"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkCyan"
+#~ msgstr "Cian"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkGreen"
+#~ msgstr "Vert"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkYellow"
+#~ msgstr "Djaene"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "White"
+#~ msgstr "Blanc"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 90%"
+#~ msgstr "Gris 90%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 80%"
+#~ msgstr "Gris 80%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 70%"
+#~ msgstr "Gris 70%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 60%"
+#~ msgstr "Gris 60%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 50%"
+#~ msgstr "Gris 50%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 40%"
+#~ msgstr "Gris 40%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 30%"
+#~ msgstr "Gris 30%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 20%"
+#~ msgstr "Gris 20%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 10%"
+#~ msgstr "Gris 10%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Black"
+#~ msgstr "Noer"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Ivory"
+#~ msgstr "Gris"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Snow"
+#~ msgstr "Nive"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MintCream"
+#~ msgstr "Madjénta"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "FloralWhite"
+#~ msgstr "Blanc"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightYellow"
+#~ msgstr "Djaene"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "GhostWhite"
+#~ msgstr "Blanc"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Honeydew"
+#~ msgstr "Rodje"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Seashell"
+#~ msgstr "Djaene"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "AliceBlue"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Cornsilk"
+#~ msgstr "Ôr"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LavenderBlush"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "OldLace"
+#~ msgstr "Noer"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "WhiteSmoke"
+#~ msgstr "Blanke foumire"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightCyan"
+#~ msgstr "Cian"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightGoldenrodYellow"
+#~ msgstr "Djaene"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Beige"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PapayaWhip"
+#~ msgstr "Blanc"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "BlanchedAlmond"
+#~ msgstr "Noer"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "AntiqueWhite"
+#~ msgstr "Blanc"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MistyRose"
+#~ msgstr "Blanc"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Bisque"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Moccasin"
+#~ msgstr "Rôze"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "NavajoWhite"
+#~ msgstr "Blanc"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PeachPuff"
+#~ msgstr "Noer"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PaleGoldenrod"
+#~ msgstr "Ôr"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Wheat"
+#~ msgstr "Blanc"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PaleTurquoise"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Pink"
+#~ msgstr "Rôze"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightGoldenrod"
+#~ msgstr "Ôr"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightGray"
+#~ msgstr "Gris"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightPink"
+#~ msgstr "Rôze"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PowderBlue"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Aquamarine"
+#~ msgstr "Orandje"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Thistle"
+#~ msgstr "Blanc"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightBlue"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PaleGreen"
+#~ msgstr "Vert"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gold"
+#~ msgstr "Ôr"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "GreenYellow"
+#~ msgstr "Djaene"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSteelBlue"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightGreen"
+#~ msgstr "Vert"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Plum"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray"
+#~ msgstr "Gris"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "BurlyWood"
+#~ msgstr "Brun"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSkyBlue"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSalmon"
+#~ msgstr "Blanke foumire"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SkyBlue"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Violet"
+#~ msgstr "Viyolet"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SandyBrown"
+#~ msgstr "Brun"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkSalmon"
+#~ msgstr "Brun"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkKhaki"
+#~ msgstr "Gris"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Chartreuse"
+#~ msgstr "Tchôcolåt"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkGray"
+#~ msgstr "Gris"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LawnGreen"
+#~ msgstr "Vert"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "HotPink"
+#~ msgstr "Rôze"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Salmon"
+#~ msgstr "Cian"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Turquoise"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkSeaGreen"
+#~ msgstr "Vert"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Orchid"
+#~ msgstr "Blanc"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Coral"
+#~ msgstr "Gris"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "YellowGreen"
+#~ msgstr "Djaene"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Goldenrod"
+#~ msgstr "Ôr"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "RosyBrown"
+#~ msgstr "Brun"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PaleVioletRed"
+#~ msgstr "Viyolet"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumSpringGreen"
+#~ msgstr "Vert"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Tomato"
+#~ msgstr "Tomate"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SpringGreen"
+#~ msgstr "Vert"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Peru"
+#~ msgstr "Rodje"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "CornflowerBlue"
+#~ msgstr "Bleu poes d' Turk"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSlateBlue"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumPurple"
+#~ msgstr "Viyolet"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumOrchid"
+#~ msgstr "Rodje"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "CadetBlue"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DeepSkyBlue"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSlateGray"
+#~ msgstr "Gris"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkGoldenrod"
+#~ msgstr "Ôr"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumSlateBlue"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "IndianRed"
+#~ msgstr "Rodje"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Chocolate"
+#~ msgstr "Tchôcolåt"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumSeaGreen"
+#~ msgstr "Vert"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LimeGreen"
+#~ msgstr "Vert"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSeaGreen"
+#~ msgstr "Vert"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SlateGray"
+#~ msgstr "Gris"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "OrangeRed"
+#~ msgstr "Orandje"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DeepPink"
+#~ msgstr "Rôze"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SteelBlue"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SlateBlue"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "RoyalBlue"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "VioletRed"
+#~ msgstr "Viyolet"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkOrchid"
+#~ msgstr "Blanc"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DimGray"
+#~ msgstr "Gris"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "BlueViolet"
+#~ msgstr "Viyolet"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Sienna"
+#~ msgstr "Nive"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumVioletRed"
+#~ msgstr "Viyolet"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Maroon"
+#~ msgstr "Brun"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SeaGreen"
+#~ msgstr "Vert"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkOliveGreen"
+#~ msgstr "Vete olive foncé"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "ForestGreen"
+#~ msgstr "Vert"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SaddleBrown"
+#~ msgstr "Brun"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkViolet"
+#~ msgstr "Viyolet"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "FireBrick"
+#~ msgstr "Noer"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkSlateBlue"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkSlateGray"
+#~ msgstr "Gris"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MidnightBlue"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumBlue"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Navy"
+#~ msgstr "Gris"
+
+#, fuzzy
+#~ msgid "Cancelled"
+#~ msgstr "Orandje"
+
+#~ msgid "done"
+#~ msgstr "Nouk"
+
+#, fuzzy
+#~ msgid "Requested Font"
+#~ msgstr "Tchoezi fonte"
+
+#, fuzzy
+#~ msgid "Font style"
+#~ msgstr "Stîle del fonte"
+
+#, fuzzy
+#~ msgid "Bold Italic"
+#~ msgstr "Clintcheyès letes:"
+
+#, fuzzy
+#~ msgid "The Quick Brown Fox Jumps Over The Lazy Dog"
+#~ msgstr ""
+#~ "Mi trûte a les balzins, co pés ki l' grijhe cawe di m' pôve fayé vexhåd!"
+
+#, fuzzy
+#~ msgid "Actual Font"
+#~ msgstr "Tchoezi fonte"
+
+#~ msgid "&Redo: %1"
+#~ msgstr "&Rifé: %1"
+
+#~ msgid "Undo %1 action"
+#~ msgid_plural "Undo %1 actions"
+#~ msgstr[0] "Disfé %1 accion"
+#~ msgstr[1] "Disfé %1 accions"
+
+#~ msgid "Redo %1 action"
+#~ msgid_plural "Redo %1 actions"
+#~ msgstr[0] "Rifé %1 accion"
+#~ msgstr[1] "Rifé %1 accions"
+
+#~ msgid "More Fill Colors..."
+#~ msgstr "Ôtès coleurs di Rimplixhaedje..."
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSkyblue"
+#~ msgstr "Bleu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkSeagreen"
+#~ msgstr "Vert"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DeepSkyblue"
+#~ msgstr "Bleu"
+
+#~ msgid "Open &Recent Document"
+#~ msgstr "Ridrovi onk des &dierins documints drovous"
+
+#, fuzzy
+#~ msgid "Load"
+#~ msgstr "Tcherdjî..."
+
+#, fuzzy
+#~ msgid "&Font"
+#~ msgstr "&Pî del pådje"
+
+#, fuzzy
+#~ msgid "Relative size:"
+#~ msgstr "Prémetowe grandeu di båze:"
+
+#~ msgid "&Document Information"
+#~ msgstr "Informåcion sol &documint"
+
+#~ msgid "Default font:"
+#~ msgstr "Prémetowe fonte:"
+
+#~ msgid "Name font:"
+#~ msgstr "Fonte pol no:"
+
+#~ msgid "Number font:"
+#~ msgstr "Fonte po les limeros:"
+
+#~ msgid "Operator font:"
+#~ msgstr "Fonte po l' operateu:"
+
+#~ msgid "Default base size:"
+#~ msgstr "Prémetowe grandeu di båze:"
+
+#~ msgid "Choose..."
+#~ msgstr "Tchoezi..."
+
+#~ msgid "Add Text"
+#~ msgstr "Radjouter tecse"
+
+#, fuzzy
+#~ msgid "Add Operator"
+#~ msgstr "Fonte po l' operateu:"
+
+#, fuzzy
+#~ msgid "Add Number"
+#~ msgstr "Radjouter no"
+
+#~ msgid "Add Empty Box"
+#~ msgstr "Radjouter ene boesse vude"
+
+#~ msgid "Add Name"
+#~ msgstr "Radjouter no"
+
+#~ msgid "Add Bracket"
+#~ msgstr "Radjouter åtchete"
+
+#~ msgid "Add Root"
+#~ msgstr "Radjouter raecene"
+
+#~ msgid "Index"
+#~ msgstr "Indecse"
+
+#~ msgid "Append Column"
+#~ msgstr "Radjouter colone"
+
+#~ msgid "Append Row"
+#~ msgstr "Radjouter roye"
+
+#~ msgid "Add Index"
+#~ msgstr "Radjouter indecse"
+
+#~ msgid "Syntax Highlighting"
+#~ msgstr "Metaedje e valeur del sintacse"
+
+#~ msgid "&Bold"
+#~ msgstr "&Cråssès letes"
+
+#~ msgid "&Italic"
+#~ msgstr "C&lintcheyès letes"
+
+#~ msgid "Insert Symbol"
+#~ msgstr "Sititchî simbole"
+
+#~ msgid "Symbol Names"
+#~ msgstr "Nos des simboles"
+
+#~ msgid "Fraktur"
+#~ msgstr "Fraktur"
+
+#~ msgid "Font Family"
+#~ msgstr "Famile del fonte"
+
+#, fuzzy
+#~ msgid "Operator"
+#~ msgstr "Fonte po l' operateu:"
