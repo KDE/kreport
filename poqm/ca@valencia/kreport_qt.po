@@ -710,7 +710,7 @@ msgstr "Copia la selecció al porta-retalls"
 #: wrtembed/KReportDesigner.cpp:1531
 msgctxt "KReportDesigner|"
 msgid "&Paste"
-msgstr "&Apega"
+msgstr "A&pega"
 
 #: wrtembed/KReportDesigner.cpp:1533
 msgctxt "KReportDesigner|"
