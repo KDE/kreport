@@ -64,8 +64,8 @@ if(BUILD_EXAMPLES)
   add_subdirectory(examples)
 endif()
 
-if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
-    ecm_install_po_files_as_qm(po)
+if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/poqm")
+    ecm_install_po_files_as_qm(poqm)
 endif()
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
