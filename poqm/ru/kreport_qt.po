@@ -9,19 +9,20 @@
 # Yuri Efremov <yur.arh@gmail.com>, 2011, 2012.
 # Georgiy Syptchenko <superzhook@gmail.com>, 2014, 2015.
 # Alexander Yavorsky <kekcuha@gmail.com>, 2018.
+# Olesya Gerasimenko <translation-team@basealt.ru>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-22 01:56+0000\n"
-"PO-Revision-Date: 2018-12-27 16:45+1000\n"
-"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
-"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"PO-Revision-Date: 2022-10-03 11:58+0300\n"
+"Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
+"Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 18.12.0\n"
+"X-Generator: Lokalize 22.04.3\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Environment: kde\n"
@@ -90,11 +91,9 @@ msgid "Line Style"
 msgstr "Стиль линии"
 
 #: common/KReportSectionData.cpp:164
-#, fuzzy
-#| msgid "Current Section"
 msgctxt "KReportSectionData|Report section"
 msgid "Section"
-msgstr "Текущий раздел"
+msgstr "Раздел"
 
 #: common/KReportSectionData.cpp:166
 msgctxt "KReportSectionData|"
@@ -107,11 +106,9 @@ msgid "Background Color"
 msgstr "Цвет фона"
 
 #: common/KReportUnit.cpp:136
-#, fuzzy
-#| msgid "Invalid Type"
 msgctxt "KReportUnit|"
 msgid "Invalid"
-msgstr "Недопустимый тип"
+msgstr "Недопустимый"
 
 #: common/KReportUnit.cpp:138
 msgctxt "KReportUnit|"
@@ -161,25 +158,21 @@ msgid "Unsupported unit"
 msgstr "Неподдерживаемая единица измерения"
 
 #: items/check/KReportItemCheck.cpp:79
-#, fuzzy
-#| msgid "Colors"
 msgctxt "KReportItemCheckBox|"
 msgid "Cross"
-msgstr "Одна панель"
+msgstr "Крестик"
 
 #: items/check/KReportItemCheck.cpp:79
 msgctxt "KReportItemCheckBox|"
 msgid "Tick"
-msgstr ""
+msgstr "Галочка"
 
 #: items/check/KReportItemCheck.cpp:79
 msgctxt "KReportItemCheckBox|"
 msgid "Dot"
-msgstr ""
+msgstr "Точка"
 
 #: items/check/KReportItemCheck.cpp:80
-#, fuzzy
-#| msgid "Style"
 msgctxt "KReportItemCheckBox|"
 msgid "Style"
 msgstr "Стиль"
@@ -205,8 +198,6 @@ msgid "Line Style"
 msgstr "Стиль линии"
 
 #: items/check/KReportItemCheck.cpp:90
-#, fuzzy
-#| msgid "Value"
 msgctxt "KReportItemCheckBox|"
 msgid "Value"
 msgstr "Значение"
@@ -214,11 +205,9 @@ msgstr "Значение"
 #: items/check/KReportItemCheck.cpp:90
 msgctxt "KReportItemCheckBox|"
 msgid "Value used if not bound to a field"
-msgstr ""
+msgstr "Значение, используемое при отсутствии привязки к полю"
 
 #: items/field/KReportItemField.cpp:90
-#, fuzzy
-#| msgid "Value"
 msgctxt "KReportItemField|"
 msgid "Value"
 msgstr "Значение"
@@ -226,7 +215,7 @@ msgstr "Значение"
 #: items/field/KReportItemField.cpp:90
 msgctxt "KReportItemField|"
 msgid "Value used if not bound to a field"
-msgstr ""
+msgstr "Значение, используемое при отсутствии привязки к полю"
 
 #: items/field/KReportItemField.cpp:94
 msgctxt "KReportItemField|"
@@ -274,8 +263,6 @@ msgid "Background Color"
 msgstr "Цвет фона"
 
 #: items/field/KReportItemField.cpp:107
-#, fuzzy
-#| msgid "Foreground Color"
 msgctxt "KReportItemField|"
 msgid "Foreground Color"
 msgstr "Цвет переднего плана"
@@ -303,35 +290,29 @@ msgstr "Стиль линии"
 #: items/field/KReportItemField.cpp:119
 msgctxt "KReportItemField|"
 msgid "Word Wrap"
-msgstr ""
+msgstr "Перенос строк"
 
 #: items/field/KReportItemField.cpp:120
 msgctxt "KReportItemField|"
 msgid "Can Grow"
-msgstr ""
+msgstr "Расширение"
 
 #: items/image/KReportItemImage.cpp:119
 msgctxt "KReportItemImage|"
 msgid "Clip"
-msgstr ""
+msgstr "Обрезать"
 
 #: items/image/KReportItemImage.cpp:119
-#, fuzzy
-#| msgid "Street:"
 msgctxt "KReportItemImage|"
 msgid "Stretch"
-msgstr "Улица:"
+msgstr "Растянуть"
 
 #: items/image/KReportItemImage.cpp:120
-#, fuzzy
-#| msgid "Resize"
 msgctxt "KReportItemImage|"
 msgid "Resize Mode"
-msgstr "Изменить размер"
+msgstr "Режим изменения размера"
 
 #: items/image/KReportItemImage.cpp:121
-#, fuzzy
-#| msgid "Value"
 msgctxt "KReportItemImage|"
 msgid "Value"
 msgstr "Значение"
@@ -339,14 +320,12 @@ msgstr "Значение"
 #: items/image/KReportItemImage.cpp:121
 msgctxt "KReportItemImage|"
 msgid "Value used if not bound to a field"
-msgstr ""
+msgstr "Значение, используемое при отсутствии привязки к полю"
 
 #: items/label/KReportItemLabel.cpp:91
-#, fuzzy
-#| msgid "Caption"
 msgctxt "KReportItemLabel|"
 msgid "Caption"
-msgstr "Заголовок"
+msgstr "Подпись"
 
 #: items/label/KReportItemLabel.cpp:94
 msgctxt "KReportItemLabel|"
@@ -394,8 +373,6 @@ msgid "Background Color"
 msgstr "Цвет фона"
 
 #: items/label/KReportItemLabel.cpp:107
-#, fuzzy
-#| msgid "Foreground Color"
 msgctxt "KReportItemLabel|"
 msgid "Foreground Color"
 msgstr "Цвет переднего плана"
@@ -421,8 +398,6 @@ msgid "Line Style"
 msgstr "Стиль линии"
 
 #: items/text/KReportItemText.cpp:115
-#, fuzzy
-#| msgid "Value"
 msgctxt "KReportItemText|"
 msgid "Value"
 msgstr "Значение"
@@ -430,7 +405,7 @@ msgstr "Значение"
 #: items/text/KReportItemText.cpp:115
 msgctxt "KReportItemText|"
 msgid "Value used if not bound to a field"
-msgstr ""
+msgstr "Значение, используемое при отсутствии привязки к полю"
 
 #: items/text/KReportItemText.cpp:119
 msgctxt "KReportItemText|"
@@ -478,8 +453,6 @@ msgid "Background Color"
 msgstr "Цвет фона"
 
 #: items/text/KReportItemText.cpp:132
-#, fuzzy
-#| msgid "Foreground Color"
 msgctxt "KReportItemText|"
 msgid "Foreground Color"
 msgstr "Цвет переднего плана"
@@ -513,22 +486,25 @@ msgid ""
 "Do you want to suppress further messages?\n"
 "(messages will be restored next time the report is opened)"
 msgstr ""
+"Не удалось выполнить вычисление сценария. Ошибка: %1\n"
+"\n"
+"Подавлять последующие сообщения?\n"
+"(сообщения будут восстановлены при следующем открытии отчёта)"
 
 #: renderer/scripting/KReportScriptHandler.cpp:171
-#, fuzzy, qt-format
-#| msgid "Script File"
+#, qt-format
 msgctxt "KReportScriptHandler|"
 msgid ""
 "Script code:\n"
 "%1"
-msgstr "Файл сценария"
+msgstr ""
+"Код сценария:\n"
+"%1"
 
 #: renderer/scripting/KReportScriptHandler.cpp:187
-#, fuzzy
-#| msgid "Syntax Error"
 msgctxt "KReportScriptHandler|"
 msgid "Script Error"
-msgstr "Синтаксическая ошибка"
+msgstr "Ошибка сценария"
 
 #: wrtembed/KReportDesigner.cpp:310
 #, qt-format
@@ -538,14 +514,15 @@ msgid ""
 "JavaScript language are supported. To prevent losing the scripts, their type "
 "and content will not be changed unless you change these scripts."
 msgstr ""
+"Этот отчёт содержит сценарии типа «%1». Поддерживаются только сценарии, "
+"написанные на языке JavaScript. Во избежание потери сценариев их тип и "
+"содержимое будут изменены только в том случае, если эти сценарии изменит "
+"пользователь."
 
 #: wrtembed/KReportDesigner.cpp:315
-#, fuzzy
-#| msgctxt "KReportUnit|"
-#| msgid "Unsupported unit"
 msgctxt "KReportDesigner|"
 msgid "Unsupported Script Type"
-msgstr "Неподдерживаемая единица измерения"
+msgstr "Неподдерживаемый тип сценария"
 
 #: wrtembed/KReportDesigner.cpp:676
 msgctxt "KReportDesigner|"
@@ -598,92 +575,66 @@ msgid "Page Footer (Last)"
 msgstr "Нижний колонтитул (последняя страница)"
 
 #: wrtembed/KReportDesigner.cpp:716
-#, fuzzy
-#| msgid "No Header"
 msgctxt "KReportDesigner|"
 msgid "Report Header"
-msgstr "Отключить верхний колонтитул"
+msgstr "Верхний колонтитул отчёта"
 
 #: wrtembed/KReportDesigner.cpp:720
-#, fuzzy
-#| msgid "Footer"
 msgctxt "KReportDesigner|"
 msgid "Report Footer"
-msgstr "Нижний колонтитул"
+msgstr "Нижний колонтитул отчёта"
 
 #: wrtembed/KReportDesigner.cpp:808
-#, fuzzy
-#| msgid "Export"
 msgctxt "KReportDesigner|Main report element"
 msgid "Report"
-msgstr "Экспортировать"
+msgstr "Отчёт"
 
 #: wrtembed/KReportDesigner.cpp:813
-#, fuzzy
-#| msgid "Title"
 msgctxt "KReportDesigner|"
 msgid "Title"
 msgstr "Заголовок"
 
 #: wrtembed/KReportDesigner.cpp:813
-#, fuzzy
-#| msgid "Author Title"
 msgctxt "KReportDesigner|"
 msgid "Report Title"
-msgstr "Автор"
+msgstr "Заголовок отчёта"
 
 #: wrtembed/KReportDesigner.cpp:818
-#, fuzzy
-#| msgid "Page Size"
 msgctxt "KReportDesigner|"
 msgid "Page Size"
 msgstr "Размер страницы"
 
 #: wrtembed/KReportDesigner.cpp:821
-#, fuzzy
-#| msgid "Page Size"
 msgctxt "KReportDesigner|"
 msgid "Custom Page Size"
-msgstr "Размер страницы"
+msgstr "Нестандартный размер страницы"
 
 #: wrtembed/KReportDesigner.cpp:825
-#, fuzzy
-#| msgid "Portrait"
 msgctxt "KReportDesigner|"
 msgid "Portrait"
-msgstr "Портрет"
+msgstr "Книжная"
 
 #: wrtembed/KReportDesigner.cpp:825
-#, fuzzy
-#| msgid "Landscape"
 msgctxt "KReportDesigner|"
 msgid "Landscape"
-msgstr "Альбом"
+msgstr "Альбомная"
 
 #: wrtembed/KReportDesigner.cpp:827
-#, fuzzy
-#| msgid "Page Orientation"
 msgctxt "KReportDesigner|"
 msgid "Page Orientation"
 msgstr "Ориентация страницы"
 
 #: wrtembed/KReportDesigner.cpp:832
-#, fuzzy
-#| msgid "Page Size"
 msgctxt "KReportDesigner|"
 msgid "Page Unit"
-msgstr "Размер страницы"
+msgstr "Единица страницы"
 
 #: wrtembed/KReportDesigner.cpp:833
-#, fuzzy
-#| msgid "Show Grid"
 msgctxt "KReportDesigner|"
 msgid "Show Grid"
 msgstr "Показать сетку"
 
 #: wrtembed/KReportDesigner.cpp:834
-#, fuzzy
-#| msgid "Snap to Grid"
 msgctxt "KReportDesigner|"
 msgid "Snap to Grid"
 msgstr "Прилипать к сетке"
@@ -691,7 +642,7 @@ msgstr "Прилипать к сетке"
 #: wrtembed/KReportDesigner.cpp:835
 msgctxt "KReportDesigner|"
 msgid "Grid Divisions"
-msgstr ""
+msgstr "Деления сетки"
 
 #: wrtembed/KReportDesigner.cpp:841
 msgctxt "KReportDesigner|"
@@ -739,15 +690,11 @@ msgid "Delete"
 msgstr "Удалить"
 
 #: wrtembed/KReportDesigner.cpp:1129
-#, fuzzy
-#| msgid "Line"
 msgctxt "KReportDesigner|Report line element"
 msgid "Line"
 msgstr "Линия"
 
 #: wrtembed/KReportDesigner.cpp:1476
-#, fuzzy
-#| msgid "Line"
 msgctxt "KReportDesigner|"
 msgid "Line"
 msgstr "Линия"
@@ -755,40 +702,32 @@ msgstr "Линия"
 #: wrtembed/KReportDesigner.cpp:1519
 msgctxt "KReportDesigner|"
 msgid "Cu&t"
-msgstr ""
+msgstr "Вы&резать"
 
 #: wrtembed/KReportDesigner.cpp:1521
-#, fuzzy
-#| msgid "Completion Word"
 msgctxt "KReportDesigner|"
 msgid "Cut selection to clipboard"
-msgstr "Автозавершение"
+msgstr "Вырезать выделение в буфер обмена"
 
 #: wrtembed/KReportDesigner.cpp:1525
-#, fuzzy
-#| msgid "Copy"
 msgctxt "KReportDesigner|"
 msgid "&Copy"
-msgstr "Копировать"
+msgstr "&Копировать"
 
 #: wrtembed/KReportDesigner.cpp:1527
-#, fuzzy
-#| msgid "Completion Word"
 msgctxt "KReportDesigner|"
 msgid "Copy selection to clipboard"
-msgstr "Автозавершение"
+msgstr "Копировать выделение в буфер обмена"
 
 #: wrtembed/KReportDesigner.cpp:1531
-#, fuzzy
-#| msgid "Paste"
 msgctxt "KReportDesigner|"
 msgid "&Paste"
-msgstr "Вставить"
+msgstr "&Вставить"
 
 #: wrtembed/KReportDesigner.cpp:1533
 msgctxt "KReportDesigner|"
 msgid "Paste clipboard content"
-msgstr ""
+msgstr "Вставить из буфера обмена"
 
 #: wrtembed/KReportDesigner.cpp:1544
 msgctxt "KReportDesigner|"
@@ -806,86 +745,64 @@ msgid "Lower"
 msgstr "Опустить"
 
 #: wrtembed/KReportDesignerSection.cpp:126
-#, fuzzy
-#| msgid "Detailed View"
 msgctxt "KReportDesignerSection|"
 msgid "Detail"
-msgstr "Подробный вид"
+msgstr "Подробно"
 
 #: wrtembed/KReportDetailGroupSectionDialog.cpp:35
-#, fuzzy
-#| msgid "Section Title"
 msgctxt "KReportDetailGroupSectionDialog|"
 msgid "Group Section Editor"
-msgstr "Заголовок раздела"
+msgstr "Редактор разделов группы"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:34
-#, fuzzy
-#| msgid "Column:"
 msgctxt "DetailGroupSectionDialog|"
 msgid "Column:"
-msgstr "Колонка:"
+msgstr "Столбец:"
 
 # combobox options: ascending, descending --aspotashev
 #: wrtembed/KReportDetailGroupSectionDialog.ui:51
-#, fuzzy
-#| msgid "Sort:"
 msgctxt "DetailGroupSectionDialog|"
 msgid "Sort:"
 msgstr "Сортировать:"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:68
-#, fuzzy
-#| msgid "Show Guides"
 msgctxt "DetailGroupSectionDialog|"
 msgid "Show group header:"
-msgstr "Показать направляющие"
+msgstr "Показать верхний колонтитул группы:"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:85
-#, fuzzy
-#| msgid "Show Guides"
 msgctxt "DetailGroupSectionDialog|"
 msgid "Show group footer:"
-msgstr "Показать направляющие"
+msgstr "Показать нижний колонтитул группы:"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:105
-#, fuzzy
-#| msgid "Insert break after paragraph"
 msgctxt "DetailGroupSectionDialog|"
 msgid "Insert page break after group footer:"
-msgstr "Вставить разрыв после абзаца"
+msgstr "Вставить разрыв страницы после нижнего колонтитула группы:"
 
 #: wrtembed/KReportPropertiesButton.cpp:26
-#, fuzzy
-#| msgid "Select styles to import:"
 msgctxt "KReportPropertiesButton|"
 msgid "Select entire report"
-msgstr "Импортировать стили:"
+msgstr "Выбрать весь отчёт"
 
 #: wrtembed/KReportPropertiesButton.cpp:27
 msgctxt "KReportPropertiesButton|"
 msgid ""
 "A button that allows a report's surface to be selected, allowing its "
 "properties to be seen."
-msgstr ""
+msgstr "Кнопка, позволяющая выбрать покрытие отчёта и отобразить его свойства."
 
 #: wrtembed/KReportRuler_p.cpp:1472
-#, fuzzy
-#| msgid "First line indent"
 msgctxt "KReportRuler|"
 msgid "First line indent"
 msgstr "Отступ первой строки"
 
 #: wrtembed/KReportRuler_p.cpp:1473
-#, fuzzy
-#| msgid "Left indent"
 msgctxt "KReportRuler|"
 msgid "Left indent"
 msgstr "Отступ слева"
 
 #: wrtembed/KReportRuler_p.cpp:1474
-#, fuzzy
-#| msgid "Right indent"
 msgctxt "KReportRuler|"
 msgid "Right indent"
 msgstr "Отступ справа"
@@ -916,32 +833,24 @@ msgid "Move Down"
 msgstr "Переместить ниже"
 
 #: wrtembed/KReportSectionEditor.cpp:311
-#, fuzzy
-#| msgid "Ascending"
 msgctxt "KReportSectionEditor|"
 msgid "Ascending"
 msgstr "По возрастанию"
 
 #: wrtembed/KReportSectionEditor.cpp:312
-#, fuzzy
-#| msgid "Descending"
 msgctxt "KReportSectionEditor|"
 msgid "Descending"
 msgstr "По убыванию"
 
 #: wrtembed/KReportSectionEditor.ui:29
-#, fuzzy
-#| msgid "Show Guides"
 msgctxt "SectionEditor|"
 msgid "Show report header"
-msgstr "Показать направляющие"
+msgstr "Показать верхний колонтитул отчёта"
 
 #: wrtembed/KReportSectionEditor.ui:36
-#, fuzzy
-#| msgid "Show Guides"
 msgctxt "SectionEditor|"
 msgid "Show report footer"
-msgstr "Показать направляющие"
+msgstr "Показать нижний колонтитул отчёта"
 
 #: wrtembed/KReportSectionEditor.ui:43
 msgctxt "SectionEditor|"
@@ -979,11 +888,9 @@ msgid "Page Footer"
 msgstr "Нижний колонтитул"
 
 #: wrtembed/KReportSectionEditor.ui:217
-#, fuzzy
-#| msgid "Current Section"
 msgctxt "SectionEditor|"
 msgid "Group Sections"
-msgstr "Текущий раздел"
+msgstr "Разделы группы"
 
 #: wrtembed/KReportZoomMode_p.cpp:28
 #, qt-format
@@ -992,15 +899,11 @@ msgid "%1%"
 msgstr "%1%"
 
 #: wrtembed/KReportZoomMode_p.cpp:29
-#, fuzzy
-#| msgid "Fit Page Width"
 msgctxt "KReportZoomMode|"
 msgid "Fit Page Width"
 msgstr "По ширине страницы"
 
 #: wrtembed/KReportZoomMode_p.cpp:30
-#, fuzzy
-#| msgid "Fit Page"
 msgctxt "KReportZoomMode|"
 msgid "Fit Page"
 msgstr "Страница целиком"
@@ -1008,95 +911,76 @@ msgstr "Страница целиком"
 #: wrtembed/KReportZoomMode_p.cpp:32
 msgctxt "KReportZoomMode|"
 msgid "Actual Pixels"
-msgstr ""
+msgstr "Фактический размер"
 
 #: wrtembed/KReportZoomMode_p.cpp:36
-#, fuzzy
-#| msgid "Fit Page Width"
 msgctxt "KReportZoomMode|"
 msgid "Fit Text Width"
-msgstr "По ширине страницы"
+msgstr "По ширине текста"
 
 #, fuzzy
-#~| msgctxt "KReportPageFormat|"
-#~| msgid "US Letter"
 #~ msgctxt ""
 #~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
 #~ msgid "US Letter"
 #~ msgstr "US Letter"
 
 #, fuzzy
-#~| msgctxt "KReportPageFormat|"
-#~| msgid "US Legal"
 #~ msgctxt ""
 #~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
 #~ msgid "US Legal"
 #~ msgstr "US Legal"
 
 #, fuzzy
-#~| msgctxt "Page size"
-#~| msgid "Custom"
 #~ msgctxt "KReportPageFormat|"
 #~ msgid "Custom"
 #~ msgstr "Другой формат"
 
 #, fuzzy
-#~| msgid "B"
 #~ msgctxt "KReportPageFormat|"
 #~ msgid "B6"
 #~ msgstr "B"
 
 #, fuzzy
-#~| msgid "B"
 #~ msgctxt "KReportPageFormat|"
 #~ msgid "B5"
 #~ msgstr "B"
 
 #, fuzzy
-#~| msgid "B"
 #~ msgctxt "KReportPageFormat|"
 #~ msgid "B4"
 #~ msgstr "B"
 
 #, fuzzy
-#~| msgid "Execute"
 #~ msgctxt "KReportPageFormat|"
 #~ msgid "Executive"
 #~ msgstr "Выполнить"
 
 #, fuzzy
-#~| msgid "B"
 #~ msgctxt "KReportPageFormat|"
 #~ msgid "B0"
 #~ msgstr "B"
 
 #, fuzzy
-#~| msgid "B"
 #~ msgctxt "KReportPageFormat|"
 #~ msgid "B1"
 #~ msgstr "B"
 
 #, fuzzy
-#~| msgctxt "KReportPageFormat|"
-#~| msgid "ISO B10"
 #~ msgctxt "KReportPageFormat|"
 #~ msgid "B10"
 #~ msgstr "ISO B10"
 
 #, fuzzy
-#~| msgid "B"
 #~ msgctxt "KReportPageFormat|"
 #~ msgid "B2"
 #~ msgstr "B"
 
 #, fuzzy
-#~| msgid "B"
 #~ msgctxt "KReportPageFormat|"
 #~ msgid "B3"
 #~ msgstr "B"
 
 #, fuzzy
-#~| msgid "Comma"
 #~ msgctxt "KReportPageFormat|"
 #~ msgid "Comm10"
 #~ msgstr "запятая"
@@ -1118,43 +1002,36 @@ msgstr "По ширине страницы"
 #~ msgstr "US Tabloid"
 
 #, fuzzy
-#~| msgid "Postal Code"
 #~ msgctxt "KReportPageFormat|"
 #~ msgid "Postcard"
 #~ msgstr "Почтовый индекс"
 
 #, fuzzy
-#~| msgid "Double Struck"
 #~ msgctxt "KReportPageFormat|"
 #~ msgid "Double Postcard"
 #~ msgstr "Контурный"
 
 #, fuzzy
-#~| msgid "Data Source"
 #~ msgctxt "KReportItemField|"
 #~ msgid "Data Source"
 #~ msgstr "Источник данных"
 
 #, fuzzy
-#~| msgid "Data Source"
 #~ msgctxt "KReportItemImage|"
 #~ msgid "Data Source"
 #~ msgstr "Источник данных"
 
 #, fuzzy
-#~| msgid "Data Source"
 #~ msgctxt "KReportItemText|"
 #~ msgid "Data Source"
 #~ msgstr "Источник данных"
 
 #, fuzzy
-#~| msgid "Unable to undelete tag"
 #~ msgctxt "Scripting::Text|"
 #~ msgid "$Unable to read %1"
 #~ msgstr "Не удалось восстановить метку"
 
 #, fuzzy
-#~| msgid "Screen"
 #~ msgctxt "KReportPageFormat|"
 #~ msgid "Screen"
 #~ msgstr "Осветление"
@@ -1164,19 +1041,16 @@ msgstr "По ширине страницы"
 #~ msgstr "Высота"
 
 #, fuzzy
-#~| msgid "Background Color"
 #~ msgctxt "KReportSection|"
 #~ msgid "Background Color"
 #~ msgstr "Цвет фона"
 
 #, fuzzy
-#~| msgid "Position"
 #~ msgctxt "KReportPosition|"
 #~ msgid "Position"
 #~ msgstr "Позиция"
 
 #, fuzzy
-#~| msgid "Size"
 #~ msgctxt "KReportSize|"
 #~ msgid "Size"
 #~ msgstr "Размер"
@@ -1262,97 +1136,81 @@ msgstr "По ширине страницы"
 #~ msgstr "US Common 10"
 
 #, fuzzy
-#~| msgid "Height"
 #~ msgctxt "KRSectionData|"
 #~ msgid "Height"
 #~ msgstr "Высота"
 
 #, fuzzy
-#~| msgid "Background Color"
 #~ msgctxt "KRSectionData|"
 #~ msgid "Background Color"
 #~ msgstr "Цвет фона"
 
 #, fuzzy
-#~| msgid "Line Weight"
 #~ msgctxt "KoReportItemCheck|"
 #~ msgid "Line Weight"
 #~ msgstr "Толщина линии"
 
 #, fuzzy
-#~| msgid "Line Color"
 #~ msgctxt "KoReportItemCheck|"
 #~ msgid "Line Color"
 #~ msgstr "Цвет линии"
 
 #, fuzzy
-#~| msgid "Line Style"
 #~ msgctxt "KoReportItemCheck|"
 #~ msgid "Line Style"
 #~ msgstr "Стиль линии"
 
 #, fuzzy
-#~| msgid "Data Source"
 #~ msgctxt "KoReportItemField|"
 #~ msgid "Data Source"
 #~ msgstr "Источник данных"
 
 #, fuzzy
-#~| msgid "Value"
 #~ msgctxt "KoReportItemField|"
 #~ msgid "Value"
 #~ msgstr "Значение"
 
 #, fuzzy
-#~| msgid "Background Color"
 #~ msgctxt "KoReportItemField|"
 #~ msgid "Background Color"
 #~ msgstr "Цвет фона"
 
 #, fuzzy
-#~| msgid "Foreground Color"
 #~ msgctxt "KoReportItemField|"
 #~ msgid "Foreground Color"
 #~ msgstr "Цвет переднего плана"
 
 #, fuzzy
-#~| msgid "Line Weight"
 #~ msgctxt "KoReportItemField|"
 #~ msgid "Line Weight"
 #~ msgstr "Толщина линии"
 
 #, fuzzy
-#~| msgid "Line Color"
 #~ msgctxt "KoReportItemField|"
 #~ msgid "Line Color"
 #~ msgstr "Цвет линии"
 
 #, fuzzy
-#~| msgid "Line Style"
 #~ msgctxt "KoReportItemField|"
 #~ msgid "Line Style"
 #~ msgstr "Стиль линии"
 
 #, fuzzy
-#~| msgid "Data Source"
 #~ msgctxt "KoReportItemImage|"
 #~ msgid "Data Source"
 #~ msgstr "Источник данных"
 
 #, fuzzy
-#~| msgid "Value"
 #~ msgctxt "KoReportItemImage|"
 #~ msgid "Value"
 #~ msgstr "Значение"
 
 #, fuzzy
-#~| msgid "Left:"
 #~ msgctxt "KoReportItemLabel|"
 #~ msgid "Left"
 #~ msgstr "Слева:"
 
 #, fuzzy
-#~| msgid "C&enter"
 #~ msgctxt "KoReportItemLabel|"
 #~ msgid "Center"
 #~ msgstr "По &центру"
@@ -1363,91 +1221,76 @@ msgstr "По ширине страницы"
 #~ msgstr "По &правому краю"
 
 #, fuzzy
-#~| msgid "Vertical alignment:"
 #~ msgctxt "KoReportItemLabel|"
 #~ msgid "Horizontal Alignment"
 #~ msgstr "Выравнивание по вертикали"
 
 #, fuzzy
-#~| msgid "Top:"
 #~ msgctxt "KoReportItemLabel|"
 #~ msgid "Top"
 #~ msgstr "Сверху:"
 
 #, fuzzy
-#~| msgid "Bottom:"
 #~ msgctxt "KoReportItemLabel|"
 #~ msgid "Bottom"
 #~ msgstr "Внизу:"
 
 #, fuzzy
-#~| msgid "Vertical Alignment"
 #~ msgctxt "KoReportItemLabel|"
 #~ msgid "Vertical Alignment"
 #~ msgstr "Выравнивание по вертикали"
 
 #, fuzzy
-#~| msgid "Font"
 #~ msgctxt "KoReportItemLabel|"
 #~ msgid "Font"
 #~ msgstr "Шрифт"
 
 #, fuzzy
-#~| msgid "Background Color"
 #~ msgctxt "KoReportItemLabel|"
 #~ msgid "Background Color"
 #~ msgstr "Цвет фона"
 
 #, fuzzy
-#~| msgid "Foreground Color"
 #~ msgctxt "KoReportItemLabel|"
 #~ msgid "Foreground Color"
 #~ msgstr "Цвет переднего плана"
 
 #, fuzzy
-#~| msgid "Background color:"
 #~ msgctxt "KoReportItemLabel|"
 #~ msgid "Background Opacity"
 #~ msgstr "Цвет фона:"
 
 #, fuzzy
-#~| msgid "Line Weight"
 #~ msgctxt "KoReportItemLabel|"
 #~ msgid "Line Weight"
 #~ msgstr "Толщина линии"
 
 #, fuzzy
-#~| msgid "Line Color"
 #~ msgctxt "KoReportItemLabel|"
 #~ msgid "Line Color"
 #~ msgstr "Цвет линии"
 
 #, fuzzy
-#~| msgid "Line Style"
 #~ msgctxt "KoReportItemLabel|"
 #~ msgid "Line Style"
 #~ msgstr "Стиль линии"
 
 #, fuzzy
-#~| msgid "Data Source"
 #~ msgctxt "KoReportItemText|"
 #~ msgid "Data Source"
 #~ msgstr "Источник данных"
 
 #, fuzzy
-#~| msgid "Value"
 #~ msgctxt "KoReportItemText|"
 #~ msgid "Value"
 #~ msgstr "Значение"
 
 #, fuzzy
-#~| msgid "Left:"
 #~ msgctxt "KoReportItemText|"
 #~ msgid "Left"
 #~ msgstr "Слева:"
 
 #, fuzzy
-#~| msgid "C&enter"
 #~ msgctxt "KoReportItemText|"
 #~ msgid "Center"
 #~ msgstr "По &центру"
@@ -1458,79 +1301,66 @@ msgstr "По ширине страницы"
 #~ msgstr "По &правому краю"
 
 #, fuzzy
-#~| msgid "Vertical alignment:"
 #~ msgctxt "KoReportItemText|"
 #~ msgid "Horizontal Alignment"
 #~ msgstr "Выравнивание по вертикали"
 
 #, fuzzy
-#~| msgid "Top:"
 #~ msgctxt "KoReportItemText|"
 #~ msgid "Top"
 #~ msgstr "Сверху:"
 
 #, fuzzy
-#~| msgid "Bottom:"
 #~ msgctxt "KoReportItemText|"
 #~ msgid "Bottom"
 #~ msgstr "Внизу:"
 
 #, fuzzy
-#~| msgid "Vertical Alignment"
 #~ msgctxt "KoReportItemText|"
 #~ msgid "Vertical Alignment"
 #~ msgstr "Выравнивание по вертикали"
 
 #, fuzzy
-#~| msgid "Font"
 #~ msgctxt "KoReportItemText|"
 #~ msgid "Font"
 #~ msgstr "Шрифт"
 
 #, fuzzy
-#~| msgid "Background Color"
 #~ msgctxt "KoReportItemText|"
 #~ msgid "Background Color"
 #~ msgstr "Цвет фона"
 
 #, fuzzy
-#~| msgid "Foreground Color"
 #~ msgctxt "KoReportItemText|"
 #~ msgid "Foreground Color"
 #~ msgstr "Цвет переднего плана"
 
 #, fuzzy
-#~| msgid "Line Weight"
 #~ msgctxt "KoReportItemText|"
 #~ msgid "Line Weight"
 #~ msgstr "Толщина линии"
 
 #, fuzzy
-#~| msgid "Line Color"
 #~ msgctxt "KoReportItemText|"
 #~ msgid "Line Color"
 #~ msgstr "Цвет линии"
 
 #, fuzzy
-#~| msgid "Line Style"
 #~ msgctxt "KoReportItemText|"
 #~ msgid "Line Style"
 #~ msgstr "Стиль линии"
 
 #, fuzzy
-#~| msgid "Background color:"
 #~ msgctxt "KoReportItemText|"
 #~ msgid "Background Opacity"
 #~ msgstr "Цвет фона:"
 
 #, fuzzy
-#~| msgid "Delete"
 #~ msgctxt "SectionEditor|"
 #~ msgid "Delete"
 #~ msgstr "Удалить"
 
 #, fuzzy
-#~| msgid "Script Manager"
 #~ msgctxt "KoReportDesigner|"
 #~ msgid "Script Interpreter"
 #~ msgstr "Управление сценариями"
@@ -1553,8 +1383,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Точность:"
 
 #, fuzzy
-#~| msgctxt "color"
-#~| msgid "Gainsboro"
 #~ msgctxt "The raw line data"
 #~ msgid "Raw"
 #~ msgstr "Светлый серо-фиолетовый"
@@ -1572,8 +1400,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Точность:"
 
 #, fuzzy
-#~| msgctxt "(qtundo-format)"
-#~| msgid "Combine paths"
 #~ msgid "Combine angle:"
 #~ msgstr ""
 #~ "Объединение контуров\n"
@@ -1628,12 +1454,10 @@ msgstr "По ширине страницы"
 #~ msgstr "Не удалось открыть базу данных «%1»."
 
 #, fuzzy
-#~| msgid "Create backup file"
 #~ msgid "Creating table failed."
 #~ msgstr "Создавать резервную копию"
 
 #, fuzzy
-#~| msgid "Cannot create storage"
 #~ msgid "Cannot create table without fields."
 #~ msgstr "Невозможно сохранить данные"
 
@@ -1641,7 +1465,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Системное имя «%1» нельзя использовать в качестве имени таблицы."
 
 #, fuzzy
-#~| msgid "Could not read the package \"%1\"."
 #~ msgid "Could not create the same table \"%1\" twice."
 #~ msgstr "Не удалось прочитать пакет «%1»."
 
@@ -1649,14 +1472,10 @@ msgstr "По ширине страницы"
 #~ msgstr "Таблица «%1» уже существует."
 
 #, fuzzy
-#~| msgid "The file %1 does not exist."
 #~ msgid "Table \"%1\" does not exist."
 #~ msgstr "Файл %1 не существует."
 
 #, fuzzy
-#~| msgid ""
-#~| "Could not load embedded object:\n"
-#~| "%1"
 #~ msgid "Could not remove object's data."
 #~ msgstr ""
 #~ "Не удаётся загрузить внедрённый объект:\n"
@@ -1666,52 +1485,39 @@ msgstr "По ширине страницы"
 #~ msgstr "Не получилось удалить таблицу «%1».\n"
 
 #, fuzzy
-#~| msgid ""
-#~| "Could not uninstall the script package \"%1\" since the script is not "
-#~| "installed."
 #~ msgid "Could not alter table \"%1\" using the same table as destination."
 #~ msgstr "Не удалось удалить пакет сценария «%1», поскольку он не установлен."
 
 #, fuzzy
-#~| msgid "Unknown interpreter '%1'"
 #~ msgid "Unknown table \"%1\"."
 #~ msgstr "Неизвестный интерпретатор '%1'"
 
 #, fuzzy
-#~| msgid "Could not read the beginning of the file."
 #~ msgid "Could not rename table \"%1\" using the same name."
 #~ msgstr "Не удалось прочитать заголовок файла."
 
 #, fuzzy
-#~| msgid "The file %1 does not exist."
 #~ msgid "Query \"%1\" does not exist."
 #~ msgstr "Файл %1 не существует."
 
 #, fuzzy
-#~| msgid "File Creation"
 #~ msgid "Begin transaction failed."
 #~ msgstr "Создание файла"
 
 #, fuzzy
-#~| msgid "This name is already used."
 #~ msgid "Transaction already started."
 #~ msgstr "Это имя уже используется."
 
 #, fuzzy
-#~| msgid "The file %1 does not exist."
 #~ msgid "Column <resource>%1</resource> does not exist in the query."
 #~ msgstr "Файл %1 не существует."
 
 #, fuzzy
-#~| msgid "Error while saving embedded documents"
 #~ msgctxt "Extended schema for a table: loading error"
 #~ msgid "Error while loading extended table schema."
 #~ msgstr "Ошибка сохранения внедрённых документов"
 
 #, fuzzy
-#~| msgid ""
-#~| "Parsing error in %1 at line %2, column %3\n"
-#~| "Error message: %4"
 #~ msgid ""
 #~ "Error in XML data: \"%1\" in line %2, column %3.\n"
 #~ "XML data: %4"
@@ -1720,12 +1526,10 @@ msgstr "По ширине страницы"
 #~ "Сообщение об ошибке: %4"
 
 #, fuzzy
-#~| msgid "Could not read the package \"%1\"."
 #~ msgid "Could not insert record because there is no master table specified."
 #~ msgstr "Не удалось прочитать пакет «%1»."
 
 #, fuzzy
-#~| msgid "Could not read the package \"%1\"."
 #~ msgid "Could not delete record because there is no master table specified."
 #~ msgstr "Не удалось прочитать пакет «%1»."
 
@@ -1737,17 +1541,14 @@ msgstr "По ширине страницы"
 #~ msgstr "файл: %1"
 
 #, fuzzy
-#~| msgid "Could not read the package \"%1\"."
 #~ msgid "Could not set value of database property \"%1\"."
 #~ msgstr "Не удалось прочитать пакет «%1»."
 
 #, fuzzy
-#~| msgid "Could not read the package \"%1\"."
 #~ msgid "Could not read database property \"%1\"."
 #~ msgstr "Не удалось прочитать пакет «%1»."
 
 #, fuzzy
-#~| msgid "Could not read the beginning of the file."
 #~ msgid "Could not read database properties."
 #~ msgstr "Не удалось прочитать заголовок файла."
 
@@ -1758,17 +1559,14 @@ msgstr "По ширине страницы"
 #~ msgstr "Не удалось найти ни одного драйвера базы данных."
 
 #, fuzzy
-#~| msgid "Could not read the package \"%1\"."
 #~ msgid "Could not find database driver \"%1\"."
 #~ msgstr "Не удалось прочитать пакет «%1»."
 
 #, fuzzy
-#~| msgid "Could not read the package \"%1\"."
 #~ msgid "Could not load database driver \"%1\"."
 #~ msgstr "Не удалось прочитать пакет «%1»."
 
 #, fuzzy
-#~| msgid "Could not read the package \"%1\"."
 #~ msgid "Could not find service <resource>%1</resource>."
 #~ msgstr "Не удалось прочитать пакет «%1»."
 
@@ -1779,7 +1577,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Поле не найдено"
 
 #, fuzzy
-#~| msgid "Could not create the file for saving"
 #~ msgid "Could not access the table directly using its name"
 #~ msgstr "Не удалось создать файл для сохранения"
 
@@ -1787,7 +1584,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Таблица не найдена"
 
 #, fuzzy
-#~| msgid "The file %1 does not exist."
 #~ msgid "Table \"%1\" has no \"%2\" field."
 #~ msgstr "Файл %1 не существует."
 
@@ -1795,7 +1591,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Байт"
 
 #, fuzzy
-#~| msgid "&Phone Number:"
 #~ msgid "Short Integer Number"
 #~ msgstr "&Номер телефона:"
 
@@ -1815,12 +1610,10 @@ msgstr "По ширине страницы"
 #~ msgstr "Время"
 
 #, fuzzy
-#~| msgid "Revision number:"
 #~ msgid "Single Precision Number"
 #~ msgstr "Номер редакции:"
 
 #, fuzzy
-#~| msgid "Revision number:"
 #~ msgid "Double Precision Number"
 #~ msgstr "Номер редакции:"
 
@@ -1837,8 +1630,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Недопустимая группа"
 
 #, fuzzy
-#~| msgctxt "(qtundo-format)"
-#~| msgid "Change List Numbering"
 #~ msgid "Floating Point Number"
 #~ msgstr ""
 #~ "Изменение нумерации списка\n"
@@ -1851,7 +1642,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Дата и время"
 
 #, fuzzy
-#~| msgid "Syntax Error"
 #~ msgid "Syntax error."
 #~ msgstr "Синтаксическая ошибка"
 
@@ -1859,7 +1649,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Ошибка."
 
 #, fuzzy
-#~| msgid "Syntax Error"
 #~ msgid "Error near \"%1\"."
 #~ msgstr "Синтаксическая ошибка"
 
@@ -1867,12 +1656,10 @@ msgstr "По ширине страницы"
 #~ msgstr "Номер порта сервера"
 
 #, fuzzy
-#~| msgid "Create backup file"
 #~ msgid "Record inserting failed."
 #~ msgstr "Создавать резервную копию"
 
 #, fuzzy
-#~| msgid "Error deleting layers"
 #~ msgid "Record deleting failed."
 #~ msgstr "Ошибка при удалении слоев"
 
@@ -1985,8 +1772,6 @@ msgstr "По ширине страницы"
 #~ "преобразование сегментов в линии"
 
 #, fuzzy
-#~| msgctxt "(qtundo-format)"
-#~| msgid "Set border"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Set marker"
 #~ msgstr ""
@@ -2082,8 +1867,6 @@ msgstr "По ширине страницы"
 #~ "изменение порядка объектов"
 
 #, fuzzy
-#~| msgctxt "(qtundo-format)"
-#~| msgid "Change page layout"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Change Shape RunAround"
 #~ msgstr ""
@@ -2109,8 +1892,6 @@ msgstr "По ширине страницы"
 #~ "изменение размера объектов"
 
 #, fuzzy
-#~| msgctxt "(qtundo-format)"
-#~| msgid "Set border"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Set stroke"
 #~ msgstr ""
@@ -2197,9 +1978,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Активный инструмент: %1"
 
 #, fuzzy
-#~| msgctxt "(qtundo-format)"
-#~| msgid "Paste Page"
-#~| msgid_plural "Paste Pages"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Paste Image"
 #~ msgstr ""
@@ -2308,7 +2086,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Нажмите клавишу «B», чтобы разбить контур на выбранные сегменты."
 
 #, fuzzy
-#~| msgid "Path editing tool"
 #~ msgid "Path editing"
 #~ msgstr "Редактор контуров"
 
@@ -2812,8 +2589,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Дизайн слайда"
 
 #, fuzzy
-#~| msgctxt "(qtundo-format)"
-#~| msgid "Change background image"
 #~ msgid "Use background of master page"
 #~ msgstr ""
 #~ "Изменение изображения фона\n"
@@ -2824,24 +2599,18 @@ msgstr "По ширине страницы"
 #~ msgstr "Выбрать изображение фона..."
 
 #, fuzzy
-#~| msgctxt "(qtundo-format)"
-#~| msgid "Change master page"
 #~ msgid "Display shapes of master page"
 #~ msgstr ""
 #~ "Изменение шаблона страницы\n"
 #~ "изменение шаблона страницы"
 
 #, fuzzy
-#~| msgctxt "(qtundo-format)"
-#~| msgid "Change master slide"
 #~ msgid "Display shapes of master slide"
 #~ msgstr ""
 #~ "Изменение шаблона слайда\n"
 #~ "изменение шаблона слайда"
 
 #, fuzzy
-#~| msgctxt "(qtundo-format)"
-#~| msgid "Change background image"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Change slide background image"
 #~ msgstr ""
@@ -2849,8 +2618,6 @@ msgstr "По ширине страницы"
 #~ "изменение изображения фона"
 
 #, fuzzy
-#~| msgctxt "(qtundo-format)"
-#~| msgid "Change background image"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Change page background image"
 #~ msgstr ""
@@ -2858,7 +2625,6 @@ msgstr "По ширине страницы"
 #~ "изменение изображения фона"
 
 #, fuzzy
-#~| msgid "Master Slide"
 #~ msgid "Master Slide %1/%2"
 #~ msgstr "Шаблон слайда"
 
@@ -2873,7 +2639,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Страница %1/%2"
 
 #, fuzzy
-#~| msgid "Field"
 #~ msgid "Field"
 #~ msgstr "Поле"
 
@@ -2885,7 +2650,6 @@ msgstr "По ширине страницы"
 #~ msgstr "%1: %2"
 
 #, fuzzy
-#~| msgid "Section Title"
 #~ msgid "Section Editor"
 #~ msgstr "Заголовок раздела"
 
@@ -2896,7 +2660,6 @@ msgstr "По ширине страницы"
 #~ "изменение списка"
 
 #, fuzzy
-#~| msgid "Change Char Style"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Change Styles"
 #~ msgstr "Изменить стиль символа"
@@ -2927,13 +2690,11 @@ msgstr "По ширине страницы"
 #~ "удаление строки"
 
 #, fuzzy
-#~| msgid "Insert Index"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Insert Footnote"
 #~ msgstr "Вставить указатель"
 
 #, fuzzy
-#~| msgid "Insert Index"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Insert Endnote"
 #~ msgstr "Вставить указатель"
@@ -2975,14 +2736,11 @@ msgstr "По ширине страницы"
 #~ "форматирование"
 
 #, fuzzy
-#~| msgid "Change Paragraph Spacing"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Direct Paragraph Formatting"
 #~ msgstr "Изменить отступ абзаца"
 
 #, fuzzy
-#~| msgctxt "(qtundo-format)"
-#~| msgid "Rename Shape"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Rename Section"
 #~ msgstr ""
@@ -2990,13 +2748,11 @@ msgstr "По ширине страницы"
 #~ "переименование объекта"
 
 #, fuzzy
-#~| msgid "Custom Line Width"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Adjust Column Width"
 #~ msgstr "Другая толщина линии"
 
 #, fuzzy
-#~| msgid "Paste As Text"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Paste As Text"
 #~ msgstr "Вставка как текст"
@@ -3037,7 +2793,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Заменить %1 на %2?"
 
 #, fuzzy
-#~| msgid "Current Section"
 #~ msgctxt "new numbered section name"
 #~ msgid "New section %1"
 #~ msgstr "Текущий раздел"
@@ -3070,7 +2825,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Добавить аннотацию"
 
 #, fuzzy
-#~| msgid "Insert Index"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Insert Index"
 #~ msgstr "Вставить указатель"
@@ -3086,13 +2840,11 @@ msgstr "По ширине страницы"
 #~ "нажатие клавиши"
 
 #, fuzzy
-#~| msgid "Insert Line Break"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Insert Break"
 #~ msgstr "Вставить разрыв строки"
 
 #, fuzzy
-#~| msgid "Insert Table"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Insert Table"
 #~ msgstr "Добавление таблицы"
@@ -3110,37 +2862,31 @@ msgstr "По ширине страницы"
 #~ "разделение ячеек"
 
 #, fuzzy
-#~| msgid "Custom Line Width"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Adjust Table Width"
 #~ msgstr "Другая толщина линии"
 
 #, fuzzy
-#~| msgid "Change Text Format"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Change Border Formatting"
 #~ msgstr "Изменить формат текста"
 
 #, fuzzy
-#~| msgid "Include in table of contents"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Insert Table Of Contents"
 #~ msgstr "Включать в оглавление"
 
 #, fuzzy
-#~| msgid "Include in table of contents"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Modify Table Of Contents"
 #~ msgstr "Включать в оглавление"
 
 #, fuzzy
-#~| msgid "Insert Line Break"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Insert Bibliography"
 #~ msgstr "Вставить разрыв строки"
 
 #, fuzzy
-#~| msgid "Addition"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Add Citation"
 #~ msgstr "Добавление"
@@ -3176,8 +2922,6 @@ msgstr "По ширине страницы"
 #~ "зачёркивание"
 
 #, fuzzy
-#~| msgctxt "(qtundo-format)"
-#~| msgid "Change Segment"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Change Alignment"
 #~ msgstr ""
@@ -3191,25 +2935,21 @@ msgstr "По ширине страницы"
 #~ "включение выравнивания по вертикали"
 
 #, fuzzy
-#~| msgid "Decrease Indent"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Decrease Indent"
 #~ msgstr "Уменьшение отступа"
 
 #, fuzzy
-#~| msgid "Increase Indent"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Increase Indent"
 #~ msgstr "Увеличение отступа"
 
 #, fuzzy
-#~| msgid "Decrease font size"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Decrease font size"
 #~ msgstr "Уменьшение размера шрифта"
 
 #, fuzzy
-#~| msgid "Increase font size"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Increase font size"
 #~ msgstr "Увеличение размер шрифта"
@@ -3272,7 +3012,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Повторить %1"
 
 #, fuzzy
-#~| msgid "Empty"
 #~ msgid "<empty>"
 #~ msgstr "Пусто"
 
@@ -3295,7 +3034,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Добавить новый профиль автора (на основе копии текущего)"
 
 #, fuzzy
-#~| msgid "Delete the current page"
 #~ msgid "Delete the author profile"
 #~ msgstr "Удалить текущую страницу"
 
@@ -3303,7 +3041,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Профиль автора по умолчанию"
 
 #, fuzzy
-#~| msgid "Number of Pictures"
 #~ msgid "Name of Profile"
 #~ msgstr "Количество рисунков"
 
@@ -3358,7 +3095,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Интервал автосохранения:"
 
 #, fuzzy
-#~| msgid "Create backup file"
 #~ msgid "Create backup file:"
 #~ msgstr "Создавать резервную копию"
 
@@ -3395,7 +3131,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Отступ вставки:"
 
 #, fuzzy
-#~| msgid "Paste at Cursor"
 #~ msgid "Paste at Cursor:"
 #~ msgstr "Вставить под курсором"
 
@@ -3419,7 +3154,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Calligra"
 
 #, fuzzy
-#~| msgid ": Critical Error"
 #~ msgid "%1: Critical Error"
 #~ msgstr ": критическая ошибка"
 
@@ -3510,7 +3244,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Открытие документа"
 
 #, fuzzy
-#~| msgid "Could not create the file for saving"
 #~ msgid "Could not create the filter plugin"
 #~ msgstr "Не удалось создать файл для сохранения"
 
@@ -3545,7 +3278,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Не хватает памяти"
 
 #, fuzzy
-#~| msgid "Failed to open scriptfile '%1'"
 #~ msgid "Failed to download remote file"
 #~ msgstr "Невозможно открыть файл сценария '%1'"
 
@@ -3644,16 +3376,12 @@ msgstr "По ширине страницы"
 #~ msgstr "рисунок"
 
 #, fuzzy
-#~| msgid ""
-#~| "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
-#~| "it?</p>"
 #~ msgid ""
 #~ "The document \"%1\" has been modified.\n"
 #~ "Do you want to save your changes or discard them?"
 #~ msgstr "<p>Документ <b>%1</b> был изменён.</p><p>Сохранить его?</p>"
 
 #, fuzzy
-#~| msgid "Create Document"
 #~ msgid "Close Document"
 #~ msgstr "Создать документ"
 
@@ -3697,7 +3425,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Далее"
 
 #, fuzzy
-#~| msgid "Previous Page"
 #~ msgctxt "Previous search result"
 #~ msgid "Previous"
 #~ msgstr "Предыдущая страница"
@@ -3749,7 +3476,6 @@ msgstr "По ширине страницы"
 #~ msgstr "&Экспорт..."
 
 #, fuzzy
-#~| msgid "&Create Document"
 #~ msgid "En&crypt Document"
 #~ msgstr "Созд&ать документ"
 
@@ -3769,7 +3495,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Показать панели"
 
 #, fuzzy
-#~| msgid "Show Dockers"
 #~ msgctxt "@action:inmenu"
 #~ msgid "Show Docker Titlebars"
 #~ msgstr "Показать панели"
@@ -3899,7 +3624,6 @@ msgstr "По ширине страницы"
 #~ msgstr "&Просмотр"
 
 #, fuzzy
-#~| msgid "Custom"
 #~ msgid "Custom:"
 #~ msgstr "Другой формат"
 
@@ -4138,7 +3862,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Эквивалентное"
 
 #, fuzzy
-#~| msgid "Additive-Substractive"
 #~ msgid "Additive-Subtractive"
 #~ msgstr "Аддитивное вычитание"
 
@@ -4176,12 +3899,10 @@ msgstr "По ширине страницы"
 #~ msgstr "Уменьшение яркости света"
 
 #, fuzzy
-#~| msgid "Background Color"
 #~ msgid "Darker Color"
 #~ msgstr "Цвет фона"
 
 #, fuzzy
-#~| msgid "Line Color"
 #~ msgid "Lighter Color"
 #~ msgstr "Цвет линии"
 
@@ -4303,7 +4024,6 @@ msgstr "По ширине страницы"
 #~ msgstr "32 бита с плавающей запятой"
 
 #, fuzzy
-#~| msgid "16 Bits Float"
 #~ msgid "64 Bits Float"
 #~ msgstr "16 бит с плавающей запятой"
 
@@ -4335,7 +4055,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Затемнение"
 
 #, fuzzy
-#~| msgid "Additive Substractive"
 #~ msgid "Additive Subtractive"
 #~ msgstr "Аддитивное вычитание"
 
@@ -4352,7 +4071,6 @@ msgstr "По ширине страницы"
 #~ msgstr "RDF"
 
 #, fuzzy
-#~| msgid "Title"
 #~ msgid "Triples"
 #~ msgstr "Название"
 
@@ -4381,7 +4099,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Таблицы стилей"
 
 #, fuzzy
-#~| msgid "Apply Style %1"
 #~ msgid "Apply Stylesheet"
 #~ msgstr "Применить стиль %1"
 
@@ -4392,12 +4109,10 @@ msgstr "По ширине страницы"
 #~ msgstr "Изменить %1"
 
 #, fuzzy
-#~| msgid "Stylesheet Name"
 #~ msgid "Stylesheet Definition"
 #~ msgstr "Название таблицы стилей"
 
 #, fuzzy
-#~| msgid "Variable Name"
 #~ msgid "Variables Available"
 #~ msgstr "Название переменной"
 
@@ -4414,8 +4129,6 @@ msgstr "По ширине страницы"
 #~ msgstr "URI"
 
 #, fuzzy
-#~| msgctxt "color"
-#~| msgid "LightCoral"
 #~ msgid "Literal"
 #~ msgstr "Светло-коралловый"
 
@@ -4423,7 +4136,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Пустой"
 
 #, fuzzy
-#~| msgid "Slide"
 #~ msgid "Valid"
 #~ msgstr "Слайд"
 
@@ -4431,12 +4143,10 @@ msgstr "По ширине страницы"
 #~ msgstr "Тема"
 
 #, fuzzy
-#~| msgid "Picture"
 #~ msgid "Predicate"
 #~ msgstr "Рисунок"
 
 #, fuzzy
-#~| msgid "Type"
 #~ msgid "Obj Type"
 #~ msgstr "Тип"
 
@@ -4444,12 +4154,10 @@ msgstr "По ширине страницы"
 #~ msgstr "Тип данных"
 
 #, fuzzy
-#~| msgid "Stopped"
 #~ msgid "Stored In"
 #~ msgstr "Остановлено"
 
 #, fuzzy
-#~| msgid "Identifier"
 #~ msgid "Invalid identifier"
 #~ msgstr "Идентификатор"
 
@@ -4458,7 +4166,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Нет"
 
 #, fuzzy
-#~| msgid "Circle Bullet"
 #~ msgid "Small Bullet"
 #~ msgstr "Маркер в виде окружности"
 
@@ -4466,28 +4173,22 @@ msgstr "По ширине страницы"
 #~ msgstr "Маркер в виде окружности"
 
 #, fuzzy
-#~| msgid "Circle Bullet"
 #~ msgid "Square Bullet"
 #~ msgstr "Маркер в виде окружности"
 
 #, fuzzy
-#~| msgid "Box Bullet"
 #~ msgid "Rhombus Bullet"
 #~ msgstr "Сплошной квадратный маркер"
 
 #, fuzzy
-#~| msgid "Circle Bullet"
 #~ msgid "Check Mark Bullet"
 #~ msgstr "Маркер в виде окружности"
 
 #, fuzzy
-#~| msgid "Right to left"
 #~ msgid "Rightwards Arrow Bullet"
 #~ msgstr "Справа налево"
 
 #, fuzzy
-#~| msgctxt "color"
-#~| msgid "Azure"
 #~ msgid "Arabic"
 #~ msgstr "Лазурь"
 
@@ -4498,22 +4199,18 @@ msgstr "По ширине страницы"
 #~ msgstr "Буквы в верхнем регистре"
 
 #, fuzzy
-#~| msgid "Lower Roman Numbers"
 #~ msgid "Lower Roman"
 #~ msgstr "Римские числа в нижнем регистре"
 
 #, fuzzy
-#~| msgid "Upper Roman Numbers"
 #~ msgid "Upper Roman"
 #~ msgstr "Римские числа в верхнем регистре"
 
 #, fuzzy
-#~| msgid "Circle Bullet"
 #~ msgid "Large Bullet"
 #~ msgstr "Маркер в виде окружности"
 
 #, fuzzy
-#~| msgid "Box Bullet"
 #~ msgid "Ballot X Bullet"
 #~ msgstr "Сплошной квадратный маркер"
 
@@ -4581,7 +4278,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Другая ( %1 )"
 
 #, fuzzy
-#~| msgid "General"
 #~ msgid "Generic"
 #~ msgstr "Обычный"
 
@@ -4669,25 +4365,21 @@ msgstr "По ширине страницы"
 #~ msgstr "до"
 
 #, fuzzy
-#~| msgid "Show Dockers"
 #~ msgctxt "@info:tooltip"
 #~ msgid "Float Docker"
 #~ msgstr "Показать панели"
 
 #, fuzzy
-#~| msgid "Create Document"
 #~ msgctxt "@info:tooltip"
 #~ msgid "Close Docker"
 #~ msgstr "Создать документ"
 
 #, fuzzy
-#~| msgid "Tool Bars Docker"
 #~ msgctxt "@info:tooltip"
 #~ msgid "Collapse Docker"
 #~ msgstr "Панель инструментов"
 
 #, fuzzy
-#~| msgid "Show Dockers"
 #~ msgctxt "@info:tooltip"
 #~ msgid "Lock Docker"
 #~ msgstr "Показать панели"
@@ -4733,7 +4425,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Сб&рос"
 
 #, fuzzy
-#~| msgid "Language"
 #~ msgid "Language:"
 #~ msgstr "Язык"
 
@@ -4741,7 +4432,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Общие"
 
 #, fuzzy
-#~| msgid "Last Page"
 #~ msgid "Last saved by"
 #~ msgstr "Последняя страница"
 
@@ -4820,32 +4510,26 @@ msgstr "По ширине страницы"
 #~ msgstr "Все поддерживаемые форматы"
 
 #, fuzzy
-#~| msgid "Open palette"
 #~ msgid "Testing: OpenFile"
 #~ msgstr "Открыть палитру"
 
 #, fuzzy
-#~| msgid "Directory Name"
 #~ msgid "Testing: OpenDirectory"
 #~ msgstr "Название каталога"
 
 #, fuzzy
-#~| msgid "Missing Import Filter"
 #~ msgid "Testing: ImportFile"
 #~ msgstr "Отсутствует фильтр импорта"
 
 #, fuzzy
-#~| msgid "Missing Import Filter"
 #~ msgid "Testing: ImportFiles"
 #~ msgstr "Отсутствует фильтр импорта"
 
 #, fuzzy
-#~| msgid "Import Resource"
 #~ msgid "Testing: Import Directory"
 #~ msgstr "Импорт данных"
 
 #, fuzzy
-#~| msgid "Save palette"
 #~ msgid "Testing: SaveFile"
 #~ msgstr "Сохранить палитру"
 
@@ -4859,12 +4543,10 @@ msgstr "По ширине страницы"
 #~ msgstr "блаблабла"
 
 #, fuzzy
-#~| msgid "After:"
 #~ msgid "Filter:"
 #~ msgstr "После:"
 
 #, fuzzy
-#~| msgid "TextLabel1:"
 #~ msgid "TextLabel"
 #~ msgstr "Надпись1:"
 
@@ -4875,12 +4557,10 @@ msgstr "По ширине страницы"
 #~ msgstr "Тип фильтра"
 
 #, fuzzy
-#~| msgid "Name"
 #~ msgid "Named"
 #~ msgstr "Название"
 
 #, fuzzy
-#~| msgid "Set default format"
 #~ msgid "Set default filter"
 #~ msgstr "Установить формат по умолчанию"
 
@@ -4888,12 +4568,10 @@ msgstr "По ширине страницы"
 #~ msgstr "Сохранить файл"
 
 #, fuzzy
-#~| msgid "Import lines:"
 #~ msgid "Import Files"
 #~ msgstr "Импорт строк:"
 
 #, fuzzy
-#~| msgid "Import lines:"
 #~ msgid "Import File"
 #~ msgstr "Импорт строк:"
 
@@ -4901,7 +4579,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Открыть папку"
 
 #, fuzzy
-#~| msgid "Import Resource"
 #~ msgid "Import Directory"
 #~ msgstr "Импорт данных"
 
@@ -4919,12 +4596,10 @@ msgstr "По ширине страницы"
 #~ msgstr "Изменить цвет заливки"
 
 #, fuzzy
-#~| msgid "Change the filling color"
 #~ msgid "Change the filling gradient"
 #~ msgstr "Изменить цвет заливки"
 
 #, fuzzy
-#~| msgid "Change the filling color"
 #~ msgid "Change the filling pattern"
 #~ msgstr "Изменить цвет заливки"
 
@@ -4935,17 +4610,14 @@ msgstr "По ширине страницы"
 #~ msgstr "Только значок"
 
 #, fuzzy
-#~| msgid "Bottom:"
 #~ msgid "Bottom side"
 #~ msgstr "Внизу:"
 
 #, fuzzy
-#~| msgid "Left indent"
 #~ msgid "Left side"
 #~ msgstr "Отступ слева"
 
 #, fuzzy
-#~| msgid "Right indent"
 #~ msgid "Right side"
 #~ msgstr "Отступ справа"
 
@@ -4953,7 +4625,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Разметка страницы"
 
 #, fuzzy
-#~| msgid "Empty Document"
 #~ msgid "Apply to document"
 #~ msgstr "Пустой документ"
 
@@ -4964,12 +4635,10 @@ msgstr "По ширине страницы"
 #~ msgstr "Правый край:"
 
 #, fuzzy
-#~| msgid "Last Printing"
 #~ msgid "Binding Edge:"
 #~ msgstr "Последняя распечатка"
 
 #, fuzzy
-#~| msgid "Page Size"
 #~ msgid "Page Edge:"
 #~ msgstr "Размер страницы"
 
@@ -4989,7 +4658,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Единица измерения:"
 
 #, fuzzy
-#~| msgid "Font style:"
 #~ msgid "Follow style:"
 #~ msgstr "Стиль шрифта:"
 
@@ -5030,12 +4698,10 @@ msgstr "По ширине страницы"
 #~ msgstr "Сверху:"
 
 #, fuzzy
-#~| msgid "Last Printing"
 #~ msgid "Binding edge:"
 #~ msgstr "Последняя распечатка"
 
 #, fuzzy
-#~| msgid "Page Preview"
 #~ msgid "Page edge:"
 #~ msgstr "Просмотр страницы"
 
@@ -5043,31 +4709,26 @@ msgstr "По ширине страницы"
 #~ msgstr "Внизу:"
 
 #, fuzzy
-#~| msgid "Import Resource"
 #~ msgctxt "@info:tooltip"
 #~ msgid "Import resource"
 #~ msgstr "Импорт данных"
 
 #, fuzzy
-#~| msgid "Delete Resource"
 #~ msgctxt "@info:tooltip"
 #~ msgid "Delete resource"
 #~ msgstr "Удалить данные"
 
 #, fuzzy
-#~| msgid "Download Resource"
 #~ msgctxt "@info:tooltip"
 #~ msgid "Download resource"
 #~ msgstr "Загрузить данные"
 
 #, fuzzy
-#~| msgid "Share Resource"
 #~ msgctxt "@info:tooltip"
 #~ msgid "Share Resource"
 #~ msgstr "Опубликовать данные"
 
 #, fuzzy
-#~| msgid "Choose File to Add"
 #~ msgctxt "@title:window"
 #~ msgid "Choose File to Add"
 #~ msgstr "Выберите файл для добавления"
@@ -5125,7 +4786,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Срезанный"
 
 #, fuzzy
-#~| msgid "Miter limit:"
 #~ msgid "Miter limit"
 #~ msgstr "Предел среза:"
 
@@ -5139,7 +4799,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Изменить цвет линии/контура"
 
 #, fuzzy
-#~| msgid "Tags"
 #~ msgid "Tag"
 #~ msgstr "Метки"
 
@@ -5159,17 +4818,14 @@ msgstr "По ширине страницы"
 #~ msgstr "Параметры инструмента"
 
 #, fuzzy
-#~| msgid "Toggles organising the options in tabs or not"
 #~ msgid "Toggles organizing the options in tabs or not"
 #~ msgstr "Режим вкладок"
 
 #, fuzzy
-#~| msgid "Select Character"
 #~ msgid "deselect item"
 #~ msgstr "Выберите символ"
 
 #, fuzzy
-#~| msgid "Select Character"
 #~ msgid "select item"
 #~ msgstr "Выберите символ"
 
@@ -5177,7 +4833,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Масштаб в выделение"
 
 #, fuzzy
-#~| msgid "Zoom Tool"
 #~ msgid "Zoom to All"
 #~ msgstr "Масштаб"
 
@@ -5192,7 +4847,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Метка:"
 
 #, fuzzy
-#~| msgid "Automatic"
 #~ msgctxt "Static Image"
 #~ msgid "Static"
 #~ msgstr "Автоматическое"
@@ -5235,7 +4889,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Файл базы данных \"%1\" не существует."
 
 #, fuzzy
-#~| msgid "The file %1 does not exist."
 #~ msgid "Table \"%1\" does not exist in the database."
 #~ msgstr "Файл %1 не существует."
 
@@ -5243,47 +4896,38 @@ msgstr "По ширине страницы"
 #~ msgstr "Проигнорировано"
 
 #, fuzzy
-#~| msgid "No such interpreter '%1'"
 #~ msgid "No such driver service: \"%1\"."
 #~ msgstr "Нет интерпретатора '%1'"
 
 #, fuzzy
-#~| msgid "Could not read the package \"%1\"."
 #~ msgid "Could not compact database \"%1\"."
 #~ msgstr "Не удалось прочитать пакет «%1»."
 
 #, fuzzy
-#~| msgid "Do you want to save the password?"
 #~ msgid "Do you want to open file \"%1\" as read-only?"
 #~ msgstr "Сохранить пароль?"
 
 #, fuzzy
-#~| msgid "Could not read the beginning of the file."
 #~ msgid "Could not gain exclusive access for writing the file."
 #~ msgstr "Не удалось прочитать заголовок файла."
 
 #, fuzzy
-#~| msgid "Could not load picture."
 #~ msgid "Could not close busy database."
 #~ msgstr "Не удалось загрузить рисунок."
 
 #, fuzzy
-#~| msgid "Could not export file."
 #~ msgid "Could not remove file \"%1\"."
 #~ msgstr "Не удалось экспортировать файл."
 
 #, fuzzy
-#~| msgid "The file %1 does not exist."
 #~ msgid "Table \"%1\" does not exist"
 #~ msgstr "Файл %1 не существует."
 
 #, fuzzy
-#~| msgid "Date Format"
 #~ msgid "Track Total Format"
 #~ msgstr "Формат даты"
 
 #, fuzzy
-#~| msgid "Show Grid"
 #~ msgid "Grid Snap"
 #~ msgstr "Показать сетку"
 
@@ -5291,37 +4935,30 @@ msgstr "По ширине страницы"
 #~ msgstr "Язык:"
 
 #, fuzzy
-#~| msgid "Format"
 #~ msgid "Formatting"
 #~ msgstr "Формат"
 
 #, fuzzy
-#~| msgid "Directory Name"
 #~ msgid "Testing: OpenDirectories"
 #~ msgstr "Название каталога"
 
 #, fuzzy
-#~| msgid "Import Resource"
 #~ msgid "Testing: ImportDirectories"
 #~ msgstr "Импорт данных"
 
 #, fuzzy
-#~| msgid "Save palette"
 #~ msgid "Testing: SaveFiles"
 #~ msgstr "Сохранить палитру"
 
 #, fuzzy
-#~| msgid "Directory Name"
 #~ msgid "Open Directories"
 #~ msgstr "Название каталога"
 
 #, fuzzy
-#~| msgid "Import Resource"
 #~ msgid "Import Directories"
 #~ msgstr "Импорт данных"
 
 #, fuzzy
-#~| msgid "Save palette"
 #~ msgid "Save Files"
 #~ msgstr "Сохранить палитру"
 
@@ -5350,20 +4987,14 @@ msgstr "По ширине страницы"
 #~ msgstr "Расположения"
 
 #, fuzzy
-#~| msgctxt "color"
-#~| msgid "Azure"
 #~ msgid "Area"
 #~ msgstr "Лазурь"
 
 #, fuzzy
-#~| msgid "Version"
 #~ msgid "Region"
 #~ msgstr "Версия"
 
 #, fuzzy
-#~| msgid ""
-#~| "Could not save\n"
-#~| "%1"
 #~ msgid ""
 #~ "Could not add entry\n"
 #~ "%1"
@@ -5410,12 +5041,10 @@ msgstr "По ширине страницы"
 #~ msgstr "&Домашняя страница:"
 
 #, fuzzy
-#~| msgid "Document Information"
 #~ msgid "Contact Information"
 #~ msgstr "Сведения о документе"
 
 #, fuzzy
-#~| msgid "Import Data"
 #~ msgid "Import contact"
 #~ msgstr "Импортировать данные"
 
@@ -5481,16 +5110,12 @@ msgstr "По ширине страницы"
 #~ msgstr "Экспорт в PDF"
 
 #, fuzzy
-#~| msgctxt "(qtundo-format)"
-#~| msgid "Set background"
 #~ msgid "Slide Background"
 #~ msgstr ""
 #~ "Выбор фона\n"
 #~ "выбор фона"
 
 #, fuzzy
-#~| msgctxt "(qtundo-format)"
-#~| msgid "Set background"
 #~ msgid "Document background"
 #~ msgstr ""
 #~ "Выбор фона\n"
@@ -5506,12 +5131,10 @@ msgstr "По ширине страницы"
 #~ msgstr "Первая страница"
 
 #, fuzzy
-#~| msgid "Copy Page"
 #~ msgid "Even Pages(s)"
 #~ msgstr "Скопировать страницу"
 
 #, fuzzy
-#~| msgid "Copy Page"
 #~ msgid "Any Pages(s)"
 #~ msgstr "Скопировать страницу"
 
@@ -5537,13 +5160,10 @@ msgstr "По ширине страницы"
 #~ msgstr "Показать тень"
 
 #, fuzzy
-#~| msgctxt "Underline Style"
-#~| msgid "Single"
 #~ msgid "Angle:"
 #~ msgstr "Одинарное"
 
 #, fuzzy
-#~| msgid "Shadow Offset:"
 #~ msgid "Offset:"
 #~ msgstr "Смещение тени:"
 
@@ -5566,7 +5186,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Установка предела среза"
 
 #, fuzzy
-#~| msgid "Insert Line Break"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Insert Bookmark"
 #~ msgstr "Вставить разрыв строки"
@@ -5590,12 +5209,10 @@ msgstr "По ширине страницы"
 #~ msgstr "Удалить строку"
 
 #, fuzzy
-#~| msgid "Include in table of contents"
 #~ msgid "Insert Table Of Contents"
 #~ msgstr "Включать в оглавление"
 
 #, fuzzy
-#~| msgid "Insert Line Break"
 #~ msgid "Insert Bibliography"
 #~ msgstr "Вставить разрыв строки"
 
@@ -5693,7 +5310,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Выравнивание по горизонтали"
 
 #, fuzzy
-#~| msgid "Change Borders"
 #~ msgid "Line Break"
 #~ msgstr "Изменить рамку"
 
@@ -5736,17 +5352,14 @@ msgstr "По ширине страницы"
 #~ msgstr "Импортировать"
 
 #, fuzzy
-#~| msgid "Shape"
 #~ msgid "Share"
 #~ msgstr "Фигура"
 
 #, fuzzy
-#~| msgid "Alpha"
 #~ msgid "Copy Opacy"
 #~ msgstr "Альфа-канал"
 
 #, fuzzy
-#~| msgid "Alpha"
 #~ msgid "Copy Alpha"
 #~ msgstr "Альфа-канал"
 
@@ -5757,12 +5370,10 @@ msgstr "По ширине страницы"
 #~ msgstr "Скрыть панели"
 
 #, fuzzy
-#~| msgid "Stop"
 #~ msgid "Atop"
 #~ msgstr "Остановить"
 
 #, fuzzy
-#~| msgid "Strikeout:"
 #~ msgid "Spread out:"
 #~ msgstr "Зачёркнутый:"
 
@@ -5776,27 +5387,22 @@ msgstr "По ширине страницы"
 #~ msgstr "© Cyrille Berger, 2007"
 
 #, fuzzy
-#~| msgid "Date Format"
 #~ msgid "Barcode"
 #~ msgstr "Формат даты"
 
 #, fuzzy
-#~| msgid "Date Format"
 #~ msgid "Barcode Format"
 #~ msgstr "Формат даты"
 
 #, fuzzy
-#~| msgid "a chart"
 #~ msgid "Chart"
 #~ msgstr "диаграмма"
 
 #, fuzzy
-#~| msgid "Select Font"
 #~ msgid "Field Font"
 #~ msgstr "Выберите шрифт"
 
 #, fuzzy
-#~| msgid "Tie"
 #~ msgid "Pie"
 #~ msgstr "Соединительная линия"
 
@@ -5805,37 +5411,30 @@ msgstr "По ширине страницы"
 #~ msgstr "По &правому краю"
 
 #, fuzzy
-#~| msgid "Clear"
 #~ msgid "Polar"
 #~ msgstr "Очистить"
 
 #, fuzzy
-#~| msgid "Data"
 #~ msgid "Chart Type"
 #~ msgstr "Данные"
 
 #, fuzzy
-#~| msgid "Space"
 #~ msgid "Stacked"
 #~ msgstr "Пробел"
 
 #, fuzzy
-#~| msgid "Recent:"
 #~ msgid "Percent"
 #~ msgstr "Недавние цвета:"
 
 #, fuzzy
-#~| msgid "Rows:"
 #~ msgid "Rows"
 #~ msgstr "Строк:"
 
 #, fuzzy
-#~| msgid "Color name:"
 #~ msgid "Color Scheme"
 #~ msgstr "Название цвета:"
 
 #, fuzzy
-#~| msgid "Untitled"
 #~ msgid "Antialiased"
 #~ msgstr "Безымянный"
 
@@ -5849,7 +5448,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Перемещение"
 
 #, fuzzy
-#~| msgid "Custom"
 #~ msgid "Out"
 #~ msgstr "Другой формат"
 
@@ -6100,17 +5698,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Расширить рамку на следующий абзац"
 
 #, fuzzy
-#~| msgid ""
-#~| "<p>Merge with next paragraph</p>\n"
-#~| "\n"
-#~| "<p>When this option is checked, no top or bottom borders\n"
-#~| "will appear between consecutive paragraphs with the\n"
-#~| "same style.  Top and Bottom borders will only appear between\n"
-#~| "paragraphs with different styles.</p>\n"
-#~| "\n"
-#~| "<p>When this option is unchecked, top and bottom borders\n"
-#~| "always appear at the top and bottom of paragraphs with this style,\n"
-#~| "regardless of the style of the preceeding and subsequent paragraphs.</p>"
 #~ msgid ""
 #~ "<p>Merge with next paragraph</p>\n"
 #~ "\n"
@@ -6346,17 +5933,14 @@ msgstr "По ширине страницы"
 #~ msgstr "&Справка"
 
 #, fuzzy
-#~| msgid "Street"
 #~ msgid "Storage Test"
 #~ msgstr "Улица"
 
 #, fuzzy
-#~| msgid "Street"
 #~ msgid "Storage Test 2"
 #~ msgstr "Улица"
 
 #, fuzzy
-#~| msgid "Paste Text"
 #~ msgid "Master page"
 #~ msgstr "Вставить текст из буфера обмена"
 
@@ -6369,12 +5953,10 @@ msgstr "По ширине страницы"
 #~ msgstr "Исказить..."
 
 #, fuzzy
-#~| msgid "Proportional"
 #~ msgid "KoProperty Test"
 #~ msgstr "Пропорционально"
 
 #, fuzzy
-#~| msgid "Warning"
 #~ msgctxt "Mouse Cursor Shape"
 #~ msgid "Waiting"
 #~ msgstr "Предупреждение"
@@ -6390,7 +5972,6 @@ msgstr "По ширине страницы"
 #~ msgstr "горизонтальное:"
 
 #, fuzzy
-#~| msgid "Size"
 #~ msgctxt "Mouse Cursor Shape"
 #~ msgid "Size All"
 #~ msgstr "Размер"
@@ -6401,41 +5982,34 @@ msgstr "По ширине страницы"
 #~ msgstr "горизонтальное:"
 
 #, fuzzy
-#~| msgid "Last Printing"
 #~ msgctxt "Mouse Cursor Shape"
 #~ msgid "Pointing Hand"
 #~ msgstr "Последняя распечатка"
 
 #, fuzzy
-#~| msgid "Insert Variable"
 #~ msgid "Insert image from file"
 #~ msgstr "Вставить переменную"
 
 #, fuzzy
-#~| msgid "Select Character"
 #~ msgid "Select Char"
 #~ msgstr "Выберите символ"
 
 #, fuzzy
-#~| msgid "Minute"
 #~ msgctxt "Size Policy"
 #~ msgid "Minimum"
 #~ msgstr "Минуты"
 
 #, fuzzy
-#~| msgid "E&ncoding:"
 #~ msgctxt "Size Policy"
 #~ msgid "Expanding"
 #~ msgstr "Кодиров&ка:"
 
 #, fuzzy
-#~| msgid "General"
 #~ msgctxt "General properties"
 #~ msgid "General"
 #~ msgstr "Общие"
 
 #, fuzzy
-#~| msgid "Width:"
 #~ msgid "Width"
 #~ msgstr "Ширина:"
 
@@ -6444,7 +6018,6 @@ msgstr "По ширине страницы"
 #~ msgstr "горизонтальное:"
 
 #, fuzzy
-#~| msgid "Vertical alignment:"
 #~ msgid "Vertical Size Type"
 #~ msgstr "Выравнивание по вертикали"
 
@@ -6461,12 +6034,10 @@ msgstr "По ширине страницы"
 #~ msgstr "Показать &сетку"
 
 #, fuzzy
-#~| msgid "Line Distance (%1)"
 #~ msgid "Snap Distance (px)"
 #~ msgstr "Межстрочный интервал (%1):"
 
 #, fuzzy
-#~| msgid "Guide Lines"
 #~ msgid "Enable Guide Lines Guide "
 #~ msgstr "Направляющие"
 
@@ -6479,12 +6050,10 @@ msgstr "По ширине страницы"
 #~ msgstr "Прилипание к сетке"
 
 #, fuzzy
-#~| msgid "Guide Lines"
 #~ msgid "Edit Guidelines"
 #~ msgstr "Направляющие"
 
 #, fuzzy
-#~| msgid "Add Guide Line"
 #~ msgid "Edit guidelines"
 #~ msgstr "Добавить направляющую"
 
@@ -6589,7 +6158,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Автовыравнивание по правому краю"
 
 #, fuzzy
-#~| msgid "Align Auto"
 #~ msgid "Align Top"
 #~ msgstr "Автоматическое выравнивание"
 
@@ -6598,17 +6166,14 @@ msgstr "По ширине страницы"
 #~ msgstr "Цвет по умолчанию"
 
 #, fuzzy
-#~| msgid "Position:"
 #~ msgid "Position x:"
 #~ msgstr "Положение:"
 
 #, fuzzy
-#~| msgid "Position:"
 #~ msgid "Position y:"
 #~ msgstr "Положение:"
 
 #, fuzzy
-#~| msgid "Borders"
 #~ msgid "Order:"
 #~ msgstr "Границы абзаца"
 
@@ -7439,7 +7004,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Импорт стилей"
 
 #, fuzzy
-#~| msgid "Alignment"
 #~ msgid "Aligment"
 #~ msgstr "Выравнивание"
 
@@ -8024,7 +7588,6 @@ msgstr "По ширине страницы"
 #~ msgstr "Изменить регистр"
 
 #, fuzzy
-#~| msgid "None"
 #~ msgid "done"
 #~ msgstr "Нет"
 
