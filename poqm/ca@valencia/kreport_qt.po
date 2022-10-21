@@ -778,8 +778,8 @@ msgid ""
 "A button that allows a report's surface to be selected, allowing its "
 "properties to be seen."
 msgstr ""
-"Un botó que permet una superfície d'informe a seleccionar, permetent que es "
-"vegen les seues propietats."
+"Un botó que permet una superfície d'informe que se seleccionarà, permetent "
+"que es vegen les seues propietats."
 
 #: wrtembed/KReportRuler_p.cpp:1472
 msgctxt "KReportRuler|"
