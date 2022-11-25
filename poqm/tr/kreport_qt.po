@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: calligra-kde4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-22 01:56+0000\n"
-"PO-Revision-Date: 2022-05-11 12:11+0300\n"
+"PO-Revision-Date: 2022-11-24 17:05+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.04.0\n"
+"X-Generator: Lokalize 22.08.3\n"
 "X-Qt-Contexts: true\n"
 
 #: common/KReportDesign.cpp:150
@@ -693,7 +693,7 @@ msgstr "Çizgi"
 #: wrtembed/KReportDesigner.cpp:1519
 msgctxt "KReportDesigner|"
 msgid "Cu&t"
-msgstr "Ke&s"
+msgstr "&Kes"
 
 #: wrtembed/KReportDesigner.cpp:1521
 msgctxt "KReportDesigner|"
@@ -703,7 +703,7 @@ msgstr "Seçimi kesip panoya yapıştır"
 #: wrtembed/KReportDesigner.cpp:1525
 msgctxt "KReportDesigner|"
 msgid "&Copy"
-msgstr "&Kopyala"
+msgstr "Ko&pyala"
 
 #: wrtembed/KReportDesigner.cpp:1527
 msgctxt "KReportDesigner|"
