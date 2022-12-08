@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: common/KReportDesign.cpp:150
 msgctxt "KReportDesign|"
@@ -495,67 +495,67 @@ msgstr ""
 #: wrtembed/KReportDesigner.cpp:315
 msgctxt "KReportDesigner|"
 msgid "Unsupported Script Type"
-msgstr ""
+msgstr "სკრიპტის მხარდაუჭერელი ტიპი"
 
 #: wrtembed/KReportDesigner.cpp:676
 msgctxt "KReportDesigner|"
 msgid "Page Header (Any)"
-msgstr ""
+msgstr "გვერდის თავსართი (ნებისმიერი)"
 
 #: wrtembed/KReportDesigner.cpp:680
 msgctxt "KReportDesigner|"
 msgid "Page Header (Even)"
-msgstr ""
+msgstr "გვერდის თავსართი (ლუწი)"
 
 #: wrtembed/KReportDesigner.cpp:684
 msgctxt "KReportDesigner|"
 msgid "Page Header (Odd)"
-msgstr ""
+msgstr "გვერდის თავსართი (კენტი)"
 
 #: wrtembed/KReportDesigner.cpp:688
 msgctxt "KReportDesigner|"
 msgid "Page Header (First)"
-msgstr ""
+msgstr "გვერდის თავსართი (პირველი)"
 
 #: wrtembed/KReportDesigner.cpp:692
 msgctxt "KReportDesigner|"
 msgid "Page Header (Last)"
-msgstr ""
+msgstr "გვერდის თავსართი (ბოლო)"
 
 #: wrtembed/KReportDesigner.cpp:696
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Any)"
-msgstr ""
+msgstr "გვერდის ქვესართი (ყველა)"
 
 #: wrtembed/KReportDesigner.cpp:700
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Even)"
-msgstr ""
+msgstr "გვერდის ქვესართი (ლუწი)"
 
 #: wrtembed/KReportDesigner.cpp:704
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Odd)"
-msgstr ""
+msgstr "გვერდის ქვესართი (კენტი)"
 
 #: wrtembed/KReportDesigner.cpp:708
 msgctxt "KReportDesigner|"
 msgid "Page Footer (First)"
-msgstr ""
+msgstr "გვერდის ქვესართი (პირველი)"
 
 #: wrtembed/KReportDesigner.cpp:712
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Last)"
-msgstr ""
+msgstr "გვერდის ქვესართი (ბოლო)"
 
 #: wrtembed/KReportDesigner.cpp:716
 msgctxt "KReportDesigner|"
 msgid "Report Header"
-msgstr ""
+msgstr "ანგარიშის თავსართი"
 
 #: wrtembed/KReportDesigner.cpp:720
 msgctxt "KReportDesigner|"
 msgid "Report Footer"
-msgstr ""
+msgstr "ანგარიშის ქვესართი"
 
 #: wrtembed/KReportDesigner.cpp:808
 msgctxt "KReportDesigner|Main report element"
@@ -570,7 +570,7 @@ msgstr "სათაური"
 #: wrtembed/KReportDesigner.cpp:813
 msgctxt "KReportDesigner|"
 msgid "Report Title"
-msgstr ""
+msgstr "ანგარიშის სათაური"
 
 #: wrtembed/KReportDesigner.cpp:818
 msgctxt "KReportDesigner|"
@@ -580,7 +580,7 @@ msgstr "Page Size"
 #: wrtembed/KReportDesigner.cpp:821
 msgctxt "KReportDesigner|"
 msgid "Custom Page Size"
-msgstr ""
+msgstr "გვერდის ზომის მორგება"
 
 #: wrtembed/KReportDesigner.cpp:825
 msgctxt "KReportDesigner|"
@@ -595,12 +595,12 @@ msgstr "ლანდშაფტი"
 #: wrtembed/KReportDesigner.cpp:827
 msgctxt "KReportDesigner|"
 msgid "Page Orientation"
-msgstr ""
+msgstr "გვერდის ორიენტაცია"
 
 #: wrtembed/KReportDesigner.cpp:832
 msgctxt "KReportDesigner|"
 msgid "Page Unit"
-msgstr ""
+msgstr "გვერდის ერთეული"
 
 #: wrtembed/KReportDesigner.cpp:833
 msgctxt "KReportDesigner|"
@@ -615,32 +615,32 @@ msgstr "ბადეზე მიბმა"
 #: wrtembed/KReportDesigner.cpp:835
 msgctxt "KReportDesigner|"
 msgid "Grid Divisions"
-msgstr ""
+msgstr "ბადის დანაყოფები"
 
 #: wrtembed/KReportDesigner.cpp:841
 msgctxt "KReportDesigner|"
 msgid "Left Margin"
-msgstr ""
+msgstr "მარცხენა ზღვარი"
 
 #: wrtembed/KReportDesigner.cpp:843
 msgctxt "KReportDesigner|"
 msgid "Right Margin"
-msgstr ""
+msgstr "მარჯვენა ზღვარი"
 
 #: wrtembed/KReportDesigner.cpp:845
 msgctxt "KReportDesigner|"
 msgid "Top Margin"
-msgstr ""
+msgstr "ზედა ზღვარი"
 
 #: wrtembed/KReportDesigner.cpp:847
 msgctxt "KReportDesigner|"
 msgid "Bottom Margin"
-msgstr ""
+msgstr "ქვედა ზღვარი"
 
 #: wrtembed/KReportDesigner.cpp:869
 msgctxt "KReportDesigner|"
 msgid "Object Script"
-msgstr ""
+msgstr "ობიექტის სკრიპტი"
 
 #: wrtembed/KReportDesigner.cpp:1067
 msgctxt "KReportDesigner|"
@@ -690,7 +690,7 @@ msgstr "&კოპირება"
 #: wrtembed/KReportDesigner.cpp:1527
 msgctxt "KReportDesigner|"
 msgid "Copy selection to clipboard"
-msgstr ""
+msgstr "მონიშნულის ბუფერში კოპირება"
 
 #: wrtembed/KReportDesigner.cpp:1531
 msgctxt "KReportDesigner|"
@@ -700,7 +700,7 @@ msgstr "&ჩასმა"
 #: wrtembed/KReportDesigner.cpp:1533
 msgctxt "KReportDesigner|"
 msgid "Paste clipboard content"
-msgstr ""
+msgstr "გაცვლის ბუფერიდან ჩასმა"
 
 #: wrtembed/KReportDesigner.cpp:1544
 msgctxt "KReportDesigner|"
@@ -725,7 +725,7 @@ msgstr "დეტალები"
 #: wrtembed/KReportDetailGroupSectionDialog.cpp:35
 msgctxt "KReportDetailGroupSectionDialog|"
 msgid "Group Section Editor"
-msgstr ""
+msgstr "ჯგუფის სექციის რედაქტორი"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:34
 msgctxt "DetailGroupSectionDialog|"
@@ -740,22 +740,22 @@ msgstr "დალაგება:"
 #: wrtembed/KReportDetailGroupSectionDialog.ui:68
 msgctxt "DetailGroupSectionDialog|"
 msgid "Show group header:"
-msgstr ""
+msgstr "ჯგუფის თავსართის ჩვენება:"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:85
 msgctxt "DetailGroupSectionDialog|"
 msgid "Show group footer:"
-msgstr ""
+msgstr "ჯგუფის ქვესართის ჩვენება:"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:105
 msgctxt "DetailGroupSectionDialog|"
 msgid "Insert page break after group footer:"
-msgstr ""
+msgstr "ჯგუფის ქვესართის შემდეგ გვერდის გამოტოვების ჩასმა:"
 
 #: wrtembed/KReportPropertiesButton.cpp:26
 msgctxt "KReportPropertiesButton|"
 msgid "Select entire report"
-msgstr ""
+msgstr "მთლიანი ანგარიშის მონიშვნა"
 
 #: wrtembed/KReportPropertiesButton.cpp:27
 msgctxt "KReportPropertiesButton|"
@@ -763,11 +763,13 @@ msgid ""
 "A button that allows a report's surface to be selected, allowing its "
 "properties to be seen."
 msgstr ""
+"ღილაკი, რომელიც საშუალებას გაძლევთ, ანგარიშის ზედაპირი მონიშნოთ, რითიც მათ "
+"თვისებებს დაინახავთ."
 
 #: wrtembed/KReportRuler_p.cpp:1472
 msgctxt "KReportRuler|"
 msgid "First line indent"
-msgstr ""
+msgstr "პირველი ხაზის შეწევა"
 
 #: wrtembed/KReportRuler_p.cpp:1473
 msgctxt "KReportRuler|"
@@ -817,17 +819,17 @@ msgstr "Დაღმავალი"
 #: wrtembed/KReportSectionEditor.ui:29
 msgctxt "SectionEditor|"
 msgid "Show report header"
-msgstr ""
+msgstr "ანგარიშის თავსართის ჩვენება"
 
 #: wrtembed/KReportSectionEditor.ui:36
 msgctxt "SectionEditor|"
 msgid "Show report footer"
-msgstr ""
+msgstr "ანგარიშის ქვესართის ჩვენება"
 
 #: wrtembed/KReportSectionEditor.ui:43
 msgctxt "SectionEditor|"
 msgid "Page Header"
-msgstr ""
+msgstr "გვერდის თავსართი"
 
 #: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
 msgctxt "SectionEditor|"
@@ -857,7 +859,7 @@ msgstr "კენტი გვერდები:"
 #: wrtembed/KReportSectionEditor.ui:130
 msgctxt "SectionEditor|"
 msgid "Page Footer"
-msgstr ""
+msgstr "გვერდის ქვესართი"
 
 #: wrtembed/KReportSectionEditor.ui:217
 msgctxt "SectionEditor|"
