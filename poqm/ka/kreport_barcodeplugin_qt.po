@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: KReportItemBarcode.cpp:120
 msgctxt "KReportItemBarcode|"
@@ -72,7 +72,7 @@ msgstr "EAN-13"
 msgctxt ""
 "KReportItemBarcode|Interleaved barcode 2 of 5: barcode symbology, keep short"
 msgid "Interleaved 2 of 5"
-msgstr ""
+msgstr "2 მონაცვლეობა 5-დან"
 
 #: KReportItemBarcode.cpp:141
 msgctxt "KReportItemBarcode|Barcode symbology, keep short"

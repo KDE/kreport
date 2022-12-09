@@ -467,6 +467,10 @@ msgid ""
 "Do you want to suppress further messages?\n"
 "(messages will be restored next time the report is opened)"
 msgstr ""
+"სკრიპტის შეფასება შეუძლებელია. შეცდომა: %1\n"
+"\n"
+"გნებავთ შემდეგი შეცდომები ნაჩვენები აღარ იყოს?\n"
+"(შეტყობინებები აღდგება შემდეგ ჯერზე, როცა ანგარიშს გახსნით)"
 
 #: renderer/scripting/KReportScriptHandler.cpp:171
 #, qt-format
@@ -491,6 +495,9 @@ msgid ""
 "JavaScript language are supported. To prevent losing the scripts, their type "
 "and content will not be changed unless you change these scripts."
 msgstr ""
+"ეს ანგარიში \"%1\"-ის ტიპის სკრიპტებს შეიცავს. მხარდაჭერილი კი მხოლოდ "
+"JavaScript-ზე დაწერილი სკრიპტებია. მათი დაკარგვის თავიდან ასაცილებლად, მათი "
+"ტიპი და შემცველობა არ ჩასწორება, თუ ამას თქვენ არ იზამთ."
 
 #: wrtembed/KReportDesigner.cpp:315
 msgctxt "KReportDesigner|"
