@@ -121,7 +121,7 @@ void KReportSectionData::Private::loadXml(const QDomElement &elemSource)
             kreportWarning() << "While parsing section encountered an unknown element:" << n;
         }
     }
-    qSort(objects.begin(), objects.end(), zLessThan);
+    std::sort(objects.begin(), objects.end(), zLessThan);
     valid = true;
 }
 

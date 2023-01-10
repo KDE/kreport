@@ -86,8 +86,8 @@ do { \
     QTest::qFail(#actual " != " #expected, __FILE__, __LINE__); \
     QList<type> actualList = actual.toList(); \
     QList<type> expectedList = expected.toList(); \
-    qSort(actualList); \
-    qSort(expectedList); \
+    std::sort(actualList.begin(), actualList.end()); \
+    std::sort(expectedList.begin(), expectedList.end()); \
     QList<type>::ConstIterator actualListIt = actualList.constBegin(); \
     QList<type>::ConstIterator expectedListIt = expectedList.constBegin(); \
     const int count = qMax(actualList.count(), expectedList.count()); \

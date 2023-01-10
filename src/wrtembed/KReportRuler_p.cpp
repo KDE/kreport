@@ -454,7 +454,7 @@ void HorizontalPaintingStrategy::drawMeasurements(const KReportRuler::Private *d
     for(int i = 0; i < lengthInPixel; i += numberStepPixel) {
         int number = qRound((i / numberStepPixel) * numberStep);
 
-        textLength = qMax(textLength, fontMetrics.width(QString::number(number)));
+        textLength = qMax(textLength, fontMetrics.horizontalAdvance(QString::number(number)));
     }
     textLength += 4;  // Add some padding
 
@@ -512,7 +512,7 @@ void HorizontalPaintingStrategy::drawMeasurements(const KReportRuler::Private *d
                 numberText = QString::number(hackyLength - stepCount * numberStep);
             }
             painter->setPen(numberPen);
-            painter->drawText(QPointF(x-fontMetrics.width(numberText)/2.0,
+            painter->drawText(QPointF(x-fontMetrics.horizontalAdvance(numberText)/2.0,
                                      rectangle.bottom() -fullStepMarkerLength -measurementTextAboveBelowMargin),
                              numberText);
             painter->setPen(markerPen);
@@ -683,7 +683,7 @@ void VerticalPaintingStrategy::drawMeasurements(const KReportRuler::Private *d, 
 
     for(int i = 0; i < lengthInPixel; i += numberStepPixel) {
         int number = qRound((i / numberStepPixel) * numberStep);
-        textLength = qMax(textLength, fontMetrics.width(QString::number(number)));
+        textLength = qMax(textLength, fontMetrics.horizontalAdvance(QString::number(number)));
     }
     textLength += 4;  // Add some padding
 
@@ -731,7 +731,7 @@ void VerticalPaintingStrategy::drawMeasurements(const KReportRuler::Private *d, 
             int number = qRound(stepCount * numberStep);
             QString numberText = QString::number(number);
             painter->setPen(numberPen);
-            painter->drawText(QPointF(-fontMetrics.width(numberText) / 2.0, -measurementTextAboveBelowMargin), numberText);
+            painter->drawText(QPointF(-fontMetrics.horizontalAdvance(numberText) / 2.0, -measurementTextAboveBelowMargin), numberText);
             painter->restore();
 
             ++stepCount;
@@ -818,13 +818,13 @@ void HorizontalDistancesPaintingStrategy::drawDistanceLine(const KReportRuler::P
     const QFontMetrics fontMetrics(font);
     QString label = d->unit.toUserStringValue(
             d->viewConverter->viewToDocumentX(line.length())) + QLatin1String("") + d->unit.symbol();
-    QPointF labelPosition = QPointF(midPoint.x() - fontMetrics.width(label)/2,
+    QPointF labelPosition = QPointF(midPoint.x() - fontMetrics.horizontalAdvance(label)/2,
             midPoint.y() + fontMetrics.ascent()/2);
     painter->setFont(font);
     painter->drawText(labelPosition, label);
 
     // Draw the arrow lines
-    qreal arrowLength = (line.length() - fontMetrics.width(label)) / 2 - 2;
+    qreal arrowLength = (line.length() - fontMetrics.horizontalAdvance(label)) / 2 - 2;
     arrowLength = qMax(qreal(0.0), arrowLength);
     QLineF startArrow(line.p1(), line.pointAt(arrowLength / line.length()));
     QLineF endArrow(line.p2(), line.pointAt(1.0 - arrowLength / line.length()));
@@ -855,7 +855,7 @@ void HorizontalDistancesPaintingStrategy::drawMeasurements(const KReportRuler::P
     points << d->effectiveActiveRangeStart();
     points << d->effectiveActiveRangeEnd();
     points << d->rulerLength;
-    qSort(points.begin(), points.end());
+    std::sort(points.begin(), points.end());
     QListIterator<qreal> i(points);
     i.next();
     while (i.hasNext() && i.hasPrevious()) {
@@ -1236,7 +1236,7 @@ void KReportRuler::updateTabs(const QList<KReportRuler::Tab> &tabs, qreal tabDis
 QList<KReportRuler::Tab> KReportRuler::tabs() const
 {
     QList<Tab> answer = d->tabs;
-    qSort(answer.begin(), answer.end(), compareTabs);
+    std::sort(answer.begin(), answer.end(), compareTabs);
 
     return answer;
 }

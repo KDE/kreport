@@ -76,7 +76,7 @@ KReportSection::KReportSection(const QDomElement & elemSource, KReportReportData
         }
         kreportWarning() << "While parsing section encountered an unknown element: " << n;
     }
-    qSort(m_objects.begin(), m_objects.end(), zLessThan);
+    std::sort(m_objects.begin(), m_objects.end(), zLessThan);
     m_valid = true;
 }
 bool KReportSection::zLessThan(KReportItemBase* s1, KReportItemBase* s2)

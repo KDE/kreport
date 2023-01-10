@@ -363,7 +363,7 @@ QColor OROSection::backgroundColor() const
 void OROSection::sortPrimitives(Qt::Orientation orientation)
 {
     if (orientation == Qt::Horizontal) {
-        qSort(d->primitives.begin(), d->primitives.end(), xLessThan);
+        std::sort(d->primitives.begin(), d->primitives.end(), xLessThan);
     }
 }
 
