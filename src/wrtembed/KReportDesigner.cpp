@@ -1479,7 +1479,7 @@ QList<QAction*> KReportDesigner::itemActions(QActionGroup* group)
     act->setCheckable(true);
     actList << act;
 
-    qSort(actList.begin(), actList.end(), actionPriortyLessThan);
+    std::sort(actList.begin(), actList.end(), actionPriortyLessThan);
     int i = 0;
 
     /*! @todo maybe this is a bit hackish
