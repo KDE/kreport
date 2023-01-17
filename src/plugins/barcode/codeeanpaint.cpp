@@ -207,9 +207,9 @@ void renderCodeEAN13(const QRect & r, const QString & _str, Qt::Alignment align,
         pPainter->fillRect(pos, top, 1, draw_height, pPainter->pen().color());
 
         QString parstr = QString::number(val[0]);
-        QString leftstr = QString().sprintf("%d%d%d%d%d%d",
+        QString leftstr = QString::asprintf("%d%d%d%d%d%d",
                                             val[1], val[2], val[3], val[4], val[5], val[6]);
-        QString rightstr = QString().sprintf("%d%d%d%d%d%d",
+        QString rightstr = QString::asprintf("%d%d%d%d%d%d",
                                              val[7], val[8], val[9], val[10], val[11], val[12]);
         pPainter->setFont(QFont(QLatin1String("Arial"), 6));
         pPainter->drawText(r.left(), r.top() + draw_height - 12,
