@@ -1,0 +1,3961 @@
+# translation of koffice.po to Lithuanian
+#
+# Donatas Glodenis <dgvirtual@akl.lt>, 2005.
+# Andrius Štikonas <andrius@stikonas.eu>, 2008-2009.
+# Remigijus Jarmalavičius <remigijus@jarmalavicius.lt>, 2011, 2012.
+# Liudas Ališauskas <liudas@akmc.lt>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: calligra\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2014-03-16 19:49+0200\n"
+"Last-Translator: Liudas Ališauskas <liudas@aksioma.lt>\n"
+"Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
+"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
+"X-Generator: Lokalize 1.5\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+#, fuzzy
+#| msgid "Close Document"
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "Užverti dokumentą"
+
+#: common/KReportDesign.cpp:159
+#, fuzzy
+#| msgid "Error in embedded document"
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Klaida įterptame dokumente"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Name"
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Vardas"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Object Name"
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Objekto pavadinimas"
+
+#: common/KReportItemBase.cpp:78
+#, fuzzy
+#| msgid "Position"
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Pozicija"
+
+#: common/KReportItemBase.cpp:79
+#, fuzzy
+#| msgid "Size"
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Dydis"
+
+#: common/KReportItemBase.cpp:112
+#, fuzzy
+#| msgid "Data Source"
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Duomenų šaltinis"
+
+#: common/KReportItemLine.cpp:80
+#, fuzzy
+#| msgid "Position"
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "Pozicija"
+
+#: common/KReportItemLine.cpp:81
+#, fuzzy
+#| msgid "Position"
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Pozicija"
+
+#: common/KReportItemLine.cpp:83
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr ""
+
+#: common/KReportItemLine.cpp:85
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Linijos spalva"
+
+#: common/KReportItemLine.cpp:86
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Linijos stilius"
+
+#: common/KReportSectionData.cpp:164
+#, fuzzy
+#| msgid "Group Sections"
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Grupiniai pažymėjimai"
+
+#: common/KReportSectionData.cpp:166
+#, fuzzy
+#| msgid "Height"
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "Aukštis"
+
+#: common/KReportSectionData.cpp:170
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Fono spalva"
+
+#: common/KReportUnit.cpp:136
+#, fuzzy
+#| msgid "Invalid Type"
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Netinkamas tipas"
+
+#: common/KReportUnit.cpp:138
+#, fuzzy
+#| msgid "Millimeters (mm)"
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "Milimetrai (mm)"
+
+#: common/KReportUnit.cpp:140
+#, fuzzy
+#| msgid "Centimeters (cm)"
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "Centimetrai (cm)"
+
+#: common/KReportUnit.cpp:142
+#, fuzzy
+#| msgid "Decimeters (dm)"
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "Decimetrai (dm)"
+
+#: common/KReportUnit.cpp:144
+#, fuzzy
+#| msgid "Inches (in)"
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "Coliai (in)"
+
+#: common/KReportUnit.cpp:146
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr ""
+
+#: common/KReportUnit.cpp:148
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr ""
+
+#: common/KReportUnit.cpp:150
+#, fuzzy
+#| msgid "Points (pt)"
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "Taškai (pt)"
+
+#: common/KReportUnit.cpp:152
+#, fuzzy
+#| msgid "Pixels (px)"
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "Pikseliai (piks)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Cross"
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Kryžiuoti"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Dot"
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr "Taškas"
+
+#: items/check/KReportItemCheck.cpp:80
+#, fuzzy
+#| msgid "Style"
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "Stilius"
+
+#: items/check/KReportItemCheck.cpp:84
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Priekinio plano spalva"
+
+#: items/check/KReportItemCheck.cpp:86
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:88
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Linijos spalva"
+
+#: items/check/KReportItemCheck.cpp:89
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Linijos stilius"
+
+#: items/check/KReportItemCheck.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Reikšmė"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Reikšmė"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Left"
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Kairė"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Center"
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Centras"
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Right"
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Dešinė"
+
+#: items/field/KReportItemField.cpp:96
+#, fuzzy
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Horizontalus lygiavimas"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Top"
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "Viršus"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Bottom"
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Apačia"
+
+#: items/field/KReportItemField.cpp:102
+#, fuzzy
+#| msgid "Vertical Alignment"
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Vertikalus lygiavimas"
+
+#: items/field/KReportItemField.cpp:104
+#, fuzzy
+#| msgid "Font"
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Šriftas"
+
+#: items/field/KReportItemField.cpp:106
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Fono spalva"
+
+#: items/field/KReportItemField.cpp:107
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Priekinio plano spalva"
+
+#: items/field/KReportItemField.cpp:109
+#, fuzzy
+#| msgid "Background"
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Fonas"
+
+#: items/field/KReportItemField.cpp:114
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:116
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Linijos spalva"
+
+#: items/field/KReportItemField.cpp:117
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Linijos stilius"
+
+#: items/field/KReportItemField.cpp:119
+#, fuzzy
+#| msgid "Word Wrap"
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr "Žodžių laužymas"
+
+#: items/field/KReportItemField.cpp:120
+#, fuzzy
+#| msgid "Can Grow"
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr "Gali augti"
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgid "Clip"
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr "Iškarpa"
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgid "Stretch"
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Ištempti"
+
+#: items/image/KReportItemImage.cpp:120
+#, fuzzy
+#| msgid "Resize Mode"
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "Dydžio keitimo veiksena"
+
+#: items/image/KReportItemImage.cpp:121
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Reikšmė"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:91
+#, fuzzy
+#| msgid "Caption"
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Antraštė"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Left"
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Kairė"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Center"
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Centras"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Right"
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Dešinė"
+
+#: items/label/KReportItemLabel.cpp:96
+#, fuzzy
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Horizontalus lygiavimas"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Top"
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "Viršus"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Bottom"
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Apačia"
+
+#: items/label/KReportItemLabel.cpp:102
+#, fuzzy
+#| msgid "Vertical Alignment"
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Vertikalus lygiavimas"
+
+#: items/label/KReportItemLabel.cpp:104
+#, fuzzy
+#| msgid "Font"
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Šriftas"
+
+#: items/label/KReportItemLabel.cpp:106
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Fono spalva"
+
+#: items/label/KReportItemLabel.cpp:107
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Priekinio plano spalva"
+
+#: items/label/KReportItemLabel.cpp:109
+#, fuzzy
+#| msgid "Background"
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Fonas"
+
+#: items/label/KReportItemLabel.cpp:114
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:116
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Linijos spalva"
+
+#: items/label/KReportItemLabel.cpp:117
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Linijos stilius"
+
+#: items/text/KReportItemText.cpp:115
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Reikšmė"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Left"
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Kairė"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Center"
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Centras"
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Right"
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Dešinė"
+
+#: items/text/KReportItemText.cpp:121
+#, fuzzy
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Horizontalus lygiavimas"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Top"
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "Viršus"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Bottom"
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Apačia"
+
+#: items/text/KReportItemText.cpp:127
+#, fuzzy
+#| msgid "Vertical Alignment"
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Vertikalus lygiavimas"
+
+#: items/text/KReportItemText.cpp:129
+#, fuzzy
+#| msgid "Font"
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Šriftas"
+
+#: items/text/KReportItemText.cpp:131
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Fono spalva"
+
+#: items/text/KReportItemText.cpp:132
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Priekinio plano spalva"
+
+#: items/text/KReportItemText.cpp:134
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:136
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Linijos spalva"
+
+#: items/text/KReportItemText.cpp:137
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Linijos stilius"
+
+#: items/text/KReportItemText.cpp:138
+#, fuzzy
+#| msgid "Background"
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Fonas"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, fuzzy, qt-format
+#| msgid "Script File"
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr "Scenarijaus failas"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+#, fuzzy
+#| msgid "Syntax Error"
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Sintaksės klaida"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:676
+#, fuzzy
+#| msgid "Page Header"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Puslapio antraštė"
+
+#: wrtembed/KReportDesigner.cpp:680
+#, fuzzy
+#| msgid "Page Header"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Puslapio antraštė"
+
+#: wrtembed/KReportDesigner.cpp:684
+#, fuzzy
+#| msgid "Page Header"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Puslapio antraštė"
+
+#: wrtembed/KReportDesigner.cpp:688
+#, fuzzy
+#| msgid "Page Header"
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Puslapio antraštė"
+
+#: wrtembed/KReportDesigner.cpp:692
+#, fuzzy
+#| msgid "Page Header"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Puslapio antraštė"
+
+#: wrtembed/KReportDesigner.cpp:696
+#, fuzzy
+#| msgid "Page Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "Puslapio paraštė"
+
+#: wrtembed/KReportDesigner.cpp:700
+#, fuzzy
+#| msgid "Page Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "Puslapio paraštė"
+
+#: wrtembed/KReportDesigner.cpp:704
+#, fuzzy
+#| msgid "Page Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "Puslapio paraštė"
+
+#: wrtembed/KReportDesigner.cpp:708
+#, fuzzy
+#| msgid "Page Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "Puslapio paraštė"
+
+#: wrtembed/KReportDesigner.cpp:712
+#, fuzzy
+#| msgid "Page Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "Puslapio paraštė"
+
+#: wrtembed/KReportDesigner.cpp:716
+#, fuzzy
+#| msgid "Report Header"
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "Ataskaitos puslapinė antraštė"
+
+#: wrtembed/KReportDesigner.cpp:720
+#, fuzzy
+#| msgid "Report Footer"
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "Ataskaitos puslapinė poraštė"
+
+#: wrtembed/KReportDesigner.cpp:808
+#, fuzzy
+#| msgid "Export"
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "Eksportuoti"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Title"
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Antraštė"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Report Footer"
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Ataskaitos puslapinė poraštė"
+
+#: wrtembed/KReportDesigner.cpp:818
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Puslapio dydis"
+
+#: wrtembed/KReportDesigner.cpp:821
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Puslapio dydis"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "Portrait"
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "Stačias"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "Landscape"
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "Gulsčias"
+
+#: wrtembed/KReportDesigner.cpp:827
+#, fuzzy
+#| msgid "Page Orientation"
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "Lapo orientacija"
+
+#: wrtembed/KReportDesigner.cpp:832
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Puslapio dydis"
+
+#: wrtembed/KReportDesigner.cpp:833
+#, fuzzy
+#| msgid "Show Grid"
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Rodyti tinklelį"
+
+#: wrtembed/KReportDesigner.cpp:834
+#, fuzzy
+#| msgid "Snap to Grid"
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Pritraukti prie tinklelio"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:841
+#, fuzzy
+#| msgid "Left Margin"
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Kairė paraštė"
+
+#: wrtembed/KReportDesigner.cpp:843
+#, fuzzy
+#| msgid "Right Margin"
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Dešinė paraštė"
+
+#: wrtembed/KReportDesigner.cpp:845
+#, fuzzy
+#| msgid "Top Margin"
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Viršutinė paraštė"
+
+#: wrtembed/KReportDesigner.cpp:847
+#, fuzzy
+#| msgid "Bottom Margin"
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Apatinė paraštė"
+
+#: wrtembed/KReportDesigner.cpp:869
+#, fuzzy
+#| msgid "Object Script"
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Objekto scenarijus"
+
+#: wrtembed/KReportDesigner.cpp:1067
+#, fuzzy
+#| msgid "Cut"
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Iškirpti"
+
+#: wrtembed/KReportDesigner.cpp:1071
+#, fuzzy
+#| msgid "Copy"
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Kopijuoti"
+
+#: wrtembed/KReportDesigner.cpp:1076
+#, fuzzy
+#| msgid "Paste"
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Padėti"
+
+#: wrtembed/KReportDesigner.cpp:1087
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Trinti"
+
+# (pofilter) compendiumconflicts: checks for Gettext compendium conflicts (#-#-#-#-#)
+#: wrtembed/KReportDesigner.cpp:1129
+#, fuzzy
+#| msgid "Line"
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Eilutė"
+
+# (pofilter) compendiumconflicts: checks for Gettext compendium conflicts (#-#-#-#-#)
+#: wrtembed/KReportDesigner.cpp:1476
+#, fuzzy
+#| msgid "Line"
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Eilutė"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1525
+#, fuzzy
+#| msgid "Copy"
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "Kopijuoti"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1531
+#, fuzzy
+#| msgid "Paste"
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "Padėti"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1544
+#, fuzzy
+#| msgid "Collection"
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Rinkinys"
+
+#: wrtembed/KReportDesigner.cpp:1547
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1549
+#, fuzzy
+#| msgid "Lower Roman"
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr "Mažieji romėniški skaitmenys"
+
+#: wrtembed/KReportDesignerSection.cpp:126
+#, fuzzy
+#| msgid "Detail"
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "Detaliai"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+#, fuzzy
+#| msgid "Group Sections"
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Grupiniai pažymėjimai"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+#, fuzzy
+#| msgid "Column:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Stulpelis:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+#, fuzzy
+#| msgid "Sort:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Rūšiuoti:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+#, fuzzy
+#| msgid "Show group header:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Rodyti grupės antraštę:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+#, fuzzy
+#| msgid "Show group footer:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Rodyti grupės poraštę:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+
+#: wrtembed/KReportRuler_p.cpp:1472
+#, fuzzy
+#| msgid "First line indent"
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Pirmos eilutės įtrauka"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+#, fuzzy
+#| msgid "Left side"
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Kairė pusė"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+#, fuzzy
+#| msgid "Right side"
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Dešinė pusė"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+#, fuzzy
+#| msgid "Add..."
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr "Pridėti..."
+
+#: wrtembed/KReportSectionEditor.cpp:74
+#, fuzzy
+#| msgid "Edit..."
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "Keisti..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Trinti"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+#, fuzzy
+#| msgid "Move Up"
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Perkelti aukštyn"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+#, fuzzy
+#| msgid "Move Down"
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Perkelti žemyn"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+#, fuzzy
+#| msgid "Ascending"
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr "Didėjančiai"
+
+#: wrtembed/KReportSectionEditor.cpp:312
+#, fuzzy
+#| msgid "Descending"
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr "Mažėjančiai"
+
+#: wrtembed/KReportSectionEditor.ui:29
+#, fuzzy
+#| msgid "Show report header"
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Rodyti ataskaitų antraštę"
+
+#: wrtembed/KReportSectionEditor.ui:36
+#, fuzzy
+#| msgid "Show report header"
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Rodyti ataskaitų antraštę"
+
+#: wrtembed/KReportSectionEditor.ui:43
+#, fuzzy
+#| msgid "Page Header"
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Puslapio antraštė"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+#, fuzzy
+#| msgid "First page:"
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "Pirmas puslapis:"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+#, fuzzy
+#| msgid "Even pages:"
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Lyginiai puslapiai:"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+#, fuzzy
+#| msgid "Any pages:"
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Bet kuris puslapiai:"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+#, fuzzy
+#| msgid "Last page:"
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Paskutinis puslapis:"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+#, fuzzy
+#| msgid "Odd pages:"
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Nelyginiai puslapiai:"
+
+#: wrtembed/KReportSectionEditor.ui:130
+#, fuzzy
+#| msgid "Page Footer"
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "Puslapio paraštė"
+
+#: wrtembed/KReportSectionEditor.ui:217
+#, fuzzy
+#| msgid "Group Sections"
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Grupiniai pažymėjimai"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, fuzzy, qt-format
+#| msgid "%1%"
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+#, fuzzy
+#| msgid "Fit Page Width"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Tinkantis prie puslapio pločio"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+#, fuzzy
+#| msgid "Fit Page"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Talpinti į puslapį"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr ""
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+#, fuzzy
+#| msgid "Fit Page Width"
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Tinkantis prie puslapio pločio"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Letter"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "US Letter"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Legal"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "US Legal"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "Custom"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "Pasirinktas"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B6"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B5"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B4"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "Execute"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "Vykdyti"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B0"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B1"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "ISO B10"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B2"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B3"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "Comma"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "Kablelis"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO DL"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "ISO DL"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Ledger"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "US Letter"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Tabloid"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Tabloid"
+#~ msgstr "US Tabloid"
+
+#, fuzzy
+#~| msgid "Postal code:"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "Pašto kodas:"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Ekranas"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "Pozicija"
+
+#, fuzzy
+#~| msgid "Height"
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "Aukštis"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Fono spalva"
+
+#, fuzzy
+#~| msgid "Size"
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "Dydis"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Duomenų šaltinis"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Duomenų šaltinis"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Duomenų šaltinis"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "ISO A3"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "ISO A4"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "ISO A5"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "ISO B5"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Executive"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "US Executive"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "ISO A0"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "ISO A1"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "ISO A2"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "ISO A6"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A7"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "ISO A7"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A8"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "ISO A8"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A9"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "ISO A9"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "ISO B0"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "ISO B1"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "ISO B2"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "ISO B3"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "ISO B4"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "ISO B6"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO C5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "ISO C5"
+
+#, fuzzy
+#~| msgid "Height"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "Aukštis"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "Fono spalva"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "Linijos spalva"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "Linijos stilius"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Duomenų šaltinis"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "Reikšmė"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "Fono spalva"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "Priekinio plano spalva"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "Linijos spalva"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "Linijos stilius"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Duomenų šaltinis"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "Reikšmė"
+
+#, fuzzy
+#~| msgid "Left"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "Kairė"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "Centras"
+
+#, fuzzy
+#~| msgid "Right"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "Dešinė"
+
+#, fuzzy
+#~| msgid "Horizontal Alignment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Horizontalus lygiavimas"
+
+#, fuzzy
+#~| msgid "Top"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "Viršus"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "Apačia"
+
+#, fuzzy
+#~| msgid "Vertical Alignment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Vertikalus lygiavimas"
+
+#, fuzzy
+#~| msgid "Font"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "Šriftas"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "Fono spalva"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "Priekinio plano spalva"
+
+#, fuzzy
+#~| msgid "Background"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "Fonas"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "Linijos spalva"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "Linijos stilius"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Duomenų šaltinis"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "Reikšmė"
+
+#, fuzzy
+#~| msgid "Left"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "Kairė"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "Centras"
+
+#, fuzzy
+#~| msgid "Right"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "Dešinė"
+
+#, fuzzy
+#~| msgid "Horizontal Alignment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Horizontalus lygiavimas"
+
+#, fuzzy
+#~| msgid "Top"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "Viršus"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "Apačia"
+
+#, fuzzy
+#~| msgid "Vertical Alignment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Vertikalus lygiavimas"
+
+#, fuzzy
+#~| msgid "Font"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "Šriftas"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "Fono spalva"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "Priekinio plano spalva"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "Linijos spalva"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "Linijos stilius"
+
+#, fuzzy
+#~| msgid "Background"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "Fonas"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "Trinti"
+
+#, fuzzy
+#~| msgid "Script Interpreter"
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "Scenarijaus interpretatorius"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Liudas Ališauskas, Andrius Štikonas, Remigijus Jarmalavičius"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "liudas@akmc.lt, andrius@stikonas.eu, remigijus@jarmalavicius.lt"
+
+#, fuzzy
+#~| msgid "Freehand Path Drawing Tool"
+#~ msgid "Freehand path"
+#~ msgstr "Laisvo piešimo įrankis"
+
+#~ msgid "Precision:"
+#~ msgstr "Tikslumas:"
+
+#~ msgctxt "The raw line data"
+#~ msgid "Raw"
+#~ msgstr "Neapdorotas"
+
+#~ msgid "Curve"
+#~ msgstr "Kreivė"
+
+#~ msgid "Optimize"
+#~ msgstr "Optimizuoti"
+
+#~ msgid "Pencil"
+#~ msgstr "Pieštukas"
+
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr "Nepavyko atverti „%1“ projekto failo."
+
+#~ msgid "The database \"%1\" does not exist."
+#~ msgstr "Duomenų bazė „%1“ neegzistuoja."
+
+#, fuzzy
+#~| msgid "The database \"%1\" does not exist."
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "Duomenų bazė „%1“ neegzistuoja."
+
+#~ msgid "Database file \"%1\" is not writable."
+#~ msgstr "Duomenų bazė „%1“ nėra įrašoma."
+
+#~ msgid "Creating table failed."
+#~ msgstr "Nepavyko sukurti lentelės."
+
+#~ msgid "Table \"%1\" does not exist."
+#~ msgstr "Lentelė „%1“ neegzistuoja."
+
+#~ msgid "Query \"%1\" does not exist."
+#~ msgstr "Užklausa „%1“ neegzistuoja."
+
+#, fuzzy
+#~| msgid "Single transactions"
+#~ msgid "Begin transaction failed."
+#~ msgstr "Vienetinės transakcijos"
+
+#~ msgid "Transaction already started."
+#~ msgstr "Transakcija jau startavo."
+
+#, fuzzy
+#~| msgid "Column %1 does not exist for the query."
+#~ msgid "Column <resource>%1</resource> does not exist in the query."
+#~ msgstr "Stulpelis %1, kuris panaudotas užklausoje, neegzistuoja."
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Unknown error."
+#~ msgstr "Nežinoma klaida"
+
+#, fuzzy
+#~| msgid "file"
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "failas"
+
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "Negalima perskaityti duomenų bazės ypatybės „%1“."
+
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "Negalima paleisti duomenų bazės „%1“ tvarkyklės."
+
+#, fuzzy
+#~| msgid "Could not find %1"
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "Nepavyko rasti %1"
+
+#~ msgid "Field not found"
+#~ msgstr "Laukas nerastas"
+
+#~ msgid "Table not found"
+#~ msgstr "Lentelė nerasta"
+
+#, fuzzy
+#~| msgid "Table \"%1\" does not exist."
+#~ msgid "Table \"%1\" has no \"%2\" field."
+#~ msgstr "Lentelė „%1“ neegzistuoja."
+
+#~ msgid "Byte"
+#~ msgstr "Baitas"
+
+#~ msgid "Integer Number"
+#~ msgstr "Sveikasis skaičius"
+
+#~ msgid "Yes/No Value"
+#~ msgstr "Taip/Ne reikšmė"
+
+#~ msgid "Date"
+#~ msgstr "Data"
+
+#~ msgid "Date and Time"
+#~ msgstr "Data ir laikas"
+
+#~ msgid "Time"
+#~ msgstr "Laikas"
+
+#~ msgid "Text"
+#~ msgstr "Tekstas"
+
+#~ msgid "Long Text"
+#~ msgstr "Ilgas tekstas"
+
+#~ msgid "Object"
+#~ msgstr "Objektas"
+
+#~ msgid "Invalid Group"
+#~ msgstr "Neteisinga grupė"
+
+#~ msgid "Floating Point Number"
+#~ msgstr "Slankaus kablelio skaičius"
+
+#~ msgid "Yes/No"
+#~ msgstr "Taip/Ne"
+
+#~ msgid "Date/Time"
+#~ msgstr "Data/Laikas"
+
+#, fuzzy
+#~| msgid "Syntax Error"
+#~ msgid "Syntax error."
+#~ msgstr "Sintaksės klaida"
+
+#~ msgid "Error"
+#~ msgstr "Klaida"
+
+#, fuzzy
+#~| msgid "Syntax Error"
+#~ msgid "Error near \"%1\"."
+#~ msgstr "Sintaksės klaida"
+
+#, fuzzy
+#~| msgid "Creating table failed."
+#~ msgid "Record inserting failed."
+#~ msgstr "Nepavyko sukurti lentelės."
+
+#, fuzzy
+#~| msgid "Creating table failed."
+#~ msgid "Record deleting failed."
+#~ msgstr "Nepavyko sukurti lentelės."
+
+#~ msgid "Message from server:"
+#~ msgstr "Serverio pranešimas:"
+
+#~ msgid "Test Connection"
+#~ msgstr "Ryšio bandymas"
+
+#~ msgid "Number"
+#~ msgstr "Skaičius"
+
+#~ msgid "Image"
+#~ msgstr "Paveikslėlis"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr "Keisti prisijungimą"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr "Keisti parametrą"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "Konvertuoti į kontūrą"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "Įterpti taškus"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move points"
+#~ msgstr "Perkelti taškus"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr "Nustatyti foną"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr "Sukurti formą"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr "Sugrupuoti formas"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Keep Aspect Ratio"
+#~ msgstr "Išlaikyti proporcijas"
+
+#, fuzzy
+#~| msgid "Rename Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr "Perkelti puslapį"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr "Nepermatomumas"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr "Išgrupuoti formas"
+
+#~ msgid "Standard"
+#~ msgstr "Standartinis"
+
+# (pofilter) compendiumconflicts: checks for Gettext compendium conflicts (#-#-#-#-#)
+#~ msgid "Lines"
+#~ msgstr "Eilutės"
+
+#~ msgid "Type:"
+#~ msgstr "Tipas:"
+
+#~ msgid "%1 Options"
+#~ msgstr "%1 parinktys"
+
+#~ msgid "Active tool: %1"
+#~ msgstr "Aktyvus įrankis: %1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "Įklijuoti paveikslėlį"
+
+#~ msgid "Nodes"
+#~ msgstr "Mazgai"
+
+#~ msgid " px"
+#~ msgstr " px"
+
+#~ msgid "Pan"
+#~ msgstr "Pan"
+
+#~ msgid "Corner point"
+#~ msgstr "Kampo taškas"
+
+#~ msgid "Insert point"
+#~ msgstr "Įterpti tašką"
+
+#, fuzzy
+#~| msgid "Printing"
+#~ msgid "Path editing"
+#~ msgstr "Spausdinimas"
+
+#~ msgid "Zoom"
+#~ msgstr "Mastelis"
+
+#~ msgid "Zoom In"
+#~ msgstr "Padidinti"
+
+#~ msgid "Zoom Out"
+#~ msgstr "Sumažinti"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Convert To Path"
+#~ msgstr "Konvertuoti į kontūrą"
+
+#~ msgid "Scripts"
+#~ msgstr "Scenarijai"
+
+#~ msgid "Script Manager"
+#~ msgstr "Scenarijaus tvarkytuvė"
+
+#~ msgid "Script Manager..."
+#~ msgstr "Scenarijaus tvarkytuvė..."
+
+#~ msgid "Replace"
+#~ msgstr "Pakeisti"
+
+#~ msgid "Save"
+#~ msgstr "Išsaugoti"
+
+#~ msgid "Add script file"
+#~ msgstr "Pridėti scenarijaus failą"
+
+#~ msgid "Add"
+#~ msgstr "Pridėti"
+
+#~ msgid "Script"
+#~ msgstr "Scenarijus"
+
+#~ msgid "Collection"
+#~ msgstr "Rinkinys"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display page background"
+#~ msgstr "Rodyti puslapio foną"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] "Trinti skaidrę"
+#~ msgstr[1] "Šalinti lapus"
+#~ msgstr[2] "Šalinti lapus"
+#~ msgstr[3] "Pašalinti viską"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "Trinti puslapį"
+#~ msgstr[1] "Trinti puslapius"
+#~ msgstr[2] "Trinti puslapius"
+#~ msgstr[3] "Trinti puslapius"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr "Įterpti skaidrę"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr "Įterpti puslapį"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "Perkelti lapą"
+#~ msgstr[1] "Perkelti lapusKitas puslapis"
+#~ msgstr[2] "Perkelti lapus"
+#~ msgstr[3] "Kitas puslapis"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] "Perkelti puslapį"
+#~ msgstr[1] "Perkelti puslapį"
+#~ msgstr[2] ""
+#~ msgstr[3] "Perkelti puslapį"
+
+#~ msgid "Configure"
+#~ msgstr "Konfigūruoti"
+
+#~ msgid "Misc"
+#~ msgstr "Įvairūs"
+
+#~ msgid "Grid"
+#~ msgstr "Tinklelis"
+
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "Dokumentas"
+
+#~ msgid "Document Settings"
+#~ msgstr "Dokumento nustatymai"
+
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "Autorius"
+
+#~ msgid "Author"
+#~ msgstr "Autorius"
+
+#~ msgid "Master Page"
+#~ msgstr "Bazinis puslapis"
+
+#~ msgid "Slide %1"
+#~ msgstr "Skaidrė %1"
+
+#~ msgid "Page  %1"
+#~ msgstr "Puslapis %1"
+
+#~ msgid "Layer"
+#~ msgstr "Sluoksnis"
+
+#~ msgid "Group"
+#~ msgstr "Grupė"
+
+#~ msgid "Shape"
+#~ msgstr "Forma"
+
+#, fuzzy
+#~| msgid "Rename Slide"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "Pervadinti lapą"
+
+#, fuzzy
+#~| msgid "Rename Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "Perkelti puslapį"
+
+#, fuzzy
+#~| msgid "Rename Layer"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "Pervadinti sluoksnį"
+
+#~ msgid "Slide"
+#~ msgstr "Slinktis"
+
+#~ msgid "Visible"
+#~ msgstr "Matomas"
+
+#~ msgid "Locked"
+#~ msgstr "Užrakinta"
+
+#~ msgid "&Move Here"
+#~ msgstr "&Perkelti čia"
+
+#~ msgid "&Copy Here"
+#~ msgstr "&Kopijuoti čia"
+
+#~ msgid "C&ancel"
+#~ msgstr "A&tšaukti"
+
+#~ msgid "Document"
+#~ msgstr "Dokumentas"
+
+#~ msgid "Page"
+#~ msgstr "Puslapis"
+
+#~ msgid "Minimal View"
+#~ msgstr "Minimalus rodymas"
+
+#~ msgid "Detailed View"
+#~ msgstr "Išsamus rodymas"
+
+#~ msgid "Thumbnail View"
+#~ msgstr "Miniatiūrų rodymas"
+
+#~ msgid "View mode"
+#~ msgstr "Rodymo būdas"
+
+#~ msgid "New Layer"
+#~ msgstr "Naujas sluoksnis"
+
+#~ msgid "New layer"
+#~ msgstr "Naujas sluoksnis"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "Sukurti sluoksnį"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "Trinti sluoksnį"
+
+#~ msgid "Page %1"
+#~ msgstr "Puslapis %1"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] "Kitas puslapis"
+#~ msgstr[1] "Kitas puslapis"
+#~ msgstr[2] ""
+#~ msgstr[3] "Kitas puslapis"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] "Įklijuoti puslapį"
+#~ msgstr[1] "Įklijuoti puslapį"
+#~ msgstr[2] ""
+#~ msgstr[3] "Įklijuoti puslapį"
+
+#~ msgid "Tools"
+#~ msgstr "Įrankiai"
+
+#~ msgid "D&elete"
+#~ msgstr "&Trinti"
+
+#~ msgid "Show Rulers"
+#~ msgstr "Rodyti liniuotes"
+
+#~ msgid "Insert Page"
+#~ msgstr "Įterpti puslapį"
+
+#~ msgid "Copy Page"
+#~ msgstr "Kopijuoti puslapį"
+
+#~ msgid "Delete Page"
+#~ msgstr "Trinti puslapį"
+
+#~ msgid "Master Page..."
+#~ msgstr "Bazinis puslapis..."
+
+#~ msgid "Page Layout..."
+#~ msgstr "Puslapio išdėstymas..."
+
+#~ msgid "Variable"
+#~ msgstr "Kintamasis"
+
+#~ msgid "Import Document..."
+#~ msgstr "Importuoti dokumentą..."
+
+#~ msgid "Configure..."
+#~ msgstr "Konfigūruoti..."
+
+#~ msgid "Import Document"
+#~ msgstr "Importuoti dokumentą"
+
+#~ msgid ""
+#~ "Could not import\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Nepavyko atverti\n"
+#~ "%1"
+
+#~ msgid "Set image ..."
+#~ msgstr "Nustatyti paveikslėlį ..."
+
+#~ msgid "Background"
+#~ msgstr "Fonas"
+
+#~ msgid "Page Background"
+#~ msgstr "Puslapio fonas"
+
+#~ msgid "Page Design"
+#~ msgstr "Puslapio dizainas"
+
+#~ msgid "Slide Design"
+#~ msgstr "Skaidrės dizainas"
+
+#~ msgid "Slide %1/%2"
+#~ msgstr "Skaidrė %1/%2"
+
+#~ msgid "Master Page %1/%2"
+#~ msgstr "Bazinis puslapis %1/%2"
+
+#~ msgid "Page %1/%2"
+#~ msgstr "Puslapis %1/%2"
+
+#, fuzzy
+#~| msgid "Check"
+#~ msgid "Check Box"
+#~ msgstr "Tikrinti"
+
+#~ msgid "Field"
+#~ msgstr "Laukas"
+
+#~ msgid "Label"
+#~ msgstr "Antraštė"
+
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "Pakeisti sąrašą"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "Pakeisti stilių"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "Pašalinti"
+
+#~ msgid "Key Press"
+#~ msgstr "Klavišo paspaudimas"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "Tekstas"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "Ištrinti stulpelį"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "Pašalinti eilutę"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "Įterpti išnašą"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr "Įterpti stulpelį kairiau"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "Įterpti eilutę aukščiau"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "Formatavimas"
+
+#, fuzzy
+#~| msgid "Rename Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr "Perkelti puslapį"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr "Nustatyti stulpelio plotį"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "Įdėti"
+
+#~ msgid "Found no match"
+#~ msgstr "Atitikmenų nerasta"
+
+#~ msgid "1 replacement made"
+#~ msgid_plural "%1 replacements made"
+#~ msgstr[0] "Padarytas %1 pakeitimas"
+#~ msgstr[1] "Padaryti %1 pakeitimai"
+#~ msgstr[2] "Padaryta %1 pakeitimų"
+#~ msgstr[3] "Padarytas %1 pakeitimas"
+
+#~ msgid "Replace %1 with %2?"
+#~ msgstr "Pakeisti %1 su %2?"
+
+#, fuzzy
+#~| msgid "Group Sections"
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "Grupiniai pažymėjimai"
+
+#~ msgctxt "Underline Style"
+#~ msgid "None"
+#~ msgstr "Joks"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "Viengubas"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "Dvigubas"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "New Paragraph"
+#~ msgstr "Nauja pastraipa"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "Pridėti žymelę"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "Pridėti pastabą"
+
+#, fuzzy
+#~| msgid "Key Press"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Key Press"
+#~ msgstr "Klavišo paspaudimas"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "Teksto perskyrimas"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "Įterpti lentelę"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "Sulieti langelius"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "Skaidyti langelius"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Typing"
+#~ msgstr "Rašymas"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr "Pusjuodis"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "Kursyvas"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "Pabrauktas"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr "Perbrauktas"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr "Keisti lygiuotę"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr "Nustatyti vertikalų lygiavimą"
+
+# (pofilter) compendiumconflicts: checks for Gettext compendium conflicts (#-#-#-#-#)
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "Sumažinti atitraukimą"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "Didinti atitraukimą"
+
+# (pofilter) compendiumconflicts: checks for Gettext compendium conflicts (#-#-#-#-#)
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "Sumažinti šrifto dydį"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "Padidinti šrifto dydį"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr "Nustatyti šriftą"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr "Nustatyti šrifto dydį"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr "Nustatyti fono spalvą"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Text Color"
+#~ msgstr "Nustatyti teksto spalvą"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "Formatas"
+
+#~ msgid "Default"
+#~ msgstr "Numatyta"
+
+#~ msgctxt "Default text for undo action"
+#~ msgid "Undo"
+#~ msgstr "Atšaukti"
+
+#~ msgid "Undo %1"
+#~ msgstr "Atšaukti %1"
+
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "Pakartoti"
+
+#~ msgid "Redo %1"
+#~ msgstr "Pakartoti %1"
+
+#, fuzzy
+#~| msgid "Empty"
+#~ msgid "<empty>"
+#~ msgstr "Tuščia"
+
+#~ msgid "Redo"
+#~ msgstr "Pakartoti"
+
+#~ msgid "Undo"
+#~ msgstr "Atšaukti"
+
+#~ msgid "&File"
+#~ msgstr "&Failas"
+
+#~ msgid "&Settings"
+#~ msgstr "Nuo&statos"
+
+#~ msgid "File"
+#~ msgstr "Failas"
+
+#~ msgid "Name:"
+#~ msgstr "Vardas:"
+
+#~ msgid "Initials:"
+#~ msgstr "Inicialai:"
+
+#~ msgid "Title:"
+#~ msgstr "Antraštė:"
+
+#~ msgid "Position:"
+#~ msgstr "Pozicija:"
+
+#~ msgid "Company:"
+#~ msgstr "Bendrovė:"
+
+#~ msgid "Email:"
+#~ msgstr "El. paštas:"
+
+#~ msgid "Telephone (home):"
+#~ msgstr "Telefonas (namų):"
+
+#~ msgid "Telephone (work):"
+#~ msgstr "Telefonas (darbo):"
+
+#~ msgid "Fax:"
+#~ msgstr "Faksas:"
+
+#~ msgid "Street:"
+#~ msgstr "Gatvė:"
+
+#~ msgid "City:"
+#~ msgstr "Miestas:"
+
+#~ msgid "Country:"
+#~ msgstr "Šalis:"
+
+#~ msgid "No autosave"
+#~ msgstr "Automatinio išsaugojimo nėra"
+
+#~ msgctxt "unit symbol for minutes, leading space as separator"
+#~ msgid " min"
+#~ msgstr " min"
+
+#~ msgid "Autosave interval:"
+#~ msgstr "Automatinio išsaugojimo intervalas:"
+
+#~ msgid "Show grid:"
+#~ msgstr "Rodyti tinklelį:"
+
+#~ msgid "Snap to grid:"
+#~ msgstr "Pritraukti prie tinklelio:"
+
+#~ msgid "Grid color:"
+#~ msgstr "Tinklelio spalva:"
+
+#~ msgid "Spacing"
+#~ msgstr "Tarpai"
+
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "&Horizontaliai:"
+
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "&Vertikaliai:"
+
+#~ msgid "Units:"
+#~ msgstr "Vienetai:"
+
+#~ msgid "Grab sensitivity:"
+#~ msgstr "Čiupimo jautrumas:"
+
+#, fuzzy
+#~| msgid ": Critical Error"
+#~ msgid "%1: Critical Error"
+#~ msgstr ": Kritinė klaida"
+
+#~ msgid "Always use this template at application start up"
+#~ msgstr "Visada naudoti šį šabloną pasileidžiant programai"
+
+#~ msgid "Always use this template"
+#~ msgstr "Visada naudoti šį šabloną"
+
+#~ msgid "Making backup..."
+#~ msgstr "Kuriama atsarginė kopija..."
+
+#~ msgid "Saving..."
+#~ msgstr "Išsaugoma..."
+
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Nepavyko išsaugoti\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Nepavyko išsaugoti %1\n"
+#~ "Priežastis: %2"
+
+#~ msgid "Document <i>%1</i> saved"
+#~ msgstr "Dokumentas <i>%1</i> išsaugotas"
+
+#~ msgid "Autosaving..."
+#~ msgstr "Automatiškai išsaugoma..."
+
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Neteisingas URL\n"
+#~ "%1"
+
+#~ msgid "The file %1 does not exist."
+#~ msgstr "Failas %1 neegzistuoja."
+
+#~ msgid "Opening Document"
+#~ msgstr "Atveriamas dokumentas"
+
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "Nepavyko sukurti filtro įskiepio"
+
+#~ msgid "File not found"
+#~ msgstr "Failas nerastas"
+
+#~ msgid "Cannot create storage"
+#~ msgstr "Nepavyksta sukurti atmintinės"
+
+#~ msgid "Bad MIME type"
+#~ msgstr "Blogas MIME tipas"
+
+#~ msgid "Format not recognized"
+#~ msgstr "Formatas neatpažintas"
+
+#~ msgid "Not implemented"
+#~ msgstr "Nerealizuota"
+
+#~ msgid "Parsing error"
+#~ msgstr "Nagrinėjimo klaida"
+
+#~ msgid "Document is password protected"
+#~ msgstr "Dokumentas yra apsaugotas slaptažodžiu"
+
+#~ msgid "Invalid file format"
+#~ msgstr "Netinkamas failo formatas"
+
+#~ msgid "Internal error"
+#~ msgstr "Vidinė klaida"
+
+#~ msgid "Out of memory"
+#~ msgstr "Trūksta atminties"
+
+#~ msgid "Unknown error"
+#~ msgstr "Nežinoma klaida"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open\n"
+#~| "%2.\n"
+#~| "Reason: %1"
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr ""
+#~ "Nepavyksta atverti\n"
+#~ "%2.\n"
+#~ "Priežastis: %1"
+
+#~ msgid "Document <i>%1</i> loaded"
+#~ msgstr "Dokumentas <i>%1</i> įkeltas"
+
+#~ msgid "Could not find %1"
+#~ msgstr "Nepavyko rasti %1"
+
+#~ msgid "%1 is not a file."
+#~ msgstr "%1 nėra failas."
+
+#~ msgid "Not a valid Calligra file: %1"
+#~ msgstr "Netinkamas Calligra failas: %1"
+
+#~ msgid "Untitled"
+#~ msgstr "Be pavadinimo"
+
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr ""
+#~ "<p>Dokumentas <b>'%1'</b> buvo pakeistas.</p><p>Ar norite jį išsaugoti?</"
+#~ "p>"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Nepavyko atverti\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Nepavyko atverti %1\n"
+#~ "Priežastis: %2"
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~| "it?</p>"
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr ""
+#~ "Dokumentas „%1“ buvo pakeistas.\n"
+#~ "Ar norite jį įrašyti, ar atmesti pakeitimus?"
+
+#~ msgid "%1 %"
+#~ msgstr "%1 %"
+
+#~ msgid "No"
+#~ msgstr "Ne"
+
+#~ msgid "Yes"
+#~ msgstr "Taip"
+
+#~ msgid "Choose Filter"
+#~ msgstr "Pasirinkite filtrą"
+
+#~ msgid "Case Sensitive"
+#~ msgstr "Skirti raidžių dydį"
+
+#~ msgid "Match only whole words"
+#~ msgstr "Aptikti tik visą žodį"
+
+#~ msgid "Whole Words Only"
+#~ msgstr "Tik ištisų žodžių"
+
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "Rasti:"
+
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "Kitas"
+
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "Ankstesnis"
+
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "Parinktys"
+
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "Pakeisti:"
+
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "Pakeisti"
+
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "Pakeisti visus"
+
+#~ msgctxt "Total number of matches"
+#~ msgid "1 match found"
+#~ msgid_plural "%1 matches found"
+#~ msgstr[0] "Rastas %1 atitikmuo"
+#~ msgstr[1] "Rasti %1 atitikmenys"
+#~ msgstr[2] "Rasta %1 atitikmenų"
+#~ msgstr[3] "Rastas %1 atitikmuo"
+
+#~ msgid "No matches found"
+#~ msgstr "Nerasta atitikmenų"
+
+#~ msgid "%1 unsaved document (%2)"
+#~ msgstr "%1 neišsaugotas dokumentas (%2)"
+
+#~ msgid "Export as PDF..."
+#~ msgstr "Eksportuoti kaip PDF..."
+
+#~ msgid "Reload"
+#~ msgstr "Įkelti iš naujo"
+
+#~ msgid "Versions..."
+#~ msgstr "Versijos..."
+
+#~ msgid "E&xport..."
+#~ msgstr "E&ksportuoti..."
+
+#~ msgid "En&crypt Document"
+#~ msgstr "užšifruoti dokumentą"
+
+#~ msgid "&New View"
+#~ msgstr "&Naujas rodinys"
+
+#~ msgid "Document Information"
+#~ msgstr "Dokumento informacija"
+
+#~ msgid "Full Screen Mode"
+#~ msgstr "Viso ekrano veiksena"
+
+#, fuzzy
+#~| msgid "Show %1 Toolbar"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "Rodyti %1 įrankių juostą"
+
+#~ msgid "Save as %1"
+#~ msgstr "Išsaugoti kaip %1"
+
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "%1 (nežinomas failo tipas)"
+
+#~ msgid "Confirm Save"
+#~ msgstr "Patvirtinti įrašymą"
+
+#~ msgid "Confirm Export"
+#~ msgstr "Patvirtinti eksportavimą"
+
+#~ msgid "untitled"
+#~ msgstr "bevardis"
+
+#~ msgid "Open Document"
+#~ msgstr "Atverti dokumentą"
+
+#~ msgid "Export as PDF"
+#~ msgstr "Eksportuoti kaip PDF"
+
+#~ msgid "Document - %1"
+#~ msgstr "Dokumentas – %1"
+
+#~ msgid "Warning"
+#~ msgstr "Dėmesio"
+
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "Rodyti %1 įrankių juostą"
+
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "Slėpti %1 priemonių juostą"
+
+#~ msgid "Open Existing Document"
+#~ msgstr "Atverti egzistuojantį dokumentą"
+
+#~ msgid "Recent Documents"
+#~ msgstr "Paskutiniai dokumentai"
+
+#~ msgid "Custom Document"
+#~ msgstr "Savitas dokumentas"
+
+#~ msgid "Stop"
+#~ msgstr "Stabdyti"
+
+#~ msgid "Printing"
+#~ msgstr "Spausdinimas"
+
+#~ msgid "Printing done"
+#~ msgstr "Spausdinimas baigtas"
+
+#~ msgid "Close"
+#~ msgstr "Užverti"
+
+#~ msgid "Stopped"
+#~ msgstr "Sustojo"
+
+#~ msgid "Open This Document"
+#~ msgstr "Atverti šį dokumentą"
+
+#~ msgctxt "File modification date and time. %1 is date time"
+#~ msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Pakeitė:</b></td><td>%1</td></tr>"
+
+#~ msgctxt "File access date and time. %1 is date time"
+#~ msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Naudota:</b></td><td>%1</td></tr>"
+
+#~ msgid "Create Template"
+#~ msgstr "Sukurti šabloną"
+
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "Vardas:"
+
+#~ msgid "Group:"
+#~ msgstr "Grupė:"
+
+#~ msgid "&Add Group..."
+#~ msgstr "Įdėti &grupę..."
+
+#~ msgid "&Remove"
+#~ msgstr "&Pašalinti"
+
+#~ msgid "Picture"
+#~ msgstr "Piešinys"
+
+#~ msgid "&Preview"
+#~ msgstr "&Peržiūra"
+
+#~ msgid "Custom:"
+#~ msgstr "Savitas:"
+
+#~ msgid "&Select..."
+#~ msgstr "&Pažymėti..."
+
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr "Ar tikrai norite perrašyti egzistuojantį šabloną „%1“?"
+
+#~ msgid "Add Group"
+#~ msgstr "Pridėti grupę"
+
+#~ msgid "Enter group name:"
+#~ msgstr "Įveskite grupės pavadinimą:"
+
+#~ msgid "This name is already used."
+#~ msgstr "Šis pavadinimas jau naudojamas."
+
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "Ar tikrai norite pašalinti šią grupę?"
+
+#~ msgid "Remove Group"
+#~ msgstr "Pašalinti grupę"
+
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "Ar tikrai norite pašalinti šį šabloną?"
+
+#~ msgid "Remove Template"
+#~ msgstr "Pašalinti šabloną"
+
+#~ msgid "&Delete"
+#~ msgstr "&Trinti"
+
+#~ msgid "Use This Template"
+#~ msgstr "Naudoti šį šabloną"
+
+#~ msgid "Version"
+#~ msgstr "Versija"
+
+#~ msgid "Date & Time"
+#~ msgstr "Data ir laikas"
+
+#~ msgid "Saved By"
+#~ msgstr "Išsaugojo"
+
+#~ msgid "Comment"
+#~ msgstr "Komentaras"
+
+#~ msgid "&Add"
+#~ msgstr "&Pridėti"
+
+#~ msgid "&Modify"
+#~ msgstr "&Modifikuoti"
+
+#~ msgid "&Open"
+#~ msgstr "&Atverti"
+
+#~ msgid "A new version could not be added"
+#~ msgstr "Nauja versija negali būti pridėta"
+
+#~ msgid "Date: %1"
+#~ msgstr "Data: %1"
+
+#~ msgctxt "choice for author profile"
+#~ msgid "Anonymous"
+#~ msgstr "Anonimas"
+
+#~ msgid "Unknown"
+#~ msgstr "Nežinoma"
+
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "Ekranas"
+
+#~ msgid "Clear"
+#~ msgstr "Valyti"
+
+#~ msgid "Subtract"
+#~ msgstr "Atimti"
+
+#~ msgid "Multiply"
+#~ msgstr "Dauginti"
+
+#~ msgid "Alpha mask"
+#~ msgstr "Alfa kaukė"
+
+#~ msgid "Alpha"
+#~ msgstr "Alfa"
+
+# (pofilter) compendiumconflicts: checks for Gettext compendium conflicts (#-#-#-#-#)
+#~ msgid "Lightness"
+#~ msgstr "Šviesumas"
+
+#~ msgid "a*"
+#~ msgstr "a*"
+
+#~ msgid "b*"
+#~ msgstr "b*"
+
+#~ msgid "Blue"
+#~ msgstr "Mėlyna"
+
+#~ msgid "Green"
+#~ msgstr "Žalia"
+
+#~ msgid "Red"
+#~ msgstr "Raudona"
+
+#~ msgid "Behind"
+#~ msgstr "Už"
+
+#~ msgid "Dissolve"
+#~ msgstr "Išskaidyti"
+
+#~ msgid "Erase"
+#~ msgstr "Trinti"
+
+#~ msgid "Normal"
+#~ msgstr "Normalus"
+
+#~ msgid "Overlay"
+#~ msgstr "Padengti"
+
+#~ msgid "Grain Merge"
+#~ msgstr "Grūdėtumo suliejimas"
+
+#~ msgid "Grain Extract"
+#~ msgstr "Grūdėtumo išėmimas"
+
+#~ msgid "Parallel"
+#~ msgstr "Lygiagrečiai"
+
+#~ msgid "Lighten"
+#~ msgstr "Pašviesinti"
+
+#~ msgid "Hard Light"
+#~ msgstr "Stiprus apšvietimas"
+
+#~ msgid "Darken"
+#~ msgstr "Patamsinimas"
+
+#~ msgid "Addition"
+#~ msgstr "Sudėtis"
+
+#~ msgid "Divide"
+#~ msgstr "Dalinti"
+
+#~ msgid "Difference"
+#~ msgstr "Skirtumas"
+
+#~ msgid "Exclusion"
+#~ msgstr "Išskyrimas"
+
+#~ msgid "Color"
+#~ msgstr "Spalva"
+
+#~ msgid "Hue"
+#~ msgstr "Atspalvis (hue)"
+
+#~ msgid "Saturation"
+#~ msgstr "Sodrumas"
+
+#~ msgid "Increase Saturation"
+#~ msgstr "Padidinti sodrumą"
+
+#~ msgid "Decrease Saturation"
+#~ msgstr "Sumažinti sodrumą"
+
+#~ msgid "Luminosity"
+#~ msgstr "Šviesumas"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgid "Darker Color"
+#~ msgstr "Fono spalva"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgid "Lighter Color"
+#~ msgstr "Linijos spalva"
+
+#~ msgid "Intensity"
+#~ msgstr "Intensyvumas"
+
+#~ msgid "Hue HSL"
+#~ msgstr "Atspalvis HSL"
+
+#~ msgid "Saturation HSL"
+#~ msgstr "Sodrumas HSL"
+
+# (pofilter) compendiumconflicts: checks for Gettext compendium conflicts (#-#-#-#-#)
+#~ msgid "Decrease Lightness"
+#~ msgstr "dŠviesumas"
+
+#~ msgid "Increase Value"
+#~ msgstr "Didinti vertę"
+
+#~ msgid "Decrease Value"
+#~ msgstr "Mažinti vertę"
+
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "G"
+#~ msgstr "G"
+
+#~ msgid "L*a*b* Histogram"
+#~ msgstr "L*a*b* histograma"
+
+#~ msgid "L*"
+#~ msgstr "L*"
+
+#~ msgid "XYZ"
+#~ msgstr "XYZ"
+
+#~ msgid "Grayscale"
+#~ msgstr "Pilkos tonai"
+
+#~ msgid "YCbCr"
+#~ msgstr "YCbCr"
+
+#~ msgid "8 Bits"
+#~ msgstr "8 bitai"
+
+#~ msgid "16 Bits"
+#~ msgstr "16 bitų"
+
+#~ msgid "Arithmetic"
+#~ msgstr "Aritmetika"
+
+#~ msgid "Negative"
+#~ msgstr "Neigiamas"
+
+#~ msgid "HSL"
+#~ msgstr "HSL"
+
+#~ msgid "HSV"
+#~ msgstr "HSV"
+
+#~ msgid "Mix"
+#~ msgstr "Maišiklis"
+
+#~ msgid "Burn"
+#~ msgstr "Išdeginti"
+
+#~ msgid "Bumpmap"
+#~ msgstr "Reljefinis atvaizdas"
+
+#~ msgid "SVG Gradient"
+#~ msgstr "SVG gradientas"
+
+#~ msgid "Reference"
+#~ msgstr "Nuoroda"
+
+#~ msgid "new"
+#~ msgstr "naujas"
+
+#~ msgid "copy"
+#~ msgstr "kopijuoti"
+
+#~ msgid "delete"
+#~ msgstr "ištrinti"
+
+#~ msgid "Namespaces"
+#~ msgstr "Vardų zonos"
+
+#~ msgid "Prefix"
+#~ msgstr "Priešdėlis"
+
+#~ msgid "Namespace"
+#~ msgstr "Vardų zona"
+
+#~ msgid "SPARQL"
+#~ msgstr "SPARQL"
+
+#~ msgid "Stylesheets"
+#~ msgstr "Stiliaus lentelės"
+
+#~ msgid "System"
+#~ msgstr "Sistema"
+
+#~ msgid "User"
+#~ msgstr "Naudotojas"
+
+#~ msgid "Edit %1"
+#~ msgstr "Keisti %1"
+
+#~ msgid "Description"
+#~ msgstr "Aprašymas"
+
+#~ msgid "Empty"
+#~ msgstr "Tuščia"
+
+#~ msgid "URI"
+#~ msgstr "URI"
+
+#~ msgid "Literal"
+#~ msgstr "Raidinis"
+
+#~ msgid "Blank"
+#~ msgstr "Tuščias"
+
+#~ msgid "Valid"
+#~ msgstr "Galioja"
+
+#~ msgid "Subject"
+#~ msgstr "Tema"
+
+#~ msgid "Predicate"
+#~ msgstr "Predikatas"
+
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "Joks"
+
+#~ msgid "Arabic"
+#~ msgstr "Arabų"
+
+#~ msgid "Upper Roman"
+#~ msgstr "Didieji romėniški skaitmenys"
+
+#~ msgid "Bengali"
+#~ msgstr "Bengalų"
+
+#~ msgid "Gujarati"
+#~ msgstr "Gudžaratų"
+
+#~ msgid "Kannada"
+#~ msgstr "Kannada"
+
+#~ msgid "Malayalam"
+#~ msgstr "Malajalių"
+
+#~ msgid "Oriya"
+#~ msgstr "Orijų"
+
+#~ msgid "Tamil"
+#~ msgstr "Tamilų"
+
+#~ msgid "Telugu"
+#~ msgstr "Telugų"
+
+#~ msgid "Tibetan"
+#~ msgstr "Tibetiečių"
+
+#~ msgid "Thai"
+#~ msgstr "Tajų"
+
+#~ msgid "Opacity"
+#~ msgstr "Nepermatomumas"
+
+#~ msgid "Recent:"
+#~ msgstr "Vėliausi:"
+
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "Pridėti / Pašalinti spalvas..."
+
+#~ msgid "Import Data"
+#~ msgstr "Importuoti duomenis"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Recommended ( %1 )"
+#~ msgstr "Rekomenduojama ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Locale ( %1 )"
+#~ msgstr "Lokalė ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Other ( %1 )"
+#~ msgstr "Kiti ( %1 )"
+
+#~ msgid "Generic"
+#~ msgstr "Paprastas"
+
+#~ msgid "Currency"
+#~ msgstr "Valiuta"
+
+#~ msgid "None"
+#~ msgstr "Nieko"
+
+#~ msgid "Data"
+#~ msgstr "Duomenys"
+
+#~ msgid "E&ncoding:"
+#~ msgstr "&Koduotė:"
+
+#~ msgid "Format"
+#~ msgstr "Formatas"
+
+#~ msgid "Delimiter"
+#~ msgstr "Apribojimas"
+
+#~ msgid "Semicolon"
+#~ msgstr "Daugtaškis"
+
+#~ msgid "Other"
+#~ msgstr "Kiti"
+
+#~ msgid "Tabulator"
+#~ msgstr "Skirtukas"
+
+#~ msgid "Space"
+#~ msgstr "Tarpas"
+
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "Decimal symbol:"
+#~ msgstr "Dešimtainis simbolis:"
+
+#~ msgid "Thousands separator:"
+#~ msgstr "Tūkstančių skirtukas:"
+
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "Ignoruoti pasikartojančius apribojimus"
+
+#~ msgid "&Format:"
+#~ msgstr "&Formatas:"
+
+#~ msgid "Ranges"
+#~ msgstr "Intervalai"
+
+#~ msgid "Update"
+#~ msgstr "Atnaujinti"
+
+#~ msgid "Import columns:"
+#~ msgstr "Importuoti stulpelius:"
+
+#~ msgid "to"
+#~ msgstr "iki"
+
+#, fuzzy
+#~| msgid "Close Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "Užverti dokumentą"
+
+#, fuzzy
+#~| msgid "Close Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "Užverti dokumentą"
+
+#~ msgid "&Encrypt"
+#~ msgstr "&Šifruoti"
+
+#~ msgid "Keywords:"
+#~ msgstr "Raktažodžiai:"
+
+#~ msgid "Subject:"
+#~ msgstr "Dalykas:"
+
+#~ msgid "Last printed:"
+#~ msgstr "Paskiausiai spausdinta:"
+
+#~ msgid "Total editing time:"
+#~ msgstr "Bendras redagavimo laikas:"
+
+#~ msgid "Encryption:"
+#~ msgstr "Šifravimas:"
+
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "Pavadinimas:"
+
+#~ msgid "Revision number:"
+#~ msgstr "Peržiūrėjimo numeris:"
+
+#~ msgid "Modified:"
+#~ msgstr "Keista:"
+
+#~ msgid "Comments:"
+#~ msgstr "Komentarai:"
+
+#~ msgid "Created:"
+#~ msgstr "Sukurta:"
+
+#~ msgid "Path:"
+#~ msgstr "Kelias:"
+
+#~ msgid "&Reset"
+#~ msgstr "&Iš naujo"
+
+#, fuzzy
+#~| msgid "Last page:"
+#~ msgid "Language:"
+#~ msgstr "Paskutinis puslapis:"
+
+#~ msgid "General"
+#~ msgstr "Bendra"
+
+#~ msgid "This document is encrypted"
+#~ msgstr "Šis dokumentas yra užšifruotas"
+
+#~ msgid "D&ecrypt"
+#~ msgstr "D&ešifruoti"
+
+#~ msgid "This document will be encrypted."
+#~ msgstr "Šis dokumentas bus užšifruotas"
+
+#~ msgid "Do not encrypt"
+#~ msgstr "Nešifruoti"
+
+#~ msgid "This document is not encrypted"
+#~ msgstr "Šis dokumentas neužšifruotas"
+
+#~ msgid "This document does not support encryption"
+#~ msgstr "Šis dokumentas nepalaiko šifravimo"
+
+#~ msgid "Confirm Decrypt"
+#~ msgstr "Patvirtinti dešifravimą"
+
+#~ msgid "Decrypt"
+#~ msgstr "Dešifruoti"
+
+#~ msgid "Save Document"
+#~ msgstr "Išsaugoti dokumentą"
+
+#~ msgid "Change"
+#~ msgstr "Pakeisti"
+
+#~ msgid "Remove"
+#~ msgstr "Pašalinti"
+
+#~ msgid "Open palette"
+#~ msgstr "Atverti paletę"
+
+#~ msgid "Save palette"
+#~ msgstr "Išsaugoti paletę"
+
+#~ msgid "Color name:"
+#~ msgstr "Spalvos pavadinimas:"
+
+#~ msgid "Palette"
+#~ msgstr "Paletė"
+
+#~ msgid "Add/Remove Colors"
+#~ msgstr "Pridėti/Pašalinti spalvas"
+
+#~ msgid "All supported formats"
+#~ msgstr "Visi palaikomi formatai"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Testing: OpenFile"
+#~ msgstr "Atverti paletę"
+
+#, fuzzy
+#~| msgid "Import Data"
+#~ msgid "Testing: ImportFile"
+#~ msgstr "Importuoti duomenis"
+
+#, fuzzy
+#~| msgid "Import columns:"
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "Importuoti stulpelius:"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "Import resource"
+#~ msgid "Testing: Import Directory"
+#~ msgstr "Importuoti resursą"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Testing: SaveFile"
+#~ msgstr "Išsaugoti paletę"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Open File"
+#~ msgstr "Atverti paletę"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Open Files"
+#~ msgstr "Atverti paletę"
+
+#, fuzzy
+#~| msgid "Choose Filter"
+#~ msgid "Filter:"
+#~ msgstr "Pasirinkite filtrą"
+
+#, fuzzy
+#~| msgid "Label"
+#~ msgid "TextLabel"
+#~ msgstr "Antraštė"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Named"
+#~ msgstr "Vardas"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Save File"
+#~ msgstr "Išsaugoti paletę"
+
+#, fuzzy
+#~| msgid "Import columns:"
+#~ msgid "Import Files"
+#~ msgstr "Importuoti stulpelius:"
+
+#, fuzzy
+#~| msgid "Import Data"
+#~ msgid "Import File"
+#~ msgstr "Importuoti duomenis"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "Import resource"
+#~ msgid "Import Directory"
+#~ msgstr "Importuoti resursą"
+
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "Joks"
+
+#~ msgctxt "Solid color stroke or fill"
+#~ msgid "Solid"
+#~ msgstr "Vientisas"
+
+#~ msgid "Gradient"
+#~ msgstr "Pereinantis"
+
+#~ msgid "Pattern"
+#~ msgstr "Raštas"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Change Alignment"
+#~ msgid "Change the filling gradient"
+#~ msgstr "Keisti lygiuotę"
+
+#~ msgid "Icon and Text"
+#~ msgstr "Piktograma ir tekstas"
+
+#~ msgid "Bottom side"
+#~ msgstr "Apačia"
+
+#~ msgid "Page Layout"
+#~ msgstr "Puslapių išdėstymas"
+
+#~ msgid "Left Edge:"
+#~ msgstr "Kairysis kraštas:"
+
+#~ msgid "Right Edge:"
+#~ msgstr "Dešinysis kraštas:"
+
+#~ msgid "Binding Edge:"
+#~ msgstr "Susiejamas kraštas:"
+
+#~ msgid "Page Edge:"
+#~ msgstr "Puslapio kraštas:"
+
+#~ msgid "Facing Pages:"
+#~ msgstr "Puslapiai greta:"
+
+#~ msgid "Facing pages"
+#~ msgstr "Puslapiai greta"
+
+#~ msgid "Page Layout:"
+#~ msgstr "Puslapių išdėstymas:"
+
+#~ msgid "Unit:"
+#~ msgstr "Vienetas:"
+
+#~ msgid "Size:"
+#~ msgstr "Dydis:"
+
+#~ msgid "Width:"
+#~ msgstr "Plotis:"
+
+#~ msgid "Height:"
+#~ msgstr "Aukštis:"
+
+#~ msgid "Orientation:"
+#~ msgstr "Orientacija:"
+
+#~ msgid "Facing pages:"
+#~ msgstr "Puslapiai greta:"
+
+#~ msgid "Single sided"
+#~ msgstr "Vienpusis"
+
+#~ msgid "Text direction:"
+#~ msgstr "Teksto kryptis:"
+
+#~ msgid "Automatic"
+#~ msgstr "Automatinis"
+
+#~ msgid "Left to right"
+#~ msgstr "Iš kairės į dešinę"
+
+#~ msgid "Right to left"
+#~ msgstr "Iš dešinės į kairę"
+
+#~ msgid "Margins"
+#~ msgstr "Paraštės"
+
+#~ msgid "Top:"
+#~ msgstr "Viršus:"
+
+#~ msgid "Binding edge:"
+#~ msgstr "Susiejamas kraštas:"
+
+#~ msgid "Page edge:"
+#~ msgstr "Puslapio kraštas:"
+
+#~ msgid "Bottom:"
+#~ msgstr "Apačia:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "Importuoti resursą"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Delete resource"
+#~ msgstr "Trinti resursą"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "Atsisiųsti resursą"
+
+#, fuzzy
+#~| msgid "Delete Resource"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "Trinti resursą"
+
+#, fuzzy
+#~| msgid "Choose Filter"
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "Pasirinkite filtrą"
+
+#~ msgid "New tag"
+#~ msgstr "Nauja žyma"
+
+#~ msgid "Tags"
+#~ msgstr "Žymės"
+
+#~ msgid "Blur:"
+#~ msgstr "Suliejimas:"
+
+#~ msgid "Distance:"
+#~ msgstr "Atstumas:"
+
+#~ msgid "Butt cap"
+#~ msgstr "Nukirsti"
+
+#~ msgid "Round cap"
+#~ msgstr "Užapvalinti"
+
+#~ msgid "Square cap"
+#~ msgstr "Kvadratiniai"
+
+#~ msgid "Miter join"
+#~ msgstr "Smailūs"
+
+#~ msgid "Round join"
+#~ msgstr "Užapvalinti"
+
+#~ msgid "Bevel join"
+#~ msgstr "Nukirsti"
+
+#, fuzzy
+#~| msgid "Delimiter"
+#~ msgid "Miter limit"
+#~ msgstr "Aštrumas:"
+
+#~ msgid "Thickness:"
+#~ msgstr "Storis:"
+
+#, fuzzy
+#~| msgid "Tags"
+#~ msgid "Tag"
+#~ msgstr "Žymės"
+
+#~ msgid "Rename tag"
+#~ msgstr "Pervadinti žymę"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Delete this tag"
+#~ msgstr "Trinti puslapį"
+
+#, fuzzy
+#~| msgid "delete"
+#~ msgid "Undelete"
+#~ msgstr "ištrinti"
+
+#~ msgid "Tool Options"
+#~ msgstr "Įrankio parinktys"
+
+#, fuzzy
+#~| msgid "Toggles organising the options in tabs or not"
+#~ msgid "Toggles organizing the options in tabs or not"
+#~ msgstr "Perjungia organizuoti pasirinktis kortelėse ar ne"
+
+#~ msgid "deselect item"
+#~ msgstr "naikinti elemento pažymėjimą"
+
+#, fuzzy
+#~ msgid "select item"
+#~ msgstr "Pažymėti elementą"
+
+#~ msgid "Zoom to Selection"
+#~ msgstr "Priartinti pažymėtą sritį"
+
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1"
+
+#, fuzzy
+#~| msgid "Key Press"
+#~ msgid "All Presets"
+#~ msgstr "Klavišo paspaudimas"
+
+#, fuzzy
+#~| msgid "Automatic"
+#~ msgctxt "Static Image"
+#~ msgid "Static"
+#~ msgstr "Automatinis"
+
+#~ msgid "Cyan"
+#~ msgstr "Žydra"
+
+#~ msgid "Magenta"
+#~ msgstr "Purpurinė"
+
+#~ msgid "Yellow"
+#~ msgstr "Geltona"
+
+#~ msgid "Black"
+#~ msgstr "Juoda"
+
+#~ msgid "Opacity:"
+#~ msgstr "Nepermatomumas:"
+
+#~ msgid "&Themes"
+#~ msgstr "&Temos"
+
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "Numatyta"
+
+#~ msgid "Configuration..."
+#~ msgstr "Konfigūracija..."
+
+#~ msgid "&Tools"
+#~ msgstr "Įrank&iai"
+
+#~ msgid "Color Selector"
+#~ msgstr "Spalvos parinkiklis"
+
+#~ msgid "Database file \"%1\" does not exist."
+#~ msgstr "Duomenų bazė „%1“ neegzistuoja."
+
+#~ msgid "Table \"%1\" does not exist in the database."
+#~ msgstr "Lentelė „%1“ neegzistuoja duomenų bazėje."
+
+#~ msgid "Ignored"
+#~ msgstr "Ignoruota"
+
+#~ msgid "Could not remove file \"%1\"."
+#~ msgstr "Negalima pašalinti failo „%1“."
+
+#~ msgid "Table \"%1\" does not exist"
+#~ msgstr "Lentelė „%1“ neegzistuoja"
+
+#~ msgid "                Language:"
+#~ msgstr "                Kalba:"
+
+#~ msgid "PushButton"
+#~ msgstr "SpaudžiamasMygtukas"
+
+#~ msgid "Formatting"
+#~ msgstr "Formatavimas"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "Import resource"
+#~ msgid "Testing: OpenDirectories"
+#~ msgstr "Importuoti resursą"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "Import resource"
+#~ msgid "Testing: ImportDirectories"
+#~ msgstr "Importuoti resursą"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Testing: SaveFiles"
+#~ msgstr "Išsaugoti paletę"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "Import resource"
+#~ msgid "Import Directories"
+#~ msgstr "Importuoti resursą"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Save Files"
+#~ msgstr "Išsaugoti paletę"
+
+#~ msgid "Create Path"
+#~ msgstr "Sukurti kontūrą"
+
+#~ msgid "Red Green Blue"
+#~ msgstr "Raudona Žalia Mėlyna"
+
+#~ msgid "L a* b*"
+#~ msgstr "L a* b*"
+
+#~ msgid "Error!"
+#~ msgstr "Klaida!"
+
+#~ msgid "Contacts"
+#~ msgstr "Kontaktai"
+
+#~ msgid "Events"
+#~ msgstr "Įvykiai"
+
+#~ msgid "Locations"
+#~ msgstr "Vietos"
+
+#~ msgid "Area"
+#~ msgstr "Sritis"
+
+#~ msgid "Region"
+#~ msgstr "Regionas"
+
+#~ msgid "&Summary:"
+#~ msgstr "&Santrauka:"
+
+#~ msgid "&Location:"
+#~ msgstr "&Vieta:"
+
+#~ msgid "&Start:"
+#~ msgstr "&Pradėti:"
+
+#~ msgid "&End:"
+#~ msgstr "Pa&baiga:"
+
+#~ msgid "Time and Date"
+#~ msgstr "Laikas ir data"
+
+#~ msgid "Timezone"
+#~ msgstr "Laiko juosta"
+
+#~ msgid "Calendar Event"
+#~ msgstr "Kalendoriaus įvykis"
+
+#~ msgid "&Name:"
+#~ msgstr "&Vardas:"
+
+#~ msgid "&Nick:"
+#~ msgstr "&Slapyvardis:"
+
+#~ msgid "&Phone Number:"
+#~ msgstr "&Telefono numeris:"
+
+#~ msgid "&Home Page:"
+#~ msgstr "&Namų puslapis:"
+
+#~ msgid "Contact Information"
+#~ msgstr "Kontakto informacija"
+
+#~ msgid "Import contact"
+#~ msgstr "Importuoti kontaktą"
+
+#~ msgid "&Name"
+#~ msgstr "&Vardas"
+
+#~ msgid "The Earth"
+#~ msgstr "Žemė"
+
+#~ msgid "The Marble widget displays a virtual globe."
+#~ msgstr "Marble valdiklis, rodantis virtualų gaublį."
+
+#~ msgid "Navigation Control"
+#~ msgstr "Žvalgymasis"
+
+#~ msgid "Use this control to navigate."
+#~ msgstr "Šiuo valdikliu galima žvalgytis."
+
+#~ msgid "Latitude"
+#~ msgstr "Platuma"
+
+#~ msgid "Longitude"
+#~ msgstr "Ilguma"
+
+#~ msgid "Location Information"
+#~ msgstr "Vietos informacija"
+
+#~ msgid "People"
+#~ msgstr "Žmonės"
+
+#~ msgid ""
+#~ "A document with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "Dokumentas šiuo vardu jau egzistuoja.\n"
+#~ "Ar norite jį perrašyti?"
+
+#~ msgid "%1 (Uncompressed XML Files)"
+#~ msgstr "%1 (Nesuspausti XML failai)"
+
+#, fuzzy
+#~| msgid "%1 (Uncompressed XML Files)"
+#~ msgid "%1 (Flat XML File)"
+#~ msgstr "%1 (Nesuspausti XML failai)"
+
+#~ msgid "%1 (Encrypted)"
+#~ msgstr "%1 (Šifruotas)"
+
+#~ msgid "%1 (%2 Compatible)"
+#~ msgstr "%1 (Suderinamas su %2)"
+
+#~ msgid "Save Document As"
+#~ msgstr "Įrašyti dokumentą kaip"
+
+#~ msgid "Export Document As"
+#~ msgstr "Eksportuoti dokumentą kaip"
+
+#~ msgid "Export to PDF"
+#~ msgstr "Eksportuoti į PDF"
+
+#~ msgid "Document background"
+#~ msgstr "Dokumento fonas"

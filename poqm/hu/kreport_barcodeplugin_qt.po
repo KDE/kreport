@@ -1,0 +1,166 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2011, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-01-20 01:47+0000\n"
+"PO-Revision-Date: 2015-09-08 09:27+0200\n"
+"Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
+"Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Qt-Contexts: true\n"
+
+#: KReportItemBarcode.cpp:120
+#, fuzzy
+#| msgctxt "KoReportItemBarcode|"
+#| msgid "Value"
+msgctxt "KReportItemBarcode|"
+msgid "Value"
+msgstr "Érték"
+
+#: KReportItemBarcode.cpp:121
+#, fuzzy
+#| msgctxt "KoReportItemBarcode|"
+#| msgid "Value used if not bound to a field"
+msgctxt "KReportItemBarcode|"
+msgid "Value used if not bound to a field"
+msgstr "Érték, ha nincs mezőhöz rögzítve"
+
+#: KReportItemBarcode.cpp:125
+#, fuzzy
+#| msgctxt "KoReportItemBarcode|"
+#| msgid "Left"
+msgctxt "KReportItemBarcode|"
+msgid "Left"
+msgstr "Balra"
+
+#: KReportItemBarcode.cpp:125
+#, fuzzy
+#| msgctxt "KoReportItemBarcode|"
+#| msgid "Center"
+msgctxt "KReportItemBarcode|"
+msgid "Center"
+msgstr "Középre"
+
+#: KReportItemBarcode.cpp:125
+#, fuzzy
+#| msgctxt "KoReportItemBarcode|"
+#| msgid "Right"
+msgctxt "KReportItemBarcode|"
+msgid "Right"
+msgstr "Jobbra"
+
+#: KReportItemBarcode.cpp:127
+#, fuzzy
+#| msgctxt "KoReportItemBarcode|"
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemBarcode|"
+msgid "Horizontal Alignment"
+msgstr "Vízszintes igazítás"
+
+#: KReportItemBarcode.cpp:135
+#, fuzzy
+#| msgctxt "KoReportItemBarcode|Barcode symbology, keep short"
+#| msgid "Code 3 of 9"
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "Code 3 of 9"
+msgstr "Code 3/9"
+
+#: KReportItemBarcode.cpp:136
+#, fuzzy
+#| msgctxt "KoReportItemBarcode|Barcode symbology, keep short"
+#| msgid "Code 3 of 9 Ext."
+msgctxt "KReportItemBarcode|3 of 3 Extended: Barcode symbology, keep short"
+msgid "Code 3 of 9 Ext."
+msgstr "Code 3/9 kiterjesztett"
+
+#: KReportItemBarcode.cpp:137
+#, fuzzy
+#| msgctxt "KoReportItemBarcode|Barcode symbology, keep short"
+#| msgid "Code 128"
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "Code 128"
+msgstr "Code 128"
+
+#: KReportItemBarcode.cpp:138
+#, fuzzy
+#| msgctxt "KoReportItemBarcode|Barcode symbology, keep short"
+#| msgid "EAN-8"
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "EAN-8"
+msgstr "EAN-8"
+
+#: KReportItemBarcode.cpp:139
+#, fuzzy
+#| msgctxt "KoReportItemBarcode|Barcode symbology, keep short"
+#| msgid "EAN-13"
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "EAN-13"
+msgstr "EAN-13"
+
+#: KReportItemBarcode.cpp:140
+#, fuzzy
+#| msgctxt "KoReportItemBarcode|Barcode symbology, keep short"
+#| msgid "Interleaved 2 of 5"
+msgctxt ""
+"KReportItemBarcode|Interleaved barcode 2 of 5: barcode symbology, keep short"
+msgid "Interleaved 2 of 5"
+msgstr "Összeszőtt 2/5"
+
+#: KReportItemBarcode.cpp:141
+#, fuzzy
+#| msgctxt "KoReportItemBarcode|Barcode symbology, keep short"
+#| msgid "UPC-A"
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "UPC-A"
+msgstr "UPC-A"
+
+#: KReportItemBarcode.cpp:142
+#, fuzzy
+#| msgctxt "KoReportItemBarcode|Barcode symbology, keep short"
+#| msgid "UPC-E"
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "UPC-E"
+msgstr "UPC-E"
+
+#: KReportItemBarcode.cpp:145
+#, fuzzy
+#| msgctxt "KoReportItemBarcode|"
+#| msgid "Barcode Format"
+msgctxt "KReportItemBarcode|"
+msgid "Barcode Format"
+msgstr "Vonalkód formátum"
+
+#: KReportItemBarcode.cpp:147
+#, fuzzy
+#| msgctxt "KoReportItemBarcode|"
+#| msgid "Max Length"
+msgctxt "KReportItemBarcode|"
+msgid "Max Length"
+msgstr "Maximális hossz"
+
+#: KReportItemBarcode.cpp:148
+#, fuzzy
+#| msgctxt "KoReportItemBarcode|"
+#| msgid "Maximum Barcode Length"
+msgctxt "KReportItemBarcode|"
+msgid "Maximum Barcode Length"
+msgstr "Vonalkód maximális hossza"
+
+#, fuzzy
+#~| msgctxt "KoReportItemBarcode|"
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemBarcode|"
+#~ msgid "Data Source"
+#~ msgstr "Adatforrás"
+
+#~ msgid "Barcode"
+#~ msgstr "Vonalkód"

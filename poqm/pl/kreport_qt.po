@@ -1,0 +1,6443 @@
+# translation of koffice.po to
+# Translated by Arkadiusz Danilecki <szopen@aurora.put.poznan.pl>
+# with corrections, suggestions and updates by:
+# Waldemar Kochaniec <walkoch@polbox.pl>
+# Jacek Stolarczyk <jacek@mer.chemia.polsl.gliwice.pl>
+# Krzysztof Jasiutowicz <kpjas@box43.gnet.pl>
+# Daniel Wit Preuss <danpre@tlen.pl>, 2004.
+# Robert Gomulka <carramba@epf.pl>, 2005, 2008, 2009.
+# Krzysztof Lichota <lichota@mimuw.edu.pl>, 2005, 2006.
+# Robert Gomulka <rgom@o2.pl>, 2006.
+# Marta Rybczyńska <kde-i18n@rybczynska.net>, 2008, 2013.
+# Michał Lachowski <michal@lachowski.info>, 2010.
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2020, 2021.
+# Jarosław Staniek <staniek@kde.org>, 2014, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: koffice\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2021-01-03 10:06+0100\n"
+"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
+"Language-Team: Polish <kde-i18n-doc@kde.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 20.12.1\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "Nie można przetworzyć dokumentu XML."
+
+#: common/KReportDesign.cpp:159
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Błąd w dokumencie XML."
+
+#: common/KReportItemBase.cpp:75
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Nazwa"
+
+#: common/KReportItemBase.cpp:75
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Nazwa obiektu"
+
+#: common/KReportItemBase.cpp:78
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Położenie"
+
+#: common/KReportItemBase.cpp:79
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Rozmiar"
+
+#: common/KReportItemBase.cpp:112
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Źródło danych"
+
+#: common/KReportItemLine.cpp:80
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "Położenie początkowe"
+
+#: common/KReportItemLine.cpp:81
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Położenie końcowe"
+
+#: common/KReportItemLine.cpp:83
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "Szerokość linii"
+
+#: common/KReportItemLine.cpp:85
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Kolor linii"
+
+#: common/KReportItemLine.cpp:86
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Rodzaj linii"
+
+#: common/KReportSectionData.cpp:164
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Sekcja"
+
+#: common/KReportSectionData.cpp:166
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "Wysokość"
+
+#: common/KReportSectionData.cpp:170
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Kolor tła"
+
+#: common/KReportUnit.cpp:136
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Nieprawidłowe"
+
+#: common/KReportUnit.cpp:138
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "Milimetry (mm)"
+
+#: common/KReportUnit.cpp:140
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "Centymetry (cm)"
+
+#: common/KReportUnit.cpp:142
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "Decymetry (dm)"
+
+#: common/KReportUnit.cpp:144
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "Cale (in)"
+
+#: common/KReportUnit.cpp:146
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "Pica (pi)"
+
+#: common/KReportUnit.cpp:148
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "Cycero (cc)"
+
+#: common/KReportUnit.cpp:150
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "Punkty (pt)"
+
+#: common/KReportUnit.cpp:152
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "Piksele (px)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr "Nieobsługiwana jednostka"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Krzyżyk"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr "Kresa"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr "Kropka"
+
+#: items/check/KReportItemCheck.cpp:80
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "Styl"
+
+#: items/check/KReportItemCheck.cpp:84
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Kolor pierwszoplanowy"
+
+#: items/check/KReportItemCheck.cpp:86
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "Szerokość linii"
+
+#: items/check/KReportItemCheck.cpp:88
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Kolor linii"
+
+#: items/check/KReportItemCheck.cpp:89
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Wygląd linii"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Wartość"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr "Wartość użyta, jeśli nie przywiązana do pola"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Wartość"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr "Wartość użyta, jeśli nie przywiązana do pola"
+
+#: items/field/KReportItemField.cpp:94
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Do lewej"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Do środka"
+
+#: items/field/KReportItemField.cpp:94
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Do prawej"
+
+#: items/field/KReportItemField.cpp:96
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Wyrównanie w poziomie"
+
+#: items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "Do góry"
+
+#: items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Do dołu"
+
+#: items/field/KReportItemField.cpp:102
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Wyrównanie w pionie"
+
+#: items/field/KReportItemField.cpp:104
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Czcionka"
+
+#: items/field/KReportItemField.cpp:106
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Kolor tła"
+
+#: items/field/KReportItemField.cpp:107
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Kolor pierwszoplanowy"
+
+#: items/field/KReportItemField.cpp:109
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Nieprzezroczystość tła"
+
+#: items/field/KReportItemField.cpp:114
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "Szerokość linii"
+
+#: items/field/KReportItemField.cpp:116
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Kolor linii"
+
+#: items/field/KReportItemField.cpp:117
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Wygląd linii"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr "Zawijanie wyrazów"
+
+#: items/field/KReportItemField.cpp:120
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr "Może rosnąć"
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr "Przytnij"
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Rozciągnij"
+
+#: items/image/KReportItemImage.cpp:120
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "Tryb zmiany rozmiaru"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Wartość"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr "Wartość użyta, jeśli nie przywiązana do pola"
+
+#: items/label/KReportItemLabel.cpp:91
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Podpis"
+
+#: items/label/KReportItemLabel.cpp:94
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Do lewej"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Do środka"
+
+#: items/label/KReportItemLabel.cpp:94
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Do prawej"
+
+#: items/label/KReportItemLabel.cpp:96
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Wyrównanie w poziomie"
+
+#: items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "Do góry"
+
+#: items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Do dołu"
+
+#: items/label/KReportItemLabel.cpp:102
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Wyrównanie w pionie"
+
+#: items/label/KReportItemLabel.cpp:104
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Czcionka"
+
+#: items/label/KReportItemLabel.cpp:106
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Kolor tła"
+
+#: items/label/KReportItemLabel.cpp:107
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Kolor pierwszoplanowy"
+
+#: items/label/KReportItemLabel.cpp:109
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Nieprzezroczystość tła"
+
+#: items/label/KReportItemLabel.cpp:114
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "Szerokość linii"
+
+#: items/label/KReportItemLabel.cpp:116
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Kolor linii"
+
+#: items/label/KReportItemLabel.cpp:117
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Wygląd linii"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Wartość"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr "Wartość użyta, jeśli nie przywiązana do pola"
+
+#: items/text/KReportItemText.cpp:119
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Do lewej"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Do środka"
+
+#: items/text/KReportItemText.cpp:119
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Do prawej"
+
+#: items/text/KReportItemText.cpp:121
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Wyrównanie w poziomie"
+
+#: items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "Do góry"
+
+#: items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Do dołu"
+
+#: items/text/KReportItemText.cpp:127
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Wyrównanie w pionie"
+
+#: items/text/KReportItemText.cpp:129
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Czcionka"
+
+#: items/text/KReportItemText.cpp:131
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Kolor tła"
+
+#: items/text/KReportItemText.cpp:132
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Kolor pierwszoplanowy"
+
+#: items/text/KReportItemText.cpp:134
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "Szerokość linii"
+
+#: items/text/KReportItemText.cpp:136
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Kolor linii"
+
+#: items/text/KReportItemText.cpp:137
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Wygląd linii"
+
+#: items/text/KReportItemText.cpp:138
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Nieprzezroczystość tła"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+"Nie można wykonać skryptu. Błąd: %1\n"
+"\n"
+"Czy chcesz wygasić dalsze wiadomości?\n"
+"(wiadomości zostaną przywrócone przy kolejnym otwarciu)"
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr ""
+"Kod skryptu:\n"
+"%1"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Błąd skryptu"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+"Ten raport zawiera następujący rodzaj skryptów \"%1\". Obsługiwane są tylko "
+"skrypty napisane w języku JavaScript. Aby uniknąć utraty skryptów, ich "
+"rodzaj i treść nie zostaną zmienione, do chwili aż ty je zmienisz."
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr "Nieobsługiwany rodzaj skryptu"
+
+#: wrtembed/KReportDesigner.cpp:676
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Nagłówek strony (każdej)"
+
+#: wrtembed/KReportDesigner.cpp:680
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Nagłówek strony (parzystej)"
+
+#: wrtembed/KReportDesigner.cpp:684
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Nagłówek strony (nieparzystej)"
+
+#: wrtembed/KReportDesigner.cpp:688
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Nagłówek strony (pierwszej)"
+
+#: wrtembed/KReportDesigner.cpp:692
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Nagłówek strony (ostatniej)"
+
+#: wrtembed/KReportDesigner.cpp:696
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "Stopka strony (każdej)"
+
+#: wrtembed/KReportDesigner.cpp:700
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "Stopka strony (parzystej)"
+
+#: wrtembed/KReportDesigner.cpp:704
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "Stopka strony (nieparzystej)"
+
+#: wrtembed/KReportDesigner.cpp:708
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "Stopka strony (pierwszej)"
+
+#: wrtembed/KReportDesigner.cpp:712
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "Stopka strony (ostatniej)"
+
+#: wrtembed/KReportDesigner.cpp:716
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "Nagłówek sprawozdania"
+
+#: wrtembed/KReportDesigner.cpp:720
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "Stopka sprawozdania"
+
+#: wrtembed/KReportDesigner.cpp:808
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "Sprawozdanie"
+
+#: wrtembed/KReportDesigner.cpp:813
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Tytuł"
+
+#: wrtembed/KReportDesigner.cpp:813
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Tytuł sprawozdania"
+
+#: wrtembed/KReportDesigner.cpp:818
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Rozmiar strony"
+
+#: wrtembed/KReportDesigner.cpp:821
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Własny rozmiar strony"
+
+#: wrtembed/KReportDesigner.cpp:825
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "Pionowy"
+
+#: wrtembed/KReportDesigner.cpp:825
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "Poziomy"
+
+#: wrtembed/KReportDesigner.cpp:827
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "Układ strony"
+
+#: wrtembed/KReportDesigner.cpp:832
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Jednostka strony"
+
+#: wrtembed/KReportDesigner.cpp:833
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Pokaż siatkę"
+
+#: wrtembed/KReportDesigner.cpp:834
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Przyciągaj do siatki"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr "Podziałka siatki"
+
+#: wrtembed/KReportDesigner.cpp:841
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Lewy margines"
+
+#: wrtembed/KReportDesigner.cpp:843
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Prawy margines"
+
+#: wrtembed/KReportDesigner.cpp:845
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Górny margines"
+
+#: wrtembed/KReportDesigner.cpp:847
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Dolny margines"
+
+#: wrtembed/KReportDesigner.cpp:869
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Obiekt skryptu"
+
+#: wrtembed/KReportDesigner.cpp:1067
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Wytnij"
+
+#: wrtembed/KReportDesigner.cpp:1071
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Skopiuj"
+
+#: wrtembed/KReportDesigner.cpp:1076
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Wklej"
+
+#: wrtembed/KReportDesigner.cpp:1087
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Usuń"
+
+#: wrtembed/KReportDesigner.cpp:1129
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Linia"
+
+#: wrtembed/KReportDesigner.cpp:1476
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Linia"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr "Wy&tnij"
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr "Wytnij zaznaczenie do schowka"
+
+#: wrtembed/KReportDesigner.cpp:1525
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "S&kopiuj"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr "Skopiuj zaznaczenie do schowka"
+
+#: wrtembed/KReportDesigner.cpp:1531
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "&Wklej"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr "Wklej zawartość schowka"
+
+#: wrtembed/KReportDesigner.cpp:1544
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Edytuj sekcje"
+
+#: wrtembed/KReportDesigner.cpp:1547
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr "Wznieś"
+
+#: wrtembed/KReportDesigner.cpp:1549
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr "Obniż"
+
+#: wrtembed/KReportDesignerSection.cpp:126
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "Szczegół"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Edytor sekcji grup"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Kolumna:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Sortowanie:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Pokaż nagłówek grupy:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Pokaż stopkę grupy:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr "Wstaw podział strony po stopce grupy:"
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr "Zaznacz cały raport"
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+"Przycisk, który pozwala na wybranie powierzchni raportu, umożliwiając "
+"zobaczenie jej właściwości."
+
+#: wrtembed/KReportRuler_p.cpp:1472
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Wcięcie pierwszego wiersza"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Wcięcie po lewej"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Wcięcie po prawej"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr "Dodaj..."
+
+#: wrtembed/KReportSectionEditor.cpp:74
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "Edytuj..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Usuń"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Przesuń w górę"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Przesuń w dół"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr "Rosnąco"
+
+#: wrtembed/KReportSectionEditor.cpp:312
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr "Malejąco"
+
+#: wrtembed/KReportSectionEditor.ui:29
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Pokaż nagłówek raportu"
+
+#: wrtembed/KReportSectionEditor.ui:36
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Pokaż stopkę raportu"
+
+#: wrtembed/KReportSectionEditor.ui:43
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Nagłówek strony"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "Pierwsza strona:"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Strony parzyste:"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Wszystkie strony:"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Ostatnia strona:"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Nieparzyste strony:"
+
+#: wrtembed/KReportSectionEditor.ui:130
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "Stopka strony"
+
+#: wrtembed/KReportSectionEditor.ui:217
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Grupy sekcji"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, qt-format
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Dopasuj do szerokości strony"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Dopasuj do strony"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr "Właściwe piksele"
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Dopasuj do szerokości tekstu"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A3"
+#~ msgstr "A3"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A4"
+#~ msgstr "A4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A5"
+#~ msgstr "A5"
+
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "Listowy US"
+
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "US oficjalny"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "Własny"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B6"
+#~ msgstr "B6"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B5"
+#~ msgstr "B5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B4"
+#~ msgstr "B4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "Biurowy"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A0"
+#~ msgstr "A0"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A1"
+#~ msgstr "A1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A2"
+#~ msgstr "A2"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A6"
+#~ msgstr "A6"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A7"
+#~ msgstr "A7"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A8"
+#~ msgstr "A8"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A9"
+#~ msgstr "A9"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B0"
+#~ msgstr "B0"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B1"
+#~ msgstr "B1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "B10"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "C5E"
+#~ msgstr "C5E"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "Comm10"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "ISO DL"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Folio"
+#~ msgstr "US Folio"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "US Ledger"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Tabloid"
+#~ msgstr "US Tabloid"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "DL Envelope"
+#~ msgstr "Koperta DL"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "C6 Envelope"
+#~ msgstr "Koperta C6"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "C6/5 Envolope"
+#~ msgstr "Koperta C6/5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "C5 Envelope"
+#~ msgstr "Koperta C5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "C4 Envelope"
+#~ msgstr "Koperta C4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Monarch Envelope"
+#~ msgstr "Koperta Monarch"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Personal Envelope"
+#~ msgstr "Koperta osobista"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "9 Envelope"
+#~ msgstr "Koperta 9"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "10 Envelope"
+#~ msgstr "Koperta 10"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "11 Envelope"
+#~ msgstr "Koperta 11"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "12 Envelope"
+#~ msgstr "Koperta 12"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "Kartka pocztowa"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Double Postcard"
+#~ msgstr "Podwójna kartka pocztowa"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Ekran"
+
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "Położenie"
+
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "Wysokość"
+
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Kolor tła"
+
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "Rozmiar"
+
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Źródło danych"
+
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Źródło danych"
+
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Źródło danych"
+
+#~ msgctxt "Scripting::Text|"
+#~ msgid "$Unable to read %1"
+#~ msgstr "$Nie można odczytać %1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "ISO A3"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "ISO A4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "ISO A5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "ISO B5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "US biurowy"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "ISO A0"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "ISO A1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "ISO A2"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "ISO A6"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "ISO A7"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "ISO A8"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "ISO A9"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "ISO B0"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "ISO B1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "ISO B2"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "ISO B3"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "ISO B4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "ISO B6"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "ISO C5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Common 10"
+#~ msgstr "US Common 10"
+
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "Wysokość"
+
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "Kolor tła"
+
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Weight"
+#~ msgstr "Szerokość linii"
+
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "Kolor linii"
+
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "Styl linii"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Źródło danych"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "Wartość"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value used if not bound to a field"
+#~ msgstr "Wartość użyta, jeśli nie przywiązana do pola"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "Kolor tła"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "Kolor pierwszoplanowy"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Weight"
+#~ msgstr "Szerokość linii"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "Kolor linii"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "Styl linii"
+
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Źródło danych"
+
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "Wartość"
+
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value used if not bound to a field"
+#~ msgstr "Wartość użyta, jeśli nie przywiązana do pola"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "Do lewej"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "Do środka"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "Do prawej"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Wyrównanie w poziomie"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "Do góry"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "Do dołu"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Wyrównanie w pionie"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "Czcionka"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "Kolor tła"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "Kolor pierwszoplanowy"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "Nieprzezroczystość tła"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Weight"
+#~ msgstr "Szerokość linii"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "Kolor linii"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "Styl linii"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Źródło danych"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "Wartość"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value used if not bound to a field"
+#~ msgstr "Wartość użyta, jeśli nie przywiązana do pola"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "Do lewej"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "Do środka"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "Do prawej"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Wyrównanie w poziomie"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "Do góry"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "Do dołu"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Wyrównanie w pionie"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "Czcionka"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "Kolor tła"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "Kolor pierwszoplanowy"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Weight"
+#~ msgstr "Szerokość linii"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "Kolor linii"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "Styl linii"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "Nieprzezroczystość tła"
+
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "Usuń"
+
+#~ msgctxt "KoReportDesigner|"
+#~ msgid ""
+#~ "This report is using a script type other than \"javascript\".  To prevent "
+#~ "loosing the script, the type of script will not be changed unless the "
+#~ "script is changed.  Please be aware that the script will not work unless "
+#~ "it is changed to a \"javascript\" script."
+#~ msgstr ""
+#~ "To sprawozdznie używa skryptu innego rodzaju niż \"javascript\". Aby "
+#~ "uniknąć utraty skryptu, jego rodzaj zostanie zmieniony, chyba że zmianie "
+#~ "ulegnie sam skrypt. Miej na uwadze, że skrypt nie zadziała, zanim nie "
+#~ "zostanie zmieniony na skrypt \"javascript\"."
+
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "Interpreter skryptów"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Krzysztof Lichota, Łukasz Wojniłowicz, Jarosław Staniek"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "lichota@mimuw.edu.pl, lukasz.wojnilowicz@gmail.com, staniek@kde.org"
+
+#~ msgid "Draw path"
+#~ msgstr "Narysuj ścieżkę"
+
+#~ msgid "Freehand path"
+#~ msgstr "Odręczna ścieżka"
+
+#~ msgid "Angle snapping delta:"
+#~ msgstr "Różnica pomiędzy przyciąganymi kątami:"
+
+#~ msgid "Activate angle snap:"
+#~ msgstr "Aktywuj przyciąganie kątowe:"
+
+#~ msgid "Angle Constraints"
+#~ msgstr "Ograniczenia kąta"
+
+#~ msgid "Precision:"
+#~ msgstr "Precyzja:"
+
+#~ msgctxt "The raw line data"
+#~ msgid "Raw"
+#~ msgstr "Surowe"
+
+#~ msgid "Curve"
+#~ msgstr "Krzywa"
+
+#~ msgid "Straight"
+#~ msgstr "Prosta"
+
+#~ msgid "Optimize"
+#~ msgstr "Optymalizuj"
+
+#~ msgid "Exactness:"
+#~ msgstr "Dokładność:"
+
+#~ msgid "Combine angle:"
+#~ msgstr "Połącz kąty:"
+
+#~ msgid "Pencil"
+#~ msgstr "Ołówek"
+
+#~ msgid "Invalid database contents. "
+#~ msgstr "Nieprawidłowa zawartość bazy danych. "
+
+#~ msgid "It is a system object."
+#~ msgstr "To jest obiekt systemowy."
+
+#~ msgid "Connection already established."
+#~ msgstr "Połączenie zostało już nawiązane."
+
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr "Nie można otworzyć pliku projektu \"%1\"."
+
+#~ msgid "Could not connect to \"%1\" database server."
+#~ msgstr "Nie można połączyć się z serwerem baz danych \"%1\"."
+
+#~ msgid "Not connected to the database server."
+#~ msgstr "Brak połączenia z serwerem baz danych."
+
+#~ msgid "Currently no database is used."
+#~ msgstr "Żadna baza danych nie jest obecnie używana."
+
+#~ msgid "The database \"%1\" does not exist."
+#~ msgstr "Baza danych \"%1\" nie istnieje."
+
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "Baza danych \"%1\" nie istnieje."
+
+#~ msgid "Database file \"%1\" is not readable."
+#~ msgstr "Nie można odczytać pliku bazy danych \"%1\"."
+
+#~ msgid "Database file \"%1\" is not writable."
+#~ msgstr "Nie można zapisać pliku bazy danych \"%1\"."
+
+#~ msgid "Database \"%1\" created but could not be closed after creation."
+#~ msgstr ""
+#~ "Utworzono bazę danych \"%1\", lecz nie można jej zamknąć po utworzeniu."
+
+#~ msgid "Database \"%1\" already exists."
+#~ msgstr "Baza danych \"%1\" już istnieje."
+
+#~ msgid ""
+#~ "Cannot create database \"%1\". This name is reserved for system database."
+#~ msgstr ""
+#~ "Nie można utworzyć bazy danych \"%1\". Ta nazwa jest zarezerwowana dla "
+#~ "systemowej bazy danych."
+
+#~ msgid "Error creating database \"%1\" on the server."
+#~ msgstr "Błąd podczas tworzenia bazy danych \"%1\" na serwerze."
+
+#~ msgid "Database \"%1\" created but could not be opened."
+#~ msgstr "Baza danych \"%1\" została utworzona lecz nie może zostać otwarta."
+
+#~ msgid "Opening database \"%1\" failed."
+#~ msgstr "Nieudane otwarcie bazy danych \"%1\"."
+
+#~ msgid "Database version (%1) does not match Kexi application's version (%2)"
+#~ msgstr "Wersja bazy danych (%1) nie odpowiada wersji programu Kexi (%2)"
+
+#~ msgid "Cannot find any database for temporary connection."
+#~ msgstr "Nie można znaleźć żadnej bazy danych do tymczasowego połączenia."
+
+#~ msgid ""
+#~ "Error during starting temporary connection using \"%1\" database name."
+#~ msgstr ""
+#~ "Błąd podczas nawiązywania tymczasowego połączenia z użyciem bazy danych "
+#~ "\"%1\"."
+
+#~ msgid "Cannot delete database - name not specified."
+#~ msgstr "Nie można usunąć bazy danych - nie została określona jej nazwa."
+
+#~ msgid "Cannot delete system database \"%1\"."
+#~ msgstr "Nie można usunąć systemowej bazy danych \"%1\"."
+
+#~ msgid "Error while executing SQL statement."
+#~ msgstr "Błąd podczas wykonywania polecenia SQL."
+
+#~ msgid "Creating table failed."
+#~ msgstr "Nieudane utworzenie tabeli."
+
+#~ msgid "Cannot create table without fields."
+#~ msgstr "Nie można utworzyć tabeli bez pól."
+
+#~ msgid "System name \"%1\" cannot be used as table name."
+#~ msgstr "Systemowa nazwa \"%1\" nie może być użyta jako nazwa tabeli."
+
+#~ msgid "System name \"%1\" cannot be used as one of fields in \"%2\" table."
+#~ msgstr ""
+#~ "Systemowa nazwa \"%1\" nie może być użyta jako nazwa jednego z pól w "
+#~ "tabeli \"%2\"."
+
+#~ msgid "Could not create the same table \"%1\" twice."
+#~ msgstr "Nie można dwukrotnie utworzyć tej samej tabeli \"%1\"."
+
+#~ msgid "Table \"%1\" already exists."
+#~ msgstr "Tabela \"%1\" już istnieje."
+
+#~ msgid "Table \"%1\" does not exist."
+#~ msgstr "Tabela \"%1\" nie istnieje."
+
+#~ msgid "Could not remove object's data."
+#~ msgstr "Nie można usunąć danych obiektu."
+
+#~ msgid "Table \"%1\" cannot be removed.\n"
+#~ msgstr "Tabela \"%1\" nie może być usunięta.\n"
+
+#~ msgid "Unexpected name or identifier."
+#~ msgstr "Nieoczekiwana nazwa lub identyfikator."
+
+#~ msgid "Could not alter table \"%1\" using the same table as destination."
+#~ msgstr ""
+#~ "Nie można zmodyfikować tabeli \"%1\" używając tej samej tabeli jako "
+#~ "docelowej."
+
+#~ msgid "Unknown table \"%1\"."
+#~ msgstr "Nieznana tabela \"%1\"."
+
+#~ msgid "Invalid table name \"%1\"."
+#~ msgstr "Nieprawidłowa nazwa tabeli \"%1\"."
+
+#~ msgid "Could not rename table \"%1\" using the same name."
+#~ msgstr "Nie można zmienić nazwy tabeli \"%1\" używając tej samej nazwy."
+
+#~ msgid ""
+#~ "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
+#~ msgstr ""
+#~ "Nie można zmienić nazwy tabeli \"%1\" na \"%2\". Tabela \"%3\" już "
+#~ "istnieje."
+
+#~ msgid "Query \"%1\" does not exist."
+#~ msgstr "Zapytanie \"%1\" nie istnieje."
+
+#~ msgid "Transactions are not supported for \"%1\" driver."
+#~ msgstr "Transakcje nie są obsługiwane dla sterownika \"%1\"."
+
+#~ msgid "Begin transaction failed."
+#~ msgstr "Nieudane rozpoczęcie transakcji."
+
+#~ msgid "Transaction already started."
+#~ msgstr "Transakcja została już rozpoczęta."
+
+#~ msgid "Transaction not started."
+#~ msgstr "Transakcja nie została rozpoczęta."
+
+#~ msgid "Error on commit transaction."
+#~ msgstr "Błąd podczas zatwierdzania transakcji."
+
+#~ msgid "Error on rollback transaction."
+#~ msgstr "Błąd podczas wycofywania transakcji."
+
+#~ msgid "Invalid object name \"%1\"."
+#~ msgstr "Nieprawidłowa nazwa obiektu \"%1\"."
+
+#~ msgid "Column <resource>%1</resource> does not exist in the query."
+#~ msgstr "Kolumna <resource>%1</resource> nie istnieje w zapytaniu."
+
+#~ msgctxt "Extended schema for a table: loading error"
+#~ msgid "Error while loading extended table schema."
+#~ msgstr "Błąd podczas wczytywania rozszerzonego schematu tabeli."
+
+#~ msgid "Invalid XML data: %1"
+#~ msgstr "Nieprawidłowe dane XML: %1"
+
+#~ msgid ""
+#~ "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~ "XML data: %4"
+#~ msgstr ""
+#~ "Błąd w danych XML: \"%1\" w linii %2, kolumnie %3.\n"
+#~ "Dane XML: %4"
+
+#~ msgid "Table has no fields defined."
+#~ msgstr "Tabela nie zawiera żadnych pól."
+
+#~ msgid ""
+#~ "Could not find definition for query \"%1\". Removing this query is "
+#~ "recommended."
+#~ msgstr ""
+#~ "Nie można znaleźć definicji zapytania \"%1\". Zalecane jest usunięcie "
+#~ "tego zapytania."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>Could not load definition for query \"%1\". SQL statement for this "
+#~ "query is invalid: <message>%2</message></para>\n"
+#~ "<para>You can open this query in Text View and correct it.</para>"
+#~ msgstr ""
+#~ "<para>Nie można wczytać definicji zapytania \"%1\". Polecenie SQL dla "
+#~ "tego zapytania jest nieprawidłowe: <message>%2</message></para>\n"
+#~ "<para>Możesz otworzyć to zapytanie w widoku tekstowym i poprawić je.</"
+#~ "para>"
+
+#~ msgid "Could not update record because there is no master table defined."
+#~ msgstr "Nie można uaktualnić rekordu, bo nie określono tabeli nadrzędnej."
+
+#~ msgid ""
+#~ "Could not update record because master table has no primary key defined."
+#~ msgstr "Nie można uaktualnić rekordu, bo nie zdefiniowano klucza głównego."
+
+#~ msgid ""
+#~ "Could not update record because it does not contain entire primary key of "
+#~ "master table."
+#~ msgstr ""
+#~ "Nie można uaktualnić rekordu, bo nie zawiera całego klucza głównego "
+#~ "tabeli nadrzędnej."
+
+#~ msgid "Primary key's field \"%1\" cannot be empty."
+#~ msgstr "Pole \"%1\" klucza głównego nie może być puste."
+
+#~ msgid "Record updating on the server failed."
+#~ msgstr "Nieudana aktualizacja rekordu na serwerze."
+
+#~ msgid "Could not insert record because there is no master table specified."
+#~ msgstr "Nie można wstawić rekordu, bo nie określono tabeli nadrzędnej."
+
+#~ msgid ""
+#~ "Could not insert record because master table has no primary key specified."
+#~ msgstr ""
+#~ "Nie można wstawić rekordu, bo nadrzędna tabela nie ma określonego klucza "
+#~ "głównego."
+
+#~ msgid ""
+#~ "Could not insert record because it does not contain entire master table's "
+#~ "primary key."
+#~ msgstr ""
+#~ "Nie można wstawić rekordu, bo nie zawiera całego klucza głównego tabeli "
+#~ "nadrzędnej."
+
+#~ msgid "Record inserting on the server failed."
+#~ msgstr "Nieudane wstawienie rekordu na serwerze."
+
+#~ msgid "Could not delete record because there is no master table specified."
+#~ msgstr "Nie można usunąć rekordu, bo nie określono tabeli nadrzędnej."
+
+#~ msgid ""
+#~ "Could not delete record because there is no primary key for master table "
+#~ "specified."
+#~ msgstr ""
+#~ "Nie można usunąć rekordu, bo nie określono klucza głównego dla tabeli "
+#~ "nadrzędnej."
+
+#~ msgid ""
+#~ "Could not delete record because it does not contain entire master table's "
+#~ "primary key."
+#~ msgstr ""
+#~ "Nie można usunąć rekordu, bo nie zawiera całego klucza głównego tabeli "
+#~ "nadrzędnej."
+
+#~ msgid "Record deletion on the server failed."
+#~ msgstr "Nieudane usunięcie rekordu na serwerze."
+
+#~ msgid "Unknown error."
+#~ msgstr "Nieznany błąd."
+
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "plik: %1"
+
+#~ msgctxt "@info"
+#~ msgid "&lt;file&gt;"
+#~ msgstr "&lt;plik&gt;"
+
+#~ msgid "No query statement or schema defined."
+#~ msgstr "Nie podano polecenia lub schematu zapytania."
+
+#~ msgid "Query statement is empty."
+#~ msgstr "Polecenie zapytania jest puste."
+
+#~ msgid "Error opening database cursor."
+#~ msgstr "Błąd przy otwieraniu kursora bazy danych."
+
+#~ msgid "Cannot fetch next record."
+#~ msgstr "Nie można pobrać kolejnego rekordu."
+
+#~ msgid "No connection for cursor open operation specified."
+#~ msgstr "Nie określono połączenia dla operacji otwarcia kursora."
+
+#~ msgid "Could not set value of database property \"%1\"."
+#~ msgstr "Nie można ustawić wartości dla właściwości \"%1\" w bazie danych."
+
+#~ msgid "Could not set caption for database property \"%1\"."
+#~ msgstr "Nie można ustawić nagłówka dla właściwości \"%1\" w bazie danych."
+
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "Nie można odczytać właściwości \"%1\" w bazie danych."
+
+#~ msgid "Could not read database properties."
+#~ msgstr "Nie można odczytać właściwości bazy danych."
+
+#~ msgid "Invalid database driver's \"%1\" implementation:\n"
+#~ msgstr "Niepoprawna implementacja sterownika baz danych \"%1\":\n"
+
+#~ msgid "Value of \"%1\" is not initialized for the driver."
+#~ msgstr "Niezainicjowana wartość \"%1\" dla sterownika."
+
+#~ msgid "File name expected for file-based database driver."
+#~ msgstr ""
+#~ "Dla sterownika baz danych opartych o plik jest wymagane podanie nazwy "
+#~ "pliku."
+
+#~ msgid "Client library version"
+#~ msgstr "Wersja biblioteki klienta"
+
+#~ msgid "Default character encoding on server"
+#~ msgstr "Domyślne kodowanie znaków na serwerze"
+
+#~ msgid "File-based database driver"
+#~ msgstr "Sterownik baz danych opartych o plik"
+
+#~ msgid "File-based database's MIME type"
+#~ msgstr "Typ MIME dla sterownika baz danych opartych o plik"
+
+#~ msgid "Single transactions support"
+#~ msgstr "Obsługa pojedynczych transakcji"
+
+#~ msgid "Multiple transactions support"
+#~ msgstr "Obsługa wielu transakcji"
+
+#~ msgid "Nested transactions support"
+#~ msgstr "Obsługa transakcji zagnieżdżonych"
+
+#~ msgid "KexiDB driver version"
+#~ msgstr "Wersja sterownika KexiDB"
+
+#~ msgid "Could not find any database drivers."
+#~ msgstr "Nie można znaleźć żadnych sterowników baz danych."
+
+#~ msgid "Could not find database driver \"%1\"."
+#~ msgstr "Nie można znaleźć sterownika baz danych \"%1\"."
+
+#~ msgid ""
+#~ "Incompatible database driver's \"%1\" version: found version %2, expected "
+#~ "version %3."
+#~ msgstr ""
+#~ "Niezgodna wersja sterownika baz danych \"%1\": znaleziono wersję %2, "
+#~ "oczekiwano wersji %3."
+
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "Nie można wczytać sterownika baz danych \"%1\"."
+
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "Nie można znaleźć usługi <resource>%1</resource>."
+
+#~ msgid "Incorrect number of arguments"
+#~ msgstr "Niepoprawna liczba argumentów"
+
+#~ msgctxt "@info BETWEEN..AND error"
+#~ msgid "%1 operator requires exactly three arguments."
+#~ msgstr "Operator %1 wymaga dokładnie trzech argumentów."
+
+#~ msgid "Incompatible types of arguments"
+#~ msgstr "Niezgodne rodzaje argumentów"
+
+#~ msgctxt "@info BETWEEN..AND type error"
+#~ msgid "%1 operator requires compatible types of arguments."
+#~ msgstr "Operator %1 wymaga zgodnych rodzajów argumentów."
+
+#~ msgid "Ambiguous field name"
+#~ msgstr "Niejednoznaczna nazwa pola"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Both table <resource>%1</resource> and <resource>%2</resource> have "
+#~ "defined <resource>%3</resource> field. Use "
+#~ "<resource><placeholder>tableName</placeholder>.%4</resource> notation to "
+#~ "specify table name."
+#~ msgstr ""
+#~ "Zarówno tabela <resource>%1</resource> jak i <resource>%2</resource> mają "
+#~ "zdefiniowane pole <resource>%3</resource>. Użyj składni "
+#~ "<resource><placeholder>nazwaTabeli</placeholder>.%4</resource> aby "
+#~ "określić nazwę tabeli."
+
+#~ msgid "Field not found"
+#~ msgstr "Nie znaleziono pola"
+
+#~ msgid "Table containing \"%1\" field not found."
+#~ msgstr "Nie znaleziono tabeli zawierającej pole \"%1\"."
+
+#~ msgid "Could not access the table directly using its name"
+#~ msgstr ""
+#~ "Nie można uzyskać dostępu do tabeli używając bezpośrednio jej nazwy."
+
+#~ msgid ""
+#~ "Table name <resource>%1</resource> is covered by aliases. Instead of "
+#~ "<resource>%2</resource>, you can write <resource>%3</resource>."
+#~ msgstr ""
+#~ "Nazwa tabeli <resource>%1</resource> jest zakryta przez aliasy. Zamiast "
+#~ "<resource>%2</resource> można napisać <resource>%3</resource>."
+
+#~ msgid "Table not found"
+#~ msgstr "Nie znaleziono tabeli"
+
+#~ msgid "Ambiguous \"%1.*\" expression"
+#~ msgstr "Niejednoznaczne wyrażenie \"%1.*\""
+
+#~ msgid "More than one \"%1\" table or alias defined."
+#~ msgstr "Istnieje więcej niż jedna tabela lub alias \"%1\"."
+
+#~ msgid "Table \"%1\" has no \"%2\" field."
+#~ msgstr "Tabela \"%1\" nie zawiera pola \"%2\"."
+
+#~ msgid "Ambiguous \"%1.%2\" expression"
+#~ msgstr "Niejednoznaczne wyrażenie \"%1.%2\""
+
+#~ msgid "More than one \"%1\" table or alias defined containing \"%2\" field."
+#~ msgstr ""
+#~ "Istnieje więcej niż jedna tabela lub alias \"%1\" zawierające pole \"%2\"."
+
+#~ msgctxt "@info Number of arguments error"
+#~ msgid "%1() function requires 2 or 3 arguments."
+#~ msgstr "Funkcja %1() wymaga 2 lub 3 argumentów."
+
+#~ msgid "Incorrect type of argument"
+#~ msgstr "Nieprawidłowy rodzaj argumentu"
+
+#~ msgctxt "@info Type error"
+#~ msgid ""
+#~ "%1() function's first argument should be of type \"%2\". Specified "
+#~ "argument is of type \"%3\"."
+#~ msgstr ""
+#~ "Rodzaj pierwszego argumentu funkcji %1() powinien być \"%2\". Podany "
+#~ "argument jest rodzaju \"%3\"."
+
+#~ msgctxt "@info Type error"
+#~ msgid ""
+#~ "%1() function's second argument should be of type \"%2\". Specified "
+#~ "argument is of type \"%3\"."
+#~ msgstr ""
+#~ "Rodzaj drugiego argumentu funkcji %1() powinien być \"%2\". Podany "
+#~ "argument jest rodzaju \"%3\"."
+
+#~ msgctxt "@info Type error"
+#~ msgid ""
+#~ "%1() function's third argument should be of type \"%2\". Specified "
+#~ "argument is of type \"%3\"."
+#~ msgstr ""
+#~ "Rodzaj trzeciego argumentu funkcji %1() powinien być \"%2\". Podany "
+#~ "argument jest rodzaju \"%3\"."
+
+#~ msgid "Byte"
+#~ msgstr "Bajt"
+
+#~ msgid "Short Integer Number"
+#~ msgstr "Liczba całkowita krótka"
+
+#~ msgid "Integer Number"
+#~ msgstr "Liczba całkowita"
+
+#~ msgid "Big Integer Number"
+#~ msgstr "Liczba całkowita wielka"
+
+#~ msgid "Yes/No Value"
+#~ msgstr "Wartość Tak/Nie"
+
+#~ msgid "Date"
+#~ msgstr "Data"
+
+#~ msgid "Date and Time"
+#~ msgstr "Data i czas"
+
+#~ msgid "Time"
+#~ msgstr "Czas"
+
+#~ msgid "Single Precision Number"
+#~ msgstr "Liczba o pojedynczej precyzji"
+
+#~ msgid "Double Precision Number"
+#~ msgstr "Liczba o podwójnej precyzji"
+
+#~ msgid "Text"
+#~ msgstr "Tekst"
+
+#~ msgid "Long Text"
+#~ msgstr "Długi tekst"
+
+#~ msgid "Object"
+#~ msgstr "Obiekt"
+
+#~ msgid "Invalid Group"
+#~ msgstr "Nieprawidłowa grupa"
+
+#~ msgid "Floating Point Number"
+#~ msgstr "Liczba zmiennoprzecinkowa"
+
+#~ msgid "Yes/No"
+#~ msgstr "Tak/Nie"
+
+#~ msgid "Date/Time"
+#~ msgstr "Data/Czas"
+
+#~ msgid ""
+#~ "You can correct data in this record or use \"Cancel record changes\" "
+#~ "function."
+#~ msgstr ""
+#~ "Możesz poprawić dane w tym rekordzie lub użyć funkcji \"Anuluj zmiany w "
+#~ "rekordzie\"."
+
+#~ msgid "Unspecified error encountered"
+#~ msgstr "Napotkano nieokreślony błąd"
+
+#~ msgid "identifier was expected"
+#~ msgstr "oczekiwano identyfikatora"
+
+#~ msgid "\"%1\" is a reserved keyword."
+#~ msgstr "\"%1\" jest zastrzeżonym słowem kluczowym."
+
+#~ msgid "Syntax error."
+#~ msgstr "Błąd składni."
+
+#~ msgid "Error"
+#~ msgstr "Błąd"
+
+#~ msgid "Error near \"%1\"."
+#~ msgstr "Błąd w pobliżu \"%1\"."
+
+#~ msgid "No query statement specified."
+#~ msgstr "Nie podano polecenia zapytania."
+
+#~ msgid "\"*\" could not be used if no tables are specified."
+#~ msgstr "\"*\" nie może być użyte jeśli nie podano żadnych tabel."
+
+#~ msgid "Invalid alias definition for column \"%1\"."
+#~ msgstr "Nieprawidłowa definicja aliasu dla kolumny \"%1\"."
+
+#~ msgid "Invalid \"%1\" column definition."
+#~ msgstr "Nieprawidłowa definicja kolumny \"%1\"."
+
+#~ msgid "Could not define sorting - no column at position %1."
+#~ msgstr "Nie można zdefiniować sortowania - brak kolumny na pozycji %1."
+
+#~ msgid ""
+#~ "Could not define sorting - column name or alias \"%1\" does not exist."
+#~ msgstr ""
+#~ "Nie można zdefiniować sortowania - nie istnieje kolumna lub alias \"%1\""
+
+#~ msgctxt ""
+#~ "short for 'expression' word, e.g. 'expr' (only latin letters, please, no "
+#~ "'.')"
+#~ msgid "expr"
+#~ msgstr "wyr"
+
+#~ msgid "Database driver name"
+#~ msgstr "Nazwa sterownika baz danych"
+
+#~ msgid "Database user name"
+#~ msgstr "Nazwa użytkownika bazy danych"
+
+#~ msgid "Prompts for password"
+#~ msgstr "Pyta o hasło"
+
+#~ msgid "Host (server) name"
+#~ msgstr "Nazwa hosta (serwera)"
+
+#~ msgid "Server's port number"
+#~ msgstr "Numer portu serwera"
+
+#~ msgid "Server's local socket filename"
+#~ msgstr "Nazwa lokalnego pliku gniazda"
+
+#~ msgid "Enter password for %1: "
+#~ msgstr "Wprowadź hasło dla %1: "
+
+#~ msgid "\"%1\" column requires a value to be entered."
+#~ msgstr "Kolumna \"%1\" wymaga wprowadzenia wartości."
+
+#~ msgid "The column's constraint is declared as NOT NULL."
+#~ msgstr "Warunki dla kolumny są zadeklarowane jako NOT NULL (niepuste)."
+
+#~ msgid "The column's constraint is declared as NOT EMPTY."
+#~ msgstr ""
+#~ "Warunki dla kolumny są zadeklarowane jako NOT EMPTY (niepusty tekst)."
+
+#~ msgid "Record inserting failed."
+#~ msgstr "Nieudane wstawienie rekordu."
+
+#~ msgid "Record changing failed."
+#~ msgstr "Nieudana zmiana rekordu."
+
+#~ msgid "Record deleting failed."
+#~ msgstr "Nieudane usunięcie rekordu."
+
+#~ msgid "Message from server:"
+#~ msgstr "Wiadomość z serwera:"
+
+#~ msgid "SQL statement:"
+#~ msgstr "Polecenie SQL:"
+
+#~ msgid "Server result:"
+#~ msgstr "Wynik z serwera:"
+
+#~ msgid "Test Connection"
+#~ msgstr "Testuj połączenie"
+
+#~ msgid "Testing connection to <resource>%1</resource> database server..."
+#~ msgstr ""
+#~ "Testowanie połączenia z serwerem baz danych <resource>%1</resource>..."
+
+#~ msgid ""
+#~ "<qt>Test connection to <b>%1</b> database server failed. The server is "
+#~ "not responding.</qt>"
+#~ msgstr ""
+#~ "Testowe połączenie z serwerem baz danych <resource>%1</resource> nie "
+#~ "powiodło się. Serwer nie odpowiada."
+
+#~ msgid ""
+#~ "<qt>Test connection to <b>%1</b> database server established successfully."
+#~ "</qt>"
+#~ msgstr ""
+#~ "Testowe połączenie z serwerem baz danych <resource>%1</resource> zostało "
+#~ "pomyślnie nawiązane."
+
+#~ msgid "Number"
+#~ msgstr "Liczba"
+
+#~ msgid "Image"
+#~ msgstr "Obraz"
+
+#~ msgid "\"%1\" value has to be entered."
+#~ msgstr "Wartość \"%1\" musi być wprowadzona."
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr "Zmień połączenie"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr "Zmień parametr"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "Przekształć do ścieżki"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath at points"
+#~ msgstr "Przerwij pod-ścieżkę w punktach"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Combine paths"
+#~ msgstr "Połącz ścieżki"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move control point"
+#~ msgstr "Przemieść punkt kontrolny"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set fill rule"
+#~ msgstr "Ustaw regułę wypełniania"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "Wstaw punkty"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "Scal punkty"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move points"
+#~ msgstr "Przemieść punkty"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove points"
+#~ msgstr "Usuń punkty"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set point type"
+#~ msgstr "Ustaw typ punktu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reverse paths"
+#~ msgstr "Odwróć ścieżki"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath"
+#~ msgstr "Przerwij pod-ścieżkę"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to curves"
+#~ msgstr "Zmień odcinki na krzywe"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to lines"
+#~ msgstr "Zmień odcinki na linie"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set marker"
+#~ msgstr "Ustaw znacznik"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Align shapes"
+#~ msgstr "Wyrównaj kształty"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr "Ustaw tło"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Clip Shape"
+#~ msgstr "Przytnij kształt"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr "Tworzenie kształtu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shape"
+#~ msgid_plural "Delete shapes"
+#~ msgstr[0] "Usuń kształt"
+#~ msgstr[1] "Usuń kształty"
+#~ msgstr[2] "Usuń kształty"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Distribute shapes"
+#~ msgstr "Rozmieść kształty"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr "Grupuj kształty"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add shapes to group"
+#~ msgstr "Dodaj kształty do grupy"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Keep Aspect Ratio"
+#~ msgstr "Zachowaj współczynnik kształtu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Lock shapes"
+#~ msgstr "Zablokuj kształty"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move shapes"
+#~ msgstr "Przemieść kształty"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr "Zmień nazwę kształtu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reorder shapes"
+#~ msgstr "Zmień kolejność kształtów"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Shape RunAround"
+#~ msgstr "Zmień kształt Opływaj"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Shadow"
+#~ msgstr "Ustaw cień"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Shear shapes"
+#~ msgstr "Pochyl kształty"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Resize shapes"
+#~ msgstr "Zmień rozmiar kształtów"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set stroke"
+#~ msgstr "Ustaw pociągnięcie"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr "Ustaw nieprzezroczystość"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shape"
+#~ msgstr "Nie przycinaj kształtu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shapes"
+#~ msgstr "Nie przycinaj kształtów"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr "Rozgrupuj kształty"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Close subpath"
+#~ msgstr "Zamknij pod-ścieżkę"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Join subpaths"
+#~ msgstr "Połącz pod-ścieżki"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove subpath"
+#~ msgstr "Usuń pod-ścieżkę"
+
+#~ msgid "Standard"
+#~ msgstr "Standardowy"
+
+#~ msgid "Lines"
+#~ msgstr "Linia"
+
+#~ msgid "Type:"
+#~ msgstr "Typ:"
+
+#~ msgid "Tie"
+#~ msgstr "Zwiąż"
+
+#~ msgid "A connection between two other shapes"
+#~ msgstr "Połączenie między dwoma innymi kształtami"
+
+#~ msgid "Shows or hides grid"
+#~ msgstr "Pokazuje lub ukrywa siatkę"
+
+#~ msgid "Simple path shape"
+#~ msgstr "Prosty kształt ścieżki"
+
+#~ msgid "A simple path shape"
+#~ msgstr "Prosty kształt ścieżki"
+
+#~ msgid "%1 Options"
+#~ msgstr "%1 opcje"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Shapes"
+#~ msgstr "Wklej kształty"
+
+#~ msgid "Active tool: %1"
+#~ msgstr "Aktywne narzędzie: %1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "Wklej obraz"
+
+#~ msgid "Nodes"
+#~ msgstr "Węzły"
+
+#~ msgid "Extension of lines"
+#~ msgstr "Wydłużenia linii"
+
+#~ msgid "Bounding box of shape"
+#~ msgstr "Pole ograniczające kształtu"
+
+#~ msgid "Proximity distance where snapping happens"
+#~ msgstr "Odległość sąsiadowania, gdzie odbywa się przyciąganie"
+
+#~ msgid " px"
+#~ msgstr " piks."
+
+#~ msgid "Orthogonal"
+#~ msgstr "Prostopadle"
+
+#~ msgid "Intersection of lines"
+#~ msgstr "Przecięcie linii"
+
+#~ msgid "Guide lines"
+#~ msgstr "Prowadnice"
+
+#~ msgid "Embedded svg shape"
+#~ msgstr "Osadzony kształt svg"
+
+#~ msgid "Create object"
+#~ msgstr "Tworzenie obiektu"
+
+#~ msgid "Pan"
+#~ msgstr "Przesuń"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Segment"
+#~ msgstr "Zmień odcinek"
+
+#~ msgid "Corner point"
+#~ msgstr "Punkt narożny"
+
+#~ msgid "Smooth point"
+#~ msgstr "Gładki punkt"
+
+#~ msgid "Symmetric Point"
+#~ msgstr "Punkt symetryczny"
+
+#~ msgid "Make curve point"
+#~ msgstr "Utwórz punkt krzywej"
+
+#~ msgid "Make line point"
+#~ msgstr "Utwórz punkt linii"
+
+#~ msgid "Segment to Line"
+#~ msgstr "Segment na linię"
+
+#~ msgid "Segment to Curve"
+#~ msgstr "Odcinek do krzywej"
+
+#~ msgid "Insert point"
+#~ msgstr "Wstaw punkt"
+
+#~ msgid "Remove point"
+#~ msgstr "Usuń punkt"
+
+#~ msgid "Break at point"
+#~ msgstr "Przerwij w punkcie"
+
+#~ msgid "Break at segment"
+#~ msgstr "Przerwij w odcinku"
+
+#~ msgid "Join with segment"
+#~ msgstr "Połącz z odcinkiem"
+
+#~ msgid "Merge points"
+#~ msgstr "Scal punkty"
+
+#~ msgid "To Path"
+#~ msgstr "Do ścieżki"
+
+#~ msgid "Line/Curve"
+#~ msgstr "Linia/krzywa"
+
+#~ msgid "Drag to move handle."
+#~ msgstr "Przeciągnij, żeby przenieść uchwyt."
+
+#~ msgid "Drag to move point. Shift click to change point type."
+#~ msgstr ""
+#~ "Przeciągnij, żeby przenieść punkt. Kliknij z wciśniętym shiftem, żeby "
+#~ "zmienić typ punktu."
+
+#~ msgid "Drag to move control point."
+#~ msgstr "Przeciągnij, żeby przenieść punkt kontrolny."
+
+#~ msgid ""
+#~ "Drag to change curve directly. Double click to insert new path point."
+#~ msgstr ""
+#~ "Przeciągnij, aby bezpośrednio zmienić krzywą. Kliknij podwójnie, aby "
+#~ "wstawić nowy punkt ścieżki."
+
+#~ msgid "Press B to break path at selected point."
+#~ msgstr "Naciśnij B, aby przerwać ścieżkę w wybranym punkcie."
+
+#~ msgid "Press B to break path at selected segments."
+#~ msgstr "Naciśnij B, aby przerwać ścieżkę na wybranych odcinkach."
+
+#~ msgid "Path editing"
+#~ msgstr "Edytowanie ścieżki"
+
+#~ msgid "Zoom"
+#~ msgstr "Powiększenie"
+
+#~ msgid "Zoom In"
+#~ msgstr "Powiększ"
+
+#~ msgid "Zoom Out"
+#~ msgstr "Pomniejsz"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Convert To Path"
+#~ msgstr "Zamień na ścieżkę"
+
+#~ msgid "Scripts"
+#~ msgstr "Skrypty"
+
+#~ msgid "Script Manager"
+#~ msgstr "Zarządzanie skryptami"
+
+#~ msgid "Execute Script File..."
+#~ msgstr "Wykonaj plik skryptu..."
+
+#~ msgid "Script Manager..."
+#~ msgstr "Zarządzanie skryptami..."
+
+#~ msgid "Execute Script File"
+#~ msgstr "Wykonaj plik skryptu"
+
+#~ msgid "Install Script Package"
+#~ msgstr "Zainstaluj pakiet skryptów"
+
+#~ msgid "Could not read the package \"%1\"."
+#~ msgstr "Nie można odczytać pakietu \"%1\"."
+
+#~ msgid "The package \"%1\" does not contain a valid install.rc file."
+#~ msgstr "Pakiet \"%1\" nie zawiera właściwego pliku install.rc."
+
+#~ msgid "Failed to parse the install.rc file at package \"%1\"."
+#~ msgstr "Nie powiodło się przetworzenie pliku install.rc w pakiecie \"%1\"."
+
+#~ msgid ""
+#~ "Failed to determinate location where the package \"%1\" should be "
+#~ "installed to."
+#~ msgstr ""
+#~ "Nie powiodło się określenie lokalizacji, w której powinien zostać "
+#~ "zainstalowany pakiet \"%1\"."
+
+#~ msgid ""
+#~ "A script package with the name \"%1\" already exists. Replace this "
+#~ "package?"
+#~ msgstr "Pakiet skryptów o nazwie \"%1\" już istnieje. Zastąpić go?"
+
+#~ msgid "Replace"
+#~ msgstr "Zamień"
+
+#~ msgid ""
+#~ "Could not uninstall this script package. You may not have sufficient "
+#~ "permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Nie można odinstalować pakietu skryptów. Możesz nie mieć wystarczających "
+#~ "uprawnień do skasowania katalogu \"%1\"."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\" since the script is not "
+#~ "installed."
+#~ msgstr ""
+#~ "Nie można odinstalować pakietu skryptów \"%1\", bo skrypt nie jest "
+#~ "zainstalowany."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\". You may not have "
+#~ "sufficient permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Nie można odinstalować pakietu skryptów \"%1\". Możesz nie mieć "
+#~ "wystarczających uprawnień do skasowania katalogu \"%1\"."
+
+#~ msgid "Save"
+#~ msgstr "Zapisz"
+
+#~ msgid ""
+#~ "<qt>This wizard will guide you through the proccess of adding a new "
+#~ "resource to your scripts.</qt>"
+#~ msgstr ""
+#~ "<qt>Ten asystent poprowadzi Cię przez proces dodawania nowego zasobu do "
+#~ "skryptów.</qt>"
+
+#~ msgid "Add script file"
+#~ msgstr "Dodaj plik skryptu"
+
+#~ msgid "Add collection folder"
+#~ msgstr "Dodaj katalog kolekcji"
+
+#~ msgid "Install script package file"
+#~ msgstr "Zainstaluj plik pakietu skryptów"
+
+#~ msgid "Install online script package"
+#~ msgstr "Zainstaluj pakiet online skryptów"
+
+#~ msgid "Add"
+#~ msgstr "Dodaj"
+
+#~ msgid "Script"
+#~ msgstr "Skrypt"
+
+#~ msgid "Collection"
+#~ msgstr "Kolekcja"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master slide"
+#~ msgstr "Zmień slajd główny"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master page"
+#~ msgstr "Zmień stronę główną"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "Ustawienie układu strony"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display master background"
+#~ msgstr "Wyświetl główne tło"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display slide background"
+#~ msgstr "Pokaż tło slajdu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display page background"
+#~ msgstr "Pokaż tło strony"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Show master shapes"
+#~ msgstr "Pokaż główne kształty"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Hide master shapes"
+#~ msgstr "Ukryj główne kształty"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] "Usuń slajd"
+#~ msgstr[1] "Usuń slajdy"
+#~ msgstr[2] "Usuń slajdy"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "Usuń stronę"
+#~ msgstr[1] "Usuń strony"
+#~ msgstr[2] "Usuń strony"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr "Wstaw slajd"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr "Wstaw stronę"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "Przesuń slajd"
+#~ msgstr[1] "Przesuń slajdy"
+#~ msgstr[2] "Przesuń slajdy"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] "Przesuń stronę"
+#~ msgstr[1] "Przesuń strony"
+#~ msgstr[2] "Przesuń strony"
+
+#~ msgid "Configure"
+#~ msgstr "Ustawienia"
+
+#~ msgid "Misc"
+#~ msgstr "Różne"
+
+#~ msgid "Grid"
+#~ msgstr "Siatka"
+
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "Dokument"
+
+#~ msgid "Document Settings"
+#~ msgstr "Ustawienia dokumentu"
+
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "Select a master slide design:"
+#~ msgstr "Wybierz wygląd głównego slajdu:"
+
+#~ msgid "Master Slide"
+#~ msgstr "Slajd główny"
+
+#~ msgid "Select a master page design:"
+#~ msgstr "Wybierz wygląd głównej strony:"
+
+#~ msgid "Master Page"
+#~ msgstr "Strona główna"
+
+#~ msgid "Slide %1"
+#~ msgstr "Slajd %1"
+
+#~ msgid "Page  %1"
+#~ msgstr "Strona %1"
+
+#~ msgid "Layer"
+#~ msgstr "Warstwa"
+
+#~ msgid "Group"
+#~ msgstr "Grupa"
+
+#~ msgid "Shape"
+#~ msgstr "Figura"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "Zmień nazwę planszy"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "Zmień nazwę strony"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "Zmień nazwę warstwy"
+
+#~ msgid "Slide"
+#~ msgstr "Plansza"
+
+#~ msgid "Visible"
+#~ msgstr "Widoczne"
+
+#~ msgid "Locked"
+#~ msgstr "Zablokowane"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reparent shapes"
+#~ msgstr "Ponownie przyporządkuj kształty"
+
+#~ msgid "&Move Here"
+#~ msgstr "&Przenieś tutaj"
+
+#~ msgid "&Copy Here"
+#~ msgstr "&Kopiuj tutaj"
+
+#~ msgid "C&ancel"
+#~ msgstr "&Anuluj"
+
+#~ msgid "Document"
+#~ msgstr "Dokument"
+
+#~ msgid "Add a new slide or layer"
+#~ msgstr "Dodaj nowy slajd lub warstwę"
+
+#~ msgid "Add a new page or layer"
+#~ msgstr "Dodaj nową stronę lub warstwę"
+
+#~ msgid "Page"
+#~ msgstr "Strona"
+
+#~ msgid "Delete selected objects"
+#~ msgstr "Usuń wybrane obiekty"
+
+#~ msgid "Raise selected objects"
+#~ msgstr "Podnieś wybrane obiekty"
+
+#~ msgid "Lower selected objects"
+#~ msgstr "Obniż wybrane obiekty"
+
+#~ msgid "Minimal View"
+#~ msgstr "Widok minimalny"
+
+#~ msgid "Detailed View"
+#~ msgstr "Widok szczegółowy"
+
+#~ msgid "Thumbnail View"
+#~ msgstr "Widok miniaturek"
+
+#~ msgid "View mode"
+#~ msgstr "Tryb widoku"
+
+#~ msgid "Enter the name of the new layer:"
+#~ msgstr "Wpisz nazwę nowej warstwy:"
+
+#~ msgid "New Layer"
+#~ msgstr "Nowa warstwa"
+
+#~ msgid "New layer"
+#~ msgstr "Nowa warstwa"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "Tworzenie warstwy"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "Usuń warstwę"
+
+#~ msgid "Could not delete all layers. At least one layer is required."
+#~ msgstr ""
+#~ "Nie można usunąć wszystkich warstw. Przynajmniej jedna jest wymagana."
+
+#~ msgid "Error deleting layers"
+#~ msgstr "Błąd kasowania warstw"
+
+#~ msgid "Add a new slide"
+#~ msgstr "Dodaj nowy slajd"
+
+#~ msgid "Add a new page"
+#~ msgstr "Dodaj nową stronę"
+
+#~ msgid "Page %1"
+#~ msgstr "Strona %1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] "Wklej slajd"
+#~ msgstr[1] "Wklej slajdy"
+#~ msgstr[2] "Wklej slajdy"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] "Wklej stronę"
+#~ msgstr[1] "Wklej strony"
+#~ msgstr[2] "Wklej strony"
+
+#~ msgid "Tools"
+#~ msgstr "Narzędzia"
+
+#~ msgid "D&elete"
+#~ msgstr "&Usuń"
+
+#~ msgid "Show Master Pages"
+#~ msgstr "Pokaż strony główne"
+
+#~ msgid "Show Rulers"
+#~ msgstr "Pokaż linijki"
+
+#~ msgid "Show/hide the view's rulers"
+#~ msgstr "Pokaż/ukryj reguły widoku"
+
+#~ msgid "Insert Page"
+#~ msgstr "Wstaw stronę"
+
+#~ msgid "Insert a new page after the current one"
+#~ msgstr "Wstaw nową stronę za bieżącą"
+
+#~ msgid "Copy Page"
+#~ msgstr "Kopiuj stronę"
+
+#~ msgid "Copy the current page"
+#~ msgstr "Kopiuj bieżącą stronę"
+
+#~ msgid "Delete Page"
+#~ msgstr "Skasuj stronę"
+
+#~ msgid "Delete the current page"
+#~ msgstr "Usuń bieżącą stronę"
+
+#~ msgid "Master Page..."
+#~ msgstr "Strona główna..."
+
+#~ msgid "Page Layout..."
+#~ msgstr "Układ strony..."
+
+#~ msgid "Variable"
+#~ msgstr "Zmienna"
+
+#~ msgid "Import Document..."
+#~ msgstr "Importuj dokument..."
+
+#~ msgid "Configure..."
+#~ msgstr "Ustawienia..."
+
+#~ msgid "Import Slideshow"
+#~ msgstr "Importuj pokaz slajdów"
+
+#~ msgid "Import Document"
+#~ msgstr "Importuj dokument"
+
+#~ msgid ""
+#~ "Could not import\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Nie można zaimportować\n"
+#~ "%1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr "Zmień układ strony"
+
+#~ msgid "Set image ..."
+#~ msgstr "Ustaw obraz..."
+
+#~ msgid "Background"
+#~ msgstr "Tło"
+
+#~ msgid "Page Background"
+#~ msgstr "Tło strony"
+
+#~ msgid "Page Design"
+#~ msgstr "Projekt strony"
+
+#~ msgid "Slide Design"
+#~ msgstr "Projekt planszy"
+
+#~ msgid "Use background of master page"
+#~ msgstr "Użyj tła dla głównej strony"
+
+#~ msgid "Use background of master slide"
+#~ msgstr "Użyj tła dla głównej planszy"
+
+#~ msgid "Display shapes of master page"
+#~ msgstr "Wyświetl kształty głównej strony"
+
+#~ msgid "Display shapes of master slide"
+#~ msgstr "Wyświetl kształty głównej planszy"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change slide background image"
+#~ msgstr "Zmień obraz tła planszy"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page background image"
+#~ msgstr "Zmień obraz tła strony"
+
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "Slajd główny %1/%2"
+
+#~ msgid "Slide %1/%2"
+#~ msgstr "Plansza %1/%2"
+
+#~ msgid "Master Page %1/%2"
+#~ msgstr "Strona główna %1/%2"
+
+#~ msgid "Page %1/%2"
+#~ msgstr "Strona %1/%2"
+
+#~ msgid "Check Box"
+#~ msgstr "Pole wyboru"
+
+#~ msgid "Field"
+#~ msgstr "Pole"
+
+#~ msgid "Label"
+#~ msgstr "Etykieta"
+
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgid "Section Editor"
+#~ msgstr "Edytor sekcji"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "Zmień listę"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "Zmień style"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "Usuń"
+
+#~ msgid "Key Press"
+#~ msgstr "Naciśnięcie klawisza"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "Tekst"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "Usuń kolumnę"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "Usuń wiersz"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "Wstaw stopkę"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr "Wstaw notatkę końcową"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Right"
+#~ msgstr "Wstaw kolumnę po prawej"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr "Wstaw kolumnę po lewej"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Below"
+#~ msgstr "Wstaw wiersz poniżej"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "Wstaw wiersz powyżej"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List Numbering"
+#~ msgstr "Zmień numerację listy"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "Formatowanie"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Direct Paragraph Formatting"
+#~ msgstr "Bezpośrednie formatowanie akapitu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr "Zmień nazwę sekcji"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr "Dostosuj szerokość kolumny"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Row Height"
+#~ msgstr "Dostosuj wysokość wiersza"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "Wklej jako tekst"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "Wklej"
+
+#~ msgid "Index Reference"
+#~ msgstr "Odwołanie indeksu"
+
+#~ msgid "Text Reference"
+#~ msgstr "Odwołanie tekstowe"
+
+#~ msgid "Please create an index to reference first."
+#~ msgstr "Najpierw proszę utworzyć indeks do odwołania."
+
+#~ msgid "Select the index you want to reference"
+#~ msgstr "Wybierz indeks, do którego chcesz się odwołać"
+
+#~ msgid "Found 1 match"
+#~ msgid_plural "Found %1 matches"
+#~ msgstr[0] "Znaleziono 1 dopasowanie"
+#~ msgstr[1] "Znaleziono %1 dopasowania"
+#~ msgstr[2] "Znaleziono %1 dopasowań"
+
+#~ msgid "Found no match"
+#~ msgstr "Nie znaleziono dopasowania"
+
+#~ msgid ""
+#~ "Found no match\n"
+#~ "\n"
+#~ "No text was replaced"
+#~ msgstr ""
+#~ "Nie znaleziono dopasowania\n"
+#~ "\n"
+#~ "Nie zastąpiono żadnego tekstu"
+
+#~ msgid "1 replacement made"
+#~ msgid_plural "%1 replacements made"
+#~ msgstr[0] "Wykonano 1 zastąpienie"
+#~ msgstr[1] "Wykonano %1 zastąpienia"
+#~ msgstr[2] "Wykonano %1 zastąpień"
+
+#~ msgid "Replace %1 with %2?"
+#~ msgstr "Czy zamienić %1 na %2?"
+
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "Nowa sekcja %1"
+
+#~ msgctxt "Underline Style"
+#~ msgid "None"
+#~ msgstr "Brak"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "Pojedyncze"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "Podwójne"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "New Paragraph"
+#~ msgstr "Nowy akapit"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "Dodaj zakładkę"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "Dodaj przypis"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "Wstaw indeks"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "Wstaw zmienną"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Key Press"
+#~ msgstr "Naciśnięcie klawisza"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "Wstaw podział"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "Wstaw tabelę"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "Scal komórki"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "Rozdziel komórki"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr "Dostosuj szerokość tabeli"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Border Formatting"
+#~ msgstr "Zmień formatowanie obramowania"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Wstaw spis treści"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr "Modyfikuj spis treści"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Wstaw bibliografię"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "Dodaj cytat"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Typing"
+#~ msgstr "Pisze"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr "Pogrubienie"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "Kursywa"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "Podkreślenie"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr "Przekreślenie"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr "Zmień wyrównanie"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr "Ustaw wyrównanie pionowe"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "Zmniejsz wcięcie"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "Zwiększ wcięcie"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "Zmniejsz rozmiar czcionki"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "Zwiększ rozmiar czcionki"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr "Ustaw czcionkę"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr "Ustaw rozmiar czcionki"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr "Ustaw kolor tła"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Text Color"
+#~ msgstr "Ustaw kolor tekstu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr "Ustaw styl znaku"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Paragraph Style"
+#~ msgstr "Ustaw styl akapitu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "Format"
+
+#~ msgid "Default"
+#~ msgstr "Domyślne"
+
+#~ msgctxt "Default text for undo action"
+#~ msgid "Undo"
+#~ msgstr "Cofnij"
+
+#~ msgid "Undo %1"
+#~ msgstr "Cofnij %1"
+
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "Przywróć"
+
+#~ msgid "Redo %1"
+#~ msgstr "Przywróć %1"
+
+#~ msgid "<empty>"
+#~ msgstr "<pusty>"
+
+#~ msgid "Redo"
+#~ msgstr "Przywróć"
+
+#~ msgid "Undo"
+#~ msgstr "Cofnij"
+
+#~ msgid "&File"
+#~ msgstr "&Plik"
+
+#~ msgid "&Settings"
+#~ msgstr "U&stawienia"
+
+#~ msgid "File"
+#~ msgstr "Plik"
+
+#~ msgid "Add new author profile (starts out as a copy of current)"
+#~ msgstr "Dodaj nowy profil autora (zaczyna jako kopia bieżącego profilu)"
+
+#~ msgid "Delete the author profile"
+#~ msgstr "Usuń profil autora"
+
+#~ msgid "Default Author Profile"
+#~ msgstr "Profil domyślny autora"
+
+#~ msgid "Name (not duplicate or blank name):"
+#~ msgstr "Nazwa (powielonych i puste nazwy są niedozwolone):"
+
+#~ msgid "Name of Profile"
+#~ msgstr "Nazwa profilu"
+
+#~ msgid "Name:"
+#~ msgstr "Nazwa:"
+
+#~ msgid "Initials:"
+#~ msgstr "Inicjały:"
+
+#~ msgid "Title:"
+#~ msgstr "Tytuł:"
+
+#~ msgid "Position:"
+#~ msgstr "Położenie:"
+
+#~ msgid "Company:"
+#~ msgstr "Firma:"
+
+#~ msgid "Email:"
+#~ msgstr "Email:"
+
+#~ msgid "Telephone (home):"
+#~ msgstr "Telefon (domowy):"
+
+#~ msgid "Telephone (work):"
+#~ msgstr "Telefon (do pracy):"
+
+#~ msgid "Fax:"
+#~ msgstr "Faks:"
+
+#~ msgid "Street:"
+#~ msgstr "Ulica:"
+
+#~ msgid "City:"
+#~ msgstr "Miasto:"
+
+#~ msgid "Country:"
+#~ msgstr "Kraj:"
+
+#~ msgid "No autosave"
+#~ msgstr "Bez samoczynnego zapisu"
+
+#~ msgctxt "unit symbol for minutes, leading space as separator"
+#~ msgid " min"
+#~ msgstr " min"
+
+#~ msgid "Autosave interval:"
+#~ msgstr "Przedział samoczynnego zapisu:"
+
+#~ msgid "Create backup file:"
+#~ msgstr "Utwórz kopię zapasową:"
+
+#~ msgid "Show grid:"
+#~ msgstr "Pokaż siatkę:"
+
+#~ msgid "Snap to grid:"
+#~ msgstr "Przyciągaj do siatki:"
+
+#~ msgid "Grid color:"
+#~ msgstr "Kolor siatki:"
+
+#~ msgid "Spacing"
+#~ msgstr "Odstęp"
+
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "P&oziomy:"
+
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "&Pionowy:"
+
+#~ msgid "Units:"
+#~ msgstr "Jednostki:"
+
+#~ msgid "Handle radius:"
+#~ msgstr "Promień uchwytu:"
+
+#~ msgid "Grab sensitivity:"
+#~ msgstr "Czułość chwytu:"
+
+#~ msgid "Paste offset:"
+#~ msgstr "Przesunięcie wklejania:"
+
+#~ msgid "Paste at Cursor:"
+#~ msgstr "Wklej przy kursorze:"
+
+#~ msgid "Only print and exit"
+#~ msgstr "Tylko wydrukuj i wyjdź"
+
+#~ msgid "Open a new document with a template"
+#~ msgstr "Utwórz nowy dokument na podstawie szablonu"
+
+#~ msgid "Override display DPI"
+#~ msgstr "Nadpisz DPI dla wyświetlania"
+
+#~ msgid "Only export to PDF and exit"
+#~ msgstr "Tylko wyeksportuj do PDF i wyjdź"
+
+#~ msgid "Filename for export-pdf"
+#~ msgstr "Nazwa pliku PDF do wyeksportowania"
+
+#~ msgid "just load the file and then exit"
+#~ msgstr "wczytaj plik i po prostu wyjdź"
+
+#~ msgid "load the file, show the window and progressbar and then exit"
+#~ msgstr "wczytaj plik, pokaż okno i pasek postępu, a następnie wyjdź"
+
+#~ msgid "Filename to write profiling information into."
+#~ msgstr "Nazwa pliku, do której zapisać informacje o profilowaniu."
+
+#~ msgid "Load a file and save it as an ODF file. Meant for debugging."
+#~ msgstr ""
+#~ "Wczytaj plik i zapisz go jako plik ODF. Przeznaczony do debugowania."
+
+#~ msgid "Calligra"
+#~ msgstr "Calligra"
+
+#~ msgid ""
+#~ "You are running a 32 bits build on a 64 bits Windows.\n"
+#~ "This is not recommended.\n"
+#~ "Please download and install the x64 build instead."
+#~ msgstr ""
+#~ "Masz uruchomioną wersję 32 bitową na 64 bitowym Windowsie.\n"
+#~ "Nie jest to zalecane.\n"
+#~ "Aby to poprawić proszę pobrać i zainstalować wersję  x64."
+
+#~ msgid "%1: Critical Error"
+#~ msgstr "%1: Błąd krytyczny"
+
+#~ msgid ""
+#~ "Essential application components could not be found.\n"
+#~ "This might be an installation issue.\n"
+#~ "Try restarting or reinstalling."
+#~ msgstr ""
+#~ "Nie można znaleźć istotnych składników aplikacji.\n"
+#~ "To może być problem z instalacją.\n"
+#~ "Spróbuj uruchomić lub wgrać ponownie."
+
+#~ msgid "No template found for: %1"
+#~ msgstr "Nie znaleziono szablonu dla: %1"
+
+#~ msgid "Too many templates found for: %1"
+#~ msgstr "Znaleziono zbyt dużo szablonów dla: %1"
+
+#~ msgid "Template %1 failed to load."
+#~ msgstr "Nie można załadować szablonu %1."
+
+#~ msgctxt "@title:window"
+#~ msgid "Recover Files"
+#~ msgstr "Odzyskaj pliki"
+
+#~ msgid "The following autosave file can be recovered:"
+#~ msgstr "Można odzyskać następujący plik samoczynnego zapisu:"
+
+#~ msgid "The following autosave files can be recovered:"
+#~ msgstr "Można odzyskać następujące pliki samoczynnego zapisu:"
+
+#~ msgid "Always use this template at application start up"
+#~ msgstr "Zawsze używaj tego szablonu przy uruchomieniu programu"
+
+#~ msgid "Always use this template"
+#~ msgstr "Zawsze używaj tego szablonu"
+
+#~ msgid "Making backup..."
+#~ msgstr "Tworzenie kopii zapasowej..."
+
+#~ msgid "Saving..."
+#~ msgstr "Zapisywanie..."
+
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Nie można zapisać\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Nie można zapisać %1\n"
+#~ "Powód: %2"
+
+#~ msgid "Document <i>%1</i> saved"
+#~ msgstr "Zapisano dokument <i>%1</i>"
+
+#~ msgid ""
+#~ "The password of this encrypted document is not known. Autosave aborted! "
+#~ "Please save your work manually."
+#~ msgstr ""
+#~ "Hasło do tego zaszyfrowanego dokumentu nie jest znane. Przerwano "
+#~ "automatyczne zapisywanie! Proszę zapisać dokument ręcznie."
+
+#~ msgid "Autosaving..."
+#~ msgstr "Autozapisywanie..."
+
+#~ msgid "Error during autosave! Partition full?"
+#~ msgstr "Błąd podczas samoczynnego zapisu! Dysk pełny?"
+
+#~ msgid "Could not create the file for saving"
+#~ msgstr "Nie można stworzyć pliku do zapisu"
+
+#~ msgid "Not able to write '%1'. Partition full?"
+#~ msgstr "Nie można zapisać '%1'. Dysk pełny?"
+
+#~ msgid "Not able to write RDF metadata. Partition full?"
+#~ msgstr "Nie można zapisać metadanych RDF. Pełna partycja?"
+
+#~ msgid "Error while trying to write '%1'. Partition full?"
+#~ msgstr "Błąd podczas próby zapisania '%1'. Dysk pełny?"
+
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Zły format URL\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "An autosaved file exists for this document.\n"
+#~ "Do you want to open it instead?"
+#~ msgstr ""
+#~ "Istnieje plik autozapisu dla tego dokumentu.\n"
+#~ "Czy chcesz go otworzyć?"
+
+#~ msgid "The file %1 does not exist."
+#~ msgstr "Plik %1 nie istnieje."
+
+#~ msgid "Opening Document"
+#~ msgstr "Otwieranie dokumentu"
+
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "Nie można utworzyć wtyczki filtra"
+
+#~ msgid "File not found"
+#~ msgstr "Nie znaleziono pliku"
+
+#~ msgid "Cannot create storage"
+#~ msgstr "Nie można utworzyć miejsca przechowywania"
+
+#~ msgid "Bad MIME type"
+#~ msgstr "Zły typ MIME"
+
+#~ msgid "Format not recognized"
+#~ msgstr "Nierozpoznany format"
+
+#~ msgid "Not implemented"
+#~ msgstr "Niezaimplementowane"
+
+#~ msgid "Parsing error"
+#~ msgstr "Błąd przetwarzania"
+
+#~ msgid "Document is password protected"
+#~ msgstr "Dokument zabezpieczony hasłem"
+
+#~ msgid "Invalid file format"
+#~ msgstr "Nieprawidłowy format pliku"
+
+#~ msgid "Internal error"
+#~ msgstr "Błąd wewnętrzny"
+
+#~ msgid "Out of memory"
+#~ msgstr "Brak pamięci"
+
+#~ msgid "Empty Filter Plugin"
+#~ msgstr "Pusta wtyczka filtra"
+
+#~ msgid "Trying to load into the wrong kind of document"
+#~ msgstr "Próba wczytania złego rodzaju dokumentu"
+
+#~ msgid "Failed to download remote file"
+#~ msgstr "Nieudane pobieranie pliku zdalnego"
+
+#~ msgid "Unknown error"
+#~ msgstr "Nieznany błąd"
+
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr ""
+#~ "Nie można otworzyć %2.\n"
+#~ "Powód: %1.\n"
+#~ "%3"
+
+#~ msgid "Document <i>%1</i> loaded"
+#~ msgstr "Wczytano dokument <i>%1</i>"
+
+#~ msgid "Could not find %1"
+#~ msgstr "Nie można znaleźć %1"
+
+#~ msgid ""
+#~ "Parsing error in %1 at line %2, column %3\n"
+#~ "Error message: %4"
+#~ msgstr ""
+#~ "Błąd analizy składni w %1 w wierszu %2, kolumna %3\n"
+#~ "Komunikat o błędzie: %4"
+
+#~ msgid "%1 is not a file."
+#~ msgstr "%1 nie jest plikiem."
+
+#~ msgid "Could not open the file for reading (check read permissions)."
+#~ msgstr ""
+#~ "Nie można otworzyć pliku do odczytu (sprawdź uprawnienia do odczytu)."
+
+#~ msgid "Could not read the beginning of the file."
+#~ msgstr "Nie można odczytać początku pliku."
+
+#~ msgid ""
+#~ "parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Błąd analizy składni w dokumencie głównym w wierszu %1, kolumna %2\n"
+#~ "Komunikat o błędzie: %3"
+
+#~ msgid "Not a valid Calligra file: %1"
+#~ msgstr "To nie jest poprawny plik Calligra: %1"
+
+#~ msgid "Invalid document: no file 'maindoc.xml'."
+#~ msgstr "Niepoprawny dokument: brak pliku 'maindoc.xml'."
+
+#~ msgid ""
+#~ "Document <i>%1</i> contains several versions. Go to File->Versions to "
+#~ "open an old version."
+#~ msgstr ""
+#~ "Dokument <i>%1</i> zawiera kilka wersji. Idź do Plik->Wersje, aby "
+#~ "otworzyć starą wersję."
+
+#~ msgid "Untitled"
+#~ msgstr "Bez tytułu"
+
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr ""
+#~ "<p>Dokument <b>'%1'</b> został zmodyfikowany.</p><p>Czy chcesz go zapisać?"
+#~ "</p>"
+
+#~ msgid "Internal error: saveXML not implemented"
+#~ msgstr "Błąd wewnętrzny: saveXML nie zaimplementowane"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Nie można otworzyć\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Nie można otworzyć %1\n"
+#~ "Powód: %2"
+
+#~ msgid "a word processing"
+#~ msgstr "przetwarzanie tekstu"
+
+#~ msgid "a spreadsheet"
+#~ msgstr "arkusz kalkulacyjny"
+
+#~ msgid "a presentation"
+#~ msgstr "prezentacja"
+
+#~ msgid "a chart"
+#~ msgstr "wykres"
+
+#~ msgid "a drawing"
+#~ msgstr "rysunek"
+
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr ""
+#~ "Dokument \"%1\" uległ zmianie.\n"
+#~ "Zapisać czy porzucić zmiany?"
+
+#~ msgid "Close Document"
+#~ msgstr "Zamknij dokument"
+
+#~ msgid "%1 %"
+#~ msgstr "%1 %"
+
+#~ msgid "No"
+#~ msgstr "Nie"
+
+#~ msgid "Yes"
+#~ msgstr "Tak"
+
+#~ msgid "Could not export file."
+#~ msgstr "Nie można eksportować pliku."
+
+#~ msgid "Missing Export Filter"
+#~ msgstr "Brak filtru eksportu"
+
+#~ msgid ""
+#~ "Could not import file of type\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Nie można zaimportować pliku typu\n"
+#~ "%1"
+
+#~ msgid "Missing Import Filter"
+#~ msgstr "Brak filtru importu"
+
+#~ msgid "Choose Filter"
+#~ msgstr "Wybierz filtr"
+
+#~ msgid "Case Sensitive"
+#~ msgstr "Uwzględnij wielkość liter"
+
+#~ msgid "Match cases when searching"
+#~ msgstr "Uwzględniaj wielkość liter podczas znajdywania"
+
+#~ msgid "Match only whole words"
+#~ msgstr "Dopasuj tylko całe słowa"
+
+#~ msgid "Whole Words Only"
+#~ msgstr "Tylko całe słowa"
+
+#~ msgid "Find from Cursor"
+#~ msgstr "Znajdź od kursora"
+
+#~ msgid "Start searching from the current cursor"
+#~ msgstr "Rozpocznij znajdywanie od bieżącego kursora"
+
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "Znajdź:"
+
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "Następny"
+
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "Poprzedni"
+
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "Opcje"
+
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "Zastąp:"
+
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "Zastąp"
+
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "Zastąp wszystkie"
+
+#~ msgctxt "Total number of matches"
+#~ msgid "1 match found"
+#~ msgid_plural "%1 matches found"
+#~ msgstr[0] "Znaleziono 1 dopasowanie"
+#~ msgstr[1] "Znaleziono %1 dopasowania"
+#~ msgstr[2] "Znaleziono %1 dopasowań"
+
+#~ msgid "No matches found"
+#~ msgstr "Nie znaleziono dopasowań"
+
+#~ msgid "Search hit bottom, continuing from top."
+#~ msgstr "Gdy wyszukiwanie osiągnie dół, zacznie od góry."
+
+#~ msgid "Search hit top, continuing from bottom."
+#~ msgstr "Gdy wyszukiwanie osiągnie górę, zacznie od dołu."
+
+#~ msgid "%1 unsaved document (%2)"
+#~ msgstr "%1 niezapisany dokument (%2)"
+
+#~ msgid "Export as PDF..."
+#~ msgstr "Eksport do PDF..."
+
+#~ msgid "Reload"
+#~ msgstr "Wczytaj ponownie"
+
+#~ msgid "Versions..."
+#~ msgstr "Wersje..."
+
+#~ msgid "Open ex&isting Document as Untitled Document..."
+#~ msgstr "Otwórz &istniejący dokument jako nienazwany dokument..."
+
+#~ msgid "E&xport..."
+#~ msgstr "Ek&sport..."
+
+#~ msgid "En&crypt Document"
+#~ msgstr "&Zaszyfruj dokument"
+
+#~ msgid "&Uncompress to Directory"
+#~ msgstr "Rozpak&uj do katalogu"
+
+#~ msgid "&New View"
+#~ msgstr "&Nowy widok"
+
+#~ msgid "Document Information"
+#~ msgstr "Szczegóły dokumentu"
+
+#~ msgid "Full Screen Mode"
+#~ msgstr "Tryb pełnoekranowy"
+
+#~ msgid "Show Dockers"
+#~ msgstr "Pokaż dokowania"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "Pokaż paski tytułowe dokowań"
+
+#~ msgid "Dockers"
+#~ msgstr "Dokowania"
+
+#~ msgid "(write protected)"
+#~ msgstr "(zabezpieczenie przed zapisem)"
+
+#~ msgid "Save as %1"
+#~ msgstr "Zapisz jako %1"
+
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "%1 (nieznany typ pliku)"
+
+#~ msgid ""
+#~ "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
+#~ "want to save in this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Zapisanie jako %1 może spowodować utratę formatowania.<p>Czy nadal "
+#~ "chcesz zapisać w tym formacie?</qt>"
+
+#~ msgid "Confirm Save"
+#~ msgstr "Potwierdzanie zapisu"
+
+#~ msgid ""
+#~ "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you "
+#~ "still want to export to this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Eksportowanie do %1 może spowodować utratę formatowania.<p>Czy nadal "
+#~ "chcesz eksportować do tego formatu?</qt>"
+
+#~ msgid "Confirm Export"
+#~ msgstr "Potwierdzanie eksportu"
+
+#~ msgid "untitled"
+#~ msgstr "bez tytułu"
+
+#~ msgid "Open Document"
+#~ msgstr "Otwórz dokument"
+
+#~ msgid "Export as PDF"
+#~ msgstr "Eksportuj do PDF"
+
+#~ msgid "Cannot export to the specified file"
+#~ msgstr "Nie można wyeksportować do podanego pliku"
+
+#~ msgid "Document - %1"
+#~ msgstr "Dokument - %1"
+
+#~ msgid ""
+#~ "You will lose all changes made since your last save\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "Utracisz wszystkie zmiany od ostatniego zapisu\n"
+#~ "Czy chcesz kontynuować?"
+
+#~ msgid "Warning"
+#~ msgstr "Ostrzeżenie"
+
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "Pokaż pasek narzędzi %1"
+
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "Schowaj pasek narzędzi %1"
+
+#~ msgid "Open Existing Document"
+#~ msgstr "Otwórz istniejący dokument"
+
+#~ msgid "Recent Documents"
+#~ msgstr "Ostatnie dokumenty"
+
+#~ msgid "Custom Document"
+#~ msgstr "Własny dokument"
+
+#~ msgid "Stop"
+#~ msgstr "Zatrzymaj"
+
+#~ msgid "Printing"
+#~ msgstr "Drukowanie"
+
+#~ msgid "Printing done"
+#~ msgstr "Drukowanie ukończone"
+
+#~ msgid "Close"
+#~ msgstr "Zamknij"
+
+#~ msgid "Stopped"
+#~ msgstr "Zatrzymano"
+
+#~ msgid "Open This Document"
+#~ msgstr "Otwórz ten dokument"
+
+#~ msgctxt "File modification date and time. %1 is date time"
+#~ msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Zmieniono:</b></td><td>%1</td></tr>"
+
+#~ msgctxt "File access date and time. %1 is date time"
+#~ msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Czas ostatniego dostępu:</b></td><td>%1</td></tr>"
+
+#~ msgid "Show Guides"
+#~ msgstr "Pokaż prowadnice"
+
+#~ msgid "Shows or hides guides"
+#~ msgstr "Pokazuje lub ukrywa prowadnice"
+
+#~ msgid "Create Template"
+#~ msgstr "Tworzenie szablonu"
+
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "Nazwa:"
+
+#~ msgid "Group:"
+#~ msgstr "Grupa:"
+
+#~ msgid "&Add Group..."
+#~ msgstr "Dod&aj grupę..."
+
+#~ msgid "&Remove"
+#~ msgstr "&Usuń"
+
+#~ msgid "Picture"
+#~ msgstr "Obrazek"
+
+#~ msgid "&Preview"
+#~ msgstr "&Podgląd"
+
+#~ msgid "Custom:"
+#~ msgstr "Własny:"
+
+#~ msgid "&Select..."
+#~ msgstr "&Wybierz..."
+
+#~ msgid "Use the new template as default"
+#~ msgstr "Użyj nowego szablonu jako domyślnego"
+
+#~ msgid "Use the new template every time %1 starts"
+#~ msgstr "Użyj nowego szablonu za każdym razem, kiedy %1 się uruchamia"
+
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr "Czy na pewno chcesz nadpisać istniejący szablon '%1'?"
+
+#~ msgid "Add Group"
+#~ msgstr "Dodaj grupę"
+
+#~ msgid "Enter group name:"
+#~ msgstr "Wprowadź nazwę grupy:"
+
+#~ msgid "This name is already used."
+#~ msgstr "Ta nazwa jest już używana."
+
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "Czy na pewno chcesz usunąć tę grupę?"
+
+#~ msgid "Remove Group"
+#~ msgstr "Usuń grupę"
+
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "Czy na pewno chcesz usunąć ten szablon?"
+
+#~ msgid "Remove Template"
+#~ msgstr "Usuń szablon"
+
+#~ msgid "&Delete"
+#~ msgstr "S&kasuj"
+
+#~ msgid "Could not load picture."
+#~ msgstr "Nie można załadować obrazka."
+
+#~ msgid "No picture available."
+#~ msgstr "Brak dostępnych obrazków."
+
+#~ msgid "Use This Template"
+#~ msgstr "Użyj tego szablonu"
+
+#~ msgid "Version"
+#~ msgstr "Wersja"
+
+#~ msgid "Date & Time"
+#~ msgstr "Data i czas"
+
+#~ msgid "Saved By"
+#~ msgstr "Zapisane przez"
+
+#~ msgid "Comment"
+#~ msgstr "Komentarz"
+
+#~ msgid "&Add"
+#~ msgstr "&Dodaj"
+
+#~ msgid "&Modify"
+#~ msgstr "&Zmień"
+
+#~ msgid "&Open"
+#~ msgstr "&Otwórz"
+
+#~ msgid "A new version could not be added"
+#~ msgstr "Nie można było dodać nowej wersji"
+
+#~ msgid "Date: %1"
+#~ msgstr "Data: %1"
+
+#~ msgid "Active Author Profile"
+#~ msgstr "Profil aktywnego autora"
+
+#~ msgctxt "choice for author profile"
+#~ msgid "Anonymous"
+#~ msgstr "Anonimowy"
+
+#~ msgid "Unknown"
+#~ msgstr "Nieznany"
+
+#~ msgid ""
+#~ "This document contains an unknown checksum. When you give a password it "
+#~ "might not be verified."
+#~ msgstr ""
+#~ "Ten dokument zawiera nieznaną sumę kontrolną. Kiedy wpiszesz hasło, może "
+#~ "nie zostać zweryfikowane."
+
+#~ msgid ""
+#~ "This document contains an unknown encryption method. Some parts may be "
+#~ "unreadable."
+#~ msgstr ""
+#~ "Ten dokument zaszyfrowano nieznaną metodą. Niektóre części być może nie "
+#~ "będą się nadawały do odczytu."
+
+#~ msgid ""
+#~ "This document contains incomplete encryption data. Some parts may be "
+#~ "unreadable."
+#~ msgstr ""
+#~ "Ten dokument nie zawiera kompletnych danych szyfrujących. Niektóre części "
+#~ "być może nie będą się nadawały do odczytu."
+
+#~ msgid ""
+#~ "QCA has currently no support for SHA1 or PBKDF2 using SHA1. The document "
+#~ "can not be opened."
+#~ msgstr ""
+#~ "QCA nie obsługuje obecnie SHA1 ani PBKDF2 przy pomocy SHA1. Nie można "
+#~ "otworzyć tego dokumentu."
+
+#~ msgid ""
+#~ "The manifest file seems to be corrupted. It cannot be modified and the "
+#~ "document will remain unreadable. Please try and save the document again "
+#~ "to prevent losing your work."
+#~ msgstr ""
+#~ "Plik manifestu wydaje się uszkodzony. Nie można go zmienić a plik "
+#~ "pozostanie niezdatny do odczytu. Proszę spróbować i zapisać dokument "
+#~ "ponownie, żeby zabezpieczyć się przed utratą danych."
+
+#~ msgid ""
+#~ "The manifest file cannot be written. The document will remain unreadable. "
+#~ "Please try and save the document again to prevent losing your work."
+#~ msgstr ""
+#~ "Nie można zapisać pliku manifestu. Dokument pozostanie nieodczytywalny. "
+#~ "Proszę spróbować i zapisać dokument ponownie, żeby zabezpieczyć się przed "
+#~ "utratą danych."
+
+#~ msgid "Please enter the password to open this file."
+#~ msgstr "Proszę wpisać hasło, żeby otworzyć ten plik."
+
+#~ msgid "Please enter the password to encrypt the document with."
+#~ msgstr "Proszę podać hasło do zaszyfrowania dokumentu."
+
+#~ msgid "Do you want to save the password?"
+#~ msgstr "Czy chcesz zapisać hasło?"
+
+#~ msgid "No store backend"
+#~ msgstr "Brak silnika składowania"
+
+#~ msgid ""
+#~ "Parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Błąd analizy składni w dokumencie głównym w wierszu %1, kolumna %2\n"
+#~ "Komunikat o błędzie: %3"
+
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "Ekran"
+
+#~ msgid "The directory mode is not supported for remote locations."
+#~ msgstr "Tryb katalogowy nie jest wspierany dla zdalnych położeń."
+
+#~ msgid "Calligra Storage"
+#~ msgstr "Magazyn Calligra"
+
+#~ msgid "Clear"
+#~ msgstr "Wyczyść"
+
+#~ msgid "Subtract"
+#~ msgstr "Odejmij"
+
+#~ msgid "Multiply"
+#~ msgstr "Mnożenie"
+
+#~ msgid "Alpha mask"
+#~ msgstr "Maska alfy"
+
+#~ msgid "Alpha"
+#~ msgstr "Alfa"
+
+#~ msgid "Undefined operation in the alpha color space"
+#~ msgstr "Nieokreślona operacja w przestrzeni koloru alfa"
+
+#~ msgid "L*a*b* (16-bit integer/channel, unmanaged)"
+#~ msgstr "L*a*b* (16-bitowa l. całkowita na kanał, niezarządzana)"
+
+#~ msgid "Lightness"
+#~ msgstr "Jasność"
+
+#~ msgid "a*"
+#~ msgstr "a*"
+
+#~ msgid "b*"
+#~ msgstr "b*"
+
+#~ msgid "RGB (16-bit integer/channel, unmanaged)"
+#~ msgstr "RGB (16-bitowa l. całkowita na kanał, niezarządzana)"
+
+#~ msgid "RGB (8-bit integer/channel, unmanaged)"
+#~ msgstr "RGB (8-bitowa l. całkowita na kanał, niezarządzana)"
+
+#~ msgid "Blue"
+#~ msgstr "Niebieski"
+
+#~ msgid "Green"
+#~ msgstr "Zielony"
+
+#~ msgid "Red"
+#~ msgstr "Czerwony"
+
+#~ msgid "Undefined operation in the %1 space"
+#~ msgstr "Nieokreślona operacja w przestrzeni %1"
+
+#~ msgid "Undefined operation in the %1 color space"
+#~ msgstr "Nieokreślona operacja w przestrzeni koloru %1"
+
+#~ msgid "Simple Color Conversion Engine"
+#~ msgstr "Silnik prostego przekształcenia kolorów"
+
+#~ msgid "Alpha darken"
+#~ msgstr "Zaciemnianie alfa"
+
+#~ msgid "Behind"
+#~ msgstr "Za"
+
+#~ msgid "Dissolve"
+#~ msgstr "Rozmyj"
+
+#~ msgid "Erase"
+#~ msgstr "Wymazywanie"
+
+#~ msgid "Normal"
+#~ msgstr "Zwykły"
+
+#~ msgid "Overlay"
+#~ msgstr "Nakładka"
+
+#~ msgid "Grain Merge"
+#~ msgstr "Scalanie ziarnowe"
+
+#~ msgid "Grain Extract"
+#~ msgstr "Wypakowywanie ziarnowe"
+
+#~ msgid "Hard Mix"
+#~ msgstr "Twarda mieszanina"
+
+#~ msgid "Geometric Mean"
+#~ msgstr "Średnia geometryczna"
+
+#~ msgid "Parallel"
+#~ msgstr "Równoległy"
+
+#~ msgid "Allanon"
+#~ msgstr "Allanon"
+
+#~ msgid "Color Dodge"
+#~ msgstr "Rozjaśnianie koloru"
+
+#~ msgid "Linear Dodge"
+#~ msgstr "Linowe rozjaśnianie"
+
+#~ msgid "Lighten"
+#~ msgstr "Rozjaśnianie"
+
+#~ msgid "Hard Light"
+#~ msgstr "Twarde światło"
+
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "Miękkie światło (SVG)"
+
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "Miękkie światło (Photoshop)"
+
+#~ msgid "Gamma Light"
+#~ msgstr "Światło gamma"
+
+#~ msgid "Vivid Light"
+#~ msgstr "Żywe światło"
+
+#~ msgid "Pin Light"
+#~ msgstr "Światło punktowe"
+
+#~ msgid "Linear Light"
+#~ msgstr "Liniowe światło"
+
+#~ msgid "Color Burn"
+#~ msgstr "Wypalanie koloru"
+
+#~ msgid "Linear Burn"
+#~ msgstr "Liniowe wypalanie"
+
+#~ msgid "Darken"
+#~ msgstr "Przyciemnianie"
+
+#~ msgid "Gamma Dark"
+#~ msgstr "Ciemność gammy"
+
+#~ msgid "Addition"
+#~ msgstr "Dodawanie"
+
+#~ msgid "Inversed-Subtract"
+#~ msgstr "Odwrócone-odjęcie"
+
+#~ msgid "Divide"
+#~ msgstr "Dzielenie"
+
+#~ msgid "Arcus Tangent"
+#~ msgstr "Arcus tangens"
+
+#~ msgid "Difference"
+#~ msgstr "Różnica"
+
+#~ msgid "Exclusion"
+#~ msgstr "Wykluczenie"
+
+#~ msgid "Equivalence"
+#~ msgstr "Równoważność"
+
+#~ msgid "Additive-Subtractive"
+#~ msgstr "Addytywny-odejmowalny"
+
+#~ msgid "Copy Red"
+#~ msgstr "Kopiuj czerwony"
+
+#~ msgid "Copy Green"
+#~ msgstr "Kopiuj zielony"
+
+#~ msgid "Copy Blue"
+#~ msgstr "Kopiuj niebieski"
+
+#~ msgid "Tangent Normalmap"
+#~ msgstr "Styczna mapa normalna"
+
+#~ msgid "Color"
+#~ msgstr "Barwa"
+
+#~ msgid "Hue"
+#~ msgstr "Odcień"
+
+#~ msgid "Saturation"
+#~ msgstr "Nasycenie"
+
+#~ msgid "Increase Saturation"
+#~ msgstr "Zwiększ nasycenie"
+
+#~ msgid "Decrease Saturation"
+#~ msgstr "Zmniejsz nasycenie"
+
+#~ msgid "Luminosity"
+#~ msgstr "Jasność"
+
+#~ msgid "Increase Luminosity"
+#~ msgstr "Zwiększ jasność"
+
+#~ msgid "Decrease Luminosity"
+#~ msgstr "Zmniejsz jasność"
+
+#~ msgid "Darker Color"
+#~ msgstr "Ciemniejsza barwa"
+
+#~ msgid "Lighter Color"
+#~ msgstr "Jaśniejsza barwa"
+
+#~ msgid "Color HSI"
+#~ msgstr "Barwa HSI"
+
+#~ msgid "Hue HSI"
+#~ msgstr "Odcień HSI"
+
+#~ msgid "Saturation HSI"
+#~ msgstr "Nasycenie HSI"
+
+#~ msgid "Increase Saturation HSI"
+#~ msgstr "Zwiększ nasycenie HSI"
+
+#~ msgid "Decrease Saturation HSI"
+#~ msgstr "Zmniejsz nasycenie HSI"
+
+#~ msgid "Intensity"
+#~ msgstr "Intensywność"
+
+#~ msgid "Increase Intensity"
+#~ msgstr "Zwiększ intensywność"
+
+#~ msgid "Decrease Intensity"
+#~ msgstr "Zmniejsz intensywność"
+
+#~ msgid "Color HSL"
+#~ msgstr "Barwa HSL"
+
+#~ msgid "Hue HSL"
+#~ msgstr "Odcień HSL"
+
+#~ msgid "Saturation HSL"
+#~ msgstr "Nasycenie HSL"
+
+#~ msgid "Increase Saturation HSL"
+#~ msgstr "Zwiększ nasycenie HSL"
+
+#~ msgid "Decrease Saturation HSL"
+#~ msgstr "Zmniejsz nasycenie HSL"
+
+#~ msgid "Increase Lightness"
+#~ msgstr "Zwiększ jasność"
+
+#~ msgid "Decrease Lightness"
+#~ msgstr "Zmniejsz jasność"
+
+#~ msgid "Color HSV"
+#~ msgstr "Barwa HSV"
+
+#~ msgid "Hue HSV"
+#~ msgstr "Odcień HSV"
+
+#~ msgid "Saturation HSV"
+#~ msgstr "Nasycenie HSV"
+
+#~ msgid "Increase Saturation HSV"
+#~ msgstr "Zwiększ nasycenie HSV"
+
+#~ msgid "Decrease Saturation HSV"
+#~ msgstr "Zmniejsz nasycenie HSV"
+
+#~ msgid "Increase Value"
+#~ msgstr "Zwiększ wartość"
+
+#~ msgid "Decrease Value"
+#~ msgstr "Zmniejsz wartość"
+
+#~ msgid "Generic RGB Histogram"
+#~ msgstr "Ogólny histogram RGB"
+
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "G"
+#~ msgstr "G"
+
+#~ msgid "L*a*b* Histogram"
+#~ msgstr "Histogram L*a*b*"
+
+#~ msgid "L*"
+#~ msgstr "L*"
+
+#~ msgid "Generic L*a*b* Histogram"
+#~ msgstr "Zwykły histogram L*a*b*"
+
+#~ msgid "RGB"
+#~ msgstr "RGB"
+
+#~ msgid "XYZ"
+#~ msgstr "XYZ"
+
+#~ msgid "L*a*b*"
+#~ msgstr "L*a*b*"
+
+#~ msgid "CMYK"
+#~ msgstr "CMYK"
+
+#~ msgid "Grayscale"
+#~ msgstr "Skala szarości"
+
+#~ msgid "Grayscale (without transparency)"
+#~ msgstr "Skala szarości (bez przezroczystości)"
+
+#~ msgid "YCbCr"
+#~ msgstr "YCbCr"
+
+#~ msgid "8 Bits"
+#~ msgstr "8 bitowa"
+
+#~ msgid "16 Bits"
+#~ msgstr "16 bitowa"
+
+#~ msgid "16 Bits Float"
+#~ msgstr "16 bitowa zmiennoprzecinkowa"
+
+#~ msgid "32 Bits Float"
+#~ msgstr "32 bitowa zmiennoprzecinkowa"
+
+#~ msgid "64 Bits Float"
+#~ msgstr "64 bitowa zmiennoprzecinkowa"
+
+#~ msgid "Arithmetic"
+#~ msgstr "Arytmetyczny"
+
+#~ msgid "Negative"
+#~ msgstr "Negatywny"
+
+#~ msgid "HSY"
+#~ msgstr "HSY"
+
+#~ msgid "HSI"
+#~ msgstr "HSI"
+
+#~ msgid "HSL"
+#~ msgstr "HSL"
+
+#~ msgid "HSV"
+#~ msgstr "HSV"
+
+#~ msgid "Mix"
+#~ msgstr "Miks"
+
+#~ msgid "Inverse Subtract"
+#~ msgstr "Odwrotne odejmowanie"
+
+#~ msgid "Burn"
+#~ msgstr "Wypal"
+
+#~ msgid "Additive Subtractive"
+#~ msgstr "Addytywny Odejmowalny"
+
+#~ msgid "Alpha Darken"
+#~ msgstr "Zaciemnianie alfa"
+
+#~ msgid "Bumpmap"
+#~ msgstr "Mapa nierówności"
+
+#~ msgid "SVG Gradient"
+#~ msgstr "Gradient SVG"
+
+#~ msgid "Select the object you want to reference"
+#~ msgstr "Wybierz obiekt, do którego chcesz się odnieść"
+
+#~ msgid "Reference"
+#~ msgstr "Odniesienie"
+
+#~ msgid "Set For All Existing"
+#~ msgstr "Ustaw dla wszystkich istniejących"
+
+#~ msgctxt "statement is an Rdf related term"
+#~ msgid "<qt>Edits will be lost.<p>There is %1 invalid statement left.</qt>"
+#~ msgid_plural ""
+#~ "<qt>Edits will be lost.<p>There are %1 invalid statements left.</qt>"
+#~ msgstr[0] ""
+#~ "<qt>Edycje zostaną utracone.<p>Pozostało %1 nieprawidłowe polecenie.</qt>"
+#~ msgstr[1] ""
+#~ "<qt>Edycje zostaną utracone.<p>Pozostały %1 nieprawidłowe polecenia.</qt>"
+#~ msgstr[2] ""
+#~ "<qt>Edycje zostaną utracone.<p>Pozostało %1 nieprawidłowych poleceń.</qt>"
+
+#~ msgctxt "statement is an Rdf related term"
+#~ msgid "Discard invalid statements?"
+#~ msgstr "Porzucić nieprawidłowe polecenia?"
+
+#~ msgid "Rdf"
+#~ msgstr "Rdf"
+
+#~ msgid "Triples"
+#~ msgstr "Trójki"
+
+#~ msgid "new"
+#~ msgstr "nowe"
+
+#~ msgid "copy"
+#~ msgstr "kopiuj"
+
+#~ msgid "delete"
+#~ msgstr "usuń"
+
+#~ msgid "Namespaces"
+#~ msgstr "Przestrzenie nazw"
+
+#~ msgid "Prefix"
+#~ msgstr "Przedrostek"
+
+#~ msgid "Namespace"
+#~ msgstr "Przestrzeń nazw"
+
+#~ msgid "Semantic"
+#~ msgstr "Semantyczna"
+
+#~ msgid "SPARQL"
+#~ msgstr "SPARQL"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"># Insert your SPARQL query here<br /"
+#~ "># Results are shown below.</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix rdf:  &lt;http://www.w3."
+#~ "org/1999/02/22-rdf-syntax-ns#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix foaf: &lt;http://xmlns.com/"
+#~ "foaf/0.1/&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix pkg:  &lt;http://docs.oasis-"
+#~ "open.org/ns/office/1.2/meta/pkg#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix geo84: &lt;http://www.w3."
+#~ "org/2003/01/geo/wgs84_pos#&gt;</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">select ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">where { </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"> ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">}</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"># Tutaj wstaw swoje zapytanie "
+#~ "SPARQL<br /># Wyniki są pokazane poniżej.</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">przedrostek rdf:  &lt;http://www.w3."
+#~ "org/1999/02/22-rdf-syntax-ns#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">przedrostek foaf: &lt;http://xmlns."
+#~ "com/foaf/0.1/&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">przedrostek pkg:  &lt;http://docs."
+#~ "oasis-open.org/ns/office/1.2/meta/pkg#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">przedrostek geo84: &lt;http://www.w3."
+#~ "org/2003/01/geo/wgs84_pos#&gt;</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">zaznacz ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">gdzie { </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"> ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">}</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p></body></html>"
+
+#~ msgid "Stylesheets"
+#~ msgstr "Arkusze stylów"
+
+#~ msgid ""
+#~ "Set the default stylesheet for Semantic objects in this document. New RDF "
+#~ "objects will use this stylesheet automatically. The buttons allow you to "
+#~ "set the stylesheet for all existing semantic objects to the new default "
+#~ "stylesheet as well."
+#~ msgstr ""
+#~ "Ustaw w tym dokumencie domyślny arkusz stylu dla obiektu semantycznego. "
+#~ "Nowy obiekt RDF automatycznie będzie używał arkuszy stylów. Przyciski "
+#~ "pozwolą tobie ustawić arkusz stylu dla wszystkich istniejących obiektów "
+#~ "semantycznych na nowy arkusz stylu."
+
+#~ msgid "Apply Stylesheet"
+#~ msgstr "Zastosuje arkusz stylu"
+
+#~ msgid "System"
+#~ msgstr "System"
+
+#~ msgid "User"
+#~ msgstr "Użytkownik"
+
+#~ msgid "Reapply Current"
+#~ msgstr "Ponownie zastosuj bieżący"
+
+#~ msgid "Disassociate"
+#~ msgstr "Usuń skojarzenie"
+
+#~ msgid "Edit %1"
+#~ msgstr "Edytuj %1"
+
+#~ msgid "Stylesheet Definition"
+#~ msgstr "Definicja arkusza stylu"
+
+#~ msgid "Variables Available"
+#~ msgstr "Dostępne zmienne"
+
+#~ msgid "Description"
+#~ msgstr "Opis"
+
+#~ msgid "Stylesheet Name"
+#~ msgstr "Nazwa arkusza stylu"
+
+#~ msgid "Empty"
+#~ msgstr "Pusty"
+
+#~ msgid "URI"
+#~ msgstr "Adres URI"
+
+#~ msgid "Literal"
+#~ msgstr "Dosłownie"
+
+#~ msgid "Blank"
+#~ msgstr "Pusty"
+
+#~ msgid "Valid"
+#~ msgstr "Ważny"
+
+#~ msgid "Subject"
+#~ msgstr "Temat"
+
+#~ msgid "Predicate"
+#~ msgstr "Predykat"
+
+#~ msgid "Obj Type"
+#~ msgstr "Typ obj"
+
+#~ msgid "DataType"
+#~ msgstr "Typ danych"
+
+#~ msgid "Stored In"
+#~ msgstr "Przechowywany w"
+
+#~ msgid "Invalid integer number"
+#~ msgstr "Nieprawidłowa liczba całkowita"
+
+#~ msgid "This integer number may be too large."
+#~ msgstr "Ta liczba całkowita jest zbyt duża."
+
+#~ msgid "Invalid identifier"
+#~ msgstr "Nieprawidłowy identyfikator"
+
+#~ msgid "Identifiers should start with a letter or '_' character"
+#~ msgstr "Identyfikatory powinny rozpoczynać się od litery lub znaku \"_\""
+
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "Żaden"
+
+#~ msgid "Small Bullet"
+#~ msgstr "Małe wypunktowanie"
+
+#~ msgid "Circle Bullet"
+#~ msgstr "Okrągłe wypunktowanie"
+
+#~ msgid "Square Bullet"
+#~ msgstr "Kwadratowe wypunktowanie"
+
+#~ msgid "Rhombus Bullet"
+#~ msgstr "Rombowe wypunktowanie"
+
+#~ msgid "Check Mark Bullet"
+#~ msgstr "Wypunktowanie znaku odhaczenia"
+
+#~ msgid "Rightwards Arrow Bullet"
+#~ msgstr "Wypunktowanie strzałki w prawo"
+
+#~ msgid "Arabic"
+#~ msgstr "Arabski"
+
+#~ msgid "Lower Alphabetical"
+#~ msgstr "Małe litery alfabetu"
+
+#~ msgid "Upper Alphabetical"
+#~ msgstr "Wielkie litery alfabetu"
+
+#~ msgid "Upper Roman"
+#~ msgstr "Wielkie liczby rzymskie"
+
+#~ msgid "Large Bullet"
+#~ msgstr "Duże wypunktowanie"
+
+#~ msgid "Ballot X Bullet"
+#~ msgstr "Losowe X wypunktowanie"
+
+#~ msgid "Rightwards Arrow Head Bullet"
+#~ msgstr "Wypunktowanie grotu strzałki"
+
+#~ msgid "Bengali"
+#~ msgstr "Bengalski"
+
+#~ msgid "Gujarati"
+#~ msgstr "Gujarati"
+
+#~ msgid "Gurumukhi"
+#~ msgstr "Gurumukhi"
+
+#~ msgid "Kannada"
+#~ msgstr "Kannada"
+
+#~ msgid "Malayalam"
+#~ msgstr "Malajalam"
+
+#~ msgid "Oriya"
+#~ msgstr "Oriya"
+
+#~ msgid "Tamil"
+#~ msgstr "Tamilski"
+
+#~ msgid "Telugu"
+#~ msgstr "Telugu"
+
+#~ msgid "Tibetan"
+#~ msgstr "Tybetański"
+
+#~ msgid "Thai"
+#~ msgstr "Tajski"
+
+#~ msgid "Abjad"
+#~ msgstr "Abjad"
+
+#~ msgid "AbjadMinor"
+#~ msgstr "AbjadMinor"
+
+#~ msgid "ArabicAlphabet"
+#~ msgstr "Alfabet arabski"
+
+#~ msgid "Opacity"
+#~ msgstr "Nieprzezroczystość"
+
+#~ msgid "Recent:"
+#~ msgstr "Ostatnie:"
+
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "Dodaj lub usuń kolory..."
+
+#~ msgid "Import Data"
+#~ msgstr "Importuj dane"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Recommended ( %1 )"
+#~ msgstr "Zalecane (%1)"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Locale ( %1 )"
+#~ msgstr "Kodowanie ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Other ( %1 )"
+#~ msgstr "Inne ( %1 )"
+
+#~ msgid "Generic"
+#~ msgstr "Ogólne"
+
+#~ msgid "Currency"
+#~ msgstr "Waluta"
+
+#~ msgid "None"
+#~ msgstr "Brak"
+
+#~ msgid ""
+#~ "Please check the ranges you specified. The start value must be lower than "
+#~ "the end value."
+#~ msgstr ""
+#~ "Proszę sprawdzić podane wartości. Wartość początkowa musi być mniejsza od "
+#~ "końcowej."
+
+#~ msgid "Cannot find encoding: %1"
+#~ msgstr "Nie można znaleźć kodowania: %1"
+
+#~ msgid "Data"
+#~ msgstr "Dane"
+
+#~ msgid "E&ncoding:"
+#~ msgstr "&Kodowanie:"
+
+#~ msgid "First row contains headers"
+#~ msgstr "Pierwszy wiersz zawiera nagłówki"
+
+#~ msgid "First column contains headers"
+#~ msgstr "Pierwsza kolumna zawiera nagłówki"
+
+#~ msgid "Format"
+#~ msgstr "Format"
+
+#~ msgid "Delimiter"
+#~ msgstr "Ogranicznik"
+
+#~ msgid "Semicolon"
+#~ msgstr "Średnik"
+
+#~ msgid "Other"
+#~ msgstr "Inny"
+
+#~ msgid "Tabulator"
+#~ msgstr "Tabulator"
+
+#~ msgid "Space"
+#~ msgstr "Odstęp"
+
+#~ msgid "Text&quote:"
+#~ msgstr "C&udzysłów tekstu:"
+
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "Decimal symbol:"
+#~ msgstr "Symbol dziesiętny:"
+
+#~ msgid "Thousands separator:"
+#~ msgstr "Separator tysięcy:"
+
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "Ignoruj powielone ograniczniki"
+
+#~ msgid "&Format:"
+#~ msgstr "&Format:"
+
+#~ msgid "Ranges"
+#~ msgstr "Zakresy"
+
+#~ msgid "Update"
+#~ msgstr "Uaktualnij"
+
+#~ msgid "Import columns:"
+#~ msgstr "Importuj kolumny:"
+
+#~ msgid "Import lines:"
+#~ msgstr "Importuj linie:"
+
+#~ msgid "to"
+#~ msgstr "do"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Float Docker"
+#~ msgstr "Pływające dokowanie"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "Zamknij dokowanie"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "Zwiń dokowanie"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Lock Docker"
+#~ msgstr "Zablokuj dokowanie"
+
+#~ msgid "&Encrypt"
+#~ msgstr "Za&szyfruj"
+
+#~ msgid "Keywords:"
+#~ msgstr "Słowa kluczowe:"
+
+#~ msgid "Subject:"
+#~ msgstr "Temat:"
+
+#~ msgid "Last printed:"
+#~ msgstr "Ostatnio drukowano:"
+
+#~ msgid "Total editing time:"
+#~ msgstr "Całkowity czas edycji:"
+
+#~ msgid "Encryption:"
+#~ msgstr "Szyfrowanie:"
+
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "Tytuł:"
+
+#~ msgid "Revision number:"
+#~ msgstr "Numer wersji:"
+
+#~ msgid "Modified:"
+#~ msgstr "Zmieniono:"
+
+#~ msgid "Comments:"
+#~ msgstr "Komentarze:"
+
+#~ msgid "Created:"
+#~ msgstr "Utworzono:"
+
+#~ msgid "Path:"
+#~ msgstr "Ścieżka:"
+
+#~ msgid "&Reset"
+#~ msgstr "&Przywróć"
+
+#~ msgid "Language:"
+#~ msgstr "Język:"
+
+#~ msgid "General"
+#~ msgstr "Ogólne"
+
+#~ msgid "Last saved by"
+#~ msgstr "Ostatnio zapisany przez"
+
+#~ msgid "Use ';' (Example: Office;KDE;Calligra)"
+#~ msgstr "Użyj ';' (Przykład: Office;KDE;Calligra)"
+
+#~ msgid "This document will be decrypted"
+#~ msgstr "Dokument zostanie odszyfrowany"
+
+#~ msgid "Do not decrypt"
+#~ msgstr "Nie odszyfrowuj"
+
+#~ msgid "This document is encrypted"
+#~ msgstr "Ten dokument jest zaszyfrowany"
+
+#~ msgid "D&ecrypt"
+#~ msgstr "&Odszyfruj"
+
+#~ msgid "This document will be encrypted."
+#~ msgstr "Ten dokument będzie zaszyfrowany."
+
+#~ msgid "Do not encrypt"
+#~ msgstr "Nie szyfruj"
+
+#~ msgid "This document is not encrypted"
+#~ msgstr "Ten dokument nie jest zaszyfrowany"
+
+#~ msgid "This document does not support encryption"
+#~ msgstr "Ten dokument nie wspiera szyfrowania"
+
+#~ msgid ""
+#~ "<qt>Decrypting the document will remove the password protection from it."
+#~ "<p>Do you still want to decrypt the file?</qt>"
+#~ msgstr ""
+#~ "<qt>Odszyfrowanie dokumentu zdejmie z niego ochronę za pomocą hasła. "
+#~ "<p>Czy wciąż chcesz odszyfrować ten plik?</qt>"
+
+#~ msgid "Confirm Decrypt"
+#~ msgstr "Potwierdzanie odszyfrowania"
+
+#~ msgid "Decrypt"
+#~ msgstr "Odszyfruj"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "decryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>Nie można było automatycznie zapisać dokumentu.<p>Żeby dokończyć "
+#~ "odszyfrowywanie, proszę zapisać go ręcznie.</qt>"
+
+#~ msgid "Save Document"
+#~ msgstr "Zapisz dokument"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "decryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt>Dokument został zmieniony od czasu jego otwarcia. Aby dokończyć "
+#~ "odszyfrowywanie, trzeba go zapisać.<p>Czy zapisać teraz dokument?</qt>"
+
+#~ msgid ""
+#~ "<qt>The document is currently saved as %1. The document needs to be "
+#~ "changed to <b>OASIS OpenDocument</b> to be encrypted.<p>Do you want to "
+#~ "change the file to OASIS OpenDocument?</qt>"
+#~ msgstr ""
+#~ "<qt>Dokument jest obecnie zapisany jako %1. Wymaga zmiany do <b>OASIS "
+#~ "OpenDocument</b>, aby zostać zakodowanym.<p>Czy chcesz zamienić ten plik "
+#~ "na OASIS OpenDocument?</qt>"
+
+#~ msgid "Change Filetype"
+#~ msgstr "Zmień typ pliku"
+
+#~ msgid "Change"
+#~ msgstr "Zmień"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "encryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>Nie można było automatycznie zapisać dokumentu.<p>Żeby dokończyć "
+#~ "zaszyfrowywanie, proszę zapisać go ręcznie.</qt>"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "encryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt>Dokument został zmieniony od czasu jego otwarcia. Aby dokończyć "
+#~ "zaszyfrowywanie, trzeba go zapisać.<p>Czy zapisać teraz dokument?</qt>"
+
+#~ msgid "Remove"
+#~ msgstr "Usuń"
+
+#~ msgid "Open palette"
+#~ msgstr "Otwórz paletę"
+
+#~ msgid "Save palette"
+#~ msgstr "Zapisz paletę"
+
+#~ msgid "Add Color To Palette"
+#~ msgstr "Dodaj kolor do palety"
+
+#~ msgid "Color name:"
+#~ msgstr "Nazwa koloru:"
+
+#~ msgid "Gimp Color Palette (*.gpl)"
+#~ msgstr "Paleta kolorów Gimp (*.gpl)"
+
+#~ msgid "Cannot write to palette file %1. Maybe it is read-only. "
+#~ msgstr ""
+#~ "Nie można zapisać do pliku palety %1. Może jest wyłącznie do odczytu."
+
+#~ msgid "Palette"
+#~ msgstr "Paleta"
+
+#~ msgid "Add/Remove Colors"
+#~ msgstr "Dodaj lub usuń kolory"
+
+#~ msgid "All supported formats"
+#~ msgstr "Wszystkie obsługiwane formaty"
+
+#~ msgid "Testing: OpenFile"
+#~ msgstr "Próba: Otwórz plik"
+
+#~ msgid "Testing: OpenDirectory"
+#~ msgstr "Próba: Otwórz katalog"
+
+#~ msgid "Testing: ImportFile"
+#~ msgstr "Próba: Zaimportuj plik"
+
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "Próba: Zaimportuj pliki"
+
+#~ msgid "Testing: Import Directory"
+#~ msgstr "Próba: Zaimportuj katalog"
+
+#~ msgid "Testing: SaveFile"
+#~ msgstr "Próba: Zapisz plik"
+
+#~ msgid "Open File"
+#~ msgstr "Otwórz plik"
+
+#~ msgid "Open Files"
+#~ msgstr "Otwórz pliki"
+
+#~ msgid "Unique key:"
+#~ msgstr "Niepowtarzalny klucz:"
+
+#~ msgid "blablabla"
+#~ msgstr "blablabla"
+
+#~ msgid "Filter:"
+#~ msgstr "Filtr:"
+
+#~ msgid "TextLabel"
+#~ msgstr "EtykietaTekstowa"
+
+#~ msgid "Results:"
+#~ msgstr "Wyniki:"
+
+#~ msgid "Filter Type"
+#~ msgstr "Rodzaj filtra"
+
+#~ msgid "Mime"
+#~ msgstr "Mime"
+
+#~ msgid "Named"
+#~ msgstr "Nazwany"
+
+#~ msgid "hide name filter details option"
+#~ msgstr "ukryj opcję szczegółów nazwy filtra"
+
+#~ msgid "Set default filter"
+#~ msgstr "Ustaw filtr domyślny"
+
+#~ msgid "Save File"
+#~ msgstr "Zapisz plik"
+
+#~ msgid "Import Files"
+#~ msgstr "Zaimportuj pliki"
+
+#~ msgid "Import File"
+#~ msgstr "Zaimportuj plik"
+
+#~ msgid "Open Directory"
+#~ msgstr "Otwórz katalog"
+
+#~ msgid "Import Directory"
+#~ msgstr "Zaimportuj katalog"
+
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "Brak"
+
+#~ msgctxt "Solid color stroke or fill"
+#~ msgid "Solid"
+#~ msgstr "Pełne"
+
+#~ msgid "Gradient"
+#~ msgstr "Gradient"
+
+#~ msgid "Pattern"
+#~ msgstr "Wzór"
+
+#~ msgid "Change the filling color"
+#~ msgstr "Zmień kolor wypełnienia"
+
+#~ msgid "Change the filling gradient"
+#~ msgstr "Zmień gradient wypełniający"
+
+#~ msgid "Change the filling pattern"
+#~ msgstr "Zmień wzorzec wypełniający"
+
+#~ msgid "Icon and Text"
+#~ msgstr "Ikona i tekst"
+
+#~ msgid "Icon only"
+#~ msgstr "Tylko ikona"
+
+#~ msgid "Tabs side"
+#~ msgstr "Rozmieszczenie kart"
+
+#~ msgid "Top side"
+#~ msgstr "Na górze"
+
+#~ msgid "Bottom side"
+#~ msgstr "Na dole"
+
+#~ msgid "Left side"
+#~ msgstr "Po lewej"
+
+#~ msgid "Right side"
+#~ msgstr "Po prawej"
+
+#~ msgid "Page Layout"
+#~ msgstr "Układ strony"
+
+#~ msgid "Apply to document"
+#~ msgstr "Zastosuj w dokumencie"
+
+#~ msgid "Left Edge:"
+#~ msgstr "Lewa krawędź:"
+
+#~ msgid "Right Edge:"
+#~ msgstr "Prawa krawędź:"
+
+#~ msgid "Binding Edge:"
+#~ msgstr "Krawędź zszycia:"
+
+#~ msgid "Page Edge:"
+#~ msgstr "Krawędź strony:"
+
+#~ msgid "Facing Pages:"
+#~ msgstr "Rozkładówka:"
+
+#~ msgid "Facing pages"
+#~ msgstr "Rozkładówka"
+
+#~ msgid "Page Layout:"
+#~ msgstr "Układ strony:"
+
+#~ msgid "Page spread"
+#~ msgstr "Rozkładówka"
+
+#~ msgid "Unit:"
+#~ msgstr "Jednostka:"
+
+#~ msgid "Follow style:"
+#~ msgstr "Według stylu:"
+
+#~ msgid "Size:"
+#~ msgstr "Wielkość:"
+
+#~ msgid "Width:"
+#~ msgstr "Szerokość:"
+
+#~ msgid "Height:"
+#~ msgstr "Wysokość:"
+
+#~ msgid "Orientation:"
+#~ msgstr "Orientacja:"
+
+#~ msgid "Facing pages:"
+#~ msgstr "Rozkładówka:"
+
+#~ msgid "Single sided"
+#~ msgstr "Pojedyncza"
+
+#~ msgid "Text direction:"
+#~ msgstr "Kierunek tekstu:"
+
+#~ msgid "Automatic"
+#~ msgstr "Samoczynnie"
+
+#~ msgid "Left to right"
+#~ msgstr "Od lewej do prawej"
+
+#~ msgid "Right to left"
+#~ msgstr "Od prawej do lewej"
+
+#~ msgid "Margins"
+#~ msgstr "Marginesy"
+
+#~ msgid "Top:"
+#~ msgstr "Góra:"
+
+#~ msgid "Binding edge:"
+#~ msgstr "Krawędź zszycia:"
+
+#~ msgid "Page edge:"
+#~ msgstr "Krawędź strony:"
+
+#~ msgid "Bottom:"
+#~ msgstr "Dół:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "Importuj zasób"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Delete resource"
+#~ msgstr "Usuń zasób"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "Pobierz zasób"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "Współdziel zasób"
+
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "Wybierz plik do dodania"
+
+#~ msgid "New tag"
+#~ msgstr "Nowy znacznik"
+
+#~ msgid "Assign to tag"
+#~ msgstr "Przypisz do znacznika"
+
+#~ msgid "Remove from this tag"
+#~ msgstr "Usuń z tego znacznika"
+
+#~ msgid "Remove from other tag"
+#~ msgstr "Usuń z innego znacznika"
+
+#~ msgid "Tags"
+#~ msgstr "Znaczniki"
+
+#~ msgid ""
+#~ "<qt>The tag you are trying to undelete already exists in tag list."
+#~ "<br>Please enter a new, unique name for it.</qt>"
+#~ msgstr ""
+#~ "<qt>Znacznik, który chcesz przywrócić z usuniętego stanu, już istnieje na "
+#~ "liście znaczników.<br>Proszę podać dla niego nową, niepowtarzalną nazwę.</"
+#~ "qt>"
+
+#~ msgid "Tag was not undeleted."
+#~ msgstr "Znacznik nie został przywrócony."
+
+#~ msgid "All"
+#~ msgstr "Wszystkie"
+
+#~ msgid "Change the color of the shadow"
+#~ msgstr "Zmień kolor cienia"
+
+#~ msgid "Blur:"
+#~ msgstr "Rozmycie:"
+
+#~ msgid "Distance:"
+#~ msgstr "Odległość:"
+
+#~ msgid "Butt cap"
+#~ msgstr "Kątowe zakończenie"
+
+#~ msgid "Round cap"
+#~ msgstr "Zaokrąglone zakończenie"
+
+#~ msgid "Square cap"
+#~ msgstr "Kwadratowe zakończenie"
+
+#~ msgid "Miter join"
+#~ msgstr "Ostre połączenie"
+
+#~ msgid "Round join"
+#~ msgstr "Zaokrąglone połączenia"
+
+#~ msgid "Bevel join"
+#~ msgstr "Ścięte połączenie"
+
+#~ msgid "Miter limit"
+#~ msgstr "Ograniczenie ostrości"
+
+#~ msgid "Thickness:"
+#~ msgstr "Grubość:"
+
+#~ msgid "Set line width of actual selection"
+#~ msgstr "Ustaw szerokość linii bieżącego zaznaczenia"
+
+#~ msgid "Change the color of the line/border"
+#~ msgstr "Zmień kolor linii/obramowania"
+
+#~ msgid "Tag"
+#~ msgstr "Znaczniki"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<qt>Entering search terms here will add to, or remove resources from the "
+#~ "current tag view.<para>To filter based on the partial, case insensitive "
+#~ "name of a resource:<br><icode>partialname</icode> or <icode>!partialname</"
+#~ "icode>.</para><para>In-/exclusion of other tag sets:<br><icode>[Tagname]</"
+#~ "icode> or <icode>![Tagname]</icode>.</para><para>Case sensitive and full "
+#~ "name matching in-/exclusion:<br><icode>\"ExactMatch\"</icode> or <icode>!"
+#~ "\"ExactMatch\"</icode>.</para>Filter results cannot be saved for the "
+#~ "<interface>All Presets</interface> view.<br>In this view, pressing "
+#~ "<interface>Enter</interface> or clearing the filter box will restore all "
+#~ "items.<br>Create and/or switch to a different tag if you want to save "
+#~ "filtered resources into named sets.</qt>"
+#~ msgstr ""
+#~ "<qt>Wpisywanie tutaj fraz do wyszukania, doda lub usunie zasoby z "
+#~ "bieżącego widoku znacznika.<para>Aby odfiltrować w oparciu o częściową "
+#~ "nazwę zasobu bez względu na wielkość liter:<br><icode>nazwa_częściowa</"
+#~ "icode> lub <icode>!nazwa_częściowa</icode>.</para><para>Włączenie/"
+#~ "wyłączenie innych zestawów znaczników:<br><icode>[Nazwa_znacznika]</"
+#~ "icode> or <icode>![Nazwa_znacznika]</icode>.</para><para>Z uwzględnieniem "
+#~ "wielkości liter i włączenie/wyłączanie dopasowań po pełnej nazwie  :"
+#~ "<br><icode>\"DokładneDopasowanie\"</icode> or <icode>!"
+#~ "\"DokładneDopasowanie\"</icode>.</para>Wyników odfiltrowania nie można "
+#~ "zapisać w widoku <interface>Wszystkich nastaw</interface>.<br>W tym "
+#~ "widoku, naciskając klawisz <interface>Enter</interface> lub czyszcząc "
+#~ "pole filtra, zostaną przywrócone wszystkie elementy.<br>Utwórz i/lub "
+#~ "przełącz do innego znacznika, jeśli chcesz zapisać odfiltrowane zasoby do "
+#~ "zestawów z nadaną nazwą .</qt>"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<qt>Entering search terms here will add to, or remove resources from the "
+#~ "current tag view.<para>To filter based on the partial, case insensitive "
+#~ "name of a resource:<br><icode>partialname</icode> or <icode>!partialname</"
+#~ "icode>.</para><para>In-/exclusion of other tag sets:<br><icode>[Tagname]</"
+#~ "icode> or <icode>![Tagname]</icode>.</para><para>Case sensitive and full "
+#~ "name matching in-/exclusion:<br><icode>\"ExactMatch\"</icode> or <icode>!"
+#~ "\"ExactMatch\"</icode>.</para>Pressing <interface>Enter</interface> or "
+#~ "clicking the <interface>Save</interface> button will save the changes.</"
+#~ "qt>"
+#~ msgstr ""
+#~ "<qt>Wpisywanie tutaj fraz do wyszukania, doda lub usunie zasoby z "
+#~ "bieżącego widoku znacznika.<para>Aby odfiltrować w oparciu o częściową "
+#~ "nazwę zasobu bez względu na wielkość liter:<br><icode>nazwa_częściowa</"
+#~ "icode> lub <icode>!nazwa_częściowa</icode>.</para><para>Włączenie/"
+#~ "wyłączenie innych zestawów znaczników:<br><icode>[Nazwa_znacznika]</"
+#~ "icode> or <icode>![Nazwa_znacznika]</icode>.</para><para>Z uwzględnieniem "
+#~ "wielkości liter i włączania/wyłączanie dopasowań po pełnej nazwie  :"
+#~ "<br><icode>\"DokładneDopasowanie\"</icode> or <icode>!"
+#~ "\"DokładneDopasowanie\"</icode>.</para>Naciśnięcie klawisza "
+#~ "<interface>Enter</interface> lub przycisku <interface>Zapisz</interface> "
+#~ "zapisze zmiany.</qt>"
+
+#~ msgid "Enter resource filters here"
+#~ msgstr "Pisz tutaj, aby odfiltrować zasoby"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<qt>Save the currently filtered set as the new members of the current tag."
+#~ "</qt>"
+#~ msgstr ""
+#~ "<qt>Zapisz obecnie odfiltrowany zestaw, jako nowe elementy bieżącego "
+#~ "znacznika.</qt>"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "<qt>Show the tag box options.</qt>"
+#~ msgstr "<qt>Pokaż opcje pola znacznika.</qt>"
+
+#~ msgid "Rename tag"
+#~ msgstr "Zmień nazwę znacznika"
+
+#~ msgid "Delete this tag"
+#~ msgstr "Usuń ten znacznik"
+
+#~ msgid "Clear undelete list"
+#~ msgstr "Wyczyść listę nieusuniętych"
+
+#~ msgid "Undelete"
+#~ msgstr "Przywróć"
+
+#~ msgid "Tool Options"
+#~ msgstr "Opcje narzędzia"
+
+#~ msgid "Toggles organizing the options in tabs or not"
+#~ msgstr "Włącza lub wyłącza organizację opcji w kartach"
+
+#~ msgid "deselect item"
+#~ msgstr "odznacz element"
+
+#~ msgid "select item"
+#~ msgstr "zaznacz element"
+
+#~ msgid "Use same aspect as pixels"
+#~ msgstr "Użyj tego samego kształtu jak piksele"
+
+#~ msgid "Zoom to Selection"
+#~ msgstr "Powiększenie do zaznaczenia"
+
+#~ msgid "Zoom to All"
+#~ msgstr "Zoom do całości"
+
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1"
+
+#~ msgid "All Presets"
+#~ msgstr "Wszystkie nastawy"
+
+#~ msgid "Tag:"
+#~ msgstr "Znacznik:"
+
+#~ msgid "Three arguments required"
+#~ msgstr "Wymagane są trzy argumenty"
+
+#~ msgctxt "Static Image"
+#~ msgid "Static"
+#~ msgstr "Statyczny"
+
+#~ msgid "Value (brightness)"
+#~ msgstr "Wartość (jasność)"
+
+#~ msgid "Cyan"
+#~ msgstr "Niebieskozielony"
+
+#~ msgid "Magenta"
+#~ msgstr "Purpurowy"
+
+#~ msgid "Yellow"
+#~ msgstr "Żółty"
+
+#~ msgid "Black"
+#~ msgstr "Czarny"
+
+#~ msgid "Green to magenta*"
+#~ msgstr "Zielony do purpury*"
+
+#~ msgid "Blue to yellow"
+#~ msgstr "Zielony do żółtego"
+
+#~ msgid "Opacity:"
+#~ msgstr "Nieprzezroczystość:"
+
+#~ msgid "&Themes"
+#~ msgstr "Mo&tywy"
+
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "Domyślna"
+
+#~ msgid "Configuration..."
+#~ msgstr "Ustawienia..."
+
+#~ msgid ""
+#~ "Cannot start Colors Settings panel from KDE Control Center. Please check "
+#~ "your system..."
+#~ msgstr ""
+#~ "Nie można uruchomić panelu ustawień kolorów z Centrum Kontroli KDE. "
+#~ "Proszę sprawdzić swój system..."
+
+#~ msgid "&Tools"
+#~ msgstr "&Narzędzia"
+
+#~ msgid ""
+#~ "The manifest file seems to be corrupted. The document could not be opened."
+#~ msgstr ""
+#~ "Plik manifest wygląda na uszkodzony. Nie można było otworzyć dokumentu."
+
+#~ msgid "Color Selector"
+#~ msgstr "Wybieranie koloru"
+
+#~ msgid "Database file \"%1\" does not exist."
+#~ msgstr "Plik bazy danych \"%1\" nie istnieje."
+
+#~ msgid "Cannot drop database - name not specified."
+#~ msgstr "Nie można usunąć bazy danych - nie została określona jej nazwa."
+
+#~ msgid "Table \"%1\" does not exist in the database."
+#~ msgstr "Tabela \"%1\" nie istnieje w bazie danych."
+
+#~ msgid "Single transactions"
+#~ msgstr "Pojedyncze transakcje"
+
+#~ msgid "Multiple transactions"
+#~ msgstr "Wiele transakcji"
+
+#~ msgid "Nested transactions"
+#~ msgstr "Zagnieżdżone transakcje"
+
+#~ msgid "Ignored"
+#~ msgstr "Ignorowany"
+
+#~ msgid "No such driver service: \"%1\"."
+#~ msgstr "Nie można znaleźć usługi \"%1\"."
+
+#~ msgid "Could not compact database \"%1\"."
+#~ msgstr "Nie można wykonać defragmentacji bazy danych \"%1\"."
+
+#~ msgid "Do you want to open file \"%1\" as read-only?"
+#~ msgstr "Czy chcesz otworzyć plik \"%1\" tylko do odczytu?"
+
+#~ msgid "The file is probably already open on this or another computer."
+#~ msgstr "Plik jest już prawdopodobnie otwarty na tym lub innym komputerze."
+
+#~ msgid "Could not gain exclusive access for writing the file."
+#~ msgstr "Nie można uzyskać wyłącznego dostępu do pisania pliku."
+
+#~ msgid "Open As Read-Only"
+#~ msgstr "Otwórz tylko do odczytu"
+
+#~ msgid "Could not close busy database."
+#~ msgstr "Nie można zamknąć zajętej (pracującej) bazy danych."
+
+#~ msgid "Could not remove file \"%1\"."
+#~ msgstr "Nie można usunąć pliku \"%1\"."
+
+#~ msgid ""
+#~ "Check the file's permissions and whether it is already opened and locked "
+#~ "by another application."
+#~ msgstr ""
+#~ "Sprawdź prawa dostępu pliku oraz czy nie jest on otwarty i zablokowany "
+#~ "przez inny program."
+
+#~ msgid "Compacting database"
+#~ msgstr "Defragmentacja bazy danych"
+
+#~ msgid "Compacting database \"%1\"..."
+#~ msgstr "Defragmentacja bazy danych \"%1\"..."
+
+#~ msgid ""
+#~ "The database has been compacted. Current size decreased by %1% to %2."
+#~ msgstr ""
+#~ "Baza danych została zdefragmentowana. Jej rozmiar zmniejszył się o %1% do "
+#~ "%2."
+
+#~ msgid "No query specified"
+#~ msgstr "Nie określono polecenia zapytania."
+
+#~ msgid "Table \"%1\" does not exist"
+#~ msgstr "Tabela \"%1\" nie istnieje."
+
+#~ msgid "Track Total"
+#~ msgstr "Śledź całkowitą"
+
+#~ msgid "Track Builtin Format"
+#~ msgstr "Śledź wbudowany format"
+
+#~ msgid "Use Sub Total"
+#~ msgstr "Użyj pod-całkowitej"
+
+#~ msgid "Track Total Format"
+#~ msgstr "Śledź całkowity format"
+
+#~ msgid "Grid Snap"
+#~ msgstr "Przyciąganie do siatki"
+
+#~ msgid "                Language:"
+#~ msgstr "                Język:"
+
+#~ msgid "PushButton"
+#~ msgstr "Przycisk"
+
+#~ msgid "Formatting"
+#~ msgstr "Formatowanie"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1.\n"
+#~ "The filter plugins have not been properly registered. Please reboot "
+#~ "Windows. Krita Sketch will now close."
+#~ msgstr ""
+#~ "Nie można otworzyć\n"
+#~ "%1.\n"
+#~ "Wtyczki filtra nie zostały poprawnie zarejestrowane. Proszę ponownie "
+#~ "uruchomić Okna. Szkic Krity zostanie teraz zamknięty."
+
+#~ msgid "KoFileDialogTester"
+#~ msgstr "PróbnikOkienDialogowychKo"
+
+#~ msgid "Testing: OpenDirectories"
+#~ msgstr "Próba: Otwórz katalogi"
+
+#~ msgid "Testing: ImportDirectories"
+#~ msgstr "Próba: Zaimportuj katalogi"
+
+#~ msgid "Testing: SaveFiles"
+#~ msgstr "Próba: Zapisz pliki"
+
+#~ msgid "Open Directories"
+#~ msgstr "Otwórz katalogi"
+
+#~ msgid "Import Directories"
+#~ msgstr "Zaimportuj katalogi"
+
+#~ msgid "Save Files"
+#~ msgstr "Zapisz pliki"
+
+#~ msgid "Create Path"
+#~ msgstr "Tworzenie ścieżki"
+
+#~ msgid "Could not export file. Did you specify the correct file format?"
+#~ msgstr ""
+#~ "Nie można eksportować pliku. Czy podano poprawne rozszerzenie pliku?"
+
+#~ msgid "Red Green Blue"
+#~ msgstr "Red Green Blue"
+
+#~ msgid "L a* b*"
+#~ msgstr "L a* b*"
+
+#~ msgid "Cyan Magenta Yellow Black"
+#~ msgstr "Cyan Magenta Yellow Black"
+
+#~ msgid "Error!"
+#~ msgstr "Błąd!"
+
+#~ msgid "Contacts"
+#~ msgstr "Kontakty"
+
+#~ msgid "Events"
+#~ msgstr "Zdarzenia"
+
+#~ msgid "Locations"
+#~ msgstr "Położenia"
+
+#~ msgid "Area"
+#~ msgstr "Obszar"
+
+#~ msgid "Region"
+#~ msgstr "Region"
+
+#~ msgid ""
+#~ "Could not add entry\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Nie można dodać wpisu\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not save iCal file\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Nie można zapisać pliku iCal\n"
+#~ "%1"
+
+#~ msgid "&Summary:"
+#~ msgstr "Podsumowanie:"
+
+#~ msgid "&Location:"
+#~ msgstr "&Lokalizacja:"
+
+#~ msgid "&Start:"
+#~ msgstr "&Początek:"
+
+#~ msgid "&End:"
+#~ msgstr "Koni&ec:"
+
+#~ msgid "Time and Date"
+#~ msgstr "Czas i data"
+
+#~ msgid "Timezone"
+#~ msgstr "Strefa czasowa"
+
+#~ msgid "Calendar Event"
+#~ msgstr "Zdarzenie kalendarza"
+
+#~ msgid "Import event to Calendar"
+#~ msgstr "Importuj zdarzenie do kalendarza"
+
+#~ msgid "Export event to iCal file..."
+#~ msgstr "Eksportuj zdarzenie do pliku iCal..."
+
+#~ msgid "&Name:"
+#~ msgstr "&Nazwa:"
+
+#~ msgid "&Nick:"
+#~ msgstr "Pseudo&nim:"
+
+#~ msgid "&Phone Number:"
+#~ msgstr "Numer &telefonu:"
+
+#~ msgid "&Home Page:"
+#~ msgstr "&Strona domowa:"
+
+#~ msgid "Contact Information"
+#~ msgstr "Informacje o kontakcie"
+
+#~ msgid "Import contact"
+#~ msgstr "Importuj kontakt"
+
+#~ msgid "Export as vcard..."
+#~ msgstr "Eksportuj jako vcard..."
+
+#~ msgid "&Name"
+#~ msgstr "&Nazwa"
+
+#~ msgid "The Earth"
+#~ msgstr "Ziemia"
+
+#~ msgid "The Marble widget displays a virtual globe."
+#~ msgstr "Element interfejsu Marble wyświetla wirtualny globus."
+
+#~ msgid "Navigation Control"
+#~ msgstr "Kontrola nawigacji"
+
+#~ msgid "Use this control to navigate."
+#~ msgstr "Użyj tej kontrolki do nawigowania."
+
+#~ msgid "Latitude"
+#~ msgstr "Szerokość"
+
+#~ msgid "Longitude"
+#~ msgstr "Długość"
+
+#~ msgid "Location Information"
+#~ msgstr "Informacje o położeniu"
+
+#~ msgid "People"
+#~ msgstr "Ludzie"
+
+#~ msgid ""
+#~ "A document with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "Dokument o takiej nazwie już istnieje.\n"
+#~ "Czy chcesz go nadpisać?"
+
+#~ msgid "Unknown Calligra MimeType %1. Check your installation."
+#~ msgstr "Nieznany typ mime Calligra %1. Sprawdź poprawność instalacji."
+
+#~ msgid "%1 (Uncompressed XML Files)"
+#~ msgstr "%1 (Nieskompresowane pliki XML)"
+
+#~ msgid "%1 (Flat XML File)"
+#~ msgstr "%1 (Prosty plik XML)"
+
+#~ msgid "%1 (Encrypted)"
+#~ msgstr "%1 (zaszyfrowany)"
+
+#~ msgid "%1 (%2 Compatible)"
+#~ msgstr "%1 (zgodny z %2)"
+
+#~ msgid "Save Document As"
+#~ msgstr "Zapisz jako..."
+
+#~ msgid "Export Document As"
+#~ msgstr "Eksportuj do..."
+
+#~ msgid "Export to PDF"
+#~ msgstr "Eksportuj do PDF"
+
+#~ msgid "To change background color use Stroke and Fill docker."
+#~ msgstr "Aby zmienić kolor tła, użyj dokowania pociągnięcia i wypełnienia"
+
+#~ msgid "Slide Background"
+#~ msgstr "Tło slajdu"
+
+#~ msgid "Document background"
+#~ msgstr "Tło dokumentu"
+
+#~ msgid "&OK"
+#~ msgstr "&OK"
+
+#~ msgid "&Cancel"
+#~ msgstr "&Anuluj"
+
+#~ msgid "Error Encountered"
+#~ msgstr "Napotkano błąd"
+
+#~ msgid "Unable to add a new group because its name would not be unique"
+#~ msgstr "Nie można dodać nowej grupy, bo jej nazwa nie byłaby niepowtarzalna"
+
+#~ msgid "Even Pages(s)"
+#~ msgstr "Parzysta strona(y)"
+
+#~ msgid "Any Pages(s)"
+#~ msgstr "Jakakolwiek strona(y)"
+
+#~ msgid "&Edit"
+#~ msgstr "&Edycja"
+
+#~ msgid "&Close"
+#~ msgstr "&Zamknij"
+
+#~ msgid "Snapping"
+#~ msgstr "Przyciąganie"
+
+#~ msgid "Dodge"
+#~ msgstr "Rozjaśnij"
+
+#~ msgid "Hard light"
+#~ msgstr "Twarde światło"
+
+#~ msgid "Soft light"
+#~ msgstr "Miękkie światło"
+
+#~ msgid "Show Shadow"
+#~ msgstr "Pokaż cień"
+
+#~ msgid "Angle:"
+#~ msgstr "Kąt:"
+
+#~ msgid "Offset:"
+#~ msgstr "Przesunięcie:"
+
+#~ msgid "Color:"
+#~ msgstr "Kolor:"
+
+#~ msgid "Blur radius:"
+#~ msgstr "Promień rozmycia:"
+
+#~ msgid "Style:"
+#~ msgstr "Styl:"
+
+#~ msgid "Cap:"
+#~ msgstr "Zakończenie:"
+
+#~ msgid "Join:"
+#~ msgstr "Połączenie:"
+
+#~ msgid "Set miter limit"
+#~ msgstr "Ustaw ostre ograniczenie"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bookmark"
+#~ msgstr "Wstaw zakładkę"
+
+#~ msgid "Insert Table"
+#~ msgstr "Wstaw tabelę"
+
+#~ msgid "Insert Row Above"
+#~ msgstr "Wstaw wiersz powyżej"
+
+#~ msgid "Insert Column Left"
+#~ msgstr "Wstaw kolumnę po lewej"
+
+#~ msgid "Insert Column Right"
+#~ msgstr "Wstaw kolumnę po prawej"
+
+#~ msgid "Delete Column"
+#~ msgstr "Usuń kolumnę"
+
+#~ msgid "Delete Row"
+#~ msgstr "Usuń wiersz"
+
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Wstaw spis treści"
+
+#~ msgid "Insert Bibliography"
+#~ msgstr "Wstaw bibliografię"
+
+#~ msgid "Typing"
+#~ msgstr "Pisze"
+
+#~ msgid "min"
+#~ msgstr "min"
+
+#~ msgid "DetailsPaneBase"
+#~ msgstr "DetailsPaneBase"
+
+#~ msgid "Embedding Object"
+#~ msgstr "Osadzanie obiektu"
+
+#~ msgid "I&mport..."
+#~ msgstr "I&mport..."
+
+#~ msgid "&Default"
+#~ msgstr "&Domyślny"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select Item"
+#~ msgstr "Zaznacz element"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Separate paths"
+#~ msgstr "Rozdziel ścieżki"
+
+#~ msgid "Background Tool"
+#~ msgstr "Narzędzie tła"
+
+#~ msgid "Use the styles docker to manipulate the background."
+#~ msgstr "Użyj dokowania stylów, aby manipulować tłem."
+
+#~ msgid "Background editing tool"
+#~ msgstr "Narzędzie edycji tła"
+
+#~ msgid "Use master background"
+#~ msgstr "Użyj głównego tła"
+
+#~ msgid ""
+#~ "An autosaved file for an unnamed document exists in %1.\n"
+#~ "This file is dated %2\n"
+#~ "Do you want to open it?"
+#~ msgstr ""
+#~ "Plik autozapisu dla tego dokumentu istnieje w %1.\n"
+#~ "Ten plik jest datowany %2\n"
+#~ "Czy chcesz go otworzyć?"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shapes"
+#~ msgstr "Usuń kształty"
+
+#~ msgid "&Delete Personal Data"
+#~ msgstr "&Usuń osobiste dane"
+
+#~ msgid "Substract"
+#~ msgstr "Odjęcie"
+
+#~ msgid "Inverse Substract"
+#~ msgstr "Odwrócone odjęcie"
+
+#~ msgid ""
+#~ "No personal contact data set, please use the "
+#~ "option                                     \"Set as Personal Contact Data"
+#~ "\" from the \"Edit\"     menu in KAddressbook to set one."
+#~ msgstr ""
+#~ "Nie ustawiono osobistych danych kontaktowych, proszę użyć "
+#~ "opcji                                      \"Ustaw jako osobiste dane "
+#~ "kontaktowe\" z menu \"Edycja\" w KAddressbook, żeby je ustawić."
+
+#~ msgid "Hide colors with bad contrast"
+#~ msgstr "Ukryj kolory o złym kontraście"
+
+#~ msgid "&Load From Address Book"
+#~ msgstr "Załaduj z książki &adresowej"
+
+#~ msgid "Shadow Angle:"
+#~ msgstr "Kąt cienia:"
+
+#~ msgid "Shadow Color:"
+#~ msgstr "Kolor cienia:"
+
+#~ msgid "Toggles showing a title bar"
+#~ msgstr "Przełącza pokazywanie paska tytułu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set border"
+#~ msgstr "Ustaw obramowanie"
+
+#~ msgid "Ellipse Shape"
+#~ msgstr "Kształt elipsy"
+
+#~ msgid "Set Horizontal Alignment"
+#~ msgstr "Ustaw wyrównanie poziome"
+
+#~ msgid "Line Break"
+#~ msgstr "Podział wiersza"
+
+#~ msgid "Hide Grid"
+#~ msgstr "Ukryj siatkę"
+
+#~ msgid "Hide Guides"
+#~ msgstr "Ukryj prowadnice"
+
+#~ msgid "&Close All Views"
+#~ msgstr "&Zamknij wszystkie widoki"
+
+#~ msgid "&Split View"
+#~ msgstr "&Podziel widok"
+
+#~ msgid "&Remove View"
+#~ msgstr "&Usuń widok"
+
+#~ msgid "Splitter &Orientation"
+#~ msgstr "Układ wid&oków"
+
+#~ msgid "&Horizontal"
+#~ msgstr "P&oziomy"
+
+#~ msgid "&Vertical"
+#~ msgstr "&Pionowy"
+
+#~ msgid "End"
+#~ msgstr "Koniec"
+
+#~ msgid "Printing page %1"
+#~ msgstr "Drukowanie strony %1"
+
+#~ msgid "Import"
+#~ msgstr "Import"
+
+#, fuzzy
+#~ msgid "Share"
+#~ msgstr "Figura"
+
+#, fuzzy
+#~ msgid "Copy Opacy"
+#~ msgstr "Alfa"
+
+#, fuzzy
+#~ msgid "Copy Alpha"
+#~ msgstr "Alfa"
+
+#, fuzzy
+#~ msgid "Light"
+#~ msgstr "Jasny"
+
+#~ msgid "Write PDF"
+#~ msgstr "Zapisz PDF"
+
+#, fuzzy
+#~ msgid "Hide Dockers"
+#~ msgstr "Ukryj prowadnice"
+
+#, fuzzy
+#~ msgid "Atop"
+#~ msgstr "Zatrzymaj"
+
+#~ msgid "KOffice"
+#~ msgstr "KOffice"
+
+#~ msgid "KOffice Storage"
+#~ msgstr "Przechowywanie danych KOffice"
+
+#~ msgid "CCSGraph"
+#~ msgstr "CCSGraph"
+
+#~ msgid "(c) 2007 Cyrille Berger"
+#~ msgstr "(c) 2007 Cyrille Berger"
+
+#, fuzzy
+#~ msgid "return the list of available graphs"
+#~ msgstr "zwróć listę dostępnych grafów"
+
+#~ msgid ""
+#~ "specify the type of graph (see --graphs to get the full list, the default "
+#~ "is full)"
+#~ msgstr "określ typ grafu (--graphs da pełną listę, domyślnie pełny)"
+
+#~ msgid "specify the output (can be ps or dot, the default is ps)"
+#~ msgstr "określ wyjście (może być ps lub dot, domyślnie ps)"
+
+#, fuzzy
+#~ msgid "Barcode Format"
+#~ msgstr "Format"
+
+#, fuzzy
+#~ msgid "Field Font"
+#~ msgstr "Ustaw czcionkę"
+
+#, fuzzy
+#~ msgid "Pie"
+#~ msgstr "Połączenie"
+
+#, fuzzy
+#~ msgid "Ring"
+#~ msgstr "Zakresy"
+
+#, fuzzy
+#~ msgid "Polar"
+#~ msgstr "Kolor"
+
+#, fuzzy
+#~ msgid "Stacked"
+#~ msgstr "Spacja"
+
+#, fuzzy
+#~ msgid "Percent"
+#~ msgstr "Ostatnio używane:"
+
+#, fuzzy
+#~ msgid "Color Scheme"
+#~ msgstr "Nazwa koloru:"
+
+#, fuzzy
+#~ msgid "Antialiased"
+#~ msgstr "Bez tytułu"
+
+#, fuzzy
+#~ msgid "Display Legend"
+#~ msgstr "Pokaż tło strony"
+
+#, fuzzy
+#~ msgid "Chart"
+#~ msgstr "wykres"
+
+#, fuzzy
+#~ msgid "Pan Tool"
+#~ msgstr "Narzędzie modelowania"
+
+#~ msgid "Zoom Tool"
+#~ msgstr "Narzędzie powiększania"
+
+#~ msgid "Path tool"
+#~ msgstr "Narzędzia ścieżki"
+
+#, fuzzy
+#~ msgid "Out"
+#~ msgstr "Użytkownika"
+
+#~ msgid "ICC Engine"
+#~ msgstr "Silnik ICC"
+
+#~ msgid "Paste Slides"
+#~ msgstr "Wklej slajdy"
+
+#~ msgid "QXml"
+#~ msgstr "QXml"
+
+#~ msgid "Insert Linebreak"
+#~ msgstr "Wstaw znak nowego wiersza"
+
+#~ msgid "&Insert"
+#~ msgstr "&Wstaw"
+
+#~ msgid "Insert the selected character in the text"
+#~ msgstr "Wstawia wybrany znak do tekstu"
+
+#~ msgid "Resize Panel Forward"
+#~ msgstr "Zmień rozmiar panelu do przodu"
+
+#~ msgid "Resize Panel Reverse"
+#~ msgstr "Zmień rozmiar panelu w drugą stronę"
+
+#~ msgid "Access Keys"
+#~ msgstr "Klawisze dostępu"
+
+#~ msgid "Enable word completion"
+#~ msgstr "Włącz uzupełnianie wyrazów"
+
+#~ msgid ""
+#~ "Toggle autocompletion on and off: if this is checked then autocompletion "
+#~ "will be enabled."
+#~ msgstr ""
+#~ "Włącza/wyłącza automatyczne uzupełnianie. Jeśli zaznaczone, automatyczne "
+#~ "uzupełnianie będzie włączone."
+
+#~ msgid ""
+#~ "Suggestion list for autocompletion: contains all the words that will be "
+#~ "autocompleted."
+#~ msgstr ""
+#~ "Lista sugestii dla automatycznego uzupełniania - zawiera wszystkie słowa, "
+#~ "które będą uzupełniane."
+
+#~ msgid ""
+#~ "By clicking this button you can add manually an individual word to the "
+#~ "completion list."
+#~ msgstr ""
+#~ "Klikając na ten przycisk, można ręcznie dodać pojedyncze słowo do listy "
+#~ "uzupełnień."
+
+#~ msgid ""
+#~ "To remove words from the completion list, select the word with the left "
+#~ "mouse button from the list, then click this button."
+#~ msgstr ""
+#~ "Aby usunąć słowo z listy uzupełnień, zaznacz je wpierw na liście lewym "
+#~ "przyciskiem myszy, a następnie kliknij ten przycisk."
+
+#~ msgid "Automatically add new words to suggestion list"
+#~ msgstr "Automatycznie dodawaj nowe słowa do listy uzupełnień wyrazów"
+
+#~ msgid ""
+#~ "If this option is enabled, any word equal to or longer than the "
+#~ "\"Characters needed\" typed in this document will automatically be added "
+#~ "to the list of words used by the completion."
+#~ msgstr ""
+#~ "Jeśli ta opcja jest zaznaczona, każde słowo o długości równej co najmniej "
+#~ "\"Wymaganym znakom\" wpisane w dokumencie będzie automatycznie dodane do "
+#~ "listy uzupełnień wyrazów."
+
+#~ msgid "Completion Options"
+#~ msgstr "Opcje automatycznego uzupełniania"
+
+#~ msgid "Show words in tooltip"
+#~ msgstr "Pokaż słowa w podpowiedzi"
+
+#~ msgid ""
+#~ "If this option is enabled, a tool tip box will appear when you type the "
+#~ "beginning of a word that exists in the completion list. To complete the "
+#~ "word, press the key you set to accept suggestions in the \"Key to accept "
+#~ "suggestion\" drop-down list."
+#~ msgstr ""
+#~ "Po włączeniu tej opcji, kiedy wpisze się początek słowa, które występuje "
+#~ "w liście dopełniania, będzie się pojawiać okienko podpowiedzi. Żeby "
+#~ "dokończyć słowo, wciśnij klawisz, który ustawiłeś do zatwierdzania "
+#~ "sugestii w liście rozwijanej \"Klawisz akceptacji sugestii\"."
+
+#~ msgid ""
+#~ "This sets the maximum number of words in the completion list. All "
+#~ "additional words will not be included in the list. You can select any "
+#~ "value from 1 to 500. This option keeps the list from becoming too "
+#~ "cumbersome.\n"
+#~ "This option is most important when Automatically add words to completion "
+#~ "list is enabled."
+#~ msgstr ""
+#~ "Ustawia maksymalną liczbę słów w liście uzupełnień. Dodatkowe słowa nie "
+#~ "będą dołączane do listy. Można wybrać wartość od 1 do 500. Opcja "
+#~ "zapobiega stracie efektywności przez listę.\n"
+#~ "Nabiera największego znaczenia, kiedy włączona jest opcja \"Automatycznie "
+#~ "dodawaj słowa do listy uzupełnień\"."
+
+#~ msgid "Characters needed:"
+#~ msgstr "Wymagane znaki:"
+
+#~ msgid "Suggest words:"
+#~ msgstr "Sugerowane słowa:"
+
+#~ msgid ""
+#~ "Use this spinbox/slider combination to prevent automatically adding short "
+#~ "words to the completion list. You can select any value from 5-100 and the "
+#~ "words will need to be at least the number of characters set here to be "
+#~ "added to the list."
+#~ msgstr ""
+#~ "Użyj kombinacji suwaka z przyciskami przewijania, aby zabezpieczyć przed "
+#~ "automatycznym dodaniem zbyt krótkich słów do listy uzupełnień. Możesz "
+#~ "wybrać dowolną wartość od 5 do 100, a słowa będą musiały być przynajmniej "
+#~ "tak długie (mierząc ilość znaków), jak wpisana wartość, żeby zostały "
+#~ "dodane do listy."
+
+#~ msgid "Append space"
+#~ msgstr "Dodaj spację"
+
+#~ msgid ""
+#~ "If checked, it adds a single space to the end of a word after "
+#~ "autocompletion, this means it is not necessary to add the space manually "
+#~ "for the next word."
+#~ msgstr ""
+#~ "Zaznaczenie spowoduje, że po automatycznym uzupełnieniu zostanie dodana "
+#~ "pojedyncza spacja do końca wyrazu; oznacza to, że trzeba dodawać jej "
+#~ "ręcznie przed kolejnym wyrazem."
+
+#~ msgid "Key to accept suggestion:"
+#~ msgstr "Klawisz akceptacji sugestii:"
+
+#~ msgid ""
+#~ "Set the key you want to use when an autocompleted word is suggested to "
+#~ "you and you want to accept it. You can choose Enter, Tab, Space, End or "
+#~ "Right."
+#~ msgstr ""
+#~ "Ustaw klawisz, którego chcesz użyć, kiedy zostanie zaproponowane "
+#~ "automatyczne uzupełnienie zdania, a Ty decydujesz się na akceptację "
+#~ "sugestii. Możesz wybrać pomiędzy klawiszami Enter, Tab, Spacja, End lub "
+#~ "kursor w prawo."
+
+#~ msgid "Make Default"
+#~ msgstr "Ustaw jako domyślne"
+
+#~ msgid ""
+#~ "Completion is configured per document. Making this list the default will "
+#~ "allow you to use it for new documents automatically. A dialog will appear "
+#~ "to inform you that the list will be used for all documents from now on."
+#~ msgstr ""
+#~ "Uzupełnianie jest konfigurowane dla pojedynczego dokumentu. Zmiana listy "
+#~ "na domyślną pozwoli automatycznie używać jej dla nowych dokumentów. "
+#~ "Pojawi się dialog, informujący o tym, że od teraz lista będzie używana "
+#~ "dla nowych dokumentów."
+
+#~ msgid "C&ustom"
+#~ msgstr "&Użytkownika"
+
+#~ msgid "&Insert:"
+#~ msgstr "&Wstaw:"
+
+#~ msgid "Paragraph Background Color"
+#~ msgstr "Kolor tła akapitu"
+
+#~ msgid ""
+#~ "<p>Paragraph Background Color</p>\n"
+#~ "\n"
+#~ "<p>The paragraph background color appears\n"
+#~ "between the left and right margins of a\n"
+#~ "paragraph.</p>\n"
+#~ "\n"
+#~ "<p>If the text has a background color set, then\n"
+#~ "the text background will appear 'on top' of the\n"
+#~ "paragraph background.  In this case, the paragraph\n"
+#~ "background will still show on parts of the paragraph\n"
+#~ "that have no text (usually on the last line, between\n"
+#~ "the end of the text and the margin).</p>"
+#~ msgstr ""
+#~ "<p>Kolor tła akapitu</p>\n"
+#~ "\n"
+#~ "<p>Kolor tła akapitu objawia się\n"
+#~ "pomiędzy lewym, a prawym marginesem\n"
+#~ "akapitu.</p>\n"
+#~ "\n"
+#~ "<p>Jeżeli tekst posiada ustawiony kolor tła,\n"
+#~ "tło tekstu pojawi się 'nad' tłem akapitu.\n"
+#~ "W takim wypadku tło akapitu\n"
+#~ "wciąż będzie widoczne na częściach\n"
+#~ "akapitu, które nie zawierają tekstu\n"
+#~ "(zwykle ostatnia linia, pomiędzy\n"
+#~ "końcem tekstu, a marginesem).</p>"
+
+#~ msgid "Borders"
+#~ msgstr "Obramowanie"
+
+#~ msgid ""
+#~ "<p>Paragraph Borders</p>\n"
+#~ "\n"
+#~ "<p>The preview shows what the currently \n"
+#~ "selected paragraph borders will look like.</p>\n"
+#~ "\n"
+#~ "<p>To <i>add</i> a new border: Select the desired style,\n"
+#~ "width and color.  Click the toggle button that corresponds\n"
+#~ "to that border.</p>\n"
+#~ "\n"
+#~ "<p>To <i>remove</i> an existing border: Either click on the\n"
+#~ "border to be removed in the preview, or click the\n"
+#~ "toggle button corresponding to that border.</p>\n"
+#~ "\n"
+#~ "<p>To <i>modify</i> a border: Select the desired style,\n"
+#~ "width and color, then click on the border to be\n"
+#~ "modified in the preview.</p>"
+#~ msgstr ""
+#~ "<p>Obramowanie akapitu</p>\n"
+#~ "\n"
+#~ "<p>Podgląd pokazuje, jak aktualnie wybrane\n"
+#~ "ramki akapitu będą wyglądały.</p>\n"
+#~ "\n"
+#~ "<p>Aby <i>dodać</i> nową ramkę: Wybierz żądany styl,\n"
+#~ "szerokość i kolor. Kliknij na przełączniku, który odpowiada danej części "
+#~ "obramowania.</p>\n"
+#~ "\n"
+#~ "<p>Aby <i>usunąć</i> istniejącą ramkę: Albo kliknij\n"
+#~ "na ramkę do usunięcia w podglądzie, albo kliknij\n"
+#~ "na przełącznik jej odpowiadający.</p>\n"
+#~ "\n"
+#~ "<p>Aby <i>zmienić</i> ramkę: Wybierz żądany styl,\n"
+#~ "szerokość i kolor, a potem kliknij na ramkę do zmiany\n"
+#~ "w podglądzie.</p>"
+
+#~ msgid "&Width:"
+#~ msgstr "&Szerokość:"
+
+#~ msgid "Add/remove left paragraph border"
+#~ msgstr "Dodaj/usuń obramowanie lewej strony akapitu"
+
+#~ msgid "Toggles the left paragraph border on or off."
+#~ msgstr "Włącza/wyłącza obramowanie lewej strony akapitu."
+
+#~ msgid "Add/remove right paragraph border"
+#~ msgstr "Dodaj/usuń obramowanie prawej strony akapitu"
+
+#~ msgid "Toggles the right paragraph border on or off."
+#~ msgstr "Włącza/wyłącza obramowanie prawej strony akapitu."
+
+#~ msgid "Add/remove top paragraph border"
+#~ msgstr "Dodaj/usuń obramowanie góry akapitu"
+
+#~ msgid "Toggles the top paragraph border on or off."
+#~ msgstr "Włącza/wyłącza obramowanie góry akapitu."
+
+#~ msgid "Add/remove bottom paragraph border"
+#~ msgstr "Dodaj/usuń obramowanie dołu akapitu"
+
+#~ msgid "Toggles the bottom paragraph border on or off."
+#~ msgstr "Włącza/wyłącza obramowanie dołu akapitu."
+
+#~ msgid "&Merge with next paragraph"
+#~ msgstr "&Połącz z kolejnym akapitem"
+
+#~ msgid ""
+#~ "Merges the border style of the current paragraph with the next paragraph"
+#~ msgstr "Łączy styl obramowania bieżącego akapitu z kolejnym akapitem"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>Merge with next paragraph</p>\n"
+#~ "\n"
+#~ "<p>When this option is checked, no top or bottom borders\n"
+#~ "will appear between consecutive paragraphs with the\n"
+#~ "same style.  Top and Bottom borders will only appear between\n"
+#~ "paragraphs with different styles.</p>\n"
+#~ "\n"
+#~ "<p>When this option is unchecked, top and bottom borders\n"
+#~ "always appear at the top and bottom of paragraphs with this style,\n"
+#~ "regardless of the style of the preceding and subsequent paragraphs.</p>"
+#~ msgstr ""
+#~ "<p>Połącz z kolejnym akapitem</p>\n"
+#~ "\n"
+#~ "<p>Po zaznaczeniu tej opcji, ani górna, ani dolna ramka\n"
+#~ "nie pojawią się między kolejnymi akapitami\n"
+#~ "z tym samym stylem. Będą widoczne tylko pomiędzy\n"
+#~ "akapitami o różnych stylach.</p>\n"
+#~ "\n"
+#~ "<p>Jeśli opcja nie jest zaznaczona, górne i dolne obramowanie\n"
+#~ "zawsze pojawia się na górze i dole akapitów o tym stylu,\n"
+#~ "niezależnie od stylu poprzedniego i kolejnego akapitu.</p>"
+
+#~ msgid "String:"
+#~ msgstr "Tekst:"
+
+#~ msgid "Boolean:"
+#~ msgstr "Wartość logiczna:"
+
+#~ msgid "true"
+#~ msgstr "prawda"
+
+#~ msgid "false"
+#~ msgstr "fałsz"
+
+#~ msgid "Date:"
+#~ msgstr "Data:"
+
+#~ msgid "Set Guide Line Position"
+#~ msgstr "Ustaw położenie prowadnicy"
+
+#~ msgid "Add Guide Line"
+#~ msgstr "Dodaj prowadnicę"
+
+#~ msgid "Horizontal"
+#~ msgstr "Pozioma"
+
+#~ msgid "Vertical"
+#~ msgstr "Pionowa"
+
+#~ msgid "&Position:"
+#~ msgstr "&Położenie:"
+
+#~ msgid "Guide Line"
+#~ msgstr "Prowadnica"
+
+#~ msgid "Guide Lines"
+#~ msgstr "Prowadnice"
+
+#~ msgid "No handler found for %1"
+#~ msgstr "Brak obsługi dla %1"
+
+#~ msgid ""
+#~ "Error loading %1:\n"
+#~ "%2"
+#~ msgstr ""
+#~ "Błąd wczytywania %1:\n"
+#~ "%2"
+
+#~ msgid ""
+#~ "This document contains an external link to a remote document\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ten dokument zawiera zewnętrzny odnośnik do zdalnego dokumentu\n"
+#~ "%1"
+
+#~ msgid "Confirmation Required"
+#~ msgstr "Niezbędne potwierdzenie"
+
+#~ msgid "Skip"
+#~ msgstr "Pomiń"
+
+#~ msgid ""
+#~ "Could not load external document %1:\n"
+#~ "%2"
+#~ msgstr ""
+#~ "Nie można wczytać zewnętrznego dokumentu %1:\n"
+#~ "%2"
+
+#~ msgid "Error while saving embedded documents"
+#~ msgstr "Błąd podczas zapisywania dokumentów osadzonych"
+
+#~ msgid "Na&me:"
+#~ msgstr "&Nazwa:"
+
+#~ msgid "Protect si&ze and position"
+#~ msgstr "Zabezpiecz &rozmiar i położenie"
+
+#~ msgid "Keep &aspect ratio"
+#~ msgstr "Zachowaj &współczynnik kształtu"
+
+#~ msgid "&Height:"
+#~ msgstr "W&ysokość:"
+
+#~ msgid "&Top:"
+#~ msgstr "&Góra:"
+
+#~ msgid "Context Help"
+#~ msgstr "Pomoc kontekstowa"
+
+#~ msgid "Here will be shown help according to your actions"
+#~ msgstr "Tutaj jest pokazywana pomoc do Twoich działań"
+
+#~ msgid "All values are given in %1."
+#~ msgstr "Wszystkie wartości wyrażone są w %1."
+
+#~ msgid "&Size:"
+#~ msgstr "&Wielkość:"
+
+#~ msgid "&Portrait"
+#~ msgstr "&Pionowa"
+
+#~ msgid "La&ndscape"
+#~ msgstr "Pozio&ma"
+
+#~ msgid "The page width is smaller than the left and right margins."
+#~ msgstr "Szerokość strony jest mniejsza niż lewy i prawy margines."
+
+#~ msgid "Page Layout Problem"
+#~ msgstr "Problem z układem strony"
+
+#~ msgid "The page height is smaller than the top and bottom margins."
+#~ msgstr "Wysokość strony jest mniejsza niż górny i dolny margines."
+
+#~ msgctxt "Custom size"
+#~ msgid "Custom"
+#~ msgstr "Własny"
+
+#~ msgid "Show &Grid"
+#~ msgstr "Pokaż &siatkę"
+
+#~ msgid "Insert Object"
+#~ msgstr "Wstaw obiekt"

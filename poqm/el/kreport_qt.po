@@ -1,0 +1,7049 @@
+# translation of koffice.po to Greek
+# translation of koffice.po to
+# Copyright (C) 2000, 2002, 2003, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+# Last MAJOR revision (whole file) (xx-xx-2003 - Stergios Dramis).
+#
+# Dimitris Kamenopoulos <el97146@mail.ntua.gr>, 2000.
+# Stergios Dramis <sdramis@egnatia.ee.auth.gr>, 2002-2004.
+# Spiros Georgaras <sng@hellug.gr>, 2005, 2006, 2007.
+# Toussis Manolis <manolis@koppermind.homelinux.org>, 2006, 2007, 2008.
+# Σπύρος Γεωργαράς <sng@hellug.gr>, 2008.
+# Spiros Georgaras <sngeorgaras@otenet.gr>, 2008.
+# Dimitrios Glentadakis <dglent@gmail.com>, 2011, 2012.
+# Stelios <sstavra@gmail.com>, 2011, 2012, 2017, 2020.
+# George Stefanakis <george.stefanakis@gmail.com>, 2011.
+# Dimitris Kardarakos <dimkard@gmail.com>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: calligra\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2020-08-25 15:19+0300\n"
+"Last-Translator: Stelios <sstavra@gmail.com>\n"
+"Language-Team: Greek <kde-i18n-el@kde.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 20.04.2\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "Αδυναμία ανάλυσης του XML αρχείου."
+
+#: common/KReportDesign.cpp:159
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Σφάλμα στο XML έγγραφο."
+
+#: common/KReportItemBase.cpp:75
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Όνομα"
+
+#: common/KReportItemBase.cpp:75
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Όνομα αντικειμένου"
+
+#: common/KReportItemBase.cpp:78
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Θέση"
+
+#: common/KReportItemBase.cpp:79
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Μέγεθος"
+
+#: common/KReportItemBase.cpp:112
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Πηγή δεδομένων"
+
+#: common/KReportItemLine.cpp:80
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "Αρχή θέσης"
+
+#: common/KReportItemLine.cpp:81
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Τέλος θέσης"
+
+#: common/KReportItemLine.cpp:83
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "Βάρος γραμμής"
+
+#: common/KReportItemLine.cpp:85
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Χρώμα γραμμής"
+
+#: common/KReportItemLine.cpp:86
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Στιλ γραμμής"
+
+#: common/KReportSectionData.cpp:164
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Ενότητα"
+
+#: common/KReportSectionData.cpp:166
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "Ύψος"
+
+#: common/KReportSectionData.cpp:170
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Χρώμα φόντου"
+
+#: common/KReportUnit.cpp:136
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Μη έγκυρο"
+
+#: common/KReportUnit.cpp:138
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "Χιλιοστά (mm)"
+
+#: common/KReportUnit.cpp:140
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "Εκατοστά (cm)"
+
+#: common/KReportUnit.cpp:142
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "Δέκατα (dm)"
+
+#: common/KReportUnit.cpp:144
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "Ίντσες (in)"
+
+#: common/KReportUnit.cpp:146
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "Πίκα (pi)"
+
+#: common/KReportUnit.cpp:148
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "Σίσερο (cc)"
+
+#: common/KReportUnit.cpp:150
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "Σημεία (pt)"
+
+#: common/KReportUnit.cpp:152
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "Εικονοστοιχεία (px)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr "Μη υποστηριζόμενη μονάδα"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Cross"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr "Tick"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr "Dot"
+
+#: items/check/KReportItemCheck.cpp:80
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "Στιλ"
+
+#: items/check/KReportItemCheck.cpp:84
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Χρώμα προσκηνίου"
+
+#: items/check/KReportItemCheck.cpp:86
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "Βάρος γραμμής"
+
+#: items/check/KReportItemCheck.cpp:88
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Χρώμα γραμμής"
+
+#: items/check/KReportItemCheck.cpp:89
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Στιλ γραμμής"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Τιμή"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr "Η τιμή χρησιμοποιείται αν δεν δεσμεύεται με πεδίο"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Τιμή"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr "Η τιμή χρησιμοποιείται αν δεν δεσμεύεται με πεδίο"
+
+#: items/field/KReportItemField.cpp:94
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Αριστερά"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Κέντρο"
+
+#: items/field/KReportItemField.cpp:94
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Δεξιά"
+
+#: items/field/KReportItemField.cpp:96
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Οριζόντια στοίχιση"
+
+#: items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "Κορυφή"
+
+#: items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Βάση"
+
+#: items/field/KReportItemField.cpp:102
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Κατακόρυφη στοίχιση"
+
+#: items/field/KReportItemField.cpp:104
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Γραμματοσειρά"
+
+#: items/field/KReportItemField.cpp:106
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Χρώμα φόντου"
+
+#: items/field/KReportItemField.cpp:107
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Χρώμα προσκηνίου"
+
+#: items/field/KReportItemField.cpp:109
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Αδιαφάνεια φόντου"
+
+#: items/field/KReportItemField.cpp:114
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "Βάρος γραμμής"
+
+#: items/field/KReportItemField.cpp:116
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Χρώμα γραμμής"
+
+#: items/field/KReportItemField.cpp:117
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Στιλ γραμμής"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr "Αναδίπλωση λέξης"
+
+#: items/field/KReportItemField.cpp:120
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr "Μεγεθύνεται"
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr "Δέσμευση"
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Τέντωμα"
+
+#: items/image/KReportItemImage.cpp:120
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "Λειτουργία αλλαγής μεγέθους"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Τιμή"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr "Η τιμή χρησιμοποιείται αν δεν δεσμεύεται σε πεδίο"
+
+#: items/label/KReportItemLabel.cpp:91
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Τίτλος"
+
+#: items/label/KReportItemLabel.cpp:94
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Αριστερά"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Κέντρο"
+
+#: items/label/KReportItemLabel.cpp:94
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Δεξιά"
+
+#: items/label/KReportItemLabel.cpp:96
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Οριζόντια στοίχιση"
+
+#: items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "Κορυφή"
+
+#: items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Βάση"
+
+#: items/label/KReportItemLabel.cpp:102
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Κατακόρυφη στοίχιση"
+
+#: items/label/KReportItemLabel.cpp:104
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Γραμματοσειρά"
+
+#: items/label/KReportItemLabel.cpp:106
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Χρώμα φόντου"
+
+#: items/label/KReportItemLabel.cpp:107
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Χρώμα προσκηνίου"
+
+#: items/label/KReportItemLabel.cpp:109
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Αδιαφάνεια φόντου"
+
+#: items/label/KReportItemLabel.cpp:114
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "Βάρος γραμμής"
+
+#: items/label/KReportItemLabel.cpp:116
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Χρώμα γραμμής"
+
+#: items/label/KReportItemLabel.cpp:117
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Στιλ γραμμής"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Τιμή"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr "Η τιμή χρησιμοποιείται αν δεν δεσμεύεται σε πεδίο"
+
+#: items/text/KReportItemText.cpp:119
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Αριστερά"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Κέντρο"
+
+#: items/text/KReportItemText.cpp:119
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Δεξιά"
+
+#: items/text/KReportItemText.cpp:121
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Οριζόντια στοίχιση"
+
+#: items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "Κορυφή"
+
+#: items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Βάση"
+
+#: items/text/KReportItemText.cpp:127
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Κατακόρυφη στοίχιση"
+
+#: items/text/KReportItemText.cpp:129
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Γραμματοσειρά"
+
+#: items/text/KReportItemText.cpp:131
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Χρώμα φόντου"
+
+#: items/text/KReportItemText.cpp:132
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Χρώμα προσκηνίου"
+
+#: items/text/KReportItemText.cpp:134
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "Βάρος γραμμής"
+
+#: items/text/KReportItemText.cpp:136
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Χρώμα γραμμής"
+
+#: items/text/KReportItemText.cpp:137
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Στιλ γραμμής"
+
+#: items/text/KReportItemText.cpp:138
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Αδιαφάνεια φόντου"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+"Αδυναμία αξιολόγησης σεναρίου. Σφάλμα: %1\n"
+"\n"
+"Θέλετε να μην εμφανίζονται άλλα μηνύματα;\n"
+"(τα μηνύματα θα επαναφερθούν με το επόμενο άνοιγμα της αναφοράς)"
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr ""
+"Κώδικας σεναρίου:\n"
+"%1"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Σφάλμα σεναρίου"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+"Αυτή η αναφορά παριέχει σενάρια τύπου \"%1\". Υποσητρίζονται μόνο σενάρια "
+"γραμμένα σε JavaScript. Για την αποφυγή απώλειας σεναρίων, ο τύπος και το "
+"περιεχόμενό τους δεν θα αλλάξουν εκτός εάν εσείς αλλάξετε τα σενάρια."
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr "Μη υποστηριζόμενος τύπος σεναρίου"
+
+#: wrtembed/KReportDesigner.cpp:676
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Κεφαλίδα (Οποιαδήποτε)"
+
+#: wrtembed/KReportDesigner.cpp:680
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Κεφαλίδα (άρτια αρίθμηση)"
+
+#: wrtembed/KReportDesigner.cpp:684
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Κεφαλίδα (περιττή αρίθμηση)"
+
+#: wrtembed/KReportDesigner.cpp:688
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Κεφαλίδα (πρώτη)"
+
+#: wrtembed/KReportDesigner.cpp:692
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Κεφαλίδα (τελευταία)"
+
+#: wrtembed/KReportDesigner.cpp:696
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "Υποσέλιδο (οποιοδήποτε)"
+
+#: wrtembed/KReportDesigner.cpp:700
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "Υποσέλιδο (άρτια αρίθμηση)"
+
+#: wrtembed/KReportDesigner.cpp:704
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "Υποσέλιδο (περιττή αρίθμηση)"
+
+#: wrtembed/KReportDesigner.cpp:708
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "Υποσέλιδο (πρώτο)"
+
+#: wrtembed/KReportDesigner.cpp:712
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "Υποσέλιδο (τελευταίο)"
+
+#: wrtembed/KReportDesigner.cpp:716
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "Κεφαλίδα αναφοράς"
+
+#: wrtembed/KReportDesigner.cpp:720
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "Υποσέλιδο αναφοράς"
+
+#: wrtembed/KReportDesigner.cpp:808
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "Αναφορά"
+
+#: wrtembed/KReportDesigner.cpp:813
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Τίτλος"
+
+#: wrtembed/KReportDesigner.cpp:813
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Τίτλος αναφοράς"
+
+#: wrtembed/KReportDesigner.cpp:818
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Μέγεθος σελίδας"
+
+#: wrtembed/KReportDesigner.cpp:821
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Προσαρμοσμένο μέγεθος σελίδας"
+
+#: wrtembed/KReportDesigner.cpp:825
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "Πορτραίτο"
+
+#: wrtembed/KReportDesigner.cpp:825
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "Τοπίο"
+
+#: wrtembed/KReportDesigner.cpp:827
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "Προσανατολισμός σελίδας"
+
+#: wrtembed/KReportDesigner.cpp:832
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Μονάδα σελίδας"
+
+#: wrtembed/KReportDesigner.cpp:833
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Εμφάνιση καννάβου"
+
+#: wrtembed/KReportDesigner.cpp:834
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Προσαρμογή στον κάνναβο"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr "Υποδιαιρέσεις καννάβου"
+
+#: wrtembed/KReportDesigner.cpp:841
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Αριστερό περιθώριο"
+
+#: wrtembed/KReportDesigner.cpp:843
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Δεξί περιθώριο"
+
+#: wrtembed/KReportDesigner.cpp:845
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Περιθώριο κορυφής"
+
+#: wrtembed/KReportDesigner.cpp:847
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Περιθώριο βάσης"
+
+#: wrtembed/KReportDesigner.cpp:869
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Σενάριο αντικειμένου"
+
+#: wrtembed/KReportDesigner.cpp:1067
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Αποκοπή"
+
+#: wrtembed/KReportDesigner.cpp:1071
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Αντιγραφή"
+
+#: wrtembed/KReportDesigner.cpp:1076
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Επικόλληση"
+
+#: wrtembed/KReportDesigner.cpp:1087
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Διαγραφή"
+
+#: wrtembed/KReportDesigner.cpp:1129
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Γραμμή"
+
+#: wrtembed/KReportDesigner.cpp:1476
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Γραμμή"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr "Απο&κοπή"
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr "Αποκοπή επιλογής στο πρόχειρο"
+
+#: wrtembed/KReportDesigner.cpp:1525
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "&Αντιγραφή"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr "Αντιγραφή επιλογής στο πρόχειρο"
+
+#: wrtembed/KReportDesigner.cpp:1531
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "Ε&πικόλληση"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr "Επικόλληση περιεχομένου προχείρου"
+
+#: wrtembed/KReportDesigner.cpp:1544
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Επεξεργασία ενοτήτων"
+
+#: wrtembed/KReportDesigner.cpp:1547
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr "Ανύψωση"
+
+#: wrtembed/KReportDesigner.cpp:1549
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr "Χαμηλότερα"
+
+#: wrtembed/KReportDesignerSection.cpp:126
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "Λεπτομέρεια"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Επεξεργαστής ενότητας ομάδας"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Στήλη:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Ταξινόμηση:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Εμφάνιση κεφαλίδας ομάδας:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Εμφάνιση υποσέλιδου ομάδας:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr "Εισαγωγή χαρακτήρα αλλαγής γραμμής μετά από το υποσέλιδο ομάδας:"
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr "Επιλογή όλης της αναφοράς"
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+"Κουμπί που επιτρέπει στην επιφάνεια αναφοράς να επιλεχθεί, διευκολύνοντας "
+"ιδιότητές της να γίνουν ορατές."
+
+#: wrtembed/KReportRuler_p.cpp:1472
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Εσοχή πρώτης γραμμής"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Αριστερή εσοχή"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Δεξιά εσοχή"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr "Προσθήκη..."
+
+#: wrtembed/KReportSectionEditor.cpp:74
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "Επεξεργασία..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Διαγραφή"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Μετακίνηση πάνω"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Μετακίνηση κάτω"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr "Αύξουσα"
+
+#: wrtembed/KReportSectionEditor.cpp:312
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr "Φθίνουσα"
+
+#: wrtembed/KReportSectionEditor.ui:29
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Εμφάνιση κεφαλίδας αναφοράς"
+
+#: wrtembed/KReportSectionEditor.ui:36
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Εμφάνιση υποσέλιδου αναφοράς"
+
+#: wrtembed/KReportSectionEditor.ui:43
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Κεφαλίδα"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "Πρώτη σελίδα:"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Σελίδες άρτιας αρίθμησης:"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Όλες οι σελίδες:"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Τελευταία σελίδα:"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Σελίδες περιττής αρίθμησης:"
+
+#: wrtembed/KReportSectionEditor.ui:130
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "Υποσέλιδο"
+
+#: wrtembed/KReportSectionEditor.ui:217
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Ομαδοποίηση ενοτήτων"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, qt-format
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Προσαρμογή στο πλάτος σελίδας"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Προσαρμογή σελίδας"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr "Πραγματικά εικονοστοιχεία"
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Προσαρμογή κειμένου στο πλάτος"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A3"
+#~ msgstr "A3"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A4"
+#~ msgstr "A4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A5"
+#~ msgstr "A5"
+
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "US Letter"
+
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "US Legal"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "Προσαρμοσμένο"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B6"
+#~ msgstr "B6"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B5"
+#~ msgstr "B5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B4"
+#~ msgstr "B4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "Διοικητικό"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A0"
+#~ msgstr "A0"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A1"
+#~ msgstr "A1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A2"
+#~ msgstr "A2"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A6"
+#~ msgstr "A6"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A7"
+#~ msgstr "A7"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A8"
+#~ msgstr "A8"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A9"
+#~ msgstr "A9"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B0"
+#~ msgstr "B0"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B1"
+#~ msgstr "B1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "B10"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "C5E"
+#~ msgstr "C5E"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "Comm10"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "ISO DL"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Folio"
+#~ msgstr "US Folio"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "US Ledger"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Tabloid"
+#~ msgstr "US Tabloid"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "DL Envelope"
+#~ msgstr "DL Envelope"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "C6 Envelope"
+#~ msgstr "C6 Envelope"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "C6/5 Envolope"
+#~ msgstr "C6/5 Envolope"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "C5 Envelope"
+#~ msgstr "C5 Envelope"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "C4 Envelope"
+#~ msgstr "C4 Envelope"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Monarch Envelope"
+#~ msgstr "Monarch Envelope"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Personal Envelope"
+#~ msgstr "Personal Envelope"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "9 Envelope"
+#~ msgstr "9 Envelope"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "10 Envelope"
+#~ msgstr "10 Envelope"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "11 Envelope"
+#~ msgstr "11 Envelope"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "12 Envelope"
+#~ msgstr "12 Envelope"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "Κάρτα"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Double Postcard"
+#~ msgstr "Διπλή κάρτα"
+
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Πηγή δεδομένων"
+
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Πηγή δεδομένων"
+
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Πηγή δεδομένων"
+
+#~ msgctxt "Scripting::Text|"
+#~ msgid "$Unable to read %1"
+#~ msgstr "Αδυναμία ανάγνωσης του %1"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Οθόνη"
+
+#, fuzzy
+#~| msgid "Height"
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "Ύψος"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Χρώμα φόντου"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "Θέση"
+
+#, fuzzy
+#~| msgid "Size"
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "Μέγεθος"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "ISO A3"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "ISO A4"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "ISO A5"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "ISO B5"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Executive"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "US Executive"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "ISO A0"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "ISO A1"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "ISO A2"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "ISO A6"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A7"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "ISO A7"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A8"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "ISO A8"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A9"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "ISO A9"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "ISO B0"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "ISO B1"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "ISO B2"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "ISO B3"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "ISO B4"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "ISO B6"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO C5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "ISO C5"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Common 10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Common 10"
+#~ msgstr "US Common 10"
+
+#, fuzzy
+#~| msgid "Height"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "Ύψος"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "Χρώμα φόντου"
+
+#, fuzzy
+#~| msgid "Line Weight"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Weight"
+#~ msgstr "Βάρος γραμμής"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "Χρώμα γραμμής"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "Στιλ γραμμής"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Πηγή δεδομένων"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "Αξία"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "Χρώμα φόντου"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "Χρώμα προσκηνίου"
+
+#, fuzzy
+#~| msgid "Line Weight"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Weight"
+#~ msgstr "Βάρος γραμμής"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "Χρώμα γραμμής"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "Στιλ γραμμής"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Πηγή δεδομένων"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "Αξία"
+
+#, fuzzy
+#~| msgid "Left"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "Αριστερά"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "Κέντρο"
+
+#, fuzzy
+#~| msgid "Right"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "Δεξιά"
+
+#, fuzzy
+#~| msgid "Horizontal Alignment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Οριζόντια στοίχιση"
+
+#, fuzzy
+#~| msgid "Top"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "Κορυφή"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "Βάση"
+
+#, fuzzy
+#~| msgid "Vertical Alignment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Κατακόρυφη στοίχιση"
+
+#, fuzzy
+#~| msgid "Font"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "Γραμματοσειρά"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "Χρώμα φόντου"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "Χρώμα προσκηνίου"
+
+#, fuzzy
+#~| msgid "Background tool"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "Εργαλείο φόντου"
+
+#, fuzzy
+#~| msgid "Line Weight"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Weight"
+#~ msgstr "Βάρος γραμμής"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "Χρώμα γραμμής"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "Στιλ γραμμής"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Πηγή δεδομένων"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "Αξία"
+
+#, fuzzy
+#~| msgid "Left"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "Αριστερά"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "Κέντρο"
+
+#, fuzzy
+#~| msgid "Right"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "Δεξιά"
+
+#, fuzzy
+#~| msgid "Horizontal Alignment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Οριζόντια στοίχιση"
+
+#, fuzzy
+#~| msgid "Top"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "Κορυφή"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "Βάση"
+
+#, fuzzy
+#~| msgid "Vertical Alignment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Κατακόρυφη στοίχιση"
+
+#, fuzzy
+#~| msgid "Font"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "Γραμματοσειρά"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "Χρώμα φόντου"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "Χρώμα προσκηνίου"
+
+#, fuzzy
+#~| msgid "Line Weight"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Weight"
+#~ msgstr "Βάρος γραμμής"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "Χρώμα γραμμής"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "Στιλ γραμμής"
+
+#, fuzzy
+#~| msgid "Background tool"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "Εργαλείο φόντου"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "Διαγραφή"
+
+#, fuzzy
+#~| msgid "Script Interpreter"
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "Διερμηνέας σεναρίων"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Τούσης Μανώλης, Stelios"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "manolis@koppermind.homelinux.org,sstavra@gmail.com"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Break subpath"
+#~ msgid "Draw path"
+#~ msgstr "Διακοπή υποδιαδρομής"
+
+#, fuzzy
+#~| msgid "Freehand Path Drawing Tool"
+#~ msgid "Freehand path"
+#~ msgstr "Εργαλείο ελεύθερης σχεδίασης"
+
+#~ msgid "Angle snapping delta:"
+#~ msgstr "Δέλτα γωνιακού σημείου:"
+
+#~ msgid "Activate angle snap:"
+#~ msgstr "Ενεργοποίηση ευθύγραμμης σχεδίασης:"
+
+#~ msgid "Angle Constraints"
+#~ msgstr "Περιορισμοί γωνίας"
+
+#~ msgid "Precision:"
+#~ msgstr "Ακρίβεια:"
+
+#~ msgctxt "The raw line data"
+#~ msgid "Raw"
+#~ msgstr "Ακατέργαστο"
+
+#~ msgid "Curve"
+#~ msgstr "Καμπύλη"
+
+#~ msgid "Straight"
+#~ msgstr "Ευθεία"
+
+#~ msgid "Optimize"
+#~ msgstr "Βελτιστοποίηση"
+
+#~ msgid "Exactness:"
+#~ msgstr "Ακρίβεια:"
+
+#~ msgid "Combine angle:"
+#~ msgstr "Συνδυασμός γωνίας:"
+
+#~ msgid "Pencil"
+#~ msgstr "Μολύβι"
+
+#~ msgid "Invalid database contents. "
+#~ msgstr "Μη έγκυρο περιεχόμενο βάσης δεδομένων. "
+
+#~ msgid "It is a system object."
+#~ msgstr "Είναι αντικείμενο συστήματος."
+
+#~ msgid "Connection already established."
+#~ msgstr "Η σύνδεση έχει ήδη πραγματοποιηθεί."
+
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr "Αδυναμία ανοίγματος \"%1\" αρχείου έργου."
+
+#~ msgid "Could not connect to \"%1\" database server."
+#~ msgstr "Αδυναμία σύνδεσης στον \"%1\" εξυπηρετητή βάσης δεδομένων."
+
+#~ msgid "Not connected to the database server."
+#~ msgstr "Χωρίς σύνδεση στον εξυπηρετητή βάσης δεδομένων."
+
+#~ msgid "Currently no database is used."
+#~ msgstr "Τώρα δεν χρησιμοποιείται καμία βάση δεδομένων."
+
+#~ msgid "The database \"%1\" does not exist."
+#~ msgstr "Η βάση δεδομένων \"%1\" δεν υπάρχει."
+
+#, fuzzy
+#~| msgid "The database \"%1\" does not exist."
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "Η βάση δεδομένων \"%1\" δεν υπάρχει."
+
+#~ msgid "Database file \"%1\" is not readable."
+#~ msgstr "Το αρχείο βάσης δεδομένων \"%1\" δεν είναι αναγνώσιμο."
+
+#~ msgid "Database file \"%1\" is not writable."
+#~ msgstr "Το αρχείο βάσης δεδομένων \"%1\" δεν είναι εγγράψιμο."
+
+#~ msgid "Database \"%1\" created but could not be closed after creation."
+#~ msgstr ""
+#~ "Η βάση δεδομένων \"%1\" δημιουργήθηκε αλλά δεν μπορεί να κλείσει μετά τη "
+#~ "δημιουργία."
+
+#~ msgid "Database \"%1\" already exists."
+#~ msgstr "Η βάση δεδομένων \"%1\" ήδη υπάρχει."
+
+#~ msgid ""
+#~ "Cannot create database \"%1\". This name is reserved for system database."
+#~ msgstr ""
+#~ "Αδυναμία δημιουργίας της βάσης δεδομένων \"%1\". Το όνομα αυτό έχει "
+#~ "δεσμευτεί για τη βάση δεδομένων του συστήματος."
+
+#~ msgid "Error creating database \"%1\" on the server."
+#~ msgstr "Σφάλμα δημιουργίας της βάσης δεδομένων \"%1\" στον εξυπηρετητή."
+
+#~ msgid "Database \"%1\" created but could not be opened."
+#~ msgstr "Η βάση δεδομένων \"%1\" δημιουργήθηκε αλλά δεν ανοίγει."
+
+#~ msgid "Opening database \"%1\" failed."
+#~ msgstr "Το άνοιγμα της βάσης δεδομένων \"%1\" απέτυχε."
+
+#~ msgid "Database version (%1) does not match Kexi application's version (%2)"
+#~ msgstr ""
+#~ "Η έκδοση (%1) της βάσης δεδομένων δεν ταιριάζει με την έκδοση (%2) της "
+#~ "εφαρμογής Kexi"
+
+#~ msgid "Cannot find any database for temporary connection."
+#~ msgstr "Αδυναμία εύρεσης βάσης δεδομένων για προσωρινή σύνδεση."
+
+#~ msgid ""
+#~ "Error during starting temporary connection using \"%1\" database name."
+#~ msgstr ""
+#~ "Σφάλμα κατά την εκκίνηση προσωρινής σύνδεσης με χρήση του ονόματος βάσης "
+#~ "δεδομένων \"%1\"."
+
+#~ msgid "Cannot delete database - name not specified."
+#~ msgstr "Αδυναμία διαγραφής της βάσης δεδομένων - το όνομα δεν έχει οριστεί."
+
+#~ msgid "Cannot delete system database \"%1\"."
+#~ msgstr "Αδυναμία διαγραφής της βάσης δεδομένων \"%1\" του συστήματος."
+
+#~ msgid "Error while executing SQL statement."
+#~ msgstr "Σφάλμα κατά την εκτέλεση SQL πρότασης."
+
+#~ msgid "Creating table failed."
+#~ msgstr "Η δημιουργία πίνακα απέτυχε."
+
+#~ msgid "Cannot create table without fields."
+#~ msgstr "Αδυναμία δημιουργίας πίνακα χωρίς πεδία."
+
+#~ msgid "System name \"%1\" cannot be used as table name."
+#~ msgstr ""
+#~ "Το όνομα του συστήματος \"%1\" δεν μπορεί να χρησιμοποιηθεί ως όνομα "
+#~ "πίνακα."
+
+#~ msgid "System name \"%1\" cannot be used as one of fields in \"%2\" table."
+#~ msgstr ""
+#~ "Το όνομα του συστήματος \"%1\" δεν μπορεί να χρησιμοποιηθεί ως ένα από τα "
+#~ "πεδία στον \"%2\" πίνακα."
+
+#~ msgid "Could not create the same table \"%1\" twice."
+#~ msgstr "Αδυναμία δημιουργίας του ίδιου πίνακα \"%1\" δυο φορές."
+
+#~ msgid "Table \"%1\" already exists."
+#~ msgstr "Ο πίνακας \"%1\" ήδη υπάρχει."
+
+#~ msgid "Table \"%1\" does not exist."
+#~ msgstr "Ο πίνακας \"%1\" δεν υπάρχει."
+
+#~ msgid "Could not remove object's data."
+#~ msgstr "Αδυναμία αφαίρεσης των δεδομένων αντικειμένου."
+
+#~ msgid "Table \"%1\" cannot be removed.\n"
+#~ msgstr "Ο πίνακας \"%1\" δεν μπορεί να αφαιρεθεί.\n"
+
+#~ msgid "Unexpected name or identifier."
+#~ msgstr "Απροσδόκητο όνομα ή αναγνωριστικό."
+
+#, fuzzy
+#~| msgid "Could not alter table \"%1\" using the same table."
+#~ msgid "Could not alter table \"%1\" using the same table as destination."
+#~ msgstr "Αδυναμία τροποποίησης του πίνακα \"%1\" με χρήση του ίδιου πίνακα."
+
+#, fuzzy
+#~| msgid "Unknown table \"%1\""
+#~ msgid "Unknown table \"%1\"."
+#~ msgstr "Άγνωστος πίνακας \"%1\""
+
+#, fuzzy
+#~| msgid "Invalid table name \"%1\""
+#~ msgid "Invalid table name \"%1\"."
+#~ msgstr "Μη έγκυρο όνομα πίνακα \"%1\""
+
+#~ msgid "Could not rename table \"%1\" using the same name."
+#~ msgstr ""
+#~ "Αδυναμία μετονομασίας του πίνακα \"%1\" με χρήση του ίδιου ονόματος."
+
+#~ msgid ""
+#~ "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
+#~ msgstr ""
+#~ "Αδυναμία μετονομασίας του πίνακα \"%1\" σε \"%2\". Ο πίνακας \"%3\" ήδη "
+#~ "υπάρχει."
+
+#~ msgid "Query \"%1\" does not exist."
+#~ msgstr "Η ερώτηση \"%1\" δεν υπάρχει."
+
+#~ msgid "Transactions are not supported for \"%1\" driver."
+#~ msgstr "Οι συναλλαγές δεν υποστηρίζονται για τον οδηγό \"%1\"."
+
+#, fuzzy
+#~| msgid "Begin transaction failed"
+#~ msgid "Begin transaction failed."
+#~ msgstr "Η έναρξη συναλλαγής απέτυχε"
+
+#~ msgid "Transaction already started."
+#~ msgstr "Η συναλλαγή ήδη ξεκίνησε."
+
+#~ msgid "Transaction not started."
+#~ msgstr "Η συναλλαγή δεν ξεκίνησε."
+
+#, fuzzy
+#~| msgid "Error on commit transaction"
+#~ msgid "Error on commit transaction."
+#~ msgstr "Σφάλμα στην πραγματοποίηση συναλλαγής"
+
+#, fuzzy
+#~| msgid "Error on rollback transaction"
+#~ msgid "Error on rollback transaction."
+#~ msgstr "Σφάλμα στην αναίρεση συναλλαγής"
+
+#, fuzzy
+#~| msgid "Invalid object name \"%1\""
+#~ msgid "Invalid object name \"%1\"."
+#~ msgstr "Μη έγκυρο όνομα \"%1\" αντικειμένου"
+
+#, fuzzy
+#~| msgid "Column %1 does not exist for the query."
+#~ msgid "Column <resource>%1</resource> does not exist in the query."
+#~ msgstr "Η στήλη %1 δεν υπάρχει για την ερώτηση."
+
+#, fuzzy
+#~| msgid "Error while loading extended table schema information."
+#~ msgctxt "Extended schema for a table: loading error"
+#~ msgid "Error while loading extended table schema."
+#~ msgstr "Σφάλμα κατά τη φόρτωση εκτεταμένου πίνακα πληροφοριών σχήματος."
+
+#, fuzzy
+#~| msgid "Invalid XML data: "
+#~ msgid "Invalid XML data: %1"
+#~ msgstr "Μη έγκυρα XML δεδομένα: "
+
+#, fuzzy
+#~| msgid ""
+#~| "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~| "XML data: "
+#~ msgid ""
+#~ "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~ "XML data: %4"
+#~ msgstr ""
+#~ "Σφάλμα σε XML δεδομένα: \"%1\" στη γραμμή %2, στήλη %3.\n"
+#~ "XML δεδομένα: "
+
+#~ msgid "Table has no fields defined."
+#~ msgstr "Δεν έχουν οριστεί πεδία για τον πίνακα."
+
+#~ msgid ""
+#~ "Could not find definition for query \"%1\". Removing this query is "
+#~ "recommended."
+#~ msgstr ""
+#~ "Αδυναμία εύρεσης ορισμού για της ερώτηση \"%1\". Συνιστάται η αφαίρεση "
+#~ "αυτής της ερώτησης."
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>Could not load definition for query \"%1\". SQL statement for this "
+#~| "query is invalid:<br><tt>%2</tt></p>\n"
+#~| "<p>You can open this query in Text View and correct it.</p>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>Could not load definition for query \"%1\". SQL statement for this "
+#~ "query is invalid: <message>%2</message></para>\n"
+#~ "<para>You can open this query in Text View and correct it.</para>"
+#~ msgstr ""
+#~ "<p>Αδυναμία φόρτωσης ορισμού για την ερώτηση \"%1\". Η SQL πρόταση για "
+#~ "την ερώτηση αυτή δεν είναι έγκυρη:<br><tt>%2</tt></p>\n"
+#~ "<p>Μπορείτε να ανοίξετε την ερώτηση αυτή σε προβολή κειμένου και να τη "
+#~ "διορθώσετε.</p>"
+
+#~ msgid "Could not update record because there is no master table defined."
+#~ msgstr ""
+#~ "Αδυναμία ενημέρωσης εγγραφής επειδή δεν έχει οριστεί κύριος πίνακας."
+
+#~ msgid ""
+#~ "Could not update record because master table has no primary key defined."
+#~ msgstr ""
+#~ "Αδυναμία ενημέρωσης εγγραφής επειδή δεν έχει οριστεί πρωτεύον κλειδί για "
+#~ "τον κύριο πίνακα."
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not update record because it does not contain entire master "
+#~| "table's primary key."
+#~ msgid ""
+#~ "Could not update record because it does not contain entire primary key of "
+#~ "master table."
+#~ msgstr ""
+#~ "Αδυναμία ενημέρωσης εγγραφής επειδή δεν περιέχει το πλήρες πρωτεύον "
+#~ "κλειδί του κύριου πίνακα."
+
+#~ msgid "Primary key's field \"%1\" cannot be empty."
+#~ msgstr "Το πεδίο \"%1\" του πρωτεύοντος κλειδιού δεν μπορεί να είναι κενό."
+
+#~ msgid "Record updating on the server failed."
+#~ msgstr "Η ενημέρωση εγγραφής στον εξυπηρετητή απέτυχε."
+
+#, fuzzy
+#~| msgid "Could not insert record because there is no master table defined."
+#~ msgid "Could not insert record because there is no master table specified."
+#~ msgstr "Αδυναμία εισαγωγής εγγραφής επειδή δεν έχει οριστεί κύριος πίνακας."
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not insert record because master table has no primary key defined."
+#~ msgid ""
+#~ "Could not insert record because master table has no primary key specified."
+#~ msgstr ""
+#~ "Αδυναμία εισαγωγής εγγραφής επειδή δεν έχει οριστεί πρωτεύον κλειδί για "
+#~ "τον κύριο πίνακα."
+
+#~ msgid ""
+#~ "Could not insert record because it does not contain entire master table's "
+#~ "primary key."
+#~ msgstr ""
+#~ "Αδυναμία εισαγωγής εγγραφής επειδή δεν περιέχει το πλήρες πρωτεύον κλειδί "
+#~ "του κύριου πίνακα."
+
+#~ msgid "Record inserting on the server failed."
+#~ msgstr "Η εισαγωγή εγγραφής στον εξυπηρετητή απέτυχε."
+
+#, fuzzy
+#~| msgid "Could not delete record because there is no master table defined."
+#~ msgid "Could not delete record because there is no master table specified."
+#~ msgstr "Αδυναμία διαγραφής εγγραφής επειδή δεν έχει οριστεί κύριος πίνακας."
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not delete record because there is no primary key for master table "
+#~| "defined."
+#~ msgid ""
+#~ "Could not delete record because there is no primary key for master table "
+#~ "specified."
+#~ msgstr ""
+#~ "Αδυναμία διαγραφής εγγραφής επειδή δεν έχει οριστεί πρωτεύον κλειδί για "
+#~ "τον κύριο πίνακα."
+
+#~ msgid ""
+#~ "Could not delete record because it does not contain entire master table's "
+#~ "primary key."
+#~ msgstr ""
+#~ "Αδυναμία διαγραφής εγγραφής επειδή δεν περιέχει το πλήρες πρωτεύον κλειδί "
+#~ "του κύριου πίνακα."
+
+#~ msgid "Record deletion on the server failed."
+#~ msgstr "Η διαγραφή εγγραφής στον εξυπηρετητή απέτυχε."
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Unknown error."
+#~ msgstr "Άγνωστο σφάλμα"
+
+#, fuzzy
+#~| msgid "file"
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "αρχείο"
+
+#~ msgid "No query statement or schema defined."
+#~ msgstr "Δεν ορίστηκε ερώτηση ή σχήμα."
+
+#~ msgid "Query statement is empty."
+#~ msgstr "Η ερώτηση είναι κενή."
+
+#~ msgid "Error opening database cursor."
+#~ msgstr "Σφάλμα ανοίγματος του δρομέα βάσης δεδομένων."
+
+#~ msgid "Cannot fetch next record."
+#~ msgstr "Αδυναμία προσκόμισης επόμενης εγγραφής."
+
+#~ msgid "Could not set value of database property \"%1\"."
+#~ msgstr "Αδυναμία ορισμού τιμής ιδιότητας \"%1\" για τη βάση δεδομένων."
+
+#~ msgid "Could not set caption for database property \"%1\"."
+#~ msgstr "Αδυναμία ορισμού τίτλου ιδιότητας \"%1\" για τη βάση δεδομένων."
+
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "Αδυναμία ανάγνωσης ιδιότητας \"%1\" της βάσης δεδομένων."
+
+#~ msgid "Could not read database properties."
+#~ msgstr "Αδυναμία ανάγνωσης των ιδιοτήτων της βάσης δεδομένων."
+
+#~ msgid "Invalid database driver's \"%1\" implementation:\n"
+#~ msgstr "Μη έγκυρη εφαρμογή του οδηγού \"%1\" της βάσης δεδομένων:\n"
+
+#~ msgid "Value of \"%1\" is not initialized for the driver."
+#~ msgstr "Η τιμή για \"%1\" δεν αρχικοποιήθηκε για τον οδηγό."
+
+#~ msgid "File name expected for file-based database driver."
+#~ msgstr ""
+#~ "Αναμένεται όνομα αρχείου για βασισμένο σε αρχείο οδηγό βάσης δεδομένων."
+
+#~ msgid "Client library version"
+#~ msgstr "Έκδοση βιβλιοθήκης εφαρμογής"
+
+#~ msgid "Default character encoding on server"
+#~ msgstr "Προκαθορισμένη κωδικοποίηση χαρακτήρων στον εξυπηρετητή"
+
+#~ msgid "File-based database driver"
+#~ msgstr "Βασισμένος σε αρχείο οδηγός βάσης δεδομένων"
+
+#~ msgid "File-based database's MIME type"
+#~ msgstr "Βασισμένος σε αρχείο τύπος MIME βάσης δεδομένων"
+
+#~ msgid "Single transactions support"
+#~ msgstr "Υποστήριξη μεμονωμένων συναλλαγών"
+
+#~ msgid "Multiple transactions support"
+#~ msgstr "Υποστήριξη πολλαπλών συναλλαγών"
+
+#~ msgid "Nested transactions support"
+#~ msgstr "Υποστήριξη φωλιασμένωνσυναλλαγών"
+
+#~ msgid "KexiDB driver version"
+#~ msgstr "Έκδοση οδηγού KexiDB"
+
+#~ msgid "Could not find any database drivers."
+#~ msgstr "Αδυναμία εύρεσης οδηγών βάσης δεδομένων."
+
+#~ msgid "Could not find database driver \"%1\"."
+#~ msgstr "Αδυναμία εύρεσης οδηγού \"%1\" βάσης δεδομένων."
+
+#~ msgid ""
+#~ "Incompatible database driver's \"%1\" version: found version %2, expected "
+#~ "version %3."
+#~ msgstr ""
+#~ "Μη συμβατή έκδοση οδηγού \"%1\" βάσης δεδομένων: βρέθηκε έκδοση %2, "
+#~ "αναμενόταν έκδοση %3."
+
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "Αδυναμία φόρτωσης οδηγού \"%1\" βάσης δεδομένων."
+
+#, fuzzy
+#~| msgid "Could not find database driver \"%1\"."
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "Αδυναμία εύρεσης οδηγού \"%1\" βάσης δεδομένων."
+
+#~ msgid "Ambiguous field name"
+#~ msgstr "Διφορούμενο όνομα πεδίου"
+
+#, fuzzy
+#~| msgid ""
+#~| "Both table \"%1\" and \"%2\" have defined \"%3\" field. Use "
+#~| "\"<tableName>.%4\" notation to specify table name."
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Both table <resource>%1</resource> and <resource>%2</resource> have "
+#~ "defined <resource>%3</resource> field. Use "
+#~ "<resource><placeholder>tableName</placeholder>.%4</resource> notation to "
+#~ "specify table name."
+#~ msgstr ""
+#~ "Και οι δύο πίνακες \"%1\" και \"%2\" έχουν ορίσει πεδίο \"%3\". "
+#~ "Χρησιμοποιήστε την παράσταση \"<tableName>.%4\" για να ορίσετε όνομα "
+#~ "πίνακα."
+
+#~ msgid "Field not found"
+#~ msgstr "Το πεδίο δεν βρέθηκε"
+
+#, fuzzy
+#~| msgid "Table containing \"%1\" field not found"
+#~ msgid "Table containing \"%1\" field not found."
+#~ msgstr "Ο πίνακας που περιέχει το πεδίο \"%1\" δεν βρέθηκε"
+
+#~ msgid "Could not access the table directly using its name"
+#~ msgstr "Αδυναμία πρόσβασης στον πίνακα άμεσα με χρήση του ονόματος"
+
+#, fuzzy
+#~| msgid ""
+#~| "Table \"%1\" is covered by aliases. Instead of \"%2\", you can write "
+#~| "\"%3\""
+#~ msgid ""
+#~ "Table name <resource>%1</resource> is covered by aliases. Instead of "
+#~ "<resource>%2</resource>, you can write <resource>%3</resource>."
+#~ msgstr ""
+#~ "Ο πίνακας \"%1\" καλύπτεται από ψευδώνυμα. Αντί για \"%2\", μπορείτε να "
+#~ "γράψετε \"%3\""
+
+#~ msgid "Table not found"
+#~ msgstr "Ο πίνακας δεν βρέθηκε"
+
+#~ msgid "Ambiguous \"%1.*\" expression"
+#~ msgstr "Διφορούμενη \"%1.*\" έκφραση"
+
+#, fuzzy
+#~| msgid "More than one \"%1\" table or alias defined"
+#~ msgid "More than one \"%1\" table or alias defined."
+#~ msgstr "Περισσότεροι από ένας \"%1\" πίνακας ή ψευδώνυμα ορίστηκαν"
+
+#, fuzzy
+#~| msgid "Table \"%1\" has no \"%2\" field"
+#~ msgid "Table \"%1\" has no \"%2\" field."
+#~ msgstr "Ο πίνακας \"%1\" δεν έχει \"%2\" πεδίο"
+
+#~ msgid "Ambiguous \"%1.%2\" expression"
+#~ msgstr "Διφορούμενη \"%1.%2\" έκφραση"
+
+#, fuzzy
+#~| msgid "More than one \"%1\" table or alias defined containing \"%2\" field"
+#~ msgid "More than one \"%1\" table or alias defined containing \"%2\" field."
+#~ msgstr ""
+#~ "Περισσότεροι από ένας \"%1\" πίνακας ή ψευδώνυμα περιέχουν το \"%2\" πεδίο"
+
+#~ msgid "Byte"
+#~ msgstr "Byte"
+
+#~ msgid "Short Integer Number"
+#~ msgstr "Μικρός ακέραιος αριθμός"
+
+#~ msgid "Integer Number"
+#~ msgstr "Ακέραιος αριθμός"
+
+#~ msgid "Big Integer Number"
+#~ msgstr "Μεγάλος ακέραιος αριθμός"
+
+#~ msgid "Yes/No Value"
+#~ msgstr "Τιμή Ναι/Όχι"
+
+#~ msgid "Date"
+#~ msgstr "Ημερομηνία"
+
+#~ msgid "Date and Time"
+#~ msgstr "Ημερομηνία και ώρα"
+
+#~ msgid "Time"
+#~ msgstr "Ώρα"
+
+#~ msgid "Single Precision Number"
+#~ msgstr "Αριθμός μονής ακρίβειας"
+
+#~ msgid "Double Precision Number"
+#~ msgstr "Αριθμός διπλής ακρίβειας"
+
+#~ msgid "Text"
+#~ msgstr "Κείμενο"
+
+#~ msgid "Long Text"
+#~ msgstr "Μακρύ κείμενο"
+
+#~ msgid "Object"
+#~ msgstr "Αντικείμενο"
+
+#~ msgid "Invalid Group"
+#~ msgstr "Μη έγκυρη ομάδα"
+
+#~ msgid "Floating Point Number"
+#~ msgstr "Αριθμός κινητής υποδιαστολής"
+
+#~ msgid "Yes/No"
+#~ msgstr "Ναι/Όχι"
+
+#~ msgid "Date/Time"
+#~ msgstr "Ημερομηνία/ώρα"
+
+#~ msgid ""
+#~ "You can correct data in this record or use \"Cancel record changes\" "
+#~ "function."
+#~ msgstr ""
+#~ "Μπορείτε να διορθώσετε δεδομένα στην εγγραφή αυτή ή να χρησιμοποιήσετε τη "
+#~ "λειτουργία «Ακύρωση αλλαγών εγγραφής»."
+
+#~ msgid "Unspecified error encountered"
+#~ msgstr "Παρουσιάστηκε απροσδιόριστο σφάλμα"
+
+#~ msgid "identifier was expected"
+#~ msgstr "αναμενόταν αναγνωριστικό"
+
+#, fuzzy
+#~| msgid "\"%1\" is a reserved keyword"
+#~ msgid "\"%1\" is a reserved keyword."
+#~ msgstr "Το \"%1\" είναι δεσμευμένη λέξη κλειδί"
+
+#, fuzzy
+#~| msgid "Syntax Error"
+#~ msgid "Syntax error."
+#~ msgstr "Συντακτικό σφάλμα"
+
+#~ msgid "Error"
+#~ msgstr "Σφάλμα"
+
+#, fuzzy
+#~| msgid "Syntax Error near \"%1\""
+#~ msgid "Error near \"%1\"."
+#~ msgstr "Συντακτικό σφάλμα πλησίον \"%1\""
+
+#, fuzzy
+#~| msgid "No query statement or schema defined."
+#~ msgid "No query statement specified."
+#~ msgstr "Δεν ορίστηκε ερώτηση ή σχήμα."
+
+#, fuzzy
+#~| msgid "\"*\" could not be used if no tables are specified"
+#~ msgid "\"*\" could not be used if no tables are specified."
+#~ msgstr "\"%1\" δεν μπορεί να χρησιμοποιηθεί αν δεν έχουν οριστεί πίνακες"
+
+#, fuzzy
+#~| msgid "Invalid alias definition for column \"%1\""
+#~ msgid "Invalid alias definition for column \"%1\"."
+#~ msgstr "Μη έγκυρος ορισμός ψευδώνυμου για τη στήλη \"%1\""
+
+#, fuzzy
+#~| msgid "Invalid \"%1\" column definition"
+#~ msgid "Invalid \"%1\" column definition."
+#~ msgstr "Μη έγκυρος ορισμός στήλης \"%1\""
+
+#, fuzzy
+#~| msgid "Could not define sorting - no column at position %1"
+#~ msgid "Could not define sorting - no column at position %1."
+#~ msgstr "Αδυναμία ορισμού ταξινόμησης - δεν υπάρχει στήλη στη θέση %1"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not define sorting - column name or alias \"%1\" does not exist"
+#~ msgid ""
+#~ "Could not define sorting - column name or alias \"%1\" does not exist."
+#~ msgstr ""
+#~ "Αδυναμία ορισμού ταξινόμησης - όνομα στήλης ή ψευδώνυμο \"%1\" δεν "
+#~ "υπάρχουν"
+
+#, fuzzy
+#~| msgctxt ""
+#~| "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
+#~| msgid "expr"
+#~ msgctxt ""
+#~ "short for 'expression' word, e.g. 'expr' (only latin letters, please, no "
+#~ "'.')"
+#~ msgid "expr"
+#~ msgstr "expr"
+
+#~ msgid "Database driver name"
+#~ msgstr "Όνομα οδηγού βάσης δεδομένων"
+
+#~ msgid "Database user name"
+#~ msgstr "Όνομα χρήστη βάσης δεδομένων"
+
+#, fuzzy
+#~| msgid "Prompt for password"
+#~ msgid "Prompts for password"
+#~ msgstr "Προτροπή για κωδικό πρόσβασης"
+
+#~ msgid "Host (server) name"
+#~ msgstr "Όνομα υπολογιστή (εξυπηρετητή)"
+
+#~ msgid "Server's port number"
+#~ msgstr "Αριθμός θύρας εξυπηρετητή"
+
+#~ msgid "Server's local socket filename"
+#~ msgstr "Όνομα αρχείου τοπικής υποδοχής εξυπηρετητή"
+
+#~ msgid "Enter password for %1: "
+#~ msgstr "Εισαγωγή κωδικού πρόσβασης για %1: "
+
+#~ msgid "\"%1\" column requires a value to be entered."
+#~ msgstr "Η \"%1\" στήλη απαιτεί εισαγωγή τιμής."
+
+#~ msgid "The column's constraint is declared as NOT NULL."
+#~ msgstr "Ο περιορισμός της στήλης δηλώθηκε NOT NULL."
+
+#~ msgid "The column's constraint is declared as NOT EMPTY."
+#~ msgstr "Ο περιορισμός της στήλης δηλώθηκε NOT EMPTY."
+
+#~ msgid "Record inserting failed."
+#~ msgstr "Η εισαγωγή εγγραφής απέτυχε."
+
+#~ msgid "Record changing failed."
+#~ msgstr "Η αλλαγή εγγραφής απέτυχε."
+
+#~ msgid "Record deleting failed."
+#~ msgstr "Η διαγραφή εγγραφής απέτυχε."
+
+#~ msgid "Message from server:"
+#~ msgstr "Μήνυμα από εξυπηρετητή:"
+
+#~ msgid "SQL statement:"
+#~ msgstr "SQL πρόταση:"
+
+#~ msgid "Server result:"
+#~ msgstr "Αποτέλεσμα από εξυπηρετητή:"
+
+#~ msgid "Test Connection"
+#~ msgstr "Δοκιμαστική σύνδεση"
+
+#, fuzzy
+#~| msgid "<qt>Testing connection to <b>%1</b> database server...</qt>"
+#~ msgid "Testing connection to <resource>%1</resource> database server..."
+#~ msgstr ""
+#~ "<qt>Δοκιμή σύνδεσης με τον <b>%1</b> εξυπηρετητή βάσης δεδομένων...</qt>"
+
+#~ msgid ""
+#~ "<qt>Test connection to <b>%1</b> database server failed. The server is "
+#~ "not responding.</qt>"
+#~ msgstr ""
+#~ "<qt>Η δοκιμή σύνδεσης με τον <b>%1</b> εξυπηρετητή βάσης δεδομένων "
+#~ "απέτυχε. Ο εξυπηρετητής δεν απαντά.</qt>"
+
+#~ msgid ""
+#~ "<qt>Test connection to <b>%1</b> database server established successfully."
+#~ "</qt>"
+#~ msgstr ""
+#~ "<qt>Η δοκιμή σύνδεσης με τον <b>%1</b> εξυπηρετητή βάσης δεδομένων έγινε "
+#~ "με επιτυχία.</qt>"
+
+#~ msgid "Number"
+#~ msgstr "Αριθμός"
+
+#~ msgid "Image"
+#~ msgstr "Εικόνα"
+
+#~ msgid "\"%1\" value has to be entered."
+#~ msgstr "Πρέπει αν εισαχθεί τιμή \"%1\"."
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr "Τροποποίηση σύνδεσης"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr "Τροποποίηση παραμέτρου"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "Μετατροπή σε διαδρομή"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath at points"
+#~ msgstr "Διακοπή υποδιαδρομής στα σημεία"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Combine paths"
+#~ msgstr "Συνδυασμός διαδρομών"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move control point"
+#~ msgstr "Μετακίνηση σημείου ελέγχου"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set fill rule"
+#~ msgstr "Ορισμός κανόνα γεμίσματος"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "Εισαγωγή σημείων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "Συγχώνευση σημείων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move points"
+#~ msgstr "Μετακίνηση σημείων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove points"
+#~ msgstr "Αφαίρεση σημείων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set point type"
+#~ msgstr "Ορισμός τύπου σημείου"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reverse paths"
+#~ msgstr "Αντιστροφή διαδρομών"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath"
+#~ msgstr "Διακοπή υποδιαδρομής"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to curves"
+#~ msgstr "Τροποποίηση τμημάτων σε καμπύλες"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to lines"
+#~ msgstr "Τροποποίηση τμημάτων σε γραμμές"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set marker"
+#~ msgstr "Ορισμός δείκτη"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Align shapes"
+#~ msgstr "Στοίχιση σχημάτων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr "Ορισμός φόντου"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Clip Shape"
+#~ msgstr "Δέσμευση σχήματος"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr "Δημιουργία σχήματος"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shape"
+#~ msgid_plural "Delete shapes"
+#~ msgstr[0] "Διαγραφή σχήματος"
+#~ msgstr[1] "Διαγραφή σχημάτων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Distribute shapes"
+#~ msgstr "Κατανομή σχημάτων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr "Ομαδοποίηση σχημάτων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add shapes to group"
+#~ msgstr "Προσθήκη σχημάτων στην ομάδα"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Keep Aspect Ratio"
+#~ msgstr "Διατήρηση αναλογίας διαστάσεων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Lock shapes"
+#~ msgstr "Κλείδωμα σχημάτων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move shapes"
+#~ msgstr "Μετακίνηση σχημάτων"
+
+#, fuzzy
+#~| msgid "Rename Shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr "Μετονομασία σχημάτων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reorder shapes"
+#~ msgstr "Αναταξινόμηση σχημάτων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Shape RunAround"
+#~ msgstr "Τροποποίηση σχήματος περικλειόμενου κειμένου"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Shadow"
+#~ msgstr "Ορισμός σκιάς"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Shear shapes"
+#~ msgstr "Στρέβλωση σχημάτων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Resize shapes"
+#~ msgstr "Αλλαγή μεγέθους σχημάτων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set stroke"
+#~ msgstr "Ορισμός πινελιάς"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr "Ορισμός αδιαφάνειας"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shape"
+#~ msgstr "Αποδέσμευση σχήματος"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shapes"
+#~ msgstr "Αποδέσμευση σχημάτων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr "Αναίρεση ομαδοποίησης σχημάτων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Close subpath"
+#~ msgstr "Κλείσιμο υποδιαδρομής"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Join subpaths"
+#~ msgstr "Ένωση υποδιαδρομών"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove subpath"
+#~ msgstr "Αφαίρεση υποδιαδρομής"
+
+#~ msgid "Standard"
+#~ msgstr "Τυπικό"
+
+#~ msgid "Lines"
+#~ msgstr "Γραμμές"
+
+#~ msgid "Type:"
+#~ msgstr "Τύπος:"
+
+#~ msgid "Tie"
+#~ msgstr "Δεσμός"
+
+#~ msgid "A connection between two other shapes"
+#~ msgstr "Μια σύνδεση μεταξύ δύο άλλων σχημάτων"
+
+#~ msgid "Shows or hides grid"
+#~ msgstr "Εμφάνιση ή απόκρυψη καννάβου"
+
+#~ msgid "Simple path shape"
+#~ msgstr "Απλό σχήμα διαδρομής"
+
+#~ msgid "A simple path shape"
+#~ msgstr "Ένα απλό σχήμα διαδρομής"
+
+#~ msgid "%1 Options"
+#~ msgstr "Επιλογές %1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Shapes"
+#~ msgstr "Επικόλληση σχημάτων"
+
+#~ msgid "Active tool: %1"
+#~ msgstr "Ενεργό εργαλείο: %1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "Επικόλληση εικόνας"
+
+#~ msgid "Nodes"
+#~ msgstr "Κόμβοι"
+
+#~ msgid "Extension of lines"
+#~ msgstr "Επέκταση γραμμών"
+
+#~ msgid "Bounding box of shape"
+#~ msgstr "Περιοριστικό πλαίσιο του σχήματος"
+
+#~ msgid "Proximity distance where snapping happens"
+#~ msgstr "Απόσταση εγγύτητας ώστε να συμβεί η προσαρμογή θέσης"
+
+#~ msgid " px"
+#~ msgstr " εικ"
+
+#~ msgid "Orthogonal"
+#~ msgstr "Ορθογώνιος"
+
+#~ msgid "Intersection of lines"
+#~ msgstr "Τομή γραμμών"
+
+#~ msgid "Guide lines"
+#~ msgstr "Γραμμές οδηγοί"
+
+#~ msgid "Embedded svg shape"
+#~ msgstr "Ενσωματωμένο svg σχήμα"
+
+#~ msgid "Create object"
+#~ msgstr "Δημιουργία αντικειμένου"
+
+#~ msgid "Pan"
+#~ msgstr "Πανοραμική κίνηση"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Segment"
+#~ msgstr "Αλλαγής τμήματος"
+
+#~ msgid "Corner point"
+#~ msgstr "Γωνιακό σημείο"
+
+#~ msgid "Smooth point"
+#~ msgstr "Ομαλό σημείο"
+
+#~ msgid "Symmetric Point"
+#~ msgstr "Συμμετρικό σημείο"
+
+#~ msgid "Make curve point"
+#~ msgstr "Δημιουργία σημείου καμπύλης"
+
+#~ msgid "Make line point"
+#~ msgstr "Δημιουργία σημείου γραμμής"
+
+#~ msgid "Segment to Line"
+#~ msgstr "Τμήμα σε γραμμή"
+
+#~ msgid "Segment to Curve"
+#~ msgstr "Τμήμα σε καμπύλη"
+
+#~ msgid "Insert point"
+#~ msgstr "Εισαγωγή σημείου"
+
+#~ msgid "Remove point"
+#~ msgstr "Αφαίρεση σημείου"
+
+#~ msgid "Break at point"
+#~ msgstr "Διακοπή στο σημείο"
+
+#~ msgid "Break at segment"
+#~ msgstr "Διακοπή στο τμήμα"
+
+#~ msgid "Join with segment"
+#~ msgstr "Σύνδεση με τμήμα"
+
+#~ msgid "Merge points"
+#~ msgstr "Συγχώνευση σημείων"
+
+#~ msgid "To Path"
+#~ msgstr "Σε διαδρομή"
+
+#~ msgid "Line/Curve"
+#~ msgstr "Γραμμή/καμπύλη"
+
+#~ msgid "Drag to move handle."
+#~ msgstr "Σύρετε για τη μετακίνηση του χειριστηρίου."
+
+#~ msgid "Drag to move point. Shift click to change point type."
+#~ msgstr ""
+#~ "Σύρετε για τη μετακίνηση του σημείου. Shift + κλικ για την τροποποίηση "
+#~ "τύπου του σημείου."
+
+#~ msgid "Drag to move control point."
+#~ msgstr "Σύρετε για τη μετακίνηση του σημείου ελέγχου."
+
+#~ msgid ""
+#~ "Drag to change curve directly. Double click to insert new path point."
+#~ msgstr ""
+#~ "Σύρετε για απευθείας αλλαγή καμπύλης. Με διπλό κλικ γίνεται εισαγωγή νέου "
+#~ "σημείου διαδρομής."
+
+#~ msgid "Press B to break path at selected point."
+#~ msgstr "Πιέστε το B για την διακοπή της διαδρομής στο επιλεγμένο σημείο."
+
+#~ msgid "Press B to break path at selected segments."
+#~ msgstr "Πιέστε το B για την διακοπή της διαδρομής στα επιλεγμένα τμήματα."
+
+#, fuzzy
+#~| msgid "Path editing tool"
+#~ msgid "Path editing"
+#~ msgstr "Εργαλείο επεξεργασίας διαδρομής"
+
+#~ msgid "Zoom"
+#~ msgstr "Εστίαση"
+
+#~ msgid "Zoom In"
+#~ msgstr "Εστίαση"
+
+#~ msgid "Zoom Out"
+#~ msgstr "Σμίκρυνση"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Convert To Path"
+#~ msgstr "Μετατροπή σε διαδρομή"
+
+#~ msgid "Scripts"
+#~ msgstr "Σενάρια"
+
+#~ msgid "Script Manager"
+#~ msgstr "Διαχειριστής σεναρίων"
+
+#~ msgid "Execute Script File..."
+#~ msgstr "Εκτέλεση αρχείου σεναρίου..."
+
+#~ msgid "Script Manager..."
+#~ msgstr "Διαχειριστής σεναρίων..."
+
+#~ msgid "Execute Script File"
+#~ msgstr "Εκτέλεση αρχείου σεναρίου"
+
+#~ msgid "Install Script Package"
+#~ msgstr "Εγκατάσταση πακέτου σεναρίου"
+
+#~ msgid "Could not read the package \"%1\"."
+#~ msgstr "Αδύνατη η ανάγνωση του πακέτου \"%1\"."
+
+#~ msgid "The package \"%1\" does not contain a valid install.rc file."
+#~ msgstr "Το πακέτο \"%1\" δεν περιέχει ένα έγκυρο αρχείο install.rc."
+
+#~ msgid "Failed to parse the install.rc file at package \"%1\"."
+#~ msgstr "Αποτυχία ανάλυσης του αρχείου install.rc στο πακέτο \"%1\"."
+
+#~ msgid ""
+#~ "Failed to determinate location where the package \"%1\" should be "
+#~ "installed to."
+#~ msgstr "Αποτυχία καθορισμού τοποθεσίας εγκατάστασης του πακέτου \"%1\"."
+
+#~ msgid ""
+#~ "A script package with the name \"%1\" already exists. Replace this "
+#~ "package?"
+#~ msgstr ""
+#~ "Ένα πακέτο σεναρίου με το όνομα \"%1\" υπάρχει ήδη. Αντικατάσταση του "
+#~ "πακέτου;"
+
+#~ msgid "Replace"
+#~ msgstr "Αντικατάσταση"
+
+#~ msgid ""
+#~ "Could not uninstall this script package. You may not have sufficient "
+#~ "permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Αδυναμία απεγκατάστασης του πακέτου σεναρίου. Ίσως δεν έχετε ικανές "
+#~ "άδειες για τη διαγραφή του φακέλου \"%1\"."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\" since the script is not "
+#~ "installed."
+#~ msgstr ""
+#~ "Αδυναμία απεγκατάστασης του πακέτου σεναρίου \"%1\" επειδή το σενάριο δεν "
+#~ "είναι εγκατεστημένο."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\". You may not have "
+#~ "sufficient permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Αδυναμία απεγκατάστασης του πακέτου σεναρίου \"%1\". Ίσως δεν έχετε "
+#~ "ικανές άδειες για τη διαγραφή του φακέλου \"%1\"."
+
+#~ msgid "Save"
+#~ msgstr "Αποθήκευση"
+
+#~ msgid ""
+#~ "<qt>This wizard will guide you through the proccess of adding a new "
+#~ "resource to your scripts.</qt>"
+#~ msgstr ""
+#~ "<qt>Αυτός ο βοηθός θα σας οδηγήσει στη διαδικασία προσθήκης ενός νέου "
+#~ "πόρου στα σενάριά σας.</qt>"
+
+#~ msgid "Add script file"
+#~ msgstr "Προσθήκη αρχείου σεναρίου"
+
+#~ msgid "Add collection folder"
+#~ msgstr "Προσθήκη φακέλου συλλογής"
+
+#~ msgid "Install script package file"
+#~ msgstr "Εγκατάσταση αρχείου πακέτου σεναρίου"
+
+#~ msgid "Install online script package"
+#~ msgstr "Εγκατάσταση σε σύνδεση πακέτου σεναρίου"
+
+#~ msgid "Add"
+#~ msgstr "Προσθήκη"
+
+#~ msgid "Script"
+#~ msgstr "Σενάριο"
+
+#~ msgid "Collection"
+#~ msgstr "Συλλογή"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master slide"
+#~ msgstr "Τροποποίηση πρωτότυπης διαφάνειας"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master page"
+#~ msgstr "Τροποποίηση πρωτότυπης σελίδας"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "Ορισμός σελιδοποίησης"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display master background"
+#~ msgstr "Εμφάνιση πρωτότυπου φόντου"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display slide background"
+#~ msgstr "Εμφάνιση φόντου διαφάνειας"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display page background"
+#~ msgstr "Εμφάνιση φόντου σελίδας"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Show master shapes"
+#~ msgstr "Εμφάνιση πρωτότυπων σχημάτων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Hide master shapes"
+#~ msgstr "Απόκρυψη πρωτότυπων σχημάτων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] "Διαγραφή διαφάνειας"
+#~ msgstr[1] "Διαγραφή διαφανειών"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "Διαγραφή σελίδας"
+#~ msgstr[1] "Διαγραφή σελίδων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr "Εισαγωγή διαφάνειας"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr "Εισαγωγή σελίδας"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "Μετακίνηση διαφάνειας"
+#~ msgstr[1] "Μετακίνηση διαφανειών"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] "Μετακίνηση σελίδας"
+#~ msgstr[1] "Μετακίνηση σελίδων"
+
+#~ msgid "Configure"
+#~ msgstr "Διαμόρφωση"
+
+#~ msgid "Misc"
+#~ msgstr "Διάφορα"
+
+#~ msgid "Grid"
+#~ msgstr "Κάνναβος"
+
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "Έγγραφο"
+
+#~ msgid "Document Settings"
+#~ msgstr "Ρυθμίσεις εγγράφου"
+
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "Συγγραφέας"
+
+#~ msgid "Author"
+#~ msgstr "Συγγραφέας"
+
+#~ msgid "Select a master slide design:"
+#~ msgstr "Επιλέξτε σχέδιο πρωτότυπης διαφάνειας:"
+
+#~ msgid "Master Slide"
+#~ msgstr "Κύρια διαφάνεια"
+
+#~ msgid "Select a master page design:"
+#~ msgstr "Επιλέξτε σχέδιο πρωτότυπης σελίδας:"
+
+#~ msgid "Master Page"
+#~ msgstr "Πρωτότυπη σελίδα"
+
+#~ msgid "Slide %1"
+#~ msgstr "Σλάιντ %1"
+
+#~ msgid "Page  %1"
+#~ msgstr "Σελίδα %1"
+
+#~ msgid "Layer"
+#~ msgstr "Στρώμα"
+
+#~ msgid "Group"
+#~ msgstr "Ομάδα"
+
+#~ msgid "Shape"
+#~ msgstr "Σχήμα"
+
+#, fuzzy
+#~| msgid "Rename Slide"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "Μετονομασία διαφάνειας"
+
+#, fuzzy
+#~| msgid "Rename Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "Μετονομασία σελίδας"
+
+#, fuzzy
+#~| msgid "Rename Layer"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "Μετονομασία στρώματος"
+
+#~ msgid "Slide"
+#~ msgstr "Διαφάνεια"
+
+#~ msgid "Visible"
+#~ msgstr "Ορατό"
+
+#~ msgid "Locked"
+#~ msgstr "Κλειδωμένο"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reparent shapes"
+#~ msgstr "Αναταξινόμηση σχημάτων"
+
+#~ msgid "&Move Here"
+#~ msgstr "&Μετακίνηση εδώ"
+
+#~ msgid "&Copy Here"
+#~ msgstr "Αντι&γραφή εδώ"
+
+#~ msgid "C&ancel"
+#~ msgstr "&Ακύρωση"
+
+#~ msgid "Document"
+#~ msgstr "Έγγραφο"
+
+#~ msgid "Add a new slide or layer"
+#~ msgstr "Προσθήκη νέας διαφάνειας ή στρώματος"
+
+#~ msgid "Add a new page or layer"
+#~ msgstr "Προσθήκη νέας σελίδας ή στρώματος"
+
+#~ msgid "Page"
+#~ msgstr "Σελίδα"
+
+#~ msgid "Delete selected objects"
+#~ msgstr "Διαγραφή επιλεγμένων αντικειμένων"
+
+#~ msgid "Raise selected objects"
+#~ msgstr "Ανύψωση επιλεγμένων αντικειμένων"
+
+#~ msgid "Lower selected objects"
+#~ msgstr "Βύθιση επιλεγμένων αντικειμένων"
+
+#~ msgid "Minimal View"
+#~ msgstr "Ελάχιστη προβολή"
+
+#~ msgid "Detailed View"
+#~ msgstr "Λεπτομερής προβολή"
+
+#~ msgid "Thumbnail View"
+#~ msgstr "Προβολή προεπισκόπησης"
+
+#~ msgid "View mode"
+#~ msgstr "Λειτουργία προβολής"
+
+#~ msgid "Enter the name of the new layer:"
+#~ msgstr "Εισαγάγετε το όνομα του νέου στρώματος:"
+
+#~ msgid "New Layer"
+#~ msgstr "Νέο στρώμα"
+
+#~ msgid "New layer"
+#~ msgstr "Νέο στρώμα"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "Δημιουργία στρώματος"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "Διαγραφή στρώματος"
+
+#~ msgid "Could not delete all layers. At least one layer is required."
+#~ msgstr ""
+#~ "Αδυναμία διαγραφής όλων των στρωμάτων. Απαιτείται τουλάχιστον η ύπαρξη "
+#~ "ενός."
+
+#~ msgid "Error deleting layers"
+#~ msgstr "Σφάλμα διαγραφής στρωμάτων"
+
+#~ msgid "Add a new slide"
+#~ msgstr "Προσθήκη νέας διαφάνειας"
+
+#~ msgid "Add a new page"
+#~ msgstr "Προσθήκη νέας σελίδας"
+
+#~ msgid "Page %1"
+#~ msgstr "Σελίδα %1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] "Επικόλληση διαφάνειας"
+#~ msgstr[1] "Επικόλληση διαφανειών"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] "Επικόλληση σελίδας"
+#~ msgstr[1] "Επικόλληση σελίδων"
+
+#~ msgid "Tools"
+#~ msgstr "Εργαλεία"
+
+#~ msgid "D&elete"
+#~ msgstr "&Διαγραφή"
+
+#~ msgid "Show Master Pages"
+#~ msgstr "Εμφάνιση πρωτότυπων σελίδων"
+
+#~ msgid "Show Rulers"
+#~ msgstr "Εμφάνιση κανόνων"
+
+#~ msgid "Show/hide the view's rulers"
+#~ msgstr "Εμφάνιση/απόκρυψη κανόνων της προβολής"
+
+#~ msgid "Insert Page"
+#~ msgstr "Εισαγωγή σελίδας"
+
+#~ msgid "Insert a new page after the current one"
+#~ msgstr "Εισαγωγή μιας νέας σελίδας μετά την τρέχουσα"
+
+#~ msgid "Copy Page"
+#~ msgstr "Αντιγραφή σελίδας"
+
+#~ msgid "Copy the current page"
+#~ msgstr "Αντιγραφή της τρέχουσας σελίδας"
+
+#~ msgid "Delete Page"
+#~ msgstr "Διαγραφή σελίδας"
+
+#~ msgid "Delete the current page"
+#~ msgstr "Διαγραφή της τρέχουσας σελίδας"
+
+#~ msgid "Master Page..."
+#~ msgstr "Πρωτότυπη σελίδα..."
+
+#~ msgid "Page Layout..."
+#~ msgstr "Σελιδοποίηση..."
+
+#~ msgid "Variable"
+#~ msgstr "Μεταβλητή"
+
+#~ msgid "Import Document..."
+#~ msgstr "Εισαγωγή εγγράφου..."
+
+#~ msgid "Configure..."
+#~ msgstr "Διαμόρφωση..."
+
+#~ msgid "Import Slideshow"
+#~ msgstr "Εισαγωγή παρουσίασης διαφανειών"
+
+#~ msgid "Import Document"
+#~ msgstr "Εισαγωγή εγγράφου"
+
+#~ msgid ""
+#~ "Could not import\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Αδυναμία εισαγωγής\n"
+#~ "%1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr "Τροποποίηση σελιδοποίησης"
+
+#~ msgid "Set image ..."
+#~ msgstr "Ορισμός εικόνας ..."
+
+#~ msgid "Background"
+#~ msgstr "Φόντο"
+
+#~ msgid "Page Background"
+#~ msgstr "Φόντο σελίδας"
+
+#~ msgid "Page Design"
+#~ msgstr "Σχέδιο σελίδας"
+
+#~ msgid "Slide Design"
+#~ msgstr "Σχέδιο διαφάνειας"
+
+#~ msgid "Use background of master page"
+#~ msgstr "Χρήση φόντου κύριας σελίδας"
+
+#~ msgid "Use background of master slide"
+#~ msgstr "Χρήση φόντου κύριας διαφάνειας"
+
+#~ msgid "Display shapes of master page"
+#~ msgstr "Εμφάνιση σχημάτων κύριας σελίδας"
+
+#~ msgid "Display shapes of master slide"
+#~ msgstr "Εμφάνιση σχημάτων κύριας διαφάνειας"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change slide background image"
+#~ msgstr "Τροποποίηση εικόνας φόντου διαφάνειας"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page background image"
+#~ msgstr "Τροποποίηση εικόνας φόντου σελίδας"
+
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "Κύρια διαφάνεια %1/%2"
+
+#~ msgid "Slide %1/%2"
+#~ msgstr "Διαφάνεια %1/%2"
+
+#~ msgid "Master Page %1/%2"
+#~ msgstr "Κύρια σελίδα %1/%2"
+
+#~ msgid "Page %1/%2"
+#~ msgstr "Σελίδα %1/%2"
+
+#, fuzzy
+#~| msgid "Check"
+#~ msgid "Check Box"
+#~ msgstr "Ενεργοποίηση"
+
+#~ msgid "Field"
+#~ msgstr "Πεδίο"
+
+#~ msgid "Label"
+#~ msgstr "Ετικέτα"
+
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgid "Section Editor"
+#~ msgstr "Επεξεργαστής ενότητας"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "Αλλαγή λίστας"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "Αλλαγή στιλ"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "Διαγραφή"
+
+#~ msgid "Key Press"
+#~ msgstr "Πάτημα πλήκτρου"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "Κείμενο"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "Διαγραφή στήλης"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "Διαγραφή γραμμής"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "Εισαγωγή υποσημείωσης"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr "Εισαγωγή σημείωσης τέλους"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Right"
+#~ msgstr "Εισαγωγή στήλης δεξιά"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr "Εισαγωγή στήλης αριστερά"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Below"
+#~ msgstr "Εισαγωγή γραμμής κάτω"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "Εισαγωγή γραμμής επάνω"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List Numbering"
+#~ msgstr "Τροποποίηση αρίθμησης λίστας"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "Γίνεται διαμόρφωση"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Direct Paragraph Formatting"
+#~ msgstr "Άμεση διαμόρφωση παραγράφων"
+
+#, fuzzy
+#~| msgid "Rename Shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr "Μετονομασία σχημάτων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr "Προσαρμογή πλάτους στήλης"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Row Height"
+#~ msgstr "Προσαρμογή ύψους γραμμής"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "Επικόλληση ως κείμενο"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "Επικόλληση"
+
+#~ msgid "Index Reference"
+#~ msgstr "Αναφορά ευρετηρίου"
+
+#~ msgid "Text Reference"
+#~ msgstr "Αναφορά κειμένου"
+
+#~ msgid "Please create an index to reference first."
+#~ msgstr "Δημιουργήστε πρώτα ευρετήριο για αναφορά."
+
+#~ msgid "Select the index you want to reference"
+#~ msgstr "Επιλέξτε το ευρετήριο που επιθυμείτε αναφορά"
+
+#~ msgid "Found 1 match"
+#~ msgid_plural "Found %1 matches"
+#~ msgstr[0] "Βρέθηκε 1 ταίριασμα"
+#~ msgstr[1] "Βρέθηκαν %1 ταιριάσματα"
+
+#~ msgid "Found no match"
+#~ msgstr "Δεν βρέθηκε ταίριασμα"
+
+#~ msgid ""
+#~ "Found no match\n"
+#~ "\n"
+#~ "No text was replaced"
+#~ msgstr ""
+#~ "Δε βρέθηκε ταίριασμα\n"
+#~ "\n"
+#~ "Δεν αντικαταστάθηκε κείμενο"
+
+#~ msgid "1 replacement made"
+#~ msgid_plural "%1 replacements made"
+#~ msgstr[0] "Έγινε 1 αντικατάσταση"
+#~ msgstr[1] "Έγιναν %1 αντικαταστάσεις"
+
+#~ msgid "Replace %1 with %2?"
+#~ msgstr "Αντικατάσταση %1 με %2;"
+
+#, fuzzy
+#~| msgid "Group Sections"
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "Ομαδοποίηση ενοτήτων"
+
+#~ msgctxt "Underline Style"
+#~ msgid "None"
+#~ msgstr "Κανένα"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "Μονό"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "Διπλό"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "New Paragraph"
+#~ msgstr "Νέα παράγραφος"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "Προσθήκη σελιδοδείκτη"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "Προσθήκη σημείωσης"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "Εισαγωγή ευρετηρίου"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "Εισαγωγή μεταβλητής"
+
+#, fuzzy
+#~| msgid "Key Press"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Key Press"
+#~ msgstr "Πάτημα πλήκτρου"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "Εισαγωγή διακοπής"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "Εισαγωγή πίνακα"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "Συγχώνευση κελιών"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "Διαίρεση κελιών"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr "Προσαρμογή πλάτους πίνακα"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Border Formatting"
+#~ msgstr "Αλλαγή διαμόρφωσης ορίων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Εισαγωγή πίνακα περιεχομένων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr "Τροποποίηση πίνακα περιεχομένων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Εισαγωγή βιβλιογραφίας"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "Προσθήκη παράθεσης"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Typing"
+#~ msgstr "Πληκτρολόγηση"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr "Έντονα"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "Πλάγια"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "Υπογράμμιση"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr "Επιγράμμιση"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr "Αλλαγή στοίχισης"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr "Ορισμός κατακόρυφης στοίχισης"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "Μείωση εσοχής"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "Αύξηση εσοχής"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "Μείωση μεγέθους γραμματοσειράς"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "Αύξηση μεγέθους γραμματοσειράς"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr "Ορισμός γραμματοσειράς"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr "Ορισμός μεγέθους γραμματοσειράς"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr "Ορισμός χρώματος φόντου"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Text Color"
+#~ msgstr "Ορισμός χρώματος κειμένου"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr "Ορισμός στιλ χαρακτήρων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Paragraph Style"
+#~ msgstr "Ορισμός στιλ παραγράφων"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "Τύπος"
+
+#~ msgid "Default"
+#~ msgstr "Προκαθορισμένο"
+
+#~ msgctxt "Default text for undo action"
+#~ msgid "Undo"
+#~ msgstr "Αναίρεση"
+
+#~ msgid "Undo %1"
+#~ msgstr "Αναίρεση %1"
+
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "Επανάληψη"
+
+#~ msgid "Redo %1"
+#~ msgstr "Επανάληψη %1"
+
+#, fuzzy
+#~| msgid "Empty"
+#~ msgid "<empty>"
+#~ msgstr "Κενό"
+
+#~ msgid "Redo"
+#~ msgstr "Επανάληψη"
+
+#~ msgid "Undo"
+#~ msgstr "Αναίρεση"
+
+#~ msgid "&File"
+#~ msgstr "&Αρχείο"
+
+#~ msgid "&Settings"
+#~ msgstr "Ρ&υθμίσεις"
+
+#~ msgid "File"
+#~ msgstr "Αρχείο"
+
+#~ msgid "Add new author profile (starts out as a copy of current)"
+#~ msgstr "Προσθήκη νέου προφίλ συγγραφέα (ξεκινά ως αντίγραφο το τρέχοντος)"
+
+#~ msgid "Delete the author profile"
+#~ msgstr "Διαγραφή του προφίλ συγγραφέα"
+
+#~ msgid "Default Author Profile"
+#~ msgstr "Προκαθορισμένο προφίλ συγγραφέα"
+
+#~ msgid "Name (not duplicate or blank name):"
+#~ msgstr "Όνομα (όχι διπλό ή κενό όνομα):"
+
+#~ msgid "Name of Profile"
+#~ msgstr "Όνομα προφίλ"
+
+#~ msgid "Name:"
+#~ msgstr "Όνομα:"
+
+#~ msgid "Initials:"
+#~ msgstr "Αρχικά:"
+
+#~ msgid "Title:"
+#~ msgstr "Τίτλος:"
+
+#~ msgid "Position:"
+#~ msgstr "Θέση:"
+
+#~ msgid "Company:"
+#~ msgstr "Εταιρεία:"
+
+#~ msgid "Email:"
+#~ msgstr "Ηλ. αλληλογραφία:"
+
+#~ msgid "Telephone (home):"
+#~ msgstr "Τηλέφωνο (Οικίας):"
+
+#~ msgid "Telephone (work):"
+#~ msgstr "Τηλέφωνο (εργασίας):"
+
+#~ msgid "Fax:"
+#~ msgstr "Φαξ:"
+
+#~ msgid "Street:"
+#~ msgstr "Οδός:"
+
+#~ msgid "City:"
+#~ msgstr "Πόλη:"
+
+#~ msgid "Country:"
+#~ msgstr "Χώρα:"
+
+#~ msgid "No autosave"
+#~ msgstr "Όχι αυτόματη αποθήκευση"
+
+#~ msgctxt "unit symbol for minutes, leading space as separator"
+#~ msgid " min"
+#~ msgstr " min"
+
+#~ msgid "Autosave interval:"
+#~ msgstr "Διάστημα αυτόματης αποθήκευσης:"
+
+#~ msgid "Create backup file:"
+#~ msgstr "Δημιουργία αρχείου υποστηρικτικής αποθήκευσης:"
+
+#~ msgid "Show grid:"
+#~ msgstr "Εμφάνιση καννάβου:"
+
+#~ msgid "Snap to grid:"
+#~ msgstr "Προσαρμογή στον κάνναβο:"
+
+#~ msgid "Grid color:"
+#~ msgstr "Χρώμα καννάβου:"
+
+#~ msgid "Spacing"
+#~ msgstr "Κενό διάστημα"
+
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "&Οριζόντιο:"
+
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "&Κατακόρυφο:"
+
+#~ msgid "Units:"
+#~ msgstr "Μονάδες:"
+
+#~ msgid "Handle radius:"
+#~ msgstr "Ακτίνα χειρισμού:"
+
+#~ msgid "Grab sensitivity:"
+#~ msgstr "Ευαισθησία σύλληψης:"
+
+#~ msgid "Paste offset:"
+#~ msgstr "Απόσταση επικόλλησης:"
+
+#~ msgid "Paste at Cursor:"
+#~ msgstr "Επικόλληση στο δρομέα:"
+
+#~ msgid "Only print and exit"
+#~ msgstr "Μόνο εκτύπωση και έξοδος"
+
+#~ msgid "Open a new document with a template"
+#~ msgstr "Άνοιγμα ενός νέου εγγράφου με ένα πρότυπο"
+
+#~ msgid "Override display DPI"
+#~ msgstr "Αντικατάσταση του DPI οθόνης"
+
+#~ msgid "Only export to PDF and exit"
+#~ msgstr "Μόνο εξαγωγή σε PDF και έξοδος"
+
+#~ msgid "Filename for export-pdf"
+#~ msgstr "Όνομα αρχείου για PDF εξαγωγή"
+
+#~ msgid "just load the file and then exit"
+#~ msgstr "μόνο φόρτωση αρχείου και έξοδος"
+
+#~ msgid "load the file, show the window and progressbar and then exit"
+#~ msgstr "φόρτωση αρχείου, εμφάνιση παραθύρου και γραμμής προόδου και έξοδος"
+
+#~ msgid "Filename to write profiling information into."
+#~ msgstr "Όνομα αρχείου για αποθήκευση πληροφοριών προφίλ."
+
+#~ msgid "Load a file and save it as an ODF file. Meant for debugging."
+#~ msgstr "Φόρτωση αρχείου και αποθήκευση ως ODF. Για διόρθωση σφαλμάτων."
+
+#~ msgid "Calligra"
+#~ msgstr "Calligra"
+
+#~ msgid ""
+#~ "You are running a 32 bits build on a 64 bits Windows.\n"
+#~ "This is not recommended.\n"
+#~ "Please download and install the x64 build instead."
+#~ msgstr ""
+#~ "Χρησιμοποιείτε μια κατασκευή 32 bits σε Windows 64 bits.\n"
+#~ "Κάτι τέτοιο δε συνίσταται.\n"
+#~ "Παρακαλούμε να λάβετε και να εγκαταστήσετε την κατασκευή x64."
+
+#, fuzzy
+#~| msgid ": Critical Error"
+#~ msgid "%1: Critical Error"
+#~ msgstr ": Κρίσιμο σφάλμα"
+
+#, fuzzy
+#~| msgid ""
+#~| "Essential application components could not be found.\n"
+#~| "This might be an installation issue.\n"
+#~| "Try restarting, running kbuildsycoca4.exe or reinstalling."
+#~ msgid ""
+#~ "Essential application components could not be found.\n"
+#~ "This might be an installation issue.\n"
+#~ "Try restarting or reinstalling."
+#~ msgstr ""
+#~ "Δεν μπόρεσαν να εντοπιστούν στοιχειώδη συστατικά της εφαρμογής.\n"
+#~ "Κάτι τέτοιο μπορεί να αποτελεί πρόβλημα στην εγκατάσταση.\n"
+#~ "Δοκιμάστε επανεκκίνηση, εκτέλεση του kbuildsycoca4.exe ή επανεγκατάσταση."
+
+#~ msgid "No template found for: %1"
+#~ msgstr "Δεν βρέθηκε πρότυπο για: %1"
+
+#~ msgid "Too many templates found for: %1"
+#~ msgstr "Βρέθηκαν πάρα πολλά πρότυπα για: %1"
+
+#~ msgid "Template %1 failed to load."
+#~ msgstr "Το πρότυπο %1 απέτυχε να φορτωθεί."
+
+#~ msgctxt "@title:window"
+#~ msgid "Recover Files"
+#~ msgstr "Επαναφορά αρχείων"
+
+#~ msgid "The following autosave file can be recovered:"
+#~ msgstr "Το ακόλουθο αυτόματα αποθηκευμένο αρχείο μπορεί να ανακτηθεί:"
+
+#~ msgid "The following autosave files can be recovered:"
+#~ msgstr "Τα ακόλουθα αυτόματα αποθηκευμένα αρχεία μπορούν να ανακτηθούν:"
+
+#~ msgid "Always use this template at application start up"
+#~ msgstr "Χρήση πάντα αυτού του προτύπου κατά την έναρξη της εφαρμογής"
+
+#~ msgid "Always use this template"
+#~ msgstr "Χρήση πάντα αυτού του προτύπου"
+
+#~ msgid "Making backup..."
+#~ msgstr "Δημιουργία εφεδρικού αντιγράφου..."
+
+#~ msgid "Saving..."
+#~ msgstr "Αποθήκευση..."
+
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Αδυναμία αποθήκευσης του\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Αδυναμία αποθήκευσης του %1\n"
+#~ "Αιτία: %2"
+
+#~ msgid "Document <i>%1</i> saved"
+#~ msgstr "Το έγγραφο <i>%1</i> αποθηκεύτηκε"
+
+#~ msgid ""
+#~ "The password of this encrypted document is not known. Autosave aborted! "
+#~ "Please save your work manually."
+#~ msgstr ""
+#~ "Ο κωδικός αυτού του κρυπτογραφημένου εγγράφου δεν είναι γνωστός. Η "
+#~ "αυτόματη αποθήκευση εγκαταλείφθηκε! Παρακαλώ αποθηκεύστε την εργασία σας "
+#~ "χειροκίνητα."
+
+#~ msgid "Autosaving..."
+#~ msgstr "Αυτόματη αποθήκευση..."
+
+#~ msgid "Error during autosave! Partition full?"
+#~ msgstr "Σφάλμα κατά την αυτόματη αποθήκευση! Είναι η κατάτμηση πλήρης;"
+
+#~ msgid "Could not create the file for saving"
+#~ msgstr "Αδυναμία δημιουργίας του αρχείου για αποθήκευση"
+
+#~ msgid "Not able to write '%1'. Partition full?"
+#~ msgstr "Αδυναμία εγγραφής του '%1'. Είναι η κατάτμηση πλήρης;"
+
+#~ msgid "Not able to write RDF metadata. Partition full?"
+#~ msgstr "Αδυναμία εγγραφής μεταδεδομένων RDF. Είναι η κατάτμηση πλήρης;"
+
+#~ msgid "Error while trying to write '%1'. Partition full?"
+#~ msgstr ""
+#~ "Σφάλμα κατά την προσπάθεια εγγραφής του '%1'. Είναι η κατάτμηση πλήρης;"
+
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Λανθασμένο URL\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "An autosaved file exists for this document.\n"
+#~ "Do you want to open it instead?"
+#~ msgstr ""
+#~ "Ένα αρχείο αυτόματης αποθήκευσης υπάρχει γι' αυτό το έγγραφο.\n"
+#~ "Θέλετε να ανοίξετε αυτό στη θέση του;"
+
+#~ msgid "The file %1 does not exist."
+#~ msgstr "Το αρχείο %1 δεν υπάρχει."
+
+#~ msgid "Opening Document"
+#~ msgstr "Άνοιγμα εγγράφου"
+
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "Αδυναμία δημιουργίας του πρόσθετου για το φιλτράρισμα"
+
+#~ msgid "File not found"
+#~ msgstr "Το αρχείο δε βρέθηκε"
+
+#~ msgid "Cannot create storage"
+#~ msgstr "Αδυναμία δημιουργίας αποθήκης"
+
+#~ msgid "Bad MIME type"
+#~ msgstr "Εσφαλμένος τύπος MIME"
+
+#~ msgid "Format not recognized"
+#~ msgstr "Μη αναγνωρίσιμος τύπος"
+
+#~ msgid "Not implemented"
+#~ msgstr "Δεν έχει υλοποιηθεί"
+
+#~ msgid "Parsing error"
+#~ msgstr "Σφάλμα ανάλυσης"
+
+#~ msgid "Document is password protected"
+#~ msgstr "Το έγγραφο είναι προστατευμένο με κωδικό πρόσβασης"
+
+#~ msgid "Invalid file format"
+#~ msgstr "Μη έγκυρος τύπος αρχειοθέτησης"
+
+#~ msgid "Internal error"
+#~ msgstr "Εσωτερικό σφάλμα"
+
+#~ msgid "Out of memory"
+#~ msgstr "Τέλος μνήμης"
+
+#~ msgid "Empty Filter Plugin"
+#~ msgstr "Κενό πρόσθετο φιλτραρίσματος"
+
+#~ msgid "Trying to load into the wrong kind of document"
+#~ msgstr "Προσπάθεια φόρτωσης στο λάθος τύπο εγγράφου"
+
+#~ msgid "Failed to download remote file"
+#~ msgstr "Αποτυχία λήψης απομακρυσμένου αρχείου"
+
+#~ msgid "Unknown error"
+#~ msgstr "Άγνωστο σφάλμα"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open\n"
+#~| "%2.\n"
+#~| "Reason: %1"
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr ""
+#~ "Αδυναμία ανοίγματος\n"
+#~ "του %2.\n"
+#~ "Αιτία: %1"
+
+#~ msgid "Document <i>%1</i> loaded"
+#~ msgstr "Το έγγραφο <i>%1</i> φορτώθηκε"
+
+#~ msgid "Could not find %1"
+#~ msgstr "Αδυναμία εύρεσης του %1"
+
+#~ msgid ""
+#~ "Parsing error in %1 at line %2, column %3\n"
+#~ "Error message: %4"
+#~ msgstr ""
+#~ "Σφάλμα ανάλυσης %1 στη γραμμή %2, στήλη %3\n"
+#~ "Μήνυμα σφάλματος: %4"
+
+#~ msgid "%1 is not a file."
+#~ msgstr "Το %1 δεν είναι ένα αρχείο."
+
+#~ msgid "Could not open the file for reading (check read permissions)."
+#~ msgstr ""
+#~ "Αδυναμία ανοίγματος του αρχείου για ανάγνωση (ελέγξτε τις άδειες "
+#~ "ανάγνωσης)."
+
+#~ msgid "Could not read the beginning of the file."
+#~ msgstr "Αδυναμία ανάγνωσης της αρχής του αρχείου."
+
+#~ msgid ""
+#~ "parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "σφάλμα ανάλυσης στο κύριο έγγραφο στη γραμμή %1, στήλη %2\n"
+#~ "Μήνυμα σφάλματος: %3"
+
+#~ msgid "Not a valid Calligra file: %1"
+#~ msgstr "Μη έγκυρο αρχείο του Calligra: %1"
+
+#~ msgid "Invalid document: no file 'maindoc.xml'."
+#~ msgstr "Μη έγκυρο έγγραφο: δεν υπάρχει αρχείο 'maindoc.xml'."
+
+#~ msgid ""
+#~ "Document <i>%1</i> contains several versions. Go to File->Versions to "
+#~ "open an old version."
+#~ msgstr ""
+#~ "Το έγγραφο <i>%1</i> περιέχει πολλές εκδόσεις. Πηγαίνετε στο Αρχείο-"
+#~ ">Εκδόσεις για το άνοιγμα μιας παλιάς έκδοσης."
+
+#~ msgid "Untitled"
+#~ msgstr "Χωρίς τίτλο"
+
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr ""
+#~ "<p>Το έγγραφο <b>'%1'</b> έχει τροποποιηθεί.</p><p>Θέλετε να το "
+#~ "αποθηκεύσετε;</p>"
+
+#~ msgid "Internal error: saveXML not implemented"
+#~ msgstr "Εσωτερικό σφάλμα: saveXML δεν έχει υλοποιηθεί"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Αδυναμία ανοίγματος του\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Αδυναμία ανοίγματος του %1\n"
+#~ "Αιτία: %2"
+
+#~ msgid "a word processing"
+#~ msgstr "μια επεξεργασία κειμένου"
+
+#~ msgid "a spreadsheet"
+#~ msgstr "ένα φύλλο εργασίας"
+
+#~ msgid "a presentation"
+#~ msgstr "μια παρουσίαση"
+
+#~ msgid "a chart"
+#~ msgstr "ένα γράφημα"
+
+#~ msgid "a drawing"
+#~ msgstr "ένα σχέδιο"
+
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr ""
+#~ "Το έγγραφο \"%1\" έχει τροποποιηθεί.\n"
+#~ "Επιθυμείτε την αποθήκευση των αλλαγών ή την απόρριψή τους;"
+
+#~ msgid "Close Document"
+#~ msgstr "Κλείσιμο εγγράφου"
+
+#~ msgid "%1 %"
+#~ msgstr "%1 %"
+
+#~ msgid "No"
+#~ msgstr "Όχι"
+
+#~ msgid "Yes"
+#~ msgstr "Ναι"
+
+#~ msgid "Could not export file."
+#~ msgstr "Δεν ήταν δυνατή η εξαγωγή του αρχείου."
+
+#~ msgid "Missing Export Filter"
+#~ msgstr "Λείπει το φίλτρο εξαγωγής"
+
+#~ msgid ""
+#~ "Could not import file of type\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Αδυναμία εισαγωγής του αρχείου με τύπο\n"
+#~ "%1"
+
+#~ msgid "Missing Import Filter"
+#~ msgstr "Λείπει το φίλτρο εισαγωγής"
+
+#~ msgid "Choose Filter"
+#~ msgstr "Επιλογή φίλτρου"
+
+#~ msgid "Case Sensitive"
+#~ msgstr "Διάκριση πεζών-κεφαλαίων"
+
+#~ msgid "Match cases when searching"
+#~ msgstr "Αναζήτηση με διάκριση πεζών-κεφαλαίων"
+
+#~ msgid "Match only whole words"
+#~ msgstr "Ταίριασμα με ολόκληρες λέξεις μόνο"
+
+#~ msgid "Whole Words Only"
+#~ msgstr "Ολόκληρες λέξεις μόνο"
+
+#~ msgid "Find from Cursor"
+#~ msgstr "Εύρεση από το δρομέα"
+
+#~ msgid "Start searching from the current cursor"
+#~ msgstr "Έναρξη αναζήτησης από την τρέχουσα θέση του δρομέα"
+
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "Εύρεση:"
+
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "Επόμενο"
+
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "Προηγούμενο"
+
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "Επιλογές"
+
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "Αντικατάσταση:"
+
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "Αντικατάσταση"
+
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "Αντικατάσταση όλων"
+
+#~ msgctxt "Total number of matches"
+#~ msgid "1 match found"
+#~ msgid_plural "%1 matches found"
+#~ msgstr[0] "1 ταίριασμα βρέθηκε"
+#~ msgstr[1] "%1 ταιριάσματα βρέθηκαν"
+
+#~ msgid "No matches found"
+#~ msgstr "Δεν βρέθηκαν ταιριάσματα"
+
+#~ msgid "Search hit bottom, continuing from top."
+#~ msgstr "Η αναζήτηση έφτασε στη βάση, συνέχεια από την κορυφή"
+
+#~ msgid "Search hit top, continuing from bottom."
+#~ msgstr "Η αναζήτηση έφτασε στην κορυφή, συνέχεια από τη βάση"
+
+#~ msgid "%1 unsaved document (%2)"
+#~ msgstr "%1 μη αποθηκευμένο έγγραφο (%2)"
+
+#~ msgid "Export as PDF..."
+#~ msgstr "Εξαγωγή ως PDF..."
+
+#~ msgid "Reload"
+#~ msgstr "Επαναφόρτωση"
+
+#~ msgid "Versions..."
+#~ msgstr "Εκδόσεις..."
+
+#~ msgid "Open ex&isting Document as Untitled Document..."
+#~ msgstr "Άνοιγμα υφ&ιστάμενου εγγράφου ως έγγραφο χωρίς τίτλο..."
+
+#~ msgid "E&xport..."
+#~ msgstr "Ε&ξαγωγή..."
+
+#~ msgid "En&crypt Document"
+#~ msgstr "&Κρυπτογράφηση εγγράφου"
+
+#~ msgid "&Uncompress to Directory"
+#~ msgstr "&Αποσυμπίεση σε φάκελο"
+
+#~ msgid "&New View"
+#~ msgstr "Νέα προ&βολή"
+
+#~ msgid "Document Information"
+#~ msgstr "Πληροφορίες εγγράφου"
+
+#~ msgid "Full Screen Mode"
+#~ msgstr "Λειτουργία πλήρους οθόνης"
+
+#~ msgid "Show Dockers"
+#~ msgstr "Εμφάνιση προσαρτήσεων"
+
+#, fuzzy
+#~| msgid "Show Dockers"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "Εμφάνιση προσαρτήσεων"
+
+#~ msgid "Dockers"
+#~ msgstr "Προσαρτήσεις"
+
+#~ msgid "(write protected)"
+#~ msgstr "(προστασία εγγραφής)"
+
+#~ msgid "Save as %1"
+#~ msgstr "Αποθήκευση ως %1"
+
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "%1 (άγνωστος τύπος αρχείου)"
+
+#~ msgid ""
+#~ "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
+#~ "want to save in this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Η αποθήκευση ως %1 μπορεί να οδηγήσει σε απώλεια διαμόρφωσης."
+#~ "<p>Επιθυμείτε ακόμη την αποθήκευση σε αυτόν τον τύπο;</qt>"
+
+#~ msgid "Confirm Save"
+#~ msgstr "Επιβεβαίωση αποθήκευσης"
+
+#~ msgid ""
+#~ "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you "
+#~ "still want to export to this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Η εξαγωγή ως %1 μπορεί να οδηγήσει σε απώλεια διαμόρφωσης."
+#~ "<p>Επιθυμείτε ακόμη την εξαγωγή σε αυτόν τον τύπο;</qt>"
+
+#~ msgid "Confirm Export"
+#~ msgstr "Επιβεβαίωση εξαγωγής"
+
+#~ msgid "untitled"
+#~ msgstr "χωρίς τίτλο"
+
+#~ msgid "Open Document"
+#~ msgstr "Άνοιγμα εγγράφου"
+
+#~ msgid "Export as PDF"
+#~ msgstr "Εξαγωγή ως PDF..."
+
+#~ msgid "Cannot export to the specified file"
+#~ msgstr "Αδυναμία εξαγωγής στο ορισμένο αρχείο"
+
+#~ msgid "Document - %1"
+#~ msgstr "Έγγραφο - %1"
+
+#~ msgid ""
+#~ "You will lose all changes made since your last save\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "Θα χαθούν όλες οι τροποποιήσεις που έγιναν μετά την τελευταία αποθήκευση\n"
+#~ "Επιθυμείτε τη συνέχεια;"
+
+#~ msgid "Warning"
+#~ msgstr "Προειδοποίηση"
+
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "Εμφάνιση γραμμής εργαλείων %1"
+
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "Απόκρυψη της γραμμής εργαλείων %1"
+
+#~ msgid "Open Existing Document"
+#~ msgstr "Άνοιγμα υπάρχοντος εγγράφου"
+
+#~ msgid "Recent Documents"
+#~ msgstr "Πρόσφατα έγγραφα"
+
+#~ msgid "Custom Document"
+#~ msgstr "Προσαρμοσμένο έγγραφο"
+
+#~ msgid "Stop"
+#~ msgstr "Σταμάτημα"
+
+#~ msgid "Printing"
+#~ msgstr "Εκτύπωση"
+
+#~ msgid "Printing done"
+#~ msgstr "Τέλος εκτύπωσης"
+
+#~ msgid "Close"
+#~ msgstr "Κλείσιμο"
+
+#~ msgid "Stopped"
+#~ msgstr "Σταμάτησε"
+
+#~ msgid "Open This Document"
+#~ msgstr "Άνοιγμα αυτού του εγγράφου"
+
+#~ msgctxt "File modification date and time. %1 is date time"
+#~ msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Τροποποιήθηκε:</b></td><td>%1</td></tr>"
+
+#~ msgctxt "File access date and time. %1 is date time"
+#~ msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Προσπελάστηκε:</b></td><td>%1</td></tr>"
+
+#~ msgid "Show Guides"
+#~ msgstr "Εμφάνιση οδηγών"
+
+#~ msgid "Shows or hides guides"
+#~ msgstr "Εμφάνιση ή απόκρυψη οδηγών"
+
+#~ msgid "Create Template"
+#~ msgstr "Δημιουργία προτύπου"
+
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "Όνομα:"
+
+#~ msgid "Group:"
+#~ msgstr "Ομάδα:"
+
+#~ msgid "&Add Group..."
+#~ msgstr "&Προσθήκη ομάδας..."
+
+#~ msgid "&Remove"
+#~ msgstr "Α&φαίρεση"
+
+#~ msgid "Picture"
+#~ msgstr "Εικόνα"
+
+#~ msgid "&Preview"
+#~ msgstr "&Προεπισκόπηση"
+
+#~ msgid "Custom:"
+#~ msgstr "Προσαρμοσμένο:"
+
+#~ msgid "&Select..."
+#~ msgstr "&Επιλογή..."
+
+#~ msgid "Use the new template as default"
+#~ msgstr "Χρήση του νέου προτύπου ως προκαθορισμένο"
+
+#~ msgid "Use the new template every time %1 starts"
+#~ msgstr "Χρήση του νέου προτύπου κατά την έναρξη του %1"
+
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr "Επιθυμείτε πραγματικά την αντικατάσταση στο υπάρχον πρότυπο '%1';"
+
+#~ msgid "Add Group"
+#~ msgstr "Προσθήκη ομάδας"
+
+#~ msgid "Enter group name:"
+#~ msgstr "Εισάγετε το όνομα ομάδας:"
+
+#~ msgid "This name is already used."
+#~ msgstr "Αυτό το όνομα χρησιμοποιείται ήδη."
+
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "Επιθυμείτε πραγματικά την αφαίρεση αυτής της ομάδας;"
+
+#~ msgid "Remove Group"
+#~ msgstr "Αφαίρεση ομάδας"
+
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "Επιθυμείτε πραγματικά να αφαιρέσετε αυτό το πρότυπο;"
+
+#~ msgid "Remove Template"
+#~ msgstr "Αφαίρεση προτύπου"
+
+#~ msgid "&Delete"
+#~ msgstr "&Διαγραφή"
+
+#~ msgid "Could not load picture."
+#~ msgstr "Δεν ήταν δυνατή η φόρτωση της εικόνας."
+
+#~ msgid "No picture available."
+#~ msgstr "Καμία διαθέσιμη εικόνα."
+
+#~ msgid "Use This Template"
+#~ msgstr "Χρήση αυτού του προτύπου"
+
+#~ msgid "Version"
+#~ msgstr "Έκδοση"
+
+#~ msgid "Date & Time"
+#~ msgstr "Ημερομηνία & ώρα"
+
+#~ msgid "Saved By"
+#~ msgstr "Αποθηκεύτηκε από"
+
+#~ msgid "Comment"
+#~ msgstr "Σχόλιο"
+
+#~ msgid "&Add"
+#~ msgstr "&Προσθήκη"
+
+#~ msgid "&Modify"
+#~ msgstr "Τρ&οποποίηση"
+
+#~ msgid "&Open"
+#~ msgstr "Ά&νοιγμα"
+
+#~ msgid "A new version could not be added"
+#~ msgstr "Αδυναμία προσθήκης μιας νέας έκδοσης"
+
+#~ msgid "Date: %1"
+#~ msgstr "Ημερομηνία: %1"
+
+#~ msgid "Active Author Profile"
+#~ msgstr "Ενεργό προφίλ συγγραφέα"
+
+#~ msgctxt "choice for author profile"
+#~ msgid "Anonymous"
+#~ msgstr "Ανώνυμο"
+
+#~ msgid "Unknown"
+#~ msgstr "Άγνωστο"
+
+#~ msgid ""
+#~ "This document contains an unknown checksum. When you give a password it "
+#~ "might not be verified."
+#~ msgstr ""
+#~ "Αυτό το έγγραφο περιέχει ένα άγνωστο άθροισμα ελέγχου. Όταν εισάγετε έναν "
+#~ "κωδικό μπορεί να μη γίνει επαλήθευση."
+
+#~ msgid ""
+#~ "This document contains an unknown encryption method. Some parts may be "
+#~ "unreadable."
+#~ msgstr ""
+#~ "Αυτό το έγγραφο περιέχει άγνωστη μέθοδο κρυπτογράφησης. Μερικά τμήματά "
+#~ "του δε θα είναι αναγνώσιμα."
+
+#~ msgid ""
+#~ "This document contains incomplete encryption data. Some parts may be "
+#~ "unreadable."
+#~ msgstr ""
+#~ "Αυτό το έγγραφο περιέχει μη ολοκληρωμένη μέθοδο κρυπτογράφησης. Μερικά "
+#~ "τμήματά του δε θα είναι αναγνώσιμα."
+
+#~ msgid ""
+#~ "QCA has currently no support for SHA1 or PBKDF2 using SHA1. The document "
+#~ "can not be opened."
+#~ msgstr ""
+#~ "Το QCA δεν έχει για την ώρα υποστήριξη SHA1 ή PBKDF2 με χρήση SHA1. "
+#~ "Αδυναμία ανοίγματος του εγγράφου."
+
+#~ msgid ""
+#~ "The manifest file seems to be corrupted. It cannot be modified and the "
+#~ "document will remain unreadable. Please try and save the document again "
+#~ "to prevent losing your work."
+#~ msgstr ""
+#~ "Το αρχείο δήλωσης φαίνεται να είναι κατεστραμμένο. Δεν μπορεί να γίνει "
+#~ "τροποποίηση και το έγγραφο θα παραμείνει μη αναγνώσιμο. Παρακαλώ "
+#~ "δοκιμάστε την αποθήκευση του εγγράφου ξανά για την αποφυγή απώλειας της "
+#~ "εργασίας σας."
+
+#~ msgid ""
+#~ "The manifest file cannot be written. The document will remain unreadable. "
+#~ "Please try and save the document again to prevent losing your work."
+#~ msgstr ""
+#~ "Το αρχείο δήλωσης φαίνεται δεν μπορεί να γραφτεί. Το έγγραφο θα "
+#~ "παραμείνει μη αναγνώσιμο. Παρακαλώ δοκιμάστε την αποθήκευση του εγγράφου "
+#~ "ξανά για την αποφυγή απώλειας της εργασίας σας."
+
+#~ msgid "Please enter the password to open this file."
+#~ msgstr "Παρακαλώ εισάγετε των κωδικό για το άνοιγμα αυτού του αρχείου."
+
+#~ msgid "Please enter the password to encrypt the document with."
+#~ msgstr "Παρακαλώ εισάγετε τον κωδικό για την αποκρυπτογράφηση του εγγράφου."
+
+#~ msgid "Do you want to save the password?"
+#~ msgstr "Επιθυμείτε την αποθήκευση του κωδικού;"
+
+#~ msgid "No store backend"
+#~ msgstr "Χωρίς σύστημα υποστήριξης αποθήκευσης"
+
+#~ msgid ""
+#~ "Parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Σφάλμα ανάλυσης στο κύριο έγγραφο στη γραμμή %1, στήλη %2\n"
+#~ "Μήνυμα σφάλματος: %3"
+
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "Οθόνη"
+
+#~ msgid "The directory mode is not supported for remote locations."
+#~ msgstr ""
+#~ "Η λειτουργία καταλόγου δεν υποστηρίζεται για απομακρυσμένες τοποθεσίες."
+
+#~ msgid "Calligra Storage"
+#~ msgstr "Αποθήκη Calligra"
+
+#~ msgid "Clear"
+#~ msgstr "Καθαρισμός"
+
+#~ msgid "Subtract"
+#~ msgstr "Αφαίρεση"
+
+#~ msgid "Multiply"
+#~ msgstr "Πολλαπλασιασμός"
+
+#~ msgid "Alpha mask"
+#~ msgstr "Μάσκα άλφα"
+
+#~ msgid "Alpha"
+#~ msgstr "Άλφα"
+
+#~ msgid "Undefined operation in the alpha color space"
+#~ msgstr "Ακαθόριστη λειτουργία στον άλφα χρωματικό χώρο"
+
+#~ msgid "L*a*b* (16-bit integer/channel, unmanaged)"
+#~ msgstr "L*a*b* (16-bit ακέραιος/κανάλι, χωρίς διαχείριση)"
+
+#~ msgid "Lightness"
+#~ msgstr "Χρωματική έκταση"
+
+#~ msgid "a*"
+#~ msgstr "a*"
+
+#~ msgid "b*"
+#~ msgstr "b*"
+
+#~ msgid "RGB (16-bit integer/channel, unmanaged)"
+#~ msgstr "RGB 16-bit ακέραιος/κανάλι, χωρίς διαχείριση)"
+
+#~ msgid "RGB (8-bit integer/channel, unmanaged)"
+#~ msgstr "RGB 8-bit ακέραιος/κανάλι, χωρίς διαχείριση)"
+
+#~ msgid "Blue"
+#~ msgstr "Μπλε"
+
+#~ msgid "Green"
+#~ msgstr "Πράσινο"
+
+#~ msgid "Red"
+#~ msgstr "Κόκκινο"
+
+#~ msgid "Undefined operation in the %1 space"
+#~ msgstr "Ακαθόριστη λειτουργία στον %1 χώρο"
+
+#~ msgid "Undefined operation in the %1 color space"
+#~ msgstr "Ακαθόριστη λειτουργία στον %1 χρωματικό χώρο"
+
+#~ msgid "Simple Color Conversion Engine"
+#~ msgstr "Απλή μηχανή μετατροπών χρώματος"
+
+#~ msgid "Alpha darken"
+#~ msgstr "Σκοτεινό άλφα"
+
+#~ msgid "Behind"
+#~ msgstr "Πίσω"
+
+#~ msgid "Dissolve"
+#~ msgstr "Διάλυση"
+
+#~ msgid "Erase"
+#~ msgstr "Σβήσιμο"
+
+#~ msgid "Normal"
+#~ msgstr "Κανονική"
+
+#~ msgid "Overlay"
+#~ msgstr "Επικάλυψη"
+
+#~ msgid "Grain Merge"
+#~ msgstr "Συγχώνευση κόκκων"
+
+#~ msgid "Grain Extract"
+#~ msgstr "Εξαγωγή κόκκων"
+
+#~ msgid "Hard Mix"
+#~ msgstr "Σκληρή μίξη"
+
+#~ msgid "Geometric Mean"
+#~ msgstr "Γεωμετρικός μέσος"
+
+#~ msgid "Parallel"
+#~ msgstr "Παράλληλο"
+
+#~ msgid "Allanon"
+#~ msgstr "Allanon"
+
+#~ msgid "Color Dodge"
+#~ msgstr "Ελιγμός χρώματος"
+
+#~ msgid "Linear Dodge"
+#~ msgstr "Γραμμικός ελιγμός"
+
+#~ msgid "Lighten"
+#~ msgstr "Φωτεινότερο"
+
+#~ msgid "Hard Light"
+#~ msgstr "Σκληρός φωτισμός"
+
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "Απαλός φωτισμός (SVG)"
+
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "Απαλός φωτισμός (Photoshop)"
+
+#~ msgid "Gamma Light"
+#~ msgstr "Φωτισμός γάμμα"
+
+#~ msgid "Vivid Light"
+#~ msgstr "Ζωηρός φωτισμός"
+
+#~ msgid "Pin Light"
+#~ msgstr "Βελονωτός φωτισμός"
+
+#~ msgid "Linear Light"
+#~ msgstr "Γραμμικός φωτισμός"
+
+#~ msgid "Color Burn"
+#~ msgstr "Χρωματικό κάψιμο"
+
+#~ msgid "Linear Burn"
+#~ msgstr "Γραμμικό κάψιμο"
+
+#~ msgid "Darken"
+#~ msgstr "Πιο σκοτεινό"
+
+#~ msgid "Gamma Dark"
+#~ msgstr "Σκοτεινό γάμμα"
+
+#~ msgid "Addition"
+#~ msgstr "Προσθήκη"
+
+#~ msgid "Inversed-Subtract"
+#~ msgstr "Ανεστραμμένη-αφαίρεσης"
+
+#~ msgid "Divide"
+#~ msgstr "Διαίρεση"
+
+#~ msgid "Arcus Tangent"
+#~ msgstr "Εφαπτομένη"
+
+#~ msgid "Difference"
+#~ msgstr "Διαφορά"
+
+#~ msgid "Exclusion"
+#~ msgstr "Εξαίρεση"
+
+#~ msgid "Equivalence"
+#~ msgstr "Ισοδυναμία"
+
+#~ msgid "Additive-Subtractive"
+#~ msgstr "Προσθετικό-Αφαιρετικό"
+
+#~ msgid "Copy Red"
+#~ msgstr "Αντιγραφή Κόκκινου"
+
+#~ msgid "Copy Green"
+#~ msgstr "Αντιγραφή πράσινου"
+
+#~ msgid "Copy Blue"
+#~ msgstr "Αντιγραφή μπλε"
+
+#~ msgid "Color"
+#~ msgstr "Χρώμα"
+
+#~ msgid "Hue"
+#~ msgstr "Απόχρωση"
+
+#~ msgid "Saturation"
+#~ msgstr "Κορεσμός"
+
+#~ msgid "Increase Saturation"
+#~ msgstr "Αύξηση κορεσμού"
+
+#~ msgid "Decrease Saturation"
+#~ msgstr "Μείωση κορεσμού"
+
+#~ msgid "Luminosity"
+#~ msgstr "Φωτεινότητα"
+
+#~ msgid "Increase Luminosity"
+#~ msgstr "Αύξηση φωτεινότητας"
+
+#~ msgid "Decrease Luminosity"
+#~ msgstr "Μείωση φωτεινότητας"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgid "Darker Color"
+#~ msgstr "Χρώμα φόντου"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgid "Lighter Color"
+#~ msgstr "Χρώμα γραμμής"
+
+#~ msgid "Color HSI"
+#~ msgstr "Χρώμα HSI"
+
+#~ msgid "Hue HSI"
+#~ msgstr "Απόχρωση HSI"
+
+#~ msgid "Saturation HSI"
+#~ msgstr "Κορεσμός HSI"
+
+#~ msgid "Increase Saturation HSI"
+#~ msgstr "Αύξηση κορεσμού HSI"
+
+#~ msgid "Decrease Saturation HSI"
+#~ msgstr "Μείωση κορεσμού HSI"
+
+#~ msgid "Intensity"
+#~ msgstr "Ένταση"
+
+#~ msgid "Increase Intensity"
+#~ msgstr "Αύξηση έντασης"
+
+#~ msgid "Decrease Intensity"
+#~ msgstr "Μείωση έντασης"
+
+#~ msgid "Color HSL"
+#~ msgstr "Χρώμα HSL"
+
+#~ msgid "Hue HSL"
+#~ msgstr "Απόχρωση HSL"
+
+#~ msgid "Saturation HSL"
+#~ msgstr "Κορεσμός HSL"
+
+#~ msgid "Increase Saturation HSL"
+#~ msgstr "Αύξηση κορεσμού HSL"
+
+#~ msgid "Decrease Saturation HSL"
+#~ msgstr "Μείωση κορεσμού HSL"
+
+#~ msgid "Increase Lightness"
+#~ msgstr "Αύξηση χρωματικής έκτασης"
+
+#~ msgid "Decrease Lightness"
+#~ msgstr "Μείωση χρωματικής έκτασης"
+
+#~ msgid "Color HSV"
+#~ msgstr "Χρώμα HSV"
+
+#~ msgid "Hue HSV"
+#~ msgstr "Απόχρωση HSV"
+
+#~ msgid "Saturation HSV"
+#~ msgstr "Κορεσμός HSV"
+
+#~ msgid "Increase Saturation HSV"
+#~ msgstr "Αύξηση κορεσμού HSV"
+
+#~ msgid "Decrease Saturation HSV"
+#~ msgstr "Μείωση κορεσμού HSV"
+
+#~ msgid "Increase Value"
+#~ msgstr "Αύξηση αξίας"
+
+#~ msgid "Decrease Value"
+#~ msgstr "Μείωση αξίας"
+
+#~ msgid "Generic RGB Histogram"
+#~ msgstr "Γενικευμένο ιστόγραμμα RGB"
+
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "G"
+#~ msgstr "G"
+
+#~ msgid "L*a*b* Histogram"
+#~ msgstr "Ιστόγραμμα L*a*b*"
+
+#~ msgid "L*"
+#~ msgstr "L*"
+
+#~ msgid "Generic L*a*b* Histogram"
+#~ msgstr "Γενικευμένο ιστόγραμμα L*a*b*"
+
+#~ msgid "XYZ"
+#~ msgstr "XYZ"
+
+#~ msgid "Grayscale"
+#~ msgstr "Διαβάθμιση του γκρι"
+
+#~ msgid "Grayscale (without transparency)"
+#~ msgstr "Διαβάθμιση του γκρι (χωρίς διαφάνεια)"
+
+#~ msgid "YCbCr"
+#~ msgstr "YCbCr"
+
+#~ msgid "8 Bits"
+#~ msgstr "8 Bit"
+
+#~ msgid "16 Bits"
+#~ msgstr "16 Bit"
+
+#~ msgid "16 Bits Float"
+#~ msgstr "16 Bits κινητής υποδιαστολής"
+
+#~ msgid "32 Bits Float"
+#~ msgstr "32 Bits κινητής υποδιαστολής"
+
+#~ msgid "64 Bits Float"
+#~ msgstr "64 Bits κινητής υποδιαστολής"
+
+#~ msgid "Arithmetic"
+#~ msgstr "Αριθμητικό"
+
+#~ msgid "Negative"
+#~ msgstr "Αρνητικό"
+
+#~ msgid "HSY"
+#~ msgstr "HSY"
+
+#~ msgid "HSI"
+#~ msgstr "HSI"
+
+#~ msgid "HSL"
+#~ msgstr "HSL"
+
+#~ msgid "HSV"
+#~ msgstr "HSV"
+
+#~ msgid "Mix"
+#~ msgstr "Μίξη"
+
+#~ msgid "Inverse Subtract"
+#~ msgstr "Αντιστροφή αφαίρεσης"
+
+#~ msgid "Burn"
+#~ msgstr "Κάψιμο"
+
+#~ msgid "Additive Subtractive"
+#~ msgstr "Προσθετικό Αφαιρετικό"
+
+#~ msgid "Alpha Darken"
+#~ msgstr "Σκοτεινό άλφα"
+
+#~ msgid "Bumpmap"
+#~ msgstr "Bumpmap"
+
+#~ msgid "SVG Gradient"
+#~ msgstr "Διαβάθμιση SVG"
+
+#~ msgid "Select the object you want to reference"
+#~ msgstr "Επιλέξτε το αντικείμενο που επιθυμείτε αναφορά"
+
+#~ msgid "Reference"
+#~ msgstr "Αναφορά"
+
+#~ msgid "Set For All Existing"
+#~ msgstr "Ορισμός για όλα τα υφιστάμενα"
+
+#~ msgctxt "statement is an Rdf related term"
+#~ msgid "<qt>Edits will be lost.<p>There is %1 invalid statement left.</qt>"
+#~ msgid_plural ""
+#~ "<qt>Edits will be lost.<p>There are %1 invalid statements left.</qt>"
+#~ msgstr[0] ""
+#~ "<qt>Οι αλλαγές θα χαθούν.<p>Έχει απομείνει %1 μη έγκυρη πρόταση.</qt>"
+#~ msgstr[1] ""
+#~ "<qt>Οι αλλαγές θα χαθούν.<p>Έχουν απομείνει %1 μη έγκυρες προτάσεις.</qt>"
+
+#~ msgctxt "statement is an Rdf related term"
+#~ msgid "Discard invalid statements?"
+#~ msgstr "Να απορριφθούν οι μη έγκυρες προτάσεις;"
+
+#~ msgid "Rdf"
+#~ msgstr "Rdf"
+
+#~ msgid "Triples"
+#~ msgstr "Τριπλά"
+
+#~ msgid "new"
+#~ msgstr "νέο"
+
+#~ msgid "copy"
+#~ msgstr "αντιγραφή"
+
+#~ msgid "delete"
+#~ msgstr "διαγραφή"
+
+#~ msgid "Namespaces"
+#~ msgstr "Πεδία ορισμού ονομάτων"
+
+#~ msgid "Prefix"
+#~ msgstr "Πρόθεμα"
+
+#~ msgid "Namespace"
+#~ msgstr "Πεδίο ορισμού ονομάτων"
+
+#~ msgid "Semantic"
+#~ msgstr "Σημασιολογικό"
+
+#~ msgid "SPARQL"
+#~ msgstr "SPARQL"
+
+#, fuzzy
+#~| msgid ""
+#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
+#~| "TR/REC-html40/strict.dtd\">\n"
+#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~| "css\">\n"
+#~| "p, li { white-space: pre-wrap; }\n"
+#~| "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~| "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\"># Insert your SPARQL query here<br /"
+#~| "># Results are shown below.</span></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">prefix rdf:  &lt;http://www.w3."
+#~| "org/1999/02/22-rdf-syntax-ns#&gt; </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">prefix foaf: &lt;http://xmlns.com/"
+#~| "foaf/0.1/&gt; </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">prefix pkg:  &lt;http://docs.oasis-"
+#~| "open.org/opendocument/meta/package/common#&gt; </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">prefix geo84: &lt;http://www.w3."
+#~| "org/2003/01/geo/wgs84_pos#&gt;</span></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">select ?s ?p ?o </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">where { </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\"> ?s ?p ?o </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">}</span></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p></body></html>"
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"># Insert your SPARQL query here<br /"
+#~ "># Results are shown below.</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix rdf:  &lt;http://www.w3."
+#~ "org/1999/02/22-rdf-syntax-ns#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix foaf: &lt;http://xmlns.com/"
+#~ "foaf/0.1/&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix pkg:  &lt;http://docs.oasis-"
+#~ "open.org/ns/office/1.2/meta/pkg#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix geo84: &lt;http://www.w3."
+#~ "org/2003/01/geo/wgs84_pos#&gt;</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">select ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">where { </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"> ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">}</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"># Εισαγάγετε τη SPARQL ερώτηση "
+#~ "εδώ<br /># Τα αποτελέσματα εμφανίζονται από κάτω.</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">πρόθεμα rdf:  &lt;http://www.w3."
+#~ "org/1999/02/22-rdf-syntax-ns#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">πρόθεμα foaf: &lt;http://xmlns.com/"
+#~ "foaf/0.1/&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">πρόθεμα pkg:  &lt;http://docs.oasis-"
+#~ "open.org/opendocument/meta/package/common#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">πρόθεμα geo84: &lt;http://www.w3."
+#~ "org/2003/01/geo/wgs84_pos#&gt;</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">select ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">where { </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"> ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">}</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p></body></html>"
+
+#~ msgid "Stylesheets"
+#~ msgstr "Φύλλα αισθητικής επικάλυψης"
+
+#~ msgid ""
+#~ "Set the default stylesheet for Semantic objects in this document. New RDF "
+#~ "objects will use this stylesheet automatically. The buttons allow you to "
+#~ "set the stylesheet for all existing semantic objects to the new default "
+#~ "stylesheet as well."
+#~ msgstr ""
+#~ "Προσδιορίστε το προκαθορισμένο φύλλο αισθητικής επικάλυψης για "
+#~ "σημασιολογικά αντικείμενα σε αυτό το έγγραφο. Νέα αντικείμενα RDF θα "
+#~ "χρησιμοποιήσουν αυτό το φύλλο αυτόματα. Τα κουμπιά σάς επιτρέπουν να "
+#~ "ορίσετε το φύλλο για όλα τα αντικείμενα σημασιολογίας στο νέο "
+#~ "προκαθορισμένο."
+
+#~ msgid "Apply Stylesheet"
+#~ msgstr "Εφαρμογή φύλλου αισθητικής επικάλυψης"
+
+#~ msgid "System"
+#~ msgstr "Σύστημα"
+
+#~ msgid "User"
+#~ msgstr "Χρήστης"
+
+#~ msgid "Reapply Current"
+#~ msgstr "Επανεφαρμογή τρέχοντος"
+
+#~ msgid "Disassociate"
+#~ msgstr "Αποσύνδεση"
+
+#~ msgid "Edit %1"
+#~ msgstr "Επεξεργασία %1"
+
+#~ msgid "Stylesheet Definition"
+#~ msgstr "Ορισμός φύλλου αισθητικής επικάλυψης"
+
+#~ msgid "Variables Available"
+#~ msgstr "Διαθέσιμες μεταβλητές"
+
+#~ msgid "Description"
+#~ msgstr "Περιγραφή"
+
+#~ msgid "Stylesheet Name"
+#~ msgstr "Όνομα φύλλου αισθητικής επικάλυψης"
+
+#~ msgid "Empty"
+#~ msgstr "Κενό"
+
+#~ msgid "URI"
+#~ msgstr "URI"
+
+#~ msgid "Literal"
+#~ msgstr "Κυριόλεκτο"
+
+#~ msgid "Blank"
+#~ msgstr "Κενό"
+
+#~ msgid "Valid"
+#~ msgstr "Έγκυρο"
+
+#~ msgid "Subject"
+#~ msgstr "Θέμα"
+
+#~ msgid "Predicate"
+#~ msgstr "Κατηγόρημα"
+
+#~ msgid "Obj Type"
+#~ msgstr "Τύπος αντ"
+
+#~ msgid "DataType"
+#~ msgstr "DataType"
+
+#~ msgid "Stored In"
+#~ msgstr "Αποθηκευμένο στο"
+
+#~ msgid "Invalid integer number"
+#~ msgstr "Μη έγκυρος ακέραιος αριθμός"
+
+#~ msgid "This integer number may be too large."
+#~ msgstr "Αυτός ο ακέραιος αριθμός ίσως να είναι πολύ μεγάλος."
+
+#~ msgid "Invalid identifier"
+#~ msgstr "Μη έγκυρο αναγνωριστικό"
+
+#~ msgid "Identifiers should start with a letter or '_' character"
+#~ msgstr "Τα αναγνωριστικά πρέπει να αρχίζουν με χαρακτήρα αλφαβητικό ή '_'"
+
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "Κανένα"
+
+#~ msgid "Small Bullet"
+#~ msgstr "Μικρά σφαίρα"
+
+#~ msgid "Circle Bullet"
+#~ msgstr "Κυκλική σφαίρα"
+
+#~ msgid "Square Bullet"
+#~ msgstr "Τετράγωνη σφαίρα"
+
+#~ msgid "Rhombus Bullet"
+#~ msgstr "Ρόμβος σφαίρα"
+
+#~ msgid "Check Mark Bullet"
+#~ msgstr "Check Mark σφαίρα"
+
+#~ msgid "Rightwards Arrow Bullet"
+#~ msgstr "Σφαίρα με δεξιόστροφο βέλος"
+
+#~ msgid "Arabic"
+#~ msgstr "Αραβικά"
+
+#~ msgid "Lower Alphabetical"
+#~ msgstr "Πεζά αλφαβητικά"
+
+#~ msgid "Upper Alphabetical"
+#~ msgstr "Κεφαλαία αλφαβητικά"
+
+#~ msgid "Upper Roman"
+#~ msgstr "Κεφαλαία ρωμαϊκά"
+
+#~ msgid "Large Bullet"
+#~ msgstr "Μεγάλη σφαίρα"
+
+#~ msgid "Ballot X Bullet"
+#~ msgstr "Ballot X σφαίρα"
+
+#~ msgid "Rightwards Arrow Head Bullet"
+#~ msgstr "Σφαίρα κεφαλής με δεξιόστροφο βέλος"
+
+#~ msgid "Bengali"
+#~ msgstr "Bengali"
+
+#~ msgid "Gujarati"
+#~ msgstr "Gujarati"
+
+#~ msgid "Gurumukhi"
+#~ msgstr "Gurumukhi"
+
+#~ msgid "Kannada"
+#~ msgstr "Kannada"
+
+#~ msgid "Malayalam"
+#~ msgstr "Malayalam"
+
+#~ msgid "Oriya"
+#~ msgstr "Oriya"
+
+#~ msgid "Tamil"
+#~ msgstr "Tamil"
+
+#~ msgid "Telugu"
+#~ msgstr "Telugu"
+
+#~ msgid "Tibetan"
+#~ msgstr "Tibetan"
+
+#~ msgid "Thai"
+#~ msgstr "Thai"
+
+#~ msgid "Abjad"
+#~ msgstr "Abjad"
+
+#~ msgid "AbjadMinor"
+#~ msgstr "AbjadMinor"
+
+#~ msgid "ArabicAlphabet"
+#~ msgstr "ArabicAlphabet"
+
+#~ msgid "Opacity"
+#~ msgstr "Αδιαφάνεια"
+
+#~ msgid "Recent:"
+#~ msgstr "Πρόσφατο:"
+
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "Προσθήκη / αφαίρεση χρωμάτων..."
+
+#~ msgid "Import Data"
+#~ msgstr "Εισαγωγή δεδομένων"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Recommended ( %1 )"
+#~ msgstr "Προτείνεται ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Locale ( %1 )"
+#~ msgstr "Εντοπιότητα ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Other ( %1 )"
+#~ msgstr "Άλλη ( %1 )"
+
+#~ msgid "Generic"
+#~ msgstr "Γενικευμένο"
+
+#~ msgid "Currency"
+#~ msgstr "Νόμισμα"
+
+#~ msgid "None"
+#~ msgstr "Καμία"
+
+#~ msgid ""
+#~ "Please check the ranges you specified. The start value must be lower than "
+#~ "the end value."
+#~ msgstr ""
+#~ "Παρακαλώ ελέγξτε τα όρια που θέσατε. Η αρχική τιμή πρέπει να είναι "
+#~ "μικρότερη από την τελική."
+
+#~ msgid "Cannot find encoding: %1"
+#~ msgstr "Δεν βρέθηκε η κωδικοποίηση: %1"
+
+#~ msgid "Data"
+#~ msgstr "Δεδομένα"
+
+#~ msgid "E&ncoding:"
+#~ msgstr "&Κωδικοποίηση:"
+
+#~ msgid "First row contains headers"
+#~ msgstr "Η πρώτη γραμμή περιέχει κεφαλίδες"
+
+#~ msgid "First column contains headers"
+#~ msgstr "Η πρώτη στήλη περιέχει κεφαλίδες"
+
+#~ msgid "Format"
+#~ msgstr "Τύπος"
+
+#~ msgid "Delimiter"
+#~ msgstr "Οριοθέτης"
+
+#~ msgid "Semicolon"
+#~ msgstr "Ερωτηματικό"
+
+#~ msgid "Other"
+#~ msgstr "Άλλο"
+
+#~ msgid "Tabulator"
+#~ msgstr "Στηλοθέτης"
+
+#~ msgid "Space"
+#~ msgstr "Space"
+
+#~ msgid "Text&quote:"
+#~ msgstr "Κείμενο &παράθεση:"
+
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "Decimal symbol:"
+#~ msgstr "Σύμβολο δεκαδικών:"
+
+#~ msgid "Thousands separator:"
+#~ msgstr "Διαχωριστικό χιλιάδων:"
+
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "Παράβλεψη διπλών οριοθετών"
+
+#~ msgid "&Format:"
+#~ msgstr "&Τύπος:"
+
+#~ msgid "Ranges"
+#~ msgstr "Διαστήματα"
+
+#~ msgid "Update"
+#~ msgstr "Ενημέρωση"
+
+#~ msgid "Import columns:"
+#~ msgstr "Εισαγωγή στηλών:"
+
+#~ msgid "Import lines:"
+#~ msgstr "Εισαγωγή γραμμών:"
+
+#~ msgid "to"
+#~ msgstr "έως"
+
+#, fuzzy
+#~| msgid "Show Dockers"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Float Docker"
+#~ msgstr "Εμφάνιση προσαρτήσεων"
+
+#, fuzzy
+#~| msgid "Close Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "Κλείσιμο εγγράφου"
+
+#, fuzzy
+#~| msgid "Tool Bars Docker"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "Προσάρτηση εργαλειογραμμών"
+
+#, fuzzy
+#~| msgid "Show Dockers"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Lock Docker"
+#~ msgstr "Εμφάνιση προσαρτήσεων"
+
+#~ msgid "&Encrypt"
+#~ msgstr "&Κρυπτογράφηση"
+
+#~ msgid "Keywords:"
+#~ msgstr "Λέξεις κλειδιά:"
+
+#~ msgid "Subject:"
+#~ msgstr "Θέμα:"
+
+#~ msgid "Last printed:"
+#~ msgstr "Τελευταία εκτύπωση:"
+
+#~ msgid "Total editing time:"
+#~ msgstr "Συνολικός χρόνος επεξεργασίας:"
+
+#~ msgid "Encryption:"
+#~ msgstr "Κρυπτογράφηση:"
+
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "Τίτλος:"
+
+#~ msgid "Revision number:"
+#~ msgstr "Αριθμός αναθεώρησης:"
+
+#~ msgid "Modified:"
+#~ msgstr "Τροποποιήθηκε:"
+
+#~ msgid "Comments:"
+#~ msgstr "Σχόλια:"
+
+#~ msgid "Created:"
+#~ msgstr "Δημιουργήθηκε:"
+
+#~ msgid "Path:"
+#~ msgstr "Διαδρομή:"
+
+#~ msgid "&Reset"
+#~ msgstr "&Επαναφορά"
+
+#, fuzzy
+#~| msgid "Last page:"
+#~ msgid "Language:"
+#~ msgstr "Τελευταία σελίδα:"
+
+#~ msgid "General"
+#~ msgstr "Γενικά"
+
+#~ msgid "Last saved by"
+#~ msgstr "Τελευταία αποθηκευμένο με"
+
+#~ msgid "Use ';' (Example: Office;KDE;Calligra)"
+#~ msgstr "Χρησιμοποιήστε το ';' (Παράδειγμα: Office;KDE;Calligra)"
+
+#~ msgid "This document will be decrypted"
+#~ msgstr "Το έγγραφο αυτό θα αποκρυπτογραφηθεί"
+
+#~ msgid "Do not decrypt"
+#~ msgstr "Να μην αποκρυπτογραφηθεί"
+
+#~ msgid "This document is encrypted"
+#~ msgstr "Το έγγραφο αυτό είναι κρυπτογραφημένο"
+
+#~ msgid "D&ecrypt"
+#~ msgstr "Α&ποκρυπτογράφηση"
+
+#~ msgid "This document will be encrypted."
+#~ msgstr "Το έγγραφο αυτό θα κρυπτογραφηθεί."
+
+#~ msgid "Do not encrypt"
+#~ msgstr "Να μην κρυπτογραφηθεί"
+
+#~ msgid "This document is not encrypted"
+#~ msgstr "Το έγγραφο αυτό δεν είναι κρυπτογραφημένο"
+
+#~ msgid "This document does not support encryption"
+#~ msgstr "Το έγγραφο αυτό δεν υποστηρίζει κρυπτογράφηση"
+
+#~ msgid ""
+#~ "<qt>Decrypting the document will remove the password protection from it."
+#~ "<p>Do you still want to decrypt the file?</qt>"
+#~ msgstr ""
+#~ "<qt>Η αποκρυπτογράφηση του εγγράφου θα αφαιρέσει την προστασία κωδικού "
+#~ "από αυτό.<p>Επιθυμείτε ακόμη την αποκρυπτογράφηση του αρχείου;</qt>"
+
+#~ msgid "Confirm Decrypt"
+#~ msgstr "Επιβεβαίωση αποκρυπτογράφησης"
+
+#~ msgid "Decrypt"
+#~ msgstr "Αποκρυπτογράφηση"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "decryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>Το έγγραφό σας δεν μπορεί να αποθηκευτεί αυτόματα.<p> Για την "
+#~ "ολοκλήρωση της αποκρυπτογράφησης, παρακαλώ αποθηκεύστε το έγγραφο.</qt>"
+
+#~ msgid "Save Document"
+#~ msgstr "Αποθήκευση εγγράφου"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "decryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt>Το έγγραφο τροποποιήθηκε από το τελευταίο άνοιγμά του. Για την "
+#~ "ολοκλήρωση της αποκρυπτογράφησης, το έγγραφο πρέπει να αποθηκευτεί."
+#~ "<p>Επιθυμείτε τώρα την αποθήκευση του εγγράφου;</qt>"
+
+#~ msgid ""
+#~ "<qt>The document is currently saved as %1. The document needs to be "
+#~ "changed to <b>OASIS OpenDocument</b> to be encrypted.<p>Do you want to "
+#~ "change the file to OASIS OpenDocument?</qt>"
+#~ msgstr ""
+#~ "<qt>Το έγγραφο αποθηκεύτηκε ως %1. Χρειάζεται να μετατραπεί σε <b>OASIS "
+#~ "OpenDocument</b> για να κρυπτογραφηθεί.<p>Επιθυμείτε τη μετατροπή του σε "
+#~ "αρχείο OASIS OpenDocument;</qt>"
+
+#~ msgid "Change Filetype"
+#~ msgstr "Αλλαγή τύπου αρχείου"
+
+#~ msgid "Change"
+#~ msgstr "Αλλαγή"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "encryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>Το έγγραφό σας δεν μπορεί να αποθηκευτεί αυτόματα.<p> Για την "
+#~ "ολοκλήρωση της κρυπτογράφησης, παρακαλώ αποθηκεύστε το έγγραφο.</qt>"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "encryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt>Το έγγραφο τροποποιήθηκε από το τελευταίο άνοιγμά του. Για την "
+#~ "ολοκλήρωση της κρυπτογράφησης, το έγγραφο πρέπει να αποθηκευτεί."
+#~ "<p>Επιθυμείτε τώρα την αποθήκευση του εγγράφου;</qt>"
+
+#~ msgid "Remove"
+#~ msgstr "Αφαίρεση"
+
+#~ msgid "Open palette"
+#~ msgstr "Άνοιγμα παλέτας"
+
+#~ msgid "Save palette"
+#~ msgstr "Αποθήκευση παλέτας"
+
+#~ msgid "Add Color To Palette"
+#~ msgstr "Προσθήκη χρώματος στην παλέτα"
+
+#~ msgid "Color name:"
+#~ msgstr "Όνομα χρώματος:"
+
+#, fuzzy
+#~| msgid "Add Color To Palette"
+#~ msgid "Gimp Color Palette (*.gpl)"
+#~ msgstr "Προσθήκη χρώματος στην παλέτα"
+
+#~ msgid "Cannot write to palette file %1. Maybe it is read-only. "
+#~ msgstr ""
+#~ "Αδυναμία εγγραφής του αρχείου παλέτας %1. Ίσως είναι μόνο για ανάγνωση. "
+
+#~ msgid "Palette"
+#~ msgstr "Παλέτα"
+
+#~ msgid "Add/Remove Colors"
+#~ msgstr "Προσθήκη/αφαίρεση χρωμάτων"
+
+#~ msgid "All supported formats"
+#~ msgstr "Όλοι οι υποστηριζόμενοι τύποι"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Testing: OpenFile"
+#~ msgstr "Άνοιγμα παλέτας"
+
+#, fuzzy
+#~| msgid "&Uncompress to Directory"
+#~ msgid "Testing: OpenDirectory"
+#~ msgstr "&Αποσυμπίεση σε φάκελο"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFile"
+#~ msgstr "Λείπει το φίλτρο εισαγωγής"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "Λείπει το φίλτρο εισαγωγής"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "Import resource"
+#~ msgid "Testing: Import Directory"
+#~ msgstr "Εισαγωγή πόρου"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Testing: SaveFile"
+#~ msgstr "Αποθήκευση παλέτας"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Open File"
+#~ msgstr "Άνοιγμα παλέτας"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Open Files"
+#~ msgstr "Άνοιγμα παλέτας"
+
+#, fuzzy
+#~| msgid "Choose Filter"
+#~ msgid "Filter:"
+#~ msgstr "Επιλογή φίλτρου"
+
+#, fuzzy
+#~| msgid "Label"
+#~ msgid "TextLabel"
+#~ msgstr "Ετικέτα"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Named"
+#~ msgstr "Όνομα"
+
+#, fuzzy
+#~| msgid "Set default format"
+#~ msgid "Set default filter"
+#~ msgstr "Ορισμός προκαθορισμένου τύπου"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Save File"
+#~ msgstr "Αποθήκευση παλέτας"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Import Files"
+#~ msgstr "Εισαγωγή γραμμών:"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Import File"
+#~ msgstr "Εισαγωγή γραμμών:"
+
+#, fuzzy
+#~| msgid "&Uncompress to Directory"
+#~ msgid "Open Directory"
+#~ msgstr "&Αποσυμπίεση σε φάκελο"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "Import resource"
+#~ msgid "Import Directory"
+#~ msgstr "Εισαγωγή πόρου"
+
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "Κανένα"
+
+#~ msgctxt "Solid color stroke or fill"
+#~ msgid "Solid"
+#~ msgstr "Συμπαγές"
+
+#~ msgid "Gradient"
+#~ msgstr "Διαβάθμιση"
+
+#~ msgid "Pattern"
+#~ msgstr "Μοτίβο"
+
+#~ msgid "Change the filling color"
+#~ msgstr "Αλλαγή χρώματος γέμισης"
+
+#, fuzzy
+#~| msgid "Change the filling color"
+#~ msgid "Change the filling gradient"
+#~ msgstr "Αλλαγή χρώματος γέμισης"
+
+#, fuzzy
+#~| msgid "Change the filling color"
+#~ msgid "Change the filling pattern"
+#~ msgstr "Αλλαγή χρώματος γέμισης"
+
+#~ msgid "Icon and Text"
+#~ msgstr "Εικονίδιο και κείμενο"
+
+#~ msgid "Icon only"
+#~ msgstr "Εικονίδιο μόνο"
+
+#~ msgid "Tabs side"
+#~ msgstr "Πλευρά καρτελών"
+
+#~ msgid "Top side"
+#~ msgstr "Πάνω πλευρά"
+
+#~ msgid "Bottom side"
+#~ msgstr "Κάτω πλευρά"
+
+#~ msgid "Left side"
+#~ msgstr "Αριστερή πλευρά"
+
+#~ msgid "Right side"
+#~ msgstr "Δεξιά πλευρά"
+
+#~ msgid "Page Layout"
+#~ msgstr "Σελιδοποίηση"
+
+#~ msgid "Apply to document"
+#~ msgstr "Εφαρμογή στο έγγραφο"
+
+#~ msgid "Left Edge:"
+#~ msgstr "Αριστερό άκρο:"
+
+#~ msgid "Right Edge:"
+#~ msgstr "Δεξί άκρο:"
+
+#~ msgid "Binding Edge:"
+#~ msgstr "Άκρο σύνδεσης:"
+
+#~ msgid "Page Edge:"
+#~ msgstr "Άκρο σελίδας:"
+
+#~ msgid "Facing Pages:"
+#~ msgstr "Αντικριστές σελίδες:"
+
+#~ msgid "Facing pages"
+#~ msgstr "Αντικριστές σελίδες"
+
+#~ msgid "Page Layout:"
+#~ msgstr "Σελιδοποίηση:"
+
+#~ msgid "Page spread"
+#~ msgstr "Ανάπτυγμα σελίδας"
+
+#~ msgid "Unit:"
+#~ msgstr "Μονάδα:"
+
+#~ msgid "Follow style:"
+#~ msgstr "Ακολουθούμενο στιλ:"
+
+#~ msgid "Size:"
+#~ msgstr "Μέγεθος:"
+
+#~ msgid "Width:"
+#~ msgstr "Πλάτος:"
+
+#~ msgid "Height:"
+#~ msgstr "Ύψος:"
+
+#~ msgid "Orientation:"
+#~ msgstr "Προσανατολισμός:"
+
+#~ msgid "Facing pages:"
+#~ msgstr "Αντικριστές σελίδες:"
+
+#~ msgid "Single sided"
+#~ msgstr "Μονής πλευράς"
+
+#~ msgid "Text direction:"
+#~ msgstr "Κατεύθυνση κειμένου:"
+
+#~ msgid "Automatic"
+#~ msgstr "Αυτόματη"
+
+#~ msgid "Left to right"
+#~ msgstr "Αριστερά προς δεξιά"
+
+#~ msgid "Right to left"
+#~ msgstr "Δεξιά προς αριστερά"
+
+#~ msgid "Margins"
+#~ msgstr "Περιθώρια"
+
+#~ msgid "Top:"
+#~ msgstr "Πάνω:"
+
+#~ msgid "Binding edge:"
+#~ msgstr "Άκρο σύνδεσης:"
+
+#~ msgid "Page edge:"
+#~ msgstr "Άκρο σελίδας:"
+
+#~ msgid "Bottom:"
+#~ msgstr "Κάτω:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "Εισαγωγή πόρου"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Delete resource"
+#~ msgstr "Διαγραφή πόρου"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "Λήψη πόρου"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "Κοινή χρήση πόρου"
+
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "Επιλογή αρχείου για προσθήκη"
+
+#~ msgid "New tag"
+#~ msgstr "Νέα ετικέτα"
+
+#~ msgid "Assign to tag"
+#~ msgstr "Ανάθεση σε ετικέτα"
+
+#~ msgid "Remove from this tag"
+#~ msgstr "Αφαίρεση από αυτή την ετικέτα"
+
+#~ msgid "Remove from other tag"
+#~ msgstr "Αφαίρεση από άλλη ετικέτα"
+
+#~ msgid "Tags"
+#~ msgstr "Ετικέτες"
+
+#~ msgid ""
+#~ "<qt>The tag you are trying to undelete already exists in tag list."
+#~ "<br>Please enter a new, unique name for it.</qt>"
+#~ msgstr ""
+#~ "<qt>Η ετικέτα για την οποία επιχειρείτε την αναίρεση της διαγραφής "
+#~ "υπάρχει ήδη στη λίστα ετικετών.<br>Καταχωρήστε παρακαλώ ένα νέο, μοναδικό "
+#~ "όνομα για αυτή.</qt>"
+
+#~ msgid "Tag was not undeleted."
+#~ msgstr "Η διαγραφή της ετικέτας δεν αναιρέθηκε."
+
+#, fuzzy
+#~| msgid "Allanon"
+#~ msgid "All"
+#~ msgstr "Allanon"
+
+#~ msgid "Change the color of the shadow"
+#~ msgstr "Αλλαγή χρώματος σκίασης"
+
+#~ msgid "Blur:"
+#~ msgstr "Θόλωμα:"
+
+#~ msgid "Distance:"
+#~ msgstr "Απόσταση:"
+
+#~ msgid "Butt cap"
+#~ msgstr "Σταυροειδής απόληξη"
+
+#~ msgid "Round cap"
+#~ msgstr "Στρογγυλή απόληξη"
+
+#~ msgid "Square cap"
+#~ msgstr "Τετράγωνη απόληξη"
+
+#~ msgid "Miter join"
+#~ msgstr "Γωνιακή ένωση"
+
+#~ msgid "Round join"
+#~ msgstr "Κυκλική ένωση"
+
+#~ msgid "Bevel join"
+#~ msgstr "Λοξότμητη ένωση"
+
+#~ msgid "Miter limit"
+#~ msgstr "Όριο γωνιακής ένωσης:"
+
+#~ msgid "Thickness:"
+#~ msgstr "Πάχος:"
+
+#~ msgid "Set line width of actual selection"
+#~ msgstr "Ορισμός πλάτους γραμμής πραγματιστικής επιλογής"
+
+#~ msgid "Change the color of the line/border"
+#~ msgstr "Αλλαγή χρώματος (οριο)γραμμής"
+
+#, fuzzy
+#~| msgid "Tags"
+#~ msgid "Tag"
+#~ msgstr "Ετικέτες"
+
+#~ msgid "Enter resource filters here"
+#~ msgstr "Καταχωρήστε εδώ τα φίλτρα πόρων"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<qt>Save the currently filtered set as the new members of the current tag."
+#~ "</qt>"
+#~ msgstr ""
+#~ "<qt>Αποθήκευση των τρεχόντων φιλτραρισμένων συνόλων ως τα νέα μέλη της "
+#~ "τρέχουσας ετικέτας.</qt>"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "<qt>Show the tag box options.</qt>"
+#~ msgstr "<qt>Εμφάνιση του πλαισίου επιλογών ετικέτας.</qt>"
+
+#~ msgid "Rename tag"
+#~ msgstr "Μετονομασία σελίδας"
+
+#~ msgid "Delete this tag"
+#~ msgstr "Διαγραφή αυτής της ετικέτας"
+
+#~ msgid "Clear undelete list"
+#~ msgstr "Καθαρισμός λίστας αναίρεσης διαγραφής"
+
+#~ msgid "Undelete"
+#~ msgstr "Αναίρεση διαγραφής"
+
+#~ msgid "Tool Options"
+#~ msgstr "Επιλογές εργαλείου"
+
+#, fuzzy
+#~| msgid "Toggles organising the options in tabs or not"
+#~ msgid "Toggles organizing the options in tabs or not"
+#~ msgstr "Η εναλλαγή οργανώνει τις επιλογές σε καρτέλες ή όχι"
+
+#~ msgid "deselect item"
+#~ msgstr "αναίρεση επιλογής αντικειμένου"
+
+#~ msgid "select item"
+#~ msgstr "επιλογή αντικειμένου"
+
+#~ msgid "Use same aspect as pixels"
+#~ msgstr "Χρήση ίδιας αναλογίας με τα εικονοστοιχεία"
+
+#~ msgid "Zoom to Selection"
+#~ msgstr "Εστίαση στην επιλογή"
+
+#~ msgid "Zoom to All"
+#~ msgstr "Εστίαση όλων"
+
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1"
+
+#~ msgid "All Presets"
+#~ msgstr "Όλα τα προκαθορισμένα"
+
+#, fuzzy
+#~| msgid "Static Image"
+#~ msgctxt "Static Image"
+#~ msgid "Static"
+#~ msgstr "Στατική εικόνα"
+
+#~ msgid "Value (brightness)"
+#~ msgstr "Αξία (λαμπρότητα)"
+
+#~ msgid "Cyan"
+#~ msgstr "Κυανό"
+
+#~ msgid "Magenta"
+#~ msgstr "Ματζέντα"
+
+#~ msgid "Yellow"
+#~ msgstr "Κίτρινο"
+
+#~ msgid "Black"
+#~ msgstr "Μαύρο"
+
+#~ msgid "Green to magenta*"
+#~ msgstr "Πράσινο σε ματζέντα"
+
+#~ msgid "Blue to yellow"
+#~ msgstr "Μπλε σε κίτρινο"
+
+#~ msgid "Opacity:"
+#~ msgstr "Αδιαφάνεια:"
+
+#~ msgid "&Themes"
+#~ msgstr "&Θέματα"
+
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "Προκαθορισμένο"
+
+#~ msgid "Configuration..."
+#~ msgstr "Διαμόρφωση..."
+
+#~ msgid ""
+#~ "Cannot start Colors Settings panel from KDE Control Center. Please check "
+#~ "your system..."
+#~ msgstr ""
+#~ "Αδυναμία εκκίνησης πίνακα ρυθμίσεων χρωμάτων από το κέντρο ελέγχου του "
+#~ "KDE. Ελέγξτε το σύστημά σας..."
+
+#~ msgid "&Tools"
+#~ msgstr "Ε&ργαλεία"
+
+#~ msgid ""
+#~ "The manifest file seems to be corrupted. The document could not be opened."
+#~ msgstr ""
+#~ "Το αρχείο δήλωσης φαίνεται να είναι κατεστραμμένο. Αδυναμία ανοίγματος "
+#~ "του εγγράφου."
+
+#~ msgid "Color Selector"
+#~ msgstr "Επιλογέας χρωμάτων"
+
+#~ msgid "Database file \"%1\" does not exist."
+#~ msgstr "Το αρχείο βάσης δεδομένων \"%1\" δεν υπάρχει."
+
+#~ msgid "Cannot drop database - name not specified."
+#~ msgstr "Αδυναμία διαγραφής της βάσης δεδομένων - το όνομα δεν έχει οριστεί."
+
+#~ msgid "Table \"%1\" does not exist in the database."
+#~ msgstr "Ο πίνακας \"%1\" δεν υπάρχει στη βάση δεδομένων."
+
+#~ msgid "Single transactions"
+#~ msgstr "Μεμονωμένες συναλλαγές"
+
+#~ msgid "Multiple transactions"
+#~ msgstr "Πολλαπλές συναλλαγές"
+
+#~ msgid "Nested transactions"
+#~ msgstr "Φωλιασμένες συναλλαγές"
+
+#~ msgid "Ignored"
+#~ msgstr "Παραβλέφθηκε"
+
+#~ msgid "No such driver service: \"%1\"."
+#~ msgstr "Δεν υπάρχει τέτοια υπηρεσία οδηγού: \"%1\"."
+
+#~ msgid "Could not compact database \"%1\"."
+#~ msgstr "Αδυναμία συμπίεσης βάσης δεδομένων \"%1\"."
+
+#~ msgid "Do you want to open file \"%1\" as read-only?"
+#~ msgstr "Θέλετε να ανοίξετε το αρχείο \"%1\" για ανάγνωση-μόνο;"
+
+#~ msgid "The file is probably already open on this or another computer."
+#~ msgstr "Το αρχείο είναι μάλλον ανοιχτό σε αυτόν ή σε άλλον υπολογιστή."
+
+#~ msgid "Could not gain exclusive access for writing the file."
+#~ msgstr "Αδυναμία απόκτησης αποκλειστικής πρόσβασης για εγγραφή στο αρχείο."
+
+#~ msgid "Open As Read-Only"
+#~ msgstr "Άνοιγμα για ανάγνωση-μόνο"
+
+#~ msgid "Could not close busy database."
+#~ msgstr "Αδυναμία κλεισίματος απασχολημένης βάσης δεδομένων."
+
+#~ msgid "Could not remove file \"%1\"."
+#~ msgstr "Αδυναμία αφαίρεσης του αρχείου \"%1\"."
+
+#~ msgid ""
+#~ "Check the file's permissions and whether it is already opened and locked "
+#~ "by another application."
+#~ msgstr ""
+#~ "Εξετάστε τα δικαιώματα του αρχείου και αν είναι ήδη ανοιχτό και "
+#~ "κλειδωμένο από άλλη εφαρμογή."
+
+#~ msgid "Compacting database"
+#~ msgstr "Συμπίεση βάσης δεδομένων"
+
+#~ msgid "Compacting database \"%1\"..."
+#~ msgstr "Συμπίεση βάσης δεδομένων \"%1\"..."
+
+#~ msgid ""
+#~ "The database has been compacted. Current size decreased by %1% to %2."
+#~ msgstr ""
+#~ "Η βάση δεδομένων έχει συμπιεστεί. Το τρέχον μέγεθος μειώθηκε κατά %1% σε "
+#~ "%2."
+
+#~ msgid "No query specified"
+#~ msgstr "Δεν ορίστηκε ερώτηση"
+
+#~ msgid "Table \"%1\" does not exist"
+#~ msgstr "Ο πίνακας \"%1\" δεν υπάρχει"
+
+#~ msgid "Track Total"
+#~ msgstr "Ανίχνευση συνόλου"
+
+#~ msgid "Track Builtin Format"
+#~ msgstr "Ανίχνευση ενσωματωμένου τύπου"
+
+#~ msgid "Use Sub Total"
+#~ msgstr "Χρήση υποσυνόλου"
+
+#~ msgid "Track Total Format"
+#~ msgstr "Ανίχνευση συνόλου τύπων"
+
+#~ msgid "Grid Snap"
+#~ msgstr "Εξαφάνιση καννάβου"
+
+#~ msgid "                Language:"
+#~ msgstr "               Γλώσσα:"
+
+#~ msgid "PushButton"
+#~ msgstr "ΚουμπίΠίεσης"
+
+#~ msgid "Formatting"
+#~ msgstr "Γίνεται διαμόρφωση"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open\n"
+#~| "%1.\n"
+#~| "The filter plugins have not been properly registered. Please reboot "
+#~| "Windows. %2 will now close."
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1.\n"
+#~ "The filter plugins have not been properly registered. Please reboot "
+#~ "Windows. Krita Sketch will now close."
+#~ msgstr ""
+#~ "Αδυναμία ανοίγματος\n"
+#~ "του %1.\n"
+#~ "Τα πρόσθετα φιλτραρίσματος δεν έχουν καταχωρηθεί σωστά. Επανεκκινήστε τα "
+#~ "Windows. Το %2 τώρα θα κλείσει."
+
+#, fuzzy
+#~| msgid "&Uncompress to Directory"
+#~ msgid "Testing: OpenDirectories"
+#~ msgstr "&Αποσυμπίεση σε φάκελο"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "Import resource"
+#~ msgid "Testing: ImportDirectories"
+#~ msgstr "Εισαγωγή πόρου"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Recover Files"
+#~ msgid "Testing: SaveFiles"
+#~ msgstr "Επαναφορά αρχείων"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "Import resource"
+#~ msgid "Import Directories"
+#~ msgstr "Εισαγωγή πόρου"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Recover Files"
+#~ msgid "Save Files"
+#~ msgstr "Επαναφορά αρχείων"
+
+#~ msgid "Create Path"
+#~ msgstr "Δημιουργία διαδρομής"
+
+#~ msgid "Could not export file. Did you specify the correct file format?"
+#~ msgstr "Αδυναμία εξαγωγής του αρχείου. Ορίσατε τον σωστό τύπο αρχείου;"
+
+#~ msgid "Red Green Blue"
+#~ msgstr "Κόκκινο Πράσινο Μπλε"
+
+#~ msgid "L a* b*"
+#~ msgstr "L a* b*"
+
+#~ msgid "Cyan Magenta Yellow Black"
+#~ msgstr "Κυανό Ματζέντα Κίτρινο Μαύρο"
+
+#~ msgid "Error!"
+#~ msgstr "Σφάλμα!"
+
+#~ msgid "Contacts"
+#~ msgstr "Επαφές"
+
+#~ msgid "Events"
+#~ msgstr "Γεγονότα"
+
+#~ msgid "Locations"
+#~ msgstr "Τοποθεσίες"
+
+#~ msgid "Area"
+#~ msgstr "Περιοχή"
+
+#~ msgid "Region"
+#~ msgstr "Περιφέρεια"
+
+#~ msgid ""
+#~ "Could not add entry\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Αδυναμία προσθήκης δεδομένων\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not save iCal file\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Αδυναμία αποθήκευσης iCal αρχείου\n"
+#~ "%1"
+
+#~ msgid "&Summary:"
+#~ msgstr "&Περίληψη:"
+
+#~ msgid "&Location:"
+#~ msgstr "&Θέση:"
+
+#~ msgid "&Start:"
+#~ msgstr "Α&ρχή:"
+
+#~ msgid "&End:"
+#~ msgstr "&Τέλος:"
+
+#~ msgid "Time and Date"
+#~ msgstr "Ώρα και Ημερομηνία"
+
+#~ msgid "Timezone"
+#~ msgstr "Ζώνη ώρας"
+
+#~ msgid "Calendar Event"
+#~ msgstr "Ημερολογιακό γεγονός"
+
+#~ msgid "Import event to Calendar"
+#~ msgstr "Εισαγωγή γεγονότος στο ημερολόγιο"
+
+#~ msgid "Export event to iCal file..."
+#~ msgstr "Εξαγωγή γεγονότος σε iCal αρχείο..."
+
+#~ msgid "&Name:"
+#~ msgstr "Ό&νομα:"
+
+#~ msgid "&Nick:"
+#~ msgstr "Ψευδώ&νυμο:"
+
+#~ msgid "&Phone Number:"
+#~ msgstr "Αριθμός τηλε&φώνου:"
+
+#~ msgid "&Home Page:"
+#~ msgstr "Αρ&χική σελίδα:"
+
+#~ msgid "Contact Information"
+#~ msgstr "Πληροφορίες επαφής"
+
+#~ msgid "Import contact"
+#~ msgstr "Εισαγωγή επαφής"
+
+#~ msgid "Export as vcard..."
+#~ msgstr "Εξαγωγή ως vcard..."
+
+#~ msgid "&Name"
+#~ msgstr "Ό&νομα"
+
+#~ msgid "The Earth"
+#~ msgstr "Η Γη"
+
+#~ msgid "The Marble widget displays a virtual globe."
+#~ msgstr "Το γραφικό συστατικό Marble εμφανίζει μια εικονική υδρόγειο."
+
+#~ msgid "Navigation Control"
+#~ msgstr "Έλεγχος πλοήγησης"
+
+#~ msgid "Use this control to navigate."
+#~ msgstr "Χρησιμοποιήστε αυτό το στοιχείο ελέγχου για την πλοήγηση."
+
+#~ msgid "Latitude"
+#~ msgstr "Γεωγραφικό πλάτος"
+
+#~ msgid "Longitude"
+#~ msgstr "Γεωγραφικό μήκος"
+
+#~ msgid "Location Information"
+#~ msgstr "Πληροφορίες τοποθεσίας"
+
+#~ msgid "People"
+#~ msgstr "Άνθρωποι"
+
+#~ msgid ""
+#~ "A document with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "Υπάρχει ήδη ένα έγγραφο με αυτό το όνομα.\n"
+#~ "Θέλετε να αντικατασταθεί;"
+
+#~ msgid "Unknown Calligra MimeType %1. Check your installation."
+#~ msgstr "Άγνωστος τύπος Mime του Calligra %1. Ελέγξτε την εγκατάστασή σας."
+
+#~ msgid "%1 (Uncompressed XML Files)"
+#~ msgstr "%1 (Ασυμπίεστα αρχεία XML)"
+
+#~ msgid "%1 (Flat XML File)"
+#~ msgstr "%1 (Απλά αρχεία XML)"
+
+#~ msgid "%1 (Encrypted)"
+#~ msgstr "%1 (κρυπτογραφημένο)"
+
+#~ msgid "%1 (%2 Compatible)"
+#~ msgstr "%1 (%2 συμβατό)"
+
+#~ msgid "Save Document As"
+#~ msgstr "Αποθήκευση εγγράφου ως"
+
+#~ msgid "Export Document As"
+#~ msgstr "Εξαγωγή εγγράφου ως"
+
+#~ msgid "Export to PDF"
+#~ msgstr "Εξαγωγή σε PDF"
+
+#~ msgid "To change background color use Stroke and Fill docker."
+#~ msgstr ""
+#~ "Τροποποιήστε το χρώμα του φόντου με χρήση των Stroke και Fill docker."
+
+#~ msgid "Slide Background"
+#~ msgstr "Φόντο διαφάνειας"
+
+#~ msgid "Document background"
+#~ msgstr "Φόντο εγγράφου"
+
+#~ msgid "&OK"
+#~ msgstr "&Εντάξει"
+
+#~ msgid "&Cancel"
+#~ msgstr "Α&κύρωση"
+
+#~ msgid "Error Encountered"
+#~ msgstr "Εμφάνιση σφάλματος"
+
+#~ msgid "Unable to add a new group because its name would not be unique"
+#~ msgstr "Αδυναμία προσθήκης νέας ομάδας επειδή δεν θα είχε μοναδικό όνομα"
+
+#~ msgid "First Page"
+#~ msgstr "Πρώτη σελίδα"
+
+#~ msgid "Even Pages(s)"
+#~ msgstr "Σελίδες άρτιας αρίθμησης"
+
+#~ msgid "Any Pages(s)"
+#~ msgstr "Όλες οι σελίδες"
+
+#~ msgid "&Edit"
+#~ msgstr "&Επεξεργασία"
+
+#~ msgid "&Close"
+#~ msgstr "&Κλείσιμο"
+
+#~ msgid "Snapping"
+#~ msgstr "Προσαρμογή θέσης"
+
+#~ msgid "Dodge"
+#~ msgstr "Ελιγμός"
+
+#~ msgid "Hard light"
+#~ msgstr "Σκληρό φως"
+
+#~ msgid "Soft light"
+#~ msgstr "Απαλό φως"
+
+#~ msgid "Show Shadow"
+#~ msgstr "Εμφάνιση σκιάς"
+
+#~ msgid "Angle:"
+#~ msgstr "Γωνία:"
+
+#~ msgid "Offset:"
+#~ msgstr "Μετατόπιση:"
+
+#~ msgid "Color:"
+#~ msgstr "Χρώμα:"
+
+#~ msgid "Blur radius:"
+#~ msgstr "Ακτίνα θαμπώματος:"
+
+#~ msgid "Style:"
+#~ msgstr "Στιλ:"
+
+#~ msgid "Cap:"
+#~ msgstr "Απόληξη:"
+
+#~ msgid "Join:"
+#~ msgstr "Ένωση:"
+
+#~ msgid "Set miter limit"
+#~ msgstr "Ορισμός ορίου γωνιακής ένωσης"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bookmark"
+#~ msgstr "Εισαγωγή σελιδοδείκτη"
+
+#~ msgid "Insert Table"
+#~ msgstr "Εισαγωγή πίνακα"
+
+#~ msgid "Insert Row Above"
+#~ msgstr "Εισαγωγή γραμμής επάνω"
+
+#~ msgid "Insert Column Left"
+#~ msgstr "Εισαγωγή στήλης αριστερά"
+
+#~ msgid "Insert Column Right"
+#~ msgstr "Εισαγωγή στήλης δεξιά"
+
+#~ msgid "Delete Column"
+#~ msgstr "Διαγραφή στήλης"
+
+#~ msgid "Delete Row"
+#~ msgstr "Διαγραφή γραμμής"
+
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Εισαγωγή πίνακα περιεχομένων"
+
+#~ msgid "Insert Bibliography"
+#~ msgstr "Εισαγωγή βιβλιογραφίας"
+
+#~ msgid "Typing"
+#~ msgstr "Πληκτρολόγηση"
+
+#~ msgid "min"
+#~ msgstr "min"
+
+#~ msgid "DetailsPaneBase"
+#~ msgstr "DetailsPaneBase"
+
+#~ msgid "Embedding Object"
+#~ msgstr "Ενσωματωμένο αντικείμενο"
+
+#~ msgid "I&mport..."
+#~ msgstr "&Εισαγωγή..."
+
+#~ msgid "&Default"
+#~ msgstr "&Προκαθορισμένο"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select Item"
+#~ msgstr "Επιλογή αντικειμένου"
+
+#~ msgid "Background Tool"
+#~ msgstr "Εργαλείο φόντου"
+
+#~ msgid "Use the styles docker to manipulate the background."
+#~ msgstr "Χρήση προσάρτησης στιλ για το χειρισμό του φόντου."
+
+#~ msgid "Background editing tool"
+#~ msgstr "Εργαλείο επεξεργασίας φόντου"
+
+#~ msgid "Use master background"
+#~ msgstr "Χρήση φόντου πρωτότυπου"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Separate paths"
+#~ msgstr "Διαχωρισμός διαδρομών"
+
+#~ msgid ""
+#~ "An autosaved file for an unnamed document exists in %1.\n"
+#~ "This file is dated %2\n"
+#~ "Do you want to open it?"
+#~ msgstr ""
+#~ "Ένα αρχείο αυτόματης αποθήκευσης για ένα ανώνυμο έγγραφο υπάρχει στο %1.\n"
+#~ "Το αρχείο έχει ημερομηνία %2\n"
+#~ "Θέλετε να το ανοίξετε;"
+
+#~ msgid "&Delete Personal Data"
+#~ msgstr "&Διαγραφή προσωπικών δεδομένων"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shapes"
+#~ msgstr "Διαγραφή σχημάτων"
+
+#~ msgid "Substract"
+#~ msgstr "Αφαίρεση"
+
+#~ msgid "Inverse Substract"
+#~ msgstr "Αντιστροφή αφαίρεσης"
+
+#~ msgid ""
+#~ "No personal contact data set, please use the "
+#~ "option                                     \"Set as Personal Contact Data"
+#~ "\" from the \"Edit\"     menu in KAddressbook to set one."
+#~ msgstr ""
+#~ "Δεν ορίστηκαν προσωπικά δεδομένα επαφής, παρακαλώ χρησιμοποιήστε την "
+#~ "επιλογή  \"Ορισμός ως προσωπικά δεδομένα επαφής\" από το μενού "
+#~ "\"Επεξεργασία\" στο KAddressbook."
+
+#~ msgid "Hide colors with bad contrast"
+#~ msgstr "Απόκρυψη χρωμάτων με κακή αντίθεση"
+
+#~ msgid "&Load From Address Book"
+#~ msgstr "&Φόρτωση από το βιβλίο διευθύνσεων"
+
+#~ msgid "Shadow Angle:"
+#~ msgstr "Γωνία σκιάς:"
+
+#~ msgid "Shadow Color:"
+#~ msgstr "Χρώμα σκιάς:"
+
+#~ msgid "Toggles showing a title bar"
+#~ msgstr "Η εναλλαγή εμφανίζει μια γραμμή τίτλου"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set border"
+#~ msgstr "Ορισμός περιθωρίου"
+
+#~ msgid "Ellipse Shape"
+#~ msgstr "Σχήμα έλλειψης"
+
+#~ msgid "Set Horizontal Alignment"
+#~ msgstr "Ορισμός οριζόντιας στοίχισης"
+
+#~ msgid "Line Break"
+#~ msgstr "Αλλαγή γραμμής"
+
+#~ msgid "Hide Grid"
+#~ msgstr "Απόκρυψη καννάβου"
+
+#~ msgid "Hide Guides"
+#~ msgstr "Απόκρυψη οδηγών"
+
+#~ msgid "&Close All Views"
+#~ msgstr "&Κλείσιμο όλων των προβολών"
+
+#~ msgid "&Split View"
+#~ msgstr "&Διαίρεση προβολής"
+
+#~ msgid "&Remove View"
+#~ msgstr "&Αφαίρεση προβολής"
+
+#~ msgid "Splitter &Orientation"
+#~ msgstr "&Προσανατολισμός διαχωριστικού"
+
+#~ msgid "&Horizontal"
+#~ msgstr "&Οριζόντιος"
+
+#~ msgid "&Vertical"
+#~ msgstr "&Κατακόρυφος"
+
+#~ msgid "End"
+#~ msgstr "Τέλος"
+
+#~ msgid "Printing page %1"
+#~ msgstr "Εκτύπωση σελίδας %1"
+
+#~ msgid "Form"
+#~ msgstr "Φόρμα"
+
+#~ msgid "Import"
+#~ msgstr "Εισαγωγή"
+
+#~ msgid "Share"
+#~ msgstr "Κοινόχρηστο"
+
+#~ msgid "Copy Opacy"
+#~ msgstr "Αντιγραφή αδιαφάνειας"
+
+#~ msgid "Copy Alpha"
+#~ msgstr "Αντιγραφή Άλφα"
+
+#, fuzzy
+#~ msgid "Light"
+#~ msgstr "Φωτεινότερο"
+
+#~ msgid "Write PDF"
+#~ msgstr "Εγγραφή PDF"
+
+#, fuzzy
+#~ msgid "Hide Dockers"
+#~ msgstr "Προσαρτήσεις"
+
+#, fuzzy
+#~ msgid "Atop"
+#~ msgstr "Σταμάτημα"
+
+#~ msgid "KOffice"
+#~ msgstr "KOffice"
+
+#~ msgid "KOffice Storage"
+#~ msgstr "Αποθήκευση KOffice"
+
+#~ msgid "CCSGraph"
+#~ msgstr "CCSGraph"
+
+#~ msgid "Output the graph of color conversion of pigment's Color Conversion"
+#~ msgstr "Έξοδος του γραφήματος μετατροπής χρωμάτων των χρωματισμών βαφής"
+
+#~ msgid "(c) 2007 Cyrille Berger"
+#~ msgstr "(c) 2007 Cyrille Berger"
+
+#~ msgid "return the list of available graphs"
+#~ msgstr "επιστροφή λίστας των διαθέσιμων γραφημάτων"
+
+#~ msgid ""
+#~ "specify the type of graph (see --graphs to get the full list, the default "
+#~ "is full)"
+#~ msgstr ""
+#~ "καθορισμός τύπου του γραφήματος (δείτε το --graphs για την πλήρη λίστα, "
+#~ "προκαθορισμένος τύπος είναι ο πλήρης)"
+
+#~ msgid "specify the key of the source color space"
+#~ msgstr "καθορισμός κλειδιού του χρωματικού χώρου πηγής"
+
+#~ msgid "specify the key of the destination color space"
+#~ msgstr "καθορισμός κλειδιού του χρωματικού χώρου προορισμού"
+
+#~ msgid "specify the output (can be ps or dot, the default is ps)"
+#~ msgstr ""
+#~ "καθορισμός της εξόδου (μπορεί να είναι ps ή dot, με προκαθορισμένο το ps)"
+
+#, fuzzy
+#~ msgid "Barcode"
+#~ msgstr "Μορφή"
+
+#, fuzzy
+#~ msgid "Barcode Format"
+#~ msgstr "Μορφή"
+
+#, fuzzy
+#~ msgid "Chart"
+#~ msgstr "ένα γράφημα"
+
+#, fuzzy
+#~ msgid "Field Font"
+#~ msgstr "Ορισμός τύπου σημείου"
+
+#, fuzzy
+#~ msgid "Pie"
+#~ msgstr "Δεσμός"
+
+#, fuzzy
+#~ msgid "Ring"
+#~ msgstr "Έκδοση"
+
+#, fuzzy
+#~ msgid "Polar"
+#~ msgstr "Καθαρισμός"
+
+#, fuzzy
+#~ msgid "Chart Type"
+#~ msgstr "Δεδομένα"
+
+#, fuzzy
+#~ msgid "Stacked"
+#~ msgstr "Space"
+
+#, fuzzy
+#~ msgid "Percent"
+#~ msgstr "Πρόσφατο:"
+
+#, fuzzy
+#~ msgid "Chart Sub Type"
+#~ msgstr "Τύπος κατακ. μεγέθους"
+
+#, fuzzy
+#~ msgid "Color Scheme"
+#~ msgstr "Όνομα χρώματος:"
+
+#, fuzzy
+#~ msgid "Antialiased"
+#~ msgstr "Χωρίς τίτλο"
+
+#, fuzzy
+#~ msgid "Display Legend"
+#~ msgstr "Εμφάνιση φόντου σελίδας"
+
+#~ msgid "QXml"
+#~ msgstr "QXml"
+
+#~ msgid "Zoom Tool"
+#~ msgstr "Εργαλείο εστίασης"
+
+#~ msgid "Pan Tool"
+#~ msgstr "Εργαλείο πανοραμικής κίνησης"
+
+#~ msgid "Path tool"
+#~ msgstr "Εργαλείο διαδρομής"
+
+#, fuzzy
+#~ msgid "In"
+#~ msgstr "I"
+
+#, fuzzy
+#~ msgid "Out"
+#~ msgstr "Προσαρμοσμένο"
+
+#~ msgid "ICC Engine"
+#~ msgstr "Μηχανή ICC"
+
+#~ msgid "RGB8 Histogram"
+#~ msgstr "Ιστόγραμμα RGB8"
+
+#~ msgid "Insert Linebreak"
+#~ msgstr "Εισαγωγή αλλαγής γραμμής"
+
+#~ msgid "&Insert"
+#~ msgstr "Εισαγ&ωγή"
+
+#~ msgid "Insert the selected character in the text"
+#~ msgstr "Εισαγωγή του επιλεγμένου χαρακτήρα στο κείμενο"
+
+#~ msgid "Resize Panel Forward"
+#~ msgstr "Αλλαγή μεγέθους πίνακα εμπρός"
+
+#~ msgid "Resize Panel Reverse"
+#~ msgstr "Αλλαγή μεγέθους πίνακα ανάποδα"
+
+#~ msgid "Access Keys"
+#~ msgstr "Πλήκτρα πρόσβασης"
+
+#~ msgid "Enable word completion"
+#~ msgstr "Ενεργοποίηση συμπλήρωσης λέξεων"
+
+#~ msgid ""
+#~ "Toggle autocompletion on and off: if this is checked then autocompletion "
+#~ "will be enabled."
+#~ msgstr ""
+#~ "Εναλλαγή της αυτόματης συμπλήρωσης. Αν ενεργοποιηθεί, η αυτόματη "
+#~ "συμπλήρωση θα είναι ενεργή."
+
+#~ msgid ""
+#~ "Suggestion list for autocompletion: contains all the words that will be "
+#~ "autocompleted."
+#~ msgstr ""
+#~ "Λίστα προτάσεων για την αυτόματη συμπλήρωση: περιέχει όλες τις λέξεις που "
+#~ "θα συμπληρωθούν."
+
+#~ msgid ""
+#~ "By clicking this button you can add manually an individual word to the "
+#~ "completion list."
+#~ msgstr ""
+#~ "Κάνοντας κλικ σε αυτό το κουμπί μπορείτε να προσθέσετε χειροκίνητα μια "
+#~ "λέξη στη λίστα συμπλήρωσης."
+
+#~ msgid ""
+#~ "To remove words from the completion list, select the word with the left "
+#~ "mouse button from the list, then click this button."
+#~ msgstr ""
+#~ "Για να αφαιρέσετε λέξεις από τη λίστα συμπλήρωσης, επιλέξτε τη λέξη με το "
+#~ "αριστερό κουμπί του ποντικιού από τη λίστα και πατήστε έπειτα αυτό το "
+#~ "κουμπί."
+
+#~ msgid "Automatically add new words to suggestion list"
+#~ msgstr "Αυτόματη εισαγωγή νέων λέξεων στη λίστα συμπλήρωσης"
+
+#~ msgid ""
+#~ "If this option is enabled, any word equal to or longer than the "
+#~ "\"Characters needed\" typed in this document will automatically be added "
+#~ "to the list of words used by the completion."
+#~ msgstr ""
+#~ "Αν αυτή η επιλογή είναι ενεργοποιημένη, οποιαδήποτε λέξη ίση ή μεγαλύτερη "
+#~ "από τους \"απαιτούμενους χαρακτήρες\" που πληκτρολογείται σε αυτό το "
+#~ "έγγραφο θα προστεθεί αυτόματα στη λίστα των λέξεων που χρησιμοποιούνται "
+#~ "από τη συμπλήρωση."
+
+#~ msgid "Completion Options"
+#~ msgstr "Επιλογές συμπλήρωσης"
+
+#~ msgid "Show words in tooltip"
+#~ msgstr "Εμφάνιση λέξεων σε υπόδειξη"
+
+#~ msgid ""
+#~ "If this option is enabled, a tool tip box will appear when you type the "
+#~ "beginning of a word that exists in the completion list. To complete the "
+#~ "word, press the key you set to accept suggestions in the \"Key to accept "
+#~ "suggestion\" drop-down list."
+#~ msgstr ""
+#~ "Αν ενεργοποιήσετε αυτή την επιλογή, ένα πλαίσιο συμβουλής εργαλείου θα "
+#~ "εμφανίζεται όταν πληκτρολογείτε την αρχή μιας λέξης που βρίσκεται στη "
+#~ "λίστα συμπλήρωσης. Για τη συμπλήρωση της λέξης, πατήστε το πλήκτρο που "
+#~ "ορίσατε για στο \"πλήκτρο αποδοχής πρότασης\"."
+
+#~ msgid ""
+#~ "This sets the maximum number of words in the completion list. All "
+#~ "additional words will not be included in the list. You can select any "
+#~ "value from 1 to 500. This option keeps the list from becoming too "
+#~ "cumbersome.\n"
+#~ "This option is most important when Automatically add words to completion "
+#~ "list is enabled."
+#~ msgstr ""
+#~ "Αυτό καθορίζει το μέγιστο αριθμό των λέξεων στη λίστα συμπλήρωσης. Όλες "
+#~ "οι επιπλέον λέξεις δε θα συμπεριληφθούν στη λίστα. Μπορείτε να επιλέξετε "
+#~ "οποιαδήποτε τιμή ανάμεσα στο 1 και το 500. Αυτή η επιλογή διατηρεί τη "
+#~ "λίστα συνοπτική.\n"
+#~ "Είναι σημαντική στην περίπτωση που είναι επιλεγμένη η αυτόματη προσθήκη "
+#~ "λέξεων στη λίστα συμπλήρωσης."
+
+#~ msgid "Characters needed:"
+#~ msgstr "Απαιτούμενοι χαρακτήρες:"
+
+#~ msgid "Suggest words:"
+#~ msgstr "Πρόταση λέξεων:"
+
+#~ msgid ""
+#~ "Use this spinbox/slider combination to prevent automatically adding short "
+#~ "words to the completion list. You can select any value from 5-100 and the "
+#~ "words will need to be at least the number of characters set here to be "
+#~ "added to the list."
+#~ msgstr ""
+#~ "Χρησιμοποιήστε αυτόν το συνδυασμό κύλισης/πλαισίου εναλλαγής για την "
+#~ "αποτροπή της αυτόματης προσθήκης των σύντομων λέξεων στη λίστα "
+#~ "συμπλήρωσης. Μπορείτε να επιλέξετε μια τιμή ανάμεσα στο 5 και το 100 και "
+#~ "οι λέξεις θα πρέπει να έχουν τουλάχιστον αυτόν τον αριθμό χαρακτήρων για "
+#~ "να προστεθούν στη λίστα."
+
+#~ msgid "Append space"
+#~ msgstr "Προσθήκη κενού"
+
+#~ msgid ""
+#~ "If checked, it adds a single space to the end of a word after "
+#~ "autocompletion, this means it is not necessary to add the space manually "
+#~ "for the next word."
+#~ msgstr ""
+#~ "Αν ενεργοποιηθεί, προσθέτει ένα κενό στο τέλος μιας λέξης μετά την "
+#~ "αυτόματη συμπλήρωση, έτσι δε θα χρειάζεται να προσθέσετε το κενό "
+#~ "χειροκίνητα για την επόμενη λέξη."
+
+#~ msgid "Key to accept suggestion:"
+#~ msgstr "Πλήκτρο αποδοχής πρότασης:"
+
+#~ msgid ""
+#~ "Set the key you want to use when an autocompleted word is suggested to "
+#~ "you and you want to accept it. You can choose Enter, Tab, Space, End or "
+#~ "Right."
+#~ msgstr ""
+#~ "Ορισμός του πλήκτρου που επιθυμείτε να χρησιμοποιείτε για την αποδοχή της "
+#~ "πρότασης μιας λέξεις αυτόματης συμπλήρωσης. Μπορείτε να επιλέξετε ένα από "
+#~ "τα Enter, Tab, Space, End ή Δεξί βέλος."
+
+#~ msgid "Make Default"
+#~ msgstr "Προκαθορισμένο"
+
+#~ msgid ""
+#~ "Completion is configured per document. Making this list the default will "
+#~ "allow you to use it for new documents automatically. A dialog will appear "
+#~ "to inform you that the list will be used for all documents from now on."
+#~ msgstr ""
+#~ "Η συμπλήρωση ρυθμίζεται ανά έγγραφο. Θέτοντας αυτή τη λίστα ως "
+#~ "προκαθορισμένη θα σας επιτρέψει να τη χρησιμοποιήσετε σε νέα έγγραφα "
+#~ "αυτόματα. Θα εμφανιστεί ένας διάλογος ο οποίος θα σας ενημερώνει ότι η "
+#~ "λίστα θα χρησιμοποιείται από δω και πέρα για όλα τα έγγραφα."
+
+#~ msgid "C&ustom"
+#~ msgstr "&Προσαρμοσμένο"
+
+#~ msgid "&Insert:"
+#~ msgstr "&Εισαγωγή:"
+
+#~ msgid "Paragraph Background Color"
+#~ msgstr "Χρώμα φόντου παραγράφου"
+
+#~ msgid ""
+#~ "<p>Paragraph Background Color</p>\n"
+#~ "\n"
+#~ "<p>The paragraph background color appears\n"
+#~ "between the left and right margins of a\n"
+#~ "paragraph.</p>\n"
+#~ "\n"
+#~ "<p>If the text has a background color set, then\n"
+#~ "the text background will appear 'on top' of the\n"
+#~ "paragraph background.  In this case, the paragraph\n"
+#~ "background will still show on parts of the paragraph\n"
+#~ "that have no text (usually on the last line, between\n"
+#~ "the end of the text and the margin).</p>"
+#~ msgstr ""
+#~ "<p>Χρώμα φόντου παραγράφου</p>\n"
+#~ "\n"
+#~ "<p>Το χρώμα φόντου της παραγράφου εμφανίζεται\n"
+#~ "ανάμεσα στο αριστερό και δεξί περιθώριο μιας\n"
+#~ "παραγράφου.</p>\n"
+#~ "\n"
+#~ "<p>Αν το κείμενο έχει ορισμένο ένα χρώμα φόντου, τότε\n"
+#~ "το φόντο του κειμένου υπερισχύει του χρώματος του\n"
+#~ "φόντου της παραγράφου. Σε αυτή την περίπτωση, το φόντο\n"
+#~ "της παραγράφου θα εμφανίζεται στα τμήματά της \n"
+#~ "στα  οποία δεν υπάρχει κείμενο (συνήθως στην τελευταία γραμμή, ανάμεσα\n"
+#~ "στο τέλος του κειμένου και το περιθώριο).</p>"
+
+#~ msgid "Borders"
+#~ msgstr "Περιγράμματα"
+
+#~ msgid ""
+#~ "<p>Paragraph Borders</p>\n"
+#~ "\n"
+#~ "<p>The preview shows what the currently \n"
+#~ "selected paragraph borders will look like.</p>\n"
+#~ "\n"
+#~ "<p>To <i>add</i> a new border: Select the desired style,\n"
+#~ "width and color.  Click the toggle button that corresponds\n"
+#~ "to that border.</p>\n"
+#~ "\n"
+#~ "<p>To <i>remove</i> an existing border: Either click on the\n"
+#~ "border to be removed in the preview, or click the\n"
+#~ "toggle button corresponding to that border.</p>\n"
+#~ "\n"
+#~ "<p>To <i>modify</i> a border: Select the desired style,\n"
+#~ "width and color, then click on the border to be\n"
+#~ "modified in the preview.</p>"
+#~ msgstr ""
+#~ "<p>Περιγράμματα της παραγράφου</p>\n"
+#~ "\n"
+#~ "<p>Η προεπισκόπηση παρουσιάζει την εμφάνιση των τρέχοντων\n"
+#~ "επιλεγμένων περιγραμμάτων της παραγράφου.</p>\n"
+#~ "\n"
+#~ "<p>Για την <i>προσθήκη</i> ενός νέου περιγράμματος, επιλέξτε το επιθυμητό "
+#~ "στυλ,\n"
+#~ "το πλάτος και το χρώμα. Κάντε κλικ στο κουμπί εναλλαγής που αντιστοιχεί\n"
+#~ "σε αυτό το περίγραμμα.</p>\n"
+#~ "\n"
+#~ "<p>Για την <i>αφαίρεση</i> ενός υπάρχοντος περιγράμματος μπορείτε να "
+#~ "κάντε κλικ\n"
+#~ "στο περίγραμμα που επιθυμείτε να αφαιρέσετε πάνω στην προεπισκόπηση, ή "
+#~ "να\n"
+#~ "κάνετε κλικ στο κουμπί εναλλαγής για το συγκεκριμένο περίγραμμα.</p>\n"
+#~ "\n"
+#~ "<p>Για την <i>τροποποίηση</i> ενός περιγράμματος, επιλέξτε το επιθυμητό "
+#~ "στυλ\n"
+#~ "πλάτος και χρώμα, και κάντε κλικ στην προεπισκόπηση του περιγράμματος\n"
+#~ "που θέλετε να τροποποιήσετε.</p>"
+
+#~ msgid "&Width:"
+#~ msgstr "&Πλάτος:"
+
+#~ msgid "Add/remove left paragraph border"
+#~ msgstr "Προσθήκη/αφαίρεση αριστερού περιγράμματος παραγράφου"
+
+#~ msgid "Toggles the left paragraph border on or off."
+#~ msgstr "Εναλλαγή του αριστερού περιγράμματος της παραγράφου."
+
+#~ msgid "Add/remove right paragraph border"
+#~ msgstr "Προσθήκη/αφαίρεση δεξιού περιγράμματος παραγράφου"
+
+#~ msgid "Toggles the right paragraph border on or off."
+#~ msgstr "Εναλλαγή του δεξιού περιγράμματος της παραγράφου."
+
+#~ msgid "Add/remove top paragraph border"
+#~ msgstr "Προσθήκη/αφαίρεση πάνω περιγράμματος παραγράφου"
+
+#~ msgid "Toggles the top paragraph border on or off."
+#~ msgstr "Εναλλαγή του πάνω περιγράμματος της παραγράφου."
+
+#~ msgid "Add/remove bottom paragraph border"
+#~ msgstr "Προσθήκη/αφαίρεση κάτω περιγράμματος παραγράφου"
+
+#~ msgid "Toggles the bottom paragraph border on or off."
+#~ msgstr "Εναλλαγή του κάτω περιγράμματος της παραγράφου."
+
+#~ msgid "&Merge with next paragraph"
+#~ msgstr "&Συγχώνευση με την επόμενη παράγραφο"
+
+#~ msgid ""
+#~ "Merges the border style of the current paragraph with the next paragraph"
+#~ msgstr ""
+#~ "Συγχώνευση του στυλ περιγράμματος της τρέχουσας παραγράφου με το στυλ της "
+#~ "επόμενης"
+
+#~ msgid ""
+#~ "<p>Merge with next paragraph</p>\n"
+#~ "\n"
+#~ "<p>When this option is checked, no top or bottom borders\n"
+#~ "will appear between consecutive paragraphs with the\n"
+#~ "same style.  Top and Bottom borders will only appear between\n"
+#~ "paragraphs with different styles.</p>\n"
+#~ "\n"
+#~ "<p>When this option is unchecked, top and bottom borders\n"
+#~ "always appear at the top and bottom of paragraphs with this style,\n"
+#~ "regardless of the style of the preceding and subsequent paragraphs.</p>"
+#~ msgstr ""
+#~ "<p>Συγχώνευση με την επόμενη παράγραφο</p>\n"
+#~ "\n"
+#~ "<p>Αν ενεργοποιήσετε αυτή την επιλογή, δε θα εμφανίζονται πάνω και κάτω\n"
+#~ "περιγράμματα ανάμεσα σε συνεχείς παραγράφους με το ίδιο στυλ. \n"
+#~ "Τα πάνω και κάτω περιγράμματα θα εμφανίζονται μόνο ανάμεσα\n"
+#~ "σε παραγράφους με διαφορετικά στυλ.</p>\n"
+#~ "\n"
+#~ "<p>Αν απενεργοποιήσετε αυτή την επιλογή, θα εμφανίζονται πάνω και κάτω\n"
+#~ "περιγράμματα ανάμεσα σε παραγράφους με αυτό το στυλ, \n"
+#~ "άσχετα με το στυλ των προηγούμενων και των επόμενων παραγράφων.</p>"
+
+#~ msgid "String:"
+#~ msgstr "Συμβολοσειρά:"
+
+#~ msgid "Boolean:"
+#~ msgstr "Λογική τιμή:"
+
+#~ msgid "true"
+#~ msgstr "αληθές"
+
+#~ msgid "false"
+#~ msgstr "ψευδές"
+
+#~ msgid "Date:"
+#~ msgstr "Ημερομηνία:"
+
+#~ msgid "Set Guide Line Position"
+#~ msgstr "Ορισμός της θέσης οδηγού"
+
+#~ msgid "Add Guide Line"
+#~ msgstr "Προσθήκη γραμμής οδηγού"
+
+#~ msgid "Horizontal"
+#~ msgstr "Οριζόντια"
+
+#~ msgid "Vertical"
+#~ msgstr "Κατακόρυφα"
+
+#~ msgid "&Position:"
+#~ msgstr "&Θέση:"
+
+#~ msgid "Guide Line"
+#~ msgstr "Γραμμή οδηγός"
+
+#~ msgid "Guide Lines"
+#~ msgstr "Γραμμές οδηγοί"
+
+#~ msgid "No handler found for %1"
+#~ msgstr "Δε βρέθηκε χειριστής για το %1"
+
+#~ msgid ""
+#~ "Error loading %1:\n"
+#~ "%2"
+#~ msgstr ""
+#~ "Σφάλμα φόρτωσης %1:\n"
+#~ "%2"
+
+#~ msgid ""
+#~ "This document contains an external link to a remote document\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Αυτό το έγγραφο περιέχει έναν εξωτερικό δεσμό σε ένα απομακρυσμένο "
+#~ "έγγραφο\n"
+#~ "%1"
+
+#~ msgid "Confirmation Required"
+#~ msgstr "Απαιτείται επιβεβαίωση"
+
+#~ msgid "Skip"
+#~ msgstr "Παράλειψη"
+
+#~ msgid ""
+#~ "Could not load external document %1:\n"
+#~ "%2"
+#~ msgstr ""
+#~ "Αδύνατη η φόρτωση του εξωτερικού εγγράφου %1:\n"
+#~ "%2"
+
+#~ msgid "Error while saving embedded documents"
+#~ msgstr "Σφάλμα κατά την αποθήκευση των ενσωματωμένων εγγράφων"
+
+#~ msgid "Na&me:"
+#~ msgstr "Ό&νομα:"
+
+#~ msgid "Protect si&ze and position"
+#~ msgstr "Προστασία &μεγέθους και θέσης"
+
+#~ msgid "Keep &aspect ratio"
+#~ msgstr "Δι&ατήρηση αναλογίας διαστάσεων"
+
+#~ msgid "&Height:"
+#~ msgstr "Ύ&ψος:"
+
+#~ msgid "&Top:"
+#~ msgstr "&Πάνω:"
+
+#~ msgid "&Left:"
+#~ msgstr "&Αριστερά:"
+
+#~ msgid "Context Help"
+#~ msgstr "Σχετική βοήθεια"
+
+#~ msgid "Here will be shown help according to your actions"
+#~ msgstr "Εδώ θα εμφανίζεται βοήθεια ανάλογα με τις ενέργειές σας"
+
+#~ msgid "All values are given in %1."
+#~ msgstr "Όλες οι τιμές δίνονται σε %1."
+
+#~ msgid "&Size:"
+#~ msgstr "&Μέγεθος:"
+
+#~ msgid "&Portrait"
+#~ msgstr "&Πορτραίτο"
+
+#~ msgid "La&ndscape"
+#~ msgstr "&Τοπίο"
+
+#~ msgid "The page width is smaller than the left and right margins."
+#~ msgstr ""
+#~ "Το πλάτος της σελίδας είναι μικρότερο από τα αριστερά και δεξιά περιθώρια."
+
+#~ msgid "Page Layout Problem"
+#~ msgstr "Πρόβλημα διάταξης σελίδας"
+
+#~ msgid "The page height is smaller than the top and bottom margins."
+#~ msgstr "Το ύψος της σελίδας είναι μικρότερο από τα πάνω και κάτω περιθώρια."
+
+#~ msgid "Show &Grid"
+#~ msgstr "Εμφάνιση &καννάβου"
+
+#~ msgctxt "Custom size"
+#~ msgid "Custom"
+#~ msgstr "Προσαρμοσμένο"
+
+#, fuzzy
+#~ msgid "Delete slides"
+#~ msgstr "Διαγραφή σλάιντ"
+
+#, fuzzy
+#~ msgid "Delete pages"
+#~ msgstr "Διαγραφή σελίδας"
+
+#~ msgid "Insert Object"
+#~ msgstr "Εισαγωγή αντικειμένου"
+
+#~ msgid "Column spacing:"
+#~ msgstr "Διάστιχο στηλών:"
+
+#~ msgid "Footnote/ Endnote"
+#~ msgstr "Υποσημείωση/σημείωση τέλους"
+
+#~ msgid "Spacing between footnote and body:"
+#~ msgstr "Απόσταση μεταξύ υποσημείωσης και σώματος:"
+
+#~ msgid "Different footer for even and odd pages"
+#~ msgstr "Διαφορετικό υποσέλιδο για μονές και ζυγές σελίδες"
+
+#~ msgid "Different footer for the first page"
+#~ msgstr "Διαφορετικό υποσέλιδο για την πρώτη σελίδα"
+
+#~ msgid "Spacing between footer and body:"
+#~ msgstr "Απόσταση μεταξύ υποσέλιδου και σώματος:"
+
+#~ msgid "Spacing between header and body:"
+#~ msgstr "Απόσταση μεταξύ κεφαλίδας και σώματος:"
+
+#~ msgid "Different header for even and odd pages"
+#~ msgstr "Διαφορετική κεφαλίδα για μονές και ζυγές σελίδες"
+
+#~ msgid "Different header for the first page"
+#~ msgstr "Διαφορετική κεφαλίδα για την πρώτη σελίδα"
+
+#~ msgid "Page Preview"
+#~ msgstr "Προεπισκόπηση σελίδας"
+
+#~ msgid "Page Size && &Margins"
+#~ msgstr "Μέγεθος σελίδας && &περιθώρια"
+
+#~ msgid "H&eader && Footer"
+#~ msgstr "&Κεφαλίδα && Υποσέλιδο"
+
+#~ msgid "Head Line"
+#~ msgstr "Γραμμή κεφαλίδας"
+
+#~ msgid "Foot Line"
+#~ msgstr "Γραμμή υποσέλιδου"
+
+#~ msgid "You can insert several tags in the text:"
+#~ msgstr "Μπορείτε να εισάγετε διάφορες ετικέτες στο κείμενο:"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;sheet&gt; The sheet name</li><li>&lt;page&gt; The current "
+#~ "page</li><li>&lt;pages&gt; The total number of pages</li><li>&lt;name&gt; "
+#~ "The filename or URL</li><li>&lt;file&gt; The filename with complete path "
+#~ "or the URL</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;φύλλο&gt; Το όνομα του φύλλου</li><li>&lt;σελίδα&gt; Η "
+#~ "τρέχουσα σελίδα</li><li>&lt;σελίδες&gt; Ο συνολικός αριθμός των σελίδων</"
+#~ "li><li>&lt;όνομα&gt; Το όνομα αρχείου ή το URL</li><li>&lt;αρχείο&gt; Το "
+#~ "όνομα αρχείου με το πλήρες μονοπάτι ή το URL</li></ul></qt>"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;time&gt; The current time</li><li>&lt;date&gt; The "
+#~ "current date</li><li>&lt;author&gt; Your full name</li><li>&lt;org&gt; "
+#~ "Your organization</li><li>&lt;email&gt; Your email address</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;ώρα&gt;: Η τρέχουσα ώρα</li><li>&lt;ημερομηνία&gt;: Η "
+#~ "τρέχουσα ημερομηνία</li><li>&lt;συγγραφέας&gt;: Το πλήρες όνομά σας</"
+#~ "li><li>&lt;οργ.&gt;: Ο οργανισμός σας</li><li>&lt;email&gt;: Η διεύθυνση "
+#~ "email σας</li></ul></qt>"
+
+#~ msgid "Col&umns"
+#~ msgstr "&Στήλες"
+
+#~ msgid "&Help"
+#~ msgstr "&Βοήθεια"
+
+#~ msgid "Delete a new page after the current one"
+#~ msgstr "Διαγραφή μιας σελίδας μετά την τρέχουσα"
+
+#~ msgid "Storage Test"
+#~ msgstr "Έλεγχος αποθήκης"
+
+#~ msgid "A test for the KoStore classes"
+#~ msgstr "Μια δοκιμή των κλάσεων KoStore"
+
+#~ msgid "Storage Test 2"
+#~ msgstr "Έλεγχος αποθήκης 2"
+
+#~ msgid ""
+#~ "A test for the KoStore classes, in particular a Krita-induced bug testcase"
+#~ msgstr ""
+#~ "Μια δοκιμή των κλάσεων KoStore, ειδικά για περιπτώσεις σχετικές με το "
+#~ "Krita"
+
+#~ msgid "Master page"
+#~ msgstr "Πρωτότυπη σελίδα"
+
+#~ msgid "Rotate"
+#~ msgstr "Περιστροφή"
+
+#~ msgid "Shear"
+#~ msgstr "Στρέβλωση"
+
+#~ msgid "KoProperty Test"
+#~ msgstr "Έλεγχος KoProperty"
+
+#~ msgid "(C) 2005 Cedric Pasteur"
+#~ msgstr "(C) 2005 Cedric Pasteur"
+
+#~ msgid "Cedric Pasteur"
+#~ msgstr "Cedric Pasteur"
+
+#~ msgid ""
+#~ "Flat display: don't display groups\n"
+#~ "(useful for testing)"
+#~ msgstr ""
+#~ "Επίπεδη εμφάνιση: χωρίς εμφάνιση ομάδων\n"
+#~ "(χρήσιμο για ελέγχους"
+
+#~ msgid ""
+#~ "Set all properties as read-only:\n"
+#~ "(useful for testing read-only mode)"
+#~ msgstr ""
+#~ "Ορισμός όλων των ιδιοτήτων μόνο για ανάγνωση:\n"
+#~ "(χρήσιμο για τον έλεγχο της λειτουργίας μόνο ανάγνωσης)"
+
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Arrow"
+#~ msgstr "Βέλος"
+
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Up Arrow"
+#~ msgstr "Πάνω βέλος"
+
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Waiting"
+#~ msgstr "Αναμονή"
+
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Vertical"
+#~ msgstr "Κατακόρυφο μέγεθος"
+
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Horizontal"
+#~ msgstr "Οριζόντιο μέγεθος"
+
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Slash"
+#~ msgstr "Διαγώνιο μέγεθος"
+
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Backslash"
+#~ msgstr "Διαγώνιο ανάποδο μέγεθος"
+
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size All"
+#~ msgstr "Μέγεθος όλα"
+
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Split Horizontal"
+#~ msgstr "Διαίρεση οριζόντια"
+
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Pointing Hand"
+#~ msgstr "Χέρι σημείωσης"
+
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Forbidden"
+#~ msgstr "Απαγορευμένο"
+
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "What's This?"
+#~ msgstr "Τι είναι αυτό;"
+
+#~ msgid "Click to show image preview"
+#~ msgstr "Κάντε κλικ για εμφάνιση της προεπισκόπησης της εικόνας"
+
+#~ msgid "Insert image from file"
+#~ msgstr "Εισαγωγή εικόνας από αρχείο"
+
+#~ msgid "Insert Image From File (for \"%1\" property)"
+#~ msgstr "Εισαγωγή εικόνας από αρχείο (για την ιδιότητα \"%1\")"
+
+#~ msgid ""
+#~ "Position: %1, %2\n"
+#~ "Size: %3 x %4"
+#~ msgstr ""
+#~ "Θέση: %1, %2\n"
+#~ "Μέγεθος: %3 x %4"
+
+#~ msgid "Edit List of Items"
+#~ msgstr "Επεξεργασία λίστας αντικειμένων"
+
+#~ msgid "Contents of %1"
+#~ msgstr "Περιεχόμενα του %1"
+
+#~ msgid "Select Char"
+#~ msgstr "Επιλογή χαρακτήρα"
+
+#~ msgctxt "Size Policy"
+#~ msgid "Minimum"
+#~ msgstr "Ελάχιστο"
+
+#~ msgctxt "Size Policy"
+#~ msgid "Maximum"
+#~ msgstr "Μέγιστο"
+
+#~ msgctxt "Size Policy"
+#~ msgid "Preferred"
+#~ msgstr "Προτιμώμενο"
+
+#~ msgctxt "Size Policy"
+#~ msgid "Expanding"
+#~ msgstr "Μεταβλητό"
+
+#~ msgctxt "Size Policy"
+#~ msgid "Minimum Expanding"
+#~ msgstr "Ελάχιστο μεταβλητό"
+
+#~ msgctxt "General properties"
+#~ msgid "General"
+#~ msgstr "Γενικά"
+
+#~ msgid "Width"
+#~ msgstr "Πλάτος"
+
+#~ msgid "X"
+#~ msgstr "X"
+
+#~ msgid "Y"
+#~ msgstr "Y"
+
+#~ msgid "Size Policy"
+#~ msgstr "Πολιτική μεγέθους"
+
+#~ msgid "Horz. Size Type"
+#~ msgstr "Τύπος οριζ. μεγέθους"
+
+#~ msgid "Horizontal Size Type"
+#~ msgstr "Τύπος οριζόντιου μεγέθους"
+
+#~ msgid "Vertical Size Type"
+#~ msgstr "Τύπος κατακόρυφου μεγέθους"
+
+#~ msgid "Horz. Stretch"
+#~ msgstr "Οριζ. τράβηγμα"
+
+#~ msgid "Horizontal Stretch"
+#~ msgstr "Οριζόντιο τράβηγμα"
+
+#~ msgid "Vert. Stretch"
+#~ msgstr "Κατακ. τράβηγμα"
+
+#~ msgid "Vertical Stretch"
+#~ msgstr "Κατακόρυφο τράβηγμα"
+
+#~ msgid "Undo changes"
+#~ msgstr "Αναίρεση τροποποιήσεων"
+
+#, fuzzy
+#~ msgid "Snap Guides"
+#~ msgstr "Εμφάνιση οδηγών"
+
+#~ msgid "Use snap guides"
+#~ msgstr "Χρήση οδηγών προσαρμογής"
+
+#~ msgid "Enable Nodes Guide"
+#~ msgstr "Ενεργοποίηση οδηγού κόμβων"
+
+#~ msgid "Enable Bounding Box Guide"
+#~ msgstr "Ενεργοποίηση οδηγού εγκιβωτισμού"
+
+#~ msgid "Snap Distance (px)"
+#~ msgstr "Απόσταση προσαρμογής (εικ)"
+
+#~ msgid "Enable Guide Lines Guide "
+#~ msgstr "Ενεργοποίηση γραμμών οδηγών "
+
+#~ msgid "Tool Option"
+#~ msgstr "Επιλογή εργαλείου"
+
+#, fuzzy
+#~ msgid "Configure Snap Guides"
+#~ msgstr "Προσαρμογή οδηγών"
+
+#~ msgid "Connection Shape"
+#~ msgstr "Σχήμα σύνδεσης"
+
+#~ msgid "Edit Guidelines"
+#~ msgstr "Επεξεργασία γραμμών οδηγών"
+
+#~ msgid "Edit guidelines"
+#~ msgstr "Επεξεργασία γραμμών οδηγών"

@@ -1,0 +1,5373 @@
+# koffice Bahasa Melayu (Malay) (ms)
+# translation of koffice.po to Malay
+# Copyright (C) 2003
+#
+# Muhammad Najmi Ahmad Zabidi<md_najmi@yahoo.com>,2003.
+# Muhammad Najmi bin Ahmad Zabidi <najmi.zabidi@gmail.com>, 2004.
+# Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: koffice\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2008-07-08 22:08+0800\n"
+"Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
+"Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
+"Language: ms\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=1;\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+#, fuzzy
+#| msgid "Could not create the file for saving"
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "Tidak dapat cipta fail untuk penyimpanan"
+
+#: common/KReportDesign.cpp:159
+#, fuzzy
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Ralat semasa menyimpan dokumen terbenam"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Nama:"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Object"
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Objek"
+
+#: common/KReportItemBase.cpp:78
+#, fuzzy
+#| msgid "Position"
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Posisi"
+
+#: common/KReportItemBase.cpp:79
+#, fuzzy
+#| msgid "Size:"
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Saiz:"
+
+#: common/KReportItemBase.cpp:112
+#, fuzzy
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Hapuskan Teks"
+
+#: common/KReportItemLine.cpp:80
+#, fuzzy
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "Posisi"
+
+#: common/KReportItemLine.cpp:81
+#, fuzzy
+#| msgid "Position"
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Posisi"
+
+#: common/KReportItemLine.cpp:83
+#, fuzzy
+#| msgctxt "color"
+#| msgid "LightGreen"
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "Hijau Muda"
+
+#: common/KReportItemLine.cpp:85
+#, fuzzy
+#| msgid "Color:"
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Warna:"
+
+#: common/KReportItemLine.cpp:86
+#, fuzzy
+#| msgid "Change Borders"
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Ubah Sempadan"
+
+#: common/KReportSectionData.cpp:164
+#, fuzzy
+#| msgid "Exceptions"
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Pengecualian"
+
+#: common/KReportSectionData.cpp:166
+#, fuzzy
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "&Tinggi:"
+
+#: common/KReportSectionData.cpp:170
+#, fuzzy
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Saat"
+
+#: common/KReportUnit.cpp:136
+#, fuzzy
+#| msgid "Add Group"
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Tambahkan Kumpulan"
+
+#: common/KReportUnit.cpp:138
+#, fuzzy
+#| msgid "Millimeters (mm)"
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "Milimeter (mm)"
+
+#: common/KReportUnit.cpp:140
+#, fuzzy
+#| msgid "Centimeters (cm)"
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "Sentimeter (cm)"
+
+#: common/KReportUnit.cpp:142
+#, fuzzy
+#| msgid "Decimeters (dm)"
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "Desimeter (dm)"
+
+#: common/KReportUnit.cpp:144
+#, fuzzy
+#| msgid "Inches (in)"
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "Inci (in)"
+
+#: common/KReportUnit.cpp:146
+#, fuzzy
+#| msgid "Pica (pi)"
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "Pika (pi)"
+
+#: common/KReportUnit.cpp:148
+#, fuzzy
+#| msgid "Cicero (cc)"
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "Cicero (cc)"
+
+#: common/KReportUnit.cpp:150
+#, fuzzy
+#| msgid "Points (pt)"
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "Titik "
+
+#: common/KReportUnit.cpp:152
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "Titik "
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Colors"
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Warna"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:80
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "&Gaya:"
+
+#: items/check/KReportItemCheck.cpp:84
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Saat"
+
+#: items/check/KReportItemCheck.cpp:86
+#, fuzzy
+#| msgctxt "color"
+#| msgid "LightGreen"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "Hijau Muda"
+
+#: items/check/KReportItemCheck.cpp:88
+#, fuzzy
+#| msgid "Color:"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Warna:"
+
+#: items/check/KReportItemCheck.cpp:89
+#, fuzzy
+#| msgid "Change Borders"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Ubah Sempadan"
+
+#: items/check/KReportItemCheck.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Nilai"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Nilai"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Kiri:"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Comment"
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Komen"
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Right:"
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Kanan:"
+
+#: items/field/KReportItemField.cpp:96
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Penjajaran menegak:"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "Kumpulan:"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Align Auto"
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Jajarkan Auto"
+
+#: items/field/KReportItemField.cpp:102
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Penjajaran menegak:"
+
+#: items/field/KReportItemField.cpp:104
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Selitkan Pautan "
+
+#: items/field/KReportItemField.cpp:106
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Saat"
+
+#: items/field/KReportItemField.cpp:107
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Saat"
+
+#: items/field/KReportItemField.cpp:109
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Warna latar belakang:"
+
+#: items/field/KReportItemField.cpp:114
+#, fuzzy
+#| msgctxt "color"
+#| msgid "LightGreen"
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "Hijau Muda"
+
+#: items/field/KReportItemField.cpp:116
+#, fuzzy
+#| msgid "Color:"
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Warna:"
+
+#: items/field/KReportItemField.cpp:117
+#, fuzzy
+#| msgid "Change Borders"
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Ubah Sempadan"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:120
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgid "Street:"
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Jalan:"
+
+#: items/image/KReportItemImage.cpp:120
+#, fuzzy
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "Set semula"
+
+#: items/image/KReportItemImage.cpp:121
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Nilai"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:91
+#, fuzzy
+#| msgid "Completion"
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Pelengkapan"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Kiri:"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Comment"
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Komen"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Right:"
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Kanan:"
+
+#: items/label/KReportItemLabel.cpp:96
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Penjajaran menegak:"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "Kumpulan:"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Align Auto"
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Jajarkan Auto"
+
+#: items/label/KReportItemLabel.cpp:102
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Penjajaran menegak:"
+
+#: items/label/KReportItemLabel.cpp:104
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Selitkan Pautan "
+
+#: items/label/KReportItemLabel.cpp:106
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Saat"
+
+#: items/label/KReportItemLabel.cpp:107
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Saat"
+
+#: items/label/KReportItemLabel.cpp:109
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Warna latar belakang:"
+
+#: items/label/KReportItemLabel.cpp:114
+#, fuzzy
+#| msgctxt "color"
+#| msgid "LightGreen"
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "Hijau Muda"
+
+#: items/label/KReportItemLabel.cpp:116
+#, fuzzy
+#| msgid "Color:"
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Warna:"
+
+#: items/label/KReportItemLabel.cpp:117
+#, fuzzy
+#| msgid "Change Borders"
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Ubah Sempadan"
+
+#: items/text/KReportItemText.cpp:115
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Nilai"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Kiri:"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Comment"
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Komen"
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Right:"
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Kanan:"
+
+#: items/text/KReportItemText.cpp:121
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Penjajaran menegak:"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "Kumpulan:"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Align Auto"
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Jajarkan Auto"
+
+#: items/text/KReportItemText.cpp:127
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Penjajaran menegak:"
+
+#: items/text/KReportItemText.cpp:129
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Selitkan Pautan "
+
+#: items/text/KReportItemText.cpp:131
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Saat"
+
+#: items/text/KReportItemText.cpp:132
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Saat"
+
+#: items/text/KReportItemText.cpp:134
+#, fuzzy
+#| msgctxt "color"
+#| msgid "LightGreen"
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "Hijau Muda"
+
+#: items/text/KReportItemText.cpp:136
+#, fuzzy
+#| msgid "Color:"
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Warna:"
+
+#: items/text/KReportItemText.cpp:137
+#, fuzzy
+#| msgid "Change Borders"
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Ubah Sempadan"
+
+#: items/text/KReportItemText.cpp:138
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Warna latar belakang:"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, fuzzy, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr "Skrip"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+#, fuzzy
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Internet"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:676
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Prapapar Halaman"
+
+#: wrtembed/KReportDesigner.cpp:680
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Prapapar Halaman"
+
+#: wrtembed/KReportDesigner.cpp:684
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Prapapar Halaman"
+
+#: wrtembed/KReportDesigner.cpp:688
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Prapapar Halaman"
+
+#: wrtembed/KReportDesigner.cpp:692
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Prapapar Halaman"
+
+#: wrtembed/KReportDesigner.cpp:696
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "&Pengaki"
+
+#: wrtembed/KReportDesigner.cpp:700
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "&Pengaki"
+
+#: wrtembed/KReportDesigner.cpp:704
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "&Pengaki"
+
+#: wrtembed/KReportDesigner.cpp:708
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "&Pengaki"
+
+#: wrtembed/KReportDesigner.cpp:712
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "&Pengaki"
+
+#: wrtembed/KReportDesigner.cpp:716
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "&Pengepala"
+
+#: wrtembed/KReportDesigner.cpp:720
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "&Pengaki"
+
+#: wrtembed/KReportDesigner.cpp:808
+#, fuzzy
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "&Eksport..."
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Title:"
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Panggilan:"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "&Pengaki"
+
+#: wrtembed/KReportDesigner.cpp:818
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Saiz Laman"
+
+#: wrtembed/KReportDesigner.cpp:821
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Saiz Laman"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "&Portrait"
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "&Potret"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "La&ndscape"
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "La&nskap"
+
+#: wrtembed/KReportDesigner.cpp:827
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "&Orientasi Pencerai"
+
+#: wrtembed/KReportDesigner.cpp:832
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Saiz Laman"
+
+#: wrtembed/KReportDesigner.cpp:833
+#, fuzzy
+#| msgid "Change Shadow"
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Ubah Bayang"
+
+#: wrtembed/KReportDesigner.cpp:834
+#, fuzzy
+#| msgid "Confirm Save"
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Sahkan Simpan"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:841
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Margin"
+
+#: wrtembed/KReportDesigner.cpp:843
+#, fuzzy
+#| msgid "Right indent"
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Inden kanan"
+
+#: wrtembed/KReportDesigner.cpp:845
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Margin"
+
+#: wrtembed/KReportDesigner.cpp:847
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Margin"
+
+#: wrtembed/KReportDesigner.cpp:869
+#, fuzzy
+#| msgid "Object"
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Objek"
+
+#: wrtembed/KReportDesigner.cpp:1067
+#, fuzzy
+#| msgid "Custom"
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Biasa"
+
+#: wrtembed/KReportDesigner.cpp:1071
+#, fuzzy
+#| msgid "Company:"
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Syarikat:"
+
+#: wrtembed/KReportDesigner.cpp:1076
+#, fuzzy
+#| msgid "Date"
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Tarikh"
+
+#: wrtembed/KReportDesigner.cpp:1087
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Hapuskan Teks"
+
+#: wrtembed/KReportDesigner.cpp:1129
+#, fuzzy
+#| msgctxt "color"
+#| msgid "Linen"
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Linen"
+
+#: wrtembed/KReportDesigner.cpp:1476
+#, fuzzy
+#| msgctxt "color"
+#| msgid "Linen"
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Linen"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1525
+#, fuzzy
+#| msgid "Company:"
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "Syarikat:"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1531
+#, fuzzy
+#| msgid "Date"
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "Tarikh"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1544
+#, fuzzy
+#| msgid "Completion"
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Pelengkapan"
+
+#: wrtembed/KReportDesigner.cpp:1547
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1549
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr ""
+
+#: wrtembed/KReportDesignerSection.cpp:126
+#, fuzzy
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "&Piawai"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+#, fuzzy
+#| msgid "Exceptions"
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Pengecualian"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+#, fuzzy
+#| msgid "Columns:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Kolum:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+#, fuzzy
+#| msgid "Street:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Jalan:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+#, fuzzy
+#| msgid "Change Shadow"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Ubah Bayang"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+#, fuzzy
+#| msgid "Change Shadow"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Ubah Bayang"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+
+#: wrtembed/KReportRuler_p.cpp:1472
+#, fuzzy
+#| msgid "First line indent"
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Inden baris pertama"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+#, fuzzy
+#| msgid "Left indent"
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Inden kiri"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+#, fuzzy
+#| msgid "Right indent"
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Inden kanan"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.cpp:74
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "Tambahkan Matriks..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Hapuskan Teks"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Hapuskan Teks"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Hapuskan Teks"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.cpp:312
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.ui:29
+#, fuzzy
+#| msgid "Change Shadow"
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Ubah Bayang"
+
+#: wrtembed/KReportSectionEditor.ui:36
+#, fuzzy
+#| msgid "Change Shadow"
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Ubah Bayang"
+
+#: wrtembed/KReportSectionEditor.ui:43
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Prapapar Halaman"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "Halaman Berikutnya"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+#, fuzzy
+#| msgid "Company Name"
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Nama Syarikat"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+#, fuzzy
+#| msgid "Company Name"
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Nama Syarikat"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+#, fuzzy
+#| msgid "Paste Text"
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Tampalkan Teks"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+#, fuzzy
+#| msgid "Company Name"
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Nama Syarikat"
+
+#: wrtembed/KReportSectionEditor.ui:130
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "&Pengaki"
+
+#: wrtembed/KReportSectionEditor.ui:217
+#, fuzzy
+#| msgid "Exceptions"
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Pengecualian"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, fuzzy, qt-format
+#| msgid "%1%"
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+#, fuzzy
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Halaman Berikutnya"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+#, fuzzy
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Halaman Berikutnya"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr ""
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+#, fuzzy
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Halaman Berikutnya"
+
+#, fuzzy
+#~| msgid "US Letter"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "US Letter"
+
+#, fuzzy
+#~| msgid "US Legal"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "US Legal"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "Biasa"
+
+#, fuzzy
+#~| msgid "US Executive"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "US Executive"
+
+#, fuzzy
+#~| msgid "ISO B10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "ISO B10"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "Syarikat"
+
+#, fuzzy
+#~| msgid "ISO DL"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "ISO DL"
+
+#, fuzzy
+#~| msgid "US Folio"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Folio"
+#~ msgstr "US Folio"
+
+#, fuzzy
+#~| msgid "US Ledger"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "US Ledger"
+
+#, fuzzy
+#~| msgid "US Tabloid"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Tabloid"
+#~ msgstr "US Tabloid"
+
+#, fuzzy
+#~| msgid "Postal code:"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "Poskod:"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Skrin"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "Posisi"
+
+#, fuzzy
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "&Tinggi:"
+
+#, fuzzy
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~| msgid "Size:"
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "Saiz:"
+
+#, fuzzy
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~| msgid "ISO A3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "ISO A3"
+
+#, fuzzy
+#~| msgid "ISO A4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "ISO A4"
+
+#, fuzzy
+#~| msgid "ISO A5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "ISO A5"
+
+#, fuzzy
+#~| msgid "ISO B5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "ISO B5"
+
+#, fuzzy
+#~| msgid "US Executive"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "US Executive"
+
+#, fuzzy
+#~| msgid "ISO A0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "ISO A0"
+
+#, fuzzy
+#~| msgid "ISO A1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "ISO A1"
+
+#, fuzzy
+#~| msgid "ISO A2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "ISO A2"
+
+#, fuzzy
+#~| msgid "ISO A6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "ISO A6"
+
+#, fuzzy
+#~| msgid "ISO A7"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "ISO A7"
+
+#, fuzzy
+#~| msgid "ISO A8"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "ISO A8"
+
+#, fuzzy
+#~| msgid "ISO A9"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "ISO A9"
+
+#, fuzzy
+#~| msgid "ISO B0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "IOS B0"
+
+#, fuzzy
+#~| msgid "ISO B1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "ISO B1"
+
+#, fuzzy
+#~| msgid "ISO B2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "ISO B2"
+
+#, fuzzy
+#~| msgid "ISO B3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "ISO B3"
+
+#, fuzzy
+#~| msgid "ISO B4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "ISO B4"
+
+#, fuzzy
+#~| msgid "ISO B6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "ISO B6"
+
+#, fuzzy
+#~| msgid "ISO C5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "ISO C5"
+
+#, fuzzy
+#~| msgid "US Common 10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Common 10"
+#~ msgstr "US Common 10"
+
+#, fuzzy
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "&Tinggi:"
+
+#, fuzzy
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "LightGreen"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Weight"
+#~ msgstr "Hijau Muda"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "Warna:"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "Ubah Sempadan"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "Nilai"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "LightGreen"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Weight"
+#~ msgstr "Hijau Muda"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "Warna:"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "Ubah Sempadan"
+
+#, fuzzy
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "Nilai"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "Kiri:"
+
+#, fuzzy
+#~| msgid "Comment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "Komen"
+
+#, fuzzy
+#~| msgid "Right:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "Kanan:"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Penjajaran menegak:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "Kumpulan:"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "Jajarkan Auto"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Penjajaran menegak:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "Selitkan Pautan "
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "Warna latar belakang:"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "LightGreen"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Weight"
+#~ msgstr "Hijau Muda"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "Warna:"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "Ubah Sempadan"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "Nilai"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "Kiri:"
+
+#, fuzzy
+#~| msgid "Comment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "Komen"
+
+#, fuzzy
+#~| msgid "Right:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "Kanan:"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Penjajaran menegak:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "Kumpulan:"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "Jajarkan Auto"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Penjajaran menegak:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "Selitkan Pautan "
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "LightGreen"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Weight"
+#~ msgstr "Hijau Muda"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "Warna:"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "Ubah Sempadan"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "Warna latar belakang:"
+
+#, fuzzy
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "Pengurus Gaya"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "MIMOS"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "opensource@mimos.my"
+
+#, fuzzy
+#~ msgid "Draw path"
+#~ msgstr "Alih Keluar Kumpulan"
+
+#, fuzzy
+#~ msgid "Freehand path"
+#~ msgstr "Alih Keluar Kumpulan"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Angle Constraints"
+#~ msgstr "Ubah Inden"
+
+#, fuzzy
+#~| msgid "Position:"
+#~ msgid "Precision:"
+#~ msgstr "Jawatan:"
+
+#, fuzzy
+#~ msgid "Curve"
+#~ msgstr "Seksyen Semasa"
+
+#, fuzzy
+#~ msgid "Straight"
+#~ msgstr "Tunggal"
+
+#, fuzzy
+#~ msgid "Combine angle:"
+#~ msgstr "Lebar Garis Biasa"
+
+#, fuzzy
+#~| msgid "Could not export file."
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr "Tidak dapat eksport fail."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "The database \"%1\" does not exist."
+#~ msgstr "Fail%1 tidak wujud."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "Fail%1 tidak wujud."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Database file \"%1\" is not writable."
+#~ msgstr "Fail%1 tidak wujud."
+
+#, fuzzy
+#~ msgid "Creating table failed."
+#~ msgstr "Cipta Templat"
+
+#, fuzzy
+#~ msgid "Could not create the same table \"%1\" twice."
+#~ msgstr "Tidak dapat baca bahagian awal fail."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist."
+#~ msgstr "Fail%1 tidak wujud."
+
+#, fuzzy
+#~ msgid "Could not remove object's data."
+#~ msgstr "Tidak dapat memuatkan objek terbenam."
+
+#, fuzzy
+#~| msgid "Could not read the beginning of the file."
+#~ msgid "Could not alter table \"%1\" using the same table as destination."
+#~ msgstr "Tidak dapat baca bahagian awal fail."
+
+#, fuzzy
+#~| msgid "Could not read the beginning of the file."
+#~ msgid "Could not rename table \"%1\" using the same name."
+#~ msgstr "Tidak dapat baca bahagian awal fail."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Query \"%1\" does not exist."
+#~ msgstr "Fail%1 tidak wujud."
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Begin transaction failed."
+#~ msgstr "Ubah Inden"
+
+#, fuzzy
+#~| msgid "This name is already used."
+#~ msgid "Transaction already started."
+#~ msgstr "Nama ini sudah digunakan."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Column <resource>%1</resource> does not exist in the query."
+#~ msgstr "Fail%1 tidak wujud."
+
+#, fuzzy
+#~| msgid "Error while saving embedded documents"
+#~ msgctxt "Extended schema for a table: loading error"
+#~ msgid "Error while loading extended table schema."
+#~ msgstr "Ralat semasa menyimpan dokumen terbenam"
+
+#, fuzzy
+#~| msgid ""
+#~| "Parsing error in %1 at line %2, column %3\n"
+#~| "Error message: %4"
+#~ msgid ""
+#~ "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~ "XML data: %4"
+#~ msgstr ""
+#~ "Ralat pengkajihuraian dalam %1 pada baris %2, lajur %3\n"
+#~ "Mesej ralat:%4"
+
+#, fuzzy
+#~ msgid "Could not insert record because there is no master table specified."
+#~ msgstr "Tidak dapat baca bahagian awal fail."
+
+#, fuzzy
+#~ msgid "Could not delete record because there is no master table specified."
+#~ msgstr "Tidak dapat baca bahagian awal fail."
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "Tarikh"
+
+#, fuzzy
+#~ msgid "Could not set value of database property \"%1\"."
+#~ msgstr "Tidak dapat baca bahagian awal fail."
+
+#, fuzzy
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "Tidak dapat baca bahagian awal fail."
+
+#, fuzzy
+#~| msgid "Could not read the beginning of the file."
+#~ msgid "Could not read database properties."
+#~ msgstr "Tidak dapat baca bahagian awal fail."
+
+#, fuzzy
+#~ msgid "Could not find database driver \"%1\"."
+#~ msgstr "Tidak dapat baca bahagian awal fail."
+
+#, fuzzy
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "Tidak dapat baca bahagian awal fail."
+
+#, fuzzy
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "Tidak dapat baca bahagian awal fail."
+
+#, fuzzy
+#~ msgid "Field not found"
+#~ msgstr "Lokasi fail:"
+
+#, fuzzy
+#~| msgid "Could not create the file for saving"
+#~ msgid "Could not access the table directly using its name"
+#~ msgstr "Tidak dapat cipta fail untuk penyimpanan"
+
+#, fuzzy
+#~ msgid "Table not found"
+#~ msgstr "Lokasi fail:"
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" has no \"%2\" field."
+#~ msgstr "Fail%1 tidak wujud."
+
+#, fuzzy
+#~ msgid "Short Integer Number"
+#~ msgstr "Penomboran"
+
+#, fuzzy
+#~ msgid "Integer Number"
+#~ msgstr "Penomboran"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Yes/No Value"
+#~ msgstr "Ubah Inden"
+
+#~ msgid "Date"
+#~ msgstr "Tarikh"
+
+#, fuzzy
+#~| msgid "Date & Time"
+#~ msgid "Date and Time"
+#~ msgstr "Tarikh & Masa"
+
+#, fuzzy
+#~ msgid "Time"
+#~ msgstr "Masa "
+
+#, fuzzy
+#~ msgid "Text"
+#~ msgstr "Tambahkan Teks"
+
+#, fuzzy
+#~ msgid "Long Text"
+#~ msgstr "Tambahkan Teks"
+
+#~ msgid "Object"
+#~ msgstr "Objek"
+
+#, fuzzy
+#~| msgid "Change List Type"
+#~ msgid "Floating Point Number"
+#~ msgstr "Ubah Jenis Senarai"
+
+#, fuzzy
+#~| msgid "Date & Time"
+#~ msgid "Date/Time"
+#~ msgstr "Tarikh & Masa"
+
+#, fuzzy
+#~ msgid "Syntax error."
+#~ msgstr "Internet"
+
+#, fuzzy
+#~| msgid "Error!"
+#~ msgid "Error"
+#~ msgstr "Ralat!"
+
+#, fuzzy
+#~ msgid "Error near \"%1\"."
+#~ msgstr "Internet"
+
+#, fuzzy
+#~ msgid "Record inserting failed."
+#~ msgstr "Cipta Templat"
+
+#, fuzzy
+#~ msgid "Record deleting failed."
+#~ msgstr "Cipta Templat"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Test Connection"
+#~ msgstr "Ubah Inden"
+
+#, fuzzy
+#~ msgid "Number"
+#~ msgstr "Penomboran"
+
+#, fuzzy
+#~ msgid "Image"
+#~ msgstr "Halaman Berikutnya"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr "Ubah Inden"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr "Ubah Penjadual"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "Tukar ke Greek"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Combine paths"
+#~ msgstr "Lebar Garis Biasa"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move control point"
+#~ msgstr "Margin"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "Selitkan Pautan "
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "Margin"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move points"
+#~ msgstr "Alih Keluar Pautan "
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove points"
+#~ msgstr "Alih Keluar Pautan "
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set point type"
+#~ msgstr "Selitkan Pautan "
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reverse paths"
+#~ msgstr "Alih Keluar Kumpulan"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath"
+#~ msgstr "Alih Keluar Kumpulan"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to curves"
+#~ msgstr "Ubah Gaya Aksara"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to lines"
+#~ msgstr "Ubah Gaya Aksara"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set marker"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Align shapes"
+#~ msgstr "Jajarkan Kiri"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Clip Shape"
+#~ msgstr "Gelombang"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr "Cipta Templat"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shape"
+#~ msgid_plural "Delete shapes"
+#~ msgstr[0] "Hapuskan Teks"
+#~ msgstr[1] "Hapuskan Teks"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Distribute shapes"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~| msgid "Exceptions"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr "Pengecualian"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Lock shapes"
+#~ msgstr "Jajarkan Kiri"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move shapes"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr "Cipta Templat"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reorder shapes"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Shape RunAround"
+#~ msgstr "Ubah Penjadual"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Shadow"
+#~ msgstr "Bayang"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Shear shapes"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Resize shapes"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr "Selitkan Pautan "
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shape"
+#~ msgstr "Cipta Templat"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shapes"
+#~ msgstr "Jajarkan Kiri"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr "Jajarkan Kiri"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Close subpath"
+#~ msgstr "Alih Keluar Kumpulan"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Join subpaths"
+#~ msgstr "Lebar Garis Biasa"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove subpath"
+#~ msgstr "Alih Keluar Kumpulan"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "Linen"
+#~ msgid "Lines"
+#~ msgstr "Linen"
+
+#, fuzzy
+#~ msgid "Type:"
+#~ msgstr "Tarikh"
+
+#, fuzzy
+#~ msgid "Tie"
+#~ msgstr "Masa "
+
+#, fuzzy
+#~ msgid "Simple path shape"
+#~ msgstr "Cipta Templat"
+
+#, fuzzy
+#~ msgid "%1 Options"
+#~ msgstr "Pengecualian"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Shapes"
+#~ msgstr "Cipta Templat"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "Tampalkan Teks"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgid "Nodes"
+#~ msgstr "Tiada"
+
+#, fuzzy
+#~ msgid "Guide lines"
+#~ msgstr "Bilangan Baris"
+
+#, fuzzy
+#~ msgid "Create object"
+#~ msgstr "Cipta Dokumen"
+
+#, fuzzy
+#~ msgid "Pan"
+#~ msgstr "Sawo Matang"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Segment"
+#~ msgstr "Ubah Inden"
+
+#, fuzzy
+#~ msgid "Corner point"
+#~ msgstr "Sahkan Eksport"
+
+#, fuzzy
+#~ msgid "Make curve point"
+#~ msgstr "Margin"
+
+#, fuzzy
+#~ msgid "Make line point"
+#~ msgstr "Margin"
+
+#, fuzzy
+#~ msgid "Segment to Line"
+#~ msgstr "Ubah Gaya Aksara"
+
+#, fuzzy
+#~ msgid "Insert point"
+#~ msgstr "Selitkan Pautan "
+
+#, fuzzy
+#~ msgid "Remove point"
+#~ msgstr "Alih Keluar Pautan "
+
+#, fuzzy
+#~ msgid "Merge points"
+#~ msgstr "Margin"
+
+#, fuzzy
+#~| msgid "Edit Path"
+#~ msgid "To Path"
+#~ msgstr "Laluan Edit"
+
+#, fuzzy
+#~ msgid "Line/Curve"
+#~ msgstr "Seksyen Semasa"
+
+#, fuzzy
+#~ msgid "Path editing"
+#~ msgstr "Pencetakan Terakhir "
+
+#, fuzzy
+#~ msgid "..."
+#~ msgstr "Tambahkan Matriks..."
+
+#, fuzzy
+#~ msgid "Convert To Path"
+#~ msgstr "Tukar ke Greek"
+
+#, fuzzy
+#~ msgid "Scripts"
+#~ msgstr "Skrip"
+
+#, fuzzy
+#~ msgid "Script Manager"
+#~ msgstr "Pengurus Gaya"
+
+#, fuzzy
+#~ msgid "Execute Script File..."
+#~ msgstr "Skrip"
+
+#, fuzzy
+#~ msgid "Script Manager..."
+#~ msgstr "Pengurus Gaya"
+
+#, fuzzy
+#~ msgid "Execute Script File"
+#~ msgstr "Skrip"
+
+#, fuzzy
+#~ msgid "Could not read the package \"%1\"."
+#~ msgstr "Tidak dapat baca bahagian awal fail."
+
+#, fuzzy
+#~ msgid "Replace"
+#~ msgstr "&Ganti:"
+
+#, fuzzy
+#~ msgid "Save"
+#~ msgstr "Gelombang"
+
+#, fuzzy
+#~ msgid "Add script file"
+#~ msgstr "Skrip"
+
+#, fuzzy
+#~| msgid "Add Completion Entry"
+#~ msgid "Add collection folder"
+#~ msgstr "Tambah Entri Pelengkapan"
+
+#, fuzzy
+#~ msgid "Add"
+#~ msgstr "&Tambah"
+
+#, fuzzy
+#~ msgid "Script"
+#~ msgstr "Skrip"
+
+#, fuzzy
+#~| msgid "Completion"
+#~ msgid "Collection"
+#~ msgstr "Pelengkapan"
+
+#, fuzzy
+#~| msgid "Change List Type"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master slide"
+#~ msgstr "Ubah Jenis Senarai"
+
+#, fuzzy
+#~| msgid "Change List Type"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master page"
+#~ msgstr "Ubah Jenis Senarai"
+
+#, fuzzy
+#~| msgid "Page Layout"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "Paparan Laman"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display master background"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display slide background"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display page background"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Show master shapes"
+#~ msgstr "Cipta Templat"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Hide master shapes"
+#~ msgstr "Cipta Templat"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] "Hapuskan Teks"
+#~ msgstr[1] "Hapuskan Teks"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "Hapuskan Teks"
+#~ msgstr[1] "Hapuskan Teks"
+
+#, fuzzy
+#~| msgid "Insert Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr "Selitkan Teks"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr "Selitkan Teks"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "Tampalkan Teks"
+#~ msgstr[1] "Tampalkan Teks"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] "Hapuskan Teks"
+#~ msgstr[1] "Hapuskan Teks"
+
+#, fuzzy
+#~| msgid "Confirm Save"
+#~ msgid "Configure"
+#~ msgstr "Sahkan Simpan"
+
+#, fuzzy
+#~| msgid "Change Shadow"
+#~ msgid "Grid"
+#~ msgstr "Ubah Bayang"
+
+#, fuzzy
+#~| msgid "Document"
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "Dokumen"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Document Settings"
+#~ msgstr "Maklumat Dokumen"
+
+#, fuzzy
+#~| msgid "Author"
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "Penulis"
+
+#~ msgid "Author"
+#~ msgstr "Penulis"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Slide"
+#~ msgstr "Tampalkan Teks"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Page"
+#~ msgstr "Tampalkan Teks"
+
+#, fuzzy
+#~ msgid "Page  %1"
+#~ msgstr "Halaman Berikutnya"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "Lavender"
+#~ msgid "Layer"
+#~ msgstr "Lavender"
+
+#, fuzzy
+#~| msgid "Group:"
+#~ msgid "Group"
+#~ msgstr "Kumpulan:"
+
+#, fuzzy
+#~ msgid "Shape"
+#~ msgstr "Gelombang"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "Tampalkan Teks"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "Cipta Templat"
+
+#, fuzzy
+#~| msgid "Size:"
+#~ msgid "Slide"
+#~ msgstr "Saiz:"
+
+#, fuzzy
+#~| msgid "Variable"
+#~ msgid "Visible"
+#~ msgstr "Variabel"
+
+#, fuzzy
+#~ msgid "Locked"
+#~ msgstr "Muatkan..."
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reparent shapes"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgid "&Move Here"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgid "&Copy Here"
+#~ msgstr "Skrin"
+
+#, fuzzy
+#~ msgid "C&ancel"
+#~ msgstr "Ubah Huruf"
+
+#~ msgid "Document"
+#~ msgstr "Dokumen"
+
+#, fuzzy
+#~| msgid "Add Newline"
+#~ msgid "Add a new slide or layer"
+#~ msgstr "Tambahkan Garis Baru"
+
+#, fuzzy
+#~| msgid "Add Newline"
+#~ msgid "Add a new page or layer"
+#~ msgstr "Tambahkan Garis Baru"
+
+#, fuzzy
+#~ msgid "Page"
+#~ msgstr "Halaman Berikutnya"
+
+#, fuzzy
+#~| msgid "Remove Selected Text"
+#~ msgid "Delete selected objects"
+#~ msgstr "Buang Teks Dipilih"
+
+#, fuzzy
+#~| msgid "Remove Selected Text"
+#~ msgid "Raise selected objects"
+#~ msgstr "Buang Teks Dipilih"
+
+#, fuzzy
+#~ msgid "Lower selected objects"
+#~ msgstr "Cipta Dokumen"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgid "View mode"
+#~ msgstr "Ubah Sempadan"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "Cipta Templat"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~| msgid "Add Newline"
+#~ msgid "Add a new slide"
+#~ msgstr "Tambahkan Garis Baru"
+
+#, fuzzy
+#~| msgid "Add Newline"
+#~ msgid "Add a new page"
+#~ msgstr "Tambahkan Garis Baru"
+
+#, fuzzy
+#~ msgid "Page %1"
+#~ msgstr "Halaman Berikutnya"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] "Tampalkan Teks"
+#~ msgstr[1] "Tampalkan Teks"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] "Tampalkan Teks"
+#~ msgstr[1] "Tampalkan Teks"
+
+#, fuzzy
+#~ msgid "Tools"
+#~ msgstr "Warna Piawai"
+
+#, fuzzy
+#~ msgid "D&elete"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgid "Insert Page"
+#~ msgstr "Selitkan Teks"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Page"
+#~ msgstr "Nama Syarikat"
+
+#, fuzzy
+#~ msgid "Delete Page"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgid "Delete the current page"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Page..."
+#~ msgstr "Tampalkan Teks"
+
+#, fuzzy
+#~| msgid "Page Layout"
+#~ msgid "Page Layout..."
+#~ msgstr "Paparan Laman"
+
+#~ msgid "Variable"
+#~ msgstr "Variabel"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Document..."
+#~ msgstr "Import Dokumen"
+
+#, fuzzy
+#~ msgid "Import Slideshow"
+#~ msgstr "Import Gaya"
+
+#~ msgid "Import Document"
+#~ msgstr "Import Dokumen"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not import\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Tidak dapat buka\n"
+#~ " %1"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr "Ubah Penjadual"
+
+#, fuzzy
+#~ msgid "Set image ..."
+#~ msgstr "Saat"
+
+#, fuzzy
+#~ msgid "Background"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~ msgid "Page Background"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page Design"
+#~ msgstr "Prapapar Halaman"
+
+#, fuzzy
+#~ msgid "Use background of master page"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~ msgid "Use background of master slide"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~| msgid "Change List Type"
+#~ msgid "Display shapes of master page"
+#~ msgstr "Ubah Jenis Senarai"
+
+#, fuzzy
+#~| msgid "Change List Type"
+#~ msgid "Display shapes of master slide"
+#~ msgstr "Ubah Jenis Senarai"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change slide background image"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page background image"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "Tampalkan Teks"
+
+#, fuzzy
+#~| msgid "Size:"
+#~ msgid "Slide %1/%2"
+#~ msgstr "Saiz:"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Page %1/%2"
+#~ msgstr "Tampalkan Teks"
+
+#, fuzzy
+#~ msgid "Page %1/%2"
+#~ msgstr "Halaman Berikutnya"
+
+#, fuzzy
+#~ msgid "Field"
+#~ msgstr "Nama Fail"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "Lavender"
+#~ msgid "Label"
+#~ msgstr "Lavender"
+
+#, fuzzy
+#~| msgid "%1%"
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1%"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "Ubah Huruf"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "Ubah Jenis Senarai"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "Tambahkan Teks"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "Selitkan Pautan "
+
+#, fuzzy
+#~| msgid "Insert Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr "Selitkan Teks"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Right"
+#~ msgstr "Selitkan Pautan "
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr "Selitkan Pautan "
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Below"
+#~ msgstr "Selitkan Pemisah Baris"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "Selitkan Teks"
+
+#, fuzzy
+#~| msgid "Change List Type"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List Numbering"
+#~ msgstr "Ubah Jenis Senarai"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "Format Tarikh"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Direct Paragraph Formatting"
+#~ msgstr "Teks perenggan normal"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr "Cipta Templat"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr "Selitkan Pautan "
+
+#, fuzzy
+#~| msgid "Shadow:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "Bayang:"
+
+#, fuzzy
+#~| msgid "Date"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "Tarikh"
+
+#, fuzzy
+#~ msgid "1 replacement made"
+#~ msgid_plural "%1 replacements made"
+#~ msgstr[0] "Gantikan Teks"
+#~ msgstr[1] "Gantikan Teks"
+
+#, fuzzy
+#~| msgctxt "We add the 1/2 char at the %1"
+#~| msgid "Re&place 1/2... with %1..."
+#~ msgid "Replace %1 with %2?"
+#~ msgstr "&Gantikan 1/2... dengan %1 ..."
+
+#, fuzzy
+#~| msgid "Exceptions"
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "Pengecualian"
+
+#~ msgctxt "Underline Style"
+#~ msgid "None"
+#~ msgstr "Tiada"
+
+#, fuzzy
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "Tunggal"
+
+#, fuzzy
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "Kembar"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "New Paragraph"
+#~ msgstr "Teks perenggan normal"
+
+#, fuzzy
+#~| msgid "Bookmark"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "Tanda Buku"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "Posisi"
+
+#, fuzzy
+#~| msgid "Insert Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "Selitkan Teks"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "Selitkan Teks"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "Selitkan Pemisah Baris"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "Selitkan Teks"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "Margin"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "&Menegak"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr "Halaman Berikutnya"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Selitkan Teks"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr "Selitkan Teks"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Selitkan Pemisah Baris"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "Posisi"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr "Tebal:"
+
+#, fuzzy
+#~| msgid "Italic:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "Italik:"
+
+#, fuzzy
+#~| msgid "Underline"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "Garis Bawah"
+
+#, fuzzy
+#~| msgid "Strikeout:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr "Garis lorek:"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr "Ubah Inden"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr "Penjajaran menegak:"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "Ubah Inden"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "Ubah Inden"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "Ubah Huruf"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "Ubah Huruf"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr "Selitkan Pautan "
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr "Selitkan Pautan "
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr "Cipta Gaya Baru"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Paragraph Style"
+#~ msgstr "Teks perenggan normal"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "Format Tarikh"
+
+#, fuzzy
+#~ msgid "Default"
+#~ msgstr "&Piawai"
+
+#, fuzzy
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "Muat Turun"
+
+#, fuzzy
+#~ msgid "Redo %1"
+#~ msgstr "Muat Turun"
+
+#, fuzzy
+#~ msgid "Redo"
+#~ msgstr "Muat Turun"
+
+#, fuzzy
+#~ msgid "&File"
+#~ msgstr "Nama Fail"
+
+#, fuzzy
+#~ msgid "&Settings"
+#~ msgstr "Tunggal"
+
+#, fuzzy
+#~ msgid "File"
+#~ msgstr "Nama Fail"
+
+#, fuzzy
+#~ msgid "Delete the author profile"
+#~ msgstr "Hapuskan Teks"
+
+#~ msgid "Name:"
+#~ msgstr "Nama:"
+
+#~ msgid "Initials:"
+#~ msgstr "Parap:"
+
+#~ msgid "Title:"
+#~ msgstr "Panggilan:"
+
+#~ msgid "Position:"
+#~ msgstr "Jawatan:"
+
+#~ msgid "Company:"
+#~ msgstr "Syarikat:"
+
+#~ msgid "Email:"
+#~ msgstr "Emel:"
+
+#, fuzzy
+#~ msgid "Telephone (home):"
+#~ msgstr "Telefon (Rumah):"
+
+#, fuzzy
+#~ msgid "Telephone (work):"
+#~ msgstr "Telefon (tempat kerja)"
+
+#~ msgid "Fax:"
+#~ msgstr "Faks:"
+
+#~ msgid "Street:"
+#~ msgstr "Jalan:"
+
+#~ msgid "City:"
+#~ msgstr "Bandar:"
+
+#~ msgid "Country:"
+#~ msgstr "Negara:"
+
+#, fuzzy
+#~| msgid "Autosaving..."
+#~ msgid "Autosave interval:"
+#~ msgstr "Autopenyimpanan..."
+
+#, fuzzy
+#~ msgid "Create backup file:"
+#~ msgstr "Cipta Templat"
+
+#, fuzzy
+#~| msgid "Change Shadow"
+#~ msgid "Show grid:"
+#~ msgstr "Ubah Bayang"
+
+#, fuzzy
+#~ msgid "Grid color:"
+#~ msgstr "Warna latar belakang:"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgid "Spacing"
+#~ msgstr "Space"
+
+#, fuzzy
+#~| msgid "&Horizontal"
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "&Mendatar"
+
+#, fuzzy
+#~| msgid "&Vertical"
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "&Menegak"
+
+#, fuzzy
+#~| msgid "Unit:"
+#~ msgid "Units:"
+#~ msgstr "Unit:"
+
+#, fuzzy
+#~| msgid "Shadow:"
+#~ msgid "Paste offset:"
+#~ msgstr "Bayang:"
+
+#~ msgid "Only print and exit"
+#~ msgstr "Hanya cetak dan keluar "
+
+#~ msgid "Open a new document with a template"
+#~ msgstr "Buka dokumen baru dengan templat"
+
+#~ msgid "Override display DPI"
+#~ msgstr "Tulis tindih paparan DPI"
+
+#, fuzzy
+#~| msgid "Only print and exit"
+#~ msgid "Only export to PDF and exit"
+#~ msgstr "Hanya cetak dan keluar "
+
+#, fuzzy
+#~ msgid "%1: Critical Error"
+#~ msgstr "Kata Pelengkapan"
+
+#, fuzzy
+#~| msgid "No template found for: %1 "
+#~ msgid "No template found for: %1"
+#~ msgstr "Tiada templat ditemui untuk:%1"
+
+#~ msgid "Too many templates found for: %1"
+#~ msgstr "Terlalu banyak templat ditemui untuk: %1"
+
+#~ msgid "Template %1 failed to load."
+#~ msgstr "Templat %1 gagal dimuatkan."
+
+#, fuzzy
+#~ msgid "Always use this template at application start up"
+#~ msgstr "Sentiasa mula %1 dengan templat yang dipilih"
+
+#, fuzzy
+#~ msgid "Always use this template"
+#~ msgstr "Sentiasa mula %1 dengan templat yang dipilih"
+
+#~ msgid "Making backup..."
+#~ msgstr "Menyediakan sandaran..."
+
+#~ msgid "Saving..."
+#~ msgstr "Menyimpan..."
+
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Tidak dapat simpan\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Tidak dapat simpan %1\n"
+#~ "Alasan: %2"
+
+#, fuzzy
+#~| msgid "Document Title"
+#~ msgid "Document <i>%1</i> saved"
+#~ msgstr "Tajuk Dokumen"
+
+#~ msgid "Autosaving..."
+#~ msgstr "Autopenyimpanan..."
+
+#~ msgid "Error during autosave! Partition full?"
+#~ msgstr "Ralat semasa autosimpan! Penyekat penuh?"
+
+#~ msgid "Could not create the file for saving"
+#~ msgstr "Tidak dapat cipta fail untuk penyimpanan"
+
+#~ msgid "Not able to write '%1'. Partition full?"
+#~ msgstr "Tidak dapat menulis '%1'. Penyekat penuh?"
+
+#, fuzzy
+#~| msgid "Not able to write '%1'. Partition full?"
+#~ msgid "Not able to write RDF metadata. Partition full?"
+#~ msgstr "Tidak dapat menulis '%1'. Penyekat penuh?"
+
+#~ msgid "Error while trying to write '%1'. Partition full?"
+#~ msgstr "Ralat semasa cuba menulis '%1'. Penyekat penuh?"
+
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "URL Cacat\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "An autosaved file exists for this document.\n"
+#~ "Do you want to open it instead?"
+#~ msgstr ""
+#~ "Fail autosimpan wujud bagi dokumen ini.\n"
+#~ "Anda ingin buka fail ini?"
+
+#~ msgid "The file %1 does not exist."
+#~ msgstr "Fail%1 tidak wujud."
+
+#, fuzzy
+#~| msgid "Open Document"
+#~ msgid "Opening Document"
+#~ msgstr "Buka Dokumen"
+
+#, fuzzy
+#~| msgid "Could not create the file for saving"
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "Tidak dapat cipta fail untuk penyimpanan"
+
+#, fuzzy
+#~ msgid "File not found"
+#~ msgstr "Lokasi fail:"
+
+#, fuzzy
+#~ msgid "Internal error"
+#~ msgstr "Internet"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr ""
+#~ "Tidak dapat buka %1\n"
+#~ "Alasan: %2"
+
+#, fuzzy
+#~| msgid "Document Title"
+#~ msgid "Document <i>%1</i> loaded"
+#~ msgstr "Tajuk Dokumen"
+
+#~ msgid "Could not find %1"
+#~ msgstr "Tidak dapat cari %1"
+
+#~ msgid ""
+#~ "Parsing error in %1 at line %2, column %3\n"
+#~ "Error message: %4"
+#~ msgstr ""
+#~ "Ralat pengkajihuraian dalam %1 pada baris %2, lajur %3\n"
+#~ "Mesej ralat:%4"
+
+#~ msgid "%1 is not a file."
+#~ msgstr "%1 bukan fail."
+
+#~ msgid "Could not open the file for reading (check read permissions)."
+#~ msgstr "Tidak dapat buka fail untuk dibaca (periksa keizinan baca)."
+
+#~ msgid "Could not read the beginning of the file."
+#~ msgstr "Tidak dapat baca bahagian awal fail."
+
+#~ msgid ""
+#~ "parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "ralat  penghuraian dalam dokumen utama pada baris %1, lajur %2\n"
+#~ "Ralat mesej:%3"
+
+#, fuzzy
+#~| msgid "Not a valid KOffice file: %1"
+#~ msgid "Not a valid Calligra file: %1"
+#~ msgstr "Bukan fail KOffice yang sah:%1"
+
+#~ msgid "Invalid document: no file 'maindoc.xml'."
+#~ msgstr "Dokumen tak sah: tiada fail 'maindoc.xml'"
+
+#, fuzzy
+#~ msgid "Untitled"
+#~ msgstr "Tajuk"
+
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr ""
+#~ "<p>Dokumen <b>'%1'</b> telah diubah suai.</p><p>Anda ingin simpan dokumen "
+#~ "ini?</p>"
+
+#~ msgid "Internal error: saveXML not implemented"
+#~ msgstr "Ralat dalaman: simpanXML tidak dilaksanakan"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Tidak dapat buka\n"
+#~ " %1"
+
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Tidak dapat buka %1\n"
+#~ "Alasan: %2"
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~| "it?</p>"
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr ""
+#~ "<p>Dokumen <b>'%1'</b> telah diubah suai.</p><p>Anda ingin simpan dokumen "
+#~ "ini?</p>"
+
+#, fuzzy
+#~ msgid "Close Document"
+#~ msgstr "Cipta Dokumen"
+
+#, fuzzy
+#~| msgid "%1%"
+#~ msgid "%1 %"
+#~ msgstr "%1%"
+
+#, fuzzy
+#~ msgid "No"
+#~ msgstr "Nota"
+
+#~ msgid "Could not export file."
+#~ msgstr "Tidak dapat eksport fail."
+
+#~ msgid "Missing Export Filter"
+#~ msgstr "Penapis Eksport Hilang"
+
+#~ msgid ""
+#~ "Could not import file of type\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Tidak dapat import fail jenis\n"
+#~ "%1"
+
+#~ msgid "Missing Import Filter"
+#~ msgstr "Penapis Import Hilang"
+
+#~ msgid "Choose Filter"
+#~ msgstr "Tentukan Penapis"
+
+#, fuzzy
+#~| msgid "Mid:"
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "Tengah:"
+
+#, fuzzy
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "Tambahkan Teks"
+
+#, fuzzy
+#~| msgid "Preview:"
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "Prapapar:"
+
+#, fuzzy
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "Pengecualian"
+
+#, fuzzy
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "&Ganti:"
+
+#, fuzzy
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "&Ganti:"
+
+#, fuzzy
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "&Ganti:"
+
+#, fuzzy
+#~| msgid "No template found for: %1 "
+#~ msgctxt "Total number of matches"
+#~ msgid "1 match found"
+#~ msgid_plural "%1 matches found"
+#~ msgstr[0] "Tiada templat ditemui untuk:%1"
+#~ msgstr[1] "Tiada templat ditemui untuk:%1"
+
+#, fuzzy
+#~| msgid "No template found for: %1 "
+#~ msgid "No matches found"
+#~ msgstr "Tiada templat ditemui untuk:%1"
+
+#, fuzzy
+#~ msgid "%1 unsaved document (%2)"
+#~ msgstr "Simpan Doumen Sebagai"
+
+#, fuzzy
+#~| msgid "E&xport..."
+#~ msgid "Export as PDF..."
+#~ msgstr "&Eksport..."
+
+#, fuzzy
+#~ msgid "Reload"
+#~ msgstr "Muat Turun"
+
+#~ msgid "Versions..."
+#~ msgstr "Versi..."
+
+#~ msgid "E&xport..."
+#~ msgstr "&Eksport..."
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "En&crypt Document"
+#~ msgstr "Import Dokumen"
+
+#, fuzzy
+#~ msgid "&New View"
+#~ msgstr "&Alih Keluar Papar"
+
+#~ msgid "Document Information"
+#~ msgstr "Maklumat Dokumen"
+
+#, fuzzy
+#~| msgid "Show %1 Toolbar"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "Papar Papan Alatan %1"
+
+#, fuzzy
+#~ msgid "(write protected)"
+#~ msgstr "perlindungan tulis"
+
+#~ msgid "Save as %1"
+#~ msgstr "Simpan sebagai %1"
+
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "%1 (jenis fail tak diketahui)"
+
+#~ msgid ""
+#~ "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
+#~ "want to save in this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Menyimpan sebagai %1 mungkin menyebabkan beberapa pemformatan hilang."
+#~ "<p>Anda masih ingin simpan dalam format ini?</qt>"
+
+#~ msgid "Confirm Save"
+#~ msgstr "Sahkan Simpan"
+
+#~ msgid ""
+#~ "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you "
+#~ "still want to export to this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Mengeksport sebagai %1 mungkin menyebabkan beberapa pemformatan "
+#~ "hilang.<p>Anda masih ingin eksport ke format ini?</qt>"
+
+#~ msgid "Confirm Export"
+#~ msgstr "Sahkan Eksport"
+
+#, fuzzy
+#~ msgid "untitled"
+#~ msgstr "Tajuk"
+
+#~ msgid "Open Document"
+#~ msgstr "Buka Dokumen"
+
+#, fuzzy
+#~| msgid "E&xport..."
+#~ msgid "Export as PDF"
+#~ msgstr "&Eksport..."
+
+#~ msgid "Document - %1"
+#~ msgstr "Dokumen - %1"
+
+#, fuzzy
+#~| msgid ""
+#~| "You will lose all your changes!\n"
+#~| "Do you want to continue?"
+#~ msgid ""
+#~ "You will lose all changes made since your last save\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "Anda akan kehilangan semua perubahan!\n"
+#~ "Anda pasti mahu teruskan?"
+
+#, fuzzy
+#~ msgid "Warning"
+#~ msgstr "Pencetakan Terakhir "
+
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "Papar Papan Alatan %1"
+
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "Sembunyikan %1 Bar Alat"
+
+#, fuzzy
+#~ msgid "Open Existing Document"
+#~ msgstr "Buka Dokumen"
+
+#, fuzzy
+#~ msgid "Recent Documents"
+#~ msgstr "Buka Dokumen &Terbaru"
+
+#, fuzzy
+#~ msgid "Custom Document"
+#~ msgstr "Cipta Dokumen"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Printing"
+#~ msgstr "Pencetakan Terakhir "
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Printing done"
+#~ msgstr "Pencetakan Terakhir "
+
+#, fuzzy
+#~| msgid "Colors"
+#~ msgid "Close"
+#~ msgstr "Warna"
+
+#, fuzzy
+#~ msgid "Open This Document"
+#~ msgstr "Buka Dokumen"
+
+#~ msgid "Create Template"
+#~ msgstr "Cipta Templat"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "Nama:"
+
+#~ msgid "Group:"
+#~ msgstr "Kumpulan:"
+
+#~ msgid "&Add Group..."
+#~ msgstr "Tamb&ah Kumpulan..."
+
+#, fuzzy
+#~ msgid "&Remove"
+#~ msgstr "&Alih Keluar Papar"
+
+#~ msgid "Picture"
+#~ msgstr "Gambar"
+
+#, fuzzy
+#~| msgid "Preview:"
+#~ msgid "&Preview"
+#~ msgstr "Prapapar:"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Custom:"
+#~ msgstr "Biasa"
+
+#~ msgid "&Select..."
+#~ msgstr "&Pilih..."
+
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr "Anda benar-benar ingin tulis ganti templat sedia ada '%1'?"
+
+#~ msgid "Add Group"
+#~ msgstr "Tambahkan Kumpulan"
+
+#~ msgid "Enter group name:"
+#~ msgstr "Masukkan nama kumpulan:"
+
+#~ msgid "This name is already used."
+#~ msgstr "Nama ini sudah digunakan."
+
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "Anda benar-benar ingin alih keluar kumpulan itu?"
+
+#~ msgid "Remove Group"
+#~ msgstr "Alih Keluar Kumpulan"
+
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "Anda benar-benar ingin alih keluar templat itu?"
+
+#~ msgid "Remove Template"
+#~ msgstr "Alih Keluar Templat"
+
+#, fuzzy
+#~ msgid "&Delete"
+#~ msgstr "Hapuskan Teks"
+
+#~ msgid "Could not load picture."
+#~ msgstr "Tidak dapat muat turun gambar."
+
+#~ msgid "No picture available."
+#~ msgstr "Gambar tidak disediakan"
+
+#, fuzzy
+#~ msgid "Use This Template"
+#~ msgstr "Cipta Templat"
+
+#~ msgid "Version"
+#~ msgstr "Versi"
+
+#~ msgid "Date & Time"
+#~ msgstr "Tarikh & Masa"
+
+#~ msgid "Saved By"
+#~ msgstr "Disimpan Oleh"
+
+#~ msgid "Comment"
+#~ msgstr "Komen"
+
+#~ msgid "&Add"
+#~ msgstr "&Tambah"
+
+#, fuzzy
+#~ msgid "&Modify"
+#~ msgstr "Tengah:"
+
+#~ msgid "&Open"
+#~ msgstr "&Buka"
+
+#, fuzzy
+#~ msgid "Date: %1"
+#~ msgstr "Tarikh"
+
+#, fuzzy
+#~ msgid "Do you want to save the password?"
+#~ msgstr "Anda benar-benar ingin alih keluar templat itu?"
+
+#~ msgid ""
+#~ "Parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Ralat pengkaji hurai dalam dokumen utama pada baris %1, lajur %2\n"
+#~ "Mesej ralat: %3"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "Skrin"
+
+#~ msgid "The directory mode is not supported for remote locations."
+#~ msgstr "Mod direktori tidak disokong untuk lokasi jauh."
+
+#, fuzzy
+#~ msgid "Subtract"
+#~ msgstr "Abstrak"
+
+#, fuzzy
+#~ msgid "Lightness"
+#~ msgstr "Cyan Muda"
+
+#, fuzzy
+#~ msgid "Blue"
+#~ msgstr "Nilai"
+
+#, fuzzy
+#~ msgid "Green"
+#~ msgstr "Skrin"
+
+#, fuzzy
+#~ msgid "Erase"
+#~ msgstr "Huruf"
+
+#~ msgid "Normal"
+#~ msgstr "Biasa"
+
+#, fuzzy
+#~ msgid "Hard Mix"
+#~ msgstr "&Tinggi:"
+
+#, fuzzy
+#~| msgid "Variable"
+#~ msgid "Parallel"
+#~ msgstr "Variabel"
+
+#, fuzzy
+#~ msgid "Color Dodge"
+#~ msgstr "Warna"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgid "Linear Dodge"
+#~ msgstr "Ubah Sempadan"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "LightGreen"
+#~ msgid "Lighten"
+#~ msgstr "Hijau Muda"
+
+#, fuzzy
+#~ msgid "Hard Light"
+#~ msgstr "&Tinggi:"
+
+#, fuzzy
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "Tunggal"
+
+#, fuzzy
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "Tunggal"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "LightGreen"
+#~ msgid "Gamma Light"
+#~ msgstr "Hijau Muda"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "LightGreen"
+#~ msgid "Vivid Light"
+#~ msgstr "Hijau Muda"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "LightGreen"
+#~ msgid "Pin Light"
+#~ msgstr "Hijau Muda"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "LightGreen"
+#~ msgid "Linear Light"
+#~ msgstr "Hijau Muda"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Color Burn"
+#~ msgstr "Warna:"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgid "Linear Burn"
+#~ msgstr "Ubah Sempadan"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "DarkGreen"
+#~ msgid "Darken"
+#~ msgstr "Hijau Tua"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgid "Addition"
+#~ msgstr "Posisi"
+
+#, fuzzy
+#~ msgid "Inversed-Subtract"
+#~ msgstr "Abstrak"
+
+#, fuzzy
+#~ msgid "Additive-Subtractive"
+#~ msgstr "Abstrak"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Red"
+#~ msgstr "Nama Syarikat"
+
+#, fuzzy
+#~ msgid "Copy Green"
+#~ msgstr "Skrin"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Blue"
+#~ msgstr "Nama Syarikat"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Color"
+#~ msgstr "Warna:"
+
+#, fuzzy
+#~ msgid "Increase Saturation"
+#~ msgstr "Abstrak"
+
+#, fuzzy
+#~ msgid "Increase Luminosity"
+#~ msgstr "Ubah Huruf"
+
+#, fuzzy
+#~ msgid "Decrease Luminosity"
+#~ msgstr "Ubah Huruf"
+
+#, fuzzy
+#~ msgid "Darker Color"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Lighter Color"
+#~ msgstr "Warna:"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Color HSI"
+#~ msgstr "Warna:"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Increase Intensity"
+#~ msgstr "Ubah Inden"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Decrease Intensity"
+#~ msgstr "Ubah Inden"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Color HSL"
+#~ msgstr "Warna:"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Increase Lightness"
+#~ msgstr "Ubah Inden"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Decrease Lightness"
+#~ msgstr "Ubah Inden"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Color HSV"
+#~ msgstr "Warna:"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Increase Value"
+#~ msgstr "Ubah Inden"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Decrease Value"
+#~ msgstr "Ubah Inden"
+
+#, fuzzy
+#~| msgid "Gray"
+#~ msgid "Grayscale"
+#~ msgstr "Kelabu"
+
+#, fuzzy
+#~ msgid "8 Bits"
+#~ msgstr "pt"
+
+#, fuzzy
+#~| msgid "Autoinclude"
+#~ msgid "Arithmetic"
+#~ msgstr "Automasuk "
+
+#, fuzzy
+#~ msgid "Inverse Subtract"
+#~ msgstr "Abstrak"
+
+#, fuzzy
+#~ msgid "Additive Subtractive"
+#~ msgstr "Abstrak"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "DarkGreen"
+#~ msgid "Alpha Darken"
+#~ msgstr "Hijau Tua"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgid "Triples"
+#~ msgstr "Panggilan:"
+
+#, fuzzy
+#~| msgid "Company:"
+#~ msgid "copy"
+#~ msgstr "Syarikat:"
+
+#, fuzzy
+#~ msgid "delete"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgid "Namespaces"
+#~ msgstr "&Ganti:"
+
+#, fuzzy
+#~ msgid "Namespace"
+#~ msgstr "&Ganti:"
+
+#, fuzzy
+#~| msgid "St&yle"
+#~ msgid "Stylesheets"
+#~ msgstr "&Gaya"
+
+#, fuzzy
+#~ msgid "User"
+#~ msgstr "Selitkan Baris"
+
+#, fuzzy
+#~| msgid "St&yle"
+#~ msgid "Stylesheet Definition"
+#~ msgstr "&Gaya"
+
+#, fuzzy
+#~ msgid "Description"
+#~ msgstr "Penerangan:"
+
+#, fuzzy
+#~| msgid "St&yle"
+#~ msgid "Stylesheet Name"
+#~ msgstr "&Gaya"
+
+#, fuzzy
+#~ msgid "Blank"
+#~ msgstr "Kosong"
+
+#, fuzzy
+#~| msgid "Size:"
+#~ msgid "Valid"
+#~ msgstr "Saiz:"
+
+#, fuzzy
+#~| msgid "Subject:"
+#~ msgid "Subject"
+#~ msgstr "Subjek:"
+
+#, fuzzy
+#~| msgid "Picture"
+#~ msgid "Predicate"
+#~ msgstr "Gambar"
+
+#, fuzzy
+#~ msgid "DataType"
+#~ msgstr "Tarikh"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "Tiada"
+
+#, fuzzy
+#~| msgid "Right indent"
+#~ msgid "Rightwards Arrow Bullet"
+#~ msgstr "Inden kanan"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgid "Tamil"
+#~ msgstr "Panggilan:"
+
+#, fuzzy
+#~ msgid "Tibetan"
+#~ msgstr "Masa "
+
+#, fuzzy
+#~| msgid "Recent file:"
+#~ msgid "Recent:"
+#~ msgstr "Fail terdahulu:"
+
+#, fuzzy
+#~| msgid "More Colors..."
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "Lebih Banyak Warna..."
+
+#, fuzzy
+#~ msgid "Import Data"
+#~ msgstr "Import Dokumen"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgid "Generic"
+#~ msgstr "Umum"
+
+#, fuzzy
+#~ msgid "Currency"
+#~ msgstr "Seksyen Semasa"
+
+#~ msgid "None"
+#~ msgstr "Tiada"
+
+#, fuzzy
+#~ msgid "Data"
+#~ msgstr "Tarikh"
+
+#, fuzzy
+#~ msgid "E&ncoding:"
+#~ msgstr "&Garis bawah:"
+
+#, fuzzy
+#~ msgid "Format"
+#~ msgstr "Format Tarikh"
+
+#, fuzzy
+#~ msgid "Delimiter"
+#~ msgstr "Penyahhad Kiri"
+
+#, fuzzy
+#~ msgid "Semicolon"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~ msgid "Other"
+#~ msgstr "Enter"
+
+#, fuzzy
+#~ msgid "Tabulator"
+#~ msgstr "&Penjadual"
+
+#~ msgid "Space"
+#~ msgstr "Space"
+
+#, fuzzy
+#~ msgid "&Format:"
+#~ msgstr "Format Tarikh"
+
+#, fuzzy
+#~ msgid "Ranges"
+#~ msgstr "Oren"
+
+#, fuzzy
+#~ msgid "Update"
+#~ msgstr "Tarikh"
+
+#, fuzzy
+#~ msgid "Import columns:"
+#~ msgstr "Import Dokumen"
+
+#, fuzzy
+#~ msgid "Import lines:"
+#~ msgstr "Import Gaya"
+
+#, fuzzy
+#~| msgid "Author"
+#~ msgid "to"
+#~ msgstr "Penulis"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "Cipta Dokumen"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "Cipta Dokumen"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Lock Docker"
+#~ msgstr "Bilangan Baris"
+
+#~ msgid "Keywords:"
+#~ msgstr "Kata Kunci:"
+
+#~ msgid "Subject:"
+#~ msgstr "Subjek:"
+
+#, fuzzy
+#~ msgid "Last printed:"
+#~ msgstr "Pencetakan Terakhir "
+
+#, fuzzy
+#~ msgid "Encryption:"
+#~ msgstr "Penerangan:"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "Panggilan:"
+
+#, fuzzy
+#~ msgid "Revision number:"
+#~ msgstr "Penomboran"
+
+#, fuzzy
+#~ msgid "Modified:"
+#~ msgstr "Tengah:"
+
+#, fuzzy
+#~ msgid "Comments:"
+#~ msgstr "Komen"
+
+#, fuzzy
+#~ msgid "Created:"
+#~ msgstr "Cipta Templat"
+
+#, fuzzy
+#~| msgid "Edit Path"
+#~ msgid "Path:"
+#~ msgstr "Laluan Edit"
+
+#~ msgid "&Reset"
+#~ msgstr "&Set Semula"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Language:"
+#~ msgstr "Tampalkan Teks"
+
+#~ msgid "General"
+#~ msgstr "Umum"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Last saved by"
+#~ msgstr "Tampalkan Teks"
+
+#, fuzzy
+#~ msgid "Do not decrypt"
+#~ msgstr "Penerangan:"
+
+#, fuzzy
+#~ msgid "D&ecrypt"
+#~ msgstr "Penerangan:"
+
+#, fuzzy
+#~ msgid "Do not encrypt"
+#~ msgstr "Penerangan:"
+
+#, fuzzy
+#~ msgid "This document is not encrypted"
+#~ msgstr "Dokumen tidak kelihatan sebagai MathML"
+
+#, fuzzy
+#~ msgid "This document does not support encryption"
+#~ msgstr "Dokumen tidak kelihatan sebagai MathML"
+
+#, fuzzy
+#~ msgid "Confirm Decrypt"
+#~ msgstr "Sahkan Eksport"
+
+#, fuzzy
+#~ msgid "Decrypt"
+#~ msgstr "Penerangan:"
+
+#, fuzzy
+#~ msgid "Save Document"
+#~ msgstr "Simpan Doumen Sebagai"
+
+#, fuzzy
+#~ msgid "Change Filetype"
+#~ msgstr "Ubah Jenis Senarai"
+
+#, fuzzy
+#~ msgid "Change"
+#~ msgstr "Ubah Huruf"
+
+#, fuzzy
+#~ msgid "Remove"
+#~ msgstr "Alih Keluar Baris"
+
+#, fuzzy
+#~ msgid "Open palette"
+#~ msgstr ""
+#~ "_: warna\n"
+#~ "Hijau Pucat"
+
+#, fuzzy
+#~ msgid "Save palette"
+#~ msgstr ""
+#~ "_: warna\n"
+#~ "Hijau Pucat"
+
+#, fuzzy
+#~| msgid "Bookmark name:"
+#~ msgid "Color name:"
+#~ msgstr "Nama Tanda Laman:"
+
+#, fuzzy
+#~ msgid "Palette"
+#~ msgstr ""
+#~ "_: warna\n"
+#~ "Hijau Pucat"
+
+#, fuzzy
+#~| msgid "Remove Column"
+#~ msgid "Add/Remove Colors"
+#~ msgstr "Alih Keluar Lajur"
+
+#, fuzzy
+#~ msgid "Testing: OpenFile"
+#~ msgstr ""
+#~ "_: warna\n"
+#~ "Hijau Pucat"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFile"
+#~ msgstr "Penapis Import Hilang"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "Penapis Import Hilang"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: Import Directory"
+#~ msgstr "Import Dokumen"
+
+#, fuzzy
+#~ msgid "Testing: SaveFile"
+#~ msgstr ""
+#~ "_: warna\n"
+#~ "Hijau Pucat"
+
+#, fuzzy
+#~ msgid "Open File"
+#~ msgstr ""
+#~ "_: warna\n"
+#~ "Hijau Pucat"
+
+#, fuzzy
+#~ msgid "Open Files"
+#~ msgstr ""
+#~ "_: warna\n"
+#~ "Hijau Pucat"
+
+#, fuzzy
+#~| msgid "Choose Filter"
+#~ msgid "Filter:"
+#~ msgstr "Tentukan Penapis"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "Lavender"
+#~ msgid "TextLabel"
+#~ msgstr "Lavender"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "Named"
+#~ msgstr "Nama:"
+
+#, fuzzy
+#~ msgid "Save File"
+#~ msgstr ""
+#~ "_: warna\n"
+#~ "Hijau Pucat"
+
+#, fuzzy
+#~ msgid "Import Files"
+#~ msgstr "Import Gaya"
+
+#, fuzzy
+#~ msgid "Import File"
+#~ msgstr "Import Gaya"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Directory"
+#~ msgstr "Import Dokumen"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "Tiada"
+
+#, fuzzy
+#~| msgid "Change List Type"
+#~ msgid "Change the filling gradient"
+#~ msgstr "Ubah Jenis Senarai"
+
+#, fuzzy
+#~ msgid "Icon and Text"
+#~ msgstr "Tambahkan Teks"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgid "Bottom side"
+#~ msgstr "Jajarkan Auto"
+
+#, fuzzy
+#~| msgid "Left indent"
+#~ msgid "Left side"
+#~ msgstr "Inden kiri"
+
+#, fuzzy
+#~| msgid "Right indent"
+#~ msgid "Right side"
+#~ msgstr "Inden kanan"
+
+#~ msgid "Page Layout"
+#~ msgstr "Paparan Laman"
+
+#, fuzzy
+#~| msgid "Empty Document"
+#~ msgid "Apply to document"
+#~ msgstr "Dokumen Kosong"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgid "Left Edge:"
+#~ msgstr "Kiri:"
+
+#, fuzzy
+#~| msgid "Right:"
+#~ msgid "Right Edge:"
+#~ msgstr "Kanan:"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Binding Edge:"
+#~ msgstr "Pencetakan Terakhir "
+
+#, fuzzy
+#~| msgid "Page Size"
+#~ msgid "Page Edge:"
+#~ msgstr "Saiz Laman"
+
+#, fuzzy
+#~ msgid "Facing Pages:"
+#~ msgstr "Halaman Berikutnya"
+
+#, fuzzy
+#~ msgid "Facing pages"
+#~ msgstr "Halaman Berikutnya"
+
+#, fuzzy
+#~| msgid "Page Layout"
+#~ msgid "Page Layout:"
+#~ msgstr "Paparan Laman"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page spread"
+#~ msgstr "Prapapar Halaman"
+
+#~ msgid "Unit:"
+#~ msgstr "Unit:"
+
+#~ msgid "Size:"
+#~ msgstr "Saiz:"
+
+#, fuzzy
+#~ msgid "Width:"
+#~ msgstr "&Lebar:"
+
+#, fuzzy
+#~ msgid "Height:"
+#~ msgstr "&Tinggi:"
+
+#, fuzzy
+#~ msgid "Orientation:"
+#~ msgstr "&Orientasi Pencerai"
+
+#, fuzzy
+#~| msgid "Language:"
+#~ msgid "Facing pages:"
+#~ msgstr "Bahasa:"
+
+#, fuzzy
+#~| msgid "Single"
+#~ msgid "Single sided"
+#~ msgstr "Tunggal"
+
+#, fuzzy
+#~ msgid "Text direction:"
+#~ msgstr "Warna Piawai"
+
+#, fuzzy
+#~| msgid "Autoinclude"
+#~ msgid "Automatic"
+#~ msgstr "Automasuk "
+
+#, fuzzy
+#~ msgid "Left to right"
+#~ msgstr "Tunggal"
+
+#, fuzzy
+#~| msgid "Right indent"
+#~ msgid "Right to left"
+#~ msgstr "Inden kanan"
+
+#~ msgid "Margins"
+#~ msgstr "Margin"
+
+#, fuzzy
+#~ msgid "Top:"
+#~ msgstr "Kumpulan:"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Binding edge:"
+#~ msgstr "Pencetakan Terakhir "
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page edge:"
+#~ msgstr "Prapapar Halaman"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgid "Bottom:"
+#~ msgstr "Jajarkan Auto"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "Import Dokumen"
+
+#, fuzzy
+#~| msgid "Download"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "Muat Turun"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~| msgid "Choose Filter"
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "Tentukan Penapis"
+
+#, fuzzy
+#~ msgid "Remove from this tag"
+#~ msgstr "Alih Keluar Pautan "
+
+#, fuzzy
+#~ msgid "Miter join"
+#~ msgstr "Margin"
+
+#, fuzzy
+#~ msgid "Bevel join"
+#~ msgstr "Alih Keluar Pautan "
+
+#, fuzzy
+#~ msgid "Miter limit"
+#~ msgstr "Margin"
+
+#, fuzzy
+#~ msgid "Rename tag"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgid "Delete this tag"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgid "Undelete"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgid "Tool Options"
+#~ msgstr "Kata Pelengkapan"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "deselect item"
+#~ msgstr "Pilih Aksara"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "select item"
+#~ msgstr "Pilih Aksara"
+
+#, fuzzy
+#~| msgid "%1%"
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1%"
+
+#, fuzzy
+#~| msgid "Autoinclude"
+#~ msgctxt "Static Image"
+#~ msgid "Static"
+#~ msgstr "Automasuk "
+
+#, fuzzy
+#~ msgid "Magenta"
+#~ msgstr "Magenta"
+
+#, fuzzy
+#~ msgid "Black"
+#~ msgstr "Kosong"
+
+#, fuzzy
+#~ msgid "Opacity:"
+#~ msgstr "Bandar:"
+
+#, fuzzy
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "&Piawai"
+
+#, fuzzy
+#~| msgid "Confirm Save"
+#~ msgid "Configuration..."
+#~ msgstr "Sahkan Simpan"
+
+#, fuzzy
+#~ msgid "&Tools"
+#~ msgstr "Warna Piawai"
+
+#, fuzzy
+#~| msgid "Completion"
+#~ msgid "Color Selector"
+#~ msgstr "Pelengkapan"
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Database file \"%1\" does not exist."
+#~ msgstr "Fail%1 tidak wujud."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist in the database."
+#~ msgstr "Fail%1 tidak wujud."
+
+#, fuzzy
+#~ msgid "Could not compact database \"%1\"."
+#~ msgstr "Tidak dapat baca bahagian awal fail."
+
+#, fuzzy
+#~ msgid "Do you want to open file \"%1\" as read-only?"
+#~ msgstr "Anda benar-benar ingin alih keluar templat itu?"
+
+#, fuzzy
+#~| msgid "Could not read the beginning of the file."
+#~ msgid "Could not gain exclusive access for writing the file."
+#~ msgstr "Tidak dapat baca bahagian awal fail."
+
+#, fuzzy
+#~| msgid "Could not load picture."
+#~ msgid "Could not close busy database."
+#~ msgstr "Tidak dapat muat turun gambar."
+
+#, fuzzy
+#~| msgid "Could not export file."
+#~ msgid "Could not remove file \"%1\"."
+#~ msgstr "Tidak dapat eksport fail."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist"
+#~ msgstr "Fail%1 tidak wujud."
+
+#, fuzzy
+#~| msgid "Change Shadow"
+#~ msgid "Grid Snap"
+#~ msgstr "Ubah Bayang"
+
+#, fuzzy
+#~ msgid "Formatting"
+#~ msgstr "Format Tarikh"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: OpenDirectories"
+#~ msgstr "Import Dokumen"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: ImportDirectories"
+#~ msgstr "Import Dokumen"
+
+#, fuzzy
+#~ msgid "Testing: SaveFiles"
+#~ msgstr ""
+#~ "_: warna\n"
+#~ "Hijau Pucat"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Directories"
+#~ msgstr "Import Dokumen"
+
+#, fuzzy
+#~ msgid "Save Files"
+#~ msgstr ""
+#~ "_: warna\n"
+#~ "Hijau Pucat"
+
+#, fuzzy
+#~ msgid "Create Path"
+#~ msgstr "Cipta Templat"
+
+#~ msgid "Error!"
+#~ msgstr "Ralat!"
+
+#, fuzzy
+#~| msgid "Exceptions"
+#~ msgid "Locations"
+#~ msgstr "Pengecualian"
+
+#, fuzzy
+#~| msgid "Version"
+#~ msgid "Region"
+#~ msgstr "Versi"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not save\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not add entry\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Tidak dapat simpan\n"
+#~ "%1"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not save\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not save iCal file\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Tidak dapat simpan\n"
+#~ "%1"
+
+#, fuzzy
+#~| msgid "Completion"
+#~ msgid "&Location:"
+#~ msgstr "Pelengkapan"
+
+#, fuzzy
+#~| msgid "Street:"
+#~ msgid "&Start:"
+#~ msgstr "Jalan:"
+
+#, fuzzy
+#~ msgid "Timezone"
+#~ msgstr "Masa "
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "&Name:"
+#~ msgstr "Nama:"
+
+#, fuzzy
+#~ msgid "&Phone Number:"
+#~ msgstr "Penomboran"
+
+#, fuzzy
+#~ msgid "&Home Page:"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Contact Information"
+#~ msgstr "Maklumat Dokumen"
+
+#, fuzzy
+#~ msgid "Import contact"
+#~ msgstr "Import Dokumen"
+
+#, fuzzy
+#~| msgid "E&xport..."
+#~ msgid "Export as vcard..."
+#~ msgstr "&Eksport..."
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "&Name"
+#~ msgstr "Nama:"
+
+#, fuzzy
+#~| msgid "Edit Path"
+#~ msgid "The Earth"
+#~ msgstr "Laluan Edit"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Location Information"
+#~ msgstr "Maklumat Dokumen"
+
+#, fuzzy
+#~ msgid "People"
+#~ msgstr "&Ganti:"
+
+#~ msgid ""
+#~ "A document with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "Dokumen dengan nama ini sudah wujud.\n"
+#~ "Anda mahu tindih?"
+
+#, fuzzy
+#~| msgid "Unknown KOffice MimeType %s. Check your installation."
+#~ msgid "Unknown Calligra MimeType %1. Check your installation."
+#~ msgstr "Jenis Mime KOffice Tak Diketahui %s. Periksa pemasangan anda."
+
+#~ msgid "%1 (Uncompressed XML Files)"
+#~ msgstr "%1 (Fail  XML Tak Mampat)"
+
+#, fuzzy
+#~ msgid "%1 (Flat XML File)"
+#~ msgstr "%1 (Fail  XML Tak Mampat)"
+
+#~ msgid "%1 (%2 Compatible)"
+#~ msgstr "%1 (%2 Serasi)"
+
+#~ msgid "Save Document As"
+#~ msgstr "Simpan Doumen Sebagai"
+
+#~ msgid "Export Document As"
+#~ msgstr "Eksport Dokumen Sebagai"
+
+#, fuzzy
+#~| msgid "E&xport..."
+#~ msgid "Export to PDF"
+#~ msgstr "&Eksport..."
+
+#, fuzzy
+#~ msgid "Slide Background"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~ msgid "Document background"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~ msgid "&Cancel"
+#~ msgstr "Ubah Huruf"
+
+#, fuzzy
+#~ msgid "First Page"
+#~ msgstr "Halaman Berikutnya"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Even Pages(s)"
+#~ msgstr "Nama Syarikat"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Any Pages(s)"
+#~ msgstr "Nama Syarikat"
+
+#, fuzzy
+#~ msgid "&Edit"
+#~ msgstr "Tambahkan Matriks..."
+
+#, fuzzy
+#~| msgid "Colors"
+#~ msgid "&Close"
+#~ msgstr "Warna"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgid "Dodge"
+#~ msgstr "Tiada"
+
+#, fuzzy
+#~ msgid "Hard light"
+#~ msgstr "&Tinggi:"
+
+#, fuzzy
+#~ msgid "Soft light"
+#~ msgstr "Tunggal"
+
+#, fuzzy
+#~| msgid "Change Shadow"
+#~ msgid "Show Shadow"
+#~ msgstr "Ubah Bayang"
+
+#, fuzzy
+#~ msgid "Angle:"
+#~ msgstr "Tunggal"
+
+#, fuzzy
+#~| msgid "Shadow:"
+#~ msgid "Offset:"
+#~ msgstr "Bayang:"
+
+#, fuzzy
+#~ msgid "Color:"
+#~ msgstr "Warna:"
+
+#, fuzzy
+#~ msgid "Style:"
+#~ msgstr "&Gaya:"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bookmark"
+#~ msgstr "Selitkan Pemisah Baris"
+
+#, fuzzy
+#~ msgid "Insert Table"
+#~ msgstr "Selitkan Teks"
+
+#, fuzzy
+#~ msgid "Insert Row Above"
+#~ msgstr "Selitkan Teks"
+
+#, fuzzy
+#~ msgid "Insert Column Left"
+#~ msgstr "Selitkan Pautan "
+
+#, fuzzy
+#~ msgid "Insert Column Right"
+#~ msgstr "Selitkan Pautan "
+
+#, fuzzy
+#~ msgid "Delete Column"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgid "Delete Row"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Selitkan Teks"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Selitkan Pemisah Baris"
+
+#, fuzzy
+#~ msgid "Embedding Object"
+#~ msgstr "Bilangan Objek Terbenam"
+
+#~ msgid "I&mport..."
+#~ msgstr "&Import..."
+
+#~ msgid "&Default"
+#~ msgstr "&Piawai"
+
+#, fuzzy
+#~ msgid "Background Tool"
+#~ msgstr "Warna latar belakang:"
+
+#, fuzzy
+#~ msgid "Background editing tool"
+#~ msgstr "Warna latar belakang:"
+
+#, fuzzy
+#~ msgid "Use master background"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Separate paths"
+#~ msgstr "Laluan piawai"
+
+#~ msgid ""
+#~ "An autosaved file for an unnamed document exists in %1.\n"
+#~ "This file is dated %2\n"
+#~ "Do you want to open it?"
+#~ msgstr ""
+#~ "Fail autosimpan bagi dokumen tak bernama  wujud dalam %1.\n"
+#~ "Fail ini bertarikh %2\n"
+#~ "Anda ingin buka fail ini?"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shapes"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgid "Substract"
+#~ msgstr "Abstrak"
+
+#, fuzzy
+#~ msgid "Inverse Substract"
+#~ msgstr "Abstrak"
+
+#, fuzzy
+#~ msgid ""
+#~ "No personal contact data set, please use the "
+#~ "option                                     \"Set as Personal Contact Data"
+#~ "\" from the \"Edit\"     menu in KAddressbook to set one."
+#~ msgstr ""
+#~ "Tiada data hubungan peribadi disetkan, sila guna pilihan \"Setkan sebagai "
+#~ "Data Hubungan Peribadi\" dari menu \"Edit\" dalam KAdressbook untuk "
+#~ "mengesetnya. "
+
+#, fuzzy
+#~ msgid "&Load From Address Book"
+#~ msgstr "Muat Dari Buku Alamat"
+
+#, fuzzy
+#~| msgid "Shadow:"
+#~ msgid "Shadow Angle:"
+#~ msgstr "Bayang:"
+
+#, fuzzy
+#~ msgid "Shadow Color:"
+#~ msgstr "Bayang:"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgid "Set Horizontal Alignment"
+#~ msgstr "Penjajaran menegak:"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgid "Line Break"
+#~ msgstr "Ubah Sempadan"
+
+#, fuzzy
+#~ msgid "Hide Grid"
+#~ msgstr "Bilangan Baris"
+
+#, fuzzy
+#~ msgid "Hide Guides"
+#~ msgstr "Bilangan Baris"
+
+#~ msgid "&Close All Views"
+#~ msgstr "&Tutup Semua Papar"
+
+#~ msgid "&Split View"
+#~ msgstr "&Ceraikan Papar"
+
+#~ msgid "&Remove View"
+#~ msgstr "&Alih Keluar Papar"
+
+#~ msgid "Splitter &Orientation"
+#~ msgstr "&Orientasi Pencerai"
+
+#~ msgid "&Horizontal"
+#~ msgstr "&Mendatar"
+
+#~ msgid "&Vertical"
+#~ msgstr "&Menegak"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Printing page %1"
+#~ msgstr "Pencetakan Terakhir "
+
+#, fuzzy
+#~ msgid "Form"
+#~ msgstr "Format Tarikh"
+
+#, fuzzy
+#~| msgid "I&mport..."
+#~ msgid "Import"
+#~ msgstr "&Import..."
+
+#, fuzzy
+#~ msgid "Share"
+#~ msgstr "Gelombang"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Opacy"
+#~ msgstr "Nama Syarikat"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Alpha"
+#~ msgstr "Nama Syarikat"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "LightGreen"
+#~ msgid "Light"
+#~ msgstr "Hijau Muda"
+
+#~ msgid "KOffice"
+#~ msgstr "KOffice"
+
+#~ msgid "KOffice Storage"
+#~ msgstr "Storan KOffice"
+
+#, fuzzy
+#~ msgid "Barcode"
+#~ msgstr "Format Tarikh"
+
+#, fuzzy
+#~ msgid "Barcode Format"
+#~ msgstr "Format Tarikh"
+
+#, fuzzy
+#~| msgid "Street:"
+#~ msgid "Chart"
+#~ msgstr "Jalan:"
+
+#, fuzzy
+#~ msgid "Field Font"
+#~ msgstr "Selitkan Pautan "
+
+#, fuzzy
+#~ msgid "Pie"
+#~ msgstr "Masa "
+
+#, fuzzy
+#~| msgid "Version"
+#~ msgid "Ring"
+#~ msgstr "Versi"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Polar"
+#~ msgstr "Warna:"
+
+#, fuzzy
+#~ msgid "Chart Type"
+#~ msgstr "Tarikh"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgid "Stacked"
+#~ msgstr "Space"
+
+#, fuzzy
+#~| msgid "Recent file:"
+#~ msgid "Percent"
+#~ msgstr "Fail terdahulu:"
+
+#, fuzzy
+#~| msgid "Bookmark name:"
+#~ msgid "Color Scheme"
+#~ msgstr "Nama Tanda Laman:"
+
+#, fuzzy
+#~ msgid "Antialiased"
+#~ msgstr "Tajuk"
+
+#, fuzzy
+#~ msgid "Display Legend"
+#~ msgstr "Saat"
+
+#, fuzzy
+#~ msgid "Pan Tool"
+#~ msgstr "Warna Piawai"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Out"
+#~ msgstr "Biasa"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgid "Insert Linebreak"
+#~ msgstr "Selitkan Pemisah Baris"
+
+#, fuzzy
+#~ msgid "&Insert"
+#~ msgstr "Selitkan Baris"
+
+#~ msgid "Insert the selected character in the text"
+#~ msgstr "Selitkan aksara yang dipilih ke dalam teks"
+
+#, fuzzy
+#~ msgid "Enable word completion"
+#~ msgstr "&Aktifkan pelengkapan"
+
+#, fuzzy
+#~ msgid "Automatically add new words to suggestion list"
+#~ msgstr "&Secara Automatik tambahkan kata baru ke dalam senarai pelengkapan"
+
+#, fuzzy
+#~ msgid ""
+#~ "If this option is enabled, any word equal to or longer than the "
+#~ "\"Characters needed\" typed in this document will automatically be added "
+#~ "to the list of words used by the completion."
+#~ msgstr ""
+#~ "Jika pilihan ini diaktifkan, apa-apa kata yang ditaip dalam dokumen ini "
+#~ "akan ditambah secara automatik ke dalam senarai kata yang digunakan oleh "
+#~ "pelengkapan."
+
+#, fuzzy
+#~ msgid "Completion Options"
+#~ msgstr "Kata Pelengkapan"
+
+#, fuzzy
+#~ msgid ""
+#~ "If this option is enabled, a tool tip box will appear when you type the "
+#~ "beginning of a word that exists in the completion list. To complete the "
+#~ "word, press the key you set to accept suggestions in the \"Key to accept "
+#~ "suggestion\" drop-down list."
+#~ msgstr ""
+#~ "Jika pilihan ini diaktifkan, kotak tip alat akan muncul apabila anda "
+#~ "menaip pangkal kata yang wujud dalam senarai pelengkapan. Untuk "
+#~ "melengkapkan kata, tekan kekunci TAB atau ENTER."
+
+#, fuzzy
+#~ msgid "Suggest words:"
+#~ msgstr "Kata Kunci:"
+
+#, fuzzy
+#~ msgid "Append space"
+#~ msgstr "&Tambah ruang"
+
+#, fuzzy
+#~ msgid "Make Default"
+#~ msgstr "&Piawai"
+
+#, fuzzy
+#~ msgid "C&ustom"
+#~ msgstr "Biasa"
+
+#, fuzzy
+#~ msgid "&Insert:"
+#~ msgstr "Selitkan Baris"
+
+#, fuzzy
+#~ msgid "Paragraph Background Color"
+#~ msgstr "Ubah Warna &Latarbelakang..."
+
+#, fuzzy
+#~ msgid "Borders"
+#~ msgstr "&Sempadan"
+
+#~ msgid "&Width:"
+#~ msgstr "&Lebar:"
+
+#, fuzzy
+#~ msgid "String:"
+#~ msgstr "Tunggal"
+
+#, fuzzy
+#~ msgid "Boolean:"
+#~ msgstr "Kosong"
+
+#, fuzzy
+#~ msgid "true"
+#~ msgstr "Jalan"
+
+#, fuzzy
+#~ msgid "false"
+#~ msgstr "Huruf"
+
+#, fuzzy
+#~ msgid "Date:"
+#~ msgstr "Tarikh"
+
+#, fuzzy
+#~ msgid "Add Guide Line"
+#~ msgstr "Tambahkan Pelbagai Garis"
+
+#, fuzzy
+#~ msgid "Horizontal"
+#~ msgstr "&Mendatar"
+
+#, fuzzy
+#~ msgid "Vertical"
+#~ msgstr "&Menegak"
+
+#, fuzzy
+#~ msgid "&Position:"
+#~ msgstr "Jawatan:"
+
+#, fuzzy
+#~ msgid "Guide Line"
+#~ msgstr "Baris Kepala"
+
+#, fuzzy
+#~ msgid "Guide Lines"
+#~ msgstr "Bilangan Baris"
+
+#~ msgid "No handler found for %1"
+#~ msgstr "Tidak jumpa pengendali untuk %1"
+
+#~ msgid ""
+#~ "This document contains an external link to a remote document\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Dokumen ini mengandungi pautan luar dengan dokumen jauh\n"
+#~ "%1 "
+
+#~ msgid "Confirmation Required"
+#~ msgstr "Pengesahan Diperlukan"
+
+#~ msgid "Skip"
+#~ msgstr "Langkau"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not load external document %1:\n"
+#~ "%2"
+#~ msgstr "Tidak dapat memuatkan objek terbenam."
+
+#, fuzzy
+#~ msgid "Na&me:"
+#~ msgstr "Nama:"
+
+#~ msgid "&Height:"
+#~ msgstr "&Tinggi:"
+
+#, fuzzy
+#~ msgid "&Left:"
+#~ msgstr "&Kiri"
+
+#~ msgid "Context Help"
+#~ msgstr "Bantuan Konteks "
+
+#~ msgid "Here will be shown help according to your actions"
+#~ msgstr "Di sini ditunjukkan bantuan mengikut tindakan anda"
+
+#~ msgid "All values are given in %1."
+#~ msgstr "Semua nilai diberi dalam %1."
+
+#~ msgid "&Size:"
+#~ msgstr "&Saiz:"
+
+#~ msgid "&Portrait"
+#~ msgstr "&Potret"
+
+#~ msgid "La&ndscape"
+#~ msgstr "La&nskap"
+
+#~ msgid "The page width is smaller than the left and right margins."
+#~ msgstr "Lebar halaman lebih kecil daripada jidar kiri dan kanan."
+
+#~ msgid "Page Layout Problem"
+#~ msgstr "Masalah Bentangan Halaman"
+
+#~ msgid "The page height is smaller than the top and bottom margins."
+#~ msgstr "Tinggi halaman lebih kecil daripada jidar atas dan bawah."
+
+#, fuzzy
+#~ msgid "Delete slides"
+#~ msgstr "Hapuskan Teks"
+
+#, fuzzy
+#~ msgid "Delete pages"
+#~ msgstr "Hapuskan Teks"
+
+#~ msgid "Insert Object"
+#~ msgstr "Selitkan Objek"
+
+#, fuzzy
+#~ msgid "Column spacing:"
+#~ msgstr "Lajur &jarak (%1):"
+
+#, fuzzy
+#~ msgid "Footnote/ Endnote"
+#~ msgstr "&Nota kaki/Nota hujung"
+
+#, fuzzy
+#~ msgid "Spacing between footnote and body:"
+#~ msgstr "Jarak di antara nota kaki dan isi (%1):"
+
+#~ msgid "Different footer for even and odd pages"
+#~ msgstr "Pengaki berlainan untuk halaman genap dan ganjil"
+
+#~ msgid "Different footer for the first page"
+#~ msgstr "Pengaki berlainan untuk halaman pertama "
+
+#, fuzzy
+#~ msgid "Spacing between footer and body:"
+#~ msgstr "Ruang di antara pengaki dan isi (%1):"
+
+#, fuzzy
+#~ msgid "Spacing between header and body:"
+#~ msgstr "Jarak di antara Pengepala dan isi (%1):"
+
+#~ msgid "Different header for even and odd pages"
+#~ msgstr "Pengepala berlainan untuk halaman genap dan ganjil"
+
+#~ msgid "Different header for the first page"
+#~ msgstr "Pengepala berlainan untuk halaman pertama"
+
+#~ msgid "Page Preview"
+#~ msgstr "Prapapar Halaman"
+
+#~ msgid "Page Size && &Margins"
+#~ msgstr "Saiz Halaman && &Jidar"
+
+#~ msgid "H&eader && Footer"
+#~ msgstr "&Pengepala && Pengaki"
+
+#~ msgid "Head Line"
+#~ msgstr "Baris Kepala"
+
+#~ msgid "Foot Line"
+#~ msgstr "Baris Kaki"
+
+#~ msgid "You can insert several tags in the text:"
+#~ msgstr "Anda boleh masukkan beberapa tag di dalam teks:"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;sheet&gt; The sheet name</li><li>&lt;page&gt; The current "
+#~ "page</li><li>&lt;pages&gt; The total number of pages</li><li>&lt;name&gt; "
+#~ "The filename or URL</li><li>&lt;file&gt; The filename with complete path "
+#~ "or the URL</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;helaian&gt; Nama helaian</li><li>&lt;halaman&gt; Halaman "
+#~ "semasa</li><li>&lt;halaman&gt; Jumlah halaman</li><li>&lt;nama&gt;Nama "
+#~ "fail atau URL</li><li>&lt;fail&gt; Nama fail dengan laluan lengkap atau "
+#~ "URL</li></ul></qt>"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;time&gt; The current time</li><li>&lt;date&gt; The "
+#~ "current date</li><li>&lt;author&gt; Your full name</li><li>&lt;org&gt; "
+#~ "Your organization</li><li>&lt;email&gt; Your email address</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;masa&gt;Masa semasa</li><li>&lt;tarikh&gt; Tarikh semasa</"
+#~ "li><li>&lt;pengarang&gt; Nama penuh anda</li><li>&lt;org&gt;Nama "
+#~ "organisasi</li><li>&lt;emel&gt; Alamat emel anda</li></ul></qt>"
+
+#~ msgid "Col&umns"
+#~ msgstr "&Lajur"
+
+#, fuzzy
+#~| msgid "Street"
+#~ msgid "Storage Test"
+#~ msgstr "Jalan"
+
+#, fuzzy
+#~| msgid "Street"
+#~ msgid "Storage Test 2"
+#~ msgstr "Jalan"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master page"
+#~ msgstr "Tampalkan Teks"
+
+#, fuzzy
+#~ msgid "Rotate"
+#~ msgstr "Tarikh"
+
+#, fuzzy
+#~ msgid "Shear"
+#~ msgstr "Hijau Laut"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Vertical"
+#~ msgstr "&Menegak"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Horizontal"
+#~ msgstr "&Mendatar"
+
+#, fuzzy
+#~| msgid "Size:"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size All"
+#~ msgstr "Saiz:"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Split Horizontal"
+#~ msgstr "&Mendatar"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Pointing Hand"
+#~ msgstr "Pencetakan Terakhir "
+
+#, fuzzy
+#~ msgid "Insert image from file"
+#~ msgstr "Selitkan Teks"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "Select Char"
+#~ msgstr "Pilih Aksara"
+
+#, fuzzy
+#~ msgctxt "Size Policy"
+#~ msgid "Expanding"
+#~ msgstr "&Garis bawah:"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgctxt "General properties"
+#~ msgid "General"
+#~ msgstr "Umum"
+
+#, fuzzy
+#~ msgid "Width"
+#~ msgstr "&Lebar:"
+
+#, fuzzy
+#~ msgid "Horizontal Size Type"
+#~ msgstr "&Mendatar"
+
+#, fuzzy
+#~ msgid "Vertical Size Type"
+#~ msgstr "&Menegak"
+
+#, fuzzy
+#~ msgid "Horizontal Stretch"
+#~ msgstr "&Mendatar"
+
+#, fuzzy
+#~ msgid "Vertical Stretch"
+#~ msgstr "&Menegak"
+
+#, fuzzy
+#~| msgid "Line Distance (%1)"
+#~ msgid "Snap Distance (px)"
+#~ msgstr "Panjang Baris (%1)"
+
+#, fuzzy
+#~ msgid "Enable Guide Lines Guide "
+#~ msgstr "Bilangan Baris"
+
+#, fuzzy
+#~ msgid "Tool Option"
+#~ msgstr "Kata Pelengkapan"
+
+#, fuzzy
+#~ msgid "Edit Guidelines"
+#~ msgstr "Bilangan Baris"
+
+#, fuzzy
+#~ msgid "Edit guidelines"
+#~ msgstr "Tambahkan Pelbagai Garis"

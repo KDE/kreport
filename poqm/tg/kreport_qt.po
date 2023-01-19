@@ -1,0 +1,7110 @@
+# translation of koffice.po to Tajik Language
+# Copyright (C) 2004, 2005, 2007 Free Software Foundation, Inc.
+# 2004, infoDev, a World Bank organization
+# 2004, Khujand Computer Technologies, Inc.
+# 2004, Youth Opportunities, NGO
+#
+# Marina Kolucheva <youth_opportunities@tajik.net>, 2004.
+# Akmal Salomov <youth_opportunities@tajik net>, 2004.
+# Victor Ibragimov <youth_opportunities@tajikngo.org>, 2004, 2005, 2007.
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: koffice\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2011-09-11 03:29+0500\n"
+"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"Language-Team: Tajik <http://www.kde.tj>\n"
+"Language: tg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+#, fuzzy
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "Наметавонам файли барои қайдотро боз кунам"
+
+#: common/KReportDesign.cpp:159
+#, fuzzy
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Хатои нигоҳ доштани санадотҳои вурудшуда"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Ном:"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Object"
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Мавзеъ"
+
+#: common/KReportItemBase.cpp:78
+#, fuzzy
+#| msgid "Position"
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Ҷойгузорӣ"
+
+#: common/KReportItemBase.cpp:79
+#, fuzzy
+#| msgid "Size:"
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Андоза:"
+
+#: common/KReportItemBase.cpp:112
+#, fuzzy
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Ҳузфи матн"
+
+#: common/KReportItemLine.cpp:80
+#, fuzzy
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "Ҷойгузорӣ"
+
+#: common/KReportItemLine.cpp:81
+#, fuzzy
+#| msgid "Position"
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Ҷойгузорӣ"
+
+#: common/KReportItemLine.cpp:83
+#, fuzzy
+#| msgid "Line width:"
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "Ғафсии хат:"
+
+#: common/KReportItemLine.cpp:85
+#, fuzzy
+#| msgid "Color"
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Ранг"
+
+#: common/KReportItemLine.cpp:86
+#, fuzzy
+#| msgid "St&yle"
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Ус&луб"
+
+#: common/KReportSectionData.cpp:164
+#, fuzzy
+#| msgid "Current Section"
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Қисми равон"
+
+#: common/KReportSectionData.cpp:166
+#, fuzzy
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "&Бузургӣ:"
+
+#: common/KReportSectionData.cpp:170
+#, fuzzy
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Сония"
+
+#: common/KReportUnit.cpp:136
+#, fuzzy
+#| msgid "Add Group"
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Афзудани гурӯҳ"
+
+#: common/KReportUnit.cpp:138
+#, fuzzy
+#| msgid "Millimeters (mm)"
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "Миллиметрҳо (мм)"
+
+#: common/KReportUnit.cpp:140
+#, fuzzy
+#| msgid "Centimeters (cm)"
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "Сантиметрҳо (см)"
+
+#: common/KReportUnit.cpp:142
+#, fuzzy
+#| msgid "Decimeters (dm)"
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "Детсиметрҳо (дм)"
+
+#: common/KReportUnit.cpp:144
+#, fuzzy
+#| msgid "Inches (in)"
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "Дюймҳо (дм)"
+
+#: common/KReportUnit.cpp:146
+#, fuzzy
+#| msgid "Pica (pi)"
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "Пика (pi)"
+
+#: common/KReportUnit.cpp:148
+#, fuzzy
+#| msgid "Cicero (cc)"
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "Сисеро (cc)"
+
+#: common/KReportUnit.cpp:150
+#, fuzzy
+#| msgid "Points (pt)"
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "Нуқтаҳо (нқ)"
+
+#: common/KReportUnit.cpp:152
+#, fuzzy
+#| msgid "Pixels (px)"
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "Пикселҳо (px)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Colors"
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Рангҳо"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:80
+#, fuzzy
+#| msgid "St&yle"
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "Ус&луб"
+
+#: items/check/KReportItemCheck.cpp:84
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Сония"
+
+#: items/check/KReportItemCheck.cpp:86
+#, fuzzy
+#| msgid "Line width:"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "Ғафсии хат:"
+
+#: items/check/KReportItemCheck.cpp:88
+#, fuzzy
+#| msgid "Color"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Ранг"
+
+#: items/check/KReportItemCheck.cpp:89
+#, fuzzy
+#| msgid "St&yle"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Ус&луб"
+
+#: items/check/KReportItemCheck.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Аҳамият"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Аҳамият"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Аз чап:"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "C&enter"
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Аз &марказ"
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Аз &лабаи рост"
+
+#: items/field/KReportItemField.cpp:96
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Амудӣ баробар кардан:"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "Гурӯҳ:"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Align Auto"
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Баробаркунии автоматикӣ"
+
+#: items/field/KReportItemField.cpp:102
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Амудӣ баробар кардан:"
+
+#: items/field/KReportItemField.cpp:104
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Мамлакат:"
+
+#: items/field/KReportItemField.cpp:106
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Сония"
+
+#: items/field/KReportItemField.cpp:107
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Сония"
+
+#: items/field/KReportItemField.cpp:109
+#, fuzzy
+#| msgid "Background color:"
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Ранги замина:"
+
+#: items/field/KReportItemField.cpp:114
+#, fuzzy
+#| msgid "Line width:"
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "Ғафсии хат:"
+
+#: items/field/KReportItemField.cpp:116
+#, fuzzy
+#| msgid "Color"
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Ранг"
+
+#: items/field/KReportItemField.cpp:117
+#, fuzzy
+#| msgid "St&yle"
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Ус&луб"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:120
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgid "Street:"
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Кӯча:"
+
+#: items/image/KReportItemImage.cpp:120
+#, fuzzy
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "Партофтан"
+
+#: items/image/KReportItemImage.cpp:121
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Аҳамият"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:91
+#, fuzzy
+#| msgid "Completion"
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Худитмомӣ"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Аз чап:"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "C&enter"
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Аз &марказ"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Аз &лабаи рост"
+
+#: items/label/KReportItemLabel.cpp:96
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Амудӣ баробар кардан:"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "Гурӯҳ:"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Align Auto"
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Баробаркунии автоматикӣ"
+
+#: items/label/KReportItemLabel.cpp:102
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Амудӣ баробар кардан:"
+
+#: items/label/KReportItemLabel.cpp:104
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Мамлакат:"
+
+#: items/label/KReportItemLabel.cpp:106
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Сония"
+
+#: items/label/KReportItemLabel.cpp:107
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Сония"
+
+#: items/label/KReportItemLabel.cpp:109
+#, fuzzy
+#| msgid "Background color:"
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Ранги замина:"
+
+#: items/label/KReportItemLabel.cpp:114
+#, fuzzy
+#| msgid "Line width:"
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "Ғафсии хат:"
+
+#: items/label/KReportItemLabel.cpp:116
+#, fuzzy
+#| msgid "Color"
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Ранг"
+
+#: items/label/KReportItemLabel.cpp:117
+#, fuzzy
+#| msgid "St&yle"
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Ус&луб"
+
+#: items/text/KReportItemText.cpp:115
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Аҳамият"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Аз чап:"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "C&enter"
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Аз &марказ"
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Аз &лабаи рост"
+
+#: items/text/KReportItemText.cpp:121
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Амудӣ баробар кардан:"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "Гурӯҳ:"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Align Auto"
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Баробаркунии автоматикӣ"
+
+#: items/text/KReportItemText.cpp:127
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Амудӣ баробар кардан:"
+
+#: items/text/KReportItemText.cpp:129
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Мамлакат:"
+
+#: items/text/KReportItemText.cpp:131
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Сония"
+
+#: items/text/KReportItemText.cpp:132
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Сония"
+
+#: items/text/KReportItemText.cpp:134
+#, fuzzy
+#| msgid "Line width:"
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "Ғафсии хат:"
+
+#: items/text/KReportItemText.cpp:136
+#, fuzzy
+#| msgid "Color"
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Ранг"
+
+#: items/text/KReportItemText.cpp:137
+#, fuzzy
+#| msgid "St&yle"
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Ус&луб"
+
+#: items/text/KReportItemText.cpp:138
+#, fuzzy
+#| msgid "Background color:"
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Ранги замина:"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, fuzzy, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr "Дастнавис"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+#, fuzzy
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Дастнавис"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:676
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Пешнамоиши саҳифот"
+
+#: wrtembed/KReportDesigner.cpp:680
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Пешнамоиши саҳифот"
+
+#: wrtembed/KReportDesigner.cpp:684
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Пешнамоиши саҳифот"
+
+#: wrtembed/KReportDesigner.cpp:688
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Пешнамоиши саҳифот"
+
+#: wrtembed/KReportDesigner.cpp:692
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Пешнамоиши саҳифот"
+
+#: wrtembed/KReportDesigner.cpp:696
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "&Унвони саҳифаи поёнӣ"
+
+#: wrtembed/KReportDesigner.cpp:700
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "&Унвони саҳифаи поёнӣ"
+
+#: wrtembed/KReportDesigner.cpp:704
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "&Унвони саҳифаи поёнӣ"
+
+#: wrtembed/KReportDesigner.cpp:708
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "&Унвони саҳифаи поёнӣ"
+
+#: wrtembed/KReportDesigner.cpp:712
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "&Унвони саҳифаи поёнӣ"
+
+#: wrtembed/KReportDesigner.cpp:716
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "&Унвони саҳифаи болоӣ"
+
+#: wrtembed/KReportDesigner.cpp:720
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "&Унвони саҳифаи поёнӣ"
+
+#: wrtembed/KReportDesigner.cpp:808
+#, fuzzy
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "&Содирот..."
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Title:"
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Сарлавҳа:"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Author Title"
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Муомилот"
+
+#: wrtembed/KReportDesigner.cpp:818
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Андозаи саҳифа"
+
+#: wrtembed/KReportDesigner.cpp:821
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Андозаи саҳифа"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "&Portrait"
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "&Китобӣ"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "La&ndscape"
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "&Албомӣ"
+
+#: wrtembed/KReportDesigner.cpp:827
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "&Ҷойгиршавии ҷудокунак"
+
+#: wrtembed/KReportDesigner.cpp:832
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Андозаи саҳифа"
+
+#: wrtembed/KReportDesigner.cpp:833
+#, fuzzy
+#| msgid "Change Shadow"
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Тағйири соя"
+
+#: wrtembed/KReportDesigner.cpp:834
+#, fuzzy
+#| msgid "Confirm Save"
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Тасдиқи нигоҳдорӣ"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:841
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Ҳудудҳо"
+
+#: wrtembed/KReportDesigner.cpp:843
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Сабзи равшан"
+
+#: wrtembed/KReportDesigner.cpp:845
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Ҳудудҳо"
+
+#: wrtembed/KReportDesigner.cpp:847
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Ҳудудҳо"
+
+#: wrtembed/KReportDesigner.cpp:869
+#, fuzzy
+#| msgid "Object"
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Мавзеъ"
+
+#: wrtembed/KReportDesigner.cpp:1067
+#, fuzzy
+#| msgid "Custom"
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Андозаи дигар"
+
+#: wrtembed/KReportDesigner.cpp:1071
+#, fuzzy
+#| msgid "Company"
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Корхона"
+
+#: wrtembed/KReportDesigner.cpp:1076
+#, fuzzy
+#| msgid "Date"
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Сана"
+
+#: wrtembed/KReportDesigner.cpp:1087
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Ҳузфи матн"
+
+#: wrtembed/KReportDesigner.cpp:1129
+#, fuzzy
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Хокистарии равшан"
+
+#: wrtembed/KReportDesigner.cpp:1476
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Хокистарии равшан"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1521
+#, fuzzy
+#| msgid "Completion Word"
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr "Худитмомӣ"
+
+#: wrtembed/KReportDesigner.cpp:1525
+#, fuzzy
+#| msgid "Company"
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "Корхона"
+
+#: wrtembed/KReportDesigner.cpp:1527
+#, fuzzy
+#| msgid "Completion Word"
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr "Худитмомӣ"
+
+#: wrtembed/KReportDesigner.cpp:1531
+#, fuzzy
+#| msgid "Date"
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "Сана"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1544
+#, fuzzy
+#| msgid "Completion"
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Худитмомӣ"
+
+#: wrtembed/KReportDesigner.cpp:1547
+#, fuzzy
+#| msgid "&Reset"
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr "&Барҳамот"
+
+#: wrtembed/KReportDesigner.cpp:1549
+#, fuzzy
+#| msgid "&Lowercase"
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr "&қайдоти поёнӣ"
+
+#: wrtembed/KReportDesignerSection.cpp:126
+#, fuzzy
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "&Пешфарзӣ"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+#, fuzzy
+#| msgid "Section Title"
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Феҳристи қисм"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+#, fuzzy
+#| msgid "Columns:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Сутун:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+#, fuzzy
+#| msgid "Street"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Кӯча"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+#, fuzzy
+#| msgid "Change Shadow"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Тағйири соя"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+#, fuzzy
+#| msgid "Change Shadow"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Тағйири соя"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+#, fuzzy
+#| msgid "Insert break after paragraph"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr "Гузоштани роғ баъди абзас"
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+#, fuzzy
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr "Ворид намудани услуб:"
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+
+#: wrtembed/KReportRuler_p.cpp:1472
+#, fuzzy
+#| msgid "Change First Line Indent"
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Тағйири фосилаи сатри аввал"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+#, fuzzy
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Зағирӣ"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+#, fuzzy
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Сабзи равшан"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+#, fuzzy
+#| msgid "Load..."
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr "Боргирӣ..."
+
+#: wrtembed/KReportSectionEditor.cpp:74
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "&Афзудани гурӯҳ..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Ҳузфи матн"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Ҳузфи матн"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Ҳузфи матн"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.cpp:312
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.ui:29
+#, fuzzy
+#| msgid "Change Shadow"
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Тағйири соя"
+
+#: wrtembed/KReportSectionEditor.ui:36
+#, fuzzy
+#| msgid "Change Shadow"
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Тағйири соя"
+
+#: wrtembed/KReportSectionEditor.ui:43
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Пешнамоиши саҳифот"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "Саҳифаи баъдӣ"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+#, fuzzy
+#| msgid "Company Name"
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Номи корхона"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+#, fuzzy
+#| msgid "Company Name"
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Номи корхона"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+#, fuzzy
+#| msgid "Paste Text"
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Гузориши матн аз буфери иввазот"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+#, fuzzy
+#| msgid "Company Name"
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Номи корхона"
+
+#: wrtembed/KReportSectionEditor.ui:130
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "&Унвони саҳифаи поёнӣ"
+
+#: wrtembed/KReportSectionEditor.ui:217
+#, fuzzy
+#| msgid "Current Section"
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Қисми равон"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, fuzzy, qt-format
+#| msgid "%1%"
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+#, fuzzy
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Саҳифаи баъдӣ"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+#, fuzzy
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Саҳифаи баъдӣ"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr ""
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+#, fuzzy
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Саҳифаи баъдӣ"
+
+#, fuzzy
+#~| msgid "US Letter"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "US Letter"
+
+#, fuzzy
+#~| msgid "US Legal"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "US Legal"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "Андозаи дигар"
+
+#, fuzzy
+#~| msgid "US Executive"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "US Executive"
+
+#, fuzzy
+#~| msgid "ISO B10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "ISO B10"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "Корхона"
+
+#, fuzzy
+#~| msgid "ISO DL"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "ISO DL"
+
+#, fuzzy
+#~| msgid "US Folio"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Folio"
+#~ msgstr "US Folio"
+
+#, fuzzy
+#~| msgid "US Ledger"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "US Ledger"
+
+#, fuzzy
+#~| msgid "US Tabloid"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Tabloid"
+#~ msgstr "US Tabloid"
+
+#, fuzzy
+#~| msgid "Postal Code"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "Индекси почта"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Экран"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "Ҷойгузорӣ"
+
+#, fuzzy
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "&Бузургӣ:"
+
+#, fuzzy
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~| msgid "Size:"
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "Андоза:"
+
+#, fuzzy
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~| msgid "ISO A3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "ISO A3"
+
+#, fuzzy
+#~| msgid "ISO A4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "ISO A4"
+
+#, fuzzy
+#~| msgid "ISO A5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "ISO A5"
+
+#, fuzzy
+#~| msgid "ISO B5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "ISO B5"
+
+#, fuzzy
+#~| msgid "US Executive"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "US Executive"
+
+#, fuzzy
+#~| msgid "ISO A0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "ISO A0"
+
+#, fuzzy
+#~| msgid "ISO A1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "ISO A1"
+
+#, fuzzy
+#~| msgid "ISO A2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "ISO A2"
+
+#, fuzzy
+#~| msgid "ISO A6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "ISO A6"
+
+#, fuzzy
+#~| msgid "ISO A7"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "ISO A7"
+
+#, fuzzy
+#~| msgid "ISO A8"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "ISO A8"
+
+#, fuzzy
+#~| msgid "ISO A9"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "ISO A9"
+
+#, fuzzy
+#~| msgid "ISO B0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "ISO B0"
+
+#, fuzzy
+#~| msgid "ISO B1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "ISO B1"
+
+#, fuzzy
+#~| msgid "ISO B2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "ISO B2"
+
+#, fuzzy
+#~| msgid "ISO B3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "ISO B3"
+
+#, fuzzy
+#~| msgid "ISO B4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "ISO B4"
+
+#, fuzzy
+#~| msgid "ISO B6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "ISO B6"
+
+#, fuzzy
+#~| msgid "ISO C5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "ISO C5"
+
+#, fuzzy
+#~| msgid "US Common 10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Common 10"
+#~ msgstr "US Common 10"
+
+#, fuzzy
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "&Бузургӣ:"
+
+#, fuzzy
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~| msgid "Line width:"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Weight"
+#~ msgstr "Ғафсии хат:"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "Ранг"
+
+#, fuzzy
+#~| msgid "St&yle"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "Ус&луб"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "Аҳамият"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~| msgid "Line width:"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Weight"
+#~ msgstr "Ғафсии хат:"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "Ранг"
+
+#, fuzzy
+#~| msgid "St&yle"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "Ус&луб"
+
+#, fuzzy
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "Аҳамият"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "Аз чап:"
+
+#, fuzzy
+#~| msgid "C&enter"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "Аз &марказ"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "Аз &лабаи рост"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Амудӣ баробар кардан:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "Гурӯҳ:"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "Баробаркунии автоматикӣ"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Амудӣ баробар кардан:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "Мамлакат:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~| msgid "Background color:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "Ранги замина:"
+
+#, fuzzy
+#~| msgid "Line width:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Weight"
+#~ msgstr "Ғафсии хат:"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "Ранг"
+
+#, fuzzy
+#~| msgid "St&yle"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "Ус&луб"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "Аҳамият"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "Аз чап:"
+
+#, fuzzy
+#~| msgid "C&enter"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "Аз &марказ"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "Аз &лабаи рост"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Амудӣ баробар кардан:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "Гурӯҳ:"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "Баробаркунии автоматикӣ"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Амудӣ баробар кардан:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "Мамлакат:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~| msgid "Line width:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Weight"
+#~ msgstr "Ғафсии хат:"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "Ранг"
+
+#, fuzzy
+#~| msgid "St&yle"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "Ус&луб"
+
+#, fuzzy
+#~| msgid "Background color:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "Ранги замина:"
+
+#, fuzzy
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "Мудири услуб"
+
+#, fuzzy
+#~| msgid "Bookmark name:"
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Номи гузориш:"
+
+#, fuzzy
+#~ msgid "Draw path"
+#~ msgstr "Ҳузфи гурӯҳ"
+
+#, fuzzy
+#~ msgid "Freehand path"
+#~ msgstr "Ҳузфи гурӯҳ"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Angle Constraints"
+#~ msgstr "Тағйири фосила"
+
+#, fuzzy
+#~ msgid "Precision:"
+#~ msgstr "Ҷойгузорӣ"
+
+#, fuzzy
+#~ msgctxt "The raw line data"
+#~ msgid "Raw"
+#~ msgstr "Бунафши хокистарии равшан"
+
+#, fuzzy
+#~ msgid "Curve"
+#~ msgstr "Қисми равон"
+
+#, fuzzy
+#~ msgid "Straight"
+#~ msgstr "Яктага"
+
+#, fuzzy
+#~ msgid "Combine angle:"
+#~ msgstr "Хати ғафсии дигар"
+
+#, fuzzy
+#~| msgid "Could not export file."
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr "Наметавонам файлро содир кунам."
+
+#, fuzzy
+#~| msgid "Current Date (fixed)"
+#~ msgid "Currently no database is used."
+#~ msgstr "Санаи равон (қайд карда шуда)"
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "The database \"%1\" does not exist."
+#~ msgstr "Файли %1 вуҷуд надорад."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "Файли %1 вуҷуд надорад."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Database file \"%1\" is not writable."
+#~ msgstr "Файли %1 вуҷуд надорад."
+
+#, fuzzy
+#~ msgid "Creating table failed."
+#~ msgstr "Эҷоди қолиб"
+
+#, fuzzy
+#~ msgid "Could not create the same table \"%1\" twice."
+#~ msgstr "Наметавонам унвони файлро хонам."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist."
+#~ msgstr "Файли %1 вуҷуд надорад."
+
+#, fuzzy
+#~ msgid "Could not remove object's data."
+#~ msgstr "Наметавонам мавзеъи вуруд карда шударо пурбор кунам."
+
+#, fuzzy
+#~ msgid "Could not alter table \"%1\" using the same table as destination."
+#~ msgstr "Наметавонам унвони файлро хонам."
+
+#, fuzzy
+#~ msgid "Could not rename table \"%1\" using the same name."
+#~ msgstr "Наметавонам унвони файлро хонам."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Query \"%1\" does not exist."
+#~ msgstr "Файли %1 вуҷуд надорад."
+
+#, fuzzy
+#~| msgid "File Creation"
+#~ msgid "Begin transaction failed."
+#~ msgstr "Эҷодкунии файл"
+
+#, fuzzy
+#~| msgid "This name is already used."
+#~ msgid "Transaction already started."
+#~ msgstr "Ин ном аллакай истифодашуда истодааст."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Column <resource>%1</resource> does not exist in the query."
+#~ msgstr "Файли %1 вуҷуд надорад."
+
+#, fuzzy
+#~| msgid "Error while saving embedded documents"
+#~ msgctxt "Extended schema for a table: loading error"
+#~ msgid "Error while loading extended table schema."
+#~ msgstr "Хатои нигоҳ доштани санадотҳои вурудшуда"
+
+#, fuzzy
+#~ msgid ""
+#~ "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~ "XML data: %4"
+#~ msgstr ""
+#~ "Хатои коркади додаҳои санадоти асосӣ дар сатри %1, сутуни %2\n"
+#~ "Иттилоот дар бораи хатогӣ: %3"
+
+#, fuzzy
+#~ msgid "Could not insert record because there is no master table specified."
+#~ msgstr "Наметавонам унвони файлро хонам."
+
+#, fuzzy
+#~ msgid "Could not delete record because there is no master table specified."
+#~ msgstr "Наметавонам унвони файлро хонам."
+
+#, fuzzy
+#~| msgid "Date: %1"
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "Сана: %1"
+
+#, fuzzy
+#~ msgid "Could not set value of database property \"%1\"."
+#~ msgstr "Наметавонам унвони файлро хонам."
+
+#, fuzzy
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "Наметавонам унвони файлро хонам."
+
+#, fuzzy
+#~ msgid "Could not read database properties."
+#~ msgstr "Наметавонам унвони файлро хонам."
+
+#, fuzzy
+#~ msgid "Could not find database driver \"%1\"."
+#~ msgstr "Наметавонам унвони файлро хонам."
+
+#, fuzzy
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "Наметавонам унвони файлро хонам."
+
+#, fuzzy
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "Наметавонам унвони файлро хонам."
+
+#, fuzzy
+#~| msgid "Select Font"
+#~ msgid "Field not found"
+#~ msgstr "Интихоби ҳарф"
+
+#, fuzzy
+#~ msgid "Could not access the table directly using its name"
+#~ msgstr "Наметавонам файли барои қайдотро боз кунам"
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" has no \"%2\" field."
+#~ msgstr "Файли %1 вуҷуд надорад."
+
+#, fuzzy
+#~| msgid "Page Number"
+#~ msgid "Short Integer Number"
+#~ msgstr "Рақами саҳифа"
+
+#, fuzzy
+#~| msgid "Next Page Number"
+#~ msgid "Integer Number"
+#~ msgstr "Рақами саҳифаи баъдӣ"
+
+#, fuzzy
+#~| msgid "No value"
+#~ msgid "Yes/No Value"
+#~ msgstr "Аҳамияте надорад"
+
+#~ msgid "Date"
+#~ msgstr "Сана"
+
+#, fuzzy
+#~ msgid "Date and Time"
+#~ msgstr "Сана (қайд карда шуда)"
+
+#, fuzzy
+#~ msgid "Time"
+#~ msgstr "Вақт"
+
+#, fuzzy
+#~ msgid "Text"
+#~ msgstr "Афзудани матн"
+
+#, fuzzy
+#~ msgid "Long Text"
+#~ msgstr "Афзудани матн"
+
+#~ msgid "Object"
+#~ msgstr "Мавзеъ"
+
+#, fuzzy
+#~| msgid "Change Line Spacing"
+#~ msgid "Floating Point Number"
+#~ msgstr "Тағйири фосилаи байни сатрҳо"
+
+#, fuzzy
+#~ msgid "Date/Time"
+#~ msgstr "Сана (қайд карда шуда)"
+
+#, fuzzy
+#~| msgid "Error!"
+#~ msgid "Error"
+#~ msgstr "Хато!"
+
+#, fuzzy
+#~ msgid "Record inserting failed."
+#~ msgstr "Эҷоди қолиб"
+
+#, fuzzy
+#~ msgid "Record deleting failed."
+#~ msgstr "Эҷоди қолиб"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Test Connection"
+#~ msgstr "Тағйири фосила"
+
+#, fuzzy
+#~ msgid "Number"
+#~ msgstr "Рақамгузорӣ"
+
+#, fuzzy
+#~ msgid "Image"
+#~ msgstr "Саҳифаи баъдӣ"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr "Тағйири фосила"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr "Тағйири табулятсия"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "Ба аломатҳои юнонӣ табдил додан"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Combine paths"
+#~ msgstr "Хати ғафсии дигар"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move control point"
+#~ msgstr "Ҳудудҳо"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "Гузоштани истинод"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "Ҳудудҳо"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move points"
+#~ msgstr "Ҳузфи истинод"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove points"
+#~ msgstr "Ҳузфи истинод"
+
+#, fuzzy
+#~| msgid "Select Font"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set point type"
+#~ msgstr "Интихоби ҳарф"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reverse paths"
+#~ msgstr "Ҳузфи гурӯҳ"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath"
+#~ msgstr "Ҳузфи гурӯҳ"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to curves"
+#~ msgstr "Тағйир додани услуби аломат"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to lines"
+#~ msgstr "Тағйир додани услуби аломат"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set marker"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Align shapes"
+#~ msgstr "Худбаробаркунӣ аз лабаи чап"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Clip Shape"
+#~ msgstr "Мавҷнок"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr "Эҷоди қолиб"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shape"
+#~ msgid_plural "Delete shapes"
+#~ msgstr[0] "Ҳузфи матн"
+#~ msgstr[1] "Ҳузфи матн"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Distribute shapes"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~| msgid "Current Section"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr "Қисми равон"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Lock shapes"
+#~ msgstr "Худбаробаркунӣ аз лабаи чап"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move shapes"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr "Эҷоди қолиб"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reorder shapes"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Shape RunAround"
+#~ msgstr "Тағйири табулятсия"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Shadow"
+#~ msgstr "Соя"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Shear shapes"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Resize shapes"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~| msgid "Select Font"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr "Интихоби ҳарф"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shape"
+#~ msgstr "Эҷоди қолиб"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shapes"
+#~ msgstr "Худбаробаркунӣ аз лабаи чап"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr "Худбаробаркунӣ аз лабаи чап"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Close subpath"
+#~ msgstr "Ҳузфи гурӯҳ"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Join subpaths"
+#~ msgstr "Хати ғафсии дигар"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove subpath"
+#~ msgstr "Ҳузфи гурӯҳ"
+
+#, fuzzy
+#~ msgid "Lines"
+#~ msgstr "Хокистарии равшан"
+
+#, fuzzy
+#~ msgid "Type:"
+#~ msgstr "Сана"
+
+#, fuzzy
+#~| msgid "Time"
+#~ msgid "Tie"
+#~ msgstr "Вақт"
+
+#, fuzzy
+#~ msgid "Simple path shape"
+#~ msgstr "Эҷоди қолиб"
+
+#~ msgid "%1 Options"
+#~ msgstr "%1 Имконот"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Shapes"
+#~ msgstr "Эҷоди қолиб"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "Гузориши матн аз буфери иввазот"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgid "Nodes"
+#~ msgstr "Ғайри"
+
+#~ msgid " px"
+#~ msgstr " px"
+
+#, fuzzy
+#~ msgid "Guide lines"
+#~ msgstr "Миқдори хатҳо"
+
+#, fuzzy
+#~ msgid "Create object"
+#~ msgstr "Эҷоди санадот"
+
+#, fuzzy
+#~ msgid "Pan"
+#~ msgstr "Қаҳваранги зардмонанд"
+
+#, fuzzy
+#~| msgid "Change Alignment"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Segment"
+#~ msgstr "Тағйири баробаркунӣ"
+
+#, fuzzy
+#~ msgid "Corner point"
+#~ msgstr "Тасдиқи содирот"
+
+#, fuzzy
+#~ msgid "Make curve point"
+#~ msgstr "Ҳудудҳо"
+
+#, fuzzy
+#~ msgid "Make line point"
+#~ msgstr "Ҳудудҳо"
+
+#, fuzzy
+#~ msgid "Segment to Line"
+#~ msgstr "Тағйир додани услуби аломат"
+
+#, fuzzy
+#~ msgid "Insert point"
+#~ msgstr "Гузоштани истинод"
+
+#, fuzzy
+#~ msgid "Remove point"
+#~ msgstr "Ҳузфи истинод"
+
+#, fuzzy
+#~ msgid "Merge points"
+#~ msgstr "Ҳудудҳо"
+
+#, fuzzy
+#~| msgid "Edit Path"
+#~ msgid "To Path"
+#~ msgstr "Интихоб"
+
+#, fuzzy
+#~ msgid "Line/Curve"
+#~ msgstr "Қисми равон"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Path editing"
+#~ msgstr "Чопи охирин"
+
+#, fuzzy
+#~ msgid "..."
+#~ msgstr "&Афзудани гурӯҳ..."
+
+#, fuzzy
+#~ msgid "Convert To Path"
+#~ msgstr "Ба аломатҳои юнонӣ табдил додан"
+
+#, fuzzy
+#~ msgid "Scripts"
+#~ msgstr "Дастнавис"
+
+#, fuzzy
+#~ msgid "Script Manager"
+#~ msgstr "Мудири услуб"
+
+#, fuzzy
+#~ msgid "Execute Script File..."
+#~ msgstr "Дастнавис"
+
+#, fuzzy
+#~ msgid "Script Manager..."
+#~ msgstr "Мудири услуб"
+
+#, fuzzy
+#~ msgid "Execute Script File"
+#~ msgstr "Дастнавис"
+
+#, fuzzy
+#~ msgid "Could not read the package \"%1\"."
+#~ msgstr "Наметавонам унвони файлро хонам."
+
+#, fuzzy
+#~ msgid "Replace"
+#~ msgstr "&Иввазот:"
+
+#, fuzzy
+#~ msgid "Save"
+#~ msgstr "Мавҷнок"
+
+#, fuzzy
+#~ msgid "Add script file"
+#~ msgstr "Дастнавис"
+
+#, fuzzy
+#~| msgid "Add Completion Entry"
+#~ msgid "Add collection folder"
+#~ msgstr "Афзудани итмомот"
+
+#, fuzzy
+#~ msgid "Add"
+#~ msgstr "&Афзудан"
+
+#, fuzzy
+#~| msgid "Completion"
+#~ msgid "Collection"
+#~ msgstr "Худитмомӣ"
+
+#, fuzzy
+#~| msgid "Change List Type"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master slide"
+#~ msgstr "Тағйири намуди рӯйхат"
+
+#, fuzzy
+#~| msgid "Change List Type"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master page"
+#~ msgstr "Тағйири намуди рӯйхат"
+
+#, fuzzy
+#~| msgid "Page Layout"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "Хосиятҳои саҳифа"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display master background"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display slide background"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display page background"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Show master shapes"
+#~ msgstr "Эҷоди қолиб"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Hide master shapes"
+#~ msgstr "Эҷоди қолиб"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] "Ҳузфи матн"
+#~ msgstr[1] "Ҳузфи матн"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "Ҳузфи матн"
+#~ msgstr[1] "Ҳузфи матн"
+
+#, fuzzy
+#~| msgid "Insert Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr "Гузориши матн"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr "Гузориши матн"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "Гузориши матн аз буфери иввазот"
+#~ msgstr[1] "Гузориши матн аз буфери иввазот"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] "Ҳузфи матн"
+#~ msgstr[1] "Ҳузфи матн"
+
+#, fuzzy
+#~| msgid "Confirm Save"
+#~ msgid "Configure"
+#~ msgstr "Тасдиқи нигоҳдорӣ"
+
+#, fuzzy
+#~| msgid "Change Shadow"
+#~ msgid "Grid"
+#~ msgstr "Тағйири соя"
+
+#, fuzzy
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "Кушодани санад"
+
+#, fuzzy
+#~| msgid "Document Subject"
+#~ msgid "Document Settings"
+#~ msgstr "Мавзӯъи ҳуҷҷат"
+
+#, fuzzy
+#~| msgid "Author"
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "Муаллиф"
+
+#~ msgid "Author"
+#~ msgstr "Муаллиф"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Slide"
+#~ msgstr "Гузориши матн аз буфери иввазот"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Page"
+#~ msgstr "Гузориши матн аз буфери иввазот"
+
+#, fuzzy
+#~ msgid "Page  %1"
+#~ msgstr "Саҳифаи баъдӣ"
+
+#, fuzzy
+#~ msgid "Layer"
+#~ msgstr "Бунафшаранг"
+
+#, fuzzy
+#~| msgid "Group:"
+#~ msgid "Group"
+#~ msgstr "Гурӯҳ:"
+
+#, fuzzy
+#~ msgid "Shape"
+#~ msgstr "Мавҷнок"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "Гузориши матн аз буфери иввазот"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "Эҷоди қолиб"
+
+#, fuzzy
+#~| msgid "Size:"
+#~ msgid "Slide"
+#~ msgstr "Андоза:"
+
+#, fuzzy
+#~| msgid "Variable"
+#~ msgid "Visible"
+#~ msgstr "Тағйирёбанда"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reparent shapes"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgid "&Move Here"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgid "&Copy Here"
+#~ msgstr "Экран"
+
+#, fuzzy
+#~| msgid "Change"
+#~ msgid "C&ancel"
+#~ msgstr "Тағйир кардан"
+
+#, fuzzy
+#~ msgid "Document"
+#~ msgstr "Кушодани санад"
+
+#, fuzzy
+#~ msgid "Page"
+#~ msgstr "Саҳифаи баъдӣ"
+
+#, fuzzy
+#~| msgid "Remove Selected Text"
+#~ msgid "Delete selected objects"
+#~ msgstr "Ҳузфи матни ҷудошуда"
+
+#, fuzzy
+#~| msgid "Remove Selected Text"
+#~ msgid "Raise selected objects"
+#~ msgstr "Ҳузфи матни ҷудошуда"
+
+#, fuzzy
+#~ msgid "Lower selected objects"
+#~ msgstr "Эҷоди санадот"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgid "View mode"
+#~ msgstr "Тағйири лабаҳо"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "Эҷоди қолиб"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgid "Page %1"
+#~ msgstr "Саҳифаи баъдӣ"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] "Гузориши матн аз буфери иввазот"
+#~ msgstr[1] "Гузориши матн аз буфери иввазот"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] "Гузориши матн аз буфери иввазот"
+#~ msgstr[1] "Гузориши матн аз буфери иввазот"
+
+#, fuzzy
+#~ msgid "Tools"
+#~ msgstr "Ранги пешфарзӣ"
+
+#, fuzzy
+#~ msgid "D&elete"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgid "Insert Page"
+#~ msgstr "Гузориши матн"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Page"
+#~ msgstr "Номи корхона"
+
+#, fuzzy
+#~ msgid "Delete Page"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgid "Delete the current page"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Page..."
+#~ msgstr "Гузориши матн аз буфери иввазот"
+
+#, fuzzy
+#~| msgid "Page Layout"
+#~ msgid "Page Layout..."
+#~ msgstr "Хосиятҳои саҳифа"
+
+#~ msgid "Variable"
+#~ msgstr "Тағйирёбанда"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Document..."
+#~ msgstr "Воридоти санад"
+
+#, fuzzy
+#~ msgid "Import Slideshow"
+#~ msgstr "Вориди услубҳо"
+
+#~ msgid "Import Document"
+#~ msgstr "Воридоти санад"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not import\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Наметавонам %1-ро\n"
+#~ "боз кунам"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr "Тағйири табулятсия"
+
+#, fuzzy
+#~ msgid "Set image ..."
+#~ msgstr "Сония"
+
+#, fuzzy
+#~ msgid "Background"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~ msgid "Page Background"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page Design"
+#~ msgstr "Пешнамоиши саҳифот"
+
+#, fuzzy
+#~ msgid "Use background of master page"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~ msgid "Use background of master slide"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~| msgid "Change List Type"
+#~ msgid "Display shapes of master page"
+#~ msgstr "Тағйири намуди рӯйхат"
+
+#, fuzzy
+#~| msgid "Change List Type"
+#~ msgid "Display shapes of master slide"
+#~ msgstr "Тағйири намуди рӯйхат"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change slide background image"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page background image"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "Гузориши матн аз буфери иввазот"
+
+#, fuzzy
+#~| msgid "Size:"
+#~ msgid "Slide %1/%2"
+#~ msgstr "Андоза:"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Page %1/%2"
+#~ msgstr "Гузориши матн аз буфери иввазот"
+
+#, fuzzy
+#~ msgid "Page %1/%2"
+#~ msgstr "Саҳифаи баъдӣ"
+
+#, fuzzy
+#~| msgid "Field"
+#~ msgid "Field"
+#~ msgstr "Замина"
+
+#, fuzzy
+#~ msgid "Label"
+#~ msgstr "Бунафшаранг"
+
+#, fuzzy
+#~| msgid "%1%"
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1%"
+
+#, fuzzy
+#~| msgid "Section Title"
+#~ msgid "Section Editor"
+#~ msgstr "Феҳристи қисм"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "Тағйири фосила"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "Тағйири намуди рӯйхат"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "Афзудани матн"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "Гузоштани истинод"
+
+#, fuzzy
+#~| msgid "Insert Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr "Гузориши матн"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Right"
+#~ msgstr "Гузоштани истинод"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr "Гузоштани истинод"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Below"
+#~ msgstr "Гузоштани роғи сатр"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "Гузориши матн"
+
+#, fuzzy
+#~| msgid "Change Line Spacing"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List Numbering"
+#~ msgstr "Тағйири фосилаи байни сатрҳо"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "Формати сана"
+
+#, fuzzy
+#~| msgid "Change Paragraph Spacing"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Direct Paragraph Formatting"
+#~ msgstr "Тағйири фосилаи абзас"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr "Эҷоди қолиб"
+
+#, fuzzy
+#~| msgid "Custom Line Width"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr "Хати ғафсии дигар"
+
+#, fuzzy
+#~| msgid "Shadow:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "Соя:"
+
+#, fuzzy
+#~| msgid "Date"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "Сана"
+
+#, fuzzy
+#~| msgctxt "We add the 1/2 char at the %1"
+#~| msgid "Re&place 1/2... with %1..."
+#~ msgid "Replace %1 with %2?"
+#~ msgstr "Ҳара&кат кардан 1/2... бо %1..."
+
+#, fuzzy
+#~| msgid "Current Section"
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "Қисми равон"
+
+#, fuzzy
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "Яктага"
+
+#, fuzzy
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "Дутага"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "New Paragraph"
+#~ msgstr "Матни оддии абзас"
+
+#, fuzzy
+#~| msgid "Bookmark"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "Гузориш"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "Ҷойгузорӣ"
+
+#, fuzzy
+#~| msgid "Insert Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "Гузориши матн"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "Гузориши матн"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "Гузоштани роғи сатр"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "Гузориши матн"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "Ҳудудҳо"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "&Амудӣ"
+
+#, fuzzy
+#~| msgid "Custom Line Width"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr "Хати ғафсии дигар"
+
+#, fuzzy
+#~| msgid "Change Text Format"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Border Formatting"
+#~ msgstr "Тағйири андозаи матн"
+
+#, fuzzy
+#~| msgid "Include in table of contents"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Ба феҳрист дохил кардан"
+
+#, fuzzy
+#~| msgid "Include in table of contents"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr "Ба феҳрист дохил кардан"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Гузоштани роғи сатр"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "Ҷойгузорӣ"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr "Нимағафс:"
+
+#, fuzzy
+#~| msgid "Italic:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "Курсивӣ:"
+
+#, fuzzy
+#~| msgid "Underline"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "Хат кашидашуда"
+
+#, fuzzy
+#~| msgid "Strikeout:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr "Хат кашидашуда:"
+
+#, fuzzy
+#~| msgid "Change Alignment"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr "Тағйири баробаркунӣ"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr "Амудӣ баробар кардан:"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "Тағйири фосила"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "Тағйири фосила"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "Тағйири қайдот"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "Тағйири қайдот"
+
+#, fuzzy
+#~| msgid "Select Font"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr "Интихоби ҳарф"
+
+#, fuzzy
+#~| msgid "Select Font"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr "Интихоби ҳарф"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Text Color"
+#~ msgstr "Ранги пешфарзӣ"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr "Эҷоди услуб"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Paragraph Style"
+#~ msgstr "Матни оддии абзас"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "Формати сана"
+
+#, fuzzy
+#~ msgid "Default"
+#~ msgstr "&Пешфарзӣ"
+
+#, fuzzy
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "Сурх"
+
+#, fuzzy
+#~ msgid "Redo %1"
+#~ msgstr "Сурх"
+
+#, fuzzy
+#~ msgid "Redo"
+#~ msgstr "Сурх"
+
+#, fuzzy
+#~ msgid "&File"
+#~ msgstr "Номи файл"
+
+#, fuzzy
+#~ msgid "&Settings"
+#~ msgstr "Яктага"
+
+#, fuzzy
+#~ msgid "File"
+#~ msgstr "Номи файл"
+
+#, fuzzy
+#~ msgid "Delete the author profile"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgid "Default Author Profile"
+#~ msgstr "Ранги пешфарзӣ"
+
+#, fuzzy
+#~| msgid "Number of Pictures"
+#~ msgid "Name of Profile"
+#~ msgstr "Миқдори суратҳо"
+
+#~ msgid "Name:"
+#~ msgstr "Ном:"
+
+#~ msgid "Initials:"
+#~ msgstr "Ҳуруф:"
+
+#~ msgid "Title:"
+#~ msgstr "Сарлавҳа:"
+
+#, fuzzy
+#~ msgid "Position:"
+#~ msgstr "Ҷойгузорӣ"
+
+#~ msgid "Company:"
+#~ msgstr "Корхона:"
+
+#~ msgid "Email:"
+#~ msgstr "Почтаи электронӣ:"
+
+#, fuzzy
+#~ msgid "Telephone (home):"
+#~ msgstr "Телефон:"
+
+#, fuzzy
+#~ msgid "Telephone (work):"
+#~ msgstr "Телефон (вазифа)"
+
+#~ msgid "Fax:"
+#~ msgstr "Факс:"
+
+#~ msgid "Street:"
+#~ msgstr "Кӯча:"
+
+#~ msgid "Postal code:"
+#~ msgstr "Индекси почтавӣ:"
+
+#~ msgid "City:"
+#~ msgstr "Шаҳр:"
+
+#~ msgid "Country:"
+#~ msgstr "Мамлакат:"
+
+#, fuzzy
+#~| msgid "No date set"
+#~ msgid "No autosave"
+#~ msgstr "Сана сабт нашудааст"
+
+#, fuzzy
+#~| msgid "Autosaving..."
+#~ msgid "Autosave interval:"
+#~ msgstr "Худнигоҳдорӣ..."
+
+#, fuzzy
+#~ msgid "Create backup file:"
+#~ msgstr "Эҷоди қолиб"
+
+#, fuzzy
+#~| msgid "Change Shadow"
+#~ msgid "Show grid:"
+#~ msgstr "Тағйири соя"
+
+#, fuzzy
+#~ msgid "Grid color:"
+#~ msgstr "Ранги замина:"
+
+#, fuzzy
+#~| msgid "Line &Spacing"
+#~ msgid "Spacing"
+#~ msgstr "Фосилаи байни &сатрҳо"
+
+#, fuzzy
+#~| msgid "&Horizontal"
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "&Уфуқӣ"
+
+#, fuzzy
+#~| msgid "&Vertical"
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "&Амудӣ"
+
+#, fuzzy
+#~| msgid "Unit:"
+#~ msgid "Units:"
+#~ msgstr "Воҳиди санҷиш:"
+
+#, fuzzy
+#~| msgid "Shadow:"
+#~ msgid "Paste offset:"
+#~ msgstr "Соя:"
+
+#~ msgid "Only print and exit"
+#~ msgstr "Танҳо чоп кардан ва хурӯҷ шудан"
+
+#~ msgid "Open a new document with a template"
+#~ msgstr "Эҷоди санадоти нав аз рӯи қолиб"
+
+#~ msgid "Override display DPI"
+#~ msgstr "Иҷозати экран, ки бо истифодакунанда муайян карда шудааст"
+
+#, fuzzy
+#~| msgid "Only print and exit"
+#~ msgid "Only export to PDF and exit"
+#~ msgstr "Танҳо чоп кардан ва хурӯҷ шудан"
+
+#, fuzzy
+#~ msgid "%1: Critical Error"
+#~ msgstr "Худитмомӣ"
+
+#, fuzzy
+#~| msgid "No template found for: %1 "
+#~ msgid "No template found for: %1"
+#~ msgstr "Қолибе барои %1 нест"
+
+#~ msgid "Too many templates found for: %1"
+#~ msgstr "Якчанд қолибе барои %1 ёфт шуд"
+
+#~ msgid "Template %1 failed to load."
+#~ msgstr "Хатои кушодани қолиби %1."
+
+#, fuzzy
+#~ msgid "Always use this template at application start up"
+#~ msgstr "Доим оғози %1 аз қолиби интихобшуда шавад"
+
+#, fuzzy
+#~ msgid "Always use this template"
+#~ msgstr "Доим оғози %1 аз қолиби интихобшуда шавад"
+
+#~ msgid "Making backup..."
+#~ msgstr "Эҷоди нусхаи захиравӣ..."
+
+#~ msgid "Saving..."
+#~ msgstr "Дар ҳоли нигоҳ дорӣ..."
+
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Наметавонам %1-ро\n"
+#~ "нигоҳ дорам"
+
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Наметавонам %1-ро нигоҳ дорам\n"
+#~ "Сабаб: %2"
+
+#, fuzzy
+#~| msgid "Document Title"
+#~ msgid "Document <i>%1</i> saved"
+#~ msgstr "Номи санадот"
+
+#~ msgid "Autosaving..."
+#~ msgstr "Худнигоҳдорӣ..."
+
+#~ msgid "Error during autosave! Partition full?"
+#~ msgstr ""
+#~ "Мавриди худнигоҳдорӣ, хатогӣ рӯй дод! Мумкин диск аз ҳад пур шуда бошад?"
+
+#, fuzzy
+#~ msgid "Could not create the file for saving"
+#~ msgstr "Наметавонам файли барои қайдотро боз кунам"
+
+#~ msgid "Not able to write '%1'. Partition full?"
+#~ msgstr ""
+#~ "Наметавонам '%1'-ро нигоҳ дорам. Мумкин, диск аз ҳад пур шуда бошад?"
+
+#, fuzzy
+#~| msgid "Not able to write '%1'. Partition full?"
+#~ msgid "Not able to write RDF metadata. Partition full?"
+#~ msgstr ""
+#~ "Наметавонам '%1'-ро нигоҳ дорам. Мумкин, диск аз ҳад пур шуда бошад?"
+
+#, fuzzy
+#~ msgid "Error while trying to write '%1'. Partition full?"
+#~ msgstr ""
+#~ "Наметавонам '%1'-ро нигоҳ дорам. Мумкин, диск аз ҳад пур шуда бошад?"
+
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Адреси нодурусти\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "An autosaved file exists for this document.\n"
+#~ "Do you want to open it instead?"
+#~ msgstr ""
+#~ "Худнигоҳдорандаи ин санадот низ вуҷуд аст.\n"
+#~ "Худ нигоҳдорандаро боз кунам?"
+
+#~ msgid "The file %1 does not exist."
+#~ msgstr "Файли %1 вуҷуд надорад."
+
+#, fuzzy
+#~| msgid "Open Document"
+#~ msgid "Opening Document"
+#~ msgstr "Кушодани санад"
+
+#, fuzzy
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "Наметавонам файли барои қайдотро боз кунам"
+
+#, fuzzy
+#~| msgid "Locale format"
+#~ msgid "Invalid file format"
+#~ msgstr "Андоза бо мутобиқати локал"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr ""
+#~ "Наметавонам файли %1-ро боз кунам\n"
+#~ "Сабаб: %2"
+
+#, fuzzy
+#~| msgid "Document Title"
+#~ msgid "Document <i>%1</i> loaded"
+#~ msgstr "Номи санадот"
+
+#~ msgid "Could not find %1"
+#~ msgstr "Натавонистам %1-ро ёбам"
+
+#, fuzzy
+#~ msgid ""
+#~ "Parsing error in %1 at line %2, column %3\n"
+#~ "Error message: %4"
+#~ msgstr ""
+#~ "Хатои коркади додаҳои санадоти асосӣ дар сатри %1, сутуни %2\n"
+#~ "Иттилоот дар бораи хатогӣ: %3"
+
+#~ msgid "%1 is not a file."
+#~ msgstr "%1 - файл намебошад."
+
+#, fuzzy
+#~ msgid "Could not open the file for reading (check read permissions)."
+#~ msgstr "Наметавонам файлро хонам (ҳуқуқи хонданро биозмоед)."
+
+#, fuzzy
+#~ msgid "Could not read the beginning of the file."
+#~ msgstr "Наметавонам унвони файлро хонам."
+
+#~ msgid ""
+#~ "parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Хатои коркарди додаҳои файл дар сатри %1, сутуни %2\n"
+#~ "Иттилоот дар бобати хатогӣ: %3"
+
+#, fuzzy
+#~ msgid "Not a valid Calligra file: %1"
+#~ msgstr "Андозаи нодурусти файли KOffice."
+
+#~ msgid "Invalid document: no file 'maindoc.xml'."
+#~ msgstr "Андозаи нодурусти санадот: файли 'maindoc.xml' вуҷуд нест."
+
+#, fuzzy
+#~ msgid "Untitled"
+#~ msgstr "Муомилот"
+
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr ""
+#~ "<p>Санадоти <b>'%1'</b> тағйир ёфта буд.</p><p>Шумо мехоҳед ин файлро "
+#~ "нигоҳ доред?</p>"
+
+#~ msgid "Internal error: saveXML not implemented"
+#~ msgstr "Хатои дохилӣ: тарзи saveXML, амалӣ нашудааст"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Наметавонам %1-ро\n"
+#~ "боз кунам"
+
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Наметавонам файли %1-ро боз кунам\n"
+#~ "Сабаб: %2"
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~| "it?</p>"
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr ""
+#~ "<p>Санадоти <b>'%1'</b> тағйир ёфта буд.</p><p>Шумо мехоҳед ин файлро "
+#~ "нигоҳ доред?</p>"
+
+#, fuzzy
+#~ msgid "Close Document"
+#~ msgstr "Эҷоди санадот"
+
+#~ msgid "%1 %"
+#~ msgstr "%1 %"
+
+#, fuzzy
+#~ msgid "No"
+#~ msgstr "Эзоҳ"
+
+#~ msgid "Could not export file."
+#~ msgstr "Наметавонам файлро содир кунам."
+
+#~ msgid "Missing Export Filter"
+#~ msgstr "Филтри содирот ҳозир нест"
+
+#~ msgid ""
+#~ "Could not import file of type\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Наметавонам файли намуди \n"
+#~ "%1-ро ворид кунам"
+
+#~ msgid "Missing Import Filter"
+#~ msgstr "Филтри воридот ғоиб аст"
+
+#~ msgid "Choose Filter"
+#~ msgstr "Интихоби филтр"
+
+#, fuzzy
+#~| msgid "&Find:"
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "&Ҷустуҷӯӣ:"
+
+#, fuzzy
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "Афзудани матн"
+
+#, fuzzy
+#~| msgid "Previous Page"
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "Саҳифаи қаблӣ"
+
+#, fuzzy
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "Истисно"
+
+#, fuzzy
+#~| msgid "&Replace:"
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "&Иввазот:"
+
+#, fuzzy
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "&Иввазот:"
+
+#, fuzzy
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "&Иввазот:"
+
+#, fuzzy
+#~| msgid "No template found for: %1 "
+#~ msgctxt "Total number of matches"
+#~ msgid "1 match found"
+#~ msgid_plural "%1 matches found"
+#~ msgstr[0] "Қолибе барои %1 нест"
+#~ msgstr[1] "Қолибе барои %1 нест"
+
+#, fuzzy
+#~| msgid "No template found for: %1 "
+#~ msgid "No matches found"
+#~ msgstr "Қолибе барои %1 нест"
+
+#, fuzzy
+#~ msgid "%1 unsaved document (%2)"
+#~ msgstr "Нигоҳ доштани санад ҳамчун"
+
+#, fuzzy
+#~| msgid "E&xport..."
+#~ msgid "Export as PDF..."
+#~ msgstr "&Содирот..."
+
+#, fuzzy
+#~ msgid "Reload"
+#~ msgstr "Пурбор кардан"
+
+#, fuzzy
+#~ msgid "Open ex&isting Document as Untitled Document..."
+#~ msgstr "&Кушодани санадоти мавҷудӣ"
+
+#~ msgid "E&xport..."
+#~ msgstr "&Содирот..."
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "En&crypt Document"
+#~ msgstr "Воридоти санад"
+
+#~ msgid "&New View"
+#~ msgstr "&Намуди нав"
+
+#~ msgid "Document Information"
+#~ msgstr "Иттилоот дар бобати санад"
+
+#, fuzzy
+#~| msgid "Show %1 Toolbar"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "Намоиши панели асбоботи %1"
+
+#, fuzzy
+#~ msgid "(write protected)"
+#~ msgstr "муҳофиза аз навиштан"
+
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "%1 (намуди файли номаълум)"
+
+#~ msgid ""
+#~ "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
+#~ "want to save in this format?</qt>"
+#~ msgstr ""
+#~ "<qt> Нигоҳ доштан ба андозаи %1, метавонад ба қисман аз даст додани "
+#~ "анзозадарорӣ низ биёрад.<p>Оё мехоҳед дар ин андоза нигоҳ доред?</qt>"
+
+#~ msgid "Confirm Save"
+#~ msgstr "Тасдиқи нигоҳдорӣ"
+
+#~ msgid ""
+#~ "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you "
+#~ "still want to export to this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Содирот ба андозаи %1, метавонад ба қисман аз даст додани "
+#~ "анзозадарорӣ низ биёрад.<p>Оё мехоҳед дар ин андоза содир кунед?</qt>"
+
+#~ msgid "Confirm Export"
+#~ msgstr "Тасдиқи содирот"
+
+#, fuzzy
+#~ msgid "untitled"
+#~ msgstr "Муомилот"
+
+#~ msgid "Open Document"
+#~ msgstr "Кушодани санад"
+
+#, fuzzy
+#~| msgid "E&xport..."
+#~ msgid "Export as PDF"
+#~ msgstr "&Содирот..."
+
+#, fuzzy
+#~ msgid "Document - %1"
+#~ msgstr "Номи санадот"
+
+#, fuzzy
+#~| msgid ""
+#~| "You will lose all your changes!\n"
+#~| "Do you want to continue?"
+#~ msgid ""
+#~ "You will lose all changes made since your last save\n"
+#~ "Do you want to continue?"
+#~ msgstr "Тамоми тағйиротҳо гум мешаванд! Оё мехоҳед идома диҳед?"
+
+#, fuzzy
+#~ msgid "Warning"
+#~ msgstr "Чопи охирин"
+
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "Намоиши панели асбоботи %1"
+
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "Пинҳон кардани пайраҳаи асбоби %1"
+
+#, fuzzy
+#~| msgid "Open Document"
+#~ msgid "Open Existing Document"
+#~ msgstr "Кушодани санад"
+
+#, fuzzy
+#~ msgid "Recent Documents"
+#~ msgstr "Кушодани &санадоти охирин"
+
+#, fuzzy
+#~ msgid "Custom Document"
+#~ msgstr "Эҷоди санадот"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Printing"
+#~ msgstr "Чопи охирин"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Printing done"
+#~ msgstr "Чопи охирин"
+
+#, fuzzy
+#~| msgid "Colors"
+#~ msgid "Close"
+#~ msgstr "Рангҳо"
+
+#~ msgid "Create Template"
+#~ msgstr "Эҷоди қолиб"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "Ном:"
+
+#~ msgid "Group:"
+#~ msgstr "Гурӯҳ:"
+
+#~ msgid "&Add Group..."
+#~ msgstr "&Афзудани гурӯҳ..."
+
+#~ msgid "&Remove"
+#~ msgstr "&Нест кардан"
+
+#~ msgid "Picture"
+#~ msgstr "Сурат"
+
+#, fuzzy
+#~| msgid "Preview"
+#~ msgid "&Preview"
+#~ msgstr "Пешнамоиш"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Custom:"
+#~ msgstr "Андозаи дигар"
+
+#~ msgid "&Select..."
+#~ msgstr "&Интихоб..."
+
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr "Оё ҳақиқатан мехоҳед қолиби вуҷудбудаи '%1'-ро азнавнависӣ кунед?"
+
+#~ msgid "Add Group"
+#~ msgstr "Афзудани гурӯҳ"
+
+#~ msgid "Enter group name:"
+#~ msgstr "Номи гурӯҳ:"
+
+#~ msgid "This name is already used."
+#~ msgstr "Ин ном аллакай истифодашуда истодааст."
+
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "Оё ҳақиқатан мехоҳед гурӯҳро ҳузф кунед?"
+
+#~ msgid "Remove Group"
+#~ msgstr "Ҳузфи гурӯҳ"
+
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "Оё ҳақиқатан мехоҳед қолибро ҳузф кунед?"
+
+#~ msgid "Remove Template"
+#~ msgstr "Ҳузфи қолиб"
+
+#, fuzzy
+#~ msgid "&Delete"
+#~ msgstr "Ҳузфи матн"
+
+#~ msgid "Could not load picture."
+#~ msgstr "Қодир ба пурбор кардани тасвир нестам."
+
+#~ msgid "No picture available."
+#~ msgstr "Суратҳои дастрасӣ вуҷуд нест."
+
+#~ msgid "Use This Template"
+#~ msgstr "Истифодаи қолиб"
+
+#~ msgid "Version"
+#~ msgstr "Версия"
+
+#, fuzzy
+#~ msgid "Date & Time"
+#~ msgstr "Сана (қайд карда шуда)"
+
+#~ msgid "Comment"
+#~ msgstr "Эзоҳ"
+
+#~ msgid "&Add"
+#~ msgstr "&Афзудан"
+
+#, fuzzy
+#~ msgid "&Modify"
+#~ msgstr "Аз миёна:"
+
+#~ msgid "&Open"
+#~ msgstr "&Кушодан"
+
+#~ msgid "Date: %1"
+#~ msgstr "Сана: %1"
+
+#, fuzzy
+#~ msgid "Do you want to save the password?"
+#~ msgstr "Оё ҳақиқатан мехоҳед қолибро ҳузф кунед?"
+
+#~ msgid ""
+#~ "Parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Хатои коркади додаҳои санадоти асосӣ дар сатри %1, сутуни %2\n"
+#~ "Иттилоот дар бораи хатогӣ: %3"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "Экран"
+
+#~ msgid "The directory mode is not supported for remote locations."
+#~ msgstr "Тартиботи каталог, мавриди ишора намудани Интернет, дастрас нест."
+
+#, fuzzy
+#~ msgid "Subtract"
+#~ msgstr "Тасвирот"
+
+#, fuzzy
+#~ msgid "Lightness"
+#~ msgstr "Хокистарии равшан"
+
+#, fuzzy
+#~ msgid "Blue"
+#~ msgstr "Аҳамият"
+
+#, fuzzy
+#~ msgid "Green"
+#~ msgstr "Экран"
+
+#, fuzzy
+#~ msgid "Erase"
+#~ msgstr "Қайдот"
+
+#~ msgid "Normal"
+#~ msgstr "Матни оддӣ"
+
+#, fuzzy
+#~ msgid "Overlay"
+#~ msgstr "Зайтуни-Меҳрубон"
+
+#, fuzzy
+#~| msgid "Mail Merge"
+#~ msgid "Grain Merge"
+#~ msgstr "Якшавии почта"
+
+#, fuzzy
+#~ msgid "Hard Mix"
+#~ msgstr "&Бузургӣ:"
+
+#, fuzzy
+#~| msgid "Variable"
+#~ msgid "Parallel"
+#~ msgstr "Тағйирёбанда"
+
+#, fuzzy
+#~ msgid "Color Dodge"
+#~ msgstr "Рангҳо"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgid "Linear Dodge"
+#~ msgstr "Тағйири лабаҳо"
+
+#, fuzzy
+#~ msgid "Lighten"
+#~ msgstr "Сабзи равшан"
+
+#, fuzzy
+#~ msgid "Hard Light"
+#~ msgstr "&Бузургӣ:"
+
+#, fuzzy
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "Яктага"
+
+#, fuzzy
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "Яктага"
+
+#, fuzzy
+#~ msgid "Gamma Light"
+#~ msgstr "Сабзи равшан"
+
+#, fuzzy
+#~ msgid "Vivid Light"
+#~ msgstr "Сабзи равшан"
+
+#, fuzzy
+#~ msgid "Pin Light"
+#~ msgstr "Сабзи равшан"
+
+#, fuzzy
+#~| msgid "Line width:"
+#~ msgid "Linear Light"
+#~ msgstr "Ғафсии хат:"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color Burn"
+#~ msgstr "Ранг"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgid "Linear Burn"
+#~ msgstr "Тағйири лабаҳо"
+
+#, fuzzy
+#~ msgid "Darken"
+#~ msgstr "Сабзи сиёҳтоб"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgid "Addition"
+#~ msgstr "Ҷойгузорӣ"
+
+#, fuzzy
+#~ msgid "Inversed-Subtract"
+#~ msgstr "Тасвирот"
+
+#, fuzzy
+#~| msgid "Exceptions"
+#~ msgid "Exclusion"
+#~ msgstr "Истисно"
+
+#, fuzzy
+#~ msgid "Additive-Subtractive"
+#~ msgstr "Тасвирот"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Red"
+#~ msgstr "Номи корхона"
+
+#, fuzzy
+#~ msgid "Copy Green"
+#~ msgstr "Экран"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Blue"
+#~ msgstr "Номи корхона"
+
+#~ msgid "Color"
+#~ msgstr "Ранг"
+
+#, fuzzy
+#~ msgid "Increase Saturation"
+#~ msgstr "Тасвирот"
+
+#, fuzzy
+#~ msgid "Decrease Saturation"
+#~ msgstr "Тасвирот:"
+
+#, fuzzy
+#~ msgid "Increase Luminosity"
+#~ msgstr "Тағйири қайдот"
+
+#, fuzzy
+#~ msgid "Decrease Luminosity"
+#~ msgstr "Тағйири қайдот"
+
+#, fuzzy
+#~ msgid "Darker Color"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Lighter Color"
+#~ msgstr "Ранг"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color HSI"
+#~ msgstr "Ранг"
+
+#, fuzzy
+#~| msgid "Internet"
+#~ msgid "Intensity"
+#~ msgstr "Интернет"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Increase Intensity"
+#~ msgstr "Тағйири фосила"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Decrease Intensity"
+#~ msgstr "Тағйири фосила"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color HSL"
+#~ msgstr "Ранг"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Increase Lightness"
+#~ msgstr "Тағйири фосила"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Decrease Lightness"
+#~ msgstr "Тағйири фосила"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color HSV"
+#~ msgstr "Ранг"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Increase Value"
+#~ msgstr "Тағйири фосила"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Decrease Value"
+#~ msgstr "Тағйири фосила"
+
+#, fuzzy
+#~| msgid "Gray"
+#~ msgid "Grayscale"
+#~ msgstr "Хокистари"
+
+#~ msgid "YCbCr"
+#~ msgstr "YCbCr"
+
+#~ msgid "8 Bits"
+#~ msgstr "8 Бит"
+
+#~ msgid "16 Bits"
+#~ msgstr "16 Битs"
+
+#, fuzzy
+#~| msgid "16 Bits"
+#~ msgid "16 Bits Float"
+#~ msgstr "16 Битs"
+
+#, fuzzy
+#~| msgid "16 Bits"
+#~ msgid "64 Bits Float"
+#~ msgstr "16 Битs"
+
+#, fuzzy
+#~| msgid "Autoinclude"
+#~ msgid "Arithmetic"
+#~ msgstr "Худфаъолсозӣ"
+
+#, fuzzy
+#~ msgid "Inverse Subtract"
+#~ msgstr "Тасвирот"
+
+#, fuzzy
+#~ msgid "Burn"
+#~ msgstr "Қаҳвагӣ"
+
+#, fuzzy
+#~ msgid "Additive Subtractive"
+#~ msgstr "Тасвирот"
+
+#, fuzzy
+#~ msgid "Alpha Darken"
+#~ msgstr "Сабзи сиёҳтоб"
+
+#, fuzzy
+#~ msgid "Rdf"
+#~ msgstr "Сурх"
+
+#, fuzzy
+#~| msgid "Title"
+#~ msgid "Triples"
+#~ msgstr "Муомилот"
+
+#, fuzzy
+#~| msgid "New"
+#~ msgid "new"
+#~ msgstr "Эҷод кардан"
+
+#, fuzzy
+#~| msgid "Company"
+#~ msgid "copy"
+#~ msgstr "Корхона"
+
+#, fuzzy
+#~ msgid "delete"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgid "Namespaces"
+#~ msgstr "&Иввазот:"
+
+#, fuzzy
+#~| msgid "Pre&fix text:"
+#~ msgid "Prefix"
+#~ msgstr "&Префикс:"
+
+#, fuzzy
+#~ msgid "Namespace"
+#~ msgstr "&Иввазот:"
+
+#, fuzzy
+#~| msgid "St&yle"
+#~ msgid "Stylesheets"
+#~ msgstr "Ус&луб"
+
+#, fuzzy
+#~| msgid "Apply Style %1"
+#~ msgid "Apply Stylesheet"
+#~ msgstr "Ба истифода бурдани навъи %1"
+
+#, fuzzy
+#~ msgid "User"
+#~ msgstr "Гузоштани сатр"
+
+#, fuzzy
+#~| msgid "St&yle"
+#~ msgid "Stylesheet Definition"
+#~ msgstr "Ус&луб"
+
+#, fuzzy
+#~| msgid "Variable Name"
+#~ msgid "Variables Available"
+#~ msgstr "Номи тағйирёбанда"
+
+#, fuzzy
+#~| msgid "Description:"
+#~ msgid "Description"
+#~ msgstr "Тасвирот:"
+
+#, fuzzy
+#~| msgid "St&yle"
+#~ msgid "Stylesheet Name"
+#~ msgstr "Ус&луб"
+
+#, fuzzy
+#~ msgid "Literal"
+#~ msgstr "Марҷонии Кушод"
+
+#~ msgid "Blank"
+#~ msgstr "Холӣ"
+
+#, fuzzy
+#~| msgid "Size:"
+#~ msgid "Valid"
+#~ msgstr "Андоза:"
+
+#~ msgid "Subject"
+#~ msgstr "Мавзуъ"
+
+#, fuzzy
+#~| msgid "Picture"
+#~ msgid "Predicate"
+#~ msgstr "Сурат"
+
+#, fuzzy
+#~ msgid "DataType"
+#~ msgstr "Сана"
+
+#, fuzzy
+#~| msgid "Locale format"
+#~ msgid "Invalid identifier"
+#~ msgstr "Андоза бо мутобиқати локал"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "Ғайри"
+
+#, fuzzy
+#~| msgid "Circle Bullet"
+#~ msgid "Small Bullet"
+#~ msgstr "Маркери монанди доира"
+
+#~ msgid "Circle Bullet"
+#~ msgstr "Маркери монанди доира"
+
+#, fuzzy
+#~| msgid "Circle Bullet"
+#~ msgid "Square Bullet"
+#~ msgstr "Маркери монанди доира"
+
+#, fuzzy
+#~| msgid "Box Bullet"
+#~ msgid "Rhombus Bullet"
+#~ msgstr "Маркери мураббаъии яклухт"
+
+#, fuzzy
+#~| msgid "Circle Bullet"
+#~ msgid "Check Mark Bullet"
+#~ msgstr "Маркери монанди доира"
+
+#, fuzzy
+#~ msgid "Rightwards Arrow Bullet"
+#~ msgstr "Сабзи равшан"
+
+#, fuzzy
+#~ msgid "Arabic"
+#~ msgstr "Лоҷвардӣ"
+
+#~ msgid "Lower Alphabetical"
+#~ msgstr "Ҳуруфҳо дар регистри поёнӣ ҷойгиранд"
+
+#~ msgid "Upper Alphabetical"
+#~ msgstr "Ҳуруфҳо дар регистри болоӣ ҷойгиранд"
+
+#, fuzzy
+#~| msgid "Lower Roman Numbers"
+#~ msgid "Lower Roman"
+#~ msgstr "Рақамҳои румӣ дар регистри поёнӣ ҷойгиранд"
+
+#, fuzzy
+#~| msgid "Upper Roman Numbers"
+#~ msgid "Upper Roman"
+#~ msgstr "Рақамҳои румӣ дар регистри болоӣ ҷойгиранд"
+
+#, fuzzy
+#~| msgid "Circle Bullet"
+#~ msgid "Large Bullet"
+#~ msgstr "Маркери монанди доира"
+
+#, fuzzy
+#~| msgid "Box Bullet"
+#~ msgid "Ballot X Bullet"
+#~ msgstr "Маркери мураббаъии яклухт"
+
+#, fuzzy
+#~| msgid "Family:"
+#~ msgid "Tamil"
+#~ msgstr "Ҳуруф:"
+
+#, fuzzy
+#~| msgid "Time"
+#~ msgid "Tibetan"
+#~ msgstr "Вақт"
+
+#, fuzzy
+#~ msgid "Thai"
+#~ msgstr "Хокӣ"
+
+#, fuzzy
+#~| msgid "Recent file:"
+#~ msgid "Recent:"
+#~ msgstr "Файли охирин:"
+
+#, fuzzy
+#~| msgid "More Colors..."
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "Рангҳои иловагӣ..."
+
+#, fuzzy
+#~ msgid "Import Data"
+#~ msgstr "Воридоти санад"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgid "Generic"
+#~ msgstr "Умумӣ"
+
+#, fuzzy
+#~ msgid "Currency"
+#~ msgstr "Қисми равон"
+
+#~ msgid "None"
+#~ msgstr "Ғайри"
+
+#, fuzzy
+#~ msgid "Data"
+#~ msgstr "Сана"
+
+#, fuzzy
+#~ msgid "E&ncoding:"
+#~ msgstr "Зер&хаткашӣ:"
+
+#, fuzzy
+#~ msgid "Format"
+#~ msgstr "Формати сана"
+
+#, fuzzy
+#~ msgid "Delimiter"
+#~ msgstr "Ҳудуди чап"
+
+#, fuzzy
+#~ msgid "Semicolon"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~ msgid "Other"
+#~ msgstr "Аз &марказ"
+
+#, fuzzy
+#~ msgid "Tabulator"
+#~ msgstr "Мавқеъотҳои &табулятсия"
+
+#~ msgid "Space"
+#~ msgstr "Фосила"
+
+#~ msgid "\""
+#~ msgstr "\""
+
+#, fuzzy
+#~ msgid "&Format:"
+#~ msgstr "Формати сана"
+
+#, fuzzy
+#~ msgid "Ranges"
+#~ msgstr "Норинҷӣ"
+
+#, fuzzy
+#~ msgid "Update"
+#~ msgstr "Сана"
+
+#, fuzzy
+#~ msgid "Import columns:"
+#~ msgstr "Воридоти санад"
+
+#, fuzzy
+#~ msgid "Import lines:"
+#~ msgstr "Вориди услубҳо"
+
+#, fuzzy
+#~| msgid "Author"
+#~ msgid "to"
+#~ msgstr "Муаллиф"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "Эҷоди санадот"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "Эҷоди санадот"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Lock Docker"
+#~ msgstr "Миқдори хатҳо"
+
+#, fuzzy
+#~ msgid "Keywords:"
+#~ msgstr "Номи санадот"
+
+#, fuzzy
+#~ msgid "Subject:"
+#~ msgstr "Мавзеъ"
+
+#, fuzzy
+#~ msgid "Last printed:"
+#~ msgstr "Чопи охирин"
+
+#, fuzzy
+#~ msgid "Encryption:"
+#~ msgstr "Тасвирот:"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "Сарлавҳа:"
+
+#, fuzzy
+#~| msgid "Page Number"
+#~ msgid "Revision number:"
+#~ msgstr "Рақами саҳифа"
+
+#, fuzzy
+#~ msgid "Modified:"
+#~ msgstr "Аз миёна:"
+
+#, fuzzy
+#~ msgid "Comments:"
+#~ msgstr "Эзоҳ"
+
+#, fuzzy
+#~ msgid "Created:"
+#~ msgstr "Эҷоди қолиб"
+
+#, fuzzy
+#~| msgid "Edit Path"
+#~ msgid "Path:"
+#~ msgstr "Интихоб"
+
+#~ msgid "&Reset"
+#~ msgstr "&Барҳамот"
+
+#, fuzzy
+#~ msgid "Language:"
+#~ msgstr "Забон:"
+
+#~ msgid "General"
+#~ msgstr "Умумӣ"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Last saved by"
+#~ msgstr "Гузориши матн аз буфери иввазот"
+
+#, fuzzy
+#~ msgid "Do not decrypt"
+#~ msgstr "Тасвирот:"
+
+#, fuzzy
+#~ msgid "D&ecrypt"
+#~ msgstr "Тасвирот:"
+
+#, fuzzy
+#~ msgid "Do not encrypt"
+#~ msgstr "Тасвирот:"
+
+#, fuzzy
+#~ msgid "Confirm Decrypt"
+#~ msgstr "Тасдиқи содирот"
+
+#, fuzzy
+#~ msgid "Decrypt"
+#~ msgstr "Тасвирот:"
+
+#, fuzzy
+#~ msgid "Save Document"
+#~ msgstr "Нигоҳ доштани санад ҳамчун"
+
+#, fuzzy
+#~ msgid "Change Filetype"
+#~ msgstr "Тағйири намуди рӯйхат"
+
+#~ msgid "Change"
+#~ msgstr "Тағйир кардан"
+
+#, fuzzy
+#~ msgid "Remove"
+#~ msgstr "Гузоштани сатр"
+
+#, fuzzy
+#~ msgid "Open palette"
+#~ msgstr "Сабзи паридаранг"
+
+#, fuzzy
+#~ msgid "Save palette"
+#~ msgstr "Сабзи паридаранг"
+
+#, fuzzy
+#~| msgid "Bookmark name:"
+#~ msgid "Color name:"
+#~ msgstr "Номи гузориш:"
+
+#, fuzzy
+#~ msgid "Palette"
+#~ msgstr "Сабзи паридаранг"
+
+#, fuzzy
+#~| msgid "Remove Word"
+#~ msgid "Add/Remove Colors"
+#~ msgstr "Ҳузфи калимот"
+
+#, fuzzy
+#~ msgid "Testing: OpenFile"
+#~ msgstr "Сабзи паридаранг"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Testing: OpenDirectory"
+#~ msgstr "Номи каталог"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFile"
+#~ msgstr "Филтри воридот ғоиб аст"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "Филтри воридот ғоиб аст"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: Import Directory"
+#~ msgstr "Воридоти санад"
+
+#, fuzzy
+#~ msgid "Testing: SaveFile"
+#~ msgstr "Сабзи паридаранг"
+
+#, fuzzy
+#~ msgid "Open File"
+#~ msgstr "Сабзи паридаранг"
+
+#, fuzzy
+#~ msgid "Open Files"
+#~ msgstr "Сабзи паридаранг"
+
+#, fuzzy
+#~ msgid "Filter:"
+#~ msgstr "Баъд аз (%1):"
+
+#, fuzzy
+#~ msgid "TextLabel"
+#~ msgstr "Бунафшаранг"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "Named"
+#~ msgstr "Ном:"
+
+#, fuzzy
+#~| msgid "Locale date format"
+#~ msgid "Set default filter"
+#~ msgstr "Андозаи локалии сана"
+
+#, fuzzy
+#~ msgid "Save File"
+#~ msgstr "Сабзи паридаранг"
+
+#, fuzzy
+#~ msgid "Import Files"
+#~ msgstr "Вориди услубҳо"
+
+#, fuzzy
+#~ msgid "Import File"
+#~ msgstr "Вориди услубҳо"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Open Directory"
+#~ msgstr "Номи каталог"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Directory"
+#~ msgstr "Воридоти санад"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "Ғайри"
+
+#, fuzzy
+#~| msgid "Change First Line Indent"
+#~ msgid "Change the filling gradient"
+#~ msgstr "Тағйири фосилаи сатри аввал"
+
+#, fuzzy
+#~ msgid "Icon and Text"
+#~ msgstr "Афзудани матн"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgid "Bottom side"
+#~ msgstr "Баробаркунии автоматикӣ"
+
+#, fuzzy
+#~ msgid "Left side"
+#~ msgstr "Зағирӣ"
+
+#, fuzzy
+#~ msgid "Right side"
+#~ msgstr "Сабзи равшан"
+
+#~ msgid "Page Layout"
+#~ msgstr "Хосиятҳои саҳифа"
+
+#, fuzzy
+#~| msgid "Empty Document"
+#~ msgid "Apply to document"
+#~ msgstr "Санади холӣ"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgid "Left Edge:"
+#~ msgstr "Аз чап:"
+
+#, fuzzy
+#~| msgid "Right:"
+#~ msgid "Right Edge:"
+#~ msgstr "Аз рост:"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Binding Edge:"
+#~ msgstr "Чопи охирин"
+
+#, fuzzy
+#~| msgid "Page Size"
+#~ msgid "Page Edge:"
+#~ msgstr "Андозаи саҳифа"
+
+#, fuzzy
+#~ msgid "Facing Pages:"
+#~ msgstr "Саҳифаи баъдӣ"
+
+#, fuzzy
+#~ msgid "Facing pages"
+#~ msgstr "Саҳифаи баъдӣ"
+
+#, fuzzy
+#~| msgid "Page Layout"
+#~ msgid "Page Layout:"
+#~ msgstr "Хосиятҳои саҳифа"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page spread"
+#~ msgstr "Пешнамоиши саҳифот"
+
+#~ msgid "Unit:"
+#~ msgstr "Воҳиди санҷиш:"
+
+#~ msgid "Size:"
+#~ msgstr "Андоза:"
+
+#, fuzzy
+#~ msgid "Width:"
+#~ msgstr "&Васеъӣ:"
+
+#, fuzzy
+#~ msgid "Height:"
+#~ msgstr "&Бузургӣ:"
+
+#, fuzzy
+#~ msgid "Orientation:"
+#~ msgstr "&Ҷойгиршавии ҷудокунак"
+
+#, fuzzy
+#~| msgid "Language:"
+#~ msgid "Facing pages:"
+#~ msgstr "Забон:"
+
+#, fuzzy
+#~| msgid "Single"
+#~ msgid "Single sided"
+#~ msgstr "Яктага"
+
+#, fuzzy
+#~ msgid "Text direction:"
+#~ msgstr "Ранги пешфарзӣ"
+
+#, fuzzy
+#~| msgid "Autoinclude"
+#~ msgid "Automatic"
+#~ msgstr "Худфаъолсозӣ"
+
+#, fuzzy
+#~ msgid "Left to right"
+#~ msgstr "Яктага"
+
+#, fuzzy
+#~ msgid "Right to left"
+#~ msgstr "Сабзи равшан"
+
+#~ msgid "Margins"
+#~ msgstr "Ҳудудҳо"
+
+#, fuzzy
+#~ msgid "Top:"
+#~ msgstr "Гурӯҳ:"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Binding edge:"
+#~ msgstr "Чопи охирин"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page edge:"
+#~ msgstr "Пешнамоиши саҳифот"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgid "Bottom:"
+#~ msgstr "Баробаркунии автоматикӣ"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "Воридоти санад"
+
+#, fuzzy
+#~| msgid "Download"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "Пурбор кардан"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~| msgid "Choose Filter"
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "Интихоби филтр"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgid "Assign to tag"
+#~ msgstr "Баробаркунии автоматикӣ"
+
+#, fuzzy
+#~ msgid "Remove from this tag"
+#~ msgstr "Ҳузфи истинод"
+
+#, fuzzy
+#~| msgid "Remove Comment"
+#~ msgid "Remove from other tag"
+#~ msgstr "Ҳузфи эзоҳ"
+
+#, fuzzy
+#~| msgid "Square Bullet"
+#~ msgid "Square cap"
+#~ msgstr "Маркери мураббаъӣ"
+
+#, fuzzy
+#~ msgid "Miter join"
+#~ msgstr "Ҳудудҳо"
+
+#, fuzzy
+#~ msgid "Bevel join"
+#~ msgstr "Ҳузфи истинод"
+
+#, fuzzy
+#~| msgid "Counter alignment:"
+#~ msgid "Miter limit"
+#~ msgstr "Баробар кардани рӯйхат:"
+
+#, fuzzy
+#~ msgid "Tag"
+#~ msgstr "Қаҳваранги зардмонанд"
+
+#, fuzzy
+#~ msgid "Rename tag"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgid "Delete this tag"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgid "Undelete"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgid "Tool Options"
+#~ msgstr "Худитмомӣ"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "deselect item"
+#~ msgstr "Ишорае интихоб кунед"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "select item"
+#~ msgstr "Ишорае интихоб кунед"
+
+#, fuzzy
+#~| msgid "%1%"
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1%"
+
+#, fuzzy
+#~| msgid "Autoinclude"
+#~ msgctxt "Static Image"
+#~ msgid "Static"
+#~ msgstr "Худфаъолсозӣ"
+
+#, fuzzy
+#~ msgid "Magenta"
+#~ msgstr "Рӯяноб"
+
+#, fuzzy
+#~ msgid "Black"
+#~ msgstr "Холӣ"
+
+#, fuzzy
+#~ msgid "Opacity:"
+#~ msgstr "Шаҳр:"
+
+#, fuzzy
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "&Пешфарзӣ"
+
+#, fuzzy
+#~| msgid "Confirm Save"
+#~ msgid "Configuration..."
+#~ msgstr "Тасдиқи нигоҳдорӣ"
+
+#, fuzzy
+#~ msgid "&Tools"
+#~ msgstr "Ранги пешфарзӣ"
+
+#, fuzzy
+#~| msgid "Completion"
+#~ msgid "Color Selector"
+#~ msgstr "Худитмомӣ"
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Database file \"%1\" does not exist."
+#~ msgstr "Файли %1 вуҷуд надорад."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist in the database."
+#~ msgstr "Файли %1 вуҷуд надорад."
+
+#, fuzzy
+#~ msgid "Could not compact database \"%1\"."
+#~ msgstr "Наметавонам унвони файлро хонам."
+
+#, fuzzy
+#~ msgid "Do you want to open file \"%1\" as read-only?"
+#~ msgstr "Оё ҳақиқатан мехоҳед қолибро ҳузф кунед?"
+
+#, fuzzy
+#~ msgid "Could not gain exclusive access for writing the file."
+#~ msgstr "Наметавонам унвони файлро хонам."
+
+#, fuzzy
+#~| msgid "Could not load picture."
+#~ msgid "Could not close busy database."
+#~ msgstr "Қодир ба пурбор кардани тасвир нестам."
+
+#, fuzzy
+#~| msgid "Could not export file."
+#~ msgid "Could not remove file \"%1\"."
+#~ msgstr "Наметавонам файлро содир кунам."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist"
+#~ msgstr "Файли %1 вуҷуд надорад."
+
+#, fuzzy
+#~| msgid "Date Format"
+#~ msgid "Track Total Format"
+#~ msgstr "Формати сана"
+
+#, fuzzy
+#~| msgid "Change Shadow"
+#~ msgid "Grid Snap"
+#~ msgstr "Тағйири соя"
+
+#, fuzzy
+#~ msgid "Formatting"
+#~ msgstr "Формати сана"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Testing: OpenDirectories"
+#~ msgstr "Номи каталог"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: ImportDirectories"
+#~ msgstr "Воридоти санад"
+
+#, fuzzy
+#~ msgid "Testing: SaveFiles"
+#~ msgstr "Сабзи паридаранг"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Open Directories"
+#~ msgstr "Номи каталог"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Directories"
+#~ msgstr "Воридоти санад"
+
+#, fuzzy
+#~ msgid "Save Files"
+#~ msgstr "Сабзи паридаранг"
+
+#, fuzzy
+#~ msgid "Create Path"
+#~ msgstr "Эҷоди қолиб"
+
+#~ msgid "Error!"
+#~ msgstr "Хато!"
+
+#, fuzzy
+#~| msgid "Exceptions"
+#~ msgid "Locations"
+#~ msgstr "Истисно"
+
+#, fuzzy
+#~ msgid "Area"
+#~ msgstr "Лоҷвардӣ"
+
+#, fuzzy
+#~| msgid "Version"
+#~ msgid "Region"
+#~ msgstr "Версия"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not save\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not add entry\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Наметавонам %1-ро\n"
+#~ "нигоҳ дорам"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not save\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not save iCal file\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Наметавонам %1-ро\n"
+#~ "нигоҳ дорам"
+
+#, fuzzy
+#~| msgid "Completion"
+#~ msgid "&Location:"
+#~ msgstr "Худитмомӣ"
+
+#, fuzzy
+#~| msgid "Street"
+#~ msgid "&Start:"
+#~ msgstr "Кӯча"
+
+#, fuzzy
+#~ msgid "Timezone"
+#~ msgstr "Вақт"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "&Name:"
+#~ msgstr "Ном:"
+
+#, fuzzy
+#~| msgid "Page Number"
+#~ msgid "&Phone Number:"
+#~ msgstr "Рақами саҳифа"
+
+#, fuzzy
+#~ msgid "&Home Page:"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Contact Information"
+#~ msgstr "Иттилоот дар бобати санад"
+
+#, fuzzy
+#~ msgid "Import contact"
+#~ msgstr "Воридоти санад"
+
+#, fuzzy
+#~| msgid "E&xport..."
+#~ msgid "Export as vcard..."
+#~ msgstr "&Содирот..."
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "&Name"
+#~ msgstr "Ном:"
+
+#, fuzzy
+#~| msgid "Edit Path"
+#~ msgid "The Earth"
+#~ msgstr "Интихоб"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Location Information"
+#~ msgstr "Иттилоот дар бобати санад"
+
+#, fuzzy
+#~ msgid "People"
+#~ msgstr "Арғувонӣ"
+
+#~ msgid ""
+#~ "A document with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "Санад бо чунин ном аллакай вуҷуд аст\n"
+#~ "Оё мехоҳед аз нав нависӣ кунед?"
+
+#~ msgid "%1 (Uncompressed XML Files)"
+#~ msgstr "%1 (Файлҳои XML - Кушодашуда)"
+
+#~ msgid "%1 (Flat XML File)"
+#~ msgstr "%1 (Файли Flat XML)"
+
+#~ msgid "%1 (Encrypted)"
+#~ msgstr "%1 (Рамзгузорӣ)"
+
+#~ msgid "%1 (%2 Compatible)"
+#~ msgstr "%1 (%2 Мувофиқ)"
+
+#~ msgid "Save Document As"
+#~ msgstr "Нигоҳ доштани санад ҳамчун"
+
+#~ msgid "Export Document As"
+#~ msgstr "Содир ба файл"
+
+#, fuzzy
+#~| msgid "E&xport..."
+#~ msgid "Export to PDF"
+#~ msgstr "&Содирот..."
+
+#, fuzzy
+#~ msgid "Slide Background"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~ msgid "Document background"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~| msgid "Change"
+#~ msgid "&Cancel"
+#~ msgstr "Тағйир кардан"
+
+#, fuzzy
+#~ msgid "First Page"
+#~ msgstr "Саҳифаи баъдӣ"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Even Pages(s)"
+#~ msgstr "Номи корхона"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Any Pages(s)"
+#~ msgstr "Номи корхона"
+
+#, fuzzy
+#~ msgid "&Edit"
+#~ msgstr "&Афзудани гурӯҳ..."
+
+#, fuzzy
+#~| msgid "Colors"
+#~ msgid "&Close"
+#~ msgstr "Рангҳо"
+
+#, fuzzy
+#~ msgid "Dodge"
+#~ msgstr "Тира-тугмагул"
+
+#, fuzzy
+#~ msgid "Hard light"
+#~ msgstr "&Бузургӣ:"
+
+#, fuzzy
+#~ msgid "Soft light"
+#~ msgstr "Яктага"
+
+#, fuzzy
+#~| msgid "Change Shadow"
+#~ msgid "Show Shadow"
+#~ msgstr "Тағйири соя"
+
+#, fuzzy
+#~ msgid "Angle:"
+#~ msgstr "Яктага"
+
+#, fuzzy
+#~| msgid "Shadow:"
+#~ msgid "Offset:"
+#~ msgstr "Соя:"
+
+#~ msgid "Color:"
+#~ msgstr "Ранг:"
+
+#, fuzzy
+#~ msgid "Style:"
+#~ msgstr "&Навъ:"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bookmark"
+#~ msgstr "Гузоштани роғи сатр"
+
+#, fuzzy
+#~ msgid "Insert Table"
+#~ msgstr "Гузориши матн"
+
+#, fuzzy
+#~ msgid "Insert Row Above"
+#~ msgstr "Гузориши матн"
+
+#, fuzzy
+#~ msgid "Insert Column Left"
+#~ msgstr "Гузоштани истинод"
+
+#, fuzzy
+#~ msgid "Insert Column Right"
+#~ msgstr "Гузоштани истинод"
+
+#, fuzzy
+#~ msgid "Delete Column"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgid "Delete Row"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~| msgid "Include in table of contents"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Ба феҳрист дохил кардан"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Гузоштани роғи сатр"
+
+#, fuzzy
+#~ msgid "Embedding Object"
+#~ msgstr "Миқдори объектҳои вурудшуда"
+
+#~ msgid "I&mport..."
+#~ msgstr "&Воридот..."
+
+#~ msgid "&Default"
+#~ msgstr "&Пешфарзӣ"
+
+#~ msgid "Preview:"
+#~ msgstr "Пешнамоиш:"
+
+#, fuzzy
+#~| msgid "Background color:"
+#~ msgid "Background Tool"
+#~ msgstr "Ранги замина:"
+
+#, fuzzy
+#~| msgid "Background color:"
+#~ msgid "Background editing tool"
+#~ msgstr "Ранги замина:"
+
+#, fuzzy
+#~ msgid "Use master background"
+#~ msgstr "Сония"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Separate paths"
+#~ msgstr "Роҳчаи пешфарзӣ"
+
+#~ msgid ""
+#~ "An autosaved file for an unnamed document exists in %1.\n"
+#~ "This file is dated %2\n"
+#~ "Do you want to open it?"
+#~ msgstr ""
+#~ "Худнигоҳдорандаи санадоти беном дар %1 вуҷуд аст.\n"
+#~ "Файл эҷод шуда буд дар %2.\n"
+#~ "Худ нигоҳдорандаро боз кунам?"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shapes"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgid "Substract"
+#~ msgstr "Тасвирот"
+
+#, fuzzy
+#~ msgid "Inverse Substract"
+#~ msgstr "Тасвирот"
+
+#, fuzzy
+#~ msgid "&Load From Address Book"
+#~ msgstr "Аз китоби адрес пурбор кардан"
+
+#, fuzzy
+#~| msgid "Shadow:"
+#~ msgid "Shadow Angle:"
+#~ msgstr "Соя:"
+
+#, fuzzy
+#~| msgid "Shadow:"
+#~ msgid "Shadow Color:"
+#~ msgstr "Соя:"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgid "Set Horizontal Alignment"
+#~ msgstr "Амудӣ баробар кардан:"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgid "Line Break"
+#~ msgstr "Тағйири лабаҳо"
+
+#, fuzzy
+#~ msgid "Hide Grid"
+#~ msgstr "Миқдори хатҳо"
+
+#, fuzzy
+#~ msgid "Hide Guides"
+#~ msgstr "Миқдори хатҳо"
+
+#~ msgid "&Close All Views"
+#~ msgstr "&Пӯшидани тамоми намудҳо"
+
+#~ msgid "&Split View"
+#~ msgstr "&Ҷудо кардани намуд"
+
+#~ msgid "&Remove View"
+#~ msgstr "&Ҳузфи намуд"
+
+#~ msgid "Splitter &Orientation"
+#~ msgstr "&Ҷойгиршавии ҷудокунак"
+
+#~ msgid "&Horizontal"
+#~ msgstr "&Уфуқӣ"
+
+#~ msgid "&Vertical"
+#~ msgstr "&Амудӣ"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Printing page %1"
+#~ msgstr "Чопи охирин"
+
+#, fuzzy
+#~ msgid "Form"
+#~ msgstr "Матни оддӣ"
+
+#, fuzzy
+#~| msgid "I&mport..."
+#~ msgid "Import"
+#~ msgstr "&Воридот..."
+
+#, fuzzy
+#~ msgid "Share"
+#~ msgstr "Мавҷнок"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Opacy"
+#~ msgstr "Номи корхона"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Alpha"
+#~ msgstr "Номи корхона"
+
+#, fuzzy
+#~ msgid "Light"
+#~ msgstr "Сабзи равшан"
+
+#, fuzzy
+#~| msgid "Strikeout:"
+#~ msgid "Spread out:"
+#~ msgstr "Хат кашидашуда:"
+
+#~ msgid "KOffice"
+#~ msgstr "KOffice"
+
+#~ msgid "KOffice Storage"
+#~ msgstr "Хазинаи KOffice"
+
+#, fuzzy
+#~| msgid "Date Format"
+#~ msgid "Barcode"
+#~ msgstr "Формати сана"
+
+#, fuzzy
+#~| msgid "Date Format"
+#~ msgid "Barcode Format"
+#~ msgstr "Формати сана"
+
+#, fuzzy
+#~ msgid "Chart"
+#~ msgstr "Пистагӣ"
+
+#, fuzzy
+#~| msgid "Time"
+#~ msgid "Pie"
+#~ msgstr "Вақт"
+
+#, fuzzy
+#~ msgid "Ring"
+#~ msgstr "Аз &лабаи рост"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Polar"
+#~ msgstr "Ранг"
+
+#, fuzzy
+#~ msgid "Chart Type"
+#~ msgstr "Сана"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgid "Stacked"
+#~ msgstr "Фосила"
+
+#, fuzzy
+#~| msgid "Recent file:"
+#~ msgid "Percent"
+#~ msgstr "Файли охирин:"
+
+#, fuzzy
+#~| msgid "Bookmark name:"
+#~ msgid "Color Scheme"
+#~ msgstr "Номи гузориш:"
+
+#, fuzzy
+#~ msgid "Antialiased"
+#~ msgstr "Муомилот"
+
+#, fuzzy
+#~| msgid "Display le&vels:"
+#~ msgid "Display Legend"
+#~ msgstr "Намоиши &дараҷот:"
+
+#~ msgid "QXml"
+#~ msgstr "QXml"
+
+#, fuzzy
+#~ msgid "Pan Tool"
+#~ msgstr "Ранги пешфарзӣ"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Out"
+#~ msgstr "Андозаи дигар"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgid "Insert Linebreak"
+#~ msgstr "Гузоштани роғи сатр"
+
+#, fuzzy
+#~ msgid "&Insert"
+#~ msgstr "Гузоштани сатр"
+
+#~ msgid "Insert the selected character in the text"
+#~ msgstr "Ишораи интихобшударо дар матн гузоштан"
+
+#, fuzzy
+#~ msgid "Enable word completion"
+#~ msgstr "Ф&аъол сохтани худитмомот"
+
+#, fuzzy
+#~ msgid "Automatically add new words to suggestion list"
+#~ msgstr "&Автоматикӣ афзудани калима ба рӯйхати худитмомот"
+
+#, fuzzy
+#~ msgid ""
+#~ "If this option is enabled, any word equal to or longer than the "
+#~ "\"Characters needed\" typed in this document will automatically be added "
+#~ "to the list of words used by the completion."
+#~ msgstr ""
+#~ "Мавриди фаъол сохтани ин интихобот, ҳар як калимае, ки дар санадот чоп "
+#~ "шудааст, худкорона ба рӯйхати худитмомии калима афзуда мешавад."
+
+#, fuzzy
+#~ msgid "Completion Options"
+#~ msgstr "Худитмомӣ"
+
+#, fuzzy
+#~ msgid "Append space"
+#~ msgstr "&Афзудани фосилот"
+
+#, fuzzy
+#~ msgid "Make Default"
+#~ msgstr "&Пешфарзӣ"
+
+#, fuzzy
+#~ msgid "C&ustom"
+#~ msgstr "Андозаи дигар"
+
+#, fuzzy
+#~ msgid "&Insert:"
+#~ msgstr "Гузоштани сатр"
+
+#, fuzzy
+#~ msgid "Paragraph Background Color"
+#~ msgstr "&Ранги Замина Дигаргун Кунед..."
+
+#, fuzzy
+#~ msgid "Borders"
+#~ msgstr "&Лабаҳо"
+
+#~ msgid "&Width:"
+#~ msgstr "&Васеъӣ:"
+
+#, fuzzy
+#~ msgid "&Color:"
+#~ msgstr "Ранг:"
+
+#, fuzzy
+#~ msgid "String:"
+#~ msgstr "Яктага"
+
+#, fuzzy
+#~ msgid "Boolean:"
+#~ msgstr "Холӣ"
+
+#, fuzzy
+#~ msgid "true"
+#~ msgstr "Кӯча"
+
+#, fuzzy
+#~ msgid "false"
+#~ msgstr "Қайдот"
+
+#, fuzzy
+#~ msgid "Date:"
+#~ msgstr "Сана"
+
+#, fuzzy
+#~ msgid "Add Guide Line"
+#~ msgstr "Афзудани матни бисёрсатра"
+
+#, fuzzy
+#~ msgid "Horizontal"
+#~ msgstr "&Уфуқӣ"
+
+#, fuzzy
+#~ msgid "Vertical"
+#~ msgstr "&Амудӣ"
+
+#, fuzzy
+#~ msgid "&Position:"
+#~ msgstr "Ҷойгузорӣ"
+
+#, fuzzy
+#~ msgid "Guide Line"
+#~ msgstr "Унвони саҳифаи болоӣ"
+
+#, fuzzy
+#~ msgid "Guide Lines"
+#~ msgstr "Миқдори хатҳо"
+
+#~ msgid "No handler found for %1"
+#~ msgstr "Тасҳеҳдиҳандае барои %1 вушчуд надорад"
+
+#~ msgid ""
+#~ "Error loading %1:\n"
+#~ "%2"
+#~ msgstr ""
+#~ "Хатои боргирӣ %1:\n"
+#~ "%2"
+
+#~ msgid ""
+#~ "This document contains an external link to a remote document\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ин санадот дорои истиноди хурӯҷӣ дар санадоти\n"
+#~ "ғайрилокалии %1 мебошад"
+
+#, fuzzy
+#~ msgid "Confirmation Required"
+#~ msgstr "Тасдиқот лозим аст"
+
+#~ msgid "Skip"
+#~ msgstr "Партофтан"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not load external document %1:\n"
+#~ "%2"
+#~ msgstr "Наметавонам мавзеъи вуруд карда шударо пурбор кунам."
+
+#, fuzzy
+#~ msgid "Na&me:"
+#~ msgstr "Ном:"
+
+#~ msgid "&Height:"
+#~ msgstr "&Бузургӣ:"
+
+#, fuzzy
+#~ msgid "&Left:"
+#~ msgstr "Аз &лабаи чап"
+
+#~ msgid "Context Help"
+#~ msgstr "Луқмаи матнӣ"
+
+#~ msgid "Here will be shown help according to your actions"
+#~ msgstr ""
+#~ "Дар инҷо луқмаи бо мутобиқати амалиёти бо шумо иҷрошаванда, намоиш мешавад"
+
+#~ msgid "All values are given in %1."
+#~ msgstr "Тамоми аҳамиятҳо дар %1 дода шудаанд."
+
+#~ msgid "&Size:"
+#~ msgstr "&Андоза:"
+
+#~ msgid "&Portrait"
+#~ msgstr "&Китобӣ"
+
+#~ msgid "La&ndscape"
+#~ msgstr "&Албомӣ"
+
+#~ msgid "The page width is smaller than the left and right margins."
+#~ msgstr "Васеъии саҳифа хурд аз фосилаи байни заминаи рост ва чап мебошад."
+
+#~ msgid "Page Layout Problem"
+#~ msgstr "Хатоӣ дар хусусиятҳои саҳифа"
+
+#~ msgid "The page height is smaller than the top and bottom margins."
+#~ msgstr "Бузургии саҳифа хурд аз фосилаи байни заминаи рост ва чап мебошад."
+
+#, fuzzy
+#~ msgid "Delete slides"
+#~ msgstr "Ҳузфи матн"
+
+#, fuzzy
+#~ msgid "Delete pages"
+#~ msgstr "Ҳузфи матн"
+
+#~ msgid "Insert Object"
+#~ msgstr "Гузоштани мавзеъот"
+
+#, fuzzy
+#~ msgid "Column spacing:"
+#~ msgstr "Фосила &байни сутунҳо (%1):"
+
+#, fuzzy
+#~ msgid "Footnote/ Endnote"
+#~ msgstr "&Эзоҳи поварақ"
+
+#, fuzzy
+#~ msgid "Spacing between footnote and body:"
+#~ msgstr "Фосила байни матн ва эзоҳи поварақ (%1):"
+
+#~ msgid "Different footer for even and odd pages"
+#~ msgstr "Фарқкунӣ барои саҳифаҳои ҷуфт ва тоқ"
+
+#~ msgid "Different footer for the first page"
+#~ msgstr "Фарқ кунӣ барои саҳифаи ибтидоӣ"
+
+#, fuzzy
+#~ msgid "Spacing between footer and body:"
+#~ msgstr "Фосила байни унвони саҳифаи поёнӣ ва матн (%1):"
+
+#, fuzzy
+#~ msgid "Spacing between header and body:"
+#~ msgstr "Фосила байни унвони саҳифаи болоӣ ва матни (%1):"
+
+#~ msgid "Different header for even and odd pages"
+#~ msgstr "Фарқ кардан барои саҳифаҳои ҷуфт ва тоқ"
+
+#~ msgid "Different header for the first page"
+#~ msgstr "Фарқ кардан барои саҳифаи ибтидоӣ"
+
+#~ msgid "Page Preview"
+#~ msgstr "Пешнамоиши саҳифот"
+
+#~ msgid "Page Size && &Margins"
+#~ msgstr "Андоза &саҳифа ва лаба"
+
+#~ msgid "H&eader && Footer"
+#~ msgstr "&Унвони саҳифа"
+
+#~ msgid "Head Line"
+#~ msgstr "Унвони саҳифаи болоӣ"
+
+#~ msgid "Mid:"
+#~ msgstr "Аз миёна:"
+
+#~ msgid "Right:"
+#~ msgstr "Аз рост:"
+
+#~ msgid "Foot Line"
+#~ msgstr "Унвони саҳифаи поёнӣ"
+
+#~ msgid "You can insert several tags in the text:"
+#~ msgstr "Метавонед дар метн якчанд тег гузоред:"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;sheet&gt; The sheet name</li><li>&lt;page&gt; The current "
+#~ "page</li><li>&lt;pages&gt; The total number of pages</li><li>&lt;name&gt; "
+#~ "The filename or URL</li><li>&lt;file&gt; The filename with complete path "
+#~ "or the URL</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;sheet&gt; номи рӯйхат</li><li>&lt;page&gt; рақами саҳифа</"
+#~ "li><li>&lt;pages&gt; миқдори умумии саҳифаҳо</li><li>&lt;name&gt; номи "
+#~ "файл ё адрес</li><li>&lt;file&gt; номи пурраи файл ё адрес</li></ul></qt>"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;time&gt; The current time</li><li>&lt;date&gt; The "
+#~ "current date</li><li>&lt;author&gt; Your full name</li><li>&lt;org&gt; "
+#~ "Your organization</li><li>&lt;email&gt; Your email address</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;time&gt; вақти ҷорӣ</li><li>&lt;date&gt; санаи ҷорӣ</"
+#~ "li><li>&lt;author&gt; номи пурраи шумо</li><li>&lt;org&gt; ташкилоти "
+#~ "шумо</li><li>&lt;email&gt; адреси электронии шумо</li></ul></qt>"
+
+#~ msgid "Col&umns"
+#~ msgstr "&Сутун"
+
+#, fuzzy
+#~| msgid "Street"
+#~ msgid "Storage Test"
+#~ msgstr "Кӯча"
+
+#, fuzzy
+#~| msgid "Street"
+#~ msgid "Storage Test 2"
+#~ msgstr "Кӯча"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master page"
+#~ msgstr "Гузориши матн аз буфери иввазот"
+
+#, fuzzy
+#~ msgid "Rotate"
+#~ msgstr "Сана"
+
+#, fuzzy
+#~ msgid "Shear"
+#~ msgstr "Мавҷи Баҳр"
+
+#, fuzzy
+#~| msgid "Proportional"
+#~ msgid "KoProperty Test"
+#~ msgstr "Мутаносибона"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Waiting"
+#~ msgstr "Чопи охирин"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Vertical"
+#~ msgstr "&Амудӣ"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Horizontal"
+#~ msgstr "&Уфуқӣ"
+
+#, fuzzy
+#~| msgid "Size:"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size All"
+#~ msgstr "Андоза:"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Split Horizontal"
+#~ msgstr "&Уфуқӣ"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Pointing Hand"
+#~ msgstr "Чопи охирин"
+
+#, fuzzy
+#~| msgid "Insert Variable"
+#~ msgid "Insert image from file"
+#~ msgstr "Гузоштани тағйирёбанда"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "Select Char"
+#~ msgstr "Ишорае интихоб кунед"
+
+#, fuzzy
+#~| msgid "Minute"
+#~ msgctxt "Size Policy"
+#~ msgid "Minimum"
+#~ msgstr "Дақиқа"
+
+#, fuzzy
+#~ msgctxt "Size Policy"
+#~ msgid "Expanding"
+#~ msgstr "Зер&хаткашӣ:"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgctxt "General properties"
+#~ msgid "General"
+#~ msgstr "Умумӣ"
+
+#, fuzzy
+#~ msgid "Width"
+#~ msgstr "&Васеъӣ:"
+
+#, fuzzy
+#~ msgid "Horizontal Size Type"
+#~ msgstr "&Уфуқӣ"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgid "Vertical Size Type"
+#~ msgstr "Амудӣ баробар кардан:"
+
+#, fuzzy
+#~ msgid "Horizontal Stretch"
+#~ msgstr "&Уфуқӣ"
+
+#, fuzzy
+#~ msgid "Vertical Stretch"
+#~ msgstr "&Амудӣ"
+
+#, fuzzy
+#~| msgid "Line Distance (%1)"
+#~ msgid "Snap Distance (px)"
+#~ msgstr "Фосилаи байни сатрҳо (%1)"
+
+#, fuzzy
+#~ msgid "Enable Guide Lines Guide "
+#~ msgstr "Миқдори хатҳо"
+
+#, fuzzy
+#~ msgid "Tool Option"
+#~ msgstr "Худитмомӣ"
+
+#, fuzzy
+#~ msgid "Edit Guidelines"
+#~ msgstr "Миқдори хатҳо"
+
+#, fuzzy
+#~ msgid "Edit guidelines"
+#~ msgstr "Афзудани матни бисёрсатра"
+
+#~ msgid "Select a filter:"
+#~ msgstr "Интихоби филтр:"
+
+#, fuzzy
+#~ msgid "Fit to width"
+#~ msgstr "Ғафсии хат:"
+
+#, fuzzy
+#~ msgid "Fit to page/canvas"
+#~ msgstr "Саҳифаи баъдӣ"
+
+#, fuzzy
+#~ msgid "[No Paragraph Style]"
+#~ msgstr "Матни оддии абзас"
+
+#, fuzzy
+#~ msgid "[No Character Style]"
+#~ msgstr "Эҷоди услуб"
+
+#~ msgid "Selected Template"
+#~ msgstr "Қолиби интихобшуда"
+
+#~ msgid "Creates an empty document"
+#~ msgstr "Аз санадоти холӣ оғоз кардан"
+
+#, fuzzy
+#~ msgid "Choose Template"
+#~ msgstr "Ҳузфи қолиб"
+
+#~ msgid "No description available"
+#~ msgstr "Ғайри тасвирот"
+
+#~ msgid "&Custom..."
+#~ msgstr "&Дигар..."
+
+#, fuzzy
+#~ msgid "*.svg *.wmf *.qpic|Clipart (*.svg *.wmf *.qpic)"
+#~ msgstr "*.svg *.wmf|Намунаҳо (*.svg *.wmf)"
+
+#~ msgid "Insert Link"
+#~ msgstr "Гузоштани истинод"
+
+#~ msgid "Mail & News"
+#~ msgstr "Почта ва иттилоот"
+
+#~ msgid "Bookmark"
+#~ msgstr "Гузориш"
+
+#~ msgid "Internet address:"
+#~ msgstr "Адреси интернет:"
+
+#~ msgid "Bookmark name:"
+#~ msgstr "Номи гузориш:"
+
+#~ msgid "Target:"
+#~ msgstr "Ҳадаф:"
+
+#~ msgid "Recent file:"
+#~ msgstr "Файли охирин:"
+
+#~ msgid "No Entries"
+#~ msgstr "Холӣ"
+
+#~ msgid "File location:"
+#~ msgstr "Ҷойгиршавии файл:"
+
+#~ msgid "Tabulator &Left"
+#~ msgstr "Табулятсия &аз чап"
+
+#~ msgid "Tabulator &Center"
+#~ msgstr "Табулятсия аз &марказ"
+
+#~ msgid "Tabulator &Right"
+#~ msgstr "Табулятсия &аз рост"
+
+#~ msgid "Tabulator &Decimal Point"
+#~ msgstr "Табулятсия &бо нуқтаи даҳӣ"
+
+#, fuzzy
+#~ msgid "%1:"
+#~ msgstr "%1%"
+
+#~ msgid "Align Left"
+#~ msgstr "Худбаробаркунӣ аз лабаи чап"
+
+#, fuzzy
+#~ msgid "Horizontally Center"
+#~ msgstr "&Уфуқӣ"
+
+#~ msgid "Align Right"
+#~ msgstr "Худбаробаркунӣ аз лабаи рост"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgid "Align Top"
+#~ msgstr "Баробаркунии автоматикӣ"
+
+#, fuzzy
+#~ msgid "Default Tool"
+#~ msgstr "Ранги пешфарзӣ"
+
+#, fuzzy
+#~ msgid "Position x:"
+#~ msgstr "Ҷойгузорӣ"
+
+#, fuzzy
+#~ msgid "Position y:"
+#~ msgstr "Ҷойгузорӣ"
+
+#, fuzzy
+#~ msgid "Order:"
+#~ msgstr "&Лабаҳо"
+
+#~ msgid "Alignment"
+#~ msgstr "Баробаркунӣ"
+
+#, fuzzy
+#~ msgid "Horizontal:"
+#~ msgstr "&Уфуқӣ"
+
+#, fuzzy
+#~ msgid "Vertical:"
+#~ msgstr "&Амудӣ"
+
+#, fuzzy
+#~ msgid "Scale"
+#~ msgstr "Мавҷнок"
+
+#~ msgid "Create New Style"
+#~ msgstr "Эҷоди услуб"
+
+#~ msgid "Please specify a new style name:"
+#~ msgstr "Номи услуби навро ишора кунед:"
+
+#~ msgid "Name already exists! Please choose another name"
+#~ msgstr "Услуб бо чунин ном аллакай вуҷуд дорад! Номи дигар интихоб кунед"
+
+#~ msgid "Change Case"
+#~ msgstr "Тағйири қайдот"
+
+#~ msgid "Case"
+#~ msgstr "Қайдот"
+
+#~ msgid "&Uppercase"
+#~ msgstr "&ҚАЙДОТИ БОЛОӢ"
+
+#~ msgid "&Lowercase"
+#~ msgstr "&қайдоти поёнӣ"
+
+#~ msgid "T&itle case"
+#~ msgstr "Ҳамчун &унвон"
+
+#~ msgid "&Toggle case"
+#~ msgstr "&Гузаронидани қайдот"
+
+#~ msgid "Sentence case"
+#~ msgstr "Ҳамчун дар унвонот"
+
+#~ msgid "Convert first letter of a sentence to uppercase."
+#~ msgstr "Тағйир додани ҳуруфи аввали ҷумла ба қайдоти болоӣ."
+
+#~ msgid "Style Manager"
+#~ msgstr "Мудири услуб"
+
+#~ msgid "Next style:"
+#~ msgstr "Навъи оянда:"
+
+#~ msgid "Inherit style:"
+#~ msgstr "Услубро мерос гирифтан:"
+
+#~ msgid "<None>"
+#~ msgstr "<None>"
+
+#~ msgid "New Style Template (%1)"
+#~ msgstr "Эҷоди қолиби услуб (%1)"
+
+#, fuzzy
+#~ msgid "Highlighting"
+#~ msgstr "Зерравшании синтаксис"
+
+#, fuzzy
+#~ msgid "Layout"
+#~ msgstr "Хосиятҳои саҳифа"
+
+#~ msgid "Short locale date format"
+#~ msgstr "Андозаи кӯтоҳи локалии сана"
+
+#~ msgid "Locale date & time format"
+#~ msgstr "Андозаи локалии сана ва вақт"
+
+#~ msgid "Short locale date & time format"
+#~ msgstr "Андозаи кӯтоҳи локалии сана ва вақт"
+
+#~ msgid "Date (Fixed)"
+#~ msgstr "Сана (қайд карда шуда)"
+
+#~ msgid "File Modification"
+#~ msgstr "Тағйири файл"
+
+#~ msgid "Current Date (variable)"
+#~ msgstr "Санаи равон (тағйирёбанда)"
+
+#~ msgid "Date of Last Printing"
+#~ msgstr "Санаи чопи охирин"
+
+#~ msgid "Date of File Creation"
+#~ msgstr "Санаи эҷоди файл"
+
+#~ msgid "Date of File Modification"
+#~ msgstr "Санаи тағйири файл"
+
+#~ msgctxt "DateFormat"
+#~ msgid "Format of Date Variable"
+#~ msgstr "Андозаи санадот"
+
+#~ msgid "Time (Fixed)"
+#~ msgstr "Вақт (қайд карда шуда)"
+
+#~ msgid "Current Time (fixed)"
+#~ msgstr "Вақти равон (қайд карда шуда)"
+
+#~ msgid "Current Time (variable)"
+#~ msgstr "Вақти равон (андозаи таъғирёбанда)"
+
+#~ msgid "Time Format"
+#~ msgstr "Формати вақт"
+
+#~ msgctxt "TimeFormat"
+#~ msgid "This Dialog Allows You to Set the Format of the Time Variable"
+#~ msgstr ""
+#~ "Ин диалог иҷозати танзими формати тағйирёбандаи сана ва вақтро медиҳад"
+
+#~ msgid "Custom Variable"
+#~ msgstr "Таъғирёбанда"
+
+#~ msgid "Custom..."
+#~ msgstr "Танзимот..."
+
+#~ msgid "&Mail Merge..."
+#~ msgstr "&Якшавии почта..."
+
+#~ msgid "Page Current Num"
+#~ msgstr "Рақами саҳифа"
+
+#~ msgid "Total Page Num"
+#~ msgstr "Миқдори умумии саҳифаҳо"
+
+#~ msgid "Previous Page Number"
+#~ msgstr "Рақами саҳифаи қаблӣ"
+
+#~ msgid "Number of Pages"
+#~ msgstr "Миқдори саҳифаҳо"
+
+#~ msgid "Next Page"
+#~ msgstr "Саҳифаи баъдӣ"
+
+#~ msgid "Filename"
+#~ msgstr "Номи файл"
+
+#~ msgid "Path Filename"
+#~ msgstr "Роҳчаи пурра ва номи файл"
+
+#~ msgid "Filename Without Extension"
+#~ msgstr "Номи файл ғайри вусъатот"
+
+#~ msgid "Author Name"
+#~ msgstr "Номи муаллиф"
+
+#~ msgid "Email"
+#~ msgstr "Адреси почтаи электронӣ"
+
+#~ msgid "Telephone (work)"
+#~ msgstr "Телефон (вазифа)"
+
+#, fuzzy
+#~ msgid "Telephone (home)"
+#~ msgstr "Телефон (хона)"
+
+#~ msgid "Fax"
+#~ msgstr "Рақами факс"
+
+#~ msgid "Country"
+#~ msgstr "Мамлакат"
+
+#~ msgid "City"
+#~ msgstr "Шаҳр"
+
+#~ msgid "Abstract"
+#~ msgstr "Тасвирот"
+
+#~ msgid "Initials"
+#~ msgstr "Ҳуруфча"
+
+#~ msgid "Telephone (private)"
+#~ msgstr "Телефон (шахсӣ)"
+
+#~ msgid "Document Abstract"
+#~ msgstr "Иттилоот дар бобати санадот"
+
+#~ msgid "File Name"
+#~ msgstr "Номи Файл"
+
+#~ msgid "File Name without Extension"
+#~ msgstr "Номи файл ғайри вусъатот"
+
+#~ msgid "Directory && File Name"
+#~ msgstr "Номи каталог ва номи файл"
+
+#~ msgid "Link"
+#~ msgstr "Истинодот"
+
+#~ msgid "Link..."
+#~ msgstr "Истинодот..."
+
+#~ msgid "Note"
+#~ msgstr "Эзоҳ"
+
+#~ msgid "Note..."
+#~ msgstr "Эзоҳ..."
+
+#~ msgid "<No title>"
+#~ msgstr "<No title>"
+
+#~ msgid "Number of Words"
+#~ msgstr "Миӯдори калимаҳо"
+
+#~ msgid "Number of Sentences"
+#~ msgstr "Миқдори ҷумлаҳо"
+
+#~ msgid "Number of Lines"
+#~ msgstr "Миқдори хатҳо"
+
+#~ msgid "Number of Characters"
+#~ msgstr "Миқдори ҳарфҳо"
+
+#, fuzzy
+#~ msgid "Number of Non-Whitespace Characters"
+#~ msgstr "Миқдори саҳифаҳо"
+
+#, fuzzy
+#~ msgid "Number of Syllables"
+#~ msgstr "Миқдори саҳифаҳо"
+
+#~ msgid "Number of Frames"
+#~ msgstr "Миқдори ҷадвалҳо"
+
+#~ msgid "Number of Embedded Objects"
+#~ msgstr "Миқдори объектҳои вурудшуда"
+
+#~ msgid "Number of Tables"
+#~ msgstr "Миқдори ҷадвалҳо"
+
+#~ msgid "Autocorrection"
+#~ msgstr "Худислоҳот"
+
+#~ msgid "Simple Autocorrection"
+#~ msgstr "Худислоҳоти оддӣ"
+
+#~ msgid ""
+#~ "Convert &first letter of a sentence automatically to uppercase\n"
+#~ "(e.g. \"my house. in this town\" to \"my house. In this town\")"
+#~ msgstr ""
+#~ "Автоматикӣ тағйир додани ҳуруфи ибтидоии калимаи аввали ҷумла дар қайдоти "
+#~ "&болоӣ (мисол, \"охир. ин Озмоишот \" ба \"охир. Ин озмоишот\")"
+
+#~ msgid ""
+#~ "Detect when a new sentence is started and always ensure that the first "
+#~ "character is an uppercase character."
+#~ msgstr ""
+#~ "Мавриди вуруди аввал, ҷумлаи нав озмоида мешавад ва доим ҳуруфи аввали "
+#~ "ҷумларо калон мекунад."
+
+#~ msgid ""
+#~ "Convert &two uppercase characters to one uppercase and one lowercase "
+#~ "character\n"
+#~ " (e.g. PErfect to Perfect)"
+#~ msgstr ""
+#~ "Тағйир додани &ҳуруфҳои дутага ба регистри дутага.\n"
+#~ " (мисол, САлом ба Салом)"
+
+#~ msgid ""
+#~ "All words are checked for the common mistake of holding the shift key "
+#~ "down a bit too long. If some words must have two uppercase characters, "
+#~ "then those exceptions should be added in the 'Exceptions' tab."
+#~ msgstr ""
+#~ "Тамоми калимаҳо дар хатогиҳои зуд-зуд во мехӯрда бо вуруди якчанд "
+#~ "ҳуруфҳои калон мавриди пахши кнопкаи Shift, озмоида мешаванд. Агар якхел "
+#~ "калимаҳо аз якчанд ҳуруфҳои калон иборат бошанд (мисол, ВКД), онгоҳ онҳо "
+#~ "бояд дар рӯйхати истисно ишора мешаванд."
+
+#~ msgid "Autoformat &URLs"
+#~ msgstr "Худтағйирдиҳии &адресҳои интернет"
+
+#~ msgid ""
+#~ "Detect when a URL (Uniform Resource Locator) is typed and provide "
+#~ "formatting that matches the way an Internet browser would show a URL."
+#~ msgstr ""
+#~ "Муайян мекунад, ки калимаи воридшуда адреси интернетӣ (URL) мебошад ва "
+#~ "онро ҳамчуне, ки браузер ин истинодро намоиш медиҳад ҳамин тавр онро ба "
+#~ "андоза медарорад."
+
+#~ msgid "&Suppress double spaces"
+#~ msgstr "Ҳузфи &фосилотҳои дутага"
+
+#~ msgid ""
+#~ "Make sure that more than one space cannot be typed, as this is a common "
+#~ "mistake which is quite hard to find in formatted text."
+#~ msgstr ""
+#~ "Масъалаи мутассили кор бо матнро, ки аз файли матнӣ бо форматонӣ ворид "
+#~ "мешавад, вақте барои баробаркунии матн аз рӯи васеъӣ якчанд фосилот ишора "
+#~ "мешавад, ислоҳ мекунад."
+
+#~ msgid "R&emove spaces at the beginning and end of paragraphs"
+#~ msgstr "&Ҳузфи фосилотҳои аввал ва охир"
+
+#~ msgid ""
+#~ "Keep correct formatting and indenting of sentences by automatically "
+#~ "removing spaces typed at the beginning and end of a paragraph."
+#~ msgstr ""
+#~ "Форматонии саҳеҳӣ ва ақибгардиҳои абзасро бо ҳузфи фосилотҳои аввала ва "
+#~ "охираи дар абзас бударо муқаррар мекунад."
+
+#~ msgid "Automatically do &bold and underline formatting"
+#~ msgstr "Форматонӣ бо &нимағафс ва зерхаткашӣ"
+
+#~ msgid ""
+#~ "When you use _underline_ or *bold*, the text between the underscores or "
+#~ "asterisks will be converted to underlined or bold text."
+#~ msgstr ""
+#~ "Вақте, ки шумо барои матни_зерхаткашида_ ё *нимағафс* аломатҳои муайян "
+#~ "ҷудо кунед, ин аломатҳо гирифта мешаванд ва матн то ҳадди мувофиқ "
+#~ "форматонида мешавад."
+
+#~ msgid "Most standard fraction notations will be converted when available"
+#~ msgstr ""
+#~ "Касрҳои зуд-зуд истифода шаванда ба аломатҳои касрӣ тағйир ёфта хоҳанд шуд"
+
+#~ msgid "Use &autonumbering for numbered paragraphs"
+#~ msgstr "Ба &рӯйхатҳои рақамӣ тағйир додан"
+
+#~ msgid ""
+#~ "When typing '1)' or similar in front of a paragraph, automatically "
+#~ "convert the paragraph to use that numbering style. This has the advantage "
+#~ "that further paragraphs will also be numbered and the spacing is done "
+#~ "correctly."
+#~ msgstr ""
+#~ "Вақте, ки абзасро аз рақам оғоз кунед - мисол, '1)', ин абзас ба рӯйхати "
+#~ "рақамӣ тағйир дода мешавад. Абзасҳои паси он вурудшаванда, аллакай "
+#~ "ҷузъҳои рӯйхати рақамӣ хоҳанд шуд."
+
+#~ msgid "Rep&lace 1st... with 1^st..."
+#~ msgstr "Ив&вази 1st... ба 1^st..."
+
+#~ msgid "Capitalize name of days"
+#~ msgstr "Оғози рӯзҳои ҳафта бо ҳуруфи калон"
+
+#~ msgid "Use l&ist-formatting for bulleted paragraphs"
+#~ msgstr "Тағйирдиҳӣ ба &рӯйхати маркерӣ"
+
+#~ msgid ""
+#~ "When typing '*' or '-' in front of a paragraph, automatically convert the "
+#~ "paragraph to use that list-style. Using a list-style formatting means "
+#~ "that a correct bullet is used to draw the list."
+#~ msgstr ""
+#~ "Вақте, ки шумо абзасро аз аломатҳои '*' ё '-' оғоз кунед, ин абзас ба "
+#~ "рӯйхати маркерӣ бо маркерҳо, ба аломатҳои мутобиқ тағйир дода мешавад. "
+#~ "Абзасҳои паси он вурудшаванда, аллакай ҷузъҳои рӯйхати маркерӣ хоҳанд шуд."
+
+#~ msgid "Custom Quotes"
+#~ msgstr "Танзими нохунакҳо"
+
+#~ msgid "Replace &double quotes with typographical quotes"
+#~ msgstr "Иввази &дунохунак ба нохунаки матбаавӣ"
+
+#~ msgid "Replace &single quotes with typographical quotes"
+#~ msgstr "Иввази &нохунаки яктага ба нохунаки матбаавӣ"
+
+#~ msgid "Advanced Autocorrection"
+#~ msgstr "Автотасҳеҳоти васеъ"
+
+#~ msgid "All Languages"
+#~ msgstr "Тамоми забонҳо"
+
+#~ msgid "Replacements and exceptions for language:"
+#~ msgstr "Иввазот ва истисно барои забон:"
+
+#~ msgid "Enable word replacement"
+#~ msgstr "Фаъол сохтани автотасҳеҳот"
+
+#~ msgid "Replace text with format"
+#~ msgstr "Иввази матн бо формат"
+
+#, fuzzy
+#~ msgid "Insert a special character..."
+#~ msgstr "Гузоштани аломати махсус"
+
+#~ msgid "Find"
+#~ msgstr "Ҷустуҷӯӣ"
+
+#~ msgid "Change Format..."
+#~ msgstr "Тағйири формат..."
+
+#~ msgid "Clear Format"
+#~ msgstr "Тоза кардани формат"
+
+#~ msgid "Do not treat as the end of a sentence:"
+#~ msgstr "Аз охири ҷумла қабул накардан:"
+
+#~ msgid "Accept two uppercase letters in:"
+#~ msgstr "Рухсати қайд кардани ҳуруфҳои дутага дар қайдоти болоӣ:"
+
+#~ msgid "An area is empty"
+#~ msgstr "Замина холӣ аст"
+
+#~ msgid "Find string is the same as replace string!"
+#~ msgstr "Сатри ёфтшуда чун сатри иввазот аст!"
+
+#~ msgid "Change Variable Subtype"
+#~ msgstr "Табдил додани зернамуди тағйирёбанда "
+
+#~ msgid "Change Variable Format"
+#~ msgstr "Табдил додани андозаи тағйирёбанда"
+
+#~ msgid "Entry Name"
+#~ msgstr "Номи ҷузъ"
+
+#~ msgid "Variable Value Editor"
+#~ msgstr "Таҳриргари тағйирёбанда"
+
+#~ msgid "Add Variable"
+#~ msgstr "Афзудани тағйирёбанда"
+
+#~ msgid "Edit Variable"
+#~ msgstr "Табдил додани тағйирёбанда"
+
+#~ msgid "Value:"
+#~ msgstr "Аҳамият:"
+
+#, fuzzy
+#~ msgid "Enter"
+#~ msgstr "Аз &марказ"
+
+#~ msgid "Add Completion Entry"
+#~ msgstr "Афзудани итмомот"
+
+#~ msgid "Enter entry:"
+#~ msgstr "Калима/ибора:"
+
+#~ msgid ""
+#~ "Completion list saved.\n"
+#~ "It will be used for all documents from now on."
+#~ msgstr ""
+#~ "Рӯйхати калимаҳои итмомӣ захира шудааст.\n"
+#~ "Акнун он метавонад барои тамоми санадотҳо истифода шавад."
+
+#~ msgid "Completion List Saved"
+#~ msgstr "Рӯйхати калимаҳои итмомӣ захира шудааст"
+
+#~ msgid "Delete Text"
+#~ msgstr "Ҳузфи матн"
+
+#~ msgid "Insert Text"
+#~ msgstr "Гузориши матн"
+
+#~ msgid "Format Text"
+#~ msgstr "Ба андозадарории матн"
+
+#, fuzzy
+#~ msgid "Change Paragraph Background Color"
+#~ msgstr "&Ранги Замина Дигаргун Кунед..."
+
+#~ msgid "Change Borders"
+#~ msgstr "Тағйири лабаҳо"
+
+#, fuzzy
+#~ msgid "Change Join Borders"
+#~ msgstr "Тағйири лабаҳо"
+
+#~ msgid "Change Tabulator"
+#~ msgstr "Тағйири табулятсия"
+
+#~ msgid "Remove Selected Text"
+#~ msgstr "Ҳузфи матни ҷудошуда"
+
+#~ msgid "Day"
+#~ msgstr "Рӯз"
+
+#~ msgid "Day (2 digits)"
+#~ msgstr "Рӯз (2 аломат)"
+
+#~ msgid "Day (abbreviated name)"
+#~ msgstr "Номи кӯтоҳи рӯзи ҳафта"
+
+#~ msgid "Day (long name)"
+#~ msgstr "Номи пурраи рӯзи ҳафта"
+
+#~ msgid "Month"
+#~ msgstr "Моҳ"
+
+#~ msgid "Month (2 digits)"
+#~ msgstr "Моҳ (2 аломат)"
+
+#~ msgid "Month (abbreviated name)"
+#~ msgstr "Номи кӯтоҳи моҳ"
+
+#~ msgid "Month (long name)"
+#~ msgstr "Номи пурраи моҳ"
+
+#~ msgid "Month (possessive abbreviated name)"
+#~ msgstr "Номи кӯтоҳи моҳ дар падежи ҷозибӣ"
+
+#~ msgid "Month (possessive long name)"
+#~ msgstr "Номи пурраи моҳ дар падежи ҷозибӣ"
+
+#~ msgid "Year (2 digits)"
+#~ msgstr "Сол (2 аломат)"
+
+#~ msgid "Year (4 digits)"
+#~ msgstr "Сол (4 аломат)"
+
+#~ msgid "Hour"
+#~ msgstr "Соат"
+
+#~ msgid "Hour (2 digits)"
+#~ msgstr "Соат (2 аломат)"
+
+#~ msgid "Minute (2 digits)"
+#~ msgstr "Дақиқа (2 аломат)"
+
+#~ msgid "Second"
+#~ msgstr "Сония"
+
+#~ msgid "Second (2 digits)"
+#~ msgstr "Сония (2 аломат)"
+
+#~ msgid "Millisecond (3 digits)"
+#~ msgstr "Милисония (2 аломат)"
+
+#~ msgid "am/pm"
+#~ msgstr "am/pm"
+
+#~ msgid "AM/PM"
+#~ msgstr "AM/PM"
+
+#~ msgid "Correct in Days"
+#~ msgstr "Саҳеҳонии санадот"
+
+#~ msgid "Remove Word"
+#~ msgstr "Ҳузфи калимот"
+
+#~ msgid "Replace Word"
+#~ msgstr "Иввази калима"
+
+#~ msgid "%1 is not a valid link."
+#~ msgstr "%1 - истиноди нодуруст."
+
+#~ msgid "Insert Soft Hyphen"
+#~ msgstr "Гузоштани ҳаракатонии равон"
+
+#~ msgid "Insert Line Break"
+#~ msgstr "Гузоштани роғи сатр"
+
+#~ msgid "Insert Non-Breaking Space"
+#~ msgstr "Гузоштани фосилаи зич"
+
+#, fuzzy
+#~ msgid "Insert Non-Breaking Hyphen"
+#~ msgstr "Гузоштани фосилаи зич"
+
+#~ msgid "Insert Special Char"
+#~ msgstr "Гузоштани аломати махсус"
+
+#~ msgid "Remove Link"
+#~ msgstr "Ҳузфи истинод"
+
+#~ msgid "Correct in Minutes"
+#~ msgstr "Коррексияи дақиқаҳо"
+
+#~ msgid "Edit Comment"
+#~ msgstr "Тағйири эзоҳ"
+
+#~ msgid "Add Author Name"
+#~ msgstr "Афзудани номи муаллиф"
+
+#~ msgid "Autocorrect Word"
+#~ msgstr "Худислокунии калима"
+
+#~ msgid "Autocorrect Word with Format"
+#~ msgstr "Худислоҳкунии калима бо тағйирдиҳӣ"
+
+#~ msgid "Typographic Quote"
+#~ msgstr "Нохунакҳои матбаагӣ"
+
+#~ msgid "Autocorrect (capitalize first letter)"
+#~ msgstr "Ҳуруфи якӯми ҷумла дар қайдоти болоӣ ҷойгир аст"
+
+#, fuzzy
+#~ msgid "Autocorrect"
+#~ msgstr "Худислоҳот"
+
+#, fuzzy
+#~ msgid "Autocorrect for Fraction"
+#~ msgstr "Худислоҳот"
+
+#~ msgid "Autocorrection: Change Format"
+#~ msgstr "Автоислоҳот: Тағйири андоза"
+
+#~ msgid "Autocorrect (use bullet style)"
+#~ msgstr "Рӯйхати маркерӣ"
+
+#~ msgid "Autocorrect (use number style)"
+#~ msgstr "Рӯйхати рақамӣ"
+
+#~ msgid "Autocorrect (remove start and end line space)"
+#~ msgstr "Ҳузфи фосилотҳои ибтидоӣ ва хотимавӣ"
+
+#~ msgid "Capitalize Name of Days"
+#~ msgstr "Рӯзҳои ҳафта бо ҳуруфи калон"
+
+#~ msgid "Double"
+#~ msgstr "Дутага"
+
+#~ msgid "Simple Bold"
+#~ msgstr "Ғафс"
+
+#~ msgid "Wave"
+#~ msgstr "Мавҷнок"
+
+#~ msgid "Uppercase"
+#~ msgstr "РЕГИСТРИ БОЛОӢ"
+
+#~ msgid "Lowercase"
+#~ msgstr "регистри поёнӣ"
+
+#~ msgid "Small Caps"
+#~ msgstr "ҳуруфҳои ибтидоии хурд"
+
+#~ msgid "Show Formatting Options"
+#~ msgstr "Намоиши аломатҳои ниҳонӣ"
+
+#~ msgid "Formatting Options"
+#~ msgstr "Танзимоти форматонӣ"
+
+#~ msgid "Replace Text"
+#~ msgstr "Ивваз кардани матн"
+
+#~ msgid "Reset"
+#~ msgstr "Партофтан"
+
+#~ msgid "Bold:"
+#~ msgstr "Нимағафс:"
+
+#~ msgid "Italic:"
+#~ msgstr "Курсивӣ:"
+
+#~ msgid "Word by word:"
+#~ msgstr "Калима ба калима:"
+
+#~ msgid "Underline:"
+#~ msgstr "Аз таг хат кашидашуда:"
+
+#~ msgid "Capitalization:"
+#~ msgstr "Регистр:"
+
+#~ msgid "Subscript"
+#~ msgstr "Зерсатрӣ"
+
+#~ msgid "Superscript"
+#~ msgstr "Болосатрӣ"
+
+#~ msgid "Suffi&x text:"
+#~ msgstr "&Суффикс:"
+
+#~ msgid "&Start at:"
+#~ msgstr "&Оғоз кардан аз:"
+
+#~ msgid "Custo&m character:"
+#~ msgstr "&Аломати дигар:"
+
+#~ msgid "&Depth:"
+#~ msgstr "&Қаър:"
+
+#~ msgid "&Restart numbering at this paragraph"
+#~ msgstr "&Аз нав ва аз ин абзас оғоз намудани рақамгузорӣ"
+
+#~ msgid "Arabic Numbers"
+#~ msgstr "Рақамҳои арабӣ"
+
+#~ msgid "Disc Bullet"
+#~ msgstr "Маркери дискӣ"
+
+#~ msgid "Custom Bullet"
+#~ msgstr "Дигар маркер"
+
+#, fuzzy
+#~ msgid "Frame width: %1 %2"
+#~ msgstr "Васеъии чорчӯба: %1"
+
+#~ msgid "Indent"
+#~ msgstr "Фосила"
+
+#, fuzzy
+#~ msgid "&Right:"
+#~ msgstr "Аз рост:"
+
+#, fuzzy
+#~ msgid "&First line:"
+#~ msgstr "&Сатри аввал (%1):"
+
+#~ msgctxt "Line spacing value"
+#~ msgid "Single"
+#~ msgstr "Яктага"
+
+#~ msgctxt "Line spacing value"
+#~ msgid "1.5 Lines"
+#~ msgstr "Якунимтаӣ"
+
+#~ msgctxt "Line spacing value"
+#~ msgid "Double"
+#~ msgstr "Дутагӣ"
+
+#~ msgid "At Least (%1)"
+#~ msgstr "Чун минимум (%1)"
+
+#~ msgid "Fixed (%1)"
+#~ msgstr "Аниқ (%1)"
+
+#~ msgid "Para&graph Space"
+#~ msgstr "&Фосила байни абзасҳо"
+
+#, fuzzy
+#~ msgid "Before:"
+#~ msgstr "Пеш аз (%1):"
+
+#~ msgid "Indent && S&pacing"
+#~ msgstr "Фосилаи аввали сатрӣ ва &байни сатрӣ"
+
+#~ msgid "&Left"
+#~ msgstr "Аз &лабаи чап"
+
+#~ msgid "&Right"
+#~ msgstr "Аз &лабаи рост"
+
+#~ msgid "&Justify"
+#~ msgstr "&Васеъӣ"
+
+#~ msgid "Behavior at &End of Frame/Page"
+#~ msgstr "&Гузаронидани матн ба охири чорчӯба/саҳифа"
+
+#~ msgid "&Keep lines together"
+#~ msgstr "&Аз ҳамдигар ҷудо накардани сатрҳо"
+
+#~ msgid "Insert break before paragraph"
+#~ msgstr "Гузоштани роғ байни абзасҳо"
+
+#~ msgid "General &Layout"
+#~ msgstr "Нақшаи &умумӣ"
+
+#, fuzzy
+#~ msgid "D&ecorations"
+#~ msgstr "&Самт:"
+
+#~ msgid "Numbering"
+#~ msgstr "Рақамгузорӣ"
+
+#~ msgid "&None"
+#~ msgstr "&Нест"
+
+#~ msgid "&List"
+#~ msgstr "&Рӯйхат"
+
+#~ msgid "Chapt&er"
+#~ msgstr "&Унвон"
+
+#~ msgid "Normal paragraph text"
+#~ msgstr "Матни оддии абзас"
+
+#~ msgid "B&ullets/Numbers"
+#~ msgstr "Рӯй&хатҳо ва рақамот"
+
+#~ msgid "Po&sition"
+#~ msgstr "Ҳо&лат"
+
+#~ msgid "On followin&g character: "
+#~ msgstr "Дар аломати &оянда: "
+
+#~ msgid "Tab Leader"
+#~ msgstr "Пуркунанда то ҳолати табулятсия"
+
+#~ msgid "The space a tab uses can be filled with a pattern."
+#~ msgstr "Қолиби пуркунанда то ҳолати табулятсия."
+
+#~ msgid "&Filling:"
+#~ msgstr "&Пуркунанда:"
+
+#~ msgid "&New"
+#~ msgstr "&Эҷод кардан"
+
+#~ msgid "&Tabulators"
+#~ msgstr "Мавқеъотҳои &табулятсия"
+
+#~ msgid "Import Styles"
+#~ msgstr "Вориди услубҳо"
+
+#, fuzzy
+#~| msgid "Alignment"
+#~ msgid "Aligment"
+#~ msgstr "Баробаркунӣ"
+
+#, fuzzy
+#~ msgid "Strikethrough"
+#~ msgstr "&Хаткашӣ:"
+
+#, fuzzy
+#~ msgid "Underlining:"
+#~ msgstr "Зер&хаткашӣ:"
+
+#~ msgid "Colors"
+#~ msgstr "Рангҳо"
+
+#, fuzzy
+#~ msgid "Automatic hyphenation"
+#~ msgstr "Авто&гузарониш"
+
+#~ msgid "Didot (dd)"
+#~ msgstr "Дидот (dd)"
+
+#~ msgid "Default Color"
+#~ msgstr "Ранги пешфарзӣ"
+
+#~ msgid "More Colors..."
+#~ msgstr "Рангҳои иловагӣ..."
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Orange"
+#~ msgstr "Норинҷӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Magenta"
+#~ msgstr "Рӯяноб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Blue"
+#~ msgstr "Кабуд"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Cyan"
+#~ msgstr "Хокистаранг"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Green"
+#~ msgstr "Сабз"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Yellow"
+#~ msgstr "Зард"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkRed"
+#~ msgstr "Сурхи сиёҳтоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkOrange"
+#~ msgstr "Норинҷи сиёҳтоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkMagenta"
+#~ msgstr "Рӯяноби сиёҳтоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkBlue"
+#~ msgstr "Кабуди сиёҳтоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkCyan"
+#~ msgstr "Хокистарии сиёҳтоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkGreen"
+#~ msgstr "Сабзи сиёҳтоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkYellow"
+#~ msgstr "Зарди сиёҳтоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "White"
+#~ msgstr "Сафед"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 90%"
+#~ msgstr "Хокистарии 90%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 80%"
+#~ msgstr "Хокистарии 80%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 70%"
+#~ msgstr "Хокистарии 70%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 60%"
+#~ msgstr "Хокистарии 60%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 50%"
+#~ msgstr "Хокистарии 50%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 40%"
+#~ msgstr "Хокистарии 40%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 30%"
+#~ msgstr "Хокистарии 30%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 20%"
+#~ msgstr "Хокистарии 20%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 10%"
+#~ msgstr "Хокистарии 10%"
+
+#~ msgctxt "color"
+#~ msgid "Black"
+#~ msgstr "Сиёҳ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Ivory"
+#~ msgstr "Устухони филӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Snow"
+#~ msgstr "Барфӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MintCream"
+#~ msgstr "Зардтоби пудинагӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "FloralWhite"
+#~ msgstr "Сафеди садбаргӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightYellow"
+#~ msgstr "Зарди равшан"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "GhostWhite"
+#~ msgstr "Сафеди паридаранг"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Honeydew"
+#~ msgstr "Шабнами асалӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Seashell"
+#~ msgstr "Садафи баҳр"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "AliceBlue"
+#~ msgstr "Кабуди хира"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Cornsilk"
+#~ msgstr "Абрешимӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LavenderBlush"
+#~ msgstr "Кабуди бо сурх омехта"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "OldLace"
+#~ msgstr "Тӯри кӯҳна"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "WhiteSmoke"
+#~ msgstr "Дудмонанд"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LemonChiffon"
+#~ msgstr "Лимугӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightCyan"
+#~ msgstr "Хокистарии равшан"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightGoldenrodYellow"
+#~ msgstr "Зарди равшани тиллоранг"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Beige"
+#~ msgstr "Қаҳваранг"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PapayaWhip"
+#~ msgstr "Харбузавӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "BlanchedAlmond"
+#~ msgstr "Зардтоби равшан"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "AntiqueWhite"
+#~ msgstr "Сафеди хушмонанд"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MistyRose"
+#~ msgstr "Гулобии паридаранг"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Bisque"
+#~ msgstr "Бисквитӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Moccasin"
+#~ msgstr "Зарди пасти гулобитоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "NavajoWhite"
+#~ msgstr "Сафеди холдор"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PeachPuff"
+#~ msgstr "Шафтолуранг"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PaleGoldenrod"
+#~ msgstr "Сурхи-зарди паридаранг"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Wheat"
+#~ msgstr "Гандумӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PaleTurquoise"
+#~ msgstr "Фирӯзагии паридаранг"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Pink"
+#~ msgstr "Гулобӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightGoldenrod"
+#~ msgstr "Равшани хокистарӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightGray"
+#~ msgstr "Хокистарии равшан"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightPink"
+#~ msgstr "Гулобии равшан"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PowderBlue"
+#~ msgstr "Кабуди норавшан"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Aquamarine"
+#~ msgstr "Аквамаринӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Thistle"
+#~ msgstr "Бунафши паст"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightBlue"
+#~ msgstr "Кабуди равшан"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PaleGreen"
+#~ msgstr "Сабзи паридаранг"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gold"
+#~ msgstr "Тиллоранг"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "GreenYellow"
+#~ msgstr "Зарди сабзмонанд"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSteelBlue"
+#~ msgstr "Пӯлодини равшан"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightGreen"
+#~ msgstr "Сабзи равшан"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Plum"
+#~ msgstr "Ранги олугин"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray"
+#~ msgstr "Хокистаранг"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "BurlyWood"
+#~ msgstr "Дарахти кӯҳнавӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSkyBlue"
+#~ msgstr "Кабуди осмонрангии равшан"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSalmon"
+#~ msgstr "Гулоби норинҷии равшан"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SkyBlue"
+#~ msgstr "Кабуди осмонӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Tan"
+#~ msgstr "Қаҳваранги зардмонанд"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Violet"
+#~ msgstr "Бунафш"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SandyBrown"
+#~ msgstr "Қаҳвагии олачипор"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkSalmon"
+#~ msgstr "Гулоби норинҷи сиёҳтоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkKhaki"
+#~ msgstr "Хокии Сиёҳтоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkGray"
+#~ msgstr "Хокистарии Сиёҳтоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LawnGreen"
+#~ msgstr "Сабзи Гиёҳ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "HotPink"
+#~ msgstr "Гулдори Баланд"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Salmon"
+#~ msgstr "Норанҷӣ-гулдор"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Turquoise"
+#~ msgstr "Фирӯзагӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkSeaGreen"
+#~ msgstr "Сабзи Сиёҳтоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Orchid"
+#~ msgstr "Саҳлаб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumAquamarine"
+#~ msgstr "Аквамарини Сершуда"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Coral"
+#~ msgstr "Марҷонӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "YellowGreen"
+#~ msgstr "Зарди Сабз"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Goldenrod"
+#~ msgstr "Сурхи-зард"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumTurquoise"
+#~ msgstr "Фирӯзагии Сершуда"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "RosyBrown"
+#~ msgstr "Гулдори-Қаҳвагӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PaleVioletRed"
+#~ msgstr "Бунафши-Сурхи Паридаранг"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumSpringGreen"
+#~ msgstr "Сабзи Баҳори Сершуда"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Tomato"
+#~ msgstr "Помидорӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SpringGreen"
+#~ msgstr "Сабзи Баҳор"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Peru"
+#~ msgstr "Зайтунии-қаҳвагӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "CornflowerBlue"
+#~ msgstr "Кабуди Кушод"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSlateBlue"
+#~ msgstr "Кабуди Кушод"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumPurple"
+#~ msgstr "Арғувони Сершуда"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumOrchid"
+#~ msgstr "Саҳлаби Сершуда"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "CadetBlue"
+#~ msgstr "Хокистарии-Кабуд"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkTurquoise"
+#~ msgstr "Фирӯзагии Сиёҳтоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DeepSkyBlue"
+#~ msgstr "Осмони-Кабуди Сиёҳтоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSlateGray"
+#~ msgstr "Хокистарии Кушод"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkGoldenrod"
+#~ msgstr "Сурхи-зарди Сиёҳтоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumSlateBlue"
+#~ msgstr "Кабуди Сершуда"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "IndianRed"
+#~ msgstr "Нилӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Chocolate"
+#~ msgstr "Шоколадӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumSeaGreen"
+#~ msgstr "Сабзи Сершуда"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LimeGreen"
+#~ msgstr "Сабзи-оҳакӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSeaGreen"
+#~ msgstr "Мавҷи Баҳри Кушод"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SlateGray"
+#~ msgstr "Кабуди-Хокистарӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "OrangeRed"
+#~ msgstr "Сурхи-норанҷӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DeepPink"
+#~ msgstr "Гулдори Сиёҳтоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SteelBlue"
+#~ msgstr "Кабуди-пӯлодранг"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SlateBlue"
+#~ msgstr "Хокистарии-Кабуд"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "RoyalBlue"
+#~ msgstr "Кабуди Шоҳӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "VioletRed"
+#~ msgstr "Сурхи-бунафш"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkOrchid"
+#~ msgstr "Саҳлаби Сиёҳтоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DimGray"
+#~ msgstr "Хокистарии Тира"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "BlueViolet"
+#~ msgstr "Бунафши Кушод"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Sienna"
+#~ msgstr "Аҳмарӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumVioletRed"
+#~ msgstr "Сурхи-бунафши Мӯътадил"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Maroon"
+#~ msgstr "Қирмизии Сиёҳтоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SeaGreen"
+#~ msgstr "Мавҷи Баҳр"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkOliveGreen"
+#~ msgstr "Зайтунии Сиёҳтоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "ForestGreen"
+#~ msgstr "Сабзи Ҷангалӣ"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SaddleBrown"
+#~ msgstr "Чарми Кӯҳна"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkViolet"
+#~ msgstr "Бунафши Сиёҳтоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "FireBrick"
+#~ msgstr "Хишти Оташбардор"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkSlateBlue"
+#~ msgstr "Хокистарии-кабуди Сиёҳтоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkSlateGray"
+#~ msgstr "Кабуди-хокистари Сиёҳтоб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MidnightBlue"
+#~ msgstr "Кабуди Шаб"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumBlue"
+#~ msgstr "Кабуди Чуқур"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Navy"
+#~ msgstr "Кабуди Сиёҳтоб"

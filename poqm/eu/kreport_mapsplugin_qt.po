@@ -1,0 +1,40 @@
+# Translation of kreport_mapsplugin.po to Euskara/Basque (eu).
+# Copyright (C) 2019, This file is copyright:
+# This file is distributed under the same license as the original file.
+# KDE euskaratzeko proiektuaren arduraduna <xalba@euskalnet.net>
+#
+# Translators:
+# Iñigo Salvador Azurmendi <xalba@euskalnet.net>, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2019-11-12 22:06+0100\n"
+"Last-Translator: Iñigo Salvador Azurmendi <xalba@euskalnet.net>\n"
+"Language-Team: Basque <kde-i18n-eu@kde.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 19.08.3\n"
+
+#: KReportItemMaps.cpp:61
+msgctxt "KReportItemMaps|"
+msgid "Latitude"
+msgstr "Latitudea"
+
+#: KReportItemMaps.cpp:67
+msgctxt "KReportItemMaps|"
+msgid "Longitude"
+msgstr "Longitudea"
+
+#: KReportItemMaps.cpp:73
+msgctxt "KReportItemMaps|"
+msgid "Zoom"
+msgstr "Zoom"
+
+#: KReportItemMaps.cpp:82
+msgctxt "KReportItemMaps|"
+msgid "Theme"
+msgstr "Gaia"

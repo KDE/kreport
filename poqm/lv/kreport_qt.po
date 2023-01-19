@@ -1,0 +1,5659 @@
+# translation of koffice.po to Lavtian
+# Copyright (C) 2006, 2008 Free Software Foundation, Inc.
+#
+# Maris Nartiss <maris.kde@gmail.com>, 2006.
+# Viesturs Zarins <viesturs.zarins@mii.lu.lv>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: koffice\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2008-12-27 19:10+0200\n"
+"Last-Translator: Viesturs Zarins <viesturs.zarins@mii.lu.lv>\n"
+"Language-Team: Lavtian <locale@laka.lv>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+#, fuzzy
+#| msgid "Could not create the file for saving"
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "Neizdevās izveidot failu saglabāšanai"
+
+#: common/KReportDesign.cpp:159
+#, fuzzy
+#| msgid "Error in embedded document"
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Kļūda iegultajā dokumentā"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Nosaukums:"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Object"
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Objekts"
+
+#: common/KReportItemBase.cpp:78
+#, fuzzy
+#| msgid "Position"
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Amats"
+
+#: common/KReportItemBase.cpp:79
+#, fuzzy
+#| msgid "Size:"
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Izmērs:"
+
+#: common/KReportItemBase.cpp:112
+#, fuzzy
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Dzēst tekstu"
+
+#: common/KReportItemLine.cpp:80
+#, fuzzy
+#| msgid "&Set Position..."
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "Uz&stādīt novietojumu..."
+
+#: common/KReportItemLine.cpp:81
+#, fuzzy
+#| msgid "Position"
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Amats"
+
+#: common/KReportItemLine.cpp:83
+#, fuzzy
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "Viegli Zaļa"
+
+#: common/KReportItemLine.cpp:85
+#, fuzzy
+#| msgid "Color:"
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Krāsa:"
+
+#: common/KReportItemLine.cpp:86
+#, fuzzy
+#| msgid "Change Borders"
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Mainīt apmales"
+
+#: common/KReportSectionData.cpp:164
+#, fuzzy
+#| msgid "Completion"
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Pabeigšana"
+
+#: common/KReportSectionData.cpp:166
+#, fuzzy
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "&Augstums:"
+
+#: common/KReportSectionData.cpp:170
+#, fuzzy
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Sekunde"
+
+#: common/KReportUnit.cpp:136
+#, fuzzy
+#| msgid "Add Group"
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Pievienot grupu"
+
+#: common/KReportUnit.cpp:138
+#, fuzzy
+#| msgid "Millimeters (mm)"
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "Millimetri (mm)"
+
+#: common/KReportUnit.cpp:140
+#, fuzzy
+#| msgid "Centimeters (cm)"
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "Centimetri (cm)"
+
+#: common/KReportUnit.cpp:142
+#, fuzzy
+#| msgid "Decimeters (dm)"
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "Decimetri (dm)"
+
+#: common/KReportUnit.cpp:144
+#, fuzzy
+#| msgid "Inches (in)"
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "Collas (in)"
+
+#: common/KReportUnit.cpp:146
+#, fuzzy
+#| msgid "Pica (pi)"
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "Pica (pi)"
+
+#: common/KReportUnit.cpp:148
+#, fuzzy
+#| msgid "Cicero (cc)"
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "Cicero (cc)"
+
+#: common/KReportUnit.cpp:150
+#, fuzzy
+#| msgid "Points (pt)"
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "Punkti (pt)"
+
+#: common/KReportUnit.cpp:152
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "Punkti (pt)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Colors"
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Krāsas"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:80
+#, fuzzy
+#| msgid "&Style:"
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "&Stils:"
+
+#: items/check/KReportItemCheck.cpp:84
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Sekunde"
+
+#: items/check/KReportItemCheck.cpp:86
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "Viegli Zaļa"
+
+#: items/check/KReportItemCheck.cpp:88
+#, fuzzy
+#| msgid "Color:"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Krāsa:"
+
+#: items/check/KReportItemCheck.cpp:89
+#, fuzzy
+#| msgid "Change Borders"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Mainīt apmales"
+
+#: items/check/KReportItemCheck.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Vērtība"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Vērtība"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Kreisais:"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Comment"
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Komentārs"
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Right:"
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Labais:"
+
+#: items/field/KReportItemField.cpp:96
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Vertikālā izlīdzināšana :"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "&Augšā:"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Align Auto"
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Automātiska izlīdzināšana"
+
+#: items/field/KReportItemField.cpp:102
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Vertikālā izlīdzināšana :"
+
+#: items/field/KReportItemField.cpp:104
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Ievietot saiti"
+
+#: items/field/KReportItemField.cpp:106
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Sekunde"
+
+#: items/field/KReportItemField.cpp:107
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Sekunde"
+
+#: items/field/KReportItemField.cpp:109
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "&Fona krāsa:"
+
+#: items/field/KReportItemField.cpp:114
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "Viegli Zaļa"
+
+#: items/field/KReportItemField.cpp:116
+#, fuzzy
+#| msgid "Color:"
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Krāsa:"
+
+#: items/field/KReportItemField.cpp:117
+#, fuzzy
+#| msgid "Change Borders"
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Mainīt apmales"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:120
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgid "Street:"
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Iela:"
+
+#: items/image/KReportItemImage.cpp:120
+#, fuzzy
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "Izmainīt Panelis Reverss"
+
+#: items/image/KReportItemImage.cpp:121
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Vērtība"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:91
+#, fuzzy
+#| msgid "Completion"
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Pabeigšana"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Kreisais:"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Comment"
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Komentārs"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Right:"
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Labais:"
+
+#: items/label/KReportItemLabel.cpp:96
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Vertikālā izlīdzināšana :"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "&Augšā:"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Align Auto"
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Automātiska izlīdzināšana"
+
+#: items/label/KReportItemLabel.cpp:102
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Vertikālā izlīdzināšana :"
+
+#: items/label/KReportItemLabel.cpp:104
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Ievietot saiti"
+
+#: items/label/KReportItemLabel.cpp:106
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Sekunde"
+
+#: items/label/KReportItemLabel.cpp:107
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Sekunde"
+
+#: items/label/KReportItemLabel.cpp:109
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "&Fona krāsa:"
+
+#: items/label/KReportItemLabel.cpp:114
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "Viegli Zaļa"
+
+#: items/label/KReportItemLabel.cpp:116
+#, fuzzy
+#| msgid "Color:"
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Krāsa:"
+
+#: items/label/KReportItemLabel.cpp:117
+#, fuzzy
+#| msgid "Change Borders"
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Mainīt apmales"
+
+#: items/text/KReportItemText.cpp:115
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Vērtība"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Kreisais:"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Comment"
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Komentārs"
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Right:"
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Labais:"
+
+#: items/text/KReportItemText.cpp:121
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Vertikālā izlīdzināšana :"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "&Augšā:"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Align Auto"
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Automātiska izlīdzināšana"
+
+#: items/text/KReportItemText.cpp:127
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Vertikālā izlīdzināšana :"
+
+#: items/text/KReportItemText.cpp:129
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Ievietot saiti"
+
+#: items/text/KReportItemText.cpp:131
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Sekunde"
+
+#: items/text/KReportItemText.cpp:132
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Sekunde"
+
+#: items/text/KReportItemText.cpp:134
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "Viegli Zaļa"
+
+#: items/text/KReportItemText.cpp:136
+#, fuzzy
+#| msgid "Color:"
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Krāsa:"
+
+#: items/text/KReportItemText.cpp:137
+#, fuzzy
+#| msgid "Change Borders"
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Mainīt apmales"
+
+#: items/text/KReportItemText.cpp:138
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "&Fona krāsa:"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, fuzzy, qt-format
+#| msgid "Scriptfile"
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr "Skripta fails"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+#, fuzzy
+#| msgid "Internal error"
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Iekšēja kļūda"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:676
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Lappuses priekšskatījums"
+
+#: wrtembed/KReportDesigner.cpp:680
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Lappuses priekšskatījums"
+
+#: wrtembed/KReportDesigner.cpp:684
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Lappuses priekšskatījums"
+
+#: wrtembed/KReportDesigner.cpp:688
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Lappuses priekšskatījums"
+
+#: wrtembed/KReportDesigner.cpp:692
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Lappuses priekšskatījums"
+
+#: wrtembed/KReportDesigner.cpp:696
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "Kājene"
+
+#: wrtembed/KReportDesigner.cpp:700
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "Kājene"
+
+#: wrtembed/KReportDesigner.cpp:704
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "Kājene"
+
+#: wrtembed/KReportDesigner.cpp:708
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "Kājene"
+
+#: wrtembed/KReportDesigner.cpp:712
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "Kājene"
+
+#: wrtembed/KReportDesigner.cpp:716
+#, fuzzy
+#| msgid "Header"
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "Galvene"
+
+#: wrtembed/KReportDesigner.cpp:720
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "Kājene"
+
+#: wrtembed/KReportDesigner.cpp:808
+#, fuzzy
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "E&ksportēt..."
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Title:"
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Nosaukums:"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Kājene"
+
+#: wrtembed/KReportDesigner.cpp:818
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Lappuses izmērs"
+
+#: wrtembed/KReportDesigner.cpp:821
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Lappuses izmērs"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "&Portrait"
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "&Portrets"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "La&ndscape"
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "Ai&nava"
+
+#: wrtembed/KReportDesigner.cpp:827
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "prezentācija"
+
+#: wrtembed/KReportDesigner.cpp:832
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Lappuses izmērs"
+
+#: wrtembed/KReportDesigner.cpp:833
+#, fuzzy
+#| msgid "Change Shadow"
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Mainīt ēnojumu"
+
+#: wrtembed/KReportDesigner.cpp:834
+#, fuzzy
+#| msgid "Change Shadow"
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Mainīt ēnojumu"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:841
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Maliņas"
+
+#: wrtembed/KReportDesigner.cpp:843
+#, fuzzy
+#| msgid "Right indent"
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Labā atkāpe"
+
+#: wrtembed/KReportDesigner.cpp:845
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Maliņas"
+
+#: wrtembed/KReportDesigner.cpp:847
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Maliņas"
+
+#: wrtembed/KReportDesigner.cpp:869
+#, fuzzy
+#| msgid "Object"
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Objekts"
+
+#: wrtembed/KReportDesigner.cpp:1067
+#, fuzzy
+#| msgid "Custom"
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Pielāgots"
+
+#: wrtembed/KReportDesigner.cpp:1071
+#, fuzzy
+#| msgid "Company:"
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Kompānija:"
+
+#: wrtembed/KReportDesigner.cpp:1076
+#, fuzzy
+#| msgid "Date"
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Datums"
+
+#: wrtembed/KReportDesigner.cpp:1087
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Dzēst tekstu"
+
+#: wrtembed/KReportDesigner.cpp:1129
+#, fuzzy
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Lini"
+
+#: wrtembed/KReportDesigner.cpp:1476
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Lini"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1525
+#, fuzzy
+#| msgid "Company:"
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "Kompānija:"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1531
+#, fuzzy
+#| msgid "Date"
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "Datums"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1544
+#, fuzzy
+#| msgid "Completion"
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Pabeigšana"
+
+#: wrtembed/KReportDesigner.cpp:1547
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1549
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr ""
+
+#: wrtembed/KReportDesignerSection.cpp:126
+#, fuzzy
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "&Noklusētais"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+#, fuzzy
+#| msgid "Completion"
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Pabeigšana"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+#, fuzzy
+#| msgid "Columns:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Kolonnas:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+#, fuzzy
+#| msgid "Street:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Iela:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+#, fuzzy
+#| msgid "Change Shadow"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Mainīt ēnojumu"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+#, fuzzy
+#| msgid "Change Shadow"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Mainīt ēnojumu"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+
+#: wrtembed/KReportRuler_p.cpp:1472
+#, fuzzy
+#| msgid "First line indent"
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Pirmās līnijas atkāpe"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+#, fuzzy
+#| msgid "Left indent"
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Kreisā atkāpe"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+#, fuzzy
+#| msgid "Right indent"
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Labā atkāpe"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.cpp:74
+#, fuzzy
+#| msgid "Add..."
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "Pievienot..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Dzēst tekstu"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Dzēst tekstu"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Dzēst tekstu"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.cpp:312
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.ui:29
+#, fuzzy
+#| msgid "Change Shadow"
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Mainīt ēnojumu"
+
+#: wrtembed/KReportSectionEditor.ui:36
+#, fuzzy
+#| msgid "Change Shadow"
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Mainīt ēnojumu"
+
+#: wrtembed/KReportSectionEditor.ui:43
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Lappuses priekšskatījums"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "Pielāgot lappusei"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+#, fuzzy
+#| msgid "Paste Text"
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Ielīmēt tekstu"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+#, fuzzy
+#| msgid "Company Name"
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Kompānijas nosaukums"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+#, fuzzy
+#| msgid "Paste Text"
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Ielīmēt tekstu"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+#, fuzzy
+#| msgid "Company Name"
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Kompānijas nosaukums"
+
+#: wrtembed/KReportSectionEditor.ui:130
+#, fuzzy
+#| msgid "Footer"
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "Kājene"
+
+#: wrtembed/KReportSectionEditor.ui:217
+#, fuzzy
+#| msgid "Completion"
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Pabeigšana"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, fuzzy, qt-format
+#| msgid "%1%"
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+#, fuzzy
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Pielāgot platumam"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+#, fuzzy
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Pielāgot lappusei"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr ""
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+#, fuzzy
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Pielāgot platumam"
+
+#, fuzzy
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "Iespiedzīme"
+
+#, fuzzy
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "Legāls"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "Pielāgots"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "Izpildu-"
+
+#, fuzzy
+#~| msgid "ISO B10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "ISO B10"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "Kompānija"
+
+#, fuzzy
+#~| msgid "ISO DL"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "ISO DL"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Folio"
+#~ msgstr "Pastāvīgs kolumntituls"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "Virsgrāmata"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Tabloid"
+#~ msgstr "Tabloīds"
+
+#, fuzzy
+#~| msgid "Postal code:"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "Pasta indekss:"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Ekrāns"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "Amats"
+
+#, fuzzy
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "&Augstums:"
+
+#, fuzzy
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~| msgid "Size:"
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "Izmērs:"
+
+#, fuzzy
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~| msgid "ISO A3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "ISO A3"
+
+#, fuzzy
+#~| msgid "ISO A4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "ISO A4"
+
+#, fuzzy
+#~| msgid "ISO A5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "ISO A5"
+
+#, fuzzy
+#~| msgid "ISO B5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "ISO B5"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "Izpildu-"
+
+#, fuzzy
+#~| msgid "ISO A0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "ISO A0"
+
+#, fuzzy
+#~| msgid "ISO A1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "ISO A1"
+
+#, fuzzy
+#~| msgid "ISO A2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "ISO A2"
+
+#, fuzzy
+#~| msgid "ISO A6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "ISO A6"
+
+#, fuzzy
+#~| msgid "ISO A7"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "ISO A7"
+
+#, fuzzy
+#~| msgid "ISO A8"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "ISO A8"
+
+#, fuzzy
+#~| msgid "ISO A9"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "ISO A9"
+
+#, fuzzy
+#~| msgid "ISO B0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "ISO B0"
+
+#, fuzzy
+#~| msgid "ISO B1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "ISO B1"
+
+#, fuzzy
+#~| msgid "ISO B2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "ISO B2"
+
+#, fuzzy
+#~| msgid "ISO B3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "ISO B3"
+
+#, fuzzy
+#~| msgid "ISO B4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "ISO B4"
+
+#, fuzzy
+#~| msgid "ISO B6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "ISO B6"
+
+#, fuzzy
+#~| msgid "ISO C5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "ISO C5"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Common 10"
+#~ msgstr "Sabiedrisks"
+
+#, fuzzy
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "&Augstums:"
+
+#, fuzzy
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Weight"
+#~ msgstr "Viegli Zaļa"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "Krāsa:"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "Mainīt apmales"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "Vērtība"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Weight"
+#~ msgstr "Viegli Zaļa"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "Krāsa:"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "Mainīt apmales"
+
+#, fuzzy
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "Vērtība"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "Kreisais:"
+
+#, fuzzy
+#~| msgid "Comment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "Komentārs"
+
+#, fuzzy
+#~| msgid "Right:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "Labais:"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Vertikālā izlīdzināšana :"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "&Augšā:"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "Automātiska izlīdzināšana"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Vertikālā izlīdzināšana :"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "Ievietot saiti"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "&Fona krāsa:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Weight"
+#~ msgstr "Viegli Zaļa"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "Krāsa:"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "Mainīt apmales"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "Vērtība"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "Kreisais:"
+
+#, fuzzy
+#~| msgid "Comment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "Komentārs"
+
+#, fuzzy
+#~| msgid "Right:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "Labais:"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Vertikālā izlīdzināšana :"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "&Augšā:"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "Automātiska izlīdzināšana"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Vertikālā izlīdzināšana :"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "Ievietot saiti"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Weight"
+#~ msgstr "Viegli Zaļa"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "Krāsa:"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "Mainīt apmales"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "&Fona krāsa:"
+
+#, fuzzy
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~| msgid "Scripts Manager"
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "Skriptu pārvaldītājs"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Māris Nartišs"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "maris.kde@gmail.com"
+
+#, fuzzy
+#~ msgid "Draw path"
+#~ msgstr "Noņemt grupu"
+
+#, fuzzy
+#~ msgid "Freehand path"
+#~ msgstr "Noņemt grupu"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Angle Constraints"
+#~ msgstr "Mainīt atkāpi"
+
+#, fuzzy
+#~| msgid "Position:"
+#~ msgid "Precision:"
+#~ msgstr "Novietojums:"
+
+#, fuzzy
+#~ msgid "Curve"
+#~ msgstr "Pašreizējā sekcija"
+
+#, fuzzy
+#~| msgid "String:"
+#~ msgid "Straight"
+#~ msgstr "Virkne:"
+
+#, fuzzy
+#~ msgid "Combine angle:"
+#~ msgstr "Pielāgots līniju platums"
+
+#, fuzzy
+#~| msgid "Could not export file."
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr "Nevar eksportēt failu."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "The database \"%1\" does not exist."
+#~ msgstr "Fails %1 neeksistē."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "Fails %1 neeksistē."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Database file \"%1\" is not writable."
+#~ msgstr "Fails %1 neeksistē."
+
+#, fuzzy
+#~ msgid "Creating table failed."
+#~ msgstr "Izveidot sagatavi"
+
+#, fuzzy
+#~| msgid "Cannot create storage"
+#~ msgid "Cannot create table without fields."
+#~ msgstr "Nevar izveidot glabātuvi"
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not create the same table \"%1\" twice."
+#~ msgstr "Neizdevās nolasīt pakotni \"%1\"."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist."
+#~ msgstr "Fails %1 neeksistē."
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not load embedded object:\n"
+#~| "%1"
+#~ msgid "Could not remove object's data."
+#~ msgstr ""
+#~ "Nevar ielādēt iegulto objektu:\n"
+#~ "%1"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not uninstall this script package. You may not have sufficient "
+#~| "permissions to delete the folder \"%1\"."
+#~ msgid "Could not alter table \"%1\" using the same table as destination."
+#~ msgstr ""
+#~ "Nav iespējams atinstalēt skripta paku. Iespējams, ka jums nav tiesību "
+#~ "dzēst mapi \"%1\"."
+
+#, fuzzy
+#~| msgid "Could not read the beginning of the file."
+#~ msgid "Could not rename table \"%1\" using the same name."
+#~ msgstr "Nevar nolasīt faila sākumu."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Query \"%1\" does not exist."
+#~ msgstr "Fails %1 neeksistē."
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Begin transaction failed."
+#~ msgstr "Mainīt atkāpi"
+
+#, fuzzy
+#~| msgid "This name is already used."
+#~ msgid "Transaction already started."
+#~ msgstr "Nosaukums jau ir izmantots."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Column <resource>%1</resource> does not exist in the query."
+#~ msgstr "Fails %1 neeksistē."
+
+#, fuzzy
+#~| msgid "Error while saving embedded documents"
+#~ msgctxt "Extended schema for a table: loading error"
+#~ msgid "Error while loading extended table schema."
+#~ msgstr "Kļūda saglabājot iegultos dokumentus"
+
+#, fuzzy
+#~| msgid ""
+#~| "Parsing error in %1 at line %2, column %3\n"
+#~| "Error message: %4"
+#~ msgid ""
+#~ "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~ "XML data: %4"
+#~ msgstr ""
+#~ "Parsēšanas kļūda %1. Rinda %2, kolonna %3\n"
+#~ "Kļūdas paziņojums: %4"
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not insert record because there is no master table specified."
+#~ msgstr "Neizdevās nolasīt pakotni \"%1\"."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not delete record because there is no master table specified."
+#~ msgstr "Neizdevās nolasīt pakotni \"%1\"."
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Unknown error."
+#~ msgstr "Nezināma kļūda"
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "Datums:"
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not set value of database property \"%1\"."
+#~ msgstr "Neizdevās nolasīt pakotni \"%1\"."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "Neizdevās nolasīt pakotni \"%1\"."
+
+#, fuzzy
+#~| msgid "Could not read the beginning of the file."
+#~ msgid "Could not read database properties."
+#~ msgstr "Nevar nolasīt faila sākumu."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not find database driver \"%1\"."
+#~ msgstr "Neizdevās nolasīt pakotni \"%1\"."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "Neizdevās nolasīt pakotni \"%1\"."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "Neizdevās nolasīt pakotni \"%1\"."
+
+#, fuzzy
+#~| msgid "File not found"
+#~ msgid "Field not found"
+#~ msgstr "Fails nav atrasts"
+
+#, fuzzy
+#~| msgid "Could not create the file for saving"
+#~ msgid "Could not access the table directly using its name"
+#~ msgstr "Neizdevās izveidot failu saglabāšanai"
+
+#, fuzzy
+#~| msgid "File not found"
+#~ msgid "Table not found"
+#~ msgstr "Fails nav atrasts"
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" has no \"%2\" field."
+#~ msgstr "Fails %1 neeksistē."
+
+#, fuzzy
+#~| msgid "Number:"
+#~ msgid "Short Integer Number"
+#~ msgstr "Numurs:"
+
+#, fuzzy
+#~| msgid "Number:"
+#~ msgid "Integer Number"
+#~ msgstr "Numurs:"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Yes/No Value"
+#~ msgstr "Mainīt atkāpi"
+
+#~ msgid "Date"
+#~ msgstr "Datums"
+
+#, fuzzy
+#~| msgid "Date & Time"
+#~ msgid "Date and Time"
+#~ msgstr "Datums un laiks"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Time"
+#~ msgstr "Laiks:"
+
+#, fuzzy
+#~| msgid "Revision number:"
+#~ msgid "Single Precision Number"
+#~ msgstr "Revīzijas numurs:"
+
+#, fuzzy
+#~| msgid "Revision number:"
+#~ msgid "Double Precision Number"
+#~ msgstr "Revīzijas numurs:"
+
+#~ msgid "Text"
+#~ msgstr "Teksts"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Long Text"
+#~ msgstr "Teksts"
+
+#~ msgid "Object"
+#~ msgstr "Objekts"
+
+#, fuzzy
+#~| msgid "Change Case"
+#~ msgid "Floating Point Number"
+#~ msgstr "Mainīt reģistru"
+
+#, fuzzy
+#~| msgid "Date & Time"
+#~ msgid "Date/Time"
+#~ msgstr "Datums un laiks"
+
+#, fuzzy
+#~| msgid "Internal error"
+#~ msgid "Syntax error."
+#~ msgstr "Iekšēja kļūda"
+
+#, fuzzy
+#~| msgid "Error!"
+#~ msgid "Error"
+#~ msgstr "Kļūda!"
+
+#, fuzzy
+#~| msgid "Internal error"
+#~ msgid "Error near \"%1\"."
+#~ msgstr "Iekšēja kļūda"
+
+#, fuzzy
+#~| msgid "Revision number:"
+#~ msgid "Server's port number"
+#~ msgstr "Revīzijas numurs:"
+
+#, fuzzy
+#~ msgid "Record inserting failed."
+#~ msgstr "Izveidot sagatavi"
+
+#, fuzzy
+#~ msgid "Record deleting failed."
+#~ msgstr "Izveidot sagatavi"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Test Connection"
+#~ msgstr "Mainīt atkāpi"
+
+#, fuzzy
+#~| msgid "Number:"
+#~ msgid "Number"
+#~ msgstr "Numurs:"
+
+#, fuzzy
+#~ msgid "Image"
+#~ msgstr "Pielāgot lappusei"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr "Mainīt atkāpi"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr "Mainīt tabulatoru"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "Pārvērst par grieķu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Combine paths"
+#~ msgstr "Pielāgots līniju platums"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move control point"
+#~ msgstr "Maliņas"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "Ievietot saiti"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "Maliņas"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move points"
+#~ msgstr "Noņemt saiti"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove points"
+#~ msgstr "Noņemt saiti"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set point type"
+#~ msgstr "Ievietot saiti"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reverse paths"
+#~ msgstr "Noņemt grupu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath"
+#~ msgstr "Noņemt grupu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to curves"
+#~ msgstr "Mainīt fonta stilu?"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to lines"
+#~ msgstr "Mainīt fonta stilu?"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set marker"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Align shapes"
+#~ msgstr "Izlīdzināt pa kreisi"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Clip Shape"
+#~ msgstr "Vilnītis"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr "Izveidot sagatavi"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shape"
+#~ msgid_plural "Delete shapes"
+#~ msgstr[0] "Dzēst tekstu"
+#~ msgstr[1] "Dzēst tekstu"
+#~ msgstr[2] "Dzēst tekstu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Distribute shapes"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~| msgid "Completion"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr "Pabeigšana"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Keep Aspect Ratio"
+#~ msgstr "Saglabāt &attiecību"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Lock shapes"
+#~ msgstr "Izlīdzināt pa kreisi"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move shapes"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr "Izveidot sagatavi"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reorder shapes"
+#~ msgstr "Izmainīt Panelis Reverss"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Shape RunAround"
+#~ msgstr "Mainīt tabulatoru"
+
+#, fuzzy
+#~| msgid "Text Shadow"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Shadow"
+#~ msgstr "Teksta ēnojums"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Shear shapes"
+#~ msgstr "Izmainīt Panelis Reverss"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Resize shapes"
+#~ msgstr "Izmainīt Panelis Reverss"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr "Ievietot saiti"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shape"
+#~ msgstr "Izlīdzināt pa kreisi"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shapes"
+#~ msgstr "Izlīdzināt pa kreisi"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr "Izlīdzināt pa kreisi"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Close subpath"
+#~ msgstr "Noņemt grupu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Join subpaths"
+#~ msgstr "Pielāgots līniju platums"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove subpath"
+#~ msgstr "Noņemt grupu"
+
+#, fuzzy
+#~ msgid "Lines"
+#~ msgstr "Lini"
+
+#~ msgid "Type:"
+#~ msgstr "Tips:"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Tie"
+#~ msgstr "Laiks:"
+
+#, fuzzy
+#~ msgid "Simple path shape"
+#~ msgstr "Izveidot sagatavi"
+
+#, fuzzy
+#~ msgid "%1 Options"
+#~ msgstr "Izņēmumi"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Shapes"
+#~ msgstr "Izveidot sagatavi"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "Ielīmēt tekstu"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgid "Nodes"
+#~ msgstr "Nav"
+
+#, fuzzy
+#~ msgid "Guide lines"
+#~ msgstr "Ceļvedis Līnijas"
+
+#, fuzzy
+#~ msgid "Create object"
+#~ msgstr "Izveidot dokumentu"
+
+#, fuzzy
+#~ msgid "Pan"
+#~ msgstr "Tan"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Segment"
+#~ msgstr "Mainīt fonta stilu?"
+
+#, fuzzy
+#~ msgid "Corner point"
+#~ msgstr "Apstiprināt eksportēšanu"
+
+#, fuzzy
+#~ msgid "Make curve point"
+#~ msgstr "Maliņas"
+
+#, fuzzy
+#~ msgid "Make line point"
+#~ msgstr "Maliņas"
+
+#, fuzzy
+#~ msgid "Segment to Line"
+#~ msgstr "Mainīt fonta stilu?"
+
+#, fuzzy
+#~ msgid "Insert point"
+#~ msgstr "Ievietot saiti"
+
+#, fuzzy
+#~ msgid "Remove point"
+#~ msgstr "Noņemt saiti"
+
+#, fuzzy
+#~ msgid "Merge points"
+#~ msgstr "Maliņas"
+
+#, fuzzy
+#~| msgid "Edit Path"
+#~ msgid "To Path"
+#~ msgstr "Rediģēt ceļu"
+
+#, fuzzy
+#~ msgid "Line/Curve"
+#~ msgstr "Pašreizējā sekcija"
+
+#, fuzzy
+#~ msgid "Path editing"
+#~ msgstr "Kopējas labošanas laiks:"
+
+#, fuzzy
+#~ msgid "..."
+#~ msgstr "Pievienot..."
+
+#, fuzzy
+#~ msgid "Convert To Path"
+#~ msgstr "Pārvērst par grieķu"
+
+#~ msgid "Scripts"
+#~ msgstr "Skripts"
+
+#, fuzzy
+#~| msgid "Scripts Manager"
+#~ msgid "Script Manager"
+#~ msgstr "Skriptu pārvaldītājs"
+
+#~ msgid "Execute Script File..."
+#~ msgstr "Izpildīt skripta failu..."
+
+#, fuzzy
+#~ msgid "Script Manager..."
+#~ msgstr "Skriptu pārvaldītājs..."
+
+#~ msgid "Execute Script File"
+#~ msgstr "Izpildīt skripta failu"
+
+#~ msgid "Install Script Package"
+#~ msgstr "Instalēt skriptu pakotni"
+
+#~ msgid "Could not read the package \"%1\"."
+#~ msgstr "Neizdevās nolasīt pakotni \"%1\"."
+
+#~ msgid ""
+#~ "A script package with the name \"%1\" already exists. Replace this "
+#~ "package?"
+#~ msgstr "Skriptu pakotne ar nosaukumu \"%1\" jau eksitē. Aizvietot pakotni?"
+
+#, fuzzy
+#~ msgid "Replace"
+#~ msgstr "&Aizvietot:"
+
+#~ msgid ""
+#~ "Could not uninstall this script package. You may not have sufficient "
+#~ "permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Nav iespējams atinstalēt skripta paku. Iespējams, ka jums nav tiesību "
+#~ "dzēst mapi \"%1\"."
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not uninstall this script package. You may not have sufficient "
+#~| "permissions to delete the folder \"%1\"."
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\" since the script is not "
+#~ "installed."
+#~ msgstr ""
+#~ "Nav iespējams atinstalēt skripta paku. Iespējams, ka jums nav tiesību "
+#~ "dzēst mapi \"%1\"."
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not uninstall this script package. You may not have sufficient "
+#~| "permissions to delete the folder \"%1\"."
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\". You may not have "
+#~ "sufficient permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Nav iespējams atinstalēt skripta paku. Iespējams, ka jums nav tiesību "
+#~ "dzēst mapi \"%1\"."
+
+#, fuzzy
+#~ msgid "Save"
+#~ msgstr "Vilnītis"
+
+#, fuzzy
+#~| msgid "Scriptfile"
+#~ msgid "Add script file"
+#~ msgstr "Skripta fails"
+
+#, fuzzy
+#~| msgid "Add Completion Entry"
+#~ msgid "Add collection folder"
+#~ msgstr "Pievienot pabeigšanu ierakstam"
+
+#, fuzzy
+#~| msgid "Install Script Package"
+#~ msgid "Install script package file"
+#~ msgstr "Instalēt skriptu pakotni"
+
+#, fuzzy
+#~| msgid "Install Script Package"
+#~ msgid "Install online script package"
+#~ msgstr "Instalēt skriptu pakotni"
+
+#, fuzzy
+#~ msgid "Add"
+#~ msgstr "&Pievienot"
+
+#, fuzzy
+#~| msgid "Scripts"
+#~ msgid "Script"
+#~ msgstr "Skripts"
+
+#, fuzzy
+#~| msgid "Completion"
+#~ msgid "Collection"
+#~ msgstr "Pabeigšana"
+
+#, fuzzy
+#~| msgid "Change Case"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master slide"
+#~ msgstr "Mainīt reģistru"
+
+#, fuzzy
+#~| msgid "Change Case"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master page"
+#~ msgstr "Mainīt reģistru"
+
+#, fuzzy
+#~| msgid "Page Layout"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "Lappuses izkārtojums"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display master background"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display slide background"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display page background"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Show master shapes"
+#~ msgstr "Izveidot sagatavi"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Hide master shapes"
+#~ msgstr "Izveidot sagatavi"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] "Dzēst tekstu"
+#~ msgstr[1] "Dzēst tekstu"
+#~ msgstr[2] "Dzēst tekstu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "Dzēst tekstu"
+#~ msgstr[1] "Dzēst tekstu"
+#~ msgstr[2] "Dzēst tekstu"
+
+#, fuzzy
+#~| msgid "Insert Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr "Ievietot tekstu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr "Ievietot tekstu"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "Ielīmēt tekstu"
+#~ msgstr[1] "Ielīmēt tekstu"
+#~ msgstr[2] "Ielīmēt tekstu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] "Dzēst tekstu"
+#~ msgstr[1] "Dzēst tekstu"
+#~ msgstr[2] "Dzēst tekstu"
+
+#, fuzzy
+#~| msgid "Confirm Save"
+#~ msgid "Configure"
+#~ msgstr "Apstiprināt saglabāšanu"
+
+#, fuzzy
+#~| msgid "Change Shadow"
+#~ msgid "Grid"
+#~ msgstr "Mainīt ēnojumu"
+
+#, fuzzy
+#~| msgid "Document"
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "Dokuments"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Document Settings"
+#~ msgstr "Dokumenta informācija"
+
+#, fuzzy
+#~| msgid "Author"
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "Autors"
+
+#~ msgid "Author"
+#~ msgstr "Autors"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Slide"
+#~ msgstr "Ielīmēt tekstu"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Page"
+#~ msgstr "Ielīmēt tekstu"
+
+#, fuzzy
+#~ msgid "Page  %1"
+#~ msgstr "Pielāgot lappusei"
+
+#, fuzzy
+#~ msgid "Layer"
+#~ msgstr "Lavanda"
+
+#, fuzzy
+#~| msgid "Group:"
+#~ msgid "Group"
+#~ msgstr "Grupa:"
+
+#, fuzzy
+#~ msgid "Shape"
+#~ msgstr "Vilnītis"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "Ielīmēt tekstu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "Izveidot sagatavi"
+
+#, fuzzy
+#~| msgid "Size:"
+#~ msgid "Slide"
+#~ msgstr "Izmērs:"
+
+#, fuzzy
+#~| msgid "Variable"
+#~ msgid "Visible"
+#~ msgstr "Mainīgs"
+
+#, fuzzy
+#~| msgid "Loaded"
+#~ msgid "Locked"
+#~ msgstr "Ielādēts"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reparent shapes"
+#~ msgstr "Izmainīt Panelis Reverss"
+
+#, fuzzy
+#~ msgid "&Move Here"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~| msgid "Green"
+#~ msgid "&Copy Here"
+#~ msgstr "Zaļš"
+
+#, fuzzy
+#~ msgid "C&ancel"
+#~ msgstr "Mainīt reģistru"
+
+#~ msgid "Document"
+#~ msgstr "Dokuments"
+
+#, fuzzy
+#~| msgid "Add Newline"
+#~ msgid "Add a new slide or layer"
+#~ msgstr "Pievienot jaunu rindiņu"
+
+#, fuzzy
+#~| msgid "Add Newline"
+#~ msgid "Add a new page or layer"
+#~ msgstr "Pievienot jaunu rindiņu"
+
+#, fuzzy
+#~ msgid "Page"
+#~ msgstr "Pielāgot lappusei"
+
+#, fuzzy
+#~| msgid "Remove Selected Text"
+#~ msgid "Delete selected objects"
+#~ msgstr "Aizvākt iezīmēto tekstu"
+
+#, fuzzy
+#~| msgid "Remove Selected Text"
+#~ msgid "Raise selected objects"
+#~ msgstr "Aizvākt iezīmēto tekstu"
+
+#, fuzzy
+#~ msgid "Lower selected objects"
+#~ msgstr "Izveidot dokumentu"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgid "View mode"
+#~ msgstr "Mainīt apmales"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "Izveidot sagatavi"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~| msgid "Add Newline"
+#~ msgid "Add a new slide"
+#~ msgstr "Pievienot jaunu rindiņu"
+
+#, fuzzy
+#~| msgid "Add Newline"
+#~ msgid "Add a new page"
+#~ msgstr "Pievienot jaunu rindiņu"
+
+#, fuzzy
+#~ msgid "Page %1"
+#~ msgstr "Pielāgot lappusei"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] "Ielīmēt tekstu"
+#~ msgstr[1] "Ielīmēt tekstu"
+#~ msgstr[2] "Ielīmēt tekstu"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] "Ielīmēt tekstu"
+#~ msgstr[1] "Ielīmēt tekstu"
+#~ msgstr[2] "Ielīmēt tekstu"
+
+#, fuzzy
+#~ msgid "Tools"
+#~ msgstr "Noklusējuma krāsa"
+
+#, fuzzy
+#~ msgid "D&elete"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~ msgid "Insert Page"
+#~ msgstr "Ievietot tekstu"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Page"
+#~ msgstr "Kompānijas nosaukums"
+
+#, fuzzy
+#~ msgid "Delete Page"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~ msgid "Delete the current page"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Page..."
+#~ msgstr "Ielīmēt tekstu"
+
+#, fuzzy
+#~| msgid "Page Layout"
+#~ msgid "Page Layout..."
+#~ msgstr "Lappuses izkārtojums"
+
+#~ msgid "Variable"
+#~ msgstr "Mainīgs"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Document..."
+#~ msgstr "Importēt dokumentu"
+
+#, fuzzy
+#~ msgid "Import Slideshow"
+#~ msgstr "Importēt stilu"
+
+#~ msgid "Import Document"
+#~ msgstr "Importēt dokumentu"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not import\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Nevar atvērt\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr "Mainīt tabulatoru"
+
+#, fuzzy
+#~ msgid "Set image ..."
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~ msgid "Background"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~ msgid "Page Background"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page Design"
+#~ msgstr "Lappuses priekšskatījums"
+
+#, fuzzy
+#~ msgid "Use background of master page"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~ msgid "Use background of master slide"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~| msgid "Change Case"
+#~ msgid "Display shapes of master page"
+#~ msgstr "Mainīt reģistru"
+
+#, fuzzy
+#~| msgid "Change Case"
+#~ msgid "Display shapes of master slide"
+#~ msgstr "Mainīt reģistru"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change slide background image"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page background image"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "Ielīmēt tekstu"
+
+#, fuzzy
+#~| msgid "Size:"
+#~ msgid "Slide %1/%2"
+#~ msgstr "Izmērs:"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Page %1/%2"
+#~ msgstr "Ielīmēt tekstu"
+
+#, fuzzy
+#~ msgid "Page %1/%2"
+#~ msgstr "Pielāgot lappusei"
+
+#, fuzzy
+#~ msgid "Field"
+#~ msgstr "Faila nosaukums"
+
+#, fuzzy
+#~ msgid "Label"
+#~ msgstr "Lavanda"
+
+#, fuzzy
+#~| msgid "%1%"
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1%"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "Mainīt reģistru"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "Mainīt mainīgā apakštipu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "Teksts"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "Ievietot saiti"
+
+#, fuzzy
+#~| msgid "Insert Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr "Ievietot tekstu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Right"
+#~ msgstr "Ievietot saiti"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr "Ievietot saiti"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Below"
+#~ msgstr "Ievietot līnijas pārtraukumu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "Ievietot tekstu"
+
+#, fuzzy
+#~| msgid "Change Case"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List Numbering"
+#~ msgstr "Mainīt reģistru"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "Datuma formāts"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Direct Paragraph Formatting"
+#~ msgstr "Normāls rindkopas teksts"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr "Izveidot sagatavi"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr "Ievietot saiti"
+
+#, fuzzy
+#~| msgid "Shadow:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "Ēnojums:"
+
+#, fuzzy
+#~| msgid "Date"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "Datums"
+
+#, fuzzy
+#~ msgid "1 replacement made"
+#~ msgid_plural "%1 replacements made"
+#~ msgstr[0] "Aizvietot tekstu"
+#~ msgstr[1] "Aizvietot tekstu"
+#~ msgstr[2] "Aizvietot tekstu"
+
+#, fuzzy
+#~| msgctxt "We add the 1/2 char at the %1"
+#~| msgid "Re&place 1/2... with %1..."
+#~ msgid "Replace %1 with %2?"
+#~ msgstr "Ai&zvietot 1/2... ar %1..."
+
+#, fuzzy
+#~| msgid "Completion"
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "Pabeigšana"
+
+#~ msgctxt "Underline Style"
+#~ msgid "None"
+#~ msgstr "Nav"
+
+#, fuzzy
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "Viena"
+
+#, fuzzy
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "Dubulta"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "New Paragraph"
+#~ msgstr "Normāls rindkopas teksts"
+
+#, fuzzy
+#~| msgid "Bookmark"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "Grāmatzīme"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "Amats"
+
+#, fuzzy
+#~| msgid "Insert Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "Ievietot tekstu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "Ievietot tekstu"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "Ievietot līnijas pārtraukumu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "Ievietot tekstu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "Maliņas"
+
+#, fuzzy
+#~| msgid "&Split View"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "&Sadalīt skatu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr "Pielāgot platumam"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Ievietot tekstu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr "Ievietot tekstu"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Ievietot līnijas pārtraukumu"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "Amats"
+
+#, fuzzy
+#~| msgid "Bold"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr "Treknraksts"
+
+#, fuzzy
+#~| msgid "Italic:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "Slīpraksts:"
+
+#, fuzzy
+#~| msgid "Underline"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "Pasvītrot"
+
+#, fuzzy
+#~| msgid "Strikeout:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr "Pārstrīpots:"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr "Mainīt fonta stilu?"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr "Vertikālā izlīdzināšana :"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "Mainīt atkāpi"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "Mainīt atkāpi"
+
+#, fuzzy
+#~| msgid "Change font size?"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "Mainīt fonta izmēru?"
+
+#, fuzzy
+#~| msgid "Change font size?"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "Mainīt fonta izmēru?"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr "Ievietot saiti"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr "Ievietot saiti"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr "Izveidot jaunu stilu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Paragraph Style"
+#~ msgstr "Normāls rindkopas teksts"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "Datuma formāts"
+
+#, fuzzy
+#~ msgid "Default"
+#~ msgstr "&Noklusētais"
+
+#, fuzzy
+#~| msgid "Red"
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "Sarkans"
+
+#, fuzzy
+#~| msgid "Red"
+#~ msgid "Redo %1"
+#~ msgstr "Sarkans"
+
+#, fuzzy
+#~| msgid "Red"
+#~ msgid "Redo"
+#~ msgstr "Sarkans"
+
+#, fuzzy
+#~ msgid "&File"
+#~ msgstr "Faila nosaukums"
+
+#, fuzzy
+#~ msgid "&Settings"
+#~ msgstr "Virkne:"
+
+#, fuzzy
+#~ msgid "File"
+#~ msgstr "Faila nosaukums"
+
+#, fuzzy
+#~ msgid "Delete the author profile"
+#~ msgstr "Dzēst tekstu"
+
+#~ msgid "Name:"
+#~ msgstr "Nosaukums:"
+
+#~ msgid "Initials:"
+#~ msgstr "Iniciāļi:"
+
+#~ msgid "Title:"
+#~ msgstr "Nosaukums:"
+
+#~ msgid "Position:"
+#~ msgstr "Novietojums:"
+
+#~ msgid "Company:"
+#~ msgstr "Kompānija:"
+
+#~ msgid "Email:"
+#~ msgstr "E-pasts:"
+
+#~ msgid "Telephone (home):"
+#~ msgstr "Tālrunis (mājas):"
+
+#~ msgid "Telephone (work):"
+#~ msgstr "Tālrunis (darba):"
+
+#~ msgid "Fax:"
+#~ msgstr "Fakss:"
+
+#~ msgid "Street:"
+#~ msgstr "Iela:"
+
+#~ msgid "City:"
+#~ msgstr "Pilsēta:"
+
+#~ msgid "Country:"
+#~ msgstr "Valsts:"
+
+#, fuzzy
+#~| msgid "Autosaving..."
+#~ msgid "Autosave interval:"
+#~ msgstr "Autosaglabāšana..."
+
+#, fuzzy
+#~ msgid "Create backup file:"
+#~ msgstr "Izveidot sagatavi"
+
+#, fuzzy
+#~| msgid "Change Shadow"
+#~ msgid "Show grid:"
+#~ msgstr "Mainīt ēnojumu"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgid "Grid color:"
+#~ msgstr "&Fona krāsa:"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgid "Spacing"
+#~ msgstr "Space"
+
+#, fuzzy
+#~| msgid "&Horizontal"
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "&Horizontāls"
+
+#, fuzzy
+#~| msgid "&Vertical"
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "&Vertikāls"
+
+#, fuzzy
+#~| msgid "Unit:"
+#~ msgid "Units:"
+#~ msgstr "Vienība:"
+
+#, fuzzy
+#~| msgid "Shadow:"
+#~ msgid "Paste offset:"
+#~ msgstr "Ēnojums:"
+
+#~ msgid "Only print and exit"
+#~ msgstr "Tikai drukāt un iziet"
+
+#~ msgid "Open a new document with a template"
+#~ msgstr "Atvērt jaunu dokumentu ar šablonu"
+
+#~ msgid "Override display DPI"
+#~ msgstr "Aizstāt ekrāna DPI"
+
+#, fuzzy
+#~| msgid "Only print and exit"
+#~ msgid "Only export to PDF and exit"
+#~ msgstr "Tikai drukāt un iziet"
+
+#, fuzzy
+#~| msgid "Creation error"
+#~ msgid "%1: Critical Error"
+#~ msgstr "Izveides kļūda"
+
+#, fuzzy
+#~| msgid "No template found for: %1 "
+#~ msgid "No template found for: %1"
+#~ msgstr "Šablons priekš %1 nav atrasts"
+
+#~ msgid "Too many templates found for: %1"
+#~ msgstr "Priekš %1 ir atrasti pārāk daudzi šabloni"
+
+#~ msgid "Template %1 failed to load."
+#~ msgstr "Neizdevās ielādēt šablonu %1."
+
+#~ msgid "Always use this template at application start up"
+#~ msgstr "Startējot aplikāciju vienmēr izmantot šo šablonu"
+
+#~ msgid "Always use this template"
+#~ msgstr "Vienmēr izmantot šo šablonu"
+
+#~ msgid "Making backup..."
+#~ msgstr "Rezerves kopijas veidošana..."
+
+#~ msgid "Saving..."
+#~ msgstr "Saglabāšana..."
+
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Nevar saglabāt\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Nevar saglabāt %1\n"
+#~ "Iemesls: %2"
+
+#, fuzzy
+#~| msgid "Document Title"
+#~ msgid "Document <i>%1</i> saved"
+#~ msgstr "Dokumenta nosaukums"
+
+#~ msgid "Autosaving..."
+#~ msgstr "Autosaglabāšana..."
+
+#~ msgid "Error during autosave! Partition full?"
+#~ msgstr "Kļūda autosaglabāšanas laikā! Pilns disks?"
+
+#~ msgid "Could not create the file for saving"
+#~ msgstr "Neizdevās izveidot failu saglabāšanai"
+
+#~ msgid "Not able to write '%1'. Partition full?"
+#~ msgstr "Nav iespējams rakstīt '%1'. Pilns disks?"
+
+#, fuzzy
+#~| msgid "Not able to write '%1'. Partition full?"
+#~ msgid "Not able to write RDF metadata. Partition full?"
+#~ msgstr "Nav iespējams rakstīt '%1'. Pilns disks?"
+
+#~ msgid "Error while trying to write '%1'. Partition full?"
+#~ msgstr "Kļūda mēģinot rakstīt '%1'. Pilns disks?"
+
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Slikti formēts URL\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "An autosaved file exists for this document.\n"
+#~ "Do you want to open it instead?"
+#~ msgstr ""
+#~ "Šim dokumentam eksistē autosaglabāšanas fails.\n"
+#~ "Varbūt labāk atvērt to?"
+
+#~ msgid "The file %1 does not exist."
+#~ msgstr "Fails %1 neeksistē."
+
+#, fuzzy
+#~| msgid "Open Document"
+#~ msgid "Opening Document"
+#~ msgstr "Atvērt dokumentu"
+
+#, fuzzy
+#~| msgid "Could not create the file for saving"
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "Neizdevās izveidot failu saglabāšanai"
+
+#~ msgid "File not found"
+#~ msgstr "Fails nav atrasts"
+
+#~ msgid "Cannot create storage"
+#~ msgstr "Nevar izveidot glabātuvi"
+
+#~ msgid "Bad MIME type"
+#~ msgstr "Slikts MIME tips"
+
+#~ msgid "Format not recognized"
+#~ msgstr "Formāts nav atpazīts"
+
+#~ msgid "Not implemented"
+#~ msgstr "Nav realizēts"
+
+#~ msgid "Parsing error"
+#~ msgstr "Parsēšanas kļūda"
+
+#~ msgid "Document is password protected"
+#~ msgstr "Dokuments ir aizsargāts ar paroli"
+
+#~ msgid "Internal error"
+#~ msgstr "Iekšēja kļūda"
+
+#~ msgid "Out of memory"
+#~ msgstr "Nepietiek operatīvās atmiņas"
+
+#~ msgid "Unknown error"
+#~ msgstr "Nezināma kļūda"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open\n"
+#~| "%2.\n"
+#~| "Reason: %1"
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr ""
+#~ "Nevar atvērt\n"
+#~ "%2.\n"
+#~ "Iemesls: %1"
+
+#, fuzzy
+#~| msgid "Document Title"
+#~ msgid "Document <i>%1</i> loaded"
+#~ msgstr "Dokumenta nosaukums"
+
+#~ msgid "Could not find %1"
+#~ msgstr "Nevar atrast %1"
+
+#~ msgid ""
+#~ "Parsing error in %1 at line %2, column %3\n"
+#~ "Error message: %4"
+#~ msgstr ""
+#~ "Parsēšanas kļūda %1. Rinda %2, kolonna %3\n"
+#~ "Kļūdas paziņojums: %4"
+
+#~ msgid "%1 is not a file."
+#~ msgstr "%1 nav fails."
+
+#~ msgid "Could not open the file for reading (check read permissions)."
+#~ msgstr "Nevar atvērt failu lasīšanai (pārbaudiet lasīšanas tiesības)."
+
+#~ msgid "Could not read the beginning of the file."
+#~ msgstr "Nevar nolasīt faila sākumu."
+
+#~ msgid ""
+#~ "parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Parsēšanas kļūda galvenajā dokumentā. Rinda %1, kolonna %2\n"
+#~ "Kļūdas paziņojums: %3"
+
+#, fuzzy
+#~| msgid "Not a valid KOffice file: %1"
+#~ msgid "Not a valid Calligra file: %1"
+#~ msgstr "Nekorekts KOffice fails: %1"
+
+#~ msgid "Invalid document: no file 'maindoc.xml'."
+#~ msgstr "Nepareizs dokuments: nav faila 'maindoc.xml'."
+
+#, fuzzy
+#~ msgid "Untitled"
+#~ msgstr "Virsraksts"
+
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr ""
+#~ "<p>Dokuments <b>'%1'</b> ticis modificēts.</p><p>Vai vēlaties to "
+#~ "saglabāt ?</p>"
+
+#~ msgid "Internal error: saveXML not implemented"
+#~ msgstr "Iekšēja kļūda: saveXML nav implementēts"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Nevar atvērt\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Nevar atvērt %1\n"
+#~ "Iemesls: %2"
+
+#~ msgid "a word processing"
+#~ msgstr "teksta apstrādes"
+
+#~ msgid "a spreadsheet"
+#~ msgstr "tabullapa"
+
+#~ msgid "a presentation"
+#~ msgstr "prezentācija"
+
+#~ msgid "a chart"
+#~ msgstr "diagramma"
+
+#~ msgid "a drawing"
+#~ msgstr "zīmējums"
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~| "it?</p>"
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr ""
+#~ "<p>Dokuments <b>'%1'</b> ticis modificēts.</p><p>Vai vēlaties to "
+#~ "saglabāt ?</p>"
+
+#, fuzzy
+#~| msgid "Custom Document"
+#~ msgid "Close Document"
+#~ msgstr "Pielāgots dokuments"
+
+#, fuzzy
+#~| msgid "%1%"
+#~ msgid "%1 %"
+#~ msgstr "%1%"
+
+#, fuzzy
+#~ msgid "No"
+#~ msgstr "Piezīme"
+
+#~ msgid "Could not export file."
+#~ msgstr "Nevar eksportēt failu."
+
+#~ msgid "Missing Export Filter"
+#~ msgstr "Trūkst eksporta filtrs"
+
+#~ msgid ""
+#~ "Could not import file of type\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Nevar importēt failu ar tipu\n"
+#~ "%1"
+
+#~ msgid "Missing Import Filter"
+#~ msgstr "Trūkst importa filtrs"
+
+#~ msgid "Choose Filter"
+#~ msgstr "Filtra izvēle"
+
+#, fuzzy
+#~| msgid "Mid:"
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "Vidus:"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "Teksts"
+
+#, fuzzy
+#~| msgid "Preview:"
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "Priekšskatījums:"
+
+#, fuzzy
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "Izņēmumi"
+
+#, fuzzy
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "&Aizvietot:"
+
+#, fuzzy
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "&Aizvietot:"
+
+#, fuzzy
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "&Aizvietot:"
+
+#, fuzzy
+#~| msgid "No template found for: %1 "
+#~ msgctxt "Total number of matches"
+#~ msgid "1 match found"
+#~ msgid_plural "%1 matches found"
+#~ msgstr[0] "Šablons priekš %1 nav atrasts"
+#~ msgstr[1] "Šablons priekš %1 nav atrasts"
+#~ msgstr[2] "Šablons priekš %1 nav atrasts"
+
+#, fuzzy
+#~| msgid "No template found for: %1 "
+#~ msgid "No matches found"
+#~ msgstr "Šablons priekš %1 nav atrasts"
+
+#, fuzzy
+#~ msgid "%1 unsaved document (%2)"
+#~ msgstr "Saglabāt dokumentu kā"
+
+#, fuzzy
+#~| msgid "E&xport..."
+#~ msgid "Export as PDF..."
+#~ msgstr "E&ksportēt..."
+
+#, fuzzy
+#~ msgid "Reload"
+#~ msgstr "Izlādēt"
+
+#~ msgid "Versions..."
+#~ msgstr "Versijas..."
+
+#~ msgid "E&xport..."
+#~ msgstr "E&ksportēt..."
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "En&crypt Document"
+#~ msgstr "Importēt dokumentu"
+
+#, fuzzy
+#~ msgid "&New View"
+#~ msgstr "A&izvākt skatu"
+
+#~ msgid "Document Information"
+#~ msgstr "Dokumenta informācija"
+
+#, fuzzy
+#~| msgid "Show %1 Toolbar"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "Rādīt %1 rīkjoslu"
+
+#, fuzzy
+#~ msgid "(write protected)"
+#~ msgstr "ieraksta aizsardzība"
+
+#~ msgid "Save as %1"
+#~ msgstr "Saglabāt kā %1"
+
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "%1 (Nezināms faila tips)"
+
+#~ msgid ""
+#~ "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
+#~ "want to save in this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Saglabājot kā %1 var pazaudēt daļu formatējuma.<p>Vai joprojām "
+#~ "vēlaties saglabāt šajā formātā?</qt>"
+
+#~ msgid "Confirm Save"
+#~ msgstr "Apstiprināt saglabāšanu"
+
+#~ msgid ""
+#~ "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you "
+#~ "still want to export to this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Eksportējot kā %1 var tikt zaudēta daļa formatējuma.<p>Vai joprojām "
+#~ "vēlaties eksportēt?</qt>"
+
+#~ msgid "Confirm Export"
+#~ msgstr "Apstiprināt eksportēšanu"
+
+#, fuzzy
+#~ msgid "untitled"
+#~ msgstr "Virsraksts"
+
+#~ msgid "Open Document"
+#~ msgstr "Atvērt dokumentu"
+
+#, fuzzy
+#~| msgid "E&xport..."
+#~ msgid "Export as PDF"
+#~ msgstr "E&ksportēt..."
+
+#~ msgid "Document - %1"
+#~ msgstr "Dokuments - %1"
+
+#, fuzzy
+#~| msgid ""
+#~| "You will lose all your changes!\n"
+#~| "Do you want to continue?"
+#~ msgid ""
+#~ "You will lose all changes made since your last save\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "Jūs zaudēsiet visas veiktās izmaiņas!\n"
+#~ "Vai tiešām vēlaties turpināt?"
+
+#, fuzzy
+#~ msgid "Warning"
+#~ msgstr "zīmējums"
+
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "Rādīt %1 rīkjoslu"
+
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "Slēpt %1 rīkjoslu"
+
+#, fuzzy
+#~| msgid "Open This Document"
+#~ msgid "Open Existing Document"
+#~ msgstr "Atvērt šo dokumentu"
+
+#~ msgid "Recent Documents"
+#~ msgstr "Nesenie dokumenti"
+
+#~ msgid "Custom Document"
+#~ msgstr "Pielāgots dokuments"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Printing"
+#~ msgstr "Pēdējo reizi drukāts"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Printing done"
+#~ msgstr "Pēdējo reizi drukāts"
+
+#, fuzzy
+#~| msgid "Colors"
+#~ msgid "Close"
+#~ msgstr "Krāsas"
+
+#~ msgid "Open This Document"
+#~ msgstr "Atvērt šo dokumentu"
+
+#~ msgctxt "File modification date and time. %1 is date time"
+#~ msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Modificēts:</b></td><td>%1</td></tr>"
+
+#~ msgctxt "File access date and time. %1 is date time"
+#~ msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Piekļuves laiks:</b></td><td>%1</td></tr>"
+
+#~ msgid "Create Template"
+#~ msgstr "Izveidot sagatavi"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "Nosaukums:"
+
+#~ msgid "Group:"
+#~ msgstr "Grupa:"
+
+#~ msgid "&Add Group..."
+#~ msgstr "Pievienot grup&u..."
+
+#, fuzzy
+#~ msgid "&Remove"
+#~ msgstr "A&izvākt skatu"
+
+#~ msgid "Picture"
+#~ msgstr "Attēls"
+
+#, fuzzy
+#~| msgid "Preview:"
+#~ msgid "&Preview"
+#~ msgstr "Priekšskatījums:"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Custom:"
+#~ msgstr "Pielāgots"
+
+#~ msgid "&Select..."
+#~ msgstr "&Izvēlēties..."
+
+#~ msgid "Use the new template as default"
+#~ msgstr "Izmantot jauno sagatavi kā noklusējuma sagatavi"
+
+#~ msgid "Use the new template every time %1 starts"
+#~ msgstr "Izmantot jauno sagatavi katru reizi startējot %1"
+
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr "Vai tiešām vēlaties pārrakstīt eksistējošo sagatavi ’%1’?"
+
+#~ msgid "Add Group"
+#~ msgstr "Pievienot grupu"
+
+#~ msgid "Enter group name:"
+#~ msgstr "Ievadiet grupas nosaukumu:"
+
+#~ msgid "This name is already used."
+#~ msgstr "Nosaukums jau ir izmantots."
+
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "Vai tiešām jūs vēlaties dzēst šo grupu?"
+
+#~ msgid "Remove Group"
+#~ msgstr "Noņemt grupu"
+
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "Vai tiešām vēlaties dzēst šo sagatavi?"
+
+#~ msgid "Remove Template"
+#~ msgstr "Noņemt sagatavi"
+
+#, fuzzy
+#~ msgid "&Delete"
+#~ msgstr "Dzēst tekstu"
+
+#~ msgid "Could not load picture."
+#~ msgstr "Nevar ielādēt attēlu."
+
+#~ msgid "No picture available."
+#~ msgstr "Attēls nav pieejams."
+
+#~ msgid "Use This Template"
+#~ msgstr "izmantot šo šablonu"
+
+#~ msgid "Version"
+#~ msgstr "Versija"
+
+#~ msgid "Date & Time"
+#~ msgstr "Datums un laiks"
+
+#~ msgid "Saved By"
+#~ msgstr "Saglabājis"
+
+#~ msgid "Comment"
+#~ msgstr "Komentārs"
+
+#~ msgid "&Add"
+#~ msgstr "&Pievienot"
+
+#, fuzzy
+#~ msgid "&Modify"
+#~ msgstr "Modificēts:"
+
+#~ msgid "&Open"
+#~ msgstr "&Atvērt"
+
+#, fuzzy
+#~ msgid "Date: %1"
+#~ msgstr "Datums:"
+
+#~ msgid "Unknown"
+#~ msgstr "Nezināms"
+
+#, fuzzy
+#~ msgid "Do you want to save the password?"
+#~ msgstr "Vai tiešām vēlaties dzēst šo sagatavi?"
+
+#~ msgid ""
+#~ "Parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Parsēšanas kļūda galvenajā dokumentā. Rinda: %1 Kolonna:%2\n"
+#~ "Kļūdas paziņojums: %3"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "Ekrāns"
+
+#, fuzzy
+#~ msgid "Subtract"
+#~ msgstr "Kopsavilkums"
+
+#, fuzzy
+#~ msgid "Lightness"
+#~ msgstr "Gaiši ciāna"
+
+#~ msgid "Blue"
+#~ msgstr "Zils"
+
+#~ msgid "Green"
+#~ msgstr "Zaļš"
+
+#~ msgid "Red"
+#~ msgstr "Sarkans"
+
+#, fuzzy
+#~ msgid "Erase"
+#~ msgstr "Reģistrs"
+
+#~ msgid "Normal"
+#~ msgstr "Normāls"
+
+#, fuzzy
+#~ msgid "Hard Mix"
+#~ msgstr "&Augstums:"
+
+#, fuzzy
+#~| msgid "Variable"
+#~ msgid "Parallel"
+#~ msgstr "Mainīgs"
+
+#, fuzzy
+#~ msgid "Color Dodge"
+#~ msgstr "Krāsas"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgid "Linear Dodge"
+#~ msgstr "Mainīt apmales"
+
+#, fuzzy
+#~ msgid "Lighten"
+#~ msgstr "Viegli Zaļa"
+
+#, fuzzy
+#~ msgid "Hard Light"
+#~ msgstr "&Augstums:"
+
+#, fuzzy
+#~| msgid "String:"
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "Virkne:"
+
+#, fuzzy
+#~| msgid "String:"
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "Virkne:"
+
+#, fuzzy
+#~ msgid "Gamma Light"
+#~ msgstr "Viegli Zaļa"
+
+#, fuzzy
+#~ msgid "Vivid Light"
+#~ msgstr "Viegli Zaļa"
+
+#, fuzzy
+#~ msgid "Pin Light"
+#~ msgstr "Viegli Zaļa"
+
+#, fuzzy
+#~ msgid "Linear Light"
+#~ msgstr "Viegli Zaļa"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Color Burn"
+#~ msgstr "Krāsa:"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgid "Linear Burn"
+#~ msgstr "Mainīt apmales"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "DarkGreen"
+#~ msgid "Darken"
+#~ msgstr "Tumši zaļa"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgid "Addition"
+#~ msgstr "Amats"
+
+#, fuzzy
+#~ msgid "Inversed-Subtract"
+#~ msgstr "Kopsavilkums"
+
+#, fuzzy
+#~ msgid "Additive-Subtractive"
+#~ msgstr "Kopsavilkums"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Red"
+#~ msgstr "Kompānijas nosaukums"
+
+#, fuzzy
+#~| msgid "Green"
+#~ msgid "Copy Green"
+#~ msgstr "Zaļš"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Blue"
+#~ msgstr "Kompānijas nosaukums"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Color"
+#~ msgstr "Krāsa:"
+
+#~ msgid "Hue"
+#~ msgstr "Nokrāsa"
+
+#~ msgid "Saturation"
+#~ msgstr "Piesātinājums"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation"
+#~ msgstr "Piesātinājums"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation"
+#~ msgstr "Piesātinājums"
+
+#, fuzzy
+#~| msgid "Change font size?"
+#~ msgid "Increase Luminosity"
+#~ msgstr "Mainīt fonta izmēru?"
+
+#, fuzzy
+#~| msgid "Change font size?"
+#~ msgid "Decrease Luminosity"
+#~ msgstr "Mainīt fonta izmēru?"
+
+#, fuzzy
+#~ msgid "Darker Color"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Lighter Color"
+#~ msgstr "Krāsa:"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Color HSI"
+#~ msgstr "Krāsa:"
+
+#, fuzzy
+#~| msgid "Hue"
+#~ msgid "Hue HSI"
+#~ msgstr "Nokrāsa"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Saturation HSI"
+#~ msgstr "Piesātinājums"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation HSI"
+#~ msgstr "Piesātinājums"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation HSI"
+#~ msgstr "Piesātinājums"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Increase Intensity"
+#~ msgstr "Mainīt atkāpi"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Decrease Intensity"
+#~ msgstr "Mainīt atkāpi"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Color HSL"
+#~ msgstr "Krāsa:"
+
+#, fuzzy
+#~| msgid "Hue"
+#~ msgid "Hue HSL"
+#~ msgstr "Nokrāsa"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Saturation HSL"
+#~ msgstr "Piesātinājums"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation HSL"
+#~ msgstr "Piesātinājums"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation HSL"
+#~ msgstr "Piesātinājums"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Increase Lightness"
+#~ msgstr "Mainīt atkāpi"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Decrease Lightness"
+#~ msgstr "Mainīt atkāpi"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Color HSV"
+#~ msgstr "Krāsa:"
+
+#, fuzzy
+#~| msgid "Hue"
+#~ msgid "Hue HSV"
+#~ msgstr "Nokrāsa"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Saturation HSV"
+#~ msgstr "Piesātinājums"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation HSV"
+#~ msgstr "Piesātinājums"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation HSV"
+#~ msgstr "Piesātinājums"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Increase Value"
+#~ msgstr "Mainīt atkāpi"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Decrease Value"
+#~ msgstr "Mainīt atkāpi"
+
+#, fuzzy
+#~| msgid "Gray"
+#~ msgid "Grayscale"
+#~ msgstr "Pelēks"
+
+#, fuzzy
+#~| msgid " pts"
+#~ msgid "8 Bits"
+#~ msgstr " pts"
+
+#, fuzzy
+#~ msgid "Arithmetic"
+#~ msgstr "Autoietvērējs"
+
+#, fuzzy
+#~ msgid "Inverse Subtract"
+#~ msgstr "Kopsavilkums"
+
+#, fuzzy
+#~ msgid "Additive Subtractive"
+#~ msgstr "Kopsavilkums"
+
+#, fuzzy
+#~| msgctxt "color"
+#~| msgid "DarkGreen"
+#~ msgid "Alpha Darken"
+#~ msgstr "Tumši zaļa"
+
+#, fuzzy
+#~| msgid "Red"
+#~ msgid "Rdf"
+#~ msgstr "Sarkans"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgid "Triples"
+#~ msgstr "Nosaukums:"
+
+#, fuzzy
+#~| msgid "Company:"
+#~ msgid "copy"
+#~ msgstr "Kompānija:"
+
+#, fuzzy
+#~ msgid "delete"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~ msgid "Namespaces"
+#~ msgstr "&Aizvietot:"
+
+#, fuzzy
+#~ msgid "Namespace"
+#~ msgstr "&Aizvietot:"
+
+#, fuzzy
+#~| msgid "&Style:"
+#~ msgid "Stylesheets"
+#~ msgstr "&Stils:"
+
+#, fuzzy
+#~ msgid "User"
+#~ msgstr "&Ievietot:"
+
+#, fuzzy
+#~ msgid "Description"
+#~ msgstr "Apraksts:"
+
+#, fuzzy
+#~| msgid "Black"
+#~ msgid "Blank"
+#~ msgstr "Melns"
+
+#, fuzzy
+#~| msgid "Size:"
+#~ msgid "Valid"
+#~ msgstr "Izmērs:"
+
+#, fuzzy
+#~| msgid "Subject:"
+#~ msgid "Subject"
+#~ msgstr "Temats:"
+
+#, fuzzy
+#~| msgid "Picture"
+#~ msgid "Predicate"
+#~ msgstr "Attēls"
+
+#, fuzzy
+#~| msgid "Type"
+#~ msgid "Obj Type"
+#~ msgstr "Tips"
+
+#, fuzzy
+#~ msgid "DataType"
+#~ msgstr "Datums"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "Nav"
+
+#, fuzzy
+#~| msgid "Right indent"
+#~ msgid "Rightwards Arrow Bullet"
+#~ msgstr "Labā atkāpe"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgid "Tamil"
+#~ msgstr "Nosaukums:"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Tibetan"
+#~ msgstr "Laiks:"
+
+#, fuzzy
+#~| msgid "Recent file:"
+#~ msgid "Recent:"
+#~ msgstr "Nesens fails:"
+
+#, fuzzy
+#~| msgid "More Colors..."
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "Vairāk krāsu..."
+
+#, fuzzy
+#~ msgid "Import Data"
+#~ msgstr "Importēt dokumentu"
+
+#~ msgid "Generic"
+#~ msgstr "Pamata"
+
+#, fuzzy
+#~ msgid "Currency"
+#~ msgstr "Pašreizējā sekcija"
+
+#~ msgid "None"
+#~ msgstr "Nav"
+
+#, fuzzy
+#~ msgid "Data"
+#~ msgstr "Datums"
+
+#, fuzzy
+#~ msgid "E&ncoding:"
+#~ msgstr "Pasvītroj&ums:"
+
+#, fuzzy
+#~ msgid "Format"
+#~ msgstr "Datuma formāts"
+
+#, fuzzy
+#~ msgid "Delimiter"
+#~ msgstr "Kreisais atdalītājs"
+
+#, fuzzy
+#~ msgid "Semicolon"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~ msgid "Other"
+#~ msgstr "Enter"
+
+#, fuzzy
+#~ msgid "Tabulator"
+#~ msgstr "&Tabulators"
+
+#~ msgid "Space"
+#~ msgstr "Space"
+
+#, fuzzy
+#~ msgid "&Format:"
+#~ msgstr "Datuma formāts"
+
+#, fuzzy
+#~ msgid "Ranges"
+#~ msgstr "Oranža"
+
+#, fuzzy
+#~ msgid "Update"
+#~ msgstr "Datums"
+
+#, fuzzy
+#~ msgid "Import columns:"
+#~ msgstr "Importēt dokumentu"
+
+#, fuzzy
+#~ msgid "Import lines:"
+#~ msgstr "Importēt stilu"
+
+#, fuzzy
+#~| msgid "Author"
+#~ msgid "to"
+#~ msgstr "Autors"
+
+#, fuzzy
+#~| msgid "Custom Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "Pielāgots dokuments"
+
+#, fuzzy
+#~| msgid "Custom Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "Pielāgots dokuments"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Lock Docker"
+#~ msgstr "Ceļvedis Līnijas"
+
+#~ msgid "Keywords:"
+#~ msgstr "Atslēgvārdi:"
+
+#~ msgid "Subject:"
+#~ msgstr "Temats:"
+
+#~ msgid "Last printed:"
+#~ msgstr "Pēdējo reizi drukāts:"
+
+#~ msgid "Total editing time:"
+#~ msgstr "Kopējas labošanas laiks:"
+
+#, fuzzy
+#~ msgid "Encryption:"
+#~ msgstr "Apraksts:"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "Nosaukums:"
+
+#~ msgid "Revision number:"
+#~ msgstr "Revīzijas numurs:"
+
+#~ msgid "Modified:"
+#~ msgstr "Modificēts:"
+
+#, fuzzy
+#~ msgid "Comments:"
+#~ msgstr "Komentārs"
+
+#~ msgid "Created:"
+#~ msgstr "Izveidots:"
+
+#, fuzzy
+#~| msgid "Edit Path"
+#~ msgid "Path:"
+#~ msgstr "Rediģēt ceļu"
+
+#~ msgid "&Reset"
+#~ msgstr "&Atstatīt"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Language:"
+#~ msgstr "Ielīmēt tekstu"
+
+#~ msgid "General"
+#~ msgstr "Pamata"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Last saved by"
+#~ msgstr "Ielīmēt tekstu"
+
+#, fuzzy
+#~ msgid "Do not decrypt"
+#~ msgstr "Apraksts:"
+
+#, fuzzy
+#~ msgid "D&ecrypt"
+#~ msgstr "Apraksts:"
+
+#, fuzzy
+#~ msgid "Do not encrypt"
+#~ msgstr "Apraksts:"
+
+#, fuzzy
+#~ msgid "This document is not encrypted"
+#~ msgstr "Šis neizskatās pēc MathML dokumenta."
+
+#, fuzzy
+#~ msgid "This document does not support encryption"
+#~ msgstr "Šis neizskatās pēc MathML dokumenta."
+
+#, fuzzy
+#~ msgid "Confirm Decrypt"
+#~ msgstr "Apstiprināt eksportēšanu"
+
+#, fuzzy
+#~ msgid "Decrypt"
+#~ msgstr "Apraksts:"
+
+#, fuzzy
+#~ msgid "Save Document"
+#~ msgstr "Saglabāt dokumentu kā"
+
+#, fuzzy
+#~ msgid "Change Filetype"
+#~ msgstr "Mainīt mainīgā apakštipu"
+
+#, fuzzy
+#~ msgid "Change"
+#~ msgstr "Mainīt reģistru"
+
+#, fuzzy
+#~ msgid "Remove"
+#~ msgstr "Aizvākt rindu"
+
+#, fuzzy
+#~| msgid "Palettes"
+#~ msgid "Open palette"
+#~ msgstr "Paletes"
+
+#, fuzzy
+#~| msgid "Palettes"
+#~ msgid "Save palette"
+#~ msgstr "Paletes"
+
+#, fuzzy
+#~| msgid "Bookmark name:"
+#~ msgid "Color name:"
+#~ msgstr "Grāmatzīmes nosaukums:"
+
+#, fuzzy
+#~| msgid "Palettes"
+#~ msgid "Palette"
+#~ msgstr "Paletes"
+
+#, fuzzy
+#~| msgid "Remove Column"
+#~ msgid "Add/Remove Colors"
+#~ msgstr "Aizvākt kolonnu"
+
+#, fuzzy
+#~| msgid "Palettes"
+#~ msgid "Testing: OpenFile"
+#~ msgstr "Paletes"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFile"
+#~ msgstr "Trūkst importa filtrs"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "Trūkst importa filtrs"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: Import Directory"
+#~ msgstr "Importēt dokumentu"
+
+#, fuzzy
+#~| msgid "Palettes"
+#~ msgid "Testing: SaveFile"
+#~ msgstr "Paletes"
+
+#, fuzzy
+#~| msgid "Palettes"
+#~ msgid "Open File"
+#~ msgstr "Paletes"
+
+#, fuzzy
+#~| msgid "Palettes"
+#~ msgid "Open Files"
+#~ msgstr "Paletes"
+
+#, fuzzy
+#~| msgid "Choose Filter"
+#~ msgid "Filter:"
+#~ msgstr "Filtra izvēle"
+
+#, fuzzy
+#~ msgid "TextLabel"
+#~ msgstr "Lavanda"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "Named"
+#~ msgstr "Nosaukums:"
+
+#, fuzzy
+#~| msgid "Palettes"
+#~ msgid "Save File"
+#~ msgstr "Paletes"
+
+#, fuzzy
+#~ msgid "Import Files"
+#~ msgstr "Importēt stilu"
+
+#, fuzzy
+#~ msgid "Import File"
+#~ msgstr "Importēt stilu"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Directory"
+#~ msgstr "Importēt dokumentu"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "Nav"
+
+#, fuzzy
+#~| msgid "Change Case"
+#~ msgid "Change the filling gradient"
+#~ msgstr "Mainīt reģistru"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Icon and Text"
+#~ msgstr "Teksts"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgid "Bottom side"
+#~ msgstr "Automātiska izlīdzināšana"
+
+#, fuzzy
+#~| msgid "Left indent"
+#~ msgid "Left side"
+#~ msgstr "Kreisā atkāpe"
+
+#, fuzzy
+#~| msgid "Right indent"
+#~ msgid "Right side"
+#~ msgstr "Labā atkāpe"
+
+#~ msgid "Page Layout"
+#~ msgstr "Lappuses izkārtojums"
+
+#, fuzzy
+#~| msgid "Empty Document"
+#~ msgid "Apply to document"
+#~ msgstr "Tukšs dokuments"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgid "Left Edge:"
+#~ msgstr "Kreisais:"
+
+#, fuzzy
+#~| msgid "Right:"
+#~ msgid "Right Edge:"
+#~ msgstr "Labais:"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Binding Edge:"
+#~ msgstr "Pēdējo reizi drukāts"
+
+#, fuzzy
+#~| msgid "Page Size"
+#~ msgid "Page Edge:"
+#~ msgstr "Lappuses izmērs"
+
+#, fuzzy
+#~ msgid "Facing Pages:"
+#~ msgstr "Pielāgot lappusei"
+
+#, fuzzy
+#~ msgid "Facing pages"
+#~ msgstr "Pielāgot lappusei"
+
+#, fuzzy
+#~| msgid "Page Layout"
+#~ msgid "Page Layout:"
+#~ msgstr "Lappuses izkārtojums"
+
+#, fuzzy
+#~| msgid "a spreadsheet"
+#~ msgid "Page spread"
+#~ msgstr "tabullapa"
+
+#~ msgid "Unit:"
+#~ msgstr "Vienība:"
+
+#~ msgid "Size:"
+#~ msgstr "Izmērs:"
+
+#, fuzzy
+#~ msgid "Width:"
+#~ msgstr "&Platums:"
+
+#, fuzzy
+#~ msgid "Height:"
+#~ msgstr "&Augstums:"
+
+#, fuzzy
+#~ msgid "Orientation:"
+#~ msgstr "prezentācija"
+
+#, fuzzy
+#~| msgid "Language:"
+#~ msgid "Facing pages:"
+#~ msgstr "Valoda:"
+
+#, fuzzy
+#~| msgid "Single"
+#~ msgid "Single sided"
+#~ msgstr "Viena"
+
+#, fuzzy
+#~ msgid "Text direction:"
+#~ msgstr "&Teksta krāsa:"
+
+#, fuzzy
+#~ msgid "Automatic"
+#~ msgstr "Autoietvērējs"
+
+#, fuzzy
+#~| msgid "String:"
+#~ msgid "Left to right"
+#~ msgstr "Virkne:"
+
+#, fuzzy
+#~| msgid "Right indent"
+#~ msgid "Right to left"
+#~ msgstr "Labā atkāpe"
+
+#~ msgid "Margins"
+#~ msgstr "Maliņas"
+
+#, fuzzy
+#~ msgid "Top:"
+#~ msgstr "&Augšā:"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Binding edge:"
+#~ msgstr "Pēdējo reizi drukāts"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page edge:"
+#~ msgstr "Lappuses priekšskatījums"
+
+#, fuzzy
+#~| msgid "Align Auto"
+#~ msgid "Bottom:"
+#~ msgstr "Automātiska izlīdzināšana"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "Importēt dokumentu"
+
+#, fuzzy
+#~| msgid "Download"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "Lejuplādēt"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~| msgid "Choose Filter"
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "Filtra izvēle"
+
+#, fuzzy
+#~ msgid "Remove from this tag"
+#~ msgstr "Noņemt saiti"
+
+#, fuzzy
+#~ msgid "Miter join"
+#~ msgstr "Maliņas"
+
+#, fuzzy
+#~ msgid "Bevel join"
+#~ msgstr "Noņemt saiti"
+
+#, fuzzy
+#~ msgid "Miter limit"
+#~ msgstr "Maliņas"
+
+#, fuzzy
+#~ msgid "Rename tag"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~ msgid "Delete this tag"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~ msgid "Undelete"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~ msgid "Tool Options"
+#~ msgstr "Pabeigšanas opcijas"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "deselect item"
+#~ msgstr "Izvēlēties rakstzīmi"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "select item"
+#~ msgstr "Izvēlēties rakstzīmi"
+
+#, fuzzy
+#~| msgid "%1%"
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1%"
+
+#, fuzzy
+#~ msgctxt "Static Image"
+#~ msgid "Static"
+#~ msgstr "Autoietvērējs"
+
+#~ msgid "Value (brightness)"
+#~ msgstr "Vērtība (gaišums)"
+
+#~ msgid "Cyan"
+#~ msgstr "Ciāna"
+
+#~ msgid "Magenta"
+#~ msgstr "Fuksīna"
+
+#~ msgid "Yellow"
+#~ msgstr "Dzeltens"
+
+#~ msgid "Black"
+#~ msgstr "Melns"
+
+#, fuzzy
+#~ msgid "Opacity:"
+#~ msgstr "Pilsēta:"
+
+#, fuzzy
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "&Noklusētais"
+
+#, fuzzy
+#~| msgid "Confirm Save"
+#~ msgid "Configuration..."
+#~ msgstr "Apstiprināt saglabāšanu"
+
+#, fuzzy
+#~ msgid "&Tools"
+#~ msgstr "Noklusējuma krāsa"
+
+#, fuzzy
+#~| msgid "Completion"
+#~ msgid "Color Selector"
+#~ msgstr "Pabeigšana"
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Database file \"%1\" does not exist."
+#~ msgstr "Fails %1 neeksistē."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist in the database."
+#~ msgstr "Fails %1 neeksistē."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not compact database \"%1\"."
+#~ msgstr "Neizdevās nolasīt pakotni \"%1\"."
+
+#, fuzzy
+#~ msgid "Do you want to open file \"%1\" as read-only?"
+#~ msgstr "Vai tiešām vēlaties dzēst šo sagatavi?"
+
+#, fuzzy
+#~| msgid "Could not read the beginning of the file."
+#~ msgid "Could not gain exclusive access for writing the file."
+#~ msgstr "Nevar nolasīt faila sākumu."
+
+#, fuzzy
+#~| msgid "Could not load picture."
+#~ msgid "Could not close busy database."
+#~ msgstr "Nevar ielādēt attēlu."
+
+#, fuzzy
+#~| msgid "Could not export file."
+#~ msgid "Could not remove file \"%1\"."
+#~ msgstr "Nevar eksportēt failu."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist"
+#~ msgstr "Fails %1 neeksistē."
+
+#, fuzzy
+#~| msgid "Change Shadow"
+#~ msgid "Grid Snap"
+#~ msgstr "Mainīt ēnojumu"
+
+#, fuzzy
+#~ msgid "Formatting"
+#~ msgstr "Datuma formāts"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: OpenDirectories"
+#~ msgstr "Importēt dokumentu"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: ImportDirectories"
+#~ msgstr "Importēt dokumentu"
+
+#, fuzzy
+#~| msgid "Palettes"
+#~ msgid "Testing: SaveFiles"
+#~ msgstr "Paletes"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Directories"
+#~ msgstr "Importēt dokumentu"
+
+#, fuzzy
+#~| msgid "Palettes"
+#~ msgid "Save Files"
+#~ msgstr "Paletes"
+
+#, fuzzy
+#~ msgid "Create Path"
+#~ msgstr "Izveidot sagatavi"
+
+#~ msgid "Error!"
+#~ msgstr "Kļūda!"
+
+#, fuzzy
+#~| msgid "Completion"
+#~ msgid "Locations"
+#~ msgstr "Pabeigšana"
+
+#, fuzzy
+#~| msgid "Version"
+#~ msgid "Region"
+#~ msgstr "Versija"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not save\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not add entry\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Nevar saglabāt\n"
+#~ "%1"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not save\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not save iCal file\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Nevar saglabāt\n"
+#~ "%1"
+
+#, fuzzy
+#~| msgid "Completion"
+#~ msgid "&Location:"
+#~ msgstr "Pabeigšana"
+
+#, fuzzy
+#~| msgid "Street:"
+#~ msgid "&Start:"
+#~ msgstr "Iela:"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Timezone"
+#~ msgstr "Laiks:"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "&Name:"
+#~ msgstr "Nosaukums:"
+
+#, fuzzy
+#~| msgid "Number:"
+#~ msgid "&Phone Number:"
+#~ msgstr "Numurs:"
+
+#, fuzzy
+#~ msgid "&Home Page:"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Contact Information"
+#~ msgstr "Dokumenta informācija"
+
+#, fuzzy
+#~ msgid "Import contact"
+#~ msgstr "Importēt dokumentu"
+
+#, fuzzy
+#~| msgid "E&xport..."
+#~ msgid "Export as vcard..."
+#~ msgstr "E&ksportēt..."
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "&Name"
+#~ msgstr "Nosaukums:"
+
+#, fuzzy
+#~| msgid "Edit Path"
+#~ msgid "The Earth"
+#~ msgstr "Rediģēt ceļu"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Location Information"
+#~ msgstr "Dokumenta informācija"
+
+#, fuzzy
+#~ msgid "People"
+#~ msgstr "&Aizvietot:"
+
+#~ msgid ""
+#~ "A document with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "Dokuments ar šādu nosaukumu jau eksistē.\n"
+#~ "Vai vēlaties to pārrakstīt?"
+
+#, fuzzy
+#~| msgid "Unknown KOffice MimeType %s. Check your installation."
+#~ msgid "Unknown Calligra MimeType %1. Check your installation."
+#~ msgstr "Nezināms KOffice MIME tips %s. Pārbaudiet instalāciju."
+
+#~ msgid "%1 (Uncompressed XML Files)"
+#~ msgstr "%1 (Nekompresēts XML fails)"
+
+#~ msgid "%1 (Flat XML File)"
+#~ msgstr "%1 (Izplāts XML fails)"
+
+#~ msgid "%1 (%2 Compatible)"
+#~ msgstr "%1 (Savietojams ar %2)"
+
+#~ msgid "Save Document As"
+#~ msgstr "Saglabāt dokumentu kā"
+
+#~ msgid "Export Document As"
+#~ msgstr "Eksportēt dokumentu kā"
+
+#, fuzzy
+#~| msgid "E&xport..."
+#~ msgid "Export to PDF"
+#~ msgstr "E&ksportēt..."
+
+#, fuzzy
+#~ msgid "Slide Background"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~ msgid "Document background"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~ msgid "&Cancel"
+#~ msgstr "Mainīt reģistru"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Even Pages(s)"
+#~ msgstr "Ielīmēt tekstu"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Any Pages(s)"
+#~ msgstr "Kompānijas nosaukums"
+
+#, fuzzy
+#~| msgid "Add..."
+#~ msgid "&Edit"
+#~ msgstr "Pievienot..."
+
+#, fuzzy
+#~| msgid "Colors"
+#~ msgid "&Close"
+#~ msgstr "Krāsas"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgid "Dodge"
+#~ msgstr "Nav"
+
+#, fuzzy
+#~ msgid "Hard light"
+#~ msgstr "&Augstums:"
+
+#, fuzzy
+#~| msgid "String:"
+#~ msgid "Soft light"
+#~ msgstr "Virkne:"
+
+#, fuzzy
+#~| msgid "Change Shadow"
+#~ msgid "Show Shadow"
+#~ msgstr "Mainīt ēnojumu"
+
+#, fuzzy
+#~ msgid "Angle:"
+#~ msgstr "Viena"
+
+#, fuzzy
+#~| msgid "Shadow:"
+#~ msgid "Offset:"
+#~ msgstr "Ēnojums:"
+
+#, fuzzy
+#~| msgid "&Color:"
+#~ msgid "Color:"
+#~ msgstr "&Krāsa:"
+
+#, fuzzy
+#~| msgid "&Style:"
+#~ msgid "Style:"
+#~ msgstr "&Stils:"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bookmark"
+#~ msgstr "Ievietot līnijas pārtraukumu"
+
+#, fuzzy
+#~ msgid "Insert Table"
+#~ msgstr "Ievietot tekstu"
+
+#, fuzzy
+#~ msgid "Insert Row Above"
+#~ msgstr "Ievietot tekstu"
+
+#, fuzzy
+#~ msgid "Insert Column Left"
+#~ msgstr "Ievietot saiti"
+
+#, fuzzy
+#~ msgid "Insert Column Right"
+#~ msgstr "Ievietot saiti"
+
+#, fuzzy
+#~ msgid "Delete Column"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~ msgid "Delete Row"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Ievietot tekstu"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Ievietot līnijas pārtraukumu"
+
+#~ msgid "Embedding Object"
+#~ msgstr "Iegults objekts"
+
+#~ msgid "I&mport..."
+#~ msgstr "I&mportēt..."
+
+#~ msgid "&Default"
+#~ msgstr "&Noklusētais"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgid "Background Tool"
+#~ msgstr "&Fona krāsa:"
+
+#, fuzzy
+#~ msgid "Background editing tool"
+#~ msgstr "Kopējas labošanas laiks:"
+
+#, fuzzy
+#~ msgid "Use master background"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Separate paths"
+#~ msgstr "Noklusējuma ceļš"
+
+#~ msgid ""
+#~ "An autosaved file for an unnamed document exists in %1.\n"
+#~ "This file is dated %2\n"
+#~ "Do you want to open it?"
+#~ msgstr ""
+#~ "Šim dokumentam eksistē nenosaukts autosaglabāšanas fails iekš %1.\n"
+#~ "Šis fails ir datējams ar %2\n"
+#~ "Vai gribat to atvērt?"
+
+#, fuzzy
+#~ msgid "&Delete Personal Data"
+#~ msgstr "Dzēst personīgos datus"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shapes"
+#~ msgstr "Dzēst tekstu"
+
+#, fuzzy
+#~ msgid "Substract"
+#~ msgstr "Kopsavilkums"
+
+#, fuzzy
+#~ msgid "Inverse Substract"
+#~ msgstr "Kopsavilkums"
+
+#, fuzzy
+#~ msgid ""
+#~ "No personal contact data set, please use the "
+#~ "option                                     \"Set as Personal Contact Data"
+#~ "\" from the \"Edit\"     menu in KAddressbook to set one."
+#~ msgstr "Nē Uzstādīt Personisks Saskarsme Dati Rediģēt."
+
+#~ msgid "&Load From Address Book"
+#~ msgstr "&Ielādēt no adrešu grāmatiņas"
+
+#, fuzzy
+#~| msgid "Shadow:"
+#~ msgid "Shadow Angle:"
+#~ msgstr "Ēnojums:"
+
+#, fuzzy
+#~| msgid "&Shadow color:"
+#~ msgid "Shadow Color:"
+#~ msgstr "Ē&nojuma krāsa:"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgid "Set Horizontal Alignment"
+#~ msgstr "Vertikālā izlīdzināšana :"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgid "Line Break"
+#~ msgstr "Mainīt apmales"
+
+#, fuzzy
+#~ msgid "Hide Grid"
+#~ msgstr "Ceļvedis Līnijas"
+
+#, fuzzy
+#~ msgid "Hide Guides"
+#~ msgstr "Ceļvedis Līnijas"
+
+#~ msgid "&Close All Views"
+#~ msgstr "&Aizvērt visus skatus"
+
+#~ msgid "&Split View"
+#~ msgstr "&Sadalīt skatu"
+
+#~ msgid "&Remove View"
+#~ msgstr "A&izvākt skatu"
+
+#~ msgid "Splitter &Orientation"
+#~ msgstr "Sadalītāja &orientācija"
+
+#~ msgid "&Horizontal"
+#~ msgstr "&Horizontāls"
+
+#~ msgid "&Vertical"
+#~ msgstr "&Vertikāls"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Printing page %1"
+#~ msgstr "Pēdējo reizi drukāts"
+
+#, fuzzy
+#~ msgid "Form"
+#~ msgstr "Datuma formāts"
+
+#, fuzzy
+#~| msgid "I&mport..."
+#~ msgid "Import"
+#~ msgstr "I&mportēt..."
+
+#, fuzzy
+#~ msgid "Share"
+#~ msgstr "Vilnītis"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Opacy"
+#~ msgstr "Kompānijas nosaukums"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Alpha"
+#~ msgstr "Kompānijas nosaukums"
+
+#, fuzzy
+#~ msgid "Light"
+#~ msgstr "Viegli Zaļa"
+
+#~ msgid "KOffice"
+#~ msgstr "KOffice"
+
+#~ msgid "KOffice Storage"
+#~ msgstr "KOffice glabātuve"
+
+#, fuzzy
+#~ msgid "Barcode Format"
+#~ msgstr "Datuma formāts"
+
+#, fuzzy
+#~ msgid "Field Font"
+#~ msgstr "Ievietot saiti"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Pie"
+#~ msgstr "Laiks:"
+
+#, fuzzy
+#~| msgid "Version"
+#~ msgid "Ring"
+#~ msgstr "Versija"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Polar"
+#~ msgstr "Krāsa:"
+
+#, fuzzy
+#~ msgid "Chart Type"
+#~ msgstr "Datums"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgid "Stacked"
+#~ msgstr "Space"
+
+#, fuzzy
+#~| msgid "Recent file:"
+#~ msgid "Percent"
+#~ msgstr "Nesens fails:"
+
+#, fuzzy
+#~| msgid "Bookmark name:"
+#~ msgid "Color Scheme"
+#~ msgstr "Grāmatzīmes nosaukums:"
+
+#, fuzzy
+#~ msgid "Antialiased"
+#~ msgstr "Virsraksts"
+
+#, fuzzy
+#~ msgid "Display Legend"
+#~ msgstr "Sekunde"
+
+#, fuzzy
+#~| msgid "a chart"
+#~ msgid "Chart"
+#~ msgstr "diagramma"
+
+#, fuzzy
+#~ msgid "Pan Tool"
+#~ msgstr "Noklusējuma krāsa"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Out"
+#~ msgstr "Pielāgots"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Paste Slides"
+#~ msgstr "Ielīmēt tekstu"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgid "Insert Linebreak"
+#~ msgstr "Ievietot līnijas pārtraukumu"
+
+#, fuzzy
+#~ msgid "&Insert"
+#~ msgstr "&Ievietot:"
+
+#~ msgid "Insert the selected character in the text"
+#~ msgstr "Ievietot izvēlēto rakstzīmi tekstā"
+
+#, fuzzy
+#~ msgid "Resize Panel Forward"
+#~ msgstr "Izmainīt Panelis Nosūtīt"
+
+#, fuzzy
+#~ msgid "Resize Panel Reverse"
+#~ msgstr "Izmainīt Panelis Reverss"
+
+#~ msgid "Access Keys"
+#~ msgstr "Pieejas taustiņi"
+
+#~ msgid "Enable word completion"
+#~ msgstr "Aktivizēt vārdu pabeigšanu"
+
+#~ msgid ""
+#~ "Toggle autocompletion on and off: if this is checked then autocompletion "
+#~ "will be enabled."
+#~ msgstr ""
+#~ "Ieslēdz/izslēdz autopabeigšanu. Ja ir iezīmēts, tad autopabeigšana "
+#~ "darbosies."
+
+#~ msgid ""
+#~ "Suggestion list for autocompletion: contains all the words that will be "
+#~ "autocompleted."
+#~ msgstr ""
+#~ "Autopabeigšanas ieteikumu saraksts: satur visus autopabeigšanai pieejamos "
+#~ "vārdus."
+
+#~ msgid ""
+#~ "By clicking this button you can add manually an individual word to the "
+#~ "completion list."
+#~ msgstr ""
+#~ "Klikšķinot uz šīs pogas jūs varat pievienot jaunu vārdu autopabeigšanas "
+#~ "vārdu sarakstam."
+
+#~ msgid ""
+#~ "To remove words from the completion list, select the word with the left "
+#~ "mouse button from the list, then click this button."
+#~ msgstr ""
+#~ "Lai izņemtu vārdu no saraksta, izvēlieties to ar peles kreiso taustiņu un "
+#~ "tad klikšķiniet uz šīs pogas."
+
+#~ msgid "Automatically add new words to suggestion list"
+#~ msgstr "Automātiski pievienot jaunus vardus ieteikumu sarakstam"
+
+#~ msgid ""
+#~ "If this option is enabled, any word equal to or longer than the "
+#~ "\"Characters needed\" typed in this document will automatically be added "
+#~ "to the list of words used by the completion."
+#~ msgstr ""
+#~ "Ja šī opcija ir ieslēgta, tad jebkurš dokumentā ierakstīts vārds, kurš ir "
+#~ "garāks par \"nepieciešamo rakstzīmju skaitu\", tiks pievienots "
+#~ "autopabeigšanas vārdu sarakstam."
+
+#~ msgid "Completion Options"
+#~ msgstr "Pabeigšanas opcijas"
+
+#~ msgid "Show words in tooltip"
+#~ msgstr "Rādīt vārdus paskaidrē"
+
+#, fuzzy
+#~ msgid ""
+#~ "If this option is enabled, a tool tip box will appear when you type the "
+#~ "beginning of a word that exists in the completion list. To complete the "
+#~ "word, press the key you set to accept suggestions in the \"Key to accept "
+#~ "suggestion\" drop-down list."
+#~ msgstr "If Uz Atslēga."
+
+#~ msgid ""
+#~ "This sets the maximum number of words in the completion list. All "
+#~ "additional words will not be included in the list. You can select any "
+#~ "value from 1 to 500. This option keeps the list from becoming too "
+#~ "cumbersome.\n"
+#~ "This option is most important when Automatically add words to completion "
+#~ "list is enabled."
+#~ msgstr ""
+#~ "Šis parametrs uzstāda maksimālo autopabeigšanas funkcijai pieejamo vārdu "
+#~ "skaitu. Pēc šī skaita sasniegšanas, papildus vārdi sarakstam netiks "
+#~ "pievienoti. Tas palīdz autopabeigšanas funkcijai nekļūt traucējošai. "
+#~ "Pieļaujamais saraksta lielums ir no 1 līdz 500.\n"
+#~ "Īpaši nozīmīga šī opcija kļūst tad, ja ir ieslēgta vārdu automātiskā "
+#~ "pievienošana sarakstam."
+
+#~ msgid "Characters needed:"
+#~ msgstr "Nepieciešamais rakstzīmju skaits:"
+
+#~ msgid "Suggest words:"
+#~ msgstr "Ieteikt vārdus:"
+
+#, fuzzy
+#~ msgid ""
+#~ "Use this spinbox/slider combination to prevent automatically adding short "
+#~ "words to the completion list. You can select any value from 5-100 and the "
+#~ "words will need to be at least the number of characters set here to be "
+#~ "added to the list."
+#~ msgstr "Izmantošana."
+
+#~ msgid "Append space"
+#~ msgstr "Pievienot atstarpi"
+
+#, fuzzy
+#~ msgid ""
+#~ "If checked, it adds a single space to the end of a word after "
+#~ "autocompletion, this means it is not necessary to add the space manually "
+#~ "for the next word."
+#~ msgstr "If."
+
+#, fuzzy
+#~ msgid "Key to accept suggestion:"
+#~ msgstr "Atslēga:"
+
+#, fuzzy
+#~ msgid ""
+#~ "Set the key you want to use when an autocompleted word is suggested to "
+#~ "you and you want to accept it. You can choose Enter, Tab, Space, End or "
+#~ "Right."
+#~ msgstr "Uzstādīt Reģistrēt šķirklis Sarindot ar atstarpēm Gals Taisnīgi."
+
+#~ msgid "Make Default"
+#~ msgstr "Uzstādīt kā noklusēto"
+
+#, fuzzy
+#~ msgid ""
+#~ "Completion is configured per document. Making this list the default will "
+#~ "allow you to use it for new documents automatically. A dialog will appear "
+#~ "to inform you that the list will be used for all documents from now on."
+#~ msgstr "Komplektēšana."
+
+#~ msgid "C&ustom"
+#~ msgstr "&Pielāgots"
+
+#~ msgid "&Insert:"
+#~ msgstr "&Ievietot:"
+
+#~ msgid "Paragraph Background Color"
+#~ msgstr "Rindkopas fona krāsa"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>Paragraph Background Color</p>\n"
+#~ "\n"
+#~ "<p>The paragraph background color appears\n"
+#~ "between the left and right margins of a\n"
+#~ "paragraph.</p>\n"
+#~ "\n"
+#~ "<p>If the text has a background color set, then\n"
+#~ "the text background will appear 'on top' of the\n"
+#~ "paragraph background.  In this case, the paragraph\n"
+#~ "background will still show on parts of the paragraph\n"
+#~ "that have no text (usually on the last line, between\n"
+#~ "the end of the text and the margin).</p>"
+#~ msgstr ""
+#~ "<p> Rindkopa Izcelšanās Krāsa</p>\n"
+#~ "<p></p>\n"
+#~ "<p> If</p>"
+
+#~ msgid "Borders"
+#~ msgstr "Apmales"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>Paragraph Borders</p>\n"
+#~ "\n"
+#~ "<p>The preview shows what the currently \n"
+#~ "selected paragraph borders will look like.</p>\n"
+#~ "\n"
+#~ "<p>To <i>add</i> a new border: Select the desired style,\n"
+#~ "width and color.  Click the toggle button that corresponds\n"
+#~ "to that border.</p>\n"
+#~ "\n"
+#~ "<p>To <i>remove</i> an existing border: Either click on the\n"
+#~ "border to be removed in the preview, or click the\n"
+#~ "toggle button corresponding to that border.</p>\n"
+#~ "\n"
+#~ "<p>To <i>modify</i> a border: Select the desired style,\n"
+#~ "width and color, then click on the border to be\n"
+#~ "modified in the preview.</p>"
+#~ msgstr ""
+#~ "<p> Rindkopa Apmales</p>\n"
+#~ "<p></p>\n"
+#~ "<p> Uz<i></i> Atlasīt Klikšķis</p>\n"
+#~ "<p> Uz<i></i></p>\n"
+#~ "<p> Uz<i></i> Atlasīt</p>"
+
+#~ msgid "&Width:"
+#~ msgstr "&Platums:"
+
+#~ msgid "Add/remove left paragraph border"
+#~ msgstr "Pievienot/noņemt kreiso rindkopas apmali"
+
+#~ msgid "Toggles the left paragraph border on or off."
+#~ msgstr "Ieslēdz/izslēdz kreiso rindkopas apmali"
+
+#~ msgid "Add/remove right paragraph border"
+#~ msgstr "Pievienot/noņemt labo rindkopas apmali"
+
+#~ msgid "Toggles the right paragraph border on or off."
+#~ msgstr "Ieslēdz/izslēdz labo rindkopas apmali"
+
+#~ msgid "Add/remove top paragraph border"
+#~ msgstr "Pievienot/noņemt augšējo rindkopas apmali"
+
+#~ msgid "Toggles the top paragraph border on or off."
+#~ msgstr "Ieslēdz/izslēdz augšējo rindkopas apmali"
+
+#~ msgid "Add/remove bottom paragraph border"
+#~ msgstr "Pievienot/noņemt apakšējo rindkopas apmali"
+
+#~ msgid "Toggles the bottom paragraph border on or off."
+#~ msgstr "Ieslēdz/izslēdz apakšējo rindkopas apmali"
+
+#~ msgid "&Merge with next paragraph"
+#~ msgstr "&Apvienot ar nākošo rindkopu"
+
+#~ msgid ""
+#~ "Merges the border style of the current paragraph with the next paragraph"
+#~ msgstr "Apvieno pašreizējās rindkopas apmales stilu ar nākamo rindkopu"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>Merge with next paragraph</p>\n"
+#~ "\n"
+#~ "<p>When this option is checked, no top or bottom borders\n"
+#~ "will appear between consecutive paragraphs with the\n"
+#~ "same style.  Top and Bottom borders will only appear between\n"
+#~ "paragraphs with different styles.</p>\n"
+#~ "\n"
+#~ "<p>When this option is unchecked, top and bottom borders\n"
+#~ "always appear at the top and bottom of paragraphs with this style,\n"
+#~ "regardless of the style of the preceding and subsequent paragraphs.</p>"
+#~ msgstr ""
+#~ "<p> Sapludināšana</p>\n"
+#~ "<p> Augšā Apakšā</p>\n"
+#~ "<p></p>"
+
+#~ msgid "String:"
+#~ msgstr "Virkne:"
+
+#~ msgid "Boolean:"
+#~ msgstr "Loģiskais mainīgais:"
+
+#~ msgid "true"
+#~ msgstr "patiess"
+
+#~ msgid "false"
+#~ msgstr "aplams"
+
+#~ msgid "Date:"
+#~ msgstr "Datums:"
+
+#, fuzzy
+#~ msgid "Set Guide Line Position"
+#~ msgstr "Uzstādīt Ceļvedis Līnija Amats"
+
+#, fuzzy
+#~ msgid "Add Guide Line"
+#~ msgstr "Pievienot Ceļvedis Līnija"
+
+#, fuzzy
+#~ msgid "Horizontal"
+#~ msgstr "&Horizontāls"
+
+#, fuzzy
+#~ msgid "Vertical"
+#~ msgstr "&Vertikāls"
+
+#~ msgid "&Position:"
+#~ msgstr "&Novietojums:"
+
+#, fuzzy
+#~ msgid "Guide Line"
+#~ msgstr "Ceļvedis Līnija"
+
+#, fuzzy
+#~ msgid "Guide Lines"
+#~ msgstr "Ceļvedis Līnijas"
+
+#~ msgid "No handler found for %1"
+#~ msgstr "Apdarinātājs priekš %1 nav atrasts"
+
+#~ msgid ""
+#~ "This document contains an external link to a remote document\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Šis dokuments satur ārējo saiti uz attālināto dokumentu\n"
+#~ "%1"
+
+#~ msgid "Confirmation Required"
+#~ msgstr "Pieprasīts apstiprinājums"
+
+#~ msgid "Skip"
+#~ msgstr "Izlaist"
+
+#~ msgid ""
+#~ "Could not load external document %1:\n"
+#~ "%2"
+#~ msgstr ""
+#~ "Nevar ielādēt ārējo dokumentu %1:\n"
+#~ "%2"
+
+#~ msgid "Na&me:"
+#~ msgstr "Nosauku&ms:"
+
+#~ msgid "Protect si&ze and position"
+#~ msgstr "Aizsargāt i&zmēru un novietojumu"
+
+#~ msgid "Keep &aspect ratio"
+#~ msgstr "Saglabāt &attiecību"
+
+#~ msgid "&Height:"
+#~ msgstr "&Augstums:"
+
+#~ msgid "&Top:"
+#~ msgstr "&Augšā:"
+
+#~ msgid "&Left:"
+#~ msgstr "&Kreisā:"
+
+#~ msgid "Context Help"
+#~ msgstr "Konteksta palīdzība"
+
+#~ msgid "Here will be shown help according to your actions"
+#~ msgstr "Šeit tiks rādīta palīdzība saskaņā ar jūsu darbībām"
+
+#~ msgid "All values are given in %1."
+#~ msgstr "Visas vērtības ir dotas %1."
+
+#~ msgid "&Size:"
+#~ msgstr "Izmēr&s:"
+
+#~ msgid "&Portrait"
+#~ msgstr "&Portrets"
+
+#~ msgid "La&ndscape"
+#~ msgstr "Ai&nava"
+
+#~ msgid "The page width is smaller than the left and right margins."
+#~ msgstr "Lapas platums ir mazāks nekā labā un kreisā maliņa."
+
+#~ msgid "Page Layout Problem"
+#~ msgstr "Lapuuses izkārtojuma problēma"
+
+#~ msgid "The page height is smaller than the top and bottom margins."
+#~ msgstr "Lappuses augstums ir mazāks nekā augšējā un apakšējā maliņa."
+
+#~ msgctxt "Custom size"
+#~ msgid "Custom"
+#~ msgstr "Pielāgots"
+
+#~ msgid "Insert Object"
+#~ msgstr "Ievietot objektu"
+
+#~ msgid "Column spacing:"
+#~ msgstr "Kolonnu atstatums:"
+
+#, fuzzy
+#~ msgid "Footnote/ Endnote"
+#~ msgstr "Vēre/beigu vēre"
+
+#~ msgid "Spacing between footnote and body:"
+#~ msgstr "Atstarpe starp tekstu un vēri:"
+
+#~ msgid "Different footer for even and odd pages"
+#~ msgstr "Izmatot atšķirīgu kājeni pāra un nepāra lapām"
+
+#~ msgid "Different footer for the first page"
+#~ msgstr "Izmatot atšķirīgu kājeni pirmajai lapai"
+
+#~ msgid "Spacing between footer and body:"
+#~ msgstr "Atstatums starp kājeni un tekstu:"
+
+#~ msgid "Spacing between header and body:"
+#~ msgstr "Atstatums starp galveni un tekstu:"
+
+#~ msgid "Different header for even and odd pages"
+#~ msgstr "Izmatot atšķirīgu galveni pāra un nepāra lapām"
+
+#~ msgid "Different header for the first page"
+#~ msgstr "Izmatot atšķirīgu galveni pirmajai lapai"
+
+#~ msgid "Page Preview"
+#~ msgstr "Lappuses priekšskatījums"
+
+#~ msgid "Page Size && &Margins"
+#~ msgstr "Lappuses iz&mērs un maliņas"
+
+#, fuzzy
+#~ msgid "H&eader && Footer"
+#~ msgstr "Galv&ene Zemteksts"
+
+#, fuzzy
+#~ msgid "Head Line"
+#~ msgstr "Galvenais Līnija"
+
+#, fuzzy
+#~ msgid "Foot Line"
+#~ msgstr "Pēda Līnija"
+
+#~ msgid "You can insert several tags in the text:"
+#~ msgstr "Jūs tekstā variet ievietot vairākus tagus:"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;sheet&gt; The sheet name</li><li>&lt;page&gt; The current "
+#~ "page</li><li>&lt;pages&gt; The total number of pages</li><li>&lt;name&gt; "
+#~ "The filename or URL</li><li>&lt;file&gt; The filename with complete path "
+#~ "or the URL</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;sheet&gt; Lapas nosaukums</li><li>&lt;page&gt; Pašreizējā "
+#~ "lappuse</li><li>&lt;pages&gt; Kopējais lappušu skaits</li><li>&lt;"
+#~ "name&gt; Faila nosaukums vai URL</li><li>&lt;file&gt; Faila nosaukums ar "
+#~ "pilnu ceļu vai URL</li></ul></qt>"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;time&gt; The current time</li><li>&lt;date&gt; The "
+#~ "current date</li><li>&lt;author&gt; Your full name</li><li>&lt;org&gt; "
+#~ "Your organization</li><li>&lt;email&gt; Your email address</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;time&gt; Pašreizējais laiks</li><li>&lt;date&gt; "
+#~ "Pašreizējais datums</li><li>&lt;author&gt; Jūsu pilnais vārds</li><li>&lt;"
+#~ "org&gt; Jūsu organizācija</li><li>&lt;email&gt; Jūsu e-pasta adrese</li></"
+#~ "ul></qt>"
+
+#~ msgid "Col&umns"
+#~ msgstr "Kolo&nnas"

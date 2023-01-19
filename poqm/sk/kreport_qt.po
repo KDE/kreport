@@ -1,0 +1,5339 @@
+# translation of calligra.po to Slovak
+# Miroslav Vasko <vasko@ies.sk>, 1998.
+# Branislav Gajdos <brian@linuxee.sk>, 2000.
+# Stanislav Visnovsky <visnovsky@nenya.ms.mff.cuni.cz>, 2001,2002.
+# Stanislav Višňovský <visnovsky@nenya.ms.mff.cuni.cz>, 2002.
+# Stanislav Visnovsky <visnovsky@kde.org>, 2003.
+# Richard Fric <Richard.Fric@kdemail.net>, 2006, 2009.
+# Roman Paholík <wizzardsk@gmail.com>, 2012, 2013, 2014, 2015, 2016, 2017.
+# Mthw <jari_45@hotmail.com>, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: calligra\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2018-09-08 15:32+0100\n"
+"Last-Translator: Mthw <jari_45@hotmail.com>\n"
+"Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "Nemôžem spracovať XML dokument."
+
+#: common/KReportDesign.cpp:159
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Chyba v XML dokumente."
+
+#: common/KReportItemBase.cpp:75
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Názov"
+
+#: common/KReportItemBase.cpp:75
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Názov objektu"
+
+#: common/KReportItemBase.cpp:78
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Pozícia"
+
+#: common/KReportItemBase.cpp:79
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Veľkosť"
+
+#: common/KReportItemBase.cpp:112
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Zdroj dát"
+
+#: common/KReportItemLine.cpp:80
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "Počiatočná poloha"
+
+#: common/KReportItemLine.cpp:81
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Konečná poloha"
+
+#: common/KReportItemLine.cpp:83
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "Hrúbka čiary"
+
+#: common/KReportItemLine.cpp:85
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Farba čiary"
+
+#: common/KReportItemLine.cpp:86
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Štýl čiary"
+
+#: common/KReportSectionData.cpp:164
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Oblasť"
+
+#: common/KReportSectionData.cpp:166
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "Výška"
+
+#: common/KReportSectionData.cpp:170
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Farba pozadia"
+
+#: common/KReportUnit.cpp:136
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Neplatný typ"
+
+#: common/KReportUnit.cpp:138
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "Milimetre (mm)"
+
+#: common/KReportUnit.cpp:140
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "Centimetre (cm)"
+
+#: common/KReportUnit.cpp:142
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "Decimetre (dm)"
+
+#: common/KReportUnit.cpp:144
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "Palce (in)"
+
+#: common/KReportUnit.cpp:146
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "Pica (pi)"
+
+#: common/KReportUnit.cpp:148
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "Cicero (cc)"
+
+#: common/KReportUnit.cpp:150
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "Body (pt)"
+
+#: common/KReportUnit.cpp:152
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "Pixely (px)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr "Nepodporovaná jednotka"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Kríž"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr "Tick"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr "Dot"
+
+#: items/check/KReportItemCheck.cpp:80
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "Štýl"
+
+#: items/check/KReportItemCheck.cpp:84
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Farba popredia"
+
+#: items/check/KReportItemCheck.cpp:86
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "Hrúbka čiary"
+
+#: items/check/KReportItemCheck.cpp:88
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Farba čiary"
+
+#: items/check/KReportItemCheck.cpp:89
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Štýl čiary"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Hodnota"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr "Použitá hodnota, ak nie je naviazaná na pole"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Hodnota"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr "Použitá hodnota, ak nie je naviazaná na pole"
+
+#: items/field/KReportItemField.cpp:94
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Vľavo"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Vycentrovať"
+
+#: items/field/KReportItemField.cpp:94
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Vpravo"
+
+#: items/field/KReportItemField.cpp:96
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Horizontálne zarovnanie"
+
+#: items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "Hore"
+
+#: items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Dole"
+
+#: items/field/KReportItemField.cpp:102
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Vertikálne zarovnanie"
+
+#: items/field/KReportItemField.cpp:104
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Písmo"
+
+#: items/field/KReportItemField.cpp:106
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Farba pozadia"
+
+#: items/field/KReportItemField.cpp:107
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Farba popredia"
+
+#: items/field/KReportItemField.cpp:109
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Nepriehľadnosť pozadia"
+
+#: items/field/KReportItemField.cpp:114
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "Hrúbka čiary"
+
+#: items/field/KReportItemField.cpp:116
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Farba čiary"
+
+#: items/field/KReportItemField.cpp:117
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Štýl čiary"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr "Zalomiť slová"
+
+#: items/field/KReportItemField.cpp:120
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr "Môže rásť"
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr "Ustrihnúť"
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Natiahnuť"
+
+#: items/image/KReportItemImage.cpp:120
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "Režim zmeny veľkosti"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Hodnota"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr "Použitá hodnota, ak nie je naviazaná na pole"
+
+#: items/label/KReportItemLabel.cpp:91
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Titulok"
+
+#: items/label/KReportItemLabel.cpp:94
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Vľavo"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Vycentrovať"
+
+#: items/label/KReportItemLabel.cpp:94
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Vpravo"
+
+#: items/label/KReportItemLabel.cpp:96
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Horizontálne zarovnanie"
+
+#: items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "Hore"
+
+#: items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Dole"
+
+#: items/label/KReportItemLabel.cpp:102
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Vertikálne zarovnanie"
+
+#: items/label/KReportItemLabel.cpp:104
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Písmo"
+
+#: items/label/KReportItemLabel.cpp:106
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Farba pozadia"
+
+#: items/label/KReportItemLabel.cpp:107
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Farba popredia"
+
+#: items/label/KReportItemLabel.cpp:109
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Nepriehľadnosť pozadia"
+
+#: items/label/KReportItemLabel.cpp:114
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "Hrúbka čiary"
+
+#: items/label/KReportItemLabel.cpp:116
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Farba čiary"
+
+#: items/label/KReportItemLabel.cpp:117
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Štýl čiary"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Hodnota"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr "Použitá hodnota, ak nie je naviazaná na pole"
+
+#: items/text/KReportItemText.cpp:119
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Vľavo"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Vycentrovať"
+
+#: items/text/KReportItemText.cpp:119
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Vpravo"
+
+#: items/text/KReportItemText.cpp:121
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Horizontálne zarovnanie"
+
+#: items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "Hore"
+
+#: items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Dole"
+
+#: items/text/KReportItemText.cpp:127
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Vertikálne zarovnanie"
+
+#: items/text/KReportItemText.cpp:129
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Písmo"
+
+#: items/text/KReportItemText.cpp:131
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Farba pozadia"
+
+#: items/text/KReportItemText.cpp:132
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Farba popredia"
+
+#: items/text/KReportItemText.cpp:134
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "Hrúbka čiary"
+
+#: items/text/KReportItemText.cpp:136
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Farba čiary"
+
+#: items/text/KReportItemText.cpp:137
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Štýl čiary"
+
+#: items/text/KReportItemText.cpp:138
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Nepriehľadnosť pozadia"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+"Nemôžem vyhodnotiť skript. Chyba: %1\n"
+"\n"
+"Chcete potlačiť ďalšie správy?\n"
+"(správy sa obnovia pri ďalšom spustení správy)"
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr ""
+"Kód skriptu:\n"
+"%1"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Chyba skriptu"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+"Táto správa obsahuje skripty typu \"%1\". Iba skripty napísané v JavaScripte "
+"sú podporované. Aby ste predišli strate skriptov, ich typ a obsah sa nebude "
+"meniť, kým nezmeníte tieto skripty."
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr "Nepodporovaný typ skriptu"
+
+#: wrtembed/KReportDesigner.cpp:676
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Hlavička strany (všetky)"
+
+#: wrtembed/KReportDesigner.cpp:680
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Hlavička párnych stránok"
+
+#: wrtembed/KReportDesigner.cpp:684
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Hlavička nepárnych stránok"
+
+#: wrtembed/KReportDesigner.cpp:688
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Hlavička strany (všetky)"
+
+#: wrtembed/KReportDesigner.cpp:692
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Hlavička strany (posledná)"
+
+#: wrtembed/KReportDesigner.cpp:696
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "Pätička strany (všetky)"
+
+#: wrtembed/KReportDesigner.cpp:700
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "Pätička párnych stránok"
+
+#: wrtembed/KReportDesigner.cpp:704
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "Pätička nepárnych stránok"
+
+#: wrtembed/KReportDesigner.cpp:708
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "Pätička strany (všetky)"
+
+#: wrtembed/KReportDesigner.cpp:712
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "Patička strany (posledná)"
+
+#: wrtembed/KReportDesigner.cpp:716
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "Hlavička správy"
+
+#: wrtembed/KReportDesigner.cpp:720
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "Pätička správy"
+
+#: wrtembed/KReportDesigner.cpp:808
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "Výkaz"
+
+#: wrtembed/KReportDesigner.cpp:813
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Názov"
+
+#: wrtembed/KReportDesigner.cpp:813
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Názov správy"
+
+#: wrtembed/KReportDesigner.cpp:818
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Veľkosť stránky"
+
+#: wrtembed/KReportDesigner.cpp:821
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Vlastná Veľkosť stránky"
+
+#: wrtembed/KReportDesigner.cpp:825
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "Portrét"
+
+#: wrtembed/KReportDesigner.cpp:825
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "Krajinka"
+
+#: wrtembed/KReportDesigner.cpp:827
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "Orientácia stránky"
+
+#: wrtembed/KReportDesigner.cpp:832
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Jednotka strany"
+
+#: wrtembed/KReportDesigner.cpp:833
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Zobraziť mriežku"
+
+#: wrtembed/KReportDesigner.cpp:834
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Pripnúť k mriežke"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr "Delenia mriežky"
+
+#: wrtembed/KReportDesigner.cpp:841
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Ľavý okraj"
+
+#: wrtembed/KReportDesigner.cpp:843
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Pravý okraj"
+
+#: wrtembed/KReportDesigner.cpp:845
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Horný okraj"
+
+#: wrtembed/KReportDesigner.cpp:847
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Spodný okraj"
+
+#: wrtembed/KReportDesigner.cpp:869
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Objektový skript"
+
+#: wrtembed/KReportDesigner.cpp:1067
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Vystrihnúť"
+
+#: wrtembed/KReportDesigner.cpp:1071
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Kopírovať"
+
+#: wrtembed/KReportDesigner.cpp:1076
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Vložiť"
+
+#: wrtembed/KReportDesigner.cpp:1087
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Vymazať"
+
+#: wrtembed/KReportDesigner.cpp:1129
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Riadok"
+
+#: wrtembed/KReportDesigner.cpp:1476
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Riadok"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr "Vys&trihnúť"
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr "Vystrihnúť výber do schránky"
+
+#: wrtembed/KReportDesigner.cpp:1525
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "&Kopírovať"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr "Skopírovať výber do schránky"
+
+#: wrtembed/KReportDesigner.cpp:1531
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "V&ložiť"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr "Vložiť obsah schránky"
+
+#: wrtembed/KReportDesigner.cpp:1544
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Upraviť sekcie"
+
+#: wrtembed/KReportDesigner.cpp:1547
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr "Presunúť dopredu"
+
+#: wrtembed/KReportDesigner.cpp:1549
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr "Presunúť dozadu"
+
+#: wrtembed/KReportDesignerSection.cpp:126
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "Detail"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Editor sekcií skupín"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Stĺpec:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Zoradiť:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Zobraziť hlavičku skupiny:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Zobraziť pätičku skupiny:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr "Vložiť zalomenie strany po pätičke skupiny"
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr "Vybrať celú správu"
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+"Tlačidlo, ktoré umožňuje vybrať povrch reportu, čím sa dajú vidieť jeho "
+"vlastnosti."
+
+#: wrtembed/KReportRuler_p.cpp:1472
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Odsadenie prvého riadku"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Ľavé odsadenie"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Pravé odsadenie"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr "Pridať..."
+
+#: wrtembed/KReportSectionEditor.cpp:74
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "Upraviť..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Vymazať"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Posunúť hore"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Posunúť dole"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr "Vzostupne"
+
+#: wrtembed/KReportSectionEditor.cpp:312
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr "Zostupne"
+
+#: wrtembed/KReportSectionEditor.ui:29
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Zobraziť hlavičku správy"
+
+#: wrtembed/KReportSectionEditor.ui:36
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Zobraziť pätičku správy"
+
+#: wrtembed/KReportSectionEditor.ui:43
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Hlavička stránky"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "Prvá stránka:"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Párne stránky:"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Ľubovoľné strany:"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Posledná stránka:"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Nepárne stránky:"
+
+#: wrtembed/KReportSectionEditor.ui:130
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "Pätička stránky"
+
+#: wrtembed/KReportSectionEditor.ui:217
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Zoskupiť sekcie"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, qt-format
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Prispôsobiť šírku strany"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Prispôsobiť stranu"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr "Aktuálne body"
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Prispôsobiť šírku textu"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A3"
+#~ msgstr "A3"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A4"
+#~ msgstr "A4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A5"
+#~ msgstr "A5"
+
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "US Letter"
+
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "US Legal"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "Vlastné"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B6"
+#~ msgstr "B6"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B5"
+#~ msgstr "B5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B4"
+#~ msgstr "B4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "Executive"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A0"
+#~ msgstr "A0"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A1"
+#~ msgstr "A1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A2"
+#~ msgstr "A2"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A6"
+#~ msgstr "A6"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A7"
+#~ msgstr "A7"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A8"
+#~ msgstr "A8"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A9"
+#~ msgstr "A9"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B0"
+#~ msgstr "B0"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B1"
+#~ msgstr "B1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "B10"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "C5E"
+#~ msgstr "C5E"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "Comm10"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "ISO DL"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Folio"
+#~ msgstr "US Folio"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "US Ledger"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Tabloid"
+#~ msgstr "US Tabloid"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "DL Envelope"
+#~ msgstr "DL Obálka"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "C6 Envelope"
+#~ msgstr "C6 Obálka"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "C6/5 Envolope"
+#~ msgstr "C6/5 Obálka"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "C5 Envelope"
+#~ msgstr "C5 Obálka"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "C4 Envelope"
+#~ msgstr "C4 Obálka"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Monarch Envelope"
+#~ msgstr "Monarch Obálka"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Personal Envelope"
+#~ msgstr "Osobná Obálka"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "9 Envelope"
+#~ msgstr "9 Obálka"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "10 Envelope"
+#~ msgstr "10 Obálka"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "11 Envelope"
+#~ msgstr "11 Obálka"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "12 Envelope"
+#~ msgstr "12 Obálka"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "Pohľadnica"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Double Postcard"
+#~ msgstr "Dvojitá pohľadnica"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Obrazovka"
+
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "Pozícia"
+
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "Výška"
+
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Farba pozadia"
+
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "Veľkosť"
+
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Zdroj dát"
+
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Zdroj dát"
+
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Zdroj dát"
+
+#~ msgctxt "Scripting::Text|"
+#~ msgid "$Unable to read %1"
+#~ msgstr "$Nie je možné čítať %1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "ISO A3"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "ISO A4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "ISO A5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "ISO B5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "US Executive"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "ISO A0"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "ISO A1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "ISO A2"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "ISO A6"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "ISO A7"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "ISO A8"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "ISO A9"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "ISO B0"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "ISO B1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "ISO B2"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "ISO B3"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "ISO B4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "ISO B6"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "ISO C5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Common 10"
+#~ msgstr "US Common 10"
+
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "Výška"
+
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "Farba pozadia"
+
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Weight"
+#~ msgstr "Hrúbka čiary"
+
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "Farba čiary"
+
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "Štýl čiary"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Zdroj dát"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "Hodnota"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value used if not bound to a field"
+#~ msgstr "Použitá hodnota, ak nie je naviazaná na pole"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "Farba pozadia"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "Farba popredia"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Weight"
+#~ msgstr "Hrúbka čiary"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "Farba čiary"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "Štýl čiary"
+
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Zdroj dát"
+
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "Hodnota"
+
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value used if not bound to a field"
+#~ msgstr "Použitá hodnota, ak nie je naviazaná na pole"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "Vľavo"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "Vycentrovať"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "Vpravo"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Horizontálne zarovnanie"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "Hore"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "Dole"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Vertikálne zarovnanie"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "Písmo"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "Farba pozadia"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "Farba popredia"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "Nepriehľadnosť pozadia"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Weight"
+#~ msgstr "Hrúbka čiary"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "Farba čiary"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "Štýl čiary"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Zdroj dát"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "Hodnota"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value used if not bound to a field"
+#~ msgstr "Použitá hodnota, ak nie je naviazaná na pole"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "Vľavo"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "Vycentrovať"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "Vpravo"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Horizontálne zarovnanie"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "Hore"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "Dole"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Vertikálne zarovnanie"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "Písmo"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "Farba pozadia"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "Farba popredia"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Weight"
+#~ msgstr "Hrúbka čiary"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "Farba čiary"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "Štýl čiary"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "Nepriehľadnosť pozadia"
+
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "Vymazať"
+
+#~ msgctxt "KoReportDesigner|"
+#~ msgid ""
+#~ "This report is using a script type other than \"javascript\".  To prevent "
+#~ "loosing the script, the type of script will not be changed unless the "
+#~ "script is changed.  Please be aware that the script will not work unless "
+#~ "it is changed to a \"javascript\" script."
+#~ msgstr ""
+#~ "Táto správa používa typ skriptu iný ako \"javascript\". Aby ste "
+#~ "nestratili tento skript, typ skriptu sa nezmení, kým sa skript nezmení. "
+#~ "Prosím uvedomte si, že skript nebude fungovať, kým sa nezmení na skript "
+#~ "\"javascript\"."
+
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "Interpreter skriptov"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Richard Frič,Roman Paholík"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "Richard.Fric@kdemail.net,wizzardsk@gmail.com"
+
+#~ msgid "Draw path"
+#~ msgstr "Kresliť cestu"
+
+#~ msgid "Freehand path"
+#~ msgstr "Cesta voľnou rukou"
+
+#~ msgid "Angle snapping delta:"
+#~ msgstr "Uhol prichytenia delta:"
+
+#~ msgid "Activate angle snap:"
+#~ msgstr "Aktivovať prichytenia uhla:"
+
+#~ msgid "Angle Constraints"
+#~ msgstr "Obmedzenia uhla"
+
+#~ msgid "Precision:"
+#~ msgstr "Presnosť:"
+
+#~ msgctxt "The raw line data"
+#~ msgid "Raw"
+#~ msgstr "Čisté"
+
+#~ msgid "Curve"
+#~ msgstr "Krivka"
+
+#~ msgid "Straight"
+#~ msgstr "Rovno"
+
+#~ msgid "Optimize"
+#~ msgstr "Optimalizovať"
+
+#~ msgid "Exactness:"
+#~ msgstr "Presnosť:"
+
+#~ msgid "Combine angle:"
+#~ msgstr "Spojovací uhol:"
+
+#~ msgid "Pencil"
+#~ msgstr "Ceruzka"
+
+#~ msgid "Invalid database contents. "
+#~ msgstr "Neplatný obsah databázy."
+
+#~ msgid "It is a system object."
+#~ msgstr "Toto je systémový objekt."
+
+#~ msgid "Connection already established."
+#~ msgstr "Pripojenie je už aktívne."
+
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr "Nie je možné otvoriť súbor projektu \"%1\"."
+
+#~ msgid "Could not connect to \"%1\" database server."
+#~ msgstr "Nie je možné sa pripojiť k databázovému serveru \"%1\"."
+
+#~ msgid "Not connected to the database server."
+#~ msgstr "Nepripojený k databázovému serveru."
+
+#~ msgid "Currently no database is used."
+#~ msgstr "Aktuálne nie je žiadna databáza použitá."
+
+#~ msgid "The database \"%1\" does not exist."
+#~ msgstr "Databáza \"%1\" neexistuje."
+
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "Databázový súbor \"%1\" neexistuje."
+
+#~ msgid "Database file \"%1\" is not readable."
+#~ msgstr "Databázový súbor \"%1\" sa nedá čítať."
+
+#~ msgid "Database file \"%1\" is not writable."
+#~ msgstr "Do databázového súboru \"%1\" sa nedá zapisovať."
+
+#~ msgid "Database \"%1\" created but could not be closed after creation."
+#~ msgstr "Databáza \"%1\" bola vytvorená ale nedá sa zatvoriť."
+
+#~ msgid "Database \"%1\" already exists."
+#~ msgstr "Databáza \"%1\" už existuje."
+
+#~ msgid ""
+#~ "Cannot create database \"%1\". This name is reserved for system database."
+#~ msgstr ""
+#~ "Nie je možné vytvoriť databázu \"%1\". Toto meno je rezervované pre "
+#~ "systémovú databázu."
+
+#~ msgid "Error creating database \"%1\" on the server."
+#~ msgstr "Nastala chyba pri vytváraní databázy \"%1\" na serveri."
+
+#~ msgid "Database \"%1\" created but could not be opened."
+#~ msgstr "Databáza \"%1\" bola vytvorená ale nedá sa otvoriť."
+
+#~ msgid "Opening database \"%1\" failed."
+#~ msgstr "Otváranie databázy \"%1\" zlyhalo."
+
+#~ msgid "Database version (%1) does not match Kexi application's version (%2)"
+#~ msgstr "Verzia databázy (%1) nesedí s verziou programu Kexi (%2)"
+
+#~ msgid "Cannot find any database for temporary connection."
+#~ msgstr "Žiadna databáza pre dočasné pripojenie nenájdená."
+
+#~ msgid ""
+#~ "Error during starting temporary connection using \"%1\" database name."
+#~ msgstr ""
+#~ "Nastala chyba pri nadväzovaní dočasného spojenia s použitím mena databázy "
+#~ "\"%1\"."
+
+#~ msgid "Cannot delete database - name not specified."
+#~ msgstr "Nie je možné odstrániť databázu - meno nie je zadané!"
+
+#~ msgid "Cannot delete system database \"%1\"."
+#~ msgstr "Nie je možné odstrániť systémovú databázu \"%1\"."
+
+#~ msgid "Error while executing SQL statement."
+#~ msgstr "Nastala chyba počas vykonávania SQL príkazu."
+
+#~ msgid "Creating table failed."
+#~ msgstr "Vytvorenie tabuľky zlyhalo."
+
+#~ msgid "Cannot create table without fields."
+#~ msgstr "Nedá sa vytvoriť tabuľka bez polí."
+
+#~ msgid "System name \"%1\" cannot be used as table name."
+#~ msgstr "Systémové meno \"%1\" nomôže byť použité ako meno tabuľky."
+
+#~ msgid "System name \"%1\" cannot be used as one of fields in \"%2\" table."
+#~ msgstr "Systémové meno \"%1\" nomôže byť použité ako pole tabuľky \"%2\"."
+
+#~ msgid "Could not create the same table \"%1\" twice."
+#~ msgstr "Nie je možné vytvoriť tú istú tabuľku \"%1\" dvakrát."
+
+#~ msgid "Table \"%1\" already exists."
+#~ msgstr "Tabuľka \"%1\" už existuje."
+
+#~ msgid "Table \"%1\" does not exist."
+#~ msgstr "Tabuľka \"%1\" neexistuje."
+
+#~ msgid "Could not remove object's data."
+#~ msgstr "Nie je možné odstrániť dáta objektu."
+
+#~ msgid "Table \"%1\" cannot be removed.\n"
+#~ msgstr "Tabuľku \"%1\" nie je možné odstrániť.\n"
+
+#~ msgid "Unexpected name or identifier."
+#~ msgstr "Neočakávané meno alebo identifikátor."
+
+#~ msgid "Could not alter table \"%1\" using the same table as destination."
+#~ msgstr ""
+#~ "Nie je možné zmeniť tabuľku (alter) \"%1\" použitím tej istej tabuľky."
+
+#~ msgid "Unknown table \"%1\"."
+#~ msgstr "Neznáma tabuľka \"%1\"."
+
+#~ msgid "Invalid table name \"%1\"."
+#~ msgstr "Neplatné meno tabuľky \"%1\"."
+
+#~ msgid "Could not rename table \"%1\" using the same name."
+#~ msgstr "Nepodarilo sa premenovať tabuľku \"%1\" použitím rovnakého názvu."
+
+#~ msgid ""
+#~ "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
+#~ msgstr ""
+#~ "Nie je možné premenovať tabuľku \"%1\" na \"%2\". Tabuľka \"%3\" už "
+#~ "existuje."
+
+#~ msgid "Query \"%1\" does not exist."
+#~ msgstr "Otázka (query) \"%1\" neexistuje."
+
+#~ msgid "Transactions are not supported for \"%1\" driver."
+#~ msgstr "Transakcie nie sú podporované pre ovládač \"%1\"."
+
+#~ msgid "Begin transaction failed."
+#~ msgstr "Spustenie transakcie zlyhalo."
+
+#~ msgid "Transaction already started."
+#~ msgstr "Transakcia je už spustená."
+
+#~ msgid "Transaction not started."
+#~ msgstr "Transakcia nie je spustená."
+
+#~ msgid "Error on commit transaction."
+#~ msgstr "Chyba pri potvrdení transakcie."
+
+#~ msgid "Error on rollback transaction."
+#~ msgstr "Chyba pri vrátení späť z neúspešnej transakcie."
+
+#~ msgid "Invalid object name \"%1\"."
+#~ msgstr "Neplatné meno objektu \"%1\"."
+
+#~ msgid "Column <resource>%1</resource> does not exist in the query."
+#~ msgstr ""
+#~ "Stĺpec <resource>%1</resource> neexistuje pre zadanú otázku (query)."
+
+#~ msgctxt "Extended schema for a table: loading error"
+#~ msgid "Error while loading extended table schema."
+#~ msgstr "Chyba počas čítania informácie rozšírenej schémy tabuľky."
+
+#~ msgid "Invalid XML data: %1"
+#~ msgstr "Zlý formát XML dát: %1"
+
+#~ msgid ""
+#~ "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~ "XML data: %4"
+#~ msgstr ""
+#~ "Chyba dát XML: \"%1\" riadok %2, stĺpec %3.\n"
+#~ "XML dáta: %4"
+
+#~ msgid "Table has no fields defined."
+#~ msgstr "Tabuľka nemá definované žiadne polia."
+
+#~ msgid ""
+#~ "Could not find definition for query \"%1\". Removing this query is "
+#~ "recommended."
+#~ msgstr ""
+#~ "Definícia otázky (query) \"%1\" nebola nájdená. Táto otázka by mala byť "
+#~ "odstránená."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>Could not load definition for query \"%1\". SQL statement for this "
+#~ "query is invalid: <message>%2</message></para>\n"
+#~ "<para>You can open this query in Text View and correct it.</para>"
+#~ msgstr ""
+#~ "<para>Definícia otázky (query) \"%1\" nenájdená. Príkaz SQL pre túto "
+#~ "otázku je neplatný:<message>%2</message></para>\n"
+#~ "<para>Môžete otvoriť túto otázku v Textovom pohľade a opraviť ju.</para>"
+
+#~ msgid "Could not update record because there is no master table defined."
+#~ msgstr ""
+#~ "Riadok nie je možné aktualizovať pretože žiadna master tabuľka nie je "
+#~ "definovaná."
+
+#~ msgid ""
+#~ "Could not update record because master table has no primary key defined."
+#~ msgstr ""
+#~ "Riadok nie je možné aktualizovať pretože master tabuľka nemá definovaný "
+#~ "primárny kľúč."
+
+#~ msgid ""
+#~ "Could not update record because it does not contain entire primary key of "
+#~ "master table."
+#~ msgstr ""
+#~ "Riadok nie je možné aktualizovať pretože neobsahuje celý primárny kľúč "
+#~ "master tabuľky."
+
+#~ msgid "Primary key's field \"%1\" cannot be empty."
+#~ msgstr "Pole primárneho kľúča \"%1\" nesmie byť prázdne."
+
+#~ msgid "Record updating on the server failed."
+#~ msgstr "Aktualizácia riadku na serveri zlyhala."
+
+#~ msgid "Could not insert record because there is no master table specified."
+#~ msgstr ""
+#~ "Nie je možné vložiť riadok pretože žiadna master tabuľka nie je "
+#~ "definovaná."
+
+#~ msgid ""
+#~ "Could not insert record because master table has no primary key specified."
+#~ msgstr ""
+#~ "Nie je možné vložiť riadok pretože master tabuľka nemá definovaný "
+#~ "primárny kľúč."
+
+#~ msgid ""
+#~ "Could not insert record because it does not contain entire master table's "
+#~ "primary key."
+#~ msgstr ""
+#~ "Nie je možné vložiť riadok pretože neobsahuje celý primárny kľúč master "
+#~ "tabuľky."
+
+#~ msgid "Record inserting on the server failed."
+#~ msgstr "Vloženie riadku na serveri zlyhalo."
+
+#~ msgid "Could not delete record because there is no master table specified."
+#~ msgstr ""
+#~ "Nie je možné odstrániť riadok pretože žiadna master tabuľka nie je "
+#~ "definovaná."
+
+#~ msgid ""
+#~ "Could not delete record because there is no primary key for master table "
+#~ "specified."
+#~ msgstr ""
+#~ "Nie je možné odstrániť riadok pretože master tabuľka nemá definovaný "
+#~ "primárny kľúč."
+
+#~ msgid ""
+#~ "Could not delete record because it does not contain entire master table's "
+#~ "primary key."
+#~ msgstr ""
+#~ "Nie je možné odstrániť riadok pretože neobsahuje celý primárny kľúč "
+#~ "master tabuľky."
+
+#~ msgid "Record deletion on the server failed."
+#~ msgstr "Zmazanie riadku na serveri zlyhalo."
+
+#~ msgid "Unknown error."
+#~ msgstr "Neznáma chyba."
+
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "súbor: %1"
+
+#~ msgctxt "@info"
+#~ msgid "&lt;file&gt;"
+#~ msgstr "&lt;súbor&gt;"
+
+#~ msgid "No query statement or schema defined."
+#~ msgstr "Nebol definovaný príkaz otázky (query) alebo schéma."
+
+#~ msgid "Query statement is empty."
+#~ msgstr "Príkaz otázky (query) je prázdny."
+
+#~ msgid "Error opening database cursor."
+#~ msgstr "Nastala chyba pri otváraní kurzora databázy."
+
+#~ msgid "Cannot fetch next record."
+#~ msgstr "Nie je možné pristúpiť k nasledujúcemu záznamu."
+
+#~ msgid "No connection for cursor open operation specified."
+#~ msgstr "Nebolo zadané pripojenie pre operáciu otvorenie kurzora."
+
+#~ msgid "Could not set value of database property \"%1\"."
+#~ msgstr "Nie je možné nastaviť hodnotu parametra databázy \"%1\"."
+
+#~ msgid "Could not set caption for database property \"%1\"."
+#~ msgstr "Nie je možné nastaviť nadpis parametra databázy \"%1\"."
+
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "Nie je možné čítať parameter databázy \"%1\"."
+
+#~ msgid "Could not read database properties."
+#~ msgstr "Nie je možné čítať parametre databázy."
+
+#~ msgid "Invalid database driver's \"%1\" implementation:\n"
+#~ msgstr "Neplatná implementácia databázového ovládača \"%1\":\n"
+
+#~ msgid "Value of \"%1\" is not initialized for the driver."
+#~ msgstr "Hodnota \"%1\" nie je inicializovaná pre ovládač."
+
+#~ msgid "File name expected for file-based database driver."
+#~ msgstr ""
+#~ "Bolo očakávané meno súboru pre súborovo orientovaný ovládač databázy."
+
+#~ msgid "Client library version"
+#~ msgstr "Verzia klientskej knižnice"
+
+#~ msgid "Default character encoding on server"
+#~ msgstr "Štandardné nastavenie kódovania znakov na serveri"
+
+#~ msgid "File-based database driver"
+#~ msgstr "Súborovo orientovaný ovládač databázy"
+
+#~ msgid "File-based database's MIME type"
+#~ msgstr "MIME typ súborovo orientovanej databázy"
+
+#~ msgid "Single transactions support"
+#~ msgstr "Podpora jednoduchých transakcií"
+
+#~ msgid "Multiple transactions support"
+#~ msgstr "Podpora zložených transakcií"
+
+#~ msgid "Nested transactions support"
+#~ msgstr "Podpora vnorených transakcií"
+
+#~ msgid "KexiDB driver version"
+#~ msgstr "Verzia ovládača KexiDB"
+
+#~ msgid "Could not find any database drivers."
+#~ msgstr "Nie je možné nájsť žiadne ovládače databáz."
+
+#~ msgid "Could not find database driver \"%1\"."
+#~ msgstr "Databázový ovládač \"%1\" nenájdený."
+
+#~ msgid ""
+#~ "Incompatible database driver's \"%1\" version: found version %2, expected "
+#~ "version %3."
+#~ msgstr ""
+#~ "Nekompatibilná verzia ovládača databázy \"%1\": nájdená verzia %2, bola "
+#~ "očakávaná verzia %3."
+
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "Databázový ovládač \"%1\" sa nedá načítať."
+
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "Nepodarilo sa nájsť službu <resource>%1</resource>."
+
+#~ msgid "Incorrect number of arguments"
+#~ msgstr "Nesprávny počet argumentov"
+
+#~ msgctxt "@info BETWEEN..AND error"
+#~ msgid "%1 operator requires exactly three arguments."
+#~ msgstr "Operátor %1 vyžaduje presne tri argumenty."
+
+#~ msgid "Incompatible types of arguments"
+#~ msgstr "Nekompatibilné typy argumentov"
+
+#~ msgctxt "@info BETWEEN..AND type error"
+#~ msgid "%1 operator requires compatible types of arguments."
+#~ msgstr "Operátor %1 vyžaduje kompatibilný typ argumentov."
+
+#~ msgid "Ambiguous field name"
+#~ msgstr "Nejednoznačné meno poľa"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Both table <resource>%1</resource> and <resource>%2</resource> have "
+#~ "defined <resource>%3</resource> field. Use "
+#~ "<resource><placeholder>tableName</placeholder>.%4</resource> notation to "
+#~ "specify table name."
+#~ msgstr ""
+#~ "Obe tabuľky <resource>%1</resource> a <resource>%2</resource> obsahujú "
+#~ "pole <resource>%3</resource>. Použite zápis "
+#~ "<resource><placeholder>tableName</placeholder>.%4</resource> pre zadanie "
+#~ "mena tabuľky."
+
+#~ msgid "Field not found"
+#~ msgstr "Pole nenájdené"
+
+#~ msgid "Table containing \"%1\" field not found."
+#~ msgstr "Tabuľka s poľom \"%1\" nenájdená."
+
+#~ msgid "Could not access the table directly using its name"
+#~ msgstr "Priamy prístup k tabuľke použitím jej mena nie je možný"
+
+#~ msgid ""
+#~ "Table name <resource>%1</resource> is covered by aliases. Instead of "
+#~ "<resource>%2</resource>, you can write <resource>%3</resource>."
+#~ msgstr ""
+#~ "Tabuľka <resource>%1</resource> je pokrytá aliasmi. Namiesto <resource>"
+#~ "%2</resource> môžete použiť <resource>%3</resource>."
+
+#~ msgid "Table not found"
+#~ msgstr "Tabuľka nenájdená"
+
+#~ msgid "Ambiguous \"%1.*\" expression"
+#~ msgstr "Nejednoznačné: \"%1\""
+
+#~ msgid "More than one \"%1\" table or alias defined."
+#~ msgstr "Viac ako jedna tabuľka alebo alias \"%1\" definovaný."
+
+#~ msgid "Table \"%1\" has no \"%2\" field."
+#~ msgstr "Tabuľka \"%1\" neobsahuje pole \"%2\"."
+
+#~ msgid "Ambiguous \"%1.%2\" expression"
+#~ msgstr "Nejednoznačný výraz \"%1.%2\""
+
+#~ msgid "More than one \"%1\" table or alias defined containing \"%2\" field."
+#~ msgstr ""
+#~ "Viac ako jedna tabuľka alebo alias \"%1\" obsahujúci pole \"%2\" "
+#~ "definovaný."
+
+#~ msgctxt "@info Number of arguments error"
+#~ msgid "%1() function requires 2 or 3 arguments."
+#~ msgstr "Funkcia %1() vyžaduje 2 alebo 3 argumenty."
+
+#~ msgid "Incorrect type of argument"
+#~ msgstr "Nesprávny typ argumentu"
+
+#~ msgctxt "@info Type error"
+#~ msgid ""
+#~ "%1() function's first argument should be of type \"%2\". Specified "
+#~ "argument is of type \"%3\"."
+#~ msgstr ""
+#~ "Prvý argument funkcie %1() by mal byť typu \"%2\". Zadaný argument je "
+#~ "typu \"%3\"."
+
+#~ msgctxt "@info Type error"
+#~ msgid ""
+#~ "%1() function's second argument should be of type \"%2\". Specified "
+#~ "argument is of type \"%3\"."
+#~ msgstr ""
+#~ "Druhý argument funkcie %1() by mal byť typu \"%2\". Zadaný argument je "
+#~ "typu \"%3\"."
+
+#~ msgctxt "@info Type error"
+#~ msgid ""
+#~ "%1() function's third argument should be of type \"%2\". Specified "
+#~ "argument is of type \"%3\"."
+#~ msgstr ""
+#~ "Tretí argument funkcie %1() by mal byť typu \"%2\". Zadaný argument je "
+#~ "typu \"%3\"."
+
+#~ msgid "Byte"
+#~ msgstr "Bajt"
+
+#~ msgid "Short Integer Number"
+#~ msgstr "Krátke celé číslo"
+
+#~ msgid "Integer Number"
+#~ msgstr "Celé číslo"
+
+#~ msgid "Big Integer Number"
+#~ msgstr "Veľké celé číslo"
+
+#~ msgid "Yes/No Value"
+#~ msgstr "Hodnota áno/nie"
+
+#~ msgid "Date"
+#~ msgstr "Dátum"
+
+#~ msgid "Date and Time"
+#~ msgstr "Dátum a čas"
+
+#~ msgid "Time"
+#~ msgstr "Čas"
+
+#~ msgid "Single Precision Number"
+#~ msgstr "Číslo s jednoduchou presnosťou"
+
+#~ msgid "Double Precision Number"
+#~ msgstr "Číslo s dvojitou presnosťou"
+
+#~ msgid "Text"
+#~ msgstr "Text"
+
+#~ msgid "Long Text"
+#~ msgstr "Dlhý text"
+
+#~ msgid "Object"
+#~ msgstr "Objekt"
+
+#~ msgid "Invalid Group"
+#~ msgstr "Neplatná skupina"
+
+#~ msgid "Floating Point Number"
+#~ msgstr "Reálne číslo (s desatinnou čiarkou)"
+
+#~ msgid "Yes/No"
+#~ msgstr "Áno/nie"
+
+#~ msgid "Date/Time"
+#~ msgstr "Dátum/čas"
+
+#~ msgid ""
+#~ "You can correct data in this record or use \"Cancel record changes\" "
+#~ "function."
+#~ msgstr ""
+#~ "Môžete opraviť dáta v tomto riadku alebo použiť funkciu \"Zrušiť zmeny v "
+#~ "riadku\"."
+
+#~ msgid "Unspecified error encountered"
+#~ msgstr "Nastala neznáma chyba"
+
+#~ msgid "identifier was expected"
+#~ msgstr "Bol očakávaný identifikátor"
+
+#~ msgid "\"%1\" is a reserved keyword."
+#~ msgstr "\"%1\" je rezervované kľúčové slovo."
+
+#~ msgid "Syntax error."
+#~ msgstr "Chyba syntaxe."
+
+#~ msgid "Error"
+#~ msgstr "Chyba"
+
+#~ msgid "Error near \"%1\"."
+#~ msgstr "Chyba pri \"%1\"."
+
+#~ msgid "No query statement specified."
+#~ msgstr "Nebol definovaný príkaz otázky (query) alebo schéma."
+
+#~ msgid "\"*\" could not be used if no tables are specified."
+#~ msgstr "\"*\" nemôže byť použitá ak nie sú zadané žiadne tabuľky."
+
+#~ msgid "Invalid alias definition for column \"%1\"."
+#~ msgstr "Neplatná definícia aliasu pre stĺpec \"%1\"."
+
+#~ msgid "Invalid \"%1\" column definition."
+#~ msgstr "Neplatná definícia stĺpca \"%1\"."
+
+#~ msgid "Could not define sorting - no column at position %1."
+#~ msgstr "Triedenie sa nedá definovať - na pozícii %1 nie je žiadny stĺpec."
+
+#~ msgid ""
+#~ "Could not define sorting - column name or alias \"%1\" does not exist."
+#~ msgstr ""
+#~ "Triedenie sa nedá definovať - meno stĺpca alebo alias \"%1\" neexistuje."
+
+#~ msgctxt ""
+#~ "short for 'expression' word, e.g. 'expr' (only latin letters, please, no "
+#~ "'.')"
+#~ msgid "expr"
+#~ msgstr "vyraz"
+
+#~ msgid "Database driver name"
+#~ msgstr "Meno databázového ovládača"
+
+#~ msgid "Database user name"
+#~ msgstr "Meno databázového užívateľa"
+
+#~ msgid "Prompts for password"
+#~ msgstr "Vyzvanie na zadanie hesla"
+
+#~ msgid "Host (server) name"
+#~ msgstr "Meno počítača (servera)"
+
+#~ msgid "Server's port number"
+#~ msgstr "Číslo portu servera"
+
+#~ msgid "Server's local socket filename"
+#~ msgstr "Meno súboru pre lokálny soket servera"
+
+#~ msgid "Enter password for %1: "
+#~ msgstr "Zadajte heslo pre %1: "
+
+#~ msgid "\"%1\" column requires a value to be entered."
+#~ msgstr "Stĺpec \"%1\" musí mať zadanú hodnotu."
+
+#~ msgid "The column's constraint is declared as NOT NULL."
+#~ msgstr "Obmedzenie stĺpca je deklarované ako NOT NULL."
+
+#~ msgid "The column's constraint is declared as NOT EMPTY."
+#~ msgstr "Obmedzenie stĺpca je deklarované ako NOT EMPTY."
+
+#~ msgid "Record inserting failed."
+#~ msgstr "Vloženie riadku zlyhalo."
+
+#~ msgid "Record changing failed."
+#~ msgstr "Zmena riadku zlyhala."
+
+#~ msgid "Record deleting failed."
+#~ msgstr "Odstránenie riadku zlyhalo."
+
+#~ msgid "Message from server:"
+#~ msgstr "Správa zo servera:"
+
+#~ msgid "SQL statement:"
+#~ msgstr "Príkaz SQL:"
+
+#~ msgid "Server result:"
+#~ msgstr "Výsledok servera:"
+
+#~ msgid "Test Connection"
+#~ msgstr "Testovať pripojenie"
+
+#~ msgid "Testing connection to <resource>%1</resource> database server..."
+#~ msgstr ""
+#~ "Testuje sa pripojenie k databázovému serveru <resource>%1</resource>..."
+
+#~ msgid ""
+#~ "<qt>Test connection to <b>%1</b> database server failed. The server is "
+#~ "not responding.</qt>"
+#~ msgstr ""
+#~ "<qt>Test pripojenia k databázovému serveru <b>%1</b> zlyhal. Server "
+#~ "neodpovedá.</qt>"
+
+#~ msgid ""
+#~ "<qt>Test connection to <b>%1</b> database server established successfully."
+#~ "</qt>"
+#~ msgstr ""
+#~ "<qt>Testovacie pripojenie k databázovému serveru <b>%1</b> bolo úspešne "
+#~ "nadviazané.</qt>"
+
+#~ msgid "Number"
+#~ msgstr "Číslo"
+
+#~ msgid "Image"
+#~ msgstr "Obrázok"
+
+#~ msgid "\"%1\" value has to be entered."
+#~ msgstr "Musíte zadať hodnotu pre \"%1\"."
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr "Zmeniť pripojenie"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr "Zmeniť parameter"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "Konvertovať na cestu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath at points"
+#~ msgstr "Prerušiť podcesty v bodoch"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Combine paths"
+#~ msgstr "Zlúčiť cesty"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move control point"
+#~ msgstr "Presunúť ovládací bod"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set fill rule"
+#~ msgstr "Nastaviť pravidlo vyplnenia"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "Vložiť body"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "Zlúčiť body"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move points"
+#~ msgstr "Presunúť body"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove points"
+#~ msgstr "Odstrániť body"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set point type"
+#~ msgstr "Nastaviť typ bodu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reverse paths"
+#~ msgstr "Reverzné cesty"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath"
+#~ msgstr "Rozbiť podcestu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to curves"
+#~ msgstr "Zmeniť segmenty na krivky"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to lines"
+#~ msgstr "Zmeniť segmenty na čiary"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set marker"
+#~ msgstr "Nastaviť označník"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Align shapes"
+#~ msgstr "Zarovnať tvary"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr "Nastaviť pozadie"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Clip Shape"
+#~ msgstr "Pripnúť tvar"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr "Vytvoriť tvar"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shape"
+#~ msgid_plural "Delete shapes"
+#~ msgstr[0] "Vymazať tvar"
+#~ msgstr[1] "Vymazať tvary"
+#~ msgstr[2] "Vymazať tvarov"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Distribute shapes"
+#~ msgstr "Rozdeliť tvary"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr "Zoskupiť tvary"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add shapes to group"
+#~ msgstr "Pridať tvary do skupiny"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Keep Aspect Ratio"
+#~ msgstr "Zachovať pomer strán"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Lock shapes"
+#~ msgstr "Zamknúť tvary"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move shapes"
+#~ msgstr "Presunúť tvary"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr "Premenovať tvar"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reorder shapes"
+#~ msgstr "Preskupiť tvary"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Shape RunAround"
+#~ msgstr "Zmeniť tvar RunAround"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Shadow"
+#~ msgstr "Nastaviť tieň"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Shear shapes"
+#~ msgstr "Strihať tvary"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Resize shapes"
+#~ msgstr "Zmeniť veľkosť tvarov"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set stroke"
+#~ msgstr "Nastaviť ťah"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr "Nastaviť nepriehľadnosť"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shape"
+#~ msgstr "Odopnúť tvar"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shapes"
+#~ msgstr "Odopnúť tvary"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr "Odzoskupiť tvary"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Close subpath"
+#~ msgstr "Zatvoriť podcestu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Join subpaths"
+#~ msgstr "Pripojiť podcesty"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove subpath"
+#~ msgstr "Odstrániť podcestu"
+
+#~ msgid "Standard"
+#~ msgstr "Štandardné"
+
+#~ msgid "Lines"
+#~ msgstr "Čiary"
+
+#~ msgid "Type:"
+#~ msgstr "Typ:"
+
+#~ msgid "Tie"
+#~ msgstr "Priviazať"
+
+#~ msgid "A connection between two other shapes"
+#~ msgstr "Spojenie medzi dvoma inými tvarmi"
+
+#~ msgid "Shows or hides grid"
+#~ msgstr "Zobrazí alebo skryje mriežku"
+
+#~ msgid "Simple path shape"
+#~ msgstr "Jednoduchý tvar cesty"
+
+#~ msgid "A simple path shape"
+#~ msgstr "Jednoduchý tvar cesty"
+
+#~ msgid "%1 Options"
+#~ msgstr "%1 Možnosti"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Shapes"
+#~ msgstr "Vložiť tvary"
+
+#~ msgid "Active tool: %1"
+#~ msgstr "Aktívny nástroj: %1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "Vložiť obrázok"
+
+#~ msgid "Nodes"
+#~ msgstr "Uzly"
+
+#~ msgid "Extension of lines"
+#~ msgstr "Rozšírenie čiar"
+
+#~ msgid "Bounding box of shape"
+#~ msgstr "Ohraničenie tvaru"
+
+#~ msgid "Proximity distance where snapping happens"
+#~ msgstr "Vzdialenosť priblíženia, kde nastáva prichytenie"
+
+#~ msgid " px"
+#~ msgstr " px"
+
+#~ msgid "Orthogonal"
+#~ msgstr "Ortogonálne"
+
+#~ msgid "Intersection of lines"
+#~ msgstr "Priesečník čiar"
+
+#~ msgid "Guide lines"
+#~ msgstr "Sprievodné čiary"
+
+#~ msgid "Embedded svg shape"
+#~ msgstr "Zabudovaný svg tvar"
+
+#~ msgid "Create object"
+#~ msgstr "Vytvoriť objekt"
+
+#~ msgid "Pan"
+#~ msgstr "Pan"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Segment"
+#~ msgstr "Zmeniť segment"
+
+#~ msgid "Corner point"
+#~ msgstr "Rohový bod"
+
+#~ msgid "Smooth point"
+#~ msgstr "Plynulý bod"
+
+#~ msgid "Symmetric Point"
+#~ msgstr "Symetrický bod"
+
+#~ msgid "Make curve point"
+#~ msgstr "Vytvoriť bod krivky"
+
+#~ msgid "Make line point"
+#~ msgstr "Vytvoriť bod čiary"
+
+#~ msgid "Segment to Line"
+#~ msgstr "Segment do čiary"
+
+#~ msgid "Segment to Curve"
+#~ msgstr "Segment do krivky"
+
+#~ msgid "Insert point"
+#~ msgstr "Vložiť bod"
+
+#~ msgid "Remove point"
+#~ msgstr "Odstrániť bod"
+
+#~ msgid "Break at point"
+#~ msgstr "Prerušiť v bode"
+
+#~ msgid "Break at segment"
+#~ msgstr "Prerušiť na úseku"
+
+#~ msgid "Join with segment"
+#~ msgstr "Spojiť s úsekom"
+
+#~ msgid "Merge points"
+#~ msgstr "Zlúčiť body"
+
+#~ msgid "To Path"
+#~ msgstr "Na cestu"
+
+#~ msgid "Line/Curve"
+#~ msgstr "Čiara/krivka"
+
+#~ msgid "Drag to move handle."
+#~ msgstr "Uchopte na presun handle."
+
+#~ msgid "Drag to move point. Shift click to change point type."
+#~ msgstr "Uchopte na presun bodu. Shift klik na zmenu typu bodu."
+
+#~ msgid "Drag to move control point."
+#~ msgstr "Uchopte na presun kontrolného bodu."
+
+#~ msgid ""
+#~ "Drag to change curve directly. Double click to insert new path point."
+#~ msgstr ""
+#~ "Ťahajte na priamu zmenu krivky. Dvojklik na vloženie nového bodu cesty."
+
+#~ msgid "Press B to break path at selected point."
+#~ msgstr "Stlačte B na rozbitie cesty vo vybranom bode."
+
+#~ msgid "Press B to break path at selected segments."
+#~ msgstr "Stlačte B na rozbitie cesty vo vybraných segmentoch."
+
+#~ msgid "Path editing"
+#~ msgstr "Úprava cesty"
+
+#~ msgid "Zoom"
+#~ msgstr "Priblížiť"
+
+#~ msgid "Zoom In"
+#~ msgstr "Priblížiť"
+
+#~ msgid "Zoom Out"
+#~ msgstr "Oddialiť"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Convert To Path"
+#~ msgstr "Konvertovať na cestu"
+
+#~ msgid "Scripts"
+#~ msgstr "Skripty"
+
+#~ msgid "Script Manager"
+#~ msgstr "Správca skriptov"
+
+#~ msgid "Execute Script File..."
+#~ msgstr "Spustiť skriptový súbor..."
+
+#~ msgid "Script Manager..."
+#~ msgstr "Správca skriptov..."
+
+#~ msgid "Execute Script File"
+#~ msgstr "Spustiť skriptový súbor"
+
+#~ msgid "Install Script Package"
+#~ msgstr "Inštalovať skriptový balíček"
+
+#~ msgid "Could not read the package \"%1\"."
+#~ msgstr "Nedá sa načítať balíček \"%1\"."
+
+#~ msgid "The package \"%1\" does not contain a valid install.rc file."
+#~ msgstr "Balík \"%1\" neobsahuje platný súbor install.rc."
+
+#~ msgid "Failed to parse the install.rc file at package \"%1\"."
+#~ msgstr "Zlyhalo parsovanie súboru install.rc v balíku \"%1\"."
+
+#~ msgid ""
+#~ "Failed to determinate location where the package \"%1\" should be "
+#~ "installed to."
+#~ msgstr ""
+#~ "Zlyhalo určenie umiestnenia, kam by mal byť nainštalovaný balík \"%1\"."
+
+#~ msgid ""
+#~ "A script package with the name \"%1\" already exists. Replace this "
+#~ "package?"
+#~ msgstr "Skriptový balíček s menom \"%1\" už existuje. Prepísať balíček?"
+
+#~ msgid "Replace"
+#~ msgstr "Nahradiť"
+
+#~ msgid ""
+#~ "Could not uninstall this script package. You may not have sufficient "
+#~ "permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Skriptový balíček sa nedá odinštalovať. Možno nemáte dostatočné práva na "
+#~ "zmazanie priečinku \"%1\"."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\" since the script is not "
+#~ "installed."
+#~ msgstr ""
+#~ "Skriptový balíček \"%1\" sa nedá odinštalovať odkedy skript nie je "
+#~ "nainštalovaný."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\". You may not have "
+#~ "sufficient permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Skriptový balíček \"%1\" sa nedá odinštalovať. Možno nemáte dostatočné "
+#~ "práva na zmazanie priečinku \"%1\"."
+
+#~ msgid "Save"
+#~ msgstr "Uložiť"
+
+#~ msgid ""
+#~ "<qt>This wizard will guide you through the proccess of adding a new "
+#~ "resource to your scripts.</qt>"
+#~ msgstr ""
+#~ "<qt>Tento sprievodca vás prevedie cez proces pridania nového prostriedku "
+#~ "do vašich skriptov.</qt>"
+
+#~ msgid "Add script file"
+#~ msgstr "Pridať skriptový súbor"
+
+#~ msgid "Add collection folder"
+#~ msgstr "Pridať priečinok kolekcie"
+
+#~ msgid "Install script package file"
+#~ msgstr "Nainštalovať súbor balíka skriptu"
+
+#~ msgid "Install online script package"
+#~ msgstr "Nainštalovať online balík skriptu"
+
+#~ msgid "Add"
+#~ msgstr "Pridať"
+
+#~ msgid "Script"
+#~ msgstr "Dolný index"
+
+#~ msgid "Collection"
+#~ msgstr "Kolekcia"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master slide"
+#~ msgstr "Zmeniť hlavnú snímku"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master page"
+#~ msgstr "Zmeniť hlavnú stranu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "Nastaviť vzhľad stránky"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display master background"
+#~ msgstr "Zobraziť hlavné pozadie"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display slide background"
+#~ msgstr "Zobraziť pozadie snímky"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display page background"
+#~ msgstr "Zobraziť pozadie strany"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Show master shapes"
+#~ msgstr "Ukázať hlavné tvary"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Hide master shapes"
+#~ msgstr "Skryť hlavné tvary"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] "Vymazať snímku"
+#~ msgstr[1] "Vymazať snímky"
+#~ msgstr[2] "Vymazať snímky"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "Zmazať stránku"
+#~ msgstr[1] "Odstrániť text"
+#~ msgstr[2] "Odstrániť text"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr "Vložiť snímku"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr "Vložiť stránku"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "Presunúť snímku"
+#~ msgstr[1] "Presunúť snímky"
+#~ msgstr[2] "Presunúť snímky"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] "Presunúť stranu"
+#~ msgstr[1] "Presunúť strany"
+#~ msgstr[2] "Presunúť strany"
+
+#~ msgid "Configure"
+#~ msgstr "Konfigurovať"
+
+#~ msgid "Misc"
+#~ msgstr "Rôzne"
+
+#~ msgid "Grid"
+#~ msgstr "Mriežka"
+
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "Dokument"
+
+#~ msgid "Document Settings"
+#~ msgstr "Nastavenia dokumentu"
+
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "Select a master slide design:"
+#~ msgstr "Zvoliť dizajn hlavnej snímky:"
+
+#~ msgid "Master Slide"
+#~ msgstr "Hlavná snímka"
+
+#~ msgid "Select a master page design:"
+#~ msgstr "Zvoliť dizajn hlavnej strany:"
+
+#~ msgid "Master Page"
+#~ msgstr "Hlavná strana"
+
+#~ msgid "Slide %1"
+#~ msgstr "Snímka %1"
+
+#~ msgid "Page  %1"
+#~ msgstr "Stránka %1"
+
+#~ msgid "Layer"
+#~ msgstr "Vrstva"
+
+#~ msgid "Group"
+#~ msgstr "Skupina"
+
+#~ msgid "Shape"
+#~ msgstr "Tvar"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "Premenovať snímku"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "Premenovať stranu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "Premenovať vrstvu"
+
+#~ msgid "Slide"
+#~ msgstr "Snímka"
+
+#~ msgid "Visible"
+#~ msgstr "Viditeľný"
+
+#~ msgid "Locked"
+#~ msgstr "Zamknuté"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reparent shapes"
+#~ msgstr "Reparentovať tvary"
+
+#~ msgid "&Move Here"
+#~ msgstr "&Presunúť sem"
+
+#~ msgid "&Copy Here"
+#~ msgstr "&Kopírovať sem"
+
+#~ msgid "C&ancel"
+#~ msgstr "&Zrušiť"
+
+#~ msgid "Document"
+#~ msgstr "Dokument"
+
+#~ msgid "Add a new slide or layer"
+#~ msgstr "Vytvoriť novú snímku alebo vrstvu"
+
+#~ msgid "Add a new page or layer"
+#~ msgstr "Vytvoriť novú stranu alebo vrstvu"
+
+#~ msgid "Page"
+#~ msgstr "Strana"
+
+#~ msgid "Delete selected objects"
+#~ msgstr "Zmazať vybrané objekty"
+
+#~ msgid "Raise selected objects"
+#~ msgstr "Zdvihnúť vybrané objekty"
+
+#~ msgid "Lower selected objects"
+#~ msgstr "Znížiť vybrané objekty"
+
+#~ msgid "Minimal View"
+#~ msgstr "Minimálny pohľad"
+
+#~ msgid "Detailed View"
+#~ msgstr "Detailné zobrazenie"
+
+#~ msgid "Thumbnail View"
+#~ msgstr "Zobrazenie náhľadov"
+
+#~ msgid "View mode"
+#~ msgstr "Režim zobrazenia"
+
+#~ msgid "Enter the name of the new layer:"
+#~ msgstr "Zadajte názov novej vrstvy:"
+
+#~ msgid "New Layer"
+#~ msgstr "Nová vrstva"
+
+#~ msgid "New layer"
+#~ msgstr "Nová vrstva"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "Vytvoriť vrstvu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "Odstrániť vrstvu"
+
+#~ msgid "Could not delete all layers. At least one layer is required."
+#~ msgstr "Nie je možné vymazať všetky vrstvy. Vyžaduje sa aspoň jedna vrstva."
+
+#~ msgid "Error deleting layers"
+#~ msgstr "Chyba pri mazaní vrstiev"
+
+#~ msgid "Add a new slide"
+#~ msgstr "Pridať novú snímku"
+
+#~ msgid "Add a new page"
+#~ msgstr "Pridať novú stranu"
+
+#~ msgid "Page %1"
+#~ msgstr "Stránka %1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] "Vložiť snímku"
+#~ msgstr[1] "Vložiť snímky"
+#~ msgstr[2] "Vložiť snímky"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] "Vložiť stranu"
+#~ msgstr[1] "Vložiť strany"
+#~ msgstr[2] "Vložiť strany"
+
+#~ msgid "Tools"
+#~ msgstr "Nástroje"
+
+#~ msgid "D&elete"
+#~ msgstr "Odstrániť"
+
+#~ msgid "Show Master Pages"
+#~ msgstr "Ukázať hlavné strany"
+
+#~ msgid "Show Rulers"
+#~ msgstr "Zobraziť pravítko"
+
+#~ msgid "Show/hide the view's rulers"
+#~ msgstr "Ukázať/skryť pravítka pohľadu"
+
+#~ msgid "Insert Page"
+#~ msgstr "Vložiť stránku"
+
+#~ msgid "Insert a new page after the current one"
+#~ msgstr "Vložiť novú stranu za aktuálnou"
+
+#~ msgid "Copy Page"
+#~ msgstr "Kopírovať stranu"
+
+#~ msgid "Copy the current page"
+#~ msgstr "Kopírovať aktuálnu stranu"
+
+#~ msgid "Delete Page"
+#~ msgstr "Odstrániť stranu"
+
+#~ msgid "Delete the current page"
+#~ msgstr "Vymazať aktuálnu stranu"
+
+#~ msgid "Master Page..."
+#~ msgstr "Hlavná stránka..."
+
+#~ msgid "Page Layout..."
+#~ msgstr "Rozloženie stránky..."
+
+#~ msgid "Variable"
+#~ msgstr "Premenná"
+
+#~ msgid "Import Document..."
+#~ msgstr "Importovať dokument..."
+
+#~ msgid "Configure..."
+#~ msgstr "Konfigurovať..."
+
+#~ msgid "Import Slideshow"
+#~ msgstr "Impotovať slideshow"
+
+#~ msgid "Import Document"
+#~ msgstr "Importovať dokument"
+
+#~ msgid ""
+#~ "Could not import\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Nie je možné importovať\n"
+#~ "%1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr "Zmeniť vzhľad stránky"
+
+#~ msgid "Set image ..."
+#~ msgstr "Nastaviť obrázok ..."
+
+#~ msgid "Background"
+#~ msgstr "Pozadie"
+
+#~ msgid "Page Background"
+#~ msgstr "Pozadie strany"
+
+#~ msgid "Page Design"
+#~ msgstr "Návrh strany"
+
+#~ msgid "Slide Design"
+#~ msgstr "Návrh snímky"
+
+#~ msgid "Use background of master page"
+#~ msgstr "Použiť pozadiehlavnej strany"
+
+#~ msgid "Use background of master slide"
+#~ msgstr "Použiť pozadie hlavnej snímky"
+
+#~ msgid "Display shapes of master page"
+#~ msgstr "Zobraziť tvary hlavnej strany"
+
+#~ msgid "Display shapes of master slide"
+#~ msgstr "Zobraziť tvary hlavnej snímky"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change slide background image"
+#~ msgstr "Zmeniť obrázok pozadia snímky"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page background image"
+#~ msgstr "Zmeniť obrázok pozadia strany"
+
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "Hlavná snímka %1/%2"
+
+#~ msgid "Slide %1/%2"
+#~ msgstr "Snímka %1/%2"
+
+#~ msgid "Master Page %1/%2"
+#~ msgstr "Hlavná strana %1/%2"
+
+#~ msgid "Page %1/%2"
+#~ msgstr "Strana %1/%2"
+
+#~ msgid "Check Box"
+#~ msgstr "Zaškrtávacie políčko"
+
+#~ msgid "Field"
+#~ msgstr "Pole"
+
+#~ msgid "Label"
+#~ msgstr "Popis"
+
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgid "Section Editor"
+#~ msgstr "Editor sekcií"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "Zmeniť zoznam"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "Zmeniť štýly"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "Odstrániť"
+
+#~ msgid "Key Press"
+#~ msgstr "Stlačenie klávesy"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "Text"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "Zmazať stĺpec"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "Odstrániť riadok"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "Vložiť poznámku päty"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr "Vložiť koncovú poznámku"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Right"
+#~ msgstr "Vložiť stĺpec vpravo"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr "Vložiť stĺpec vľavo"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Below"
+#~ msgstr "Vložiť riadok pod"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "Vložiť riadok nad"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List Numbering"
+#~ msgstr "Zmeniť číslovanie zoznamu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "Formátovanie"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Direct Paragraph Formatting"
+#~ msgstr "Priame formátovanie odstavcov"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr "Premenovať oblasť"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr "Upraviť šírku stĺpca"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Row Height"
+#~ msgstr "Upraviť výšku riadku"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "Vložiť ako text"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "Vložiť"
+
+#~ msgid "Index Reference"
+#~ msgstr "Referenčný index"
+
+#~ msgid "Text Reference"
+#~ msgstr "Referenčný text"
+
+#~ msgid "Please create an index to reference first."
+#~ msgstr "Prosím najprv vytvorte index k referencii."
+
+#~ msgid "Select the index you want to reference"
+#~ msgstr "Vyberte index ktorý chcete referencovať"
+
+#~ msgid "Found 1 match"
+#~ msgid_plural "Found %1 matches"
+#~ msgstr[0] "Nájdená 1 zhoda"
+#~ msgstr[1] "Nájdené %1 zhody"
+#~ msgstr[2] "Nájdených %1 zhôd"
+
+#~ msgid "Found no match"
+#~ msgstr "Nenájdená žiadna zhoda"
+
+#~ msgid ""
+#~ "Found no match\n"
+#~ "\n"
+#~ "No text was replaced"
+#~ msgstr ""
+#~ "Nenájdená žiadna zhoda\n"
+#~ "\n"
+#~ "Žiadny text nebol nahradený"
+
+#~ msgid "1 replacement made"
+#~ msgid_plural "%1 replacements made"
+#~ msgstr[0] "Vykonaná %1 náhrada"
+#~ msgstr[1] "Vykonané %1 náhrady"
+#~ msgstr[2] "Vykonaných %1 náhrad"
+
+#~ msgid "Replace %1 with %2?"
+#~ msgstr "Nahradiť %1 s %2?"
+
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "Nová oblasť %1"
+
+#~ msgctxt "Underline Style"
+#~ msgid "None"
+#~ msgstr "Žiadny"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "Jednoduchý"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "Dvojitý"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "New Paragraph"
+#~ msgstr "Nový odstavec"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "Pridať záložku"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "Pridať anotáciu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "Vložiť index"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "Vložiť premennú"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Key Press"
+#~ msgstr "Stlačenie klávesy"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "Vložiť zalomenie"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "Vložiť tabuľku"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "Spojiť bunky"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "Rozdeliť bunky"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr "Upraviť šírku tabuľky"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Border Formatting"
+#~ msgstr "Zmeniť formátovanie okraja"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Vložiť obsah"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr "Zmeniť obsah"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Vložiť bibiografiu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "Pridať citáciu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Typing"
+#~ msgstr "Písanie"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr "Tučné"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "Kurzíva"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "Podčiarknuté"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr "Prečiarknuté"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr "Zmeniť zarovnanie"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr "Nastaviť vertikálne zarovnanie"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "Znížiť odsadenie"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "Zvýšiť odsadenie"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "Zmenšiť veľkosť písma"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "Zväčšiť veľkosť písma"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr "Nastaviť písmo"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr "Nastaviť veľkosť písma"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr "Nastaviť farbu pozadia"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Text Color"
+#~ msgstr "Nastaviť farbu textu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr "Nastaviť štýl znaku"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Paragraph Style"
+#~ msgstr "Nastaviť štýl odseku"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "Formát"
+
+#~ msgid "Default"
+#~ msgstr "Predvolené"
+
+#~ msgctxt "Default text for undo action"
+#~ msgid "Undo"
+#~ msgstr "Späť"
+
+#~ msgid "Undo %1"
+#~ msgstr "Späť %1"
+
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "Znovu"
+
+#~ msgid "Redo %1"
+#~ msgstr "Redo %1"
+
+#~ msgid "<empty>"
+#~ msgstr "<prázdne>"
+
+#~ msgid "Redo"
+#~ msgstr "Znovu"
+
+#~ msgid "Undo"
+#~ msgstr "Späť"
+
+#~ msgid "&File"
+#~ msgstr "&Súbor"
+
+#~ msgid "&Settings"
+#~ msgstr "Nastavenia"
+
+#~ msgid "File"
+#~ msgstr "Súbor"
+
+#~ msgid "Add new author profile (starts out as a copy of current)"
+#~ msgstr "Pridať nový profil autora (ako kópia aktuálneho)"
+
+#~ msgid "Delete the author profile"
+#~ msgstr "Odstrániť profil autora"
+
+#~ msgid "Default Author Profile"
+#~ msgstr "Predvolený profil autora"
+
+#~ msgid "Name (not duplicate or blank name):"
+#~ msgstr "Názov (nie dupliticný alebo prázdny):"
+
+#~ msgid "Name of Profile"
+#~ msgstr "Názov profilu"
+
+#~ msgid "Name:"
+#~ msgstr "Meno:"
+
+#~ msgid "Initials:"
+#~ msgstr "Počiatočné:"
+
+#~ msgid "Title:"
+#~ msgstr "Titulok:"
+
+#~ msgid "Position:"
+#~ msgstr "Pozícia:"
+
+#~ msgid "Company:"
+#~ msgstr "Firma:"
+
+#~ msgid "Email:"
+#~ msgstr "E-mail:"
+
+#~ msgid "Telephone (home):"
+#~ msgstr "Telefón (domov):"
+
+#~ msgid "Telephone (work):"
+#~ msgstr "Telefón (práca):"
+
+#~ msgid "Fax:"
+#~ msgstr "Fax:"
+
+#~ msgid "Street:"
+#~ msgstr "Ulica:"
+
+#~ msgid "City:"
+#~ msgstr "Mesto:"
+
+#~ msgid "Country:"
+#~ msgstr "Krajina:"
+
+#~ msgid "No autosave"
+#~ msgstr "Bez automatického ukladania"
+
+#~ msgctxt "unit symbol for minutes, leading space as separator"
+#~ msgid " min"
+#~ msgstr " min"
+
+#~ msgid "Autosave interval:"
+#~ msgstr "Interval pre automatické ukladanie:"
+
+#~ msgid "Create backup file:"
+#~ msgstr "Vytvoriť záložný súbor:"
+
+#~ msgid "Show grid:"
+#~ msgstr "Zobraziť &mriežku:"
+
+#~ msgid "Snap to grid:"
+#~ msgstr "Pripnúť k mriežke"
+
+#~ msgid "Grid color:"
+#~ msgstr "Farba mriežky:"
+
+#~ msgid "Spacing"
+#~ msgstr "Medzery"
+
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "Horizontálne:"
+
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "Vertikálne:"
+
+#~ msgid "Units:"
+#~ msgstr "Jednotky:"
+
+#~ msgid "Handle radius:"
+#~ msgstr "Polomer handle:"
+
+#~ msgid "Grab sensitivity:"
+#~ msgstr "Citlivosť zachytenia:"
+
+#~ msgid "Paste offset:"
+#~ msgstr "Vložiť posun:"
+
+#~ msgid "Paste at Cursor:"
+#~ msgstr "Vložiť na pozíciu kurzora:"
+
+#~ msgid "Only print and exit"
+#~ msgstr "Iba vytlač a ukonč"
+
+#~ msgid "Open a new document with a template"
+#~ msgstr "Otvorí nový dokument zo šablóny"
+
+#~ msgid "Override display DPI"
+#~ msgstr "Prepísať DPI displeja"
+
+#~ msgid "Only export to PDF and exit"
+#~ msgstr "Iba exportovať PDF a skončiť"
+
+#~ msgid "Filename for export-pdf"
+#~ msgstr "Názov súboru pre export-pdf"
+
+#~ msgid "just load the file and then exit"
+#~ msgstr "iba načítať súbor a potom skončiť"
+
+#~ msgid "load the file, show the window and progressbar and then exit"
+#~ msgstr "načítať súbor, ukázať okno a progressbar a skončiť"
+
+#~ msgid "Filename to write profiling information into."
+#~ msgstr "Názov súboru, kam zapísať profilujúce informácie."
+
+#~ msgid "Load a file and save it as an ODF file. Meant for debugging."
+#~ msgstr "Načítať súbor a uložiť ho ako ODF súbor. Určené na debugovanie."
+
+#~ msgid "Calligra"
+#~ msgstr "Calligra"
+
+#~ msgid ""
+#~ "You are running a 32 bits build on a 64 bits Windows.\n"
+#~ "This is not recommended.\n"
+#~ "Please download and install the x64 build instead."
+#~ msgstr ""
+#~ "Máte spustenú 32-bitovú zostavu na 64-bitovom Windows.\n"
+#~ "Toto sa neodporúča.\n"
+#~ "Prosím stiahnite a nainštalujte x64 zostavu."
+
+#~ msgid "%1: Critical Error"
+#~ msgstr "%1: Kritická chyba"
+
+#~ msgid ""
+#~ "Essential application components could not be found.\n"
+#~ "This might be an installation issue.\n"
+#~ "Try restarting or reinstalling."
+#~ msgstr ""
+#~ "Nie je možné nájsť potrebné komponenty aplikácie.\n"
+#~ "Toto môže byť chyba inštalácie.\n"
+#~ "Skúste reštartovať alebo preinštalovať."
+
+#~ msgid "No template found for: %1"
+#~ msgstr "Nenájdená žiadna šablóna pre: %1"
+
+#~ msgid "Too many templates found for: %1"
+#~ msgstr "Nájdených príliš veľa šablón pre: %1"
+
+#~ msgid "Template %1 failed to load."
+#~ msgstr "Šablónu %1 sa nepodarilo načítať."
+
+#~ msgctxt "@title:window"
+#~ msgid "Recover Files"
+#~ msgstr "Obnoviť súbory"
+
+#~ msgid "The following autosave file can be recovered:"
+#~ msgstr "Nasledovný automaticky uložený súbor sa dá obnoviť:"
+
+#~ msgid "The following autosave files can be recovered:"
+#~ msgstr "Nasledovné automaticky uložené súbory sa dajú obnoviť:"
+
+#~ msgid "Always use this template at application start up"
+#~ msgstr "Vždy použiť túto šablónu pri spustení aplikácie"
+
+#~ msgid "Always use this template"
+#~ msgstr "Vždy použiť túto šablónu"
+
+#~ msgid "Making backup..."
+#~ msgstr "Vytváram zálohu..."
+
+#~ msgid "Saving..."
+#~ msgstr "Ukladám..."
+
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Nemôžem uložiť\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Nepodarilo sa uložiť %1\n"
+#~ "Dôvod: %2"
+
+#~ msgid "Document <i>%1</i> saved"
+#~ msgstr "Dokument <i>%1</i> uložený"
+
+#~ msgid ""
+#~ "The password of this encrypted document is not known. Autosave aborted! "
+#~ "Please save your work manually."
+#~ msgstr ""
+#~ "Heslo tohto zašifrovaného dokumentu nie je známe. Automatické uloženie "
+#~ "zrušené. Prosím uložte prácu manuálne."
+
+#~ msgid "Autosaving..."
+#~ msgstr "Automaticky ukladám..."
+
+#~ msgid "Error during autosave! Partition full?"
+#~ msgstr "Chyba počas automatického ukladania! Plný disk?"
+
+#~ msgid "Could not create the file for saving"
+#~ msgstr "Nedá sa otvoriť súbor pre uloženie"
+
+#~ msgid "Not able to write '%1'. Partition full?"
+#~ msgstr "Nedá sa zapísať '%1'. Plný disk?"
+
+#~ msgid "Not able to write RDF metadata. Partition full?"
+#~ msgstr "Nie je možné zapísať RDF metadáta. Partícia plná?"
+
+#~ msgid "Error while trying to write '%1'. Partition full?"
+#~ msgstr "Chyba počas pokusu zapísať '%1'. Plný disk?"
+
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Neplatné URL\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "An autosaved file exists for this document.\n"
+#~ "Do you want to open it instead?"
+#~ msgstr ""
+#~ "Pre tento dokument existuje automaticky uložený súbor.\n"
+#~ "Chcete ho otvoriť namiesto dokumentu?"
+
+#~ msgid "The file %1 does not exist."
+#~ msgstr "Súbor %1 neexistuje."
+
+#~ msgid "Opening Document"
+#~ msgstr "Otváram dokument"
+
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "Nemôžem vytvoriť plugin filtra"
+
+#~ msgid "File not found"
+#~ msgstr "Súbor nenájdený"
+
+#~ msgid "Cannot create storage"
+#~ msgstr "Nedá sa vytvoriť uskladnenie"
+
+#~ msgid "Bad MIME type"
+#~ msgstr "Zlý mime typ"
+
+#~ msgid "Format not recognized"
+#~ msgstr "Nerozoznaný formát"
+
+#~ msgid "Not implemented"
+#~ msgstr "Neimplementované"
+
+#~ msgid "Parsing error"
+#~ msgstr "Chyba analýzy"
+
+#~ msgid "Document is password protected"
+#~ msgstr "Dokument je chránený heslom"
+
+#~ msgid "Invalid file format"
+#~ msgstr "Neznámy formát súboru"
+
+#~ msgid "Internal error"
+#~ msgstr "Interná chyba"
+
+#~ msgid "Out of memory"
+#~ msgstr "Málo pamäte"
+
+#~ msgid "Empty Filter Plugin"
+#~ msgstr "Plugin prázdneho filtra"
+
+#~ msgid "Trying to load into the wrong kind of document"
+#~ msgstr "Snaha o načítanie do zlého druhu dokumentu"
+
+#~ msgid "Failed to download remote file"
+#~ msgstr "Zlyhalo stiahnutie vzdialeného súboru"
+
+#~ msgid "Unknown error"
+#~ msgstr "Neznáma chyba"
+
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr ""
+#~ "Nepodarilo sa otvoriť %2.\n"
+#~ "Dôvod: %1.\n"
+#~ "%3"
+
+#~ msgid "Document <i>%1</i> loaded"
+#~ msgstr "Dokument <i>%1</i> načítaný"
+
+#~ msgid "Could not find %1"
+#~ msgstr "Nedá sa nájsť %1"
+
+#~ msgid ""
+#~ "Parsing error in %1 at line %2, column %3\n"
+#~ "Error message: %4"
+#~ msgstr ""
+#~ "Chyba pri spracúvaní %1 na riadku %2, stĺpec %3\n"
+#~ "Chybová správa: %4"
+
+#~ msgid "%1 is not a file."
+#~ msgstr "%1 nie je súbor."
+
+#~ msgid "Could not open the file for reading (check read permissions)."
+#~ msgstr "Nepodarilo sa otvoriť súbor na čítanie (overte prístupové práva)."
+
+#~ msgid "Could not read the beginning of the file."
+#~ msgstr "Nepodarilo sa prečítať začiatok súboru."
+
+#~ msgid ""
+#~ "parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "chyba pri spracovaní hlavného súboru na riadku %1, stĺpci %2\n"
+#~ "Správa: %3"
+
+#~ msgid "Not a valid Calligra file: %1"
+#~ msgstr "Neplatný súbor Calligra: %1"
+
+#~ msgid "Invalid document: no file 'maindoc.xml'."
+#~ msgstr "Neplatný dokument: neobsahuje súbor 'maindoc.xml'."
+
+#~ msgid ""
+#~ "Document <i>%1</i> contains several versions. Go to File->Versions to "
+#~ "open an old version."
+#~ msgstr ""
+#~ "Dokument <i>%1</i> obsahuje niekoľko verzií. Choďte na Súbor -> Verzie na "
+#~ "otvorenie starej verzie."
+
+#~ msgid "Untitled"
+#~ msgstr "Nepomenovaný"
+
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr "<p>Dokument <b>'%1'</b> bol zmenený.</p><p>Chcete ho uložiť?</p>"
+
+#~ msgid "Internal error: saveXML not implemented"
+#~ msgstr "Interná chyba: saveXML neimplementované"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Nemôžem otvoriť\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Nepodarilo sa otvoriť %1\n"
+#~ "Dôvod: %2"
+
+#~ msgid "a word processing"
+#~ msgstr "textový procesor"
+
+#~ msgid "a spreadsheet"
+#~ msgstr "tabuľkový procesor"
+
+#~ msgid "a presentation"
+#~ msgstr "prezentácia"
+
+#~ msgid "a chart"
+#~ msgstr "graf"
+
+#~ msgid "a drawing"
+#~ msgstr "kresba"
+
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr ""
+#~ "Dokument \"%1\" bol upravený.\n"
+#~ "Chcete uložiť alebo zahodiť zmeny?"
+
+#~ msgid "Close Document"
+#~ msgstr "Zatvoriť dokument"
+
+#~ msgid "%1 %"
+#~ msgstr "%1 %"
+
+#~ msgid "No"
+#~ msgstr "Nie"
+
+#~ msgid "Yes"
+#~ msgstr "Áno"
+
+#~ msgid "Could not export file."
+#~ msgstr "Nepodarilo sa exportovať súbor."
+
+#~ msgid "Missing Export Filter"
+#~ msgstr "Chýbajúci filter na export"
+
+#~ msgid ""
+#~ "Could not import file of type\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Nepodarilo sa importovať súbor typu\n"
+#~ "%1"
+
+#~ msgid "Missing Import Filter"
+#~ msgstr "Chýbajúci filter na import"
+
+#~ msgid "Choose Filter"
+#~ msgstr "Vybrať filter"
+
+#~ msgid "Case Sensitive"
+#~ msgstr "Rozlišovať veľkosť písmen"
+
+#~ msgid "Match cases when searching"
+#~ msgstr "Rozlišovať veľkosť písmen pri hľadaní"
+
+#~ msgid "Match only whole words"
+#~ msgstr "Iba zhoda celých slov"
+
+#~ msgid "Whole Words Only"
+#~ msgstr "Iba celé slová"
+
+#~ msgid "Find from Cursor"
+#~ msgstr "Hľadať od kurzora"
+
+#~ msgid "Start searching from the current cursor"
+#~ msgstr "Spustiť hľadanie od aktuálnej polohy kurzora"
+
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "Nájsť:"
+
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "Ďalej"
+
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "Predchádzajúci"
+
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "Možnosti"
+
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "Nahradiť:"
+
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "Nahradiť"
+
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "Nahradiť všetko"
+
+#~ msgctxt "Total number of matches"
+#~ msgid "1 match found"
+#~ msgid_plural "%1 matches found"
+#~ msgstr[0] "Nájdený 1 výsledok"
+#~ msgstr[1] "Nájdené %1 výsledky"
+#~ msgstr[2] "Nájdených %1 výsledkkov"
+
+#~ msgid "No matches found"
+#~ msgstr "Nič nenájdené"
+
+#~ msgid "Search hit bottom, continuing from top."
+#~ msgstr "Dosiahnutý koniec, pokračujem od vrchu."
+
+#~ msgid "Search hit top, continuing from bottom."
+#~ msgstr "Dosiahnutý začiatok, pokračujem od konca."
+
+#~ msgid "%1 unsaved document (%2)"
+#~ msgstr "%1 neuložený dokument (%2)"
+
+#~ msgid "Export as PDF..."
+#~ msgstr "Exportovať ako PDF..."
+
+#~ msgid "Reload"
+#~ msgstr "Znovu načítať"
+
+#~ msgid "Versions..."
+#~ msgstr "Verzie..."
+
+#~ msgid "Open ex&isting Document as Untitled Document..."
+#~ msgstr "Otvoriť existujúci dokument ako Nepomenovaný dokument..."
+
+#~ msgid "E&xport..."
+#~ msgstr "E&xportovať..."
+
+#~ msgid "En&crypt Document"
+#~ msgstr "Šifrovať dokument"
+
+#~ msgid "&Uncompress to Directory"
+#~ msgstr "Dekomprimovať do adresára"
+
+#~ msgid "&New View"
+#~ msgstr "Nový pohľad"
+
+#~ msgid "Document Information"
+#~ msgstr "Informácie o dokumente"
+
+#~ msgid "Full Screen Mode"
+#~ msgstr "Režim celej obrazovky"
+
+#~ msgid "Show Dockers"
+#~ msgstr "Ukázať dockery"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "Ukázať titulné pruhy dockerov"
+
+#~ msgid "Dockers"
+#~ msgstr "Dockery"
+
+#~ msgid "(write protected)"
+#~ msgstr "(chránené proti zápisu)"
+
+#~ msgid "Save as %1"
+#~ msgstr "Uložiť ako %1"
+
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "%1 (Neznámy typ súboru)"
+
+#~ msgid ""
+#~ "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
+#~ "want to save in this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Uloženie ako %1 môže spôsobiť stratu formátovania.<p>Naozaj chcete "
+#~ "uložiť súbor v tomto formáte?</qt>"
+
+#~ msgid "Confirm Save"
+#~ msgstr "Potvrdenie uloženia"
+
+#~ msgid ""
+#~ "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you "
+#~ "still want to export to this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Export ako %1 môže spôsobiť stratu formátovania.<p>Naozaj chcete "
+#~ "uložiť súbor v tomto formáte?</qt>"
+
+#~ msgid "Confirm Export"
+#~ msgstr "Potvrdenie exportu"
+
+#~ msgid "untitled"
+#~ msgstr "nepomenovaný"
+
+#~ msgid "Open Document"
+#~ msgstr "Otvoriť dokument"
+
+#~ msgid "Export as PDF"
+#~ msgstr "Exportovať ako PDF"
+
+#~ msgid "Cannot export to the specified file"
+#~ msgstr "Nemôžem exportovať do zadaného súboru"
+
+#~ msgid "Document - %1"
+#~ msgstr "Dokument - %1"
+
+#~ msgid ""
+#~ "You will lose all changes made since your last save\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "Stratíte všetky vaše zmeny od posledného uloženia\n"
+#~ "Chcete pokračovať?"
+
+#~ msgid "Warning"
+#~ msgstr "Upozornenie"
+
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "Zobraziť panel nástrojov %1"
+
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "Skryť panel nástrojov %1"
+
+#~ msgid "Open Existing Document"
+#~ msgstr "Otvoriť existujúci dokument"
+
+#~ msgid "Recent Documents"
+#~ msgstr "Nedávne dokumenty"
+
+#~ msgid "Custom Document"
+#~ msgstr "Vlastný dokument"
+
+#~ msgid "Stop"
+#~ msgstr "Zastaviť"
+
+#~ msgid "Printing"
+#~ msgstr "Tlačím"
+
+#~ msgid "Printing done"
+#~ msgstr "Tlač hotová"
+
+#~ msgid "Close"
+#~ msgstr "Zatvoriť"
+
+#~ msgid "Stopped"
+#~ msgstr "Zastavené"
+
+#~ msgid "Open This Document"
+#~ msgstr "Otvoriť tento dokument"
+
+#~ msgctxt "File modification date and time. %1 is date time"
+#~ msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Zmenený:</b></td><td>%1</td></tr>"
+
+#~ msgctxt "File access date and time. %1 is date time"
+#~ msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Ostatný prístup:</b></td><td>%1</td></tr>"
+
+#~ msgid "Show Guides"
+#~ msgstr "Ukázať sprievodcov"
+
+#~ msgid "Shows or hides guides"
+#~ msgstr "Zobrazí alebo skryje sprievodcov"
+
+#~ msgid "Create Template"
+#~ msgstr "Vytvoriť šablónu"
+
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "Titul:"
+
+#~ msgid "Group:"
+#~ msgstr "Skupina:"
+
+#~ msgid "&Add Group..."
+#~ msgstr "&Pridať skupinu..."
+
+#~ msgid "&Remove"
+#~ msgstr "O&dstrániť"
+
+#~ msgid "Picture"
+#~ msgstr "Obrázok"
+
+#~ msgid "&Preview"
+#~ msgstr "&Náhľad"
+
+#~ msgid "Custom:"
+#~ msgstr "Vlastné:"
+
+#~ msgid "&Select..."
+#~ msgstr "&Vybrať..."
+
+#~ msgid "Use the new template as default"
+#~ msgstr "Použiť novú šablónu ak štandard"
+
+#~ msgid "Use the new template every time %1 starts"
+#~ msgstr "Použiť novú šablónu vždy keď sa spustí %1"
+
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr "Skutočne chcete prepísať existujúcu '%1' šablónu?"
+
+#~ msgid "Add Group"
+#~ msgstr "Pridať skupinu"
+
+#~ msgid "Enter group name:"
+#~ msgstr "Zadajte meno skupiny:"
+
+#~ msgid "This name is already used."
+#~ msgstr "Toto meno je už použité."
+
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "Skutočne chcete odstrániť túto skupinu?"
+
+#~ msgid "Remove Group"
+#~ msgstr "Odstrániť skupinu"
+
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "Skutočne chcete vymazať túto šablónu?"
+
+#~ msgid "Remove Template"
+#~ msgstr "Odstrániť šablónu"
+
+#~ msgid "&Delete"
+#~ msgstr "Odstrá&niť"
+
+#~ msgid "Could not load picture."
+#~ msgstr "Nemôžem otvoriť obrázok."
+
+#~ msgid "No picture available."
+#~ msgstr "Nie je dostupný žiadny obrázok."
+
+#~ msgid "Use This Template"
+#~ msgstr "Použiť túto šablónu"
+
+#~ msgid "Version"
+#~ msgstr "Verzia"
+
+#~ msgid "Date & Time"
+#~ msgstr "Dátum a čas"
+
+#~ msgid "Saved By"
+#~ msgstr "Uložil(a)"
+
+#~ msgid "Comment"
+#~ msgstr "Komentár"
+
+#~ msgid "&Add"
+#~ msgstr "&Pridať"
+
+#~ msgid "&Modify"
+#~ msgstr "Zmeniť"
+
+#~ msgid "&Open"
+#~ msgstr "&Otvoriť"
+
+#~ msgid "A new version could not be added"
+#~ msgstr "Nie je možné pridať novú verziu"
+
+#~ msgid "Date: %1"
+#~ msgstr "Dátum: %1"
+
+#~ msgid "Active Author Profile"
+#~ msgstr "Aktívny profil autora"
+
+#~ msgctxt "choice for author profile"
+#~ msgid "Anonymous"
+#~ msgstr "Anonym"
+
+#~ msgid "Unknown"
+#~ msgstr "Neznáme"
+
+#~ msgid ""
+#~ "This document contains an unknown checksum. When you give a password it "
+#~ "might not be verified."
+#~ msgstr ""
+#~ "Tento dokument obsahuje neznámy kontrolný súčet. Ak zadáte heslo, nemusí "
+#~ "byť verifikované."
+
+#~ msgid ""
+#~ "This document contains an unknown encryption method. Some parts may be "
+#~ "unreadable."
+#~ msgstr ""
+#~ "Tento dokument obsahuje neznámu šifrovaciu metódu. Niektoré časti môžu "
+#~ "byť nečitateľné."
+
+#~ msgid ""
+#~ "This document contains incomplete encryption data. Some parts may be "
+#~ "unreadable."
+#~ msgstr ""
+#~ "Tento dokument obsahuje nekompletné šifrovacie údaje. Niektoré časti môžu "
+#~ "byť nečitateľné."
+
+#~ msgid ""
+#~ "QCA has currently no support for SHA1 or PBKDF2 using SHA1. The document "
+#~ "can not be opened."
+#~ msgstr ""
+#~ "QCA momentálne nepodporuje SHA1 alebo PBKDF2 pomocou SHA1. Dokument sa "
+#~ "nedá otvoriť."
+
+#~ msgid ""
+#~ "The manifest file seems to be corrupted. It cannot be modified and the "
+#~ "document will remain unreadable. Please try and save the document again "
+#~ "to prevent losing your work."
+#~ msgstr ""
+#~ "Súbor manifest sa zdá byť poškodený. Nie je možné ho upraviť a dokument "
+#~ "ostane nečitateľný. Prosím snažte sa uložiť dokument znova, aby ste "
+#~ "zabránili strate vašej práce."
+
+#~ msgid ""
+#~ "The manifest file cannot be written. The document will remain unreadable. "
+#~ "Please try and save the document again to prevent losing your work."
+#~ msgstr ""
+#~ "Súbor manifest nie je možné zapísať. Dokument ostane nečitateľný. Prosím "
+#~ "skúste dokument uložiť znova na zabránenie straty vašej práce."
+
+#~ msgid "Please enter the password to open this file."
+#~ msgstr "Prosím zadajte heslo na otvorenie tohto súboru."
+
+#~ msgid "Please enter the password to encrypt the document with."
+#~ msgstr "Prosím zadajte heslo na zašifrovanie dokumentu."
+
+#~ msgid "Do you want to save the password?"
+#~ msgstr "Chcete uložiť heslo?"
+
+#~ msgid "No store backend"
+#~ msgstr "Žiadny úložný backend"
+
+#~ msgid ""
+#~ "Parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Chyba pri spracovaní hlavného dokumentu na riadku %1, stĺpec %2\n"
+#~ "Chybová správa: %3"
+
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "Obrazovka"
+
+#~ msgid "The directory mode is not supported for remote locations."
+#~ msgstr "Mód priečinku nie je podporovaný pre vzdialené miesta."
+
+#~ msgid "Calligra Storage"
+#~ msgstr "Úložisko Calligra"
+
+#~ msgid "Clear"
+#~ msgstr "Vyčistiť"
+
+#~ msgid "Subtract"
+#~ msgstr "Rozdiel"
+
+#~ msgid "Multiply"
+#~ msgstr "Násobenie"
+
+#~ msgid "Alpha mask"
+#~ msgstr "Alfa maska"
+
+#~ msgid "Alpha"
+#~ msgstr "Alfa"
+
+#~ msgid "Undefined operation in the alpha color space"
+#~ msgstr "Nedefinovaná operácia vo farebnom priestore alfa"
+
+#~ msgid "L*a*b* (16-bit integer/channel, unmanaged)"
+#~ msgstr "L*a*b* (16-bit celé číslo/kanál, nespravované)"
+
+#~ msgid "Lightness"
+#~ msgstr "Jas"
+
+#~ msgid "a*"
+#~ msgstr "a*"
+
+#~ msgid "b*"
+#~ msgstr "b*"
+
+#~ msgid "RGB (16-bit integer/channel, unmanaged)"
+#~ msgstr "RGB (16-bit celé číslo/kanál, nespravované)"
+
+#~ msgid "RGB (8-bit integer/channel, unmanaged)"
+#~ msgstr "RGB (8-bit celé číslo/kanál, nespravované)"
+
+#~ msgid "Blue"
+#~ msgstr "Modrá"
+
+#~ msgid "Green"
+#~ msgstr "Zelená"
+
+#~ msgid "Red"
+#~ msgstr "Červená"
+
+#~ msgid "Undefined operation in the %1 space"
+#~ msgstr "Nedefinovaná operácia v priestore %1"
+
+#~ msgid "Undefined operation in the %1 color space"
+#~ msgstr "Nedefinovaná operácia vo farebnom priestore %1"
+
+#~ msgid "Simple Color Conversion Engine"
+#~ msgstr "Jednoduchý konverzný nástroj farieb"
+
+#~ msgid "Alpha darken"
+#~ msgstr "Alfa stmavenie"
+
+#~ msgid "Behind"
+#~ msgstr "Za"
+
+#~ msgid "Dissolve"
+#~ msgstr "Rozplynúť"
+
+#~ msgid "Erase"
+#~ msgstr "Mazať"
+
+#~ msgid "Normal"
+#~ msgstr "Normálne"
+
+#~ msgid "Overlay"
+#~ msgstr "Prekladanie"
+
+#~ msgid "Grain Merge"
+#~ msgstr "Zlúčenie zŕn"
+
+#~ msgid "Grain Extract"
+#~ msgstr "Rozbalenie zŕn"
+
+#~ msgid "Hard Mix"
+#~ msgstr "Tvrdé miešanie"
+
+#~ msgid "Geometric Mean"
+#~ msgstr "Geometrický priemer"
+
+#~ msgid "Parallel"
+#~ msgstr "Rovnobežka"
+
+#~ msgid "Allanon"
+#~ msgstr "Allanon"
+
+#~ msgid "Color Dodge"
+#~ msgstr "Farebný úskok"
+
+#~ msgid "Linear Dodge"
+#~ msgstr "Lineárny úskok"
+
+#~ msgid "Lighten"
+#~ msgstr "Zjasniť"
+
+#~ msgid "Hard Light"
+#~ msgstr "Ostré svetlo"
+
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "Mäkké svetlo (SVG)"
+
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "Mäkké svetlo (Photoshop)"
+
+#~ msgid "Gamma Light"
+#~ msgstr "Gama svetlo"
+
+#~ msgid "Vivid Light"
+#~ msgstr "Jasné svetlo"
+
+#~ msgid "Pin Light"
+#~ msgstr "Bodové svetlo"
+
+#~ msgid "Linear Light"
+#~ msgstr "Lineárne svetlo"
+
+#~ msgid "Color Burn"
+#~ msgstr "Prepálenie farby"
+
+#~ msgid "Linear Burn"
+#~ msgstr "Lineárne vypaľovanie"
+
+#~ msgid "Darken"
+#~ msgstr "Stmaviť"
+
+#~ msgid "Gamma Dark"
+#~ msgstr "Gama stmavenie"
+
+#~ msgid "Addition"
+#~ msgstr "Súčet"
+
+#~ msgid "Inversed-Subtract"
+#~ msgstr "Inverzné odčítanie"
+
+#~ msgid "Divide"
+#~ msgstr "Deliť"
+
+#~ msgid "Arcus Tangent"
+#~ msgstr "Arkus tangens"
+
+#~ msgid "Difference"
+#~ msgstr "Rozdiel"
+
+#~ msgid "Exclusion"
+#~ msgstr "Vylúčenie"
+
+#~ msgid "Equivalence"
+#~ msgstr "Ekvivalencia"
+
+#~ msgid "Additive-Subtractive"
+#~ msgstr "Aditívne-subtraktívne"
+
+#~ msgid "Copy Red"
+#~ msgstr "Kopírovať červenú"
+
+#~ msgid "Copy Green"
+#~ msgstr "Kopírovať zelenú"
+
+#~ msgid "Copy Blue"
+#~ msgstr "Kopírovať modrú"
+
+#~ msgid "Tangent Normalmap"
+#~ msgstr "Tangent Normalmap"
+
+#~ msgid "Color"
+#~ msgstr "Farba"
+
+#~ msgid "Hue"
+#~ msgstr "Odtieň"
+
+#~ msgid "Saturation"
+#~ msgstr "Nasýtenie"
+
+#~ msgid "Increase Saturation"
+#~ msgstr "Zvýšiť sýtosť"
+
+#~ msgid "Decrease Saturation"
+#~ msgstr "Znížiť sýtosť"
+
+#~ msgid "Luminosity"
+#~ msgstr "Jas"
+
+#~ msgid "Increase Luminosity"
+#~ msgstr "Zvýšiť jas"
+
+#~ msgid "Decrease Luminosity"
+#~ msgstr "Znížiť jas"
+
+#~ msgid "Darker Color"
+#~ msgstr "Tmavšia farba"
+
+#~ msgid "Lighter Color"
+#~ msgstr "Svetlejšia farba"
+
+#~ msgid "Color HSI"
+#~ msgstr "Farba HSI"
+
+#~ msgid "Hue HSI"
+#~ msgstr "Odtieň HSI"
+
+#~ msgid "Saturation HSI"
+#~ msgstr "Nasýtenie HSI"
+
+#~ msgid "Increase Saturation HSI"
+#~ msgstr "Zvýšiť nasýtenie HSI"
+
+#~ msgid "Decrease Saturation HSI"
+#~ msgstr "Znížiť nasýtenie HSI"
+
+#~ msgid "Intensity"
+#~ msgstr "Intenzita"
+
+#~ msgid "Increase Intensity"
+#~ msgstr "Zvýšiť intenzitu"
+
+#~ msgid "Decrease Intensity"
+#~ msgstr "Znížiť intentizu"
+
+#~ msgid "Color HSL"
+#~ msgstr "Farba HSL"
+
+#~ msgid "Hue HSL"
+#~ msgstr "Odtieň HSL"
+
+#~ msgid "Saturation HSL"
+#~ msgstr "Nasýtenie HSL"
+
+#~ msgid "Increase Saturation HSL"
+#~ msgstr "Zvýšiť nasýtenie HSL"
+
+#~ msgid "Decrease Saturation HSL"
+#~ msgstr "Znížiť nasýtenie HSL"
+
+#~ msgid "Increase Lightness"
+#~ msgstr "Zväčšiť jas"
+
+#~ msgid "Decrease Lightness"
+#~ msgstr "Zmenšiť jas"
+
+#~ msgid "Color HSV"
+#~ msgstr "Farba HSV"
+
+#~ msgid "Hue HSV"
+#~ msgstr "Odtieň HSV"
+
+#~ msgid "Saturation HSV"
+#~ msgstr "Nasýtenie HSV"
+
+#~ msgid "Increase Saturation HSV"
+#~ msgstr "Zvýšiť nasýtenie HSV"
+
+#~ msgid "Decrease Saturation HSV"
+#~ msgstr "Znížiť nasýtenie HSV"
+
+#~ msgid "Increase Value"
+#~ msgstr "Zvýšiť hodnotu"
+
+#~ msgid "Decrease Value"
+#~ msgstr "Znížiť hodnotu"
+
+#~ msgid "Generic RGB Histogram"
+#~ msgstr "Štandardný RGB histogram"
+
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "G"
+#~ msgstr "G"
+
+#~ msgid "L*a*b* Histogram"
+#~ msgstr "L*a*b* Histogram"
+
+#~ msgid "L*"
+#~ msgstr "L*"
+
+#~ msgid "Generic L*a*b* Histogram"
+#~ msgstr "Štandardný L*a*b* histogram"
+
+#~ msgid "RGB"
+#~ msgstr "RGB"
+
+#~ msgid "XYZ"
+#~ msgstr "XYZ"
+
+#~ msgid "L*a*b*"
+#~ msgstr "L*a*b*"
+
+#~ msgid "CMYK"
+#~ msgstr "CMYK"
+
+#~ msgid "Grayscale"
+#~ msgstr "Šedá škála"
+
+#~ msgid "Grayscale (without transparency)"
+#~ msgstr "Šedá škála (bez transparencie)"
+
+#~ msgid "YCbCr"
+#~ msgstr "YCbCr"
+
+#~ msgid "8 Bits"
+#~ msgstr "8 bitov"
+
+#~ msgid "16 Bits"
+#~ msgstr "16 bitov"
+
+#~ msgid "16 Bits Float"
+#~ msgstr "16 bit reálne číslo"
+
+#~ msgid "32 Bits Float"
+#~ msgstr "32 bit reálne číslo"
+
+#~ msgid "64 Bits Float"
+#~ msgstr "64 bitové reálne číslo"
+
+#~ msgid "Arithmetic"
+#~ msgstr "Automatické"
+
+#~ msgid "Negative"
+#~ msgstr "Negatív"
+
+#~ msgid "HSY"
+#~ msgstr "HSY"
+
+#~ msgid "HSI"
+#~ msgstr "HSI"
+
+#~ msgid "HSL"
+#~ msgstr "HSL"
+
+#~ msgid "HSV"
+#~ msgstr "HSV"
+
+#~ msgid "Mix"
+#~ msgstr "Mix"
+
+#~ msgid "Inverse Subtract"
+#~ msgstr "Inverzne odčítať"
+
+#~ msgid "Burn"
+#~ msgstr "Napáliť"
+
+#~ msgid "Additive Subtractive"
+#~ msgstr "Aditívne subtraktívne"
+
+#~ msgid "Alpha Darken"
+#~ msgstr "Alfa stmavenie"
+
+#~ msgid "Bumpmap"
+#~ msgstr "Bumpmap"
+
+#~ msgid "SVG Gradient"
+#~ msgstr "SVG prechod"
+
+#~ msgid "Select the object you want to reference"
+#~ msgstr "Vyberte objekt ktorý chcete referencovať"
+
+#~ msgid "Reference"
+#~ msgstr "Odkaz"
+
+#~ msgid "Set For All Existing"
+#~ msgstr "Nastaviť pre všetky existujúce"
+
+#~ msgctxt "statement is an Rdf related term"
+#~ msgid "<qt>Edits will be lost.<p>There is %1 invalid statement left.</qt>"
+#~ msgid_plural ""
+#~ "<qt>Edits will be lost.<p>There are %1 invalid statements left.</qt>"
+#~ msgstr[0] "<qt>Úpravy budú stratené.<p>Ostáva %1 nesprávne vyjadrenie.</qt>"
+#~ msgstr[1] ""
+#~ "<qt>Úpravy budú stratené.<p>Ostávajú %1 nesprávne vyjadrenia.</qt>"
+#~ msgstr[2] ""
+#~ "<qt>Úpravy budú stratené.<p>Ostáva %1 nesprávnych vyjadrení.</qt>"
+
+#~ msgctxt "statement is an Rdf related term"
+#~ msgid "Discard invalid statements?"
+#~ msgstr "Zahodiť neplatné tvrdenia?"
+
+#~ msgid "Rdf"
+#~ msgstr "Rdf"
+
+#~ msgid "Triples"
+#~ msgstr "Strojnásobuje"
+
+#~ msgid "new"
+#~ msgstr "nový"
+
+#~ msgid "copy"
+#~ msgstr "kopírovať"
+
+#~ msgid "delete"
+#~ msgstr "odstrániť"
+
+#~ msgid "Namespaces"
+#~ msgstr "Menné priestory"
+
+#~ msgid "Prefix"
+#~ msgstr "Prefix"
+
+#~ msgid "Namespace"
+#~ msgstr "Menný priestor"
+
+#~ msgid "Semantic"
+#~ msgstr "Sémantický"
+
+#~ msgid "SPARQL"
+#~ msgstr "SPARQL"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"># Insert your SPARQL query here<br /"
+#~ "># Results are shown below.</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix rdf:  &lt;http://www.w3."
+#~ "org/1999/02/22-rdf-syntax-ns#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix foaf: &lt;http://xmlns.com/"
+#~ "foaf/0.1/&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix pkg:  &lt;http://docs.oasis-"
+#~ "open.org/ns/office/1.2/meta/pkg#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix geo84: &lt;http://www.w3."
+#~ "org/2003/01/geo/wgs84_pos#&gt;</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">select ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">where { </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"> ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">}</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"># Insert your SPARQL query here<br /"
+#~ "># Results are shown below.</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix rdf:  &lt;http://www.w3."
+#~ "org/1999/02/22-rdf-syntax-ns#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix foaf: &lt;http://xmlns.com/"
+#~ "foaf/0.1/&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix pkg:  &lt;http://docs.oasis-"
+#~ "open.org/ns/office/1.2/meta/pkg#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix geo84: &lt;http://www.w3."
+#~ "org/2003/01/geo/wgs84_pos#&gt;</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">select ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">where { </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"> ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">}</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p></body></html>"
+
+#~ msgid "Stylesheets"
+#~ msgstr "Kaskádové štýly"
+
+#~ msgid ""
+#~ "Set the default stylesheet for Semantic objects in this document. New RDF "
+#~ "objects will use this stylesheet automatically. The buttons allow you to "
+#~ "set the stylesheet for all existing semantic objects to the new default "
+#~ "stylesheet as well."
+#~ msgstr ""
+#~ "Nastaviť štandardné štýly pre sémantické objekty v tomto dokumente. Nové "
+#~ "RDF objekty použijú tento štýl automaticky. Tlačidlá umožnia nastaviť "
+#~ "štýl pre všetky existujúce sémantické objekty na nový predvolený štýl "
+#~ "tiež."
+
+#~ msgid "Apply Stylesheet"
+#~ msgstr "Aplikovanie štýlu"
+
+#~ msgid "System"
+#~ msgstr "Systém"
+
+#~ msgid "User"
+#~ msgstr "Používateľ"
+
+#~ msgid "Reapply Current"
+#~ msgstr "Znova použiť aktuálne"
+
+#~ msgid "Disassociate"
+#~ msgstr "Odasociovať"
+
+#~ msgid "Edit %1"
+#~ msgstr "Upraviť %1"
+
+#~ msgid "Stylesheet Definition"
+#~ msgstr "Definícia štýlu"
+
+#~ msgid "Variables Available"
+#~ msgstr "Dostupné premenné"
+
+#~ msgid "Description"
+#~ msgstr "Popis"
+
+#~ msgid "Stylesheet Name"
+#~ msgstr "Meno štýlu"
+
+#~ msgid "Empty"
+#~ msgstr "Prázdne"
+
+#~ msgid "URI"
+#~ msgstr "URI"
+
+#~ msgid "Literal"
+#~ msgstr "Literál"
+
+#~ msgid "Blank"
+#~ msgstr "Prázdne"
+
+#~ msgid "Valid"
+#~ msgstr "Platný"
+
+#~ msgid "Subject"
+#~ msgstr "Predmet"
+
+#~ msgid "Predicate"
+#~ msgstr "Predvídať"
+
+#~ msgid "Obj Type"
+#~ msgstr "Typ objektu"
+
+#~ msgid "DataType"
+#~ msgstr "DataType"
+
+#~ msgid "Stored In"
+#~ msgstr "Uložené v"
+
+#~ msgid "Invalid integer number"
+#~ msgstr "Neplatné celé číslo"
+
+#~ msgid "This integer number may be too large."
+#~ msgstr "Toto celé číslo je možno priveľké."
+
+#~ msgid "Invalid identifier"
+#~ msgstr "Neplatný identifikátor"
+
+#~ msgid "Identifiers should start with a letter or '_' character"
+#~ msgstr "Identifikátory by mali začínať písmenom alebo znakom '_'"
+
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "Žiadne"
+
+#~ msgid "Small Bullet"
+#~ msgstr "Malá odrážka"
+
+#~ msgid "Circle Bullet"
+#~ msgstr "Kruhová odrážka"
+
+#~ msgid "Square Bullet"
+#~ msgstr "Štvorcová odrážka"
+
+#~ msgid "Rhombus Bullet"
+#~ msgstr "Kosoštvorcová odrážka"
+
+#~ msgid "Check Mark Bullet"
+#~ msgstr "Zaškrtávacia odrážka"
+
+#~ msgid "Rightwards Arrow Bullet"
+#~ msgstr "Odrážka pravá šípka"
+
+#~ msgid "Arabic"
+#~ msgstr "Arabské"
+
+#~ msgid "Lower Alphabetical"
+#~ msgstr "Malé abecedné"
+
+#~ msgid "Upper Alphabetical"
+#~ msgstr "Veľké abecedné"
+
+#~ msgid "Upper Roman"
+#~ msgstr "Rímske, veľké"
+
+#~ msgid "Large Bullet"
+#~ msgstr "Veľká odrážka"
+
+#~ msgid "Ballot X Bullet"
+#~ msgstr "Hlasovacia odrážka"
+
+#~ msgid "Rightwards Arrow Head Bullet"
+#~ msgstr "Odrážka pravá šípka hlava"
+
+#~ msgid "Bengali"
+#~ msgstr "Bengálske"
+
+#~ msgid "Gujarati"
+#~ msgstr "Gudžarátí"
+
+#~ msgid "Gurumukhi"
+#~ msgstr "Gurumukhi"
+
+#~ msgid "Kannada"
+#~ msgstr "Kanadské"
+
+#~ msgid "Malayalam"
+#~ msgstr "Malajálamské"
+
+#~ msgid "Oriya"
+#~ msgstr "Urijské"
+
+#~ msgid "Tamil"
+#~ msgstr "Tamilské"
+
+#~ msgid "Telugu"
+#~ msgstr "Telugské"
+
+#~ msgid "Tibetan"
+#~ msgstr "Tibetské"
+
+#~ msgid "Thai"
+#~ msgstr "Thajské"
+
+#~ msgid "Abjad"
+#~ msgstr "Abjad"
+
+#~ msgid "AbjadMinor"
+#~ msgstr "AbjadMinor"
+
+#~ msgid "ArabicAlphabet"
+#~ msgstr "Arabská abeceda"
+
+#~ msgid "Opacity"
+#~ msgstr "Nepriehľadnosť"
+
+#~ msgid "Recent:"
+#~ msgstr "Nedávne:"
+
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "Pridať/odstrániť farby..."
+
+#~ msgid "Import Data"
+#~ msgstr "Importovať dáta"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Recommended ( %1 )"
+#~ msgstr "Odporúčané ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Locale ( %1 )"
+#~ msgstr "Národné kódovanie ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Other ( %1 )"
+#~ msgstr "Iné ( %1 )"
+
+#~ msgid "Generic"
+#~ msgstr "Všeobecné"
+
+#~ msgid "Currency"
+#~ msgstr "Mena"
+
+#~ msgid "None"
+#~ msgstr "Žiadny"
+
+#~ msgid ""
+#~ "Please check the ranges you specified. The start value must be lower than "
+#~ "the end value."
+#~ msgstr ""
+#~ "Prosím skontrolujte špecifikovaný rozsah. Počiatočná hodnota musí byť "
+#~ "menšia ako koncová."
+
+#~ msgid "Cannot find encoding: %1"
+#~ msgstr "Kódovanie %1 sa nedá nájsť"
+
+#~ msgid "Data"
+#~ msgstr "Dáta"
+
+#~ msgid "E&ncoding:"
+#~ msgstr "Kódovanie:"
+
+#~ msgid "First row contains headers"
+#~ msgstr "Prvý riadok obsahuje hlavičky"
+
+#~ msgid "First column contains headers"
+#~ msgstr "Prvý stĺpec obsahuje hlavičky"
+
+#~ msgid "Format"
+#~ msgstr "Formát"
+
+#~ msgid "Delimiter"
+#~ msgstr "Oddelovač"
+
+#~ msgid "Semicolon"
+#~ msgstr "Bodkočiarka"
+
+#~ msgid "Other"
+#~ msgstr "Iné"
+
+#~ msgid "Tabulator"
+#~ msgstr "Tabulátor"
+
+#~ msgid "Space"
+#~ msgstr "Medzerník"
+
+#~ msgid "Text&quote:"
+#~ msgstr "Text&quote:"
+
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "Decimal symbol:"
+#~ msgstr "Desatinný symbol:"
+
+#~ msgid "Thousands separator:"
+#~ msgstr "Oddeľovač tisícov:"
+
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "Ignorovať zdvojenie oddelovača"
+
+#~ msgid "&Format:"
+#~ msgstr "Formát:"
+
+#~ msgid "Ranges"
+#~ msgstr "Rozsahy"
+
+#~ msgid "Update"
+#~ msgstr "Aktualizovať"
+
+#~ msgid "Import columns:"
+#~ msgstr "Importovať stĺpce:"
+
+#~ msgid "Import lines:"
+#~ msgstr "Importovať riadky:"
+
+#~ msgid "to"
+#~ msgstr "na"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Float Docker"
+#~ msgstr "Plávajúci docker"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "Zatvoriť docker"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "Zbaliť docker"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Lock Docker"
+#~ msgstr "Zamknúť docker"
+
+#~ msgid "&Encrypt"
+#~ msgstr "Šifrovať"
+
+#~ msgid "Keywords:"
+#~ msgstr "Kľúčové slová:"
+
+#~ msgid "Subject:"
+#~ msgstr "Predmet:"
+
+#~ msgid "Last printed:"
+#~ msgstr "Ostatná tlač:"
+
+#~ msgid "Total editing time:"
+#~ msgstr "Celkový čas editovania:"
+
+#~ msgid "Encryption:"
+#~ msgstr "Kryptovanie:"
+
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "Názov:"
+
+#~ msgid "Revision number:"
+#~ msgstr "Číslo revízie:"
+
+#~ msgid "Modified:"
+#~ msgstr "Zmenený:"
+
+#~ msgid "Comments:"
+#~ msgstr "Komentáre:"
+
+#~ msgid "Created:"
+#~ msgstr "Vytvorený:"
+
+#~ msgid "Path:"
+#~ msgstr "Cesta:"
+
+#~ msgid "&Reset"
+#~ msgstr "Vrátiť &pôvodné"
+
+#~ msgid "Language:"
+#~ msgstr "Jazyk:"
+
+#~ msgid "General"
+#~ msgstr "Všeobecné"
+
+#~ msgid "Last saved by"
+#~ msgstr "Naposledy uložil"
+
+#~ msgid "Use ';' (Example: Office;KDE;Calligra)"
+#~ msgstr "Použite ';' (Príklad: Office;KDE;Calligra)"
+
+#~ msgid "This document will be decrypted"
+#~ msgstr "Tento dokument bude dešifrovaný"
+
+#~ msgid "Do not decrypt"
+#~ msgstr "Nedešifrovať"
+
+#~ msgid "This document is encrypted"
+#~ msgstr "Tento dokument je šifrovaný"
+
+#~ msgid "D&ecrypt"
+#~ msgstr "Dešifrovať"
+
+#~ msgid "This document will be encrypted."
+#~ msgstr "Tento dokument bude zašifrovaný."
+
+#~ msgid "Do not encrypt"
+#~ msgstr "Nešifrovať"
+
+#~ msgid "This document is not encrypted"
+#~ msgstr "Tento dokument nie je šifrovaný"
+
+#~ msgid "This document does not support encryption"
+#~ msgstr "Tento dokument nepodporuje šifrovanie"
+
+#~ msgid ""
+#~ "<qt>Decrypting the document will remove the password protection from it."
+#~ "<p>Do you still want to decrypt the file?</qt>"
+#~ msgstr ""
+#~ "<qt>Dešifrovanie dokumentu odstráni ochranu heslom.<p>Chcete naozaj "
+#~ "dešifrovať súbor?</qt>"
+
+#~ msgid "Confirm Decrypt"
+#~ msgstr "Potvrdiť dešifrovanie"
+
+#~ msgid "Decrypt"
+#~ msgstr "Dešifrovať"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "decryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>Váš dokument nie je možné automaticky uložiť.<p>Na dokončenie "
+#~ "šifrovania, prosím uložte dokument.</qt>"
+
+#~ msgid "Save Document"
+#~ msgstr "Uložiť dokument"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "decryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt>Dokument bol zmenený od jeho otvorenia. Na ukončenie šifrovania musí "
+#~ "byť dokument uložený.<p>Chcete dokument uložiť teraz?</qt>"
+
+#~ msgid ""
+#~ "<qt>The document is currently saved as %1. The document needs to be "
+#~ "changed to <b>OASIS OpenDocument</b> to be encrypted.<p>Do you want to "
+#~ "change the file to OASIS OpenDocument?</qt>"
+#~ msgstr ""
+#~ "<qt>Dokument je aktuálne uložený ako %1. Dokument musí byť zmenený na "
+#~ "<b>OASIS OpenDocument</b> aby bol zašifrovaný.<p>Chcete zmeniť súbor na "
+#~ "OASIS OpenDocument?</qt>"
+
+#~ msgid "Change Filetype"
+#~ msgstr "Zmeniť typ súboru"
+
+#~ msgid "Change"
+#~ msgstr "Zmeniť"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "encryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>Váš dokument nie je možné automaticky uložiť.<p>Na dokončenie "
+#~ "šifrovania, prosím uložte dokument.</qt>"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "encryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt>Dokument bol zmenený od jeho otvorenia. Na ukončenie šifrovania musí "
+#~ "byť dokument uložený.<p>Chcete dokument uložiť teraz?</qt>"
+
+#~ msgid "Remove"
+#~ msgstr "Odstrániť"
+
+#~ msgid "Open palette"
+#~ msgstr "Otvoriť paletu"
+
+#~ msgid "Save palette"
+#~ msgstr "Uložiť paletu"
+
+#~ msgid "Add Color To Palette"
+#~ msgstr "Pridať farbu do palety"
+
+#~ msgid "Color name:"
+#~ msgstr "Meno farby:"
+
+#~ msgid "Gimp Color Palette (*.gpl)"
+#~ msgstr "Farebná paleta Gimp Color (*.gpl)"
+
+#~ msgid "Cannot write to palette file %1. Maybe it is read-only. "
+#~ msgstr ""
+#~ "Nie je možné zapisovať do súboru palety %1. Možno je len na čítanie."
+
+#~ msgid "Palette"
+#~ msgstr "Paleta"
+
+#~ msgid "Add/Remove Colors"
+#~ msgstr "Pridať/odstrániť farby"
+
+#~ msgid "All supported formats"
+#~ msgstr "Všetky podporované formáty"
+
+#~ msgid "Testing: OpenFile"
+#~ msgstr "Testovanie: Otvoriť súbor"
+
+#~ msgid "Testing: OpenDirectory"
+#~ msgstr "Testovanie: Otvoriť adresár"
+
+#~ msgid "Testing: ImportFile"
+#~ msgstr "Testovanie: Importovať súbor"
+
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "Testovanie: Importovať súbory"
+
+#~ msgid "Testing: Import Directory"
+#~ msgstr "Testovanie: Importovať adresár"
+
+#~ msgid "Testing: SaveFile"
+#~ msgstr "Testovanie: Uložiť súbor"
+
+#~ msgid "Open File"
+#~ msgstr "Otvoriť súbor"
+
+#~ msgid "Open Files"
+#~ msgstr "Otvoriť súbory"
+
+#~ msgid "Unique key:"
+#~ msgstr "Jedinečný kľúč:"
+
+#~ msgid "blablabla"
+#~ msgstr "blablabla"
+
+#~ msgid "Filter:"
+#~ msgstr "Filter:"
+
+#~ msgid "TextLabel"
+#~ msgstr "TextLabel"
+
+#~ msgid "Results:"
+#~ msgstr "Výsledky:"
+
+#~ msgid "Filter Type"
+#~ msgstr "Typ filtra"
+
+#~ msgid "Mime"
+#~ msgstr "Mime"
+
+#~ msgid "Named"
+#~ msgstr "Pomenované"
+
+#~ msgid "hide name filter details option"
+#~ msgstr "skryť názov filter podrobnosti voľba"
+
+#~ msgid "Set default filter"
+#~ msgstr "Nastaviť predvolený filter"
+
+#~ msgid "Save File"
+#~ msgstr "Uložiť súbor"
+
+#~ msgid "Import Files"
+#~ msgstr "Importovať súbory"
+
+#~ msgid "Import File"
+#~ msgstr "Importovať súbor"
+
+#~ msgid "Open Directory"
+#~ msgstr "Otvoriť adresár"
+
+#~ msgid "Import Directory"
+#~ msgstr "Adresár importu"
+
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "Žiadne"
+
+#~ msgctxt "Solid color stroke or fill"
+#~ msgid "Solid"
+#~ msgstr "Plný"
+
+#~ msgid "Gradient"
+#~ msgstr "Prechod"
+
+#~ msgid "Pattern"
+#~ msgstr "Vzorka"
+
+#~ msgid "Change the filling color"
+#~ msgstr "Zmeniť farbu výplne"
+
+#~ msgid "Change the filling gradient"
+#~ msgstr "Zmeniť prechod výplne"
+
+#~ msgid "Change the filling pattern"
+#~ msgstr "Zmeniť vzor výplne"
+
+#~ msgid "Icon and Text"
+#~ msgstr "Ikona a text"
+
+#~ msgid "Icon only"
+#~ msgstr "Iba ikona"
+
+#~ msgid "Tabs side"
+#~ msgstr "Strana kariet"
+
+#~ msgid "Top side"
+#~ msgstr "Horná strana"
+
+#~ msgid "Bottom side"
+#~ msgstr "Dolná strana"
+
+#~ msgid "Left side"
+#~ msgstr "Ľavá strana"
+
+#~ msgid "Right side"
+#~ msgstr "Pravá strana"
+
+#~ msgid "Page Layout"
+#~ msgstr "Vzhľad stránky"
+
+#~ msgid "Apply to document"
+#~ msgstr "Použiť na dokument"
+
+#~ msgid "Left Edge:"
+#~ msgstr "Ľavý okraj:"
+
+#~ msgid "Right Edge:"
+#~ msgstr "Pravý okraj:"
+
+#~ msgid "Binding Edge:"
+#~ msgstr "Zviazaný okraj:"
+
+#~ msgid "Page Edge:"
+#~ msgstr "Okraj strany:"
+
+#~ msgid "Facing Pages:"
+#~ msgstr "Protiľahlé stránky:"
+
+#~ msgid "Facing pages"
+#~ msgstr "Protiľahlé stránky"
+
+#~ msgid "Page Layout:"
+#~ msgstr "Rozloženie stránky"
+
+#~ msgid "Page spread"
+#~ msgstr "Rozptyl strany"
+
+#~ msgid "Unit:"
+#~ msgstr "Jednotka:"
+
+#~ msgid "Follow style:"
+#~ msgstr "Sledovať štýl:"
+
+#~ msgid "Size:"
+#~ msgstr "Veľkosť:"
+
+#~ msgid "Width:"
+#~ msgstr "Šírka:"
+
+#~ msgid "Height:"
+#~ msgstr "Výška:"
+
+#~ msgid "Orientation:"
+#~ msgstr "Orientácia:"
+
+#~ msgid "Facing pages:"
+#~ msgstr "Protiľahlé stránky:"
+
+#~ msgid "Single sided"
+#~ msgstr "Jednostranne"
+
+#~ msgid "Text direction:"
+#~ msgstr "Smer textu:"
+
+#~ msgid "Automatic"
+#~ msgstr "Automatické"
+
+#~ msgid "Left to right"
+#~ msgstr "Zľava doprava"
+
+#~ msgid "Right to left"
+#~ msgstr "Sprava doľava"
+
+#~ msgid "Margins"
+#~ msgstr "Okraje"
+
+#~ msgid "Top:"
+#~ msgstr "Vrch:"
+
+#~ msgid "Binding edge:"
+#~ msgstr "Zviazaný okraj:"
+
+#~ msgid "Page edge:"
+#~ msgstr "Okraj strany:"
+
+#~ msgid "Bottom:"
+#~ msgstr "Dolný:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "Importovať zdroj"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Delete resource"
+#~ msgstr "Odstrániť zdroj"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "Stiahnuť zdroj"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "Zdieľať zdroj"
+
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "Vybrať súbor na pridanie"
+
+#~ msgid "New tag"
+#~ msgstr "Nová značka"
+
+#~ msgid "Assign to tag"
+#~ msgstr "Priradiť ku značke"
+
+#~ msgid "Remove from this tag"
+#~ msgstr "Odstrániť z tejto značky"
+
+#~ msgid "Remove from other tag"
+#~ msgstr "Odstrániť z inej značky"
+
+#~ msgid "Tags"
+#~ msgstr "Značky"
+
+#~ msgid ""
+#~ "<qt>The tag you are trying to undelete already exists in tag list."
+#~ "<br>Please enter a new, unique name for it.</qt>"
+#~ msgstr ""
+#~ "<qt>Značka, ktorú sa snažíte obnoviť, už existuje v zozname značiek.<br> "
+#~ "Prosím zadajte pre ňu nový, jedinečný názov.</qt>"
+
+#~ msgid "Tag was not undeleted."
+#~ msgstr "Značka nebola obnovená."
+
+#~ msgid "All"
+#~ msgstr "Všetko"
+
+#~ msgid "Change the color of the shadow"
+#~ msgstr "Zmeniť farbu tieňa"
+
+#~ msgid "Blur:"
+#~ msgstr "Rozmazať:"
+
+#~ msgid "Distance:"
+#~ msgstr "Vzdialenosť:"
+
+#~ msgid "Butt cap"
+#~ msgstr "Plochý vrch"
+
+#~ msgid "Round cap"
+#~ msgstr "Zaoblený vrch"
+
+#~ msgid "Square cap"
+#~ msgstr "Štvorcový vrch"
+
+#~ msgid "Miter join"
+#~ msgstr "Mitrové pripojenie"
+
+#~ msgid "Round join"
+#~ msgstr "Oblé pripojenie"
+
+#~ msgid "Bevel join"
+#~ msgstr "Sklonené pripojenie"
+
+#~ msgid "Miter limit"
+#~ msgstr "Hranica mitry"
+
+#~ msgid "Thickness:"
+#~ msgstr "Hrúbka:"
+
+#~ msgid "Set line width of actual selection"
+#~ msgstr "Nastaviť šírku riadku aktuálneho výberu"
+
+#~ msgid "Change the color of the line/border"
+#~ msgstr "Zmeniť farbu čiary/okraja"
+
+#~ msgid "Tag"
+#~ msgstr "Značka"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<qt>Entering search terms here will add to, or remove resources from the "
+#~ "current tag view.<para>To filter based on the partial, case insensitive "
+#~ "name of a resource:<br><icode>partialname</icode> or <icode>!partialname</"
+#~ "icode>.</para><para>In-/exclusion of other tag sets:<br><icode>[Tagname]</"
+#~ "icode> or <icode>![Tagname]</icode>.</para><para>Case sensitive and full "
+#~ "name matching in-/exclusion:<br><icode>\"ExactMatch\"</icode> or <icode>!"
+#~ "\"ExactMatch\"</icode>.</para>Filter results cannot be saved for the "
+#~ "<interface>All Presets</interface> view.<br>In this view, pressing "
+#~ "<interface>Enter</interface> or clearing the filter box will restore all "
+#~ "items.<br>Create and/or switch to a different tag if you want to save "
+#~ "filtered resources into named sets.</qt>"
+#~ msgstr ""
+#~ "<qt>Zadanie hľadaných termínov sem pridá alebo odstráni zdroje z "
+#~ "aktuálneho pohľadu značky. <para>Na filtrovanie založené na čiastočnom "
+#~ "názve nezávislom na veľkosti písmen zdroja: <br><icode>čiastočnémeno</"
+#~ "icode> alebo <icode>!čiastočnémeno</icode>.</para><para>Zahrnutie/"
+#~ "vylúčenie iných sád značiek:<br><icode>[Názovznačky]</icode> alebo "
+#~ "<icode>![Názovznačky]</icode>.</para><para>Plná zhoda v názve závislá na "
+#~ "veľkosti písmenzahrnutie/vylúčenie:<br><icode>\"PresnáZhoda\"</icode> "
+#~ "alebo <icode>!\"PresnáZhoda\"</icode>. </para>Stlačenie <interface>Enter</"
+#~ "interface> alebo kliknutie na tlačidlo <interface>Uložiť</interface> "
+#~ "uloží zmeny.</qt>"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<qt>Entering search terms here will add to, or remove resources from the "
+#~ "current tag view.<para>To filter based on the partial, case insensitive "
+#~ "name of a resource:<br><icode>partialname</icode> or <icode>!partialname</"
+#~ "icode>.</para><para>In-/exclusion of other tag sets:<br><icode>[Tagname]</"
+#~ "icode> or <icode>![Tagname]</icode>.</para><para>Case sensitive and full "
+#~ "name matching in-/exclusion:<br><icode>\"ExactMatch\"</icode> or <icode>!"
+#~ "\"ExactMatch\"</icode>.</para>Pressing <interface>Enter</interface> or "
+#~ "clicking the <interface>Save</interface> button will save the changes.</"
+#~ "qt>"
+#~ msgstr ""
+#~ "<qt>Zadanie hľadaných termínov sem pridá alebo odstráni zdroje z "
+#~ "aktuálneho pohľadu značky. <para>Na filtrovanie založené na čiastočnom "
+#~ "názve nezávislom na veľkosti písmen zdroja: <br><icode>čiastočnémeno</"
+#~ "icode> alebo <icode>!čiastočnémeno</icode>.</para><para>Zahrnutie/"
+#~ "vylúčenie iných sád značiek:<br><icode>[Názovznačky]</icode> alebo "
+#~ "<icode>![Názovznačky]</icode>.</para><para>Plná zhoda v názve závislá na "
+#~ "veľkosti písmenzahrnutie/vylúčenie:<br><icode>\"PresnáZhoda\"</icode> "
+#~ "alebo <icode>!\"PresnáZhoda\"</icode>. </para>Výsledky filtra nie je "
+#~ "možné uložiť pre pohľad <interface>Všetky prednastavenia</interface>. "
+#~ "<br>V tomto pohľade, stlačenie <interface>Enter</interface> alebo "
+#~ "vyčistenie poľa filtra obnoví všetky položky.<br>Vytvorte a/alebo "
+#~ "prepnite na inú značku, ak chcete uložiť filtrované zdroje do "
+#~ "pomenovaných sád.</qt>"
+
+#~ msgid "Enter resource filters here"
+#~ msgstr "Sem zadajte filtre zdrojov"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "<qt>Save the currently filtered set as the new members of the current tag."
+#~ "</qt>"
+#~ msgstr ""
+#~ "<qt>Uložiť aktuálne filtrovanú sadu ako nových členov aktuálnej značky.</"
+#~ "qt>"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "<qt>Show the tag box options.</qt>"
+#~ msgstr "<qt>Zobraziť voľby schránky značky.</qt>"
+
+#~ msgid "Rename tag"
+#~ msgstr "Premenovať značku"
+
+#~ msgid "Delete this tag"
+#~ msgstr "Vymazať túto značku"
+
+#~ msgid "Clear undelete list"
+#~ msgstr "Vyčistiť zoznam vymazaní"
+
+#~ msgid "Undelete"
+#~ msgstr "Zrušiť vymazanie"
+
+#~ msgid "Tool Options"
+#~ msgstr "Nastavenia nástrojov"
+
+#~ msgid "Toggles organizing the options in tabs or not"
+#~ msgstr "Prepne organizovanie volieb do kariet alebo nie"
+
+#~ msgid "deselect item"
+#~ msgstr "zrušiť výber položky"
+
+#~ msgid "select item"
+#~ msgstr "vybrať položku"
+
+#~ msgid "Use same aspect as pixels"
+#~ msgstr "Použiť rovnaký pomer strán ako body"
+
+#~ msgid "Zoom to Selection"
+#~ msgstr "Priblížiť výber"
+
+#~ msgid "Zoom to All"
+#~ msgstr "Priblížiť na všetko"
+
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1"
+
+#~ msgid "All Presets"
+#~ msgstr "Všetky prednastavenia"
+
+#~ msgid "Tag:"
+#~ msgstr "Značka:"
+
+#~ msgid "Three arguments required"
+#~ msgstr "Vyžadujú sa tri argumenty"

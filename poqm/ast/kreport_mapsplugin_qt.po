@@ -1,0 +1,38 @@
+# enolp <enolp@softastur.org>, 2016, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2017-02-06 03:39+0100\n"
+"Last-Translator: enolp <enolp@softastur.org>\n"
+"Language-Team: Asturian <alministradores@softastur.org>\n"
+"Language: ast\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 2.0\n"
+
+#: KReportItemMaps.cpp:61
+msgctxt "KReportItemMaps|"
+msgid "Latitude"
+msgstr "Llatitú"
+
+#: KReportItemMaps.cpp:67
+msgctxt "KReportItemMaps|"
+msgid "Longitude"
+msgstr "Llonxitú"
+
+#: KReportItemMaps.cpp:73
+msgctxt "KReportItemMaps|"
+msgid "Zoom"
+msgstr "Zoom"
+
+#: KReportItemMaps.cpp:82
+msgctxt "KReportItemMaps|"
+msgid "Theme"
+msgstr ""
+
+#~ msgctxt "KReportItemMaps|"
+#~ msgid "Data Source"
+#~ msgstr "Fonte de datos"

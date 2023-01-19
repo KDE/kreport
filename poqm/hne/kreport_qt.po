@@ -1,0 +1,6187 @@
+# translation of koffice.po to Hindi
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Ravishankar Shrivastava <raviratlami@yahoo.com>, 2008.
+# Ravishankar Shrivastava <raviratlami@aol.in>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: koffice\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2009-03-03 09:35+0530\n"
+"Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
+"Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
+"Language: hne\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Lokalize 0.3\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+#, fuzzy
+#| msgid "Could not create the file for saving"
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "सहेजे बर फाइल बना नइ सकिस"
+
+#: common/KReportDesign.cpp:159
+#, fuzzy
+#| msgid "Error in embedded document"
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "भीतर मं बने कागद मं गलती"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "नाम:"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Object"
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "चीज"
+
+#: common/KReportItemBase.cpp:78
+#, fuzzy
+#| msgid "Position"
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "स्थिति"
+
+#: common/KReportItemBase.cpp:79
+#, fuzzy
+#| msgid "Size:"
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "आकारः"
+
+#: common/KReportItemBase.cpp:112
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "मेटाव"
+
+#: common/KReportItemLine.cpp:80
+#, fuzzy
+#| msgid "&Set Position..."
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "जगह सेट करव... (&S)"
+
+#: common/KReportItemLine.cpp:81
+#, fuzzy
+#| msgid "Position"
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "स्थिति"
+
+#: common/KReportItemLine.cpp:83
+#, fuzzy
+#| msgid "Lighten"
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "हल्का करव"
+
+#: common/KReportItemLine.cpp:85
+#, fuzzy
+#| msgid "Color"
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "रंग"
+
+#: common/KReportItemLine.cpp:86
+#, fuzzy
+#| msgid "Line Border"
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "लकीर चौड़ाई"
+
+#: common/KReportSectionData.cpp:164
+#, fuzzy
+#| msgid "Group shapes"
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "आकार समूहबद्ध करव"
+
+#: common/KReportSectionData.cpp:166
+#, fuzzy
+#| msgid "&Height:"
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "ऊंचाईः (&H)"
+
+#: common/KReportSectionData.cpp:170
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "पिछोत अंगना सेट करव"
+
+#: common/KReportUnit.cpp:136
+#, fuzzy
+#| msgid "Add Group"
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "समूह जोड़व"
+
+#: common/KReportUnit.cpp:138
+#, fuzzy
+#| msgid "Millimeters (mm)"
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "मिलिसमीटर (मिमी)"
+
+#: common/KReportUnit.cpp:140
+#, fuzzy
+#| msgid "Centimeters (cm)"
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "सेंटीमीटर (सेमी)"
+
+#: common/KReportUnit.cpp:142
+#, fuzzy
+#| msgid "Decimeters (dm)"
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "डेसीमीटर (डीएम)"
+
+#: common/KReportUnit.cpp:144
+#, fuzzy
+#| msgid "Inches (in)"
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "इंच (इं)"
+
+#: common/KReportUnit.cpp:146
+#, fuzzy
+#| msgid "Pica (pi)"
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "पिका (पाई)"
+
+#: common/KReportUnit.cpp:148
+#, fuzzy
+#| msgid "Cicero (cc)"
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "सिसरो (सीसी)"
+
+#: common/KReportUnit.cpp:150
+#, fuzzy
+#| msgid "Points (pt)"
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "पाइंट्स (पा.)"
+
+#: common/KReportUnit.cpp:152
+#, fuzzy
+#| msgid "Pixels (px)"
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "पिक्सल (पीएक्स)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Close"
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "बंद करव"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:80
+#, fuzzy
+#| msgid "&Style:"
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "सैली: (&S)"
+
+#: items/check/KReportItemCheck.cpp:84
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "पिछोत अंगना सेट करव"
+
+#: items/check/KReportItemCheck.cpp:86
+#, fuzzy
+#| msgid "Lighten"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "हल्का करव"
+
+#: items/check/KReportItemCheck.cpp:88
+#, fuzzy
+#| msgid "Color"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "रंग"
+
+#: items/check/KReportItemCheck.cpp:89
+#, fuzzy
+#| msgid "Line Border"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "लकीर चौड़ाई"
+
+#: items/check/KReportItemCheck.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "मान"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "मान"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "डेरी:"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Comment"
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "टिप्पनी"
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Right:"
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "जेवनी:"
+
+#: items/field/KReportItemField.cpp:96
+#, fuzzy
+#| msgid "Set Horizontal Alignment"
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "आड़ी जमावट सेट करव"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Top:"
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "सीर्स:"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Bottom:"
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "निचला:"
+
+#: items/field/KReportItemField.cpp:102
+#, fuzzy
+#| msgid "Set Vertical Alignment"
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "खड़ी जमावट सेट करव"
+
+#: items/field/KReportItemField.cpp:104
+#, fuzzy
+#| msgid "Set point type"
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "बिन्दु किसिम सेट करव"
+
+#: items/field/KReportItemField.cpp:106
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "पिछोत अंगना सेट करव"
+
+#: items/field/KReportItemField.cpp:107
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "पिछोत अंगना सेट करव"
+
+#: items/field/KReportItemField.cpp:109
+#, fuzzy
+#| msgid "Background tool"
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "पिछोत अंगना औजार"
+
+#: items/field/KReportItemField.cpp:114
+#, fuzzy
+#| msgid "Lighten"
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "हल्का करव"
+
+#: items/field/KReportItemField.cpp:116
+#, fuzzy
+#| msgid "Color"
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "रंग"
+
+#: items/field/KReportItemField.cpp:117
+#, fuzzy
+#| msgid "Line Border"
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "लकीर चौड़ाई"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:120
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgid "Street:"
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "सड़कः"
+
+#: items/image/KReportItemImage.cpp:120
+#, fuzzy
+#| msgid "Resize"
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "आकार बदलव"
+
+#: items/image/KReportItemImage.cpp:121
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "मान"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:91
+#, fuzzy
+#| msgid "Collection"
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "संग्रह"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "डेरी:"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Comment"
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "टिप्पनी"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Right:"
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "जेवनी:"
+
+#: items/label/KReportItemLabel.cpp:96
+#, fuzzy
+#| msgid "Set Horizontal Alignment"
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "आड़ी जमावट सेट करव"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Top:"
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "सीर्स:"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Bottom:"
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "निचला:"
+
+#: items/label/KReportItemLabel.cpp:102
+#, fuzzy
+#| msgid "Set Vertical Alignment"
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "खड़ी जमावट सेट करव"
+
+#: items/label/KReportItemLabel.cpp:104
+#, fuzzy
+#| msgid "Set point type"
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "बिन्दु किसिम सेट करव"
+
+#: items/label/KReportItemLabel.cpp:106
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "पिछोत अंगना सेट करव"
+
+#: items/label/KReportItemLabel.cpp:107
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "पिछोत अंगना सेट करव"
+
+#: items/label/KReportItemLabel.cpp:109
+#, fuzzy
+#| msgid "Background tool"
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "पिछोत अंगना औजार"
+
+#: items/label/KReportItemLabel.cpp:114
+#, fuzzy
+#| msgid "Lighten"
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "हल्का करव"
+
+#: items/label/KReportItemLabel.cpp:116
+#, fuzzy
+#| msgid "Color"
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "रंग"
+
+#: items/label/KReportItemLabel.cpp:117
+#, fuzzy
+#| msgid "Line Border"
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "लकीर चौड़ाई"
+
+#: items/text/KReportItemText.cpp:115
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "मान"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "डेरी:"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Comment"
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "टिप्पनी"
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Right:"
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "जेवनी:"
+
+#: items/text/KReportItemText.cpp:121
+#, fuzzy
+#| msgid "Set Horizontal Alignment"
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "आड़ी जमावट सेट करव"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Top:"
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "सीर्स:"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Bottom:"
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "निचला:"
+
+#: items/text/KReportItemText.cpp:127
+#, fuzzy
+#| msgid "Set Vertical Alignment"
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "खड़ी जमावट सेट करव"
+
+#: items/text/KReportItemText.cpp:129
+#, fuzzy
+#| msgid "Set point type"
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "बिन्दु किसिम सेट करव"
+
+#: items/text/KReportItemText.cpp:131
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "पिछोत अंगना सेट करव"
+
+#: items/text/KReportItemText.cpp:132
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "पिछोत अंगना सेट करव"
+
+#: items/text/KReportItemText.cpp:134
+#, fuzzy
+#| msgid "Lighten"
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "हल्का करव"
+
+#: items/text/KReportItemText.cpp:136
+#, fuzzy
+#| msgid "Color"
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "रंग"
+
+#: items/text/KReportItemText.cpp:137
+#, fuzzy
+#| msgid "Line Border"
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "लकीर चौड़ाई"
+
+#: items/text/KReportItemText.cpp:138
+#, fuzzy
+#| msgid "Background tool"
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "पिछोत अंगना औजार"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, fuzzy, qt-format
+#| msgid "Script File"
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr "स्क्रिप्ट फाइल"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+#, fuzzy
+#| msgid "Internal error"
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "अंदर के गलती"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:676
+#, fuzzy
+#| msgid "Page edge:"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "पेज किनारा:"
+
+#: wrtembed/KReportDesigner.cpp:680
+#, fuzzy
+#| msgid "Page edge:"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "पेज किनारा:"
+
+#: wrtembed/KReportDesigner.cpp:684
+#, fuzzy
+#| msgid "Page edge:"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "पेज किनारा:"
+
+#: wrtembed/KReportDesigner.cpp:688
+#, fuzzy
+#| msgid "Page edge:"
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "पेज किनारा:"
+
+#: wrtembed/KReportDesigner.cpp:692
+#, fuzzy
+#| msgid "Page edge:"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "पेज किनारा:"
+
+#: wrtembed/KReportDesigner.cpp:696
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "फूटर"
+
+#: wrtembed/KReportDesigner.cpp:700
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "फूटर"
+
+#: wrtembed/KReportDesigner.cpp:704
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "फूटर"
+
+#: wrtembed/KReportDesigner.cpp:708
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "फूटर"
+
+#: wrtembed/KReportDesigner.cpp:712
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "फूटर"
+
+#: wrtembed/KReportDesigner.cpp:716
+#, fuzzy
+#| msgid "Header"
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "सीर्सक"
+
+#: wrtembed/KReportDesigner.cpp:720
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "फूटर"
+
+#: wrtembed/KReportDesigner.cpp:808
+#, fuzzy
+#| msgid "Export"
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "निर्यात"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Title:"
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "सीर्सक:"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "फूटर"
+
+#: wrtembed/KReportDesigner.cpp:818
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "पेज आकार"
+
+#: wrtembed/KReportDesigner.cpp:821
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "पेज आकार"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "Portrait"
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "खड़ा "
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "Landscape"
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "आड़ा"
+
+#: wrtembed/KReportDesigner.cpp:827
+#, fuzzy
+#| msgid "Orientation"
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "दिसा"
+
+#: wrtembed/KReportDesigner.cpp:832
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "पेज आकार"
+
+#: wrtembed/KReportDesigner.cpp:833
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "ग्रिड देखाव (&G)"
+
+#: wrtembed/KReportDesigner.cpp:834
+#, fuzzy
+#| msgid "Snap to Grid"
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "ग्रिड मं स्नेप करव"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:841
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "हासिए"
+
+#: wrtembed/KReportDesigner.cpp:843
+#, fuzzy
+#| msgid "Right indent"
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "जेवनी हासिया"
+
+#: wrtembed/KReportDesigner.cpp:845
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "हासिए"
+
+#: wrtembed/KReportDesigner.cpp:847
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "हासिए"
+
+#: wrtembed/KReportDesigner.cpp:869
+#, fuzzy
+#| msgid "Object"
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "चीज"
+
+#: wrtembed/KReportDesigner.cpp:1067
+#, fuzzy
+#| msgid "Custom"
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "मनमाफिक"
+
+#: wrtembed/KReportDesigner.cpp:1071
+#, fuzzy
+#| msgid "Company:"
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "कम्पनी:"
+
+#: wrtembed/KReportDesigner.cpp:1076
+#, fuzzy
+#| msgid "Date"
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "तारीक"
+
+#: wrtembed/KReportDesigner.cpp:1087
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "मेटाव"
+
+#: wrtembed/KReportDesigner.cpp:1129
+#, fuzzy
+#| msgid "Lines"
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "पंक्तियाँ"
+
+#: wrtembed/KReportDesigner.cpp:1476
+#, fuzzy
+#| msgid "Lines"
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "पंक्तियाँ"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1525
+#, fuzzy
+#| msgid "Company:"
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "कम्पनी:"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1531
+#, fuzzy
+#| msgid "Date"
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "तारीक"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1544
+#, fuzzy
+#| msgid "Collection"
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "संग्रह"
+
+#: wrtembed/KReportDesigner.cpp:1547
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1549
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr ""
+
+#: wrtembed/KReportDesignerSection.cpp:126
+#, fuzzy
+#| msgid "Detailed View"
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "विस्तृत दृस्य"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+#, fuzzy
+#| msgid "Group shapes"
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "आकार समूहबद्ध करव"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+#, fuzzy
+#| msgid "Columns:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "खंभा:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+#, fuzzy
+#| msgid "Street:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "सड़कः"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+#, fuzzy
+#| msgid "Show Guides"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "गाइड देखाव"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+#, fuzzy
+#| msgid "Show Guides"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "गाइड देखाव"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+
+#: wrtembed/KReportRuler_p.cpp:1472
+#, fuzzy
+#| msgid "First line indent"
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "पहिली लकीर हासिया"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+#, fuzzy
+#| msgid "Left indent"
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "डेरी हासिया"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+#, fuzzy
+#| msgid "Right indent"
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "जेवनी हासिया"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.cpp:74
+#, fuzzy
+#| msgid "Add..."
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "जोड़व..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "मेटाव"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+#, fuzzy
+#| msgid "Move page"
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "पेज खिसकाव"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+#, fuzzy
+#| msgid "Move points"
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "बिन्दु ल खिसकाव"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.cpp:312
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.ui:29
+#, fuzzy
+#| msgid "Show Guides"
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "गाइड देखाव"
+
+#: wrtembed/KReportSectionEditor.ui:36
+#, fuzzy
+#| msgid "Show Guides"
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "गाइड देखाव"
+
+#: wrtembed/KReportSectionEditor.ui:43
+#, fuzzy
+#| msgid "Page edge:"
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "पेज किनारा:"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+#, fuzzy
+#| msgid "Fit Page"
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "पेज मं जमाव"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+#, fuzzy
+#| msgid "Copy Page"
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "पेज नकल करव"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+#, fuzzy
+#| msgid "Copy Page"
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "पेज नकल करव"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+#, fuzzy
+#| msgid "Paste Page"
+#| msgid_plural "Paste Pages"
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "पेज चिपकाव"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+#, fuzzy
+#| msgid "Copy Page"
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "पेज नकल करव"
+
+#: wrtembed/KReportSectionEditor.ui:130
+#, fuzzy
+#| msgid "Footer"
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "फूटर"
+
+#: wrtembed/KReportSectionEditor.ui:217
+#, fuzzy
+#| msgid "Group shapes"
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "आकार समूहबद्ध करव"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, fuzzy, qt-format
+#| msgid "%1%"
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+#, fuzzy
+#| msgid "Fit Page Width"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "पेज चौड़ाई मं जमाव"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+#, fuzzy
+#| msgid "Fit Page"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "पेज मं जमाव"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+#, fuzzy
+#| msgid "Actual Pixels"
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr "सही पिक्सल्स"
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+#, fuzzy
+#| msgid "Fit Page Width"
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "पेज चौड़ाई मं जमाव"
+
+#, fuzzy
+#~| msgid "US Letter"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "यूएस पत्र"
+
+#, fuzzy
+#~| msgid "US Legal"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "यूएस लीगल"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "मनमाफिक"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B6"
+#~ msgstr "बी"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B5"
+#~ msgstr "बी"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B4"
+#~ msgstr "बी"
+
+#, fuzzy
+#~| msgid "US Executive"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "यूएस एक्जीक्यूटिव"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B0"
+#~ msgstr "बी"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B1"
+#~ msgstr "बी"
+
+#, fuzzy
+#~| msgid "ISO B10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "आईएसओ बी10"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B2"
+#~ msgstr "बी"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B3"
+#~ msgstr "बी"
+
+#, fuzzy
+#~| msgid "Comma"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "विराम चिनहा"
+
+#, fuzzy
+#~| msgid "ISO DL"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "आईएसओ डीएल"
+
+#, fuzzy
+#~| msgid "US Folio"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Folio"
+#~ msgstr "यूएस फोलियो"
+
+#, fuzzy
+#~| msgid "US Ledger"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "यूएस लेजर"
+
+#, fuzzy
+#~| msgid "US Tabloid"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Tabloid"
+#~ msgstr "यूएस टेब्लाइड"
+
+#, fuzzy
+#~| msgid "Postal code:"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "पिन कोडः"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "स्क्रीन"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "स्थिति"
+
+#, fuzzy
+#~| msgid "&Height:"
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "ऊंचाईः (&H)"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "पिछोत अंगना सेट करव"
+
+#, fuzzy
+#~| msgid "Size:"
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "आकारः"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "मेटाव"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "मेटाव"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "मेटाव"
+
+#, fuzzy
+#~| msgid "ISO A3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "आईएसओ ए3"
+
+#, fuzzy
+#~| msgid "ISO A4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "आईएसओ ए4"
+
+#, fuzzy
+#~| msgid "ISO A5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "आईएसओ A5"
+
+#, fuzzy
+#~| msgid "ISO B5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "आईएसओ बी5"
+
+#, fuzzy
+#~| msgid "US Executive"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "यूएस एक्जीक्यूटिव"
+
+#, fuzzy
+#~| msgid "ISO A0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "आईएसओ ए0"
+
+#, fuzzy
+#~| msgid "ISO A1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "आईएसओ ए1"
+
+#, fuzzy
+#~| msgid "ISO A2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "आईएसओ ए2"
+
+#, fuzzy
+#~| msgid "ISO A6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "आईएसओ ए6"
+
+#, fuzzy
+#~| msgid "ISO A7"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "आईएसओ ए7"
+
+#, fuzzy
+#~| msgid "ISO A8"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "आईएसओ ए8"
+
+#, fuzzy
+#~| msgid "ISO A9"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "आईएसओ ए9"
+
+#, fuzzy
+#~| msgid "ISO B0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "आईएसओ बी0"
+
+#, fuzzy
+#~| msgid "ISO B1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "आईएसओ बी1"
+
+#, fuzzy
+#~| msgid "ISO B2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "आईएसओ बी2"
+
+#, fuzzy
+#~| msgid "ISO B3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "आईएसओ बी3"
+
+#, fuzzy
+#~| msgid "ISO B4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "आईएसओ बी4"
+
+#, fuzzy
+#~| msgid "ISO B6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "आईएसओ बी6"
+
+#, fuzzy
+#~| msgid "ISO C5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "आईएसओ सी5"
+
+#, fuzzy
+#~| msgid "US Common 10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Common 10"
+#~ msgstr "यूएस कामन 10"
+
+#, fuzzy
+#~| msgid "&Height:"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "ऊंचाईः (&H)"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "पिछोत अंगना सेट करव"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Weight"
+#~ msgstr "हल्का करव"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "रंग"
+
+#, fuzzy
+#~| msgid "Line Border"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "लकीर चौड़ाई"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "मेटाव"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "मान"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "पिछोत अंगना सेट करव"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "पिछोत अंगना सेट करव"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Weight"
+#~ msgstr "हल्का करव"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "रंग"
+
+#, fuzzy
+#~| msgid "Line Border"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "लकीर चौड़ाई"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "मेटाव"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "मान"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "डेरी:"
+
+#, fuzzy
+#~| msgid "Comment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "टिप्पनी"
+
+#, fuzzy
+#~| msgid "Right:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "जेवनी:"
+
+#, fuzzy
+#~| msgid "Set Horizontal Alignment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "आड़ी जमावट सेट करव"
+
+#, fuzzy
+#~| msgid "Top:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "सीर्स:"
+
+#, fuzzy
+#~| msgid "Bottom:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "निचला:"
+
+#, fuzzy
+#~| msgid "Set Vertical Alignment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "खड़ी जमावट सेट करव"
+
+#, fuzzy
+#~| msgid "Set point type"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "बिन्दु किसिम सेट करव"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "पिछोत अंगना सेट करव"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "पिछोत अंगना सेट करव"
+
+#, fuzzy
+#~| msgid "Background tool"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "पिछोत अंगना औजार"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Weight"
+#~ msgstr "हल्का करव"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "रंग"
+
+#, fuzzy
+#~| msgid "Line Border"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "लकीर चौड़ाई"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "मेटाव"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "मान"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "डेरी:"
+
+#, fuzzy
+#~| msgid "Comment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "टिप्पनी"
+
+#, fuzzy
+#~| msgid "Right:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "जेवनी:"
+
+#, fuzzy
+#~| msgid "Set Horizontal Alignment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "आड़ी जमावट सेट करव"
+
+#, fuzzy
+#~| msgid "Top:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "सीर्स:"
+
+#, fuzzy
+#~| msgid "Bottom:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "निचला:"
+
+#, fuzzy
+#~| msgid "Set Vertical Alignment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "खड़ी जमावट सेट करव"
+
+#, fuzzy
+#~| msgid "Set point type"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "बिन्दु किसिम सेट करव"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "पिछोत अंगना सेट करव"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "पिछोत अंगना सेट करव"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Weight"
+#~ msgstr "हल्का करव"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "रंग"
+
+#, fuzzy
+#~| msgid "Line Border"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "लकीर चौड़ाई"
+
+#, fuzzy
+#~| msgid "Background tool"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "पिछोत अंगना औजार"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "मेटाव"
+
+#, fuzzy
+#~| msgid "Script Manager"
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "स्क्रिप्ट प्रबंधक"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "रविसंकर सिरीवास्तव, जी. करूनाकर"
+
+#, fuzzy
+#~| msgid "Break subpath"
+#~ msgid "Draw path"
+#~ msgstr "उपपथ तोड़ें"
+
+#, fuzzy
+#~| msgid "Break subpath"
+#~ msgid "Freehand path"
+#~ msgstr "उपपथ तोड़ें"
+
+#, fuzzy
+#~| msgid "Change Connection"
+#~ msgid "Angle Constraints"
+#~ msgstr "कनेक्सन बदलव"
+
+#, fuzzy
+#~| msgid "Position:"
+#~ msgid "Precision:"
+#~ msgstr "स्थितिः"
+
+#~ msgid "Curve"
+#~ msgstr "वक्र"
+
+#~ msgid "Straight"
+#~ msgstr "सीधा"
+
+#, fuzzy
+#~| msgid "Combine paths"
+#~ msgid "Combine angle:"
+#~ msgstr "पथ जोड़व"
+
+#, fuzzy
+#~| msgid "Could not export file."
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr "फाइल निर्यात नइ कर सकिस."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "The database \"%1\" does not exist."
+#~ msgstr "फाइल %1 अस्तित्व मं नइ हे."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "फाइल %1 अस्तित्व मं नइ हे."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Database file \"%1\" is not writable."
+#~ msgstr "फाइल %1 अस्तित्व मं नइ हे."
+
+#, fuzzy
+#~| msgid "Create shape"
+#~ msgid "Creating table failed."
+#~ msgstr "आकार बनाव"
+
+#, fuzzy
+#~| msgid "Cannot create storage"
+#~ msgid "Cannot create table without fields."
+#~ msgstr "भंडार तैयार नइ कर सके"
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not create the same table \"%1\" twice."
+#~ msgstr "पैकेज \"%1\" ल पढ़ नइ सकिस."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist."
+#~ msgstr "फाइल %1 अस्तित्व मं नइ हे."
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not load embedded object:\n"
+#~| "%1"
+#~ msgid "Could not remove object's data."
+#~ msgstr ""
+#~ "भीतर मं बने ओब्जैक्ट लोड नइ कर सकिस:\n"
+#~ "%1"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not uninstall the script package \"%1\" since the script is not "
+#~| "installed."
+#~ msgid "Could not alter table \"%1\" using the same table as destination."
+#~ msgstr "स्क्रिप्ट पैकेज \"%1\" इनस्टाल नइ कर सकिस काबर कि स्क्रिप्ट इनस्टाल नइ हे."
+
+#, fuzzy
+#~| msgid "Could not read the beginning of the file."
+#~ msgid "Could not rename table \"%1\" using the same name."
+#~ msgstr "फाइल के चालू पढ़ नइ सकिस."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Query \"%1\" does not exist."
+#~ msgstr "फाइल %1 अस्तित्व मं नइ हे."
+
+#, fuzzy
+#~| msgid "Change Connection"
+#~ msgid "Begin transaction failed."
+#~ msgstr "कनेक्सन बदलव"
+
+#, fuzzy
+#~| msgid "This name is already used."
+#~ msgid "Transaction already started."
+#~ msgstr "ये नाम पहिली से ही उपयोग मं हे."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Column <resource>%1</resource> does not exist in the query."
+#~ msgstr "फाइल %1 अस्तित्व मं नइ हे."
+
+#, fuzzy
+#~| msgid "Error while saving embedded documents"
+#~ msgctxt "Extended schema for a table: loading error"
+#~ msgid "Error while loading extended table schema."
+#~ msgstr "भीतर मं बने कागद मन ल सहेजे के समय गलती होइस"
+
+#, fuzzy
+#~| msgid ""
+#~| "Parsing error in %1 at line %2, column %3\n"
+#~| "Error message: %4"
+#~ msgid ""
+#~ "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~ "XML data: %4"
+#~ msgstr ""
+#~ "%1 मं लकीर %2, खंभा %3 मं पारसिंग गलती\n"
+#~ "गलती संदेस: %4"
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not insert record because there is no master table specified."
+#~ msgstr "पैकेज \"%1\" ल पढ़ नइ सकिस."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not delete record because there is no master table specified."
+#~ msgstr "पैकेज \"%1\" ल पढ़ नइ सकिस."
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Unknown error."
+#~ msgstr "अग्यात गलती"
+
+#, fuzzy
+#~| msgid "Date: %1"
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "तारीक: %1"
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not set value of database property \"%1\"."
+#~ msgstr "पैकेज \"%1\" ल पढ़ नइ सकिस."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "पैकेज \"%1\" ल पढ़ नइ सकिस."
+
+#, fuzzy
+#~| msgid "Could not read the beginning of the file."
+#~ msgid "Could not read database properties."
+#~ msgstr "फाइल के चालू पढ़ नइ सकिस."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not find database driver \"%1\"."
+#~ msgstr "पैकेज \"%1\" ल पढ़ नइ सकिस."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "पैकेज \"%1\" ल पढ़ नइ सकिस."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "पैकेज \"%1\" ल पढ़ नइ सकिस."
+
+#, fuzzy
+#~| msgid "File not found"
+#~ msgid "Field not found"
+#~ msgstr "फाइल नइ मिलिस"
+
+#, fuzzy
+#~| msgid "Could not create the file for saving"
+#~ msgid "Could not access the table directly using its name"
+#~ msgstr "सहेजे बर फाइल बना नइ सकिस"
+
+#, fuzzy
+#~| msgid "File not found"
+#~ msgid "Table not found"
+#~ msgstr "फाइल नइ मिलिस"
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" has no \"%2\" field."
+#~ msgstr "फाइल %1 अस्तित्व मं नइ हे."
+
+#, fuzzy
+#~| msgid "Number:"
+#~ msgid "Short Integer Number"
+#~ msgstr "संख्या:"
+
+#, fuzzy
+#~| msgid "Number:"
+#~ msgid "Integer Number"
+#~ msgstr "संख्या:"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgid "Yes/No Value"
+#~ msgstr "हासिया बढ़ाव"
+
+#~ msgid "Date"
+#~ msgstr "तारीक"
+
+#, fuzzy
+#~| msgid "Date & Time"
+#~ msgid "Date and Time"
+#~ msgstr "तारीक अउ समय"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Time"
+#~ msgstr "समय:"
+
+#, fuzzy
+#~| msgid "Revision number:"
+#~ msgid "Single Precision Number"
+#~ msgstr "संसोधन संख्या:"
+
+#, fuzzy
+#~| msgid "Revision number:"
+#~ msgid "Double Precision Number"
+#~ msgstr "संसोधन संख्या:"
+
+#~ msgid "Text"
+#~ msgstr "पाठ"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Long Text"
+#~ msgstr "पाठ"
+
+#~ msgid "Object"
+#~ msgstr "चीज"
+
+#, fuzzy
+#~| msgid "Change master page"
+#~ msgid "Floating Point Number"
+#~ msgstr "मास्टर पेज बदलव"
+
+#, fuzzy
+#~| msgid "Date & Time"
+#~ msgid "Date/Time"
+#~ msgstr "तारीक अउ समय"
+
+#, fuzzy
+#~| msgid "Internal error"
+#~ msgid "Syntax error."
+#~ msgstr "अंदर के गलती"
+
+#, fuzzy
+#~| msgid "Error!"
+#~ msgid "Error"
+#~ msgstr "गलती!"
+
+#, fuzzy
+#~| msgid "Internal error"
+#~ msgid "Error near \"%1\"."
+#~ msgstr "अंदर के गलती"
+
+#, fuzzy
+#~| msgid "Revision number:"
+#~ msgid "Server's port number"
+#~ msgstr "संसोधन संख्या:"
+
+#, fuzzy
+#~| msgid "Create shape"
+#~ msgid "Record inserting failed."
+#~ msgstr "आकार बनाव"
+
+#, fuzzy
+#~| msgid "Error deleting layers"
+#~ msgid "Record deleting failed."
+#~ msgstr "परतों ल मेटाय मं गलती"
+
+#, fuzzy
+#~| msgid "Change Connection"
+#~ msgid "Test Connection"
+#~ msgstr "कनेक्सन बदलव"
+
+#, fuzzy
+#~| msgid "Number:"
+#~ msgid "Number"
+#~ msgstr "संख्या:"
+
+#, fuzzy
+#~| msgid "Page"
+#~ msgid "Image"
+#~ msgstr "पेज"
+
+#, fuzzy
+#~| msgid "Change Connection"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr "कनेक्सन बदलव"
+
+#, fuzzy
+#~| msgid "Change parameter"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr "पैरामीटर बदलव"
+
+#, fuzzy
+#~| msgid "Convert to Path"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "पथ मं बदलव"
+
+#, fuzzy
+#~| msgid "Break subpath at points"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath at points"
+#~ msgstr "उपपथ ल ए बिन्दु मं तोड़ें"
+
+#, fuzzy
+#~| msgid "Combine paths"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Combine paths"
+#~ msgstr "पथ जोड़व"
+
+#, fuzzy
+#~| msgid "Move control point"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move control point"
+#~ msgstr "नियंत्रन बिंदु खिसकाव"
+
+#, fuzzy
+#~| msgid "Set fill rule"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set fill rule"
+#~ msgstr "भराव रंग सेट करव"
+
+#, fuzzy
+#~| msgid "Insert point"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "बिंदु भरव नइ करव"
+
+#, fuzzy
+#~| msgid "Merge points"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "बिन्दु ल मिलाव"
+
+#, fuzzy
+#~| msgid "Move points"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move points"
+#~ msgstr "बिन्दु ल खिसकाव"
+
+#, fuzzy
+#~| msgid "Remove points"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove points"
+#~ msgstr "बिन्दु हटाव"
+
+#, fuzzy
+#~| msgid "Set point type"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set point type"
+#~ msgstr "बिन्दु किसिम सेट करव"
+
+#, fuzzy
+#~| msgid "Reverse paths"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reverse paths"
+#~ msgstr "पथ उलटव"
+
+#, fuzzy
+#~| msgid "Break subpath"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath"
+#~ msgstr "उपपथ तोड़ें"
+
+#, fuzzy
+#~| msgid "Change segments to curves"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to curves"
+#~ msgstr "खन्ड ल वक्र के रूप मं बदलव"
+
+#, fuzzy
+#~| msgid "Change segments to lines"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to lines"
+#~ msgstr "खन्ड ल लकीर मन के रूप मं बदलव"
+
+#, fuzzy
+#~| msgid "Set border"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set marker"
+#~ msgstr "किनारा सेट करव"
+
+#, fuzzy
+#~| msgid "Align shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Align shapes"
+#~ msgstr "आकार पंक्तिबद्ध करव"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr "पिछोत अंगना सेट करव"
+
+#, fuzzy
+#~| msgid "Ellipse Shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Clip Shape"
+#~ msgstr "दीर्घवक्र आकार"
+
+#, fuzzy
+#~| msgid "Create shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr "आकार बनाव"
+
+#, fuzzy
+#~| msgid "Delete shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shape"
+#~ msgid_plural "Delete shapes"
+#~ msgstr[0] "आकार मेटाव"
+#~ msgstr[1] "आकार मेटाव"
+
+#, fuzzy
+#~| msgid "Distribute shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Distribute shapes"
+#~ msgstr "आकार वितरित करव"
+
+#, fuzzy
+#~| msgid "Group shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr "आकार समूहबद्ध करव"
+
+#, fuzzy
+#~| msgid "Keep Aspect Ratio"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Keep Aspect Ratio"
+#~ msgstr "आस्पेक्ट रेसो बनाए रखव"
+
+#, fuzzy
+#~| msgid "Lock shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Lock shapes"
+#~ msgstr "आकार तालाबंद करव"
+
+#, fuzzy
+#~| msgid "Move shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move shapes"
+#~ msgstr "आकार खिसकाव"
+
+#, fuzzy
+#~| msgid "Create Shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr "आकार बनाव"
+
+#, fuzzy
+#~| msgid "Reorder shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reorder shapes"
+#~ msgstr "आकारों ल नवा क्रम देव"
+
+#, fuzzy
+#~| msgid "Change parameter"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Shape RunAround"
+#~ msgstr "पैरामीटर बदलव"
+
+#, fuzzy
+#~| msgid "Set Shadow"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Shadow"
+#~ msgstr "छइंहा सेट करव"
+
+#, fuzzy
+#~| msgid "Shear shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Shear shapes"
+#~ msgstr "आकार काटव"
+
+#, fuzzy
+#~| msgid "Resize shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Resize shapes"
+#~ msgstr "आकार बदलव"
+
+#, fuzzy
+#~| msgid "Set border"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set stroke"
+#~ msgstr "किनारा सेट करव"
+
+#, fuzzy
+#~| msgid "Opacity"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr "अपार्दरसिता"
+
+#, fuzzy
+#~| msgid "Ellipse Shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shape"
+#~ msgstr "दीर्घवक्र आकार"
+
+#, fuzzy
+#~| msgid "Ellipse Shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shapes"
+#~ msgstr "दीर्घवक्र आकार"
+
+#, fuzzy
+#~| msgid "Ungroup shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr "आकारों से समूह हटाव"
+
+#, fuzzy
+#~| msgid "Close subpath"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Close subpath"
+#~ msgstr "उपपथ बंद करव"
+
+#, fuzzy
+#~| msgid "Join subpaths"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Join subpaths"
+#~ msgstr "उपपथ मं सामिल हों"
+
+#, fuzzy
+#~| msgid "Remove subpath"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove subpath"
+#~ msgstr "उपपथ मेटाव"
+
+#~ msgid "Standard"
+#~ msgstr "मानक"
+
+#~ msgid "Lines"
+#~ msgstr "पंक्तियाँ"
+
+#~ msgid "Type:"
+#~ msgstr "किसिमः"
+
+#~ msgid "Tie"
+#~ msgstr "टाई"
+
+#~ msgid "A connection between two other shapes"
+#~ msgstr "दो आकार के बीच के कनेक्सन"
+
+#, fuzzy
+#~ msgid "Shows or hides grid"
+#~ msgstr "गाइड देखाव या लुकाव"
+
+#, fuzzy
+#~| msgid "A simple path shape"
+#~ msgid "Simple path shape"
+#~ msgstr "एक सादा रस्ता आकार"
+
+#~ msgid "A simple path shape"
+#~ msgstr "एक सादा रस्ता आकार"
+
+#~ msgid "%1 Options"
+#~ msgstr "%1 विकल्प"
+
+#, fuzzy
+#~| msgid "Paste Shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Shapes"
+#~ msgstr "आकारों ल चिपकाव"
+
+#~ msgid "Active tool: %1"
+#~ msgstr "सक्रिय औजार: %1"
+
+#, fuzzy
+#~| msgid "Paste Page"
+#~| msgid_plural "Paste Pages"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "पेज चिपकाव"
+
+#~ msgid "Nodes"
+#~ msgstr "नोड्स"
+
+#~ msgid "Extension of lines"
+#~ msgstr "लाइन के एक्सटेंसन"
+
+#~ msgid "Orthogonal"
+#~ msgstr "ओर्थोगोनल"
+
+#~ msgid "Intersection of lines"
+#~ msgstr "लाइन के प्रतिक्छेदन"
+
+#~ msgid "Guide lines"
+#~ msgstr "गाइड लाइन"
+
+#~ msgid "Create object"
+#~ msgstr "चीज बनाव"
+
+#~ msgid "Pan"
+#~ msgstr "पीएएन"
+
+#, fuzzy
+#~| msgid "Change Connection"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Segment"
+#~ msgstr "कनेक्सन बदलव"
+
+#~ msgid "Corner point"
+#~ msgstr "कोने के बिन्दु"
+
+#~ msgid "Smooth point"
+#~ msgstr "चिकना बिन्दु"
+
+#~ msgid "Symmetric Point"
+#~ msgstr "सुडौल बिन्दु"
+
+#~ msgid "Make curve point"
+#~ msgstr "वक्र बिन्दु बनाव"
+
+#~ msgid "Make line point"
+#~ msgstr "लाइन बिन्दु बनाव"
+
+#~ msgid "Segment to Line"
+#~ msgstr "लकीर मं चाप"
+
+#~ msgid "Segment to Curve"
+#~ msgstr "वक्र मं चाप"
+
+#~ msgid "Insert point"
+#~ msgstr "बिंदु भरव नइ करव"
+
+#~ msgid "Remove point"
+#~ msgstr "बिन्दु मेटाव"
+
+#~ msgid "Break at point"
+#~ msgstr "बिन्दु मं ब्रेक करव"
+
+#~ msgid "Break at segment"
+#~ msgstr "खन्ड मं ब्रेक करव"
+
+#~ msgid "Join with segment"
+#~ msgstr "खन्ड मं जोड़व"
+
+#~ msgid "Merge points"
+#~ msgstr "बिन्दु ल मिलाव"
+
+#~ msgid "To Path"
+#~ msgstr "पथ पर"
+
+#~ msgid "Line/Curve"
+#~ msgstr "लाइन/वक्र"
+
+#~ msgid "Drag to move handle."
+#~ msgstr "हेंडल खिसकाय बर खींचव."
+
+#~ msgid "Drag to move control point."
+#~ msgstr "नियंत्रन बिंदु खिसकाय बर खींचव."
+
+#, fuzzy
+#~| msgid "Path editing tool"
+#~ msgid "Path editing"
+#~ msgstr "पथ संपादन औजार"
+
+#~ msgid "Zoom"
+#~ msgstr "जूम"
+
+#~ msgid "Zoom In"
+#~ msgstr "जूम इन"
+
+#~ msgid "Zoom Out"
+#~ msgstr "जूम आउट"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Convert To Path"
+#~ msgstr "पथ मं बदलव"
+
+#~ msgid "Scripts"
+#~ msgstr "स्क्रिप्ट्स"
+
+#~ msgid "Script Manager"
+#~ msgstr "स्क्रिप्ट प्रबंधक"
+
+#~ msgid "Execute Script File..."
+#~ msgstr "स्क्रिप्ट फाइल चलाव..."
+
+#~ msgid "Script Manager..."
+#~ msgstr "स्क्रिप्ट प्रबंधक..."
+
+#~ msgid "Execute Script File"
+#~ msgstr "स्क्रिप्ट फाइल चलाव"
+
+#~ msgid "Install Script Package"
+#~ msgstr "स्क्रिप्ट पैकेज इनस्टाल करव"
+
+#~ msgid "Could not read the package \"%1\"."
+#~ msgstr "पैकेज \"%1\" ल पढ़ नइ सकिस."
+
+#~ msgid "The package \"%1\" does not contain a valid install.rc file."
+#~ msgstr "पैकेज \"%1\" मं वैध install.rc फाइल नइ हे."
+
+#~ msgid "Failed to parse the install.rc file at package \"%1\"."
+#~ msgstr "install.rc फाइल ल पैकेज \"%1\" मं पार करे मं फेल."
+
+#~ msgid ""
+#~ "Failed to determinate location where the package \"%1\" should be "
+#~ "installed to."
+#~ msgstr "पैकेज \"%1\" ल कहां इनस्टाल करना हे वो जगह निरधारित करे मं फेल."
+
+#~ msgid ""
+#~ "A script package with the name \"%1\" already exists. Replace this "
+#~ "package?"
+#~ msgstr "नाम \"%1\" के साथ स्क्रिप्ट पैकेज पहिली ही मौजूद हे. एखर पैकेज ल बदलव?"
+
+#~ msgid "Replace"
+#~ msgstr "बदलव"
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\" since the script is not "
+#~ "installed."
+#~ msgstr "स्क्रिप्ट पैकेज \"%1\" इनस्टाल नइ कर सकिस काबर कि स्क्रिप्ट इनस्टाल नइ हे."
+
+#~ msgid "Save"
+#~ msgstr "सहेजव"
+
+#~ msgid "Add script file"
+#~ msgstr "स्क्रिप्ट फाइल जोड़व"
+
+#~ msgid "Add collection folder"
+#~ msgstr "संग्रह फोल्डर जोड़व"
+
+#~ msgid "Install script package file"
+#~ msgstr "स्क्रिप्ट पैकेज फाइल इनस्टाल करव"
+
+#~ msgid "Install online script package"
+#~ msgstr "आनलाइन स्क्रिप्ट पैकैज इनस्टाल करव"
+
+#~ msgid "Add"
+#~ msgstr "जोड़व"
+
+#~ msgid "Script"
+#~ msgstr "स्क्रिप्ट"
+
+#~ msgid "Collection"
+#~ msgstr "संग्रह"
+
+#, fuzzy
+#~| msgid "Change master slide"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master slide"
+#~ msgstr "मास्टर स्लाइड बदलव"
+
+#, fuzzy
+#~| msgid "Change master page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master page"
+#~ msgstr "मास्टर पेज बदलव"
+
+#, fuzzy
+#~| msgid "Page Layout"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "पेज ले-आउट"
+
+#, fuzzy
+#~| msgid "Display master background"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display master background"
+#~ msgstr "मास्टर पिछोत अंगना देखाव"
+
+#, fuzzy
+#~| msgid "Display slide background"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display slide background"
+#~ msgstr "पिछोत अंगना स्लाइड देखाव"
+
+#, fuzzy
+#~| msgid "Display page background"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display page background"
+#~ msgstr "पेज पिछोत अंगना देखाव"
+
+#, fuzzy
+#~| msgid "Show master shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Show master shapes"
+#~ msgstr "मास्टर आकार देखाव"
+
+#, fuzzy
+#~| msgid "Hide master shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Hide master shapes"
+#~ msgstr "मास्टर आकार लुकाव"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] "स्लाइड मेटाव"
+#~ msgstr[1] "स्लाइड मेटाव"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "पेज मेटाव"
+#~ msgstr[1] "पेज मेटाव"
+
+#, fuzzy
+#~| msgid "Insert slide"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr "स्लाइड भरव"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr "पेज भरव"
+
+#, fuzzy
+#~| msgid "Move slide"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "स्लाइड खिसकाव"
+#~ msgstr[1] "स्लाइड खिसकाव"
+
+#, fuzzy
+#~| msgid "Move page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] "पेज खिसकाव"
+#~ msgstr[1] "पेज खिसकाव"
+
+#, fuzzy
+#~| msgid "Confirm Save"
+#~ msgid "Configure"
+#~ msgstr "सहेजे के पुस्टि करव"
+
+#, fuzzy
+#~ msgid "Grid"
+#~ msgstr "ग्रिड देखाव (&G)"
+
+#, fuzzy
+#~| msgid "Document"
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "कागद"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Document Settings"
+#~ msgstr "कागद जानकारी"
+
+#, fuzzy
+#~| msgid "Author"
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "लेखक"
+
+#~ msgid "Author"
+#~ msgstr "लेखक"
+
+#~ msgid "Master Slide"
+#~ msgstr "मास्टर स्लाइड"
+
+#~ msgid "Master Page"
+#~ msgstr "मास्टर पेज"
+
+#~ msgid "Slide %1"
+#~ msgstr "स्लाइड %1"
+
+#~ msgid "Page  %1"
+#~ msgstr "पेज %1"
+
+#~ msgid "Layer"
+#~ msgstr "लेयर"
+
+#~ msgid "Group"
+#~ msgstr "समूह"
+
+#~ msgid "Shape"
+#~ msgstr "रूप"
+
+#, fuzzy
+#~| msgid "Paste Slide"
+#~| msgid_plural "Paste Slides"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "स्लाइड चिपकाव"
+
+#, fuzzy
+#~| msgid "Move page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "पेज खिसकाव"
+
+#, fuzzy
+#~| msgid "Create Layer"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "परत बनाव"
+
+#~ msgid "Slide"
+#~ msgstr "स्लाइड"
+
+#~ msgid "Visible"
+#~ msgstr "दिखत"
+
+#~ msgid "Locked"
+#~ msgstr "तालाबंद"
+
+#, fuzzy
+#~| msgid "Reparent shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reparent shapes"
+#~ msgstr "रीपैरेन्ट आकार"
+
+#, fuzzy
+#~| msgid "Move page"
+#~ msgid "&Move Here"
+#~ msgstr "पेज खिसकाव"
+
+#, fuzzy
+#~| msgid "Green"
+#~ msgid "&Copy Here"
+#~ msgstr "हरा"
+
+#, fuzzy
+#~| msgid "Change"
+#~ msgid "C&ancel"
+#~ msgstr "बदलव"
+
+#~ msgid "Document"
+#~ msgstr "कागद"
+
+#~ msgid "Add a new slide or layer"
+#~ msgstr "एक नवा स्लाइड या परत जोड़व"
+
+#~ msgid "Add a new page or layer"
+#~ msgstr "एक नवा पेज या परत जोड़व"
+
+#~ msgid "Page"
+#~ msgstr "पेज"
+
+#~ msgid "Delete selected objects"
+#~ msgstr "चुने गे चीज मन ल मेटाव"
+
+#~ msgid "Raise selected objects"
+#~ msgstr "चुने गे चीज मन ल ऊंचा करव"
+
+#~ msgid "Lower selected objects"
+#~ msgstr "चुने गे चीज मन ल नीचे करव"
+
+#~ msgid "Minimal View"
+#~ msgstr "सबसे कम दृस्य"
+
+#~ msgid "Detailed View"
+#~ msgstr "विस्तृत दृस्य"
+
+#~ msgid "Thumbnail View"
+#~ msgstr "छोटे फोटू दृस्य"
+
+#~ msgid "View mode"
+#~ msgstr "मोड देखाव"
+
+#~ msgid "Enter the name of the new layer:"
+#~ msgstr "नवा परत के नाम भरव:"
+
+#~ msgid "New Layer"
+#~ msgstr "नवा परत"
+
+#~ msgid "New layer"
+#~ msgstr "नवा परत"
+
+#, fuzzy
+#~| msgid "Create Layer"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "परत बनाव"
+
+#, fuzzy
+#~| msgid "Delete Layer"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "परत मेटाव"
+
+#~ msgid "Could not delete all layers. At least one layer is required."
+#~ msgstr "सब्बो परतों ल मिटा नइ सकिस. कम से कम एक परत चाही."
+
+#~ msgid "Error deleting layers"
+#~ msgstr "परतों ल मेटाय मं गलती"
+
+#, fuzzy
+#~| msgid "Add a new slide or layer"
+#~ msgid "Add a new slide"
+#~ msgstr "एक नवा स्लाइड या परत जोड़व"
+
+#, fuzzy
+#~| msgid "Add a new slide or layer"
+#~ msgid "Add a new page"
+#~ msgstr "एक नवा स्लाइड या परत जोड़व"
+
+#~ msgid "Page %1"
+#~ msgstr "पेज %1"
+
+#, fuzzy
+#~| msgid "Paste Slide"
+#~| msgid_plural "Paste Slides"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] "स्लाइड चिपकाव"
+#~ msgstr[1] "स्लाइड चिपकाव"
+
+#, fuzzy
+#~| msgid "Paste Page"
+#~| msgid_plural "Paste Pages"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] "पेज चिपकाव"
+#~ msgstr[1] "पेज चिपकाव"
+
+#, fuzzy
+#~ msgid "Tools"
+#~ msgstr "पेन औजार"
+
+#~ msgid "D&elete"
+#~ msgstr "मेटाव (&e)"
+
+#~ msgid "Show Master Pages"
+#~ msgstr "मास्टर पेज देखाव"
+
+#~ msgid "Show Rulers"
+#~ msgstr "रूलर देखाव"
+
+#~ msgid "Show/hide the view's rulers"
+#~ msgstr "प्रदर्सक मं मापनी देखाव/लुकाव."
+
+#~ msgid "Insert Page"
+#~ msgstr "पेज भरव"
+
+#~ msgid "Insert a new page after the current one"
+#~ msgstr "अभी हाल के पेज के बाद एक नवा पेज भरव"
+
+#~ msgid "Copy Page"
+#~ msgstr "पेज नकल करव"
+
+#~ msgid "Copy the current page"
+#~ msgstr "अभी हाल के पेज के नकल बनाव"
+
+#~ msgid "Delete Page"
+#~ msgstr "पेज मेटाव"
+
+#~ msgid "Delete the current page"
+#~ msgstr "अभी हाल के पेज मेटाव"
+
+#~ msgid "Master Page..."
+#~ msgstr "मास्टर पेज..."
+
+#, fuzzy
+#~| msgid "Page Layout"
+#~ msgid "Page Layout..."
+#~ msgstr "पेज ले-आउट"
+
+#~ msgid "Variable"
+#~ msgstr "परिवर्तनीय"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Document..."
+#~ msgstr "कागद आयात करव"
+
+#, fuzzy
+#~| msgid "Snap Guides"
+#~ msgid "Configure..."
+#~ msgstr "गाइडें स्नेप करव"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Import Slideshow"
+#~ msgstr "लकीरें आयात करव:"
+
+#~ msgid "Import Document"
+#~ msgstr "कागद आयात करव"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not import\n"
+#~ "%1"
+#~ msgstr ""
+#~ "खोल नइ सकिस:\n"
+#~ "%1"
+
+#, fuzzy
+#~| msgid "Change parameter"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr "पैरामीटर बदलव"
+
+#, fuzzy
+#~| msgid "Set background image ..."
+#~ msgid "Set image ..."
+#~ msgstr "पिछोत अंगना सेट करव..."
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Background"
+#~ msgstr "पिछोत अंगना सेट करव"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Page Background"
+#~ msgstr "पिछोत अंगना सेट करव"
+
+#, fuzzy
+#~| msgid "Page edge:"
+#~ msgid "Page Design"
+#~ msgstr "पेज किनारा:"
+
+#, fuzzy
+#~| msgid "Slide %1"
+#~ msgid "Slide Design"
+#~ msgstr "स्लाइड %1"
+
+#, fuzzy
+#~| msgid "Change backgound image"
+#~ msgid "Use background of master page"
+#~ msgstr "पिछोत अंगना बदलव"
+
+#, fuzzy
+#~| msgid "Set background image ..."
+#~ msgid "Use background of master slide"
+#~ msgstr "पिछोत अंगना सेट करव..."
+
+#, fuzzy
+#~| msgid "Change master page"
+#~ msgid "Display shapes of master page"
+#~ msgstr "मास्टर पेज बदलव"
+
+#, fuzzy
+#~| msgid "Change master slide"
+#~ msgid "Display shapes of master slide"
+#~ msgstr "मास्टर स्लाइड बदलव"
+
+#, fuzzy
+#~| msgid "Change backgound image"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change slide background image"
+#~ msgstr "पिछोत अंगना बदलव"
+
+#, fuzzy
+#~| msgid "Change backgound image"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page background image"
+#~ msgstr "पिछोत अंगना बदलव"
+
+#, fuzzy
+#~| msgid "Master Slide"
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "मास्टर स्लाइड"
+
+#, fuzzy
+#~| msgid "Slide %1"
+#~ msgid "Slide %1/%2"
+#~ msgstr "स्लाइड %1"
+
+#, fuzzy
+#~| msgid "Master Page"
+#~ msgid "Master Page %1/%2"
+#~ msgstr "मास्टर पेज"
+
+#, fuzzy
+#~| msgid "Page %1"
+#~ msgid "Page %1/%2"
+#~ msgstr "पेज %1"
+
+#, fuzzy
+#~| msgid "File"
+#~ msgid "Field"
+#~ msgstr "फाइल"
+
+#, fuzzy
+#~| msgid "TextLabel1:"
+#~ msgid "Label"
+#~ msgstr "पाठ-सीर्सक1:"
+
+#, fuzzy
+#~| msgid "%1 %"
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1 %"
+
+#, fuzzy
+#~| msgid "Change"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "बदलव"
+
+#, fuzzy
+#~| msgid "Change Filetype"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "फाइल किसिम बदलव"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "मेटाव"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "पाठ"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "स्लाइड मेटाव"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "मेटाव"
+
+#, fuzzy
+#~| msgid "Insert point"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "बिंदु भरव नइ करव"
+
+#, fuzzy
+#~| msgid "Insert Index"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr "निर्देसिका भरव"
+
+#, fuzzy
+#~| msgid "Insert point"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Right"
+#~ msgstr "बिंदु भरव नइ करव"
+
+#, fuzzy
+#~| msgid "Insert point"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr "बिंदु भरव नइ करव"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Below"
+#~ msgstr "ब्रेक भरव"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "पेज भरव"
+
+#, fuzzy
+#~| msgid "Change master page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List Numbering"
+#~ msgstr "मास्टर पेज बदलव"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "फार्मेट"
+
+#, fuzzy
+#~| msgid "Set Paragraph Style"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Direct Paragraph Formatting"
+#~ msgstr "पैराग्राफ सैली सेट करव"
+
+#, fuzzy
+#~| msgid "Create Shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr "आकार बनाव"
+
+#, fuzzy
+#~| msgid "Insert point"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr "बिंदु भरव नइ करव"
+
+#, fuzzy
+#~| msgid "Shadow Offset:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "छइंहा आफसेट:"
+
+#, fuzzy
+#~| msgid "Date"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "तारीक"
+
+#, fuzzy
+#~| msgid "Text Reference"
+#~ msgid "Index Reference"
+#~ msgstr "पाठ संदर्भ"
+
+#~ msgid "Text Reference"
+#~ msgstr "पाठ संदर्भ"
+
+#, fuzzy
+#~| msgid "Select the index you want to reference"
+#~ msgid "Please create an index to reference first."
+#~ msgstr "वह निर्देसिका चुनव जेखर संदर्भ आब देना चाहथो "
+
+#~ msgid "Select the index you want to reference"
+#~ msgstr "वह निर्देसिका चुनव जेखर संदर्भ आब देना चाहथो "
+
+#~ msgid "Found no match"
+#~ msgstr "कोई जोड़े नइ मिलिस"
+
+#~ msgid ""
+#~ "Found no match\n"
+#~ "\n"
+#~ "No text was replaced"
+#~ msgstr ""
+#~ "कोई जोड़े नइ मिलिस\n"
+#~ "\n"
+#~ "पाठ ल बदले नइ गिस"
+
+#~ msgid "Replace %1 with %2?"
+#~ msgstr "%1 ल %2 से बदलव?"
+
+#, fuzzy
+#~| msgid "Group shapes"
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "आकार समूहबद्ध करव"
+
+#~ msgctxt "Underline Style"
+#~ msgid "None"
+#~ msgstr "कुछ नइ"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "एकल"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "दोगुना"
+
+#, fuzzy
+#~| msgid "Set Paragraph Style"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "New Paragraph"
+#~ msgstr "पैराग्राफ सैली सेट करव"
+
+#, fuzzy
+#~| msgid "Add Bookmark"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr " निसानी  जोड़व"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "स्थिति"
+
+#, fuzzy
+#~| msgid "Insert Index"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "निर्देसिका भरव"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "पेज भरव"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "ब्रेक भरव"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "पेज भरव"
+
+#, fuzzy
+#~| msgid "Merge points"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "बिन्दु ल मिलाव"
+
+#, fuzzy
+#~| msgid "Vertical"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "खड़ा"
+
+#, fuzzy
+#~| msgid "Fit Page Width"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr "पेज चौड़ाई मं जमाव"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "पेज भरव"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr "पेज भरव"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "ब्रेक भरव"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "स्थिति"
+
+#, fuzzy
+#~| msgid "Bold"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr "गाढ़ा"
+
+#, fuzzy
+#~| msgid "Italic"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "ईटैलिक"
+
+#, fuzzy
+#~| msgid "Underline"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "रेखांकित"
+
+#, fuzzy
+#~| msgid "Strike Out"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr "लिखकर काटा"
+
+#, fuzzy
+#~| msgid "Change Connection"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr "कनेक्सन बदलव"
+
+#, fuzzy
+#~| msgid "Set Vertical Alignment"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr "खड़ी जमावट सेट करव"
+
+#, fuzzy
+#~| msgid "Decrease Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "हासिया घटाव"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "हासिया बढ़ाव"
+
+#, fuzzy
+#~| msgid "Decrease font size"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "फोंट आकार घटाव"
+
+#, fuzzy
+#~| msgid "Increase font size"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "फोंट आकार बढ़ाव"
+
+#, fuzzy
+#~| msgid "Set point type"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr "बिन्दु किसिम सेट करव"
+
+#, fuzzy
+#~| msgid "Set point type"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr "बिन्दु किसिम सेट करव"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr "पिछोत अंगना सेट करव"
+
+#, fuzzy
+#~| msgid "Text Color..."
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Text Color"
+#~ msgstr "पाठ रंग..."
+
+#, fuzzy
+#~| msgid "Set Character Style"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr "अक्छर सैली सेट करव"
+
+#, fuzzy
+#~| msgid "Set Paragraph Style"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Paragraph Style"
+#~ msgstr "पैराग्राफ सैली सेट करव"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "फार्मेट"
+
+#~ msgid "Default"
+#~ msgstr "डिफाल्ट"
+
+#, fuzzy
+#~| msgid "Red"
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "लाल"
+
+#, fuzzy
+#~| msgid "Red"
+#~ msgid "Redo %1"
+#~ msgstr "लाल"
+
+#, fuzzy
+#~| msgid "Red"
+#~ msgid "Redo"
+#~ msgstr "लाल"
+
+#~ msgid "&File"
+#~ msgstr "फाइल (&F)"
+
+#~ msgid "&Settings"
+#~ msgstr "सेटिंग (&S)"
+
+#~ msgid "File"
+#~ msgstr "फाइल"
+
+#, fuzzy
+#~| msgid "Delete the current page"
+#~ msgid "Delete the author profile"
+#~ msgstr "अभी हाल के पेज मेटाव"
+
+#, fuzzy
+#~| msgid "name of the output file"
+#~ msgid "Name of Profile"
+#~ msgstr "आउटपुट फाइल के नाम"
+
+#~ msgid "Name:"
+#~ msgstr "नाम:"
+
+#~ msgid "Initials:"
+#~ msgstr "पहिलीाक्छर:"
+
+#~ msgid "Title:"
+#~ msgstr "सीर्सक:"
+
+#~ msgid "Position:"
+#~ msgstr "स्थितिः"
+
+#~ msgid "Company:"
+#~ msgstr "कम्पनी:"
+
+#~ msgid "Email:"
+#~ msgstr "ईमेलः"
+
+#~ msgid "Telephone (home):"
+#~ msgstr "दूरभास (घर):"
+
+#~ msgid "Telephone (work):"
+#~ msgstr "दूरभास (काम)"
+
+#~ msgid "Fax:"
+#~ msgstr "फैक्सः"
+
+#~ msgid "Street:"
+#~ msgstr "सड़कः"
+
+#~ msgid "City:"
+#~ msgstr "सहर:"
+
+#~ msgid "Country:"
+#~ msgstr "देस:"
+
+#, fuzzy
+#~| msgid "Autosaving..."
+#~ msgid "Autosave interval:"
+#~ msgstr "अपने अपन सहेजत हे..."
+
+#, fuzzy
+#~| msgid "Create shape"
+#~ msgid "Create backup file:"
+#~ msgstr "आकार बनाव"
+
+#, fuzzy
+#~ msgid "Show grid:"
+#~ msgstr "ग्रिड देखाव (&G)"
+
+#, fuzzy
+#~| msgid "Snap to Grid"
+#~ msgid "Snap to grid:"
+#~ msgstr "ग्रिड मं स्नेप करव"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgid "Grid color:"
+#~ msgstr "पिछोत अंगना के रंगः (&B)"
+
+#, fuzzy
+#~| msgid "Snapping"
+#~ msgid "Spacing"
+#~ msgstr "स्नेपिंग"
+
+#, fuzzy
+#~| msgid "&Horizontal"
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "आड़ा (&H)"
+
+#, fuzzy
+#~| msgid "&Vertical"
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "खड़ा (&V)"
+
+#, fuzzy
+#~| msgid "Unit:"
+#~ msgid "Units:"
+#~ msgstr "इकाईः"
+
+#, fuzzy
+#~| msgid "Shadow Offset:"
+#~ msgid "Paste offset:"
+#~ msgstr "छइंहा आफसेट:"
+
+#~ msgid "Only print and exit"
+#~ msgstr "सिरिफ छापव अउ बाहिर हों"
+
+#~ msgid "Open a new document with a template"
+#~ msgstr "नवा कागद टैम्प्लेट एखर साथ खोलव"
+
+#~ msgid "Override display DPI"
+#~ msgstr "प्रदर्सक डीपीआई ल ओवरराइड करव"
+
+#, fuzzy
+#~ msgid "Only export to PDF and exit"
+#~ msgstr "सिरिफ छापव अउ बाहिर हों"
+
+#, fuzzy
+#~| msgid "Creation error"
+#~ msgid "%1: Critical Error"
+#~ msgstr "बनाए मं गलती"
+
+#, fuzzy
+#~| msgid "No template found for: %1 "
+#~ msgid "No template found for: %1"
+#~ msgstr " %1: बर कोनो टैम्पलेट नइ मिलिस"
+
+#~ msgid "Too many templates found for: %1"
+#~ msgstr "%1 बर बहुत अकन टैम्प्लेट्स हे"
+
+#~ msgid "Template %1 failed to load."
+#~ msgstr "टैम्पलेट %1 लोड करे मं फेल."
+
+#~ msgid "Always use this template at application start up"
+#~ msgstr "अनुपरयोग चालू होए मं एखर टैम्प्लेट के परयोग हमेसा करव"
+
+#~ msgid "Always use this template"
+#~ msgstr "टैम्प्लेट के हमेसा उपयोग करव"
+
+#~ msgid "Making backup..."
+#~ msgstr "बैकअप करत हे..."
+
+#~ msgid "Saving..."
+#~ msgstr "सहेजत हे..."
+
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "सहेज नइ सकिस\n"
+#~ " %1"
+
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "%1 ल सहेज नइ सकिस\n"
+#~ "कारन: %2"
+
+#~ msgid "Document <i>%1</i> saved"
+#~ msgstr "कागद <i>%1</i> सहेजे गिस"
+
+#~ msgid "Autosaving..."
+#~ msgstr "अपने अपन सहेजत हे..."
+
+#~ msgid "Error during autosave! Partition full?"
+#~ msgstr "अपने अपन सहेजे के समय गलती! पार्टीसन पूरा भरे हो ?"
+
+#~ msgid "Could not create the file for saving"
+#~ msgstr "सहेजे बर फाइल बना नइ सकिस"
+
+#~ msgid "Not able to write '%1'. Partition full?"
+#~ msgstr "'%1' ल लिखे मं अक्छम. पार्टीसन पूरा भरे हो ?"
+
+#, fuzzy
+#~| msgid "Not able to write '%1'. Partition full?"
+#~ msgid "Not able to write RDF metadata. Partition full?"
+#~ msgstr "'%1' ल लिखे मं अक्छम. पार्टीसन पूरा भरे हो ?"
+
+#~ msgid "Error while trying to write '%1'. Partition full?"
+#~ msgstr "'%1' ल लिखे मं गलती. पार्टीसन पूरा भरे हो ?"
+
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "गलत URL\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "An autosaved file exists for this document.\n"
+#~ "Do you want to open it instead?"
+#~ msgstr ""
+#~ "ये कागद बर एक अपने अपन सहेजी गे फाइल मौजूद हे.\n"
+#~ "एखर बदला मा का आप मन एला खोलना चाहू?"
+
+#~ msgid "The file %1 does not exist."
+#~ msgstr "फाइल %1 अस्तित्व मं नइ हे."
+
+#, fuzzy
+#~| msgid "Open Document"
+#~ msgid "Opening Document"
+#~ msgstr "कागद खोलव"
+
+#, fuzzy
+#~| msgid "Could not create the file for saving"
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "सहेजे बर फाइल बना नइ सकिस"
+
+#~ msgid "File not found"
+#~ msgstr "फाइल नइ मिलिस"
+
+#~ msgid "Cannot create storage"
+#~ msgstr "भंडार तैयार नइ कर सके"
+
+#~ msgid "Bad MIME type"
+#~ msgstr "खराब माइम किसिम"
+
+#~ msgid "Format not recognized"
+#~ msgstr "फार्मेट पहिचान नइ सकिस"
+
+#~ msgid "Not implemented"
+#~ msgstr "लागू नइ"
+
+#~ msgid "Parsing error"
+#~ msgstr "पारसिंग गलती"
+
+#~ msgid "Document is password protected"
+#~ msgstr "कागद पासवर्ड से संरक्छित हे"
+
+#~ msgid "Internal error"
+#~ msgstr "अंदर के गलती"
+
+#~ msgid "Out of memory"
+#~ msgstr "मेमोरी कम पड़ गिस"
+
+#~ msgid "Unknown error"
+#~ msgstr "अग्यात गलती"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open\n"
+#~| "%2.\n"
+#~| "Reason: %1"
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr ""
+#~ "%2 ल खोल नइ सकिस\n"
+#~ "कारन: %1"
+
+#~ msgid "Document <i>%1</i> loaded"
+#~ msgstr "कागद <i>%1</i> लोड करिस"
+
+#~ msgid "Could not find %1"
+#~ msgstr "%1 ल खोज नइ सकिस "
+
+#~ msgid ""
+#~ "Parsing error in %1 at line %2, column %3\n"
+#~ "Error message: %4"
+#~ msgstr ""
+#~ "%1 मं लकीर %2, खंभा %3 मं पारसिंग गलती\n"
+#~ "गलती संदेस: %4"
+
+#~ msgid "%1 is not a file."
+#~ msgstr "%1 फाइल नइ हे."
+
+#~ msgid "Could not open the file for reading (check read permissions)."
+#~ msgstr "फाइल ल पढ़े बर  खोले नइ जा सकिस (पाठ अनुमति जांचव)."
+
+#~ msgid "Could not read the beginning of the file."
+#~ msgstr "फाइल के चालू पढ़ नइ सकिस."
+
+#~ msgid ""
+#~ "parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "मुख्य कागद के लकीर %1 , खंभा %2 मं पारसिंग गलती\n"
+#~ "गलती संदेस: %3"
+
+#, fuzzy
+#~| msgid "Not a valid KOffice file: %1"
+#~ msgid "Not a valid Calligra file: %1"
+#~ msgstr "वह कोनो वैध के-आफिस फाइल: %1 नइ हे."
+
+#~ msgid "Invalid document: no file 'maindoc.xml'."
+#~ msgstr "अवैध कागद: कोनो फाइल 'maindoc.xml' नइ."
+
+#~ msgid "Untitled"
+#~ msgstr "बिना सीर्सक"
+
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr "<p>कागद <b>'%1'</b> सुधारे जा गे हे.</p><p>का आप मन एला सहेजना चाहू?</p>"
+
+#~ msgid "Internal error: saveXML not implemented"
+#~ msgstr "अंदर के गलती: saveXML लागू नइ करे गे हे"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "खोल नइ सकिस:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "%1 ल खोल नइ सकिस\n"
+#~ "कारन: %2"
+
+#~ msgid "a word processing"
+#~ msgstr "वर्ड प्रोसेसिंग"
+
+#~ msgid "a spreadsheet"
+#~ msgstr "स्प्रेडसीट"
+
+#~ msgid "a presentation"
+#~ msgstr "प्रस्तुतीकरन"
+
+#~ msgid "a chart"
+#~ msgstr "चार्ट"
+
+#~ msgid "a drawing"
+#~ msgstr "ड्राइंग"
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~| "it?</p>"
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr "<p>कागद <b>'%1'</b> सुधारे जा गे हे.</p><p>का आप मन एला सहेजना चाहू?</p>"
+
+#, fuzzy
+#~| msgid "Custom Document"
+#~ msgid "Close Document"
+#~ msgstr "मनमाफिक कागद"
+
+#~ msgid "%1 %"
+#~ msgstr "%1 %"
+
+#~ msgid "No"
+#~ msgstr "नइ"
+
+#~ msgid "Yes"
+#~ msgstr "हाँ"
+
+#~ msgid "Could not export file."
+#~ msgstr "फाइल निर्यात नइ कर सकिस."
+
+#~ msgid "Missing Export Filter"
+#~ msgstr "गुमा निर्यात फिल्टर"
+
+#~ msgid ""
+#~ "Could not import file of type\n"
+#~ "%1"
+#~ msgstr ""
+#~ "फाइल किसिम\n"
+#~ "%1 आयात नइ कर सकिस"
+
+#~ msgid "Missing Import Filter"
+#~ msgstr "गुमा आयात फिल्टर"
+
+#~ msgid "Choose Filter"
+#~ msgstr "फिल्टर चुनव"
+
+#, fuzzy
+#~| msgid "Mid:"
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "मध्य:"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "पाठ"
+
+#, fuzzy
+#~| msgid "Preview:"
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "प्रिव्यूः"
+
+#, fuzzy
+#~| msgid "%1 Options"
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "%1 विकल्प"
+
+#, fuzzy
+#~| msgid "Replace"
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "बदलव"
+
+#, fuzzy
+#~| msgid "Replace"
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "बदलव"
+
+#, fuzzy
+#~| msgid "Replace"
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "बदलव"
+
+#, fuzzy
+#~| msgid "No template found for: %1 "
+#~ msgctxt "Total number of matches"
+#~ msgid "1 match found"
+#~ msgid_plural "%1 matches found"
+#~ msgstr[0] " %1: बर कोनो टैम्पलेट नइ मिलिस"
+#~ msgstr[1] " %1: बर कोनो टैम्पलेट नइ मिलिस"
+
+#, fuzzy
+#~| msgid "No template found for: %1 "
+#~ msgid "No matches found"
+#~ msgstr " %1: बर कोनो टैम्पलेट नइ मिलिस"
+
+#~ msgid "%1 unsaved document (%2)"
+#~ msgstr "%1 कागद सहेजे नइ गे (%2)"
+
+#~ msgid "Export as PDF..."
+#~ msgstr "पीडीएफ मं निर्यात करव..."
+
+#~ msgid "Reload"
+#~ msgstr "री-लोड"
+
+#~ msgid "Versions..."
+#~ msgstr "संस्करन..."
+
+#~ msgid "E&xport..."
+#~ msgstr "निर्यात... (&x)"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "En&crypt Document"
+#~ msgstr "कागद आयात करव"
+
+#~ msgid "&New View"
+#~ msgstr "नवा दृस्य (&N)"
+
+#~ msgid "Document Information"
+#~ msgstr "कागद जानकारी"
+
+#~ msgid "Full Screen Mode"
+#~ msgstr "पूरा स्क्रीन मोड"
+
+#, fuzzy
+#~| msgid "Dockers"
+#~ msgid "Show Dockers"
+#~ msgstr "डाकर्स"
+
+#, fuzzy
+#~| msgid "Dockers"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "डाकर्स"
+
+#~ msgid "Dockers"
+#~ msgstr "डाकर्स"
+
+#~ msgid "(write protected)"
+#~ msgstr "(लिखे से संरक्छित हे)"
+
+#~ msgid "Save as %1"
+#~ msgstr "अइसन सहेजव %1"
+
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "%1 (अग्यात फाइल किसिम)"
+
+#~ msgid ""
+#~ "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
+#~ "want to save in this format?</qt>"
+#~ msgstr ""
+#~ "<qt>ये रूप %1 मं सहेजे से कुछ फारमेटिंग गंवा हो सकथो .<p>का आप मन अभी घलोक एखर "
+#~ "फारमेट मं सहेजना चाहथो ?</qt>"
+
+#~ msgid "Confirm Save"
+#~ msgstr "सहेजे के पुस्टि करव"
+
+#~ msgid ""
+#~ "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you "
+#~ "still want to export to this format?</qt>"
+#~ msgstr ""
+#~ "<qt>ये रूप %1 मं निर्यात करे से कुछ फारमेटिंग गंवा हो सकथो .<p>का आप मन अभी घलोक "
+#~ "एखर फारमेट में निर्यात करना चाहथो ?</qt>"
+
+#~ msgid "Confirm Export"
+#~ msgstr "निर्यात के पुस्टि करव"
+
+#, fuzzy
+#~| msgid "Untitled"
+#~ msgid "untitled"
+#~ msgstr "बिना सीर्सक"
+
+#~ msgid "Open Document"
+#~ msgstr "कागद खोलव"
+
+#, fuzzy
+#~| msgid "Export as PDF..."
+#~ msgid "Export as PDF"
+#~ msgstr "पीडीएफ मं निर्यात करव..."
+
+#~ msgid "Document - %1"
+#~ msgstr "कागद -%1"
+
+#~ msgid "Warning"
+#~ msgstr "चेतावनी"
+
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "औजार पट्टी %1 देखाव"
+
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "औजार-पट्टी %1 लुकाव"
+
+#, fuzzy
+#~| msgid "Open This Document"
+#~ msgid "Open Existing Document"
+#~ msgstr "ये कागद ल खोलव"
+
+#~ msgid "Recent Documents"
+#~ msgstr "हाल ही मं प्रयुक्त कागद"
+
+#~ msgid "Custom Document"
+#~ msgstr "मनमाफिक कागद"
+
+#~ msgid "Stop"
+#~ msgstr "रुकव"
+
+#, fuzzy
+#~| msgid "Printing done"
+#~ msgid "Printing"
+#~ msgstr "छपाई पूरा"
+
+#~ msgid "Printing done"
+#~ msgstr "छपाई पूरा"
+
+#~ msgid "Close"
+#~ msgstr "बंद करव"
+
+#~ msgid "Stopped"
+#~ msgstr "रुक गिस"
+
+#~ msgid "Open This Document"
+#~ msgstr "ये कागद ल खोलव"
+
+#~ msgctxt "File modification date and time. %1 is date time"
+#~ msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>परिवर्धित:</b></td><td>%1</td></tr>"
+
+#~ msgctxt "File access date and time. %1 is date time"
+#~ msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>पहुंचा गिस:</b></td><td>%1</td></tr>"
+
+#~ msgid "Show Guides"
+#~ msgstr "गाइड देखाव"
+
+#~ msgid "Shows or hides guides"
+#~ msgstr "गाइड देखाव या लुकाव"
+
+#~ msgid "Create Template"
+#~ msgstr "टैम्पलेट बनाव"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "नाम:"
+
+#~ msgid "Group:"
+#~ msgstr "समूहः"
+
+#~ msgid "&Add Group..."
+#~ msgstr "समूह जोड़व... (&A)"
+
+#~ msgid "&Remove"
+#~ msgstr "मेटाव (&R)"
+
+#~ msgid "Picture"
+#~ msgstr "फोटू"
+
+#, fuzzy
+#~| msgid "Preview:"
+#~ msgid "&Preview"
+#~ msgstr "प्रिव्यूः"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Custom:"
+#~ msgstr "मनमाफिक"
+
+#~ msgid "&Select..."
+#~ msgstr "चुनव... (&S)"
+
+#~ msgid "Use the new template as default"
+#~ msgstr "नवा टैम्प्लेट ल डिफाल्ट के रूप मं परयोग करव"
+
+#~ msgid "Use the new template every time %1 starts"
+#~ msgstr "जब %1 चालू होही तहां हमेसा नवा टैम्प्लेट परयोग करव"
+
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr "का आप मन सही मं  अभी हाल के टैम्प्लेट '%1' ल मेटाय के लिखना चाहथो ?"
+
+#~ msgid "Add Group"
+#~ msgstr "समूह जोड़व"
+
+#~ msgid "Enter group name:"
+#~ msgstr "समूह नाम भरव:"
+
+#~ msgid "This name is already used."
+#~ msgstr "ये नाम पहिली से ही उपयोग मं हे."
+
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "का आप मन सचमुच ओ समूह ल मिटाना चाहथो ?"
+
+#~ msgid "Remove Group"
+#~ msgstr "समूह हटाव"
+
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "का आप मन सचमुच ओ टैम्प्लेट ल मिटाना चाहथो ?"
+
+#~ msgid "Remove Template"
+#~ msgstr "टैम्प्लेट मेटाव"
+
+#~ msgid "&Delete"
+#~ msgstr "मेटाव (&D)"
+
+#~ msgid "Could not load picture."
+#~ msgstr "फोटू लोड नइ कर सकिस."
+
+#~ msgid "No picture available."
+#~ msgstr "कोई फोटू नइ मिलत."
+
+#~ msgid "Use This Template"
+#~ msgstr "ये टैम्प्लेट के उपयोग करव"
+
+#~ msgid "Version"
+#~ msgstr "संस्करन"
+
+#~ msgid "Date & Time"
+#~ msgstr "तारीक अउ समय"
+
+#~ msgid "Saved By"
+#~ msgstr "द्वारा सहेजे गिस"
+
+#~ msgid "Comment"
+#~ msgstr "टिप्पनी"
+
+#~ msgid "&Add"
+#~ msgstr "जोड़व (&A)"
+
+#~ msgid "&Modify"
+#~ msgstr "सुधारव (&M)"
+
+#~ msgid "&Open"
+#~ msgstr "खोलव (&O)"
+
+#~ msgid "A new version could not be added"
+#~ msgstr "एक नवा संस्करन जोड़ा जा सकथे "
+
+#~ msgid "Date: %1"
+#~ msgstr "तारीक: %1"
+
+#, fuzzy
+#~| msgid "Active tool: %1"
+#~ msgid "Active Author Profile"
+#~ msgstr "सक्रिय औजार: %1"
+
+#~ msgid "Unknown"
+#~ msgstr "अग्यात"
+
+#~ msgid "Please enter the password to open this file."
+#~ msgstr "ए फाइल ल खोले बर किरपा करके, पासवर्ड भरव."
+
+#~ msgid "Please enter the password to encrypt the document with."
+#~ msgstr "कागद ल जेखर से एनक्रिप्ट करना हे वो पासवर्ड किरपा करके, भरव."
+
+#~ msgid "Do you want to save the password?"
+#~ msgstr "का आप मन पासवर्ड सहेजना चाहथो ?"
+
+#~ msgid "No store backend"
+#~ msgstr "कोई भंडार बैकएन्ड नइ"
+
+#~ msgid ""
+#~ "Parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "मुख्य कागद के लकीर %1 , खंभा %2 मं पारसिंग गलती\n"
+#~ "गलती संदेस: %3"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "स्क्रीन"
+
+#~ msgid "The directory mode is not supported for remote locations."
+#~ msgstr "रिमोट जगह बर डिरेक्टरी मोड समर्थित नइ हे."
+
+#~ msgid "Clear"
+#~ msgstr "साफ करव"
+
+#~ msgid "Subtract"
+#~ msgstr "घटाव"
+
+#~ msgid "Alpha mask"
+#~ msgstr "अल्फा मास्क"
+
+#~ msgid "Alpha"
+#~ msgstr "अल्फा"
+
+#, fuzzy
+#~| msgid "L*a*b* (16-bit integer/channel)"
+#~ msgid "L*a*b* (16-bit integer/channel, unmanaged)"
+#~ msgstr "L*a*b* (16-बिट इंटीजर/चैनल)"
+
+#~ msgid "Lightness"
+#~ msgstr "उजालापन"
+
+#~ msgid "a*"
+#~ msgstr "a*"
+
+#~ msgid "b*"
+#~ msgstr "b*"
+
+#, fuzzy
+#~ msgid "RGB (16-bit integer/channel, unmanaged)"
+#~ msgstr "आरजीबी 16-बिट इंटीजर/चैनल)"
+
+#, fuzzy
+#~ msgid "RGB (8-bit integer/channel, unmanaged)"
+#~ msgstr "आरजीबी 8-बिट इंटीजर/चैनल)"
+
+#~ msgid "Blue"
+#~ msgstr "नीला"
+
+#~ msgid "Green"
+#~ msgstr "हरा"
+
+#~ msgid "Red"
+#~ msgstr "लाल"
+
+#, fuzzy
+#~| msgid "Alpha mask"
+#~ msgid "Alpha darken"
+#~ msgstr "अल्फा मास्क"
+
+#~ msgid "Erase"
+#~ msgstr "मेटाव"
+
+#~ msgid "Normal"
+#~ msgstr "सामान्य"
+
+#, fuzzy
+#~| msgid "&Height:"
+#~ msgid "Hard Mix"
+#~ msgstr "ऊंचाईः (&H)"
+
+#, fuzzy
+#~| msgid "Variable"
+#~ msgid "Parallel"
+#~ msgstr "परिवर्तनीय"
+
+#, fuzzy
+#~| msgid "Color Chooser"
+#~ msgid "Color Dodge"
+#~ msgstr "रंग चुनइया"
+
+#, fuzzy
+#~| msgid "Line Border"
+#~ msgid "Linear Dodge"
+#~ msgstr "लकीर चौड़ाई"
+
+#~ msgid "Lighten"
+#~ msgstr "हल्का करव"
+
+#, fuzzy
+#~| msgid "&Height:"
+#~ msgid "Hard Light"
+#~ msgstr "ऊंचाईः (&H)"
+
+#, fuzzy
+#~| msgid "Straight"
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "सीधा"
+
+#, fuzzy
+#~| msgid "Straight"
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "सीधा"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Gamma Light"
+#~ msgstr "हल्का करव"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Vivid Light"
+#~ msgstr "हल्का करव"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Pin Light"
+#~ msgstr "हल्का करव"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Linear Light"
+#~ msgstr "हल्का करव"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color Burn"
+#~ msgstr "रंग"
+
+#, fuzzy
+#~| msgid "Line Border"
+#~ msgid "Linear Burn"
+#~ msgstr "लकीर चौड़ाई"
+
+#~ msgid "Darken"
+#~ msgstr "गहरा करव"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgid "Addition"
+#~ msgstr "स्थिति"
+
+#, fuzzy
+#~| msgid "Subtract"
+#~ msgid "Inversed-Subtract"
+#~ msgstr "घटाव"
+
+#, fuzzy
+#~| msgid "Text Reference"
+#~ msgid "Difference"
+#~ msgstr "पाठ संदर्भ"
+
+#, fuzzy
+#~| msgid "Substract"
+#~ msgid "Additive-Subtractive"
+#~ msgstr "घटाव"
+
+#, fuzzy
+#~| msgid "Copy Page"
+#~ msgid "Copy Red"
+#~ msgstr "पेज नकल करव"
+
+#, fuzzy
+#~| msgid "Green"
+#~ msgid "Copy Green"
+#~ msgstr "हरा"
+
+#, fuzzy
+#~| msgid "Copy Page"
+#~ msgid "Copy Blue"
+#~ msgstr "पेज नकल करव"
+
+#~ msgid "Color"
+#~ msgstr "रंग"
+
+#~ msgid "Hue"
+#~ msgstr "वर्न"
+
+#~ msgid "Saturation"
+#~ msgstr "संतृप्ति"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation"
+#~ msgstr "संतृप्ति"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation"
+#~ msgstr "संतृप्ति"
+
+#, fuzzy
+#~| msgid "Increase font size"
+#~ msgid "Increase Luminosity"
+#~ msgstr "फोंट आकार बढ़ाव"
+
+#, fuzzy
+#~| msgid "Decrease font size"
+#~ msgid "Decrease Luminosity"
+#~ msgstr "फोंट आकार घटाव"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Darker Color"
+#~ msgstr "पिछोत अंगना सेट करव"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Lighter Color"
+#~ msgstr "रंग"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color HSI"
+#~ msgstr "रंग"
+
+#, fuzzy
+#~| msgid "Hue"
+#~ msgid "Hue HSI"
+#~ msgstr "वर्न"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Saturation HSI"
+#~ msgstr "संतृप्ति"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation HSI"
+#~ msgstr "संतृप्ति"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation HSI"
+#~ msgstr "संतृप्ति"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgid "Increase Intensity"
+#~ msgstr "हासिया बढ़ाव"
+
+#, fuzzy
+#~| msgid "Decrease Indent"
+#~ msgid "Decrease Intensity"
+#~ msgstr "हासिया घटाव"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color HSL"
+#~ msgstr "रंग"
+
+#, fuzzy
+#~| msgid "Hue"
+#~ msgid "Hue HSL"
+#~ msgstr "वर्न"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Saturation HSL"
+#~ msgstr "संतृप्ति"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation HSL"
+#~ msgstr "संतृप्ति"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation HSL"
+#~ msgstr "संतृप्ति"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgid "Increase Lightness"
+#~ msgstr "हासिया बढ़ाव"
+
+#, fuzzy
+#~| msgid "Decrease Indent"
+#~ msgid "Decrease Lightness"
+#~ msgstr "हासिया घटाव"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color HSV"
+#~ msgstr "रंग"
+
+#, fuzzy
+#~| msgid "Hue"
+#~ msgid "Hue HSV"
+#~ msgstr "वर्न"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Saturation HSV"
+#~ msgstr "संतृप्ति"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation HSV"
+#~ msgstr "संतृप्ति"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation HSV"
+#~ msgstr "संतृप्ति"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgid "Increase Value"
+#~ msgstr "हासिया बढ़ाव"
+
+#, fuzzy
+#~| msgid "Decrease Indent"
+#~ msgid "Decrease Value"
+#~ msgstr "हासिया घटाव"
+
+#~ msgid "Generic RGB Histogram"
+#~ msgstr "जेनेरिक आरजीबी हिस्टोग्राम"
+
+#~ msgid "R"
+#~ msgstr "आर"
+
+#~ msgid "G"
+#~ msgstr "जी"
+
+#~ msgid "L*a*b* Histogram"
+#~ msgstr "L*a*b* हिस्टोग्राम"
+
+#~ msgid "L*"
+#~ msgstr "L*"
+
+#, fuzzy
+#~| msgid "Generic RGB Histogram"
+#~ msgid "Generic L*a*b* Histogram"
+#~ msgstr "जेनेरिक आरजीबी हिस्टोग्राम"
+
+#~ msgid "XYZ"
+#~ msgstr "एक्सवाईजेड"
+
+#~ msgid "Grayscale"
+#~ msgstr "काला-सफेद"
+
+#~ msgid "Grayscale (without transparency)"
+#~ msgstr "काला सफेद (पारदर्सिता के बिना)"
+
+#~ msgid "YCbCr"
+#~ msgstr "YCbCr"
+
+#~ msgid "8 Bits"
+#~ msgstr "८ बिट्स"
+
+#~ msgid "16 Bits"
+#~ msgstr "16 बिट्स"
+
+#, fuzzy
+#~| msgid "16 Bits Float (HDR)"
+#~ msgid "16 Bits Float"
+#~ msgstr "16 बिट्स फ्लोट (एचडीआर)"
+
+#, fuzzy
+#~| msgid "32 Bits Float (HDR)"
+#~ msgid "32 Bits Float"
+#~ msgstr "३२ बिट्स फ्लोट (एचडीआर)"
+
+#, fuzzy
+#~| msgid "16 Bits Float (HDR)"
+#~ msgid "64 Bits Float"
+#~ msgstr "16 बिट्स फ्लोट (एचडीआर)"
+
+#, fuzzy
+#~| msgid "Automatic"
+#~ msgid "Arithmetic"
+#~ msgstr "अपने अपन"
+
+#, fuzzy
+#~| msgid "Subtract"
+#~ msgid "Inverse Subtract"
+#~ msgstr "घटाव"
+
+#, fuzzy
+#~| msgid "Substract"
+#~ msgid "Additive Subtractive"
+#~ msgstr "घटाव"
+
+#, fuzzy
+#~| msgid "Alpha mask"
+#~ msgid "Alpha Darken"
+#~ msgstr "अल्फा मास्क"
+
+#, fuzzy
+#~| msgid "Select the index you want to reference"
+#~ msgid "Select the object you want to reference"
+#~ msgstr "वह निर्देसिका चुनव जेखर संदर्भ आब देना चाहथो "
+
+#, fuzzy
+#~| msgid "Text Reference"
+#~ msgid "Reference"
+#~ msgstr "पाठ संदर्भ"
+
+#, fuzzy
+#~| msgid "Red"
+#~ msgid "Rdf"
+#~ msgstr "लाल"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgid "Triples"
+#~ msgstr "सीर्सक:"
+
+#, fuzzy
+#~| msgid "Company:"
+#~ msgid "copy"
+#~ msgstr "कम्पनी:"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgid "delete"
+#~ msgstr "मेटाव"
+
+#, fuzzy
+#~| msgid "Replace"
+#~ msgid "Namespaces"
+#~ msgstr "बदलव"
+
+#, fuzzy
+#~| msgid "Replace"
+#~ msgid "Namespace"
+#~ msgstr "बदलव"
+
+#, fuzzy
+#~| msgid "Styles"
+#~ msgid "Stylesheets"
+#~ msgstr "सैली"
+
+#, fuzzy
+#~| msgid "Insert"
+#~ msgid "User"
+#~ msgstr "प्रविस्ट"
+
+#, fuzzy
+#~| msgid "Styles"
+#~ msgid "Stylesheet Definition"
+#~ msgstr "सैली"
+
+#, fuzzy
+#~| msgid "Decrypt"
+#~ msgid "Description"
+#~ msgstr "डीक्रिप्ट"
+
+#, fuzzy
+#~| msgid "Styles"
+#~ msgid "Stylesheet Name"
+#~ msgstr "सैली"
+
+#, fuzzy
+#~| msgid "Black"
+#~ msgid "Blank"
+#~ msgstr "काला"
+
+#, fuzzy
+#~| msgid "Slide"
+#~ msgid "Valid"
+#~ msgstr "स्लाइड"
+
+#, fuzzy
+#~| msgid "Subject:"
+#~ msgid "Subject"
+#~ msgstr "विसय:"
+
+#, fuzzy
+#~| msgid "Picture"
+#~ msgid "Predicate"
+#~ msgstr "फोटू"
+
+#, fuzzy
+#~| msgid "Type"
+#~ msgid "Obj Type"
+#~ msgstr "किसिम"
+
+#, fuzzy
+#~| msgid "Data"
+#~ msgid "DataType"
+#~ msgstr "डाटा"
+
+#, fuzzy
+#~| msgid "Stopped"
+#~ msgid "Stored In"
+#~ msgstr "रुक गिस"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "कुछ नइ"
+
+#, fuzzy
+#~| msgid "Right to left"
+#~ msgid "Rightwards Arrow Bullet"
+#~ msgstr "जेवनी से डेरी"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgid "Tamil"
+#~ msgstr "सीर्सक:"
+
+#, fuzzy
+#~| msgid "Tie"
+#~ msgid "Tibetan"
+#~ msgstr "टाई"
+
+#~ msgid "Opacity"
+#~ msgstr "अपार्दरसिता"
+
+#~ msgid "Recent:"
+#~ msgstr "हाले:"
+
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "रंगों ल जोड़व/मेटाव..."
+
+#~ msgid "Import Data"
+#~ msgstr "डाटा आयात करव"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Recommended ( %1 )"
+#~ msgstr "अनुसंसित (%1)"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Locale ( %1 )"
+#~ msgstr "लोकेल (%1)"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Other ( %1 )"
+#~ msgstr "अऊ दूसर (%1)"
+
+#~ msgid "Generic"
+#~ msgstr "जेनेरिक"
+
+#~ msgid "Currency"
+#~ msgstr "मुद्रा"
+
+#~ msgid "None"
+#~ msgstr "कुछ नइ"
+
+#~ msgid "Cannot find encoding: %1"
+#~ msgstr "एनकोडिंग नइ पा सकिस: %1"
+
+#~ msgid "Data"
+#~ msgstr "डाटा"
+
+#~ msgid "E&ncoding:"
+#~ msgstr "एनकोडिंग: (&n)"
+
+#~ msgid "First row contains headers"
+#~ msgstr "पहली लकीर मं सीर्सक हे."
+
+#~ msgid "First column contains headers"
+#~ msgstr "पहिली खंभा मं सीर्सक हे"
+
+#~ msgid "Format"
+#~ msgstr "फार्मेट"
+
+#~ msgid "Delimiter"
+#~ msgstr "डेलिमिटर"
+
+#~ msgid "Semicolon"
+#~ msgstr "सेमी-कालन"
+
+#~ msgid "Other"
+#~ msgstr "अन्य"
+
+#~ msgid "Tabulator"
+#~ msgstr "टेबुलेटर"
+
+#~ msgid "Space"
+#~ msgstr "खाली जगह"
+
+#~ msgid "Text&quote:"
+#~ msgstr "पाठ उदाहरन: (&q)"
+
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "Decimal symbol:"
+#~ msgstr "दसमलव चिनहाः"
+
+#~ msgid "Thousands separator:"
+#~ msgstr "हजार अलगइयाः"
+
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "अनुकृति डेलिमीटर ल अनदेखा करव"
+
+#~ msgid "&Format:"
+#~ msgstr "फार्मेट: (&F)"
+
+#~ msgid "Ranges"
+#~ msgstr "सीमा"
+
+#~ msgid "Update"
+#~ msgstr "अपडेट"
+
+#~ msgid "Import columns:"
+#~ msgstr "खंभा आयात करव:"
+
+#~ msgid "Import lines:"
+#~ msgstr "लकीरें आयात करव:"
+
+#~ msgid "to"
+#~ msgstr "को"
+
+#, fuzzy
+#~| msgid "Dockers"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Float Docker"
+#~ msgstr "डाकर्स"
+
+#, fuzzy
+#~| msgid "Custom Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "मनमाफिक कागद"
+
+#, fuzzy
+#~| msgid "Custom Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "मनमाफिक कागद"
+
+#, fuzzy
+#~| msgid "Dockers"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Lock Docker"
+#~ msgstr "डाकर्स"
+
+#~ msgid "&Encrypt"
+#~ msgstr "एनक्रिप्ट (&E)"
+
+#~ msgid "Keywords:"
+#~ msgstr "की-वर्डस:"
+
+#~ msgid "Subject:"
+#~ msgstr "विसय:"
+
+#~ msgid "Last printed:"
+#~ msgstr "आखरी बार मुद्रित:"
+
+#~ msgid "Total editing time:"
+#~ msgstr "कुल संपादन समय:"
+
+#~ msgid "Encryption:"
+#~ msgstr "एनक्रिप्सनः"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "सीर्सक:"
+
+#~ msgid "Revision number:"
+#~ msgstr "संसोधन संख्या:"
+
+#~ msgid "Modified:"
+#~ msgstr "परिवर्धितः"
+
+#~ msgid "Comments:"
+#~ msgstr "टिप्पनियाँ:"
+
+#~ msgid "Created:"
+#~ msgstr "सृजितः"
+
+#~ msgid "Path:"
+#~ msgstr "पथः"
+
+#~ msgid "&Reset"
+#~ msgstr "रीसेट (&R)"
+
+#, fuzzy
+#~| msgid "Paste Page"
+#~| msgid_plural "Paste Pages"
+#~ msgid "Language:"
+#~ msgstr "पेज चिपकाव"
+
+#~ msgid "General"
+#~ msgstr "सामान्य"
+
+#, fuzzy
+#~| msgid "Paste Page"
+#~| msgid_plural "Paste Pages"
+#~ msgid "Last saved by"
+#~ msgstr "पेज चिपकाव"
+
+#, fuzzy
+#~| msgid "Use ';' (Example: Office;KDE;KOffice)"
+#~ msgid "Use ';' (Example: Office;KDE;Calligra)"
+#~ msgstr "परयोग ';' (उदाहरन: Office;KDE;KOffice)"
+
+#~ msgid "This document will be decrypted"
+#~ msgstr "ये कागद डीक्रिप्ट करे जाही"
+
+#~ msgid "Do not decrypt"
+#~ msgstr "डीक्रिप्ट नइ करव"
+
+#~ msgid "This document is encrypted"
+#~ msgstr "ये कागद एनक्रिप्टेड हे"
+
+#~ msgid "D&ecrypt"
+#~ msgstr "डीक्रिप्ट (&e)"
+
+#~ msgid "This document will be encrypted."
+#~ msgstr "ये कागद एनक्रिप्टेड हे."
+
+#~ msgid "Do not encrypt"
+#~ msgstr "एनक्रिप्ट नइ करव"
+
+#~ msgid "This document is not encrypted"
+#~ msgstr "ये कागद एनक्रिप्टेड नइ हे."
+
+#, fuzzy
+#~| msgid "This document is not encrypted"
+#~ msgid "This document does not support encryption"
+#~ msgstr "ये कागद एनक्रिप्टेड नइ हे."
+
+#~ msgid "Confirm Decrypt"
+#~ msgstr "डीक्रिप्ट के पुस्टि करव"
+
+#~ msgid "Decrypt"
+#~ msgstr "डीक्रिप्ट"
+
+#~ msgid "Save Document"
+#~ msgstr "कागद सहेजव"
+
+#~ msgid "Change Filetype"
+#~ msgstr "फाइल किसिम बदलव"
+
+#~ msgid "Change"
+#~ msgstr "बदलव"
+
+#~ msgid "Remove"
+#~ msgstr "हटाव"
+
+#~ msgid "Open palette"
+#~ msgstr "रंगपट्टिका खोलव"
+
+#~ msgid "Save palette"
+#~ msgstr "रंगपट्टिका सहेजव"
+
+#~ msgid "Add Color To Palette"
+#~ msgstr "रंगपट्टिका मं रंग जोड़व"
+
+#~ msgid "Color name:"
+#~ msgstr "रंग नामः"
+
+#, fuzzy
+#~| msgid "Add Color To Palette"
+#~ msgid "Gimp Color Palette (*.gpl)"
+#~ msgstr "रंगपट्टिका मं रंग जोड़व"
+
+#~ msgid "Cannot write to palette file %1. Maybe it is read-only. "
+#~ msgstr "रंगपट्टिका फाइल %1 मं लिख नइ सकिस. सायद ए सिरिफ पढ़े जइसन हे."
+
+#~ msgid "Palette"
+#~ msgstr "रंगदानी"
+
+#~ msgid "Add/Remove Colors"
+#~ msgstr "रंगों ल जोड़व/मेटाव"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Testing: OpenFile"
+#~ msgstr "रंगपट्टिका खोलव"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFile"
+#~ msgstr "गुमा आयात फिल्टर"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "गुमा आयात फिल्टर"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: Import Directory"
+#~ msgstr "कागद आयात करव"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Testing: SaveFile"
+#~ msgstr "रंगपट्टिका सहेजव"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Open File"
+#~ msgstr "रंगपट्टिका खोलव"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Open Files"
+#~ msgstr "रंगपट्टिका खोलव"
+
+#, fuzzy
+#~| msgid "Choose Filter"
+#~ msgid "Filter:"
+#~ msgstr "फिल्टर चुनव"
+
+#, fuzzy
+#~| msgid "TextLabel1:"
+#~ msgid "TextLabel"
+#~ msgstr "पाठ-सीर्सक1:"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "Named"
+#~ msgstr "नाम:"
+
+#, fuzzy
+#~| msgid "Set default format"
+#~ msgid "Set default filter"
+#~ msgstr "डिफाल्ट फारमेट सेट करव"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Save File"
+#~ msgstr "रंगपट्टिका सहेजव"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Import Files"
+#~ msgstr "लकीरें आयात करव:"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Import File"
+#~ msgstr "लकीरें आयात करव:"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Directory"
+#~ msgstr "कागद आयात करव"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "कुछ नइ"
+
+#, fuzzy
+#~| msgid "Change master slide"
+#~ msgid "Change the filling gradient"
+#~ msgstr "मास्टर स्लाइड बदलव"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Icon and Text"
+#~ msgstr "पाठ"
+
+#, fuzzy
+#~| msgid "Bottom:"
+#~ msgid "Bottom side"
+#~ msgstr "निचला:"
+
+#, fuzzy
+#~| msgid "Left indent"
+#~ msgid "Left side"
+#~ msgstr "डेरी हासिया"
+
+#, fuzzy
+#~| msgid "Right indent"
+#~ msgid "Right side"
+#~ msgstr "जेवनी हासिया"
+
+#~ msgid "Page Layout"
+#~ msgstr "पेज ले-आउट"
+
+#~ msgid "Apply to document"
+#~ msgstr "कागद मं लगाव"
+
+#~ msgid "Left Edge:"
+#~ msgstr "डेरी किनारा:"
+
+#~ msgid "Right Edge:"
+#~ msgstr "जेवनी किनारा:"
+
+#~ msgid "Binding Edge:"
+#~ msgstr "बाइंडिंग किनारा:"
+
+#~ msgid "Page Edge:"
+#~ msgstr "पेज किनारा:"
+
+#~ msgid "Facing Pages:"
+#~ msgstr "आमने-सामने के पेज:"
+
+#~ msgid "Facing pages"
+#~ msgstr "आमने-सामने के पेज"
+
+#~ msgid "Page Layout:"
+#~ msgstr "पेज ले-आउट:"
+
+#~ msgid "Page spread"
+#~ msgstr "पेज स्प्रेड"
+
+#~ msgid "Unit:"
+#~ msgstr "इकाईः"
+
+#~ msgid "Size:"
+#~ msgstr "आकारः"
+
+#~ msgid "Width:"
+#~ msgstr "चौड़ाईः"
+
+#~ msgid "Height:"
+#~ msgstr "ऊँचाईः"
+
+#~ msgid "Orientation:"
+#~ msgstr "दिसा:"
+
+#~ msgid "Facing pages:"
+#~ msgstr "आमने-सामने के पेज:"
+
+#~ msgid "Single sided"
+#~ msgstr "एक साइड वाले"
+
+#~ msgid "Text direction:"
+#~ msgstr "पाठ दिसा:"
+
+#~ msgid "Automatic"
+#~ msgstr "अपने अपन"
+
+#~ msgid "Left to right"
+#~ msgstr "डेरी से जेवनी"
+
+#~ msgid "Right to left"
+#~ msgstr "जेवनी से डेरी"
+
+#~ msgid "Margins"
+#~ msgstr "हासिए"
+
+#~ msgid "Top:"
+#~ msgstr "सीर्स:"
+
+#~ msgid "Binding edge:"
+#~ msgstr "बाइंडिंग किनारा:"
+
+#~ msgid "Page edge:"
+#~ msgstr "पेज किनारा:"
+
+#~ msgid "Bottom:"
+#~ msgstr "निचला:"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "कागद आयात करव"
+
+#, fuzzy
+#~| msgid "Download"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "डाउनलोड"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "मेटाव"
+
+#, fuzzy
+#~| msgid "Choose Filter"
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "फिल्टर चुनव"
+
+#, fuzzy
+#~| msgid "New Layer"
+#~ msgid "New tag"
+#~ msgstr "नवा परत"
+
+#, fuzzy
+#~| msgid "Remove point"
+#~ msgid "Remove from this tag"
+#~ msgstr "बिन्दु मेटाव"
+
+#, fuzzy
+#~| msgid "Merge points"
+#~ msgid "Miter join"
+#~ msgstr "बिन्दु ल मिलाव"
+
+#, fuzzy
+#~| msgid "Remove point"
+#~ msgid "Bevel join"
+#~ msgstr "बिन्दु मेटाव"
+
+#, fuzzy
+#~| msgid "Merge points"
+#~ msgid "Miter limit"
+#~ msgstr "बिन्दु ल मिलाव"
+
+#, fuzzy
+#~| msgid "Move page"
+#~ msgid "Rename tag"
+#~ msgstr "पेज खिसकाव"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Delete this tag"
+#~ msgstr "पेज मेटाव"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgid "Undelete"
+#~ msgstr "मेटाव"
+
+#~ msgid "Tool Options"
+#~ msgstr "औजार विकल्प"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "deselect item"
+#~ msgstr "अक्छर चुनव"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "select item"
+#~ msgstr "अक्छर चुनव"
+
+#~ msgid "Use same aspect as pixels"
+#~ msgstr "पिक्सेल जइसन ही आस्पेक्ट परयोग करव"
+
+#~ msgid "Zoom to All"
+#~ msgstr "सब्बो जूम करव"
+
+#, fuzzy
+#~| msgid "%1%"
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1%"
+
+#, fuzzy
+#~| msgid "Automatic"
+#~ msgctxt "Static Image"
+#~ msgid "Static"
+#~ msgstr "अपने अपन"
+
+#~ msgid "Value (brightness)"
+#~ msgstr "मूल्य (चमकीलापन)"
+
+#~ msgid "Cyan"
+#~ msgstr "क्यान"
+
+#~ msgid "Magenta"
+#~ msgstr "मजेंटा"
+
+#~ msgid "Yellow"
+#~ msgstr "पीला"
+
+#~ msgid "Black"
+#~ msgstr "काला"
+
+#~ msgid "Green to magenta*"
+#~ msgstr "हरा से मजेंटा*"
+
+#~ msgid "Blue to yellow"
+#~ msgstr "नीले से पीला"
+
+#~ msgid "Opacity:"
+#~ msgstr "अपारदर्सिता:"
+
+#, fuzzy
+#~| msgid "Default"
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "डिफाल्ट"
+
+#, fuzzy
+#~| msgid "Snap Guides"
+#~ msgid "Configuration..."
+#~ msgstr "गाइडें स्नेप करव"
+
+#, fuzzy
+#~ msgid "&Tools"
+#~ msgstr "पेन औजार"
+
+#~ msgid ""
+#~ "The manifest file seems to be corrupted. The document could not be opened."
+#~ msgstr "लगथे  कि मेनिफेस्ट फाइल खराब हो गे हे. कागद ल  खोले नइ जा सकिस."
+
+#, fuzzy
+#~| msgid "Collection"
+#~ msgid "Color Selector"
+#~ msgstr "संग्रह"
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Database file \"%1\" does not exist."
+#~ msgstr "फाइल %1 अस्तित्व मं नइ हे."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist in the database."
+#~ msgstr "फाइल %1 अस्तित्व मं नइ हे."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not compact database \"%1\"."
+#~ msgstr "पैकेज \"%1\" ल पढ़ नइ सकिस."
+
+#, fuzzy
+#~| msgid "Do you want to save the password?"
+#~ msgid "Do you want to open file \"%1\" as read-only?"
+#~ msgstr "का आप मन पासवर्ड सहेजना चाहथो ?"
+
+#, fuzzy
+#~| msgid "Could not read the beginning of the file."
+#~ msgid "Could not gain exclusive access for writing the file."
+#~ msgstr "फाइल के चालू पढ़ नइ सकिस."
+
+#, fuzzy
+#~| msgid "Could not load picture."
+#~ msgid "Could not close busy database."
+#~ msgstr "फोटू लोड नइ कर सकिस."
+
+#, fuzzy
+#~| msgid "Could not export file."
+#~ msgid "Could not remove file \"%1\"."
+#~ msgstr "फाइल निर्यात नइ कर सकिस."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist"
+#~ msgstr "फाइल %1 अस्तित्व मं नइ हे."
+
+#, fuzzy
+#~ msgid "Grid Snap"
+#~ msgstr "ग्रिड देखाव (&G)"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Formatting"
+#~ msgstr "फार्मेट"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: OpenDirectories"
+#~ msgstr "कागद आयात करव"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: ImportDirectories"
+#~ msgstr "कागद आयात करव"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Testing: SaveFiles"
+#~ msgstr "रंगपट्टिका सहेजव"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Directories"
+#~ msgstr "कागद आयात करव"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Save Files"
+#~ msgstr "रंगपट्टिका सहेजव"
+
+#~ msgid "Create Path"
+#~ msgstr "पथ तैयार करव"
+
+#~ msgid "Red Green Blue"
+#~ msgstr "लाल हरियर नीला"
+
+#~ msgid "L a* b*"
+#~ msgstr "L a* b*"
+
+#~ msgid "Cyan Magenta Yellow Black"
+#~ msgstr "क्यान मजेंटा पीला काला"
+
+#~ msgid "Error!"
+#~ msgstr "गलती!"
+
+#, fuzzy
+#~| msgid "Actions"
+#~ msgid "Locations"
+#~ msgstr "काम"
+
+#, fuzzy
+#~| msgid "Version"
+#~ msgid "Region"
+#~ msgstr "संस्करन"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not save\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not add entry\n"
+#~ "%1"
+#~ msgstr ""
+#~ "सहेज नइ सकिस\n"
+#~ " %1"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not save\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not save iCal file\n"
+#~ "%1"
+#~ msgstr ""
+#~ "सहेज नइ सकिस\n"
+#~ " %1"
+
+#, fuzzy
+#~| msgid "Collection"
+#~ msgid "&Location:"
+#~ msgstr "संग्रह"
+
+#, fuzzy
+#~| msgid "Street:"
+#~ msgid "&Start:"
+#~ msgstr "सड़कः"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Timezone"
+#~ msgstr "समय:"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "&Name:"
+#~ msgstr "नाम:"
+
+#, fuzzy
+#~| msgid "Number:"
+#~ msgid "&Phone Number:"
+#~ msgstr "संख्या:"
+
+#, fuzzy
+#~| msgid "Move page"
+#~ msgid "&Home Page:"
+#~ msgstr "पेज खिसकाव"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Contact Information"
+#~ msgstr "कागद जानकारी"
+
+#, fuzzy
+#~| msgid "Import Data"
+#~ msgid "Import contact"
+#~ msgstr "डाटा आयात करव"
+
+#, fuzzy
+#~| msgid "Export as PDF..."
+#~ msgid "Export as vcard..."
+#~ msgstr "पीडीएफ मं निर्यात करव..."
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "&Name"
+#~ msgstr "नाम:"
+
+#, fuzzy
+#~| msgid "To Path"
+#~ msgid "The Earth"
+#~ msgstr "पथ पर"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Location Information"
+#~ msgstr "कागद जानकारी"
+
+#, fuzzy
+#~| msgid "Replace"
+#~ msgid "People"
+#~ msgstr "बदलव"
+
+#~ msgid ""
+#~ "A document with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "ये नाम के फाइल पहिली से ही मौजूद हे. \n"
+#~ "का आप मन एखर ऊपर लिखना चाहथो ?"
+
+#, fuzzy
+#~| msgid "Unknown KOffice MimeType %1. Check your installation."
+#~ msgid "Unknown Calligra MimeType %1. Check your installation."
+#~ msgstr "अग्यात के-आफिस माइम किसिम %1, अपन इंस्टालेसन जांचव."
+
+#~ msgid "%1 (Uncompressed XML Files)"
+#~ msgstr "%1 (अ-संपीडित एक्सएमएल फाइल मन ल)"
+
+#~ msgid "%1 (Flat XML File)"
+#~ msgstr "%1 (सपाट एक्सएमएल फाइल)"
+
+#~ msgid "%1 (Encrypted)"
+#~ msgstr "%1 (एनक्रिप्टेड)"
+
+#~ msgid "%1 (%2 Compatible)"
+#~ msgstr "%1 (%2 कम्पेटिबल)"
+
+#~ msgid "Save Document As"
+#~ msgstr "कागद अइसन सहेजव"
+
+#~ msgid "Export Document As"
+#~ msgstr "कागद निर्यात अइसनइ करव"
+
+#, fuzzy
+#~| msgid "Export as PDF..."
+#~ msgid "Export to PDF"
+#~ msgstr "पीडीएफ मं निर्यात करव..."
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Slide Background"
+#~ msgstr "पिछोत अंगना सेट करव"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Document background"
+#~ msgstr "पिछोत अंगना सेट करव"
+
+#, fuzzy
+#~| msgid "Change"
+#~ msgid "&Cancel"
+#~ msgstr "बदलव"
+
+#, fuzzy
+#~| msgid "Fit Page"
+#~ msgid "First Page"
+#~ msgstr "पेज मं जमाव"
+
+#, fuzzy
+#~| msgid "Copy Page"
+#~ msgid "Even Pages(s)"
+#~ msgstr "पेज नकल करव"
+
+#, fuzzy
+#~| msgid "Copy Page"
+#~ msgid "Any Pages(s)"
+#~ msgstr "पेज नकल करव"
+
+#, fuzzy
+#~| msgid "Add..."
+#~ msgid "&Edit"
+#~ msgstr "जोड़व..."
+
+#, fuzzy
+#~| msgid "Close"
+#~ msgid "&Close"
+#~ msgstr "बंद करव"
+
+#~ msgid "Snapping"
+#~ msgstr "स्नेपिंग"
+
+#, fuzzy
+#~| msgid "Nodes"
+#~ msgid "Dodge"
+#~ msgstr "नोड्स"
+
+#, fuzzy
+#~| msgid "&Height:"
+#~ msgid "Hard light"
+#~ msgstr "ऊंचाईः (&H)"
+
+#, fuzzy
+#~| msgid "Straight"
+#~ msgid "Soft light"
+#~ msgstr "सीधा"
+
+#~ msgid "Show Shadow"
+#~ msgstr "छइंहा देखाव"
+
+#, fuzzy
+#~| msgctxt "Underline Style"
+#~| msgid "Single"
+#~ msgid "Angle:"
+#~ msgstr "एकल"
+
+#, fuzzy
+#~| msgid "Shadow Offset:"
+#~ msgid "Offset:"
+#~ msgstr "छइंहा आफसेट:"
+
+#, fuzzy
+#~| msgid "&Color:"
+#~ msgid "Color:"
+#~ msgstr "रंग: (&C)"
+
+#, fuzzy
+#~| msgid "&Style:"
+#~ msgid "Style:"
+#~ msgstr "सैली: (&S)"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bookmark"
+#~ msgstr "ब्रेक भरव"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgid "Insert Table"
+#~ msgstr "पेज भरव"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgid "Insert Row Above"
+#~ msgstr "पेज भरव"
+
+#, fuzzy
+#~| msgid "Insert point"
+#~ msgid "Insert Column Left"
+#~ msgstr "बिंदु भरव नइ करव"
+
+#, fuzzy
+#~| msgid "Insert point"
+#~ msgid "Insert Column Right"
+#~ msgstr "बिंदु भरव नइ करव"
+
+#, fuzzy
+#~ msgid "Delete Column"
+#~ msgstr "स्लाइड मेटाव"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgid "Delete Row"
+#~ msgstr "मेटाव"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "पेज भरव"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgid "Insert Bibliography"
+#~ msgstr "ब्रेक भरव"
+
+#~ msgid "DetailsPaneBase"
+#~ msgstr "डिटेल्सपैनबेस"
+
+#~ msgid "Embedding Object"
+#~ msgstr "चीज सम्मिलित करना"
+
+#~ msgid "I&mport..."
+#~ msgstr "आयात... (&m)"
+
+#~ msgid "&Default"
+#~ msgstr "डिफाल्ट (&D)"
+
+#~ msgid "Background Tool"
+#~ msgstr "पिछोत अंगना औजार"
+
+#~ msgid "Background editing tool"
+#~ msgstr "पिछोत अंगना संपादन औजार"
+
+#~ msgid "Use master background"
+#~ msgstr "मास्टर पिछोत अंगना उपयोग करव"
+
+#, fuzzy
+#~| msgid "Separate paths"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Separate paths"
+#~ msgstr "अलग पथ"
+
+#~ msgid ""
+#~ "An autosaved file for an unnamed document exists in %1.\n"
+#~ "This file is dated %2\n"
+#~ "Do you want to open it?"
+#~ msgstr ""
+#~ "एक अनाम कागद बर एक अपने अपन सहेजी गे फाइल %1 मं मौजूद हे.\n"
+#~ "ए फाइल के तारीक हे %2\n"
+#~ "का आप मन एला खोलना चाहू?"
+
+#~ msgid "&Delete Personal Data"
+#~ msgstr "निजी डाटा मेटाव (&D)"
+
+#, fuzzy
+#~| msgid "Delete shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shapes"
+#~ msgstr "आकारों ल मेटाव"
+
+#, fuzzy
+#~| msgid "Subtract"
+#~ msgid "Substract"
+#~ msgstr "घटाव"
+
+#, fuzzy
+#~| msgid "Subtract"
+#~ msgid "Inverse Substract"
+#~ msgstr "घटाव"
+
+#~ msgid "Hide colors with bad contrast"
+#~ msgstr "खराब कंट्रास्ट सहित रंग ल लुकाव"
+
+#~ msgid "&Load From Address Book"
+#~ msgstr "पता पुस्तिका से लोड करव (&L)"
+
+#~ msgid "Shadow Angle:"
+#~ msgstr "कोन दिखाव:"
+
+#~ msgid "Shadow Color:"
+#~ msgstr "छइंहा रंग:"
+
+#, fuzzy
+#~| msgid "Set border"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set border"
+#~ msgstr "किनारा सेट करव"
+
+#~ msgid "Ellipse Shape"
+#~ msgstr "दीर्घवक्र आकार"
+
+#~ msgid "Set Horizontal Alignment"
+#~ msgstr "आड़ी जमावट सेट करव"
+
+#, fuzzy
+#~| msgid "Line Border"
+#~ msgid "Line Break"
+#~ msgstr "लकीर चौड़ाई"
+
+#, fuzzy
+#~ msgid "Hide Grid"
+#~ msgstr "गाइड लुकाव"
+
+#~ msgid "Hide Guides"
+#~ msgstr "गाइड लुकाव"
+
+#~ msgid "&Close All Views"
+#~ msgstr "सब्बो दृस्य बंद करव (&C)"
+
+#~ msgid "&Split View"
+#~ msgstr "दृस्य विभाजित करव (&S)"
+
+#~ msgid "&Remove View"
+#~ msgstr "दृस्य मेटाव (&R)"
+
+#~ msgid "Splitter &Orientation"
+#~ msgstr "विभाजक के दिसा (&O)"
+
+#~ msgid "&Horizontal"
+#~ msgstr "आड़ा (&H)"
+
+#~ msgid "&Vertical"
+#~ msgstr "खड़ा (&V)"
+
+#~ msgid "Printing page %1"
+#~ msgstr "पेज %1 ल छापत हे"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Form"
+#~ msgstr "फार्मेट"
+
+#~ msgid "Import"
+#~ msgstr "आयात"
+
+#, fuzzy
+#~| msgid "Shape"
+#~ msgid "Share"
+#~ msgstr "रूप"
+
+#, fuzzy
+#~| msgid "Alpha"
+#~ msgid "Copy Opacy"
+#~ msgstr "अल्फा"
+
+#, fuzzy
+#~| msgid "Alpha"
+#~ msgid "Copy Alpha"
+#~ msgstr "अल्फा"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Light"
+#~ msgstr "हल्का करव"
+
+#~ msgid "Write PDF"
+#~ msgstr "पीडीएफ लिखव"
+
+#, fuzzy
+#~| msgid "Dockers"
+#~ msgid "Hide Dockers"
+#~ msgstr "डाकर्स"
+
+#, fuzzy
+#~| msgid "Stop"
+#~ msgid "Atop"
+#~ msgstr "रुकव"
+
+#~ msgid "KOffice"
+#~ msgstr "के-आफिस"
+
+#~ msgid "KOffice Storage"
+#~ msgstr "के-आफिस भंडारन"
+
+#~ msgid "CCSGraph"
+#~ msgstr "सीसीएसग्राफ"
+
+#~ msgid "(c) 2007 Cyrille Berger"
+#~ msgstr "(c) 2007 सिरिल बर्जर"
+
+#~ msgid "return the list of available graphs"
+#~ msgstr "मिलत ग्राफ के सूची लौटाथे "
+
+#~ msgid ""
+#~ "specify the type of graph (see --graphs to get the full list, the default "
+#~ "is full)"
+#~ msgstr ""
+#~ "ग्राफ के किसिम निरधारित करव (पूरी सूची प्राप्त करे बर देखव --graphs, डिफाल्ट मं पूरा "
+#~ "रहथे )"
+
+#~ msgid "specify the output (can be ps or dot, the default is ps)"
+#~ msgstr "आउटपुट निरधारित करव (ये पीएस या डाट हो सकथे , डिफाल्ट पीएस हे)"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Barcode"
+#~ msgstr "फार्मेट"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Barcode Format"
+#~ msgstr "फार्मेट"
+
+#, fuzzy
+#~| msgid "a chart"
+#~ msgid "Chart"
+#~ msgstr "चार्ट"
+
+#, fuzzy
+#~| msgid "Set point type"
+#~ msgid "Field Font"
+#~ msgstr "बिन्दु किसिम सेट करव"
+
+#, fuzzy
+#~| msgid "Tie"
+#~ msgid "Pie"
+#~ msgstr "टाई"
+
+#, fuzzy
+#~| msgid "Version"
+#~ msgid "Ring"
+#~ msgstr "संस्करन"
+
+#, fuzzy
+#~| msgid "Clear"
+#~ msgid "Polar"
+#~ msgstr "साफ करव"
+
+#, fuzzy
+#~| msgid "Data"
+#~ msgid "Chart Type"
+#~ msgstr "डाटा"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgid "Stacked"
+#~ msgstr "खाली जगह"
+
+#, fuzzy
+#~| msgid "Recent:"
+#~ msgid "Percent"
+#~ msgstr "हाले:"
+
+#, fuzzy
+#~| msgid "Color name:"
+#~ msgid "Color Scheme"
+#~ msgstr "रंग नामः"
+
+#, fuzzy
+#~| msgid "Untitled"
+#~ msgid "Antialiased"
+#~ msgstr "बिना सीर्सक"
+
+#, fuzzy
+#~| msgid "Display page background"
+#~ msgid "Display Legend"
+#~ msgstr "पेज पिछोत अंगना देखाव"
+
+#~ msgid "QXml"
+#~ msgstr "क्यूएक्सएमएल"
+
+#~ msgid "Zoom Tool"
+#~ msgstr "जूम औजार"
+
+#~ msgid "Pan Tool"
+#~ msgstr "पेन औजार"
+
+#~ msgid "Path tool"
+#~ msgstr "पथ औजार"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Out"
+#~ msgstr "मनमाफिक"
+
+#~ msgid "ICC Engine"
+#~ msgstr "आईसीसी इंजिन"
+
+#~ msgid "RGB8 Histogram"
+#~ msgstr "आरजीबी ८ हिस्टोग्राम"
+
+#~ msgid "Insert Linebreak"
+#~ msgstr "पंक्ति-ब्रेक भरव"
+
+#~ msgid "&Insert"
+#~ msgstr "प्रविस्ट (&I)"
+
+#~ msgid "Insert the selected character in the text"
+#~ msgstr "पाठ मं चुने गे अक्छर भरव"
+
+#~ msgid "Resize Panel Forward"
+#~ msgstr "पैनल ल आगू नवा आकार देव"
+
+#~ msgid "Resize Panel Reverse"
+#~ msgstr "पैनल ल पीछू नवा आकार देव"
+
+#~ msgid "Access Keys"
+#~ msgstr "पहुंच कुंजियां"
+
+#~ msgid "Enable word completion"
+#~ msgstr "सब्द पूरा सक्छम करव"
+
+#~ msgid "Automatically add new words to suggestion list"
+#~ msgstr "सुझाव सूची मं नवा सब्द मन ल अपने अपन भरव"
+
+#~ msgid "Completion Options"
+#~ msgstr "पूरा विकल्प"
+
+#~ msgid "Show words in tooltip"
+#~ msgstr "औजार-युक्ति मं सब्द दिखाव"
+
+#~ msgid "Characters needed:"
+#~ msgstr "अक्छर जरूरी:"
+
+#~ msgid "Suggest words:"
+#~ msgstr "सब्द सुझाव:"
+
+#~ msgid "Append space"
+#~ msgstr "जगह जोड़व"
+
+#~ msgid "Key to accept suggestion:"
+#~ msgstr "सुझाव स्वीकारे बर कुंजी:"
+
+#~ msgid "Make Default"
+#~ msgstr "डिफाल्ट बनाव"
+
+#~ msgid "C&ustom"
+#~ msgstr "मनमाफिक (&u)"
+
+#~ msgid "&Insert:"
+#~ msgstr "प्रविस्ट: (&I)"
+
+#~ msgid "Paragraph Background Color"
+#~ msgstr "पैराग्राफ पिछोत अंगना रंग"
+
+#~ msgid "Borders"
+#~ msgstr "किनारा"
+
+#~ msgid "&Width:"
+#~ msgstr "चौड़ाईः (&W)"
+
+#~ msgid "Add/remove left paragraph border"
+#~ msgstr "डेरी पैराग्राफ किनारा जोड़व/निकालें"
+
+#~ msgid "Toggles the left paragraph border on or off."
+#~ msgstr "डेरी पैराग्राफ किनारा ल लगाता या हटाथे ."
+
+#~ msgid "Add/remove right paragraph border"
+#~ msgstr "जेवनी पैराग्राफ किनारा जोड़व/निकालें"
+
+#~ msgid "Toggles the right paragraph border on or off."
+#~ msgstr "जेवनी पैराग्राफ किनारा ल लगाता या हटाथे ."
+
+#~ msgid "Add/remove top paragraph border"
+#~ msgstr "सीर्स पैराग्राफ किनारा जोड़व/निकालें"
+
+#~ msgid "Toggles the top paragraph border on or off."
+#~ msgstr "सीर्स पैराग्राफ किनारा ल लगाता या हटाथे ."
+
+#~ msgid "Add/remove bottom paragraph border"
+#~ msgstr "तल पैराग्राफ किनारा जोड़व/निकालें"
+
+#~ msgid "Toggles the bottom paragraph border on or off."
+#~ msgstr "तल पैराग्राफ किनारा ल लगाता या हटाथे ."
+
+#~ msgid "&Merge with next paragraph"
+#~ msgstr "अगले पैराग्राफ के साथ सम्मिलित करव (&M)"
+
+#~ msgid ""
+#~ "Merges the border style of the current paragraph with the next paragraph"
+#~ msgstr "अभी हाल के पैराग्राफ के किनारा सैली ल अगले पैराग्राफ के साथ मिलाथे "
+
+#~ msgid "String:"
+#~ msgstr "स्ट्रिंगः"
+
+#~ msgid "Boolean:"
+#~ msgstr "बूलिये:"
+
+#~ msgid "true"
+#~ msgstr "सही"
+
+#~ msgid "false"
+#~ msgstr "गलत"
+
+#~ msgid "Date:"
+#~ msgstr "तारीकः"
+
+#~ msgid "Set Guide Line Position"
+#~ msgstr "गाइड लाइन जगह सेट करव"
+
+#~ msgid "Add Guide Line"
+#~ msgstr "गाइड लाइन जोड़व"
+
+#~ msgid "Horizontal"
+#~ msgstr "आड़ा"
+
+#~ msgid "Vertical"
+#~ msgstr "खड़ा"
+
+#~ msgid "&Position:"
+#~ msgstr "जगह: (&P)"
+
+#~ msgid "Guide Line"
+#~ msgstr "गाइड लाइन"
+
+#~ msgid "Guide Lines"
+#~ msgstr "गाइड लाइनें"
+
+#~ msgid "No handler found for %1"
+#~ msgstr " %1 बर कोनो हेंडलर नइ मिलिस"
+
+#~ msgid ""
+#~ "Error loading %1:\n"
+#~ "%2"
+#~ msgstr ""
+#~ "%1 ल लोड करे मं गलती:\n"
+#~ "%2"
+
+#~ msgid ""
+#~ "This document contains an external link to a remote document\n"
+#~ "%1"
+#~ msgstr ""
+#~ "कागद मं रिमोट कागद बर एक बाहिरी संकली हे\n"
+#~ "%1"
+
+#~ msgid "Confirmation Required"
+#~ msgstr "पुस्टि जरूरी"
+
+#~ msgid "Skip"
+#~ msgstr "छोड़व "
+
+#~ msgid ""
+#~ "Could not load external document %1:\n"
+#~ "%2"
+#~ msgstr ""
+#~ "बाहिरी कागद %1 लोड नइ कर सकिस:\n"
+#~ "%2"
+
+#~ msgid "Na&me:"
+#~ msgstr "नामः (&m)"
+
+#~ msgid "Protect si&ze and position"
+#~ msgstr "आकार अउ जगह संरक्छित करव (&z)"
+
+#~ msgid "Keep &aspect ratio"
+#~ msgstr "आस्पेक्ट रेसो बनाए रखव (&a)"
+
+#~ msgid "&Height:"
+#~ msgstr "ऊंचाईः (&H)"
+
+#~ msgid "&Top:"
+#~ msgstr "ऊपर: (&T)"
+
+#~ msgid "&Left:"
+#~ msgstr "डेरी: (&L)"
+
+#~ msgid "Context Help"
+#~ msgstr "कान्टेक्स्ट मदद"
+
+#~ msgid "Here will be shown help according to your actions"
+#~ msgstr "आप मन के काम के आधार मं इहां मदद दिखाई जाही"
+
+#~ msgid "All values are given in %1."
+#~ msgstr "सब्बो मूल्य %1 मं दे गे हे."
+
+#~ msgid "&Size:"
+#~ msgstr "आकारः (&S)"
+
+#~ msgid "&Portrait"
+#~ msgstr "पोर्टेट (&P)"
+
+#~ msgid "La&ndscape"
+#~ msgstr "आड़ा (&n)"
+
+#~ msgid "The page width is smaller than the left and right margins."
+#~ msgstr "पेज चौड़ाई जेवनी अउ डेरी हासिए से कम हे."
+
+#~ msgid "Page Layout Problem"
+#~ msgstr "पेज ले-आउट समस्या"
+
+#~ msgid "The page height is smaller than the top and bottom margins."
+#~ msgstr "पेज ऊँचाई सीर्स अउ तल हासिए से कम हे."
+
+#~ msgid "Show &Grid"
+#~ msgstr "ग्रिड देखाव (&G)"
+
+#~ msgctxt "Custom size"
+#~ msgid "Custom"
+#~ msgstr "मनमाफिक"
+
+#~ msgid "Column spacing:"
+#~ msgstr "खंभा बर खाली जगह:"
+
+#~ msgid "Footnote/ Endnote"
+#~ msgstr "पाद-टिप्पनी/आखरी-टिप्पनी"
+
+#~ msgid "Spacing between footnote and body:"
+#~ msgstr "पाद-सूचना अउ मुख्य हिस्सा के बीच के जगह:"
+
+#~ msgid "Different footer for even and odd pages"
+#~ msgstr "सम अउ विसम पेज मन बर भिन्न पाद-सूचना"
+
+#~ msgid "Different footer for the first page"
+#~ msgstr "पहिली पेज बर भिन्न पाद-सूचना"
+
+#~ msgid "Spacing between footer and body:"
+#~ msgstr "पाद-सीर्सक अउ मुख्य हिस्सा के बीच के जगह:"
+
+#~ msgid "Spacing between header and body:"
+#~ msgstr "सीर्स-सूचना अउ मुख्य हिस्सा के बीच के जगह:"
+
+#~ msgid "Different header for even and odd pages"
+#~ msgstr "सम अउ विसम पेज मन बर भिन्न सीर्स-सूचना"
+
+#~ msgid "Different header for the first page"
+#~ msgstr "पहिली पेज बर भिन्न सीर्स-सूचना"
+
+#~ msgid "Page Preview"
+#~ msgstr "पेज प्रिव्यू"
+
+#~ msgid "Page Size && &Margins"
+#~ msgstr "पेज आकार अउ हासिए (&M)"
+
+#~ msgid "H&eader && Footer"
+#~ msgstr "हेडर अउ पाद सूचना (&e)"
+
+#~ msgid "Head Line"
+#~ msgstr "सीर्स पंक्ति"
+
+#~ msgid "Foot Line"
+#~ msgstr "पाद पंक्ति"
+
+#~ msgid "You can insert several tags in the text:"
+#~ msgstr "पाठ मं आपर बहुत अकन टैग्स भरव कर सकथो :"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;sheet&gt; The sheet name</li><li>&lt;page&gt; The current "
+#~ "page</li><li>&lt;pages&gt; The total number of pages</li><li>&lt;name&gt; "
+#~ "The filename or URL</li><li>&lt;file&gt; The filename with complete path "
+#~ "or the URL</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;sheet&gt; सीट नाम</li><li>&lt;page&gt; अभी हाल के पेज</"
+#~ "li><li>&lt;pages&gt; पेज मन के कुल संख्या</li><li>&lt;name&gt; यूआरएल या फाइल "
+#~ "नाम</li><li>&lt;file&gt; पूरा रस्ता के साथ फाइल नाम या यूआरएल</li></ul></qt>"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;time&gt; The current time</li><li>&lt;date&gt; The "
+#~ "current date</li><li>&lt;author&gt; Your full name</li><li>&lt;org&gt; "
+#~ "Your organization</li><li>&lt;email&gt; Your email address</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;time&gt; अभी हाल के समय</li><li>&lt;date&gt; अभी हाल के "
+#~ "तारीक</li><li>&lt;author&gt; आप मन के पूरा नाम</li><li>&lt;org&gt; आप मन के "
+#~ "संस्था</li><li>&lt;email&gt; आप मन के ईमेल पता</li></ul></qt>"
+
+#~ msgid "Col&umns"
+#~ msgstr "खंभा (&u)"
+
+#~ msgid "Insert Object"
+#~ msgstr "चीज भरव"
+
+#~ msgid "&Help"
+#~ msgstr "मदद (&H)"
+
+#~ msgid "Delete a new page after the current one"
+#~ msgstr "अभी हाल के पेज के बाद नवा पेज ल मेटाव"
+
+#~ msgid "Storage Test"
+#~ msgstr "भंडार जांच"
+
+#~ msgid "A test for the KoStore classes"
+#~ msgstr "केस्टोर क्लासेस बर एक जांच"
+
+#~ msgid "Storage Test 2"
+#~ msgstr "भंडार जांच २"
+
+#, fuzzy
+#~| msgid "Paste Page"
+#~ msgid "Master page"
+#~ msgstr "पेज चिपकाव"
+
+#~ msgid "Rotate"
+#~ msgstr "घुमाव"
+
+#~ msgid "Shear"
+#~ msgstr "कतरें"
+
+#, fuzzy
+#~| msgid "Warning"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Waiting"
+#~ msgstr "चेतावनी"
+
+#, fuzzy
+#~| msgid "Vertical"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Vertical"
+#~ msgstr "खड़ा"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Horizontal"
+#~ msgstr "आड़ा"
+
+#, fuzzy
+#~| msgid "&Size:"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size All"
+#~ msgstr "आकारः (&S)"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Split Horizontal"
+#~ msgstr "आड़ा"
+
+#, fuzzy
+#~| msgid "Printing done"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Pointing Hand"
+#~ msgstr "छपाई पूरा"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgid "Insert image from file"
+#~ msgstr "पेज भरव"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "Select Char"
+#~ msgstr "अक्छर चुनव"
+
+#, fuzzy
+#~| msgid "E&ncoding:"
+#~ msgctxt "Size Policy"
+#~ msgid "Expanding"
+#~ msgstr "एनकोडिंग: (&n)"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgctxt "General properties"
+#~ msgid "General"
+#~ msgstr "सामान्य"
+
+#, fuzzy
+#~| msgid "&Width:"
+#~ msgid "Width"
+#~ msgstr "चौड़ाईः (&W)"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgid "Horizontal Size Type"
+#~ msgstr "आड़ा"
+
+#, fuzzy
+#~| msgid "Vertical"
+#~ msgid "Vertical Size Type"
+#~ msgstr "खड़ा"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgid "Horizontal Stretch"
+#~ msgstr "आड़ा"
+
+#, fuzzy
+#~| msgid "Vertical"
+#~ msgid "Vertical Stretch"
+#~ msgstr "खड़ा"
+
+#, fuzzy
+#~| msgid "Ungroup shapes"
+#~ msgid "Undo changes"
+#~ msgstr "आकारों से समूह हटाव"
+
+#, fuzzy
+#~| msgid "Show &Grid"
+#~ msgid "Snap Guides"
+#~ msgstr "ग्रिड देखाव (&G)"
+
+#~ msgid "Use snap guides"
+#~ msgstr "स्नेप गाइड उपयोग करव"
+
+#~ msgid "Enable Nodes Guide"
+#~ msgstr "नोड गाइड सक्छम करव"
+
+#, fuzzy
+#~| msgid "Enable Nodes Guide"
+#~ msgid "Enable Bounding Box Guide"
+#~ msgstr "नोड गाइड सक्छम करव"
+
+#~ msgid "Snap Distance (px)"
+#~ msgstr "स्नेप दूरी (पीएक्स)"
+
+#, fuzzy
+#~| msgid "Enable Nodes Guide"
+#~ msgid "Enable Guide Lines Guide "
+#~ msgstr "नोड गाइड सक्छम करव"
+
+#, fuzzy
+#~| msgid "Tool Options"
+#~ msgid "Tool Option"
+#~ msgstr "औजार विकल्प"
+
+#, fuzzy
+#~| msgid "Snap Guides"
+#~ msgid "Configure Snap Guides"
+#~ msgstr "गाइडें स्नेप करव"
+
+#~ msgid "Connection Shape"
+#~ msgstr "कनेक्सन आकार"
+
+#, fuzzy
+#~| msgid "Guide Lines"
+#~ msgid "Edit Guidelines"
+#~ msgstr "गाइड लाइनें"
+
+#, fuzzy
+#~| msgid "Add Guide Line"
+#~ msgid "Edit guidelines"
+#~ msgstr "गाइड लाइन जोड़व"
+
+#~ msgid "Activate %1"
+#~ msgstr "%1 सक्रिय करव"
+
+#~ msgid "Select a filter:"
+#~ msgstr "फिल्टर चुनव:"
+
+#~ msgid "specify the source color depth"
+#~ msgstr "रंग गहराई के स्रोत निरधारित करव"
+
+#~ msgid "specify the destination color depth"
+#~ msgstr "गंतव्य रंग गहराई निरधारित करव"

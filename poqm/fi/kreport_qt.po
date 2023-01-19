@@ -1,0 +1,6754 @@
+# translation of koffice.po to
+# Copyright (C) 2003, 2004, 2005, 2006, 2007 Free Software Foundation, Inc.
+# Mikko Ikola <ikola@iki.fi>, 2003.
+# Tapio Kautto <eleknader@phnet.fi>, 2004.
+# Ilpo Kantonen <ilpo@iki.fi>, 2005.
+# Niklas Laxström <niklas.laxstrom+kdetrans@gmail.com>, 2006.
+# Mikko Piippo <piippo@cc.helsinki.fi>, 2007.
+# Lasse Liehu <lasse.liehu@gmail.com>, 2011, 2012, 2013, 2014, 2015, 2016.
+# Tommi Nieminen <translator@legisign.org>, 2014, 2018.
+# KDE Finnish translation sprint participants:
+# Author: Artnay
+# Author: Lliehu
+msgid ""
+msgstr ""
+"Project-Id-Version: koffice\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2018-07-07 13:10+0200\n"
+"Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
+"Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-POT-Import-Date: 2013-01-13 22:09:45+0000\n"
+"X-Generator: Lokalize 2.0\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "XML-tiedoston jäsentäminen epäonnistui."
+
+#: common/KReportDesign.cpp:159
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Virhe XML-tiedostossa."
+
+#: common/KReportItemBase.cpp:75
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Nimi"
+
+#: common/KReportItemBase.cpp:75
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Objektin nimi"
+
+#: common/KReportItemBase.cpp:78
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Sijainti"
+
+#: common/KReportItemBase.cpp:79
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Koko"
+
+#: common/KReportItemBase.cpp:112
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Tietolähde"
+
+#: common/KReportItemLine.cpp:80
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "Alkusijainti"
+
+#: common/KReportItemLine.cpp:81
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Loppusijainti"
+
+#: common/KReportItemLine.cpp:83
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "Viivan paksuus"
+
+#: common/KReportItemLine.cpp:85
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Viivan väri"
+
+#: common/KReportItemLine.cpp:86
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Viivan tyyli"
+
+#: common/KReportSectionData.cpp:164
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Osio"
+
+#: common/KReportSectionData.cpp:166
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "Korkeus"
+
+#: common/KReportSectionData.cpp:170
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Taustaväri"
+
+#: common/KReportUnit.cpp:136
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Virheellinen"
+
+#: common/KReportUnit.cpp:138
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "millimetri (mm)"
+
+#: common/KReportUnit.cpp:140
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "senttimetri (cm)"
+
+#: common/KReportUnit.cpp:142
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "desimetri (dm)"
+
+#: common/KReportUnit.cpp:144
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "tuuma (in)"
+
+#: common/KReportUnit.cpp:146
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "pica (pi)"
+
+#: common/KReportUnit.cpp:148
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "cicero (cc)"
+
+#: common/KReportUnit.cpp:150
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "piste (pt)"
+
+#: common/KReportUnit.cpp:152
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "kuvapiste (px)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr "Tukematon yksikkö"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Risti"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr "Pukki"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr "Piste"
+
+#: items/check/KReportItemCheck.cpp:80
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "Tyyli"
+
+#: items/check/KReportItemCheck.cpp:84
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Edustaväri"
+
+#: items/check/KReportItemCheck.cpp:86
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "Viivan paksuus"
+
+#: items/check/KReportItemCheck.cpp:88
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Viivan väri"
+
+#: items/check/KReportItemCheck.cpp:89
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Viivan tyyli"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Arvo"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr "Käytetty arvo, jos ei ole sidottuna kenttään"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Arvo"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr "Käytetty arvo, jos ei ole sidottuna kenttään"
+
+#: items/field/KReportItemField.cpp:94
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Vasemmalle"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Keskelle"
+
+#: items/field/KReportItemField.cpp:94
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Oikealle"
+
+#: items/field/KReportItemField.cpp:96
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Vaakatasaus"
+
+#: items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "Ylös"
+
+#: items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Alas"
+
+#: items/field/KReportItemField.cpp:102
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Pystytasaus"
+
+#: items/field/KReportItemField.cpp:104
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Fontti"
+
+#: items/field/KReportItemField.cpp:106
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Taustaväri"
+
+#: items/field/KReportItemField.cpp:107
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Edustaväri"
+
+#: items/field/KReportItemField.cpp:109
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Taustan peittävyys"
+
+#: items/field/KReportItemField.cpp:114
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "Viivan paksuus"
+
+#: items/field/KReportItemField.cpp:116
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Viivan väri"
+
+#: items/field/KReportItemField.cpp:117
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Viivan tyyli"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr "Rivitys"
+
+#: items/field/KReportItemField.cpp:120
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr "Saa kasvaa"
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr "Rajaa"
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Venytä"
+
+#: items/image/KReportItemImage.cpp:120
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "Koonmuuttotila"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Arvo"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr "Käytetty arvo, jos ei ole sidottuna kenttään"
+
+#: items/label/KReportItemLabel.cpp:91
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Kuvateksti"
+
+#: items/label/KReportItemLabel.cpp:94
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Vasemmalle"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Keskelle"
+
+#: items/label/KReportItemLabel.cpp:94
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Oikealle"
+
+#: items/label/KReportItemLabel.cpp:96
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Vaakatasaus"
+
+#: items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "Ylös"
+
+#: items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Alas"
+
+#: items/label/KReportItemLabel.cpp:102
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Pystytasaus"
+
+#: items/label/KReportItemLabel.cpp:104
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Fontti"
+
+#: items/label/KReportItemLabel.cpp:106
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Taustaväri"
+
+#: items/label/KReportItemLabel.cpp:107
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Edustaväri"
+
+#: items/label/KReportItemLabel.cpp:109
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Taustan peittävyys"
+
+#: items/label/KReportItemLabel.cpp:114
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "Viivan paksuus"
+
+#: items/label/KReportItemLabel.cpp:116
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Viivan väri"
+
+#: items/label/KReportItemLabel.cpp:117
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Viivan tyyli"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Arvo"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr "Käytetty arvo, jos ei ole sidottuna kenttään"
+
+#: items/text/KReportItemText.cpp:119
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Vasemmalle"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Keskelle"
+
+#: items/text/KReportItemText.cpp:119
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Oikealle"
+
+#: items/text/KReportItemText.cpp:121
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Vaakatasaus"
+
+#: items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "Ylös"
+
+#: items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Alas"
+
+#: items/text/KReportItemText.cpp:127
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Pystytasaus"
+
+#: items/text/KReportItemText.cpp:129
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Fontti"
+
+#: items/text/KReportItemText.cpp:131
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Taustaväri"
+
+#: items/text/KReportItemText.cpp:132
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Edustaväri"
+
+#: items/text/KReportItemText.cpp:134
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "Viivan paksuus"
+
+#: items/text/KReportItemText.cpp:136
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Viivan väri"
+
+#: items/text/KReportItemText.cpp:137
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Viivan tyyli"
+
+#: items/text/KReportItemText.cpp:138
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Taustan peittävyys"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+"Skriptiä ei voi suorittaa. Virhe: %1\n"
+"\n"
+"Haluatko estää myöhemmät viestit?\n"
+"(viestit palautetaan, kun raportti avataan seuraavan kerran)"
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr ""
+"Skriptikoodi:\n"
+"%1"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Komentojonovirhe"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+"Tässä raportissa on tyypin ”%1” komentojonoja. Vain JavaScript-kielellä "
+"kirjoitettuja komentojonoja tuetaan. Jotta et menetä komentojonoja, niiden "
+"tyyppiä ja sisältöä ei muuteta, jollet muuta niitä."
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr "Tukematon komentojonotyyppi"
+
+#: wrtembed/KReportDesigner.cpp:676
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Sivun ylätunniste (kaikki)"
+
+#: wrtembed/KReportDesigner.cpp:680
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Sivun ylätunniste (parillinen)"
+
+#: wrtembed/KReportDesigner.cpp:684
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Sivun ylätunniste (pariton)"
+
+#: wrtembed/KReportDesigner.cpp:688
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Sivun ylätunniste (ensimmäinen)"
+
+#: wrtembed/KReportDesigner.cpp:692
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Sivun ylätunniste (viimeinen)"
+
+#: wrtembed/KReportDesigner.cpp:696
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "Sivun alatunniste (kaikki)"
+
+#: wrtembed/KReportDesigner.cpp:700
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "Sivun alatunniste (parillinen)"
+
+#: wrtembed/KReportDesigner.cpp:704
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "Sivun alatunniste (pariton)"
+
+#: wrtembed/KReportDesigner.cpp:708
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "Sivun alatunniste (ensimmäinen)"
+
+#: wrtembed/KReportDesigner.cpp:712
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "Sivun alatunniste (viimeinen)"
+
+#: wrtembed/KReportDesigner.cpp:716
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "Raportin ylätunniste"
+
+#: wrtembed/KReportDesigner.cpp:720
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "Raportin alatunniste"
+
+#: wrtembed/KReportDesigner.cpp:808
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "Raportti"
+
+#: wrtembed/KReportDesigner.cpp:813
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Otsikko"
+
+#: wrtembed/KReportDesigner.cpp:813
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Raportin otsikko"
+
+#: wrtembed/KReportDesigner.cpp:818
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Sivukoko"
+
+#: wrtembed/KReportDesigner.cpp:821
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Mukautettu sivukoko"
+
+#: wrtembed/KReportDesigner.cpp:825
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "Pysty"
+
+#: wrtembed/KReportDesigner.cpp:825
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "Vaaka"
+
+#: wrtembed/KReportDesigner.cpp:827
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "Sivun suunta"
+
+#: wrtembed/KReportDesigner.cpp:832
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Sivuyksikkö"
+
+#: wrtembed/KReportDesigner.cpp:833
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Näytä ruudukko"
+
+#: wrtembed/KReportDesigner.cpp:834
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Kiinnitä ruudukkoon"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr "Ruudukon jaot"
+
+#: wrtembed/KReportDesigner.cpp:841
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Vasen reunus"
+
+#: wrtembed/KReportDesigner.cpp:843
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Oikea reunus"
+
+#: wrtembed/KReportDesigner.cpp:845
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Yläreunus"
+
+#: wrtembed/KReportDesigner.cpp:847
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Alareunus"
+
+#: wrtembed/KReportDesigner.cpp:869
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Objektikomentojono"
+
+#: wrtembed/KReportDesigner.cpp:1067
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Leikkaa"
+
+#: wrtembed/KReportDesigner.cpp:1071
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Kopioi"
+
+#: wrtembed/KReportDesigner.cpp:1076
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Liitä"
+
+#: wrtembed/KReportDesigner.cpp:1087
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Poista"
+
+#: wrtembed/KReportDesigner.cpp:1129
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Viiva"
+
+#: wrtembed/KReportDesigner.cpp:1476
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Viiva"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr "L&eikkaa"
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr "Leikkaa valinta leikepöydälle"
+
+#: wrtembed/KReportDesigner.cpp:1525
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "&Kopioi"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr "Kopioi valinta leikepöydälle"
+
+#: wrtembed/KReportDesigner.cpp:1531
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "&Liitä"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr "Liitä leikepöydän sisältö"
+
+#: wrtembed/KReportDesigner.cpp:1544
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Muokkaa osia"
+
+#: wrtembed/KReportDesigner.cpp:1547
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr "Nosta"
+
+#: wrtembed/KReportDesigner.cpp:1549
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr "Laske"
+
+#: wrtembed/KReportDesignerSection.cpp:126
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "Yksityiskohta"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Ryhmäosiomuokkain"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Sarake:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Lajittele:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Näytä ryhmän ylätunniste:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Näytä ryhmän alatunniste:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr "Lisää sivunvaihto ryhmän alatunnisteen jälkeen:"
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr "Valitse koko raportti"
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+"Painike, joka antaa valita raportin pinnan, jolloin sen ominaisuudet voi "
+"nähdä."
+
+#: wrtembed/KReportRuler_p.cpp:1472
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Ensimmäisen rivin sisennys"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Vasen sisennys"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Oikea sisennys"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr "Lisää…"
+
+#: wrtembed/KReportSectionEditor.cpp:74
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "Muokkaa…"
+
+#: wrtembed/KReportSectionEditor.cpp:76
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Poista"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Siirrä ylemmäs"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Siirrä alemmas"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr "Nousevasti"
+
+#: wrtembed/KReportSectionEditor.cpp:312
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr "Laskevasti"
+
+#: wrtembed/KReportSectionEditor.ui:29
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Näytä raportin ylätunniste"
+
+#: wrtembed/KReportSectionEditor.ui:36
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Näytä raportin alatunniste"
+
+#: wrtembed/KReportSectionEditor.ui:43
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Sivun ylätunniste"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "Ensimmäinen sivu:"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Parilliset sivut:"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Kaikki sivut:"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Viimeinen sivu:"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Parittomat sivut:"
+
+#: wrtembed/KReportSectionEditor.ui:130
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "Sivun alatunniste"
+
+#: wrtembed/KReportSectionEditor.ui:217
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Ryhmitä osat"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, qt-format
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1 %"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Sovita sivun leveyteen"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Sovita sivulle"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr "Todellisia pikseleitä"
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Sovita tekstin leveyteen"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A3"
+#~ msgstr "A3"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A4"
+#~ msgstr "A4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A5"
+#~ msgstr "A5"
+
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "US Letter"
+
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "US Legal"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "Mukautettu"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B6"
+#~ msgstr "B6"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B5"
+#~ msgstr "B5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B4"
+#~ msgstr "B4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "US Executive"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A0"
+#~ msgstr "A0"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A1"
+#~ msgstr "A1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A2"
+#~ msgstr "A2"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A6"
+#~ msgstr "A6"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A7"
+#~ msgstr "A7"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A8"
+#~ msgstr "A8"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A9"
+#~ msgstr "A9"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B0"
+#~ msgstr "B0"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B1"
+#~ msgstr "B1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "B10"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "C5E"
+#~ msgstr "C5E"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "Comm10"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "ISO DL"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Folio"
+#~ msgstr "US Folio"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "US Ledger"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Tabloid"
+#~ msgstr "US Tabloid"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "DL Envelope"
+#~ msgstr "DL Envelope"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "C6 Envelope"
+#~ msgstr "C6-kirjekuori"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "C6/5 Envolope"
+#~ msgstr "C6/5-kirjekuori"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "C5 Envelope"
+#~ msgstr "C5-kirjekuori"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "C4 Envelope"
+#~ msgstr "C4-kirjekuori"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Monarch Envelope"
+#~ msgstr "Monarch-kirjekuori"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Personal Envelope"
+#~ msgstr "Personal-kirjekuori"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "9 Envelope"
+#~ msgstr "9-kirjekuori"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "10 Envelope"
+#~ msgstr "10-kirjekuori"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "11 Envelope"
+#~ msgstr "11-kirjekuori"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "12 Envelope"
+#~ msgstr "12-kirjekuori"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "Postikortti"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Double Postcard"
+#~ msgstr "Kaksoispostikortti"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Näyttö"
+
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "Sijainti"
+
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "Korkeus"
+
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Taustaväri"
+
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "Koko"
+
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Tietolähde"
+
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Tietolähde"
+
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Tietolähde"
+
+#~ msgctxt "Scripting::Text|"
+#~ msgid "$Unable to read %1"
+#~ msgstr "$Tiedostoa %1 ei saatu luettua"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "ISO A3"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "ISO A4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "ISO A5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "ISO B5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "US Executive"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "ISO A0"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "ISO A1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "ISO A2"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "ISO A6"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "ISO A7"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "ISO A8"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "ISO A9"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "ISO B0"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "ISO B1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "ISO B2"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "ISO B3"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "ISO B4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "ISO B6"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "ISO C5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Common 10"
+#~ msgstr "US Common 10"
+
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "Korkeus"
+
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "Taustaväri"
+
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Weight"
+#~ msgstr "Viivan paksuus"
+
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "Viivan väri"
+
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "Viivan tyyli"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Tietolähde"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "Arvo"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value used if not bound to a field"
+#~ msgstr "Käytetty arvo, jos ei ole sidottuna kenttään"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "Taustaväri"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "Edustaväri"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Weight"
+#~ msgstr "Viivan paksuus"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "Viivan väri"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "Viivan tyyli"
+
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Tietolähde"
+
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "Arvo"
+
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value used if not bound to a field"
+#~ msgstr "Käytetty arvo, jos ei ole sidottuna kenttään"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "Vasemmalle"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "Keskelle"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "Oikealle"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Vaakatasaus"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "Ylös"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "Alas"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Pystytasaus"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "Fontti"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "Taustaväri"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "Edustaväri"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "Taustan peittävyys"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Weight"
+#~ msgstr "Viivan paksuus"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "Viivan väri"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "Viivan tyyli"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Tietolähde"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "Arvo"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value used if not bound to a field"
+#~ msgstr "Käytetty arvo, jos ei ole sidottuna kenttään"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "Vasemmalle"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "Keskelle"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "Oikealle"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Vaakatasaus"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "Ylös"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "Alas"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Pystytasaus"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "Fontti"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "Taustaväri"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "Edustaväri"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Weight"
+#~ msgstr "Viivan paksuus"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "Viivan väri"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "Viivan tyyli"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "Taustan peittävyys"
+
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "Poista"
+
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "Komentojonotulkki"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr ""
+#~ "Kim Enkovaara, Mikko Ikola, Ilpo Kantonen, Jorma Karvonen, Tapio Kautto, "
+#~ "Niklas Laxström, Lasse Liehu, Tommi Nieminen, Mikko Piippo, Teemu "
+#~ "Rytilahti"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr ""
+#~ "kim.enkovaara@iki.fi, ikola@iki.fi, ilpo@iki.fi, karvonen.jorma@gmail."
+#~ "com, eleknader@phnet.fi, niklas.laxstrom+kdetrans@gmail.com, lasse."
+#~ "liehu@gmail.com, translator@legisign.org, mikko.piippo@helsinki.fi, teemu."
+#~ "rytilahti@d5k.net"
+
+#~ msgid "Draw path"
+#~ msgstr "Polun piirto"
+
+#~ msgid "Freehand path"
+#~ msgstr "Vapaan käden polun piirto"
+
+#~ msgid "Angle snapping delta:"
+#~ msgstr "Kulmakiinnityksen delta:"
+
+#~ msgid "Activate angle snap:"
+#~ msgstr "Aktivoi kulmakiinnitys:"
+
+#~ msgid "Angle Constraints"
+#~ msgstr "Kulmarajoitukset"
+
+#~ msgid "Precision:"
+#~ msgstr "Tarkkuus:"
+
+#~ msgctxt "The raw line data"
+#~ msgid "Raw"
+#~ msgstr "Raaka"
+
+#~ msgid "Curve"
+#~ msgstr "Kaari"
+
+#~ msgid "Straight"
+#~ msgstr "Suora"
+
+#~ msgid "Optimize"
+#~ msgstr "Optimoi"
+
+#~ msgid "Exactness:"
+#~ msgstr "Tarkkuus:"
+
+#~ msgid "Combine angle:"
+#~ msgstr "Liitoskulma:"
+
+#~ msgid "Pencil"
+#~ msgstr "Lyijykynä"
+
+#~ msgid "Invalid database contents. "
+#~ msgstr "Tietokannan sisältö on virheellinen."
+
+#~ msgid "It is a system object."
+#~ msgstr "Kyseessä on järjestelmäolio."
+
+#~ msgid "Connection already established."
+#~ msgstr "Yhteys on jo luotu."
+
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr "Projektitiedostoa ”%1” ei voitu avata."
+
+#~ msgid "Could not connect to \"%1\" database server."
+#~ msgstr "Tietokantapalvelimeen ”%1” ei voitu yhdistää."
+
+#~ msgid "Not connected to the database server."
+#~ msgstr "Ei yhteyttä tietokantapalvelimeen."
+
+#~ msgid "Currently no database is used."
+#~ msgstr "Ei tietokantoja käytössä."
+
+#~ msgid "The database \"%1\" does not exist."
+#~ msgstr "Tietokantaa ”%1” ei ole olemassa."
+
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "Tietokantatiedostoa ”%1” ei ole olemassa."
+
+#~ msgid "Database file \"%1\" is not readable."
+#~ msgstr "Tietokantatiedosto ”%1” ei ole luettavissa."
+
+#~ msgid "Database file \"%1\" is not writable."
+#~ msgstr "Tietokantatiedosto ”%1” ei ole kirjoitettavissa."
+
+#~ msgid "Database \"%1\" created but could not be closed after creation."
+#~ msgstr ""
+#~ "Tietokanta ”%1” luotiin, mutta sitä ei voitu sulkea luomisen jälkeen."
+
+#~ msgid "Database \"%1\" already exists."
+#~ msgstr "Tietokanta ”%1” on jo olemassa."
+
+#~ msgid ""
+#~ "Cannot create database \"%1\". This name is reserved for system database."
+#~ msgstr ""
+#~ "Ei voitu luoda tietokantaa ”%1”. Tämä nimi on varattu järjestelmän "
+#~ "tietokannalle."
+
+#~ msgid "Error creating database \"%1\" on the server."
+#~ msgstr "Virhe luotaessa tietokantaa ”%1” palvelimelle."
+
+#~ msgid "Database \"%1\" created but could not be opened."
+#~ msgstr "Tietokanta ”%1” luotiin, mutta sitä ei voitu avata."
+
+#~ msgid "Opening database \"%1\" failed."
+#~ msgstr "Tietokannan ”%1” avaaminen epäonnistui."
+
+#~ msgid "Database version (%1) does not match Kexi application's version (%2)"
+#~ msgstr "Tietokannan versio (%1) ei vastaa Kexin versiota (%2)"
+
+#~ msgid "Cannot find any database for temporary connection."
+#~ msgstr "Ei löydetty tietokantaa väliaikaiselle yhteydelle."
+
+#~ msgid ""
+#~ "Error during starting temporary connection using \"%1\" database name."
+#~ msgstr ""
+#~ "Virhe käynnistettäessä väliaikaista yhteyttä käytettäessä tietokannan "
+#~ "nimenä ”%1”."
+
+#~ msgid "Cannot delete database - name not specified."
+#~ msgstr "Ei voida poistaa tietokantaa: nimeä ei annettu."
+
+#~ msgid "Cannot delete system database \"%1\"."
+#~ msgstr "Ei voida poistaa järjestelmän tietokantaa ”%1”."
+
+#~ msgid "Error while executing SQL statement."
+#~ msgstr "Virhe SQL-lauseen suorituksessa."
+
+#~ msgid "Creating table failed."
+#~ msgstr "Taulukon luominen epäonnistui."
+
+#~ msgid "Cannot create table without fields."
+#~ msgstr "Ei voida luoda taulua ilman kenttiä."
+
+#~ msgid "System name \"%1\" cannot be used as table name."
+#~ msgstr "Järjestelmän nimeä ”%1” ei voida käyttää taulukon nimenä."
+
+#~ msgid "System name \"%1\" cannot be used as one of fields in \"%2\" table."
+#~ msgstr "Järjestelmän nimeä ”%1” ei voida käyttää kenttänä taulukossa ”%2”."
+
+#~ msgid "Could not create the same table \"%1\" twice."
+#~ msgstr "Taulukkoa ”%1” ei voi luoda toista kertaa."
+
+#~ msgid "Table \"%1\" already exists."
+#~ msgstr "Taulukko ”%1” on jo olemassa."
+
+#~ msgid "Table \"%1\" does not exist."
+#~ msgstr "Taulukkoa ”%1” ei ole olemassa."
+
+#~ msgid "Could not remove object's data."
+#~ msgstr "Ei voida poistaa objektin tietoja."
+
+#~ msgid "Table \"%1\" cannot be removed.\n"
+#~ msgstr "Taulukkoa ”%1” ei voi poistaa.\n"
+
+#~ msgid "Unexpected name or identifier."
+#~ msgstr "Odottamaton nimi tai tunnus."
+
+#~ msgid "Could not alter table \"%1\" using the same table as destination."
+#~ msgstr ""
+#~ "Taulukkoa ”%1” ei voitu muuttaa käyttämällä samaa taulukkoa kuin kohde."
+
+#~ msgid "Unknown table \"%1\"."
+#~ msgstr "Tuntematon taulukko ”%1”."
+
+#~ msgid "Invalid table name \"%1\"."
+#~ msgstr "Virheellinen taulukon nimi ”%1”."
+
+#~ msgid "Could not rename table \"%1\" using the same name."
+#~ msgstr "Taulukon ”%1” nimeksi ei voi muuttaa samaa nimeä."
+
+#~ msgid ""
+#~ "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
+#~ msgstr ""
+#~ "Taulukon ”%1” nimeksi ei voitu muuttaa ”%2”: taulukko ”%3” on jo olemassa."
+
+#~ msgid "Query \"%1\" does not exist."
+#~ msgstr "Kyselyä ”%1” ei ole olemassa."
+
+#~ msgid "Transactions are not supported for \"%1\" driver."
+#~ msgstr "Transaktioita ei tueta ajurille  \"%1\"."
+
+#~ msgid "Begin transaction failed."
+#~ msgstr "Transaktion aloittaminen epäonnistui."
+
+#~ msgid "Transaction already started."
+#~ msgstr "Transaktio on jo käynnissä."
+
+#~ msgid "Transaction not started."
+#~ msgstr "Transaktio ei ole käynnistynyt."
+
+#~ msgid "Error on commit transaction."
+#~ msgstr "Virhe transaktion kommitoinnissa."
+
+#~ msgid "Error on rollback transaction."
+#~ msgstr "Virhe transaktion rollback-palautuksessa."
+
+#~ msgid "Invalid object name \"%1\"."
+#~ msgstr "Virheellinen olion nimi ”%1”."
+
+#~ msgid "Column <resource>%1</resource> does not exist in the query."
+#~ msgstr "Saraketta <resource>%1</resource> ei ole olemassa kyselyssä."
+
+#~ msgctxt "Extended schema for a table: loading error"
+#~ msgid "Error while loading extended table schema."
+#~ msgstr "Virhe ladattaessa taulukon laajennettua rakennetta."
+
+#~ msgid "Invalid XML data: %1"
+#~ msgstr "Virheellinen XML-data: %1"
+
+#~ msgid ""
+#~ "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~ "XML data: %4"
+#~ msgstr ""
+#~ "Virhe XML-datassa: ”%1” rivillä %2 sarakkeessa %3.\n"
+#~ "XML-data: %4"
+
+#~ msgid "Table has no fields defined."
+#~ msgstr "Taulukkoon ei ole määritetty kenttiä."
+
+#~ msgid ""
+#~ "Could not find definition for query \"%1\". Removing this query is "
+#~ "recommended."
+#~ msgstr "Ei löydetty kyselyn ”%1” määritystä. Kysely suositetaan poistamaan."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>Could not load definition for query \"%1\". SQL statement for this "
+#~ "query is invalid: <message>%2</message></para>\n"
+#~ "<para>You can open this query in Text View and correct it.</para>"
+#~ msgstr ""
+#~ "<para>Kyselyn ”%1” määritystä ei voitu ladata. Kyselyn SQL-lause on "
+#~ "virheellinen: <message>%2</message></para>\n"
+#~ "<para>Voit avata kyselyn tekstinäkymään ja korjata sen.</para>"
+
+#~ msgid "Could not update record because there is no master table defined."
+#~ msgstr "Tietuetta ei voitu päivittää, koska päätaulukkoa ei ole määritetty."
+
+#~ msgid ""
+#~ "Could not update record because master table has no primary key defined."
+#~ msgstr ""
+#~ "Tietuetta ei voitu päivittää, koska päätaulukosta puuttuu ensisijainen "
+#~ "avain."
+
+#~ msgid ""
+#~ "Could not update record because it does not contain entire primary key of "
+#~ "master table."
+#~ msgstr ""
+#~ "Tietuetta ei voitu päivittää, koska se ei sisällä päätaulukon koko "
+#~ "ensisijaista avainta."
+
+#~ msgid "Primary key's field \"%1\" cannot be empty."
+#~ msgstr "Ensisijaisen avaimen kenttä ”%1” ei voi olla tyhjä."
+
+#~ msgid "Record updating on the server failed."
+#~ msgstr "Tietueen päivitys palvelimelle epäonnistui."
+
+#~ msgid "Could not insert record because there is no master table specified."
+#~ msgstr "Tietuetta ei voitu lisätä, koska päätaulukkoa ei ole määritetty."
+
+#~ msgid ""
+#~ "Could not insert record because master table has no primary key specified."
+#~ msgstr ""
+#~ "Tietuetta ei voitu lisätä, koska päätaulukosta puuttuu ensisijainen avain."
+
+#~ msgid ""
+#~ "Could not insert record because it does not contain entire master table's "
+#~ "primary key."
+#~ msgstr ""
+#~ "Tietuetta ei voitu lisätä, koska se ei sisällä päätaulukon koko "
+#~ "ensisijaista avainta."
+
+#~ msgid "Record inserting on the server failed."
+#~ msgstr "Tietueen lisäys palvelimelle epäonnistui."
+
+#~ msgid "Could not delete record because there is no master table specified."
+#~ msgstr "Tietuetta ei voitu poistaa, koska päätaulukkoa ei ole määritetty."
+
+#~ msgid ""
+#~ "Could not delete record because there is no primary key for master table "
+#~ "specified."
+#~ msgstr ""
+#~ "Tietuetta ei voitu poistaa, koska päätaulukolle ei ole määritetty "
+#~ "ensisijaista avainta."
+
+#~ msgid ""
+#~ "Could not delete record because it does not contain entire master table's "
+#~ "primary key."
+#~ msgstr ""
+#~ "Tietuetta ei voitu poistaa, koska se ei sisällä päätaulukon koko "
+#~ "ensisijaista avainta."
+
+#~ msgid "Record deletion on the server failed."
+#~ msgstr "Tietueen poisto palvelimelta epäonnistui."
+
+#~ msgid "Unknown error."
+#~ msgstr "Tuntematon virhe."
+
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "tiedosto: %1"
+
+#~ msgctxt "@info"
+#~ msgid "&lt;file&gt;"
+#~ msgstr "&lt;tiedosto&gt;"
+
+#~ msgid "No query statement or schema defined."
+#~ msgstr "Kyselylausetta tai -mallia ei ole määritetty."
+
+#~ msgid "Query statement is empty."
+#~ msgstr "Kyselylause on tyhjä."
+
+#~ msgid "Error opening database cursor."
+#~ msgstr "Virhe avattaessa tietokantakohdistinta."
+
+#~ msgid "Cannot fetch next record."
+#~ msgstr "Seuraavaa tietuetta ei voi noutaa."
+
+#~ msgid "No connection for cursor open operation specified."
+#~ msgstr "Kohdistimen avaustoiminnolle ei annettu yhteyttä."
+
+#~ msgid "Could not set value of database property \"%1\"."
+#~ msgstr "Ei voitu asettaa arvoa tietokannan ominaisuudelle ”%1”."
+
+#~ msgid "Could not set caption for database property \"%1\"."
+#~ msgstr "Ei voitu asettaa otsikkoa tietokannan ominaisuudelle ”%1”."
+
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "Tietokannan ominaisuutta \"%1\" ei voitu lukea."
+
+#~ msgid "Could not read database properties."
+#~ msgstr "Tietokannan ominaisuuksia ei voitu lukea."
+
+#~ msgid "Invalid database driver's \"%1\" implementation:\n"
+#~ msgstr "Virheellinen tietokanta-ajurin ”%1” toteutus:\n"
+
+#~ msgid "Value of \"%1\" is not initialized for the driver."
+#~ msgstr "Ajurille ei ole alustettu arvoa ”%1”."
+
+#~ msgid "File name expected for file-based database driver."
+#~ msgstr "Odotettiin tiedostonimeä tiedostopohjaiselle tietokanta-ajurille."
+
+#~ msgid "Client library version"
+#~ msgstr "Asiakasohjelman kirjaston versio"
+
+#~ msgid "Default character encoding on server"
+#~ msgstr "Palvelimen oletusmerkistö"
+
+#~ msgid "File-based database driver"
+#~ msgstr "Tiedostopohjainen tietokanta-ajuri"
+
+#~ msgid "File-based database's MIME type"
+#~ msgstr "Tiedostopohjaisen tietokannan MIME-tyyppi"
+
+#~ msgid "Single transactions support"
+#~ msgstr "Yksittäisen transaktion tuki"
+
+#~ msgid "Multiple transactions support"
+#~ msgstr "Moniosaisen transaktion tuki"
+
+#~ msgid "Nested transactions support"
+#~ msgstr "Ketjutettujen transaktioiden tuki"
+
+#~ msgid "KexiDB driver version"
+#~ msgstr "KexiDB:n ajuriversio"
+
+#~ msgid "Could not find any database drivers."
+#~ msgstr "Yhtään tietokanta-ajuria ei löytynyt."
+
+#~ msgid "Could not find database driver \"%1\"."
+#~ msgstr "Tietokanta-ajuria ”%1” ei löytynyt."
+
+#~ msgid ""
+#~ "Incompatible database driver's \"%1\" version: found version %2, expected "
+#~ "version %3."
+#~ msgstr ""
+#~ "Tietokanta-ajurin ”%1” versio ei ole yhteensopiva: löydettiin %2, "
+#~ "odotettiin %3."
+
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "Tietokanta-ajuria ”%1” ei voitu ladata."
+
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "Palvelua <resource>%1</resource> ei löytynyt."
+
+#~ msgid "Ambiguous field name"
+#~ msgstr "Moniselitteinen kentän nimi"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Both table <resource>%1</resource> and <resource>%2</resource> have "
+#~ "defined <resource>%3</resource> field. Use "
+#~ "<resource><placeholder>tableName</placeholder>.%4</resource> notation to "
+#~ "specify table name."
+#~ msgstr ""
+#~ "Sekä taulukko <resource>%1</resource> että <resource>%2</resource> "
+#~ "määrittävät kentän <resource>%3</resource>. Määritä taulukon nimi "
+#~ "kirjoittamalla <resource><placeholder>tableName</placeholder>.%4</"
+#~ "resource>."
+
+#~ msgid "Field not found"
+#~ msgstr "Kenttää ei löytynyt"
+
+#~ msgid "Table containing \"%1\" field not found."
+#~ msgstr "Kentän ”%1” sisältävää taulukkoa ei löytynyt."
+
+#~ msgid "Could not access the table directly using its name"
+#~ msgstr "Taulukkoa ei voi käyttää suoraan sen nimellä"
+
+#~ msgid ""
+#~ "Table name <resource>%1</resource> is covered by aliases. Instead of "
+#~ "<resource>%2</resource>, you can write <resource>%3</resource>."
+#~ msgstr ""
+#~ "Taulukon nimi <resource>%1</resource> on peitetty aliaksin. Kirjoita "
+#~ "<resource>%3</resource> äläkä <resource>%2</resource>."
+
+#~ msgid "Table not found"
+#~ msgstr "Taulukkoa ei löytynyt"
+
+#~ msgid "Ambiguous \"%1.*\" expression"
+#~ msgstr "Moniselitteinen lauseke ”%1.*”"
+
+#~ msgid "More than one \"%1\" table or alias defined."
+#~ msgstr "Määritetty useampi ”%1”-taulukko tai -alias."
+
+#~ msgid "Table \"%1\" has no \"%2\" field."
+#~ msgstr "Taulukossa ”%1” ei ole kenttää ”%2”."
+
+#~ msgid "Ambiguous \"%1.%2\" expression"
+#~ msgstr "Moniselitteinen lauseke ”%1.%2”"
+
+#~ msgid "More than one \"%1\" table or alias defined containing \"%2\" field."
+#~ msgstr "Määritetty useampi kentän ”%2” sisältävä ”%1”-taulukko tai -alias."
+
+#~ msgid "Byte"
+#~ msgstr "Tavu"
+
+#~ msgid "Short Integer Number"
+#~ msgstr "Pieni kokonaisluku"
+
+#~ msgid "Integer Number"
+#~ msgstr "Kokonaisluku"
+
+#~ msgid "Big Integer Number"
+#~ msgstr "Suuri kokonaisluku"
+
+#~ msgid "Yes/No Value"
+#~ msgstr "Kyllä/Ei-arvo"
+
+#~ msgid "Date"
+#~ msgstr "Päivämäärä"
+
+#~ msgid "Date and Time"
+#~ msgstr "Aika ja päiväys"
+
+#~ msgid "Time"
+#~ msgstr "Kellonaika"
+
+#~ msgid "Single Precision Number"
+#~ msgstr "Yksinkertaisen tarkkuuden luku"
+
+#~ msgid "Double Precision Number"
+#~ msgstr "Kaksoistarkkuuden luku"
+
+#~ msgid "Text"
+#~ msgstr "Teksti"
+
+#~ msgid "Long Text"
+#~ msgstr "Pitkä teksti"
+
+#~ msgid "Object"
+#~ msgstr "Olio"
+
+#~ msgid "Invalid Group"
+#~ msgstr "Virheellinen ryhmä"
+
+#~ msgid "Floating Point Number"
+#~ msgstr "Liukuluku"
+
+#~ msgid "Yes/No"
+#~ msgstr "Kyllä/Ei"
+
+#~ msgid "Date/Time"
+#~ msgstr "Päiväys/kello"
+
+#~ msgid "Unspecified error encountered"
+#~ msgstr "Tapahtui tuntematon virhe"
+
+#~ msgid "identifier was expected"
+#~ msgstr "odotettiin tunnistetta"
+
+#~ msgid "\"%1\" is a reserved keyword."
+#~ msgstr "”%1” on varattu sana."
+
+#~ msgid "Syntax error."
+#~ msgstr "Syntaksivirhe."
+
+#~ msgid "Error"
+#~ msgstr "Virhe"
+
+#~ msgid "Error near \"%1\"."
+#~ msgstr "Virhe lähellä kohtaa ”%1”."
+
+#~ msgid "No query statement specified."
+#~ msgstr "Kyselylausetta ei ole määritetty."
+
+#~ msgid "\"*\" could not be used if no tables are specified."
+#~ msgstr "Ei voi käyttää ”*”, ellei taulukkoja ole määritetty."
+
+#~ msgid "Invalid alias definition for column \"%1\"."
+#~ msgstr "Virheellinen aliasmääritys sarakkeelle ”%1”."
+
+#~ msgid "Invalid \"%1\" column definition."
+#~ msgstr "Virheellinen sarakemääritys ”%1”."
+
+#~ msgid "Could not define sorting - no column at position %1."
+#~ msgstr "Lajittelua ei voi määrittää: kohdassa %1 ei ole saraketta."
+
+#~ msgid ""
+#~ "Could not define sorting - column name or alias \"%1\" does not exist."
+#~ msgstr ""
+#~ "Lajittelua ei voi määrittää: sarakkeen nimeä tai aliasta ”%1” ei ole "
+#~ "olemassa."
+
+#~ msgctxt ""
+#~ "short for 'expression' word, e.g. 'expr' (only latin letters, please, no "
+#~ "'.')"
+#~ msgid "expr"
+#~ msgstr "lauseke"
+
+#~ msgid "Database driver name"
+#~ msgstr "Tietokanta-ajurin nimi"
+
+#~ msgid "Database user name"
+#~ msgstr "Tietokannan käyttäjätunnus"
+
+#~ msgid "Prompts for password"
+#~ msgstr "Kysyy salasanaa"
+
+#~ msgid "Host (server) name"
+#~ msgstr "Palvelimen nimi"
+
+#~ msgid "Server's port number"
+#~ msgstr "Palvelimen portti"
+
+#~ msgid "Server's local socket filename"
+#~ msgstr "Palvelimen paikallisen pistokkeen tiedostonimi"
+
+#~ msgid "Enter password for %1: "
+#~ msgstr "Anna salasana kohteeseen %1:  "
+
+#~ msgid "\"%1\" column requires a value to be entered."
+#~ msgstr "Sarake ”%1” vaatii syötettäväksi arvon."
+
+#~ msgid "The column's constraint is declared as NOT NULL."
+#~ msgstr "Sarakkeen ehdoksi on määritetty EI NULL."
+
+#~ msgid "The column's constraint is declared as NOT EMPTY."
+#~ msgstr "Sarakkeen ehdoksi on määritetty EI TYHJÄ."
+
+#~ msgid "Record inserting failed."
+#~ msgstr "Tietueen lisäys epäonnistui."
+
+#~ msgid "Record changing failed."
+#~ msgstr "Tietueen muuttaminen epäonnistui."
+
+#~ msgid "Record deleting failed."
+#~ msgstr "Tietueen poisto epäonnistui."
+
+#~ msgid "Message from server:"
+#~ msgstr "Viesti palvelimelta:"
+
+#~ msgid "SQL statement:"
+#~ msgstr "SQL-lause:"
+
+#~ msgid "Server result:"
+#~ msgstr "Palvelimen tulos:"
+
+#~ msgid "Test Connection"
+#~ msgstr "Kokeile yhteyttä"
+
+#~ msgid "Testing connection to <resource>%1</resource> database server..."
+#~ msgstr "Kokeillaan yhteyttä tietokantapalvelimeen <resource>%1</resource>…"
+
+#~ msgid ""
+#~ "<qt>Test connection to <b>%1</b> database server failed. The server is "
+#~ "not responding.</qt>"
+#~ msgstr ""
+#~ "<qt>Koeyhteys tietokantapalvelimeen <b>%1</b> epäonnistui. Palvelin ei "
+#~ "vastaa.</qt>"
+
+#~ msgid ""
+#~ "<qt>Test connection to <b>%1</b> database server established successfully."
+#~ "</qt>"
+#~ msgstr ""
+#~ "<qt>Koeyhteys tietokantapalvelimeen <b>%1</b> luotiin onnistuneesti.</qt>"
+
+#~ msgid "Number"
+#~ msgstr "Numero"
+
+#~ msgid "Image"
+#~ msgstr "Kuva"
+
+#~ msgid "\"%1\" value has to be entered."
+#~ msgstr "Vaaditaan arvo: ”%1”."
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr ""
+#~ "Muuta kytköstä\n"
+#~ "kytköksen muuttaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr ""
+#~ "Muuta parametria\n"
+#~ "parametrin muuttaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "Muunna poluksi"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath at points"
+#~ msgstr "Katkaise alipolku pisteiden kohdalta"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Combine paths"
+#~ msgstr "Yhdistä polut"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move control point"
+#~ msgstr "Siirrä hallintapistettä"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set fill rule"
+#~ msgstr "Aseta täyttösääntö"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "Lisää pisteitä"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "Yhdistä pisteitä toisiinsa"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move points"
+#~ msgstr "Siirrä pisteitä"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove points"
+#~ msgstr ""
+#~ "Poista pisteitä\n"
+#~ "pisteiden poisto"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set point type"
+#~ msgstr "Aseta pisteen tyyppi"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reverse paths"
+#~ msgstr "Käännä polut"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath"
+#~ msgstr "Katkaise alipolku"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to curves"
+#~ msgstr "Muuta lohkot kaariksi"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to lines"
+#~ msgstr "Muuta lohkot viivoiksi"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set marker"
+#~ msgstr ""
+#~ "Aseta merkki\n"
+#~ "merkin asettaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Align shapes"
+#~ msgstr ""
+#~ "Tasaa muodot\n"
+#~ "muotojen tasaus"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr "Aseta tausta"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Clip Shape"
+#~ msgstr ""
+#~ "Rajaa muoto\n"
+#~ "muodon rajaus"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr ""
+#~ "Luo muoto\n"
+#~ "muodon luonti"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shape"
+#~ msgid_plural "Delete shapes"
+#~ msgstr[0] ""
+#~ "Poista muoto\n"
+#~ "muodon poisto"
+#~ msgstr[1] ""
+#~ "Poista muotoja\n"
+#~ "muotojen poisto"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Distribute shapes"
+#~ msgstr "Jaa muotoja"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr ""
+#~ "Ryhmitä muotoja\n"
+#~ "muotojen ryhmitys"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add shapes to group"
+#~ msgstr "Lisää muotoja ryhmään"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Keep Aspect Ratio"
+#~ msgstr "Säilytä mittasuhteet"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Lock shapes"
+#~ msgstr "Lukitse muodot"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move shapes"
+#~ msgstr ""
+#~ "Siirrä muotoja\n"
+#~ "muotojen siirto"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr ""
+#~ "Muuta muodon nimeä\n"
+#~ "muodon nimen muutos"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reorder shapes"
+#~ msgstr "Järjestä muodot uudestaan"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Shape RunAround"
+#~ msgstr "Muuta muodon ympärijuoksutusta"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Shadow"
+#~ msgstr ""
+#~ "Aseta varjo\n"
+#~ "varjon asettaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Shear shapes"
+#~ msgstr "Katkaise muotoja"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Resize shapes"
+#~ msgstr "Muuta muotojen kokoa"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set stroke"
+#~ msgstr ""
+#~ "Aseta viiva\n"
+#~ "viivan asettaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr "Aseta peittävyys"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shape"
+#~ msgstr ""
+#~ "Poista muodon rajaus\n"
+#~ "muodon rajauksen poisto"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shapes"
+#~ msgstr ""
+#~ "Poista muotojen rajaus\n"
+#~ "muotojen rajauksen poisto"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr "Poista muotojen ryhmitys"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Close subpath"
+#~ msgstr "Sulje alipolku"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Join subpaths"
+#~ msgstr "Yhdistä alipolut"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove subpath"
+#~ msgstr "Poista alipolku"
+
+#~ msgid "Standard"
+#~ msgstr "Vakio"
+
+#~ msgid "Lines"
+#~ msgstr "Viivat"
+
+#~ msgid "Type:"
+#~ msgstr "Tyyppi:"
+
+#~ msgid "Tie"
+#~ msgstr "Kytkös"
+
+#~ msgid "A connection between two other shapes"
+#~ msgstr "Kahden muun muodon välinen kytkös"
+
+# Työkaluvihje käskymuodossa
+# @info:tooltip
+#~ msgid "Shows or hides grid"
+#~ msgstr "Näytä tai piilota ruudukko"
+
+#~ msgid "Simple path shape"
+#~ msgstr "Yksinkertainen polkumuoto"
+
+#~ msgid "A simple path shape"
+#~ msgstr "Yksinkertainen polkumuoto"
+
+#~ msgid "%1 Options"
+#~ msgstr "Asetukset – %1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Shapes"
+#~ msgstr ""
+#~ "Liitä muotoja\n"
+#~ "muotojen liittäminen"
+
+#~ msgid "Active tool: %1"
+#~ msgstr "Aktiivinen työkalu: %1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr ""
+#~ "Liitä kuva\n"
+#~ "kuvan liittäminen"
+
+#~ msgid "Nodes"
+#~ msgstr "Solmut"
+
+#~ msgid "Extension of lines"
+#~ msgstr "Viivojen jatkeet"
+
+#~ msgid "Bounding box of shape"
+#~ msgstr "Muodon rajauslaatikko"
+
+#~ msgid "Proximity distance where snapping happens"
+#~ msgstr "Kiinnittymisen lähietäisyys"
+
+#~ msgid " px"
+#~ msgstr " px"
+
+#~ msgid "Orthogonal"
+#~ msgstr "Kohtisuora"
+
+#~ msgid "Intersection of lines"
+#~ msgstr "Viivojen leikkauskohta"
+
+#~ msgid "Guide lines"
+#~ msgstr "Apuviivat"
+
+#~ msgid "Embedded svg shape"
+#~ msgstr "Upotettu SVG-muoto"
+
+#~ msgid "Create object"
+#~ msgstr "Luo objekti"
+
+#~ msgid "Pan"
+#~ msgstr "Panorointi"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Segment"
+#~ msgstr "Muuta lohkoa"
+
+#~ msgid "Corner point"
+#~ msgstr "Kulmapiste"
+
+#~ msgid "Smooth point"
+#~ msgstr "Pehmeä piste"
+
+#~ msgid "Symmetric Point"
+#~ msgstr "Symmetrinen piste"
+
+#~ msgid "Make curve point"
+#~ msgstr "Tee kaaripiste"
+
+#~ msgid "Make line point"
+#~ msgstr "Tee viivapiste"
+
+#~ msgid "Segment to Line"
+#~ msgstr "Lohko viivaksi"
+
+#~ msgid "Segment to Curve"
+#~ msgstr "Lohko kaareksi"
+
+#~ msgid "Insert point"
+#~ msgstr "Lisää piste"
+
+#~ msgid "Remove point"
+#~ msgstr "Poista piste"
+
+#~ msgid "Break at point"
+#~ msgstr "Katkaise pisteestä"
+
+#~ msgid "Break at segment"
+#~ msgstr "Katkaise lohkon kohdalla"
+
+#~ msgid "Join with segment"
+#~ msgstr "Yhdistä lohkoon"
+
+#~ msgid "Merge points"
+#~ msgstr "Yhdistä pisteitä toisiinsa"
+
+#~ msgid "To Path"
+#~ msgstr "Polkuun"
+
+#~ msgid "Line/Curve"
+#~ msgstr "Viiva/kaari"
+
+#~ msgid "Drag to move handle."
+#~ msgstr "Siirrä kahvaa vetämällä."
+
+#~ msgid "Drag to move point. Shift click to change point type."
+#~ msgstr "Siirrä pistettä vetämällä. Muuta pisteen tyyppiä napsauttamalla."
+
+#~ msgid "Drag to move control point."
+#~ msgstr "Siirrä hallintapistettä vetämällä."
+
+#~ msgid ""
+#~ "Drag to change curve directly. Double click to insert new path point."
+#~ msgstr ""
+#~ "Muuta kaarta suoraan vetämällä. Lisää uusi piste kaksoisnapsauttamalla."
+
+#~ msgid "Press B to break path at selected point."
+#~ msgstr "Katkaise polku valitusta pisteestä painamalla B."
+
+#~ msgid "Press B to break path at selected segments."
+#~ msgstr "Katkaise polku valittujen lohkojen kohdalta painamalla B."
+
+#~ msgid "Path editing"
+#~ msgstr "Polun muokkaus"
+
+#~ msgid "Zoom"
+#~ msgstr "Zoomaus"
+
+#~ msgid "Zoom In"
+#~ msgstr "Lähennä"
+
+#~ msgid "Zoom Out"
+#~ msgstr "Loitonna"
+
+#~ msgid "..."
+#~ msgstr "…"
+
+#~ msgid "Convert To Path"
+#~ msgstr "Muunna poluksi"
+
+#~ msgid "Scripts"
+#~ msgstr "Komentosarjat"
+
+#~ msgid "Script Manager"
+#~ msgstr "Komentosarjojen hallinta"
+
+#~ msgid "Execute Script File..."
+#~ msgstr "Suorita komentosarjatiedosto…"
+
+#~ msgid "Script Manager..."
+#~ msgstr "Komentosarjojen hallinta…"
+
+#~ msgid "Execute Script File"
+#~ msgstr "Suorita komentosarjatiedosto"
+
+#~ msgid "Install Script Package"
+#~ msgstr "Asenna komentosarjapaketti"
+
+#~ msgid "Could not read the package \"%1\"."
+#~ msgstr "Komentosarjapaketin ”%1” lukeminen epäonnistui."
+
+#~ msgid "The package \"%1\" does not contain a valid install.rc file."
+#~ msgstr "Paketti ”%1” ei sisällä kelvollista install.rc-tiedostoa."
+
+#~ msgid "Failed to parse the install.rc file at package \"%1\"."
+#~ msgstr "Paketin  ”%1” tiedoston install.rc tulkitseminen epäonnistui."
+
+#~ msgid ""
+#~ "Failed to determinate location where the package \"%1\" should be "
+#~ "installed to."
+#~ msgstr "Ei voitu päätellä, minne paketti ”%1” tulisi asentaa."
+
+#~ msgid ""
+#~ "A script package with the name \"%1\" already exists. Replace this "
+#~ "package?"
+#~ msgstr "Komentosarjapaketti ”%1” on jo olemassa. Korvataanko se?"
+
+#~ msgid "Replace"
+#~ msgstr "Korvaa"
+
+#~ msgid ""
+#~ "Could not uninstall this script package. You may not have sufficient "
+#~ "permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Komentosarjapaketin poistaminen epäonnistui. Tarkista, että sinulla on "
+#~ "tarvittavat oikeudet kansioon ”%1”."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\" since the script is not "
+#~ "installed."
+#~ msgstr "Komentosarjapaketin %1 poistaminen epäonnistui. "
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\". You may not have "
+#~ "sufficient permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Komentosarjapaketin %1 poistaminen epäonnistui. Tarkista, että sinulla on "
+#~ "tarvittavat oikeudet kansioon ”%1”."
+
+#~ msgid "Save"
+#~ msgstr "Tallenna"
+
+#~ msgid ""
+#~ "<qt>This wizard will guide you through the proccess of adding a new "
+#~ "resource to your scripts.</qt>"
+#~ msgstr ""
+#~ "<qt>Tämä opastettu toiminto auttaa sinua lisäämään uuden lähteen "
+#~ "komentojonoillesi.</qt>"
+
+#~ msgid "Add script file"
+#~ msgstr "Lisää komentosarjatiedosto"
+
+#~ msgid "Add collection folder"
+#~ msgstr "Lisää kokoelmakansio"
+
+#~ msgid "Install script package file"
+#~ msgstr "Asenna komentosarjapaketti tiedostosta"
+
+#~ msgid "Install online script package"
+#~ msgstr "Asenna komentosarjapaketti verkosta"
+
+#~ msgid "Add"
+#~ msgstr "Lisää"
+
+#~ msgid "Script"
+#~ msgstr "Komentosarja"
+
+#~ msgid "Collection"
+#~ msgstr "Kokoelma"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master slide"
+#~ msgstr ""
+#~ "Muuta diapohjaa\n"
+#~ "diapohjan muuttaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master page"
+#~ msgstr ""
+#~ "Muuta sivupohjaa\n"
+#~ "sivupohjan muuttaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "Aseta sivun asettelu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display master background"
+#~ msgstr "Näytä pohjan tausta"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display slide background"
+#~ msgstr "Näytä dian tausta"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display page background"
+#~ msgstr "Näytä sivun tausta"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Show master shapes"
+#~ msgstr "Näytä pohjamuodot"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Hide master shapes"
+#~ msgstr "Piilota pohjamuodot"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] ""
+#~ "Poista dia\n"
+#~ "dian poisto"
+#~ msgstr[1] ""
+#~ "Poista diat\n"
+#~ "diojen poisto"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] ""
+#~ "Poista sivu\n"
+#~ "sivun poisto"
+#~ msgstr[1] ""
+#~ "Poista sivut\n"
+#~ "sivujen poisto"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr ""
+#~ "Lisää dia\n"
+#~ "dian lisäys"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr ""
+#~ "Lisää sivu\n"
+#~ "sivun lisäys"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] ""
+#~ "Siirrä dia\n"
+#~ "dian siirto"
+#~ msgstr[1] ""
+#~ "Siirrä diat\n"
+#~ "diojen siirto"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] ""
+#~ "Siirrä sivu\n"
+#~ "sivun siirto"
+#~ msgstr[1] ""
+#~ "Siirrä sivut\n"
+#~ "sivujen siirto"
+
+#~ msgid "Configure"
+#~ msgstr "Asetukset"
+
+#~ msgid "Misc"
+#~ msgstr "Sekalainen"
+
+#~ msgid "Grid"
+#~ msgstr "Ruudukko"
+
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "Tiedosto"
+
+#~ msgid "Document Settings"
+#~ msgstr "Tiedostoasetukset"
+
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "Tekijä"
+
+#~ msgid "Author"
+#~ msgstr "Tekijä"
+
+#~ msgid "Select a master slide design:"
+#~ msgstr "Valitse diapohjamalli:"
+
+#~ msgid "Master Slide"
+#~ msgstr "Diapohja"
+
+#~ msgid "Select a master page design:"
+#~ msgstr "Valitse sivupohjamalli:"
+
+#~ msgid "Master Page"
+#~ msgstr "Sivupohja"
+
+#~ msgid "Slide %1"
+#~ msgstr "Dia %1"
+
+#~ msgid "Page  %1"
+#~ msgstr "Sivu %1"
+
+#~ msgid "Layer"
+#~ msgstr "Taso"
+
+#~ msgid "Group"
+#~ msgstr "Ryhmä"
+
+#~ msgid "Shape"
+#~ msgstr "Muoto"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr ""
+#~ "Muuta dian nimeä\n"
+#~ "dian nimen muutos"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr ""
+#~ "Muuta sivun nimeä\n"
+#~ "sivun nimen muutos"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr ""
+#~ "Muuta tason nimeä\n"
+#~ "tason nimen muutos"
+
+#~ msgid "Slide"
+#~ msgstr "Dia"
+
+#~ msgid "Visible"
+#~ msgstr "Näkyvä"
+
+#~ msgid "Locked"
+#~ msgstr "Lukittu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reparent shapes"
+#~ msgstr "Muuta muotojen isäntiä"
+
+#~ msgid "&Move Here"
+#~ msgstr "&Siirrä tähän"
+
+#~ msgid "&Copy Here"
+#~ msgstr "&Kopioi tähän"
+
+#~ msgid "C&ancel"
+#~ msgstr "&Peru"
+
+#~ msgid "Document"
+#~ msgstr "Tiedosto"
+
+#~ msgid "Add a new slide or layer"
+#~ msgstr "Lisää uusi dia tai taso"
+
+#~ msgid "Add a new page or layer"
+#~ msgstr "Lisää uusi sivu tai taso"
+
+#~ msgid "Page"
+#~ msgstr "Sivu"
+
+#~ msgid "Delete selected objects"
+#~ msgstr "Poista valitut objektit"
+
+#~ msgid "Raise selected objects"
+#~ msgstr "Nosta valitut objektit"
+
+#~ msgid "Lower selected objects"
+#~ msgstr "Laske valitut objektit"
+
+#~ msgid "Minimal View"
+#~ msgstr "Vähimmäisnäkymä"
+
+#~ msgid "Detailed View"
+#~ msgstr "Yksityiskohtainen näkymä"
+
+#~ msgid "Thumbnail View"
+#~ msgstr "Pienoiskuvanäkymä"
+
+#~ msgid "View mode"
+#~ msgstr "Näkymä"
+
+#~ msgid "Enter the name of the new layer:"
+#~ msgstr "Anna uuden tason nimi:"
+
+#~ msgid "New Layer"
+#~ msgstr "Uusi taso"
+
+#~ msgid "New layer"
+#~ msgstr "Uusi taso"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "Luo taso"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "Poista taso"
+
+#~ msgid "Could not delete all layers. At least one layer is required."
+#~ msgstr "Kaikkia tasoja ei voitu poistaa. Tarvitaan ainakin yksi taso."
+
+#~ msgid "Error deleting layers"
+#~ msgstr "Virhe tasoja poistettaessa"
+
+#~ msgid "Add a new slide"
+#~ msgstr "Lisää uusi dia"
+
+#~ msgid "Add a new page"
+#~ msgstr "Lisää uusi sivu"
+
+#~ msgid "Page %1"
+#~ msgstr "Sivu %1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] ""
+#~ "Liitä dia\n"
+#~ "dian liittäminen"
+#~ msgstr[1] ""
+#~ "Liitä diat\n"
+#~ "diojen liittäminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] ""
+#~ "Liitä sivu\n"
+#~ "sivun liittäminen"
+#~ msgstr[1] ""
+#~ "Liitä sivut\n"
+#~ "sivujen liittäminen"
+
+#~ msgid "Tools"
+#~ msgstr "Työkalut"
+
+#~ msgid "D&elete"
+#~ msgstr "P&oista"
+
+#~ msgid "Show Master Pages"
+#~ msgstr "Näytä pohjasivut"
+
+#~ msgid "Show Rulers"
+#~ msgstr "Näytä viivaimet"
+
+#~ msgid "Show/hide the view's rulers"
+#~ msgstr "Näytä tai piilota viivaimet"
+
+#~ msgid "Insert Page"
+#~ msgstr "Lisää sivu"
+
+#~ msgid "Insert a new page after the current one"
+#~ msgstr "Lisää sivu nykyisen sivun jälkeen"
+
+#~ msgid "Copy Page"
+#~ msgstr "Kopioi sivu"
+
+#~ msgid "Copy the current page"
+#~ msgstr "Kopioi nykyinen sivu"
+
+#~ msgid "Delete Page"
+#~ msgstr "Poista sivu"
+
+#~ msgid "Delete the current page"
+#~ msgstr "Poista nykyinen sivu"
+
+#~ msgid "Master Page..."
+#~ msgstr "Pohjasivu…"
+
+#~ msgid "Page Layout..."
+#~ msgstr "Sivun asettelu…"
+
+#~ msgid "Variable"
+#~ msgstr "Muuttuja"
+
+#~ msgid "Import Document..."
+#~ msgstr "Tuo tiedosto…"
+
+#~ msgid "Configure..."
+#~ msgstr "Asetukset…"
+
+#~ msgid "Import Slideshow"
+#~ msgstr "Tuo diaesitys"
+
+#~ msgid "Import Document"
+#~ msgstr "Tuo tiedosto"
+
+#~ msgid ""
+#~ "Could not import\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ei voitu tuoda\n"
+#~ "%1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr "Muuta sivun asettelua"
+
+#~ msgid "Set image ..."
+#~ msgstr "Aseta kuva…"
+
+#~ msgid "Background"
+#~ msgstr "Tausta"
+
+#~ msgid "Page Background"
+#~ msgstr "Sivun tausta"
+
+#~ msgid "Page Design"
+#~ msgstr "Sivupohjamalli"
+
+#~ msgid "Slide Design"
+#~ msgstr "Diapohjamalli"
+
+#~ msgid "Use background of master page"
+#~ msgstr "Käytä sivupohjan taustaa"
+
+#~ msgid "Use background of master slide"
+#~ msgstr "Käytä diapohjan taustaa"
+
+#~ msgid "Display shapes of master page"
+#~ msgstr "Näytä sivupohjan muodot"
+
+#~ msgid "Display shapes of master slide"
+#~ msgstr "Näytä diapohjan muodot"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change slide background image"
+#~ msgstr ""
+#~ "Vaihda dian taustakuva\n"
+#~ "dian taustakuvan vaihtaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page background image"
+#~ msgstr ""
+#~ "Vaihda sivun taustakuva\n"
+#~ "sivun taustakuvan vaihtaminen"
+
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "Diapohja %1/%2"
+
+#~ msgid "Slide %1/%2"
+#~ msgstr "Dia %1/%2"
+
+#~ msgid "Master Page %1/%2"
+#~ msgstr "Sivupohja %1/%2"
+
+#~ msgid "Page %1/%2"
+#~ msgstr "Sivu %1/%2"
+
+#~ msgid "Check Box"
+#~ msgstr "Valintaruutu"
+
+#~ msgid "Field"
+#~ msgstr "Kenttä"
+
+#~ msgid "Label"
+#~ msgstr "Nimike"
+
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgid "Section Editor"
+#~ msgstr "Osamuokkain"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "Muuta luetteloa"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "Muuta tyylejä"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr ""
+#~ "Poista\n"
+#~ "poisto"
+
+#~ msgid "Key Press"
+#~ msgstr "Näppäinpainallus"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "Teksti"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr ""
+#~ "Poista sarake\n"
+#~ "sarakkeen poisto"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr ""
+#~ "Poista rivi\n"
+#~ "rivin poisto"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr ""
+#~ "Lisää alaviite\n"
+#~ "alaviitteen lisäys"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr ""
+#~ "Lisää loppuviite\n"
+#~ "loppuviitteen lisäys"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Right"
+#~ msgstr "Lisää sarake oikealle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr "Lisää sarake vasemmalle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Below"
+#~ msgstr "Lisää rivi alle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "Lisää rivi ylle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List Numbering"
+#~ msgstr "Muuta luettelon numerointia"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr ""
+#~ "Muotoilu\n"
+#~ "muotoilu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Direct Paragraph Formatting"
+#~ msgstr ""
+#~ "Suora kappaleen muotoilu\n"
+#~ "suora kappaleen muotoilu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr ""
+#~ "Muuta osan nimeä\n"
+#~ "osan nimen muutos"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr ""
+#~ "Muuta sarakkeen leveyttä\n"
+#~ "sarakkeen leveyden muuttaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Row Height"
+#~ msgstr ""
+#~ "Muuta rivin korkeutta\n"
+#~ "rivin korkeuden muuttaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "Liitä tekstinä"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "Liitä"
+
+#~ msgid "Index Reference"
+#~ msgstr "Hakemistoviite"
+
+#~ msgid "Text Reference"
+#~ msgstr "Tekstiviite"
+
+#~ msgid "Please create an index to reference first."
+#~ msgstr "Luo ensin viitteiden hakemisto."
+
+#~ msgid "Select the index you want to reference"
+#~ msgstr "Valitse hakemisto, johon haluat viitata"
+
+#~ msgid "Found 1 match"
+#~ msgid_plural "Found %1 matches"
+#~ msgstr[0] "Löytyi 1 osuma"
+#~ msgstr[1] "Löytyi %1 osumaa"
+
+#~ msgid "Found no match"
+#~ msgstr "Osumia ei löytynyt"
+
+#~ msgid ""
+#~ "Found no match\n"
+#~ "\n"
+#~ "No text was replaced"
+#~ msgstr ""
+#~ "Osumia ei löytynyt\n"
+#~ "\n"
+#~ "Tekstiä ei korvattu"
+
+#~ msgid "1 replacement made"
+#~ msgid_plural "%1 replacements made"
+#~ msgstr[0] "Tehtiin 1 korvaus"
+#~ msgstr[1] "Tehtiin %1 korvausta"
+
+#~ msgid "Replace %1 with %2?"
+#~ msgstr "Korvataanko %1 kohteella %2?"
+
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "Uusi osa %1"
+
+#~ msgctxt "Underline Style"
+#~ msgid "None"
+#~ msgstr "Ei alleviivausta"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "Yksinkertainen"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "Kaksinkertainen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "New Paragraph"
+#~ msgstr ""
+#~ "Uusi kappale\n"
+#~ "uuden kappaleen aloitus"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr ""
+#~ "Lisää kirjanmerkki\n"
+#~ "kirjanmerkin lisäys"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr ""
+#~ "Lisää merkintä\n"
+#~ "merkinnän lisäys"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr ""
+#~ "Lisää hakemisto\n"
+#~ "hakemiston lisäys"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr ""
+#~ "Lisää muuttuja\n"
+#~ "muuttujan lisäys"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Key Press"
+#~ msgstr ""
+#~ "Näppäinpainallus\n"
+#~ "näppäinpainallus"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr ""
+#~ "Lisää vaihto\n"
+#~ "vaihdon lisäys"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr ""
+#~ "Lisää taulukko\n"
+#~ "taulukon lisäys"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr ""
+#~ "Yhdistä solut\n"
+#~ "solujen yhdistäminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr ""
+#~ "Jaa solut\n"
+#~ "solujen jakaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr ""
+#~ "Muuta taulukon leveyttä\n"
+#~ "taulukon leveyden muuttaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Border Formatting"
+#~ msgstr ""
+#~ "Muuta reunan muotoilua\n"
+#~ "reunan muotoilun muuttaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Lisää sisällysluettelo"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr ""
+#~ "Muuta sisällysluetteloa\n"
+#~ "sisällysluettelon muuttaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Lisää lähdeluettelo"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "Lisää lähdeviite"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Typing"
+#~ msgstr ""
+#~ "Kirjoitus\n"
+#~ "kirjoitus"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr ""
+#~ "Lihavointi\n"
+#~ "lihavointi"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr ""
+#~ "Kursiivi\n"
+#~ "kursivointi"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr ""
+#~ "Alleviivaus\n"
+#~ "alleviivaus"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr ""
+#~ "Yliviivaus\n"
+#~ "yliviivaus"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr ""
+#~ "Muuta tasausta\n"
+#~ "tasauksen muuttaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr ""
+#~ "Aseta pystytasaus\n"
+#~ "pystytasauksen asettaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr ""
+#~ "Vähennä sisennystä\n"
+#~ "sisennyksen vähentäminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr ""
+#~ "Kasvata sisennystä\n"
+#~ "sisennyksen kasvattaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr ""
+#~ "Pienennä fonttikokoa\n"
+#~ "fonttikoon pienentäminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr ""
+#~ "Kasvata fonttikokoa\n"
+#~ "fonttikoon kasvattaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr ""
+#~ "Aseta fontti\n"
+#~ "fontin asettaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr ""
+#~ "Aseta fonttikoko\n"
+#~ "fonttikoon asettaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr ""
+#~ "Aseta taustaväri\n"
+#~ "taustavärin asettaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Text Color"
+#~ msgstr ""
+#~ "Aseta tekstiväri\n"
+#~ "tekstivärin asettaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr ""
+#~ "Aseta merkkityyli\n"
+#~ "merkkityylin asettaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Paragraph Style"
+#~ msgstr ""
+#~ "Aseta kappaletyyli\n"
+#~ "kappaletyylin asettaminen"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr ""
+#~ "Muotoilu\n"
+#~ "muotoilu"
+
+#~ msgid "Default"
+#~ msgstr "Oletus"
+
+#~ msgctxt "Default text for undo action"
+#~ msgid "Undo"
+#~ msgstr "Kumoa"
+
+#~ msgid "Undo %1"
+#~ msgstr "Kumoa %1"
+
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "Tee uudelleen"
+
+#~ msgid "Redo %1"
+#~ msgstr "Tee %1 uudelleen"
+
+#~ msgid "<empty>"
+#~ msgstr "<tyhjä>"
+
+#~ msgid "Redo"
+#~ msgstr "Tee uudelleen"
+
+#~ msgid "Undo"
+#~ msgstr "Kumoa"
+
+#~ msgid "&File"
+#~ msgstr "Tiedosto"
+
+#~ msgid "&Settings"
+#~ msgstr "Asetukset"
+
+#~ msgid "File"
+#~ msgstr "Tiedosto"
+
+#~ msgid "Add new author profile (starts out as a copy of current)"
+#~ msgstr "Lisää uusi tekijäprofiili (joka on aluksi nykyisen kopio)"
+
+#~ msgid "Delete the author profile"
+#~ msgstr "Poista tekijäprofiili"
+
+#~ msgid "Default Author Profile"
+#~ msgstr "Oletustekijäprofiili"
+
+#~ msgid "Name (not duplicate or blank name):"
+#~ msgstr "Nimi (ei saa olla kaksoiskappale tai tyhjä):"
+
+#~ msgid "Name of Profile"
+#~ msgstr "Profiilin nimi"
+
+#~ msgid "Name:"
+#~ msgstr "Nimi:"
+
+#~ msgid "Initials:"
+#~ msgstr "Nimikirjaimet:"
+
+#~ msgid "Title:"
+#~ msgstr "Otsikko:"
+
+#~ msgid "Position:"
+#~ msgstr "Asema:"
+
+#~ msgid "Company:"
+#~ msgstr "Yritys:"
+
+#~ msgid "Email:"
+#~ msgstr "Sähköposti:"
+
+#~ msgid "Telephone (home):"
+#~ msgstr "Puhelin (koti):"
+
+#~ msgid "Telephone (work):"
+#~ msgstr "Puhelin (työ):"
+
+#~ msgid "Fax:"
+#~ msgstr "Faksi:"
+
+#~ msgid "Street:"
+#~ msgstr "Katuosoite:"
+
+#~ msgid "City:"
+#~ msgstr "Kaupunki:"
+
+#~ msgid "Country:"
+#~ msgstr "Maa:"
+
+#~ msgid "No autosave"
+#~ msgstr "Ei automaattitallennusta"
+
+#~ msgctxt "unit symbol for minutes, leading space as separator"
+#~ msgid " min"
+#~ msgstr " min"
+
+#~ msgid "Autosave interval:"
+#~ msgstr "Automaattitallennusväli:"
+
+#~ msgid "Create backup file:"
+#~ msgstr "Luo varmuuskopiotiedosto:"
+
+#~ msgid "Show grid:"
+#~ msgstr "Näytä ruudukko:"
+
+#~ msgid "Snap to grid:"
+#~ msgstr "Kiinnitä ruudukkoon:"
+
+#~ msgid "Grid color:"
+#~ msgstr "Ruudukon väri:"
+
+#~ msgid "Spacing"
+#~ msgstr "Välistys"
+
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "&Vaakasuuntaan:"
+
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "&Pystysuuntaan:"
+
+#~ msgid "Units:"
+#~ msgstr "Yksikkö:"
+
+#~ msgid "Handle radius:"
+#~ msgstr "Kahvan säde:"
+
+#~ msgid "Grab sensitivity:"
+#~ msgstr "Tarttumaherkkyys:"
+
+#~ msgid "Paste offset:"
+#~ msgstr "Liittämisen siirtymä:"
+
+#~ msgid "Paste at Cursor:"
+#~ msgstr "Liitä kohdistimen kohdalle:"
+
+#~ msgid "Only print and exit"
+#~ msgstr "Tulosta ja lopeta heti"
+
+#~ msgid "Open a new document with a template"
+#~ msgstr "Avaa uusi tiedosto käyttäen mallipohjaa"
+
+#~ msgid "Override display DPI"
+#~ msgstr "Ohita näytön DPI"
+
+#~ msgid "Only export to PDF and exit"
+#~ msgstr "Vie PDF:ksi ja lopeta heti"
+
+#~ msgid "Filename for export-pdf"
+#~ msgstr "Viedyn PDF:n tiedostonimi"
+
+#~ msgid "just load the file and then exit"
+#~ msgstr "avaa tiedosto ja lopeta heti"
+
+#~ msgid "load the file, show the window and progressbar and then exit"
+#~ msgstr "avaa tiedosto, näytä ikkuna ja edistymispalkki ja lopeta heti"
+
+#~ msgid "Filename to write profiling information into."
+#~ msgstr "Tiedostonimi, johon profilointitieto kirjoitetaan."
+
+#~ msgid "Load a file and save it as an ODF file. Meant for debugging."
+#~ msgstr ""
+#~ "Avaa tiedosto ja tallenna se ODF-tiedostoksi. Tarkoitettu "
+#~ "vianjäljitykseen."
+
+#~ msgid "Calligra"
+#~ msgstr "Calligra"
+
+#~ msgid ""
+#~ "You are running a 32 bits build on a 64 bits Windows.\n"
+#~ "This is not recommended.\n"
+#~ "Please download and install the x64 build instead."
+#~ msgstr ""
+#~ "Ajat 32-bittistä ohjelmaa 64-bittisessä Windowsissa.\n"
+#~ "Tätä ei suositella.\n"
+#~ "Lataa ja asenna mieluummin x64-ohjelma."
+
+#~ msgid "%1: Critical Error"
+#~ msgstr "%1: Vakava virhe"
+
+#~ msgid ""
+#~ "Essential application components could not be found.\n"
+#~ "This might be an installation issue.\n"
+#~ "Try restarting or reinstalling."
+#~ msgstr ""
+#~ "Sovelluksen olennaisia osia ei löytynyt.\n"
+#~ "Tämä voi merkitä asennusvirhettä.\n"
+#~ "Yritä käynnistää tai asentaa uudelleen."
+
+#~ msgid "No template found for: %1"
+#~ msgstr "Mallipohjaa ei löytynyt kohteelle: %1"
+
+#~ msgid "Too many templates found for: %1"
+#~ msgstr "Löytyi liian monta mallipohjaa kohteelle: %1"
+
+#~ msgid "Template %1 failed to load."
+#~ msgstr "Mallipohjaa %1 ei voitu ladata."
+
+#~ msgctxt "@title:window"
+#~ msgid "Recover Files"
+#~ msgstr "Tiedostojen palautus"
+
+#~ msgid "The following autosave file can be recovered:"
+#~ msgstr "Seuraava automaattisesti tallennettu tiedosto voidaan palauttaa:"
+
+#~ msgid "The following autosave files can be recovered:"
+#~ msgstr "Seuraavat automaattisesti tallennetut tiedostot voidaan palauttaa:"
+
+#~ msgid "Always use this template at application start up"
+#~ msgstr "Käytä aina tätä pohjaa sovelluksen käynnistyessä"
+
+#~ msgid "Always use this template"
+#~ msgstr "Käytä aina tätä pohjaa"
+
+#~ msgid "Making backup..."
+#~ msgstr "Luodaan varmuuskopiota…"
+
+#~ msgid "Saving..."
+#~ msgstr "Tallennetaan…"
+
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ei voitu tallentaa\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Ei voitu tallentaa tiedostoa %1\n"
+#~ "Virhe: %2"
+
+#~ msgid "Document <i>%1</i> saved"
+#~ msgstr "Tiedosto <i>%1</i> tallennettu"
+
+#~ msgid ""
+#~ "The password of this encrypted document is not known. Autosave aborted! "
+#~ "Please save your work manually."
+#~ msgstr ""
+#~ "Tämän salatun tiedoston salasanaa ei tiedetä. Automaattinen tallennus "
+#~ "keskeytyi! Tallenna tiedosto käsin."
+
+#~ msgid "Autosaving..."
+#~ msgstr "Tallennetaan automaattisesti…"
+
+#~ msgid "Error during autosave! Partition full?"
+#~ msgstr ""
+#~ "Automaattinen tallentaminen epäonnistui! Onko kiintolevytila täynnä?"
+
+#~ msgid "Could not create the file for saving"
+#~ msgstr "Ei voitu luoda tiedostoa tallennusta varten"
+
+#~ msgid "Not able to write '%1'. Partition full?"
+#~ msgstr "Ei voitu kirjoittaa tiedostoa ”%1”. Levyosio täynnä?"
+
+#~ msgid "Not able to write RDF metadata. Partition full?"
+#~ msgstr "Ei voitu kirjoittaa RDF-metatietoa. Levyosio täynnä?"
+
+#~ msgid "Error while trying to write '%1'. Partition full?"
+#~ msgstr "Ei voitu kirjoittaa tiedostoa ”%1”. Levyosio täynnä?"
+
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Virheellinen verkko-osoite\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "An autosaved file exists for this document.\n"
+#~ "Do you want to open it instead?"
+#~ msgstr ""
+#~ "Tästä tiedostosta on automaattisesti tallennettu versio.\n"
+#~ "Haluatko avata sen?"
+
+#~ msgid "The file %1 does not exist."
+#~ msgstr "Tiedostoa %1 ei ole olemassa."
+
+#~ msgid "Opening Document"
+#~ msgstr "Avataan tiedostoa"
+
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "Ei voitu luoda suodatinliitännäistä"
+
+#~ msgid "File not found"
+#~ msgstr "Tiedostoa ei löydy"
+
+#~ msgid "Cannot create storage"
+#~ msgstr "Tallennustilaa ei voi luoda"
+
+#~ msgid "Bad MIME type"
+#~ msgstr "Virheellinen MIME-tyyppi"
+
+#~ msgid "Format not recognized"
+#~ msgstr "Muotoa ei tunnistettu"
+
+#~ msgid "Not implemented"
+#~ msgstr "Ei toteutettu"
+
+#~ msgid "Parsing error"
+#~ msgstr "Jäsennysvirhe"
+
+#~ msgid "Document is password protected"
+#~ msgstr "Tiedosto on suojattu salasanalla"
+
+#~ msgid "Invalid file format"
+#~ msgstr "Virheellinen tiedostomuoto"
+
+#~ msgid "Internal error"
+#~ msgstr "Sisäinen virhe"
+
+#~ msgid "Out of memory"
+#~ msgstr "Muisti loppui"
+
+#~ msgid "Empty Filter Plugin"
+#~ msgstr "Tyhjä suodatinliitännäinen"
+
+#~ msgid "Trying to load into the wrong kind of document"
+#~ msgstr "Yritettiin ladata vääräntyyppiseen tiedostoon"
+
+#~ msgid "Failed to download remote file"
+#~ msgstr "Etätiedoston lataaminen epäonnistui"
+
+#~ msgid "Unknown error"
+#~ msgstr "Tuntematon virhe"
+
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr ""
+#~ "Ei voitu avata tiedostoa\n"
+#~ "%2.\n"
+#~ "Syy: %1.\n"
+#~ "%3"
+
+#~ msgid "Document <i>%1</i> loaded"
+#~ msgstr "Tiedosto <i>%1</i> ladattu"
+
+#~ msgid "Could not find %1"
+#~ msgstr "%1 ei löytynyt"
+
+#~ msgid ""
+#~ "Parsing error in %1 at line %2, column %3\n"
+#~ "Error message: %4"
+#~ msgstr ""
+#~ "Jäsennysvirhe tiedostossa %1 rivillä %2, sarakkeessa %3.\n"
+#~ "Virheilmoitus: %4"
+
+#~ msgid "%1 is not a file."
+#~ msgstr "%1 ei ole tiedosto."
+
+#~ msgid "Could not open the file for reading (check read permissions)."
+#~ msgstr "Tiedostoa ei voitu avata luettavaksi (tarkista tiedoston oikeudet)."
+
+#~ msgid "Could not read the beginning of the file."
+#~ msgstr "Ei voitu lukea tiedoston alkua."
+
+#~ msgid ""
+#~ "parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Jäsennysvirhe päätiedostossa rivillä %1, sarakkeessa %2.\n"
+#~ "Virheilmoitus: %3"
+
+#~ msgid "Not a valid Calligra file: %1"
+#~ msgstr "Ei kelvollinen Calligra-tiedosto: %1"
+
+#~ msgid "Invalid document: no file 'maindoc.xml'."
+#~ msgstr "Virheellinen tiedosto: ei sisällä tiedostoa ”maindoc.xml”."
+
+#~ msgid ""
+#~ "Document <i>%1</i> contains several versions. Go to File->Versions to "
+#~ "open an old version."
+#~ msgstr ""
+#~ "Tiedosto <i>%1</i> sisältää useita versioita. Voit avata vanhemman "
+#~ "version valitsemalla Tiedosto->Versiot."
+
+#~ msgid "Untitled"
+#~ msgstr "Nimetön"
+
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr ""
+#~ "<p>Tiedostoa <b>”%1”</b> on muutettu.</p><p>Haluatko tallentaa muutokset?"
+#~ "</p>"
+
+#~ msgid "Internal error: saveXML not implemented"
+#~ msgstr "Sisäinen virhe: saveXML:ää ei toteutettu"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Kohteen avaus epäonnistui\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Ei voitu avata tiedostoa %1\n"
+#~ "%2"
+
+#~ msgid "a word processing"
+#~ msgstr "tekstinkäsittely"
+
+#~ msgid "a spreadsheet"
+#~ msgstr "taulukko"
+
+#~ msgid "a presentation"
+#~ msgstr "esitys"
+
+#~ msgid "a chart"
+#~ msgstr "kaavio"
+
+#~ msgid "a drawing"
+#~ msgstr "piirros"
+
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr ""
+#~ "Tiedostoa ”%1” on muutettu.\n"
+#~ "Haluatko tallentaa muutokset vai hylätä ne?"
+
+#~ msgid "Close Document"
+#~ msgstr "Sulje tiedosto"
+
+#~ msgid "%1 %"
+#~ msgstr "%1 %"
+
+#~ msgid "No"
+#~ msgstr "Ei"
+
+#~ msgid "Yes"
+#~ msgstr "Kyllä"
+
+#~ msgid "Could not export file."
+#~ msgstr "Tiedostoa ei voitu viedä."
+
+#~ msgid "Missing Export Filter"
+#~ msgstr "Puuttuva vientisuodatin"
+
+#~ msgid ""
+#~ "Could not import file of type\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ei voitu tuoda tiedostoa, jonka tyyppi on\n"
+#~ "%1"
+
+#~ msgid "Missing Import Filter"
+#~ msgstr "Puuttuva tuontisuodatin"
+
+#~ msgid "Choose Filter"
+#~ msgstr "Valitse suodatin"
+
+#~ msgid "Case Sensitive"
+#~ msgstr "Erota pien- ja suuraakkoset"
+
+#~ msgid "Match cases when searching"
+#~ msgstr "Erota pien- ja suuraakkoset etsittäessä"
+
+#~ msgid "Match only whole words"
+#~ msgstr "Etsi vain kokonaisia sanoja"
+
+#~ msgid "Whole Words Only"
+#~ msgstr "Vain kokonaiset sanat"
+
+#~ msgid "Find from Cursor"
+#~ msgstr "Etsi kohdistimesta alkaen"
+
+#~ msgid "Start searching from the current cursor"
+#~ msgstr "Aloita haku kohdistimen kohdalta"
+
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "Etsi:"
+
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "Seuraava"
+
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "Edellinen"
+
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "Asetukset"
+
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "Korvaa:"
+
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "Korvaa"
+
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "Korvaa kaikki"
+
+#~ msgctxt "Total number of matches"
+#~ msgid "1 match found"
+#~ msgid_plural "%1 matches found"
+#~ msgstr[0] "Löytyi 1 osuma"
+#~ msgstr[1] "Löytyi %1 osumaa"
+
+#~ msgid "No matches found"
+#~ msgstr "Osumia ei löytynyt"
+
+#~ msgid "Search hit bottom, continuing from top."
+#~ msgstr "Haku saavutti tiedoston lopun, jatketaan alusta."
+
+#~ msgid "Search hit top, continuing from bottom."
+#~ msgstr "Haku saavutti tiedoston alun, jatketaan lopusta."
+
+#~ msgid "%1 unsaved document (%2)"
+#~ msgstr "%1 tallentamaton tiedosto (%2)"
+
+#~ msgid "Export as PDF..."
+#~ msgstr "Vie PDF:ksi…"
+
+#~ msgid "Reload"
+#~ msgstr "Lataa uudelleen"
+
+#~ msgid "Versions..."
+#~ msgstr "Versiot…"
+
+#~ msgid "Open ex&isting Document as Untitled Document..."
+#~ msgstr "Avaa muu asiakirja nimettömänä asiakirjana…"
+
+#~ msgid "E&xport..."
+#~ msgstr "&Vie…"
+
+#~ msgid "En&crypt Document"
+#~ msgstr "Salaa &tiedosto"
+
+#~ msgid "&Uncompress to Directory"
+#~ msgstr "P&ura kansioon"
+
+#~ msgid "&New View"
+#~ msgstr "&Uusi näkymä"
+
+#~ msgid "Document Information"
+#~ msgstr "Tiedoston tiedot"
+
+#~ msgid "Full Screen Mode"
+#~ msgstr "Koko näytön tila"
+
+#~ msgid "Show Dockers"
+#~ msgstr "Näytä telakat"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "Näytä telakoiden otsikkopalkit"
+
+#~ msgid "Dockers"
+#~ msgstr "Telakat"
+
+#~ msgid "(write protected)"
+#~ msgstr "(kirjoitussuojattu)"
+
+#~ msgid "Save as %1"
+#~ msgstr "Tallenna nimellä %1"
+
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "%1 (tuntematon tiedostotyyppi)"
+
+#~ msgid ""
+#~ "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
+#~ "want to save in this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Tiedoston muotoilu saattaa muuttua %1-muotoon tallennettaessa. "
+#~ "<p>Haluatko varmasti muuntaa tähän muotoon?</qt>"
+
+#~ msgid "Confirm Save"
+#~ msgstr "Vahvista tallennus"
+
+#~ msgid ""
+#~ "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you "
+#~ "still want to export to this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Tiedoston muotoilu saattaa muuttua %1-muotoon tallennettaessa."
+#~ "<p>Haluatko varmasti muuntaa tähän muotoon?</qt>"
+
+#~ msgid "Confirm Export"
+#~ msgstr "Vahvista muuntaminen"
+
+#~ msgid "untitled"
+#~ msgstr "nimetön"
+
+#~ msgid "Open Document"
+#~ msgstr "Avaa tiedosto"
+
+#~ msgid "Export as PDF"
+#~ msgstr "Vie PDF:ksi"
+
+#~ msgid "Cannot export to the specified file"
+#~ msgstr "Annettuun tiedostoon ei voi viedä"
+
+#~ msgid "Document - %1"
+#~ msgstr "Tiedosto – %1"
+
+#~ msgid ""
+#~ "You will lose all changes made since your last save\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "Kaikki tallennuksen jälkeiset muutokset menetetään.\n"
+#~ "Haluatko varmasti jatkaa?"
+
+#~ msgid "Warning"
+#~ msgstr "Varoitus"
+
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "Näytä työkalurivi %1"
+
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "Piilota työkalurivi %1"
+
+#~ msgid "Open Existing Document"
+#~ msgstr "Avaa muu tiedosto"
+
+#~ msgid "Recent Documents"
+#~ msgstr "Avaa viimeaikainen"
+
+#~ msgid "Custom Document"
+#~ msgstr "Oma tiedosto"
+
+#~ msgid "Stop"
+#~ msgstr "Pysäytä"
+
+#~ msgid "Printing"
+#~ msgstr "Tulostetaan"
+
+#~ msgid "Printing done"
+#~ msgstr "Tulostus valmis"
+
+#~ msgid "Close"
+#~ msgstr "Sulje"
+
+#~ msgid "Stopped"
+#~ msgstr "Pysäytetty"
+
+#~ msgid "Open This Document"
+#~ msgstr "Avaa tämä tiedosto"
+
+#~ msgctxt "File modification date and time. %1 is date time"
+#~ msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Muutettu:</b></td><td>%1</td></tr>"
+
+#~ msgctxt "File access date and time. %1 is date time"
+#~ msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Avattu:</b></td><td>%1</td></tr>"
+
+#~ msgid "Show Guides"
+#~ msgstr "Näytä apuviivat"
+
+#~ msgid "Shows or hides guides"
+#~ msgstr "Näytä tai piilota apuviivat"
+
+#~ msgid "Create Template"
+#~ msgstr "Luo pohja"
+
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "Nimi:"
+
+#~ msgid "Group:"
+#~ msgstr "Ryhmä:"
+
+#~ msgid "&Add Group..."
+#~ msgstr "&Lisää ryhmä…"
+
+#~ msgid "&Remove"
+#~ msgstr "&Poista "
+
+#~ msgid "Picture"
+#~ msgstr "Kuva"
+
+#~ msgid "&Preview"
+#~ msgstr "&Esikatselu"
+
+#~ msgid "Custom:"
+#~ msgstr "Oma:"
+
+#~ msgid "&Select..."
+#~ msgstr "&Valitse…"
+
+#~ msgid "Use the new template as default"
+#~ msgstr "Käytä pohjaa oletuspohjana"
+
+#~ msgid "Use the new template every time %1 starts"
+#~ msgstr "Käytä pohjaa aina kun %1 käynnistyy"
+
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr "Haluatko varmasti korvata pohjan \"%1\"?"
+
+#~ msgid "Add Group"
+#~ msgstr "Lisää ryhmä"
+
+#~ msgid "Enter group name:"
+#~ msgstr "Anna ryhmän nimi:"
+
+#~ msgid "This name is already used."
+#~ msgstr "Nimi on jo käytössä."
+
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "Haluatko varmasti poistaa tämän ryhmän?"
+
+#~ msgid "Remove Group"
+#~ msgstr "Poista ryhmä"
+
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "Haluatko varmasti poistaa tämän pohjan?"
+
+#~ msgid "Remove Template"
+#~ msgstr "Poista pohja"
+
+#~ msgid "&Delete"
+#~ msgstr "&Poista"
+
+#~ msgid "Could not load picture."
+#~ msgstr "Ei voitu avata kuvaa."
+
+#~ msgid "No picture available."
+#~ msgstr "Ei kuvaa."
+
+#~ msgid "Use This Template"
+#~ msgstr "Käytä tätä pohjaa"
+
+#~ msgid "Version"
+#~ msgstr "Versio"
+
+#~ msgid "Date & Time"
+#~ msgstr "Päivä ja aika"
+
+#~ msgid "Saved By"
+#~ msgstr "Tallentanut"
+
+#~ msgid "Comment"
+#~ msgstr "Kommentti"
+
+#~ msgid "&Add"
+#~ msgstr "&Lisää"
+
+#~ msgid "&Modify"
+#~ msgstr "&Muuta"
+
+#~ msgid "&Open"
+#~ msgstr "&Avaa"
+
+#~ msgid "A new version could not be added"
+#~ msgstr "Uutta versiota ei voitu lisätä"
+
+#~ msgid "Date: %1"
+#~ msgstr "Päivämäärä: %1"
+
+#~ msgid "Active Author Profile"
+#~ msgstr "Aktiivinen tekijäprofiili"
+
+#~ msgctxt "choice for author profile"
+#~ msgid "Anonymous"
+#~ msgstr "Nimetön"
+
+#~ msgid "Unknown"
+#~ msgstr "Tuntematon"
+
+#~ msgid ""
+#~ "This document contains an unknown checksum. When you give a password it "
+#~ "might not be verified."
+#~ msgstr ""
+#~ "Tiedoston tarkistussumma on tuntematon. Kun annat salasanan, sitä ei "
+#~ "kenties vahvisteta."
+
+#~ msgid ""
+#~ "This document contains an unknown encryption method. Some parts may be "
+#~ "unreadable."
+#~ msgstr ""
+#~ "Tiedoston salausmenetelmä on tuntematon. Tiedosto voi olla osin "
+#~ "lukukelvoton."
+
+#~ msgid ""
+#~ "This document contains incomplete encryption data. Some parts may be "
+#~ "unreadable."
+#~ msgstr ""
+#~ "Tiedoston salausmenetelmän tiedot ovat epätäydellisiä. Tiedosto voi olla "
+#~ "osin lukukelvoton."
+
+#~ msgid ""
+#~ "QCA has currently no support for SHA1 or PBKDF2 using SHA1. The document "
+#~ "can not be opened."
+#~ msgstr ""
+#~ "QCA ei toistaiseksi tue SHA1 tai PBKDF2 käyttäen SHA1. Tiedoston "
+#~ "avaaminen epäonnistui."
+
+#~ msgid ""
+#~ "The manifest file seems to be corrupted. It cannot be modified and the "
+#~ "document will remain unreadable. Please try and save the document again "
+#~ "to prevent losing your work."
+#~ msgstr ""
+#~ "Tiedosto vaikuttaa vialliselta. Sitä ei voitu muuttaa ja tiedosto pysyy "
+#~ "lukukelvottomana. Yritä tallentaa tiedosto uudestaan jotta et menettäisi "
+#~ "työtäsi."
+
+#~ msgid ""
+#~ "The manifest file cannot be written. The document will remain unreadable. "
+#~ "Please try and save the document again to prevent losing your work."
+#~ msgstr ""
+#~ "Tiedostoa ei voitu kirjoittaa ja tiedosto pysyy lukukelvottomana. Yritä "
+#~ "tallentaa tiedosto uudestaan jotta et menettäisi työtäsi."
+
+#~ msgid "Please enter the password to open this file."
+#~ msgstr "Anna salasana tiedoston avaamiseksi."
+
+#~ msgid "Please enter the password to encrypt the document with."
+#~ msgstr "Anna salasana tiedoston salaamiseksi."
+
+#~ msgid "Do you want to save the password?"
+#~ msgstr "Haluatko tallentaa salasanan?"
+
+#~ msgid "No store backend"
+#~ msgstr "Ei varastotaustaosaa"
+
+#~ msgid ""
+#~ "Parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Jäsennysvirhe päätiedostossa rivillä %1, sarakkeessa %2.\n"
+#~ "Virheilmoitus: %3"
+
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "Screen"
+
+#~ msgid "The directory mode is not supported for remote locations."
+#~ msgstr "Hakemistotilaa ei voi käyttää etäyhteyksissä."
+
+#~ msgid "Calligra Storage"
+#~ msgstr "Calligran tallennustila"
+
+#~ msgid "Clear"
+#~ msgstr "Poista"
+
+#~ msgid "Subtract"
+#~ msgstr "Vähennä"
+
+#~ msgid "Multiply"
+#~ msgstr "Kerro"
+
+#~ msgid "Alpha mask"
+#~ msgstr "Alfapeite"
+
+#~ msgid "Alpha"
+#~ msgstr "alpha"
+
+#~ msgid "Undefined operation in the alpha color space"
+#~ msgstr "Tuntematon toimenpide alfaväriavaruudessa"
+
+#~ msgid "L*a*b* (16-bit integer/channel, unmanaged)"
+#~ msgstr "L*a*b* (16-bittinen kokonaisluku/kanava, ei hallittu)"
+
+#~ msgid "Lightness"
+#~ msgstr "Valoisuus"
+
+#~ msgid "a*"
+#~ msgstr "a*"
+
+#~ msgid "b*"
+#~ msgstr "b*"
+
+#~ msgid "RGB (16-bit integer/channel, unmanaged)"
+#~ msgstr "RGB (16-bittinen kokonaisluku/kanava, ei hallittu)"
+
+#~ msgid "RGB (8-bit integer/channel, unmanaged)"
+#~ msgstr "RGB (8-bittinen kokonaisluku/kanava, ei hallittu)"
+
+#~ msgid "Blue"
+#~ msgstr "Sininen"
+
+#~ msgid "Green"
+#~ msgstr "Vihreä"
+
+#~ msgid "Red"
+#~ msgstr "Punainen"
+
+#~ msgid "Undefined operation in the %1 space"
+#~ msgstr "Tuntematon toimenpide %1-avaruudessa"
+
+#~ msgid "Undefined operation in the %1 color space"
+#~ msgstr "Tuntematon toimenpide %1-väriavaruudessa"
+
+#~ msgid "Simple Color Conversion Engine"
+#~ msgstr "Yksinkertainen värinmuunnosmoottori"
+
+#~ msgid "Alpha darken"
+#~ msgstr "Alfatummennus"
+
+#~ msgid "Behind"
+#~ msgstr "Takana"
+
+#~ msgid "Dissolve"
+#~ msgstr "Häivytä"
+
+#~ msgid "Erase"
+#~ msgstr "Pyyhi"
+
+#~ msgid "Normal"
+#~ msgstr "Normaali"
+
+#~ msgid "Overlay"
+#~ msgstr "Kerrostus"
+
+#~ msgid "Hard Mix"
+#~ msgstr "Kova sekoitus"
+
+#~ msgid "Geometric Mean"
+#~ msgstr "Geometrinen keskiarvo"
+
+#~ msgid "Parallel"
+#~ msgstr "Rinnakkainen"
+
+#~ msgid "Color Dodge"
+#~ msgstr "Värin väistö"
+
+#~ msgid "Linear Dodge"
+#~ msgstr "Lineaarinen väistö"
+
+#~ msgid "Lighten"
+#~ msgstr "Vaalenna"
+
+#~ msgid "Hard Light"
+#~ msgstr "Kova valo"
+
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "Pehmeä valo (SVG)"
+
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "Pehmeä valo (Photoshop)"
+
+#~ msgid "Gamma Light"
+#~ msgstr "Gammavaalea"
+
+#~ msgid "Vivid Light"
+#~ msgstr "Eloisa valo"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Pin Light"
+#~ msgstr "Vaalenna"
+
+#~ msgid "Linear Light"
+#~ msgstr "Lineaarinen valo"
+
+# *** TARKISTA: onko termiä?
+#~ msgid "Color Burn"
+#~ msgstr "Väripoltto"
+
+#~ msgid "Linear Burn"
+#~ msgstr "Lineaarinen poltto"
+
+#~ msgid "Darken"
+#~ msgstr "Tummenna"
+
+#~ msgid "Gamma Dark"
+#~ msgstr "Gammatumma"
+
+# Oletus: liittyy yhteensä viereisten id:iden kanssa, jotka käskymuotoisia verbejä
+#~ msgid "Addition"
+#~ msgstr "Lisää"
+
+#~ msgid "Divide"
+#~ msgstr "Jaa"
+
+#~ msgid "Arcus Tangent"
+#~ msgstr "Arkustangentti"
+
+#~ msgid "Difference"
+#~ msgstr "Ero"
+
+#~ msgid "Equivalence"
+#~ msgstr "Ekvivalenssi"
+
+#~ msgid "Additive-Subtractive"
+#~ msgstr "Additiivis-subtraktiivinen"
+
+#~ msgid "Copy Red"
+#~ msgstr "Kopioi punainen"
+
+#~ msgid "Copy Green"
+#~ msgstr "Kopioi vihreä"
+
+#~ msgid "Copy Blue"
+#~ msgstr "Kopioi sininen"
+
+#~ msgid "Color"
+#~ msgstr "Väri"
+
+#~ msgid "Hue"
+#~ msgstr "Sävy"
+
+#~ msgid "Saturation"
+#~ msgstr "Kylläisyys"
+
+#~ msgid "Increase Saturation"
+#~ msgstr "Lisää kylläisyyttä"
+
+#~ msgid "Decrease Saturation"
+#~ msgstr "Vähennä kylläisyyttä"
+
+#~ msgid "Luminosity"
+#~ msgstr "Kirkkaus"
+
+#~ msgid "Increase Luminosity"
+#~ msgstr "Lisää kirkkautta"
+
+#~ msgid "Decrease Luminosity"
+#~ msgstr "Vähennä kirkkautta"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgid "Darker Color"
+#~ msgstr "Taustaväri"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgid "Lighter Color"
+#~ msgstr "Viivan väri"
+
+#~ msgid "Color HSI"
+#~ msgstr "Väri (HSI)"
+
+#~ msgid "Hue HSI"
+#~ msgstr "Sävy (HSI)"
+
+#~ msgid "Saturation HSI"
+#~ msgstr "Kylläisyys (HSI)"
+
+#~ msgid "Increase Saturation HSI"
+#~ msgstr "Lisää kylläisyyttä (HSI)"
+
+#~ msgid "Decrease Saturation HSI"
+#~ msgstr "Vähennä kylläisyyttä (HSI)"
+
+#~ msgid "Intensity"
+#~ msgstr "Intensiteetti"
+
+#~ msgid "Increase Intensity"
+#~ msgstr "Lisää intensiteettiä"
+
+#~ msgid "Decrease Intensity"
+#~ msgstr "Vähennä intensiteettiä"
+
+#~ msgid "Color HSL"
+#~ msgstr "Väri (HSL)"
+
+#~ msgid "Hue HSL"
+#~ msgstr "Sävy (HSL)"
+
+#~ msgid "Saturation HSL"
+#~ msgstr "Kylläisyys (HSL)"
+
+#~ msgid "Increase Saturation HSL"
+#~ msgstr "Lisää kylläisyyttä (HSL)"
+
+#~ msgid "Decrease Saturation HSL"
+#~ msgstr "Vähennä kylläisyyttä (HSL)"
+
+#~ msgid "Increase Lightness"
+#~ msgstr "Lisää valoisuutta"
+
+#~ msgid "Decrease Lightness"
+#~ msgstr "Vähennä valoisuutta"
+
+#~ msgid "Color HSV"
+#~ msgstr "Väri (HSV)"
+
+#~ msgid "Hue HSV"
+#~ msgstr "Sävy (HSV)"
+
+#~ msgid "Saturation HSV"
+#~ msgstr "Kylläisyys (HSV)"
+
+#~ msgid "Increase Saturation HSV"
+#~ msgstr "Lisää kylläisyyttä (HSV)"
+
+#~ msgid "Decrease Saturation HSV"
+#~ msgstr "Vähennä kylläisyyttä (HSV)"
+
+#~ msgid "Increase Value"
+#~ msgstr "Kasvata arvoa"
+
+#~ msgid "Decrease Value"
+#~ msgstr "Pienennä arvoa"
+
+#~ msgid "Generic RGB Histogram"
+#~ msgstr "geneerinen RGB-histogrammi"
+
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "G"
+#~ msgstr "G"
+
+#~ msgid "L*a*b* Histogram"
+#~ msgstr "L*a*b -histogrammi"
+
+#~ msgid "L*"
+#~ msgstr "L*"
+
+#~ msgid "Generic L*a*b* Histogram"
+#~ msgstr "Geneerinen L*a*b*-histogrammi"
+
+#~ msgid "RGB"
+#~ msgstr "RGB"
+
+#~ msgid "XYZ"
+#~ msgstr "XYZ"
+
+#~ msgid "L*a*b*"
+#~ msgstr "L*a*b*"
+
+#~ msgid "CMYK"
+#~ msgstr "CMYK"
+
+#~ msgid "Grayscale"
+#~ msgstr "Harmaasävy"
+
+#~ msgid "Grayscale (without transparency)"
+#~ msgstr "Harmaasävy (ilman läpinäkyvyyttä)"
+
+#~ msgid "YCbCr"
+#~ msgstr "YCbCr"
+
+#~ msgid "8 Bits"
+#~ msgstr "8-bittinen"
+
+#~ msgid "16 Bits"
+#~ msgstr "16-bittinen"
+
+#~ msgid "16 Bits Float"
+#~ msgstr "16-bittinen liukuluku"
+
+#~ msgid "32 Bits Float"
+#~ msgstr "32-bittinen liukuluku"
+
+#~ msgid "64 Bits Float"
+#~ msgstr "64-bittinen liukuluku"
+
+#~ msgid "Arithmetic"
+#~ msgstr "Aritmeettinen"
+
+#~ msgid "Negative"
+#~ msgstr "Negatiivinen"
+
+#~ msgid "HSY"
+#~ msgstr "HSY"
+
+#~ msgid "HSI"
+#~ msgstr "HSI"
+
+#~ msgid "HSL"
+#~ msgstr "HSL"
+
+#~ msgid "HSV"
+#~ msgstr "HSV"
+
+#~ msgid "Mix"
+#~ msgstr "Sekoitus"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Inverse Subtract"
+#~ msgstr "Kylläisyys"
+
+#~ msgid "Burn"
+#~ msgstr "Poltto"
+
+#~ msgid "Additive Subtractive"
+#~ msgstr "Additiivis-subtraktiivinen"
+
+#~ msgid "Alpha Darken"
+#~ msgstr "Alfatummennus"
+
+#~ msgid "SVG Gradient"
+#~ msgstr "SVG-väriliuku"
+
+#~ msgid "Select the object you want to reference"
+#~ msgstr "Valitse objekti, johon haluat viitata"
+
+#~ msgid "Reference"
+#~ msgstr "Viittaus"
+
+#~ msgid "Set For All Existing"
+#~ msgstr "Aseta kaikille olemassa oleville"
+
+#~ msgid "Rdf"
+#~ msgstr "RDF"
+
+# Onko tämä jokin tuple’n muunnelma?
+#~ msgid "Triples"
+#~ msgstr "Kolmikot"
+
+#~ msgid "new"
+#~ msgstr "uusi"
+
+#~ msgid "copy"
+#~ msgstr "kopioi"
+
+#~ msgid "delete"
+#~ msgstr "poista"
+
+#~ msgid "Namespaces"
+#~ msgstr "Nimiavaruudet"
+
+#~ msgid "Prefix"
+#~ msgstr "Etuliite"
+
+#~ msgid "Namespace"
+#~ msgstr "Nimiavaruus"
+
+#~ msgid "Semantic"
+#~ msgstr "Semanttinen"
+
+#~ msgid "SPARQL"
+#~ msgstr "SPARQL"
+
+# select, where jne. lienevät SQL:ää
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"># Insert your SPARQL query here<br /"
+#~ "># Results are shown below.</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix rdf:  &lt;http://www.w3."
+#~ "org/1999/02/22-rdf-syntax-ns#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix foaf: &lt;http://xmlns.com/"
+#~ "foaf/0.1/&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix pkg:  &lt;http://docs.oasis-"
+#~ "open.org/ns/office/1.2/meta/pkg#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix geo84: &lt;http://www.w3."
+#~ "org/2003/01/geo/wgs84_pos#&gt;</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">select ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">where { </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"> ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">}</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"># Syötä SPARQL-kyselysi tähän<br /># "
+#~ "Tulokset näytetään alla.</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">etuliite rdf:  &lt;http://www.w3."
+#~ "org/1999/02/22-rdf-syntax-ns#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">etuliite foaf: &lt;http://xmlns.com/"
+#~ "foaf/0.1/&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">etuliite pkg:  &lt;http://docs.oasis-"
+#~ "open.org/ns/office/1.2/meta/pkg#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">etuliite geo84: &lt;http://www.w3."
+#~ "org/2003/01/geo/wgs84_pos#&gt;</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">select ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">where { </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"> ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">}</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p></body></html>"
+
+#~ msgid "Stylesheets"
+#~ msgstr "Tyylisivut"
+
+#~ msgid ""
+#~ "Set the default stylesheet for Semantic objects in this document. New RDF "
+#~ "objects will use this stylesheet automatically. The buttons allow you to "
+#~ "set the stylesheet for all existing semantic objects to the new default "
+#~ "stylesheet as well."
+#~ msgstr ""
+#~ "Aseta semanttisten olioiden oletustyylipohja tässä tiedostossa. Uudet RDF-"
+#~ "oliot käyttävät automaattisesti tätä tyylipohjaa. Painikkein voit asettaa "
+#~ "myös jo olemassa olevat semanttiset oliot käyttämään uutta "
+#~ "oletustyylipohjaa."
+
+#~ msgid "Apply Stylesheet"
+#~ msgstr "Käytä tyylipohjaa"
+
+#~ msgid "System"
+#~ msgstr "Järjestelmä"
+
+#~ msgid "User"
+#~ msgstr "Käyttäjä"
+
+#~ msgid "Reapply Current"
+#~ msgstr "Käytä nykyistä uudestaan"
+
+#~ msgid "Disassociate"
+#~ msgstr "Erota"
+
+#~ msgid "Edit %1"
+#~ msgstr "Muokkaa: %1"
+
+#~ msgid "Stylesheet Definition"
+#~ msgstr "Tyylisivun määritelmä"
+
+#~ msgid "Variables Available"
+#~ msgstr "Käytettävissä olevat muuttujat"
+
+#~ msgid "Description"
+#~ msgstr "Kuvaus"
+
+#~ msgid "Stylesheet Name"
+#~ msgstr "Tyylisivun nimi"
+
+#~ msgid "Empty"
+#~ msgstr "Tyhjä"
+
+#~ msgid "URI"
+#~ msgstr "URI"
+
+#~ msgid "Literal"
+#~ msgstr "Vakio"
+
+#~ msgid "Blank"
+#~ msgstr "Tyhjä"
+
+#~ msgid "Valid"
+#~ msgstr "Kelvollinen"
+
+#~ msgid "Subject"
+#~ msgstr "Subjekti"
+
+#~ msgid "Predicate"
+#~ msgstr "Predikaatti"
+
+#~ msgid "Obj Type"
+#~ msgstr "Olion tyyppi"
+
+#~ msgid "DataType"
+#~ msgstr "Tietotyyppi"
+
+#~ msgid "Stored In"
+#~ msgstr "Varastossa"
+
+#~ msgid "Invalid integer number"
+#~ msgstr "Virheellinen kokonaisluku"
+
+#~ msgid "This integer number may be too large."
+#~ msgstr "Tämä kokonaisluku saattaa olla liian iso."
+
+#~ msgid "Invalid identifier"
+#~ msgstr "Virheellinen tunniste"
+
+#~ msgid "Identifiers should start with a letter or '_' character"
+#~ msgstr "Tunnisteiden on alettava kirjaimella tai ”_”-merkillä"
+
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "Ei mitään"
+
+#~ msgid "Small Bullet"
+#~ msgstr "Pieni pallukka"
+
+#~ msgid "Circle Bullet"
+#~ msgstr "Ympyrä"
+
+#~ msgid "Square Bullet"
+#~ msgstr "Nelikulmio"
+
+#~ msgid "Check Mark Bullet"
+#~ msgstr "Pukki"
+
+#~ msgid "Rightwards Arrow Bullet"
+#~ msgstr "Nuoli oikealle"
+
+#~ msgid "Arabic"
+#~ msgstr "Arabialainen numero"
+
+#~ msgid "Lower Alphabetical"
+#~ msgstr "Pienaakkonen"
+
+#~ msgid "Upper Alphabetical"
+#~ msgstr "Suuraakkonen"
+
+#~ msgid "Upper Roman"
+#~ msgstr "Suuri roomalainen numero"
+
+#~ msgid "Large Bullet"
+#~ msgstr "Suuri pallukka"
+
+#~ msgid "Bengali"
+#~ msgstr "Bengali"
+
+#~ msgid "Gujarati"
+#~ msgstr "Gudžarati"
+
+# msgid on väärin, tämä oikein
+#~ msgid "Gurumukhi"
+#~ msgstr "Gurmukhi"
+
+#~ msgid "Kannada"
+#~ msgstr "Kannada"
+
+#~ msgid "Malayalam"
+#~ msgstr "Malayalam"
+
+#~ msgid "Oriya"
+#~ msgstr "Orija"
+
+#~ msgid "Tamil"
+#~ msgstr "Tamili"
+
+#~ msgid "Telugu"
+#~ msgstr "Telugu"
+
+#~ msgid "Tibetan"
+#~ msgstr "Tiibetiläinen"
+
+#~ msgid "Thai"
+#~ msgstr "Thai"
+
+#~ msgid "Abjad"
+#~ msgstr "Abjad"
+
+#~ msgid "Opacity"
+#~ msgstr "Peittävyys"
+
+#~ msgid "Recent:"
+#~ msgstr "Viimeaikaiset:"
+
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "Lisää/poista värejä…"
+
+#~ msgid "Import Data"
+#~ msgstr "Tuo tietoja"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Recommended ( %1 )"
+#~ msgstr "Suositellaan (%1)"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Locale ( %1 )"
+#~ msgstr "Alueasetus ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Other ( %1 )"
+#~ msgstr "Muu ( %1 )"
+
+#~ msgid "Generic"
+#~ msgstr "Yleiset "
+
+#~ msgid "Currency"
+#~ msgstr "Valuutta"
+
+#~ msgid "None"
+#~ msgstr "Ei mitään"
+
+#~ msgid ""
+#~ "Please check the ranges you specified. The start value must be lower than "
+#~ "the end value."
+#~ msgstr "Tarkista antamasi arvot. Alkuarvon on oltava loppuarvoa pienempi."
+
+#~ msgid "Cannot find encoding: %1"
+#~ msgstr "Koodausta %1 ei löydy."
+
+#~ msgid "Data"
+#~ msgstr "Tiedot"
+
+#~ msgid "E&ncoding:"
+#~ msgstr "&Merkkikoodaus"
+
+#~ msgid "First row contains headers"
+#~ msgstr "Ensimmäisellä rivillä ylätunnisteet"
+
+#~ msgid "First column contains headers"
+#~ msgstr "Enimmäisellä palstalla ylätunnisteet"
+
+#~ msgid "Format"
+#~ msgstr "Muotoilu"
+
+#~ msgid "Delimiter"
+#~ msgstr "Erotin"
+
+#~ msgid "Semicolon"
+#~ msgstr "Puolipiste"
+
+#~ msgid "Other"
+#~ msgstr "Muu"
+
+#~ msgid "Tabulator"
+#~ msgstr "Sarkain"
+
+#~ msgid "Space"
+#~ msgstr "Välilyönti"
+
+#~ msgid "Text&quote:"
+#~ msgstr "Tekstisitaatti"
+
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "Decimal symbol:"
+#~ msgstr "Desimaalierotin:"
+
+#~ msgid "Thousands separator:"
+#~ msgstr "Tuhansien erotin:"
+
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "Jätä kaksinkertaiset erottimet huomiotta"
+
+#~ msgid "&Format:"
+#~ msgstr "Muotoile"
+
+#~ msgid "Ranges"
+#~ msgstr "Alue"
+
+#~ msgid "Update"
+#~ msgstr "Päivitä"
+
+# Tarkoittaa taulukon sarakkeita.
+#~ msgid "Import columns:"
+#~ msgstr "Tuo sarakkeet:"
+
+#~ msgid "Import lines:"
+#~ msgstr "Tuo rivit:"
+
+# Konteksti kirjoitushetkellä: ”Import lines: [luku] to [luku]” sekä ”Import columns: [luku] to [luku]”
+#~ msgid "to"
+#~ msgstr "–"
+
+#, fuzzy
+#~| msgid "Show Dockers"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Float Docker"
+#~ msgstr "Näytä telakat"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "Sulje telakka"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "Pienennä telakka"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Lock Docker"
+#~ msgstr "Lukitse telakka"
+
+#~ msgid "&Encrypt"
+#~ msgstr "&Salaa"
+
+#~ msgid "Keywords:"
+#~ msgstr "Hakusanat:"
+
+#~ msgid "Subject:"
+#~ msgstr "Aihe:"
+
+#~ msgid "Last printed:"
+#~ msgstr "Tulostettu viimeksi:"
+
+#~ msgid "Total editing time:"
+#~ msgstr "Muokkausaika yhteensä:"
+
+#~ msgid "Encryption:"
+#~ msgstr "Salaus:"
+
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "Otsikko:"
+
+#~ msgid "Revision number:"
+#~ msgstr "Version numero:"
+
+#~ msgid "Modified:"
+#~ msgstr "Muutettu:"
+
+#~ msgid "Comments:"
+#~ msgstr "Kommentit:"
+
+#~ msgid "Created:"
+#~ msgstr "Luotu:"
+
+#~ msgid "Path:"
+#~ msgstr "Polku:"
+
+#~ msgid "&Reset"
+#~ msgstr "&Aiemmat asetukset"
+
+#~ msgid "Language:"
+#~ msgstr "Kieli:"
+
+#~ msgid "General"
+#~ msgstr "Yleiset"
+
+#~ msgid "Last saved by"
+#~ msgstr "Viimeisin tallentaja"
+
+#~ msgid "Use ';' (Example: Office;KDE;Calligra)"
+#~ msgstr "Käytä ”;” (esim. Office;KDE;Calligra)"
+
+#~ msgid "This document will be decrypted"
+#~ msgstr "Tämän tiedoston salaus puretaan"
+
+#~ msgid "Do not decrypt"
+#~ msgstr "Älä pura salausta"
+
+#~ msgid "This document is encrypted"
+#~ msgstr "Tiedosto on salattu"
+
+#~ msgid "D&ecrypt"
+#~ msgstr "P&ura salaus"
+
+#~ msgid "This document will be encrypted."
+#~ msgstr "Tiedosto salataan"
+
+#~ msgid "Do not encrypt"
+#~ msgstr "Älä salaa"
+
+#~ msgid "This document is not encrypted"
+#~ msgstr "Tiedosto ei ole salattu"
+
+#~ msgid "This document does not support encryption"
+#~ msgstr "Tämä tiedosto ei tue salausta"
+
+#~ msgid ""
+#~ "<qt>Decrypting the document will remove the password protection from it."
+#~ "<p>Do you still want to decrypt the file?</qt>"
+#~ msgstr ""
+#~ "Tiedoston salauksen poisto poistaa salasanasuojauksen. <p>Haluatko "
+#~ "edelleen poistaa salauksen?</p>"
+
+#~ msgid "Confirm Decrypt"
+#~ msgstr "Vahvista salauksen poisto"
+
+#~ msgid "Decrypt"
+#~ msgstr "Poista salaus"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "decryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>Tiedoston automaattinen tallennus epäonnistui.<p>Saata salauksen "
+#~ "poisto loppuun tallentamalla tiedosto.</qt>"
+
+#~ msgid "Save Document"
+#~ msgstr "Tallenna tiedosto"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "decryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt>Tiedostoa on muutettu avaamisen jälkeen. Se on tallennettava, jotta "
+#~ "salauksen poisto olisi saatettu loppuun.<p>Haluatko tallentaa tiedoston "
+#~ "nyt?</qt>"
+
+#~ msgid ""
+#~ "<qt>The document is currently saved as %1. The document needs to be "
+#~ "changed to <b>OASIS OpenDocument</b> to be encrypted.<p>Do you want to "
+#~ "change the file to OASIS OpenDocument?</qt>"
+#~ msgstr ""
+#~ "<qt>Tällä hetkellä tiedosto on tallennettu muodossa %1. Tiedosto on "
+#~ "muutettava <b>OASIS OpenDocument</b> -muotoon salausta varten.<p>Haluatko "
+#~ "muuttaa tiedoston OASIS OpenDocument -muotoon?</qt>"
+
+#~ msgid "Change Filetype"
+#~ msgstr "Muuta tiedostotyyppiä"
+
+#~ msgid "Change"
+#~ msgstr "Muuta"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "encryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>Tiedoston automaattinen tallennus epäonnistui.<p>Saata salaus loppuun "
+#~ "tallentamalla tiedosto.</qt>"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "encryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt>Tiedostoa on muutettu avaamisen jälkeen. Se on tallennettava, jotta "
+#~ "salaus olisi saatettu loppuun.<p>Haluatko tallentaa tiedoston nyt?</qt>"
+
+#~ msgid "Remove"
+#~ msgstr "Poista "
+
+#~ msgid "Open palette"
+#~ msgstr "Avaa paletti"
+
+#~ msgid "Save palette"
+#~ msgstr "Tallenna paletti"
+
+#~ msgid "Add Color To Palette"
+#~ msgstr "Lisää väri palettiin"
+
+#~ msgid "Color name:"
+#~ msgstr "Värin nimi:"
+
+#~ msgid "Gimp Color Palette (*.gpl)"
+#~ msgstr "Gimp-väripaletti (*.gpl)"
+
+#~ msgid "Cannot write to palette file %1. Maybe it is read-only. "
+#~ msgstr "Palettiin %1 ei voitu kirjoittaa. Se voi olla kirjoitussuojattu."
+
+#~ msgid "Palette"
+#~ msgstr "Paletti"
+
+#~ msgid "Add/Remove Colors"
+#~ msgstr "Lisää/poista värejä"
+
+#~ msgid "All supported formats"
+#~ msgstr "Kaikki tuetut tiedostomuodot"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Testing: OpenFile"
+#~ msgstr "Avaa paletti"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFile"
+#~ msgstr "Puuttuva tuontisuodin"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "Puuttuva tuontisuodin"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "Import resource"
+#~ msgid "Testing: Import Directory"
+#~ msgstr "Tuo resurssi"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Testing: SaveFile"
+#~ msgstr "Tallenna paletti"
+
+#~ msgid "Open File"
+#~ msgstr "Avaa tiedosto"
+
+#~ msgid "Open Files"
+#~ msgstr "Avaa tiedostot"
+
+#~ msgid "Unique key:"
+#~ msgstr "Yksilöllinen avain:"
+
+#~ msgid "blablabla"
+#~ msgstr "blablabla"
+
+#~ msgid "Filter:"
+#~ msgstr "Suodatin:"
+
+#~ msgid "TextLabel"
+#~ msgstr "Tekstiselite"
+
+#~ msgid "Results:"
+#~ msgstr "Tulokset:"
+
+#~ msgid "Filter Type"
+#~ msgstr "Suodatintyyppi"
+
+#~ msgid "Mime"
+#~ msgstr "Mime"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Named"
+#~ msgstr "Nimi"
+
+#, fuzzy
+#~| msgid "Select a filter:"
+#~ msgid "Set default filter"
+#~ msgstr "Valitse suodin:"
+
+#~ msgid "Save File"
+#~ msgstr "Tallenna tiedosto"
+
+#~ msgid "Import Files"
+#~ msgstr "Tuo tiedostot"
+
+#~ msgid "Import File"
+#~ msgstr "Tuo tiedosto"
+
+#~ msgid "Import Directory"
+#~ msgstr "Tuo kansio"
+
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "Ei mitään"
+
+#~ msgctxt "Solid color stroke or fill"
+#~ msgid "Solid"
+#~ msgstr "Tasainen"
+
+#~ msgid "Gradient"
+#~ msgstr "Liukuväri"
+
+#~ msgid "Pattern"
+#~ msgstr "Kuvio"
+
+#~ msgid "Change the filling color"
+#~ msgstr "Muuta täyttöväriä"
+
+#, fuzzy
+#~| msgid "Change the filling color"
+#~ msgid "Change the filling gradient"
+#~ msgstr "Muuta täyttöväriä"
+
+#, fuzzy
+#~| msgid "Change the filling color"
+#~ msgid "Change the filling pattern"
+#~ msgstr "Muuta täyttöväriä"
+
+#~ msgid "Icon and Text"
+#~ msgstr "Kuvake ja teksti"
+
+#~ msgid "Icon only"
+#~ msgstr "Vain kuvake"
+
+#~ msgid "Tabs side"
+#~ msgstr "Välilehtien sijainti"
+
+#~ msgid "Top side"
+#~ msgstr "Ylälaita"
+
+#~ msgid "Bottom side"
+#~ msgstr "Alalaita"
+
+#~ msgid "Left side"
+#~ msgstr "Vasen laita"
+
+#~ msgid "Right side"
+#~ msgstr "Oikea laita"
+
+#~ msgid "Page Layout"
+#~ msgstr "Sivun asettelu"
+
+#~ msgid "Apply to document"
+#~ msgstr "Käytä tiedostoon"
+
+#~ msgid "Left Edge:"
+#~ msgstr "Vasen reuna:"
+
+#~ msgid "Right Edge:"
+#~ msgstr "Oikea reuna:"
+
+#~ msgid "Binding Edge:"
+#~ msgstr "Sidontareunus:"
+
+#~ msgid "Page Edge:"
+#~ msgstr "Sivun reuna:"
+
+#~ msgid "Facing Pages:"
+#~ msgstr "Vastakkaiset sivut:"
+
+#~ msgid "Facing pages"
+#~ msgstr "Vastakkaiset sivut"
+
+#~ msgid "Page Layout:"
+#~ msgstr "Sivun asettelu:"
+
+#~ msgid "Page spread"
+#~ msgstr "Aukeama"
+
+#~ msgid "Unit:"
+#~ msgstr "Yksikkö:"
+
+#~ msgid "Follow style:"
+#~ msgstr "Seuraa tyyliä:"
+
+#~ msgid "Size:"
+#~ msgstr "Koko:"
+
+#~ msgid "Width:"
+#~ msgstr "Leveys:"
+
+#~ msgid "Height:"
+#~ msgstr "Korkeus:"
+
+#~ msgid "Orientation:"
+#~ msgstr "Suunta:"
+
+#~ msgid "Facing pages:"
+#~ msgstr "Vastakkaiset sivut:"
+
+#~ msgid "Single sided"
+#~ msgstr "Yksipuolinen"
+
+#~ msgid "Text direction:"
+#~ msgstr "Tekstin suunta:"
+
+#~ msgid "Automatic"
+#~ msgstr "Automaattinen"
+
+#~ msgid "Left to right"
+#~ msgstr "Vasemmalta oikealle"
+
+#~ msgid "Right to left"
+#~ msgstr "Oikealta vasemmalle"
+
+#~ msgid "Margins"
+#~ msgstr "Reunukset"
+
+#~ msgid "Top:"
+#~ msgstr "Ylhäällä:"
+
+#~ msgid "Binding edge:"
+#~ msgstr "Sidontareunus:"
+
+#~ msgid "Page edge:"
+#~ msgstr "Sivun reuna:"
+
+#~ msgid "Bottom:"
+#~ msgstr "Alhaalla:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "Tuo resurssi"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Delete resource"
+#~ msgstr "Poista resurssi"
+
+# Vaikka tässä on englanniksi yksikkö, käyttöliittymän perusteella paremmin monikko.
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "Lataa resursseja"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "Jaa resurssi"
+
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "Valitse lisättävä tiedosto"
+
+#~ msgid "New tag"
+#~ msgstr "Uusi tunniste"
+
+#~ msgid "Assign to tag"
+#~ msgstr "Liitä tunnisteeseen"
+
+#~ msgid "Remove from this tag"
+#~ msgstr "Poista tästä tunnisteesta"
+
+#~ msgid "Remove from other tag"
+#~ msgstr "Poista muusta tunnisteesta"
+
+#~ msgid "Tags"
+#~ msgstr "Tunnisteet"
+
+#~ msgid "Tag was not undeleted."
+#~ msgstr "Tunnistetta ei palautettu."
+
+#~ msgid "Change the color of the shadow"
+#~ msgstr "Muuta varjon väriä"
+
+#~ msgid "Blur:"
+#~ msgstr "Sumennus:"
+
+#~ msgid "Distance:"
+#~ msgstr "Etäisyys:"
+
+#~ msgid "Butt cap"
+#~ msgstr "Paksu pääty"
+
+#~ msgid "Round cap"
+#~ msgstr "Pyöreä pääty"
+
+#~ msgid "Square cap"
+#~ msgstr "Nelikulmainen pääty"
+
+#, fuzzy
+#~| msgid "Merge points"
+#~ msgid "Miter join"
+#~ msgstr "Liitä pisteet"
+
+#~ msgid "Round join"
+#~ msgstr "Pyöreä liitos"
+
+#~ msgid "Bevel join"
+#~ msgstr "Viisteliitos"
+
+#, fuzzy
+#~| msgid "Merge points"
+#~ msgid "Miter limit"
+#~ msgstr "Liitä pisteet"
+
+#~ msgid "Thickness:"
+#~ msgstr "Paksuus:"
+
+#~ msgid "Set line width of actual selection"
+#~ msgstr "Aseta todellisen valinnan viivan paksuus"
+
+#~ msgid "Change the color of the line/border"
+#~ msgstr "Muuta viivan väriä"
+
+#, fuzzy
+#~| msgid "Tags"
+#~ msgid "Tag"
+#~ msgstr "Tunnisteet"
+
+#~ msgid "Enter resource filters here"
+#~ msgstr "Kirjoita resurssisuodattimet tähän"
+
+#~ msgid "Rename tag"
+#~ msgstr "Muuta tunnisteen nimeä"
+
+#~ msgid "Delete this tag"
+#~ msgstr "Poista tämä tunniste"
+
+#~ msgid "Clear undelete list"
+#~ msgstr "Tyhjennä palauttamisluettelo"
+
+#~ msgid "Undelete"
+#~ msgstr "Palauta"
+
+#~ msgid "Tool Options"
+#~ msgstr "Työkaluasetukset"
+
+#~ msgid "Toggles organizing the options in tabs or not"
+#~ msgstr "Vaihtaa asetusten asettelua (välilehtiin tai ei)"
+
+#~ msgid "deselect item"
+#~ msgstr "poista kohteen valinta"
+
+#~ msgid "select item"
+#~ msgstr "valitse kohde"
+
+#~ msgid "Use same aspect as pixels"
+#~ msgstr "Käytä samaa suhdetta pikseleinä"
+
+#~ msgid "Zoom to Selection"
+#~ msgstr "Lähennä valintaan"
+
+#~ msgid "Zoom to All"
+#~ msgstr "Sovita kaikki näkymään"
+
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1"
+
+#~ msgid "All Presets"
+#~ msgstr "Kaikki esiasetukset"
+
+#~ msgctxt "Static Image"
+#~ msgid "Static"
+#~ msgstr "Staattinen"
+
+#~ msgid "Value (brightness)"
+#~ msgstr "Arvo (kirkkaus)"
+
+#~ msgid "Cyan"
+#~ msgstr "Syaani"
+
+#~ msgid "Magenta"
+#~ msgstr "Magenta"
+
+#~ msgid "Yellow"
+#~ msgstr "Keltainen"
+
+#~ msgid "Black"
+#~ msgstr "Musta"
+
+#~ msgid "Green to magenta*"
+#~ msgstr "Vihreästä magentaan*"
+
+#~ msgid "Blue to yellow"
+#~ msgstr "Sinisestä keltaiseen"
+
+#~ msgid "Opacity:"
+#~ msgstr "Peittävyys:"
+
+#~ msgid "&Themes"
+#~ msgstr "&Teemat"
+
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "Oletus"
+
+#~ msgid "Configuration..."
+#~ msgstr "Asetukset…"
+
+#~ msgid ""
+#~ "Cannot start Colors Settings panel from KDE Control Center. Please check "
+#~ "your system..."
+#~ msgstr ""
+#~ "Ei voida käynnistää KDE:n järjestelmäasetusten väriasetuspaneelia. "
+#~ "Tarkista järjestelmäsi…"
+
+#~ msgid "&Tools"
+#~ msgstr "&Työkalut"
+
+#~ msgid ""
+#~ "The manifest file seems to be corrupted. The document could not be opened."
+#~ msgstr "Tiedosto vaikuttaa vioittuneelta. Tiedoston avaaminen epäonnistui."
+
+#~ msgid "Color Selector"
+#~ msgstr "Värivalitsin"
+
+#~ msgid "Database file \"%1\" does not exist."
+#~ msgstr "Tietokantatiedostoa ”%1” ei ole olemassa."
+
+#~ msgid "Cannot drop database - name not specified."
+#~ msgstr "Ei voida poistaa tietokantaa: nimeä ei annettu."
+
+#~ msgid "Table \"%1\" does not exist in the database."
+#~ msgstr "Taulukkoa ”%1” ei ole tietokannassa."
+
+#~ msgid "Single transactions"
+#~ msgstr "Yksittäinen transaktio"
+
+#~ msgid "Multiple transactions"
+#~ msgstr "Moniosainen transaktio"
+
+#~ msgid "Nested transactions"
+#~ msgstr "Ketjutettu transaktio"
+
+#~ msgid "No such driver service: \"%1\"."
+#~ msgstr "Ei ajuripalvelua: ”%1”."
+
+#~ msgid "Could not compact database \"%1\"."
+#~ msgstr "Ei voitu pakata tietokantaa ”%1”."
+
+#~ msgid "Do you want to open file \"%1\" as read-only?"
+#~ msgstr "Haluatko avata tiedoston ”%1” vain luettavaksi?"
+
+#~ msgid "The file is probably already open on this or another computer."
+#~ msgstr ""
+#~ "Tiedosto on todennäköisesti jo auki tällä tai toisella tietokoneella."
+
+#~ msgid "Could not gain exclusive access for writing the file."
+#~ msgstr "Ei saatu yksinoikeuksia tiedostoon kirjoittamiseksi."
+
+#~ msgid "Open As Read-Only"
+#~ msgstr "Avaa vain luku -tilaan"
+
+#~ msgid "Could not close busy database."
+#~ msgstr "Käytössä olevaa tietokantaa ei voitu sulkea."
+
+#~ msgid "Could not remove file \"%1\"."
+#~ msgstr "Tiedostoa ”%1” ei voitu poistaa."
+
+#~ msgid ""
+#~ "Check the file's permissions and whether it is already opened and locked "
+#~ "by another application."
+#~ msgstr ""
+#~ "Tarkista tiedoston oikeudet sekä onko se jo toisen sovelluksen avaama ja "
+#~ "lukitsema."
+
+#~ msgid "Compacting database"
+#~ msgstr "Pakataan tietokantaa"
+
+#~ msgid "Compacting database \"%1\"..."
+#~ msgstr "Pakataan tietokantaa ”%1”…"
+
+#~ msgid ""
+#~ "The database has been compacted. Current size decreased by %1% to %2."
+#~ msgstr "Tietokanta on pakattu. Nykyinen koko pieneni %1 %, uusi koko %2."
+
+#~ msgid "No query specified"
+#~ msgstr "Kyselyä ei ole määritetty"
+
+#~ msgid "Table \"%1\" does not exist"
+#~ msgstr "Taulukkoa ”%1” ei ole olemassa"
+
+#~ msgid "Grid Snap"
+#~ msgstr "Kiinnity ruudukkoon"
+
+#~ msgid "                Language:"
+#~ msgstr "                Kieli:"
+
+#~ msgid "PushButton"
+#~ msgstr "Painike"
+
+#~ msgid "Formatting"
+#~ msgstr "Muotoilu"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1.\n"
+#~ "The filter plugins have not been properly registered. Please reboot "
+#~ "Windows. Krita Sketch will now close."
+#~ msgstr ""
+#~ "Ei voitu avata tiedostoa\n"
+#~ "%1.\n"
+#~ "Suodatinliitännäisiä ei ole rekisteröity oikein. Käynnistä Windows "
+#~ "uudelleen. Krita Sketch sulkeutuu nyt."
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "Import resource"
+#~ msgid "Testing: OpenDirectories"
+#~ msgstr "Tuo resurssi"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "Import resource"
+#~ msgid "Testing: ImportDirectories"
+#~ msgstr "Tuo resurssi"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Recover Files"
+#~ msgid "Testing: SaveFiles"
+#~ msgstr "Tiedostojen palautus"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "Import resource"
+#~ msgid "Import Directories"
+#~ msgstr "Tuo resurssi"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Recover Files"
+#~ msgid "Save Files"
+#~ msgstr "Tiedostojen palautus"
+
+#~ msgid "Create Path"
+#~ msgstr "Polun luonti"
+
+#~ msgid "Red Green Blue"
+#~ msgstr "Punainen Vihreä Sininen (RGB)"
+
+#~ msgid "L a* b*"
+#~ msgstr "L a* b*"
+
+#~ msgid "Cyan Magenta Yellow Black"
+#~ msgstr "Syaani magenta keltainen musta (CMYK)"
+
+#~ msgid "Error!"
+#~ msgstr "Virhe!"
+
+#~ msgid "Contacts"
+#~ msgstr "Yhteystiedot"
+
+#~ msgid "Events"
+#~ msgstr "Tapahtumat"
+
+#~ msgid "Locations"
+#~ msgstr "Sijainnit"
+
+#~ msgid ""
+#~ "Could not add entry\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ei voitu lisätä merkintää\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not save iCal file\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ei voitu tallentaa iCal-tiedostoa\n"
+#~ "%1"
+
+#~ msgid "&Summary:"
+#~ msgstr "&Yhteenveto:"
+
+#~ msgid "&Location:"
+#~ msgstr "&Paikka:"
+
+#~ msgid "&Start:"
+#~ msgstr "&Alkaa:"
+
+#~ msgid "&End:"
+#~ msgstr "P&äättyy:"
+
+#~ msgid "Time and Date"
+#~ msgstr "Päiväys ja kellonaika"
+
+#~ msgid "Timezone"
+#~ msgstr "Aikavyöhyke"
+
+#~ msgid "Calendar Event"
+#~ msgstr "Kalenteritapahtuma"
+
+#~ msgid "Import event to Calendar"
+#~ msgstr "Tuo tapahtuma kalenteriin"
+
+#~ msgid "Export event to iCal file..."
+#~ msgstr "Vie tapahtuma iCal-tiedostoon..."
+
+#~ msgid "&Name:"
+#~ msgstr "&Nimi:"
+
+#~ msgid "&Nick:"
+#~ msgstr "K&utsumanimi:"
+
+#~ msgid "&Phone Number:"
+#~ msgstr "&Puhelinnumero:"
+
+#~ msgid "&Home Page:"
+#~ msgstr "&Kotisivu:"
+
+#~ msgid "Contact Information"
+#~ msgstr "Yhteystiedot"
+
+#~ msgid "Import contact"
+#~ msgstr "Tuo yhteystieto"
+
+#~ msgid "Export as vcard..."
+#~ msgstr "Vie vCardiin..."
+
+#~ msgid "&Name"
+#~ msgstr "&Nimi"
+
+#~ msgid "The Earth"
+#~ msgstr "Maapallo"
+
+#~ msgid "The Marble widget displays a virtual globe."
+#~ msgstr "Marmorikuula-sovelma näyttää virtuaalisen maapallon."
+
+#~ msgid "Navigation Control"
+#~ msgstr "Navigointi"
+
+#~ msgid "Use this control to navigate."
+#~ msgstr "Navigoi tällä säätimellä."
+
+#~ msgid "Latitude"
+#~ msgstr "Leveysasteet"
+
+#~ msgid "Longitude"
+#~ msgstr "Pituusasteet"
+
+#~ msgid "Location Information"
+#~ msgstr "Sijaintitiedot"
+
+#~ msgid "People"
+#~ msgstr "Henkilöt"
+
+#~ msgid ""
+#~ "A document with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "Samalla nimellä on jo asiakirja.\n"
+#~ "Haluatko korvata sen?"
+
+#~ msgid "Unknown Calligra MimeType %1. Check your installation."
+#~ msgstr "Tuntematon Calligran MIME-tyyppi %1. Tarkista asennuksesi."
+
+#~ msgid "%1 (Uncompressed XML Files)"
+#~ msgstr "%1 (Pakkaamaton XML-tiedosto)"
+
+#~ msgid "%1 (Flat XML File)"
+#~ msgstr "%1 (Flat XML -tiedosto)"
+
+#~ msgid "%1 (Encrypted)"
+#~ msgstr "%1 (Salattu)"
+
+#~ msgid "%1 (%2 Compatible)"
+#~ msgstr "%1 (%2 yhteensopiva)"
+
+#~ msgid "Save Document As"
+#~ msgstr "Tallenna asiakirja nimellä"
+
+#~ msgid "Export Document As"
+#~ msgstr "Vie asiakirja nimellä"
+
+#~ msgid "Export to PDF"
+#~ msgstr "Vie PDF:ksi..."
+
+#~ msgid "To change background color use Stroke and Fill docker."
+#~ msgstr "Muuta taustaväriä käyttämällä Viiva ja täyttö -telakkaa."
+
+#~ msgid "Slide Background"
+#~ msgstr "Dian tausta"
+
+#~ msgid "Document background"
+#~ msgstr "Asiakirjan tausta"
+
+#~ msgid "&OK"
+#~ msgstr "&OK"
+
+#~ msgid "&Cancel"
+#~ msgstr "&Peru"
+
+#~ msgid "Error Encountered"
+#~ msgstr "Sattui virhe"
+
+#~ msgid "Unable to add a new group because its name would not be unique"
+#~ msgstr "Uutta ryhmää ei voi lisätä, koska sen nimi ei olisi ainutkertainen"
+
+#~ msgid "First Page"
+#~ msgstr "Ensimmäinen sivu"
+
+#~ msgid "Even Pages(s)"
+#~ msgstr "Parilliset sivut"
+
+#~ msgid "Any Pages(s)"
+#~ msgstr "Kaikki sivut"
+
+#~ msgid "&Edit"
+#~ msgstr "&Muokkaa"
+
+#~ msgid "&Close"
+#~ msgstr "&Sulje"
+
+#~ msgid "Snapping"
+#~ msgstr "Kiinnitys"
+
+# *** TARKISTA: heitto
+#~ msgid "Dodge"
+#~ msgstr "Väistä"
+
+#~ msgid "Hard light"
+#~ msgstr "Kova valo"
+
+#~ msgid "Soft light"
+#~ msgstr "Pehmeä valo"
+
+#~ msgid "Show Shadow"
+#~ msgstr "Näytä varjo"
+
+#~ msgid "Angle:"
+#~ msgstr "Kulma:"
+
+#~ msgid "Offset:"
+#~ msgstr "Siirtymä:"
+
+#~ msgid "Color:"
+#~ msgstr "Väri:"
+
+#~ msgid "Blur radius:"
+#~ msgstr "Sumennussäde:"
+
+#~ msgid "Style:"
+#~ msgstr "Tyyli:"
+
+#~ msgid "Cap:"
+#~ msgstr "Pääty:"
+
+#~ msgid "Join:"
+#~ msgstr "Liitos:"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bookmark"
+#~ msgstr ""
+#~ "Lisää kirjanmerkki\n"
+#~ "kirjanmerkin lisäys"
+
+#~ msgid "Insert Table"
+#~ msgstr "Lisää taulukko"
+
+#~ msgid "Insert Row Above"
+#~ msgstr "Lisää rivi ylle"
+
+#~ msgid "Insert Column Left"
+#~ msgstr "Lisää sarake vasemmalle"
+
+#~ msgid "Insert Column Right"
+#~ msgstr "Lisää sarake oikealle"
+
+#~ msgid "Delete Column"
+#~ msgstr "Poista sarake"
+
+#~ msgid "Delete Row"
+#~ msgstr "Poista rivi"
+
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Lisää sisällysluettelo"
+
+#~ msgid "Insert Bibliography"
+#~ msgstr "Lisää lähdeluettelo"
+
+#~ msgid "Typing"
+#~ msgstr "Kirjoitus"
+
+# KEHITTÄJILLE: välilyönti alkuun
+#~ msgid "min"
+#~ msgstr " min"
+
+#~ msgid "Embedding Object"
+#~ msgstr "Upotettu objekti"
+
+#~ msgid "I&mport..."
+#~ msgstr "&Tuo..."
+
+#~ msgid "&Default"
+#~ msgstr "&Oletus"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select Item"
+#~ msgstr "Valitse kohde"
+
+#~ msgid "Background Tool"
+#~ msgstr "Taustatyökalu"
+
+#~ msgid "Use the styles docker to manipulate the background."
+#~ msgstr "Muuta taustaa tyylitelakasta."
+
+#~ msgid "Background editing tool"
+#~ msgstr "Taustanmuokkaustyökalu"
+
+#~ msgid "Use master background"
+#~ msgstr "Käytä pohjan taustaa"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Separate paths"
+#~ msgstr "Erota polut"
+
+#~ msgid ""
+#~ "An autosaved file for an unnamed document exists in %1.\n"
+#~ "This file is dated %2\n"
+#~ "Do you want to open it?"
+#~ msgstr ""
+#~ "Nimettömästä asiakirjasta on automaattisesti tallennettu versio %1.\n"
+#~ "Tiedoston päivämäärä on %2\n"
+#~ "Haluatko avata sen?"
+
+#~ msgid "&Delete Personal Data"
+#~ msgstr "&Poista henkilökohtaiset tiedot"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shapes"
+#~ msgstr ""
+#~ "Poista muotoja\n"
+#~ "muotojen poisto"
+
+# Onko id:ssä s liikaa? Verbi subtract?
+#~ msgid "Substract"
+#~ msgstr "Vähennä"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Inverse Substract"
+#~ msgstr "Kylläisyys"
+
+#, fuzzy
+#~| msgid ""
+#~| "No personal contact data set, please use the option                     "
+#~| "\"Set as Personal Contact Data\" from the \"Edit\"     menu in "
+#~| "KAddressbook to set one."
+#~ msgid ""
+#~ "No personal contact data set, please use the "
+#~ "option                                     \"Set as Personal Contact Data"
+#~ "\" from the \"Edit\"     menu in KAddressbook to set one."
+#~ msgstr ""
+#~ "Henkilökohtaisia yhteystietoja ei ole asetettu. Aseta tiedot "
+#~ "KAddressbookin valikossa  \"Muokkaa\" ottamalla käyttöön valinta \"Aseta "
+#~ "henkilökohtaisen yhteystiedon tiedot\"."
+
+#~ msgid "Hide colors with bad contrast"
+#~ msgstr "Piilota heikkokontrastiset värit"
+
+#~ msgid "&Load From Address Book"
+#~ msgstr "&Lataa osoitekirjasta"
+
+#~ msgid "Shadow Angle:"
+#~ msgstr "Varjon kulma:"
+
+#~ msgid "Shadow Color:"
+#~ msgstr "Varjon väri:"
+
+#~ msgid "Toggles showing a title bar"
+#~ msgstr "Näyttää tai piilottaa otsikkopalkin"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set border"
+#~ msgstr "Aseta reuna"
+
+#~ msgid "Ellipse Shape"
+#~ msgstr "Ellipsimuoto"
+
+#~ msgid "Set Horizontal Alignment"
+#~ msgstr "Aseta vaakatasaus"
+
+#, fuzzy
+#~| msgid "Line Border"
+#~ msgid "Line Break"
+#~ msgstr "Reunalinjat"
+
+#, fuzzy
+#~| msgid "Snap to Grid"
+#~ msgid "Hide Grid"
+#~ msgstr "Sovita ruudukkoon"
+
+#, fuzzy
+#~| msgid "Snap to Grid"
+#~ msgid "Hide Guides"
+#~ msgstr "Sovita ruudukkoon"
+
+#~ msgid "&Close All Views"
+#~ msgstr "&Sulje kaikki näkymät"
+
+#~ msgid "&Split View"
+#~ msgstr "&Jaa näkymä"
+
+#~ msgid "&Remove View"
+#~ msgstr "&Poista näkymä"
+
+#~ msgid "Splitter &Orientation"
+#~ msgstr "Jaon &suunta"
+
+#~ msgid "&Horizontal"
+#~ msgstr "&Vaakasuuntainen"
+
+#~ msgid "&Vertical"
+#~ msgstr "&Pystysuuntainen"
+
+#~ msgid "Printing page %1"
+#~ msgstr "Tulostetaan sivua %1"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Form"
+#~ msgstr "Muotoilu"
+
+#, fuzzy
+#~| msgid "I&mport..."
+#~ msgid "Import"
+#~ msgstr "&Tuo..."
+
+#, fuzzy
+#~| msgid "Shape"
+#~ msgid "Share"
+#~ msgstr "Muoto"
+
+#, fuzzy
+#~| msgid "Alpha"
+#~ msgid "Copy Opacy"
+#~ msgstr "alpha"
+
+#, fuzzy
+#~| msgid "Alpha"
+#~ msgid "Copy Alpha"
+#~ msgstr "alpha"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Light"
+#~ msgstr "Vaalenna"
+
+#~ msgid "Write PDF"
+#~ msgstr "Kirjoita PDF"
+
+#, fuzzy
+#~| msgid "Show Rulers"
+#~ msgid "Hide Dockers"
+#~ msgstr "Näytä viivaimet"
+
+#, fuzzy
+#~| msgid "Stop"
+#~ msgid "Atop"
+#~ msgstr "Pysäytä"
+
+#~ msgid "KOffice"
+#~ msgstr "KOffice"
+
+#~ msgid "KOffice Storage"
+#~ msgstr "KOfficen varasto"
+
+#, fuzzy
+#~| msgid "CSSGraph"
+#~ msgid "CCSGraph"
+#~ msgstr "CSSGraph"
+
+#~ msgid "Output the graph of color conversion of pigment's Color Conversion"
+#~ msgstr "Tulosta pigmentin värimuunnoksen kuvaaja"
+
+#~ msgid "(c) 2007 Cyrille Berger"
+#~ msgstr "(c) 2007 Cyrille Berger"
+
+#~ msgid "return the list of available graphs"
+#~ msgstr "anna luettelo saatavilla olevista kuvaajista"
+
+#~ msgid ""
+#~ "specify the type of graph (see --graphs to get the full list, the default "
+#~ "is full)"
+#~ msgstr ""
+#~ "anna kuvaajan tyyppi (ks. --graphs saadaksesi täydellisen listan, oletus "
+#~ "on täydellinen)"
+
+#, fuzzy
+#~| msgid "specify the source color model"
+#~ msgid "specify the key of the source color space"
+#~ msgstr "täsmennä lähdevärin malli"
+
+#, fuzzy
+#~| msgid "specify the destination color model"
+#~ msgid "specify the key of the destination color space"
+#~ msgstr "täsmennä tulosvärin malli"
+
+#~ msgid "specify the output (can be ps or dot, the default is ps)"
+#~ msgstr "täsmennä tuloksen tyyppi (ps tai dot, oletuksena ps)"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Barcode"
+#~ msgstr "Muotoilu"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Barcode Format"
+#~ msgstr "Muotoilu"
+
+#, fuzzy
+#~| msgid "a chart"
+#~ msgid "Chart"
+#~ msgstr "kaavio"
+
+#, fuzzy
+#~| msgid "Set point type"
+#~ msgid "Field Font"
+#~ msgstr "Aseta pisteen tyyppi"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Pie"
+#~ msgstr "Aika:"
+
+#, fuzzy
+#~| msgid "Version"
+#~ msgid "Ring"
+#~ msgstr "Versio"
+
+#, fuzzy
+#~| msgid "Clear"
+#~ msgid "Polar"
+#~ msgstr "Poista"
+
+#, fuzzy
+#~| msgid "Data"
+#~ msgid "Chart Type"
+#~ msgstr "Tiedot"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgid "Stacked"
+#~ msgstr "Välilyönti"
+
+#, fuzzy
+#~| msgid "Recent:"
+#~ msgid "Percent"
+#~ msgstr "Viimeaikaiset:"
+
+#, fuzzy
+#~| msgid "Color name:"
+#~ msgid "Color Scheme"
+#~ msgstr "Värin nimi:"
+
+#, fuzzy
+#~| msgid "Untitled"
+#~ msgid "Antialiased"
+#~ msgstr "Nimetön"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Display Legend"
+#~ msgstr "Aseta pohja"
+
+#~ msgid "QXml"
+#~ msgstr "QXml"
+
+#~ msgid "Zoom Tool"
+#~ msgstr "Zoomaustyökalu"
+
+#~ msgid "Path tool"
+#~ msgstr "Polkutyökalu"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Out"
+#~ msgstr "Oma"
+
+#~ msgid "RGB8 Histogram"
+#~ msgstr "RGN8-histogrammi"
+
+#~ msgid "Insert Linebreak"
+#~ msgstr "Lisää rivinvaihto"
+
+#~ msgid "&Insert"
+#~ msgstr "Lisää"
+
+#~ msgid "Insert the selected character in the text"
+#~ msgstr "Liittää valitun merkin asiakirjaan."
+
+#~ msgid "Enable word completion"
+#~ msgstr "Käytä sanantäydennystä"
+
+#~ msgid ""
+#~ "Toggle autocompletion on and off: if this is checked then autocompletion "
+#~ "will be enabled."
+#~ msgstr ""
+#~ "Vaihda sanantäydennys päälle/pois päältä. Jos valitaan, on automaattinen "
+#~ "sanantäydennys käytössä."
+
+#~ msgid ""
+#~ "Suggestion list for autocompletion: contains all the words that will be "
+#~ "autocompleted."
+#~ msgstr ""
+#~ "Ehdotusluettelo sanantäydennystä varten: sisältää kaikki sanat, jotka "
+#~ "täydennetään automaattisesti."
+
+#~ msgid ""
+#~ "By clicking this button you can add manually an individual word to the "
+#~ "completion list."
+#~ msgstr ""
+#~ "Napsauttamalla tätä painiketta voit lisätä käsin yksittäisen sanan "
+#~ "täydennysluetteloon."
+
+#~ msgid ""
+#~ "To remove words from the completion list, select the word with the left "
+#~ "mouse button from the list, then click this button."
+#~ msgstr ""
+#~ "Poistaaksesi sanoja täydennysluettelosta, valitse sana vasemmalla hiiren "
+#~ "painikkeella ja napsauta sen jälkeen tätä painiketta."
+
+#~ msgid "Automatically add new words to suggestion list"
+#~ msgstr "Lisää automaattisesti uusia sanoja täydennysluetteloon"
+
+#~ msgid ""
+#~ "If this option is enabled, any word equal to or longer than the "
+#~ "\"Characters needed\" typed in this document will automatically be added "
+#~ "to the list of words used by the completion."
+#~ msgstr ""
+#~ "Jos tämä on valittu, kaikki tässä asiakirjassa kirjoitetut sanat lisätään "
+#~ "automaattisesti täydennysluetteloon."
+
+#~ msgid "Completion Options"
+#~ msgstr "Täydennysasetukset"
+
+#~ msgid "Show words in tooltip"
+#~ msgstr "Näytä sanat ponnahdusvihjeessä"
+
+#~ msgid ""
+#~ "If this option is enabled, a tool tip box will appear when you type the "
+#~ "beginning of a word that exists in the completion list. To complete the "
+#~ "word, press the key you set to accept suggestions in the \"Key to accept "
+#~ "suggestion\" drop-down list."
+#~ msgstr ""
+#~ "Jos tämä valinta on valittuna, ilmestyy vihjelaatikko ilmestyy, kun "
+#~ "kirjoitat täydennysluettelossa olevan sanan alun. Voit täydentää sanan "
+#~ "painamalla TAB- tai ENTER-näppäintä."
+
+#~ msgid ""
+#~ "This sets the maximum number of words in the completion list. All "
+#~ "additional words will not be included in the list. You can select any "
+#~ "value from 1 to 500. This option keeps the list from becoming too "
+#~ "cumbersome.\n"
+#~ "This option is most important when Automatically add words to completion "
+#~ "list is enabled."
+#~ msgstr ""
+#~ "Tämä asettaa enimmäismäärän täydennysluettelon sanoille. Ylimääräisiä "
+#~ "sanoja ei oteta luetteloon. Voit valita minkä tahansa arvon välillä "
+#~ "1-500. Tämä valinta estää luetteloa kasvamasta liian suureksi. \n"
+#~ "Valinta on erityisen hyödyllinen, jos lisäät sanoja luetteloon "
+#~ "automaattisesti."
+
+#~ msgid "Characters needed:"
+#~ msgstr "Tarvitaan kirjaimia:"
+
+#~ msgid "Suggest words:"
+#~ msgstr "Ehdota sanoja:"
+
+#~ msgid ""
+#~ "Use this spinbox/slider combination to prevent automatically adding short "
+#~ "words to the completion list. You can select any value from 5-100 and the "
+#~ "words will need to be at least the number of characters set here to be "
+#~ "added to the list."
+#~ msgstr ""
+#~ "Käytä tätä estääksesi lyhyiden sanojen liittämisen täydennysluetteloon. "
+#~ "Voit valita minkä tahansa arvon välillä 5-100. Sanan täytyy koostua "
+#~ "vähintään näin monesta kirjaimesta tullakseen lisätyksi luetteloon."
+
+#~ msgid "Append space"
+#~ msgstr "Lisää välilyönti"
+
+#~ msgid ""
+#~ "If checked, it adds a single space to the end of a word after "
+#~ "autocompletion, this means it is not necessary to add the space manually "
+#~ "for the next word."
+#~ msgstr ""
+#~ "Jos valittu, lisätään yksi välilyönti automaattisesti täydennetyn sanan "
+#~ "loppuun. Näin välilyöntiä ei tarvitse lisätä käsin."
+
+#~ msgid "Key to accept suggestion:"
+#~ msgstr "Näppäin, jolla ehdotus hyväksytään:"
+
+#~ msgid ""
+#~ "Set the key you want to use when an autocompleted word is suggested to "
+#~ "you and you want to accept it. You can choose Enter, Tab, Space, End or "
+#~ "Right."
+#~ msgstr ""
+#~ "Aseta näppäin, jota haluat käyttää automaattisesti täydennettävän sanan "
+#~ "hyväksymiseksi. Vaihtoetoja ovat enter, sarkain, välilyönti, end ja nuoli "
+#~ "oikealle."
+
+#~ msgid "Make Default"
+#~ msgstr "Tee oletukseksi"
+
+#~ msgid ""
+#~ "Completion is configured per document. Making this list the default will "
+#~ "allow you to use it for new documents automatically. A dialog will appear "
+#~ "to inform you that the list will be used for all documents from now on."
+#~ msgstr ""
+#~ "Täydennysasetukset ovat asiakirjakohtaisia. Jos teet tästä luettelosta "
+#~ "oletusluettelon, käytetään sitä automaattisesti kaikissa uusissa "
+#~ "asiakirjoissa. Tästä ilmoitetaan erillisessä ikkunassa."
+
+#~ msgid "C&ustom"
+#~ msgstr "&Oma"
+
+#~ msgid "&Insert:"
+#~ msgstr "&Lisää"
+
+#~ msgid "Paragraph Background Color"
+#~ msgstr "Kappaleen taustaväri"
+
+#~ msgid ""
+#~ "<p>Paragraph Background Color</p>\n"
+#~ "\n"
+#~ "<p>The paragraph background color appears\n"
+#~ "between the left and right margins of a\n"
+#~ "paragraph.</p>\n"
+#~ "\n"
+#~ "<p>If the text has a background color set, then\n"
+#~ "the text background will appear 'on top' of the\n"
+#~ "paragraph background.  In this case, the paragraph\n"
+#~ "background will still show on parts of the paragraph\n"
+#~ "that have no text (usually on the last line, between\n"
+#~ "the end of the text and the margin).</p>"
+#~ msgstr ""
+#~ "<p>Kappaleen taustaväri</p>\n"
+#~ "\n"
+#~ "<p>Kappaleen taustaväriä käytetään vasemman ja oikean\n"
+#~ "marginaalin välisellä alueella.</p\n"
+#~ "<p>Jos tekstille on asetettu taustaväri, käytetään tekstin\n"
+#~ " taustaväriä kauppaleen taustavärin päällä. Tässä tapauksessa\n"
+#~ "kappaleen taustaväri näkyy niissä osissa kappaletta, joissa \n"
+#~ "ei ole tekstiä. Näin väri näkyy esimerkiksi viimeisellä rivillä \n"
+#~ "tekstin lopun ja marginaalin välillä.</p>"
+
+#~ msgid "Borders"
+#~ msgstr "Reunat"
+
+#~ msgid ""
+#~ "<p>Paragraph Borders</p>\n"
+#~ "\n"
+#~ "<p>The preview shows what the currently \n"
+#~ "selected paragraph borders will look like.</p>\n"
+#~ "\n"
+#~ "<p>To <i>add</i> a new border: Select the desired style,\n"
+#~ "width and color.  Click the toggle button that corresponds\n"
+#~ "to that border.</p>\n"
+#~ "\n"
+#~ "<p>To <i>remove</i> an existing border: Either click on the\n"
+#~ "border to be removed in the preview, or click the\n"
+#~ "toggle button corresponding to that border.</p>\n"
+#~ "\n"
+#~ "<p>To <i>modify</i> a border: Select the desired style,\n"
+#~ "width and color, then click on the border to be\n"
+#~ "modified in the preview.</p>"
+#~ msgstr ""
+#~ "<p>Kappaleen reunat</p>\n"
+#~ "\n"
+#~ "<p>Esikatselussa näytetään, miltä tällä hetkellä \n"
+#~ "käytettäväksi valitut kappaleen reunat näyttävät.</p>\n"
+#~ "\n"
+#~ "<p>Voit <i>lisätä</i> uuden reunan: Valitse haluamasi tyyli,\n"
+#~ "leveys ja väri. Napsauta reunaa vastaavaa painiketta.</p>\n"
+#~ "\n"
+#~ "<p>Voit <i>poistaa</i> reunuksen joko napsauttamalla \n"
+#~ "reunusta esikatselussä tai napsauttamalla reunaa \n"
+#~ "vastaavaa painiketta.</p>\n"
+#~ "\n"
+#~ "<p>Voit <i>muokata</i> reunaa: Valitse haluamasi tyyli,\n"
+#~ "leveys ja väri. Sen jälkeen napsauta esikatselussa\n"
+#~ "muokattavaa reunaa.</p>"
+
+#~ msgid "&Width:"
+#~ msgstr "&Leveys:"
+
+#~ msgid "Add/remove left paragraph border"
+#~ msgstr "Lisää/poista kappaleen vasen reuna"
+
+#~ msgid "Toggles the left paragraph border on or off."
+#~ msgstr "Vaihtaa kappaleen vasemman reunan käytön."
+
+#~ msgid "Add/remove right paragraph border"
+#~ msgstr "Vaihtaa kappaleen oikean reunan käytön."
+
+#~ msgid "Toggles the right paragraph border on or off."
+#~ msgstr "Vaihtaa kappaleen oikean reunan käytön."
+
+#~ msgid "Add/remove top paragraph border"
+#~ msgstr "Vaihtaa kappaleen yläreunan käytön."
+
+#~ msgid "Toggles the top paragraph border on or off."
+#~ msgstr "Lisää/poista kappaleen yläreuna"
+
+#~ msgid "Add/remove bottom paragraph border"
+#~ msgstr "Lisää/poista kappaleen alareuna"
+
+#~ msgid "Toggles the bottom paragraph border on or off."
+#~ msgstr "Vaihtaa kappaleen alareunan käytön."
+
+#~ msgid "&Merge with next paragraph"
+#~ msgstr "&Yhdistä seuraavaan kappaleeseen"
+
+#~ msgid ""
+#~ "Merges the border style of the current paragraph with the next paragraph"
+#~ msgstr "Yhdistä kappaleen reunatyyli seuraavaan kappaleeseen"
+
+#~ msgid ""
+#~ "<p>Merge with next paragraph</p>\n"
+#~ "\n"
+#~ "<p>When this option is checked, no top or bottom borders\n"
+#~ "will appear between consecutive paragraphs with the\n"
+#~ "same style.  Top and Bottom borders will only appear between\n"
+#~ "paragraphs with different styles.</p>\n"
+#~ "\n"
+#~ "<p>When this option is unchecked, top and bottom borders\n"
+#~ "always appear at the top and bottom of paragraphs with this style,\n"
+#~ "regardless of the style of the preceding and subsequent paragraphs.</p>"
+#~ msgstr ""
+#~ "<p>Yhdistä seuraavaan kappaleeseen</p>\n"
+#~ "\n"
+#~ "<p>Kun tämä on valittu, ei peräkkäisten saman tyylisten kappaleiden "
+#~ "välille\n"
+#~ "tule ylä- tai alareunoja. Ylä- ja alareunoja käytetään vain erityylisten "
+#~ "kappaleiden välillä.</p>\n"
+#~ "\n"
+#~ "<p>Kun tämä on pois käytöstä, ilmestyvät ylä- ja alareunat aina "
+#~ "tämäntyylisten kappaleiden välille riippumatta edeltävän tai seuraavan "
+#~ "kappaleen tyylistä.\n"
+#~ "</p>"
+
+#~ msgid "String:"
+#~ msgstr "Merkkijono:"
+
+#~ msgid "Boolean:"
+#~ msgstr "Boolen arvo:"
+
+#~ msgid "true"
+#~ msgstr "tosi"
+
+#~ msgid "false"
+#~ msgstr "epätosi"
+
+#~ msgid "Date:"
+#~ msgstr "Päivämäärä:"
+
+#~ msgid "Set Guide Line Position"
+#~ msgstr "Aseta apulinjan sijainti"
+
+#~ msgid "Add Guide Line"
+#~ msgstr "Lisää apulinja"
+
+#~ msgid "Horizontal"
+#~ msgstr "Vaakasuuntainen"
+
+#~ msgid "Vertical"
+#~ msgstr "Pystysuuntainen"
+
+#~ msgid "&Position:"
+#~ msgstr "&Sijainti:"
+
+#~ msgid "Guide Line"
+#~ msgstr "Apulinja"
+
+#~ msgid "Guide Lines"
+#~ msgstr "Apulinjat"
+
+#~ msgid "No handler found for %1"
+#~ msgstr "Objektille %1 ei löytynyt käsittelijää."
+
+#~ msgid ""
+#~ "Error loading %1:\n"
+#~ "%2"
+#~ msgstr ""
+#~ "Virhe ladattaessa %1:\n"
+#~ "%2"
+
+#~ msgid ""
+#~ "This document contains an external link to a remote document\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Tämä asiakirja sisältää  linkin ulkopuoliseen etäasiakirjaan\n"
+#~ "%1"
+
+#~ msgid "Confirmation Required"
+#~ msgstr "Varmistusta pyydetään"
+
+#~ msgid "Skip"
+#~ msgstr "Ohita"
+
+#~ msgid ""
+#~ "Could not load external document %1:\n"
+#~ "%2"
+#~ msgstr ""
+#~ "Ei voitu ladata ulkopuolista asiakirjaa %1\n"
+#~ "%2"
+
+#~ msgid "Error while saving embedded documents"
+#~ msgstr "Virhe upotettujen asiakirjojen tallennuksessa"
+
+#~ msgid "Na&me:"
+#~ msgstr "Ni&mi:"
+
+#~ msgid "Protect si&ze and position"
+#~ msgstr "Suojaa koko &ja sijainti"
+
+#~ msgid "Keep &aspect ratio"
+#~ msgstr "Pidä &kuvasuhde"
+
+#~ msgid "&Height:"
+#~ msgstr "&Korkeus:"
+
+#~ msgid "&Top:"
+#~ msgstr "&Ylä"
+
+#~ msgid "&Left:"
+#~ msgstr "&Vasen:"
+
+#~ msgid "Context Help"
+#~ msgstr "Kontekstin ohje"
+
+#~ msgid "Here will be shown help according to your actions"
+#~ msgstr "Tässä kohdassa näytetään toimenpiteisiisi liittyviä ohjeita"
+
+#~ msgid "All values are given in %1."
+#~ msgstr "Kaikki arvot ovat muodossa %1."
+
+#~ msgid "&Size:"
+#~ msgstr "&Koko:"
+
+#~ msgid "&Portrait"
+#~ msgstr "&Pysty"
+
+#~ msgid "La&ndscape"
+#~ msgstr "&Vaaka"
+
+#~ msgid "The page width is smaller than the left and right margins."
+#~ msgstr "Sivun leveys on pienempi kuin vasen ja oikea marginaali."
+
+#~ msgid "Page Layout Problem"
+#~ msgstr "Ongelma sivun asettelussa"
+
+#~ msgid "The page height is smaller than the top and bottom margins."
+#~ msgstr "Sivun korkeus on pienempi kuin ylä- ja alamarginaalit."
+
+#~ msgid "Show &Grid"
+#~ msgstr "Näytä ruudukko"
+
+#~ msgctxt "Custom size"
+#~ msgid "Custom"
+#~ msgstr "Oma"
+
+#, fuzzy
+#~| msgid "Delete shape"
+#~ msgid "Delete slides"
+#~ msgstr "Poista hahmo"
+
+#, fuzzy
+#~| msgid "Delete page"
+#~ msgid "Delete pages"
+#~ msgstr "Poista sivu"
+
+#~ msgid "Insert Object"
+#~ msgstr "Lisää objekti"
+
+#~ msgid "Column spacing:"
+#~ msgstr "Palstojen väli:"
+
+#~ msgid "Footnote/ Endnote"
+#~ msgstr "&Alaviite/Loppuviite"
+
+#~ msgid "Spacing between footnote and body:"
+#~ msgstr "Alaviitteen ja leipätekstin väli (%1):"
+
+#~ msgid "Different footer for even and odd pages"
+#~ msgstr "Erilainen alatunniste parillisilla ja parittomilla sivuilla"
+
+#~ msgid "Different footer for the first page"
+#~ msgstr "Erilainen alatunniste ensimmäisellä sivulla"
+
+#~ msgid "Spacing between footer and body:"
+#~ msgstr "Alatunnisteen ja leipätekstin väli:"
+
+#~ msgid "Spacing between header and body:"
+#~ msgstr "Ylätunnisteen ja leipätekstin väli:"
+
+#~ msgid "Different header for even and odd pages"
+#~ msgstr "Erilainen ylätunniste parillisille ja parittomille sivuille"
+
+#~ msgid "Different header for the first page"
+#~ msgstr "Erilainen ylätunniste ensimmäisellä sivulla"
+
+#~ msgid "Page Preview"
+#~ msgstr "Sivun esikatselu"
+
+#~ msgid "Page Size && &Margins"
+#~ msgstr "Sivun koko ja &marginaalit"
+
+#~ msgid "H&eader && Footer"
+#~ msgstr "&Ylä- ja alatunniste"
+
+#~ msgid "Head Line"
+#~ msgstr "Otsikkorivi"
+
+#~ msgid "Foot Line"
+#~ msgstr "Alatunnisterivi"
+
+#~ msgid "You can insert several tags in the text:"
+#~ msgstr "Voit lisätä tekstiin useita tageja:"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;sheet&gt; The sheet name</li><li>&lt;page&gt; The current "
+#~ "page</li><li>&lt;pages&gt; The total number of pages</li><li>&lt;name&gt; "
+#~ "The filename or URL</li><li>&lt;file&gt; The filename with complete path "
+#~ "or the URL</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;sheet&gt; Taulukon (arkin) nimi</li><li>&lt;page&gt; "
+#~ "Nykyinen sivu</li><li>&lt;pages&gt; Sivujen määrä yhteensä</li><li>&lt;"
+#~ "name&gt; Tiedostonimi tai URL</li><li>&lt;file&gt; Täydellinen "
+#~ "tiedostonimi tai URL</li></ul></qt>"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;time&gt; The current time</li><li>&lt;date&gt; The "
+#~ "current date</li><li>&lt;author&gt; Your full name</li><li>&lt;org&gt; "
+#~ "Your organization</li><li>&lt;email&gt; Your email address</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;aika&gt;: Tämänhetkinen aika</li><li>&lt;päiväys&gt;: "
+#~ "Tämänhetkinen päiväys</li><li>&lt;tekijä&gt;: Koko nimesi</li><li>&lt;"
+#~ "org&gt;: Organisaatiosi</li><li>&lt;sähköposti&gt;: Sähköpostiosoitteesi</"
+#~ "li></ul></qt>"
+
+#~ msgid "Col&umns"
+#~ msgstr "Palstoja"
+
+#~ msgid "&Help"
+#~ msgstr "Ohje"
+
+#~ msgid "Delete a new page after the current one"
+#~ msgstr "Poista sivu nykyisen sivun jälkeen"
+
+#~ msgid "Storage Test"
+#~ msgstr "Tallennustesti"
+
+#~ msgid "A test for the KoStore classes"
+#~ msgstr "Testi KoStore-luokkia varten"
+
+#~ msgid "Storage Test 2"
+#~ msgstr "Tallennustesti 2"
+
+#~ msgid ""
+#~ "A test for the KoStore classes, in particular a Krita-induced bug testcase"
+#~ msgstr ""
+#~ "Testi KoStore-luokkia varten, varsinaisesti Kritan tuoman virheen "
+#~ "testitapaus."
+
+#, fuzzy
+#~| msgid "Paste Page"
+#~ msgid "Master page"
+#~ msgstr "Liitä sivu"
+
+#~ msgid "Rotate"
+#~ msgstr "Kierrä"
+
+#, fuzzy
+#~| msgid "Warning"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Waiting"
+#~ msgstr "Varoitus"
+
+#, fuzzy
+#~| msgid "Vertical"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Vertical"
+#~ msgstr "Pystysuuntainen"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Horizontal"
+#~ msgstr "Vaakasuuntainen"
+
+#, fuzzy
+#~| msgid "&Size:"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size All"
+#~ msgstr "&Koko:"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Split Horizontal"
+#~ msgstr "Vaakasuuntainen"
+
+#, fuzzy
+#~| msgid "Printing done"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Pointing Hand"
+#~ msgstr "Tulostus valmis"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgid "Insert image from file"
+#~ msgstr "Lisää sivu"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "Select Char"
+#~ msgstr "Valitse merkki"
+
+#, fuzzy
+#~| msgid "E&ncoding:"
+#~ msgctxt "Size Policy"
+#~ msgid "Expanding"
+#~ msgstr "&Merkkikoodaus"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgctxt "General properties"
+#~ msgid "General"
+#~ msgstr "Yleiset"
+
+#, fuzzy
+#~| msgid "Width:"
+#~ msgid "Width"
+#~ msgstr "Leveys:"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgid "Horizontal Size Type"
+#~ msgstr "Vaakasuuntainen"
+
+#, fuzzy
+#~| msgid "Vertical"
+#~ msgid "Vertical Size Type"
+#~ msgstr "Pystysuuntainen"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgid "Horizontal Stretch"
+#~ msgstr "Vaakasuuntainen"
+
+#, fuzzy
+#~| msgid "Vertical"
+#~ msgid "Vertical Stretch"
+#~ msgstr "Pystysuuntainen"
+
+#, fuzzy
+#~| msgid "Ungroup shapes"
+#~ msgid "Undo changes"
+#~ msgstr "Poista ryhmitys"
+
+#, fuzzy
+#~| msgid "Show &Grid"
+#~ msgid "Snap Guides"
+#~ msgstr "Näytä ruudukko"
+
+#, fuzzy
+#~| msgid "Guide Lines"
+#~ msgid "Enable Guide Lines Guide "
+#~ msgstr "Apulinjat"
+
+#, fuzzy
+#~| msgid "Tool Options"
+#~ msgid "Tool Option"
+#~ msgstr "Työkaluasetukset"
+
+#, fuzzy
+#~| msgid "Snap to Grid"
+#~ msgid "Configure Snap Guides"
+#~ msgstr "Sovita ruudukkoon"
+
+#~ msgid "Connection Shape"
+#~ msgstr "Yhteyshahmo"
+
+#, fuzzy
+#~| msgid "Guide Lines"
+#~ msgid "Edit Guidelines"
+#~ msgstr "Apulinjat"
+
+#, fuzzy
+#~| msgid "Add Guide Line"
+#~ msgid "Edit guidelines"
+#~ msgstr "Lisää apulinja"
+
+#~ msgid "Activate %1"
+#~ msgstr "Aktivoi %1"
+
+#~ msgid "specify the source color depth"
+#~ msgstr "täsmennä lähdevärin syvyys"
+
+#~ msgid "specify the destination color depth"
+#~ msgstr "täsmennä tulosvärin syvyys"
+
+#~ msgid "Fit to width"
+#~ msgstr "Sovita leveyteen "
+
+#~ msgid "Fit to page/canvas"
+#~ msgstr "Sovita sivuun "
+
+#~ msgid "[No Paragraph Style]"
+#~ msgstr "[Ei kappaletyyliä]"
+
+#~ msgid "[No Character Style]"
+#~ msgstr "[Ei kirjaintyyliä]"
+
+#~ msgid "Selected Template"
+#~ msgstr "Valittu pohja"
+
+#~ msgid "Creates an empty document"
+#~ msgstr "Luo tyhjän asiakirjan"
+
+#~ msgid "Choose Template"
+#~ msgstr "Valitse pohja"
+
+#~ msgid "No description available"
+#~ msgstr "Kuvausta ei ole saatavilla"
+
+#~ msgid "Protect size and position"
+#~ msgstr "Suojaa koko ja sijainti"
+
+#~ msgid "&Custom..."
+#~ msgstr "&Oma..."
+
+#~ msgid "*.svg *.wmf *.qpic|Clipart (*.svg *.wmf *.qpic)"
+#~ msgstr "*.svg *.wmf *.qpic|Leikekuva (*.svg *.wmf *.qpic)"
+
+#~ msgid "Insert Link"
+#~ msgstr "Lisää linkki"
+
+#~ msgid "Mail & News"
+#~ msgstr "Sähköposti ja uutisryhmät"
+
+#~ msgid "Bookmark"
+#~ msgstr "Kirjanmerkki"
+
+#~ msgid "Text to display:"
+#~ msgstr "Näytettävä teksti:"
+
+#~ msgid "Internet address:"
+#~ msgstr "Internet-osoite:"
+
+#~ msgid "Bookmark name:"
+#~ msgstr "Kirjanmerkin nimi:"
+
+#~ msgid "Target:"
+#~ msgstr "Kohde:"
+
+#~ msgid "Recent file:"
+#~ msgstr "Viimeksi avattu tiedosto:"
+
+#~ msgid "No Entries"
+#~ msgstr "Ei tietueita"
+
+#~ msgid "File location:"
+#~ msgstr "Tiedoston sijainti:"
+
+#~ msgid "Tabulator &Left"
+#~ msgstr "&Vasen sarkain"
+
+#~ msgid "Tabulator &Center"
+#~ msgstr "&Keskitetty sarkain"
+
+#~ msgid "Tabulator &Right"
+#~ msgstr "&Oikea sarkain"
+
+#~ msgid "Tabulator &Decimal Point"
+#~ msgstr "Sarkainkohtana &desimaalipiste"
+
+#~ msgid "%1:"
+#~ msgstr "%1:"

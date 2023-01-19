@@ -1,0 +1,7283 @@
+# translation of koffice.po to
+# translation of koffice.po to
+# translation of koffice.po to
+# translation of koffice.po to Xhosa
+# translation of koffice.po to
+# translation of koffice.po to
+# translation of koffice.po to
+# translation of koffice.po to
+# translation of koffice.po to
+# K Desktop Environment - koffice
+# Copyright (C) 2001 translate.org.za
+# Antoinette Dekeni <antoinette@transalate.org.za>, 2001.
+# Lwandle Mgidlana <lwandle@translate.org.za>, 2002
+# Thelma Lungcuzo <thelma@translate.org.za>, 2002
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: koffice\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2002-11-09 11:12+0200\n"
+"Last-Translator: Thelma Lungcuzo <thelma@translate.org.za>\n"
+"Language-Team: Xhosa <xhosa@translate.org.za>\n"
+"Language: xh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0beta2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+#, fuzzy
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "Ayinakuyivula ifayile yokugcina"
+
+#: common/KReportDesign.cpp:159
+#, fuzzy
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Imposiso ngexesha ugcina amaxwebhu alungisiweyo"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Igama:"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Object"
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Injongo"
+
+#: common/KReportItemBase.cpp:78
+#, fuzzy
+#| msgid "Position"
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Indawo"
+
+#: common/KReportItemBase.cpp:79
+#, fuzzy
+#| msgid "Size:"
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Ubungakanani:"
+
+#: common/KReportItemBase.cpp:112
+#, fuzzy
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Cima Okubhaliweyo"
+
+#: common/KReportItemLine.cpp:80
+#, fuzzy
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "Indawo"
+
+#: common/KReportItemLine.cpp:81
+#, fuzzy
+#| msgid "Position"
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Indawo"
+
+#: common/KReportItemLine.cpp:83
+#, fuzzy
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "Ububanzi:"
+
+#: common/KReportItemLine.cpp:85
+#, fuzzy
+#| msgid "More Line Colors..."
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Imibala emininzi yelayini..."
+
+#: common/KReportItemLine.cpp:86
+#, fuzzy
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Uhlobo"
+
+#: common/KReportSectionData.cpp:164
+#, fuzzy
+#| msgid "Current Section"
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Ukhetho Lwangoku"
+
+#: common/KReportSectionData.cpp:166
+#, fuzzy
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "Ubude:"
+
+#: common/KReportSectionData.cpp:170
+#, fuzzy
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Umzuzwana"
+
+#: common/KReportUnit.cpp:136
+#, fuzzy
+#| msgid "Add Group"
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Dibanisa Iqela"
+
+#: common/KReportUnit.cpp:138
+#, fuzzy
+#| msgid "Millimeters (mm)"
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "iiMillimeta (mm)"
+
+#: common/KReportUnit.cpp:140
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "iiMillimeta (mm)"
+
+#: common/KReportUnit.cpp:142
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "iiMillimeta (mm)"
+
+#: common/KReportUnit.cpp:144
+#, fuzzy
+#| msgid "Inches (in)"
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "Ii-intshi (ngaphakathi)"
+
+#: common/KReportUnit.cpp:146
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "Iincopho (pt)"
+
+#: common/KReportUnit.cpp:148
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr ""
+
+#: common/KReportUnit.cpp:150
+#, fuzzy
+#| msgid "Points (pt)"
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "Iincopho (pt)"
+
+#: common/KReportUnit.cpp:152
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "Iincopho (pt)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Imibala:"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:80
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "Uhlobo"
+
+#: items/check/KReportItemCheck.cpp:84
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Umzuzwana"
+
+#: items/check/KReportItemCheck.cpp:86
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "Ububanzi:"
+
+#: items/check/KReportItemCheck.cpp:88
+#, fuzzy
+#| msgid "More Line Colors..."
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Imibala emininzi yelayini..."
+
+#: items/check/KReportItemCheck.cpp:89
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Uhlobo"
+
+#: items/check/KReportItemCheck.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Ixabiso"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Ixabiso"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Ekhohlo:"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Internet"
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Kunene:"
+
+#: items/field/KReportItemField.cpp:96
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Ukwenziwa "
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "Phezulu:"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Ukwenziwa kwemigca"
+
+#: items/field/KReportItemField.cpp:102
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Ukwenziwa "
+
+#: items/field/KReportItemField.cpp:104
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "oint"
+
+#: items/field/KReportItemField.cpp:106
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Umzuzwana"
+
+#: items/field/KReportItemField.cpp:107
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Umzuzwana"
+
+#: items/field/KReportItemField.cpp:109
+#, fuzzy
+#| msgid "Background color:"
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Tshintsha umbala wesiqalo;"
+
+#: items/field/KReportItemField.cpp:114
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "Ububanzi:"
+
+#: items/field/KReportItemField.cpp:116
+#, fuzzy
+#| msgid "More Line Colors..."
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Imibala emininzi yelayini..."
+
+#: items/field/KReportItemField.cpp:117
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Uhlobo"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:120
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgid "Street:"
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Isitalato:"
+
+#: items/image/KReportItemImage.cpp:120
+#, fuzzy
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "Cwangcisa kwakhona"
+
+#: items/image/KReportItemImage.cpp:121
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Ixabiso"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:91
+#, fuzzy
+#| msgid "Completion"
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Ulungiso oluzenzekelayo"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Ekhohlo:"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Internet"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Kunene:"
+
+#: items/label/KReportItemLabel.cpp:96
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Ukwenziwa "
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "Phezulu:"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Ukwenziwa kwemigca"
+
+#: items/label/KReportItemLabel.cpp:102
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Ukwenziwa "
+
+#: items/label/KReportItemLabel.cpp:104
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "oint"
+
+#: items/label/KReportItemLabel.cpp:106
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Umzuzwana"
+
+#: items/label/KReportItemLabel.cpp:107
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Umzuzwana"
+
+#: items/label/KReportItemLabel.cpp:109
+#, fuzzy
+#| msgid "Background color:"
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Tshintsha umbala wesiqalo;"
+
+#: items/label/KReportItemLabel.cpp:114
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "Ububanzi:"
+
+#: items/label/KReportItemLabel.cpp:116
+#, fuzzy
+#| msgid "More Line Colors..."
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Imibala emininzi yelayini..."
+
+#: items/label/KReportItemLabel.cpp:117
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Uhlobo"
+
+#: items/text/KReportItemText.cpp:115
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Ixabiso"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Ekhohlo:"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Internet"
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Kunene:"
+
+#: items/text/KReportItemText.cpp:121
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Ukwenziwa "
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "Phezulu:"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Ukwenziwa kwemigca"
+
+#: items/text/KReportItemText.cpp:127
+#, fuzzy
+#| msgid "Vertical alignment:"
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Ukwenziwa "
+
+#: items/text/KReportItemText.cpp:129
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "oint"
+
+#: items/text/KReportItemText.cpp:131
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Umzuzwana"
+
+#: items/text/KReportItemText.cpp:132
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Umzuzwana"
+
+#: items/text/KReportItemText.cpp:134
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "Ububanzi:"
+
+#: items/text/KReportItemText.cpp:136
+#, fuzzy
+#| msgid "More Line Colors..."
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Imibala emininzi yelayini..."
+
+#: items/text/KReportItemText.cpp:137
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Uhlobo"
+
+#: items/text/KReportItemText.cpp:138
+#, fuzzy
+#| msgid "Background color:"
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Tshintsha umbala wesiqalo;"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, fuzzy, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr "Okushicilelweyo okusezantsi"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+#, fuzzy
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Internet"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:676
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Imboniso yephepha"
+
+#: wrtembed/KReportDesigner.cpp:680
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Imboniso yephepha"
+
+#: wrtembed/KReportDesigner.cpp:684
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Imboniso yephepha"
+
+#: wrtembed/KReportDesigner.cpp:688
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Imboniso yephepha"
+
+#: wrtembed/KReportDesigner.cpp:692
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Imboniso yephepha"
+
+#: wrtembed/KReportDesigner.cpp:696
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "iFooter"
+
+#: wrtembed/KReportDesigner.cpp:700
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "iFooter"
+
+#: wrtembed/KReportDesigner.cpp:704
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "iFooter"
+
+#: wrtembed/KReportDesigner.cpp:708
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "iFooter"
+
+#: wrtembed/KReportDesigner.cpp:712
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "iFooter"
+
+#: wrtembed/KReportDesigner.cpp:716
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "iHeader"
+
+#: wrtembed/KReportDesigner.cpp:720
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "iFooter"
+
+#: wrtembed/KReportDesigner.cpp:808
+#, fuzzy
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "&Susa..."
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Title:"
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Iwonga:"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Author Title"
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Igama Lombhali"
+
+#: wrtembed/KReportDesigner.cpp:818
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Ubungakanani Bephepha"
+
+#: wrtembed/KReportDesigner.cpp:821
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Ubungakanani Bephepha"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "triangleq"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "Zimela"
+
+#: wrtembed/KReportDesigner.cpp:827
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "Isiboniso"
+
+#: wrtembed/KReportDesigner.cpp:832
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Ubungakanani Bephepha"
+
+#: wrtembed/KReportDesigner.cpp:833
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Bonisa isixhobo sebar %1"
+
+#: wrtembed/KReportDesigner.cpp:834
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Ilayini Eqinileyo"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:841
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Imida"
+
+#: wrtembed/KReportDesigner.cpp:843
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Light Pink"
+
+#: wrtembed/KReportDesigner.cpp:845
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Imida"
+
+#: wrtembed/KReportDesigner.cpp:847
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Imida"
+
+#: wrtembed/KReportDesigner.cpp:869
+#, fuzzy
+#| msgid "Object"
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Injongo"
+
+#: wrtembed/KReportDesigner.cpp:1067
+#, fuzzy
+#| msgid "Custom"
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Isiko"
+
+#: wrtembed/KReportDesigner.cpp:1071
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Inkampani"
+
+#: wrtembed/KReportDesigner.cpp:1076
+#, fuzzy
+#| msgid "Date"
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Umhla"
+
+#: wrtembed/KReportDesigner.cpp:1087
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Cima Okubhaliweyo"
+
+#: wrtembed/KReportDesigner.cpp:1129
+#, fuzzy
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "i Linen"
+
+#: wrtembed/KReportDesigner.cpp:1476
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "i Linen"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1521
+#, fuzzy
+#| msgid "Completion Word"
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr "Ugqibo Lwamagama"
+
+#: wrtembed/KReportDesigner.cpp:1525
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "Inkampani"
+
+#: wrtembed/KReportDesigner.cpp:1527
+#, fuzzy
+#| msgid "Completion Word"
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr "Ugqibo Lwamagama"
+
+#: wrtembed/KReportDesigner.cpp:1531
+#, fuzzy
+#| msgid "Date"
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "Umhla"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1544
+#, fuzzy
+#| msgid "Exceptions"
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Ezizodwa"
+
+#: wrtembed/KReportDesigner.cpp:1547
+#, fuzzy
+#| msgid "&Reset"
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr "&Cwangcisa kwakhona"
+
+#: wrtembed/KReportDesigner.cpp:1549
+#, fuzzy
+#| msgid "&Lowercase"
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr "&Umzekelo osezantsi"
+
+#: wrtembed/KReportDesignerSection.cpp:126
+#, fuzzy
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "&Okungagqibekanga"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+#, fuzzy
+#| msgid "Section Title"
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Iwonga Elisecaleni"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+#, fuzzy
+#| msgid "Columns:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Imihlathi:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+#, fuzzy
+#| msgid "Street"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Isitalato"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+#, fuzzy
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Bonisa isixhobo sebar %1"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+#, fuzzy
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Bonisa isixhobo sebar %1"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+#, fuzzy
+#| msgid "Insert break after paragraph"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr "Faka uphumlo emva komhlathi"
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+#, fuzzy
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr "Khetha uhlobo lokurhweba ngaphandle:"
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+
+#: wrtembed/KReportRuler_p.cpp:1472
+#, fuzzy
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Tshintsha uphawu lwelayini yokuqala"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+#, fuzzy
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Ilayini"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+#, fuzzy
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Light Pink"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+#, fuzzy
+#| msgid "Load..."
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr "Layisha..."
+
+#: wrtembed/KReportSectionEditor.cpp:74
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "&Dibanisa Iqela..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Cima Okubhaliweyo"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Cima Okubhaliweyo"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Cima Okubhaliweyo"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.cpp:312
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.ui:29
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Bonisa isixhobo sebar %1"
+
+#: wrtembed/KReportSectionEditor.ui:36
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Bonisa isixhobo sebar %1"
+
+#: wrtembed/KReportSectionEditor.ui:43
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Imboniso yephepha"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "Iphepha Elilandelayo"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+#, fuzzy
+#| msgid "Company Name"
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Igama lenkampani"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+#, fuzzy
+#| msgid "Company Name"
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Igama lenkampani"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+#, fuzzy
+#| msgid "Paste Text"
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Buyisela okubhaliweyo"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+#, fuzzy
+#| msgid "Company Name"
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Igama lenkampani"
+
+#: wrtembed/KReportSectionEditor.ui:130
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "iFooter"
+
+#: wrtembed/KReportSectionEditor.ui:217
+#, fuzzy
+#| msgid "Current Section"
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Ukhetho Lwangoku"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, qt-format
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr ""
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+#, fuzzy
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Iphepha Elilandelayo"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+#, fuzzy
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Iphepha Elilandelayo"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr ""
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+#, fuzzy
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Iphepha Elilandelayo"
+
+#, fuzzy
+#~| msgid "US Letter"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "Ileta ye-US"
+
+#, fuzzy
+#~| msgid "US Legal"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "Umthetho we-US"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "Isiko"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "Abakhuphi mthetho be US"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "iDIN B10"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "Inkampani"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "iDIN A3"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "Ileta ye-US"
+
+#, fuzzy
+#~| msgid "Postal Code"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "Ikhowudi Yokuposa"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Double Postcard"
+#~ msgstr "Uphindo kabini"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Ikhusi"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "Indawo"
+
+#, fuzzy
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "Ubude:"
+
+#, fuzzy
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~| msgid "Size:"
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "Ubungakanani:"
+
+#, fuzzy
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "iDIN A3"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "iDIN A4"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "iDIN A5"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "iDIN B5"
+
+#, fuzzy
+#~| msgid "US Executive"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "Abakhuphi mthetho be US"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "iDIN AO"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "iDIN A1"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "iDIN A2"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "iDIN A6"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "iDIN A7"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "iDIN A8"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "iDIN A9"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "iDIN BO"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "iDIN B1"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "iDIN B2"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "iDIN B3"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "iDIN B4"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "iDIN B6"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "iDIN A5"
+
+#, fuzzy
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "Ubude:"
+
+#, fuzzy
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Weight"
+#~ msgstr "Ububanzi:"
+
+#, fuzzy
+#~| msgid "More Line Colors..."
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "Imibala emininzi yelayini..."
+
+#, fuzzy
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "Uhlobo"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "Ixabiso"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Weight"
+#~ msgstr "Ububanzi:"
+
+#, fuzzy
+#~| msgid "More Line Colors..."
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "Imibala emininzi yelayini..."
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "Uhlobo"
+
+#, fuzzy
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "Ixabiso"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "Ekhohlo:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "Internet"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "Kunene:"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Ukwenziwa "
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "Phezulu:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "Ukwenziwa kwemigca"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Ukwenziwa "
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "oint"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~| msgid "Background color:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "Tshintsha umbala wesiqalo;"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Weight"
+#~ msgstr "Ububanzi:"
+
+#, fuzzy
+#~| msgid "More Line Colors..."
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "Imibala emininzi yelayini..."
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "Uhlobo"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "Ixabiso"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "Ekhohlo:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "Internet"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "Kunene:"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Ukwenziwa "
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "Phezulu:"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "Ukwenziwa kwemigca"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Ukwenziwa "
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "oint"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Weight"
+#~ msgstr "Ububanzi:"
+
+#, fuzzy
+#~| msgid "More Line Colors..."
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "Imibala emininzi yelayini..."
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "Uhlobo"
+
+#, fuzzy
+#~| msgid "Background color:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "Tshintsha umbala wesiqalo;"
+
+#, fuzzy
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "Uhlobo Lomphathi"
+
+#, fuzzy
+#~| msgid "Bookmark name:"
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Igama lenqaku lencwadi:"
+
+#, fuzzy
+#~ msgid "Draw path"
+#~ msgstr "Umbala wokungagqibekanga:"
+
+#, fuzzy
+#~ msgid "Freehand path"
+#~ msgstr "Susa Iqela"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Angle Constraints"
+#~ msgstr "Tsintsha uphawu"
+
+#, fuzzy
+#~ msgid "Precision:"
+#~ msgstr "Indawo"
+
+#, fuzzy
+#~ msgctxt "The raw line data"
+#~ msgid "Raw"
+#~ msgstr "Gainsboro"
+
+#, fuzzy
+#~ msgid "Curve"
+#~ msgstr "Ukhetho Lwangoku"
+
+#, fuzzy
+#~ msgid "Straight"
+#~ msgstr "triangleq"
+
+#, fuzzy
+#~ msgid "Combine angle:"
+#~ msgstr "Imbumbulu yesiko"
+
+#, fuzzy
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr "Ayinakurhwebela ngaphandle ifayile"
+
+#, fuzzy
+#~| msgid "Current Date (fixed)"
+#~ msgid "Currently no database is used."
+#~ msgstr "Umhla Wangoku (ulungisiwe)"
+
+#, fuzzy
+#~ msgid "The database \"%1\" does not exist."
+#~ msgstr "Ifayile %1 ayisekho."
+
+#, fuzzy
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "Ifayile %1 ayisekho."
+
+#, fuzzy
+#~ msgid "Database file \"%1\" is not writable."
+#~ msgstr "Ifayile %1 ayisekho."
+
+#, fuzzy
+#~ msgid "Creating table failed."
+#~ msgstr "Yenza i Template"
+
+#, fuzzy
+#~ msgid "Could not create the same table \"%1\" twice."
+#~ msgstr "Ayinakufunda isiqalo sefayile"
+
+#, fuzzy
+#~ msgid "Table \"%1\" does not exist."
+#~ msgstr "Ifayile %1 ayisekho."
+
+#, fuzzy
+#~ msgid "Could not remove object's data."
+#~ msgstr "Ayinakulayisha iinjongo ezilungisiweyo"
+
+#, fuzzy
+#~ msgid "Could not alter table \"%1\" using the same table as destination."
+#~ msgstr "Ayinakufunda isiqalo sefayile"
+
+#, fuzzy
+#~ msgid "Could not rename table \"%1\" using the same name."
+#~ msgstr "Ayinakufunda isiqalo sefayile"
+
+#, fuzzy
+#~ msgid "Query \"%1\" does not exist."
+#~ msgstr "Ifayile %1 ayisekho."
+
+#, fuzzy
+#~ msgid "Begin transaction failed."
+#~ msgstr "Isalathiso sefayile:"
+
+#, fuzzy
+#~ msgid "Column <resource>%1</resource> does not exist in the query."
+#~ msgstr "Ifayile %1 ayisekho."
+
+#, fuzzy
+#~| msgid "Error while saving embedded documents"
+#~ msgctxt "Extended schema for a table: loading error"
+#~ msgid "Error while loading extended table schema."
+#~ msgstr "Imposiso ngexesha ugcina amaxwebhu alungisiweyo"
+
+#, fuzzy
+#~ msgid ""
+#~ "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~ "XML data: %4"
+#~ msgstr "Imposiso echazayo kwifayile kwilayini %1, umhlathi %2"
+
+#, fuzzy
+#~ msgid "Could not insert record because there is no master table specified."
+#~ msgstr "Ayinakufunda isiqalo sefayile"
+
+#, fuzzy
+#~ msgid "Could not delete record because there is no master table specified."
+#~ msgstr "Ayinakufunda isiqalo sefayile"
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "Umhla"
+
+#, fuzzy
+#~ msgid "Could not set value of database property \"%1\"."
+#~ msgstr "Ayinakufunda isiqalo sefayile"
+
+#, fuzzy
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "Ayinakufunda isiqalo sefayile"
+
+#, fuzzy
+#~ msgid "Could not read database properties."
+#~ msgstr "Ayinakufunda isiqalo sefayile"
+
+#, fuzzy
+#~ msgid "Could not find database driver \"%1\"."
+#~ msgstr "Ayinakufunda isiqalo sefayile"
+
+#, fuzzy
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "Ayinakufunda isiqalo sefayile"
+
+#, fuzzy
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "Ayinakufunda isiqalo sefayile"
+
+#, fuzzy
+#~ msgid "Field not found"
+#~ msgstr "IMPOSISO: Ifayile ayifumaneki."
+
+#, fuzzy
+#~ msgid "Could not access the table directly using its name"
+#~ msgstr "Ayinakuyivula ifayile yokugcina"
+
+#, fuzzy
+#~ msgid "Table not found"
+#~ msgstr "IMPOSISO: Ifayile ayifumaneki."
+
+#, fuzzy
+#~ msgid "Table \"%1\" has no \"%2\" field."
+#~ msgstr "Ifayile %1 ayisekho."
+
+#, fuzzy
+#~| msgid "Page Number"
+#~ msgid "Short Integer Number"
+#~ msgstr "Inani lephepha"
+
+#, fuzzy
+#~| msgid "Next Page Number"
+#~ msgid "Integer Number"
+#~ msgstr "Inani Lephepha Elilandelayo"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Yes/No Value"
+#~ msgstr "Tsintsha uphawu"
+
+#~ msgid "Date"
+#~ msgstr "Umhla"
+
+#, fuzzy
+#~ msgid "Date and Time"
+#~ msgstr "Umhla Wangoku (Ulungisiwe)"
+
+#, fuzzy
+#~ msgid "Time"
+#~ msgstr "Ixesha"
+
+#~ msgid "Text"
+#~ msgstr "Umbhalo"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Long Text"
+#~ msgstr "Umbhalo"
+
+#~ msgid "Object"
+#~ msgstr "Injongo"
+
+#, fuzzy
+#~| msgid "Change Line Spacing"
+#~ msgid "Floating Point Number"
+#~ msgstr "Tshintsha isithuba selayini"
+
+#, fuzzy
+#~ msgid "Date/Time"
+#~ msgstr "Umhla Wangoku (Ulungisiwe)"
+
+#, fuzzy
+#~ msgid "Syntax error."
+#~ msgstr "Internet"
+
+#, fuzzy
+#~| msgid "Error!"
+#~ msgid "Error"
+#~ msgstr "Imposiso!"
+
+#, fuzzy
+#~ msgid "Error near \"%1\"."
+#~ msgstr "Internet"
+
+#, fuzzy
+#~ msgid "Record inserting failed."
+#~ msgstr "Yenza i Template"
+
+#, fuzzy
+#~ msgid "Record deleting failed."
+#~ msgstr "Yenza i Template"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Test Connection"
+#~ msgstr "Tsintsha uphawu"
+
+#, fuzzy
+#~ msgid "Number"
+#~ msgstr "Inani"
+
+#, fuzzy
+#~ msgid "Image"
+#~ msgstr "Iphepha Elilandelayo"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr "Tsintsha uphawu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr "Susa isichwethezi"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "Yitshintshele kwisiGrike"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Combine paths"
+#~ msgstr "Imbumbulu yesiko"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move control point"
+#~ msgstr "Imida"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "Faka ikhonkco"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "Imida"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move points"
+#~ msgstr "Susa ikhonknco"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove points"
+#~ msgstr "Susa ikhonknco"
+
+#, fuzzy
+#~| msgid "Select Font"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set point type"
+#~ msgstr "Khetha ubukhulu begama"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reverse paths"
+#~ msgstr "Susa Iqela"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath"
+#~ msgstr "Susa Iqela"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to curves"
+#~ msgstr "Itshintsha ichar iyisa Eluphawini"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to lines"
+#~ msgstr "Itshintsha ichar iyisa Eluphawini"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set marker"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Align shapes"
+#~ msgstr "Ukwenziwa kwemigca"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Clip Shape"
+#~ msgstr "Dibanisa Isithuba"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr "Yenza i Template"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shape"
+#~ msgid_plural "Delete shapes"
+#~ msgstr[0] "Cima Okubhaliweyo"
+#~ msgstr[1] "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Distribute shapes"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~| msgid "Current Section"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr "Ukhetho Lwangoku"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Lock shapes"
+#~ msgstr "Ukwenziwa kwemigca"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move shapes"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr "Yenza i Template"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reorder shapes"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Shape RunAround"
+#~ msgstr "Susa isichwethezi"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Shadow"
+#~ msgstr "Isithunzi"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Shear shapes"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Resize shapes"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr "Okushicilelweyo okusezantsi"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shape"
+#~ msgstr "Yenza i Template"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shapes"
+#~ msgstr "Ukwenziwa kwemigca"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr "Ukwenziwa kwemigca"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Close subpath"
+#~ msgstr "Susa Iqela"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Join subpaths"
+#~ msgstr "Imbumbulu yesiko"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove subpath"
+#~ msgstr "Susa Iqela"
+
+#, fuzzy
+#~ msgid "Lines"
+#~ msgstr "i Linen"
+
+#, fuzzy
+#~ msgid "Type:"
+#~ msgstr "Phezulu:"
+
+#, fuzzy
+#~| msgid "Time"
+#~ msgid "Tie"
+#~ msgstr "Ixesha"
+
+#, fuzzy
+#~ msgid "Simple path shape"
+#~ msgstr "Yenza i Template"
+
+#, fuzzy
+#~ msgid "%1 Options"
+#~ msgstr "Ezizodwa"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Shapes"
+#~ msgstr "Yenza i Template"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "Buyisela okubhaliweyo"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgid "Nodes"
+#~ msgstr "Akukho nanye"
+
+#, fuzzy
+#~ msgid "Guide lines"
+#~ msgstr "Ilayini Eqinileyo"
+
+#, fuzzy
+#~ msgid "Create object"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~ msgid "Pan"
+#~ msgstr "Tan"
+
+#, fuzzy
+#~| msgid "Change Alignment"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Segment"
+#~ msgstr "Tshintsha ukwenziwa kwemigca"
+
+#, fuzzy
+#~ msgid "Corner point"
+#~ msgstr "Tshintsha ukwenziwa kwemigca"
+
+#, fuzzy
+#~ msgid "Make curve point"
+#~ msgstr "Imida"
+
+#, fuzzy
+#~ msgid "Make line point"
+#~ msgstr "Imida"
+
+#, fuzzy
+#~ msgid "Segment to Line"
+#~ msgstr "Itshintsha ichar iyisa Eluphawini"
+
+#, fuzzy
+#~ msgid "Insert point"
+#~ msgstr "Faka ikhonkco"
+
+#, fuzzy
+#~ msgid "Remove point"
+#~ msgstr "Susa ikhonknco"
+
+#, fuzzy
+#~ msgid "Merge points"
+#~ msgstr "Imida"
+
+#, fuzzy
+#~| msgid "Edit Path"
+#~ msgid "To Path"
+#~ msgstr "Hlela Umendo"
+
+#, fuzzy
+#~ msgid "Line/Curve"
+#~ msgstr "Ukhetho Lwangoku"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Path editing"
+#~ msgstr "Ushicilelo Lokugqibela"
+
+#, fuzzy
+#~ msgid "..."
+#~ msgstr "&Dibanisa Iqela..."
+
+#, fuzzy
+#~ msgid "Convert To Path"
+#~ msgstr "Yitshintshele kwisiGrike"
+
+#, fuzzy
+#~ msgid "Scripts"
+#~ msgstr "Okushicilelweyo okusezantsi"
+
+#, fuzzy
+#~ msgid "Script Manager"
+#~ msgstr "Uhlobo Lomphathi"
+
+#, fuzzy
+#~ msgid "Execute Script File..."
+#~ msgstr "Okushicilelweyo okusezantsi"
+
+#, fuzzy
+#~ msgid "Script Manager..."
+#~ msgstr "Uhlobo Lomphathi"
+
+#, fuzzy
+#~ msgid "Execute Script File"
+#~ msgstr "Okushicilelweyo okusezantsi"
+
+#, fuzzy
+#~ msgid "Could not read the package \"%1\"."
+#~ msgstr "Ayinakufunda isiqalo sefayile"
+
+#, fuzzy
+#~ msgid "Replace"
+#~ msgstr "&Buyisela igama:"
+
+#, fuzzy
+#~ msgid "Save"
+#~ msgstr "Dibanisa Isithuba"
+
+#, fuzzy
+#~ msgid "Add script file"
+#~ msgstr "Okushicilelweyo okusezantsi"
+
+#, fuzzy
+#~| msgid "Add Completion Entry"
+#~ msgid "Add collection folder"
+#~ msgstr "Yoneza Umngeno Wogqibo"
+
+#, fuzzy
+#~ msgid "Add"
+#~ msgstr "&Yongeza"
+
+#, fuzzy
+#~ msgid "Script"
+#~ msgstr "Okushicilelweyo okusezantsi"
+
+#, fuzzy
+#~| msgid "Completion"
+#~ msgid "Collection"
+#~ msgstr "Ulungiso oluzenzekelayo"
+
+#, fuzzy
+#~| msgid "Change List Type"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master slide"
+#~ msgstr "Tshintsha Udidi Loluhlu"
+
+#, fuzzy
+#~| msgid "Change List Type"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master page"
+#~ msgstr "Tshintsha Udidi Loluhlu"
+
+#, fuzzy
+#~| msgid "Page Layout"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "Ubeko lwephepha"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display master background"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display slide background"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display page background"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Show master shapes"
+#~ msgstr "Yenza i Template"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Hide master shapes"
+#~ msgstr "Yenza i Template"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] "Cima Okubhaliweyo"
+#~ msgstr[1] "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "Cima Okubhaliweyo"
+#~ msgstr[1] "Cima Okubhaliweyo"
+
+#, fuzzy
+#~| msgid "Insert Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr "Faka injongo"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr "Faka injongo"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "Buyisela okubhaliweyo"
+#~ msgstr[1] "Buyisela okubhaliweyo"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] "Cima Okubhaliweyo"
+#~ msgstr[1] "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgid "Grid"
+#~ msgstr "Bonisa isixhobo sebar %1"
+
+#, fuzzy
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~ msgid "Document Settings"
+#~ msgstr "Ushwankathelo loxwebhu"
+
+#, fuzzy
+#~| msgid "Author"
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "Umbhali"
+
+#~ msgid "Author"
+#~ msgstr "Umbhali"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Slide"
+#~ msgstr "Buyisela okubhaliweyo"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Page"
+#~ msgstr "Buyisela okubhaliweyo"
+
+#, fuzzy
+#~ msgid "Slide %1"
+#~ msgstr "Bonisa isixhobo sebar %1"
+
+#, fuzzy
+#~ msgid "Page  %1"
+#~ msgstr "Umhla"
+
+#, fuzzy
+#~ msgid "Layer"
+#~ msgstr "i Lavender"
+
+#, fuzzy
+#~| msgid "Group:"
+#~ msgid "Group"
+#~ msgstr "Iqela:"
+
+#, fuzzy
+#~ msgid "Shape"
+#~ msgstr "Dibanisa Isithuba"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "Buyisela okubhaliweyo"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "Yenza i Template"
+
+#, fuzzy
+#~| msgid "Size:"
+#~ msgid "Slide"
+#~ msgstr "Ubungakanani:"
+
+#, fuzzy
+#~| msgid "Variable"
+#~ msgid "Visible"
+#~ msgstr "Umahluko"
+
+#, fuzzy
+#~ msgid "Locked"
+#~ msgstr "Locale"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reparent shapes"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgid "&Move Here"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgid "&Copy Here"
+#~ msgstr "Ikhusi"
+
+#, fuzzy
+#~ msgid "C&ancel"
+#~ msgstr "Tsintsha Umzekelo"
+
+#, fuzzy
+#~ msgid "Document"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~ msgid "Add a new slide or layer"
+#~ msgstr "Yongeza Ngaphezulu komgca"
+
+#, fuzzy
+#~ msgid "Add a new page or layer"
+#~ msgstr "Yongeza Ngaphezulu komgca"
+
+#, fuzzy
+#~ msgid "Page"
+#~ msgstr "Iphepha Elilandelayo"
+
+#, fuzzy
+#~| msgid "Remove Selected Text"
+#~ msgid "Delete selected objects"
+#~ msgstr "Susa Umbhalo Okhethiweyo"
+
+#, fuzzy
+#~| msgid "Remove Selected Text"
+#~ msgid "Raise selected objects"
+#~ msgstr "Susa Umbhalo Okhethiweyo"
+
+#, fuzzy
+#~ msgid "Lower selected objects"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgid "View mode"
+#~ msgstr "Imida yephepha"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "Yenza i Template"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgid "Add a new slide"
+#~ msgstr "Yongeza Ngaphezulu komgca"
+
+#, fuzzy
+#~ msgid "Add a new page"
+#~ msgstr "Yongeza Ngaphezulu komgca"
+
+#, fuzzy
+#~ msgid "Page %1"
+#~ msgstr "Umhla"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] "Buyisela okubhaliweyo"
+#~ msgstr[1] "Buyisela okubhaliweyo"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] "Buyisela okubhaliweyo"
+#~ msgstr[1] "Buyisela okubhaliweyo"
+
+#, fuzzy
+#~ msgid "Tools"
+#~ msgstr "Umbala wokungagqibekanga"
+
+#, fuzzy
+#~ msgid "D&elete"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgid "Insert Page"
+#~ msgstr "Faka injongo"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Page"
+#~ msgstr "Igama lenkampani"
+
+#, fuzzy
+#~ msgid "Delete Page"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgid "Delete the current page"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Page..."
+#~ msgstr "Buyisela okubhaliweyo"
+
+#~ msgid "Page Layout..."
+#~ msgstr "Ubeko lwephepha..."
+
+#~ msgid "Variable"
+#~ msgstr "Umahluko"
+
+#, fuzzy
+#~ msgid "Import Document..."
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~ msgid "Import Slideshow"
+#~ msgstr "Rhweba angaphakathi Uhlobo"
+
+#, fuzzy
+#~ msgid "Import Document"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not import\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ayikwazi ukuvula\n"
+#~ "i-%1"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr "Susa isichwethezi"
+
+#, fuzzy
+#~ msgid "Set image ..."
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~ msgid "Background"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~ msgid "Page Background"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page Design"
+#~ msgstr "Imboniso yephepha"
+
+#, fuzzy
+#~ msgid "Slide Design"
+#~ msgstr "Bonisa isixhobo sebar %1"
+
+#, fuzzy
+#~ msgid "Use background of master page"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~ msgid "Use background of master slide"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~| msgid "Change List Type"
+#~ msgid "Display shapes of master page"
+#~ msgstr "Tshintsha Udidi Loluhlu"
+
+#, fuzzy
+#~| msgid "Change List Type"
+#~ msgid "Display shapes of master slide"
+#~ msgstr "Tshintsha Udidi Loluhlu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change slide background image"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page background image"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "Buyisela okubhaliweyo"
+
+#, fuzzy
+#~ msgid "Slide %1/%2"
+#~ msgstr "Bonisa isixhobo sebar %1"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master Page %1/%2"
+#~ msgstr "Buyisela okubhaliweyo"
+
+#, fuzzy
+#~ msgid "Page %1/%2"
+#~ msgstr "Umhla"
+
+#, fuzzy
+#~| msgid "Field"
+#~ msgid "Field"
+#~ msgstr "Umhlaba"
+
+#, fuzzy
+#~ msgid "Label"
+#~ msgstr "Uphawu Lombhalo1"
+
+#, fuzzy
+#~| msgid "Section Title"
+#~ msgid "Section Editor"
+#~ msgstr "Iwonga Elisecaleni"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "Itshintsha ichar iyisa Eluphawini"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "Itshintsha ichar iyisa Eluphawini"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "Umbhalo"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "Faka ikhonkco"
+
+#, fuzzy
+#~| msgid "Insert Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr "Faka injongo"
+
+#, fuzzy
+#~| msgid "Insert Column"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Right"
+#~ msgstr "Faka Umhlathi"
+
+#, fuzzy
+#~| msgid "Insert Column"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr "Faka Umhlathi"
+
+#, fuzzy
+#~| msgid "Insert Row"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Below"
+#~ msgstr "Faka Umqolo"
+
+#, fuzzy
+#~| msgid "Insert Row"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "Faka Umqolo"
+
+#, fuzzy
+#~| msgid "Change Line Spacing"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List Numbering"
+#~ msgstr "Tshintsha isithuba selayini"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "Ifomati Yomhla"
+
+#, fuzzy
+#~| msgid "Change Paragraph Spacing"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Direct Paragraph Formatting"
+#~ msgstr "Tshintsha isithuba somhlathi"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr "Yenza i Template"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr "Imbumbulu yesiko"
+
+#, fuzzy
+#~| msgid "Shadow:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "Isithunzi:"
+
+#, fuzzy
+#~| msgid "Date"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "Umhla"
+
+#, fuzzy
+#~ msgid "1 replacement made"
+#~ msgid_plural "%1 replacements made"
+#~ msgstr[0] "Buyisela okubhaliweyo"
+#~ msgstr[1] "Buyisela okubhaliweyo"
+
+#, fuzzy
+#~| msgctxt "We add the 1/2 char at the %1"
+#~| msgid "Re&place 1/2... with %1..."
+#~ msgid "Replace %1 with %2?"
+#~ msgstr "Gu&qulela 1/2... nge %1..."
+
+#, fuzzy
+#~| msgid "Current Section"
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "Ukhetho Lwangoku"
+
+#, fuzzy
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "Eyodwa"
+
+#, fuzzy
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "Uphindo kabini"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "New Paragraph"
+#~ msgstr "Okubhaliweyo komhlathi oqhelekileyo"
+
+#, fuzzy
+#~| msgid "Bookmark"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "Inqaku lencwadi"
+
+#, fuzzy
+#~| msgid "Add Fraction"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "Dibanisa Iqhekeza"
+
+#, fuzzy
+#~| msgid "Insert Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "Faka injongo"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "Faka injongo"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "Faka ikhonkco"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "Faka injongo"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "Imida"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "&Nkqo"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr "Imbumbulu yesiko"
+
+#, fuzzy
+#~| msgid "Change Text Format"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Border Formatting"
+#~ msgstr "Tshintsha Ifomati Yokubhaliweyo"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Faka injongo"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr "Faka injongo"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Faka ikhonkco"
+
+#, fuzzy
+#~| msgid "Add Fraction"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "Dibanisa Iqhekeza"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr "Amagama amakhulu:"
+
+#, fuzzy
+#~| msgid "Italic:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "Okukekeleyo:"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "Yenza umgca ngaphantsi:"
+
+#, fuzzy
+#~| msgid "Strikeout:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr "Khupha ngaphandle:"
+
+#, fuzzy
+#~| msgid "Change Alignment"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr "Tshintsha ukwenziwa kwemigca"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr "Ukwenziwa "
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "Tsintsha uphawu"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "Tsintsha uphawu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "Ubungakanani bohlobo lwamagama Besiseko:"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "Ubungakanani bohlobo lwamagama Besiseko:"
+
+#, fuzzy
+#~| msgid "Select Font"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr "Khetha ubukhulu begama"
+
+#, fuzzy
+#~| msgid "Select Font"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr "Khetha ubukhulu begama"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Text Color"
+#~ msgstr "Umbala wokungagqibekanga"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr "Yenza Uhlobo Olutsha"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Paragraph Style"
+#~ msgstr "Okubhaliweyo komhlathi oqhelekileyo"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "Ifomati Yomhla"
+
+#, fuzzy
+#~ msgid "Default"
+#~ msgstr "&Okungagqibekanga"
+
+#, fuzzy
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "Layisha ezantsi"
+
+#, fuzzy
+#~ msgid "Redo %1"
+#~ msgstr "Layisha ezantsi"
+
+#, fuzzy
+#~ msgid "Redo"
+#~ msgstr "Layisha ezantsi"
+
+#, fuzzy
+#~ msgid "&File"
+#~ msgstr "Igama lefayile"
+
+#, fuzzy
+#~ msgid "&Settings"
+#~ msgstr "triangleq"
+
+#, fuzzy
+#~ msgid "File"
+#~ msgstr "Igama lefayile"
+
+#, fuzzy
+#~ msgid "Delete the author profile"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgid "Default Author Profile"
+#~ msgstr "Umbala wokungagqibekanga"
+
+#, fuzzy
+#~ msgid "Name of Profile"
+#~ msgstr "Inani Lamaphepha"
+
+#~ msgid "Name:"
+#~ msgstr "Igama:"
+
+#, fuzzy
+#~ msgid "Initials:"
+#~ msgstr "Okukekeleyo:"
+
+#~ msgid "Title:"
+#~ msgstr "Iwonga:"
+
+#, fuzzy
+#~ msgid "Position:"
+#~ msgstr "Indawo"
+
+#~ msgid "Company:"
+#~ msgstr "Inkampani:"
+
+#~ msgid "Email:"
+#~ msgstr "i Email:"
+
+#, fuzzy
+#~ msgid "Telephone (home):"
+#~ msgstr "Ifowuni:"
+
+#, fuzzy
+#~ msgid "Telephone (work):"
+#~ msgstr "Ifowuni"
+
+#~ msgid "Fax:"
+#~ msgstr "i Fax:"
+
+#~ msgid "Street:"
+#~ msgstr "Isitalato:"
+
+#~ msgid "Postal code:"
+#~ msgstr "Ikhowudi Yokuposa:"
+
+#~ msgid "City:"
+#~ msgstr "Isixeko:"
+
+#~ msgid "Country:"
+#~ msgstr "Ilizwe:"
+
+#, fuzzy
+#~| msgid "No value"
+#~ msgid "No autosave"
+#~ msgstr "Akukho xabiso"
+
+#, fuzzy
+#~ msgid "Create backup file:"
+#~ msgstr "Yenza i Template"
+
+#, fuzzy
+#~ msgid "Show grid:"
+#~ msgstr "Bonisa isixhobo sebar %1"
+
+#, fuzzy
+#~ msgid "Grid color:"
+#~ msgstr "Tshintsha umbala wesiqalo;"
+
+#, fuzzy
+#~ msgid "Spacing"
+#~ msgstr "Uniko sithuba lwelayini"
+
+#, fuzzy
+#~| msgid "&Horizontal"
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "&Tye"
+
+#, fuzzy
+#~| msgid "&Vertical"
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "&Nkqo"
+
+#, fuzzy
+#~| msgid "Unit:"
+#~ msgid "Units:"
+#~ msgstr "Umnqongo:"
+
+#, fuzzy
+#~| msgid "Shadow:"
+#~ msgid "Paste offset:"
+#~ msgstr "Isithunzi:"
+
+#, fuzzy
+#~ msgid "Open a new document with a template"
+#~ msgstr "Yenza i template kuxwebhu olutsha"
+
+#, fuzzy
+#~ msgid "%1: Critical Error"
+#~ msgstr "Ugqibo Lwamagama"
+
+#, fuzzy
+#~ msgid "No template found for: %1"
+#~ msgstr "Akukho mqheba ufumanekayo we %1"
+
+#, fuzzy
+#~ msgid "Too many templates found for: %1"
+#~ msgstr "Akukho mqheba ufumanekayo we %1"
+
+#, fuzzy
+#~ msgid "Always use this template"
+#~ msgstr "Yenza i Template"
+
+#, fuzzy
+#~ msgid "Saving..."
+#~ msgstr "Ugcino Lwefayile"
+
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ayinakuyigcina\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Ayinakuyigcina%1\n"
+#~ "%2"
+
+#, fuzzy
+#~| msgid "Document Title"
+#~ msgid "Document <i>%1</i> saved"
+#~ msgstr "Iwonga loxwebhu"
+
+#, fuzzy
+#~ msgid "Could not create the file for saving"
+#~ msgstr "Ayinakuyivula ifayile yokugcina"
+
+#, fuzzy
+#~ msgid "Not able to write '%1'. Partition full?"
+#~ msgstr "Ayikwazi ukubhala i maindoc.xml"
+
+#, fuzzy
+#~ msgid "Not able to write RDF metadata. Partition full?"
+#~ msgstr "Ayikwazi ukubhala i maindoc.xml"
+
+#, fuzzy
+#~ msgid "Error while trying to write '%1'. Partition full?"
+#~ msgstr "Ayikwazi ukubhala i maindoc.xml"
+
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "i URL emalifomiweyo\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "An autosaved file exists for this document.\n"
+#~ "Do you want to open it instead?"
+#~ msgstr ""
+#~ "Ifayile egcinwe ngokuzenzekela yolu xwebhu ikhona.\n"
+#~ "Ufuna ukuyivula mhlawumbi? "
+
+#, fuzzy
+#~ msgid "The file %1 does not exist."
+#~ msgstr "Ifayile %1 ayisekho."
+
+#, fuzzy
+#~| msgid "Open Document"
+#~ msgid "Opening Document"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "Ayinakuyivula ifayile yokugcina"
+
+#, fuzzy
+#~ msgid "File not found"
+#~ msgstr "IMPOSISO: Ifayile ayifumaneki."
+
+#, fuzzy
+#~ msgid "Not implemented"
+#~ msgstr "hambiselana"
+
+#, fuzzy
+#~ msgid "Invalid file format"
+#~ msgstr "Ifomati yephepha"
+
+#, fuzzy
+#~ msgid "Internal error"
+#~ msgstr "Internet"
+
+#, fuzzy
+#~ msgid "Failed to download remote file"
+#~ msgstr "Ayinakuyivula ifayile %1"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr ""
+#~ "Ayinakuvula %1\n"
+#~ "Isizathu: %2"
+
+#, fuzzy
+#~| msgid "Document Title"
+#~ msgid "Document <i>%1</i> loaded"
+#~ msgstr "Iwonga loxwebhu"
+
+#, fuzzy
+#~ msgid "Could not find %1"
+#~ msgstr "Awunakufumaneka umnqongo osezantsi wokulinganisela %1"
+
+#, fuzzy
+#~ msgid ""
+#~ "Parsing error in %1 at line %2, column %3\n"
+#~ "Error message: %4"
+#~ msgstr "Imposiso echazayo kwifayile kwilayini %1, umhlathi %2"
+
+#, fuzzy
+#~ msgid "%1 is not a file."
+#~ msgstr "%1 asilokhonkco lisebenzayo."
+
+#, fuzzy
+#~ msgid "Could not open the file for reading (check read permissions)."
+#~ msgstr "Ayinakuvula ifayile yokufunda (khangela iimvume zokufunda)"
+
+#, fuzzy
+#~ msgid "Could not read the beginning of the file."
+#~ msgstr "Ayinakufunda isiqalo sefayile"
+
+#, fuzzy
+#~ msgid ""
+#~ "parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr "Imposiso echazayo kwifayile kwilayini %1, umhlathi %2"
+
+#, fuzzy
+#~ msgid "Not a valid Calligra file: %1"
+#~ msgstr "Ayiyofayile esebenzayo ye KOffice"
+
+#, fuzzy
+#~ msgid "Invalid document: no file 'maindoc.xml'."
+#~ msgstr "Uxwebhu olungasebenziyo: akukho fayile 'maindoc.xml'"
+
+#, fuzzy
+#~ msgid "Untitled"
+#~ msgstr "Iwonga"
+
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr ""
+#~ "<p>Uxwebhu <b>'%1'</b> luguqulwe kancinane.</p><p>Ufuna ukuligcina?</p>"
+
+#~ msgid "Internal error: saveXML not implemented"
+#~ msgstr "Imposiso yangaphakathi: gcina XML engazalisekiswanga"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ayikwazi ukuvula\n"
+#~ "i-%1"
+
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Ayinakuvula %1\n"
+#~ "Isizathu: %2"
+
+#, fuzzy
+#~ msgid "a presentation"
+#~ msgstr "Isiboniso"
+
+#, fuzzy
+#~ msgid "a drawing"
+#~ msgstr "Dark Orange"
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~| "it?</p>"
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr ""
+#~ "<p>Uxwebhu <b>'%1'</b> luguqulwe kancinane.</p><p>Ufuna ukuligcina?</p>"
+
+#, fuzzy
+#~ msgid "Close Document"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~ msgid "No"
+#~ msgstr "Qaphela"
+
+#, fuzzy
+#~ msgid "Could not export file."
+#~ msgstr "Ayinakurhwebela ngaphandle ifayile"
+
+#~ msgid "Missing Export Filter"
+#~ msgstr "Icebo lokucoca ulwelo Olurhwetyelwe Ngaphandle Lulahlekile"
+
+#~ msgid ""
+#~ "Could not import file of type\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ayinakulurhwebela ngaphakathi ifayile yohlobo\n"
+#~ "%1"
+
+#~ msgid "Missing Import Filter"
+#~ msgstr "Icebo lokucoca ulwelo Olurhwebelwe ngaphakathi Lulahlekile"
+
+#, fuzzy
+#~ msgid "Choose Filter"
+#~ msgstr "Khetha"
+
+#, fuzzy
+#~| msgid "&Find:"
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "&Fumana:"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "Umbhalo"
+
+#, fuzzy
+#~| msgid "Previous Page"
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "Iphepha Elidlulileyo"
+
+#, fuzzy
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "Ezizodwa"
+
+#, fuzzy
+#~| msgid "&Replace:"
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "&Buyisela igama:"
+
+#, fuzzy
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "&Buyisela igama:"
+
+#, fuzzy
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "&Buyisela igama:"
+
+#, fuzzy
+#~ msgctxt "Total number of matches"
+#~ msgid "1 match found"
+#~ msgid_plural "%1 matches found"
+#~ msgstr[0] "Akukho mqheba ufumanekayo we %1"
+#~ msgstr[1] "Akukho mqheba ufumanekayo we %1"
+
+#, fuzzy
+#~ msgid "No matches found"
+#~ msgstr "Akukho mqheba ufumanekayo we %1"
+
+#, fuzzy
+#~ msgid "%1 unsaved document (%2)"
+#~ msgstr "Gcina Uxwebhu Njenge"
+
+#, fuzzy
+#~ msgid "Reload"
+#~ msgstr "Layisha ezantsi"
+
+#, fuzzy
+#~ msgid "Open ex&isting Document as Untitled Document..."
+#~ msgstr "Vula uxwebhu olukhoyo"
+
+#, fuzzy
+#~ msgid "En&crypt Document"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~ msgid "&New View"
+#~ msgstr "&Susa imboniselo"
+
+#~ msgid "Document Information"
+#~ msgstr "Ulwazi olukwixwebhu"
+
+#, fuzzy
+#~| msgid "Show %1 Toolbar"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "Bonisa isixhobo sebar %1"
+
+#, fuzzy
+#~ msgid "(write protected)"
+#~ msgstr "Isalathiso:"
+
+#, fuzzy
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "Udidi lwefayile olungaziwayo %1"
+
+#, fuzzy
+#~ msgid "untitled"
+#~ msgstr "Iwonga"
+
+#~ msgid "Open Document"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~ msgid "Document - %1"
+#~ msgstr "Iwonga loxwebhu"
+
+#, fuzzy
+#~ msgid "Warning"
+#~ msgstr "Dark Orange"
+
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "Bonisa isixhobo sebar %1"
+
+#, fuzzy
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "Bonisa isixhobo sebar %1"
+
+#, fuzzy
+#~ msgid "Open Existing Document"
+#~ msgstr "Vula uxwebhu olukhoyo"
+
+#, fuzzy
+#~ msgid "Recent Documents"
+#~ msgstr "Vu&la uxwebhu olusandukubakho"
+
+#, fuzzy
+#~ msgid "Custom Document"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Printing"
+#~ msgstr "Ushicilelo Lokugqibela"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Printing done"
+#~ msgstr "Ushicilelo Lokugqibela"
+
+#, fuzzy
+#~ msgid "Close"
+#~ msgstr "Imibala:"
+
+#, fuzzy
+#~ msgid "Open This Document"
+#~ msgstr "Vula Uxwebhu"
+
+#~ msgid "Create Template"
+#~ msgstr "Yenza i Template"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "Igama:"
+
+#~ msgid "Group:"
+#~ msgstr "Iqela:"
+
+#~ msgid "&Add Group..."
+#~ msgstr "&Dibanisa Iqela..."
+
+#, fuzzy
+#~ msgid "&Remove"
+#~ msgstr "&Susa imboniselo"
+
+#~ msgid "Picture"
+#~ msgstr "Umfanekiso"
+
+#, fuzzy
+#~| msgid "Preview"
+#~ msgid "&Preview"
+#~ msgstr "Imboniso"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Custom:"
+#~ msgstr "Isiko"
+
+#~ msgid "&Select..."
+#~ msgstr "&Khetha..."
+
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr "Ufuna ngokwenene ukubhala ngaphezulu i '%1'template esele ihkona?"
+
+#~ msgid "Add Group"
+#~ msgstr "Dibanisa Iqela"
+
+#~ msgid "Enter group name:"
+#~ msgstr "Ngenisa Igama leqela:"
+
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "Ufuna ngokwenene ukulisusa elaa qela?"
+
+#~ msgid "Remove Group"
+#~ msgstr "Susa Iqela"
+
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "Ufuna ngokwenene ukususa laa template?"
+
+#~ msgid "Remove Template"
+#~ msgstr "Susa i Template"
+
+#, fuzzy
+#~ msgid "&Delete"
+#~ msgstr "Cima Okubhaliweyo"
+
+#~ msgid "Could not load picture."
+#~ msgstr "Ayinakuwulayisha umfanekiso."
+
+#~ msgid "No picture available."
+#~ msgstr "Akukho mfanekiso ukhoyo."
+
+#, fuzzy
+#~ msgid "Use This Template"
+#~ msgstr "Yenza i Template"
+
+#, fuzzy
+#~ msgid "Date & Time"
+#~ msgstr "Umhla Wangoku (Ulungisiwe)"
+
+#~ msgid "Comment"
+#~ msgstr "Gqabaza"
+
+#~ msgid "&Add"
+#~ msgstr "&Yongeza"
+
+#, fuzzy
+#~ msgid "&Modify"
+#~ msgstr "Phakathi:"
+
+#, fuzzy
+#~ msgid "Date: %1"
+#~ msgstr "Umhla"
+
+#, fuzzy
+#~ msgid "Do you want to save the password?"
+#~ msgstr "Ufuna ngokwenene ukususa laa template?"
+
+#, fuzzy
+#~ msgid ""
+#~ "Parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr "Imposiso echazayo kwifayile kwilayini %1, umhlathi %2"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "Ikhusi"
+
+#, fuzzy
+#~ msgid "Subtract"
+#~ msgstr "Ushwankathelo"
+
+#, fuzzy
+#~ msgid "Lightness"
+#~ msgstr "Light Cyan"
+
+#, fuzzy
+#~ msgid "Blue"
+#~ msgstr "Ixabiso"
+
+#, fuzzy
+#~ msgid "Green"
+#~ msgstr "Ikhusi"
+
+#, fuzzy
+#~ msgid "Erase"
+#~ msgstr "Umzekelo"
+
+#~ msgid "Normal"
+#~ msgstr "Eqhelekileyo"
+
+#, fuzzy
+#~ msgid "Overlay"
+#~ msgstr "Yongeza Ngaphezulu komgca"
+
+#, fuzzy
+#~| msgid "Mail Merge"
+#~ msgid "Grain Merge"
+#~ msgstr "Ulungiso Lweposi"
+
+#, fuzzy
+#~ msgid "Hard Mix"
+#~ msgstr "Ubude:"
+
+#, fuzzy
+#~| msgid "Variable"
+#~ msgid "Parallel"
+#~ msgstr "Umahluko"
+
+#, fuzzy
+#~ msgid "Color Dodge"
+#~ msgstr "Imibala:"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgid "Linear Dodge"
+#~ msgstr "Imida yephepha"
+
+#, fuzzy
+#~ msgid "Lighten"
+#~ msgstr "Light Green"
+
+#, fuzzy
+#~ msgid "Hard Light"
+#~ msgstr "Ubude:"
+
+#, fuzzy
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "triangleq"
+
+#, fuzzy
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "triangleq"
+
+#, fuzzy
+#~ msgid "Gamma Light"
+#~ msgstr "Light Green"
+
+#, fuzzy
+#~ msgid "Vivid Light"
+#~ msgstr "Light Green"
+
+#, fuzzy
+#~ msgid "Pin Light"
+#~ msgstr "Light Green"
+
+#, fuzzy
+#~ msgid "Linear Light"
+#~ msgstr "Ububanzi:"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Color Burn"
+#~ msgstr "Umbala:"
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgid "Linear Burn"
+#~ msgstr "Imida yephepha"
+
+#, fuzzy
+#~ msgid "Darken"
+#~ msgstr "Ubuhlaza Obukhanyayo"
+
+#, fuzzy
+#~| msgid "Add Fraction"
+#~ msgid "Addition"
+#~ msgstr "Dibanisa Iqhekeza"
+
+#, fuzzy
+#~ msgid "Inversed-Subtract"
+#~ msgstr "Ushwankathelo"
+
+#, fuzzy
+#~| msgid "Exceptions"
+#~ msgid "Exclusion"
+#~ msgstr "Ezizodwa"
+
+#, fuzzy
+#~ msgid "Additive-Subtractive"
+#~ msgstr "Ushwankathelo"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Red"
+#~ msgstr "Igama lenkampani"
+
+#, fuzzy
+#~ msgid "Copy Green"
+#~ msgstr "Ikhusi"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Blue"
+#~ msgstr "Igama lenkampani"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Color"
+#~ msgstr "Umbala:"
+
+#, fuzzy
+#~ msgid "Increase Saturation"
+#~ msgstr "Ushwankathelo"
+
+#, fuzzy
+#~ msgid "Decrease Saturation"
+#~ msgstr "Uhombiso"
+
+#, fuzzy
+#~ msgid "Increase Luminosity"
+#~ msgstr "Ubungakanani bohlobo lwamagama Besiseko:"
+
+#, fuzzy
+#~ msgid "Decrease Luminosity"
+#~ msgstr "Ubungakanani bohlobo lwamagama Besiseko:"
+
+#, fuzzy
+#~ msgid "Darker Color"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~| msgid "More Line Colors..."
+#~ msgid "Lighter Color"
+#~ msgstr "Imibala emininzi yelayini..."
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Color HSI"
+#~ msgstr "Umbala:"
+
+#, fuzzy
+#~| msgid "Internet"
+#~ msgid "Intensity"
+#~ msgstr "Internet"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Increase Intensity"
+#~ msgstr "Tsintsha uphawu"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Decrease Intensity"
+#~ msgstr "Tsintsha uphawu"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Color HSL"
+#~ msgstr "Umbala:"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Increase Lightness"
+#~ msgstr "Tsintsha uphawu"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Decrease Lightness"
+#~ msgstr "Tsintsha uphawu"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Color HSV"
+#~ msgstr "Umbala:"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Increase Value"
+#~ msgstr "Tsintsha uphawu"
+
+#, fuzzy
+#~| msgid "Change Indent"
+#~ msgid "Decrease Value"
+#~ msgstr "Tsintsha uphawu"
+
+#, fuzzy
+#~ msgid "Grayscale"
+#~ msgstr "Isijamani"
+
+#, fuzzy
+#~ msgid "8 Bits"
+#~ msgstr "i-pt"
+
+#, fuzzy
+#~| msgid "Autoinclude"
+#~ msgid "Arithmetic"
+#~ msgstr "Ukuquka okuzenzekelayo"
+
+#, fuzzy
+#~ msgid "Negative"
+#~ msgstr "Ubungakanani obuhlobeneyo:"
+
+#, fuzzy
+#~ msgid "Inverse Subtract"
+#~ msgstr "Ushwankathelo"
+
+#, fuzzy
+#~ msgid "Burn"
+#~ msgstr "Brown"
+
+#, fuzzy
+#~ msgid "Additive Subtractive"
+#~ msgstr "Ushwankathelo"
+
+#, fuzzy
+#~ msgid "Alpha Darken"
+#~ msgstr "Ubuhlaza Obukhanyayo"
+
+#, fuzzy
+#~ msgid "Rdf"
+#~ msgstr "Obomvu"
+
+#, fuzzy
+#~| msgid "Title"
+#~ msgid "Triples"
+#~ msgstr "Iwonga"
+
+#, fuzzy
+#~| msgid "New"
+#~ msgid "new"
+#~ msgstr "Entsha"
+
+#, fuzzy
+#~ msgid "copy"
+#~ msgstr "Inkampani"
+
+#, fuzzy
+#~ msgid "delete"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgid "Namespaces"
+#~ msgstr "&Buyisela igama:"
+
+#, fuzzy
+#~ msgid "Prefix"
+#~ msgstr "Okubhaliweyo kwesimaphambili:"
+
+#, fuzzy
+#~ msgid "Namespace"
+#~ msgstr "&Buyisela igama:"
+
+#, fuzzy
+#~ msgid "Stylesheets"
+#~ msgstr "Uhlobo"
+
+#, fuzzy
+#~| msgid "Apply Style %1"
+#~ msgid "Apply Stylesheet"
+#~ msgstr "Yenza Uhlobo %1"
+
+#, fuzzy
+#~ msgid "User"
+#~ msgstr "&Faka:"
+
+#, fuzzy
+#~ msgid "Stylesheet Definition"
+#~ msgstr "Uhlobo"
+
+#, fuzzy
+#~| msgid "Variable Name"
+#~ msgid "Variables Available"
+#~ msgstr "Igama lomahluko"
+
+#, fuzzy
+#~ msgid "Description"
+#~ msgstr "Uhombiso"
+
+#, fuzzy
+#~ msgid "Stylesheet Name"
+#~ msgstr "Uhlobo"
+
+#, fuzzy
+#~ msgid "Literal"
+#~ msgstr "Light Coral"
+
+#~ msgid "Blank"
+#~ msgstr "Ayinanto"
+
+#, fuzzy
+#~| msgid "Size:"
+#~ msgid "Valid"
+#~ msgstr "Ubungakanani:"
+
+#, fuzzy
+#~ msgid "Subject"
+#~ msgstr "Injongo"
+
+#, fuzzy
+#~| msgid "Picture"
+#~ msgid "Predicate"
+#~ msgstr "Umfanekiso"
+
+#, fuzzy
+#~ msgid "Obj Type"
+#~ msgstr "Phezulu:"
+
+#, fuzzy
+#~ msgid "DataType"
+#~ msgstr "Umhla"
+
+#, fuzzy
+#~ msgid "Invalid identifier"
+#~ msgstr "Ithanda"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "Akukho nanye"
+
+#, fuzzy
+#~| msgid "Circle Bullet"
+#~ msgid "Small Bullet"
+#~ msgstr "Imbumbulu esisangqa"
+
+#~ msgid "Circle Bullet"
+#~ msgstr "Imbumbulu esisangqa"
+
+#, fuzzy
+#~| msgid "Circle Bullet"
+#~ msgid "Square Bullet"
+#~ msgstr "Imbumbulu esisangqa"
+
+#, fuzzy
+#~| msgid "Box Bullet"
+#~ msgid "Rhombus Bullet"
+#~ msgstr "Imbumbulu Yesiko"
+
+#, fuzzy
+#~| msgid "Circle Bullet"
+#~ msgid "Check Mark Bullet"
+#~ msgstr "Imbumbulu esisangqa"
+
+#, fuzzy
+#~ msgid "Rightwards Arrow Bullet"
+#~ msgstr "Light Pink"
+
+#, fuzzy
+#~ msgid "Arabic"
+#~ msgstr "Zzure"
+
+#~ msgid "Lower Alphabetical"
+#~ msgstr "Oonobumba abasezantsi"
+
+#~ msgid "Upper Alphabetical"
+#~ msgstr "Oonobumba abaphezulu"
+
+#, fuzzy
+#~| msgid "Lower Roman Numbers"
+#~ msgid "Lower Roman"
+#~ msgstr "Amanani asezantsi esiRoma"
+
+#, fuzzy
+#~| msgid "Upper Roman Numbers"
+#~ msgid "Upper Roman"
+#~ msgstr "Amanani aphezulu esiRoma"
+
+#, fuzzy
+#~| msgid "Circle Bullet"
+#~ msgid "Large Bullet"
+#~ msgstr "Imbumbulu esisangqa"
+
+#, fuzzy
+#~| msgid "Box Bullet"
+#~ msgid "Ballot X Bullet"
+#~ msgstr "Imbumbulu Yesiko"
+
+#, fuzzy
+#~| msgid "Family:"
+#~ msgid "Tamil"
+#~ msgstr "Usapho:"
+
+#, fuzzy
+#~| msgid "Time"
+#~ msgid "Tibetan"
+#~ msgstr "Ixesha"
+
+#, fuzzy
+#~ msgid "Thai"
+#~ msgstr "i Khaki"
+
+#, fuzzy
+#~ msgid "Recent:"
+#~ msgstr "Ifayile Yangoku:"
+
+#, fuzzy
+#~| msgid "More Colors..."
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "Imibala Emininzi..."
+
+#, fuzzy
+#~ msgid "Import Data"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgid "Generic"
+#~ msgstr "Ngokubanzi"
+
+#, fuzzy
+#~ msgid "Currency"
+#~ msgstr "Ukhetho Lwangoku"
+
+#~ msgid "None"
+#~ msgstr "Akukho nanye"
+
+#, fuzzy
+#~ msgid "Data"
+#~ msgstr "Umhla"
+
+#, fuzzy
+#~ msgid "E&ncoding:"
+#~ msgstr "Ulwenzo lwemigca ngaphantsi:"
+
+#, fuzzy
+#~ msgid "Format"
+#~ msgstr "Ifomati Yomhla"
+
+#, fuzzy
+#~ msgid "Delimiter"
+#~ msgstr "Umenzi wokwenza okungesosiphelo Osekhohlo"
+
+#, fuzzy
+#~ msgid "Semicolon"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~ msgid "Other"
+#~ msgstr "Internet"
+
+#, fuzzy
+#~ msgid "Tabulator"
+#~ msgstr "Abaniki sithuba"
+
+#, fuzzy
+#~ msgid "Space"
+#~ msgstr "Dibanisa Isithuba"
+
+#, fuzzy
+#~ msgid "&Format:"
+#~ msgstr "Ifomati Yomhla"
+
+#, fuzzy
+#~ msgid "Ranges"
+#~ msgstr "Orenji"
+
+#, fuzzy
+#~ msgid "Update"
+#~ msgstr "Umhla"
+
+#, fuzzy
+#~ msgid "Import columns:"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~ msgid "Import lines:"
+#~ msgstr "Rhweba angaphakathi Uhlobo"
+
+#, fuzzy
+#~| msgid "Author"
+#~ msgid "to"
+#~ msgstr "Umbhali"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Lock Docker"
+#~ msgstr "Ilayini Eqinileyo"
+
+#, fuzzy
+#~ msgid "Keywords:"
+#~ msgstr "Iwonga loxwebhu"
+
+#, fuzzy
+#~ msgid "Subject:"
+#~ msgstr "Injongo"
+
+#, fuzzy
+#~ msgid "Last printed:"
+#~ msgstr "Ushicilelo Lokugqibela"
+
+#, fuzzy
+#~ msgid "Encryption:"
+#~ msgstr "Uhombiso"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "Iwonga:"
+
+#, fuzzy
+#~| msgid "Page Number"
+#~ msgid "Revision number:"
+#~ msgstr "Inani lephepha"
+
+#, fuzzy
+#~ msgid "Modified:"
+#~ msgstr "Phakathi:"
+
+#, fuzzy
+#~ msgid "Comments:"
+#~ msgstr "Gqabaza"
+
+#, fuzzy
+#~ msgid "Created:"
+#~ msgstr "Yenza Ifayile"
+
+#, fuzzy
+#~| msgid "Edit Path"
+#~ msgid "Path:"
+#~ msgstr "Hlela Umendo"
+
+#~ msgid "&Reset"
+#~ msgstr "&Cwangcisa kwakhona"
+
+#, fuzzy
+#~ msgid "Language:"
+#~ msgstr "iangile"
+
+#~ msgid "General"
+#~ msgstr "Ngokubanzi"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Last saved by"
+#~ msgstr "Buyisela okubhaliweyo"
+
+#, fuzzy
+#~ msgid "Do not decrypt"
+#~ msgstr "Uhombiso"
+
+#, fuzzy
+#~ msgid "D&ecrypt"
+#~ msgstr "Uhombiso"
+
+#, fuzzy
+#~ msgid "Do not encrypt"
+#~ msgstr "Uhombiso"
+
+#, fuzzy
+#~ msgid "Decrypt"
+#~ msgstr "Uhombiso"
+
+#, fuzzy
+#~ msgid "Save Document"
+#~ msgstr "Gcina Uxwebhu Njenge"
+
+#, fuzzy
+#~ msgid "Change Filetype"
+#~ msgstr "Tshintsha Udidi Loluhlu"
+
+#, fuzzy
+#~ msgid "Change"
+#~ msgstr "Tsintsha Umzekelo"
+
+#, fuzzy
+#~ msgid "Remove"
+#~ msgstr "Susa Umqolo"
+
+#, fuzzy
+#~ msgid "Open palette"
+#~ msgstr "Pale Green"
+
+#, fuzzy
+#~ msgid "Save palette"
+#~ msgstr "Pale Green"
+
+#, fuzzy
+#~| msgid "Bookmark name:"
+#~ msgid "Color name:"
+#~ msgstr "Igama lenqaku lencwadi:"
+
+#, fuzzy
+#~ msgid "Palette"
+#~ msgstr "Pale Green"
+
+#, fuzzy
+#~| msgid "Remove Column"
+#~ msgid "Add/Remove Colors"
+#~ msgstr "Susa Umhlathi"
+
+#, fuzzy
+#~ msgid "Testing: OpenFile"
+#~ msgstr "Pale Green"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Testing: OpenDirectory"
+#~ msgstr "Igama lomlawuli"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFile"
+#~ msgstr "Icebo lokucoca ulwelo Olurhwebelwe ngaphakathi Lulahlekile"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "Icebo lokucoca ulwelo Olurhwebelwe ngaphakathi Lulahlekile"
+
+#, fuzzy
+#~ msgid "Testing: Import Directory"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~ msgid "Testing: SaveFile"
+#~ msgstr "Pale Green"
+
+#, fuzzy
+#~ msgid "Open File"
+#~ msgstr "Pale Green"
+
+#, fuzzy
+#~ msgid "Open Files"
+#~ msgstr "Pale Green"
+
+#, fuzzy
+#~ msgid "Filter:"
+#~ msgstr "Emva (%1):"
+
+#, fuzzy
+#~ msgid "TextLabel"
+#~ msgstr "Uphawu Lombhalo1"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "Named"
+#~ msgstr "Igama:"
+
+#, fuzzy
+#~ msgid "Set default filter"
+#~ msgstr "Umhla ongasebenziyo wefomati: %1"
+
+#, fuzzy
+#~ msgid "Save File"
+#~ msgstr "Pale Green"
+
+#, fuzzy
+#~ msgid "Import Files"
+#~ msgstr "Rhweba angaphakathi Uhlobo"
+
+#, fuzzy
+#~ msgid "Import File"
+#~ msgstr "Rhweba angaphakathi Uhlobo"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Open Directory"
+#~ msgstr "Igama lomlawuli"
+
+#, fuzzy
+#~ msgid "Import Directory"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "Akukho nanye"
+
+#, fuzzy
+#~| msgid "Change First Line Indent"
+#~ msgid "Change the filling gradient"
+#~ msgstr "Tshintsha uphawu lwelayini yokuqala"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Icon and Text"
+#~ msgstr "Umbhalo"
+
+#, fuzzy
+#~ msgid "Bottom side"
+#~ msgstr "Ukwenziwa kwemigca"
+
+#, fuzzy
+#~ msgid "Left side"
+#~ msgstr "Ilayini"
+
+#, fuzzy
+#~ msgid "Right side"
+#~ msgstr "Light Pink"
+
+#~ msgid "Page Layout"
+#~ msgstr "Ubeko lwephepha"
+
+#, fuzzy
+#~ msgid "Apply to document"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgid "Left Edge:"
+#~ msgstr "Ekhohlo:"
+
+#, fuzzy
+#~| msgid "Right:"
+#~ msgid "Right Edge:"
+#~ msgstr "Kunene:"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Binding Edge:"
+#~ msgstr "Ushicilelo Lokugqibela"
+
+#, fuzzy
+#~| msgid "Page Size"
+#~ msgid "Page Edge:"
+#~ msgstr "Ubungakanani Bephepha"
+
+#, fuzzy
+#~ msgid "Facing Pages:"
+#~ msgstr "Iphepha Elilandelayo"
+
+#, fuzzy
+#~ msgid "Facing pages"
+#~ msgstr "Iphepha Elilandelayo"
+
+#, fuzzy
+#~| msgid "Page Layout"
+#~ msgid "Page Layout:"
+#~ msgstr "Ubeko lwephepha"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page spread"
+#~ msgstr "Imboniso yephepha"
+
+#~ msgid "Unit:"
+#~ msgstr "Umnqongo:"
+
+#, fuzzy
+#~ msgid "Follow style:"
+#~ msgstr "Rhweba angaphakathi Uhlobo"
+
+#~ msgid "Size:"
+#~ msgstr "Ubungakanani:"
+
+#, fuzzy
+#~ msgid "Width:"
+#~ msgstr "Ububanzi:"
+
+#, fuzzy
+#~ msgid "Height:"
+#~ msgstr "Ubude:"
+
+#, fuzzy
+#~ msgid "Orientation:"
+#~ msgstr "Isiboniso"
+
+#, fuzzy
+#~ msgid "Facing pages:"
+#~ msgstr "Iphepha Elilandelayo"
+
+#, fuzzy
+#~| msgid "Single"
+#~ msgid "Single sided"
+#~ msgstr "Eyodwa"
+
+#, fuzzy
+#~ msgid "Text direction:"
+#~ msgstr "Umbala wokwendalo:"
+
+#, fuzzy
+#~| msgid "Autoinclude"
+#~ msgid "Automatic"
+#~ msgstr "Ukuquka okuzenzekelayo"
+
+#, fuzzy
+#~ msgid "Left to right"
+#~ msgstr "triangleq"
+
+#, fuzzy
+#~ msgid "Right to left"
+#~ msgstr "Light Pink"
+
+#~ msgid "Margins"
+#~ msgstr "Imida"
+
+#, fuzzy
+#~ msgid "Top:"
+#~ msgstr "Phezulu:"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Binding edge:"
+#~ msgstr "Ushicilelo Lokugqibela"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page edge:"
+#~ msgstr "Imboniso yephepha"
+
+#, fuzzy
+#~ msgid "Bottom:"
+#~ msgstr "Ukwenziwa kwemigca"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~| msgid "Download"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "Layisha ezantsi"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "Khetha"
+
+#, fuzzy
+#~ msgid "Assign to tag"
+#~ msgstr "Ukwenziwa kwemigca"
+
+#, fuzzy
+#~ msgid "Remove from this tag"
+#~ msgstr "Susa ikhonknco"
+
+#, fuzzy
+#~| msgid "Remove Comment"
+#~ msgid "Remove from other tag"
+#~ msgstr "Susa Ugqabazo"
+
+#, fuzzy
+#~ msgid "Round cap"
+#~ msgstr "Okushicilelweyo okusezantsi"
+
+#, fuzzy
+#~| msgid "Square Bullet"
+#~ msgid "Square cap"
+#~ msgstr "Imbumbulu esikweri"
+
+#, fuzzy
+#~ msgid "Miter join"
+#~ msgstr "Imida"
+
+#, fuzzy
+#~ msgid "Bevel join"
+#~ msgstr "Susa ikhonknco"
+
+#, fuzzy
+#~ msgid "Miter limit"
+#~ msgstr "Tshintsha ukwenziwa kwemigca"
+
+#, fuzzy
+#~ msgid "Tag"
+#~ msgstr "Tan"
+
+#, fuzzy
+#~ msgid "Rename tag"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgid "Delete this tag"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgid "Undelete"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgid "Tool Options"
+#~ msgstr "Ugqibo Lwamagama"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "deselect item"
+#~ msgstr "Khetha Umsebenzi"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "select item"
+#~ msgstr "Khetha Umsebenzi"
+
+#, fuzzy
+#~| msgid "Autoinclude"
+#~ msgctxt "Static Image"
+#~ msgid "Static"
+#~ msgstr "Ukuquka okuzenzekelayo"
+
+#, fuzzy
+#~ msgid "Cyan"
+#~ msgstr "Cyan Emnyama"
+
+#, fuzzy
+#~ msgid "Magenta"
+#~ msgstr "Magenta"
+
+#, fuzzy
+#~ msgid "Yellow"
+#~ msgstr "Ubuthubi Obumnyama"
+
+#, fuzzy
+#~ msgid "Black"
+#~ msgstr "Ayinanto"
+
+#, fuzzy
+#~ msgid "Opacity:"
+#~ msgstr "Isixeko:"
+
+#, fuzzy
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "&Okungagqibekanga"
+
+#, fuzzy
+#~ msgid "&Tools"
+#~ msgstr "Umbala wokungagqibekanga"
+
+#, fuzzy
+#~| msgid "Completion"
+#~ msgid "Color Selector"
+#~ msgstr "Ulungiso oluzenzekelayo"
+
+#, fuzzy
+#~ msgid "Database file \"%1\" does not exist."
+#~ msgstr "Ifayile %1 ayisekho."
+
+#, fuzzy
+#~ msgid "Table \"%1\" does not exist in the database."
+#~ msgstr "Ifayile %1 ayisekho."
+
+#, fuzzy
+#~ msgid "Could not compact database \"%1\"."
+#~ msgstr "Ayinakufunda isiqalo sefayile"
+
+#, fuzzy
+#~ msgid "Do you want to open file \"%1\" as read-only?"
+#~ msgstr "Ufuna ngokwenene ukususa laa template?"
+
+#, fuzzy
+#~ msgid "Could not gain exclusive access for writing the file."
+#~ msgstr "Ayinakufunda isiqalo sefayile"
+
+#, fuzzy
+#~| msgid "Could not load picture."
+#~ msgid "Could not close busy database."
+#~ msgstr "Ayinakuwulayisha umfanekiso."
+
+#, fuzzy
+#~ msgid "Could not remove file \"%1\"."
+#~ msgstr "Ayinakurhwebela ngaphandle ifayile"
+
+#, fuzzy
+#~ msgid "Table \"%1\" does not exist"
+#~ msgstr "Ifayile %1 ayisekho."
+
+#, fuzzy
+#~| msgid "Date Format"
+#~ msgid "Track Total Format"
+#~ msgstr "Ifomati Yomhla"
+
+#, fuzzy
+#~ msgid "Grid Snap"
+#~ msgstr "Bonisa isixhobo sebar %1"
+
+#, fuzzy
+#~ msgid "Formatting"
+#~ msgstr "Ifomati Yomhla"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Testing: OpenDirectories"
+#~ msgstr "Igama lomlawuli"
+
+#, fuzzy
+#~ msgid "Testing: ImportDirectories"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~ msgid "Testing: SaveFiles"
+#~ msgstr "Pale Green"
+
+#, fuzzy
+#~| msgid "Directory Name"
+#~ msgid "Open Directories"
+#~ msgstr "Igama lomlawuli"
+
+#, fuzzy
+#~ msgid "Import Directories"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~ msgid "Save Files"
+#~ msgstr "Pale Green"
+
+#, fuzzy
+#~ msgid "Create Path"
+#~ msgstr "Yenza i Template"
+
+#~ msgid "Error!"
+#~ msgstr "Imposiso!"
+
+#, fuzzy
+#~ msgid "Contacts"
+#~ msgstr "oint"
+
+#, fuzzy
+#~ msgid "Locations"
+#~ msgstr "Isalathiso sefayile:"
+
+#, fuzzy
+#~ msgid "Area"
+#~ msgstr "Zzure"
+
+#, fuzzy
+#~ msgid "Region"
+#~ msgstr "Obomvu"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not save\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not add entry\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ayinakuyigcina\n"
+#~ "%1"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not save\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not save iCal file\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ayinakuyigcina\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgid "&Location:"
+#~ msgstr "Isalathiso sefayile:"
+
+#, fuzzy
+#~| msgid "Street"
+#~ msgid "&Start:"
+#~ msgstr "Isitalato"
+
+#, fuzzy
+#~ msgid "Timezone"
+#~ msgstr "Ixesha"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "&Name:"
+#~ msgstr "Igama:"
+
+#, fuzzy
+#~| msgid "Page Number"
+#~ msgid "&Phone Number:"
+#~ msgstr "Inani lephepha"
+
+#, fuzzy
+#~ msgid "&Home Page:"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Contact Information"
+#~ msgstr "Ulwazi olukwixwebhu"
+
+#, fuzzy
+#~ msgid "Import contact"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "&Name"
+#~ msgstr "Igama:"
+
+#, fuzzy
+#~| msgid "Edit Path"
+#~ msgid "The Earth"
+#~ msgstr "Hlela Umendo"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Location Information"
+#~ msgstr "Ulwazi olukwixwebhu"
+
+#, fuzzy
+#~ msgid "People"
+#~ msgstr "Purple"
+
+#~ msgid ""
+#~ "A document with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "Uxwebhu oluneligama sele lukhona.\n"
+#~ "Ufuna ukulubhala ngaphezulu?"
+
+#, fuzzy
+#~ msgid "%1 (Uncompressed XML Files)"
+#~ msgstr "%1 (Uncompressed XML ifayile)"
+
+#, fuzzy
+#~ msgid "%1 (Flat XML File)"
+#~ msgstr "%1 (Uncompressed XML ifayile)"
+
+#~ msgid "Save Document As"
+#~ msgstr "Gcina Uxwebhu Njenge"
+
+#, fuzzy
+#~ msgid "Export Document As"
+#~ msgstr "Vula Uxwebhu"
+
+#, fuzzy
+#~ msgid "Slide Background"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~ msgid "Document background"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~ msgid "&Cancel"
+#~ msgstr "Tsintsha Umzekelo"
+
+#, fuzzy
+#~ msgid "First Page"
+#~ msgstr "Iphepha Elilandelayo"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Even Pages(s)"
+#~ msgstr "Igama lenkampani"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Any Pages(s)"
+#~ msgstr "Igama lenkampani"
+
+#, fuzzy
+#~ msgid "&Edit"
+#~ msgstr "&Dibanisa Iqela..."
+
+#, fuzzy
+#~ msgid "&Close"
+#~ msgstr "Imibala:"
+
+#, fuzzy
+#~ msgid "Dodge"
+#~ msgstr "Dodger Blue"
+
+#, fuzzy
+#~ msgid "Hard light"
+#~ msgstr "Ubude:"
+
+#, fuzzy
+#~ msgid "Soft light"
+#~ msgstr "triangleq"
+
+#, fuzzy
+#~| msgid "Change Shadow"
+#~ msgid "Show Shadow"
+#~ msgstr "Tshintsha isithunzi"
+
+#, fuzzy
+#~ msgid "Angle:"
+#~ msgstr "Eyodwa"
+
+#, fuzzy
+#~| msgid "Shadow:"
+#~ msgid "Offset:"
+#~ msgstr "Isithunzi:"
+
+#~ msgid "Color:"
+#~ msgstr "Umbala:"
+
+#, fuzzy
+#~ msgid "Style:"
+#~ msgstr "Uhlobo:"
+
+#, fuzzy
+#~ msgid "Set miter limit"
+#~ msgstr "Isahluli"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bookmark"
+#~ msgstr "Faka ikhonkco"
+
+#, fuzzy
+#~ msgid "Insert Table"
+#~ msgstr "Faka injongo"
+
+#, fuzzy
+#~| msgid "Insert Row"
+#~ msgid "Insert Row Above"
+#~ msgstr "Faka Umqolo"
+
+#, fuzzy
+#~| msgid "Insert Column"
+#~ msgid "Insert Column Left"
+#~ msgstr "Faka Umhlathi"
+
+#, fuzzy
+#~| msgid "Insert Column"
+#~ msgid "Insert Column Right"
+#~ msgstr "Faka Umhlathi"
+
+#, fuzzy
+#~ msgid "Delete Column"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgid "Delete Row"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Faka injongo"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Faka ikhonkco"
+
+#, fuzzy
+#~ msgid "Embedding Object"
+#~ msgstr "Ayinakulayisha iinjongo ezilungisiweyo"
+
+#, fuzzy
+#~ msgid "I&mport..."
+#~ msgstr "&Susa..."
+
+#~ msgid "&Default"
+#~ msgstr "&Okungagqibekanga"
+
+#~ msgid "Preview:"
+#~ msgstr "Imboniso:"
+
+#, fuzzy
+#~| msgid "Background color:"
+#~ msgid "Background Tool"
+#~ msgstr "Tshintsha umbala wesiqalo;"
+
+#, fuzzy
+#~ msgid "Background editing tool"
+#~ msgstr "Bonisa iinketho ezifomatayo"
+
+#, fuzzy
+#~ msgid "Use master background"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Separate paths"
+#~ msgstr "Umbala wokungagqibekanga:"
+
+#~ msgid ""
+#~ "An autosaved file for an unnamed document exists in %1.\n"
+#~ "This file is dated %2\n"
+#~ "Do you want to open it?"
+#~ msgstr ""
+#~ "Ifayile egcinwe ngokuzenzekela yolu xwebhu ikhona%1.\n"
+#~ "Lefayile inikwe umhla %2\n"
+#~ "Ufuna ukuyivula mhlawumbi ? "
+
+#, fuzzy
+#~ msgid "&Delete Personal Data"
+#~ msgstr "Isalathiso:"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shapes"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgid "Substract"
+#~ msgstr "Ushwankathelo"
+
+#, fuzzy
+#~ msgid "Inverse Substract"
+#~ msgstr "Ushwankathelo"
+
+#, fuzzy
+#~| msgid "Shadow:"
+#~ msgid "Shadow Angle:"
+#~ msgstr "Isithunzi:"
+
+#, fuzzy
+#~ msgid "Shadow Color:"
+#~ msgstr "Isithunzi:"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgid "Set Horizontal Alignment"
+#~ msgstr "Ukwenziwa "
+
+#, fuzzy
+#~| msgid "Change Borders"
+#~ msgid "Line Break"
+#~ msgstr "Imida yephepha"
+
+#, fuzzy
+#~ msgid "Hide Grid"
+#~ msgstr "Ilayini Eqinileyo"
+
+#, fuzzy
+#~ msgid "Hide Guides"
+#~ msgstr "Ilayini Eqinileyo"
+
+#~ msgid "&Close All Views"
+#~ msgstr "&Vala zonke iimboniselo"
+
+#~ msgid "&Split View"
+#~ msgstr "&Chaka imboniselo"
+
+#~ msgid "&Remove View"
+#~ msgstr "&Susa imboniselo"
+
+#~ msgid "Splitter &Orientation"
+#~ msgstr "Uchak&o lohlenga-hlengiso"
+
+#~ msgid "&Horizontal"
+#~ msgstr "&Tye"
+
+#~ msgid "&Vertical"
+#~ msgstr "&Nkqo"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgid "Printing page %1"
+#~ msgstr "Ushicilelo Lokugqibela"
+
+#, fuzzy
+#~ msgid "Form"
+#~ msgstr "Eqhelekileyo"
+
+#, fuzzy
+#~ msgid "Share"
+#~ msgstr "Dibanisa Isithuba"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Opacy"
+#~ msgstr "Igama lenkampani"
+
+#, fuzzy
+#~| msgid "Company Name"
+#~ msgid "Copy Alpha"
+#~ msgstr "Igama lenkampani"
+
+#, fuzzy
+#~ msgid "Light"
+#~ msgstr "Light Green"
+
+#, fuzzy
+#~| msgid "Strikeout:"
+#~ msgid "Spread out:"
+#~ msgstr "Khupha ngaphandle:"
+
+#, fuzzy
+#~| msgid "Date Format"
+#~ msgid "Barcode"
+#~ msgstr "Ifomati Yomhla"
+
+#, fuzzy
+#~| msgid "Date Format"
+#~ msgid "Barcode Format"
+#~ msgstr "Ifomati Yomhla"
+
+#, fuzzy
+#~ msgid "Chart"
+#~ msgstr "Chartreuse"
+
+#, fuzzy
+#~| msgid "Select Font"
+#~ msgid "Field Font"
+#~ msgstr "Khetha ubukhulu begama"
+
+#, fuzzy
+#~| msgid "Time"
+#~ msgid "Pie"
+#~ msgstr "Ixesha"
+
+#, fuzzy
+#~ msgid "Ring"
+#~ msgstr "Kunene:"
+
+#, fuzzy
+#~| msgid "Color:"
+#~ msgid "Polar"
+#~ msgstr "Umbala:"
+
+#, fuzzy
+#~ msgid "Chart Type"
+#~ msgstr "Umhla"
+
+#, fuzzy
+#~ msgid "Stacked"
+#~ msgstr "Dibanisa Isithuba"
+
+#, fuzzy
+#~ msgid "Percent"
+#~ msgstr "Ifayile Yangoku:"
+
+#, fuzzy
+#~| msgid "Rows:"
+#~ msgid "Rows"
+#~ msgstr "Imiqolo:"
+
+#, fuzzy
+#~| msgid "Bookmark name:"
+#~ msgid "Color Scheme"
+#~ msgstr "Igama lenqaku lencwadi:"
+
+#, fuzzy
+#~ msgid "Antialiased"
+#~ msgstr "Iwonga"
+
+#, fuzzy
+#~ msgid "Display Legend"
+#~ msgstr "Umzuzwana"
+
+#, fuzzy
+#~ msgid "Pan Tool"
+#~ msgstr "Umbala wokungagqibekanga"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Out"
+#~ msgstr "Isiko"
+
+#, fuzzy
+#~| msgid "Insert Line Break"
+#~ msgid "Insert Linebreak"
+#~ msgstr "Faka ikhonkco"
+
+#, fuzzy
+#~ msgid "&Insert"
+#~ msgstr "&Faka:"
+
+#~ msgid "Insert the selected character in the text"
+#~ msgstr "Faka umsebenzi okhethiweyo kokubhaliweyo"
+
+#, fuzzy
+#~ msgid "Enable word completion"
+#~ msgstr "U&lungiso oluzenzekelayo"
+
+#, fuzzy
+#~ msgid "Automatically add new words to suggestion list"
+#~ msgstr "&Yongeza ngokuzenzekelayo igama elitsha kuluhlu logqibo"
+
+#, fuzzy
+#~ msgid ""
+#~ "If this option is enabled, any word equal to or longer than the "
+#~ "\"Characters needed\" typed in this document will automatically be added "
+#~ "to the list of words used by the completion."
+#~ msgstr ""
+#~ "Ukuba olukhetho lwenziwe, naliphina igama elishicilelweyo koluxwebhu "
+#~ "lizakongezwa ngokuzenzekelayo kuluhlu lwamagama asebenziswa ngumgqibi."
+
+#, fuzzy
+#~ msgid "Completion Options"
+#~ msgstr "Ugqibo Lwamagama"
+
+#, fuzzy
+#~ msgid "Append space"
+#~ msgstr "D&ibanisa isithuba"
+
+#, fuzzy
+#~ msgid "Make Default"
+#~ msgstr "&Okungagqibekanga"
+
+#~ msgid "C&ustom"
+#~ msgstr "I&siko"
+
+#~ msgid "&Insert:"
+#~ msgstr "&Faka:"
+
+#, fuzzy
+#~ msgid "Paragraph Background Color"
+#~ msgstr "Tshintsha umbala wesiqalo..."
+
+#, fuzzy
+#~ msgid "Borders"
+#~ msgstr "Imida"
+
+#, fuzzy
+#~ msgid "&Width:"
+#~ msgstr "Ububanzi:"
+
+#, fuzzy
+#~ msgid "&Color:"
+#~ msgstr "Umbala:"
+
+#, fuzzy
+#~ msgid "Number:"
+#~ msgstr "Inani"
+
+#, fuzzy
+#~ msgid "String:"
+#~ msgstr "triangleq"
+
+#, fuzzy
+#~ msgid "Boolean:"
+#~ msgstr "Ayinanto"
+
+#, fuzzy
+#~ msgid "true"
+#~ msgstr "Isitalato"
+
+#, fuzzy
+#~ msgid "false"
+#~ msgstr "Umzekelo"
+
+#, fuzzy
+#~ msgid "Date:"
+#~ msgstr "Umhla"
+
+#, fuzzy
+#~ msgid "Add Guide Line"
+#~ msgstr "Yongeza Ngaphezulu komgca"
+
+#, fuzzy
+#~ msgid "Horizontal"
+#~ msgstr "&Tye"
+
+#, fuzzy
+#~ msgid "Vertical"
+#~ msgstr "&Nkqo"
+
+#, fuzzy
+#~ msgid "&Position:"
+#~ msgstr "Indawo"
+
+#, fuzzy
+#~ msgid "Guide Line"
+#~ msgstr "Ilayini Eqinileyo"
+
+#, fuzzy
+#~ msgid "Guide Lines"
+#~ msgstr "Ilayini Eqinileyo"
+
+#~ msgid "No handler found for %1"
+#~ msgstr "Akukho mqheba ufumanekayo we %1"
+
+#~ msgid ""
+#~ "This document contains an external link to a remote document\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Olu xwebhu luqulathe ikhonkco langaphandle kuxwebhu lobekelo kude\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgid "Confirmation Required"
+#~ msgstr "Luyafuneka uqinisekiso"
+
+#~ msgid "Skip"
+#~ msgstr "Tsiba"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not load external document %1:\n"
+#~ "%2"
+#~ msgstr "Ayinakulayisha iinjongo ezilungisiweyo"
+
+#, fuzzy
+#~ msgid "Na&me:"
+#~ msgstr "Igama:"
+
+#, fuzzy
+#~ msgid "&Height:"
+#~ msgstr "Ubude:"
+
+#, fuzzy
+#~ msgid "&Top:"
+#~ msgstr "Phezulu:"
+
+#, fuzzy
+#~ msgid "&Left:"
+#~ msgstr "Ekhohlo:"
+
+#, fuzzy
+#~ msgid "Context Help"
+#~ msgstr "Umxholo"
+
+#~ msgid "All values are given in %1."
+#~ msgstr "Konke okuxabisekileyo kunikwa i%1."
+
+#, fuzzy
+#~ msgid "&Size:"
+#~ msgstr "Ubungakanani:"
+
+#, fuzzy
+#~ msgid "La&ndscape"
+#~ msgstr "Zimela"
+
+#, fuzzy
+#~ msgid "Page Layout Problem"
+#~ msgstr "Ubeko lwephepha"
+
+#, fuzzy
+#~ msgid "Delete slides"
+#~ msgstr "Cima Okubhaliweyo"
+
+#, fuzzy
+#~ msgid "Delete pages"
+#~ msgstr "Cima Okubhaliweyo"
+
+#~ msgid "Insert Object"
+#~ msgstr "Faka injongo"
+
+#, fuzzy
+#~ msgid "Column spacing:"
+#~ msgstr "Uniko lwesithuba semihlathi (%1):"
+
+#, fuzzy
+#~ msgid "Footnote/ Endnote"
+#~ msgstr "Esezantsi-/Iphepha lesiphelo"
+
+#, fuzzy
+#~ msgid "Spacing between footnote and body:"
+#~ msgstr "Isithuba phakathi kwe footenote nomzimba (%1):"
+
+#~ msgid "Different footer for even and odd pages"
+#~ msgstr "Ifooter eyahlukileyo yamaphepha amnqakathi nalinganayo"
+
+#~ msgid "Different footer for the first page"
+#~ msgstr "Ifooter eyahlukileyo yephepha lokuqala"
+
+#, fuzzy
+#~ msgid "Spacing between footer and body:"
+#~ msgstr "Isithuba phakathi kwefooter nomzimba (%1):"
+
+#, fuzzy
+#~ msgid "Header"
+#~ msgstr "iHeader"
+
+#, fuzzy
+#~ msgid "Spacing between header and body:"
+#~ msgstr "Isithuba phakathi kweheader nomzimba (%1):"
+
+#~ msgid "Different header for even and odd pages"
+#~ msgstr "Iheader eyahlukileyo yamaphepha amnqakathi nalinganayo"
+
+#~ msgid "Different header for the first page"
+#~ msgstr "Iheader eyahlukileyo yephepha lokuqala"
+
+#~ msgid "Page Preview"
+#~ msgstr "Imboniso yephepha"
+
+#, fuzzy
+#~ msgid "Page Size && &Margins"
+#~ msgstr "Ubungakanani bephepha && Imida"
+
+#, fuzzy
+#~ msgid "H&eader && Footer"
+#~ msgstr "iHeader ne Footer"
+
+#~ msgid "Head Line"
+#~ msgstr "Isihloko"
+
+#~ msgid "Mid:"
+#~ msgstr "Phakathi:"
+
+#~ msgid "Right:"
+#~ msgstr "Kunene:"
+
+#~ msgid "Foot Line"
+#~ msgstr "Ilayini Yonyawo"
+
+#~ msgid "You can insert several tags in the text:"
+#~ msgstr "Uyakwazi ukungenisa izithuba ezinintsik okubhaliweyo:"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;sheet&gt; The sheet name</li><li>&lt;page&gt; The current "
+#~ "page</li><li>&lt;pages&gt; The total number of pages</li><li>&lt;name&gt; "
+#~ "The filename or URL</li><li>&lt;file&gt; The filename with complete path "
+#~ "or the URL</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;sheet&gt; Igama lephepha</li><li>&lt;page&gt; Iphepha "
+#~ "langoku</li><li>&lt;pages&gt; Inanai elipheleleyo lwamaphepha</li><li>&lt;"
+#~ "name&gt; Igama lefayile okanye i URL</li><li>&lt;file&gt; Igama lefayile "
+#~ "lizakugqiba umendo okanye i URL </li></ul></qt>"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;time&gt; The current time</li><li>&lt;date&gt; The "
+#~ "current date</li><li>&lt;author&gt; Your full name</li><li>&lt;org&gt; "
+#~ "Your organization</li><li>&lt;email&gt; Your email address</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;time&gt; Ixesha langoku</li><li>&lt;date&gt; Umhla </"
+#~ "li><li>&lt;author&gt; Igama lakho elipheleleyo</li><li>&lt;org&gt; Iqela "
+#~ "lakho</li><li>&lt;email&gt; Idilesi ye email yakho</li></ul></qt>"
+
+#, fuzzy
+#~ msgid "Col&umns"
+#~ msgstr "Imihlathi:"
+
+#, fuzzy
+#~| msgid "Street"
+#~ msgid "Storage Test"
+#~ msgstr "Isitalato"
+
+#, fuzzy
+#~| msgid "Street"
+#~ msgid "Storage Test 2"
+#~ msgstr "Isitalato"
+
+#, fuzzy
+#~| msgid "Paste Text"
+#~ msgid "Master page"
+#~ msgstr "Buyisela okubhaliweyo"
+
+#, fuzzy
+#~ msgid "Rotate"
+#~ msgstr "Umhla"
+
+#, fuzzy
+#~ msgid "Shear"
+#~ msgstr "Sea Green"
+
+#, fuzzy
+#~ msgid "KoProperty Test"
+#~ msgstr "Eyodwa"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Waiting"
+#~ msgstr "Dark Orange"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Vertical"
+#~ msgstr "&Nkqo"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Horizontal"
+#~ msgstr "&Tye"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size All"
+#~ msgstr "Ubungakanani:"
+
+#, fuzzy
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Split Horizontal"
+#~ msgstr "&Tye"
+
+#, fuzzy
+#~| msgid "Last Printing"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Pointing Hand"
+#~ msgstr "Ushicilelo Lokugqibela"
+
+#, fuzzy
+#~| msgid "Insert Variable"
+#~ msgid "Insert image from file"
+#~ msgstr "Faka Enomahluko engqukuva"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "Select Char"
+#~ msgstr "Khetha Umsebenzi"
+
+#, fuzzy
+#~| msgid "Minute"
+#~ msgctxt "Size Policy"
+#~ msgid "Minimum"
+#~ msgstr "Umzuzu"
+
+#, fuzzy
+#~ msgctxt "Size Policy"
+#~ msgid "Expanding"
+#~ msgstr "Ulwenzo lwemigca ngaphantsi:"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgctxt "General properties"
+#~ msgid "General"
+#~ msgstr "Ngokubanzi"
+
+#, fuzzy
+#~ msgid "Width"
+#~ msgstr "Ububanzi:"
+
+#, fuzzy
+#~ msgid "Horizontal Size Type"
+#~ msgstr "&Tye"
+
+#, fuzzy
+#~| msgid "Vertical alignment:"
+#~ msgid "Vertical Size Type"
+#~ msgstr "Ukwenziwa "
+
+#, fuzzy
+#~ msgid "Horizontal Stretch"
+#~ msgstr "&Tye"
+
+#, fuzzy
+#~ msgid "Vertical Stretch"
+#~ msgstr "&Nkqo"
+
+#, fuzzy
+#~ msgid "Snap Distance (px)"
+#~ msgstr "Umgama (pt):"
+
+#, fuzzy
+#~ msgid "Enable Guide Lines Guide "
+#~ msgstr "Ilayini Eqinileyo"
+
+#, fuzzy
+#~ msgid "Tool Option"
+#~ msgstr "Ugqibo Lwamagama"
+
+#, fuzzy
+#~ msgid "Edit Guidelines"
+#~ msgstr "Ilayini Eqinileyo"
+
+#, fuzzy
+#~ msgid "Edit guidelines"
+#~ msgstr "Yongeza Ngaphezulu komgca"
+
+#, fuzzy
+#~ msgid "Select a filter:"
+#~ msgstr "Khetha Umsebenzi"
+
+#, fuzzy
+#~ msgid "Fit to width"
+#~ msgstr "Ububanzi:"
+
+#, fuzzy
+#~ msgid "Fit to page/canvas"
+#~ msgstr "Iphepha Elilandelayo"
+
+#, fuzzy
+#~ msgid "[No Paragraph Style]"
+#~ msgstr "Okubhaliweyo komhlathi oqhelekileyo"
+
+#, fuzzy
+#~ msgid "[No Character Style]"
+#~ msgstr "Yenza Uhlobo Olutsha"
+
+#, fuzzy
+#~ msgid "Selected Template"
+#~ msgstr "Yenza i Template"
+
+#, fuzzy
+#~ msgid "Creates an empty document"
+#~ msgstr "&Qala ngoxwebhu olungenanto"
+
+#, fuzzy
+#~ msgid "Choose Template"
+#~ msgstr "Susa i Template"
+
+#, fuzzy
+#~ msgid "No description available"
+#~ msgstr "Akukho fayile esandulukwenziwa ekhoyo"
+
+#, fuzzy
+#~ msgid "&Custom..."
+#~ msgstr "Isiko..."
+
+#, fuzzy
+#~ msgid "*.svg *.wmf *.qpic|Clipart (*.svg *.wmf *.qpic)"
+#~ msgstr "*.svg *.wmf|Cliparts (*.svg *.wmf)"
+
+#~ msgid "Insert Link"
+#~ msgstr "Faka ikhonkco"
+
+#~ msgid "Mail & News"
+#~ msgstr "Iindaba Neposi"
+
+#~ msgid "Bookmark"
+#~ msgstr "Inqaku lencwadi"
+
+#, fuzzy
+#~ msgid "Text to display:"
+#~ msgstr "&Okubhaliweyo omakufunyanwe:"
+
+#~ msgid "Internet address:"
+#~ msgstr "Idilesi ye Internet:"
+
+#~ msgid "Bookmark name:"
+#~ msgstr "Igama lenqaku lencwadi:"
+
+#~ msgid "Target:"
+#~ msgstr "i Target:"
+
+#, fuzzy
+#~ msgid "Recent file:"
+#~ msgstr "Ifayile Yangoku:"
+
+#~ msgid "No Entries"
+#~ msgstr "Akukho Mangeno"
+
+#~ msgid "File location:"
+#~ msgstr "Isalathiso sefayile:"
+
+#~ msgid "Tabulator &Left"
+#~ msgstr "&Isichwethezi ekhohlo"
+
+#~ msgid "Tabulator &Center"
+#~ msgstr "&Isichwethezi embindini"
+
+#~ msgid "Tabulator &Right"
+#~ msgstr "&Isichwethezi ekunene"
+
+#~ msgid "Tabulator &Decimal Point"
+#~ msgstr "&Incopho yokugqibela yesichwethezi"
+
+#, fuzzy
+#~ msgid "Align Left"
+#~ msgstr "Ukwenziwa kwemigca"
+
+#, fuzzy
+#~ msgid "Horizontally Center"
+#~ msgstr "&Tye"
+
+#, fuzzy
+#~ msgid "Align Right"
+#~ msgstr "Ukwenziwa kwemigca"
+
+#, fuzzy
+#~ msgid "Align Top"
+#~ msgstr "Ukwenziwa kwemigca"
+
+#, fuzzy
+#~ msgid "Default Tool"
+#~ msgstr "Umbala wokungagqibekanga"
+
+#, fuzzy
+#~ msgid "Position x:"
+#~ msgstr "Indawo"
+
+#, fuzzy
+#~ msgid "Position y:"
+#~ msgstr "Indawo"
+
+#, fuzzy
+#~ msgid "Order:"
+#~ msgstr "Imida"
+
+#~ msgid "Alignment"
+#~ msgstr "Ukwenziwa kwemigca"
+
+#, fuzzy
+#~ msgid "Horizontal:"
+#~ msgstr "&Tye"
+
+#, fuzzy
+#~ msgid "Vertical:"
+#~ msgstr "&Nkqo"
+
+#, fuzzy
+#~ msgid "Scale"
+#~ msgstr "Dibanisa Isithuba"
+
+#~ msgid "Create New Style"
+#~ msgstr "Yenza Uhlobo Olutsha"
+
+#~ msgid "Please specify a new style name:"
+#~ msgstr "Nceda khankanya uhlobo lwegama elitsha:"
+
+#~ msgid "Name already exists! Please choose another name"
+#~ msgstr "Igama selelikhona! Nceda ukhethe elinye igama"
+
+#~ msgid "Change Case"
+#~ msgstr "Tsintsha Umzekelo"
+
+#~ msgid "Case"
+#~ msgstr "Umzekelo"
+
+#~ msgid "&Uppercase"
+#~ msgstr "&Umzekelo ophezulu"
+
+#~ msgid "&Lowercase"
+#~ msgstr "&Umzekelo osezantsi"
+
+#~ msgid "T&itle case"
+#~ msgstr "U&mzekelo wewonga"
+
+#~ msgid "&Toggle case"
+#~ msgstr "&Umzekelo wokuqhobosha"
+
+#~ msgid "Sentence case"
+#~ msgstr "Ityala lesivakalisi"
+
+#~ msgid "Convert first letter of a sentence to uppercase."
+#~ msgstr "Guqulela unobumba wokuqala wesivakalisi wonobumba abaphezulu."
+
+#~ msgid "Style Manager"
+#~ msgstr "Uhlobo Lomphathi"
+
+#~ msgid "Next style:"
+#~ msgstr "Uhlobo olulandelayo:"
+
+#, fuzzy
+#~ msgid "Inherit style:"
+#~ msgstr "Uhlobo olulandelayo:"
+
+#~ msgid "<None>"
+#~ msgstr "<None>"
+
+#~ msgid "New Style Template (%1)"
+#~ msgstr "Itemplate yohlobo olutsha (%1)"
+
+#, fuzzy
+#~ msgid "Highlighting"
+#~ msgstr "Yenza Uphawu Lobeko Ngokwezivakalisi"
+
+#, fuzzy
+#~ msgid "Layout"
+#~ msgstr "Ubeko lwephepha"
+
+#, fuzzy
+#~ msgid "Locale date & time format"
+#~ msgstr "Ixesha elingasebenziyo lwefomati: %1"
+
+#~ msgid "Date (Fixed)"
+#~ msgstr "Umhla Wangoku (Ulungisiwe)"
+
+#, fuzzy
+#~ msgid "File Modification"
+#~ msgstr "Isalathiso sefayile:"
+
+#~ msgid "Current Date (variable)"
+#~ msgstr "Umhla Wangoku (umahluko)"
+
+#, fuzzy
+#~ msgid "Date of Last Printing"
+#~ msgstr "Umhla Wokugqibela Woshicilelo"
+
+#, fuzzy
+#~ msgid "Date of File Creation"
+#~ msgstr "Umhla Wolwenziwo Lwefayile"
+
+#, fuzzy
+#~ msgid "Date of File Modification"
+#~ msgstr "Umhla Woguqulelo kancincane Lwefayile"
+
+#, fuzzy
+#~ msgctxt "DateFormat"
+#~ msgid "Format of Date Variable"
+#~ msgstr "le ncoko yababini ikuvumela ucwangcise ifomati yomahluko womhla"
+
+#~ msgid "Time (Fixed)"
+#~ msgstr "Ixesha langoku (Lilungisiwe)"
+
+#~ msgid "Current Time (fixed)"
+#~ msgstr "Ixesha Langoku (lilungisiwe)"
+
+#~ msgid "Current Time (variable)"
+#~ msgstr "Ixesha Langoku (umahluko)"
+
+#~ msgid "Time Format"
+#~ msgstr "Ifomati Yexesha"
+
+#, fuzzy
+#~ msgctxt "TimeFormat"
+#~ msgid "This Dialog Allows You to Set the Format of the Time Variable"
+#~ msgstr "Le ncoko yababini ikuvumela ucwangcise ifomati yomahluko wexesha"
+
+#~ msgid "Custom Variable"
+#~ msgstr "Umahluko Wesiko"
+
+#~ msgid "Custom..."
+#~ msgstr "Isiko..."
+
+#~ msgid "&Mail Merge..."
+#~ msgstr "&Iposi Lungisa..."
+
+#~ msgid "Page Current Num"
+#~ msgstr "Inani Lephepha Langoku"
+
+#~ msgid "Total Page Num"
+#~ msgstr "Inani lephepha Elipheleleyo"
+
+#~ msgid "Previous Page Number"
+#~ msgstr "Inani Lephepha Lokugqibela"
+
+#~ msgid "Number of Pages"
+#~ msgstr "Inani Lamaphepha"
+
+#~ msgid "Next Page"
+#~ msgstr "Iphepha Elilandelayo"
+
+#~ msgid "Filename"
+#~ msgstr "Igama lefayile"
+
+#~ msgid "Path Filename"
+#~ msgstr "Umendo Negama lefayile"
+
+#~ msgid "Filename Without Extension"
+#~ msgstr "Igama lefayile Ngaphandle Kolwandiso"
+
+#~ msgid "Author Name"
+#~ msgstr "Igama lombhali"
+
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#, fuzzy
+#~ msgid "Telephone (work)"
+#~ msgstr "Ifowuni"
+
+#, fuzzy
+#~ msgid "Telephone (home)"
+#~ msgstr "Ifowuni"
+
+#~ msgid "Fax"
+#~ msgstr "i Fax"
+
+#~ msgid "Country"
+#~ msgstr "Ilizwe"
+
+#~ msgid "City"
+#~ msgstr "Isixeko"
+
+#~ msgid "Abstract"
+#~ msgstr "Ushwankathelo"
+
+#, fuzzy
+#~ msgid "Initials"
+#~ msgstr "Okukekeleyo:"
+
+#~ msgid "Company"
+#~ msgstr "Inkampani"
+
+#, fuzzy
+#~ msgid "Telephone (private)"
+#~ msgstr "Ifowuni"
+
+#~ msgid "Document Abstract"
+#~ msgstr "Ushwankathelo loxwebhu"
+
+#~ msgid "File Name"
+#~ msgstr "Igama lefayile"
+
+#, fuzzy
+#~ msgid "File Name without Extension"
+#~ msgstr "Igama lefayile Ngaphandle Kolwandiso"
+
+#~ msgid "Directory && File Name"
+#~ msgstr "Isilawulo && Igama Lefayile"
+
+#~ msgid "Link"
+#~ msgstr "Ikhonknco"
+
+#~ msgid "Link..."
+#~ msgstr "Ikhonkco..."
+
+#~ msgid "Note"
+#~ msgstr "Qaphela"
+
+#~ msgid "Note..."
+#~ msgstr "Qaphela..."
+
+#, fuzzy
+#~ msgid "<No title>"
+#~ msgstr "<None>"
+
+#, fuzzy
+#~ msgid "Number of Words"
+#~ msgstr "Umbala wenani:"
+
+#, fuzzy
+#~ msgid "Number of Sentences"
+#~ msgstr "Inani Lamaphepha"
+
+#, fuzzy
+#~ msgid "Number of Lines"
+#~ msgstr "Inani Lamaphepha"
+
+#, fuzzy
+#~ msgid "Number of Characters"
+#~ msgstr "Amaqela abantu"
+
+#, fuzzy
+#~ msgid "Number of Non-Whitespace Characters"
+#~ msgstr "Amaqela abantu"
+
+#, fuzzy
+#~ msgid "Number of Syllables"
+#~ msgstr "Inani Lamaphepha"
+
+#, fuzzy
+#~ msgid "Number of Frames"
+#~ msgstr "Inani Lamaphepha"
+
+#, fuzzy
+#~ msgid "Number of Embedded Objects"
+#~ msgstr "Ayinakulayisha iinjongo ezilungisiweyo"
+
+#, fuzzy
+#~ msgid "Number of Tables"
+#~ msgstr "Inani Lamaphepha"
+
+#~ msgid "Autocorrection"
+#~ msgstr "Ulungiso oluzenzekelayo"
+
+#~ msgid "Simple Autocorrection"
+#~ msgstr "Ulungiso olulula oluzenzekelayo"
+
+#~ msgid ""
+#~ "Convert &first letter of a sentence automatically to uppercase\n"
+#~ "(e.g. \"my house. in this town\" to \"my house. In this town\")"
+#~ msgstr ""
+#~ "Guqulela &unobumba wokuqala wegama lokuqala lesivakalisi ngokuzenzekelayo "
+#~ "ku mzekelo ophezulu\n"
+#~ "(umzekelo. \"bla. olu luvavanyo\" ku \"bla. Olu Luvavanyo\")"
+
+#~ msgid ""
+#~ "Detect when a new sentence is started and always ensure that the first "
+#~ "character is an uppercase character."
+#~ msgstr ""
+#~ "Bhaqa xa isivakalisi siqaliwe qinisekisa ngalolonke ixesha ukuba "
+#~ "umsebenzi ileta enkulu yomsebenzi wokuqala ngumsebenzi we leta ezinkulu "
+#~ "somsebenzi."
+
+#~ msgid ""
+#~ "Convert &two uppercase characters to one uppercase and one lowercase "
+#~ "character\n"
+#~ " (e.g. PErfect to Perfect)"
+#~ msgstr ""
+#~ "Guqulela &ababini abaphezulu onobumba bomzekelo komnye ophezulu umzekelo "
+#~ "nomnye osezantsi unobumba womzekelo.\n"
+#~ " (umzekelo. OKufezekisiweyo ukuya Kokufezekisiweyo)"
+
+#, fuzzy
+#~ msgid ""
+#~ "All words are checked for the common mistake of holding the shift key "
+#~ "down a bit too long. If some words must have two uppercase characters, "
+#~ "then those exceptions should be added in the 'Exceptions' tab."
+#~ msgstr ""
+#~ "Onke amagama akhangelwe ukujonga impazamo efanayo yokubamba isitshixo "
+#~ "sokushukumisa ngezantsi ixesha elide. Ukuba amanye amgama kufuneka "
+#~ "abenabasebenzi e leta ezinkulu, ezozodwa kufuneka zongezwe kwisithuba "
+#~ "Sezikhethiweyo."
+
+#~ msgid "Autoformat &URLs"
+#~ msgstr "Fomata ngokuzenzekelayo i &URLs"
+
+#, fuzzy
+#~ msgid ""
+#~ "Detect when a URL (Uniform Resource Locator) is typed and provide "
+#~ "formatting that matches the way an Internet browser would show a URL."
+#~ msgstr ""
+#~ "Bhaqa xa i URL (Universal Remote Location) ishicilelwe kwaye inikezele i "
+#~ "formatt efana nendlela umkhangeli zincwadi angabonisa i URL."
+
+#~ msgid "&Suppress double spaces"
+#~ msgstr "&Dibanisa izithuba ezimbini"
+
+#~ msgid ""
+#~ "Make sure that more than one space cannot be typed, as this is a common "
+#~ "mistake which is quite hard to find in formatted text."
+#~ msgstr ""
+#~ "Qinisekisa ukuba isithuba esishicilelekayo singaphezulu kwesinye "
+#~ "esingakwazekiyo ukushicileleka, njengokuba oku kuyimpazamo eqhelekileyo "
+#~ "enzima ukufumaneka kokubhaliweyo oku formatiweyo."
+
+#~ msgid "R&emove spaces at the beginning and end of paragraphs"
+#~ msgstr "S&usa izithuba ekuqaleni nasekupheleni kwemihlathi"
+
+#~ msgid ""
+#~ "Keep correct formatting and indenting of sentences by automatically "
+#~ "removing spaces typed at the beginning and end of a paragraph."
+#~ msgstr ""
+#~ "Gcina i format nolwenzo lwamathanda lwezivakalisi ngokususa "
+#~ "ngokuzenzekelayo izithuba ezishicilelwe ekuqaleni nasekupheleni komhlathi."
+
+#~ msgid "Automatically do &bold and underline formatting"
+#~ msgstr ""
+#~ "Yenza amagama &amakhulu ngokuzenzekelayo wenze umgca ngaphantsi kwe "
+#~ "formati"
+
+#~ msgid ""
+#~ "When you use _underline_ or *bold*, the text between the underscores or "
+#~ "asterisks will be converted to underlined or bold text."
+#~ msgstr ""
+#~ "Xa usebezisa _underline_ okanye *bold*, okubhaliweyo okungaphakathi "
+#~ "korhwelo lwangaphantsi okanye i asterisks zizakuguqulelwa kumgca "
+#~ "wangaphantsi okanye okubkhaliweyo kwamagama amkhulu."
+
+#~ msgid "Most standard fraction notations will be converted when available"
+#~ msgstr "Ezisezantsi eziqhlekileyo "
+
+#~ msgid "Use &autonumbering for numbered paragraphs"
+#~ msgstr "Sebenzisa &uniko lwamanani oluzenzekelayo lwemihlathi enamanani"
+
+#~ msgid ""
+#~ "When typing '1)' or similar in front of a paragraph, automatically "
+#~ "convert the paragraph to use that numbering style. This has the advantage "
+#~ "that further paragraphs will also be numbered and the spacing is done "
+#~ "correctly."
+#~ msgstr ""
+#~ "Xa ushicilela '1)' okanye efanayo ngaphambili komhlathi, guqula "
+#~ "ngokuzenzekelayo kumhlathi wosebenziso kuhlobo loniko lwenani. Inoncedo "
+#~ "ukuba izakunika amanani nezithuba zenziwa ngendlela eyiyo."
+
+#~ msgid "Rep&lace 1st... with 1^st..."
+#~ msgstr "Buy&isela 1st...  nge '1^st..."
+
+#~ msgid "Capitalize name of days"
+#~ msgstr "Yenza onobumba bemihla"
+
+#~ msgid "Use l&ist-formatting for bulleted paragraphs"
+#~ msgstr "Sebenzisa U&luhlu-loku formata lwemihlathi enembumbulu"
+
+#~ msgid ""
+#~ "When typing '*' or '-' in front of a paragraph, automatically convert the "
+#~ "paragraph to use that list-style. Using a list-style formatting means "
+#~ "that a correct bullet is used to draw the list."
+#~ msgstr ""
+#~ "Xa ushicilela '*' okanye '-' ngaphambili komhlathi, guqula "
+#~ "ngokuzenzekelayo umhlathi wosebenziso lodidi loluhlu. Usebenzisa uhlobo "
+#~ "loluhlu loku formata luthetha ukuba yimbumbule eyiyo esebenziswayo "
+#~ "ukuzoba uluhlu."
+
+#~ msgid "Custom Quotes"
+#~ msgstr "Imbumbulu Yesiko"
+
+#~ msgid "Replace &double quotes with typographical quotes"
+#~ msgstr "Buyisela &Iimpindo magama ngempindo ezizotyiweyo"
+
+#~ msgid "Replace &single quotes with typographical quotes"
+#~ msgstr "Buyisela &Iimpindo magama ngempindo ezizotyiweyo"
+
+#~ msgid "Advanced Autocorrection"
+#~ msgstr "Ulungiso oluphambili oluzenzekelayo"
+
+#~ msgid "Replacements and exceptions for language:"
+#~ msgstr "Ubuyiselo nokukhetheka kolwimi:"
+
+#~ msgid "Enable word replacement"
+#~ msgstr "Faka ubuyiselo kwegama"
+
+#~ msgid "Replace text with format"
+#~ msgstr "Buyisela okubhaliweyo nge fomati"
+
+#, fuzzy
+#~ msgid "Insert a special character..."
+#~ msgstr "Faka ichar ethile"
+
+#~ msgid "Find"
+#~ msgstr "Fumana"
+
+#, fuzzy
+#~ msgid "Change Format..."
+#~ msgstr "Tshintsha Ifomati"
+
+#~ msgid "Clear Format"
+#~ msgstr "Cacisa Ifomati"
+
+#~ msgid "Do not treat as the end of a sentence:"
+#~ msgstr "Sukuyithatha njengesiphelo sesivakalisi:"
+
+#~ msgid "Accept two uppercase letters in:"
+#~ msgstr "Yamkela onobumba ababini bomzekelo ophezulu ku:"
+
+#~ msgid "An area is empty"
+#~ msgstr "I ariya ayinanto"
+
+#~ msgid "Find string is the same as replace string!"
+#~ msgstr "Umtya wokufumana uyafana nomtya wokubuyisela!"
+
+#, fuzzy
+#~ msgid "Change Variable Subtype"
+#~ msgstr "Tshintsha Udidi Loluhlu"
+
+#, fuzzy
+#~ msgid "Change Variable Format"
+#~ msgstr "Tshintsha Ifomati Yokubhaliweyo"
+
+#~ msgid "Entry Name"
+#~ msgstr "Igama longeniso"
+
+#~ msgid "Variable Value Editor"
+#~ msgstr "Umhleli wexabiso lomahluko"
+
+#~ msgid "Add Variable"
+#~ msgstr "Yongeza Umahluko"
+
+#~ msgid "Edit Variable"
+#~ msgstr "Hlela Umahluko"
+
+#~ msgid "Value:"
+#~ msgstr "Ixabiso:"
+
+#~ msgid "Add Completion Entry"
+#~ msgstr "Yoneza Umngeno Wogqibo"
+
+#~ msgid "Enter entry:"
+#~ msgstr "Ngenisa umngeno:"
+
+#~ msgid ""
+#~ "Completion list saved.\n"
+#~ "It will be used for all documents from now on."
+#~ msgstr ""
+#~ "Uluhlu olugciniweyo logqibo.\n"
+#~ "Izakusebenziswa kumaxwebhu ukusuka ngoku."
+
+#~ msgid "Completion List Saved"
+#~ msgstr "Uluhlu Logqibo Lugciniwe"
+
+#~ msgid "Delete Text"
+#~ msgstr "Cima Okubhaliweyo"
+
+#~ msgid "Insert Text"
+#~ msgstr "Faka injongo"
+
+#~ msgid "Format Text"
+#~ msgstr "Ifomati Yokubhaliweyo"
+
+#, fuzzy
+#~ msgid "Change Paragraph Background Color"
+#~ msgstr "Tshintsha umbala wesiqalo..."
+
+#~ msgid "Change Borders"
+#~ msgstr "Imida yephepha"
+
+#, fuzzy
+#~ msgid "Change Join Borders"
+#~ msgstr "Imida yephepha"
+
+#~ msgid "Change Tabulator"
+#~ msgstr "Susa isichwethezi"
+
+#~ msgid "Remove Selected Text"
+#~ msgstr "Susa Umbhalo Okhethiweyo"
+
+#~ msgid "Day"
+#~ msgstr "Umhla"
+
+#~ msgid "Day (2 digits)"
+#~ msgstr "Iintsuku (2 amasuntswana)"
+
+#~ msgid "Day (abbreviated name)"
+#~ msgstr "Umhla (losuku eliqutshiweyo)"
+
+#~ msgid "Day (long name)"
+#~ msgstr "Umhla (igama elide)"
+
+#~ msgid "Month"
+#~ msgstr "Inyanga"
+
+#~ msgid "Month (2 digits)"
+#~ msgstr "Inyanga (2 isuntswana)"
+
+#~ msgid "Month (abbreviated name)"
+#~ msgstr "Inyanga (igama elishunquliweyo)"
+
+#~ msgid "Month (long name)"
+#~ msgstr "inyanga (igama elide)"
+
+#, fuzzy
+#~ msgid "Month (possessive abbreviated name)"
+#~ msgstr "Inyanga (igama elishunquliweyo)"
+
+#, fuzzy
+#~ msgid "Month (possessive long name)"
+#~ msgstr "inyanga (igama elide)"
+
+#~ msgid "Year (2 digits)"
+#~ msgstr "Iintsuku (2 amasuntswana)"
+
+#~ msgid "Year (4 digits)"
+#~ msgstr "Unyaka (amasuntswana amanye)"
+
+#~ msgid "Hour"
+#~ msgstr "Iyure"
+
+#~ msgid "Hour (2 digits)"
+#~ msgstr "Iyure (2 isuntswana)"
+
+#~ msgid "Minute (2 digits)"
+#~ msgstr "Umzuzu (2 isuntswana)"
+
+#~ msgid "Second"
+#~ msgstr "Umzuzwana"
+
+#~ msgid "Second (2 digits)"
+#~ msgstr "Inyanga (2 isuntswana)"
+
+#~ msgid "Millisecond (3 digits)"
+#~ msgstr "Inyanga (3 isuntswana)"
+
+#~ msgid "am/pm"
+#~ msgstr "kusasa/emva kwemini"
+
+#~ msgid "AM/PM"
+#~ msgstr "KUSASA/EMVA KWEMINI"
+
+#~ msgid "Correct in Days"
+#~ msgstr "Lungisa Kwimihla"
+
+#~ msgid "Remove Word"
+#~ msgstr "Susa Igama"
+
+#~ msgid "Replace Word"
+#~ msgstr "Buyisela Igama"
+
+#~ msgid "%1 is not a valid link."
+#~ msgstr "%1 asilokhonkco lisebenzayo."
+
+#~ msgid "Insert Soft Hyphen"
+#~ msgstr "Faka Uphawu oluthambileyo"
+
+#~ msgid "Insert Line Break"
+#~ msgstr "Faka ikhonkco"
+
+#, fuzzy
+#~ msgid "Insert Non-Breaking Space"
+#~ msgstr "Faka Isithuba esingophukiyo"
+
+#, fuzzy
+#~ msgid "Insert Non-Breaking Hyphen"
+#~ msgstr "Faka Isithuba esingophukiyo"
+
+#~ msgid "Insert Special Char"
+#~ msgstr "Faka ichar ethile"
+
+#, fuzzy
+#~ msgid "Remove Link"
+#~ msgstr "Susa ikhonknco"
+
+#~ msgid "Correct in Minutes"
+#~ msgstr "Lungisa Kwimizuzu"
+
+#~ msgid "Edit Comment"
+#~ msgstr "Hlela Ugqabazo"
+
+#~ msgid "Add Author Name"
+#~ msgstr "Yongeza Igama Lombhali"
+
+#, fuzzy
+#~ msgid "Autocorrect Word"
+#~ msgstr "Igama lolungiso oluzenzekelayo"
+
+#, fuzzy
+#~ msgid "Autocorrect Word with Format"
+#~ msgstr "Igama lolungiso oluzenzekelayo"
+
+#~ msgid "Typographic Quote"
+#~ msgstr "Uphindo magama Oluzotyiweyo"
+
+#~ msgid "Autocorrect (capitalize first letter)"
+#~ msgstr "Ulungiso oluzenzekelayo (yenza mkhulu unobumba wokuqala)"
+
+#, fuzzy
+#~ msgid "Autocorrect"
+#~ msgstr "Ulungiso oluzenzekelayo"
+
+#, fuzzy
+#~ msgid "Autocorrect for Fraction"
+#~ msgstr "Ulungiso oluzenzekelayo"
+
+#, fuzzy
+#~ msgid "Autocorrection: Change Format"
+#~ msgstr "Ulungiso lwe Fomati: Oluzenzekelayo."
+
+#~ msgid "Autocorrect (use bullet style)"
+#~ msgstr "Ulungiso oluzenzekelayo (yenza mkhulu unobumba wokuqala)"
+
+#~ msgid "Autocorrect (use number style)"
+#~ msgstr "Ulungiso oluzenzekelayo (yenza mkhulu unobumba wokuqala)"
+
+#~ msgid "Autocorrect (remove start and end line space)"
+#~ msgstr "Ulungiso oluzenzekelayo (susa uqalo nophelo lwelayini yesithuba)"
+
+#, fuzzy
+#~ msgid "Capitalize Name of Days"
+#~ msgstr "Yenza onobumba bemihla"
+
+#~ msgid "Double"
+#~ msgstr "Uphindo kabini"
+
+#~ msgid "Simple Bold"
+#~ msgstr "Amagama amakhulu Alula"
+
+#~ msgid "Uppercase"
+#~ msgstr "Unobumba onkhulu"
+
+#, fuzzy
+#~ msgid "Lowercase"
+#~ msgstr "&Umzekelo osezantsi"
+
+#, fuzzy
+#~ msgid "Small Caps"
+#~ msgstr "Caps ezincincane"
+
+#~ msgid "Show Formatting Options"
+#~ msgstr "Bonisa iinketho ezifomatayo"
+
+#~ msgid "Formatting Options"
+#~ msgstr "Bonisa iinketho ezifomatayo"
+
+#~ msgid "Replace Text"
+#~ msgstr "Buyisela okubhaliweyo"
+
+#~ msgid "Reset"
+#~ msgstr "Cwangcisa kwakhona"
+
+#~ msgid "Bold:"
+#~ msgstr "Amagama amakhulu:"
+
+#~ msgid "Italic:"
+#~ msgstr "Okukekeleyo:"
+
+#~ msgid "Underline:"
+#~ msgstr "Yenza umgca ngaphantsi:"
+
+#~ msgid "Subscript"
+#~ msgstr "Okushicilelweyo okusezantsi"
+
+#~ msgid "Superscript"
+#~ msgstr "Okushicilelweyo okuphezulu"
+
+#, fuzzy
+#~ msgid "Suffi&x text:"
+#~ msgstr "Okubhaliweyo kwasimamva:"
+
+#, fuzzy
+#~ msgid "&Start at:"
+#~ msgstr "Qala ku:"
+
+#, fuzzy
+#~ msgid "Custo&m character:"
+#~ msgstr "Umsebenzi wesiko:"
+
+#, fuzzy
+#~ msgid "&Depth:"
+#~ msgstr "Ubunzulu:"
+
+#, fuzzy
+#~ msgid "&Restart numbering at this paragraph"
+#~ msgstr "Qalisa kwakhona ulwenizwo lwamanani kulomhlathi"
+
+#~ msgid "Arabic Numbers"
+#~ msgstr "Amanani esi Arabhu"
+
+#~ msgid "Disc Bullet"
+#~ msgstr "Imbumbulu yediski"
+
+#~ msgid "Custom Bullet"
+#~ msgstr "Imbumbulu yesiko"
+
+#, fuzzy
+#~ msgid "Frame width: %1 %2"
+#~ msgstr "Ububanzi Besakhelo : %1"
+
+#~ msgid "Indent"
+#~ msgstr "Ithanda"
+
+#, fuzzy
+#~ msgid "&Right:"
+#~ msgstr "Kunene:"
+
+#, fuzzy
+#~ msgid "&First line:"
+#~ msgstr "Ilayini yokuqala (%1):"
+
+#~ msgctxt "Line spacing value"
+#~ msgid "Single"
+#~ msgstr "Eyodwa"
+
+#, fuzzy
+#~ msgctxt "Line spacing value"
+#~ msgid "1.5 Lines"
+#~ msgstr "1.5 iilayini"
+
+#~ msgctxt "Line spacing value"
+#~ msgid "Double"
+#~ msgstr "Kabini"
+
+#, fuzzy
+#~ msgid "At Least (%1)"
+#~ msgstr "Emva (%1):"
+
+#, fuzzy
+#~ msgid "Fixed (%1)"
+#~ msgstr "Width (%1):"
+
+#, fuzzy
+#~ msgid "Para&graph Space"
+#~ msgstr "Isithuba somhlathi"
+
+#, fuzzy
+#~ msgid "Before:"
+#~ msgstr "Phambi (%1):"
+
+#, fuzzy
+#~ msgid "Indent && S&pacing"
+#~ msgstr "Yenza amathanda && Ulwenziwo lwezithuba"
+
+#, fuzzy
+#~ msgid "&Left"
+#~ msgstr "Ekhohlo:"
+
+#, fuzzy
+#~ msgid "&Right"
+#~ msgstr "Kunene:"
+
+#, fuzzy
+#~ msgid "&Justify"
+#~ msgstr "Gweba"
+
+#, fuzzy
+#~ msgid "Behavior at &End of Frame/Page"
+#~ msgstr "Ukuziphatha Kwisiphelo Sesakhelo/Iphepha"
+
+#, fuzzy
+#~ msgid "&Keep lines together"
+#~ msgstr "Gcina iilayini kunye"
+
+#~ msgid "Insert break before paragraph"
+#~ msgstr "Faka uphumlo phambi komhlathiu"
+
+#, fuzzy
+#~ msgid "General &Layout"
+#~ msgstr "Ngokubanzi"
+
+#, fuzzy
+#~ msgid "D&ecorations"
+#~ msgstr "Isalathiso:"
+
+#~ msgid "Numbering"
+#~ msgstr "Yenza amanani"
+
+#~ msgid "&None"
+#~ msgstr "&Akukho nanye"
+
+#, fuzzy
+#~ msgid "&List"
+#~ msgstr "Uluhlu"
+
+#, fuzzy
+#~ msgid "Chapt&er"
+#~ msgstr "Isiqendu"
+
+#~ msgid "Normal paragraph text"
+#~ msgstr "Okubhaliweyo komhlathi oqhelekileyo"
+
+#, fuzzy
+#~ msgid "B&ullets/Numbers"
+#~ msgstr "Iimbumbulu/Amanani"
+
+#, fuzzy
+#~ msgid "Po&sition"
+#~ msgstr "Indawo"
+
+#, fuzzy
+#~ msgid "On followin&g character: "
+#~ msgstr "Umsebenzi olandelwayo: "
+
+#~ msgid "Tab Leader"
+#~ msgstr "Umkhokheli Wesithuba"
+
+#~ msgid "The space a tab uses can be filled with a pattern."
+#~ msgstr "Isithuba itab esisebenzisayo singagcwaliswa ngomlinganiselo."
+
+#, fuzzy
+#~ msgid "&Filling:"
+#~ msgstr "Iyagcwalisa:"
+
+#, fuzzy
+#~ msgid "&New"
+#~ msgstr "Entsha"
+
+#, fuzzy
+#~ msgid "&Tabulators"
+#~ msgstr "Abaniki sithuba"
+
+#, fuzzy
+#~ msgid "Import Styles"
+#~ msgstr "Rhweba angaphakathi Uhlobo"
+
+#, fuzzy
+#~| msgid "Alignment"
+#~ msgid "Aligment"
+#~ msgstr "Ukwenziwa kwemigca"
+
+#, fuzzy
+#~ msgid "Strikethrough"
+#~ msgstr "Betha ngapha kwayo:"
+
+#, fuzzy
+#~ msgid "Underlining:"
+#~ msgstr "Ulwenzo lwemigca ngaphantsi:"
+
+#, fuzzy
+#~ msgid "Colors"
+#~ msgstr "Imibala:"
+
+#, fuzzy
+#~ msgid "Automatic hyphenation"
+#~ msgstr "Ulungiso oluzenzekelayo"
+
+#~ msgid "Default Color"
+#~ msgstr "Umbala wokungagqibekanga"
+
+#~ msgid "More Colors..."
+#~ msgstr "Imibala Emininzi..."
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Orange"
+#~ msgstr "Orenji"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Magenta"
+#~ msgstr "Magenta"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Blue"
+#~ msgstr "Luhlaza (okwesibhaka-bhaka)"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Cyan"
+#~ msgstr "Cyan"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Green"
+#~ msgstr "Luhlaza"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Yellow"
+#~ msgstr "Mthubi"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkRed"
+#~ msgstr "Ububomvu Obukhanyayo"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkOrange"
+#~ msgstr "Dark Orange"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkMagenta"
+#~ msgstr "i Magenta Emnyama"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkBlue"
+#~ msgstr "Luhlaza (okwesibhaka-bhaka) Obumnyama"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkCyan"
+#~ msgstr "Cyan Emnyama"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkGreen"
+#~ msgstr "Ubuhlaza Obukhanyayo"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkYellow"
+#~ msgstr "Ubuthubi Obumnyama"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "White"
+#~ msgstr "Ubuhlope"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 90%"
+#~ msgstr "Ngwevu 90%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 80%"
+#~ msgstr "Ngwevu 80%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 70%"
+#~ msgstr "Ngwevu 70%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 60%"
+#~ msgstr "Ngwevu 60%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 50%"
+#~ msgstr "Ngwevu 50%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 40%"
+#~ msgstr "Ngwevu 40%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 30%"
+#~ msgstr "Ngwevu 30%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 20%"
+#~ msgstr "Ngwevu 20%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray 10%"
+#~ msgstr "Ngwevu 10%"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Black"
+#~ msgstr "Ubumnyama"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Ivory"
+#~ msgstr "i Ivory"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Snow"
+#~ msgstr "Ikhephu"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MintCream"
+#~ msgstr "Mint Cream"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "FloralWhite"
+#~ msgstr "Floral White"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightYellow"
+#~ msgstr "Light Yellow"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "GhostWhite"
+#~ msgstr "Ubumhlope Besiporho"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Honeydew"
+#~ msgstr "i Honeydew"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Seashell"
+#~ msgstr "i Seashel"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "AliceBlue"
+#~ msgstr "Alice Blue"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Cornsilk"
+#~ msgstr "Cornsilk"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LavenderBlush"
+#~ msgstr "Lavender Blush"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "OldLace"
+#~ msgstr "Old Lace"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "WhiteSmoke"
+#~ msgstr "White Smoke"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LemonChiffon"
+#~ msgstr "Lemon Chiffon"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightCyan"
+#~ msgstr "Light Cyan"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightGoldenrodYellow"
+#~ msgstr "Light Goldenrod Yellow"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Beige"
+#~ msgstr "Beige"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PapayaWhip"
+#~ msgstr "Papaya Whip"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "BlanchedAlmond"
+#~ msgstr "Blanched Almond"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "AntiqueWhite"
+#~ msgstr "Ubuhlope Obudala"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MistyRose"
+#~ msgstr "Misty Rose"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Bisque"
+#~ msgstr "i Bisque"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Moccasin"
+#~ msgstr "i Mocassin"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "NavajoWhite"
+#~ msgstr "Navajo Obumhlope"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PeachPuff"
+#~ msgstr "Peach Puff"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PaleGoldenrod"
+#~ msgstr "Pale Goldenrod"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Wheat"
+#~ msgstr "Ingqolowa"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PaleTurquoise"
+#~ msgstr "Pale Turquoise"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Pink"
+#~ msgstr "Pink"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightGoldenrod"
+#~ msgstr "Light Goldenrod"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightGray"
+#~ msgstr "Light Gray"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightPink"
+#~ msgstr "Light Pink"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PowderBlue"
+#~ msgstr "Powder Blue"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Aquamarine"
+#~ msgstr "Aquamarine"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Thistle"
+#~ msgstr "Thistle"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightBlue"
+#~ msgstr "Ubuhlaza Obungakhanyiyo"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PaleGreen"
+#~ msgstr "Pale Green"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gold"
+#~ msgstr "Gold"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "GreenYellow"
+#~ msgstr "Green Yellow"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSteelBlue"
+#~ msgstr "Light Steel Blue"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightGreen"
+#~ msgstr "Light Green"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Plum"
+#~ msgstr "Plum"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Gray"
+#~ msgstr "Gray"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "BurlyWood"
+#~ msgstr "Burly Wood"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSkyBlue"
+#~ msgstr "Light Sky Blue"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSalmon"
+#~ msgstr "Light Salmon"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SkyBlue"
+#~ msgstr "Sky Blue"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Violet"
+#~ msgstr "Violet"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SandyBrown"
+#~ msgstr "Sandy Brown"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkSalmon"
+#~ msgstr "Dark Salmon"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkKhaki"
+#~ msgstr "Dark Khaki"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkGray"
+#~ msgstr "Dark Gray"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LawnGreen"
+#~ msgstr "Lawn Green"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "HotPink"
+#~ msgstr "Hot Pink"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Salmon"
+#~ msgstr "Salmon"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Turquoise"
+#~ msgstr "Turquoise"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkSeaGreen"
+#~ msgstr "Dark Sea Green"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Orchid"
+#~ msgstr "Orchid"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumAquamarine"
+#~ msgstr "Medium Aquamarine"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Coral"
+#~ msgstr "Coral"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "YellowGreen"
+#~ msgstr "Yellow Green"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Goldenrod"
+#~ msgstr "Goldenrod"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumTurquoise"
+#~ msgstr "Medium Turquoise"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "RosyBrown"
+#~ msgstr "Rosy Brown"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "PaleVioletRed"
+#~ msgstr "Pale Violet Red"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumSpringGreen"
+#~ msgstr "Medium Spring Green"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Tomato"
+#~ msgstr "i Tomato"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SpringGreen"
+#~ msgstr "Spring Green"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Peru"
+#~ msgstr "Peru"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "CornflowerBlue"
+#~ msgstr "Cornflower Blue"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSlateBlue"
+#~ msgstr "Light Slate Blue"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumPurple"
+#~ msgstr "Medium Purple"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumOrchid"
+#~ msgstr "Medium Orchid"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "CadetBlue"
+#~ msgstr "Cadet Blue"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkTurquoise"
+#~ msgstr "Dark Turquoise"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DeepSkyBlue"
+#~ msgstr "Deep Sky Blue"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSlateGray"
+#~ msgstr "Light Slate Gray"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkGoldenrod"
+#~ msgstr "Dark Goldenrod"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumSlateBlue"
+#~ msgstr "Medium Slate Blue"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "IndianRed"
+#~ msgstr "Indian Red"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Chocolate"
+#~ msgstr "Itshokoleti"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumSeaGreen"
+#~ msgstr "Medium Sea Green"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LimeGreen"
+#~ msgstr "Lime Green"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSeaGreen"
+#~ msgstr "Light Sea Green"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SlateGray"
+#~ msgstr "Slate Gray"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "OrangeRed"
+#~ msgstr "Orange Red"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DeepPink"
+#~ msgstr "Deep Pink"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SteelBlue"
+#~ msgstr "Steel Blue"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SlateBlue"
+#~ msgstr "Slate Blue"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "OliveDrab"
+#~ msgstr "Olive Drab"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "RoyalBlue"
+#~ msgstr "Royal Blue"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "VioletRed"
+#~ msgstr "Violet Red"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkOrchid"
+#~ msgstr "Dark Orchid"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DimGray"
+#~ msgstr "Dim Gray"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "BlueViolet"
+#~ msgstr "Blue Violet"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Sienna"
+#~ msgstr "Sienna"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumVioletRed"
+#~ msgstr "Medium Violet Red"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Maroon"
+#~ msgstr "Maroon"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SeaGreen"
+#~ msgstr "Sea Green"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkOliveGreen"
+#~ msgstr "Dark Olive Green"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "ForestGreen"
+#~ msgstr "Forest Green"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "SaddleBrown"
+#~ msgstr "Saddle Brown"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkViolet"
+#~ msgstr "Dark Violet"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "FireBrick"
+#~ msgstr "Fire Brick"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkSlateBlue"
+#~ msgstr "Dark Slate Blue"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkSlateGray"
+#~ msgstr "Dark Slate Gray"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MidnightBlue"
+#~ msgstr "Midnight Blue"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "MediumBlue"
+#~ msgstr "Medium Blue"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "Navy"
+#~ msgstr "Navy"
+
+#, fuzzy
+#~ msgid "Decimal Comma Number"
+#~ msgstr "Amanani asezantsi esiRoma"
+
+#, fuzzy
+#~ msgid "Convert to path"
+#~ msgstr "Yitshintshele kwisiGrike"
+
+#, fuzzy
+#~ msgid "Cancelled"
+#~ msgstr "Tsintsha Umzekelo"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgid "done"
+#~ msgstr "Akukho nanye"
+
+#~ msgid "Default font:"
+#~ msgstr "Uhlobo lwamagama Okwendalo:"
+
+#~ msgid "Name font:"
+#~ msgstr "Nika igama uhlobo lwamagama:"
+
+#~ msgid "Number font:"
+#~ msgstr "Inani lohlobo lwamagama:"
+
+#~ msgid "Operator font:"
+#~ msgstr "Umsebenzisi Wehlobo lamagama:"
+
+#~ msgid "Default base size:"
+#~ msgstr "Ubungakanani besiseko sokwendalo:"
+
+#~ msgid "Choose..."
+#~ msgstr "Khetha..."
+
+#, fuzzy
+#~ msgid "Formula tool"
+#~ msgstr "Ifomati Yokubhaliweyo"
+
+#~ msgid "Add Matrix"
+#~ msgstr "Dibanisa Indawo apho into ibhekiswe phambili khona"
+
+#, fuzzy
+#~ msgid "Add Elements"
+#~ msgstr "Dibanisa Isiqalelo"
+
+#, fuzzy
+#~ msgid "Remove Elements"
+#~ msgstr "Susa Ugqabazo"
+
+#~ msgid "More Text Colors..."
+#~ msgstr "Imibala emininzi yokubhaliweyo..."
+
+#~ msgid "More Fill Colors..."
+#~ msgstr "Imibala emininzi Yokupheleleyo..."
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "LightSkyblue"
+#~ msgstr "Light Sky Blue"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DarkSeagreen"
+#~ msgstr "Dark Sea Green"
+
+#, fuzzy
+#~ msgctxt "color"
+#~ msgid "DeepSkyblue"
+#~ msgstr "Deep Sky Blue"
+
+#, fuzzy
+#~ msgid "Open &Recent Document"
+#~ msgstr "Vu&la uxwebhu olusandukubakho"
+
+#, fuzzy
+#~ msgid "&Document Information"
+#~ msgstr "Ulwazi olukwixwebhu"
+
+#, fuzzy
+#~ msgid "Expression Path"
+#~ msgstr "Umendo wokuzitsho:"
+
+#, fuzzy
+#~ msgid "Failed to create script for interpreter '%1'"
+#~ msgstr "Itoliki yamagama abhalwe phantsi e KOffice."
+
+#, fuzzy
+#~ msgid "Requested Font"
+#~ msgstr "Uhlobo lwamagama Asetyenzisiweyo"
+
+#, fuzzy
+#~ msgid "Font style"
+#~ msgstr "Rhweba angaphakathi Uhlobo"
+
+#, fuzzy
+#~ msgid "Bold Italic"
+#~ msgstr "Okukekeleyo:"
+
+#, fuzzy
+#~ msgid "Actual Font"
+#~ msgstr "Khetha ubukhulu begama"
+
+#~ msgid "Remove Tabulator"
+#~ msgstr "Susa isichwethezi"
+
+#, fuzzy
+#~ msgid "Load"
+#~ msgstr "Layisha..."
+
+#, fuzzy
+#~ msgid "Install"
+#~ msgstr "Okukekeleyo:"
+
+#, fuzzy
+#~ msgid "&Font"
+#~ msgstr "oint"
+
+#, fuzzy
+#~ msgid "Relative size:"
+#~ msgstr "Ubungakanani obuhlobeneyo:"
+
+#, fuzzy
+#~ msgid "Hyphenation"
+#~ msgstr "Ulungiso oluzenzekelayo"
+
+#~ msgid "Abstract:"
+#~ msgstr "Ushwankathelo:"
+
+#, fuzzy
+#~ msgid "Accelerator"
+#~ msgstr "Umsebenzisi"
+
+#, fuzzy
+#~ msgid " plus "
+#~ msgstr "oplus"
+
+#~ msgid "Use syntax highlighting"
+#~ msgstr "Sebenzisa uhlenga-hlengiso lwesivakalisi sogqamiso"
+
+#~ msgid "Base Size Change"
+#~ msgstr "Utshintsho Lobungakanani Besiseko"
+
+#~ msgid "Add Text"
+#~ msgstr "Dibanisa Okubhaliweyo"
+
+#, fuzzy
+#~ msgid "Add Operator"
+#~ msgstr "Umsebenzisi Wehlobo lamagama:"
+
+#, fuzzy
+#~ msgid "Add Number"
+#~ msgstr "Dibanisa Igama"
+
+#~ msgid "Add Empty Box"
+#~ msgstr "Yongeza Ibhokisi Engenanto"
+
+#~ msgid "Add Name"
+#~ msgstr "Dibanisa Igama"
+
+#~ msgid "Add Bracket"
+#~ msgstr "Dibanisa Isigweqi"
+
+#~ msgid "Add Overline"
+#~ msgstr "Yongeza Ngaphezulu komgca"
+
+#~ msgid "Add Underline"
+#~ msgstr "Dibanisa Ngezantsu komgca:"
+
+#, fuzzy
+#~ msgid "Add Multiline"
+#~ msgstr "Yongeza Ngaphezulu komgca"
+
+#~ msgid "Add Space"
+#~ msgstr "Dibanisa Isithuba"
+
+#~ msgid "Add Root"
+#~ msgstr "Dibanisa Ingcambu"
+
+#~ msgid "Add Symbol"
+#~ msgstr "Dibanisa Uphawu"
+
+#~ msgid "Add 1x2 Matrix"
+#~ msgstr "Dibanisa 1x2 Indawo apho into ibhekiswe phambili khona"
+
+#~ msgid "Change Char to Symbol"
+#~ msgstr "Itshintsha ichar iyisa Eluphawini"
+
+#, fuzzy
+#~ msgid "Change Char Family"
+#~ msgstr "Itshintsha ichar iyisa Eluphawini"
+
+#, fuzzy
+#~ msgid "Indexed list"
+#~ msgstr "n-ikhona"
+
+#, fuzzy
+#~ msgid "Index"
+#~ msgstr "Ithanda"
+
+#~ msgid "Append Column"
+#~ msgstr "Fakela Umhlathi"
+
+#~ msgid "Append Row"
+#~ msgstr "Fakela Umqolo"
+
+#, fuzzy
+#~ msgid "Add Tabmark"
+#~ msgstr "Dibanisa Igama"
+
+#~ msgid "Remove Enclosing Element"
+#~ msgstr "Susa Ingxenye Evalelweyo"
+
+#~ msgid "Add Index"
+#~ msgstr "Yongeza Isalathisi"
+
+#, fuzzy
+#~ msgid "Numerator"
+#~ msgstr "Umsebenzisi"
+
+#, fuzzy
+#~ msgid "Denominator"
+#~ msgstr "Isahluli"
+
+#~ msgid "Add Negative Thin Space"
+#~ msgstr "Yongeza Isithuba Esincinane Esingane siphumo"
+
+#~ msgid "Add Thin Space"
+#~ msgstr "Yongeza Isithuba Esincinane"
+
+#~ msgid "Add Medium Space"
+#~ msgstr "Yongeza Isithuba Esiphakathi"
+
+#~ msgid "Add Thick Space"
+#~ msgstr "Yongeza Isithuba Esityebileyo"
+
+#~ msgid "Add Quad Space"
+#~ msgstr "Yongeza Isithuba se Quad"
+
+#~ msgid "Add Integral"
+#~ msgstr "Yongeza Yongeza Udibaniso olupheleleyo"
+
+#~ msgid "Add Sum"
+#~ msgstr "Dibanisa Uphawu olupheleyo"
+
+#~ msgid "Add Product"
+#~ msgstr "Dibanisa Imveliso"
+
+#~ msgid "Add Square Bracket"
+#~ msgstr "Yongeza Kwisigweqi Esisikweri"
+
+#~ msgid "Add Curly Bracket"
+#~ msgstr "Dibanisa isigweqi Ejikelezisiweyo"
+
+#~ msgid "Add Abs"
+#~ msgstr "Dibanisa i Abs"
+
+#~ msgid "Add Matrix..."
+#~ msgstr "Dibanisa indawo apho into ibhekiswe phambili khona..."
+
+#~ msgid "Add Upper Left Index"
+#~ msgstr "Dibanisa Isalathisi Esiphezulu Ekhohlo"
+
+#~ msgid "Add Lower Left Index"
+#~ msgstr "Dibanisa Isalathisi Esisezantsi Ekhohlo"
+
+#~ msgid "Add Upper Right Index"
+#~ msgstr "Dibanisa Isalathisi Esiphezulu Ekunene"
+
+#~ msgid "Add Lower Right Index"
+#~ msgstr "Dibanisa Isalathisi Esisezantsi Ekunene"
+
+#~ msgid "Add Upper Index"
+#~ msgstr "Dibanisa Isalathisi Esiphezulu"
+
+#~ msgid "Add Lower Index"
+#~ msgstr "Dibanisa isalathisi Esisezantsi"
+
+#~ msgid "Syntax Highlighting"
+#~ msgstr "Yenza Uphawu Lobeko Ngokwezivakalisi"
+
+#, fuzzy
+#~ msgid "&Bold"
+#~ msgstr "Amagama agqamileyo"
+
+#, fuzzy
+#~ msgid "&Italic"
+#~ msgstr "Okukekeleyo:"
+
+#~ msgid "Right Delimiter"
+#~ msgstr "Umenzi wokwenza okungesosiphelo Osekunene"
+
+#~ msgid "Insert Symbol"
+#~ msgstr "Faka Uphawu"
+
+#~ msgid "Symbol Names"
+#~ msgstr "Amagama Amaphawu"
+
+#~ msgid "Font Family"
+#~ msgstr "Usapho Lohlobo lwamagama"
+
+#, fuzzy
+#~ msgid "Operator"
+#~ msgstr "Umsebenzisi Wehlobo lamagama:"

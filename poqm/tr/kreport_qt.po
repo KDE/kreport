@@ -1,0 +1,4972 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Görkem Çetin <gorkem@kde.org>, 2003.
+# Onur Soysal <e116511@ceng.metu.edu.tr>, 2000.
+# Serdar Cevher <scevher@anet.com.tr>, 2001.
+# obsoleteman <tulliana@gmail.com>, 2008-2009,2012.
+# Volkan Gezer <volkangezer@gmail.com>, 2013-2014, 2015.
+# Emir SARI <emir_sari@icloud.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: calligra-kde4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2022-11-24 17:05+0300\n"
+"Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
+"Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 22.08.3\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "XML dosyası ayrıştırılamadı."
+
+#: common/KReportDesign.cpp:159
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "XML belgesinde hata."
+
+#: common/KReportItemBase.cpp:75
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Ad"
+
+#: common/KReportItemBase.cpp:75
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Nesne Adı"
+
+#: common/KReportItemBase.cpp:78
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Konum"
+
+#: common/KReportItemBase.cpp:79
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Boyut"
+
+#: common/KReportItemBase.cpp:112
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Veri Kaynağı"
+
+#: common/KReportItemLine.cpp:80
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "Başlangıç Konumu"
+
+#: common/KReportItemLine.cpp:81
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Bitiş Konumu"
+
+#: common/KReportItemLine.cpp:83
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "Çizgi Ağırlığı"
+
+#: common/KReportItemLine.cpp:85
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Çizgi Rengi"
+
+#: common/KReportItemLine.cpp:86
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Çizgi Biçemi"
+
+#: common/KReportSectionData.cpp:164
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Bölüm"
+
+#: common/KReportSectionData.cpp:166
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "Yükseklik"
+
+#: common/KReportSectionData.cpp:170
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Arka Plan Rengi"
+
+#: common/KReportUnit.cpp:136
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Geçersiz"
+
+#: common/KReportUnit.cpp:138
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "Milimetre (mm)"
+
+#: common/KReportUnit.cpp:140
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "Santimetre (cm)"
+
+#: common/KReportUnit.cpp:142
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "Desimetre (dm)"
+
+#: common/KReportUnit.cpp:144
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "İnç (in)"
+
+#: common/KReportUnit.cpp:146
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "Pica (pi)"
+
+#: common/KReportUnit.cpp:148
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "Cicero (cc)"
+
+#: common/KReportUnit.cpp:150
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "Nokta (pt)"
+
+#: common/KReportUnit.cpp:152
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "Piksel (px)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr "Desteklenmegen birim"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Çapraz"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr "Kalın"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr "Nokta"
+
+#: items/check/KReportItemCheck.cpp:80
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "Biçem"
+
+#: items/check/KReportItemCheck.cpp:84
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Ön Plan Rengi"
+
+#: items/check/KReportItemCheck.cpp:86
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "Çizgi Ağırlığı"
+
+#: items/check/KReportItemCheck.cpp:88
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Çizgi Rengi"
+
+#: items/check/KReportItemCheck.cpp:89
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Çizgi Biçemi"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Değer"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr "Alana bağlı olmadığında kullanılan değer"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Değer"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr "Alana bağlı olmadığında kullanılan değer"
+
+#: items/field/KReportItemField.cpp:94
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Sol"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Orta"
+
+#: items/field/KReportItemField.cpp:94
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Sağ"
+
+#: items/field/KReportItemField.cpp:96
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Yatay Hizalama"
+
+#: items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "Üst"
+
+#: items/field/KReportItemField.cpp:100
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Alt"
+
+#: items/field/KReportItemField.cpp:102
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Dikey Hizalama"
+
+#: items/field/KReportItemField.cpp:104
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Yazıtipi"
+
+#: items/field/KReportItemField.cpp:106
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Arka Plan Rengi"
+
+#: items/field/KReportItemField.cpp:107
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Ön Plan Rengi"
+
+#: items/field/KReportItemField.cpp:109
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Arka Plan Matlığı"
+
+#: items/field/KReportItemField.cpp:114
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "Çizgi Ağırlığı"
+
+#: items/field/KReportItemField.cpp:116
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Çizgi Rengi"
+
+#: items/field/KReportItemField.cpp:117
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Çizgi Biçemi"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr "Sözcük Kaydır"
+
+#: items/field/KReportItemField.cpp:120
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr "Büyüyebilir"
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr "Klip"
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Esnet"
+
+#: items/image/KReportItemImage.cpp:120
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "Yeniden Boyutlandırma Kipi"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Değer"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr "Alana bağlı olmadığında kullanılan değer"
+
+#: items/label/KReportItemLabel.cpp:91
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Başlık"
+
+#: items/label/KReportItemLabel.cpp:94
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Sol"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Orta"
+
+#: items/label/KReportItemLabel.cpp:94
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Sağ"
+
+#: items/label/KReportItemLabel.cpp:96
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Yatay Hizalama"
+
+#: items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "Üst"
+
+#: items/label/KReportItemLabel.cpp:100
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Alt"
+
+#: items/label/KReportItemLabel.cpp:102
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Dikey Hizalama"
+
+#: items/label/KReportItemLabel.cpp:104
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Yazıtipi"
+
+#: items/label/KReportItemLabel.cpp:106
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Arka Plan Rengi"
+
+#: items/label/KReportItemLabel.cpp:107
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Ön Plan Rengi"
+
+#: items/label/KReportItemLabel.cpp:109
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Arka Plan Matlığı"
+
+#: items/label/KReportItemLabel.cpp:114
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "Çizgi Ağırlığı"
+
+#: items/label/KReportItemLabel.cpp:116
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Çizgi Rengi"
+
+#: items/label/KReportItemLabel.cpp:117
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Çizgi Biçemi"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Değer"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr "Alana bağlı olmadığında kullanılan değer"
+
+#: items/text/KReportItemText.cpp:119
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Sol"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Orta"
+
+#: items/text/KReportItemText.cpp:119
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Sağ"
+
+#: items/text/KReportItemText.cpp:121
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Yatay Hizalama"
+
+#: items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "Üst"
+
+#: items/text/KReportItemText.cpp:125
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Alt"
+
+#: items/text/KReportItemText.cpp:127
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Dikey Hizalama"
+
+#: items/text/KReportItemText.cpp:129
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Yazıtipi"
+
+#: items/text/KReportItemText.cpp:131
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Arka Plan Rengi"
+
+#: items/text/KReportItemText.cpp:132
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Ön Plan Rengi"
+
+#: items/text/KReportItemText.cpp:134
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "Çizgi Ağırlığı"
+
+#: items/text/KReportItemText.cpp:136
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Çizgi Rengi"
+
+#: items/text/KReportItemText.cpp:137
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Çizgi Biçemi"
+
+#: items/text/KReportItemText.cpp:138
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Arka Plan Matlığı"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+"Betik çalıştırılamadı. Hata: %1\n"
+"\n"
+"Sonraki iletileri gizlemek istiyor musunuz?\n"
+"(raporlama açıksa bir sonraki kez iletiler geri yüklenecektir)"
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr ""
+"Betik kodu:\n"
+"%1"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Betik Hatası"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+"Bu rapor \"%1\" türünde betikler içeriyor. Sadece JavaScript ile yazılan "
+"betikler desteklenmektedir. Betiklerin kaybolmasını önlemek için siz onları "
+"değiştirene kadar türleri ve içerikleri değiştirilmeyecektir."
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr "Desteklenmeyen Betik Türü"
+
+#: wrtembed/KReportDesigner.cpp:676
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Sayfa Üstbilgisi (Hepsi)"
+
+#: wrtembed/KReportDesigner.cpp:680
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Sayfa Üstbilgisi (Çift)"
+
+#: wrtembed/KReportDesigner.cpp:684
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Sayfa Üstbilgisi (Tek)"
+
+#: wrtembed/KReportDesigner.cpp:688
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Sayfa Üstbilgisi (İlk)"
+
+#: wrtembed/KReportDesigner.cpp:692
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Sayfa Üstbilgisi (Son)"
+
+#: wrtembed/KReportDesigner.cpp:696
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "Sayfa Altbilgisi (Hepsi)"
+
+#: wrtembed/KReportDesigner.cpp:700
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "Sayfa Altbilgisi (Çift)"
+
+#: wrtembed/KReportDesigner.cpp:704
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "Sayfa Altbilgisi (Tek)"
+
+#: wrtembed/KReportDesigner.cpp:708
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "Sayfa Altbilgisi (İlk)"
+
+#: wrtembed/KReportDesigner.cpp:712
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "Sayfa Altbilgisi (Son)"
+
+#: wrtembed/KReportDesigner.cpp:716
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "Rapor Üstbilgisi"
+
+#: wrtembed/KReportDesigner.cpp:720
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "Rapor Altbilgisi"
+
+#: wrtembed/KReportDesigner.cpp:808
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "Rapor"
+
+#: wrtembed/KReportDesigner.cpp:813
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Başlık"
+
+#: wrtembed/KReportDesigner.cpp:813
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Rapor Başlığı"
+
+#: wrtembed/KReportDesigner.cpp:818
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Sayfa Boyutu"
+
+#: wrtembed/KReportDesigner.cpp:821
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Özel Sayfa Boyutu"
+
+#: wrtembed/KReportDesigner.cpp:825
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "Dikey"
+
+#: wrtembed/KReportDesigner.cpp:825
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "Yatay"
+
+#: wrtembed/KReportDesigner.cpp:827
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "Sayfa Yönelimi"
+
+#: wrtembed/KReportDesigner.cpp:832
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Sayfa Birimi"
+
+#: wrtembed/KReportDesigner.cpp:833
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Izagarayı Göster"
+
+#: wrtembed/KReportDesigner.cpp:834
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Izgaraya Uydur"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr "Izgara Bölümleri"
+
+#: wrtembed/KReportDesigner.cpp:841
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Sol Boşluk"
+
+#: wrtembed/KReportDesigner.cpp:843
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Sağ Boşluk"
+
+#: wrtembed/KReportDesigner.cpp:845
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Üst Boşluk"
+
+#: wrtembed/KReportDesigner.cpp:847
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Alt Boşluk"
+
+#: wrtembed/KReportDesigner.cpp:869
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Nesne Betiği"
+
+#: wrtembed/KReportDesigner.cpp:1067
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Kes"
+
+#: wrtembed/KReportDesigner.cpp:1071
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Kopyala"
+
+#: wrtembed/KReportDesigner.cpp:1076
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Yapıştır"
+
+#: wrtembed/KReportDesigner.cpp:1087
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Sil"
+
+#: wrtembed/KReportDesigner.cpp:1129
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Çizgi"
+
+#: wrtembed/KReportDesigner.cpp:1476
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Çizgi"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr "&Kes"
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr "Seçimi kesip panoya yapıştır"
+
+#: wrtembed/KReportDesigner.cpp:1525
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "Ko&pyala"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr "Seçimi panoya kopyala"
+
+#: wrtembed/KReportDesigner.cpp:1531
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "&Yapıştır"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr "Pano içeriğini yapıştır"
+
+#: wrtembed/KReportDesigner.cpp:1544
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Bölümleri Düzenle"
+
+#: wrtembed/KReportDesigner.cpp:1547
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr "Yükselt"
+
+#: wrtembed/KReportDesigner.cpp:1549
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr "Küçült"
+
+#: wrtembed/KReportDesignerSection.cpp:126
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "Ayrıntı"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Grup Bölümü Düzenleyicisi"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Sütun:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Sırala:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Grup üstbilgisini göster:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Grup altbilgisini göster:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr "Grup altbilgisinden sonra sayfa sonu ekle:"
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr "Tüm raporu seç"
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+"Bir raporun yüzeyinin seçilmesine ve özelliklerinin görülmesine imkan veren "
+"bir düğme."
+
+#: wrtembed/KReportRuler_p.cpp:1472
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "İlk satır girintilemesi"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Sol girinti"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Sağ girinti"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr "Ekle..."
+
+#: wrtembed/KReportSectionEditor.cpp:74
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "Düzenle..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Sil"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Yukarı Taşı"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Aşağı Taşı"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr "Artan"
+
+#: wrtembed/KReportSectionEditor.cpp:312
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr "Azalan"
+
+#: wrtembed/KReportSectionEditor.ui:29
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Rapor başlığını göster"
+
+#: wrtembed/KReportSectionEditor.ui:36
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Rapor dipnotunu göster"
+
+#: wrtembed/KReportSectionEditor.ui:43
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Sayfa Üstbilgisi"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "İlk sayfa:"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Çift sayfalar:"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Tüm sayfalar:"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Son sayfa:"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Tek sayfalar:"
+
+#: wrtembed/KReportSectionEditor.ui:130
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "Sayfa Altbilgisi"
+
+#: wrtembed/KReportSectionEditor.ui:217
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Bölümleri Grupla"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, qt-format
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%​%1"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Sayfa Genişliğine Sığdır"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Sayfayı Sığdır"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr "Şimdiki Pikseller"
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Metin Genişliğine Sığdır"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A3"
+#~ msgstr "A3"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A4"
+#~ msgstr "A4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "A5"
+#~ msgstr "A5"
+
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "US Mektup"
+
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "US Resmi"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "Özel"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B6"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B5"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B4"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "Execute"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "Yürüt"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B0"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B1"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgctxt "KReportPageFormat|"
+#~| msgid "ISO B10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "ISO B10"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B2"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B3"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "Comma"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "Virgül"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "ISO DL"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Folio"
+#~ msgstr "ABD Folyo"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "US Ana Defter"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Tabloid"
+#~ msgstr "ABD Tabloid"
+
+#, fuzzy
+#~| msgid "Postal code:"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "Posta kodu:"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Ekran"
+
+#, fuzzy
+#~| msgctxt "KRPos|"
+#~| msgid "Position"
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "Konum"
+
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "Yükseklik"
+
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Arkaplan Rengi"
+
+#, fuzzy
+#~| msgctxt "KRSize|"
+#~| msgid "Size"
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "Boyut"
+
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Veri Kaynağı"
+
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Veri Kaynağı"
+
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Veri Kaynağı"
+
+#~ msgctxt "Scripting::Text|"
+#~ msgid "$Unable to read %1"
+#~ msgstr "%1 okunamadı"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "ISO A3"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "ISO A4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "ISO A5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "ISO B5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "ABD Yönetici"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "ISO A0"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "ISO A1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "ISO A2"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "ISO A6"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "ISO A7"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "ISO A8"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "ISO A9"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "ISO B0"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "ISO B1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "ISO B2"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "ISO B3"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "ISO B4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "ISO B6"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "ISO C5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Common 10"
+#~ msgstr "ABD Ortak 10"
+
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "Yükseklik"
+
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "Arkaplan Rengi"
+
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Weight"
+#~ msgstr "Çizgi Genişliği"
+
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "Çizgi Rengi"
+
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "Çizgi Biçemi"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Veri Kaynağı"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "Değer"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value used if not bound to a field"
+#~ msgstr "Alana bağlı olmadığında değer kullanılır"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "Arkaplan Rengi"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "Önplan Rengi"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Weight"
+#~ msgstr "Çizgi Genişliği"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "Çizgi Rengi"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "Çizgi Biçemi"
+
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Veri Kaynağı"
+
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "Değer"
+
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value used if not bound to a field"
+#~ msgstr "Alana bağlı olmadığında değer kullanılır"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "Sol"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "Orta"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "Sağ"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Yatay Hizalama"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "Üst"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "Alt"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Dikey Hizalama"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "Yazı Tipi"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "Arkaplan Rengi"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "Önplan Rengi"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "Arka Plan Matlığı"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Weight"
+#~ msgstr "Çizgi Genişliği"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "Çizgi Rengi"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "Çizgi Biçemi"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Veri Kaynağı"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "Değer"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value used if not bound to a field"
+#~ msgstr "Bir alana bağlı olmadığında değer kullanılır"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "Sol"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "Orta"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "Sağ"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Yatay Hizalama"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "Üst"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "Alt"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Dikey Hizalama"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "Yazı Tipi"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "Arkaplan Rengi"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "Önplan Rengi"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Weight"
+#~ msgstr "Çizgi Genişliği"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "Çizgi Rengi"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "Çizgi Biçemi"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "Arkaplan Matlığı"
+
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "Sil"
+
+#~ msgctxt "KoReportDesigner|"
+#~ msgid ""
+#~ "This report is using a script type other than \"javascript\".  To prevent "
+#~ "loosing the script, the type of script will not be changed unless the "
+#~ "script is changed.  Please be aware that the script will not work unless "
+#~ "it is changed to a \"javascript\" script."
+#~ msgstr ""
+#~ "Bu rapor \"javascript\" haricinde bir betik türü kullanır.  Betiğin "
+#~ "kayedilmesini önlemek için betik değiştirilmeden betik türü "
+#~ "değiştirilmeyecektir.  Lütfen betiğin türünü \"javascript\" yapmadığınız "
+#~ "sürece çalışmayacağını unutmayın."
+
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "Betik Yorumlayıcı"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Serdar Soytetir, Ayhan YALÇINSOY"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "tulliana@gmail.com, ayhanyalcinsoy@gmail.com"
+
+#~ msgid "Activate angle snap:"
+#~ msgstr "Açı yakalamayı etkinleştir:"
+
+#~ msgid "Angle Constraints"
+#~ msgstr "Açı Kısıtlamaları"
+
+#~ msgid "Precision:"
+#~ msgstr "Duyarlılık:"
+
+#~ msgctxt "The raw line data"
+#~ msgid "Raw"
+#~ msgstr "Ham"
+
+#~ msgid "Curve"
+#~ msgstr "Kıvrım"
+
+#~ msgid "Straight"
+#~ msgstr "Düz çizgi"
+
+#~ msgid "Optimize"
+#~ msgstr "En iyileştir"
+
+#~ msgid "Exactness:"
+#~ msgstr "Kesinlik:"
+
+#~ msgid "Combine angle:"
+#~ msgstr "Açıyı birleştir:"
+
+#~ msgid "Pencil"
+#~ msgstr "Kalem"
+
+#~ msgid "Invalid database contents. "
+#~ msgstr "Geçersiz veritabanı içeriği. "
+
+#~ msgid "It is a system object."
+#~ msgstr "Bu bir sistem nesnesi."
+
+#~ msgid "Connection already established."
+#~ msgstr "Bağlantı halen kurulu durumda."
+
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr "\"%1\" proje dosyası açılamadı."
+
+#~ msgid "Could not connect to \"%1\" database server."
+#~ msgstr "\"%1\" veritabanı sunucusuna bağlanılamadı."
+
+#~ msgid "Not connected to the database server."
+#~ msgstr "Veritabanı sunucusuna bağlı değil."
+
+#~ msgid "Currently no database is used."
+#~ msgstr "Halen kullanımda olan bir veritabanı yok."
+
+#~ msgid "The database \"%1\" does not exist."
+#~ msgstr "\"%1\" isimli veritabanı yok."
+
+#, fuzzy
+#~| msgid "The database \"%1\" does not exist."
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "\"%1\" isimli veritabanı yok."
+
+#~ msgid "Database file \"%1\" is not readable."
+#~ msgstr "\"%1\" isimli veritabanı dosyası okunamıyor."
+
+#~ msgid "Database file \"%1\" is not writable."
+#~ msgstr "\"%1\" isimli veritabanı dosyası yazılabilir değil."
+
+#~ msgid "Database \"%1\" created but could not be closed after creation."
+#~ msgstr "\"%1\" isimli veritabanı dosyası oluşturuldu ancak kapatılamadı."
+
+#~ msgid "Database \"%1\" already exists."
+#~ msgstr "\"%1\" isimli bir veritabanı zaten var."
+
+#~ msgid ""
+#~ "Cannot create database \"%1\". This name is reserved for system database."
+#~ msgstr ""
+#~ "\"%1\" isimli bir veritabanı oluşturulamaz. Bu isim sistem veritabanı "
+#~ "için ayrılmıştır."
+
+#~ msgid "Error creating database \"%1\" on the server."
+#~ msgstr "\"%1\" isimli veritabanının sunucuda oluşturulması sırasında hata."
+
+#~ msgid "Database \"%1\" created but could not be opened."
+#~ msgstr "\"%1\" isimli veritabanı oluşturuldu ancak açılamadı."
+
+#~ msgid "Opening database \"%1\" failed."
+#~ msgstr "\"%1\" veritabanı açılamadı."
+
+#~ msgid "Database version (%1) does not match Kexi application's version (%2)"
+#~ msgstr ""
+#~ "Veritabanının sürümü (%1) ile Kexi uygulamasının sürümü (%2) uyumsuz."
+
+#~ msgid "Cannot find any database for temporary connection."
+#~ msgstr "Geçici bağlantı için bir veritabanı bulunamadı."
+
+#~ msgid ""
+#~ "Error during starting temporary connection using \"%1\" database name."
+#~ msgstr ""
+#~ "\"%1\" isimli veritabanı kullanılarak yapılan geçici bağlantının "
+#~ "başlatılmasında hata oluştu."
+
+#~ msgid "Cannot delete database - name not specified."
+#~ msgstr "İsim belirlenmediği için veritabanı silinemiyor."
+
+#~ msgid "Cannot delete system database \"%1\"."
+#~ msgstr "Sistem veritabanı \"%1\" silinemiyor."
+
+#~ msgid "Error while executing SQL statement."
+#~ msgstr "SQL cümlesi çalıştırılırken hata."
+
+#~ msgid "Creating table failed."
+#~ msgstr "Tablo oluşturulamadı."
+
+#~ msgid "Cannot create table without fields."
+#~ msgstr "Hiç alanı olmayan bir tablo oluşturulamaz."
+
+#~ msgid "System name \"%1\" cannot be used as table name."
+#~ msgstr "Sisteme ait \"%1\" ismi, tablo ismi olarak belirlenemez."
+
+#~ msgid "System name \"%1\" cannot be used as one of fields in \"%2\" table."
+#~ msgstr ""
+#~ "Sisteme ait \"%1\" ismi, \"%2\" tablosunda bir alan ismi olarak "
+#~ "belirlenemez."
+
+#~ msgid "Could not create the same table \"%1\" twice."
+#~ msgstr "\"%1\" isimli tablo, ikinci kez oluşturulamaz."
+
+#~ msgid "Table \"%1\" already exists."
+#~ msgstr "\"%1\" tablosu zaten mevcut."
+
+#~ msgid "Table \"%1\" does not exist."
+#~ msgstr "\"%1\" isimli bir tablo yok."
+
+#~ msgid "Could not remove object's data."
+#~ msgstr "Nesnedeki veri silinemedi."
+
+#~ msgid "Table \"%1\" cannot be removed.\n"
+#~ msgstr "\"%1\" tablosu silinemedi.\n"
+
+#~ msgid "Unexpected name or identifier."
+#~ msgstr "Kabul edilmeyen isim ya da tanımlayıcı."
+
+#, fuzzy
+#~| msgid "Could not alter table \"%1\" using the same table."
+#~ msgid "Could not alter table \"%1\" using the same table as destination."
+#~ msgstr "Tablo \"%1\" aynı tablo kullanılarak değiştirilemedi."
+
+#, fuzzy
+#~| msgid "Unknown table \"%1\""
+#~ msgid "Unknown table \"%1\"."
+#~ msgstr "Bilinmeyen tablo \"%1\""
+
+#, fuzzy
+#~| msgid "Invalid table name \"%1\""
+#~ msgid "Invalid table name \"%1\"."
+#~ msgstr "\"%1\" Geçersiz bir tablo ismi"
+
+#~ msgid "Could not rename table \"%1\" using the same name."
+#~ msgstr "Tablo \"%1\" aynı isim kullanılarak yeniden adlandırılamadı."
+
+#~ msgid ""
+#~ "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
+#~ msgstr ""
+#~ "\"%1\" tablo ismi, \"%2\" olarak değiştirilemiyor. \"%3\" isimli tablo "
+#~ "zaten var."
+
+#~ msgid "Query \"%1\" does not exist."
+#~ msgstr "\"%1\" sorgusu bulunamadı."
+
+#~ msgid "Transactions are not supported for \"%1\" driver."
+#~ msgstr "Aktarımlar \"%1\" sürücüsü için desteklenmiyor."
+
+#, fuzzy
+#~| msgid "Begin transaction failed"
+#~ msgid "Begin transaction failed."
+#~ msgstr "İşleme (transaction) başlanamadı"
+
+#~ msgid "Transaction already started."
+#~ msgstr "İşlem (transaction) başlatıldı."
+
+#~ msgid "Transaction not started."
+#~ msgstr "İşlem (transaction) başlatılmadı."
+
+#, fuzzy
+#~| msgid "Error on commit transaction"
+#~ msgid "Error on commit transaction."
+#~ msgstr "İşlem gönderme sırasında hata"
+
+#, fuzzy
+#~| msgid "Error on rollback transaction"
+#~ msgid "Error on rollback transaction."
+#~ msgstr "İşlemi geri alma sırasında hata"
+
+#, fuzzy
+#~| msgid "Invalid object name \"%1\""
+#~ msgid "Invalid object name \"%1\"."
+#~ msgstr "\"%1\" geçersiz bir nesne ismi"
+
+#, fuzzy
+#~| msgid "Column %1 does not exist for the query."
+#~ msgid "Column <resource>%1</resource> does not exist in the query."
+#~ msgstr "Sorguda kullanılan %1 sütunu bulunamadı."
+
+#, fuzzy
+#~| msgid "Error while loading extended table schema information."
+#~ msgctxt "Extended schema for a table: loading error"
+#~ msgid "Error while loading extended table schema."
+#~ msgstr "Genişletilmiş tablo şema bilgisi yüklenirken hata oluştu."
+
+#, fuzzy
+#~| msgid "Invalid XML data: "
+#~ msgid "Invalid XML data: %1"
+#~ msgstr "Geçersiz XML verisi: "
+
+#, fuzzy
+#~| msgid ""
+#~| "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~| "XML data: "
+#~ msgid ""
+#~ "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~ "XML data: %4"
+#~ msgstr ""
+#~ "XML verisinde hata: \"%1\", satır %2, sütun %3.\n"
+#~ "XML verisi: "
+
+#~ msgid "Table has no fields defined."
+#~ msgstr "Tabloda hiç alan tanımlanmadı."
+
+#~ msgid ""
+#~ "Could not find definition for query \"%1\". Removing this query is "
+#~ "recommended."
+#~ msgstr ""
+#~ "\"%1\" sorgusunda tanımlama bulunamadı. Bu sorguyu silmeniz önerilir."
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>Could not load definition for query \"%1\". SQL statement for this "
+#~| "query is invalid:<br><tt>%2</tt></p>\n"
+#~| "<p>You can open this query in Text View and correct it.</p>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>Could not load definition for query \"%1\". SQL statement for this "
+#~ "query is invalid: <message>%2</message></para>\n"
+#~ "<para>You can open this query in Text View and correct it.</para>"
+#~ msgstr ""
+#~ "<p> \"%1\" sorgusundaki tanımlamalar yüklenemedi. Sorgudaki SQL cümlesi "
+#~ "geçersiz:<br><tt>%2</tt></p>\n"
+#~ "<p>Sorguyu metin penceresinde açıp düzeltebilirsiniz.</p>"
+
+#~ msgid "Could not update record because there is no master table defined."
+#~ msgstr "Kayıt güncellenemedi çünkü tanımlanmış bir ana tablo yok."
+
+#~ msgid ""
+#~ "Could not update record because master table has no primary key defined."
+#~ msgstr ""
+#~ "Kayıt güncellenemedi çünkü ana tabloda tanımlanmış birincil anahtar yok."
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not update record because it does not contain entire master "
+#~| "table's primary key."
+#~ msgid ""
+#~ "Could not update record because it does not contain entire primary key of "
+#~ "master table."
+#~ msgstr ""
+#~ "Kayıt güncellenemedi çünkü tüm ana tablonun birincil anahtarını içermiyor."
+
+#~ msgid "Primary key's field \"%1\" cannot be empty."
+#~ msgstr "Birincil anahtarın bulunduğu alan \"%1\" boş olamaz."
+
+#~ msgid "Record updating on the server failed."
+#~ msgstr "Sunucuda kayıt güncelleme başarısız oldu."
+
+#, fuzzy
+#~| msgid "Could not insert record because there is no master table defined."
+#~ msgid "Could not insert record because there is no master table specified."
+#~ msgstr "Kayıt eklenemedi çünkü tanımlanmış bir ana tablo yok."
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not insert record because master table has no primary key defined."
+#~ msgid ""
+#~ "Could not insert record because master table has no primary key specified."
+#~ msgstr ""
+#~ "Kayıt eklenemedi çünkü ana tabloda tanımlanmış birincil anahtar yok."
+
+#~ msgid ""
+#~ "Could not insert record because it does not contain entire master table's "
+#~ "primary key."
+#~ msgstr ""
+#~ "Kayıt eklenemedi çünkü tüm ana tablonun birincil anahtarını içermiyor."
+
+#~ msgid "Record inserting on the server failed."
+#~ msgstr "Sunucuda kayıt ekleme  başarısız oldu."
+
+#, fuzzy
+#~| msgid "Could not delete record because there is no master table defined."
+#~ msgid "Could not delete record because there is no master table specified."
+#~ msgstr "Kayıt silinemedi çünkü tanımlanış bir ana tablo yok."
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not delete record because there is no primary key for master table "
+#~| "defined."
+#~ msgid ""
+#~ "Could not delete record because there is no primary key for master table "
+#~ "specified."
+#~ msgstr ""
+#~ "Kayıt silinemedi çünkü ana tablo için tanımlanmış birincil anahtar yok."
+
+#~ msgid ""
+#~ "Could not delete record because it does not contain entire master table's "
+#~ "primary key."
+#~ msgstr ""
+#~ "Kayıt silinemedi çünkü tüm ana tablonun birincil anahtarını içermiyor."
+
+#~ msgid "Record deletion on the server failed."
+#~ msgstr "Sunucuda kayıt silme başarısız oldu."
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Unknown error."
+#~ msgstr "Bilinmeyen hata"
+
+#, fuzzy
+#~| msgid "file"
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "dosya"
+
+#~ msgid "No query statement or schema defined."
+#~ msgstr "Sorgu cümlesi ya da şeması tanımlanmadı."
+
+#~ msgid "Query statement is empty."
+#~ msgstr "Sorgu cümlesi boş."
+
+#~ msgid "Error opening database cursor."
+#~ msgstr "Veritabanı imleci açılırken hata."
+
+#~ msgid "Cannot fetch next record."
+#~ msgstr "Bir sonraki kayda erişilemiyor."
+
+#~ msgid "Could not set value of database property \"%1\"."
+#~ msgstr "\"%1\" veritabanı özelliğinin değeri ayarlanamadı."
+
+#~ msgid "Could not set caption for database property \"%1\"."
+#~ msgstr "\"%1\" veritabanı özelliğinin başlığı ayarlanamadı."
+
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "\"%1\" veritabanı özelliği okunamadı."
+
+#~ msgid "Could not read database properties."
+#~ msgstr "Veritabanı özellikleri okunamadı."
+
+#~ msgid "Invalid database driver's \"%1\" implementation:\n"
+#~ msgstr "\"%1\" geçersiz veritabanı sürücüsü uygulaması:\n"
+
+#~ msgid "Value of \"%1\" is not initialized for the driver."
+#~ msgstr "\"%1\" değeri sürücü için sıfırlanmamış."
+
+#~ msgid "File name expected for file-based database driver."
+#~ msgstr "Dosya tabanlı veritabanı sürücüsü için dosya ismi bekleniyor."
+
+#~ msgid "Client library version"
+#~ msgstr "İstemci kitaplık sürümü"
+
+#~ msgid "Default character encoding on server"
+#~ msgstr "Sunucudaki öntanımlı karakter kodlaması"
+
+#~ msgid "File-based database driver"
+#~ msgstr "Dosya tabanlı veritabanı sürücüsü"
+
+#~ msgid "File-based database's MIME type"
+#~ msgstr "Dosya tabanlı veritabanının MIME türü"
+
+#~ msgid "Single transactions support"
+#~ msgstr "Tek işlem desteği"
+
+#~ msgid "Multiple transactions support"
+#~ msgstr "Çoklu işlem desteği"
+
+#~ msgid "Nested transactions support"
+#~ msgstr "İç içe işlem desteği"
+
+#~ msgid "KexiDB driver version"
+#~ msgstr "KexiDB sürücü sürümü"
+
+#~ msgid "Could not find any database drivers."
+#~ msgstr "Veritabanı sürücüsü bulunamadı."
+
+#~ msgid "Could not find database driver \"%1\"."
+#~ msgstr "\"%1\" veritabanı sürücüsü bulunamadı."
+
+#~ msgid ""
+#~ "Incompatible database driver's \"%1\" version: found version %2, expected "
+#~ "version %3."
+#~ msgstr ""
+#~ "Veritabanı sürücüsünün \"%1\" sürümü uyumsuz: %2 sürümü bulundu, oysa "
+#~ "gereken sürüm %3."
+
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "Veritabanı sürücüsü \"%1\" yüklenemedi."
+
+#, fuzzy
+#~| msgid "Could not find database driver \"%1\"."
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "\"%1\" veritabanı sürücüsü bulunamadı."
+
+#~ msgid "Ambiguous field name"
+#~ msgstr "Şüpheli alan adı"
+
+#, fuzzy
+#~| msgid ""
+#~| "Both table \"%1\" and \"%2\" have defined \"%3\" field. Use "
+#~| "\"<tableName>.%4\" notation to specify table name."
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Both table <resource>%1</resource> and <resource>%2</resource> have "
+#~ "defined <resource>%3</resource> field. Use "
+#~ "<resource><placeholder>tableName</placeholder>.%4</resource> notation to "
+#~ "specify table name."
+#~ msgstr ""
+#~ "\"%1\" ve \"%2\" tablolarının her ikisi de \"%3\" alanını tanımlıyor. "
+#~ "Tablo ismi parametresi \"<tableName>.%4\" kullanarak tablo ismini "
+#~ "belirleyin."
+
+#~ msgid "Field not found"
+#~ msgstr "Alan bulunamadı"
+
+#, fuzzy
+#~| msgid "Table containing \"%1\" field not found"
+#~ msgid "Table containing \"%1\" field not found."
+#~ msgstr "Tablonun içerdiği \"%1\" alanı bulunamadı"
+
+#~ msgid "Could not access the table directly using its name"
+#~ msgstr "İsmini kullananarak tabloya doğrudan ulaşılamıyor."
+
+#, fuzzy
+#~| msgid ""
+#~| "Table \"%1\" is covered by aliases. Instead of \"%2\", you can write "
+#~| "\"%3\""
+#~ msgid ""
+#~ "Table name <resource>%1</resource> is covered by aliases. Instead of "
+#~ "<resource>%2</resource>, you can write <resource>%3</resource>."
+#~ msgstr ""
+#~ "Tablo \"%1\" başka isimle kaydedildi. \"%2\" yerine \"%3\" yazabilirsiniz."
+
+#~ msgid "Table not found"
+#~ msgstr "Tablo bulunamadı"
+
+#~ msgid "Ambiguous \"%1.*\" expression"
+#~ msgstr "\"%1.*\" şüpheli bir ifade."
+
+#, fuzzy
+#~| msgid "More than one \"%1\" table or alias defined"
+#~ msgid "More than one \"%1\" table or alias defined."
+#~ msgstr "\"%1\", birden fazla tablo ismi veya takma isim olarak tanımlandı"
+
+#, fuzzy
+#~| msgid "Table \"%1\" has no \"%2\" field"
+#~ msgid "Table \"%1\" has no \"%2\" field."
+#~ msgstr "\"%1\" tablosunun \"%2\" alanı yok"
+
+#~ msgid "Ambiguous \"%1.%2\" expression"
+#~ msgstr "\"%1.%2\" şüpheli bir ifade"
+
+#, fuzzy
+#~| msgid "More than one \"%1\" table or alias defined"
+#~ msgid "More than one \"%1\" table or alias defined containing \"%2\" field."
+#~ msgstr "\"%1\", birden fazla tablo ismi veya takma isim olarak tanımlandı"
+
+#~ msgid "Byte"
+#~ msgstr "Bayt"
+
+#~ msgid "Short Integer Number"
+#~ msgstr "Kısa Tamsayı"
+
+#~ msgid "Integer Number"
+#~ msgstr "Tamsayı"
+
+#~ msgid "Big Integer Number"
+#~ msgstr "Büyük Tamsayı"
+
+#~ msgid "Yes/No Value"
+#~ msgstr "Evet/Hayır Değeri"
+
+#~ msgid "Date"
+#~ msgstr "Tarih"
+
+#~ msgid "Date and Time"
+#~ msgstr "Tarih ve Saat"
+
+#~ msgid "Time"
+#~ msgstr "Zaman"
+
+#~ msgid "Text"
+#~ msgstr "Metin"
+
+#~ msgid "Long Text"
+#~ msgstr "Uzun Metin"
+
+#~ msgid "Object"
+#~ msgstr "Nesne"
+
+#~ msgid "Invalid Group"
+#~ msgstr "Geçersiz Grup"
+
+#~ msgid "Floating Point Number"
+#~ msgstr "Kayan Nokta Sayısı"
+
+#~ msgid "Yes/No"
+#~ msgstr "Evet/Hayır"
+
+#~ msgid "Date/Time"
+#~ msgstr "Tarih/Saat"
+
+#~ msgid ""
+#~ "You can correct data in this record or use \"Cancel record changes\" "
+#~ "function."
+#~ msgstr ""
+#~ "Bu kayıttaki veriyi düzeltebilir veya \"Kayıt değişikliklerini iptal et\" "
+#~ "fonksiyonunu kullanabilirsiniz."
+
+#~ msgid "Unspecified error encountered"
+#~ msgstr "Tanımlanamayan hatayla karşılaşıldı"
+
+#~ msgid "identifier was expected"
+#~ msgstr "tanımlayıcı gerekli"
+
+#, fuzzy
+#~| msgid "\"%1\" is a reserved keyword"
+#~ msgid "\"%1\" is a reserved keyword."
+#~ msgstr "\"%1\" Kexi'ye ayrılmış bir ifade. "
+
+#, fuzzy
+#~| msgid "Syntax Error"
+#~ msgid "Syntax error."
+#~ msgstr "Söz Dizimi Hatası"
+
+#~ msgid "Error"
+#~ msgstr "Hata"
+
+#, fuzzy
+#~| msgid "Syntax Error near \"%1\""
+#~ msgid "Error near \"%1\"."
+#~ msgstr "\"%1\" ifadesi içinde sözdizimi hatası"
+
+#, fuzzy
+#~| msgid "No query statement or schema defined."
+#~ msgid "No query statement specified."
+#~ msgstr "Sorgu cümlesi ya da şeması tanımlanmadı."
+
+#, fuzzy
+#~| msgid "\"*\" could not be used if no tables are specified"
+#~ msgid "\"*\" could not be used if no tables are specified."
+#~ msgstr "Eğer tablo belirlenmezse, \"*\" kullanılabilir."
+
+#, fuzzy
+#~| msgid "Invalid alias definition for column \"%1\""
+#~ msgid "Invalid alias definition for column \"%1\"."
+#~ msgstr "Sütun \"%1\" için geçersiz isim tanımlama"
+
+#, fuzzy
+#~| msgid "Invalid \"%1\" column definition"
+#~ msgid "Invalid \"%1\" column definition."
+#~ msgstr "\"%1\" geçersiz bir sütun tanımlaması"
+
+#, fuzzy
+#~| msgid "Could not define sorting - no column at position %1"
+#~ msgid "Could not define sorting - no column at position %1."
+#~ msgstr "Sıralama tanımlanamıyor - %1 konumunda sütun yok"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not define sorting - column name or alias \"%1\" does not exist"
+#~ msgid ""
+#~ "Could not define sorting - column name or alias \"%1\" does not exist."
+#~ msgstr "Sıralama tanımlanamıyor - \"%1\" isminde bir sütun yok"
+
+#~ msgctxt ""
+#~ "short for 'expression' word, e.g. 'expr' (only latin letters, please, no "
+#~ "'.')"
+#~ msgid "expr"
+#~ msgstr "expr"
+
+#~ msgid "Database driver name"
+#~ msgstr "Veritabanı sürücüsü adı"
+
+#~ msgid "Database user name"
+#~ msgstr "Veritabanı kullanıcı adı"
+
+#, fuzzy
+#~| msgid "Prompt for password"
+#~ msgid "Prompts for password"
+#~ msgstr "Parola istemcisi"
+
+#~ msgid "Host (server) name"
+#~ msgstr "Sunucu adı (Host)"
+
+#~ msgid "Server's port number"
+#~ msgstr "Sunucunun port numarası"
+
+#~ msgid "Server's local socket filename"
+#~ msgstr "Sunucunun yerel soket dosya ismi"
+
+#~ msgid "Enter password for %1: "
+#~ msgstr "%1 için parola girin: "
+
+#~ msgid "\"%1\" column requires a value to be entered."
+#~ msgstr "\"%1\" sütunu bir değer girilmesini gerektiriyor."
+
+#~ msgid "The column's constraint is declared as NOT NULL."
+#~ msgstr "Sütunun kısıtı NOT NULL olarak belirtilmiş."
+
+#~ msgid "The column's constraint is declared as NOT EMPTY."
+#~ msgstr "Sütunun kısıtı NOT EMPTY olarak belirtilmiş."
+
+#~ msgid "Record inserting failed."
+#~ msgstr "Kayıt ekleme başarısız oldu."
+
+#~ msgid "Record changing failed."
+#~ msgstr "Kayıt güncelleme başarısız oldu."
+
+#~ msgid "Record deleting failed."
+#~ msgstr "Kayıt silme başarısız oldu."
+
+#~ msgid "Message from server:"
+#~ msgstr "Sunucudan gelen mesaj:"
+
+#~ msgid "SQL statement:"
+#~ msgstr "SQL ifadesi:"
+
+#~ msgid "Server result:"
+#~ msgstr "Sunucu sonucu:"
+
+#~ msgid "Test Connection"
+#~ msgstr "Bağlantı Testi"
+
+#, fuzzy
+#~| msgid "<qt>Testing connection to <b>%1</b> database server...</qt>"
+#~ msgid "Testing connection to <resource>%1</resource> database server..."
+#~ msgstr "<qt><b>%1</b> veritabanı sunucusuna bağlantı sınanıyor...</qt>"
+
+#~ msgid ""
+#~ "<qt>Test connection to <b>%1</b> database server failed. The server is "
+#~ "not responding.</qt>"
+#~ msgstr ""
+#~ "<qt><b>%1</b> veritabanı sunucusuna bağlantı başarısız. Sunucu cevap "
+#~ "vermiyor</qt>"
+
+#~ msgid ""
+#~ "<qt>Test connection to <b>%1</b> database server established successfully."
+#~ "</qt>"
+#~ msgstr ""
+#~ "<qt><b>%1</b> veritabanı sunucusuyla bağlantı başarıyla kuruldu.</qt>"
+
+#~ msgid "Number"
+#~ msgstr "Numara"
+
+#~ msgid "Image"
+#~ msgstr "Resim"
+
+#~ msgid "\"%1\" value has to be entered."
+#~ msgstr "\"%1\" değeri girilmeli."
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr "Bağlantıyı Değiştir"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr "Parametreyi değiştir"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "Yola Dönüştür"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Combine paths"
+#~ msgstr "Yolları birleştir"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move control point"
+#~ msgstr "Denetim noktasını taşı"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set fill rule"
+#~ msgstr "Doldurma kuralını ayarla"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "Nokta ekle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "Noktaları birleştir"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move points"
+#~ msgstr "Noktaları taşı"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove points"
+#~ msgstr "Noktaları kaldır"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set point type"
+#~ msgstr "Nokta türünü ayarla"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reverse paths"
+#~ msgstr "Yolları tersine çevir"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath"
+#~ msgstr "Alt yolu ayır"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to lines"
+#~ msgstr "Dilimleri satırlara değiştir"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set marker"
+#~ msgstr "İşaretleyiciyi Ayarla"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Align shapes"
+#~ msgstr "Şekilleri yerleştir"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr "Arkaplanı ayarla"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Clip Shape"
+#~ msgstr "Şekli Tut"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr "Şekil oluştur"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shape"
+#~ msgid_plural "Delete shapes"
+#~ msgstr[0] "Şekli sil"
+#~ msgstr[1] "Şekilleri sil"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Distribute shapes"
+#~ msgstr "Şekilleri dağıt"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr "Şekilleri grupla"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add shapes to group"
+#~ msgstr "Gruba şekil ekle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Keep Aspect Ratio"
+#~ msgstr "Görünüm Oranını Koru"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Lock shapes"
+#~ msgstr "Şekilleri kilitle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move shapes"
+#~ msgstr "Şekillleri taşı"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr "Şekil yeniden adlandır"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reorder shapes"
+#~ msgstr "Şekilleri yeniden sırala"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Shadow"
+#~ msgstr "Gölgeyi Ayarla"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Shear shapes"
+#~ msgstr "Kayma şekilleri"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Resize shapes"
+#~ msgstr "Şekilleri yeniden boyutlandır"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr "Saydamlığı ayarla"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shape"
+#~ msgstr "Şekli Bırak"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shapes"
+#~ msgstr "Şekilleri Bırak"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr "Şekillerin gruplamasını kaldır"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Close subpath"
+#~ msgstr "Alt yolları kapat"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Join subpaths"
+#~ msgstr "Alt yolları birleştir"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove subpath"
+#~ msgstr "Alt yolu sil"
+
+#~ msgid "Standard"
+#~ msgstr "Standart"
+
+#~ msgid "Lines"
+#~ msgstr "Çizgiler"
+
+#~ msgid "Type:"
+#~ msgstr "Tür:"
+
+#~ msgid "Tie"
+#~ msgstr "Bağ"
+
+#~ msgid "A connection between two other shapes"
+#~ msgstr "Diğer iki şekil arasında bağlantı"
+
+#~ msgid "Shows or hides grid"
+#~ msgstr "Izgarayı gizler veya gösterir"
+
+#~ msgid "Simple path shape"
+#~ msgstr "Basit yol şekli"
+
+#~ msgid "A simple path shape"
+#~ msgstr "Basit bir yol şekli"
+
+#~ msgid "%1 Options"
+#~ msgstr "%1 Seçenekler"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Shapes"
+#~ msgstr "Şekilleri Yapıştır"
+
+#~ msgid "Active tool: %1"
+#~ msgstr "Etkin araç: %1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "Resmi Yapıştır"
+
+#~ msgid "Nodes"
+#~ msgstr "Düğümler"
+
+#~ msgid "Extension of lines"
+#~ msgstr "Çizgilerin uzantısı"
+
+#~ msgid " px"
+#~ msgstr " px"
+
+#~ msgid "Orthogonal"
+#~ msgstr "Dikey"
+
+#~ msgid "Intersection of lines"
+#~ msgstr "Çizgilerin kesişimi"
+
+#~ msgid "Guide lines"
+#~ msgstr "Kılavuz çizgileri"
+
+#~ msgid "Embedded svg shape"
+#~ msgstr "Gömülü svg şekli"
+
+#~ msgid "Create object"
+#~ msgstr "Nesne oluştur"
+
+#~ msgid "Pan"
+#~ msgstr "Kaydırma"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Segment"
+#~ msgstr "Dilimi Değiştir"
+
+#~ msgid "Corner point"
+#~ msgstr "Köşe noktası"
+
+#~ msgid "Smooth point"
+#~ msgstr "Düz nokta"
+
+#~ msgid "Symmetric Point"
+#~ msgstr "Simetrik Nokta"
+
+#~ msgid "Make curve point"
+#~ msgstr "Kıvrım noktası oluştur"
+
+#~ msgid "Make line point"
+#~ msgstr "Çizgi noktası oluştur"
+
+#~ msgid "Insert point"
+#~ msgstr "Nokta ekle"
+
+#~ msgid "Remove point"
+#~ msgstr "Nokta kaldır"
+
+#~ msgid "Merge points"
+#~ msgstr "Noktaları birleştir"
+
+#~ msgid "To Path"
+#~ msgstr "Yola"
+
+#~ msgid "Line/Curve"
+#~ msgstr "Çizgi/Kıvrım"
+
+#~ msgid "Drag to move handle."
+#~ msgstr "Tutamağı taşımak için sürükleyin."
+
+#~ msgid "Drag to move control point."
+#~ msgstr "Denetim noktasını taşımak için sürükle."
+
+#~ msgid ""
+#~ "Drag to change curve directly. Double click to insert new path point."
+#~ msgstr ""
+#~ "Eğriyi doğrudan değiştirmek için sürükleyin. Yeni yol noktası eklemek "
+#~ "için çift tıklayın."
+
+#~ msgid "Press B to break path at selected point."
+#~ msgstr "Seçilen noktadan yola ara vermek için B tuşuna bas."
+
+#~ msgid "Press B to break path at selected segments."
+#~ msgstr "Seçilen kesimlerdeki yolu sonlandırmak için B'ye basın."
+
+#~ msgid "Zoom"
+#~ msgstr "Büyüt"
+
+#~ msgid "Zoom In"
+#~ msgstr "Büyüt"
+
+#~ msgid "Zoom Out"
+#~ msgstr "Küçült"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Convert To Path"
+#~ msgstr "Yola Dönüştür"
+
+#~ msgid "Scripts"
+#~ msgstr "Betikler"
+
+#~ msgid "Script Manager"
+#~ msgstr "Betik Yöneticisi"
+
+#~ msgid "Execute Script File..."
+#~ msgstr "Betik Dosyası Çalıştır..."
+
+#~ msgid "Script Manager..."
+#~ msgstr "Betik Yöneticisi..."
+
+#~ msgid "Execute Script File"
+#~ msgstr "Betik Dosyası Çalıştır"
+
+#~ msgid "Install Script Package"
+#~ msgstr "Betik Paketi Yükle"
+
+#~ msgid "Could not read the package \"%1\"."
+#~ msgstr "\"%1\" paketi okunamadı."
+
+#~ msgid "The package \"%1\" does not contain a valid install.rc file."
+#~ msgstr "\"%1\" paketi geçerli bir install.rc dosyası içermiyor."
+
+#~ msgid "Failed to parse the install.rc file at package \"%1\"."
+#~ msgstr "\"%1\" paketindeki install.rc dosyası ayrıştırılamadı."
+
+#~ msgid "Replace"
+#~ msgstr "Değiştir"
+
+#~ msgid ""
+#~ "Could not uninstall this script package. You may not have sufficient "
+#~ "permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Bu betik paketi kaldırılamadı. \"%1\" klasörünü silmek için yeterli "
+#~ "izinlere sahip olmayabilirsiniz."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\" since the script is not "
+#~ "installed."
+#~ msgstr "\"%1\" betik paketi kurulu olmadığından kaldırılamadı."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\". You may not have "
+#~ "sufficient permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "\"%1\" betik paketi kaldırılamadı. \"%1\" klasörünü silmek için yeterli "
+#~ "izinlere sahip olmayabilirsiniz."
+
+#~ msgid "Save"
+#~ msgstr "Kaydet"
+
+#~ msgid ""
+#~ "<qt>This wizard will guide you through the proccess of adding a new "
+#~ "resource to your scripts.</qt>"
+#~ msgstr ""
+#~ "<qt>Bu sihirbaz betiklerinize yeni kaynak eklerken size yol gösterecektir."
+#~ "</qt>"
+
+#~ msgid "Add script file"
+#~ msgstr "Betik dosyası ekle"
+
+#~ msgid "Add collection folder"
+#~ msgstr "Koleksiyon dizini ekle"
+
+#~ msgid "Install script package file"
+#~ msgstr "Betik paketi dosyası yükle"
+
+#~ msgid "Install online script package"
+#~ msgstr "Çevrimiçi betik paketi yükle"
+
+#~ msgid "Add"
+#~ msgstr "Ekle"
+
+#~ msgid "Script"
+#~ msgstr "Betik"
+
+#~ msgid "Collection"
+#~ msgstr "Koleksiyon"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master slide"
+#~ msgstr "Kılavuz slaytı değiştir"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master page"
+#~ msgstr "Kılavuz sayfayı değiştir"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "Sayfa Yerleşimini Düzenle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display master background"
+#~ msgstr "Kılavuz arkaplanı göster"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display slide background"
+#~ msgstr "Slayt arkaplanını göster"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display page background"
+#~ msgstr "Sayfa arkaplanını göster"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Show master shapes"
+#~ msgstr "Kılavuz şekilleri göster"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Hide master shapes"
+#~ msgstr "Kılavuz şekilleri gizle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] "Slaytı sil"
+#~ msgstr[1] "Slaytları sil"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "Sayfayı sil"
+#~ msgstr[1] "Sayfaları sil"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr "Slayt ekle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr "Sayfa ekle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "Slaytı taşı"
+#~ msgstr[1] "Slaytları taşı"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] "Sayfayı taşı"
+#~ msgstr[1] "Sayfaları taşı"
+
+#~ msgid "Configure"
+#~ msgstr "Yapılandır"
+
+#~ msgid "Misc"
+#~ msgstr "Diğer"
+
+#~ msgid "Grid"
+#~ msgstr "Izgara"
+
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "Belge"
+
+#~ msgid "Document Settings"
+#~ msgstr "Belge Ayarları"
+
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "Yazar"
+
+#~ msgid "Author"
+#~ msgstr "Yazar"
+
+#~ msgid "Select a master slide design:"
+#~ msgstr "Bir kılavuz slayt tasarımı seç:"
+
+#~ msgid "Master Slide"
+#~ msgstr "Kılavuz Slayt"
+
+#~ msgid "Select a master page design:"
+#~ msgstr "Bir kılavuz sayfa tasarımı seç:"
+
+#~ msgid "Master Page"
+#~ msgstr "Kılavuz Sayfa"
+
+#~ msgid "Slide %1"
+#~ msgstr "Slayt %1"
+
+#~ msgid "Page  %1"
+#~ msgstr "Sayfa %1"
+
+#~ msgid "Layer"
+#~ msgstr "Katman"
+
+#~ msgid "Group"
+#~ msgstr "Grup"
+
+#~ msgid "Shape"
+#~ msgstr "Şekil"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "Slaytı Yeniden Adlandır"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "Sayfayı Yeniden Adlandır"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "Katmanı Yeniden Adlandır"
+
+#~ msgid "Slide"
+#~ msgstr "Slayt"
+
+#~ msgid "Visible"
+#~ msgstr "Görünür"
+
+#~ msgid "Locked"
+#~ msgstr "Kilitli"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reparent shapes"
+#~ msgstr "Şekilleri tekrar bağlantılandır"
+
+#~ msgid "&Move Here"
+#~ msgstr "Buraya &Taşı"
+
+#~ msgid "&Copy Here"
+#~ msgstr "&Buraya Kopyala"
+
+#~ msgid "C&ancel"
+#~ msgstr "İ&ptal"
+
+#~ msgid "Document"
+#~ msgstr "Belge"
+
+#~ msgid "Add a new slide or layer"
+#~ msgstr "Yeni bir slayt ya da katman ekle"
+
+#~ msgid "Add a new page or layer"
+#~ msgstr "Yeni bir sayfa ya da katman ekle"
+
+#~ msgid "Page"
+#~ msgstr "Sayfa"
+
+#~ msgid "Delete selected objects"
+#~ msgstr "Seçili nesneleri sil"
+
+#~ msgid "Raise selected objects"
+#~ msgstr "Seçili nesneleri üste al"
+
+#~ msgid "Lower selected objects"
+#~ msgstr "Seçili nesneleri alta gönder"
+
+#~ msgid "Minimal View"
+#~ msgstr "En Küçük Görünüm"
+
+#~ msgid "Detailed View"
+#~ msgstr "Ayrıntılı Görünüm"
+
+#~ msgid "Thumbnail View"
+#~ msgstr "Küçük Resim Görünümü"
+
+#~ msgid "View mode"
+#~ msgstr "Görünüm kipi"
+
+#~ msgid "Enter the name of the new layer:"
+#~ msgstr "Yeni katmanın adını girin:"
+
+#~ msgid "New Layer"
+#~ msgstr "Yeni Katman"
+
+#~ msgid "New layer"
+#~ msgstr "Yeni Katman"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "Katman Oluştur"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "Katmanı Sil"
+
+#~ msgid "Could not delete all layers. At least one layer is required."
+#~ msgstr "Tüm katmanlar silinemedi. En az bir katman gerekli."
+
+#~ msgid "Error deleting layers"
+#~ msgstr "Katman silme hatası"
+
+#~ msgid "Add a new slide"
+#~ msgstr "Yeni bir slayt ekle"
+
+#~ msgid "Add a new page"
+#~ msgstr "Yeni bir sayfa ekle"
+
+#~ msgid "Page %1"
+#~ msgstr "Sayfa %1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] "Slaytı Yapıştır"
+#~ msgstr[1] "Slaytları Yapıştır"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] "Sayfayı Yapıştır"
+#~ msgstr[1] "Sayfaları Yapıştır"
+
+#~ msgid "Tools"
+#~ msgstr "Araçlar"
+
+#~ msgid "D&elete"
+#~ msgstr "&Sil"
+
+#~ msgid "Show Master Pages"
+#~ msgstr "Ana Sayfaları Göster"
+
+#~ msgid "Show Rulers"
+#~ msgstr "Cetveli Göster"
+
+#~ msgid "Show/hide the view's rulers"
+#~ msgstr "Görünümün kılavuzlarını göster/gizle"
+
+#~ msgid "Insert Page"
+#~ msgstr "Sayfa Al"
+
+#~ msgid "Insert a new page after the current one"
+#~ msgstr "Şimdiki sayfadan sonra bir sayfa ekle"
+
+#~ msgid "Copy Page"
+#~ msgstr "Sayfayı Kopyala"
+
+#~ msgid "Copy the current page"
+#~ msgstr "Geçerli sayfayı kopyala"
+
+#~ msgid "Delete Page"
+#~ msgstr "Sayfayı Sil"
+
+#~ msgid "Delete the current page"
+#~ msgstr "Geçerli sayfayı sil"
+
+#~ msgid "Master Page..."
+#~ msgstr "Kılavuz Sayfa..."
+
+#~ msgid "Page Layout..."
+#~ msgstr "Sayfa Düzeni..."
+
+#~ msgid "Variable"
+#~ msgstr "Değişken"
+
+#~ msgid "Import Document..."
+#~ msgstr "İçeriye Belge Aktar..."
+
+#~ msgid "Configure..."
+#~ msgstr "Yapılandır..."
+
+#~ msgid "Import Slideshow"
+#~ msgstr "İçeriye Slayt Gösterisi Aktar"
+
+#~ msgid "Import Document"
+#~ msgstr "Belgeyi Al"
+
+#~ msgid ""
+#~ "Could not import\n"
+#~ "%1"
+#~ msgstr ""
+#~ "İçeriye aktarılmadı\n"
+#~ "%1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr "Sayfa düzenini değiştir"
+
+#~ msgid "Set image ..."
+#~ msgstr "Resmi ayarla..."
+
+#~ msgid "Background"
+#~ msgstr "Arkaplan"
+
+#~ msgid "Page Background"
+#~ msgstr "Sayfa Arkaplanı"
+
+#~ msgid "Page Design"
+#~ msgstr "Sayfa Tasarımı"
+
+#~ msgid "Slide Design"
+#~ msgstr "Slayt Tasarımı"
+
+#~ msgid "Use background of master page"
+#~ msgstr "Kılavuz sayfanın arkaplanını kullan"
+
+#~ msgid "Use background of master slide"
+#~ msgstr "Kılavuz slaytın arkaplanını kullan"
+
+#~ msgid "Display shapes of master page"
+#~ msgstr "Kılavuz sayfanın şekillerini göster"
+
+#~ msgid "Display shapes of master slide"
+#~ msgstr "Kılavuz slaytın şekillerini göster"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change slide background image"
+#~ msgstr "Slayt arkaplan resmini değiştir"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page background image"
+#~ msgstr "Sayfa arkaplan resmini değiştir"
+
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "Kılavuz Slayt %1/%2"
+
+#~ msgid "Slide %1/%2"
+#~ msgstr "Slayt %1/%2"
+
+#~ msgid "Master Page %1/%2"
+#~ msgstr "Kılavuz Sayfa %1/%2"
+
+#~ msgid "Page %1/%2"
+#~ msgstr "Sayfa %1/%2"
+
+#, fuzzy
+#~| msgid "Check"
+#~ msgid "Check Box"
+#~ msgstr "İşaretle"
+
+#~ msgid "Field"
+#~ msgstr "Alan"
+
+#~ msgid "Label"
+#~ msgstr "Etiket"
+
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgid "Section Editor"
+#~ msgstr "Bölüm Düzenleyici"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "Listeyi Değiştir"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "Stilleri Değiştir"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "Sil"
+
+#~ msgid "Key Press"
+#~ msgstr "Basılacak Tuş"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "Metin"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "Sütun Sil"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "Satırı Sil"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "Alıntı Ekle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr "Sonnot Ekle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Right"
+#~ msgstr "Sağa Sütun Ekle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr "Sola Sütun Ekle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Below"
+#~ msgstr "Aşağı Satır Ekle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "Yukarıya Satır Ekle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List Numbering"
+#~ msgstr "Liste Numaralandırmasını Değiştir"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "Biçim"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Direct Paragraph Formatting"
+#~ msgstr "Doğrudan Paragraf Biçimlendirmesi"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr "Sütun Genişliğini Ayarla"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Row Height"
+#~ msgstr "Satır Yüksekliğini Ayarla"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "Metin olarak Yapıştır"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "Yapıştır"
+
+#~ msgid "Index Reference"
+#~ msgstr "Dizin Referansı"
+
+#~ msgid "Text Reference"
+#~ msgstr "Metin Referansı"
+
+#~ msgid "Please create an index to reference first."
+#~ msgstr "Lütfen önce referans için bir indeks oluşturun."
+
+#~ msgid "Select the index you want to reference"
+#~ msgstr "Başvurmak istediğiniz indeksi seçin"
+
+#~ msgid "Found 1 match"
+#~ msgid_plural "Found %1 matches"
+#~ msgstr[0] "%1 eşleşme bulundu"
+#~ msgstr[1] "%1 eşleşme bulundu"
+
+#~ msgid "Found no match"
+#~ msgstr "Elşeşme bulunamadı"
+
+#~ msgid ""
+#~ "Found no match\n"
+#~ "\n"
+#~ "No text was replaced"
+#~ msgstr ""
+#~ "Hiç eşleşme bulunmadı\n"
+#~ "\n"
+#~ "Hiç metin değiştirilmedi"
+
+#~ msgid "1 replacement made"
+#~ msgid_plural "%1 replacements made"
+#~ msgstr[0] "1 değiştirme yapıldı"
+#~ msgstr[1] "%1 değiştirme yapıldı"
+
+#~ msgid "Replace %1 with %2?"
+#~ msgstr "%1 ögesi %2 ile değiştirilsin mi?"
+
+#, fuzzy
+#~| msgid "Group Sections"
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "Bölümleri grupla"
+
+#~ msgctxt "Underline Style"
+#~ msgid "None"
+#~ msgstr "Hiçbiri"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "Tek"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "Çift"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "New Paragraph"
+#~ msgstr "Yeni Paragraf"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "Yer İmi Ekle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "Bilgi Notu Ekle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "Dizin Ekle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "Değişken Ekle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "Sonlandırıcı Ekle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "Tablo Ekle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "Hücreleri Birleştir"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "Hücreleri Ayır"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr "Tablo Genişliğini Ayarla"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Border Formatting"
+#~ msgstr "Kenar Biçimlendirmesini Değiştir"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "İçindekiler Ekle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr "İçindekiler Tablosunu Düzenle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Kaynakça girişi ekle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "Alıntı Ekle"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Typing"
+#~ msgstr "Yazıyor"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr "Kalın"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "Yatık"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "Altı Çizili"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr "Üzeri Çizili"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr "Hizalamayı Değiştir"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr "Dikey Hizalamayı Ayarla"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "Girintiyi Azalt"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "Girintiyi Büyüt"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "Yazı tipi boyutunu küçült"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "Yazı tipi boyutunu büyüt"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr "Yazı Tipini Ayarla"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr "Yazı Tipi Boyutunu Ayarla"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr "Arkaplan Rengini Ayarla"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Text Color"
+#~ msgstr "Metin Rengini Ayarla"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr "Karakter Biçimlendirmesini Ayarla"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Paragraph Style"
+#~ msgstr "Paragraf Biçimlendirmesini Ayarla"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "Biçim"
+
+#~ msgid "Default"
+#~ msgstr "Öntanımlı"
+
+#~ msgctxt "Default text for undo action"
+#~ msgid "Undo"
+#~ msgstr "Geri Al"
+
+#~ msgid "Undo %1"
+#~ msgstr "Geri Al %1"
+
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "Yinele"
+
+#~ msgid "Redo %1"
+#~ msgstr "Yinele %1"
+
+#, fuzzy
+#~| msgid "Empty"
+#~ msgid "<empty>"
+#~ msgstr "Boş"
+
+#~ msgid "Redo"
+#~ msgstr "Yinele"
+
+#~ msgid "Undo"
+#~ msgstr "Geri Al"
+
+#~ msgid "&File"
+#~ msgstr "&Dosya"
+
+#~ msgid "&Settings"
+#~ msgstr "&Ayarlar"
+
+#~ msgid "File"
+#~ msgstr "Dosya"
+
+#~ msgid "Add new author profile (starts out as a copy of current)"
+#~ msgstr "Yeni yazar profili ekle (mevcut olanın bir kopyasıyla başlar)"
+
+#~ msgid "Delete the author profile"
+#~ msgstr "Yazar Profilini Sil"
+
+#~ msgid "Default Author Profile"
+#~ msgstr "Öntanımlı Yazar Profili"
+
+#~ msgid "Name (not duplicate or blank name):"
+#~ msgstr "İsim (tekrarlı veya boş isim değil):"
+
+#~ msgid "Name of Profile"
+#~ msgstr "Profil adı"
+
+#~ msgid "Name:"
+#~ msgstr "İsim:"
+
+#~ msgid "Initials:"
+#~ msgstr "Baş harfler:"
+
+#~ msgid "Title:"
+#~ msgstr "Başlık:"
+
+#~ msgid "Position:"
+#~ msgstr "Konum:"
+
+#~ msgid "Company:"
+#~ msgstr "Şirket:"
+
+#~ msgid "Email:"
+#~ msgstr "E-posta:"
+
+#~ msgid "Telephone (home):"
+#~ msgstr "Telefon (ev):"
+
+#~ msgid "Telephone (work):"
+#~ msgstr "Telefon (iş):"
+
+#~ msgid "Fax:"
+#~ msgstr "Faks:"
+
+#~ msgid "Street:"
+#~ msgstr "Sokak:"
+
+#~ msgid "City:"
+#~ msgstr "Şehir:"
+
+#~ msgid "Country:"
+#~ msgstr "Ülke:"
+
+#~ msgid "No autosave"
+#~ msgstr "Otomatik kayıt yok"
+
+#~ msgctxt "unit symbol for minutes, leading space as separator"
+#~ msgid " min"
+#~ msgstr " asgari"
+
+#~ msgid "Autosave interval:"
+#~ msgstr "Otomatik kaydetme aralığı:"
+
+#~ msgid "Create backup file:"
+#~ msgstr "Yedekleme dosyası oluştur:"
+
+#~ msgid "Show grid:"
+#~ msgstr "Izgarayı göster:"
+
+#~ msgid "Snap to grid:"
+#~ msgstr "Izgaraya uydur:"
+
+#~ msgid "Grid color:"
+#~ msgstr "Izgara rengi:"
+
+#~ msgid "Spacing"
+#~ msgstr "Aralıklandırma"
+
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "&Yatay:"
+
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "&Dikey:"
+
+#~ msgid "Units:"
+#~ msgstr "Birimler:"
+
+#~ msgid "Paste at Cursor:"
+#~ msgstr "İmleç konumuna yapıştır:"
+
+#~ msgid "Only print and exit"
+#~ msgstr "Sadece yazdır ve çık"
+
+#~ msgid "Open a new document with a template"
+#~ msgstr "Yeni bir belgeyi şablon ile aç"
+
+#~ msgid "Override display DPI"
+#~ msgstr "Ekran DPI değerinin üzerine yaz"
+
+#~ msgid "Only export to PDF and exit"
+#~ msgstr "Sadece PDF olarak dışarıya aktar ve çık"
+
+#~ msgid "Load a file and save it as an ODF file. Meant for debugging."
+#~ msgstr ""
+#~ "Bir dosya yükle ve onu ODF dosyası olarak kaydet. Hata ayıklama için "
+#~ "tasarlanmıştır."
+
+#~ msgid "Calligra"
+#~ msgstr "Calligra"
+
+#~ msgid ""
+#~ "You are running a 32 bits build on a 64 bits Windows.\n"
+#~ "This is not recommended.\n"
+#~ "Please download and install the x64 build instead."
+#~ msgstr ""
+#~ "64 bir Windows üzerinde 32 bit dosyalar çalıştırıyorsunuz.\n"
+#~ "Bu önerilmemektedir.\n"
+#~ "Lütfen bunun yerine x64 dosyalarını indirin ve kurun."
+
+#~ msgid "%1: Critical Error"
+#~ msgstr "%1: Kritik Hata"
+
+#~ msgid "No template found for: %1"
+#~ msgstr "Bunun için bir şablon bulunamadı: %1"
+
+#~ msgid "Too many templates found for: %1"
+#~ msgstr "%1 için çok fazla şablon bulundu"
+
+#~ msgid "Template %1 failed to load."
+#~ msgstr "%1 şablonu yüklenemedi."
+
+#~ msgctxt "@title:window"
+#~ msgid "Recover Files"
+#~ msgstr "Dosyaları Kurtar"
+
+#~ msgid "The following autosave file can be recovered:"
+#~ msgstr "Aşağıdaki otomatik kaydetme dosyası kurtarılabilir:"
+
+#~ msgid "The following autosave files can be recovered:"
+#~ msgstr "Aşağıdaki otomatik kaydetme dosyaları kurtarılabilir:"
+
+#~ msgid "Always use this template at application start up"
+#~ msgstr "Uygulama başlatılırken her zaman bu şablonu kullan"
+
+#~ msgid "Always use this template"
+#~ msgstr "Her zaman bu şablonu kullan"
+
+#~ msgid "Making backup..."
+#~ msgstr "Yedekleme yapılıyor..."
+
+#~ msgid "Saving..."
+#~ msgstr "Kaydediliyor..."
+
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Kaydedilemiyor:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Kaydedilemiyor:%1\n"
+#~ "Gerekçe: %2"
+
+#~ msgid "Document <i>%1</i> saved"
+#~ msgstr "<i>%1</i> belgesi kaydedildi"
+
+#~ msgid ""
+#~ "The password of this encrypted document is not known. Autosave aborted! "
+#~ "Please save your work manually."
+#~ msgstr ""
+#~ "Bu şifrelenmiş belgenin parolası bilinmiyor. Otomatik kaydetme iptal "
+#~ "edildi! Lütfen elle kaydedin."
+
+#~ msgid "Autosaving..."
+#~ msgstr "Otomatik kaydediliyor..."
+
+#~ msgid "Error during autosave! Partition full?"
+#~ msgstr "Otomatik kaydetme sırasında hata! Disk bölümü dolu olabilir mi?"
+
+#~ msgid "Could not create the file for saving"
+#~ msgstr "Dosya kaydetmek için oluşturulamadı"
+
+#~ msgid "Not able to write '%1'. Partition full?"
+#~ msgstr "'%1' yazılamadı. Disk bölümü dolu olabilir mi?"
+
+#~ msgid "Not able to write RDF metadata. Partition full?"
+#~ msgstr "RDF verisi yazılamaz. Disk bölümü dolu olabilir mi?"
+
+#~ msgid "Error while trying to write '%1'. Partition full?"
+#~ msgstr "'%1' yazılırken hata oluştu. Disk bölümü dolu olabilir mi?"
+
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Bozuk URL\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "An autosaved file exists for this document.\n"
+#~ "Do you want to open it instead?"
+#~ msgstr ""
+#~ "Bu belge için otomatik olarak kaydedilen bir dosya var.\n"
+#~ "Diğer bir seçenek olarak bunu açmak ister misiniz?"
+
+#~ msgid "The file %1 does not exist."
+#~ msgstr "%1 dosyası bulunamadı."
+
+#~ msgid "Opening Document"
+#~ msgstr "Belge Açılıyor"
+
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "Filtre eklentisi oluşturulamadı"
+
+#~ msgid "File not found"
+#~ msgstr "Dosya bulunamadı"
+
+#~ msgid "Cannot create storage"
+#~ msgstr "Depolama oluşturulamadı"
+
+#~ msgid "Bad MIME type"
+#~ msgstr "Kötü MIME türü"
+
+#~ msgid "Format not recognized"
+#~ msgstr "Biçim tanınamadı"
+
+#~ msgid "Not implemented"
+#~ msgstr "Özellik henüz eklenmedi"
+
+#~ msgid "Parsing error"
+#~ msgstr "Ayrıştırma hatası"
+
+#~ msgid "Document is password protected"
+#~ msgstr "Belge parola korumalı"
+
+#~ msgid "Invalid file format"
+#~ msgstr "Geçersiz dosya biçimi"
+
+#~ msgid "Internal error"
+#~ msgstr "İç hata"
+
+#~ msgid "Out of memory"
+#~ msgstr "Yetersiz bellek"
+
+#~ msgid "Unknown error"
+#~ msgstr "Bilinmeyen hata"
+
+#~ msgid "Document <i>%1</i> loaded"
+#~ msgstr "<i>%1</i> belgesi yüklendi"
+
+#~ msgid "Could not find %1"
+#~ msgstr "%1 bulunamıyor"
+
+#~ msgid ""
+#~ "Parsing error in %1 at line %2, column %3\n"
+#~ "Error message: %4"
+#~ msgstr ""
+#~ "%1 dosyasında %2. satır, %3. sütunda ayrıştırma hatası\n"
+#~ "Hata İletisi: %4"
+
+#~ msgid "%1 is not a file."
+#~ msgstr "%1 geçerli bir dosya değil."
+
+#~ msgid "Could not open the file for reading (check read permissions)."
+#~ msgstr "Dosya okumak için açılamadı (okuma izinlerini kontrol edin)."
+
+#~ msgid "Could not read the beginning of the file."
+#~ msgstr "Dosyanın başlangıcı okunamadı."
+
+#~ msgid ""
+#~ "parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Dosyadaki %1. satır, %2. sütunda ayırma hatası\n"
+#~ "Hata Mesajı: %3"
+
+#~ msgid "Not a valid Calligra file: %1"
+#~ msgstr "Geçerli bir Calligra dosyası değil: %1"
+
+#~ msgid "Invalid document: no file 'maindoc.xml'."
+#~ msgstr "Geçersiz belge: 'maindoc.xml' dosyası yok"
+
+#~ msgid ""
+#~ "Document <i>%1</i> contains several versions. Go to File->Versions to "
+#~ "open an old version."
+#~ msgstr ""
+#~ "<i>%1</i> belgesi birkaç sürüm içeriyor. Eski sürümleri açmak için Dosya-"
+#~ "> Sürümler menüsüne gidin."
+
+#~ msgid "Untitled"
+#~ msgstr "Başlıksız"
+
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr ""
+#~ "<p><b>'%1'</b> adlı belge değiştirildi.</p><p>Kaydetmek ister misiniz?</p>"
+
+#~ msgid "Internal error: saveXML not implemented"
+#~ msgstr "İç hata: saveXML desteklenmiyor"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Açılamıyor:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "%1 dosyası açılamıyor\n"
+#~ "Gerekçe: %2"
+
+#~ msgid "a word processing"
+#~ msgstr "bir kelime işlemci belgesi"
+
+#~ msgid "a spreadsheet"
+#~ msgstr "bir heasp tablosu"
+
+#~ msgid "a presentation"
+#~ msgstr "bir sunum"
+
+#~ msgid "a chart"
+#~ msgstr "bir çizelge"
+
+#~ msgid "a drawing"
+#~ msgstr "bir çizim"
+
+#~ msgid "Close Document"
+#~ msgstr "Belgeyi Kapat"
+
+#~ msgid "%1 %"
+#~ msgstr "%1 %"
+
+#~ msgid "No"
+#~ msgstr "Hayır"
+
+#~ msgid "Yes"
+#~ msgstr "Evet"
+
+#~ msgid "Could not export file."
+#~ msgstr "Dosya aktarılamadı."
+
+#~ msgid "Missing Export Filter"
+#~ msgstr "Dışa Aktarma Süzgeci Eksik"
+
+#~ msgid ""
+#~ "Could not import file of type\n"
+#~ "%1"
+#~ msgstr ""
+#~ "%1\n"
+#~ "türünde dosya içe aktarılamıyor"
+
+#~ msgid "Missing Import Filter"
+#~ msgstr "İçe Aktarma Süzgeci Eksik"
+
+#~ msgid "Choose Filter"
+#~ msgstr "Seç"
+
+#~ msgid "Case Sensitive"
+#~ msgstr "Büyük ve Küçük Harf Duyarlı"
+
+#~ msgid "Match only whole words"
+#~ msgstr "Sadece tam sözcük eşleşenler"
+
+#~ msgid "Whole Words Only"
+#~ msgstr "Sadece Tüm Kelimeler"
+
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "Bul:"
+
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "Sonraki"
+
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "Önceki"
+
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "Seçenekler"
+
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "Değiştir:"
+
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "Değiştir"
+
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "Tümünü Değiştir"
+
+#~ msgctxt "Total number of matches"
+#~ msgid "1 match found"
+#~ msgid_plural "%1 matches found"
+#~ msgstr[0] "1 eşleşen bulundu"
+#~ msgstr[1] "%1 eşleşen bulundu"
+
+#~ msgid "No matches found"
+#~ msgstr "Eşleşen arama yok"
+
+#~ msgid "%1 unsaved document (%2)"
+#~ msgstr "%1 kaydedilmemiş belge (%2)"
+
+#~ msgid "Export as PDF..."
+#~ msgstr "PDF olarak &Aktar..."
+
+#~ msgid "Reload"
+#~ msgstr "Yeniden Yükle"
+
+#~ msgid "Versions..."
+#~ msgstr "Sürümler..."
+
+#~ msgid "E&xport..."
+#~ msgstr "&Aktar..."
+
+#~ msgid "&New View"
+#~ msgstr "&Yeni Görünüm"
+
+#~ msgid "Document Information"
+#~ msgstr "Belge Bilgisi"
+
+#~ msgid "Full Screen Mode"
+#~ msgstr "Tam Ekran Kipi"
+
+#, fuzzy
+#~| msgid "Show %1 Toolbar"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "%1 Araç Çubuğunu Göster"
+
+#~ msgid "(write protected)"
+#~ msgstr "(yazma korumalı)"
+
+#~ msgid "Save as %1"
+#~ msgstr "Farklı kaydet %1"
+
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "Bilinmeyen dosya türü %1"
+
+#~ msgid ""
+#~ "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
+#~ "want to save in this format?</qt>"
+#~ msgstr ""
+#~ "<qt>%1 olarak kaydetmek biçimlendirmede bazı kayıplara neden olabilir."
+#~ "<p>Hala bu biçimde kaydetmek istiyor musunuz?</qt>"
+
+#~ msgid "Confirm Save"
+#~ msgstr "Kaydetmeyi Onayla"
+
+#~ msgid ""
+#~ "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you "
+#~ "still want to export to this format?</qt>"
+#~ msgstr ""
+#~ "<qt>%1 olarak dışa aktarmak biçimlendirmede bazı kayıplara neden olabilir."
+#~ "<p>Hala bu biçimde dışa aktarmak istiyor musunuz?</qt>"
+
+#~ msgid "Confirm Export"
+#~ msgstr "Aktarmayı Onayla"
+
+#~ msgid "untitled"
+#~ msgstr "başlıksız"
+
+#~ msgid "Open Document"
+#~ msgstr "Belge Aç"
+
+#~ msgid "Export as PDF"
+#~ msgstr "PDF Olarak Dışa Aktar"
+
+#~ msgid "Cannot export to the specified file"
+#~ msgstr "Belirtilen dosya dışa aktarılamadı"
+
+#~ msgid "Document - %1"
+#~ msgstr "Belge - %1"
+
+#~ msgid ""
+#~ "You will lose all changes made since your last save\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "Son kayetmenizden bu yana yapılan tüm değişiklikleri kaybedeceksiniz\n"
+#~ "Devam etmek istiyor musunuz?"
+
+#~ msgid "Warning"
+#~ msgstr "Uyarı"
+
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "%1 Araç Çubuğunu Göster"
+
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "%1 Araç Çubuğunu Gizle"
+
+#~ msgid "Recent Documents"
+#~ msgstr "Son Kullanılan Belgeler"
+
+#~ msgid "Custom Document"
+#~ msgstr "Özel Belge"
+
+#~ msgid "Stop"
+#~ msgstr "Dur"
+
+#~ msgid "Printing"
+#~ msgstr "Yazdırma"
+
+#~ msgid "Printing done"
+#~ msgstr "Yazdırma tamamlandı"
+
+#~ msgid "Close"
+#~ msgstr "Kapat"
+
+#~ msgid "Stopped"
+#~ msgstr "Durdu"
+
+#~ msgid "Open This Document"
+#~ msgstr "Bu Belgeyi Aç"
+
+#~ msgctxt "File modification date and time. %1 is date time"
+#~ msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Değiştirilme zamanı:</b></td><td>%1</td></tr>"
+
+#~ msgctxt "File access date and time. %1 is date time"
+#~ msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Erişilme zamanı:</b></td><td>%1</td></tr>"
+
+#~ msgid "Show Guides"
+#~ msgstr "Kılavuzları Göster"
+
+#~ msgid "Shows or hides guides"
+#~ msgstr "Kılavuzları gösterir veya gizler"
+
+#~ msgid "Create Template"
+#~ msgstr "Şablon Oluştur"
+
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "İsim:"
+
+#~ msgid "Group:"
+#~ msgstr "Grup:"
+
+#~ msgid "&Add Group..."
+#~ msgstr "&Grup Ekle..."
+
+#~ msgid "&Remove"
+#~ msgstr "&Kaldır"
+
+#~ msgid "Picture"
+#~ msgstr "Resim"
+
+#~ msgid "&Preview"
+#~ msgstr "&Önizleme:"
+
+#~ msgid "Custom:"
+#~ msgstr "Özel:"
+
+#~ msgid "&Select..."
+#~ msgstr "&Seç..."
+
+#~ msgid "Use the new template as default"
+#~ msgstr "Yeni şablonu öntanımlı olarak kullan"
+
+#~ msgid "Use the new template every time %1 starts"
+#~ msgstr "%1 her başlatıldığında yeni şablonu kullan"
+
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr "Varolan '%1' şablonunun üstüne gerçekten yazmak istiyor musunuz?"
+
+#~ msgid "Add Group"
+#~ msgstr "Grup Ekle"
+
+#~ msgid "Enter group name:"
+#~ msgstr "Bir grup ismi girin:"
+
+#~ msgid "This name is already used."
+#~ msgstr "Bu isim zaten kullanılıyor."
+
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "Bu grubu gerçekten kaldırmak istiyor musunuz?"
+
+#~ msgid "Remove Group"
+#~ msgstr "Grubu Kaldır"
+
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "Bu şablonu gerçekten kaldırmak istiyor musunuz?"
+
+#~ msgid "Remove Template"
+#~ msgstr "Şablonu Kaldır"
+
+#~ msgid "&Delete"
+#~ msgstr "&Sil"
+
+#~ msgid "No picture available."
+#~ msgstr "Ulaşılabilir resim yok."
+
+#~ msgid "Use This Template"
+#~ msgstr "Bu Şablonu Kullan"
+
+#~ msgid "Version"
+#~ msgstr "Sürüm"
+
+#~ msgid "Date & Time"
+#~ msgstr "Tarih ve Saat"
+
+#~ msgid "Saved By"
+#~ msgstr "Kaydeden"
+
+#~ msgid "Comment"
+#~ msgstr "Açıklama"
+
+#~ msgid "&Add"
+#~ msgstr "&Ekle"
+
+#~ msgid "&Modify"
+#~ msgstr "&Düzenle"
+
+#~ msgid "&Open"
+#~ msgstr "&Aç"
+
+#~ msgid "A new version could not be added"
+#~ msgstr "Yeni bir sürüm eklenemedi"
+
+#~ msgid "Date: %1"
+#~ msgstr "Tarih: %1"
+
+#~ msgid "Active Author Profile"
+#~ msgstr "Etkin Yazar Profili"
+
+#~ msgctxt "choice for author profile"
+#~ msgid "Anonymous"
+#~ msgstr "Anonim"
+
+#~ msgid "Unknown"
+#~ msgstr "Bilinmeyen"
+
+#~ msgid ""
+#~ "This document contains an unknown checksum. When you give a password it "
+#~ "might not be verified."
+#~ msgstr ""
+#~ "Dosya bilinmeyen imza özeti barındırıyor. Parola girdiğinizde "
+#~ "doğrulanamayabilir."
+
+#~ msgid ""
+#~ "This document contains an unknown encryption method. Some parts may be "
+#~ "unreadable."
+#~ msgstr ""
+#~ "Belge bilinmeyen bir şifreleme yöntemi içeriyor. Bazı bölümleri "
+#~ "okunamayabilir."
+
+#~ msgid ""
+#~ "This document contains incomplete encryption data. Some parts may be "
+#~ "unreadable."
+#~ msgstr ""
+#~ "Belge tamamlanmamış şifreli veri içeriyor. Bazı bölümleri okunamayabilir."
+
+#~ msgid ""
+#~ "The manifest file seems to be corrupted. It cannot be modified and the "
+#~ "document will remain unreadable. Please try and save the document again "
+#~ "to prevent losing your work."
+#~ msgstr ""
+#~ "Bildirim dosyası bozuk görünüyor. Belge değiştirilemeyeceğinden okunamaz "
+#~ "kalacaktır. Lütfen çalışmanızın kaybolmaması için belgenizi kaydetmeyi "
+#~ "tekrar deneyin."
+
+#~ msgid ""
+#~ "The manifest file cannot be written. The document will remain unreadable. "
+#~ "Please try and save the document again to prevent losing your work."
+#~ msgstr ""
+#~ "Bildirim dosyasına yazılamıyor. Belge okunamaz kalacak. Lütfen "
+#~ "çalışmanızın kaybolmaması için belgenizi kaydetmeyi tekrar deneyin."
+
+#~ msgid "Please enter the password to open this file."
+#~ msgstr "Lütfen bu belgeyi açmak için parolayı girin."
+
+#~ msgid "Please enter the password to encrypt the document with."
+#~ msgstr "Lütfen belgeyi şifrelemek istediğiniz parolayı girin."
+
+#~ msgid "Do you want to save the password?"
+#~ msgstr "Parolayı gerçekten kaydetmek istiyor musunuz?"
+
+#~ msgid "No store backend"
+#~ msgstr "Kaydetme arka ucu yok"
+
+#~ msgid ""
+#~ "Parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Ana belge içerisinde %1. satır, %2. sütunda ayrıştırma hatası\n"
+#~ "Hata İletisi: %3"
+
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "Ekran"
+
+#~ msgid "The directory mode is not supported for remote locations."
+#~ msgstr "Uzak konumlar için dizin kipi desteklenmiyor."
+
+#~ msgid "Calligra Storage"
+#~ msgstr "Calligra Depolaması"
+
+#~ msgid "Clear"
+#~ msgstr "Temizle"
+
+#~ msgid "Subtract"
+#~ msgstr "Çıkart"
+
+#~ msgid "Multiply"
+#~ msgstr "Çarp"
+
+#~ msgid "Alpha mask"
+#~ msgstr "Alpha maskesi"
+
+#~ msgid "Alpha"
+#~ msgstr "Alpha"
+
+#~ msgid "Lightness"
+#~ msgstr "Açıklık"
+
+#~ msgid "a*"
+#~ msgstr "a*"
+
+#~ msgid "b*"
+#~ msgstr "b*"
+
+#~ msgid "Blue"
+#~ msgstr "Yeşil"
+
+#~ msgid "Green"
+#~ msgstr "Yeşil"
+
+#~ msgid "Red"
+#~ msgstr "Kırmızı"
+
+#~ msgid "Alpha darken"
+#~ msgstr "Alpha karart"
+
+#~ msgid "Dissolve"
+#~ msgstr "Çözünme"
+
+#~ msgid "Erase"
+#~ msgstr "Sil"
+
+#~ msgid "Normal"
+#~ msgstr "Normal"
+
+#~ msgid "Overlay"
+#~ msgstr "Üstüne Bindir"
+
+#~ msgid "Grain Merge"
+#~ msgstr "Tane Birleştirme"
+
+#~ msgid "Grain Extract"
+#~ msgstr "Tane Çıkarma"
+
+#~ msgid "Geometric Mean"
+#~ msgstr "Geometrik Ortalama"
+
+#~ msgid "Parallel"
+#~ msgstr "Paralel"
+
+#~ msgid "Lighten"
+#~ msgstr "Aydınlat"
+
+#~ msgid "Hard Light"
+#~ msgstr "Şiddetli Işık"
+
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "Yumuşak Işık (SVG)"
+
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "Yumuşak Işık (Photoshop)"
+
+#~ msgid "Darken"
+#~ msgstr "Karart"
+
+#~ msgid "Addition"
+#~ msgstr "Toplama"
+
+#~ msgid "Divide"
+#~ msgstr "Böl"
+
+#~ msgid "Difference"
+#~ msgstr "Fark"
+
+#~ msgid "Exclusion"
+#~ msgstr "Çıkartım"
+
+#~ msgid "Equivalence"
+#~ msgstr "Eşitlik"
+
+#~ msgid "Color"
+#~ msgstr "Renk"
+
+#~ msgid "Hue"
+#~ msgstr "Renk"
+
+#~ msgid "Saturation"
+#~ msgstr "Doygunluk"
+
+#~ msgid "Increase Saturation"
+#~ msgstr "Doygunluğu Arttır"
+
+#~ msgid "Decrease Saturation"
+#~ msgstr "Doygunluğu Azalt"
+
+#~ msgid "Luminosity"
+#~ msgstr "Parlaklık"
+
+#~ msgid "Increase Luminosity"
+#~ msgstr "Parlaklığı Arttır"
+
+#~ msgid "Decrease Luminosity"
+#~ msgstr "Parlaklığı Azalt"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgid "Darker Color"
+#~ msgstr "Arkaplan Rengi"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgid "Lighter Color"
+#~ msgstr "Çizgi Rengi"
+
+#~ msgid "Color HSI"
+#~ msgstr "Renk HSI"
+
+#~ msgid "Hue HSI"
+#~ msgstr "Renk HSI"
+
+#~ msgid "Saturation HSI"
+#~ msgstr "Doygunluk HSI"
+
+#~ msgid "Increase Saturation HSI"
+#~ msgstr "Doygunluk HSI Artır"
+
+#~ msgid "Decrease Saturation HSI"
+#~ msgstr "Doygunluk HSI Azalt"
+
+#~ msgid "Intensity"
+#~ msgstr "Yoğunluk"
+
+#~ msgid "Increase Intensity"
+#~ msgstr "Yoğunluğu Arttır"
+
+#~ msgid "Decrease Intensity"
+#~ msgstr "Yoğunluğu Azalt"
+
+#~ msgid "Color HSL"
+#~ msgstr "Renk HSL"
+
+#~ msgid "Hue HSL"
+#~ msgstr "Renk HSL"
+
+#~ msgid "Saturation HSL"
+#~ msgstr "Doygunluk HSL"
+
+#~ msgid "Increase Saturation HSL"
+#~ msgstr "Doygunluk HSL Arttır"
+
+#~ msgid "Decrease Saturation HSL"
+#~ msgstr "Doygunluk HSL Azalt"
+
+#~ msgid "Increase Lightness"
+#~ msgstr "Açıklığı Arttır"
+
+#~ msgid "Decrease Lightness"
+#~ msgstr "Açıklığı Azalt"
+
+#~ msgid "Color HSV"
+#~ msgstr "Renk HSV"
+
+#~ msgid "Hue HSV"
+#~ msgstr "Renk HSV"
+
+#~ msgid "Saturation HSV"
+#~ msgstr "Doygunluk HSV"
+
+#~ msgid "Increase Saturation HSV"
+#~ msgstr "Doygunluk HSV Arttır"
+
+#~ msgid "Decrease Saturation HSV"
+#~ msgstr "Doygunluk HSV Azalt"
+
+#~ msgid "Increase Value"
+#~ msgstr "Değeri Arttır"
+
+#~ msgid "Decrease Value"
+#~ msgstr "Değeri Azalt"
+
+#~ msgid "Generic RGB Histogram"
+#~ msgstr "Genel RGB Sütun Grafiği"
+
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "G"
+#~ msgstr "G"
+
+#~ msgid "L*a*b* Histogram"
+#~ msgstr "L*a*b* Sütun Grafiği"
+
+#~ msgid "L*"
+#~ msgstr "L*"
+
+#~ msgid "Generic L*a*b* Histogram"
+#~ msgstr "Genel  L*a*b* Sütun Grafiği"
+
+#~ msgid "RGB"
+#~ msgstr "RGB"
+
+#~ msgid "XYZ"
+#~ msgstr "XYZ"
+
+#~ msgid "CMYK"
+#~ msgstr "CMYK"
+
+#~ msgid "Grayscale"
+#~ msgstr "Gri tonlama"
+
+#~ msgid "Grayscale (without transparency)"
+#~ msgstr "Gri tonlama (şeffaflık olmadan)"
+
+#~ msgid "YCbCr"
+#~ msgstr "YCbCr"
+
+#~ msgid "8 Bits"
+#~ msgstr "8 Bit"
+
+#~ msgid "16 Bits"
+#~ msgstr "16 Bit"
+
+#~ msgid "16 Bits Float"
+#~ msgstr "16 Bit Float"
+
+#~ msgid "32 Bits Float"
+#~ msgstr "32 Bit Float"
+
+#~ msgid "64 Bits Float"
+#~ msgstr "64 Bit Float"
+
+#~ msgid "Arithmetic"
+#~ msgstr "Aritmetik"
+
+#~ msgid "Negative"
+#~ msgstr "Negatif"
+
+#~ msgid "HSY"
+#~ msgstr "HSY"
+
+#~ msgid "HSI"
+#~ msgstr "HSI"
+
+#~ msgid "HSL"
+#~ msgstr "HSL"
+
+#~ msgid "HSV"
+#~ msgstr "HSV"
+
+#~ msgid "Mix"
+#~ msgstr "Karışım"
+
+#~ msgid "Alpha Darken"
+#~ msgstr "Alpha Karart"
+
+#~ msgid "Bumpmap"
+#~ msgstr "Bumpmap"
+
+#~ msgid "SVG Gradient"
+#~ msgstr "SVG Derecesi"
+
+#~ msgid "Reference"
+#~ msgstr "Referans"
+
+#~ msgctxt "statement is an Rdf related term"
+#~ msgid "<qt>Edits will be lost.<p>There is %1 invalid statement left.</qt>"
+#~ msgid_plural ""
+#~ "<qt>Edits will be lost.<p>There are %1 invalid statements left.</qt>"
+#~ msgstr[0] "<qt>Düzenlemeler kaybolacak.<p>%1 geçersiz ifade kaldı.</qt>"
+#~ msgstr[1] "<qt>Düzenlemeler kaybolacak.<p>%1 geçersiz ifade kaldı.</qt>"
+
+#~ msgctxt "statement is an Rdf related term"
+#~ msgid "Discard invalid statements?"
+#~ msgstr "Geçersiz ifadeler silinsin mi?"
+
+#~ msgid "Rdf"
+#~ msgstr "Rdf"
+
+#~ msgid "Triples"
+#~ msgstr "Üçlü"
+
+#~ msgid "new"
+#~ msgstr "yeni"
+
+#~ msgid "copy"
+#~ msgstr "kopyala"
+
+#~ msgid "delete"
+#~ msgstr "sil"
+
+#~ msgid "Namespaces"
+#~ msgstr "İsimlendirmeler"
+
+#~ msgid "Prefix"
+#~ msgstr "Önek"
+
+#~ msgid "Namespace"
+#~ msgstr "İsimlendirme (namespace)"
+
+#~ msgid "Semantic"
+#~ msgstr "Anlamsal"
+
+#~ msgid "SPARQL"
+#~ msgstr "SPARQL"
+
+#, fuzzy
+#~| msgid ""
+#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
+#~| "TR/REC-html40/strict.dtd\">\n"
+#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~| "css\">\n"
+#~| "p, li { white-space: pre-wrap; }\n"
+#~| "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~| "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\"># Insert your SPARQL query here<br /"
+#~| "># Results are shown below.</span></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">prefix rdf:  &lt;http://www.w3."
+#~| "org/1999/02/22-rdf-syntax-ns#&gt; </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">prefix foaf: &lt;http://xmlns.com/"
+#~| "foaf/0.1/&gt; </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">prefix pkg:  &lt;http://docs.oasis-"
+#~| "open.org/opendocument/meta/package/common#&gt; </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">prefix geo84: &lt;http://www.w3."
+#~| "org/2003/01/geo/wgs84_pos#&gt;</span></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">select ?s ?p ?o </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">where { </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\"> ?s ?p ?o </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">}</span></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p></body></html>"
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"># Insert your SPARQL query here<br /"
+#~ "># Results are shown below.</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix rdf:  &lt;http://www.w3."
+#~ "org/1999/02/22-rdf-syntax-ns#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix foaf: &lt;http://xmlns.com/"
+#~ "foaf/0.1/&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix pkg:  &lt;http://docs.oasis-"
+#~ "open.org/ns/office/1.2/meta/pkg#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix geo84: &lt;http://www.w3."
+#~ "org/2003/01/geo/wgs84_pos#&gt;</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">select ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">where { </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"> ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">}</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"># SPARQL sorgularınızı buraya "
+#~ "yazın<br /># Sonuçlar aşağıda gösterilmektedir.</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix rdf:  &lt;http://www.w3."
+#~ "org/1999/02/22-rdf-syntax-ns#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix foaf: &lt;http://xmlns.com/"
+#~ "foaf/0.1/&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix pkg:  &lt;http://docs.oasis-"
+#~ "open.org/opendocument/meta/package/common#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix geo84: &lt;http://www.w3."
+#~ "org/2003/01/geo/wgs84_pos#&gt;</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">select ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">where { </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"> ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">}</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p></body></html>"
+
+#~ msgid "Stylesheets"
+#~ msgstr "Biçim sayfaları"
+
+#~ msgid "Apply Stylesheet"
+#~ msgstr "Stil Dosyasını Uygula"
+
+#~ msgid "System"
+#~ msgstr "Sistem"
+
+#~ msgid "User"
+#~ msgstr "Kullanıcı"
+
+#~ msgid "Reapply Current"
+#~ msgstr "Mevcudu Yeniden Uygula"
+
+#~ msgid "Edit %1"
+#~ msgstr "Düzenle %1"
+
+#~ msgid "Stylesheet Definition"
+#~ msgstr "Biçim Sayfası Tanımlaması"
+
+#~ msgid "Variables Available"
+#~ msgstr "Mevcut Değişkenler"
+
+#~ msgid "Description"
+#~ msgstr "Açıklama"
+
+#~ msgid "Empty"
+#~ msgstr "Boş"
+
+#~ msgid "URI"
+#~ msgstr "URI"
+
+#~ msgid "Blank"
+#~ msgstr "Boş"
+
+#~ msgid "Valid"
+#~ msgstr "Geçerli"
+
+#~ msgid "Subject"
+#~ msgstr "Konu"
+
+#~ msgid "Obj Type"
+#~ msgstr "Nesne Türü"
+
+#~ msgid "DataType"
+#~ msgstr "VeriTürü"
+
+#~ msgid "Stored In"
+#~ msgstr "Kaydedildi"
+
+#~ msgid "Invalid integer number"
+#~ msgstr "Geçersiz tamsayı"
+
+#~ msgid "This integer number may be too large."
+#~ msgstr "Tamsayı çok büyük olabilir."
+
+#~ msgid "Invalid identifier"
+#~ msgstr "Geçersiz tanımlayıcı"
+
+#~ msgid "Identifiers should start with a letter or '_' character"
+#~ msgstr "Tanımlayıcılar harfle veya '_' ile başlayabilirler"
+
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "Hiçbiri"
+
+#~ msgid "Small Bullet"
+#~ msgstr "Küçük Madde İmi"
+
+#~ msgid "Circle Bullet"
+#~ msgstr "Yuvarlak Madde İmi"
+
+#~ msgid "Square Bullet"
+#~ msgstr "Kare Madde İmi"
+
+#~ msgid "Rhombus Bullet"
+#~ msgstr "Eşkenar Dörtgen Madde İmi"
+
+#~ msgid "Check Mark Bullet"
+#~ msgstr "Onaylama Madde İmi"
+
+#~ msgid "Rightwards Arrow Bullet"
+#~ msgstr "Sağa Ok Madde İmi"
+
+#~ msgid "Arabic"
+#~ msgstr "Arapça"
+
+#~ msgid "Lower Alphabetical"
+#~ msgstr "Küçük Alfabetik"
+
+#~ msgid "Upper Alphabetical"
+#~ msgstr "Büyük Alfabetik"
+
+#~ msgid "Upper Roman"
+#~ msgstr "Büyük harf Roman"
+
+#~ msgid "Large Bullet"
+#~ msgstr "Büyük Madde İmi"
+
+#~ msgid "Ballot X Bullet"
+#~ msgstr "Oylama X Madde İmi"
+
+#~ msgid "Rightwards Arrow Head Bullet"
+#~ msgstr "Sağa Doğru Ok Başı Madde İmi"
+
+#~ msgid "Bengali"
+#~ msgstr "Bengalce"
+
+#~ msgid "Gujarati"
+#~ msgstr "Gujarat Dili"
+
+#~ msgid "Gurumukhi"
+#~ msgstr "Gurumukhi"
+
+#~ msgid "Kannada"
+#~ msgstr "Kannada Dili"
+
+#~ msgid "Malayalam"
+#~ msgstr "Malay Dili"
+
+#~ msgid "Oriya"
+#~ msgstr "Oriya Dili"
+
+#~ msgid "Tamil"
+#~ msgstr "Tamil Dili"
+
+#~ msgid "Telugu"
+#~ msgstr "Telugu"
+
+#~ msgid "Tibetan"
+#~ msgstr "Tibetçe"
+
+#~ msgid "Thai"
+#~ msgstr "Tay Dili"
+
+#~ msgid "Abjad"
+#~ msgstr "Abjad"
+
+#~ msgid "AbjadMinor"
+#~ msgstr "AbjadMinor"
+
+#~ msgid "ArabicAlphabet"
+#~ msgstr "Arap Alfabesi"
+
+#~ msgid "Opacity"
+#~ msgstr "Matlık"
+
+#~ msgid "Recent:"
+#~ msgstr "Son kullanılan:"
+
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "Renk Ekle / Kaldır..."
+
+#~ msgid "Import Data"
+#~ msgstr "Veri Al"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Recommended ( %1 )"
+#~ msgstr "Önerilen ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Locale ( %1 )"
+#~ msgstr "Yerel ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Other ( %1 )"
+#~ msgstr "Diğer ( %1 )"
+
+#~ msgid "Generic"
+#~ msgstr "Genel"
+
+#~ msgid "Currency"
+#~ msgstr "Para birimi"
+
+#~ msgid "None"
+#~ msgstr "Hiçbiri"
+
+#~ msgid ""
+#~ "Please check the ranges you specified. The start value must be lower than "
+#~ "the end value."
+#~ msgstr ""
+#~ "Lütfen belirlediğiniz aralığı kontrol edin. Başlangıç değeri bitiş "
+#~ "değerinden düşük olmalıdır."
+
+#~ msgid "Cannot find encoding: %1"
+#~ msgstr "Kodlama bulunamadı: %1"
+
+#~ msgid "Data"
+#~ msgstr "Veri"
+
+#~ msgid "E&ncoding:"
+#~ msgstr "K&odlama:"
+
+#~ msgid "First row contains headers"
+#~ msgstr "Birinci satır başlıkları içerir"
+
+#~ msgid "First column contains headers"
+#~ msgstr "Birinci sütun başlıkları içerir"
+
+#~ msgid "Format"
+#~ msgstr "Biçim"
+
+#~ msgid "Delimiter"
+#~ msgstr "Sınırlayıcı"
+
+#~ msgid "Semicolon"
+#~ msgstr "Noktalı virgül"
+
+#~ msgid "Other"
+#~ msgstr "Diğer"
+
+#~ msgid "Tabulator"
+#~ msgstr "Tablolayıcı"
+
+#~ msgid "Space"
+#~ msgstr "Boşluk"
+
+#~ msgid "Text&quote:"
+#~ msgstr "Metin &alıntı:"
+
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "Decimal symbol:"
+#~ msgstr "Ondalık sembolü:"
+
+#~ msgid "Thousands separator:"
+#~ msgstr "Binler basamağı ayırıcısı:"
+
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "Aynısı olan sınırlandırıcıları yoksay"
+
+#~ msgid "&Format:"
+#~ msgstr "&Biçim:"
+
+#~ msgid "Ranges"
+#~ msgstr "Aralıklar"
+
+#~ msgid "Update"
+#~ msgstr "Güncelle"
+
+#~ msgid "Import columns:"
+#~ msgstr "Sütun ekle:"
+
+#~ msgid "Import lines:"
+#~ msgstr "Satır ekle:"
+
+#~ msgid "to"
+#~ msgstr "-"
+
+#~ msgid "&Encrypt"
+#~ msgstr "Şif&rele"
+
+#~ msgid "Keywords:"
+#~ msgstr "Anahtar sözcükler:"
+
+#~ msgid "Subject:"
+#~ msgstr "Konu:"
+
+#~ msgid "Last printed:"
+#~ msgstr "Son yazdırılma zamanı:"
+
+#~ msgid "Total editing time:"
+#~ msgstr "Toplam düzenleme süresi:"
+
+#~ msgid "Encryption:"
+#~ msgstr "Şifreleme"
+
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "Başlık:"
+
+#~ msgid "Revision number:"
+#~ msgstr "Sürüm numarası:"
+
+#~ msgid "Modified:"
+#~ msgstr "Değiştirilme zamanı:"
+
+#~ msgid "Comments:"
+#~ msgstr "Açıklama:"
+
+#~ msgid "Created:"
+#~ msgstr "Oluşturulma zamanı:"
+
+#~ msgid "Path:"
+#~ msgstr "Yol:"
+
+#~ msgid "&Reset"
+#~ msgstr "Sıfı&rla"
+
+#~ msgid "General"
+#~ msgstr "Genel"
+
+#~ msgid "Last saved by"
+#~ msgstr "Son kaydeden kişi "
+
+#~ msgid "Use ';' (Example: Office;KDE;Calligra)"
+#~ msgstr "';' kullanın (Örnek: Office;KDE;Calligra)"
+
+#~ msgid "This document will be decrypted"
+#~ msgstr "Bu belgenin şifrelemesi açılacak"
+
+#~ msgid "Do not decrypt"
+#~ msgstr "Şifrelemeyi açma"
+
+#~ msgid "This document is encrypted"
+#~ msgstr "Bu belge şifrelenmiş"
+
+#~ msgid "D&ecrypt"
+#~ msgstr "&Şifrelemeyi Aç"
+
+#~ msgid "This document will be encrypted."
+#~ msgstr "Bu belge şifelenecek."
+
+#~ msgid "Do not encrypt"
+#~ msgstr "Şifrelemeyi Aç&ma"
+
+#~ msgid "This document is not encrypted"
+#~ msgstr "Bu belge şifrelenmiş değil"
+
+#~ msgid "This document does not support encryption"
+#~ msgstr "Bu belge şifrelemeyi desteklemiyor"
+
+#~ msgid ""
+#~ "<qt>Decrypting the document will remove the password protection from it."
+#~ "<p>Do you still want to decrypt the file?</qt>"
+#~ msgstr ""
+#~ "<qt>Belgenin şifresinin çözülmesi parola korumasını kaldıracaktır."
+#~ "<p>Dosyayı deşifrelemeyi hala istiyor musunuz?</qt>"
+
+#~ msgid "Confirm Decrypt"
+#~ msgstr "Şifrelemeyi Doğrula"
+
+#~ msgid "Decrypt"
+#~ msgstr "Şifrelemeyi Aç"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "decryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>Belgeniz otomatik kaydedilemedi.<p>Deşifrelemeyi tamamlamak için "
+#~ "lütfen belgeyi kaydedin.</qt>"
+
+#~ msgid "Save Document"
+#~ msgstr "Belgeyi Kaydet"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "decryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt>Belge açıldıktan sonra değiştirildi. Deşifrelemenin tamamlanması için "
+#~ "belgenin kaydedilmesi gereklidir.<p>Belgeyi şimdi kaydetmek ister misiniz?"
+#~ "</qt>"
+
+#~ msgid ""
+#~ "<qt>The document is currently saved as %1. The document needs to be "
+#~ "changed to <b>OASIS OpenDocument</b> to be encrypted.<p>Do you want to "
+#~ "change the file to OASIS OpenDocument?</qt>"
+#~ msgstr ""
+#~ "<qt>Belge %1 olarak kaydedildi. Şifrelenebilmesi için <b>OASIS "
+#~ "OpenDocument</b> olarak değiştirilmesi gereklidir.<p>Dosyayı OASIS "
+#~ "OpenDocument olarak değiştirmek ister misiniz?</qt>"
+
+#~ msgid "Change Filetype"
+#~ msgstr "Dosya Tipini Değiştir"
+
+#~ msgid "Change"
+#~ msgstr "Değiştir"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "encryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>Belgeniz otomatik olarak kaydedilemedi.<p>Şifrelemeyi tamamlamak için "
+#~ "lütfen belgeyi kaydedin.</qt>"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "encryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt>Belge açıldıktan sonra değiştirildi. Şifrelemenin tamamlanması için "
+#~ "belgenin kaydedilmesi gereklidir.<p>Belgeyi şimdi kaydetmek ister misiniz?"
+#~ "</qt>"
+
+#~ msgid "Remove"
+#~ msgstr "Kaldır"
+
+#~ msgid "Open palette"
+#~ msgstr "Palet aç"
+
+#~ msgid "Save palette"
+#~ msgstr "Paleti kaydet"
+
+#~ msgid "Add Color To Palette"
+#~ msgstr "Rengi Palete Ekle"
+
+#~ msgid "Color name:"
+#~ msgstr "Renk adı:"
+
+#~ msgid "Cannot write to palette file %1. Maybe it is read-only. "
+#~ msgstr "%1 palet dosyasına yazılamıyor. Salt-okunur olabilir. "
+
+#~ msgid "Palette"
+#~ msgstr "Palet"
+
+#~ msgid "Add/Remove Colors"
+#~ msgstr "Renk Ekle/Kaldır"
+
+#~ msgid "Filter:"
+#~ msgstr "Filtre:"
+
+#~ msgid "TextLabel"
+#~ msgstr "MetinEtiketi"
+
+#~ msgid "Save File"
+#~ msgstr "Dosyaya Kaydet"
+
+#~ msgctxt "Solid color stroke or fill"
+#~ msgid "Solid"
+#~ msgstr "Düz"
+
+#~ msgid "Pattern"
+#~ msgstr "Desen"
+
+#~ msgid "Change the filling color"
+#~ msgstr "Doldurma rengini değiştir"
+
+#, fuzzy
+#~| msgid "Change the filling color"
+#~ msgid "Change the filling gradient"
+#~ msgstr "Doldurma rengini değiştir"
+
+#, fuzzy
+#~| msgid "Change the filling color"
+#~ msgid "Change the filling pattern"
+#~ msgstr "Doldurma rengini değiştir"
+
+#~ msgid "Icon and Text"
+#~ msgstr "Simge ve Metin"
+
+#~ msgid "Icon only"
+#~ msgstr "Sadece simge"
+
+#~ msgid "Tabs side"
+#~ msgstr "Sekme tarafı"
+
+#~ msgid "Page Layout"
+#~ msgstr "Sayfa Yerleşimi"
+
+#~ msgid "Apply to document"
+#~ msgstr "Belgeye uygula"
+
+#~ msgid "Left Edge:"
+#~ msgstr "Sol Kenarlık:"
+
+#~ msgid "Right Edge:"
+#~ msgstr "Sağ Kenarlık:"
+
+#~ msgid "Binding Edge:"
+#~ msgstr "Cilt Kenarlığı:"
+
+#~ msgid "Page Edge:"
+#~ msgstr "Sayfa Kenarlığı:"
+
+#~ msgid "Facing Pages:"
+#~ msgstr "Dönen Sayfalar:"
+
+#~ msgid "Facing pages"
+#~ msgstr "Dönen sayfalar"
+
+#~ msgid "Page Layout:"
+#~ msgstr "Sayfa Düzeni:"
+
+#~ msgid "Page spread"
+#~ msgstr "Sayfa dağılımı"
+
+#~ msgid "Unit:"
+#~ msgstr "Birim:"
+
+#~ msgid "Follow style:"
+#~ msgstr "Sonraki biçem:"
+
+#~ msgid "Size:"
+#~ msgstr "Boyut:"
+
+#~ msgid "Width:"
+#~ msgstr "Genişlik:"
+
+#~ msgid "Height:"
+#~ msgstr "Yükseklik:"
+
+#~ msgid "Orientation:"
+#~ msgstr "Yönelim:"
+
+#~ msgid "Facing pages:"
+#~ msgstr "Dönen sayfalar:"
+
+#~ msgid "Single sided"
+#~ msgstr "Tek yanlı"
+
+#~ msgid "Text direction:"
+#~ msgstr "Metin yönü:"
+
+#~ msgid "Automatic"
+#~ msgstr "Otomatik"
+
+#~ msgid "Left to right"
+#~ msgstr "Soldan sağa"
+
+#~ msgid "Right to left"
+#~ msgstr "Sağdan sola"
+
+#~ msgid "Margins"
+#~ msgstr "Kenarlarlıklar"
+
+#~ msgid "Top:"
+#~ msgstr "Üst:"
+
+#~ msgid "Binding edge:"
+#~ msgstr "Cilt kenarlığı:"
+
+#~ msgid "Page edge:"
+#~ msgstr "Sayfa kenarlığı:"
+
+#~ msgid "Bottom:"
+#~ msgstr "Alt:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "Kaynağı içe aktar"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Delete resource"
+#~ msgstr "Kaynağı Sil"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "Kaynağı İndir"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "Kaynağı Paylaş"
+
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "Eklenecek Dosyayı Seç"
+
+#~ msgid "Tags"
+#~ msgstr "Etiketler"
+
+#~ msgid ""
+#~ "<qt>The tag you are trying to undelete already exists in tag list."
+#~ "<br>Please enter a new, unique name for it.</qt>"
+#~ msgstr ""
+#~ "<qt>Geri almaya çalıştığını etiket zaten etiket listesinde mevcut."
+#~ "<br>Lütfen onun için yeni ve çnceden olmayan bir isim girin.</qt>"
+
+#~ msgid "Tag was not undeleted."
+#~ msgstr "Silinmiş etiket geri döndürülemedi."
+
+#~ msgid "Change the color of the shadow"
+#~ msgstr "Gölgenin rengini değiştir"
+
+#~ msgid "Blur:"
+#~ msgstr "Bulanıklaştır:"
+
+#~ msgid "Distance:"
+#~ msgstr "Uzaklık:"
+
+#~ msgid "Set line width of actual selection"
+#~ msgstr "Gerçek seçimin çizgi genişliğini ayarla"
+
+#, fuzzy
+#~| msgid "Tags"
+#~ msgid "Tag"
+#~ msgstr "Etiketler"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "<qt>Show the tag box options.</qt>"
+#~ msgstr "<qt>Etiket kutusu seçeneklerini göster.</qt>"
+
+#~ msgid "Rename tag"
+#~ msgstr "Etiketi yeniden adlandır"
+
+#~ msgid "Delete this tag"
+#~ msgstr "Bu etiketi sil"
+
+#~ msgid "Clear undelete list"
+#~ msgstr "Silinmeden geri alınacaklar listesini geri al"
+
+#~ msgid "Undelete"
+#~ msgstr "Silmeyi geri al"
+
+#~ msgid "Tool Options"
+#~ msgstr "Araç Seçenekleri"
+
+#~ msgid "deselect item"
+#~ msgstr "ögenin seçimini kaldır"
+
+#~ msgid "select item"
+#~ msgstr "öge seç"
+
+#~ msgid "Use same aspect as pixels"
+#~ msgstr "Aynı görünümü piksel olarak kullan"
+
+#~ msgid "Zoom to Selection"
+#~ msgstr "Seçime Büyüt"
+
+#~ msgid "Zoom to All"
+#~ msgstr "Tümünü Büyüt"
+
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1"
+
+#~ msgid "Tag:"
+#~ msgstr "Etiket:"
+
+#, fuzzy
+#~| msgid "Static Image"
+#~ msgctxt "Static Image"
+#~ msgid "Static"
+#~ msgstr "Durağan Resim"
+
+#~ msgid "Value (brightness)"
+#~ msgstr "Değer (parlaklık)"
+
+#~ msgid "Cyan"
+#~ msgstr "Camgöbeği"
+
+#~ msgid "Magenta"
+#~ msgstr "Magenta"
+
+#~ msgid "Yellow"
+#~ msgstr "Sarı"
+
+#~ msgid "Black"
+#~ msgstr "Siyah"
+
+#~ msgid "Green to magenta*"
+#~ msgstr "Yeşilden megentaya*"
+
+#~ msgid "Blue to yellow"
+#~ msgstr "Maviden sarıya"
+
+#~ msgid "Opacity:"
+#~ msgstr "Matlık:"
+
+#~ msgid "&Themes"
+#~ msgstr "&Temalar"
+
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "Öntanımlı"
+
+#~ msgid "Configuration..."
+#~ msgstr "Yapılandırma..."
+
+#~ msgid "&Tools"
+#~ msgstr "&Araçlar"
+
+#~ msgid "Color Selector"
+#~ msgstr "Renk Seçici"
+
+#~ msgid "Database file \"%1\" does not exist."
+#~ msgstr "\"%1\" isimli veritabanı dosyası bulunamadı."
+
+#~ msgid "Cannot drop database - name not specified."
+#~ msgstr "Veritabanı kaldırılamaz - isim belirtilmedi."
+
+#~ msgid "Single transactions"
+#~ msgstr "Tekli işlem (transaction)"
+
+#~ msgid "Multiple transactions"
+#~ msgstr "Çoklu işlem (transaction)"
+
+#~ msgid "Nested transactions"
+#~ msgstr "İç içe işlem (transaction)"
+
+#~ msgid "Ignored"
+#~ msgstr "Yoksayılmış"
+
+#~ msgid "No such driver service: \"%1\"."
+#~ msgstr "\"%1\" diye bir sürücü hizmeti yok."
+
+#~ msgid "Could not compact database \"%1\"."
+#~ msgstr "\"%1\" isimli veritabanı sıkıştırılamıyor."
+
+#~ msgid "Do you want to open file \"%1\" as read-only?"
+#~ msgstr "\"%1\" isimli dosyayı salt okunur biçimde açmak ister misiniz?"
+
+#~ msgid "The file is probably already open on this or another computer."
+#~ msgstr ""
+#~ "Bu dosya büyük olasılıkla şu anda başka bir bilgisayarda kullanılıyor."
+
+#~ msgid "Could not gain exclusive access for writing the file."
+#~ msgstr "Dosyaya yazma yetkisi alınamadı."
+
+#~ msgid "Open As Read-Only"
+#~ msgstr "Salt Okunur Olarak Aç"
+
+#~ msgid "Could not close busy database."
+#~ msgstr "Meşgul veritabanını kapatamazsınız."
+
+#~ msgid "Could not remove file \"%1\"."
+#~ msgstr "\"%1\" isimli dosya silinemiyor."
+
+#~ msgid ""
+#~ "Check the file's permissions and whether it is already opened and locked "
+#~ "by another application."
+#~ msgstr ""
+#~ "Dosya izinlerini kontrol edin. Başka bir uygulama tarafından kullanılıyor "
+#~ "veya kilitlenmiş olabilir."
+
+#~ msgid "Compacting database"
+#~ msgstr "Veritabanı sıkıştırılıyor"
+
+#~ msgid "Compacting database \"%1\"..."
+#~ msgstr "Veritabanı \"%1\" sıkıştırılıyor..."
+
+#~ msgid ""
+#~ "The database has been compacted. Current size decreased by %1% to %2."
+#~ msgstr "Veritabanı sıkıştırıldı. %1 olan boyut artık %2."
+
+#~ msgid "No query specified"
+#~ msgstr "Sorgu belirlenmedi"
+
+#~ msgid "Table \"%1\" does not exist"
+#~ msgstr "\"%1\" tablosu bulunamadı."

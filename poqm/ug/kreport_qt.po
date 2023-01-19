@@ -1,0 +1,3475 @@
+# Uyghur translation for calligra.
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Sahran <sahran.ug@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: calligra\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2013-09-08 07:04+0900\n"
+"Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language: ug\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+#, fuzzy
+#| msgid "Save Document"
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "پۈتۈك ساقلا"
+
+#: common/KReportDesign.cpp:159
+#, fuzzy
+#| msgid "Error in embedded document"
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "سىڭدۈرمە پۈتۈكتە خاتالىق بار"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Name"
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "ئاتى"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Object Name"
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "ئوبيېكت ئاتى"
+
+#: common/KReportItemBase.cpp:78
+#, fuzzy
+#| msgid "Position"
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "ئورنى"
+
+#: common/KReportItemBase.cpp:79
+#, fuzzy
+#| msgid "Size"
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "چوڭلۇقى"
+
+#: common/KReportItemBase.cpp:112
+#, fuzzy
+#| msgid "Data Source"
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "سانلىق-مەلۇمات مەنبەسى"
+
+#: common/KReportItemLine.cpp:80
+#, fuzzy
+#| msgid "Position"
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "ئورنى"
+
+#: common/KReportItemLine.cpp:81
+#, fuzzy
+#| msgid "Position"
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "ئورنى"
+
+#: common/KReportItemLine.cpp:83
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr ""
+
+#: common/KReportItemLine.cpp:85
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "سىزىق رەڭگى"
+
+#: common/KReportItemLine.cpp:86
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "سىزىق ئۇسلۇبى"
+
+#: common/KReportSectionData.cpp:164
+#, fuzzy
+#| msgid "Test Connection"
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "ئۇلىنىشنى سىنا"
+
+#: common/KReportSectionData.cpp:166
+#, fuzzy
+#| msgid "Height"
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "ئېگىزلىك"
+
+#: common/KReportSectionData.cpp:170
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "تەگلىك رەڭگى"
+
+#: common/KReportUnit.cpp:136
+#, fuzzy
+#| msgid "Valid"
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "ئىناۋەتلىك"
+
+#: common/KReportUnit.cpp:138
+#, fuzzy
+#| msgid "Millimeters (mm)"
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "مىللىمېتىر(mm)"
+
+#: common/KReportUnit.cpp:140
+#, fuzzy
+#| msgid "Centimeters (cm)"
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "سانتىمېتىر(cm)"
+
+#: common/KReportUnit.cpp:142
+#, fuzzy
+#| msgid "Decimeters (dm)"
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "دېتسىمېتىر (د م)"
+
+#: common/KReportUnit.cpp:144
+#, fuzzy
+#| msgid "Inches (in)"
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "دىيۇيم(in)"
+
+#: common/KReportUnit.cpp:146
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr ""
+
+#: common/KReportUnit.cpp:148
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr ""
+
+#: common/KReportUnit.cpp:150
+#, fuzzy
+#| msgid "Points (pt)"
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "قاداق (pt)"
+
+#: common/KReportUnit.cpp:152
+#, fuzzy
+#| msgid "Points (pt)"
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "قاداق (pt)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Cross"
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "كېسىشىش"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Dot"
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr "چېكىت"
+
+#: items/check/KReportItemCheck.cpp:80
+#, fuzzy
+#| msgid "Style"
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "ئۇسلۇب"
+
+#: items/check/KReportItemCheck.cpp:84
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "ئالدى رەڭ"
+
+#: items/check/KReportItemCheck.cpp:86
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:88
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "سىزىق رەڭگى"
+
+#: items/check/KReportItemCheck.cpp:89
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "سىزىق ئۇسلۇبى"
+
+#: items/check/KReportItemCheck.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "قىممەت"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "قىممەت"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Left"
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "سول"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Center"
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "مەركەز"
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Right"
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "ئوڭ"
+
+#: items/field/KReportItemField.cpp:96
+#, fuzzy
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "توغرىسىغا توغرىلاش"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Top"
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "ئۈستى"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Bottom"
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "ئاستى"
+
+#: items/field/KReportItemField.cpp:102
+#, fuzzy
+#| msgid "Vertical Alignment"
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "بويىغا توغرىلاش"
+
+#: items/field/KReportItemField.cpp:104
+#, fuzzy
+#| msgid "Font"
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "خەت نۇسخا"
+
+#: items/field/KReportItemField.cpp:106
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "تەگلىك رەڭگى"
+
+#: items/field/KReportItemField.cpp:107
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "ئالدى رەڭ"
+
+#: items/field/KReportItemField.cpp:109
+#, fuzzy
+#| msgid "Background"
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "تەگلىك"
+
+#: items/field/KReportItemField.cpp:114
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:116
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "سىزىق رەڭگى"
+
+#: items/field/KReportItemField.cpp:117
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "سىزىق ئۇسلۇبى"
+
+#: items/field/KReportItemField.cpp:119
+#, fuzzy
+#| msgid "Word Wrap"
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr "سۆز قاتلاش"
+
+#: items/field/KReportItemField.cpp:120
+#, fuzzy
+#| msgid "Can Grow"
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr "چوڭايت"
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgid "Clip"
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr "ئىلغۇچ"
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgid "Stretch"
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "سوز"
+
+#: items/image/KReportItemImage.cpp:120
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:121
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "قىممەت"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:91
+#, fuzzy
+#| msgid "Caption"
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "ماۋزۇ"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Left"
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "سول"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Center"
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "مەركەز"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Right"
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "ئوڭ"
+
+#: items/label/KReportItemLabel.cpp:96
+#, fuzzy
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "توغرىسىغا توغرىلاش"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Top"
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "ئۈستى"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Bottom"
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "ئاستى"
+
+#: items/label/KReportItemLabel.cpp:102
+#, fuzzy
+#| msgid "Vertical Alignment"
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "بويىغا توغرىلاش"
+
+#: items/label/KReportItemLabel.cpp:104
+#, fuzzy
+#| msgid "Font"
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "خەت نۇسخا"
+
+#: items/label/KReportItemLabel.cpp:106
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "تەگلىك رەڭگى"
+
+#: items/label/KReportItemLabel.cpp:107
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "ئالدى رەڭ"
+
+#: items/label/KReportItemLabel.cpp:109
+#, fuzzy
+#| msgid "Background"
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "تەگلىك"
+
+#: items/label/KReportItemLabel.cpp:114
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:116
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "سىزىق رەڭگى"
+
+#: items/label/KReportItemLabel.cpp:117
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "سىزىق ئۇسلۇبى"
+
+#: items/text/KReportItemText.cpp:115
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "قىممەت"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Left"
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "سول"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Center"
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "مەركەز"
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Right"
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "ئوڭ"
+
+#: items/text/KReportItemText.cpp:121
+#, fuzzy
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "توغرىسىغا توغرىلاش"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Top"
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "ئۈستى"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Bottom"
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "ئاستى"
+
+#: items/text/KReportItemText.cpp:127
+#, fuzzy
+#| msgid "Vertical Alignment"
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "بويىغا توغرىلاش"
+
+#: items/text/KReportItemText.cpp:129
+#, fuzzy
+#| msgid "Font"
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "خەت نۇسخا"
+
+#: items/text/KReportItemText.cpp:131
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "تەگلىك رەڭگى"
+
+#: items/text/KReportItemText.cpp:132
+#, fuzzy
+#| msgid "Foreground Color"
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "ئالدى رەڭ"
+
+#: items/text/KReportItemText.cpp:134
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:136
+#, fuzzy
+#| msgid "Line Color"
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "سىزىق رەڭگى"
+
+#: items/text/KReportItemText.cpp:137
+#, fuzzy
+#| msgid "Line Style"
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "سىزىق ئۇسلۇبى"
+
+#: items/text/KReportItemText.cpp:138
+#, fuzzy
+#| msgid "Background"
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "تەگلىك"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, fuzzy, qt-format
+#| msgid "Script File"
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr "قوليازما ھۆججىتى"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+#, fuzzy
+#| msgid "Syntax Error"
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "گرامماتىكىلىق خاتالىق"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:676
+#, fuzzy
+#| msgid "Page Header"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "بەت قېشى"
+
+#: wrtembed/KReportDesigner.cpp:680
+#, fuzzy
+#| msgid "Page Header"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "بەت قېشى"
+
+#: wrtembed/KReportDesigner.cpp:684
+#, fuzzy
+#| msgid "Page Header"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "بەت قېشى"
+
+#: wrtembed/KReportDesigner.cpp:688
+#, fuzzy
+#| msgid "Page Header"
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "بەت قېشى"
+
+#: wrtembed/KReportDesigner.cpp:692
+#, fuzzy
+#| msgid "Page Header"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "بەت قېشى"
+
+#: wrtembed/KReportDesigner.cpp:696
+#, fuzzy
+#| msgid "Page Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "بەت ئاستى"
+
+#: wrtembed/KReportDesigner.cpp:700
+#, fuzzy
+#| msgid "Page Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "بەت ئاستى"
+
+#: wrtembed/KReportDesigner.cpp:704
+#, fuzzy
+#| msgid "Page Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "بەت ئاستى"
+
+#: wrtembed/KReportDesigner.cpp:708
+#, fuzzy
+#| msgid "Page Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "بەت ئاستى"
+
+#: wrtembed/KReportDesigner.cpp:712
+#, fuzzy
+#| msgid "Page Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "بەت ئاستى"
+
+#: wrtembed/KReportDesigner.cpp:716
+#, fuzzy
+#| msgid "Report Header"
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "دوكلات بەت قېشى"
+
+#: wrtembed/KReportDesigner.cpp:720
+#, fuzzy
+#| msgid "Report Footer"
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "دوكلات بەت ئاستى"
+
+#: wrtembed/KReportDesigner.cpp:808
+#, fuzzy
+#| msgid "Export"
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "ئېكسپورت قىل"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Title"
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "ماۋزۇ"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Report Footer"
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "دوكلات بەت ئاستى"
+
+#: wrtembed/KReportDesigner.cpp:818
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "بەت چوڭلۇقى"
+
+#: wrtembed/KReportDesigner.cpp:821
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "بەت چوڭلۇقى"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "Portrait"
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "بوي يۆنىلىش"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "Landscape"
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "توغرا يۆنىلىش"
+
+#: wrtembed/KReportDesigner.cpp:827
+#, fuzzy
+#| msgid "Orientation:"
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "يۆنىلىش:"
+
+#: wrtembed/KReportDesigner.cpp:832
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "بەت چوڭلۇقى"
+
+#: wrtembed/KReportDesigner.cpp:833
+#, fuzzy
+#| msgid "Show Grid"
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "سېتكا كۆرسەت"
+
+#: wrtembed/KReportDesigner.cpp:834
+#, fuzzy
+#| msgid "Snap to Grid"
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "سېتكىغا توغرىلا"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:841
+#, fuzzy
+#| msgid "Left Margin"
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "سول گىرۋەك بوشلۇقى"
+
+#: wrtembed/KReportDesigner.cpp:843
+#, fuzzy
+#| msgid "Right Margin"
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "ئوڭ گىرۋەك بوشلۇقى"
+
+#: wrtembed/KReportDesigner.cpp:845
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "بەت ئارىلىقى"
+
+#: wrtembed/KReportDesigner.cpp:847
+#, fuzzy
+#| msgid "Left Margin"
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "سول گىرۋەك بوشلۇقى"
+
+#: wrtembed/KReportDesigner.cpp:869
+#, fuzzy
+#| msgid "Object"
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "نەڭ"
+
+#: wrtembed/KReportDesigner.cpp:1067
+#, fuzzy
+#| msgid "Cut"
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "كەس"
+
+#: wrtembed/KReportDesigner.cpp:1071
+#, fuzzy
+#| msgid "Copy"
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "كۆچۈر"
+
+#: wrtembed/KReportDesigner.cpp:1076
+#, fuzzy
+#| msgid "Paste"
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "چاپلا"
+
+#: wrtembed/KReportDesigner.cpp:1087
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "ئۆچۈر"
+
+#: wrtembed/KReportDesigner.cpp:1129
+#, fuzzy
+#| msgid "Line"
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "قۇر"
+
+#: wrtembed/KReportDesigner.cpp:1476
+#, fuzzy
+#| msgid "Line"
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "قۇر"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1525
+#, fuzzy
+#| msgid "Copy"
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "كۆچۈر"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1531
+#, fuzzy
+#| msgid "Paste"
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "چاپلا"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1544
+#, fuzzy
+#| msgid "Collection"
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "توپلام"
+
+#: wrtembed/KReportDesigner.cpp:1547
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1549
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr ""
+
+#: wrtembed/KReportDesignerSection.cpp:126
+#, fuzzy
+#| msgid "Detail"
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "تەپسىلاتى"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+#, fuzzy
+#| msgid "Section Editor"
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "بۆلەك تەھرىرلىگۈچ"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+#, fuzzy
+#| msgid "Column:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "ئىستون:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+#, fuzzy
+#| msgid "Sort:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "تەرتىپلەش:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr ""
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr ""
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+
+#: wrtembed/KReportRuler_p.cpp:1472
+#, fuzzy
+#| msgid "First line indent"
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "باش قۇر تارايت"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+#, fuzzy
+#| msgid "Left side"
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "سول تەرەپ"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+#, fuzzy
+#| msgid "Right Edge:"
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "ئوڭ گىرۋەك:"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+#, fuzzy
+#| msgid "Add..."
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr "قوش…"
+
+#: wrtembed/KReportSectionEditor.cpp:74
+#, fuzzy
+#| msgid "Edit..."
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "تەھرىر…"
+
+#: wrtembed/KReportSectionEditor.cpp:76
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "ئۆچۈر"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+#, fuzzy
+#| msgid "Move Up"
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "ئۈستىگە"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+#, fuzzy
+#| msgid "Move Down"
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "پەسكە"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+#, fuzzy
+#| msgid "Ascending"
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr "ئۆسكۈچى"
+
+#: wrtembed/KReportSectionEditor.cpp:312
+#, fuzzy
+#| msgid "Descending"
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr "كېمەيگۈچى"
+
+#: wrtembed/KReportSectionEditor.ui:29
+#, fuzzy
+#| msgid "Report Header"
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "دوكلات بەت قېشى"
+
+#: wrtembed/KReportSectionEditor.ui:36
+#, fuzzy
+#| msgid "Report Footer"
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "دوكلات بەت ئاستى"
+
+#: wrtembed/KReportSectionEditor.ui:43
+#, fuzzy
+#| msgid "Page Header"
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "بەت قېشى"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+#, fuzzy
+#| msgctxt "(qtundo-format)"
+#| msgid "Insert page"
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "بەت قىستۇر"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+#, fuzzy
+#| msgctxt "(qtundo-format)"
+#| msgid "Move page"
+#| msgid_plural "Move pages"
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "بەت يۆتكە"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+#, fuzzy
+#| msgid "Last printed:"
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "ئاخىرقى باسقان ۋاقتى:"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.ui:130
+#, fuzzy
+#| msgid "Page Footer"
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "بەت ئاستى"
+
+#: wrtembed/KReportSectionEditor.ui:217
+#, fuzzy
+#| msgid "Collection"
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "توپلام"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, fuzzy, qt-format
+#| msgid "%1%"
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+#, fuzzy
+#| msgid "Fit Page Width"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "بەت كەڭلىككە ماسلاش"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+#, fuzzy
+#| msgid "Fit Page"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "بەتكە خوپ كەلسۇن"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+#, fuzzy
+#| msgid "Actual Pixels"
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr "ئەمەلىي پىكسېل"
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+#, fuzzy
+#| msgid "Fit Page Width"
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "بەت كەڭلىككە ماسلاش"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Letter"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "ئا ق ش لېپاپى"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Legal"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "ئا ق ش قانۇن"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "Custom"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "ئىختىيارى"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B6"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B5"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B4"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "Execute"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "ئىجرا قىل"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B0"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B1"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "ISO B10"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B2"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B3"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "Comma"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "پەش"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO DL"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "ISO DL"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "US Letter"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "ئا ق ش لېپاپى"
+
+#, fuzzy
+#~| msgid "Postal code:"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "پوچتا نومۇرى"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "ئېكران"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "ئورنى"
+
+#, fuzzy
+#~| msgid "Height"
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "ئېگىزلىك"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "تەگلىك رەڭگى"
+
+#, fuzzy
+#~| msgid "Size"
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "چوڭلۇقى"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "سانلىق-مەلۇمات مەنبەسى"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "سانلىق-مەلۇمات مەنبەسى"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "سانلىق-مەلۇمات مەنبەسى"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "ISO A3"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "ISO A4"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "ISO A5"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "ISO B5"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "ISO A0"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "ISO A1"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "ISO A2"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "ISO A6"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A7"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "ISO A7"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A8"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "ISO A8"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO A9"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "ISO A9"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "ISO B0"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "ISO B1"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "ISO B2"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "ISO B3"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "ISO B4"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO B6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "ISO B6"
+
+#, fuzzy
+#~| msgctxt "Page size"
+#~| msgid "ISO C5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "ISO C5"
+
+#, fuzzy
+#~| msgid "Height"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "ئېگىزلىك"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "تەگلىك رەڭگى"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "سىزىق رەڭگى"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "سىزىق ئۇسلۇبى"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "سانلىق-مەلۇمات مەنبەسى"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "قىممەت"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "تەگلىك رەڭگى"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "ئالدى رەڭ"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "سىزىق رەڭگى"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "سىزىق ئۇسلۇبى"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "سانلىق-مەلۇمات مەنبەسى"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "قىممەت"
+
+#, fuzzy
+#~| msgid "Left"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "سول"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "مەركەز"
+
+#, fuzzy
+#~| msgid "Right"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "ئوڭ"
+
+#, fuzzy
+#~| msgid "Horizontal Alignment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "توغرىسىغا توغرىلاش"
+
+#, fuzzy
+#~| msgid "Top"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "ئۈستى"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "ئاستى"
+
+#, fuzzy
+#~| msgid "Vertical Alignment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "بويىغا توغرىلاش"
+
+#, fuzzy
+#~| msgid "Font"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "خەت نۇسخا"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "تەگلىك رەڭگى"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "ئالدى رەڭ"
+
+#, fuzzy
+#~| msgid "Background"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "تەگلىك"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "سىزىق رەڭگى"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "سىزىق ئۇسلۇبى"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "سانلىق-مەلۇمات مەنبەسى"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "قىممەت"
+
+#, fuzzy
+#~| msgid "Left"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "سول"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "مەركەز"
+
+#, fuzzy
+#~| msgid "Right"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "ئوڭ"
+
+#, fuzzy
+#~| msgid "Horizontal Alignment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "توغرىسىغا توغرىلاش"
+
+#, fuzzy
+#~| msgid "Top"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "ئۈستى"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "ئاستى"
+
+#, fuzzy
+#~| msgid "Vertical Alignment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "بويىغا توغرىلاش"
+
+#, fuzzy
+#~| msgid "Font"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "خەت نۇسخا"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "تەگلىك رەڭگى"
+
+#, fuzzy
+#~| msgid "Foreground Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "ئالدى رەڭ"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "سىزىق رەڭگى"
+
+#, fuzzy
+#~| msgid "Line Style"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "سىزىق ئۇسلۇبى"
+
+#, fuzzy
+#~| msgid "Background"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "تەگلىك"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "ئۆچۈر"
+
+#, fuzzy
+#~| msgid "Script Manager"
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "قوليازما باشقۇرغۇ"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "ئابدۇقادىر ئابلىز, غەيرەت كەنجى"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "sahran.ug@gmail.com,  gheyret@gmail.com"
+
+#~ msgid "Precision:"
+#~ msgstr "ئېنىقلىقى:"
+
+#~ msgctxt "The raw line data"
+#~ msgid "Raw"
+#~ msgstr "خام"
+
+#~ msgid "Curve"
+#~ msgstr "ئەگرى سىزىق"
+
+#~ msgid "Straight"
+#~ msgstr "تۈز سىزىق"
+
+#~ msgid "Optimize"
+#~ msgstr "ئەلالاشتۇر"
+
+#~ msgid "Pencil"
+#~ msgstr "قەلەم"
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "ھۆججەت %1 مەۋجۇت ئەمەس."
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Unknown error."
+#~ msgstr "نامەلۇم خاتالىق"
+
+#, fuzzy
+#~| msgid "file"
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "ھۆججەت"
+
+#, fuzzy
+#~| msgid "Could not find %1"
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "%1 نى تاپقىلى بولمىدى"
+
+#~ msgid "Byte"
+#~ msgstr "بايت"
+
+#~ msgid "Integer Number"
+#~ msgstr "پۈتۈن سان"
+
+#~ msgid "Date"
+#~ msgstr "چېسلا"
+
+#~ msgid "Date and Time"
+#~ msgstr "چېسلا ۋە ۋاقىت"
+
+#~ msgid "Time"
+#~ msgstr "ۋاقىت"
+
+#~ msgid "Text"
+#~ msgstr "تېكىست"
+
+#~ msgid "Date/Time"
+#~ msgstr "چېسلا/ۋاقىت"
+
+#, fuzzy
+#~| msgid "Syntax Error"
+#~ msgid "Syntax error."
+#~ msgstr "گرامماتىكىلىق خاتالىق"
+
+#~ msgid "Error"
+#~ msgstr "خاتالىق"
+
+#, fuzzy
+#~| msgid "Syntax Error"
+#~ msgid "Error near \"%1\"."
+#~ msgstr "گرامماتىكىلىق خاتالىق"
+
+#, fuzzy
+#~| msgctxt ""
+#~| "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
+#~| msgid "expr"
+#~ msgctxt ""
+#~ "short for 'expression' word, e.g. 'expr' (only latin letters, please, no "
+#~ "'.')"
+#~ msgid "expr"
+#~ msgstr "expr"
+
+#~ msgid "Test Connection"
+#~ msgstr "ئۇلىنىشنى سىنا"
+
+#~ msgid "Number"
+#~ msgstr "نومۇرى"
+
+#~ msgid "Image"
+#~ msgstr "سۈرەت"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "يولغا ئۆزگەرت"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "نۇقتىلارنى بىرىكتۈر"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr "شەكىللەرنى گۇرۇپپىلا"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Keep Aspect Ratio"
+#~ msgstr "ئېگىزلىك-كەڭلىك نىسبىتى ئۆزگەرمىسۇن"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr "شەكىللەرنى گۇرۇپپىلىما"
+
+#~ msgid "Standard"
+#~ msgstr "ئۆلچەملىك"
+
+#~ msgid "Lines"
+#~ msgstr "سىزىقلار"
+
+#~ msgid "Type:"
+#~ msgstr "تىپى:"
+
+#~ msgid "%1 Options"
+#~ msgstr "%1 تاللانما"
+
+#~ msgid "Active tool: %1"
+#~ msgstr "ئاكتىپ قورال: %1"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Paste Page"
+#~| msgid_plural "Paste Pages"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "بەتلەرنى چاپلا"
+
+#~ msgid "Nodes"
+#~ msgstr "تۈگۈنلەر"
+
+#~ msgid " px"
+#~ msgstr " px"
+
+#~ msgid "Pan"
+#~ msgstr "تاختا"
+
+#~ msgid "Merge points"
+#~ msgstr "نۇقتىلارنى بىرىكتۈر"
+
+#~ msgid "Zoom"
+#~ msgstr "كېڭەيت-تارايت"
+
+#~ msgid "Zoom In"
+#~ msgstr "چوڭايت"
+
+#~ msgid "Zoom Out"
+#~ msgstr "كىچىكلىتىش"
+
+#~ msgid "..."
+#~ msgstr "…"
+
+#~ msgid "Scripts"
+#~ msgstr "قوليازما"
+
+#~ msgid "Replace"
+#~ msgstr "ئالماشتۇر"
+
+#~ msgid "Save"
+#~ msgstr "ساقلا"
+
+#~ msgid "Add"
+#~ msgstr "قوش"
+
+#~ msgid "Script"
+#~ msgstr "قوليازما"
+
+#~ msgid "Collection"
+#~ msgstr "توپلام"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "بەت جايلاشتۇرۇشنى بەلگىلەش"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] "تام تەسۋىر ئۆچۈر"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "بەت ئۆچۈر"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr "تام تەسۋىر قىستۇر"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "تام تەسۋىر يۆتكە"
+
+#~ msgid "Configure"
+#~ msgstr "سەپلە"
+
+#~ msgid "Misc"
+#~ msgstr "ئارىلاش"
+
+#~ msgid "Grid"
+#~ msgstr "سېتكا"
+
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "پۈتۈك"
+
+#~ msgid "Document Settings"
+#~ msgstr "پۈتۈك تەڭشىكى"
+
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "ئاپتور"
+
+#~ msgid "Author"
+#~ msgstr "ئاپتور"
+
+#~ msgid "Master Page"
+#~ msgstr "ئانا بەت"
+
+#~ msgid "Slide %1"
+#~ msgstr "تام تەسۋىر %1"
+
+#~ msgid "Page  %1"
+#~ msgstr "بەت %1"
+
+#~ msgid "Layer"
+#~ msgstr "قەۋەت"
+
+#~ msgid "Group"
+#~ msgstr "گۇرۇپپا"
+
+#~ msgid "Shape"
+#~ msgstr "شەكىل"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Paste Page"
+#~| msgid_plural "Paste Pages"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "بەتلەرنى چاپلا"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Create Layer"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "قاتلام قۇرۇش"
+
+#~ msgid "Slide"
+#~ msgstr "تام تەسۋىر"
+
+#~ msgid "Visible"
+#~ msgstr "كۆرۈنۈشچان"
+
+#~ msgid "Locked"
+#~ msgstr "قۇلۇپلانغان"
+
+#~ msgid "&Move Here"
+#~ msgstr "بۇ جايغا يۆتكە(&M)"
+
+#~ msgid "&Copy Here"
+#~ msgstr "بۇ جايغا كۆچۈر(&C)"
+
+#~ msgid "C&ancel"
+#~ msgstr "ۋاز كەچ(&A)"
+
+#~ msgid "Document"
+#~ msgstr "پۈتۈك"
+
+#~ msgid "Add a new page or layer"
+#~ msgstr "يېڭى بەت ياكى قەۋەت قوشىدۇ"
+
+#~ msgid "Page"
+#~ msgstr "بەت"
+
+#~ msgid "Delete selected objects"
+#~ msgstr "تاللانغان نەڭنى ئۆچۈر"
+
+#~ msgid "Raise selected objects"
+#~ msgstr "تاللانغان نەڭنى ئالدىغا يۆتكە"
+
+#~ msgid "Lower selected objects"
+#~ msgstr "تاللانغان نەڭنى ئارقىغا يۆتكە"
+
+#~ msgid "Minimal View"
+#~ msgstr "ئەڭ كىچىك كۆرۈنۈش"
+
+#~ msgid "Detailed View"
+#~ msgstr "تەپسىلات كۆرۈنۈش"
+
+#~ msgid "Thumbnail View"
+#~ msgstr "كىچىكلىتىلگەن سۈرەت كۆرۈنۈشى"
+
+#~ msgid "View mode"
+#~ msgstr "كۆرۈنۈش ھالىتى"
+
+#~ msgid "Enter the name of the new layer:"
+#~ msgstr "يېڭى قاتلامنىڭ ئاتىنى كىرگۈزۈڭ:"
+
+#~ msgid "New Layer"
+#~ msgstr "يېڭى سۈرەت قەۋىتى"
+
+#~ msgid "New layer"
+#~ msgstr "يېڭى سۈرەت قەۋىتى"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "قاتلام قۇرۇش"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "سۈرەت قەۋىتى ئۆچۈر"
+
+#~ msgid "Could not delete all layers. At least one layer is required."
+#~ msgstr ""
+#~ "ھەممە قاتلاملارنى ئۆچۈرگىلى بولمىدى. ئاز دېگەندە قاتلامدىن بىرى زۆرۈر."
+
+#~ msgid "Error deleting layers"
+#~ msgstr "قاتلاملارنى ئۆچۈرۈۋاتقاندا خاتالىق كۆرۈلدى"
+
+#~ msgid "Page %1"
+#~ msgstr "%1 -بەت"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] "بەتلەرنى چاپلا"
+
+#~ msgid "Tools"
+#~ msgstr "قوراللار"
+
+#~ msgid "D&elete"
+#~ msgstr "ئۆچۈر(&E)"
+
+#~ msgid "Show Rulers"
+#~ msgstr " ‫سىزغۇچ‪لارنى كۆرسەت"
+
+#~ msgid "Insert Page"
+#~ msgstr "بەت قىستۇر"
+
+#~ msgid "Copy Page"
+#~ msgstr "بەت كۆچۈر"
+
+#~ msgid "Copy the current page"
+#~ msgstr "نۆۋەتتىكى  بەتنى كۆچۈرىدۇ"
+
+#~ msgid "Delete Page"
+#~ msgstr "بەت ئۆچۈر"
+
+#~ msgid "Delete the current page"
+#~ msgstr "نۆۋەتتىكى  بەتنى ئۆچۈرىدۇ"
+
+#~ msgid "Page Layout..."
+#~ msgstr "بەت ئۇسلۇبى …"
+
+#~ msgid "Variable"
+#~ msgstr "ئۆزگىرىشچان"
+
+#~ msgid "Configure..."
+#~ msgstr "سەپلە…"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr "بەت جايلاشتۇرۇشنى ئۆزگەرت"
+
+#~ msgid "Background"
+#~ msgstr "تەگلىك"
+
+#, fuzzy
+#~| msgid "Check"
+#~ msgid "Check Box"
+#~ msgstr "تەكشۈر"
+
+#~ msgid "Field"
+#~ msgstr "سۆز بۆلىكى"
+
+#~ msgid "Label"
+#~ msgstr "ئەن"
+
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "ئۆچۈر"
+
+#~ msgid "Key Press"
+#~ msgstr "كۇنۇپكىنىڭ بېسىلىشى"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "تېكىست"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "ئىستون ئۆچۈر"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "قۇر ئۆچۈر"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "فورمات"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Paste Page"
+#~| msgid_plural "Paste Pages"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr "بەتلەرنى چاپلا"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "تېكىست بويىچە چاپلا"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "چاپلا"
+
+#~ msgid "1 replacement made"
+#~ msgid_plural "%1 replacements made"
+#~ msgstr[0] "%1 ئى ئالماشتۇرۇلدى"
+
+#, fuzzy
+#~| msgid "Test Connection"
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "ئۇلىنىشنى سىنا"
+
+#~ msgctxt "Underline Style"
+#~ msgid "None"
+#~ msgstr "يوق"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "يەككە"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "قوش"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "New Paragraph"
+#~ msgstr "يېڭى ئابزاس"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "خەتكۈش قوش"
+
+#, fuzzy
+#~| msgid "Addition"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "قوشۇش"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "مۇندەرىجە قىستۇر"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "ئۆزگەرگۈچى قىستۇرۇش"
+
+#, fuzzy
+#~| msgid "Key Press"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Key Press"
+#~ msgstr "كۇنۇپكىنىڭ بېسىلىشى"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "قۇر ئالماشتۇرۇش بەلگىسى قىستۇر"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "جەدۋەل قىستۇر"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "كاتەكچە بىرلەشتۈر"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "كاتەكچە پارچىلا"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Typing"
+#~ msgstr "كىرگۈزۈۋاتىدۇ"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr "توم"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "يانتۇ"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "ئاستى سىزىق"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr "ئۆچۈرۈش سىزىقى"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "تارايت"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "كېڭەيت"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "خەت چوڭلۇقىنى كىچىكلىتىش"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "خەت چوڭلۇقىنى چوڭايتىش"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "پىچىمى"
+
+#~ msgid "Default"
+#~ msgstr "كۆڭۈلدىكى"
+
+#~ msgctxt "Default text for undo action"
+#~ msgid "Undo"
+#~ msgstr "يېنىۋال"
+
+#~ msgid "Undo %1"
+#~ msgstr "%1 يېنىۋال"
+
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "قايتىلا"
+
+#~ msgid "Redo %1"
+#~ msgstr "قايتىلا %1"
+
+#, fuzzy
+#~| msgid "Empty"
+#~ msgid "<empty>"
+#~ msgstr "بوش"
+
+#~ msgid "Redo"
+#~ msgstr "قايتىلا"
+
+#~ msgid "Undo"
+#~ msgstr "يېنىۋال"
+
+#~ msgid "&File"
+#~ msgstr "ھۆججەت(&F)"
+
+#~ msgid "&Settings"
+#~ msgstr "تەڭشەك(&S)"
+
+#~ msgid "File"
+#~ msgstr "ھۆججەت"
+
+#~ msgid "Name:"
+#~ msgstr "ئاتى:"
+
+#~ msgid "Initials:"
+#~ msgstr "باش ھەرپلەر:"
+
+#~ msgid "Title:"
+#~ msgstr "ماۋزۇ:"
+
+#~ msgid "Position:"
+#~ msgstr "ئورنى:"
+
+#~ msgid "Company:"
+#~ msgstr "شىركەت"
+
+#~ msgid "Email:"
+#~ msgstr "ئېلخەت:"
+
+#~ msgid "Fax:"
+#~ msgstr "فاكىس:"
+
+#~ msgid "Street:"
+#~ msgstr "كوچا:"
+
+#~ msgid "City:"
+#~ msgstr "شەھەر :"
+
+#~ msgid "Country:"
+#~ msgstr "دۆلەت:"
+
+#~ msgid "No autosave"
+#~ msgstr "ئاپتوماتىك ساقلىمىسۇن"
+
+#~ msgctxt "unit symbol for minutes, leading space as separator"
+#~ msgid " min"
+#~ msgstr " مىنۇت"
+
+#~ msgid "Autosave interval:"
+#~ msgstr "ئاپتوماتىك ساقلاش ئىنتېرۋالى:"
+
+#~ msgid "Grid color:"
+#~ msgstr "سېتكا رەڭگى:"
+
+#~ msgid "Spacing"
+#~ msgstr "ئارىلىق"
+
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "توغرىسىغا(&H):"
+
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "بويىغا(&V):"
+
+#~ msgid "Units:"
+#~ msgstr "بىرلىك:"
+
+#~ msgid "Calligra"
+#~ msgstr "Calligra"
+
+#, fuzzy
+#~| msgid "Creation error"
+#~ msgid "%1: Critical Error"
+#~ msgstr "قۇرۇش خاتالىقى"
+
+#~ msgid "Always use this template"
+#~ msgstr "ھەمىشە  بۇ قېلىپنى ئىشلەت"
+
+#~ msgid "Saving..."
+#~ msgstr "ساقلاۋاتىدۇ…"
+
+#~ msgid "Could not create the file for saving"
+#~ msgstr "ساقلايدىغان ھۆججەتنى قۇرالمىدى"
+
+#~ msgid "Not able to write '%1'. Partition full?"
+#~ msgstr "‹%1› غا يازغىلى بولمىدى. دىسكا رايونى توشۇپ كەتتىمۇ؟"
+
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "بۇزۇق URL\n"
+#~ "%1"
+
+#~ msgid "The file %1 does not exist."
+#~ msgstr "ھۆججەت %1 مەۋجۇت ئەمەس."
+
+#, fuzzy
+#~| msgid "Open Document"
+#~ msgid "Opening Document"
+#~ msgstr "پۈتۈك ئېچىش"
+
+#~ msgid "File not found"
+#~ msgstr "ھۆججەت تېپىلمىدى"
+
+#~ msgid "Cannot create storage"
+#~ msgstr "ساقلىغۇچ قۇرغىلى بولمىدى"
+
+#~ msgid "Bad MIME type"
+#~ msgstr "بولمىغۇر MIME تىپى"
+
+#~ msgid "Format not recognized"
+#~ msgstr "ناتونۇش پىچىم"
+
+#~ msgid "Not implemented"
+#~ msgstr "ئەمەلىيلەشتۈرۈلمىگەن"
+
+#~ msgid "Parsing error"
+#~ msgstr "تەھلىل قىلىش خاتالىقى"
+
+#~ msgid "Document is password protected"
+#~ msgstr "پۈتۈك ئىم بىلەن قوغدالغان"
+
+#~ msgid "Internal error"
+#~ msgstr "ئىچكى خاتالىق"
+
+#~ msgid "Out of memory"
+#~ msgstr "ئەسلەك يېتىشمىدى"
+
+#~ msgid "Unknown error"
+#~ msgstr "نامەلۇم خاتالىق"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open\n"
+#~| "%2.\n"
+#~| "Reason: %1"
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr ""
+#~ "ئاچالمىدى\n"
+#~ "%2.\n"
+#~ "سەۋەبى: %1"
+
+#~ msgid "Could not find %1"
+#~ msgstr "%1 نى تاپقىلى بولمىدى"
+
+#~ msgid "%1 is not a file."
+#~ msgstr "%1 ھۆججەت ئەمەس."
+
+#~ msgid "Not a valid Calligra file: %1"
+#~ msgstr "ئىناۋەتلىك كاللىگىرا ھۆججىتى ئەمەس: %1"
+
+#~ msgid "Untitled"
+#~ msgstr "ماۋزۇسىز"
+
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr "<p>پۈتۈك <b>'%1'</b> ئۆزگەرتىلدى.</p><p>ساقلامسىز؟</p>"
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~| "it?</p>"
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr "<p>پۈتۈك <b>'%1'</b> ئۆزگەرتىلدى.</p><p>ساقلامسىز؟</p>"
+
+#~ msgid "%1 %"
+#~ msgstr "%1 %"
+
+#~ msgid "No"
+#~ msgstr "ياق"
+
+#~ msgid "Yes"
+#~ msgstr "ھەئە"
+
+#~ msgid "Case Sensitive"
+#~ msgstr "چوڭ-كىچىك يېزىلىشى پەرقلەندۈر"
+
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "ئىزدە:"
+
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "كېيىنكى"
+
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "ئالدىنقى"
+
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "تاللانما"
+
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "ئالماشتۇر:"
+
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "ئالماشتۇر"
+
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "ھەممىنى ئالماشتۇر"
+
+#~ msgctxt "Total number of matches"
+#~ msgid "1 match found"
+#~ msgid_plural "%1 matches found"
+#~ msgstr[0] "%1 ئى تېپىلدى"
+
+#~ msgid "No matches found"
+#~ msgstr "ماس كەلگەن تۈر تېپىلمىدى"
+
+#~ msgid "Export as PDF..."
+#~ msgstr "PDF چىقار…"
+
+#~ msgid "Reload"
+#~ msgstr "قايتا يۈكلە"
+
+#~ msgid "Versions..."
+#~ msgstr "نەشرى…"
+
+#~ msgid "E&xport..."
+#~ msgstr "چىقار(&X)…"
+
+#, fuzzy
+#~| msgid "Recent Documents"
+#~ msgid "En&crypt Document"
+#~ msgstr "يېقىنقى پۈتۈكلەر"
+
+#~ msgid "&New View"
+#~ msgstr "يېڭى كۆرۈنۈش(&N)"
+
+#~ msgid "Document Information"
+#~ msgstr "پۈتۈك ئۇچۇرى"
+
+#~ msgid "Full Screen Mode"
+#~ msgstr "پۈتۈن ئېكران ھالىتى"
+
+#~ msgid "(write protected)"
+#~ msgstr "(يېزىش چەكلەنگەن)"
+
+#~ msgid "Save as %1"
+#~ msgstr "%1 سۈپىتىدە ساقلا"
+
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "%1 (نامەلۇم ھۆججەت تىپى)"
+
+#~ msgid "Confirm Save"
+#~ msgstr "ساقلاشنى جەزملەش"
+
+#, fuzzy
+#~| msgid "Untitled"
+#~ msgid "untitled"
+#~ msgstr "ماۋزۇسىز"
+
+#~ msgid "Open Document"
+#~ msgstr "پۈتۈك ئېچىش"
+
+#, fuzzy
+#~| msgid "Export as PDF..."
+#~ msgid "Export as PDF"
+#~ msgstr "PDF چىقار…"
+
+#~ msgid "Warning"
+#~ msgstr "ئاگاھلاندۇرۇش"
+
+#, fuzzy
+#~| msgid "Open Document"
+#~ msgid "Open Existing Document"
+#~ msgstr "پۈتۈك ئېچىش"
+
+#~ msgid "Recent Documents"
+#~ msgstr "يېقىنقى پۈتۈكلەر"
+
+#~ msgid "Stop"
+#~ msgstr "توختا"
+
+#~ msgid "Close"
+#~ msgstr "ياپ"
+
+#~ msgid "Stopped"
+#~ msgstr "توختىدى"
+
+#~ msgctxt "File modification date and time. %1 is date time"
+#~ msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>ئۆزگەرتىلگەن ۋاقىت:</b></td><td>%1</td></tr>"
+
+#~ msgctxt "File access date and time. %1 is date time"
+#~ msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>زىيارەت قىلىنغان ۋاقىت:</b></td><td>%1</td></tr>"
+
+#~ msgid "Create Template"
+#~ msgstr "قېلىپ قۇر"
+
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "ئاتى:"
+
+#~ msgid "Group:"
+#~ msgstr "گۇرۇپپا:"
+
+#~ msgid "&Add Group..."
+#~ msgstr "گۇرۇپپا قوش(&A)…"
+
+#~ msgid "&Remove"
+#~ msgstr "چىقىرىۋەت(&R)"
+
+#~ msgid "Picture"
+#~ msgstr "سۈرەت"
+
+#~ msgid "&Preview"
+#~ msgstr "ئالدىن كۆزەت(&P)"
+
+#~ msgid "Custom:"
+#~ msgstr "ئىختىيارى:"
+
+#~ msgid "&Select..."
+#~ msgstr "تاللا(&S)…"
+
+#~ msgid "Add Group"
+#~ msgstr "گۇرۇپپا قوش"
+
+#~ msgid "This name is already used."
+#~ msgstr "بۇ ئات ئىشلىتىلگەن."
+
+#~ msgid "Remove Group"
+#~ msgstr "گۇرۇپپىنى چىقىرىۋەت"
+
+#~ msgid "Remove Template"
+#~ msgstr "قېلىپنى چىقىرىۋېتىش"
+
+#~ msgid "&Delete"
+#~ msgstr "ئۆچۈر(&D)"
+
+#~ msgid "Version"
+#~ msgstr "نەشرى"
+
+#~ msgid "Date & Time"
+#~ msgstr "چېسلا & ۋاقىت"
+
+#~ msgid "Comment"
+#~ msgstr "ئىزاھات"
+
+#~ msgid "&Add"
+#~ msgstr "قوش(&A)"
+
+#~ msgid "&Modify"
+#~ msgstr "ئۆزگەرت(&M)"
+
+#~ msgid "&Open"
+#~ msgstr "ئاچ(&O)"
+
+#~ msgid "A new version could not be added"
+#~ msgstr "يېڭى نەشرىنى قوشۇشقا بولمىدى"
+
+#~ msgid "Date: %1"
+#~ msgstr "چېسلا: %1"
+
+#~ msgctxt "choice for author profile"
+#~ msgid "Anonymous"
+#~ msgstr "ئاتسىز"
+
+#~ msgid "Unknown"
+#~ msgstr "نامەلۇم"
+
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "ئېكران"
+
+#~ msgid "The directory mode is not supported for remote locations."
+#~ msgstr "يىراقتىكى ئورۇنلاردا بۇ مۇندەرىجە ھالىتىنى ئىشلەتكىلى بولمايدۇ."
+
+#~ msgid "Clear"
+#~ msgstr "تازىلا"
+
+#~ msgid "Subtract"
+#~ msgstr "ئېلىش"
+
+#~ msgid "Multiply"
+#~ msgstr "ھەسسىلەپ ئېشىش"
+
+#~ msgid "Alpha"
+#~ msgstr "ئالفا"
+
+#~ msgid "Lightness"
+#~ msgstr "يورۇقلۇق دەرىجىسى"
+
+#~ msgid "a*"
+#~ msgstr "a*"
+
+#~ msgid "b*"
+#~ msgstr "b*"
+
+#~ msgid "Blue"
+#~ msgstr "كۆك"
+
+#~ msgid "Green"
+#~ msgstr "يېشىل"
+
+#~ msgid "Red"
+#~ msgstr "قىزىل"
+
+#~ msgid "Alpha darken"
+#~ msgstr "ئالفا قارايتىلغان"
+
+#~ msgid "Dissolve"
+#~ msgstr "ئېرىت"
+
+#~ msgid "Erase"
+#~ msgstr "ئۆچۈر"
+
+#~ msgid "Normal"
+#~ msgstr "نورمال"
+
+#~ msgid "Overlay"
+#~ msgstr "دەستىلە"
+
+#~ msgid "Parallel"
+#~ msgstr "پاراللېل"
+
+#~ msgid "Lighten"
+#~ msgstr "يورۇت"
+
+#~ msgid "Darken"
+#~ msgstr "قارايت"
+
+#~ msgid "Addition"
+#~ msgstr "قوشۇش"
+
+#~ msgid "Divide"
+#~ msgstr "بۆل"
+
+#~ msgid "Difference"
+#~ msgstr "پەرق"
+
+#~ msgid "Color"
+#~ msgstr "رەڭ"
+
+#~ msgid "Hue"
+#~ msgstr "رەڭگى"
+
+#~ msgid "Saturation"
+#~ msgstr "تويۇنۇش"
+
+#~ msgid "Luminosity"
+#~ msgstr "يورۇقلۇق دەرىجىسى"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgid "Darker Color"
+#~ msgstr "تەگلىك رەڭگى"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgid "Lighter Color"
+#~ msgstr "سىزىق رەڭگى"
+
+#~ msgid "Intensity"
+#~ msgstr "كۈچلۈكلۈك"
+
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "G"
+#~ msgstr "G"
+
+#~ msgid "XYZ"
+#~ msgstr "XYZ"
+
+#~ msgid "Grayscale"
+#~ msgstr "كۈلرەڭ"
+
+#~ msgid "YCbCr"
+#~ msgstr "YCbCr"
+
+#~ msgid "8 Bits"
+#~ msgstr "8 بىت"
+
+#~ msgid "16 Bits"
+#~ msgstr "16 بىت"
+
+#~ msgid "16 Bits Float"
+#~ msgstr "16 بىتلىق كەسىر سان"
+
+#~ msgid "32 Bits Float"
+#~ msgstr "32 بىتلىق كەسىر سان"
+
+#~ msgid "Arithmetic"
+#~ msgstr "ھېساب(ئارىفمېتىكا)"
+
+#~ msgid "Negative"
+#~ msgstr "مەنپىي"
+
+#~ msgid "HSV"
+#~ msgstr "HSV"
+
+#~ msgid "Mix"
+#~ msgstr "كىرىشتۈرۈش"
+
+#~ msgid "Burn"
+#~ msgstr "ئوي"
+
+#~ msgid "Bumpmap"
+#~ msgstr "Bumpmap"
+
+#~ msgid "Reference"
+#~ msgstr "نەقىل"
+
+#~ msgid "new"
+#~ msgstr "يېڭى"
+
+#~ msgid "copy"
+#~ msgstr "كۆچۈر"
+
+#~ msgid "delete"
+#~ msgstr "ئۆچۈر"
+
+#~ msgid "Namespaces"
+#~ msgstr "ئات بوشلۇقى"
+
+#~ msgid "Prefix"
+#~ msgstr "ئالدى قوشۇلغۇچى"
+
+#~ msgid "Namespace"
+#~ msgstr "ئات بوشلۇقى"
+
+#~ msgid "SPARQL"
+#~ msgstr "SPARQL"
+
+#~ msgid "Stylesheets"
+#~ msgstr "ئۇسلۇب جەدۋىلى"
+
+#~ msgid "System"
+#~ msgstr "سىستېما"
+
+#~ msgid "User"
+#~ msgstr "ئىشلەتكۈچى"
+
+#~ msgid "Edit %1"
+#~ msgstr "%1 نى تەھرىرلەش"
+
+#~ msgid "Description"
+#~ msgstr "چۈشەندۈرۈش"
+
+#~ msgid "Empty"
+#~ msgstr "بوش"
+
+#~ msgid "URI"
+#~ msgstr "URI"
+
+#~ msgid "Literal"
+#~ msgstr "يېزىق"
+
+#~ msgid "Blank"
+#~ msgstr "بوش"
+
+#~ msgid "Subject"
+#~ msgstr "تېما"
+
+#~ msgid "Predicate"
+#~ msgstr "مۆلچەرلەش"
+
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "يوق"
+
+#~ msgid "Arabic"
+#~ msgstr "ئەرەبچە"
+
+#~ msgid "Bengali"
+#~ msgstr "بېنگالچە"
+
+#~ msgid "Gujarati"
+#~ msgstr "گۇجاراتچە"
+
+#~ msgid "Kannada"
+#~ msgstr "كانناداچە"
+
+#~ msgid "Malayalam"
+#~ msgstr "مالايامچە"
+
+#~ msgid "Oriya"
+#~ msgstr "ئورىياچە"
+
+#~ msgid "Tamil"
+#~ msgstr "تامىلچە"
+
+#~ msgid "Telugu"
+#~ msgstr "تېلۇگۇچە"
+
+#~ msgid "Tibetan"
+#~ msgstr "تىبەتچە"
+
+#~ msgid "Thai"
+#~ msgstr "تايلاندچە"
+
+#~ msgid "AbjadMinor"
+#~ msgstr "AbjadMinor"
+
+#~ msgid "Opacity"
+#~ msgstr "غۇۋالىقى"
+
+#~ msgid "Recent:"
+#~ msgstr "يېقىنقى:"
+
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "رەڭلەرنى قوش/چىقىرىۋەت…"
+
+#~ msgid "Import Data"
+#~ msgstr "سانلىق-مەلۇمات ئەكىر"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Recommended ( %1 )"
+#~ msgstr "تەۋسىيە( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Other ( %1 )"
+#~ msgstr "باشقا( %1 )"
+
+#~ msgid "Generic"
+#~ msgstr "ئادەتتىكى"
+
+#~ msgid "Currency"
+#~ msgstr "پۇل"
+
+#~ msgid "None"
+#~ msgstr "يوق"
+
+#~ msgid "Cannot find encoding: %1"
+#~ msgstr "كودلاشنى تاپقىلى بولمىدى: %1"
+
+#~ msgid "Data"
+#~ msgstr "سانلىق-مەلۇمات"
+
+#~ msgid "E&ncoding:"
+#~ msgstr "كودلاش(&N):"
+
+#~ msgid "Format"
+#~ msgstr "پىچىمى"
+
+#~ msgid "Delimiter"
+#~ msgstr "ئايرىش بەلگىسى"
+
+#~ msgid "Semicolon"
+#~ msgstr "چېكىتلىك پەش"
+
+#~ msgid "Other"
+#~ msgstr "باشقا"
+
+#~ msgid "Tabulator"
+#~ msgstr "جەدۋەل بەلگىسى"
+
+#~ msgid "Space"
+#~ msgstr "بوشلۇق"
+
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "Decimal symbol:"
+#~ msgstr "ئونلۇق كەسىر چېكىتى(D):"
+
+#~ msgid "&Format:"
+#~ msgstr "فورمات(&F):"
+
+#~ msgid "Ranges"
+#~ msgstr "دائىرە"
+
+#~ msgid "Update"
+#~ msgstr "يېڭىلا"
+
+#~ msgid "Import columns:"
+#~ msgstr "ئىستون ئىمپورت قىلىش:"
+
+#~ msgid "Import lines:"
+#~ msgstr "قۇرلارنى ئىمپورت قىلىش:"
+
+#~ msgid "to"
+#~ msgstr "غا"
+
+#, fuzzy
+#~| msgid "Save Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "پۈتۈك ساقلا"
+
+#, fuzzy
+#~| msgid "Save Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "پۈتۈك ساقلا"
+
+#~ msgid "&Encrypt"
+#~ msgstr "شىفىرلا(&E)"
+
+#~ msgid "Keywords:"
+#~ msgstr "ھالقىلىق سۆز:"
+
+#~ msgid "Subject:"
+#~ msgstr "تېما:"
+
+#~ msgid "Total editing time:"
+#~ msgstr "تەھرىرلىگەن ئومۇمىي ۋاقىت:"
+
+#~ msgid "Encryption:"
+#~ msgstr "شىفىرلاش:"
+
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "ماۋزۇ:"
+
+#~ msgid "Revision number:"
+#~ msgstr "تۈزىتىش قېتىم سانى:"
+
+#~ msgid "Modified:"
+#~ msgstr "ئۆزگەرتكەن:"
+
+#~ msgid "Comments:"
+#~ msgstr "ئىزاھات:"
+
+#~ msgid "Created:"
+#~ msgstr "قۇرۇلغان:"
+
+#~ msgid "Path:"
+#~ msgstr "يول:"
+
+#~ msgid "&Reset"
+#~ msgstr "ئەسلىگە قايتۇر(&R)"
+
+#~ msgid "General"
+#~ msgstr "ئادەتتىكى"
+
+#~ msgid "Decrypt"
+#~ msgstr "شىفىر يەش"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "decryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>پۈتۈكىڭىز ئاپتوماتىك ساقلانمىدى.<p>شىفىرسىزلاشنى تاماملاش ئۈچۈن "
+#~ "پۈتۈكنى ساقلاڭ.</qt>"
+
+#~ msgid "Save Document"
+#~ msgstr "پۈتۈك ساقلا"
+
+#~ msgid "Change"
+#~ msgstr "ئۆزگەرت"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "encryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>پۈتۈكىڭىز ئاپتوماتىك ساقلانمىدى.<p>شىفىرسىزلاشنى تاماملاش ئۈچۈن "
+#~ "پۈتۈكنى ساقلاڭ.</qt>"
+
+#~ msgid "Remove"
+#~ msgstr "چىقىرىۋەت"
+
+#~ msgid "Add Color To Palette"
+#~ msgstr "رەڭنى رەڭ تەڭشەش تاختىسىغا قوش"
+
+#~ msgid "Color name:"
+#~ msgstr "رەڭ ئاتى:"
+
+#, fuzzy
+#~| msgid "Add Color To Palette"
+#~ msgid "Gimp Color Palette (*.gpl)"
+#~ msgstr "رەڭنى رەڭ تەڭشەش تاختىسىغا قوش"
+
+#~ msgid "Palette"
+#~ msgstr "رەڭ تاختىسى"
+
+#~ msgid "Add/Remove Colors"
+#~ msgstr "رەڭلەرنى قوش/چىقىرىۋەت"
+
+#, fuzzy
+#~| msgid "File"
+#~ msgid "Testing: OpenFile"
+#~ msgstr "ھۆججەت"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Testing: ImportFile"
+#~ msgstr "قۇرلارنى ئىمپورت قىلىش:"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "قۇرلارنى ئىمپورت قىلىش:"
+
+#, fuzzy
+#~| msgid "Import Data"
+#~ msgid "Testing: Import Directory"
+#~ msgstr "سانلىق-مەلۇمات ئەكىر"
+
+#, fuzzy
+#~| msgid "Save"
+#~ msgid "Testing: SaveFile"
+#~ msgstr "ساقلا"
+
+#, fuzzy
+#~| msgid "File"
+#~ msgid "Open File"
+#~ msgstr "ھۆججەت"
+
+#, fuzzy
+#~| msgid "Label"
+#~ msgid "TextLabel"
+#~ msgstr "ئەن"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Named"
+#~ msgstr "ئاتى"
+
+#, fuzzy
+#~| msgid "Save"
+#~ msgid "Save File"
+#~ msgstr "ساقلا"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Import Files"
+#~ msgstr "قۇرلارنى ئىمپورت قىلىش:"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Import File"
+#~ msgstr "قۇرلارنى ئىمپورت قىلىش:"
+
+#, fuzzy
+#~| msgid "Import Data"
+#~ msgid "Import Directory"
+#~ msgstr "سانلىق-مەلۇمات ئەكىر"
+
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "يوق"
+
+#~ msgctxt "Solid color stroke or fill"
+#~ msgid "Solid"
+#~ msgstr "لىق تولغان"
+
+#~ msgid "Gradient"
+#~ msgstr "گۈل نۇسخىسى"
+
+#~ msgid "Pattern"
+#~ msgstr "Pattern"
+
+#~ msgid "Page Layout"
+#~ msgstr "بەت جايلاشتۇرۇلۇشى"
+
+#~ msgid "Apply to document"
+#~ msgstr "پۈتۈككە قوللان"
+
+#~ msgid "Left Edge:"
+#~ msgstr "سول گىرۋەك:"
+
+#~ msgid "Binding Edge:"
+#~ msgstr "تىكىش گىرۋىكى:"
+
+#~ msgid "Page Edge:"
+#~ msgstr "بەت گىرۋىكى:"
+
+#~ msgid "Page Layout:"
+#~ msgstr "بەت جايلاشتۇرۇلۇشى:"
+
+#~ msgid "Unit:"
+#~ msgstr "بىرلىكى:"
+
+#~ msgid "Size:"
+#~ msgstr "چوڭلۇقى:"
+
+#~ msgid "Width:"
+#~ msgstr "كەڭلىك:"
+
+#~ msgid "Height:"
+#~ msgstr "ئېگىزلىك:"
+
+#~ msgid "Automatic"
+#~ msgstr "ئاپتوماتىك"
+
+#~ msgid "Left to right"
+#~ msgstr "سولدىن ئوڭغا"
+
+#~ msgid "Right to left"
+#~ msgstr "ئوڭدىن سولغا"
+
+#~ msgid "Top:"
+#~ msgstr "چوققا:"
+
+#~ msgid "Bottom:"
+#~ msgstr "ئاستى:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Delete resource"
+#~ msgstr "مەنبەنى ئۆچۈر"
+
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "قوشىدىغان ھۆججەتنى تاللا"
+
+#~ msgid "Tags"
+#~ msgstr "خەتكۈشلەر"
+
+#~ msgid "Distance:"
+#~ msgstr "ئارىلىق:"
+
+#~ msgid "Round cap"
+#~ msgstr "يۇمىلاق چوقا"
+
+#~ msgid "Square cap"
+#~ msgstr "تۆت چاسا چوقا"
+
+#~ msgid "Thickness:"
+#~ msgstr "قېلىنلىقى:"
+
+#, fuzzy
+#~| msgid "Tags"
+#~ msgid "Tag"
+#~ msgstr "خەتكۈشلەر"
+
+#~ msgid "Tool Options"
+#~ msgstr "قورال تاللانمىلىرى"
+
+#~ msgid "Zoom to Selection"
+#~ msgstr "تاللىغان رايون چوڭلۇقىغا تارايت"
+
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1"
+
+#, fuzzy
+#~| msgid "Automatic"
+#~ msgctxt "Static Image"
+#~ msgid "Static"
+#~ msgstr "ئاپتوماتىك"
+
+#~ msgid "Value (brightness)"
+#~ msgstr "قىممەت(يورۇقلۇقى)"
+
+#~ msgid "Cyan"
+#~ msgstr "توق يېشىل"
+
+#~ msgid "Magenta"
+#~ msgstr "ھال رەڭ"
+
+#~ msgid "Yellow"
+#~ msgstr "سېرىق"
+
+#~ msgid "Black"
+#~ msgstr "قارا"
+
+#~ msgid "Blue to yellow"
+#~ msgstr "كۆكتىن سېرىققا"
+
+#~ msgid "Opacity:"
+#~ msgstr "غۇۋالىقى:"
+
+#~ msgid "&Themes"
+#~ msgstr "ئۆرنەكلەر(&T)"
+
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "كۆڭۈلدىكى"
+
+#~ msgid "&Tools"
+#~ msgstr "قوراللار(&T)"
+
+#~ msgid "Color Selector"
+#~ msgstr "رەڭ تاللىغۇ"
+
+#~ msgid "Ignored"
+#~ msgstr "پەرۋا قىلمىدى"
+
+#~ msgid "                Language:"
+#~ msgstr "                تىل:"
+
+#~ msgid "Formatting"
+#~ msgstr "فورمات"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Testing: OpenDirectories"
+#~ msgstr "قۇرلارنى ئىمپورت قىلىش:"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Testing: ImportDirectories"
+#~ msgstr "قۇرلارنى ئىمپورت قىلىش:"
+
+#, fuzzy
+#~| msgid "Save as %1"
+#~ msgid "Testing: SaveFiles"
+#~ msgstr "%1 سۈپىتىدە ساقلا"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Import Directories"
+#~ msgstr "قۇرلارنى ئىمپورت قىلىش:"
+
+#, fuzzy
+#~| msgid "Save as %1"
+#~ msgid "Save Files"
+#~ msgstr "%1 سۈپىتىدە ساقلا"
+
+#~ msgid "Create Path"
+#~ msgstr "يول قۇر"
+
+#~ msgid "Error!"
+#~ msgstr "خاتالىق!"
+
+#~ msgid "Contacts"
+#~ msgstr "ئالاقەداشلار"
+
+#~ msgid "Events"
+#~ msgstr "ھادىسە"
+
+#~ msgid "Locations"
+#~ msgstr "ئورنى"
+
+#~ msgid "Area"
+#~ msgstr "دائىرە"
+
+#~ msgid "Region"
+#~ msgstr "رايون"
+
+#~ msgid "&Location:"
+#~ msgstr "ئورنى(&L):"
+
+#~ msgid "&Start:"
+#~ msgstr "باشلا(&S):"
+
+#~ msgid "Time and Date"
+#~ msgstr "ۋاقىت ۋە چېسلا"
+
+#~ msgid "Timezone"
+#~ msgstr "ۋاقىت رايونى"
+
+#~ msgid "&Name:"
+#~ msgstr "ئاتى(&N):"
+
+#~ msgid "Contact Information"
+#~ msgstr "ئالاقەداش ئۇچۇرى"
+
+#~ msgid "&Name"
+#~ msgstr "ئاتى(&N)"
+
+#~ msgid "Latitude"
+#~ msgstr "كەڭلىك"
+
+#~ msgid "Longitude"
+#~ msgstr "ئۇزۇنلۇق"
+
+#~ msgid "Location Information"
+#~ msgstr "ئورۇن ئۇچۇرى"
+
+#~ msgid "People"
+#~ msgstr "كىشىلەر"
+
+#~ msgid ""
+#~ "A document with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "بۇنداق ئاتلىق پۈتۈك مەۋجۇت.\n"
+#~ "قاپلامسىز؟"
+
+#~ msgid "%1 (Uncompressed XML Files)"
+#~ msgstr "%1 (پرېسلانمىغان XML ھۆججەتلىرى)"
+
+#~ msgid "%1 (Flat XML File)"
+#~ msgstr "%1 (تۈز XML ھۆججىتى)"
+
+#~ msgid "%1 (Encrypted)"
+#~ msgstr "%1 (شىفىرلانغان)"
+
+#~ msgid "Save Document As"
+#~ msgstr "پۈتۈكنى باشقا ئاتتا ساقلا"
+
+#, fuzzy
+#~| msgid "Save Document As"
+#~ msgid "Export Document As"
+#~ msgstr "پۈتۈكنى باشقا ئاتتا ساقلا"
+
+#~ msgid "Export to PDF"
+#~ msgstr "PDF كە چىقار"
+
+#~ msgid "&OK"
+#~ msgstr "جەزملە(&O)"
+
+#~ msgid "&Cancel"
+#~ msgstr "ۋاز كەچ(&C)"
+
+#~ msgid "&Edit"
+#~ msgstr "تەھرىر(&E)"
+
+#~ msgid "&Close"
+#~ msgstr "ياپ(&C)"
+
+#~ msgid "Dodge"
+#~ msgstr "دوجې"
+
+#~ msgid "Show Shadow"
+#~ msgstr "سايە كۆرسىتىش"
+
+#~| msgctxt "Underline Style"
+#~| msgid "Single"
+#~ msgid "Angle:"
+#~ msgstr "يەككە"
+
+#~| msgid "Color"
+#~ msgid "Color:"
+#~ msgstr "رەڭ"
+
+#~ msgid "Style:"
+#~ msgstr "ئۇسلۇب:"
+
+#~ msgid "Cap:"
+#~ msgstr "چوقىسى:"
+
+#~ msgid "Insert Table"
+#~ msgstr "جەدۋەل قىستۇر"
+
+#~ msgid "Delete Column"
+#~ msgstr "ئىستون ئۆچۈر"
+
+#~ msgid "Delete Row"
+#~ msgstr "قۇر ئۆچۈر"
+
+#~ msgid "Typing"
+#~ msgstr "كىرگۈزۈۋاتىدۇ"
+
+#~ msgid "min"
+#~ msgstr "مىنۇت"
+
+#~ msgid "I&mport..."
+#~ msgstr "ئەكىر(&M)…"
+
+#~ msgid "&Default"
+#~ msgstr "كۆڭۈلدىكى(&D)"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select Item"
+#~ msgstr "تۈر تاللا"
+
+#~ msgid "Background editing tool"
+#~ msgstr "تەگلىك تەھرىرلەش قورالى"
+
+#~ msgid "&Delete Personal Data"
+#~ msgstr "خۇسۇسىي سانلىق-مەلۇماتلارنى ئۆچۈر(&D)"
+
+#~ msgid "&Load From Address Book"
+#~ msgstr "ئادرېس دەپتىرىدىن يۈكلە(&L)"
+
+#~ msgid "Ellipse Shape"
+#~ msgstr "ئېللىپس شەكلى"
+
+#~ msgid "Line Break"
+#~ msgstr "قۇر ئالماشتۇرۇش بەلگىسى"
+
+#~ msgid "&Close All Views"
+#~ msgstr "بارلىق كۆرۈنمىلەرنى ياپ(&C)"
+
+#~ msgid "&Remove View"
+#~ msgstr "كۆرۈنۈشنى چىقىرىۋەت(&R)"
+
+#~ msgid "&Horizontal"
+#~ msgstr "توغرىسىغا(&H)"
+
+#~ msgid "&Vertical"
+#~ msgstr "بويىغا(&V)"
+
+#~ msgid "End"
+#~ msgstr "تامام"
+
+#~ msgid "Form"
+#~ msgstr "كۆزنەك"
+
+#~ msgid "Import"
+#~ msgstr "ئىمپورت قىل"
+
+#~ msgid "Share"
+#~ msgstr "ھەمبەھىر"

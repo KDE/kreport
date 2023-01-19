@@ -1,0 +1,32 @@
+# translation of koreport_webplugin.po to Low Saxon
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Manfred Wiese <m.j.wiese@web.de>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: koreport_webplugin\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-23 09:25+0000\n"
+"PO-Revision-Date: 2011-10-13 21:40+0200\n"
+"Last-Translator: Manfred Wiese <m.j.wiese@web.de>\n"
+"Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
+"Language: nds\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Qt-Contexts: true\n"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemWeb|"
+#~ msgid "Data Source"
+#~ msgstr "Datenborn"
+
+#, fuzzy
+#~| msgid "Web"
+#~ msgctxt "KReportWebPlugin|"
+#~ msgid "Web"
+#~ msgstr "Internet"

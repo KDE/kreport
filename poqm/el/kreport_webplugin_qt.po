@@ -1,0 +1,31 @@
+# koreport_webplugin.po translation [el]
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Stelios <sstavra@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: koreport_webplugin\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-23 09:25+0000\n"
+"PO-Revision-Date: 2011-12-29 02:52+0300\n"
+"Last-Translator: Stelios <sstavra@gmail.com>\n"
+"Language-Team: Greek <kde-i18n-el@kde.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Qt-Contexts: true\n"
+
+#, fuzzy
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemWeb|"
+#~ msgid "Data Source"
+#~ msgstr "Πηγή δεδομένων"
+
+#, fuzzy
+#~| msgid "Web"
+#~ msgctxt "KReportWebPlugin|"
+#~ msgid "Web"
+#~ msgstr "Ιστός"

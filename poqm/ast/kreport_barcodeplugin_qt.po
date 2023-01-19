@@ -1,0 +1,104 @@
+# enolp <enolp@softastur.org>, 2016, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2017-02-06 03:29+0100\n"
+"Last-Translator: enolp <enolp@softastur.org>\n"
+"Language-Team: Asturian <alministradores@softastur.org>\n"
+"Language: ast\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 2.0\n"
+
+#: KReportItemBarcode.cpp:120
+msgctxt "KReportItemBarcode|"
+msgid "Value"
+msgstr "Valor"
+
+#: KReportItemBarcode.cpp:121
+msgctxt "KReportItemBarcode|"
+msgid "Value used if not bound to a field"
+msgstr "Valor usáu si nun s'arreya a un campu"
+
+#: KReportItemBarcode.cpp:125
+msgctxt "KReportItemBarcode|"
+msgid "Left"
+msgstr ""
+
+#: KReportItemBarcode.cpp:125
+msgctxt "KReportItemBarcode|"
+msgid "Center"
+msgstr ""
+
+#: KReportItemBarcode.cpp:125
+msgctxt "KReportItemBarcode|"
+msgid "Right"
+msgstr ""
+
+#: KReportItemBarcode.cpp:127
+msgctxt "KReportItemBarcode|"
+msgid "Horizontal Alignment"
+msgstr ""
+
+#: KReportItemBarcode.cpp:135
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "Code 3 of 9"
+msgstr "Códigu 3 de 9"
+
+#: KReportItemBarcode.cpp:136
+msgctxt "KReportItemBarcode|3 of 3 Extended: Barcode symbology, keep short"
+msgid "Code 3 of 9 Ext."
+msgstr ""
+
+#: KReportItemBarcode.cpp:137
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "Code 128"
+msgstr "Códigu 128"
+
+#: KReportItemBarcode.cpp:138
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "EAN-8"
+msgstr "EAN-8"
+
+#: KReportItemBarcode.cpp:139
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "EAN-13"
+msgstr "EAN-13"
+
+#: KReportItemBarcode.cpp:140
+msgctxt ""
+"KReportItemBarcode|Interleaved barcode 2 of 5: barcode symbology, keep short"
+msgid "Interleaved 2 of 5"
+msgstr ""
+
+#: KReportItemBarcode.cpp:141
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "UPC-A"
+msgstr "UPC-A"
+
+#: KReportItemBarcode.cpp:142
+msgctxt "KReportItemBarcode|Barcode symbology, keep short"
+msgid "UPC-E"
+msgstr "UPC-E"
+
+#: KReportItemBarcode.cpp:145
+msgctxt "KReportItemBarcode|"
+msgid "Barcode Format"
+msgstr "Formatu de códigu de barres"
+
+#: KReportItemBarcode.cpp:147
+msgctxt "KReportItemBarcode|"
+msgid "Max Length"
+msgstr "Llargor máximu"
+
+#: KReportItemBarcode.cpp:148
+msgctxt "KReportItemBarcode|"
+msgid "Maximum Barcode Length"
+msgstr "Llargor máximu del códigu de barres"
+
+#~ msgctxt "KReportItemBarcode|"
+#~ msgid "Data Source"
+#~ msgstr "Fonte de datos"

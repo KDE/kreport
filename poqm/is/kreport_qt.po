@@ -1,0 +1,4101 @@
+# translation of calligra.po to Icelandic
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sveinn í Felli <sveinki@nett.is>, 2011, 2013, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: calligra\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2015-01-29 09:07+0000\n"
+"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
+"Language-Team: Icelandic <kde-isl@molar.is>\n"
+"Language: is\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+#, fuzzy
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "Gat ekki búið til skrá til vistunar"
+
+#: common/KReportDesign.cpp:159
+#, fuzzy
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Villa í innbyggðu skjali"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Nafn"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Heiti hlutar"
+
+#: common/KReportItemBase.cpp:78
+#, fuzzy
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Staðsetning"
+
+#: common/KReportItemBase.cpp:79
+#, fuzzy
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Stærð"
+
+#: common/KReportItemBase.cpp:112
+#, fuzzy
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Gagnagjafi"
+
+#: common/KReportItemLine.cpp:80
+#, fuzzy
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "Staðsetning"
+
+#: common/KReportItemLine.cpp:81
+#, fuzzy
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Staðsetning"
+
+#: common/KReportItemLine.cpp:83
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr ""
+
+#: common/KReportItemLine.cpp:85
+#, fuzzy
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Litur línu"
+
+#: common/KReportItemLine.cpp:86
+#, fuzzy
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Línustíll"
+
+#: common/KReportSectionData.cpp:164
+#, fuzzy
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Staðsetningar"
+
+#: common/KReportSectionData.cpp:166
+#, fuzzy
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "Hæð"
+
+#: common/KReportSectionData.cpp:170
+#, fuzzy
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Bakgrunnslitur"
+
+#: common/KReportUnit.cpp:136
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Bæta við hópi"
+
+#: common/KReportUnit.cpp:138
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "Millímetrar (mm)"
+
+#: common/KReportUnit.cpp:140
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "Sentímetrar (cm)"
+
+#: common/KReportUnit.cpp:142
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "Desímetrar (dm)"
+
+#: common/KReportUnit.cpp:144
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "Tommur (in)"
+
+#: common/KReportUnit.cpp:146
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "Pica (pi)"
+
+#: common/KReportUnit.cpp:148
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "Cicero (cc)"
+
+#: common/KReportUnit.cpp:150
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "Punktar (pt)"
+
+#: common/KReportUnit.cpp:152
+#, fuzzy
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "Punktar (pt)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Kross"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr "Punktur"
+
+#: items/check/KReportItemCheck.cpp:80
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "Stíll"
+
+#: items/check/KReportItemCheck.cpp:84
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Forgrunnslitur"
+
+#: items/check/KReportItemCheck.cpp:86
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:88
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Litur línu"
+
+#: items/check/KReportItemCheck.cpp:89
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Línustíll"
+
+#: items/check/KReportItemCheck.cpp:90
+#, fuzzy
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Gildi"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:90
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Gildi"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Vinstri"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Miðjað"
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Hægri"
+
+#: items/field/KReportItemField.cpp:96
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Lárétt staðsetning"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "Efst"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Neðst"
+
+#: items/field/KReportItemField.cpp:102
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Lóðrétt staðsetning"
+
+#: items/field/KReportItemField.cpp:104
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Letur"
+
+#: items/field/KReportItemField.cpp:106
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Bakgrunnslitur"
+
+#: items/field/KReportItemField.cpp:107
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Forgrunnslitur"
+
+#: items/field/KReportItemField.cpp:109
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Bakgrunnslitur"
+
+#: items/field/KReportItemField.cpp:114
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:116
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Litur línu"
+
+#: items/field/KReportItemField.cpp:117
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Línustíll"
+
+#: items/field/KReportItemField.cpp:119
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr "Skipta línum"
+
+#: items/field/KReportItemField.cpp:120
+#, fuzzy
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr "Getur vaxið"
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr "Myndskeið"
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Teygja"
+
+#: items/image/KReportItemImage.cpp:120
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:121
+#, fuzzy
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Gildi"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:91
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Skýringatexti"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Vinstri"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Miðjað"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Hægri"
+
+#: items/label/KReportItemLabel.cpp:96
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Lárétt staðsetning"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "Efst"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Neðst"
+
+#: items/label/KReportItemLabel.cpp:102
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Lóðrétt staðsetning"
+
+#: items/label/KReportItemLabel.cpp:104
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Letur"
+
+#: items/label/KReportItemLabel.cpp:106
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Bakgrunnslitur"
+
+#: items/label/KReportItemLabel.cpp:107
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Forgrunnslitur"
+
+#: items/label/KReportItemLabel.cpp:109
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Bakgrunnslitur"
+
+#: items/label/KReportItemLabel.cpp:114
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:116
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Litur línu"
+
+#: items/label/KReportItemLabel.cpp:117
+#, fuzzy
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Línustíll"
+
+#: items/text/KReportItemText.cpp:115
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Gildi"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Vinstri"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Miðjað"
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Hægri"
+
+#: items/text/KReportItemText.cpp:121
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Lárétt staðsetning"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "Efst"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Neðst"
+
+#: items/text/KReportItemText.cpp:127
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Lóðrétt staðsetning"
+
+#: items/text/KReportItemText.cpp:129
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Letur"
+
+#: items/text/KReportItemText.cpp:131
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Bakgrunnslitur"
+
+#: items/text/KReportItemText.cpp:132
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Forgrunnslitur"
+
+#: items/text/KReportItemText.cpp:134
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:136
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Litur línu"
+
+#: items/text/KReportItemText.cpp:137
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Línustíll"
+
+#: items/text/KReportItemText.cpp:138
+#, fuzzy
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Bakgrunnslitur"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, fuzzy, qt-format
+#| msgid "Script File"
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr "Skriftuskrá"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+#, fuzzy
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Innri villa"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:676
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Haus á síðu"
+
+#: wrtembed/KReportDesigner.cpp:680
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Haus á síðu"
+
+#: wrtembed/KReportDesigner.cpp:684
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Haus á síðu"
+
+#: wrtembed/KReportDesigner.cpp:688
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Haus á síðu"
+
+#: wrtembed/KReportDesigner.cpp:692
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Haus á síðu"
+
+#: wrtembed/KReportDesigner.cpp:696
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "Síðufótur"
+
+#: wrtembed/KReportDesigner.cpp:700
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "Síðufótur"
+
+#: wrtembed/KReportDesigner.cpp:704
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "Síðufótur"
+
+#: wrtembed/KReportDesigner.cpp:708
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "Síðufótur"
+
+#: wrtembed/KReportDesigner.cpp:712
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "Síðufótur"
+
+#: wrtembed/KReportDesigner.cpp:716
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "Haus á skýrslu"
+
+#: wrtembed/KReportDesigner.cpp:720
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "Fótur á skýrslu"
+
+#: wrtembed/KReportDesigner.cpp:808
+#, fuzzy
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "Flytja út"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Titill"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Fótur á skýrslu"
+
+#: wrtembed/KReportDesigner.cpp:818
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Blaðsíðustærð"
+
+#: wrtembed/KReportDesigner.cpp:821
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Blaðsíðustærð"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "Lóðrétt"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "Lárétt"
+
+#: wrtembed/KReportDesigner.cpp:827
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "Stefna:"
+
+#: wrtembed/KReportDesigner.cpp:832
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Blaðsíðustærð"
+
+#: wrtembed/KReportDesigner.cpp:833
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Sýna möskva"
+
+#: wrtembed/KReportDesigner.cpp:834
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Jafna við hnitanet"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:841
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Vinstri spássía"
+
+#: wrtembed/KReportDesigner.cpp:843
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Hægri spássía"
+
+#: wrtembed/KReportDesigner.cpp:845
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Efri spássía"
+
+#: wrtembed/KReportDesigner.cpp:847
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Neðri spássía"
+
+#: wrtembed/KReportDesigner.cpp:869
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Hlutur"
+
+#: wrtembed/KReportDesigner.cpp:1067
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Klippa"
+
+#: wrtembed/KReportDesigner.cpp:1071
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Afrita"
+
+#: wrtembed/KReportDesigner.cpp:1076
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Líma"
+
+#: wrtembed/KReportDesigner.cpp:1087
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Eyða"
+
+#: wrtembed/KReportDesigner.cpp:1129
+#, fuzzy
+#| msgid "Line"
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Lína"
+
+#: wrtembed/KReportDesigner.cpp:1476
+#, fuzzy
+#| msgid "Line"
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Lína"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1525
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "Afrita"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1531
+#, fuzzy
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "Líma"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1544
+#, fuzzy
+#| msgid "Collection"
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Safn"
+
+#: wrtembed/KReportDesigner.cpp:1547
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1549
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr ""
+
+#: wrtembed/KReportDesignerSection.cpp:126
+#, fuzzy
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "Nánar"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+#, fuzzy
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Staðsetningar"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+#, fuzzy
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Dálki:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+#, fuzzy
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Raða"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+#, fuzzy
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Sýna möskva"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+#, fuzzy
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Fótur á skýrslu"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+
+#: wrtembed/KReportRuler_p.cpp:1472
+#, fuzzy
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Inndráttur á fyrstu línu"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+#, fuzzy
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Vinstri inndráttur"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+#, fuzzy
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Hægri inndráttur"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.cpp:74
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "Breyta..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Eyða"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Færa &upp"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Færa &niður"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr "Hækkandi"
+
+#: wrtembed/KReportSectionEditor.cpp:312
+#, fuzzy
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr "Lækkandi"
+
+#: wrtembed/KReportSectionEditor.ui:29
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Sýna möskva"
+
+#: wrtembed/KReportSectionEditor.ui:36
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Fótur á skýrslu"
+
+#: wrtembed/KReportSectionEditor.ui:43
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Haus á síðu"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "Fyrsta síða"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Even Page(s)"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Even Page(s)"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Síðasta síða"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Odd Page(s)"
+
+#: wrtembed/KReportSectionEditor.ui:130
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "Síðufótur"
+
+#: wrtembed/KReportSectionEditor.ui:217
+#, fuzzy
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Staðsetningar"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, fuzzy, qt-format
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+#, fuzzy
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Laga að breidd glugga"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+#, fuzzy
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Passa á síðu"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr ""
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+#, fuzzy
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Laga að breidd glugga"
+
+#, fuzzy
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "US Letter"
+
+#, fuzzy
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "US Legal"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "Sérsniðið"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B6"
+#~ msgstr "B"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B5"
+#~ msgstr "B"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B4"
+#~ msgstr "B"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "Keyra"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B0"
+#~ msgstr "B"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B1"
+#~ msgstr "B"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "ISO B10"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B2"
+#~ msgstr "B"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B3"
+#~ msgstr "B"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "Komma"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "ISO DL"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Folio"
+#~ msgstr "US Folio"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "US Ledger"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Tabloid"
+#~ msgstr "US Tabloid"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "Póstnúmer:"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Skjár"
+
+#, fuzzy
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "Staðsetning"
+
+#, fuzzy
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "Hæð"
+
+#, fuzzy
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Bakgrunnslitur"
+
+#, fuzzy
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "Stærð"
+
+#, fuzzy
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Gagnagjafi"
+
+#, fuzzy
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Gagnagjafi"
+
+#, fuzzy
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Gagnagjafi"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "ISO A3"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "ISO A4"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "ISO A5"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "ISO B5"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "US Executive"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "ISO A0"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "ISO A1"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "ISO A2"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "ISO A6"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "ISO A7"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "ISO A8"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "ISO A9"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "ISO B0"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "ISO B1"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "ISO B2"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "ISO B3"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "ISO B4"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "ISO B6"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "ISO C5"
+
+#, fuzzy
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Common 10"
+#~ msgstr "US Common 10"
+
+#, fuzzy
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "Hæð"
+
+#, fuzzy
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "Bakgrunnslitur"
+
+#, fuzzy
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "Litur línu"
+
+#, fuzzy
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "Línustíll"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Gagnagjafi"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "Gildi"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "Bakgrunnslitur"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "Forgrunnslitur"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "Litur línu"
+
+#, fuzzy
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "Línustíll"
+
+#, fuzzy
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Gagnagjafi"
+
+#, fuzzy
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "Gildi"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "Vinstri"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "Miðjað"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "Hægri"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Lárétt staðsetning"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "Efst"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "Neðst"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Lóðrétt staðsetning"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "Letur"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "Bakgrunnslitur"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "Forgrunnslitur"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "Bakgrunnslitur"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "Litur línu"
+
+#, fuzzy
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "Línustíll"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Gagnagjafi"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "Gildi"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "Vinstri"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "Miðjað"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "Hægri"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Lárétt staðsetning"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "Efst"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "Neðst"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Lóðrétt staðsetning"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "Letur"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "Bakgrunnslitur"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "Forgrunnslitur"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "Litur línu"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "Línustíll"
+
+#, fuzzy
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "Bakgrunnslitur"
+
+#, fuzzy
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "Eyða"
+
+#, fuzzy
+#~| msgid "Script Manager"
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "Skriftustjóri"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Sveinn í Felli"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "sv1@fellsnet.is"
+
+#~ msgid "Precision:"
+#~ msgstr "Nákvæmni:"
+
+#~ msgid "Curve"
+#~ msgstr "Boglína"
+
+#~ msgid "Straight"
+#~ msgstr "Beint"
+
+#, fuzzy
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr "Gat ekki flutt út skrá."
+
+#, fuzzy
+#~ msgid "The database \"%1\" does not exist."
+#~ msgstr "Skráin %1 er ekki til."
+
+#, fuzzy
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "Skráin %1 er ekki til."
+
+#, fuzzy
+#~ msgid "Database file \"%1\" is not writable."
+#~ msgstr "Skráin %1 er ekki til."
+
+#, fuzzy
+#~ msgid "Creating table failed."
+#~ msgstr "Búa til afrit"
+
+#, fuzzy
+#~ msgid "Cannot create table without fields."
+#~ msgstr "Get ekki búið til geymslu"
+
+#, fuzzy
+#~ msgid "Could not create the same table \"%1\" twice."
+#~ msgstr "Gat ekki lesið pakkan \"%1\"."
+
+#, fuzzy
+#~ msgid "Table \"%1\" does not exist."
+#~ msgstr "Skráin %1 er ekki til."
+
+#, fuzzy
+#~ msgid "Could not alter table \"%1\" using the same table as destination."
+#~ msgstr "Gat ekki lesið upphaf skráarinnar."
+
+#, fuzzy
+#~ msgid "Could not rename table \"%1\" using the same name."
+#~ msgstr "Gat ekki lesið upphaf skráarinnar."
+
+#, fuzzy
+#~ msgid "Query \"%1\" does not exist."
+#~ msgstr "Skráin %1 er ekki til."
+
+#, fuzzy
+#~ msgid "Begin transaction failed."
+#~ msgstr "Búa til afrit"
+
+#, fuzzy
+#~ msgid "Transaction already started."
+#~ msgstr "Þetta nafn er í notkun."
+
+#, fuzzy
+#~ msgid "Column <resource>%1</resource> does not exist in the query."
+#~ msgstr "Skráin %1 er ekki til."
+
+#, fuzzy
+#~ msgid ""
+#~ "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~ "XML data: %4"
+#~ msgstr ""
+#~ "Þáttunarvilla í %1 á línu %2, dálki %3\n"
+#~ "Villuboð: %4"
+
+#, fuzzy
+#~ msgid "Could not insert record because there is no master table specified."
+#~ msgstr "Gat ekki lesið pakkan \"%1\"."
+
+#, fuzzy
+#~ msgid "Could not delete record because there is no master table specified."
+#~ msgstr "Gat ekki lesið pakkan \"%1\"."
+
+#, fuzzy
+#~ msgid "Unknown error."
+#~ msgstr "Óþekkt villa"
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "Dags.: %1"
+
+#, fuzzy
+#~ msgid "Could not set value of database property \"%1\"."
+#~ msgstr "Gat ekki lesið pakkan \"%1\"."
+
+#, fuzzy
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "Gat ekki lesið pakkan \"%1\"."
+
+#, fuzzy
+#~ msgid "Could not read database properties."
+#~ msgstr "Gat ekki lesið upphaf skráarinnar."
+
+#, fuzzy
+#~ msgid "Could not find database driver \"%1\"."
+#~ msgstr "Gat ekki lesið pakkan \"%1\"."
+
+#, fuzzy
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "Gat ekki lesið pakkan \"%1\"."
+
+#, fuzzy
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "Gat ekki lesið pakkan \"%1\"."
+
+#, fuzzy
+#~ msgid "Field not found"
+#~ msgstr "Skrá fannst ekki"
+
+#, fuzzy
+#~ msgid "Could not access the table directly using its name"
+#~ msgstr "Gat ekki búið til skrá til vistunar"
+
+#, fuzzy
+#~ msgid "Table not found"
+#~ msgstr "Skrá fannst ekki"
+
+#, fuzzy
+#~ msgid "Table \"%1\" has no \"%2\" field."
+#~ msgstr "Skráin %1 er ekki til."
+
+#, fuzzy
+#~ msgid "Short Integer Number"
+#~ msgstr "Símanúmer"
+
+#, fuzzy
+#~ msgid "Integer Number"
+#~ msgstr "Símanúmer"
+
+#, fuzzy
+#~ msgid "Date"
+#~ msgstr "Dagsetning"
+
+#, fuzzy
+#~ msgid "Date and Time"
+#~ msgstr "Dagur og tími"
+
+#, fuzzy
+#~ msgid "Time"
+#~ msgstr "Tímabelti"
+
+#, fuzzy
+#~ msgid "Single Precision Number"
+#~ msgstr "Útgáfunúmer:"
+
+#, fuzzy
+#~ msgid "Double Precision Number"
+#~ msgstr "Útgáfunúmer:"
+
+#, fuzzy
+#~ msgid "Text"
+#~ msgstr "Texti"
+
+#, fuzzy
+#~ msgid "Long Text"
+#~ msgstr "Texti"
+
+#, fuzzy
+#~ msgid "Date/Time"
+#~ msgstr "Dagur og tími"
+
+#, fuzzy
+#~ msgid "Syntax error."
+#~ msgstr "Innri villa"
+
+#, fuzzy
+#~ msgid "Error"
+#~ msgstr "Villa!"
+
+#, fuzzy
+#~ msgid "Error near \"%1\"."
+#~ msgstr "Innri villa"
+
+#, fuzzy
+#~ msgid "Server's port number"
+#~ msgstr "Útgáfunúmer:"
+
+#, fuzzy
+#~ msgid "Record inserting failed."
+#~ msgstr "Búa til afrit"
+
+#, fuzzy
+#~ msgid "Record deleting failed."
+#~ msgstr "Búa til afrit"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Change Connection"
+#~ msgid "Test Connection"
+#~ msgstr "Breyta tengingu"
+
+#, fuzzy
+#~ msgid "Number"
+#~ msgstr "Símanúmer"
+
+#, fuzzy
+#~ msgid "Image"
+#~ msgstr "Mynd"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr "Breyta tengingu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr "Skipta um breytu"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "Umbreyta í línuteikningu"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Merge points"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "Sameina punkta"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "Sameina punkta"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Keep Aspect Ratio"
+#~ msgstr "Halda stærðarhlutföllum"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr "Heimasíða"
+
+#~ msgid "Standard"
+#~ msgstr "Staðlað"
+
+#~ msgid "Lines"
+#~ msgstr "Línur"
+
+#, fuzzy
+#~ msgid "Type:"
+#~ msgstr "Tegund:"
+
+#, fuzzy
+#~ msgid "Tie"
+#~ msgstr "Bindi"
+
+#~ msgid "%1 Options"
+#~ msgstr "Valmöguleikar %1"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "Líma skyggnu"
+
+#, fuzzy
+#~ msgid " px"
+#~ msgstr " px"
+
+#~ msgid "Pan"
+#~ msgstr "Hliðra"
+
+#, fuzzy
+#~ msgid "Segment to Line"
+#~ msgstr "Breyta leturstíl?"
+
+#~ msgid "Zoom"
+#~ msgstr "Aðdráttur"
+
+#, fuzzy
+#~ msgid "Zoom In"
+#~ msgstr "Renna að"
+
+#, fuzzy
+#~ msgid "Zoom Out"
+#~ msgstr "Renna frá"
+
+#, fuzzy
+#~ msgid "..."
+#~ msgstr "..."
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Convert to Path"
+#~ msgid "Convert To Path"
+#~ msgstr "Umbreyta í línuteikningu"
+
+#~ msgid "Scripts"
+#~ msgstr "Skriftur"
+
+#~ msgid "Execute Script File..."
+#~ msgstr "Keyra skriftuskrá..."
+
+#~ msgid "Script Manager..."
+#~ msgstr "Skriftustjóri..."
+
+#~ msgid "Execute Script File"
+#~ msgstr "Keyra skriftuskrá"
+
+#, fuzzy
+#~ msgid "Install Script Package"
+#~ msgstr "Setja inn skriftupakka"
+
+#, fuzzy
+#~ msgid "Could not read the package \"%1\"."
+#~ msgstr "Gat ekki lesið pakkan \"%1\"."
+
+#, fuzzy
+#~ msgid ""
+#~ "A script package with the name \"%1\" already exists. Replace this "
+#~ "package?"
+#~ msgstr "Skriftupakki með nafninu \"%1\" er þegar til. Skipta honum út?"
+
+#, fuzzy
+#~ msgid "Replace"
+#~ msgstr "Skipta út"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not uninstall this script package. You may not have sufficient "
+#~ "permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Gat ekki fjarlægt skriftupakkan. Það getur verið að þú hafir ekki nægar "
+#~ "heimildir til að eyða möppunni \"%1\"."
+
+#~ msgid "Save"
+#~ msgstr "Vista"
+
+#~ msgid "Add"
+#~ msgstr "Bæta við"
+
+#~ msgid "Script"
+#~ msgstr "Skrifta"
+
+#~ msgid "Collection"
+#~ msgstr "Safn"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "Stilla uppsetningu á síðu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display master background"
+#~ msgstr "Sekúnda"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "Eyða síðu"
+#~ msgstr[1] "Eyða síðu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr "Setja inn síðu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "Flytja skyggnu"
+#~ msgstr[1] "Flytja skyggnu"
+
+#, fuzzy
+#~ msgid "Configure"
+#~ msgstr "Stilla"
+
+#, fuzzy
+#~ msgid "Misc"
+#~ msgstr "Ýmislegt"
+
+#, fuzzy
+#~ msgid "Grid"
+#~ msgstr "Hnitanet"
+
+#, fuzzy
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "Skjal"
+
+#, fuzzy
+#~ msgid "Document Settings"
+#~ msgstr "Stillingar skjals"
+
+#, fuzzy
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "Höfundur"
+
+#, fuzzy
+#~ msgid "Author"
+#~ msgstr "Höfundur"
+
+#~ msgid "Slide %1"
+#~ msgstr "Skyggna %1"
+
+#, fuzzy
+#~ msgid "Layer"
+#~ msgstr "Lag"
+
+#, fuzzy
+#~ msgid "Group"
+#~ msgstr "Hópur"
+
+#, fuzzy
+#~ msgid "Shape"
+#~ msgstr "Form"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "Líma skyggnu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "Heimasíða"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "Nýtt lag"
+
+#, fuzzy
+#~ msgid "Slide"
+#~ msgstr "Skyggna"
+
+#, fuzzy
+#~ msgid "Visible"
+#~ msgstr "Sýnilegt"
+
+#, fuzzy
+#~ msgid "Locked"
+#~ msgstr "Læst"
+
+#, fuzzy
+#~ msgid "C&ancel"
+#~ msgstr "&Hætta við"
+
+#, fuzzy
+#~ msgid "Document"
+#~ msgstr "Skjal"
+
+#, fuzzy
+#~ msgid "Page"
+#~ msgstr "Síða"
+
+#, fuzzy
+#~ msgid "Detailed View"
+#~ msgstr "Nákvæmur listi"
+
+#, fuzzy
+#~ msgid "Thumbnail View"
+#~ msgstr "Smámyndasýn"
+
+#, fuzzy
+#~ msgid "New Layer"
+#~ msgstr "Nýtt lag"
+
+#, fuzzy
+#~ msgid "New layer"
+#~ msgstr "Nýtt lag"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "Eyða lagi"
+
+#~ msgid "Page %1"
+#~ msgstr "Síða %1"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] "Líma skyggnu"
+#~ msgstr[1] "Líma skyggnu"
+
+#, fuzzy
+#~ msgid "Tools"
+#~ msgstr "Áhöld"
+
+#, fuzzy
+#~ msgid "D&elete"
+#~ msgstr "&Eyða"
+
+#, fuzzy
+#~ msgid "Show Rulers"
+#~ msgstr "Sýna stikur"
+
+#, fuzzy
+#~ msgid "Insert Page"
+#~ msgstr "Setja inn síðu"
+
+#, fuzzy
+#~ msgid "Delete Page"
+#~ msgstr "Eyða síðu"
+
+#, fuzzy
+#~ msgid "Page Layout..."
+#~ msgstr "Uppsetning á síðu..."
+
+#, fuzzy
+#~ msgid "Variable"
+#~ msgstr "Breyta"
+
+#, fuzzy
+#~ msgid "Configure..."
+#~ msgstr "Stilla..."
+
+#, fuzzy
+#~ msgid "Import Document"
+#~ msgstr "Flytja inn skjal"
+
+#, fuzzy
+#~ msgid "Background"
+#~ msgstr "Bakgrunnslitur"
+
+#, fuzzy
+#~ msgid "Page Background"
+#~ msgstr "Bakgrunnslitur"
+
+#, fuzzy
+#~ msgid "Page Design"
+#~ msgstr "Haus á síðu"
+
+#, fuzzy
+#~| msgid "Slide %1"
+#~ msgid "Slide Design"
+#~ msgstr "Skyggna %1"
+
+#, fuzzy
+#~ msgid "Display shapes of master page"
+#~ msgstr "Sekúnda"
+
+#, fuzzy
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "Líma skyggnu"
+
+#, fuzzy
+#~| msgid "Slide %1"
+#~ msgid "Slide %1/%2"
+#~ msgstr "Skyggna %1"
+
+#, fuzzy
+#~ msgid "Master Page %1/%2"
+#~ msgstr "Síðasta síða"
+
+#, fuzzy
+#~| msgid "Page %1"
+#~ msgid "Page %1/%2"
+#~ msgstr "Síða %1"
+
+#, fuzzy
+#~ msgid "Check Box"
+#~ msgstr "Prófa"
+
+#, fuzzy
+#~ msgid "Field"
+#~ msgstr "Svæði"
+
+#, fuzzy
+#~ msgid "Label"
+#~ msgstr "Merki"
+
+#, fuzzy
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "Breyta"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "Línustíll"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "Eyða"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "Texti"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "Eyða Hópur"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "Eyða röð"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "Setja inn atriðaskrá"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr "Setja inn atriðaskrá"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "Setja inn röð fyrir ofan"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "Snið"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr "Heimasíða"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "Líma"
+
+#, fuzzy
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "Staðsetningar"
+
+#, fuzzy
+#~ msgctxt "Underline Style"
+#~ msgid "None"
+#~ msgstr "Ekkert"
+
+#, fuzzy
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "Einföld"
+
+#, fuzzy
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "Tvöföld"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "Setja inn bókamerki"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "Bæta við"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "Setja inn atriðaskrá"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "Setja inn breytu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "Setja inn skil"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "Setja inn töflu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "Sameina reiti"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "Kljúfa hólf"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr "Laga að breidd glugga"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Setja inn töflu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr "Setja inn töflu"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Setja inn skil"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "Bæta við"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr "Feitletrað"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "Skáletrað"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "Undirstrikað"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr "Yfirstrikað"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr "Breyta"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr "Lóðrétt staðsetning"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "Minnka inndrátt"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "Auka inndrátt"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "Minnka inndrátt"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "Auka inndrátt"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr "Letur"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr "Bakgrunnslitur"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Text Color"
+#~ msgstr "Velja textalit"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr "Línustíll"
+
+#, fuzzy
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "Snið"
+
+#, fuzzy
+#~ msgid "Default"
+#~ msgstr "Sjálfgefið"
+
+#, fuzzy
+#~ msgctxt "Default text for undo action"
+#~ msgid "Undo"
+#~ msgstr "Afturkalla"
+
+#, fuzzy
+#~ msgid "Undo %1"
+#~ msgstr "Afturkalla %1"
+
+#, fuzzy
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "Endurtaka"
+
+#, fuzzy
+#~ msgid "Redo %1"
+#~ msgstr "Endurtaka %1"
+
+#, fuzzy
+#~ msgid "<empty>"
+#~ msgstr "Tómt"
+
+#, fuzzy
+#~ msgid "Redo"
+#~ msgstr "Endurtaka"
+
+#, fuzzy
+#~ msgid "Undo"
+#~ msgstr "Afturkalla"
+
+#, fuzzy
+#~ msgid "&File"
+#~ msgstr "&Skrá"
+
+#, fuzzy
+#~ msgid "&Settings"
+#~ msgstr "&Stillingar"
+
+#, fuzzy
+#~ msgid "File"
+#~ msgstr "Skrá"
+
+#, fuzzy
+#~ msgid "Name:"
+#~ msgstr "Nafn:"
+
+#, fuzzy
+#~ msgid "Initials:"
+#~ msgstr "Upphafsstafir:"
+
+#, fuzzy
+#~ msgid "Title:"
+#~ msgstr "Titill:"
+
+#, fuzzy
+#~ msgid "Position:"
+#~ msgstr "Staða:"
+
+#, fuzzy
+#~ msgid "Company:"
+#~ msgstr "Fyrirtæki:"
+
+#, fuzzy
+#~ msgid "Email:"
+#~ msgstr "Netfang:"
+
+#, fuzzy
+#~ msgid "Telephone (home):"
+#~ msgstr "Heimasími:"
+
+#, fuzzy
+#~ msgid "Telephone (work):"
+#~ msgstr "Vinnusími:"
+
+#, fuzzy
+#~ msgid "Fax:"
+#~ msgstr "Fax:"
+
+#, fuzzy
+#~ msgid "Street:"
+#~ msgstr "Gata:"
+
+#, fuzzy
+#~ msgid "City:"
+#~ msgstr "Borg:"
+
+#, fuzzy
+#~ msgid "Country:"
+#~ msgstr "Land:"
+
+#, fuzzy
+#~ msgid "Create backup file:"
+#~ msgstr "Búa til afrit"
+
+#, fuzzy
+#~ msgid "Show grid:"
+#~ msgstr "Sýna hnitanet:"
+
+#, fuzzy
+#~ msgid "Grid color:"
+#~ msgstr "Stilla lit möskva:"
+
+#, fuzzy
+#~ msgid "Spacing"
+#~ msgstr "Millibil"
+
+#, fuzzy
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "&Lárétt:"
+
+#, fuzzy
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "Lóð&rétt:"
+
+#, fuzzy
+#~ msgid "Units:"
+#~ msgstr "Mælieiningar:"
+
+#, fuzzy
+#~ msgid "Only print and exit"
+#~ msgstr "Bara prenta og hætta"
+
+#, fuzzy
+#~ msgid "Open a new document with a template"
+#~ msgstr "Búa til nýtt skjal út frá sniðskrá"
+
+#, fuzzy
+#~ msgid "Override display DPI"
+#~ msgstr "Hunsa upplausn skjás"
+
+#, fuzzy
+#~ msgid "%1: Critical Error"
+#~ msgstr "Undirbúningsvilla"
+
+#, fuzzy
+#~ msgid "Too many templates found for: %1"
+#~ msgstr "Of mörg snið fundust fyrir: %1"
+
+#, fuzzy
+#~ msgid "Template %1 failed to load."
+#~ msgstr "Mistókst að hlaða inn sniðinu %1."
+
+#, fuzzy
+#~ msgid "Always use this template at application start up"
+#~ msgstr "Alltaf nota þetta snið þegar forrit ræsir sig"
+
+#, fuzzy
+#~ msgid "Always use this template"
+#~ msgstr "Alltaf nota þetta snið"
+
+#, fuzzy
+#~ msgid "Making backup..."
+#~ msgstr "Bý til afrit..."
+
+#, fuzzy
+#~ msgid "Saving..."
+#~ msgstr "Vista..."
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Gat ekki vistað\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Gat ekki vistað %1\n"
+#~ "Ástæða: %2"
+
+#, fuzzy
+#~ msgid "Autosaving..."
+#~ msgstr "Sjálfvirk vistun..."
+
+#, fuzzy
+#~ msgid "Error during autosave! Partition full?"
+#~ msgstr "Villa við sjálfvirka vistun! Disksneið full?"
+
+#, fuzzy
+#~ msgid "Could not create the file for saving"
+#~ msgstr "Gat ekki búið til skrá til vistunar"
+
+#, fuzzy
+#~ msgid "Not able to write '%1'. Partition full?"
+#~ msgstr "Get ekki skrifað '%1'. Disksneið full?"
+
+#, fuzzy
+#~ msgid "Error while trying to write '%1'. Partition full?"
+#~ msgstr "Villa við skrifun af '%1'. Disksneið full?"
+
+#, fuzzy
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Gölluð slóð\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgid ""
+#~ "An autosaved file exists for this document.\n"
+#~ "Do you want to open it instead?"
+#~ msgstr ""
+#~ "Öryggisafrit er til fyrir þetta skjal.\n"
+#~ "Viltu opna það í staðinn?"
+
+#, fuzzy
+#~ msgid "The file %1 does not exist."
+#~ msgstr "Skráin %1 er ekki til."
+
+#, fuzzy
+#~ msgid "Opening Document"
+#~ msgstr "Opna skjal"
+
+#, fuzzy
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "Gat ekki búið til skrá til vistunar"
+
+#, fuzzy
+#~ msgid "File not found"
+#~ msgstr "Skrá fannst ekki"
+
+#, fuzzy
+#~ msgid "Cannot create storage"
+#~ msgstr "Get ekki búið til geymslu"
+
+#, fuzzy
+#~ msgid "Bad MIME type"
+#~ msgstr "Ógild MIME tegund"
+
+#, fuzzy
+#~ msgid "Format not recognized"
+#~ msgstr "Óþekkt snið"
+
+#, fuzzy
+#~ msgid "Not implemented"
+#~ msgstr "Ekki útfært enn"
+
+#, fuzzy
+#~ msgid "Parsing error"
+#~ msgstr "Þáttunarvilla"
+
+#, fuzzy
+#~ msgid "Document is password protected"
+#~ msgstr "Skjalið er lykilorðsvarið"
+
+#, fuzzy
+#~ msgid "Internal error"
+#~ msgstr "Innri villa"
+
+#, fuzzy
+#~ msgid "Out of memory"
+#~ msgstr "Minnið er búið"
+
+#, fuzzy
+#~ msgid "Unknown error"
+#~ msgstr "Óþekkt villa"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr ""
+#~ "Gat ekki opnað %1\n"
+#~ "Ástæða: %2"
+
+#, fuzzy
+#~ msgid "Could not find %1"
+#~ msgstr "Gat ekki fundið %1"
+
+#, fuzzy
+#~ msgid ""
+#~ "Parsing error in %1 at line %2, column %3\n"
+#~ "Error message: %4"
+#~ msgstr ""
+#~ "Þáttunarvilla í %1 á línu %2, dálki %3\n"
+#~ "Villuboð: %4"
+
+#, fuzzy
+#~ msgid "%1 is not a file."
+#~ msgstr "%1 er ekki skrá."
+
+#, fuzzy
+#~ msgid "Could not open the file for reading (check read permissions)."
+#~ msgstr "Gat ekki opnað skrána til lesturs (athugaðu lesréttindi)."
+
+#, fuzzy
+#~ msgid "Could not read the beginning of the file."
+#~ msgstr "Gat ekki lesið upphaf skráarinnar."
+
+#, fuzzy
+#~ msgid ""
+#~ "parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Þáttunarvilla í aðalskjali á línu %1, dálki %2\n"
+#~ "Villuboð: %3"
+
+#, fuzzy
+#~ msgid "Invalid document: no file 'maindoc.xml'."
+#~ msgstr "Ógilt skjal: 'maindoc.xml' er ekki til."
+
+#, fuzzy
+#~ msgid "Untitled"
+#~ msgstr "Ónefnt"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr ""
+#~ "<p>Skjalinu <b>'%1'</b> hefur verið breytt.</p><p>Viltu vista það?</p>"
+
+#, fuzzy
+#~ msgid "Internal error: saveXML not implemented"
+#~ msgstr "Innri villa: vistun á XML hefur ekki verið útfærð"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Gat ekki opnað\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Gat ekki opnað %1\n"
+#~ "Ástæða: %2"
+
+#, fuzzy
+#~ msgid "a word processing"
+#~ msgstr "ritvinnsla"
+
+#, fuzzy
+#~ msgid "a spreadsheet"
+#~ msgstr "töflureiknir"
+
+#, fuzzy
+#~ msgid "a presentation"
+#~ msgstr "kynning"
+
+#, fuzzy
+#~ msgid "a chart"
+#~ msgstr "graf"
+
+#, fuzzy
+#~ msgid "a drawing"
+#~ msgstr "teikning"
+
+#, fuzzy
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr ""
+#~ "<p>Skjalinu <b>'%1'</b> hefur verið breytt.</p><p>Viltu vista það?</p>"
+
+#, fuzzy
+#~ msgid "Close Document"
+#~ msgstr "Sérsniðið skjal"
+
+#, fuzzy
+#~ msgid "%1 %"
+#~ msgstr "%1 %"
+
+#, fuzzy
+#~ msgid "No"
+#~ msgstr "Nei"
+
+#, fuzzy
+#~ msgid "Yes"
+#~ msgstr "Já"
+
+#, fuzzy
+#~ msgid "Could not export file."
+#~ msgstr "Gat ekki flutt út skrá."
+
+#, fuzzy
+#~ msgid "Missing Export Filter"
+#~ msgstr "Vantar útflutningssíu"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not import file of type\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Gat ekki flutt inn skrá af tegund\n"
+#~ "%1"
+
+#, fuzzy
+#~ msgid "Missing Import Filter"
+#~ msgstr "Vantar innflutningssíu"
+
+#, fuzzy
+#~ msgid "Choose Filter"
+#~ msgstr "Velja síu"
+
+#, fuzzy
+#~ msgid "Case Sensitive"
+#~ msgstr "Háð há/lágstöfum"
+
+#, fuzzy
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "Finna:"
+
+#, fuzzy
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "Næsta"
+
+#, fuzzy
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "Fyrri"
+
+#, fuzzy
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "Valkostir"
+
+#, fuzzy
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "Skipta út"
+
+#, fuzzy
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "Skipta út"
+
+#, fuzzy
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "Skipta út"
+
+#, fuzzy
+#~ msgid "Export as PDF..."
+#~ msgstr "Flytja út sem PDF..."
+
+#, fuzzy
+#~ msgid "Reload"
+#~ msgstr "Endurlesa"
+
+#, fuzzy
+#~ msgid "Versions..."
+#~ msgstr "Útgáfur..."
+
+#, fuzzy
+#~ msgid "E&xport..."
+#~ msgstr "&Flytja út..."
+
+#, fuzzy
+#~ msgid "En&crypt Document"
+#~ msgstr "Flytja inn skjal"
+
+#, fuzzy
+#~ msgid "&New View"
+#~ msgstr "&Ný sýn"
+
+#, fuzzy
+#~ msgid "Document Information"
+#~ msgstr "Upplýsingar um skjal"
+
+#, fuzzy
+#~ msgid "Full Screen Mode"
+#~ msgstr "Fylla skjá"
+
+#, fuzzy
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "Sýna %1 tækjaslá"
+
+#, fuzzy
+#~ msgid "Save as %1"
+#~ msgstr "Vista sem %1"
+
+#, fuzzy
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "%1 (óþekkt skráartegund)"
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
+#~ "want to save in this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Vistun sem %1 gæti valdið tapi af uppsetningu. <p>Viltu eftir sem "
+#~ "áður vista í þessu sniði?</qt>"
+
+#, fuzzy
+#~ msgid "Confirm Save"
+#~ msgstr "Staðfesta vistun"
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you "
+#~ "still want to export to this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Að flytja út sem %1 gæti valdið tapi af uppsetningu. <p>Viltu eftir "
+#~ "sem áður flytja út í þessu sniði?</qt>"
+
+#, fuzzy
+#~ msgid "Confirm Export"
+#~ msgstr "Staðfesta útflutning"
+
+#, fuzzy
+#~ msgid "untitled"
+#~ msgstr "Ónefnt"
+
+#, fuzzy
+#~ msgid "Open Document"
+#~ msgstr "Opna skjal"
+
+#, fuzzy
+#~ msgid "Export as PDF"
+#~ msgstr "Flytja út sem PDF..."
+
+#, fuzzy
+#~ msgid "Document - %1"
+#~ msgstr "Skjal - %1"
+
+#, fuzzy
+#~ msgid "Warning"
+#~ msgstr "Aðvörun"
+
+#, fuzzy
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "Sýna %1 tækjaslá"
+
+#, fuzzy
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "Fela %1 tækjaslá"
+
+#, fuzzy
+#~ msgid "Open Existing Document"
+#~ msgstr "Opna þetta skjal"
+
+#, fuzzy
+#~ msgid "Recent Documents"
+#~ msgstr "Nýleg skjöl"
+
+#, fuzzy
+#~ msgid "Custom Document"
+#~ msgstr "Sérsniðið skjal"
+
+#, fuzzy
+#~ msgid "Stop"
+#~ msgstr "Stöðva"
+
+#, fuzzy
+#~ msgid "Close"
+#~ msgstr "Loka"
+
+#, fuzzy
+#~ msgid "Stopped"
+#~ msgstr "Stöðvað"
+
+#, fuzzy
+#~ msgid "Open This Document"
+#~ msgstr "Opna þetta skjal"
+
+#, fuzzy
+#~ msgctxt "File modification date and time. %1 is date time"
+#~ msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Breytt:</b></td><td>%1</td></tr>"
+
+#, fuzzy
+#~ msgctxt "File access date and time. %1 is date time"
+#~ msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Opnað:</b></td><td>%1</td></tr>"
+
+#, fuzzy
+#~ msgid "Create Template"
+#~ msgstr "Búa til sniðmát"
+
+#, fuzzy
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "Nafn:"
+
+#, fuzzy
+#~ msgid "Group:"
+#~ msgstr "Hópur:"
+
+#, fuzzy
+#~ msgid "&Add Group..."
+#~ msgstr "Bæt&a við hóp..."
+
+#, fuzzy
+#~ msgid "&Remove"
+#~ msgstr "&Fjarlægja"
+
+#, fuzzy
+#~ msgid "Picture"
+#~ msgstr "Mynd"
+
+#, fuzzy
+#~ msgid "&Preview"
+#~ msgstr "Forskoðun:"
+
+#, fuzzy
+#~ msgid "Custom:"
+#~ msgstr "Sérsniðið"
+
+#, fuzzy
+#~ msgid "&Select..."
+#~ msgstr "&Velja..."
+
+#, fuzzy
+#~ msgid "Use the new template as default"
+#~ msgstr "Nota nýja sniðið sem sjálfgefið"
+
+#, fuzzy
+#~ msgid "Use the new template every time %1 starts"
+#~ msgstr "Nota nýja sniðið í hvert sinn %1 er hlaðið inn"
+
+#, fuzzy
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr "Viltu virkilega skrifa yfir sniðið '%1' sem þegar er til?"
+
+#, fuzzy
+#~ msgid "Add Group"
+#~ msgstr "Bæta við hópi"
+
+#, fuzzy
+#~ msgid "Enter group name:"
+#~ msgstr "Skrifaðu nafn á hóp:"
+
+#, fuzzy
+#~ msgid "This name is already used."
+#~ msgstr "Þetta nafn er í notkun."
+
+#, fuzzy
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "Viltu virkilega fjarlægja þennan hóp?"
+
+#, fuzzy
+#~ msgid "Remove Group"
+#~ msgstr "Fjarlægja hóp"
+
+#, fuzzy
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "Viltu virkilega fjarlægja þetta snið?"
+
+#, fuzzy
+#~ msgid "Remove Template"
+#~ msgstr "Fjarlægja sniðskrá"
+
+#, fuzzy
+#~ msgid "&Delete"
+#~ msgstr "&Eyða"
+
+#, fuzzy
+#~ msgid "Could not load picture."
+#~ msgstr "Gat ekki hlaðið inn mynd."
+
+#, fuzzy
+#~ msgid "No picture available."
+#~ msgstr "Engin mynd til."
+
+#, fuzzy
+#~ msgid "Use This Template"
+#~ msgstr "Nota þetta snið"
+
+#, fuzzy
+#~ msgid "Version"
+#~ msgstr "Útgáfa"
+
+#, fuzzy
+#~ msgid "Date & Time"
+#~ msgstr "Dagur og tími"
+
+#, fuzzy
+#~ msgid "Saved By"
+#~ msgstr "Vistað af"
+
+#, fuzzy
+#~ msgid "Comment"
+#~ msgstr "Athugasemd"
+
+#, fuzzy
+#~ msgid "&Add"
+#~ msgstr "Bæt&a við"
+
+#, fuzzy
+#~ msgid "&Modify"
+#~ msgstr "&Breyta"
+
+#, fuzzy
+#~ msgid "&Open"
+#~ msgstr "&Opna"
+
+#, fuzzy
+#~ msgid "Date: %1"
+#~ msgstr "Dags.: %1"
+
+#, fuzzy
+#~ msgid "Unknown"
+#~ msgstr "Óþekkt"
+
+#, fuzzy
+#~ msgid ""
+#~ "Parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Þáttunarvilla í aðalskjali á línu %1, dálki %2\n"
+#~ "Villuboð: %3"
+
+#, fuzzy
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "Skjár"
+
+#, fuzzy
+#~ msgid "The directory mode is not supported for remote locations."
+#~ msgstr "Möppuhamurinn er ekki studdur fyrir fjarlægar staðsetningar."
+
+#, fuzzy
+#~ msgid "Clear"
+#~ msgstr "Hreinsa"
+
+#, fuzzy
+#~ msgid "Subtract"
+#~ msgstr "Draga frá"
+
+#, fuzzy
+#~ msgid "Multiply"
+#~ msgstr "Margfalda"
+
+#, fuzzy
+#~ msgid "Alpha"
+#~ msgstr "Alfa"
+
+#, fuzzy
+#~ msgid "Lightness"
+#~ msgstr "Ljósleiki"
+
+#, fuzzy
+#~ msgid "Blue"
+#~ msgstr "Blár"
+
+#, fuzzy
+#~ msgid "Green"
+#~ msgstr "Grænn"
+
+#, fuzzy
+#~ msgid "Red"
+#~ msgstr "Rauður"
+
+#, fuzzy
+#~ msgid "Dissolve"
+#~ msgstr "Leysa upp"
+
+#, fuzzy
+#~ msgid "Erase"
+#~ msgstr "Eyða"
+
+#, fuzzy
+#~ msgid "Normal"
+#~ msgstr "Venjulegt"
+
+#, fuzzy
+#~ msgid "Overlay"
+#~ msgstr "Leggja yfir"
+
+#, fuzzy
+#~ msgid "Grain Merge"
+#~ msgstr "Kornablöndun"
+
+#, fuzzy
+#~ msgid "Grain Extract"
+#~ msgstr "Kornaeimun"
+
+#, fuzzy
+#~ msgid "Parallel"
+#~ msgstr "Samsíða"
+
+#, fuzzy
+#~ msgid "Lighten"
+#~ msgstr "Lýsa"
+
+#, fuzzy
+#~ msgid "Hard Light"
+#~ msgstr "Hart ljós"
+
+#, fuzzy
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "Mjúkt ljós"
+
+#, fuzzy
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "Mjúkt ljós"
+
+#, fuzzy
+#~ msgid "Darken"
+#~ msgstr "Dekkja"
+
+#, fuzzy
+#~ msgid "Addition"
+#~ msgstr "Bæta við"
+
+#, fuzzy
+#~ msgid "Divide"
+#~ msgstr "Deila"
+
+#, fuzzy
+#~ msgid "Difference"
+#~ msgstr "Mismunur"
+
+#, fuzzy
+#~ msgid "Color"
+#~ msgstr "Litur"
+
+#, fuzzy
+#~ msgid "Hue"
+#~ msgstr "Litblær"
+
+#, fuzzy
+#~ msgid "Saturation"
+#~ msgstr "Litmettun"
+
+#, fuzzy
+#~ msgid "Luminosity"
+#~ msgstr "Birtustig"
+
+#, fuzzy
+#~ msgid "Darker Color"
+#~ msgstr "Bakgrunnslitur"
+
+#, fuzzy
+#~ msgid "Lighter Color"
+#~ msgstr "Litur línu"
+
+#, fuzzy
+#~ msgid "Intensity"
+#~ msgstr "Styrkur"
+
+#, fuzzy
+#~ msgid "R"
+#~ msgstr "R"
+
+#, fuzzy
+#~ msgid "G"
+#~ msgstr "G"
+
+#, fuzzy
+#~ msgid "Grayscale"
+#~ msgstr "Grátóna"
+
+#, fuzzy
+#~ msgid "YCbCr"
+#~ msgstr "YCbCr"
+
+#, fuzzy
+#~ msgid "Negative"
+#~ msgstr "Neikvætt"
+
+#, fuzzy
+#~ msgid "HSL"
+#~ msgstr "HSL"
+
+#, fuzzy
+#~ msgid "HSV"
+#~ msgstr "HSV"
+
+#, fuzzy
+#~ msgid "Mix"
+#~ msgstr "Blöndun"
+
+#, fuzzy
+#~ msgid "Burn"
+#~ msgstr "Brenna"
+
+#, fuzzy
+#~ msgid "Reference"
+#~ msgstr "Tilvísun"
+
+#, fuzzy
+#~ msgid "new"
+#~ msgstr "nýtt"
+
+#, fuzzy
+#~ msgid "copy"
+#~ msgstr "afrita"
+
+#, fuzzy
+#~ msgid "delete"
+#~ msgstr "eyða"
+
+#, fuzzy
+#~ msgid "Namespaces"
+#~ msgstr "Nafnasvið"
+
+#, fuzzy
+#~ msgid "Prefix"
+#~ msgstr "Forskeyti"
+
+#, fuzzy
+#~ msgid "Namespace"
+#~ msgstr "Nafnasvið"
+
+#, fuzzy
+#~ msgid "Stylesheets"
+#~ msgstr "Stílblöð"
+
+#, fuzzy
+#~ msgid "System"
+#~ msgstr "Kerfi"
+
+#, fuzzy
+#~ msgid "User"
+#~ msgstr "Notandi"
+
+#, fuzzy
+#~ msgid "Edit %1"
+#~ msgstr "Breyta %1"
+
+#, fuzzy
+#~ msgid "Stylesheet Definition"
+#~ msgstr "Stílblöð"
+
+#, fuzzy
+#~ msgid "Description"
+#~ msgstr "Lýsing"
+
+#, fuzzy
+#~ msgid "Stylesheet Name"
+#~ msgstr "Stílblöð"
+
+#, fuzzy
+#~ msgid "Empty"
+#~ msgstr "Tómt"
+
+#, fuzzy
+#~ msgid "URI"
+#~ msgstr "Slóð"
+
+#, fuzzy
+#~ msgid "Blank"
+#~ msgstr "Tómt"
+
+#, fuzzy
+#~ msgid "Valid"
+#~ msgstr "Gilt"
+
+#, fuzzy
+#~ msgid "Subject"
+#~ msgstr "Efni"
+
+#, fuzzy
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "Ekkert"
+
+#, fuzzy
+#~ msgid "Circle Bullet"
+#~ msgstr "Hringlaga bóla"
+
+#, fuzzy
+#~ msgid "Square Bullet"
+#~ msgstr "Ferköntuð bóla"
+
+#, fuzzy
+#~ msgid "Arabic"
+#~ msgstr "Arabíska"
+
+#, fuzzy
+#~ msgid "Lower Alphabetical"
+#~ msgstr "Lágstafir"
+
+#, fuzzy
+#~ msgid "Upper Alphabetical"
+#~ msgstr "Hástafir"
+
+#, fuzzy
+#~ msgid "Bengali"
+#~ msgstr "Bengalska"
+
+#, fuzzy
+#~ msgid "Gujarati"
+#~ msgstr "Gujarati"
+
+#, fuzzy
+#~ msgid "Kannada"
+#~ msgstr "Kannada"
+
+#, fuzzy
+#~ msgid "Malayalam"
+#~ msgstr "Malaíalam"
+
+#, fuzzy
+#~ msgid "Oriya"
+#~ msgstr "Oryanska"
+
+#, fuzzy
+#~ msgid "Tamil"
+#~ msgstr "Tamílska"
+
+#, fuzzy
+#~ msgid "Telugu"
+#~ msgstr "Telugu"
+
+#, fuzzy
+#~ msgid "Tibetan"
+#~ msgstr "Tíbetska"
+
+#, fuzzy
+#~ msgid "Thai"
+#~ msgstr "Tælenska"
+
+#, fuzzy
+#~ msgid "Opacity"
+#~ msgstr "Ógagnsæi"
+
+#, fuzzy
+#~ msgid "Import Data"
+#~ msgstr "Flytja inn gögn"
+
+#, fuzzy
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Recommended ( %1 )"
+#~ msgstr "Ráðlögð ( %1 )"
+
+#, fuzzy
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Locale ( %1 )"
+#~ msgstr "Staðbundin ( %1 )"
+
+#, fuzzy
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Other ( %1 )"
+#~ msgstr "Önnur ( %1 )"
+
+#, fuzzy
+#~ msgid "Generic"
+#~ msgstr "Almennt"
+
+#, fuzzy
+#~ msgid "Currency"
+#~ msgstr "Gjaldmiðill"
+
+#, fuzzy
+#~ msgid "None"
+#~ msgstr "Ekkert"
+
+#, fuzzy
+#~ msgid ""
+#~ "Please check the ranges you specified. The start value must be lower than "
+#~ "the end value."
+#~ msgstr ""
+#~ "Vinsamlega athugaðu sviðið sem þú tilgreindir. Upphafsgildið verður að "
+#~ "vera lægra en endagildið."
+
+#, fuzzy
+#~ msgid "Cannot find encoding: %1"
+#~ msgstr "Finn ekki stafatöflu: %1"
+
+#, fuzzy
+#~ msgid "Data"
+#~ msgstr "Gögn"
+
+#, fuzzy
+#~ msgid "E&ncoding:"
+#~ msgstr "Kóðu&n:"
+
+#, fuzzy
+#~ msgid "Format"
+#~ msgstr "Snið"
+
+#, fuzzy
+#~ msgid "Delimiter"
+#~ msgstr "Afmarkari"
+
+#, fuzzy
+#~ msgid "Semicolon"
+#~ msgstr "Semíkomma"
+
+#, fuzzy
+#~ msgid "Other"
+#~ msgstr "Annað"
+
+#, fuzzy
+#~ msgid "Tabulator"
+#~ msgstr "Dálkstillir"
+
+#, fuzzy
+#~ msgid "Space"
+#~ msgstr "Bil"
+
+#, fuzzy
+#~ msgid "\""
+#~ msgstr "\""
+
+#, fuzzy
+#~ msgid "'"
+#~ msgstr "'"
+
+#, fuzzy
+#~ msgid "Decimal symbol:"
+#~ msgstr "Tugabrotatákn:"
+
+#, fuzzy
+#~ msgid "Thousands separator:"
+#~ msgstr "Þúsundatákn:"
+
+#, fuzzy
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "Hunsa tvöfalda aðgreina"
+
+#, fuzzy
+#~ msgid "&Format:"
+#~ msgstr "&Snið:"
+
+#, fuzzy
+#~ msgid "Ranges"
+#~ msgstr "Svið"
+
+#, fuzzy
+#~ msgid "Update"
+#~ msgstr "Uppfæra"
+
+#, fuzzy
+#~ msgid "Import columns:"
+#~ msgstr "Flytja inn skjal"
+
+#, fuzzy
+#~ msgid "to"
+#~ msgstr "til"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "Sérsniðið skjal"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "Sérsniðið skjal"
+
+#, fuzzy
+#~ msgid "&Encrypt"
+#~ msgstr "&Dulrita"
+
+#, fuzzy
+#~ msgid "Keywords:"
+#~ msgstr "Stikkorð:"
+
+#, fuzzy
+#~ msgid "Subject:"
+#~ msgstr "Viðfangsefni:"
+
+#, fuzzy
+#~ msgid "Last printed:"
+#~ msgstr "Síðast prentað:"
+
+#, fuzzy
+#~ msgid "Total editing time:"
+#~ msgstr "Heildartími ritunar:"
+
+#, fuzzy
+#~ msgid "Encryption:"
+#~ msgstr "Dulritun:"
+
+#, fuzzy
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "Titill:"
+
+#, fuzzy
+#~ msgid "Revision number:"
+#~ msgstr "Útgáfunúmer:"
+
+#, fuzzy
+#~ msgid "Modified:"
+#~ msgstr "Breytt:"
+
+#, fuzzy
+#~ msgid "Comments:"
+#~ msgstr "Athugasemdir:"
+
+#, fuzzy
+#~ msgid "Created:"
+#~ msgstr "Búið til:"
+
+#, fuzzy
+#~ msgid "Path:"
+#~ msgstr "Slóð:"
+
+#, fuzzy
+#~ msgid "&Reset"
+#~ msgstr "F&rumstilla"
+
+#, fuzzy
+#~ msgid "Language:"
+#~ msgstr "Síðasta síða"
+
+#, fuzzy
+#~ msgid "General"
+#~ msgstr "Almennt"
+
+#, fuzzy
+#~ msgid "Last saved by"
+#~ msgstr "Síðasta síða"
+
+#, fuzzy
+#~ msgid "Save Document"
+#~ msgstr "Vista skjal"
+
+#, fuzzy
+#~ msgid "Change"
+#~ msgstr "Breyta"
+
+#, fuzzy
+#~ msgid "Remove"
+#~ msgstr "Fjarlægja"
+
+#, fuzzy
+#~ msgid "Open palette"
+#~ msgstr "Litaspjald"
+
+#, fuzzy
+#~ msgid "Save palette"
+#~ msgstr "Litaspjald"
+
+#, fuzzy
+#~ msgid "Palette"
+#~ msgstr "Litaspjald"
+
+#, fuzzy
+#~ msgid "Testing: OpenFile"
+#~ msgstr "Litaspjald"
+
+#, fuzzy
+#~ msgid "Testing: ImportFile"
+#~ msgstr "Vantar innflutningssíu"
+
+#, fuzzy
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "Vantar innflutningssíu"
+
+#, fuzzy
+#~ msgid "Testing: Import Directory"
+#~ msgstr "Flytja inn skjal"
+
+#, fuzzy
+#~ msgid "Testing: SaveFile"
+#~ msgstr "Litaspjald"
+
+#, fuzzy
+#~ msgid "Open File"
+#~ msgstr "Litaspjald"
+
+#, fuzzy
+#~ msgid "Open Files"
+#~ msgstr "Litaspjald"
+
+#, fuzzy
+#~ msgid "Filter:"
+#~ msgstr "Velja síu"
+
+#, fuzzy
+#~ msgid "TextLabel"
+#~ msgstr "Merki"
+
+#, fuzzy
+#~ msgid "Named"
+#~ msgstr "Nafn"
+
+#, fuzzy
+#~ msgid "Save File"
+#~ msgstr "Litaspjald"
+
+#, fuzzy
+#~ msgid "Import Files"
+#~ msgstr "Vantar innflutningssíu"
+
+#, fuzzy
+#~ msgid "Import File"
+#~ msgstr "Vantar innflutningssíu"
+
+#, fuzzy
+#~ msgid "Import Directory"
+#~ msgstr "Flytja inn skjal"
+
+#, fuzzy
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "Ekkert"
+
+#, fuzzy
+#~ msgid "Change the filling gradient"
+#~ msgstr "Breyta"
+
+#, fuzzy
+#~ msgid "Icon and Text"
+#~ msgstr "Texti"
+
+#, fuzzy
+#~ msgid "Bottom side"
+#~ msgstr "Neðst"
+
+#, fuzzy
+#~ msgid "Left side"
+#~ msgstr "Vinstri inndráttur"
+
+#, fuzzy
+#~ msgid "Right side"
+#~ msgstr "Hægri inndráttur"
+
+#, fuzzy
+#~ msgid "Page Layout"
+#~ msgstr "Síðuupsetning"
+
+#, fuzzy
+#~ msgid "Unit:"
+#~ msgstr "Eining:"
+
+#, fuzzy
+#~ msgid "Size:"
+#~ msgstr "Stærð:"
+
+#, fuzzy
+#~ msgid "Width:"
+#~ msgstr "Breidd:"
+
+#, fuzzy
+#~ msgid "Height:"
+#~ msgstr "Hæð:"
+
+#, fuzzy
+#~ msgid "Single sided"
+#~ msgstr "Einföld"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Change Connection"
+#~ msgid "Text direction:"
+#~ msgstr "Breyta tengingu"
+
+#, fuzzy
+#~ msgid "Automatic"
+#~ msgstr "Sjálfvirkt"
+
+#, fuzzy
+#~ msgid "Left to right"
+#~ msgstr "Frá vinstri til hægri"
+
+#, fuzzy
+#~ msgid "Right to left"
+#~ msgstr "Frá hægri til vinstri"
+
+#, fuzzy
+#~ msgid "Margins"
+#~ msgstr "Spássíur"
+
+#, fuzzy
+#~ msgid "Top:"
+#~ msgstr "Efst:"
+
+#, fuzzy
+#~ msgid "Page edge:"
+#~ msgstr "Haus á síðu"
+
+#, fuzzy
+#~ msgid "Bottom:"
+#~ msgstr "Neðst:"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "Flytja inn skjal"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Delete resource"
+#~ msgstr "Eyða auðlind"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "Eyða auðlind"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "Eyða auðlind"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "Velja síu"
+
+#, fuzzy
+#~ msgid "New tag"
+#~ msgstr "Nýtt lag"
+
+#, fuzzy
+#~ msgid "Miter limit"
+#~ msgstr "Afmarkari"
+
+#, fuzzy
+#~ msgid "Rename tag"
+#~ msgstr "Heimasíða"
+
+#, fuzzy
+#~ msgid "Delete this tag"
+#~ msgstr "Eyða síðu"
+
+#, fuzzy
+#~ msgid "Undelete"
+#~ msgstr "eyða"
+
+#~ msgid "Tool Options"
+#~ msgstr "Valkostir áhalda"
+
+#, fuzzy
+#~ msgid "Zoom to Selection"
+#~ msgstr "Aðdráttur að völdu"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1%"
+
+#, fuzzy
+#~ msgctxt "Static Image"
+#~ msgid "Static"
+#~ msgstr "Sjálfvirkt"
+
+#, fuzzy
+#~ msgid "Value (brightness)"
+#~ msgstr "Gildi (birta)"
+
+#, fuzzy
+#~ msgid "Cyan"
+#~ msgstr "Blágrænn"
+
+#, fuzzy
+#~ msgid "Magenta"
+#~ msgstr "Fjólublár"
+
+#, fuzzy
+#~ msgid "Yellow"
+#~ msgstr "Gulur"
+
+#, fuzzy
+#~ msgid "Black"
+#~ msgstr "Svart"
+
+#, fuzzy
+#~ msgid "Opacity:"
+#~ msgstr "Ógagnsæi:"
+
+#, fuzzy
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "Sjálfgefið"
+
+#, fuzzy
+#~ msgid "Configuration..."
+#~ msgstr "Stilla..."
+
+#, fuzzy
+#~ msgid "&Tools"
+#~ msgstr "Áhöld"
+
+#, fuzzy
+#~ msgid "Database file \"%1\" does not exist."
+#~ msgstr "Skráin %1 er ekki til."
+
+#, fuzzy
+#~ msgid "Table \"%1\" does not exist in the database."
+#~ msgstr "Skráin %1 er ekki til."
+
+#, fuzzy
+#~ msgid "Could not compact database \"%1\"."
+#~ msgstr "Gat ekki lesið pakkan \"%1\"."
+
+#, fuzzy
+#~ msgid "Could not gain exclusive access for writing the file."
+#~ msgstr "Gat ekki lesið upphaf skráarinnar."
+
+#, fuzzy
+#~ msgid "Could not close busy database."
+#~ msgstr "Gat ekki hlaðið inn mynd."
+
+#, fuzzy
+#~ msgid "Could not remove file \"%1\"."
+#~ msgstr "Gat ekki flutt út skrá."
+
+#, fuzzy
+#~ msgid "Table \"%1\" does not exist"
+#~ msgstr "Skráin %1 er ekki til."
+
+#, fuzzy
+#~ msgid "Formatting"
+#~ msgstr "Snið"
+
+#, fuzzy
+#~ msgid "Testing: OpenDirectories"
+#~ msgstr "Flytja inn skjal"
+
+#, fuzzy
+#~ msgid "Testing: ImportDirectories"
+#~ msgstr "Flytja inn skjal"
+
+#, fuzzy
+#~ msgid "Testing: SaveFiles"
+#~ msgstr "Litaspjald"
+
+#, fuzzy
+#~ msgid "Import Directories"
+#~ msgstr "Flytja inn skjal"
+
+#, fuzzy
+#~ msgid "Save Files"
+#~ msgstr "Litaspjald"
+
+#, fuzzy
+#~ msgid "Error!"
+#~ msgstr "Villa!"
+
+#, fuzzy
+#~ msgid "Contacts"
+#~ msgstr "Tengiliðir"
+
+#, fuzzy
+#~ msgid "Events"
+#~ msgstr "Atburðir"
+
+#, fuzzy
+#~ msgid "Locations"
+#~ msgstr "Staðsetningar"
+
+#, fuzzy
+#~ msgid "Area"
+#~ msgstr "Svæði"
+
+#, fuzzy
+#~ msgid "Region"
+#~ msgstr "Svæði"
+
+#, fuzzy
+#~ msgid "&Summary:"
+#~ msgstr "Yfirlit"
+
+#, fuzzy
+#~ msgid "&Location:"
+#~ msgstr "Staðsetning"
+
+#, fuzzy
+#~ msgid "&Start:"
+#~ msgstr "Byrja"
+
+#, fuzzy
+#~ msgid "Time and Date"
+#~ msgstr "Tími og dagsetning"
+
+#, fuzzy
+#~ msgid "Timezone"
+#~ msgstr "Tímabelti"
+
+#, fuzzy
+#~ msgid "&Name:"
+#~ msgstr "Nafn:"
+
+#, fuzzy
+#~ msgid "&Nick:"
+#~ msgstr "Gælunafn"
+
+#, fuzzy
+#~ msgid "&Phone Number:"
+#~ msgstr "Símanúmer"
+
+#, fuzzy
+#~ msgid "&Home Page:"
+#~ msgstr "Heimasíða"
+
+#, fuzzy
+#~ msgid "Contact Information"
+#~ msgstr "Upplýsingar um tengilið"
+
+#, fuzzy
+#~ msgid "&Name"
+#~ msgstr "Nafn"
+
+#, fuzzy
+#~ msgid "Latitude"
+#~ msgstr "Breiddargráða"
+
+#, fuzzy
+#~ msgid "Longitude"
+#~ msgstr "Lengdargráða"
+
+#, fuzzy
+#~ msgid "People"
+#~ msgstr "Fólk"
+
+#, fuzzy
+#~ msgid ""
+#~ "A document with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "Það er þegar til skjal með þessu nafni.\n"
+#~ "Viltu skrifa yfir það?"
+
+#, fuzzy
+#~ msgid "%1 (Uncompressed XML Files)"
+#~ msgstr "%1 (óþjappaðar XML skrár)"
+
+#, fuzzy
+#~ msgid "%1 (Flat XML File)"
+#~ msgstr "%1 (flöt XML skrá)"
+
+#, fuzzy
+#~ msgid "%1 (Encrypted)"
+#~ msgstr "&Dulrita"
+
+#, fuzzy
+#~ msgid "%1 (%2 Compatible)"
+#~ msgstr "%1 (%2 samhæf)"
+
+#, fuzzy
+#~ msgid "Save Document As"
+#~ msgstr "Vista skjal sem"
+
+#, fuzzy
+#~ msgid "Export Document As"
+#~ msgstr "Flytja skjal út sem"
+
+#, fuzzy
+#~ msgid "Export to PDF"
+#~ msgstr "Flytja út sem PDF..."
+
+#, fuzzy
+#~ msgid "Slide Background"
+#~ msgstr "Bakgrunnslitur"
+
+#, fuzzy
+#~ msgid "Document background"
+#~ msgstr "Sekúnda"
+
+#, fuzzy
+#~ msgid "&OK"
+#~ msgstr "Í &lagi"
+
+#, fuzzy
+#~ msgid "&Cancel"
+#~ msgstr "&Hætta við"
+
+#, fuzzy
+#~ msgid "Even Pages(s)"
+#~ msgstr "Even Page(s)"
+
+#, fuzzy
+#~ msgid "Any Pages(s)"
+#~ msgstr "Even Page(s)"
+
+#, fuzzy
+#~ msgid "&Edit"
+#~ msgstr "Br&eyta"
+
+#, fuzzy
+#~ msgid "&Close"
+#~ msgstr "&Loka"
+
+#, fuzzy
+#~ msgid "Dodge"
+#~ msgstr "Upplita"
+
+#, fuzzy
+#~ msgid "Hard light"
+#~ msgstr "Skarpt ljós"
+
+#, fuzzy
+#~ msgid "Soft light"
+#~ msgstr "Mjúkt lýsing"
+
+#, fuzzy
+#~ msgid "Show Shadow"
+#~ msgstr "Sýna möskva"
+
+#, fuzzy
+#~ msgid "Angle:"
+#~ msgstr "Einföld"
+
+#, fuzzy
+#~ msgid "Color:"
+#~ msgstr "Litur"
+
+#, fuzzy
+#~ msgid "Style:"
+#~ msgstr "Stíll:"
+
+#, fuzzy
+#~ msgid "Insert Table"
+#~ msgstr "Setja inn töflu"
+
+#, fuzzy
+#~ msgid "Insert Row Above"
+#~ msgstr "Setja inn röð fyrir ofan"
+
+#, fuzzy
+#~ msgid "Delete Column"
+#~ msgstr "Eyða Hópur"
+
+#, fuzzy
+#~ msgid "Delete Row"
+#~ msgstr "Eyða röð"
+
+#, fuzzy
+#~ msgid "Insert Bibliography"
+#~ msgstr "Setja inn skil"
+
+#, fuzzy
+#~ msgid "min"
+#~ msgstr "mín"
+
+#, fuzzy
+#~ msgid "DetailsPaneBase"
+#~ msgstr "DetailsPaneBase"
+
+#, fuzzy
+#~ msgid "Embedding Object"
+#~ msgstr "Felli inn hlut"
+
+#, fuzzy
+#~ msgid "I&mport..."
+#~ msgstr "Flytja &inn..."
+
+#, fuzzy
+#~ msgid "&Default"
+#~ msgstr "S&jálfgefið"
+
+#, fuzzy
+#~ msgid ""
+#~ "An autosaved file for an unnamed document exists in %1.\n"
+#~ "This file is dated %2\n"
+#~ "Do you want to open it?"
+#~ msgstr ""
+#~ "Sjálfvirk vistun fyrir ónefnt skjal finnst í %1.\n"
+#~ "Skjalið er dagsett %2\n"
+#~ "Viltu opna það?"
+
+#, fuzzy
+#~ msgid ""
+#~ "No personal contact data set, please use the "
+#~ "option                                     \"Set as Personal Contact Data"
+#~ "\" from the \"Edit\"     menu in KAddressbook to set one."
+#~ msgstr ""
+#~ "Ekkert persónulegt auðkenni sett upp. Notaðu "
+#~ "valkostinn                            \"Setja sem persónulegt auðkenni\" "
+#~ "frá \"Breyta\" valmyndinni í KAddressbook til að útbúa eitt slíkt."
+
+#, fuzzy
+#~ msgid "&Load From Address Book"
+#~ msgstr "&Ná í frá vistfangaskrá"
+
+#, fuzzy
+#~ msgid "Line Break"
+#~ msgstr "Línuskil"
+
+#, fuzzy
+#~ msgid "Hide Grid"
+#~ msgstr "Fela möskva"
+
+#, fuzzy
+#~ msgid "&Close All Views"
+#~ msgstr "&Loka öllum sýnum"
+
+#, fuzzy
+#~ msgid "&Split View"
+#~ msgstr "&Kljúfa sýn"
+
+#, fuzzy
+#~ msgid "&Remove View"
+#~ msgstr "&Fjarlægja sýn"
+
+#, fuzzy
+#~ msgid "Splitter &Orientation"
+#~ msgstr "&Klofnigsátt"
+
+#, fuzzy
+#~ msgid "&Horizontal"
+#~ msgstr "Lá&rétt"
+
+#, fuzzy
+#~ msgid "&Vertical"
+#~ msgstr "&Lóðrétt"
+
+#, fuzzy
+#~ msgid "End"
+#~ msgstr "Endir"

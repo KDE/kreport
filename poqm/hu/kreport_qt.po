@@ -1,0 +1,6367 @@
+#
+# MARTON, JOZSEF <jmarton@linux.gyakg.u-szeged.hu>, 2000.
+# Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2011, 2012, 2015.
+# Balázs Úr <urbalazs@gmail.com>, 2012, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: KOffice 1.6\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2015-09-08 09:56+0200\n"
+"Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
+"Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.5\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "Nem sikerült feldolgozni az XML dokumentumot."
+
+#: common/KReportDesign.cpp:159
+#, fuzzy
+#| msgid "Error in embedded document"
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Hiba a beágyazott dokumentumban"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgctxt "KoReportItemBase|"
+#| msgid "Name"
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Név"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgctxt "KoReportItemBase|"
+#| msgid "Object Name"
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Objektumnév"
+
+#: common/KReportItemBase.cpp:78
+#, fuzzy
+#| msgctxt "KRPos|"
+#| msgid "Position"
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Pozíció"
+
+#: common/KReportItemBase.cpp:79
+#, fuzzy
+#| msgctxt "KRSize|"
+#| msgid "Size"
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "Méret"
+
+#: common/KReportItemBase.cpp:112
+#, fuzzy
+#| msgctxt "KoReportItemCheck|"
+#| msgid "Data Source"
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Adatforrás"
+
+#: common/KReportItemLine.cpp:80
+#, fuzzy
+#| msgctxt "KRPos|"
+#| msgid "Position"
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "Pozíció"
+
+#: common/KReportItemLine.cpp:81
+#, fuzzy
+#| msgctxt "KRPos|"
+#| msgid "Position"
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Pozíció"
+
+#: common/KReportItemLine.cpp:83
+#, fuzzy
+#| msgctxt "KoReportItemLine|"
+#| msgid "Line Weight"
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "Vastagság"
+
+#: common/KReportItemLine.cpp:85
+#, fuzzy
+#| msgctxt "KoReportItemLine|"
+#| msgid "Line Color"
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Vonalszín"
+
+#: common/KReportItemLine.cpp:86
+#, fuzzy
+#| msgctxt "KoReportItemLine|"
+#| msgid "Line Style"
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "Vonalstílus"
+
+#: common/KReportSectionData.cpp:164
+#, fuzzy
+#| msgid "Group Sections"
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Szakaszok csoportosítása"
+
+#: common/KReportSectionData.cpp:166
+#, fuzzy
+#| msgctxt "KReportSection|"
+#| msgid "Height"
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "Magasság"
+
+#: common/KReportSectionData.cpp:170
+#, fuzzy
+#| msgctxt "KReportSection|"
+#| msgid "Background Color"
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Háttérszín"
+
+#: common/KReportUnit.cpp:136
+#, fuzzy
+#| msgid "Invalid Type"
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Érvénytelen típus"
+
+#: common/KReportUnit.cpp:138
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "milliméter (mm)"
+
+#: common/KReportUnit.cpp:140
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "centiméter (cm)"
+
+#: common/KReportUnit.cpp:142
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "deciméter (dm)"
+
+#: common/KReportUnit.cpp:144
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "hüvelyk (in)"
+
+#: common/KReportUnit.cpp:146
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "pica (pi)"
+
+#: common/KReportUnit.cpp:148
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "cicero (cc)"
+
+#: common/KReportUnit.cpp:150
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "pont (pt)"
+
+#: common/KReportUnit.cpp:152
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "képpont (px)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr "Nem támogatott egység"
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgctxt "KoReportItemCheck|"
+#| msgid "Cross"
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Kereszt"
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgctxt "KoReportItemCheck|"
+#| msgid "Tick"
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr "Beosztás"
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgctxt "KoReportItemCheck|"
+#| msgid "Dot"
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr "Pont"
+
+#: items/check/KReportItemCheck.cpp:80
+#, fuzzy
+#| msgctxt "KoReportItemCheck|"
+#| msgid "Style"
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "Stílus"
+
+#: items/check/KReportItemCheck.cpp:84
+#, fuzzy
+#| msgctxt "KoReportItemCheck|"
+#| msgid "Foreground Color"
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Előtérszín"
+
+#: items/check/KReportItemCheck.cpp:86
+#, fuzzy
+#| msgctxt "KoReportItemLine|"
+#| msgid "Line Weight"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "Vastagság"
+
+#: items/check/KReportItemCheck.cpp:88
+#, fuzzy
+#| msgctxt "KoReportItemLine|"
+#| msgid "Line Color"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Vonalszín"
+
+#: items/check/KReportItemCheck.cpp:89
+#, fuzzy
+#| msgctxt "KoReportItemLine|"
+#| msgid "Line Style"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "Vonalstílus"
+
+#: items/check/KReportItemCheck.cpp:90
+#, fuzzy
+#| msgctxt "KoReportItemCheck|"
+#| msgid "Value"
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Érték"
+
+#: items/check/KReportItemCheck.cpp:90
+#, fuzzy
+#| msgctxt "KoReportItemCheck|"
+#| msgid "Value used if not bound to a field"
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr "Érték, ha nincs mezőhöz rögzítve"
+
+#: items/field/KReportItemField.cpp:90
+#, fuzzy
+#| msgctxt "KoReportItemCheck|"
+#| msgid "Value"
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Érték"
+
+#: items/field/KReportItemField.cpp:90
+#, fuzzy
+#| msgctxt "KoReportItemCheck|"
+#| msgid "Value used if not bound to a field"
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr "Érték, ha nincs mezőhöz rögzítve"
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Left"
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Balra"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Center"
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Középre"
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Right"
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Jobbra"
+
+#: items/field/KReportItemField.cpp:96
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Vízszintes igazítás"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Top"
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "Felülre"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Bottom"
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Alulra"
+
+#: items/field/KReportItemField.cpp:102
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Vertical Alignment"
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Függőleges igazítás"
+
+#: items/field/KReportItemField.cpp:104
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Font"
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Betűtípus"
+
+#: items/field/KReportItemField.cpp:106
+#, fuzzy
+#| msgctxt "KReportSection|"
+#| msgid "Background Color"
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Háttérszín"
+
+#: items/field/KReportItemField.cpp:107
+#, fuzzy
+#| msgctxt "KoReportItemCheck|"
+#| msgid "Foreground Color"
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Előtérszín"
+
+#: items/field/KReportItemField.cpp:109
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Background Opacity"
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "Háttérszín átlátszatlansága"
+
+#: items/field/KReportItemField.cpp:114
+#, fuzzy
+#| msgctxt "KoReportItemLine|"
+#| msgid "Line Weight"
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "Vastagság"
+
+#: items/field/KReportItemField.cpp:116
+#, fuzzy
+#| msgctxt "KoReportItemLine|"
+#| msgid "Line Color"
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Vonalszín"
+
+#: items/field/KReportItemField.cpp:117
+#, fuzzy
+#| msgctxt "KoReportItemLine|"
+#| msgid "Line Style"
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "Vonalstílus"
+
+#: items/field/KReportItemField.cpp:119
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Word Wrap"
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr "Szótördelés"
+
+#: items/field/KReportItemField.cpp:120
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Can Grow"
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr "Növekedhet"
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgctxt "KoReportItemImage|"
+#| msgid "Clip"
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr "Levágás"
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgctxt "KoReportItemImage|"
+#| msgid "Stretch"
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Nyújtás"
+
+#: items/image/KReportItemImage.cpp:120
+#, fuzzy
+#| msgctxt "KoReportItemImage|"
+#| msgid "Resize Mode"
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "Átméretezés módja"
+
+#: items/image/KReportItemImage.cpp:121
+#, fuzzy
+#| msgctxt "KoReportItemCheck|"
+#| msgid "Value"
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Érték"
+
+#: items/image/KReportItemImage.cpp:121
+#, fuzzy
+#| msgctxt "KoReportItemCheck|"
+#| msgid "Value used if not bound to a field"
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr "Érték, ha nincs mezőhöz rögzítve"
+
+#: items/label/KReportItemLabel.cpp:91
+#, fuzzy
+#| msgctxt "KoReportItemLabel|"
+#| msgid "Caption"
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Felirat"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Left"
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Balra"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Center"
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Középre"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Right"
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Jobbra"
+
+#: items/label/KReportItemLabel.cpp:96
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Vízszintes igazítás"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Top"
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "Felülre"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Bottom"
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Alulra"
+
+#: items/label/KReportItemLabel.cpp:102
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Vertical Alignment"
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Függőleges igazítás"
+
+#: items/label/KReportItemLabel.cpp:104
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Font"
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Betűtípus"
+
+#: items/label/KReportItemLabel.cpp:106
+#, fuzzy
+#| msgctxt "KReportSection|"
+#| msgid "Background Color"
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Háttérszín"
+
+#: items/label/KReportItemLabel.cpp:107
+#, fuzzy
+#| msgctxt "KoReportItemCheck|"
+#| msgid "Foreground Color"
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Előtérszín"
+
+#: items/label/KReportItemLabel.cpp:109
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Background Opacity"
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "Háttérszín átlátszatlansága"
+
+#: items/label/KReportItemLabel.cpp:114
+#, fuzzy
+#| msgctxt "KoReportItemLine|"
+#| msgid "Line Weight"
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "Vastagság"
+
+#: items/label/KReportItemLabel.cpp:116
+#, fuzzy
+#| msgctxt "KoReportItemLine|"
+#| msgid "Line Color"
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Vonalszín"
+
+#: items/label/KReportItemLabel.cpp:117
+#, fuzzy
+#| msgctxt "KoReportItemLine|"
+#| msgid "Line Style"
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "Vonalstílus"
+
+#: items/text/KReportItemText.cpp:115
+#, fuzzy
+#| msgctxt "KoReportItemCheck|"
+#| msgid "Value"
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Érték"
+
+#: items/text/KReportItemText.cpp:115
+#, fuzzy
+#| msgctxt "KoReportItemCheck|"
+#| msgid "Value used if not bound to a field"
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr "Érték, ha nincs mezőhöz rögzítve"
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Left"
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Balra"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Center"
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Középre"
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Right"
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Jobbra"
+
+#: items/text/KReportItemText.cpp:121
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Horizontal Alignment"
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Vízszintes igazítás"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Top"
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "Felülre"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Bottom"
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Alulra"
+
+#: items/text/KReportItemText.cpp:127
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Vertical Alignment"
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Függőleges igazítás"
+
+#: items/text/KReportItemText.cpp:129
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Font"
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Betűtípus"
+
+#: items/text/KReportItemText.cpp:131
+#, fuzzy
+#| msgctxt "KReportSection|"
+#| msgid "Background Color"
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Háttérszín"
+
+#: items/text/KReportItemText.cpp:132
+#, fuzzy
+#| msgctxt "KoReportItemCheck|"
+#| msgid "Foreground Color"
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Előtérszín"
+
+#: items/text/KReportItemText.cpp:134
+#, fuzzy
+#| msgctxt "KoReportItemLine|"
+#| msgid "Line Weight"
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "Vastagság"
+
+#: items/text/KReportItemText.cpp:136
+#, fuzzy
+#| msgctxt "KoReportItemLine|"
+#| msgid "Line Color"
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Vonalszín"
+
+#: items/text/KReportItemText.cpp:137
+#, fuzzy
+#| msgctxt "KoReportItemLine|"
+#| msgid "Line Style"
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "Vonalstílus"
+
+#: items/text/KReportItemText.cpp:138
+#, fuzzy
+#| msgctxt "KoReportItemField|"
+#| msgid "Background Opacity"
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "Háttérszín átlátszatlansága"
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, fuzzy, qt-format
+#| msgid "Script File"
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr "Szkriptfájl"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+#, fuzzy
+#| msgctxt "KRScriptHandler|"
+#| msgid "Script Error"
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Szkripthiba"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, fuzzy, qt-format
+#| msgctxt "KoReportDesigner|"
+#| msgid ""
+#| "This report contains scripts of type \"%1\". Only scripts written in "
+#| "JavaScript language are supported. To prevent losing the scripts, their "
+#| "type and content will not be changed unless you change these scripts."
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+"Ez a jelentés „%1” típusú szkripteket tartalmaz, de csak JavaScript nyelven "
+"írt szkriptek támogatottak. A szkriptek elvesztésének megelőzése érdekében "
+"azok tartalma és típusa nem változik, hacsak nem módosítja azokat."
+
+#: wrtembed/KReportDesigner.cpp:315
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Unsupported Script Type"
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr "Nem támogatott szkripttípus"
+
+#: wrtembed/KReportDesigner.cpp:676
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Page Header (Any)"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Fejléc (bármelyik)"
+
+#: wrtembed/KReportDesigner.cpp:680
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Page Header (Even)"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Fejléc (páros)"
+
+#: wrtembed/KReportDesigner.cpp:684
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Page Header (Odd)"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Fejléc (páratlan)"
+
+#: wrtembed/KReportDesigner.cpp:688
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Page Header (First)"
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Fejléc (első)"
+
+#: wrtembed/KReportDesigner.cpp:692
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Page Header (Last)"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Fejléc (utolsó)"
+
+#: wrtembed/KReportDesigner.cpp:696
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Page Footer (Any)"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "Lábléc (bármelyik)"
+
+#: wrtembed/KReportDesigner.cpp:700
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Page Footer (Even)"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "Lábléc (páros)"
+
+#: wrtembed/KReportDesigner.cpp:704
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Page Footer (Odd)"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "Lábléc (páratlan)"
+
+#: wrtembed/KReportDesigner.cpp:708
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Page Footer (First)"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "Lábléc (első)"
+
+#: wrtembed/KReportDesigner.cpp:712
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Page Footer (Last)"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "Lábléc (utolsó)"
+
+#: wrtembed/KReportDesigner.cpp:716
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Report Header"
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "Jelentés fejléc"
+
+#: wrtembed/KReportDesigner.cpp:720
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Report Footer"
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "Jelentés lábléc"
+
+#: wrtembed/KReportDesigner.cpp:808
+#, fuzzy
+#| msgid "Export"
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "Exportálás"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Title"
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Cím"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Report Title"
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Jelentés címe"
+
+#: wrtembed/KReportDesigner.cpp:818
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Oldalméret"
+
+#: wrtembed/KReportDesigner.cpp:821
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Oldalméret"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Portrait"
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "Álló"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Landscape"
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "Fekvő"
+
+#: wrtembed/KReportDesigner.cpp:827
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Page Orientation"
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "Tájolás"
+
+#: wrtembed/KReportDesigner.cpp:832
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Page Unit"
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Oldal egység"
+
+#: wrtembed/KReportDesigner.cpp:833
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Show Grid"
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "Rács megjelenítése"
+
+#: wrtembed/KReportDesigner.cpp:834
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Snap to Grid"
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Rácshoz illesztés"
+
+#: wrtembed/KReportDesigner.cpp:835
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Grid Divisions"
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr "Rácsfelosztás"
+
+#: wrtembed/KReportDesigner.cpp:841
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Left Margin"
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Bal margó"
+
+#: wrtembed/KReportDesigner.cpp:843
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Right Margin"
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Jobb margó"
+
+#: wrtembed/KReportDesigner.cpp:845
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Top Margin"
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Felső margó"
+
+#: wrtembed/KReportDesigner.cpp:847
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Bottom Margin"
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Alsó margó"
+
+#: wrtembed/KReportDesigner.cpp:869
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Object Script"
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Objektumszkript"
+
+#: wrtembed/KReportDesigner.cpp:1067
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Cut"
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Kivágás"
+
+#: wrtembed/KReportDesigner.cpp:1071
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Copy"
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Másolás"
+
+#: wrtembed/KReportDesigner.cpp:1076
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Paste"
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Beillesztés"
+
+#: wrtembed/KReportDesigner.cpp:1087
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Delete"
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Törlés"
+
+#: wrtembed/KReportDesigner.cpp:1129
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Line"
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Vonal"
+
+#: wrtembed/KReportDesigner.cpp:1476
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Line"
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Vonal"
+
+#: wrtembed/KReportDesigner.cpp:1519
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Cu&t"
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr "Ki&vágás"
+
+#: wrtembed/KReportDesigner.cpp:1521
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Cut selection to clipboard"
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr "Kijelölés kivágása és a vágólapra helyezése"
+
+#: wrtembed/KReportDesigner.cpp:1525
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "&Copy"
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "&Másolás"
+
+#: wrtembed/KReportDesigner.cpp:1527
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Copy selection to clipboard"
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr "Kijelölés másolása a vágólapra"
+
+#: wrtembed/KReportDesigner.cpp:1531
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "&Paste"
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "&Beillesztés"
+
+#: wrtembed/KReportDesigner.cpp:1533
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Paste clipboard content"
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr "Vágólap tartalmának beillesztése"
+
+#: wrtembed/KReportDesigner.cpp:1544
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Edit Sections"
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Szakaszok szerkesztése"
+
+#: wrtembed/KReportDesigner.cpp:1547
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Raise"
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr "Előrehozás"
+
+#: wrtembed/KReportDesigner.cpp:1549
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Lower"
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr "Lesüllyesztés"
+
+#: wrtembed/KReportDesignerSection.cpp:126
+#, fuzzy
+#| msgctxt "ReportSection|"
+#| msgid "Detail"
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "Részletek"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+#, fuzzy
+#| msgid "Group Section Editor"
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Szakaszcsoport szerkesztő"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Oszlop:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Rendezés:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "Csoportfejléc megjelenítése:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "Csoportlábléc megjelenítése:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr "Oldaltörés beszúrás a csoportlábléc után:"
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+#, fuzzy
+#| msgctxt "ReportPropertiesButton|"
+#| msgid "Select entire report"
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr "Teljes jelentés kijelölése"
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+#, fuzzy
+#| msgctxt "ReportPropertiesButton|"
+#| msgid ""
+#| "A button that allows a report's surface to be selected, allowing its "
+#| "properties to be seen."
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+"A jelentés tartalmának kijelölésére és a tulajdonságok megtekintésére "
+"szolgáló gomb."
+
+#: wrtembed/KReportRuler_p.cpp:1472
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Az első sor behúzása"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Bal oldali behúzás"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Jobb oldali behúzás"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+#, fuzzy
+#| msgctxt "SectionEditor|"
+#| msgid "Add..."
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr "Hozzáadás…"
+
+#: wrtembed/KReportSectionEditor.cpp:74
+#, fuzzy
+#| msgctxt "SectionEditor|"
+#| msgid "Edit..."
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "Szerkesztés…"
+
+#: wrtembed/KReportSectionEditor.cpp:76
+#, fuzzy
+#| msgctxt "KoReportDesigner|"
+#| msgid "Delete"
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Törlés"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+#, fuzzy
+#| msgctxt "SectionEditor|"
+#| msgid "Move Up"
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Mozgatás fel"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+#, fuzzy
+#| msgctxt "SectionEditor|"
+#| msgid "Move Down"
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Mozgatás le"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+#, fuzzy
+#| msgctxt "SectionEditor|"
+#| msgid "Ascending"
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr "Növekvő"
+
+#: wrtembed/KReportSectionEditor.cpp:312
+#, fuzzy
+#| msgctxt "SectionEditor|"
+#| msgid "Descending"
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr "Csökkenő"
+
+#: wrtembed/KReportSectionEditor.ui:29
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "Jelentésfejléc megjelenítése"
+
+#: wrtembed/KReportSectionEditor.ui:36
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "Jelentéslábléc megjelenítése"
+
+#: wrtembed/KReportSectionEditor.ui:43
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Fejléc"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "Első oldal:"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Páros oldalak:"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Bármely oldal:"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Utolsó oldal:"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Páratlan oldalak:"
+
+#: wrtembed/KReportSectionEditor.ui:130
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "Lábléc"
+
+#: wrtembed/KReportSectionEditor.ui:217
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Szakaszok csoportosítása"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, qt-format
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Igazítás az oldal szélességéhez"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Igazítás az oldalhoz"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr "Tényleges képpontok"
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Szövegszélesség igazítása"
+
+#, fuzzy
+#~| msgctxt "KReportPageFormat|"
+#~| msgid "US Letter"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "US Letter"
+
+#, fuzzy
+#~| msgctxt "KReportPageFormat|"
+#~| msgid "US Legal"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "US Legal"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "Egyéni"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B6"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B5"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B4"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "Execute"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "Végrehajtás"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B0"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B1"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgctxt "KReportPageFormat|"
+#~| msgid "ISO B10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "ISO B10"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B2"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B3"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "Comma"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "Vessző"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "ISO DL"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Folio"
+#~ msgstr "US Folio"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "US Ledger"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Tabloid"
+#~ msgstr "US Tabloid"
+
+#, fuzzy
+#~| msgid "Postal code:"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "Irányítószám:"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Képernyő"
+
+#, fuzzy
+#~| msgctxt "KRPos|"
+#~| msgid "Position"
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "Pozíció"
+
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "Magasság"
+
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Háttérszín"
+
+#, fuzzy
+#~| msgctxt "KRSize|"
+#~| msgid "Size"
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "Méret"
+
+#, fuzzy
+#~| msgctxt "KoReportItemCheck|"
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Adatforrás"
+
+#, fuzzy
+#~| msgctxt "KoReportItemCheck|"
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Adatforrás"
+
+#, fuzzy
+#~| msgctxt "KoReportItemCheck|"
+#~| msgid "Data Source"
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Adatforrás"
+
+#~ msgctxt "Scripting::Text|"
+#~ msgid "$Unable to read %1"
+#~ msgstr "$Nem lehet olvasni: %1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "ISO A3"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "ISO A4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "ISO A5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "ISO B5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "US Executive"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "ISO A0"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "ISO A1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "ISO A2"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "ISO A6"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "ISO A7"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "ISO A8"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "ISO A9"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "ISO B0"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "ISO B1"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "ISO B2"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "ISO B3"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "ISO B4"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "ISO B6"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "ISO C5"
+
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Common 10"
+#~ msgstr "US Common 10"
+
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "Magasság"
+
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "Háttérszín"
+
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Weight"
+#~ msgstr "Vonalvastagság"
+
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "Vonalszín"
+
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "Vonalstílus"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Adatforrás"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "Érték"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value used if not bound to a field"
+#~ msgstr "Érték, ha nincs mezőhöz rögzítve"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "Háttérszín"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "Előtérszín"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Weight"
+#~ msgstr "Vonalvastagság"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "Vonalszín"
+
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "Vonalstílus"
+
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Adatforrás"
+
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "Érték"
+
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value used if not bound to a field"
+#~ msgstr "Érték, ha nincs mezőhöz rögzítve"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "Balra"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "Középre"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "Jobbra"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Vízszintes igazítás"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "Felülre"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "Alulra"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Függőleges igazítás"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "Betűtípus"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "Háttérszín"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "Előtérszín"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "Háttérszín átlátszatlansága"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Weight"
+#~ msgstr "Vonalvastagság"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "Vonalszín"
+
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "Vonalstílus"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Adatforrás"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "Érték"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value used if not bound to a field"
+#~ msgstr "Érték, ha nincs mezőhöz rögzítve"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "Balra"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "Középre"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "Jobbra"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Vízszintes igazítás"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "Fent"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "Alulra"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Függőleges igazítás"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "Betűtípus"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "Háttérszín"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "Előtérszín"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Weight"
+#~ msgstr "Vonalvastagság"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "Vonalszín"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "Vonalstílus"
+
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "Háttérszín átlátszatlansága"
+
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "Törlés"
+
+#, fuzzy
+#~| msgid "Script Interpreter"
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "Szkriptfeldolgozó"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Szántó Tamás,Úr Balázs"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "tszanto@interware.hu,urbalazs@gmail.com"
+
+#~ msgid "Draw path"
+#~ msgstr "Útvonal rajzolása"
+
+#~ msgid "Freehand path"
+#~ msgstr "Szabadkézi útvonal"
+
+#~ msgid "Angle snapping delta:"
+#~ msgstr "Szögigazítási különbség:"
+
+#~ msgid "Angle Constraints"
+#~ msgstr "Szög korlátozások"
+
+#~ msgid "Precision:"
+#~ msgstr "Pontosság:"
+
+#~ msgctxt "The raw line data"
+#~ msgid "Raw"
+#~ msgstr "Nyers"
+
+#~ msgid "Curve"
+#~ msgstr "Görbe"
+
+#~ msgid "Straight"
+#~ msgstr "Egyenes"
+
+#~ msgid "Optimize"
+#~ msgstr "Optimalizálás"
+
+#~ msgid "Exactness:"
+#~ msgstr "Pontosság:"
+
+#~ msgid "Pencil"
+#~ msgstr "Ceruza"
+
+#~ msgid "Invalid database contents. "
+#~ msgstr "Érvénytelen adatbázis-tartalom. "
+
+#~ msgid "It is a system object."
+#~ msgstr "Ez egy rendszerobjektum."
+
+#~ msgid "Connection already established."
+#~ msgstr "A kapcsolat már korábban létrejött."
+
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr "Nem sikerült megnyitni a(z) „%1” projektfájlt."
+
+#~ msgid "Could not connect to \"%1\" database server."
+#~ msgstr "Nem sikerült csatlakozni a(z) „%1” adatbázis-kiszolgálóhoz."
+
+#~ msgid "Not connected to the database server."
+#~ msgstr "Nincs kapcsolat az adatbázis-kiszolgálóval."
+
+#~ msgid "Currently no database is used."
+#~ msgstr "Jelenleg nincs használatban adatbázis."
+
+#~ msgid "The database \"%1\" does not exist."
+#~ msgstr "Nem létezik „%1” nevű adatbázis."
+
+#, fuzzy
+#~| msgid "The database \"%1\" does not exist."
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "Nem létezik „%1” nevű adatbázis."
+
+#~ msgid "Database file \"%1\" is not readable."
+#~ msgstr "Nem olvasható a(z) „%1” adatbázisfájl."
+
+#~ msgid "Database file \"%1\" is not writable."
+#~ msgstr "Nem írható a(z) „%1” adatbázisfájl."
+
+#~ msgid "Database \"%1\" created but could not be closed after creation."
+#~ msgstr ""
+#~ "A(z) „%1” adatbázis létrejött, de nem sikerült bezárni a létrehozás után."
+
+#~ msgid "Database \"%1\" already exists."
+#~ msgstr "Már létezik „%1” nevű adatbázis."
+
+#~ msgid ""
+#~ "Cannot create database \"%1\". This name is reserved for system database."
+#~ msgstr ""
+#~ "Nem sikerült létrehozni a(z) „%1” adatbázist, mert a megadott név le van "
+#~ "foglalva a rendszeradatbázis számára."
+
+#~ msgid "Error creating database \"%1\" on the server."
+#~ msgstr "A(z) „%1” adatbázis létrehozása közben hiba történt a kiszolgálón."
+
+#~ msgid "Database \"%1\" created but could not be opened."
+#~ msgstr "A(z) „%1” adatbázis létrejött, de nem sikerült megnyitni."
+
+#~ msgid "Opening database \"%1\" failed."
+#~ msgstr "A(z) „%1” adatbázis megnyitása nem sikerült."
+
+#~ msgid "Database version (%1) does not match Kexi application's version (%2)"
+#~ msgstr ""
+#~ "Az adatbázis verziója (%1) nem megfelelő a Kexi alkalmazás verziójához "
+#~ "(%2)"
+
+#~ msgid "Cannot find any database for temporary connection."
+#~ msgstr "Nem található egy adatbázis sem ideiglenes kapcsolathoz."
+
+#~ msgid ""
+#~ "Error during starting temporary connection using \"%1\" database name."
+#~ msgstr ""
+#~ "Hiba történt egy ideiglenes kapcsolat létrehozásakor (az adatbázisnév: "
+#~ "„%1”)."
+
+#~ msgid "Cannot delete database - name not specified."
+#~ msgstr "Az adatbázis nem törölhető, mert nincs megadva a neve."
+
+#~ msgid "Cannot delete system database \"%1\"."
+#~ msgstr "A(z) „%1” rendszeradatbázist nem lehet törölni."
+
+#~ msgid "Error while executing SQL statement."
+#~ msgstr "Hiba történt az SQL utasítás végrehajtása közben."
+
+#~ msgid "Creating table failed."
+#~ msgstr "A tábla létrehozása nem sikerült."
+
+#~ msgid "Cannot create table without fields."
+#~ msgstr "Nem lehet táblát létrehozni mezők nélkül."
+
+#~ msgid "System name \"%1\" cannot be used as table name."
+#~ msgstr "A rendszernek lefoglalt „%1” név nem használható táblanévként."
+
+#~ msgid "System name \"%1\" cannot be used as one of fields in \"%2\" table."
+#~ msgstr ""
+#~ "A rendszernek lefoglalt „%1” név nem használható mezőnévként a(z) „%2” "
+#~ "táblában."
+
+#~ msgid "Could not create the same table \"%1\" twice."
+#~ msgstr "Nem sikerült létrehozni ugyanazt a táblát („%1”) kétszer."
+
+#~ msgid "Table \"%1\" already exists."
+#~ msgstr "Már létezik „%1” nevű tábla."
+
+#~ msgid "Table \"%1\" does not exist."
+#~ msgstr "Nem létezik „%1” nevű tábla."
+
+#~ msgid "Could not remove object's data."
+#~ msgstr "Nem sikerült eltávolítani az objektum adatait."
+
+#~ msgid "Table \"%1\" cannot be removed.\n"
+#~ msgstr "A(z) „%1” tábla nem távolítható el.\n"
+
+#~ msgid "Unexpected name or identifier."
+#~ msgstr "Nem várt név vagy azonosító."
+
+#, fuzzy
+#~| msgid "Could not alter table \"%1\" using the same table."
+#~ msgid "Could not alter table \"%1\" using the same table as destination."
+#~ msgstr "Nem sikerült megváltoztatni a(z) „%1” táblát ugyanazzal a táblával."
+
+#, fuzzy
+#~| msgid "Unknown table \"%1\""
+#~ msgid "Unknown table \"%1\"."
+#~ msgstr "Ismeretlen tábla: „%1”"
+
+#, fuzzy
+#~| msgid "Invalid table name \"%1\""
+#~ msgid "Invalid table name \"%1\"."
+#~ msgstr "Érvénytelen táblanév: „%1”"
+
+#~ msgid "Could not rename table \"%1\" using the same name."
+#~ msgstr "Nem lehet átnevezni a(z) „%1” táblát ugyanarra a névre."
+
+#~ msgid ""
+#~ "Could not rename table \"%1\" to \"%2\". Table \"%3\" already exists."
+#~ msgstr ""
+#~ "Nem sikerült átnevezni a táblát erről: „%1” erre: „%2”. Már létezik „%3” "
+#~ "nevű tábla."
+
+#~ msgid "Query \"%1\" does not exist."
+#~ msgstr "A(z) „%1” lekérdezés nem létezik."
+
+#~ msgid "Transactions are not supported for \"%1\" driver."
+#~ msgstr "A tranzakciók nincsenek támogatva a(z) „%1” meghajtóhoz."
+
+#, fuzzy
+#~| msgid "Begin transaction failed"
+#~ msgid "Begin transaction failed."
+#~ msgstr "A tranzakció elkezdése nem sikerült"
+
+#~ msgid "Transaction already started."
+#~ msgstr "A tranzakció már elkezdődött."
+
+#~ msgid "Transaction not started."
+#~ msgstr "A tranzakció nem kezdődött el."
+
+#, fuzzy
+#~| msgid "Error on commit transaction"
+#~ msgid "Error on commit transaction."
+#~ msgstr "Hiba történt a tranzakció végrehajtása közben"
+
+#, fuzzy
+#~| msgid "Error on rollback transaction"
+#~ msgid "Error on rollback transaction."
+#~ msgstr "Hiba történt a tranzakció visszavonása közben"
+
+#, fuzzy
+#~| msgid "Invalid object name \"%1\""
+#~ msgid "Invalid object name \"%1\"."
+#~ msgstr "Érvénytelen objektumnév: „%1”"
+
+#, fuzzy
+#~| msgid "Column %1 does not exist for the query."
+#~ msgid "Column <resource>%1</resource> does not exist in the query."
+#~ msgstr "A(z) „%1” oszlop nem létezik a lekérdezéshez."
+
+#, fuzzy
+#~| msgid "Error while loading extended table schema information."
+#~ msgctxt "Extended schema for a table: loading error"
+#~ msgid "Error while loading extended table schema."
+#~ msgstr "Hiba történt a kiterjesztett táblaséma-információ betöltése közben."
+
+#, fuzzy
+#~| msgid "Invalid XML data: "
+#~ msgid "Invalid XML data: %1"
+#~ msgstr "Érvénytelen XML adat: "
+
+#, fuzzy
+#~| msgid ""
+#~| "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~| "XML data: "
+#~ msgid ""
+#~ "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~ "XML data: %4"
+#~ msgstr ""
+#~ "Hiba az XML adatban: „%1” a %2. sor, %3. oszlopában.\n"
+#~ "XML adat: "
+
+#~ msgid "Table has no fields defined."
+#~ msgstr "A táblának nincs meghatározott mezője."
+
+#~ msgid ""
+#~ "Could not find definition for query \"%1\". Removing this query is "
+#~ "recommended."
+#~ msgstr ""
+#~ "Nem található meghatározás a(z) „%1” lekérdezéshez. Javasolt ennek a "
+#~ "lekérdezésnek az eltávolítása."
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>Could not load definition for query \"%1\". SQL statement for this "
+#~| "query is invalid:<br><tt>%2</tt></p>\n"
+#~| "<p>You can open this query in Text View and correct it.</p>"
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>Could not load definition for query \"%1\". SQL statement for this "
+#~ "query is invalid: <message>%2</message></para>\n"
+#~ "<para>You can open this query in Text View and correct it.</para>"
+#~ msgstr ""
+#~ "<p>Nem sikerült betölteni a(z) „%1” lekérdezés meghatározását. Az SQL "
+#~ "utasítás érvénytelen ehhez a lekérdezéshez:<br><tt>%2</tt></p>\n"
+#~ "<p>Megnyithatja ezt a lekérdezést szöveges nézetben és javíthatja azt.</p>"
+
+#~ msgid "Could not update record because there is no master table defined."
+#~ msgstr "Nem sikerült frissíteni a rekordot, mert nincs főtábla definiálva."
+
+#~ msgid ""
+#~ "Could not update record because master table has no primary key defined."
+#~ msgstr ""
+#~ "Nem sikerült frissíteni a rekordot, mert a főtáblában nincs definiálva "
+#~ "elsődleges kulcs."
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not update record because it does not contain entire master "
+#~| "table's primary key."
+#~ msgid ""
+#~ "Could not update record because it does not contain entire primary key of "
+#~ "master table."
+#~ msgstr ""
+#~ "Nem sikerült frissíteni a rekordot, mert nem tartalmazza a főtábla teljes "
+#~ "elsődleges kulcsát."
+
+#~ msgid "Primary key's field \"%1\" cannot be empty."
+#~ msgstr "Az elsődleges kulcs mezője („%1”) nem lehet üres."
+
+#~ msgid "Record updating on the server failed."
+#~ msgstr "Nem sikerült frissíteni a rekordot a kiszolgálón."
+
+#, fuzzy
+#~| msgid "Could not insert record because there is no master table defined."
+#~ msgid "Could not insert record because there is no master table specified."
+#~ msgstr "Nem sikerült beszúrni a rekordot, mert nincs főtábla definiálva."
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not insert record because master table has no primary key defined."
+#~ msgid ""
+#~ "Could not insert record because master table has no primary key specified."
+#~ msgstr ""
+#~ "Nem sikerült beszúrni a rekordot, mert a főtáblában nincs definiálva "
+#~ "elsődleges kulcs."
+
+#~ msgid ""
+#~ "Could not insert record because it does not contain entire master table's "
+#~ "primary key."
+#~ msgstr ""
+#~ "Nem sikerült beszúrni a rekordot, mert nem tartalmazza a főtábla teljes "
+#~ "elsődleges kulcsát."
+
+#~ msgid "Record inserting on the server failed."
+#~ msgstr "Nem sikerült rekordot beszúrni a kiszolgálón."
+
+#, fuzzy
+#~| msgid "Could not delete record because there is no master table defined."
+#~ msgid "Could not delete record because there is no master table specified."
+#~ msgstr "Nem sikerült törölni a rekordot, mert nincs főtábla definiálva."
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not delete record because there is no primary key for master table "
+#~| "defined."
+#~ msgid ""
+#~ "Could not delete record because there is no primary key for master table "
+#~ "specified."
+#~ msgstr ""
+#~ "Nem sikerült törölni a rekordot, mert nincs elsődleges kulcs definiálva a "
+#~ "főtáblában."
+
+#~ msgid ""
+#~ "Could not delete record because it does not contain entire master table's "
+#~ "primary key."
+#~ msgstr ""
+#~ "Nem sikerült törölni a rekordot, mert nem tartalmazza a főtábla teljes "
+#~ "elsődleges kulcsát."
+
+#~ msgid "Record deletion on the server failed."
+#~ msgstr "Nem sikerült törölni a rekordot a kiszolgálón."
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Unknown error."
+#~ msgstr "Ismeretlen hiba"
+
+#, fuzzy
+#~| msgid "file"
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "fájl"
+
+#~ msgid "No query statement or schema defined."
+#~ msgstr "Nincs definiálva lekérdezés vagy séma."
+
+#~ msgid "Query statement is empty."
+#~ msgstr "A lekérdezés üres."
+
+#~ msgid "Error opening database cursor."
+#~ msgstr "Hiba történt az adatbáziskurzor megnyitásakor."
+
+#~ msgid "Cannot fetch next record."
+#~ msgstr "Nem sikerült letölteni a következő rekordot."
+
+#~ msgid "Could not set value of database property \"%1\"."
+#~ msgstr "Nem sikerült beállítani a(z) „%1” adatbázis tulajdonság értékét."
+
+#~ msgid "Could not set caption for database property \"%1\"."
+#~ msgstr "Nem sikerült beállítani a(z) „%1” adatbázis tulajdonság feliratát."
+
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "Nem olvasható a(z) „%1” adatbázis tulajdonság."
+
+#~ msgid "Could not read database properties."
+#~ msgstr "Nem olvashatók az adatbázis tulajdonságok."
+
+#~ msgid "Invalid database driver's \"%1\" implementation:\n"
+#~ msgstr "Érvénytelen az adatbázis-meghajtó („%1”) implementáció:\n"
+
+#~ msgid "Value of \"%1\" is not initialized for the driver."
+#~ msgstr "A(z) „%1” értéke nincs inicializálva a meghajtóhoz."
+
+#~ msgid "File name expected for file-based database driver."
+#~ msgstr "Meg kell adni egy fájlnevet fájlalapú adatbázis-meghajtó esetén."
+
+#~ msgid "Client library version"
+#~ msgstr "A kliens programkönyvtár verziószáma"
+
+#~ msgid "Default character encoding on server"
+#~ msgstr "Alapértelmezett karakterkódolás a kiszolgálón"
+
+#~ msgid "File-based database driver"
+#~ msgstr "Fájl-alapú adatbázis-meghajtó"
+
+#~ msgid "File-based database's MIME type"
+#~ msgstr "Fájl-alapú adatbázis MIME-típusa"
+
+#~ msgid "Single transactions support"
+#~ msgstr "Egyszeres tranzakciók támogatás"
+
+#~ msgid "Multiple transactions support"
+#~ msgstr "Többszörös tranzakciók támogatás"
+
+#~ msgid "Nested transactions support"
+#~ msgstr "Egymásba ágyazott tranzakciók támogatás"
+
+#~ msgid "KexiDB driver version"
+#~ msgstr "A KexiDB-meghajtó verziószáma"
+
+#~ msgid "Could not find any database drivers."
+#~ msgstr "Nem található egy adatbázis-meghajtó sem."
+
+#~ msgid "Could not find database driver \"%1\"."
+#~ msgstr "Nem található a(z) „%1” adatbázis-meghajtó."
+
+#~ msgid ""
+#~ "Incompatible database driver's \"%1\" version: found version %2, expected "
+#~ "version %3."
+#~ msgstr ""
+#~ "Érvénytelen az adatbázis-meghajtó „%1” verziója: a kiolvasott érték: %2, "
+#~ "a várt érték: %3."
+
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "Nem sikerült betölteni a(z) „%1” adatbázis-meghajtót."
+
+#, fuzzy
+#~| msgid "Could not find database driver \"%1\"."
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "Nem található a(z) „%1” adatbázis-meghajtó."
+
+#~ msgid "Ambiguous field name"
+#~ msgstr "Nem egyértelmű mezőnév"
+
+#, fuzzy
+#~| msgid ""
+#~| "Both table \"%1\" and \"%2\" have defined \"%3\" field. Use "
+#~| "\"<tableName>.%4\" notation to specify table name."
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Both table <resource>%1</resource> and <resource>%2</resource> have "
+#~ "defined <resource>%3</resource> field. Use "
+#~ "<resource><placeholder>tableName</placeholder>.%4</resource> notation to "
+#~ "specify table name."
+#~ msgstr ""
+#~ "A(z) „%1” és a(z) „%2” táblában is van „%3” mező. A „<táblanév>.%4” "
+#~ "kifejezéssel lehet egyértelművé tenni a mezőt."
+
+#~ msgid "Field not found"
+#~ msgstr "A mező nem található"
+
+#, fuzzy
+#~| msgid "Table containing \"%1\" field not found"
+#~ msgid "Table containing \"%1\" field not found."
+#~ msgstr "Nem található „%1” mezőt tartalmazó tábla"
+
+#~ msgid "Could not access the table directly using its name"
+#~ msgstr ""
+#~ "Nem sikerült a táblát közvetlenül, a nevének felhasználásával elérni"
+
+#, fuzzy
+#~| msgid ""
+#~| "Table \"%1\" is covered by aliases. Instead of \"%2\", you can write "
+#~| "\"%3\""
+#~ msgid ""
+#~ "Table name <resource>%1</resource> is covered by aliases. Instead of "
+#~ "<resource>%2</resource>, you can write <resource>%3</resource>."
+#~ msgstr ""
+#~ "A(z) „%1” táblához tartozik másodlagos név, ezért „%2” helyett „%3” is "
+#~ "írható"
+
+#~ msgid "Table not found"
+#~ msgstr "Tábla nem található"
+
+#~ msgid "Ambiguous \"%1.*\" expression"
+#~ msgstr "Nem egyértelmű a(z) „%1.*” kifejezés"
+
+#, fuzzy
+#~| msgid "More than one \"%1\" table or alias defined"
+#~ msgid "More than one \"%1\" table or alias defined."
+#~ msgstr "Egynél több „%1” tábla vagy másodlagos név van definiálva"
+
+#, fuzzy
+#~| msgid "Table \"%1\" has no \"%2\" field"
+#~ msgid "Table \"%1\" has no \"%2\" field."
+#~ msgstr "A(z) „%1” táblának nincs „%2” mezője"
+
+#~ msgid "Ambiguous \"%1.%2\" expression"
+#~ msgstr "Nem egyértelmű a(z) „%1.%2” kifejezés"
+
+#, fuzzy
+#~| msgid "More than one \"%1\" table or alias defined containing \"%2\" field"
+#~ msgid "More than one \"%1\" table or alias defined containing \"%2\" field."
+#~ msgstr ""
+#~ "Egynél több „%1” tábla vagy másodlagos név tartalmazza a(z) „%2” mezőt"
+
+#~ msgid "Byte"
+#~ msgstr "Bájt"
+
+#~ msgid "Short Integer Number"
+#~ msgstr "Kis egész szám"
+
+#~ msgid "Integer Number"
+#~ msgstr "Egész szám"
+
+#~ msgid "Big Integer Number"
+#~ msgstr "Nagy egész szám"
+
+#~ msgid "Yes/No Value"
+#~ msgstr "Igen/nem érték"
+
+#~ msgid "Date"
+#~ msgstr "Dátum"
+
+#~ msgid "Date and Time"
+#~ msgstr "Dátum és idő"
+
+#~ msgid "Time"
+#~ msgstr "Idő"
+
+#~ msgid "Single Precision Number"
+#~ msgstr "Egyszeres pontosságú szám"
+
+#~ msgid "Double Precision Number"
+#~ msgstr "Dupla pontosságú szám"
+
+#~ msgid "Text"
+#~ msgstr "Szöveg"
+
+#~ msgid "Long Text"
+#~ msgstr "Hosszú szöveg"
+
+#~ msgid "Object"
+#~ msgstr "Objektum"
+
+#~ msgid "Invalid Group"
+#~ msgstr "Érvénytelen csoport"
+
+#~ msgid "Floating Point Number"
+#~ msgstr "Lebegőpontos szám"
+
+#~ msgid "Yes/No"
+#~ msgstr "Igen/nem"
+
+#~ msgid "Date/Time"
+#~ msgstr "Dátum/idő"
+
+#~ msgid ""
+#~ "You can correct data in this record or use \"Cancel record changes\" "
+#~ "function."
+#~ msgstr ""
+#~ "Kijavíthatja az adatokat a rekordban vagy használja „A rekord "
+#~ "változásainak eldobása” funkciót."
+
+#~ msgid "Unspecified error encountered"
+#~ msgstr "Pontosan nem meghatározható hiba történt"
+
+#~ msgid "identifier was expected"
+#~ msgstr "azonosítót vártam"
+
+#, fuzzy
+#~| msgid "\"%1\" is a reserved keyword"
+#~ msgid "\"%1\" is a reserved keyword."
+#~ msgstr "„%1” egy foglalt kulcsszó"
+
+#, fuzzy
+#~| msgid "Syntax Error"
+#~ msgid "Syntax error."
+#~ msgstr "Szintaktikai hiba"
+
+#~ msgid "Error"
+#~ msgstr "Hiba"
+
+#, fuzzy
+#~| msgid "Syntax Error near \"%1\""
+#~ msgid "Error near \"%1\"."
+#~ msgstr "Szintaktikai hiba itt: „%1”"
+
+#, fuzzy
+#~| msgid "No query statement or schema defined."
+#~ msgid "No query statement specified."
+#~ msgstr "Nincs definiálva lekérdezés vagy séma."
+
+#, fuzzy
+#~| msgid "\"*\" could not be used if no tables are specified"
+#~ msgid "\"*\" could not be used if no tables are specified."
+#~ msgstr "„*” nem használható, ha nincs megadva tábla"
+
+#, fuzzy
+#~| msgid "Invalid alias definition for column \"%1\""
+#~ msgid "Invalid alias definition for column \"%1\"."
+#~ msgstr "Érvénytelen másodlagos név a(z) „%1” oszlophoz"
+
+#, fuzzy
+#~| msgid "Invalid \"%1\" column definition"
+#~ msgid "Invalid \"%1\" column definition."
+#~ msgstr "Érvénytelen „%1” oszlopdefiníció"
+
+#, fuzzy
+#~| msgid "Could not define sorting - no column at position %1"
+#~ msgid "Could not define sorting - no column at position %1."
+#~ msgstr "Nem határozható meg rendezés - nincs oszlop a %1. pozíción"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not define sorting - column name or alias \"%1\" does not exist"
+#~ msgid ""
+#~ "Could not define sorting - column name or alias \"%1\" does not exist."
+#~ msgstr ""
+#~ "Nem határozható meg rendezés - a(z) „%1” oszlopnév vagy másodlagos név "
+#~ "nem létezik"
+
+#, fuzzy
+#~| msgctxt ""
+#~| "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
+#~| msgid "expr"
+#~ msgctxt ""
+#~ "short for 'expression' word, e.g. 'expr' (only latin letters, please, no "
+#~ "'.')"
+#~ msgid "expr"
+#~ msgstr "kif"
+
+#~ msgid "Database driver name"
+#~ msgstr "Adatbázis-meghajtó neve"
+
+#~ msgid "Database user name"
+#~ msgstr "Adatbázis felhasználónév"
+
+#, fuzzy
+#~| msgid "Prompt for password"
+#~ msgid "Prompts for password"
+#~ msgstr "Kérje a jelszót"
+
+#~ msgid "Host (server) name"
+#~ msgstr "Gép (kiszolgáló) neve"
+
+#~ msgid "Server's port number"
+#~ msgstr "A kiszolgáló portszáma"
+
+#~ msgid "Server's local socket filename"
+#~ msgstr "A kiszolgáló helyi foglalat fájlneve"
+
+#~ msgid "Enter password for %1: "
+#~ msgstr "Adja meg a jelszót ehhez: %1 "
+
+#~ msgid "\"%1\" column requires a value to be entered."
+#~ msgstr "A(z) \"%1\" oszlopban meg kell adni értéket."
+
+#~ msgid "The column's constraint is declared as NOT NULL."
+#~ msgstr "Az oszlopra NOT NULL megszorítás van érvényben."
+
+#~ msgid "The column's constraint is declared as NOT EMPTY."
+#~ msgstr "Az oszlopra NOT EMPTY megszorítás van érvényben."
+
+#~ msgid "Record inserting failed."
+#~ msgstr "A rekord beszúrása nem sikerült."
+
+#~ msgid "Record changing failed."
+#~ msgstr "A rekord módosítása nem sikerült."
+
+#~ msgid "Record deleting failed."
+#~ msgstr "A rekord törlése nem sikerült."
+
+#~ msgid "Message from server:"
+#~ msgstr "A kiszolgáló üzenete:"
+
+#~ msgid "SQL statement:"
+#~ msgstr "SQL utasítás:"
+
+#~ msgid "Server result:"
+#~ msgstr "A kiszolgáló válasza:"
+
+#~ msgid "Test Connection"
+#~ msgstr "Kapcsolat tesztelése"
+
+#, fuzzy
+#~| msgid "<qt>Testing connection to <b>%1</b> database server...</qt>"
+#~ msgid "Testing connection to <resource>%1</resource> database server..."
+#~ msgstr ""
+#~ "<qt>Kapcsolódás tesztelése a(z) <b>%1</b> adatbázis-kiszolgálóhoz…</qt>"
+
+#~ msgid ""
+#~ "<qt>Test connection to <b>%1</b> database server failed. The server is "
+#~ "not responding.</qt>"
+#~ msgstr ""
+#~ "<qt>A teszt kapcsolat a(z) <b>%1</b> adatbázis-kiszolgálóhoz meghiúsult. "
+#~ "A kiszolgáló nem válaszol.</qt>"
+
+#~ msgid ""
+#~ "<qt>Test connection to <b>%1</b> database server established successfully."
+#~ "</qt>"
+#~ msgstr ""
+#~ "<qt>Teszt kapcsolat sikeresen létesítve a(z) <b>%1</b> adatbázis-"
+#~ "kiszolgálóhoz .</qt>"
+
+#~ msgid "Number"
+#~ msgstr "Szám"
+
+#~ msgid "Image"
+#~ msgstr "Kép"
+
+#~ msgid "\"%1\" value has to be entered."
+#~ msgstr "A(z) „%1” értéket be kell írni."
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr "Kapcsolat módosítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr "Paraméter módosítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "Átalakítás útvonallá"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath at points"
+#~ msgstr "Részútvonalak megtörése pontoknál"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Combine paths"
+#~ msgstr "Útvonalak kombinálása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move control point"
+#~ msgstr "Vezérlőpont mozgatása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set fill rule"
+#~ msgstr "Kitöltés módjának beállítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "Pontok beszúrása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "Pontok összevonása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move points"
+#~ msgstr "Pontok mozgatása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove points"
+#~ msgstr "Pontok eltávolítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set point type"
+#~ msgstr "Ponttípus beállítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reverse paths"
+#~ msgstr "Útvonalak megfordítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath"
+#~ msgstr "Részútvonalak megtörése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to curves"
+#~ msgstr "Szegmensek átalakítása görbékké"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to lines"
+#~ msgstr "Szegmensek átalakítása vonalakká"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set marker"
+#~ msgstr "Jelölő beállítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Align shapes"
+#~ msgstr "Alakzatok igazítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr "Háttér beállítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Clip Shape"
+#~ msgstr "Alakzat kivágása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr "Alakzat létrehozása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shape"
+#~ msgid_plural "Delete shapes"
+#~ msgstr[0] "Alakzat törlése"
+#~ msgstr[1] "Alakzatok törlése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Distribute shapes"
+#~ msgstr "Alakzatok felosztása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr "Alakzatok csoportosítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add shapes to group"
+#~ msgstr "Alakzatok hozzáadása a csoporthoz"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Keep Aspect Ratio"
+#~ msgstr "Méretarány megőrzése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Lock shapes"
+#~ msgstr "Alakzatok zárolása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move shapes"
+#~ msgstr "Alakzatok mozgatása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr "Alakzat átnevezése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reorder shapes"
+#~ msgstr "Alakzatok átrendezése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Shape RunAround"
+#~ msgstr "Alakzat körbefuttatásának módosítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Shadow"
+#~ msgstr "Árnyék beállítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Shear shapes"
+#~ msgstr "Alakzatok nyírása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Resize shapes"
+#~ msgstr "Alakzatok átméretezése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set stroke"
+#~ msgstr "Körvonal beállítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr "Átlátszatlanság beállítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shape"
+#~ msgstr "Alakzat kivágásának visszavonása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shapes"
+#~ msgstr "Alakzatok kivágásának visszavonása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr "Alakzatcsoport felbontása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Close subpath"
+#~ msgstr "Részútvonal bezárása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Join subpaths"
+#~ msgstr "Részútvonalak egyesítése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove subpath"
+#~ msgstr "Részútvonal törlése"
+
+#~ msgid "Standard"
+#~ msgstr "Szabványos"
+
+#~ msgid "Lines"
+#~ msgstr "Vonalak"
+
+#~ msgid "Type:"
+#~ msgstr "Típus:"
+
+#~ msgid "Tie"
+#~ msgstr "Csomópont"
+
+#~ msgid "A connection between two other shapes"
+#~ msgstr "Két alakzat közötti kapcsolat"
+
+#~ msgid "Shows or hides grid"
+#~ msgstr "Rács megjelenítése és elrejtése"
+
+#~ msgid "Simple path shape"
+#~ msgstr "Egyszerű útvonal alakzat"
+
+#~ msgid "A simple path shape"
+#~ msgstr "Egy egyszerű útvonal alakzat"
+
+#~ msgid "%1 Options"
+#~ msgstr "%1 opciók"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Shapes"
+#~ msgstr "Alakzatok beillesztése"
+
+#~ msgid "Active tool: %1"
+#~ msgstr "Aktív eszköz: %1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "Kép beillesztése"
+
+#~ msgid "Nodes"
+#~ msgstr "Csomópontok"
+
+#~ msgid "Extension of lines"
+#~ msgstr "Vonalak meghosszabítása"
+
+#~ msgid "Bounding box of shape"
+#~ msgstr "Alakzatok határoló kerete"
+
+#~ msgid "Proximity distance where snapping happens"
+#~ msgstr "Igazítási távolság"
+
+#~ msgid " px"
+#~ msgstr " képpont"
+
+#~ msgid "Orthogonal"
+#~ msgstr "Ortogonális"
+
+#~ msgid "Intersection of lines"
+#~ msgstr "Vonalak metszéspontja"
+
+#~ msgid "Guide lines"
+#~ msgstr "Vezetővonalak"
+
+#~ msgid "Embedded svg shape"
+#~ msgstr "Beágyazott SVG-alakzat"
+
+#~ msgid "Create object"
+#~ msgstr "Objektum létrehozása"
+
+#~ msgid "Pan"
+#~ msgstr "Megfogó"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Segment"
+#~ msgstr "Szegmens módosítása"
+
+#~ msgid "Corner point"
+#~ msgstr "Sarokpont"
+
+#~ msgid "Smooth point"
+#~ msgstr "Finom pont"
+
+#~ msgid "Symmetric Point"
+#~ msgstr "Szimmetria pont"
+
+#~ msgid "Make curve point"
+#~ msgstr "Görbe pont készítése"
+
+#~ msgid "Make line point"
+#~ msgstr "Vonal pont készítése"
+
+#~ msgid "Segment to Line"
+#~ msgstr "Szegmens vonallá"
+
+#~ msgid "Segment to Curve"
+#~ msgstr "Szegmens görbévé"
+
+#~ msgid "Insert point"
+#~ msgstr "Pont beszúrása"
+
+#~ msgid "Remove point"
+#~ msgstr "Pont eltávolítása"
+
+#~ msgid "Break at point"
+#~ msgstr "Törés a pontnál"
+
+#~ msgid "Break at segment"
+#~ msgstr "Törés a szegmensnél"
+
+#~ msgid "Join with segment"
+#~ msgstr "Összekapcsolás a szegmenssel"
+
+#~ msgid "Merge points"
+#~ msgstr "Pontok összevonása"
+
+#~ msgid "To Path"
+#~ msgstr "Útvonallá"
+
+#~ msgid "Line/Curve"
+#~ msgstr "Vonal/Görbe"
+
+#~ msgid "Drag to move handle."
+#~ msgstr "Húzza a fogópont mozgatásához."
+
+#~ msgid "Drag to move point. Shift click to change point type."
+#~ msgstr "Húzza a pont mozgatásához. Shift+kattintás: a ponttípus módosítása."
+
+#~ msgid "Drag to move control point."
+#~ msgstr "Húzza a vezérlési pont mozgatásához."
+
+#~ msgid ""
+#~ "Drag to change curve directly. Double click to insert new path point."
+#~ msgstr ""
+#~ "Húzza a görbe közvetlen módosításához. Dupla kattintással új útpontot "
+#~ "szúrhat be."
+
+#~ msgid "Press B to break path at selected point."
+#~ msgstr "A B-billentyűvel megtörhető az útvonal a kijelölt ponton."
+
+#~ msgid "Press B to break path at selected segments."
+#~ msgstr "A B-billentyűvel megtörhető az útvonal a kijelölt szegmenseken."
+
+#~ msgid "Path editing"
+#~ msgstr "Útvonal szerkesztés"
+
+#~ msgid "Zoom"
+#~ msgstr "Nagyítás"
+
+#~ msgid "Zoom In"
+#~ msgstr "Nagyítás"
+
+#~ msgid "Zoom Out"
+#~ msgstr "Kicsinyítés"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Convert To Path"
+#~ msgstr "Átalakítás útvonallá"
+
+#~ msgid "Scripts"
+#~ msgstr "Szkriptek"
+
+#~ msgid "Script Manager"
+#~ msgstr "Szkriptkezelő"
+
+#~ msgid "Execute Script File..."
+#~ msgstr "Szkriptfájl végrehajtása..."
+
+#~ msgid "Script Manager..."
+#~ msgstr "Szkriptkezelő..."
+
+#~ msgid "Execute Script File"
+#~ msgstr "Szkriptfájl végrehajtása"
+
+#~ msgid "Install Script Package"
+#~ msgstr "Szkriptcsomag telepítése"
+
+#~ msgid "Could not read the package \"%1\"."
+#~ msgstr "Nem sikerült beolvasni egy csomagot: \"%1\"."
+
+#~ msgid "The package \"%1\" does not contain a valid install.rc file."
+#~ msgstr "A(z) \"%1\" csomag nem tartalmaz érvényes install.rc fájlt."
+
+#~ msgid "Failed to parse the install.rc file at package \"%1\"."
+#~ msgstr "A(z) \"%1\" csomag install.rc fájlja nem dolgozható fel."
+
+#~ msgid ""
+#~ "Failed to determinate location where the package \"%1\" should be "
+#~ "installed to."
+#~ msgstr "Nem állapítható meg a(z) \"%1\" csomag telepítési helye."
+
+#~ msgid ""
+#~ "A script package with the name \"%1\" already exists. Replace this "
+#~ "package?"
+#~ msgstr "Már létezik \"%1\" nevű szkriptcsomag, felül szeretné írni?"
+
+#~ msgid "Replace"
+#~ msgstr "Csere"
+
+#~ msgid ""
+#~ "Could not uninstall this script package. You may not have sufficient "
+#~ "permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Nem sikerült eltávolítani a meglevő szkriptcsomagot. Lehet, hogy nincs "
+#~ "jogosultsága a(z) \"%1\" könyvtár törléséhez."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\" since the script is not "
+#~ "installed."
+#~ msgstr "A(z) \"%1\" csomag nem távolítható el, mert már nincs telepítve."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\". You may not have "
+#~ "sufficient permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "A(z) \"%1\" csomag nem távolítható el. Lehet, hogy nincs jogosultsága "
+#~ "a(z) \"%1\" könyvtár törléséhez."
+
+#~ msgid "Save"
+#~ msgstr "Mentés"
+
+#~ msgid ""
+#~ "<qt>This wizard will guide you through the proccess of adding a new "
+#~ "resource to your scripts.</qt>"
+#~ msgstr ""
+#~ "<qt>Ez a varázsló végigvezeti Önt a szkriptek új erőforrással történő "
+#~ "bővítésének folyamatán.</qt>"
+
+#~ msgid "Add script file"
+#~ msgstr "Szkriptfájl hozzáadása"
+
+#~ msgid "Add collection folder"
+#~ msgstr "Gyűjteménymappa hozzáadása"
+
+#~ msgid "Install script package file"
+#~ msgstr "Szkriptcsomag telepítése"
+
+#~ msgid "Install online script package"
+#~ msgstr "Online szkriptcsomag telepítése"
+
+#~ msgid "Add"
+#~ msgstr "Hozzáadás"
+
+#~ msgid "Script"
+#~ msgstr "Szkript"
+
+#~ msgid "Collection"
+#~ msgstr "Gyűjtemény"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master slide"
+#~ msgstr "Mesterdia módosítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master page"
+#~ msgstr "Mesteroldal módosítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "Oldalelrendezés beállítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display master background"
+#~ msgstr "Mesterháttér megjelenítése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display slide background"
+#~ msgstr "Dia hátterének megjelenítése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display page background"
+#~ msgstr "Oldal hátterének megjelenítése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Show master shapes"
+#~ msgstr "Mesteralakzatok megjelenítése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Hide master shapes"
+#~ msgstr "Mesteralakzatok elrejtése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] "Dia törlése"
+#~ msgstr[1] "Diák törlése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "Oldal törlése"
+#~ msgstr[1] "Oldalak törlése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr "Dia beszúrása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr "Oldal beszúrása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "Dia mozgatása"
+#~ msgstr[1] "Diák mozgatása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] "Oldal mozgatása"
+#~ msgstr[1] "Oldalak mozgatása"
+
+#~ msgid "Configure"
+#~ msgstr "Beállítás"
+
+#~ msgid "Misc"
+#~ msgstr "Vegyes"
+
+#~ msgid "Grid"
+#~ msgstr "Rács"
+
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "Dokumentum"
+
+#~ msgid "Document Settings"
+#~ msgstr "Dokumentumbeállítások"
+
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "Szerző"
+
+#~ msgid "Author"
+#~ msgstr "Szerző"
+
+#~ msgid "Select a master slide design:"
+#~ msgstr "Dia-minta modell kiválasztása:"
+
+#~ msgid "Master Slide"
+#~ msgstr "Dia-minta"
+
+#~ msgid "Select a master page design:"
+#~ msgstr "Mesteroldal modell kiválasztása:"
+
+#~ msgid "Master Page"
+#~ msgstr "Mesteroldal"
+
+#~ msgid "Slide %1"
+#~ msgstr "%1. dia"
+
+#~ msgid "Page  %1"
+#~ msgstr "%1. oldal"
+
+#~ msgid "Layer"
+#~ msgstr "Réteg"
+
+#~ msgid "Group"
+#~ msgstr "Csoport"
+
+#~ msgid "Shape"
+#~ msgstr "Alakzat"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "Dia átnevezése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "Oldal átnevezése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "Réteg átnevezése"
+
+#~ msgid "Slide"
+#~ msgstr "Dia"
+
+#~ msgid "Visible"
+#~ msgstr "Látható"
+
+#~ msgid "Locked"
+#~ msgstr "Zárolt"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reparent shapes"
+#~ msgstr "Alakzatok áthelyezése"
+
+#~ msgid "&Move Here"
+#~ msgstr "&Mozgatás ide"
+
+#~ msgid "&Copy Here"
+#~ msgstr "Másolás i&de"
+
+#~ msgid "C&ancel"
+#~ msgstr "Mé&gsem"
+
+#~ msgid "Document"
+#~ msgstr "Dokumentum"
+
+#~ msgid "Add a new slide or layer"
+#~ msgstr "Új dia vagy réteg hozzáadása"
+
+#~ msgid "Add a new page or layer"
+#~ msgstr "Új oldal vagy réteg hozzáadása"
+
+#~ msgid "Page"
+#~ msgstr "Oldal"
+
+#~ msgid "Delete selected objects"
+#~ msgstr "A kijelölt objektumok törlése"
+
+#~ msgid "Raise selected objects"
+#~ msgstr "A kijelölt objektumok előrehozása"
+
+#~ msgid "Lower selected objects"
+#~ msgstr "A kijelölt objektumok hátraküldése"
+
+#~ msgid "Minimal View"
+#~ msgstr "Minimális nézet"
+
+#~ msgid "Detailed View"
+#~ msgstr "Részletes nézet"
+
+#~ msgid "Thumbnail View"
+#~ msgstr "Miniatűr nézet"
+
+#~ msgid "View mode"
+#~ msgstr "Nézetmód"
+
+#~ msgid "Enter the name of the new layer:"
+#~ msgstr "Adja meg az új réteg nevét:"
+
+#~ msgid "New Layer"
+#~ msgstr "Új réteg"
+
+#~ msgid "New layer"
+#~ msgstr "Új réteg"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "Réteg létrehozása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "Réteg törlése"
+
+#~ msgid "Could not delete all layers. At least one layer is required."
+#~ msgstr "Nem törölhető minden réteg. Legalább egy réteg szükséges."
+
+#~ msgid "Error deleting layers"
+#~ msgstr "Hiba a rétegek törlése során"
+
+#~ msgid "Add a new slide"
+#~ msgstr "Új dia hozzáadása"
+
+#~ msgid "Add a new page"
+#~ msgstr "Új oldal hozzáadása"
+
+#~ msgid "Page %1"
+#~ msgstr "%1. oldal"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] "Dia beillesztése"
+#~ msgstr[1] "Diák beillesztése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] "Oldal beillesztése"
+#~ msgstr[1] "Oldalak beillesztése"
+
+#~ msgid "Tools"
+#~ msgstr "Eszközök"
+
+#~ msgid "D&elete"
+#~ msgstr "&Törlés"
+
+#~ msgid "Show Master Pages"
+#~ msgstr "Mesteroldalak megjelenítése"
+
+#~ msgid "Show Rulers"
+#~ msgstr "Vonalzók megjelenítése"
+
+#~ msgid "Show/hide the view's rulers"
+#~ msgstr "Vonalzók megjelenítése/elrejtése"
+
+#~ msgid "Insert Page"
+#~ msgstr "Oldal beszúrása"
+
+#~ msgid "Insert a new page after the current one"
+#~ msgstr "Új oldal beszúrása a jelenlegi után"
+
+#~ msgid "Copy Page"
+#~ msgstr "Oldal másolása"
+
+#~ msgid "Copy the current page"
+#~ msgstr "A jelenlegi oldal másolása"
+
+#~ msgid "Delete Page"
+#~ msgstr "Oldal törlése"
+
+#~ msgid "Delete the current page"
+#~ msgstr "A jelenlegi oldal törlése"
+
+#~ msgid "Master Page..."
+#~ msgstr "Mesteroldal..."
+
+#~ msgid "Page Layout..."
+#~ msgstr "Oldalelrendezés..."
+
+#~ msgid "Variable"
+#~ msgstr "Változó"
+
+#~ msgid "Import Document..."
+#~ msgstr "Dokumentum importálása..."
+
+#~ msgid "Configure..."
+#~ msgstr "Beállítás..."
+
+#~ msgid "Import Slideshow"
+#~ msgstr "Diavetítés importálása"
+
+#~ msgid "Import Document"
+#~ msgstr "Dokumentum importálása"
+
+#~ msgid ""
+#~ "Could not import\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Az importálás sikertelen:\n"
+#~ "%1"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr "Oldalelrendezés módosítása"
+
+#~ msgid "Set image ..."
+#~ msgstr "Kép beállítása …"
+
+#~ msgid "Background"
+#~ msgstr "Háttér"
+
+#~ msgid "Page Background"
+#~ msgstr "Oldalháttér"
+
+#~ msgid "Page Design"
+#~ msgstr "Oldalterv"
+
+#~ msgid "Slide Design"
+#~ msgstr "Diaterv"
+
+#~ msgid "Use background of master page"
+#~ msgstr "Oldalminta hátterének használata"
+
+#~ msgid "Use background of master slide"
+#~ msgstr "Diaminta hátterének használata"
+
+#~ msgid "Display shapes of master page"
+#~ msgstr "Oldalminta alakzatainak megjelenítése"
+
+#~ msgid "Display shapes of master slide"
+#~ msgstr "Diaminta alakzatainak megjelenítése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change slide background image"
+#~ msgstr "Dia háttérkép módosítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page background image"
+#~ msgstr "Oldal háttérkép módosítása"
+
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "%1/%2 diaminta"
+
+#~ msgid "Slide %1/%2"
+#~ msgstr "%1/%2 dia"
+
+#~ msgid "Master Page %1/%2"
+#~ msgstr "%1/%2 oldalminta"
+
+#~ msgid "Page %1/%2"
+#~ msgstr "%1/%2 oldal"
+
+#, fuzzy
+#~| msgid "Check"
+#~ msgid "Check Box"
+#~ msgstr "Ellenőrzés"
+
+#~ msgid "Field"
+#~ msgstr "Mező"
+
+#~ msgid "Label"
+#~ msgstr "Címke"
+
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgid "Section Editor"
+#~ msgstr "Szakaszszerkesztő"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "A lista módosítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "Stílusok módosítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "Törlés"
+
+#~ msgid "Key Press"
+#~ msgstr "Billentyűleütés"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "Szöveg"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "Oszlop törlése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "Sor törlése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "Lábjegyzet beszúrása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr "Végjegyzet beszúrása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Right"
+#~ msgstr "Oszlop beszúrása jobbra"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr "Oszlop beszúrása balra"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Below"
+#~ msgstr "Sor beszúrása alá"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "Sor beszúrása fölé"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List Numbering"
+#~ msgstr "Listaszámozás módosítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "Formázás"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Direct Paragraph Formatting"
+#~ msgstr "Közvetlen bekezdésformázás"
+
+#, fuzzy
+#~| msgctxt "(qtundo-format)"
+#~| msgid "Rename Shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr "Alakzat átnevezése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr "Oszlopszélesség igazítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Row Height"
+#~ msgstr "Sormagasság igazítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "Beillesztés szövegként"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "Beillesztés"
+
+#~ msgid "Index Reference"
+#~ msgstr "Index referencia"
+
+#~ msgid "Text Reference"
+#~ msgstr "Szöveg referencia"
+
+#~ msgid "Please create an index to reference first."
+#~ msgstr "Tárgymutató létrehozása szükséges a hivatkozáshoz."
+
+#~ msgid "Select the index you want to reference"
+#~ msgstr "Válassza ki a hivatkozni kívánt tárgymutatót!"
+
+#~ msgid "Found 1 match"
+#~ msgid_plural "Found %1 matches"
+#~ msgstr[0] "1 találat"
+#~ msgstr[1] "%1 találat"
+
+#~ msgid "Found no match"
+#~ msgstr "Nincs találat"
+
+#~ msgid ""
+#~ "Found no match\n"
+#~ "\n"
+#~ "No text was replaced"
+#~ msgstr ""
+#~ "Nincs találat\n"
+#~ "\n"
+#~ "Nem történt csere"
+
+#~ msgid "1 replacement made"
+#~ msgid_plural "%1 replacements made"
+#~ msgstr[0] "1 csere történt"
+#~ msgstr[1] "%1 csere történt"
+
+#~ msgid "Replace %1 with %2?"
+#~ msgstr "%1 cseréje erre: %2"
+
+#, fuzzy
+#~| msgid "Group Sections"
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "Szakaszok csoportosítása"
+
+#~ msgctxt "Underline Style"
+#~ msgid "None"
+#~ msgstr "Nincs"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "Egyszeres"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "Kétszeres"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "New Paragraph"
+#~ msgstr "Új bekezdés"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "Könyvjelző hozzáadása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "Megjegyzés hozzáadása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "Index beszúrása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "Változó beszúrása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Key Press"
+#~ msgstr "Billentyűleütés"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "Sortörés beszúrása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "Táblázat beszúrása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "Cellák egyesítése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "Cellák felosztása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr "Táblázatszélesség igazítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Border Formatting"
+#~ msgstr "Szegélyformázás módosítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Tartalomjegyzék beszúrása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr "Tartalomjegyzék módosítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Irodalomjegyzék beszúrása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "Idézet hozzáadása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Typing"
+#~ msgstr "Beírás"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr "Félkövér"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "Dőlt"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "Aláhúzott"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr "Áthúzott"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr "Igazítás módosítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr "Függőleges igazítás beállítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "Behúzás csökkentése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "Behúzás növelése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "Betűméret csökkentése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "Betűméret növelése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr "Betűtípus beállítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr "Betűméret beállítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr "Háttérszín beállítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Text Color"
+#~ msgstr "Szövegszín beállítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr "Karakterstílus beállítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Paragraph Style"
+#~ msgstr "Bekezdésstílus beállítása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "Formátum"
+
+#~ msgid "Default"
+#~ msgstr "Alapértelmezés"
+
+#~ msgctxt "Default text for undo action"
+#~ msgid "Undo"
+#~ msgstr "Visszavonás"
+
+#~ msgid "Undo %1"
+#~ msgstr "%1 visszavonása"
+
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "Újra végrehajtás"
+
+#~ msgid "Redo %1"
+#~ msgstr "%1 újra végrehajtása"
+
+#, fuzzy
+#~| msgid "Empty"
+#~ msgid "<empty>"
+#~ msgstr "üres"
+
+#~ msgid "Redo"
+#~ msgstr "Újra végrehajtás"
+
+#~ msgid "Undo"
+#~ msgstr "Visszavonás"
+
+#~ msgid "&File"
+#~ msgstr "&Fájl"
+
+#~ msgid "&Settings"
+#~ msgstr "&Beállítások"
+
+#~ msgid "File"
+#~ msgstr "Fájl"
+
+#~ msgid "Add new author profile (starts out as a copy of current)"
+#~ msgstr "Új szerzőprofil hozzáadása (a jelenlegi másolataként kiindulva)"
+
+#~ msgid "Delete the author profile"
+#~ msgstr "A szerzőprofil törlése"
+
+#~ msgid "Default Author Profile"
+#~ msgstr "Alapértelmezett szerzőprofil"
+
+#~ msgid "Name (not duplicate or blank name):"
+#~ msgstr "Név (nem kettőzött vagy üres név):"
+
+#~ msgid "Name of Profile"
+#~ msgstr "A profil neve"
+
+#~ msgid "Name:"
+#~ msgstr "Név:"
+
+#~ msgid "Initials:"
+#~ msgstr "Kezdőbetűk:"
+
+#~ msgid "Title:"
+#~ msgstr "Beosztás:"
+
+#~ msgid "Position:"
+#~ msgstr "Munkakör:"
+
+#~ msgid "Company:"
+#~ msgstr "Munkahely:"
+
+#~ msgid "Email:"
+#~ msgstr "E-mail cím:"
+
+#~ msgid "Telephone (home):"
+#~ msgstr "Telefon (otthoni):"
+
+#~ msgid "Telephone (work):"
+#~ msgstr "Telefon (munkahelyi):"
+
+#~ msgid "Fax:"
+#~ msgstr "Fax:"
+
+#~ msgid "Street:"
+#~ msgstr "Utca, házszám:"
+
+#~ msgid "City:"
+#~ msgstr "Város:"
+
+#~ msgid "Country:"
+#~ msgstr "Ország:"
+
+#~ msgid "No autosave"
+#~ msgstr "Nincs automatikus mentés"
+
+#~ msgctxt "unit symbol for minutes, leading space as separator"
+#~ msgid " min"
+#~ msgstr " perc"
+
+#~ msgid "Autosave interval:"
+#~ msgstr "Automatikus mentési időköz:"
+
+#~ msgid "Create backup file:"
+#~ msgstr "Biztonsági mentés készítése:"
+
+#~ msgid "Show grid:"
+#~ msgstr "Rács megjelenítése:"
+
+#~ msgid "Snap to grid:"
+#~ msgstr "Igazítás a rácshoz:"
+
+#~ msgid "Grid color:"
+#~ msgstr "A rács színe:"
+
+#~ msgid "Spacing"
+#~ msgstr "Távolság"
+
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "&Vízszintes:"
+
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "&Függőleges:"
+
+#~ msgid "Units:"
+#~ msgstr "Egységek:"
+
+#~ msgid "Handle radius:"
+#~ msgstr "Fogantyú sugara:"
+
+#~ msgid "Grab sensitivity:"
+#~ msgstr "Megfogás érzékenysége:"
+
+#~ msgid "Paste offset:"
+#~ msgstr "Beillesztési eltolás:"
+
+#~ msgid "Paste at Cursor:"
+#~ msgstr "Beillesztés a kurzornál:"
+
+#~ msgid "Only print and exit"
+#~ msgstr "Csak nyomtatás, majd kilépés"
+
+#~ msgid "Open a new document with a template"
+#~ msgstr "Új dokumentum létrehozása sablonnal"
+
+#~ msgid "Override display DPI"
+#~ msgstr "A képernyő DPI értékének felülbírálása"
+
+#~ msgid "Only export to PDF and exit"
+#~ msgstr "Exportálás PDF-be és kilépés"
+
+#~ msgid "Filename for export-pdf"
+#~ msgstr "Az exportált PDF fájlneve"
+
+#~ msgid "just load the file and then exit"
+#~ msgstr "a fájl betöltése és kilépés"
+
+#~ msgid "load the file, show the window and progressbar and then exit"
+#~ msgstr ""
+#~ "a fájl betöltése, az ablak és a folyamatjelző megjelenítése, majd kilépés"
+
+#~ msgid "Filename to write profiling information into."
+#~ msgstr "A profilkészítési adatokat tároló fájl neve"
+
+#~ msgid "Load a file and save it as an ODF file. Meant for debugging."
+#~ msgstr "Fájl betöltése és mentése ODF-ként (hibakeresés céljából)."
+
+#~ msgid "Calligra"
+#~ msgstr "Calligra"
+
+#~ msgid ""
+#~ "You are running a 32 bits build on a 64 bits Windows.\n"
+#~ "This is not recommended.\n"
+#~ "Please download and install the x64 build instead."
+#~ msgstr ""
+#~ "Egy 32 bites verziót futtat 64 bites Windowson.\n"
+#~ "Ez nem javasolt.\n"
+#~ "Kérjük töltse le és telepítse helyette az x64-es verziót."
+
+#, fuzzy
+#~| msgid ": Critical Error"
+#~ msgid "%1: Critical Error"
+#~ msgstr ": Kritikus hiba"
+
+#, fuzzy
+#~| msgid ""
+#~| "Essential application components could not be found.\n"
+#~| "This might be an installation issue.\n"
+#~| "Try restarting, running kbuildsycoca4.exe or reinstalling."
+#~ msgid ""
+#~ "Essential application components could not be found.\n"
+#~ "This might be an installation issue.\n"
+#~ "Try restarting or reinstalling."
+#~ msgstr ""
+#~ "A létfontosságú alkalmazás komponensek nem találhatók.\n"
+#~ "Ez lehet telepítési probléma.\n"
+#~ "Próbálja meg az újraindítást, a kbuildsycoca4.exe futtatását vagy az "
+#~ "újratelepítést."
+
+#~ msgid "No template found for: %1"
+#~ msgstr "Nem található sablon ehhez: %1 "
+
+#~ msgid "Too many templates found for: %1"
+#~ msgstr "Túl sok sablon található ehhez: %1"
+
+#~ msgid "Template %1 failed to load."
+#~ msgstr "A(z) %1 nevű sablon betöltése nem sikerült."
+
+#~ msgctxt "@title:window"
+#~ msgid "Recover Files"
+#~ msgstr "Fájlok helyreállítása"
+
+#~ msgid "The following autosave file can be recovered:"
+#~ msgstr "A következő automatikusan mentett fájl állítható helyre:"
+
+#~ msgid "The following autosave files can be recovered:"
+#~ msgstr "A következő automatikusan mentett fájlok állíthatók helyre:"
+
+#~ msgid "Always use this template at application start up"
+#~ msgstr "Mindig ezt a sablont kell használni az alkalmazás indításakor"
+
+#~ msgid "Always use this template"
+#~ msgstr "Mindig ezt a sablont kell használni"
+
+#~ msgid "Making backup..."
+#~ msgstr "Biztonsági mentése..."
+
+#~ msgid "Saving..."
+#~ msgstr "Mentés..."
+
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Nem sikerült menteni:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Nem sikerült menteni: %1\n"
+#~ "A hiba oka: %2"
+
+#~ msgid "Document <i>%1</i> saved"
+#~ msgstr "<i>%1</i> dokumentum elmentve"
+
+#~ msgid ""
+#~ "The password of this encrypted document is not known. Autosave aborted! "
+#~ "Please save your work manually."
+#~ msgstr ""
+#~ "A titkosított dokumentum jelszava nem ismert, ezért az automatikus mentés "
+#~ "nem lehetséges. Mentse el a munkáját manuálisan!"
+
+#~ msgid "Autosaving..."
+#~ msgstr "Automatikus mentés..."
+
+#~ msgid "Error during autosave! Partition full?"
+#~ msgstr ""
+#~ "Hiba történt automatikus mentés közben. Lehet, hogy betelt a partíció."
+
+#~ msgid "Could not create the file for saving"
+#~ msgstr "Nem sikerült létrehozni a fájlt mentéshez"
+
+#~ msgid "Not able to write '%1'. Partition full?"
+#~ msgstr "Nem sikerült írni a(z) '%1' fájlba. Lehet, hogy betelt a partíció."
+
+#~ msgid "Not able to write RDF metadata. Partition full?"
+#~ msgstr "Az RDF-metaadatok írása sikertelen. Lehet, hogy betelt a partíció?"
+
+#~ msgid "Error while trying to write '%1'. Partition full?"
+#~ msgstr ""
+#~ "Hiba történt a(z) '%1' fájlba való írás közben. Lehet, hogy betelt a "
+#~ "partíció."
+
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Hibás URL:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "An autosaved file exists for this document.\n"
+#~ "Do you want to open it instead?"
+#~ msgstr ""
+#~ "A dokumentumnak létezik egy automatikusan mentett változata.\n"
+#~ "Ezt szeretné megnyitni?"
+
+#~ msgid "The file %1 does not exist."
+#~ msgstr "Nem létezik %1 nevű fájl."
+
+#~ msgid "Opening Document"
+#~ msgstr "Dokumentum megnyitása"
+
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "Nem sikerült létrehozni a szűrő bővítményt"
+
+#~ msgid "File not found"
+#~ msgstr "A fájl nem található"
+
+#~ msgid "Cannot create storage"
+#~ msgstr "Nem lehet tárolót létrehozni"
+
+#~ msgid "Bad MIME type"
+#~ msgstr "Hibás MIME-típus"
+
+#~ msgid "Format not recognized"
+#~ msgstr "Ismeretlen formátum"
+
+#~ msgid "Not implemented"
+#~ msgstr "Nem implementált"
+
+#~ msgid "Parsing error"
+#~ msgstr "Feldolgozási hiba"
+
+#~ msgid "Document is password protected"
+#~ msgstr "A dokumentum jelszóval védett"
+
+#~ msgid "Invalid file format"
+#~ msgstr "Érvénytelen fájlformátum"
+
+#~ msgid "Internal error"
+#~ msgstr "belső hiba"
+
+#~ msgid "Out of memory"
+#~ msgstr "Nincs elég memória"
+
+#~ msgid "Empty Filter Plugin"
+#~ msgstr "Üres szűrő bővítmény"
+
+#~ msgid "Trying to load into the wrong kind of document"
+#~ msgstr "Betöltési kísérlet egy rossz dokumentumfajtába"
+
+#~ msgid "Failed to download remote file"
+#~ msgstr "Nem sikerült letölteni a távoli fájlt"
+
+#~ msgid "Unknown error"
+#~ msgstr "Ismeretlen hiba"
+
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr ""
+#~ "Nem sikerült megnyitni: %2.\n"
+#~ "A hiba oka: %1.\n"
+#~ "%3"
+
+#~ msgid "Document <i>%1</i> loaded"
+#~ msgstr "<i>%1</i> dokumentum betöltve"
+
+#~ msgid "Could not find %1"
+#~ msgstr "%1 nem található"
+
+#~ msgid ""
+#~ "Parsing error in %1 at line %2, column %3\n"
+#~ "Error message: %4"
+#~ msgstr ""
+#~ "Feldolgozási hiba történt (%1): %2. sor, %3. oszlop\n"
+#~ "A hibaüzenet: %4"
+
+#~ msgid "%1 is not a file."
+#~ msgstr "%1 nem fájl."
+
+#~ msgid "Could not open the file for reading (check read permissions)."
+#~ msgstr ""
+#~ "A fájlt nem sikerült megnyitni olvasásra (ellenőrizze az olvasási "
+#~ "jogosultságot)."
+
+#~ msgid "Could not read the beginning of the file."
+#~ msgstr "Nem sikerült olvasni a fájl elejéről."
+
+#~ msgid ""
+#~ "parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "feldolgozási hiba történt a fődokumentumban: %1. sor, %2. oszlop\n"
+#~ "A hibaüzenet: %3"
+
+#~ msgid "Not a valid Calligra file: %1"
+#~ msgstr "Érvénytelen Calligra fájl: %1"
+
+#~ msgid "Invalid document: no file 'maindoc.xml'."
+#~ msgstr ""
+#~ "A dokumentum érvénytelen: hiányzik belőle a „maindoc.xml” nevű fájl."
+
+#~ msgid ""
+#~ "Document <i>%1</i> contains several versions. Go to File->Versions to "
+#~ "open an old version."
+#~ msgstr ""
+#~ "<i>%1</i> dokumentum több verziót is tartalmaz. A Fájl->Verziók menüpont "
+#~ "segítségével nyitható meg régebbi verzió."
+
+#~ msgid "Untitled"
+#~ msgstr "Névtelen"
+
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr ""
+#~ "<p>A(z) <b>'%1'</b> dokumentum megváltozott.</p><p>El szeretné menteni?</"
+#~ "p>"
+
+#~ msgid "Internal error: saveXML not implemented"
+#~ msgstr "Belső hiba: saveXML nem implementált"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Nem sikerült megnyitni:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Nem sikerült megnyitni: %1\n"
+#~ "A hiba oka: %2"
+
+#~ msgid "a word processing"
+#~ msgstr "egy szöveg"
+
+#~ msgid "a spreadsheet"
+#~ msgstr "egy munkafüzet"
+
+#~ msgid "a presentation"
+#~ msgstr "egy bemutató"
+
+#~ msgid "a chart"
+#~ msgstr "egy grafikon"
+
+#~ msgid "a drawing"
+#~ msgstr "egy rajz"
+
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr ""
+#~ "A(z) „%1” dokumentum megváltozott.\n"
+#~ "Meg szeretné tartani vagy inkább eldobja a módosításokat?"
+
+#~ msgid "Close Document"
+#~ msgstr "Dokumentum bezárása"
+
+#~ msgid "%1 %"
+#~ msgstr "%1 %"
+
+#~ msgid "No"
+#~ msgstr "Nem"
+
+#~ msgid "Yes"
+#~ msgstr "Igen"
+
+#~ msgid "Could not export file."
+#~ msgstr "A fájl exportálása nem sikerült."
+
+#~ msgid "Missing Export Filter"
+#~ msgstr "Hiányzó exportszűrő"
+
+#~ msgid ""
+#~ "Could not import file of type\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ilyen típusú fájl nem importálható:\n"
+#~ "%1"
+
+#~ msgid "Missing Import Filter"
+#~ msgstr "Hiányzó importszűrő"
+
+#~ msgid "Choose Filter"
+#~ msgstr "Szűrőválasztás"
+
+#~ msgid "Case Sensitive"
+#~ msgstr "Nagybetűérzékeny"
+
+#~ msgid "Match cases when searching"
+#~ msgstr "Kis- és nagybetűk megkülönböztetése kereséskor"
+
+#~ msgid "Match only whole words"
+#~ msgstr "Csak teljes szavak"
+
+#~ msgid "Whole Words Only"
+#~ msgstr "Csak egész szavakat"
+
+#~ msgid "Find from Cursor"
+#~ msgstr "Keresés a kurzortól"
+
+#~ msgid "Start searching from the current cursor"
+#~ msgstr "Keresés indítása a jelenlegi kurzortól"
+
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "Keresés:"
+
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "Következő"
+
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "Előző"
+
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "Beállítások"
+
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "Csere:"
+
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "Csere"
+
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "Összes cseréje"
+
+#~ msgctxt "Total number of matches"
+#~ msgid "1 match found"
+#~ msgid_plural "%1 matches found"
+#~ msgstr[0] "1 találat"
+#~ msgstr[1] "%1 találat"
+
+#~ msgid "No matches found"
+#~ msgstr "Nincs találat"
+
+#~ msgid "Search hit bottom, continuing from top."
+#~ msgstr "A keresés elérte az alját, folytatás a tetejéről."
+
+#~ msgid "Search hit top, continuing from bottom."
+#~ msgstr "A keresés elérte a tetejét, folytatás az aljáról."
+
+#~ msgid "%1 unsaved document (%2)"
+#~ msgstr "%1 nem mentett dokumentum (%2)"
+
+#~ msgid "Export as PDF..."
+#~ msgstr "Exportálás PDF-fájlként..."
+
+#~ msgid "Reload"
+#~ msgstr "Újratöltés"
+
+#~ msgid "Versions..."
+#~ msgstr "Verziók..."
+
+#~ msgid "Open ex&isting Document as Untitled Document..."
+#~ msgstr "&Létező dokumentum megnyitása névtelen dokumentumként…"
+
+#~ msgid "E&xport..."
+#~ msgstr "E&xportálás..."
+
+#~ msgid "En&crypt Document"
+#~ msgstr "Dokumentum &titkosítása"
+
+#~ msgid "&Uncompress to Directory"
+#~ msgstr "&Kibontás könyvtárba"
+
+#~ msgid "&New View"
+#~ msgstr "&Új nézet"
+
+#~ msgid "Document Information"
+#~ msgstr "Dokumentumjellemzők"
+
+#~ msgid "Full Screen Mode"
+#~ msgstr "Teljesképernyős mód"
+
+#~ msgid "Show Dockers"
+#~ msgstr "Dokkolók megjelenítése"
+
+#, fuzzy
+#~| msgid "Show Dockers"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "Dokkolók megjelenítése"
+
+#~ msgid "Dockers"
+#~ msgstr "Dokkolók"
+
+#~ msgid "(write protected)"
+#~ msgstr "(írásvédett)"
+
+#~ msgid "Save as %1"
+#~ msgstr "Mentés másként - %1"
+
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "%1 (ismeretlen fájltípus)"
+
+#~ msgid ""
+#~ "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
+#~ "want to save in this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Ha a mentés %1 formátumban történik, egyes formázási jellemzők "
+#~ "elveszhetnek.<p>Biztosan ebben a formátumban szeretne menteni?</qt>"
+
+#~ msgid "Confirm Save"
+#~ msgstr "A mentés megerősítése"
+
+#~ msgid ""
+#~ "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you "
+#~ "still want to export to this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Ha a mentés %1 formátumban történik, egyes formázási jellemzők "
+#~ "elveszhetnek.<p>Biztosan ebben a formátumban szeretne exportálni?</qt>"
+
+#~ msgid "Confirm Export"
+#~ msgstr "Az exportálás megerősítése"
+
+#~ msgid "untitled"
+#~ msgstr "névtelen"
+
+#~ msgid "Open Document"
+#~ msgstr "Dokumentum megnyitása"
+
+#~ msgid "Export as PDF"
+#~ msgstr "Exportálás PDF-be"
+
+#~ msgid "Cannot export to the specified file"
+#~ msgstr "Nem sikerült exportálni a megadott fájlba"
+
+#~ msgid "Document - %1"
+#~ msgstr "Dokumentum - %1"
+
+#~ msgid ""
+#~ "You will lose all changes made since your last save\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "A módosítások el fognak veszni!\n"
+#~ "Biztosan folytatni szeretné?"
+
+#~ msgid "Warning"
+#~ msgstr "Figyelem"
+
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "A(z) %1 eszköztár megjelenítése"
+
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "A(z) %1 eszköztár elrejtése"
+
+#~ msgid "Open Existing Document"
+#~ msgstr "Meglévő dokumentum megnyitása"
+
+#~ msgid "Recent Documents"
+#~ msgstr "Nemrég használt dokumentumok"
+
+#~ msgid "Custom Document"
+#~ msgstr "Egyéni dokumentum"
+
+#~ msgid "Stop"
+#~ msgstr "Leállítás"
+
+#~ msgid "Printing"
+#~ msgstr "Nyomtatás"
+
+#~ msgid "Printing done"
+#~ msgstr "A nyomtatás befejeződött"
+
+#~ msgid "Close"
+#~ msgstr "Bezárás"
+
+#~ msgid "Stopped"
+#~ msgstr "Leállítva"
+
+#~ msgid "Open This Document"
+#~ msgstr "A dokumentum megnyitása"
+
+#~ msgctxt "File modification date and time. %1 is date time"
+#~ msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Utolsó módosítás:</b></td><td>%1</td></tr>"
+
+#~ msgctxt "File access date and time. %1 is date time"
+#~ msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Utolsó hozzáférés:</b></td><td>%1</td></tr>"
+
+#~ msgid "Show Guides"
+#~ msgstr "Segédvonalak megjelenítése"
+
+#~ msgid "Shows or hides guides"
+#~ msgstr "Segédvonalak megjelenítése és elrejtése"
+
+#~ msgid "Create Template"
+#~ msgstr "Sablon készítése"
+
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "Név:"
+
+#~ msgid "Group:"
+#~ msgstr "Csoport:"
+
+#~ msgid "&Add Group..."
+#~ msgstr "Csoport &hozzáadása..."
+
+#~ msgid "&Remove"
+#~ msgstr "&Eltávolítás"
+
+#~ msgid "Picture"
+#~ msgstr "Kép"
+
+#~ msgid "&Preview"
+#~ msgstr "&Előnézet"
+
+#~ msgid "Custom:"
+#~ msgstr "Egyéni:"
+
+#~ msgid "&Select..."
+#~ msgstr "T&allózás..."
+
+#~ msgid "Use the new template as default"
+#~ msgstr "Az új sablon legyen az alapértelmezett"
+
+#~ msgid "Use the new template every time %1 starts"
+#~ msgstr "Az új sablon használata a(z) %1 indításakor"
+
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr "Biztosan felül akarja írni a már létező '%1' sablont?"
+
+#~ msgid "Add Group"
+#~ msgstr "Csoport hozzáadása"
+
+#~ msgid "Enter group name:"
+#~ msgstr "Adja meg a csoport nevét:"
+
+#~ msgid "This name is already used."
+#~ msgstr "Ez a név már foglalt."
+
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "Biztosan törölni akarja ezt a csoportot?"
+
+#~ msgid "Remove Group"
+#~ msgstr "A csoport törlése"
+
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "Biztosan el szeretné távolítani ezt a sablont?"
+
+#~ msgid "Remove Template"
+#~ msgstr "A sablon eltávolítása"
+
+#~ msgid "&Delete"
+#~ msgstr "&Törlés"
+
+#~ msgid "Could not load picture."
+#~ msgstr "A kép betöltése nem sikerült."
+
+#~ msgid "No picture available."
+#~ msgstr "Egy kép sem áll rendelkezésre."
+
+#~ msgid "Use This Template"
+#~ msgstr "A sablon használata"
+
+#~ msgid "Version"
+#~ msgstr "Verzió"
+
+#~ msgid "Date & Time"
+#~ msgstr "Dátum és idő"
+
+#~ msgid "Saved By"
+#~ msgstr "Elmentette"
+
+#~ msgid "Comment"
+#~ msgstr "Megjegyzés"
+
+#~ msgid "&Add"
+#~ msgstr "&Hozzáadás"
+
+#~ msgid "&Modify"
+#~ msgstr "&Módosítás"
+
+#~ msgid "&Open"
+#~ msgstr "Megny&itás"
+
+#~ msgid "A new version could not be added"
+#~ msgstr "Nem adható hozzá új verzió"
+
+#~ msgid "Date: %1"
+#~ msgstr "Dátum: %1"
+
+#~ msgid "Active Author Profile"
+#~ msgstr "Aktív szerzőprofil"
+
+#~ msgctxt "choice for author profile"
+#~ msgid "Anonymous"
+#~ msgstr "Névtelen"
+
+#~ msgid "Unknown"
+#~ msgstr "Ismeretlen"
+
+#~ msgid ""
+#~ "This document contains an unknown checksum. When you give a password it "
+#~ "might not be verified."
+#~ msgstr ""
+#~ "A dokumentum ismeretlen ellenőrzőösszeget tartalmaz. A megadott jelszó "
+#~ "nem ellenőrizhető."
+
+#~ msgid ""
+#~ "This document contains an unknown encryption method. Some parts may be "
+#~ "unreadable."
+#~ msgstr ""
+#~ "A dokumentum ismeretlen titkosítási eljárást használ. Egyes részei "
+#~ "olvashatatlanok lehetnek."
+
+#~ msgid ""
+#~ "This document contains incomplete encryption data. Some parts may be "
+#~ "unreadable."
+#~ msgstr ""
+#~ "A dokumentum befejezetlen titkosítási adatot tartalmaz. Egyes részei "
+#~ "olvashatatlanok lehetnek."
+
+#~ msgid ""
+#~ "QCA has currently no support for SHA1 or PBKDF2 using SHA1. The document "
+#~ "can not be opened."
+#~ msgstr ""
+#~ "A QCA jelenleg nem támogatja az SHA1 és PBKDF2-SHA1 kódolást. A "
+#~ "dokumentum nem nyitható meg."
+
+#~ msgid ""
+#~ "The manifest file seems to be corrupted. It cannot be modified and the "
+#~ "document will remain unreadable. Please try and save the document again "
+#~ "to prevent losing your work."
+#~ msgstr ""
+#~ "A jegyzékfájl sérültnek tűnik. Nem módosítható, és a dokumentum "
+#~ "olvashatatlan marad. A módosítások elvesztésének megelőzésére próbálja "
+#~ "meg újra elmenteni a dokumentumot."
+
+#~ msgid ""
+#~ "The manifest file cannot be written. The document will remain unreadable. "
+#~ "Please try and save the document again to prevent losing your work."
+#~ msgstr ""
+#~ "A jegyzékfájl nem írható, és a dokumentum olvashatatlan marad. A "
+#~ "módosítások elvesztésének megelőzésére próbálja meg újra elmenteni a "
+#~ "dokumentumot."
+
+#~ msgid "Please enter the password to open this file."
+#~ msgstr "Adja meg a jelszót a fájl megnyitásához!"
+
+#~ msgid "Please enter the password to encrypt the document with."
+#~ msgstr "Adja meg a jelszót a dokumentum titkosításához!"
+
+#~ msgid "Do you want to save the password?"
+#~ msgstr "El szeretné menteni a jelszót?"
+
+#~ msgid "No store backend"
+#~ msgstr "Nincs tárolási háttérendszer"
+
+#~ msgid ""
+#~ "Parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Feldolgozási hiba történt a fődokumentumban (%1. sor, %2. oszlop).\n"
+#~ "A hibaüzenet: %3"
+
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "Képernyő"
+
+#~ msgid "The directory mode is not supported for remote locations."
+#~ msgstr "A könyvtármód nem támogatott távoli helyeknél."
+
+#~ msgid "Calligra Storage"
+#~ msgstr "Calligra Storage"
+
+#~ msgid "Clear"
+#~ msgstr "Törlés"
+
+#~ msgid "Subtract"
+#~ msgstr "Kivonat"
+
+#~ msgid "Multiply"
+#~ msgstr "Többszörözés"
+
+#~ msgid "Alpha mask"
+#~ msgstr "Alfa-maszk"
+
+#~ msgid "Alpha"
+#~ msgstr "Alfa"
+
+#~ msgid "Undefined operation in the alpha color space"
+#~ msgstr "Meghatározatlan művelet az alfa-színtérben"
+
+#~ msgid "L*a*b* (16-bit integer/channel, unmanaged)"
+#~ msgstr "L*a*b (16-bites egész/csatorna, nem kezelt)"
+
+#~ msgid "Lightness"
+#~ msgstr "Fényesség"
+
+#~ msgid "a*"
+#~ msgstr "a*"
+
+#~ msgid "b*"
+#~ msgstr "b*"
+
+#~ msgid "RGB (16-bit integer/channel, unmanaged)"
+#~ msgstr "RGB (16-bites egész/csatorna, nem kezelt)"
+
+#~ msgid "RGB (8-bit integer/channel, unmanaged)"
+#~ msgstr "RGB (8-bites egész/csatorna, nem kezelt)"
+
+#~ msgid "Blue"
+#~ msgstr "Kék"
+
+#~ msgid "Green"
+#~ msgstr "Zöld"
+
+#~ msgid "Red"
+#~ msgstr "Vörös"
+
+#~ msgid "Undefined operation in the %1 space"
+#~ msgstr "Meghatározatlan művelet a(z) %1 térben"
+
+#~ msgid "Undefined operation in the %1 color space"
+#~ msgstr "Meghatározatlan művelet a(z) %1 színtérben"
+
+#~ msgid "Simple Color Conversion Engine"
+#~ msgstr "Egyszerű színkonverziós motor"
+
+#~ msgid "Alpha darken"
+#~ msgstr "Alfa sötétítés"
+
+#~ msgid "Behind"
+#~ msgstr "Mögött"
+
+#~ msgid "Dissolve"
+#~ msgstr "Szétoszlás"
+
+#~ msgid "Erase"
+#~ msgstr "Törlés"
+
+#~ msgid "Normal"
+#~ msgstr "normál"
+
+#~ msgid "Overlay"
+#~ msgstr "Átfedés"
+
+#~ msgid "Grain Merge"
+#~ msgstr "Szemcseösszefésülés"
+
+#~ msgid "Grain Extract"
+#~ msgstr "Szemcsekigyűjtés"
+
+#~ msgid "Hard Mix"
+#~ msgstr "Erős keverés"
+
+#~ msgid "Geometric Mean"
+#~ msgstr "Geometriai közép"
+
+#~ msgid "Parallel"
+#~ msgstr "Párhuzamos"
+
+#~ msgid "Allanon"
+#~ msgstr "Allanon"
+
+#~ msgid "Color Dodge"
+#~ msgstr "Világos szín"
+
+#~ msgid "Linear Dodge"
+#~ msgstr "Lineáris világosító"
+
+#~ msgid "Lighten"
+#~ msgstr "Világosítás"
+
+#~ msgid "Hard Light"
+#~ msgstr "Erős fény"
+
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "Enyhe fény (SVG)"
+
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "Enyhe fény (Photoshop)"
+
+#~ msgid "Gamma Light"
+#~ msgstr "Gamma fény"
+
+#~ msgid "Vivid Light"
+#~ msgstr "Élénk megvilágítás"
+
+#~ msgid "Pin Light"
+#~ msgstr "Tompa fény"
+
+#~ msgid "Linear Light"
+#~ msgstr "Lineáris megvilágítás"
+
+#~ msgid "Color Burn"
+#~ msgstr "Sötét szín"
+
+#~ msgid "Linear Burn"
+#~ msgstr "Lineáris égés"
+
+#~ msgid "Darken"
+#~ msgstr "Sötétítés"
+
+#~ msgid "Gamma Dark"
+#~ msgstr "Gamma sötét"
+
+#~ msgid "Addition"
+#~ msgstr "Összeadás"
+
+#~ msgid "Inversed-Subtract"
+#~ msgstr "Inverz kivonat"
+
+#~ msgid "Divide"
+#~ msgstr "Felosztás"
+
+#~ msgid "Arcus Tangent"
+#~ msgstr "Arcus tanges"
+
+#~ msgid "Difference"
+#~ msgstr "Különbség"
+
+#~ msgid "Exclusion"
+#~ msgstr "Kizárás"
+
+#~ msgid "Equivalence"
+#~ msgstr "Egyenlőség"
+
+#~ msgid "Additive-Subtractive"
+#~ msgstr "Additív kivonó"
+
+#~ msgid "Copy Red"
+#~ msgstr "Vörös másolása"
+
+#~ msgid "Copy Green"
+#~ msgstr "Zöld másolása"
+
+#~ msgid "Copy Blue"
+#~ msgstr "Kék másolása"
+
+#~ msgid "Color"
+#~ msgstr "Szín"
+
+#~ msgid "Hue"
+#~ msgstr "Árnyalat"
+
+#~ msgid "Saturation"
+#~ msgstr "Telítettség"
+
+#~ msgid "Increase Saturation"
+#~ msgstr "Telítettség növelése"
+
+#~ msgid "Decrease Saturation"
+#~ msgstr "Telítettség csökkentése"
+
+#~ msgid "Luminosity"
+#~ msgstr "Fényesség"
+
+#~ msgid "Increase Luminosity"
+#~ msgstr "Fényesség növelése"
+
+#~ msgid "Decrease Luminosity"
+#~ msgstr "Fényesség csökkentése"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgid "Darker Color"
+#~ msgstr "Háttérszín"
+
+#, fuzzy
+#~| msgid "Line Color"
+#~ msgid "Lighter Color"
+#~ msgstr "Vonalszín"
+
+#~ msgid "Color HSI"
+#~ msgstr "Szín (HSI)"
+
+#~ msgid "Hue HSI"
+#~ msgstr "Árnyalat (HSI)"
+
+#~ msgid "Saturation HSI"
+#~ msgstr "Telítettség (HSI)"
+
+#~ msgid "Increase Saturation HSI"
+#~ msgstr "Telítettség növelése (HSI)"
+
+#~ msgid "Decrease Saturation HSI"
+#~ msgstr "Telítettség csökkentése (HSI)"
+
+#~ msgid "Intensity"
+#~ msgstr "Intenzitás"
+
+#~ msgid "Increase Intensity"
+#~ msgstr "Intenzitás növelése"
+
+#~ msgid "Decrease Intensity"
+#~ msgstr "Intenzitás csökkentése"
+
+#~ msgid "Color HSL"
+#~ msgstr "Szín (HSL)"
+
+#~ msgid "Hue HSL"
+#~ msgstr "Árnyalat (HSL)"
+
+#~ msgid "Saturation HSL"
+#~ msgstr "Telítettség (HSL)"
+
+#~ msgid "Increase Saturation HSL"
+#~ msgstr "Telítettség növelése (HSL)"
+
+#~ msgid "Decrease Saturation HSL"
+#~ msgstr "Telítettség csökkentése (HSL)"
+
+#~ msgid "Increase Lightness"
+#~ msgstr "Fényesség növelése"
+
+#~ msgid "Decrease Lightness"
+#~ msgstr "Fényesség csökkentése"
+
+#~ msgid "Color HSV"
+#~ msgstr "Szín (HSV)"
+
+#~ msgid "Hue HSV"
+#~ msgstr "Árnyalat (HSV)"
+
+#~ msgid "Saturation HSV"
+#~ msgstr "Telítettség (HSV)"
+
+#~ msgid "Increase Saturation HSV"
+#~ msgstr "Telítettség növelése (HSV)"
+
+#~ msgid "Decrease Saturation HSV"
+#~ msgstr "Telítettség csökkentése (HSV)"
+
+#~ msgid "Increase Value"
+#~ msgstr "Érték növelése"
+
+#~ msgid "Decrease Value"
+#~ msgstr "Érték csökkentése"
+
+#~ msgid "Generic RGB Histogram"
+#~ msgstr "Általános RGB hisztogram"
+
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "G"
+#~ msgstr "G"
+
+#~ msgid "L*a*b* Histogram"
+#~ msgstr "L*a*b* Hisztogram"
+
+#~ msgid "L*"
+#~ msgstr "L*"
+
+#~ msgid "Generic L*a*b* Histogram"
+#~ msgstr "Általános L*a*b* Hisztogram"
+
+#~ msgid "RGB"
+#~ msgstr "RGB"
+
+#~ msgid "XYZ"
+#~ msgstr "XYZ"
+
+#~ msgid "L*a*b*"
+#~ msgstr "L*a*b*"
+
+#~ msgid "CMYK"
+#~ msgstr "CMYK"
+
+#~ msgid "Grayscale"
+#~ msgstr "Szürkeárnyalatos"
+
+#~ msgid "Grayscale (without transparency)"
+#~ msgstr "Szürkeárnyalatos (átlátszóság nélkül)"
+
+#~ msgid "YCbCr"
+#~ msgstr "YCbCr"
+
+#~ msgid "8 Bits"
+#~ msgstr "8 bit"
+
+#~ msgid "16 Bits"
+#~ msgstr "16 bit"
+
+#~ msgid "16 Bits Float"
+#~ msgstr "16 bit lebegőpontos"
+
+#~ msgid "32 Bits Float"
+#~ msgstr "32 bit lebegőpontos"
+
+#~ msgid "64 Bits Float"
+#~ msgstr "64 bit lebegőpontos"
+
+#~ msgid "Arithmetic"
+#~ msgstr "Számtan"
+
+#~ msgid "Negative"
+#~ msgstr "Negatív"
+
+#~ msgid "HSY"
+#~ msgstr "HSY"
+
+#~ msgid "HSI"
+#~ msgstr "HSI"
+
+#~ msgid "HSL"
+#~ msgstr "HSL"
+
+#~ msgid "HSV"
+#~ msgstr "HSV"
+
+#~ msgid "Mix"
+#~ msgstr "Keverés"
+
+#~ msgid "Inverse Subtract"
+#~ msgstr "Inverz kivonat"
+
+#~ msgid "Burn"
+#~ msgstr "Égés"
+
+#~ msgid "Additive Subtractive"
+#~ msgstr "Additív kivonó"
+
+#~ msgid "Alpha Darken"
+#~ msgstr "Alfa sötétítés"
+
+#~ msgid "Bumpmap"
+#~ msgstr "Textúraminta"
+
+#~ msgid "SVG Gradient"
+#~ msgstr "SVG színátmenet"
+
+#~ msgid "Select the object you want to reference"
+#~ msgstr "Válassza ki a hivatkozni kívánt objektumot"
+
+#~ msgid "Reference"
+#~ msgstr "Hivatkozás"
+
+#~ msgid "Set For All Existing"
+#~ msgstr "Beállítás minden létezőre"
+
+#~ msgctxt "statement is an Rdf related term"
+#~ msgid "<qt>Edits will be lost.<p>There is %1 invalid statement left.</qt>"
+#~ msgid_plural ""
+#~ "<qt>Edits will be lost.<p>There are %1 invalid statements left.</qt>"
+#~ msgstr[0] ""
+#~ "<qt>A szerkesztett adatok elvesznek.<p>%1 érvénytelen kivonat van vissza."
+#~ "</qt>"
+#~ msgstr[1] ""
+#~ "<qt>A szerkesztett adatok elvesznek.<p>%1 érvénytelen kivonat van vissza."
+#~ "</qt>"
+
+#~ msgctxt "statement is an Rdf related term"
+#~ msgid "Discard invalid statements?"
+#~ msgstr "Az érvénytelen kivonatok kerüljenek eldobásra?"
+
+#~ msgid "Rdf"
+#~ msgstr "Rdf"
+
+#~ msgid "Triples"
+#~ msgstr "Hármasok"
+
+#~ msgid "new"
+#~ msgstr "új"
+
+#~ msgid "copy"
+#~ msgstr "másolás"
+
+#~ msgid "delete"
+#~ msgstr "törlés"
+
+#~ msgid "Namespaces"
+#~ msgstr "Névterek"
+
+#~ msgid "Prefix"
+#~ msgstr "Előtag"
+
+#~ msgid "Namespace"
+#~ msgstr "Névtér"
+
+#~ msgid "Semantic"
+#~ msgstr "Szemantikus"
+
+#~ msgid "SPARQL"
+#~ msgstr "SPARQL"
+
+#, fuzzy
+#~| msgid ""
+#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
+#~| "TR/REC-html40/strict.dtd\">\n"
+#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~| "css\">\n"
+#~| "p, li { white-space: pre-wrap; }\n"
+#~| "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~| "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\"># Insert your SPARQL query here<br /"
+#~| "># Results are shown below.</span></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">prefix rdf:  &lt;http://www.w3."
+#~| "org/1999/02/22-rdf-syntax-ns#&gt; </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">prefix foaf: &lt;http://xmlns.com/"
+#~| "foaf/0.1/&gt; </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">prefix pkg:  &lt;http://docs.oasis-"
+#~| "open.org/opendocument/meta/package/common#&gt; </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">prefix geo84: &lt;http://www.w3."
+#~| "org/2003/01/geo/wgs84_pos#&gt;</span></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">select ?s ?p ?o </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">where { </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\"> ?s ?p ?o </span></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "family:'Verdana'; font-size:13pt;\">}</span></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~| "font-family:'Verdana'; font-size:13pt;\"></p></body></html>"
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:9pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"># Insert your SPARQL query here<br /"
+#~ "># Results are shown below.</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix rdf:  &lt;http://www.w3."
+#~ "org/1999/02/22-rdf-syntax-ns#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix foaf: &lt;http://xmlns.com/"
+#~ "foaf/0.1/&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix pkg:  &lt;http://docs.oasis-"
+#~ "open.org/ns/office/1.2/meta/pkg#&gt; </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">prefix geo84: &lt;http://www.w3."
+#~ "org/2003/01/geo/wgs84_pos#&gt;</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">select ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">where { </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\"> ?s ?p ?o </span></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "family:'Verdana'; font-size:13pt;\">}</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'Verdana'; font-size:13pt;\"></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Verdana'; font-size:9pt; font-"
+#~ "weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"># Adja meg itt a SPARQL "
+#~ "kérést<br /># Az eredmény lent látható.</p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">prefix rdf:  &lt;http://"
+#~ "www.w3.org/1999/02/22-rdf-syntax-ns#&gt; </p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">prefix foaf: &lt;http://"
+#~ "xmlns.com/foaf/0.1/&gt; </p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">prefix pkg:  &lt;http://"
+#~ "docs.oasis-open.org/opendocument/meta/package/common#&gt; </p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">prefix geo84: &lt;"
+#~ "http://www.w3.org/2003/01/geo/wgs84_pos#&gt;</p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">select ?s ?p ?o </p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">where { </p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"> ?s ?p ?o </p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">}</p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p></body></html>"
+
+#~ msgid "Stylesheets"
+#~ msgstr "Stíluslapok"
+
+#~ msgid ""
+#~ "Set the default stylesheet for Semantic objects in this document. New RDF "
+#~ "objects will use this stylesheet automatically. The buttons allow you to "
+#~ "set the stylesheet for all existing semantic objects to the new default "
+#~ "stylesheet as well."
+#~ msgstr ""
+#~ "Állítsa be a szemantikus objektumok alapértelmezett stíluslapját ebben a "
+#~ "dokumentumban. Az új RDF-objektumok automatikusan ezt a stíluslapot "
+#~ "fogják használni. A gombok lehetővé teszik a stíluslap "
+#~ "alapértelmezettként történő alkalmazását a már meglévő szemantikus "
+#~ "objektumokra is."
+
+#~ msgid "Apply Stylesheet"
+#~ msgstr "Stíluslap alkalmazása"
+
+#~ msgid "System"
+#~ msgstr "Rendszer"
+
+#~ msgid "User"
+#~ msgstr "Felhasználó"
+
+#~ msgid "Reapply Current"
+#~ msgstr "Jelenlegi újra"
+
+#~ msgid "Disassociate"
+#~ msgstr "Kettéválasztás"
+
+#~ msgid "Edit %1"
+#~ msgstr "%1 szerkesztése"
+
+#~ msgid "Stylesheet Definition"
+#~ msgstr "Stíluslap definíció"
+
+#~ msgid "Variables Available"
+#~ msgstr "Elérhető változók"
+
+#~ msgid "Description"
+#~ msgstr "Leírás"
+
+#~ msgid "Stylesheet Name"
+#~ msgstr "Stíluslap neve"
+
+#~ msgid "Empty"
+#~ msgstr "üres"
+
+#~ msgid "URI"
+#~ msgstr "URI"
+
+#~ msgid "Literal"
+#~ msgstr "Literál"
+
+#~ msgid "Blank"
+#~ msgstr "üres"
+
+#~ msgid "Valid"
+#~ msgstr "Érvényes"
+
+#~ msgid "Subject"
+#~ msgstr "Tárgy"
+
+#~ msgid "Predicate"
+#~ msgstr "Állítmány"
+
+#~ msgid "Obj Type"
+#~ msgstr "Obejktumtípus"
+
+#~ msgid "DataType"
+#~ msgstr "Adattípus"
+
+#~ msgid "Stored In"
+#~ msgstr "Itt tárolva:"
+
+#~ msgid "Invalid integer number"
+#~ msgstr "Érvénytelen egész szám"
+
+#~ msgid "This integer number may be too large."
+#~ msgstr "Lehet, hogy ez az egész túl nagy."
+
+#~ msgid "Invalid identifier"
+#~ msgstr "Érvénytelen azonosító"
+
+#~ msgid "Identifiers should start with a letter or '_' character"
+#~ msgstr "Az azonosítóknak angol betűvel vagy aláhúzással kell kezdődniük"
+
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "Nincs"
+
+#~ msgid "Small Bullet"
+#~ msgstr "Kis felsorolásjel"
+
+#~ msgid "Circle Bullet"
+#~ msgstr "Kör alakú felsorolásjel"
+
+#~ msgid "Square Bullet"
+#~ msgstr "Négyzet alakú felsorolásjel"
+
+#~ msgid "Rhombus Bullet"
+#~ msgstr "Rombusz alakú felsorolásjel"
+
+#~ msgid "Check Mark Bullet"
+#~ msgstr "Pipa felsorolásjel"
+
+#~ msgid "Rightwards Arrow Bullet"
+#~ msgstr "Jobbra mutató nyíl felsorolásjel"
+
+#~ msgid "Arabic"
+#~ msgstr "Arab"
+
+#~ msgid "Lower Alphabetical"
+#~ msgstr "Kis betűrendes"
+
+#~ msgid "Upper Alphabetical"
+#~ msgstr "Nagy betűrendes"
+
+#~ msgid "Upper Roman"
+#~ msgstr "Nagy római"
+
+#~ msgid "Large Bullet"
+#~ msgstr "Nagy felsorolásjel"
+
+#~ msgid "Ballot X Bullet"
+#~ msgstr "X felsorolásjel"
+
+#~ msgid "Rightwards Arrow Head Bullet"
+#~ msgstr "Jobbra mutató nyílfej felsorolásjel"
+
+#~ msgid "Bengali"
+#~ msgstr "Bengáli"
+
+#~ msgid "Gujarati"
+#~ msgstr "Gudzsarati"
+
+#~ msgid "Gurumukhi"
+#~ msgstr "Gurumukhi"
+
+#~ msgid "Kannada"
+#~ msgstr "Kannada"
+
+#~ msgid "Malayalam"
+#~ msgstr "Malajalam"
+
+#~ msgid "Oriya"
+#~ msgstr "Orija"
+
+#~ msgid "Tamil"
+#~ msgstr "Tamil"
+
+#~ msgid "Telugu"
+#~ msgstr "Telugu"
+
+#~ msgid "Tibetan"
+#~ msgstr "Tibeti"
+
+#~ msgid "Thai"
+#~ msgstr "Thai"
+
+#~ msgid "Abjad"
+#~ msgstr "Abjad"
+
+#~ msgid "AbjadMinor"
+#~ msgstr "AbjadMinor"
+
+#~ msgid "ArabicAlphabet"
+#~ msgstr "Arab ábécé"
+
+#~ msgid "Opacity"
+#~ msgstr "Átlátszatlanság"
+
+#~ msgid "Recent:"
+#~ msgstr "Legutóbbi:"
+
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "Színek hozzáadása / eltávolítása..."
+
+#~ msgid "Import Data"
+#~ msgstr "Adatok importálása"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Recommended ( %1 )"
+#~ msgstr "Ajánlott ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Locale ( %1 )"
+#~ msgstr "Helyi ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Other ( %1 )"
+#~ msgstr "Egyéb ( %1 )"
+
+#~ msgid "Generic"
+#~ msgstr "Általános"
+
+#~ msgid "Currency"
+#~ msgstr "Pénznem"
+
+#~ msgid "None"
+#~ msgstr "(nincs)"
+
+#~ msgid ""
+#~ "Please check the ranges you specified. The start value must be lower than "
+#~ "the end value."
+#~ msgstr ""
+#~ "Ellenőrizze a megadott tartományt! A kezdeti értéknek kisebbnek kell "
+#~ "lennie a befejező értéknél."
+
+#~ msgid "Cannot find encoding: %1"
+#~ msgstr "A kódolás nem található: %1"
+
+#~ msgid "Data"
+#~ msgstr "Adat"
+
+#~ msgid "E&ncoding:"
+#~ msgstr "&Kódolás:"
+
+#~ msgid "First row contains headers"
+#~ msgstr "Az első sor tartalmazza a fejléceket"
+
+#~ msgid "First column contains headers"
+#~ msgstr "Az első oszlop tartalmazza a fejléceket"
+
+#~ msgid "Format"
+#~ msgstr "Formátum"
+
+#~ msgid "Delimiter"
+#~ msgstr "Elválasztó"
+
+#~ msgid "Semicolon"
+#~ msgstr "Pontosvessző"
+
+#~ msgid "Other"
+#~ msgstr "Egyéb"
+
+#~ msgid "Tabulator"
+#~ msgstr "Tabulátor"
+
+#~ msgid "Space"
+#~ msgstr "Szóköz"
+
+#~ msgid "Text&quote:"
+#~ msgstr "&Idézet:"
+
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "Decimal symbol:"
+#~ msgstr "Tizedesjel:"
+
+#~ msgid "Thousands separator:"
+#~ msgstr "Ezres elválasztó:"
+
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "Dupla elválasztók mellőzése"
+
+#~ msgid "&Format:"
+#~ msgstr "&Formátum:"
+
+#~ msgid "Ranges"
+#~ msgstr "Tartományok"
+
+#~ msgid "Update"
+#~ msgstr "Frissítés"
+
+#~ msgid "Import columns:"
+#~ msgstr "Oszlopok importálása:"
+
+#~ msgid "Import lines:"
+#~ msgstr "Sorok importálása:"
+
+#~ msgid "to"
+#~ msgstr "->"
+
+#, fuzzy
+#~| msgid "Show Dockers"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Float Docker"
+#~ msgstr "Dokkolók megjelenítése"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "Dokkoló bezárása"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "Dokkoló összecsukása"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Lock Docker"
+#~ msgstr "Dokkoló zárolása"
+
+#~ msgid "&Encrypt"
+#~ msgstr "&Titkosítás"
+
+#~ msgid "Keywords:"
+#~ msgstr "Kulcsszavak:"
+
+#~ msgid "Subject:"
+#~ msgstr "Tárgy:"
+
+#~ msgid "Last printed:"
+#~ msgstr "Utolsó kinyomtatás:"
+
+#~ msgid "Total editing time:"
+#~ msgstr "Teljes szerkesztési idő:"
+
+#~ msgid "Encryption:"
+#~ msgstr "Titkosítás:"
+
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "Cím:"
+
+#~ msgid "Revision number:"
+#~ msgstr "Verziószám"
+
+#~ msgid "Modified:"
+#~ msgstr "Utolsó módosítás:"
+
+#~ msgid "Comments:"
+#~ msgstr "Megjegyzések:"
+
+#~ msgid "Created:"
+#~ msgstr "Létrehozási dátum:"
+
+#~ msgid "Path:"
+#~ msgstr "Útvonal:"
+
+#~ msgid "&Reset"
+#~ msgstr "&Alapállapot"
+
+#, fuzzy
+#~| msgid "Last page:"
+#~ msgid "Language:"
+#~ msgstr "Utolsó oldal:"
+
+#~ msgid "General"
+#~ msgstr "Általános"
+
+#~ msgid "Last saved by"
+#~ msgstr "Utoljára mentette"
+
+#~ msgid "Use ';' (Example: Office;KDE;Calligra)"
+#~ msgstr "';' használható (például: Office;KDE;Calligra)"
+
+#~ msgid "This document will be decrypted"
+#~ msgstr "A dokumentum visszafejtésre kerül"
+
+#~ msgid "Do not decrypt"
+#~ msgstr "Ne legyen visszafejtve"
+
+#~ msgid "This document is encrypted"
+#~ msgstr "Ez a dokumentum titkosított"
+
+#~ msgid "D&ecrypt"
+#~ msgstr "&Visszafejtés"
+
+#~ msgid "This document will be encrypted."
+#~ msgstr "A dokumentum titkosításra kerül."
+
+#~ msgid "Do not encrypt"
+#~ msgstr "Ne legyen titkosítva"
+
+#~ msgid "This document is not encrypted"
+#~ msgstr "Ez a dokumentum nem titkosított"
+
+#~ msgid "This document does not support encryption"
+#~ msgstr "Ez a dokumentum nem támogatja a titkosítást"
+
+#~ msgid ""
+#~ "<qt>Decrypting the document will remove the password protection from it."
+#~ "<p>Do you still want to decrypt the file?</qt>"
+#~ msgstr ""
+#~ "<qt>A dokumentum visszafejtése során a jelszavas védelem eltávolításra "
+#~ "kerül.<p>Biztosan vissza szeretné fejteni a fájlt?</qt>"
+
+#~ msgid "Confirm Decrypt"
+#~ msgstr "Visszafejtés megerősítése"
+
+#~ msgid "Decrypt"
+#~ msgstr "Visszafejtés"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "decryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>A dokumentum nem menthető automatikusan.<p>A visszafejtés "
+#~ "befejezéséhez mentse a dokumentumot.</qt>"
+
+#~ msgid "Save Document"
+#~ msgstr "Dokumentum mentése"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "decryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt>A dokumentum a megnyitása óta módosult. A visszafejtés befejezéséhez "
+#~ "szükséges a dokumentum mentése.<p>El szeretné most menteni?</qt>"
+
+#~ msgid ""
+#~ "<qt>The document is currently saved as %1. The document needs to be "
+#~ "changed to <b>OASIS OpenDocument</b> to be encrypted.<p>Do you want to "
+#~ "change the file to OASIS OpenDocument?</qt>"
+#~ msgstr ""
+#~ "<qt>A dokumentum jelenleg %1 formátumban van elmentve. A titkosításhoz "
+#~ "<b>OASIS OpenDocument</b> formátumra van szükség.<p>Át szeretné alakítani "
+#~ "OASIS OpenDocument formátumúra?</qt>"
+
+#~ msgid "Change Filetype"
+#~ msgstr "Fájltípus módosítása"
+
+#~ msgid "Change"
+#~ msgstr "Módosítás"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "encryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>A dokumentum nem menthető automatikusan.<p>A titkosítás befejezéséhez "
+#~ "mentse a dokumentumot.</qt>"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "encryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt>A dokumentum a megnyitása óta módosult. A titkosítás befejezéséhez "
+#~ "szükséges a dokumentum mentése.<p>El szeretné most menteni?</qt>"
+
+#~ msgid "Remove"
+#~ msgstr "Eltávolítás"
+
+#~ msgid "Open palette"
+#~ msgstr "Paletta megnyitása"
+
+#~ msgid "Save palette"
+#~ msgstr "Paletta mentése"
+
+#~ msgid "Add Color To Palette"
+#~ msgstr "Szín hozzáadása a palettához"
+
+#~ msgid "Color name:"
+#~ msgstr "Szín neve:"
+
+#~ msgid "Gimp Color Palette (*.gpl)"
+#~ msgstr "Gimp színpaletta (*.gpl)"
+
+#~ msgid "Cannot write to palette file %1. Maybe it is read-only. "
+#~ msgstr "A(z) %1 palettafájl nem írható. Elképzelhető, hogy írásvédett. "
+
+#~ msgid "Palette"
+#~ msgstr "Paletta"
+
+#~ msgid "Add/Remove Colors"
+#~ msgstr "Színek hozzáadása/eltávolítása"
+
+#~ msgid "All supported formats"
+#~ msgstr "Minden támogatott formátum"
+
+#~ msgid "Testing: OpenFile"
+#~ msgstr "Tesztelés: FájlMegnyitása"
+
+#~ msgid "Testing: OpenDirectory"
+#~ msgstr "Tesztelés: KönyvtárMegnyitása"
+
+#~ msgid "Testing: ImportFile"
+#~ msgstr "Tesztelés: FájlImportálása"
+
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "Tesztelés: FájlokImportálása"
+
+#~ msgid "Testing: Import Directory"
+#~ msgstr "Tesztelés: Könyvtár importálása"
+
+#~ msgid "Testing: SaveFile"
+#~ msgstr "Tesztelés: FájlMentése"
+
+#~ msgid "Open File"
+#~ msgstr "Fájl megnyitása"
+
+#~ msgid "Open Files"
+#~ msgstr "Fájlok megnyitása"
+
+#~ msgid "Unique key:"
+#~ msgstr "Egyedi kulcs:"
+
+#~ msgid "blablabla"
+#~ msgstr "blablabla"
+
+#~ msgid "Filter:"
+#~ msgstr "Szűrő:"
+
+#~ msgid "TextLabel"
+#~ msgstr "Szövegcímke"
+
+#~ msgid "Results:"
+#~ msgstr "Eredmények:"
+
+#~ msgid "Filter Type"
+#~ msgstr "Szűrőtípus"
+
+#~ msgid "Mime"
+#~ msgstr "MIME"
+
+#, fuzzy
+#~| msgid "Name"
+#~ msgid "Named"
+#~ msgstr "Név"
+
+#, fuzzy
+#~| msgid "Set default format"
+#~ msgid "Set default filter"
+#~ msgstr "Alapértelmezett formátum beállítása"
+
+#~ msgid "Save File"
+#~ msgstr "Fájl mentése"
+
+#~ msgid "Import Files"
+#~ msgstr "Fájlok importálása"
+
+#~ msgid "Import File"
+#~ msgstr "Fájl importálása"
+
+#~ msgid "Open Directory"
+#~ msgstr "Könyvtár megnyitása"
+
+#~ msgid "Import Directory"
+#~ msgstr "Könyvtár importálása"
+
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "Nincs"
+
+#~ msgctxt "Solid color stroke or fill"
+#~ msgid "Solid"
+#~ msgstr "Egyszínű"
+
+#~ msgid "Gradient"
+#~ msgstr "Színátmenet"
+
+#~ msgid "Pattern"
+#~ msgstr "Minta"
+
+#~ msgid "Change the filling color"
+#~ msgstr "A kitöltési szín módosítása"
+
+#, fuzzy
+#~| msgid "Change the filling color"
+#~ msgid "Change the filling gradient"
+#~ msgstr "A kitöltési szín módosítása"
+
+#, fuzzy
+#~| msgid "Change the filling color"
+#~ msgid "Change the filling pattern"
+#~ msgstr "A kitöltési szín módosítása"
+
+#~ msgid "Icon and Text"
+#~ msgstr "Ikon és szöveg"
+
+#~ msgid "Icon only"
+#~ msgstr "Csak ikon"
+
+#~ msgid "Tabs side"
+#~ msgstr "Lapok oldal"
+
+#~ msgid "Top side"
+#~ msgstr "Felső oldal"
+
+#~ msgid "Bottom side"
+#~ msgstr "Alsó oldal"
+
+#~ msgid "Left side"
+#~ msgstr "Bal oldal"
+
+#~ msgid "Right side"
+#~ msgstr "Jobb oldal"
+
+#~ msgid "Page Layout"
+#~ msgstr "Oldalelrendezés"
+
+#~ msgid "Apply to document"
+#~ msgstr "Alkalmazás a dokumentumra"
+
+#~ msgid "Left Edge:"
+#~ msgstr "Bal szélre"
+
+#~ msgid "Right Edge:"
+#~ msgstr "Jobb szélre"
+
+#~ msgid "Binding Edge:"
+#~ msgstr "Kötési él"
+
+#~ msgid "Page Edge:"
+#~ msgstr "Lapszél:"
+
+#~ msgid "Facing Pages:"
+#~ msgstr "Szemközti oldalak:"
+
+#~ msgid "Facing pages"
+#~ msgstr "Szemközti oldalak"
+
+#~ msgid "Page Layout:"
+#~ msgstr "Oldalelrendezés"
+
+#~ msgid "Page spread"
+#~ msgstr "Oldalpár"
+
+#~ msgid "Unit:"
+#~ msgstr "Mértékegység:"
+
+#~ msgid "Follow style:"
+#~ msgstr "Stílus követése:"
+
+#~ msgid "Size:"
+#~ msgstr "Méret:"
+
+#~ msgid "Width:"
+#~ msgstr "Szélesség:"
+
+#~ msgid "Height:"
+#~ msgstr "Magasság:"
+
+#~ msgid "Orientation:"
+#~ msgstr "Tájolás:"
+
+#~ msgid "Facing pages:"
+#~ msgstr "Szemközti oldalak:"
+
+#~ msgid "Single sided"
+#~ msgstr "Egyoldalas"
+
+#~ msgid "Text direction:"
+#~ msgstr "Szövegirány:"
+
+#~ msgid "Automatic"
+#~ msgstr "Automatikus"
+
+#~ msgid "Left to right"
+#~ msgstr "Balról jobbra"
+
+#~ msgid "Right to left"
+#~ msgstr "Jobbról balra"
+
+#~ msgid "Margins"
+#~ msgstr "Szegélyek"
+
+#~ msgid "Top:"
+#~ msgstr "Fent:"
+
+#~ msgid "Binding edge:"
+#~ msgstr "Kötési él:"
+
+#~ msgid "Page edge:"
+#~ msgstr "Lapszél:"
+
+#~ msgid "Bottom:"
+#~ msgstr "Lent:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "Erőforrás importálása"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Delete resource"
+#~ msgstr "Erőforrás törlése"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "Erőforrás letöltése"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "Erőforrás megosztása"
+
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "Válassza ki a hozzáadandó fájlt"
+
+#~ msgid "New tag"
+#~ msgstr "Új címke"
+
+#~ msgid "Assign to tag"
+#~ msgstr "Hozzárendelés címkéhez"
+
+#~ msgid "Remove from this tag"
+#~ msgstr "Eltávolítása ebből a címkéből"
+
+#~ msgid "Remove from other tag"
+#~ msgstr "Eltávolítása másik címkéből"
+
+#~ msgid "Tags"
+#~ msgstr "Címkék"
+
+#~ msgid ""
+#~ "<qt>The tag you are trying to undelete already exists in tag list."
+#~ "<br>Please enter a new, unique name for it.</qt>"
+#~ msgstr ""
+#~ "<qt>Az a címke, amelyet megpróbál visszavonni, már létezik a "
+#~ "címkelistában.<br>Kérjük adjon meg neki egy új, egyedi nevet.</qt>"
+
+#~ msgid "Tag was not undeleted."
+#~ msgstr "A címke törlése nem lett visszavonva."
+
+#, fuzzy
+#~| msgid "Allanon"
+#~ msgid "All"
+#~ msgstr "Allanon"
+
+#~ msgid "Change the color of the shadow"
+#~ msgstr "Az árnyék színének módosítása"
+
+#~ msgid "Blur:"
+#~ msgstr "Elmosás:"
+
+#~ msgid "Distance:"
+#~ msgstr "Távolság:"
+
+#~ msgid "Butt cap"
+#~ msgstr "Illesztőkeret"
+
+#~ msgid "Round cap"
+#~ msgstr "Kerek keret"
+
+#~ msgid "Square cap"
+#~ msgstr "Négyzetes keret"
+
+#~ msgid "Miter join"
+#~ msgstr "Sarok összekapcsolás"
+
+#~ msgid "Round join"
+#~ msgstr "Kerek összekapcsolás"
+
+#~ msgid "Bevel join"
+#~ msgstr "Ferde összekapcsolás"
+
+#~ msgid "Thickness:"
+#~ msgstr "Vastagság:"
+
+#~ msgid "Set line width of actual selection"
+#~ msgstr "Az aktuális kijelölés vonalvastagságának beállítása"
+
+#~ msgid "Change the color of the line/border"
+#~ msgstr "A vonal/szegély színének módosítása"
+
+#, fuzzy
+#~| msgid "Tags"
+#~ msgid "Tag"
+#~ msgstr "Címkék"
+
+#~ msgid "Enter resource filters here"
+#~ msgstr "Adja meg itt az erőforrás szűrőket"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "<qt>Show the tag box options.</qt>"
+#~ msgstr "<qt>A címkedoboz beállításainak megjelenítése.</qt>"
+
+#~ msgid "Rename tag"
+#~ msgstr "Címke átnevezése"
+
+#~ msgid "Delete this tag"
+#~ msgstr "Címke törlése"
+
+#~ msgid "Clear undelete list"
+#~ msgstr "Törlés visszavonása lista törlése"
+
+#~ msgid "Undelete"
+#~ msgstr "Törlés visszavonása"
+
+#~ msgid "Tool Options"
+#~ msgstr "Eszközbeállítások"
+
+#, fuzzy
+#~| msgid "Toggles organising the options in tabs or not"
+#~ msgid "Toggles organizing the options in tabs or not"
+#~ msgstr "A beállítások lapokba szervezésének ki- vagy bekapcsolása"
+
+#~ msgid "deselect item"
+#~ msgstr "elem kijelölésének megszüntetése"
+
+#~ msgid "select item"
+#~ msgstr "elem kijelölése"
+
+#~ msgid "Use same aspect as pixels"
+#~ msgstr "Megegyező arány használata képpontként"
+
+#~ msgid "Zoom to Selection"
+#~ msgstr "Nagyítás a kijelölésre"
+
+#~ msgid "Zoom to All"
+#~ msgstr "Nagyítás mindre"
+
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1"
+
+#~ msgid "All Presets"
+#~ msgstr "Minden előre beállított"
+
+#, fuzzy
+#~| msgid "Static Image"
+#~ msgctxt "Static Image"
+#~ msgid "Static"
+#~ msgstr "Statikus kép"
+
+#~ msgid "Value (brightness)"
+#~ msgstr "Érték (legfényesebb)"
+
+#~ msgid "Cyan"
+#~ msgstr "Ciánkék"
+
+#~ msgid "Magenta"
+#~ msgstr "Lila"
+
+#~ msgid "Yellow"
+#~ msgstr "Sárga"
+
+#~ msgid "Black"
+#~ msgstr "Fekete"
+
+#~ msgid "Green to magenta*"
+#~ msgstr "Zöld -> lila*"
+
+#~ msgid "Blue to yellow"
+#~ msgstr "Kék -> sárga"
+
+#~ msgid "Opacity:"
+#~ msgstr "Átlátszatlanság:"
+
+#~ msgid "&Themes"
+#~ msgstr "&Témák"
+
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "Alapértelmezett"
+
+#~ msgid "Configuration..."
+#~ msgstr "Beállítás…"
+
+#~ msgid ""
+#~ "Cannot start Colors Settings panel from KDE Control Center. Please check "
+#~ "your system..."
+#~ msgstr ""
+#~ "Nem sikerült elindítani a színek beállító paneljét a KDE vezérlőpultból. "
+#~ "Ellenőrizze a rendszerét…"
+
+#~ msgid "&Tools"
+#~ msgstr "&Eszközök"
+
+#~ msgid ""
+#~ "The manifest file seems to be corrupted. The document could not be opened."
+#~ msgstr "A jegyzékfájl sérültnek tűnik. A dokumentum nem nyitható meg."
+
+#~ msgid "Color Selector"
+#~ msgstr "Színválasztó"
+
+#~ msgid "Database file \"%1\" does not exist."
+#~ msgstr "Nem létezik „%1” nevű adatbázisfájl."
+
+#~ msgid "Cannot drop database - name not specified."
+#~ msgstr "Az adatbázis nem dobható, mert nincs megadva a neve."
+
+#~ msgid "Table \"%1\" does not exist in the database."
+#~ msgstr "Nem létezik „%1” nevű tábla az adatbázisban."
+
+#~ msgid "Single transactions"
+#~ msgstr "Egyszeres tranzakciók"
+
+#~ msgid "Multiple transactions"
+#~ msgstr "Többszörös tranzakciók"
+
+#~ msgid "Nested transactions"
+#~ msgstr "Egymásba ágyazott tranzakciók"
+
+#~ msgid "Ignored"
+#~ msgstr "Figyelmen kívül hagyott"
+
+#~ msgid "No such driver service: \"%1\"."
+#~ msgstr "Nincs ilyen meghajtó: „%1”."
+
+#~ msgid "Could not compact database \"%1\"."
+#~ msgstr "Nem sikerült tömöríteni a(z) „%1” adatbázist."
+
+#~ msgid "Do you want to open file \"%1\" as read-only?"
+#~ msgstr "Szeretné megnyitni a(z) „%1” fájlt csak olvashatóként?"
+
+#~ msgid "The file is probably already open on this or another computer."
+#~ msgstr ""
+#~ "A fájl valószínűleg már meg van nyitva erről vagy egy másik számítógépről."
+
+#~ msgid "Could not gain exclusive access for writing the file."
+#~ msgstr "Nem sikerült kizárólagos hozzáférést szerezni a fájl írásához."
+
+#~ msgid "Open As Read-Only"
+#~ msgstr "Megnyitás csak olvashatóként"
+
+#~ msgid "Could not close busy database."
+#~ msgstr "Nem sikerült bezárni a foglalt adatbázist."
+
+#~ msgid "Could not remove file \"%1\"."
+#~ msgstr "Nem sikerült törölni a(z) „%1” fájlt."
+
+#~ msgid ""
+#~ "Check the file's permissions and whether it is already opened and locked "
+#~ "by another application."
+#~ msgstr ""
+#~ "Ellenőrizze a fájl jogosultságait és hogy egy másik alkalmazás nem "
+#~ "nyitotta-e már meg és nem zárolta-e."
+
+#~ msgid "Compacting database"
+#~ msgstr "Adatbázis tömörítése"
+
+#~ msgid "Compacting database \"%1\"..."
+#~ msgstr "„%1” adatbázis tömörítése…"
+
+#~ msgid ""
+#~ "The database has been compacted. Current size decreased by %1% to %2."
+#~ msgstr ""
+#~ "Az adatbázis tömörítése elkészült. A jelenlegi méret %1%-kal csökkent "
+#~ "ennyire: %2."
+
+#~ msgid "No query specified"
+#~ msgstr "Nincs megadva lekérdezés"
+
+#~ msgid "Table \"%1\" does not exist"
+#~ msgstr "Nem létezik „%1” nevű tábla"
+
+#~ msgid "Track Total"
+#~ msgstr "Teljes szám"
+
+#~ msgid "Track Builtin Format"
+#~ msgstr "Beépített számformátum"
+
+#~ msgid "Use Sub Total"
+#~ msgstr "Végösszeg használata"
+
+#~ msgid "Track Total Format"
+#~ msgstr "Teljes számformátum"
+
+#~ msgid "Grid Snap"
+#~ msgstr "Rács igazítás"
+
+#~ msgid "                Language:"
+#~ msgstr "                Nyelv:"
+
+#~ msgid "PushButton"
+#~ msgstr "Nyomógomb"
+
+#~ msgid "Formatting"
+#~ msgstr "Formázás"
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1.\n"
+#~ "The filter plugins have not been properly registered. Please reboot "
+#~ "Windows. Krita Sketch will now close."
+#~ msgstr ""
+#~ "Nem nyitható meg:\n"
+#~ "%1.\n"
+#~ "A szűrő bővítmények nem lettek megfelelően regisztrálva. Kérjük indítsa "
+#~ "újra a Windowst. A Krita Sketch most bezáródik."
+
+#, fuzzy
+#~| msgid "&Uncompress to Directory"
+#~ msgid "Testing: OpenDirectories"
+#~ msgstr "&Kibontás könyvtárba"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "Import resource"
+#~ msgid "Testing: ImportDirectories"
+#~ msgstr "Erőforrás importálása"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Recover Files"
+#~ msgid "Testing: SaveFiles"
+#~ msgstr "Fájlok helyreállítása"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "Import resource"
+#~ msgid "Import Directories"
+#~ msgstr "Erőforrás importálása"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Recover Files"
+#~ msgid "Save Files"
+#~ msgstr "Fájlok helyreállítása"
+
+#~ msgid "Create Path"
+#~ msgstr "Sablon készítése"
+
+#~ msgid "Could not export file. Did you specify the correct file format?"
+#~ msgstr "Nem sikerült exportálni a fájlt. A helyes fájlformátumot adta meg?"
+
+#~ msgid "Red Green Blue"
+#~ msgstr "Vörös Zöld Kék"
+
+#~ msgid "L a* b*"
+#~ msgstr "L a* b*"
+
+#~ msgid "Cyan Magenta Yellow Black"
+#~ msgstr "Türkiz Lila Sárga Fekete"
+
+#~ msgid "Error!"
+#~ msgstr "Hiba!"
+
+#~ msgid "Contacts"
+#~ msgstr "Kapcsolatok"
+
+#~ msgid "Events"
+#~ msgstr "Események"
+
+#~ msgid "Locations"
+#~ msgstr "Helyek"
+
+#~ msgid "Area"
+#~ msgstr "Kerület"
+
+#~ msgid "Region"
+#~ msgstr "Régió"
+
+#~ msgid ""
+#~ "Could not add entry\n"
+#~ "%1"
+#~ msgstr ""
+#~ "A bejegyzés nem adható hozzá:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Could not save iCal file\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Az iCal-fájl mentése sikertelen:\n"
+#~ "%1"
+
+#~ msgid "&Summary:"
+#~ msgstr "Ö&sszefoglaló:"
+
+#~ msgid "&Location:"
+#~ msgstr "He&ly:"
+
+#~ msgid "&Start:"
+#~ msgstr "Kezdé&s:"
+
+#~ msgid "&End:"
+#~ msgstr "B&efejezés:"
+
+#~ msgid "Time and Date"
+#~ msgstr "Idő és dátum"
+
+#~ msgid "Timezone"
+#~ msgstr "Időzóna"
+
+#~ msgid "Calendar Event"
+#~ msgstr "Naptáresemény"
+
+#~ msgid "Import event to Calendar"
+#~ msgstr "Esemény importálása a naptárba"
+
+#~ msgid "Export event to iCal file..."
+#~ msgstr "Esemény exportálása iCal-fájlba..."
+
+#~ msgid "&Name:"
+#~ msgstr "&Név:"
+
+#~ msgid "&Nick:"
+#~ msgstr "&Becenév:"
+
+#~ msgid "&Phone Number:"
+#~ msgstr "Telef&onszám:"
+
+#~ msgid "&Home Page:"
+#~ msgstr "S&aját oldal:"
+
+#~ msgid "Contact Information"
+#~ msgstr "Elérhetőségi adatok"
+
+#~ msgid "Import contact"
+#~ msgstr "Kapcsolat importálása"
+
+#~ msgid "Export as vcard..."
+#~ msgstr "Exportálás vcard-ként..."
+
+#~ msgid "&Name"
+#~ msgstr "&Név"
+
+#~ msgid "The Earth"
+#~ msgstr "A Föld"
+
+#~ msgid "The Marble widget displays a virtual globe."
+#~ msgstr "A Marble widget egy virtuális földgömböt jelenít meg."
+
+#~ msgid "Navigation Control"
+#~ msgstr "Navigációvezérlő"
+
+#~ msgid "Use this control to navigate."
+#~ msgstr "Használja ezt a vezérlőt a navigációhoz."
+
+#~ msgid "Latitude"
+#~ msgstr "Szélesség"
+
+#~ msgid "Longitude"
+#~ msgstr "Hosszúság"
+
+#~ msgid "Location Information"
+#~ msgstr "Hely információk"
+
+#~ msgid "People"
+#~ msgstr "Személy"
+
+#~ msgid ""
+#~ "A document with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "Ilyen nevű dokumentum már létezik.\n"
+#~ "Felül szeretné írni?"
+
+#~ msgid "Unknown Calligra MimeType %1. Check your installation."
+#~ msgstr "Ismeretlen Calligra MIME-típus: %1. Ellenőrizze a telepítést!"
+
+#~ msgid "%1 (Uncompressed XML Files)"
+#~ msgstr "%1 (nem tömörített XML-fájlok)"
+
+#~ msgid "%1 (Flat XML File)"
+#~ msgstr "%1 (egyszerű XML-fájl)"
+
+#~ msgid "%1 (Encrypted)"
+#~ msgstr "%1 (Titkosított)"
+
+#~ msgid "%1 (%2 Compatible)"
+#~ msgstr "%1 (%2-kompatibilis)"
+
+#~ msgid "Save Document As"
+#~ msgstr "A dokumentum mentése másként"
+
+#~ msgid "Export Document As"
+#~ msgstr "A dokumentum exportálása mint"
+
+#~ msgid "Export to PDF"
+#~ msgstr "Exportálás PDF-be"
+
+#~ msgid "To change background color use Stroke and Fill docker."
+#~ msgstr ""
+#~ "A háttér színének megváltoztatásához használja a Körvonal és kitöltés "
+#~ "dokkolót."
+
+#~ msgid "Slide Background"
+#~ msgstr "Diaháttér"
+
+#~ msgid "Document background"
+#~ msgstr "Dokumentumháttér"
+
+#~ msgid "&OK"
+#~ msgstr "&Rendben"
+
+#~ msgid "&Cancel"
+#~ msgstr "&Mégsem"
+
+#~ msgid "Error Encountered"
+#~ msgstr "Hiba történt"
+
+#~ msgid "Unable to add a new group because its name would not be unique"
+#~ msgstr "Nem adható hozzá új csoport, mert a neve nem lenne egyedi"
+
+#~ msgid "Even Pages(s)"
+#~ msgstr "Páros oldal(ak)"
+
+#~ msgid "Any Pages(s)"
+#~ msgstr "Bármelyik oldal"
+
+#~ msgid "&Edit"
+#~ msgstr "&Szerkesztés"
+
+#~ msgid "&Close"
+#~ msgstr "&Bezárás"
+
+#~ msgid "Snapping"
+#~ msgstr "Igazítás"
+
+#~ msgid "Dodge"
+#~ msgstr "Kitérés"
+
+#~ msgid "Hard light"
+#~ msgstr "Erős fény"
+
+#~ msgid "Soft light"
+#~ msgstr "Enyhe fény"
+
+#~ msgid "Show Shadow"
+#~ msgstr "Árnyék megjelenítése"
+
+#~ msgid "Angle:"
+#~ msgstr "Szög:"
+
+#~ msgid "Offset:"
+#~ msgstr "Eltolás:"
+
+#~ msgid "Color:"
+#~ msgstr "Szín:"
+
+#~ msgid "Blur radius:"
+#~ msgstr "Elmosási sugár:"
+
+#~ msgid "Style:"
+#~ msgstr "Stílus:"
+
+#~ msgid "Cap:"
+#~ msgstr "Keret:"
+
+#~ msgid "Join:"
+#~ msgstr "Összekapcsolás"
+
+#~ msgid "Set miter limit"
+#~ msgstr "Végkorlát beállítása"
+
+#~ msgid "Insert Table"
+#~ msgstr "Táblázat beszúrása"
+
+#~ msgid "Insert Row Above"
+#~ msgstr "Sor beszúrása fölé"
+
+#~ msgid "Insert Column Left"
+#~ msgstr "Oszlop beszúrása balra"
+
+#~ msgid "Insert Column Right"
+#~ msgstr "Oszlop beszúrása jobbra"
+
+#~ msgid "Delete Column"
+#~ msgstr "Oszlop törlése"
+
+#~ msgid "Delete Row"
+#~ msgstr "Sor törlése"
+
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Tartalomjegyzék beszúrása"
+
+#~ msgid "Insert Bibliography"
+#~ msgstr "Irodalomjegyzék beszúrása"
+
+#~ msgid "Typing"
+#~ msgstr "Beírás"
+
+#~ msgid "min"
+#~ msgstr "perc"
+
+#~ msgid "DetailsPaneBase"
+#~ msgstr "DetailsPaneBase"
+
+#~ msgid "Embedding Object"
+#~ msgstr "Beágyazott objektum"
+
+#~ msgid "I&mport..."
+#~ msgstr "&Importálás..."
+
+#~ msgid "&Default"
+#~ msgstr "&Alapértelmezés"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Select Item"
+#~ msgstr "Elem kijelölése"
+
+#~ msgid "Background Tool"
+#~ msgstr "Háttér-eszköz"
+
+#~ msgid "Use the styles docker to manipulate the background."
+#~ msgstr "Használja a stílus dokkolót a háttér módosításához."
+
+#~ msgid "Background editing tool"
+#~ msgstr "Háttérszerkesztő eszköz"
+
+#~ msgid "Use master background"
+#~ msgstr "Mester háttér használata"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Separate paths"
+#~ msgstr "Útvonalak szétválasztása"
+
+#~ msgid ""
+#~ "An autosaved file for an unnamed document exists in %1.\n"
+#~ "This file is dated %2\n"
+#~ "Do you want to open it?"
+#~ msgstr ""
+#~ "Egy név nélküli dokumentum automatikusan mentett változata található itt: "
+#~ "%1.\n"
+#~ "A fájl dátuma: %2\n"
+#~ "Meg szeretné nyitni?"
+
+#~ msgid "&Delete Personal Data"
+#~ msgstr "Személyes adatok törlése"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shapes"
+#~ msgstr "Alakzatok törlése"
+
+#~ msgid "Substract"
+#~ msgstr "Kivonás"
+
+#~ msgid "Inverse Substract"
+#~ msgstr "Inverz kivonás"
+
+#~ msgid ""
+#~ "No personal contact data set, please use the "
+#~ "option                                     \"Set as Personal Contact Data"
+#~ "\" from the \"Edit\"     menu in KAddressbook to set one."
+#~ msgstr ""
+#~ "Nincs még megadva névjegyadat. Válassza "
+#~ "a                                   \"Beállítás névjegyadatnak\" "
+#~ "menüpontot a \"Szerkesztés\" menüben (a KAddressbook programban), ha be "
+#~ "szeretne állítani egyet."
+
+#~ msgid "Hide colors with bad contrast"
+#~ msgstr "Rossz kontrasztú színek elrejtése"
+
+#~ msgid "&Load From Address Book"
+#~ msgstr "Betöltés a &címjegyzékből"
+
+#~ msgid "Shadow Angle:"
+#~ msgstr "Árnyék szöge:"
+
+#~ msgid "Shadow Color:"
+#~ msgstr "Árnyék színe:"
+
+#~ msgid "Toggles showing a title bar"
+#~ msgstr "A címsor megjelenítésének kapcsolása"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set border"
+#~ msgstr "Szegély beállítása"
+
+#~ msgid "Ellipse Shape"
+#~ msgstr "Ellipszis alakzat"
+
+#~ msgid "Set Horizontal Alignment"
+#~ msgstr "Vízszintes igazítás beállítása"
+
+#~ msgid "Line Break"
+#~ msgstr "Sortörés"
+
+#~ msgid "Hide Grid"
+#~ msgstr "Rács elrejtése"
+
+#~ msgid "Hide Guides"
+#~ msgstr "Segédvonalak elrejtése"
+
+#~ msgid "&Close All Views"
+#~ msgstr "Az öss&zes nézet bezárása"
+
+#~ msgid "&Split View"
+#~ msgstr "&Osztott nézet"
+
+#~ msgid "&Remove View"
+#~ msgstr "Az aktív nézet &eltávolítása"
+
+#~ msgid "Splitter &Orientation"
+#~ msgstr "A megosztás &iránya"
+
+#~ msgid "&Horizontal"
+#~ msgstr "&vízszintes"
+
+#~ msgid "&Vertical"
+#~ msgstr "&függőleges"
+
+#~ msgid "End"
+#~ msgstr "End"
+
+#~ msgid "Printing page %1"
+#~ msgstr "%1 oldal nyomtatása"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Form"
+#~ msgstr "Formátum"
+
+#~ msgid "Import"
+#~ msgstr "Importálás"
+
+#~ msgid "Share"
+#~ msgstr "Megosztás"
+
+#, fuzzy
+#~| msgid "Alpha"
+#~ msgid "Copy Opacy"
+#~ msgstr "Alfa"
+
+#, fuzzy
+#~| msgid "Alpha"
+#~ msgid "Copy Alpha"
+#~ msgstr "Alfa"
+
+#~ msgid "Light"
+#~ msgstr "Fény"
+
+#~ msgid "Write PDF"
+#~ msgstr "PDF írása"
+
+#~ msgid "Hide Dockers"
+#~ msgstr "Dokkolók elrejtése"
+
+#, fuzzy
+#~| msgid "Stop"
+#~ msgid "Atop"
+#~ msgstr "Leállítás"
+
+#~ msgid "KOffice"
+#~ msgstr "KOffice"
+
+#~ msgid "KOffice Storage"
+#~ msgstr "KOffice-tároló"
+
+#~ msgid "CCSGraph"
+#~ msgstr "CCSGraph"
+
+#~ msgid "Output the graph of color conversion of pigment's Color Conversion"
+#~ msgstr "A pigment színkonverzió kimenete a színkonverzió grafikonja"
+
+#~ msgid "(c) 2007 Cyrille Berger"
+#~ msgstr "(c) 2007 Cyrille Berger"
+
+#~ msgid "return the list of available graphs"
+#~ msgstr "az elérhető grafikonok listájának kiadása"
+
+#~ msgid ""
+#~ "specify the type of graph (see --graphs to get the full list, the default "
+#~ "is full)"
+#~ msgstr ""
+#~ "a grafikon típusának megadása (--graphs használható a teljes lista "
+#~ "megtekintéséhez, az alapértelmezett a teljes)"
+
+#~ msgid "specify the key of the source color space"
+#~ msgstr "a forrás színtartomány kulcsának megadása"
+
+#~ msgid "specify the key of the destination color space"
+#~ msgstr "a cél színtartomány kulcsának megadása"
+
+#~ msgid "specify the output (can be ps or dot, the default is ps)"
+#~ msgstr "kimenet megadása (lehet ps vagy dot, a ps az alapértelmezett)"

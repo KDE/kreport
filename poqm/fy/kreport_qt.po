@@ -1,0 +1,6508 @@
+# translation of koffice.po to Frysk
+# Copyright (C) 1999-2002 KDE e.V..
+# Rinse de Vries <rinse@kde.nl> 2000-2002
+#
+# Niels Reedijk <n.reedijk@planet.nl>, 2000.
+# Rinse de Vries <rinse@kde.nl>, 2003, 2004.
+# Rinse de Vries <rinsedevries@kde.nl>, 2004, 2005, 2006, 2007.
+# Karel van der Zande <jakvdzande@hetnet.nl>, 2005.
+# Maarten Rütten <mrutten@dds.nl>, 2005.
+# Sander Koning <sanderkoning@kde.nl>, 2005, 2006.
+# Bram Schoenmakers <bramschoenmakers@kde.nl>, 2005, 2006.
+# Rinse de Vries <RinseDeVries@home.nl>, 2005.
+# Sander Koning <ask@macedon.demon.nl>, 2005.
+# Natalie Koning <nat@switch.demon.nl>, 2006.
+# let op, symbolnames voor kformula worden niet vertaald,
+# dit zijn TeX-elementen.
+msgid ""
+msgstr ""
+"Project-Id-Version: koffice\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-05-22 01:56+0000\n"
+"PO-Revision-Date: 2008-05-07 17:08+0100\n"
+"Last-Translator: Berend Ytsma <berendy@gmail.com>\n"
+"Language-Team: Frysk <kde-i18n-fry@kde.org>\n"
+"Language: fy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Qt-Contexts: true\n"
+
+#: common/KReportDesign.cpp:150
+#, fuzzy
+#| msgid "Could not create the file for saving"
+msgctxt "KReportDesign|"
+msgid "Could not parse XML document."
+msgstr "De triem koe net opslein wurde"
+
+#: common/KReportDesign.cpp:159
+#, fuzzy
+#| msgid "Error in embedded document"
+msgctxt "KReportDesign|"
+msgid "Error in XML document."
+msgstr "Flater yn ynbêde dokumint"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KReportItemBase|"
+msgid "Name"
+msgstr "Namme:"
+
+#: common/KReportItemBase.cpp:75
+#, fuzzy
+#| msgid "Object"
+msgctxt "KReportItemBase|"
+msgid "Object Name"
+msgstr "Objekt"
+
+#: common/KReportItemBase.cpp:78
+#, fuzzy
+#| msgid "Position"
+msgctxt "ItemPosition|"
+msgid "Position"
+msgstr "Posysje"
+
+#: common/KReportItemBase.cpp:79
+#, fuzzy
+#| msgid "&Size:"
+msgctxt "ItemSize|"
+msgid "Size"
+msgstr "&Grutte:"
+
+#: common/KReportItemBase.cpp:112
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportItemBase|"
+msgid "Data Source"
+msgstr "Wiskje"
+
+#: common/KReportItemLine.cpp:80
+#, fuzzy
+#| msgid "&Set Position..."
+msgctxt "StartPosition|"
+msgid "Start Position"
+msgstr "Posysje yn&stelle..."
+
+#: common/KReportItemLine.cpp:81
+#, fuzzy
+#| msgid "Position"
+msgctxt "EndPosition|"
+msgid "End Position"
+msgstr "Posysje"
+
+#: common/KReportItemLine.cpp:83
+#, fuzzy
+#| msgid "Lighten"
+msgctxt "KReportItemLine|"
+msgid "Line Weight"
+msgstr "Ljochter meitsje"
+
+#: common/KReportItemLine.cpp:85
+#, fuzzy
+#| msgid "Color"
+msgctxt "KReportItemLine|"
+msgid "Line Color"
+msgstr "Kleur"
+
+#: common/KReportItemLine.cpp:86
+#, fuzzy
+#| msgid "Line Border"
+msgctxt "KReportItemLine|"
+msgid "Line Style"
+msgstr "râne line"
+
+#: common/KReportSectionData.cpp:164
+#, fuzzy
+#| msgid "Group shapes"
+msgctxt "KReportSectionData|Report section"
+msgid "Section"
+msgstr "Foarmen groepearje"
+
+#: common/KReportSectionData.cpp:166
+#, fuzzy
+#| msgid "&Height:"
+msgctxt "KReportSectionData|"
+msgid "Height"
+msgstr "&Hichte:"
+
+#: common/KReportSectionData.cpp:170
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportSectionData|"
+msgid "Background Color"
+msgstr "Eftergrûn ynstelle"
+
+#: common/KReportUnit.cpp:136
+#, fuzzy
+#| msgid "Add Group"
+msgctxt "KReportUnit|"
+msgid "Invalid"
+msgstr "Groep tafoegje"
+
+#: common/KReportUnit.cpp:138
+#, fuzzy
+#| msgid "Millimeters (mm)"
+msgctxt "KReportUnit|"
+msgid "Millimeters (mm)"
+msgstr "Milimeters (mm)"
+
+#: common/KReportUnit.cpp:140
+#, fuzzy
+#| msgid "Centimeters (cm)"
+msgctxt "KReportUnit|"
+msgid "Centimeters (cm)"
+msgstr "Sintimeters (sm)"
+
+#: common/KReportUnit.cpp:142
+#, fuzzy
+#| msgid "Decimeters (dm)"
+msgctxt "KReportUnit|"
+msgid "Decimeters (dm)"
+msgstr "Desimeters (dm)"
+
+#: common/KReportUnit.cpp:144
+#, fuzzy
+#| msgid "Inches (in)"
+msgctxt "KReportUnit|"
+msgid "Inches (in)"
+msgstr "Tommen (in)"
+
+#: common/KReportUnit.cpp:146
+#, fuzzy
+#| msgid "Pica (pi)"
+msgctxt "KReportUnit|"
+msgid "Pica (pi)"
+msgstr "Pica (pi)"
+
+#: common/KReportUnit.cpp:148
+#, fuzzy
+#| msgid "Cicero (cc)"
+msgctxt "KReportUnit|"
+msgid "Cicero (cc)"
+msgstr "Cicero (cc)"
+
+#: common/KReportUnit.cpp:150
+#, fuzzy
+#| msgid "Points (pt)"
+msgctxt "KReportUnit|"
+msgid "Points (pt)"
+msgstr "Punten (pt)"
+
+#: common/KReportUnit.cpp:152
+#, fuzzy
+#| msgid "Pixels (px)"
+msgctxt "KReportUnit|"
+msgid "Pixels (px)"
+msgstr "Byldpunten (px)"
+
+#: common/KReportUnit.cpp:154
+msgctxt "KReportUnit|"
+msgid "Unsupported unit"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+#, fuzzy
+#| msgid "Close"
+msgctxt "KReportItemCheckBox|"
+msgid "Cross"
+msgstr "Slute"
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Tick"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:79
+msgctxt "KReportItemCheckBox|"
+msgid "Dot"
+msgstr ""
+
+#: items/check/KReportItemCheck.cpp:80
+#, fuzzy
+#| msgid "&Style:"
+msgctxt "KReportItemCheckBox|"
+msgid "Style"
+msgstr "&Styl:"
+
+#: items/check/KReportItemCheck.cpp:84
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportItemCheckBox|"
+msgid "Foreground Color"
+msgstr "Eftergrûn ynstelle"
+
+#: items/check/KReportItemCheck.cpp:86
+#, fuzzy
+#| msgid "Lighten"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Weight"
+msgstr "Ljochter meitsje"
+
+#: items/check/KReportItemCheck.cpp:88
+#, fuzzy
+#| msgid "Color"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Color"
+msgstr "Kleur"
+
+#: items/check/KReportItemCheck.cpp:89
+#, fuzzy
+#| msgid "Line Border"
+msgctxt "KReportItemCheckBox|"
+msgid "Line Style"
+msgstr "râne line"
+
+#: items/check/KReportItemCheck.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemCheckBox|"
+msgid "Value"
+msgstr "Wearde"
+
+#: items/check/KReportItemCheck.cpp:90
+msgctxt "KReportItemCheckBox|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:90
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemField|"
+msgid "Value"
+msgstr "Wearde"
+
+#: items/field/KReportItemField.cpp:90
+msgctxt "KReportItemField|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemField|"
+msgid "Left"
+msgstr "Lofts:"
+
+#: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Comment"
+msgctxt "KReportItemField|"
+msgid "Center"
+msgstr "Taljochting"
+
+#: items/field/KReportItemField.cpp:94
+#, fuzzy
+#| msgid "Right:"
+msgctxt "KReportItemField|"
+msgid "Right"
+msgstr "Rjochts:"
+
+#: items/field/KReportItemField.cpp:96
+#, fuzzy
+#| msgid "Set Horizontal Alignment"
+msgctxt "KReportItemField|"
+msgid "Horizontal Alignment"
+msgstr "Horizontale rjochting ynstelle"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "&Top:"
+msgctxt "KReportItemField|"
+msgid "Top"
+msgstr "&Boppe:"
+
+#: items/field/KReportItemField.cpp:100
+#, fuzzy
+#| msgid "Zoom"
+msgctxt "KReportItemField|"
+msgid "Bottom"
+msgstr "Zoome"
+
+#: items/field/KReportItemField.cpp:102
+#, fuzzy
+#| msgid "Set Vertical Alignment"
+msgctxt "KReportItemField|"
+msgid "Vertical Alignment"
+msgstr "Fertikale rjochting ynstelle"
+
+#: items/field/KReportItemField.cpp:104
+#, fuzzy
+#| msgid "Set point type"
+msgctxt "KReportItemField|"
+msgid "Font"
+msgstr "Punttype ynstelle"
+
+#: items/field/KReportItemField.cpp:106
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportItemField|"
+msgid "Background Color"
+msgstr "Eftergrûn ynstelle"
+
+#: items/field/KReportItemField.cpp:107
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportItemField|"
+msgid "Foreground Color"
+msgstr "Eftergrûn ynstelle"
+
+#: items/field/KReportItemField.cpp:109
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportItemField|"
+msgid "Background Opacity"
+msgstr "&Eftergrûnkleur..."
+
+#: items/field/KReportItemField.cpp:114
+#, fuzzy
+#| msgid "Lighten"
+msgctxt "KReportItemField|"
+msgid "Line Weight"
+msgstr "Ljochter meitsje"
+
+#: items/field/KReportItemField.cpp:116
+#, fuzzy
+#| msgid "Color"
+msgctxt "KReportItemField|"
+msgid "Line Color"
+msgstr "Kleur"
+
+#: items/field/KReportItemField.cpp:117
+#, fuzzy
+#| msgid "Line Border"
+msgctxt "KReportItemField|"
+msgid "Line Style"
+msgstr "râne line"
+
+#: items/field/KReportItemField.cpp:119
+msgctxt "KReportItemField|"
+msgid "Word Wrap"
+msgstr ""
+
+#: items/field/KReportItemField.cpp:120
+msgctxt "KReportItemField|"
+msgid "Can Grow"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+msgctxt "KReportItemImage|"
+msgid "Clip"
+msgstr ""
+
+#: items/image/KReportItemImage.cpp:119
+#, fuzzy
+#| msgid "Street:"
+msgctxt "KReportItemImage|"
+msgid "Stretch"
+msgstr "Strjitte:"
+
+#: items/image/KReportItemImage.cpp:120
+#, fuzzy
+#| msgid "Resize"
+msgctxt "KReportItemImage|"
+msgid "Resize Mode"
+msgstr "Grutte feroarje"
+
+#: items/image/KReportItemImage.cpp:121
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemImage|"
+msgid "Value"
+msgstr "Wearde"
+
+#: items/image/KReportItemImage.cpp:121
+msgctxt "KReportItemImage|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/label/KReportItemLabel.cpp:91
+#, fuzzy
+#| msgid "Collection"
+msgctxt "KReportItemLabel|"
+msgid "Caption"
+msgstr "Kolleksje"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemLabel|"
+msgid "Left"
+msgstr "Lofts:"
+
+#: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Comment"
+msgctxt "KReportItemLabel|"
+msgid "Center"
+msgstr "Taljochting"
+
+#: items/label/KReportItemLabel.cpp:94
+#, fuzzy
+#| msgid "Right:"
+msgctxt "KReportItemLabel|"
+msgid "Right"
+msgstr "Rjochts:"
+
+#: items/label/KReportItemLabel.cpp:96
+#, fuzzy
+#| msgid "Set Horizontal Alignment"
+msgctxt "KReportItemLabel|"
+msgid "Horizontal Alignment"
+msgstr "Horizontale rjochting ynstelle"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "&Top:"
+msgctxt "KReportItemLabel|"
+msgid "Top"
+msgstr "&Boppe:"
+
+#: items/label/KReportItemLabel.cpp:100
+#, fuzzy
+#| msgid "Zoom"
+msgctxt "KReportItemLabel|"
+msgid "Bottom"
+msgstr "Zoome"
+
+#: items/label/KReportItemLabel.cpp:102
+#, fuzzy
+#| msgid "Set Vertical Alignment"
+msgctxt "KReportItemLabel|"
+msgid "Vertical Alignment"
+msgstr "Fertikale rjochting ynstelle"
+
+#: items/label/KReportItemLabel.cpp:104
+#, fuzzy
+#| msgid "Set point type"
+msgctxt "KReportItemLabel|"
+msgid "Font"
+msgstr "Punttype ynstelle"
+
+#: items/label/KReportItemLabel.cpp:106
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportItemLabel|"
+msgid "Background Color"
+msgstr "Eftergrûn ynstelle"
+
+#: items/label/KReportItemLabel.cpp:107
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportItemLabel|"
+msgid "Foreground Color"
+msgstr "Eftergrûn ynstelle"
+
+#: items/label/KReportItemLabel.cpp:109
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportItemLabel|"
+msgid "Background Opacity"
+msgstr "&Eftergrûnkleur..."
+
+#: items/label/KReportItemLabel.cpp:114
+#, fuzzy
+#| msgid "Lighten"
+msgctxt "KReportItemLabel|"
+msgid "Line Weight"
+msgstr "Ljochter meitsje"
+
+#: items/label/KReportItemLabel.cpp:116
+#, fuzzy
+#| msgid "Color"
+msgctxt "KReportItemLabel|"
+msgid "Line Color"
+msgstr "Kleur"
+
+#: items/label/KReportItemLabel.cpp:117
+#, fuzzy
+#| msgid "Line Border"
+msgctxt "KReportItemLabel|"
+msgid "Line Style"
+msgstr "râne line"
+
+#: items/text/KReportItemText.cpp:115
+#, fuzzy
+#| msgid "Value"
+msgctxt "KReportItemText|"
+msgid "Value"
+msgstr "Wearde"
+
+#: items/text/KReportItemText.cpp:115
+msgctxt "KReportItemText|"
+msgid "Value used if not bound to a field"
+msgstr ""
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Left:"
+msgctxt "KReportItemText|"
+msgid "Left"
+msgstr "Lofts:"
+
+#: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Comment"
+msgctxt "KReportItemText|"
+msgid "Center"
+msgstr "Taljochting"
+
+#: items/text/KReportItemText.cpp:119
+#, fuzzy
+#| msgid "Right:"
+msgctxt "KReportItemText|"
+msgid "Right"
+msgstr "Rjochts:"
+
+#: items/text/KReportItemText.cpp:121
+#, fuzzy
+#| msgid "Set Horizontal Alignment"
+msgctxt "KReportItemText|"
+msgid "Horizontal Alignment"
+msgstr "Horizontale rjochting ynstelle"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "&Top:"
+msgctxt "KReportItemText|"
+msgid "Top"
+msgstr "&Boppe:"
+
+#: items/text/KReportItemText.cpp:125
+#, fuzzy
+#| msgid "Zoom"
+msgctxt "KReportItemText|"
+msgid "Bottom"
+msgstr "Zoome"
+
+#: items/text/KReportItemText.cpp:127
+#, fuzzy
+#| msgid "Set Vertical Alignment"
+msgctxt "KReportItemText|"
+msgid "Vertical Alignment"
+msgstr "Fertikale rjochting ynstelle"
+
+#: items/text/KReportItemText.cpp:129
+#, fuzzy
+#| msgid "Set point type"
+msgctxt "KReportItemText|"
+msgid "Font"
+msgstr "Punttype ynstelle"
+
+#: items/text/KReportItemText.cpp:131
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportItemText|"
+msgid "Background Color"
+msgstr "Eftergrûn ynstelle"
+
+#: items/text/KReportItemText.cpp:132
+#, fuzzy
+#| msgid "Set background"
+msgctxt "KReportItemText|"
+msgid "Foreground Color"
+msgstr "Eftergrûn ynstelle"
+
+#: items/text/KReportItemText.cpp:134
+#, fuzzy
+#| msgid "Lighten"
+msgctxt "KReportItemText|"
+msgid "Line Weight"
+msgstr "Ljochter meitsje"
+
+#: items/text/KReportItemText.cpp:136
+#, fuzzy
+#| msgid "Color"
+msgctxt "KReportItemText|"
+msgid "Line Color"
+msgstr "Kleur"
+
+#: items/text/KReportItemText.cpp:137
+#, fuzzy
+#| msgid "Line Border"
+msgctxt "KReportItemText|"
+msgid "Line Style"
+msgstr "râne line"
+
+#: items/text/KReportItemText.cpp:138
+#, fuzzy
+#| msgid "&Background color:"
+msgctxt "KReportItemText|"
+msgid "Background Opacity"
+msgstr "&Eftergrûnkleur..."
+
+#: renderer/scripting/KReportScriptHandler.cpp:170
+#, qt-format
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Cannot evaluate script. Error: %1\n"
+"\n"
+"Do you want to suppress further messages?\n"
+"(messages will be restored next time the report is opened)"
+msgstr ""
+
+#: renderer/scripting/KReportScriptHandler.cpp:171
+#, fuzzy, qt-format
+#| msgid "Script File"
+msgctxt "KReportScriptHandler|"
+msgid ""
+"Script code:\n"
+"%1"
+msgstr "Skripttriem"
+
+#: renderer/scripting/KReportScriptHandler.cpp:187
+#, fuzzy
+#| msgid "Internal error"
+msgctxt "KReportScriptHandler|"
+msgid "Script Error"
+msgstr "Ynterne flater"
+
+#: wrtembed/KReportDesigner.cpp:310
+#, qt-format
+msgctxt "KReportDesigner|"
+msgid ""
+"This report contains scripts of type \"%1\". Only scripts written in "
+"JavaScript language are supported. To prevent losing the scripts, their type "
+"and content will not be changed unless you change these scripts."
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:315
+msgctxt "KReportDesigner|"
+msgid "Unsupported Script Type"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:676
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Any)"
+msgstr "Sidefoarbyld"
+
+#: wrtembed/KReportDesigner.cpp:680
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Even)"
+msgstr "Sidefoarbyld"
+
+#: wrtembed/KReportDesigner.cpp:684
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Odd)"
+msgstr "Sidefoarbyld"
+
+#: wrtembed/KReportDesigner.cpp:688
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (First)"
+msgstr "Sidefoarbyld"
+
+#: wrtembed/KReportDesigner.cpp:692
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "KReportDesigner|"
+msgid "Page Header (Last)"
+msgstr "Sidefoarbyld"
+
+#: wrtembed/KReportDesigner.cpp:696
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Any)"
+msgstr "Fuotnoat"
+
+#: wrtembed/KReportDesigner.cpp:700
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Even)"
+msgstr "Fuotnoat"
+
+#: wrtembed/KReportDesigner.cpp:704
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Odd)"
+msgstr "Fuotnoat"
+
+#: wrtembed/KReportDesigner.cpp:708
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (First)"
+msgstr "Fuotnoat"
+
+#: wrtembed/KReportDesigner.cpp:712
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Page Footer (Last)"
+msgstr "Fuotnoat"
+
+#: wrtembed/KReportDesigner.cpp:716
+#, fuzzy
+#| msgid "Header"
+msgctxt "KReportDesigner|"
+msgid "Report Header"
+msgstr "Kopskrift"
+
+#: wrtembed/KReportDesigner.cpp:720
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Report Footer"
+msgstr "Fuotnoat"
+
+#: wrtembed/KReportDesigner.cpp:808
+#, fuzzy
+#| msgid "Export"
+msgctxt "KReportDesigner|Main report element"
+msgid "Report"
+msgstr "Eksportearje"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Title:"
+msgctxt "KReportDesigner|"
+msgid "Title"
+msgstr "Titel:"
+
+#: wrtembed/KReportDesigner.cpp:813
+#, fuzzy
+#| msgid "Footer"
+msgctxt "KReportDesigner|"
+msgid "Report Title"
+msgstr "Fuotnoat"
+
+#: wrtembed/KReportDesigner.cpp:818
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Size"
+msgstr "Sidegrutte"
+
+#: wrtembed/KReportDesigner.cpp:821
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Custom Page Size"
+msgstr "Sidegrutte"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "&Portrait"
+msgctxt "KReportDesigner|"
+msgid "Portrait"
+msgstr "&Portret"
+
+#: wrtembed/KReportDesigner.cpp:825
+#, fuzzy
+#| msgid "La&ndscape"
+msgctxt "KReportDesigner|"
+msgid "Landscape"
+msgstr "Lâ&nskip"
+
+#: wrtembed/KReportDesigner.cpp:827
+#, fuzzy
+#| msgid "Orientation"
+msgctxt "KReportDesigner|"
+msgid "Page Orientation"
+msgstr "Oriïntaasje"
+
+#: wrtembed/KReportDesigner.cpp:832
+#, fuzzy
+#| msgid "Page Size"
+msgctxt "KReportDesigner|"
+msgid "Page Unit"
+msgstr "Sidegrutte"
+
+#: wrtembed/KReportDesigner.cpp:833
+#, fuzzy
+#| msgid "Show &Grid"
+msgctxt "KReportDesigner|"
+msgid "Show Grid"
+msgstr "&Roaster sjen litte"
+
+#: wrtembed/KReportDesigner.cpp:834
+#, fuzzy
+#| msgid "Snap to Grid"
+msgctxt "KReportDesigner|"
+msgid "Snap to Grid"
+msgstr "Magnetysk ruster"
+
+#: wrtembed/KReportDesigner.cpp:835
+msgctxt "KReportDesigner|"
+msgid "Grid Divisions"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:841
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Left Margin"
+msgstr "Marzjes"
+
+#: wrtembed/KReportDesigner.cpp:843
+#, fuzzy
+#| msgid "Right indent"
+msgctxt "KReportDesigner|"
+msgid "Right Margin"
+msgstr "Rjochter ynsprong"
+
+#: wrtembed/KReportDesigner.cpp:845
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Top Margin"
+msgstr "Marzjes"
+
+#: wrtembed/KReportDesigner.cpp:847
+#, fuzzy
+#| msgid "Margins"
+msgctxt "KReportDesigner|"
+msgid "Bottom Margin"
+msgstr "Marzjes"
+
+#: wrtembed/KReportDesigner.cpp:869
+#, fuzzy
+#| msgid "Object"
+msgctxt "KReportDesigner|"
+msgid "Object Script"
+msgstr "Objekt"
+
+#: wrtembed/KReportDesigner.cpp:1067
+#, fuzzy
+#| msgid "Custom"
+msgctxt "KReportDesigner|"
+msgid "Cut"
+msgstr "Oanpast"
+
+#: wrtembed/KReportDesigner.cpp:1071
+#, fuzzy
+#| msgid "Company:"
+msgctxt "KReportDesigner|"
+msgid "Copy"
+msgstr "Bedriuw:"
+
+#: wrtembed/KReportDesigner.cpp:1076
+#, fuzzy
+#| msgid "Date"
+msgctxt "KReportDesigner|"
+msgid "Paste"
+msgstr "Datum"
+
+#: wrtembed/KReportDesigner.cpp:1087
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportDesigner|"
+msgid "Delete"
+msgstr "Wiskje"
+
+#: wrtembed/KReportDesigner.cpp:1129
+#, fuzzy
+#| msgid "Lines"
+msgctxt "KReportDesigner|Report line element"
+msgid "Line"
+msgstr "Rigels"
+
+#: wrtembed/KReportDesigner.cpp:1476
+#, fuzzy
+#| msgid "Lines"
+msgctxt "KReportDesigner|"
+msgid "Line"
+msgstr "Rigels"
+
+#: wrtembed/KReportDesigner.cpp:1519
+msgctxt "KReportDesigner|"
+msgid "Cu&t"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1521
+msgctxt "KReportDesigner|"
+msgid "Cut selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1525
+#, fuzzy
+#| msgid "Company:"
+msgctxt "KReportDesigner|"
+msgid "&Copy"
+msgstr "Bedriuw:"
+
+#: wrtembed/KReportDesigner.cpp:1527
+msgctxt "KReportDesigner|"
+msgid "Copy selection to clipboard"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1531
+#, fuzzy
+#| msgid "Date"
+msgctxt "KReportDesigner|"
+msgid "&Paste"
+msgstr "Datum"
+
+#: wrtembed/KReportDesigner.cpp:1533
+msgctxt "KReportDesigner|"
+msgid "Paste clipboard content"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1544
+#, fuzzy
+#| msgid "Collection"
+msgctxt "KReportDesigner|"
+msgid "Edit Sections"
+msgstr "Kolleksje"
+
+#: wrtembed/KReportDesigner.cpp:1547
+msgctxt "KReportDesigner|"
+msgid "Raise"
+msgstr ""
+
+#: wrtembed/KReportDesigner.cpp:1549
+msgctxt "KReportDesigner|"
+msgid "Lower"
+msgstr ""
+
+#: wrtembed/KReportDesignerSection.cpp:126
+#, fuzzy
+#| msgid "Detailed View"
+msgctxt "KReportDesignerSection|"
+msgid "Detail"
+msgstr "Detaillearre werjefte"
+
+#: wrtembed/KReportDetailGroupSectionDialog.cpp:35
+#, fuzzy
+#| msgid "Group shapes"
+msgctxt "KReportDetailGroupSectionDialog|"
+msgid "Group Section Editor"
+msgstr "Foarmen groepearje"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:34
+#, fuzzy
+#| msgid "Columns:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Column:"
+msgstr "Kolommen:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:51
+#, fuzzy
+#| msgid "Street:"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Sort:"
+msgstr "Strjitte:"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:68
+#, fuzzy
+#| msgid "Show &Grid"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group header:"
+msgstr "&Roaster sjen litte"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:85
+#, fuzzy
+#| msgid "Show &Grid"
+msgctxt "DetailGroupSectionDialog|"
+msgid "Show group footer:"
+msgstr "&Roaster sjen litte"
+
+#: wrtembed/KReportDetailGroupSectionDialog.ui:105
+msgctxt "DetailGroupSectionDialog|"
+msgid "Insert page break after group footer:"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:26
+msgctxt "KReportPropertiesButton|"
+msgid "Select entire report"
+msgstr ""
+
+#: wrtembed/KReportPropertiesButton.cpp:27
+msgctxt "KReportPropertiesButton|"
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+
+#: wrtembed/KReportRuler_p.cpp:1472
+#, fuzzy
+#| msgid "First line indent"
+msgctxt "KReportRuler|"
+msgid "First line indent"
+msgstr "Earste-regel-ynsprong"
+
+#: wrtembed/KReportRuler_p.cpp:1473
+#, fuzzy
+#| msgid "Left indent"
+msgctxt "KReportRuler|"
+msgid "Left indent"
+msgstr "Lofter ynsprong"
+
+#: wrtembed/KReportRuler_p.cpp:1474
+#, fuzzy
+#| msgid "Right indent"
+msgctxt "KReportRuler|"
+msgid "Right indent"
+msgstr "Rjochter ynsprong"
+
+#: wrtembed/KReportSectionEditor.cpp:72
+msgctxt "KReportSectionEditor|"
+msgid "Add..."
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.cpp:74
+#, fuzzy
+#| msgid "Add..."
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "Taheakje..."
+
+#: wrtembed/KReportSectionEditor.cpp:76
+#, fuzzy
+#| msgid "Delete"
+msgctxt "KReportSectionEditor|"
+msgid "Delete"
+msgstr "Wiskje"
+
+#: wrtembed/KReportSectionEditor.cpp:78
+#, fuzzy
+#| msgid "Move page"
+msgctxt "KReportSectionEditor|"
+msgid "Move Up"
+msgstr "Side ferpleatse"
+
+#: wrtembed/KReportSectionEditor.cpp:80
+#, fuzzy
+#| msgid "Move points"
+msgctxt "KReportSectionEditor|"
+msgid "Move Down"
+msgstr "Punten ferpleatsen"
+
+#: wrtembed/KReportSectionEditor.cpp:311
+msgctxt "KReportSectionEditor|"
+msgid "Ascending"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.cpp:312
+msgctxt "KReportSectionEditor|"
+msgid "Descending"
+msgstr ""
+
+#: wrtembed/KReportSectionEditor.ui:29
+#, fuzzy
+#| msgid "Show &Grid"
+msgctxt "SectionEditor|"
+msgid "Show report header"
+msgstr "&Roaster sjen litte"
+
+#: wrtembed/KReportSectionEditor.ui:36
+#, fuzzy
+#| msgid "Show &Grid"
+msgctxt "SectionEditor|"
+msgid "Show report footer"
+msgstr "&Roaster sjen litte"
+
+#: wrtembed/KReportSectionEditor.ui:43
+#, fuzzy
+#| msgid "Page Preview"
+msgctxt "SectionEditor|"
+msgid "Page Header"
+msgstr "Sidefoarbyld"
+
+#: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
+#, fuzzy
+#| msgid "Fit Page"
+msgctxt "SectionEditor|"
+msgid "First page:"
+msgstr "Passend oan side"
+
+#: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
+#, fuzzy
+#| msgid "Paste Page"
+msgctxt "SectionEditor|"
+msgid "Even pages:"
+msgstr "Side plakke"
+
+#: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
+#, fuzzy
+#| msgid "Copy Page"
+msgctxt "SectionEditor|"
+msgid "Any pages:"
+msgstr "Side kopiearje"
+
+#: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
+#, fuzzy
+#| msgid "Paste Page"
+msgctxt "SectionEditor|"
+msgid "Last page:"
+msgstr "Side plakke"
+
+#: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
+#, fuzzy
+#| msgid "Copy Page"
+msgctxt "SectionEditor|"
+msgid "Odd pages:"
+msgstr "Side kopiearje"
+
+#: wrtembed/KReportSectionEditor.ui:130
+#, fuzzy
+#| msgid "Footer"
+msgctxt "SectionEditor|"
+msgid "Page Footer"
+msgstr "Fuotnoat"
+
+#: wrtembed/KReportSectionEditor.ui:217
+#, fuzzy
+#| msgid "Group shapes"
+msgctxt "SectionEditor|"
+msgid "Group Sections"
+msgstr "Foarmen groepearje"
+
+#: wrtembed/KReportZoomMode_p.cpp:28
+#, fuzzy, qt-format
+#| msgid "%1%"
+msgctxt "KReportZoomMode|"
+msgid "%1%"
+msgstr "%1%"
+
+#: wrtembed/KReportZoomMode_p.cpp:29
+#, fuzzy
+#| msgid "Fit Page Width"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page Width"
+msgstr "Passend oan sidebreedte"
+
+#: wrtembed/KReportZoomMode_p.cpp:30
+#, fuzzy
+#| msgid "Fit Page"
+msgctxt "KReportZoomMode|"
+msgid "Fit Page"
+msgstr "Passend oan side"
+
+#: wrtembed/KReportZoomMode_p.cpp:32
+#, fuzzy
+#| msgid "Actual Pixels"
+msgctxt "KReportZoomMode|"
+msgid "Actual Pixels"
+msgstr "Werkelike byldpunten"
+
+#: wrtembed/KReportZoomMode_p.cpp:36
+#, fuzzy
+#| msgid "Fit Page Width"
+msgctxt "KReportZoomMode|"
+msgid "Fit Text Width"
+msgstr "Passend oan sidebreedte"
+
+#, fuzzy
+#~| msgid "US Letter"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
+#~ msgid "US Letter"
+#~ msgstr "US Letter"
+
+#, fuzzy
+#~| msgid "US Legal"
+#~ msgctxt ""
+#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
+#~ msgid "US Legal"
+#~ msgstr "US Legal"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Custom"
+#~ msgstr "Oanpast"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B6"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B5"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B4"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "US Executive"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Executive"
+#~ msgstr "US Executive"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B0"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B1"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "ISO B10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B10"
+#~ msgstr "ISO B10"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B2"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "B3"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "Comma"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Comm10"
+#~ msgstr "Komma"
+
+#, fuzzy
+#~| msgid "ISO DL"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO DL"
+#~ msgstr "ISO DL"
+
+#, fuzzy
+#~| msgid "US Folio"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Folio"
+#~ msgstr "US Folio"
+
+#, fuzzy
+#~| msgid "US Ledger"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Ledger"
+#~ msgstr "US Ledger"
+
+#, fuzzy
+#~| msgid "US Tabloid"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Tabloid"
+#~ msgstr "US Tabloid"
+
+#, fuzzy
+#~| msgid "Postal code:"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Postcard"
+#~ msgstr "Postkoade:"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "Screen"
+#~ msgstr "Skerm"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "KReportPosition|"
+#~ msgid "Position"
+#~ msgstr "Posysje"
+
+#, fuzzy
+#~| msgid "&Height:"
+#~ msgctxt "KReportSection|"
+#~ msgid "Height"
+#~ msgstr "&Hichte:"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "KReportSection|"
+#~ msgid "Background Color"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "&Size:"
+#~ msgctxt "KReportSize|"
+#~ msgid "Size"
+#~ msgstr "&Grutte:"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "KReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Wiskje"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "KReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Wiskje"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "KReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Wiskje"
+
+#, fuzzy
+#~| msgid "ISO A3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A3"
+#~ msgstr "ISO A3"
+
+#, fuzzy
+#~| msgid "ISO A4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A4"
+#~ msgstr "ISO A4"
+
+#, fuzzy
+#~| msgid "ISO A5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A5"
+#~ msgstr "ISO A5"
+
+#, fuzzy
+#~| msgid "ISO B5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B5"
+#~ msgstr "ISO B5"
+
+#, fuzzy
+#~| msgid "US Executive"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Executive"
+#~ msgstr "US Executive"
+
+#, fuzzy
+#~| msgid "ISO A0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A0"
+#~ msgstr "ISO A0"
+
+#, fuzzy
+#~| msgid "ISO A1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A1"
+#~ msgstr "ISO A1"
+
+#, fuzzy
+#~| msgid "ISO A2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A2"
+#~ msgstr "ISO A2"
+
+#, fuzzy
+#~| msgid "ISO A6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A6"
+#~ msgstr "ISO A6"
+
+#, fuzzy
+#~| msgid "ISO A7"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A7"
+#~ msgstr "ISO A7"
+
+#, fuzzy
+#~| msgid "ISO A8"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A8"
+#~ msgstr "ISO A8"
+
+#, fuzzy
+#~| msgid "ISO A9"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO A9"
+#~ msgstr "ISO A9"
+
+#, fuzzy
+#~| msgid "ISO B0"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B0"
+#~ msgstr "ISO B0"
+
+#, fuzzy
+#~| msgid "ISO B1"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B1"
+#~ msgstr "ISO B1"
+
+#, fuzzy
+#~| msgid "ISO B2"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B2"
+#~ msgstr "ISO B2"
+
+#, fuzzy
+#~| msgid "ISO B3"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B3"
+#~ msgstr "ISO B3"
+
+#, fuzzy
+#~| msgid "ISO B4"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B4"
+#~ msgstr "ISO B4"
+
+#, fuzzy
+#~| msgid "ISO B6"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO B6"
+#~ msgstr "ISO B6"
+
+#, fuzzy
+#~| msgid "ISO C5"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "ISO C5"
+#~ msgstr "ISO C5"
+
+#, fuzzy
+#~| msgid "US Common 10"
+#~ msgctxt "KReportPageFormat|"
+#~ msgid "US Common 10"
+#~ msgstr "US Common 10"
+
+#, fuzzy
+#~| msgid "&Height:"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Height"
+#~ msgstr "&Hichte:"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "KRSectionData|"
+#~ msgid "Background Color"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Weight"
+#~ msgstr "Ljochter meitsje"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Color"
+#~ msgstr "Kleur"
+
+#, fuzzy
+#~| msgid "Line Border"
+#~ msgctxt "KoReportItemCheck|"
+#~ msgid "Line Style"
+#~ msgstr "râne line"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Data Source"
+#~ msgstr "Wiskje"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Value"
+#~ msgstr "Wearde"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Background Color"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Foreground Color"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Weight"
+#~ msgstr "Ljochter meitsje"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Color"
+#~ msgstr "Kleur"
+
+#, fuzzy
+#~| msgid "Line Border"
+#~ msgctxt "KoReportItemField|"
+#~ msgid "Line Style"
+#~ msgstr "râne line"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Data Source"
+#~ msgstr "Wiskje"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemImage|"
+#~ msgid "Value"
+#~ msgstr "Wearde"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Left"
+#~ msgstr "Lofts:"
+
+#, fuzzy
+#~| msgid "Comment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Center"
+#~ msgstr "Taljochting"
+
+#, fuzzy
+#~| msgid "Right:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Right"
+#~ msgstr "Rjochts:"
+
+#, fuzzy
+#~| msgid "Set Horizontal Alignment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Horizontale rjochting ynstelle"
+
+#, fuzzy
+#~| msgid "&Top:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Top"
+#~ msgstr "&Boppe:"
+
+#, fuzzy
+#~| msgid "Zoom"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Bottom"
+#~ msgstr "Zoome"
+
+#, fuzzy
+#~| msgid "Set Vertical Alignment"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Fertikale rjochting ynstelle"
+
+#, fuzzy
+#~| msgid "Set point type"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Font"
+#~ msgstr "Punttype ynstelle"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Color"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Foreground Color"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Background Opacity"
+#~ msgstr "&Eftergrûnkleur..."
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Weight"
+#~ msgstr "Ljochter meitsje"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Color"
+#~ msgstr "Kleur"
+
+#, fuzzy
+#~| msgid "Line Border"
+#~ msgctxt "KoReportItemLabel|"
+#~ msgid "Line Style"
+#~ msgstr "râne line"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Data Source"
+#~ msgstr "Wiskje"
+
+#, fuzzy
+#~| msgid "Value"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Value"
+#~ msgstr "Wearde"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Left"
+#~ msgstr "Lofts:"
+
+#, fuzzy
+#~| msgid "Comment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Center"
+#~ msgstr "Taljochting"
+
+#, fuzzy
+#~| msgid "Right:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Right"
+#~ msgstr "Rjochts:"
+
+#, fuzzy
+#~| msgid "Set Horizontal Alignment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Horizontal Alignment"
+#~ msgstr "Horizontale rjochting ynstelle"
+
+#, fuzzy
+#~| msgid "&Top:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Top"
+#~ msgstr "&Boppe:"
+
+#, fuzzy
+#~| msgid "Zoom"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Bottom"
+#~ msgstr "Zoome"
+
+#, fuzzy
+#~| msgid "Set Vertical Alignment"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Vertical Alignment"
+#~ msgstr "Fertikale rjochting ynstelle"
+
+#, fuzzy
+#~| msgid "Set point type"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Font"
+#~ msgstr "Punttype ynstelle"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Color"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Foreground Color"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Weight"
+#~ msgstr "Ljochter meitsje"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Color"
+#~ msgstr "Kleur"
+
+#, fuzzy
+#~| msgid "Line Border"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Line Style"
+#~ msgstr "râne line"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgctxt "KoReportItemText|"
+#~ msgid "Background Opacity"
+#~ msgstr "&Eftergrûnkleur..."
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "SectionEditor|"
+#~ msgid "Delete"
+#~ msgstr "Wiskje"
+
+#, fuzzy
+#~| msgid "Script Manager"
+#~ msgctxt "KoReportDesigner|"
+#~ msgid "Script Interpreter"
+#~ msgstr "Skriptbehearder"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Berend Ytsma,Rinse de Vries"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "berendy@bigfoot.com,rinsedevries@kde.nl"
+
+#, fuzzy
+#~| msgid "Break subpath"
+#~ msgid "Draw path"
+#~ msgstr "Subpaad ôfbrekke"
+
+#, fuzzy
+#~| msgid "Break subpath"
+#~ msgid "Freehand path"
+#~ msgstr "Subpaad ôfbrekke"
+
+#, fuzzy
+#~| msgid "Change Connection"
+#~ msgid "Angle Constraints"
+#~ msgstr "Ferbining feroarje"
+
+#, fuzzy
+#~| msgid "Position:"
+#~ msgid "Precision:"
+#~ msgstr "Posysje:"
+
+#~ msgid "Curve"
+#~ msgstr "Rûning"
+
+#~ msgid "Straight"
+#~ msgstr "Rjocht"
+
+#, fuzzy
+#~| msgid "Combine paths"
+#~ msgid "Combine angle:"
+#~ msgstr "Paden kombinearje"
+
+#, fuzzy
+#~| msgid "Could not export file."
+#~ msgid "Could not open \"%1\" project file."
+#~ msgstr "Triem koe net eksportearre wurde."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "The database \"%1\" does not exist."
+#~ msgstr "De triem %1 bestiet net."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "The database file \"%1\" does not exist."
+#~ msgstr "De triem %1 bestiet net."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Database file \"%1\" is not writable."
+#~ msgstr "De triem %1 bestiet net."
+
+#, fuzzy
+#~| msgid "Create shape"
+#~ msgid "Creating table failed."
+#~ msgstr "Foarm oanmeitsje"
+
+#, fuzzy
+#~| msgid "Cannot create storage"
+#~ msgid "Cannot create table without fields."
+#~ msgstr "Kin opslach net oanmeitsje"
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not create the same table \"%1\" twice."
+#~ msgstr "Koe pakket \"%1\" net lêze."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist."
+#~ msgstr "De triem %1 bestiet net."
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not load embedded object:\n"
+#~| "%1"
+#~ msgid "Could not remove object's data."
+#~ msgstr ""
+#~ "Ynbêde objekt koe net laden wurde:\n"
+#~ "%1"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not uninstall the script package \"%1\" since the script is not "
+#~| "installed."
+#~ msgid "Could not alter table \"%1\" using the same table as destination."
+#~ msgstr ""
+#~ "Koe dit skriptpakket \"%1\" net deynstallearje omdat it skript net "
+#~ "ynstallearre is."
+
+#, fuzzy
+#~| msgid "Could not read the beginning of the file."
+#~ msgid "Could not rename table \"%1\" using the same name."
+#~ msgstr "Begjin fan de triem koe net lêzen wurde."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Query \"%1\" does not exist."
+#~ msgstr "De triem %1 bestiet net."
+
+#, fuzzy
+#~| msgid "Change Connection"
+#~ msgid "Begin transaction failed."
+#~ msgstr "Ferbining feroarje"
+
+#, fuzzy
+#~| msgid "This name is already used."
+#~ msgid "Transaction already started."
+#~ msgstr "Dizze namme wurdt al brûkt."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Column <resource>%1</resource> does not exist in the query."
+#~ msgstr "De triem %1 bestiet net."
+
+#, fuzzy
+#~| msgid "Error while saving embedded documents"
+#~ msgctxt "Extended schema for a table: loading error"
+#~ msgid "Error while loading extended table schema."
+#~ msgstr "Flater by it bewarjen fan ynbêde dokuminten"
+
+#, fuzzy
+#~| msgid ""
+#~| "Parsing error in %1 at line %2, column %3\n"
+#~| "Error message: %4"
+#~ msgid ""
+#~ "Error in XML data: \"%1\" in line %2, column %3.\n"
+#~ "XML data: %4"
+#~ msgstr ""
+#~ "Untleedflater yn %1, op regel %2, kolom %3\n"
+#~ "Flatermelding: %4"
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not insert record because there is no master table specified."
+#~ msgstr "Koe pakket \"%1\" net lêze."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not delete record because there is no master table specified."
+#~ msgstr "Koe pakket \"%1\" net lêze."
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Unknown error."
+#~ msgstr "Unbekende flater"
+
+#, fuzzy
+#~| msgid "Date: %1"
+#~ msgctxt "@info"
+#~ msgid "file: %1"
+#~ msgstr "Datum: %1"
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not set value of database property \"%1\"."
+#~ msgstr "Koe pakket \"%1\" net lêze."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not read database property \"%1\"."
+#~ msgstr "Koe pakket \"%1\" net lêze."
+
+#, fuzzy
+#~| msgid "Could not read the beginning of the file."
+#~ msgid "Could not read database properties."
+#~ msgstr "Begjin fan de triem koe net lêzen wurde."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not find database driver \"%1\"."
+#~ msgstr "Koe pakket \"%1\" net lêze."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not load database driver \"%1\"."
+#~ msgstr "Koe pakket \"%1\" net lêze."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not find service <resource>%1</resource>."
+#~ msgstr "Koe pakket \"%1\" net lêze."
+
+#, fuzzy
+#~| msgid "File not found"
+#~ msgid "Field not found"
+#~ msgstr "Triem net fûn"
+
+#, fuzzy
+#~| msgid "Could not create the file for saving"
+#~ msgid "Could not access the table directly using its name"
+#~ msgstr "De triem koe net opslein wurde"
+
+#, fuzzy
+#~| msgid "File not found"
+#~ msgid "Table not found"
+#~ msgstr "Triem net fûn"
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" has no \"%2\" field."
+#~ msgstr "De triem %1 bestiet net."
+
+#, fuzzy
+#~| msgid "Number:"
+#~ msgid "Short Integer Number"
+#~ msgstr "Oantal:"
+
+#, fuzzy
+#~| msgid "Number:"
+#~ msgid "Integer Number"
+#~ msgstr "Oantal:"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgid "Yes/No Value"
+#~ msgstr "Ynspringing fergrutsje"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#, fuzzy
+#~| msgid "Date & Time"
+#~ msgid "Date and Time"
+#~ msgstr "Datum & tiid"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Time"
+#~ msgstr "Tiid:"
+
+#, fuzzy
+#~| msgid "Revision number:"
+#~ msgid "Single Precision Number"
+#~ msgstr "Revyzje:"
+
+#, fuzzy
+#~| msgid "Revision number:"
+#~ msgid "Double Precision Number"
+#~ msgstr "Revyzje:"
+
+#~ msgid "Text"
+#~ msgstr "Tekst"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Long Text"
+#~ msgstr "Tekst"
+
+#~ msgid "Object"
+#~ msgstr "Objekt"
+
+#, fuzzy
+#~| msgid "Change master page"
+#~ msgid "Floating Point Number"
+#~ msgstr "Haadside feroarje"
+
+#, fuzzy
+#~| msgid "Date & Time"
+#~ msgid "Date/Time"
+#~ msgstr "Datum & tiid"
+
+#, fuzzy
+#~| msgid "Internal error"
+#~ msgid "Syntax error."
+#~ msgstr "Ynterne flater"
+
+#, fuzzy
+#~| msgid "Error!"
+#~ msgid "Error"
+#~ msgstr "Flater!"
+
+#, fuzzy
+#~| msgid "Internal error"
+#~ msgid "Error near \"%1\"."
+#~ msgstr "Ynterne flater"
+
+#, fuzzy
+#~| msgid "Revision number:"
+#~ msgid "Server's port number"
+#~ msgstr "Revyzje:"
+
+#, fuzzy
+#~| msgid "Create shape"
+#~ msgid "Record inserting failed."
+#~ msgstr "Foarm oanmeitsje"
+
+#, fuzzy
+#~| msgid "Error deleting layers"
+#~ msgid "Record deleting failed."
+#~ msgstr "Flater by it wiskjen fan lagen"
+
+#, fuzzy
+#~| msgid "Change Connection"
+#~ msgid "Test Connection"
+#~ msgstr "Ferbining feroarje"
+
+#, fuzzy
+#~| msgid "Number:"
+#~ msgid "Number"
+#~ msgstr "Oantal:"
+
+#, fuzzy
+#~| msgid "Page"
+#~ msgid "Image"
+#~ msgstr "Side"
+
+#, fuzzy
+#~| msgid "Change Connection"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Connection"
+#~ msgstr "Ferbining feroarje"
+
+#, fuzzy
+#~| msgid "Change parameter"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change parameter"
+#~ msgstr "Parameter feroarje..."
+
+#, fuzzy
+#~| msgid "Convert to Path"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Convert to Path"
+#~ msgstr "Nei paad omsette"
+
+#, fuzzy
+#~| msgid "Break subpath at points"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath at points"
+#~ msgstr "Sybpaad by punten ôfbrekke"
+
+#, fuzzy
+#~| msgid "Combine paths"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Combine paths"
+#~ msgstr "Paden kombinearje"
+
+#, fuzzy
+#~| msgid "Move control point"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move control point"
+#~ msgstr "Kontrôlepunt ferpleatse"
+
+#, fuzzy
+#~| msgid "Set fill rule"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set fill rule"
+#~ msgstr "Folregel ynstelle"
+
+#, fuzzy
+#~| msgid "Insert point"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert points"
+#~ msgstr "Punt ynfoegje"
+
+#, fuzzy
+#~| msgid "Merge points"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge points"
+#~ msgstr "Gearfoegpunten"
+
+#, fuzzy
+#~| msgid "Move points"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move points"
+#~ msgstr "Punten ferpleatsen"
+
+#, fuzzy
+#~| msgid "Remove points"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove points"
+#~ msgstr "Punten fuortsmite"
+
+#, fuzzy
+#~| msgid "Set point type"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set point type"
+#~ msgstr "Punttype ynstelle"
+
+#, fuzzy
+#~| msgid "Reverse paths"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reverse paths"
+#~ msgstr "Paden omkeare"
+
+#, fuzzy
+#~| msgid "Break subpath"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Break subpath"
+#~ msgstr "Subpaad ôfbrekke"
+
+#, fuzzy
+#~| msgid "Change segments to curves"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to curves"
+#~ msgstr "Segminten nei rûnings feroarje"
+
+#, fuzzy
+#~| msgid "Change segments to lines"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change segments to lines"
+#~ msgstr "Segminten nei linen feroarje"
+
+#, fuzzy
+#~| msgid "Set border"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set marker"
+#~ msgstr "Râne ynstelle"
+
+#, fuzzy
+#~| msgid "Align shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Align shapes"
+#~ msgstr "Foarmen rjochtsje"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set background"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Ellipse Shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Clip Shape"
+#~ msgstr "Elips foarm "
+
+#, fuzzy
+#~| msgid "Create shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create shape"
+#~ msgstr "Foarm oanmeitsje"
+
+#, fuzzy
+#~| msgid "Delete shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shape"
+#~ msgid_plural "Delete shapes"
+#~ msgstr[0] "Foarm wiskje"
+#~ msgstr[1] "Foarm wiskje"
+
+#, fuzzy
+#~| msgid "Distribute shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Distribute shapes"
+#~ msgstr "Foarmen distribuearje"
+
+#, fuzzy
+#~| msgid "Group shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Group shapes"
+#~ msgstr "Foarmen groepearje"
+
+#, fuzzy
+#~| msgid "Keep Aspect Ratio"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Keep Aspect Ratio"
+#~ msgstr "Orizjinele byldferhâlding behâlde"
+
+#, fuzzy
+#~| msgid "Lock shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Lock shapes"
+#~ msgstr "Foarmen beskoattelje"
+
+#, fuzzy
+#~| msgid "Move shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move shapes"
+#~ msgstr "Foarmen ferpleatse"
+
+#, fuzzy
+#~| msgid "Create Shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Shape"
+#~ msgstr "Foarmen oanmeitsje"
+
+#, fuzzy
+#~| msgid "Reorder shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reorder shapes"
+#~ msgstr "Foarmen oarderje"
+
+#, fuzzy
+#~| msgid "Change parameter"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Shape RunAround"
+#~ msgstr "Parameter feroarje..."
+
+#, fuzzy
+#~| msgid "Set Shadow"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Shadow"
+#~ msgstr "Skaad ynstelle"
+
+#, fuzzy
+#~| msgid "Shear shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Shear shapes"
+#~ msgstr "Foarmen skeanlûke"
+
+#, fuzzy
+#~| msgid "Resize shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Resize shapes"
+#~ msgstr "Grutte feroarje fan foarmen"
+
+#, fuzzy
+#~| msgid "Set border"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set stroke"
+#~ msgstr "Râne ynstelle"
+
+#, fuzzy
+#~| msgid "Opacity"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set opacity"
+#~ msgstr "&Dekking"
+
+#, fuzzy
+#~| msgid "Ellipse Shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shape"
+#~ msgstr "Elips foarm "
+
+#, fuzzy
+#~| msgid "Ellipse Shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Unclip Shapes"
+#~ msgstr "Elips foarm "
+
+#, fuzzy
+#~| msgid "Ungroup shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Ungroup shapes"
+#~ msgstr "Foarmgroepearring opheffe"
+
+#, fuzzy
+#~| msgid "Close subpath"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Close subpath"
+#~ msgstr "Subpaad slute"
+
+#, fuzzy
+#~| msgid "Join subpaths"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Join subpaths"
+#~ msgstr "Subpaden gearfoegje"
+
+#, fuzzy
+#~| msgid "Remove subpath"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove subpath"
+#~ msgstr "Subpaad fuortsmite"
+
+#~ msgid "Standard"
+#~ msgstr "Standert"
+
+#~ msgid "Lines"
+#~ msgstr "Rigels"
+
+#~ msgid "Type:"
+#~ msgstr "Type:"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Tie"
+#~ msgstr "Tiid:"
+
+#, fuzzy
+#~| msgid "Show &Grid"
+#~ msgid "Shows or hides grid"
+#~ msgstr "&Roaster sjen litte"
+
+#, fuzzy
+#~| msgid "A simple path shape"
+#~ msgid "Simple path shape"
+#~ msgstr "In ynfâldige paadfoarm"
+
+#~ msgid "A simple path shape"
+#~ msgstr "In ynfâldige paadfoarm"
+
+#~ msgid "%1 Options"
+#~ msgstr "%1-opsjes"
+
+#, fuzzy
+#~| msgid "Paste Shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Shapes"
+#~ msgstr "Foarmen plakke"
+
+#~ msgid "Active tool: %1"
+#~ msgstr "Aktive ark: %1"
+
+#, fuzzy
+#~| msgid "Paste Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Image"
+#~ msgstr "Side plakke"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgid "Nodes"
+#~ msgstr "Gjin"
+
+#, fuzzy
+#~| msgid "Enable Extension Guide"
+#~ msgid "Extension of lines"
+#~ msgstr "Taheaksel helpline ynskeakelje"
+
+#, fuzzy
+#~| msgid "Enable Orthogonal Guide"
+#~ msgid "Orthogonal"
+#~ msgstr "Orthogonale helpline ynskeakelje"
+
+#, fuzzy
+#~| msgid "Enable Intersection Guide"
+#~ msgid "Intersection of lines"
+#~ msgstr "Interseksje helpline ynskeakelje"
+
+#, fuzzy
+#~| msgid "Guide Lines"
+#~ msgid "Guide lines"
+#~ msgstr "Gidslinen"
+
+#~ msgid "Create object"
+#~ msgstr "Objekt oanmeitsje"
+
+#~ msgid "Pan"
+#~ msgstr "Pan"
+
+#, fuzzy
+#~| msgid "Change Connection"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Segment"
+#~ msgstr "Ferbining feroarje"
+
+#~ msgid "Corner point"
+#~ msgstr "Hoekpunt"
+
+#~ msgid "Smooth point"
+#~ msgstr "Floeipunt"
+
+#~ msgid "Symmetric Point"
+#~ msgstr "symetryskpunt"
+
+#, fuzzy
+#~| msgid "Merge points"
+#~ msgid "Make curve point"
+#~ msgstr "Gearfoegpunten"
+
+#, fuzzy
+#~| msgid "Merge points"
+#~ msgid "Make line point"
+#~ msgstr "Gearfoegpunten"
+
+#~ msgid "Segment to Line"
+#~ msgstr "Segmint nei line"
+
+#~ msgid "Segment to Curve"
+#~ msgstr "Segnimt nei rûning"
+
+#~ msgid "Insert point"
+#~ msgstr "Punt ynfoegje"
+
+#~ msgid "Remove point"
+#~ msgstr "Punt fuorthelje"
+
+#~ msgid "Break at point"
+#~ msgstr "By punt ôfbrekke"
+
+#~ msgid "Break at segment"
+#~ msgstr "By segmint ôfbrekke"
+
+#~ msgid "Join with segment"
+#~ msgstr "Mei segmint ferbine"
+
+#~ msgid "Merge points"
+#~ msgstr "Gearfoegpunten"
+
+#~ msgid "To Path"
+#~ msgstr "Nei paad"
+
+#, fuzzy
+#~| msgid "Curve"
+#~ msgid "Line/Curve"
+#~ msgstr "Rûning"
+
+#, fuzzy
+#~| msgid "Move control point"
+#~ msgid "Drag to move control point."
+#~ msgstr "Kontrôlepunt ferpleatse"
+
+#, fuzzy
+#~| msgid "Break subpath at points"
+#~ msgid "Press B to break path at selected point."
+#~ msgstr "Sybpaad by punten ôfbrekke"
+
+#, fuzzy
+#~| msgid "Path editing tool"
+#~ msgid "Path editing"
+#~ msgstr "Paad bewurkark"
+
+#~ msgid "Zoom"
+#~ msgstr "Zoome"
+
+#~ msgid "Zoom In"
+#~ msgstr "Ynzoome"
+
+#~ msgid "Zoom Out"
+#~ msgstr "Utzoome"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Convert To Path"
+#~ msgstr "Nei paad omsette"
+
+#~ msgid "Scripts"
+#~ msgstr "Skripts"
+
+#~ msgid "Script Manager"
+#~ msgstr "Skriptbehearder"
+
+#~ msgid "Execute Script File..."
+#~ msgstr "Skripttriem útfiere..."
+
+#~ msgid "Script Manager..."
+#~ msgstr "Skriptbehearder..."
+
+#~ msgid "Execute Script File"
+#~ msgstr "Skripttriem útfiere"
+
+#~ msgid "Install Script Package"
+#~ msgstr "Skriptpakket ynstallearje"
+
+#~ msgid "Could not read the package \"%1\"."
+#~ msgstr "Koe pakket \"%1\" net lêze."
+
+#~ msgid "The package \"%1\" does not contain a valid install.rc file."
+#~ msgstr "It pakket \"%1\" befettet net in jildich install.rc triem."
+
+#~ msgid "Failed to parse the install.rc file at package \"%1\"."
+#~ msgstr "It ferwurken fan de install.rc triem yn pakket \"%1\" mislearre."
+
+#~ msgid ""
+#~ "Failed to determinate location where the package \"%1\" should be "
+#~ "installed to."
+#~ msgstr ""
+#~ "De bestimming, wêr pakket \"%1\" yn installearre soe wurde moatte, kin "
+#~ "net ûntdútsen wurde."
+
+#~ msgid ""
+#~ "A script package with the name \"%1\" already exists. Replace this "
+#~ "package?"
+#~ msgstr "In skriptpakket mei de namme \"%1\" bestiet al. Pakket ferfange?"
+
+#~ msgid "Replace"
+#~ msgstr "Ferfange"
+
+#~ msgid ""
+#~ "Could not uninstall this script package. You may not have sufficient "
+#~ "permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Koe dit skriptpakket net wiskje. Jo hawwe faaks net genôch rjochten om de "
+#~ "map \"%1\" te wiskjen."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\" since the script is not "
+#~ "installed."
+#~ msgstr ""
+#~ "Koe dit skriptpakket \"%1\" net deynstallearje omdat it skript net "
+#~ "ynstallearre is."
+
+#~ msgid ""
+#~ "Could not uninstall the script package \"%1\". You may not have "
+#~ "sufficient permissions to delete the folder \"%1\"."
+#~ msgstr ""
+#~ "Koe dit skriptpakket \"%1\" net deynstallearje. Jo hawwe faaks net genôch "
+#~ "rjochten om de map \"%1\" te wiskjen."
+
+#~ msgid "Save"
+#~ msgstr "Bewarje"
+
+#~ msgid "Add script file"
+#~ msgstr "Skripttriem taheakje"
+
+#~ msgid "Add collection folder"
+#~ msgstr "Kolleksjemap taheakje"
+
+#~ msgid "Install script package file"
+#~ msgstr "Skriptpakkettriem ynstallearje"
+
+#~ msgid "Install online script package"
+#~ msgstr "Skriptpakket online ynstallearje"
+
+#~ msgid "Add"
+#~ msgstr "Taheakje"
+
+#~ msgid "Script"
+#~ msgstr "Skript"
+
+#~ msgid "Collection"
+#~ msgstr "Kolleksje"
+
+#, fuzzy
+#~| msgid "Change master page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master slide"
+#~ msgstr "Haadside feroarje"
+
+#, fuzzy
+#~| msgid "Change master page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change master page"
+#~ msgstr "Haadside feroarje"
+
+#, fuzzy
+#~| msgid "Page Layout"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Page Layout"
+#~ msgstr "Side-yndieling"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display master background"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display slide background"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Display page background"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Show Master Pages"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Show master shapes"
+#~ msgstr "Haadsiden sjen litte"
+
+#, fuzzy
+#~| msgid "Shear shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Hide master shapes"
+#~ msgstr "Foarmen skeanlûke"
+
+#, fuzzy
+#~| msgid "Delete shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete slide"
+#~ msgid_plural "Delete slides"
+#~ msgstr[0] "Foarm wiskje"
+#~ msgstr[1] "Foarm wiskje"
+
+#, fuzzy
+#~| msgid "Delete page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete page"
+#~ msgid_plural "Delete pages"
+#~ msgstr[0] "Side wiskje"
+#~ msgstr[1] "Side wiskje"
+
+#, fuzzy
+#~| msgid "Insert Index"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert slide"
+#~ msgstr "Yndeks ynfoegje"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert page"
+#~ msgstr "Side ynfoegje"
+
+#, fuzzy
+#~| msgid "Move shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move slide"
+#~ msgid_plural "Move slides"
+#~ msgstr[0] "Foarmen ferpleatse"
+#~ msgstr[1] "Foarmen ferpleatse"
+
+#, fuzzy
+#~| msgid "Move page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move page"
+#~ msgid_plural "Move pages"
+#~ msgstr[0] "Side ferpleatse"
+#~ msgstr[1] "Side ferpleatse"
+
+#, fuzzy
+#~| msgid "Confirm Save"
+#~ msgid "Configure"
+#~ msgstr "Bewarjen befêstigje"
+
+#, fuzzy
+#~| msgid "Show &Grid"
+#~ msgid "Grid"
+#~ msgstr "&Roaster sjen litte"
+
+#, fuzzy
+#~| msgid "Document"
+#~ msgctxt "@title:tab Document settings page"
+#~ msgid "Document"
+#~ msgstr "Dokumint"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Document Settings"
+#~ msgstr "Dokumint-ynformaasje"
+
+#, fuzzy
+#~| msgid "Author"
+#~ msgctxt "@title:tab Author page"
+#~ msgid "Author"
+#~ msgstr "Skriuwer"
+
+#~ msgid "Author"
+#~ msgstr "Skriuwer"
+
+#, fuzzy
+#~| msgid "Master Page"
+#~ msgid "Master Slide"
+#~ msgstr "Haadside"
+
+#~ msgid "Master Page"
+#~ msgstr "Haadside"
+
+#, fuzzy
+#~| msgid "Page"
+#~ msgid "Page  %1"
+#~ msgstr "Side"
+
+#~ msgid "Layer"
+#~ msgstr "Laach"
+
+#~ msgid "Group"
+#~ msgstr "Groep"
+
+#~ msgid "Shape"
+#~ msgstr "Foarm"
+
+#, fuzzy
+#~| msgid "Master Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Slide"
+#~ msgstr "Haadside"
+
+#, fuzzy
+#~| msgid "Move page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Page"
+#~ msgstr "Side ferpleatse"
+
+#, fuzzy
+#~| msgid "Create Layer"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Layer"
+#~ msgstr "Laach oanmeitsje"
+
+#, fuzzy
+#~| msgid "&Size:"
+#~ msgid "Slide"
+#~ msgstr "&Grutte:"
+
+#~ msgid "Visible"
+#~ msgstr "Sichtber"
+
+#~ msgid "Locked"
+#~ msgstr "Beskoattele"
+
+#, fuzzy
+#~| msgid "Reparent shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Reparent shapes"
+#~ msgstr "Foarmen op 'e nij oarderje"
+
+#, fuzzy
+#~| msgid "Move page"
+#~ msgid "&Move Here"
+#~ msgstr "Side ferpleatse"
+
+#, fuzzy
+#~| msgid "Green"
+#~ msgid "&Copy Here"
+#~ msgstr "Grien"
+
+#, fuzzy
+#~| msgid "Change"
+#~ msgid "C&ancel"
+#~ msgstr "Feroarje"
+
+#~ msgid "Document"
+#~ msgstr "Dokumint"
+
+#, fuzzy
+#~| msgid "Add a new layer"
+#~ msgid "Add a new slide or layer"
+#~ msgstr "In nije laach taheakje"
+
+#, fuzzy
+#~| msgid "Add a new layer"
+#~ msgid "Add a new page or layer"
+#~ msgstr "In nije laach taheakje"
+
+#~ msgid "Page"
+#~ msgstr "Side"
+
+#~ msgid "Delete selected objects"
+#~ msgstr "De selektearre objekten wiskje"
+
+#~ msgid "Raise selected objects"
+#~ msgstr "De selektearre objekten nei foaren helje"
+
+#~ msgid "Lower selected objects"
+#~ msgstr "De selektearre objekten nei efteren helje"
+
+#~ msgid "Minimal View"
+#~ msgstr "Minimale werjefte"
+
+#~ msgid "Detailed View"
+#~ msgstr "Detaillearre werjefte"
+
+#~ msgid "Thumbnail View"
+#~ msgstr "Miniatuer werjefte"
+
+#~ msgid "View mode"
+#~ msgstr "Werjeftemodus"
+
+#~ msgid "Enter the name of the new layer:"
+#~ msgstr "Fier de namme fan de nije laach yn:"
+
+#~ msgid "New Layer"
+#~ msgstr "Nije Laach"
+
+#~ msgid "New layer"
+#~ msgstr "Nije laach"
+
+#, fuzzy
+#~| msgid "Create Layer"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Create Layer"
+#~ msgstr "Laach oanmeitsje"
+
+#, fuzzy
+#~| msgid "Delete Layer"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Layer"
+#~ msgstr "Laach wiskje"
+
+#~ msgid "Could not delete all layers. At least one layer is required."
+#~ msgstr "Koe net alle lagen wiskje. Ien laach moat bestean bliuwe."
+
+#~ msgid "Error deleting layers"
+#~ msgstr "Flater by it wiskjen fan lagen"
+
+#, fuzzy
+#~| msgid "Add a new layer"
+#~ msgid "Add a new slide"
+#~ msgstr "In nije laach taheakje"
+
+#, fuzzy
+#~| msgid "Add a new layer"
+#~ msgid "Add a new page"
+#~ msgstr "In nije laach taheakje"
+
+#, fuzzy
+#~| msgid "Page"
+#~ msgid "Page %1"
+#~ msgstr "Side"
+
+#, fuzzy
+#~| msgid "Master Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Slide"
+#~ msgid_plural "Paste Slides"
+#~ msgstr[0] "Haadside"
+#~ msgstr[1] "Haadside"
+
+#, fuzzy
+#~| msgid "Paste Page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste Page"
+#~ msgid_plural "Paste Pages"
+#~ msgstr[0] "Side plakke"
+#~ msgstr[1] "Side plakke"
+
+#, fuzzy
+#~| msgid "Pan Tool"
+#~ msgid "Tools"
+#~ msgstr "Pan-ark"
+
+#~ msgid "D&elete"
+#~ msgstr "Wiskj&e"
+
+#~ msgid "Show Master Pages"
+#~ msgstr "Haadsiden sjen litte"
+
+#~ msgid "Show Rulers"
+#~ msgstr "Linialen sjen litte"
+
+#~ msgid "Insert Page"
+#~ msgstr "Side ynfoegje"
+
+#~ msgid "Copy Page"
+#~ msgstr "Side kopiearje"
+
+#~ msgid "Copy the current page"
+#~ msgstr "Kopiearje de aktive side"
+
+#~ msgid "Delete Page"
+#~ msgstr "Side wiskje"
+
+#, fuzzy
+#~| msgid "Copy the current page"
+#~ msgid "Delete the current page"
+#~ msgstr "Kopiearje de aktive side"
+
+#~ msgid "Master Page..."
+#~ msgstr "Haadside..."
+
+#, fuzzy
+#~| msgid "Page Layout"
+#~ msgid "Page Layout..."
+#~ msgstr "Side-yndieling"
+
+#~ msgid "Variable"
+#~ msgstr "Fariabele"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Document..."
+#~ msgstr "Dokumint ymportearje"
+
+#, fuzzy
+#~| msgid "Snap Guides"
+#~ msgid "Configure..."
+#~ msgstr "Magnetyske fjilden"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Import Slideshow"
+#~ msgstr "Rigels ymportearje"
+
+#~ msgid "Import Document"
+#~ msgstr "Dokumint ymportearje"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not import\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Flater by it iepenjen fan\n"
+#~ "%1."
+
+#, fuzzy
+#~| msgid "Change parameter"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page layout"
+#~ msgstr "Parameter feroarje..."
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Set image ..."
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Background"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Page Background"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page Design"
+#~ msgstr "Sidefoarbyld"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Use background of master page"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Use background of master slide"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Change master page"
+#~ msgid "Display shapes of master page"
+#~ msgstr "Haadside feroarje"
+
+#, fuzzy
+#~| msgid "Change master page"
+#~ msgid "Display shapes of master slide"
+#~ msgstr "Haadside feroarje"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change slide background image"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change page background image"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Master Page"
+#~ msgid "Master Slide %1/%2"
+#~ msgstr "Haadside"
+
+#, fuzzy
+#~| msgid "&Size:"
+#~ msgid "Slide %1/%2"
+#~ msgstr "&Grutte:"
+
+#, fuzzy
+#~| msgid "Master Page"
+#~ msgid "Master Page %1/%2"
+#~ msgstr "Haadside"
+
+#, fuzzy
+#~| msgid "Page"
+#~ msgid "Page %1/%2"
+#~ msgstr "Side"
+
+#, fuzzy
+#~| msgid "File"
+#~ msgid "Field"
+#~ msgstr "Triem"
+
+#, fuzzy
+#~| msgid "TextLabel1:"
+#~ msgid "Label"
+#~ msgstr "TextLabel1:"
+
+#, fuzzy
+#~| msgid "%1 %"
+#~ msgctxt "<data-source>: <object>"
+#~ msgid "%1: %2"
+#~ msgstr "%1 %"
+
+#, fuzzy
+#~| msgid "Change"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List"
+#~ msgstr "Feroarje"
+
+#, fuzzy
+#~| msgid "Change Filetype"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Styles"
+#~ msgstr "Triemtype feroarje"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete"
+#~ msgstr "Wiskje"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Text"
+#~ msgstr "Tekst"
+
+#, fuzzy
+#~| msgid "Delete shape"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Column"
+#~ msgstr "Foarm wiskje"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete Row"
+#~ msgstr "Wiskje"
+
+#, fuzzy
+#~| msgid "Insert point"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Footnote"
+#~ msgstr "Punt ynfoegje"
+
+#, fuzzy
+#~| msgid "Insert Index"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Endnote"
+#~ msgstr "Yndeks ynfoegje"
+
+#, fuzzy
+#~| msgid "Insert point"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Right"
+#~ msgstr "Punt ynfoegje"
+
+#, fuzzy
+#~| msgid "Insert point"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Column Left"
+#~ msgstr "Punt ynfoegje"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Below"
+#~ msgstr "Rigelbrekking ynfoegje"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Row Above"
+#~ msgstr "Side ynfoegje"
+
+#, fuzzy
+#~| msgid "Change master page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change List Numbering"
+#~ msgstr "Haadside feroarje"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Formatting"
+#~ msgstr "Opmaak"
+
+#, fuzzy
+#~| msgid "Set Paragraph Style"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Direct Paragraph Formatting"
+#~ msgstr "Alineastyl ynstelle"
+
+#, fuzzy
+#~| msgid "Create Shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Rename Section"
+#~ msgstr "Foarmen oanmeitsje"
+
+#, fuzzy
+#~| msgid "Insert point"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Column Width"
+#~ msgstr "Punt ynfoegje"
+
+#, fuzzy
+#~| msgid "Shadow Offset:"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste As Text"
+#~ msgstr "Skaad ôfstân:"
+
+#, fuzzy
+#~| msgid "Date"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Paste"
+#~ msgstr "Datum"
+
+#, fuzzy
+#~| msgid "Text Reference"
+#~ msgid "Index Reference"
+#~ msgstr "Referinsjetekst"
+
+#~ msgid "Text Reference"
+#~ msgstr "Referinsjetekst"
+
+#, fuzzy
+#~| msgid "Select the index you want to reference"
+#~ msgid "Please create an index to reference first."
+#~ msgstr "Selektearje de yndeks, dy't jo ferwize wolle"
+
+#~ msgid "Select the index you want to reference"
+#~ msgstr "Selektearje de yndeks, dy't jo ferwize wolle"
+
+#~ msgid "Found 1 match"
+#~ msgid_plural "Found %1 matches"
+#~ msgstr[0] "1 gelikense fûn."
+#~ msgstr[1] "%1 gelikensen fûn."
+
+#~ msgid "Found no match"
+#~ msgstr "Gjin oerienkomst fûn"
+
+#~ msgid "1 replacement made"
+#~ msgid_plural "%1 replacements made"
+#~ msgstr[0] "1 kear ferfong"
+#~ msgstr[1] "%1 kear ferfongen"
+
+#~ msgid "Replace %1 with %2?"
+#~ msgstr "Ferfang %1 mei %2?"
+
+#, fuzzy
+#~| msgid "Group shapes"
+#~ msgctxt "new numbered section name"
+#~ msgid "New section %1"
+#~ msgstr "Foarmen groepearje"
+
+#~ msgctxt "Underline Style"
+#~ msgid "None"
+#~ msgstr "Neat"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Single"
+#~ msgstr "Ienkele"
+
+#~ msgctxt "Underline Style"
+#~ msgid "Double"
+#~ msgstr "Dûbel"
+
+#, fuzzy
+#~| msgid "Set Paragraph Style"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "New Paragraph"
+#~ msgstr "Alineastyl ynstelle"
+
+#, fuzzy
+#~| msgid "Add Bookmark"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Bookmark"
+#~ msgstr "Blêdwizer taheakje"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Annotation"
+#~ msgstr "Posysje"
+
+#, fuzzy
+#~| msgid "Insert Index"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Index"
+#~ msgstr "Yndeks ynfoegje"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Variable"
+#~ msgstr "Side ynfoegje"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Break"
+#~ msgstr "Rigelbrekking ynfoegje"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table"
+#~ msgstr "Side ynfoegje"
+
+#, fuzzy
+#~| msgid "Merge points"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Merge Cells"
+#~ msgstr "Gearfoegpunten"
+
+#, fuzzy
+#~| msgid "Vertical"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Split Cells"
+#~ msgstr "Fertikaal"
+
+#, fuzzy
+#~| msgid "Fit Page Width"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Adjust Table Width"
+#~ msgstr "Passend oan sidebreedte"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Side ynfoegje"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Modify Table Of Contents"
+#~ msgstr "Side ynfoegje"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Rigelbrekking ynfoegje"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Add Citation"
+#~ msgstr "Posysje"
+
+#, fuzzy
+#~| msgid "Bold"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Bold"
+#~ msgstr "Fet"
+
+#, fuzzy
+#~| msgid "Italic"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Italic"
+#~ msgstr "Skeanprinte"
+
+#, fuzzy
+#~| msgid "Underline"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Underline"
+#~ msgstr "&Understreke"
+
+#, fuzzy
+#~| msgid "Strike Out"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Strike Out"
+#~ msgstr "Trochstreekje"
+
+#, fuzzy
+#~| msgid "Change Connection"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change Alignment"
+#~ msgstr "Ferbining feroarje"
+
+#, fuzzy
+#~| msgid "Set Vertical Alignment"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Vertical Alignment"
+#~ msgstr "Fertikale rjochting ynstelle"
+
+#, fuzzy
+#~| msgid "Decrease Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease Indent"
+#~ msgstr "Ynspringing fergrutsje"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase Indent"
+#~ msgstr "Ynspringing fergrutsje"
+
+#, fuzzy
+#~| msgid "Decrease font size"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Decrease font size"
+#~ msgstr "Tekengrutte ferlytsje"
+
+#, fuzzy
+#~| msgid "Increase font size"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Increase font size"
+#~ msgstr "Tekengrutte fergrutsje"
+
+#, fuzzy
+#~| msgid "Set point type"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font"
+#~ msgstr "Punttype ynstelle"
+
+#, fuzzy
+#~| msgid "Set point type"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Font Size"
+#~ msgstr "Punttype ynstelle"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Background Color"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Set Character Style"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Character Style"
+#~ msgstr "Tekensetstyl ynstelle"
+
+#, fuzzy
+#~| msgid "Set Paragraph Style"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set Paragraph Style"
+#~ msgstr "Alineastyl ynstelle"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Format"
+#~ msgstr "Opmaak"
+
+#~ msgid "Default"
+#~ msgstr "Standert"
+
+#, fuzzy
+#~| msgid "Red"
+#~ msgctxt "Default text for redo action"
+#~ msgid "Redo"
+#~ msgstr "Read"
+
+#, fuzzy
+#~| msgid "Red"
+#~ msgid "Redo %1"
+#~ msgstr "Read"
+
+#, fuzzy
+#~| msgid "Red"
+#~ msgid "Redo"
+#~ msgstr "Read"
+
+#~ msgid "&File"
+#~ msgstr "&Triem"
+
+#~ msgid "&Settings"
+#~ msgstr "&Ynstellings"
+
+#~ msgid "File"
+#~ msgstr "Triem"
+
+#, fuzzy
+#~| msgid "Copy the current page"
+#~ msgid "Delete the author profile"
+#~ msgstr "Kopiearje de aktive side"
+
+#, fuzzy
+#~| msgid "name of the output file"
+#~ msgid "Name of Profile"
+#~ msgstr "namme fan de útfiertriem"
+
+#~ msgid "Name:"
+#~ msgstr "Namme:"
+
+#~ msgid "Initials:"
+#~ msgstr "Inisjalen:"
+
+#~ msgid "Title:"
+#~ msgstr "Titel:"
+
+#~ msgid "Position:"
+#~ msgstr "Posysje:"
+
+#~ msgid "Company:"
+#~ msgstr "Bedriuw:"
+
+#~ msgid "Email:"
+#~ msgstr "E-post:"
+
+#~ msgid "Telephone (home):"
+#~ msgstr "Telefoan thús:"
+
+#~ msgid "Telephone (work):"
+#~ msgstr "Telefoan wurk:"
+
+#~ msgid "Fax:"
+#~ msgstr "Faks:"
+
+#~ msgid "Street:"
+#~ msgstr "Strjitte:"
+
+#~ msgid "City:"
+#~ msgstr "Wenplak:"
+
+#~ msgid "Country:"
+#~ msgstr "Lân:"
+
+#, fuzzy
+#~| msgid "Autosaving..."
+#~ msgid "Autosave interval:"
+#~ msgstr "Dwaande mei automatysk bewarjen..."
+
+#, fuzzy
+#~| msgid "Create shape"
+#~ msgid "Create backup file:"
+#~ msgstr "Foarm oanmeitsje"
+
+#, fuzzy
+#~| msgid "Show &Grid"
+#~ msgid "Show grid:"
+#~ msgstr "&Roaster sjen litte"
+
+#, fuzzy
+#~| msgid "Snap to Grid"
+#~ msgid "Snap to grid:"
+#~ msgstr "Magnetysk ruster"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgid "Grid color:"
+#~ msgstr "&Eftergrûnkleur..."
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgid "Spacing"
+#~ msgstr "Spaasje"
+
+#, fuzzy
+#~| msgid "&Horizontal"
+#~ msgctxt "Horizontal grid spacing"
+#~ msgid "&Horizontal:"
+#~ msgstr "&Horizontaal"
+
+#, fuzzy
+#~| msgid "&Vertical"
+#~ msgctxt "Vertical grid spacing"
+#~ msgid "&Vertical:"
+#~ msgstr "&Fertikaal"
+
+#, fuzzy
+#~| msgid "Unit:"
+#~ msgid "Units:"
+#~ msgstr "Ienheid:"
+
+#, fuzzy
+#~| msgid "Shadow Offset:"
+#~ msgid "Paste offset:"
+#~ msgstr "Skaad ôfstân:"
+
+#~ msgid "Only print and exit"
+#~ msgstr "Allinnich útprintsje en ôfslute"
+
+#~ msgid "Open a new document with a template"
+#~ msgstr "Meitsje nij dokumint fanút in sjabloan."
+
+#~ msgid "Override display DPI"
+#~ msgstr "DPI fan byldskerm oerskriuwe"
+
+#, fuzzy
+#~| msgid "Only print and exit"
+#~ msgid "Only export to PDF and exit"
+#~ msgstr "Allinnich útprintsje en ôfslute"
+
+#, fuzzy
+#~| msgid "Creation error"
+#~ msgid "%1: Critical Error"
+#~ msgstr "Oanmaakflater"
+
+#, fuzzy
+#~| msgid "No template found for: %1 "
+#~ msgid "No template found for: %1"
+#~ msgstr "Gjin sjabloan fûn foar: %1"
+
+#~ msgid "Too many templates found for: %1"
+#~ msgstr "Tefolle sjabloanen fûn foar: %1"
+
+#~ msgid "Template %1 failed to load."
+#~ msgstr "Sjabloan %1 koe net laden wurde."
+
+#~ msgid "Always use this template at application start up"
+#~ msgstr "Altyd dit sjabloan brûke by opstarten"
+
+#~ msgid "Always use this template"
+#~ msgstr "Altyd dit sjabloan brûke"
+
+#~ msgid "Making backup..."
+#~ msgstr "Reservekopy wurdt oanmakke..."
+
+#~ msgid "Saving..."
+#~ msgstr "Dwaande mei bewarjen..."
+
+#~ msgid ""
+#~ "Could not save\n"
+#~ "%1"
+#~ msgstr ""
+#~ "%1\n"
+#~ "koe net opslein wurde."
+
+#~ msgid ""
+#~ "Could not save %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "%1 koe net opslein wurde.\n"
+#~ "Reden: %2"
+
+#~ msgid "Document <i>%1</i> saved"
+#~ msgstr "Dokumint <i>%1</i> bewarre"
+
+#~ msgid ""
+#~ "The password of this encrypted document is not known. Autosave aborted! "
+#~ "Please save your work manually."
+#~ msgstr ""
+#~ "It wachtwurd foar dit fersifere dokumint is net bekend. Auto-bewarjen is "
+#~ "ôfbrútsen! Jo kinne jo wurk no sels bewarje."
+
+#~ msgid "Autosaving..."
+#~ msgstr "Dwaande mei automatysk bewarjen..."
+
+#~ msgid "Error during autosave! Partition full?"
+#~ msgstr "Flater by it automatysk bewarjen. Is de skiif fol?"
+
+#~ msgid "Could not create the file for saving"
+#~ msgstr "De triem koe net opslein wurde"
+
+#~ msgid "Not able to write '%1'. Partition full?"
+#~ msgstr "'%1' koe net opslein wurde. Is de skiif fol?"
+
+#, fuzzy
+#~| msgid "Not able to write '%1'. Partition full?"
+#~ msgid "Not able to write RDF metadata. Partition full?"
+#~ msgstr "'%1' koe net opslein wurde. Is de skiif fol?"
+
+#~ msgid "Error while trying to write '%1'. Partition full?"
+#~ msgstr "Flater by it bewarjen fan '%1'. Is de skiif fol?"
+
+#~ msgid ""
+#~ "Malformed URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Ferkeard foarme URL-adres:\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "An autosaved file exists for this document.\n"
+#~ "Do you want to open it instead?"
+#~ msgstr ""
+#~ "Der is noch in automatysk opsleine triem foar dit dokumint oanwêzich.\n"
+#~ "Wolle jo dit faaks iepenje?"
+
+#~ msgid "The file %1 does not exist."
+#~ msgstr "De triem %1 bestiet net."
+
+#, fuzzy
+#~| msgid "Open Document"
+#~ msgid "Opening Document"
+#~ msgstr "Dokumint iepenje"
+
+#, fuzzy
+#~| msgid "Could not create the file for saving"
+#~ msgid "Could not create the filter plugin"
+#~ msgstr "De triem koe net opslein wurde"
+
+#~ msgid "File not found"
+#~ msgstr "Triem net fûn"
+
+#~ msgid "Cannot create storage"
+#~ msgstr "Kin opslach net oanmeitsje"
+
+#~ msgid "Bad MIME type"
+#~ msgstr "Ferkeard MIME-type"
+
+#~ msgid "Format not recognized"
+#~ msgstr "Formaat net werkend"
+
+#~ msgid "Not implemented"
+#~ msgstr "Net ymplemintearre"
+
+#~ msgid "Parsing error"
+#~ msgstr "Parseflater"
+
+#~ msgid "Document is password protected"
+#~ msgstr "Dokumint is befeilige mei in wachtwurd"
+
+#~ msgid "Internal error"
+#~ msgstr "Ynterne flater"
+
+#~ msgid "Out of memory"
+#~ msgstr "Gjin ûnthâld beskikber"
+
+#~ msgid "Unknown error"
+#~ msgstr "Unbekende flater"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open\n"
+#~| "%2.\n"
+#~| "Reason: %1"
+#~ msgid ""
+#~ "Could not open %2.\n"
+#~ "Reason: %1.\n"
+#~ "%3"
+#~ msgstr ""
+#~ "Koe %2 net iepenje.\n"
+#~ "Reden: %1"
+
+#~ msgid "Document <i>%1</i> loaded"
+#~ msgstr "Dokumint <i>%1</i> laden"
+
+#~ msgid "Could not find %1"
+#~ msgstr "%1 is net fûn"
+
+#~ msgid ""
+#~ "Parsing error in %1 at line %2, column %3\n"
+#~ "Error message: %4"
+#~ msgstr ""
+#~ "Untleedflater yn %1, op regel %2, kolom %3\n"
+#~ "Flatermelding: %4"
+
+#~ msgid "%1 is not a file."
+#~ msgstr "%1 is net in triem."
+
+#~ msgid "Could not open the file for reading (check read permissions)."
+#~ msgstr "De triem koe net iepene wurde (kontrolearje de tagongsrjochten)."
+
+#~ msgid "Could not read the beginning of the file."
+#~ msgstr "Begjin fan de triem koe net lêzen wurde."
+
+#~ msgid ""
+#~ "parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Untleedflater yn it haaddokumint op regel %1, kolom %2\n"
+#~ "Flatermelding: %3"
+
+#, fuzzy
+#~| msgid "Not a valid KOffice file: %1"
+#~ msgid "Not a valid Calligra file: %1"
+#~ msgstr "Gjin jildich KOffice-triem: %1"
+
+#~ msgid "Invalid document: no file 'maindoc.xml'."
+#~ msgstr "Unjildich dokumint: gjin triem 'maindoc.xml' oanwêzich."
+
+#, fuzzy
+#~| msgid ""
+#~| "This document contains several versions. Go to File->Versions to open an "
+#~| "old version."
+#~ msgid ""
+#~ "Document <i>%1</i> contains several versions. Go to File->Versions to "
+#~ "open an old version."
+#~ msgstr ""
+#~ "Dit dokumint befettet meardere ferzjes. Gean nei triem->Ferzjes om in "
+#~ "âlde te iepenjen."
+
+#~ msgid "Untitled"
+#~ msgstr "Nammeleas"
+
+#~ msgid ""
+#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~ "it?</p>"
+#~ msgstr ""
+#~ "<p>It dokumint <b>'%1'</b> is wizige.</p><p>Wolle jo it bewarje?</p>"
+
+#~ msgid "Internal error: saveXML not implemented"
+#~ msgstr "Ynterne flater: saveXML is net ynprogrammearre."
+
+#~ msgid ""
+#~ "Could not open\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Flater by it iepenjen fan\n"
+#~ "%1."
+
+#~ msgid ""
+#~ "Could not open %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Koe %1 net iepenje.\n"
+#~ "Reden: %2"
+
+#~ msgid "a word processing"
+#~ msgstr "in tekstferwurkings-"
+
+#~ msgid "a spreadsheet"
+#~ msgstr "in spreadsheet"
+
+#~ msgid "a presentation"
+#~ msgstr "in presintaasje"
+
+#~ msgid "a chart"
+#~ msgstr "in grafyk"
+
+#~ msgid "a drawing"
+#~ msgstr "in tekening"
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
+#~| "it?</p>"
+#~ msgid ""
+#~ "The document \"%1\" has been modified.\n"
+#~ "Do you want to save your changes or discard them?"
+#~ msgstr ""
+#~ "<p>It dokumint <b>'%1'</b> is wizige.</p><p>Wolle jo it bewarje?</p>"
+
+#, fuzzy
+#~| msgid "Custom Document"
+#~ msgid "Close Document"
+#~ msgstr "Oanpast dokumint"
+
+#~ msgid "%1 %"
+#~ msgstr "%1 %"
+
+#~ msgid "No"
+#~ msgstr "Nee"
+
+#~ msgid "Yes"
+#~ msgstr "Jawas"
+
+#~ msgid "Could not export file."
+#~ msgstr "Triem koe net eksportearre wurde."
+
+#~ msgid "Missing Export Filter"
+#~ msgstr "Eksportfilter ûntbrekt"
+
+#~ msgid ""
+#~ "Could not import file of type\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Flater by ymportearjen fan triem fan it type\n"
+#~ "%1."
+
+#~ msgid "Missing Import Filter"
+#~ msgstr "Ymportfilter ûntbrekt"
+
+#~ msgid "Choose Filter"
+#~ msgstr "Filter kieze"
+
+#, fuzzy
+#~| msgid "Mid:"
+#~ msgctxt "Label for the Find text input box"
+#~ msgid "Find:"
+#~ msgstr "Midden:"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgctxt "Next search result"
+#~ msgid "Next"
+#~ msgstr "Tekst"
+
+#, fuzzy
+#~| msgid "Preview:"
+#~ msgctxt "Previous search result"
+#~ msgid "Previous"
+#~ msgstr "Foarbyld:"
+
+#, fuzzy
+#~| msgid "%1 Options"
+#~ msgctxt "Search options"
+#~ msgid "Options"
+#~ msgstr "%1-opsjes"
+
+#, fuzzy
+#~| msgid "Replace"
+#~ msgctxt "Label for the Replace text input box"
+#~ msgid "Replace:"
+#~ msgstr "Ferfange"
+
+#, fuzzy
+#~| msgid "Replace"
+#~ msgctxt "Replace the current match"
+#~ msgid "Replace"
+#~ msgstr "Ferfange"
+
+#, fuzzy
+#~| msgid "Replace"
+#~ msgctxt "Replace all found matches"
+#~ msgid "Replace All"
+#~ msgstr "Ferfange"
+
+#, fuzzy
+#~| msgid "No template found for: %1 "
+#~ msgctxt "Total number of matches"
+#~ msgid "1 match found"
+#~ msgid_plural "%1 matches found"
+#~ msgstr[0] "Gjin sjabloan fûn foar: %1"
+#~ msgstr[1] "Gjin sjabloan fûn foar: %1"
+
+#, fuzzy
+#~| msgid "No template found for: %1 "
+#~ msgid "No matches found"
+#~ msgstr "Gjin sjabloan fûn foar: %1"
+
+#~ msgid "%1 unsaved document (%2)"
+#~ msgstr "%1 net bewarre dokumint (%2)"
+
+#~ msgid "Export as PDF..."
+#~ msgstr "Triem eksportearje as PDF..."
+
+#~ msgid "Reload"
+#~ msgstr "Op 'e nij lade"
+
+#~ msgid "Versions..."
+#~ msgstr "Ferzjes..."
+
+#~ msgid "E&xport..."
+#~ msgstr "E&ksportearje..."
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "En&crypt Document"
+#~ msgstr "Dokumint ymportearje"
+
+#~ msgid "&New View"
+#~ msgstr "&Nije werjefte"
+
+#~ msgid "Document Information"
+#~ msgstr "Dokumint-ynformaasje"
+
+#~ msgid "Full Screen Mode"
+#~ msgstr "Folslein skerm"
+
+#, fuzzy
+#~| msgid "Show Rulers"
+#~ msgid "Show Dockers"
+#~ msgstr "Linialen sjen litte"
+
+#, fuzzy
+#~| msgid "Show Rulers"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Show Docker Titlebars"
+#~ msgstr "Linialen sjen litte"
+
+#~ msgid "(write protected)"
+#~ msgstr "(skriuwbefeilige)"
+
+#~ msgid "Save as %1"
+#~ msgstr "Bewarje as %1"
+
+#~ msgid "%1 (unknown file type)"
+#~ msgstr "%1 (ûnbekend triemtype)"
+
+#~ msgid ""
+#~ "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
+#~ "want to save in this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Bewarje as in %1 kin liede ta ferlies fan de opmaak. <p>Wolle jo "
+#~ "werklik yn dit formaat bewarje?</qt>"
+
+#~ msgid "Confirm Save"
+#~ msgstr "Bewarjen befêstigje"
+
+#~ msgid ""
+#~ "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you "
+#~ "still want to export to this format?</qt>"
+#~ msgstr ""
+#~ "<qt>Eksportearje nei in %1 kin liede ta ferlies fan de opmaak. <p>Wolle "
+#~ "jo werklik nei dit formaat eksportearje?</qt>"
+
+#~ msgid "Confirm Export"
+#~ msgstr "Eksport befêstigje"
+
+#, fuzzy
+#~| msgid "Untitled"
+#~ msgid "untitled"
+#~ msgstr "Nammeleas"
+
+#~ msgid "Open Document"
+#~ msgstr "Dokumint iepenje"
+
+#, fuzzy
+#~| msgid "Export as PDF..."
+#~ msgid "Export as PDF"
+#~ msgstr "Triem eksportearje as PDF..."
+
+#~ msgid "Document - %1"
+#~ msgstr "Dokumint - %1"
+
+#~ msgid ""
+#~ "You will lose all changes made since your last save\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "Al jo wizigingen sille ferlern gean!\n"
+#~ "Wolle jo trochgean?"
+
+#~ msgid "Warning"
+#~ msgstr "Warskôging"
+
+#~ msgid "Show %1 Toolbar"
+#~ msgstr "Wurkbalke %1 sjen litte"
+
+#~ msgid "Hide %1 Toolbar"
+#~ msgstr "Wurkbalke %1 ferbergje"
+
+#, fuzzy
+#~| msgid "Open This Document"
+#~ msgid "Open Existing Document"
+#~ msgstr "Dit dokumint iepenje"
+
+#~ msgid "Recent Documents"
+#~ msgstr "Koartlyn brûkte dokuminten"
+
+#~ msgid "Custom Document"
+#~ msgstr "Oanpast dokumint"
+
+#~ msgid "Stop"
+#~ msgstr "Stopje"
+
+#, fuzzy
+#~| msgid "Printing done"
+#~ msgid "Printing"
+#~ msgstr "Printsjen is klear"
+
+#~ msgid "Printing done"
+#~ msgstr "Printsjen is klear"
+
+#~ msgid "Close"
+#~ msgstr "Slute"
+
+#~ msgid "Stopped"
+#~ msgstr "stoppe"
+
+#~ msgid "Open This Document"
+#~ msgstr "Dit dokumint iepenje"
+
+#~ msgctxt "File modification date and time. %1 is date time"
+#~ msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Wizige:</b></td><td>%1</td></tr>"
+
+#~ msgctxt "File access date and time. %1 is date time"
+#~ msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><b>Iepene:</b></td><td>%1</td></tr>"
+
+#, fuzzy
+#~| msgid "Show &Grid"
+#~ msgid "Show Guides"
+#~ msgstr "&Roaster sjen litte"
+
+#~ msgid "Create Template"
+#~ msgstr "Sjabloan oanmeitsje"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgctxt "Template name"
+#~ msgid "Name:"
+#~ msgstr "Namme:"
+
+#~ msgid "Group:"
+#~ msgstr "Groep:"
+
+#~ msgid "&Add Group..."
+#~ msgstr "&Groep tafoegje..."
+
+#~ msgid "&Remove"
+#~ msgstr "&Fuortsmite"
+
+#~ msgid "Picture"
+#~ msgstr "Ofbylding"
+
+#, fuzzy
+#~| msgid "Preview:"
+#~ msgid "&Preview"
+#~ msgstr "Foarbyld:"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Custom:"
+#~ msgstr "Oanpast"
+
+#~ msgid "&Select..."
+#~ msgstr "&Selektearje..."
+
+#~ msgid "Use the new template as default"
+#~ msgstr "It nije sjabloan as standert brûke"
+
+#~ msgid "Use the new template every time %1 starts"
+#~ msgstr "It nije sjabloan hieltyd brûke as %1 opstart."
+
+#~ msgid "Do you really want to overwrite the existing '%1' template?"
+#~ msgstr "Wolle jo werklik sjabloan '%1' oerskriuwe?"
+
+#~ msgid "Add Group"
+#~ msgstr "Groep tafoegje"
+
+#~ msgid "Enter group name:"
+#~ msgstr "Groepnamme ynfiere:"
+
+#~ msgid "This name is already used."
+#~ msgstr "Dizze namme wurdt al brûkt."
+
+#~ msgid "Do you really want to remove that group?"
+#~ msgstr "Wolle jo werklik dizze groep wiskje?"
+
+#~ msgid "Remove Group"
+#~ msgstr "Groep wiskje"
+
+#~ msgid "Do you really want to remove that template?"
+#~ msgstr "Wolle jo werklik dit sjabloan wiskje?"
+
+#~ msgid "Remove Template"
+#~ msgstr "Sjabloan wiskje"
+
+#~ msgid "&Delete"
+#~ msgstr "&Wiskje"
+
+#~ msgid "Could not load picture."
+#~ msgstr "Koe de ôfbylding net lade."
+
+#~ msgid "No picture available."
+#~ msgstr "Gjin ôfbylding beskikber."
+
+#~ msgid "Use This Template"
+#~ msgstr "Dit sjabloan brûke"
+
+#~ msgid "Version"
+#~ msgstr "Ferzje"
+
+#~ msgid "Date & Time"
+#~ msgstr "Datum & tiid"
+
+#~ msgid "Saved By"
+#~ msgstr "Opslein troch"
+
+#~ msgid "Comment"
+#~ msgstr "Taljochting"
+
+#~ msgid "&Add"
+#~ msgstr "&Taheakje"
+
+#~ msgid "&Modify"
+#~ msgstr "&Wizigje"
+
+#~ msgid "&Open"
+#~ msgstr "&Iepenje"
+
+#~ msgid "A new version could not be added"
+#~ msgstr "In nije ferzje koe net taheakke wurde"
+
+#~ msgid "Date: %1"
+#~ msgstr "Datum: %1"
+
+#, fuzzy
+#~| msgid "Active tool: %1"
+#~ msgid "Active Author Profile"
+#~ msgstr "Aktive ark: %1"
+
+#~ msgid "Unknown"
+#~ msgstr "Unbekend"
+
+#~ msgid ""
+#~ "QCA has currently no support for SHA1 or PBKDF2 using SHA1. The document "
+#~ "can not be opened."
+#~ msgstr ""
+#~ "QCA hat op it stuit gjin stipe foar SHA1 of PBKDF2 brûkend SHA1. It "
+#~ "dokumint kin net iepene wurde."
+
+#~ msgid "Please enter the password to open this file."
+#~ msgstr "Fier it wachtwurd yn op dizze triem te iepenjen."
+
+#~ msgid "Please enter the password to encrypt the document with."
+#~ msgstr "Fier it wachtwurd yn op dit dockumint te fersiferjen mei."
+
+#~ msgid "Do you want to save the password?"
+#~ msgstr "Wolle jo it wachtwurd bewarje?"
+
+#~ msgid "No store backend"
+#~ msgstr "Gjin opslach backend"
+
+#~ msgid ""
+#~ "Parsing error in the main document at line %1, column %2\n"
+#~ "Error message: %3"
+#~ msgstr ""
+#~ "Untleedflater yn it haaddokumint op regel %1, kolom %2\n"
+#~ "Flatermelding: %3"
+
+#, fuzzy
+#~| msgid "Screen"
+#~ msgctxt "Page size"
+#~ msgid "Screen"
+#~ msgstr "Skerm"
+
+#~ msgid "The directory mode is not supported for remote locations."
+#~ msgstr "De mapmodus wurdt net stipe foar eksterne lokaasjes."
+
+#~ msgid "Clear"
+#~ msgstr "Omskjinje"
+
+#~ msgid "Subtract"
+#~ msgstr "Oflûke"
+
+#~ msgid "Alpha mask"
+#~ msgstr "Alfa masker"
+
+#~ msgid "Alpha"
+#~ msgstr "Alfa"
+
+#~ msgid "Lightness"
+#~ msgstr "Ljochtens"
+
+#~ msgid "a*"
+#~ msgstr "a*"
+
+#~ msgid "b*"
+#~ msgstr "b*"
+
+#~ msgid "Blue"
+#~ msgstr "Blau"
+
+#~ msgid "Green"
+#~ msgstr "Grien"
+
+#~ msgid "Red"
+#~ msgstr "Read"
+
+#, fuzzy
+#~| msgid "Alpha mask"
+#~ msgid "Alpha darken"
+#~ msgstr "Alfa masker"
+
+#~ msgid "Erase"
+#~ msgstr "Wiskje"
+
+#~ msgid "Normal"
+#~ msgstr "Gewoan"
+
+#, fuzzy
+#~| msgid "&Height:"
+#~ msgid "Hard Mix"
+#~ msgstr "&Hichte:"
+
+#, fuzzy
+#~| msgid "Variable"
+#~ msgid "Parallel"
+#~ msgstr "Fariabele"
+
+#, fuzzy
+#~| msgid "Color Chooser"
+#~ msgid "Color Dodge"
+#~ msgstr "Kleuren kiezer"
+
+#, fuzzy
+#~| msgid "Line Border"
+#~ msgid "Linear Dodge"
+#~ msgstr "râne line"
+
+#~ msgid "Lighten"
+#~ msgstr "Ljochter meitsje"
+
+#, fuzzy
+#~| msgid "&Height:"
+#~ msgid "Hard Light"
+#~ msgstr "&Hichte:"
+
+#, fuzzy
+#~| msgid "Straight"
+#~ msgid "Soft Light (SVG)"
+#~ msgstr "Rjocht"
+
+#, fuzzy
+#~| msgid "Straight"
+#~ msgid "Soft Light (Photoshop)"
+#~ msgstr "Rjocht"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Gamma Light"
+#~ msgstr "Ljochter meitsje"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Vivid Light"
+#~ msgstr "Ljochter meitsje"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Pin Light"
+#~ msgstr "Ljochter meitsje"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Linear Light"
+#~ msgstr "Ljochter meitsje"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color Burn"
+#~ msgstr "Kleur"
+
+#, fuzzy
+#~| msgid "Line Border"
+#~ msgid "Linear Burn"
+#~ msgstr "râne line"
+
+#~ msgid "Darken"
+#~ msgstr "Donkerder meitsje"
+
+#, fuzzy
+#~| msgid "Position"
+#~ msgid "Addition"
+#~ msgstr "Posysje"
+
+#, fuzzy
+#~| msgid "Subtract"
+#~ msgid "Inversed-Subtract"
+#~ msgstr "Oflûke"
+
+#, fuzzy
+#~| msgid "Text Reference"
+#~ msgid "Difference"
+#~ msgstr "Referinsjetekst"
+
+#, fuzzy
+#~| msgid "Subtract"
+#~ msgid "Additive-Subtractive"
+#~ msgstr "Oflûke"
+
+#, fuzzy
+#~| msgid "Copy Page"
+#~ msgid "Copy Red"
+#~ msgstr "Side kopiearje"
+
+#, fuzzy
+#~| msgid "Green"
+#~ msgid "Copy Green"
+#~ msgstr "Grien"
+
+#, fuzzy
+#~| msgid "Copy Page"
+#~ msgid "Copy Blue"
+#~ msgstr "Side kopiearje"
+
+#~ msgid "Color"
+#~ msgstr "Kleur"
+
+#~ msgid "Hue"
+#~ msgstr "Tint"
+
+#~ msgid "Saturation"
+#~ msgstr "Sêding"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation"
+#~ msgstr "Sêding"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation"
+#~ msgstr "Sêding"
+
+#, fuzzy
+#~| msgid "Increase font size"
+#~ msgid "Increase Luminosity"
+#~ msgstr "Tekengrutte fergrutsje"
+
+#, fuzzy
+#~| msgid "Decrease font size"
+#~ msgid "Decrease Luminosity"
+#~ msgstr "Tekengrutte ferlytsje"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Darker Color"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Lighter Color"
+#~ msgstr "Kleur"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color HSI"
+#~ msgstr "Kleur"
+
+#, fuzzy
+#~| msgid "Hue"
+#~ msgid "Hue HSI"
+#~ msgstr "Tint"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Saturation HSI"
+#~ msgstr "Sêding"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation HSI"
+#~ msgstr "Sêding"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation HSI"
+#~ msgstr "Sêding"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgid "Increase Intensity"
+#~ msgstr "Ynspringing fergrutsje"
+
+#, fuzzy
+#~| msgid "Decrease Indent"
+#~ msgid "Decrease Intensity"
+#~ msgstr "Ynspringing fergrutsje"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color HSL"
+#~ msgstr "Kleur"
+
+#, fuzzy
+#~| msgid "Hue"
+#~ msgid "Hue HSL"
+#~ msgstr "Tint"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Saturation HSL"
+#~ msgstr "Sêding"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation HSL"
+#~ msgstr "Sêding"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation HSL"
+#~ msgstr "Sêding"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgid "Increase Lightness"
+#~ msgstr "Ynspringing fergrutsje"
+
+#, fuzzy
+#~| msgid "Decrease Indent"
+#~ msgid "Decrease Lightness"
+#~ msgstr "Ynspringing fergrutsje"
+
+#, fuzzy
+#~| msgid "Color"
+#~ msgid "Color HSV"
+#~ msgstr "Kleur"
+
+#, fuzzy
+#~| msgid "Hue"
+#~ msgid "Hue HSV"
+#~ msgstr "Tint"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Saturation HSV"
+#~ msgstr "Sêding"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Increase Saturation HSV"
+#~ msgstr "Sêding"
+
+#, fuzzy
+#~| msgid "Saturation"
+#~ msgid "Decrease Saturation HSV"
+#~ msgstr "Sêding"
+
+#, fuzzy
+#~| msgid "Increase Indent"
+#~ msgid "Increase Value"
+#~ msgstr "Ynspringing fergrutsje"
+
+#, fuzzy
+#~| msgid "Decrease Indent"
+#~ msgid "Decrease Value"
+#~ msgstr "Ynspringing fergrutsje"
+
+#~ msgid "Generic RGB Histogram"
+#~ msgstr "Algemiene RGB histogram"
+
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "G"
+#~ msgstr "G"
+
+#~ msgid "L*"
+#~ msgstr "L*"
+
+#, fuzzy
+#~| msgid "Generic RGB Histogram"
+#~ msgid "Generic L*a*b* Histogram"
+#~ msgstr "Algemiene RGB histogram"
+
+#~ msgid "XYZ"
+#~ msgstr "XYZ"
+
+#~ msgid "Grayscale"
+#~ msgstr "Griiswearden"
+
+#~ msgid "Grayscale (without transparency)"
+#~ msgstr "Griiswearden (sûnder trochsichtigens)"
+
+#~ msgid "YCbCr"
+#~ msgstr "YCbCr"
+
+#~ msgid "8 Bits"
+#~ msgstr "8 Bits"
+
+#~ msgid "16 Bits"
+#~ msgstr "16 Bits"
+
+#, fuzzy
+#~| msgid "16 Bits Float (HDR)"
+#~ msgid "16 Bits Float"
+#~ msgstr "16 Bits Float (HDR)"
+
+#, fuzzy
+#~| msgid "32 Bits Float (HDR)"
+#~ msgid "32 Bits Float"
+#~ msgstr "32 Bits Float (HDR)"
+
+#, fuzzy
+#~| msgid "16 Bits Float (HDR)"
+#~ msgid "64 Bits Float"
+#~ msgstr "16 Bits Float (HDR)"
+
+#, fuzzy
+#~| msgid "Subtract"
+#~ msgid "Inverse Subtract"
+#~ msgstr "Oflûke"
+
+#, fuzzy
+#~| msgid "Subtract"
+#~ msgid "Additive Subtractive"
+#~ msgstr "Oflûke"
+
+#, fuzzy
+#~| msgid "Alpha mask"
+#~ msgid "Alpha Darken"
+#~ msgstr "Alfa masker"
+
+#, fuzzy
+#~| msgid "Select the index you want to reference"
+#~ msgid "Select the object you want to reference"
+#~ msgstr "Selektearje de yndeks, dy't jo ferwize wolle"
+
+#, fuzzy
+#~| msgid "Text Reference"
+#~ msgid "Reference"
+#~ msgstr "Referinsjetekst"
+
+#, fuzzy
+#~| msgid "Red"
+#~ msgid "Rdf"
+#~ msgstr "Read"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgid "Triples"
+#~ msgstr "Titel:"
+
+#, fuzzy
+#~| msgid "Company:"
+#~ msgid "copy"
+#~ msgstr "Bedriuw:"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgid "delete"
+#~ msgstr "Wiskje"
+
+#, fuzzy
+#~| msgid "Replace"
+#~ msgid "Namespaces"
+#~ msgstr "Ferfange"
+
+#, fuzzy
+#~| msgid "Replace"
+#~ msgid "Namespace"
+#~ msgstr "Ferfange"
+
+#, fuzzy
+#~| msgid "Styles"
+#~ msgid "Stylesheets"
+#~ msgstr "Stylen"
+
+#, fuzzy
+#~| msgid "Insert"
+#~ msgid "User"
+#~ msgstr "ynfoegje"
+
+#, fuzzy
+#~| msgid "Styles"
+#~ msgid "Stylesheet Definition"
+#~ msgstr "Stylen"
+
+#, fuzzy
+#~| msgid "Decrypt"
+#~ msgid "Description"
+#~ msgstr "Untsiferje"
+
+#, fuzzy
+#~| msgid "Styles"
+#~ msgid "Stylesheet Name"
+#~ msgstr "Stylen"
+
+#, fuzzy
+#~| msgid "Black"
+#~ msgid "Blank"
+#~ msgstr "Swart"
+
+#, fuzzy
+#~| msgid "&Size:"
+#~ msgid "Valid"
+#~ msgstr "&Grutte:"
+
+#, fuzzy
+#~| msgid "Subject:"
+#~ msgid "Subject"
+#~ msgstr "Underwerp:"
+
+#, fuzzy
+#~| msgid "Picture"
+#~ msgid "Predicate"
+#~ msgstr "Ofbylding"
+
+#, fuzzy
+#~| msgid "Type"
+#~ msgid "Obj Type"
+#~ msgstr "Type"
+
+#, fuzzy
+#~| msgid "Data"
+#~ msgid "DataType"
+#~ msgstr "Gegevens"
+
+#, fuzzy
+#~| msgid "Stopped"
+#~ msgid "Stored In"
+#~ msgstr "stoppe"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "Text list-style"
+#~ msgid "None"
+#~ msgstr "Gjin"
+
+#, fuzzy
+#~| msgid "Right indent"
+#~ msgid "Rightwards Arrow Bullet"
+#~ msgstr "Rjochter ynsprong"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgid "Tamil"
+#~ msgstr "Titel:"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Tibetan"
+#~ msgstr "Tiid:"
+
+#~ msgid "Opacity"
+#~ msgstr "&Dekking"
+
+#~ msgid "Recent:"
+#~ msgstr "Koartlyn:"
+
+#~ msgid "Add / Remove Colors..."
+#~ msgstr "Kleuren taheakje / fuortsmite..."
+
+#~ msgid "Import Data"
+#~ msgstr "Gegevens ymportearje"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Recommended ( %1 )"
+#~ msgstr "Oanrekomandearre ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Locale ( %1 )"
+#~ msgstr "Lokaal ( %1 )"
+
+#~ msgctxt "Descriptive encoding name"
+#~ msgid "Other ( %1 )"
+#~ msgstr "Oare ( %1 )"
+
+#~ msgid "Generic"
+#~ msgstr "Algemien"
+
+#~ msgid "Currency"
+#~ msgstr "Faluta"
+
+#~ msgid "None"
+#~ msgstr "Gjin"
+
+#~ msgid "Cannot find encoding: %1"
+#~ msgstr "Kin kodearring %1 net fine"
+
+#~ msgid "Data"
+#~ msgstr "Gegevens"
+
+#~ msgid "E&ncoding:"
+#~ msgstr "Kod&earring:"
+
+#~ msgid "Format"
+#~ msgstr "Opmaak"
+
+#~ msgid "Delimiter"
+#~ msgstr "Begrinzer"
+
+#~ msgid "Semicolon"
+#~ msgstr "Puntkomma"
+
+#~ msgid "Other"
+#~ msgstr "Oaren"
+
+#~ msgid "Tabulator"
+#~ msgstr "&Tabulators"
+
+#~ msgid "Space"
+#~ msgstr "Spaasje"
+
+#~ msgid "Text&quote:"
+#~ msgstr "Oanhelle tekst:"
+
+#~ msgid "\""
+#~ msgstr "\""
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "Decimal symbol:"
+#~ msgstr "Desimaal symboal:"
+
+#~ msgid "Thousands separator:"
+#~ msgstr "Tûzend-skieder:"
+
+#~ msgid "Ignore duplicate delimiters"
+#~ msgstr "Dûbele begrinzers negearje"
+
+#~ msgid "&Format:"
+#~ msgstr "O&pmaak:"
+
+#~ msgid "Ranges"
+#~ msgstr "Ofstannen"
+
+#~ msgid "Update"
+#~ msgstr "Fernije"
+
+#~ msgid "Import columns:"
+#~ msgstr "Kolommen ymportearje"
+
+#~ msgid "Import lines:"
+#~ msgstr "Rigels ymportearje"
+
+#~ msgid "to"
+#~ msgstr "Oan:"
+
+#, fuzzy
+#~| msgid "Show Rulers"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Float Docker"
+#~ msgstr "Linialen sjen litte"
+
+#, fuzzy
+#~| msgid "Custom Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Close Docker"
+#~ msgstr "Oanpast dokumint"
+
+#, fuzzy
+#~| msgid "Custom Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Collapse Docker"
+#~ msgstr "Oanpast dokumint"
+
+#, fuzzy
+#~| msgid "Show Rulers"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Lock Docker"
+#~ msgstr "Linialen sjen litte"
+
+#~ msgid "&Encrypt"
+#~ msgstr "F&ersiferje"
+
+#~ msgid "Keywords:"
+#~ msgstr "Kearnwurden:"
+
+#~ msgid "Subject:"
+#~ msgstr "Underwerp:"
+
+#~ msgid "Last printed:"
+#~ msgstr "Lêst printe:"
+
+#~ msgid "Total editing time:"
+#~ msgstr "Totale bewurkingstiid:"
+
+#~ msgid "Encryption:"
+#~ msgstr "Fersifering:"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgctxt "Document title"
+#~ msgid "Title:"
+#~ msgstr "Titel:"
+
+#~ msgid "Revision number:"
+#~ msgstr "Revyzje:"
+
+#~ msgid "Modified:"
+#~ msgstr "Wizige:"
+
+#~ msgid "Comments:"
+#~ msgstr "Kommentaar"
+
+#~ msgid "Created:"
+#~ msgstr "Oanmakke:"
+
+#~ msgid "Path:"
+#~ msgstr "Paad:"
+
+#~ msgid "&Reset"
+#~ msgstr "&Opnij"
+
+#, fuzzy
+#~| msgid "Paste Page"
+#~ msgid "Language:"
+#~ msgstr "Side plakke"
+
+#~ msgid "General"
+#~ msgstr "Algemien"
+
+#, fuzzy
+#~| msgid "Paste Page"
+#~ msgid "Last saved by"
+#~ msgstr "Side plakke"
+
+#, fuzzy
+#~| msgid "Use ';' (Example: Office;KDE;KOffice)"
+#~ msgid "Use ';' (Example: Office;KDE;Calligra)"
+#~ msgstr "Brûk ';' (Foarbyld: Office;KDE;KOffice)"
+
+#~ msgid "This document will be decrypted"
+#~ msgstr "Dit dokumint sil ûntsifere wurde"
+
+#~ msgid "Do not decrypt"
+#~ msgstr "Net ûntsiferje"
+
+#~ msgid "This document is encrypted"
+#~ msgstr "Dit dokumint is fersifere"
+
+#~ msgid "D&ecrypt"
+#~ msgstr "Untsif&erje"
+
+#~ msgid "This document will be encrypted."
+#~ msgstr "Dit dokumint sil fersifere wurde."
+
+#~ msgid "Do not encrypt"
+#~ msgstr "Net fersiferje"
+
+#~ msgid "This document is not encrypted"
+#~ msgstr "Dit dokumint is net  fersifere"
+
+#, fuzzy
+#~| msgid "This document is not encrypted"
+#~ msgid "This document does not support encryption"
+#~ msgstr "Dit dokumint is net  fersifere"
+
+#~ msgid ""
+#~ "<qt>Decrypting the document will remove the password protection from it."
+#~ "<p>Do you still want to decrypt the file?</qt>"
+#~ msgstr ""
+#~ "<qt>It dokumint ûntsiferje sil de wachtwurdbeskerming der fan fuorthelje."
+#~ "<p>Wolle jo de triem noch ûntsiferje?</qt>"
+
+#~ msgid "Confirm Decrypt"
+#~ msgstr "Untsiferjen befêstigje"
+
+#~ msgid "Decrypt"
+#~ msgstr "Untsiferje"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "decryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>Jo dokumint koe net automatysk bewarre wurde.<p>Bewarje it dokumint, "
+#~ "om it ûntsiferjen te foltôgjen.</qt>"
+
+#~ msgid "Save Document"
+#~ msgstr "Dokumint bewarje as"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "decryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt>It dokumint is feroare sûnt it iepene wie. Om it ûntsiferjen te "
+#~ "foltôgjen moat it bewarre wurde.<p>Wolle jo it dokumint no bewarjen?</qt>"
+
+#~ msgid ""
+#~ "<qt>The document is currently saved as %1. The document needs to be "
+#~ "changed to <b>OASIS OpenDocument</b> to be encrypted.<p>Do you want to "
+#~ "change the file to OASIS OpenDocument?</qt>"
+#~ msgstr ""
+#~ "<qt>It dokumint is op it stuit bewarre as %1. It dokumint moat foar "
+#~ "fersiferjen feroare wurde nei <b>OASIS OpenDocument</b>.<p>Wolle jo de "
+#~ "triem feroarje nei OASIS OpenDocument?</qt>"
+
+#~ msgid "Change Filetype"
+#~ msgstr "Triemtype feroarje"
+
+#~ msgid "Change"
+#~ msgstr "Feroarje"
+
+#~ msgid ""
+#~ "<qt>Your document could not be saved automatically.<p>To complete the "
+#~ "encryption, please save the document.</qt>"
+#~ msgstr ""
+#~ "<qt>Jo dokumint koe net automatysk bewarre wurde.<p>Bewarje it dokumint, "
+#~ "om it fersiferjen te foltôgjen.</qt>"
+
+#~ msgid ""
+#~ "<qt>The document has been changed since it was opened. To complete the "
+#~ "encryption the document needs to be saved.<p>Do you want to save the "
+#~ "document now?</qt>"
+#~ msgstr ""
+#~ "<qt>It dokumint is feroare sûnt it iepene wie. Om it fersiferjen te "
+#~ "foltôgjen moat it bewarre wurde.<p>Wolle jo it dokumint no bewarjen?</qt>"
+
+#~ msgid "Remove"
+#~ msgstr "Fuortsmite"
+
+#~ msgid "Open palette"
+#~ msgstr "Palet iepenje"
+
+#~ msgid "Save palette"
+#~ msgstr "Palet bewarje"
+
+#~ msgid "Add Color To Palette"
+#~ msgstr "Kleur oan pakket taheakje"
+
+#~ msgid "Color name:"
+#~ msgstr "Kleurnamme:"
+
+#, fuzzy
+#~| msgid "Add Color To Palette"
+#~ msgid "Gimp Color Palette (*.gpl)"
+#~ msgstr "Kleur oan pakket taheakje"
+
+#~ msgid "Palette"
+#~ msgstr "Paletten"
+
+#~ msgid "Add/Remove Colors"
+#~ msgstr "Kleuren taheakje/fuortsmite"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Testing: OpenFile"
+#~ msgstr "Palet iepenje"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFile"
+#~ msgstr "Ymportfilter ûntbrekt"
+
+#, fuzzy
+#~| msgid "Missing Import Filter"
+#~ msgid "Testing: ImportFiles"
+#~ msgstr "Ymportfilter ûntbrekt"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: Import Directory"
+#~ msgstr "Dokumint ymportearje"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Testing: SaveFile"
+#~ msgstr "Palet bewarje"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Open File"
+#~ msgstr "Palet iepenje"
+
+#, fuzzy
+#~| msgid "Open palette"
+#~ msgid "Open Files"
+#~ msgstr "Palet iepenje"
+
+#, fuzzy
+#~| msgid "Choose Filter"
+#~ msgid "Filter:"
+#~ msgstr "Filter kieze"
+
+#, fuzzy
+#~| msgid "TextLabel1:"
+#~ msgid "TextLabel"
+#~ msgstr "TextLabel1:"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "Named"
+#~ msgstr "Namme:"
+
+#, fuzzy
+#~| msgid "Select a filter:"
+#~ msgid "Set default filter"
+#~ msgstr "Selektearje in filter:"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Save File"
+#~ msgstr "Palet bewarje"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Import Files"
+#~ msgstr "Rigels ymportearje"
+
+#, fuzzy
+#~| msgid "Import lines:"
+#~ msgid "Import File"
+#~ msgstr "Rigels ymportearje"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Directory"
+#~ msgstr "Dokumint ymportearje"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "No stroke or fill"
+#~ msgid "None"
+#~ msgstr "Gjin"
+
+#, fuzzy
+#~| msgid "Change master page"
+#~ msgid "Change the filling gradient"
+#~ msgstr "Haadside feroarje"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgid "Icon and Text"
+#~ msgstr "Tekst"
+
+#, fuzzy
+#~| msgid "Zoom"
+#~ msgid "Bottom side"
+#~ msgstr "Zoome"
+
+#, fuzzy
+#~| msgid "Left indent"
+#~ msgid "Left side"
+#~ msgstr "Lofter ynsprong"
+
+#, fuzzy
+#~| msgid "Right indent"
+#~ msgid "Right side"
+#~ msgstr "Rjochter ynsprong"
+
+#~ msgid "Page Layout"
+#~ msgstr "Side-yndieling"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Apply to document"
+#~ msgstr "Dokumint ymportearje"
+
+#, fuzzy
+#~| msgid "Left:"
+#~ msgid "Left Edge:"
+#~ msgstr "Lofts:"
+
+#, fuzzy
+#~| msgid "Right:"
+#~ msgid "Right Edge:"
+#~ msgstr "Rjochts:"
+
+#, fuzzy
+#~| msgid "Printing done"
+#~ msgid "Binding Edge:"
+#~ msgstr "Printsjen is klear"
+
+#, fuzzy
+#~| msgid "Page Size"
+#~ msgid "Page Edge:"
+#~ msgstr "Sidegrutte"
+
+#, fuzzy
+#~| msgid "Fit Page"
+#~ msgid "Facing Pages:"
+#~ msgstr "Passend oan side"
+
+#, fuzzy
+#~| msgid "Fit Page"
+#~ msgid "Facing pages"
+#~ msgstr "Passend oan side"
+
+#, fuzzy
+#~| msgid "Page Layout"
+#~ msgid "Page Layout:"
+#~ msgstr "Side-yndieling"
+
+#, fuzzy
+#~| msgid "a spreadsheet"
+#~ msgid "Page spread"
+#~ msgstr "in spreadsheet"
+
+#~ msgid "Unit:"
+#~ msgstr "Ienheid:"
+
+#, fuzzy
+#~| msgid "&Size:"
+#~ msgid "Size:"
+#~ msgstr "&Grutte:"
+
+#, fuzzy
+#~| msgid "&Width:"
+#~ msgid "Width:"
+#~ msgstr "&Breedte:"
+
+#, fuzzy
+#~| msgid "&Height:"
+#~ msgid "Height:"
+#~ msgstr "&Hichte:"
+
+#, fuzzy
+#~| msgid "Orientation"
+#~ msgid "Orientation:"
+#~ msgstr "Oriïntaasje"
+
+#, fuzzy
+#~| msgid "Fit Page"
+#~ msgid "Facing pages:"
+#~ msgstr "Passend oan side"
+
+#, fuzzy
+#~| msgctxt "Underline Style"
+#~| msgid "Single"
+#~ msgid "Single sided"
+#~ msgstr "Ienkele"
+
+#, fuzzy
+#~| msgid "Change Connection"
+#~ msgid "Text direction:"
+#~ msgstr "Ferbining feroarje"
+
+#, fuzzy
+#~| msgid "Straight"
+#~ msgid "Left to right"
+#~ msgstr "Rjocht"
+
+#, fuzzy
+#~| msgid "Right indent"
+#~ msgid "Right to left"
+#~ msgstr "Rjochter ynsprong"
+
+#~ msgid "Margins"
+#~ msgstr "Marzjes"
+
+#, fuzzy
+#~| msgid "&Top:"
+#~ msgid "Top:"
+#~ msgstr "&Boppe:"
+
+#, fuzzy
+#~| msgid "Printing done"
+#~ msgid "Binding edge:"
+#~ msgstr "Printsjen is klear"
+
+#, fuzzy
+#~| msgid "Page Preview"
+#~ msgid "Page edge:"
+#~ msgstr "Sidefoarbyld"
+
+#, fuzzy
+#~| msgid "Zoom"
+#~ msgid "Bottom:"
+#~ msgstr "Zoome"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Import resource"
+#~ msgstr "Dokumint ymportearje"
+
+#, fuzzy
+#~| msgid "Download"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Download resource"
+#~ msgstr "Ynlade"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgctxt "@info:tooltip"
+#~ msgid "Share Resource"
+#~ msgstr "Wiskje"
+
+#, fuzzy
+#~| msgid "Choose Filter"
+#~ msgctxt "@title:window"
+#~ msgid "Choose File to Add"
+#~ msgstr "Filter kieze"
+
+#, fuzzy
+#~| msgid "New Layer"
+#~ msgid "New tag"
+#~ msgstr "Nije Laach"
+
+#, fuzzy
+#~| msgid "Remove point"
+#~ msgid "Remove from this tag"
+#~ msgstr "Punt fuorthelje"
+
+#, fuzzy
+#~| msgid "Merge points"
+#~ msgid "Miter join"
+#~ msgstr "Gearfoegpunten"
+
+#, fuzzy
+#~| msgid "Remove point"
+#~ msgid "Bevel join"
+#~ msgstr "Punt fuorthelje"
+
+#, fuzzy
+#~| msgid "Merge points"
+#~ msgid "Miter limit"
+#~ msgstr "Gearfoegpunten"
+
+#, fuzzy
+#~| msgid "Move page"
+#~ msgid "Rename tag"
+#~ msgstr "Side ferpleatse"
+
+#, fuzzy
+#~| msgid "Delete Page"
+#~ msgid "Delete this tag"
+#~ msgstr "Side wiskje"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgid "Undelete"
+#~ msgstr "Wiskje"
+
+#~ msgid "Tool Options"
+#~ msgstr "Ark-opsjes"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "deselect item"
+#~ msgstr "Teken selektearje"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "select item"
+#~ msgstr "Teken selektearje"
+
+#, fuzzy
+#~| msgid "Zoom Tool"
+#~ msgid "Zoom to All"
+#~ msgstr "Zoomark"
+
+#, fuzzy
+#~| msgid "%1%"
+#~ msgctxt "@info:tooltip of custom triple button"
+#~ msgid "%1"
+#~ msgstr "%1%"
+
+#~ msgid "Value (brightness)"
+#~ msgstr "Wearde (helderheid)"
+
+#~ msgid "Cyan"
+#~ msgstr "Syaan"
+
+#~ msgid "Magenta"
+#~ msgstr "Magenta"
+
+#~ msgid "Yellow"
+#~ msgstr "Giel"
+
+#~ msgid "Black"
+#~ msgstr "Swart"
+
+#~ msgid "Green to magenta*"
+#~ msgstr "Grien nei magenta*"
+
+#~ msgid "Blue to yellow"
+#~ msgstr "Blau nei giel"
+
+#~ msgid "Opacity:"
+#~ msgstr "&Dekking"
+
+#, fuzzy
+#~| msgid "Default"
+#~ msgctxt "default theme name"
+#~ msgid "Default"
+#~ msgstr "Standert"
+
+#, fuzzy
+#~| msgid "Snap Guides"
+#~ msgid "Configuration..."
+#~ msgstr "Magnetyske fjilden"
+
+#, fuzzy
+#~| msgid "Pan Tool"
+#~ msgid "&Tools"
+#~ msgstr "Pan-ark"
+
+#, fuzzy
+#~| msgid "Collection"
+#~ msgid "Color Selector"
+#~ msgstr "Kolleksje"
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Database file \"%1\" does not exist."
+#~ msgstr "De triem %1 bestiet net."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist in the database."
+#~ msgstr "De triem %1 bestiet net."
+
+#, fuzzy
+#~| msgid "Could not read the package \"%1\"."
+#~ msgid "Could not compact database \"%1\"."
+#~ msgstr "Koe pakket \"%1\" net lêze."
+
+#, fuzzy
+#~| msgid "Do you want to save the password?"
+#~ msgid "Do you want to open file \"%1\" as read-only?"
+#~ msgstr "Wolle jo it wachtwurd bewarje?"
+
+#, fuzzy
+#~| msgid "Could not read the beginning of the file."
+#~ msgid "Could not gain exclusive access for writing the file."
+#~ msgstr "Begjin fan de triem koe net lêzen wurde."
+
+#, fuzzy
+#~| msgid "Could not load picture."
+#~ msgid "Could not close busy database."
+#~ msgstr "Koe de ôfbylding net lade."
+
+#, fuzzy
+#~| msgid "Could not export file."
+#~ msgid "Could not remove file \"%1\"."
+#~ msgstr "Triem koe net eksportearre wurde."
+
+#, fuzzy
+#~| msgid "The file %1 does not exist."
+#~ msgid "Table \"%1\" does not exist"
+#~ msgstr "De triem %1 bestiet net."
+
+#, fuzzy
+#~| msgid "Show &Grid"
+#~ msgid "Grid Snap"
+#~ msgstr "&Roaster sjen litte"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Formatting"
+#~ msgstr "Opmaak"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: OpenDirectories"
+#~ msgstr "Dokumint ymportearje"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Testing: ImportDirectories"
+#~ msgstr "Dokumint ymportearje"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Testing: SaveFiles"
+#~ msgstr "Palet bewarje"
+
+#, fuzzy
+#~| msgid "Import Document"
+#~ msgid "Import Directories"
+#~ msgstr "Dokumint ymportearje"
+
+#, fuzzy
+#~| msgid "Save palette"
+#~ msgid "Save Files"
+#~ msgstr "Palet bewarje"
+
+#~ msgid "Create Path"
+#~ msgstr "Paad oanmeitsje"
+
+#~ msgid "Red Green Blue"
+#~ msgstr "Read Grien Blau"
+
+#~ msgid "L a* b*"
+#~ msgstr "L a* b*"
+
+#~ msgid "Cyan Magenta Yellow Black"
+#~ msgstr "Cyaan Magenta Giel Swart"
+
+#~ msgid "Error!"
+#~ msgstr "Flater!"
+
+#, fuzzy
+#~| msgid "Actions"
+#~ msgid "Locations"
+#~ msgstr "Aksjes"
+
+#, fuzzy
+#~| msgid "Version"
+#~ msgid "Region"
+#~ msgstr "Ferzje"
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not save\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not add entry\n"
+#~ "%1"
+#~ msgstr ""
+#~ "%1\n"
+#~ "koe net opslein wurde."
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not save\n"
+#~| "%1"
+#~ msgid ""
+#~ "Could not save iCal file\n"
+#~ "%1"
+#~ msgstr ""
+#~ "%1\n"
+#~ "koe net opslein wurde."
+
+#, fuzzy
+#~| msgid "Collection"
+#~ msgid "&Location:"
+#~ msgstr "Kolleksje"
+
+#, fuzzy
+#~| msgid "Street:"
+#~ msgid "&Start:"
+#~ msgstr "Strjitte:"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Timezone"
+#~ msgstr "Tiid:"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "&Name:"
+#~ msgstr "Namme:"
+
+#, fuzzy
+#~| msgid "Number:"
+#~ msgid "&Phone Number:"
+#~ msgstr "Oantal:"
+
+#, fuzzy
+#~| msgid "Move page"
+#~ msgid "&Home Page:"
+#~ msgstr "Side ferpleatse"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Contact Information"
+#~ msgstr "Dokumint-ynformaasje"
+
+#, fuzzy
+#~| msgid "Import Data"
+#~ msgid "Import contact"
+#~ msgstr "Gegevens ymportearje"
+
+#, fuzzy
+#~| msgid "Export as PDF..."
+#~ msgid "Export as vcard..."
+#~ msgstr "Triem eksportearje as PDF..."
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "&Name"
+#~ msgstr "Namme:"
+
+#, fuzzy
+#~| msgid "To Path"
+#~ msgid "The Earth"
+#~ msgstr "Nei paad"
+
+#, fuzzy
+#~| msgid "Document Information"
+#~ msgid "Location Information"
+#~ msgstr "Dokumint-ynformaasje"
+
+#, fuzzy
+#~| msgid "Replace"
+#~ msgid "People"
+#~ msgstr "Ferfange"
+
+#~ msgid ""
+#~ "A document with this name already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "In dokumint mei dizze namme bestiet al.\n"
+#~ "Wolle jo it oerskriuwe?"
+
+#, fuzzy
+#~| msgid "Unknown KOffice MimeType %1. Check your installation."
+#~ msgid "Unknown Calligra MimeType %1. Check your installation."
+#~ msgstr "Unbekend KOffice mimetype %1. Kontrolearje jo ynstallaasje."
+
+#~ msgid "%1 (Uncompressed XML Files)"
+#~ msgstr "%1 (ûnkomprimearre XML-triemmen)"
+
+#~ msgid "%1 (Flat XML File)"
+#~ msgstr "%1 (plat XML-triem)"
+
+#~ msgid "%1 (Encrypted)"
+#~ msgstr "%1 (fersifere)"
+
+#~ msgid "%1 (%2 Compatible)"
+#~ msgstr "%1 (%2-compatible)"
+
+#~ msgid "Save Document As"
+#~ msgstr "Dokumint bewarje as"
+
+#~ msgid "Export Document As"
+#~ msgstr "Dokumint eksportearje nei"
+
+#, fuzzy
+#~| msgid "Export as PDF..."
+#~ msgid "Export to PDF"
+#~ msgstr "Triem eksportearje as PDF..."
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Slide Background"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Document background"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Change"
+#~ msgid "&Cancel"
+#~ msgstr "Feroarje"
+
+#, fuzzy
+#~| msgid "Fit Page"
+#~ msgid "First Page"
+#~ msgstr "Passend oan side"
+
+#, fuzzy
+#~| msgid "Paste Page"
+#~ msgid "Even Pages(s)"
+#~ msgstr "Side plakke"
+
+#, fuzzy
+#~| msgid "Copy Page"
+#~ msgid "Any Pages(s)"
+#~ msgstr "Side kopiearje"
+
+#, fuzzy
+#~| msgid "Add..."
+#~ msgid "&Edit"
+#~ msgstr "Taheakje..."
+
+#, fuzzy
+#~| msgid "Close"
+#~ msgid "&Close"
+#~ msgstr "Slute"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgid "Dodge"
+#~ msgstr "Gjin"
+
+#, fuzzy
+#~| msgid "&Height:"
+#~ msgid "Hard light"
+#~ msgstr "&Hichte:"
+
+#, fuzzy
+#~| msgid "Straight"
+#~ msgid "Soft light"
+#~ msgstr "Rjocht"
+
+#~ msgid "Show Shadow"
+#~ msgstr "Skaad sjen litte"
+
+#, fuzzy
+#~| msgctxt "Underline Style"
+#~| msgid "Single"
+#~ msgid "Angle:"
+#~ msgstr "Ienkele"
+
+#, fuzzy
+#~| msgid "Shadow Offset:"
+#~ msgid "Offset:"
+#~ msgstr "Skaad ôfstân:"
+
+#, fuzzy
+#~| msgid "&Color:"
+#~ msgid "Color:"
+#~ msgstr "&Kleur:"
+
+#, fuzzy
+#~| msgid "&Style:"
+#~ msgid "Style:"
+#~ msgstr "&Styl:"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert Bookmark"
+#~ msgstr "Rigelbrekking ynfoegje"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgid "Insert Table"
+#~ msgstr "Side ynfoegje"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgid "Insert Row Above"
+#~ msgstr "Side ynfoegje"
+
+#, fuzzy
+#~| msgid "Insert point"
+#~ msgid "Insert Column Left"
+#~ msgstr "Punt ynfoegje"
+
+#, fuzzy
+#~| msgid "Insert point"
+#~ msgid "Insert Column Right"
+#~ msgstr "Punt ynfoegje"
+
+#, fuzzy
+#~| msgid "Delete shape"
+#~ msgid "Delete Column"
+#~ msgstr "Foarm wiskje"
+
+#, fuzzy
+#~| msgid "Delete"
+#~ msgid "Delete Row"
+#~ msgstr "Wiskje"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgid "Insert Table Of Contents"
+#~ msgstr "Side ynfoegje"
+
+#, fuzzy
+#~| msgid "Insert Break"
+#~ msgid "Insert Bibliography"
+#~ msgstr "Rigelbrekking ynfoegje"
+
+#~ msgid "DetailsPaneBase"
+#~ msgstr "DetailsPaneBase"
+
+#~ msgid "Embedding Object"
+#~ msgstr "Objekt ynbêdzje"
+
+#~ msgid "I&mport..."
+#~ msgstr "Y&mportearje..."
+
+#~ msgid "&Default"
+#~ msgstr "Stan&dert"
+
+#, fuzzy
+#~| msgid "&Background color:"
+#~ msgid "Background Tool"
+#~ msgstr "&Eftergrûnkleur..."
+
+#, fuzzy
+#~| msgid "Path editing tool"
+#~ msgid "Background editing tool"
+#~ msgstr "Paad bewurkark"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Use master background"
+#~ msgstr "Eftergrûn ynstelle"
+
+#, fuzzy
+#~| msgid "Separate paths"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Separate paths"
+#~ msgstr "Geskieden paden"
+
+#~ msgid ""
+#~ "An autosaved file for an unnamed document exists in %1.\n"
+#~ "This file is dated %2\n"
+#~ "Do you want to open it?"
+#~ msgstr ""
+#~ "Der is in automatysk opsleine triem fan in nammeleas dokumint oanwêzich "
+#~ "yn %1.\n"
+#~ "De triem is fan %2\n"
+#~ "Wolle jo it iepenje?"
+
+#~ msgid "&Delete Personal Data"
+#~ msgstr "Persoanlike &gegevens wiskje"
+
+#, fuzzy
+#~| msgid "Delete shapes"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Delete shapes"
+#~ msgstr "Foarmen wiskje"
+
+#, fuzzy
+#~| msgid "Subtract"
+#~ msgid "Substract"
+#~ msgstr "Oflûke"
+
+#, fuzzy
+#~| msgid "Subtract"
+#~ msgid "Inverse Substract"
+#~ msgstr "Oflûke"
+
+#, fuzzy
+#~| msgid ""
+#~| "No personal contact data set, please use the option                     "
+#~| "\"Set as Personal Contact Data\" from the \"Edit\"     menu in "
+#~| "KAddressbook to set one."
+#~ msgid ""
+#~ "No personal contact data set, please use the "
+#~ "option                                     \"Set as Personal Contact Data"
+#~ "\" from the \"Edit\"     menu in KAddressbook to set one."
+#~ msgstr ""
+#~ "Gjin persoanlike kontaktgegevens ynsteld, brûk de "
+#~ "opsje                        \"As persoanlike kontaktgegevens ynstelle\" "
+#~ "yn it menu \"Bewurkje\" fan KAddressbook om dizze yn te stellen."
+
+#~ msgid "&Load From Address Book"
+#~ msgstr "&Lade fanút adresboek"
+
+#~ msgid "Shadow Angle:"
+#~ msgstr "Skaad hoek:"
+
+#~ msgid "Shadow Color:"
+#~ msgstr "Skaad kleur:"
+
+#, fuzzy
+#~| msgid "Set border"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Set border"
+#~ msgstr "Râne ynstelle"
+
+#~ msgid "Ellipse Shape"
+#~ msgstr "Elips foarm "
+
+#~ msgid "Set Horizontal Alignment"
+#~ msgstr "Horizontale rjochting ynstelle"
+
+#, fuzzy
+#~| msgid "Line Border"
+#~ msgid "Line Break"
+#~ msgstr "râne line"
+
+#, fuzzy
+#~| msgid "Snap Guides"
+#~ msgid "Hide Grid"
+#~ msgstr "Magnetyske fjilden"
+
+#, fuzzy
+#~| msgid "Snap Guides"
+#~ msgid "Hide Guides"
+#~ msgstr "Magnetyske fjilden"
+
+#~ msgid "&Close All Views"
+#~ msgstr "Alle dielfinsters &slute"
+
+#~ msgid "&Split View"
+#~ msgstr "Finster op&splitse"
+
+#~ msgid "&Remove View"
+#~ msgstr "Dielfinster wis&kje"
+
+#~ msgid "Splitter &Orientation"
+#~ msgstr "Splitser-&oriïntaasje"
+
+#~ msgid "&Horizontal"
+#~ msgstr "&Horizontaal"
+
+#~ msgid "&Vertical"
+#~ msgstr "&Fertikaal"
+
+#~ msgid "Printing page %1"
+#~ msgstr "Side %1 wurdt printe"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Form"
+#~ msgstr "Opmaak"
+
+#~ msgid "Import"
+#~ msgstr "Ymportearje"
+
+#, fuzzy
+#~| msgid "Shape"
+#~ msgid "Share"
+#~ msgstr "Foarm"
+
+#, fuzzy
+#~| msgid "Alpha"
+#~ msgid "Copy Opacy"
+#~ msgstr "Alfa"
+
+#, fuzzy
+#~| msgid "Alpha"
+#~ msgid "Copy Alpha"
+#~ msgstr "Alfa"
+
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Light"
+#~ msgstr "Ljochter meitsje"
+
+#~ msgid "Write PDF"
+#~ msgstr "PDF skriuwe"
+
+#, fuzzy
+#~| msgid "Show Rulers"
+#~ msgid "Hide Dockers"
+#~ msgstr "Linialen sjen litte"
+
+#, fuzzy
+#~| msgid "Stop"
+#~ msgid "Atop"
+#~ msgstr "Stopje"
+
+#~ msgid "KOffice"
+#~ msgstr "KOffice"
+
+#~ msgid "KOffice Storage"
+#~ msgstr "KOffice-opslach"
+
+#~ msgid "CCSGraph"
+#~ msgstr "CCSGraph"
+
+#~ msgid "(c) 2007 Cyrille Berger"
+#~ msgstr "(c) 2007 Cyrille Berger"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Barcode"
+#~ msgstr "Opmaak"
+
+#, fuzzy
+#~| msgid "Format"
+#~ msgid "Barcode Format"
+#~ msgstr "Opmaak"
+
+#, fuzzy
+#~| msgid "a chart"
+#~ msgid "Chart"
+#~ msgstr "in grafyk"
+
+#, fuzzy
+#~| msgid "Set point type"
+#~ msgid "Field Font"
+#~ msgstr "Punttype ynstelle"
+
+#, fuzzy
+#~| msgid "Time:"
+#~ msgid "Pie"
+#~ msgstr "Tiid:"
+
+#, fuzzy
+#~| msgid "Version"
+#~ msgid "Ring"
+#~ msgstr "Ferzje"
+
+#, fuzzy
+#~| msgid "Clear"
+#~ msgid "Polar"
+#~ msgstr "Omskjinje"
+
+#, fuzzy
+#~| msgid "Data"
+#~ msgid "Chart Type"
+#~ msgstr "Gegevens"
+
+#, fuzzy
+#~| msgid "Space"
+#~ msgid "Stacked"
+#~ msgstr "Spaasje"
+
+#, fuzzy
+#~| msgid "Recent:"
+#~ msgid "Percent"
+#~ msgstr "Koartlyn:"
+
+#, fuzzy
+#~| msgid "Color name:"
+#~ msgid "Color Scheme"
+#~ msgstr "Kleurnamme:"
+
+#, fuzzy
+#~| msgid "Untitled"
+#~ msgid "Antialiased"
+#~ msgstr "Nammeleas"
+
+#, fuzzy
+#~| msgid "Set background"
+#~ msgid "Display Legend"
+#~ msgstr "Eftergrûn ynstelle"
+
+#~ msgid "QXml"
+#~ msgstr "QXml"
+
+#~ msgid "Zoom Tool"
+#~ msgstr "Zoomark"
+
+#~ msgid "Pan Tool"
+#~ msgstr "Pan-ark"
+
+#~ msgid "Path tool"
+#~ msgstr "Paad ark"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Out"
+#~ msgstr "Oanpast"
+
+#~ msgid "ICC Engine"
+#~ msgstr "ICC masine"
+
+#~ msgid "RGB8 Histogram"
+#~ msgstr "RGB8-histogram"
+
+#, fuzzy
+#~| msgid "Master Page"
+#~ msgid "Paste Slides"
+#~ msgstr "Haadside"
+
+#~ msgid "Insert Linebreak"
+#~ msgstr "Rigelein ynfoegje"
+
+#~ msgid "&Insert"
+#~ msgstr "&Ynfoegje"
+
+#~ msgid "Insert the selected character in the text"
+#~ msgstr "Foegje it selektearre teken yn yn de tekst"
+
+#~ msgid "Resize Panel Forward"
+#~ msgstr "Paneelgrutte wizigje"
+
+#~ msgid "Resize Panel Reverse"
+#~ msgstr "Paneelgrutte omkeard wizigje"
+
+#~ msgid "Access Keys"
+#~ msgstr "Sneltoetsen"
+
+#~ msgid "Enable word completion"
+#~ msgstr "Wurdoanfolling aktivearje"
+
+#~ msgid ""
+#~ "Toggle autocompletion on and off: if this is checked then autocompletion "
+#~ "will be enabled."
+#~ msgstr ""
+#~ "Auto-oanfolling oan- en útsette: as dit ynskeakele is, stiet auto-"
+#~ "oanfolling oan."
+
+#~ msgid ""
+#~ "Suggestion list for autocompletion: contains all the words that will be "
+#~ "autocompleted."
+#~ msgstr ""
+#~ "Suggestjelist foar auto-oanfolling: befet alle wurden dy't oanfold wurde "
+#~ "sille."
+
+#~ msgid ""
+#~ "By clicking this button you can add manually an individual word to the "
+#~ "completion list."
+#~ msgstr ""
+#~ "Troch op dizze knop te klikken kinne jo mei de hân in los wurd op de "
+#~ "oanfollingslist sette."
+
+#~ msgid ""
+#~ "To remove words from the completion list, select the word with the left "
+#~ "mouse button from the list, then click this button."
+#~ msgstr ""
+#~ "Om wurden út de oanfollingslist te wiskjen, klikke jo op it wurd mei de "
+#~ "lofter mûsknop, en dan op dizze knop."
+
+#~ msgid "Automatically add new words to suggestion list"
+#~ msgstr "Automatysk nije wurden op de list mei oanfollingen sette"
+
+#~ msgid ""
+#~ "If this option is enabled, any word equal to or longer than the "
+#~ "\"Characters needed\" typed in this document will automatically be added "
+#~ "to the list of words used by the completion."
+#~ msgstr ""
+#~ "As jo dizze optie selektearje, dan sille alle wurden langer as of even "
+#~ "lang as \"Nedige tekens\" dy't jo yn dit dokumint yntype, taheakke wurde "
+#~ "oan de list mei wurden dy't brûkt wurde sille troch de oanfolling."
+
+#~ msgid "Completion Options"
+#~ msgstr "Oanfollingsopsjes"
+
+#~ msgid "Show words in tooltip"
+#~ msgstr "Wurden yn helpballon sjen litte"
+
+#~ msgid ""
+#~ "If this option is enabled, a tool tip box will appear when you type the "
+#~ "beginning of a word that exists in the completion list. To complete the "
+#~ "word, press the key you set to accept suggestions in the \"Key to accept "
+#~ "suggestion\" drop-down list."
+#~ msgstr ""
+#~ "As dizze opsje ynskeakele is, sil der in tekstballon ferskine as it "
+#~ "begjin fan in fan in wurd yntypt wurdt dat yn de oanfollingslist stiet. "
+#~ "Druk op de toets ûnder \"Toets om suggestje oer te nimmen\" om it wurd ôf "
+#~ "te meitsjen."
+
+#~ msgid ""
+#~ "This sets the maximum number of words in the completion list. All "
+#~ "additional words will not be included in the list. You can select any "
+#~ "value from 1 to 500. This option keeps the list from becoming too "
+#~ "cumbersome.\n"
+#~ "This option is most important when Automatically add words to completion "
+#~ "list is enabled."
+#~ msgstr ""
+#~ "Dit stelt it maksimaal oantal wurden yn de oanfollingslist yn. Ekstra "
+#~ "wurden wurde net tafoege. Jo kinne wearden ynstelle fan 1 oant 500. Dizze "
+#~ "opsje foarkomt dat de list te fol rekket.\n"
+#~ "Dizze opsje is it wichtichst as \"Automatysk nije wurden tafoegje\" "
+#~ "ynskeakele is."
+
+#~ msgid "Characters needed:"
+#~ msgstr "Fereaske tekens:"
+
+#~ msgid "Suggest words:"
+#~ msgstr "Stel wurden foar:"
+
+#~ msgid ""
+#~ "Use this spinbox/slider combination to prevent automatically adding short "
+#~ "words to the completion list. You can select any value from 5-100 and the "
+#~ "words will need to be at least the number of characters set here to be "
+#~ "added to the list."
+#~ msgstr ""
+#~ "Brûk dizze sko-regelder om foar te kommen dat koarte wurden op de "
+#~ "oanfollingslist komme. Jo kinne elke wearde fan 5 oant 100 kieze, wurden "
+#~ "moatte minstens út dit oantal tekens bestean om op de list te kommen."
+
+#~ msgid "Append space"
+#~ msgstr "Spaasje tafoegje"
+
+#~ msgid ""
+#~ "If checked, it adds a single space to the end of a word after "
+#~ "autocompletion, this means it is not necessary to add the space manually "
+#~ "for the next word."
+#~ msgstr ""
+#~ "As dit ynskeakele is, wurdt der in inkele spaasje tafoege oan de ein fan "
+#~ "in wurd nei auto-oanfolling. Dit betsjut dat it net nedich is sels in "
+#~ "spaasje foar it folgjende wurd yn te fieren."
+
+#~ msgid "Key to accept suggestion:"
+#~ msgstr "Toets om suggestje oer te nimmen:"
+
+#~ msgid ""
+#~ "Set the key you want to use when an autocompleted word is suggested to "
+#~ "you and you want to accept it. You can choose Enter, Tab, Space, End or "
+#~ "Right."
+#~ msgstr ""
+#~ "Stel de toets yn dy't brûkt wurdt om in suggestje foar in auto-oanfold "
+#~ "wurd oer te nimmen. Jo kinne kieze út Enter, Tab, spaasje, End of pylk-"
+#~ "rjochts."
+
+#~ msgid "Make Default"
+#~ msgstr "Standert"
+
+#~ msgid ""
+#~ "Completion is configured per document. Making this list the default will "
+#~ "allow you to use it for new documents automatically. A dialog will appear "
+#~ "to inform you that the list will be used for all documents from now on."
+#~ msgstr ""
+#~ "Oanfolling wurdt per dokumint ynsteld. Troch dizze list as standert yn te "
+#~ "stellen, wurdt dizze automatysk foar nije dokuminten brûkt. In "
+#~ "dialoochfinster ferskynt om jo dit te fertellen."
+
+#~ msgid "C&ustom"
+#~ msgstr "&Oanpast"
+
+#~ msgid "&Insert:"
+#~ msgstr "&Ynfoegje:"
+
+#~ msgid "Paragraph Background Color"
+#~ msgstr "Eftergrûnkleur alinea"
+
+#~ msgid ""
+#~ "<p>Paragraph Background Color</p>\n"
+#~ "\n"
+#~ "<p>The paragraph background color appears\n"
+#~ "between the left and right margins of a\n"
+#~ "paragraph.</p>\n"
+#~ "\n"
+#~ "<p>If the text has a background color set, then\n"
+#~ "the text background will appear 'on top' of the\n"
+#~ "paragraph background.  In this case, the paragraph\n"
+#~ "background will still show on parts of the paragraph\n"
+#~ "that have no text (usually on the last line, between\n"
+#~ "the end of the text and the margin).</p>"
+#~ msgstr ""
+#~ "<p>Eftergrûnkleur alinea</p>\n"
+#~ "\n"
+#~ "<p>De eftergrûnkleurkleur fan in alinea\n"
+#~ "ferskynt tusken de lofter en rjochter\n"
+#~ "marzje fan de alinea.</p>\n"
+#~ "\n"
+#~ "<p>Als de tekst een achtergrondkleur heeft,\n"
+#~ "verschijnt deze 'bovenop' de achtergrondkleur van\n"
+#~ "de alinea. In dit geval is de achtergrondkleur van de\n"
+#~ "alinea nog wel zichtbaar in delen van de alinea die\n"
+#~ "geen tekst bevatten (meestal op de laatste regel\n"
+#~ "tussen het einde van de tekst en de marge).</p>"
+
+#~ msgid "Borders"
+#~ msgstr "Rânen"
+
+#~ msgid ""
+#~ "<p>Paragraph Borders</p>\n"
+#~ "\n"
+#~ "<p>The preview shows what the currently \n"
+#~ "selected paragraph borders will look like.</p>\n"
+#~ "\n"
+#~ "<p>To <i>add</i> a new border: Select the desired style,\n"
+#~ "width and color.  Click the toggle button that corresponds\n"
+#~ "to that border.</p>\n"
+#~ "\n"
+#~ "<p>To <i>remove</i> an existing border: Either click on the\n"
+#~ "border to be removed in the preview, or click the\n"
+#~ "toggle button corresponding to that border.</p>\n"
+#~ "\n"
+#~ "<p>To <i>modify</i> a border: Select the desired style,\n"
+#~ "width and color, then click on the border to be\n"
+#~ "modified in the preview.</p>"
+#~ msgstr ""
+#~ "<p>Alinea-omrâning</p>\n"
+#~ "\n"
+#~ "<p>It foarbyld lit sjen hoe't de aktuele\n"
+#~ "alinea-omrâning der út sjocht.</p>\n"
+#~ "\n"
+#~ "<p>Om in nije râne <i>ta te foegjen</i>: Kies de winske\n"
+#~ "styl, breedte en kleur. Klik op de knop dy't oerienkomt mei\n"
+#~ "de râne.</p>\n"
+#~ "\n"
+#~ "<p>Om in besteande râne <i>te wiskjen</i>: Klik yn de\n"
+#~ "foarbyldwerjefte op de râne dy't wiske wurde moat,\n"
+#~ "of klik op de oerienkomstige knop.</p>\n"
+#~ "\n"
+#~ "<p>Om in râne <i>te wizigjen</i>: Kies de winske styl,\n"
+#~ "breedte en kleur, en klik in de foarbyldwerjefte op de te\n"
+#~ "wizigjen râne.</p>"
+
+#~ msgid "&Width:"
+#~ msgstr "&Breedte:"
+
+#~ msgid "Add/remove left paragraph border"
+#~ msgstr "Alinearâne lofts tafoegje/wiskje"
+
+#~ msgid "Toggles the left paragraph border on or off."
+#~ msgstr "Set de alinearâne lofts of rjochts oan of út."
+
+#~ msgid "Add/remove right paragraph border"
+#~ msgstr "Alinearâne rjochts tafoegje/wiskje"
+
+#~ msgid "Toggles the right paragraph border on or off."
+#~ msgstr "Set de alinearâne rjochts yn of út."
+
+#~ msgid "Add/remove top paragraph border"
+#~ msgstr "Alinearâne boppe tafoegje/wiskje"
+
+#~ msgid "Toggles the top paragraph border on or off."
+#~ msgstr "Set de alinearâne boppe yn of út."
+
+#~ msgid "Add/remove bottom paragraph border"
+#~ msgstr "Alinearâne ûnder tafoegje/wiskje"
+
+#~ msgid "Toggles the bottom paragraph border on or off."
+#~ msgstr "Set de alinearâne ûnder yn of út."
+
+#~ msgid "&Merge with next paragraph"
+#~ msgstr "G&earfoegje mei folgjende alinea"
+
+#~ msgid ""
+#~ "Merges the border style of the current paragraph with the next paragraph"
+#~ msgstr ""
+#~ "Foeget de rânestyl fan de aktuele alinea gear mei de folgjende alinea"
+
+#~ msgid ""
+#~ "<p>Merge with next paragraph</p>\n"
+#~ "\n"
+#~ "<p>When this option is checked, no top or bottom borders\n"
+#~ "will appear between consecutive paragraphs with the\n"
+#~ "same style.  Top and Bottom borders will only appear between\n"
+#~ "paragraphs with different styles.</p>\n"
+#~ "\n"
+#~ "<p>When this option is unchecked, top and bottom borders\n"
+#~ "always appear at the top and bottom of paragraphs with this style,\n"
+#~ "regardless of the style of the preceding and subsequent paragraphs.</p>"
+#~ msgstr ""
+#~ "<p>Gearfoegje mei folgjende alinea</p>\n"
+#~ "\n"
+#~ "<p>As dizze opsje ynskeakele is, ferskine der gjin alinearânen\n"
+#~ "ûnder of boppe de opienfolgjende alinea's mei deselde styl.\n"
+#~ "Rânen ûnder en bope ferskine allinnich tusken alinea's mei\n"
+#~ "ferskillende stilen.</p>\n"
+#~ "\n"
+#~ "<p>As dizze opsje út stiet, ferskine alinearânen\n"
+#~ "boppe en ûnder altyd mei dizze styl, likefolle de styl\n"
+#~ "fan de foarôfgeande en neikommende alinea's.</p>"
+
+#~ msgid "String:"
+#~ msgstr "Tekenrige:"
+
+#~ msgid "Boolean:"
+#~ msgstr "Booleaansk:"
+
+#~ msgid "true"
+#~ msgstr "wier"
+
+#~ msgid "false"
+#~ msgstr "net-wier"
+
+#~ msgid "Date:"
+#~ msgstr "Datum:"
+
+#~ msgid "Set Guide Line Position"
+#~ msgstr "Posysje gidslinen ynstelle"
+
+#~ msgid "Add Guide Line"
+#~ msgstr "Gidsline tafoegje"
+
+#~ msgid "Horizontal"
+#~ msgstr "Horizontaal"
+
+#~ msgid "Vertical"
+#~ msgstr "Fertikaal"
+
+#~ msgid "&Position:"
+#~ msgstr "&Posysje:"
+
+#~ msgid "Guide Line"
+#~ msgstr "Gidsline"
+
+#~ msgid "Guide Lines"
+#~ msgstr "Gidslinen"
+
+#~ msgid "No handler found for %1"
+#~ msgstr "Gjin handler fûn foar %1"
+
+#~ msgid ""
+#~ "Error loading %1:\n"
+#~ "%2"
+#~ msgstr ""
+#~ "Flater by it laden fan '%1':\n"
+#~ "%2"
+
+#~ msgid ""
+#~ "This document contains an external link to a remote document\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Dit dokumint befet in eksterne keppeling nei in dokumint op ôfstân.\n"
+#~ "%1"
+
+#~ msgid "Confirmation Required"
+#~ msgstr "Befêstiging fereaske"
+
+#~ msgid "Skip"
+#~ msgstr "Oerslaan"
+
+#~ msgid ""
+#~ "Could not load external document %1:\n"
+#~ "%2"
+#~ msgstr ""
+#~ "Ekstern dokumint %1 koe net laden wurde:\n"
+#~ "%2"
+
+#~ msgid "Na&me:"
+#~ msgstr "Na&mme:"
+
+#~ msgid "Protect si&ze and position"
+#~ msgstr "Grutte en posysje beskermje"
+
+#~ msgid "Keep &aspect ratio"
+#~ msgstr "&Aspektferhâlding behâlde"
+
+#~ msgid "&Height:"
+#~ msgstr "&Hichte:"
+
+#~ msgid "&Top:"
+#~ msgstr "&Boppe:"
+
+#~ msgid "&Left:"
+#~ msgstr "&Lofts:"
+
+#~ msgid "Context Help"
+#~ msgstr "Kontekst-help"
+
+#~ msgid "Here will be shown help according to your actions"
+#~ msgstr "Hjir sil help toand wurde dy't fan tapassing is op jo hanneling."
+
+#~ msgid "All values are given in %1."
+#~ msgstr "Alle wearden binne jûn yn %1"
+
+#~ msgid "&Size:"
+#~ msgstr "&Grutte:"
+
+#~ msgid "&Portrait"
+#~ msgstr "&Portret"
+
+#~ msgid "La&ndscape"
+#~ msgstr "Lâ&nskip"
+
+#~ msgid "The page width is smaller than the left and right margins."
+#~ msgstr "De sidebreedte is lytser as de lofter en rjochter marzjes."
+
+#~ msgid "Page Layout Problem"
+#~ msgstr "Probleem mei side-opmaak"
+
+#~ msgid "The page height is smaller than the top and bottom margins."
+#~ msgstr "De sidehichte is lytser as de boppe- en ûndermarzjes"
+
+#~ msgid "Show &Grid"
+#~ msgstr "&Roaster sjen litte"
+
+#~ msgctxt "Custom size"
+#~ msgid "Custom"
+#~ msgstr "Oanpast"
+
+#, fuzzy
+#~| msgid "Delete shape"
+#~ msgid "Delete slides"
+#~ msgstr "Foarm wiskje"
+
+#, fuzzy
+#~| msgid "Delete page"
+#~ msgid "Delete pages"
+#~ msgstr "Side wiskje"
+
+#~ msgid "Insert Object"
+#~ msgstr "Objekt ynfoegje"
+
+#~ msgid "Column spacing:"
+#~ msgstr "Kolomspaasjes"
+
+#~ msgid "Footnote/ Endnote"
+#~ msgstr "Foetnoat/einnoot"
+
+#~ msgid "Spacing between footnote and body:"
+#~ msgstr "Spaasjes tusken fuotnoat en tekst:"
+
+#~ msgid "Different footer for even and odd pages"
+#~ msgstr "Ofwikende fuottekst foar even en ûneven siden"
+
+#~ msgid "Different footer for the first page"
+#~ msgstr "Ofwikende fuottekst foar earste side"
+
+#~ msgid "Spacing between footer and body:"
+#~ msgstr "Spaasjes tusken fuottekst en tekst:"
+
+#~ msgid "Spacing between header and body:"
+#~ msgstr "Spaasjes tusken koptekst en tekst:"
+
+#~ msgid "Different header for even and odd pages"
+#~ msgstr "Ofwikende koptekst foar even en ûneven siden"
+
+#~ msgid "Different header for the first page"
+#~ msgstr "Ofwikende koptekst foar earste side"
+
+#~ msgid "Page Preview"
+#~ msgstr "Sidefoarbyld"
+
+#~ msgid "Page Size && &Margins"
+#~ msgstr "Sidegrutte && &marzjes"
+
+#~ msgid "H&eader && Footer"
+#~ msgstr "Kopt&ekst && fuottekst"
+
+#~ msgid "Head Line"
+#~ msgstr "Koptekst"
+
+#~ msgid "Foot Line"
+#~ msgstr "Fuottekst"
+
+#~ msgid "You can insert several tags in the text:"
+#~ msgstr "Jo kinne ferskate tags yn de tekst ynfoegje:"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;sheet&gt; The sheet name</li><li>&lt;page&gt; The current "
+#~ "page</li><li>&lt;pages&gt; The total number of pages</li><li>&lt;name&gt; "
+#~ "The filename or URL</li><li>&lt;file&gt; The filename with complete path "
+#~ "or the URL</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;sheet&gt; De blêdnamme</li><li>&lt;page&gt; De aktuele "
+#~ "side</li><li>&lt;pages&gt; It oantal siden</li><li>&lt;name&gt; De "
+#~ "triemnamme of it URL-adres</li><li>&lt;file&gt; De triemnamme mei it "
+#~ "folsleine paad of it URL-adres</li></ul></qt>"
+
+#~ msgid ""
+#~ "<qt><ul><li>&lt;time&gt; The current time</li><li>&lt;date&gt; The "
+#~ "current date</li><li>&lt;author&gt; Your full name</li><li>&lt;org&gt; "
+#~ "Your organization</li><li>&lt;email&gt; Your email address</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt><ul><li>&lt;time&gt; De aktuele tiid</li><li>&lt;date&gt; De aktuele "
+#~ "datum</li><li>&lt;author&gt; Jo folsleine namme</li><li>&lt;org&gt; Jo "
+#~ "organisaasje</li><li>&lt;email&gt; Jo e-mailadres</li></ul></qt>"
+
+#~ msgid "Col&umns"
+#~ msgstr "Kol&ommen"
+
+#~ msgid "&Help"
+#~ msgstr "&Help"
+
+#~ msgid "Storage Test"
+#~ msgstr "Opslach test"
+
+#~ msgid "Storage Test 2"
+#~ msgstr "Opslach test 2"
+
+#, fuzzy
+#~| msgid "Master Page"
+#~ msgid "Master page"
+#~ msgstr "Haadside"
+
+#~ msgid "Rotate"
+#~ msgstr "Rotearje"
+
+#~ msgid "Shear"
+#~ msgstr "Skeanlûke"
+
+#, fuzzy
+#~| msgid "Warning"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Waiting"
+#~ msgstr "Warskôging"
+
+#, fuzzy
+#~| msgid "Vertical"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Vertical"
+#~ msgstr "Fertikaal"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size Horizontal"
+#~ msgstr "Horizontaal"
+
+#, fuzzy
+#~| msgid "&Size:"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Size All"
+#~ msgstr "&Grutte:"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Split Horizontal"
+#~ msgstr "Horizontaal"
+
+#, fuzzy
+#~| msgid "Printing done"
+#~ msgctxt "Mouse Cursor Shape"
+#~ msgid "Pointing Hand"
+#~ msgstr "Printsjen is klear"
+
+#, fuzzy
+#~| msgid "Insert page"
+#~ msgid "Insert image from file"
+#~ msgstr "Side ynfoegje"
+
+#, fuzzy
+#~| msgid "Select Character"
+#~ msgid "Select Char"
+#~ msgstr "Teken selektearje"
+
+#, fuzzy
+#~| msgid "E&ncoding:"
+#~ msgctxt "Size Policy"
+#~ msgid "Expanding"
+#~ msgstr "Kod&earring:"
+
+#, fuzzy
+#~| msgid "General"
+#~ msgctxt "General properties"
+#~ msgid "General"
+#~ msgstr "Algemien"
+
+#, fuzzy
+#~| msgid "&Width:"
+#~ msgid "Width"
+#~ msgstr "&Breedte:"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgid "Horizontal Size Type"
+#~ msgstr "Horizontaal"
+
+#, fuzzy
+#~| msgid "Vertical"
+#~ msgid "Vertical Size Type"
+#~ msgstr "Fertikaal"
+
+#, fuzzy
+#~| msgid "Horizontal"
+#~ msgid "Horizontal Stretch"
+#~ msgstr "Horizontaal"
+
+#, fuzzy
+#~| msgid "Vertical"
+#~ msgid "Vertical Stretch"
+#~ msgstr "Fertikaal"
+
+#, fuzzy
+#~| msgid "Ungroup shapes"
+#~ msgid "Undo changes"
+#~ msgstr "Foarmgroepearring opheffe"
+
+#, fuzzy
+#~| msgid "Show &Grid"
+#~ msgid "Snap Guides"
+#~ msgstr "&Roaster sjen litte"
+
+#~ msgid "Use snap guides"
+#~ msgstr "Magnetyske fjilden brûke"
+
+#~ msgid "Enable Nodes Guide"
+#~ msgstr "Knooppunten helpline ynskeakelje"
+
+#, fuzzy
+#~| msgid "Enable Nodes Guide"
+#~ msgid "Enable Bounding Box Guide"
+#~ msgstr "Knooppunten helpline ynskeakelje"
+
+#~ msgid "Snap Distance (px)"
+#~ msgstr "Magnetyske ôfstân"
+
+#, fuzzy
+#~| msgid "Enable Nodes Guide"
+#~ msgid "Enable Guide Lines Guide "
+#~ msgstr "Knooppunten helpline ynskeakelje"
+
+#, fuzzy
+#~| msgid "Tool Options"
+#~ msgid "Tool Option"
+#~ msgstr "Ark-opsjes"
+
+#, fuzzy
+#~| msgid "Snap Guides"
+#~ msgid "Configure Snap Guides"
+#~ msgstr "Magnetyske fjilden"
+
+#~ msgid "Connection Shape"
+#~ msgstr "Foarmferbining"
+
+#, fuzzy
+#~| msgid "Guide Lines"
+#~ msgid "Edit Guidelines"
+#~ msgstr "Gidslinen"
+
+#, fuzzy
+#~| msgid "Add Guide Line"
+#~ msgid "Edit guidelines"
+#~ msgstr "Gidsline tafoegje"
+
+#~ msgid "Activate %1"
+#~ msgstr "Aktivearje %1"
