@@ -1,6 +1,7 @@
 # translation of koffice.po to Esperanto
 # Copyright (C) 2002 Free Software Foundation, Inc.
 # Steffen Pietsch <Steffen.Pietsch@BerlinOnline.de>, 2002.
+# Oliver Kellogg <okellogg@users.sourceforge.net>, 2023.
 #
 # Minuskloj: ĉ ĝ ĵ ĥ ŝ ŭ   Majuskloj: Ĉ Ĝ Ĵ Ĥ Ŝ Ŭ
 #
@@ -9,131 +10,96 @@ msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-22 01:56+0000\n"
-"PO-Revision-Date: 2015-03-25 21:20+0100\n"
-"Last-Translator: Axel Rousseau <axel.rousseau@esperanto-france.org>\n"
+"PO-Revision-Date: 2023-02-11 13:48+0100\n"
+"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Qt-Contexts: true\n"
+"X-Generator: translate-po (https://github.com/zcribe/translate-po)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: common/KReportDesign.cpp:150
-#, fuzzy
-#| msgid "Could not create the file for saving"
 msgctxt "KReportDesign|"
 msgid "Could not parse XML document."
-msgstr "Ne eblis krei la dosieron por savi"
+msgstr "Ne eblis analizi XML-dokumenton."
 
 #: common/KReportDesign.cpp:159
-#, fuzzy
-#| msgid "Error in embedded document"
 msgctxt "KReportDesign|"
 msgid "Error in XML document."
-msgstr "Eraro en enkonstruita dokumentoj"
+msgstr "Eraro en XML-dokumento."
 
 #: common/KReportItemBase.cpp:75
-#, fuzzy
-#| msgid "Name:"
 msgctxt "KReportItemBase|"
 msgid "Name"
-msgstr "Nomo:"
+msgstr "Nomo"
 
 #: common/KReportItemBase.cpp:75
-#, fuzzy
-#| msgid "Object"
 msgctxt "KReportItemBase|"
 msgid "Object Name"
-msgstr "Objekto"
+msgstr "Objektnomo"
 
 #: common/KReportItemBase.cpp:78
-#, fuzzy
-#| msgctxt "KRPos|"
-#| msgid "Position"
 msgctxt "ItemPosition|"
 msgid "Position"
 msgstr "Pozicio"
 
 #: common/KReportItemBase.cpp:79
-#, fuzzy
-#| msgid "&Size:"
 msgctxt "ItemSize|"
 msgid "Size"
-msgstr "&Grandeco:"
+msgstr "Grandeco"
 
 #: common/KReportItemBase.cpp:112
-#, fuzzy
-#| msgid "Delete"
 msgctxt "KReportItemBase|"
 msgid "Data Source"
-msgstr "Forigi"
+msgstr "Fonto de datumoj"
 
 #: common/KReportItemLine.cpp:80
-#, fuzzy
-#| msgctxt "KRPos|"
-#| msgid "Position"
 msgctxt "StartPosition|"
 msgid "Start Position"
-msgstr "Pozicio"
+msgstr "Komenca Pozicio"
 
 #: common/KReportItemLine.cpp:81
-#, fuzzy
-#| msgctxt "KRPos|"
-#| msgid "Position"
 msgctxt "EndPosition|"
 msgid "End Position"
-msgstr "Pozicio"
+msgstr "Fina Pozicio"
 
 #: common/KReportItemLine.cpp:83
-#, fuzzy
-#| msgid "Line width:"
 msgctxt "KReportItemLine|"
 msgid "Line Weight"
-msgstr "Liniolarĝeco:"
+msgstr "Linia Pezo"
 
 #: common/KReportItemLine.cpp:85
-#, fuzzy
-#| msgid "Color"
 msgctxt "KReportItemLine|"
 msgid "Line Color"
-msgstr "Koloro"
+msgstr "Linia Koloro"
 
 #: common/KReportItemLine.cpp:86
-#, fuzzy
-#| msgid "Line Border"
 msgctxt "KReportItemLine|"
 msgid "Line Style"
-msgstr "Linirando"
+msgstr "Linia Stilo"
 
 #: common/KReportSectionData.cpp:164
-#, fuzzy
-#| msgid "Group shapes"
 msgctxt "KReportSectionData|Report section"
 msgid "Section"
-msgstr "Grupigi formojn"
+msgstr "Sekcio"
 
 #: common/KReportSectionData.cpp:166
-#, fuzzy
-#| msgid "Height:"
 msgctxt "KReportSectionData|"
 msgid "Height"
-msgstr "Alteco:"
+msgstr "Alteco"
 
 #: common/KReportSectionData.cpp:170
-#, fuzzy
-#| msgid "Set background"
 msgctxt "KReportSectionData|"
 msgid "Background Color"
-msgstr "Meti fonon"
+msgstr "Fona Koloro"
 
 #: common/KReportUnit.cpp:136
-#, fuzzy
-#| msgid "Add Group"
 msgctxt "KReportUnit|"
 msgid "Invalid"
-msgstr "Aldoni grupon"
+msgstr "Nevalida"
 
 #: common/KReportUnit.cpp:138
 msgctxt "KReportUnit|"
@@ -163,7 +129,7 @@ msgstr "Pica (pi)"
 #: common/KReportUnit.cpp:148
 msgctxt "KReportUnit|"
 msgid "Cicero (cc)"
-msgstr ""
+msgstr "Cicerono (cc)"
 
 #: common/KReportUnit.cpp:150
 msgctxt "KReportUnit|"
@@ -178,69 +144,49 @@ msgstr "Rastrumeroj (px)"
 #: common/KReportUnit.cpp:154
 msgctxt "KReportUnit|"
 msgid "Unsupported unit"
-msgstr ""
+msgstr "Nesubtenata unuo"
 
 #: items/check/KReportItemCheck.cpp:79
-#, fuzzy
-#| msgid "Close"
 msgctxt "KReportItemCheckBox|"
 msgid "Cross"
-msgstr "Fermi"
+msgstr "Kruco"
 
 #: items/check/KReportItemCheck.cpp:79
 msgctxt "KReportItemCheckBox|"
 msgid "Tick"
-msgstr ""
+msgstr "Marko"
 
 #: items/check/KReportItemCheck.cpp:79
-#, fuzzy
-#| msgctxt "KoReportItemCheck|"
-#| msgid "Dot"
 msgctxt "KReportItemCheckBox|"
 msgid "Dot"
 msgstr "Punkto"
 
 #: items/check/KReportItemCheck.cpp:80
-#, fuzzy
-#| msgctxt "KoReportItemCheck|"
-#| msgid "Style"
 msgctxt "KReportItemCheckBox|"
 msgid "Style"
 msgstr "Stilo"
 
 #: items/check/KReportItemCheck.cpp:84
-#, fuzzy
-#| msgctxt "KoReportItemCheck|"
-#| msgid "Foreground Color"
 msgctxt "KReportItemCheckBox|"
 msgid "Foreground Color"
 msgstr "Malfona Koloro"
 
 #: items/check/KReportItemCheck.cpp:86
-#, fuzzy
-#| msgid "Line width:"
 msgctxt "KReportItemCheckBox|"
 msgid "Line Weight"
-msgstr "Liniolarĝeco:"
+msgstr "Linia Pezo"
 
 #: items/check/KReportItemCheck.cpp:88
-#, fuzzy
-#| msgid "Color"
 msgctxt "KReportItemCheckBox|"
 msgid "Line Color"
-msgstr "Koloro"
+msgstr "Linia Koloro"
 
 #: items/check/KReportItemCheck.cpp:89
-#, fuzzy
-#| msgid "Line Border"
 msgctxt "KReportItemCheckBox|"
 msgid "Line Style"
-msgstr "Linirando"
+msgstr "Linia Stilo"
 
 #: items/check/KReportItemCheck.cpp:90
-#, fuzzy
-#| msgctxt "KoReportItemCheck|"
-#| msgid "Value"
 msgctxt "KReportItemCheckBox|"
 msgid "Value"
 msgstr "Valoro"
@@ -248,12 +194,9 @@ msgstr "Valoro"
 #: items/check/KReportItemCheck.cpp:90
 msgctxt "KReportItemCheckBox|"
 msgid "Value used if not bound to a field"
-msgstr ""
+msgstr "Valoro uzata se ne ligita al kampo"
 
 #: items/field/KReportItemField.cpp:90
-#, fuzzy
-#| msgctxt "KoReportItemCheck|"
-#| msgid "Value"
 msgctxt "KReportItemField|"
 msgid "Value"
 msgstr "Valoro"
@@ -261,148 +204,104 @@ msgstr "Valoro"
 #: items/field/KReportItemField.cpp:90
 msgctxt "KReportItemField|"
 msgid "Value used if not bound to a field"
-msgstr ""
+msgstr "Valoro uzata se ne ligita al kampo"
 
 #: items/field/KReportItemField.cpp:94
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Left"
 msgctxt "KReportItemField|"
 msgid "Left"
-msgstr "Maldekstre"
+msgstr "Maldekstra"
 
 #: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Center"
 msgctxt "KReportItemField|"
 msgid "Center"
-msgstr "Centrigita"
+msgstr "Centra"
 
 #: items/field/KReportItemField.cpp:94
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Right"
 msgctxt "KReportItemField|"
 msgid "Right"
 msgstr "Dekstra"
 
 #: items/field/KReportItemField.cpp:96
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Horizontal Alignment"
 msgctxt "KReportItemField|"
 msgid "Horizontal Alignment"
 msgstr "Horizontala alĝustigo"
 
 #: items/field/KReportItemField.cpp:100
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Top"
 msgctxt "KReportItemField|"
 msgid "Top"
-msgstr "Supro"
+msgstr "Supre"
 
 #: items/field/KReportItemField.cpp:100
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Bottom"
 msgctxt "KReportItemField|"
 msgid "Bottom"
 msgstr "Malsupre"
 
 #: items/field/KReportItemField.cpp:102
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Vertical Alignment"
 msgctxt "KReportItemField|"
 msgid "Vertical Alignment"
 msgstr "Vertikala alĝustigo"
 
 #: items/field/KReportItemField.cpp:104
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Font"
 msgctxt "KReportItemField|"
 msgid "Font"
 msgstr "Tiparo"
 
 #: items/field/KReportItemField.cpp:106
-#, fuzzy
-#| msgid "Set background"
 msgctxt "KReportItemField|"
 msgid "Background Color"
-msgstr "Meti fonon"
+msgstr "Fona Koloro"
 
 #: items/field/KReportItemField.cpp:107
-#, fuzzy
-#| msgctxt "KoReportItemCheck|"
-#| msgid "Foreground Color"
 msgctxt "KReportItemField|"
 msgid "Foreground Color"
 msgstr "Malfona Koloro"
 
 #: items/field/KReportItemField.cpp:109
-#, fuzzy
-#| msgid "&Background color:"
 msgctxt "KReportItemField|"
 msgid "Background Opacity"
-msgstr "&Vidfona koloro:"
+msgstr "Fona Opakeco"
 
 #: items/field/KReportItemField.cpp:114
-#, fuzzy
-#| msgid "Line width:"
 msgctxt "KReportItemField|"
 msgid "Line Weight"
-msgstr "Liniolarĝeco:"
+msgstr "Linia pezo"
 
 #: items/field/KReportItemField.cpp:116
-#, fuzzy
-#| msgid "Color"
 msgctxt "KReportItemField|"
 msgid "Line Color"
-msgstr "Koloro"
+msgstr "Linia Koloro"
 
 #: items/field/KReportItemField.cpp:117
-#, fuzzy
-#| msgid "Line Border"
 msgctxt "KReportItemField|"
 msgid "Line Style"
-msgstr "Linirando"
+msgstr "Linia Stilo"
 
 #: items/field/KReportItemField.cpp:119
 msgctxt "KReportItemField|"
 msgid "Word Wrap"
-msgstr ""
+msgstr "Linifaldo"
 
 #: items/field/KReportItemField.cpp:120
 msgctxt "KReportItemField|"
 msgid "Can Grow"
-msgstr ""
+msgstr "Povas Kreski"
 
 #: items/image/KReportItemImage.cpp:119
 msgctxt "KReportItemImage|"
 msgid "Clip"
-msgstr ""
+msgstr "Tondi"
 
 #: items/image/KReportItemImage.cpp:119
-#, fuzzy
-#| msgid "Street:"
 msgctxt "KReportItemImage|"
 msgid "Stretch"
-msgstr "Strato:"
+msgstr "Streĉi"
 
 #: items/image/KReportItemImage.cpp:120
-#, fuzzy
-#| msgid "Resize"
 msgctxt "KReportItemImage|"
 msgid "Resize Mode"
-msgstr "Ŝanĝi grandecon"
+msgstr "Aligrandiga Reĝimo"
 
 #: items/image/KReportItemImage.cpp:121
-#, fuzzy
-#| msgctxt "KoReportItemCheck|"
-#| msgid "Value"
 msgctxt "KReportItemImage|"
 msgid "Value"
 msgstr "Valoro"
@@ -410,126 +309,84 @@ msgstr "Valoro"
 #: items/image/KReportItemImage.cpp:121
 msgctxt "KReportItemImage|"
 msgid "Value used if not bound to a field"
-msgstr ""
+msgstr "Valoro uzata se ne ligita al kampo"
 
 #: items/label/KReportItemLabel.cpp:91
-#, fuzzy
-#| msgid "Collection"
 msgctxt "KReportItemLabel|"
 msgid "Caption"
-msgstr "Aro"
+msgstr "Titolo"
 
 #: items/label/KReportItemLabel.cpp:94
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Left"
 msgctxt "KReportItemLabel|"
 msgid "Left"
-msgstr "Maldekstre"
+msgstr "Maldekstra"
 
 #: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Center"
 msgctxt "KReportItemLabel|"
 msgid "Center"
-msgstr "Centrigita"
+msgstr "Centra"
 
 #: items/label/KReportItemLabel.cpp:94
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Right"
 msgctxt "KReportItemLabel|"
 msgid "Right"
 msgstr "Dekstra"
 
 #: items/label/KReportItemLabel.cpp:96
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Horizontal Alignment"
 msgctxt "KReportItemLabel|"
 msgid "Horizontal Alignment"
 msgstr "Horizontala alĝustigo"
 
 #: items/label/KReportItemLabel.cpp:100
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Top"
 msgctxt "KReportItemLabel|"
 msgid "Top"
-msgstr "Supro"
+msgstr "Supre"
 
 #: items/label/KReportItemLabel.cpp:100
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Bottom"
 msgctxt "KReportItemLabel|"
 msgid "Bottom"
 msgstr "Malsupre"
 
 #: items/label/KReportItemLabel.cpp:102
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Vertical Alignment"
 msgctxt "KReportItemLabel|"
 msgid "Vertical Alignment"
 msgstr "Vertikala alĝustigo"
 
 #: items/label/KReportItemLabel.cpp:104
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Font"
 msgctxt "KReportItemLabel|"
 msgid "Font"
 msgstr "Tiparo"
 
 #: items/label/KReportItemLabel.cpp:106
-#, fuzzy
-#| msgid "Set background"
 msgctxt "KReportItemLabel|"
 msgid "Background Color"
-msgstr "Meti fonon"
+msgstr "Fona Koloro"
 
 #: items/label/KReportItemLabel.cpp:107
-#, fuzzy
-#| msgctxt "KoReportItemCheck|"
-#| msgid "Foreground Color"
 msgctxt "KReportItemLabel|"
 msgid "Foreground Color"
 msgstr "Malfona Koloro"
 
 #: items/label/KReportItemLabel.cpp:109
-#, fuzzy
-#| msgid "&Background color:"
 msgctxt "KReportItemLabel|"
 msgid "Background Opacity"
-msgstr "&Vidfona koloro:"
+msgstr "Fona Opakeco"
 
 #: items/label/KReportItemLabel.cpp:114
-#, fuzzy
-#| msgid "Line width:"
 msgctxt "KReportItemLabel|"
 msgid "Line Weight"
-msgstr "Liniolarĝeco:"
+msgstr "Linia pezo"
 
 #: items/label/KReportItemLabel.cpp:116
-#, fuzzy
-#| msgid "Color"
 msgctxt "KReportItemLabel|"
 msgid "Line Color"
-msgstr "Koloro"
+msgstr "Linia Koloro"
 
 #: items/label/KReportItemLabel.cpp:117
-#, fuzzy
-#| msgid "Line Border"
 msgctxt "KReportItemLabel|"
 msgid "Line Style"
-msgstr "Linirando"
+msgstr "Linia Stilo"
 
 #: items/text/KReportItemText.cpp:115
-#, fuzzy
-#| msgctxt "KoReportItemCheck|"
-#| msgid "Value"
 msgctxt "KReportItemText|"
 msgid "Value"
 msgstr "Valoro"
@@ -537,114 +394,77 @@ msgstr "Valoro"
 #: items/text/KReportItemText.cpp:115
 msgctxt "KReportItemText|"
 msgid "Value used if not bound to a field"
-msgstr ""
+msgstr "Valoro uzata se ne ligita al kampo"
 
 #: items/text/KReportItemText.cpp:119
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Left"
 msgctxt "KReportItemText|"
 msgid "Left"
-msgstr "Maldekstre"
+msgstr "Maldekstra"
 
 #: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Center"
 msgctxt "KReportItemText|"
 msgid "Center"
-msgstr "Centrigita"
+msgstr "Centra"
 
 #: items/text/KReportItemText.cpp:119
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Right"
 msgctxt "KReportItemText|"
 msgid "Right"
 msgstr "Dekstra"
 
 #: items/text/KReportItemText.cpp:121
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Horizontal Alignment"
 msgctxt "KReportItemText|"
 msgid "Horizontal Alignment"
 msgstr "Horizontala alĝustigo"
 
 #: items/text/KReportItemText.cpp:125
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Top"
 msgctxt "KReportItemText|"
 msgid "Top"
-msgstr "Supro"
+msgstr "Supre"
 
 #: items/text/KReportItemText.cpp:125
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Bottom"
 msgctxt "KReportItemText|"
 msgid "Bottom"
 msgstr "Malsupre"
 
 #: items/text/KReportItemText.cpp:127
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Vertical Alignment"
 msgctxt "KReportItemText|"
 msgid "Vertical Alignment"
 msgstr "Vertikala alĝustigo"
 
 #: items/text/KReportItemText.cpp:129
-#, fuzzy
-#| msgctxt "KoReportItemField|"
-#| msgid "Font"
 msgctxt "KReportItemText|"
 msgid "Font"
 msgstr "Tiparo"
 
 #: items/text/KReportItemText.cpp:131
-#, fuzzy
-#| msgid "Set background"
 msgctxt "KReportItemText|"
 msgid "Background Color"
-msgstr "Meti fonon"
+msgstr "Fona Koloro"
 
 #: items/text/KReportItemText.cpp:132
-#, fuzzy
-#| msgctxt "KoReportItemCheck|"
-#| msgid "Foreground Color"
 msgctxt "KReportItemText|"
 msgid "Foreground Color"
 msgstr "Malfona Koloro"
 
 #: items/text/KReportItemText.cpp:134
-#, fuzzy
-#| msgid "Line width:"
 msgctxt "KReportItemText|"
 msgid "Line Weight"
-msgstr "Liniolarĝeco:"
+msgstr "Linia pezo"
 
 #: items/text/KReportItemText.cpp:136
-#, fuzzy
-#| msgid "Color"
 msgctxt "KReportItemText|"
 msgid "Line Color"
-msgstr "Koloro"
+msgstr "Linia Koloro"
 
 #: items/text/KReportItemText.cpp:137
-#, fuzzy
-#| msgid "Line Border"
 msgctxt "KReportItemText|"
 msgid "Line Style"
-msgstr "Linirando"
+msgstr "Linia Stilo"
 
 #: items/text/KReportItemText.cpp:138
-#, fuzzy
-#| msgid "&Background color:"
 msgctxt "KReportItemText|"
 msgid "Background Opacity"
-msgstr "&Vidfona koloro:"
+msgstr "Fona Opakeco"
 
 #: renderer/scripting/KReportScriptHandler.cpp:170
 #, qt-format
@@ -655,22 +475,25 @@ msgid ""
 "Do you want to suppress further messages?\n"
 "(messages will be restored next time the report is opened)"
 msgstr ""
+"Ne povas taksi skripton. Eraro: %1\n"
+"\n"
+"Ĉu vi volas subpremi pliajn mesaĝojn?\n"
+"(mesaĝoj estos restarigitaj venontfoje kiam la raporto estos malfermata)"
 
 #: renderer/scripting/KReportScriptHandler.cpp:171
-#, fuzzy, qt-format
-#| msgid "Script File"
+#, qt-format
 msgctxt "KReportScriptHandler|"
 msgid ""
 "Script code:\n"
 "%1"
-msgstr "Skriptdosiero"
+msgstr ""
+"Skriptokodo:\n"
+"%1"
 
 #: renderer/scripting/KReportScriptHandler.cpp:187
-#, fuzzy
-#| msgid "Internal error"
 msgctxt "KReportScriptHandler|"
 msgid "Script Error"
-msgstr "Interna eraro"
+msgstr "Skripta Eraro"
 
 #: wrtembed/KReportDesigner.cpp:310
 #, qt-format
@@ -680,172 +503,126 @@ msgid ""
 "JavaScript language are supported. To prevent losing the scripts, their type "
 "and content will not be changed unless you change these scripts."
 msgstr ""
+"Ĉi tiu raporto enhavas skriptojn de tipo \"%1\". Nur skriptoj skribitaj en "
+"JavaScript lingvo estas subtenataj. Por eviti perdi la skriptojn, ilia tipo "
+"kaj enhavo ne estos ŝanĝitaj krom se vi ŝanĝas ĉi tiujn skriptojn."
 
 #: wrtembed/KReportDesigner.cpp:315
 msgctxt "KReportDesigner|"
 msgid "Unsupported Script Type"
-msgstr ""
+msgstr "Nesubtenata Skripto-Tipo"
 
 #: wrtembed/KReportDesigner.cpp:676
-#, fuzzy
-#| msgid "Page Preview"
 msgctxt "KReportDesigner|"
 msgid "Page Header (Any)"
-msgstr "Antaŭrigardo"
+msgstr "Paĝa kaplinio (iu ajn)"
 
 #: wrtembed/KReportDesigner.cpp:680
-#, fuzzy
-#| msgid "Page Preview"
 msgctxt "KReportDesigner|"
 msgid "Page Header (Even)"
-msgstr "Antaŭrigardo"
+msgstr "Paĝa kaplinio (Para)"
 
 #: wrtembed/KReportDesigner.cpp:684
-#, fuzzy
-#| msgid "Page Preview"
 msgctxt "KReportDesigner|"
 msgid "Page Header (Odd)"
-msgstr "Antaŭrigardo"
+msgstr "Paĝa kaplinio (Nepara)"
 
 #: wrtembed/KReportDesigner.cpp:688
-#, fuzzy
-#| msgid "Page Preview"
 msgctxt "KReportDesigner|"
 msgid "Page Header (First)"
-msgstr "Antaŭrigardo"
+msgstr "Paĝa kaplinio (Unua)"
 
 #: wrtembed/KReportDesigner.cpp:692
-#, fuzzy
-#| msgid "Page Preview"
 msgctxt "KReportDesigner|"
 msgid "Page Header (Last)"
-msgstr "Antaŭrigardo"
+msgstr "Paĝa kaplinio (Lasta)"
 
 #: wrtembed/KReportDesigner.cpp:696
-#, fuzzy
-#| msgid "Footer"
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Any)"
-msgstr "Piedo"
+msgstr "Paĝpiedo (Iu ajn)"
 
 #: wrtembed/KReportDesigner.cpp:700
-#, fuzzy
-#| msgid "Footer"
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Even)"
-msgstr "Piedo"
+msgstr "Paĝpiedo (Para)"
 
 #: wrtembed/KReportDesigner.cpp:704
-#, fuzzy
-#| msgid "Footer"
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Odd)"
-msgstr "Piedo"
+msgstr "Paĝpiedo (Nepara)"
 
 #: wrtembed/KReportDesigner.cpp:708
-#, fuzzy
-#| msgid "Footer"
 msgctxt "KReportDesigner|"
 msgid "Page Footer (First)"
-msgstr "Piedo"
+msgstr "Paĝpiedo (Unua)"
 
 #: wrtembed/KReportDesigner.cpp:712
-#, fuzzy
-#| msgid "Footer"
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Last)"
-msgstr "Piedo"
+msgstr "Paĝpiedo (Lasta)"
 
 #: wrtembed/KReportDesigner.cpp:716
-#, fuzzy
-#| msgid "Header"
 msgctxt "KReportDesigner|"
 msgid "Report Header"
-msgstr "Kapo"
+msgstr "Raporta Kapo"
 
 #: wrtembed/KReportDesigner.cpp:720
-#, fuzzy
-#| msgid "Footer"
 msgctxt "KReportDesigner|"
 msgid "Report Footer"
-msgstr "Piedo"
+msgstr "Raporta Piedo"
 
 #: wrtembed/KReportDesigner.cpp:808
-#, fuzzy
-#| msgid "Export"
 msgctxt "KReportDesigner|Main report element"
 msgid "Report"
-msgstr "Eksporti"
+msgstr "Raporto"
 
 #: wrtembed/KReportDesigner.cpp:813
-#, fuzzy
-#| msgid "Title:"
 msgctxt "KReportDesigner|"
 msgid "Title"
-msgstr "Titolo:"
+msgstr "Titolo"
 
 #: wrtembed/KReportDesigner.cpp:813
-#, fuzzy
-#| msgid "Footer"
 msgctxt "KReportDesigner|"
 msgid "Report Title"
-msgstr "Piedo"
+msgstr "Raporta Titolo"
 
 #: wrtembed/KReportDesigner.cpp:818
-#, fuzzy
-#| msgctxt "KoReportDesigner|"
-#| msgid "Page Size"
 msgctxt "KReportDesigner|"
 msgid "Page Size"
 msgstr "Paĝograndeco"
 
 #: wrtembed/KReportDesigner.cpp:821
-#, fuzzy
-#| msgctxt "KoReportDesigner|"
-#| msgid "Page Size"
 msgctxt "KReportDesigner|"
 msgid "Custom Page Size"
-msgstr "Paĝograndeco"
+msgstr "Propra Paĝa Grandeco"
 
 #: wrtembed/KReportDesigner.cpp:825
-#, fuzzy
-#| msgid "String:"
 msgctxt "KReportDesigner|"
 msgid "Portrait"
-msgstr "Signoĉeno:"
+msgstr "Portreto"
 
 #: wrtembed/KReportDesigner.cpp:825
-#, fuzzy
-#| msgid "La&ndscape"
 msgctxt "KReportDesigner|"
 msgid "Landscape"
-msgstr "Horizo&ntale"
+msgstr "Pejzaĝo"
 
 #: wrtembed/KReportDesigner.cpp:827
-#, fuzzy
-#| msgid "Orientation"
 msgctxt "KReportDesigner|"
 msgid "Page Orientation"
-msgstr "Orientiĝo"
+msgstr "Paĝa Orientiĝo"
 
 #: wrtembed/KReportDesigner.cpp:832
-#, fuzzy
-#| msgid "Page Size"
 msgctxt "KReportDesigner|"
 msgid "Page Unit"
-msgstr "Paĝograndeco"
+msgstr "Paĝa Unuo"
 
 #: wrtembed/KReportDesigner.cpp:833
-#, fuzzy
-#| msgid "Show &Grid"
 msgctxt "KReportDesigner|"
 msgid "Show Grid"
-msgstr "Montri &Kradon"
+msgstr "Montri Kradon"
 
 #: wrtembed/KReportDesigner.cpp:834
-#, fuzzy
-#| msgctxt "KoReportDesigner|"
-#| msgid "Snap to Grid"
 msgctxt "KReportDesigner|"
 msgid "Snap to Grid"
 msgstr "Kapti per Krado"
@@ -853,84 +630,59 @@ msgstr "Kapti per Krado"
 #: wrtembed/KReportDesigner.cpp:835
 msgctxt "KReportDesigner|"
 msgid "Grid Divisions"
-msgstr ""
+msgstr "Kradaj Sekcioj"
 
 #: wrtembed/KReportDesigner.cpp:841
-#, fuzzy
-#| msgid "Margins"
 msgctxt "KReportDesigner|"
 msgid "Left Margin"
-msgstr "Marĝenoj"
+msgstr "Maldekstra Marĝeno"
 
 #: wrtembed/KReportDesigner.cpp:843
-#, fuzzy
-#| msgid "Right indent"
 msgctxt "KReportDesigner|"
 msgid "Right Margin"
-msgstr "Dekstra deŝovo"
+msgstr "Dekstra Marĝeno"
 
 #: wrtembed/KReportDesigner.cpp:845
-#, fuzzy
-#| msgid "Margins"
 msgctxt "KReportDesigner|"
 msgid "Top Margin"
-msgstr "Marĝenoj"
+msgstr "Supra Marĝeno"
 
 #: wrtembed/KReportDesigner.cpp:847
-#, fuzzy
-#| msgid "Margins"
 msgctxt "KReportDesigner|"
 msgid "Bottom Margin"
-msgstr "Marĝenoj"
+msgstr "Malsupra Marĝeno"
 
 #: wrtembed/KReportDesigner.cpp:869
-#, fuzzy
-#| msgid "Object"
 msgctxt "KReportDesigner|"
 msgid "Object Script"
-msgstr "Objekto"
+msgstr "Objekta Skripto"
 
 #: wrtembed/KReportDesigner.cpp:1067
-#, fuzzy
-#| msgid "Custom"
 msgctxt "KReportDesigner|"
 msgid "Cut"
-msgstr "Propra"
+msgstr "Tranĉi"
 
 #: wrtembed/KReportDesigner.cpp:1071
-#, fuzzy
-#| msgid "Company:"
 msgctxt "KReportDesigner|"
 msgid "Copy"
-msgstr "Firmao:"
+msgstr "Kopii"
 
 #: wrtembed/KReportDesigner.cpp:1076
-#, fuzzy
-#| msgid "Date"
 msgctxt "KReportDesigner|"
 msgid "Paste"
-msgstr "Dato"
+msgstr "Alglui"
 
 #: wrtembed/KReportDesigner.cpp:1087
-#, fuzzy
-#| msgctxt "KoReportDesigner|"
-#| msgid "Delete"
 msgctxt "KReportDesigner|"
 msgid "Delete"
 msgstr "Forigi"
 
 #: wrtembed/KReportDesigner.cpp:1129
-#, fuzzy
-#| msgctxt "KoReportDesigner|"
-#| msgid "Line"
 msgctxt "KReportDesigner|Report line element"
 msgid "Line"
 msgstr "Linio"
 
 #: wrtembed/KReportDesigner.cpp:1476
-#, fuzzy
-#| msgctxt "KoReportDesigner|"
-#| msgid "Line"
 msgctxt "KReportDesigner|"
 msgid "Line"
 msgstr "Linio"
@@ -938,106 +690,87 @@ msgstr "Linio"
 #: wrtembed/KReportDesigner.cpp:1519
 msgctxt "KReportDesigner|"
 msgid "Cu&t"
-msgstr ""
+msgstr "&Tondi"
 
 #: wrtembed/KReportDesigner.cpp:1521
 msgctxt "KReportDesigner|"
 msgid "Cut selection to clipboard"
-msgstr ""
+msgstr "Tranĉi elekton al tondujo"
 
 #: wrtembed/KReportDesigner.cpp:1525
-#, fuzzy
-#| msgid "Company:"
 msgctxt "KReportDesigner|"
 msgid "&Copy"
-msgstr "Firmao:"
+msgstr "&Kopii"
 
 #: wrtembed/KReportDesigner.cpp:1527
 msgctxt "KReportDesigner|"
 msgid "Copy selection to clipboard"
-msgstr ""
+msgstr "Kopii elekton al tondujo"
 
 #: wrtembed/KReportDesigner.cpp:1531
-#, fuzzy
-#| msgid "Date"
 msgctxt "KReportDesigner|"
 msgid "&Paste"
-msgstr "Dato"
+msgstr "&Alglui"
 
 #: wrtembed/KReportDesigner.cpp:1533
 msgctxt "KReportDesigner|"
 msgid "Paste clipboard content"
-msgstr ""
+msgstr "Alglui enhavon de la tondujo"
 
 #: wrtembed/KReportDesigner.cpp:1544
-#, fuzzy
-#| msgid "Section"
 msgctxt "KReportDesigner|"
 msgid "Edit Sections"
-msgstr "Aro"
+msgstr "Redakti Sekciojn"
 
 #: wrtembed/KReportDesigner.cpp:1547
 msgctxt "KReportDesigner|"
 msgid "Raise"
-msgstr ""
+msgstr "Levi"
 
 #: wrtembed/KReportDesigner.cpp:1549
 msgctxt "KReportDesigner|"
 msgid "Lower"
-msgstr ""
+msgstr "Mallevi"
 
 #: wrtembed/KReportDesignerSection.cpp:126
-#, fuzzy
-#| msgctxt "ReportSection|"
-#| msgid "Detail"
 msgctxt "KReportDesignerSection|"
 msgid "Detail"
 msgstr "Detalo"
 
 #: wrtembed/KReportDetailGroupSectionDialog.cpp:35
-#, fuzzy
-#| msgid "Group shapes"
 msgctxt "KReportDetailGroupSectionDialog|"
 msgid "Group Section Editor"
-msgstr "Grupigi formojn"
+msgstr "Grupsekcia Redaktilo"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:34
-#, fuzzy
-#| msgid "Columns:"
 msgctxt "DetailGroupSectionDialog|"
 msgid "Column:"
-msgstr "Kolumnoj:"
+msgstr "Kolumno:"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:51
-#, fuzzy
-#| msgid "Street:"
 msgctxt "DetailGroupSectionDialog|"
 msgid "Sort:"
-msgstr "Strato:"
+msgstr "Ordigi:"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:68
-#, fuzzy
-#| msgid "Show &Grid"
 msgctxt "DetailGroupSectionDialog|"
 msgid "Show group header:"
-msgstr "Montri &Kradon"
+msgstr "Montri grupkapon:"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:85
-#, fuzzy
-#| msgid "Show &Grid"
 msgctxt "DetailGroupSectionDialog|"
 msgid "Show group footer:"
-msgstr "Montri &Kradon"
+msgstr "Montri gruppiedon:"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:105
 msgctxt "DetailGroupSectionDialog|"
 msgid "Insert page break after group footer:"
-msgstr ""
+msgstr "Enigi paĝrompon post gruppiedo:"
 
 #: wrtembed/KReportPropertiesButton.cpp:26
 msgctxt "KReportPropertiesButton|"
 msgid "Select entire report"
-msgstr ""
+msgstr "Elekti tutan raporton"
 
 #: wrtembed/KReportPropertiesButton.cpp:27
 msgctxt "KReportPropertiesButton|"
@@ -1045,6 +778,8 @@ msgid ""
 "A button that allows a report's surface to be selected, allowing its "
 "properties to be seen."
 msgstr ""
+"Butono kiu permesas la surfacon de raporto esti elektita, permesante ĝiajn "
+"trajtojn esti viditaj."
 
 #: wrtembed/KReportRuler_p.cpp:1472
 msgctxt "KReportRuler|"
@@ -1062,130 +797,89 @@ msgid "Right indent"
 msgstr "Dekstra deŝovo"
 
 #: wrtembed/KReportSectionEditor.cpp:72
-#, fuzzy
-#| msgctxt "SectionEditor|"
-#| msgid "Add..."
 msgctxt "KReportSectionEditor|"
 msgid "Add..."
 msgstr "Aldoni..."
 
 #: wrtembed/KReportSectionEditor.cpp:74
-#, fuzzy
-#| msgctxt "SectionEditor|"
-#| msgid "Edit..."
 msgctxt "KReportSectionEditor|"
 msgid "Edit..."
 msgstr "Redakti..."
 
 #: wrtembed/KReportSectionEditor.cpp:76
-#, fuzzy
-#| msgctxt "KoReportDesigner|"
-#| msgid "Delete"
 msgctxt "KReportSectionEditor|"
 msgid "Delete"
 msgstr "Forigi"
 
 #: wrtembed/KReportSectionEditor.cpp:78
-#, fuzzy
-#| msgctxt "SectionEditor|"
-#| msgid "Move Up"
 msgctxt "KReportSectionEditor|"
 msgid "Move Up"
 msgstr "Supren"
 
 #: wrtembed/KReportSectionEditor.cpp:80
-#, fuzzy
-#| msgctxt "SectionEditor|"
-#| msgid "Move Down"
 msgctxt "KReportSectionEditor|"
 msgid "Move Down"
 msgstr "Malsupren"
 
 #: wrtembed/KReportSectionEditor.cpp:311
-#, fuzzy
-#| msgctxt "SectionEditor|"
-#| msgid "Ascending"
 msgctxt "KReportSectionEditor|"
 msgid "Ascending"
 msgstr "Kreskante"
 
 #: wrtembed/KReportSectionEditor.cpp:312
-#, fuzzy
-#| msgctxt "SectionEditor|"
-#| msgid "Descending"
 msgctxt "KReportSectionEditor|"
 msgid "Descending"
 msgstr "Malkreskante"
 
 #: wrtembed/KReportSectionEditor.ui:29
-#, fuzzy
-#| msgid "Show &Grid"
 msgctxt "SectionEditor|"
 msgid "Show report header"
-msgstr "Montri &Kradon"
+msgstr "Montri raportan kaplinion"
 
 #: wrtembed/KReportSectionEditor.ui:36
-#, fuzzy
-#| msgid "Show &Grid"
 msgctxt "SectionEditor|"
 msgid "Show report footer"
-msgstr "Montri &Kradon"
+msgstr "Montri raportpiedon"
 
 #: wrtembed/KReportSectionEditor.ui:43
-#, fuzzy
-#| msgid "Page Preview"
 msgctxt "SectionEditor|"
 msgid "Page Header"
-msgstr "Antaŭrigardo"
+msgstr "Paĝa Kapo"
 
 #: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
-#, fuzzy
-#| msgid "Fit Page"
 msgctxt "SectionEditor|"
 msgid "First page:"
-msgstr "Konformigi paĝon"
+msgstr "Unua paĝo:"
 
 #: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
-#, fuzzy
-#| msgid "Page"
 msgctxt "SectionEditor|"
 msgid "Even pages:"
-msgstr "Paĝo"
+msgstr "Paraj paĝoj:"
 
 #: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
-#, fuzzy
-#| msgid "Page"
 msgctxt "SectionEditor|"
 msgid "Any pages:"
-msgstr "Paĝo"
+msgstr "Ajna paĝoj:"
 
 #: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
-#, fuzzy
-#| msgid "Fit Page"
 msgctxt "SectionEditor|"
 msgid "Last page:"
-msgstr "Konformigi paĝon"
+msgstr "Lasta paĝo:"
 
 #: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
-#, fuzzy
-#| msgid "Page"
 msgctxt "SectionEditor|"
 msgid "Odd pages:"
-msgstr "Paĝo"
+msgstr "Neparaj paĝoj:"
 
 #: wrtembed/KReportSectionEditor.ui:130
-#, fuzzy
-#| msgid "Footer"
 msgctxt "SectionEditor|"
 msgid "Page Footer"
-msgstr "Piedo"
+msgstr "Paĝa Piedo"
 
 #: wrtembed/KReportSectionEditor.ui:217
-#, fuzzy
-#| msgid "Group shapes"
 msgctxt "SectionEditor|"
 msgid "Group Sections"
-msgstr "Grupigi formojn"
+msgstr "Grupaj Sekcioj"
 
 #: wrtembed/KReportZoomMode_p.cpp:28
 #, qt-format
@@ -1206,3670 +900,9 @@ msgstr "Konformigi paĝon"
 #: wrtembed/KReportZoomMode_p.cpp:32
 msgctxt "KReportZoomMode|"
 msgid "Actual Pixels"
-msgstr ""
+msgstr "Faktaj Rastrumeroj"
 
 #: wrtembed/KReportZoomMode_p.cpp:36
-#, fuzzy
-#| msgid "Fit Page Width"
 msgctxt "KReportZoomMode|"
 msgid "Fit Text Width"
-msgstr "Konformigi larĝecon de paĝo"
-
-#, fuzzy
-#~| msgctxt "KReportPageFormat|"
-#~| msgid "US Letter"
-#~ msgctxt ""
-#~ "KReportPageFormat|Usually don't translate literally, use \"US Letter\""
-#~ msgid "US Letter"
-#~ msgstr "US Letter"
-
-#, fuzzy
-#~| msgctxt "KReportPageFormat|"
-#~| msgid "US Legal"
-#~ msgctxt ""
-#~ "KReportPageFormat|Usually don't translate literally, use \"US Legal\""
-#~ msgid "US Legal"
-#~ msgstr "US Legal"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "Custom"
-#~ msgstr "Propra"
-
-#, fuzzy
-#~| msgid "B"
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "B6"
-#~ msgstr "B"
-
-#, fuzzy
-#~| msgid "B"
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "B5"
-#~ msgstr "B"
-
-#, fuzzy
-#~| msgid "B"
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "B4"
-#~ msgstr "B"
-
-#, fuzzy
-#~| msgid "Execute"
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "Executive"
-#~ msgstr "Lanĉi"
-
-#, fuzzy
-#~| msgid "B"
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "B0"
-#~ msgstr "B"
-
-#, fuzzy
-#~| msgid "B"
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "B1"
-#~ msgstr "B"
-
-#, fuzzy
-#~| msgctxt "KReportPageFormat|"
-#~| msgid "ISO B10"
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "B10"
-#~ msgstr "ISO B10"
-
-#, fuzzy
-#~| msgid "B"
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "B2"
-#~ msgstr "B"
-
-#, fuzzy
-#~| msgid "B"
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "B3"
-#~ msgstr "B"
-
-#, fuzzy
-#~| msgid "Comma"
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "Comm10"
-#~ msgstr "Komo"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "ISO DL"
-#~ msgstr "ISO DL"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "US Ledger"
-#~ msgstr "US Ledger"
-
-#, fuzzy
-#~| msgid "Postal code:"
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "Postcard"
-#~ msgstr "Urbokodo:"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgctxt "KReportItemField|"
-#~ msgid "Data Source"
-#~ msgstr "Forigi"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgctxt "KReportItemImage|"
-#~ msgid "Data Source"
-#~ msgstr "Forigi"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgctxt "KReportItemText|"
-#~ msgid "Data Source"
-#~ msgstr "Forigi"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "Screen"
-#~ msgstr "Ekrano"
-
-#, fuzzy
-#~| msgid "Height:"
-#~ msgctxt "KReportSection|"
-#~ msgid "Height"
-#~ msgstr "Alteco:"
-
-#, fuzzy
-#~| msgid "Set background"
-#~ msgctxt "KReportSection|"
-#~ msgid "Background Color"
-#~ msgstr "Meti fonon"
-
-#, fuzzy
-#~| msgctxt "KRPos|"
-#~| msgid "Position"
-#~ msgctxt "KReportPosition|"
-#~ msgid "Position"
-#~ msgstr "Pozicio"
-
-#, fuzzy
-#~| msgid "&Size:"
-#~ msgctxt "KReportSize|"
-#~ msgid "Size"
-#~ msgstr "&Grandeco:"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "ISO A3"
-#~ msgstr "ISO A3"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "ISO A4"
-#~ msgstr "ISO A4"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "ISO A5"
-#~ msgstr "ISO A5"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "ISO B5"
-#~ msgstr "ISO B5"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "US Executive"
-#~ msgstr "US Executive"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "ISO A0"
-#~ msgstr "ISO A0"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "ISO A1"
-#~ msgstr "ISO A1"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "ISO A2"
-#~ msgstr "ISO A2"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "ISO A6"
-#~ msgstr "ISO A6"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "ISO A7"
-#~ msgstr "ISO A7"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "ISO A8"
-#~ msgstr "ISO A8"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "ISO A9"
-#~ msgstr "ISO A9"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "ISO B0"
-#~ msgstr "ISO B0"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "ISO B1"
-#~ msgstr "ISO B1"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "ISO B2"
-#~ msgstr "ISO B2"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "ISO B3"
-#~ msgstr "ISO B3"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "ISO B4"
-#~ msgstr "ISO B4"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "ISO B6"
-#~ msgstr "ISO B6"
-
-#~ msgctxt "KReportPageFormat|"
-#~ msgid "ISO C5"
-#~ msgstr "ISO C5"
-
-#, fuzzy
-#~| msgid "Height:"
-#~ msgctxt "KRSectionData|"
-#~ msgid "Height"
-#~ msgstr "Alteco:"
-
-#, fuzzy
-#~| msgid "Set background"
-#~ msgctxt "KRSectionData|"
-#~ msgid "Background Color"
-#~ msgstr "Meti fonon"
-
-#, fuzzy
-#~| msgid "Line width:"
-#~ msgctxt "KoReportItemCheck|"
-#~ msgid "Line Weight"
-#~ msgstr "Liniolarĝeco:"
-
-#, fuzzy
-#~| msgid "Color"
-#~ msgctxt "KoReportItemCheck|"
-#~ msgid "Line Color"
-#~ msgstr "Koloro"
-
-#, fuzzy
-#~| msgid "Line Border"
-#~ msgctxt "KoReportItemCheck|"
-#~ msgid "Line Style"
-#~ msgstr "Linirando"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgctxt "KoReportItemField|"
-#~ msgid "Data Source"
-#~ msgstr "Forigi"
-
-#~ msgctxt "KoReportItemField|"
-#~ msgid "Value"
-#~ msgstr "Valoro"
-
-#, fuzzy
-#~| msgid "Set background"
-#~ msgctxt "KoReportItemField|"
-#~ msgid "Background Color"
-#~ msgstr "Meti fonon"
-
-#~ msgctxt "KoReportItemField|"
-#~ msgid "Foreground Color"
-#~ msgstr "Malfona Koloro"
-
-#, fuzzy
-#~| msgid "Line width:"
-#~ msgctxt "KoReportItemField|"
-#~ msgid "Line Weight"
-#~ msgstr "Liniolarĝeco:"
-
-#, fuzzy
-#~| msgid "Color"
-#~ msgctxt "KoReportItemField|"
-#~ msgid "Line Color"
-#~ msgstr "Koloro"
-
-#, fuzzy
-#~| msgid "Line Border"
-#~ msgctxt "KoReportItemField|"
-#~ msgid "Line Style"
-#~ msgstr "Linirando"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgctxt "KoReportItemImage|"
-#~ msgid "Data Source"
-#~ msgstr "Forigi"
-
-#~ msgctxt "KoReportItemImage|"
-#~ msgid "Value"
-#~ msgstr "Valoro"
-
-#~ msgctxt "KoReportItemLabel|"
-#~ msgid "Left"
-#~ msgstr "Maldekstre"
-
-#~ msgctxt "KoReportItemLabel|"
-#~ msgid "Center"
-#~ msgstr "Centrigita"
-
-#~ msgctxt "KoReportItemLabel|"
-#~ msgid "Right"
-#~ msgstr "Dekstra"
-
-#~ msgctxt "KoReportItemLabel|"
-#~ msgid "Horizontal Alignment"
-#~ msgstr "Horizontala alĝustigo"
-
-#~ msgctxt "KoReportItemLabel|"
-#~ msgid "Top"
-#~ msgstr "Supro"
-
-#~ msgctxt "KoReportItemLabel|"
-#~ msgid "Bottom"
-#~ msgstr "Malsupre"
-
-#~ msgctxt "KoReportItemLabel|"
-#~ msgid "Vertical Alignment"
-#~ msgstr "Vertikala alĝustigo"
-
-#~ msgctxt "KoReportItemLabel|"
-#~ msgid "Font"
-#~ msgstr "Tiparo"
-
-#, fuzzy
-#~| msgid "Set background"
-#~ msgctxt "KoReportItemLabel|"
-#~ msgid "Background Color"
-#~ msgstr "Meti fonon"
-
-#~ msgctxt "KoReportItemLabel|"
-#~ msgid "Foreground Color"
-#~ msgstr "Malfona Koloro"
-
-#, fuzzy
-#~| msgid "&Background color:"
-#~ msgctxt "KoReportItemLabel|"
-#~ msgid "Background Opacity"
-#~ msgstr "&Vidfona koloro:"
-
-#, fuzzy
-#~| msgid "Line width:"
-#~ msgctxt "KoReportItemLabel|"
-#~ msgid "Line Weight"
-#~ msgstr "Liniolarĝeco:"
-
-#, fuzzy
-#~| msgid "Color"
-#~ msgctxt "KoReportItemLabel|"
-#~ msgid "Line Color"
-#~ msgstr "Koloro"
-
-#, fuzzy
-#~| msgid "Line Border"
-#~ msgctxt "KoReportItemLabel|"
-#~ msgid "Line Style"
-#~ msgstr "Linirando"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgctxt "KoReportItemText|"
-#~ msgid "Data Source"
-#~ msgstr "Forigi"
-
-#~ msgctxt "KoReportItemText|"
-#~ msgid "Value"
-#~ msgstr "Valoro"
-
-#~ msgctxt "KoReportItemText|"
-#~ msgid "Left"
-#~ msgstr "Maldekstre"
-
-#~ msgctxt "KoReportItemText|"
-#~ msgid "Center"
-#~ msgstr "Centrigita"
-
-#~ msgctxt "KoReportItemText|"
-#~ msgid "Right"
-#~ msgstr "Dekstra"
-
-#~ msgctxt "KoReportItemText|"
-#~ msgid "Horizontal Alignment"
-#~ msgstr "Horizontala alĝustigo"
-
-#~ msgctxt "KoReportItemText|"
-#~ msgid "Top"
-#~ msgstr "Supro"
-
-#~ msgctxt "KoReportItemText|"
-#~ msgid "Bottom"
-#~ msgstr "Malsupre"
-
-#~ msgctxt "KoReportItemText|"
-#~ msgid "Vertical Alignment"
-#~ msgstr "Vertikala alĝustigo"
-
-#~ msgctxt "KoReportItemText|"
-#~ msgid "Font"
-#~ msgstr "Tiparo"
-
-#, fuzzy
-#~| msgid "Set background"
-#~ msgctxt "KoReportItemText|"
-#~ msgid "Background Color"
-#~ msgstr "Meti fonon"
-
-#~ msgctxt "KoReportItemText|"
-#~ msgid "Foreground Color"
-#~ msgstr "Malfona Koloro"
-
-#, fuzzy
-#~| msgid "Line width:"
-#~ msgctxt "KoReportItemText|"
-#~ msgid "Line Weight"
-#~ msgstr "Liniolarĝeco:"
-
-#, fuzzy
-#~| msgid "Color"
-#~ msgctxt "KoReportItemText|"
-#~ msgid "Line Color"
-#~ msgstr "Koloro"
-
-#, fuzzy
-#~| msgid "Line Border"
-#~ msgctxt "KoReportItemText|"
-#~ msgid "Line Style"
-#~ msgstr "Linirando"
-
-#, fuzzy
-#~| msgid "&Background color:"
-#~ msgctxt "KoReportItemText|"
-#~ msgid "Background Opacity"
-#~ msgstr "&Vidfona koloro:"
-
-#~ msgctxt "SectionEditor|"
-#~ msgid "Delete"
-#~ msgstr "Forigi"
-
-#, fuzzy
-#~| msgid "Script Manager"
-#~ msgctxt "KoReportDesigner|"
-#~ msgid "Script Interpreter"
-#~ msgstr "Skriptadministrilo"
-
-#, fuzzy
-#~| msgid "Color name:"
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Kolornomo:"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "axel@esperanto-jeunes.org"
-
-#, fuzzy
-#~| msgid "Break subpath"
-#~ msgid "Draw path"
-#~ msgstr "Rompi subpadon"
-
-#, fuzzy
-#~| msgid "Break subpath"
-#~ msgid "Freehand path"
-#~ msgstr "Rompi subpadon"
-
-#~ msgid "Precision:"
-#~ msgstr "Precizeco:"
-
-#~ msgctxt "The raw line data"
-#~ msgid "Raw"
-#~ msgstr "Kruda"
-
-#~ msgid "Curve"
-#~ msgstr "Kurbo"
-
-#, fuzzy
-#~| msgid "String:"
-#~ msgid "Straight"
-#~ msgstr "Signoĉeno:"
-
-#, fuzzy
-#~| msgid "Combine paths"
-#~ msgid "Combine angle:"
-#~ msgstr "Kombini padojn"
-
-#, fuzzy
-#~| msgid "Could not export file."
-#~ msgid "Could not open \"%1\" project file."
-#~ msgstr "Ne eblis eksporti dosieron."
-
-#, fuzzy
-#~| msgid "The file %1 does not exist."
-#~ msgid "The database \"%1\" does not exist."
-#~ msgstr "La dosiero %1 ne ekzistas."
-
-#, fuzzy
-#~| msgid "The file %1 does not exist."
-#~ msgid "The database file \"%1\" does not exist."
-#~ msgstr "La dosiero %1 ne ekzistas."
-
-#, fuzzy
-#~| msgid "The file %1 does not exist."
-#~ msgid "Database file \"%1\" is not writable."
-#~ msgstr "La dosiero %1 ne ekzistas."
-
-#, fuzzy
-#~| msgid "Create shape"
-#~ msgid "Creating table failed."
-#~ msgstr "Krei ŝablonon"
-
-#, fuzzy
-#~| msgid "Could not read the package \"%1\"."
-#~ msgid "Could not create the same table \"%1\" twice."
-#~ msgstr "Ne eblis legi la pakaĵon \"%1\"."
-
-#, fuzzy
-#~| msgid "The file %1 does not exist."
-#~ msgid "Table \"%1\" does not exist."
-#~ msgstr "La dosiero %1 ne ekzistas."
-
-#, fuzzy
-#~| msgid ""
-#~| "Could not load embedded object:\n"
-#~| "%1"
-#~ msgid "Could not remove object's data."
-#~ msgstr ""
-#~ "Ne eblis ŝargi enkonstruitan objekton:\n"
-#~ "%1"
-
-#, fuzzy
-#~| msgid "Could not read the beginning of the file."
-#~ msgid "Could not alter table \"%1\" using the same table as destination."
-#~ msgstr "Ne povis legi la komencon de la dosiero."
-
-#, fuzzy
-#~| msgid "Could not read the beginning of the file."
-#~ msgid "Could not rename table \"%1\" using the same name."
-#~ msgstr "Ne povis legi la komencon de la dosiero."
-
-#, fuzzy
-#~| msgid "The file %1 does not exist."
-#~ msgid "Query \"%1\" does not exist."
-#~ msgstr "La dosiero %1 ne ekzistas."
-
-#, fuzzy
-#~| msgid "Create shape"
-#~ msgid "Begin transaction failed."
-#~ msgstr "Krei ŝablonon"
-
-#, fuzzy
-#~| msgid "This name is already used."
-#~ msgid "Transaction already started."
-#~ msgstr "Tiu nomo jam estas uzata."
-
-#, fuzzy
-#~| msgid "The file %1 does not exist."
-#~ msgid "Column <resource>%1</resource> does not exist in the query."
-#~ msgstr "La dosiero %1 ne ekzistas."
-
-#, fuzzy
-#~| msgid "Error while saving embedded documents"
-#~ msgctxt "Extended schema for a table: loading error"
-#~ msgid "Error while loading extended table schema."
-#~ msgstr "Eraro dum konservado de enmetitaj dokumentoj"
-
-#, fuzzy
-#~| msgid ""
-#~| "Parsing error in %1 at line %2, column %3\n"
-#~| "Error message: %4"
-#~ msgid ""
-#~ "Error in XML data: \"%1\" in line %2, column %3.\n"
-#~ "XML data: %4"
-#~ msgstr ""
-#~ "Eraro dum analizado en %1 ĉe linio %2, kolumno %3\n"
-#~ "Erarmesaĝo: %4"
-
-#, fuzzy
-#~| msgid "Could not read the package \"%1\"."
-#~ msgid "Could not insert record because there is no master table specified."
-#~ msgstr "Ne eblis legi la pakaĵon \"%1\"."
-
-#, fuzzy
-#~| msgid "Could not read the package \"%1\"."
-#~ msgid "Could not delete record because there is no master table specified."
-#~ msgstr "Ne eblis legi la pakaĵon \"%1\"."
-
-#~ msgid "Unknown error."
-#~ msgstr "Nekonata eraro."
-
-#, fuzzy
-#~| msgid "Date: %1"
-#~ msgctxt "@info"
-#~ msgid "file: %1"
-#~ msgstr "Dato: %1"
-
-#, fuzzy
-#~| msgid "Could not read the package \"%1\"."
-#~ msgid "Could not set value of database property \"%1\"."
-#~ msgstr "Ne eblis legi la pakaĵon \"%1\"."
-
-#, fuzzy
-#~| msgid "Could not read the package \"%1\"."
-#~ msgid "Could not read database property \"%1\"."
-#~ msgstr "Ne eblis legi la pakaĵon \"%1\"."
-
-#, fuzzy
-#~| msgid "Could not read the beginning of the file."
-#~ msgid "Could not read database properties."
-#~ msgstr "Ne povis legi la komencon de la dosiero."
-
-#, fuzzy
-#~| msgid "Could not read the package \"%1\"."
-#~ msgid "Could not find database driver \"%1\"."
-#~ msgstr "Ne eblis legi la pakaĵon \"%1\"."
-
-#, fuzzy
-#~| msgid "Could not read the package \"%1\"."
-#~ msgid "Could not load database driver \"%1\"."
-#~ msgstr "Ne eblis legi la pakaĵon \"%1\"."
-
-#, fuzzy
-#~| msgid "Could not read the package \"%1\"."
-#~ msgid "Could not find service <resource>%1</resource>."
-#~ msgstr "Ne eblis legi la pakaĵon \"%1\"."
-
-#, fuzzy
-#~| msgid "File not found"
-#~ msgid "Field not found"
-#~ msgstr "Dosiero ne trovita"
-
-#, fuzzy
-#~| msgid "Could not create the file for saving"
-#~ msgid "Could not access the table directly using its name"
-#~ msgstr "Ne eblis krei la dosieron por savi"
-
-#, fuzzy
-#~| msgid "File not found"
-#~ msgid "Table not found"
-#~ msgstr "Dosiero ne trovita"
-
-#, fuzzy
-#~| msgid "The file %1 does not exist."
-#~ msgid "Table \"%1\" has no \"%2\" field."
-#~ msgstr "La dosiero %1 ne ekzistas."
-
-#, fuzzy
-#~| msgid "Number:"
-#~ msgid "Short Integer Number"
-#~ msgstr "Nombro:"
-
-#, fuzzy
-#~| msgid "Number:"
-#~ msgid "Integer Number"
-#~ msgstr "Nombro:"
-
-#, fuzzy
-#~| msgid "Increase Indent"
-#~ msgid "Yes/No Value"
-#~ msgstr "Pligrandigi Deŝovon"
-
-#~ msgid "Date"
-#~ msgstr "Dato"
-
-#, fuzzy
-#~| msgid "Date & Time"
-#~ msgid "Date and Time"
-#~ msgstr "Dato kaj Tempo"
-
-#, fuzzy
-#~| msgid "Time:"
-#~ msgid "Time"
-#~ msgstr "Tempo:"
-
-#~ msgid "Text"
-#~ msgstr "Teksto"
-
-#, fuzzy
-#~| msgid "Text"
-#~ msgid "Long Text"
-#~ msgstr "Teksto"
-
-#~ msgid "Object"
-#~ msgstr "Objekto"
-
-#, fuzzy
-#~| msgid "Change parameter"
-#~ msgid "Floating Point Number"
-#~ msgstr "Ŝanĝi parametron"
-
-#, fuzzy
-#~| msgid "Date & Time"
-#~ msgid "Date/Time"
-#~ msgstr "Dato kaj Tempo"
-
-#, fuzzy
-#~| msgid "Internal error"
-#~ msgid "Syntax error."
-#~ msgstr "Interna eraro"
-
-#, fuzzy
-#~| msgid "Error!"
-#~ msgid "Error"
-#~ msgstr "Eraro!"
-
-#, fuzzy
-#~| msgid "Internal error"
-#~ msgid "Error near \"%1\"."
-#~ msgstr "Interna eraro"
-
-#, fuzzy
-#~| msgid "Create shape"
-#~ msgid "Record inserting failed."
-#~ msgstr "Krei ŝablonon"
-
-#, fuzzy
-#~| msgid "Create shape"
-#~ msgid "Record deleting failed."
-#~ msgstr "Krei ŝablonon"
-
-#, fuzzy
-#~| msgid "Collection"
-#~ msgid "Test Connection"
-#~ msgstr "Aro"
-
-#~ msgid "Number"
-#~ msgstr "Nombro"
-
-#~ msgid "Image"
-#~ msgstr "Bildo"
-
-#, fuzzy
-#~| msgid "Change parameter"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change parameter"
-#~ msgstr "Ŝanĝi parametron"
-
-#, fuzzy
-#~| msgid "Convert to Path"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Convert to Path"
-#~ msgstr "Konverti al Pado"
-
-#, fuzzy
-#~| msgid "Break subpath at points"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Break subpath at points"
-#~ msgstr "Rompi subpadojn ĉe punktoj"
-
-#, fuzzy
-#~| msgid "Combine paths"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Combine paths"
-#~ msgstr "Kombini padojn"
-
-#, fuzzy
-#~| msgid "Move control point"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Move control point"
-#~ msgstr "Movi stirpunkton"
-
-#, fuzzy
-#~| msgid "Set fill rule"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set fill rule"
-#~ msgstr "Meti plenigregulon"
-
-#, fuzzy
-#~| msgid "Insert point"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert points"
-#~ msgstr "Enmeti punkton"
-
-#, fuzzy
-#~| msgid "Merge points"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Merge points"
-#~ msgstr "Kunfandi punktojn"
-
-#, fuzzy
-#~| msgid "Move points"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Move points"
-#~ msgstr "Movi punktojn"
-
-#, fuzzy
-#~| msgid "Remove points"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove points"
-#~ msgstr "Forigi punktojn"
-
-#, fuzzy
-#~| msgid "Set point type"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set point type"
-#~ msgstr "Meit punktotipon"
-
-#, fuzzy
-#~| msgid "Remove subpath"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Reverse paths"
-#~ msgstr "Forigi subpadon"
-
-#, fuzzy
-#~| msgid "Break subpath"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Break subpath"
-#~ msgstr "Rompi subpadon"
-
-#, fuzzy
-#~| msgid "Change segments to curves"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change segments to curves"
-#~ msgstr "Ŝanĝi segmentojn al kurbo"
-
-#, fuzzy
-#~| msgid "Change segments to lines"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change segments to lines"
-#~ msgstr "Ŝanĝi segmentojn al linioj"
-
-#, fuzzy
-#~| msgid "Set border"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set marker"
-#~ msgstr "Meti randon"
-
-#, fuzzy
-#~| msgid "Align shapes"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Align shapes"
-#~ msgstr "Alĝustigi formojn"
-
-#, fuzzy
-#~| msgid "Set background"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set background"
-#~ msgstr "Meti fonon"
-
-#, fuzzy
-#~| msgid "Shape"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Clip Shape"
-#~ msgstr "Formo"
-
-#, fuzzy
-#~| msgid "Create shape"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Create shape"
-#~ msgstr "Krei ŝablonon"
-
-#, fuzzy
-#~| msgid "Delete shape"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete shape"
-#~ msgid_plural "Delete shapes"
-#~ msgstr[0] "Forigi formon"
-#~ msgstr[1] "Forigi formon"
-
-#, fuzzy
-#~| msgid "Distribute shapes"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Distribute shapes"
-#~ msgstr "Distribui formojn"
-
-#, fuzzy
-#~| msgid "Group shapes"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Group shapes"
-#~ msgstr "Grupigi formojn"
-
-#, fuzzy
-#~| msgid "Keep Aspect Ratio"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Keep Aspect Ratio"
-#~ msgstr "Konservi Proporcion"
-
-#, fuzzy
-#~| msgid "Lock shapes"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Lock shapes"
-#~ msgstr "Ŝlosi formojn"
-
-#, fuzzy
-#~| msgid "Move shapes"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Move shapes"
-#~ msgstr "Movi formojn"
-
-#, fuzzy
-#~| msgid "Create Shapes"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Rename Shape"
-#~ msgstr "Krei Formojn"
-
-#, fuzzy
-#~| msgid "Reorder shapes"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Reorder shapes"
-#~ msgstr "Reordigi formojn"
-
-#, fuzzy
-#~| msgid "Change parameter"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change Shape RunAround"
-#~ msgstr "Ŝanĝi parametron"
-
-#, fuzzy
-#~| msgid "Shear shapes"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Shear shapes"
-#~ msgstr "Tondi formojn"
-
-#, fuzzy
-#~| msgid "Reorder shapes"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Resize shapes"
-#~ msgstr "Reordigi formojn"
-
-#, fuzzy
-#~| msgid "Set border"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set stroke"
-#~ msgstr "Meti randon"
-
-#, fuzzy
-#~| msgid "Opacity"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set opacity"
-#~ msgstr "Travideblo"
-
-#, fuzzy
-#~| msgid "Create Shapes"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Unclip Shape"
-#~ msgstr "Krei Formojn"
-
-#, fuzzy
-#~| msgid "Ungroup shapes"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Unclip Shapes"
-#~ msgstr "Malgrupigi formojn"
-
-#, fuzzy
-#~| msgid "Ungroup shapes"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Ungroup shapes"
-#~ msgstr "Malgrupigi formojn"
-
-#, fuzzy
-#~| msgid "Close subpath"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Close subpath"
-#~ msgstr "Fermi subpadon"
-
-#, fuzzy
-#~| msgid "Join subpaths"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Join subpaths"
-#~ msgstr "Kunigi subpadojn"
-
-#, fuzzy
-#~| msgid "Remove subpath"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove subpath"
-#~ msgstr "Forigi subpadon"
-
-#~ msgid "Standard"
-#~ msgstr "Defaŭlta"
-
-#, fuzzy
-#~| msgid "Lightness"
-#~ msgid "Lines"
-#~ msgstr "Heleco"
-
-#~ msgid "Type:"
-#~ msgstr "Tipo:"
-
-#, fuzzy
-#~| msgid "Time:"
-#~ msgid "Tie"
-#~ msgstr "Tempo:"
-
-#, fuzzy
-#~| msgid "Show &Grid"
-#~ msgid "Shows or hides grid"
-#~ msgstr "Montri &Kradon"
-
-#, fuzzy
-#~| msgid "Shear shapes"
-#~ msgid "Simple path shape"
-#~ msgstr "Tondi formojn"
-
-#~ msgid "%1 Options"
-#~ msgstr "%1 Opcioj"
-
-#, fuzzy
-#~| msgid "Create Shapes"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Paste Shapes"
-#~ msgstr "Krei Formojn"
-
-#~ msgid "Active tool: %1"
-#~ msgstr "Aktiva ilo: %1"
-
-#, fuzzy
-#~| msgid "Fit Page"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Paste Image"
-#~ msgstr "Konformigi paĝon"
-
-#, fuzzy
-#~| msgid "None"
-#~ msgid "Nodes"
-#~ msgstr "Neniu"
-
-#~ msgid " px"
-#~ msgstr " rm"
-
-#, fuzzy
-#~| msgid "Guide Lines"
-#~ msgid "Guide lines"
-#~ msgstr "Gvidlinioj..."
-
-#~ msgid "Create object"
-#~ msgstr "Krei objekton"
-
-#~ msgid "Pan"
-#~ msgstr "Panorami"
-
-#, fuzzy
-#~| msgid "Change"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change Segment"
-#~ msgstr "Ŝanĝi"
-
-#~ msgid "Corner point"
-#~ msgstr "Angulpunkto"
-
-#~ msgid "Smooth point"
-#~ msgstr "Glatigpunkto"
-
-#~ msgid "Symmetric Point"
-#~ msgstr "Simetria punkto"
-
-#, fuzzy
-#~| msgid "Merge points"
-#~ msgid "Make curve point"
-#~ msgstr "Kunfandi punktojn"
-
-#, fuzzy
-#~| msgid "Merge points"
-#~ msgid "Make line point"
-#~ msgstr "Kunfandi punktojn"
-
-#~ msgid "Segment to Line"
-#~ msgstr "Segmento al Linio"
-
-#~ msgid "Segment to Curve"
-#~ msgstr "Segmento al Kurbo"
-
-#~ msgid "Insert point"
-#~ msgstr "Enmeti punkton"
-
-#~ msgid "Remove point"
-#~ msgstr "Forigi punkton"
-
-#~ msgid "Break at point"
-#~ msgstr "Rompi ĉe punkto"
-
-#~ msgid "Break at segment"
-#~ msgstr "Rompi ĉe segmento"
-
-#~ msgid "Join with segment"
-#~ msgstr "Kunigi kun segmento"
-
-#~ msgid "Merge points"
-#~ msgstr "Kunfandi punktojn"
-
-#~ msgid "To Path"
-#~ msgstr "Al Pado"
-
-#, fuzzy
-#~| msgid "Currency"
-#~ msgid "Line/Curve"
-#~ msgstr "Valuto"
-
-#, fuzzy
-#~| msgid "Move control point"
-#~ msgid "Drag to move control point."
-#~ msgstr "Movi stirpunkton"
-
-#, fuzzy
-#~| msgid "Break subpath at points"
-#~ msgid "Press B to break path at selected point."
-#~ msgstr "Rompi subpadojn ĉe punktoj"
-
-#, fuzzy
-#~| msgid "Path editing tool"
-#~ msgid "Path editing"
-#~ msgstr "Padredaktilo"
-
-#~ msgid "Zoom"
-#~ msgstr "Zomi"
-
-#~ msgid "Zoom In"
-#~ msgstr "Enzomi"
-
-#~ msgid "Zoom Out"
-#~ msgstr "Elzomi"
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "Convert To Path"
-#~ msgstr "Konverti Al Pado"
-
-#~ msgid "Scripts"
-#~ msgstr "Skriptoj"
-
-#~ msgid "Script Manager"
-#~ msgstr "Skriptadministrilo"
-
-#~ msgid "Execute Script File..."
-#~ msgstr "Lanĉi Skriptdosieron..."
-
-#~ msgid "Script Manager..."
-#~ msgstr "Skriptadministrilo..."
-
-#~ msgid "Execute Script File"
-#~ msgstr "Lanĉi skriptdosieron"
-
-#~ msgid "Install Script Package"
-#~ msgstr "Instali skriptpakaĵon"
-
-#~ msgid "Could not read the package \"%1\"."
-#~ msgstr "Ne eblis legi la pakaĵon \"%1\"."
-
-#~ msgid "Replace"
-#~ msgstr "Anstataŭigi"
-
-#~ msgid "Save"
-#~ msgstr "Konservi"
-
-#~ msgid "Add script file"
-#~ msgstr "Aldoni skriptdosieron"
-
-#~ msgid "Add collection folder"
-#~ msgstr "Aldoni arodosierujon"
-
-#~ msgid "Add"
-#~ msgstr "Aldoni"
-
-#~ msgid "Script"
-#~ msgstr "Skripto"
-
-#~ msgid "Collection"
-#~ msgstr "Aro"
-
-#, fuzzy
-#~| msgid "Change parameter"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change master slide"
-#~ msgstr "Ŝanĝi parametron"
-
-#, fuzzy
-#~| msgid "Change parameter"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change master page"
-#~ msgstr "Ŝanĝi parametron"
-
-#, fuzzy
-#~| msgid "Page Layout"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set Page Layout"
-#~ msgstr "Paĝaranĝo"
-
-#, fuzzy
-#~| msgid "Set background"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Display master background"
-#~ msgstr "Meti fonon"
-
-#, fuzzy
-#~| msgid "Set background"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Display slide background"
-#~ msgstr "Meti fonon"
-
-#, fuzzy
-#~| msgid "Set background"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Display page background"
-#~ msgstr "Meti fonon"
-
-#, fuzzy
-#~| msgid "Show Master Pages"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Show master shapes"
-#~ msgstr "Montri Ĉefpaĝojn"
-
-#, fuzzy
-#~| msgid "Shear shapes"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Hide master shapes"
-#~ msgstr "Tondi formojn"
-
-#, fuzzy
-#~| msgid "Delete shape"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete slide"
-#~ msgid_plural "Delete slides"
-#~ msgstr[0] "Forigi formon"
-#~ msgstr[1] "Forigi formon"
-
-#, fuzzy
-#~| msgid "Delete page"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete page"
-#~ msgid_plural "Delete pages"
-#~ msgstr[0] "Forigi paĝon"
-#~ msgstr[1] "Forigi paĝon"
-
-#, fuzzy
-#~| msgid "Insert Index"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert slide"
-#~ msgstr "Enmeti Indekson"
-
-#, fuzzy
-#~| msgid "Insert page"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert page"
-#~ msgstr "Enmeti paĝon"
-
-#, fuzzy
-#~| msgid "Move shapes"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Move slide"
-#~ msgid_plural "Move slides"
-#~ msgstr[0] "Movi formojn"
-#~ msgstr[1] "Movi formojn"
-
-#, fuzzy
-#~| msgid "Move page"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Move page"
-#~ msgid_plural "Move pages"
-#~ msgstr[0] "Movi paĝon"
-#~ msgstr[1] "Movi paĝon"
-
-#, fuzzy
-#~| msgid "Snap to Grid"
-#~ msgid "Configure"
-#~ msgstr "Kapti per Krado"
-
-#~ msgid "Misc"
-#~ msgstr "Diverso"
-
-#~ msgid "Grid"
-#~ msgstr "Krado"
-
-#, fuzzy
-#~| msgid "Document"
-#~ msgctxt "@title:tab Document settings page"
-#~ msgid "Document"
-#~ msgstr "Dokumento"
-
-#, fuzzy
-#~| msgid "Document Information"
-#~ msgid "Document Settings"
-#~ msgstr "Dokumentinformo"
-
-#, fuzzy
-#~| msgid "Author"
-#~ msgctxt "@title:tab Author page"
-#~ msgid "Author"
-#~ msgstr "Aŭtoro"
-
-#~ msgid "Author"
-#~ msgstr "Aŭtoro"
-
-#, fuzzy
-#~| msgid "Fit Page"
-#~ msgid "Master Slide"
-#~ msgstr "Konformigi paĝon"
-
-#, fuzzy
-#~| msgid "Fit Page"
-#~ msgid "Master Page"
-#~ msgstr "Konformigi paĝon"
-
-#, fuzzy
-#~| msgid "Page"
-#~ msgid "Page  %1"
-#~ msgstr "Paĝo"
-
-#~ msgid "Layer"
-#~ msgstr "Ebeno"
-
-#~ msgid "Group"
-#~ msgstr "Grupigi"
-
-#~ msgid "Shape"
-#~ msgstr "Formo"
-
-#, fuzzy
-#~| msgid "Fit Page"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Rename Slide"
-#~ msgstr "Konformigi paĝon"
-
-#, fuzzy
-#~| msgid "Move page"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Rename Page"
-#~ msgstr "Movi paĝon"
-
-#, fuzzy
-#~| msgid "Create Layer"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Rename Layer"
-#~ msgstr "Krei Ebenon"
-
-#, fuzzy
-#~| msgid "&Size:"
-#~ msgid "Slide"
-#~ msgstr "&Grandeco:"
-
-#~ msgid "Visible"
-#~ msgstr "Videbla"
-
-#~ msgid "Locked"
-#~ msgstr "Ŝlosita"
-
-#, fuzzy
-#~| msgid "Reparent shapes"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Reparent shapes"
-#~ msgstr "Reparencigi formojn"
-
-#, fuzzy
-#~| msgid "Move page"
-#~ msgid "&Move Here"
-#~ msgstr "Movi paĝon"
-
-#, fuzzy
-#~| msgid "Green"
-#~ msgid "&Copy Here"
-#~ msgstr "Verda"
-
-#, fuzzy
-#~| msgid "Change"
-#~ msgid "C&ancel"
-#~ msgstr "Ŝanĝi"
-
-#~ msgid "Document"
-#~ msgstr "Dokumento"
-
-#, fuzzy
-#~| msgid "Add a new layer"
-#~ msgid "Add a new slide or layer"
-#~ msgstr "Aldoni novan ebenon"
-
-#, fuzzy
-#~| msgid "Add a new layer"
-#~ msgid "Add a new page or layer"
-#~ msgstr "Aldoni novan ebenon"
-
-#~ msgid "Page"
-#~ msgstr "Paĝo"
-
-#~ msgid "Delete selected objects"
-#~ msgstr "Forigi elektitajn objektojn"
-
-#~ msgid "Raise selected objects"
-#~ msgstr "Malfonigi elektitajn objektojn"
-
-#~ msgid "Lower selected objects"
-#~ msgstr "Fonigi elektitajn objektojn"
-
-#~ msgid "Detailed View"
-#~ msgstr "Detala rigardo"
-
-#, fuzzy
-#~| msgid "Line Border"
-#~ msgid "View mode"
-#~ msgstr "Linirando"
-
-#~ msgid "New Layer"
-#~ msgstr "Nova Ebeno"
-
-#~ msgid "New layer"
-#~ msgstr "Nove abano"
-
-#, fuzzy
-#~| msgid "Create Layer"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Create Layer"
-#~ msgstr "Krei Ebenon"
-
-#, fuzzy
-#~| msgid "Delete Layer"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete Layer"
-#~ msgstr "Forigi Ebenon"
-
-#, fuzzy
-#~| msgid "Add a new layer"
-#~ msgid "Add a new slide"
-#~ msgstr "Aldoni novan ebenon"
-
-#, fuzzy
-#~| msgid "Add a new layer"
-#~ msgid "Add a new page"
-#~ msgstr "Aldoni novan ebenon"
-
-#, fuzzy
-#~| msgid "Page"
-#~ msgid "Page %1"
-#~ msgstr "Paĝo"
-
-#, fuzzy
-#~| msgid "Fit Page"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Paste Slide"
-#~ msgid_plural "Paste Slides"
-#~ msgstr[0] "Konformigi paĝon"
-#~ msgstr[1] "Konformigi paĝon"
-
-#, fuzzy
-#~| msgid "Fit Page"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Paste Page"
-#~ msgid_plural "Paste Pages"
-#~ msgstr[0] "Konformigi paĝon"
-#~ msgstr[1] "Konformigi paĝon"
-
-#, fuzzy
-#~| msgid "Pan Tool"
-#~ msgid "Tools"
-#~ msgstr "Panoramilo"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgid "D&elete"
-#~ msgstr "Forigi"
-
-#~ msgid "Show Master Pages"
-#~ msgstr "Montri Ĉefpaĝojn"
-
-#~ msgid "Show Rulers"
-#~ msgstr "Montri Liniilojn"
-
-#~ msgid "Insert Page"
-#~ msgstr "Enmeti Paĝon"
-
-#, fuzzy
-#~| msgid "Page"
-#~ msgid "Copy Page"
-#~ msgstr "Paĝo"
-
-#~ msgid "Delete Page"
-#~ msgstr "Forigi Paĝon"
-
-#, fuzzy
-#~| msgid "Delete page"
-#~ msgid "Delete the current page"
-#~ msgstr "Forigi paĝon"
-
-#, fuzzy
-#~| msgid "Fit Page"
-#~ msgid "Master Page..."
-#~ msgstr "Konformigi paĝon"
-
-#, fuzzy
-#~| msgid "Page Layout"
-#~ msgid "Page Layout..."
-#~ msgstr "Paĝaranĝo"
-
-#~ msgid "Variable"
-#~ msgstr "Variablo"
-
-#, fuzzy
-#~| msgid "Import Document"
-#~ msgid "Import Document..."
-#~ msgstr "Importi dokumenton"
-
-#, fuzzy
-#~| msgid "Snap to Grid"
-#~ msgid "Configure..."
-#~ msgstr "Kapti per Krado"
-
-#, fuzzy
-#~| msgid "Import lines:"
-#~ msgid "Import Slideshow"
-#~ msgstr "Importi liniojn:"
-
-#~ msgid "Import Document"
-#~ msgstr "Importi dokumenton"
-
-#, fuzzy
-#~| msgid ""
-#~| "Could not open\n"
-#~| "%1"
-#~ msgid ""
-#~ "Could not import\n"
-#~ "%1"
-#~ msgstr ""
-#~ "Ne eblis malfermi\n"
-#~ "%1Ne eblis malfermi\n"
-#~ "%1"
-
-#, fuzzy
-#~| msgid "Change parameter"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change page layout"
-#~ msgstr "Ŝanĝi parametron"
-
-#, fuzzy
-#~| msgid "Set background"
-#~ msgid "Set image ..."
-#~ msgstr "Meti fonon"
-
-#, fuzzy
-#~| msgid "Set background"
-#~ msgid "Background"
-#~ msgstr "Meti fonon"
-
-#, fuzzy
-#~| msgid "Set background"
-#~ msgid "Page Background"
-#~ msgstr "Meti fonon"
-
-#, fuzzy
-#~| msgid "Page Preview"
-#~ msgid "Page Design"
-#~ msgstr "Antaŭrigardo"
-
-#, fuzzy
-#~| msgid "Set background"
-#~ msgid "Use background of master page"
-#~ msgstr "Meti fonon"
-
-#, fuzzy
-#~| msgid "Set background"
-#~ msgid "Use background of master slide"
-#~ msgstr "Meti fonon"
-
-#, fuzzy
-#~| msgid "Change parameter"
-#~ msgid "Display shapes of master page"
-#~ msgstr "Ŝanĝi parametron"
-
-#, fuzzy
-#~| msgid "Change parameter"
-#~ msgid "Display shapes of master slide"
-#~ msgstr "Ŝanĝi parametron"
-
-#, fuzzy
-#~| msgid "Set background"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change slide background image"
-#~ msgstr "Meti fonon"
-
-#, fuzzy
-#~| msgid "Set background"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change page background image"
-#~ msgstr "Meti fonon"
-
-#, fuzzy
-#~| msgid "Fit Page"
-#~ msgid "Master Slide %1/%2"
-#~ msgstr "Konformigi paĝon"
-
-#, fuzzy
-#~| msgid "&Size:"
-#~ msgid "Slide %1/%2"
-#~ msgstr "&Grandeco:"
-
-#, fuzzy
-#~| msgid "Fit Page"
-#~ msgid "Master Page %1/%2"
-#~ msgstr "Konformigi paĝon"
-
-#, fuzzy
-#~| msgid "Page"
-#~ msgid "Page %1/%2"
-#~ msgstr "Paĝo"
-
-#, fuzzy
-#~| msgid "Check"
-#~ msgid "Check Box"
-#~ msgstr "Ŝalti"
-
-#~ msgid "Field"
-#~ msgstr "Ero"
-
-#, fuzzy
-#~| msgid "Layer"
-#~ msgid "Label"
-#~ msgstr "Ebeno"
-
-#, fuzzy
-#~| msgid "%1 %"
-#~ msgctxt "<data-source>: <object>"
-#~ msgid "%1: %2"
-#~ msgstr "%1 %"
-
-#, fuzzy
-#~| msgid "Change"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change List"
-#~ msgstr "Ŝanĝi"
-
-#, fuzzy
-#~| msgid "Change Filetype"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change Styles"
-#~ msgstr "Ŝanĝ dosiertipon"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete"
-#~ msgstr "Forigi"
-
-#, fuzzy
-#~| msgid "Text"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Text"
-#~ msgstr "Teksto"
-
-#, fuzzy
-#~| msgid "Delete shape"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete Column"
-#~ msgstr "Forigi formon"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete Row"
-#~ msgstr "Forigi"
-
-#, fuzzy
-#~| msgid "Insert point"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Footnote"
-#~ msgstr "Enmeti punkton"
-
-#, fuzzy
-#~| msgid "Insert Index"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Endnote"
-#~ msgstr "Enmeti Indekson"
-
-#, fuzzy
-#~| msgid "Insert point"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Column Right"
-#~ msgstr "Enmeti punkton"
-
-#, fuzzy
-#~| msgid "Insert point"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Column Left"
-#~ msgstr "Enmeti punkton"
-
-#, fuzzy
-#~| msgid "Insert Break"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Row Below"
-#~ msgstr "Enmeti linirompon"
-
-#, fuzzy
-#~| msgid "Insert page"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Row Above"
-#~ msgstr "Enmeti paĝon"
-
-#, fuzzy
-#~| msgid "Change parameter"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change List Numbering"
-#~ msgstr "Ŝanĝi parametron"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Formatting"
-#~ msgstr "Formatado"
-
-#, fuzzy
-#~| msgid "Set Paragraph Style"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Direct Paragraph Formatting"
-#~ msgstr "Meti Alineostilon"
-
-#, fuzzy
-#~| msgid "Create Shapes"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Rename Section"
-#~ msgstr "Krei Formojn"
-
-#, fuzzy
-#~| msgid "Custom Line Width"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Adjust Column Width"
-#~ msgstr "Propra liniolarĝeco"
-
-#, fuzzy
-#~| msgid "Fit Page"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Paste As Text"
-#~ msgstr "Konformigi paĝon"
-
-#, fuzzy
-#~| msgid "Date"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Paste"
-#~ msgstr "Dato"
-
-#, fuzzy
-#~| msgid "Group shapes"
-#~ msgctxt "new numbered section name"
-#~ msgid "New section %1"
-#~ msgstr "Grupigi formojn"
-
-#~ msgctxt "Underline Style"
-#~ msgid "None"
-#~ msgstr "Neniu"
-
-#~ msgctxt "Underline Style"
-#~ msgid "Single"
-#~ msgstr "unuopa"
-
-#~ msgctxt "Underline Style"
-#~ msgid "Double"
-#~ msgstr "duobla"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "New Paragraph"
-#~ msgstr "Nova paragrafo"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add Bookmark"
-#~ msgstr "Aldoni legosignon"
-
-#, fuzzy
-#~| msgid "Position"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add Annotation"
-#~ msgstr "Pozicio"
-
-#, fuzzy
-#~| msgid "Insert Index"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Index"
-#~ msgstr "Enmeti Indekson"
-
-#, fuzzy
-#~| msgid "Insert page"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Variable"
-#~ msgstr "Enmeti paĝon"
-
-#, fuzzy
-#~| msgid "Insert Break"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Break"
-#~ msgstr "Enmeti linirompon"
-
-#, fuzzy
-#~| msgid "Insert page"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Table"
-#~ msgstr "Enmeti paĝon"
-
-#, fuzzy
-#~| msgid "Merge points"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Merge Cells"
-#~ msgstr "Kunfandi punktojn"
-
-#, fuzzy
-#~| msgid "Vertical"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Split Cells"
-#~ msgstr "Vertikala"
-
-#, fuzzy
-#~| msgid "Custom Line Width"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Adjust Table Width"
-#~ msgstr "Propra liniolarĝeco"
-
-#, fuzzy
-#~| msgid "Insert page"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Table Of Contents"
-#~ msgstr "Enmeti paĝon"
-
-#, fuzzy
-#~| msgid "Insert page"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Modify Table Of Contents"
-#~ msgstr "Enmeti paĝon"
-
-#, fuzzy
-#~| msgid "Insert Break"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Bibliography"
-#~ msgstr "Enmeti linirompon"
-
-#, fuzzy
-#~| msgid "Position"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add Citation"
-#~ msgstr "Pozicio"
-
-#, fuzzy
-#~| msgid "Bold"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Bold"
-#~ msgstr "Grasa"
-
-#, fuzzy
-#~| msgid "Italic"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Italic"
-#~ msgstr "Kursiva"
-
-#, fuzzy
-#~| msgid "Underline"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Underline"
-#~ msgstr "Substreko"
-
-#, fuzzy
-#~| msgid "Strike Out"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Strike Out"
-#~ msgstr "Trastreko"
-
-#, fuzzy
-#~| msgid "Change"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change Alignment"
-#~ msgstr "Ŝanĝi"
-
-#, fuzzy
-#~| msgid "Set Vertical Alignment"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set Vertical Alignment"
-#~ msgstr "Meti Vertikalan Alĝustigon"
-
-#, fuzzy
-#~| msgid "Decrease Indent"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Decrease Indent"
-#~ msgstr "Malpligrandigi Deŝovon"
-
-#, fuzzy
-#~| msgid "Increase Indent"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Increase Indent"
-#~ msgstr "Pligrandigi Deŝovon"
-
-#, fuzzy
-#~| msgid "Decrease font size"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Decrease font size"
-#~ msgstr "Malpligrandigi tipargrandecon"
-
-#, fuzzy
-#~| msgid "Increase font size"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Increase font size"
-#~ msgstr "Pligrandigi tipargrandecon"
-
-#, fuzzy
-#~| msgid "Set point type"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set Font"
-#~ msgstr "Meit punktotipon"
-
-#, fuzzy
-#~| msgid "Set point type"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set Font Size"
-#~ msgstr "Meit punktotipon"
-
-#, fuzzy
-#~| msgid "Set background"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set Background Color"
-#~ msgstr "Meti fonon"
-
-#, fuzzy
-#~| msgid "Text Color..."
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set Text Color"
-#~ msgstr "Tekstkoloro..."
-
-#, fuzzy
-#~| msgid "Set Character Style"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set Character Style"
-#~ msgstr "Meti Signostilon"
-
-#, fuzzy
-#~| msgid "Set Paragraph Style"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set Paragraph Style"
-#~ msgstr "Meti Alineostilon"
-
-#, fuzzy
-#~| msgid "Format"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Format"
-#~ msgstr "Formato"
-
-#, fuzzy
-#~| msgid "&Default"
-#~ msgid "Default"
-#~ msgstr "&Apriora"
-
-#~ msgctxt "Default text for redo action"
-#~ msgid "Redo"
-#~ msgstr "Refari"
-
-#~ msgid "<empty>"
-#~ msgstr "<malplena>"
-
-#~ msgid "Redo"
-#~ msgstr "Refari"
-
-#~ msgid "Undo"
-#~ msgstr "Malfari"
-
-#~ msgid "&File"
-#~ msgstr "&Dosiero"
-
-#~ msgid "&Settings"
-#~ msgstr "&Agordo"
-
-#~ msgid "File"
-#~ msgstr "Dosiero"
-
-#, fuzzy
-#~| msgid "Delete page"
-#~ msgid "Delete the author profile"
-#~ msgstr "Forigi paĝon"
-
-#, fuzzy
-#~| msgid "Default tool"
-#~ msgid "Default Author Profile"
-#~ msgstr "Apriora ilo"
-
-#~ msgid "Name:"
-#~ msgstr "Nomo:"
-
-#~ msgid "Initials:"
-#~ msgstr "Komencliteroj:"
-
-#~ msgid "Title:"
-#~ msgstr "Titolo:"
-
-#~ msgid "Position:"
-#~ msgstr "Pozicio:"
-
-#~ msgid "Company:"
-#~ msgstr "Firmao:"
-
-#~ msgid "Email:"
-#~ msgstr "Retpoŝto:"
-
-#~ msgid "Telephone (home):"
-#~ msgstr "Telefono (hejma):"
-
-#~ msgid "Telephone (work):"
-#~ msgstr "Telefono (laboreja):"
-
-#~ msgid "Fax:"
-#~ msgstr "Fakso:"
-
-#~ msgid "Street:"
-#~ msgstr "Strato:"
-
-#~ msgid "City:"
-#~ msgstr "Urbo:"
-
-#~ msgid "Country:"
-#~ msgstr "Lando:"
-
-#, fuzzy
-#~| msgid "Create shape"
-#~ msgid "Create backup file:"
-#~ msgstr "Krei ŝablonon"
-
-#, fuzzy
-#~| msgid "Show &Grid"
-#~ msgid "Show grid:"
-#~ msgstr "Montri &Kradon"
-
-#, fuzzy
-#~| msgid "Snap to Grid"
-#~ msgid "Snap to grid:"
-#~ msgstr "Kapti per Krado"
-
-#, fuzzy
-#~| msgid "&Background color:"
-#~ msgid "Grid color:"
-#~ msgstr "&Vidfona koloro:"
-
-#, fuzzy
-#~| msgid "Space"
-#~ msgid "Spacing"
-#~ msgstr "Spaco"
-
-#, fuzzy
-#~| msgid "&Horizontal"
-#~ msgctxt "Horizontal grid spacing"
-#~ msgid "&Horizontal:"
-#~ msgstr "&Horizontala"
-
-#, fuzzy
-#~| msgid "&Vertical"
-#~ msgctxt "Vertical grid spacing"
-#~ msgid "&Vertical:"
-#~ msgstr "&Vertikala"
-
-#, fuzzy
-#~| msgid "Unit:"
-#~ msgid "Units:"
-#~ msgstr "Unuo:"
-
-#, fuzzy
-#~| msgid "Fit Page"
-#~ msgid "Paste offset:"
-#~ msgstr "Konformigi paĝon"
-
-#~ msgid "Open a new document with a template"
-#~ msgstr "Malfermi novan dokumenton laŭ ŝablono"
-
-#, fuzzy
-#~| msgid "Creation error"
-#~ msgid "%1: Critical Error"
-#~ msgstr "Eraro dum kreado"
-
-#, fuzzy
-#~| msgid "No template found for: %1 "
-#~ msgid "No template found for: %1"
-#~ msgstr "Neniu ŝablono trovita por: %1"
-
-#~ msgid "Too many templates found for: %1"
-#~ msgstr "Tro da ŝablonoj trovitaj por: %1"
-
-#, fuzzy
-#~| msgid "Use This Template"
-#~ msgid "Always use this template"
-#~ msgstr "Uzi tiun ŝablonon"
-
-#~ msgid "Saving..."
-#~ msgstr "Konservanta..."
-
-#~ msgid ""
-#~ "Could not save\n"
-#~ "%1"
-#~ msgstr ""
-#~ "Ne eblis konservi\n"
-#~ "%1Ne eblis konservi\n"
-#~ "%1"
-
-#~ msgid ""
-#~ "Could not save %1\n"
-#~ "Reason: %2"
-#~ msgstr ""
-#~ "Ne eblis konservigi %1\n"
-#~ "Kialo: %2"
-
-#~ msgid "Could not create the file for saving"
-#~ msgstr "Ne eblis krei la dosieron por savi"
-
-#~ msgid "Not able to write '%1'. Partition full?"
-#~ msgstr "Ne eblas skribi '%1'. Diskospaco elĉerpita?"
-
-#, fuzzy
-#~| msgid "Not able to write '%1'. Partition full?"
-#~ msgid "Not able to write RDF metadata. Partition full?"
-#~ msgstr "Ne eblas skribi '%1'. Diskospaco elĉerpita?"
-
-#~ msgid "Error while trying to write '%1'. Partition full?"
-#~ msgstr "Eraro dum skribado de '%1'. Diskospaco elĉerpita?"
-
-#~ msgid ""
-#~ "Malformed URL\n"
-#~ "%1"
-#~ msgstr ""
-#~ "Ne valida ligo (URL)\n"
-#~ "%1"
-
-#~ msgid ""
-#~ "An autosaved file exists for this document.\n"
-#~ "Do you want to open it instead?"
-#~ msgstr ""
-#~ "Ekzistas jam dosiero por aŭtomata sekurigo de tiu dokumento.\n"
-#~ "Ĉu vi volas malfermi ĝin anstataŭe?"
-
-#~ msgid "The file %1 does not exist."
-#~ msgstr "La dosiero %1 ne ekzistas."
-
-#, fuzzy
-#~| msgid "Open Document"
-#~ msgid "Opening Document"
-#~ msgstr "Malfermi dokumenton"
-
-#, fuzzy
-#~| msgid "Could not create the file for saving"
-#~ msgid "Could not create the filter plugin"
-#~ msgstr "Ne eblis krei la dosieron por savi"
-
-#~ msgid "File not found"
-#~ msgstr "Dosiero ne trovita"
-
-#~ msgid "Not implemented"
-#~ msgstr "Ne realigita"
-
-#~ msgid "Internal error"
-#~ msgstr "Interna eraro"
-
-#~ msgid "Unknown error"
-#~ msgstr "Nekonata eraro"
-
-#, fuzzy
-#~| msgid ""
-#~| "Could not open\n"
-#~| "%2.\n"
-#~| "Reason: %1"
-#~ msgid ""
-#~ "Could not open %2.\n"
-#~ "Reason: %1.\n"
-#~ "%3"
-#~ msgstr ""
-#~ "Ne eblis malfermi\n"
-#~ "%2.\n"
-#~ "Kialo: %1"
-
-#~ msgid "Could not find %1"
-#~ msgstr "Ne eblis trovi %1"
-
-#~ msgid ""
-#~ "Parsing error in %1 at line %2, column %3\n"
-#~ "Error message: %4"
-#~ msgstr ""
-#~ "Eraro dum analizado en %1 ĉe linio %2, kolumno %3\n"
-#~ "Erarmesaĝo: %4"
-
-#~ msgid "%1 is not a file."
-#~ msgstr "%1 ne estas dosiero."
-
-#~ msgid "Could not open the file for reading (check read permissions)."
-#~ msgstr "Ne povis malfermi dosieron por legi (kontrolu lego-permesojn)."
-
-#~ msgid "Could not read the beginning of the file."
-#~ msgstr "Ne povis legi la komencon de la dosiero."
-
-#~ msgid ""
-#~ "parsing error in the main document at line %1, column %2\n"
-#~ "Error message: %3"
-#~ msgstr ""
-#~ "Eraro dum analizado de la ĉefdokumento en linio %1, kolumno %2\n"
-#~ "Erarmesaĝo: %3"
-
-#, fuzzy
-#~| msgid "Not a valid KOffice file: %1"
-#~ msgid "Not a valid Calligra file: %1"
-#~ msgstr "Ne valida KOffice-dosiero: %1"
-
-#~ msgid "Invalid document: no file 'maindoc.xml'."
-#~ msgstr "Ne valida dokumento: neniu dosiero 'maindoc.xml'"
-
-#~ msgid "Untitled"
-#~ msgstr "Sentitola"
-
-#~ msgid ""
-#~ "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save "
-#~ "it?</p>"
-#~ msgstr ""
-#~ "<p>La dokumento <b>'%1'</b> estas ŝanĝita.</p><p>Ĉu vi volas sekurigi ĝin?"
-#~ "</p>"
-
-#~ msgid "Internal error: saveXML not implemented"
-#~ msgstr "Interna eraro: savuXML ne programita"
-
-#~ msgid ""
-#~ "Could not open\n"
-#~ "%1"
-#~ msgstr ""
-#~ "Ne eblis malfermi\n"
-#~ "%1Ne eblis malfermi\n"
-#~ "%1"
-
-#~ msgid ""
-#~ "Could not open %1\n"
-#~ "Reason: %2"
-#~ msgstr ""
-#~ "Ne eblis malfermi %1\n"
-#~ "Kialo: %2"
-
-#~ msgid "a presentation"
-#~ msgstr "prezentaĵo"
-
-#~ msgid "a chart"
-#~ msgstr "diagramo"
-
-#~ msgid "a drawing"
-#~ msgstr "desegnaĵo"
-
-#~ msgid "Close Document"
-#~ msgstr "Fermi dokumenton"
-
-#~ msgid "%1 %"
-#~ msgstr "%1 %"
-
-#~ msgid "No"
-#~ msgstr "Ne"
-
-#~ msgid "Yes"
-#~ msgstr "Jes"
-
-#~ msgid "Could not export file."
-#~ msgstr "Ne eblis eksporti dosieron."
-
-#~ msgid "Missing Export Filter"
-#~ msgstr "Mankas eksportfiltrilo"
-
-#~ msgid ""
-#~ "Could not import file of type\n"
-#~ "%1"
-#~ msgstr ""
-#~ "Ne eblis importi dosieron de la tipo\n"
-#~ "%1"
-
-#~ msgid "Missing Import Filter"
-#~ msgstr "Mankas importfiltrilo"
-
-#~ msgid "Choose Filter"
-#~ msgstr "Elekti filtrilon"
-
-#~ msgid "Case Sensitive"
-#~ msgstr "Usklecodistinga"
-
-#, fuzzy
-#~| msgid "Mid:"
-#~ msgctxt "Label for the Find text input box"
-#~ msgid "Find:"
-#~ msgstr "Meze:"
-
-#, fuzzy
-#~| msgid "Text"
-#~ msgctxt "Next search result"
-#~ msgid "Next"
-#~ msgstr "Teksto"
-
-#, fuzzy
-#~| msgid "Preview:"
-#~ msgctxt "Previous search result"
-#~ msgid "Previous"
-#~ msgstr "Antaŭrigardo:"
-
-#, fuzzy
-#~| msgid "%1 Options"
-#~ msgctxt "Search options"
-#~ msgid "Options"
-#~ msgstr "%1 Opcioj"
-
-#, fuzzy
-#~| msgid "Replace"
-#~ msgctxt "Label for the Replace text input box"
-#~ msgid "Replace:"
-#~ msgstr "Anstataŭigi"
-
-#, fuzzy
-#~| msgid "Replace"
-#~ msgctxt "Replace the current match"
-#~ msgid "Replace"
-#~ msgstr "Anstataŭigi"
-
-#, fuzzy
-#~| msgid "Replace"
-#~ msgctxt "Replace all found matches"
-#~ msgid "Replace All"
-#~ msgstr "Anstataŭigi"
-
-#, fuzzy
-#~| msgid "No template found for: %1 "
-#~ msgctxt "Total number of matches"
-#~ msgid "1 match found"
-#~ msgid_plural "%1 matches found"
-#~ msgstr[0] "Neniu ŝablono trovita por: %1"
-#~ msgstr[1] "Neniu ŝablono trovita por: %1"
-
-#, fuzzy
-#~| msgid "No template found for: %1 "
-#~ msgid "No matches found"
-#~ msgstr "Neniu ŝablono trovita por: %1"
-
-#~ msgid "%1 unsaved document (%2)"
-#~ msgstr "%1 nekonservita dokumento (%2)"
-
-#~ msgid "Reload"
-#~ msgstr "Reŝargi"
-
-#~ msgid "Versions..."
-#~ msgstr "Versioj..."
-
-#, fuzzy
-#~| msgid "Open Existing Document..."
-#~ msgid "Open ex&isting Document as Untitled Document..."
-#~ msgstr "Malfermi ekzistantan dokumenton..."
-
-#~ msgid "E&xport..."
-#~ msgstr "Eks&porti..."
-
-#, fuzzy
-#~| msgid "Import Document"
-#~ msgid "En&crypt Document"
-#~ msgstr "Importi dokumenton"
-
-#~ msgid "&New View"
-#~ msgstr "&Nova Rigardo"
-
-#~ msgid "Document Information"
-#~ msgstr "Dokumentinformo"
-
-#~ msgid "Full Screen Mode"
-#~ msgstr "Plenekrana Reĝimo"
-
-#, fuzzy
-#~| msgid "Show Rulers"
-#~ msgid "Show Dockers"
-#~ msgstr "Montri Liniilojn"
-
-#, fuzzy
-#~| msgid "Show Rulers"
-#~ msgctxt "@action:inmenu"
-#~ msgid "Show Docker Titlebars"
-#~ msgstr "Montri Liniilojn"
-
-#~ msgid "(write protected)"
-#~ msgstr "(skriboprotektita)"
-
-#~ msgid "%1 (unknown file type)"
-#~ msgstr "%1 (nekonata dosiertipo)"
-
-#, fuzzy
-#~| msgid "Untitled"
-#~ msgid "untitled"
-#~ msgstr "Sentitola"
-
-#~ msgid "Open Document"
-#~ msgstr "Malfermi dokumenton"
-
-#, fuzzy
-#~| msgid "Export"
-#~ msgid "Export as PDF"
-#~ msgstr "Eksporti"
-
-#~ msgid "Document - %1"
-#~ msgstr "Dokumento - %1"
-
-#~ msgid "Warning"
-#~ msgstr "Averto"
-
-#~ msgid "Show %1 Toolbar"
-#~ msgstr "Montri ilobreton %1"
-
-#~ msgid "Hide %1 Toolbar"
-#~ msgstr "Kaŝi ilobreton %1"
-
-#, fuzzy
-#~| msgid "Open This Document"
-#~ msgid "Open Existing Document"
-#~ msgstr "Malfermi tiun dokumenton"
-
-#~ msgid "Recent Documents"
-#~ msgstr "Lastatempaj dokumentoj"
-
-#~ msgid "Custom Document"
-#~ msgstr "Propra dokumento"
-
-#~ msgid "Stop"
-#~ msgstr "Halti"
-
-#~ msgid "Printing"
-#~ msgstr "Presado"
-
-#~ msgid "Printing done"
-#~ msgstr "Presado finita"
-
-#~ msgid "Close"
-#~ msgstr "Fermi"
-
-#~ msgid "Stopped"
-#~ msgstr "Haltita"
-
-#~ msgid "Open This Document"
-#~ msgstr "Malfermi tiun dokumenton"
-
-#, fuzzy
-#~| msgid "Show &Grid"
-#~ msgid "Show Guides"
-#~ msgstr "Montri &Kradon"
-
-#~ msgid "Create Template"
-#~ msgstr "Krei ŝablonon"
-
-#, fuzzy
-#~| msgid "Name:"
-#~ msgctxt "Template name"
-#~ msgid "Name:"
-#~ msgstr "Nomo:"
-
-#~ msgid "Group:"
-#~ msgstr "Grupo:"
-
-#~ msgid "&Add Group..."
-#~ msgstr "&Aldoni grupon..."
-
-#~ msgid "&Remove"
-#~ msgstr "Fo&rigi"
-
-#~ msgid "Picture"
-#~ msgstr "Bildo"
-
-#~ msgid "&Preview"
-#~ msgstr "&Antaŭrigardo"
-
-#~ msgid "Custom:"
-#~ msgstr "Propra:"
-
-#~ msgid "&Select..."
-#~ msgstr "&Elekti..."
-
-#~ msgid "Do you really want to overwrite the existing '%1' template?"
-#~ msgstr "Ĉu vi vere volas anstataŭigi la ekzistantan ŝablonon '%1'?"
-
-#~ msgid "Add Group"
-#~ msgstr "Aldoni grupon"
-
-#~ msgid "Enter group name:"
-#~ msgstr "Doni grupnomon:"
-
-#~ msgid "This name is already used."
-#~ msgstr "Tiu nomo jam estas uzata."
-
-#~ msgid "Do you really want to remove that group?"
-#~ msgstr "Ĉu vi vere volas forigi tiun grupon?"
-
-#~ msgid "Remove Group"
-#~ msgstr "Forigi grupon"
-
-#~ msgid "Do you really want to remove that template?"
-#~ msgstr "Ĉu vi vere volas forigi tiun ŝablonon?"
-
-#~ msgid "Remove Template"
-#~ msgstr "Forigi ŝablonon"
-
-#~ msgid "&Delete"
-#~ msgstr "&Forigi"
-
-#~ msgid "Could not load picture."
-#~ msgstr "Ne eblis legi la bildon."
-
-#~ msgid "No picture available."
-#~ msgstr "Neniu bildo uzebla."
-
-#~ msgid "Use This Template"
-#~ msgstr "Uzi tiun ŝablonon"
-
-#~ msgid "Version"
-#~ msgstr "Versio"
-
-#~ msgid "Date & Time"
-#~ msgstr "Dato kaj Tempo"
-
-#~ msgid "Saved By"
-#~ msgstr "Konservita De"
-
-#~ msgid "Comment"
-#~ msgstr "Komento"
-
-#~ msgid "&Add"
-#~ msgstr "&Aldoni"
-
-#~ msgid "&Modify"
-#~ msgstr "&Modifi"
-
-#~ msgid "&Open"
-#~ msgstr "Ma&lfermi"
-
-#~ msgid "Date: %1"
-#~ msgstr "Dato: %1"
-
-#, fuzzy
-#~| msgid "Active tool: %1"
-#~ msgid "Active Author Profile"
-#~ msgstr "Aktiva ilo: %1"
-
-#~ msgid "Unknown"
-#~ msgstr "Nekonata"
-
-#~ msgid "Do you want to save the password?"
-#~ msgstr "Ĉu vi volas konservi la pasvorton?"
-
-#~ msgid ""
-#~ "Parsing error in the main document at line %1, column %2\n"
-#~ "Error message: %3"
-#~ msgstr ""
-#~ "Eraro dum analizado de la ĉefdokumento en linio %1, kolumno %2\n"
-#~ "Erarmesaĝo: %3"
-
-#, fuzzy
-#~| msgid "Screen"
-#~ msgctxt "Page size"
-#~ msgid "Screen"
-#~ msgstr "Ekrano"
-
-#~ msgid "The directory mode is not supported for remote locations."
-#~ msgstr "La dosieruja moduso ne subtenatas por deforaj lokoj."
-
-#~ msgid "Clear"
-#~ msgstr "Forigi"
-
-#~ msgid "Subtract"
-#~ msgstr "Subtrahi"
-
-#, fuzzy
-#~ msgid "Multiply"
-#~ msgstr "&Divenu ĉefurbon per ĝia regiono..."
-
-#~ msgid "Alpha"
-#~ msgstr "Alpha"
-
-#~ msgid "Lightness"
-#~ msgstr "Heleco"
-
-#~ msgid "a*"
-#~ msgstr "a*"
-
-#~ msgid "b*"
-#~ msgstr "b*"
-
-#~ msgid "Blue"
-#~ msgstr "Blua"
-
-#~ msgid "Green"
-#~ msgstr "Verda"
-
-#~ msgid "Red"
-#~ msgstr "Ruĝa"
-
-#, fuzzy
-#~| msgid "Dissolve"
-#~ msgid "Dissolve"
-#~ msgstr "Dissolvi"
-
-#~ msgid "Erase"
-#~ msgstr "Forviŝi"
-
-#~ msgid "Normal"
-#~ msgstr "Normala"
-
-#~ msgid "Overlay"
-#~ msgstr "Kovru"
-
-#, fuzzy
-#~| msgid "Height:"
-#~ msgid "Hard Mix"
-#~ msgstr "Alteco:"
-
-#, fuzzy
-#~| msgid "Geometry"
-#~ msgid "Geometric Mean"
-#~ msgstr "Geometrio"
-
-#, fuzzy
-#~| msgid "Variable"
-#~ msgid "Parallel"
-#~ msgstr "Variablo"
-
-#, fuzzy
-#~| msgid "Color Chooser"
-#~ msgid "Color Dodge"
-#~ msgstr "Kolorprenilo"
-
-#, fuzzy
-#~| msgid "Line Border"
-#~ msgid "Linear Dodge"
-#~ msgstr "Linirando"
-
-#~ msgid "Lighten"
-#~ msgstr "Heligi"
-
-#, fuzzy
-#~| msgid "Height:"
-#~ msgid "Hard Light"
-#~ msgstr "Alteco:"
-
-#, fuzzy
-#~| msgid "String:"
-#~ msgid "Soft Light (SVG)"
-#~ msgstr "Signoĉeno:"
-
-#, fuzzy
-#~| msgid "String:"
-#~ msgid "Soft Light (Photoshop)"
-#~ msgstr "Signoĉeno:"
-
-#, fuzzy
-#~| msgid "Lighten"
-#~ msgid "Gamma Light"
-#~ msgstr "Heligi"
-
-#, fuzzy
-#~| msgid "Lighten"
-#~ msgid "Vivid Light"
-#~ msgstr "Heligi"
-
-#, fuzzy
-#~| msgid "Lighten"
-#~ msgid "Pin Light"
-#~ msgstr "Heligi"
-
-#, fuzzy
-#~| msgid "Line width:"
-#~ msgid "Linear Light"
-#~ msgstr "Liniolarĝeco:"
-
-#, fuzzy
-#~| msgid "Color"
-#~ msgid "Color Burn"
-#~ msgstr "Koloro"
-
-#, fuzzy
-#~| msgid "Line Border"
-#~ msgid "Linear Burn"
-#~ msgstr "Linirando"
-
-#~ msgid "Darken"
-#~ msgstr "Malheligi"
-
-#~ msgid "Addition"
-#~ msgstr "Aldono"
-
-#, fuzzy
-#~| msgid "Subtract"
-#~ msgid "Inversed-Subtract"
-#~ msgstr "Subtrahi"
-
-#, fuzzy
-#~| msgid "Reference"
-#~ msgid "Difference"
-#~ msgstr "Referenco"
-
-#, fuzzy
-#~| msgid "Subtract"
-#~ msgid "Additive-Subtractive"
-#~ msgstr "Subtrahi"
-
-#, fuzzy
-#~| msgid "Page"
-#~ msgid "Copy Red"
-#~ msgstr "Paĝo"
-
-#, fuzzy
-#~| msgid "Green"
-#~ msgid "Copy Green"
-#~ msgstr "Verda"
-
-#, fuzzy
-#~| msgid "Page"
-#~ msgid "Copy Blue"
-#~ msgstr "Paĝo"
-
-#~ msgid "Color"
-#~ msgstr "Koloro"
-
-#~ msgid "Hue"
-#~ msgstr "Nuanco"
-
-#~ msgid "Saturation"
-#~ msgstr "Satureco"
-
-#, fuzzy
-#~| msgid "Saturation"
-#~ msgid "Increase Saturation"
-#~ msgstr "Satureco"
-
-#, fuzzy
-#~| msgid "Saturation"
-#~ msgid "Decrease Saturation"
-#~ msgstr "Satureco"
-
-#, fuzzy
-#~| msgid "Increase font size"
-#~ msgid "Increase Luminosity"
-#~ msgstr "Pligrandigi tipargrandecon"
-
-#, fuzzy
-#~| msgid "Decrease font size"
-#~ msgid "Decrease Luminosity"
-#~ msgstr "Malpligrandigi tipargrandecon"
-
-#, fuzzy
-#~| msgid "Set background"
-#~ msgid "Darker Color"
-#~ msgstr "Meti fonon"
-
-#, fuzzy
-#~| msgid "Color"
-#~ msgid "Lighter Color"
-#~ msgstr "Koloro"
-
-#, fuzzy
-#~| msgid "Color"
-#~ msgid "Color HSI"
-#~ msgstr "Koloro"
-
-#, fuzzy
-#~| msgid "Hue"
-#~ msgid "Hue HSI"
-#~ msgstr "Nuanco"
-
-#, fuzzy
-#~| msgid "Saturation"
-#~ msgid "Saturation HSI"
-#~ msgstr "Satureco"
-
-#, fuzzy
-#~| msgid "Saturation"
-#~ msgid "Increase Saturation HSI"
-#~ msgstr "Satureco"
-
-#, fuzzy
-#~| msgid "Saturation"
-#~ msgid "Decrease Saturation HSI"
-#~ msgstr "Satureco"
-
-#, fuzzy
-#~| msgid "Internet"
-#~ msgid "Intensity"
-#~ msgstr "TTT"
-
-#, fuzzy
-#~| msgid "Increase Indent"
-#~ msgid "Increase Intensity"
-#~ msgstr "Pligrandigi Deŝovon"
-
-#, fuzzy
-#~| msgid "Decrease Indent"
-#~ msgid "Decrease Intensity"
-#~ msgstr "Malpligrandigi Deŝovon"
-
-#, fuzzy
-#~| msgid "Color"
-#~ msgid "Color HSL"
-#~ msgstr "Koloro"
-
-#, fuzzy
-#~| msgid "Hue"
-#~ msgid "Hue HSL"
-#~ msgstr "Nuanco"
-
-#, fuzzy
-#~| msgid "Saturation"
-#~ msgid "Saturation HSL"
-#~ msgstr "Satureco"
-
-#, fuzzy
-#~| msgid "Saturation"
-#~ msgid "Increase Saturation HSL"
-#~ msgstr "Satureco"
-
-#, fuzzy
-#~| msgid "Saturation"
-#~ msgid "Decrease Saturation HSL"
-#~ msgstr "Satureco"
-
-#, fuzzy
-#~| msgid "Increase Indent"
-#~ msgid "Increase Lightness"
-#~ msgstr "Pligrandigi Deŝovon"
-
-#, fuzzy
-#~| msgid "Decrease Indent"
-#~ msgid "Decrease Lightness"
-#~ msgstr "Malpligrandigi Deŝovon"
-
-#, fuzzy
-#~| msgid "Color"
-#~ msgid "Color HSV"
-#~ msgstr "Koloro"
-
-#, fuzzy
-#~| msgid "Hue"
-#~ msgid "Hue HSV"
-#~ msgstr "Nuanco"
-
-#, fuzzy
-#~| msgid "Saturation"
-#~ msgid "Saturation HSV"
-#~ msgstr "Satureco"
-
-#, fuzzy
-#~| msgid "Saturation"
-#~ msgid "Increase Saturation HSV"
-#~ msgstr "Satureco"
-
-#, fuzzy
-#~| msgid "Saturation"
-#~ msgid "Decrease Saturation HSV"
-#~ msgstr "Satureco"
-
-#, fuzzy
-#~| msgid "Increase Indent"
-#~ msgid "Increase Value"
-#~ msgstr "Pligrandigi Deŝovon"
-
-#, fuzzy
-#~| msgid "Decrease Indent"
-#~ msgid "Decrease Value"
-#~ msgstr "Malpligrandigi Deŝovon"
-
-#~ msgid "R"
-#~ msgstr "R"
-
-#~ msgid "G"
-#~ msgstr "V"
-
-#~ msgid "L*"
-#~ msgstr "L*"
-
-#~ msgid "RGB"
-#~ msgstr "RVB"
-
-#~ msgid "XYZ"
-#~ msgstr "XYZ"
-
-#~ msgid "CMYK"
-#~ msgstr "BVFN"
-
-#~ msgid "Grayscale"
-#~ msgstr "Grizoskalo"
-
-#~ msgid "YCbCr"
-#~ msgstr "YCbCr"
-
-#~ msgid "Negative"
-#~ msgstr "Minussigno"
-
-#~ msgid "Mix"
-#~ msgstr "Mikso"
-
-#, fuzzy
-#~| msgid "Subtract"
-#~ msgid "Inverse Subtract"
-#~ msgstr "Subtrahi"
-
-#~ msgid "Burn"
-#~ msgstr "Enskribi"
-
-#, fuzzy
-#~| msgid "Subtract"
-#~ msgid "Additive Subtractive"
-#~ msgstr "Subtrahi"
-
-#, fuzzy
-#~| msgid "Darken"
-#~ msgid "Alpha Darken"
-#~ msgstr "Malheligi"
-
-#~ msgid "Reference"
-#~ msgstr "Referenco"
-
-#, fuzzy
-#~| msgid "Red"
-#~ msgid "Rdf"
-#~ msgstr "Ruĝa"
-
-#, fuzzy
-#~| msgid "Title:"
-#~ msgid "Triples"
-#~ msgstr "Titolo:"
-
-#~ msgid "copy"
-#~ msgstr "kopio"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgid "delete"
-#~ msgstr "Forigi"
-
-#~ msgid "Namespaces"
-#~ msgstr "Nomspacoj"
-
-#~ msgid "Prefix"
-#~ msgstr "Prefikso"
-
-#~ msgid "Namespace"
-#~ msgstr "Nomospaco"
-
-#~ msgid "Stylesheets"
-#~ msgstr "Stildifinoj"
-
-#~ msgid "System"
-#~ msgstr "Sistemo"
-
-#~ msgid "User"
-#~ msgstr "Uzanto"
-
-#, fuzzy
-#~| msgid "Dissolve"
-#~ msgid "Disassociate"
-#~ msgstr "Dissolvi"
-
-#, fuzzy
-#~| msgid "Styles"
-#~ msgid "Stylesheet Definition"
-#~ msgstr "Stiloj"
-
-#, fuzzy
-#~| msgid "Description:"
-#~ msgid "Description"
-#~ msgstr "Priskribo:"
-
-#, fuzzy
-#~| msgid "Styles"
-#~ msgid "Stylesheet Name"
-#~ msgstr "Stiloj"
-
-#~ msgid "URI"
-#~ msgstr "URL"
-
-#, fuzzy
-#~| msgid "Black"
-#~ msgid "Blank"
-#~ msgstr "Nigra"
-
-#, fuzzy
-#~| msgid "&Size:"
-#~ msgid "Valid"
-#~ msgstr "&Grandeco:"
-
-#, fuzzy
-#~| msgid "Subject:"
-#~ msgid "Subject"
-#~ msgstr "Subjekto:"
-
-#, fuzzy
-#~| msgid "Picture"
-#~ msgid "Predicate"
-#~ msgstr "Bildo"
-
-#, fuzzy
-#~| msgid "Type"
-#~ msgid "Obj Type"
-#~ msgstr "Tipo"
-
-#, fuzzy
-#~| msgid "Data"
-#~ msgid "DataType"
-#~ msgstr "Datumoj"
-
-#, fuzzy
-#~| msgid "Stopped"
-#~ msgid "Stored In"
-#~ msgstr "Haltita"
-
-#, fuzzy
-#~| msgid "None"
-#~ msgctxt "Text list-style"
-#~ msgid "None"
-#~ msgstr "Neniu"
-
-#, fuzzy
-#~| msgid "Right indent"
-#~ msgid "Rightwards Arrow Bullet"
-#~ msgstr "Dekstra deŝovo"
-
-#, fuzzy
-#~| msgid "Area"
-#~ msgid "Arabic"
-#~ msgstr "Areo"
-
-#~ msgid "Bengali"
-#~ msgstr "Bengala"
-
-#~ msgid "Gujarati"
-#~ msgstr "Guĝarata"
-
-#~ msgid "Kannada"
-#~ msgstr "Kanara"
-
-#~ msgid "Malayalam"
-#~ msgstr "Malajala"
-
-#~ msgid "Oriya"
-#~ msgstr "Orijo"
-
-#~ msgid "Tamil"
-#~ msgstr "Tamila"
-
-#~ msgid "Telugu"
-#~ msgstr "Teluga"
-
-#~ msgid "Tibetan"
-#~ msgstr "Tibeta"
-
-#~ msgid "Thai"
-#~ msgstr "Taja"
-
-#~ msgid "Opacity"
-#~ msgstr "Travideblo"
-
-#~ msgid "Recent:"
-#~ msgstr "Lasttempaj:"
-
-#~ msgid "Add / Remove Colors..."
-#~ msgstr "Aldon / Forigi Kolorojn..."
-
-#~ msgid "Import Data"
-#~ msgstr "Importi Datumojn"
-
-#~ msgid "Generic"
-#~ msgstr "Komuna"
-
-#~ msgid "Currency"
-#~ msgstr "Valuto"
-
-#~ msgid "None"
-#~ msgstr "Neniu"
-
-#~ msgid "Data"
-#~ msgstr "Datumoj"
-
-#~ msgid "E&ncoding:"
-#~ msgstr "Kodpreze&nto:"
-
-#~ msgid "Format"
-#~ msgstr "Formato"
-
-#~ msgid "Delimiter"
-#~ msgstr "Limilo"
-
-#~ msgid "Semicolon"
-#~ msgstr "Punktokomo"
-
-#~ msgid "Other"
-#~ msgstr "Alia"
-
-#~ msgid "Tabulator"
-#~ msgstr "Tabelilo"
-
-#~ msgid "Space"
-#~ msgstr "Spaco"
-
-#~ msgid "Text&quote:"
-#~ msgstr "Tekst&cito:"
-
-#~ msgid "\""
-#~ msgstr "\""
-
-#~ msgid "'"
-#~ msgstr "'"
-
-#~ msgid "Decimal symbol:"
-#~ msgstr "Decimalsigno:"
-
-#~ msgid "Thousands separator:"
-#~ msgstr "Miloapartigosigno:"
-
-#~ msgid "Ignore duplicate delimiters"
-#~ msgstr "Ignori duoblan dividigilon"
-
-#~ msgid "&Format:"
-#~ msgstr "&Formato:"
-
-#~ msgid "Ranges"
-#~ msgstr "Gamoj"
-
-#~ msgid "Update"
-#~ msgstr "Ĝisdatigi"
-
-#~ msgid "Import columns:"
-#~ msgstr "Import kolumnojn:"
-
-#~ msgid "Import lines:"
-#~ msgstr "Importi liniojn:"
-
-#~ msgid "to"
-#~ msgstr "al"
-
-#, fuzzy
-#~| msgid "Show Rulers"
-#~ msgctxt "@info:tooltip"
-#~ msgid "Float Docker"
-#~ msgstr "Montri Liniilojn"
-
-#, fuzzy
-#~| msgid "Custom Document"
-#~ msgctxt "@info:tooltip"
-#~ msgid "Close Docker"
-#~ msgstr "Propra dokumento"
-
-#, fuzzy
-#~| msgid "Custom Document"
-#~ msgctxt "@info:tooltip"
-#~ msgid "Collapse Docker"
-#~ msgstr "Propra dokumento"
-
-#, fuzzy
-#~| msgid "Show Rulers"
-#~ msgctxt "@info:tooltip"
-#~ msgid "Lock Docker"
-#~ msgstr "Montri Liniilojn"
-
-#~ msgid "&Encrypt"
-#~ msgstr "Ĉ&ifri"
-
-#~ msgid "Subject:"
-#~ msgstr "Subjekto:"
-
-#, fuzzy
-#~| msgid "Path editing tool"
-#~ msgid "Total editing time:"
-#~ msgstr "Padredaktilo"
-
-#~ msgid "Encryption:"
-#~ msgstr "Ĉifrado:"
-
-#, fuzzy
-#~| msgid "Title:"
-#~ msgctxt "Document title"
-#~ msgid "Title:"
-#~ msgstr "Titolo:"
-
-#, fuzzy
-#~| msgid "Number:"
-#~ msgid "Revision number:"
-#~ msgstr "Nombro:"
-
-#~ msgid "Modified:"
-#~ msgstr "Modifita:"
-
-#~ msgid "Comments:"
-#~ msgstr "Komentoj:"
-
-#~ msgid "Created:"
-#~ msgstr "Kreita:"
-
-#~ msgid "Path:"
-#~ msgstr "Vojo:"
-
-#~ msgid "&Reset"
-#~ msgstr "&Restarigi"
-
-#~ msgid "Language:"
-#~ msgstr "Lingvo:"
-
-#~ msgid "General"
-#~ msgstr "Ĝenerale"
-
-#, fuzzy
-#~| msgid "Fit Page"
-#~ msgid "Last saved by"
-#~ msgstr "Konformigi paĝon"
-
-#~ msgid "Do not decrypt"
-#~ msgstr "Ne malĉifri"
-
-#~ msgid "D&ecrypt"
-#~ msgstr "M&alĉifri"
-
-#~ msgid "Do not encrypt"
-#~ msgstr "Ne ĉifri"
-
-#~ msgid "Decrypt"
-#~ msgstr "Malĉifri"
-
-#~ msgid "Save Document"
-#~ msgstr "Konservi dokumenton"
-
-#~ msgid "Change Filetype"
-#~ msgstr "Ŝanĝ dosiertipon"
-
-#~ msgid "Change"
-#~ msgstr "Ŝanĝi"
-
-#~ msgid "Remove"
-#~ msgstr "Forigi"
-
-#~ msgid "Open palette"
-#~ msgstr "Malfermi paletron"
-
-#~ msgid "Save palette"
-#~ msgstr "Konservi paletron"
-
-#~ msgid "Color name:"
-#~ msgstr "Kolornomo:"
-
-#~ msgid "Palette"
-#~ msgstr "Paletro"
-
-#~ msgid "Add/Remove Colors"
-#~ msgstr "Aldoni/Forigi Kolorojn"
-
-#, fuzzy
-#~| msgid "Open palette"
-#~ msgid "Testing: OpenFile"
-#~ msgstr "Malfermi paletron"
-
-#, fuzzy
-#~| msgid "Missing Import Filter"
-#~ msgid "Testing: ImportFile"
-#~ msgstr "Mankas importfiltrilo"
-
-#, fuzzy
-#~| msgid "Missing Import Filter"
-#~ msgid "Testing: ImportFiles"
-#~ msgstr "Mankas importfiltrilo"
-
-#, fuzzy
-#~| msgid "Import Document"
-#~ msgid "Testing: Import Directory"
-#~ msgstr "Importi dokumenton"
-
-#, fuzzy
-#~| msgid "Save palette"
-#~ msgid "Testing: SaveFile"
-#~ msgstr "Konservi paletron"
-
-#, fuzzy
-#~| msgid "Open palette"
-#~ msgid "Open File"
-#~ msgstr "Malfermi paletron"
-
-#, fuzzy
-#~| msgid "Open palette"
-#~ msgid "Open Files"
-#~ msgstr "Malfermi paletron"
-
-#~ msgid "Filter:"
-#~ msgstr "Filtri:"
-
-#~ msgid "TextLabel"
-#~ msgstr "TekstaEtikedo"
-
-#, fuzzy
-#~| msgid "Name:"
-#~ msgid "Named"
-#~ msgstr "Nomo:"
-
-#, fuzzy
-#~| msgid "Select a filter:"
-#~ msgid "Set default filter"
-#~ msgstr "Elektu filtrilon:"
-
-#, fuzzy
-#~| msgid "Save palette"
-#~ msgid "Save File"
-#~ msgstr "Konservi paletron"
-
-#, fuzzy
-#~| msgid "Import lines:"
-#~ msgid "Import Files"
-#~ msgstr "Importi liniojn:"
-
-#, fuzzy
-#~| msgid "Import lines:"
-#~ msgid "Import File"
-#~ msgstr "Importi liniojn:"
-
-#, fuzzy
-#~| msgid "Import Document"
-#~ msgid "Import Directory"
-#~ msgstr "Importi dokumenton"
-
-#, fuzzy
-#~| msgid "None"
-#~ msgctxt "No stroke or fill"
-#~ msgid "None"
-#~ msgstr "Neniu"
-
-#~ msgctxt "Solid color stroke or fill"
-#~ msgid "Solid"
-#~ msgstr "Solida"
-
-#~ msgid "Gradient"
-#~ msgstr "Kolortransiro"
-
-#~ msgid "Pattern"
-#~ msgstr "Ŝablono"
-
-#, fuzzy
-#~| msgid "Change parameter"
-#~ msgid "Change the filling gradient"
-#~ msgstr "Ŝanĝi parametron"
-
-#, fuzzy
-#~| msgid "Text"
-#~ msgid "Icon and Text"
-#~ msgstr "Teksto"
-
-#, fuzzy
-#~| msgid "Align Bottom"
-#~ msgid "Bottom side"
-#~ msgstr "Alĝustigi Malsupre"
-
-#, fuzzy
-#~| msgid "Left indent"
-#~ msgid "Left side"
-#~ msgstr "Maldekstra deŝovo"
-
-#, fuzzy
-#~| msgid "Right indent"
-#~ msgid "Right side"
-#~ msgstr "Dekstra deŝovo"
-
-#~ msgid "Page Layout"
-#~ msgstr "Paĝaranĝo"
-
-#, fuzzy
-#~| msgid "Empty Document"
-#~ msgid "Apply to document"
-#~ msgstr "Malplena dokumento"
-
-#, fuzzy
-#~| msgid "Left:"
-#~ msgid "Left Edge:"
-#~ msgstr "Maldekstre:"
-
-#, fuzzy
-#~| msgid "Right:"
-#~ msgid "Right Edge:"
-#~ msgstr "Dekstre:"
-
-#, fuzzy
-#~| msgid "Printing done"
-#~ msgid "Binding Edge:"
-#~ msgstr "Presado finita"
-
-#, fuzzy
-#~| msgid "Page Size"
-#~ msgid "Page Edge:"
-#~ msgstr "Paĝograndeco"
-
-#, fuzzy
-#~| msgid "Fit Page"
-#~ msgid "Facing Pages:"
-#~ msgstr "Konformigi paĝon"
-
-#, fuzzy
-#~| msgid "Fit Page"
-#~ msgid "Facing pages"
-#~ msgstr "Konformigi paĝon"
-
-#, fuzzy
-#~| msgid "Page Layout"
-#~ msgid "Page Layout:"
-#~ msgstr "Paĝaranĝo"
-
-#, fuzzy
-#~| msgid "Page Preview"
-#~ msgid "Page spread"
-#~ msgstr "Antaŭrigardo"
-
-#~ msgid "Unit:"
-#~ msgstr "Unuo:"
-
-#~ msgid "Size:"
-#~ msgstr "Grandeco:"
-
-#~ msgid "Width:"
-#~ msgstr "Larĝeco:"
-
-#~ msgid "Height:"
-#~ msgstr "Alteco:"
-
-#, fuzzy
-#~| msgid "Orientation"
-#~ msgid "Orientation:"
-#~ msgstr "Orientiĝo"
-
-#, fuzzy
-#~| msgid "Fit Page"
-#~ msgid "Facing pages:"
-#~ msgstr "Konformigi paĝon"
-
-#, fuzzy
-#~| msgctxt "Underline Style"
-#~| msgid "Single"
-#~ msgid "Single sided"
-#~ msgstr "unuopa"
-
-#, fuzzy
-#~| msgid "Collection"
-#~ msgid "Text direction:"
-#~ msgstr "Aro"
-
-#~ msgid "Automatic"
-#~ msgstr "Aŭtomata"
-
-#, fuzzy
-#~| msgid "String:"
-#~ msgid "Left to right"
-#~ msgstr "Signoĉeno:"
-
-#, fuzzy
-#~| msgid "Right indent"
-#~ msgid "Right to left"
-#~ msgstr "Dekstra deŝovo"
-
-#~ msgid "Margins"
-#~ msgstr "Marĝenoj"
-
-#~ msgid "Top:"
-#~ msgstr "Supre:"
-
-#, fuzzy
-#~| msgid "Printing done"
-#~ msgid "Binding edge:"
-#~ msgstr "Presado finita"
-
-#, fuzzy
-#~| msgid "Page Preview"
-#~ msgid "Page edge:"
-#~ msgstr "Antaŭrigardo"
-
-#, fuzzy
-#~| msgid "Align Bottom"
-#~ msgid "Bottom:"
-#~ msgstr "Alĝustigi Malsupre"
-
-#, fuzzy
-#~| msgid "Import Document"
-#~ msgctxt "@info:tooltip"
-#~ msgid "Import resource"
-#~ msgstr "Importi dokumenton"
-
-#, fuzzy
-#~| msgid "Download"
-#~ msgctxt "@info:tooltip"
-#~ msgid "Download resource"
-#~ msgstr "Deŝuto"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgctxt "@info:tooltip"
-#~ msgid "Share Resource"
-#~ msgstr "Forigi"
-
-#, fuzzy
-#~| msgid "Choose Filter"
-#~ msgctxt "@title:window"
-#~ msgid "Choose File to Add"
-#~ msgstr "Elekti filtrilon"
-
-#, fuzzy
-#~| msgid "New Layer"
-#~ msgid "New tag"
-#~ msgstr "Nova Ebeno"
-
-#, fuzzy
-#~| msgid "Remove point"
-#~ msgid "Remove from this tag"
-#~ msgstr "Forigi punkton"
-
-#~ msgid "Tags"
-#~ msgstr "Etikedoj"
-
-#~ msgid "Blur:"
-#~ msgstr "Nebuligo:"
-
-#~ msgid "Distance:"
-#~ msgstr "Distanco:"
-
-#, fuzzy
-#~| msgid "Merge points"
-#~ msgid "Miter join"
-#~ msgstr "Kunfandi punktojn"
-
-#, fuzzy
-#~| msgid "Remove point"
-#~ msgid "Bevel join"
-#~ msgstr "Forigi punkton"
-
-#, fuzzy
-#~| msgid "Merge points"
-#~ msgid "Miter limit"
-#~ msgstr "Kunfandi punktojn"
-
-#~ msgid "Tag"
-#~ msgstr "Etikedo"
-
-#, fuzzy
-#~| msgid "Move page"
-#~ msgid "Rename tag"
-#~ msgstr "Movi paĝon"
-
-#, fuzzy
-#~| msgid "Delete Page"
-#~ msgid "Delete this tag"
-#~ msgstr "Forigi Paĝon"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgid "Undelete"
-#~ msgstr "Forigi"
-
-#~ msgid "Tool Options"
-#~ msgstr "Ilo-opcioj"
-
-#, fuzzy
-#~| msgid "Select Character"
-#~ msgid "deselect item"
-#~ msgstr "Elekti literon"
-
-#, fuzzy
-#~| msgid "Select Character"
-#~ msgid "select item"
-#~ msgstr "Elekti literon"
-
-#, fuzzy
-#~| msgid "Zoom Tool"
-#~ msgid "Zoom to All"
-#~ msgstr "Zomilo"
-
-#, fuzzy
-#~ msgctxt "@info:tooltip of custom triple button"
-#~ msgid "%1"
-#~ msgstr "%1%"
-
-#~| msgid "Automatic"
-#~ msgctxt "Static Image"
-#~ msgid "Static"
-#~ msgstr "Aŭtomata"
-
-#~ msgid "Value (brightness)"
-#~ msgstr "Valoro (heleco)"
-
-#~ msgid "Cyan"
-#~ msgstr "Ciana"
-
-#~ msgid "Magenta"
-#~ msgstr "Violkolora (magenta)"
-
-#~ msgid "Yellow"
-#~ msgstr "Flava"
-
-#~ msgid "Black"
-#~ msgstr "Nigra"
-
-#~ msgid "Opacity:"
-#~ msgstr "Travideblo:"
-
-#~| msgid "&Default"
-#~ msgctxt "default theme name"
-#~ msgid "Default"
-#~ msgstr "&Apriora"
-
-#~| msgid "Snap to Grid"
-#~ msgid "Configuration..."
-#~ msgstr "Kapti per Krado"
-
-#~| msgid "Pan Tool"
-#~ msgid "&Tools"
-#~ msgstr "Panoramilo"
-
-#~| msgid "Collection"
-#~ msgid "Color Selector"
-#~ msgstr "Aro"
-
-#~| msgid "The file %1 does not exist."
-#~ msgid "Database file \"%1\" does not exist."
-#~ msgstr "La dosiero %1 ne ekzistas."
-
-#~| msgid "The file %1 does not exist."
-#~ msgid "Table \"%1\" does not exist in the database."
-#~ msgstr "La dosiero %1 ne ekzistas."
-
-#~| msgid "Could not read the package \"%1\"."
-#~ msgid "Could not compact database \"%1\"."
-#~ msgstr "Ne eblis legi la pakaĵon \"%1\"."
-
-#~| msgid "Do you want to save the password?"
-#~ msgid "Do you want to open file \"%1\" as read-only?"
-#~ msgstr "Ĉu vi volas konservi la pasvorton?"
-
-#~| msgid "Could not read the beginning of the file."
-#~ msgid "Could not gain exclusive access for writing the file."
-#~ msgstr "Ne povis legi la komencon de la dosiero."
-
-#~| msgid "Could not load picture."
-#~ msgid "Could not close busy database."
-#~ msgstr "Ne eblis legi la bildon."
-
-#~| msgid "Could not export file."
-#~ msgid "Could not remove file \"%1\"."
-#~ msgstr "Ne eblis eksporti dosieron."
-
-#~| msgid "The file %1 does not exist."
-#~ msgid "Table \"%1\" does not exist"
-#~ msgstr "La dosiero %1 ne ekzistas."
-
-#~| msgid "Show &Grid"
-#~ msgid "Grid Snap"
-#~ msgstr "Montri &Kradon"
-
-#~| msgid "Format"
-#~ msgid "Formatting"
-#~ msgstr "Formato"
-
-#~| msgid "Import Document"
-#~ msgid "Testing: OpenDirectories"
-#~ msgstr "Importi dokumenton"
-
-#~| msgid "Import Document"
-#~ msgid "Testing: ImportDirectories"
-#~ msgstr "Importi dokumenton"
-
-#~| msgid "Save palette"
-#~ msgid "Testing: SaveFiles"
-#~ msgstr "Konservi paletron"
-
-#~| msgid "Import Document"
-#~ msgid "Import Directories"
-#~ msgstr "Importi dokumenton"
-
-#~| msgid "Save palette"
-#~ msgid "Save Files"
-#~ msgstr "Konservi paletron"
-
-#~ msgid "Create Path"
-#~ msgstr "Krei Padon"
-
-#~ msgid "L a* b*"
-#~ msgstr "L a* b*"
-
-#~ msgid "Error!"
-#~ msgstr "Eraro!"
-
-#, fuzzy
-#~ msgid "Events"
-#~ msgstr "Eventoj:"
+msgstr "Adapti Tekstolarĝon"
