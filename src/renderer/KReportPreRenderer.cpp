@@ -339,7 +339,7 @@ qreal KReportPreRendererPrivate::renderSection(const KReportSectionData & sectio
     qreal w = m_page->document()->pageLayout().fullRectPixels(KReportPrivate::dpiX()).width() - m_page->document()->pageLayout().marginsPixels(KReportPrivate::dpiX()).right() - m_leftMargin;
 
     bg->setRect(QRectF(m_leftMargin, m_yOffset, w, sectionHeight));
-    m_page->insertPrimitive(bg, true);
+    m_page->insertPrimitive(bg, 0);
 
     QList<KReportItemBase*> objects = sectionData.objects();
     foreach(KReportItemBase *ob, objects) {
