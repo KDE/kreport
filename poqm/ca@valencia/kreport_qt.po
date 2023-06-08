@@ -814,12 +814,12 @@ msgstr "Suprimix"
 #: wrtembed/KReportSectionEditor.cpp:78
 msgctxt "KReportSectionEditor|"
 msgid "Move Up"
-msgstr "Mou amunt"
+msgstr "Mou cap amunt"
 
 #: wrtembed/KReportSectionEditor.cpp:80
 msgctxt "KReportSectionEditor|"
 msgid "Move Down"
-msgstr "Mou avall"
+msgstr "Mou cap avall"
 
 #: wrtembed/KReportSectionEditor.cpp:311
 msgctxt "KReportSectionEditor|"
