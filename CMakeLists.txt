@@ -46,7 +46,6 @@ set_package_properties(KPropertyWidgets PROPERTIES TYPE REQUIRED
 
 get_git_revision_and_branch()
 add_unfinished_features_option()
-add_pc_file(${PROJECT_NAME})
 
 ecm_setup_qtplugin_macro_names(
     JSON_ARG2 KREPORT_PLUGIN_FACTORY
