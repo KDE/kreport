@@ -34,6 +34,7 @@
                 "Name[sv]": "Kexi-gruppen",
                 "Name[tr]": "Kexi Takımı",
                 "Name[uk]": "Команда Kexi",
+                "Name[x-test]": "xxKexi Teamxx",
                 "Name[zh_CN]": "Kexi 团队",
                 "Name[zh_TW]": "Kexi 團隊"
             }
@@ -69,6 +70,7 @@
         "Description[sv]": "Bildelement för rapporter",
         "Description[tr]": "Raporlar için görsel ögesi",
         "Description[uk]": "Елемент зображення для звітів",
+        "Description[x-test]": "xxImage element for Reportsxx",
         "Description[zh_CN]": "给报表使用的图像元素",
         "Description[zh_TW]": "用於報告的影像元件",
         "EnabledByDefault": true,
@@ -106,6 +108,7 @@
         "Name[sv]": "Bild",
         "Name[tr]": "Görsel",
         "Name[uk]": "Зображення",
+        "Name[x-test]": "xxImagexx",
         "Name[zh_CN]": "图像",
         "Name[zh_TW]": "影像",
         "Version": "3.3",

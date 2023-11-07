@@ -34,6 +34,7 @@
                 "Name[sv]": "Kexi-gruppen",
                 "Name[tr]": "Kexi Takımı",
                 "Name[uk]": "Команда Kexi",
+                "Name[x-test]": "xxKexi Teamxx",
                 "Name[zh_CN]": "Kexi 团队",
                 "Name[zh_TW]": "Kexi 團隊"
             }
@@ -69,6 +70,7 @@
         "Description[sv]": "Diagramelement för rapporter",
         "Description[tr]": "Raporlar için grafik ögesi",
         "Description[uk]": "Елемент діаграми для звітів",
+        "Description[x-test]": "xxChart element for Reportsxx",
         "Description[zh_CN]": "给报表使用的图表元素",
         "Description[zh_TW]": "用於報告的圖表元件",
         "EnabledByDefault": true,
@@ -106,6 +108,7 @@
         "Name[sv]": "Diagram",
         "Name[tr]": "Grafik",
         "Name[uk]": "Діаграма",
+        "Name[x-test]": "xxChartxx",
         "Name[zh_CN]": "图表",
         "Name[zh_TW]": "圖表",
         "Version": "3.3",
