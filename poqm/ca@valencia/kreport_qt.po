@@ -695,7 +695,7 @@ msgstr "Re&talla"
 #: wrtembed/KReportDesigner.cpp:1521
 msgctxt "KReportDesigner|"
 msgid "Cut selection to clipboard"
-msgstr "Retalla la selecció al porta-retalls"
+msgstr "Retalla la selecció a dins del porta-retalls"
 
 #: wrtembed/KReportDesigner.cpp:1525
 msgctxt "KReportDesigner|"
@@ -705,7 +705,7 @@ msgstr "&Copia"
 #: wrtembed/KReportDesigner.cpp:1527
 msgctxt "KReportDesigner|"
 msgid "Copy selection to clipboard"
-msgstr "Copia la selecció al porta-retalls"
+msgstr "Copia la selecció a dins del porta-retalls"
 
 #: wrtembed/KReportDesigner.cpp:1531
 msgctxt "KReportDesigner|"
