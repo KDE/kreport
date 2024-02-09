@@ -10,16 +10,18 @@
 # This translation is subject to the same Open Source
 # license as the program which it accompanies.
 # Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
+# SPDX-FileCopyrightText: 2024 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-05-16 07:03-0400\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: Hebrew <kde-l10n-he@kde.org>\n"
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2024-02-08 10:48+0200\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 3.9.6\n"
+"X-Generator: Lokalize 23.08.4\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Qt-Contexts: true\n"
 
@@ -30,88 +32,74 @@ msgid "Could not parse XML document."
 msgstr "אין אפשרות ליצור את הקובץ לשמירה"
 
 #: common/KReportDesign.cpp:159
-#, fuzzy
 msgctxt "KReportDesign|"
 msgid "Error in XML document."
-msgstr "אירעה שגיאה במהלך שמירת המסמכים המוטבעים"
+msgstr "שגיאה במסמך XML."
 
 #: common/KReportItemBase.cpp:75
-#, fuzzy
 msgctxt "KReportItemBase|"
 msgid "Name"
-msgstr "שם:"
+msgstr "שם"
 
 #: common/KReportItemBase.cpp:75
-#, fuzzy
 msgctxt "KReportItemBase|"
 msgid "Object Name"
-msgstr "אובייקט"
+msgstr "שם העצם"
 
 #: common/KReportItemBase.cpp:78
-#, fuzzy
 msgctxt "ItemPosition|"
 msgid "Position"
-msgstr "מיקום"
+msgstr "מקום"
 
 #: common/KReportItemBase.cpp:79
-#, fuzzy
 msgctxt "ItemSize|"
 msgid "Size"
-msgstr "גודל:"
+msgstr "גודל"
 
 #: common/KReportItemBase.cpp:112
-#, fuzzy
 msgctxt "KReportItemBase|"
 msgid "Data Source"
-msgstr "מחיקת טקסט"
+msgstr "מקור נתונים"
 
 #: common/KReportItemLine.cpp:80
-#, fuzzy
 msgctxt "StartPosition|"
 msgid "Start Position"
-msgstr "מיקום"
+msgstr "מקום התחלה"
 
 #: common/KReportItemLine.cpp:81
-#, fuzzy
 msgctxt "EndPosition|"
 msgid "End Position"
-msgstr "מיקום"
+msgstr "מקום סוף"
 
 #: common/KReportItemLine.cpp:83
-#, fuzzy
 msgctxt "KReportItemLine|"
 msgid "Line Weight"
-msgstr "רוחב שורה:"
+msgstr "עובי קו"
 
 #: common/KReportItemLine.cpp:85
-#, fuzzy
 msgctxt "KReportItemLine|"
 msgid "Line Color"
-msgstr "עוד צבעי קווים..."
+msgstr "צבע קו"
 
 #: common/KReportItemLine.cpp:86
-#, fuzzy
 msgctxt "KReportItemLine|"
 msgid "Line Style"
-msgstr "&סגנון"
+msgstr "סגנון קו"
 
 #: common/KReportSectionData.cpp:164
-#, fuzzy
 msgctxt "KReportSectionData|Report section"
 msgid "Section"
-msgstr "הפרק הנוכחי"
+msgstr "מקטע"
 
 #: common/KReportSectionData.cpp:166
-#, fuzzy
 msgctxt "KReportSectionData|"
 msgid "Height"
-msgstr "&גובה:"
+msgstr "גובה"
 
 #: common/KReportSectionData.cpp:170
-#, fuzzy
 msgctxt "KReportSectionData|"
 msgid "Background Color"
-msgstr "שנייה"
+msgstr "צבע רקע"
 
 #: common/KReportUnit.cpp:136
 msgctxt "KReportUnit|"
@@ -119,52 +107,44 @@ msgid "Invalid"
 msgstr ""
 
 #: common/KReportUnit.cpp:138
-#, fuzzy
 msgctxt "KReportUnit|"
 msgid "Millimeters (mm)"
-msgstr "מילימטרים (מ\"מ)"
+msgstr "מילימטרים (מ״מ)"
 
 #: common/KReportUnit.cpp:140
-#, fuzzy
 msgctxt "KReportUnit|"
 msgid "Centimeters (cm)"
-msgstr "סנטימטרים (ס\"מ)"
+msgstr "סנטימטרים (ס״מ)"
 
 #: common/KReportUnit.cpp:142
-#, fuzzy
 msgctxt "KReportUnit|"
 msgid "Decimeters (dm)"
-msgstr "דצימטרים (ד\"מ)"
+msgstr "דצימטרים (ד״מ)"
 
 #: common/KReportUnit.cpp:144
-#, fuzzy
 msgctxt "KReportUnit|"
 msgid "Inches (in)"
-msgstr "אינצ'ים (in)"
+msgstr "אינטשים (in)"
 
 #: common/KReportUnit.cpp:146
-#, fuzzy
 msgctxt "KReportUnit|"
 msgid "Pica (pi)"
 msgstr "פיקה (pi)"
 
 #: common/KReportUnit.cpp:148
-#, fuzzy
 msgctxt "KReportUnit|"
 msgid "Cicero (cc)"
-msgstr "קיקרו (cc)"
+msgstr "סיסרו (cc)"
 
 #: common/KReportUnit.cpp:150
-#, fuzzy
 msgctxt "KReportUnit|"
 msgid "Points (pt)"
-msgstr "נקודות (נק')"
+msgstr "נקודות (נק׳)"
 
 #: common/KReportUnit.cpp:152
-#, fuzzy
 msgctxt "KReportUnit|"
 msgid "Pixels (px)"
-msgstr "נקודות (נק')"
+msgstr "פיקסלים (px)"
 
 #: common/KReportUnit.cpp:154
 msgctxt "KReportUnit|"
@@ -172,10 +152,9 @@ msgid "Unsupported unit"
 msgstr ""
 
 #: items/check/KReportItemCheck.cpp:79
-#, fuzzy
 msgctxt "KReportItemCheckBox|"
 msgid "Cross"
-msgstr "צבעים"
+msgstr "צלב"
 
 #: items/check/KReportItemCheck.cpp:79
 msgctxt "KReportItemCheckBox|"
@@ -188,37 +167,31 @@ msgid "Dot"
 msgstr ""
 
 #: items/check/KReportItemCheck.cpp:80
-#, fuzzy
 msgctxt "KReportItemCheckBox|"
 msgid "Style"
-msgstr "&סגנון"
+msgstr "סגנון"
 
 #: items/check/KReportItemCheck.cpp:84
-#, fuzzy
 msgctxt "KReportItemCheckBox|"
 msgid "Foreground Color"
-msgstr "שנייה"
+msgstr "צבע חזית"
 
 #: items/check/KReportItemCheck.cpp:86
-#, fuzzy
 msgctxt "KReportItemCheckBox|"
 msgid "Line Weight"
-msgstr "רוחב שורה:"
+msgstr "עובי קו"
 
 #: items/check/KReportItemCheck.cpp:88
-#, fuzzy
 msgctxt "KReportItemCheckBox|"
 msgid "Line Color"
-msgstr "עוד צבעי קווים..."
+msgstr "צבע קו"
 
 #: items/check/KReportItemCheck.cpp:89
-#, fuzzy
 msgctxt "KReportItemCheckBox|"
 msgid "Line Style"
-msgstr "&סגנון"
+msgstr "סגנון קו"
 
 #: items/check/KReportItemCheck.cpp:90
-#, fuzzy
 msgctxt "KReportItemCheckBox|"
 msgid "Value"
 msgstr "ערך"
@@ -229,7 +202,6 @@ msgid "Value used if not bound to a field"
 msgstr ""
 
 #: items/field/KReportItemField.cpp:90
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Value"
 msgstr "ערך"
@@ -240,88 +212,74 @@ msgid "Value used if not bound to a field"
 msgstr ""
 
 #: items/field/KReportItemField.cpp:94
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Left"
-msgstr "שמאל:"
+msgstr "שמאל"
 
 #: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Center"
-msgstr "&מרכז"
+msgstr "מרכז"
 
 #: items/field/KReportItemField.cpp:94
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Right"
-msgstr "&ימין"
+msgstr "ימין"
 
 #: items/field/KReportItemField.cpp:96
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Horizontal Alignment"
-msgstr "יישור אנכי:"
+msgstr "יישור אופקי"
 
 #: items/field/KReportItemField.cpp:100
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Top"
-msgstr "קבוצה:"
+msgstr "למעלה"
 
 #: items/field/KReportItemField.cpp:100
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Bottom"
-msgstr "יישור אוטומטי"
+msgstr "למטה"
 
 #: items/field/KReportItemField.cpp:102
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Vertical Alignment"
-msgstr "יישור אנכי:"
+msgstr "יישור אנכי"
 
 #: items/field/KReportItemField.cpp:104
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Font"
-msgstr "מדינה:"
+msgstr "גופן"
 
 #: items/field/KReportItemField.cpp:106
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Background Color"
-msgstr "שנייה"
+msgstr "צבע רקע"
 
 #: items/field/KReportItemField.cpp:107
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Foreground Color"
-msgstr "שנייה"
+msgstr "צבע חזית"
 
 #: items/field/KReportItemField.cpp:109
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Background Opacity"
-msgstr "צבע רקע:"
+msgstr "שקיפות רקע"
 
 #: items/field/KReportItemField.cpp:114
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Line Weight"
-msgstr "רוחב שורה:"
+msgstr "עובי קו"
 
 #: items/field/KReportItemField.cpp:116
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Line Color"
-msgstr "עוד צבעי קווים..."
+msgstr "צבע קו"
 
 #: items/field/KReportItemField.cpp:117
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Line Style"
-msgstr "&סגנון"
+msgstr "סגנון קו"
 
 #: items/field/KReportItemField.cpp:119
 msgctxt "KReportItemField|"
@@ -339,19 +297,16 @@ msgid "Clip"
 msgstr ""
 
 #: items/image/KReportItemImage.cpp:119
-#, fuzzy
 msgctxt "KReportItemImage|"
 msgid "Stretch"
-msgstr "רחוב:"
+msgstr "מתיחה"
 
 #: items/image/KReportItemImage.cpp:120
-#, fuzzy
 msgctxt "KReportItemImage|"
 msgid "Resize Mode"
-msgstr "שחזר"
+msgstr "מצב שינוי גודל"
 
 #: items/image/KReportItemImage.cpp:121
-#, fuzzy
 msgctxt "KReportItemImage|"
 msgid "Value"
 msgstr "ערך"
@@ -362,97 +317,81 @@ msgid "Value used if not bound to a field"
 msgstr ""
 
 #: items/label/KReportItemLabel.cpp:91
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Caption"
-msgstr "השלמה"
+msgstr "כותרת"
 
 #: items/label/KReportItemLabel.cpp:94
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Left"
-msgstr "שמאל:"
+msgstr "שמאל"
 
 #: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Center"
-msgstr "&מרכז"
+msgstr "מרכז"
 
 #: items/label/KReportItemLabel.cpp:94
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Right"
-msgstr "&ימין"
+msgstr "ימין"
 
 #: items/label/KReportItemLabel.cpp:96
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Horizontal Alignment"
-msgstr "יישור אנכי:"
+msgstr "יישור אופקי"
 
 #: items/label/KReportItemLabel.cpp:100
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Top"
-msgstr "קבוצה:"
+msgstr "למעלה"
 
 #: items/label/KReportItemLabel.cpp:100
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Bottom"
-msgstr "יישור אוטומטי"
+msgstr "למטה"
 
 #: items/label/KReportItemLabel.cpp:102
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Vertical Alignment"
-msgstr "יישור אנכי:"
+msgstr "יישור אנכי"
 
 #: items/label/KReportItemLabel.cpp:104
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Font"
-msgstr "מדינה:"
+msgstr "גופן"
 
 #: items/label/KReportItemLabel.cpp:106
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Background Color"
-msgstr "שנייה"
+msgstr "צבע רקע"
 
 #: items/label/KReportItemLabel.cpp:107
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Foreground Color"
-msgstr "שנייה"
+msgstr "צבע חזית"
 
 #: items/label/KReportItemLabel.cpp:109
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Background Opacity"
-msgstr "צבע רקע:"
+msgstr "שקיפות רקע"
 
 #: items/label/KReportItemLabel.cpp:114
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Line Weight"
-msgstr "רוחב שורה:"
+msgstr "עובי קו"
 
 #: items/label/KReportItemLabel.cpp:116
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Line Color"
-msgstr "עוד צבעי קווים..."
+msgstr "צבע קו"
 
 #: items/label/KReportItemLabel.cpp:117
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Line Style"
-msgstr "&סגנון"
+msgstr "סגנון קו"
 
 #: items/text/KReportItemText.cpp:115
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Value"
 msgstr "ערך"
@@ -463,88 +402,74 @@ msgid "Value used if not bound to a field"
 msgstr ""
 
 #: items/text/KReportItemText.cpp:119
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Left"
-msgstr "שמאל:"
+msgstr "שמאל"
 
 #: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Center"
-msgstr "&מרכז"
+msgstr "מרכז"
 
 #: items/text/KReportItemText.cpp:119
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Right"
-msgstr "&ימין"
+msgstr "ימין"
 
 #: items/text/KReportItemText.cpp:121
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Horizontal Alignment"
-msgstr "יישור אנכי:"
+msgstr "יישור אופקי"
 
 #: items/text/KReportItemText.cpp:125
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Top"
-msgstr "קבוצה:"
+msgstr "למעלה"
 
 #: items/text/KReportItemText.cpp:125
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Bottom"
-msgstr "יישור אוטומטי"
+msgstr "למטה"
 
 #: items/text/KReportItemText.cpp:127
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Vertical Alignment"
-msgstr "יישור אנכי:"
+msgstr "יישור אנכי"
 
 #: items/text/KReportItemText.cpp:129
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Font"
-msgstr "מדינה:"
+msgstr "גופן"
 
 #: items/text/KReportItemText.cpp:131
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Background Color"
-msgstr "שנייה"
+msgstr "צבע רקע"
 
 #: items/text/KReportItemText.cpp:132
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Foreground Color"
-msgstr "שנייה"
+msgstr "צבע חזית"
 
 #: items/text/KReportItemText.cpp:134
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Line Weight"
-msgstr "רוחב שורה:"
+msgstr "עובי קו"
 
 #: items/text/KReportItemText.cpp:136
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Line Color"
-msgstr "עוד צבעי קווים..."
+msgstr "צבע קו"
 
 #: items/text/KReportItemText.cpp:137
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Line Style"
-msgstr "&סגנון"
+msgstr "סגנון קו"
 
 #: items/text/KReportItemText.cpp:138
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Background Opacity"
-msgstr "צבע רקע:"
+msgstr "שקיפות רקע"
 
 #: renderer/scripting/KReportScriptHandler.cpp:170
 #, qt-format
@@ -565,10 +490,9 @@ msgid ""
 msgstr ""
 
 #: renderer/scripting/KReportScriptHandler.cpp:187
-#, fuzzy
 msgctxt "KReportScriptHandler|"
 msgid "Script Error"
-msgstr "אינטרנט"
+msgstr "שגיאת סקריפט"
 
 #: wrtembed/KReportDesigner.cpp:310
 #, qt-format
@@ -585,34 +509,29 @@ msgid "Unsupported Script Type"
 msgstr ""
 
 #: wrtembed/KReportDesigner.cpp:676
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Header (Any)"
-msgstr "תצוגה מקדימה של העמוד"
+msgstr "כותרת עמודים (כולם)"
 
 #: wrtembed/KReportDesigner.cpp:680
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Header (Even)"
-msgstr "תצוגה מקדימה של העמוד"
+msgstr "כותרת עמודים (זוגיים)"
 
 #: wrtembed/KReportDesigner.cpp:684
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Header (Odd)"
-msgstr "תצוגה מקדימה של העמוד"
+msgstr "כותרת עמודים (אי־זוגיים)"
 
 #: wrtembed/KReportDesigner.cpp:688
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Header (First)"
-msgstr "תצוגה מקדימה של העמוד"
+msgstr "כותרת עמוד (ראשון)"
 
 #: wrtembed/KReportDesigner.cpp:692
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Header (Last)"
-msgstr "תצוגה מקדימה של העמוד"
+msgstr "כותרת עמוד (אחרון)"
 
 #: wrtembed/KReportDesigner.cpp:696
 #, fuzzy
