@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-02-08 10:48+0200\n"
+"PO-Revision-Date: 2024-03-07 15:31+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -26,10 +26,9 @@ msgstr ""
 "X-Qt-Contexts: true\n"
 
 #: common/KReportDesign.cpp:150
-#, fuzzy
 msgctxt "KReportDesign|"
 msgid "Could not parse XML document."
-msgstr "אין אפשרות ליצור את הקובץ לשמירה"
+msgstr "לא ניתן לפענח קובץ XML."
 
 #: common/KReportDesign.cpp:159
 msgctxt "KReportDesign|"
@@ -104,7 +103,7 @@ msgstr "צבע רקע"
 #: common/KReportUnit.cpp:136
 msgctxt "KReportUnit|"
 msgid "Invalid"
-msgstr ""
+msgstr "שגוי"
 
 #: common/KReportUnit.cpp:138
 msgctxt "KReportUnit|"
@@ -149,7 +148,7 @@ msgstr "פיקסלים (px)"
 #: common/KReportUnit.cpp:154
 msgctxt "KReportUnit|"
 msgid "Unsupported unit"
-msgstr ""
+msgstr "יחידה לא נתמכת"
 
 #: items/check/KReportItemCheck.cpp:79
 msgctxt "KReportItemCheckBox|"
@@ -159,12 +158,12 @@ msgstr "צלב"
 #: items/check/KReportItemCheck.cpp:79
 msgctxt "KReportItemCheckBox|"
 msgid "Tick"
-msgstr ""
+msgstr "סימון"
 
 #: items/check/KReportItemCheck.cpp:79
 msgctxt "KReportItemCheckBox|"
 msgid "Dot"
-msgstr ""
+msgstr "נקודה"
 
 #: items/check/KReportItemCheck.cpp:80
 msgctxt "KReportItemCheckBox|"
@@ -199,7 +198,7 @@ msgstr "ערך"
 #: items/check/KReportItemCheck.cpp:90
 msgctxt "KReportItemCheckBox|"
 msgid "Value used if not bound to a field"
-msgstr ""
+msgstr "ייעשה שימוש בערך אם לא מאוגד לשדה"
 
 #: items/field/KReportItemField.cpp:90
 msgctxt "KReportItemField|"
@@ -209,7 +208,7 @@ msgstr "ערך"
 #: items/field/KReportItemField.cpp:90
 msgctxt "KReportItemField|"
 msgid "Value used if not bound to a field"
-msgstr ""
+msgstr "ייעשה שימוש בערך אם לא מאוגד לשדה"
 
 #: items/field/KReportItemField.cpp:94
 msgctxt "KReportItemField|"
@@ -284,17 +283,17 @@ msgstr "סגנון קו"
 #: items/field/KReportItemField.cpp:119
 msgctxt "KReportItemField|"
 msgid "Word Wrap"
-msgstr ""
+msgstr "גלישת שורות"
 
 #: items/field/KReportItemField.cpp:120
 msgctxt "KReportItemField|"
 msgid "Can Grow"
-msgstr ""
+msgstr "יכול לגדול"
 
 #: items/image/KReportItemImage.cpp:119
 msgctxt "KReportItemImage|"
 msgid "Clip"
-msgstr ""
+msgstr "חיתוך"
 
 #: items/image/KReportItemImage.cpp:119
 msgctxt "KReportItemImage|"
@@ -314,7 +313,7 @@ msgstr "ערך"
 #: items/image/KReportItemImage.cpp:121
 msgctxt "KReportItemImage|"
 msgid "Value used if not bound to a field"
-msgstr ""
+msgstr "ייעשה שימוש בערך אם לא מאוגד לשדה"
 
 #: items/label/KReportItemLabel.cpp:91
 msgctxt "KReportItemLabel|"
@@ -399,7 +398,7 @@ msgstr "ערך"
 #: items/text/KReportItemText.cpp:115
 msgctxt "KReportItemText|"
 msgid "Value used if not bound to a field"
-msgstr ""
+msgstr "ייעשה שימוש בערך אם לא מאוגד לשדה"
 
 #: items/text/KReportItemText.cpp:119
 msgctxt "KReportItemText|"
@@ -480,6 +479,10 @@ msgid ""
 "Do you want to suppress further messages?\n"
 "(messages will be restored next time the report is opened)"
 msgstr ""
+"לא ניתן לבצע הערכה לסקריפט. שגיאה: %1\n"
+"\n"
+"להפסיק להציג הודעות?\n"
+"(ההודעות תשוחזרנה בפעם הבאה שהדוח ייפתח)"
 
 #: renderer/scripting/KReportScriptHandler.cpp:171
 #, qt-format
@@ -488,6 +491,8 @@ msgid ""
 "Script code:\n"
 "%1"
 msgstr ""
+"קוד סקריפט:\n"
+"%1"
 
 #: renderer/scripting/KReportScriptHandler.cpp:187
 msgctxt "KReportScriptHandler|"
@@ -502,11 +507,14 @@ msgid ""
 "JavaScript language are supported. To prevent losing the scripts, their type "
 "and content will not be changed unless you change these scripts."
 msgstr ""
+"הדוח הזה מכיל סקריפטים מסוג „%1”. יש תמיכה רק בסקריפטים שנכתבו ב־JavaScript. "
+"כדי להימנע מאיבוד הסקריפטים, הסוג והתוכן שלהם לא ישתנה למעט במקרה של שינוי "
+"הסקריפטים האלה."
 
 #: wrtembed/KReportDesigner.cpp:315
 msgctxt "KReportDesigner|"
 msgid "Unsupported Script Type"
-msgstr ""
+msgstr "סוג הסקריפט לא נתמך"
 
 #: wrtembed/KReportDesigner.cpp:676
 msgctxt "KReportDesigner|"
@@ -534,437 +542,372 @@ msgid "Page Header (Last)"
 msgstr "כותרת עמוד (אחרון)"
 
 #: wrtembed/KReportDesigner.cpp:696
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Any)"
-msgstr "כותרת &תחתונה"
+msgstr "כותרת תחתונה (כלשהן)"
 
 #: wrtembed/KReportDesigner.cpp:700
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Even)"
-msgstr "כותרת &תחתונה"
+msgstr "כותרת תחתונה (זוגי)"
 
 #: wrtembed/KReportDesigner.cpp:704
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Odd)"
-msgstr "כותרת &תחתונה"
+msgstr "כותרת תחתונה (אי־זוגי)"
 
 #: wrtembed/KReportDesigner.cpp:708
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Footer (First)"
-msgstr "כותרת &תחתונה"
+msgstr "כותרת תחתונה (ראשונה)"
 
 #: wrtembed/KReportDesigner.cpp:712
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Last)"
-msgstr "כותרת &תחתונה"
+msgstr "כותרת תחתונה (אחרונה)"
 
 #: wrtembed/KReportDesigner.cpp:716
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Report Header"
-msgstr "כותרת &עליונה"
+msgstr "כותרת דוח עליונה"
 
 #: wrtembed/KReportDesigner.cpp:720
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Report Footer"
-msgstr "כותרת &תחתונה"
+msgstr "כותרת דוח תחתונה"
 
 #: wrtembed/KReportDesigner.cpp:808
-#, fuzzy
 msgctxt "KReportDesigner|Main report element"
 msgid "Report"
-msgstr "ייצ&וא..."
+msgstr "דוח"
 
 #: wrtembed/KReportDesigner.cpp:813
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Title"
-msgstr "כותרת:"
+msgstr "כותרת"
 
 #: wrtembed/KReportDesigner.cpp:813
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Report Title"
-msgstr "תואר המחבר"
+msgstr "כותרת הדוח"
 
 #: wrtembed/KReportDesigner.cpp:818
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Size"
-msgstr "גודל דף"
+msgstr "גודל העמוד"
 
 #: wrtembed/KReportDesigner.cpp:821
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Custom Page Size"
-msgstr "גודל דף"
+msgstr "גודל עמוד מותאם"
 
 #: wrtembed/KReportDesigner.cpp:825
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Portrait"
-msgstr "&לאורך"
+msgstr "לאורך"
 
 #: wrtembed/KReportDesigner.cpp:825
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Landscape"
-msgstr "לרו&חב"
+msgstr "לרוחב"
 
 #: wrtembed/KReportDesigner.cpp:827
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Orientation"
-msgstr "כיוו&ן פיצול"
+msgstr "כיוון הדף"
 
 #: wrtembed/KReportDesigner.cpp:832
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Unit"
-msgstr "גודל דף"
+msgstr "יחידת הדף"
 
 #: wrtembed/KReportDesigner.cpp:833
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Show Grid"
-msgstr "הצג סרגל כלים %1"
+msgstr "הצגת רשת"
 
 #: wrtembed/KReportDesigner.cpp:834
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Snap to Grid"
-msgstr "אישור שמירה"
+msgstr "הצמדה לרשת"
 
 #: wrtembed/KReportDesigner.cpp:835
 msgctxt "KReportDesigner|"
 msgid "Grid Divisions"
-msgstr ""
+msgstr "חלוקות רשת"
 
 #: wrtembed/KReportDesigner.cpp:841
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Left Margin"
-msgstr "שוליים"
+msgstr "שול שמאלי"
 
 #: wrtembed/KReportDesigner.cpp:843
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Right Margin"
-msgstr "הזחה ימנית"
+msgstr "שול ימני"
 
 #: wrtembed/KReportDesigner.cpp:845
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Top Margin"
-msgstr "שוליים עליונים"
+msgstr "שול עליון"
 
 #: wrtembed/KReportDesigner.cpp:847
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Bottom Margin"
-msgstr "שוליים תחתונים"
+msgstr "שול תחתון"
 
 #: wrtembed/KReportDesigner.cpp:869
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Object Script"
-msgstr "אובייקט"
+msgstr "סקריפט עצם"
 
 #: wrtembed/KReportDesigner.cpp:1067
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Cut"
-msgstr "מותאם אישית"
+msgstr "גזירה"
 
 #: wrtembed/KReportDesigner.cpp:1071
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Copy"
-msgstr "חברה"
+msgstr "העתקה"
 
 #: wrtembed/KReportDesigner.cpp:1076
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Paste"
-msgstr "תאריך"
+msgstr "הדבקה"
 
 #: wrtembed/KReportDesigner.cpp:1087
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Delete"
-msgstr "מחיקת טקסט"
+msgstr "מחיקה"
 
 #: wrtembed/KReportDesigner.cpp:1129
-#, fuzzy
 msgctxt "KReportDesigner|Report line element"
 msgid "Line"
-msgstr "פשתן"
+msgstr "שורה"
 
 #: wrtembed/KReportDesigner.cpp:1476
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Line"
-msgstr "פשתן"
+msgstr "שורה"
 
 #: wrtembed/KReportDesigner.cpp:1519
 msgctxt "KReportDesigner|"
 msgid "Cu&t"
-msgstr ""
+msgstr "ג&זירה"
 
 #: wrtembed/KReportDesigner.cpp:1521
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Cut selection to clipboard"
-msgstr "מילת השלמה"
+msgstr "גזירת הבחירה ללוח הגזירים"
 
 #: wrtembed/KReportDesigner.cpp:1525
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "&Copy"
-msgstr "חברה"
+msgstr "ה&עתקה"
 
 #: wrtembed/KReportDesigner.cpp:1527
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Copy selection to clipboard"
-msgstr "מילת השלמה"
+msgstr "העתקת הבחירה ללוח הגזירים"
 
 #: wrtembed/KReportDesigner.cpp:1531
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "&Paste"
-msgstr "תאריך"
+msgstr "ה&דבקה"
 
 #: wrtembed/KReportDesigner.cpp:1533
 msgctxt "KReportDesigner|"
 msgid "Paste clipboard content"
-msgstr ""
+msgstr "הדבקת תוכן לוח הגזירים"
 
 #: wrtembed/KReportDesigner.cpp:1544
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Edit Sections"
-msgstr "יוצאים מן הכלל"
+msgstr "עריכת מקטעים"
 
 #: wrtembed/KReportDesigner.cpp:1547
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Raise"
-msgstr "&שחזר"
+msgstr "הגבהה"
 
 #: wrtembed/KReportDesigner.cpp:1549
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Lower"
-msgstr "אותיות ר&גילות"
+msgstr "הנמכה"
 
 #: wrtembed/KReportDesignerSection.cpp:126
-#, fuzzy
 msgctxt "KReportDesignerSection|"
 msgid "Detail"
-msgstr "ב&רירת מחדל"
+msgstr "פרט"
 
 #: wrtembed/KReportDetailGroupSectionDialog.cpp:35
-#, fuzzy
 msgctxt "KReportDetailGroupSectionDialog|"
 msgid "Group Section Editor"
-msgstr "הפרק הנוכחי"
+msgstr "עורך מקטע קבוצה"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:34
-#, fuzzy
 msgctxt "DetailGroupSectionDialog|"
 msgid "Column:"
-msgstr "עמודות:"
+msgstr "עמודה:"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:51
-#, fuzzy
 msgctxt "DetailGroupSectionDialog|"
 msgid "Sort:"
-msgstr "רחוב"
+msgstr "מיון:"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:68
-#, fuzzy
 msgctxt "DetailGroupSectionDialog|"
 msgid "Show group header:"
-msgstr "הצג סרגל כלים %1"
+msgstr "הצגת כותרת קבוצה:"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:85
-#, fuzzy
 msgctxt "DetailGroupSectionDialog|"
 msgid "Show group footer:"
-msgstr "הצג סרגל כלים %1"
+msgstr "הצגת כותרת תחתונה של קבוצה:"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:105
-#, fuzzy
 msgctxt "DetailGroupSectionDialog|"
 msgid "Insert page break after group footer:"
-msgstr "הוסף מעבר אחרי הפיסקה"
+msgstr "הוספת מעבר עמוד אחרי כותרת הקבוצה:"
 
 #: wrtembed/KReportPropertiesButton.cpp:26
-#, fuzzy
 msgctxt "KReportPropertiesButton|"
 msgid "Select entire report"
-msgstr "בחר את הסגנונות שיש לייבא:"
+msgstr "בחירת הדוח בשלמותו"
 
 #: wrtembed/KReportPropertiesButton.cpp:27
 msgctxt "KReportPropertiesButton|"
 msgid ""
 "A button that allows a report's surface to be selected, allowing its "
 "properties to be seen."
-msgstr ""
+msgstr "כפתור שמאפשר לבחור את משטח הדוח, מה שמאפשר לצפות במאפיינים שלו."
 
 #: wrtembed/KReportRuler_p.cpp:1472
-#, fuzzy
 msgctxt "KReportRuler|"
 msgid "First line indent"
-msgstr "הזחה לשורה הראשונה"
+msgstr "הזחת השורה הראשונה"
 
 #: wrtembed/KReportRuler_p.cpp:1473
-#, fuzzy
 msgctxt "KReportRuler|"
 msgid "Left indent"
-msgstr "הזחה שמאלית"
+msgstr "הזחה משמאל"
 
 #: wrtembed/KReportRuler_p.cpp:1474
-#, fuzzy
 msgctxt "KReportRuler|"
 msgid "Right indent"
-msgstr "הזחה ימנית"
+msgstr "הזחה מימין"
 
 #: wrtembed/KReportSectionEditor.cpp:72
-#, fuzzy
 msgctxt "KReportSectionEditor|"
 msgid "Add..."
-msgstr "טעינה..."
+msgstr "הוספה…"
 
 #: wrtembed/KReportSectionEditor.cpp:74
-#, fuzzy
 msgctxt "KReportSectionEditor|"
 msgid "Edit..."
-msgstr "&הוספת קבוצה..."
+msgstr "עריכה…"
 
 #: wrtembed/KReportSectionEditor.cpp:76
-#, fuzzy
 msgctxt "KReportSectionEditor|"
 msgid "Delete"
-msgstr "מחיקת טקסט"
+msgstr "מחיקה"
 
 #: wrtembed/KReportSectionEditor.cpp:78
-#, fuzzy
 msgctxt "KReportSectionEditor|"
 msgid "Move Up"
-msgstr "מחיקת טקסט"
+msgstr "העלאה למעלה"
 
 #: wrtembed/KReportSectionEditor.cpp:80
-#, fuzzy
 msgctxt "KReportSectionEditor|"
 msgid "Move Down"
-msgstr "מחיקת טקסט"
+msgstr "הורדה למטה"
 
 #: wrtembed/KReportSectionEditor.cpp:311
 msgctxt "KReportSectionEditor|"
 msgid "Ascending"
-msgstr ""
+msgstr "עולה"
 
 #: wrtembed/KReportSectionEditor.cpp:312
 msgctxt "KReportSectionEditor|"
 msgid "Descending"
-msgstr ""
+msgstr "יורד"
 
 #: wrtembed/KReportSectionEditor.ui:29
-#, fuzzy
 msgctxt "SectionEditor|"
 msgid "Show report header"
-msgstr "הצג סרגל כלים %1"
+msgstr "הצגת כותרת דוח עליונה"
 
 #: wrtembed/KReportSectionEditor.ui:36
-#, fuzzy
 msgctxt "SectionEditor|"
 msgid "Show report footer"
-msgstr "הצג סרגל כלים %1"
+msgstr "הצגת כותרת דוח תחתונה"
 
 #: wrtembed/KReportSectionEditor.ui:43
-#, fuzzy
 msgctxt "SectionEditor|"
 msgid "Page Header"
-msgstr "תצוגה מקדימה של העמוד"
+msgstr "כותרת עמוד עליונה"
 
 #: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
-#, fuzzy
 msgctxt "SectionEditor|"
 msgid "First page:"
-msgstr "העמוד הבא"
+msgstr "עמוד ראשון:"
 
 #: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
-#, fuzzy
 msgctxt "SectionEditor|"
 msgid "Even pages:"
-msgstr "שם החברה"
+msgstr "עמודים זוגיים:"
 
 #: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
-#, fuzzy
 msgctxt "SectionEditor|"
 msgid "Any pages:"
-msgstr "שם החברה"
+msgstr "עמודים כלשהם:"
 
 #: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
-#, fuzzy
 msgctxt "SectionEditor|"
 msgid "Last page:"
-msgstr "הדבקת טקסט"
+msgstr "עמוד אחרון:"
 
 #: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
-#, fuzzy
 msgctxt "SectionEditor|"
 msgid "Odd pages:"
-msgstr "שם החברה"
+msgstr "עמודים אי־זוגיים:"
 
 #: wrtembed/KReportSectionEditor.ui:130
-#, fuzzy
 msgctxt "SectionEditor|"
 msgid "Page Footer"
-msgstr "כותרת &תחתונה"
+msgstr "כותרת עמוד תחתונה"
 
 #: wrtembed/KReportSectionEditor.ui:217
-#, fuzzy
 msgctxt "SectionEditor|"
 msgid "Group Sections"
-msgstr "הפרק הנוכחי"
+msgstr "מקטעי קבוצות"
 
 #: wrtembed/KReportZoomMode_p.cpp:28
-#, fuzzy, qt-format
+#, qt-format
 msgctxt "KReportZoomMode|"
 msgid "%1%"
 msgstr "%1%"
 
 #: wrtembed/KReportZoomMode_p.cpp:29
-#, fuzzy
 msgctxt "KReportZoomMode|"
 msgid "Fit Page Width"
-msgstr "העמוד הבא"
+msgstr "התאמה לרוחב העמוד"
 
 #: wrtembed/KReportZoomMode_p.cpp:30
-#, fuzzy
 msgctxt "KReportZoomMode|"
 msgid "Fit Page"
-msgstr "העמוד הבא"
+msgstr "התאמה לעמוד"
 
 #: wrtembed/KReportZoomMode_p.cpp:32
 msgctxt "KReportZoomMode|"
 msgid "Actual Pixels"
-msgstr ""
+msgstr "פיקסלים בפועל"
 
 #: wrtembed/KReportZoomMode_p.cpp:36
-#, fuzzy
 msgctxt "KReportZoomMode|"
 msgid "Fit Text Width"
-msgstr "העמוד הבא"
+msgstr "התאמה לרוחב הטקסט"
 
 #, fuzzy
 #~ msgctxt ""
