@@ -11,3 +11,6 @@ Dependencies:
     'frameworks/kguiaddons': '@stable'
     'frameworks/kwidgetsaddons': '@stable'
     'libraries/kproperty': '@same'
+
+Options:
+  require-passing-tests-on: ['Linux', 'FreeBSD', 'Windows']
