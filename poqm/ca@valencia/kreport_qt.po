@@ -799,12 +799,12 @@ msgstr "Sagnat dret"
 #: wrtembed/KReportSectionEditor.cpp:72
 msgctxt "KReportSectionEditor|"
 msgid "Add..."
-msgstr "Afig..."
+msgstr "Afig…"
 
 #: wrtembed/KReportSectionEditor.cpp:74
 msgctxt "KReportSectionEditor|"
 msgid "Edit..."
-msgstr "Edita..."
+msgstr "Edita…"
 
 #: wrtembed/KReportSectionEditor.cpp:76
 msgctxt "KReportSectionEditor|"
