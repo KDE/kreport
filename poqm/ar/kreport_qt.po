@@ -5,21 +5,21 @@
 # محمد سعد  Mohamed SAAD <metehyi@free.fr>, 2006.
 # Youssef Chahibi <chahibi@gmail.com>, 2007, 2008.
 # Abdelrahman <abd_elrahman_em@yahoo.com>, 2007, 2008.
+# Zayed Al-Saidi <zayed.alsaidi@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-22 01:56+0000\n"
-"PO-Revision-Date: 2008-01-12 07:26+0000\n"
-"Last-Translator: Youssef Chahibi <chahibi@gmail.com>\n"
-"Language-Team: Arabic <doc@arabeyes.org>\n"
+"PO-Revision-Date: 2022-01-22 22:27+0400\n"
+"Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
+"Language-Team: ar\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: KAider 0.1\n"
 "X-Qt-Contexts: true\n"
 
 #: common/KReportDesign.cpp:150
@@ -36,119 +36,94 @@ msgid "Error in XML document."
 msgstr "خطأ في المستند المضمن"
 
 #: common/KReportItemBase.cpp:75
-#, fuzzy
 msgctxt "KReportItemBase|"
 msgid "Name"
-msgstr "الاسم:"
+msgstr "الاسم"
 
 #: common/KReportItemBase.cpp:75
-#, fuzzy
 msgctxt "KReportItemBase|"
 msgid "Object Name"
-msgstr "كائن"
+msgstr "اسم الكائن"
 
 #: common/KReportItemBase.cpp:78
-#, fuzzy
-#| msgid "Position"
 msgctxt "ItemPosition|"
 msgid "Position"
-msgstr "الموضع"
+msgstr "الموقع"
 
 #: common/KReportItemBase.cpp:79
-#, fuzzy
 msgctxt "ItemSize|"
 msgid "Size"
-msgstr "ال&حجم:"
+msgstr "الحجم"
 
 #: common/KReportItemBase.cpp:112
-#, fuzzy
 msgctxt "KReportItemBase|"
 msgid "Data Source"
-msgstr "احذف"
+msgstr "مصدر البيانات"
 
 #: common/KReportItemLine.cpp:80
-#, fuzzy
-#| msgid "&Set Position..."
 msgctxt "StartPosition|"
 msgid "Start Position"
-msgstr "ا&ضبط الموضع..."
+msgstr "موقع البداية"
 
 #: common/KReportItemLine.cpp:81
-#, fuzzy
-#| msgid "Position"
 msgctxt "EndPosition|"
 msgid "End Position"
 msgstr "الموضع"
 
 #: common/KReportItemLine.cpp:83
-#, fuzzy
 msgctxt "KReportItemLine|"
 msgid "Line Weight"
-msgstr "عرض الخط:"
+msgstr "عرض الخط"
 
 #: common/KReportItemLine.cpp:85
-#, fuzzy
 msgctxt "KReportItemLine|"
 msgid "Line Color"
-msgstr "اللون"
+msgstr "لون الخطّ"
 
 #: common/KReportItemLine.cpp:86
-#, fuzzy
 msgctxt "KReportItemLine|"
 msgid "Line Style"
-msgstr "حد الخط"
+msgstr "نمط الخطّ"
 
 #: common/KReportSectionData.cpp:164
-#, fuzzy
 msgctxt "KReportSectionData|Report section"
 msgid "Section"
-msgstr "اجمع الأشكال"
+msgstr "القسم"
 
 #: common/KReportSectionData.cpp:166
-#, fuzzy
 msgctxt "KReportSectionData|"
 msgid "Height"
-msgstr "الارتفاع:"
+msgstr "الارتفاع"
 
 #: common/KReportSectionData.cpp:170
-#, fuzzy
 msgctxt "KReportSectionData|"
 msgid "Background Color"
-msgstr "اضبط الخلفية"
+msgstr "لون الخلفيّة"
 
 #: common/KReportUnit.cpp:136
-#, fuzzy
 msgctxt "KReportUnit|"
 msgid "Invalid"
-msgstr "أضف مجموعة"
+msgstr "غير صالح"
 
 #: common/KReportUnit.cpp:138
-#, fuzzy
-#| msgid "Millimeters (mm)"
 msgctxt "KReportUnit|"
 msgid "Millimeters (mm)"
-msgstr "مليميترات (مم)"
+msgstr "مليمترات (مم)"
 
 #: common/KReportUnit.cpp:140
-#, fuzzy
-#| msgid "Centimeters (cm)"
 msgctxt "KReportUnit|"
 msgid "Centimeters (cm)"
 msgstr "سنتيمترات (سم)"
 
 #: common/KReportUnit.cpp:142
-#, fuzzy
-#| msgid "Decimeters (dm)"
 msgctxt "KReportUnit|"
 msgid "Decimeters (dm)"
 msgstr "ديسيمترات (دسم)"
 
 #: common/KReportUnit.cpp:144
-#, fuzzy
-#| msgid "Inches (in)"
 msgctxt "KReportUnit|"
 msgid "Inches (in)"
-msgstr "بوصات (in)"
+msgstr "بوصة (بوصة)"
 
 #: common/KReportUnit.cpp:146
 #, fuzzy
@@ -158,30 +133,24 @@ msgid "Pica (pi)"
 msgstr "Pica (pi)"
 
 #: common/KReportUnit.cpp:148
-#, fuzzy
-#| msgid "Cicero (cc)"
 msgctxt "KReportUnit|"
 msgid "Cicero (cc)"
 msgstr "سيسيرو (cc)"
 
 #: common/KReportUnit.cpp:150
-#, fuzzy
-#| msgid "Points (pt)"
 msgctxt "KReportUnit|"
 msgid "Points (pt)"
-msgstr "نقاط (pt)"
+msgstr "نقاط (نق)"
 
 #: common/KReportUnit.cpp:152
-#, fuzzy
-#| msgid "Pixels (px)"
 msgctxt "KReportUnit|"
 msgid "Pixels (px)"
-msgstr "بكسلات (px)"
+msgstr "بكسلات (بك)"
 
 #: common/KReportUnit.cpp:154
 msgctxt "KReportUnit|"
 msgid "Unsupported unit"
-msgstr ""
+msgstr "وحدة غير مدعومة"
 
 #: items/check/KReportItemCheck.cpp:79
 #, fuzzy
@@ -197,19 +166,17 @@ msgstr ""
 #: items/check/KReportItemCheck.cpp:79
 msgctxt "KReportItemCheckBox|"
 msgid "Dot"
-msgstr ""
+msgstr "نقطة"
 
 #: items/check/KReportItemCheck.cpp:80
-#, fuzzy
 msgctxt "KReportItemCheckBox|"
 msgid "Style"
-msgstr "الأ&سلوب:"
+msgstr "النّمط"
 
 #: items/check/KReportItemCheck.cpp:84
-#, fuzzy
 msgctxt "KReportItemCheckBox|"
 msgid "Foreground Color"
-msgstr "اضبط الخلفية"
+msgstr "لون المقدّمة"
 
 #: items/check/KReportItemCheck.cpp:86
 #, fuzzy
@@ -218,20 +185,16 @@ msgid "Line Weight"
 msgstr "عرض الخط:"
 
 #: items/check/KReportItemCheck.cpp:88
-#, fuzzy
 msgctxt "KReportItemCheckBox|"
 msgid "Line Color"
-msgstr "اللون"
+msgstr "لون الخطّ"
 
 #: items/check/KReportItemCheck.cpp:89
-#, fuzzy
 msgctxt "KReportItemCheckBox|"
 msgid "Line Style"
-msgstr "حد الخط"
+msgstr "نمط الخطّ"
 
 #: items/check/KReportItemCheck.cpp:90
-#, fuzzy
-#| msgid "Value"
 msgctxt "KReportItemCheckBox|"
 msgid "Value"
 msgstr "القيمة"
@@ -242,8 +205,6 @@ msgid "Value used if not bound to a field"
 msgstr ""
 
 #: items/field/KReportItemField.cpp:90
-#, fuzzy
-#| msgid "Value"
 msgctxt "KReportItemField|"
 msgid "Value"
 msgstr "القيمة"
@@ -254,94 +215,79 @@ msgid "Value used if not bound to a field"
 msgstr ""
 
 #: items/field/KReportItemField.cpp:94
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Left"
-msgstr "اليسار:"
+msgstr "اليسار"
 
 #: items/field/KReportItemField.cpp:94 items/field/KReportItemField.cpp:100
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Center"
-msgstr "التعليق"
+msgstr "الوسط"
 
 #: items/field/KReportItemField.cpp:94
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Right"
-msgstr "يمين:"
+msgstr "اليمين"
 
 #: items/field/KReportItemField.cpp:96
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Horizontal Alignment"
-msgstr "اضبط المحاذاة الأفقية"
+msgstr "محاذاة أفقية"
 
 #: items/field/KReportItemField.cpp:100
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Top"
-msgstr "الأعلى:"
+msgstr "الأعلى"
 
 #: items/field/KReportItemField.cpp:100
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Bottom"
-msgstr "تكبير"
+msgstr "الأسفل"
 
 #: items/field/KReportItemField.cpp:102
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Vertical Alignment"
-msgstr "اضبط المحاذاة الرأسية"
+msgstr "محاذاة العموديّة"
 
 #: items/field/KReportItemField.cpp:104
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Font"
-msgstr "اضبط نوع النقطة"
+msgstr "الخط"
 
 #: items/field/KReportItemField.cpp:106
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Background Color"
-msgstr "اضبط الخلفية"
+msgstr "لون الخلفيّة"
 
 #: items/field/KReportItemField.cpp:107
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Foreground Color"
-msgstr "اضبط الخلفية"
+msgstr "لون المقدّمة"
 
 #: items/field/KReportItemField.cpp:109
-#, fuzzy
-#| msgid "&Background color:"
 msgctxt "KReportItemField|"
 msgid "Background Opacity"
-msgstr "&لون الخلفية:"
+msgstr "شفافيّة الخلفيّة:"
 
 #: items/field/KReportItemField.cpp:114
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Line Weight"
-msgstr "عرض الخط:"
+msgstr "عرض الخط"
 
 #: items/field/KReportItemField.cpp:116
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Line Color"
-msgstr "اللون"
+msgstr "لون الخطّ"
 
 #: items/field/KReportItemField.cpp:117
-#, fuzzy
 msgctxt "KReportItemField|"
 msgid "Line Style"
-msgstr "حد الخط"
+msgstr "نمط الخطّ"
 
 #: items/field/KReportItemField.cpp:119
 msgctxt "KReportItemField|"
 msgid "Word Wrap"
-msgstr ""
+msgstr "لفّ الكلمات"
 
 #: items/field/KReportItemField.cpp:120
 msgctxt "KReportItemField|"
@@ -351,7 +297,7 @@ msgstr ""
 #: items/image/KReportItemImage.cpp:119
 msgctxt "KReportItemImage|"
 msgid "Clip"
-msgstr ""
+msgstr "قصاصة"
 
 #: items/image/KReportItemImage.cpp:119
 #, fuzzy
@@ -366,8 +312,6 @@ msgid "Resize Mode"
 msgstr "أعد تحجيم"
 
 #: items/image/KReportItemImage.cpp:121
-#, fuzzy
-#| msgid "Value"
 msgctxt "KReportItemImage|"
 msgid "Value"
 msgstr "القيمة"
@@ -378,28 +322,24 @@ msgid "Value used if not bound to a field"
 msgstr ""
 
 #: items/label/KReportItemLabel.cpp:91
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Caption"
-msgstr "مجموعة"
+msgstr "الوصف"
 
 #: items/label/KReportItemLabel.cpp:94
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Left"
-msgstr "اليسار:"
+msgstr "اليسار"
 
 #: items/label/KReportItemLabel.cpp:94 items/label/KReportItemLabel.cpp:100
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Center"
-msgstr "التعليق"
+msgstr "الوسط"
 
 #: items/label/KReportItemLabel.cpp:94
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Right"
-msgstr "يمين:"
+msgstr "اليمين"
 
 #: items/label/KReportItemLabel.cpp:96
 #, fuzzy
@@ -408,69 +348,56 @@ msgid "Horizontal Alignment"
 msgstr "اضبط المحاذاة الأفقية"
 
 #: items/label/KReportItemLabel.cpp:100
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Top"
-msgstr "الأعلى:"
+msgstr "الأعلى"
 
 #: items/label/KReportItemLabel.cpp:100
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Bottom"
-msgstr "تكبير"
+msgstr "الأسفل"
 
 #: items/label/KReportItemLabel.cpp:102
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Vertical Alignment"
-msgstr "اضبط المحاذاة الرأسية"
+msgstr "محاذاة العموديّة"
 
 #: items/label/KReportItemLabel.cpp:104
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Font"
-msgstr "اضبط نوع النقطة"
+msgstr "الخط"
 
 #: items/label/KReportItemLabel.cpp:106
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Background Color"
-msgstr "اضبط الخلفية"
+msgstr "لون الخلفيّة"
 
 #: items/label/KReportItemLabel.cpp:107
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Foreground Color"
-msgstr "اضبط الخلفية"
+msgstr "لون المقدّمة"
 
 #: items/label/KReportItemLabel.cpp:109
-#, fuzzy
-#| msgid "&Background color:"
 msgctxt "KReportItemLabel|"
 msgid "Background Opacity"
-msgstr "&لون الخلفية:"
+msgstr "شفافيّة الخلفيّة:"
 
 #: items/label/KReportItemLabel.cpp:114
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Line Weight"
-msgstr "عرض الخط:"
+msgstr "وزن الخط"
 
 #: items/label/KReportItemLabel.cpp:116
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Line Color"
-msgstr "اللون"
+msgstr "لون الخطّ"
 
 #: items/label/KReportItemLabel.cpp:117
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Line Style"
-msgstr "حد الخط"
+msgstr "نمط الخطّ"
 
 #: items/text/KReportItemText.cpp:115
-#, fuzzy
-#| msgid "Value"
 msgctxt "KReportItemText|"
 msgid "Value"
 msgstr "القيمة"
@@ -481,22 +408,19 @@ msgid "Value used if not bound to a field"
 msgstr ""
 
 #: items/text/KReportItemText.cpp:119
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Left"
-msgstr "اليسار:"
+msgstr "اليسار"
 
 #: items/text/KReportItemText.cpp:119 items/text/KReportItemText.cpp:125
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Center"
-msgstr "التعليق"
+msgstr "الوسط"
 
 #: items/text/KReportItemText.cpp:119
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Right"
-msgstr "يمين:"
+msgstr "اليمين"
 
 #: items/text/KReportItemText.cpp:121
 #, fuzzy
@@ -505,40 +429,34 @@ msgid "Horizontal Alignment"
 msgstr "اضبط المحاذاة الأفقية"
 
 #: items/text/KReportItemText.cpp:125
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Top"
-msgstr "الأعلى:"
+msgstr "الأعلى"
 
 #: items/text/KReportItemText.cpp:125
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Bottom"
-msgstr "تكبير"
+msgstr "الأسفل"
 
 #: items/text/KReportItemText.cpp:127
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Vertical Alignment"
-msgstr "اضبط المحاذاة الرأسية"
+msgstr "محاذاة العموديّة"
 
 #: items/text/KReportItemText.cpp:129
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Font"
-msgstr "اضبط نوع النقطة"
+msgstr "الخط"
 
 #: items/text/KReportItemText.cpp:131
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Background Color"
-msgstr "اضبط الخلفية"
+msgstr "لون الخلفيّة"
 
 #: items/text/KReportItemText.cpp:132
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Foreground Color"
-msgstr "اضبط الخلفية"
+msgstr "لون المقدّمة"
 
 #: items/text/KReportItemText.cpp:134
 #, fuzzy
@@ -547,10 +465,9 @@ msgid "Line Weight"
 msgstr "عرض الخط:"
 
 #: items/text/KReportItemText.cpp:136
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Line Color"
-msgstr "اللون"
+msgstr "لون الخطّ"
 
 #: items/text/KReportItemText.cpp:137
 #, fuzzy
@@ -677,17 +594,14 @@ msgid "Report Footer"
 msgstr "تذييل"
 
 #: wrtembed/KReportDesigner.cpp:808
-#, fuzzy
-#| msgid "Export"
 msgctxt "KReportDesigner|Main report element"
 msgid "Report"
-msgstr "صدِّر"
+msgstr "التقرير"
 
 #: wrtembed/KReportDesigner.cpp:813
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Title"
-msgstr "العنوان:"
+msgstr "العنوان"
 
 #: wrtembed/KReportDesigner.cpp:813
 #, fuzzy
@@ -696,8 +610,6 @@ msgid "Report Title"
 msgstr "تذييل"
 
 #: wrtembed/KReportDesigner.cpp:818
-#, fuzzy
-#| msgid "Page Size"
 msgctxt "KReportDesigner|"
 msgid "Page Size"
 msgstr "حجم الصفحة"
@@ -710,22 +622,19 @@ msgid "Custom Page Size"
 msgstr "حجم الصفحة"
 
 #: wrtembed/KReportDesigner.cpp:825
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Portrait"
-msgstr "منظر &طولي"
+msgstr "بالطّول"
 
 #: wrtembed/KReportDesigner.cpp:825
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Landscape"
-msgstr "منظر عر&ضي"
+msgstr "بالعرض"
 
 #: wrtembed/KReportDesigner.cpp:827
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Orientation"
-msgstr "الاتجاه"
+msgstr "اتّجاه الصّفحة"
 
 #: wrtembed/KReportDesigner.cpp:832
 #, fuzzy
@@ -734,17 +643,14 @@ msgid "Page Unit"
 msgstr "حجم الصفحة"
 
 #: wrtembed/KReportDesigner.cpp:833
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Show Grid"
-msgstr "اعرض ال&شبيكة"
+msgstr "أظهر الشبكة"
 
 #: wrtembed/KReportDesigner.cpp:834
-#, fuzzy
-#| msgid "Snap to Grid"
 msgctxt "KReportDesigner|"
 msgid "Snap to Grid"
-msgstr "طابق إلى الشبكة"
+msgstr "مطابقة للشبكة"
 
 #: wrtembed/KReportDesigner.cpp:835
 msgctxt "KReportDesigner|"
@@ -782,73 +688,64 @@ msgid "Object Script"
 msgstr "كائن"
 
 #: wrtembed/KReportDesigner.cpp:1067
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Cut"
-msgstr "مخصص"
+msgstr "قصّ"
 
 #: wrtembed/KReportDesigner.cpp:1071
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Copy"
-msgstr "الشركة:"
+msgstr "انسخ"
 
 #: wrtembed/KReportDesigner.cpp:1076
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Paste"
-msgstr "للصفحة"
+msgstr "ألصق"
 
 #: wrtembed/KReportDesigner.cpp:1087
-#, fuzzy
-#| msgid "Delete"
 msgctxt "KReportDesigner|"
 msgid "Delete"
 msgstr "احذف"
 
 #: wrtembed/KReportDesigner.cpp:1129
-#, fuzzy
 msgctxt "KReportDesigner|Report line element"
 msgid "Line"
-msgstr "الخطوط"
+msgstr "السّطر"
 
 #: wrtembed/KReportDesigner.cpp:1476
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Line"
-msgstr "الخطوط"
+msgstr "السّطر"
 
 #: wrtembed/KReportDesigner.cpp:1519
 msgctxt "KReportDesigner|"
 msgid "Cu&t"
-msgstr ""
+msgstr "ق&صّ"
 
 #: wrtembed/KReportDesigner.cpp:1521
 msgctxt "KReportDesigner|"
 msgid "Cut selection to clipboard"
-msgstr ""
+msgstr "قص التحديد إلى الحافظة"
 
 #: wrtembed/KReportDesigner.cpp:1525
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "&Copy"
-msgstr "الشركة:"
+msgstr "ا&نسخ"
 
 #: wrtembed/KReportDesigner.cpp:1527
 msgctxt "KReportDesigner|"
 msgid "Copy selection to clipboard"
-msgstr ""
+msgstr "انسخ التحديد إلى الحافظ"
 
 #: wrtembed/KReportDesigner.cpp:1531
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "&Paste"
-msgstr "للصفحة"
+msgstr "أ&لصق"
 
 #: wrtembed/KReportDesigner.cpp:1533
 msgctxt "KReportDesigner|"
 msgid "Paste clipboard content"
-msgstr ""
+msgstr "ألصق محتوى الحافظة"
 
 #: wrtembed/KReportDesigner.cpp:1544
 #, fuzzy
@@ -860,18 +757,17 @@ msgstr "مجموعة"
 #: wrtembed/KReportDesigner.cpp:1547
 msgctxt "KReportDesigner|"
 msgid "Raise"
-msgstr ""
+msgstr "ارفع"
 
 #: wrtembed/KReportDesigner.cpp:1549
 msgctxt "KReportDesigner|"
 msgid "Lower"
-msgstr ""
+msgstr "اخفض"
 
 #: wrtembed/KReportDesignerSection.cpp:126
-#, fuzzy
 msgctxt "KReportDesignerSection|"
 msgid "Detail"
-msgstr "ا&فتراضي"
+msgstr "التّفاصيل"
 
 #: wrtembed/KReportDetailGroupSectionDialog.cpp:35
 #, fuzzy
@@ -880,16 +776,14 @@ msgid "Group Section Editor"
 msgstr "اجمع الأشكال"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:34
-#, fuzzy
 msgctxt "DetailGroupSectionDialog|"
 msgid "Column:"
-msgstr "الأعمدة:"
+msgstr "العمود:"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:51
-#, fuzzy
 msgctxt "DetailGroupSectionDialog|"
 msgid "Sort:"
-msgstr "الشارع :"
+msgstr "الفرز:"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:68
 #, fuzzy
@@ -921,22 +815,16 @@ msgid ""
 msgstr ""
 
 #: wrtembed/KReportRuler_p.cpp:1472
-#, fuzzy
-#| msgid "First line indent"
 msgctxt "KReportRuler|"
 msgid "First line indent"
 msgstr "المسافة البادئة للسطر الأول"
 
 #: wrtembed/KReportRuler_p.cpp:1473
-#, fuzzy
-#| msgid "Left indent"
 msgctxt "KReportRuler|"
 msgid "Left indent"
 msgstr "المسافة البادئة اليسرى"
 
 #: wrtembed/KReportRuler_p.cpp:1474
-#, fuzzy
-#| msgid "Right indent"
 msgctxt "KReportRuler|"
 msgid "Right indent"
 msgstr "المسافة البادئة اليمنى"
@@ -944,42 +832,37 @@ msgstr "المسافة البادئة اليمنى"
 #: wrtembed/KReportSectionEditor.cpp:72
 msgctxt "KReportSectionEditor|"
 msgid "Add..."
-msgstr ""
-
-#: wrtembed/KReportSectionEditor.cpp:74
-#, fuzzy
-msgctxt "KReportSectionEditor|"
-msgid "Edit..."
 msgstr "أضف..."
 
+#: wrtembed/KReportSectionEditor.cpp:74
+msgctxt "KReportSectionEditor|"
+msgid "Edit..."
+msgstr "حرّر..."
+
 #: wrtembed/KReportSectionEditor.cpp:76
-#, fuzzy
-#| msgid "Delete"
 msgctxt "KReportSectionEditor|"
 msgid "Delete"
 msgstr "احذف"
 
 #: wrtembed/KReportSectionEditor.cpp:78
-#, fuzzy
 msgctxt "KReportSectionEditor|"
 msgid "Move Up"
-msgstr "انقل الصفحة"
+msgstr "انقل لأعلى"
 
 #: wrtembed/KReportSectionEditor.cpp:80
-#, fuzzy
 msgctxt "KReportSectionEditor|"
 msgid "Move Down"
-msgstr "انقل النقاط"
+msgstr "انقل لأسفل"
 
 #: wrtembed/KReportSectionEditor.cpp:311
 msgctxt "KReportSectionEditor|"
 msgid "Ascending"
-msgstr ""
+msgstr "تصاعديًّا"
 
 #: wrtembed/KReportSectionEditor.cpp:312
 msgctxt "KReportSectionEditor|"
 msgid "Descending"
-msgstr ""
+msgstr "تنازليًّا"
 
 #: wrtembed/KReportSectionEditor.ui:29
 #, fuzzy
@@ -1018,10 +901,9 @@ msgid "Any pages:"
 msgstr "انسخ الصفحة"
 
 #: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
-#, fuzzy
 msgctxt "SectionEditor|"
 msgid "Last page:"
-msgstr "الصق الصفحة"
+msgstr "الصّفحة الأخيرة:"
 
 #: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
 #, fuzzy
@@ -1049,31 +931,24 @@ msgid "%1%"
 msgstr "%1%"
 
 #: wrtembed/KReportZoomMode_p.cpp:29
-#, fuzzy
-#| msgid "Fit Page Width"
 msgctxt "KReportZoomMode|"
 msgid "Fit Page Width"
 msgstr "اضبط لعرض الصفحة"
 
 #: wrtembed/KReportZoomMode_p.cpp:30
-#, fuzzy
-#| msgid "Fit Page"
 msgctxt "KReportZoomMode|"
 msgid "Fit Page"
-msgstr "اضبط للصفحة"
+msgstr "ناسب الصفحة"
 
 #: wrtembed/KReportZoomMode_p.cpp:32
-#, fuzzy
-#| msgid "Actual Pixels"
 msgctxt "KReportZoomMode|"
 msgid "Actual Pixels"
 msgstr "البكسلات الفعلية"
 
 #: wrtembed/KReportZoomMode_p.cpp:36
-#, fuzzy
 msgctxt "KReportZoomMode|"
 msgid "Fit Text Width"
-msgstr "اضبط لعرض الصفحة"
+msgstr "لائم إلى عرض النّصّ"
 
 #, fuzzy
 #~ msgctxt ""
