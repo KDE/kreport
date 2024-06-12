@@ -5,13 +5,13 @@
 # محمد سعد  Mohamed SAAD <metehyi@free.fr>, 2006.
 # Youssef Chahibi <chahibi@gmail.com>, 2007, 2008.
 # Abdelrahman <abd_elrahman_em@yahoo.com>, 2007, 2008.
-# Zayed Al-Saidi <zayed.alsaidi@gmail.com>, 2022.
+# SPDX-FileCopyrightText: 2022, 2024 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-22 01:56+0000\n"
-"PO-Revision-Date: 2022-01-22 22:27+0400\n"
+"PO-Revision-Date: 2024-06-08 17:12+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -20,6 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Lokalize 23.08.5\n"
 "X-Qt-Contexts: true\n"
 
 #: common/KReportDesign.cpp:150
@@ -177,10 +178,9 @@ msgid "Foreground Color"
 msgstr "لون المقدّمة"
 
 #: items/check/KReportItemCheck.cpp:86
-#, fuzzy
 msgctxt "KReportItemCheckBox|"
 msgid "Line Weight"
-msgstr "عرض الخط:"
+msgstr "وزن الخط"
 
 #: items/check/KReportItemCheck.cpp:88
 msgctxt "KReportItemCheckBox|"
@@ -298,16 +298,14 @@ msgid "Clip"
 msgstr "قصاصة"
 
 #: items/image/KReportItemImage.cpp:119
-#, fuzzy
 msgctxt "KReportItemImage|"
 msgid "Stretch"
-msgstr "الشارع :"
+msgstr "مط"
 
 #: items/image/KReportItemImage.cpp:120
-#, fuzzy
 msgctxt "KReportItemImage|"
 msgid "Resize Mode"
-msgstr "أعد تحجيم"
+msgstr "نمط إعادة تحجيم"
 
 #: items/image/KReportItemImage.cpp:121
 msgctxt "KReportItemImage|"
@@ -340,10 +338,9 @@ msgid "Right"
 msgstr "اليمين"
 
 #: items/label/KReportItemLabel.cpp:96
-#, fuzzy
 msgctxt "KReportItemLabel|"
 msgid "Horizontal Alignment"
-msgstr "اضبط المحاذاة الأفقية"
+msgstr "محاذاة أفقية"
 
 #: items/label/KReportItemLabel.cpp:100
 msgctxt "KReportItemLabel|"
@@ -421,10 +418,9 @@ msgid "Right"
 msgstr "اليمين"
 
 #: items/text/KReportItemText.cpp:121
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Horizontal Alignment"
-msgstr "اضبط المحاذاة الأفقية"
+msgstr "محاذاة أفقية"
 
 #: items/text/KReportItemText.cpp:125
 msgctxt "KReportItemText|"
@@ -457,10 +453,9 @@ msgid "Foreground Color"
 msgstr "لون المقدّمة"
 
 #: items/text/KReportItemText.cpp:134
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Line Weight"
-msgstr "عرض الخط:"
+msgstr "وزن الخط"
 
 #: items/text/KReportItemText.cpp:136
 msgctxt "KReportItemText|"
@@ -468,17 +463,14 @@ msgid "Line Color"
 msgstr "لون الخطّ"
 
 #: items/text/KReportItemText.cpp:137
-#, fuzzy
 msgctxt "KReportItemText|"
 msgid "Line Style"
 msgstr "نمط الخطّ"
 
 #: items/text/KReportItemText.cpp:138
-#, fuzzy
-#| msgid "&Background color:"
 msgctxt "KReportItemText|"
 msgid "Background Opacity"
-msgstr "شفافيّة الخلفيّة"
+msgstr "شفافيّة الخلفيّة:"
 
 #: renderer/scripting/KReportScriptHandler.cpp:170
 #, qt-format
@@ -500,10 +492,9 @@ msgid ""
 msgstr "ملف سرد أوامر"
 
 #: renderer/scripting/KReportScriptHandler.cpp:187
-#, fuzzy
 msgctxt "KReportScriptHandler|"
 msgid "Script Error"
-msgstr "خطأ داخلي"
+msgstr "خطأ في السكربت"
 
 #: wrtembed/KReportDesigner.cpp:310
 #, qt-format
@@ -875,28 +866,24 @@ msgid "Show report footer"
 msgstr "اعرض ال&شبيكة"
 
 #: wrtembed/KReportSectionEditor.ui:43
-#, fuzzy
 msgctxt "SectionEditor|"
 msgid "Page Header"
-msgstr "معاينة الصفحة"
+msgstr "رأس الصفحة"
 
 #: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
-#, fuzzy
 msgctxt "SectionEditor|"
 msgid "First page:"
-msgstr "أول صفحة:"
+msgstr "الصفحة الأولى:"
 
 #: wrtembed/KReportSectionEditor.ui:65 wrtembed/KReportSectionEditor.ui:152
-#, fuzzy
 msgctxt "SectionEditor|"
 msgid "Even pages:"
-msgstr "انسخ الصفحة"
+msgstr "الصفحات الزوجية:"
 
 #: wrtembed/KReportSectionEditor.ui:79 wrtembed/KReportSectionEditor.ui:166
-#, fuzzy
 msgctxt "SectionEditor|"
 msgid "Any pages:"
-msgstr "انسخ الصفحة"
+msgstr "أي صفحات:"
 
 #: wrtembed/KReportSectionEditor.ui:97 wrtembed/KReportSectionEditor.ui:184
 msgctxt "SectionEditor|"
@@ -904,16 +891,14 @@ msgid "Last page:"
 msgstr "الصّفحة الأخيرة:"
 
 #: wrtembed/KReportSectionEditor.ui:111 wrtembed/KReportSectionEditor.ui:198
-#, fuzzy
 msgctxt "SectionEditor|"
 msgid "Odd pages:"
-msgstr "انسخ الصفحة"
+msgstr "الصفحات الفردية:"
 
 #: wrtembed/KReportSectionEditor.ui:130
-#, fuzzy
 msgctxt "SectionEditor|"
 msgid "Page Footer"
-msgstr "تذييل"
+msgstr "تذييل الصفحة"
 
 #: wrtembed/KReportSectionEditor.ui:217
 #, fuzzy
