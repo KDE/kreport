@@ -8,7 +8,7 @@
 # Frederik Schwarzer <schwarzer@kde.org>, 2010, 2011, 2012, 2013, 2016, 2017, 2018.
 msgid ""
 msgstr ""
-"Project-Id-Version: calligra\n"
+"Project-Id-Version: kreport_qt\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-22 01:56+0000\n"
 "PO-Revision-Date: 2018-09-25 17:08+0100\n"
