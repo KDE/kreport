@@ -3,7 +3,7 @@
 # Burkhard Lück <lueck@hube-lueck.de>, 2015, 2016.
 msgid ""
 msgstr ""
-"Project-Id-Version: koreport_barcodeplugin\n"
+"Project-Id-Version: kreport_barcodeplugin_qt\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-01-20 01:47+0000\n"
 "PO-Revision-Date: 2016-10-10 21:10+0100\n"
