@@ -13,4 +13,4 @@ msgstr ""
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "PO-Revision-Date: 2024-03-30 19:46\n"
-
+"X-Qt-Contexts: true\n"
