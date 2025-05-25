@@ -29,7 +29,7 @@ msgstr "Latitud"
 #: KReportItemMaps.cpp:67
 msgctxt "KReportItemMaps|"
 msgid "Longitude"
-msgstr "Llargària"
+msgstr "Longitud"
 
 #: KReportItemMaps.cpp:73
 msgctxt "KReportItemMaps|"
