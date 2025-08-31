@@ -620,17 +620,17 @@ msgstr "Unitat de pàgina"
 #: wrtembed/KReportDesigner.cpp:833
 msgctxt "KReportDesigner|"
 msgid "Show Grid"
-msgstr "Mostra la graella"
+msgstr "Mostra la quadrícula"
 
 #: wrtembed/KReportDesigner.cpp:834
 msgctxt "KReportDesigner|"
 msgid "Snap to Grid"
-msgstr "Ajusta a la graella"
+msgstr "Ajusta a la quadrícula"
 
 #: wrtembed/KReportDesigner.cpp:835
 msgctxt "KReportDesigner|"
 msgid "Grid Divisions"
-msgstr "Divisions de graella"
+msgstr "Divisions de quadrícula"
 
 #: wrtembed/KReportDesigner.cpp:841
 msgctxt "KReportDesigner|"
@@ -770,7 +770,7 @@ msgstr "Inserix un salt de pàgina després del peu del grup:"
 #: wrtembed/KReportPropertiesButton.cpp:26
 msgctxt "KReportPropertiesButton|"
 msgid "Select entire report"
-msgstr "Selecciona l'informe sencer"
+msgstr "Tria l'informe sencer"
 
 #: wrtembed/KReportPropertiesButton.cpp:27
 msgctxt "KReportPropertiesButton|"
