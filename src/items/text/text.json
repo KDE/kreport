@@ -34,7 +34,6 @@
                 "Name[sv]": "Kexi-gruppen",
                 "Name[tr]": "Kexi Takımı",
                 "Name[uk]": "Команда Kexi",
-                "Name[x-test]": "xxKexi Teamxx",
                 "Name[zh_CN]": "Kexi 团队"
             }
         ],
@@ -70,7 +69,6 @@
         "Description[sv]": "Textelement för rapporter",
         "Description[tr]": "Raporlar için metin ögesi",
         "Description[uk]": "Елемент тексту для звітів",
-        "Description[x-test]": "xxText element for Reportsxx",
         "Description[zh_CN]": "给报表使用的文本元素",
         "EnabledByDefault": true,
         "Icon": "kreport-text-element",
@@ -107,7 +105,6 @@
         "Name[sv]": "Text",
         "Name[tr]": "Metin",
         "Name[uk]": "Текст",
-        "Name[x-test]": "xxTextxx",
         "Name[zh_CN]": "文本",
         "ServiceTypes": [
             "KReport/Element"
