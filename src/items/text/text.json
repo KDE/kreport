@@ -35,7 +35,6 @@
                 "Name[sv]": "Kexi-gruppen",
                 "Name[tr]": "Kexi Takımı",
                 "Name[uk]": "Команда Kexi",
-                "Name[x-test]": "xxKexi Teamxx",
                 "Name[zh_CN]": "Kexi 团队",
                 "Name[zh_TW]": "Kexi 團隊"
             }
@@ -73,7 +72,6 @@
         "Description[sv]": "Textelement för rapporter",
         "Description[tr]": "Raporlar için metin ögesi",
         "Description[uk]": "Елемент тексту для звітів",
-        "Description[x-test]": "xxText element for Reportsxx",
         "Description[zh_CN]": "给报表使用的文本元素",
         "Description[zh_TW]": "用於報告的文字元件",
         "EnabledByDefault": true,
@@ -112,7 +110,6 @@
         "Name[sv]": "Text",
         "Name[tr]": "Metin",
         "Name[uk]": "Текст",
-        "Name[x-test]": "xxTextxx",
         "Name[zh_CN]": "文本",
         "Name[zh_TW]": "文字",
         "Version": "3.3",

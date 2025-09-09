@@ -35,7 +35,6 @@
                 "Name[sv]": "Kexi-gruppen",
                 "Name[tr]": "Kexi Takımı",
                 "Name[uk]": "Команда Kexi",
-                "Name[x-test]": "xxKexi Teamxx",
                 "Name[zh_CN]": "Kexi 团队",
                 "Name[zh_TW]": "Kexi 團隊"
             }
@@ -72,7 +71,6 @@
         "Description[sv]": "Kartelement för rapporter",
         "Description[tr]": "Raporlar için haritalar ögesi",
         "Description[uk]": "Елемент карти для звітів",
-        "Description[x-test]": "xxMaps element for Reportsxx",
         "Description[zh_CN]": "给报表使用的地图元素",
         "Description[zh_TW]": "用於報告的地圖元件",
         "EnabledByDefault": true,
@@ -111,7 +109,6 @@
         "Name[sv]": "Kartor",
         "Name[tr]": "Haritalar",
         "Name[uk]": "Карти",
-        "Name[x-test]": "xxMapsxx",
         "Name[zh_CN]": "映射",
         "Name[zh_TW]": "地圖",
         "Version": "3.3",

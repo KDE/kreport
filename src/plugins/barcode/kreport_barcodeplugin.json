@@ -35,7 +35,6 @@
                 "Name[sv]": "Kexi-gruppen",
                 "Name[tr]": "Kexi Takımı",
                 "Name[uk]": "Команда Kexi",
-                "Name[x-test]": "xxKexi Teamxx",
                 "Name[zh_CN]": "Kexi 团队",
                 "Name[zh_TW]": "Kexi 團隊"
             }
@@ -72,7 +71,6 @@
         "Description[sv]": "Streckkodselement för rapporter",
         "Description[tr]": "Raporlar için barkod ögesi",
         "Description[uk]": "Елемент штрихкоду для звітів",
-        "Description[x-test]": "xxBarcode element for Reportsxx",
         "Description[zh_CN]": "给报表使用的条形码元素",
         "Description[zh_TW]": "用於報告的條碼元件",
         "EnabledByDefault": true,
@@ -111,7 +109,6 @@
         "Name[sv]": "Streckkod",
         "Name[tr]": "Barkod",
         "Name[uk]": "Штрихкод",
-        "Name[x-test]": "xxBarcodexx",
         "Name[zh_CN]": "条形码",
         "Name[zh_TW]": "條碼",
         "Version": "3.3",

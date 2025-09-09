@@ -35,7 +35,6 @@
                 "Name[sv]": "Kexi-gruppen",
                 "Name[tr]": "Kexi Takımı",
                 "Name[uk]": "Команда Kexi",
-                "Name[x-test]": "xxKexi Teamxx",
                 "Name[zh_CN]": "Kexi 团队",
                 "Name[zh_TW]": "Kexi 團隊"
             }
@@ -72,7 +71,6 @@
         "Description[sv]": "Element med kryssruta för rapporter",
         "Description[tr]": "Raporlar için onay kutusu ögesi",
         "Description[uk]": "Елемент пункту позначки для звітів",
-        "Description[x-test]": "xxCheck box element for Reportsxx",
         "Description[zh_CN]": "KReport给报表使用的复选框元素",
         "Description[zh_TW]": "用於報告的核取框元件",
         "EnabledByDefault": true,
@@ -110,7 +108,6 @@
         "Name[sv]": "Kryssruta",
         "Name[tr]": "Onay kutusu",
         "Name[uk]": "Пункт позначки",
-        "Name[x-test]": "xxCheck boxxx",
         "Name[zh_CN]": "复选框",
         "Name[zh_TW]": "核取框",
         "Version": "3.3",
