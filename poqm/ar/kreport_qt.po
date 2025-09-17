@@ -5,13 +5,13 @@
 # محمد سعد  Mohamed SAAD <metehyi@free.fr>, 2006.
 # Youssef Chahibi <chahibi@gmail.com>, 2007, 2008.
 # Abdelrahman <abd_elrahman_em@yahoo.com>, 2007, 2008.
-# SPDX-FileCopyrightText: 2022, 2024 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+# SPDX-FileCopyrightText: 2022, 2024, 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-22 01:56+0000\n"
-"PO-Revision-Date: 2024-06-08 17:12+0400\n"
+"PO-Revision-Date: 2025-09-16 20:39+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -127,11 +127,9 @@ msgid "Inches (in)"
 msgstr "بوصة (بوصة)"
 
 #: common/KReportUnit.cpp:146
-#, fuzzy
-#| msgid "Pica (pi)"
 msgctxt "KReportUnit|"
 msgid "Pica (pi)"
-msgstr "Pica (pi)"
+msgstr "بيكا (pi)"
 
 #: common/KReportUnit.cpp:148
 msgctxt "KReportUnit|"
@@ -154,10 +152,9 @@ msgid "Unsupported unit"
 msgstr "وحدة غير مدعومة"
 
 #: items/check/KReportItemCheck.cpp:79
-#, fuzzy
 msgctxt "KReportItemCheckBox|"
 msgid "Cross"
-msgstr "اغلق"
+msgstr "صليب"
 
 #: items/check/KReportItemCheck.cpp:79
 msgctxt "KReportItemCheckBox|"
@@ -292,7 +289,7 @@ msgstr "لفّ الكلمات"
 #: items/field/KReportItemField.cpp:120
 msgctxt "KReportItemField|"
 msgid "Can Grow"
-msgstr ""
+msgstr "يمكن أن يزداد"
 
 #: items/image/KReportItemImage.cpp:119
 msgctxt "KReportItemImage|"
@@ -573,16 +570,14 @@ msgid "Page Footer (Last)"
 msgstr "تذييل"
 
 #: wrtembed/KReportDesigner.cpp:716
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Report Header"
-msgstr "ترويسة"
+msgstr "رأس التقرير"
 
 #: wrtembed/KReportDesigner.cpp:720
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Report Footer"
-msgstr "تذييل"
+msgstr "تذييل التقرير"
 
 #: wrtembed/KReportDesigner.cpp:808
 msgctxt "KReportDesigner|Main report element"
@@ -649,28 +644,24 @@ msgid "Grid Divisions"
 msgstr ""
 
 #: wrtembed/KReportDesigner.cpp:841
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Left Margin"
-msgstr "الهوامش"
+msgstr "الهامش الأيسر"
 
 #: wrtembed/KReportDesigner.cpp:843
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Right Margin"
-msgstr "المسافة البادئة اليمنى"
+msgstr "الهامش الأيمن"
 
 #: wrtembed/KReportDesigner.cpp:845
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Top Margin"
-msgstr "الهوامش"
+msgstr "الهامش العلوي"
 
 #: wrtembed/KReportDesigner.cpp:847
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Bottom Margin"
-msgstr "الهوامش"
+msgstr "الهامش السفل"
 
 #: wrtembed/KReportDesigner.cpp:869
 #, fuzzy
