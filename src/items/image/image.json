@@ -74,6 +74,7 @@
         "Id": "org.kde.kreport.image",
         "License": "LGPL",
         "Name": "Image",
+        "Name[ar]": "صورة",
         "Name[ast]": "Imaxe",
         "Name[ca@valencia]": "Imatge",
         "Name[ca]": "Imatge",

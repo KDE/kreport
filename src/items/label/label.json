@@ -74,6 +74,7 @@
         "Id": "org.kde.kreport.label",
         "License": "LGPL",
         "Name": "Label",
+        "Name[ar]": "لصيقة",
         "Name[ast]": "Etiqueta",
         "Name[ca@valencia]": "Etiqueta",
         "Name[ca]": "Etiqueta",

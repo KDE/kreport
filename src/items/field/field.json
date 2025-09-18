@@ -74,6 +74,7 @@
         "Id": "org.kde.kreport.field",
         "License": "LGPL",
         "Name": "Field",
+        "Name[ar]": "حقل",
         "Name[ast]": "Campu",
         "Name[ca@valencia]": "Camp",
         "Name[ca]": "Camp",

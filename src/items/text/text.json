@@ -75,6 +75,7 @@
         "Id": "org.kde.kreport.text",
         "License": "LGPL",
         "Name": "Text",
+        "Name[ar]": "نص",
         "Name[ast]": "Testu",
         "Name[ca@valencia]": "Text",
         "Name[ca]": "Text",

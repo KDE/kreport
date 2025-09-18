@@ -74,6 +74,7 @@
         "Id": "org.kde.kreport.web",
         "License": "LGPL",
         "Name": "Web browser",
+        "Name[ar]": "متصفح ويب",
         "Name[ast]": "Restolador web",
         "Name[ca@valencia]": "Navegador web",
         "Name[ca]": "Navegador web",

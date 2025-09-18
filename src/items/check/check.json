@@ -74,6 +74,7 @@
         "Id": "org.kde.kreport.checkbox",
         "License": "LGPL",
         "Name": "Check box",
+        "Name[ar]": "خانة اختيار",
         "Name[ast]": "Caxellu",
         "Name[ca@valencia]": "Casella de selecció",
         "Name[ca]": "Casella de selecció",
