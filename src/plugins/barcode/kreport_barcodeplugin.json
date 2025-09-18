@@ -78,6 +78,7 @@
         "Id": "org.kde.kreport.barcode",
         "License": "LGPL",
         "Name": "Barcode",
+        "Name[ar]": "رمز شريطي",
         "Name[ca@valencia]": "Codi de barres",
         "Name[ca]": "Codi de barres",
         "Name[cs]": "Čárový kód",

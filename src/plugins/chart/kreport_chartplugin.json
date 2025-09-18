@@ -78,6 +78,7 @@
         "Id": "org.kde.kreport.chart",
         "License": "LGPL",
         "Name": "Chart",
+        "Name[ar]": "مخطط بياني",
         "Name[ca@valencia]": "Gràfic",
         "Name[ca]": "Gràfic",
         "Name[cs]": "Graf",

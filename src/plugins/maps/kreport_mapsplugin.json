@@ -78,6 +78,7 @@
         "Id": "org.kde.kreport.maps",
         "License": "LGPL",
         "Name": "Maps",
+        "Name[ar]": "خرائط",
         "Name[ca@valencia]": "Mapes",
         "Name[ca]": "Mapes",
         "Name[cs]": "Mapy",
