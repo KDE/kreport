@@ -1,15 +1,16 @@
-# Copyright (C) YEAR This_file_is_part_of_KDE
-# This file is distributed under the same license as the PACKAGE package.
+# Spanish translations for kreport_barcodeplugin_qt.po package.
+# Copyright (C) 2010-2025 This file is copyright:
+# This file is distributed under the same license as the kreport package.
 #
-# Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>, 2010.
-# Eloy Cuadra <ecuadra@eloihr.net>, 2011, 2015, 2016.
-# Raul Gonzalez <raulgf83@gmail.com>, 2015.
+# SPDX-FileCopyrightText: 2010 Enrique Matias Sanchez (Quique) <cronopios@gmail.com>
+# SPDX-FileCopyrightText: 2011, 2015, 2016, 2025 Eloy Cuadra <ecuadra@eloihr.net>
+# SPDX-FileCopyrightText: 2015 Raul Gonzalez <raulgf83@gmail.com>
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"Project-Id-Version: kreport_barcodeplugin_qt\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2015-01-20 01:47+0000\n"
-"PO-Revision-Date: 2016-09-07 01:14+0200\n"
+"PO-Revision-Date: 2025-09-29 20:36+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -105,10 +106,3 @@ msgstr "Longitud máxima"
 msgctxt "KReportItemBarcode|"
 msgid "Maximum Barcode Length"
 msgstr "Longitud máxima del código de barras"
-
-#~ msgctxt "KReportItemBarcode|"
-#~ msgid "Data Source"
-#~ msgstr "Fuente de datos"
-
-#~ msgid "Barcode"
-#~ msgstr "Código de barras"
