@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-09-16 20:40+0400\n"
+"PO-Revision-Date: 2025-10-06 17:00+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -22,7 +22,7 @@ msgstr "القيمة"
 #: KReportItemBarcode.cpp:121
 msgctxt "KReportItemBarcode|"
 msgid "Value used if not bound to a field"
-msgstr ""
+msgstr "القيمة المستخدَمة إذا لم تكن مرتبطة بحقل"
 
 #: KReportItemBarcode.cpp:125
 msgctxt "KReportItemBarcode|"
@@ -42,22 +42,22 @@ msgstr "يمين"
 #: KReportItemBarcode.cpp:127
 msgctxt "KReportItemBarcode|"
 msgid "Horizontal Alignment"
-msgstr ""
+msgstr "المحاذاة الأفقية"
 
 #: KReportItemBarcode.cpp:135
 msgctxt "KReportItemBarcode|Barcode symbology, keep short"
 msgid "Code 3 of 9"
-msgstr ""
+msgstr "الترميز 3 من 9"
 
 #: KReportItemBarcode.cpp:136
 msgctxt "KReportItemBarcode|3 of 3 Extended: Barcode symbology, keep short"
 msgid "Code 3 of 9 Ext."
-msgstr ""
+msgstr "الترميز 3 من 9 موسَّع"
 
 #: KReportItemBarcode.cpp:137
 msgctxt "KReportItemBarcode|Barcode symbology, keep short"
 msgid "Code 128"
-msgstr ""
+msgstr "الترميز 128"
 
 #: KReportItemBarcode.cpp:138
 msgctxt "KReportItemBarcode|Barcode symbology, keep short"
@@ -73,7 +73,7 @@ msgstr "EAN-13"
 msgctxt ""
 "KReportItemBarcode|Interleaved barcode 2 of 5: barcode symbology, keep short"
 msgid "Interleaved 2 of 5"
-msgstr ""
+msgstr "متداخل 2 من 5"
 
 #: KReportItemBarcode.cpp:141
 msgctxt "KReportItemBarcode|Barcode symbology, keep short"
@@ -88,7 +88,7 @@ msgstr "UPC-E"
 #: KReportItemBarcode.cpp:145
 msgctxt "KReportItemBarcode|"
 msgid "Barcode Format"
-msgstr ""
+msgstr "تنسيق الرمز الشريطي"
 
 #: KReportItemBarcode.cpp:147
 msgctxt "KReportItemBarcode|"
@@ -98,4 +98,4 @@ msgstr "أقصى طول"
 #: KReportItemBarcode.cpp:148
 msgctxt "KReportItemBarcode|"
 msgid "Maximum Barcode Length"
-msgstr ""
+msgstr "الحد الأقصى لطول الرمز الشريطي"
