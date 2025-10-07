@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-22 01:56+0000\n"
-"PO-Revision-Date: 2025-09-16 20:39+0400\n"
+"PO-Revision-Date: 2025-10-06 17:00+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -24,17 +24,14 @@ msgstr ""
 "X-Qt-Contexts: true\n"
 
 #: common/KReportDesign.cpp:150
-#, fuzzy
 msgctxt "KReportDesign|"
 msgid "Could not parse XML document."
-msgstr "لا يمكن إنشاء الملف للحفظ"
+msgstr "لا أستطيع تحليل مستند XML."
 
 #: common/KReportDesign.cpp:159
-#, fuzzy
-#| msgid "Error in embedded document"
 msgctxt "KReportDesign|"
 msgid "Error in XML document."
-msgstr "خطأ في المستند المضمن"
+msgstr "خطأ في مستند XML."
 
 #: common/KReportItemBase.cpp:75
 msgctxt "KReportItemBase|"
@@ -159,7 +156,7 @@ msgstr "صليب"
 #: items/check/KReportItemCheck.cpp:79
 msgctxt "KReportItemCheckBox|"
 msgid "Tick"
-msgstr ""
+msgstr "إشارة صح"
 
 #: items/check/KReportItemCheck.cpp:79
 msgctxt "KReportItemCheckBox|"
@@ -199,7 +196,7 @@ msgstr "القيمة"
 #: items/check/KReportItemCheck.cpp:90
 msgctxt "KReportItemCheckBox|"
 msgid "Value used if not bound to a field"
-msgstr ""
+msgstr "القيمة المستخدَمة إذا لم ترتبط بحقل"
 
 #: items/field/KReportItemField.cpp:90
 msgctxt "KReportItemField|"
@@ -209,7 +206,7 @@ msgstr "القيمة"
 #: items/field/KReportItemField.cpp:90
 msgctxt "KReportItemField|"
 msgid "Value used if not bound to a field"
-msgstr ""
+msgstr "القيمة المستخدَمة إذا لم ترتبط بحقل"
 
 #: items/field/KReportItemField.cpp:94
 msgctxt "KReportItemField|"
@@ -314,7 +311,7 @@ msgstr "القيمة"
 #: items/image/KReportItemImage.cpp:121
 msgctxt "KReportItemImage|"
 msgid "Value used if not bound to a field"
-msgstr ""
+msgstr "القيمة المستخدَمة إذا لم ترتبط بحقل"
 
 #: items/label/KReportItemLabel.cpp:91
 msgctxt "KReportItemLabel|"
@@ -399,7 +396,7 @@ msgstr "القيمة"
 #: items/text/KReportItemText.cpp:115
 msgctxt "KReportItemText|"
 msgid "Value used if not bound to a field"
-msgstr ""
+msgstr "القيمة المستخدَمة إذا لم ترتبط بحقل"
 
 #: items/text/KReportItemText.cpp:119
 msgctxt "KReportItemText|"
@@ -480,15 +477,20 @@ msgid ""
 "Do you want to suppress further messages?\n"
 "(messages will be restored next time the report is opened)"
 msgstr ""
+"لا أستطيع تقييم السكربت. خطأ: %1\n"
+"\n"
+"هل تودّ منع رسائل إضافيّة؟\n"
+"(ستعاد الرّسائل في المرّة القادمة لفتح التّقرير)"
 
 #: renderer/scripting/KReportScriptHandler.cpp:171
-#, fuzzy, qt-format
-#| msgid "Script File"
+#, qt-format
 msgctxt "KReportScriptHandler|"
 msgid ""
 "Script code:\n"
 "%1"
-msgstr "ملف سرد أوامر"
+msgstr ""
+"شفرة السكربت:\n"
+"%1"
 
 #: renderer/scripting/KReportScriptHandler.cpp:187
 msgctxt "KReportScriptHandler|"
@@ -503,71 +505,64 @@ msgid ""
 "JavaScript language are supported. To prevent losing the scripts, their type "
 "and content will not be changed unless you change these scripts."
 msgstr ""
+"يحتوي هذا التقرير على سكربتات من النوع «%1». السكربتات المكتوبة بلغة "
+"JavaScript هي المدعومة فقط. لمنع فقدان السكربتات، نوعها ومحتواها لن يتغيّرا "
+"ما لم تغيّر هذه السكربتات."
 
 #: wrtembed/KReportDesigner.cpp:315
 msgctxt "KReportDesigner|"
 msgid "Unsupported Script Type"
-msgstr ""
+msgstr "نوع سكربت غير مدعوم"
 
 #: wrtembed/KReportDesigner.cpp:676
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Header (Any)"
-msgstr "معاينة الصفحة"
+msgstr "رأس الصّفحة (أيّ)"
 
 #: wrtembed/KReportDesigner.cpp:680
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Header (Even)"
-msgstr "معاينة الصفحة"
+msgstr "رأس الصّفحة (زوجيّ)"
 
 #: wrtembed/KReportDesigner.cpp:684
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Header (Odd)"
-msgstr "معاينة الصفحة"
+msgstr "رأس الصّفحة (فرديّ)"
 
 #: wrtembed/KReportDesigner.cpp:688
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Header (First)"
-msgstr "معاينة الصفحة"
+msgstr "رأس الصّفحة (أوّل)"
 
 #: wrtembed/KReportDesigner.cpp:692
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Header (Last)"
-msgstr "معاينة الصفحة"
+msgstr "رأس الصّفحة (أخير)"
 
 #: wrtembed/KReportDesigner.cpp:696
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Any)"
-msgstr "تذييل"
+msgstr "تذييل الصّفحة (أيّ)"
 
 #: wrtembed/KReportDesigner.cpp:700
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Even)"
-msgstr "تذييل"
+msgstr "تذييل الصّفحة (زوجيّ)"
 
 #: wrtembed/KReportDesigner.cpp:704
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Odd)"
-msgstr "تذييل"
+msgstr "تذييل الصّفحة (فرديّ)"
 
 #: wrtembed/KReportDesigner.cpp:708
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Footer (First)"
-msgstr "تذييل"
+msgstr "تذييل الصّفحة (أوّل)"
 
 #: wrtembed/KReportDesigner.cpp:712
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Last)"
-msgstr "تذييل"
+msgstr "تذييل الصّفحة (أخير)"
 
 #: wrtembed/KReportDesigner.cpp:716
 msgctxt "KReportDesigner|"
@@ -590,10 +585,9 @@ msgid "Title"
 msgstr "العنوان"
 
 #: wrtembed/KReportDesigner.cpp:813
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Report Title"
-msgstr "تذييل"
+msgstr "عنوان التّقرير"
 
 #: wrtembed/KReportDesigner.cpp:818
 msgctxt "KReportDesigner|"
@@ -601,11 +595,9 @@ msgid "Page Size"
 msgstr "حجم الصفحة"
 
 #: wrtembed/KReportDesigner.cpp:821
-#, fuzzy
-#| msgid "Page Size"
 msgctxt "KReportDesigner|"
 msgid "Custom Page Size"
-msgstr "حجم الصفحة"
+msgstr "حجم صفحة مخصص"
 
 #: wrtembed/KReportDesigner.cpp:825
 msgctxt "KReportDesigner|"
@@ -623,10 +615,9 @@ msgid "Page Orientation"
 msgstr "اتّجاه الصّفحة"
 
 #: wrtembed/KReportDesigner.cpp:832
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Page Unit"
-msgstr "حجم الصفحة"
+msgstr "وحدة الصّفحة"
 
 #: wrtembed/KReportDesigner.cpp:833
 msgctxt "KReportDesigner|"
@@ -641,7 +632,7 @@ msgstr "مطابقة للشبكة"
 #: wrtembed/KReportDesigner.cpp:835
 msgctxt "KReportDesigner|"
 msgid "Grid Divisions"
-msgstr ""
+msgstr "تقسيمات الشبكة"
 
 #: wrtembed/KReportDesigner.cpp:841
 msgctxt "KReportDesigner|"
@@ -664,10 +655,9 @@ msgid "Bottom Margin"
 msgstr "الهامش السفل"
 
 #: wrtembed/KReportDesigner.cpp:869
-#, fuzzy
 msgctxt "KReportDesigner|"
 msgid "Object Script"
-msgstr "كائن"
+msgstr "سكربت الكائن"
 
 #: wrtembed/KReportDesigner.cpp:1067
 msgctxt "KReportDesigner|"
@@ -730,11 +720,9 @@ msgid "Paste clipboard content"
 msgstr "ألصق محتوى الحافظة"
 
 #: wrtembed/KReportDesigner.cpp:1544
-#, fuzzy
-#| msgid "Collection"
 msgctxt "KReportDesigner|"
 msgid "Edit Sections"
-msgstr "مجموعة"
+msgstr "حرّر الأقسام"
 
 #: wrtembed/KReportDesigner.cpp:1547
 msgctxt "KReportDesigner|"
@@ -752,10 +740,9 @@ msgid "Detail"
 msgstr "التّفاصيل"
 
 #: wrtembed/KReportDetailGroupSectionDialog.cpp:35
-#, fuzzy
 msgctxt "KReportDetailGroupSectionDialog|"
 msgid "Group Section Editor"
-msgstr "اجمع الأشكال"
+msgstr "محرّر قسم المجموعة"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:34
 msgctxt "DetailGroupSectionDialog|"
@@ -768,33 +755,31 @@ msgid "Sort:"
 msgstr "الفرز:"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:68
-#, fuzzy
 msgctxt "DetailGroupSectionDialog|"
 msgid "Show group header:"
-msgstr "اعرض ال&شبيكة"
+msgstr "أظهر رأس المجموعة:"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:85
-#, fuzzy
 msgctxt "DetailGroupSectionDialog|"
 msgid "Show group footer:"
-msgstr "اعرض ال&شبيكة"
+msgstr "أظهر تذييل المجموعة:"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:105
 msgctxt "DetailGroupSectionDialog|"
 msgid "Insert page break after group footer:"
-msgstr ""
+msgstr "أدخل فاصل صفحة بعد تذييل المجموعة:"
 
 #: wrtembed/KReportPropertiesButton.cpp:26
 msgctxt "KReportPropertiesButton|"
 msgid "Select entire report"
-msgstr ""
+msgstr "اختر التقرير بأكمله"
 
 #: wrtembed/KReportPropertiesButton.cpp:27
 msgctxt "KReportPropertiesButton|"
 msgid ""
 "A button that allows a report's surface to be selected, allowing its "
 "properties to be seen."
-msgstr ""
+msgstr "زر يسمح باختيار سطح التقرير، ما يسمح برؤية خصائصه."
 
 #: wrtembed/KReportRuler_p.cpp:1472
 msgctxt "KReportRuler|"
@@ -847,16 +832,14 @@ msgid "Descending"
 msgstr "تنازليًّا"
 
 #: wrtembed/KReportSectionEditor.ui:29
-#, fuzzy
 msgctxt "SectionEditor|"
 msgid "Show report header"
-msgstr "اعرض ال&شبيكة"
+msgstr "أظهر رأس التقرير"
 
 #: wrtembed/KReportSectionEditor.ui:36
-#, fuzzy
 msgctxt "SectionEditor|"
 msgid "Show report footer"
-msgstr "اعرض ال&شبيكة"
+msgstr "أظهر تذييل التقرير"
 
 #: wrtembed/KReportSectionEditor.ui:43
 msgctxt "SectionEditor|"
@@ -894,17 +877,15 @@ msgid "Page Footer"
 msgstr "تذييل الصفحة"
 
 #: wrtembed/KReportSectionEditor.ui:217
-#, fuzzy
 msgctxt "SectionEditor|"
 msgid "Group Sections"
-msgstr "اجمع الأشكال"
+msgstr "أقسام المجموعة"
 
 #: wrtembed/KReportZoomMode_p.cpp:28
-#, fuzzy, qt-format
-#| msgid "%1%"
+#, qt-format
 msgctxt "KReportZoomMode|"
 msgid "%1%"
-msgstr "%1%"
+msgstr "%1٪"
 
 #: wrtembed/KReportZoomMode_p.cpp:29
 msgctxt "KReportZoomMode|"
