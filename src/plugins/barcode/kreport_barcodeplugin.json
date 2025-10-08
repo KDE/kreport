@@ -4,6 +4,7 @@
             {
                 "Email": "kexi@kde.org",
                 "Name": "Kexi Team",
+                "Name[ar]": "فريق ككسي",
                 "Name[ast]": "L'equipu Kexi",
                 "Name[ca@valencia]": "L'equip de Kexi",
                 "Name[ca]": "L'equip del Kexi",
@@ -40,6 +41,7 @@
         "Category": "",
         "Dependencies": [],
         "Description": "Barcode element for Reports",
+        "Description[ar]": "عنصر رمز شريطي للتقارير",
         "Description[ca@valencia]": "Element de codi de barres per a informes",
         "Description[ca]": "Element de codi de barres per a informes",
         "Description[da]": "Stregkode-element til rapporter",
