@@ -4,6 +4,7 @@
             {
                 "Email": "kexi@kde.org",
                 "Name": "Kexi Team",
+                "Name[ar]": "فريق ككسي",
                 "Name[ca@valencia]": "L'equip de Kexi",
                 "Name[ca]": "L'equip del Kexi",
                 "Name[cs]": "Tým Kexi",
@@ -41,6 +42,7 @@
         ],
         "Category": "",
         "Description": "Image element for Reports",
+        "Description[ar]": "عنصر صورة للتقارير",
         "Description[ca@valencia]": "Element d'imatge per a informes",
         "Description[ca]": "Element d'imatge per a informes",
         "Description[da]": "Billed-element til rapporter",
