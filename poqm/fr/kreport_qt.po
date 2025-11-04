@@ -487,7 +487,7 @@ msgstr ""
 "Impossible d'évaluer le script. Erreur : %1\n"
 "\n"
 "Voulez-vous supprimer les messages ultérieurs ?\n"
-"(les messages apparaîtront à nouveau la prochaine fois que vous ouvrirez ce "
+"(les messages apparaitront à nouveau la prochaine fois que vous ouvrirez ce "
 "rapport)"
 
 #: renderer/scripting/KReportScriptHandler.cpp:171
