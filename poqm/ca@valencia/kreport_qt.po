@@ -119,7 +119,7 @@ msgstr "Decímetres (dm)"
 #: common/KReportUnit.cpp:144
 msgctxt "KReportUnit|"
 msgid "Inches (in)"
-msgstr "Polzades (in)"
+msgstr "Polzades (polzades)"
 
 #: common/KReportUnit.cpp:146
 msgctxt "KReportUnit|"
