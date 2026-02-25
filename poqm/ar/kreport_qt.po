@@ -5,13 +5,13 @@
 # محمد سعد  Mohamed SAAD <metehyi@free.fr>, 2006.
 # Youssef Chahibi <chahibi@gmail.com>, 2007, 2008.
 # Abdelrahman <abd_elrahman_em@yahoo.com>, 2007, 2008.
-# SPDX-FileCopyrightText: 2022, 2024, 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+# SPDX-FileCopyrightText: 2022, 2024, 2025, 2026 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-22 01:56+0000\n"
-"PO-Revision-Date: 2025-10-06 17:00+0400\n"
+"PO-Revision-Date: 2026-02-24 22:57+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -602,12 +602,12 @@ msgstr "حجم صفحة مخصص"
 #: wrtembed/KReportDesigner.cpp:825
 msgctxt "KReportDesigner|"
 msgid "Portrait"
-msgstr "بالطّول"
+msgstr "طولي"
 
 #: wrtembed/KReportDesigner.cpp:825
 msgctxt "KReportDesigner|"
 msgid "Landscape"
-msgstr "بالعرض"
+msgstr "عرضي"
 
 #: wrtembed/KReportDesigner.cpp:827
 msgctxt "KReportDesigner|"
