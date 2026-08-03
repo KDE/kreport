@@ -3,21 +3,22 @@
 # Vít Pelčák <vit@pelcak.org>, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018.
 # Tomáš Chvátal <tomas.chvatal@gmail.com>, 2013.
 # Vit Pelcak <vit@pelcak.org>, 2022.
+# SPDX-FileCopyrightText: 2026 Libor Filípek <libor.filipek@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-22 01:56+0000\n"
-"PO-Revision-Date: 2022-06-27 14:37+0200\n"
-"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"PO-Revision-Date: 2026-08-01 23:33+0200\n"
+"Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 22.04.2\n"
+"X-Generator: Lokalize 26.04.3\n"
 "X-Qt-Contexts: true\n"
 
 #: common/KReportDesign.cpp:150
@@ -68,7 +69,7 @@ msgstr "Konečná pozice"
 #: common/KReportItemLine.cpp:83
 msgctxt "KReportItemLine|"
 msgid "Line Weight"
-msgstr ""
+msgstr "Tloušťka čáry"
 
 #: common/KReportItemLine.cpp:85
 msgctxt "KReportItemLine|"
@@ -153,7 +154,7 @@ msgstr "Kříž"
 #: items/check/KReportItemCheck.cpp:79
 msgctxt "KReportItemCheckBox|"
 msgid "Tick"
-msgstr ""
+msgstr "Zaškrtnutí"
 
 #: items/check/KReportItemCheck.cpp:79
 msgctxt "KReportItemCheckBox|"
@@ -173,7 +174,7 @@ msgstr "Barva popředí"
 #: items/check/KReportItemCheck.cpp:86
 msgctxt "KReportItemCheckBox|"
 msgid "Line Weight"
-msgstr ""
+msgstr "Tloušťka čáry"
 
 #: items/check/KReportItemCheck.cpp:88
 msgctxt "KReportItemCheckBox|"
@@ -193,7 +194,7 @@ msgstr "Hodnota"
 #: items/check/KReportItemCheck.cpp:90
 msgctxt "KReportItemCheckBox|"
 msgid "Value used if not bound to a field"
-msgstr ""
+msgstr "Hodnota použitá v případě, že není přiřazena k žádnému poli"
 
 #: items/field/KReportItemField.cpp:90
 msgctxt "KReportItemField|"
@@ -203,7 +204,7 @@ msgstr "Hodnota"
 #: items/field/KReportItemField.cpp:90
 msgctxt "KReportItemField|"
 msgid "Value used if not bound to a field"
-msgstr ""
+msgstr "Hodnota použitá v případě, že není přiřazena k žádnému poli"
 
 #: items/field/KReportItemField.cpp:94
 msgctxt "KReportItemField|"
@@ -263,7 +264,7 @@ msgstr "Krytí pozadí"
 #: items/field/KReportItemField.cpp:114
 msgctxt "KReportItemField|"
 msgid "Line Weight"
-msgstr ""
+msgstr "Tloušťka čáry"
 
 #: items/field/KReportItemField.cpp:116
 msgctxt "KReportItemField|"
@@ -283,7 +284,7 @@ msgstr "Lámání slov"
 #: items/field/KReportItemField.cpp:120
 msgctxt "KReportItemField|"
 msgid "Can Grow"
-msgstr ""
+msgstr "Lze rozšířit"
 
 #: items/image/KReportItemImage.cpp:119
 msgctxt "KReportItemImage|"
@@ -298,7 +299,7 @@ msgstr "Roztažení"
 #: items/image/KReportItemImage.cpp:120
 msgctxt "KReportItemImage|"
 msgid "Resize Mode"
-msgstr ""
+msgstr "Režim změny velikosti"
 
 #: items/image/KReportItemImage.cpp:121
 msgctxt "KReportItemImage|"
@@ -308,7 +309,7 @@ msgstr "Hodnota"
 #: items/image/KReportItemImage.cpp:121
 msgctxt "KReportItemImage|"
 msgid "Value used if not bound to a field"
-msgstr ""
+msgstr "Hodnota použitá v případě, že není přiřazena k žádnému poli"
 
 #: items/label/KReportItemLabel.cpp:91
 msgctxt "KReportItemLabel|"
@@ -373,7 +374,7 @@ msgstr "Krytí pozadí"
 #: items/label/KReportItemLabel.cpp:114
 msgctxt "KReportItemLabel|"
 msgid "Line Weight"
-msgstr ""
+msgstr "Tloušťka čáry"
 
 #: items/label/KReportItemLabel.cpp:116
 msgctxt "KReportItemLabel|"
@@ -393,7 +394,7 @@ msgstr "Hodnota"
 #: items/text/KReportItemText.cpp:115
 msgctxt "KReportItemText|"
 msgid "Value used if not bound to a field"
-msgstr ""
+msgstr "Hodnota použitá v případě, že není přiřazena k žádnému poli"
 
 #: items/text/KReportItemText.cpp:119
 msgctxt "KReportItemText|"
@@ -448,7 +449,7 @@ msgstr "Barva popředí"
 #: items/text/KReportItemText.cpp:134
 msgctxt "KReportItemText|"
 msgid "Line Weight"
-msgstr ""
+msgstr "Tloušťka čáry"
 
 #: items/text/KReportItemText.cpp:136
 msgctxt "KReportItemText|"
@@ -474,6 +475,10 @@ msgid ""
 "Do you want to suppress further messages?\n"
 "(messages will be restored next time the report is opened)"
 msgstr ""
+"Skript nelze vyhodnotit. Chyba: %1\n"
+"\n"
+"Chcete potlačit další zprávy?\n"
+"(zprávy se obnoví při příštím otevření hlášení)"
 
 #: renderer/scripting/KReportScriptHandler.cpp:171
 #, qt-format
@@ -498,6 +503,9 @@ msgid ""
 "JavaScript language are supported. To prevent losing the scripts, their type "
 "and content will not be changed unless you change these scripts."
 msgstr ""
+"Tato zpráva obsahuje skripty typu \"%1\". Podporovány jsou pouze skripty "
+"napsané v jazyce JavaScript. Aby nedošlo ke ztrátě skriptů, jejich typ ani "
+"obsah nebudou změněny, pokud tyto skripty neupravíte."
 
 #: wrtembed/KReportDesigner.cpp:315
 msgctxt "KReportDesigner|"
@@ -622,7 +630,7 @@ msgstr "Přichytávat k mřížce"
 #: wrtembed/KReportDesigner.cpp:835
 msgctxt "KReportDesigner|"
 msgid "Grid Divisions"
-msgstr ""
+msgstr "Rozdělení mřížky"
 
 #: wrtembed/KReportDesigner.cpp:841
 msgctxt "KReportDesigner|"
@@ -647,7 +655,7 @@ msgstr "Dolní okraj"
 #: wrtembed/KReportDesigner.cpp:869
 msgctxt "KReportDesigner|"
 msgid "Object Script"
-msgstr ""
+msgstr "Objektový skript"
 
 #: wrtembed/KReportDesigner.cpp:1067
 msgctxt "KReportDesigner|"
@@ -732,7 +740,7 @@ msgstr "Podrobnosti"
 #: wrtembed/KReportDetailGroupSectionDialog.cpp:35
 msgctxt "KReportDetailGroupSectionDialog|"
 msgid "Group Section Editor"
-msgstr ""
+msgstr "Editor skupinové sekce"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:34
 msgctxt "DetailGroupSectionDialog|"
@@ -757,12 +765,12 @@ msgstr "Zobrazit nadpis skupin:"
 #: wrtembed/KReportDetailGroupSectionDialog.ui:105
 msgctxt "DetailGroupSectionDialog|"
 msgid "Insert page break after group footer:"
-msgstr ""
+msgstr "Vložit konec stránky za skupinové zápatí:"
 
 #: wrtembed/KReportPropertiesButton.cpp:26
 msgctxt "KReportPropertiesButton|"
 msgid "Select entire report"
-msgstr ""
+msgstr "Vybrat celé hlášení"
 
 #: wrtembed/KReportPropertiesButton.cpp:27
 msgctxt "KReportPropertiesButton|"
@@ -770,6 +778,7 @@ msgid ""
 "A button that allows a report's surface to be selected, allowing its "
 "properties to be seen."
 msgstr ""
+"Tlačítko, které umožňuje vybrat oblast hlášení a zobrazit její vlastnosti."
 
 #: wrtembed/KReportRuler_p.cpp:1472
 msgctxt "KReportRuler|"
@@ -890,7 +899,7 @@ msgstr "Přizpůsobit stránce"
 #: wrtembed/KReportZoomMode_p.cpp:32
 msgctxt "KReportZoomMode|"
 msgid "Actual Pixels"
-msgstr ""
+msgstr "Aktuální pixely"
 
 #: wrtembed/KReportZoomMode_p.cpp:36
 msgctxt "KReportZoomMode|"
