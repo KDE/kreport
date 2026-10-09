@@ -1,7 +1,5 @@
 # SPDX-FileCopyrightText: None
 # SPDX-License-Identifier: CC0-1.0
-
-include:
-  - project: sysadmin/ci-utilities
-    file:
-      - /gitlab-templates/linux.yml
+build:
+    script:
+        - echo Hello
