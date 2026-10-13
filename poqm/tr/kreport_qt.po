@@ -518,62 +518,62 @@ msgstr "Desteklenmeyen Betik Türü"
 #: wrtembed/KReportDesigner.cpp:676
 msgctxt "KReportDesigner|"
 msgid "Page Header (Any)"
-msgstr "Sayfa Üstbilgisi (Hepsi)"
+msgstr "Sayfa Üst Bilgisi (Hepsi)"
 
 #: wrtembed/KReportDesigner.cpp:680
 msgctxt "KReportDesigner|"
 msgid "Page Header (Even)"
-msgstr "Sayfa Üstbilgisi (Çift)"
+msgstr "Sayfa Üst Bilgisi (Çift)"
 
 #: wrtembed/KReportDesigner.cpp:684
 msgctxt "KReportDesigner|"
 msgid "Page Header (Odd)"
-msgstr "Sayfa Üstbilgisi (Tek)"
+msgstr "Sayfa Üst Bilgisi (Tek)"
 
 #: wrtembed/KReportDesigner.cpp:688
 msgctxt "KReportDesigner|"
 msgid "Page Header (First)"
-msgstr "Sayfa Üstbilgisi (İlk)"
+msgstr "Sayfa Üst Bilgisi (İlk)"
 
 #: wrtembed/KReportDesigner.cpp:692
 msgctxt "KReportDesigner|"
 msgid "Page Header (Last)"
-msgstr "Sayfa Üstbilgisi (Son)"
+msgstr "Sayfa Üst Bilgisi (Son)"
 
 #: wrtembed/KReportDesigner.cpp:696
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Any)"
-msgstr "Sayfa Altbilgisi (Hepsi)"
+msgstr "Sayfa Alt Bilgisi (Hepsi)"
 
 #: wrtembed/KReportDesigner.cpp:700
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Even)"
-msgstr "Sayfa Altbilgisi (Çift)"
+msgstr "Sayfa Alt Bilgisi (Çift)"
 
 #: wrtembed/KReportDesigner.cpp:704
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Odd)"
-msgstr "Sayfa Altbilgisi (Tek)"
+msgstr "Sayfa Alt Bilgisi (Tek)"
 
 #: wrtembed/KReportDesigner.cpp:708
 msgctxt "KReportDesigner|"
 msgid "Page Footer (First)"
-msgstr "Sayfa Altbilgisi (İlk)"
+msgstr "Sayfa Alt Bilgisi (İlk)"
 
 #: wrtembed/KReportDesigner.cpp:712
 msgctxt "KReportDesigner|"
 msgid "Page Footer (Last)"
-msgstr "Sayfa Altbilgisi (Son)"
+msgstr "Sayfa Alt Bilgisi (Son)"
 
 #: wrtembed/KReportDesigner.cpp:716
 msgctxt "KReportDesigner|"
 msgid "Report Header"
-msgstr "Rapor Üstbilgisi"
+msgstr "Rapor Üst Bilgisi"
 
 #: wrtembed/KReportDesigner.cpp:720
 msgctxt "KReportDesigner|"
 msgid "Report Footer"
-msgstr "Rapor Altbilgisi"
+msgstr "Rapor Alt Bilgisi"
 
 #: wrtembed/KReportDesigner.cpp:808
 msgctxt "KReportDesigner|Main report element"
@@ -758,17 +758,17 @@ msgstr "Sırala:"
 #: wrtembed/KReportDetailGroupSectionDialog.ui:68
 msgctxt "DetailGroupSectionDialog|"
 msgid "Show group header:"
-msgstr "Grup üstbilgisini göster:"
+msgstr "Grup üst bilgisini göster:"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:85
 msgctxt "DetailGroupSectionDialog|"
 msgid "Show group footer:"
-msgstr "Grup altbilgisini göster:"
+msgstr "Grup alt bilgisini göster:"
 
 #: wrtembed/KReportDetailGroupSectionDialog.ui:105
 msgctxt "DetailGroupSectionDialog|"
 msgid "Insert page break after group footer:"
-msgstr "Grup altbilgisinden sonra sayfa sonu ekle:"
+msgstr "Grup alt bilgisinden sonra sayfa sonu ekle:"
 
 #: wrtembed/KReportPropertiesButton.cpp:26
 msgctxt "KReportPropertiesButton|"
@@ -847,7 +847,7 @@ msgstr "Rapor dipnotunu göster"
 #: wrtembed/KReportSectionEditor.ui:43
 msgctxt "SectionEditor|"
 msgid "Page Header"
-msgstr "Sayfa Üstbilgisi"
+msgstr "Sayfa Üst Bilgisi"
 
 #: wrtembed/KReportSectionEditor.ui:51 wrtembed/KReportSectionEditor.ui:138
 msgctxt "SectionEditor|"
@@ -877,7 +877,7 @@ msgstr "Tek sayfalar:"
 #: wrtembed/KReportSectionEditor.ui:130
 msgctxt "SectionEditor|"
 msgid "Page Footer"
-msgstr "Sayfa Altbilgisi"
+msgstr "Sayfa Alt Bilgisi"
 
 #: wrtembed/KReportSectionEditor.ui:217
 msgctxt "SectionEditor|"
