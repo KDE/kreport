@@ -7,13 +7,13 @@
 # Serdar Cevher <scevher@anet.com.tr>, 2001.
 # obsoleteman <tulliana@gmail.com>, 2008-2009,2012.
 # Volkan Gezer <volkangezer@gmail.com>, 2013-2014, 2015.
-# Emir SARI <emir_sari@icloud.com>, 2022, 2023.
+# SPDX-FileCopyrightText: 2022-2023, 2026 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: calligra-kde4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-05-22 01:56+0000\n"
-"PO-Revision-Date: 2023-01-18 22:29+0300\n"
+"PO-Revision-Date: 2026-11-10 21:41+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 26.08.2\n"
 "X-Qt-Contexts: true\n"
 
 #: common/KReportDesign.cpp:150
@@ -82,7 +82,7 @@ msgstr "Çizgi Rengi"
 #: common/KReportItemLine.cpp:86
 msgctxt "KReportItemLine|"
 msgid "Line Style"
-msgstr "Çizgi Biçemi"
+msgstr "Çizgi Stili"
 
 #: common/KReportSectionData.cpp:164
 msgctxt "KReportSectionData|Report section"
@@ -167,7 +167,7 @@ msgstr "Nokta"
 #: items/check/KReportItemCheck.cpp:80
 msgctxt "KReportItemCheckBox|"
 msgid "Style"
-msgstr "Biçem"
+msgstr "Stil"
 
 #: items/check/KReportItemCheck.cpp:84
 msgctxt "KReportItemCheckBox|"
@@ -187,7 +187,7 @@ msgstr "Çizgi Rengi"
 #: items/check/KReportItemCheck.cpp:89
 msgctxt "KReportItemCheckBox|"
 msgid "Line Style"
-msgstr "Çizgi Biçemi"
+msgstr "Çizgi Stili"
 
 #: items/check/KReportItemCheck.cpp:90
 msgctxt "KReportItemCheckBox|"
@@ -277,7 +277,7 @@ msgstr "Çizgi Rengi"
 #: items/field/KReportItemField.cpp:117
 msgctxt "KReportItemField|"
 msgid "Line Style"
-msgstr "Çizgi Biçemi"
+msgstr "Çizgi Stili"
 
 #: items/field/KReportItemField.cpp:119
 msgctxt "KReportItemField|"
@@ -387,7 +387,7 @@ msgstr "Çizgi Rengi"
 #: items/label/KReportItemLabel.cpp:117
 msgctxt "KReportItemLabel|"
 msgid "Line Style"
-msgstr "Çizgi Biçemi"
+msgstr "Çizgi Stili"
 
 #: items/text/KReportItemText.cpp:115
 msgctxt "KReportItemText|"
@@ -462,7 +462,7 @@ msgstr "Çizgi Rengi"
 #: items/text/KReportItemText.cpp:137
 msgctxt "KReportItemText|"
 msgid "Line Style"
-msgstr "Çizgi Biçemi"
+msgstr "Çizgi Stili"
 
 #: items/text/KReportItemText.cpp:138
 msgctxt "KReportItemText|"
