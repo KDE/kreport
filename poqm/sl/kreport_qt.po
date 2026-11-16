@@ -1,7 +1,7 @@
 # translation of koffice.po to Slovenian
 # Translation of koffice.po to Slovenian
 # Copyright (C) 2001,2002,2003, 2004, 2005, 2006, 2007 Free Software Foundation, Inc.
-# $Id: kreport_qt.po 1634720 2022-09-28 01:40:58Z scripty $
+# $Id$
 # $Source$
 #
 # Marko Samastur <markos@elite.org>, 2000.
